@@ -112,6 +112,60 @@ export function closeMobileStatsSheet() {
 }
 
 export function initMobileNavDialogEvents() {
+  const mobVocab = document.getElementById('mobNavVocab');
+  if (mobVocab && !mobVocab._hasNavListener) {
+    mobVocab._hasNavListener = true;
+    mobVocab.addEventListener('click', function() {
+      if (typeof setPrimaryTab === 'function') setPrimaryTab('vocab');
+      else if (window.setPrimaryTab) window.setPrimaryTab('vocab');
+    });
+  }
+
+  const mobReview = document.getElementById('mobNavReview');
+  if (mobReview && !mobReview._hasNavListener) {
+    mobReview._hasNavListener = true;
+    mobReview.addEventListener('click', function() {
+      if (typeof setPrimaryTab === 'function') setPrimaryTab('review');
+      else if (window.setPrimaryTab) window.setPrimaryTab('review');
+    });
+  }
+
+  const mobNotebook = document.getElementById('mobNavNotebook');
+  if (mobNotebook && !mobNotebook._hasNavListener) {
+    mobNotebook._hasNavListener = true;
+    mobNotebook.addEventListener('click', function() {
+      openMobileNotebookSheet();
+    });
+  }
+
+  const mobProfile = document.getElementById('mobNavProfile');
+  if (mobProfile && !mobProfile._hasNavListener) {
+    mobProfile._hasNavListener = true;
+    mobProfile.addEventListener('click', function() {
+      openMobileProfileOrStats();
+    });
+  }
+
+  const mobStatsClose = document.getElementById('mobileStatsClose');
+  if (mobStatsClose && !mobStatsClose._hasNavListener) {
+    mobStatsClose._hasNavListener = true;
+    mobStatsClose.addEventListener('click', function() {
+      closeMobileStatsSheet();
+    });
+  }
+
+  const mobDockClose = document.getElementById('mobileDockClose');
+  if (mobDockClose && !mobDockClose._hasNavListener) {
+    mobDockClose._hasNavListener = true;
+    mobDockClose.addEventListener('click', function() {
+      const dockDialog = document.getElementById('mobileDockDialog');
+      if (dockDialog) {
+        if (typeof dockDialog.close === 'function') dockDialog.close();
+        else dockDialog.removeAttribute('open');
+      }
+    });
+  }
+
   const statsDialog = document.getElementById('mobileStatsDialog');
   if (statsDialog) {
     statsDialog.addEventListener('click', function(e) {

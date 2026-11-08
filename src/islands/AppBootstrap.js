@@ -125,6 +125,29 @@ export function initAppEventBindings() {
     else if (window.openStudyHelpModal) window.openStudyHelpModal();
   });
 
+  // Mobile bottom navigation items & dialogs
+  onId('mobNavVocab', 'click', () => handlePrimaryTab('vocab'));
+  onId('mobNavReview', 'click', () => handlePrimaryTab('review'));
+  onId('mobNavNotebook', 'click', () => {
+    if (typeof openMobileNotebookSheet === 'function') openMobileNotebookSheet();
+    else if (window.openMobileNotebookSheet) window.openMobileNotebookSheet();
+  });
+  onId('mobNavProfile', 'click', () => {
+    if (typeof openMobileProfileOrStats === 'function') openMobileProfileOrStats();
+    else if (window.openMobileProfileOrStats) window.openMobileProfileOrStats();
+  });
+  onId('mobileStatsClose', 'click', () => {
+    if (typeof closeMobileStatsSheet === 'function') closeMobileStatsSheet();
+    else if (window.closeMobileStatsSheet) window.closeMobileStatsSheet();
+  });
+  onId('mobileDockClose', 'click', () => {
+    const dlg = document.getElementById('mobileDockDialog');
+    if (dlg) {
+      if (typeof dlg.close === 'function') dlg.close();
+      else dlg.removeAttribute('open');
+    }
+  });
+
   // HSK version select
   onId('pickerVersionSelect', 'change', e => {
     if (typeof setPickerVersion === 'function') setPickerVersion(e.target.value);
