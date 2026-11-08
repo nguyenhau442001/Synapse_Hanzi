@@ -1,6 +1,6 @@
 # Bàn giao cho Antigravity — Synapse Hanzi (汉字思维 · Hanzi Mind)
 
-> Cập nhật: 2026-11-08, phiên bản `3.18.4` (tag `v3.18.4`).
+> Cập nhật: 2026-11-08, phiên bản `3.18.5` (tag `v3.18.5`).
 > Tài liệu này tóm tắt mọi việc đã làm ở các session trước và những việc còn dở, để agent khác làm tiếp mà không phải đoán.
 > **Đọc `AGENTS.md` và `CLAUDE.md` trước** — các quy tắc ở đó là bắt buộc.
 
