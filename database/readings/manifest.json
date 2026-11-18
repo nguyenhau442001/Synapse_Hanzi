@@ -3800,6 +3800,25 @@
     "path": "database/readings/hsk4/hsk4_story_050.json"
   },
   {
+    "id": "hsk4_story_051",
+    "level": "HSK4",
+    "title": {
+      "zh": "筷子：高妙绝伦的杠杆",
+      "vi": "Đôi đũa: Chiếc đòn bẩy tuyệt diệu"
+    },
+    "topic": "culture_history",
+    "topic_vi": "Văn hóa & Lịch sử",
+    "icon": "🥢",
+    "estimatedMinutes": 5,
+    "description_vi": "Khám phá nguồn gốc chiếc đũa, nguyên lý đòn bẩy vật lý và tại sao cổ nhân đổi tên từ Trợ (箸) thành Khoái (筷).",
+    "sentence_count": 11,
+    "sentences_count": 11,
+    "spotlight_count": 4,
+    "words_count": 76,
+    "file": "database/readings/hsk4/hsk4_story_051.json",
+    "path": "database/readings/hsk4/hsk4_story_051.json"
+  },
+  {
     "id": "hsk5_story_001",
     "level": "HSK5",
     "title": {
