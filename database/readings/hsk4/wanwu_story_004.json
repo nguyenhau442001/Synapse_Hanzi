@@ -1,0 +1,1215 @@
+{
+  "id": "wanwu_story_004",
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_page_start": 37,
+  "book_page_end": 46,
+  "page_display": "Trang 37 - 46",
+  "title": {
+    "zh": "乌鸦：城市的“留守者”",
+    "vi": "Con quạ: Kẻ ở lại thành phố"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🐦‍⬛",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 37 - 46 · Giải mã loài quạ đen: từ câu chuyện cổ 'Quạ uống nước' đến chỉ số thông minh vượt trội và văn hóa hiếu thảo 'quạ mớm mồi'.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "提起乌鸦，很多人的第一印象是漆黑的羽毛和粗哑的叫声，甚至在某些传说中被视作不祥的征兆。",
+      "pinyin": "Tíqǐ wūyā, hěn duō rén de dì-yī yìnxiàng shì qīhēi de yǔmáo hé cūyǎ de jiàoshēng, shènzhì zài mǒuxiē chuánshuō zhōng bèi shìzuò bùxiáng de zhēngzhào.",
+      "vi": "Nhắc đến quạ, ấn tượng đầu tiên của nhiều người là bộ lông đen tuyền và tiếng kêu khàn đặc, thậm chí trong một số truyền thuyết bị xem là điềm báo không may.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "提起",
+          "pinyin": "tíqǐ",
+          "hanviet": "Đề Khởi",
+          "hsk": 5,
+          "word_id": "hsk5_1116",
+          "meaning_vi": "nhắc đến, đề cập tới"
+        },
+        {
+          "text": "乌鸦",
+          "pinyin": "wū yā",
+          "hanviet": "Ô Nha"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "很多",
+          "pinyin": "hěn duō",
+          "hanviet": "Ngận Đa"
+        },
+        {
+          "text": "人",
+          "pinyin": "rén",
+          "hanviet": "Nhân",
+          "hsk": 1,
+          "word_id": "hsk1_243",
+          "meaning_vi": "người"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "第一印象",
+          "pinyin": "dì yī yìn xiàng",
+          "hanviet": "Đệ Nhất Ấn Tượng"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "漆黑",
+          "pinyin": "qīhēi",
+          "hanviet": "Tất Hắc",
+          "hsk": 7,
+          "word_id": "hsk7_3141",
+          "meaning_vi": "tối đen; tối om; đen kịt"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "羽毛",
+          "pinyin": "yǔ máo",
+          "hanviet": "Vũ Mao"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "粗哑",
+          "pinyin": "cū yǎ",
+          "hanviet": "Thô Nha"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "叫声",
+          "pinyin": "jiào shēng",
+          "hanviet": "Khiếu Thanh"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "甚至",
+          "pinyin": "shènzhì",
+          "hanviet": "Thậm Chí",
+          "hsk": 4,
+          "word_id": "hsk4_645",
+          "meaning_vi": "thậm chí"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "某些",
+          "pinyin": "mǒu xiē",
+          "hanviet": "Mỗ Ta"
+        },
+        {
+          "text": "传说",
+          "pinyin": "chuánshuō",
+          "hanviet": "Truyền Thuyết",
+          "hsk": 5,
+          "word_id": "hsk5_186",
+          "meaning_vi": "truyền thuyết"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "视作",
+          "pinyin": "shì zuò",
+          "hanviet": "Thị Tác"
+        },
+        {
+          "text": "不祥",
+          "pinyin": "bù xiáng",
+          "hanviet": "Bất Tường"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "征兆",
+          "pinyin": "zhēng zhào",
+          "hanviet": "Chinh Triệu"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "但在中国古代早期文化中，乌鸦曾是备受尊敬的神鸟，太阳中的三足金乌就是至高光明的象征。",
+      "pinyin": "Dàn zài Zhōngguó gǔdài zǎoqī wénhuà zhōng, wūyā céng shì bèishòu zūnjìng de shénniǎo, tàiyáng zhōng de sānzú jīnwū jiù shì zhìgāo guāngmíng de xiàngzhēng.",
+      "vi": "Thế nhưng trong văn hóa cổ sơ Trung Hoa, quạ từng là loài thần điểu được tôn kính hết mực, Kim Ô ba chân trong Mặt Trời chính là biểu tượng của ánh quang tối thượng.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "但",
+          "pinyin": "dàn",
+          "hanviet": "Đãn",
+          "hsk": 2,
+          "word_id": "hsk2_330",
+          "meaning_vi": "nhưng, nhưng mà"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "早期",
+          "pinyin": "zǎoqī",
+          "hanviet": "Tảo Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_1450",
+          "meaning_vi": "sớm"
+        },
+        {
+          "text": "文化",
+          "pinyin": "wénhuà",
+          "hanviet": "Văn Hóa",
+          "hsk": 3,
+          "word_id": "hsk3_957",
+          "meaning_vi": "văn hóa"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "乌鸦",
+          "pinyin": "wū yā",
+          "hanviet": "Ô Nha"
+        },
+        {
+          "text": "曾",
+          "pinyin": "céng",
+          "hanviet": "Tằng",
+          "hsk": 5,
+          "word_id": "hsk5_97",
+          "meaning_vi": "từng, đã từng"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "备受",
+          "pinyin": "bèi shòu",
+          "hanviet": "Bị Thọ"
+        },
+        {
+          "text": "尊敬",
+          "pinyin": "zūnjìng",
+          "hanviet": "Tôn Kính",
+          "hsk": 5,
+          "word_id": "hsk5_1598",
+          "meaning_vi": "tôn kính"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "神鸟",
+          "pinyin": "shén niǎo",
+          "hanviet": "Thần Điểu"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "太阳",
+          "pinyin": "tàiyáng",
+          "hanviet": "Thái Dương",
+          "hsk": 3,
+          "word_id": "hsk3_929",
+          "meaning_vi": "mặt trời"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "三足",
+          "pinyin": "sān zú",
+          "hanviet": "Tam Tú"
+        },
+        {
+          "text": "金乌",
+          "pinyin": "jīn wū",
+          "hanviet": "Kim Ô"
+        },
+        {
+          "text": "就是",
+          "pinyin": "jiùshì",
+          "hanviet": "Tựu Thị",
+          "hsk": 4,
+          "word_id": "hsk4_408",
+          "meaning_vi": "chính là; dù… cũng"
+        },
+        {
+          "text": "至",
+          "pinyin": "zhì",
+          "hanviet": "Chí",
+          "hsk": 5,
+          "word_id": "hsk5_1508",
+          "meaning_vi": "đến"
+        },
+        {
+          "text": "高",
+          "pinyin": "gāo",
+          "hanviet": "Cao",
+          "hsk": 2,
+          "word_id": "hsk2_341",
+          "meaning_vi": "cao"
+        },
+        {
+          "text": "光明",
+          "pinyin": "guāngmíng",
+          "hanviet": "Quang Minh",
+          "hsk": 5,
+          "word_id": "hsk5_437",
+          "meaning_vi": "sáng sủa, quang minh"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "象征",
+          "pinyin": "xiàngzhēng",
+          "hanviet": "Tượng Trưng",
+          "hsk": 5,
+          "word_id": "hsk5_1261",
+          "meaning_vi": "biểu tượng, tượng trưng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "古人还常常用“乌鸦反哺”来赞美孝道，认为雏鸟长大后会叼食物回报年迈的父母。",
+      "pinyin": "Gǔrén hái chángcháng yòng “wūyā fǎnbǔ” lái zànměi xiàodào, rènwéi chúniǎo zhǎngdà hòu huì diāo shíwù huíbào niánmài de fùmǔ.",
+      "vi": "Cổ nhân còn thường dùng thành ngữ 'quạ mớm mồi ngược' để ca ngợi đạo hiếu, cho rằng chim con khi lớn sẽ ngậm mồi về nuôi nấng cha mẹ già.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "古人",
+          "pinyin": "gǔrén",
+          "hanviet": "Cổ Nhân",
+          "hsk": 6,
+          "word_id": "hsk6_478",
+          "meaning_vi": "người xưa, người cổ đại"
+        },
+        {
+          "text": "还",
+          "pinyin": "hái",
+          "hanviet": "Hoàn",
+          "hsk": 1,
+          "word_id": "hsk1_111",
+          "meaning_vi": "vẫn còn"
+        },
+        {
+          "text": "常常",
+          "pinyin": "chángcháng",
+          "hanviet": "Thường Thường",
+          "hsk": 3,
+          "word_id": "hsk3_655",
+          "meaning_vi": "thường thường, thường xuyên"
+        },
+        {
+          "text": "用",
+          "pinyin": "yòng",
+          "hanviet": "Dụng",
+          "hsk": 3,
+          "word_id": "hsk3_1020",
+          "meaning_vi": "dùng"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "乌鸦",
+          "pinyin": "wū yā",
+          "hanviet": "Ô Nha"
+        },
+        {
+          "text": "反哺",
+          "pinyin": "fǎn bǔ",
+          "hanviet": "Phản Bú"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "来",
+          "pinyin": "lái",
+          "hanviet": "Lai",
+          "hsk": 1,
+          "word_id": "hsk1_533",
+          "meaning_vi": "đến, tới"
+        },
+        {
+          "text": "赞美",
+          "pinyin": "zànměi",
+          "hanviet": "Tán Mỹ",
+          "hsk": 7,
+          "word_id": "hsk7_5103",
+          "meaning_vi": "khen ngợi, ca ngợi"
+        },
+        {
+          "text": "孝道",
+          "pinyin": "xiào dào",
+          "hanviet": "Hiếu Đạo"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "认为",
+          "pinyin": "rènwéi",
+          "hanviet": "Nhận Vi",
+          "hsk": 3,
+          "word_id": "hsk3_898",
+          "meaning_vi": "cho rằng, nghĩ rằng"
+        },
+        {
+          "text": "雏鸟",
+          "pinyin": "chú niǎo",
+          "hanviet": "Sồ Điểu"
+        },
+        {
+          "text": "长大",
+          "pinyin": "zhǎng dà",
+          "hanviet": "Trường Đại"
+        },
+        {
+          "text": "后会",
+          "pinyin": "hòu huì",
+          "hanviet": "Hậu Hội"
+        },
+        {
+          "text": "叼",
+          "pinyin": "diāo",
+          "hanviet": "Điêu",
+          "hsk": 7,
+          "word_id": "hsk7_891",
+          "meaning_vi": "ngậm (bằng miệng)"
+        },
+        {
+          "text": "食物",
+          "pinyin": "shíwù",
+          "hanviet": "Thực Vật",
+          "hsk": 4,
+          "word_id": "hsk4_663",
+          "meaning_vi": "thức ăn, thực phẩm"
+        },
+        {
+          "text": "回报",
+          "pinyin": "huíbào",
+          "hanviet": "Hồi Báo",
+          "hsk": 6,
+          "word_id": "hsk6_585",
+          "meaning_vi": "đền đáp, báo đáp; hoàn vốn"
+        },
+        {
+          "text": "年迈",
+          "pinyin": "niánmài",
+          "hanviet": "Niên Mại",
+          "hsk": 7,
+          "word_id": "hsk7_2959",
+          "meaning_vi": "tuổi già sức yếu; cao tuổi; già yếu"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "父母",
+          "pinyin": "fùmǔ",
+          "hanviet": "Phụ Mẫu",
+          "hsk": 4,
+          "word_id": "hsk4_210",
+          "meaning_vi": "bố mẹ, cha mẹ"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "现代科学实验进一步证明，乌鸦是鸟类家族中智商最高的物种之一。",
+      "pinyin": "Xiàndài kēxué shíyàn jìnyíbù zhèngmíng, wūyā shì niǎolèi jiāzú zhōng zhìshāng zuì gāo de wùzhǒng zhī yī.",
+      "vi": "Thực nghiệm khoa học hiện đại chứng minh thêm rằng, quạ là một trong những loài có chỉ số thông minh cao nhất trong họ nhà chim.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "现代",
+          "pinyin": "xiàndài",
+          "hanviet": "Hiện Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1239",
+          "meaning_vi": "hiện đại"
+        },
+        {
+          "text": "科学实验",
+          "pinyin": "kē xué shí yàn",
+          "hanviet": "Khoa Học Thực Nghiệm"
+        },
+        {
+          "text": "进一步",
+          "pinyin": "jìnyíbù",
+          "hanviet": "Tiến Nhất Bộ",
+          "hsk": 5,
+          "word_id": "hsk5_620",
+          "meaning_vi": "hơn nữa"
+        },
+        {
+          "text": "证明",
+          "pinyin": "zhèngmíng",
+          "hanviet": "Chứng Minh",
+          "hsk": 4,
+          "word_id": "hsk4_935",
+          "meaning_vi": "chứng minh"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "乌鸦",
+          "pinyin": "wū yā",
+          "hanviet": "Ô Nha"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "鸟类",
+          "pinyin": "niǎo lèi",
+          "hanviet": "Điểu Loại"
+        },
+        {
+          "text": "家族",
+          "pinyin": "jiāzú",
+          "hanviet": "Gia Tộc",
+          "hsk": 7,
+          "word_id": "hsk7_1936",
+          "meaning_vi": "gia đình"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "智商",
+          "pinyin": "zhìshāng",
+          "hanviet": "Trí Thương",
+          "hsk": 7,
+          "word_id": "hsk7_5342",
+          "meaning_vi": "chỉ số thông minh, IQ"
+        },
+        {
+          "text": "最高",
+          "pinyin": "zuì gāo",
+          "hanviet": "Tối Cao"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "物种",
+          "pinyin": "wùzhǒng",
+          "hanviet": "Vật Chủng",
+          "hsk": 7,
+          "word_id": "hsk7_4361",
+          "meaning_vi": "loài"
+        },
+        {
+          "text": "之一",
+          "pinyin": "zhī yī",
+          "hanviet": "Chi Nhất"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "著名的寓言故事《乌鸦喝水》所描绘的场景，在现实实验室中得到了完全的验证。",
+      "pinyin": "Zhùmíng de yùyán gùshì “Wūyā Hē Shuǐ” suǒ miáohuì de chǎngjǐng, zài xiànshí shíyànshì zhōng dédào le wánquán de yànzhèng.",
+      "vi": "Cảnh tượng trong câu chuyện ngụ ngôn nổi tiếng 'Quạ uống nước' đã được kiểm chứng hoàn toàn trong các phòng thí nghiệm thực tế.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "著名",
+          "pinyin": "zhùmíng",
+          "hanviet": "Trước Danh",
+          "hsk": 4,
+          "word_id": "hsk4_967",
+          "meaning_vi": "nổi tiếng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "寓言故事",
+          "pinyin": "yù yán gù shì",
+          "hanviet": "Ngụ Ngôn Cố Sự"
+        },
+        {
+          "text": "《"
+        },
+        {
+          "text": "乌鸦",
+          "pinyin": "wū yā",
+          "hanviet": "Ô Nha"
+        },
+        {
+          "text": "喝水",
+          "pinyin": "hē shuǐ",
+          "hanviet": "Húp Thuỷ"
+        },
+        {
+          "text": "》"
+        },
+        {
+          "text": "所",
+          "pinyin": "sǔnshī",
+          "hanviet": "Tổn Thất",
+          "hsk": 5,
+          "word_id": "hsk5_1095",
+          "meaning_vi": "tổn thất, thiệt hại"
+        },
+        {
+          "text": "描绘",
+          "pinyin": "miáohuì",
+          "hanviet": "Miêu Hội",
+          "hsk": 6,
+          "word_id": "hsk6_914",
+          "meaning_vi": "miêu tả, mô tả"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "场景",
+          "pinyin": "chǎngjǐng",
+          "hanviet": "Tràng Cảnh",
+          "hsk": 6,
+          "word_id": "hsk6_135",
+          "meaning_vi": "cảnh"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "现实",
+          "pinyin": "xiànshí",
+          "hanviet": "Hiện Thực",
+          "hsk": 5,
+          "word_id": "hsk5_1242",
+          "meaning_vi": "thực tế, hiện thực"
+        },
+        {
+          "text": "实验室",
+          "pinyin": "shíyànshì",
+          "hanviet": "Thực Nghiệm Thất",
+          "hsk": 5,
+          "word_id": "hsk5_1023",
+          "meaning_vi": "phòng thí nghiệm"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "得到",
+          "pinyin": "dédào",
+          "hanviet": "Đắc Đáo",
+          "hsk": 3,
+          "word_id": "hsk3_681",
+          "meaning_vi": "nhận được, có được"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "完全",
+          "pinyin": "wánquán",
+          "hanviet": "Hoàn Toàn",
+          "hsk": 4,
+          "word_id": "hsk4_762",
+          "meaning_vi": "hoàn toàn"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "验证",
+          "pinyin": "yànzhèng",
+          "hanviet": "Nghiệm Chứng",
+          "hsk": 6,
+          "word_id": "hsk6_1519",
+          "meaning_vi": "kiểm chứng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "zh": "乌鸦不仅懂得往窄口瓶里投放石子来升高水面，还会制造和使用小木棍工具去钩取缝隙里的食物。",
+      "pinyin": "Wūyā bùjǐn dǒngde wǎng zhǎikǒu píng lǐ tóufàng shízǐ lái shēnggāo shuǐmiàn, hái huì zhìzào hé shǐyòng xiǎo mùgùn gōngjù qù gōu qǔ fèngxì lǐ de shíwù.",
+      "vi": "Quạ không chỉ biết thả sỏi vào bình cổ hẹp để dâng mực nước, mà còn biết chế tạo và dùng que gỗ nhỏ móc lấy thức ăn trong khe hẹp.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "乌鸦",
+          "pinyin": "wū yā",
+          "hanviet": "Ô Nha"
+        },
+        {
+          "text": "不仅",
+          "pinyin": "bùjǐn",
+          "hanviet": "Bất Cận",
+          "hsk": 4,
+          "word_id": "hsk4_55",
+          "meaning_vi": "không chỉ"
+        },
+        {
+          "text": "懂得",
+          "pinyin": "dǒngde",
+          "hanviet": "Đổng Đắc",
+          "hsk": 3,
+          "word_id": "hsk3_699",
+          "meaning_vi": "hiểu, biết"
+        },
+        {
+          "text": "往窄",
+          "pinyin": "wǎng zhǎi",
+          "hanviet": "Vãng Trách"
+        },
+        {
+          "text": "口瓶里",
+          "pinyin": "kǒu píng lǐ",
+          "hanviet": "Khẩu Bình Lý"
+        },
+        {
+          "text": "投放",
+          "pinyin": "tóufàng",
+          "hanviet": "Đầu Phóng",
+          "hsk": 7,
+          "word_id": "hsk7_4094",
+          "meaning_vi": "tung ra; đưa vào thị trường; đầu tư"
+        },
+        {
+          "text": "石子",
+          "pinyin": "shí zǐ",
+          "hanviet": "Thạch Tử"
+        },
+        {
+          "text": "来",
+          "pinyin": "lái",
+          "hanviet": "Lai",
+          "hsk": 1,
+          "word_id": "hsk1_533",
+          "meaning_vi": "đến, tới"
+        },
+        {
+          "text": "升高",
+          "pinyin": "shēng gāo",
+          "hanviet": "Thăng Cao"
+        },
+        {
+          "text": "水面",
+          "pinyin": "shuǐmiàn",
+          "hanviet": "Thuỷ Diện",
+          "hsk": 6,
+          "word_id": "hsk6_1236",
+          "meaning_vi": "mặt nước"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "还会",
+          "pinyin": "hái huì",
+          "hanviet": "Hoàn Hội"
+        },
+        {
+          "text": "制造",
+          "pinyin": "zhìzào",
+          "hanviet": "Chế Tạo",
+          "hsk": 5,
+          "word_id": "hsk5_1518",
+          "meaning_vi": "chế tạo"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "使用",
+          "pinyin": "shǐyòng",
+          "hanviet": "Sử Dụng",
+          "hsk": 4,
+          "word_id": "hsk4_668",
+          "meaning_vi": "sử dụng"
+        },
+        {
+          "text": "小",
+          "pinyin": "xiǎo",
+          "hanviet": "Tiểu",
+          "hsk": 1,
+          "word_id": "hsk1_337",
+          "meaning_vi": "nhỏ"
+        },
+        {
+          "text": "木棍",
+          "pinyin": "mù gùn",
+          "hanviet": "Mộc Côn"
+        },
+        {
+          "text": "工具",
+          "pinyin": "gōngjù",
+          "hanviet": "Công Cụ",
+          "hsk": 5,
+          "word_id": "hsk5_410",
+          "meaning_vi": "công cụ"
+        },
+        {
+          "text": "去",
+          "pinyin": "qù",
+          "hanviet": "Khứ",
+          "hsk": 1,
+          "word_id": "hsk1_238",
+          "meaning_vi": "đi"
+        },
+        {
+          "text": "钩取",
+          "pinyin": "gōu qǔ",
+          "hanviet": "Câu Thủ"
+        },
+        {
+          "text": "缝隙",
+          "pinyin": "fèng xì",
+          "hanviet": "Phùng Khích"
+        },
+        {
+          "text": "里",
+          "pinyin": "lǐ",
+          "hanviet": "Lý",
+          "hsk": 1,
+          "word_id": "hsk1_536",
+          "meaning_vi": "bên trong"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "食物",
+          "pinyin": "shíwù",
+          "hanviet": "Thực Vật",
+          "hsk": 4,
+          "word_id": "hsk4_663",
+          "meaning_vi": "thức ăn, thực phẩm"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "zh": "随着现代城市的高速发展，极具智慧和适应力的乌鸦渐渐成为城市里坚韧的“留守者”。",
+      "pinyin": "Suízhe xiàndài chéngshì de gāosù fāzhǎn, jí jù zhìhuì hé shìyìnglì de wūyā jiànjiàn chéngwéi chéngshì lǐ jiānrèn de “liúshǒuzhě”.",
+      "vi": "Theo sự phát triển nhanh chóng của các đô thị hiện đại, loài quạ đầy trí khôn và khả năng thích nghi cao đã dần trở thành 'kẻ ở lại' kiên cường của thành phố.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "随着",
+          "pinyin": "suízhe",
+          "hanviet": "Tuỳ Trước",
+          "hsk": 4,
+          "word_id": "hsk4_710",
+          "meaning_vi": "theo cùng với"
+        },
+        {
+          "text": "现代",
+          "pinyin": "xiàndài",
+          "hanviet": "Hiện Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1239",
+          "meaning_vi": "hiện đại"
+        },
+        {
+          "text": "城市",
+          "pinyin": "chéngshì",
+          "hanviet": "Thành Thị",
+          "hsk": 3,
+          "word_id": "hsk3_658",
+          "meaning_vi": "thành phố"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "高速",
+          "pinyin": "gāosù",
+          "hanviet": "Cao Tốc",
+          "hsk": 4,
+          "word_id": "hsk4_238",
+          "meaning_vi": "cao tốc, tốc độ cao"
+        },
+        {
+          "text": "发展",
+          "pinyin": "fāzhǎn",
+          "hanviet": "Phát Triển",
+          "hsk": 3,
+          "word_id": "hsk3_713",
+          "meaning_vi": "phát triển"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "极具",
+          "pinyin": "jí jù",
+          "hanviet": "Cực Cụ"
+        },
+        {
+          "text": "智慧",
+          "pinyin": "zhìhuì",
+          "hanviet": "Trí Tuệ",
+          "hsk": 5,
+          "word_id": "hsk5_1513",
+          "meaning_vi": "trí tuệ"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "适应力",
+          "pinyin": "shì yìng lì",
+          "hanviet": "Quát Ưng Lực"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "乌鸦",
+          "pinyin": "wū yā",
+          "hanviet": "Ô Nha"
+        },
+        {
+          "text": "渐渐",
+          "pinyin": "jiànjiàn",
+          "hanviet": "Tiêm Tiêm",
+          "hsk": 5,
+          "word_id": "hsk5_574",
+          "meaning_vi": "dần dần"
+        },
+        {
+          "text": "成为",
+          "pinyin": "chéngwéi",
+          "hanviet": "Thành Vi",
+          "hsk": 4,
+          "word_id": "hsk4_82",
+          "meaning_vi": "trở thành"
+        },
+        {
+          "text": "城市",
+          "pinyin": "chéngshì",
+          "hanviet": "Thành Thị",
+          "hsk": 3,
+          "word_id": "hsk3_658",
+          "meaning_vi": "thành phố"
+        },
+        {
+          "text": "里",
+          "pinyin": "lǐ",
+          "hanviet": "Lý",
+          "hsk": 1,
+          "word_id": "hsk1_536",
+          "meaning_vi": "bên trong"
+        },
+        {
+          "text": "坚韧",
+          "pinyin": "jiānrèn",
+          "hanviet": "Kiên Nhận",
+          "hsk": 7,
+          "word_id": "hsk7_1961",
+          "meaning_vi": "kiên cường bền bỉ, dẻo dai"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "留守",
+          "pinyin": "liú shǒu",
+          "hanviet": "Lưu Thủ"
+        },
+        {
+          "text": "者",
+          "pinyin": "zhě",
+          "hanviet": "Giả",
+          "hsk": 4,
+          "word_id": "hsk4_926",
+          "meaning_vi": "người (hậu tố: …giả)"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk3_658",
+    "hsk3_713",
+    "hsk4_935",
+    "hsk5_1022",
+    "hsk5_1116"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Trong thần thoại Trung Hoa cổ đại, loài chim ba chân trong Mặt Trời là chim gì?",
+      "options_vi": [
+        "Tam túc kim ô (quạ vàng ba chân)",
+        "Phượng hoàng lửa",
+        "Đại bàng cánh vàng"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trong bài viết: 太阳中的三足金乌就是至高光明的象征."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Thành ngữ '乌鸦反哺' (Quạ mớm mồi) thường dùng để ca ngợi đức tính gì?",
+      "options_vi": [
+        "Lòng hiếu thảo với cha mẹ",
+        "Sự dũng cảm nơi chiến trường",
+        "Tính siêng năng cần cù"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trong bài viết: 古人还常常用“乌鸦反哺”来赞美孝道 (Cổ nhân dùng để ca ngợi đạo hiếu)."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Khả năng nào chứng minh chỉ số thông minh vượt trội của loài quạ?",
+      "options_vi": [
+        "Biết thả sỏi vào bình để dâng nước và dùng que khều thức ăn",
+        "Biết bay lượn trên tầng không cao nhất",
+        "Biết hót nhiều khúc nhạc phức tạp"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trong bài viết: 乌鸦不仅懂得往窄口瓶里投放石子来升高水面，还会制造和使用小木棍工具."
+    }
+  ]
+}

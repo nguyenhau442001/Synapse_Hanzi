@@ -1,0 +1,1226 @@
+{
+  "id": "wanwu_story_005",
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_page_start": 47,
+  "book_page_end": 54,
+  "page_display": "Trang 47 - 54",
+  "title": {
+    "zh": "蚂蚁：一亿年物种进化之旅",
+    "vi": "Loài kiến: Hành trình tiến hóa một trăm triệu năm"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🐜",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 47 - 54 · Xã hội loài kiến với cấu trúc phân công lao động chặt chẽ và hành trình sinh tồn vượt qua kỷ băng hà.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "蚂蚁虽然身躯微小，却是地球上繁衍最成功、数量最庞大的陆生生物群体之一。",
+      "pinyin": "Mǎyǐ suīrán shēnqū wēixiǎo, què shì dìqiú shàng fányǎn zuì chénggōng, shùliàng zuì pángdà de lùshēng shēngwù qúntǐ zhī yī.",
+      "vi": "Kiến tuy thân hình bé nhỏ, nhưng lại là một trong những quần thể sinh vật trên cạn sinh sôi thành công nhất và số lượng đông đảo nhất hành tinh.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "蚂蚁",
+          "pinyin": "mǎyǐ",
+          "hanviet": "Mã Nghĩ",
+          "hsk": 6,
+          "word_id": "hsk6_885",
+          "meaning_vi": "con kiến"
+        },
+        {
+          "text": "虽然",
+          "pinyin": "suīrán",
+          "hanviet": "Tuy Nhiên",
+          "hsk": 2,
+          "word_id": "hsk2_438",
+          "meaning_vi": "mặc dù"
+        },
+        {
+          "text": "身躯",
+          "pinyin": "shēnqū",
+          "hanviet": "Thân Khu",
+          "hsk": 7,
+          "word_id": "hsk7_3575",
+          "meaning_vi": "tấm thân; thân thể"
+        },
+        {
+          "text": "微小",
+          "pinyin": "wēixiǎo",
+          "hanviet": "Vi Tiểu",
+          "hsk": 6,
+          "word_id": "hsk6_1367",
+          "meaning_vi": "vi mô, nhỏ bé"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "却是",
+          "pinyin": "què shì",
+          "hanviet": "Khước Thị"
+        },
+        {
+          "text": "地球",
+          "pinyin": "dìqiú",
+          "hanviet": "Địa Cầu",
+          "hsk": 4,
+          "word_id": "hsk4_155",
+          "meaning_vi": "địa cầu, Trái Đất"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "繁衍",
+          "pinyin": "fányǎn",
+          "hanviet": "Phồn Diễn",
+          "hsk": 7,
+          "word_id": "hsk7_1071",
+          "meaning_vi": "sinh sôi nảy nở, duy trì nòi giống"
+        },
+        {
+          "text": "最",
+          "pinyin": "zuì",
+          "hanviet": "Tối",
+          "hsk": 2,
+          "word_id": "hsk2_498",
+          "meaning_vi": "nhất"
+        },
+        {
+          "text": "成功",
+          "pinyin": "chénggōng",
+          "hanviet": "Thành Công",
+          "hsk": 4,
+          "word_id": "hsk4_79",
+          "meaning_vi": "thành công"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "数量",
+          "pinyin": "shùliàng",
+          "hanviet": "Số Lượng",
+          "hsk": 4,
+          "word_id": "hsk4_692",
+          "meaning_vi": "số lượng"
+        },
+        {
+          "text": "最",
+          "pinyin": "zuì",
+          "hanviet": "Tối",
+          "hsk": 2,
+          "word_id": "hsk2_498",
+          "meaning_vi": "nhất"
+        },
+        {
+          "text": "庞大",
+          "pinyin": "pángdà",
+          "hanviet": "Bàng Đại",
+          "hsk": 6,
+          "word_id": "hsk6_972",
+          "meaning_vi": "to lớn, khổng lồ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "陆生",
+          "pinyin": "lù shēng",
+          "hanviet": "Lục Sinh"
+        },
+        {
+          "text": "生物",
+          "pinyin": "shēngwù",
+          "hanviet": "Sinh Vật",
+          "hsk": 5,
+          "word_id": "hsk5_995",
+          "meaning_vi": "sinh vật"
+        },
+        {
+          "text": "群体",
+          "pinyin": "qúntǐ",
+          "hanviet": "Quần Thể",
+          "hsk": 5,
+          "word_id": "hsk5_910",
+          "meaning_vi": "quần thể, nhóm cộng đồng, tập thể"
+        },
+        {
+          "text": "之一",
+          "pinyin": "zhī yī",
+          "hanviet": "Chi Nhất"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "化石记录表明，早在恐龙统治地球的白垩纪时代，也就是距今一亿多年前，蚂蚁就已经出现在地球上了。",
+      "pinyin": "Huàshí jìlù biǎomíng, zǎo zài kǒnglóng tǒngzhì dìqiú de Bái'èjì shídài, yě jiù shì jùjīn yí yì duō nián qián, mǎyǐ jiù yǐjīng chūxiàn zài dìqiú shàng le.",
+      "vi": "Hóa thạch ghi nhận chỉ ra rằng, từ kỷ Phấn Trắng khi khủng long còn thống trị Trái Đất cách nay hơn 100 triệu năm, loài kiến đã có mặt trên địa cầu.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "化石",
+          "pinyin": "huàshí",
+          "hanviet": "Hoa Thạch",
+          "hsk": 6,
+          "word_id": "hsk6_569",
+          "meaning_vi": "hóa thạch"
+        },
+        {
+          "text": "记录",
+          "pinyin": "jìlù",
+          "hanviet": "Ký Lục",
+          "hsk": 5,
+          "word_id": "hsk5_541",
+          "meaning_vi": "ghi chép, kỷ lục"
+        },
+        {
+          "text": "表明",
+          "pinyin": "biǎomíng",
+          "hanviet": "Biểu Minh",
+          "hsk": 5,
+          "word_id": "hsk5_64",
+          "meaning_vi": "chứng tỏ, biểu thị rõ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "早",
+          "pinyin": "zǎo",
+          "hanviet": "Tảo",
+          "hsk": 1,
+          "word_id": "hsk1_602",
+          "meaning_vi": "sớm"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "恐龙",
+          "pinyin": "kǒnglóng",
+          "hanviet": "Khủng Long",
+          "hsk": 7,
+          "word_id": "hsk7_2381",
+          "meaning_vi": "khủng long"
+        },
+        {
+          "text": "统治",
+          "pinyin": "tǒngzhì",
+          "hanviet": "Thống Trị",
+          "hsk": 7,
+          "word_id": "hsk7_4089",
+          "meaning_vi": "thống trị"
+        },
+        {
+          "text": "地球",
+          "pinyin": "dìqiú",
+          "hanviet": "Địa Cầu",
+          "hsk": 4,
+          "word_id": "hsk4_155",
+          "meaning_vi": "địa cầu, Trái Đất"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "白垩纪",
+          "pinyin": "bái è jì",
+          "hanviet": "Bạch Ác Kỷ"
+        },
+        {
+          "text": "时代",
+          "pinyin": "shídài",
+          "hanviet": "Thời Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1012",
+          "meaning_vi": "thời đại"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "也",
+          "pinyin": "yě",
+          "hanviet": "Dã",
+          "hsk": 1,
+          "word_id": "hsk1_359",
+          "meaning_vi": "cũng"
+        },
+        {
+          "text": "就是",
+          "pinyin": "jiùshì",
+          "hanviet": "Tựu Thị",
+          "hsk": 4,
+          "word_id": "hsk4_408",
+          "meaning_vi": "chính là; dù… cũng"
+        },
+        {
+          "text": "距今",
+          "pinyin": "jù jīn",
+          "hanviet": "Cự Kim"
+        },
+        {
+          "text": "一亿多年",
+          "pinyin": "yī yì duō nián",
+          "hanviet": "Nhất Ức Đa Niên"
+        },
+        {
+          "text": "前",
+          "pinyin": "qián",
+          "hanviet": "Tiền",
+          "hsk": 1,
+          "word_id": "hsk1_558",
+          "meaning_vi": "trước"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "蚂蚁",
+          "pinyin": "mǎyǐ",
+          "hanviet": "Mã Nghĩ",
+          "hsk": 6,
+          "word_id": "hsk6_885",
+          "meaning_vi": "con kiến"
+        },
+        {
+          "text": "就",
+          "pinyin": "jiù",
+          "hanviet": "Tựu",
+          "hsk": 2,
+          "word_id": "hsk2_376",
+          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)"
+        },
+        {
+          "text": "已经",
+          "pinyin": "yǐjīng",
+          "hanviet": "Dĩ Kinh",
+          "hsk": 2,
+          "word_id": "hsk2_472",
+          "meaning_vi": "đã"
+        },
+        {
+          "text": "出现",
+          "pinyin": "chūxiàn",
+          "hanviet": "Xuất Hiện",
+          "hsk": 4,
+          "word_id": "hsk4_90",
+          "meaning_vi": "xuất hiện"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "地球",
+          "pinyin": "dìqiú",
+          "hanviet": "Địa Cầu",
+          "hsk": 4,
+          "word_id": "hsk4_155",
+          "meaning_vi": "địa cầu, Trái Đất"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "蚂蚁是典型的社会性昆虫，一个蚁巢就像一个组织严密、分工明确的微型王国。",
+      "pinyin": "Mǎyǐ shì diǎnxíng de shèhuìxìng kūnchóng, yí gè yǐcháo jiù xiàng yí gè zǔzhī yánmì, fēngōng míngquè de wēixíng wángguó.",
+      "vi": "Kiến là loài côn trùng xã hội điển hình, một tổ kiến giống như một vương quốc thu nhỏ có tổ chức chặt chẽ và phân công rành mạch.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "蚂蚁",
+          "pinyin": "mǎyǐ",
+          "hanviet": "Mã Nghĩ",
+          "hsk": 6,
+          "word_id": "hsk6_885",
+          "meaning_vi": "con kiến"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "典型",
+          "pinyin": "diǎnxíng",
+          "hanviet": "Điển Hình",
+          "hsk": 6,
+          "word_id": "hsk6_299",
+          "meaning_vi": "điển hình"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "社会性",
+          "pinyin": "shè huì xìng",
+          "hanviet": "Xã Hội Tính"
+        },
+        {
+          "text": "昆虫",
+          "pinyin": "kūnchóng",
+          "hanviet": "Côn Trùng",
+          "hsk": 5,
+          "word_id": "hsk5_680",
+          "meaning_vi": "côn trùng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "一个",
+          "pinyin": "yí gè",
+          "hanviet": "Nhất Cá"
+        },
+        {
+          "text": "蚁巢",
+          "pinyin": "yǐ cháo",
+          "hanviet": "Nghĩ Sào"
+        },
+        {
+          "text": "就",
+          "pinyin": "jiù",
+          "hanviet": "Tựu",
+          "hsk": 2,
+          "word_id": "hsk2_376",
+          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)"
+        },
+        {
+          "text": "像",
+          "pinyin": "xiàng",
+          "hanviet": "Tượng",
+          "hsk": 3,
+          "word_id": "hsk3_974",
+          "meaning_vi": "giống như"
+        },
+        {
+          "text": "一个",
+          "pinyin": "yí gè",
+          "hanviet": "Nhất Cá"
+        },
+        {
+          "text": "组织",
+          "pinyin": "zǔzhī",
+          "hanviet": "Tổ Chức",
+          "hsk": 5,
+          "word_id": "hsk5_1593",
+          "meaning_vi": "tổ chức"
+        },
+        {
+          "text": "严密",
+          "pinyin": "yánmì",
+          "hanviet": "Nghiêm Mật",
+          "hsk": 7,
+          "word_id": "hsk7_4729",
+          "meaning_vi": "chặt chẽ, nghiêm ngặt"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "分工",
+          "pinyin": "fēngōng",
+          "hanviet": "Phân Công",
+          "hsk": 6,
+          "word_id": "hsk6_384",
+          "meaning_vi": "phân công công việc"
+        },
+        {
+          "text": "明确",
+          "pinyin": "míngquè",
+          "hanviet": "Minh Xác",
+          "hsk": 5,
+          "word_id": "hsk5_776",
+          "meaning_vi": "rõ ràng, minh xác"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "微型",
+          "pinyin": "wēixíng",
+          "hanviet": "Vi Hình",
+          "hsk": 7,
+          "word_id": "hsk7_4235",
+          "meaning_vi": "siêu nhỏ; thu nhỏ; mini"
+        },
+        {
+          "text": "王国",
+          "pinyin": "wángguó",
+          "hanviet": "Vương Quốc",
+          "hsk": 7,
+          "word_id": "hsk7_4207",
+          "meaning_vi": "vương quốc; thế giới riêng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "蚁后专门负责产卵繁育后代，工蚁负责寻找食物、修建巢穴，而兵蚁则负责守卫领地安全。",
+      "pinyin": "Yǐhòu zhuānmén fùzé chǎnluǎn fányù hòudài, gōngyǐ fùzé xúnzhǎo shíwù, xiūjiàn cháoxué, ér bīngyǐ zé fùzé shǒuwèi lǐngdì ānquán.",
+      "vi": "Kiến chúa chuyên trách đẻ trứng nhân giống bầy đàn, kiến thợ gánh vác tìm kiếm thức ăn và xây đắp tổ, còn kiến lính nhận nhiệm vụ canh giữ lãnh địa an toàn.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "蚁后",
+          "pinyin": "yǐ hòu",
+          "hanviet": "Nghĩ Hậu"
+        },
+        {
+          "text": "专门",
+          "pinyin": "zhuānmén",
+          "hanviet": "Chuyên Môn",
+          "hsk": 4,
+          "word_id": "hsk4_968",
+          "meaning_vi": "chuyên môn, chuyên biệt"
+        },
+        {
+          "text": "负责",
+          "pinyin": "fùzé",
+          "hanviet": "Phụ Trách",
+          "hsk": 4,
+          "word_id": "hsk4_215",
+          "meaning_vi": "chịu trách nhiệm"
+        },
+        {
+          "text": "产卵",
+          "pinyin": "chǎn luǎn",
+          "hanviet": "Sản Noãn"
+        },
+        {
+          "text": "繁育",
+          "pinyin": "fán yù",
+          "hanviet": "Phồn Dục"
+        },
+        {
+          "text": "后代",
+          "pinyin": "hòudài",
+          "hanviet": "Hậu Đại",
+          "hsk": 6,
+          "word_id": "hsk6_552",
+          "meaning_vi": "thế hệ sau, con cháu"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "工蚁",
+          "pinyin": "gōng yǐ",
+          "hanviet": "Công Nghĩ"
+        },
+        {
+          "text": "负责",
+          "pinyin": "fùzé",
+          "hanviet": "Phụ Trách",
+          "hsk": 4,
+          "word_id": "hsk4_215",
+          "meaning_vi": "chịu trách nhiệm"
+        },
+        {
+          "text": "寻找",
+          "pinyin": "xúnzhǎo",
+          "hanviet": "Tầm Trảo",
+          "hsk": 5,
+          "word_id": "hsk5_1317",
+          "meaning_vi": "tìm kiếm"
+        },
+        {
+          "text": "食物",
+          "pinyin": "shíwù",
+          "hanviet": "Thực Vật",
+          "hsk": 4,
+          "word_id": "hsk4_663",
+          "meaning_vi": "thức ăn, thực phẩm"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "修建",
+          "pinyin": "xiūjiàn",
+          "hanviet": "Tu Kiến",
+          "hsk": 5,
+          "word_id": "hsk5_1301",
+          "meaning_vi": "xây dựng"
+        },
+        {
+          "text": "巢穴",
+          "pinyin": "cháoxué",
+          "hanviet": "Sào Huyệt",
+          "hsk": 7,
+          "word_id": "hsk7_463",
+          "meaning_vi": "hang ổ, sào huyệt"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "而兵",
+          "pinyin": "ér bīng",
+          "hanviet": "Nhi Binh"
+        },
+        {
+          "text": "蚁",
+          "pinyin": "yǐ",
+          "hanviet": "Nghĩ"
+        },
+        {
+          "text": "则",
+          "pinyin": "xìtǒng",
+          "hanviet": "Hệ Thống",
+          "hsk": 5,
+          "word_id": "hsk5_1229",
+          "meaning_vi": "hệ thống"
+        },
+        {
+          "text": "负责",
+          "pinyin": "fùzé",
+          "hanviet": "Phụ Trách",
+          "hsk": 4,
+          "word_id": "hsk4_215",
+          "meaning_vi": "chịu trách nhiệm"
+        },
+        {
+          "text": "守卫",
+          "pinyin": "shǒu wèi",
+          "hanviet": "Thủ Vệ"
+        },
+        {
+          "text": "领地",
+          "pinyin": "lǐng dì",
+          "hanviet": "Lãnh Địa"
+        },
+        {
+          "text": "安全",
+          "pinyin": "ānquán",
+          "hanviet": "An Toàn",
+          "hsk": 3,
+          "word_id": "hsk3_605",
+          "meaning_vi": "an toàn"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "蚂蚁的力量十分惊人，一只普通的蚂蚁能够举起超过自身体重五十倍的物体。",
+      "pinyin": "Mǎyǐ de lìliàng shífēn jīngrén, yì zhī pǔtōng de mǎyǐ nénggòu jǔ qǐ chāoguò zìshēn tǐzhòng wǔshí bèi de wùtǐ.",
+      "vi": "Sức mạnh của loài kiến rất đáng kinh ngạc, một con kiến bình thường có thể nâng bổng vật thể nặng gấp hơn 50 lần trọng lượng cơ thể.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "蚂蚁",
+          "pinyin": "mǎyǐ",
+          "hanviet": "Mã Nghĩ",
+          "hsk": 6,
+          "word_id": "hsk6_885",
+          "meaning_vi": "con kiến"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "力量",
+          "pinyin": "lìliàng",
+          "hanviet": "Lực Lượng",
+          "hsk": 5,
+          "word_id": "hsk5_707",
+          "meaning_vi": "lực lượng, sức mạnh"
+        },
+        {
+          "text": "十分",
+          "pinyin": "shífēn",
+          "hanviet": "Thập Phân",
+          "hsk": 4,
+          "word_id": "hsk4_657",
+          "meaning_vi": "rất, mười phần"
+        },
+        {
+          "text": "惊人",
+          "pinyin": "jīngrén",
+          "hanviet": "Kinh Nhân",
+          "hsk": 6,
+          "word_id": "hsk6_715",
+          "meaning_vi": "đáng kinh ngạc, kinh người"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "一只",
+          "pinyin": "yī zhī",
+          "hanviet": "Nhất Chỉ"
+        },
+        {
+          "text": "普通",
+          "pinyin": "pǔtōng",
+          "hanviet": "Phổ Thông",
+          "hsk": 4,
+          "word_id": "hsk4_562",
+          "meaning_vi": "bình thường, phổ thông"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "蚂蚁",
+          "pinyin": "mǎyǐ",
+          "hanviet": "Mã Nghĩ",
+          "hsk": 6,
+          "word_id": "hsk6_885",
+          "meaning_vi": "con kiến"
+        },
+        {
+          "text": "能够",
+          "pinyin": "nénggòu",
+          "hanviet": "Năng Cú",
+          "hsk": 4,
+          "word_id": "hsk4_532",
+          "meaning_vi": "có thể"
+        },
+        {
+          "text": "举起",
+          "pinyin": "jǔ qǐ",
+          "hanviet": "Cử Khởi"
+        },
+        {
+          "text": "超过",
+          "pinyin": "chāoguò",
+          "hanviet": "Siêu Quá",
+          "hsk": 4,
+          "word_id": "hsk4_74",
+          "meaning_vi": "vượt qua"
+        },
+        {
+          "text": "自身",
+          "pinyin": "zìshēn",
+          "hanviet": "Tự Thân",
+          "hsk": 5,
+          "word_id": "hsk5_1578",
+          "meaning_vi": "bản thân, chính mình"
+        },
+        {
+          "text": "体重",
+          "pinyin": "tǐzhòng",
+          "hanviet": "Thể Trọng",
+          "hsk": 4,
+          "word_id": "hsk4_734",
+          "meaning_vi": "cân nặng"
+        },
+        {
+          "text": "五",
+          "pinyin": "wǔ",
+          "hanviet": "Ngũ",
+          "hsk": 1,
+          "word_id": "hsk1_321",
+          "meaning_vi": "năm"
+        },
+        {
+          "text": "十倍",
+          "pinyin": "shí bèi",
+          "hanviet": "Thập Bội"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "物体",
+          "pinyin": "wùtǐ",
+          "hanviet": "Vật Thể",
+          "hsk": 6,
+          "word_id": "hsk6_1401",
+          "meaning_vi": "vật thể"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "zh": "它们通过触角释放微量的化学气味信息素，在黑夜中也能精确地引导同伴列队前行。",
+      "pinyin": "Tāmen tōngguò chùjiǎo shìfàng wēiliàng de huàxué qìwèi xìnxīsù, zài hēiyè zhōng yě néng jīngquè de yǐndǎo tóngbàn lièduì qiánxíng.",
+      "vi": "Chúng thông qua râu phát ra pheromone mùi hóa học siêu nhỏ, dù trong đêm đen cũng có thể dẫn đường chuẩn xác cho đồng loại xếp hàng tiến bước.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "它们",
+          "pinyin": "tāmen",
+          "hanviet": "Tha Môn",
+          "hsk": 1,
+          "word_id": "hsk1_571",
+          "meaning_vi": "chúng nó, chúng (chỉ đồ vật, động vật)"
+        },
+        {
+          "text": "通过",
+          "pinyin": "tōngguò",
+          "hanviet": "Thông Qua",
+          "hsk": 4,
+          "word_id": "hsk4_744",
+          "meaning_vi": "thông qua"
+        },
+        {
+          "text": "触角",
+          "pinyin": "chù jiǎo",
+          "hanviet": "Xúc Giác"
+        },
+        {
+          "text": "释放",
+          "pinyin": "shìfàng",
+          "hanviet": "Thích Phóng",
+          "hsk": 6,
+          "word_id": "hsk6_1199",
+          "meaning_vi": "phóng thích, thả ra"
+        },
+        {
+          "text": "微量",
+          "pinyin": "wēi liàng",
+          "hanviet": "Vi Lượng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "化学",
+          "pinyin": "huàxué",
+          "hanviet": "Hóa Học",
+          "hsk": 5,
+          "word_id": "hsk5_501",
+          "meaning_vi": "hóa học"
+        },
+        {
+          "text": "气味",
+          "pinyin": "qìwèi",
+          "hanviet": "Khí Vị",
+          "hsk": 6,
+          "word_id": "hsk6_1027",
+          "meaning_vi": "mùi vị, khí vị"
+        },
+        {
+          "text": "信息",
+          "pinyin": "xìnxī",
+          "hanviet": "Tín Tức",
+          "hsk": 4,
+          "word_id": "hsk4_823",
+          "meaning_vi": "thông tin"
+        },
+        {
+          "text": "素",
+          "pinyin": "sù",
+          "hanviet": "Tố",
+          "hsk": 7,
+          "word_id": "hsk7_3889",
+          "meaning_vi": "chay; thanh đạm"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "黑夜",
+          "pinyin": "hēi yè",
+          "hanviet": "Hắc Dạ"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "也",
+          "pinyin": "yě",
+          "hanviet": "Dã",
+          "hsk": 1,
+          "word_id": "hsk1_359",
+          "meaning_vi": "cũng"
+        },
+        {
+          "text": "能",
+          "pinyin": "néng",
+          "hanviet": "Năng",
+          "hsk": 1,
+          "word_id": "hsk1_212",
+          "meaning_vi": "có thể"
+        },
+        {
+          "text": "精确",
+          "pinyin": "jīngquè",
+          "hanviet": "Tinh Xác",
+          "hsk": 6,
+          "word_id": "hsk6_714",
+          "meaning_vi": "chính xác"
+        },
+        {
+          "text": "地",
+          "pinyin": "de",
+          "hanviet": "Địa",
+          "hsk": 2,
+          "word_id": "hsk2_333",
+          "meaning_vi": "cách (trợ từ trạng ngữ)"
+        },
+        {
+          "text": "引导",
+          "pinyin": "yǐndǎo",
+          "hanviet": "Dẫn Đạo",
+          "hsk": 6,
+          "word_id": "hsk6_1580",
+          "meaning_vi": "dẫn dắt, hướng dẫn"
+        },
+        {
+          "text": "同伴",
+          "pinyin": "tóngbàn",
+          "hanviet": "Đồng Bạn",
+          "hsk": 6,
+          "word_id": "hsk6_1310",
+          "meaning_vi": "bạn đồng hành, bạn cùng chơi"
+        },
+        {
+          "text": "列队",
+          "pinyin": "liè duì",
+          "hanviet": "Liệt Đội"
+        },
+        {
+          "text": "前行",
+          "pinyin": "qián xíng",
+          "hanviet": "Tiền Hành"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "zh": "正是凭借高度的团结与协作精神，微小的蚂蚁经历了沧海桑田的变迁，在地球上屹立了一亿年。",
+      "pinyin": "Zhèng shì píngjiè gāodù de tuánjié yǔ xiézuò jīngshén, wēixiǎo de mǎyǐ jīnglì le cānghǎi-sāngtián de biànqiān, zài dìqiú shàng yìlì le yí yì nián.",
+      "vi": "Chính nhờ tinh thần đoàn kết và phối hợp cao độ, những chú kiến bé nhỏ đã vượt qua bao biến thiên dâu bể để đứng vững trên Trái Đất suốt 100 triệu năm.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "正是",
+          "pinyin": "zhèng shì",
+          "hanviet": "Chính Thị"
+        },
+        {
+          "text": "凭借",
+          "pinyin": "píngjiè",
+          "hanviet": "Bằng Tá",
+          "hsk": 5,
+          "word_id": "hsk5_843",
+          "meaning_vi": "bằng"
+        },
+        {
+          "text": "高度",
+          "pinyin": "gāodù",
+          "hanviet": "Cao Độ",
+          "hsk": 5,
+          "word_id": "hsk5_388",
+          "meaning_vi": "độ cao; cao độ, rất"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "团结",
+          "pinyin": "tuánjié",
+          "hanviet": "Đoàn Kết",
+          "hsk": 6,
+          "word_id": "hsk6_1336",
+          "meaning_vi": "đoàn kết"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "协作",
+          "pinyin": "xiézuò",
+          "hanviet": "Hiệp Tác",
+          "hsk": 7,
+          "word_id": "hsk7_4524",
+          "meaning_vi": "hợp tác phối hợp; hiệp tác"
+        },
+        {
+          "text": "精神",
+          "pinyin": "jīngshen",
+          "hanviet": "Tinh Thần",
+          "hsk": 5,
+          "word_id": "hsk5_623",
+          "meaning_vi": "tinh thần; minh mẫn, hoạt bát"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "微小",
+          "pinyin": "wēixiǎo",
+          "hanviet": "Vi Tiểu",
+          "hsk": 6,
+          "word_id": "hsk6_1367",
+          "meaning_vi": "vi mô, nhỏ bé"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "蚂蚁",
+          "pinyin": "mǎyǐ",
+          "hanviet": "Mã Nghĩ",
+          "hsk": 6,
+          "word_id": "hsk6_885",
+          "meaning_vi": "con kiến"
+        },
+        {
+          "text": "经历",
+          "pinyin": "jīnglì",
+          "hanviet": "Kinh Lịch",
+          "hsk": 4,
+          "word_id": "hsk4_398",
+          "meaning_vi": "trải qua, kinh nghiệm trải qua"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "沧海桑田",
+          "pinyin": "cāng hǎi sāng tián",
+          "hanviet": "Thương Hải Tang Điền"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "变迁",
+          "pinyin": "biànqiān",
+          "hanviet": "Biến Thiên",
+          "hsk": 7,
+          "word_id": "hsk7_223",
+          "meaning_vi": "biến đổi, thay đổi theo thời gian"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "地球",
+          "pinyin": "dìqiú",
+          "hanviet": "Địa Cầu",
+          "hsk": 4,
+          "word_id": "hsk4_155",
+          "meaning_vi": "địa cầu, Trái Đất"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "屹立",
+          "pinyin": "yìlì",
+          "hanviet": "Ngật Lập",
+          "hsk": 7,
+          "word_id": "hsk7_4864",
+          "meaning_vi": "sừng sững, đứng vững hiên ngang"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "一亿年",
+          "pinyin": "yī yì nián",
+          "hanviet": "Nhất Ức Niên"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk6_885",
+    "hsk5_707",
+    "hsk4_155",
+    "hsk5_1593"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Loài kiến đã xuất hiện trên Trái Đất từ khoảng bao nhiêu năm trước?",
+      "options_vi": [
+        "Hơn 100 triệu năm trước",
+        "Khoảng 10 triệu năm trước",
+        "Mới xuất hiện vài nghìn năm"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trong bài viết: 距今一亿多年前，蚂蚁就已经出现在地球上了."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Một chú kiến bình thường có thể nâng vật nặng gấp bao nhiêu lần cơ thể?",
+      "options_vi": [
+        "Gấp hơn 50 lần",
+        "Gấp 2 lần",
+        "Gấp 5 lần"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trong bài viết: 一只普通的蚂蚁能够举起超过自身体重五十倍的物体."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Kiến giao tiếp và dẫn đường cho nhau bằng phương thức nào?",
+      "options_vi": [
+        "Bằng tín hiệu mùi hóa học (pheromone) qua râu",
+        "Bằng mắt nhìn ban đêm",
+        "Bằng tiếng hót"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trong bài viết: 通过触角释放微量的化学气味信息素 (Thông qua râu phát tín hiệu mùi hóa học)."
+    }
+  ]
+}

@@ -1,0 +1,1185 @@
+{
+  "id": "wanwu_story_012",
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_page_start": 574,
+  "book_page_end": 585,
+  "page_display": "Trang 574 - 585",
+  "title": {
+    "zh": "棋：围棋是国粹，象棋是舶来品？",
+    "vi": "Cờ: Cờ vây là quốc túy, cờ tướng là hàng ngoại nhập?"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "♟️",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 574 - 585 · Triết lý cờ vây cổ xưa 'cầm kỳ thi họa' và cuộc tranh luận thú vị về nguồn gốc cờ tướng phương Đông.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "在中国传统文化中，“琴棋书画”被视为衡量文人素养与雅趣的四大学艺。",
+      "pinyin": "Zài Zhōngguó chuántǒng wénhuà zhōng, “qín-qí-shū-huà” bèi shìwéi héngliáng wénrén sùyǎng yǔ yǎqù de sì dà xuéyì.",
+      "vi": "Trong văn hóa truyền thống Trung Hoa, 'cầm, kỳ, thi, họa' được coi là bốn môn nghệ thuật đo lường cốt cách và tao nhã của bậc văn nhân.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "传统",
+          "pinyin": "chuántǒng",
+          "hanviet": "Truyền Thống",
+          "hsk": 5,
+          "word_id": "hsk5_187",
+          "meaning_vi": "truyền thống"
+        },
+        {
+          "text": "文化",
+          "pinyin": "wénhuà",
+          "hanviet": "Văn Hóa",
+          "hsk": 3,
+          "word_id": "hsk3_957",
+          "meaning_vi": "văn hóa"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "琴棋书画",
+          "pinyin": "qín-qí-shū-huà",
+          "hanviet": "Cầm Kỳ Thư Hoạ",
+          "hsk": 7,
+          "word_id": "hsk7_3293",
+          "meaning_vi": "cầm kỳ thi họa"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "视为",
+          "pinyin": "shìwéi",
+          "hanviet": "Thị Vi",
+          "hsk": 5,
+          "word_id": "hsk5_1036",
+          "meaning_vi": "xem như, coi là"
+        },
+        {
+          "text": "衡量",
+          "pinyin": "héngliáng",
+          "hanviet": "Hành Lượng",
+          "hsk": 6,
+          "word_id": "hsk6_549",
+          "meaning_vi": "đo lường, cân nhắc"
+        },
+        {
+          "text": "文人",
+          "pinyin": "wénrén",
+          "hanviet": "Văn Nhân",
+          "hsk": 7,
+          "word_id": "hsk7_4278",
+          "meaning_vi": "văn nhân; mặc khách; học giả"
+        },
+        {
+          "text": "素养",
+          "pinyin": "sùyǎng",
+          "hanviet": "Tố Dưỡng",
+          "hsk": 7,
+          "word_id": "hsk7_3897",
+          "meaning_vi": "tố chất; trình độ văn hóa đạo đức"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "雅趣",
+          "pinyin": "yǎ qù",
+          "hanviet": "Nhã Thú"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "四大",
+          "pinyin": "sì dà",
+          "hanviet": "Tứ Đại"
+        },
+        {
+          "text": "学艺",
+          "pinyin": "xué yì",
+          "hanviet": "Học Nghệ"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "这里的“棋”，在古人心中最主要的代表就是围棋。",
+      "pinyin": "Zhèlǐ de “qí”, zài gǔrén xīnzhōng zuì zhǔyào de dàibiǎo jiù shì wéiqí.",
+      "vi": "Chữ 'kỳ' ở đây, trong lòng người xưa đại diện hàng đầu chính là cờ vây.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "这里",
+          "pinyin": "zhèlǐ",
+          "hanviet": "Giá Lý",
+          "hsk": 1,
+          "word_id": "hsk1_606",
+          "meaning_vi": "đây (đại từ)"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "棋",
+          "pinyin": "qí",
+          "hanviet": "Kỳ"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "古人",
+          "pinyin": "gǔrén",
+          "hanviet": "Cổ Nhân",
+          "hsk": 6,
+          "word_id": "hsk6_478",
+          "meaning_vi": "người xưa, người cổ đại"
+        },
+        {
+          "text": "心中",
+          "pinyin": "xīn zhōng",
+          "hanviet": "Tâm Trung"
+        },
+        {
+          "text": "最",
+          "pinyin": "zuì",
+          "hanviet": "Tối",
+          "hsk": 2,
+          "word_id": "hsk2_498",
+          "meaning_vi": "nhất"
+        },
+        {
+          "text": "主要",
+          "pinyin": "zhǔyào",
+          "hanviet": "Chủ Yếu",
+          "hsk": 3,
+          "word_id": "hsk3_1066",
+          "meaning_vi": "chủ yếu"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "代表",
+          "pinyin": "dàibiǎo",
+          "hanviet": "Đại Biểu",
+          "hsk": 5,
+          "word_id": "hsk5_234",
+          "meaning_vi": "đại diện"
+        },
+        {
+          "text": "就是",
+          "pinyin": "jiùshì",
+          "hanviet": "Tựu Thị",
+          "hsk": 4,
+          "word_id": "hsk4_408",
+          "meaning_vi": "chính là; dù… cũng"
+        },
+        {
+          "text": "围棋",
+          "pinyin": "wéiqí",
+          "hanviet": "Vi Kỳ",
+          "hsk": 6,
+          "word_id": "hsk6_1371",
+          "meaning_vi": "cờ vây"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "相传围棋起源于四千多年前的尧帝时代，尧帝为了启发性格鲁莽的儿子丹朱，发明了黑白两色棋子。",
+      "pinyin": "Xiāngchuán wéiqí qǐyuán yú sìqiān duō nián qián de Yáo Dì shídài, Yáo Dì wèile qǐfā xìnggé lǔmǎng de érzi Dānzhū, fāmíng le hēibái liǎng sè qízǐ.",
+      "vi": "Tương truyền cờ vây khởi nguồn từ hơn 4.000 năm trước thời vua Nghiêu, vua vì muốn khai mở trí tuệ cho người con tính tình bốc đồng nên sáng chế ra hai màu cờ đen trắng.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "相传",
+          "pinyin": "xiāngchuán",
+          "hanviet": "Tương Truyền",
+          "hsk": 6,
+          "word_id": "hsk6_1436",
+          "meaning_vi": "tương truyền, theo truyền thuyết"
+        },
+        {
+          "text": "围棋",
+          "pinyin": "wéiqí",
+          "hanviet": "Vi Kỳ",
+          "hsk": 6,
+          "word_id": "hsk6_1371",
+          "meaning_vi": "cờ vây"
+        },
+        {
+          "text": "起源于",
+          "pinyin": "qǐ yuán yú",
+          "hanviet": "Khởi Nguyên Vu"
+        },
+        {
+          "text": "四千多年",
+          "pinyin": "sì qiān duō nián",
+          "hanviet": "Tứ Thiên Đa Niên"
+        },
+        {
+          "text": "前",
+          "pinyin": "qián",
+          "hanviet": "Tiền",
+          "hsk": 1,
+          "word_id": "hsk1_558",
+          "meaning_vi": "trước"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "尧帝",
+          "pinyin": "yáo dì",
+          "hanviet": "Nghiêu Đế"
+        },
+        {
+          "text": "时代",
+          "pinyin": "shídài",
+          "hanviet": "Thời Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1012",
+          "meaning_vi": "thời đại"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "尧帝",
+          "pinyin": "yáo dì",
+          "hanviet": "Nghiêu Đế"
+        },
+        {
+          "text": "为了",
+          "pinyin": "wèile",
+          "hanviet": "Vi Liễu",
+          "hsk": 3,
+          "word_id": "hsk3_955",
+          "meaning_vi": "để (mục đích)"
+        },
+        {
+          "text": "启发",
+          "pinyin": "qǐfā",
+          "hanviet": "Khởi Phát",
+          "hsk": 6,
+          "word_id": "hsk6_1021",
+          "meaning_vi": "khơi gợi, gợi mở"
+        },
+        {
+          "text": "性格",
+          "pinyin": "xìnggé",
+          "hanviet": "Tính Cách",
+          "hsk": 4,
+          "word_id": "hsk4_831",
+          "meaning_vi": "tính cách"
+        },
+        {
+          "text": "鲁莽",
+          "pinyin": "lǔmǎng",
+          "hanviet": "Lỗ Mãng",
+          "hsk": 7,
+          "word_id": "hsk7_2678",
+          "meaning_vi": "lỗ mãng, hấp tấp xốc nổi"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "儿子",
+          "pinyin": "érzi",
+          "hanviet": "Nhân Tử",
+          "hsk": 1,
+          "word_id": "hsk1_83",
+          "meaning_vi": "con trai"
+        },
+        {
+          "text": "丹朱",
+          "pinyin": "dān zhū",
+          "hanviet": "Đan Chu"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "发明",
+          "pinyin": "fāmíng",
+          "hanviet": "Phát Minh",
+          "hsk": 5,
+          "word_id": "hsk5_320",
+          "meaning_vi": "phát minh"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "黑白",
+          "pinyin": "hēi bái",
+          "hanviet": "Hắc Bạch"
+        },
+        {
+          "text": "两色",
+          "pinyin": "liǎng sè",
+          "hanviet": "Lưỡng Sắc"
+        },
+        {
+          "text": "棋子",
+          "pinyin": "qízǐ",
+          "hanviet": "Kỳ Tử",
+          "hsk": 6,
+          "word_id": "hsk6_1017",
+          "meaning_vi": "quân cờ"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "围棋规则虽然简单，但棋盘上的千变万化却极其深奥，体现了东方哲学中虚实相生、阴阳调和的智慧。",
+      "pinyin": "Wéiqí guīzé suīrán jiǎndān, dàn qípán shàng de qiānbiàn-wànhuà què jíqí shēn'ào, tǐxiàn le dōngfāng zhéxué zhōng xūshí xiāngshēng, yīnyáng tiáohé de zhìhuì.",
+      "vi": "Luật chơi cờ vây tuy đơn giản, nhưng biến hóa trên bàn cờ lại khôn lường thâm thúy, thể hiện trí tuệ triết học phương Đông về hư thực tương sinh, âm dương điều hòa.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "围棋",
+          "pinyin": "wéiqí",
+          "hanviet": "Vi Kỳ",
+          "hsk": 6,
+          "word_id": "hsk6_1371",
+          "meaning_vi": "cờ vây"
+        },
+        {
+          "text": "规则",
+          "pinyin": "guīzé",
+          "hanviet": "Quy Tắc",
+          "hsk": 5,
+          "word_id": "hsk5_445",
+          "meaning_vi": "quy tắc"
+        },
+        {
+          "text": "虽然",
+          "pinyin": "suīrán",
+          "hanviet": "Tuy Nhiên",
+          "hsk": 2,
+          "word_id": "hsk2_438",
+          "meaning_vi": "mặc dù"
+        },
+        {
+          "text": "简单",
+          "pinyin": "jiǎndān",
+          "hanviet": "Giản Thiện",
+          "hsk": 3,
+          "word_id": "hsk3_433",
+          "meaning_vi": "đơn giản"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "但",
+          "pinyin": "dàn",
+          "hanviet": "Đãn",
+          "hsk": 2,
+          "word_id": "hsk2_330",
+          "meaning_vi": "nhưng, nhưng mà"
+        },
+        {
+          "text": "棋盘",
+          "pinyin": "qí pán",
+          "hanviet": "Kỳ Bàn"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "千变万化",
+          "pinyin": "qiānbiàn-wànhuà",
+          "hanviet": "Thiên Biến Mặc Hoa",
+          "hsk": 7,
+          "word_id": "hsk7_3203",
+          "meaning_vi": "biến ảo khôn lường; muôn hình vạn trạng"
+        },
+        {
+          "text": "却",
+          "pinyin": "què",
+          "hanviet": "Khước",
+          "hsk": 4,
+          "word_id": "hsk4_606",
+          "meaning_vi": "nhưng, lại"
+        },
+        {
+          "text": "极其",
+          "pinyin": "jíqí",
+          "hanviet": "Cực Kì/cực Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_533",
+          "meaning_vi": "cực kỳ, hết sức"
+        },
+        {
+          "text": "深奥",
+          "pinyin": "shēn’ào",
+          "hanviet": "Thâm Ảo",
+          "hsk": 7,
+          "word_id": "hsk7_3564",
+          "meaning_vi": "sâu xa, thâm sâu"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "体现",
+          "pinyin": "tǐxiàn",
+          "hanviet": "Thể Hiện",
+          "hsk": 5,
+          "word_id": "hsk5_1121",
+          "meaning_vi": "thể hiện"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "东方",
+          "pinyin": "dōngfāng",
+          "hanviet": "Đông Phương",
+          "hsk": 3,
+          "word_id": "hsk3_696",
+          "meaning_vi": "phía đông; phương Đông"
+        },
+        {
+          "text": "哲学",
+          "pinyin": "zhéxué",
+          "hanviet": "Triết Học",
+          "hsk": 5,
+          "word_id": "hsk5_1480",
+          "meaning_vi": "triết học"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "虚实",
+          "pinyin": "xū shí",
+          "hanviet": "Hư Thực"
+        },
+        {
+          "text": "相",
+          "pinyin": "xiāng",
+          "hanviet": "Tương"
+        },
+        {
+          "text": "生",
+          "pinyin": "shēng",
+          "hanviet": "Sinh"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "阴阳",
+          "pinyin": "yīn yáng",
+          "hanviet": "Âm Dương"
+        },
+        {
+          "text": "调和",
+          "pinyin": "tiáohé",
+          "hanviet": "Điều Hòa",
+          "hsk": 7,
+          "word_id": "hsk7_4033",
+          "meaning_vi": "điều hòa, dung hòa"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "智慧",
+          "pinyin": "zhìhuì",
+          "hanviet": "Trí Tuệ",
+          "hsk": 5,
+          "word_id": "hsk5_1513",
+          "meaning_vi": "trí tuệ"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "与围棋完全本土发源不同，关于中国象棋的起源，学术界一直存在着激烈的讨论。",
+      "pinyin": "Yǔ wéiqí wánquán běntǔ fāyuán bùtóng, guānyú Zhōngguó xiàngqí de qǐyuán, xuéshùjiè yìzhí cúnzài zhe jīliè de tǎolùn.",
+      "vi": "Khác với cờ vây hoàn toàn bắt nguồn bản địa, nguồn gốc của cờ tướng Trung Hoa luôn có những tranh luận sôi nổi trong giới học thuật.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "围棋",
+          "pinyin": "wéiqí",
+          "hanviet": "Vi Kỳ",
+          "hsk": 6,
+          "word_id": "hsk6_1371",
+          "meaning_vi": "cờ vây"
+        },
+        {
+          "text": "完全",
+          "pinyin": "wánquán",
+          "hanviet": "Hoàn Toàn",
+          "hsk": 4,
+          "word_id": "hsk4_762",
+          "meaning_vi": "hoàn toàn"
+        },
+        {
+          "text": "本土",
+          "pinyin": "běntǔ",
+          "hanviet": "Bản Thổ",
+          "hsk": 6,
+          "word_id": "hsk6_47",
+          "meaning_vi": "bản xứ, bản địa, trong nước"
+        },
+        {
+          "text": "发源",
+          "pinyin": "fāyuán",
+          "hanviet": "Phát Nguyên",
+          "hsk": 7,
+          "word_id": "hsk7_1049",
+          "meaning_vi": "bắt nguồn, khởi nguồn"
+        },
+        {
+          "text": "不同",
+          "pinyin": "bù tóng",
+          "hanviet": "Bất Đồng",
+          "hsk": 3,
+          "word_id": "hsk3_640",
+          "meaning_vi": "khác nhau, không giống"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "关于",
+          "pinyin": "guānyú",
+          "hanviet": "Quan Vu",
+          "hsk": 3,
+          "word_id": "hsk3_747",
+          "meaning_vi": "về, liên quan đến"
+        },
+        {
+          "text": "中国象棋",
+          "pinyin": "zhōng guó xiàng qí",
+          "hanviet": "Trung Quốc Tượng Kỳ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "起源",
+          "pinyin": "qǐyuán",
+          "hanviet": "Khởi Nguyên",
+          "hsk": 6,
+          "word_id": "hsk6_1024",
+          "meaning_vi": "nguồn gốc, khởi nguồn"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "学术界",
+          "pinyin": "xué shù jiè",
+          "hanviet": "Học Thuật Giới"
+        },
+        {
+          "text": "一直",
+          "pinyin": "yìzhí",
+          "hanviet": "Nhất Trực",
+          "hsk": 3,
+          "word_id": "hsk3_1013",
+          "meaning_vi": "luôn luôn, thẳng"
+        },
+        {
+          "text": "存在",
+          "pinyin": "cúnzài",
+          "hanviet": "Tồn Tại",
+          "hsk": 5,
+          "word_id": "hsk5_210",
+          "meaning_vi": "tồn tại"
+        },
+        {
+          "text": "着",
+          "pinyin": "zhe",
+          "hanviet": "Trước",
+          "hsk": 2,
+          "word_id": "hsk2_490",
+          "meaning_vi": "đang (trợ từ)"
+        },
+        {
+          "text": "激烈",
+          "pinyin": "jīliè",
+          "hanviet": "Kích Liệt",
+          "hsk": 5,
+          "word_id": "hsk5_521",
+          "meaning_vi": "kịch liệt, gay gắt"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "讨论",
+          "pinyin": "tǎolùn",
+          "hanviet": "Thảo Luận",
+          "hsk": 4,
+          "word_id": "hsk4_723",
+          "meaning_vi": "thảo luận"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "zh": "很多学者认为，象棋的前身受到了古印度“恰图兰卡”棋戏的影响，通过丝绸之路传入中原后演变而成。",
+      "pinyin": "Hěn duō xuézhě rènwéi, xiàngqí de qiánshēn shòudào le gǔ Yìndù “qiàtúlánkǎ” qíxì de yǐngxiǎng, tōngguò Sīchóu zhī Lù chuánrù zhōngyuán hòu yǎnbiàn ér chéng.",
+      "vi": "Nhiều học giả nhận định tiền thân của cờ tướng chịu ảnh hưởng từ trò cờ Chaturanga của Ấn Độ cổ, qua Con đường Tơ lụa truyền vào Trung Nguyên rồi dần biến đổi.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "很多",
+          "pinyin": "hěn duō",
+          "hanviet": "Ngận Đa"
+        },
+        {
+          "text": "学者",
+          "pinyin": "xuézhě",
+          "hanviet": "Học Giả",
+          "hsk": 5,
+          "word_id": "hsk5_1314",
+          "meaning_vi": "học giả, nhà nghiên cứu"
+        },
+        {
+          "text": "认为",
+          "pinyin": "rènwéi",
+          "hanviet": "Nhận Vi",
+          "hsk": 3,
+          "word_id": "hsk3_898",
+          "meaning_vi": "cho rằng, nghĩ rằng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "象棋",
+          "pinyin": "xiàngqí",
+          "hanviet": "Tượng Kỳ",
+          "hsk": 6,
+          "word_id": "hsk6_1442",
+          "meaning_vi": "cờ tướng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "前身",
+          "pinyin": "qián shēn",
+          "hanviet": "Tiền Thân"
+        },
+        {
+          "text": "受到",
+          "pinyin": "shòudào",
+          "hanviet": "Thọ Đáo",
+          "hsk": 3,
+          "word_id": "hsk3_558",
+          "meaning_vi": "nhận được, bị (chịu)"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "古印度",
+          "pinyin": "gǔ yìn dù",
+          "hanviet": "Cổ Ấn Độ"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "恰",
+          "pinyin": "qià",
+          "hanviet": "Kháp"
+        },
+        {
+          "text": "图兰",
+          "pinyin": "tú lán",
+          "hanviet": "Đồ Lan"
+        },
+        {
+          "text": "卡",
+          "pinyin": "kǎ",
+          "hanviet": "Ca",
+          "hsk": 3,
+          "word_id": "hsk3_809",
+          "meaning_vi": "thẻ"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "棋戏",
+          "pinyin": "qí xì",
+          "hanviet": "Kỳ Hí"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "影响",
+          "pinyin": "yǐngxiǎng",
+          "hanviet": "Ảnh Hưởng",
+          "hsk": 3,
+          "word_id": "hsk3_1019",
+          "meaning_vi": "ảnh hưởng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "通过",
+          "pinyin": "tōngguò",
+          "hanviet": "Thông Qua",
+          "hsk": 4,
+          "word_id": "hsk4_744",
+          "meaning_vi": "thông qua"
+        },
+        {
+          "text": "丝绸之路",
+          "pinyin": "sī chóu zhī lù",
+          "hanviet": "Tơ Trù Chi Lộ"
+        },
+        {
+          "text": "传入",
+          "pinyin": "chuán rù",
+          "hanviet": "Truyền Nhập"
+        },
+        {
+          "text": "中原",
+          "pinyin": "zhōng yuán",
+          "hanviet": "Trung Nguyên"
+        },
+        {
+          "text": "后",
+          "pinyin": "hòu",
+          "hanviet": "Hậu",
+          "hsk": 1,
+          "word_id": "hsk1_524",
+          "meaning_vi": "sau"
+        },
+        {
+          "text": "演变",
+          "pinyin": "yǎnbiàn",
+          "hanviet": "Diễn Biến",
+          "hsk": 7,
+          "word_id": "hsk7_4737",
+          "meaning_vi": "diễn biến, biến đổi"
+        },
+        {
+          "text": "而成",
+          "pinyin": "ér chéng",
+          "hanviet": "Nhi Thành"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "zh": "不管是高雅深邃的围棋，还是街头巷尾随处可见的象棋，都深刻塑造了东方人的思维格局与生活情趣。",
+      "pinyin": "Bùguǎn shì gāoyǎ shēnsuì de wéiqí, háishì jiētóu xiàngwěi suíchù-kějiàn de xiàngqí, dōu shēnkè sùzào le dōngfāngrén de sīwéi géjú yǔ shēnghuó qíngqù.",
+      "vi": "Bất kể là cờ vây cao nhã thâm sâu, hay bàn cờ tướng bình dị nơi đầu đường cuối ngõ, đều tạc nên nét tư duy chiến lược và phong vị tao nhã của người phương Đông.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "不管",
+          "pinyin": "bùguǎn",
+          "hanviet": "Bất Quản",
+          "hsk": 4,
+          "word_id": "hsk4_53",
+          "meaning_vi": "bất kể, mặc kệ"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "高雅",
+          "pinyin": "gāoyǎ",
+          "hanviet": "Cao Nhã",
+          "hsk": 7,
+          "word_id": "hsk7_1319",
+          "meaning_vi": "thanh nhã, cao nhã, tao nhã"
+        },
+        {
+          "text": "深邃",
+          "pinyin": "shēnsuì",
+          "hanviet": "Thâm Thúy",
+          "hsk": 7,
+          "word_id": "hsk7_3581",
+          "meaning_vi": "sâu thẳm; thâm sâu"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "围棋",
+          "pinyin": "wéiqí",
+          "hanviet": "Vi Kỳ",
+          "hsk": 6,
+          "word_id": "hsk6_1371",
+          "meaning_vi": "cờ vây"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "还是",
+          "pinyin": "háishi",
+          "hanviet": "Hoàn Thị",
+          "hsk": 2,
+          "word_id": "hsk2_352",
+          "meaning_vi": "hay là; vẫn là"
+        },
+        {
+          "text": "街头巷尾",
+          "pinyin": "jiē tóu xiàng wěi",
+          "hanviet": "Nhai Đầu Hạng Vĩ"
+        },
+        {
+          "text": "随处可见",
+          "pinyin": "suíchù kě jiàn",
+          "hanviet": "Tuỳ Xử Khả Kiến",
+          "hsk": 7,
+          "word_id": "hsk7_3905",
+          "meaning_vi": "đâu đâu cũng thấy; thấy ở khắp mọi nơi"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "象棋",
+          "pinyin": "xiàngqí",
+          "hanviet": "Tượng Kỳ",
+          "hsk": 6,
+          "word_id": "hsk6_1442",
+          "meaning_vi": "cờ tướng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "都",
+          "pinyin": "dōu",
+          "hanviet": "Đô",
+          "hsk": 1,
+          "word_id": "hsk1_76",
+          "meaning_vi": "đều"
+        },
+        {
+          "text": "深刻",
+          "pinyin": "shēnkè",
+          "hanviet": "Thâm Khắc",
+          "hsk": 5,
+          "word_id": "hsk5_984",
+          "meaning_vi": "sâu sắc"
+        },
+        {
+          "text": "塑造",
+          "pinyin": "sùzào",
+          "hanviet": "Tố Tạo",
+          "hsk": 6,
+          "word_id": "hsk6_1245",
+          "meaning_vi": "tạo hình, xây dựng (hình tượng)"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "东方人",
+          "pinyin": "dōng fāng rén",
+          "hanviet": "Đông Phương Nhân"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "思维",
+          "pinyin": "sīwéi",
+          "hanviet": "Tư Duy",
+          "hsk": 5,
+          "word_id": "hsk5_1079",
+          "meaning_vi": "tư duy"
+        },
+        {
+          "text": "格局",
+          "pinyin": "géjú",
+          "hanviet": "Cách Cục",
+          "hsk": 7,
+          "word_id": "hsk7_1342",
+          "meaning_vi": "cục diện, cấu trúc tổng thể"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "生活",
+          "pinyin": "shēnghuó",
+          "hanviet": "Sinh Hoạt",
+          "hsk": 3,
+          "word_id": "hsk3_911",
+          "meaning_vi": "sinh hoạt, cuộc sống"
+        },
+        {
+          "text": "情趣",
+          "pinyin": "qíng qù",
+          "hanviet": "Tình Thú"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk6_1371",
+    "hsk3_957",
+    "hsk5_1079",
+    "hsk3_1019",
+    "hsk1_390"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Trong 'cầm kỳ thi họa', chữ 'kỳ' nguyên bản chỉ môn cờ nào?",
+      "options_vi": [
+        "Cờ vây (围棋)",
+        "Cờ vua phương Tây",
+        "Cờ cá ngựa"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trong bài viết: 这里的“棋”，在古人心中最主要的代表就是围棋."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Theo truyền thuyết, vua Nghiêu phát minh cờ vây nhằm mục đích gì?",
+      "options_vi": [
+        "Khai sáng trí tuệ và rèn luyện tính nết cho con trai Đan Chu",
+        "Để tuyển chọn tướng tài ra trận",
+        "Để cá cược tiền bạc"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trong bài viết: 尧帝为了启发性格鲁莽的儿子丹朱，发明了黑白两色棋子."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Nhiều học giả cho rằng cờ tướng chịu ảnh hưởng du nhập từ nền văn minh nào?",
+      "options_vi": [
+        "Trò cờ cổ của Ấn Độ qua Con đường Tơ lụa",
+        "Từ Ai Cập cổ đại",
+        "Từ La Mã cổ đại"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trong bài viết: 象棋的前身受到了古印度“恰图兰卡”棋戏的影响，通过丝绸之路传入中原."
+    }
+  ]
+}

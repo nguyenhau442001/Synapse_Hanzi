@@ -1,0 +1,1148 @@
+{
+  "id": "wanwu_story_011",
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_page_start": 565,
+  "book_page_end": 573,
+  "page_display": "Trang 565 - 573",
+  "title": {
+    "zh": "伞：最浪漫的发明",
+    "vi": "Chiếc ô: Phát minh lãng mạn nhất"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "☂️",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 565 - 573 · Câu chuyện chiếc ô che mưa nắng: từ truyền thuyết thê tử của Lỗ Ban đến cây dù giấy dầu trong Bạch Xà Truyện.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "“撑着油纸伞，独自彷徨在悠长又寂寥的雨巷”，现代诗人戴望舒的诗句让油纸伞充满了浪漫色彩。",
+      "pinyin": "“Chēng zhe yóuzhǐsǎn, dúzì pánghuáng zài yōucháng yòu jìliáo de yǔxiàng”, xiàndài shīrén Dài Wàngshū de shījù ràng yóuzhǐsǎn chōngmǎn le làngmàn sècǎi.",
+      "vi": "'Nâng chiếc dù giấy dầu, một mình bâng khuâng nơi ngõ mưa dài dằng dặc lại tịch liêu', vần thơ của nhà thơ hiện đại Đới Vọng Thư đã phủ lên chiếc dù giấy dầu ngập tràn sắc thái lãng mạn.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "“"
+        },
+        {
+          "text": "撑",
+          "pinyin": "chēng",
+          "hanviet": "Chống",
+          "hsk": 6,
+          "word_id": "hsk6_152",
+          "meaning_vi": "chống, đỡ; giương (ô); no căng"
+        },
+        {
+          "text": "着",
+          "pinyin": "zhe",
+          "hanviet": "Trước",
+          "hsk": 2,
+          "word_id": "hsk2_490",
+          "meaning_vi": "đang (trợ từ)"
+        },
+        {
+          "text": "油纸伞",
+          "pinyin": "yóu zhǐ sǎn",
+          "hanviet": "Dầu Chỉ Tản"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "独自",
+          "pinyin": "dúzì",
+          "hanviet": "Độc Tự",
+          "hsk": 5,
+          "word_id": "hsk5_298",
+          "meaning_vi": "một mình"
+        },
+        {
+          "text": "彷徨",
+          "pinyin": "páng huáng",
+          "hanviet": "Bàng Hoàng"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "悠长",
+          "pinyin": "yōu zhǎng",
+          "hanviet": "Du Trường"
+        },
+        {
+          "text": "又",
+          "pinyin": "yòu",
+          "hanviet": "Hựu",
+          "hsk": 3,
+          "word_id": "hsk3_1028",
+          "meaning_vi": "lại (lần nữa)"
+        },
+        {
+          "text": "寂寥",
+          "pinyin": "jì liáo",
+          "hanviet": "Tịch Liêu"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "雨巷",
+          "pinyin": "yǔ xiàng",
+          "hanviet": "Vũ Hạng"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "现代",
+          "pinyin": "xiàndài",
+          "hanviet": "Hiện Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1239",
+          "meaning_vi": "hiện đại"
+        },
+        {
+          "text": "诗人",
+          "pinyin": "shīrén",
+          "hanviet": "Thi Nhân",
+          "hsk": 5,
+          "word_id": "hsk5_1007",
+          "meaning_vi": "nhà thơ"
+        },
+        {
+          "text": "戴望舒",
+          "pinyin": "dài wàng shū",
+          "hanviet": "Đội Vọng Thư"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "诗句",
+          "pinyin": "shī jù",
+          "hanviet": "Thi Câu"
+        },
+        {
+          "text": "让",
+          "pinyin": "ràng",
+          "hanviet": "Nhượng",
+          "hsk": 2,
+          "word_id": "hsk2_422",
+          "meaning_vi": "để cho, khiến"
+        },
+        {
+          "text": "油纸伞",
+          "pinyin": "yóu zhǐ sǎn",
+          "hanviet": "Dầu Chỉ Tản"
+        },
+        {
+          "text": "充满",
+          "pinyin": "chōngmǎn",
+          "hanviet": "Sung Mãn",
+          "hsk": 5,
+          "word_id": "hsk5_161",
+          "meaning_vi": "đầy, tràn đầy"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "浪漫",
+          "pinyin": "làngmàn",
+          "hanviet": "Lãng Mạn",
+          "hsk": 4,
+          "word_id": "hsk4_454",
+          "meaning_vi": "lãng mạn"
+        },
+        {
+          "text": "色彩",
+          "pinyin": "sècǎi",
+          "hanviet": "Sắc Thái",
+          "hsk": 5,
+          "word_id": "hsk5_943",
+          "meaning_vi": "màu sắc, sắc thái"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "在中国民间神话《白蛇传》里，许仙与白娘子在西湖断桥相遇，正是靠一把雨伞结下了千古良缘。",
+      "pinyin": "Zài Zhōngguó mínjiān shénhuà “Báishé Zhuàn” lǐ, Xǔ Xiān yǔ Bái Niángzǐ zài Xīhú Duànqiáo xiāngyù, zhèng shì kào yì bǎ yǔsǎn jiéxià le qiāngǔ liángyuán.",
+      "vi": "Trong huyền thoại dân gian 'Bạch Xà Truyện', Hứa Tiên gặp gỡ Bạch Nương Tử bên cầu Đoạn Kiều Hồ Tây, cũng chính nhờ một chiếc ô che mưa mà se duyên kỳ ngộ ngàn năm.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "民间",
+          "pinyin": "mínjiān",
+          "hanviet": "Dân Gian",
+          "hsk": 6,
+          "word_id": "hsk6_919",
+          "meaning_vi": "dân gian, trong dân chúng"
+        },
+        {
+          "text": "神话",
+          "pinyin": "shénhuà",
+          "hanviet": "Thần Thoại",
+          "hsk": 5,
+          "word_id": "hsk5_987",
+          "meaning_vi": "thần thoại"
+        },
+        {
+          "text": "《"
+        },
+        {
+          "text": "白蛇传",
+          "pinyin": "bái shé chuán",
+          "hanviet": "Bạch Xà Truyền"
+        },
+        {
+          "text": "》"
+        },
+        {
+          "text": "里",
+          "pinyin": "lǐ",
+          "hanviet": "Lý",
+          "hsk": 1,
+          "word_id": "hsk1_536",
+          "meaning_vi": "bên trong"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "许仙",
+          "pinyin": "xǔ xiān",
+          "hanviet": "Hứa Tiên"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "白娘子",
+          "pinyin": "bái niáng zǐ",
+          "hanviet": "Bạch Nương Tử"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "西湖",
+          "pinyin": "xī hú",
+          "hanviet": "Tây Hồ"
+        },
+        {
+          "text": "断桥",
+          "pinyin": "duàn qiáo",
+          "hanviet": "Đoạn Kiều"
+        },
+        {
+          "text": "相遇",
+          "pinyin": "xiāngyù",
+          "hanviet": "Tương Ngộ",
+          "hsk": 7,
+          "word_id": "hsk7_4476",
+          "meaning_vi": "gặp gỡ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "正是",
+          "pinyin": "zhèng shì",
+          "hanviet": "Chính Thị"
+        },
+        {
+          "text": "靠",
+          "pinyin": "kào",
+          "hanviet": "Kháo",
+          "hsk": 5,
+          "word_id": "hsk5_660",
+          "meaning_vi": "dựa, tựa vào"
+        },
+        {
+          "text": "一把",
+          "pinyin": "yī bǎ",
+          "hanviet": "Nhất Bả"
+        },
+        {
+          "text": "雨伞",
+          "pinyin": "yǔ sǎn",
+          "hanviet": "Vũ Tản"
+        },
+        {
+          "text": "结下",
+          "pinyin": "jié xià",
+          "hanviet": "Kết Hạ"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "千古",
+          "pinyin": "qiān gǔ",
+          "hanviet": "Thiên Cổ"
+        },
+        {
+          "text": "良缘",
+          "pinyin": "liáng yuán",
+          "hanviet": "Lương Duyên"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "相传伞是由中国古代著名工匠鲁班的妻子云氏发明的。",
+      "pinyin": "Xiāngchuán sǎn shì yóu Zhōngguó gǔdài zhùmíng gōngjiàng Lǔ Bān de qīzǐ Yún Shì fāmíng de.",
+      "vi": "Tương truyền chiếc ô do nàng Vân Thị - vợ của bậc danh sư thợ mộc Lỗ Ban thời cổ đại sáng tạo nên.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "相传",
+          "pinyin": "xiāngchuán",
+          "hanviet": "Tương Truyền",
+          "hsk": 6,
+          "word_id": "hsk6_1436",
+          "meaning_vi": "tương truyền, theo truyền thuyết"
+        },
+        {
+          "text": "伞",
+          "pinyin": "sǎn",
+          "hanviet": "Tản",
+          "hsk": 3,
+          "word_id": "hsk3_902",
+          "meaning_vi": "cái dù, ô"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "由",
+          "pinyin": "yóu",
+          "hanviet": "Do",
+          "hsk": 4,
+          "word_id": "hsk4_884",
+          "meaning_vi": "do, từ"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "著名",
+          "pinyin": "zhùmíng",
+          "hanviet": "Trước Danh",
+          "hsk": 4,
+          "word_id": "hsk4_967",
+          "meaning_vi": "nổi tiếng"
+        },
+        {
+          "text": "工匠",
+          "pinyin": "gōngjiàng",
+          "hanviet": "Công Tượng",
+          "hsk": 7,
+          "word_id": "hsk7_1379",
+          "meaning_vi": "thợ thủ công, nghệ nhân"
+        },
+        {
+          "text": "鲁班",
+          "pinyin": "lǔ bān",
+          "hanviet": "Lỗ Ban"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "妻子",
+          "pinyin": "qīzi",
+          "hanviet": "Thê Tử",
+          "hsk": 2,
+          "word_id": "hsk2_417",
+          "meaning_vi": "vợ"
+        },
+        {
+          "text": "云氏",
+          "pinyin": "yún shì",
+          "hanviet": "Vân Thị"
+        },
+        {
+          "text": "发明",
+          "pinyin": "fāmíng",
+          "hanviet": "Phát Minh",
+          "hsk": 5,
+          "word_id": "hsk5_320",
+          "meaning_vi": "phát minh"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "看到丈夫常在烈日和暴雨中辛苦劳作，云氏将竹子劈成细条，骨架蒙上兽皮，做成了能够开合的便携“移动凉亭”。",
+      "pinyin": "Kàndào zhàngfu cháng zài lièrì hé bàoyǔ zhōng xīnkǔ láozuò, Yún Shì jiāng zhúzi pīchéng xìtiáo, gǔjià méngshàng shòupí, zuòchéng le nénggòu kāihé de biànxié “yídòng liángtíng”.",
+      "vi": "Nhìn thấy phu quân thường dầm mưa dãi nắng lao tác vất vả, Vân Thị đã chẻ tre thành nan nhỏ, bọc da thú lên khung sườn, tạo thành một 'đình mát di động' mở gập tiện lợi.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "看到",
+          "pinyin": "kàn dào",
+          "hanviet": "Khán Đáo"
+        },
+        {
+          "text": "丈夫",
+          "pinyin": "zhàngfu",
+          "hanviet": "Trượng Phu",
+          "hsk": 2,
+          "word_id": "hsk2_487",
+          "meaning_vi": "chồng"
+        },
+        {
+          "text": "常在",
+          "pinyin": "cháng zài",
+          "hanviet": "Thường Tại"
+        },
+        {
+          "text": "烈日",
+          "pinyin": "lièrì",
+          "hanviet": "Liệt Nhật",
+          "hsk": 7,
+          "word_id": "hsk7_2613",
+          "meaning_vi": "nắng gắt, mặt trời chói chang"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "暴雨",
+          "pinyin": "bàoyǔ",
+          "hanviet": "Bạo Vũ",
+          "hsk": 5,
+          "word_id": "hsk5_34",
+          "meaning_vi": "mưa to, mưa bão"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "辛苦",
+          "pinyin": "xīnkǔ",
+          "hanviet": "Tân Khổ",
+          "hsk": 4,
+          "word_id": "hsk4_820",
+          "meaning_vi": "vất vả, gian khổ"
+        },
+        {
+          "text": "劳作",
+          "pinyin": "láo zuò",
+          "hanviet": "Lao Tác"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "云氏",
+          "pinyin": "yún shì",
+          "hanviet": "Vân Thị"
+        },
+        {
+          "text": "将",
+          "pinyin": "jiāng",
+          "hanviet": "Tương",
+          "hsk": 4,
+          "word_id": "hsk4_356",
+          "meaning_vi": "sẽ; đem, lấy (như 把)"
+        },
+        {
+          "text": "竹子",
+          "pinyin": "zhúzi",
+          "hanviet": "Trúc Tử",
+          "hsk": 5,
+          "word_id": "hsk5_1539",
+          "meaning_vi": "cây tre"
+        },
+        {
+          "text": "劈成",
+          "pinyin": "pǐ chéng",
+          "hanviet": "Phách Thành"
+        },
+        {
+          "text": "细条",
+          "pinyin": "xì tiáo",
+          "hanviet": "Tế Điều"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "骨架",
+          "pinyin": "gǔjià",
+          "hanviet": "Cốt Giá",
+          "hsk": 7,
+          "word_id": "hsk7_1442",
+          "meaning_vi": "khung xương, bộ khung"
+        },
+        {
+          "text": "蒙",
+          "pinyin": "mēng",
+          "hanviet": "Mông",
+          "hsk": 7,
+          "word_id": "hsk7_2779",
+          "meaning_vi": "lừa bịp, lừa gạt; đoán mò"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "兽皮",
+          "pinyin": "shòu pí",
+          "hanviet": "Thú Bì"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "做成",
+          "pinyin": "zuò chéng",
+          "hanviet": "Tố Thành"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "能够",
+          "pinyin": "nénggòu",
+          "hanviet": "Năng Cú",
+          "hsk": 4,
+          "word_id": "hsk4_532",
+          "meaning_vi": "có thể"
+        },
+        {
+          "text": "开合",
+          "pinyin": "kāi hé",
+          "hanviet": "Khai Cáp"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "便携",
+          "pinyin": "biàn xié",
+          "hanviet": "Tiện Huề"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "移动",
+          "pinyin": "yídòng",
+          "hanviet": "Di Động",
+          "hsk": 5,
+          "word_id": "hsk5_1355",
+          "meaning_vi": "di động, di chuyển"
+        },
+        {
+          "text": "凉亭",
+          "pinyin": "liáng tíng",
+          "hanviet": "Lương Đình"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "东汉时期造纸术普及后，人们在纸面上刷上桐油来防水，真正诞生了轻巧耐用的油纸伞。",
+      "pinyin": "Dōnghàn shíqī zàozhǐshù pǔjí hòu, rénmen zài zhǐmiàn shàng shuāshàng tóngyóu lái fángshuǐ, zhēnzhèng dànshēng le qīngqiǎo nàiyòng de yóuzhǐsǎn.",
+      "vi": "Thời Đông Hán sau khi kỹ thuật làm giấy thịnh hành, người ta quét dầu trẩu lên mặt giấy để chống thấm nước, chính thức khai sinh ra chiếc dù giấy dầu bền đẹp thanh thoát.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "东汉时期",
+          "pinyin": "dōng hàn shí qī",
+          "hanviet": "Đông Hán Thời Kỳ"
+        },
+        {
+          "text": "造纸术",
+          "pinyin": "zào zhǐ shù",
+          "hanviet": "Tạo Chỉ Thuật"
+        },
+        {
+          "text": "普及",
+          "pinyin": "pǔjí",
+          "hanviet": "Phổ Cập",
+          "hsk": 5,
+          "word_id": "hsk5_849",
+          "meaning_vi": "phổ cập, phổ biến"
+        },
+        {
+          "text": "后",
+          "pinyin": "hòu",
+          "hanviet": "Hậu",
+          "hsk": 1,
+          "word_id": "hsk1_524",
+          "meaning_vi": "sau"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "人们",
+          "pinyin": "rén men",
+          "hanviet": "Nhân Môn"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "纸面",
+          "pinyin": "zhǐ miàn",
+          "hanviet": "Chỉ Diện"
+        },
+        {
+          "text": "上刷",
+          "pinyin": "shàng shuā",
+          "hanviet": "Thướng Xoát"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "桐油",
+          "pinyin": "tóng yóu",
+          "hanviet": "Đồng Dầu"
+        },
+        {
+          "text": "来",
+          "pinyin": "lái",
+          "hanviet": "Lai",
+          "hsk": 1,
+          "word_id": "hsk1_533",
+          "meaning_vi": "đến, tới"
+        },
+        {
+          "text": "防水",
+          "pinyin": "fáng shuǐ",
+          "hanviet": "Phòng Thuỷ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "真正",
+          "pinyin": "zhēnzhèng",
+          "hanviet": "Chân Chính",
+          "hsk": 4,
+          "word_id": "hsk4_927",
+          "meaning_vi": "thực sự, chân chính"
+        },
+        {
+          "text": "诞生",
+          "pinyin": "dànshēng",
+          "hanviet": "Đản Sinh",
+          "hsk": 6,
+          "word_id": "hsk6_266",
+          "meaning_vi": "ra đời, sinh ra"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "轻巧",
+          "pinyin": "qīng qiǎo",
+          "hanviet": "Khinh Xảo"
+        },
+        {
+          "text": "耐用",
+          "pinyin": "nàiyòng",
+          "hanviet": "Nại Dụng",
+          "hsk": 7,
+          "word_id": "hsk7_2915",
+          "meaning_vi": "bền, dùng lâu"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "油纸伞",
+          "pinyin": "yóu zhǐ sǎn",
+          "hanviet": "Dầu Chỉ Tản"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "zh": "雨伞不仅是遮风挡雨的日常工具，更在漫长岁月里融入了中国人对深情与陪伴的美好寄托。",
+      "pinyin": "Yǔsǎn bùjǐn shì zhēfēng-dǎngyǔ de rìcháng gōngjù, gèng zài màncháng suìyuè lǐ róngrù le Zhōngguórén duì shēnqíng yǔ péibàn de měihǎo jìtuō.",
+      "vi": "Chiếc ô không chỉ là vật dụng che mưa chắn gió, mà qua năm tháng dài lâu đã thấm đượm niềm gửi gắm thiêng liêng về tình sâu nghĩa nặng và sự sẻ chia đồng hành.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "雨伞",
+          "pinyin": "yǔ sǎn",
+          "hanviet": "Vũ Tản"
+        },
+        {
+          "text": "不仅",
+          "pinyin": "bùjǐn",
+          "hanviet": "Bất Cận",
+          "hsk": 4,
+          "word_id": "hsk4_55",
+          "meaning_vi": "không chỉ"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "遮风挡雨",
+          "pinyin": "zhē fēng dǎng yǔ",
+          "hanviet": "Già Phong Đảng Vũ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "日常",
+          "pinyin": "rìcháng",
+          "hanviet": "Nhật Thường",
+          "hsk": 4,
+          "word_id": "hsk4_618",
+          "meaning_vi": "thường ngày, hàng ngày"
+        },
+        {
+          "text": "工具",
+          "pinyin": "gōngjù",
+          "hanviet": "Công Cụ",
+          "hsk": 5,
+          "word_id": "hsk5_410",
+          "meaning_vi": "công cụ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "更",
+          "pinyin": "gèng",
+          "hanviet": "Canh",
+          "hsk": 3,
+          "word_id": "hsk3_737",
+          "meaning_vi": "càng, hơn"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "漫长岁月",
+          "pinyin": "màn cháng suì yuè",
+          "hanviet": "Mạn Trường Tuế Nguyệt"
+        },
+        {
+          "text": "里",
+          "pinyin": "lǐ",
+          "hanviet": "Lý",
+          "hsk": 1,
+          "word_id": "hsk1_536",
+          "meaning_vi": "bên trong"
+        },
+        {
+          "text": "融入",
+          "pinyin": "róngrù",
+          "hanviet": "Dung Nhập",
+          "hsk": 6,
+          "word_id": "hsk6_1116",
+          "meaning_vi": "hòa nhập vào, hòa mình vào"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "人",
+          "pinyin": "rén",
+          "hanviet": "Nhân",
+          "hsk": 1,
+          "word_id": "hsk1_243",
+          "meaning_vi": "người"
+        },
+        {
+          "text": "对",
+          "pinyin": "duì",
+          "hanviet": "Đối",
+          "hsk": 1,
+          "word_id": "hsk1_79",
+          "meaning_vi": "đối với, hướng về (giới từ)"
+        },
+        {
+          "text": "深情",
+          "pinyin": "shēnqíng",
+          "hanviet": "Thâm Tình",
+          "hsk": 7,
+          "word_id": "hsk7_3573",
+          "meaning_vi": "chan chứa tình cảm; thắm thiết"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "陪伴",
+          "pinyin": "péibàn",
+          "hanviet": "Bồi Bạn",
+          "hsk": 5,
+          "word_id": "hsk5_816",
+          "meaning_vi": "đồng hành, ở bên cạnh, làm bạn"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "美好",
+          "pinyin": "měihǎo",
+          "hanviet": "Mỹ Hảo",
+          "hsk": 4,
+          "word_id": "hsk4_501",
+          "meaning_vi": "tốt đẹp"
+        },
+        {
+          "text": "寄托",
+          "pinyin": "jìtuō",
+          "hanviet": "Ký Thác",
+          "hsk": 7,
+          "word_id": "hsk7_1914",
+          "meaning_vi": "gửi gắm, ký thác"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "zh": "一把伞撑开，便是一方小小的晴空，守护着风雨同舟的温馨时光。",
+      "pinyin": "Yì bǎ sǎn chēngkāi, biàn shì yì fāng xiǎoxiǎo de qíngkōng, shǒuhù zhe fēngyǔ-tóngzhōu de wēnxīn shíguāng.",
+      "vi": "Một tán ô xòe rộng, chính là một khoảng trời bình yên nhỏ bé, chở che những khoảnh khắc ấm áp cùng chung một con thuyền qua giông bão.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "一把",
+          "pinyin": "yī bǎ",
+          "hanviet": "Nhất Bả"
+        },
+        {
+          "text": "伞",
+          "pinyin": "sǎn",
+          "hanviet": "Tản",
+          "hsk": 3,
+          "word_id": "hsk3_902",
+          "meaning_vi": "cái dù, ô"
+        },
+        {
+          "text": "撑开",
+          "pinyin": "chēng kāi",
+          "hanviet": "Chống Khai"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "便是",
+          "pinyin": "biàn shì",
+          "hanviet": "Tiện Thị"
+        },
+        {
+          "text": "一方",
+          "pinyin": "yī fāng",
+          "hanviet": "Nhất Phương"
+        },
+        {
+          "text": "小小的",
+          "pinyin": "xiǎo xiǎo de",
+          "hanviet": "Tiểu Tiểu Đích"
+        },
+        {
+          "text": "晴空",
+          "pinyin": "qíng kōng",
+          "hanviet": "Tình Không"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "守护",
+          "pinyin": "shǒuhù",
+          "hanviet": "Thủ Hộ",
+          "hsk": 7,
+          "word_id": "hsk7_3734",
+          "meaning_vi": "bảo vệ, gìn giữ"
+        },
+        {
+          "text": "着",
+          "pinyin": "zhe",
+          "hanviet": "Trước",
+          "hsk": 2,
+          "word_id": "hsk2_490",
+          "meaning_vi": "đang (trợ từ)"
+        },
+        {
+          "text": "风雨同舟",
+          "pinyin": "fēng yǔ tóng zhōu",
+          "hanviet": "Phong Vũ Đồng Chu"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "温馨",
+          "pinyin": "wēnxīn",
+          "hanviet": "Ôn Hinh",
+          "hsk": 7,
+          "word_id": "hsk7_4273",
+          "meaning_vi": "sự ấm áp"
+        },
+        {
+          "text": "时光",
+          "pinyin": "shíguāng",
+          "hanviet": "Thời Quang",
+          "hsk": 6,
+          "word_id": "hsk6_1184",
+          "meaning_vi": "thời gian, năm tháng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk5_320",
+    "hsk5_410",
+    "hsk6_1184",
+    "hsk4_503"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Theo truyền thuyết, ai là người đầu tiên phát minh ra chiếc ô?",
+      "options_vi": [
+        "Vân Thị (云氏) - vợ của Lỗ Ban",
+        "Khổng Minh",
+        "Lý Bạch"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trong bài viết: 相传伞是由中国古代著名工匠鲁班的妻子云氏发明的."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Trong câu chuyện Bạch Xà Truyện, chiếc ô đóng vai trò gì?",
+      "options_vi": [
+        "Làm vật se duyên cho Hứa Tiên và Bạch Nương Tử che chung mưa",
+        "Làm vũ khí đánh đuổi yêu ma",
+        "Làm thuyền vượt qua sông"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trong bài viết: 许仙与白娘子在西湖断桥相遇，正是靠一把雨伞结下了千古良缘."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Người ta quét chất gì lên mặt giấy để làm dù giấy dầu chống thấm?",
+      "options_vi": [
+        "Dầu trẩu (桐油)",
+        "Mật ong",
+        "Sáp nến"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trong bài viết: 人们在纸面上刷上桐油来防水，真正诞生了轻巧耐用的油纸伞."
+    }
+  ]
+}

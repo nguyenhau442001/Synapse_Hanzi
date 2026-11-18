@@ -1,0 +1,1140 @@
+{
+  "id": "wanwu_story_014",
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_page_start": 795,
+  "book_page_end": 803,
+  "page_display": "Trang 795 - 803",
+  "title": {
+    "zh": "茶：神奇的东方树叶",
+    "vi": "Trà: Chiếc lá phương Đông kỳ diệu"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🍵",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 795 - 803 · Câu chuyện chiếc lá trà xanh, từ thức uống giải khát đời thường đến 'Trà Kinh' của Lục Vũ và văn hóa phương Đông.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "在中国，茶被称为“国饮”，一缕清香穿越了数千年的历史烟云。",
+      "pinyin": "Zài Zhōngguó, chá bèi chēng wéi “guóyǐn”, yì lǚ qīngxiāng chuānyuè le shù qiān nián de lìshǐ yānyún.",
+      "vi": "Tại Trung Quốc, trà được xưng tụng là 'quốc ẩm', một làn hương thanh tao xuyên qua khói mây của hàng ngàn năm lịch sử.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "茶",
+          "pinyin": "chá",
+          "hanviet": "Trà",
+          "hsk": 1,
+          "word_id": "hsk1_30",
+          "meaning_vi": "trà"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "称为",
+          "pinyin": "chēngwéi",
+          "hanviet": "Xứng Vi",
+          "hsk": 5,
+          "word_id": "hsk5_134",
+          "meaning_vi": "gọi là"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "国饮",
+          "pinyin": "guó yǐn",
+          "hanviet": "Quốc Ẩm"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "一缕",
+          "pinyin": "yī lǚ",
+          "hanviet": "Nhất Lũ"
+        },
+        {
+          "text": "清香",
+          "pinyin": "qīng xiāng",
+          "hanviet": "Thanh Hương"
+        },
+        {
+          "text": "穿越",
+          "pinyin": "chuānyuè",
+          "hanviet": "Xuyên Việt",
+          "hsk": 7,
+          "word_id": "hsk7_620",
+          "meaning_vi": "vượt qua, băng qua"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "数千年",
+          "pinyin": "shù qiān nián",
+          "hanviet": "Sổ Thiên Niên"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "历史",
+          "pinyin": "lìshǐ",
+          "hanviet": "Lịch Sử",
+          "hsk": 3,
+          "word_id": "hsk3_831",
+          "meaning_vi": "lịch sử"
+        },
+        {
+          "text": "烟云",
+          "pinyin": "yān yún",
+          "hanviet": "Yên Vân"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "相传神农氏尝百草，一日遇七十二毒，得荼而解之，这里的“荼”就是古代的茶。",
+      "pinyin": "Xiāngchuán Shénnóng Shì cháng bǎicǎo, yí rì yù qīshí'èr dú, dé tú ér jiě zhī, zhèlǐ de “tú” jiù shì gǔdài de chá.",
+      "vi": "Tương truyền Thần Nông nếm trăm loài cỏ, một ngày gặp 72 thứ độc, nhờ có lá trà mà giải được, chữ 'đồ' thuở ấy chính là lá trà cổ.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "相传",
+          "pinyin": "xiāngchuán",
+          "hanviet": "Tương Truyền",
+          "hsk": 6,
+          "word_id": "hsk6_1436",
+          "meaning_vi": "tương truyền, theo truyền thuyết"
+        },
+        {
+          "text": "神农氏",
+          "pinyin": "shén nóng shì",
+          "hanviet": "Thần Nông Thị"
+        },
+        {
+          "text": "尝",
+          "pinyin": "cháng",
+          "hanviet": "Thường",
+          "hsk": 3,
+          "word_id": "hsk3_651",
+          "meaning_vi": "nếm thử"
+        },
+        {
+          "text": "百草",
+          "pinyin": "bǎi cǎo",
+          "hanviet": "Bách Thảo"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "一日",
+          "pinyin": "yī rì",
+          "hanviet": "Nhất Nhật"
+        },
+        {
+          "text": "遇",
+          "pinyin": "yù",
+          "hanviet": "Ngộ"
+        },
+        {
+          "text": "七十二",
+          "pinyin": "qī shí èr",
+          "hanviet": "Thất Thập Nhị"
+        },
+        {
+          "text": "毒",
+          "pinyin": "dú",
+          "hanviet": "Độc",
+          "hsk": 6,
+          "word_id": "hsk6_325",
+          "meaning_vi": "chất độc; độc hại; ma túy"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "得",
+          "pinyin": "de",
+          "hanviet": "Đắc",
+          "hsk": 2,
+          "word_id": "hsk2_332",
+          "meaning_vi": "được (trợ từ)"
+        },
+        {
+          "text": "荼",
+          "pinyin": "tú",
+          "hanviet": "Đồ"
+        },
+        {
+          "text": "而解",
+          "pinyin": "ér jiě",
+          "hanviet": "Nhi Giải"
+        },
+        {
+          "text": "之",
+          "pinyin": "pǔtōnghuà",
+          "hanviet": "Phổ Thông Thoại",
+          "hsk": 4,
+          "word_id": "hsk4_563",
+          "meaning_vi": "tiếng phổ thông (Trung Quốc)"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "这里",
+          "pinyin": "zhèlǐ",
+          "hanviet": "Giá Lý",
+          "hsk": 1,
+          "word_id": "hsk1_606",
+          "meaning_vi": "đây (đại từ)"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "荼",
+          "pinyin": "tú",
+          "hanviet": "Đồ"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "就是",
+          "pinyin": "jiùshì",
+          "hanviet": "Tựu Thị",
+          "hsk": 4,
+          "word_id": "hsk4_408",
+          "meaning_vi": "chính là; dù… cũng"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "茶",
+          "pinyin": "chá",
+          "hanviet": "Trà",
+          "hsk": 1,
+          "word_id": "hsk1_30",
+          "meaning_vi": "trà"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "唐代陆羽写出了世界上第一部关于茶的专门著作《茶经》，系统总结了茶叶的种植、采摘、制作与品饮艺术。",
+      "pinyin": "Tángdài Lù Yǔ xiěchū le shìjiè shàng dì-yī bù guānyú chá de zhuānmén zhùzuò “Chájīng”, xìtǒng zǒngjié le cháyè de zhòngzhí, cǎizhāi, zhìzuò yǔ pǐnyǐn yìshù.",
+      "vi": "Thời Đường, Lục Vũ đã viết nên cuốn sách chuyên khảo đầu tiên trên thế giới về trà mang tên 'Trà Kinh', đúc kết hệ thống trồng trọt, hái lượm, sao chế và nghệ thuật thưởng trà.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "唐代",
+          "pinyin": "táng dài",
+          "hanviet": "Đường Đại"
+        },
+        {
+          "text": "陆羽",
+          "pinyin": "lù yǔ",
+          "hanviet": "Lục Vũ"
+        },
+        {
+          "text": "写出",
+          "pinyin": "xiě chū",
+          "hanviet": "Tả Xuất"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "世界",
+          "pinyin": "shìjiè",
+          "hanviet": "Thế Giới",
+          "hsk": 3,
+          "word_id": "hsk3_916",
+          "meaning_vi": "thế giới"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "第一部",
+          "pinyin": "dì yī bù",
+          "hanviet": "Đệ Nhất Bộ"
+        },
+        {
+          "text": "关于",
+          "pinyin": "guānyú",
+          "hanviet": "Quan Vu",
+          "hsk": 3,
+          "word_id": "hsk3_747",
+          "meaning_vi": "về, liên quan đến"
+        },
+        {
+          "text": "茶",
+          "pinyin": "chá",
+          "hanviet": "Trà",
+          "hsk": 1,
+          "word_id": "hsk1_30",
+          "meaning_vi": "trà"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "专门",
+          "pinyin": "zhuānmén",
+          "hanviet": "Chuyên Môn",
+          "hsk": 4,
+          "word_id": "hsk4_968",
+          "meaning_vi": "chuyên môn, chuyên biệt"
+        },
+        {
+          "text": "著作",
+          "pinyin": "zhùzuò",
+          "hanviet": "Trước Tác",
+          "hsk": 6,
+          "word_id": "hsk6_1757",
+          "meaning_vi": "tác phẩm, trước tác"
+        },
+        {
+          "text": "《"
+        },
+        {
+          "text": "茶经",
+          "pinyin": "chá jīng",
+          "hanviet": "Trà Kinh"
+        },
+        {
+          "text": "》"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "系统",
+          "pinyin": "xìtǒng",
+          "hanviet": "Hệ Thống",
+          "hsk": 5,
+          "word_id": "hsk5_1229",
+          "meaning_vi": "hệ thống"
+        },
+        {
+          "text": "总结",
+          "pinyin": "zǒngjié",
+          "hanviet": "Tổng Kết",
+          "hsk": 4,
+          "word_id": "hsk4_985",
+          "meaning_vi": "tổng kết"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "茶叶",
+          "pinyin": "cháyè",
+          "hanviet": "Trà Hiệp",
+          "hsk": 4,
+          "word_id": "hsk4_68",
+          "meaning_vi": "lá trà, chè"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "种植",
+          "pinyin": "zhòngzhí",
+          "hanviet": "Chủng Thực",
+          "hsk": 5,
+          "word_id": "hsk5_1534",
+          "meaning_vi": "trồng trọt, gieo trồng"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "采摘",
+          "pinyin": "cǎizhāi",
+          "hanviet": "Thái Trích",
+          "hsk": 7,
+          "word_id": "hsk7_370",
+          "meaning_vi": "chọn"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "制作",
+          "pinyin": "zhìzuò",
+          "hanviet": "Chế Tác",
+          "hsk": 5,
+          "word_id": "hsk5_1519",
+          "meaning_vi": "chế tác, làm ra"
+        },
+        {
+          "text": "与品",
+          "pinyin": "yǔ pǐn",
+          "hanviet": "Dư Phẩm"
+        },
+        {
+          "text": "饮",
+          "pinyin": "yǐn",
+          "hanviet": "Ẩm"
+        },
+        {
+          "text": "艺术",
+          "pinyin": "yìshù",
+          "hanviet": "Nghệ Thuật",
+          "hsk": 4,
+          "word_id": "hsk4_870",
+          "meaning_vi": "nghệ thuật"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "中国人喝茶，讲究“清心涤烦”，不仅是为了解渴，更是一种修身养性的生活态度。",
+      "pinyin": "Zhōngguórén hē chá, jiǎngjiu “qīngxīn-dífán”, bùjǐn shì wèile jiěkě, gèng shì yì zhǒng xiūshēn-yǎngxìng de shēnghuó tàidù.",
+      "vi": "Người Trung Hoa thưởng trà coi trọng 'thanh tâm gột sạch phiền muộn', không chỉ để giải khát, mà còn là thái độ sống tu tâm dưỡng tính.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "人",
+          "pinyin": "rén",
+          "hanviet": "Nhân",
+          "hsk": 1,
+          "word_id": "hsk1_243",
+          "meaning_vi": "người"
+        },
+        {
+          "text": "喝茶",
+          "pinyin": "hē chá",
+          "hanviet": "Húp Trà"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "讲究",
+          "pinyin": "jiǎngjiu",
+          "hanviet": "Giảng Cứu",
+          "hsk": 5,
+          "word_id": "hsk5_582",
+          "meaning_vi": "chú trọng, cầu kỳ"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "清心",
+          "pinyin": "qīng xīn",
+          "hanviet": "Thanh Tâm"
+        },
+        {
+          "text": "涤烦",
+          "pinyin": "dí fán",
+          "hanviet": "Địch Phiền"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "不仅",
+          "pinyin": "bùjǐn",
+          "hanviet": "Bất Cận",
+          "hsk": 4,
+          "word_id": "hsk4_55",
+          "meaning_vi": "không chỉ"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "为了",
+          "pinyin": "wèile",
+          "hanviet": "Vi Liễu",
+          "hsk": 3,
+          "word_id": "hsk3_955",
+          "meaning_vi": "để (mục đích)"
+        },
+        {
+          "text": "解渴",
+          "pinyin": "jiěkě",
+          "hanviet": "Giải Khát",
+          "hsk": 7,
+          "word_id": "hsk7_2106",
+          "meaning_vi": "giải khát, đỡ khát"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "更是",
+          "pinyin": "gèng shì",
+          "hanviet": "Canh Thị"
+        },
+        {
+          "text": "一种",
+          "pinyin": "yī zhǒng",
+          "hanviet": "Nhất Chủng"
+        },
+        {
+          "text": "修身养性",
+          "pinyin": "xiū shēn yǎng xìng",
+          "hanviet": "Tu Thân Dưỡng Tính"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "生活态度",
+          "pinyin": "shēng huó tài dù",
+          "hanviet": "Sinh Hoạt Thái Độ"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "一片小小的东方树叶，沿着古代丝绸之路和茶马古道走向世界，成为了全球三大无酒精饮料之一。",
+      "pinyin": "Yí piàn xiǎoxiǎo de dōngfāng shùyè, yánzhe gǔdài Sīchóu zhī Lù hé Chámǎ Gǔdào zǒuxiàng shìjiè, chéngwéi le quánqiú sān dà wú-jiǔjiīng yǐnliào zhī yī.",
+      "vi": "Một chiếc lá phương Đông nhỏ bé, men theo Con đường Tơ lụa và Trà Mã Cổ Đạo cổ xưa vươn ra thế giới, trở thành một trong ba thức uống không cồn lớn nhất hành tinh.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "一片",
+          "pinyin": "yī piàn",
+          "hanviet": "Nhất Phiến"
+        },
+        {
+          "text": "小小的",
+          "pinyin": "xiǎo xiǎo de",
+          "hanviet": "Tiểu Tiểu Đích"
+        },
+        {
+          "text": "东方",
+          "pinyin": "dōngfāng",
+          "hanviet": "Đông Phương",
+          "hsk": 3,
+          "word_id": "hsk3_696",
+          "meaning_vi": "phía đông; phương Đông"
+        },
+        {
+          "text": "树叶",
+          "pinyin": "shù yè",
+          "hanviet": "Thụ Hiệp"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "沿着",
+          "pinyin": "yán zhe",
+          "hanviet": "Duyên Trước"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "丝绸之路",
+          "pinyin": "sī chóu zhī lù",
+          "hanviet": "Tơ Trù Chi Lộ"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "茶",
+          "pinyin": "chá",
+          "hanviet": "Trà",
+          "hsk": 1,
+          "word_id": "hsk1_30",
+          "meaning_vi": "trà"
+        },
+        {
+          "text": "马",
+          "pinyin": "mǎ",
+          "hanviet": "Mã",
+          "hsk": 3,
+          "word_id": "hsk3_846",
+          "meaning_vi": "con ngựa"
+        },
+        {
+          "text": "古道",
+          "pinyin": "gǔ dào",
+          "hanviet": "Cổ Đạo"
+        },
+        {
+          "text": "走向世界",
+          "pinyin": "zǒu xiàng shì jiè",
+          "hanviet": "Tẩu Hướng Thế Giới"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "成为",
+          "pinyin": "chéngwéi",
+          "hanviet": "Thành Vi",
+          "hsk": 4,
+          "word_id": "hsk4_82",
+          "meaning_vi": "trở thành"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "全球",
+          "pinyin": "quánqiú",
+          "hanviet": "Toàn Cầu",
+          "hsk": 4,
+          "word_id": "hsk4_601",
+          "meaning_vi": "toàn cầu"
+        },
+        {
+          "text": "三大",
+          "pinyin": "sān dà",
+          "hanviet": "Tam Đại"
+        },
+        {
+          "text": "无",
+          "pinyin": "wú",
+          "hanviet": "Vô",
+          "hsk": 4,
+          "word_id": "hsk4_781",
+          "meaning_vi": "không có"
+        },
+        {
+          "text": "酒精",
+          "pinyin": "jiǔjīng",
+          "hanviet": "Tửu Tinh",
+          "hsk": 6,
+          "word_id": "hsk6_732",
+          "meaning_vi": "cồn, alcohol"
+        },
+        {
+          "text": "饮料",
+          "pinyin": "yǐnliào",
+          "hanviet": "Ẩm Liệu",
+          "hsk": 3,
+          "word_id": "hsk3_1017",
+          "meaning_vi": "đồ uống"
+        },
+        {
+          "text": "之一",
+          "pinyin": "zhī yī",
+          "hanviet": "Chi Nhất"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "zh": "无论绿茶的清冽、红茶的醇厚，还是乌龙茶的浓郁回甘，都让人品味出岁月的沉淀。",
+      "pinyin": "Wúlùn lǜchá de qīngliè, hóngchá de chúnhòu, háishì wūlóngchá de nóngyù huígān, dōu ràng rén pǐnwèi chū suìyuè de chéndiàn.",
+      "vi": "Dù là vị thanh khiết của trà xanh, đậm đà của trà đỏ hay thơm nồng hậu ngọt của ô long, đều khiến người ta cảm nhận lắng đọng của thời gian.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "无论",
+          "pinyin": "wúlùn",
+          "hanviet": "Vô Luận",
+          "hsk": 4,
+          "word_id": "hsk4_784",
+          "meaning_vi": "bất luận, dù"
+        },
+        {
+          "text": "绿茶",
+          "pinyin": "lǜchá",
+          "hanviet": "Lục Trà",
+          "hsk": 2,
+          "word_id": "hsk2_395",
+          "meaning_vi": "trà xanh"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "清冽",
+          "pinyin": "qīng liè",
+          "hanviet": "Thanh Liệt"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "红茶",
+          "pinyin": "hóngchá",
+          "hanviet": "Hồng Trà",
+          "hsk": 2,
+          "word_id": "hsk2_354",
+          "meaning_vi": "hồng trà, trà đen"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "醇厚",
+          "pinyin": "chúnhòu",
+          "hanviet": "Thuần Hậu",
+          "hsk": 7,
+          "word_id": "hsk7_645",
+          "meaning_vi": "nồng đượm, đậm đà, đôn hậu"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "还是",
+          "pinyin": "háishi",
+          "hanviet": "Hoàn Thị",
+          "hsk": 2,
+          "word_id": "hsk2_352",
+          "meaning_vi": "hay là; vẫn là"
+        },
+        {
+          "text": "乌龙茶",
+          "pinyin": "wū lóng chá",
+          "hanviet": "Ô Long Trà"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "浓郁",
+          "pinyin": "nóngyù",
+          "hanviet": "Nồng Úc",
+          "hsk": 7,
+          "word_id": "hsk7_2988",
+          "meaning_vi": "nồng nàn; đậm đà"
+        },
+        {
+          "text": "回甘",
+          "pinyin": "huí gān",
+          "hanviet": "Hồi Cam"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "都",
+          "pinyin": "dōu",
+          "hanviet": "Đô",
+          "hsk": 1,
+          "word_id": "hsk1_76",
+          "meaning_vi": "đều"
+        },
+        {
+          "text": "让",
+          "pinyin": "ràng",
+          "hanviet": "Nhượng",
+          "hsk": 2,
+          "word_id": "hsk2_422",
+          "meaning_vi": "để cho, khiến"
+        },
+        {
+          "text": "人",
+          "pinyin": "rén",
+          "hanviet": "Nhân",
+          "hsk": 1,
+          "word_id": "hsk1_243",
+          "meaning_vi": "người"
+        },
+        {
+          "text": "品味",
+          "pinyin": "pǐnwèi",
+          "hanviet": "Phẩm Vị",
+          "hsk": 7,
+          "word_id": "hsk7_3091",
+          "meaning_vi": "thưởng thức; nếm thử; trải nghiệm"
+        },
+        {
+          "text": "出",
+          "pinyin": "chū",
+          "hanviet": "Xuất",
+          "hsk": 2,
+          "word_id": "hsk2_316",
+          "meaning_vi": "ra, đi ra"
+        },
+        {
+          "text": "岁月",
+          "pinyin": "suìyuè",
+          "hanviet": "Tuế Nguyệt",
+          "hsk": 6,
+          "word_id": "hsk6_1251",
+          "meaning_vi": "năm tháng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "沉淀",
+          "pinyin": "chéndiàn",
+          "hanviet": "Trầm Điến",
+          "hsk": 7,
+          "word_id": "hsk7_471",
+          "meaning_vi": "lắng đọng, kết tủa"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "zh": "一杯香茗在手，便能让人在喧嚣的现代生活中找到内心的宁静与释怀。",
+      "pinyin": "Yì bēi xiāngmíng zài shǒu, biàn néng ràng rén zài xuānxiāo de xiàndài shēnghuó zhōng zhǎodào nèixīn de níngjìng yǔ shìhuái.",
+      "vi": "Một chén trà thơm trong tay, liền giúp lòng người tìm lại thanh tịnh và an nhiên giữa nhịp sống hiện đại ồn ào.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "一杯",
+          "pinyin": "yī bēi",
+          "hanviet": "Nhất Bôi"
+        },
+        {
+          "text": "香茗",
+          "pinyin": "xiāng míng",
+          "hanviet": "Hương Mính"
+        },
+        {
+          "text": "在手",
+          "pinyin": "zài shǒu",
+          "hanviet": "Tại Thủ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "便",
+          "pinyin": "biàn",
+          "hanviet": "Tiện",
+          "hsk": 5,
+          "word_id": "hsk5_56",
+          "meaning_vi": "thì, liền (liên từ)"
+        },
+        {
+          "text": "能",
+          "pinyin": "néng",
+          "hanviet": "Năng",
+          "hsk": 1,
+          "word_id": "hsk1_212",
+          "meaning_vi": "có thể"
+        },
+        {
+          "text": "让",
+          "pinyin": "ràng",
+          "hanviet": "Nhượng",
+          "hsk": 2,
+          "word_id": "hsk2_422",
+          "meaning_vi": "để cho, khiến"
+        },
+        {
+          "text": "人",
+          "pinyin": "rén",
+          "hanviet": "Nhân",
+          "hsk": 1,
+          "word_id": "hsk1_243",
+          "meaning_vi": "người"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "喧嚣",
+          "pinyin": "xuān xiāo",
+          "hanviet": "Huyên Hiêu"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "现代",
+          "pinyin": "xiàndài",
+          "hanviet": "Hiện Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1239",
+          "meaning_vi": "hiện đại"
+        },
+        {
+          "text": "生活",
+          "pinyin": "shēnghuó",
+          "hanviet": "Sinh Hoạt",
+          "hsk": 3,
+          "word_id": "hsk3_911",
+          "meaning_vi": "sinh hoạt, cuộc sống"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "找到",
+          "pinyin": "zhǎo dào",
+          "hanviet": "Trảo Đáo"
+        },
+        {
+          "text": "内心",
+          "pinyin": "nèixīn",
+          "hanviet": "Nội Tâm",
+          "hsk": 4,
+          "word_id": "hsk4_530",
+          "meaning_vi": "nội tâm, trong lòng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "宁静",
+          "pinyin": "níngjìng",
+          "hanviet": "Trữ Tĩnh",
+          "hsk": 7,
+          "word_id": "hsk7_2973",
+          "meaning_vi": "yên tĩnh; thanh bình; tĩnh lặng"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "释怀",
+          "pinyin": "shì huái",
+          "hanviet": "Thích Hoài"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk4_68",
+    "hsk4_773",
+    "hsk3_957",
+    "hsk3_831",
+    "hsk1_390"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Tác phẩm chuyên khảo đầu tiên trên thế giới về trà có tên là gì?",
+      "options_vi": [
+        "Trà Kinh (茶经) của Lục Vũ",
+        "Bản Thảo Cương Mục",
+        "Thương Hàn Luận"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trong bài viết: 唐代陆羽写出了世界上第一部关于茶的专门著作《茶经》."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Thần Nông trong truyền thuyết đã dùng lá trà vào việc gì?",
+      "options_vi": [
+        "Dùng giải độc khi nếm trăm loài thảo mộc",
+        "Dùng làm thuốc nhuộm vải",
+        "Dùng để nấu canh cá"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trong bài viết: 相传神农氏尝百草，一日遇七十二毒，得荼而解之."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Chiếc lá trà phương Đông đã lan tỏa khắp thế giới qua con đường giao thương nào?",
+      "options_vi": [
+        "Con đường Tơ lụa và Trà Mã Cổ Đạo",
+        "Đường biển phương Bắc",
+        "Kênh đào Suez"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trong bài viết: 沿着古代丝绸之路和茶马古道走向世界."
+    }
+  ]
+}

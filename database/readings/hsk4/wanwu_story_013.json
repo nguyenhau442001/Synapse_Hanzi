@@ -1,0 +1,1165 @@
+{
+  "id": "wanwu_story_013",
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_page_start": 786,
+  "book_page_end": 794,
+  "page_display": "Trang 786 - 794",
+  "title": {
+    "zh": "饺子：“娇耳”的千年流传",
+    "vi": "Sủi cảo: Thiên niên lưu truyền của món 'Kiều nhĩ'"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🥟",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 786 - 794 · Hành trình nghìn năm của sủi cảo: từ bài thuốc chữa rét buốt tai của y thánh Trương Trọng Cảnh đến biểu tượng đoàn viên ngày Tết.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "在中国北方，有一句著名的俗话叫做“大寒小寒，吃饺子过年”。",
+      "pinyin": "Zài Zhōngguó běifāng, yǒu yí jù zhùmíng de súhuà jiàozuò “dàhán xiǎohán, chī jiǎozi guònián”.",
+      "vi": "Ở miền Bắc Trung Quốc, có câu tục ngữ nổi tiếng: 'Đại hàn tiểu hàn, ăn sủi cảo đón Tết'.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "北方",
+          "pinyin": "běifāng",
+          "hanviet": "Bắc Phương",
+          "hsk": 3,
+          "word_id": "hsk3_618",
+          "meaning_vi": "phía bắc"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "有",
+          "pinyin": "yǒu",
+          "hanviet": "Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_380",
+          "meaning_vi": "có"
+        },
+        {
+          "text": "一句",
+          "pinyin": "yī jù",
+          "hanviet": "Nhất Câu"
+        },
+        {
+          "text": "著名",
+          "pinyin": "zhùmíng",
+          "hanviet": "Trước Danh",
+          "hsk": 4,
+          "word_id": "hsk4_967",
+          "meaning_vi": "nổi tiếng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "俗话",
+          "pinyin": "súhuà",
+          "hanviet": "Tục Thoại",
+          "hsk": 7,
+          "word_id": "hsk7_3887",
+          "meaning_vi": "tục ngữ, lời nói thường ngày"
+        },
+        {
+          "text": "叫做",
+          "pinyin": "jiào zuò",
+          "hanviet": "Khiếu Tố"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "大寒",
+          "pinyin": "dà hán",
+          "hanviet": "Đại Hàn"
+        },
+        {
+          "text": "小寒",
+          "pinyin": "xiǎo hán",
+          "hanviet": "Tiểu Hàn"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "吃饺子",
+          "pinyin": "chī jiǎo zi",
+          "hanviet": "Cật Cảo Tử"
+        },
+        {
+          "text": "过年",
+          "pinyin": "guònián",
+          "hanviet": "Quá Niên",
+          "hsk": 2,
+          "word_id": "hsk2_349",
+          "meaning_vi": "năm mới"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "很多人不知道，饺子最初发明的时候，并不是为了当饭吃，而是一味用来治病的药方。",
+      "pinyin": "Hěn duō rén bù zhīdào, jiǎozi zuìchū fāmíng de shíhou, bìng bú shì wèile dāng fàn chī, érshì yí wèi yòng lái zhìbìng de yàofāng.",
+      "vi": "Nhiều người không biết rằng, sủi cảo thuở mới phát minh không phải để làm món ăn no, mà là một phương thuốc dùng trị bệnh.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "很多",
+          "pinyin": "hěn duō",
+          "hanviet": "Ngận Đa"
+        },
+        {
+          "text": "人",
+          "pinyin": "rén",
+          "hanviet": "Nhân",
+          "hsk": 1,
+          "word_id": "hsk1_243",
+          "meaning_vi": "người"
+        },
+        {
+          "text": "不",
+          "pinyin": "bù",
+          "hanviet": "Bất",
+          "hsk": 1,
+          "word_id": "hsk1_25",
+          "meaning_vi": "không"
+        },
+        {
+          "text": "知道",
+          "pinyin": "zhīdào",
+          "hanviet": "Tri Đạo",
+          "hsk": 1,
+          "word_id": "hsk1_405",
+          "meaning_vi": "biết"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "饺子",
+          "pinyin": "jiǎozi",
+          "hanviet": "Cảo Tử",
+          "hsk": 1,
+          "word_id": "hsk1_528",
+          "meaning_vi": "bánh chẻo"
+        },
+        {
+          "text": "最初",
+          "pinyin": "zuìchū",
+          "hanviet": "Tối Sơ",
+          "hsk": 5,
+          "word_id": "hsk5_1596",
+          "meaning_vi": "ban đầu, lúc đầu"
+        },
+        {
+          "text": "发明",
+          "pinyin": "fāmíng",
+          "hanviet": "Phát Minh",
+          "hsk": 5,
+          "word_id": "hsk5_320",
+          "meaning_vi": "phát minh"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "时候",
+          "pinyin": "shíhou",
+          "hanviet": "Thời Hậu",
+          "hsk": 1,
+          "word_id": "hsk1_262",
+          "meaning_vi": "lúc, thời điểm"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "并",
+          "pinyin": "bìng",
+          "hanviet": "Tinh",
+          "hsk": 4,
+          "word_id": "hsk4_39",
+          "meaning_vi": "và, đồng thời; hoàn toàn (không)"
+        },
+        {
+          "text": "不是",
+          "pinyin": "bú shì",
+          "hanviet": "Bất Thị"
+        },
+        {
+          "text": "为了",
+          "pinyin": "wèile",
+          "hanviet": "Vi Liễu",
+          "hsk": 3,
+          "word_id": "hsk3_955",
+          "meaning_vi": "để (mục đích)"
+        },
+        {
+          "text": "当饭",
+          "pinyin": "dāng fàn",
+          "hanviet": "Đương Phạn"
+        },
+        {
+          "text": "吃",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "而是",
+          "pinyin": "ér shì",
+          "hanviet": "Nhi Thị"
+        },
+        {
+          "text": "一味",
+          "pinyin": "yíwèi",
+          "hanviet": "Nhất Vị",
+          "hsk": 7,
+          "word_id": "hsk7_4838",
+          "meaning_vi": "một mực; chăm chăm mù quáng"
+        },
+        {
+          "text": "用来",
+          "pinyin": "yònglái",
+          "hanviet": "Dụng Lai",
+          "hsk": 4,
+          "word_id": "hsk4_879",
+          "meaning_vi": "dùng để"
+        },
+        {
+          "text": "治病",
+          "pinyin": "zhì bìng",
+          "hanviet": "Trị Bệnh"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "药方",
+          "pinyin": "yàofāng",
+          "hanviet": "Dược Phương",
+          "hsk": 7,
+          "word_id": "hsk7_4786",
+          "meaning_vi": "đơn thuốc; toa thuốc; bài thuốc"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "东汉末年的著名医学家张仲景，在冬天看到很多穷苦百姓因为严寒而冻烂了耳朵，心里非常难过。",
+      "pinyin": "Dōnghàn mònián de zhùmíng yīxuéjiā Zhāng Zhòngjǐng, zài dōngtiān kàndào hěn duō qióngkǔ bǎixìng yīnwèi yánhán ér dòng làn le ěrduo, xīnlǐ fēicháng nánguò.",
+      "vi": "Cuối thời Đông Hán, danh y Trương Trọng Cảnh mùa đông thấy nhiều người dân nghèo bị giá rét làm cóng buốt lở loét cả tai, trong lòng vô cùng xót xa.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "东汉",
+          "pinyin": "dōng hàn",
+          "hanviet": "Đông Hán"
+        },
+        {
+          "text": "末年",
+          "pinyin": "mò nián",
+          "hanviet": "Mạt Niên"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "著名",
+          "pinyin": "zhùmíng",
+          "hanviet": "Trước Danh",
+          "hsk": 4,
+          "word_id": "hsk4_967",
+          "meaning_vi": "nổi tiếng"
+        },
+        {
+          "text": "医学家",
+          "pinyin": "yī xué jiā",
+          "hanviet": "Y Học Gia"
+        },
+        {
+          "text": "张仲景",
+          "pinyin": "zhāng zhòng jǐng",
+          "hanviet": "Trương Trọng Cảnh"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "冬天",
+          "pinyin": "dōngtiān",
+          "hanviet": "Đông Thiên",
+          "hsk": 3,
+          "word_id": "hsk3_698",
+          "meaning_vi": "mùa đông"
+        },
+        {
+          "text": "看到",
+          "pinyin": "kàn dào",
+          "hanviet": "Khán Đáo"
+        },
+        {
+          "text": "很多",
+          "pinyin": "hěn duō",
+          "hanviet": "Ngận Đa"
+        },
+        {
+          "text": "穷苦",
+          "pinyin": "qióng kǔ",
+          "hanviet": "Cùng Khổ"
+        },
+        {
+          "text": "百姓",
+          "pinyin": "bǎi xìng",
+          "hanviet": "Bách Tính"
+        },
+        {
+          "text": "因为",
+          "pinyin": "yīnwèi",
+          "hanviet": "Nhân Vi",
+          "hsk": 2,
+          "word_id": "hsk2_476",
+          "meaning_vi": "bởi vì"
+        },
+        {
+          "text": "严寒",
+          "pinyin": "yánhán",
+          "hanviet": "Nghiêm Hàn",
+          "hsk": 6,
+          "word_id": "hsk6_1505",
+          "meaning_vi": "lạnh giá khắc nghiệt"
+        },
+        {
+          "text": "而",
+          "pinyin": "ér",
+          "hanviet": "Nhi",
+          "hsk": 4,
+          "word_id": "hsk4_183",
+          "meaning_vi": "mà, và"
+        },
+        {
+          "text": "冻烂",
+          "pinyin": "dòng làn",
+          "hanviet": "Đông Lạn"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "耳朵",
+          "pinyin": "ěrduo",
+          "hanviet": "Nhĩ Đoá",
+          "hsk": 3,
+          "word_id": "hsk3_708",
+          "meaning_vi": "tai"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "心里",
+          "pinyin": "xīnlǐ",
+          "hanviet": "Tâm Lý",
+          "hsk": 3,
+          "word_id": "hsk3_981",
+          "meaning_vi": "trong lòng"
+        },
+        {
+          "text": "非常",
+          "pinyin": "fēicháng",
+          "hanviet": "Phi Thường",
+          "hsk": 1,
+          "word_id": "hsk1_515",
+          "meaning_vi": "rất, vô cùng"
+        },
+        {
+          "text": "难过",
+          "pinyin": "nánguò",
+          "hanviet": "Nan Quá",
+          "hsk": 3,
+          "word_id": "hsk3_859",
+          "meaning_vi": "buồn, khó chịu"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "于是他把羊肉、辣椒和驱寒的药材切碎包进面皮里，捏成耳朵的形状，煮好后连汤带水送给乡亲们吃。",
+      "pinyin": "Yútì tā bǎ yángròu, làjiāo hé qūhán de yàocái qiēsuì bāo jìn miànpí lǐ, niēchéng ěrduo de xíngzhuàng, zhǔhǎo hòu liántāng-dàishuǐ sòng gěi xiāngqīnmen chī.",
+      "vi": "Thế là ông băm nhỏ thịt dê, ớt và dược liệu trừ hàn gói vào vỏ bột mì, nặn thành hình vành tai, nấu chín rồi phát cả canh lẫn bánh cho bà con ăn.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "于是",
+          "pinyin": "yúshì",
+          "hanviet": "Vu Thị",
+          "hsk": 4,
+          "word_id": "hsk4_896",
+          "meaning_vi": "vì vậy, do đó"
+        },
+        {
+          "text": "他",
+          "pinyin": "tā",
+          "hanviet": "Tha",
+          "hsk": 1,
+          "word_id": "hsk1_286",
+          "meaning_vi": "anh ấy, nó"
+        },
+        {
+          "text": "把",
+          "pinyin": "bǎ",
+          "hanviet": "Bả",
+          "hsk": 3,
+          "word_id": "hsk3_606",
+          "meaning_vi": "cái, chiếc (lượng từ); cầm, nắm"
+        },
+        {
+          "text": "羊肉",
+          "pinyin": "yángròu",
+          "hanviet": "Dương Nhục",
+          "hsk": 2,
+          "word_id": "hsk2_124",
+          "meaning_vi": "thịt dê"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "辣椒",
+          "pinyin": "làjiāo",
+          "hanviet": "Lạt Tiêu",
+          "hsk": 6,
+          "word_id": "hsk6_811",
+          "meaning_vi": "ớt"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "驱寒",
+          "pinyin": "qū hán",
+          "hanviet": "Khu Hàn"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "药材",
+          "pinyin": "yàocái",
+          "hanviet": "Dược Tài",
+          "hsk": 7,
+          "word_id": "hsk7_4785",
+          "meaning_vi": "dược liệu; vị thuốc thảo dược"
+        },
+        {
+          "text": "切碎",
+          "pinyin": "qiè suì",
+          "hanviet": "Tiếp Toái"
+        },
+        {
+          "text": "包进",
+          "pinyin": "bāo jìn",
+          "hanviet": "Bao Tiến"
+        },
+        {
+          "text": "面皮",
+          "pinyin": "miàn pí",
+          "hanviet": "Diện Bì"
+        },
+        {
+          "text": "里",
+          "pinyin": "lǐ",
+          "hanviet": "Lý",
+          "hsk": 1,
+          "word_id": "hsk1_536",
+          "meaning_vi": "bên trong"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "捏成",
+          "pinyin": "niē chéng",
+          "hanviet": "Niết Thành"
+        },
+        {
+          "text": "耳朵",
+          "pinyin": "ěrduo",
+          "hanviet": "Nhĩ Đoá",
+          "hsk": 3,
+          "word_id": "hsk3_708",
+          "meaning_vi": "tai"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "形状",
+          "pinyin": "xíngzhuàng",
+          "hanviet": "Hình Trạng",
+          "hsk": 5,
+          "word_id": "hsk5_1296",
+          "meaning_vi": "hình dạng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "煮",
+          "pinyin": "zhǔ",
+          "hanviet": "Chử",
+          "hsk": 5,
+          "word_id": "hsk5_1540",
+          "meaning_vi": "nấu, đun sôi"
+        },
+        {
+          "text": "好",
+          "pinyin": "hǎo",
+          "hanviet": "Hảo",
+          "hsk": 1,
+          "word_id": "hsk1_114",
+          "meaning_vi": "tốt, được"
+        },
+        {
+          "text": "后",
+          "pinyin": "hòu",
+          "hanviet": "Hậu",
+          "hsk": 1,
+          "word_id": "hsk1_524",
+          "meaning_vi": "sau"
+        },
+        {
+          "text": "连汤带水",
+          "pinyin": "lián tāng dài shuǐ",
+          "hanviet": "Liên Thang Đới Thuỷ"
+        },
+        {
+          "text": "送给",
+          "pinyin": "sòng gěi",
+          "hanviet": "Tống Cấp"
+        },
+        {
+          "text": "乡亲们",
+          "pinyin": "xiāng qīn men",
+          "hanviet": "Hương Thân Môn"
+        },
+        {
+          "text": "吃",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "这种神奇的药汤被称为“祛寒娇耳汤”，乡亲们吃了以后浑身暖和，耳朵很快就不冻了。",
+      "pinyin": "Zhè zhǒng shénqí de yàotāng bèi chēng wéi “qūhán jiāo'ěr tāng”, xiāngqīnmen chī le yǐhòu húnshēn nuǎnhuo, ěrduo hěn kuài jiù bú dòng le.",
+      "vi": "Nồi canh thuốc kỳ diệu đó được gọi là 'Khư hàn kiều nhĩ thang', bà con ăn xong khắp người ấm áp, tai không còn bị cóng buốt nữa.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "这种",
+          "pinyin": "zhè zhǒng",
+          "hanviet": "Giá Chủng"
+        },
+        {
+          "text": "神奇",
+          "pinyin": "shénqí",
+          "hanviet": "Thần Kì/thần Kỳ",
+          "hsk": 6,
+          "word_id": "hsk6_1167",
+          "meaning_vi": "thần kỳ, kỳ diệu"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "药汤",
+          "pinyin": "yào tāng",
+          "hanviet": "Dược Thang"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "称为",
+          "pinyin": "chēngwéi",
+          "hanviet": "Xứng Vi",
+          "hsk": 5,
+          "word_id": "hsk5_134",
+          "meaning_vi": "gọi là"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "祛寒",
+          "pinyin": "qū hán",
+          "hanviet": "Khư Hàn"
+        },
+        {
+          "text": "娇耳汤",
+          "pinyin": "jiāo ěr tāng",
+          "hanviet": "Kiều Nhĩ Thang"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "乡亲们",
+          "pinyin": "xiāng qīn men",
+          "hanviet": "Hương Thân Môn"
+        },
+        {
+          "text": "吃",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "以后",
+          "pinyin": "yǐhòu",
+          "hanviet": "Dĩ Hậu",
+          "hsk": 3,
+          "word_id": "hsk3_1005",
+          "meaning_vi": "sau này, sau khi"
+        },
+        {
+          "text": "浑身",
+          "pinyin": "húnshēn",
+          "hanviet": "Hồn Thân",
+          "hsk": 7,
+          "word_id": "hsk7_1811",
+          "meaning_vi": "toàn bộ cơ thể"
+        },
+        {
+          "text": "暖和",
+          "pinyin": "nuǎnhuo",
+          "hanviet": "Noãn Hoà",
+          "hsk": 4,
+          "word_id": "hsk4_540",
+          "meaning_vi": "ấm áp"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "耳朵",
+          "pinyin": "ěrduo",
+          "hanviet": "Nhĩ Đoá",
+          "hsk": 3,
+          "word_id": "hsk3_708",
+          "meaning_vi": "tai"
+        },
+        {
+          "text": "很快",
+          "pinyin": "hěn kuài",
+          "hanviet": "Ngận Khoái"
+        },
+        {
+          "text": "就",
+          "pinyin": "jiù",
+          "hanviet": "Tựu",
+          "hsk": 2,
+          "word_id": "hsk2_376",
+          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)"
+        },
+        {
+          "text": "不冻",
+          "pinyin": "bù dòng",
+          "hanviet": "Bất Đông"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "zh": "后来每逢冬至和大年三十，人们就模仿娇耳的样子包面食吃，渐渐演变成了今天家喻户晓的饺子。",
+      "pinyin": "Hòulái měi féng Dōngzhì hé Dànián Sānshí, rénmen jiù mófǎng jiāo'ěr de yàngzi bāo miànshí chī, jiànjiàn yǎnbiàn chéng le jīntiān jiāyù-hùxiǎo de jiǎozi.",
+      "vi": "Về sau cứ mỗi dịp Đông Chí và Ba Mươi Tết, người người lại phỏng theo hình kiều nhĩ mà gói bột ăn, dần dà trở thành món sủi cảo nức tiếng muôn nhà hôm nay.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "后来",
+          "pinyin": "hòulái",
+          "hanviet": "Hậu Lai",
+          "hsk": 3,
+          "word_id": "hsk3_761",
+          "meaning_vi": "sau đó"
+        },
+        {
+          "text": "每逢",
+          "pinyin": "měi féng",
+          "hanviet": "Mỗi Phùng"
+        },
+        {
+          "text": "冬至",
+          "pinyin": "dōng zhì",
+          "hanviet": "Đông Chí"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "大年三十",
+          "pinyin": "dà nián sān shí",
+          "hanviet": "Đại Niên Tam Thập"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "人们",
+          "pinyin": "rén men",
+          "hanviet": "Nhân Môn"
+        },
+        {
+          "text": "就",
+          "pinyin": "jiù",
+          "hanviet": "Tựu",
+          "hsk": 2,
+          "word_id": "hsk2_376",
+          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)"
+        },
+        {
+          "text": "模仿",
+          "pinyin": "mófǎng",
+          "hanviet": "Mô Phỏng",
+          "hsk": 6,
+          "word_id": "hsk6_931",
+          "meaning_vi": "mô phỏng, bắt chước"
+        },
+        {
+          "text": "娇耳",
+          "pinyin": "jiāo ěr",
+          "hanviet": "Kiều Nhĩ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "样子",
+          "pinyin": "yàngzi",
+          "hanviet": "Dạng Tử",
+          "hsk": 4,
+          "word_id": "hsk4_857",
+          "meaning_vi": "dáng vẻ, hình dạng"
+        },
+        {
+          "text": "包",
+          "pinyin": "bāo",
+          "hanviet": "Bao",
+          "hsk": 2,
+          "word_id": "hsk2_307",
+          "meaning_vi": "cái túi; bao gồm"
+        },
+        {
+          "text": "面食",
+          "pinyin": "miàn shí",
+          "hanviet": "Diện Thực"
+        },
+        {
+          "text": "吃",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "渐渐",
+          "pinyin": "jiànjiàn",
+          "hanviet": "Tiêm Tiêm",
+          "hsk": 5,
+          "word_id": "hsk5_574",
+          "meaning_vi": "dần dần"
+        },
+        {
+          "text": "演变成",
+          "pinyin": "yǎn biàn chéng",
+          "hanviet": "Diễn Biến Thành"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "今天",
+          "pinyin": "jīntiān",
+          "hanviet": "Kim Thiên",
+          "hsk": 1,
+          "word_id": "hsk1_144",
+          "meaning_vi": "hôm nay"
+        },
+        {
+          "text": "家喻户晓",
+          "pinyin": "jiāyù-hùxiǎo",
+          "hanviet": "Gia Dụ Hộ Hiểu",
+          "hsk": 7,
+          "word_id": "hsk7_1931",
+          "meaning_vi": "nhà nhà đều biết, ai ai cũng biết"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "饺子",
+          "pinyin": "jiǎozi",
+          "hanviet": "Cảo Tử",
+          "hsk": 1,
+          "word_id": "hsk1_528",
+          "meaning_vi": "bánh chẻo"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "zh": "饺子的外形酷似金元宝，包进各种美味馅料，寄托着全家人团团圆圆、吉祥发财的美好祝愿。",
+      "pinyin": "Jiǎozi de wàixíng kùsì jīnyuánbǎo, bāo jìn gèzhǒng měiwèi xiànliào, jìtuō zhe quánjiā rén tuántuán-yuányuán, jíxiáng fācái de měihǎo zhùyuàn.",
+      "vi": "Hình dáng sủi cảo tựa thỏi vàng nén, gói trọn bao nhân bánh thơm lành, gửi gắm ước nguyện cả gia đình sum họp viên mãn, cát tường phát tài.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "饺子",
+          "pinyin": "jiǎozi",
+          "hanviet": "Cảo Tử",
+          "hsk": 1,
+          "word_id": "hsk1_528",
+          "meaning_vi": "bánh chẻo"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "外形",
+          "pinyin": "wàixíng",
+          "hanviet": "Ngoại Hình",
+          "hsk": 5,
+          "word_id": "hsk5_1171",
+          "meaning_vi": "hình dáng bên ngoài, ngoại hình"
+        },
+        {
+          "text": "酷似",
+          "pinyin": "kùsì",
+          "hanviet": "Khốc Tự",
+          "hsk": 7,
+          "word_id": "hsk7_2416",
+          "meaning_vi": "rất giống, giống hệt, giống như đúc"
+        },
+        {
+          "text": "金元宝",
+          "pinyin": "jīn yuán bǎo",
+          "hanviet": "Kim Nguyên Bảo"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "包进",
+          "pinyin": "bāo jìn",
+          "hanviet": "Bao Tiến"
+        },
+        {
+          "text": "各种",
+          "pinyin": "gèzhǒng",
+          "hanviet": "Các Chủng",
+          "hsk": 4,
+          "word_id": "hsk4_248",
+          "meaning_vi": "các loại, đủ loại"
+        },
+        {
+          "text": "美味",
+          "pinyin": "měiwèi",
+          "hanviet": "Mỹ Vị",
+          "hsk": 5,
+          "word_id": "hsk5_759",
+          "meaning_vi": "món ngon; thơm ngon, mỹ vị"
+        },
+        {
+          "text": "馅料",
+          "pinyin": "xiàn liào",
+          "hanviet": "Hãm Liệu"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "寄托",
+          "pinyin": "jìtuō",
+          "hanviet": "Ký Thác",
+          "hsk": 7,
+          "word_id": "hsk7_1914",
+          "meaning_vi": "gửi gắm, ký thác"
+        },
+        {
+          "text": "着",
+          "pinyin": "zhe",
+          "hanviet": "Trước",
+          "hsk": 2,
+          "word_id": "hsk2_490",
+          "meaning_vi": "đang (trợ từ)"
+        },
+        {
+          "text": "全家人",
+          "pinyin": "quán jiā rén",
+          "hanviet": "Toàn Gia Nhân"
+        },
+        {
+          "text": "团团圆圆",
+          "pinyin": "tuán tuán yuán yuán",
+          "hanviet": "Đoàn Đoàn Viên Viên"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "吉祥",
+          "pinyin": "jíxiáng",
+          "hanviet": "Cát Tường",
+          "hsk": 6,
+          "word_id": "hsk6_621",
+          "meaning_vi": "cát tường, may mắn, tốt lành"
+        },
+        {
+          "text": "发财",
+          "pinyin": "fācái",
+          "hanviet": "Phát Tài",
+          "hsk": 7,
+          "word_id": "hsk7_1032",
+          "meaning_vi": "làm giàu, phát tài"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "美好",
+          "pinyin": "měihǎo",
+          "hanviet": "Mỹ Hảo",
+          "hsk": 4,
+          "word_id": "hsk4_501",
+          "meaning_vi": "tốt đẹp"
+        },
+        {
+          "text": "祝愿",
+          "pinyin": "zhùyuàn",
+          "hanviet": "Chúc Nguyện",
+          "hsk": 6,
+          "word_id": "hsk6_1755",
+          "meaning_vi": "chúc phúc, cầu chúc"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk1_528",
+    "hsk3_957",
+    "hsk4_540",
+    "hsk5_320",
+    "hsk1_390"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Ban đầu, sủi cảo được phát minh nhằm mục đích gì?",
+      "options_vi": [
+        "Làm phương thuốc chữa rét buốt cóng tai cho người nghèo",
+        "Làm món tráng miệng cung đình",
+        "Làm lương khô cho quân lính viễn chinh"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trong bài viết: 并不是为了当饭吃，而是一味用来治病的药方 (Không phải để ăn no mà là thang thuốc trị bệnh)."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Vị danh y nào đã sáng chế ra món 'Khư hàn kiều nhĩ thang' tiền thân của sủi cảo?",
+      "options_vi": [
+        "Trương Trọng Cảnh (张仲景)",
+        "Hoa Đà",
+        "Biển Thước"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trong bài viết: 著名医学家张仲景... 发明了“祛寒娇耳汤”."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Hình dáng của chiếc sủi cảo tượng trưng cho vật gì mang ý nghĩa tài lộc?",
+      "options_vi": [
+        "Thỏi vàng nén nguyên bảo (金元宝)",
+        "Vầng trăng rằm",
+        "Cánh hoa đào"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trong bài viết: 饺子的外形酷似金元宝 (Hình dáng sủi cảo giống thỏi vàng nén)."
+    }
+  ]
+}

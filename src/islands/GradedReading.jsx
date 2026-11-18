@@ -483,7 +483,9 @@ function StoryCard({ story }) {
           <div class="graded-card-header-left">
             <span class={`graded-card-level-badge lvl-${lvl}`}>{story.level}</span>{' '}
             {(story.series === 'wanwu' || (story.topic_vi && story.topic_vi.includes('Vạn vật'))) ? (
-              <span class="graded-book-badge" style="background: rgba(194,101,74,0.18); color: #c2654a; border: 1px solid rgba(194,101,74,0.35); padding: 1px 7px; border-radius: 6px; font-size: 0.74rem; font-weight: 700; display: inline-flex; align-items: center; gap: 4px;">📚 万物有意思</span>
+              <span class="graded-book-badge" style="background: rgba(194,101,74,0.18); color: #c2654a; border: 1px solid rgba(194,101,74,0.35); padding: 1px 7px; border-radius: 6px; font-size: 0.74rem; font-weight: 700; display: inline-flex; align-items: center; gap: 4px;">
+                {`📚 万物有意思${story.page_display ? ` · ${story.page_display}` : ''}`}
+              </span>
             ) : null}
             <span class="graded-card-topic" title={topicVi}>{topicVi}</span>
           </div>{' '}
@@ -842,7 +844,14 @@ function ReaderNav({ story }) {
           <span>{story.title.zh}</span>{' '}
           <span class={`graded-card-level-badge lvl-${(story.level || 'hsk1').toLowerCase()}`}>{story.level}</span>
         </h1>{' '}
-        <div class="graded-reader-vi-title">{`${story.title.vi} · ⏱️ ${story.estimatedMinutes} phút`}</div>
+        <div class="graded-reader-vi-title">
+          {story.page_display ? (
+            <span style="display: inline-block; margin-right: 6px; padding: 1px 7px; border-radius: 4px; background: rgba(194,101,74,0.15); color: #c2654a; font-weight: 700; font-size: 0.82rem;">
+              {`📖 ${story.page_display}`}
+            </span>
+          ) : null}
+          {`${story.title.vi} · ⏱️ ${story.estimatedMinutes} phút`}
+        </div>
       </div>{' '}
       <div class="graded-reader-actions">
         <button type="button" id="playFullStoryBtn" class={playingAll ? 'graded-toggle-btn active' : 'graded-toggle-btn'} onClick={speakFullStory} title="Nghe đọc toàn bộ bài đọc">

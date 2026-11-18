@@ -1,0 +1,1129 @@
+{
+  "id": "wanwu_story_010",
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_page_start": 557,
+  "book_page_end": 564,
+  "page_display": "Trang 557 - 564",
+  "title": {
+    "zh": "风筝：魏晋发明的最早飞行器",
+    "vi": "Cánh diều: Thiết bị bay sớm nhất phát minh thời Ngụy Tấn"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🪁",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 557 - 564 · Cánh diều giấy bay lượn trên trời xanh: từ công cụ quân sự đo cự ly thời chiến đến thú vui thanh nhã ngày tiết Thanh Minh.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "每当春天微风吹起的时候，天空中总会飞翔着各种五彩斑斓的风筝。",
+      "pinyin": "Měi dāng chūntiān wēifēng chuī qǐ de shíhou, tiānkōng zhōng zǒng huì fēixiáng zhe gèzhǒng wǔcǎi-bānlán de fēngzheng.",
+      "vi": "Mỗi dịp gió xuân thoang thoảng thổi về, trên bầu trời lại rợp bóng muôn cánh diều rực rỡ sắc màu bay lượn.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "每当",
+          "pinyin": "měi dāng",
+          "hanviet": "Mỗi Đương"
+        },
+        {
+          "text": "春天",
+          "pinyin": "chūntiān",
+          "hanviet": "Xuân Thiên",
+          "hsk": 3,
+          "word_id": "hsk3_666",
+          "meaning_vi": "mùa xuân"
+        },
+        {
+          "text": "微风",
+          "pinyin": "wēi fēng",
+          "hanviet": "Vi Phong"
+        },
+        {
+          "text": "吹起",
+          "pinyin": "chuī qǐ",
+          "hanviet": "Xuy Khởi"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "时候",
+          "pinyin": "shíhou",
+          "hanviet": "Thời Hậu",
+          "hsk": 1,
+          "word_id": "hsk1_262",
+          "meaning_vi": "lúc, thời điểm"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "天空",
+          "pinyin": "tiānkōng",
+          "hanviet": "Thiên Không",
+          "hsk": 5,
+          "word_id": "hsk5_1124",
+          "meaning_vi": "bầu trời"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "总会",
+          "pinyin": "zǒng huì",
+          "hanviet": "Tổng Hội"
+        },
+        {
+          "text": "飞翔",
+          "pinyin": "fēixiáng",
+          "hanviet": "Phi Tường",
+          "hsk": 7,
+          "word_id": "hsk7_1131",
+          "meaning_vi": "bay lượn"
+        },
+        {
+          "text": "着",
+          "pinyin": "zhe",
+          "hanviet": "Trước",
+          "hsk": 2,
+          "word_id": "hsk2_490",
+          "meaning_vi": "đang (trợ từ)"
+        },
+        {
+          "text": "各种",
+          "pinyin": "gèzhǒng",
+          "hanviet": "Các Chủng",
+          "hsk": 4,
+          "word_id": "hsk4_248",
+          "meaning_vi": "các loại, đủ loại"
+        },
+        {
+          "text": "五彩斑斓",
+          "pinyin": "wǔ cǎi bān lán",
+          "hanviet": "Ngũ Thái Ban Lan"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "风筝",
+          "pinyin": "fēngzheng",
+          "hanviet": "Phong Tranh",
+          "hsk": 7,
+          "word_id": "hsk7_1213",
+          "meaning_vi": "diều"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "美国国家航空航天博物馆的大厅里写着一句话：“人类最早的飞行器是中国的风筝和火箭”。",
+      "pinyin": "Měiguó Guójiā Hángkōng Hángtiān Bówùguǎn de dàtīng lǐ xiězhe yí jù huà: “Rénlèi zuìzǎo de fēixíngqì shì Zhōngguó de fēngzheng hé huǒjiàn”.",
+      "vi": "Trong đại sảnh của Bảo tàng Hàng không Không gian Quốc gia Mỹ có khắc câu: 'Thiết bị bay sớm nhất của loài người chính là cánh diều và tên lửa của Trung Quốc'.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "美国",
+          "pinyin": "měi guó",
+          "hanviet": "Mỹ Quốc"
+        },
+        {
+          "text": "国家",
+          "pinyin": "guójiā",
+          "hanviet": "Quốc Gia",
+          "hsk": 3,
+          "word_id": "hsk3_749",
+          "meaning_vi": "quốc gia"
+        },
+        {
+          "text": "航空航天",
+          "pinyin": "háng kōng háng tiān",
+          "hanviet": "Hàng Không Hàng Thiên"
+        },
+        {
+          "text": "博物馆",
+          "pinyin": "bówùguǎn",
+          "hanviet": "Bác Vật Quán",
+          "hsk": 5,
+          "word_id": "hsk5_72",
+          "meaning_vi": "viện bảo tàng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "大厅",
+          "pinyin": "dàtīng",
+          "hanviet": "Đại Sảnh",
+          "hsk": 4,
+          "word_id": "hsk4_128",
+          "meaning_vi": "sảnh, đại sảnh"
+        },
+        {
+          "text": "里",
+          "pinyin": "lǐ",
+          "hanviet": "Lý",
+          "hsk": 1,
+          "word_id": "hsk1_536",
+          "meaning_vi": "bên trong"
+        },
+        {
+          "text": "写",
+          "pinyin": "xiě",
+          "hanviet": "Tả",
+          "hsk": 1,
+          "word_id": "hsk1_342",
+          "meaning_vi": "viết"
+        },
+        {
+          "text": "着",
+          "pinyin": "zhe",
+          "hanviet": "Trước",
+          "hsk": 2,
+          "word_id": "hsk2_490",
+          "meaning_vi": "đang (trợ từ)"
+        },
+        {
+          "text": "一句",
+          "pinyin": "yī jù",
+          "hanviet": "Nhất Câu"
+        },
+        {
+          "text": "话",
+          "pinyin": "huà",
+          "hanviet": "Thoại"
+        },
+        {
+          "text": "："
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "人类",
+          "pinyin": "rénlèi",
+          "hanviet": "Nhân Loại",
+          "hsk": 5,
+          "word_id": "hsk5_921",
+          "meaning_vi": "loài người, nhân loại"
+        },
+        {
+          "text": "最早",
+          "pinyin": "zuì zǎo",
+          "hanviet": "Tối Tảo"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "飞行器",
+          "pinyin": "fēi xíng qì",
+          "hanviet": "Phi Hành Khí"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "风筝",
+          "pinyin": "fēngzheng",
+          "hanviet": "Phong Tranh",
+          "hsk": 7,
+          "word_id": "hsk7_1213",
+          "meaning_vi": "diều"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "火箭",
+          "pinyin": "huǒjiàn",
+          "hanviet": "Hỏa Tiễn",
+          "hsk": 7,
+          "word_id": "hsk7_1821",
+          "meaning_vi": "tên lửa"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "风筝最早被称为“木鸢”，相传是由春秋时期的思想家墨子历时三年用木头削制而成的。",
+      "pinyin": "Fēngzheng zuìzǎo bèi chēng wéi “mùyuān”, xiāngchuán shì yóu Chūnqiū shíqī de sīxiǎngjiā Mòzǐ lìshí sān nián yòng mùtou xiāozhì ér chéng de.",
+      "vi": "Cánh diều thuở ban sơ gọi là 'mộc diên' (diều gỗ), tương truyền do nhà tư tưởng Mặc Tử thời Xuân Thu đẽo gọt ròng rã suốt 3 năm mới thành.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "风筝",
+          "pinyin": "fēngzheng",
+          "hanviet": "Phong Tranh",
+          "hsk": 7,
+          "word_id": "hsk7_1213",
+          "meaning_vi": "diều"
+        },
+        {
+          "text": "最早",
+          "pinyin": "zuì zǎo",
+          "hanviet": "Tối Tảo"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "称为",
+          "pinyin": "chēngwéi",
+          "hanviet": "Xứng Vi",
+          "hsk": 5,
+          "word_id": "hsk5_134",
+          "meaning_vi": "gọi là"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "木鸢",
+          "pinyin": "mù yuān",
+          "hanviet": "Mộc Diên"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "相传",
+          "pinyin": "xiāngchuán",
+          "hanviet": "Tương Truyền",
+          "hsk": 6,
+          "word_id": "hsk6_1436",
+          "meaning_vi": "tương truyền, theo truyền thuyết"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "由",
+          "pinyin": "yóu",
+          "hanviet": "Do",
+          "hsk": 4,
+          "word_id": "hsk4_884",
+          "meaning_vi": "do, từ"
+        },
+        {
+          "text": "春秋时期",
+          "pinyin": "chūn qiū shí qī",
+          "hanviet": "Xuân Thu Thời Kỳ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "思想家",
+          "pinyin": "sī xiǎng jiā",
+          "hanviet": "Tư Tưởng Gia"
+        },
+        {
+          "text": "墨子",
+          "pinyin": "mò zi",
+          "hanviet": "Mặc Tử"
+        },
+        {
+          "text": "历时",
+          "pinyin": "lìshí",
+          "hanviet": "Lịch Thời",
+          "hsk": 7,
+          "word_id": "hsk7_2556",
+          "meaning_vi": "kéo dài, mất thời gian"
+        },
+        {
+          "text": "三年",
+          "pinyin": "sān nián",
+          "hanviet": "Tam Niên"
+        },
+        {
+          "text": "用",
+          "pinyin": "yòng",
+          "hanviet": "Dụng",
+          "hsk": 3,
+          "word_id": "hsk3_1020",
+          "meaning_vi": "dùng"
+        },
+        {
+          "text": "木头",
+          "pinyin": "mùtou",
+          "hanviet": "Mộc Đầu",
+          "hsk": 5,
+          "word_id": "hsk5_787",
+          "meaning_vi": "gỗ"
+        },
+        {
+          "text": "削制",
+          "pinyin": "xuē zhì",
+          "hanviet": "Tước Chế"
+        },
+        {
+          "text": "而",
+          "pinyin": "ér",
+          "hanviet": "Nhi",
+          "hsk": 4,
+          "word_id": "hsk4_183",
+          "meaning_vi": "mà, và"
+        },
+        {
+          "text": "成",
+          "pinyin": "chéng",
+          "hanviet": "Thành",
+          "hsk": 6,
+          "word_id": "hsk6_156",
+          "meaning_vi": "vào (số lượng)"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "东汉时期蔡伦改进了造纸术，人们开始用轻便的纸张制作风筝，因此风筝又被称为“纸鸢”。",
+      "pinyin": "Dōnghàn shíqī Cài Lún gǎijìn le zàozhǐshù, rénmen kāishǐ yòng qīngbiàn de zhǐzhāng zhìzuò fēngzheng, yīncǐ fēngzheng yòu bèi chēng wéi “zhǐyuān”.",
+      "vi": "Thời Đông Hán, Thái Luân cải tiến thuật làm giấy, người ta bắt đầu dùng những tờ giấy nhẹ nhàng để làm diều, từ đó cánh diều còn được gọi là 'chỉ diên' (diều giấy).",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "东汉时期",
+          "pinyin": "dōng hàn shí qī",
+          "hanviet": "Đông Hán Thời Kỳ"
+        },
+        {
+          "text": "蔡伦",
+          "pinyin": "cài lún",
+          "hanviet": "Thái Luân"
+        },
+        {
+          "text": "改进",
+          "pinyin": "gǎijìn",
+          "hanviet": "Cải Tiến",
+          "hsk": 5,
+          "word_id": "hsk5_377",
+          "meaning_vi": "cải tiến"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "造纸术",
+          "pinyin": "zào zhǐ shù",
+          "hanviet": "Tạo Chỉ Thuật"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "人们",
+          "pinyin": "rén men",
+          "hanviet": "Nhân Môn"
+        },
+        {
+          "text": "开始",
+          "pinyin": "kāishǐ",
+          "hanviet": "Khai Thuỷ",
+          "hsk": 2,
+          "word_id": "hsk2_378",
+          "meaning_vi": "bắt đầu"
+        },
+        {
+          "text": "用",
+          "pinyin": "yòng",
+          "hanviet": "Dụng",
+          "hsk": 3,
+          "word_id": "hsk3_1020",
+          "meaning_vi": "dùng"
+        },
+        {
+          "text": "轻便",
+          "pinyin": "qīng biàn",
+          "hanviet": "Khinh Tiện"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "纸张",
+          "pinyin": "zhǐ zhāng",
+          "hanviet": "Chỉ Trương"
+        },
+        {
+          "text": "制作",
+          "pinyin": "zhìzuò",
+          "hanviet": "Chế Tác",
+          "hsk": 5,
+          "word_id": "hsk5_1519",
+          "meaning_vi": "chế tác, làm ra"
+        },
+        {
+          "text": "风筝",
+          "pinyin": "fēngzheng",
+          "hanviet": "Phong Tranh",
+          "hsk": 7,
+          "word_id": "hsk7_1213",
+          "meaning_vi": "diều"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "因此",
+          "pinyin": "yīncǐ",
+          "hanviet": "Nhân Thử",
+          "hsk": 4,
+          "word_id": "hsk4_871",
+          "meaning_vi": "vì vậy, do đó"
+        },
+        {
+          "text": "风筝",
+          "pinyin": "fēngzheng",
+          "hanviet": "Phong Tranh",
+          "hsk": 7,
+          "word_id": "hsk7_1213",
+          "meaning_vi": "diều"
+        },
+        {
+          "text": "又",
+          "pinyin": "yòu",
+          "hanviet": "Hựu",
+          "hsk": 3,
+          "word_id": "hsk3_1028",
+          "meaning_vi": "lại (lần nữa)"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "称为",
+          "pinyin": "chēngwéi",
+          "hanviet": "Xứng Vi",
+          "hsk": 5,
+          "word_id": "hsk5_134",
+          "meaning_vi": "gọi là"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "纸鸢",
+          "pinyin": "zhǐ yuān",
+          "hanviet": "Chỉ Diên"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "在古代战争中，风筝曾多次被用作测量距离、传递秘密情报和联络军情的军事工具。",
+      "pinyin": "Zài gǔdài zhànzhēng zhōng, fēngzheng céng duō cì bèi yòngzuò cèliáng jùlí, chuándì mìmì qíngbào hé liánluò jūnqíng de jūnshì gōngjù.",
+      "vi": "Trong các trận chiến cổ xưa, diều từng nhiều lần được trưng dụng làm công cụ quân sự để đo đạc cự ly, chuyển phát tình báo mật và liên lạc trận mạc.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "战争",
+          "pinyin": "zhànzhēng",
+          "hanviet": "Chiến Tranh",
+          "hsk": 6,
+          "word_id": "hsk6_1664",
+          "meaning_vi": "chiến tranh"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "风筝",
+          "pinyin": "fēngzheng",
+          "hanviet": "Phong Tranh",
+          "hsk": 7,
+          "word_id": "hsk7_1213",
+          "meaning_vi": "diều"
+        },
+        {
+          "text": "曾多次",
+          "pinyin": "céng duō cì",
+          "hanviet": "Tằng Đa Thứ"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "用作",
+          "pinyin": "yòng zuò",
+          "hanviet": "Dụng Tác"
+        },
+        {
+          "text": "测量",
+          "pinyin": "cèliáng",
+          "hanviet": "Trắc Lượng",
+          "hsk": 6,
+          "word_id": "hsk6_113",
+          "meaning_vi": "đo lường, khảo sát"
+        },
+        {
+          "text": "距离",
+          "pinyin": "jùlí",
+          "hanviet": "Cự Li/cự Ly",
+          "hsk": 4,
+          "word_id": "hsk4_417",
+          "meaning_vi": "khoảng cách"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "传递",
+          "pinyin": "chuándì",
+          "hanviet": "Truyền Đệ",
+          "hsk": 5,
+          "word_id": "hsk5_185",
+          "meaning_vi": "truyền, chuyển (tin tức, vật)"
+        },
+        {
+          "text": "秘密",
+          "pinyin": "mìmì",
+          "hanviet": "Bí Mật",
+          "hsk": 5,
+          "word_id": "hsk5_764",
+          "meaning_vi": "bí mật"
+        },
+        {
+          "text": "情报",
+          "pinyin": "qíngbào",
+          "hanviet": "Tình Báo",
+          "hsk": 7,
+          "word_id": "hsk7_3314",
+          "meaning_vi": "tin tình báo"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "联络",
+          "pinyin": "liánluò",
+          "hanviet": "Liên Lạc",
+          "hsk": 7,
+          "word_id": "hsk7_2568",
+          "meaning_vi": "liên lạc"
+        },
+        {
+          "text": "军情",
+          "pinyin": "jūn qíng",
+          "hanviet": "Quân Tình"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "军事",
+          "pinyin": "jūnshì",
+          "hanviet": "Quân Sự",
+          "hsk": 7,
+          "word_id": "hsk7_2288",
+          "meaning_vi": "quân sự"
+        },
+        {
+          "text": "工具",
+          "pinyin": "gōngjù",
+          "hanviet": "Công Cụ",
+          "hsk": 5,
+          "word_id": "hsk5_410",
+          "meaning_vi": "công cụ"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "zh": "到了唐宋时期，放风筝逐渐转变为百姓在清明时节踏青祈福的一项户外娱乐习俗。",
+      "pinyin": "Dào le Táng-Sòng shíqī, fàng fēngzheng zhújiàn zhuǎnbiàn wéi bǎixìng zài Qīngmíng shíjié tàqīng qífú de yí xiàng hùwài yúlè xísú.",
+      "vi": "Đến thời Đường Tống, thả diều dần chuyển hóa thành một phong tục giải trí ngoài trời khi du xuân cầu phúc trong tiết Thanh Minh của dân gian.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "到",
+          "pinyin": "dào",
+          "hanviet": "Đáo",
+          "hsk": 1,
+          "word_id": "hsk1_59",
+          "meaning_vi": "đến"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "唐宋",
+          "pinyin": "táng sòng",
+          "hanviet": "Đường Tống"
+        },
+        {
+          "text": "时期",
+          "pinyin": "shíqī",
+          "hanviet": "Thời Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_1016",
+          "meaning_vi": "thời kỳ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "放风筝",
+          "pinyin": "fàng fēng zhēng",
+          "hanviet": "Phóng Phong Tranh"
+        },
+        {
+          "text": "逐渐",
+          "pinyin": "zhújiàn",
+          "hanviet": "Trục Tiêm",
+          "hsk": 5,
+          "word_id": "hsk5_1538",
+          "meaning_vi": "dần dần"
+        },
+        {
+          "text": "转变",
+          "pinyin": "zhuǎnbiàn",
+          "hanviet": "Chuyển Biến",
+          "hsk": 5,
+          "word_id": "hsk5_1558",
+          "meaning_vi": "chuyển biến, thay đổi"
+        },
+        {
+          "text": "为",
+          "pinyin": "wèi",
+          "hanviet": "Vi",
+          "hsk": 3,
+          "word_id": "hsk3_954",
+          "meaning_vi": "vì, cho"
+        },
+        {
+          "text": "百姓",
+          "pinyin": "bǎi xìng",
+          "hanviet": "Bách Tính"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "清明",
+          "pinyin": "qīng míng",
+          "hanviet": "Thanh Minh"
+        },
+        {
+          "text": "时节",
+          "pinyin": "shíjié",
+          "hanviet": "Thời Tiết",
+          "hsk": 7,
+          "word_id": "hsk7_3671",
+          "meaning_vi": "mùa vụ; thời tiết"
+        },
+        {
+          "text": "踏青",
+          "pinyin": "tà qīng",
+          "hanviet": "Đạp Thanh"
+        },
+        {
+          "text": "祈福",
+          "pinyin": "qí fú",
+          "hanviet": "Kỳ Phúc"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "一项",
+          "pinyin": "yī xiàng",
+          "hanviet": "Nhất Hạng"
+        },
+        {
+          "text": "户外",
+          "pinyin": "hùwài",
+          "hanviet": "Hộ Ngoại",
+          "hsk": 5,
+          "word_id": "hsk5_493",
+          "meaning_vi": "ngoài trời"
+        },
+        {
+          "text": "娱乐",
+          "pinyin": "yúlè",
+          "hanviet": "Ngu Lạc",
+          "hsk": 5,
+          "word_id": "hsk5_1416",
+          "meaning_vi": "giải trí"
+        },
+        {
+          "text": "习俗",
+          "pinyin": "xísú",
+          "hanviet": "Tập Tục",
+          "hsk": 6,
+          "word_id": "hsk6_1404",
+          "meaning_vi": "tập tục"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "zh": "牵着长长的丝线奔跑在草地上，看着风筝直上云霄，寄托着人们对自由翱翔的美好向往。",
+      "pinyin": "Qiān zhe chángcháng de sīxiàn bēnpǎo zài cǎodì shàng, kàn zhe fēngzheng zhí shàng yúnxiāo, jìtuō zhe rénmen duì zìyóu áoxiáng de měihǎo xiàngwǎng.",
+      "vi": "Cầm sợi dây dài sải bước chạy trên thảm cỏ xanh, ngắm cánh diều vút tận mây xanh, gửi gắm ước vọng bay lượn tự do tuyệt đẹp của con người.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "牵着",
+          "pinyin": "qiān zhe",
+          "hanviet": "Khiên Trước"
+        },
+        {
+          "text": "长长的",
+          "pinyin": "cháng cháng de",
+          "hanviet": "Trường Trường Đích"
+        },
+        {
+          "text": "丝线",
+          "pinyin": "sī xiàn",
+          "hanviet": "Tơ Tuyến"
+        },
+        {
+          "text": "奔跑",
+          "pinyin": "bēnpǎo",
+          "hanviet": "Bôn Bào",
+          "hsk": 6,
+          "word_id": "hsk6_44",
+          "meaning_vi": "chạy nhanh, phi nước đại"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "草地",
+          "pinyin": "cǎodì",
+          "hanviet": "Thảo Địa",
+          "hsk": 3,
+          "word_id": "hsk3_319",
+          "meaning_vi": "bãi cỏ"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "看着",
+          "pinyin": "kàn zhe",
+          "hanviet": "Khán Trước"
+        },
+        {
+          "text": "风筝",
+          "pinyin": "fēngzheng",
+          "hanviet": "Phong Tranh",
+          "hsk": 7,
+          "word_id": "hsk7_1213",
+          "meaning_vi": "diều"
+        },
+        {
+          "text": "直上云霄",
+          "pinyin": "zhí shàng yún xiāo",
+          "hanviet": "Trực Thướng Vân Tiêu"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "寄托",
+          "pinyin": "jìtuō",
+          "hanviet": "Ký Thác",
+          "hsk": 7,
+          "word_id": "hsk7_1914",
+          "meaning_vi": "gửi gắm, ký thác"
+        },
+        {
+          "text": "着",
+          "pinyin": "zhe",
+          "hanviet": "Trước",
+          "hsk": 2,
+          "word_id": "hsk2_490",
+          "meaning_vi": "đang (trợ từ)"
+        },
+        {
+          "text": "人们",
+          "pinyin": "rén men",
+          "hanviet": "Nhân Môn"
+        },
+        {
+          "text": "对",
+          "pinyin": "duì",
+          "hanviet": "Đối",
+          "hsk": 1,
+          "word_id": "hsk1_79",
+          "meaning_vi": "đối với, hướng về (giới từ)"
+        },
+        {
+          "text": "自由",
+          "pinyin": "zìyóu",
+          "hanviet": "Tự Do",
+          "hsk": 5,
+          "word_id": "hsk5_1579",
+          "meaning_vi": "tự do"
+        },
+        {
+          "text": "翱翔",
+          "pinyin": "áo xiáng",
+          "hanviet": "Ngao Tường"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "美好",
+          "pinyin": "měihǎo",
+          "hanviet": "Mỹ Hảo",
+          "hsk": 4,
+          "word_id": "hsk4_501",
+          "meaning_vi": "tốt đẹp"
+        },
+        {
+          "text": "向往",
+          "pinyin": "xiàngwǎng",
+          "hanviet": "Hướng Vãng",
+          "hsk": 6,
+          "word_id": "hsk6_1444",
+          "meaning_vi": "khát khao, mong mỏi"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk7_1213",
+    "hsk5_345",
+    "hsk5_410",
+    "hsk5_1579"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Bảo tàng Hàng không Không gian Quốc gia Mỹ ghi nhận điều gì về cánh diều?",
+      "options_vi": [
+        "Diều và tên lửa của Trung Quốc là thiết bị bay sớm nhất của loài người",
+        "Diều chỉ là món đồ chơi trẻ em",
+        "Diều được phát minh ở châu Âu"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trong bài viết: “人类最早的飞行器是中国的风筝和火箭”."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Trước khi dùng giấy, chiếc diều đầu tiên (mộc diên) làm bằng vật liệu gì?",
+      "options_vi": [
+        "Làm bằng gỗ (木头)",
+        "Làm bằng da thú",
+        "Làm bằng lá cây"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trong bài viết: 相传是由春秋时期的思想家墨子历时三年用木头削制而成的."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Trong chiến tranh cổ đại, diều từng đóng vai trò gì?",
+      "options_vi": [
+        "Đo đạc cự ly và truyền phát tin tình báo mật",
+        "Dùng để tấn công kẻ thù từ trên cao",
+        "Dùng để chở binh lính bay qua tường thành"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trong bài viết: 风筝曾多次被用作测量距离、传递秘密情报和联络军情的军事工具."
+    }
+  ]
+}

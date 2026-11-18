@@ -1,0 +1,1814 @@
+{
+  "id": "wanwu_story_001",
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_page_start": 8,
+  "book_page_end": 18,
+  "page_display": "Trang 8 - 18",
+  "title": {
+    "zh": "水母：美丽的海上“霸主”",
+    "vi": "Con sứa: 'Bá chủ' xinh đẹp giữa đại dương"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🪼",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 8 - 18 · Khám phá loài sứa - 'đóa hoa trong nước' cổ hơn khủng long với cơ thể 99% là nước và loài sứa bờm sư tử khổng lồ.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "水母是海洋中最美丽的生物之一，它们在水中漂游时，就像一朵朵盛开的“水中之花”。",
+      "pinyin": "Shuǐmǔ shì hǎiyáng zhōng zuì měilì de shēngwù zhī yī, tāmen zài shuǐzhōng piāoyóu shí, jiù xiàng yì duǒduǒ shèngkāi de “shuǐzhōng zhī huā”.",
+      "vi": "Sứa là một trong những sinh vật xinh đẹp nhất của đại dương, khi trôi bơi trong nước, chúng tựa như những đóa 'hoa trong nước' đang nở rộ.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "水母",
+          "pinyin": "shuǐ mǔ",
+          "hanviet": "Thuỷ Mẫu"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "海洋",
+          "pinyin": "hǎiyáng",
+          "hanviet": "Hải Dương",
+          "hsk": 4,
+          "word_id": "hsk4_283",
+          "meaning_vi": "biển, đại dương"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "最",
+          "pinyin": "zuì",
+          "hanviet": "Tối",
+          "hsk": 2,
+          "word_id": "hsk2_498",
+          "meaning_vi": "nhất"
+        },
+        {
+          "text": "美丽",
+          "pinyin": "měilì",
+          "hanviet": "Mỹ Lệ",
+          "hsk": 4,
+          "word_id": "hsk4_503",
+          "meaning_vi": "xinh đẹp"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "生物",
+          "pinyin": "shēngwù",
+          "hanviet": "Sinh Vật",
+          "hsk": 5,
+          "word_id": "hsk5_995",
+          "meaning_vi": "sinh vật"
+        },
+        {
+          "text": "之一",
+          "pinyin": "zhī yī",
+          "hanviet": "Chi Nhất"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "它们",
+          "pinyin": "tāmen",
+          "hanviet": "Tha Môn",
+          "hsk": 1,
+          "word_id": "hsk1_571",
+          "meaning_vi": "chúng nó, chúng (chỉ đồ vật, động vật)"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "水中",
+          "pinyin": "shuǐ zhōng",
+          "hanviet": "Thuỷ Trung"
+        },
+        {
+          "text": "漂游",
+          "pinyin": "piāo yóu",
+          "hanviet": "Phiêu Du"
+        },
+        {
+          "text": "时",
+          "pinyin": "shí",
+          "hanviet": "Thời",
+          "hsk": 2,
+          "word_id": "hsk2_431",
+          "meaning_vi": "thời gian (danh từ, số lượng)"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "就",
+          "pinyin": "jiù",
+          "hanviet": "Tựu",
+          "hsk": 2,
+          "word_id": "hsk2_376",
+          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)"
+        },
+        {
+          "text": "像",
+          "pinyin": "xiàng",
+          "hanviet": "Tượng",
+          "hsk": 3,
+          "word_id": "hsk3_974",
+          "meaning_vi": "giống như"
+        },
+        {
+          "text": "一朵朵",
+          "pinyin": "yī duǒ duǒ",
+          "hanviet": "Nhất Đoá Đoá"
+        },
+        {
+          "text": "盛开",
+          "pinyin": "shèngkāi",
+          "hanviet": "Thịnh Khai",
+          "hsk": 7,
+          "word_id": "hsk7_3635",
+          "meaning_vi": "nở rộ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "水中",
+          "pinyin": "shuǐ zhōng",
+          "hanviet": "Thuỷ Trung"
+        },
+        {
+          "text": "之花",
+          "pinyin": "zhī huā",
+          "hanviet": "Chi Hoa"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "远远望去，水母像一顶顶圆伞，细长的触手向四周伸展，闪耀着淡绿或蓝紫色的光芒。",
+      "pinyin": "Yuǎnyuǎn wàngqù, shuǐmǔ xiàng yì dǐngdǐng yuánsǎn, xìcháng de chùshǒu xiàng sìzhōu shēnzhǎn, shǎnyàozhe dànlǜ huò lánzǐsè de guāngmáng.",
+      "vi": "Nhìn từ xa, sứa như những chiếc ô tròn, những xúc tu thon dài vươn ra bốn phía, lấp lánh ánh sáng xanh lục nhạt hoặc tím lam dịu dàng.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "远远望去",
+          "pinyin": "yuǎn yuǎn wàng qù",
+          "hanviet": "Viễn Viễn Vọng Khứ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "水母",
+          "pinyin": "shuǐ mǔ",
+          "hanviet": "Thuỷ Mẫu"
+        },
+        {
+          "text": "像",
+          "pinyin": "xiàng",
+          "hanviet": "Tượng",
+          "hsk": 3,
+          "word_id": "hsk3_974",
+          "meaning_vi": "giống như"
+        },
+        {
+          "text": "一顶",
+          "pinyin": "yī dǐng",
+          "hanviet": "Nhất Đỉnh"
+        },
+        {
+          "text": "顶圆伞",
+          "pinyin": "dǐng yuán sǎn",
+          "hanviet": "Đỉnh Viên Tản"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "细长",
+          "pinyin": "xì cháng",
+          "hanviet": "Tế Trường"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "触手",
+          "pinyin": "chù shǒu",
+          "hanviet": "Xúc Thủ"
+        },
+        {
+          "text": "向",
+          "pinyin": "xiàng",
+          "hanviet": "Hướng",
+          "hsk": 3,
+          "word_id": "hsk3_973",
+          "meaning_vi": "hướng về, về phía"
+        },
+        {
+          "text": "四周",
+          "pinyin": "sìzhōu",
+          "hanviet": "Tứ Chu",
+          "hsk": 5,
+          "word_id": "hsk5_1083",
+          "meaning_vi": "xung quanh, bốn bề"
+        },
+        {
+          "text": "伸展",
+          "pinyin": "shēn zhǎn",
+          "hanviet": "Thân Triển"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "闪耀着",
+          "pinyin": "shǎn yào zhe",
+          "hanviet": "Thiểm Diệu Trước"
+        },
+        {
+          "text": "淡绿",
+          "pinyin": "dàn lǜ",
+          "hanviet": "Đạm Lục"
+        },
+        {
+          "text": "或",
+          "pinyin": "huò",
+          "hanviet": "Hoặc",
+          "hsk": 3,
+          "word_id": "hsk3_774",
+          "meaning_vi": "hoặc"
+        },
+        {
+          "text": "蓝紫色",
+          "pinyin": "lán zǐ sè",
+          "hanviet": "Lam Tử Sắc"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "光芒",
+          "pinyin": "guāngmáng",
+          "hanviet": "Quang Mang",
+          "hsk": 7,
+          "word_id": "hsk7_1509",
+          "meaning_vi": "tia sáng rực rỡ, ánh sáng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "很多生物学家认为，水母是动物界中名副其实的“活化石”。",
+      "pinyin": "Hěn duō shēngwù xuéjiā rènwéi, shuǐmǔ shì dòngwùjiè zhōng míng fù qí shí de “huó huàshí”.",
+      "vi": "Nhiều nhà sinh vật học cho rằng, sứa là một 'hóa thạch sống' danh bất hư truyền trong thế giới động vật.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "很多",
+          "pinyin": "hěn duō",
+          "hanviet": "Ngận Đa"
+        },
+        {
+          "text": "生物学家",
+          "pinyin": "shēng wù xué jiā",
+          "hanviet": "Sinh Vật Học Gia"
+        },
+        {
+          "text": "认为",
+          "pinyin": "rènwéi",
+          "hanviet": "Nhận Vi",
+          "hsk": 3,
+          "word_id": "hsk3_898",
+          "meaning_vi": "cho rằng, nghĩ rằng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "水母",
+          "pinyin": "shuǐ mǔ",
+          "hanviet": "Thuỷ Mẫu"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "动物界",
+          "pinyin": "dòng wù jiè",
+          "hanviet": "Động Vật Giới"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "名副其实",
+          "pinyin": "míngfùqíshí",
+          "hanviet": "Danh Phó Kỳ Thực",
+          "hsk": 7,
+          "word_id": "hsk7_2840",
+          "meaning_vi": "danh xứng với thực, đúng như tên gọi"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "活化石",
+          "pinyin": "huó huà shí",
+          "hanviet": "Hoạt Hoa Thạch"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "水母在地球上出现的时间比恐龙还要早得多，距今已有超过六亿年的生存历史。",
+      "pinyin": "Shuǐmǔ zài dìqiú shàng chūxiàn de shíjiān bǐ kǒnglóng hái yào zǎo de duō, jùjīn yǐ yǒu chāoguò liù yì nián de shēngcún lìshǐ.",
+      "vi": "Thời điểm sứa xuất hiện trên Trái Đất sớm hơn loài khủng long rất nhiều, cách ngày nay hơn 600 triệu năm lịch sử sinh tồn.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "水母",
+          "pinyin": "shuǐ mǔ",
+          "hanviet": "Thuỷ Mẫu"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "地球",
+          "pinyin": "dìqiú",
+          "hanviet": "Địa Cầu",
+          "hsk": 4,
+          "word_id": "hsk4_155",
+          "meaning_vi": "địa cầu, Trái Đất"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "出现",
+          "pinyin": "chūxiàn",
+          "hanviet": "Xuất Hiện",
+          "hsk": 4,
+          "word_id": "hsk4_90",
+          "meaning_vi": "xuất hiện"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "时间",
+          "pinyin": "shíjiān",
+          "hanviet": "Thời Gian",
+          "hsk": 1,
+          "word_id": "hsk1_263",
+          "meaning_vi": "thời gian"
+        },
+        {
+          "text": "比",
+          "pinyin": "bǐ",
+          "hanviet": "Tỷ",
+          "hsk": 2,
+          "word_id": "hsk2_309",
+          "meaning_vi": "so với"
+        },
+        {
+          "text": "恐龙",
+          "pinyin": "kǒnglóng",
+          "hanviet": "Khủng Long",
+          "hsk": 7,
+          "word_id": "hsk7_2381",
+          "meaning_vi": "khủng long"
+        },
+        {
+          "text": "还要",
+          "pinyin": "hái yào",
+          "hanviet": "Hoàn Yêu"
+        },
+        {
+          "text": "早得",
+          "pinyin": "zǎo dé",
+          "hanviet": "Tảo Đắc"
+        },
+        {
+          "text": "多",
+          "pinyin": "duō",
+          "hanviet": "Đa",
+          "hsk": 1,
+          "word_id": "hsk1_80",
+          "meaning_vi": "nhiều"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "距今已有",
+          "pinyin": "jù jīn yǐ yǒu",
+          "hanviet": "Cự Kim Dĩ Hữu"
+        },
+        {
+          "text": "超过",
+          "pinyin": "chāoguò",
+          "hanviet": "Siêu Quá",
+          "hsk": 4,
+          "word_id": "hsk4_74",
+          "meaning_vi": "vượt qua"
+        },
+        {
+          "text": "六",
+          "pinyin": "liù",
+          "hanviet": "Lục",
+          "hsk": 1,
+          "word_id": "hsk1_183",
+          "meaning_vi": "sáu"
+        },
+        {
+          "text": "亿年",
+          "pinyin": "yì nián",
+          "hanviet": "Ức Niên"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "生存",
+          "pinyin": "shēngcún",
+          "hanviet": "Sinh Tồn",
+          "hsk": 5,
+          "word_id": "hsk5_991",
+          "meaning_vi": "sinh tồn"
+        },
+        {
+          "text": "历史",
+          "pinyin": "lìshǐ",
+          "hanviet": "Lịch Sử",
+          "hsk": 3,
+          "word_id": "hsk3_831",
+          "meaning_vi": "lịch sử"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "水母的身体非常奇特，其中大约百分之九十九都是水分，呈现半透明的状态。",
+      "pinyin": "Shuǐmǔ de shēntǐ fēicháng qítè, qízhōng dàyuē bǎifēnzhī jiǔshíjiǔ dōu shì shuǐfèn, chéngxiàn bàn tòumíng de zhuàngtài.",
+      "vi": "Cơ thể loài sứa vô cùng kỳ lạ, trong đó khoảng 99% đều là nước, biểu hiện trạng thái bán trong suốt.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "水母",
+          "pinyin": "shuǐ mǔ",
+          "hanviet": "Thuỷ Mẫu"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "身体",
+          "pinyin": "shēntǐ",
+          "hanviet": "Thân Thể",
+          "hsk": 2,
+          "word_id": "hsk2_429",
+          "meaning_vi": "cơ thể, sức khỏe"
+        },
+        {
+          "text": "非常",
+          "pinyin": "fēicháng",
+          "hanviet": "Phi Thường",
+          "hsk": 1,
+          "word_id": "hsk1_515",
+          "meaning_vi": "rất, vô cùng"
+        },
+        {
+          "text": "奇特",
+          "pinyin": "qítè",
+          "hanviet": "Cơ Đặc",
+          "hsk": 7,
+          "word_id": "hsk7_3153",
+          "meaning_vi": "đặc biệt"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "其中",
+          "pinyin": "qízhōng",
+          "hanviet": "Kỳ Trung",
+          "hsk": 4,
+          "word_id": "hsk4_568",
+          "meaning_vi": "trong đó"
+        },
+        {
+          "text": "大约",
+          "pinyin": "dàyuē",
+          "hanviet": "Đại Yêu",
+          "hsk": 4,
+          "word_id": "hsk4_129",
+          "meaning_vi": "khoảng, ước chừng"
+        },
+        {
+          "text": "百分之九十九",
+          "pinyin": "bǎi fēn zhī jiǔ shí jiǔ",
+          "hanviet": "Bách Phân Chi Cửu Thập Cửu"
+        },
+        {
+          "text": "都",
+          "pinyin": "dōu",
+          "hanviet": "Đô",
+          "hsk": 1,
+          "word_id": "hsk1_76",
+          "meaning_vi": "đều"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "水分",
+          "pinyin": "shuǐfèn",
+          "hanviet": "Thuỷ Phân",
+          "hsk": 5,
+          "word_id": "hsk5_1071",
+          "meaning_vi": "nước, độ ẩm"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "呈现",
+          "pinyin": "chéngxiàn",
+          "hanviet": "Trình Hiện",
+          "hsk": 6,
+          "word_id": "hsk6_164",
+          "meaning_vi": "hiện ra, biểu hiện"
+        },
+        {
+          "text": "半透明",
+          "pinyin": "bàn tòu míng",
+          "hanviet": "Bán Thấu Minh"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "状态",
+          "pinyin": "zhuàngtài",
+          "hanviet": "Trạng Thái",
+          "hsk": 5,
+          "word_id": "hsk5_1564",
+          "meaning_vi": "trạng thái"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "zh": "虽然水母在海中漂游的速度很快，但它们其实并不擅长主动游泳，通常要借助海浪和水流来移动。",
+      "pinyin": "Suīrán shuǐmǔ zài hǎizhōng piāoyóu de sùdù hěn kuài, dàn tāmen qíshí bìng bù shàncháng zhǔdòng yóuyǒng, tōngcháng yào jièzhù hǎilàng hé shuǐliú lái yídòng.",
+      "vi": "Tuy tốc độ trôi nổi của sứa rất nhanh, nhưng chúng thực chất không giỏi tự bơi, thường phải nhờ vào sóng biển và dòng nước để di chuyển.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "虽然",
+          "pinyin": "suīrán",
+          "hanviet": "Tuy Nhiên",
+          "hsk": 2,
+          "word_id": "hsk2_438",
+          "meaning_vi": "mặc dù"
+        },
+        {
+          "text": "水母",
+          "pinyin": "shuǐ mǔ",
+          "hanviet": "Thuỷ Mẫu"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "海中",
+          "pinyin": "hǎi zhōng",
+          "hanviet": "Hải Trung"
+        },
+        {
+          "text": "漂游",
+          "pinyin": "piāo yóu",
+          "hanviet": "Phiêu Du"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "速度",
+          "pinyin": "sùdù",
+          "hanviet": "Tốc Độ",
+          "hsk": 4,
+          "word_id": "hsk4_704",
+          "meaning_vi": "tốc độ"
+        },
+        {
+          "text": "很快",
+          "pinyin": "hěn kuài",
+          "hanviet": "Ngận Khoái"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "但",
+          "pinyin": "dàn",
+          "hanviet": "Đãn",
+          "hsk": 2,
+          "word_id": "hsk2_330",
+          "meaning_vi": "nhưng, nhưng mà"
+        },
+        {
+          "text": "它们",
+          "pinyin": "tāmen",
+          "hanviet": "Tha Môn",
+          "hsk": 1,
+          "word_id": "hsk1_571",
+          "meaning_vi": "chúng nó, chúng (chỉ đồ vật, động vật)"
+        },
+        {
+          "text": "其实",
+          "pinyin": "qíshí",
+          "hanviet": "Kỳ Thật",
+          "hsk": 3,
+          "word_id": "hsk3_881",
+          "meaning_vi": "thực ra"
+        },
+        {
+          "text": "并",
+          "pinyin": "bìng",
+          "hanviet": "Tinh",
+          "hsk": 4,
+          "word_id": "hsk4_39",
+          "meaning_vi": "và, đồng thời; hoàn toàn (không)"
+        },
+        {
+          "text": "不",
+          "pinyin": "bù",
+          "hanviet": "Bất",
+          "hsk": 1,
+          "word_id": "hsk1_25",
+          "meaning_vi": "không"
+        },
+        {
+          "text": "擅长",
+          "pinyin": "shàncháng",
+          "hanviet": "Thiện Trường",
+          "hsk": 5,
+          "word_id": "hsk5_952",
+          "meaning_vi": "giỏi về, sở trường"
+        },
+        {
+          "text": "主动",
+          "pinyin": "zhǔdòng",
+          "hanviet": "Chủ Động",
+          "hsk": 5,
+          "word_id": "hsk5_1542",
+          "meaning_vi": "chủ động"
+        },
+        {
+          "text": "游泳",
+          "pinyin": "yóuyǒng",
+          "hanviet": "Du Vịnh",
+          "hsk": 2,
+          "word_id": "hsk2_478",
+          "meaning_vi": "bơi lội"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "通常",
+          "pinyin": "tōngcháng",
+          "hanviet": "Thông Thường",
+          "hsk": 5,
+          "word_id": "hsk5_1139",
+          "meaning_vi": "thông thường"
+        },
+        {
+          "text": "要",
+          "pinyin": "yào",
+          "hanviet": "Yêu",
+          "hsk": 1,
+          "word_id": "hsk1_357",
+          "meaning_vi": "muốn, cần"
+        },
+        {
+          "text": "借助",
+          "pinyin": "jièzhù",
+          "hanviet": "Tá Trợ",
+          "hsk": 6,
+          "word_id": "hsk6_699",
+          "meaning_vi": "nhờ vào, dựa vào"
+        },
+        {
+          "text": "海浪",
+          "pinyin": "hǎi làng",
+          "hanviet": "Hải Lãng"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "水流",
+          "pinyin": "shuǐliú",
+          "hanviet": "Thuỷ Lưu",
+          "hsk": 6,
+          "word_id": "hsk6_1235",
+          "meaning_vi": "dòng nước, dòng chảy"
+        },
+        {
+          "text": "来",
+          "pinyin": "lái",
+          "hanviet": "Lai",
+          "hsk": 1,
+          "word_id": "hsk1_533",
+          "meaning_vi": "đến, tới"
+        },
+        {
+          "text": "移动",
+          "pinyin": "yídòng",
+          "hanviet": "Di Động",
+          "hsk": 5,
+          "word_id": "hsk5_1355",
+          "meaning_vi": "di động, di chuyển"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "zh": "目前全世界已知的水母大约有一千三百多种，形状各异。",
+      "pinyin": "Mùqián quán shìjiè yǐzhī de shuǐmǔ dàyuē yǒu yìqiān sānbǎi duō zhǒng, xíngzhuàng gè yì.",
+      "vi": "Hiện nay toàn thế giới đã biết khoảng hơn 1.300 loài sứa, muôn hình vạn trạng.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "目前",
+          "pinyin": "mùqián",
+          "hanviet": "Mục Tiền",
+          "hsk": 4,
+          "word_id": "hsk4_520",
+          "meaning_vi": "hiện tại, trước mắt"
+        },
+        {
+          "text": "全世界",
+          "pinyin": "quán shì jiè",
+          "hanviet": "Toàn Thế Giới"
+        },
+        {
+          "text": "已知",
+          "pinyin": "yǐ zhī",
+          "hanviet": "Dĩ Tri"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "水母",
+          "pinyin": "shuǐ mǔ",
+          "hanviet": "Thuỷ Mẫu"
+        },
+        {
+          "text": "大约",
+          "pinyin": "dàyuē",
+          "hanviet": "Đại Yêu",
+          "hsk": 4,
+          "word_id": "hsk4_129",
+          "meaning_vi": "khoảng, ước chừng"
+        },
+        {
+          "text": "有",
+          "pinyin": "yǒu",
+          "hanviet": "Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_380",
+          "meaning_vi": "có"
+        },
+        {
+          "text": "一千三百",
+          "pinyin": "yī qiān sān bǎi",
+          "hanviet": "Nhất Thiên Tam Bách"
+        },
+        {
+          "text": "多种",
+          "pinyin": "duō zhǒng",
+          "hanviet": "Đa Chủng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "形状",
+          "pinyin": "xíngzhuàng",
+          "hanviet": "Hình Trạng",
+          "hsk": 5,
+          "word_id": "hsk5_1296",
+          "meaning_vi": "hình dạng"
+        },
+        {
+          "text": "各异",
+          "pinyin": "gè yì",
+          "hanviet": "Các Dị"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "zh": "比如有的像和尚的帽子，被称为“僧帽水母”；有的像船上的白帆，被称为“帆水母”。",
+      "pinyin": "Bǐrú yǒu de xiàng héshang de màozi, bèi chēng wéi “sēngmào shuǐmǔ”; yǒu de xiàng chuán shàng de báifān, bèi chēng wéi “fān shuǐmǔ”.",
+      "vi": "Chẳng hạn có loài như mũ nhà sư nên gọi là 'sứa tăng mạo' (sứa mũ sư); có loài như cánh buồm trắng trên thuyền nên gọi là 'sứa buồm'.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "比如",
+          "pinyin": "bǐrú",
+          "hanviet": "Tỉ Như",
+          "hsk": 3,
+          "word_id": "hsk3_623",
+          "meaning_vi": "ví như, chẳng hạn"
+        },
+        {
+          "text": "有",
+          "pinyin": "yǒu",
+          "hanviet": "Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_380",
+          "meaning_vi": "có"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "像",
+          "pinyin": "xiàng",
+          "hanviet": "Tượng",
+          "hsk": 3,
+          "word_id": "hsk3_974",
+          "meaning_vi": "giống như"
+        },
+        {
+          "text": "和尚",
+          "pinyin": "héshang",
+          "hanviet": "Hòa Thượng",
+          "hsk": 7,
+          "word_id": "hsk7_1641",
+          "meaning_vi": "nhà sư, hòa thượng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "帽子",
+          "pinyin": "màozi",
+          "hanviet": "Mạo Tử",
+          "hsk": 4,
+          "word_id": "hsk4_499",
+          "meaning_vi": "cái mũ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "称为",
+          "pinyin": "chēngwéi",
+          "hanviet": "Xứng Vi",
+          "hsk": 5,
+          "word_id": "hsk5_134",
+          "meaning_vi": "gọi là"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "僧帽",
+          "pinyin": "sēng mào",
+          "hanviet": "Tăng Mạo"
+        },
+        {
+          "text": "水母",
+          "pinyin": "shuǐ mǔ",
+          "hanviet": "Thuỷ Mẫu"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "；"
+        },
+        {
+          "text": "有",
+          "pinyin": "yǒu",
+          "hanviet": "Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_380",
+          "meaning_vi": "có"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "像",
+          "pinyin": "xiàng",
+          "hanviet": "Tượng",
+          "hsk": 3,
+          "word_id": "hsk3_974",
+          "meaning_vi": "giống như"
+        },
+        {
+          "text": "船上",
+          "pinyin": "chuán shàng",
+          "hanviet": "Thuyền Thướng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "白帆",
+          "pinyin": "bái fān",
+          "hanviet": "Bạch Phàm"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "称为",
+          "pinyin": "chēngwéi",
+          "hanviet": "Xứng Vi",
+          "hsk": 5,
+          "word_id": "hsk5_134",
+          "meaning_vi": "gọi là"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "帆",
+          "pinyin": "fān",
+          "hanviet": "Phàm",
+          "hsk": 7,
+          "word_id": "hsk7_1060",
+          "meaning_vi": "cánh buồm, buồm"
+        },
+        {
+          "text": "水母",
+          "pinyin": "shuǐ mǔ",
+          "hanviet": "Thuỷ Mẫu"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "zh": "人们常常以为海洋中体型最庞大的是蓝鲸，其实有些巨型水母比蓝鲸还要长。",
+      "pinyin": "Rénmen chángcháng yǐwéi hǎiyáng zhōng tǐxíng zuì pángdà de shì lánjīng, qíshí yǒuxiē jùxíng shuǐmǔ bǐ lánjīng hái yào cháng.",
+      "vi": "Mọi người thường nghĩ sinh vật dài nhất đại dương là cá voi xanh, thực ra một số loài sứa khổng lồ còn dài hơn cả cá voi xanh.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "人们",
+          "pinyin": "rén men",
+          "hanviet": "Nhân Môn"
+        },
+        {
+          "text": "常常",
+          "pinyin": "chángcháng",
+          "hanviet": "Thường Thường",
+          "hsk": 3,
+          "word_id": "hsk3_655",
+          "meaning_vi": "thường thường, thường xuyên"
+        },
+        {
+          "text": "以为",
+          "pinyin": "yǐwéi",
+          "hanviet": "Dĩ Vi",
+          "hsk": 3,
+          "word_id": "hsk3_1009",
+          "meaning_vi": "cho rằng, nghĩ là"
+        },
+        {
+          "text": "海洋",
+          "pinyin": "hǎiyáng",
+          "hanviet": "Hải Dương",
+          "hsk": 4,
+          "word_id": "hsk4_283",
+          "meaning_vi": "biển, đại dương"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "体型",
+          "pinyin": "tǐ xíng",
+          "hanviet": "Thể Hình"
+        },
+        {
+          "text": "最",
+          "pinyin": "zuì",
+          "hanviet": "Tối",
+          "hsk": 2,
+          "word_id": "hsk2_498",
+          "meaning_vi": "nhất"
+        },
+        {
+          "text": "庞大",
+          "pinyin": "pángdà",
+          "hanviet": "Bàng Đại",
+          "hsk": 6,
+          "word_id": "hsk6_972",
+          "meaning_vi": "to lớn, khổng lồ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "蓝鲸",
+          "pinyin": "lán jīng",
+          "hanviet": "Lam Kình"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "其实",
+          "pinyin": "qíshí",
+          "hanviet": "Kỳ Thật",
+          "hsk": 3,
+          "word_id": "hsk3_881",
+          "meaning_vi": "thực ra"
+        },
+        {
+          "text": "有些",
+          "pinyin": "yǒuxiē",
+          "hanviet": "Hữu Ta",
+          "hsk": 1,
+          "word_id": "hsk1_599",
+          "meaning_vi": "một số (đại từ, trạng từ)"
+        },
+        {
+          "text": "巨型",
+          "pinyin": "jù xíng",
+          "hanviet": "Cự Hình"
+        },
+        {
+          "text": "水母",
+          "pinyin": "shuǐ mǔ",
+          "hanviet": "Thuỷ Mẫu"
+        },
+        {
+          "text": "比",
+          "pinyin": "bǐ",
+          "hanviet": "Tỷ",
+          "hsk": 2,
+          "word_id": "hsk2_309",
+          "meaning_vi": "so với"
+        },
+        {
+          "text": "蓝鲸",
+          "pinyin": "lán jīng",
+          "hanviet": "Lam Kình"
+        },
+        {
+          "text": "还要",
+          "pinyin": "hái yào",
+          "hanviet": "Hoàn Yêu"
+        },
+        {
+          "text": "长",
+          "pinyin": "cháng",
+          "hanviet": "Trường",
+          "hsk": 2,
+          "word_id": "hsk2_314",
+          "meaning_vi": "dài"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "zh": "一八七零年，在美国海岸发现的一只霞水母，触手长达三十六米，展开面积达五百多平方米。",
+      "pinyin": "Yī-bā-qī-líng nián, zài Měiguó hǎi'àn fāxiàn de yì zhī xiáshuǐmǔ, chùshǒu cháng dá sānshíliù mǐ, zhǎnkāi miànjī dá wǔbǎi duō píngfāngmǐ.",
+      "vi": "Năm 1870, tại bờ biển nước Mỹ, người ta phát hiện một con sứa bờm sư tử có xúc tu dài tới 36 mét, diện tích trải rộng hơn 500 mét vuông.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "一",
+          "pinyin": "yī",
+          "hanviet": "Nhất",
+          "hsk": 1,
+          "word_id": "hsk1_360",
+          "meaning_vi": "một"
+        },
+        {
+          "text": "八七",
+          "pinyin": "bā qī",
+          "hanviet": "Bát Thất"
+        },
+        {
+          "text": "零年",
+          "pinyin": "líng nián",
+          "hanviet": "Linh Niên"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "美国",
+          "pinyin": "měi guó",
+          "hanviet": "Mỹ Quốc"
+        },
+        {
+          "text": "海岸",
+          "pinyin": "hǎi’àn",
+          "hanviet": "Hải Ngạn",
+          "hsk": 6,
+          "word_id": "hsk6_518",
+          "meaning_vi": "bờ biển"
+        },
+        {
+          "text": "发现",
+          "pinyin": "fāxiàn",
+          "hanviet": "Phát Hiện",
+          "hsk": 3,
+          "word_id": "hsk3_712",
+          "meaning_vi": "phát hiện"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "一只",
+          "pinyin": "yī zhī",
+          "hanviet": "Nhất Chỉ"
+        },
+        {
+          "text": "霞",
+          "pinyin": "xiá",
+          "hanviet": "Hà",
+          "hsk": 6,
+          "word_id": "hsk6_2185",
+          "meaning_vi": "ráng (mây)"
+        },
+        {
+          "text": "水母",
+          "pinyin": "shuǐ mǔ",
+          "hanviet": "Thuỷ Mẫu"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "触手",
+          "pinyin": "chù shǒu",
+          "hanviet": "Xúc Thủ"
+        },
+        {
+          "text": "长",
+          "pinyin": "cháng",
+          "hanviet": "Trường",
+          "hsk": 2,
+          "word_id": "hsk2_314",
+          "meaning_vi": "dài"
+        },
+        {
+          "text": "达",
+          "pinyin": "dá",
+          "hanviet": "Đạt"
+        },
+        {
+          "text": "三十六",
+          "pinyin": "sān shí liù",
+          "hanviet": "Tam Thập Lục"
+        },
+        {
+          "text": "米",
+          "pinyin": "mǐ",
+          "hanviet": "Mễ",
+          "hsk": 3,
+          "word_id": "hsk3_851",
+          "meaning_vi": "mét; gạo"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "展开",
+          "pinyin": "zhǎnkāi",
+          "hanviet": "Triển Khai",
+          "hsk": 5,
+          "word_id": "hsk5_1464",
+          "meaning_vi": "triển khai, mở rộng"
+        },
+        {
+          "text": "面积",
+          "pinyin": "miànjī",
+          "hanviet": "Diện Tích",
+          "hsk": 5,
+          "word_id": "hsk5_768",
+          "meaning_vi": "diện tích"
+        },
+        {
+          "text": "达",
+          "pinyin": "dá",
+          "hanviet": "Đạt"
+        },
+        {
+          "text": "五百",
+          "pinyin": "wǔ bǎi",
+          "hanviet": "Ngũ Bách"
+        },
+        {
+          "text": "多平方米",
+          "pinyin": "duō píng fāng mǐ",
+          "hanviet": "Đa Bình Phương Mễ"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "zh": "不过，美丽的水母往往也隐藏着危险，某些箱水母的触手带有极强的毒素。",
+      "pinyin": "Búguò, měilì de shuǐmǔ wǎngwǎng yě yǐncáng zhe wēixiǎn, mǒuxiē xiāngshuǐmǔ de chùshǒu dàiyǒu jí qiáng de dúsù.",
+      "vi": "Tuy nhiên, sứa xinh đẹp thường cũng ẩn chứa hiểm nguy, xúc tu của loài sứa hộp mang nọc độc cực mạnh.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "不过",
+          "pinyin": "búguò",
+          "hanviet": "Bất Quá",
+          "hsk": 4,
+          "word_id": "hsk4_47",
+          "meaning_vi": "nhưng, tuy nhiên"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "美丽",
+          "pinyin": "měilì",
+          "hanviet": "Mỹ Lệ",
+          "hsk": 4,
+          "word_id": "hsk4_503",
+          "meaning_vi": "xinh đẹp"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "水母",
+          "pinyin": "shuǐ mǔ",
+          "hanviet": "Thuỷ Mẫu"
+        },
+        {
+          "text": "往往",
+          "pinyin": "wǎngwǎng",
+          "hanviet": "Vãng Vãng",
+          "hsk": 4,
+          "word_id": "hsk4_766",
+          "meaning_vi": "thường thường"
+        },
+        {
+          "text": "也",
+          "pinyin": "yě",
+          "hanviet": "Dã",
+          "hsk": 1,
+          "word_id": "hsk1_359",
+          "meaning_vi": "cũng"
+        },
+        {
+          "text": "隐藏",
+          "pinyin": "yǐncáng",
+          "hanviet": "Ẩn Tạng",
+          "hsk": 6,
+          "word_id": "hsk6_1579",
+          "meaning_vi": "ẩn giấu, giấu kín"
+        },
+        {
+          "text": "着",
+          "pinyin": "zhe",
+          "hanviet": "Trước",
+          "hsk": 2,
+          "word_id": "hsk2_490",
+          "meaning_vi": "đang (trợ từ)"
+        },
+        {
+          "text": "危险",
+          "pinyin": "wēixiǎn",
+          "hanviet": "Nguy Hiểm",
+          "hsk": 4,
+          "word_id": "hsk4_770",
+          "meaning_vi": "nguy hiểm"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "某些",
+          "pinyin": "mǒu xiē",
+          "hanviet": "Mỗ Ta"
+        },
+        {
+          "text": "箱",
+          "pinyin": "xiāng",
+          "hanviet": "Rương"
+        },
+        {
+          "text": "水母",
+          "pinyin": "shuǐ mǔ",
+          "hanviet": "Thuỷ Mẫu"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "触手",
+          "pinyin": "chù shǒu",
+          "hanviet": "Xúc Thủ"
+        },
+        {
+          "text": "带有",
+          "pinyin": "dài yǒu",
+          "hanviet": "Đới Hữu"
+        },
+        {
+          "text": "极强",
+          "pinyin": "jí qiáng",
+          "hanviet": "Cực Cường"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "毒素",
+          "pinyin": "dú sù",
+          "hanviet": "Độc Tố"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "zh": "这群古老而神奇的海洋精灵，经历了数亿年漫长时光的考验，依然在大海中自由漂游。",
+      "pinyin": "Zhè qún gǔlǎo ér shénqí de hǎiyáng jīnglíng, jīnglì le shù yì nián màncháng shíguāng de kǎoyàn, yīrán zài dàhǎi zhōng zìyóu piāoyóu.",
+      "vi": "Bầy tinh linh đại dương cổ xưa và kỳ diệu này, trải qua hàng trăm triệu năm thử thách của thời gian, vẫn đang tự do trôi bơi giữa biển lớn.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "这群",
+          "pinyin": "zhè qún",
+          "hanviet": "Giá Quần"
+        },
+        {
+          "text": "古老",
+          "pinyin": "gǔlǎo",
+          "hanviet": "Cổ Lão",
+          "hsk": 5,
+          "word_id": "hsk5_425",
+          "meaning_vi": "cổ xưa"
+        },
+        {
+          "text": "而",
+          "pinyin": "ér",
+          "hanviet": "Nhi",
+          "hsk": 4,
+          "word_id": "hsk4_183",
+          "meaning_vi": "mà, và"
+        },
+        {
+          "text": "神奇",
+          "pinyin": "shénqí",
+          "hanviet": "Thần Kì/thần Kỳ",
+          "hsk": 6,
+          "word_id": "hsk6_1167",
+          "meaning_vi": "thần kỳ, kỳ diệu"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "海洋",
+          "pinyin": "hǎiyáng",
+          "hanviet": "Hải Dương",
+          "hsk": 4,
+          "word_id": "hsk4_283",
+          "meaning_vi": "biển, đại dương"
+        },
+        {
+          "text": "精灵",
+          "pinyin": "jīng líng",
+          "hanviet": "Tinh Linh"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "经历",
+          "pinyin": "jīnglì",
+          "hanviet": "Kinh Lịch",
+          "hsk": 4,
+          "word_id": "hsk4_398",
+          "meaning_vi": "trải qua, kinh nghiệm trải qua"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "数亿",
+          "pinyin": "shù yì",
+          "hanviet": "Sổ Ức"
+        },
+        {
+          "text": "年",
+          "pinyin": "nián",
+          "hanviet": "Niên",
+          "hsk": 1,
+          "word_id": "hsk1_214",
+          "meaning_vi": "năm"
+        },
+        {
+          "text": "漫长",
+          "pinyin": "màncháng",
+          "hanviet": "Mạn Trường",
+          "hsk": 6,
+          "word_id": "hsk6_890",
+          "meaning_vi": "dài đằng đẵng, dài lâu"
+        },
+        {
+          "text": "时光",
+          "pinyin": "shíguāng",
+          "hanviet": "Thời Quang",
+          "hsk": 6,
+          "word_id": "hsk6_1184",
+          "meaning_vi": "thời gian, năm tháng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "考验",
+          "pinyin": "kǎoyàn",
+          "hanviet": "Khảo Nghiệm",
+          "hsk": 6,
+          "word_id": "hsk6_778",
+          "meaning_vi": "thử thách, khảo nghiệm"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "依然",
+          "pinyin": "yīrán",
+          "hanviet": "Y Nhiên",
+          "hsk": 5,
+          "word_id": "hsk5_1349",
+          "meaning_vi": "vẫn như cũ"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "大海",
+          "pinyin": "dà hǎi",
+          "hanviet": "Đại Hải"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "自由",
+          "pinyin": "zìyóu",
+          "hanviet": "Tự Do",
+          "hsk": 5,
+          "word_id": "hsk5_1579",
+          "meaning_vi": "tự do"
+        },
+        {
+          "text": "漂游",
+          "pinyin": "piāo yóu",
+          "hanviet": "Phiêu Du"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk4_283",
+    "hsk4_770",
+    "hsk5_991",
+    "hsk3_831"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Tại sao các nhà khoa học gọi loài sứa là 'hóa thạch sống'?",
+      "options_vi": [
+        "Vì chúng xuất hiện sớm hơn khủng long, cách nay hơn 600 triệu năm",
+        "Vì cơ thể chúng cứng như đá",
+        "Vì chúng sống ở vùng núi cao"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trong bài viết: 水母在地球上出现的时间比恐龙还要早得多，距今已有超过六亿年的生存历史."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Cơ thể loài sứa chứa bao nhiêu phần trăm là nước?",
+      "options_vi": [
+        "Khoảng 99%",
+        "Khoảng 50%",
+        "Khoảng 70%"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trong bài viết: 其中大约百分之九十九都是水分 (Trong đó khoảng 99% là nước)."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Con sứa bờm sư tử phát hiện năm 1870 ở Mỹ có xúc tu dài bao nhiêu mét?",
+      "options_vi": [
+        "Dài 36 mét",
+        "Dài 10 mét",
+        "Dài 5 mét"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trong bài viết: 触手长达三十六米 (Xúc tu dài tới 36 mét)."
+    }
+  ]
+}
