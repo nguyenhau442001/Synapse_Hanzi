@@ -1,4 +1,4 @@
-const APP_VERSION = '3.19.1';
+const APP_VERSION = '3.19.2';
 const CACHE_NAME = 'hsk-flashcards-v' + APP_VERSION;
 const APP_SHELL_URL = new URL('./index.html', self.registration.scope).href;
 const INDEX_SHELL_URL = new URL('./index.html', self.registration.scope).href;
@@ -20,7 +20,7 @@ const PRECACHE_ASSET_URLS = [
   './config/pwa-manifest.json',
 ].map(path => (path.startsWith('http') ? path : new URL(path, self.registration.scope).href));
 // Vocabulary/audio JSON lives in its own cache so app deploys don't force every level to re-download.
-const DATA_CACHE_NAME = 'hsk-data-v12';
+const DATA_CACHE_NAME = 'hsk-data-v13';
 const DATA_PATH = new URL('./database/', self.registration.scope).pathname;
 
 self.addEventListener('install', event => {
@@ -52,8 +52,8 @@ self.addEventListener('fetch', event => {
 
   if (url.origin !== self.location.origin) return;
 
-  // Version probe used by the update banner: always hit the network, never cache.
-  if (url.pathname.endsWith('/VERSION')) return;
+  // Version probe and reading manifest: always hit the network, never use stale cache.
+  if (url.pathname.endsWith('/VERSION') || url.pathname.endsWith('/manifest.json')) return;
 
   // Bypass Service Worker for Range requests and media streaming (audio/video).
   // Cache Storage API cannot cache 206 Partial Content (throws TypeError), and returning
