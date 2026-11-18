@@ -211,7 +211,10 @@ function getFilteredManifest() {
   const sort = sortOrder.value;
   const q = searchQuery.value.toLowerCase().trim();
   return manifest.filter((m) => {
-    if (lvl === 'read') {
+    if (lvl === 'wanwu') {
+      const isWanwu = m.series === 'wanwu' || (m.topic_vi && m.topic_vi.includes('Vạn vật'));
+      if (!isWanwu) return false;
+    } else if (lvl === 'read') {
       if (!isStoryRead(m.id)) return false;
     } else if (lvl !== 'all' && m.level.toLowerCase() !== lvl.toLowerCase()) {
       return false;
@@ -479,6 +482,9 @@ function StoryCard({ story }) {
         <div class="graded-card-header">
           <div class="graded-card-header-left">
             <span class={`graded-card-level-badge lvl-${lvl}`}>{story.level}</span>{' '}
+            {(story.series === 'wanwu' || (story.topic_vi && story.topic_vi.includes('Vạn vật'))) ? (
+              <span class="graded-book-badge" style="background: rgba(194,101,74,0.18); color: #c2654a; border: 1px solid rgba(194,101,74,0.35); padding: 1px 7px; border-radius: 6px; font-size: 0.74rem; font-weight: 700; display: inline-flex; align-items: center; gap: 4px;">📚 万物有意思</span>
+            ) : null}
             <span class="graded-card-topic" title={topicVi}>{topicVi}</span>
           </div>{' '}
           <div class="graded-card-header-right">
@@ -576,6 +582,25 @@ function Hub() {
         </div>
       </header>{' '}
 
+      {/* Featured Book Collection Banner */}
+      <div class="graded-book-banner" style="background: linear-gradient(135deg, rgba(194,101,74,0.12), rgba(212,143,56,0.12)); border: 1px solid rgba(194,101,74,0.35); border-radius: 12px; padding: 14px 18px; margin-bottom: 16px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <span style="font-size: 2rem;">📚</span>
+          <div>
+            <div style="font-weight: 700; color: var(--graded-text-primary); font-size: 1.02rem;">
+              Tuyển tập sách: 《万物有意思》 (Vạn vật thú vị)
+            </div>
+            <div style="font-size: 0.85rem; color: var(--graded-text-secondary); margin-top: 2px;">
+              Bách khoa tri thức văn hóa, lịch sử và đời sống chọn lọc (Đũa, Trà, Sủi cảo, Đậu phụ...).
+            </div>
+          </div>
+        </div>
+        <button type="button" class="graded-filter-pill" onClick={() => setFilter(levelFilter, 'wanwu')}
+          style="padding: 9px 18px; font-weight: 700; background: #c2654a; color: #fff; border: none; cursor: pointer; border-radius: 8px;">
+          {`Khám phá tủ sách (${manifest.filter((m) => m.series === 'wanwu' || (m.topic_vi && m.topic_vi.includes('Vạn vật'))).length} bài) →`}
+        </button>
+      </div>{' '}
+
       <div class="graded-search-toolbar" style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; align-items: center; justify-content: space-between;">
         <div style="flex: 1; min-width: 240px; position: relative;">
           <input type="search" id="gradedSearchInput" class="graded-search-input"
@@ -604,6 +629,11 @@ function Hub() {
       <nav class="graded-hub-filters" aria-label="Bộ lọc cấp độ HSK">
         <button type="button" class={`graded-filter-pill ${lvlFilter === 'all' ? 'active' : ''}`} onClick={() => setFilter(levelFilter, 'all')}>
           {`Tất cả (${manifest.length})`}
+        </button>{' '}
+        <button type="button" class={`graded-filter-pill ${lvlFilter === 'wanwu' ? 'active' : ''}`}
+          style={lvlFilter === 'wanwu' ? 'background: #c2654a; color: #fff; font-weight: 700;' : 'border-color: #c2654a; color: #c2654a; font-weight: 700;'}
+          onClick={() => setFilter(levelFilter, 'wanwu')}>
+          {`📚 Vạn vật thú vị (${manifest.filter((m) => m.series === 'wanwu' || (m.topic_vi && m.topic_vi.includes('Vạn vật'))).length})`}
         </button>{' '}
         <button type="button" class={`graded-filter-pill ${lvlFilter === 'read' ? 'active' : ''} ${readCount === 0 ? 'disabled' : ''}`} onClick={() => setFilter(levelFilter, 'read')} title="Xem bài đã đọc">
           {`✓ Đã đọc (${readCount})`}

@@ -1,0 +1,741 @@
+{
+  "id": "hsk4_story_053",
+  "level": "HSK4",
+  "series": "wanwu",
+  "title": {
+    "zh": "饺子：“娇耳”的千年流传",
+    "vi": "Sủi cảo: Thiên niên lưu truyền của món 'Kiều nhĩ'"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🥟",
+  "estimatedMinutes": 5,
+  "description_vi": "Hành trình nghìn năm của sủi cảo: từ bài thuốc chữa rét buốt tai của y thánh Trương Trọng Cảnh đến biểu tượng đoàn viên ngày Tết.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "在所有的中华传统美食中，饺子在北方人的心中有着不可替代的地位。",
+      "pinyin": "Zài suǒyǒu de Zhōnghuá chuántǒng měishí zhōng, jiǎozi zài běifāngrén de xīnzhōng yǒuzhe bùkě tìdài de dìwèi.",
+      "vi": "Trong tất cả các món ăn truyền thống Trung Hoa, sủi cảo giữ một vị thế không thể thay thế trong lòng người phương Bắc.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在"
+        },
+        {
+          "text": "所有",
+          "pinyin": "suǒyǒu",
+          "hanviet": "Sở Hữu",
+          "meaning_vi": "tất cả, toàn bộ",
+          "hsk": 4,
+          "word_id": "hsk4_713"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "meaning_vi": "của (trợ từ)",
+          "hsk": 1,
+          "word_id": "hsk1_60"
+        },
+        {
+          "text": "传统"
+        },
+        {
+          "text": "美食"
+        },
+        {
+          "text": "中"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "饺子",
+          "pinyin": "jiǎozi",
+          "hanviet": "Cảo Tử",
+          "meaning_vi": "bánh chẻo",
+          "hsk": 1,
+          "word_id": "hsk1_528"
+        },
+        {
+          "text": "在"
+        },
+        {
+          "text": "北方人"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "meaning_vi": "của (trợ từ)",
+          "hsk": 1,
+          "word_id": "hsk1_60"
+        },
+        {
+          "text": "心中"
+        },
+        {
+          "text": "有"
+        },
+        {
+          "text": "不可替代"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "meaning_vi": "của (trợ từ)",
+          "hsk": 1,
+          "word_id": "hsk1_60"
+        },
+        {
+          "text": "地位"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "每到除夕夜，全家人围坐在一起包饺子、吃团圆饭，是春节最温馨的时刻。",
+      "pinyin": "Měi dào chúxīyè, quánjiā rén wéizuò zài yìqǐ bāo jiǎozi, chī tuányuánfàn, shì Chūnjié zuì wēnxīn de shíkè.",
+      "vi": "Mỗi dịp đêm giao thừa, cả nhà quây quần bên nhau gói sủi cảo, ăn bữa cơm tất niên, là khoảnh khắc ấm áp nhất của ngày Tết.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "每到"
+        },
+        {
+          "text": "除夕"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "全家"
+        },
+        {
+          "text": "人",
+          "pinyin": "rén",
+          "hanviet": "Nhân",
+          "meaning_vi": "người",
+          "hsk": 1,
+          "word_id": "hsk1_243"
+        },
+        {
+          "text": "围坐"
+        },
+        {
+          "text": "在"
+        },
+        {
+          "text": "一起",
+          "pinyin": "yìqǐ",
+          "hanviet": "Nhất Khởi",
+          "meaning_vi": "cùng nhau",
+          "hsk": 2,
+          "word_id": "hsk2_473"
+        },
+        {
+          "text": "包"
+        },
+        {
+          "text": "饺子",
+          "pinyin": "jiǎozi",
+          "hanviet": "Cảo Tử",
+          "meaning_vi": "bánh chẻo",
+          "hsk": 1,
+          "word_id": "hsk1_528"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "吃",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "meaning_vi": "ăn",
+          "hsk": 1,
+          "word_id": "hsk1_39"
+        },
+        {
+          "text": "团圆饭"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "是"
+        },
+        {
+          "text": "春节"
+        },
+        {
+          "text": "最",
+          "pinyin": "zuì",
+          "hanviet": "Tối",
+          "meaning_vi": "nhất",
+          "hsk": 2,
+          "word_id": "hsk2_498"
+        },
+        {
+          "text": "温馨"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "meaning_vi": "của (trợ từ)",
+          "hsk": 1,
+          "word_id": "hsk1_60"
+        },
+        {
+          "text": "时候",
+          "pinyin": "shíhou",
+          "hanviet": "Thời Hậu",
+          "meaning_vi": "lúc, thời điểm",
+          "hsk": 1,
+          "word_id": "hsk1_262"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "很多人好奇，饺子的形状为什么长得像人的耳朵呢？",
+      "pinyin": "Hěn duō rén hàoqí, jiǎozi de xíngzhuàng wèishénme zhǎng de xiàng rén de ěrduo ne?",
+      "vi": "Rất nhiều người hiếu kỳ, tại sao hình dáng chiếc sủi cảo lại trông giống tai người như vậy?",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "很多"
+        },
+        {
+          "text": "人",
+          "pinyin": "rén",
+          "hanviet": "Nhân",
+          "meaning_vi": "người",
+          "hsk": 1,
+          "word_id": "hsk1_243"
+        },
+        {
+          "text": "好奇",
+          "pinyin": "hàoqí",
+          "hanviet": "Hiếu Kỳ",
+          "meaning_vi": "tò mò",
+          "hsk": 5,
+          "word_id": "hsk5_473"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "饺子",
+          "pinyin": "jiǎozi",
+          "hanviet": "Cảo Tử",
+          "meaning_vi": "bánh chẻo",
+          "hsk": 1,
+          "word_id": "hsk1_528"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "meaning_vi": "của (trợ từ)",
+          "hsk": 1,
+          "word_id": "hsk1_60"
+        },
+        {
+          "text": "形状"
+        },
+        {
+          "text": "为什么",
+          "pinyin": "wèi shénme",
+          "hanviet": "Vi Thập Ma",
+          "meaning_vi": "tại sao",
+          "hsk": 2,
+          "word_id": "hsk2_454"
+        },
+        {
+          "text": "长得"
+        },
+        {
+          "text": "像",
+          "pinyin": "xiàng",
+          "hanviet": "Tượng",
+          "meaning_vi": "giống như",
+          "hsk": 3,
+          "word_id": "hsk3_974"
+        },
+        {
+          "text": "人",
+          "pinyin": "rén",
+          "hanviet": "Nhân",
+          "meaning_vi": "người",
+          "hsk": 1,
+          "word_id": "hsk1_243"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "meaning_vi": "của (trợ từ)",
+          "hsk": 1,
+          "word_id": "hsk1_60"
+        },
+        {
+          "text": "耳朵",
+          "pinyin": "ěrduo",
+          "hanviet": "Nhĩ Đoá",
+          "meaning_vi": "tai",
+          "hsk": 3,
+          "word_id": "hsk3_708"
+        },
+        {
+          "text": "呢"
+        },
+        {
+          "text": "？"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "相传在东汉末年，名医张仲景看到百姓在寒冬里耳朵被冻烂，十分心痛。",
+      "pinyin": "Xiāngchuán zài Dōnghàn mònián, míngyī Zhāng Zhòngjǐng kàndào bǎixìng zài hándōng lǐ ěrduo bèi dònglàn, shífēn xīntòng.",
+      "vi": "Tương truyền vào cuối thời Đông Hán, danh y Trương Trọng Cảnh nhìn thấy dân chúng giữa mùa đông giá rét bị cóng rách cả vành tai, vô cùng xót xa.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "相传"
+        },
+        {
+          "text": "在"
+        },
+        {
+          "text": "东汉"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "名医"
+        },
+        {
+          "text": "张仲景"
+        },
+        {
+          "text": "看到"
+        },
+        {
+          "text": "百姓"
+        },
+        {
+          "text": "在"
+        },
+        {
+          "text": "冬天"
+        },
+        {
+          "text": "里"
+        },
+        {
+          "text": "耳朵",
+          "pinyin": "ěrduo",
+          "hanviet": "Nhĩ Đoá",
+          "meaning_vi": "tai",
+          "hsk": 3,
+          "word_id": "hsk3_708"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "meaning_vi": "bị (trợ từ bị động)",
+          "hsk": 3,
+          "word_id": "hsk3_619"
+        },
+        {
+          "text": "冻"
+        },
+        {
+          "text": "伤"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "十分",
+          "pinyin": "shífēn",
+          "hanviet": "Thập Phân",
+          "meaning_vi": "rất, mười phần",
+          "hsk": 4,
+          "word_id": "hsk4_657"
+        },
+        {
+          "text": "难受"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "于是他把羊肉和祛寒药物切碎，用面皮包成耳朵模样，煮成“祛寒娇耳汤”分给病人。",
+      "pinyin": "Yúshì tā bǎ yángròu hé qūhán yàowù qiēsuì, yòng miànpí bāochéng ěrduo múyàng, zhǔchéng “Qūhán Jiāo'ěr Tāng” fēn gěi bìngrén.",
+      "vi": "Thế là ông bèn băm nhỏ thịt cừu cùng dược liệu trừ hàn, dùng vỏ bột gói thành hình vành tai, nấu thành 'Canh Kiều nhĩ trừ hàn' phát cho người bệnh.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "于是",
+          "pinyin": "yúshì",
+          "hanviet": "Vu Thị",
+          "meaning_vi": "vì vậy, do đó",
+          "hsk": 4,
+          "word_id": "hsk4_896"
+        },
+        {
+          "text": "他"
+        },
+        {
+          "text": "把"
+        },
+        {
+          "text": "羊肉",
+          "pinyin": "yángròu",
+          "hanviet": "Dương Nhục",
+          "meaning_vi": "thịt dê",
+          "hsk": 2,
+          "word_id": "hsk2_124"
+        },
+        {
+          "text": "和"
+        },
+        {
+          "text": "药"
+        },
+        {
+          "text": "切碎"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "用"
+        },
+        {
+          "text": "面皮"
+        },
+        {
+          "text": "包成"
+        },
+        {
+          "text": "耳朵",
+          "pinyin": "ěrduo",
+          "hanviet": "Nhĩ Đoá",
+          "meaning_vi": "tai",
+          "hsk": 3,
+          "word_id": "hsk3_708"
+        },
+        {
+          "text": "样子"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "做成"
+        },
+        {
+          "text": "热汤"
+        },
+        {
+          "text": "分",
+          "pinyin": "fēn",
+          "hanviet": "Phân",
+          "meaning_vi": "phút; điểm; phân (đơn vị tiền)",
+          "hsk": 1,
+          "word_id": "hsk1_516"
+        },
+        {
+          "text": "给",
+          "pinyin": "gěi",
+          "hanviet": "Cấp",
+          "meaning_vi": "cho, tặng",
+          "hsk": 1,
+          "word_id": "hsk1_98"
+        },
+        {
+          "text": "病人",
+          "pinyin": "bìngrén",
+          "hanviet": "Bệnh Nhân",
+          "meaning_vi": "bệnh nhân, người bệnh",
+          "hsk": 3,
+          "word_id": "hsk3_636"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "zh": "人们吃了这种“娇耳”喝了热汤，浑身发暖，冻烂的耳朵很快就好了。",
+      "pinyin": "Rénmen chī le zhè zhǒng “jiāo'ěr” hē le rètāng, húnshēn fā nuǎn, dònglàn de ěrduo hěn kuài jiù hǎo le.",
+      "vi": "Người dân ăn món 'Kiều nhĩ' này và húp bát canh nóng, cả người ấm ran, vành tai bị buốt cóng rất nhanh lành lại.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "人们"
+        },
+        {
+          "text": "吃",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "meaning_vi": "ăn",
+          "hsk": 1,
+          "word_id": "hsk1_39"
+        },
+        {
+          "text": "了"
+        },
+        {
+          "text": "这种"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "娇耳"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "喝",
+          "pinyin": "hē",
+          "hanviet": "Húp",
+          "meaning_vi": "uống",
+          "hsk": 1,
+          "word_id": "hsk1_116"
+        },
+        {
+          "text": "了"
+        },
+        {
+          "text": "热汤"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "身体"
+        },
+        {
+          "text": "很"
+        },
+        {
+          "text": "暖和",
+          "pinyin": "nuǎnhuo",
+          "hanviet": "Noãn Hoà",
+          "meaning_vi": "ấm áp",
+          "hsk": 4,
+          "word_id": "hsk4_540"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "耳朵",
+          "pinyin": "ěrduo",
+          "hanviet": "Nhĩ Đoá",
+          "meaning_vi": "tai",
+          "hsk": 3,
+          "word_id": "hsk3_708"
+        },
+        {
+          "text": "很",
+          "pinyin": "hěn",
+          "hanviet": "Ngận",
+          "meaning_vi": "rất",
+          "hsk": 1,
+          "word_id": "hsk1_118"
+        },
+        {
+          "text": "快",
+          "pinyin": "kuài",
+          "hanviet": "Khoái",
+          "meaning_vi": "nhanh",
+          "hsk": 2,
+          "word_id": "hsk2_384"
+        },
+        {
+          "text": "就"
+        },
+        {
+          "text": "好",
+          "pinyin": "hǎo",
+          "hanviet": "Hảo",
+          "meaning_vi": "tốt, được",
+          "hsk": 1,
+          "word_id": "hsk1_114"
+        },
+        {
+          "text": "了"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "zh": "后来这种治病的美食代代相传，演变成了今天的饺子，象征着吉祥安康与团团圆圆。",
+      "pinyin": "Hòulái zhè zhǒng zhìbìng de měishí dàidài xiāngchuán, yǎnbiàn chéng le jīntiān de jiǎozi, xiàngzhēng zhe jíxiáng ānkāng yǔ tuántuán yuányuán.",
+      "vi": "Về sau món ăn trị bệnh này được truyền từ đời này sang đời khác, phát triển thành sủi cảo ngày nay, tượng trưng cho cát tường, bình an và sum vầy.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "后来",
+          "pinyin": "hòulái",
+          "hanviet": "Hậu Lai",
+          "meaning_vi": "sau đó",
+          "hsk": 3,
+          "word_id": "hsk3_761"
+        },
+        {
+          "text": "这种"
+        },
+        {
+          "text": "治病"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "meaning_vi": "của (trợ từ)",
+          "hsk": 1,
+          "word_id": "hsk1_60"
+        },
+        {
+          "text": "美食"
+        },
+        {
+          "text": "代代相传"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "变成",
+          "pinyin": "biànchéng",
+          "hanviet": "Biến Thành",
+          "meaning_vi": "trở thành, biến thành",
+          "hsk": 3,
+          "word_id": "hsk3_307"
+        },
+        {
+          "text": "了"
+        },
+        {
+          "text": "今天",
+          "pinyin": "jīntiān",
+          "hanviet": "Kim Thiên",
+          "meaning_vi": "hôm nay",
+          "hsk": 1,
+          "word_id": "hsk1_144"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "meaning_vi": "của (trợ từ)",
+          "hsk": 1,
+          "word_id": "hsk1_60"
+        },
+        {
+          "text": "饺子",
+          "pinyin": "jiǎozi",
+          "hanviet": "Cảo Tử",
+          "meaning_vi": "bánh chẻo",
+          "hsk": 1,
+          "word_id": "hsk1_528"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "象征"
+        },
+        {
+          "text": "着"
+        },
+        {
+          "text": "平安"
+        },
+        {
+          "text": "与"
+        },
+        {
+          "text": "团圆"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk1_528",
+    "hsk3_708",
+    "hsk2_124",
+    "hsk4_540"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Theo truyền thuyết, danh y nào đã phát minh ra món tiền thân của sủi cảo mang tên 'Kiều nhĩ'?",
+      "options_vi": [
+        "Trương Trọng Cảnh (张仲景)",
+        "Hoa Đà (华佗)",
+        "Lý Thời Trân (李时珍)"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trương Trọng Cảnh đã chế ra 'Canh Kiều nhĩ trừ hàn' để chữa rét buốt tai cho bá tánh."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Ban đầu Trương Trọng Cảnh làm món 'Kiều nhĩ' này nhằm mục đích gì?",
+      "options_vi": [
+        "Để chữa chứng cóng tai trong mùa đông lạnh giá",
+        "Để bán kiếm tiền",
+        "Để dâng lên hoàng đế"
+      ],
+      "answer": 0,
+      "explanation_vi": "Mục đích ban đầu là một phương thuốc trừ hàn trị lạnh cóng tai cho người nghèo."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Ngày nay món sủi cảo trong dịp Tết Nguyên Đán tượng trưng cho điều gì?",
+      "options_vi": [
+        "Sự sum vầy, bình an và cát tường",
+        "Tập trung học hành",
+        "Tập luyện thể thao"
+      ],
+      "answer": 0,
+      "explanation_vi": "Sủi cảo đêm trừ tịch tượng trưng cho đoàn viên và chúc phúc năm mới."
+    }
+  ]
+}

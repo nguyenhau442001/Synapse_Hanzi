@@ -1,0 +1,600 @@
+{
+  "id": "hsk4_story_054",
+  "level": "HSK4",
+  "series": "wanwu",
+  "title": {
+    "zh": "豆腐：素食经典中国创造",
+    "vi": "Đậu phụ: Phát minh kinh điển của ẩm thực thanh đạm"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🥢",
+  "estimatedMinutes": 5,
+  "description_vi": "Khám phá nguồn gốc chiếc bìa đậu phụ trắng ngần từ lò luyện đan thời Tây Hán của Hoài Nam Vương Lưu An.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "豆腐，是中国人对人类饮食文化的一大卓越贡献。",
+      "pinyin": "Dòufu, shì Zhōngguó rén duì rénlèi yǐnshí wénhuà de yí dà zhuóyuè gòngxiàn.",
+      "vi": "Đậu phụ là một cống hiến kiệt xuất của người Trung Quốc đối với văn hóa ẩm thực nhân loại.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "豆腐",
+          "pinyin": "dòufu",
+          "hanviet": "Đậu Hủ",
+          "meaning_vi": "đậu phụ",
+          "hsk": 5,
+          "word_id": "hsk5_293"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "是"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "meaning_vi": "trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610"
+        },
+        {
+          "text": "人",
+          "pinyin": "rén",
+          "hanviet": "Nhân",
+          "meaning_vi": "người",
+          "hsk": 1,
+          "word_id": "hsk1_243"
+        },
+        {
+          "text": "对"
+        },
+        {
+          "text": "人类"
+        },
+        {
+          "text": "饮食"
+        },
+        {
+          "text": "文化",
+          "pinyin": "wénhuà",
+          "hanviet": "Văn Hóa",
+          "meaning_vi": "văn hóa",
+          "hsk": 3,
+          "word_id": "hsk3_957"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "meaning_vi": "của (trợ từ)",
+          "hsk": 1,
+          "word_id": "hsk1_60"
+        },
+        {
+          "text": "一大"
+        },
+        {
+          "text": "贡献"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "它口感细腻，营养丰富，既能做成家常小菜，也能登上国宴舞台。",
+      "pinyin": "Tā kǒugǎn xìnì, yíngyǎng fēngfù, jì néng zuòchéng jiācháng xiǎocài, yě néng dēngshàng guóyàn wǔtái.",
+      "vi": "Nó có hương vị mềm mịn, dinh dưỡng phong phú, vừa có thể làm món ăn thanh đạm gia đình, vừa bước lên bàn tiệc quốc yến.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "它"
+        },
+        {
+          "text": "味道"
+        },
+        {
+          "text": "很好"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "营养"
+        },
+        {
+          "text": "丰富",
+          "pinyin": "fēngfù",
+          "hanviet": "Phong Phú",
+          "meaning_vi": "phong phú",
+          "hsk": 4,
+          "word_id": "hsk4_204"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "既",
+          "pinyin": "jì",
+          "hanviet": "Ký",
+          "meaning_vi": "vừa… vừa; đã (… thì)",
+          "hsk": 4,
+          "word_id": "hsk4_327"
+        },
+        {
+          "text": "能",
+          "pinyin": "néng",
+          "hanviet": "Năng",
+          "meaning_vi": "có thể",
+          "hsk": 1,
+          "word_id": "hsk1_212"
+        },
+        {
+          "text": "做成"
+        },
+        {
+          "text": "家常菜"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "也"
+        },
+        {
+          "text": "能",
+          "pinyin": "néng",
+          "hanviet": "Năng",
+          "meaning_vi": "có thể",
+          "hsk": 1,
+          "word_id": "hsk1_212"
+        },
+        {
+          "text": "登上"
+        },
+        {
+          "text": "大宴席"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "史书相传，豆腐的发明者是西汉时期的淮南王刘安。",
+      "pinyin": "Shǐshū xiāngchuán, dòufu de fāmíngzhě shì Xīhàn shíqī de Huáinán Wáng Liú'ān.",
+      "vi": "Sử sách tương truyền, người phát minh ra đậu phụ là Hoài Nam Vương Lưu An thời Tây Hán.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "历史",
+          "pinyin": "lìshǐ",
+          "hanviet": "Lịch Sử",
+          "meaning_vi": "lịch sử",
+          "hsk": 3,
+          "word_id": "hsk3_831"
+        },
+        {
+          "text": "相传"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "豆腐",
+          "pinyin": "dòufu",
+          "hanviet": "Đậu Hủ",
+          "meaning_vi": "đậu phụ",
+          "hsk": 5,
+          "word_id": "hsk5_293"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "meaning_vi": "của (trợ từ)",
+          "hsk": 1,
+          "word_id": "hsk1_60"
+        },
+        {
+          "text": "发明者"
+        },
+        {
+          "text": "是"
+        },
+        {
+          "text": "西汉"
+        },
+        {
+          "text": "时期",
+          "pinyin": "shíqī",
+          "hanviet": "Thời Kỳ",
+          "meaning_vi": "thời kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_1016"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "meaning_vi": "của (trợ từ)",
+          "hsk": 1,
+          "word_id": "hsk1_60"
+        },
+        {
+          "text": "淮南王刘安"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "刘安十分喜欢炼丹，在一次炼制丹药的过程中，意外把石膏加入了豆浆中。",
+      "pinyin": "Liú'ān shífēn xǐhuan liàndān, zài yí cì liànzhì dānyào de guòchéng zhōng, yìwài bǎ shígāo jiārù le dòujiāng zhōng.",
+      "vi": "Lưu An rất thích luyện đan dược, trong một lần luyện đan, ông tình cờ làm rơi thạch cao vào nước đậu nành.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "刘安"
+        },
+        {
+          "text": "十分",
+          "pinyin": "shífēn",
+          "hanviet": "Thập Phân",
+          "meaning_vi": "rất, mười phần",
+          "hsk": 4,
+          "word_id": "hsk4_657"
+        },
+        {
+          "text": "喜欢",
+          "pinyin": "xǐhuan",
+          "hanviet": "Hỷ Hoan",
+          "meaning_vi": "thích",
+          "hsk": 1,
+          "word_id": "hsk1_327"
+        },
+        {
+          "text": "炼丹"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "在"
+        },
+        {
+          "text": "一次"
+        },
+        {
+          "text": "炼丹"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "meaning_vi": "của (trợ từ)",
+          "hsk": 1,
+          "word_id": "hsk1_60"
+        },
+        {
+          "text": "过程",
+          "pinyin": "guòchéng",
+          "hanviet": "Quá Trình",
+          "meaning_vi": "quá trình",
+          "hsk": 4,
+          "word_id": "hsk4_282"
+        },
+        {
+          "text": "中"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "意外"
+        },
+        {
+          "text": "把"
+        },
+        {
+          "text": "石膏"
+        },
+        {
+          "text": "加入"
+        },
+        {
+          "text": "了"
+        },
+        {
+          "text": "豆浆"
+        },
+        {
+          "text": "中"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "没想到液体很快凝固，变成了白嫩柔软的固体，尝一口鲜美可口，这就是最早的豆腐。",
+      "pinyin": "Méi xiǎngdào yètǐ hěn kuài nínggù, biànchéng le báinèn róuruǎn de gùtǐ, cháng yì kǒu xiānměi kěkǒu, zhè jiù shì zuì zǎo de dòufu.",
+      "vi": "Không ngờ nước đậu rất nhanh đông lại, biến thành một khối màu trắng mềm mại, nếm thử một miếng thấy tươi ngon tuyệt vời, đó chính là món đậu phụ sớm nhất.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "没想到"
+        },
+        {
+          "text": "豆浆"
+        },
+        {
+          "text": "很",
+          "pinyin": "hěn",
+          "hanviet": "Ngận",
+          "meaning_vi": "rất",
+          "hsk": 1,
+          "word_id": "hsk1_118"
+        },
+        {
+          "text": "快",
+          "pinyin": "kuài",
+          "hanviet": "Khoái",
+          "meaning_vi": "nhanh",
+          "hsk": 2,
+          "word_id": "hsk2_384"
+        },
+        {
+          "text": "凝固"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "变成",
+          "pinyin": "biànchéng",
+          "hanviet": "Biến Thành",
+          "meaning_vi": "trở thành, biến thành",
+          "hsk": 3,
+          "word_id": "hsk3_307"
+        },
+        {
+          "text": "了"
+        },
+        {
+          "text": "白白"
+        },
+        {
+          "text": "软软"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "meaning_vi": "của (trợ từ)",
+          "hsk": 1,
+          "word_id": "hsk1_60"
+        },
+        {
+          "text": "东西"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "尝",
+          "pinyin": "cháng",
+          "hanviet": "Thường",
+          "meaning_vi": "nếm thử",
+          "hsk": 3,
+          "word_id": "hsk3_651"
+        },
+        {
+          "text": "一口"
+        },
+        {
+          "text": "非常"
+        },
+        {
+          "text": "好吃"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "这"
+        },
+        {
+          "text": "就是"
+        },
+        {
+          "text": "最",
+          "pinyin": "zuì",
+          "hanviet": "Tối",
+          "meaning_vi": "nhất",
+          "hsk": 2,
+          "word_id": "hsk2_498"
+        },
+        {
+          "text": "早",
+          "pinyin": "zǎo",
+          "hanviet": "Tảo",
+          "meaning_vi": "sớm",
+          "hsk": 1,
+          "word_id": "hsk1_602"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "meaning_vi": "của (trợ từ)",
+          "hsk": 1,
+          "word_id": "hsk1_60"
+        },
+        {
+          "text": "豆腐",
+          "pinyin": "dòufu",
+          "hanviet": "Đậu Hủ",
+          "meaning_vi": "đậu phụ",
+          "hsk": 5,
+          "word_id": "hsk5_293"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "zh": "从两千年前的炼丹炉，到千家万户的餐桌，豆腐见证了古人化平常为神奇的智慧。",
+      "pinyin": "Cóng liǎng qiān nián qián de liàndān lú, dào qiānjiā-wànhù de cānzhuō, dòufu jiànzhèng le gǔrén huà píngcháng wéi shénqí de zhìhuì.",
+      "vi": "Từ lò luyện đan hai ngàn năm trước đến bàn ăn của hàng vạn gia đình, đậu phụ chứng kiến trí tuệ biến điều bình dị thành điều kỳ diệu của cổ nhân.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "从",
+          "pinyin": "cóng",
+          "hanviet": "Tòng",
+          "meaning_vi": "từ",
+          "hsk": 2,
+          "word_id": "hsk2_324"
+        },
+        {
+          "text": "两千年前"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "到"
+        },
+        {
+          "text": "大家"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "meaning_vi": "của (trợ từ)",
+          "hsk": 1,
+          "word_id": "hsk1_60"
+        },
+        {
+          "text": "餐桌"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "豆腐",
+          "pinyin": "dòufu",
+          "hanviet": "Đậu Hủ",
+          "meaning_vi": "đậu phụ",
+          "hsk": 5,
+          "word_id": "hsk5_293"
+        },
+        {
+          "text": "见证"
+        },
+        {
+          "text": "了"
+        },
+        {
+          "text": "古人"
+        },
+        {
+          "text": "把"
+        },
+        {
+          "text": "普通",
+          "pinyin": "pǔtōng",
+          "hanviet": "Phổ Thông",
+          "meaning_vi": "bình thường, phổ thông",
+          "hsk": 4,
+          "word_id": "hsk4_562"
+        },
+        {
+          "text": "变成",
+          "pinyin": "biànchéng",
+          "hanviet": "Biến Thành",
+          "meaning_vi": "trở thành, biến thành",
+          "hsk": 3,
+          "word_id": "hsk3_307"
+        },
+        {
+          "text": "神奇"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "meaning_vi": "của (trợ từ)",
+          "hsk": 1,
+          "word_id": "hsk1_60"
+        },
+        {
+          "text": "智慧"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk5_293",
+    "hsk4_204",
+    "hsk4_282",
+    "hsk4_50"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Theo truyền thuyết lịch sử, ai là người phát minh ra món đậu phụ?",
+      "options_vi": [
+        "Hoài Nam Vương Lưu An (刘安)",
+        "Gia Cát Lượng (诸葛亮)",
+        "Tần Thủy Hoàng (秦始皇)"
+      ],
+      "answer": 0,
+      "explanation_vi": "Hoài Nam Vương Lưu An thời Tây Hán trong lúc luyện đan đã vô tình làm đậu nành đông kết thành đậu phụ."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Đậu phụ được tình cờ tạo ra trong quá trình làm việc gì?",
+      "options_vi": [
+        "Trong quá trình luyện đan",
+        "Trong lúc nấu cháo",
+        "Trong lúc làm rượu"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trong lúc luyện đan, chất làm đông (thạch cao/muối khoáng) rơi vào nước đậu nành."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Đậu phụ được coi là cống hiến lớn vì lý do gì?",
+      "options_vi": [
+        "Hương vị thơm ngon, dinh dưỡng phong phú và là biểu tượng ẩm thực thanh đạm",
+        "Vì có thể bảo quản trăm năm",
+        "Vì dùng để chế tạo đồ gia dụng"
+      ],
+      "answer": 0,
+      "explanation_vi": "Đậu phụ cung cấp nguồn đạm thực vật quý báu cho ẩm thực Đông phương và thế giới."
+    }
+  ]
+}

@@ -3802,21 +3802,90 @@
   {
     "id": "hsk4_story_051",
     "level": "HSK4",
+    "series": "wanwu",
+    "series_title": "万物有意思",
+    "series_title_vi": "Vạn vật thú vị",
     "title": {
       "zh": "筷子：高妙绝伦的杠杆",
       "vi": "Đôi đũa: Chiếc đòn bẩy tuyệt diệu"
     },
     "topic": "culture_history",
-    "topic_vi": "Văn hóa & Lịch sử",
+    "topic_vi": "📚 Vạn vật thú vị",
     "icon": "🥢",
     "estimatedMinutes": 5,
     "description_vi": "Khám phá nguồn gốc chiếc đũa, nguyên lý đòn bẩy vật lý và tại sao cổ nhân đổi tên từ Trợ (箸) thành Khoái (筷).",
     "sentence_count": 11,
     "sentences_count": 11,
     "spotlight_count": 4,
-    "words_count": 76,
+    "words_count": 241,
     "file": "database/readings/hsk4/hsk4_story_051.json",
     "path": "database/readings/hsk4/hsk4_story_051.json"
+  },
+  {
+    "id": "hsk4_story_052",
+    "level": "HSK4",
+    "series": "wanwu",
+    "series_title": "万物有意思",
+    "series_title_vi": "Vạn vật thú vị",
+    "title": {
+      "zh": "茶：神奇的东方树叶",
+      "vi": "Trà: Chiếc lá phương Đông kỳ diệu"
+    },
+    "topic": "culture_history",
+    "topic_vi": "📚 Vạn vật thú vị",
+    "icon": "🍵",
+    "estimatedMinutes": 5,
+    "description_vi": "Khám phá câu chuyện về chiếc lá trà xanh, từ thức uống giải khát đời thường đến 'Trà Kinh' của Lục Vũ và văn hóa phương Đông.",
+    "sentence_count": 7,
+    "sentences_count": 7,
+    "spotlight_count": 4,
+    "words_count": 137,
+    "file": "database/readings/hsk4/hsk4_story_052.json",
+    "path": "database/readings/hsk4/hsk4_story_052.json"
+  },
+  {
+    "id": "hsk4_story_053",
+    "level": "HSK4",
+    "series": "wanwu",
+    "series_title": "万物有意思",
+    "series_title_vi": "Vạn vật thú vị",
+    "title": {
+      "zh": "饺子：“娇耳”的千年流传",
+      "vi": "Sủi cảo: Thiên niên lưu truyền của món 'Kiều nhĩ'"
+    },
+    "topic": "culture_history",
+    "topic_vi": "📚 Vạn vật thú vị",
+    "icon": "🥟",
+    "estimatedMinutes": 5,
+    "description_vi": "Hành trình nghìn năm của sủi cảo: từ bài thuốc chữa rét buốt tai của y thánh Trương Trọng Cảnh đến biểu tượng đoàn viên ngày Tết.",
+    "sentence_count": 7,
+    "sentences_count": 7,
+    "spotlight_count": 4,
+    "words_count": 133,
+    "file": "database/readings/hsk4/hsk4_story_053.json",
+    "path": "database/readings/hsk4/hsk4_story_053.json"
+  },
+  {
+    "id": "hsk4_story_054",
+    "level": "HSK4",
+    "series": "wanwu",
+    "series_title": "万物有意思",
+    "series_title_vi": "Vạn vật thú vị",
+    "title": {
+      "zh": "豆腐：素食经典中国创造",
+      "vi": "Đậu phụ: Phát minh kinh điển của ẩm thực thanh đạm"
+    },
+    "topic": "culture_history",
+    "topic_vi": "📚 Vạn vật thú vị",
+    "icon": "🥢",
+    "estimatedMinutes": 5,
+    "description_vi": "Khám phá nguồn gốc chiếc bìa đậu phụ trắng ngần từ lò luyện đan thời Tây Hán của Hoài Nam Vương Lưu An.",
+    "sentence_count": 6,
+    "sentences_count": 6,
+    "spotlight_count": 4,
+    "words_count": 106,
+    "file": "database/readings/hsk4/hsk4_story_054.json",
+    "path": "database/readings/hsk4/hsk4_story_054.json"
   },
   {
     "id": "hsk5_story_001",

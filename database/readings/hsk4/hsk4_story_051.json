@@ -1,11 +1,14 @@
 {
   "id": "hsk4_story_051",
   "level": "HSK4",
+  "series": "wanwu",
   "title": {
     "zh": "筷子：高妙绝伦的杠杆",
     "vi": "Đôi đũa: Chiếc đòn bẩy tuyệt diệu"
   },
   "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🥢",
   "estimatedMinutes": 5,
   "description_vi": "Khám phá nguồn gốc chiếc đũa, nguyên lý đòn bẩy vật lý và tại sao cổ nhân đổi tên từ Trợ (箸) thành Khoái (筷).",
   "sentences": [
@@ -13,7 +16,7 @@
       "id": "s1",
       "zh": "说起中国人的发明，大家常常想到“四大发明”。",
       "pinyin": "Shuōqǐ Zhōngguó rén de fāmíng, dàjiā chángcháng xiǎngdào “sì dà fāmíng”.",
-      "vi": "Nói về phát minh của người Trung Quốc, mọi người thường nghĩ đến \"Tứ đại phát minh\".",
+      "vi": "Nói về phát minh của người Trung Quốc, mọi người thường nghĩ đến 'Tứ đại phát minh'.",
       "audio_start_ms": null,
       "audio_end_ms": null,
       "tokens": [
@@ -524,7 +527,7 @@
       "id": "s5",
       "zh": "很多人不知道，在古代，筷子并不叫“筷子”，而是被称为“箸”。",
       "pinyin": "Hěn duō rén bù zhīdào, zài gǔdài, kuàizi bìng bù jiào “kuàizi”, ér shì bèi chēng wéi “zhù”.",
-      "vi": "Rất nhiều người không biết rằng, thời cổ đại, đũa không được gọi là khoái tử, mà được gọi là trợ.",
+      "vi": "Rất nhiều người không biết rằng, thời cổ đại, đũa không được gọi là 'khoái tử', mà được gọi là 'trợ'.",
       "audio_start_ms": null,
       "audio_end_ms": null,
       "tokens": [
@@ -635,7 +638,7 @@
       "id": "s6",
       "zh": "根据历史记载，“箸”早在三千年前的商朝就出现了，当时的纣王曾经使用象牙做成的箸。",
       "pinyin": "Gēnjù lìshǐ jìzǎi, “zhù” zǎo zài sānqiān nián qián de Shāngcháo jiù chūxiàn le, dāngshí de Zhòuwáng céngjīng shǐyòng xiàngyá zuòchéng de zhù.",
-      "vi": "Theo ghi chép lịch sử, trợ đã xuất hiện từ ba nghìn năm trước vào thời nhà Thương, khi đó Trụ vương từng dùng đũa làm bằng ngà voi.",
+      "vi": "Theo ghi chép lịch sử, 'trợ' đã xuất hiện từ ba nghìn năm trước vào thời nhà Thương, khi đó Trụ vương từng dùng đũa làm bằng ngà voi.",
       "audio_start_ms": null,
       "audio_end_ms": null,
       "tokens": [
@@ -774,7 +777,7 @@
       "id": "s7",
       "zh": "那么，古人为什么后来把“箸”改叫“筷子”呢？",
       "pinyin": "Nàme, gǔrén wèishénme hòulái bǎ “zhù” gǎi jiào “kuàizi” ne?",
-      "vi": "Vậy thì, tại sao người xưa về sau lại đổi gọi trợ thành khoái tử?",
+      "vi": "Vậy thì, tại sao người xưa về sau lại đổi gọi 'trợ' thành 'khoái tử'?",
       "audio_start_ms": null,
       "audio_end_ms": null,
       "tokens": [
@@ -862,7 +865,7 @@
       "id": "s8",
       "zh": "原来，在明朝时，江南的水手最忌讳船停住，而“箸”的发音正好和“住”一样。",
       "pinyin": "Yuánlái, zài Míngcháo shí, Jiāngnán de shuǐshǒu zuì jìhuì chuán tíngzhù, ér “zhù” de fāyīn zhènghǎo hé “zhù” yíyàng.",
-      "vi": "Hóa ra, vào thời nhà Minh, dân chài vùng Giang Nam kiêng kỵ nhất là thuyền bị dừng lại, mà phát âm của trợ lại trùng âm với chữ trú.",
+      "vi": "Hóa ra, vào thời nhà Minh, dân chài vùng Giang Nam kiêng kỵ nhất là thuyền bị dừng lại, mà phát âm của 'trợ' lại trùng âm với chữ 'trú' (dừng lại).",
       "audio_start_ms": null,
       "audio_end_ms": null,
       "tokens": [
@@ -996,7 +999,7 @@
       "id": "s9",
       "zh": "为了希望船快快航行，水手们就反过来把“箸”改叫为“快儿”。",
       "pinyin": "Wèile xīwàng chuán kuàikuài hángxíng, shuǐshǒumen jiù fǎnguòlái bǎ “zhù” gǎi jiào wéi “kuàir”.",
-      "vi": "Để mong thuyền chạy mau lẹ, các thủy thủ đã đổi cách gọi ngược lại, gọi trợ thành khoái nhi.",
+      "vi": "Để mong thuyền chạy mau lẹ, các thủy thủ đã đổi cách gọi ngược lại, gọi 'trợ' thành 'khoái nhi'.",
       "audio_start_ms": null,
       "audio_end_ms": null,
       "tokens": [
@@ -1104,7 +1107,7 @@
       "id": "s10",
       "zh": "后来因为筷子大多数是用竹子做成的，人们便在上面加了竹字头，形成了“筷”字。",
       "pinyin": "Hòulái yīnwèi kuàizi dà duōshù shì yòng zhúzi zuòchéng de, rénmen biàn zài shàngmian jiā le zhúzìtóu, xíngchéng le “kuài” zì.",
-      "vi": "Về sau vì hầu hết đũa đều được làm bằng tre trúc, mọi người bèn thêm bộ trúc ở phía trên, tạo thành chữ Khoái.",
+      "vi": "Về sau vì hầu hết đũa đều được làm bằng tre trúc, mọi người bèn thêm bộ trúc ở phía trên, tạo thành chữ 'Khoái' (筷).",
       "audio_start_ms": null,
       "audio_end_ms": null,
       "tokens": [
