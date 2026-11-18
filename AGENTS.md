@@ -70,15 +70,12 @@ Before running any of these commands, stop and ask me first:
 - After finishing:
   - run tests or checks
   - commit and push to `main`
-  - summarize:
-    - what files changed
-    - what behavior changed
-    - what tests or checks were run
+  - keep final summary extremely brief (1-2 sentences max). Do not write lengthy or verbose summaries.
 
 ## Code & Language Style
 
 - **English Only for Code & Comments**: All code, function/variable names, docstrings, inline comments, CLI help, and console logs MUST be written 100% in English. No Vietnamese or bilingual mixing in code files.
-- **Human-In-The-Loop (HITL) Approval**: Always present the diff/code plan first, stop and wait for explicit confirmation ("Duyệt" or "OK") before modifying files on disk.
+- **Human-In-The-Loop (HITL) Approval**: Always present the diff/code plan first, trigger interactive clickable approval options (pop-up buttons) and wait for user selection before modifying files on disk.
 
 ## Project Preference
 
