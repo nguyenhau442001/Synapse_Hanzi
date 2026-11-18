@@ -441,3 +441,7 @@ FodyWeavers.xsd
 
 # TTS audio review scratch files
 database/prebuilt_audio/**/review/
+
+# Local isolated tool dependencies
+tools/.deps/
+

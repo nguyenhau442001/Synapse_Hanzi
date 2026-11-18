@@ -75,6 +75,11 @@ Before running any of these commands, stop and ask me first:
     - what behavior changed
     - what tests or checks were run
 
+## Code & Language Style
+
+- **English Only for Code & Comments**: All code, function/variable names, docstrings, inline comments, CLI help, and console logs MUST be written 100% in English. No Vietnamese or bilingual mixing in code files.
+- **Human-In-The-Loop (HITL) Approval**: Always present the diff/code plan first, stop and wait for explicit confirmation ("Duyệt" or "OK") before modifying files on disk.
+
 ## Project Preference
 
 This is a personal project. I prefer a simple single-branch workflow because I do not want to review pull requests for every small change. Read AGENTS.md first and follow it strictly. This project uses only one branch: main.
