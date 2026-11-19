@@ -1358,7 +1358,52 @@ function bubbleStyle(b) {
 
 const mangaTokenIdx = signal(-1); // -1 = no word card until a word is tapped
 const mangaShowVi = signal(false); // translation hidden until asked for (active recall)
-const mangaSeen = signal({}); // dialogue id -> true once it has been the active bubble
+const mangaSeen = signal({});
+
+// Display script: Traditional by default (matches the scan). Lookup stays keyed to Simplified (`text`).
+const MANGA_SCRIPT_KEY = 'manga.script';
+const MANGA_PINYIN_KEY = 'manga.pinyin';
+const readPref = (key, fallback) => { try { return localStorage.getItem(key) || fallback; } catch (e) { return fallback; } };
+const writePref = (key, val) => { try { localStorage.setItem(key, val); } catch (e) { /* storage unavailable */ } };
+const mangaScript = signal(readPref(MANGA_SCRIPT_KEY, 'trad') === 'simp' ? 'simp' : 'trad');
+const mangaPinyinOn = signal(readPref(MANGA_PINYIN_KEY, '1') !== '0');
+function setMangaScript(v) { mangaScript.value = v; writePref(MANGA_SCRIPT_KEY, v); }
+function setMangaPinyin(on) { mangaPinyinOn.value = on; writePref(MANGA_PINYIN_KEY, on ? '1' : '0'); }
+const mangaLang = () => (mangaScript.value === 'simp' ? 'zh-Hans' : 'zh-Hant');
+// Token / title objects carry {text, text_trad} or {zh, zh_trad}.
+function mangaText(o) {
+  if (!o) return '';
+  if (mangaScript.value === 'simp') return o.text || o.zh || o.text_trad || o.zh_trad || '';
+  return o.text_trad || o.zh_trad || o.text || o.zh || '';
+}
+
+// Story badge: lowest HSK level whose words cover >= 90% of the running words.
+// Denominator = every word token except punctuation and proper names; non-HSK words count as not covered.
+const MANGA_COVERAGE_TARGET = 0.9;
+const mangaCoverageCache = new WeakMap();
+function mangaHskCoverage(story, properNames) {
+  if (mangaCoverageCache.has(story)) return mangaCoverageCache.get(story);
+  const names = new Set(properNames || []);
+  const levels = [];
+  (story.pages || []).forEach((pg) => (pg.dialogues || []).forEach((d) => (d.tokens || []).forEach((t) => {
+    if (t.punct || names.has(t.text_trad) || names.has(t.text)) return;
+    const n = parseInt(String(t.hsk || ''), 10);
+    levels.push(n ? Math.min(n, 7) : 99);
+  })));
+  let result = null;
+  if (levels.length) {
+    for (let lvl = 1; lvl <= 7; lvl += 1) {
+      const pct = levels.filter((n) => n <= lvl).length / levels.length;
+      if (pct >= MANGA_COVERAGE_TARGET || lvl === 7) {
+        const label = lvl === 7 ? 'HSK 7–9' : `HSK ${lvl}`;
+        result = { level: lvl, pct: Math.floor(pct * 100), label: pct >= MANGA_COVERAGE_TARGET ? label : `> ${label}` };
+        break;
+      }
+    }
+  }
+  mangaCoverageCache.set(story, result);
+  return result;
+} // dialogue id -> true once it has been the active bubble
 
 // Chapter-wide reading order: bubble number n (1-based) is stable across pages and spreads.
 const mangaOrderCache = new WeakMap();
@@ -1440,8 +1485,8 @@ function MangaWordPanel({ dialogues, current, order }) {
               </button>
             </div>
           </div>
-          <div class="manga-sentence-tokens" lang="zh-Hant">
-            {tokens.map((t, i) => (t.punct ? <span key={`${current.id}-${i}`} class="manga-sent-punct">{t.text_trad || t.text}</span> : (
+          <div class={`manga-sentence-tokens ${mangaPinyinOn.value ? '' : 'no-pinyin'}`} lang={mangaLang()}>
+            {tokens.map((t, i) => (t.punct ? <span key={`${current.id}-${i}`} class="manga-sent-punct">{mangaText(t)}</span> : (
               <button
                 key={`${current.id}-${i}`}
                 type="button"
@@ -1450,8 +1495,8 @@ function MangaWordPanel({ dialogues, current, order }) {
                 title={mangaHskLabel(t.hsk)}
                 onClick={() => { mangaTokenIdx.value = i === tIdx ? -1 : i; }}
               >
-                <span class="manga-sent-py">{t.pinyin}</span>
-                <span class="manga-sent-hz">{t.text_trad || t.text}</span>
+                {mangaPinyinOn.value ? <span class="manga-sent-py">{t.pinyin}</span> : null}
+                <span class="manga-sent-hz">{mangaText(t)}</span>
               </button>
             )))}
           </div>
@@ -1477,7 +1522,7 @@ function MangaWordPanel({ dialogues, current, order }) {
       {word ? (
         <div class="manga-word-card">
           <div class="manga-word-head">
-            <span class="manga-word-hz" lang="zh-Hant">{word.text_trad || word.text}</span>
+            <span class="manga-word-hz" lang={mangaLang()}>{mangaText(word)}</span>
             <div class="manga-word-meta">
               <div class="manga-word-line">
                 <span class="manga-word-py">{word.pinyin}</span>
@@ -1485,7 +1530,11 @@ function MangaWordPanel({ dialogues, current, order }) {
               </div>
               <span class="manga-word-sub">
                 {word.hanviet ? <>Hán-Việt: <strong>{word.hanviet}</strong></> : null}
-                {word.text_trad && word.text_trad !== word.text ? <> · Giản thể: <span lang="zh-Hans">{word.text}</span></> : null}
+                {word.text_trad && word.text_trad !== word.text
+                  ? (mangaScript.value === 'simp'
+                    ? <> · Phồn thể: <span lang="zh-Hant">{word.text_trad}</span></>
+                    : <> · Giản thể: <span lang="zh-Hans">{word.text}</span></>)
+                  : null}
               </span>
             </div>
             <div class="manga-word-tools">
@@ -1585,6 +1634,11 @@ function MangaSettings({ canSpread, spread }) {
         <MangaSegmented label="Bố cục" value={spread ? 'two' : 'one'} options={[['one', '1 trang'], ['two', '2 trang']]} onPick={(v) => setMangaSpread(v === 'two')} />
       ) : null}
       <MangaSegmented label="Giao diện" value={getMangaLook()} options={[['light', 'Sáng'], ['sepia', 'Giấy'], ['dark', 'Tối']]} onPick={setMangaLook} />
+      <MangaSegmented label="Chữ" value={mangaScript.value} options={[['trad', 'Phồn thể'], ['simp', 'Giản thể']]} onPick={setMangaScript} />
+      <label class="manga-setting-row manga-setting-check">
+        <span class="manga-setting-label">Pinyin trên chữ</span>
+        <input type="checkbox" checked={mangaPinyinOn.value} onChange={(e) => setMangaPinyin(e.target.checked)} />
+      </label>
       <label class="manga-setting-row manga-setting-check">
         <span class="manga-setting-label">Số bóng thoại trên trang</span>
         <input type="checkbox" checked={showMangaOutlines.value} onChange={(e) => { showMangaOutlines.value = e.target.checked; }} />
@@ -1761,7 +1815,7 @@ function MangaViewer({ story }) {
               class={`manga-bubble ${showMangaOutlines.value ? 'show-outline' : ''} ${isActive ? 'is-active' : ''} ${isHover ? 'is-hover' : ''}`}
               style={bubbleStyle(d.bbox)}
               data-dlg={d.id}
-              aria-label={`Bóng thoại ${order.index[d.id]}: ${d.zh_trad || d.zh}`}
+              aria-label={`Bóng thoại ${order.index[d.id]}: ${mangaText(d)}`}
               title={d.vi}
               onMouseEnter={() => { hoveredMangaDialogue.value = d; }}
               onMouseLeave={() => { hoveredMangaDialogue.value = null; }}
@@ -1777,6 +1831,8 @@ function MangaViewer({ story }) {
 
   if (!page) return null;
   const progressPct = Math.round(((lastVisibleIdx + 1) / totalPages) * 100);
+  const manifestItem = mangaManifestData.find((m) => m.id === story.id);
+  const coverage = mangaHskCoverage(story, manifestItem && manifestItem.proper_names);
 
   return (
     <div
@@ -1794,8 +1850,12 @@ function MangaViewer({ story }) {
         </span>
         <span class="manga-topbar-sep" aria-hidden="true"></span>
         <div class="manga-title-group" title={story.title.vi}>
-          <span class="manga-title-zh" lang="zh-Hant">{story.title.zh_trad || story.title.zh}</span>
-          {story.difficulty ? <span class="manga-title-level">{String(story.difficulty).split('(')[0].trim()}</span> : null}
+          <span class="manga-title-zh" lang={mangaLang()}>{mangaText(story.title)}</span>
+          {coverage ? (
+            <span class="manga-title-level" title={`${coverage.pct}% số từ (trừ tên riêng, dấu câu) thuộc ${coverage.label.replace('> ', '')} trở xuống`}>
+              {`${coverage.label} · ${coverage.pct}%`}
+            </span>
+          ) : null}
         </div>
         <div class="manga-topbar-progress" aria-label={`Trang ${lastVisibleIdx + 1} trên ${totalPages}`}>
           <span class="manga-topbar-track"><i style={`width: ${progressPct}%;`}></i></span>
@@ -1855,7 +1915,7 @@ function MangaViewer({ story }) {
                     class={`manga-dot ${isCurrent ? 'is-current' : ''} ${mangaSeen.value[d.id] ? 'is-seen' : ''}`}
                     aria-label={`Bóng thoại ${n}`}
                     aria-current={isCurrent ? 'true' : undefined}
-                    title={`${n} · ${d.zh_trad || d.zh}`}
+                    title={`${n} · ${mangaText(d)}`}
                     onClick={() => selectMangaDialogue(d)}
                     onMouseEnter={() => { hoveredMangaDialogue.value = d; }}
                     onMouseLeave={() => { hoveredMangaDialogue.value = null; }}

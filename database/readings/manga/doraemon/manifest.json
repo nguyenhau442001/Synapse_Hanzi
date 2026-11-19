@@ -18,7 +18,14 @@
     "page_count": 9,
     "difficulty": "HSK 2 - 3 (Hội thoại đời sống thường nhật)",
     "estimatedMinutes": 8,
-    "file": "database/readings/manga/doraemon/doraemon_manga_001.json"
+    "file": "database/readings/manga/doraemon/doraemon_manga_001.json",
+    "proper_names": [
+      "大雄",
+      "靜兒",
+      "叮噹",
+      "技安",
+      "小夫"
+    ]
   },
   {
     "id": "doraemon_manga_002",
@@ -39,6 +46,13 @@
     "page_count": 8,
     "difficulty": "HSK 3 - 4 (Từ vựng khoa học đời sống & thảo mộc)",
     "estimatedMinutes": 8,
-    "file": "database/readings/manga/doraemon/doraemon_manga_002.json"
+    "file": "database/readings/manga/doraemon/doraemon_manga_002.json",
+    "proper_names": [
+      "大雄",
+      "靜兒",
+      "叮噹",
+      "技安",
+      "小夫"
+    ]
   }
 ]
