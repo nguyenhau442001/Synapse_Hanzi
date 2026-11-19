@@ -16,50 +16,50 @@
   "icon": "🧧",
   "cover_image": "assets/images/readings/wanwu/wanwu_story_065.webp",
   "illustration": "assets/images/readings/wanwu/wanwu_story_065.webp",
-  "estimatedMinutes": 5,
-  "description_vi": "📖 Trang 685 - 691 · Chế độ thưởng tết bằng tiền bạc, thịt bò, rượu ngon và tơ lụa của các vị hoàng đế dành cho quan lại.",
+  "estimatedMinutes": 10,
+  "description_vi": "📖 Trang 685 - 691 · Toàn văn nguyên tác chương 65 《万物有意思》: Lạp tứ: Thưởng tết nguyên đán thời Hán (40 câu).",
   "sentences": [
     {
       "id": "s1",
-      "zh": "年终岁尾领取一笔丰厚的年终奖，是现代职场人一年中最期盼的欣喜时刻。",
-      "pinyin": "Niánzhōng-suìwěi lǐngqǔ yì bǐ fēnghòu de niánzhōngjiǎng, shì xiàndài zhíchǎngrén yì nián zhōng zuì qīpàn de xīnxǐ shíkè.",
-      "vi": "Cuối năm nhận một khoản tiền thưởng tết hậu hĩnh là khoảnh khắc người đi làm mong đợi nhất sau một năm vất vả.",
+      "zh": "每当年关将近，辛苦一年的职场人将目光聚焦在“年终奖”这个大红包上。",
+      "pinyin": "měi dāng nián guān jiāng jìn ， xīn kǔ yī nián de zhí chǎng rén jiāng mù guāng jù jiāo zài “ nián zhōng jiǎng ” zhè ge dà hóng bāo shàng 。",
+      "vi": "Hàng năm, khi một năm sắp kết thúc, những chuyên gia đã làm việc chăm chỉ trong một năm sẽ tập trung vào chiếc phong bì lớn màu đỏ mang tên \"tiền thưởng cuối năm\".",
       "audio_start_ms": null,
       "audio_end_ms": null,
       "tokens": [
         {
-          "text": "年终",
-          "pinyin": "niánzhōng",
-          "hanviet": "Niên Chung",
-          "hsk": 6,
-          "word_id": "hsk6_957",
-          "meaning_vi": "cuối năm"
+          "text": "每当",
+          "pinyin": "měi dāng",
+          "hanviet": "Mỗi Đương"
         },
         {
-          "text": "岁尾",
-          "pinyin": "suì wěi",
-          "hanviet": "Tuế Vĩ"
+          "text": "年关",
+          "pinyin": "nián guān",
+          "hanviet": "Niên Quan"
         },
         {
-          "text": "领取",
-          "pinyin": "lǐngqǔ",
-          "hanviet": "Lãnh Thủ",
+          "text": "将近",
+          "pinyin": "jiāngjìn",
+          "hanviet": "Tương Cận",
           "hsk": 5,
-          "word_id": "hsk5_728",
-          "meaning_vi": "nhận, lĩnh (tiền, đồ, chứng chỉ)"
+          "word_id": "hsk5_580",
+          "meaning_vi": "gần (số lượng, thời gian)"
         },
         {
-          "text": "一笔",
-          "pinyin": "yī bǐ",
-          "hanviet": "Nhất Bút"
+          "text": "，"
         },
         {
-          "text": "丰厚",
-          "pinyin": "fēnghòu",
-          "hanviet": "Phong Hậu",
-          "hsk": 7,
-          "word_id": "hsk7_1188",
-          "meaning_vi": "hậu hĩnh, dồi dào"
+          "text": "辛苦",
+          "pinyin": "xīnkǔ",
+          "hanviet": "Tân Khổ",
+          "hsk": 4,
+          "word_id": "hsk4_820",
+          "meaning_vi": "vất vả, gian khổ"
+        },
+        {
+          "text": "一年",
+          "pinyin": "yī nián",
+          "hanviet": "Nhất Niên"
         },
         {
           "text": "的",
@@ -68,30 +68,6 @@
           "hsk": 1,
           "word_id": "hsk1_60",
           "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "年终奖",
-          "pinyin": "nián zhōng jiǎng",
-          "hanviet": "Niên Chung Thưởng"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "是",
-          "pinyin": "shì",
-          "hanviet": "Thị",
-          "hsk": 1,
-          "word_id": "hsk1_266",
-          "meaning_vi": "là"
-        },
-        {
-          "text": "现代",
-          "pinyin": "xiàndài",
-          "hanviet": "Hiện Đại",
-          "hsk": 5,
-          "word_id": "hsk5_1239",
-          "meaning_vi": "hiện đại"
         },
         {
           "text": "职场",
@@ -110,86 +86,28 @@
           "meaning_vi": "người"
         },
         {
-          "text": "一年",
-          "pinyin": "yī nián",
-          "hanviet": "Nhất Niên"
+          "text": "将",
+          "pinyin": "jiāng",
+          "hanviet": "Tương",
+          "hsk": 4,
+          "word_id": "hsk4_356",
+          "meaning_vi": "sẽ; đem, lấy (như 把)"
         },
         {
-          "text": "中",
-          "pinyin": "zhōng",
-          "hanviet": "Trung",
-          "hsk": 3,
-          "word_id": "hsk3_1060",
-          "meaning_vi": "giữa, trong"
-        },
-        {
-          "text": "最",
-          "pinyin": "zuì",
-          "hanviet": "Tối",
-          "hsk": 2,
-          "word_id": "hsk2_498",
-          "meaning_vi": "nhất"
-        },
-        {
-          "text": "期盼",
-          "pinyin": "qīpàn",
-          "hanviet": "Kỳ Phán",
-          "hsk": 7,
-          "word_id": "hsk7_3143",
-          "meaning_vi": "mong mỏi; mong chờ; ngóng đợi"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "欣喜",
-          "pinyin": "xīnxǐ",
-          "hanviet": "Hân Hỷ",
-          "hsk": 7,
-          "word_id": "hsk7_4560",
-          "meaning_vi": "hân hoan; vui sướng; mừng rỡ"
-        },
-        {
-          "text": "时刻",
-          "pinyin": "shíkè",
-          "hanviet": "Thời Khắc",
+          "text": "目光",
+          "pinyin": "mùguāng",
+          "hanviet": "Mục Quang",
           "hsk": 5,
-          "word_id": "hsk5_1014",
-          "meaning_vi": "thời khắc, giây phút"
+          "word_id": "hsk5_786",
+          "meaning_vi": "tầm nhìn, ánh mắt"
         },
         {
-          "text": "。"
-        }
-      ]
-    },
-    {
-      "id": "s2",
-      "zh": "其实早在两千多年前的东汉时期，朝廷就已经建立了制度化的年终奖励——‘腊赐’。",
-      "pinyin": "Qíshí zǎo zài liǎngqiān duō nián qián de Dōnghàn shíqī, cháotíng jiù yǐjīng jiànlì le zhìdùhuà de niánzhōng jiǎnglì——‘Làcì’.",
-      "vi": "Thực ra hơn hai ngàn năm trước thời Đông Hán, triều đình đã lập ra chế độ khen thưởng cuối năm quy củ gọi là 'Lạp tứ'.",
-      "audio_start_ms": null,
-      "audio_end_ms": null,
-      "tokens": [
-        {
-          "text": "其实",
-          "pinyin": "qíshí",
-          "hanviet": "Kỳ Thật",
-          "hsk": 3,
-          "word_id": "hsk3_881",
-          "meaning_vi": "thực ra"
-        },
-        {
-          "text": "早",
-          "pinyin": "zǎo",
-          "hanviet": "Tảo",
-          "hsk": 1,
-          "word_id": "hsk1_602",
-          "meaning_vi": "sớm"
+          "text": "聚焦",
+          "pinyin": "jùjiāo",
+          "hanviet": "Tụ Tiêu",
+          "hsk": 7,
+          "word_id": "hsk7_2260",
+          "meaning_vi": "tập trung vào, hội tụ, tiêu điểm"
         },
         {
           "text": "在",
@@ -200,62 +118,81 @@
           "meaning_vi": "ở, đang"
         },
         {
-          "text": "两千多年",
-          "pinyin": "liǎng qiān duō nián",
-          "hanviet": "Lưỡng Thiên Đa Niên"
+          "text": "“"
         },
         {
-          "text": "前",
-          "pinyin": "qián",
-          "hanviet": "Tiền",
+          "text": "年终奖",
+          "pinyin": "nián zhōng jiǎng",
+          "hanviet": "Niên Chung Thưởng"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "这个",
+          "pinyin": "zhège",
+          "hanviet": "Giá Cá",
           "hsk": 1,
-          "word_id": "hsk1_558",
-          "meaning_vi": "trước"
+          "word_id": "hsk1_605",
+          "meaning_vi": "cái này (đại từ)"
         },
         {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
+          "text": "大红包",
+          "pinyin": "dà hóng bāo",
+          "hanviet": "Đại Hồng Bao"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
           "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
         },
         {
-          "text": "东汉时期",
-          "pinyin": "dōng hàn shí qī",
-          "hanviet": "Đông Hán Thời Kỳ"
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "那么，年终奖究竟经历了怎样的历史变迁？",
+      "pinyin": "nà me ， nián zhōng jiǎng jiū jìng jīng lì le zěn yàng de lì shǐ biàn qiān ？",
+      "vi": "Vậy tiền thưởng cuối năm đã trải qua những thay đổi lịch sử nào?",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "那么",
+          "pinyin": "nàme",
+          "hanviet": "Na Ma",
+          "hsk": 2,
+          "word_id": "hsk2_406",
+          "meaning_vi": "sau đó (đại từ, liên từ)"
         },
         {
           "text": "，"
         },
         {
-          "text": "朝廷",
-          "pinyin": "cháo tíng",
-          "hanviet": "Triều Đình"
+          "text": "年终奖",
+          "pinyin": "nián zhōng jiǎng",
+          "hanviet": "Niên Chung Thưởng"
         },
         {
-          "text": "就",
-          "pinyin": "jiù",
-          "hanviet": "Tựu",
-          "hsk": 2,
-          "word_id": "hsk2_376",
-          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)"
+          "text": "究竟",
+          "pinyin": "jiūjìng",
+          "hanviet": "Cứu Cánh",
+          "hsk": 4,
+          "word_id": "hsk4_407",
+          "meaning_vi": "rốt cuộc, cuối cùng"
         },
         {
-          "text": "已经",
-          "pinyin": "yǐjīng",
-          "hanviet": "Dĩ Kinh",
-          "hsk": 2,
-          "word_id": "hsk2_472",
-          "meaning_vi": "đã"
-        },
-        {
-          "text": "建立",
-          "pinyin": "jiànlì",
-          "hanviet": "Kiến Lập",
-          "hsk": 5,
-          "word_id": "hsk5_575",
-          "meaning_vi": "xây dựng, kiến lập"
+          "text": "经历",
+          "pinyin": "jīnglì",
+          "hanviet": "Kinh Lịch",
+          "hsk": 4,
+          "word_id": "hsk4_398",
+          "meaning_vi": "trải qua, kinh nghiệm trải qua"
         },
         {
           "text": "了",
@@ -266,9 +203,3533 @@
           "meaning_vi": "rồi (trợ từ)"
         },
         {
-          "text": "制度化",
-          "pinyin": "zhì dù huà",
-          "hanviet": "Chế Độ Hoa"
+          "text": "怎样",
+          "pinyin": "zěnyàng",
+          "hanviet": "Chẩm Dạng",
+          "hsk": 3,
+          "word_id": "hsk3_1044",
+          "meaning_vi": "thế nào, ra sao"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "历史",
+          "pinyin": "lìshǐ",
+          "hanviet": "Lịch Sử",
+          "hsk": 3,
+          "word_id": "hsk3_831",
+          "meaning_vi": "lịch sử"
+        },
+        {
+          "text": "变迁",
+          "pinyin": "biànqiān",
+          "hanviet": "Biến Thiên",
+          "hsk": 7,
+          "word_id": "hsk7_223",
+          "meaning_vi": "biến đổi, thay đổi theo thời gian"
+        },
+        {
+          "text": "？"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "年终奖从何时兴：汉代“腊赐”相当厚年终奖在我国很早就有。",
+      "pinyin": "nián zhōng jiǎng cóng hé shí xīng ： hàn dài “ là cì ” xiāng dāng hòu nián zhōng jiǎng zài wǒ guó hěn zǎo jiù yǒu 。",
+      "vi": "Tiền thưởng cuối năm ra đời từ khi nào: Vào thời nhà Hán, việc “la quà” khá hào phóng. Việc thưởng cuối năm đã có từ lâu ở nước ta.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "年终奖",
+          "pinyin": "nián zhōng jiǎng",
+          "hanviet": "Niên Chung Thưởng"
+        },
+        {
+          "text": "从",
+          "pinyin": "cóng",
+          "hanviet": "Tòng",
+          "hsk": 2,
+          "word_id": "hsk2_324",
+          "meaning_vi": "từ"
+        },
+        {
+          "text": "何时",
+          "pinyin": "hé shí",
+          "hanviet": "Hà Thời"
+        },
+        {
+          "text": "兴",
+          "pinyin": "xīng",
+          "hanviet": "Hưng"
+        },
+        {
+          "text": "："
+        },
+        {
+          "text": "汉代",
+          "pinyin": "hàn dài",
+          "hanviet": "Hán Đại"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "腊赐",
+          "pinyin": "là cì",
+          "hanviet": "Tịch Tứ"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "相当",
+          "pinyin": "xiāngdāng",
+          "hanviet": "Tương Đương",
+          "hsk": 5,
+          "word_id": "hsk5_1249",
+          "meaning_vi": "tương đối, khá"
+        },
+        {
+          "text": "厚",
+          "pinyin": "hòu",
+          "hanviet": "Hậu",
+          "hsk": 4,
+          "word_id": "hsk4_296",
+          "meaning_vi": "dày"
+        },
+        {
+          "text": "年终奖",
+          "pinyin": "nián zhōng jiǎng",
+          "hanviet": "Niên Chung Thưởng"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "我国",
+          "pinyin": "wǒ guó",
+          "hanviet": "Ngã Quốc"
+        },
+        {
+          "text": "很",
+          "pinyin": "hěn",
+          "hanviet": "Ngận",
+          "hsk": 1,
+          "word_id": "hsk1_118",
+          "meaning_vi": "rất"
+        },
+        {
+          "text": "早就",
+          "pinyin": "zǎo jiù",
+          "hanviet": "Tảo Tựu"
+        },
+        {
+          "text": "有",
+          "pinyin": "yǒu",
+          "hanviet": "Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_380",
+          "meaning_vi": "có"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "在东汉时期，一到腊月，皇帝就开始给文武百官发年终奖。",
+      "pinyin": "zài dōng hàn shí qī ， yī dào là yuè ， huáng dì jiù kāi shǐ gěi wén wǔ bǎi guān fā nián zhōng jiǎng 。",
+      "vi": "Vào thời Đông Hán, ngay khi đến tháng 12 âm lịch, hoàng đế bắt đầu ban hành tiền thưởng cuối năm cho các quan lại dân sự và quân sự.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "东汉时期",
+          "pinyin": "dōng hàn shí qī",
+          "hanviet": "Đông Hán Thời Kỳ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "一到",
+          "pinyin": "yī dào",
+          "hanviet": "Nhất Đáo"
+        },
+        {
+          "text": "腊月",
+          "pinyin": "làyuè",
+          "hanviet": "Tịch Nguyệt",
+          "hsk": 7,
+          "word_id": "hsk7_2466",
+          "meaning_vi": "tháng Chạp, tháng mười hai âm lịch"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "皇帝",
+          "pinyin": "huángdì",
+          "hanviet": "Hoàng Đế",
+          "hsk": 6,
+          "word_id": "hsk6_582",
+          "meaning_vi": "hoàng đế"
+        },
+        {
+          "text": "就",
+          "pinyin": "jiù",
+          "hanviet": "Tựu",
+          "hsk": 2,
+          "word_id": "hsk2_376",
+          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)"
+        },
+        {
+          "text": "开始",
+          "pinyin": "kāishǐ",
+          "hanviet": "Khai Thuỷ",
+          "hsk": 2,
+          "word_id": "hsk2_378",
+          "meaning_vi": "bắt đầu"
+        },
+        {
+          "text": "给",
+          "pinyin": "gěi",
+          "hanviet": "Cấp",
+          "hsk": 1,
+          "word_id": "hsk1_98",
+          "meaning_vi": "cho, tặng"
+        },
+        {
+          "text": "文武百官",
+          "pinyin": "wén wǔ bǎi guān",
+          "hanviet": "Văn Võ Bách Quan"
+        },
+        {
+          "text": "发",
+          "pinyin": "fā",
+          "hanviet": "Phát",
+          "hsk": 3,
+          "word_id": "hsk3_710",
+          "meaning_vi": "phát ra, gửi"
+        },
+        {
+          "text": "年终奖",
+          "pinyin": "nián zhōng jiǎng",
+          "hanviet": "Niên Chung Thưởng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "《汉官仪》中记载“腊赐”一项为：大将军、三公各钱二十万、牛肉二百斤、粳米二百斛，特进、侯十五万，卿十万，校尉五万，尚书三万，侍中、将、大夫各二万，千石、六百石各七千，虎贲郎、羽林郎二人共三千。",
+      "pinyin": "《 hàn guān yí 》 zhōng jì zǎi “ là cì ” yī xiàng wèi ： dà jiāng jūn 、 sān gōng gè qián èr shí wàn 、 niú ròu èr bǎi jīn 、 jīng mǐ èr bǎi hú ， tè jìn 、 hóu shí wǔ wàn ， qīng shí wàn ， xiào wèi wǔ wàn ， shàng shū sān wàn ， shì zhōng 、 jiāng 、 dà fū gè èr wàn ， qiān shí 、 liù bǎi shí gè qī qiān ， hǔ bēn láng 、 yǔ lín láng èr rén gòng sān qiān 。",
+      "vi": "“Hán Quan Nghị” ghi rằng “Quà Rax” là: 200.000 nhân dân tệ cho tướng quân và tam hoàng tử, 200 kg thịt bò, 200 hu gạo japonica, 150.000 cho Tejin và Hầu tước, 100.000 cho quan đại thần, 50.000 cho hiệu trưởng, 30.000 cho bộ trưởng, 20.000 cho trung úy, Các tướng lĩnh và quan lại, mỗi người 7.000 cho một ngàn sáu trăm viên đá, và tổng cộng là 3.000 cho Hồ Ben Lang và Yu Lin Lang.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "《"
+        },
+        {
+          "text": "汉官仪",
+          "pinyin": "hàn guān yí",
+          "hanviet": "Hán Quan Nghi"
+        },
+        {
+          "text": "》"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "记载",
+          "pinyin": "jìzǎi",
+          "hanviet": "Ký Tải",
+          "hsk": 5,
+          "word_id": "hsk5_550",
+          "meaning_vi": "ghi chép, ghi lại"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "腊赐",
+          "pinyin": "là cì",
+          "hanviet": "Tịch Tứ"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "一项",
+          "pinyin": "yī xiàng",
+          "hanviet": "Nhất Hạng"
+        },
+        {
+          "text": "为",
+          "pinyin": "wèi",
+          "hanviet": "Vi",
+          "hsk": 3,
+          "word_id": "hsk3_954",
+          "meaning_vi": "vì, cho"
+        },
+        {
+          "text": "："
+        },
+        {
+          "text": "大将军",
+          "pinyin": "dà jiāng jūn",
+          "hanviet": "Đại Tướng Quân"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "三公",
+          "pinyin": "sān gōng",
+          "hanviet": "Tam Công"
+        },
+        {
+          "text": "各钱",
+          "pinyin": "gè qián",
+          "hanviet": "Các Tiền"
+        },
+        {
+          "text": "二十万",
+          "pinyin": "èr shí wàn",
+          "hanviet": "Nhị Thập Mặc"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "牛肉",
+          "pinyin": "niú ròu",
+          "hanviet": "Ngưu Nhục"
+        },
+        {
+          "text": "二百斤",
+          "pinyin": "èr bǎi jīn",
+          "hanviet": "Nhị Bách Cân"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "粳米",
+          "pinyin": "jīng mǐ",
+          "hanviet": "Canh Mễ"
+        },
+        {
+          "text": "二百",
+          "pinyin": "èr bǎi",
+          "hanviet": "Nhị Bách"
+        },
+        {
+          "text": "斛",
+          "pinyin": "hú",
+          "hanviet": "Hộc"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "特进",
+          "pinyin": "tè jìn",
+          "hanviet": "Đặc Tiến"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "侯",
+          "pinyin": "hóu",
+          "hanviet": "Hầu"
+        },
+        {
+          "text": "十五万",
+          "pinyin": "shí wǔ wàn",
+          "hanviet": "Thập Ngũ Mặc"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "卿",
+          "pinyin": "qīng",
+          "hanviet": "Khanh"
+        },
+        {
+          "text": "十万",
+          "pinyin": "shí wàn",
+          "hanviet": "Thập Mặc"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "校尉",
+          "pinyin": "xiào wèi",
+          "hanviet": "Hiệu Uý"
+        },
+        {
+          "text": "五万",
+          "pinyin": "wǔ wàn",
+          "hanviet": "Ngũ Mặc"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "尚书",
+          "pinyin": "shàng shū",
+          "hanviet": "Thượng Thư"
+        },
+        {
+          "text": "三万",
+          "pinyin": "sān wàn",
+          "hanviet": "Tam Mặc"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "侍中",
+          "pinyin": "shì zhōng",
+          "hanviet": "Thị Trung"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "将",
+          "pinyin": "jiāng",
+          "hanviet": "Tương",
+          "hsk": 4,
+          "word_id": "hsk4_356",
+          "meaning_vi": "sẽ; đem, lấy (như 把)"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "大夫",
+          "pinyin": "dàifu",
+          "hanviet": "Đại Phu",
+          "hsk": 4,
+          "word_id": "hsk4_125",
+          "meaning_vi": "bác sĩ"
+        },
+        {
+          "text": "各",
+          "pinyin": "gè",
+          "hanviet": "Các",
+          "hsk": 4,
+          "word_id": "hsk4_244",
+          "meaning_vi": "mỗi, từng"
+        },
+        {
+          "text": "二万",
+          "pinyin": "èr wàn",
+          "hanviet": "Nhị Mặc"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "千石",
+          "pinyin": "qiān shí",
+          "hanviet": "Thiên Thạch"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "六百",
+          "pinyin": "liù bǎi",
+          "hanviet": "Lục Bách"
+        },
+        {
+          "text": "石",
+          "pinyin": "shí",
+          "hanviet": "Thạch"
+        },
+        {
+          "text": "各",
+          "pinyin": "gè",
+          "hanviet": "Các",
+          "hsk": 4,
+          "word_id": "hsk4_244",
+          "meaning_vi": "mỗi, từng"
+        },
+        {
+          "text": "七千",
+          "pinyin": "qī qiān",
+          "hanviet": "Thất Thiên"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "虎贲",
+          "pinyin": "hǔ bēn",
+          "hanviet": "Hổ Bôn"
+        },
+        {
+          "text": "郎",
+          "pinyin": "láng",
+          "hanviet": "Lang"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "羽林郎",
+          "pinyin": "yǔ lín láng",
+          "hanviet": "Vũ Lâm Lang"
+        },
+        {
+          "text": "二人",
+          "pinyin": "èr rén",
+          "hanviet": "Nhị Nhân"
+        },
+        {
+          "text": "共",
+          "pinyin": "gòng",
+          "hanviet": "Cộng",
+          "hsk": 4,
+          "word_id": "hsk4_258",
+          "meaning_vi": "tổng cộng; cùng"
+        },
+        {
+          "text": "三千",
+          "pinyin": "sān qiān",
+          "hanviet": "Tam Thiên"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "zh": "据说当时三公和大将军的月薪只有一万七千五百钱，领这一回年终奖，相当于一年的工资了。",
+      "pinyin": "jù shuō dāng shí sān gōng hé dà jiāng jūn de yuè xīn zhǐ yǒu yī wàn qī qiān wǔ bǎi qián ， lǐng zhè yī huí nián zhōng jiǎng ， xiāng dāng yú yī nián de gōng zī le 。",
+      "vi": "Người ta nói rằng mức lương hàng tháng của Sangong và General khi đó chỉ là 17.500 nhân dân tệ. Khoản tiền thưởng cuối năm này tương đương với tiền lương một năm.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "据说",
+          "pinyin": "jùshuō",
+          "hanviet": "Cư Thuyết",
+          "hsk": 5,
+          "word_id": "hsk5_641",
+          "meaning_vi": "nghe nói, theo lời kể"
+        },
+        {
+          "text": "当时",
+          "pinyin": "dāngshí",
+          "hanviet": "Đương Thời",
+          "hsk": 4,
+          "word_id": "hsk4_136",
+          "meaning_vi": "lúc đó, khi đó"
+        },
+        {
+          "text": "三公",
+          "pinyin": "sān gōng",
+          "hanviet": "Tam Công"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "大将军",
+          "pinyin": "dà jiāng jūn",
+          "hanviet": "Đại Tướng Quân"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "月薪",
+          "pinyin": "yuè xīn",
+          "hanviet": "Nguyệt Tân"
+        },
+        {
+          "text": "只有",
+          "pinyin": "zhǐyǒu",
+          "hanviet": "Chỉ Hữu",
+          "hsk": 3,
+          "word_id": "hsk3_1059",
+          "meaning_vi": "chỉ có"
+        },
+        {
+          "text": "一万七千",
+          "pinyin": "yī wàn qī qiān",
+          "hanviet": "Nhất Mặc Thất Thiên"
+        },
+        {
+          "text": "五百",
+          "pinyin": "wǔ bǎi",
+          "hanviet": "Ngũ Bách"
+        },
+        {
+          "text": "钱",
+          "pinyin": "qián",
+          "hanviet": "Tiền",
+          "hsk": 1,
+          "word_id": "hsk1_235",
+          "meaning_vi": "tiền"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "领",
+          "pinyin": "lǐng",
+          "hanviet": "Lãnh",
+          "hsk": 5,
+          "word_id": "hsk5_725",
+          "meaning_vi": "nhận, lĩnh; dẫn đầu"
+        },
+        {
+          "text": "这",
+          "pinyin": "zhè",
+          "hanviet": "Giá",
+          "hsk": 1,
+          "word_id": "hsk1_401",
+          "meaning_vi": "này"
+        },
+        {
+          "text": "一回",
+          "pinyin": "yī huí",
+          "hanviet": "Nhất Hồi"
+        },
+        {
+          "text": "年终奖",
+          "pinyin": "nián zhōng jiǎng",
+          "hanviet": "Niên Chung Thưởng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "相当于",
+          "pinyin": "xiāng dāng yú",
+          "hanviet": "Tương Đương Vu"
+        },
+        {
+          "text": "一年",
+          "pinyin": "yī nián",
+          "hanviet": "Nhất Niên"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "工资",
+          "pinyin": "gōngzī",
+          "hanviet": "Công Tư",
+          "hsk": 4,
+          "word_id": "hsk4_257",
+          "meaning_vi": "lương"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "zh": "宋代官员的俸禄包括正俸（钱）、禄粟（米）、职钱、公用钱、职田、茶汤钱、给卷（差旅费）、厨料、薪炭等许多令人眼花缭乱的名目，工资虽然很高，但年终奖却很少。",
+      "pinyin": "sòng dài guān yuán de fèng lù bāo kuò zhèng fèng （ qián ）、 lù sù （ mǐ ）、 zhí qián 、 gōng yòng qián 、 zhí tián 、 chá tāng qián 、 gěi juǎn （ chāi lǚ fèi ）、 chú liào 、 xīn tàn děng xǔ duō lìng rén yǎn huā liáo luàn de míng mù ， gōng zī suī rán hěn gāo ， dàn nián zhōng jiǎng què hěn shǎo 。",
+      "vi": "Lương của quan lại thời nhà Tống bao gồm lương chính thức (tiền), kê (gạo), tiền công, tiền công, đất công, tiền chè canh, phiếu trả (chi phí đi lại), nguyên liệu nấu ăn, củi và nhiều món đồ chói mắt khác. Dù lương cao nhưng tiền thưởng cuối năm lại rất ít.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "宋代",
+          "pinyin": "sòng dài",
+          "hanviet": "Tống Đại"
+        },
+        {
+          "text": "官员",
+          "pinyin": "guānyuán",
+          "hanviet": "Quan Viên",
+          "hsk": 6,
+          "word_id": "hsk6_495",
+          "meaning_vi": "chính thức"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "俸禄",
+          "pinyin": "fèng lù",
+          "hanviet": "Bổng Lộc"
+        },
+        {
+          "text": "包括",
+          "pinyin": "bāokuò",
+          "hanviet": "Bao Quát",
+          "hsk": 5,
+          "word_id": "hsk5_17",
+          "meaning_vi": "bao gồm"
+        },
+        {
+          "text": "正",
+          "pinyin": "zhèng",
+          "hanviet": "Chinh",
+          "hsk": 2,
+          "word_id": "hsk2_491",
+          "meaning_vi": "vừa, đang (trạng từ)"
+        },
+        {
+          "text": "俸",
+          "pinyin": "fèng",
+          "hanviet": "Bổng"
+        },
+        {
+          "text": "（"
+        },
+        {
+          "text": "钱",
+          "pinyin": "qián",
+          "hanviet": "Tiền",
+          "hsk": 1,
+          "word_id": "hsk1_235",
+          "meaning_vi": "tiền"
+        },
+        {
+          "text": "）"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "禄粟",
+          "pinyin": "lù sù",
+          "hanviet": "Lộc Túc"
+        },
+        {
+          "text": "（"
+        },
+        {
+          "text": "米",
+          "pinyin": "mǐ",
+          "hanviet": "Mễ",
+          "hsk": 3,
+          "word_id": "hsk3_851",
+          "meaning_vi": "mét; gạo"
+        },
+        {
+          "text": "）"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "职钱",
+          "pinyin": "zhí qián",
+          "hanviet": "Chức Tiền"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "公用",
+          "pinyin": "gōngyòng",
+          "hanviet": "Công Dụng",
+          "hsk": 7,
+          "word_id": "hsk7_1405",
+          "meaning_vi": "dùng chung, công cộng"
+        },
+        {
+          "text": "钱",
+          "pinyin": "qián",
+          "hanviet": "Tiền",
+          "hsk": 1,
+          "word_id": "hsk1_235",
+          "meaning_vi": "tiền"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "职田",
+          "pinyin": "zhí tián",
+          "hanviet": "Chức Điền"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "茶汤",
+          "pinyin": "chá tāng",
+          "hanviet": "Trà Thang"
+        },
+        {
+          "text": "钱",
+          "pinyin": "qián",
+          "hanviet": "Tiền",
+          "hsk": 1,
+          "word_id": "hsk1_235",
+          "meaning_vi": "tiền"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "给",
+          "pinyin": "gěi",
+          "hanviet": "Cấp",
+          "hsk": 1,
+          "word_id": "hsk1_98",
+          "meaning_vi": "cho, tặng"
+        },
+        {
+          "text": "卷",
+          "pinyin": "juǎn",
+          "hanviet": "Cuộn",
+          "hsk": 6,
+          "word_id": "hsk6_753",
+          "meaning_vi": "cuốn, cuộn lại"
+        },
+        {
+          "text": "（"
+        },
+        {
+          "text": "差旅费",
+          "pinyin": "chāi lǚ fèi",
+          "hanviet": "Sai Lữ Phí"
+        },
+        {
+          "text": "）"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "厨料",
+          "pinyin": "chú liào",
+          "hanviet": "Trù Liệu"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "薪炭",
+          "pinyin": "xīn tàn",
+          "hanviet": "Tân Thán"
+        },
+        {
+          "text": "等",
+          "pinyin": "děng",
+          "hanviet": "Đẳng",
+          "hsk": 2,
+          "word_id": "hsk2_20",
+          "meaning_vi": "đợi, chờ"
+        },
+        {
+          "text": "许多",
+          "pinyin": "xǔduō",
+          "hanviet": "Hứa Đa",
+          "hsk": 4,
+          "word_id": "hsk4_836",
+          "meaning_vi": "nhiều, rất nhiều"
+        },
+        {
+          "text": "令人",
+          "pinyin": "lìng rén",
+          "hanviet": "Lệnh Nhân"
+        },
+        {
+          "text": "眼花缭乱",
+          "pinyin": "yǎn huā liáo luàn",
+          "hanviet": "Nhãn Hoa Liễu Loạn"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "名目",
+          "pinyin": "míng mù",
+          "hanviet": "Danh Mục"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "工资",
+          "pinyin": "gōngzī",
+          "hanviet": "Công Tư",
+          "hsk": 4,
+          "word_id": "hsk4_257",
+          "meaning_vi": "lương"
+        },
+        {
+          "text": "虽然",
+          "pinyin": "suīrán",
+          "hanviet": "Tuy Nhiên",
+          "hsk": 2,
+          "word_id": "hsk2_438",
+          "meaning_vi": "mặc dù"
+        },
+        {
+          "text": "很",
+          "pinyin": "hěn",
+          "hanviet": "Ngận",
+          "hsk": 1,
+          "word_id": "hsk1_118",
+          "meaning_vi": "rất"
+        },
+        {
+          "text": "高",
+          "pinyin": "gāo",
+          "hanviet": "Cao",
+          "hsk": 2,
+          "word_id": "hsk2_341",
+          "meaning_vi": "cao"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "但",
+          "pinyin": "dàn",
+          "hanviet": "Đãn",
+          "hsk": 2,
+          "word_id": "hsk2_330",
+          "meaning_vi": "nhưng, nhưng mà"
+        },
+        {
+          "text": "年终奖",
+          "pinyin": "nián zhōng jiǎng",
+          "hanviet": "Niên Chung Thưởng"
+        },
+        {
+          "text": "却",
+          "pinyin": "què",
+          "hanviet": "Khước",
+          "hsk": 4,
+          "word_id": "hsk4_606",
+          "meaning_vi": "nhưng, lại"
+        },
+        {
+          "text": "很少",
+          "pinyin": "hěn shǎo",
+          "hanviet": "Ngận Thiểu"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "zh": "每年冬至，皇帝给高级官员们发年终奖，宰相、枢密使以及曾经封王的大臣，每人只有五只羊、五石面、两石米、两坛子黄酒而已。",
+      "pinyin": "měi nián dōng zhì ， huáng dì gěi gāo jí guān yuán men fā nián zhōng jiǎng ， zǎi xiàng 、 shū mì shǐ yǐ jí céng jīng fēng wáng de dà chén ， měi rén zhǐ yǒu wǔ zhǐ yáng 、 wǔ shí miàn 、 liǎng shí mǐ 、 liǎng tán zi huáng jiǔ ér yǐ 。",
+      "vi": "Mỗi dịp đông chí, hoàng đế lại thưởng cuối năm cho các quan chức cấp cao. Mỗi vị tể tướng, đặc phái viên, quan đại thần đã lên ngôi vua chỉ có năm con cừu, năm cục mì, hai cục gạo và hai vò rượu gạo.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "每年",
+          "pinyin": "měi nián",
+          "hanviet": "Mỗi Niên"
+        },
+        {
+          "text": "冬至",
+          "pinyin": "dōng zhì",
+          "hanviet": "Đông Chí"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "皇帝",
+          "pinyin": "huángdì",
+          "hanviet": "Hoàng Đế",
+          "hsk": 6,
+          "word_id": "hsk6_582",
+          "meaning_vi": "hoàng đế"
+        },
+        {
+          "text": "给",
+          "pinyin": "gěi",
+          "hanviet": "Cấp",
+          "hsk": 1,
+          "word_id": "hsk1_98",
+          "meaning_vi": "cho, tặng"
+        },
+        {
+          "text": "高级官员",
+          "pinyin": "gāo jí guān yuán",
+          "hanviet": "Cao Cấp Quan Viên"
+        },
+        {
+          "text": "们",
+          "pinyin": "men",
+          "hanviet": "Môn",
+          "hsk": 1,
+          "word_id": "hsk1_538",
+          "meaning_vi": "họ (hậu tố)"
+        },
+        {
+          "text": "发",
+          "pinyin": "fā",
+          "hanviet": "Phát",
+          "hsk": 3,
+          "word_id": "hsk3_710",
+          "meaning_vi": "phát ra, gửi"
+        },
+        {
+          "text": "年终奖",
+          "pinyin": "nián zhōng jiǎng",
+          "hanviet": "Niên Chung Thưởng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "宰相",
+          "pinyin": "zǎi xiàng",
+          "hanviet": "Tể Tướng"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "枢密使",
+          "pinyin": "shū mì shǐ",
+          "hanviet": "Xu Mật Sử"
+        },
+        {
+          "text": "以及",
+          "pinyin": "yǐjí",
+          "hanviet": "Dĩ Cập",
+          "hsk": 5,
+          "word_id": "hsk5_1363",
+          "meaning_vi": "cùng với, và"
+        },
+        {
+          "text": "曾经",
+          "pinyin": "céngjīng",
+          "hanviet": "Tằng Kinh",
+          "hsk": 5,
+          "word_id": "hsk5_98",
+          "meaning_vi": "đã từng"
+        },
+        {
+          "text": "封王",
+          "pinyin": "fēng wáng",
+          "hanviet": "Phong Vương"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "大臣",
+          "pinyin": "dàchén",
+          "hanviet": "Đại Thần",
+          "hsk": 6,
+          "word_id": "hsk6_244",
+          "meaning_vi": "đại thần, quan lớn"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "每人",
+          "pinyin": "měi rén",
+          "hanviet": "Mỗi Nhân"
+        },
+        {
+          "text": "只有",
+          "pinyin": "zhǐyǒu",
+          "hanviet": "Chỉ Hữu",
+          "hsk": 3,
+          "word_id": "hsk3_1059",
+          "meaning_vi": "chỉ có"
+        },
+        {
+          "text": "五只",
+          "pinyin": "wǔ zhǐ",
+          "hanviet": "Ngũ Chỉ"
+        },
+        {
+          "text": "羊",
+          "pinyin": "yáng",
+          "hanviet": "Dương",
+          "hsk": 3,
+          "word_id": "hsk3_997",
+          "meaning_vi": "dê, cừu"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "五石面",
+          "pinyin": "wǔ shí miàn",
+          "hanviet": "Ngũ Thạch Diện"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "两石米",
+          "pinyin": "liǎng shí mǐ",
+          "hanviet": "Lưỡng Thạch Mễ"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "两",
+          "pinyin": "liǎng",
+          "hanviet": "Lưỡng",
+          "hsk": 2,
+          "word_id": "hsk2_63",
+          "meaning_vi": "hai (số lượng)"
+        },
+        {
+          "text": "坛子",
+          "pinyin": "tán zi",
+          "hanviet": "Đàn Tử"
+        },
+        {
+          "text": "黄酒",
+          "pinyin": "huáng jiǔ",
+          "hanviet": "Hoàng Tửu"
+        },
+        {
+          "text": "而已",
+          "pinyin": "éryǐ",
+          "hanviet": "Nhi Dĩ",
+          "hsk": 7,
+          "word_id": "hsk7_1028",
+          "meaning_vi": "mà thôi, chỉ là"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "zh": "古籍《汉官仪》书影民国大洋首都博物馆所展出的民国荷包清朝皇帝年底多用荷包赏赐大臣。",
+      "pinyin": "gǔ jí 《 hàn guān yí 》 shū yǐng mín guó dà yáng shǒu dū bó wù guǎn suǒ zhǎn chū de mín guó hé bāo qīng cháo huáng dì nián dǐ duō yòng hé bāo shǎng cì dà chén 。",
+      "vi": "Cuốn sách cổ \"Nghi thức nhà Hán\", sách và ảnh của Trung Hoa Dân Quốc, và chiếc ví của Trung Hoa Dân Quốc được trưng bày tại Bảo tàng Thủ đô Hải Dương. Các hoàng đế nhà Thanh thường dùng ví để thưởng cho các quan đại thần vào dịp cuối năm.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "古籍",
+          "pinyin": "gǔjí",
+          "hanviet": "Cổ Tịch",
+          "hsk": 7,
+          "word_id": "hsk7_1441",
+          "meaning_vi": "cổ tịch, sách cổ"
+        },
+        {
+          "text": "《"
+        },
+        {
+          "text": "汉官仪",
+          "pinyin": "hàn guān yí",
+          "hanviet": "Hán Quan Nghi"
+        },
+        {
+          "text": "》"
+        },
+        {
+          "text": "书影",
+          "pinyin": "shū yǐng",
+          "hanviet": "Thư Ảnh"
+        },
+        {
+          "text": "民国",
+          "pinyin": "mín guó",
+          "hanviet": "Dân Quốc"
+        },
+        {
+          "text": "大洋",
+          "pinyin": "dà yáng",
+          "hanviet": "Đại Dương"
+        },
+        {
+          "text": "首都博物馆",
+          "pinyin": "shǒu dū bó wù guǎn",
+          "hanviet": "Thủ Đô Bác Vật Quán"
+        },
+        {
+          "text": "所",
+          "pinyin": "sǔnshī",
+          "hanviet": "Tổn Thất",
+          "hsk": 5,
+          "word_id": "hsk5_1095",
+          "meaning_vi": "tổn thất, thiệt hại"
+        },
+        {
+          "text": "展出",
+          "pinyin": "zhǎnchū",
+          "hanviet": "Triển Xuất",
+          "hsk": 5,
+          "word_id": "hsk5_1463",
+          "meaning_vi": "trưng bày, triển lãm"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "民国",
+          "pinyin": "mín guó",
+          "hanviet": "Dân Quốc"
+        },
+        {
+          "text": "荷包",
+          "pinyin": "hé bāo",
+          "hanviet": "Hà Bao"
+        },
+        {
+          "text": "清朝",
+          "pinyin": "qīng cháo",
+          "hanviet": "Thanh Triều"
+        },
+        {
+          "text": "皇帝",
+          "pinyin": "huángdì",
+          "hanviet": "Hoàng Đế",
+          "hsk": 6,
+          "word_id": "hsk6_582",
+          "meaning_vi": "hoàng đế"
+        },
+        {
+          "text": "年底",
+          "pinyin": "niándǐ",
+          "hanviet": "Niên Để",
+          "hsk": 4,
+          "word_id": "hsk4_535",
+          "meaning_vi": "cuối năm"
+        },
+        {
+          "text": "多用",
+          "pinyin": "duō yòng",
+          "hanviet": "Đa Dụng"
+        },
+        {
+          "text": "荷包",
+          "pinyin": "hé bāo",
+          "hanviet": "Hà Bao"
+        },
+        {
+          "text": "赏赐",
+          "pinyin": "shǎng cì",
+          "hanviet": "Thưởng Tứ"
+        },
+        {
+          "text": "大臣",
+          "pinyin": "dàchén",
+          "hanviet": "Đại Thần",
+          "hsk": 6,
+          "word_id": "hsk6_244",
+          "meaning_vi": "đại thần, quan lớn"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "zh": "《啸亭续录》载：乾嘉时期“岁暮时诸王公大臣皆有赐予；御前大臣皆赐‘岁岁平安’荷包一”。",
+      "pinyin": "《 xiào tíng xù lù 》 zài ： qián jiā shí qī “ suì mù shí zhū wáng gōng dà chén jiē yǒu cì yǔ ； yù qián dà chén jiē cì ‘ suì suì píng ān ’ hé bāo yī ”。",
+      "vi": "\"Xiaoting Xulu\" ghi chép: Vào thời Qiangjia, \"tất cả các hoàng tử và bộ trưởng đều tặng quà vào cuối năm; các bộ trưởng trong triều đều tặng một ví 'Hòa bình hàng năm'.\"",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "《"
+        },
+        {
+          "text": "啸亭续",
+          "pinyin": "xiào tíng xù",
+          "hanviet": "Khiếu Đình Tục"
+        },
+        {
+          "text": "录",
+          "pinyin": "lù",
+          "hanviet": "Lục",
+          "hsk": 5,
+          "word_id": "hsk5_738",
+          "meaning_vi": "ghi âm, thu hình; ghi chép"
+        },
+        {
+          "text": "》"
+        },
+        {
+          "text": "载",
+          "pinyin": "zài",
+          "hanviet": "Tải"
+        },
+        {
+          "text": "："
+        },
+        {
+          "text": "乾嘉",
+          "pinyin": "qián jiā",
+          "hanviet": "Càn Gia"
+        },
+        {
+          "text": "时期",
+          "pinyin": "shíqī",
+          "hanviet": "Thời Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_1016",
+          "meaning_vi": "thời kỳ"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "岁暮",
+          "pinyin": "suì mù",
+          "hanviet": "Tuế Mộ"
+        },
+        {
+          "text": "时",
+          "pinyin": "shí",
+          "hanviet": "Thời",
+          "hsk": 2,
+          "word_id": "hsk2_431",
+          "meaning_vi": "thời gian (danh từ, số lượng)"
+        },
+        {
+          "text": "诸王公",
+          "pinyin": "zhū wáng gōng",
+          "hanviet": "Chư Vương Công"
+        },
+        {
+          "text": "大臣",
+          "pinyin": "dàchén",
+          "hanviet": "Đại Thần",
+          "hsk": 6,
+          "word_id": "hsk6_244",
+          "meaning_vi": "đại thần, quan lớn"
+        },
+        {
+          "text": "皆",
+          "pinyin": "jiē",
+          "hanviet": "Giai",
+          "hsk": 7,
+          "word_id": "hsk7_2065",
+          "meaning_vi": "đều, thảy, đều là"
+        },
+        {
+          "text": "有",
+          "pinyin": "yǒu",
+          "hanviet": "Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_380",
+          "meaning_vi": "có"
+        },
+        {
+          "text": "赐予",
+          "pinyin": "cì yǔ",
+          "hanviet": "Tứ Dư"
+        },
+        {
+          "text": "；"
+        },
+        {
+          "text": "御前",
+          "pinyin": "yù qián",
+          "hanviet": "Ngự Tiền"
+        },
+        {
+          "text": "大臣",
+          "pinyin": "dàchén",
+          "hanviet": "Đại Thần",
+          "hsk": 6,
+          "word_id": "hsk6_244",
+          "meaning_vi": "đại thần, quan lớn"
+        },
+        {
+          "text": "皆",
+          "pinyin": "jiē",
+          "hanviet": "Giai",
+          "hsk": 7,
+          "word_id": "hsk7_2065",
+          "meaning_vi": "đều, thảy, đều là"
+        },
+        {
+          "text": "赐",
+          "pinyin": "cì",
+          "hanviet": "Tứ",
+          "hsk": 7,
+          "word_id": "hsk7_663",
+          "meaning_vi": "ban cho, ban thưởng"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "岁",
+          "pinyin": "suì",
+          "hanviet": "Tuế",
+          "hsk": 1,
+          "word_id": "hsk1_284",
+          "meaning_vi": "tuổi"
+        },
+        {
+          "text": "岁",
+          "pinyin": "suì",
+          "hanviet": "Tuế",
+          "hsk": 1,
+          "word_id": "hsk1_284",
+          "meaning_vi": "tuổi"
+        },
+        {
+          "text": "平安",
+          "pinyin": "píng’ān",
+          "hanviet": "Bình An",
+          "hsk": 5,
+          "word_id": "hsk5_840",
+          "meaning_vi": "bình an"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "荷包",
+          "pinyin": "hé bāo",
+          "hanviet": "Hà Bao"
+        },
+        {
+          "text": "一",
+          "pinyin": "yī",
+          "hanviet": "Nhất",
+          "hsk": 1,
+          "word_id": "hsk1_360",
+          "meaning_vi": "một"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "zh": "这赏赐的荷包里究竟会装着多少钱呢？",
+      "pinyin": "zhè shǎng cì de hé bāo lǐ jiū jìng huì zhuāng zhe duō shǎo qián ne ？",
+      "vi": "Trong ví tiền thưởng này sẽ có bao nhiêu tiền?",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "这",
+          "pinyin": "zhè",
+          "hanviet": "Giá",
+          "hsk": 1,
+          "word_id": "hsk1_401",
+          "meaning_vi": "này"
+        },
+        {
+          "text": "赏赐",
+          "pinyin": "shǎng cì",
+          "hanviet": "Thưởng Tứ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "荷包",
+          "pinyin": "hé bāo",
+          "hanviet": "Hà Bao"
+        },
+        {
+          "text": "里",
+          "pinyin": "lǐ",
+          "hanviet": "Lý",
+          "hsk": 1,
+          "word_id": "hsk1_536",
+          "meaning_vi": "bên trong"
+        },
+        {
+          "text": "究竟",
+          "pinyin": "jiūjìng",
+          "hanviet": "Cứu Cánh",
+          "hsk": 4,
+          "word_id": "hsk4_407",
+          "meaning_vi": "rốt cuộc, cuối cùng"
+        },
+        {
+          "text": "会装",
+          "pinyin": "huì zhuāng",
+          "hanviet": "Hội Trang"
+        },
+        {
+          "text": "着",
+          "pinyin": "zhe",
+          "hanviet": "Trước",
+          "hsk": 2,
+          "word_id": "hsk2_490",
+          "meaning_vi": "đang (trợ từ)"
+        },
+        {
+          "text": "多少",
+          "pinyin": "duōshao",
+          "hanviet": "Đa Thiểu",
+          "hsk": 1,
+          "word_id": "hsk1_81",
+          "meaning_vi": "bao nhiêu"
+        },
+        {
+          "text": "钱",
+          "pinyin": "qián",
+          "hanviet": "Tiền",
+          "hsk": 1,
+          "word_id": "hsk1_235",
+          "meaning_vi": "tiền"
+        },
+        {
+          "text": "呢",
+          "pinyin": "ne",
+          "hanviet": "Ni",
+          "hsk": 1,
+          "word_id": "hsk1_211",
+          "meaning_vi": "thế còn (trợ từ)"
+        },
+        {
+          "text": "？"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "zh": "岁末皇帝赐给蒙古亲王的那对大荷包里，一般装有各色玉石八宝一份；小荷包四对，内装金银八宝各一份；又小荷包一个，内装金银钱四枚，金银锞四枚，这也算是挺丰厚的“年终奖”了。",
+      "pinyin": "suì mò huáng dì cì gěi méng gǔ qīn wáng de nà duì dà hé bāo lǐ ， yì bān zhuāng yǒu gè sè yù shí bā bǎo yī fèn ； xiǎo hé bāo sì duì ， nèi zhuāng jīn yín bā bǎo gè yī fèn ； yòu xiǎo hé bāo yí gè ， nèi zhuāng jīn yín qián sì méi ， jīn yín kè sì méi ， zhè yě suàn shì tǐng fēng hòu de “ nián zhōng jiǎng ” le 。",
+      "vi": "Cặp ví lớn được hoàng đế ban tặng cho các hoàng tử Mông Cổ vào cuối năm thường chứa một trong tám báu bằng ngọc và đá quý với nhiều màu sắc khác nhau; bốn cặp ví nhỏ đựng một trong tám báu vàng bạc; và một chiếc ví nhỏ chứa bốn đồng tiền vàng và bạc và bốn thỏi vàng và bạc. Đây có thể coi là một khoản “thưởng cuối năm” khá hào phóng.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "岁末",
+          "pinyin": "suì mò",
+          "hanviet": "Tuế Mạt"
+        },
+        {
+          "text": "皇帝",
+          "pinyin": "huángdì",
+          "hanviet": "Hoàng Đế",
+          "hsk": 6,
+          "word_id": "hsk6_582",
+          "meaning_vi": "hoàng đế"
+        },
+        {
+          "text": "赐给",
+          "pinyin": "cì gěi",
+          "hanviet": "Tứ Cấp"
+        },
+        {
+          "text": "蒙古",
+          "pinyin": "méng gǔ",
+          "hanviet": "Mông Cổ"
+        },
+        {
+          "text": "亲王",
+          "pinyin": "qīn wáng",
+          "hanviet": "Thân Vương"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "那",
+          "pinyin": "nà",
+          "hanviet": "Na",
+          "hsk": 1,
+          "word_id": "hsk1_207",
+          "meaning_vi": "đó, kia"
+        },
+        {
+          "text": "对",
+          "pinyin": "duì",
+          "hanviet": "Đối",
+          "hsk": 1,
+          "word_id": "hsk1_79",
+          "meaning_vi": "đối với, hướng về (giới từ)"
+        },
+        {
+          "text": "大",
+          "pinyin": "dà",
+          "hanviet": "Đại",
+          "hsk": 1,
+          "word_id": "hsk1_53",
+          "meaning_vi": "to, lớn"
+        },
+        {
+          "text": "荷包",
+          "pinyin": "hé bāo",
+          "hanviet": "Hà Bao"
+        },
+        {
+          "text": "里",
+          "pinyin": "lǐ",
+          "hanviet": "Lý",
+          "hsk": 1,
+          "word_id": "hsk1_536",
+          "meaning_vi": "bên trong"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "一般",
+          "pinyin": "yìbān",
+          "hanviet": "Nhất Ban",
+          "hsk": 3,
+          "word_id": "hsk3_1011",
+          "meaning_vi": "bình thường, nói chung"
+        },
+        {
+          "text": "装有",
+          "pinyin": "zhuāng yǒu",
+          "hanviet": "Trang Hữu"
+        },
+        {
+          "text": "各色",
+          "pinyin": "gè sè",
+          "hanviet": "Các Sắc"
+        },
+        {
+          "text": "玉石",
+          "pinyin": "yù shí",
+          "hanviet": "Ngọc Thạch"
+        },
+        {
+          "text": "八宝",
+          "pinyin": "bā bǎo",
+          "hanviet": "Bát Bảo"
+        },
+        {
+          "text": "一份",
+          "pinyin": "yī fèn",
+          "hanviet": "Nhất Phần"
+        },
+        {
+          "text": "；"
+        },
+        {
+          "text": "小",
+          "pinyin": "xiǎo",
+          "hanviet": "Tiểu",
+          "hsk": 1,
+          "word_id": "hsk1_337",
+          "meaning_vi": "nhỏ"
+        },
+        {
+          "text": "荷包",
+          "pinyin": "hé bāo",
+          "hanviet": "Hà Bao"
+        },
+        {
+          "text": "四对",
+          "pinyin": "sì duì",
+          "hanviet": "Tứ Đối"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "内",
+          "pinyin": "nèi",
+          "hanviet": "Nội",
+          "hsk": 4,
+          "word_id": "hsk4_528",
+          "meaning_vi": "trong, nội"
+        },
+        {
+          "text": "装",
+          "pinyin": "zhuāng",
+          "hanviet": "Trang",
+          "hsk": 4,
+          "word_id": "hsk4_974",
+          "meaning_vi": "đóng gói, đóng giả"
+        },
+        {
+          "text": "金银",
+          "pinyin": "jīn yín",
+          "hanviet": "Kim Ngân"
+        },
+        {
+          "text": "八宝",
+          "pinyin": "bā bǎo",
+          "hanviet": "Bát Bảo"
+        },
+        {
+          "text": "各",
+          "pinyin": "gè",
+          "hanviet": "Các",
+          "hsk": 4,
+          "word_id": "hsk4_244",
+          "meaning_vi": "mỗi, từng"
+        },
+        {
+          "text": "一份",
+          "pinyin": "yī fèn",
+          "hanviet": "Nhất Phần"
+        },
+        {
+          "text": "；"
+        },
+        {
+          "text": "又",
+          "pinyin": "yòu",
+          "hanviet": "Hựu",
+          "hsk": 3,
+          "word_id": "hsk3_1028",
+          "meaning_vi": "lại (lần nữa)"
+        },
+        {
+          "text": "小",
+          "pinyin": "xiǎo",
+          "hanviet": "Tiểu",
+          "hsk": 1,
+          "word_id": "hsk1_337",
+          "meaning_vi": "nhỏ"
+        },
+        {
+          "text": "荷包",
+          "pinyin": "hé bāo",
+          "hanviet": "Hà Bao"
+        },
+        {
+          "text": "一个",
+          "pinyin": "yí gè",
+          "hanviet": "Nhất Cá"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "内",
+          "pinyin": "nèi",
+          "hanviet": "Nội",
+          "hsk": 4,
+          "word_id": "hsk4_528",
+          "meaning_vi": "trong, nội"
+        },
+        {
+          "text": "装",
+          "pinyin": "zhuāng",
+          "hanviet": "Trang",
+          "hsk": 4,
+          "word_id": "hsk4_974",
+          "meaning_vi": "đóng gói, đóng giả"
+        },
+        {
+          "text": "金银",
+          "pinyin": "jīn yín",
+          "hanviet": "Kim Ngân"
+        },
+        {
+          "text": "钱",
+          "pinyin": "qián",
+          "hanviet": "Tiền",
+          "hsk": 1,
+          "word_id": "hsk1_235",
+          "meaning_vi": "tiền"
+        },
+        {
+          "text": "四枚",
+          "pinyin": "sì méi",
+          "hanviet": "Tứ Mai"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "金银",
+          "pinyin": "jīn yín",
+          "hanviet": "Kim Ngân"
+        },
+        {
+          "text": "锞",
+          "pinyin": "kè",
+          "hanviet": "Quả"
+        },
+        {
+          "text": "四枚",
+          "pinyin": "sì méi",
+          "hanviet": "Tứ Mai"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "这",
+          "pinyin": "zhè",
+          "hanviet": "Giá",
+          "hsk": 1,
+          "word_id": "hsk1_401",
+          "meaning_vi": "này"
+        },
+        {
+          "text": "也",
+          "pinyin": "yě",
+          "hanviet": "Dã",
+          "hsk": 1,
+          "word_id": "hsk1_359",
+          "meaning_vi": "cũng"
+        },
+        {
+          "text": "算是",
+          "pinyin": "suànshì",
+          "hanviet": "Toán Thị",
+          "hsk": 6,
+          "word_id": "hsk6_1248",
+          "meaning_vi": "coi như là, xem như"
+        },
+        {
+          "text": "挺",
+          "pinyin": "tǐng",
+          "hanviet": "Đĩnh",
+          "hsk": 3,
+          "word_id": "hsk3_937",
+          "meaning_vi": "khá, rất"
+        },
+        {
+          "text": "丰厚",
+          "pinyin": "fēnghòu",
+          "hanviet": "Phong Hậu",
+          "hsk": 7,
+          "word_id": "hsk7_1188",
+          "meaning_vi": "hậu hĩnh, dồi dào"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "年终奖",
+          "pinyin": "nián zhōng jiǎng",
+          "hanviet": "Niên Chung Thưởng"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "zh": "民国时期，商店的伙计、公司的职员一般也都有年终奖。",
+      "pinyin": "mín guó shí qī ， shāng diàn de huǒ jì 、 gōng sī de zhí yuán yì bān yě dōu yǒu nián zhōng jiǎng 。",
+      "vi": "Vào thời Trung Hoa Dân Quốc, nhân viên cửa hàng và nhân viên công ty thường có tiền thưởng cuối năm.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "民国时期",
+          "pinyin": "mín guó shí qī",
+          "hanviet": "Dân Quốc Thời Kỳ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "商店",
+          "pinyin": "shāngdiàn",
+          "hanviet": "Thương Điếm",
+          "hsk": 1,
+          "word_id": "hsk1_250",
+          "meaning_vi": "cửa hàng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "伙计",
+          "pinyin": "huǒ jì",
+          "hanviet": "Hoả Kế"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "公司",
+          "pinyin": "gōngsī",
+          "hanviet": "Công Ty",
+          "hsk": 1,
+          "word_id": "hsk1_102",
+          "meaning_vi": "công ty"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "职员",
+          "pinyin": "zhíyuán",
+          "hanviet": "Chức Viên",
+          "hsk": 6,
+          "word_id": "hsk6_1703",
+          "meaning_vi": "nhân viên (văn phòng/công ty)"
+        },
+        {
+          "text": "一般",
+          "pinyin": "yìbān",
+          "hanviet": "Nhất Ban",
+          "hsk": 3,
+          "word_id": "hsk3_1011",
+          "meaning_vi": "bình thường, nói chung"
+        },
+        {
+          "text": "也",
+          "pinyin": "yě",
+          "hanviet": "Dã",
+          "hsk": 1,
+          "word_id": "hsk1_359",
+          "meaning_vi": "cũng"
+        },
+        {
+          "text": "都",
+          "pinyin": "dōu",
+          "hanviet": "Đô",
+          "hsk": 1,
+          "word_id": "hsk1_76",
+          "meaning_vi": "đều"
+        },
+        {
+          "text": "有",
+          "pinyin": "yǒu",
+          "hanviet": "Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_380",
+          "meaning_vi": "có"
+        },
+        {
+          "text": "年终奖",
+          "pinyin": "nián zhōng jiǎng",
+          "hanviet": "Niên Chung Thưởng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "zh": "年终奖有多有少，掌柜或者经理可能有个上千块或者几百块大洋的年终奖，伙计和普通工人有个几十块或者几块大洋的年终奖已经很不错了。",
+      "pinyin": "nián zhōng jiǎng yǒu duō yǒu shǎo ， zhǎng guì huò zhě jīng lǐ kě néng yǒu gè shàng qiān kuài huò zhě jǐ bǎi kuài dà yáng de nián zhōng jiǎng ， huǒ jì hé pǔ tōng gōng rén yǒu gè jǐ shí kuài huò zhě jǐ kuài dà yáng de nián zhōng jiǎng yǐ jīng hěn bú cuò le 。",
+      "vi": "Tiền thưởng cuối năm khác nhau. Người chủ cửa hàng hoặc người quản lý có thể nhận được tiền thưởng cuối năm hàng nghìn hoặc hàng trăm đô la. Một nhân viên bán hàng hoặc một công nhân bình thường có thể nhận được tiền thưởng cuối năm hàng chục hoặc vài đô la, khá tốt.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "年终奖",
+          "pinyin": "nián zhōng jiǎng",
+          "hanviet": "Niên Chung Thưởng"
+        },
+        {
+          "text": "有",
+          "pinyin": "yǒu",
+          "hanviet": "Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_380",
+          "meaning_vi": "có"
+        },
+        {
+          "text": "多",
+          "pinyin": "duō",
+          "hanviet": "Đa",
+          "hsk": 1,
+          "word_id": "hsk1_80",
+          "meaning_vi": "nhiều"
+        },
+        {
+          "text": "有",
+          "pinyin": "yǒu",
+          "hanviet": "Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_380",
+          "meaning_vi": "có"
+        },
+        {
+          "text": "少",
+          "pinyin": "shǎo",
+          "hanviet": "Thiểu",
+          "hsk": 1,
+          "word_id": "hsk1_254",
+          "meaning_vi": "ít"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "掌柜",
+          "pinyin": "zhǎng guì",
+          "hanviet": "Chưởng Quỹ"
+        },
+        {
+          "text": "或者",
+          "pinyin": "huòzhě",
+          "hanviet": "Hoặc Giả",
+          "hsk": 3,
+          "word_id": "hsk3_775",
+          "meaning_vi": "hoặc là"
+        },
+        {
+          "text": "经理",
+          "pinyin": "jīnglǐ",
+          "hanviet": "Kinh Lý",
+          "hsk": 3,
+          "word_id": "hsk3_802",
+          "meaning_vi": "giám đốc, quản lý"
+        },
+        {
+          "text": "可能",
+          "pinyin": "kěnéng",
+          "hanviet": "Khả Năng",
+          "hsk": 2,
+          "word_id": "hsk2_382",
+          "meaning_vi": "có thể"
+        },
+        {
+          "text": "有个",
+          "pinyin": "yǒu gè",
+          "hanviet": "Hữu Cá"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "千块",
+          "pinyin": "qiān kuài",
+          "hanviet": "Thiên Khối"
+        },
+        {
+          "text": "或者",
+          "pinyin": "huòzhě",
+          "hanviet": "Hoặc Giả",
+          "hsk": 3,
+          "word_id": "hsk3_775",
+          "meaning_vi": "hoặc là"
+        },
+        {
+          "text": "几百块",
+          "pinyin": "jǐ bǎi kuài",
+          "hanviet": "Kỷ Bách Khối"
+        },
+        {
+          "text": "大洋",
+          "pinyin": "dà yáng",
+          "hanviet": "Đại Dương"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "年终奖",
+          "pinyin": "nián zhōng jiǎng",
+          "hanviet": "Niên Chung Thưởng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "伙计",
+          "pinyin": "huǒ jì",
+          "hanviet": "Hoả Kế"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "普通工人",
+          "pinyin": "pǔ tōng gōng rén",
+          "hanviet": "Phổ Thông Công Nhân"
+        },
+        {
+          "text": "有个",
+          "pinyin": "yǒu gè",
+          "hanviet": "Hữu Cá"
+        },
+        {
+          "text": "几十块",
+          "pinyin": "jǐ shí kuài",
+          "hanviet": "Kỷ Thập Khối"
+        },
+        {
+          "text": "或者",
+          "pinyin": "huòzhě",
+          "hanviet": "Hoặc Giả",
+          "hsk": 3,
+          "word_id": "hsk3_775",
+          "meaning_vi": "hoặc là"
+        },
+        {
+          "text": "几块",
+          "pinyin": "jǐ kuài",
+          "hanviet": "Kỷ Khối"
+        },
+        {
+          "text": "大洋",
+          "pinyin": "dà yáng",
+          "hanviet": "Đại Dương"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "年终奖",
+          "pinyin": "nián zhōng jiǎng",
+          "hanviet": "Niên Chung Thưởng"
+        },
+        {
+          "text": "已经",
+          "pinyin": "yǐjīng",
+          "hanviet": "Dĩ Kinh",
+          "hsk": 2,
+          "word_id": "hsk2_472",
+          "meaning_vi": "đã"
+        },
+        {
+          "text": "很",
+          "pinyin": "hěn",
+          "hanviet": "Ngận",
+          "hsk": 1,
+          "word_id": "hsk1_118",
+          "meaning_vi": "rất"
+        },
+        {
+          "text": "不错",
+          "pinyin": "búcuò",
+          "hanviet": "Bất Thác",
+          "hsk": 2,
+          "word_id": "hsk2_312",
+          "meaning_vi": "không tệ, khá tốt"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "zh": "商铺和作坊都有一批学徒，学徒一般是没有工钱的，可是却有年终奖。",
+      "pinyin": "shāng pù hé zuō fang dōu yǒu yī pī xué tú ， xué tú yì bān shì méi yǒu gōng qián de ， kě shì què yǒu nián zhōng jiǎng 。",
+      "vi": "Các cửa hàng, xưởng có một nhóm học việc. Người học việc thường không nhận được lương nhưng họ được nhận tiền thưởng cuối năm.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "商铺",
+          "pinyin": "shāng pù",
+          "hanviet": "Thương Phô"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "作坊",
+          "pinyin": "zuō fang",
+          "hanviet": "Tác Phường"
+        },
+        {
+          "text": "都",
+          "pinyin": "dōu",
+          "hanviet": "Đô",
+          "hsk": 1,
+          "word_id": "hsk1_76",
+          "meaning_vi": "đều"
+        },
+        {
+          "text": "有",
+          "pinyin": "yǒu",
+          "hanviet": "Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_380",
+          "meaning_vi": "có"
+        },
+        {
+          "text": "一批",
+          "pinyin": "yī pī",
+          "hanviet": "Nhất Phê"
+        },
+        {
+          "text": "学徒",
+          "pinyin": "xué tú",
+          "hanviet": "Học Đồ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "学徒",
+          "pinyin": "xué tú",
+          "hanviet": "Học Đồ"
+        },
+        {
+          "text": "一般",
+          "pinyin": "yìbān",
+          "hanviet": "Nhất Ban",
+          "hsk": 3,
+          "word_id": "hsk3_1011",
+          "meaning_vi": "bình thường, nói chung"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "没有",
+          "pinyin": "méiyǒu",
+          "hanviet": "Một Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_197",
+          "meaning_vi": "không có"
+        },
+        {
+          "text": "工钱",
+          "pinyin": "gōng qián",
+          "hanviet": "Công Tiền"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "可是",
+          "pinyin": "kěshì",
+          "hanviet": "Khả Thị",
+          "hsk": 3,
+          "word_id": "hsk3_817",
+          "meaning_vi": "nhưng mà"
+        },
+        {
+          "text": "却",
+          "pinyin": "què",
+          "hanviet": "Khước",
+          "hsk": 4,
+          "word_id": "hsk4_606",
+          "meaning_vi": "nhưng, lại"
+        },
+        {
+          "text": "有",
+          "pinyin": "yǒu",
+          "hanviet": "Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_380",
+          "meaning_vi": "có"
+        },
+        {
+          "text": "年终奖",
+          "pinyin": "nián zhōng jiǎng",
+          "hanviet": "Niên Chung Thưởng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "zh": "大方的老板会给个二三十块大洋的红包，小气的老板会管学徒一顿好饭，这顿好饭也可以算是年终奖。",
+      "pinyin": "dà fāng de lǎo bǎn huì gěi gè èr sān shí kuài dà yáng de hóng bāo ， xiǎo qì de lǎo bǎn huì guǎn xué tú yī dùn hǎo fàn ， zhè dùn hǎo fàn yě kě yǐ suàn shì nián zhōng jiǎng 。",
+      "vi": "Một ông chủ hào phóng sẽ cho anh ta một phong bì màu đỏ hai mươi hoặc ba mươi nhân dân tệ, trong khi một ông chủ keo kiệt sẽ cho người học việc của mình một bữa ăn ngon. Bữa ăn ngon này cũng có thể coi như một món quà thưởng cuối năm.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "大方",
+          "pinyin": "dàfang",
+          "hanviet": "Đại Phương",
+          "hsk": 6,
+          "word_id": "hsk6_248",
+          "meaning_vi": "rộng lượng, hào phóng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "老板",
+          "pinyin": "lǎobǎn",
+          "hanviet": "Lão Bản",
+          "hsk": 5,
+          "word_id": "hsk5_685",
+          "meaning_vi": "ông chủ"
+        },
+        {
+          "text": "会",
+          "pinyin": "huì",
+          "hanviet": "Hội",
+          "hsk": 1,
+          "word_id": "hsk1_43",
+          "meaning_vi": "biết, sẽ"
+        },
+        {
+          "text": "给",
+          "pinyin": "gěi",
+          "hanviet": "Cấp",
+          "hsk": 1,
+          "word_id": "hsk1_98",
+          "meaning_vi": "cho, tặng"
+        },
+        {
+          "text": "个",
+          "pinyin": "gè",
+          "hanviet": "Cá",
+          "hsk": 1,
+          "word_id": "hsk1_97",
+          "meaning_vi": "cái (lượng từ)"
+        },
+        {
+          "text": "二三十块",
+          "pinyin": "èr sān shí kuài",
+          "hanviet": "Nhị Tam Thập Khối"
+        },
+        {
+          "text": "大洋",
+          "pinyin": "dà yáng",
+          "hanviet": "Đại Dương"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "红包",
+          "pinyin": "hóngbāo",
+          "hanviet": "Hồng Bao",
+          "hsk": 4,
+          "word_id": "hsk4_295",
+          "meaning_vi": "bao lì xì"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "小气",
+          "pinyin": "xiǎoqi",
+          "hanviet": "Tiểu Khí",
+          "hsk": 6,
+          "word_id": "hsk6_1451",
+          "meaning_vi": "ích kỷ, hẹp hòi"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "老板",
+          "pinyin": "lǎobǎn",
+          "hanviet": "Lão Bản",
+          "hsk": 5,
+          "word_id": "hsk5_685",
+          "meaning_vi": "ông chủ"
+        },
+        {
+          "text": "会",
+          "pinyin": "huì",
+          "hanviet": "Hội",
+          "hsk": 1,
+          "word_id": "hsk1_43",
+          "meaning_vi": "biết, sẽ"
+        },
+        {
+          "text": "管",
+          "pinyin": "guǎn",
+          "hanviet": "Quản",
+          "hsk": 4,
+          "word_id": "hsk4_272",
+          "meaning_vi": "quản lý, trông nom; ống"
+        },
+        {
+          "text": "学徒",
+          "pinyin": "xué tú",
+          "hanviet": "Học Đồ"
+        },
+        {
+          "text": "一顿",
+          "pinyin": "yī dùn",
+          "hanviet": "Nhất Đốn"
+        },
+        {
+          "text": "好饭",
+          "pinyin": "hǎo fàn",
+          "hanviet": "Hảo Phạn"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "这顿",
+          "pinyin": "zhè dùn",
+          "hanviet": "Giá Đốn"
+        },
+        {
+          "text": "好",
+          "pinyin": "hǎo",
+          "hanviet": "Hảo",
+          "hsk": 1,
+          "word_id": "hsk1_114",
+          "meaning_vi": "tốt, được"
+        },
+        {
+          "text": "饭",
+          "pinyin": "fàn",
+          "hanviet": "Phạn",
+          "hsk": 1,
+          "word_id": "hsk1_514",
+          "meaning_vi": "cơm"
+        },
+        {
+          "text": "也",
+          "pinyin": "yě",
+          "hanviet": "Dã",
+          "hsk": 1,
+          "word_id": "hsk1_359",
+          "meaning_vi": "cũng"
+        },
+        {
+          "text": "可以",
+          "pinyin": "kěyǐ",
+          "hanviet": "Khả Dĩ",
+          "hsk": 1,
+          "word_id": "hsk1_160",
+          "meaning_vi": "có thể, được"
+        },
+        {
+          "text": "算是",
+          "pinyin": "suànshì",
+          "hanviet": "Toán Thị",
+          "hsk": 6,
+          "word_id": "hsk6_1248",
+          "meaning_vi": "coi như là, xem như"
+        },
+        {
+          "text": "年终奖",
+          "pinyin": "nián zhōng jiǎng",
+          "hanviet": "Niên Chung Thưởng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "zh": "那时候一年三百六十日（阴历），地主家的长工吃肉的日子大概有二十多天。",
+      "pinyin": "nà shí hòu yī nián sān bǎi liù shí rì （ yīn lì ）， dì zhǔ jiā de cháng gōng chī ròu de rì zi dà gài yǒu èr shí duō tiān 。",
+      "vi": "Khi đó một năm có ba trăm sáu mươi ngày (âm lịch), người làm công lâu năm của gia đình địa chủ ăn thịt khoảng hai mươi ngày.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "那",
+          "pinyin": "nà",
+          "hanviet": "Na",
+          "hsk": 1,
+          "word_id": "hsk1_207",
+          "meaning_vi": "đó, kia"
+        },
+        {
+          "text": "时候",
+          "pinyin": "shíhou",
+          "hanviet": "Thời Hậu",
+          "hsk": 1,
+          "word_id": "hsk1_262",
+          "meaning_vi": "lúc, thời điểm"
+        },
+        {
+          "text": "一年",
+          "pinyin": "yī nián",
+          "hanviet": "Nhất Niên"
+        },
+        {
+          "text": "三百六十日",
+          "pinyin": "sān bǎi liù shí rì",
+          "hanviet": "Tam Bách Lục Thập Nhật"
+        },
+        {
+          "text": "（"
+        },
+        {
+          "text": "阴历",
+          "pinyin": "yīnlì",
+          "hanviet": "Âm Lịch",
+          "hsk": 7,
+          "word_id": "hsk7_4907",
+          "meaning_vi": "âm lịch"
+        },
+        {
+          "text": "）"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "地主家",
+          "pinyin": "dì zhǔ jiā",
+          "hanviet": "Địa Chủ Gia"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "长工",
+          "pinyin": "cháng gōng",
+          "hanviet": "Trường Công"
+        },
+        {
+          "text": "吃",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "肉",
+          "pinyin": "ròu",
+          "hanviet": "Nhục",
+          "hsk": 2,
+          "word_id": "hsk2_423",
+          "meaning_vi": "thịt"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "日子",
+          "pinyin": "rìzi",
+          "hanviet": "Nhật Tử",
+          "hsk": 4,
+          "word_id": "hsk4_621",
+          "meaning_vi": "ngày tháng, cuộc sống"
+        },
+        {
+          "text": "大概",
+          "pinyin": "dàgài",
+          "hanviet": "Đại Khái",
+          "hsk": 3,
+          "word_id": "hsk3_671",
+          "meaning_vi": "đại khái, có lẽ"
+        },
+        {
+          "text": "有",
+          "pinyin": "yǒu",
+          "hanviet": "Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_380",
+          "meaning_vi": "có"
+        },
+        {
+          "text": "二十多天",
+          "pinyin": "èr shí duō tiān",
+          "hanviet": "Nhị Thập Đa Thiên"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "zh": "这些日子多数集中在正月，地主家给长工吃肉则是一种拉拢鼓励的表示，而正月没有给长工加肉的东家，会蒙上悭吝的恶名。",
+      "pinyin": "zhè xiē rì zi duō shù jí zhōng zài zhēng yuè ， dì zhǔ jiā gěi cháng gōng chī ròu zé shì yī zhǒng lā lǒng gǔ lì de biǎo shì ， ér zhēng yuè méi yǒu gěi cháng gōng jiā ròu de dōng jiā ， huì méng shàng qiān lìn de è míng 。",
+      "vi": "Hầu hết những ngày này đều tập trung vào tháng đầu tiên. Tặng thịt cho người lao động lâu năm là một dấu hiệu khích lệ. Chủ nhà không cấp thịt cho người làm lâu năm trong tháng đầu tiên sẽ mang tiếng là keo kiệt.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "这些",
+          "pinyin": "zhèxiē",
+          "hanviet": "Giá Ta",
+          "hsk": 1,
+          "word_id": "hsk1_608",
+          "meaning_vi": "những (đại từ) này"
+        },
+        {
+          "text": "日子",
+          "pinyin": "rìzi",
+          "hanviet": "Nhật Tử",
+          "hsk": 4,
+          "word_id": "hsk4_621",
+          "meaning_vi": "ngày tháng, cuộc sống"
+        },
+        {
+          "text": "多数",
+          "pinyin": "duōshù",
+          "hanviet": "Đa Số",
+          "hsk": 4,
+          "word_id": "hsk4_181",
+          "meaning_vi": "đa số"
+        },
+        {
+          "text": "集中",
+          "pinyin": "jízhōng",
+          "hanviet": "Tập Trung",
+          "hsk": 5,
+          "word_id": "hsk5_537",
+          "meaning_vi": "tập trung"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "正月",
+          "pinyin": "zhēngyuè",
+          "hanviet": "Chinh Nguyệt",
+          "hsk": 7,
+          "word_id": "hsk7_5252",
+          "meaning_vi": "tháng Giêng (âm lịch)"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "地主家",
+          "pinyin": "dì zhǔ jiā",
+          "hanviet": "Địa Chủ Gia"
+        },
+        {
+          "text": "给",
+          "pinyin": "gěi",
+          "hanviet": "Cấp",
+          "hsk": 1,
+          "word_id": "hsk1_98",
+          "meaning_vi": "cho, tặng"
+        },
+        {
+          "text": "长工",
+          "pinyin": "cháng gōng",
+          "hanviet": "Trường Công"
+        },
+        {
+          "text": "吃",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "肉",
+          "pinyin": "ròu",
+          "hanviet": "Nhục",
+          "hsk": 2,
+          "word_id": "hsk2_423",
+          "meaning_vi": "thịt"
+        },
+        {
+          "text": "则",
+          "pinyin": "xìtǒng",
+          "hanviet": "Hệ Thống",
+          "hsk": 5,
+          "word_id": "hsk5_1229",
+          "meaning_vi": "hệ thống"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "一种",
+          "pinyin": "yī zhǒng",
+          "hanviet": "Nhất Chủng"
+        },
+        {
+          "text": "拉拢",
+          "pinyin": "lālǒng",
+          "hanviet": "Lạp Long",
+          "hsk": 7,
+          "word_id": "hsk7_2463",
+          "meaning_vi": "lôi kéo, tranh thủ, mua chuộc"
+        },
+        {
+          "text": "鼓励",
+          "pinyin": "gǔlì",
+          "hanviet": "Cổ Lệ",
+          "hsk": 4,
+          "word_id": "hsk4_265",
+          "meaning_vi": "khuyến khích, động viên"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "表示",
+          "pinyin": "biǎoshì",
+          "hanviet": "Biểu Thị",
+          "hsk": 4,
+          "word_id": "hsk4_35",
+          "meaning_vi": "biểu thị, thể hiện"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "而",
+          "pinyin": "ér",
+          "hanviet": "Nhi",
+          "hsk": 4,
+          "word_id": "hsk4_183",
+          "meaning_vi": "mà, và"
+        },
+        {
+          "text": "正月",
+          "pinyin": "zhēngyuè",
+          "hanviet": "Chinh Nguyệt",
+          "hsk": 7,
+          "word_id": "hsk7_5252",
+          "meaning_vi": "tháng Giêng (âm lịch)"
+        },
+        {
+          "text": "没有",
+          "pinyin": "méiyǒu",
+          "hanviet": "Một Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_197",
+          "meaning_vi": "không có"
+        },
+        {
+          "text": "给",
+          "pinyin": "gěi",
+          "hanviet": "Cấp",
+          "hsk": 1,
+          "word_id": "hsk1_98",
+          "meaning_vi": "cho, tặng"
+        },
+        {
+          "text": "长工",
+          "pinyin": "cháng gōng",
+          "hanviet": "Trường Công"
+        },
+        {
+          "text": "加肉",
+          "pinyin": "jiā ròu",
+          "hanviet": "Gia Nhục"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "东家",
+          "pinyin": "dōng jiā",
+          "hanviet": "Đông Gia"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "会蒙上",
+          "pinyin": "huì méng shàng",
+          "hanviet": "Hội Mông Thướng"
+        },
+        {
+          "text": "悭吝",
+          "pinyin": "qiān lìn",
+          "hanviet": "Khan Lận"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "恶名",
+          "pinyin": "è míng",
+          "hanviet": "Ác Danh"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "zh": "这吃肉也可算是长工的年终奖了。",
+      "pinyin": "zhè chī ròu yě kě suàn shì cháng gōng de nián zhōng jiǎng le 。",
+      "vi": "Ăn thịt cũng có thể coi là tiền thưởng cuối năm dành cho những người làm lâu năm.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "这",
+          "pinyin": "zhè",
+          "hanviet": "Giá",
+          "hsk": 1,
+          "word_id": "hsk1_401",
+          "meaning_vi": "này"
+        },
+        {
+          "text": "吃",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "肉",
+          "pinyin": "ròu",
+          "hanviet": "Nhục",
+          "hsk": 2,
+          "word_id": "hsk2_423",
+          "meaning_vi": "thịt"
+        },
+        {
+          "text": "也",
+          "pinyin": "yě",
+          "hanviet": "Dã",
+          "hsk": 1,
+          "word_id": "hsk1_359",
+          "meaning_vi": "cũng"
+        },
+        {
+          "text": "可",
+          "pinyin": "kě",
+          "hanviet": "Khả",
+          "hsk": 3,
+          "word_id": "hsk3_814",
+          "meaning_vi": "nhưng; thật là (nhấn mạnh)"
+        },
+        {
+          "text": "算是",
+          "pinyin": "suànshì",
+          "hanviet": "Toán Thị",
+          "hsk": 6,
+          "word_id": "hsk6_1248",
+          "meaning_vi": "coi như là, xem như"
+        },
+        {
+          "text": "长工",
+          "pinyin": "cháng gōng",
+          "hanviet": "Trường Công"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "年终奖",
+          "pinyin": "nián zhōng jiǎng",
+          "hanviet": "Niên Chung Thưởng"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "zh": "新中国成立后，计划经济时代的工厂和机关单位实行实物发放的福利制度，快过年的时候不发年终奖金，而是发食物或者票券，最典型的是冻带鱼、大块的冻肉，或者让大家排队轮流获得自行车票、缝纫机票。",
+      "pinyin": "xīn zhōng guó chéng lì hòu ， jì huà jīng jì shí dài de gōng chǎng hé jī guān dān wèi shí xíng shí wù fā fàng de fú lì zhì dù ， kuài guò nián de shí hòu bù fā nián zhōng jiǎng jīn ， ér shì fā shí wù huò zhě piào quàn ， zuì diǎn xíng de shì dòng dài yú 、 dà kuài de dòng ròu ， huò zhě ràng dà jiā pái duì lún liú huò dé zì xíng chē piào 、 féng rèn jī piào 。",
+      "vi": "Sau khi thành lập nước Cộng hòa Nhân dân Trung Hoa, các nhà máy và cơ quan chính phủ trong thời kỳ kinh tế kế hoạch đã thực hiện hệ thống phúc lợi bằng hiện vật. Khi Tết đến gần, tiền thưởng cuối năm không được trao mà thay vào đó là đồ ăn hoặc phiếu giảm giá. Điển hình nhất là cá đuôi đao đông lạnh và những miếng thịt đông lạnh cỡ lớn, hoặc mọi người phải xếp hàng và thay phiên nhau lấy vé xe đạp hoặc vé may vá.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "新",
+          "pinyin": "xīn",
+          "hanviet": "Tân",
+          "hsk": 1,
+          "word_id": "hsk1_344",
+          "meaning_vi": "mới"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "成立",
+          "pinyin": "chénglì",
+          "hanviet": "Thành Lập",
+          "hsk": 5,
+          "word_id": "hsk5_142",
+          "meaning_vi": "thành lập"
+        },
+        {
+          "text": "后",
+          "pinyin": "hòu",
+          "hanviet": "Hậu",
+          "hsk": 1,
+          "word_id": "hsk1_524",
+          "meaning_vi": "sau"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "计划经济",
+          "pinyin": "jì huà jīng jì",
+          "hanviet": "Kế Hoa Kinh Tể"
+        },
+        {
+          "text": "时代",
+          "pinyin": "shídài",
+          "hanviet": "Thời Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1012",
+          "meaning_vi": "thời đại"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "工厂",
+          "pinyin": "gōngchǎng",
+          "hanviet": "Công Xưởng",
+          "hsk": 4,
+          "word_id": "hsk4_250",
+          "meaning_vi": "nhà máy"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "机关",
+          "pinyin": "jīguān",
+          "hanviet": "Cơ Quan",
+          "hsk": 7,
+          "word_id": "hsk7_1843",
+          "meaning_vi": "cơ quan; cơ cấu máy"
+        },
+        {
+          "text": "单位",
+          "pinyin": "dānwèi",
+          "hanviet": "Thiện Vị",
+          "hsk": 4,
+          "word_id": "hsk4_134",
+          "meaning_vi": "đơn vị, cơ quan"
+        },
+        {
+          "text": "实行",
+          "pinyin": "shíxíng",
+          "hanviet": "Thực Hành",
+          "hsk": 5,
+          "word_id": "hsk5_1021",
+          "meaning_vi": "thực hiện"
+        },
+        {
+          "text": "实物",
+          "pinyin": "shíwù",
+          "hanviet": "Thực Vật",
+          "hsk": 7,
+          "word_id": "hsk7_3680",
+          "meaning_vi": "vật thật; hiện vật"
+        },
+        {
+          "text": "发放",
+          "pinyin": "fāfàng",
+          "hanviet": "Phát Phóng",
+          "hsk": 6,
+          "word_id": "hsk6_353",
+          "meaning_vi": "phân phối"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "福利制度",
+          "pinyin": "fú lì zhì dù",
+          "hanviet": "Phúc Lợi Chế Độ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "快",
+          "pinyin": "kuài",
+          "hanviet": "Khoái",
+          "hsk": 2,
+          "word_id": "hsk2_384",
+          "meaning_vi": "nhanh"
+        },
+        {
+          "text": "过年",
+          "pinyin": "guònián",
+          "hanviet": "Quá Niên",
+          "hsk": 2,
+          "word_id": "hsk2_349",
+          "meaning_vi": "năm mới"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "时候",
+          "pinyin": "shíhou",
+          "hanviet": "Thời Hậu",
+          "hsk": 1,
+          "word_id": "hsk1_262",
+          "meaning_vi": "lúc, thời điểm"
+        },
+        {
+          "text": "不发",
+          "pinyin": "bù fā",
+          "hanviet": "Bất Phát"
+        },
+        {
+          "text": "年终奖金",
+          "pinyin": "nián zhōng jiǎng jīn",
+          "hanviet": "Niên Chung Thưởng Kim"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "而是",
+          "pinyin": "ér shì",
+          "hanviet": "Nhi Thị"
+        },
+        {
+          "text": "发",
+          "pinyin": "fā",
+          "hanviet": "Phát",
+          "hsk": 3,
+          "word_id": "hsk3_710",
+          "meaning_vi": "phát ra, gửi"
+        },
+        {
+          "text": "食物",
+          "pinyin": "shíwù",
+          "hanviet": "Thực Vật",
+          "hsk": 4,
+          "word_id": "hsk4_663",
+          "meaning_vi": "thức ăn, thực phẩm"
+        },
+        {
+          "text": "或者",
+          "pinyin": "huòzhě",
+          "hanviet": "Hoặc Giả",
+          "hsk": 3,
+          "word_id": "hsk3_775",
+          "meaning_vi": "hoặc là"
+        },
+        {
+          "text": "票券",
+          "pinyin": "piào quàn",
+          "hanviet": "Phiếu Khoán"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "最",
+          "pinyin": "zuì",
+          "hanviet": "Tối",
+          "hsk": 2,
+          "word_id": "hsk2_498",
+          "meaning_vi": "nhất"
+        },
+        {
+          "text": "典型",
+          "pinyin": "diǎnxíng",
+          "hanviet": "Điển Hình",
+          "hsk": 6,
+          "word_id": "hsk6_299",
+          "meaning_vi": "điển hình"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "冻",
+          "pinyin": "dòng",
+          "hanviet": "Đông",
+          "hsk": 5,
+          "word_id": "hsk5_288",
+          "meaning_vi": "đông lạnh"
+        },
+        {
+          "text": "带鱼",
+          "pinyin": "dài yú",
+          "hanviet": "Đới Ngư"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "大块",
+          "pinyin": "dà kuài",
+          "hanviet": "Đại Khối"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "冻肉",
+          "pinyin": "dòng ròu",
+          "hanviet": "Đông Nhục"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "或者",
+          "pinyin": "huòzhě",
+          "hanviet": "Hoặc Giả",
+          "hsk": 3,
+          "word_id": "hsk3_775",
+          "meaning_vi": "hoặc là"
+        },
+        {
+          "text": "让",
+          "pinyin": "ràng",
+          "hanviet": "Nhượng",
+          "hsk": 2,
+          "word_id": "hsk2_422",
+          "meaning_vi": "để cho, khiến"
+        },
+        {
+          "text": "大家",
+          "pinyin": "dàjiā",
+          "hanviet": "Đại Gia",
+          "hsk": 1,
+          "word_id": "hsk1_54",
+          "meaning_vi": "mọi người"
+        },
+        {
+          "text": "排队",
+          "pinyin": "páiduì",
+          "hanviet": "Bài Đội",
+          "hsk": 4,
+          "word_id": "hsk4_545",
+          "meaning_vi": "xếp hàng"
+        },
+        {
+          "text": "轮流",
+          "pinyin": "lúnliú",
+          "hanviet": "Luân Lưu",
+          "hsk": 6,
+          "word_id": "hsk6_877",
+          "meaning_vi": "lần lượt, thay phiên"
+        },
+        {
+          "text": "获得",
+          "pinyin": "huòdé",
+          "hanviet": "Hoạch Đắc",
+          "hsk": 4,
+          "word_id": "hsk4_316",
+          "meaning_vi": "đạt được, giành được"
+        },
+        {
+          "text": "自行车",
+          "pinyin": "zìxíngchē",
+          "hanviet": "Tự Hành Xa",
+          "hsk": 3,
+          "word_id": "hsk3_1070",
+          "meaning_vi": "xe đạp"
+        },
+        {
+          "text": "票",
+          "pinyin": "piào",
+          "hanviet": "Phiếu",
+          "hsk": 2,
+          "word_id": "hsk2_416",
+          "meaning_vi": "vé"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "缝纫机",
+          "pinyin": "féng rèn jī",
+          "hanviet": "Phùng Nhận Cơ"
+        },
+        {
+          "text": "票",
+          "pinyin": "piào",
+          "hanviet": "Phiếu",
+          "hsk": 2,
+          "word_id": "hsk2_416",
+          "meaning_vi": "vé"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "zh": "因为发了钱也没用，大家有钱没票买不了什么好东西。",
+      "pinyin": "yīn wèi fā le qián yě méi yòng ， dà jiā yǒu qián méi piào mǎi bù liǎo shén me hǎo dōng xī 。",
+      "vi": "Bởi vì nó cũng vô dụng ngay cả khi bạn đưa tiền. Có tiền mà không có vé thì không mua được thứ gì tốt.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "因为",
+          "pinyin": "yīnwèi",
+          "hanviet": "Nhân Vi",
+          "hsk": 2,
+          "word_id": "hsk2_476",
+          "meaning_vi": "bởi vì"
+        },
+        {
+          "text": "发了",
+          "pinyin": "fā le",
+          "hanviet": "Phát Liễu"
+        },
+        {
+          "text": "钱",
+          "pinyin": "qián",
+          "hanviet": "Tiền",
+          "hsk": 1,
+          "word_id": "hsk1_235",
+          "meaning_vi": "tiền"
+        },
+        {
+          "text": "也",
+          "pinyin": "yě",
+          "hanviet": "Dã",
+          "hsk": 1,
+          "word_id": "hsk1_359",
+          "meaning_vi": "cũng"
+        },
+        {
+          "text": "没用",
+          "pinyin": "méi yòng",
+          "hanviet": "Một Dụng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "大家",
+          "pinyin": "dàjiā",
+          "hanviet": "Đại Gia",
+          "hsk": 1,
+          "word_id": "hsk1_54",
+          "meaning_vi": "mọi người"
+        },
+        {
+          "text": "有钱",
+          "pinyin": "yǒu qián",
+          "hanviet": "Hữu Tiền"
+        },
+        {
+          "text": "没票",
+          "pinyin": "méi piào",
+          "hanviet": "Một Phiếu"
+        },
+        {
+          "text": "买",
+          "pinyin": "mǎi",
+          "hanviet": "Mãi",
+          "hsk": 1,
+          "word_id": "hsk1_190",
+          "meaning_vi": "mua"
+        },
+        {
+          "text": "不了",
+          "pinyin": "bù liǎo",
+          "hanviet": "Bất Liễu"
+        },
+        {
+          "text": "什么",
+          "pinyin": "shénme",
+          "hanviet": "Thập Ma",
+          "hsk": 1,
+          "word_id": "hsk1_257",
+          "meaning_vi": "cái gì"
+        },
+        {
+          "text": "好",
+          "pinyin": "hǎo",
+          "hanviet": "Hảo",
+          "hsk": 1,
+          "word_id": "hsk1_114",
+          "meaning_vi": "tốt, được"
+        },
+        {
+          "text": "东西",
+          "pinyin": "dōngxi",
+          "hanviet": "Đông Tây",
+          "hsk": 1,
+          "word_id": "hsk1_73",
+          "meaning_vi": "đồ vật"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "zh": "大家的年终收获取决于单位是不是“利害部门”，厂长或者局长有没有“本事”和“魄力”。",
+      "pinyin": "dà jiā de nián zhōng shōu huò qǔ jué yú dān wèi shì bú shì “ lì hài bù mén ”， chǎng zhǎng huò zhě jú zhǎng yǒu méi yǒu “ běn shì ” hé “ pò lì ”。",
+      "vi": "Việc thu hoạch cuối năm của mỗi người phụ thuộc vào việc đơn vị có phải là “bộ phận liên quan” hay không và giám đốc nhà máy hay giám đốc có “khả năng” và “dũng cảm” hay không.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "大家",
+          "pinyin": "dàjiā",
+          "hanviet": "Đại Gia",
+          "hsk": 1,
+          "word_id": "hsk1_54",
+          "meaning_vi": "mọi người"
         },
         {
           "text": "的",
@@ -287,29 +3748,114 @@
           "meaning_vi": "cuối năm"
         },
         {
-          "text": "奖励",
-          "pinyin": "jiǎnglì",
-          "hanviet": "Thưởng Lệ",
+          "text": "收获",
+          "pinyin": "shōuhuò",
+          "hanviet": "Thu Hoạch",
           "hsk": 5,
-          "word_id": "hsk5_583",
-          "meaning_vi": "khen thưởng, phần thưởng"
+          "word_id": "hsk5_1043",
+          "meaning_vi": "thu hoạch"
         },
         {
-          "text": "—"
+          "text": "取决于",
+          "pinyin": "qǔ jué yú",
+          "hanviet": "Thủ Quyết Vu"
         },
         {
-          "text": "—"
+          "text": "单位",
+          "pinyin": "dānwèi",
+          "hanviet": "Thiện Vị",
+          "hsk": 4,
+          "word_id": "hsk4_134",
+          "meaning_vi": "đơn vị, cơ quan"
         },
         {
-          "text": "‘"
+          "text": "是不是",
+          "pinyin": "shì bú shì",
+          "hanviet": "Thị Bất Thị"
         },
         {
-          "text": "腊赐",
-          "pinyin": "là cì",
-          "hanviet": "Tịch Tứ"
+          "text": "“"
         },
         {
-          "text": "’"
+          "text": "利害",
+          "pinyin": "lìhài",
+          "hanviet": "Lợi Hại",
+          "hsk": 7,
+          "word_id": "hsk7_2549",
+          "meaning_vi": "lợi hại, được mất"
+        },
+        {
+          "text": "部门",
+          "pinyin": "bùmén",
+          "hanviet": "Bộ Môn",
+          "hsk": 4,
+          "word_id": "hsk4_57",
+          "meaning_vi": "bộ phận, phòng ban"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "厂长",
+          "pinyin": "chǎng zhǎng",
+          "hanviet": "Hán Trường"
+        },
+        {
+          "text": "或者",
+          "pinyin": "huòzhě",
+          "hanviet": "Hoặc Giả",
+          "hsk": 3,
+          "word_id": "hsk3_775",
+          "meaning_vi": "hoặc là"
+        },
+        {
+          "text": "局长",
+          "pinyin": "jú zhǎng",
+          "hanviet": "Cục Trưởng"
+        },
+        {
+          "text": "有没有",
+          "pinyin": "yǒu méi yǒu",
+          "hanviet": "Hữu Một Hữu"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "本事",
+          "pinyin": "běnshi",
+          "hanviet": "Bản Sự",
+          "hsk": 7,
+          "word_id": "hsk7_161",
+          "meaning_vi": "năng lực, tài cán"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "魄力",
+          "pinyin": "pòlì",
+          "hanviet": "Phách Lực",
+          "hsk": 7,
+          "word_id": "hsk7_3126",
+          "meaning_vi": "sự quyết đoán, khí phách"
+        },
+        {
+          "text": "”"
         },
         {
           "text": "。"
@@ -317,102 +3863,25 @@
       ]
     },
     {
-      "id": "s3",
-      "zh": "每逢岁末‘腊日’祭祀之后，皇帝会根据官员品级赏赐大量的钱币、牛肉、美酒以及上等丝绸。",
-      "pinyin": "Měiféng suìmò ‘Làrì’ jìsì zhīhòu, huángdì huì gēnjù guānyuán pǐnjí shǎngcì dàliàng de qiánbì, niúròu, měijiǔ yǐjí shàngděng sīchóu.",
-      "vi": "Mỗi dịp tế lễ cuối năm ngày Lạp Nhật, hoàng đế căn cứ phẩm hàm ban thưởng lượng lớn tiền tài, thịt bò, rượu ngon và lụa là.",
+      "id": "s23",
+      "zh": "随着改革开放的深入，市场上商品极大丰富，实物奖励逐渐取消，单位开始在年底发放年终奖金了。",
+      "pinyin": "suí zhe gǎi gé kāi fàng de shēn rù ， shì chǎng shàng shāng pǐn jí dà fēng fù ， shí wù jiǎng lì zhú jiàn qǔ xiāo ， dān wèi kāi shǐ zài nián dǐ fā fàng nián zhōng jiǎng jīn le 。",
+      "vi": "Với việc cải cách và mở cửa ngày càng sâu rộng, thị trường trở nên phong phú hơn về hàng hóa, các phần thưởng vật chất dần bị hủy bỏ, các đơn vị bắt đầu phát thưởng cuối năm vào dịp cuối năm.",
       "audio_start_ms": null,
       "audio_end_ms": null,
       "tokens": [
         {
-          "text": "每逢",
-          "pinyin": "měi féng",
-          "hanviet": "Mỗi Phùng"
-        },
-        {
-          "text": "岁末",
-          "pinyin": "suì mò",
-          "hanviet": "Tuế Mạt"
-        },
-        {
-          "text": "‘"
-        },
-        {
-          "text": "腊日",
-          "pinyin": "là rì",
-          "hanviet": "Tịch Nhật"
-        },
-        {
-          "text": "’"
-        },
-        {
-          "text": "祭祀",
-          "pinyin": "jìsì",
-          "hanviet": "Tế Tự",
-          "hsk": 7,
-          "word_id": "hsk7_1913",
-          "meaning_vi": "cúng tế, tế lễ, tế tự"
-        },
-        {
-          "text": "之后",
-          "pinyin": "zhīhòu",
-          "hanviet": "Chi Hậu",
+          "text": "随着",
+          "pinyin": "suízhe",
+          "hanviet": "Tuỳ Trước",
           "hsk": 4,
-          "word_id": "hsk4_941",
-          "meaning_vi": "sau, sau khi"
+          "word_id": "hsk4_710",
+          "meaning_vi": "theo cùng với"
         },
         {
-          "text": "，"
-        },
-        {
-          "text": "皇帝",
-          "pinyin": "huángdì",
-          "hanviet": "Hoàng Đế",
-          "hsk": 6,
-          "word_id": "hsk6_582",
-          "meaning_vi": "hoàng đế"
-        },
-        {
-          "text": "会",
-          "pinyin": "huì",
-          "hanviet": "Hội",
-          "hsk": 1,
-          "word_id": "hsk1_43",
-          "meaning_vi": "biết, sẽ"
-        },
-        {
-          "text": "根据",
-          "pinyin": "gēnjù",
-          "hanviet": "Căn Cứ",
-          "hsk": 3,
-          "word_id": "hsk3_379",
-          "meaning_vi": "căn cứ, dựa theo"
-        },
-        {
-          "text": "官员",
-          "pinyin": "guānyuán",
-          "hanviet": "Quan Viên",
-          "hsk": 6,
-          "word_id": "hsk6_495",
-          "meaning_vi": "chính thức"
-        },
-        {
-          "text": "品级",
-          "pinyin": "pǐn jí",
-          "hanviet": "Phẩm Cấp"
-        },
-        {
-          "text": "赏赐",
-          "pinyin": "shǎng cì",
-          "hanviet": "Thưởng Tứ"
-        },
-        {
-          "text": "大量",
-          "pinyin": "dàliàng",
-          "hanviet": "Đại Lượng",
-          "hsk": 4,
-          "word_id": "hsk4_126",
-          "meaning_vi": "lượng lớn, nhiều"
+          "text": "改革开放",
+          "pinyin": "gǎi gé kāi fàng",
+          "hanviet": "Cải Cách Khai Phóng"
         },
         {
           "text": "的",
@@ -423,33 +3892,23 @@
           "meaning_vi": "của (trợ từ)"
         },
         {
-          "text": "钱币",
-          "pinyin": "qián bì",
-          "hanviet": "Tiền Tệ"
-        },
-        {
-          "text": "、"
-        },
-        {
-          "text": "牛肉",
-          "pinyin": "niú ròu",
-          "hanviet": "Ngưu Nhục"
-        },
-        {
-          "text": "、"
-        },
-        {
-          "text": "美酒",
-          "pinyin": "měi jiǔ",
-          "hanviet": "Mỹ Tửu"
-        },
-        {
-          "text": "以及",
-          "pinyin": "yǐjí",
-          "hanviet": "Dĩ Cập",
+          "text": "深入",
+          "pinyin": "shēnrù",
+          "hanviet": "Thâm Nhập",
           "hsk": 5,
-          "word_id": "hsk5_1363",
-          "meaning_vi": "cùng với, và"
+          "word_id": "hsk5_985",
+          "meaning_vi": "đi sâu vào, sâu sắc, sâu rộng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "市场",
+          "pinyin": "shìchǎng",
+          "hanviet": "Thị Trường",
+          "hsk": 4,
+          "word_id": "hsk4_669",
+          "meaning_vi": "thị trường, chợ"
         },
         {
           "text": "上",
@@ -460,299 +3919,71 @@
           "meaning_vi": "trên"
         },
         {
-          "text": "等",
-          "pinyin": "děng",
-          "hanviet": "Đẳng",
+          "text": "商品",
+          "pinyin": "shāngpǐn",
+          "hanviet": "Thương Phẩm",
+          "hsk": 4,
+          "word_id": "hsk4_630",
+          "meaning_vi": "hàng hóa"
+        },
+        {
+          "text": "极大丰富",
+          "pinyin": "jí dà fēng fù",
+          "hanviet": "Cực Đại Phong Phú"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "实物",
+          "pinyin": "shíwù",
+          "hanviet": "Thực Vật",
+          "hsk": 7,
+          "word_id": "hsk7_3680",
+          "meaning_vi": "vật thật; hiện vật"
+        },
+        {
+          "text": "奖励",
+          "pinyin": "jiǎnglì",
+          "hanviet": "Thưởng Lệ",
+          "hsk": 5,
+          "word_id": "hsk5_583",
+          "meaning_vi": "khen thưởng, phần thưởng"
+        },
+        {
+          "text": "逐渐",
+          "pinyin": "zhújiàn",
+          "hanviet": "Trục Tiêm",
+          "hsk": 5,
+          "word_id": "hsk5_1538",
+          "meaning_vi": "dần dần"
+        },
+        {
+          "text": "取消",
+          "pinyin": "qǔxiāo",
+          "hanviet": "Thủ Tiêu",
+          "hsk": 4,
+          "word_id": "hsk4_597",
+          "meaning_vi": "hủy bỏ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "单位",
+          "pinyin": "dānwèi",
+          "hanviet": "Thiện Vị",
+          "hsk": 4,
+          "word_id": "hsk4_134",
+          "meaning_vi": "đơn vị, cơ quan"
+        },
+        {
+          "text": "开始",
+          "pinyin": "kāishǐ",
+          "hanviet": "Khai Thuỷ",
           "hsk": 2,
-          "word_id": "hsk2_20",
-          "meaning_vi": "đợi, chờ"
-        },
-        {
-          "text": "丝绸",
-          "pinyin": "sīchóu",
-          "hanviet": "Tơ Trù",
-          "hsk": 7,
-          "word_id": "hsk7_3844",
-          "meaning_vi": "lụa, tơ lụa"
-        },
-        {
-          "text": "。"
-        }
-      ]
-    },
-    {
-      "id": "s4",
-      "zh": "高级官员如大将军、三公所领取的腊赐极其丰厚，甚至超过了他们一整年的日常俸禄收入。",
-      "pinyin": "Gāojí guānyuán rú dàjiāngjūn, sāngōng suǒ lǐngqǔ de làcì jíqí fēnghòu, shènzhì chāoguò le tāmen yì zhěng nián de rìcháng fènglù shōurù.",
-      "vi": "Quan lại cấp cao như Đại tướng quân, Tam công nhận phần thưởng cực kỳ lớn, thậm chí vượt qua cả bổng lộc cả một năm.",
-      "audio_start_ms": null,
-      "audio_end_ms": null,
-      "tokens": [
-        {
-          "text": "高级官员",
-          "pinyin": "gāo jí guān yuán",
-          "hanviet": "Cao Cấp Quan Viên"
-        },
-        {
-          "text": "如",
-          "pinyin": "rú",
-          "hanviet": "Như",
-          "hsk": 5,
-          "word_id": "hsk5_932",
-          "meaning_vi": "chẳng hạn như"
-        },
-        {
-          "text": "大将军",
-          "pinyin": "dà jiāng jūn",
-          "hanviet": "Đại Tướng Quân"
-        },
-        {
-          "text": "、"
-        },
-        {
-          "text": "三公",
-          "pinyin": "sān gōng",
-          "hanviet": "Tam Công"
-        },
-        {
-          "text": "所",
-          "pinyin": "sǔnshī",
-          "hanviet": "Tổn Thất",
-          "hsk": 5,
-          "word_id": "hsk5_1095",
-          "meaning_vi": "tổn thất, thiệt hại"
-        },
-        {
-          "text": "领取",
-          "pinyin": "lǐngqǔ",
-          "hanviet": "Lãnh Thủ",
-          "hsk": 5,
-          "word_id": "hsk5_728",
-          "meaning_vi": "nhận, lĩnh (tiền, đồ, chứng chỉ)"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "腊",
-          "pinyin": "là",
-          "hanviet": "Tịch"
-        },
-        {
-          "text": "赐",
-          "pinyin": "cì",
-          "hanviet": "Tứ",
-          "hsk": 7,
-          "word_id": "hsk7_663",
-          "meaning_vi": "ban cho, ban thưởng"
-        },
-        {
-          "text": "极其",
-          "pinyin": "jíqí",
-          "hanviet": "Cực Kì/cực Kỳ",
-          "hsk": 5,
-          "word_id": "hsk5_533",
-          "meaning_vi": "cực kỳ, hết sức"
-        },
-        {
-          "text": "丰厚",
-          "pinyin": "fēnghòu",
-          "hanviet": "Phong Hậu",
-          "hsk": 7,
-          "word_id": "hsk7_1188",
-          "meaning_vi": "hậu hĩnh, dồi dào"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "甚至",
-          "pinyin": "shènzhì",
-          "hanviet": "Thậm Chí",
-          "hsk": 4,
-          "word_id": "hsk4_645",
-          "meaning_vi": "thậm chí"
-        },
-        {
-          "text": "超过",
-          "pinyin": "chāoguò",
-          "hanviet": "Siêu Quá",
-          "hsk": 4,
-          "word_id": "hsk4_74",
-          "meaning_vi": "vượt qua"
-        },
-        {
-          "text": "了",
-          "pinyin": "le",
-          "hanviet": "Liễu",
-          "hsk": 1,
-          "word_id": "hsk1_535",
-          "meaning_vi": "rồi (trợ từ)"
-        },
-        {
-          "text": "他们",
-          "pinyin": "tāmen",
-          "hanviet": "Tha Môn",
-          "hsk": 1,
-          "word_id": "hsk1_570",
-          "meaning_vi": "họ (đại từ)"
-        },
-        {
-          "text": "一",
-          "pinyin": "yī",
-          "hanviet": "Nhất",
-          "hsk": 1,
-          "word_id": "hsk1_360",
-          "meaning_vi": "một"
-        },
-        {
-          "text": "整年",
-          "pinyin": "zhěng nián",
-          "hanviet": "Chỉnh Niên"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "日常",
-          "pinyin": "rìcháng",
-          "hanviet": "Nhật Thường",
-          "hsk": 4,
-          "word_id": "hsk4_618",
-          "meaning_vi": "thường ngày, hàng ngày"
-        },
-        {
-          "text": "俸禄",
-          "pinyin": "fèng lù",
-          "hanviet": "Bổng Lộc"
-        },
-        {
-          "text": "收入",
-          "pinyin": "shōurù",
-          "hanviet": "Thu Nhập",
-          "hsk": 4,
-          "word_id": "hsk4_678",
-          "meaning_vi": "thu nhập"
-        },
-        {
-          "text": "。"
-        }
-      ]
-    },
-    {
-      "id": "s5",
-      "zh": "这项优厚待遇不仅体现了朝廷对百官辛劳的犒劳慰问，更在冬日里增添了阖家欢乐的年节温情。",
-      "pinyin": "Zhè xiàng yōuhòu dàiyù bùjǐn tǐxiàn le cháotíng duì bǎiguān xīnláo de kàoláo wèiwèn, gèng zài dōngrì lǐ zēngtiān le héjiā-huānlè de niánjié wēnqíng.",
-      "vi": "Chế độ đãi ngộ này không chỉ thể hiện sự thăm hỏi của hoàng cung mà còn mang đến không khí ấm áp sum vầy trong những ngày đông giá rét.",
-      "audio_start_ms": null,
-      "audio_end_ms": null,
-      "tokens": [
-        {
-          "text": "这项",
-          "pinyin": "zhè xiàng",
-          "hanviet": "Giá Hạng"
-        },
-        {
-          "text": "优厚",
-          "pinyin": "yōu hòu",
-          "hanviet": "Ưu Hậu"
-        },
-        {
-          "text": "待遇",
-          "pinyin": "dàiyù",
-          "hanviet": "Đãi Ngộ",
-          "hsk": 5,
-          "word_id": "hsk5_237",
-          "meaning_vi": "đãi ngộ"
-        },
-        {
-          "text": "不仅",
-          "pinyin": "bùjǐn",
-          "hanviet": "Bất Cận",
-          "hsk": 4,
-          "word_id": "hsk4_55",
-          "meaning_vi": "không chỉ"
-        },
-        {
-          "text": "体现",
-          "pinyin": "tǐxiàn",
-          "hanviet": "Thể Hiện",
-          "hsk": 5,
-          "word_id": "hsk5_1121",
-          "meaning_vi": "thể hiện"
-        },
-        {
-          "text": "了",
-          "pinyin": "le",
-          "hanviet": "Liễu",
-          "hsk": 1,
-          "word_id": "hsk1_535",
-          "meaning_vi": "rồi (trợ từ)"
-        },
-        {
-          "text": "朝廷",
-          "pinyin": "cháo tíng",
-          "hanviet": "Triều Đình"
-        },
-        {
-          "text": "对",
-          "pinyin": "duì",
-          "hanviet": "Đối",
-          "hsk": 1,
-          "word_id": "hsk1_79",
-          "meaning_vi": "đối với, hướng về (giới từ)"
-        },
-        {
-          "text": "百官",
-          "pinyin": "bǎi guān",
-          "hanviet": "Bách Quan"
-        },
-        {
-          "text": "辛劳",
-          "pinyin": "xīn láo",
-          "hanviet": "Tân Lao"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "犒劳",
-          "pinyin": "kào láo",
-          "hanviet": "Khao Lao"
-        },
-        {
-          "text": "慰问",
-          "pinyin": "wèiwèn",
-          "hanviet": "Uỷ Vấn",
-          "hsk": 7,
-          "word_id": "hsk7_4262",
-          "meaning_vi": "thăm hỏi, an ủi"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "更",
-          "pinyin": "gèng",
-          "hanviet": "Canh",
-          "hsk": 3,
-          "word_id": "hsk3_737",
-          "meaning_vi": "càng, hơn"
+          "word_id": "hsk2_378",
+          "meaning_vi": "bắt đầu"
         },
         {
           "text": "在",
@@ -763,25 +3994,25 @@
           "meaning_vi": "ở, đang"
         },
         {
-          "text": "冬日",
-          "pinyin": "dōng rì",
-          "hanviet": "Đông Nhật"
+          "text": "年底",
+          "pinyin": "niándǐ",
+          "hanviet": "Niên Để",
+          "hsk": 4,
+          "word_id": "hsk4_535",
+          "meaning_vi": "cuối năm"
         },
         {
-          "text": "里",
-          "pinyin": "lǐ",
-          "hanviet": "Lý",
-          "hsk": 1,
-          "word_id": "hsk1_536",
-          "meaning_vi": "bên trong"
+          "text": "发放",
+          "pinyin": "fāfàng",
+          "hanviet": "Phát Phóng",
+          "hsk": 6,
+          "word_id": "hsk6_353",
+          "meaning_vi": "phân phối"
         },
         {
-          "text": "增添",
-          "pinyin": "zēngtiān",
-          "hanviet": "Tăng Thiêm",
-          "hsk": 7,
-          "word_id": "hsk7_5130",
-          "meaning_vi": "thêm vào, tô điểm thêm"
+          "text": "年终奖金",
+          "pinyin": "nián zhōng jiǎng jīn",
+          "hanviet": "Niên Chung Thưởng Kim"
         },
         {
           "text": "了",
@@ -792,9 +4023,125 @@
           "meaning_vi": "rồi (trợ từ)"
         },
         {
-          "text": "阖家欢乐",
-          "pinyin": "hé jiā huān lè",
-          "hanviet": "Hạp Gia Hoan Lạc"
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "zh": "粮票自行车券年终奖从哪里来创收方式各不同在我国古代，高级官员的年终奖由朝廷发放，小官和小吏的年终奖则需要他们自己想办法创收。",
+      "pinyin": "liáng piào zì xíng chē quàn nián zhōng jiǎng cóng nǎ lǐ lái chuàng shōu fāng shì gè bù tóng zài wǒ guó gǔ dài ， gāo jí guān yuán de nián zhōng jiǎng yóu cháo tíng fā fàng ， xiǎo guān hé xiǎo lì de nián zhōng jiǎng zé xū yào tā men zì jǐ xiǎng bàn fǎ chuàng shōu 。",
+      "vi": "Phiếu thực phẩm, phiếu giảm giá xe đạp và tiền thưởng cuối năm đến từ đâu? Có nhiều cách khác nhau để tạo thu nhập. Ở Trung Quốc cổ đại, tiền thưởng cuối năm cho các quan chức cấp cao được triều đình ban hành, trong khi tiền thưởng cuối năm cho các quan chức cấp dưới và quan chức nhỏ yêu cầu họ phải tự tìm cách tạo ra thu nhập.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "粮票",
+          "pinyin": "liáng piào",
+          "hanviet": "Lương Phiếu"
+        },
+        {
+          "text": "自行车",
+          "pinyin": "zìxíngchē",
+          "hanviet": "Tự Hành Xa",
+          "hsk": 3,
+          "word_id": "hsk3_1070",
+          "meaning_vi": "xe đạp"
+        },
+        {
+          "text": "券",
+          "pinyin": "quàn",
+          "hanviet": "Khoán",
+          "hsk": 6,
+          "word_id": "hsk6_1082",
+          "meaning_vi": "phiếu, vé, voucher"
+        },
+        {
+          "text": "年终奖",
+          "pinyin": "nián zhōng jiǎng",
+          "hanviet": "Niên Chung Thưởng"
+        },
+        {
+          "text": "从",
+          "pinyin": "cóng",
+          "hanviet": "Tòng",
+          "hsk": 2,
+          "word_id": "hsk2_324",
+          "meaning_vi": "từ"
+        },
+        {
+          "text": "哪里",
+          "pinyin": "nǎlǐ",
+          "hanviet": "Nả Lý",
+          "hsk": 1,
+          "word_id": "hsk1_542",
+          "meaning_vi": "ở đâu (đại từ)"
+        },
+        {
+          "text": "来",
+          "pinyin": "lái",
+          "hanviet": "Lai",
+          "hsk": 1,
+          "word_id": "hsk1_533",
+          "meaning_vi": "đến, tới"
+        },
+        {
+          "text": "创收",
+          "pinyin": "chuàng shōu",
+          "hanviet": "Thương Thu"
+        },
+        {
+          "text": "方式",
+          "pinyin": "fāngshì",
+          "hanviet": "Phương Thức",
+          "hsk": 4,
+          "word_id": "hsk4_194",
+          "meaning_vi": "phương thức, cách thức"
+        },
+        {
+          "text": "各",
+          "pinyin": "gè",
+          "hanviet": "Các",
+          "hsk": 4,
+          "word_id": "hsk4_244",
+          "meaning_vi": "mỗi, từng"
+        },
+        {
+          "text": "不同",
+          "pinyin": "bù tóng",
+          "hanviet": "Bất Đồng",
+          "hsk": 3,
+          "word_id": "hsk3_640",
+          "meaning_vi": "khác nhau, không giống"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "我国",
+          "pinyin": "wǒ guó",
+          "hanviet": "Ngã Quốc"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "高级官员",
+          "pinyin": "gāo jí guān yuán",
+          "hanviet": "Cao Cấp Quan Viên"
         },
         {
           "text": "的",
@@ -805,27 +4152,2625 @@
           "meaning_vi": "của (trợ từ)"
         },
         {
-          "text": "年节",
-          "pinyin": "nián jié",
-          "hanviet": "Niên Tiết"
+          "text": "年终奖",
+          "pinyin": "nián zhōng jiǎng",
+          "hanviet": "Niên Chung Thưởng"
         },
         {
-          "text": "温情",
-          "pinyin": "wēn qíng",
-          "hanviet": "Ôn Tình"
+          "text": "由",
+          "pinyin": "yóu",
+          "hanviet": "Do",
+          "hsk": 4,
+          "word_id": "hsk4_884",
+          "meaning_vi": "do, từ"
+        },
+        {
+          "text": "朝廷",
+          "pinyin": "cháo tíng",
+          "hanviet": "Triều Đình"
+        },
+        {
+          "text": "发放",
+          "pinyin": "fāfàng",
+          "hanviet": "Phát Phóng",
+          "hsk": 6,
+          "word_id": "hsk6_353",
+          "meaning_vi": "phân phối"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "小官",
+          "pinyin": "xiǎo guān",
+          "hanviet": "Tiểu Quan"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "小吏",
+          "pinyin": "xiǎo lì",
+          "hanviet": "Tiểu Lại"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "年终奖",
+          "pinyin": "nián zhōng jiǎng",
+          "hanviet": "Niên Chung Thưởng"
+        },
+        {
+          "text": "则",
+          "pinyin": "xìtǒng",
+          "hanviet": "Hệ Thống",
+          "hsk": 5,
+          "word_id": "hsk5_1229",
+          "meaning_vi": "hệ thống"
+        },
+        {
+          "text": "需要",
+          "pinyin": "xūyào",
+          "hanviet": "Nhu Yêu",
+          "hsk": 3,
+          "word_id": "hsk3_991",
+          "meaning_vi": "cần thiết, cần"
+        },
+        {
+          "text": "他们",
+          "pinyin": "tāmen",
+          "hanviet": "Tha Môn",
+          "hsk": 1,
+          "word_id": "hsk1_570",
+          "meaning_vi": "họ (đại từ)"
+        },
+        {
+          "text": "自己",
+          "pinyin": "zìjǐ",
+          "hanviet": "Tự Kỷ",
+          "hsk": 2,
+          "word_id": "hsk2_494",
+          "meaning_vi": "tự mình, bản thân"
+        },
+        {
+          "text": "想",
+          "pinyin": "xiǎng",
+          "hanviet": "Tưởng",
+          "hsk": 1,
+          "word_id": "hsk1_336",
+          "meaning_vi": "muốn, nghĩ"
+        },
+        {
+          "text": "办法",
+          "pinyin": "bànfǎ",
+          "hanviet": "Biện Pháp",
+          "hsk": 3,
+          "word_id": "hsk3_611",
+          "meaning_vi": "cách, phương pháp"
+        },
+        {
+          "text": "创收",
+          "pinyin": "chuàng shōu",
+          "hanviet": "Thương Thu"
         },
         {
           "text": "。"
         }
       ]
+    },
+    {
+      "id": "s25",
+      "zh": "秦汉魏晋时期，公文写在竹简上，公文传达过程中，用口袋把公文装起来，再糊上胶泥，盖上公章。",
+      "pinyin": "qín hàn wèi jìn shí qī ， gōng wén xiě zài zhú jiǎn shàng ， gōng wén chuán dá guò chéng zhōng ， yòng kǒu dài bǎ gōng wén zhuāng qǐ lái ， zài hú shàng jiāo ní ， gài shàng gōng zhāng 。",
+      "vi": "Vào thời Tần, Hán, Ngụy, Tấn, văn thư đều được viết trên phiếu tre. Trong quá trình truyền tải, các văn bản chính thức được đóng gói trong túi, phủ đất sét và đóng dấu chính thức.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "秦汉",
+          "pinyin": "qín hàn",
+          "hanviet": "Tần Hán"
+        },
+        {
+          "text": "魏晋",
+          "pinyin": "wèi jìn",
+          "hanviet": "Nguỵ Tấn"
+        },
+        {
+          "text": "时期",
+          "pinyin": "shíqī",
+          "hanviet": "Thời Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_1016",
+          "meaning_vi": "thời kỳ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "公文",
+          "pinyin": "gōng wén",
+          "hanviet": "Công Văn"
+        },
+        {
+          "text": "写",
+          "pinyin": "xiě",
+          "hanviet": "Tả",
+          "hsk": 1,
+          "word_id": "hsk1_342",
+          "meaning_vi": "viết"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "竹简",
+          "pinyin": "zhú jiǎn",
+          "hanviet": "Trúc Giản"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "公文",
+          "pinyin": "gōng wén",
+          "hanviet": "Công Văn"
+        },
+        {
+          "text": "传达",
+          "pinyin": "chuándá",
+          "hanviet": "Truyền Đạt",
+          "hsk": 6,
+          "word_id": "hsk6_202",
+          "meaning_vi": "truyền đạt"
+        },
+        {
+          "text": "过程",
+          "pinyin": "guòchéng",
+          "hanviet": "Quá Trình",
+          "hsk": 4,
+          "word_id": "hsk4_282",
+          "meaning_vi": "quá trình"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "用",
+          "pinyin": "yòng",
+          "hanviet": "Dụng",
+          "hsk": 3,
+          "word_id": "hsk3_1020",
+          "meaning_vi": "dùng"
+        },
+        {
+          "text": "口袋",
+          "pinyin": "kǒudai",
+          "hanviet": "Khẩu Đại",
+          "hsk": 5,
+          "word_id": "hsk5_674",
+          "meaning_vi": "túi áo, túi quần, túi"
+        },
+        {
+          "text": "把",
+          "pinyin": "bǎ",
+          "hanviet": "Bả",
+          "hsk": 3,
+          "word_id": "hsk3_606",
+          "meaning_vi": "cái, chiếc (lượng từ); cầm, nắm"
+        },
+        {
+          "text": "公文",
+          "pinyin": "gōng wén",
+          "hanviet": "Công Văn"
+        },
+        {
+          "text": "装",
+          "pinyin": "zhuāng",
+          "hanviet": "Trang",
+          "hsk": 4,
+          "word_id": "hsk4_974",
+          "meaning_vi": "đóng gói, đóng giả"
+        },
+        {
+          "text": "起来",
+          "pinyin": "qǐlái",
+          "hanviet": "Khởi Lai",
+          "hsk": 2,
+          "word_id": "hsk2_418",
+          "meaning_vi": "dậy, lên (chỉ hướng)"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "再糊上",
+          "pinyin": "zài hú shàng",
+          "hanviet": "Tái Hồ Thướng"
+        },
+        {
+          "text": "胶泥",
+          "pinyin": "jiāo ní",
+          "hanviet": "Giao Nê"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "盖上",
+          "pinyin": "gài shàng",
+          "hanviet": "Cái Thướng"
+        },
+        {
+          "text": "公章",
+          "pinyin": "gōng zhāng",
+          "hanviet": "Công Chương"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "zh": "另一个部门收到这个口袋，剥掉胶泥，把公文倒出来，装公文的这个口袋就成了废品。",
+      "pinyin": "lìng yí gè bù mén shōu dào zhè ge kǒu dài ， bō diào jiāo ní ， bǎ gōng wén dào chū lái ， zhuāng gōng wén de zhè ge kǒu dài jiù chéng le fèi pǐn 。",
+      "vi": "Một bộ phận khác nhận túi, bóc keo, đổ hồ sơ chính thức ra. Chiếc túi đựng giấy tờ chính thức trở thành đồ bỏ đi.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "另",
+          "pinyin": "lìng",
+          "hanviet": "Lánh",
+          "hsk": 4,
+          "word_id": "hsk4_480",
+          "meaning_vi": "khác; ngoài ra"
+        },
+        {
+          "text": "一个",
+          "pinyin": "yí gè",
+          "hanviet": "Nhất Cá"
+        },
+        {
+          "text": "部门",
+          "pinyin": "bùmén",
+          "hanviet": "Bộ Môn",
+          "hsk": 4,
+          "word_id": "hsk4_57",
+          "meaning_vi": "bộ phận, phòng ban"
+        },
+        {
+          "text": "收到",
+          "pinyin": "shōudào",
+          "hanviet": "Thu Đáo",
+          "hsk": 3,
+          "word_id": "hsk3_918",
+          "meaning_vi": "nhận được"
+        },
+        {
+          "text": "这个",
+          "pinyin": "zhège",
+          "hanviet": "Giá Cá",
+          "hsk": 1,
+          "word_id": "hsk1_605",
+          "meaning_vi": "cái này (đại từ)"
+        },
+        {
+          "text": "口袋",
+          "pinyin": "kǒudai",
+          "hanviet": "Khẩu Đại",
+          "hsk": 5,
+          "word_id": "hsk5_674",
+          "meaning_vi": "túi áo, túi quần, túi"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "剥掉",
+          "pinyin": "bō diào",
+          "hanviet": "Bác Điệu"
+        },
+        {
+          "text": "胶泥",
+          "pinyin": "jiāo ní",
+          "hanviet": "Giao Nê"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "把",
+          "pinyin": "bǎ",
+          "hanviet": "Bả",
+          "hsk": 3,
+          "word_id": "hsk3_606",
+          "meaning_vi": "cái, chiếc (lượng từ); cầm, nắm"
+        },
+        {
+          "text": "公文",
+          "pinyin": "gōng wén",
+          "hanviet": "Công Văn"
+        },
+        {
+          "text": "倒",
+          "pinyin": "dào",
+          "hanviet": "Đảo",
+          "hsk": 4,
+          "word_id": "hsk4_139",
+          "meaning_vi": "đổ, lật ngược"
+        },
+        {
+          "text": "出来",
+          "pinyin": "chūlái",
+          "hanviet": "Xuất Lai",
+          "hsk": 2,
+          "word_id": "hsk2_318",
+          "meaning_vi": "đi ra"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "装",
+          "pinyin": "zhuāng",
+          "hanviet": "Trang",
+          "hsk": 4,
+          "word_id": "hsk4_974",
+          "meaning_vi": "đóng gói, đóng giả"
+        },
+        {
+          "text": "公文",
+          "pinyin": "gōng wén",
+          "hanviet": "Công Văn"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "这个",
+          "pinyin": "zhège",
+          "hanviet": "Giá Cá",
+          "hsk": 1,
+          "word_id": "hsk1_605",
+          "meaning_vi": "cái này (đại từ)"
+        },
+        {
+          "text": "口袋",
+          "pinyin": "kǒudai",
+          "hanviet": "Khẩu Đại",
+          "hsk": 5,
+          "word_id": "hsk5_674",
+          "meaning_vi": "túi áo, túi quần, túi"
+        },
+        {
+          "text": "就",
+          "pinyin": "jiù",
+          "hanviet": "Tựu",
+          "hsk": 2,
+          "word_id": "hsk2_376",
+          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)"
+        },
+        {
+          "text": "成",
+          "pinyin": "chéng",
+          "hanviet": "Thành",
+          "hsk": 6,
+          "word_id": "hsk6_156",
+          "meaning_vi": "vào (số lượng)"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "废品",
+          "pinyin": "fèipǐn",
+          "hanviet": "Phế Phẩm",
+          "hsk": 7,
+          "word_id": "hsk7_1142",
+          "meaning_vi": "phế phẩm, đồ phế liệu"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "zh": "那时候装竹简的口袋有皮质的、有丝织的，也有麻布的，都能卖钱。",
+      "pinyin": "nà shí hòu zhuāng zhú jiǎn de kǒu dài yǒu pí zhì dì 、 yǒu sī zhī de ， yě yǒu má bù de ， dōu néng mài qián 。",
+      "vi": "Vào thời đó, những chiếc túi đựng thẻ tre được làm bằng da, lụa hoặc vải lanh, tất cả đều có thể bán lấy tiền.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "那",
+          "pinyin": "nà",
+          "hanviet": "Na",
+          "hsk": 1,
+          "word_id": "hsk1_207",
+          "meaning_vi": "đó, kia"
+        },
+        {
+          "text": "时候",
+          "pinyin": "shíhou",
+          "hanviet": "Thời Hậu",
+          "hsk": 1,
+          "word_id": "hsk1_262",
+          "meaning_vi": "lúc, thời điểm"
+        },
+        {
+          "text": "装",
+          "pinyin": "zhuāng",
+          "hanviet": "Trang",
+          "hsk": 4,
+          "word_id": "hsk4_974",
+          "meaning_vi": "đóng gói, đóng giả"
+        },
+        {
+          "text": "竹简",
+          "pinyin": "zhú jiǎn",
+          "hanviet": "Trúc Giản"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "口袋",
+          "pinyin": "kǒudai",
+          "hanviet": "Khẩu Đại",
+          "hsk": 5,
+          "word_id": "hsk5_674",
+          "meaning_vi": "túi áo, túi quần, túi"
+        },
+        {
+          "text": "有",
+          "pinyin": "yǒu",
+          "hanviet": "Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_380",
+          "meaning_vi": "có"
+        },
+        {
+          "text": "皮质",
+          "pinyin": "pí zhì",
+          "hanviet": "Bì Chất"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "有",
+          "pinyin": "yǒu",
+          "hanviet": "Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_380",
+          "meaning_vi": "có"
+        },
+        {
+          "text": "丝织",
+          "pinyin": "sī zhī",
+          "hanviet": "Tơ Chức"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "也",
+          "pinyin": "yě",
+          "hanviet": "Dã",
+          "hsk": 1,
+          "word_id": "hsk1_359",
+          "meaning_vi": "cũng"
+        },
+        {
+          "text": "有",
+          "pinyin": "yǒu",
+          "hanviet": "Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_380",
+          "meaning_vi": "có"
+        },
+        {
+          "text": "麻布",
+          "pinyin": "má bù",
+          "hanviet": "Ma Bố"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "都",
+          "pinyin": "dōu",
+          "hanviet": "Đô",
+          "hsk": 1,
+          "word_id": "hsk1_76",
+          "meaning_vi": "đều"
+        },
+        {
+          "text": "能",
+          "pinyin": "néng",
+          "hanviet": "Năng",
+          "hsk": 1,
+          "word_id": "hsk1_212",
+          "meaning_vi": "có thể"
+        },
+        {
+          "text": "卖钱",
+          "pinyin": "mài qián",
+          "hanviet": "Mại Tiền"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "zh": "攒的口袋多了，到年底运到市场上卖掉，年终奖就有了。",
+      "pinyin": "zǎn de kǒu dài duō le ， dào nián dǐ yùn dào shì chǎng shàng mài diào ， nián zhōng jiǎng jiù yǒu le 。",
+      "vi": "Nếu bạn tiết kiệm được nhiều tiền và bán nó ra thị trường vào cuối năm, bạn sẽ nhận được tiền thưởng cuối năm.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "攒",
+          "pinyin": "zǎn",
+          "hanviet": "Toàn",
+          "hsk": 7,
+          "word_id": "hsk7_5100",
+          "meaning_vi": "tích lũy, dành dụm"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "口袋",
+          "pinyin": "kǒudai",
+          "hanviet": "Khẩu Đại",
+          "hsk": 5,
+          "word_id": "hsk5_674",
+          "meaning_vi": "túi áo, túi quần, túi"
+        },
+        {
+          "text": "多",
+          "pinyin": "duō",
+          "hanviet": "Đa",
+          "hsk": 1,
+          "word_id": "hsk1_80",
+          "meaning_vi": "nhiều"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "到",
+          "pinyin": "dào",
+          "hanviet": "Đáo",
+          "hsk": 1,
+          "word_id": "hsk1_59",
+          "meaning_vi": "đến"
+        },
+        {
+          "text": "年底",
+          "pinyin": "niándǐ",
+          "hanviet": "Niên Để",
+          "hsk": 4,
+          "word_id": "hsk4_535",
+          "meaning_vi": "cuối năm"
+        },
+        {
+          "text": "运到",
+          "pinyin": "yùn dào",
+          "hanviet": "Vận Đáo"
+        },
+        {
+          "text": "市场",
+          "pinyin": "shìchǎng",
+          "hanviet": "Thị Trường",
+          "hsk": 4,
+          "word_id": "hsk4_669",
+          "meaning_vi": "thị trường, chợ"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "卖掉",
+          "pinyin": "mài diào",
+          "hanviet": "Mại Điệu"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "年终奖",
+          "pinyin": "nián zhōng jiǎng",
+          "hanviet": "Niên Chung Thưởng"
+        },
+        {
+          "text": "就",
+          "pinyin": "jiù",
+          "hanviet": "Tựu",
+          "hsk": 2,
+          "word_id": "hsk2_376",
+          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)"
+        },
+        {
+          "text": "有",
+          "pinyin": "yǒu",
+          "hanviet": "Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_380",
+          "meaning_vi": "có"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "zh": "唐朝和宋朝有一段时间允许各州府衙门向民间放高利贷。",
+      "pinyin": "táng cháo hé sòng cháo yǒu yī duàn shí jiān yǔn xǔ gè zhōu fǔ yá mén xiàng mín jiān fàng gāo lì dài 。",
+      "vi": "Trong một khoảng thời gian vào thời nhà Đường và nhà Tống, chính quyền các bang được phép cho khu vực tư nhân vay nặng lãi.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "唐朝",
+          "pinyin": "táng cháo",
+          "hanviet": "Đường Triều"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "宋朝",
+          "pinyin": "sòng cháo",
+          "hanviet": "Tống Triều"
+        },
+        {
+          "text": "有",
+          "pinyin": "yǒu",
+          "hanviet": "Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_380",
+          "meaning_vi": "có"
+        },
+        {
+          "text": "一段时间",
+          "pinyin": "yī duàn shí jiān",
+          "hanviet": "Nhất Đoạn Thời Gian"
+        },
+        {
+          "text": "允许",
+          "pinyin": "yǔnxǔ",
+          "hanviet": "Duẫn Hứa",
+          "hsk": 4,
+          "word_id": "hsk4_912",
+          "meaning_vi": "cho phép"
+        },
+        {
+          "text": "各",
+          "pinyin": "gè",
+          "hanviet": "Các",
+          "hsk": 4,
+          "word_id": "hsk4_244",
+          "meaning_vi": "mỗi, từng"
+        },
+        {
+          "text": "州府",
+          "pinyin": "zhōu fǔ",
+          "hanviet": "Châu Phủ"
+        },
+        {
+          "text": "衙门",
+          "pinyin": "yá mén",
+          "hanviet": "Nha Môn"
+        },
+        {
+          "text": "向",
+          "pinyin": "xiàng",
+          "hanviet": "Hướng",
+          "hsk": 3,
+          "word_id": "hsk3_973",
+          "meaning_vi": "hướng về, về phía"
+        },
+        {
+          "text": "民间",
+          "pinyin": "mínjiān",
+          "hanviet": "Dân Gian",
+          "hsk": 6,
+          "word_id": "hsk6_919",
+          "meaning_vi": "dân gian, trong dân chúng"
+        },
+        {
+          "text": "放高利贷",
+          "pinyin": "fàng gāo lì dài",
+          "hanviet": "Phóng Cao Lợi Thải"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "zh": "高利贷的本金，有朝廷拨付的“本钱”和“公用钱”，也有官员们自己凑的集资款。",
+      "pinyin": "gāo lì dài de běn jīn ， yǒu cháo tíng bō fù de “ běn qián ” hé “ gōng yòng qián ”， yě yǒu guān yuán men zì jǐ còu de jí zī kuǎn 。",
+      "vi": "Tiền gốc của việc cho vay nặng lãi bao gồm \"vốn\" và \"tiền công\" do tòa án phân bổ, cũng như các khoản tiền do chính các quan chức huy động.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "高利贷",
+          "pinyin": "gāo lì dài",
+          "hanviet": "Cao Lợi Thải"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "本金",
+          "pinyin": "běn jīn",
+          "hanviet": "Bản Kim"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "有",
+          "pinyin": "yǒu",
+          "hanviet": "Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_380",
+          "meaning_vi": "có"
+        },
+        {
+          "text": "朝廷",
+          "pinyin": "cháo tíng",
+          "hanviet": "Triều Đình"
+        },
+        {
+          "text": "拨付",
+          "pinyin": "bō fù",
+          "hanviet": "Bát Phó"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "本钱",
+          "pinyin": "běnqián",
+          "hanviet": "Bản Tiền",
+          "hsk": 7,
+          "word_id": "hsk7_159",
+          "meaning_vi": "vốn (tiền)"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "公用",
+          "pinyin": "gōngyòng",
+          "hanviet": "Công Dụng",
+          "hsk": 7,
+          "word_id": "hsk7_1405",
+          "meaning_vi": "dùng chung, công cộng"
+        },
+        {
+          "text": "钱",
+          "pinyin": "qián",
+          "hanviet": "Tiền",
+          "hsk": 1,
+          "word_id": "hsk1_235",
+          "meaning_vi": "tiền"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "也",
+          "pinyin": "yě",
+          "hanviet": "Dã",
+          "hsk": 1,
+          "word_id": "hsk1_359",
+          "meaning_vi": "cũng"
+        },
+        {
+          "text": "有",
+          "pinyin": "yǒu",
+          "hanviet": "Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_380",
+          "meaning_vi": "có"
+        },
+        {
+          "text": "官员",
+          "pinyin": "guānyuán",
+          "hanviet": "Quan Viên",
+          "hsk": 6,
+          "word_id": "hsk6_495",
+          "meaning_vi": "chính thức"
+        },
+        {
+          "text": "们",
+          "pinyin": "men",
+          "hanviet": "Môn",
+          "hsk": 1,
+          "word_id": "hsk1_538",
+          "meaning_vi": "họ (hậu tố)"
+        },
+        {
+          "text": "自己",
+          "pinyin": "zìjǐ",
+          "hanviet": "Tự Kỷ",
+          "hsk": 2,
+          "word_id": "hsk2_494",
+          "meaning_vi": "tự mình, bản thân"
+        },
+        {
+          "text": "凑",
+          "pinyin": "còu",
+          "hanviet": "Thấu",
+          "hsk": 7,
+          "word_id": "hsk7_680",
+          "meaning_vi": "gom góp, góp lại, lại gần"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "集资款",
+          "pinyin": "jí zī kuǎn",
+          "hanviet": "Tập Tư Khoản"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "zh": "获得的利润，国家财政抽小头，地方留大头，大部分利息都存进了小金库，其中一些钱用以岁尾发年货、发红包。",
+      "pinyin": "huò dé de lì rùn ， guó jiā cái zhèng chōu xiǎo tóu ， dì fāng liú dà tóu ， dà bù fèn lì xī dōu cún jìn le xiǎo jīn kù ， qí zhōng yī xiē qián yòng yǐ suì wěi fā nián huò 、 fā hóng bāo 。",
+      "vi": "Tài chính quốc gia chiếm một phần nhỏ lợi nhuận, trong khi chính quyền địa phương giữ một phần lớn. Phần lớn tiền lãi được gửi vào một kho bạc nhỏ, một phần tiền được dùng để phân phát hàng năm mới và phong bao lì xì vào cuối năm.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "获得",
+          "pinyin": "huòdé",
+          "hanviet": "Hoạch Đắc",
+          "hsk": 4,
+          "word_id": "hsk4_316",
+          "meaning_vi": "đạt được, giành được"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "利润",
+          "pinyin": "lìrùn",
+          "hanviet": "Lợi Nhuận",
+          "hsk": 5,
+          "word_id": "hsk5_708",
+          "meaning_vi": "lợi nhuận"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "国家",
+          "pinyin": "guójiā",
+          "hanviet": "Quốc Gia",
+          "hsk": 3,
+          "word_id": "hsk3_749",
+          "meaning_vi": "quốc gia"
+        },
+        {
+          "text": "财政",
+          "pinyin": "cáizhèng",
+          "hanviet": "Tài Chính",
+          "hsk": 7,
+          "word_id": "hsk7_367",
+          "meaning_vi": "tài chính (nhà nước)"
+        },
+        {
+          "text": "抽小头",
+          "pinyin": "chōu xiǎo tóu",
+          "hanviet": "Trừu Tiểu Đầu"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "地方",
+          "pinyin": "dìfang",
+          "hanviet": "Địa Phương",
+          "hsk": 3,
+          "word_id": "hsk3_688",
+          "meaning_vi": "nơi, địa phương"
+        },
+        {
+          "text": "留",
+          "pinyin": "liú",
+          "hanviet": "Lưu",
+          "hsk": 4,
+          "word_id": "hsk4_482",
+          "meaning_vi": "ở lại, lưu lại"
+        },
+        {
+          "text": "大头",
+          "pinyin": "dà tóu",
+          "hanviet": "Đại Đầu"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "大部分",
+          "pinyin": "dà bù fèn",
+          "hanviet": "Đại Bộ Phận"
+        },
+        {
+          "text": "利息",
+          "pinyin": "lìxī",
+          "hanviet": "Lợi Tức",
+          "hsk": 6,
+          "word_id": "hsk6_842",
+          "meaning_vi": "tiền lãi"
+        },
+        {
+          "text": "都",
+          "pinyin": "dōu",
+          "hanviet": "Đô",
+          "hsk": 1,
+          "word_id": "hsk1_76",
+          "meaning_vi": "đều"
+        },
+        {
+          "text": "存进",
+          "pinyin": "cún jìn",
+          "hanviet": "Tồn Tiến"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "小金库",
+          "pinyin": "xiǎo jīn kù",
+          "hanviet": "Tiểu Kim Khố"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "其中",
+          "pinyin": "qízhōng",
+          "hanviet": "Kỳ Trung",
+          "hsk": 4,
+          "word_id": "hsk4_568",
+          "meaning_vi": "trong đó"
+        },
+        {
+          "text": "一些",
+          "pinyin": "yìxiē",
+          "hanviet": "Nhất Ta",
+          "hsk": 1,
+          "word_id": "hsk1_596",
+          "meaning_vi": "một số, một vài, một ít"
+        },
+        {
+          "text": "钱",
+          "pinyin": "qián",
+          "hanviet": "Tiền",
+          "hsk": 1,
+          "word_id": "hsk1_235",
+          "meaning_vi": "tiền"
+        },
+        {
+          "text": "用以",
+          "pinyin": "yòng yǐ",
+          "hanviet": "Dụng Dĩ"
+        },
+        {
+          "text": "岁尾",
+          "pinyin": "suì wěi",
+          "hanviet": "Tuế Vĩ"
+        },
+        {
+          "text": "发",
+          "pinyin": "fā",
+          "hanviet": "Phát",
+          "hsk": 3,
+          "word_id": "hsk3_710",
+          "meaning_vi": "phát ra, gửi"
+        },
+        {
+          "text": "年货",
+          "pinyin": "nián huò",
+          "hanviet": "Niên Hoá"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "发红包",
+          "pinyin": "fā hóng bāo",
+          "hanviet": "Phát Hồng Bao"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "zh": "明清时期官员的俸禄很低，京官的年终奖金不是朝廷发，而是来自地方官员。",
+      "pinyin": "míng qīng shí qī guān yuán de fèng lù hěn dī ， jīng guān de nián zhōng jiǎng jīn bú shì cháo tíng fā ， ér shì lái zì dì fāng guān yuán 。",
+      "vi": "Vào thời nhà Minh và nhà Thanh, lương của quan lại rất thấp. Tiền thưởng cuối năm cho quan chức Bắc Kinh không phải do tòa án ban hành mà đến từ các quan chức địa phương.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "明清",
+          "pinyin": "míng qīng",
+          "hanviet": "Minh Thanh"
+        },
+        {
+          "text": "时期",
+          "pinyin": "shíqī",
+          "hanviet": "Thời Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_1016",
+          "meaning_vi": "thời kỳ"
+        },
+        {
+          "text": "官员",
+          "pinyin": "guānyuán",
+          "hanviet": "Quan Viên",
+          "hsk": 6,
+          "word_id": "hsk6_495",
+          "meaning_vi": "chính thức"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "俸禄",
+          "pinyin": "fèng lù",
+          "hanviet": "Bổng Lộc"
+        },
+        {
+          "text": "很",
+          "pinyin": "hěn",
+          "hanviet": "Ngận",
+          "hsk": 1,
+          "word_id": "hsk1_118",
+          "meaning_vi": "rất"
+        },
+        {
+          "text": "低",
+          "pinyin": "dī",
+          "hanviet": "Đê",
+          "hsk": 4,
+          "word_id": "hsk4_149",
+          "meaning_vi": "thấp"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "京官",
+          "pinyin": "jīng guān",
+          "hanviet": "Kinh Quan"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "年终奖金",
+          "pinyin": "nián zhōng jiǎng jīn",
+          "hanviet": "Niên Chung Thưởng Kim"
+        },
+        {
+          "text": "不是",
+          "pinyin": "bú shì",
+          "hanviet": "Bất Thị"
+        },
+        {
+          "text": "朝廷",
+          "pinyin": "cháo tíng",
+          "hanviet": "Triều Đình"
+        },
+        {
+          "text": "发",
+          "pinyin": "fā",
+          "hanviet": "Phát",
+          "hsk": 3,
+          "word_id": "hsk3_710",
+          "meaning_vi": "phát ra, gửi"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "而是",
+          "pinyin": "ér shì",
+          "hanviet": "Nhi Thị"
+        },
+        {
+          "text": "来自",
+          "pinyin": "láizì",
+          "hanviet": "Lai Tự",
+          "hsk": 3,
+          "word_id": "hsk3_471",
+          "meaning_vi": "đến từ"
+        },
+        {
+          "text": "地方",
+          "pinyin": "dìfang",
+          "hanviet": "Địa Phương",
+          "hsk": 3,
+          "word_id": "hsk3_688",
+          "meaning_vi": "nơi, địa phương"
+        },
+        {
+          "text": "官员",
+          "pinyin": "guānyuán",
+          "hanviet": "Quan Viên",
+          "hsk": 6,
+          "word_id": "hsk6_495",
+          "meaning_vi": "chính thức"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "zh": "当时地方官员来钱渠道多，而京官就比较穷困一些。",
+      "pinyin": "dāng shí dì fāng guān yuán lái qián qú dào duō ， ér jīng guān jiù bǐ jiào qióng kùn yī xiē 。",
+      "vi": "Vào thời điểm đó, quan chức địa phương có nhiều nguồn tiền, trong khi quan chức ở thủ đô tương đối nghèo.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "当时",
+          "pinyin": "dāngshí",
+          "hanviet": "Đương Thời",
+          "hsk": 4,
+          "word_id": "hsk4_136",
+          "meaning_vi": "lúc đó, khi đó"
+        },
+        {
+          "text": "地方",
+          "pinyin": "dìfang",
+          "hanviet": "Địa Phương",
+          "hsk": 3,
+          "word_id": "hsk3_688",
+          "meaning_vi": "nơi, địa phương"
+        },
+        {
+          "text": "官员",
+          "pinyin": "guānyuán",
+          "hanviet": "Quan Viên",
+          "hsk": 6,
+          "word_id": "hsk6_495",
+          "meaning_vi": "chính thức"
+        },
+        {
+          "text": "来",
+          "pinyin": "lái",
+          "hanviet": "Lai",
+          "hsk": 1,
+          "word_id": "hsk1_533",
+          "meaning_vi": "đến, tới"
+        },
+        {
+          "text": "钱",
+          "pinyin": "qián",
+          "hanviet": "Tiền",
+          "hsk": 1,
+          "word_id": "hsk1_235",
+          "meaning_vi": "tiền"
+        },
+        {
+          "text": "渠道",
+          "pinyin": "qúdào",
+          "hanviet": "Cừ Đạo",
+          "hsk": 6,
+          "word_id": "hsk6_1074",
+          "meaning_vi": "kênh, con đường (thông tin, tiêu thụ)"
+        },
+        {
+          "text": "多",
+          "pinyin": "duō",
+          "hanviet": "Đa",
+          "hsk": 1,
+          "word_id": "hsk1_80",
+          "meaning_vi": "nhiều"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "而",
+          "pinyin": "ér",
+          "hanviet": "Nhi",
+          "hsk": 4,
+          "word_id": "hsk4_183",
+          "meaning_vi": "mà, và"
+        },
+        {
+          "text": "京官",
+          "pinyin": "jīng guān",
+          "hanviet": "Kinh Quan"
+        },
+        {
+          "text": "就",
+          "pinyin": "jiù",
+          "hanviet": "Tựu",
+          "hsk": 2,
+          "word_id": "hsk2_376",
+          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)"
+        },
+        {
+          "text": "比较",
+          "pinyin": "bǐjiào",
+          "hanviet": "Tỷ Giảo",
+          "hsk": 3,
+          "word_id": "hsk3_621",
+          "meaning_vi": "tương đối, so sánh"
+        },
+        {
+          "text": "穷困",
+          "pinyin": "qióng kùn",
+          "hanviet": "Cùng Khốn"
+        },
+        {
+          "text": "一些",
+          "pinyin": "yìxiē",
+          "hanviet": "Nhất Ta",
+          "hsk": 1,
+          "word_id": "hsk1_596",
+          "meaning_vi": "một số, một vài, một ít"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "zh": "地方官员为获取信息和得到京官的照应，每当冬日降临，往往以为京官购置取暖木炭为名，向六部司官孝敬钱财，此谓“炭敬”。",
+      "pinyin": "dì fāng guān yuán wèi huò qǔ xìn xī hé dé dào jīng guān de zhào yìng ， měi dāng dōng rì jiàng lín ， wǎng wǎng yǐ wéi jīng guān gòu zhì qǔ nuǎn mù tàn wèi míng ， xiàng liù bù sī guān xiào jìng qián cái ， cǐ wèi “ tàn jìng ”。",
+      "vi": "Để có được thông tin và nhận được sự hỗ trợ từ các quan chức thủ đô, mỗi khi mùa đông đến, các quan chức địa phương thường tỏ lòng kính trọng các quan chức sáu bộ dưới danh nghĩa mua than để sưởi ấm. Đây được gọi là \"tôn trọng than\".",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "地方",
+          "pinyin": "dìfang",
+          "hanviet": "Địa Phương",
+          "hsk": 3,
+          "word_id": "hsk3_688",
+          "meaning_vi": "nơi, địa phương"
+        },
+        {
+          "text": "官员",
+          "pinyin": "guānyuán",
+          "hanviet": "Quan Viên",
+          "hsk": 6,
+          "word_id": "hsk6_495",
+          "meaning_vi": "chính thức"
+        },
+        {
+          "text": "为",
+          "pinyin": "wèi",
+          "hanviet": "Vi",
+          "hsk": 3,
+          "word_id": "hsk3_954",
+          "meaning_vi": "vì, cho"
+        },
+        {
+          "text": "获取信息",
+          "pinyin": "huò qǔ xìn xī",
+          "hanviet": "Hoạch Thủ Tín Tức"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "得到",
+          "pinyin": "dédào",
+          "hanviet": "Đắc Đáo",
+          "hsk": 3,
+          "word_id": "hsk3_681",
+          "meaning_vi": "nhận được, có được"
+        },
+        {
+          "text": "京官",
+          "pinyin": "jīng guān",
+          "hanviet": "Kinh Quan"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "照应",
+          "pinyin": "zhào yìng",
+          "hanviet": "Chiếu Ưng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "每当",
+          "pinyin": "měi dāng",
+          "hanviet": "Mỗi Đương"
+        },
+        {
+          "text": "冬日",
+          "pinyin": "dōng rì",
+          "hanviet": "Đông Nhật"
+        },
+        {
+          "text": "降临",
+          "pinyin": "jiànglín",
+          "hanviet": "Giáng Lâm",
+          "hsk": 7,
+          "word_id": "hsk7_2023",
+          "meaning_vi": "buông xuống, giáng xuống, ập đến"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "往往",
+          "pinyin": "wǎngwǎng",
+          "hanviet": "Vãng Vãng",
+          "hsk": 4,
+          "word_id": "hsk4_766",
+          "meaning_vi": "thường thường"
+        },
+        {
+          "text": "以为",
+          "pinyin": "yǐwéi",
+          "hanviet": "Dĩ Vi",
+          "hsk": 3,
+          "word_id": "hsk3_1009",
+          "meaning_vi": "cho rằng, nghĩ là"
+        },
+        {
+          "text": "京官",
+          "pinyin": "jīng guān",
+          "hanviet": "Kinh Quan"
+        },
+        {
+          "text": "购置",
+          "pinyin": "gòu zhì",
+          "hanviet": "Cấu Trí"
+        },
+        {
+          "text": "取暖",
+          "pinyin": "qǔnuǎn",
+          "hanviet": "Thủ Noãn",
+          "hsk": 7,
+          "word_id": "hsk7_3351",
+          "meaning_vi": "ấm áp"
+        },
+        {
+          "text": "木炭",
+          "pinyin": "mù tàn",
+          "hanviet": "Mộc Thán"
+        },
+        {
+          "text": "为名",
+          "pinyin": "wèi míng",
+          "hanviet": "Vi Danh"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "向",
+          "pinyin": "xiàng",
+          "hanviet": "Hướng",
+          "hsk": 3,
+          "word_id": "hsk3_973",
+          "meaning_vi": "hướng về, về phía"
+        },
+        {
+          "text": "六部",
+          "pinyin": "liù bù",
+          "hanviet": "Lục Bộ"
+        },
+        {
+          "text": "司官",
+          "pinyin": "sī guān",
+          "hanviet": "Ti Quan"
+        },
+        {
+          "text": "孝敬",
+          "pinyin": "xiàojìng",
+          "hanviet": "Hiếu Kính",
+          "hsk": 7,
+          "word_id": "hsk7_4512",
+          "meaning_vi": "hiếu kính; phụng dưỡng"
+        },
+        {
+          "text": "钱财",
+          "pinyin": "qiáncái",
+          "hanviet": "Tiền Tài",
+          "hsk": 7,
+          "word_id": "hsk7_3220",
+          "meaning_vi": "tiền tài; tiền của"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "此谓",
+          "pinyin": "cǐ wèi",
+          "hanviet": "Thử Vị"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "炭敬",
+          "pinyin": "tàn jìng",
+          "hanviet": "Thán Kính"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "zh": "有诗证曰：“瑞雪逍遥下九重，行衙吏部挂彩灯。",
+      "pinyin": "yǒu shī zhèng yuē ：“ ruì xuě xiāo yáo xià jiǔ chóng ， xíng yá lì bù guà cǎi dēng 。",
+      "vi": "Có một bài thơ chứng minh: “Tuyết cát tường rơi tự do ở tầng thứ chín, nhân viên văn phòng treo những chiếc đèn lồng nhiều màu sắc.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "有",
+          "pinyin": "yǒu",
+          "hanviet": "Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_380",
+          "meaning_vi": "có"
+        },
+        {
+          "text": "诗证",
+          "pinyin": "shī zhèng",
+          "hanviet": "Thi Chứng"
+        },
+        {
+          "text": "曰",
+          "pinyin": "yuē",
+          "hanviet": "Viết",
+          "hsk": 7,
+          "word_id": "hsk7_5061",
+          "meaning_vi": "rằng, nói rằng (thường dùng trong văn ngôn)"
+        },
+        {
+          "text": "："
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "瑞雪",
+          "pinyin": "ruìxuě",
+          "hanviet": "Thuỵ Tuyết",
+          "hsk": 7,
+          "word_id": "hsk7_3464",
+          "meaning_vi": "tuyết lành; tuyết báo hiệu mùa màng bội thu"
+        },
+        {
+          "text": "逍遥",
+          "pinyin": "xiāo yáo",
+          "hanviet": "Tiêu Dao"
+        },
+        {
+          "text": "下",
+          "pinyin": "xià",
+          "hanviet": "Hạ",
+          "hsk": 1,
+          "word_id": "hsk1_581",
+          "meaning_vi": "dưới"
+        },
+        {
+          "text": "九重",
+          "pinyin": "jiǔ chóng",
+          "hanviet": "Cửu Trọng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "行衙",
+          "pinyin": "xíng yá",
+          "hanviet": "Hành Nha"
+        },
+        {
+          "text": "吏部",
+          "pinyin": "lì bù",
+          "hanviet": "Lại Bộ"
+        },
+        {
+          "text": "挂",
+          "pinyin": "guà",
+          "hanviet": "Quải",
+          "hsk": 4,
+          "word_id": "hsk4_268",
+          "meaning_vi": "treo"
+        },
+        {
+          "text": "彩灯",
+          "pinyin": "cǎi dēng",
+          "hanviet": "Thái Đăng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "zh": "频叩朱门献暖炉，玉做火塘熔炭红。”",
+      "pinyin": "pín kòu zhū mén xiàn nuǎn lú ， yù zuò huǒ táng róng tàn hóng 。”",
+      "vi": "Thường xuyên gõ cửa đỏ để sưởi ấm bếp lửa, ao lửa ngọc tan ra màu đỏ than. \"",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "频",
+          "pinyin": "pín",
+          "hanviet": "Tần"
+        },
+        {
+          "text": "叩",
+          "pinyin": "kòu",
+          "hanviet": "Khấu"
+        },
+        {
+          "text": "朱门",
+          "pinyin": "zhū mén",
+          "hanviet": "Chu Môn"
+        },
+        {
+          "text": "献",
+          "pinyin": "xiàn",
+          "hanviet": "Hiến",
+          "hsk": 7,
+          "word_id": "hsk7_4454",
+          "meaning_vi": "hiến tặng; dâng tặng; cống hiến"
+        },
+        {
+          "text": "暖炉",
+          "pinyin": "nuǎn lú",
+          "hanviet": "Noãn Lò"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "玉",
+          "pinyin": "yù",
+          "hanviet": "Ngọc",
+          "hsk": 7,
+          "word_id": "hsk7_5014",
+          "meaning_vi": "ngọc"
+        },
+        {
+          "text": "做",
+          "pinyin": "zuò",
+          "hanviet": "Tố",
+          "hsk": 1,
+          "word_id": "hsk1_424",
+          "meaning_vi": "làm"
+        },
+        {
+          "text": "火塘",
+          "pinyin": "huǒ táng",
+          "hanviet": "Hoả Đường"
+        },
+        {
+          "text": "熔炭",
+          "pinyin": "róng tàn",
+          "hanviet": "Dung Thán"
+        },
+        {
+          "text": "红",
+          "pinyin": "hóng",
+          "hanviet": "Hồng",
+          "hsk": 5,
+          "word_id": "hsk5_483",
+          "meaning_vi": "đỏ"
+        },
+        {
+          "text": "。"
+        },
+        {
+          "text": "”"
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "zh": "实际上，炭敬就是春节过节费，在地方上叫节敬。",
+      "pinyin": "shí jì shàng ， tàn jìng jiù shì chūn jié guò jié fèi ， zài dì fāng shàng jiào jié jìng 。",
+      "vi": "Trên thực tế, Tan Jing là lễ hội mùa xuân, được người dân địa phương gọi là Jie Jing.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "实际上",
+          "pinyin": "shíjìshàng",
+          "hanviet": "Thực Tế Thướng",
+          "hsk": 4,
+          "word_id": "hsk4_660",
+          "meaning_vi": "thực tế, trên thực tế"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "炭敬",
+          "pinyin": "tàn jìng",
+          "hanviet": "Thán Kính"
+        },
+        {
+          "text": "就是",
+          "pinyin": "jiùshì",
+          "hanviet": "Tựu Thị",
+          "hsk": 4,
+          "word_id": "hsk4_408",
+          "meaning_vi": "chính là; dù… cũng"
+        },
+        {
+          "text": "春节",
+          "pinyin": "chūn jié",
+          "hanviet": "Xuân Tiết"
+        },
+        {
+          "text": "过节费",
+          "pinyin": "guò jié fèi",
+          "hanviet": "Quá Tiết Phí"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "地方",
+          "pinyin": "dìfang",
+          "hanviet": "Địa Phương",
+          "hsk": 3,
+          "word_id": "hsk3_688",
+          "meaning_vi": "nơi, địa phương"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "叫",
+          "pinyin": "jiào",
+          "hanviet": "Khiếu",
+          "hsk": 1,
+          "word_id": "hsk1_140",
+          "meaning_vi": "gọi là, tên là"
+        },
+        {
+          "text": "节敬",
+          "pinyin": "jié jìng",
+          "hanviet": "Tiết Kính"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "zh": "炭敬是“馈岁”（新年礼物）的意思，所以地方官员赠送所附的信里一般不直接说数目，而以梅花诗八韵、十韵或数十韵来代替，如果是四十两银子就说是“四十贤人”，三百两就说“毛诗一部”，显得很儒雅。",
+      "pinyin": "tàn jìng shì “ kuì suì ”（ xīn nián lǐ wù ） de yì si ， suǒ yǐ dì fāng guān yuán zèng sòng suǒ fù de xìn lǐ yì bān bù zhí jiē shuō shù mù ， ér yǐ méi huā shī bā yùn 、 shí yùn huò shù shí yùn lái dài tì ， rú guǒ shì sì shí liǎng yín zi jiù shuō shì “ sì shí xián rén ”， sān bǎi liǎng jiù shuō “ máo shī yī bù ”， xiǎn de hěn rú yǎ 。",
+      "vi": "Tanjing có nghĩa là “tặng Tết” (quà năm mới) nên các bức thư do quan chức địa phương đính kèm thường không đề cập trực tiếp đến số tiền mà thay vào đó sử dụng những bài thơ hoa mận có tám vần, mười vần hoặc hàng chục vần. Nếu là bốn mươi lạng bạc thì gọi là “Bốn mươi hiền nhân”, nếu là ba trăm lạng thì gọi là “Bài thơ của Mao”, trông rất tao nhã.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "炭敬",
+          "pinyin": "tàn jìng",
+          "hanviet": "Thán Kính"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "馈岁",
+          "pinyin": "kuì suì",
+          "hanviet": "Quỹ Tuế"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "（"
+        },
+        {
+          "text": "新年礼物",
+          "pinyin": "xīn nián lǐ wù",
+          "hanviet": "Tân Niên Lễ Vật"
+        },
+        {
+          "text": "）"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "意思",
+          "pinyin": "yìsi",
+          "hanviet": "Ý Tứ",
+          "hsk": 2,
+          "word_id": "hsk2_474",
+          "meaning_vi": "ý nghĩa"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "所以",
+          "pinyin": "suǒyǐ",
+          "hanviet": "Sở Dĩ",
+          "hsk": 2,
+          "word_id": "hsk2_439",
+          "meaning_vi": "vì vậy"
+        },
+        {
+          "text": "地方",
+          "pinyin": "dìfang",
+          "hanviet": "Địa Phương",
+          "hsk": 3,
+          "word_id": "hsk3_688",
+          "meaning_vi": "nơi, địa phương"
+        },
+        {
+          "text": "官员",
+          "pinyin": "guānyuán",
+          "hanviet": "Quan Viên",
+          "hsk": 6,
+          "word_id": "hsk6_495",
+          "meaning_vi": "chính thức"
+        },
+        {
+          "text": "赠送",
+          "pinyin": "zèngsòng",
+          "hanviet": "Tặng Tống",
+          "hsk": 5,
+          "word_id": "hsk5_1459",
+          "meaning_vi": "tặng, biếu tặng"
+        },
+        {
+          "text": "所附",
+          "pinyin": "suǒ fù",
+          "hanviet": "Sở Phụ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "信里",
+          "pinyin": "xìn lǐ",
+          "hanviet": "Tín Lý"
+        },
+        {
+          "text": "一般",
+          "pinyin": "yìbān",
+          "hanviet": "Nhất Ban",
+          "hsk": 3,
+          "word_id": "hsk3_1011",
+          "meaning_vi": "bình thường, nói chung"
+        },
+        {
+          "text": "不",
+          "pinyin": "bù",
+          "hanviet": "Bất",
+          "hsk": 1,
+          "word_id": "hsk1_25",
+          "meaning_vi": "không"
+        },
+        {
+          "text": "直接",
+          "pinyin": "zhíjiē",
+          "hanviet": "Trực Tiếp",
+          "hsk": 4,
+          "word_id": "hsk4_948",
+          "meaning_vi": "trực tiếp"
+        },
+        {
+          "text": "说",
+          "pinyin": "shuō",
+          "hanviet": "Thuyết",
+          "hsk": 1,
+          "word_id": "hsk1_280",
+          "meaning_vi": "nói"
+        },
+        {
+          "text": "数目",
+          "pinyin": "shùmù",
+          "hanviet": "Sổ Mục",
+          "hsk": 6,
+          "word_id": "hsk6_1228",
+          "meaning_vi": "số lượng, con số"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "而",
+          "pinyin": "ér",
+          "hanviet": "Nhi",
+          "hsk": 4,
+          "word_id": "hsk4_183",
+          "meaning_vi": "mà, và"
+        },
+        {
+          "text": "以",
+          "pinyin": "yǐ",
+          "hanviet": "Dĩ",
+          "hsk": 5,
+          "word_id": "hsk5_1362",
+          "meaning_vi": "bằng, dùng"
+        },
+        {
+          "text": "梅花诗",
+          "pinyin": "méi huā shī",
+          "hanviet": "Mai Hoa Thi"
+        },
+        {
+          "text": "八韵",
+          "pinyin": "bā yùn",
+          "hanviet": "Bát Vận"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "十韵",
+          "pinyin": "shí yùn",
+          "hanviet": "Thập Vận"
+        },
+        {
+          "text": "或",
+          "pinyin": "huò",
+          "hanviet": "Hoặc",
+          "hsk": 3,
+          "word_id": "hsk3_774",
+          "meaning_vi": "hoặc"
+        },
+        {
+          "text": "数十",
+          "pinyin": "shù shí",
+          "hanviet": "Sổ Thập"
+        },
+        {
+          "text": "韵来",
+          "pinyin": "yùn lái",
+          "hanviet": "Vận Lai"
+        },
+        {
+          "text": "代替",
+          "pinyin": "dàitì",
+          "hanviet": "Đại Thế",
+          "hsk": 5,
+          "word_id": "hsk5_236",
+          "meaning_vi": "thay thế"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "如果",
+          "pinyin": "rúguǒ",
+          "hanviet": "Như Quả",
+          "hsk": 3,
+          "word_id": "hsk3_901",
+          "meaning_vi": "nếu"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "四十两",
+          "pinyin": "sì shí liǎng",
+          "hanviet": "Tứ Thập Lưỡng"
+        },
+        {
+          "text": "银子",
+          "pinyin": "yín zi",
+          "hanviet": "Ngân Tử"
+        },
+        {
+          "text": "就",
+          "pinyin": "jiù",
+          "hanviet": "Tựu",
+          "hsk": 2,
+          "word_id": "hsk2_376",
+          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)"
+        },
+        {
+          "text": "说",
+          "pinyin": "shuō",
+          "hanviet": "Thuyết",
+          "hsk": 1,
+          "word_id": "hsk1_280",
+          "meaning_vi": "nói"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "四十",
+          "pinyin": "sì shí",
+          "hanviet": "Tứ Thập"
+        },
+        {
+          "text": "贤人",
+          "pinyin": "xián rén",
+          "hanviet": "Hiền Nhân"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "三百两",
+          "pinyin": "sān bǎi liǎng",
+          "hanviet": "Tam Bách Lưỡng"
+        },
+        {
+          "text": "就",
+          "pinyin": "jiù",
+          "hanviet": "Tựu",
+          "hsk": 2,
+          "word_id": "hsk2_376",
+          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)"
+        },
+        {
+          "text": "说",
+          "pinyin": "shuō",
+          "hanviet": "Thuyết",
+          "hsk": 1,
+          "word_id": "hsk1_280",
+          "meaning_vi": "nói"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "毛诗",
+          "pinyin": "máo shī",
+          "hanviet": "Mao Thi"
+        },
+        {
+          "text": "一部",
+          "pinyin": "yī bù",
+          "hanviet": "Nhất Bộ"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "显得",
+          "pinyin": "xiǎnde",
+          "hanviet": "Hiển Đắc",
+          "hsk": 5,
+          "word_id": "hsk5_1234",
+          "meaning_vi": "trông có vẻ, tỏ ra"
+        },
+        {
+          "text": "很",
+          "pinyin": "hěn",
+          "hanviet": "Ngận",
+          "hsk": 1,
+          "word_id": "hsk1_118",
+          "meaning_vi": "rất"
+        },
+        {
+          "text": "儒雅",
+          "pinyin": "rú yǎ",
+          "hanviet": "Nho Nhã"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "zh": "有人送贝勒载涛一千两银子，信封上写的是“千佛名经”四个字，可是这个花花公子连这个意思都不懂，还拿给别人看，后来拆开，才发现里面是一千两的银票。",
+      "pinyin": "yǒu rén sòng bèi lè zài tāo yī qiān liǎng yín zi ， xìn fēng shàng xiě de shì “ qiān fú míng jīng ” sì gè zì ， kě shì zhè ge huā huā gōng zi lián zhè ge yì si dōu bù dǒng ， hái ná gěi bié rén kàn ， hòu lái chāi kāi ， cái fā xiàn lǐ miàn shì yī qiān liǎng de yín piào 。",
+      "vi": "Có người đã cho Beile Zaitao một ngàn lượng bạc. Phong bì có viết dòng chữ \"Kinh Ngàn Phật\", nhưng chàng trai ăn chơi thậm chí còn không hiểu ý nghĩa và chỉ cho người khác xem. Sau đó, khi mở ra, hắn phát hiện bên trong có một ngàn lượng bạc.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "有人",
+          "pinyin": "yǒu rén",
+          "hanviet": "Hữu Nhân"
+        },
+        {
+          "text": "送",
+          "pinyin": "sòng",
+          "hanviet": "Tống",
+          "hsk": 2,
+          "word_id": "hsk2_437",
+          "meaning_vi": "tặng, đưa"
+        },
+        {
+          "text": "贝勒",
+          "pinyin": "bèi lè",
+          "hanviet": "Bối Lặc"
+        },
+        {
+          "text": "载涛",
+          "pinyin": "zài tāo",
+          "hanviet": "Tải Đào"
+        },
+        {
+          "text": "一千两",
+          "pinyin": "yī qiān liǎng",
+          "hanviet": "Nhất Thiên Lưỡng"
+        },
+        {
+          "text": "银子",
+          "pinyin": "yín zi",
+          "hanviet": "Ngân Tử"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "信封",
+          "pinyin": "xìnfēng",
+          "hanviet": "Tín Phong",
+          "hsk": 5,
+          "word_id": "hsk5_1283",
+          "meaning_vi": "bao thư, phong bì"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "写",
+          "pinyin": "xiě",
+          "hanviet": "Tả",
+          "hsk": 1,
+          "word_id": "hsk1_342",
+          "meaning_vi": "viết"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "千佛",
+          "pinyin": "qiān fú",
+          "hanviet": "Thiên Phật"
+        },
+        {
+          "text": "名经",
+          "pinyin": "míng jīng",
+          "hanviet": "Danh Kinh"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "四个",
+          "pinyin": "sì gè",
+          "hanviet": "Tứ Cá"
+        },
+        {
+          "text": "字",
+          "pinyin": "zì",
+          "hanviet": "Tự",
+          "hsk": 1,
+          "word_id": "hsk1_415",
+          "meaning_vi": "chữ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "可是",
+          "pinyin": "kěshì",
+          "hanviet": "Khả Thị",
+          "hsk": 3,
+          "word_id": "hsk3_817",
+          "meaning_vi": "nhưng mà"
+        },
+        {
+          "text": "这个",
+          "pinyin": "zhège",
+          "hanviet": "Giá Cá",
+          "hsk": 1,
+          "word_id": "hsk1_605",
+          "meaning_vi": "cái này (đại từ)"
+        },
+        {
+          "text": "花花公子",
+          "pinyin": "huā huā gōng zi",
+          "hanviet": "Hoa Hoa Công Tử"
+        },
+        {
+          "text": "连",
+          "pinyin": "lián",
+          "hanviet": "Liên",
+          "hsk": 4,
+          "word_id": "hsk4_469",
+          "meaning_vi": "liên tiếp, ngay cả"
+        },
+        {
+          "text": "这个",
+          "pinyin": "zhège",
+          "hanviet": "Giá Cá",
+          "hsk": 1,
+          "word_id": "hsk1_605",
+          "meaning_vi": "cái này (đại từ)"
+        },
+        {
+          "text": "意思",
+          "pinyin": "yìsi",
+          "hanviet": "Ý Tứ",
+          "hsk": 2,
+          "word_id": "hsk2_474",
+          "meaning_vi": "ý nghĩa"
+        },
+        {
+          "text": "都",
+          "pinyin": "dōu",
+          "hanviet": "Đô",
+          "hsk": 1,
+          "word_id": "hsk1_76",
+          "meaning_vi": "đều"
+        },
+        {
+          "text": "不",
+          "pinyin": "bù",
+          "hanviet": "Bất",
+          "hsk": 1,
+          "word_id": "hsk1_25",
+          "meaning_vi": "không"
+        },
+        {
+          "text": "懂",
+          "pinyin": "dǒng",
+          "hanviet": "Đổng",
+          "hsk": 2,
+          "word_id": "hsk2_337",
+          "meaning_vi": "hiểu"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "还",
+          "pinyin": "hái",
+          "hanviet": "Hoàn",
+          "hsk": 1,
+          "word_id": "hsk1_111",
+          "meaning_vi": "vẫn còn"
+        },
+        {
+          "text": "拿给",
+          "pinyin": "ná gěi",
+          "hanviet": "Nã Cấp"
+        },
+        {
+          "text": "别人",
+          "pinyin": "biérén",
+          "hanviet": "Biệt Nhân",
+          "hsk": 3,
+          "word_id": "hsk3_631",
+          "meaning_vi": "người khác"
+        },
+        {
+          "text": "看",
+          "pinyin": "kàn",
+          "hanviet": "Khán",
+          "hsk": 1,
+          "word_id": "hsk1_155",
+          "meaning_vi": "nhìn, xem"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "后来",
+          "pinyin": "hòulái",
+          "hanviet": "Hậu Lai",
+          "hsk": 3,
+          "word_id": "hsk3_761",
+          "meaning_vi": "sau đó"
+        },
+        {
+          "text": "拆开",
+          "pinyin": "chāi kāi",
+          "hanviet": "Sách Khai"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "才",
+          "pinyin": "cái",
+          "hanviet": "Tài"
+        },
+        {
+          "text": "发现",
+          "pinyin": "fāxiàn",
+          "hanviet": "Phát Hiện",
+          "hsk": 3,
+          "word_id": "hsk3_712",
+          "meaning_vi": "phát hiện"
+        },
+        {
+          "text": "里面",
+          "pinyin": "lǐmiàn",
+          "hanviet": "Lý Diện",
+          "hsk": 2,
+          "word_id": "hsk2_390",
+          "meaning_vi": "bên trong"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "一千两",
+          "pinyin": "yī qiān liǎng",
+          "hanviet": "Nhất Thiên Lưỡng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "银票",
+          "pinyin": "yín piào",
+          "hanviet": "Ngân Phiếu"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "zh": "爱新觉罗·载涛，清宣统帝爱新觉罗·溥仪的叔叔",
+      "pinyin": "ài xīn jué luó · zài tāo ， qīng xuān tǒng dì ài xīn jué luó · pǔ yí de shū shū",
+      "vi": "Aixinjueluo Zaitao, chú của Aixinjueluo Puyi, Hoàng đế Huyền Thông nhà Thanh",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "爱新觉罗",
+          "pinyin": "ài xīn jué luó",
+          "hanviet": "Ái Tân Giác La"
+        },
+        {
+          "text": "·"
+        },
+        {
+          "text": "载涛",
+          "pinyin": "zài tāo",
+          "hanviet": "Tải Đào"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "清宣统",
+          "pinyin": "qīng xuān tǒng",
+          "hanviet": "Thanh Tuyên Thống"
+        },
+        {
+          "text": "帝",
+          "pinyin": "dì",
+          "hanviet": "Đế"
+        },
+        {
+          "text": "爱新觉罗",
+          "pinyin": "ài xīn jué luó",
+          "hanviet": "Ái Tân Giác La"
+        },
+        {
+          "text": "·"
+        },
+        {
+          "text": "溥仪",
+          "pinyin": "pǔ yí",
+          "hanviet": "Phổ Nghi"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "叔叔",
+          "pinyin": "shūshu",
+          "hanviet": "Thúc Thúc",
+          "hsk": 3,
+          "word_id": "hsk3_921",
+          "meaning_vi": "chú (em trai của bố)"
+        }
+      ]
     }
   ],
   "vocabulary_spotlight": [
-    "hsk5_575",
-    "hsk5_1512",
-    "hsk3_379",
-    "hsk4_678",
-    "hsk6_957"
+    "hsk5_580",
+    "hsk4_820",
+    "hsk1_60",
+    "hsk5_1503"
   ],
   "quiz": [
     {
