@@ -475,41 +475,52 @@ function StoryCard({ story }) {
   const viTitle = story.title && story.title.vi ? story.title.vi : '';
   const descVi = story.description_vi || '';
   const topicVi = story.topic_vi || '';
+  const isWanwu = story.series === 'wanwu' || (story.topic_vi && story.topic_vi.includes('Vạn vật'));
   const readLabel = isRead ? 'Đã đọc (Bấm để hủy)' : 'Đánh dấu đã đọc';
+
   return (
     <article class={`graded-story-card ${isRead ? 'is-read' : ''}`} onClick={() => openStory(story.id)} tabindex="0" role="button" aria-label={`Đọc bài ${viTitle}`}>
       <div class="graded-card-main">
-        <div class="graded-card-header">
+        {/* 1. Level, Collection & Topic Metadata */}
+        <header class="graded-card-header">
           <div class="graded-card-header-left">
             <span class={`graded-card-level-badge lvl-${lvl}`}>{story.level}</span>{' '}
-            {(story.series === 'wanwu' || (story.topic_vi && story.topic_vi.includes('Vạn vật'))) ? (
-              <span class="graded-book-badge" style="background: rgba(194,101,74,0.18); color: #c2654a; border: 1px solid rgba(194,101,74,0.35); padding: 1px 7px; border-radius: 6px; font-size: 0.74rem; font-weight: 700; display: inline-flex; align-items: center; gap: 4px;">
+            {isWanwu ? (
+              <span class="graded-book-badge" title="Tủ sách Vạn vật thú vị">
                 {`📚 万物有意思${story.page_display ? ` · ${story.page_display}` : ''}`}
               </span>
             ) : null}
-            <span class="graded-card-topic" title={topicVi}>{topicVi}</span>
+            {(!isWanwu || !topicVi.includes('Vạn vật')) && topicVi ? (
+              <span class="graded-card-topic" title={topicVi}>{topicVi}</span>
+            ) : null}
           </div>{' '}
           <div class="graded-card-header-right">
             <button type="button" class={`graded-card-mark-toggle ${isRead ? 'read' : ''}`} onClick={(e) => toggleStoryRead(story.id, e)} title={readLabel} aria-label={readLabel}>
               <svg width="13" height="13" viewBox="0 0 24 24" fill={isRead ? 'currentColor' : 'none'} stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">{CHECK_SVG_PATH}</svg>
             </button>
           </div>
+        </header>{' '}
+
+        {/* 2. Reading Titles (Full horizontal space) */}
+        <div class="graded-card-titles">
+          <h2 class="graded-card-zh-title" title={zhTitle}>
+            <span>{zhTitle}</span>
+          </h2>
+          <div class="graded-card-vi-title" title={viTitle}>{viTitle}</div>
         </div>{' '}
-        <div class="graded-card-body" style={story.cover_image ? "display: flex; gap: 14px; align-items: flex-start; justify-content: space-between;" : ""}>
-          <div style={story.cover_image ? "flex: 1; min-width: 0;" : ""}>
-            <h2 class="graded-card-zh-title" title={zhTitle}>
-              <span>{zhTitle}</span>
-            </h2>{' '}
-            <div class="graded-card-vi-title" title={viTitle}>{viTitle}</div>{' '}
-            <p class="graded-card-desc" title={descVi}>{descVi}</p>
-          </div>
+
+        {/* 3. Supporting Info & Illustration */}
+        <div class="graded-card-body">
           {story.cover_image ? (
-            <div class="graded-card-thumb-wrap" style="flex-shrink: 0; width: 76px; height: 76px; border-radius: 8px; overflow: hidden; border: 1px solid var(--graded-border); box-shadow: 0 1px 3px rgba(0,0,0,0.06); background: var(--graded-chip-bg);">
-              <img src={story.cover_image} alt={viTitle} loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+            <div class="graded-card-thumb-wrap">
+              <img src={story.cover_image} alt={viTitle} loading="lazy" />
             </div>
           ) : null}
+          <p class="graded-card-desc" title={descVi}>{descVi}</p>
         </div>
       </div>{' '}
+
+      {/* 4. Secondary Learning Metadata Footer */}
       <footer class="graded-card-footer">
         <div class="graded-card-meta">
           <span>{`${sentCount} câu`}</span>{' '}
@@ -528,8 +539,6 @@ function StoryCard({ story }) {
     </article>
   );
 }
-
-const CONTROL_STYLE = 'border-radius: 10px; border: 1px solid var(--graded-border); background: var(--graded-card-bg); color: var(--graded-text-primary);';
 
 function LoadMore({ remaining }) {
   return (
@@ -566,107 +575,178 @@ function Hub() {
   const filtered = filteredManifest.value;
   const shown = filtered.slice(0, hubLimit.value);
   const lvlFilter = levelFilter.value;
+  const wanwuCount = manifest.filter((m) => m.series === 'wanwu' || (m.topic_vi && m.topic_vi.includes('Vạn vật'))).length;
+  const hasActiveFilters = Boolean(searchQuery.value || categoryFilter.value !== 'all' || levelFilter.value !== 'all' || sortOrder.value !== 'default');
 
   return (
     <div class="graded-reading-container">
-      <div style="display: flex; align-items: center; justify-content: flex-start; margin-bottom: 16px;">
-        <button type="button" class="graded-back-btn" onClick={() => window.setPrimaryTab('vocab')} title="Quay lại Hub Từ vựng">
-          ← Quay lại Hub Từ vựng
-        </button>
-      </div>{' '}
+      {/* 1. Compact Page Header & Progress */}
+      <header class="graded-hub-header">
+        <div class="graded-hub-header-left">
+          <button type="button" class="graded-back-btn" onClick={() => window.setPrimaryTab('vocab')} title="Quay lại Hub Từ vựng">
+            ← Hub Từ vựng
+          </button>
+          <div class="graded-hub-title-group">
+            <h1 class="graded-hub-title">
+              <span>汉字思维 · Graded Reading</span>
+              <span class="graded-hub-badge">Đọc hiểu HSK</span>
+            </h1>
+            <p class="graded-hub-subtitle">
+              Luyện đọc phân cấp theo ngữ cảnh · Vòng lặp học từ khép kín với SRS cá nhân
+            </p>
+          </div>
+        </div>
 
-      <header class="graded-hub-hero">
-        <div class="graded-hub-badge">📚 Graded Reading</div>{' '}
-        <h1 class="graded-hub-title">汉字思维 · Graded Reading</h1>{' '}
-        <p class="graded-hub-subtitle">
-          Luyện đọc hiểu phân cấp theo ngữ cảnh thực tế · Vòng lặp học từ khép kín · Nhận diện vốn từ SRS cá nhân
-        </p>{' '}
-        <div class="graded-hub-progress-wrap">
+        <div class="graded-hub-progress-card" title={`Đã đọc ${readCount} trên tổng số ${manifest.length} bài`}>
+          <div class="graded-hub-progress-info">
+            <span class="graded-hub-progress-label">Tiến độ đọc</span>
+            <span class="graded-hub-progress-stat"><strong>{readCount}</strong>/{manifest.length} ({progressPercent}%)</span>
+          </div>
           <div class="graded-hub-progress-bar">
             <div class="graded-hub-progress-fill" style={`width: ${progressPercent}%;`}></div>
-          </div>{' '}
-          <div class="graded-hub-progress-meta">
-            <span>Tiến độ đọc: <strong>{`${readCount}/${manifest.length}`}</strong>{` bài (${progressPercent}%)`}</span>
           </div>
         </div>
       </header>{' '}
 
-      {/* Featured Book Collection Banner */}
-      <div class="graded-book-banner" style="background: linear-gradient(135deg, rgba(194,101,74,0.12), rgba(212,143,56,0.12)); border: 1px solid rgba(194,101,74,0.35); border-radius: 12px; padding: 14px 18px; margin-bottom: 16px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
-        <div style="display: flex; align-items: center; gap: 12px;">
-          <span style="font-size: 2rem;">📚</span>
-          <div>
-            <div style="font-weight: 700; color: var(--graded-text-primary); font-size: 1.02rem;">
-              Tuyển tập sách: 《万物有意思》 (Vạn vật thú vị)
-            </div>
-            <div style="font-size: 0.85rem; color: var(--graded-text-secondary); margin-top: 2px;">
-              Bách khoa tri thức văn hóa, lịch sử và đời sống chọn lọc (Đũa, Trà, Sủi cảo, Đậu phụ...).
-            </div>
+      {/* 2. Optional Featured Collection Banner (Streamlined secondary strip) */}
+      <div class="graded-book-strip">
+        <div class="graded-book-strip-left">
+          <span class="graded-book-strip-icon">📚</span>
+          <span class="graded-book-strip-title">Tuyển tập 《万物有意思》 (Vạn vật thú vị)</span>
+          <span class="graded-book-strip-desc">Văn hóa & đời sống ({wanwuCount} bài)</span>
+        </div>
+        <button
+          type="button"
+          class={`graded-book-strip-btn ${lvlFilter === 'wanwu' ? 'active' : ''}`}
+          onClick={() => setFilter(levelFilter, lvlFilter === 'wanwu' ? 'all' : 'wanwu')}
+        >
+          {lvlFilter === 'wanwu' ? '✓ Đang xem tủ sách' : `Xem tủ sách (${wanwuCount}) →`}
+        </button>
+      </div>{' '}
+
+      {/* 3. Unified Search and Filtering Toolbar */}
+      <div class="graded-toolbar">
+        <div class="graded-toolbar-top">
+          <div class="graded-search-box">
+            <span class="graded-search-icon" aria-hidden="true">🔍</span>
+            <input
+              type="search"
+              id="gradedSearchInput"
+              class="graded-search-input"
+              placeholder="Tìm bài đọc theo tiêu đề, chủ đề..."
+              value={searchQuery.value}
+              onInput={(e) => setFilter(searchQuery, e.currentTarget.value || '')}
+              aria-label="Tìm kiếm bài đọc"
+            />
+            {searchQuery.value ? (
+              <button
+                type="button"
+                class="graded-search-clear-btn"
+                onClick={() => setFilter(searchQuery, '')}
+                aria-label="Xóa tìm kiếm"
+              >
+                ✕
+              </button>
+            ) : null}
+          </div>
+
+          <div class="graded-select-group">
+            <select
+              id="gradedCategorySelect"
+              class="graded-select"
+              value={categoryFilter.value}
+              onChange={(e) => setFilter(categoryFilter, e.currentTarget.value || 'all')}
+              aria-label="Lọc theo chủ đề"
+            >
+              <option value="all">Mọi chủ đề</option>
+              {categories.map((c) => <option key={c} value={c}>{c}</option>)}
+            </select>
+
+            <select
+              id="gradedSortSelect"
+              class="graded-select"
+              value={sortOrder.value}
+              onChange={(e) => setFilter(sortOrder, e.currentTarget.value || 'default')}
+              aria-label="Sắp xếp bài đọc"
+            >
+              <option value="default">Sắp xếp: Mặc định</option>
+              <option value="time_asc">Thời lượng: Ngắn nhất</option>
+              <option value="time_desc">Thời lượng: Dài nhất</option>
+              <option value="title">Tên bài (A-Z)</option>
+            </select>
           </div>
         </div>
-        <button type="button" class="graded-filter-pill" onClick={() => setFilter(levelFilter, 'wanwu')}
-          style="padding: 9px 18px; font-weight: 700; background: #c2654a; color: #fff; border: none; cursor: pointer; border-radius: 8px;">
-          {`Khám phá tủ sách (${manifest.filter((m) => m.series === 'wanwu' || (m.topic_vi && m.topic_vi.includes('Vạn vật'))).length} bài) →`}
-        </button>
-      </div>{' '}
 
-      <div class="graded-search-toolbar" style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; align-items: center; justify-content: space-between;">
-        <div style="flex: 1; min-width: 240px; position: relative;">
-          <input type="search" id="gradedSearchInput" class="graded-search-input"
-            placeholder="🔍 Tìm bài đọc theo tiêu đề, chủ đề..."
-            value={searchQuery.value}
-            onInput={(e) => setFilter(searchQuery, e.currentTarget.value || '')}
-            style={`width: 100%; padding: 10px 14px; ${CONTROL_STYLE} font-size: 0.9rem;`}
-            aria-label="Tìm kiếm bài đọc" />
-        </div>{' '}
-        <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
-          <select id="gradedCategorySelect" value={categoryFilter.value} onChange={(e) => setFilter(categoryFilter, e.currentTarget.value || 'all')}
-            style={`padding: 9px 12px; ${CONTROL_STYLE} font-size: 0.85rem;`} aria-label="Lọc theo chủ đề">
-            <option value="all">Mọi chủ đề</option>
-            {categories.map((c) => <option key={c} value={c}>{c}</option>)}
-          </select>{' '}
-          <select id="gradedSortSelect" value={sortOrder.value} onChange={(e) => setFilter(sortOrder, e.currentTarget.value || 'default')}
-            style={`padding: 9px 12px; ${CONTROL_STYLE} font-size: 0.85rem;`} aria-label="Sắp xếp bài đọc">
-            <option value="default">Mặc định</option>
-            <option value="time_asc">Thời gian: Ngắn nhất</option>
-            <option value="time_desc">Thời gian: Dài nhất</option>
-            <option value="title">Tên bài (A-Z)</option>
-          </select>
-        </div>
-      </div>{' '}
-
-      <nav class="graded-hub-filters" aria-label="Bộ lọc cấp độ HSK">
-        <button type="button" class={`graded-filter-pill ${lvlFilter === 'all' ? 'active' : ''}`} onClick={() => setFilter(levelFilter, 'all')}>
-          {`Tất cả (${manifest.length})`}
-        </button>{' '}
-        <button type="button" class={`graded-filter-pill ${lvlFilter === 'wanwu' ? 'active' : ''}`}
-          style={lvlFilter === 'wanwu' ? 'background: #c2654a; color: #fff; font-weight: 700;' : 'border-color: #c2654a; color: #c2654a; font-weight: 700;'}
-          onClick={() => setFilter(levelFilter, 'wanwu')}>
-          {`📚 Vạn vật thú vị (${manifest.filter((m) => m.series === 'wanwu' || (m.topic_vi && m.topic_vi.includes('Vạn vật'))).length})`}
-        </button>{' '}
-        <button type="button" class={`graded-filter-pill ${lvlFilter === 'read' ? 'active' : ''} ${readCount === 0 ? 'disabled' : ''}`} onClick={() => setFilter(levelFilter, 'read')} title="Xem bài đã đọc">
-          {`✓ Đã đọc (${readCount})`}
-        </button>
-        {LEVELS.map((lvl) => {
-          const count = manifest.filter((m) => m.level.toUpperCase() === lvl).length;
-          const lvlDisplay = lvl.replace('HSK', 'HSK ');
-          if (!count) {
-            return [' ', <button key={lvl} type="button" class="graded-filter-pill disabled" title="Đang cập nhật thêm bài đọc">{`${lvlDisplay} (Sắp có)`}</button>];
-          }
-          const lvlReadCount = manifest.filter((m) => m.level.toUpperCase() === lvl && isStoryRead(m.id)).length;
-          const readTag = lvlReadCount > 0 ? ` · ${lvlReadCount}✓` : '';
-          return [' ', (
-            <button key={lvl} type="button" class={`graded-filter-pill ${lvlFilter === lvl ? 'active' : ''}`} onClick={() => setFilter(levelFilter, lvl)}>
-              {`${lvlDisplay} (${count} bài${readTag})`}
+        <nav class="graded-toolbar-filters" aria-label="Bộ lọc bài đọc">
+          <div class="graded-filter-group" role="group" aria-label="Trạng thái & Tuyển tập">
+            <button
+              type="button"
+              class={`graded-filter-pill ${lvlFilter === 'all' ? 'active' : ''}`}
+              onClick={() => setFilter(levelFilter, 'all')}
+            >
+              {`Tất cả (${manifest.length})`}
             </button>
-          )];
-        })}
-      </nav>{' '}
+            <button
+              type="button"
+              class={`graded-filter-pill ${lvlFilter === 'read' ? 'active' : ''} ${readCount === 0 ? 'disabled' : ''}`}
+              onClick={() => setFilter(levelFilter, 'read')}
+              title="Xem bài đã đọc"
+            >
+              {`✓ Đã đọc (${readCount})`}
+            </button>
+            <button
+              type="button"
+              class={`graded-filter-pill graded-pill-book ${lvlFilter === 'wanwu' ? 'active' : ''}`}
+              onClick={() => setFilter(levelFilter, 'wanwu')}
+              title="Tuyển tập Vạn vật thú vị"
+            >
+              {`📚 Vạn vật (${wanwuCount})`}
+            </button>
+          </div>
 
-      <div style="font-size: 0.85rem; color: var(--graded-text-secondary); margin-bottom: 12px;">
-        Hiển thị <strong>{filtered.length}</strong> bài đọc phù hợp
+          <div class="graded-filter-divider" aria-hidden="true"></div>
+
+          <div class="graded-filter-group graded-filter-levels" role="group" aria-label="Cấp độ HSK">
+            {LEVELS.map((lvl) => {
+              const count = manifest.filter((m) => m.level.toUpperCase() === lvl).length;
+              const lvlDisplay = lvl.replace('HSK', 'HSK ');
+              if (!count) {
+                return (
+                  <button key={lvl} type="button" class="graded-filter-pill disabled" title="Đang cập nhật thêm bài đọc">
+                    {`${lvlDisplay}`}
+                  </button>
+                );
+              }
+              const lvlReadCount = manifest.filter((m) => m.level.toUpperCase() === lvl && isStoryRead(m.id)).length;
+              const readTag = lvlReadCount > 0 ? ` · ${lvlReadCount}✓` : '';
+              return (
+                <button
+                  key={lvl}
+                  type="button"
+                  class={`graded-filter-pill ${lvlFilter === lvl ? 'active' : ''}`}
+                  onClick={() => setFilter(levelFilter, lvl)}
+                >
+                  {`${lvlDisplay} (${count}${readTag})`}
+                </button>
+              );
+            })}
+          </div>
+        </nav>
       </div>{' '}
 
+      {/* 4. Reading Results Summary Bar */}
+      <div class="graded-results-bar">
+        <span class="graded-results-count">
+          Hiển thị <strong>{filtered.length}</strong> bài đọc phù hợp
+        </span>
+        {hasActiveFilters ? (
+          <button type="button" class="graded-reset-filters-btn" onClick={resetFilters}>
+            Đặt lại bộ lọc ✕
+          </button>
+        ) : null}
+      </div>{' '}
+
+      {/* 5. Reading Cards Grid */}
       <div class="graded-stories-grid" id="gradedStoriesGrid">
         {filtered.length === 0 ? (
           <div class="graded-empty-state">

@@ -1,4 +1,4 @@
-const APP_VERSION = '3.23.0';
+const APP_VERSION = '3.23.1';
 const CACHE_NAME = 'hsk-flashcards-v' + APP_VERSION;
 const APP_SHELL_URL = new URL('./index.html', self.registration.scope).href;
 const INDEX_SHELL_URL = new URL('./index.html', self.registration.scope).href;
@@ -53,7 +53,8 @@ self.addEventListener('fetch', event => {
   if (url.origin !== self.location.origin) return;
 
   // Version probe and reading manifest: always hit the network, never use stale cache.
-  if (url.pathname.endsWith('/VERSION') || url.pathname.endsWith('/manifest.json')) return;
+  if (url.pathname.endsWith('/VERSION')) return;
+  if (url.pathname.endsWith('/manifest.json')) return;
 
   // Bypass Service Worker for Range requests and media streaming (audio/video).
   // Cache Storage API cannot cache 206 Partial Content (throws TypeError), and returning
