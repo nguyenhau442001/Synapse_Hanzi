@@ -20,8 +20,10 @@ const PRECACHE_ASSET_URLS = [
   './config/pwa-manifest.json',
 ].map(path => (path.startsWith('http') ? path : new URL(path, self.registration.scope).href));
 // Vocabulary/audio JSON lives in its own cache so app deploys don't force every level to re-download.
-const DATA_CACHE_NAME = 'hsk-data-v17';
+// v18: evicts manga/readings JSON cached by the old stale-while-revalidate rule.
+const DATA_CACHE_NAME = 'hsk-data-v18';
 const DATA_PATH = new URL('./database/', self.registration.scope).pathname;
+const READINGS_PATH = new URL('./database/readings/', self.registration.scope).pathname;
 
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
@@ -60,6 +62,24 @@ self.addEventListener('fetch', event => {
   // Cache Storage API cannot cache 206 Partial Content (throws TypeError), and returning
   // full 200 responses to Range requests causes MEDIA_ELEMENT_ERROR format errors in browsers.
   if (request.headers.has('range') || request.destination === 'audio' || request.destination === 'video' || url.pathname.includes('/assets/audio/')) {
+    return;
+  }
+
+  // Readings (articles, manga transcripts) are edited between deploys: network first,
+  // cached copy only as an offline fallback, so a deploy never shows stale text.
+  if (url.pathname.startsWith(READINGS_PATH)) {
+    event.respondWith((async () => {
+      const cache = await caches.open(DATA_CACHE_NAME);
+      try {
+        const response = await fetch(request, { cache: 'no-cache' });
+        if (response.status === 200) await cache.put(request, response.clone());
+        return response;
+      } catch (err) {
+        const cached = await cache.match(request, { ignoreSearch: true });
+        if (cached) return cached;
+        throw err;
+      }
+    })());
     return;
   }
 
