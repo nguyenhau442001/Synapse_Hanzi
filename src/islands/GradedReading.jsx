@@ -1357,6 +1357,21 @@ function bubbleStyle(b) {
 }
 
 const mangaTokenIdx = signal(0);
+const mangaSeen = signal({}); // dialogue id -> true once it has been the active bubble
+
+// Chapter-wide reading order: bubble number n (1-based) is stable across pages and spreads.
+const mangaOrderCache = new WeakMap();
+function mangaChapterOrder(story) {
+  let order = mangaOrderCache.get(story);
+  if (!order) {
+    const index = {};
+    let n = 0;
+    (story.pages || []).forEach((pg) => (pg.dialogues || []).forEach((d) => { n += 1; index[d.id] = n; }));
+    order = { index, total: n };
+    mangaOrderCache.set(story, order);
+  }
+  return order;
+}
 const mangaAddedWords = signal({});
 
 const SPEAKER_ICON = (
@@ -1369,10 +1384,6 @@ const SPEAKER_ICON = (
 function selectMangaDialogue(d) {
   selectedMangaDialogue.value = d;
   mangaTokenIdx.value = 0;
-  if (d) {
-    const row = document.querySelector(`.manga-dlg-row[data-dlg="${d.id}"]`);
-    if (row) row.scrollIntoView({ block: 'nearest' });
-  }
 }
 
 function addMangaTokenToSrs(token) {
@@ -1383,7 +1394,7 @@ function addMangaTokenToSrs(token) {
   }
 }
 
-function MangaWordPanel({ dialogues, current, multiPage }) {
+function MangaWordPanel({ dialogues, current, order }) {
   const tokens = (current && current.tokens) || [];
   let tIdx = Math.min(mangaTokenIdx.value, Math.max(0, tokens.length - 1));
   if (tokens[tIdx] && tokens[tIdx].punct) tIdx = Math.max(0, tokens.findIndex((t) => !t.punct));
@@ -1401,7 +1412,7 @@ function MangaWordPanel({ dialogues, current, multiPage }) {
       {current ? (
         <div class="manga-panel-sentence">
           <div class="manga-panel-row">
-            <span class="manga-panel-kicker">{`BÓNG THOẠI ${pos + 1} / ${dialogues.length}`}</span>
+            <span class="manga-panel-kicker">{`BÓNG THOẠI ${order.index[current.id]} / ${order.total}`}</span>
             <div class="manga-panel-steppers">
               <button type="button" class="manga-icon-btn sm" onClick={() => step(-1)} aria-label="Bóng thoại trước" title="Bóng thoại trước (↑)">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
@@ -1471,30 +1482,6 @@ function MangaWordPanel({ dialogues, current, multiPage }) {
         </div>
       ) : null}
 
-      {dialogues.length ? (
-        <>
-          <div class="manga-panel-kicker manga-list-title">TRÊN TRANG NÀY</div>
-          <div class="manga-dlg-list">
-            {dialogues.map(({ d, n, pageNo }, i) => (
-              <button
-                key={d.id}
-                type="button"
-                data-dlg={d.id}
-                class={`manga-dlg-row ${current && current.id === d.id ? 'is-active' : ''} ${hoveredMangaDialogue.value && hoveredMangaDialogue.value.id === d.id ? 'is-hover' : ''}`}
-                onClick={() => selectMangaDialogue(d)}
-                onMouseEnter={() => { hoveredMangaDialogue.value = d; }}
-                onMouseLeave={() => { hoveredMangaDialogue.value = null; }}
-              >
-                <span class="manga-dlg-num">{n}</span>
-                <span class="manga-dlg-text">
-                  <span class="manga-dlg-zh" lang="zh-Hant">{d.zh_trad || d.zh}</span>
-                  <span class="manga-dlg-vi">{multiPage && (i === 0 || dialogues[i - 1].pageNo !== pageNo) ? `Trang ${pageNo} · ${d.vi}` : d.vi}</span>
-                </span>
-              </button>
-            ))}
-          </div>
-        </>
-      ) : null}
     </aside>
   );
 }
@@ -1601,10 +1588,15 @@ function MangaViewer({ story }) {
   if (spread && story.pages[pageIdx + 1]) visible.push({ pg: story.pages[pageIdx + 1], idx: pageIdx + 1 });
   const lastVisibleIdx = visible[visible.length - 1].idx;
 
-  // Bubbles of every visible page, numbered per page in reading order.
-  const dialogues = visible.flatMap(({ pg, idx }) => (pg.dialogues || []).map((d, i) => ({ d, n: i + 1, pageNo: idx + 1 })));
+  // Bubbles of every visible page in reading order, numbered chapter-wide.
+  const order = mangaChapterOrder(story);
+  const dialogues = visible.flatMap(({ pg, idx }) => (pg.dialogues || []).map((d) => ({ d, n: order.index[d.id], pageNo: idx + 1 })));
   const selected = selectedMangaDialogue.value;
   const current = (selected && dialogues.some((x) => x.d.id === selected.id)) ? selected : (dialogues[0] && dialogues[0].d) || null;
+
+  useEffect(() => {
+    if (current && !mangaSeen.value[current.id]) mangaSeen.value = { ...mangaSeen.value, [current.id]: true };
+  }, [current && current.id]);
 
   const clearMangaSelection = () => {
     hoveredMangaDialogue.value = null;
@@ -1718,7 +1710,7 @@ function MangaViewer({ story }) {
     return (
       <div class={`manga-paper-sheet ${visible.length === 2 ? (i === 0 ? 'is-right' : 'is-left') : ''}`} key={pg.page_num || idx} style={pos}>
         <img src={pg.image} alt={`Trang ${idx + 1} - ${story.title.vi}`} class="manga-page-img" loading="eager" />
-        {(pg.dialogues || []).map((d, i) => {
+        {(pg.dialogues || []).map((d) => {
           const isActive = current && current.id === d.id;
           const isHover = hoveredMangaDialogue.value && hoveredMangaDialogue.value.id === d.id;
           return (
@@ -1727,13 +1719,14 @@ function MangaViewer({ story }) {
               type="button"
               class={`manga-bubble ${showMangaOutlines.value ? 'show-outline' : ''} ${isActive ? 'is-active' : ''} ${isHover ? 'is-hover' : ''}`}
               style={bubbleStyle(d.bbox)}
-              aria-label={`Bóng thoại ${i + 1}: ${d.zh_trad || d.zh}`}
+              data-dlg={d.id}
+              aria-label={`Bóng thoại ${order.index[d.id]}: ${d.zh_trad || d.zh}`}
               title={d.vi}
               onMouseEnter={() => { hoveredMangaDialogue.value = d; }}
               onMouseLeave={() => { hoveredMangaDialogue.value = null; }}
               onClick={(e) => { e.stopPropagation(); selectMangaDialogue(d); }}
             >
-              {showMangaOutlines.value ? <span class="manga-bubble-num" aria-hidden="true">{i + 1}</span> : null}
+              {showMangaOutlines.value ? <span class="manga-bubble-num" aria-hidden="true">{order.index[d.id]}</span> : null}
             </button>
           );
         })}
@@ -1806,52 +1799,43 @@ function MangaViewer({ story }) {
             </button>
           </div>
 
-          <nav class="manga-page-nav" aria-label="Chuyển trang" onClick={(e) => e.stopPropagation()}>
-            <button type="button" class="manga-nav-btn" disabled={pageIdx === 0} onClick={goToPrev} title="Trang trước (←)">
+          <nav class="manga-strip" aria-label="Bóng thoại trên trang" onClick={(e) => e.stopPropagation()}>
+            <button type="button" class="manga-strip-btn" disabled={pageIdx === 0} onClick={goToPrev} title="Trang trước">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
-              <span>Trước</span>
+              <span>Trang trước</span>
             </button>
-            <div class="manga-page-progress">
-              <div class="manga-page-progress-row">
-                <span><strong>{lastVisibleIdx > pageIdx ? `Trang ${pageIdx + 1}–${lastVisibleIdx + 1}` : `Trang ${pageIdx + 1}`}</strong>{` / ${totalPages}`}</span>
-              </div>
-              <input
-                type="range"
-                min="0"
-                max={totalPages - 1}
-                step={step}
-                value={pageIdx}
-                class="manga-page-slider"
-                style={`--fill: ${progressPct}%;`}
-                onChange={(e) => {
-                  const val = parseInt(e.target.value, 10);
-                  if (!isNaN(val) && val >= 0 && val < totalPages) {
-                    activeMangaPage.value = val;
-                    clearMangaSelection();
-                  }
-                }}
-                aria-label="Kéo để chuyển trang"
-              />
+            <div class="manga-dots">
+              {dialogues.map(({ d, n }) => {
+                const isCurrent = current && current.id === d.id;
+                return (
+                  <button
+                    key={d.id}
+                    type="button"
+                    class={`manga-dot ${isCurrent ? 'is-current' : ''} ${mangaSeen.value[d.id] ? 'is-seen' : ''}`}
+                    aria-label={`Bóng thoại ${n}`}
+                    aria-current={isCurrent ? 'true' : undefined}
+                    title={`${n} · ${d.zh_trad || d.zh}`}
+                    onClick={() => selectMangaDialogue(d)}
+                    onMouseEnter={() => { hoveredMangaDialogue.value = d; }}
+                    onMouseLeave={() => { hoveredMangaDialogue.value = null; }}
+                  ></button>
+                );
+              })}
             </div>
-            <button type="button" class="manga-nav-btn primary" disabled={lastVisibleIdx === totalPages - 1} onClick={goToNext} title="Trang sau (→)">
-              <span>Sau</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
-            </button>
-
-          </nav>
-
-          {lastVisibleIdx === totalPages - 1 ? (
-            <div class="manga-finish-card">
-              <h2 class="manga-finish-title">{`Hết truyện 《${story.title.zh_trad || story.title.zh}》`}</h2>
-              <p class="manga-finish-desc">Bạn đã đọc xong tập này. Các từ đã thêm sẽ có trong phần ôn tập hôm nay.</p>
-              <button type="button" class="manga-primary-btn" onClick={() => { markStoryAsRead(story.id); goBackToMangaHub(); }}>
-                Đánh dấu đã đọc · về tủ truyện
+            {lastVisibleIdx === totalPages - 1 ? (
+              <button type="button" class="manga-strip-btn is-finish" onClick={() => { markStoryAsRead(story.id); goBackToMangaHub(); }} title="Đánh dấu đã đọc và về tủ truyện">
+                <span>✓ Đọc xong</span>
               </button>
-            </div>
-          ) : null}
+            ) : (
+              <button type="button" class="manga-strip-btn" onClick={goToNext} title="Trang sau">
+                <span>Trang sau</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+              </button>
+            )}
+          </nav>
         </main>
 
-        <MangaWordPanel dialogues={dialogues} current={current} multiPage={visible.length > 1} />
+        <MangaWordPanel dialogues={dialogues} current={current} order={order} />
       </div>
     </div>
   );
