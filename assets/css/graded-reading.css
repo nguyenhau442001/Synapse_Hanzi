@@ -2968,9 +2968,16 @@ body.graded-translation-hidden .graded-sentence-vi {
   padding: 1px;
 }
 
+/* vertical manga text: mark words with a side rule, like 傍線 in print */
 .manga-word-hotspot.show-outline {
-  background: rgba(59, 91, 219, 0.08);
-  border-bottom: 2px solid rgba(59, 91, 219, 0.45);
+  background: rgba(59, 91, 219, 0.06);
+  border-right: 2px solid rgba(59, 91, 219, 0.4);
+}
+
+.manga-wp-trad-alt {
+  font-size: 0.78rem;
+  color: var(--manga-text-muted, #64748b);
+  font-weight: 500;
 }
 
 .manga-word-hotspot:hover,

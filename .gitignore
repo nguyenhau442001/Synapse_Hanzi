@@ -445,3 +445,6 @@ database/prebuilt_audio/**/review/
 # Local isolated tool dependencies
 tools/.deps/
 
+
+# manga OCR debug overlays (tools/manga_ocr.py --debug)
+tools/.manga_ocr_debug/

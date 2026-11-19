@@ -2,6 +2,12 @@
 """
 tools/build_manga_doraemon_data.py
 Builds Doraemon manga metadata and interactive hotspot JSON files for Synapse_Hanzi.
+
+NOTE: the per-page `dialogues` / `word_hotspots` written here are placeholders.
+The real balloon text, translations and glyph-accurate word hotspots come from
+    tools/manga_ocr.py              (PP-OCRv5 glyph boxes → ocr/<id>.ocr.json)
+    tools/build_manga_word_layer.py (transcripts/<id>.json + OCR → story JSON)
+Always run build_manga_word_layer.py after this script.
 """
 
 import json

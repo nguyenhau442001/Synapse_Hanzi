@@ -226,7 +226,6 @@ async function ensureMangaManifestLoaded() {
     const res = await fetch('database/readings/manga/doraemon/manifest.json?v=' + Date.now());
     if (!res.ok) throw new Error('Không thể tải danh sách truyện tranh.');
     mangaManifestData = await res.json();
-    mangaManifest.value = mangaManifestData;
     mangaManifestLoaded = true;
     return mangaManifestData;
   } catch (e) {
@@ -1525,14 +1524,16 @@ function MangaViewer({ story }) {
 
             {/* 1. Precise Word-Level OCR Hotspots (Instant character/word hover translation) */}
             {(page.word_hotspots && page.word_hotspots.length > 0) ? (
-              page.word_hotspots.map((w, idx) => {
+              page.word_hotspots.flatMap((w, idx) => {
                 const isSelected = (selectedMangaWord.value && selectedMangaWord.value.id === w.id);
                 const isHovered = (hoveredMangaWord.value && hoveredMangaWord.value.id === w.id);
-                return (
+                // A word broken across two vertical columns carries one rect per column.
+                const rects = (w.rects && w.rects.length) ? w.rects : [w.bbox];
+                return rects.map((r, ri) => (
                   <div
-                    key={w.id || idx}
+                    key={`${w.id || idx}-${ri}`}
                     class={`manga-word-hotspot ${showMangaOutlines.value ? 'show-outline' : ''} ${isSelected || isHovered ? 'is-active' : ''}`}
-                    style={`left: ${w.bbox.x}%; top: ${w.bbox.y}%; width: ${w.bbox.width}%; height: ${w.bbox.height}%;`}
+                    style={`left: ${r.x}%; top: ${r.y}%; width: ${r.width}%; height: ${r.height}%;`}
                     onMouseEnter={() => {
                       hoveredMangaWord.value = w;
                     }}
@@ -1548,11 +1549,11 @@ function MangaViewer({ story }) {
                         selectedMangaDialogue.value = null;
                       }
                     }}
-                    title={`Rê chuột tra từ: ${w.text} (${w.pinyin}): ${w.meaning_vi}`}
+                    title={`${w.text_trad || w.text} (${w.pinyin}): ${w.meaning_vi}`}
                   >
                     <span class="manga-word-target-line" aria-hidden="true"></span>
                   </div>
-                );
+                ));
               })
             ) : (
               /* Fallback to dialogue outlines if page has no word_hotspots */
@@ -1595,7 +1596,10 @@ function MangaViewer({ story }) {
                 <div class="manga-wp-header">
                   <div class="manga-wp-hanzi-col">
                     <div class="manga-wp-hanzi-row">
-                      <span class="manga-wp-hanzi">{activeWord.text}</span>
+                      <span class="manga-wp-hanzi">{activeWord.text_trad || activeWord.text}</span>
+                      {activeWord.text_trad && activeWord.text_trad !== activeWord.text && (
+                        <span class="manga-wp-trad-alt" title="Giản thể">({activeWord.text})</span>
+                      )}
                       <span class="manga-wp-pinyin">{activeWord.pinyin}</span>
                       {activeWord.hsk && <span class="manga-wp-hsk">HSK {activeWord.hsk}</span>}
                     </div>
@@ -1634,7 +1638,7 @@ function MangaViewer({ story }) {
                 {activeWord.sentence_zh && (
                   <div class="manga-wp-sentence-box">
                     <div class="manga-wp-sent-label">
-                      <span>Trong câu ({activeWord.character || 'Hội thoại'}):</span>
+                      <span>{`Trong câu · ${activeWord.character || 'Hội thoại'}`}</span>
                       <button
                         type="button"
                         class="manga-wp-sent-audio-btn"
