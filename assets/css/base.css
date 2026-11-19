@@ -395,6 +395,11 @@ body {
   .header-streak-badge { height: 40px; font-size: 13px; }
 }
 
+/* Tablet / narrow desktop: the full tagline pushed the header actions off screen. */
+@media (max-width: 1199px) {
+  .brand-tagline-wrap { display: none; }
+}
+
 /* Mobile header styling */
 @media (max-width: 767px) {
   .app-header {

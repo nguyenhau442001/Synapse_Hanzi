@@ -26,8 +26,9 @@ def test_graded_reading_jsx_layout_structure():
     assert "graded-hub-hero" not in jsx_content  # Oversized hero replaced
 
     # 2. Streamlined secondary featured collection strip
-    assert "graded-book-strip" in jsx_content
-    assert "graded-book-strip-btn" in jsx_content
+    assert "graded-collections-strip" in jsx_content
+    assert "graded-col-card" in jsx_content
+    assert "graded-book-strip" not in jsx_content  # legacy strip markup removed
 
     # 3. Unified toolbar and structured filters
     assert "graded-toolbar" in jsx_content

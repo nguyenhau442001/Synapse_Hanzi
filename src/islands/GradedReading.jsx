@@ -2,7 +2,7 @@
 // tokens, SRS integration, spotlight vocabulary and a comprehension quiz.
 // Preact port of the former assets/js/graded-reading.js. Renders the same markup inside
 // #screenGradedReading and keeps window.GradedReading for the tab router and SpaRouter.
-import { render } from 'preact';
+import { Fragment, render } from 'preact';
 import { useEffect, useRef, useState } from 'preact/hooks';
 import { signal, computed } from '@preact/signals';
 import { toggleTheme } from './ThemeManager.js';
@@ -590,8 +590,14 @@ const CHECK_SVG_PATH = <><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><po
 function StoryCard({ story }) {
   const isRead = isStoryRead(story.id);
   const lvl = (story.level || 'hsk1').toLowerCase();
-  const sentCount = story.sentence_count ?? story.sentences_count ?? 5;
-  const wordCount = story.spotlight_count ?? story.words_count ?? 15;
+  // Only real counts are shown; a missing field is hidden instead of faked.
+  const sentCount = story.sentence_count ?? story.sentences_count;
+  const wordCount = story.spotlight_count ?? story.words_count;
+  const metaParts = [
+    sentCount != null ? `${sentCount} câu` : null,
+    wordCount != null ? `${wordCount} từ` : null,
+    story.estimatedMinutes ? `⏱️ ${story.estimatedMinutes}m` : null,
+  ].filter(Boolean);
   const zhTitle = story.title && story.title.zh ? story.title.zh : '';
   const viTitle = story.title && story.title.vi ? story.title.vi : '';
   const descVi = story.description_vi || '';
@@ -649,11 +655,12 @@ function StoryCard({ story }) {
       {/* 4. Secondary Learning Metadata Footer */}
       <footer class="graded-card-footer">
         <div class="graded-card-meta">
-          <span>{`${sentCount} câu`}</span>{' '}
-          <span class="graded-meta-divider">·</span>{' '}
-          <span>{`${wordCount} từ`}</span>{' '}
-          <span class="graded-meta-divider">·</span>{' '}
-          <span>{`⏱️ ${story.estimatedMinutes || 3}m`}</span>
+          {metaParts.map((part, i) => (
+            <Fragment key={part}>
+              {i > 0 ? <><span class="graded-meta-divider">·</span>{' '}</> : null}
+              <span>{part}</span>{' '}
+            </Fragment>
+          ))}
         </div>{' '}
         <div class="graded-card-arrow" aria-hidden="true">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
