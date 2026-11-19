@@ -2852,6 +2852,7 @@ body.graded-translation-hidden .graded-sentence-vi {
 
 .manga-theme-btn {
   padding: 4px 10px;
+  white-space: nowrap;
   border-radius: var(--manga-radius-full);
   border: none;
   background: transparent;
@@ -2919,6 +2920,60 @@ body.graded-translation-hidden .graded-sentence-vi {
   max-width: 100%;
   transform-origin: top center;
   transition: transform 0.22s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* Two-page spread: earlier page on the right (manga reading order), both pages
+   sized to fit the viewport height so a whole spread is visible without scrolling. */
+.manga-stage.is-spread {
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  gap: 0;
+}
+
+.manga-stage.is-spread .manga-paper-sheet {
+  width: auto;
+  max-width: none;
+  flex: 0 0 auto;
+}
+
+.manga-stage.is-spread .manga-paper-sheet img.manga-page-img {
+  /* page images are ~0.647 w/h; cap by height and by half the viewport width */
+  height: min(calc(100vh - 205px), calc((100vw - 96px) / 2 / 0.647));
+  width: auto;
+}
+
+.manga-stage.is-spread .manga-paper-sheet:first-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  box-shadow: inset 14px 0 18px -14px rgba(15, 23, 42, 0.28), 0 12px 36px -4px rgba(15, 23, 42, 0.08);
+}
+
+.manga-stage.is-spread .manga-paper-sheet:nth-child(2) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-left: none;
+}
+
+/* gutter shading drawn above the artwork, never blocking hover targets */
+.manga-stage.is-spread .manga-paper-sheet:first-child::after,
+.manga-stage.is-spread .manga-paper-sheet:nth-child(2)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 22px;
+  pointer-events: none;
+  z-index: 12;
+}
+
+.manga-stage.is-spread .manga-paper-sheet:first-child::after {
+  left: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.16), transparent);
+}
+
+.manga-stage.is-spread .manga-paper-sheet:nth-child(2)::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.16), transparent);
 }
 
 .manga-paper-sheet {

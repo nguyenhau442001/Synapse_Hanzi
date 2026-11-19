@@ -30,6 +30,20 @@ const selectedMangaWord = signal(null);
 const mangaZoomLevel = signal(1.0);
 const mangaCanvasTheme = signal('light'); // 'light' | 'sepia' | 'theater'
 const mangaIsFullscreen = signal(false);
+// Two-page spread (book layout) on wide screens; remembered per browser.
+const MANGA_SPREAD_KEY = 'manga.spreadMode';
+const mangaSpreadPref = signal((() => {
+  try {
+    const v = localStorage.getItem(MANGA_SPREAD_KEY);
+    if (v === '1' || v === '0') return v === '1';
+  } catch (e) { /* storage unavailable */ }
+  return true;
+})());
+const mangaWideViewport = signal(typeof window !== 'undefined' ? window.innerWidth >= 1000 : true);
+function setMangaSpread(on) {
+  mangaSpreadPref.value = on;
+  try { localStorage.setItem(MANGA_SPREAD_KEY, on ? '1' : '0'); } catch (e) { /* ignore */ }
+}
 const showMangaShortcutsModal = signal(false);
 let mangaManifestData = [];
 let mangaManifestLoaded = false;
@@ -1296,31 +1310,46 @@ function MangaHub() {
 }
 
 function MangaViewer({ story }) {
-  const pageIdx = activeMangaPage.value;
-  const page = (story && story.pages && story.pages[pageIdx]) || (story && story.pages && story.pages[0]);
   const totalPages = (story && story.pages) ? story.pages.length : 1;
+  const spread = mangaSpreadPref.value && mangaWideViewport.value && totalPages > 1;
+  const step = spread ? 2 : 1;
+  // In spread mode the current index is always the first (right-hand) page of a pair.
+  const rawIdx = Math.min(Math.max(activeMangaPage.value, 0), totalPages - 1);
+  const pageIdx = spread ? rawIdx - (rawIdx % 2) : rawIdx;
+  const page = (story && story.pages && story.pages[pageIdx]) || (story && story.pages && story.pages[0]);
+  const visible = [{ pg: page, idx: pageIdx }];
+  if (spread && story.pages[pageIdx + 1]) visible.push({ pg: story.pages[pageIdx + 1], idx: pageIdx + 1 });
+  const lastVisibleIdx = visible[visible.length - 1].idx;
+
+  const clearMangaSelection = () => {
+    hoveredMangaDialogue.value = null;
+    selectedMangaDialogue.value = null;
+    hoveredMangaWord.value = null;
+    selectedMangaWord.value = null;
+  };
   const activeWord = hoveredMangaWord.value || selectedMangaWord.value;
   const activeDlg = hoveredMangaDialogue.value || selectedMangaDialogue.value;
 
+  // Spread pages are sized to the viewport, so align the reader to the top of the screen.
+  const scrollToSpread = () => {
+    const shell = document.getElementById('mangaViewerShell');
+    if (spread && shell) shell.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    else window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const goToPrev = () => {
     if (pageIdx > 0) {
-      activeMangaPage.value = pageIdx - 1;
-      hoveredMangaDialogue.value = null;
-      selectedMangaDialogue.value = null;
-      hoveredMangaWord.value = null;
-      selectedMangaWord.value = null;
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      activeMangaPage.value = Math.max(0, pageIdx - step);
+      clearMangaSelection();
+      scrollToSpread();
     }
   };
 
   const goToNext = () => {
-    if (pageIdx < totalPages - 1) {
-      activeMangaPage.value = pageIdx + 1;
-      hoveredMangaDialogue.value = null;
-      selectedMangaDialogue.value = null;
-      hoveredMangaWord.value = null;
-      selectedMangaWord.value = null;
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (lastVisibleIdx < totalPages - 1) {
+      activeMangaPage.value = pageIdx + step;
+      clearMangaSelection();
+      scrollToSpread();
     }
   };
 
@@ -1349,6 +1378,8 @@ function MangaViewer({ story }) {
       mangaIsFullscreen.value = Boolean(document.fullscreenElement);
     };
     document.addEventListener('fullscreenchange', onFsChange);
+    const onResize = () => { mangaWideViewport.value = window.innerWidth >= 1000; };
+    window.addEventListener('resize', onResize);
 
     const onKeyDown = (e) => {
       if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) return;
@@ -1370,6 +1401,9 @@ function MangaViewer({ story }) {
       } else if (e.key === 'f' || e.key === 'F') {
         e.preventDefault();
         toggleFullscreen();
+      } else if (e.key === 'd' || e.key === 'D') {
+        e.preventDefault();
+        setMangaSpread(!mangaSpreadPref.value);
       } else if (e.key === 'o' || e.key === 'O') {
         e.preventDefault();
         showMangaOutlines.value = !showMangaOutlines.value;
@@ -1391,140 +1425,26 @@ function MangaViewer({ story }) {
     window.addEventListener('keydown', onKeyDown);
     return () => {
       document.removeEventListener('fullscreenchange', onFsChange);
+      window.removeEventListener('resize', onResize);
       window.removeEventListener('keydown', onKeyDown);
     };
-  }, [pageIdx, totalPages]);
+  }, [pageIdx, totalPages, step, lastVisibleIdx]);
 
-  if (!page) return null;
+  // A hotspot/dialogue popover belongs to the sheet that owns it (two sheets in spread mode).
+  const onPage = (list, item) => Boolean(list && item && list.some((x) => x.id === item.id));
 
-  return (
-    <div
-      id="mangaViewerShell"
-      class={`manga-viewer-root theme-${mangaCanvasTheme.value}`}
-      onClick={() => {
-        if (selectedMangaDialogue.value) selectedMangaDialogue.value = null;
-        if (selectedMangaWord.value) selectedMangaWord.value = null;
-        if (showMangaShortcutsModal.value) showMangaShortcutsModal.value = false;
-      }}
-    >
-      {/* 1. Refined Editorial Header (3 Balanced Zones) */}
-      <header class="manga-header" onClick={(e) => e.stopPropagation()}>
-        {/* Left Zone: Back Navigation & Brand Identity */}
-        <div class="manga-header-left">
-          <button
-            type="button"
-            class="manga-nav-back-btn"
-            onClick={goBackToMangaHub}
-            title="Trở về tủ truyện (Esc)"
-          >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="19" y1="12" x2="5" y2="12"></line>
-              <polyline points="12 19 5 12 12 5"></polyline>
-            </svg>
-            <span class="manga-back-label">Tủ truyện</span>
-          </button>
-          <div class="manga-header-divider"></div>
-          <div class="manga-brand-identity">
-            <span class="manga-brand-logo">汉字思维</span>
-            <span class="manga-brand-dot">·</span>
-            <span class="manga-brand-sub">Đọc truyện</span>
-          </div>
-        </div>
-
-        {/* Center Zone: Manga Title & Chapter Metadata */}
-        <div class="manga-header-center">
-          <div class="manga-header-titles">
-            <div class="manga-header-story-title">
-              <span class="manga-story-zh">{story.title.zh}</span>
-              <span class="manga-story-badge">{`Doraemon · Tập ${story.chapter_no || 1}`}</span>
-            </div>
-            <div class="manga-header-story-sub" title={story.title.vi}>
-              {story.title.vi}
-            </div>
-          </div>
-        </div>
-
-        {/* Right Zone: Reading Settings, Theme Picker & Utilities */}
-        <div class="manga-header-right">
-          {/* Toggle speech outlines */}
-          <button
-            type="button"
-            class={`manga-header-action-btn ${showMangaOutlines.value ? 'active' : ''}`}
-            onClick={() => { showMangaOutlines.value = !showMangaOutlines.value; }}
-            title={showMangaOutlines.value ? 'Ẩn viền khung thoại (Phím O)' : 'Hiện viền khung thoại (Phím O)'}
-            aria-label="Hiện/ẩn viền thoại"
-          >
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-              <circle cx="12" cy="12" r="3"></circle>
-            </svg>
-            <span class="manga-action-label">Viền thoại</span>
-          </button>
-
-          {/* Reading theme segmented switcher */}
-          <div class="manga-theme-selector" role="group" aria-label="Giao diện đọc">
-            <button
-              type="button"
-              class={`manga-theme-btn ${mangaCanvasTheme.value === 'light' ? 'active' : ''}`}
-              onClick={() => { mangaCanvasTheme.value = 'light'; }}
-              title="Giao diện Sáng tự nhiên"
-            >
-              Sáng
-            </button>
-            <button
-              type="button"
-              class={`manga-theme-btn ${mangaCanvasTheme.value === 'sepia' ? 'active' : ''}`}
-              onClick={() => { mangaCanvasTheme.value = 'sepia'; }}
-              title="Giao diện Ấm mắt"
-            >
-              Ấm
-            </button>
-            <button
-              type="button"
-              class={`manga-theme-btn ${mangaCanvasTheme.value === 'theater' ? 'active' : ''}`}
-              onClick={() => { mangaCanvasTheme.value = 'theater'; }}
-              title="Giao diện Tối tập trung"
-            >
-              Tối
-            </button>
-          </div>
-
-          {/* Fullscreen toggle */}
-          <button
-            type="button"
-            class="manga-icon-btn"
-            onClick={toggleFullscreen}
-            title={mangaIsFullscreen.value ? 'Thoát toàn màn hình (Phím F)' : 'Toàn màn hình (Phím F)'}
-            aria-label="Toàn màn hình"
-          >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              {mangaIsFullscreen.value ? (
-                <path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"></path>
-              ) : (
-                <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
-              )}
-            </svg>
-          </button>
-        </div>
-      </header>
-
-      {/* 2. Main Reading Canvas (Seamless Editorial Paper Centerpiece) */}
-      <main class="manga-canvas-container" id="mangaCanvas">
-        <div
-          class="manga-stage"
-          style={`transform: scale(${mangaZoomLevel.value});`}
-        >
-          <div class="manga-paper-sheet">
+  const renderSheet = (pg, idx) => (
+          <div class="manga-paper-sheet" key={pg.page_num || idx}>
             <img
-              src={page.image}
-              alt={`Trang ${pageIdx + 1} - ${story.title.vi}`}
+              src={pg.image}
+              alt={`Trang ${idx + 1} - ${story.title.vi}`}
               class="manga-page-img"
               loading="eager"
             />
 
             {/* 1. Precise Word-Level OCR Hotspots (Instant character/word hover translation) */}
-            {(page.word_hotspots && page.word_hotspots.length > 0) ? (
-              page.word_hotspots.flatMap((w, idx) => {
+            {(pg.word_hotspots && pg.word_hotspots.length > 0) ? (
+              pg.word_hotspots.flatMap((w, idx) => {
                 const isSelected = (selectedMangaWord.value && selectedMangaWord.value.id === w.id);
                 const isHovered = (hoveredMangaWord.value && hoveredMangaWord.value.id === w.id);
                 // A word broken across two vertical columns carries one rect per column.
@@ -1557,7 +1477,7 @@ function MangaViewer({ story }) {
               })
             ) : (
               /* Fallback to dialogue outlines if page has no word_hotspots */
-              (page.dialogues || []).map((d) => {
+              (pg.dialogues || []).map((d) => {
                 const isSelected = (selectedMangaDialogue.value && selectedMangaDialogue.value.id === d.id);
                 const isHovered = (hoveredMangaDialogue.value && hoveredMangaDialogue.value.id === d.id);
                 return (
@@ -1577,7 +1497,7 @@ function MangaViewer({ story }) {
             )}
 
             {/* 2. Sleek Compact Word Popover (Direct Word/Character Translation) */}
-            {activeWord ? (
+            {activeWord && onPage(pg.word_hotspots, activeWord) ? (
               <div
                 class="manga-word-popover"
                 style={(() => {
@@ -1670,7 +1590,7 @@ function MangaViewer({ story }) {
             ) : null}
 
             {/* 3. Interactive Dialogue Popover Card (When clicking whole bubble) */}
-            {activeDlg && !activeWord ? (
+            {activeDlg && !activeWord && onPage(pg.dialogues, activeDlg) ? (
               <div
                 class="manga-dialogue-card"
                 style={(() => {
@@ -1745,10 +1665,155 @@ function MangaViewer({ story }) {
               </div>
             ) : null}
           </div>
+  );
+
+  if (!page) return null;
+
+  return (
+    <div
+      id="mangaViewerShell"
+      class={`manga-viewer-root theme-${mangaCanvasTheme.value}`}
+      onClick={() => {
+        if (selectedMangaDialogue.value) selectedMangaDialogue.value = null;
+        if (selectedMangaWord.value) selectedMangaWord.value = null;
+        if (showMangaShortcutsModal.value) showMangaShortcutsModal.value = false;
+      }}
+    >
+      {/* 1. Refined Editorial Header (3 Balanced Zones) */}
+      <header class="manga-header" onClick={(e) => e.stopPropagation()}>
+        {/* Left Zone: Back Navigation & Brand Identity */}
+        <div class="manga-header-left">
+          <button
+            type="button"
+            class="manga-nav-back-btn"
+            onClick={goBackToMangaHub}
+            title="Trở về tủ truyện (Esc)"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            <span class="manga-back-label">Tủ truyện</span>
+          </button>
+          <div class="manga-header-divider"></div>
+          <div class="manga-brand-identity">
+            <span class="manga-brand-logo">汉字思维</span>
+            <span class="manga-brand-dot">·</span>
+            <span class="manga-brand-sub">Đọc truyện</span>
+          </div>
+        </div>
+
+        {/* Center Zone: Manga Title & Chapter Metadata */}
+        <div class="manga-header-center">
+          <div class="manga-header-titles">
+            <div class="manga-header-story-title">
+              <span class="manga-story-zh">{story.title.zh}</span>
+              <span class="manga-story-badge">{`Doraemon · Tập ${story.chapter_no || 1}`}</span>
+            </div>
+            <div class="manga-header-story-sub" title={story.title.vi}>
+              {story.title.vi}
+            </div>
+          </div>
+        </div>
+
+        {/* Right Zone: Reading Settings, Theme Picker & Utilities */}
+        <div class="manga-header-right">
+          {/* Toggle speech outlines */}
+          <button
+            type="button"
+            class={`manga-header-action-btn ${showMangaOutlines.value ? 'active' : ''}`}
+            onClick={() => { showMangaOutlines.value = !showMangaOutlines.value; }}
+            title={showMangaOutlines.value ? 'Ẩn viền khung thoại (Phím O)' : 'Hiện viền khung thoại (Phím O)'}
+            aria-label="Hiện/ẩn viền thoại"
+          >
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+            <span class="manga-action-label">Viền thoại</span>
+          </button>
+
+          {/* One page / two-page spread */}
+          {mangaWideViewport.value && totalPages > 1 && (
+            <div class="manga-theme-selector" role="group" aria-label="Bố cục trang">
+              <button
+                type="button"
+                class={`manga-theme-btn ${!spread ? 'active' : ''}`}
+                onClick={() => setMangaSpread(false)}
+                title="Hiện 1 trang (Phím D)"
+              >
+                1 trang
+              </button>
+              <button
+                type="button"
+                class={`manga-theme-btn ${spread ? 'active' : ''}`}
+                onClick={() => setMangaSpread(true)}
+                title="Hiện 2 trang như sách mở (Phím D)"
+              >
+                2 trang
+              </button>
+            </div>
+          )}
+
+          {/* Reading theme segmented switcher */}
+          <div class="manga-theme-selector" role="group" aria-label="Giao diện đọc">
+            <button
+              type="button"
+              class={`manga-theme-btn ${mangaCanvasTheme.value === 'light' ? 'active' : ''}`}
+              onClick={() => { mangaCanvasTheme.value = 'light'; }}
+              title="Giao diện Sáng tự nhiên"
+            >
+              Sáng
+            </button>
+            <button
+              type="button"
+              class={`manga-theme-btn ${mangaCanvasTheme.value === 'sepia' ? 'active' : ''}`}
+              onClick={() => { mangaCanvasTheme.value = 'sepia'; }}
+              title="Giao diện Ấm mắt"
+            >
+              Ấm
+            </button>
+            <button
+              type="button"
+              class={`manga-theme-btn ${mangaCanvasTheme.value === 'theater' ? 'active' : ''}`}
+              onClick={() => { mangaCanvasTheme.value = 'theater'; }}
+              title="Giao diện Tối tập trung"
+            >
+              Tối
+            </button>
+          </div>
+
+          {/* Fullscreen toggle */}
+          <button
+            type="button"
+            class="manga-icon-btn"
+            onClick={toggleFullscreen}
+            title={mangaIsFullscreen.value ? 'Thoát toàn màn hình (Phím F)' : 'Toàn màn hình (Phím F)'}
+            aria-label="Toàn màn hình"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              {mangaIsFullscreen.value ? (
+                <path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"></path>
+              ) : (
+                <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
+              )}
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      {/* 2. Main Reading Canvas (Seamless Editorial Paper Centerpiece) */}
+      <main class="manga-canvas-container" id="mangaCanvas">
+        <div
+          class={`manga-stage ${spread ? 'is-spread' : ''}`}
+          style={`transform: scale(${mangaZoomLevel.value});`}
+        >
+          {/* Spread mode: like a printed manga, the earlier page sits on the right */}
+          {visible.map(({ pg, idx }) => renderSheet(pg, idx))}
         </div>
 
         {/* Completion Card on last page */}
-        {pageIdx === totalPages - 1 ? (
+        {lastVisibleIdx === totalPages - 1 ? (
           <div class="manga-finish-card">
             <div class="manga-finish-icon">🎉</div>
             <h2 class="manga-finish-title">
@@ -1827,7 +1892,7 @@ function MangaViewer({ story }) {
             </button>
 
             <div class="manga-page-stepper">
-              <span class="manga-page-num-cur">{pageIdx + 1}</span>
+              <span class="manga-page-num-cur">{lastVisibleIdx > pageIdx ? `${pageIdx + 1}–${lastVisibleIdx + 1}` : pageIdx + 1}</span>
               <span class="manga-page-num-sep">/</span>
               <span class="manga-page-num-all">{totalPages}</span>
             </div>
@@ -1837,14 +1902,14 @@ function MangaViewer({ story }) {
               type="range"
               min="0"
               max={totalPages - 1}
+              step={step}
               value={pageIdx}
               class="manga-page-slider"
               onChange={(e) => {
                 const val = parseInt(e.target.value, 10);
                 if (!isNaN(val) && val >= 0 && val < totalPages) {
                   activeMangaPage.value = val;
-                  hoveredMangaDialogue.value = null;
-                  selectedMangaDialogue.value = null;
+                  clearMangaSelection();
                 }
               }}
               title={`Kéo để chọn trang (Trang ${pageIdx + 1}/${totalPages})`}
@@ -1854,7 +1919,7 @@ function MangaViewer({ story }) {
             <button
               type="button"
               class="manga-nav-arrow-btn primary-action"
-              disabled={pageIdx === totalPages - 1}
+              disabled={lastVisibleIdx === totalPages - 1}
               onClick={goToNext}
               title="Trang sau (Phím mũi tên phải)"
             >
@@ -1901,6 +1966,10 @@ function MangaViewer({ story }) {
               <div class="manga-shortcut-row">
                 <span class="manga-sc-label">Đổi trang trước / sau</span>
                 <span class="manga-sc-keys"><kbd>←</kbd> <kbd>→</kbd></span>
+              </div>
+              <div class="manga-shortcut-row">
+                <span class="manga-sc-label">1 trang / 2 trang</span>
+                <span class="manga-sc-keys"><kbd>D</kbd></span>
               </div>
               <div class="manga-shortcut-row">
                 <span class="manga-sc-label">Thu nhỏ / Phóng to</span>
