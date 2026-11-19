@@ -41,14 +41,26 @@
               "pinyin": "gǎizào",
               "hanviet": "Cải Tạo",
               "meaning_vi": "cải tạo, biến đổi",
-              "hsk": 4
+              "hsk": 4,
+              "bbox": {
+                "x": 35.0,
+                "y": 30.0,
+                "width": 45.0,
+                "height": 7.0
+              }
             },
             {
               "text": "植物",
               "pinyin": "zhíwù",
               "hanviet": "Thực Vật",
               "meaning_vi": "thực vật, cây cỏ",
-              "hsk": 3
+              "hsk": 3,
+              "bbox": {
+                "x": 35.0,
+                "y": 37.0,
+                "width": 45.0,
+                "height": 7.0
+              }
             }
           ]
         },
@@ -71,30 +83,158 @@
               "pinyin": "yùjīnxiāng",
               "hanviet": "Uất Kim Hương",
               "meaning_vi": "hoa tulip",
-              "hsk": 4
+              "hsk": 4,
+              "bbox": {
+                "x": 58.0,
+                "y": 58.88,
+                "width": 30.0,
+                "height": 3.88
+              }
             },
             {
               "text": "发芽",
               "pinyin": "fāyá",
               "hanviet": "Phát Nha",
               "meaning_vi": "nảy mầm",
-              "hsk": 4
+              "hsk": 4,
+              "bbox": {
+                "x": 58.0,
+                "y": 62.76,
+                "width": 30.0,
+                "height": 3.5
+              }
             },
             {
               "text": "期待",
               "pinyin": "qīdài",
               "hanviet": "Kỳ Đãi",
               "meaning_vi": "mong chờ, kỳ vọng",
-              "hsk": 4
+              "hsk": 4,
+              "bbox": {
+                "x": 58.0,
+                "y": 69.24,
+                "width": 30.0,
+                "height": 3.5
+              }
             },
             {
               "text": "开花",
               "pinyin": "kāihuā",
               "hanviet": "Khai Hoa",
               "meaning_vi": "nở hoa",
-              "hsk": 3
+              "hsk": 3,
+              "bbox": {
+                "x": 58.0,
+                "y": 73.12,
+                "width": 30.0,
+                "height": 3.5
+              }
             }
           ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "s2_p1_d1_w0",
+          "text": "改造",
+          "pinyin": "gǎizào",
+          "hanviet": "Cải Tạo",
+          "meaning_vi": "cải tạo, biến đổi",
+          "hsk": 4,
+          "bbox": {
+            "x": 35.0,
+            "y": 30.0,
+            "width": 45.0,
+            "height": 7.0
+          },
+          "sentence_zh": "改造植物",
+          "sentence_vi": "Tiêu đề: Cải tạo thực vật",
+          "character": "标题"
+        },
+        {
+          "id": "s2_p1_d1_w1",
+          "text": "植物",
+          "pinyin": "zhíwù",
+          "hanviet": "Thực Vật",
+          "meaning_vi": "thực vật, cây cỏ",
+          "hsk": 3,
+          "bbox": {
+            "x": 35.0,
+            "y": 37.0,
+            "width": 45.0,
+            "height": 7.0
+          },
+          "sentence_zh": "改造植物",
+          "sentence_vi": "Tiêu đề: Cải tạo thực vật",
+          "character": "标题"
+        },
+        {
+          "id": "s2_p1_d2_w0",
+          "text": "郁金香",
+          "pinyin": "yùjīnxiāng",
+          "hanviet": "Uất Kim Hương",
+          "meaning_vi": "hoa tulip",
+          "hsk": 4,
+          "bbox": {
+            "x": 58.0,
+            "y": 58.88,
+            "width": 30.0,
+            "height": 3.88
+          },
+          "sentence_zh": "我种的郁金香发芽了，真期待它开花！",
+          "sentence_vi": "Cây hoa tulip mình trồng đã nảy mầm rồi, thật mong chờ ngày nó nở hoa!",
+          "character": "静香 (静宜)"
+        },
+        {
+          "id": "s2_p1_d2_w1",
+          "text": "发芽",
+          "pinyin": "fāyá",
+          "hanviet": "Phát Nha",
+          "meaning_vi": "nảy mầm",
+          "hsk": 4,
+          "bbox": {
+            "x": 58.0,
+            "y": 62.76,
+            "width": 30.0,
+            "height": 3.5
+          },
+          "sentence_zh": "我种的郁金香发芽了，真期待它开花！",
+          "sentence_vi": "Cây hoa tulip mình trồng đã nảy mầm rồi, thật mong chờ ngày nó nở hoa!",
+          "character": "静香 (静宜)"
+        },
+        {
+          "id": "s2_p1_d2_w2",
+          "text": "期待",
+          "pinyin": "qīdài",
+          "hanviet": "Kỳ Đãi",
+          "meaning_vi": "mong chờ, kỳ vọng",
+          "hsk": 4,
+          "bbox": {
+            "x": 58.0,
+            "y": 69.24,
+            "width": 30.0,
+            "height": 3.5
+          },
+          "sentence_zh": "我种的郁金香发芽了，真期待它开花！",
+          "sentence_vi": "Cây hoa tulip mình trồng đã nảy mầm rồi, thật mong chờ ngày nó nở hoa!",
+          "character": "静香 (静宜)"
+        },
+        {
+          "id": "s2_p1_d2_w3",
+          "text": "开花",
+          "pinyin": "kāihuā",
+          "hanviet": "Khai Hoa",
+          "meaning_vi": "nở hoa",
+          "hsk": 3,
+          "bbox": {
+            "x": 58.0,
+            "y": 73.12,
+            "width": 30.0,
+            "height": 3.5
+          },
+          "sentence_zh": "我种的郁金香发芽了，真期待它开花！",
+          "sentence_vi": "Cây hoa tulip mình trồng đã nảy mầm rồi, thật mong chờ ngày nó nở hoa!",
+          "character": "静香 (静宜)"
         }
       ]
     },
@@ -121,28 +261,52 @@
               "pinyin": "xìbāo",
               "hanviet": "Tế Bào",
               "meaning_vi": "tế bào",
-              "hsk": 4
+              "hsk": 4,
+              "bbox": {
+                "x": 55.0,
+                "y": 20.0,
+                "width": 38.0,
+                "height": 3.5
+              }
             },
             {
               "text": "染色体",
               "pinyin": "rǎnsètǐ",
               "hanviet": "Nhiễm Sắc Thể",
               "meaning_vi": "nhiễm sắc thể",
-              "hsk": 5
+              "hsk": 5,
+              "bbox": {
+                "x": 55.0,
+                "y": 23.0,
+                "width": 38.0,
+                "height": 3.5
+              }
             },
             {
               "text": "培育",
               "pinyin": "péiyù",
               "hanviet": "Bồi Dục",
               "meaning_vi": "bồi dưỡng, ươm mầm, lai tạo",
-              "hsk": 4
+              "hsk": 4,
+              "bbox": {
+                "x": 55.0,
+                "y": 34.0,
+                "width": 38.0,
+                "height": 3.5
+              }
             },
             {
               "text": "品种",
               "pinyin": "pǐnzhǒng",
               "hanviet": "Phẩm Chủng",
               "meaning_vi": "chủng loại, giống loài",
-              "hsk": 4
+              "hsk": 4,
+              "bbox": {
+                "x": 55.0,
+                "y": 38.0,
+                "width": 38.0,
+                "height": 3.5
+              }
             }
           ]
         },
@@ -165,23 +329,162 @@
               "pinyin": "yíchuán",
               "hanviet": "Di Truyền",
               "meaning_vi": "di truyền",
-              "hsk": 4
+              "hsk": 4,
+              "bbox": {
+                "x": 16.0,
+                "y": 60.0,
+                "width": 35.0,
+                "height": 3.5
+              }
             },
             {
               "text": "设计图",
               "pinyin": "shèjìtú",
               "hanviet": "Thiết Kế Đồ",
               "meaning_vi": "bản vẽ thiết kế",
-              "hsk": 4
+              "hsk": 4,
+              "bbox": {
+                "x": 16.0,
+                "y": 76.0,
+                "width": 35.0,
+                "height": 3.5
+              }
             },
             {
               "text": "生物",
               "pinyin": "shēngwù",
               "hanviet": "Sinh Vật",
               "meaning_vi": "sinh vật",
-              "hsk": 3
+              "hsk": 3,
+              "bbox": {
+                "x": 16.0,
+                "y": 72.57,
+                "width": 35.0,
+                "height": 3.5
+              }
             }
           ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "s2_p2_d1_w0",
+          "text": "细胞",
+          "pinyin": "xìbāo",
+          "hanviet": "Tế Bào",
+          "meaning_vi": "tế bào",
+          "hsk": 4,
+          "bbox": {
+            "x": 55.0,
+            "y": 20.0,
+            "width": 38.0,
+            "height": 3.5
+          },
+          "sentence_zh": "只要在植物细胞的染色体中加点工夫，就能培育出新品种！",
+          "sentence_vi": "Chỉ cần tác động một chút vào nhiễm sắc thể trong tế bào thực vật, là có thể lai tạo ra giống cây mới!",
+          "character": "哆啦A梦"
+        },
+        {
+          "id": "s2_p2_d1_w1",
+          "text": "染色体",
+          "pinyin": "rǎnsètǐ",
+          "hanviet": "Nhiễm Sắc Thể",
+          "meaning_vi": "nhiễm sắc thể",
+          "hsk": 5,
+          "bbox": {
+            "x": 55.0,
+            "y": 23.0,
+            "width": 38.0,
+            "height": 3.5
+          },
+          "sentence_zh": "只要在植物细胞的染色体中加点工夫，就能培育出新品种！",
+          "sentence_vi": "Chỉ cần tác động một chút vào nhiễm sắc thể trong tế bào thực vật, là có thể lai tạo ra giống cây mới!",
+          "character": "哆啦A梦"
+        },
+        {
+          "id": "s2_p2_d1_w2",
+          "text": "培育",
+          "pinyin": "péiyù",
+          "hanviet": "Bồi Dục",
+          "meaning_vi": "bồi dưỡng, ươm mầm, lai tạo",
+          "hsk": 4,
+          "bbox": {
+            "x": 55.0,
+            "y": 34.0,
+            "width": 38.0,
+            "height": 3.5
+          },
+          "sentence_zh": "只要在植物细胞的染色体中加点工夫，就能培育出新品种！",
+          "sentence_vi": "Chỉ cần tác động một chút vào nhiễm sắc thể trong tế bào thực vật, là có thể lai tạo ra giống cây mới!",
+          "character": "哆啦A梦"
+        },
+        {
+          "id": "s2_p2_d1_w3",
+          "text": "品种",
+          "pinyin": "pǐnzhǒng",
+          "hanviet": "Phẩm Chủng",
+          "meaning_vi": "chủng loại, giống loài",
+          "hsk": 4,
+          "bbox": {
+            "x": 55.0,
+            "y": 38.0,
+            "width": 38.0,
+            "height": 3.5
+          },
+          "sentence_zh": "只要在植物细胞的染色体中加点工夫，就能培育出新品种！",
+          "sentence_vi": "Chỉ cần tác động một chút vào nhiễm sắc thể trong tế bào thực vật, là có thể lai tạo ra giống cây mới!",
+          "character": "哆啦A梦"
+        },
+        {
+          "id": "s2_p2_d2_w0",
+          "text": "遗传",
+          "pinyin": "yíchuán",
+          "hanviet": "Di Truyền",
+          "meaning_vi": "di truyền",
+          "hsk": 4,
+          "bbox": {
+            "x": 16.0,
+            "y": 60.0,
+            "width": 35.0,
+            "height": 3.5
+          },
+          "sentence_zh": "遗传因子就像是一张制造生物的设计图一样……",
+          "sentence_vi": "Gen di truyền cũng giống như một bản thiết kế tạo nên sinh vật vậy...",
+          "character": "哆啦A梦"
+        },
+        {
+          "id": "s2_p2_d2_w1",
+          "text": "设计图",
+          "pinyin": "shèjìtú",
+          "hanviet": "Thiết Kế Đồ",
+          "meaning_vi": "bản vẽ thiết kế",
+          "hsk": 4,
+          "bbox": {
+            "x": 16.0,
+            "y": 76.0,
+            "width": 35.0,
+            "height": 3.5
+          },
+          "sentence_zh": "遗传因子就像是一张制造生物的设计图一样……",
+          "sentence_vi": "Gen di truyền cũng giống như một bản thiết kế tạo nên sinh vật vậy...",
+          "character": "哆啦A梦"
+        },
+        {
+          "id": "s2_p2_d2_w2",
+          "text": "生物",
+          "pinyin": "shēngwù",
+          "hanviet": "Sinh Vật",
+          "meaning_vi": "sinh vật",
+          "hsk": 3,
+          "bbox": {
+            "x": 16.0,
+            "y": 72.57,
+            "width": 35.0,
+            "height": 3.5
+          },
+          "sentence_zh": "遗传因子就像是一张制造生物的设计图一样……",
+          "sentence_vi": "Gen di truyền cũng giống như một bản thiết kế tạo nên sinh vật vậy...",
+          "character": "哆啦A梦"
         }
       ]
     },
@@ -208,14 +511,26 @@
               "pinyin": "qiánsuǒwèijiàn",
               "hanviet": "Tiền Sở Vị Kiến",
               "meaning_vi": "chưa từng thấy bao giờ",
-              "hsk": 5
+              "hsk": 5,
+              "bbox": {
+                "x": 58.0,
+                "y": 22.06,
+                "width": 32.0,
+                "height": 5.65
+              }
             },
             {
               "text": "制造",
               "pinyin": "zhìzào",
               "hanviet": "Chế Tạo",
               "meaning_vi": "sản xuất, chế tạo",
-              "hsk": 3
+              "hsk": 3,
+              "bbox": {
+                "x": 58.0,
+                "y": 19.24,
+                "width": 32.0,
+                "height": 3.5
+              }
             }
           ]
         },
@@ -238,23 +553,128 @@
               "pinyin": "jìzhu",
               "hanviet": "Ký Trụ",
               "meaning_vi": "ghi nhớ",
-              "hsk": 2
+              "hsk": 2,
+              "bbox": {
+                "x": 18.0,
+                "y": 62.0,
+                "width": 30.0,
+                "height": 4.0
+              }
             },
             {
               "text": "千万",
               "pinyin": "qiānwàn",
               "hanviet": "Thiên Vạn",
               "meaning_vi": "nhất thiết, tuyệt đối",
-              "hsk": 3
+              "hsk": 3,
+              "bbox": {
+                "x": 18.0,
+                "y": 68.0,
+                "width": 30.0,
+                "height": 4.0
+              }
             },
             {
               "text": "乱来",
               "pinyin": "luànlái",
               "hanviet": "Loạn Lai",
               "meaning_vi": "làm bừa, quậy phá",
-              "hsk": 3
+              "hsk": 3,
+              "bbox": {
+                "x": 18.0,
+                "y": 76.0,
+                "width": 30.0,
+                "height": 4.0
+              }
             }
           ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "s2_p3_d1_w0",
+          "text": "前所未见",
+          "pinyin": "qiánsuǒwèijiàn",
+          "hanviet": "Tiền Sở Vị Kiến",
+          "meaning_vi": "chưa từng thấy bao giờ",
+          "hsk": 5,
+          "bbox": {
+            "x": 58.0,
+            "y": 22.06,
+            "width": 32.0,
+            "height": 5.65
+          },
+          "sentence_zh": "我也要制造前所未见的新品种郁金香！",
+          "sentence_vi": "Tớ cũng muốn tạo ra giống hoa tulip mới chưa từng thấy trước đây!",
+          "character": "大雄"
+        },
+        {
+          "id": "s2_p3_d1_w1",
+          "text": "制造",
+          "pinyin": "zhìzào",
+          "hanviet": "Chế Tạo",
+          "meaning_vi": "sản xuất, chế tạo",
+          "hsk": 3,
+          "bbox": {
+            "x": 58.0,
+            "y": 19.24,
+            "width": 32.0,
+            "height": 3.5
+          },
+          "sentence_zh": "我也要制造前所未见的新品种郁金香！",
+          "sentence_vi": "Tớ cũng muốn tạo ra giống hoa tulip mới chưa từng thấy trước đây!",
+          "character": "大雄"
+        },
+        {
+          "id": "s2_p3_d2_w0",
+          "text": "记住",
+          "pinyin": "jìzhu",
+          "hanviet": "Ký Trụ",
+          "meaning_vi": "ghi nhớ",
+          "hsk": 2,
+          "bbox": {
+            "x": 18.0,
+            "y": 62.0,
+            "width": 30.0,
+            "height": 4.0
+          },
+          "sentence_zh": "记住，千万不能乱来啊！",
+          "sentence_vi": "Nhớ kỹ đấy, tuyệt đối không được làm bậy đâu đó!",
+          "character": "哆啦A梦"
+        },
+        {
+          "id": "s2_p3_d2_w1",
+          "text": "千万",
+          "pinyin": "qiānwàn",
+          "hanviet": "Thiên Vạn",
+          "meaning_vi": "nhất thiết, tuyệt đối",
+          "hsk": 3,
+          "bbox": {
+            "x": 18.0,
+            "y": 68.0,
+            "width": 30.0,
+            "height": 4.0
+          },
+          "sentence_zh": "记住，千万不能乱来啊！",
+          "sentence_vi": "Nhớ kỹ đấy, tuyệt đối không được làm bậy đâu đó!",
+          "character": "哆啦A梦"
+        },
+        {
+          "id": "s2_p3_d2_w2",
+          "text": "乱来",
+          "pinyin": "luànlái",
+          "hanviet": "Loạn Lai",
+          "meaning_vi": "làm bừa, quậy phá",
+          "hsk": 3,
+          "bbox": {
+            "x": 18.0,
+            "y": 76.0,
+            "width": 30.0,
+            "height": 4.0
+          },
+          "sentence_zh": "记住，千万不能乱来啊！",
+          "sentence_vi": "Nhớ kỹ đấy, tuyệt đối không được làm bậy đâu đó!",
+          "character": "哆啦A梦"
         }
       ]
     },
@@ -281,14 +701,26 @@
               "pinyin": "hùnhé",
               "hanviet": "Hỗn Hợp",
               "meaning_vi": "pha trộn, hỗn hợp",
-              "hsk": 4
+              "hsk": 4,
+              "bbox": {
+                "x": 60.0,
+                "y": 20.6,
+                "width": 30.0,
+                "height": 3.5
+              }
             },
             {
               "text": "变成",
               "pinyin": "biàn chéng",
               "hanviet": "Biến Thành",
               "meaning_vi": "trở thành, biến thành",
-              "hsk": 3
+              "hsk": 3,
+              "bbox": {
+                "x": 60.0,
+                "y": 28.3,
+                "width": 30.0,
+                "height": 3.5
+              }
             }
           ]
         },
@@ -311,16 +743,98 @@
               "pinyin": "zhǎng chū",
               "hanviet": "Trưởng Xuất",
               "meaning_vi": "mọc ra",
-              "hsk": 2
+              "hsk": 2,
+              "bbox": {
+                "x": 16.0,
+                "y": 71.33,
+                "width": 32.0,
+                "height": 3.5
+              }
             },
             {
               "text": "花朵",
               "pinyin": "huāduǒ",
               "hanviet": "Hoa Đóa",
               "meaning_vi": "đóa hoa",
-              "hsk": 3
+              "hsk": 3,
+              "bbox": {
+                "x": 16.0,
+                "y": 80.67,
+                "width": 32.0,
+                "height": 3.5
+              }
             }
           ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "s2_p4_d1_w0",
+          "text": "混合",
+          "pinyin": "hùnhé",
+          "hanviet": "Hỗn Hợp",
+          "meaning_vi": "pha trộn, hỗn hợp",
+          "hsk": 4,
+          "bbox": {
+            "x": 60.0,
+            "y": 20.6,
+            "width": 30.0,
+            "height": 3.5
+          },
+          "sentence_zh": "把这个和那个混合在一起，会变成什么样呢？",
+          "sentence_vi": "Trộn cái này với cái kia lại với nhau, sẽ biến thành cái gì nhỉ?",
+          "character": "大雄"
+        },
+        {
+          "id": "s2_p4_d1_w1",
+          "text": "变成",
+          "pinyin": "biàn chéng",
+          "hanviet": "Biến Thành",
+          "meaning_vi": "trở thành, biến thành",
+          "hsk": 3,
+          "bbox": {
+            "x": 60.0,
+            "y": 28.3,
+            "width": 30.0,
+            "height": 3.5
+          },
+          "sentence_zh": "把这个和那个混合在一起，会变成什么样呢？",
+          "sentence_vi": "Trộn cái này với cái kia lại với nhau, sẽ biến thành cái gì nhỉ?",
+          "character": "大雄"
+        },
+        {
+          "id": "s2_p4_d2_w0",
+          "text": "长出",
+          "pinyin": "zhǎng chū",
+          "hanviet": "Trưởng Xuất",
+          "meaning_vi": "mọc ra",
+          "hsk": 2,
+          "bbox": {
+            "x": 16.0,
+            "y": 71.33,
+            "width": 32.0,
+            "height": 3.5
+          },
+          "sentence_zh": "快点快点，给我长出又大又香的花朵来！",
+          "sentence_vi": "Mau lên mau lên, mau mọc ra bông hoa vừa to vừa thơm cho ta!",
+          "character": "大雄"
+        },
+        {
+          "id": "s2_p4_d2_w1",
+          "text": "花朵",
+          "pinyin": "huāduǒ",
+          "hanviet": "Hoa Đóa",
+          "meaning_vi": "đóa hoa",
+          "hsk": 3,
+          "bbox": {
+            "x": 16.0,
+            "y": 80.67,
+            "width": 32.0,
+            "height": 3.5
+          },
+          "sentence_zh": "快点快点，给我长出又大又香的花朵来！",
+          "sentence_vi": "Mau lên mau lên, mau mọc ra bông hoa vừa to vừa thơm cho ta!",
+          "character": "大雄"
         }
       ]
     },
@@ -347,14 +861,26 @@
               "pinyin": "zěnme",
               "hanviet": "Chẩm Ma",
               "meaning_vi": "sao mà, thế nào",
-              "hsk": 1
+              "hsk": 1,
+              "bbox": {
+                "x": 58.0,
+                "y": 16.0,
+                "width": 32.0,
+                "height": 3.5
+              }
             },
             {
               "text": "南瓜",
               "pinyin": "nánguā",
               "hanviet": "Nam Qua",
               "meaning_vi": "quả bí ngô, bí đỏ",
-              "hsk": 3
+              "hsk": 3,
+              "bbox": {
+                "x": 58.0,
+                "y": 23.5,
+                "width": 32.0,
+                "height": 3.5
+              }
             }
           ]
         },
@@ -377,16 +903,98 @@
               "pinyin": "qíguài",
               "hanviet": "Kỳ Quái",
               "meaning_vi": "kỳ quái, lạ lùng",
-              "hsk": 3
+              "hsk": 3,
+              "bbox": {
+                "x": 15.0,
+                "y": 70.42,
+                "width": 35.0,
+                "height": 3.5
+              }
             },
             {
               "text": "种子",
               "pinyin": "zhǒngzǐ",
               "hanviet": "Chủng Tử",
               "meaning_vi": "hạt giống",
-              "hsk": 3
+              "hsk": 3,
+              "bbox": {
+                "x": 15.0,
+                "y": 73.89,
+                "width": 35.0,
+                "height": 3.5
+              }
             }
           ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "s2_p5_d1_w0",
+          "text": "怎么",
+          "pinyin": "zěnme",
+          "hanviet": "Chẩm Ma",
+          "meaning_vi": "sao mà, thế nào",
+          "hsk": 1,
+          "bbox": {
+            "x": 58.0,
+            "y": 16.0,
+            "width": 32.0,
+            "height": 3.5
+          },
+          "sentence_zh": "怎么长出像南瓜一样的东西来了？！",
+          "sentence_vi": "Sao lại mọc ra thứ tròn ủng giống như quả bí ngô thế này?!",
+          "character": "大雄"
+        },
+        {
+          "id": "s2_p5_d1_w1",
+          "text": "南瓜",
+          "pinyin": "nánguā",
+          "hanviet": "Nam Qua",
+          "meaning_vi": "quả bí ngô, bí đỏ",
+          "hsk": 3,
+          "bbox": {
+            "x": 58.0,
+            "y": 23.5,
+            "width": 32.0,
+            "height": 3.5
+          },
+          "sentence_zh": "怎么长出像南瓜一样的东西来了？！",
+          "sentence_vi": "Sao lại mọc ra thứ tròn ủng giống như quả bí ngô thế này?!",
+          "character": "大雄"
+        },
+        {
+          "id": "s2_p5_d2_w0",
+          "text": "奇怪",
+          "pinyin": "qíguài",
+          "hanviet": "Kỳ Quái",
+          "meaning_vi": "kỳ quái, lạ lùng",
+          "hsk": 3,
+          "bbox": {
+            "x": 15.0,
+            "y": 70.42,
+            "width": 35.0,
+            "height": 3.5
+          },
+          "sentence_zh": "哎呀！你到底把什么奇怪的种子混进去了！",
+          "sentence_vi": "Trời đất ơi! Rốt cuộc cậu đã trộn hạt giống kỳ quặc gì vào thế!",
+          "character": "哆啦A梦"
+        },
+        {
+          "id": "s2_p5_d2_w1",
+          "text": "种子",
+          "pinyin": "zhǒngzǐ",
+          "hanviet": "Chủng Tử",
+          "meaning_vi": "hạt giống",
+          "hsk": 3,
+          "bbox": {
+            "x": 15.0,
+            "y": 73.89,
+            "width": 35.0,
+            "height": 3.5
+          },
+          "sentence_zh": "哎呀！你到底把什么奇怪的种子混进去了！",
+          "sentence_vi": "Trời đất ơi! Rốt cuộc cậu đã trộn hạt giống kỳ quặc gì vào thế!",
+          "character": "哆啦A梦"
         }
       ]
     },
@@ -413,14 +1021,26 @@
               "pinyin": "dòng qǐlái",
               "hanviet": "Động Khởi Lai",
               "meaning_vi": "cử động, bắt đầu chuyển động",
-              "hsk": 3
+              "hsk": 3,
+              "bbox": {
+                "x": 55.0,
+                "y": 27.38,
+                "width": 32.0,
+                "height": 4.12
+              }
             },
             {
               "text": "虫子",
               "pinyin": "chóngzi",
               "hanviet": "Trùng Tử",
               "meaning_vi": "sâu bọ, côn trùng",
-              "hsk": 3
+              "hsk": 3,
+              "bbox": {
+                "x": 55.0,
+                "y": 32.88,
+                "width": 32.0,
+                "height": 3.5
+              }
             }
           ]
         },
@@ -443,16 +1063,98 @@
               "pinyin": "tèxìng",
               "hanviet": "Đặc Tính",
               "meaning_vi": "đặc tính",
-              "hsk": 4
+              "hsk": 4,
+              "bbox": {
+                "x": 18.0,
+                "y": 71.62,
+                "width": 30.0,
+                "height": 3.5
+              }
             },
             {
               "text": "靠近",
               "pinyin": "kàojìn",
               "hanviet": "Kháo Cận",
               "meaning_vi": "tiến lại gần",
-              "hsk": 3
+              "hsk": 3,
+              "bbox": {
+                "x": 18.0,
+                "y": 64.75,
+                "width": 30.0,
+                "height": 3.5
+              }
             }
           ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "s2_p6_d1_w0",
+          "text": "动起来",
+          "pinyin": "dòng qǐlái",
+          "hanviet": "Động Khởi Lai",
+          "meaning_vi": "cử động, bắt đầu chuyển động",
+          "hsk": 3,
+          "bbox": {
+            "x": 55.0,
+            "y": 27.38,
+            "width": 32.0,
+            "height": 4.12
+          },
+          "sentence_zh": "这棵植物竟然会自己动起来抓虫子！",
+          "sentence_vi": "Cái cây này thế mà lại tự cử động để bắt sâu bọ kìa!",
+          "character": "大雄"
+        },
+        {
+          "id": "s2_p6_d1_w1",
+          "text": "虫子",
+          "pinyin": "chóngzi",
+          "hanviet": "Trùng Tử",
+          "meaning_vi": "sâu bọ, côn trùng",
+          "hsk": 3,
+          "bbox": {
+            "x": 55.0,
+            "y": 32.88,
+            "width": 32.0,
+            "height": 3.5
+          },
+          "sentence_zh": "这棵植物竟然会自己动起来抓虫子！",
+          "sentence_vi": "Cái cây này thế mà lại tự cử động để bắt sâu bọ kìa!",
+          "character": "大雄"
+        },
+        {
+          "id": "s2_p6_d2_w0",
+          "text": "特性",
+          "pinyin": "tèxìng",
+          "hanviet": "Đặc Tính",
+          "meaning_vi": "đặc tính",
+          "hsk": 4,
+          "bbox": {
+            "x": 18.0,
+            "y": 71.62,
+            "width": 30.0,
+            "height": 3.5
+          },
+          "sentence_zh": "这是食虫植物的特性！别靠得太近！",
+          "sentence_vi": "Đây là đặc tính của cây ăn thịt (bắt mồi)! Đừng có đứng quá gần!",
+          "character": "哆啦A梦"
+        },
+        {
+          "id": "s2_p6_d2_w1",
+          "text": "靠近",
+          "pinyin": "kàojìn",
+          "hanviet": "Kháo Cận",
+          "meaning_vi": "tiến lại gần",
+          "hsk": 3,
+          "bbox": {
+            "x": 18.0,
+            "y": 64.75,
+            "width": 30.0,
+            "height": 3.5
+          },
+          "sentence_zh": "这是食虫植物的特性！别靠得太近！",
+          "sentence_vi": "Đây là đặc tính của cây ăn thịt (bắt mồi)! Đừng có đứng quá gần!",
+          "character": "哆啦A梦"
         }
       ]
     },
@@ -479,21 +1181,39 @@
               "pinyin": "téngwàn",
               "hanviet": "Đằng Man",
               "meaning_vi": "dây leo",
-              "hsk": 4
+              "hsk": 4,
+              "bbox": {
+                "x": 58.0,
+                "y": 20.82,
+                "width": 32.0,
+                "height": 3.5
+              }
             },
             {
               "text": "裤子",
               "pinyin": "kùzi",
               "hanviet": "Khố Tử",
               "meaning_vi": "quần",
-              "hsk": 2
+              "hsk": 2,
+              "bbox": {
+                "x": 58.0,
+                "y": 27.88,
+                "width": 32.0,
+                "height": 3.5
+              }
             },
             {
               "text": "咬住",
               "pinyin": "yǎozhù",
               "hanviet": "Giao Trụ",
               "meaning_vi": "cắn chặt",
-              "hsk": 3
+              "hsk": 3,
+              "bbox": {
+                "x": 58.0,
+                "y": 30.71,
+                "width": 32.0,
+                "height": 3.5
+              }
             }
           ]
         },
@@ -516,16 +1236,115 @@
               "pinyin": "yuànzi",
               "hanviet": "Viện Tử",
               "meaning_vi": "sân vườn",
-              "hsk": 3
+              "hsk": 3,
+              "bbox": {
+                "x": 15.0,
+                "y": 69.0,
+                "width": 35.0,
+                "height": 3.5
+              }
             },
             {
               "text": "鬼名堂",
               "pinyin": "guǐ míngtáng",
               "hanviet": "Quỷ Danh Đường",
               "meaning_vi": "trò ma mãnh, quậy phá",
-              "hsk": 4
+              "hsk": 4,
+              "bbox": {
+                "x": 15.0,
+                "y": 78.0,
+                "width": 35.0,
+                "height": 4.5
+              }
             }
           ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "s2_p7_d1_w0",
+          "text": "藤蔓",
+          "pinyin": "téngwàn",
+          "hanviet": "Đằng Man",
+          "meaning_vi": "dây leo",
+          "hsk": 4,
+          "bbox": {
+            "x": 58.0,
+            "y": 20.82,
+            "width": 32.0,
+            "height": 3.5
+          },
+          "sentence_zh": "哇！藤蔓把我的裤子咬住了！快救我！",
+          "sentence_vi": "Oa! Dây leo cắn chặt lấy quần của tớ rồi! Mau cứu tớ với!",
+          "character": "大雄"
+        },
+        {
+          "id": "s2_p7_d1_w1",
+          "text": "裤子",
+          "pinyin": "kùzi",
+          "hanviet": "Khố Tử",
+          "meaning_vi": "quần",
+          "hsk": 2,
+          "bbox": {
+            "x": 58.0,
+            "y": 27.88,
+            "width": 32.0,
+            "height": 3.5
+          },
+          "sentence_zh": "哇！藤蔓把我的裤子咬住了！快救我！",
+          "sentence_vi": "Oa! Dây leo cắn chặt lấy quần của tớ rồi! Mau cứu tớ với!",
+          "character": "大雄"
+        },
+        {
+          "id": "s2_p7_d1_w2",
+          "text": "咬住",
+          "pinyin": "yǎozhù",
+          "hanviet": "Giao Trụ",
+          "meaning_vi": "cắn chặt",
+          "hsk": 3,
+          "bbox": {
+            "x": 58.0,
+            "y": 30.71,
+            "width": 32.0,
+            "height": 3.5
+          },
+          "sentence_zh": "哇！藤蔓把我的裤子咬住了！快救我！",
+          "sentence_vi": "Oa! Dây leo cắn chặt lấy quần của tớ rồi! Mau cứu tớ với!",
+          "character": "大雄"
+        },
+        {
+          "id": "s2_p7_d2_w0",
+          "text": "院子",
+          "pinyin": "yuànzi",
+          "hanviet": "Viện Tử",
+          "meaning_vi": "sân vườn",
+          "hsk": 3,
+          "bbox": {
+            "x": 15.0,
+            "y": 69.0,
+            "width": 35.0,
+            "height": 3.5
+          },
+          "sentence_zh": "大雄！你又在院子里搞什么鬼名堂！",
+          "sentence_vi": "Nobita! Con lại bày trò ma mãnh gì ngoài sân thế hả!",
+          "character": "妈妈"
+        },
+        {
+          "id": "s2_p7_d2_w1",
+          "text": "鬼名堂",
+          "pinyin": "guǐ míngtáng",
+          "hanviet": "Quỷ Danh Đường",
+          "meaning_vi": "trò ma mãnh, quậy phá",
+          "hsk": 4,
+          "bbox": {
+            "x": 15.0,
+            "y": 78.0,
+            "width": 35.0,
+            "height": 4.5
+          },
+          "sentence_zh": "大雄！你又在院子里搞什么鬼名堂！",
+          "sentence_vi": "Nobita! Con lại bày trò ma mãnh gì ngoài sân thế hả!",
+          "character": "妈妈"
         }
       ]
     },
@@ -552,28 +1371,52 @@
               "pinyin": "xìnghǎo",
               "hanviet": "Hạnh Hảo",
               "meaning_vi": "may mắn thay",
-              "hsk": 4
+              "hsk": 4,
+              "bbox": {
+                "x": 50.0,
+                "y": 20.0,
+                "width": 35.0,
+                "height": 3.5
+              }
             },
             {
               "text": "基因",
               "pinyin": "jīyīn",
               "hanviet": "Cơ Nhân",
               "meaning_vi": "gen",
-              "hsk": 4
+              "hsk": 4,
+              "bbox": {
+                "x": 50.0,
+                "y": 22.67,
+                "width": 35.0,
+                "height": 3.5
+              }
             },
             {
               "text": "复原",
               "pinyin": "fùyuán",
               "hanviet": "Phục Nguyên",
               "meaning_vi": "khôi phục ban đầu",
-              "hsk": 4
+              "hsk": 4,
+              "bbox": {
+                "x": 50.0,
+                "y": 24.44,
+                "width": 35.0,
+                "height": 3.5
+              }
             },
             {
               "text": "占领",
               "pinyin": "zhànlǐng",
               "hanviet": "Chiếm Lãnh",
               "meaning_vi": "chiếm lĩnh, chiếm đóng",
-              "hsk": 4
+              "hsk": 4,
+              "bbox": {
+                "x": 50.0,
+                "y": 40.44,
+                "width": 35.0,
+                "height": 3.5
+              }
             }
           ]
         },
@@ -596,23 +1439,162 @@
               "pinyin": "lǎolǎoshíshí",
               "hanviet": "Lão Lão Thật Thật",
               "meaning_vi": "an phận, thật thà",
-              "hsk": 4
+              "hsk": 4,
+              "bbox": {
+                "x": 15.0,
+                "y": 65.47,
+                "width": 32.0,
+                "height": 4.63
+              }
             },
             {
               "text": "普通",
               "pinyin": "pǔtōng",
               "hanviet": "Phổ Thông",
               "meaning_vi": "bình thường",
-              "hsk": 3
+              "hsk": 3,
+              "bbox": {
+                "x": 15.0,
+                "y": 71.26,
+                "width": 32.0,
+                "height": 3.5
+              }
             },
             {
               "text": "浇水",
               "pinyin": "jiāoshuǐ",
               "hanviet": "Kiêu Thủy",
               "meaning_vi": "tưới nước",
-              "hsk": 3
+              "hsk": 3,
+              "bbox": {
+                "x": 15.0,
+                "y": 78.21,
+                "width": 32.0,
+                "height": 3.5
+              }
             }
           ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "s2_p8_d1_w0",
+          "text": "幸好",
+          "pinyin": "xìnghǎo",
+          "hanviet": "Hạnh Hảo",
+          "meaning_vi": "may mắn thay",
+          "hsk": 4,
+          "bbox": {
+            "x": 50.0,
+            "y": 20.0,
+            "width": 35.0,
+            "height": 3.5
+          },
+          "sentence_zh": "幸好把基因复原喷雾喷上去了，不然整个院子都要被占领了！",
+          "sentence_vi": "May mà kịp xịt bình xịt phục hồi gen lên, không thì cả cái sân vườn bị nó chiếm đóng mất rồi!",
+          "character": "哆啦A梦"
+        },
+        {
+          "id": "s2_p8_d1_w1",
+          "text": "基因",
+          "pinyin": "jīyīn",
+          "hanviet": "Cơ Nhân",
+          "meaning_vi": "gen",
+          "hsk": 4,
+          "bbox": {
+            "x": 50.0,
+            "y": 22.67,
+            "width": 35.0,
+            "height": 3.5
+          },
+          "sentence_zh": "幸好把基因复原喷雾喷上去了，不然整个院子都要被占领了！",
+          "sentence_vi": "May mà kịp xịt bình xịt phục hồi gen lên, không thì cả cái sân vườn bị nó chiếm đóng mất rồi!",
+          "character": "哆啦A梦"
+        },
+        {
+          "id": "s2_p8_d1_w2",
+          "text": "复原",
+          "pinyin": "fùyuán",
+          "hanviet": "Phục Nguyên",
+          "meaning_vi": "khôi phục ban đầu",
+          "hsk": 4,
+          "bbox": {
+            "x": 50.0,
+            "y": 24.44,
+            "width": 35.0,
+            "height": 3.5
+          },
+          "sentence_zh": "幸好把基因复原喷雾喷上去了，不然整个院子都要被占领了！",
+          "sentence_vi": "May mà kịp xịt bình xịt phục hồi gen lên, không thì cả cái sân vườn bị nó chiếm đóng mất rồi!",
+          "character": "哆啦A梦"
+        },
+        {
+          "id": "s2_p8_d1_w3",
+          "text": "占领",
+          "pinyin": "zhànlǐng",
+          "hanviet": "Chiếm Lãnh",
+          "meaning_vi": "chiếm lĩnh, chiếm đóng",
+          "hsk": 4,
+          "bbox": {
+            "x": 50.0,
+            "y": 40.44,
+            "width": 35.0,
+            "height": 3.5
+          },
+          "sentence_zh": "幸好把基因复原喷雾喷上去了，不然整个院子都要被占领了！",
+          "sentence_vi": "May mà kịp xịt bình xịt phục hồi gen lên, không thì cả cái sân vườn bị nó chiếm đóng mất rồi!",
+          "character": "哆啦A梦"
+        },
+        {
+          "id": "s2_p8_d2_w0",
+          "text": "老老实实",
+          "pinyin": "lǎolǎoshíshí",
+          "hanviet": "Lão Lão Thật Thật",
+          "meaning_vi": "an phận, thật thà",
+          "hsk": 4,
+          "bbox": {
+            "x": 15.0,
+            "y": 65.47,
+            "width": 32.0,
+            "height": 4.63
+          },
+          "sentence_zh": "我还是老老实实给普通的郁金香浇水吧……",
+          "sentence_vi": "Thôi thì mình cứ ngoan ngoãn tưới nước cho cây hoa tulip bình thường vậy...",
+          "character": "大雄"
+        },
+        {
+          "id": "s2_p8_d2_w1",
+          "text": "普通",
+          "pinyin": "pǔtōng",
+          "hanviet": "Phổ Thông",
+          "meaning_vi": "bình thường",
+          "hsk": 3,
+          "bbox": {
+            "x": 15.0,
+            "y": 71.26,
+            "width": 32.0,
+            "height": 3.5
+          },
+          "sentence_zh": "我还是老老实实给普通的郁金香浇水吧……",
+          "sentence_vi": "Thôi thì mình cứ ngoan ngoãn tưới nước cho cây hoa tulip bình thường vậy...",
+          "character": "大雄"
+        },
+        {
+          "id": "s2_p8_d2_w2",
+          "text": "浇水",
+          "pinyin": "jiāoshuǐ",
+          "hanviet": "Kiêu Thủy",
+          "meaning_vi": "tưới nước",
+          "hsk": 3,
+          "bbox": {
+            "x": 15.0,
+            "y": 78.21,
+            "width": 32.0,
+            "height": 3.5
+          },
+          "sentence_zh": "我还是老老实实给普通的郁金香浇水吧……",
+          "sentence_vi": "Thôi thì mình cứ ngoan ngoãn tưới nước cho cây hoa tulip bình thường vậy...",
+          "character": "大雄"
         }
       ]
     }

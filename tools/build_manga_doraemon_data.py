@@ -41,46 +41,74 @@ story1 = {
             "dialogues": [
                 {
                     "id": "p1_d1",
-                    "character": "哆啦A梦",
-                    "bbox": {"x": 30.0, "y": 28.0, "width": 26.0, "height": 18.0},
-                    "zh": "只要肯好好练习，没有雪也可以滑雪！",
-                    "zh_trad": "只要肯好好練習，沒有雪也可滑雪！",
-                    "pinyin": "Zhǐyào kěn hǎohǎo liànxí, méiyǒu xuě yě kěyǐ huáxuě!",
-                    "vi": "Chỉ cần chịu khó chăm chỉ luyện tập, không có tuyết cũng có thể trượt tuyết được!",
+                    "character": "大雄 (Nobita)",
+                    "bbox": {"x": 69.5, "y": 5.5, "width": 5.0, "height": 14.0},
+                    "zh": "春天到了。",
+                    "zh_trad": "春天到了。",
+                    "pinyin": "Chūntiān dào le.",
+                    "vi": "Mùa xuân đã đến rồi.",
                     "tokens": [
-                        {"text": "只要", "pinyin": "zhǐyào", "hanviet": "Chỉ Yếu", "meaning_vi": "chỉ cần", "hsk": 3},
-                        {"text": "肯", "pinyin": "kěn", "hanviet": "Khẳng", "meaning_vi": "chịu, bằng lòng", "hsk": 3},
-                        {"text": "好好", "pinyin": "hǎohǎo", "hanviet": "Hảo Hảo", "meaning_vi": "chăm chỉ, tử tế", "hsk": 2},
-                        {"text": "练习", "pinyin": "liànxí", "hanviet": "Luyện Tập", "meaning_vi": "luyện tập", "hsk": 3},
-                        {"text": "滑雪", "pinyin": "huáxuě", "hanviet": "Hoạt Tuyết", "meaning_vi": "trượt tuyết", "hsk": 3}
+                        {"text": "春天", "pinyin": "chūntiān", "hanviet": "Xuân Thiên", "meaning_vi": "mùa xuân", "hsk": 2},
+                        {"text": "到了", "pinyin": "dào le", "hanviet": "Đáo Liễu", "meaning_vi": "đã đến rồi", "hsk": 1}
                     ]
                 },
                 {
                     "id": "p1_d2",
-                    "character": "标题",
-                    "bbox": {"x": 25.0, "y": 48.0, "width": 50.0, "height": 16.0},
-                    "zh": "没有雪也可滑雪",
-                    "zh_trad": "沒有雪也可滑雪",
-                    "pinyin": "Méi yǒu xuě yě kě huáxuě",
-                    "vi": "Tiêu đề: Không có tuyết vẫn có thể trượt tuyết",
+                    "character": "大雄 (Nobita)",
+                    "bbox": {"x": 36.0, "y": 6.0, "width": 5.0, "height": 16.0},
+                    "zh": "春天又来临了……",
+                    "zh_trad": "春天又來臨了……",
+                    "pinyin": "Chūntiān yòu láilín le...",
+                    "vi": "Mùa xuân lại tới nữa rồi...",
                     "tokens": [
-                        {"text": "没有", "pinyin": "méiyǒu", "hanviet": "Một Hữu", "meaning_vi": "không có", "hsk": 1},
-                        {"text": "雪", "pinyin": "xuě", "hanviet": "Tuyết", "meaning_vi": "tuyết", "hsk": 2},
-                        {"text": "滑雪", "pinyin": "huáxuě", "hanviet": "Hoạt Tuyết", "meaning_vi": "trượt tuyết", "hsk": 3}
+                        {"text": "春天", "pinyin": "chūntiān", "hanviet": "Xuân Thiên", "meaning_vi": "mùa xuân", "hsk": 2},
+                        {"text": "又", "pinyin": "yòu", "hanviet": "Hựu", "meaning_vi": "lại", "hsk": 2},
+                        {"text": "来临", "pinyin": "láilín", "hanviet": "Lai Lâm", "meaning_vi": "đến, tới", "hsk": 4}
                     ]
                 },
                 {
                     "id": "p1_d3",
-                    "character": "大雄",
-                    "bbox": {"x": 68.0, "y": 70.0, "width": 26.0, "height": 18.0},
-                    "zh": "太棒了！快点教我吧！",
-                    "zh_trad": "太棒了！快點教我吧！",
-                    "pinyin": "Tài bàng le! Kuài diǎn jiāo wǒ ba!",
-                    "vi": "Tuyệt quá! Mau dạy tớ đi nào!",
+                    "character": "大雄 (Nobita)",
+                    "bbox": {"x": 76.0, "y": 48.0, "width": 16.0, "height": 22.0},
+                    "zh": "本想在这个冬天学懂滑雪的，但想不到春天这么快便来临了。",
+                    "zh_trad": "本想在這個冬天學懂滑雪的，但想不到春天這麼快便來臨了。",
+                    "pinyin": "Běn xiǎng zài zhège dōngtiān xuédǒng huáxuě de, dàn xiǎngbudào chūntiān zhème kuài biàn láilín le.",
+                    "vi": "Định bụng mùa đông này tập cho biết trượt tuyết, vậy mà chẳng ngờ mùa xuân lại tới nhanh đến thế.",
                     "tokens": [
-                        {"text": "太棒了", "pinyin": "tài bàng le", "hanviet": "Thái Bổng Liễu", "meaning_vi": "tuyệt vời, cừ quá", "hsk": 2},
-                        {"text": "快点", "pinyin": "kuài diǎn", "hanviet": "Khoái Điểm", "meaning_vi": "nhanh lên một chút", "hsk": 2},
-                        {"text": "教", "pinyin": "jiāo", "hanviet": "Giáo", "meaning_vi": "dạy dỗ, chỉ bảo", "hsk": 3}
+                        {"text": "本想", "pinyin": "běn xiǎng", "hanviet": "Bản Tưởng", "meaning_vi": "định bụng, vốn nghĩ", "hsk": 3},
+                        {"text": "冬天", "pinyin": "dōngtiān", "hanviet": "Đông Thiên", "meaning_vi": "mùa đông", "hsk": 2},
+                        {"text": "滑雪", "pinyin": "huáxuě", "hanviet": "Hoạt Tuyết", "meaning_vi": "trượt tuyết", "hsk": 3},
+                        {"text": "想不到", "pinyin": "xiǎngbudào", "hanviet": "Tưởng Bất Đáo", "meaning_vi": "chẳng ngờ, không ngờ tới", "hsk": 3},
+                        {"text": "这么快", "pinyin": "zhème kuài", "hanviet": "Giá Ma Khoái", "meaning_vi": "nhanh như vậy", "hsk": 2}
+                    ]
+                },
+                {
+                    "id": "p1_d4",
+                    "character": "哆啦A梦 (Doraemon)",
+                    "bbox": {"x": 44.0, "y": 48.0, "width": 5.0, "height": 18.0},
+                    "zh": "只怪你不好好练习。",
+                    "zh_trad": "只怪你不好好練習。",
+                    "pinyin": "Zhǐ guài nǐ bù hǎohǎo liànxí.",
+                    "vi": "Chỉ trách cậu không chịu chăm chỉ luyện tập mà thôi.",
+                    "tokens": [
+                        {"text": "只怪", "pinyin": "zhǐ guài", "hanviet": "Chỉ Quái", "meaning_vi": "chỉ trách", "hsk": 3},
+                        {"text": "好好", "pinyin": "hǎohǎo", "hanviet": "Hảo Hảo", "meaning_vi": "chăm chỉ, nghiêm túc", "hsk": 2},
+                        {"text": "练习", "pinyin": "liànxí", "hanviet": "Luyện Tập", "meaning_vi": "luyện tập", "hsk": 3}
+                    ]
+                },
+                {
+                    "id": "p1_d5",
+                    "character": "大雄 (Nobita)",
+                    "bbox": {"x": 21.0, "y": 48.0, "width": 9.0, "height": 21.0},
+                    "zh": "若最初肯用心练习便好了。",
+                    "zh_trad": "若最初肯用心練習便好了。",
+                    "pinyin": "Ruò zuìchū kěn yòngxīn liànxí biàn hǎo le.",
+                    "vi": "Giá như lúc đầu mình chịu dụng tâm luyện tập thì tốt rồi.",
+                    "tokens": [
+                        {"text": "最初", "pinyin": "zuìchū", "hanviet": "Tối Sơ", "meaning_vi": "lúc đầu, ban đầu", "hsk": 4},
+                        {"text": "肯", "pinyin": "kěn", "hanviet": "Khẳng", "meaning_vi": "chịu, bằng lòng", "hsk": 3},
+                        {"text": "用心", "pinyin": "yòngxīn", "hanviet": "Dụng Tâm", "meaning_vi": "dụng tâm, chú tâm", "hsk": 3},
+                        {"text": "练习", "pinyin": "liànxí", "hanviet": "Luyện Tập", "meaning_vi": "luyện tập", "hsk": 3}
                     ]
                 }
             ]
@@ -651,14 +679,68 @@ story2 = {
     ]
 }
 
+def generate_word_hotspots(dialogues):
+    """
+    Computes precise character/word-level bounding boxes aligned along the vertical
+    manga dialogue text columns. Prevents oversized bounding boxes covering artwork.
+    """
+    hotspots = []
+    for d in dialogues:
+        tokens = d.get("tokens", [])
+        bbox = d.get("bbox", {"x": 50, "y": 50, "width": 6.0, "height": 18.0})
+        full_zh = d.get("zh_trad", d.get("zh", ""))
+        col_x = bbox["x"]
+        col_y = bbox["y"]
+        col_w = bbox["width"]
+        col_h = bbox["height"]
+        
+        total_chars = max(len(full_zh), 1)
+        for idx, t in enumerate(tokens):
+            w_text = t["text"]
+            offset = full_zh.find(w_text)
+            if offset == -1:
+                offset = d.get("zh", "").find(w_text)
+            if offset == -1:
+                offset = idx * 2
+            
+            char_len = max(len(w_text), 1)
+            # Calculate vertical bbox aligned with the text column
+            wy = round(col_y + (offset / total_chars) * col_h, 2)
+            wh = round(max(3.5, (char_len / total_chars) * col_h), 2)
+            wx = col_x
+            ww = col_w
+            
+            hotspot = {
+                "id": f"{d['id']}_w{idx}",
+                "text": t["text"],
+                "pinyin": t["pinyin"],
+                "hanviet": t.get("hanviet", ""),
+                "meaning_vi": t.get("meaning_vi", ""),
+                "hsk": t.get("hsk", 2),
+                "bbox": {"x": wx, "y": wy, "width": ww, "height": wh},
+                "sentence_zh": d.get("zh", ""),
+                "sentence_vi": d.get("vi", ""),
+                "character": d.get("character", "")
+            }
+            hotspots.append(hotspot)
+            t["bbox"] = {"x": wx, "y": wy, "width": ww, "height": wh}
+    return hotspots
+
+# Compute word hotspots for all pages in both stories
+for p in story1["pages"]:
+    p["word_hotspots"] = generate_word_hotspots(p.get("dialogues", []))
+
+for p in story2["pages"]:
+    p["word_hotspots"] = generate_word_hotspots(p.get("dialogues", []))
+
 # Write individual story JSONs
 with open(MANGA_DIR / "doraemon_manga_001.json", "w", encoding="utf-8") as f:
     json.dump(story1, f, ensure_ascii=False, indent=2)
-print("Saved doraemon_manga_001.json")
+print("Saved doraemon_manga_001.json with word hotspots")
 
 with open(MANGA_DIR / "doraemon_manga_002.json", "w", encoding="utf-8") as f:
     json.dump(story2, f, ensure_ascii=False, indent=2)
-print("Saved doraemon_manga_002.json")
+print("Saved doraemon_manga_002.json with word hotspots")
 
 # Build manga manifest
 manifest = [

@@ -25,6 +25,8 @@ const activeMangaPage = signal(0);
 const showMangaOutlines = signal(true);
 const hoveredMangaDialogue = signal(null);
 const selectedMangaDialogue = signal(null);
+const hoveredMangaWord = signal(null);
+const selectedMangaWord = signal(null);
 const mangaZoomLevel = signal(1.0);
 const mangaCanvasTheme = signal('light'); // 'light' | 'sepia' | 'theater'
 const mangaIsFullscreen = signal(false);
@@ -1298,6 +1300,7 @@ function MangaViewer({ story }) {
   const pageIdx = activeMangaPage.value;
   const page = (story && story.pages && story.pages[pageIdx]) || (story && story.pages && story.pages[0]);
   const totalPages = (story && story.pages) ? story.pages.length : 1;
+  const activeWord = hoveredMangaWord.value || selectedMangaWord.value;
   const activeDlg = hoveredMangaDialogue.value || selectedMangaDialogue.value;
 
   const goToPrev = () => {
@@ -1305,6 +1308,8 @@ function MangaViewer({ story }) {
       activeMangaPage.value = pageIdx - 1;
       hoveredMangaDialogue.value = null;
       selectedMangaDialogue.value = null;
+      hoveredMangaWord.value = null;
+      selectedMangaWord.value = null;
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
@@ -1314,6 +1319,8 @@ function MangaViewer({ story }) {
       activeMangaPage.value = pageIdx + 1;
       hoveredMangaDialogue.value = null;
       selectedMangaDialogue.value = null;
+      hoveredMangaWord.value = null;
+      selectedMangaWord.value = null;
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
@@ -1373,6 +1380,8 @@ function MangaViewer({ story }) {
       } else if (e.key === 'Escape') {
         if (showMangaShortcutsModal.value) {
           showMangaShortcutsModal.value = false;
+        } else if (selectedMangaWord.value) {
+          selectedMangaWord.value = null;
         } else if (selectedMangaDialogue.value) {
           selectedMangaDialogue.value = null;
         } else {
@@ -1395,6 +1404,7 @@ function MangaViewer({ story }) {
       class={`manga-viewer-root theme-${mangaCanvasTheme.value}`}
       onClick={() => {
         if (selectedMangaDialogue.value) selectedMangaDialogue.value = null;
+        if (selectedMangaWord.value) selectedMangaWord.value = null;
         if (showMangaShortcutsModal.value) showMangaShortcutsModal.value = false;
       }}
     >
@@ -1513,38 +1523,150 @@ function MangaViewer({ story }) {
               loading="eager"
             />
 
-            {/* Hotspots for speech bubbles */}
-            {(page.dialogues || []).map((d) => {
-              const isSelected = (selectedMangaDialogue.value && selectedMangaDialogue.value.id === d.id);
-              const isHovered = (hoveredMangaDialogue.value && hoveredMangaDialogue.value.id === d.id);
-              return (
-                <div
-                  key={d.id}
-                  class={`manga-hotspot ${showMangaOutlines.value ? 'show-outline' : ''} ${isSelected || isHovered ? 'is-active' : ''}`}
-                  style={`left: ${d.bbox.x}%; top: ${d.bbox.y}%; width: ${d.bbox.width}%; height: ${d.bbox.height}%;`}
-                  onMouseEnter={() => {
-                    hoveredMangaDialogue.value = d;
-                  }}
-                  onMouseLeave={() => {
-                    hoveredMangaDialogue.value = null;
-                  }}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    if (selectedMangaDialogue.value && selectedMangaDialogue.value.id === d.id) {
-                      selectedMangaDialogue.value = null;
-                    } else {
-                      selectedMangaDialogue.value = d;
-                    }
-                  }}
-                  title="Rê chuột hoặc bấm để xem bản dịch & từ vựng"
-                >
-                  <span class="manga-hotspot-hint">💬</span>
-                </div>
-              );
-            })}
+            {/* 1. Precise Word-Level OCR Hotspots (Instant character/word hover translation) */}
+            {(page.word_hotspots && page.word_hotspots.length > 0) ? (
+              page.word_hotspots.map((w, idx) => {
+                const isSelected = (selectedMangaWord.value && selectedMangaWord.value.id === w.id);
+                const isHovered = (hoveredMangaWord.value && hoveredMangaWord.value.id === w.id);
+                return (
+                  <div
+                    key={w.id || idx}
+                    class={`manga-word-hotspot ${showMangaOutlines.value ? 'show-outline' : ''} ${isSelected || isHovered ? 'is-active' : ''}`}
+                    style={`left: ${w.bbox.x}%; top: ${w.bbox.y}%; width: ${w.bbox.width}%; height: ${w.bbox.height}%;`}
+                    onMouseEnter={() => {
+                      hoveredMangaWord.value = w;
+                    }}
+                    onMouseLeave={() => {
+                      hoveredMangaWord.value = null;
+                    }}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      if (selectedMangaWord.value && selectedMangaWord.value.id === w.id) {
+                        selectedMangaWord.value = null;
+                      } else {
+                        selectedMangaWord.value = w;
+                        selectedMangaDialogue.value = null;
+                      }
+                    }}
+                    title={`Rê chuột tra từ: ${w.text} (${w.pinyin}): ${w.meaning_vi}`}
+                  >
+                    <span class="manga-word-target-line" aria-hidden="true"></span>
+                  </div>
+                );
+              })
+            ) : (
+              /* Fallback to dialogue outlines if page has no word_hotspots */
+              (page.dialogues || []).map((d) => {
+                const isSelected = (selectedMangaDialogue.value && selectedMangaDialogue.value.id === d.id);
+                const isHovered = (hoveredMangaDialogue.value && hoveredMangaDialogue.value.id === d.id);
+                return (
+                  <div
+                    key={d.id}
+                    class={`manga-hotspot ${showMangaOutlines.value ? 'show-outline' : ''} ${isSelected || isHovered ? 'is-active' : ''}`}
+                    style={`left: ${d.bbox.x}%; top: ${d.bbox.y}%; width: ${d.bbox.width}%; height: ${d.bbox.height}%;`}
+                    onMouseEnter={() => { hoveredMangaDialogue.value = d; }}
+                    onMouseLeave={() => { hoveredMangaDialogue.value = null; }}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      selectedMangaDialogue.value = (selectedMangaDialogue.value && selectedMangaDialogue.value.id === d.id) ? null : d;
+                    }}
+                  />
+                );
+              })
+            )}
 
-            {/* Interactive Dialogue Popover Card */}
-            {activeDlg ? (
+            {/* 2. Sleek Compact Word Popover (Direct Word/Character Translation) */}
+            {activeWord ? (
+              <div
+                class="manga-word-popover"
+                style={(() => {
+                  const bx = activeWord.bbox.x;
+                  const by = activeWord.bbox.y;
+                  const bw = activeWord.bbox.width;
+                  const bh = activeWord.bbox.height;
+                  // Dynamic positioning: place above word or to the side so it doesn't cover word
+                  const placeTop = by > 26 ? `${Math.max(2, by - 16)}%` : `${by + bh + 1.5}%`;
+                  const placeLeft = bx > 50 ? `${Math.max(4, bx - 26)}%` : `${Math.min(70, bx + bw + 1.5)}%`;
+                  return `left: ${placeLeft}; top: ${placeTop};`;
+                })()}
+                onClick={(e) => e.stopPropagation()}
+                onMouseEnter={() => { hoveredMangaWord.value = activeWord; }}
+              >
+                <div class="manga-wp-header">
+                  <div class="manga-wp-hanzi-col">
+                    <div class="manga-wp-hanzi-row">
+                      <span class="manga-wp-hanzi">{activeWord.text}</span>
+                      <span class="manga-wp-pinyin">{activeWord.pinyin}</span>
+                      {activeWord.hsk && <span class="manga-wp-hsk">HSK {activeWord.hsk}</span>}
+                    </div>
+                    {activeWord.hanviet && (
+                      <div class="manga-wp-hanviet">Âm Hán-Việt: <strong>{activeWord.hanviet}</strong></div>
+                    )}
+                  </div>
+                  <div class="manga-wp-header-actions">
+                    <button
+                      type="button"
+                      class="manga-wp-audio-btn"
+                      onClick={() => speakSentence(activeWord.text, `word-${activeWord.id}`)}
+                      title="Nghe phát âm từ vựng"
+                      aria-label="Phát âm từ"
+                    >
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                        <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                      </svg>
+                    </button>
+                    {selectedMangaWord.value && (
+                      <button
+                        type="button"
+                        class="manga-wp-close-btn"
+                        onClick={() => { selectedMangaWord.value = null; }}
+                        aria-label="Đóng"
+                      >
+                        ✕
+                      </button>
+                    )}
+                  </div>
+                </div>
+
+                <div class="manga-wp-meaning">{activeWord.meaning_vi}</div>
+
+                {activeWord.sentence_zh && (
+                  <div class="manga-wp-sentence-box">
+                    <div class="manga-wp-sent-label">
+                      <span>Trong câu ({activeWord.character || 'Hội thoại'}):</span>
+                      <button
+                        type="button"
+                        class="manga-wp-sent-audio-btn"
+                        onClick={() => speakSentence(activeWord.sentence_zh, `sent-${activeWord.id}`)}
+                        title="Nghe cả câu thoại"
+                      >
+                        🔊 Nghe câu
+                      </button>
+                    </div>
+                    <div class="manga-wp-sent-zh">{activeWord.sentence_zh}</div>
+                    <div class="manga-wp-sent-vi">{activeWord.sentence_vi}</div>
+                  </div>
+                )}
+
+                <div class="manga-wp-actions">
+                  <button
+                    type="button"
+                    class="manga-wp-srs-btn"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      showTokenPopover(activeWord, e.currentTarget);
+                    }}
+                    title="Thêm từ này vào thẻ nhớ Flashcard (SRS)"
+                  >
+                    + Thêm vào Flashcard SRS
+                  </button>
+                </div>
+              </div>
+            ) : null}
+
+            {/* 3. Interactive Dialogue Popover Card (When clicking whole bubble) */}
+            {activeDlg && !activeWord ? (
               <div
                 class="manga-dialogue-card"
                 style={(() => {
