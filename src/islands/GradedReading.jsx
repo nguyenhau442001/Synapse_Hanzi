@@ -1356,7 +1356,8 @@ function bubbleStyle(b) {
   return `left: ${x}%; top: ${y}%; width: ${w}%; height: ${h}%;`;
 }
 
-const mangaTokenIdx = signal(0);
+const mangaTokenIdx = signal(-1); // -1 = no word card until a word is tapped
+const mangaShowVi = signal(false); // translation hidden until asked for (active recall)
 const mangaSeen = signal({}); // dialogue id -> true once it has been the active bubble
 
 // Chapter-wide reading order: bubble number n (1-based) is stable across pages and spreads.
@@ -1383,7 +1384,8 @@ const SPEAKER_ICON = (
 
 function selectMangaDialogue(d) {
   selectedMangaDialogue.value = d;
-  mangaTokenIdx.value = 0;
+  mangaTokenIdx.value = -1;
+  mangaShowVi.value = false;
 }
 
 function addMangaTokenToSrs(token) {
@@ -1394,11 +1396,23 @@ function addMangaTokenToSrs(token) {
   }
 }
 
+const STAR_ICON = (filled) => (
+  <svg width="17" height="17" viewBox="0 0 24 24" fill={filled ? 'currentColor' : 'none'} stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3 6.4 20.2l1.1-6.2L3 9.6l6.2-.9L12 3Z"></path>
+  </svg>
+);
+
+const EYE_ICON = (
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"></path><circle cx="12" cy="12" r="3"></circle>
+  </svg>
+);
+
 function MangaWordPanel({ dialogues, current, order }) {
   const tokens = (current && current.tokens) || [];
-  let tIdx = Math.min(mangaTokenIdx.value, Math.max(0, tokens.length - 1));
-  if (tokens[tIdx] && tokens[tIdx].punct) tIdx = Math.max(0, tokens.findIndex((t) => !t.punct));
-  const word = tokens[tIdx] && !tokens[tIdx].punct ? tokens[tIdx] : null;
+  // No word is selected until the learner taps one: read first, look up second.
+  const tIdx = mangaTokenIdx.value;
+  const word = tIdx >= 0 && tokens[tIdx] && !tokens[tIdx].punct ? tokens[tIdx] : null;
   const pos = current ? dialogues.findIndex((x) => x.d.id === current.id) : -1;
   const step = (delta) => {
     if (!dialogues.length) return;
@@ -1406,28 +1420,25 @@ function MangaWordPanel({ dialogues, current, order }) {
     selectMangaDialogue(dialogues[next].d);
   };
   const added = word && mangaAddedWords.value[word.text];
+  const speaker = current && current.character ? current.character.split('(')[0].trim() : '';
 
   return (
     <aside class="manga-panel" aria-label="Bảng từ" onClick={(e) => e.stopPropagation()}>
       {current ? (
         <div class="manga-panel-sentence">
           <div class="manga-panel-row">
-            <span class="manga-panel-kicker">{`BÓNG THOẠI ${order.index[current.id]} / ${order.total}`}</span>
+            <span class="manga-panel-kicker">
+              {`BÓNG THOẠI ${order.index[current.id]} / ${order.total}`}
+              {speaker ? <span class="manga-speaker" lang="zh-Hant">{speaker}</span> : null}
+            </span>
             <div class="manga-panel-steppers">
-              <button type="button" class="manga-icon-btn sm" onClick={() => step(-1)} aria-label="Bóng thoại trước" title="Bóng thoại trước (↑)">
+              <button type="button" class="manga-icon-btn sm" onClick={() => step(-1)} aria-label="Bóng thoại trước" title="Bóng thoại trước (←)">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
               </button>
-              <button type="button" class="manga-icon-btn sm" onClick={() => step(1)} aria-label="Bóng thoại sau" title="Bóng thoại sau (↓)">
+              <button type="button" class="manga-icon-btn sm" onClick={() => step(1)} aria-label="Bóng thoại sau" title="Bóng thoại sau (→)">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
               </button>
             </div>
-          </div>
-          <div class="manga-panel-row">
-            {current.character ? <span class="manga-speaker">{current.character}</span> : <span></span>}
-            <button type="button" class="manga-ghost-btn" onClick={() => speakSentence(current.zh, `dlg-${current.id}`)}>
-              {SPEAKER_ICON}
-              <span>Nghe câu</span>
-            </button>
           </div>
           <div class="manga-sentence-tokens" lang="zh-Hant">
             {tokens.map((t, i) => (t.punct ? <span key={`${current.id}-${i}`} class="manga-sent-punct">{t.text_trad || t.text}</span> : (
@@ -1435,20 +1446,26 @@ function MangaWordPanel({ dialogues, current, order }) {
                 key={`${current.id}-${i}`}
                 type="button"
                 class={`manga-sent-token band-${mangaHskBand(t.hsk)} ${i === tIdx ? 'is-active' : ''}`}
-                onClick={() => { mangaTokenIdx.value = i; }}
+                aria-pressed={i === tIdx}
+                title={mangaHskLabel(t.hsk)}
+                onClick={() => { mangaTokenIdx.value = i === tIdx ? -1 : i; }}
               >
                 <span class="manga-sent-py">{t.pinyin}</span>
                 <span class="manga-sent-hz">{t.text_trad || t.text}</span>
               </button>
             )))}
           </div>
-          <p class="manga-sentence-vi">{current.vi}</p>
-          <div class="manga-band-legend" aria-hidden="true">
-            <span class="band-basic">HSK 1–2</span>
-            <span class="band-mid">HSK 3–4</span>
-            <span class="band-adv">HSK 5+</span>
-            <span class="band-none">Ngoài HSK</span>
+          <div class="manga-panel-actions">
+            <button type="button" class={`manga-ghost-btn ${mangaShowVi.value ? 'active' : ''}`} aria-pressed={mangaShowVi.value} onClick={() => { mangaShowVi.value = !mangaShowVi.value; }} title="Hiện / ẩn nghĩa (T)">
+              {EYE_ICON}
+              <span>{mangaShowVi.value ? 'Ẩn nghĩa' : 'Hiện nghĩa'}</span>
+            </button>
+            <button type="button" class="manga-ghost-btn" onClick={() => speakSentence(current.zh, `dlg-${current.id}`)} title="Nghe câu">
+              {SPEAKER_ICON}
+              <span>Nghe câu</span>
+            </button>
           </div>
+          {mangaShowVi.value ? <p class="manga-sentence-vi">{current.vi}</p> : null}
         </div>
       ) : (
         <div class="manga-panel-sentence">
@@ -1464,24 +1481,34 @@ function MangaWordPanel({ dialogues, current, order }) {
             <div class="manga-word-meta">
               <div class="manga-word-line">
                 <span class="manga-word-py">{word.pinyin}</span>
-                <span class="manga-word-hsk">{mangaHskLabel(word.hsk)}</span>
+                <span class={`manga-word-hsk band-${mangaHskBand(word.hsk)}`}>{mangaHskLabel(word.hsk)}</span>
               </div>
               <span class="manga-word-sub">
                 {word.hanviet ? <>Hán-Việt: <strong>{word.hanviet}</strong></> : null}
                 {word.text_trad && word.text_trad !== word.text ? <> · Giản thể: <span lang="zh-Hans">{word.text}</span></> : null}
               </span>
             </div>
-            <button type="button" class="manga-round-btn" onClick={() => speakSentence(word.text, `word-${current.id}-${tIdx}`)} aria-label="Nghe từ" title="Nghe từ">
-              {SPEAKER_ICON}
-            </button>
+            <div class="manga-word-tools">
+              <button type="button" class="manga-round-btn" onClick={() => speakSentence(word.text, `word-${current.id}-${tIdx}`)} aria-label="Nghe từ" title="Nghe từ">
+                {SPEAKER_ICON}
+              </button>
+              <button
+                type="button"
+                class={`manga-round-btn manga-star-btn ${added ? 'is-on' : ''}`}
+                disabled={added}
+                onClick={() => addMangaTokenToSrs(word)}
+                aria-label={added ? 'Đã thêm vào flashcard' : 'Thêm vào flashcard'}
+                title={added ? 'Đã thêm vào flashcard' : 'Thêm vào flashcard'}
+              >
+                {STAR_ICON(added)}
+              </button>
+            </div>
           </div>
-          <div class="manga-word-meaning">{word.meaning_vi}</div>
-          <button type="button" class="manga-primary-btn" disabled={added} onClick={() => addMangaTokenToSrs(word)}>
-            {added ? '✓ Đã thêm vào flashcard' : '+ Thêm vào flashcard'}
-          </button>
+          <div class="manga-word-meaning">{word.meaning_vi || '—'}</div>
         </div>
+      ) : current ? (
+        <p class="manga-panel-hint">Chạm vào một từ để xem nghĩa.</p>
       ) : null}
-
     </aside>
   );
 }
@@ -1562,11 +1589,21 @@ function MangaSettings({ canSpread, spread }) {
         <span class="manga-setting-label">Số bóng thoại trên trang</span>
         <input type="checkbox" checked={showMangaOutlines.value} onChange={(e) => { showMangaOutlines.value = e.target.checked; }} />
       </label>
+      <div class="manga-setting-row manga-setting-legend">
+        <span class="manga-setting-label">Màu cấp HSK</span>
+        <div class="manga-band-legend">
+          <span class="band-basic">1–2</span>
+          <span class="band-mid">3–4</span>
+          <span class="band-adv">5+</span>
+          <span class="band-none">Ngoài HSK</span>
+        </div>
+      </div>
       <div class="manga-settings-keys">
         <div class="manga-setting-label">Phím tắt</div>
         <div class="manga-shortcut-row"><span>Trang trước / sau</span><span><kbd>←</kbd> <kbd>→</kbd></span></div>
         <div class="manga-shortcut-row"><span>Bóng thoại trước / sau</span><span><kbd>↑</kbd> <kbd>↓</kbd></span></div>
         <div class="manga-shortcut-row"><span>1 trang / 2 trang</span><span><kbd>D</kbd></span></div>
+        <div class="manga-shortcut-row"><span>Hiện / ẩn nghĩa</span><span><kbd>T</kbd></span></div>
         <div class="manga-shortcut-row"><span>Phóng to / toàn trang</span><span><kbd>Z</kbd></span></div>
         <div class="manga-shortcut-row"><span>Số bóng thoại</span><span><kbd>O</kbd></span></div>
         <div class="manga-shortcut-row"><span>Toàn màn hình</span><span><kbd>F</kbd></span></div>
@@ -1601,7 +1638,8 @@ function MangaViewer({ story }) {
   const clearMangaSelection = () => {
     hoveredMangaDialogue.value = null;
     selectedMangaDialogue.value = null;
-    mangaTokenIdx.value = 0;
+    mangaTokenIdx.value = -1;
+    mangaShowVi.value = false;
   };
 
   const goToPrev = () => {
@@ -1680,6 +1718,9 @@ function MangaViewer({ story }) {
       } else if (e.key === 'd' || e.key === 'D') {
         e.preventDefault();
         setMangaSpread(!mangaSpreadPref.value);
+      } else if (e.key === 't' || e.key === 'T') {
+        e.preventDefault();
+        mangaShowVi.value = !mangaShowVi.value;
       } else if (e.key === 'z' || e.key === 'Z') {
         e.preventDefault();
         setMangaZoom(!mangaZoomOn.value);

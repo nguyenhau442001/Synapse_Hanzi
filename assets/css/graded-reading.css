@@ -2942,6 +2942,11 @@ body.manga-reading { overflow: hidden; }
 
 .manga-panel-empty { margin: 0; font-size: 13px; color: var(--manga-label); }
 
+.manga-panel-kicker .manga-speaker {
+  margin-left: 8px;
+  letter-spacing: 0;
+}
+
 .manga-speaker {
   font-size: 12px;
   font-weight: 600;
@@ -3010,10 +3015,12 @@ body.manga-reading { overflow: hidden; }
   color: var(--text-primary);
 }
 
+.manga-setting-legend { align-items: flex-start; flex-direction: column; gap: 8px; }
+
 .manga-band-legend {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px;
   font-size: 11px;
   color: var(--manga-label);
 }
@@ -3102,23 +3109,22 @@ body.manga-reading { overflow: hidden; }
 
 .manga-word-meaning { font-size: 15px; font-weight: 600; color: var(--text-primary); }
 
-.manga-primary-btn {
-  height: 38px;
-  padding: 0 16px;
-  border: none;
-  border-radius: 9px;
-  background: var(--accent);
-  color: var(--on-accent, #FFFFFF);
-  font: 700 13px var(--font-sans);
-  cursor: pointer;
-}
+.manga-word-tools { margin-left: auto; display: flex; gap: 6px; flex: none; }
+.manga-word-tools .manga-round-btn { margin-left: 0; }
+.manga-round-btn:not(:disabled):hover { color: var(--text-primary); background: var(--surface-subtle); }
+.manga-star-btn.is-on { color: var(--manga-active); border-color: var(--manga-active-soft); cursor: default; }
 
-.manga-primary-btn:not(:disabled):hover { background: var(--accent-hover); }
+.manga-word-hsk.band-basic { background: var(--manga-tint-basic); border-color: transparent; }
+.manga-word-hsk.band-mid { background: var(--manga-tint-mid); border-color: transparent; }
+.manga-word-hsk.band-adv { background: var(--manga-tint-adv); border-color: transparent; }
 
-.manga-primary-btn:disabled {
-  background: var(--success-bg);
-  color: var(--success-text);
-  cursor: default;
+.manga-panel-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.manga-ghost-btn.active { background: var(--manga-chip); color: var(--text-primary); }
+
+.manga-panel-hint {
+  margin: 16px 20px 0;
+  font-size: 13px;
+  color: var(--manga-label);
 }
 
 /* 6F. Bottom strip: bubbles of the current page / spread */
