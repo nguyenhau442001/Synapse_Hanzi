@@ -50,6 +50,12 @@ CJK_RE = re.compile(r"[㐀-鿿豈-﫿]")
 
 
 # ----------------------------------------------------------------------------- lexicon
+# HSK 3.0 marks homonyms with superscripts (会¹ / 会²); the first, lowest level wins.
+HOMONYM_MARK_RE = re.compile(r"[⁰¹²³⁴⁵⁶⁷⁸⁹]+$")
+# Hong Kong / Taiwan spellings that simplify to a non-standard form.
+LOOKUP_ALIASES = {"甚么": "什么", "妳": "你"}
+
+
 def load_lexicon():
     lex = {}
     # HSK 3.0 (levels 1-9) — level 7 file holds the shared 7-9 band
@@ -58,7 +64,7 @@ def load_lexicon():
         if not f.exists():
             continue
         for e in json.loads(f.read_text(encoding="utf-8")):
-            hz = e.get("hanzi")
+            hz = HOMONYM_MARK_RE.sub("", e.get("hanzi") or "")
             if hz and hz not in lex:
                 lex[hz] = {"pinyin": e.get("pinyin", ""), "hanviet": e.get("hanviet", ""),
                            "meaning_vi": e.get("meaning", ""), "hsk": lvl if lvl < 7 else "7-9"}
@@ -109,7 +115,7 @@ def hanviet_of(word_s, word_t):
 def lookup(word_s, word_t):
     """→ (pinyin, hanviet, meaning_vi, hsk, known)"""
     g = GLOSSARY.get(word_s) or GLOSSARY.get(word_t)
-    base = LEX.get(word_s, {})
+    base = LEX.get(word_s) or LEX.get(LOOKUP_ALIASES.get(word_s, ""), {})
     py = (g or {}).get("pinyin") or base.get("pinyin") or " ".join(lazy_pinyin(word_s, style=Style.TONE))
     hv = (g or {}).get("hanviet") or base.get("hanviet") or hanviet_of(word_s, word_t)
     mean = (g or {}).get("meaning_vi") or base.get("meaning_vi") or ""
