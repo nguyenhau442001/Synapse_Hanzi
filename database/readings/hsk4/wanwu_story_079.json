@@ -1,0 +1,904 @@
+{
+  "id": "wanwu_story_079",
+  "chapter_no": 79,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 4,
+  "book_page_start": 810,
+  "book_page_end": 817,
+  "page_display": "Trang 810 - 817",
+  "title": {
+    "zh": "盐：历史的咸味道",
+    "vi": "Muối: Vị mặn mòi chuyển động lịch sử"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🧂",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_079.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_079.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 810 - 817 · Chính sách độc quyền muối sắt 'Diêm thiết chuyên mại' của Quản Trọng giúp làm đầy quốc khố ngàn năm.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "盐不仅是日常饮食中不可或缺的百味之首，更是一部关乎古代国家兴衰的政治经济史。",
+      "pinyin": "Yán bùjǐn shì rìcháng yǐnshí zhōng bùkě huòquē de bǎiwèi zhī shǒu, gèng shì yí bù guānhū gǔdài guójiā xīngshuāi de zhèngzhì jīngjì shǐ.",
+      "vi": "Muối chẳng những đứng đầu trăm vị trong ăn uống hàng ngày, mà còn là pho sử kinh tế chính trị liên quan đến hưng suy của quốc gia.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "盐",
+          "pinyin": "yán",
+          "hanviet": "Diêm",
+          "hsk": 4,
+          "word_id": "hsk4_844",
+          "meaning_vi": "muối"
+        },
+        {
+          "text": "不仅",
+          "pinyin": "bùjǐn",
+          "hanviet": "Bất Cận",
+          "hsk": 4,
+          "word_id": "hsk4_55",
+          "meaning_vi": "không chỉ"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "日常",
+          "pinyin": "rìcháng",
+          "hanviet": "Nhật Thường",
+          "hsk": 4,
+          "word_id": "hsk4_618",
+          "meaning_vi": "thường ngày, hàng ngày"
+        },
+        {
+          "text": "饮食",
+          "pinyin": "yǐnshí",
+          "hanviet": "Ẩm Thực",
+          "hsk": 5,
+          "word_id": "hsk5_1375",
+          "meaning_vi": "ăn uống"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "不可或缺",
+          "pinyin": "bùkě-huòquē",
+          "hanviet": "Bất Khả Hoặc Khuyết",
+          "hsk": 7,
+          "word_id": "hsk7_339",
+          "meaning_vi": "không thể thiếu được, tuyệt đối tất yếu"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "百味",
+          "pinyin": "bǎi wèi",
+          "hanviet": "Bách Vị"
+        },
+        {
+          "text": "之",
+          "pinyin": "pǔtōnghuà",
+          "hanviet": "Phổ Thông Thoại",
+          "hsk": 4,
+          "word_id": "hsk4_563",
+          "meaning_vi": "tiếng phổ thông (Trung Quốc)"
+        },
+        {
+          "text": "首",
+          "pinyin": "shǒu",
+          "hanviet": "Thủ",
+          "hsk": 4,
+          "word_id": "hsk4_681",
+          "meaning_vi": "đầu, người đứng đầu"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "更是",
+          "pinyin": "gèng shì",
+          "hanviet": "Canh Thị"
+        },
+        {
+          "text": "一部",
+          "pinyin": "yī bù",
+          "hanviet": "Nhất Bộ"
+        },
+        {
+          "text": "关乎",
+          "pinyin": "guān hū",
+          "hanviet": "Quan Hồ"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "国家",
+          "pinyin": "guójiā",
+          "hanviet": "Quốc Gia",
+          "hsk": 3,
+          "word_id": "hsk3_749",
+          "meaning_vi": "quốc gia"
+        },
+        {
+          "text": "兴衰",
+          "pinyin": "xīng shuāi",
+          "hanviet": "Hưng Thôi"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "政治",
+          "pinyin": "zhèngzhì",
+          "hanviet": "Chính Trị",
+          "hsk": 5,
+          "word_id": "hsk5_1498",
+          "meaning_vi": "chính trị"
+        },
+        {
+          "text": "经济史",
+          "pinyin": "jīng jì shǐ",
+          "hanviet": "Kinh Tể Sử"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "早在春秋时期，齐国名相管仲就提出了‘官山海’的国策，由国家统筹垄断食盐的生产与销售。",
+      "pinyin": "Zǎo zài Chūnqiū shíqī, Qíguó míngxiàng Guǎn Zhòng jiù tíchū le ‘Guān shānhǎi’ de guócè, yóu guójiā tǒngchóu lǒngduàn shíyán de shēngchǎn yǔ xiāoshòu.",
+      "vi": "Từ thời Xuân Thu, danh tướng Quản Trọng nước Tề đã đề xướng quốc sách 'Quan sơn hải', do nhà nước độc quyền sản xuất và phân phối muối ăn.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "早",
+          "pinyin": "zǎo",
+          "hanviet": "Tảo",
+          "hsk": 1,
+          "word_id": "hsk1_602",
+          "meaning_vi": "sớm"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "春秋时期",
+          "pinyin": "chūn qiū shí qī",
+          "hanviet": "Xuân Thu Thời Kỳ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "齐国",
+          "pinyin": "qí guó",
+          "hanviet": "Tề Quốc"
+        },
+        {
+          "text": "名",
+          "pinyin": "míng",
+          "hanviet": "Danh",
+          "hsk": 2,
+          "word_id": "hsk2_404",
+          "meaning_vi": "người, vị (lượng từ: 一名医生); tên"
+        },
+        {
+          "text": "相",
+          "pinyin": "xiāng",
+          "hanviet": "Tương"
+        },
+        {
+          "text": "管仲",
+          "pinyin": "guǎn zhòng",
+          "hanviet": "Quản Trọng"
+        },
+        {
+          "text": "就",
+          "pinyin": "jiù",
+          "hanviet": "Tựu",
+          "hsk": 2,
+          "word_id": "hsk2_376",
+          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)"
+        },
+        {
+          "text": "提出",
+          "pinyin": "tíchū",
+          "hanviet": "Đề Xuất",
+          "hsk": 4,
+          "word_id": "hsk4_727",
+          "meaning_vi": "đưa ra, nêu ra"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "官山",
+          "pinyin": "guān shān",
+          "hanviet": "Quan Sơn"
+        },
+        {
+          "text": "海",
+          "pinyin": "hǎi",
+          "hanviet": "Hải",
+          "hsk": 3,
+          "word_id": "hsk3_751",
+          "meaning_vi": "biển"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "国策",
+          "pinyin": "guó cè",
+          "hanviet": "Quốc Sách"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "由",
+          "pinyin": "yóu",
+          "hanviet": "Do",
+          "hsk": 4,
+          "word_id": "hsk4_884",
+          "meaning_vi": "do, từ"
+        },
+        {
+          "text": "国家",
+          "pinyin": "guójiā",
+          "hanviet": "Quốc Gia",
+          "hsk": 3,
+          "word_id": "hsk3_749",
+          "meaning_vi": "quốc gia"
+        },
+        {
+          "text": "统筹",
+          "pinyin": "tǒngchóu",
+          "hanviet": "Thống Trù",
+          "hsk": 7,
+          "word_id": "hsk7_4087",
+          "meaning_vi": "quy hoạch tổng thể; thống trù"
+        },
+        {
+          "text": "垄断",
+          "pinyin": "lǒngduàn",
+          "hanviet": "Lũng Đoạn",
+          "hsk": 7,
+          "word_id": "hsk7_2672",
+          "meaning_vi": "độc quyền, lũng đoạn"
+        },
+        {
+          "text": "食盐",
+          "pinyin": "shí yán",
+          "hanviet": "Thực Diêm"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "生产",
+          "pinyin": "shēngchǎn",
+          "hanviet": "Sinh Sản",
+          "hsk": 5,
+          "word_id": "hsk5_990",
+          "meaning_vi": "sản xuất"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "销售",
+          "pinyin": "xiāoshòu",
+          "hanviet": "Tiêu Thụ",
+          "hsk": 5,
+          "word_id": "hsk5_1268",
+          "meaning_vi": "tiêu thụ, bán hàng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "因为人人都离不开食盐，政府无需直接向百姓加征人头赋税，便能通过盐税获得极其充沛的国库财政收入。",
+      "pinyin": "Yīnwèi rénrén dōu líbùkāi shíyán, zhèngfǔ wúxū zhíjiē xiàng bǎixìng jiāzhēng réntóu fùshuì, biàn néng tōngguò yánshuì huòdé jíqí chōngpèi de guókù cáizhèng shōurù.",
+      "vi": "Bởi ai ai cũng cần muối ăn mỗi ngày, triều đình không cần đánh thuế thân vẫn thu về nguồn ngân khố dồi dào từ thuế muối.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "因为",
+          "pinyin": "yīnwèi",
+          "hanviet": "Nhân Vi",
+          "hsk": 2,
+          "word_id": "hsk2_476",
+          "meaning_vi": "bởi vì"
+        },
+        {
+          "text": "人人",
+          "pinyin": "rén rén",
+          "hanviet": "Nhân Nhân"
+        },
+        {
+          "text": "都",
+          "pinyin": "dōu",
+          "hanviet": "Đô",
+          "hsk": 1,
+          "word_id": "hsk1_76",
+          "meaning_vi": "đều"
+        },
+        {
+          "text": "离不开",
+          "pinyin": "lí bù kāi",
+          "hanviet": "Ly Bất Khai"
+        },
+        {
+          "text": "食盐",
+          "pinyin": "shí yán",
+          "hanviet": "Thực Diêm"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "政府",
+          "pinyin": "zhèngfǔ",
+          "hanviet": "Chính Phủ",
+          "hsk": 5,
+          "word_id": "hsk5_1494",
+          "meaning_vi": "chính phủ"
+        },
+        {
+          "text": "无需",
+          "pinyin": "wú xū",
+          "hanviet": "Vô Nhu"
+        },
+        {
+          "text": "直接",
+          "pinyin": "zhíjiē",
+          "hanviet": "Trực Tiếp",
+          "hsk": 4,
+          "word_id": "hsk4_948",
+          "meaning_vi": "trực tiếp"
+        },
+        {
+          "text": "向",
+          "pinyin": "xiàng",
+          "hanviet": "Hướng",
+          "hsk": 3,
+          "word_id": "hsk3_973",
+          "meaning_vi": "hướng về, về phía"
+        },
+        {
+          "text": "百姓",
+          "pinyin": "bǎi xìng",
+          "hanviet": "Bách Tính"
+        },
+        {
+          "text": "加征",
+          "pinyin": "jiā zhēng",
+          "hanviet": "Gia Chinh"
+        },
+        {
+          "text": "人头",
+          "pinyin": "rén tóu",
+          "hanviet": "Nhân Đầu"
+        },
+        {
+          "text": "赋税",
+          "pinyin": "fù shuì",
+          "hanviet": "Phú Thuế"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "便",
+          "pinyin": "biàn",
+          "hanviet": "Tiện",
+          "hsk": 5,
+          "word_id": "hsk5_56",
+          "meaning_vi": "thì, liền (liên từ)"
+        },
+        {
+          "text": "能",
+          "pinyin": "néng",
+          "hanviet": "Năng",
+          "hsk": 1,
+          "word_id": "hsk1_212",
+          "meaning_vi": "có thể"
+        },
+        {
+          "text": "通过",
+          "pinyin": "tōngguò",
+          "hanviet": "Thông Qua",
+          "hsk": 4,
+          "word_id": "hsk4_744",
+          "meaning_vi": "thông qua"
+        },
+        {
+          "text": "盐税",
+          "pinyin": "yán shuì",
+          "hanviet": "Diêm Thuế"
+        },
+        {
+          "text": "获得",
+          "pinyin": "huòdé",
+          "hanviet": "Hoạch Đắc",
+          "hsk": 4,
+          "word_id": "hsk4_316",
+          "meaning_vi": "đạt được, giành được"
+        },
+        {
+          "text": "极其",
+          "pinyin": "jíqí",
+          "hanviet": "Cực Kì/cực Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_533",
+          "meaning_vi": "cực kỳ, hết sức"
+        },
+        {
+          "text": "充沛",
+          "pinyin": "chōngpèi",
+          "hanviet": "Sung Bái",
+          "hsk": 7,
+          "word_id": "hsk7_536",
+          "meaning_vi": "sung mãn, dồi dào"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "国库",
+          "pinyin": "guó kù",
+          "hanviet": "Quốc Khố"
+        },
+        {
+          "text": "财政收入",
+          "pinyin": "cái zhèng shōu rù",
+          "hanviet": "Tài Chính Thu Nhập"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "汉武帝时期正式确立了‘盐铁专卖’法案，筹集了雄厚的财力击退匈奴、开拓疆土。",
+      "pinyin": "Hàn Wǔdì shíqī zhèngshì quèlì le ‘Yántiě zhuānmài’ fǎ'àn, chóují le xiónghòu de cáilì jītuì Xiōngnú, kāituò jiāngtǔ.",
+      "vi": "Thời Hán Vũ Đế xác lập đạo luật 'Độc quyền Muối Sắt', tạo nguồn tài chính hùng hậu đánh lui Hung Nô, mở rộng bờ cõi.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "汉武帝",
+          "pinyin": "hàn wǔ dì",
+          "hanviet": "Hán Võ Đế"
+        },
+        {
+          "text": "时期",
+          "pinyin": "shíqī",
+          "hanviet": "Thời Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_1016",
+          "meaning_vi": "thời kỳ"
+        },
+        {
+          "text": "正式",
+          "pinyin": "zhèngshì",
+          "hanviet": "Chính Thức",
+          "hsk": 4,
+          "word_id": "hsk4_937",
+          "meaning_vi": "chính thức"
+        },
+        {
+          "text": "确立",
+          "pinyin": "quèlì",
+          "hanviet": "Xác Lập",
+          "hsk": 6,
+          "word_id": "hsk6_1084",
+          "meaning_vi": "xác lập"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "盐铁",
+          "pinyin": "yán tiě",
+          "hanviet": "Diêm Thiết"
+        },
+        {
+          "text": "专卖",
+          "pinyin": "zhuānmài",
+          "hanviet": "Chuyên Mại",
+          "hsk": 7,
+          "word_id": "hsk7_5435",
+          "meaning_vi": "độc quyền bán, kinh doanh chuyên biệt"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "法案",
+          "pinyin": "fǎ àn",
+          "hanviet": "Pháp Án"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "筹集",
+          "pinyin": "chóují",
+          "hanviet": "Trù Tập",
+          "hsk": 7,
+          "word_id": "hsk7_563",
+          "meaning_vi": "quyên góp, gây quỹ"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "雄厚",
+          "pinyin": "xiónghòu",
+          "hanviet": "Hùng Hậu",
+          "hsk": 7,
+          "word_id": "hsk7_4611",
+          "meaning_vi": "vững chắc, hùng hậu"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "财力",
+          "pinyin": "cáilì",
+          "hanviet": "Tài Lực",
+          "hsk": 7,
+          "word_id": "hsk7_365",
+          "meaning_vi": "tài lực, tiềm lực tài chính"
+        },
+        {
+          "text": "击退",
+          "pinyin": "jī tuì",
+          "hanviet": "Kích Thoái"
+        },
+        {
+          "text": "匈奴",
+          "pinyin": "xiōng nú",
+          "hanviet": "Hung Nô"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "开拓",
+          "pinyin": "kāituò",
+          "hanviet": "Khai Thác",
+          "hsk": 7,
+          "word_id": "hsk7_2312",
+          "meaning_vi": "khai mở, mở rộng"
+        },
+        {
+          "text": "疆土",
+          "pinyin": "jiāng tǔ",
+          "hanviet": "Cương Thổ"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "沿海煮海为盐、内陆开采井盐与池盐，洁白的盐晶见证着中国古代劳动人民非凡的生存智慧。",
+      "pinyin": "Yánhǎi zhǔ hǎi wéi yán, nèilù kāicǎi jǐngyán yǔ chíyán, jiébái de yánjīng jiànzhèng zhe Zhōngguó gǔdài láodòng rénmín fēifán de shēngcún zhìhuì.",
+      "vi": "Dọc biển nấu nước mặn thành muối, nội địa khoan giếng muối sâu nghìn trượng, hạt muối trắng ngần ghi dấu trí tuệ sinh tồn của nhân dân lao động.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "沿海",
+          "pinyin": "yánhǎi",
+          "hanviet": "Duyên Hải",
+          "hsk": 6,
+          "word_id": "hsk6_1504",
+          "meaning_vi": "ven biển"
+        },
+        {
+          "text": "煮",
+          "pinyin": "zhǔ",
+          "hanviet": "Chử",
+          "hsk": 5,
+          "word_id": "hsk5_1540",
+          "meaning_vi": "nấu, đun sôi"
+        },
+        {
+          "text": "海为",
+          "pinyin": "hǎi wèi",
+          "hanviet": "Hải Vi"
+        },
+        {
+          "text": "盐",
+          "pinyin": "yán",
+          "hanviet": "Diêm",
+          "hsk": 4,
+          "word_id": "hsk4_844",
+          "meaning_vi": "muối"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "内陆",
+          "pinyin": "nèi lù",
+          "hanviet": "Nội Lục"
+        },
+        {
+          "text": "开采",
+          "pinyin": "kāicǎi",
+          "hanviet": "Khai Thái",
+          "hsk": 7,
+          "word_id": "hsk7_2297",
+          "meaning_vi": "khai thác (mỏ)"
+        },
+        {
+          "text": "井盐",
+          "pinyin": "jǐng yán",
+          "hanviet": "Tỉnh Diêm"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "池盐",
+          "pinyin": "chí yán",
+          "hanviet": "Trì Diêm"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "洁白",
+          "pinyin": "jiébái",
+          "hanviet": "Khiết Bạch",
+          "hsk": 7,
+          "word_id": "hsk7_2088",
+          "meaning_vi": "trắng tinh, trắng ngần, trắng muốt"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "盐晶",
+          "pinyin": "yán jīng",
+          "hanviet": "Diêm Tinh"
+        },
+        {
+          "text": "见证",
+          "pinyin": "jiànzhèng",
+          "hanviet": "Kiến Chứng",
+          "hsk": 7,
+          "word_id": "hsk7_2009",
+          "meaning_vi": "làm chứng, chứng kiến"
+        },
+        {
+          "text": "着",
+          "pinyin": "zhe",
+          "hanviet": "Trước",
+          "hsk": 2,
+          "word_id": "hsk2_490",
+          "meaning_vi": "đang (trợ từ)"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "劳动",
+          "pinyin": "láodòng",
+          "hanviet": "Lao Động",
+          "hsk": 5,
+          "word_id": "hsk5_683",
+          "meaning_vi": "lao động"
+        },
+        {
+          "text": "人民",
+          "pinyin": "rénmín",
+          "hanviet": "Nhân Dân",
+          "hsk": 5,
+          "word_id": "hsk5_923",
+          "meaning_vi": "mọi người"
+        },
+        {
+          "text": "非凡",
+          "pinyin": "fēifán",
+          "hanviet": "Phi Phàm",
+          "hsk": 7,
+          "word_id": "hsk7_1128",
+          "meaning_vi": "phi thường"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "生存",
+          "pinyin": "shēngcún",
+          "hanviet": "Sinh Tồn",
+          "hsk": 5,
+          "word_id": "hsk5_991",
+          "meaning_vi": "sinh tồn"
+        },
+        {
+          "text": "智慧",
+          "pinyin": "zhìhuì",
+          "hanviet": "Trí Tuệ",
+          "hsk": 5,
+          "word_id": "hsk5_1513",
+          "meaning_vi": "trí tuệ"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk3_831",
+    "hsk5_1494",
+    "hsk4_678",
+    "hsk4_937",
+    "hsk4_844"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Vị tể tướng kiệt xuất thời Xuân Thu nào đã khởi xướng quốc sách độc quyền muối 'Quan sơn hải'?",
+      "options_vi": [
+        "Quản Trọng (管仲) nước Tề",
+        "Khổng Tử",
+        "Tôn Tử"
+      ],
+      "answer": 0,
+      "explanation_vi": "Quản Trọng giúp Tề Hoàn Công xưng bá nhờ chính sách kiểm soát muối và sắt."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Tại sao thuế muối lại là nguồn thu ngân sách hoàn hảo nhất cho triều đình cổ đại?",
+      "options_vi": [
+        "Vì bất kỳ ai cũng cần ăn muối mỗi ngày, không thể bỏ được",
+        "Vì muối có thể làm tiền xu",
+        "Vì muối không bao giờ tan"
+      ],
+      "answer": 0,
+      "explanation_vi": "Muối là nhu yếu phẩm sống còn của mọi người dân, đánh thuế vào muối mang lại nguồn thu khổng lồ."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Hán Vũ Đế sử dụng nguồn tài chính từ độc quyền muối sắt vào việc lớn nào?",
+      "options_vi": [
+        "Cung cấp quân nhu tài chính đánh lui giặc Hung Nô và mở mang bờ cõi",
+        "Mua hoa hồng trồng quanh cung",
+        "Xây dựng rạp hát"
+      ],
+      "answer": 0,
+      "explanation_vi": "Kinh phí từ muối sắt giúp triều Hán trang bị quân đội hùng mạnh giữ vững biên cương."
+    }
+  ]
+}

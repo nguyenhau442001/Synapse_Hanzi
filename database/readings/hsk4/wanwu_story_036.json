@@ -1,0 +1,767 @@
+{
+  "id": "wanwu_story_036",
+  "chapter_no": 36,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 2,
+  "book_page_start": 353,
+  "book_page_end": 374,
+  "page_display": "Trang 353 - 374",
+  "title": {
+    "zh": "塑料：百年历程功与过",
+    "vi": "Đồ nhựa: Công và tội sau hành trình trăm năm"
+  },
+  "topic": "science_technology",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🥤",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_036.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_036.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 353 - 374 · Từ phát minh nhựa tổng hợp Bakelite năm 1907 làm thay đổi nền công nghiệp đến bài toán tái chế rác thải hiện đại.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "从我们手中的水杯、键盘到飞机的零部件，塑料制品几乎无处不在。",
+      "pinyin": "Cóng wǒmen shǒuzhōng de shuǐbēi, jiànpán dào fēijī de língbùjiàn, sùliào zhìpǐn jīhū wúchù-bùzài.",
+      "vi": "Từ chiếc cốc uống nước, bàn phím trên tay đến các linh kiện máy bay, đồ nhựa dường như có mặt ở khắp mọi nơi.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "从",
+          "pinyin": "cóng",
+          "hanviet": "Tòng",
+          "hsk": 2,
+          "word_id": "hsk2_324",
+          "meaning_vi": "từ"
+        },
+        {
+          "text": "我们",
+          "pinyin": "wǒmen",
+          "hanviet": "Ngã Môn",
+          "hsk": 1,
+          "word_id": "hsk1_320",
+          "meaning_vi": "chúng tôi, chúng ta"
+        },
+        {
+          "text": "手中",
+          "pinyin": "shǒu zhōng",
+          "hanviet": "Thủ Trung"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "水杯",
+          "pinyin": "shuǐ bēi",
+          "hanviet": "Thuỷ Bôi"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "键盘",
+          "pinyin": "jiànpán",
+          "hanviet": "Kiện Bàn",
+          "hsk": 5,
+          "word_id": "hsk5_576",
+          "meaning_vi": "bàn phím"
+        },
+        {
+          "text": "到",
+          "pinyin": "dào",
+          "hanviet": "Đáo",
+          "hsk": 1,
+          "word_id": "hsk1_59",
+          "meaning_vi": "đến"
+        },
+        {
+          "text": "飞机",
+          "pinyin": "fēijī",
+          "hanviet": "Phi Cơ",
+          "hsk": 1,
+          "word_id": "hsk1_90",
+          "meaning_vi": "máy bay"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "零部件",
+          "pinyin": "líng bù jiàn",
+          "hanviet": "Linh Bộ Kiện"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "塑料制品",
+          "pinyin": "sù liào zhì pǐn",
+          "hanviet": "Tố Liệu Chế Phẩm"
+        },
+        {
+          "text": "几乎",
+          "pinyin": "jīhū",
+          "hanviet": "Kỷ Hồ",
+          "hsk": 3,
+          "word_id": "hsk3_777",
+          "meaning_vi": "hầu như"
+        },
+        {
+          "text": "无处不在",
+          "pinyin": "wú chǔ bù zài",
+          "hanviet": "Vô Xử Bất Tại"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "一九零七年，化学家贝克兰成功合成了人类历史上第一种完全人工制造的塑料——酚醛塑料。",
+      "pinyin": "Yī-jiǔ-líng-qī nián, huàxuéjiā Bèikèlán chénggōng héchéng le rénlèi lìshǐ shàng dì-yī zhǒng wánquán réngōng zhìzào de sùliào——fēnquán sùliào.",
+      "vi": "Năm 1907, nhà hóa học Baekeland đã tổng hợp thành công loại nhựa nhân tạo hoàn toàn đầu tiên trong lịch sử mang tên Bakelite.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "一",
+          "pinyin": "yī",
+          "hanviet": "Nhất",
+          "hsk": 1,
+          "word_id": "hsk1_360",
+          "meaning_vi": "một"
+        },
+        {
+          "text": "九零",
+          "pinyin": "jiǔ líng",
+          "hanviet": "Cửu Linh"
+        },
+        {
+          "text": "七年",
+          "pinyin": "qī nián",
+          "hanviet": "Thất Niên"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "化学家",
+          "pinyin": "huà xué jiā",
+          "hanviet": "Hoa Học Gia"
+        },
+        {
+          "text": "贝克兰",
+          "pinyin": "bèi kè lán",
+          "hanviet": "Bối Khắc Lan"
+        },
+        {
+          "text": "成功",
+          "pinyin": "chénggōng",
+          "hanviet": "Thành Công",
+          "hsk": 4,
+          "word_id": "hsk4_79",
+          "meaning_vi": "thành công"
+        },
+        {
+          "text": "合成",
+          "pinyin": "héchéng",
+          "hanviet": "Hợp Thành",
+          "hsk": 6,
+          "word_id": "hsk6_539",
+          "meaning_vi": "tổng hợp, hợp thành"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "人类",
+          "pinyin": "rénlèi",
+          "hanviet": "Nhân Loại",
+          "hsk": 5,
+          "word_id": "hsk5_921",
+          "meaning_vi": "loài người, nhân loại"
+        },
+        {
+          "text": "历史",
+          "pinyin": "lìshǐ",
+          "hanviet": "Lịch Sử",
+          "hsk": 3,
+          "word_id": "hsk3_831",
+          "meaning_vi": "lịch sử"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "第一种",
+          "pinyin": "dì yī zhǒng",
+          "hanviet": "Đệ Nhất Chủng"
+        },
+        {
+          "text": "完全",
+          "pinyin": "wánquán",
+          "hanviet": "Hoàn Toàn",
+          "hsk": 4,
+          "word_id": "hsk4_762",
+          "meaning_vi": "hoàn toàn"
+        },
+        {
+          "text": "人工",
+          "pinyin": "réngōng",
+          "hanviet": "Nhân Công",
+          "hsk": 5,
+          "word_id": "hsk5_918",
+          "meaning_vi": "nhân công, nhân tạo"
+        },
+        {
+          "text": "制造",
+          "pinyin": "zhìzào",
+          "hanviet": "Chế Tạo",
+          "hsk": 5,
+          "word_id": "hsk5_1518",
+          "meaning_vi": "chế tạo"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "塑料",
+          "pinyin": "sùliào",
+          "hanviet": "Tố Liệu",
+          "hsk": 4,
+          "word_id": "hsk4_705",
+          "meaning_vi": "nhựa"
+        },
+        {
+          "text": "—"
+        },
+        {
+          "text": "—"
+        },
+        {
+          "text": "酚醛塑料",
+          "pinyin": "fēn quán sù liào",
+          "hanviet": "Phân Thuyên Tố Liệu"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "塑料轻便坚固、价格低廉且易于加工塑形，迅速引发了一场席卷全球的材料革命。",
+      "pinyin": "Sùliào qīngbiàn jiāngù, jiàgé dīlián qiě yìyú jiāgōng sùxíng, xùnsù yǐnfā le yì chǎng xíjuǎn quánqiú de cáiliào gémìng.",
+      "vi": "Nhựa nhẹ bền, giá thành rẻ lại dễ tạo khuôn, nhanh chóng khơi mào cuộc cách mạng vật liệu trên toàn thế giới.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "塑料",
+          "pinyin": "sùliào",
+          "hanviet": "Tố Liệu",
+          "hsk": 4,
+          "word_id": "hsk4_705",
+          "meaning_vi": "nhựa"
+        },
+        {
+          "text": "轻便",
+          "pinyin": "qīng biàn",
+          "hanviet": "Khinh Tiện"
+        },
+        {
+          "text": "坚固",
+          "pinyin": "jiāngù",
+          "hanviet": "Kiên Cố",
+          "hsk": 6,
+          "word_id": "hsk6_645",
+          "meaning_vi": "rắn"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "价格低廉",
+          "pinyin": "jià gé dī lián",
+          "hanviet": "Giá Cách Đê Liêm"
+        },
+        {
+          "text": "且",
+          "pinyin": "qiě",
+          "hanviet": "Thả",
+          "hsk": 7,
+          "word_id": "hsk7_3270",
+          "meaning_vi": "hơn nữa; vả lại"
+        },
+        {
+          "text": "易于",
+          "pinyin": "yìyú",
+          "hanviet": "Dịch Vu",
+          "hsk": 6,
+          "word_id": "hsk6_1572",
+          "meaning_vi": "dễ dàng, dễ bị"
+        },
+        {
+          "text": "加工",
+          "pinyin": "jiāgōng",
+          "hanviet": "Gia Công",
+          "hsk": 5,
+          "word_id": "hsk5_553",
+          "meaning_vi": "gia công, chế biến"
+        },
+        {
+          "text": "塑形",
+          "pinyin": "sù xíng",
+          "hanviet": "Tố Hình"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "迅速",
+          "pinyin": "xùnsù",
+          "hanviet": "Tấn Tốc",
+          "hsk": 5,
+          "word_id": "hsk5_1319",
+          "meaning_vi": "nhanh chóng"
+        },
+        {
+          "text": "引发",
+          "pinyin": "yǐnfā",
+          "hanviet": "Dẫn Phát",
+          "hsk": 6,
+          "word_id": "hsk6_1581",
+          "meaning_vi": "gây ra, làm bùng phát, khơi mào"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "一场",
+          "pinyin": "yī cháng",
+          "hanviet": "Nhất Tràng"
+        },
+        {
+          "text": "席卷",
+          "pinyin": "xí juǎn",
+          "hanviet": "Tịch Cuộn"
+        },
+        {
+          "text": "全球",
+          "pinyin": "quánqiú",
+          "hanviet": "Toàn Cầu",
+          "hsk": 4,
+          "word_id": "hsk4_601",
+          "meaning_vi": "toàn cầu"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "材料",
+          "pinyin": "cáiliào",
+          "hanviet": "Tài Liệu",
+          "hsk": 4,
+          "word_id": "hsk4_61",
+          "meaning_vi": "tài liệu, nguyên liệu"
+        },
+        {
+          "text": "革命",
+          "pinyin": "gémìng",
+          "hanviet": "Cách Mệnh",
+          "hsk": 6,
+          "word_id": "hsk6_444",
+          "meaning_vi": "cách mạng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "然而，塑料难以降解的特性也给全球生态环境带来了沉重的“白色污染”负担。",
+      "pinyin": "Rán'ér, sùliào nányǐ jiàngjiě de tèxìng yě gěi quánqiú shēngtài huánjìng dàilái le chénzhòng de “báisè wūrǎn” fùdān.",
+      "vi": "Tuy vậy, đặc tính khó phân hủy sinh học của nhựa cũng mang lại gánh nặng ô nhiễm trắng nghiêm trọng cho môi trường sinh thái.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "然而",
+          "pinyin": "rán’ér",
+          "hanviet": "Nhiên Nhi",
+          "hsk": 4,
+          "word_id": "hsk4_608",
+          "meaning_vi": "tuy nhiên"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "塑料",
+          "pinyin": "sùliào",
+          "hanviet": "Tố Liệu",
+          "hsk": 4,
+          "word_id": "hsk4_705",
+          "meaning_vi": "nhựa"
+        },
+        {
+          "text": "难以",
+          "pinyin": "nányǐ",
+          "hanviet": "Nan Dĩ",
+          "hsk": 5,
+          "word_id": "hsk5_791",
+          "meaning_vi": "khó mà, khó lòng"
+        },
+        {
+          "text": "降解",
+          "pinyin": "jiàng jiě",
+          "hanviet": "Giáng Giải"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "特性",
+          "pinyin": "tèxìng",
+          "hanviet": "Đặc Tính",
+          "hsk": 6,
+          "word_id": "hsk6_1279",
+          "meaning_vi": "đặc tính"
+        },
+        {
+          "text": "也",
+          "pinyin": "yě",
+          "hanviet": "Dã",
+          "hsk": 1,
+          "word_id": "hsk1_359",
+          "meaning_vi": "cũng"
+        },
+        {
+          "text": "给",
+          "pinyin": "gěi",
+          "hanviet": "Cấp",
+          "hsk": 1,
+          "word_id": "hsk1_98",
+          "meaning_vi": "cho, tặng"
+        },
+        {
+          "text": "全球",
+          "pinyin": "quánqiú",
+          "hanviet": "Toàn Cầu",
+          "hsk": 4,
+          "word_id": "hsk4_601",
+          "meaning_vi": "toàn cầu"
+        },
+        {
+          "text": "生态环境",
+          "pinyin": "shēng tài huán jìng",
+          "hanviet": "Sinh Thái Hoàn Cảnh"
+        },
+        {
+          "text": "带来",
+          "pinyin": "dài lái",
+          "hanviet": "Đới Lai"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "沉重",
+          "pinyin": "chénzhòng",
+          "hanviet": "Trầm Trọng",
+          "hsk": 6,
+          "word_id": "hsk6_150",
+          "meaning_vi": "nặng nề, nghiêm trọng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "白色污染",
+          "pinyin": "bái sè wū rǎn",
+          "hanviet": "Bạch Sắc Ô Nhiễm"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "负担",
+          "pinyin": "fùdān",
+          "hanviet": "Phụ Đảm",
+          "hsk": 5,
+          "word_id": "hsk5_372",
+          "meaning_vi": "gánh nặng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "今天，开发生物可降解环保新材料与加强塑料循环利用，已成为全球共同的努力方向。",
+      "pinyin": "Jīntiān, kāifā shēngwù kějiàngjiě huánbǎo xīn cáiliào yǔ jiāqiáng sùliào xúnhuán lìyòng, yǐ chéngwéi quánqiú gòngtóng de nǔlì fāngxiàng.",
+      "vi": "Hôm nay, việc phát triển vật liệu mới tự phân hủy và tăng cường tái chế nhựa đã trở thành hướng phấn đấu chung của toàn thế giới.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "今天",
+          "pinyin": "jīntiān",
+          "hanviet": "Kim Thiên",
+          "hsk": 1,
+          "word_id": "hsk1_144",
+          "meaning_vi": "hôm nay"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "开发",
+          "pinyin": "kāifā",
+          "hanviet": "Khai Phát",
+          "hsk": 5,
+          "word_id": "hsk5_649",
+          "meaning_vi": "khai phát, phát triển"
+        },
+        {
+          "text": "生物",
+          "pinyin": "shēngwù",
+          "hanviet": "Sinh Vật",
+          "hsk": 5,
+          "word_id": "hsk5_995",
+          "meaning_vi": "sinh vật"
+        },
+        {
+          "text": "可降解",
+          "pinyin": "kě jiàng jiě",
+          "hanviet": "Khả Giáng Giải"
+        },
+        {
+          "text": "环保",
+          "pinyin": "huánbǎo",
+          "hanviet": "Hoàn Bảo",
+          "hsk": 4,
+          "word_id": "hsk4_305",
+          "meaning_vi": "bảo vệ môi trường"
+        },
+        {
+          "text": "新",
+          "pinyin": "xīn",
+          "hanviet": "Tân",
+          "hsk": 1,
+          "word_id": "hsk1_344",
+          "meaning_vi": "mới"
+        },
+        {
+          "text": "材料",
+          "pinyin": "cáiliào",
+          "hanviet": "Tài Liệu",
+          "hsk": 4,
+          "word_id": "hsk4_61",
+          "meaning_vi": "tài liệu, nguyên liệu"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "加强",
+          "pinyin": "jiāqiáng",
+          "hanviet": "Gia Cường",
+          "hsk": 4,
+          "word_id": "hsk4_337",
+          "meaning_vi": "tăng cường"
+        },
+        {
+          "text": "塑料",
+          "pinyin": "sùliào",
+          "hanviet": "Tố Liệu",
+          "hsk": 4,
+          "word_id": "hsk4_705",
+          "meaning_vi": "nhựa"
+        },
+        {
+          "text": "循环",
+          "pinyin": "xúnhuán",
+          "hanviet": "Tuần Hoàn",
+          "hsk": 6,
+          "word_id": "hsk6_1497",
+          "meaning_vi": "tuần hoàn"
+        },
+        {
+          "text": "利用",
+          "pinyin": "lìyòng",
+          "hanviet": "Lợi Dụng",
+          "hsk": 5,
+          "word_id": "hsk5_710",
+          "meaning_vi": "lợi dụng, tận dụng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "已",
+          "pinyin": "yǐ",
+          "hanviet": "Dĩ",
+          "hsk": 4,
+          "word_id": "hsk4_866",
+          "meaning_vi": "đã"
+        },
+        {
+          "text": "成为",
+          "pinyin": "chéngwéi",
+          "hanviet": "Thành Vi",
+          "hsk": 4,
+          "word_id": "hsk4_82",
+          "meaning_vi": "trở thành"
+        },
+        {
+          "text": "全球",
+          "pinyin": "quánqiú",
+          "hanviet": "Toàn Cầu",
+          "hsk": 4,
+          "word_id": "hsk4_601",
+          "meaning_vi": "toàn cầu"
+        },
+        {
+          "text": "共同",
+          "pinyin": "gòngtóng",
+          "hanviet": "Cộng Đồng",
+          "hsk": 4,
+          "word_id": "hsk4_259",
+          "meaning_vi": "chung, cùng nhau"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "努力",
+          "pinyin": "nǔlì",
+          "hanviet": "Nỗ Lực",
+          "hsk": 3,
+          "word_id": "hsk3_868",
+          "meaning_vi": "nỗ lực, cố gắng"
+        },
+        {
+          "text": "方向",
+          "pinyin": "fāngxiàng",
+          "hanviet": "Phương Hướng",
+          "hsk": 3,
+          "word_id": "hsk3_717",
+          "meaning_vi": "phương hướng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk3_831",
+    "hsk5_1518",
+    "hsk4_346",
+    "hsk4_259",
+    "hsk2_324"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Loại nhựa tổng hợp nhân tạo đầu tiên do ai phát minh năm 1907?",
+      "options_vi": [
+        "Nhà hóa học Baekeland (nhựa Bakelite)",
+        "Anh em nhà Wright",
+        "Nobel"
+      ],
+      "answer": 0,
+      "explanation_vi": "Baekeland tổng hợp thành công nhựa tổng hợp đầu tiên vào năm 1907."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Đặc tính nào của nhựa gây lo ngại lớn nhất cho môi trường tự nhiên?",
+      "options_vi": [
+        "Rất khó phân hủy sinh học tự nhiên kéo dài hàng trăm năm",
+        "Tan biến quá nhanh trong nước",
+        "Tự bốc cháy khi trời mưa"
+      ],
+      "answer": 0,
+      "explanation_vi": "Rác thải nhựa mất hàng thế kỷ để phân hủy, gây ra vấn nạn ô nhiễm trắng."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Giải pháp bảo vệ môi trường đối với rác thải nhựa hiện nay là gì?",
+      "options_vi": [
+        "Phát triển nhựa tự phân hủy và đẩy mạnh tái chế tuần hoàn",
+        "Đổ toàn bộ xuống đáy biển",
+        "Cấm tuyệt đối sản xuất mọi máy bay"
+      ],
+      "answer": 0,
+      "explanation_vi": "Tái chế và nghiên cứu nhựa sinh học dễ phân hủy là giải pháp bền vững."
+    }
+  ]
+}

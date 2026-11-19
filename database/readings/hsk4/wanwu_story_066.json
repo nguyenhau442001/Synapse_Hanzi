@@ -1,0 +1,868 @@
+{
+  "id": "wanwu_story_066",
+  "chapter_no": 66,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 4,
+  "book_page_start": 691,
+  "book_page_end": 696,
+  "page_display": "Trang 691 - 696",
+  "title": {
+    "zh": "假日：国人休假始于秦汉",
+    "vi": "Nghỉ lễ: Chế độ nghỉ phép khởi từ Tần Hán"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🏖️",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_066.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_066.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 691 - 696 · Lệ 'Hưu mộc' tắm rửa nghỉ ngơi cứ 5 ngày một lần thời Hán và tuần nghỉ 'Tuần hưu' thời Đường.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "忙碌工作之余能够享受法定节假日与双休日，是保障劳动者身心健康的基本制度。",
+      "pinyin": "Mánglù gōngzuò zhīyú nénggòu xiǎngshòu fǎdìng jiérì yǔ shuāngxiūrì, shì bǎozhàng láodòngzhě shēnxīn jiànkāng de jīběn zhìdù.",
+      "vi": "Sau giờ làm việc bận rộn được nghỉ ngơi ngày lễ và cuối tuần là chế độ cơ bản bảo vệ sức khỏe người lao động.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "忙碌",
+          "pinyin": "mánglù",
+          "hanviet": "Mang Lựu",
+          "hsk": 5,
+          "word_id": "hsk5_751",
+          "meaning_vi": "bận rộn"
+        },
+        {
+          "text": "工作",
+          "pinyin": "gōngzuò",
+          "hanviet": "Công Tác",
+          "hsk": 1,
+          "word_id": "hsk1_103",
+          "meaning_vi": "công việc, làm việc"
+        },
+        {
+          "text": "之",
+          "pinyin": "pǔtōnghuà",
+          "hanviet": "Phổ Thông Thoại",
+          "hsk": 4,
+          "word_id": "hsk4_563",
+          "meaning_vi": "tiếng phổ thông (Trung Quốc)"
+        },
+        {
+          "text": "余",
+          "pinyin": "yú",
+          "hanviet": "Dư",
+          "hsk": 7,
+          "word_id": "hsk7_4998",
+          "meaning_vi": "dư, hơn, sót lại"
+        },
+        {
+          "text": "能够",
+          "pinyin": "nénggòu",
+          "hanviet": "Năng Cú",
+          "hsk": 4,
+          "word_id": "hsk4_532",
+          "meaning_vi": "có thể"
+        },
+        {
+          "text": "享受",
+          "pinyin": "xiǎngshòu",
+          "hanviet": "Hưởng Thụ",
+          "hsk": 5,
+          "word_id": "hsk5_1255",
+          "meaning_vi": "hưởng thụ"
+        },
+        {
+          "text": "法定",
+          "pinyin": "fǎdìng",
+          "hanviet": "Pháp Định",
+          "hsk": 6,
+          "word_id": "hsk6_359",
+          "meaning_vi": "theo luật định, luật định"
+        },
+        {
+          "text": "节假日",
+          "pinyin": "jiéjiàrì",
+          "hanviet": "Tiết Giả Nhật",
+          "hsk": 4,
+          "word_id": "hsk4_383",
+          "meaning_vi": "ngày lễ và ngày nghỉ"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "双休日",
+          "pinyin": "shuāng xiū rì",
+          "hanviet": "Song Hưu Nhật"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "保障",
+          "pinyin": "bǎozhàng",
+          "hanviet": "Bảo Chướng",
+          "hsk": 6,
+          "word_id": "hsk6_26",
+          "meaning_vi": "bảo đảm"
+        },
+        {
+          "text": "劳动者",
+          "pinyin": "láo dòng zhě",
+          "hanviet": "Lao Động Giả"
+        },
+        {
+          "text": "身心健康",
+          "pinyin": "shēn xīn jiàn kāng",
+          "hanviet": "Thân Tâm Kiện Khang"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "基本",
+          "pinyin": "jīběn",
+          "hanviet": "Cơ Bản",
+          "hsk": 4,
+          "word_id": "hsk4_319",
+          "meaning_vi": "cơ bản"
+        },
+        {
+          "text": "制度",
+          "pinyin": "zhìdù",
+          "hanviet": "Chế Độ",
+          "hsk": 5,
+          "word_id": "hsk5_1512",
+          "meaning_vi": "chế độ, thể chế"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "在古代中国，公务休假制度早在汉代就已经正式确立，被称为‘休沐’。",
+      "pinyin": "Zài gǔdài Zhōngguó, gōngwù xiūjià zhìdù zǎo zài Hàndài jiù yǐjīng zhèngshì quèlì, bèi chēng wéi ‘xiūmù’.",
+      "vi": "Ở Trung Quốc cổ đại, chế độ nghỉ phép công vụ từ thời Hán đã được xác lập chính thức với tên gọi 'Hưu mộc'.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "公务",
+          "pinyin": "gōngwù",
+          "hanviet": "Công Vụ",
+          "hsk": 7,
+          "word_id": "hsk7_1401",
+          "meaning_vi": "công vụ, việc công"
+        },
+        {
+          "text": "休假",
+          "pinyin": "xiūjià",
+          "hanviet": "Hưu Giả",
+          "hsk": 3,
+          "word_id": "hsk3_990",
+          "meaning_vi": "nghỉ phép"
+        },
+        {
+          "text": "制度",
+          "pinyin": "zhìdù",
+          "hanviet": "Chế Độ",
+          "hsk": 5,
+          "word_id": "hsk5_1512",
+          "meaning_vi": "chế độ, thể chế"
+        },
+        {
+          "text": "早",
+          "pinyin": "zǎo",
+          "hanviet": "Tảo",
+          "hsk": 1,
+          "word_id": "hsk1_602",
+          "meaning_vi": "sớm"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "汉代",
+          "pinyin": "hàn dài",
+          "hanviet": "Hán Đại"
+        },
+        {
+          "text": "就",
+          "pinyin": "jiù",
+          "hanviet": "Tựu",
+          "hsk": 2,
+          "word_id": "hsk2_376",
+          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)"
+        },
+        {
+          "text": "已经",
+          "pinyin": "yǐjīng",
+          "hanviet": "Dĩ Kinh",
+          "hsk": 2,
+          "word_id": "hsk2_472",
+          "meaning_vi": "đã"
+        },
+        {
+          "text": "正式",
+          "pinyin": "zhèngshì",
+          "hanviet": "Chính Thức",
+          "hsk": 4,
+          "word_id": "hsk4_937",
+          "meaning_vi": "chính thức"
+        },
+        {
+          "text": "确立",
+          "pinyin": "quèlì",
+          "hanviet": "Xác Lập",
+          "hsk": 6,
+          "word_id": "hsk6_1084",
+          "meaning_vi": "xác lập"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "称为",
+          "pinyin": "chēngwéi",
+          "hanviet": "Xứng Vi",
+          "hsk": 5,
+          "word_id": "hsk5_134",
+          "meaning_vi": "gọi là"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "休",
+          "pinyin": "xiū",
+          "hanviet": "Hưu"
+        },
+        {
+          "text": "沐",
+          "pinyin": "mù",
+          "hanviet": "Mộc"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "根据汉律规定，官员在衙署连续办公五天后，可以获得一天假期回家沐浴洗头、探望妻儿。",
+      "pinyin": "Gēnjù Hànlǜ guīdìng, guānyuán zài yáshǔ liánxù bàngōng wǔ tiān hòu, kěyǐ huòdé yì tiān jiàqī huíjiā mùyù xǐtóu, tànwàng qī'ér.",
+      "vi": "Theo quy định luật Hán, quan lại làm việc 5 ngày liên tiếp trong nha môn sẽ được nghỉ 1 ngày về nhà tắm gội, thăm nom vợ con.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "根据",
+          "pinyin": "gēnjù",
+          "hanviet": "Căn Cứ",
+          "hsk": 3,
+          "word_id": "hsk3_379",
+          "meaning_vi": "căn cứ, dựa theo"
+        },
+        {
+          "text": "汉律",
+          "pinyin": "hàn lǜ",
+          "hanviet": "Hán Luật"
+        },
+        {
+          "text": "规定",
+          "pinyin": "guīdìng",
+          "hanviet": "Quy Định",
+          "hsk": 4,
+          "word_id": "hsk4_278",
+          "meaning_vi": "quy định"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "官员",
+          "pinyin": "guānyuán",
+          "hanviet": "Quan Viên",
+          "hsk": 6,
+          "word_id": "hsk6_495",
+          "meaning_vi": "chính thức"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "衙署",
+          "pinyin": "yá shǔ",
+          "hanviet": "Nha Thự"
+        },
+        {
+          "text": "连续",
+          "pinyin": "liánxù",
+          "hanviet": "Liên Tục",
+          "hsk": 5,
+          "word_id": "hsk5_714",
+          "meaning_vi": "liên tục"
+        },
+        {
+          "text": "办公",
+          "pinyin": "bàngōng",
+          "hanviet": "Biện Công",
+          "hsk": 4,
+          "word_id": "hsk4_10",
+          "meaning_vi": "làm việc (văn phòng)"
+        },
+        {
+          "text": "五天",
+          "pinyin": "wǔ tiān",
+          "hanviet": "Ngũ Thiên"
+        },
+        {
+          "text": "后",
+          "pinyin": "hòu",
+          "hanviet": "Hậu",
+          "hsk": 1,
+          "word_id": "hsk1_524",
+          "meaning_vi": "sau"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "可以",
+          "pinyin": "kěyǐ",
+          "hanviet": "Khả Dĩ",
+          "hsk": 1,
+          "word_id": "hsk1_160",
+          "meaning_vi": "có thể, được"
+        },
+        {
+          "text": "获得",
+          "pinyin": "huòdé",
+          "hanviet": "Hoạch Đắc",
+          "hsk": 4,
+          "word_id": "hsk4_316",
+          "meaning_vi": "đạt được, giành được"
+        },
+        {
+          "text": "一天",
+          "pinyin": "yī tiān",
+          "hanviet": "Nhất Thiên"
+        },
+        {
+          "text": "假期",
+          "pinyin": "jiàqī",
+          "hanviet": "Giả Kỳ",
+          "hsk": 3,
+          "word_id": "hsk3_428",
+          "meaning_vi": "kỳ nghỉ"
+        },
+        {
+          "text": "回家",
+          "pinyin": "huí jiā",
+          "hanviet": "Hồi Gia"
+        },
+        {
+          "text": "沐浴",
+          "pinyin": "mùyù",
+          "hanviet": "Mộc Dục",
+          "hsk": 7,
+          "word_id": "hsk7_2902",
+          "meaning_vi": "tắm gội, đắm mình (trong ánh sáng...)"
+        },
+        {
+          "text": "洗头",
+          "pinyin": "xǐ tóu",
+          "hanviet": "Tẩy Đầu"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "探望",
+          "pinyin": "tànwàng",
+          "hanviet": "Thám Vọng",
+          "hsk": 7,
+          "word_id": "hsk7_3958",
+          "meaning_vi": "thăm hỏi, thăm viếng"
+        },
+        {
+          "text": "妻儿",
+          "pinyin": "qī ér",
+          "hanviet": "Thê Nhi"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "到了唐代，朝廷改为每十天休假一天，称为‘旬休’，同时在元宵、端午、中秋等传统佳节普遍放假三天至七天。",
+      "pinyin": "Dàole Tángdài, cháotíng gǎiwéi měi shí tiān xiūjià yì tiān, chēng wéi ‘xúnxiū’, tóngshí zài Yuánxiāo, Duānwǔ, Zhōngqiū děng chuántǒng jiājié pǔbiàn fàngjià sān tiān zhì qī tiān.",
+      "vi": "Đến thời Đường, đổi thành cứ 10 ngày nghỉ 1 ngày gọi là 'Tuần hưu', đồng thời các tiết Nguyên tiêu, Đoan ngọ, Trung thu đều cho nghỉ 3 đến 7 ngày.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "到",
+          "pinyin": "dào",
+          "hanviet": "Đáo",
+          "hsk": 1,
+          "word_id": "hsk1_59",
+          "meaning_vi": "đến"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "唐代",
+          "pinyin": "táng dài",
+          "hanviet": "Đường Đại"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "朝廷",
+          "pinyin": "cháo tíng",
+          "hanviet": "Triều Đình"
+        },
+        {
+          "text": "改为",
+          "pinyin": "gǎi wéi",
+          "hanviet": "Cải Vi"
+        },
+        {
+          "text": "每",
+          "pinyin": "měi",
+          "hanviet": "Mỗi",
+          "hsk": 2,
+          "word_id": "hsk2_399",
+          "meaning_vi": "mỗi"
+        },
+        {
+          "text": "十天",
+          "pinyin": "shí tiān",
+          "hanviet": "Thập Thiên"
+        },
+        {
+          "text": "休假",
+          "pinyin": "xiūjià",
+          "hanviet": "Hưu Giả",
+          "hsk": 3,
+          "word_id": "hsk3_990",
+          "meaning_vi": "nghỉ phép"
+        },
+        {
+          "text": "一天",
+          "pinyin": "yī tiān",
+          "hanviet": "Nhất Thiên"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "称为",
+          "pinyin": "chēngwéi",
+          "hanviet": "Xứng Vi",
+          "hsk": 5,
+          "word_id": "hsk5_134",
+          "meaning_vi": "gọi là"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "旬休",
+          "pinyin": "xún xiū",
+          "hanviet": "Tuần Hưu"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "同时",
+          "pinyin": "tóngshí",
+          "hanviet": "Đồng Thời",
+          "hsk": 4,
+          "word_id": "hsk4_747",
+          "meaning_vi": "đồng thời"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "元宵",
+          "pinyin": "yuánxiāo",
+          "hanviet": "Nguyên Tiêu",
+          "hsk": 6,
+          "word_id": "hsk6_1624",
+          "meaning_vi": "bánh trôi tết Thượng nguyên, tết Nguyên tiêu"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "端午",
+          "pinyin": "duān wǔ",
+          "hanviet": "Đoan Ngọ"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "中秋",
+          "pinyin": "zhōng qiū",
+          "hanviet": "Trung Thu"
+        },
+        {
+          "text": "等",
+          "pinyin": "děng",
+          "hanviet": "Đẳng",
+          "hsk": 2,
+          "word_id": "hsk2_20",
+          "meaning_vi": "đợi, chờ"
+        },
+        {
+          "text": "传统",
+          "pinyin": "chuántǒng",
+          "hanviet": "Truyền Thống",
+          "hsk": 5,
+          "word_id": "hsk5_187",
+          "meaning_vi": "truyền thống"
+        },
+        {
+          "text": "佳节",
+          "pinyin": "jiājié",
+          "hanviet": "Giai Tiết",
+          "hsk": 7,
+          "word_id": "hsk7_1922",
+          "meaning_vi": "ngày tết, dịp lễ hội, ngày vui"
+        },
+        {
+          "text": "普遍",
+          "pinyin": "pǔbiàn",
+          "hanviet": "Phổ Biến",
+          "hsk": 4,
+          "word_id": "hsk4_561",
+          "meaning_vi": "phổ biến"
+        },
+        {
+          "text": "放假",
+          "pinyin": "fàngjià",
+          "hanviet": "Phóng Giả",
+          "hsk": 3,
+          "word_id": "hsk3_367",
+          "meaning_vi": "được nghỉ (lễ, hè…)"
+        },
+        {
+          "text": "三天",
+          "pinyin": "sān tiān",
+          "hanviet": "Tam Thiên"
+        },
+        {
+          "text": "至",
+          "pinyin": "zhì",
+          "hanviet": "Chí",
+          "hsk": 5,
+          "word_id": "hsk5_1508",
+          "meaning_vi": "đến"
+        },
+        {
+          "text": "七天",
+          "pinyin": "qī tiān",
+          "hanviet": "Thất Thiên"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "古代休假不仅让官吏得以调养生息，也促进了节日民俗文化的世代传承与社会繁荣。",
+      "pinyin": "Gǔdài xiūjià bùjǐn ràng guānlì déyǐ tiáoyǎng shēngxī, yě cùjìn le jiérì mínsú wénhuà de shìdài chuánchéng yǔ shèhuì fánróng.",
+      "vi": "Chế độ nghỉ phép xưa không chỉ giúp quan lại hồi phục sức lực mà còn thúc đẩy phong tục tập quán phát triển bền vững.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "休假",
+          "pinyin": "xiūjià",
+          "hanviet": "Hưu Giả",
+          "hsk": 3,
+          "word_id": "hsk3_990",
+          "meaning_vi": "nghỉ phép"
+        },
+        {
+          "text": "不仅",
+          "pinyin": "bùjǐn",
+          "hanviet": "Bất Cận",
+          "hsk": 4,
+          "word_id": "hsk4_55",
+          "meaning_vi": "không chỉ"
+        },
+        {
+          "text": "让",
+          "pinyin": "ràng",
+          "hanviet": "Nhượng",
+          "hsk": 2,
+          "word_id": "hsk2_422",
+          "meaning_vi": "để cho, khiến"
+        },
+        {
+          "text": "官吏",
+          "pinyin": "guānlì",
+          "hanviet": "Quan Lại",
+          "hsk": 7,
+          "word_id": "hsk7_1480",
+          "meaning_vi": "quan lại, quan chức triều đình"
+        },
+        {
+          "text": "得以",
+          "pinyin": "déyǐ",
+          "hanviet": "Đắc Dĩ",
+          "hsk": 6,
+          "word_id": "hsk6_283",
+          "meaning_vi": "nhờ đó mà có thể, được"
+        },
+        {
+          "text": "调养",
+          "pinyin": "tiáo yǎng",
+          "hanviet": "Điều Dưỡng"
+        },
+        {
+          "text": "生息",
+          "pinyin": "shēng xī",
+          "hanviet": "Sinh Tức"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "也",
+          "pinyin": "yě",
+          "hanviet": "Dã",
+          "hsk": 1,
+          "word_id": "hsk1_359",
+          "meaning_vi": "cũng"
+        },
+        {
+          "text": "促进",
+          "pinyin": "cùjìn",
+          "hanviet": "Xúc Tiến",
+          "hsk": 5,
+          "word_id": "hsk5_204",
+          "meaning_vi": "thúc đẩy"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "节日",
+          "pinyin": "jiérì",
+          "hanviet": "Tiết Nhật",
+          "hsk": 3,
+          "word_id": "hsk3_796",
+          "meaning_vi": "ngày lễ"
+        },
+        {
+          "text": "民俗文化",
+          "pinyin": "mín sú wén huà",
+          "hanviet": "Dân Tục Văn Hoa"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "世代",
+          "pinyin": "shìdài",
+          "hanviet": "Thế Đại",
+          "hsk": 7,
+          "word_id": "hsk7_3691",
+          "meaning_vi": "thế hệ, đời đời"
+        },
+        {
+          "text": "传承",
+          "pinyin": "chuánchéng",
+          "hanviet": "Truyền Thừa",
+          "hsk": 6,
+          "word_id": "hsk6_201",
+          "meaning_vi": "kế thừa và phát huy, lưu truyền"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "社会",
+          "pinyin": "shèhuì",
+          "hanviet": "Xã Hội",
+          "hsk": 4,
+          "word_id": "hsk4_639",
+          "meaning_vi": "xã hội"
+        },
+        {
+          "text": "繁荣",
+          "pinyin": "fánróng",
+          "hanviet": "Phồn Vinh",
+          "hsk": 5,
+          "word_id": "hsk5_329",
+          "meaning_vi": "phồn vinh, thịnh vượng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk4_937",
+    "hsk4_278",
+    "hsk5_187",
+    "hsk5_204",
+    "hsk5_751"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Chế độ nghỉ phép của quan chức thời Hán gọi là 'Hưu mộc' (休沐) có chu kỳ thế nào?",
+      "options_vi": [
+        "Làm việc 5 ngày được nghỉ 1 ngày để tắm gội, về với gia đình",
+        "Làm việc 1 năm mới được nghỉ 1 giờ",
+        "Không bao giờ được nghỉ"
+      ],
+      "answer": 0,
+      "explanation_vi": "Thời Hán quan lại cứ làm việc 5 ngày lại có 1 ngày nghỉ tắm gội (Hưu mộc)."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Vào thời Đường, chu kỳ ngày nghỉ thông thường được đổi thành 'Tuần hưu' (旬休), tức là bao nhiêu ngày nghỉ 1 lần?",
+      "options_vi": [
+        "Cứ 10 ngày làm việc thì nghỉ 1 ngày",
+        "Mỗi tháng nghỉ 29 ngày",
+        "3 năm nghỉ 1 lần"
+      ],
+      "answer": 0,
+      "explanation_vi": "Một tuần thời xưa là 10 ngày (tuần giáp), quan chức được nghỉ ngày thứ 10."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Thời Đường có cho nghỉ phép trong các dịp lễ tết truyền thống không?",
+      "options_vi": [
+        "Có, các dịp tết Nguyên Đán, Hàn Thực, Đoan Ngọ được nghỉ từ 3 đến 7 ngày",
+        "Hoàn toàn cấm nghỉ",
+        "Bắt làm ca đêm"
+      ],
+      "answer": 0,
+      "explanation_vi": "Triều Đường có lịch nghỉ lễ rất phong phú cho các đại lễ tiết trong năm."
+    }
+  ]
+}

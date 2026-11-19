@@ -1,0 +1,851 @@
+{
+  "id": "wanwu_story_069",
+  "chapter_no": 69,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 4,
+  "book_page_start": 715,
+  "book_page_end": 723,
+  "page_display": "Trang 715 - 723",
+  "title": {
+    "zh": "状元：千年科举的特殊符号",
+    "vi": "Trạng nguyên: Biểu tượng đỉnh cao khoa cử ngàn năm"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "📜",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_069.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_069.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 715 - 723 · Hành trình 'mười năm đèn sách' của sĩ tử đến ngày vinh quy bái tổ đứng đầu bảng vàng điện thí.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "在中国实行了一千三百多年的科举考试制度中，‘状元’是所有读书人梦寐以求的最高荣耀。",
+      "pinyin": "Zài Zhōngguó shíxíng le yìqiān-sānbǎi duō nián de kējǔ kǎoshì zhìdù zhōng, ‘zhuàngyuan’ shì suǒyǒu dúshūrén mèngmèi-yǐqiú de zuìgāo róngyào.",
+      "vi": "Trong chế độ thi cử khoa bảng kéo dài hơn 1300 năm, 'Trạng nguyên' là vinh quang tột đỉnh mà mọi sĩ tử đèn sách đều mơ ước.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "实行",
+          "pinyin": "shíxíng",
+          "hanviet": "Thực Hành",
+          "hsk": 5,
+          "word_id": "hsk5_1021",
+          "meaning_vi": "thực hiện"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "一千三百多年",
+          "pinyin": "yī qiān sān bǎi duō nián",
+          "hanviet": "Nhất Thiên Tam Bách Đa Niên"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "科举考试",
+          "pinyin": "kē jǔ kǎo shì",
+          "hanviet": "Khoa Cử Khảo Thí"
+        },
+        {
+          "text": "制度",
+          "pinyin": "zhìdù",
+          "hanviet": "Chế Độ",
+          "hsk": 5,
+          "word_id": "hsk5_1512",
+          "meaning_vi": "chế độ, thể chế"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "状元",
+          "pinyin": "zhuàngyuan",
+          "hanviet": "Trạng Nguyên",
+          "hsk": 7,
+          "word_id": "hsk7_5467",
+          "meaning_vi": "trạng nguyên, thủ khoa đầu bảng"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "所有",
+          "pinyin": "suǒyǒu",
+          "hanviet": "Sở Hữu",
+          "hsk": 4,
+          "word_id": "hsk4_713",
+          "meaning_vi": "tất cả, toàn bộ"
+        },
+        {
+          "text": "读书人",
+          "pinyin": "dú shū rén",
+          "hanviet": "Độc Thư Nhân"
+        },
+        {
+          "text": "梦寐以求",
+          "pinyin": "mèngmèiyǐqiú",
+          "hanviet": "Mộng Mị Dĩ Cầu",
+          "hsk": 7,
+          "word_id": "hsk7_2789",
+          "meaning_vi": "hằng ao ước, mơ ước bấy lâu"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "最高",
+          "pinyin": "zuì gāo",
+          "hanviet": "Tối Cao"
+        },
+        {
+          "text": "荣耀",
+          "pinyin": "róngyào",
+          "hanviet": "Vinh Diệu",
+          "hsk": 7,
+          "word_id": "hsk7_3446",
+          "meaning_vi": "vinh quang; vinh dự vẻ vang"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "在殿试中获得第一名的举子被称为状元，不仅名列一甲第一，更能骑着高头大马巡游御街接受百姓喝彩。",
+      "pinyin": "Zài diànshì zhōng huòdé dì-yī míng de jǔzǐ bèi chēng wéi zhuàngyuan, bùjǐn míngliè yījiǎ dì-yī, gèng néng qízhe gāotóu dàmǎ xúnyóu yùjiē jiēshòu bǎixìng hècǎi.",
+      "vi": "Người đỗ đầu kỳ thi Điện được phong Trạng nguyên, cưỡi ngựa dong ruổi trên phố ngự tiền giữa muôn tiếng reo hò của dân chúng.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "殿试",
+          "pinyin": "diàn shì",
+          "hanviet": "Điện Thí"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "获得",
+          "pinyin": "huòdé",
+          "hanviet": "Hoạch Đắc",
+          "hsk": 4,
+          "word_id": "hsk4_316",
+          "meaning_vi": "đạt được, giành được"
+        },
+        {
+          "text": "第一名",
+          "pinyin": "dì yì míng",
+          "hanviet": "Đệ Nhất Danh"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "举子",
+          "pinyin": "jǔ zi",
+          "hanviet": "Cử Tử"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "称为",
+          "pinyin": "chēngwéi",
+          "hanviet": "Xứng Vi",
+          "hsk": 5,
+          "word_id": "hsk5_134",
+          "meaning_vi": "gọi là"
+        },
+        {
+          "text": "状元",
+          "pinyin": "zhuàngyuan",
+          "hanviet": "Trạng Nguyên",
+          "hsk": 7,
+          "word_id": "hsk7_5467",
+          "meaning_vi": "trạng nguyên, thủ khoa đầu bảng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "不仅",
+          "pinyin": "bùjǐn",
+          "hanviet": "Bất Cận",
+          "hsk": 4,
+          "word_id": "hsk4_55",
+          "meaning_vi": "không chỉ"
+        },
+        {
+          "text": "名列",
+          "pinyin": "míng liè",
+          "hanviet": "Danh Liệt"
+        },
+        {
+          "text": "一甲",
+          "pinyin": "yī jiǎ",
+          "hanviet": "Nhất Giáp"
+        },
+        {
+          "text": "第一",
+          "pinyin": "dìyī",
+          "hanviet": "Đệ Nhất",
+          "hsk": 2,
+          "word_id": "hsk2_22",
+          "meaning_vi": "thứ nhất"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "更能",
+          "pinyin": "gèng néng",
+          "hanviet": "Canh Năng"
+        },
+        {
+          "text": "骑",
+          "pinyin": "qí",
+          "hanviet": "Kỵ",
+          "hsk": 3,
+          "word_id": "hsk3_879",
+          "meaning_vi": "cưỡi, đạp (xe)"
+        },
+        {
+          "text": "着",
+          "pinyin": "zhe",
+          "hanviet": "Trước",
+          "hsk": 2,
+          "word_id": "hsk2_490",
+          "meaning_vi": "đang (trợ từ)"
+        },
+        {
+          "text": "高头大马",
+          "pinyin": "gāo tóu dà mǎ",
+          "hanviet": "Cao Đầu Đại Mã"
+        },
+        {
+          "text": "巡游",
+          "pinyin": "xún yóu",
+          "hanviet": "Tuần Du"
+        },
+        {
+          "text": "御街",
+          "pinyin": "yù jiē",
+          "hanviet": "Ngự Nhai"
+        },
+        {
+          "text": "接受",
+          "pinyin": "jiēshòu",
+          "hanviet": "Tiếp Thọ",
+          "hsk": 4,
+          "word_id": "hsk4_380",
+          "meaning_vi": "tiếp nhận, chấp nhận"
+        },
+        {
+          "text": "百姓",
+          "pinyin": "bǎi xìng",
+          "hanviet": "Bách Tính"
+        },
+        {
+          "text": "喝彩",
+          "pinyin": "hècǎi",
+          "hanviet": "Húp Thái",
+          "hsk": 7,
+          "word_id": "hsk7_1648",
+          "meaning_vi": "hoan hô, vỗ tay tán thưởng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "然而考中状元的概率极其微小，全国数以万计的饱学之士往往历经‘十年寒窗’苦读也未必能够中第。",
+      "pinyin": "Rán'ér kǎozhòng zhuàngyuan de gàilǜ jíqí wēixiǎo, quánguó shù-yǐ-wàn-jì de bǎoxué-zhīshì wǎngwǎng lìjīng ‘shí nián hánchuāng’ kǔdú yě wèibì nénggòu zhòngdì.",
+      "vi": "Thế nhưng xác suất đỗ trạng nguyên vô cùng nhỏ nhoi, hàng vạn bậc túc nho trải 'mười năm hàn cửa' khổ học chưa chắc đã đề tên bảng vàng.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "然而",
+          "pinyin": "rán’ér",
+          "hanviet": "Nhiên Nhi",
+          "hsk": 4,
+          "word_id": "hsk4_608",
+          "meaning_vi": "tuy nhiên"
+        },
+        {
+          "text": "考",
+          "pinyin": "kǎo",
+          "hanviet": "Khảo",
+          "hsk": 2,
+          "word_id": "hsk2_380",
+          "meaning_vi": "thi, kiểm tra"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "状元",
+          "pinyin": "zhuàngyuan",
+          "hanviet": "Trạng Nguyên",
+          "hsk": 7,
+          "word_id": "hsk7_5467",
+          "meaning_vi": "trạng nguyên, thủ khoa đầu bảng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "概率",
+          "pinyin": "gàilǜ",
+          "hanviet": "Khái Luật",
+          "hsk": 6,
+          "word_id": "hsk6_416",
+          "meaning_vi": "xác suất"
+        },
+        {
+          "text": "极其",
+          "pinyin": "jíqí",
+          "hanviet": "Cực Kì/cực Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_533",
+          "meaning_vi": "cực kỳ, hết sức"
+        },
+        {
+          "text": "微小",
+          "pinyin": "wēixiǎo",
+          "hanviet": "Vi Tiểu",
+          "hsk": 6,
+          "word_id": "hsk6_1367",
+          "meaning_vi": "vi mô, nhỏ bé"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "全国",
+          "pinyin": "quán guó",
+          "hanviet": "Toàn Quốc"
+        },
+        {
+          "text": "数以万计",
+          "pinyin": "shǔ yǐ wàn jì",
+          "hanviet": "Sổ Dĩ Mặc Kế"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "饱学之士",
+          "pinyin": "bǎo xué zhī shì",
+          "hanviet": "Bão Học Chi Sĩ"
+        },
+        {
+          "text": "往往",
+          "pinyin": "wǎngwǎng",
+          "hanviet": "Vãng Vãng",
+          "hsk": 4,
+          "word_id": "hsk4_766",
+          "meaning_vi": "thường thường"
+        },
+        {
+          "text": "历经",
+          "pinyin": "lìjīng",
+          "hanviet": "Lịch Kinh",
+          "hsk": 6,
+          "word_id": "hsk6_839",
+          "meaning_vi": "trải qua, nếm trải qua (thử thách, năm tháng)"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "十年寒窗",
+          "pinyin": "shí nián hán chuāng",
+          "hanviet": "Thập Niên Hàn Song"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "苦读",
+          "pinyin": "kǔ dú",
+          "hanviet": "Khổ Độc"
+        },
+        {
+          "text": "也",
+          "pinyin": "yě",
+          "hanviet": "Dã",
+          "hsk": 1,
+          "word_id": "hsk1_359",
+          "meaning_vi": "cũng"
+        },
+        {
+          "text": "未必",
+          "pinyin": "wèibì",
+          "hanviet": "Vị Tất",
+          "hsk": 6,
+          "word_id": "hsk6_1378",
+          "meaning_vi": "chưa hẳn, không nhất định"
+        },
+        {
+          "text": "能够",
+          "pinyin": "nénggòu",
+          "hanviet": "Năng Cú",
+          "hsk": 4,
+          "word_id": "hsk4_532",
+          "meaning_vi": "có thể"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "第",
+          "pinyin": "dì",
+          "hanviet": "Đệ",
+          "hsk": 1,
+          "word_id": "hsk1_508",
+          "meaning_vi": "thứ (tiền tố chỉ số thứ tự)"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "历史上有许多名留青史的杰出状元，例如南宋宁死不屈的民族英雄文天祥，便以满腔正气名垂千古。",
+      "pinyin": "Lìshǐ shàng yǒu xǔduō míngliú-qīngshǐ de jiéchū zhuàngyuan, lìrú Nánsòng nìngsǐ-bùqū de mínzú yīngxióng Wén Tiānxiáng, biàn yǐ mǎnqiāng zhèngqì míngchuí-qiāngǔ.",
+      "vi": "Lịch sử từng chứng kiến những vị trạng nguyên kiệt xuất, như anh hùng dân tộc Văn Thiên Tường đời Nam Tống thà chết không khuất phục để lại tiết tháo ngàn thu.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "历史",
+          "pinyin": "lìshǐ",
+          "hanviet": "Lịch Sử",
+          "hsk": 3,
+          "word_id": "hsk3_831",
+          "meaning_vi": "lịch sử"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "有",
+          "pinyin": "yǒu",
+          "hanviet": "Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_380",
+          "meaning_vi": "có"
+        },
+        {
+          "text": "许多",
+          "pinyin": "xǔduō",
+          "hanviet": "Hứa Đa",
+          "hsk": 4,
+          "word_id": "hsk4_836",
+          "meaning_vi": "nhiều, rất nhiều"
+        },
+        {
+          "text": "名留青史",
+          "pinyin": "míng liú qīng shǐ",
+          "hanviet": "Danh Lưu Thanh Sử"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "杰出",
+          "pinyin": "jiéchū",
+          "hanviet": "Kiệt Xuất",
+          "hsk": 6,
+          "word_id": "hsk6_686",
+          "meaning_vi": "xuất sắc, kiệt xuất"
+        },
+        {
+          "text": "状元",
+          "pinyin": "zhuàngyuan",
+          "hanviet": "Trạng Nguyên",
+          "hsk": 7,
+          "word_id": "hsk7_5467",
+          "meaning_vi": "trạng nguyên, thủ khoa đầu bảng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "例如",
+          "pinyin": "lìrú",
+          "hanviet": "Lệ Như",
+          "hsk": 4,
+          "word_id": "hsk4_466",
+          "meaning_vi": "ví dụ như"
+        },
+        {
+          "text": "南宋",
+          "pinyin": "nán sòng",
+          "hanviet": "Nam Tống"
+        },
+        {
+          "text": "宁死不屈",
+          "pinyin": "nìng sǐ bù qū",
+          "hanviet": "Trữ Tử Bất Khuất"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "民族英雄",
+          "pinyin": "mín zú yīng xióng",
+          "hanviet": "Dân Tộc Anh Hùng"
+        },
+        {
+          "text": "文天祥",
+          "pinyin": "wén tiān xiáng",
+          "hanviet": "Văn Thiên Tường"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "便",
+          "pinyin": "biàn",
+          "hanviet": "Tiện",
+          "hsk": 5,
+          "word_id": "hsk5_56",
+          "meaning_vi": "thì, liền (liên từ)"
+        },
+        {
+          "text": "以",
+          "pinyin": "yǐ",
+          "hanviet": "Dĩ",
+          "hsk": 5,
+          "word_id": "hsk5_1362",
+          "meaning_vi": "bằng, dùng"
+        },
+        {
+          "text": "满腔",
+          "pinyin": "mǎn qiāng",
+          "hanviet": "Mãn Khoang"
+        },
+        {
+          "text": "正气",
+          "pinyin": "zhèngqì",
+          "hanviet": "Chính Khí",
+          "hsk": 7,
+          "word_id": "hsk7_5266",
+          "meaning_vi": "chính khí, khí phách ngay thẳng chính nghĩa"
+        },
+        {
+          "text": "名垂千古",
+          "pinyin": "míng chuí qiān gǔ",
+          "hanviet": "Danh Thuỳ Thiên Cổ"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "科举制度虽然在清末废止，但尊重知识、发奋读书的文化基因依然在中华大地上代代相传。",
+      "pinyin": "Kējǔ zhìdù suīrán zài Qīngmò fèizhǐ, dàn zūnzhòng zhīshi, fāfèn dúshū de wénhuà jīyīn yīrán zài Zhōnghuá dàdì shàng dàidài xiāngchuán.",
+      "vi": "Khoa cử dẫu đã bãi bỏ cuối thời Thanh, nhưng truyền thống tôn trọng tri thức và nỗ lực học tập vẫn được kế thừa qua muôn đời.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "科举制度",
+          "pinyin": "kē jǔ zhì dù",
+          "hanviet": "Khoa Cử Chế Độ"
+        },
+        {
+          "text": "虽然",
+          "pinyin": "suīrán",
+          "hanviet": "Tuy Nhiên",
+          "hsk": 2,
+          "word_id": "hsk2_438",
+          "meaning_vi": "mặc dù"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "清末",
+          "pinyin": "qīng mò",
+          "hanviet": "Thanh Mạt"
+        },
+        {
+          "text": "废止",
+          "pinyin": "fèi zhǐ",
+          "hanviet": "Phế Chỉ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "但",
+          "pinyin": "dàn",
+          "hanviet": "Đãn",
+          "hsk": 2,
+          "word_id": "hsk2_330",
+          "meaning_vi": "nhưng, nhưng mà"
+        },
+        {
+          "text": "尊重知识",
+          "pinyin": "zūn zhòng zhī shí",
+          "hanviet": "Tôn Trọng Tri Thức"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "发奋",
+          "pinyin": "fā fèn",
+          "hanviet": "Phát Phấn"
+        },
+        {
+          "text": "读书",
+          "pinyin": "dúshū",
+          "hanviet": "Độc Thư",
+          "hsk": 1,
+          "word_id": "hsk1_512",
+          "meaning_vi": "đọc"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "文化",
+          "pinyin": "wénhuà",
+          "hanviet": "Văn Hóa",
+          "hsk": 3,
+          "word_id": "hsk3_957",
+          "meaning_vi": "văn hóa"
+        },
+        {
+          "text": "基因",
+          "pinyin": "jīyīn",
+          "hanviet": "Cơ Nhân",
+          "hsk": 6,
+          "word_id": "hsk6_612",
+          "meaning_vi": "gene"
+        },
+        {
+          "text": "依然",
+          "pinyin": "yīrán",
+          "hanviet": "Y Nhiên",
+          "hsk": 5,
+          "word_id": "hsk5_1349",
+          "meaning_vi": "vẫn như cũ"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "中华",
+          "pinyin": "Zhōnghuá",
+          "hanviet": "Trung Hoa",
+          "hsk": 5,
+          "word_id": "hsk5_1520",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "大",
+          "pinyin": "dà",
+          "hanviet": "Đại",
+          "hsk": 1,
+          "word_id": "hsk1_53",
+          "meaning_vi": "to, lớn"
+        },
+        {
+          "text": "地上",
+          "pinyin": "dì shàng",
+          "hanviet": "Địa Thướng"
+        },
+        {
+          "text": "代代相传",
+          "pinyin": "dài dài xiāng chuán",
+          "hanviet": "Đại Đại Tương Truyền"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk5_1512",
+    "hsk4_380",
+    "hsk3_831",
+    "hsk3_957",
+    "hsk1_390"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Trong các kỳ thi khoa cử cổ đại, danh hiệu 'Trạng nguyên' dành cho ai?",
+      "options_vi": [
+        "Người đỗ thứ nhất trong kỳ thi Điện (kỳ thi cao nhất do vua đích thân chủ trì)",
+        "Người chạy bộ nhanh nhất",
+        "Người giàu nhất làng"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trạng nguyên là thủ khoa đỗ đầu kỳ thi Điện cao nhất."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Vị trạng nguyên danh tiếng đời Nam Tống nổi tiếng với tấm lòng yêu nước thà chết không khuất phục là ai?",
+      "options_vi": [
+        "Văn Thiên Tường (文天祥)",
+        "Tần Cối",
+        "Viên Thế Khải"
+      ],
+      "answer": 0,
+      "explanation_vi": "Văn Thiên Tường đỗ trạng nguyên và để lại bài thơ 'Chính khí ca' bất hủ."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Cụm từ dân gian nào thường dùng để ca ngợi quá trình học tập kiên trì của sĩ tử xưa?",
+      "options_vi": [
+        "Thập niên hàn song (Mười năm đèn sách khổ luyện bên song cửa)",
+        "Một ngày hái hoa",
+        "Nửa tháng câu cá"
+      ],
+      "answer": 0,
+      "explanation_vi": "'Mười năm hàn song' tượng trưng cho sự miệt mài học hỏi để thành tài."
+    }
+  ]
+}

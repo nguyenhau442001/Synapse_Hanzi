@@ -1,0 +1,752 @@
+{
+  "id": "wanwu_story_034",
+  "chapter_no": 34,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 2,
+  "book_page_start": 334,
+  "book_page_end": 344,
+  "page_display": "Trang 334 - 344",
+  "title": {
+    "zh": "黑匣子：空难“第一见证人”",
+    "vi": "Hộp đen: 'Nhân chứng số một' trong thảm họa hàng không"
+  },
+  "topic": "science_technology",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "📦",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_034.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_034.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 334 - 344 · Thiết bị ghi dữ liệu chuyến bay và âm thanh buồng lái màu cam nổi bật giúp giải mã an toàn bay thế giới.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "每当发生重大飞行事故，搜救人员总是全力以赴寻找失事客机的“黑匣子”。",
+      "pinyin": "Měidāng fāshēng zhòngdà fēixíng shìgù, sōujiù rényuán zǒngshì quánlì-yǐfù xúnzhǎo shīshì kèjī de “hēixiázǐ”.",
+      "vi": "Mỗi khi xảy ra tai nạn bay nghiêm trọng, đội cứu hộ luôn dốc toàn lực tìm kiếm chiếc 'hộp đen' của máy bay gặp nạn.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "每当",
+          "pinyin": "měi dāng",
+          "hanviet": "Mỗi Đương"
+        },
+        {
+          "text": "发生",
+          "pinyin": "fāshēng",
+          "hanviet": "Phát Sinh",
+          "hsk": 3,
+          "word_id": "hsk3_711",
+          "meaning_vi": "phát sinh, xảy ra"
+        },
+        {
+          "text": "重大",
+          "pinyin": "zhòngdà",
+          "hanviet": "Trọng Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1531",
+          "meaning_vi": "to lớn, trọng đại"
+        },
+        {
+          "text": "飞行",
+          "pinyin": "fēixíng",
+          "hanviet": "Phi Hành",
+          "hsk": 5,
+          "word_id": "hsk5_345",
+          "meaning_vi": "bay"
+        },
+        {
+          "text": "事故",
+          "pinyin": "shìgù",
+          "hanviet": "Sự Cố",
+          "hsk": 5,
+          "word_id": "hsk5_1031",
+          "meaning_vi": "sự cố, tai nạn"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "搜救",
+          "pinyin": "sōujiù",
+          "hanviet": "Sưu Cứu",
+          "hsk": 7,
+          "word_id": "hsk7_3881",
+          "meaning_vi": "tìm kiếm cứu nạn"
+        },
+        {
+          "text": "人员",
+          "pinyin": "rényuán",
+          "hanviet": "Nhân Viên",
+          "hsk": 4,
+          "word_id": "hsk4_612",
+          "meaning_vi": "nhân viên, người làm"
+        },
+        {
+          "text": "总是",
+          "pinyin": "zǒngshì",
+          "hanviet": "Tổng Thị",
+          "hsk": 3,
+          "word_id": "hsk3_1073",
+          "meaning_vi": "luôn luôn"
+        },
+        {
+          "text": "全力以赴",
+          "pinyin": "quánlìyǐfù",
+          "hanviet": "Toàn Lực Dĩ Phó",
+          "hsk": 7,
+          "word_id": "hsk7_3365",
+          "meaning_vi": "dốc toàn lực"
+        },
+        {
+          "text": "寻找",
+          "pinyin": "xúnzhǎo",
+          "hanviet": "Tầm Trảo",
+          "hsk": 5,
+          "word_id": "hsk5_1317",
+          "meaning_vi": "tìm kiếm"
+        },
+        {
+          "text": "失事",
+          "pinyin": "shīshì",
+          "hanviet": "Thất Sự",
+          "hsk": 7,
+          "word_id": "hsk7_3655",
+          "meaning_vi": "gặp tai nạn (tàu, xe...)"
+        },
+        {
+          "text": "客机",
+          "pinyin": "kèjī",
+          "hanviet": "Khách Cơ",
+          "hsk": 7,
+          "word_id": "hsk7_2357",
+          "meaning_vi": "máy bay chở khách, phi cơ chở khách"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "黑匣子",
+          "pinyin": "hēi xiá zi",
+          "hanviet": "Hắc Hạp Tử"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "令人意想不到的是，黑匣子的外观实际上并不是黑色，而是极其醒目的亮橙色。",
+      "pinyin": "Lìng rén yìxiǎngbùdào de shì, hēixiázǐ de wàiguān shíjì shàng bìng búshì hēisè, érshì jíqí xǐngmù de liàngchéngsè.",
+      "vi": "Điều bất ngờ là diện mạo thực tế của hộp đen không hề có màu đen, mà được sơn màu cam sáng vô cùng nổi bật.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "令人",
+          "pinyin": "lìng rén",
+          "hanviet": "Lệnh Nhân"
+        },
+        {
+          "text": "意想不到",
+          "pinyin": "yìxiǎng-búdào",
+          "hanviet": "Ý Tưởng Bất Đáo",
+          "hsk": 7,
+          "word_id": "hsk7_4888",
+          "meaning_vi": "không ngờ tới, ngoài dự kiến"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "黑匣子",
+          "pinyin": "hēi xiá zi",
+          "hanviet": "Hắc Hạp Tử"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "外观",
+          "pinyin": "wàiguān",
+          "hanviet": "Ngoại Quán",
+          "hsk": 5,
+          "word_id": "hsk5_1169",
+          "meaning_vi": "diện mạo bên ngoài, ngoại quan"
+        },
+        {
+          "text": "实际上",
+          "pinyin": "shíjìshàng",
+          "hanviet": "Thực Tế Thướng",
+          "hsk": 4,
+          "word_id": "hsk4_660",
+          "meaning_vi": "thực tế, trên thực tế"
+        },
+        {
+          "text": "并",
+          "pinyin": "bìng",
+          "hanviet": "Tinh",
+          "hsk": 4,
+          "word_id": "hsk4_39",
+          "meaning_vi": "và, đồng thời; hoàn toàn (không)"
+        },
+        {
+          "text": "不是",
+          "pinyin": "bú shì",
+          "hanviet": "Bất Thị"
+        },
+        {
+          "text": "黑色",
+          "pinyin": "hēisè",
+          "hanviet": "Hắc Sắc",
+          "hsk": 2,
+          "word_id": "hsk2_353",
+          "meaning_vi": "màu đen"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "而是",
+          "pinyin": "ér shì",
+          "hanviet": "Nhi Thị"
+        },
+        {
+          "text": "极其",
+          "pinyin": "jíqí",
+          "hanviet": "Cực Kì/cực Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_533",
+          "meaning_vi": "cực kỳ, hết sức"
+        },
+        {
+          "text": "醒目",
+          "pinyin": "xǐngmù",
+          "hanviet": "Tỉnh Mục",
+          "hsk": 7,
+          "word_id": "hsk7_4589",
+          "meaning_vi": "bắt mắt; dễ thấy; nổi bật"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "亮",
+          "pinyin": "liàng",
+          "hanviet": "Lượng",
+          "hsk": 4,
+          "word_id": "hsk4_474",
+          "meaning_vi": "sáng"
+        },
+        {
+          "text": "橙色",
+          "pinyin": "chéng sè",
+          "hanviet": "Tranh Sắc"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "二十世纪五十年代，澳大利亚科学家沃伦在客机坠毁调查中萌生了记录飞行数据的构想。",
+      "pinyin": "Èrshí shìjì wǔshí niándài, Àodàlìyà kēxuéjiā Wòlún zài kèjī zhuìhuǐ diàochá zhōng méngshēng le jìlù fēixíng shùjù de gòuxiǎng.",
+      "vi": "Vào thập niên 1950, nhà khoa học người Úc David Warren trong quá trình điều tra máy bay rơi đã nảy ra ý tưởng ghi lại dữ liệu bay.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "二十世纪",
+          "pinyin": "èr shí shì jì",
+          "hanviet": "Nhị Thập Thế Kỷ"
+        },
+        {
+          "text": "五十年代",
+          "pinyin": "wǔ shí nián dài",
+          "hanviet": "Ngũ Thập Niên Đại"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "澳大利亚",
+          "pinyin": "ào dà lì yà",
+          "hanviet": "Úc Đại Lợi Á"
+        },
+        {
+          "text": "科学家",
+          "pinyin": "kē xué jiā",
+          "hanviet": "Khoa Học Gia"
+        },
+        {
+          "text": "沃伦",
+          "pinyin": "wò lún",
+          "hanviet": "Ốc Luân"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "客机",
+          "pinyin": "kèjī",
+          "hanviet": "Khách Cơ",
+          "hsk": 7,
+          "word_id": "hsk7_2357",
+          "meaning_vi": "máy bay chở khách, phi cơ chở khách"
+        },
+        {
+          "text": "坠毁",
+          "pinyin": "zhuì huǐ",
+          "hanviet": "Truỵ Huỷ"
+        },
+        {
+          "text": "调查",
+          "pinyin": "diàochá",
+          "hanviet": "Điều Tra",
+          "hsk": 4,
+          "word_id": "hsk4_162",
+          "meaning_vi": "điều tra"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "萌生",
+          "pinyin": "méng shēng",
+          "hanviet": "Manh Sinh"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "记录",
+          "pinyin": "jìlù",
+          "hanviet": "Ký Lục",
+          "hsk": 5,
+          "word_id": "hsk5_541",
+          "meaning_vi": "ghi chép, kỷ lục"
+        },
+        {
+          "text": "飞行数据",
+          "pinyin": "fēi xíng shù jù",
+          "hanviet": "Phi Hành Sổ Cư"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "构想",
+          "pinyin": "gòuxiǎng",
+          "hanviet": "Cấu Tưởng",
+          "hsk": 7,
+          "word_id": "hsk7_1424",
+          "meaning_vi": "ý tưởng phác thảo, ý niệm thiết kế"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "现代客机通常配备两个黑匣子，分别记录驾驶舱内部语音和上千项飞行运行参数。",
+      "pinyin": "Xiàndài kèjī tōngcháng pèibèi liǎng gè hēixiázǐ, fēnbié jìlù jiàshǐcāng nèibù yǔyīn hé shàngqiān xiàng fēixíng yùnxíng cānshù.",
+      "vi": "Máy bay chở khách hiện đại thường lắp hai hộp đen: một máy ghi giọng nói buồng lái và một máy ghi hàng nghìn tham số vận hành bay.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "现代",
+          "pinyin": "xiàndài",
+          "hanviet": "Hiện Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1239",
+          "meaning_vi": "hiện đại"
+        },
+        {
+          "text": "客机",
+          "pinyin": "kèjī",
+          "hanviet": "Khách Cơ",
+          "hsk": 7,
+          "word_id": "hsk7_2357",
+          "meaning_vi": "máy bay chở khách, phi cơ chở khách"
+        },
+        {
+          "text": "通常",
+          "pinyin": "tōngcháng",
+          "hanviet": "Thông Thường",
+          "hsk": 5,
+          "word_id": "hsk5_1139",
+          "meaning_vi": "thông thường"
+        },
+        {
+          "text": "配备",
+          "pinyin": "pèibèi",
+          "hanviet": "Phối Bị",
+          "hsk": 6,
+          "word_id": "hsk6_978",
+          "meaning_vi": "trang bị"
+        },
+        {
+          "text": "两个",
+          "pinyin": "liǎng gè",
+          "hanviet": "Lưỡng Cá"
+        },
+        {
+          "text": "黑匣子",
+          "pinyin": "hēi xiá zi",
+          "hanviet": "Hắc Hạp Tử"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "分别",
+          "pinyin": "fēnbié",
+          "hanviet": "Phân Biệt",
+          "hsk": 5,
+          "word_id": "hsk5_348",
+          "meaning_vi": "phân biệt, chia tay"
+        },
+        {
+          "text": "记录",
+          "pinyin": "jìlù",
+          "hanviet": "Ký Lục",
+          "hsk": 5,
+          "word_id": "hsk5_541",
+          "meaning_vi": "ghi chép, kỷ lục"
+        },
+        {
+          "text": "驾驶舱",
+          "pinyin": "jià shǐ cāng",
+          "hanviet": "Giá Sử Thương"
+        },
+        {
+          "text": "内部",
+          "pinyin": "nèibù",
+          "hanviet": "Nội Bộ",
+          "hsk": 5,
+          "word_id": "hsk5_795",
+          "meaning_vi": "nội bộ, bên trong"
+        },
+        {
+          "text": "语音",
+          "pinyin": "yǔyīn",
+          "hanviet": "Ngữ Âm",
+          "hsk": 5,
+          "word_id": "hsk5_1420",
+          "meaning_vi": "ngữ âm; tin nhắn thoại, cuộc gọi thoại"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "千项",
+          "pinyin": "qiān xiàng",
+          "hanviet": "Thiên Hạng"
+        },
+        {
+          "text": "飞行",
+          "pinyin": "fēixíng",
+          "hanviet": "Phi Hành",
+          "hsk": 5,
+          "word_id": "hsk5_345",
+          "meaning_vi": "bay"
+        },
+        {
+          "text": "运行",
+          "pinyin": "yùnxíng",
+          "hanviet": "Vận Hành",
+          "hsk": 6,
+          "word_id": "hsk6_1636",
+          "meaning_vi": "vận hành"
+        },
+        {
+          "text": "参数",
+          "pinyin": "cān shù",
+          "hanviet": "Tham Số"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "黑匣子由高强度钛合金外壳保护，能够承受千度高温烈火与深海高压，为改进飞行安全立下了汗马功劳。",
+      "pinyin": "Hēixiázǐ yóu gāoqiángdù tàihéjīn wàiké bǎohù, nénggòu chéngshòu qiāndù gāowēn lièhuǒ yǔ shēnhǎi gāoyā, wèi gǎijìn fēixíng ānquán lìxià le hànmǎ gōngláo.",
+      "vi": "Hộp đen được bảo vệ bởi lớp vỏ titan siêu bền, chịu được lửa cháy nghìn độ và áp lực biển sâu, lập công lớn giúp cải thiện an toàn bay.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "黑匣子",
+          "pinyin": "hēi xiá zi",
+          "hanviet": "Hắc Hạp Tử"
+        },
+        {
+          "text": "由",
+          "pinyin": "yóu",
+          "hanviet": "Do",
+          "hsk": 4,
+          "word_id": "hsk4_884",
+          "meaning_vi": "do, từ"
+        },
+        {
+          "text": "高强度",
+          "pinyin": "gāo qiáng dù",
+          "hanviet": "Cao Cường Độ"
+        },
+        {
+          "text": "钛合金",
+          "pinyin": "tài hé jīn",
+          "hanviet": "Thái Cáp Kim"
+        },
+        {
+          "text": "外壳",
+          "pinyin": "wài ké",
+          "hanviet": "Ngoại Xác"
+        },
+        {
+          "text": "保护",
+          "pinyin": "bǎohù",
+          "hanviet": "Bảo Hộ",
+          "hsk": 4,
+          "word_id": "hsk4_14",
+          "meaning_vi": "bảo vệ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "能够",
+          "pinyin": "nénggòu",
+          "hanviet": "Năng Cú",
+          "hsk": 4,
+          "word_id": "hsk4_532",
+          "meaning_vi": "có thể"
+        },
+        {
+          "text": "承受",
+          "pinyin": "chéngshòu",
+          "hanviet": "Thừa Thọ",
+          "hsk": 5,
+          "word_id": "hsk5_147",
+          "meaning_vi": "chịu đựng, gánh chịu"
+        },
+        {
+          "text": "千度",
+          "pinyin": "qiān dù",
+          "hanviet": "Thiên Độ"
+        },
+        {
+          "text": "高温",
+          "pinyin": "gāowēn",
+          "hanviet": "Cao Ôn",
+          "hsk": 4,
+          "word_id": "hsk4_239",
+          "meaning_vi": "nhiệt độ cao"
+        },
+        {
+          "text": "烈火",
+          "pinyin": "liè huǒ",
+          "hanviet": "Liệt Hoả"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "深海",
+          "pinyin": "shēn hǎi",
+          "hanviet": "Thâm Hải"
+        },
+        {
+          "text": "高压",
+          "pinyin": "gāoyā",
+          "hanviet": "Cao Áp",
+          "hsk": 7,
+          "word_id": "hsk7_1320",
+          "meaning_vi": "áp lực cao, điện áp cao"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "为",
+          "pinyin": "wèi",
+          "hanviet": "Vi",
+          "hsk": 3,
+          "word_id": "hsk3_954",
+          "meaning_vi": "vì, cho"
+        },
+        {
+          "text": "改进",
+          "pinyin": "gǎijìn",
+          "hanviet": "Cải Tiến",
+          "hsk": 5,
+          "word_id": "hsk5_377",
+          "meaning_vi": "cải tiến"
+        },
+        {
+          "text": "飞行",
+          "pinyin": "fēixíng",
+          "hanviet": "Phi Hành",
+          "hsk": 5,
+          "word_id": "hsk5_345",
+          "meaning_vi": "bay"
+        },
+        {
+          "text": "安全",
+          "pinyin": "ānquán",
+          "hanviet": "An Toàn",
+          "hsk": 3,
+          "word_id": "hsk3_605",
+          "meaning_vi": "an toàn"
+        },
+        {
+          "text": "立下",
+          "pinyin": "lì xià",
+          "hanviet": "Lập Hạ"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "汗马功劳",
+          "pinyin": "hànmǎ-gōngláo",
+          "hanviet": "Hãn Mã Công Lao",
+          "hsk": 7,
+          "word_id": "hsk7_1587",
+          "meaning_vi": "công lao to lớn, chiến công hãn mã"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk3_711",
+    "hsk4_162",
+    "hsk4_14",
+    "hsk3_605"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Vỏ ngoài của hộp đen máy bay thực tế có màu gì?",
+      "options_vi": [
+        "Màu cam sáng dễ nhận diện",
+        "Màu đen tuyền",
+        "Màu xám tro"
+      ],
+      "answer": 0,
+      "explanation_vi": "Hộp đen được sơn màu cam dạ quang để đội cứu hộ dễ tìm kiếm."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Một chiếc máy bay thương mại thông thường mang theo mấy chiếc hộp đen?",
+      "options_vi": [
+        "2 chiếc (ghi âm buồng lái và ghi dữ liệu bay)",
+        "10 chiếc",
+        "Không cần mang hộp nào"
+      ],
+      "answer": 0,
+      "explanation_vi": "Bao gồm CVR (ghi âm buồng lái) và FDR (ghi dữ liệu kỹ thuật bay)."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Hộp đen được chế tạo để chịu đựng điều kiện khắc nghiệt nào?",
+      "options_vi": [
+        "Va đập cực mạnh, nhiệt độ lửa nghìn độ và áp suất biển sâu",
+        "Chỉ dùng trong phòng điều hòa",
+        "Không được chạm vào nước"
+      ],
+      "answer": 0,
+      "explanation_vi": "Hộp đen bọc hợp kim chịu nhiệt và va đập siêu cấp để bảo toàn dữ liệu sau tai nạn."
+    }
+  ]
+}

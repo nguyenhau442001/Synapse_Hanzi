@@ -1,0 +1,849 @@
+{
+  "id": "wanwu_story_083",
+  "chapter_no": 83,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 4,
+  "book_page_start": 843,
+  "book_page_end": 853,
+  "page_display": "Trang 843 - 853",
+  "title": {
+    "zh": "战马：千乘之国与汗血宝马",
+    "vi": "Chiến mã: Ngàn cỗ chiến xa và truyền kỳ Ngựa Hãn Huyết"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🐎",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_083.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_083.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 843 - 853 · Tầm vóc kỵ binh trên chiến trường cổ đại và cuộc thám hiểm Tây Vực tìm ngựa Hãn Huyết thời Hán Vũ Đế.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "在火器问世之前的冷兵器战争时代，强健敏捷的战马是决定军队战斗力与国家安危的核心支柱。",
+      "pinyin": "Zài huǒqì wènshì zhīqián de lěngbīngqì zhànzhēng shídài, qiángjiàn mǐnjié de zhànmǎ shì juédìng jūnduì zhàndòulì yǔ guójiā ānwēi de héxīn zhīzhù.",
+      "vi": "Trước khi hỏa khí ra đời, chiến mã dũng mãnh là trụ cột quyết định sức mạnh chiến đấu của quân đội và sự an nguy bờ cõi.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "火器",
+          "pinyin": "huǒ qì",
+          "hanviet": "Hoả Khí"
+        },
+        {
+          "text": "问世",
+          "pinyin": "wènshì",
+          "hanviet": "Vấn Thế",
+          "hsk": 7,
+          "word_id": "hsk7_4291",
+          "meaning_vi": "ra mắt, ra đời"
+        },
+        {
+          "text": "之前",
+          "pinyin": "zhīqián",
+          "hanviet": "Chi Tiền",
+          "hsk": 4,
+          "word_id": "hsk4_943",
+          "meaning_vi": "trước, trước khi"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "冷兵器",
+          "pinyin": "lěng bīng qì",
+          "hanviet": "Lạnh Binh Khí"
+        },
+        {
+          "text": "战争时代",
+          "pinyin": "zhàn zhēng shí dài",
+          "hanviet": "Chiến Tranh Thời Đại"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "强健",
+          "pinyin": "qiáng jiàn",
+          "hanviet": "Cường Kiện"
+        },
+        {
+          "text": "敏捷",
+          "pinyin": "mǐnjié",
+          "hanviet": "Mẫn Tiệp",
+          "hsk": 7,
+          "word_id": "hsk7_2836",
+          "meaning_vi": "nhanh nhẹn, mau lẹ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "战马",
+          "pinyin": "zhàn mǎ",
+          "hanviet": "Chiến Mã"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "决定",
+          "pinyin": "juédìng",
+          "hanviet": "Quyết Định",
+          "hsk": 3,
+          "word_id": "hsk3_808",
+          "meaning_vi": "quyết định"
+        },
+        {
+          "text": "军队",
+          "pinyin": "jūnduì",
+          "hanviet": "Quân Đội",
+          "hsk": 6,
+          "word_id": "hsk6_757",
+          "meaning_vi": "quân đội"
+        },
+        {
+          "text": "战斗力",
+          "pinyin": "zhàn dòu lì",
+          "hanviet": "Chiến Đẩu Lực"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "国家",
+          "pinyin": "guójiā",
+          "hanviet": "Quốc Gia",
+          "hsk": 3,
+          "word_id": "hsk3_749",
+          "meaning_vi": "quốc gia"
+        },
+        {
+          "text": "安危",
+          "pinyin": "ān wēi",
+          "hanviet": "An Nguy"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "核心",
+          "pinyin": "héxīn",
+          "hanviet": "Hạch Tâm",
+          "hsk": 6,
+          "word_id": "hsk6_542",
+          "meaning_vi": "hạt nhân, trọng tâm"
+        },
+        {
+          "text": "支柱",
+          "pinyin": "zhīzhù",
+          "hanviet": "Chi Trụ",
+          "hsk": 7,
+          "word_id": "hsk7_5287",
+          "meaning_vi": "trụ cột, cột trụ"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "春秋战国时期，诸侯国的综合国力常以拥有四匹马拉动的‘战车’数量来衡量，称作‘千乘之国’。",
+      "pinyin": "Chūnqiū-Zhànguó shíqī, zhūhóuguó de zōnghé guólì cháng yǐ yǒngyǒu sì pǐ mǎ lādòng de ‘zhànchē’ shùliàng lái héngliáng, chēng zuò ‘qiān shèng zhī guó’.",
+      "vi": "Thời Xuân Thu Chiến Quốc, thực lực chư hầu thường được đo bằng số lượng chiến xa bốn ngựa kéo, gọi là 'Thiên thừa chi quốc'.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "春秋战国",
+          "pinyin": "chūn qiū zhàn guó",
+          "hanviet": "Xuân Thu Chiến Quốc"
+        },
+        {
+          "text": "时期",
+          "pinyin": "shíqī",
+          "hanviet": "Thời Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_1016",
+          "meaning_vi": "thời kỳ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "诸侯国",
+          "pinyin": "zhū hóu guó",
+          "hanviet": "Chư Hầu Quốc"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "综合国力",
+          "pinyin": "zōng hé guó lì",
+          "hanviet": "Tống Cáp Quốc Lực"
+        },
+        {
+          "text": "常",
+          "pinyin": "cháng",
+          "hanviet": "Thường",
+          "hsk": 3,
+          "word_id": "hsk3_652",
+          "meaning_vi": "thường, hay"
+        },
+        {
+          "text": "以",
+          "pinyin": "yǐ",
+          "hanviet": "Dĩ",
+          "hsk": 5,
+          "word_id": "hsk5_1362",
+          "meaning_vi": "bằng, dùng"
+        },
+        {
+          "text": "拥有",
+          "pinyin": "yōngyǒu",
+          "hanviet": "Ủng Hữu",
+          "hsk": 5,
+          "word_id": "hsk5_1389",
+          "meaning_vi": "sở hữu, có"
+        },
+        {
+          "text": "四匹",
+          "pinyin": "sì pǐ",
+          "hanviet": "Tứ Thất"
+        },
+        {
+          "text": "马",
+          "pinyin": "mǎ",
+          "hanviet": "Mã",
+          "hsk": 3,
+          "word_id": "hsk3_846",
+          "meaning_vi": "con ngựa"
+        },
+        {
+          "text": "拉动",
+          "pinyin": "lādòng",
+          "hanviet": "Lạp Động",
+          "hsk": 7,
+          "word_id": "hsk7_2460",
+          "meaning_vi": "thúc đẩy, kéo theo (tăng trưởng)"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "战车",
+          "pinyin": "zhàn chē",
+          "hanviet": "Chiến Xa"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "数量",
+          "pinyin": "shùliàng",
+          "hanviet": "Số Lượng",
+          "hsk": 4,
+          "word_id": "hsk4_692",
+          "meaning_vi": "số lượng"
+        },
+        {
+          "text": "来",
+          "pinyin": "lái",
+          "hanviet": "Lai",
+          "hsk": 1,
+          "word_id": "hsk1_533",
+          "meaning_vi": "đến, tới"
+        },
+        {
+          "text": "衡量",
+          "pinyin": "héngliáng",
+          "hanviet": "Hành Lượng",
+          "hsk": 6,
+          "word_id": "hsk6_549",
+          "meaning_vi": "đo lường, cân nhắc"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "称作",
+          "pinyin": "chēngzuò",
+          "hanviet": "Xứng Tác",
+          "hsk": 6,
+          "word_id": "hsk6_155",
+          "meaning_vi": "được gọi là, xem như là"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "千乘之国",
+          "pinyin": "qiān shèng zhī guó",
+          "hanviet": "Thiên Thừa Chi Quốc"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "汉武帝为了彻底战胜北方草原上骠悍的匈奴骑兵，曾两次派遣大军远征大宛国寻求传说中的‘天马’。",
+      "pinyin": "Hàn Wǔdì wèile chèdǐ zhànshèng běifāng cǎoyuán shàng biàohàn de Xiōngnú qíbīng, céng liǎng cì pàiqiǎn dàjūn yuǎnzhēng Dàyuānguó xúnqiú chuánshuō zhōng de ‘Tiānmǎ’.",
+      "vi": "Hán Vũ Đế nhằm đánh bại kỵ binh Hung Nô dũng mãnh, đã hai lần cử đại quân viễn chinh Đại Uyển tìm giống ngựa 'Thiên mã'.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "汉武帝",
+          "pinyin": "hàn wǔ dì",
+          "hanviet": "Hán Võ Đế"
+        },
+        {
+          "text": "为了",
+          "pinyin": "wèile",
+          "hanviet": "Vi Liễu",
+          "hsk": 3,
+          "word_id": "hsk3_955",
+          "meaning_vi": "để (mục đích)"
+        },
+        {
+          "text": "彻底",
+          "pinyin": "chèdǐ",
+          "hanviet": "Triệt Để",
+          "hsk": 5,
+          "word_id": "hsk5_129",
+          "meaning_vi": "triệt để"
+        },
+        {
+          "text": "战胜",
+          "pinyin": "zhànshèng",
+          "hanviet": "Chiến Thắng",
+          "hsk": 6,
+          "word_id": "hsk6_1662",
+          "meaning_vi": "thắng"
+        },
+        {
+          "text": "北方",
+          "pinyin": "běifāng",
+          "hanviet": "Bắc Phương",
+          "hsk": 3,
+          "word_id": "hsk3_618",
+          "meaning_vi": "phía bắc"
+        },
+        {
+          "text": "草原",
+          "pinyin": "cǎoyuán",
+          "hanviet": "Thảo Nguyên",
+          "hsk": 6,
+          "word_id": "hsk6_110",
+          "meaning_vi": "đồng cỏ"
+        },
+        {
+          "text": "上骠悍",
+          "pinyin": "shàng biāo hàn",
+          "hanviet": "Thướng Phiếu Hãn"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "匈奴",
+          "pinyin": "xiōng nú",
+          "hanviet": "Hung Nô"
+        },
+        {
+          "text": "骑兵",
+          "pinyin": "qí bīng",
+          "hanviet": "Kị Binh/kỵ Binh"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "曾",
+          "pinyin": "céng",
+          "hanviet": "Tằng",
+          "hsk": 5,
+          "word_id": "hsk5_97",
+          "meaning_vi": "từng, đã từng"
+        },
+        {
+          "text": "两次",
+          "pinyin": "liǎng cì",
+          "hanviet": "Lưỡng Thứ"
+        },
+        {
+          "text": "派遣",
+          "pinyin": "pàiqiǎn",
+          "hanviet": "Phái Khiển",
+          "hsk": 7,
+          "word_id": "hsk7_3009",
+          "meaning_vi": "cử đi, điều đi"
+        },
+        {
+          "text": "大军",
+          "pinyin": "dà jūn",
+          "hanviet": "Đại Quân"
+        },
+        {
+          "text": "远征",
+          "pinyin": "yuǎn zhēng",
+          "hanviet": "Viễn Chinh"
+        },
+        {
+          "text": "大宛国",
+          "pinyin": "dà wǎn guó",
+          "hanviet": "Đại Uyển Quốc"
+        },
+        {
+          "text": "寻求",
+          "pinyin": "xúnqiú",
+          "hanviet": "Tầm Cầu",
+          "hsk": 6,
+          "word_id": "hsk6_1498",
+          "meaning_vi": "tìm kiếm, mưu cầu"
+        },
+        {
+          "text": "传说",
+          "pinyin": "chuánshuō",
+          "hanviet": "Truyền Thuyết",
+          "hsk": 5,
+          "word_id": "hsk5_186",
+          "meaning_vi": "truyền thuyết"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "天马",
+          "pinyin": "tiān mǎ",
+          "hanviet": "Thiên Mã"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "这种奔跑后皮肤流出如鲜血般红色汗液的‘汗血宝马’耐力极其持久，极大提升了汉军骑兵的机动作战能力。",
+      "pinyin": "Zhè zhǒng bēnpǎo hòu pífū liúchū rú xiānxuè bān hóngsè hànyè de ‘hànxuè bǎomǎ’ nàilì jíqí chījiǔ, jídà tíshēng le Hànjūn qíbīng de jīdòng zuòzhàn nénglì.",
+      "vi": "Giống ngựa Hãn Huyết khi phi nước đại toát mồ hôi đỏ như máu, sức bền dẻo dai phi thường, nâng tầm khả năng cơ động của kỵ binh Hán.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "这种",
+          "pinyin": "zhè zhǒng",
+          "hanviet": "Giá Chủng"
+        },
+        {
+          "text": "奔跑",
+          "pinyin": "bēnpǎo",
+          "hanviet": "Bôn Bào",
+          "hsk": 6,
+          "word_id": "hsk6_44",
+          "meaning_vi": "chạy nhanh, phi nước đại"
+        },
+        {
+          "text": "后",
+          "pinyin": "hòu",
+          "hanviet": "Hậu",
+          "hsk": 1,
+          "word_id": "hsk1_524",
+          "meaning_vi": "sau"
+        },
+        {
+          "text": "皮肤",
+          "pinyin": "pífū",
+          "hanviet": "Bì Phu",
+          "hsk": 4,
+          "word_id": "hsk4_551",
+          "meaning_vi": "da"
+        },
+        {
+          "text": "流出",
+          "pinyin": "liú chū",
+          "hanviet": "Lưu Xuất"
+        },
+        {
+          "text": "如",
+          "pinyin": "rú",
+          "hanviet": "Như",
+          "hsk": 5,
+          "word_id": "hsk5_932",
+          "meaning_vi": "chẳng hạn như"
+        },
+        {
+          "text": "鲜血",
+          "pinyin": "xiānxuè",
+          "hanviet": "Tiên Huyết",
+          "hsk": 7,
+          "word_id": "hsk7_4436",
+          "meaning_vi": "máu tươi; dòng máu nóng"
+        },
+        {
+          "text": "般",
+          "pinyin": "bān",
+          "hanviet": "Ban"
+        },
+        {
+          "text": "红色",
+          "pinyin": "hóngsè",
+          "hanviet": "Hồng Sắc",
+          "hsk": 2,
+          "word_id": "hsk2_355",
+          "meaning_vi": "màu đỏ"
+        },
+        {
+          "text": "汗液",
+          "pinyin": "hàn yè",
+          "hanviet": "Hãn Dịch"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "汗血",
+          "pinyin": "hàn xuè",
+          "hanviet": "Hãn Huyết"
+        },
+        {
+          "text": "宝马",
+          "pinyin": "bǎo mǎ",
+          "hanviet": "Bảo Mã"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "耐力",
+          "pinyin": "nài lì",
+          "hanviet": "Nại Lực"
+        },
+        {
+          "text": "极其",
+          "pinyin": "jíqí",
+          "hanviet": "Cực Kì/cực Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_533",
+          "meaning_vi": "cực kỳ, hết sức"
+        },
+        {
+          "text": "持久",
+          "pinyin": "chíjiǔ",
+          "hanviet": "Trì Cửu",
+          "hsk": 6,
+          "word_id": "hsk6_169",
+          "meaning_vi": "lâu dài, bền lâu"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "极大",
+          "pinyin": "jí dà",
+          "hanviet": "Cực Đại"
+        },
+        {
+          "text": "提升",
+          "pinyin": "tíshēng",
+          "hanviet": "Đề Thăng",
+          "hsk": 5,
+          "word_id": "hsk5_1117",
+          "meaning_vi": "nâng cao, cải thiện, đề bạt"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "汉军",
+          "pinyin": "hàn jūn",
+          "hanviet": "Hán Quân"
+        },
+        {
+          "text": "骑兵",
+          "pinyin": "qí bīng",
+          "hanviet": "Kị Binh/kỵ Binh"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "机动",
+          "pinyin": "jīdòng",
+          "hanviet": "Cơ Động",
+          "hsk": 7,
+          "word_id": "hsk7_1841",
+          "meaning_vi": "cơ động, linh động"
+        },
+        {
+          "text": "作战",
+          "pinyin": "zuòzhàn",
+          "hanviet": "Tác Chiến",
+          "hsk": 7,
+          "word_id": "hsk7_5598",
+          "meaning_vi": "tác chiến, chiến đấu"
+        },
+        {
+          "text": "能力",
+          "pinyin": "nénglì",
+          "hanviet": "Năng Lực",
+          "hsk": 4,
+          "word_id": "hsk4_533",
+          "meaning_vi": "năng lực"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "战马的嘶鸣与铁蹄踏破黄沙，谱写了一曲曲保家卫国、波澜壮阔的英雄史诗。",
+      "pinyin": "Zhànmǎ de sīmíng yǔ tiětí tàpò huángshā, pǔxiě le yìqǔqǔ bǎojiā-wèiguó, bōlán-zhuàngkuò de yīngxióng shǐshī.",
+      "vi": "Tiếng hí vang và vó ngựa đạp cát vàng đã dệt nên những bản anh hùng ca dựng nước và giữ nước oanh liệt ngàn thu.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "战马",
+          "pinyin": "zhàn mǎ",
+          "hanviet": "Chiến Mã"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "嘶鸣",
+          "pinyin": "sī míng",
+          "hanviet": "Tê Minh"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "铁蹄",
+          "pinyin": "tiě tí",
+          "hanviet": "Thiết Đề"
+        },
+        {
+          "text": "踏破",
+          "pinyin": "tà pò",
+          "hanviet": "Đạp Phá"
+        },
+        {
+          "text": "黄沙",
+          "pinyin": "huáng shā",
+          "hanviet": "Hoàng Sa"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "谱写",
+          "pinyin": "pǔ xiě",
+          "hanviet": "Phả Tả"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "一曲曲",
+          "pinyin": "yī qū qū",
+          "hanviet": "Nhất Khúc Khúc"
+        },
+        {
+          "text": "保家卫国",
+          "pinyin": "bǎo jiā wèi guó",
+          "hanviet": "Bảo Gia Vệ Quốc"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "波澜壮阔",
+          "pinyin": "bō lán zhuàng kuò",
+          "hanviet": "Ba Lan Tráng Khoát"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "英雄",
+          "pinyin": "yīngxióng",
+          "hanviet": "Anh Hùng",
+          "hsk": 6,
+          "word_id": "hsk6_1587",
+          "meaning_vi": "anh hùng"
+        },
+        {
+          "text": "史诗",
+          "pinyin": "shǐ shī",
+          "hanviet": "Sử Thi"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk3_808",
+    "hsk4_692",
+    "hsk4_533",
+    "hsk4_14",
+    "hsk1_390"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Cụm từ 'Thiên thừa chi quốc' (千乘之国) thời Xuân Thu dùng chiến xa ngựa kéo để đo lường điều gì?",
+      "options_vi": [
+        "Thực lực kinh tế và quân sự hùng mạnh của một nước chư hầu",
+        "Số lượng lừa nuôi trong thành",
+        "Số chiếc xe kéo rác"
+      ],
+      "answer": 0,
+      "explanation_vi": "Mỗi chiến xa có 4 ngựa kéo và lính hộ vệ, 1000 cỗ xe tượng trưng cho cường quốc."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Hán Vũ Đế cử quân viễn chinh Tây Vực đến nước Đại Uyển để tìm giống ngựa quý nào?",
+      "options_vi": [
+        "Ngựa Hãn Huyết (汗血宝马 / Thiên mã)",
+        "Ngựa vằn châu Phi",
+        "Ngựa gỗ đồ chơi"
+      ],
+      "answer": 0,
+      "explanation_vi": "Ngựa Hãn Huyết chạy nhanh, sức bền phi thường được phong làm Thiên Mã."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Vai trò cốt lõi của ngựa chiến trên chiến trường trước thời đại súng ống là gì?",
+      "options_vi": [
+        "Tạo tốc độ cơ động thần tốc và sức mạnh càn quét kỵ binh",
+        "Chỉ để kéo cày",
+        "Làm thú cưng ngắm hoa"
+      ],
+      "answer": 0,
+      "explanation_vi": "Kỵ binh là lực lượng xung kích then chốt quyết định thắng bại trận đánh."
+    }
+  ]
+}

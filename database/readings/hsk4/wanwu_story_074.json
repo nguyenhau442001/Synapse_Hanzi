@@ -1,0 +1,877 @@
+{
+  "id": "wanwu_story_074",
+  "chapter_no": 74,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 4,
+  "book_page_start": 762,
+  "book_page_end": 772,
+  "page_display": "Trang 762 - 772",
+  "title": {
+    "zh": "珠算：拨动之间有乾坤",
+    "vi": "Bàn tính gảy: Vũ điệu hạt châu xoay chuyển càn khôn"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🧮",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_074.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_074.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 762 - 772 · 'Máy tính cơ học' sớm nhất của phương Đông, thuật toán gảy hạt châu và Di sản văn hóa phi vật thể nhân loại.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "算盘结构规整，梁上二珠、梁下五珠，被西方学者誉为‘世界上最早的便携式计算机’。",
+      "pinyin": "Suànpán jiégòu guīzhěng, liángshàng èr zhū, liángxià wǔ zhū, bèi xīfāng xuézhě yù wéi ‘shìjiè shàng zuì zǎo de biànxiéshì jìsuànjī’.",
+      "vi": "Bàn tính có cấu trúc vuông vắn, trên thanh ngang hai hạt, dưới thanh năm hạt, được các học giả phương Tây xưng tụng là 'chiếc máy tính xách tay sớm nhất thế giới'.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "算盘",
+          "pinyin": "suànpán",
+          "hanviet": "Toán Bàn",
+          "hsk": 7,
+          "word_id": "hsk7_3901",
+          "meaning_vi": "toan tính; bàn tính"
+        },
+        {
+          "text": "结构",
+          "pinyin": "jiégòu",
+          "hanviet": "Kết Cấu",
+          "hsk": 5,
+          "word_id": "hsk5_601",
+          "meaning_vi": "cấu trúc"
+        },
+        {
+          "text": "规整",
+          "pinyin": "guī zhěng",
+          "hanviet": "Quy Chỉnh"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "梁上",
+          "pinyin": "liáng shàng",
+          "hanviet": "Lương Thướng"
+        },
+        {
+          "text": "二珠",
+          "pinyin": "èr zhū",
+          "hanviet": "Nhị Châu"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "梁下",
+          "pinyin": "liáng xià",
+          "hanviet": "Lương Hạ"
+        },
+        {
+          "text": "五珠",
+          "pinyin": "wǔ zhū",
+          "hanviet": "Ngũ Châu"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "西方",
+          "pinyin": "xīfāng",
+          "hanviet": "Tây Phương",
+          "hsk": 3,
+          "word_id": "hsk3_961",
+          "meaning_vi": "phía tây; phương Tây"
+        },
+        {
+          "text": "学者",
+          "pinyin": "xuézhě",
+          "hanviet": "Học Giả",
+          "hsk": 5,
+          "word_id": "hsk5_1314",
+          "meaning_vi": "học giả, nhà nghiên cứu"
+        },
+        {
+          "text": "誉为",
+          "pinyin": "yù wéi",
+          "hanviet": "Dự Vi"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "世界",
+          "pinyin": "shìjiè",
+          "hanviet": "Thế Giới",
+          "hsk": 3,
+          "word_id": "hsk3_916",
+          "meaning_vi": "thế giới"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "最早",
+          "pinyin": "zuì zǎo",
+          "hanviet": "Tối Tảo"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "便携式",
+          "pinyin": "biànxiéshì",
+          "hanviet": "Tiện Huề Thức",
+          "hsk": 7,
+          "word_id": "hsk7_226",
+          "meaning_vi": "loại xách tay, di động, tiện mang theo"
+        },
+        {
+          "text": "计算机",
+          "pinyin": "jìsuànjī",
+          "hanviet": "Kế Toán Cơ",
+          "hsk": 5,
+          "word_id": "hsk5_548",
+          "meaning_vi": "máy tính"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "北宋著名画作《清明上河图》中，一家药铺的柜台上便清晰描绘着一把正在使用的古代算盘。",
+      "pinyin": "Běisòng zhùmíng huàzuò 《Qīngmíng Shànghétú》 zhōng, yì jiā yàopù de guìtái shàng biàn qīngxī miáohuì zhe yì bǎ zhèngzài shǐyòng de gǔdài suànpán.",
+      "vi": "Trong danh họa 'Thanh Minh Thượng Hà Đồ' thời Bắc Tống, trên quầy hiệu thuốc đã vẽ rõ nét chiếc bàn tính cổ đang được sử dụng.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "北宋",
+          "pinyin": "běi sòng",
+          "hanviet": "Bắc Tống"
+        },
+        {
+          "text": "著名",
+          "pinyin": "zhùmíng",
+          "hanviet": "Trước Danh",
+          "hsk": 4,
+          "word_id": "hsk4_967",
+          "meaning_vi": "nổi tiếng"
+        },
+        {
+          "text": "画作",
+          "pinyin": "huà zuò",
+          "hanviet": "Hoạ Tác"
+        },
+        {
+          "text": "《"
+        },
+        {
+          "text": "清明上河图",
+          "pinyin": "qīng míng shàng hé tú",
+          "hanviet": "Thanh Minh Thướng Hà Đồ"
+        },
+        {
+          "text": "》"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "一家",
+          "pinyin": "yī jiā",
+          "hanviet": "Nhất Gia"
+        },
+        {
+          "text": "药铺",
+          "pinyin": "yào pù",
+          "hanviet": "Dược Phô"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "柜台",
+          "pinyin": "guìtái",
+          "hanviet": "Quỹ Đài",
+          "hsk": 7,
+          "word_id": "hsk7_1532",
+          "meaning_vi": "quầy hàng, quầy thu ngân"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "便",
+          "pinyin": "biàn",
+          "hanviet": "Tiện",
+          "hsk": 5,
+          "word_id": "hsk5_56",
+          "meaning_vi": "thì, liền (liên từ)"
+        },
+        {
+          "text": "清晰",
+          "pinyin": "qīngxī",
+          "hanviet": "Thanh Tích",
+          "hsk": 6,
+          "word_id": "hsk6_1062",
+          "meaning_vi": "rõ ràng, rành mạch"
+        },
+        {
+          "text": "描绘",
+          "pinyin": "miáohuì",
+          "hanviet": "Miêu Hội",
+          "hsk": 6,
+          "word_id": "hsk6_914",
+          "meaning_vi": "miêu tả, mô tả"
+        },
+        {
+          "text": "着",
+          "pinyin": "zhe",
+          "hanviet": "Trước",
+          "hsk": 2,
+          "word_id": "hsk2_490",
+          "meaning_vi": "đang (trợ từ)"
+        },
+        {
+          "text": "一把",
+          "pinyin": "yī bǎ",
+          "hanviet": "Nhất Bả"
+        },
+        {
+          "text": "正在",
+          "pinyin": "zhèngzài",
+          "hanviet": "Chinh Tại",
+          "hsk": 1,
+          "word_id": "hsk1_404",
+          "meaning_vi": "đang"
+        },
+        {
+          "text": "使用",
+          "pinyin": "shǐyòng",
+          "hanviet": "Sử Dụng",
+          "hsk": 4,
+          "word_id": "hsk4_668",
+          "meaning_vi": "sử dụng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "算盘",
+          "pinyin": "suànpán",
+          "hanviet": "Toán Bàn",
+          "hsk": 7,
+          "word_id": "hsk7_3901",
+          "meaning_vi": "toan tính; bàn tính"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "珠算口诀简练押韵，手指上下翻飞拨动算珠，加减乘除甚至开方运算都能以惊人的速度瞬间完成。",
+      "pinyin": "Zhūsuàn kǒujué jiǎnliàn yāyùn, shǒuzhǐ shàngxià fānfēi bōdòng suànzhū, jiā-jiǎn-chéng-chú shènzhì kāifāng yùnsuàn dōu néng yǐ jīngrén de sùdù shùnjiān wánchéng.",
+      "vi": "Khẩu quyết tính toán ngắn gọn bắt vần, ngón tay thoăn thoắt gảy hạt, cộng trừ nhân chia hay khai căn đều hoàn thành chớp mắt.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "珠算",
+          "pinyin": "zhū suàn",
+          "hanviet": "Châu Toán"
+        },
+        {
+          "text": "口诀",
+          "pinyin": "kǒu jué",
+          "hanviet": "Khẩu Quyết"
+        },
+        {
+          "text": "简练",
+          "pinyin": "jiǎnliàn",
+          "hanviet": "Giản Luyện",
+          "hsk": 7,
+          "word_id": "hsk7_1980",
+          "meaning_vi": "cô đọng, khúc chiết, súc tích"
+        },
+        {
+          "text": "押韵",
+          "pinyin": "yā yùn",
+          "hanviet": "Áp Vận"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "手指",
+          "pinyin": "shǒuzhǐ",
+          "hanviet": "Thủ Chỉ",
+          "hsk": 5,
+          "word_id": "hsk5_1053",
+          "meaning_vi": "ngón tay"
+        },
+        {
+          "text": "上下",
+          "pinyin": "shàngxià",
+          "hanviet": "Thướng Hạ",
+          "hsk": 5,
+          "word_id": "hsk5_965",
+          "meaning_vi": "lên và xuống"
+        },
+        {
+          "text": "翻飞",
+          "pinyin": "fān fēi",
+          "hanviet": "Phiên Phi"
+        },
+        {
+          "text": "拨动",
+          "pinyin": "bō dòng",
+          "hanviet": "Bát Động"
+        },
+        {
+          "text": "算珠",
+          "pinyin": "suàn zhū",
+          "hanviet": "Toán Châu"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "加减乘除",
+          "pinyin": "jiā jiǎn chéng chú",
+          "hanviet": "Gia Giảm Thừa Trừ"
+        },
+        {
+          "text": "甚至",
+          "pinyin": "shènzhì",
+          "hanviet": "Thậm Chí",
+          "hsk": 4,
+          "word_id": "hsk4_645",
+          "meaning_vi": "thậm chí"
+        },
+        {
+          "text": "开方",
+          "pinyin": "kāi fāng",
+          "hanviet": "Khai Phương"
+        },
+        {
+          "text": "运算",
+          "pinyin": "yùnsuàn",
+          "hanviet": "Vận Toán",
+          "hsk": 7,
+          "word_id": "hsk7_5081",
+          "meaning_vi": "tính toán"
+        },
+        {
+          "text": "都",
+          "pinyin": "dōu",
+          "hanviet": "Đô",
+          "hsk": 1,
+          "word_id": "hsk1_76",
+          "meaning_vi": "đều"
+        },
+        {
+          "text": "能",
+          "pinyin": "néng",
+          "hanviet": "Năng",
+          "hsk": 1,
+          "word_id": "hsk1_212",
+          "meaning_vi": "có thể"
+        },
+        {
+          "text": "以",
+          "pinyin": "yǐ",
+          "hanviet": "Dĩ",
+          "hsk": 5,
+          "word_id": "hsk5_1362",
+          "meaning_vi": "bằng, dùng"
+        },
+        {
+          "text": "惊人",
+          "pinyin": "jīngrén",
+          "hanviet": "Kinh Nhân",
+          "hsk": 6,
+          "word_id": "hsk6_715",
+          "meaning_vi": "đáng kinh ngạc, kinh người"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "速度",
+          "pinyin": "sùdù",
+          "hanviet": "Tốc Độ",
+          "hsk": 4,
+          "word_id": "hsk4_704",
+          "meaning_vi": "tốc độ"
+        },
+        {
+          "text": "瞬间",
+          "pinyin": "shùnjiān",
+          "hanviet": "Thuấn Gian",
+          "hsk": 6,
+          "word_id": "hsk6_1238",
+          "meaning_vi": "khoảnh khắc, trong tức khắc"
+        },
+        {
+          "text": "完成",
+          "pinyin": "wánchéng",
+          "hanviet": "Hoàn Thành",
+          "hsk": 3,
+          "word_id": "hsk3_947",
+          "meaning_vi": "hoàn thành"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "二十世纪中叶，在研发中国第一颗原子弹的艰苦岁月里，科学家们正是用算盘核验了海量的关键数据。",
+      "pinyin": "Èrshí shìjì zhōngyè, zài yánfā Zhōngguó dì-yī kē yuánzǐdàn de jiānkǔ suìyuè lǐ, kēxuéjiāmen zhèngshì yòng suànpán héyàn le hǎiliàng de guānjiàn shùjù.",
+      "vi": "Giữa thế kỷ 20, trong những năm tháng gian khó nghiên cứu bom nguyên tử, các nhà khoa học đã dùng chính chiếc bàn tính để kiểm tra lượng dữ liệu khổng lồ.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "二十世纪",
+          "pinyin": "èr shí shì jì",
+          "hanviet": "Nhị Thập Thế Kỷ"
+        },
+        {
+          "text": "中叶",
+          "pinyin": "zhōngyè",
+          "hanviet": "Trung Hiệp",
+          "hsk": 7,
+          "word_id": "hsk7_5365",
+          "meaning_vi": "giữa thời kỳ, trung diệp"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "研发",
+          "pinyin": "yánfā",
+          "hanviet": "Nghiên Phát",
+          "hsk": 5,
+          "word_id": "hsk5_1327",
+          "meaning_vi": "nghiên cứu và phát triển (R&D)"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "第一颗",
+          "pinyin": "dì yī kē",
+          "hanviet": "Đệ Nhất Khoa"
+        },
+        {
+          "text": "原子弹",
+          "pinyin": "yuán zǐ dàn",
+          "hanviet": "Nguyên Tử Đạn"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "艰苦",
+          "pinyin": "jiānkǔ",
+          "hanviet": "Gian Khổ",
+          "hsk": 5,
+          "word_id": "hsk5_564",
+          "meaning_vi": "gian khổ"
+        },
+        {
+          "text": "岁月",
+          "pinyin": "suìyuè",
+          "hanviet": "Tuế Nguyệt",
+          "hsk": 6,
+          "word_id": "hsk6_1251",
+          "meaning_vi": "năm tháng"
+        },
+        {
+          "text": "里",
+          "pinyin": "lǐ",
+          "hanviet": "Lý",
+          "hsk": 1,
+          "word_id": "hsk1_536",
+          "meaning_vi": "bên trong"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "科学家",
+          "pinyin": "kē xué jiā",
+          "hanviet": "Khoa Học Gia"
+        },
+        {
+          "text": "们",
+          "pinyin": "men",
+          "hanviet": "Môn",
+          "hsk": 1,
+          "word_id": "hsk1_538",
+          "meaning_vi": "họ (hậu tố)"
+        },
+        {
+          "text": "正是",
+          "pinyin": "zhèng shì",
+          "hanviet": "Chính Thị"
+        },
+        {
+          "text": "用",
+          "pinyin": "yòng",
+          "hanviet": "Dụng",
+          "hsk": 3,
+          "word_id": "hsk3_1020",
+          "meaning_vi": "dùng"
+        },
+        {
+          "text": "算盘",
+          "pinyin": "suànpán",
+          "hanviet": "Toán Bàn",
+          "hsk": 7,
+          "word_id": "hsk7_3901",
+          "meaning_vi": "toan tính; bàn tính"
+        },
+        {
+          "text": "核验",
+          "pinyin": "hé yàn",
+          "hanviet": "Hạch Nghiệm"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "海量",
+          "pinyin": "hǎiliàng",
+          "hanviet": "Hải Lượng",
+          "hsk": 7,
+          "word_id": "hsk7_1566",
+          "meaning_vi": "khối lượng khổng lồ, dung lượng cực lớn"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "关键",
+          "pinyin": "guānjiàn",
+          "hanviet": "Quan Kiện",
+          "hsk": 4,
+          "word_id": "hsk4_269",
+          "meaning_vi": "mấu chốt, then chốt"
+        },
+        {
+          "text": "数据",
+          "pinyin": "shùjù",
+          "hanviet": "Sổ Cư",
+          "hsk": 5,
+          "word_id": "hsk5_1067",
+          "meaning_vi": "số liệu, dữ liệu"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "二零一三年，中国珠算被正式列入联合国人类非物质文化遗产名录，彰显着东方数学智慧的璀璨光芒。",
+      "pinyin": "Èr-líng-yī-sān nián, Zhōngguó zhūsuàn bèi zhèngshì lièrù Liánhéguó Rénlèi Fēiwùzhì Wénhuà Yíchǎn mínglù, zhāngxiǎn zhe dōngfāng shùxué zhìhuì de cuǐcàn guāngmáng.",
+      "vi": "Năm 2013, bàn tính gảy đã được UNESCO công nhận là Di sản Văn hóa Phi vật thể của nhân loại, tỏa sáng trí tuệ toán học phương Đông.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "二零一",
+          "pinyin": "èr líng yī",
+          "hanviet": "Nhị Linh Nhất"
+        },
+        {
+          "text": "三年",
+          "pinyin": "sān nián",
+          "hanviet": "Tam Niên"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "珠算",
+          "pinyin": "zhū suàn",
+          "hanviet": "Châu Toán"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "正式",
+          "pinyin": "zhèngshì",
+          "hanviet": "Chính Thức",
+          "hsk": 4,
+          "word_id": "hsk4_937",
+          "meaning_vi": "chính thức"
+        },
+        {
+          "text": "列入",
+          "pinyin": "liè rù",
+          "hanviet": "Liệt Nhập"
+        },
+        {
+          "text": "联合国",
+          "pinyin": "Liánhéguó",
+          "hanviet": "Liên Cáp Quốc",
+          "hsk": 6,
+          "word_id": "hsk6_843",
+          "meaning_vi": "liên Hợp Quốc"
+        },
+        {
+          "text": "人类",
+          "pinyin": "rénlèi",
+          "hanviet": "Nhân Loại",
+          "hsk": 5,
+          "word_id": "hsk5_921",
+          "meaning_vi": "loài người, nhân loại"
+        },
+        {
+          "text": "非",
+          "pinyin": "fēi",
+          "hanviet": "Phi",
+          "hsk": 7,
+          "word_id": "hsk7_1122",
+          "meaning_vi": "không phải, phi"
+        },
+        {
+          "text": "物质",
+          "pinyin": "wùzhì",
+          "hanviet": "Vật Chất",
+          "hsk": 5,
+          "word_id": "hsk5_1220",
+          "meaning_vi": "vật chất"
+        },
+        {
+          "text": "文化遗产",
+          "pinyin": "wén huà yí chǎn",
+          "hanviet": "Văn Hoa Di Sản"
+        },
+        {
+          "text": "名录",
+          "pinyin": "míng lù",
+          "hanviet": "Danh Lục"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "彰显",
+          "pinyin": "zhāng xiǎn",
+          "hanviet": "Chương Hiển"
+        },
+        {
+          "text": "着",
+          "pinyin": "zhe",
+          "hanviet": "Trước",
+          "hsk": 2,
+          "word_id": "hsk2_490",
+          "meaning_vi": "đang (trợ từ)"
+        },
+        {
+          "text": "东方",
+          "pinyin": "dōngfāng",
+          "hanviet": "Đông Phương",
+          "hsk": 3,
+          "word_id": "hsk3_696",
+          "meaning_vi": "phía đông; phương Đông"
+        },
+        {
+          "text": "数学",
+          "pinyin": "shùxué",
+          "hanviet": "Số Học",
+          "hsk": 3,
+          "word_id": "hsk3_923",
+          "meaning_vi": "môn toán"
+        },
+        {
+          "text": "智慧",
+          "pinyin": "zhìhuì",
+          "hanviet": "Trí Tuệ",
+          "hsk": 5,
+          "word_id": "hsk5_1513",
+          "meaning_vi": "trí tuệ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "璀璨",
+          "pinyin": "cuǐcàn",
+          "hanviet": "Thôi Xán",
+          "hsk": 7,
+          "word_id": "hsk7_695",
+          "meaning_vi": "rực rỡ lấp lánh, xán lạn"
+        },
+        {
+          "text": "光芒",
+          "pinyin": "guāngmáng",
+          "hanviet": "Quang Mang",
+          "hsk": 7,
+          "word_id": "hsk7_1509",
+          "meaning_vi": "tia sáng rực rỡ, ánh sáng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk4_967",
+    "hsk3_947",
+    "hsk4_937",
+    "hsk7_3901"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Bức tranh nổi tiếng nào thời Bắc Tống vẽ hình chiếc bàn tính gảy trên quầy hiệu thuốc?",
+      "options_vi": [
+        "Thanh Minh Thượng Hà Đồ (清明上河图)",
+        "Nàng Mona Lisa",
+        "Bách Điểu Triều Phụng"
+      ],
+      "answer": 0,
+      "explanation_vi": "Thanh Minh Thượng Hà Đồ khắc họa chi tiết bàn tính trong hiệu thuốc phố Biện Kinh."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Trong thế kỷ 20, bàn tính gảy từng lập công lớn trong dự án khoa học trọng đại nào?",
+      "options_vi": [
+        "Kiểm tra và tính toán dữ liệu nghiên cứu bom nguyên tử",
+        "Thiết kế máy bay giấy",
+        "Đếm số hạt lúa mì"
+      ],
+      "answer": 0,
+      "explanation_vi": "Các nhà khoa học hạt nhân đã kết hợp bàn tính với máy tính cơ để đối chiếu số liệu tuyệt mật."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Tổ chức UNESCO đã vinh danh Bàn tính gảy vào danh hiệu nào năm 2013?",
+      "options_vi": [
+        "Di sản Văn hóa Phi vật thể của nhân loại",
+        "Kỷ lục thiết bị đắt nhất",
+        "Đồ chơi của năm"
+      ],
+      "answer": 0,
+      "explanation_vi": "Bàn tính được UNESCO ghi danh là Di sản văn hóa phi vật thể của toàn nhân loại."
+    }
+  ]
+}

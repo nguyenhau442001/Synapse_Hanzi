@@ -1,0 +1,863 @@
+{
+  "id": "wanwu_story_057",
+  "chapter_no": 57,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 3,
+  "book_page_start": 595,
+  "book_page_end": 606,
+  "page_display": "Trang 595 - 606",
+  "title": {
+    "zh": "中轴：皇帝的龙椅坐歪了吗？",
+    "vi": "Trục trung tâm: Ghế rồng của hoàng đế có bị lệch?"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🏛️",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_057.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_057.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 595 - 606 · Trục trung tâm dài 7.8 km của Bắc Kinh từ Vĩnh Định Môn đến Tháp Chuông Trống và bí ẩn thiên văn học cổ.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "北京中轴线南起永定门，北至钟鼓楼，全长近八公里，被誉为北京古城的‘灵魂脊梁’。",
+      "pinyin": "Běijīng zhōngzhóuxiàn nán qǐ Yǒngdìngmén, běi zhì Zhōnggǔlóu, quáncháng jìn bā gōnglǐ, bèi yù wéi Běijīng gǔchéng de ‘línghún jǐliang’.",
+      "vi": "Trục trung tâm Bắc Kinh phía nam khởi từ Vĩnh Định Môn, bắc tới Tháp Chuông Trống, dài gần 8 km, được ví như 'xương sống linh hồn' kinh thành cổ.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "北京",
+          "pinyin": "ba",
+          "hanviet": "Ba",
+          "hsk": 1,
+          "word_id": "hsk1_5",
+          "meaning_vi": "nhé (trợ từ)"
+        },
+        {
+          "text": "中轴线",
+          "pinyin": "zhōng zhóu xiàn",
+          "hanviet": "Trung Trục Tuyến"
+        },
+        {
+          "text": "南起",
+          "pinyin": "nán qǐ",
+          "hanviet": "Nam Khởi"
+        },
+        {
+          "text": "永定门",
+          "pinyin": "yǒng dìng mén",
+          "hanviet": "Vĩnh Định Môn"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "北",
+          "pinyin": "běi",
+          "hanviet": "Bắc",
+          "hsk": 3,
+          "word_id": "hsk3_617",
+          "meaning_vi": "phía bắc"
+        },
+        {
+          "text": "至",
+          "pinyin": "zhì",
+          "hanviet": "Chí",
+          "hsk": 5,
+          "word_id": "hsk5_1508",
+          "meaning_vi": "đến"
+        },
+        {
+          "text": "钟鼓楼",
+          "pinyin": "zhōng gǔ lóu",
+          "hanviet": "Chung Cổ Lâu"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "全长",
+          "pinyin": "quán zhǎng",
+          "hanviet": "Toàn Trường"
+        },
+        {
+          "text": "近",
+          "pinyin": "jìn",
+          "hanviet": "Cận",
+          "hsk": 2,
+          "word_id": "hsk2_371",
+          "meaning_vi": "gần"
+        },
+        {
+          "text": "八公里",
+          "pinyin": "bā gōng lǐ",
+          "hanviet": "Bát Công Lý"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "被誉为",
+          "pinyin": "bèi yù wéi",
+          "hanviet": "Bị Dự Vi"
+        },
+        {
+          "text": "北京",
+          "pinyin": "ba",
+          "hanviet": "Ba",
+          "hsk": 1,
+          "word_id": "hsk1_5",
+          "meaning_vi": "nhé (trợ từ)"
+        },
+        {
+          "text": "古城",
+          "pinyin": "gǔ chéng",
+          "hanviet": "Cổ Thành"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "灵魂",
+          "pinyin": "línghún",
+          "hanviet": "Linh Hồn",
+          "hsk": 7,
+          "word_id": "hsk7_2626",
+          "meaning_vi": "linh hồn"
+        },
+        {
+          "text": "脊梁",
+          "pinyin": "jǐliáng",
+          "hanviet": "Tích Lương",
+          "hsk": 7,
+          "word_id": "hsk7_1891",
+          "meaning_vi": "xương sống, sống lưng, rường cột"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "紫禁城三大殿正是端坐在这条笔直严整的对称轴线上，彰显着中国古代天人合一与秩序井然的哲学美学。",
+      "pinyin": "Zǐjìnchéng sān dàdiàn zhèngshì duānzuò zài zhè tiáo bǐzhí yánzhěng de duìchèn zhóuxiàn shàng, zhāngxiǎn zhe Zhōngguó gǔdài tiānrén-héyī yǔ zhìxù-jǐngrán de zhéxué měixué.",
+      "vi": "Ba đại điện Cố Cung nằm ngay ngắn trên trục đối xứng chuẩn mực này, tôn vinh triết lý thiên nhân hợp nhất và trật tự nghiêm minh.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "紫禁城",
+          "pinyin": "zǐ jìn chéng",
+          "hanviet": "Tử Cầm Thành"
+        },
+        {
+          "text": "三",
+          "pinyin": "sān",
+          "hanviet": "Tam",
+          "hsk": 1,
+          "word_id": "hsk1_249",
+          "meaning_vi": "ba"
+        },
+        {
+          "text": "大殿",
+          "pinyin": "dà diàn",
+          "hanviet": "Đại Điện"
+        },
+        {
+          "text": "正是",
+          "pinyin": "zhèng shì",
+          "hanviet": "Chính Thị"
+        },
+        {
+          "text": "端坐",
+          "pinyin": "duān zuò",
+          "hanviet": "Đoan Toạ"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "这条",
+          "pinyin": "zhè tiáo",
+          "hanviet": "Giá Điều"
+        },
+        {
+          "text": "笔直",
+          "pinyin": "bǐ zhí",
+          "hanviet": "Bút Trực"
+        },
+        {
+          "text": "严整",
+          "pinyin": "yán zhěng",
+          "hanviet": "Nghiêm Chỉnh"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "对称轴",
+          "pinyin": "duì chèn zhóu",
+          "hanviet": "Đối Xứng Trục"
+        },
+        {
+          "text": "线上",
+          "pinyin": "xiànshàng",
+          "hanviet": "Tuyến Thướng",
+          "hsk": 4,
+          "word_id": "hsk4_799",
+          "meaning_vi": "trực tuyến, online"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "彰显",
+          "pinyin": "zhāng xiǎn",
+          "hanviet": "Chương Hiển"
+        },
+        {
+          "text": "着",
+          "pinyin": "zhe",
+          "hanviet": "Trước",
+          "hsk": 2,
+          "word_id": "hsk2_490",
+          "meaning_vi": "đang (trợ từ)"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "天人合一",
+          "pinyin": "tiān rén hé yī",
+          "hanviet": "Thiên Nhân Cáp Nhất"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "秩序井然",
+          "pinyin": "zhì xù jǐng rán",
+          "hanviet": "Trật Tự Tỉnh Nhiên"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "哲学",
+          "pinyin": "zhéxué",
+          "hanviet": "Triết Học",
+          "hsk": 5,
+          "word_id": "hsk5_1480",
+          "meaning_vi": "triết học"
+        },
+        {
+          "text": "美学",
+          "pinyin": "měixué",
+          "hanviet": "Mỹ Học",
+          "hsk": 7,
+          "word_id": "hsk7_2770",
+          "meaning_vi": "mỹ học"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "现代测绘学者通过高精度卫星定位惊奇地发现，中轴线相对于现代真子午线存在约两度的微小偏角。",
+      "pinyin": "Xiàndài cèhuì xuézhě tōngguò gāojīngdù wèixīng dìngwèi jīngqí de fāxiàn, zhōngzhóuxiàn xiāngduì yú xiàndài zhēn zǐwǔxiàn cúnzài yuē liǎng dù de wēixiǎo piānjiǎo.",
+      "vi": "Các nhà đo đạc hiện đại dùng định vị vệ tinh ngạc nhiên nhận thấy trục trung tâm hơi chếch khoảng hai độ so với kinh tuyến thật.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "现代",
+          "pinyin": "xiàndài",
+          "hanviet": "Hiện Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1239",
+          "meaning_vi": "hiện đại"
+        },
+        {
+          "text": "测绘",
+          "pinyin": "cè huì",
+          "hanviet": "Trắc Hội"
+        },
+        {
+          "text": "学者",
+          "pinyin": "xuézhě",
+          "hanviet": "Học Giả",
+          "hsk": 5,
+          "word_id": "hsk5_1314",
+          "meaning_vi": "học giả, nhà nghiên cứu"
+        },
+        {
+          "text": "通过",
+          "pinyin": "tōngguò",
+          "hanviet": "Thông Qua",
+          "hsk": 4,
+          "word_id": "hsk4_744",
+          "meaning_vi": "thông qua"
+        },
+        {
+          "text": "高精度",
+          "pinyin": "gāo jīng dù",
+          "hanviet": "Cao Tinh Độ"
+        },
+        {
+          "text": "卫星",
+          "pinyin": "wèixīng",
+          "hanviet": "Vệ Tinh",
+          "hsk": 7,
+          "word_id": "hsk7_4263",
+          "meaning_vi": "vệ tinh"
+        },
+        {
+          "text": "定位",
+          "pinyin": "dìngwèi",
+          "hanviet": "Định Vị",
+          "hsk": 6,
+          "word_id": "hsk6_313",
+          "meaning_vi": "định vị; định hướng vị thế"
+        },
+        {
+          "text": "惊奇",
+          "pinyin": "jīngqí",
+          "hanviet": "Kinh Cơ",
+          "hsk": 7,
+          "word_id": "hsk7_2176",
+          "meaning_vi": "kinh ngạc, ngạc nhiên"
+        },
+        {
+          "text": "地",
+          "pinyin": "de",
+          "hanviet": "Địa",
+          "hsk": 2,
+          "word_id": "hsk2_333",
+          "meaning_vi": "cách (trợ từ trạng ngữ)"
+        },
+        {
+          "text": "发现",
+          "pinyin": "fāxiàn",
+          "hanviet": "Phát Hiện",
+          "hsk": 3,
+          "word_id": "hsk3_712",
+          "meaning_vi": "phát hiện"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "中轴线",
+          "pinyin": "zhōng zhóu xiàn",
+          "hanviet": "Trung Trục Tuyến"
+        },
+        {
+          "text": "相对",
+          "pinyin": "xiāngduì",
+          "hanviet": "Tương Đối",
+          "hsk": 5,
+          "word_id": "hsk5_1250",
+          "meaning_vi": "tương đối"
+        },
+        {
+          "text": "于",
+          "pinyin": "yú",
+          "hanviet": "Vu",
+          "hsk": 6,
+          "word_id": "hsk6_1606",
+          "meaning_vi": "tại"
+        },
+        {
+          "text": "现代",
+          "pinyin": "xiàndài",
+          "hanviet": "Hiện Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1239",
+          "meaning_vi": "hiện đại"
+        },
+        {
+          "text": "真",
+          "pinyin": "zhēn",
+          "hanviet": "Chân",
+          "hsk": 1,
+          "word_id": "hsk1_403",
+          "meaning_vi": "thật, thực sự"
+        },
+        {
+          "text": "子午线",
+          "pinyin": "zi wǔ xiàn",
+          "hanviet": "Tử Ngọ Tuyến"
+        },
+        {
+          "text": "存在",
+          "pinyin": "cúnzài",
+          "hanviet": "Tồn Tại",
+          "hsk": 5,
+          "word_id": "hsk5_210",
+          "meaning_vi": "tồn tại"
+        },
+        {
+          "text": "约",
+          "pinyin": "yuē",
+          "hanviet": "Yêu",
+          "hsk": 4,
+          "word_id": "hsk4_906",
+          "meaning_vi": "hẹn; khoảng chừng"
+        },
+        {
+          "text": "两度",
+          "pinyin": "liǎng dù",
+          "hanviet": "Lưỡng Độ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "微小",
+          "pinyin": "wēixiǎo",
+          "hanviet": "Vi Tiểu",
+          "hsk": 6,
+          "word_id": "hsk6_1367",
+          "meaning_vi": "vi mô, nhỏ bé"
+        },
+        {
+          "text": "偏角",
+          "pinyin": "piān jiǎo",
+          "hanviet": "Thiên Giác"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "学者推测，这或许是因为元代规划大都时以当时北极星的位置作为测定基准，才留下了这道迷人的时空印记。",
+      "pinyin": "Xuézhě tuīcè, zhè huòxǔ shì yīnwèi Yuándài guīhuà dàdū shí yǐ dāngshí Běijíxīng de wèizhì zuòwéi cèdìng jīzhǔn, cái liúxià le zhè dào mírén de shíkōng yìnjì.",
+      "vi": "Các học giả suy đoán có thể khi nhà Nguyên quy hoạch Đại Đô đã lấy vị trí sao Bắc Cực lúc bấy giờ làm chuẩn đo, tạo nên dấu ấn thiên văn kỳ thú.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "学者",
+          "pinyin": "xuézhě",
+          "hanviet": "Học Giả",
+          "hsk": 5,
+          "word_id": "hsk5_1314",
+          "meaning_vi": "học giả, nhà nghiên cứu"
+        },
+        {
+          "text": "推测",
+          "pinyin": "tuīcè",
+          "hanviet": "Suy Trắc",
+          "hsk": 6,
+          "word_id": "hsk6_1339",
+          "meaning_vi": "suy đoán"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "这",
+          "pinyin": "zhè",
+          "hanviet": "Giá",
+          "hsk": 1,
+          "word_id": "hsk1_401",
+          "meaning_vi": "này"
+        },
+        {
+          "text": "或许",
+          "pinyin": "huòxǔ",
+          "hanviet": "Hoặc Hứa",
+          "hsk": 5,
+          "word_id": "hsk5_519",
+          "meaning_vi": "có thể, có lẽ"
+        },
+        {
+          "text": "是因为",
+          "pinyin": "shì yīn wèi",
+          "hanviet": "Thị Nhân Vi"
+        },
+        {
+          "text": "元代",
+          "pinyin": "yuán dài",
+          "hanviet": "Nguyên Đại"
+        },
+        {
+          "text": "规划",
+          "pinyin": "guīhuà",
+          "hanviet": "Quy Hoạch",
+          "hsk": 6,
+          "word_id": "hsk6_501",
+          "meaning_vi": "quy hoạch, kế hoạch phát triển"
+        },
+        {
+          "text": "大都",
+          "pinyin": "dàdū",
+          "hanviet": "Đại Đô",
+          "hsk": 6,
+          "word_id": "hsk6_247",
+          "meaning_vi": "hầu hết, phần lớn"
+        },
+        {
+          "text": "时以",
+          "pinyin": "shí yǐ",
+          "hanviet": "Thời Dĩ"
+        },
+        {
+          "text": "当时",
+          "pinyin": "dāngshí",
+          "hanviet": "Đương Thời",
+          "hsk": 4,
+          "word_id": "hsk4_136",
+          "meaning_vi": "lúc đó, khi đó"
+        },
+        {
+          "text": "北极星",
+          "pinyin": "běi jí xīng",
+          "hanviet": "Bắc Cực Tinh"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "位置",
+          "pinyin": "wèizhì",
+          "hanviet": "Vị Trí",
+          "hsk": 5,
+          "word_id": "hsk5_1198",
+          "meaning_vi": "vị trí"
+        },
+        {
+          "text": "作为",
+          "pinyin": "xiūgǎi",
+          "hanviet": "Tu Cải",
+          "hsk": 5,
+          "word_id": "hsk5_1300",
+          "meaning_vi": "sửa đổi"
+        },
+        {
+          "text": "测定",
+          "pinyin": "cèdìng",
+          "hanviet": "Trắc Định",
+          "hsk": 7,
+          "word_id": "hsk7_405",
+          "meaning_vi": "đo lường xác định, trắc định"
+        },
+        {
+          "text": "基准",
+          "pinyin": "jīzhǔn",
+          "hanviet": "Cơ Chuẩn",
+          "hsk": 7,
+          "word_id": "hsk7_1860",
+          "meaning_vi": "mức chuẩn, tiêu chuẩn căn cứ, mốc tham chiếu"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "才",
+          "pinyin": "cái",
+          "hanviet": "Tài"
+        },
+        {
+          "text": "留下",
+          "pinyin": "liúxia",
+          "hanviet": "Lưu Hạ",
+          "hsk": 4,
+          "word_id": "hsk4_485",
+          "meaning_vi": "để lại; ở lại"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "这道",
+          "pinyin": "zhè dào",
+          "hanviet": "Giá Đạo"
+        },
+        {
+          "text": "迷人",
+          "pinyin": "mírén",
+          "hanviet": "Mê Nhân",
+          "hsk": 6,
+          "word_id": "hsk6_901",
+          "meaning_vi": "quyến rũ, mê hồn"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "时空",
+          "pinyin": "shíkōng",
+          "hanviet": "Thời Không",
+          "hsk": 7,
+          "word_id": "hsk7_3672",
+          "meaning_vi": "không gian và thời gian; thời không"
+        },
+        {
+          "text": "印记",
+          "pinyin": "yìn jì",
+          "hanviet": "Ấn Ký"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "这条贯穿历史与现代的壮丽轴线，如今成功被联合国教科文组织评定为世界文化遗产。",
+      "pinyin": "Zhè tiáo guànchuān lìshǐ yǔ xiàndài de zhuànglì zhóuxiàn, rújīn chénggōng bèi Liánhéguó Jiàokēwén Zǔzhī píngdìng wéi Shìjiè Wénhuà Yíchǎn.",
+      "vi": "Trục kiến trúc tráng lệ xuyên suốt lịch sử và hiện đại này nay đã vinh dự được UNESCO công nhận là Di sản Văn hóa Thế giới.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "这",
+          "pinyin": "zhè",
+          "hanviet": "Giá",
+          "hsk": 1,
+          "word_id": "hsk1_401",
+          "meaning_vi": "này"
+        },
+        {
+          "text": "条",
+          "pinyin": "tiáo",
+          "hanviet": "Điều",
+          "hsk": 2,
+          "word_id": "hsk2_443",
+          "meaning_vi": "con, dải (lượng từ)"
+        },
+        {
+          "text": "贯穿",
+          "pinyin": "guànchuān",
+          "hanviet": "Quán Xuyên",
+          "hsk": 7,
+          "word_id": "hsk7_1496",
+          "meaning_vi": "xuyên suốt, bao quát xuyên qua"
+        },
+        {
+          "text": "历史",
+          "pinyin": "lìshǐ",
+          "hanviet": "Lịch Sử",
+          "hsk": 3,
+          "word_id": "hsk3_831",
+          "meaning_vi": "lịch sử"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "现代",
+          "pinyin": "xiàndài",
+          "hanviet": "Hiện Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1239",
+          "meaning_vi": "hiện đại"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "壮丽",
+          "pinyin": "zhuànglì",
+          "hanviet": "Tráng Lệ",
+          "hsk": 7,
+          "word_id": "hsk7_5465",
+          "meaning_vi": "tráng lệ, kỳ vĩ nguy nga"
+        },
+        {
+          "text": "轴线",
+          "pinyin": "zhóu xiàn",
+          "hanviet": "Trục Tuyến"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "如今",
+          "pinyin": "rújīn",
+          "hanviet": "Như Kim",
+          "hsk": 5,
+          "word_id": "hsk5_935",
+          "meaning_vi": "hiện nay, ngày nay"
+        },
+        {
+          "text": "成功",
+          "pinyin": "chénggōng",
+          "hanviet": "Thành Công",
+          "hsk": 4,
+          "word_id": "hsk4_79",
+          "meaning_vi": "thành công"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "联合国教科文组织",
+          "pinyin": "lián hé guó jiào kē wén zǔ zhī",
+          "hanviet": "Liên Cáp Quốc Giáo Khoa Văn Tổ Chức"
+        },
+        {
+          "text": "评定",
+          "pinyin": "píngdìng",
+          "hanviet": "Bình Định",
+          "hsk": 7,
+          "word_id": "hsk7_3098",
+          "meaning_vi": "đánh giá xếp loại; thẩm định xếp hạng"
+        },
+        {
+          "text": "为",
+          "pinyin": "wèi",
+          "hanviet": "Vi",
+          "hsk": 3,
+          "word_id": "hsk3_954",
+          "meaning_vi": "vì, cho"
+        },
+        {
+          "text": "世界",
+          "pinyin": "shìjiè",
+          "hanviet": "Thế Giới",
+          "hsk": 3,
+          "word_id": "hsk3_916",
+          "meaning_vi": "thế giới"
+        },
+        {
+          "text": "文化遗产",
+          "pinyin": "wén huà yí chǎn",
+          "hanviet": "Văn Hoa Di Sản"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk3_712",
+    "hsk4_79",
+    "hsk3_957",
+    "hsk3_831",
+    "hsk1_5"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Trục trung tâm cổ kính nổi tiếng của Bắc Kinh kéo dài giữa hai địa danh nào?",
+      "options_vi": [
+        "Từ Vĩnh Định Môn đến Tháp Chuông Trống",
+        "Từ Vạn Lý Trường Thành đến biển Bột Hải",
+        "Từ Di Hòa Viên đến Sân bay"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trục trung tâm Bắc Kinh dài 7.8 km chạy từ cổng Vĩnh Định Môn tới Tháp Chuông Trống."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Độ lệch nhỏ khoảng hai độ của trục trung tâm kinh thành được giải thích do đâu?",
+      "options_vi": [
+        "Người xưa đo theo vị trí sao Bắc Cực ở bầu trời thời nhà Nguyên",
+        "Thợ xây bị trượt thước đo",
+        "Do động đất xê dịch"
+      ],
+      "answer": 0,
+      "explanation_vi": "Quy hoạch thời Nguyên dùng trục ngắm thiên văn hướng thẳng vào sao Bắc Cực thời điểm đó."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Công trình nào tọa lạc ngay vị trí trái tim của trục trung tâm Bắc Kinh?",
+      "options_vi": [
+        "Tử Cấm Thành (Cố Cung)",
+        "Nhà ga xe lửa",
+        "Chợ hoa quả"
+      ],
+      "answer": 0,
+      "explanation_vi": "Tử Cấm Thành với các đại điện lớn nằm chính giữa vị trí uy nghiêm nhất của trục."
+    }
+  ]
+}

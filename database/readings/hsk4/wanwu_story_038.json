@@ -1,0 +1,810 @@
+{
+  "id": "wanwu_story_038",
+  "chapter_no": 38,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 2,
+  "book_page_start": 383,
+  "book_page_end": 393,
+  "page_display": "Trang 383 - 393",
+  "title": {
+    "zh": "麻醉剂：消失的疼痛",
+    "vi": "Thuốc gây mê: Nỗi đau đớn biến mất"
+  },
+  "topic": "science_technology",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "💊",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_038.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_038.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 383 - 393 · Từ 'Ma phế tán' của danh y Hoa Đà đến buổi trình diễn ether gây mê năm 1846 làm thay đổi vĩnh viễn ngoại khoa.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "在没有有效麻醉方法的古代，外科手术往往伴随着患者难以忍受的剧烈痛苦。",
+      "pinyin": "Zài méiyǒu yǒuxiào mázuì fāngfǎ de gǔdài, wàikē shǒushù wǎngwǎng bànsuí zhe huànzhě nányǐ rěnshòu de jùliè tòngkǔ.",
+      "vi": "Vào thời cổ chưa có phương pháp gây mê hiệu quả, phẫu thuật ngoại khoa luôn đi kèm đau đớn tột cùng ngoài sức chịu đựng.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "没有",
+          "pinyin": "méiyǒu",
+          "hanviet": "Một Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_197",
+          "meaning_vi": "không có"
+        },
+        {
+          "text": "有效",
+          "pinyin": "yǒuxiào",
+          "hanviet": "Hữu Hiệu",
+          "hsk": 4,
+          "word_id": "hsk4_892",
+          "meaning_vi": "có hiệu lực, hiệu quả"
+        },
+        {
+          "text": "麻醉",
+          "pinyin": "mázuì",
+          "hanviet": "Ma Tuý",
+          "hsk": 7,
+          "word_id": "hsk7_2725",
+          "meaning_vi": "gây mê, gây tê"
+        },
+        {
+          "text": "方法",
+          "pinyin": "fāngfǎ",
+          "hanviet": "Phương Pháp",
+          "hsk": 3,
+          "word_id": "hsk3_716",
+          "meaning_vi": "phương pháp"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "外科手术",
+          "pinyin": "wài kē shǒu shù",
+          "hanviet": "Ngoại Khoa Thủ Thuật"
+        },
+        {
+          "text": "往往",
+          "pinyin": "wǎngwǎng",
+          "hanviet": "Vãng Vãng",
+          "hsk": 4,
+          "word_id": "hsk4_766",
+          "meaning_vi": "thường thường"
+        },
+        {
+          "text": "伴随",
+          "pinyin": "bànsuí",
+          "hanviet": "Bạn Tuỳ",
+          "hsk": 6,
+          "word_id": "hsk6_18",
+          "meaning_vi": "đi kèm, kèm theo, đồng hành cùng"
+        },
+        {
+          "text": "着",
+          "pinyin": "zhe",
+          "hanviet": "Trước",
+          "hsk": 2,
+          "word_id": "hsk2_490",
+          "meaning_vi": "đang (trợ từ)"
+        },
+        {
+          "text": "患者",
+          "pinyin": "huànzhě",
+          "hanviet": "Hoạn Giả",
+          "hsk": 6,
+          "word_id": "hsk6_580",
+          "meaning_vi": "bệnh nhân, người bệnh"
+        },
+        {
+          "text": "难以忍受",
+          "pinyin": "nán yǐ rěn shòu",
+          "hanviet": "Nan Dĩ Nhẫn Thọ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "剧烈",
+          "pinyin": "jùliè",
+          "hanviet": "Kịch Liệt",
+          "hsk": 6,
+          "word_id": "hsk6_750",
+          "meaning_vi": "dữ dội, kịch liệt, gay gắt"
+        },
+        {
+          "text": "痛苦",
+          "pinyin": "tòngkǔ",
+          "hanviet": "Thống Khổ",
+          "hsk": 5,
+          "word_id": "hsk5_1146",
+          "meaning_vi": "đau khổ"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "中国东汉时期的著名医学家华佗发明了“麻沸散”，配制在酒中让病人饮服以减轻痛感。",
+      "pinyin": "Zhōngguó Dōnghàn shíqī de zhùmíng yīxuéjiā Huà Tuó fāmíng le “Máfèisǎn”, pèizhì zài jiǔ zhōng ràng bìngrén yǐnfú yǐ jiǎnqīng tònggǎn.",
+      "vi": "Danh y Hoa Đà thời Đông Hán đã sáng chế ra 'Ma phế tán', hòa vào rượu cho bệnh nhân uống để làm dịu cơn đau khi mổ xẻ.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "东汉时期",
+          "pinyin": "dōng hàn shí qī",
+          "hanviet": "Đông Hán Thời Kỳ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "著名",
+          "pinyin": "zhùmíng",
+          "hanviet": "Trước Danh",
+          "hsk": 4,
+          "word_id": "hsk4_967",
+          "meaning_vi": "nổi tiếng"
+        },
+        {
+          "text": "医学家",
+          "pinyin": "yī xué jiā",
+          "hanviet": "Y Học Gia"
+        },
+        {
+          "text": "华佗",
+          "pinyin": "huà tuó",
+          "hanviet": "Hoa Đà"
+        },
+        {
+          "text": "发明",
+          "pinyin": "fāmíng",
+          "hanviet": "Phát Minh",
+          "hsk": 5,
+          "word_id": "hsk5_320",
+          "meaning_vi": "phát minh"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "麻沸散",
+          "pinyin": "má fèi sàn",
+          "hanviet": "Ma Phí Tản"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "配制",
+          "pinyin": "pèi zhì",
+          "hanviet": "Phối Chế"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "酒",
+          "pinyin": "jiǔ",
+          "hanviet": "Tửu",
+          "hsk": 3,
+          "word_id": "hsk3_804",
+          "meaning_vi": "rượu"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "让",
+          "pinyin": "ràng",
+          "hanviet": "Nhượng",
+          "hsk": 2,
+          "word_id": "hsk2_422",
+          "meaning_vi": "để cho, khiến"
+        },
+        {
+          "text": "病人",
+          "pinyin": "bìngrén",
+          "hanviet": "Bệnh Nhân",
+          "hsk": 3,
+          "word_id": "hsk3_636",
+          "meaning_vi": "bệnh nhân, người bệnh"
+        },
+        {
+          "text": "饮服",
+          "pinyin": "yǐn fú",
+          "hanviet": "Ẩm Phục"
+        },
+        {
+          "text": "以",
+          "pinyin": "yǐ",
+          "hanviet": "Dĩ",
+          "hsk": 5,
+          "word_id": "hsk5_1362",
+          "meaning_vi": "bằng, dùng"
+        },
+        {
+          "text": "减轻",
+          "pinyin": "jiǎnqīng",
+          "hanviet": "Giảm Khinh",
+          "hsk": 4,
+          "word_id": "hsk4_350",
+          "meaning_vi": "giảm nhẹ, giảm bớt"
+        },
+        {
+          "text": "痛感",
+          "pinyin": "tòng gǎn",
+          "hanviet": "Thống Cảm"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "一八四六年，美国牙医莫顿在波士顿医院公开演示了乙醚吸入麻醉手术，震惊了医学界。",
+      "pinyin": "Yī-bā-sì-liù nián, Měiguó yáyī Mòdùn zài Bōshìdùn yīyuàn gōngkāi yǎnshì le yǐmí xīrù mázuì shǒushù, zhènjīng le yīxuéjiè.",
+      "vi": "Năm 1846, nha sĩ Morton đã biểu diễn công khai ca phẫu thuật hít ether gây mê tại bệnh viện Boston, làm chấn động giới y học.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "一八",
+          "pinyin": "yī bā",
+          "hanviet": "Nhất Bát"
+        },
+        {
+          "text": "四",
+          "pinyin": "sì",
+          "hanviet": "Tứ",
+          "hsk": 1,
+          "word_id": "hsk1_281",
+          "meaning_vi": "bốn"
+        },
+        {
+          "text": "六年",
+          "pinyin": "liù nián",
+          "hanviet": "Lục Niên"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "美国",
+          "pinyin": "měi guó",
+          "hanviet": "Mỹ Quốc"
+        },
+        {
+          "text": "牙医",
+          "pinyin": "yá yī",
+          "hanviet": "Nha Y"
+        },
+        {
+          "text": "莫顿",
+          "pinyin": "mò dùn",
+          "hanviet": "Mạc Đốn"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "波士顿",
+          "pinyin": "bō shì dùn",
+          "hanviet": "Ba Sĩ Đốn"
+        },
+        {
+          "text": "医院",
+          "pinyin": "yīyuàn",
+          "hanviet": "Y Viện",
+          "hsk": 1,
+          "word_id": "hsk1_367",
+          "meaning_vi": "bệnh viện"
+        },
+        {
+          "text": "公开",
+          "pinyin": "gōngkāi",
+          "hanviet": "Công Khai",
+          "hsk": 6,
+          "word_id": "hsk6_458",
+          "meaning_vi": "công khai"
+        },
+        {
+          "text": "演示",
+          "pinyin": "yǎnshì",
+          "hanviet": "Diễn Thị",
+          "hsk": 7,
+          "word_id": "hsk7_4750",
+          "meaning_vi": "trình diễn thị phạm; thuyết trình mẫu"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "乙醚",
+          "pinyin": "yǐ mí",
+          "hanviet": "Ất Mê"
+        },
+        {
+          "text": "吸入",
+          "pinyin": "xī rù",
+          "hanviet": "Hấp Nhập"
+        },
+        {
+          "text": "麻醉",
+          "pinyin": "mázuì",
+          "hanviet": "Ma Tuý",
+          "hsk": 7,
+          "word_id": "hsk7_2725",
+          "meaning_vi": "gây mê, gây tê"
+        },
+        {
+          "text": "手术",
+          "pinyin": "shǒushù",
+          "hanviet": "Thủ Thuật",
+          "hsk": 5,
+          "word_id": "hsk5_1050",
+          "meaning_vi": "ca phẫu thuật"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "震惊",
+          "pinyin": "zhènjīng",
+          "hanviet": "Chấn Kinh",
+          "hsk": 7,
+          "word_id": "hsk7_5233",
+          "meaning_vi": "sửng sốt, kinh hoàng, bàng hoàng chấn động"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "医学界",
+          "pinyin": "yī xué jiè",
+          "hanviet": "Y Học Giới"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "患者在完全无痛的沉睡中顺利完成了肿瘤切除，麻醉学从此正式诞生并迅速推广。",
+      "pinyin": "Huànzhě zài wánquán wútòng de chénshuì zhōng shùnlì wánchéng le zhǒngliú qiēchú, mázuìxué cóngcǐ zhèngshì dànshēng bìng xùnsù tuīguǎng.",
+      "vi": "Bệnh nhân êm đềm ngủ say không hề đau đớn và hoàn thành ca phẫu thuật cắt bỏ khối u, môn gây mê học chính thức ra đời.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "患者",
+          "pinyin": "huànzhě",
+          "hanviet": "Hoạn Giả",
+          "hsk": 6,
+          "word_id": "hsk6_580",
+          "meaning_vi": "bệnh nhân, người bệnh"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "完全",
+          "pinyin": "wánquán",
+          "hanviet": "Hoàn Toàn",
+          "hsk": 4,
+          "word_id": "hsk4_762",
+          "meaning_vi": "hoàn toàn"
+        },
+        {
+          "text": "无痛",
+          "pinyin": "wú tòng",
+          "hanviet": "Vô Thống"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "沉睡",
+          "pinyin": "chénshuì",
+          "hanviet": "Trầm Thuỵ",
+          "hsk": 7,
+          "word_id": "hsk7_479",
+          "meaning_vi": "ngủ say"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "顺利完成",
+          "pinyin": "shùn lì wán chéng",
+          "hanviet": "Thuận Lợi Hoàn Thành"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "肿瘤",
+          "pinyin": "zhǒngliú",
+          "hanviet": "Trũng Lựu",
+          "hsk": 7,
+          "word_id": "hsk7_5371",
+          "meaning_vi": "khối u, bướu"
+        },
+        {
+          "text": "切除",
+          "pinyin": "qiēchú",
+          "hanviet": "Tiếp Trừ",
+          "hsk": 7,
+          "word_id": "hsk7_3266",
+          "meaning_vi": "cắt bỏ; phẫu thuật cắt bỏ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "麻醉学",
+          "pinyin": "má zuì xué",
+          "hanviet": "Ma Tuý Học"
+        },
+        {
+          "text": "从此",
+          "pinyin": "cóngcǐ",
+          "hanviet": "Tòng Thử",
+          "hsk": 4,
+          "word_id": "hsk4_102",
+          "meaning_vi": "từ đó, kể từ đây"
+        },
+        {
+          "text": "正式",
+          "pinyin": "zhèngshì",
+          "hanviet": "Chính Thức",
+          "hsk": 4,
+          "word_id": "hsk4_937",
+          "meaning_vi": "chính thức"
+        },
+        {
+          "text": "诞生",
+          "pinyin": "dànshēng",
+          "hanviet": "Đản Sinh",
+          "hsk": 6,
+          "word_id": "hsk6_266",
+          "meaning_vi": "ra đời, sinh ra"
+        },
+        {
+          "text": "并",
+          "pinyin": "bìng",
+          "hanviet": "Tinh",
+          "hsk": 4,
+          "word_id": "hsk4_39",
+          "meaning_vi": "và, đồng thời; hoàn toàn (không)"
+        },
+        {
+          "text": "迅速",
+          "pinyin": "xùnsù",
+          "hanviet": "Tấn Tốc",
+          "hsk": 5,
+          "word_id": "hsk5_1319",
+          "meaning_vi": "nhanh chóng"
+        },
+        {
+          "text": "推广",
+          "pinyin": "tuīguǎng",
+          "hanviet": "Suy Nghiễm",
+          "hsk": 5,
+          "word_id": "hsk5_1159",
+          "meaning_vi": "quảng bá, phổ biến rộng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "现代麻醉技术精准严密，不仅彻底驱除了手术剧痛，更让复杂的心脑外科手术成为可能。",
+      "pinyin": "Xiàndài mázuì jìshù jīngzhǔn yánmì, bùjǐn chèdǐ qūchú le shǒushù jùtòng, gèng ràng fùzá de xīn-nǎo wàikē shǒushù chéngwéi kěnéng.",
+      "vi": "Kỹ thuật gây mê hiện đại chuẩn xác nghiêm ngặt, chẳng những xua tan cơn đau mà còn giúp các ca phẫu thuật tim não phức tạp thành hiện thực.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "现代",
+          "pinyin": "xiàndài",
+          "hanviet": "Hiện Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1239",
+          "meaning_vi": "hiện đại"
+        },
+        {
+          "text": "麻醉",
+          "pinyin": "mázuì",
+          "hanviet": "Ma Tuý",
+          "hsk": 7,
+          "word_id": "hsk7_2725",
+          "meaning_vi": "gây mê, gây tê"
+        },
+        {
+          "text": "技术",
+          "pinyin": "jìshù",
+          "hanviet": "Kĩ Thuật/kỹ Thuật",
+          "hsk": 4,
+          "word_id": "hsk4_331",
+          "meaning_vi": "kỹ thuật"
+        },
+        {
+          "text": "精准",
+          "pinyin": "jīngzhǔn",
+          "hanviet": "Tinh Chuẩn",
+          "hsk": 6,
+          "word_id": "hsk6_721",
+          "meaning_vi": "chuẩn xác, chính xác cao"
+        },
+        {
+          "text": "严密",
+          "pinyin": "yánmì",
+          "hanviet": "Nghiêm Mật",
+          "hsk": 7,
+          "word_id": "hsk7_4729",
+          "meaning_vi": "chặt chẽ, nghiêm ngặt"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "不仅",
+          "pinyin": "bùjǐn",
+          "hanviet": "Bất Cận",
+          "hsk": 4,
+          "word_id": "hsk4_55",
+          "meaning_vi": "không chỉ"
+        },
+        {
+          "text": "彻底",
+          "pinyin": "chèdǐ",
+          "hanviet": "Triệt Để",
+          "hsk": 5,
+          "word_id": "hsk5_129",
+          "meaning_vi": "triệt để"
+        },
+        {
+          "text": "驱除",
+          "pinyin": "qū chú",
+          "hanviet": "Khu Trừ"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "手术",
+          "pinyin": "shǒushù",
+          "hanviet": "Thủ Thuật",
+          "hsk": 5,
+          "word_id": "hsk5_1050",
+          "meaning_vi": "ca phẫu thuật"
+        },
+        {
+          "text": "剧痛",
+          "pinyin": "jù tòng",
+          "hanviet": "Kịch Thống"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "更",
+          "pinyin": "gèng",
+          "hanviet": "Canh",
+          "hsk": 3,
+          "word_id": "hsk3_737",
+          "meaning_vi": "càng, hơn"
+        },
+        {
+          "text": "让",
+          "pinyin": "ràng",
+          "hanviet": "Nhượng",
+          "hsk": 2,
+          "word_id": "hsk2_422",
+          "meaning_vi": "để cho, khiến"
+        },
+        {
+          "text": "复杂",
+          "pinyin": "fùzá",
+          "hanviet": "Phức Tạp",
+          "hsk": 4,
+          "word_id": "hsk4_214",
+          "meaning_vi": "phức tạp"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "心脑",
+          "pinyin": "xīn nǎo",
+          "hanviet": "Tâm Não"
+        },
+        {
+          "text": "外科手术",
+          "pinyin": "wài kē shǒu shù",
+          "hanviet": "Ngoại Khoa Thủ Thuật"
+        },
+        {
+          "text": "成为",
+          "pinyin": "chéngwéi",
+          "hanviet": "Thành Vi",
+          "hsk": 4,
+          "word_id": "hsk4_82",
+          "meaning_vi": "trở thành"
+        },
+        {
+          "text": "可能",
+          "pinyin": "kěnéng",
+          "hanviet": "Khả Năng",
+          "hsk": 2,
+          "word_id": "hsk2_382",
+          "meaning_vi": "có thể"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk4_967",
+    "hsk3_947",
+    "hsk4_937",
+    "hsk4_331",
+    "hsk1_390"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Danh y nào thời Đông Hán ở Trung Quốc đã chế tạo ra 'Ma phế tán'?",
+      "options_vi": [
+        "Hoa Đà",
+        "Biển Thước",
+        "Lý Thời Trân"
+      ],
+      "answer": 0,
+      "explanation_vi": "Hoa Đà nổi tiếng là người phát minh thuốc gây mê thảo dược Ma phế tán."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Chất khí gây mê nào được biểu diễn thành công tại Boston năm 1846?",
+      "options_vi": [
+        "Khí ether (hơi ete)",
+        "Khí oxy",
+        "Khí carbonic"
+      ],
+      "answer": 0,
+      "explanation_vi": "Morton đã dùng hơi ether để gây mê phẫu thuật không đau."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Ý nghĩa lớn nhất của sự phát triển môn gây mê là gì?",
+      "options_vi": [
+        "Giúp phẫu thuật diễn ra an toàn, không đau đớn cho người bệnh",
+        "Làm bệnh nhân ngủ suốt đời",
+        "Làm vết thương đổi màu"
+      ],
+      "answer": 0,
+      "explanation_vi": "Thuốc gây mê giải phóng bệnh nhân khỏi nỗi đau đớn khủng khiếp và mở đường cho ngoại khoa phát triển."
+    }
+  ]
+}

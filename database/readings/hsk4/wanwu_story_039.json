@@ -1,0 +1,787 @@
+{
+  "id": "wanwu_story_039",
+  "chapter_no": 39,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 2,
+  "book_page_start": 393,
+  "book_page_end": 403,
+  "page_display": "Trang 393 - 403",
+  "title": {
+    "zh": "维生素：生命元素",
+    "vi": "Vitamin: Yếu tố nuôi dưỡng sự sống"
+  },
+  "topic": "science_technology",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🍊",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_039.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_039.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 393 - 403 · Phát hiện vĩ đại về vi chất dinh dưỡng giải thoát loài người khỏi bệnh hoại huyết và phù thũng.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "人体维持日常健康运转，不仅需要充足的蛋白质与热量，还需要微量的有机化合物。",
+      "pinyin": "Réntǐ wéichí rìcháng jiànkāng yùnzhuǎn, bùjǐn xūyào chōngzú de dànbáizhì yǔ rèliàng, hái xūyào wēiliàng de yǒujī huàhéwù.",
+      "vi": "Cơ thể duy trì hoạt động khỏe mạnh mỗi ngày không chỉ cần đầy đủ chất đạm và calo mà còn cần các vi chất hữu cơ.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "人体",
+          "pinyin": "réntǐ",
+          "hanviet": "Nhân Thể",
+          "hsk": 5,
+          "word_id": "hsk5_926",
+          "meaning_vi": "cơ thể con người"
+        },
+        {
+          "text": "维持",
+          "pinyin": "wéichí",
+          "hanviet": "Duy Trì",
+          "hsk": 5,
+          "word_id": "hsk5_1185",
+          "meaning_vi": "duy trì"
+        },
+        {
+          "text": "日常",
+          "pinyin": "rìcháng",
+          "hanviet": "Nhật Thường",
+          "hsk": 4,
+          "word_id": "hsk4_618",
+          "meaning_vi": "thường ngày, hàng ngày"
+        },
+        {
+          "text": "健康",
+          "pinyin": "jiànkāng",
+          "hanviet": "Kiện Khang",
+          "hsk": 3,
+          "word_id": "hsk3_787",
+          "meaning_vi": "khỏe mạnh, sức khỏe"
+        },
+        {
+          "text": "运转",
+          "pinyin": "yùnzhuǎn",
+          "hanviet": "Vận Chuyển",
+          "hsk": 7,
+          "word_id": "hsk7_5084",
+          "meaning_vi": "vận hành, chuyển động quay, hoạt động xoay vần"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "不仅",
+          "pinyin": "bùjǐn",
+          "hanviet": "Bất Cận",
+          "hsk": 4,
+          "word_id": "hsk4_55",
+          "meaning_vi": "không chỉ"
+        },
+        {
+          "text": "需要",
+          "pinyin": "xūyào",
+          "hanviet": "Nhu Yêu",
+          "hsk": 3,
+          "word_id": "hsk3_991",
+          "meaning_vi": "cần thiết, cần"
+        },
+        {
+          "text": "充足",
+          "pinyin": "chōngzú",
+          "hanviet": "Sung Túc",
+          "hsk": 5,
+          "word_id": "hsk5_163",
+          "meaning_vi": "đầy đủ, dồi dào"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "蛋白质",
+          "pinyin": "dànbáizhì",
+          "hanviet": "Đản Bạch Chất",
+          "hsk": 6,
+          "word_id": "hsk6_265",
+          "meaning_vi": "protein"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "热量",
+          "pinyin": "rèliàng",
+          "hanviet": "Nhiệt Lượng",
+          "hsk": 5,
+          "word_id": "hsk5_914",
+          "meaning_vi": "nhiệt lượng, lượng calo"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "还",
+          "pinyin": "hái",
+          "hanviet": "Hoàn",
+          "hsk": 1,
+          "word_id": "hsk1_111",
+          "meaning_vi": "vẫn còn"
+        },
+        {
+          "text": "需要",
+          "pinyin": "xūyào",
+          "hanviet": "Nhu Yêu",
+          "hsk": 3,
+          "word_id": "hsk3_991",
+          "meaning_vi": "cần thiết, cần"
+        },
+        {
+          "text": "微量",
+          "pinyin": "wēi liàng",
+          "hanviet": "Vi Lượng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "有机",
+          "pinyin": "yǒujī",
+          "hanviet": "Hữu Cơ",
+          "hsk": 6,
+          "word_id": "hsk6_1603",
+          "meaning_vi": "hữu cơ"
+        },
+        {
+          "text": "化合物",
+          "pinyin": "huà hé wù",
+          "hanviet": "Hoa Cáp Vật"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "在大航海时代，长时间在远洋航行的水手经常因缺乏新鲜蔬菜而患上可怕的坏血病。",
+      "pinyin": "Zài dàhánghǎi shídài, cháng shíjiān zài yuǎnyáng hángxíng de shuǐshǒu jīngcháng yīn quēfá xīnxiān shūcài ér huànshàng kěpà de huàixuèbìng.",
+      "vi": "Vào thời đại phát kiến địa lý, các thủy thủ lênh đênh lâu ngày trên biển thường mắc bệnh hoại huyết vì thiếu rau tươi.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "大",
+          "pinyin": "dà",
+          "hanviet": "Đại",
+          "hsk": 1,
+          "word_id": "hsk1_53",
+          "meaning_vi": "to, lớn"
+        },
+        {
+          "text": "航海",
+          "pinyin": "hánghǎi",
+          "hanviet": "Hàng Hải",
+          "hsk": 7,
+          "word_id": "hsk7_1590",
+          "meaning_vi": "đi biển, hàng hải"
+        },
+        {
+          "text": "时代",
+          "pinyin": "shídài",
+          "hanviet": "Thời Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1012",
+          "meaning_vi": "thời đại"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "长时间",
+          "pinyin": "zhǎng shí jiān",
+          "hanviet": "Trường Thời Gian"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "远洋航行",
+          "pinyin": "yuǎn yáng háng xíng",
+          "hanviet": "Viễn Dương Hàng Hành"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "水手",
+          "pinyin": "shuǐ shǒu",
+          "hanviet": "Thủy Thủ"
+        },
+        {
+          "text": "经常",
+          "pinyin": "jīngcháng",
+          "hanviet": "Kinh Thường",
+          "hsk": 2,
+          "word_id": "hsk2_374",
+          "meaning_vi": "thường xuyên"
+        },
+        {
+          "text": "因",
+          "pinyin": "yīn",
+          "hanviet": "Nhân",
+          "hsk": 6,
+          "word_id": "hsk6_1574",
+          "meaning_vi": "bởi vì"
+        },
+        {
+          "text": "缺乏",
+          "pinyin": "quēfá",
+          "hanviet": "Khuyết Phạp",
+          "hsk": 5,
+          "word_id": "hsk5_905",
+          "meaning_vi": "thiếu thốn"
+        },
+        {
+          "text": "新鲜",
+          "pinyin": "xīnxiān",
+          "hanviet": "Tân Tiên",
+          "hsk": 3,
+          "word_id": "hsk3_984",
+          "meaning_vi": "tươi mới"
+        },
+        {
+          "text": "蔬菜",
+          "pinyin": "shūcài",
+          "hanviet": "Sơ Thái",
+          "hsk": 5,
+          "word_id": "hsk5_1055",
+          "meaning_vi": "rau xanh"
+        },
+        {
+          "text": "而",
+          "pinyin": "ér",
+          "hanviet": "Nhi",
+          "hsk": 4,
+          "word_id": "hsk4_183",
+          "meaning_vi": "mà, và"
+        },
+        {
+          "text": "患上",
+          "pinyin": "huàn shàng",
+          "hanviet": "Hoạn Thướng"
+        },
+        {
+          "text": "可怕",
+          "pinyin": "kěpà",
+          "hanviet": "Khả Phạ",
+          "hsk": 5,
+          "word_id": "hsk5_666",
+          "meaning_vi": "đáng sợ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "坏血病",
+          "pinyin": "huài xuè bìng",
+          "hanviet": "Hoại Huyết Bệnh"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "后来英国海军发现，只要让船员定期食用新鲜柠檬和柑橘，就能神奇地预防这一疾病。",
+      "pinyin": "Hòulái Yīngguó hǎijūn fāxiàn, zhǐyào ràng chuányuán dìngqī shíyòng xīnxiān níngméng hé gānjú, jiù néng shénqí de yùfáng zhè yí jíbìng.",
+      "vi": "Sau này hải quân Anh phát hiện ra chỉ cần cho thủy thủ đoàn ăn chanh tươi định kỳ là có thể phòng ngừa căn bệnh này kỳ diệu.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "后来",
+          "pinyin": "hòulái",
+          "hanviet": "Hậu Lai",
+          "hsk": 3,
+          "word_id": "hsk3_761",
+          "meaning_vi": "sau đó"
+        },
+        {
+          "text": "英国海军",
+          "pinyin": "yīng guó hǎi jūn",
+          "hanviet": "Anh Quốc Hải Quân"
+        },
+        {
+          "text": "发现",
+          "pinyin": "fāxiàn",
+          "hanviet": "Phát Hiện",
+          "hsk": 3,
+          "word_id": "hsk3_712",
+          "meaning_vi": "phát hiện"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "只要",
+          "pinyin": "zhǐyào",
+          "hanviet": "Chỉ Yêu",
+          "hsk": 3,
+          "word_id": "hsk3_1058",
+          "meaning_vi": "chỉ cần"
+        },
+        {
+          "text": "让",
+          "pinyin": "ràng",
+          "hanviet": "Nhượng",
+          "hsk": 2,
+          "word_id": "hsk2_422",
+          "meaning_vi": "để cho, khiến"
+        },
+        {
+          "text": "船员",
+          "pinyin": "chuán yuán",
+          "hanviet": "Thuyền Viên"
+        },
+        {
+          "text": "定期",
+          "pinyin": "dìngqī",
+          "hanviet": "Định Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_286",
+          "meaning_vi": "định kỳ"
+        },
+        {
+          "text": "食用",
+          "pinyin": "shíyòng",
+          "hanviet": "Thực Dụng",
+          "hsk": 5,
+          "word_id": "hsk5_1025",
+          "meaning_vi": "ăn, dùng làm thực phẩm"
+        },
+        {
+          "text": "新鲜",
+          "pinyin": "xīnxiān",
+          "hanviet": "Tân Tiên",
+          "hsk": 3,
+          "word_id": "hsk3_984",
+          "meaning_vi": "tươi mới"
+        },
+        {
+          "text": "柠檬",
+          "pinyin": "níng méng",
+          "hanviet": "Ninh Mông"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "柑橘",
+          "pinyin": "gān jú",
+          "hanviet": "Cam Quýt"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "就",
+          "pinyin": "jiù",
+          "hanviet": "Tựu",
+          "hsk": 2,
+          "word_id": "hsk2_376",
+          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)"
+        },
+        {
+          "text": "能",
+          "pinyin": "néng",
+          "hanviet": "Năng",
+          "hsk": 1,
+          "word_id": "hsk1_212",
+          "meaning_vi": "có thể"
+        },
+        {
+          "text": "神奇",
+          "pinyin": "shénqí",
+          "hanviet": "Thần Kì/thần Kỳ",
+          "hsk": 6,
+          "word_id": "hsk6_1167",
+          "meaning_vi": "thần kỳ, kỳ diệu"
+        },
+        {
+          "text": "地",
+          "pinyin": "de",
+          "hanviet": "Địa",
+          "hsk": 2,
+          "word_id": "hsk2_333",
+          "meaning_vi": "cách (trợ từ trạng ngữ)"
+        },
+        {
+          "text": "预防",
+          "pinyin": "yùfáng",
+          "hanviet": "Dự Phòng",
+          "hsk": 5,
+          "word_id": "hsk5_1424",
+          "meaning_vi": "đề phòng, phòng ngừa"
+        },
+        {
+          "text": "这一",
+          "pinyin": "zhè yī",
+          "hanviet": "Giá Nhất"
+        },
+        {
+          "text": "疾病",
+          "pinyin": "jíbìng",
+          "hanviet": "Tật Bệnh",
+          "hsk": 5,
+          "word_id": "hsk5_528",
+          "meaning_vi": "căn bệnh"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "二十世纪初，波兰化学家芬克首次提炼出了这种必需营养素，并创造了“维生素”一词。",
+      "pinyin": "Èrshí shìjì chū, Bōlán huàxuéjiā Fēnkè shǒucì tíliàn chū le zhè zhǒng bìxū yíngyǎngsù, bìng chuàngzào le “wéishēngsù” yì cí.",
+      "vi": "Đầu thế kỷ 20, nhà hóa học Ba Lan Casimir Funk đã chiết xuất được vi chất thiết yếu này và đặt ra thuật ngữ 'vitamin'.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "二十世纪",
+          "pinyin": "èr shí shì jì",
+          "hanviet": "Nhị Thập Thế Kỷ"
+        },
+        {
+          "text": "初",
+          "pinyin": "chū",
+          "hanviet": "Sơ",
+          "hsk": 5,
+          "word_id": "hsk5_170",
+          "meaning_vi": "đầu, ban đầu; lần đầu"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "波兰",
+          "pinyin": "bō lán",
+          "hanviet": "Ba Lan"
+        },
+        {
+          "text": "化学家",
+          "pinyin": "huà xué jiā",
+          "hanviet": "Hoa Học Gia"
+        },
+        {
+          "text": "芬克",
+          "pinyin": "fēn kè",
+          "hanviet": "Phân Khắc"
+        },
+        {
+          "text": "首次",
+          "pinyin": "shǒucì",
+          "hanviet": "Thủ Thứ",
+          "hsk": 5,
+          "word_id": "hsk5_1047",
+          "meaning_vi": "lần đầu tiên"
+        },
+        {
+          "text": "提炼出",
+          "pinyin": "tí liàn chū",
+          "hanviet": "Đề Luyện Xuất"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "这种",
+          "pinyin": "zhè zhǒng",
+          "hanviet": "Giá Chủng"
+        },
+        {
+          "text": "必需",
+          "pinyin": "bìxū",
+          "hanviet": "Tất Nhu",
+          "hsk": 5,
+          "word_id": "hsk5_54",
+          "meaning_vi": "cần thiết, thiết yếu"
+        },
+        {
+          "text": "营养素",
+          "pinyin": "yíng yǎng sù",
+          "hanviet": "Doanh Dưỡng Tố"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "并",
+          "pinyin": "bìng",
+          "hanviet": "Tinh",
+          "hsk": 4,
+          "word_id": "hsk4_39",
+          "meaning_vi": "và, đồng thời; hoàn toàn (không)"
+        },
+        {
+          "text": "创造",
+          "pinyin": "chuàngzào",
+          "hanviet": "Sáng Tạo",
+          "hsk": 5,
+          "word_id": "hsk5_192",
+          "meaning_vi": "sáng tạo"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "维生素",
+          "pinyin": "wéishēngsù",
+          "hanviet": "Duy Sinh Tố",
+          "hsk": 6,
+          "word_id": "hsk6_1373",
+          "meaning_vi": "vitamin"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "一词",
+          "pinyin": "yī cí",
+          "hanviet": "Nhất Từ"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "均衡摄入各种水果蔬菜与粗粮，是现代人获取丰富维生素的最佳途径。",
+      "pinyin": "Jūnhéng shèrù gèzhǒng shuǐguǒ shūcài yǔ cūliáng, shì xiàndàirén huòqǔ fēngfù wéishēngsù de zuìjiā tújìng.",
+      "vi": "Ăn uống cân bằng các loại rau củ quả và ngũ cốc là con đường tốt nhất để người hiện đại bổ sung đầy đủ vitamin.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "均衡",
+          "pinyin": "jūnhéng",
+          "hanviet": "Quân Hành",
+          "hsk": 7,
+          "word_id": "hsk7_2286",
+          "meaning_vi": "cân bằng, đồng đều"
+        },
+        {
+          "text": "摄入",
+          "pinyin": "shè rù",
+          "hanviet": "Nhiếp Nhập"
+        },
+        {
+          "text": "各种",
+          "pinyin": "gèzhǒng",
+          "hanviet": "Các Chủng",
+          "hsk": 4,
+          "word_id": "hsk4_248",
+          "meaning_vi": "các loại, đủ loại"
+        },
+        {
+          "text": "水果",
+          "pinyin": "shuǐguǒ",
+          "hanviet": "Thuỷ Quả",
+          "hsk": 1,
+          "word_id": "hsk1_278",
+          "meaning_vi": "trái cây"
+        },
+        {
+          "text": "蔬菜",
+          "pinyin": "shūcài",
+          "hanviet": "Sơ Thái",
+          "hsk": 5,
+          "word_id": "hsk5_1055",
+          "meaning_vi": "rau xanh"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "粗粮",
+          "pinyin": "cū liáng",
+          "hanviet": "Thô Lương"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "现代人",
+          "pinyin": "xiàn dài rén",
+          "hanviet": "Hiện Đại Nhân"
+        },
+        {
+          "text": "获取",
+          "pinyin": "huòqǔ",
+          "hanviet": "Hoạch Thủ",
+          "hsk": 4,
+          "word_id": "hsk4_318",
+          "meaning_vi": "thu được, đạt được"
+        },
+        {
+          "text": "丰富",
+          "pinyin": "fēngfù",
+          "hanviet": "Phong Phú",
+          "hsk": 4,
+          "word_id": "hsk4_204",
+          "meaning_vi": "phong phú"
+        },
+        {
+          "text": "维生素",
+          "pinyin": "wéishēngsù",
+          "hanviet": "Duy Sinh Tố",
+          "hsk": 6,
+          "word_id": "hsk6_1373",
+          "meaning_vi": "vitamin"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "最佳",
+          "pinyin": "zuìjiā",
+          "hanviet": "Tối Giai",
+          "hsk": 5,
+          "word_id": "hsk5_1597",
+          "meaning_vi": "tốt nhất, tối ưu, xuất sắc nhất"
+        },
+        {
+          "text": "途径",
+          "pinyin": "tújìng",
+          "hanviet": "Đồ Kính",
+          "hsk": 6,
+          "word_id": "hsk6_1331",
+          "meaning_vi": "con đường, biện pháp"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk2_374",
+    "hsk3_712",
+    "hsk5_192",
+    "hsk4_204",
+    "hsk5_926"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Thủy thủ viễn dương thời xưa hay mắc bệnh hoại huyết vì thiếu chất gì?",
+      "options_vi": [
+        "Vitamin C từ rau quả tươi",
+        "Nước ngọt có ga",
+        "Dầu mỡ động vật"
+      ],
+      "answer": 0,
+      "explanation_vi": "Thiếu hụt vitamin C gây ra chứng hoại huyết, rụng răng và chảy máu chân răng."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Loại quả nào đã giúp hải quân Anh phòng chống hữu hiệu căn bệnh trên biển này?",
+      "options_vi": [
+        "Chanh tươi và cam quýt",
+        "Chuối sấy khô",
+        "Hạt tiêu đen"
+      ],
+      "answer": 0,
+      "explanation_vi": "Nước chanh tươi giàu vitamin C giúp đẩy lùi bệnh hoại huyết."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Cách tốt nhất để người hiện đại hấp thụ đầy đủ các loại vitamin là gì?",
+      "options_vi": [
+        "Ăn uống đa dạng, cân bằng rau xanh, hoa quả và ngũ cốc",
+        "Chỉ uống nước ngọt",
+        "Chỉ ăn thịt mỡ"
+      ],
+      "answer": 0,
+      "explanation_vi": "Chế độ ăn phong phú rau quả tươi cung cấp tự nhiên và đầy đủ mọi vitamin cần thiết."
+    }
+  ]
+}

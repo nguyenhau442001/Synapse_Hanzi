@@ -1,0 +1,620 @@
+{
+  "id": "doraemon_manga_002",
+  "series": "doraemon",
+  "series_title": "哆啦A梦",
+  "series_title_vi": "Đô-rê-mon",
+  "chapter_no": 2,
+  "title": {
+    "zh": "改造植物",
+    "zh_trad": "改造植物",
+    "vi": "Cải Tạo Thực Vật (Biến Đổi Gen Hoa Cây)",
+    "pinyin": "Gǎizào zhíwù"
+  },
+  "description_vi": "Doraemon giới thiệu cỗ máy biến đổi gen thực vật tương lai. Nobita nghịch ngợm tạo ra những giống cây kỳ dị dở khóc dở cười!",
+  "cover_image": "assets/images/readings/manga/doraemon/plant/page_01.webp",
+  "source": "《哆啦A梦》第21卷 · 原作：藤子·F·不二雄 · 小学馆 / 香港文化传信",
+  "source_credits": "Bản quyền nguyên tác thuộc Fujiko Pro & Shogakukan. Sử dụng làm tư liệu đối chiếu học tập tiếng Trung phi thương mại.",
+  "page_count": 8,
+  "difficulty": "HSK 3 - 4 (Từ vựng khoa học đời sống & thảo mộc)",
+  "estimatedMinutes": 8,
+  "pages": [
+    {
+      "page_num": 1,
+      "image": "assets/images/readings/manga/doraemon/plant/page_01.webp",
+      "dialogues": [
+        {
+          "id": "s2_p1_d1",
+          "character": "标题",
+          "bbox": {
+            "x": 35.0,
+            "y": 30.0,
+            "width": 45.0,
+            "height": 14.0
+          },
+          "zh": "改造植物",
+          "zh_trad": "改造植物",
+          "pinyin": "Gǎizào zhíwù",
+          "vi": "Tiêu đề: Cải tạo thực vật",
+          "tokens": [
+            {
+              "text": "改造",
+              "pinyin": "gǎizào",
+              "hanviet": "Cải Tạo",
+              "meaning_vi": "cải tạo, biến đổi",
+              "hsk": 4
+            },
+            {
+              "text": "植物",
+              "pinyin": "zhíwù",
+              "hanviet": "Thực Vật",
+              "meaning_vi": "thực vật, cây cỏ",
+              "hsk": 3
+            }
+          ]
+        },
+        {
+          "id": "s2_p1_d2",
+          "character": "静香 (静宜)",
+          "bbox": {
+            "x": 58.0,
+            "y": 55.0,
+            "width": 30.0,
+            "height": 22.0
+          },
+          "zh": "我种的郁金香发芽了，真期待它开花！",
+          "zh_trad": "我種的鬱金香發芽了，真期待它開花！",
+          "pinyin": "Wǒ zhòng de yùjīnxiāng fāyá le, zhēn qīdài tā kāihuā!",
+          "vi": "Cây hoa tulip mình trồng đã nảy mầm rồi, thật mong chờ ngày nó nở hoa!",
+          "tokens": [
+            {
+              "text": "郁金香",
+              "pinyin": "yùjīnxiāng",
+              "hanviet": "Uất Kim Hương",
+              "meaning_vi": "hoa tulip",
+              "hsk": 4
+            },
+            {
+              "text": "发芽",
+              "pinyin": "fāyá",
+              "hanviet": "Phát Nha",
+              "meaning_vi": "nảy mầm",
+              "hsk": 4
+            },
+            {
+              "text": "期待",
+              "pinyin": "qīdài",
+              "hanviet": "Kỳ Đãi",
+              "meaning_vi": "mong chờ, kỳ vọng",
+              "hsk": 4
+            },
+            {
+              "text": "开花",
+              "pinyin": "kāihuā",
+              "hanviet": "Khai Hoa",
+              "meaning_vi": "nở hoa",
+              "hsk": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_num": 2,
+      "image": "assets/images/readings/manga/doraemon/plant/page_02.webp",
+      "dialogues": [
+        {
+          "id": "s2_p2_d1",
+          "character": "哆啦A梦",
+          "bbox": {
+            "x": 55.0,
+            "y": 15.0,
+            "width": 38.0,
+            "height": 26.0
+          },
+          "zh": "只要在植物细胞的染色体中加点工夫，就能培育出新品种！",
+          "zh_trad": "只要在植物細胞的染色體中加點工夫，便能培育出新品種！",
+          "pinyin": "Zhǐyào zài zhíwù xìbāo de rǎnsètǐ zhōng jiā diǎn gōngfu, jiù néng péiyù chū xīn pǐnzhǒng!",
+          "vi": "Chỉ cần tác động một chút vào nhiễm sắc thể trong tế bào thực vật, là có thể lai tạo ra giống cây mới!",
+          "tokens": [
+            {
+              "text": "细胞",
+              "pinyin": "xìbāo",
+              "hanviet": "Tế Bào",
+              "meaning_vi": "tế bào",
+              "hsk": 4
+            },
+            {
+              "text": "染色体",
+              "pinyin": "rǎnsètǐ",
+              "hanviet": "Nhiễm Sắc Thể",
+              "meaning_vi": "nhiễm sắc thể",
+              "hsk": 5
+            },
+            {
+              "text": "培育",
+              "pinyin": "péiyù",
+              "hanviet": "Bồi Dục",
+              "meaning_vi": "bồi dưỡng, ươm mầm, lai tạo",
+              "hsk": 4
+            },
+            {
+              "text": "品种",
+              "pinyin": "pǐnzhǒng",
+              "hanviet": "Phẩm Chủng",
+              "meaning_vi": "chủng loại, giống loài",
+              "hsk": 4
+            }
+          ]
+        },
+        {
+          "id": "s2_p2_d2",
+          "character": "哆啦A梦",
+          "bbox": {
+            "x": 16.0,
+            "y": 60.0,
+            "width": 35.0,
+            "height": 24.0
+          },
+          "zh": "遗传因子就像是一张制造生物的设计图一样……",
+          "zh_trad": "遺傳因子就像是一張製造生物的設計圖一樣……",
+          "pinyin": "Yíchuán yīnzǐ jiù xiàng shì yì zhāng zhìzào shēngwù de shèjìtú yíyàng...",
+          "vi": "Gen di truyền cũng giống như một bản thiết kế tạo nên sinh vật vậy...",
+          "tokens": [
+            {
+              "text": "遗传",
+              "pinyin": "yíchuán",
+              "hanviet": "Di Truyền",
+              "meaning_vi": "di truyền",
+              "hsk": 4
+            },
+            {
+              "text": "设计图",
+              "pinyin": "shèjìtú",
+              "hanviet": "Thiết Kế Đồ",
+              "meaning_vi": "bản vẽ thiết kế",
+              "hsk": 4
+            },
+            {
+              "text": "生物",
+              "pinyin": "shēngwù",
+              "hanviet": "Sinh Vật",
+              "meaning_vi": "sinh vật",
+              "hsk": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_num": 3,
+      "image": "assets/images/readings/manga/doraemon/plant/page_03.webp",
+      "dialogues": [
+        {
+          "id": "s2_p3_d1",
+          "character": "大雄",
+          "bbox": {
+            "x": 58.0,
+            "y": 15.0,
+            "width": 32.0,
+            "height": 24.0
+          },
+          "zh": "我也要制造前所未见的新品种郁金香！",
+          "zh_trad": "我也要製造前所未見的新品種鬱金香！",
+          "pinyin": "Wǒ yě yào zhìzào qiánsuǒwèijiàn de xīn pǐnzhǒng yùjīnxiāng!",
+          "vi": "Tớ cũng muốn tạo ra giống hoa tulip mới chưa từng thấy trước đây!",
+          "tokens": [
+            {
+              "text": "前所未见",
+              "pinyin": "qiánsuǒwèijiàn",
+              "hanviet": "Tiền Sở Vị Kiến",
+              "meaning_vi": "chưa từng thấy bao giờ",
+              "hsk": 5
+            },
+            {
+              "text": "制造",
+              "pinyin": "zhìzào",
+              "hanviet": "Chế Tạo",
+              "meaning_vi": "sản xuất, chế tạo",
+              "hsk": 3
+            }
+          ]
+        },
+        {
+          "id": "s2_p3_d2",
+          "character": "哆啦A梦",
+          "bbox": {
+            "x": 18.0,
+            "y": 62.0,
+            "width": 30.0,
+            "height": 22.0
+          },
+          "zh": "记住，千万不能乱来啊！",
+          "zh_trad": "記着，千萬不能亂來啊！",
+          "pinyin": "Jìzhu, qiānwàn bù néng luànlái a!",
+          "vi": "Nhớ kỹ đấy, tuyệt đối không được làm bậy đâu đó!",
+          "tokens": [
+            {
+              "text": "记住",
+              "pinyin": "jìzhu",
+              "hanviet": "Ký Trụ",
+              "meaning_vi": "ghi nhớ",
+              "hsk": 2
+            },
+            {
+              "text": "千万",
+              "pinyin": "qiānwàn",
+              "hanviet": "Thiên Vạn",
+              "meaning_vi": "nhất thiết, tuyệt đối",
+              "hsk": 3
+            },
+            {
+              "text": "乱来",
+              "pinyin": "luànlái",
+              "hanviet": "Loạn Lai",
+              "meaning_vi": "làm bừa, quậy phá",
+              "hsk": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_num": 4,
+      "image": "assets/images/readings/manga/doraemon/plant/page_04.webp",
+      "dialogues": [
+        {
+          "id": "s2_p4_d1",
+          "character": "大雄",
+          "bbox": {
+            "x": 60.0,
+            "y": 14.0,
+            "width": 30.0,
+            "height": 22.0
+          },
+          "zh": "把这个和那个混合在一起，会变成什么样呢？",
+          "zh_trad": "把這個和那個混合在一起，會變成什麼樣呢？",
+          "pinyin": "Bǎ zhèige hé nàige hùnhé zài yìqǐ, huì biàn chéng shénmeyàng ne?",
+          "vi": "Trộn cái này với cái kia lại với nhau, sẽ biến thành cái gì nhỉ?",
+          "tokens": [
+            {
+              "text": "混合",
+              "pinyin": "hùnhé",
+              "hanviet": "Hỗn Hợp",
+              "meaning_vi": "pha trộn, hỗn hợp",
+              "hsk": 4
+            },
+            {
+              "text": "变成",
+              "pinyin": "biàn chéng",
+              "hanviet": "Biến Thành",
+              "meaning_vi": "trở thành, biến thành",
+              "hsk": 3
+            }
+          ]
+        },
+        {
+          "id": "s2_p4_d2",
+          "character": "大雄",
+          "bbox": {
+            "x": 16.0,
+            "y": 62.0,
+            "width": 32.0,
+            "height": 24.0
+          },
+          "zh": "快点快点，给我长出又大又香的花朵来！",
+          "zh_trad": "快點快點，給我長出又大又香的花朵來！",
+          "pinyin": "Kuài diǎn kuài diǎn, gěi wǒ zhǎng chū yòu dà yòu xiāng de huāduǒ lái!",
+          "vi": "Mau lên mau lên, mau mọc ra bông hoa vừa to vừa thơm cho ta!",
+          "tokens": [
+            {
+              "text": "长出",
+              "pinyin": "zhǎng chū",
+              "hanviet": "Trưởng Xuất",
+              "meaning_vi": "mọc ra",
+              "hsk": 2
+            },
+            {
+              "text": "花朵",
+              "pinyin": "huāduǒ",
+              "hanviet": "Hoa Đóa",
+              "meaning_vi": "đóa hoa",
+              "hsk": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_num": 5,
+      "image": "assets/images/readings/manga/doraemon/plant/page_05.webp",
+      "dialogues": [
+        {
+          "id": "s2_p5_d1",
+          "character": "大雄",
+          "bbox": {
+            "x": 58.0,
+            "y": 16.0,
+            "width": 32.0,
+            "height": 24.0
+          },
+          "zh": "怎么长出像南瓜一样的东西来了？！",
+          "zh_trad": "怎麼長出像南瓜一樣的東西來了？！",
+          "pinyin": "Zěnme zhǎng chū xiàng nánguā yíyàng de dōngxi lái le?!",
+          "vi": "Sao lại mọc ra thứ tròn ủng giống như quả bí ngô thế này?!",
+          "tokens": [
+            {
+              "text": "怎么",
+              "pinyin": "zěnme",
+              "hanviet": "Chẩm Ma",
+              "meaning_vi": "sao mà, thế nào",
+              "hsk": 1
+            },
+            {
+              "text": "南瓜",
+              "pinyin": "nánguā",
+              "hanviet": "Nam Qua",
+              "meaning_vi": "quả bí ngô, bí đỏ",
+              "hsk": 3
+            }
+          ]
+        },
+        {
+          "id": "s2_p5_d2",
+          "character": "哆啦A梦",
+          "bbox": {
+            "x": 15.0,
+            "y": 60.0,
+            "width": 35.0,
+            "height": 22.0
+          },
+          "zh": "哎呀！你到底把什么奇怪的种子混进去了！",
+          "zh_trad": "哎呀！你到底把什麼奇怪的種子混進去了！",
+          "pinyin": "Āiyā! Nǐ dàodǐ bǎ shénme qíguài de zhǒngzǐ hùn jìnqù le!",
+          "vi": "Trời đất ơi! Rốt cuộc cậu đã trộn hạt giống kỳ quặc gì vào thế!",
+          "tokens": [
+            {
+              "text": "奇怪",
+              "pinyin": "qíguài",
+              "hanviet": "Kỳ Quái",
+              "meaning_vi": "kỳ quái, lạ lùng",
+              "hsk": 3
+            },
+            {
+              "text": "种子",
+              "pinyin": "zhǒngzǐ",
+              "hanviet": "Chủng Tử",
+              "meaning_vi": "hạt giống",
+              "hsk": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_num": 6,
+      "image": "assets/images/readings/manga/doraemon/plant/page_06.webp",
+      "dialogues": [
+        {
+          "id": "s2_p6_d1",
+          "character": "大雄",
+          "bbox": {
+            "x": 55.0,
+            "y": 15.0,
+            "width": 32.0,
+            "height": 22.0
+          },
+          "zh": "这棵植物竟然会自己动起来抓虫子！",
+          "zh_trad": "這棵植物竟然會自己動起來抓蟲子！",
+          "pinyin": "Zhè kē zhíwù jìngrán huì zìjǐ dòng qǐlái zhuā chóngzi!",
+          "vi": "Cái cây này thế mà lại tự cử động để bắt sâu bọ kìa!",
+          "tokens": [
+            {
+              "text": "动起来",
+              "pinyin": "dòng qǐlái",
+              "hanviet": "Động Khởi Lai",
+              "meaning_vi": "cử động, bắt đầu chuyển động",
+              "hsk": 3
+            },
+            {
+              "text": "虫子",
+              "pinyin": "chóngzi",
+              "hanviet": "Trùng Tử",
+              "meaning_vi": "sâu bọ, côn trùng",
+              "hsk": 3
+            }
+          ]
+        },
+        {
+          "id": "s2_p6_d2",
+          "character": "哆啦A梦",
+          "bbox": {
+            "x": 18.0,
+            "y": 62.0,
+            "width": 30.0,
+            "height": 22.0
+          },
+          "zh": "这是食虫植物的特性！别靠得太近！",
+          "zh_trad": "這是食蟲植物的特性！別靠得太近！",
+          "pinyin": "Zhè shì shíchóng zhíwù de tèxìng! Bié kào de tài jìn!",
+          "vi": "Đây là đặc tính của cây ăn thịt (bắt mồi)! Đừng có đứng quá gần!",
+          "tokens": [
+            {
+              "text": "特性",
+              "pinyin": "tèxìng",
+              "hanviet": "Đặc Tính",
+              "meaning_vi": "đặc tính",
+              "hsk": 4
+            },
+            {
+              "text": "靠近",
+              "pinyin": "kàojìn",
+              "hanviet": "Kháo Cận",
+              "meaning_vi": "tiến lại gần",
+              "hsk": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_num": 7,
+      "image": "assets/images/readings/manga/doraemon/plant/page_07.webp",
+      "dialogues": [
+        {
+          "id": "s2_p7_d1",
+          "character": "大雄",
+          "bbox": {
+            "x": 58.0,
+            "y": 18.0,
+            "width": 32.0,
+            "height": 24.0
+          },
+          "zh": "哇！藤蔓把我的裤子咬住了！快救我！",
+          "zh_trad": "哇！藤蔓把我的褲子咬住了！快救我！",
+          "pinyin": "Wā! Téngwàn bǎ wǒ de kùzi yǎozhù le! Kuài jiù wǒ!",
+          "vi": "Oa! Dây leo cắn chặt lấy quần của tớ rồi! Mau cứu tớ với!",
+          "tokens": [
+            {
+              "text": "藤蔓",
+              "pinyin": "téngwàn",
+              "hanviet": "Đằng Man",
+              "meaning_vi": "dây leo",
+              "hsk": 4
+            },
+            {
+              "text": "裤子",
+              "pinyin": "kùzi",
+              "hanviet": "Khố Tử",
+              "meaning_vi": "quần",
+              "hsk": 2
+            },
+            {
+              "text": "咬住",
+              "pinyin": "yǎozhù",
+              "hanviet": "Giao Trụ",
+              "meaning_vi": "cắn chặt",
+              "hsk": 3
+            }
+          ]
+        },
+        {
+          "id": "s2_p7_d2",
+          "character": "妈妈",
+          "bbox": {
+            "x": 15.0,
+            "y": 60.0,
+            "width": 35.0,
+            "height": 24.0
+          },
+          "zh": "大雄！你又在院子里搞什么鬼名堂！",
+          "zh_trad": "大雄！你又在院子裏搞什麼鬼名堂！",
+          "pinyin": "Dàxióng! Nǐ yòu zài yuànzi lǐ gǎo shénme guǐ míngtáng!",
+          "vi": "Nobita! Con lại bày trò ma mãnh gì ngoài sân thế hả!",
+          "tokens": [
+            {
+              "text": "院子",
+              "pinyin": "yuànzi",
+              "hanviet": "Viện Tử",
+              "meaning_vi": "sân vườn",
+              "hsk": 3
+            },
+            {
+              "text": "鬼名堂",
+              "pinyin": "guǐ míngtáng",
+              "hanviet": "Quỷ Danh Đường",
+              "meaning_vi": "trò ma mãnh, quậy phá",
+              "hsk": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_num": 8,
+      "image": "assets/images/readings/manga/doraemon/plant/page_08.webp",
+      "dialogues": [
+        {
+          "id": "s2_p8_d1",
+          "character": "哆啦A梦",
+          "bbox": {
+            "x": 50.0,
+            "y": 20.0,
+            "width": 35.0,
+            "height": 24.0
+          },
+          "zh": "幸好把基因复原喷雾喷上去了，不然整个院子都要被占领了！",
+          "zh_trad": "幸好把基因復原噴霧噴上去了，不然整個院子都要被佔領了！",
+          "pinyin": "Xìnghǎo bǎ jīyīn fùyuán pēnwù pēn shàngqu le, bùrán zhěnggè yuànzi dōu yào bèi zhànlǐng le!",
+          "vi": "May mà kịp xịt bình xịt phục hồi gen lên, không thì cả cái sân vườn bị nó chiếm đóng mất rồi!",
+          "tokens": [
+            {
+              "text": "幸好",
+              "pinyin": "xìnghǎo",
+              "hanviet": "Hạnh Hảo",
+              "meaning_vi": "may mắn thay",
+              "hsk": 4
+            },
+            {
+              "text": "基因",
+              "pinyin": "jīyīn",
+              "hanviet": "Cơ Nhân",
+              "meaning_vi": "gen",
+              "hsk": 4
+            },
+            {
+              "text": "复原",
+              "pinyin": "fùyuán",
+              "hanviet": "Phục Nguyên",
+              "meaning_vi": "khôi phục ban đầu",
+              "hsk": 4
+            },
+            {
+              "text": "占领",
+              "pinyin": "zhànlǐng",
+              "hanviet": "Chiếm Lãnh",
+              "meaning_vi": "chiếm lĩnh, chiếm đóng",
+              "hsk": 4
+            }
+          ]
+        },
+        {
+          "id": "s2_p8_d2",
+          "character": "大雄",
+          "bbox": {
+            "x": 15.0,
+            "y": 62.0,
+            "width": 32.0,
+            "height": 22.0
+          },
+          "zh": "我还是老老实实给普通的郁金香浇水吧……",
+          "zh_trad": "我還是老老實實給普通的鬱金香澆水吧……",
+          "pinyin": "Wǒ háishì lǎolǎoshíshí gěi pǔtōng de yùjīnxiāng jiāoshuǐ ba...",
+          "vi": "Thôi thì mình cứ ngoan ngoãn tưới nước cho cây hoa tulip bình thường vậy...",
+          "tokens": [
+            {
+              "text": "老老实实",
+              "pinyin": "lǎolǎoshíshí",
+              "hanviet": "Lão Lão Thật Thật",
+              "meaning_vi": "an phận, thật thà",
+              "hsk": 4
+            },
+            {
+              "text": "普通",
+              "pinyin": "pǔtōng",
+              "hanviet": "Phổ Thông",
+              "meaning_vi": "bình thường",
+              "hsk": 3
+            },
+            {
+              "text": "浇水",
+              "pinyin": "jiāoshuǐ",
+              "hanviet": "Kiêu Thủy",
+              "meaning_vi": "tưới nước",
+              "hsk": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

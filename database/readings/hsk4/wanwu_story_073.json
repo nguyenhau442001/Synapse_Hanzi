@@ -1,0 +1,861 @@
+{
+  "id": "wanwu_story_073",
+  "chapter_no": 73,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 4,
+  "book_page_start": 753,
+  "book_page_end": 762,
+  "page_display": "Trang 753 - 762",
+  "title": {
+    "zh": "弓箭：从狩猎战争到竞技健身",
+    "vi": "Cung tên: Từ săn bắn, chiến trận đến thể thao đỉnh cao"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🏹",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_073.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_073.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 753 - 762 · Vũ khí tầm xa cổ xưa nhất, nghệ thuật chế tạo cung tên複合 và môn 'Xạ' trong Lục Nghệ của người quân tử.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "弓箭是原始人类发明的最具威力的远程攻击武器，深刻改变了狩猎与战争的面貌。",
+      "pinyin": "Gōngjiàn shì yuánshǐ rénlèi fāmíng de zuì jù wēilì de yuǎnchéng gōngjī wǔqì, shēnkè gǎibiàn le shòuliè yǔ zhànzhēng de miànmào.",
+      "vi": "Cung tên là vũ khí tầm xa uy lực nhất do con người thời nguyên thủy sáng chế, làm thay đổi sâu sắc diện mạo săn bắn và chiến tranh.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "弓箭",
+          "pinyin": "gōng jiàn",
+          "hanviet": "Cung Tiễn"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "原始",
+          "pinyin": "yuánshǐ",
+          "hanviet": "Nguyên Thủy",
+          "hsk": 6,
+          "word_id": "hsk6_1621",
+          "meaning_vi": "nguyên thủy"
+        },
+        {
+          "text": "人类",
+          "pinyin": "rénlèi",
+          "hanviet": "Nhân Loại",
+          "hsk": 5,
+          "word_id": "hsk5_921",
+          "meaning_vi": "loài người, nhân loại"
+        },
+        {
+          "text": "发明",
+          "pinyin": "fāmíng",
+          "hanviet": "Phát Minh",
+          "hsk": 5,
+          "word_id": "hsk5_320",
+          "meaning_vi": "phát minh"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "最具",
+          "pinyin": "zuì jù",
+          "hanviet": "Tối Cụ"
+        },
+        {
+          "text": "威力",
+          "pinyin": "wēilì",
+          "hanviet": "Uy Lực",
+          "hsk": 7,
+          "word_id": "hsk7_4227",
+          "meaning_vi": "uy lực"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "远程",
+          "pinyin": "yuǎnchéng",
+          "hanviet": "Viễn Trình",
+          "hsk": 6,
+          "word_id": "hsk6_1626",
+          "meaning_vi": "từ xa (làm việc/học tập)"
+        },
+        {
+          "text": "攻击",
+          "pinyin": "gōngjī",
+          "hanviet": "Công Kích",
+          "hsk": 6,
+          "word_id": "hsk6_457",
+          "meaning_vi": "tấn công"
+        },
+        {
+          "text": "武器",
+          "pinyin": "wǔqì",
+          "hanviet": "Vũ Khí",
+          "hsk": 6,
+          "word_id": "hsk6_1398",
+          "meaning_vi": "vũ khí"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "深刻",
+          "pinyin": "shēnkè",
+          "hanviet": "Thâm Khắc",
+          "hsk": 5,
+          "word_id": "hsk5_984",
+          "meaning_vi": "sâu sắc"
+        },
+        {
+          "text": "改变",
+          "pinyin": "gǎibiàn",
+          "hanviet": "Cải Biến",
+          "hsk": 4,
+          "word_id": "hsk4_219",
+          "meaning_vi": "thay đổi"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "狩猎",
+          "pinyin": "shòu liè",
+          "hanviet": "Thú Liệp"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "战争",
+          "pinyin": "zhànzhēng",
+          "hanviet": "Chiến Tranh",
+          "hsk": 6,
+          "word_id": "hsk6_1664",
+          "meaning_vi": "chiến tranh"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "面貌",
+          "pinyin": "miànmào",
+          "hanviet": "Diện Mạo",
+          "hsk": 7,
+          "word_id": "hsk7_2815",
+          "meaning_vi": "diện mạo, bộ mặt"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "中国古人掌握了精湛的复合弓制作工艺，采用木材、角质、牛筋和天然生漆层层粘合，弹性惊人。",
+      "pinyin": "Zhōngguó gǔrén zhǎngwò le jīngzhàn de fùhégōng zhìzuò gōngyì, cǎiyòng mùcái, jiǎozhì, niújīn hé tiānrán shēngqī céngcéng zhānhé, tánxìng jīngrén.",
+      "vi": "Người xưa nắm vững kỹ nghệ làm cung liên hợp, dùng gỗ, sừng, gân bò và sơn ta ép lớp, tạo nên sức bật đáng kinh ngạc.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "古人",
+          "pinyin": "gǔrén",
+          "hanviet": "Cổ Nhân",
+          "hsk": 6,
+          "word_id": "hsk6_478",
+          "meaning_vi": "người xưa, người cổ đại"
+        },
+        {
+          "text": "掌握",
+          "pinyin": "zhǎngwò",
+          "hanviet": "Chưởng Ác",
+          "hsk": 5,
+          "word_id": "hsk5_1474",
+          "meaning_vi": "nắm vững"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "精湛",
+          "pinyin": "jīngzhàn",
+          "hanviet": "Tinh Trạm",
+          "hsk": 7,
+          "word_id": "hsk7_2191",
+          "meaning_vi": "tuyệt vời"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "复合弓",
+          "pinyin": "fù hé gōng",
+          "hanviet": "Phục Cáp Cung"
+        },
+        {
+          "text": "制作",
+          "pinyin": "zhìzuò",
+          "hanviet": "Chế Tác",
+          "hsk": 5,
+          "word_id": "hsk5_1519",
+          "meaning_vi": "chế tác, làm ra"
+        },
+        {
+          "text": "工艺",
+          "pinyin": "gōngyì",
+          "hanviet": "Công Nghệ",
+          "hsk": 5,
+          "word_id": "hsk5_416",
+          "meaning_vi": "công nghệ, kỹ thuật chế tác"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "采用",
+          "pinyin": "cǎiyòng",
+          "hanviet": "Thái Dụng",
+          "hsk": 5,
+          "word_id": "hsk5_88",
+          "meaning_vi": "áp dụng, sử dụng"
+        },
+        {
+          "text": "木材",
+          "pinyin": "mùcái",
+          "hanviet": "Mộc Tài",
+          "hsk": 6,
+          "word_id": "hsk6_940",
+          "meaning_vi": "gỗ, vật liệu gỗ"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "角质",
+          "pinyin": "jiǎo zhì",
+          "hanviet": "Giác Chất"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "牛筋",
+          "pinyin": "niú jīn",
+          "hanviet": "Ngưu Cân"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "天然",
+          "pinyin": "tiānrán",
+          "hanviet": "Thiên Nhiên",
+          "hsk": 6,
+          "word_id": "hsk6_1290",
+          "meaning_vi": "tự nhiên"
+        },
+        {
+          "text": "生漆",
+          "pinyin": "shēng qī",
+          "hanviet": "Sinh Tất"
+        },
+        {
+          "text": "层层",
+          "pinyin": "céng céng",
+          "hanviet": "Tầng Tầng"
+        },
+        {
+          "text": "粘合",
+          "pinyin": "zhān hé",
+          "hanviet": "Niêm Cáp"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "弹性",
+          "pinyin": "tánxìng",
+          "hanviet": "Đạn Tính",
+          "hsk": 6,
+          "word_id": "hsk6_1263",
+          "meaning_vi": "tính co giãn, đàn hồi"
+        },
+        {
+          "text": "惊人",
+          "pinyin": "jīngrén",
+          "hanviet": "Kinh Nhân",
+          "hsk": 6,
+          "word_id": "hsk6_715",
+          "meaning_vi": "đáng kinh ngạc, kinh người"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "在周代，‘射礼’被列为君子必须修习的‘六艺’之一，强调‘发而不中，反求诸己’的道德修养。",
+      "pinyin": "Zài Zhōudài, ‘shèlǐ’ bèi liè wéi jūnzǐ bìxū xiūxí de ‘liùyì’ zhī yī, qiángdiào ‘fā ér bù zhòng, fǎn qiú zhū jǐ’ de dàodé xiūyǎng.",
+      "vi": "Thời Chu, 'Xạ lễ' (bắn cung) được xếp vào 'Lục nghệ' người quân tử phải tu tập, đề cao đức tính khiêm nhường tự xét mình khi bắn trượt.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "周代",
+          "pinyin": "zhōu dài",
+          "hanviet": "Chu Đại"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "射礼",
+          "pinyin": "shè lǐ",
+          "hanviet": "Xạ Lễ"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "列为",
+          "pinyin": "liè wèi",
+          "hanviet": "Liệt Vi"
+        },
+        {
+          "text": "君子",
+          "pinyin": "jūnzǐ",
+          "hanviet": "Quân Tử",
+          "hsk": 7,
+          "word_id": "hsk7_2289",
+          "meaning_vi": "quân tử, người chính trực"
+        },
+        {
+          "text": "必须",
+          "pinyin": "bìxū",
+          "hanviet": "Tất Tu",
+          "hsk": 3,
+          "word_id": "hsk3_625",
+          "meaning_vi": "phải, bắt buộc"
+        },
+        {
+          "text": "修习",
+          "pinyin": "xiū xí",
+          "hanviet": "Tu Tập"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "六艺",
+          "pinyin": "liù yì",
+          "hanviet": "Lục Nghệ"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "之一",
+          "pinyin": "zhī yī",
+          "hanviet": "Chi Nhất"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "强调",
+          "pinyin": "qiángdiào",
+          "hanviet": "Cường Điệu",
+          "hsk": 5,
+          "word_id": "hsk5_871",
+          "meaning_vi": "nhấn mạnh"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "发而",
+          "pinyin": "fā ér",
+          "hanviet": "Phát Nhi"
+        },
+        {
+          "text": "不",
+          "pinyin": "bù",
+          "hanviet": "Bất",
+          "hsk": 1,
+          "word_id": "hsk1_25",
+          "meaning_vi": "không"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "反求诸己",
+          "pinyin": "fǎn qiú zhū jǐ",
+          "hanviet": "Phản Cầu Chư Kỷ"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "道德修养",
+          "pinyin": "dào dé xiū yǎng",
+          "hanviet": "Đạo Đức Tu Dưỡng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "随着火药武器的兴起，弓箭逐渐退出了主力战场的舞台，转而向体育竞技与强身健体演进。",
+      "pinyin": "Suízhe huǒyào wǔqì de xīngqǐ, gōngjiàn zhújiàn tuìchū le zhǔlì zhànchǎng de wǔtái, zhuǎn'ér xiàng tǐyù jìngjì yǔ qiángshēn-jiàntǐ yǎnjìn.",
+      "vi": "Khi vũ khí thuốc súng xuất hiện, cung tên dần lui khỏi chiến trường, chuyển hóa thành môn thể thao rèn luyện thân thể dẻo dai.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "随着",
+          "pinyin": "suízhe",
+          "hanviet": "Tuỳ Trước",
+          "hsk": 4,
+          "word_id": "hsk4_710",
+          "meaning_vi": "theo cùng với"
+        },
+        {
+          "text": "火药",
+          "pinyin": "huǒ yào",
+          "hanviet": "Hoả Dược"
+        },
+        {
+          "text": "武器",
+          "pinyin": "wǔqì",
+          "hanviet": "Vũ Khí",
+          "hsk": 6,
+          "word_id": "hsk6_1398",
+          "meaning_vi": "vũ khí"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "兴起",
+          "pinyin": "xīngqǐ",
+          "hanviet": "Hứng Khởi",
+          "hsk": 6,
+          "word_id": "hsk6_1475",
+          "meaning_vi": "nổi lên, trỗi dậy, hưng thịnh"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "弓箭",
+          "pinyin": "gōng jiàn",
+          "hanviet": "Cung Tiễn"
+        },
+        {
+          "text": "逐渐",
+          "pinyin": "zhújiàn",
+          "hanviet": "Trục Tiêm",
+          "hsk": 5,
+          "word_id": "hsk5_1538",
+          "meaning_vi": "dần dần"
+        },
+        {
+          "text": "退出",
+          "pinyin": "tuìchū",
+          "hanviet": "Thoái Xuất",
+          "hsk": 5,
+          "word_id": "hsk5_1163",
+          "meaning_vi": "rút lui, thoát ra"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "主力",
+          "pinyin": "zhǔlì",
+          "hanviet": "Chủ Lực",
+          "hsk": 7,
+          "word_id": "hsk7_5400",
+          "meaning_vi": "chủ lực, lực lượng nòng cốt"
+        },
+        {
+          "text": "战场",
+          "pinyin": "zhànchǎng",
+          "hanviet": "Chiến Trường",
+          "hsk": 7,
+          "word_id": "hsk7_5155",
+          "meaning_vi": "chiến trường"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "舞台",
+          "pinyin": "wǔtái",
+          "hanviet": "Vũ Đài",
+          "hsk": 5,
+          "word_id": "hsk5_1213",
+          "meaning_vi": "sân khấu"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "转而",
+          "pinyin": "zhuǎn ér",
+          "hanviet": "Chuyển Nhi"
+        },
+        {
+          "text": "向",
+          "pinyin": "xiàng",
+          "hanviet": "Hướng",
+          "hsk": 3,
+          "word_id": "hsk3_973",
+          "meaning_vi": "hướng về, về phía"
+        },
+        {
+          "text": "体育竞技",
+          "pinyin": "tǐ yù jìng jì",
+          "hanviet": "Thể Dục Cạnh Kỹ"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "强身健体",
+          "pinyin": "qiáng shēn jiàn tǐ",
+          "hanviet": "Cường Thân Kiện Thể"
+        },
+        {
+          "text": "演进",
+          "pinyin": "yǎn jìn",
+          "hanviet": "Diễn Tiến"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "现代奥林匹克射箭比赛要求运动员拥有极高的心理专注力，展现出力量与心性的完美平衡。",
+      "pinyin": "Xiàndài Àolínpǐkè shèjiàn bǐsài yāoqiú yùndòngyuán yǒngyǒu jí gāo de xīnlǐ zhuānzhùlì, zhǎnxiàn chū lìliang yǔ xīnxìng de wánměi pínghéng.",
+      "vi": "Thi đấu bắn cung Olympic hiện đại đòi hỏi sự tập trung tâm lý tuyệt đối, biểu hiện sự cân bằng hoàn hảo giữa sức mạnh và nội tâm.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "现代",
+          "pinyin": "xiàndài",
+          "hanviet": "Hiện Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1239",
+          "meaning_vi": "hiện đại"
+        },
+        {
+          "text": "奥林匹克",
+          "pinyin": "ào lín pǐ kè",
+          "hanviet": "Ảo Lâm Thất Khắc"
+        },
+        {
+          "text": "射箭",
+          "pinyin": "shè jiàn",
+          "hanviet": "Xạ Tiễn"
+        },
+        {
+          "text": "比赛",
+          "pinyin": "bǐsài",
+          "hanviet": "Tỷ Tái",
+          "hsk": 3,
+          "word_id": "hsk3_624",
+          "meaning_vi": "cuộc thi đấu"
+        },
+        {
+          "text": "要求",
+          "pinyin": "yāoqiú",
+          "hanviet": "Yêu Cầu",
+          "hsk": 3,
+          "word_id": "hsk3_999",
+          "meaning_vi": "yêu cầu"
+        },
+        {
+          "text": "运动员",
+          "pinyin": "yùndòngyuán",
+          "hanviet": "Vận Động Viên",
+          "hsk": 3,
+          "word_id": "hsk3_1040",
+          "meaning_vi": "vận động viên"
+        },
+        {
+          "text": "拥有",
+          "pinyin": "yōngyǒu",
+          "hanviet": "Ủng Hữu",
+          "hsk": 5,
+          "word_id": "hsk5_1389",
+          "meaning_vi": "sở hữu, có"
+        },
+        {
+          "text": "极高",
+          "pinyin": "jí gāo",
+          "hanviet": "Cực Cao"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "心理",
+          "pinyin": "xīnlǐ",
+          "hanviet": "Tâm Lí/tâm Lý",
+          "hsk": 5,
+          "word_id": "hsk5_1277",
+          "meaning_vi": "tâm lý"
+        },
+        {
+          "text": "专注",
+          "pinyin": "zhuānzhù",
+          "hanviet": "Chuyên Chú",
+          "hsk": 6,
+          "word_id": "hsk6_1763",
+          "meaning_vi": "chuyên chú, tập trung cao độ"
+        },
+        {
+          "text": "力",
+          "pinyin": "lì",
+          "hanviet": "Lực",
+          "hsk": 5,
+          "word_id": "hsk5_704",
+          "meaning_vi": "sức, sức lực; lực"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "展现出",
+          "pinyin": "zhǎn xiàn chū",
+          "hanviet": "Triển Hiện Xuất"
+        },
+        {
+          "text": "力量",
+          "pinyin": "lìliàng",
+          "hanviet": "Lực Lượng",
+          "hsk": 5,
+          "word_id": "hsk5_707",
+          "meaning_vi": "lực lượng, sức mạnh"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "心性",
+          "pinyin": "xīn xìng",
+          "hanviet": "Tâm Tính"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "完美",
+          "pinyin": "wánměi",
+          "hanviet": "Hoàn Mĩ/hoàn Mỹ",
+          "hsk": 5,
+          "word_id": "hsk5_1174",
+          "meaning_vi": "hoàn hảo"
+        },
+        {
+          "text": "平衡",
+          "pinyin": "pínghéng",
+          "hanviet": "Bình Hành",
+          "hsk": 5,
+          "word_id": "hsk5_841",
+          "meaning_vi": "cân bằng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk5_320",
+    "hsk4_219",
+    "hsk5_1474",
+    "hsk3_999"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Trong 'Lục nghệ' (sáu môn học chuẩn mực của người quân tử thời cổ), môn bắn cung được gọi là gì?",
+      "options_vi": [
+        "Xạ (射)",
+        "Lễ (礼)",
+        "Ngự (御)"
+      ],
+      "answer": 0,
+      "explanation_vi": "'Xạ' tức là bắn cung, vừa rèn luyện thể lực vừa tu dưỡng tâm tính tập trung."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Chất liệu nào được người xưa phối hợp chế tác 'cung liên hợp' tăng cường độ đàn hồi?",
+      "options_vi": [
+        "Gỗ, sừng thú, gân bò và chất keo tự nhiên",
+        "Đất sét nung",
+        "Ống tre rỗng không"
+      ],
+      "answer": 0,
+      "explanation_vi": "Cung liên hợp phối hợp sừng chịu nén và gân chịu kéo tạo sức bật siêu mạnh."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Sau khi súng đạn phát triển, cung tên chuyển hướng phục vụ lĩnh vực nào là chính?",
+      "options_vi": [
+        "Thể thao thi đấu bắn cung và rèn luyện thể chất",
+        "Chặt cây lấy gỗ",
+        "Chữa bệnh đau dạ dày"
+      ],
+      "answer": 0,
+      "explanation_vi": "Cung tên trở thành môn thể thao Olympic đề cao độ chính xác và điềm tĩnh."
+    }
+  ]
+}

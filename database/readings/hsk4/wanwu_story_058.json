@@ -1,0 +1,866 @@
+{
+  "id": "wanwu_story_058",
+  "chapter_no": 58,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 3,
+  "book_page_start": 606,
+  "book_page_end": 618,
+  "page_display": "Trang 606 - 618",
+  "title": {
+    "zh": "“样式雷”：清代二百年的建筑传奇",
+    "vi": "'Dạng Thức Lôi': Huyền thoại kiến trúc hoàng gia hai trăm năm"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🏯",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_058.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_058.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 606 - 618 · Gia tộc họ Lôi đảm nhận thiết kế Tử Cấm Thành, Di Hòa Viên và mô hình烫样 độc bản suốt 8 thế hệ triều Thanh.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "在清代长达两百多年的岁月里，有一个家族代代担任皇家建筑设计总负责人，他们就是著名的‘样式雷’。",
+      "pinyin": "Zài Qīngdài cháng dá liǎngbǎi duō nián de suìyuè lǐ, yǒu yí gè jiāzú dàidài dānrèn huángjiā jiànzhù shèjì zǒng fùzérén, tāmen jiùshì zhùmíng de ‘Yàngshì Léi’.",
+      "vi": "Suốt hơn hai trăm năm triều Thanh, có một gia tộc đời đời đảm nhận chức tổng công trình sư thiết kế hoàng gia, đó chính là danh gia 'Dạng Thức Lôi'.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "清代",
+          "pinyin": "qīng dài",
+          "hanviet": "Thanh Đại"
+        },
+        {
+          "text": "长",
+          "pinyin": "cháng",
+          "hanviet": "Trường",
+          "hsk": 2,
+          "word_id": "hsk2_314",
+          "meaning_vi": "dài"
+        },
+        {
+          "text": "达",
+          "pinyin": "dá",
+          "hanviet": "Đạt"
+        },
+        {
+          "text": "两百多年",
+          "pinyin": "liǎng bǎi duō nián",
+          "hanviet": "Lưỡng Bách Đa Niên"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "岁月",
+          "pinyin": "suìyuè",
+          "hanviet": "Tuế Nguyệt",
+          "hsk": 6,
+          "word_id": "hsk6_1251",
+          "meaning_vi": "năm tháng"
+        },
+        {
+          "text": "里",
+          "pinyin": "lǐ",
+          "hanviet": "Lý",
+          "hsk": 1,
+          "word_id": "hsk1_536",
+          "meaning_vi": "bên trong"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "有",
+          "pinyin": "yǒu",
+          "hanviet": "Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_380",
+          "meaning_vi": "có"
+        },
+        {
+          "text": "一个",
+          "pinyin": "yí gè",
+          "hanviet": "Nhất Cá"
+        },
+        {
+          "text": "家族",
+          "pinyin": "jiāzú",
+          "hanviet": "Gia Tộc",
+          "hsk": 7,
+          "word_id": "hsk7_1936",
+          "meaning_vi": "gia đình"
+        },
+        {
+          "text": "代代",
+          "pinyin": "dài dài",
+          "hanviet": "Đại Đại"
+        },
+        {
+          "text": "担任",
+          "pinyin": "dānrèn",
+          "hanviet": "Đảm Nhâm",
+          "hsk": 5,
+          "word_id": "hsk5_240",
+          "meaning_vi": "đảm nhiệm"
+        },
+        {
+          "text": "皇家",
+          "pinyin": "huáng jiā",
+          "hanviet": "Hoàng Gia"
+        },
+        {
+          "text": "建筑设计",
+          "pinyin": "jiàn zhù shè jì",
+          "hanviet": "Kiến Trúc Thiết Kế"
+        },
+        {
+          "text": "总负责人",
+          "pinyin": "zǒng fù zé rén",
+          "hanviet": "Tổng Phụ Trách Nhân"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "他们",
+          "pinyin": "tāmen",
+          "hanviet": "Tha Môn",
+          "hsk": 1,
+          "word_id": "hsk1_570",
+          "meaning_vi": "họ (đại từ)"
+        },
+        {
+          "text": "就是",
+          "pinyin": "jiùshì",
+          "hanviet": "Tựu Thị",
+          "hsk": 4,
+          "word_id": "hsk4_408",
+          "meaning_vi": "chính là; dù… cũng"
+        },
+        {
+          "text": "著名",
+          "pinyin": "zhùmíng",
+          "hanviet": "Trước Danh",
+          "hsk": 4,
+          "word_id": "hsk4_967",
+          "meaning_vi": "nổi tiếng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "样式",
+          "pinyin": "yàngshì",
+          "hanviet": "Dạng Thức",
+          "hsk": 5,
+          "word_id": "hsk5_1334",
+          "meaning_vi": "kiểu dáng"
+        },
+        {
+          "text": "雷",
+          "pinyin": "léi",
+          "hanviet": "Lôi",
+          "hsk": 6,
+          "word_id": "hsk6_828",
+          "meaning_vi": "sấm sét"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "从故宫太和殿的重建，到圆明园、颐和园与承德避暑山庄，清代五分之一的世界遗产均出自雷氏家族之手。",
+      "pinyin": "Cóng Gùgōng Tàihédiàn de chóngjiàn, dào Yuánmíngyuán, Yíhéyuán yǔ Chéngdé Bìshǔ Shānzhuāng, Qīngdài wǔfēnzhīyī de shìjiè yíchǎn jūn chūzì Léi shì jiāzú zhī shǒu.",
+      "vi": "Từ trùng tu điện Thái Hòa Cố Cung đến Viên Minh Viên, Di Hòa Viên và Sơn Trang Tránh Nóng Thừa Đức, một phần năm di sản thế giới thời Thanh đều do nhà họ Lôi thiết kế.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "从",
+          "pinyin": "cóng",
+          "hanviet": "Tòng",
+          "hsk": 2,
+          "word_id": "hsk2_324",
+          "meaning_vi": "từ"
+        },
+        {
+          "text": "故宫",
+          "pinyin": "gù gōng",
+          "hanviet": "Cố Cung"
+        },
+        {
+          "text": "太和殿",
+          "pinyin": "tài hé diàn",
+          "hanviet": "Thái Hoà Điện"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "重建",
+          "pinyin": "chóngjiàn",
+          "hanviet": "Trọng Kiến",
+          "hsk": 6,
+          "word_id": "hsk6_178",
+          "meaning_vi": "tái thiết, xây dựng lại"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "到",
+          "pinyin": "dào",
+          "hanviet": "Đáo",
+          "hsk": 1,
+          "word_id": "hsk1_59",
+          "meaning_vi": "đến"
+        },
+        {
+          "text": "圆明园",
+          "pinyin": "yuán míng yuán",
+          "hanviet": "Viên Minh Viên"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "颐和园",
+          "pinyin": "yí hé yuán",
+          "hanviet": "Di Hoà Viên"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "承德避暑山庄",
+          "pinyin": "chéng dé bì shǔ shān zhuāng",
+          "hanviet": "Thừa Đức Tị Thử Sơn Trang"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "清代",
+          "pinyin": "qīng dài",
+          "hanviet": "Thanh Đại"
+        },
+        {
+          "text": "五分之一",
+          "pinyin": "wǔ fēn zhī yī",
+          "hanviet": "Ngũ Phân Chi Nhất"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "世界遗产",
+          "pinyin": "shì jiè yí chǎn",
+          "hanviet": "Thế Giới Di Sản"
+        },
+        {
+          "text": "均",
+          "pinyin": "jūn",
+          "hanviet": "Quân",
+          "hsk": 7,
+          "word_id": "hsk7_2284",
+          "meaning_vi": "đều, đồng đều, thảy"
+        },
+        {
+          "text": "出自",
+          "pinyin": "chūzì",
+          "hanviet": "Xuất Tự",
+          "hsk": 5,
+          "word_id": "hsk5_177",
+          "meaning_vi": "xuất phát từ, trích từ"
+        },
+        {
+          "text": "雷氏",
+          "pinyin": "léi shì",
+          "hanviet": "Lôi Thị"
+        },
+        {
+          "text": "家族",
+          "pinyin": "jiāzú",
+          "hanviet": "Gia Tộc",
+          "hsk": 7,
+          "word_id": "hsk7_1936",
+          "meaning_vi": "gia đình"
+        },
+        {
+          "text": "之手",
+          "pinyin": "zhī shǒu",
+          "hanviet": "Chi Thủ"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "雷家独创了精妙绝伦的‘烫样’制作工艺，用纸板、木头和沥粉制成立体逼真的建筑模型供皇帝审阅。",
+      "pinyin": "Léi jiā dúchuàng le jīngmiào-juélún de ‘tàngyàng’ zhìzuò gōngyì, yòng zhǐbǎn, mùtou hé lìfěn zhìchéng lìtǐ bīzhēn de jiànzhù móxíng gòng huángdì shěnyuè.",
+      "vi": "Nhà họ Lôi sáng tạo nghệ thuật làm 'mô hình bỏng' (thang dạng) độc đáo, dùng bìa giấy, gỗ tạo thành mô hình không gian sống động dâng hoàng đế duyệt định.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "雷家",
+          "pinyin": "léi jiā",
+          "hanviet": "Lôi Gia"
+        },
+        {
+          "text": "独创",
+          "pinyin": "dú chuàng",
+          "hanviet": "Độc Thương"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "精妙绝伦",
+          "pinyin": "jīng miào jué lún",
+          "hanviet": "Tinh Diệu Tuyệt Luân"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "烫样",
+          "pinyin": "tàng yàng",
+          "hanviet": "Năng Dạng"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "制作",
+          "pinyin": "zhìzuò",
+          "hanviet": "Chế Tác",
+          "hsk": 5,
+          "word_id": "hsk5_1519",
+          "meaning_vi": "chế tác, làm ra"
+        },
+        {
+          "text": "工艺",
+          "pinyin": "gōngyì",
+          "hanviet": "Công Nghệ",
+          "hsk": 5,
+          "word_id": "hsk5_416",
+          "meaning_vi": "công nghệ, kỹ thuật chế tác"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "用",
+          "pinyin": "yòng",
+          "hanviet": "Dụng",
+          "hsk": 3,
+          "word_id": "hsk3_1020",
+          "meaning_vi": "dùng"
+        },
+        {
+          "text": "纸板",
+          "pinyin": "zhǐ bǎn",
+          "hanviet": "Chỉ Bản"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "木头",
+          "pinyin": "mùtou",
+          "hanviet": "Mộc Đầu",
+          "hsk": 5,
+          "word_id": "hsk5_787",
+          "meaning_vi": "gỗ"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "沥粉",
+          "pinyin": "lì fěn",
+          "hanviet": "Lịch Phấn"
+        },
+        {
+          "text": "制成",
+          "pinyin": "zhì chéng",
+          "hanviet": "Chế Thành"
+        },
+        {
+          "text": "立体",
+          "pinyin": "lìtǐ",
+          "hanviet": "Lập Thể",
+          "hsk": 7,
+          "word_id": "hsk7_2559",
+          "meaning_vi": "ba chiều, lập thể"
+        },
+        {
+          "text": "逼真",
+          "pinyin": "bīzhēn",
+          "hanviet": "Bức Chân",
+          "hsk": 7,
+          "word_id": "hsk7_176",
+          "meaning_vi": "sống động như thật, như tạc"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "建筑",
+          "pinyin": "jiànzhù",
+          "hanviet": "Kiến Trúc",
+          "hsk": 5,
+          "word_id": "hsk5_579",
+          "meaning_vi": "kiến trúc, công trình"
+        },
+        {
+          "text": "模型",
+          "pinyin": "móxíng",
+          "hanviet": "Mô Hình",
+          "hsk": 6,
+          "word_id": "hsk6_935",
+          "meaning_vi": "mô hình (vật mẫu, mô hình thu nhỏ)"
+        },
+        {
+          "text": "供",
+          "pinyin": "gōng",
+          "hanviet": "Cung",
+          "hsk": 7,
+          "word_id": "hsk7_1367",
+          "meaning_vi": "cung cấp"
+        },
+        {
+          "text": "皇帝",
+          "pinyin": "huángdì",
+          "hanviet": "Hoàng Đế",
+          "hsk": 6,
+          "word_id": "hsk6_582",
+          "meaning_vi": "hoàng đế"
+        },
+        {
+          "text": "审阅",
+          "pinyin": "shěn yuè",
+          "hanviet": "Thẩm Duyệt"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "这些烫样的屋顶甚至可以一层层掀开，里面的梁柱榫卯结构、彩画细节一览无余。",
+      "pinyin": "Zhèxiē tàngyàng de wūdǐng shènzhì kěyǐ yìcéngcéng xiānkāi, lǐmiàn de liángzhù sǔnmǎo jiégòu, cǎihuà xìjié yìlǎn-wúyú.",
+      "vi": "Mái của các mô hình này thậm chí có thể mở từng tầng, để lộ kết cấu xà cột mộng ngàm và hoa văn tỉ mỉ bên trong rõ mồn một.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "这些",
+          "pinyin": "zhèxiē",
+          "hanviet": "Giá Ta",
+          "hsk": 1,
+          "word_id": "hsk1_608",
+          "meaning_vi": "những (đại từ) này"
+        },
+        {
+          "text": "烫样",
+          "pinyin": "tàng yàng",
+          "hanviet": "Năng Dạng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "屋顶",
+          "pinyin": "wū dǐng",
+          "hanviet": "Ốc Đỉnh"
+        },
+        {
+          "text": "甚至",
+          "pinyin": "shènzhì",
+          "hanviet": "Thậm Chí",
+          "hsk": 4,
+          "word_id": "hsk4_645",
+          "meaning_vi": "thậm chí"
+        },
+        {
+          "text": "可以",
+          "pinyin": "kěyǐ",
+          "hanviet": "Khả Dĩ",
+          "hsk": 1,
+          "word_id": "hsk1_160",
+          "meaning_vi": "có thể, được"
+        },
+        {
+          "text": "一层层",
+          "pinyin": "yī céng céng",
+          "hanviet": "Nhất Tầng Tầng"
+        },
+        {
+          "text": "掀开",
+          "pinyin": "xiān kāi",
+          "hanviet": "Hiên Khai"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "里面",
+          "pinyin": "lǐmiàn",
+          "hanviet": "Lý Diện",
+          "hsk": 2,
+          "word_id": "hsk2_390",
+          "meaning_vi": "bên trong"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "梁柱",
+          "pinyin": "liáng zhù",
+          "hanviet": "Lương Trụ"
+        },
+        {
+          "text": "榫卯",
+          "pinyin": "sǔn mǎo",
+          "hanviet": "Chuẩn Mão"
+        },
+        {
+          "text": "结构",
+          "pinyin": "jiégòu",
+          "hanviet": "Kết Cấu",
+          "hsk": 5,
+          "word_id": "hsk5_601",
+          "meaning_vi": "cấu trúc"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "彩画",
+          "pinyin": "cǎi huà",
+          "hanviet": "Thái Hoạ"
+        },
+        {
+          "text": "细节",
+          "pinyin": "xìjié",
+          "hanviet": "Tế Tiết",
+          "hsk": 5,
+          "word_id": "hsk5_1227",
+          "meaning_vi": "chi tiết"
+        },
+        {
+          "text": "一览无余",
+          "pinyin": "yī lǎn wú yú",
+          "hanviet": "Nhất Lãm Vô Dư"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "如今留存下来的数万件样式雷建筑图档，被联合国列入《世界记忆名录》，彰显着东方工匠的非凡造诣。",
+      "pinyin": "Rújīn liúcún xiàlái de shùwàn jiàn Yàngshì Léi jiànzhù túdàng, bèi Liánhéguó lièrù 《Shìjiè Jìyì Mínglù》, zhāngxiǎn zhe dōngfāng gōngjiàng de fēifán zàoyì.",
+      "vi": "Hàng vạn bản vẽ và tài liệu Dạng Thức Lôi lưu truyền đến nay đã được UNESCO ghi vào Ký ức Thế giới, tỏa sáng tài năng bậc thầy của thợ thủ công phương Đông.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "如今",
+          "pinyin": "rújīn",
+          "hanviet": "Như Kim",
+          "hsk": 5,
+          "word_id": "hsk5_935",
+          "meaning_vi": "hiện nay, ngày nay"
+        },
+        {
+          "text": "留存",
+          "pinyin": "liú cún",
+          "hanviet": "Lưu Tồn"
+        },
+        {
+          "text": "下来",
+          "pinyin": "xiàlái",
+          "hanviet": "Hạ Lai",
+          "hsk": 2,
+          "word_id": "hsk2_458",
+          "meaning_vi": "đi xuống"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "数万件",
+          "pinyin": "shù wàn jiàn",
+          "hanviet": "Sổ Mặc Kiện"
+        },
+        {
+          "text": "样式",
+          "pinyin": "yàngshì",
+          "hanviet": "Dạng Thức",
+          "hsk": 5,
+          "word_id": "hsk5_1334",
+          "meaning_vi": "kiểu dáng"
+        },
+        {
+          "text": "雷",
+          "pinyin": "léi",
+          "hanviet": "Lôi",
+          "hsk": 6,
+          "word_id": "hsk6_828",
+          "meaning_vi": "sấm sét"
+        },
+        {
+          "text": "建筑",
+          "pinyin": "jiànzhù",
+          "hanviet": "Kiến Trúc",
+          "hsk": 5,
+          "word_id": "hsk5_579",
+          "meaning_vi": "kiến trúc, công trình"
+        },
+        {
+          "text": "图档",
+          "pinyin": "tú dàng",
+          "hanviet": "Đồ Đáng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "联合国",
+          "pinyin": "Liánhéguó",
+          "hanviet": "Liên Cáp Quốc",
+          "hsk": 6,
+          "word_id": "hsk6_843",
+          "meaning_vi": "liên Hợp Quốc"
+        },
+        {
+          "text": "列入",
+          "pinyin": "liè rù",
+          "hanviet": "Liệt Nhập"
+        },
+        {
+          "text": "《"
+        },
+        {
+          "text": "世界",
+          "pinyin": "shìjiè",
+          "hanviet": "Thế Giới",
+          "hsk": 3,
+          "word_id": "hsk3_916",
+          "meaning_vi": "thế giới"
+        },
+        {
+          "text": "记忆",
+          "pinyin": "jìyì",
+          "hanviet": "Kí Ức/ký Ức",
+          "hsk": 5,
+          "word_id": "hsk5_549",
+          "meaning_vi": "ký ức, ghi nhớ"
+        },
+        {
+          "text": "名录",
+          "pinyin": "míng lù",
+          "hanviet": "Danh Lục"
+        },
+        {
+          "text": "》"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "彰显",
+          "pinyin": "zhāng xiǎn",
+          "hanviet": "Chương Hiển"
+        },
+        {
+          "text": "着",
+          "pinyin": "zhe",
+          "hanviet": "Trước",
+          "hsk": 2,
+          "word_id": "hsk2_490",
+          "meaning_vi": "đang (trợ từ)"
+        },
+        {
+          "text": "东方",
+          "pinyin": "dōngfāng",
+          "hanviet": "Đông Phương",
+          "hsk": 3,
+          "word_id": "hsk3_696",
+          "meaning_vi": "phía đông; phương Đông"
+        },
+        {
+          "text": "工匠",
+          "pinyin": "gōngjiàng",
+          "hanviet": "Công Tượng",
+          "hsk": 7,
+          "word_id": "hsk7_1379",
+          "meaning_vi": "thợ thủ công, nghệ nhân"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "非凡",
+          "pinyin": "fēifán",
+          "hanviet": "Phi Phàm",
+          "hsk": 7,
+          "word_id": "hsk7_1128",
+          "meaning_vi": "phi thường"
+        },
+        {
+          "text": "造诣",
+          "pinyin": "zào yì",
+          "hanviet": "Tạo Nghệ"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk4_967",
+    "hsk5_579",
+    "hsk5_1518",
+    "hsk4_807",
+    "hsk1_390"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Gia tộc 'Dạng Thức Lôi' (样式雷) giữ vai trò gì trong triều đình nhà Thanh?",
+      "options_vi": [
+        "Tổng chỉ huy thiết kế các công trình cung điện và lăng tẩm hoàng gia suốt hơn 200 năm",
+        "Thuyền trưởng chỉ huy hải quân",
+        "Đầu bếp hoàng cung"
+      ],
+      "answer": 0,
+      "explanation_vi": "Họ Lôi qua 8 thế hệ đã thiết kế gần như toàn bộ các công trình kiến trúc hoàng gia đỉnh cao thời Thanh."
+    },
+    {
+      "id": "q2",
+      "question_vi": "'Thang dạng' (烫样) do gia tộc Lôi sáng tạo là thứ gì?",
+      "options_vi": [
+        "Mô hình kiến trúc 3D thu nhỏ tinh xảo có thể mở từng lớp mái ra xem bên trong",
+        "Bánh rán nhân đậu",
+        "Ấm đun nước bằng đồng"
+      ],
+      "answer": 0,
+      "explanation_vi": "'Thang dạng' là mô hình kiến trúc ba chiều chi tiết được dựng để hoàng đế xem trước khi xây dựng thực tế."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Kho tài liệu bản vẽ của Dạng Thức Lôi được vinh danh ở danh hiệu quốc tế nào?",
+      "options_vi": [
+        "Ký ức Thế giới của UNESCO",
+        "Kỷ lục Guinness nhà cao tầng",
+        "Giải vô địch hội họa"
+      ],
+      "answer": 0,
+      "explanation_vi": "Bản vẽ Dạng Thức Lôi được UNESCO vinh danh trong Ký ức Thế giới (Memory of the World)."
+    }
+  ]
+}

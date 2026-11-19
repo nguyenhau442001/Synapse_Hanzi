@@ -1,0 +1,824 @@
+{
+  "id": "wanwu_story_050",
+  "chapter_no": 50,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 3,
+  "book_page_start": 519,
+  "book_page_end": 534,
+  "page_display": "Trang 519 - 534",
+  "title": {
+    "zh": "自来水：招股集资引“甜水”",
+    "vi": "Nước máy: Góp vốn đưa dòng 'nước ngọt' về phố"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🚰",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_050.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_050.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 519 - 534 · Từ giếng nước đắng chát thời xưa đến việc kêu gọi cổ phần xây dựng nhà máy nước sạch hiện đại.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "清澈干净的自来水拧开龙头即来，在今天看来是再普通不过的日常生活便利。",
+      "pinyin": "Qīngchè gānjìng de zìláishuǐ nǐngkāi lóngtóu jí lái, zài jīntiān kànlái shì zài pǔtōng bùguò de rìcháng shēnghuó biànlì.",
+      "vi": "Nước máy trong veo mở vòi là chảy, ngày nay được xem là tiện nghi sinh hoạt bình thường hết đỗi.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "清澈",
+          "pinyin": "qīngchè",
+          "hanviet": "Thanh Triệt",
+          "hsk": 7,
+          "word_id": "hsk7_3296",
+          "meaning_vi": "trong suốt, trong sạch (nước)"
+        },
+        {
+          "text": "干净",
+          "pinyin": "gānjìng",
+          "hanviet": "Can Tịnh",
+          "hsk": 3,
+          "word_id": "hsk3_728",
+          "meaning_vi": "sạch sẽ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "自来水",
+          "pinyin": "zìláishuǐ",
+          "hanviet": "Tự Lai Thuỷ",
+          "hsk": 6,
+          "word_id": "hsk6_1778",
+          "meaning_vi": "nước máy"
+        },
+        {
+          "text": "拧开",
+          "pinyin": "níng kāi",
+          "hanviet": "Ninh Khai"
+        },
+        {
+          "text": "龙头",
+          "pinyin": "lóngtóu",
+          "hanviet": "Long Đầu",
+          "hsk": 7,
+          "word_id": "hsk7_2669",
+          "meaning_vi": "đầu tàu, doanh nghiệp dẫn đầu; vòi nước"
+        },
+        {
+          "text": "即来",
+          "pinyin": "jí lái",
+          "hanviet": "Tức Lai"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "今天",
+          "pinyin": "jīntiān",
+          "hanviet": "Kim Thiên",
+          "hsk": 1,
+          "word_id": "hsk1_144",
+          "meaning_vi": "hôm nay"
+        },
+        {
+          "text": "看来",
+          "pinyin": "kànlái",
+          "hanviet": "Khán Lai",
+          "hsk": 3,
+          "word_id": "hsk3_813",
+          "meaning_vi": "xem ra, có vẻ như"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "再",
+          "pinyin": "zài",
+          "hanviet": "Tái",
+          "hsk": 1,
+          "word_id": "hsk1_391",
+          "meaning_vi": "lại, lần nữa"
+        },
+        {
+          "text": "普通",
+          "pinyin": "pǔtōng",
+          "hanviet": "Phổ Thông",
+          "hsk": 4,
+          "word_id": "hsk4_562",
+          "meaning_vi": "bình thường, phổ thông"
+        },
+        {
+          "text": "不过",
+          "pinyin": "búguò",
+          "hanviet": "Bất Quá",
+          "hsk": 4,
+          "word_id": "hsk4_47",
+          "meaning_vi": "nhưng, tuy nhiên"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "日常生活",
+          "pinyin": "rì cháng shēng huó",
+          "hanviet": "Nhật Thường Sinh Hoạt"
+        },
+        {
+          "text": "便利",
+          "pinyin": "biànlì",
+          "hanviet": "Tiện Lợi",
+          "hsk": 5,
+          "word_id": "hsk5_58",
+          "meaning_vi": "thuận tiện"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "然而在百年前的清末北京，城里水井大多水质苦咸，普通居民只能向挑水夫购买昂贵的甜井水。",
+      "pinyin": "Rán'ér zài bǎinián qián de Qīngmò Běijīng, chénglǐ shuǐjǐng dàduō shuǐzhì kǔxián, pǔtōng jūmín zhǐ néng xiàng tiāoshuǐfū gòumǎi ángguì de tiánjǐngshuǐ.",
+      "vi": "Thế nhưng trăm năm trước ở Bắc Kinh cuối triều Thanh, nước giếng trong thành đa phần mặn chát, dân chúng phải mua nước gánh đắt đỏ.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "然而",
+          "pinyin": "rán’ér",
+          "hanviet": "Nhiên Nhi",
+          "hsk": 4,
+          "word_id": "hsk4_608",
+          "meaning_vi": "tuy nhiên"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "百年",
+          "pinyin": "bǎi nián",
+          "hanviet": "Bách Niên"
+        },
+        {
+          "text": "前",
+          "pinyin": "qián",
+          "hanviet": "Tiền",
+          "hsk": 1,
+          "word_id": "hsk1_558",
+          "meaning_vi": "trước"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "清末",
+          "pinyin": "qīng mò",
+          "hanviet": "Thanh Mạt"
+        },
+        {
+          "text": "北京",
+          "pinyin": "ba",
+          "hanviet": "Ba",
+          "hsk": 1,
+          "word_id": "hsk1_5",
+          "meaning_vi": "nhé (trợ từ)"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "城里",
+          "pinyin": "chéng lǐ",
+          "hanviet": "Thành Lý"
+        },
+        {
+          "text": "水井",
+          "pinyin": "shuǐ jǐng",
+          "hanviet": "Thuỷ Tỉnh"
+        },
+        {
+          "text": "大多",
+          "pinyin": "dàduō",
+          "hanviet": "Đại Đa",
+          "hsk": 5,
+          "word_id": "hsk5_219",
+          "meaning_vi": "phần lớn, đa số"
+        },
+        {
+          "text": "水质",
+          "pinyin": "shuǐ zhì",
+          "hanviet": "Thuỷ Chất"
+        },
+        {
+          "text": "苦咸",
+          "pinyin": "kǔ xián",
+          "hanviet": "Khổ Hàm"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "普通",
+          "pinyin": "pǔtōng",
+          "hanviet": "Phổ Thông",
+          "hsk": 4,
+          "word_id": "hsk4_562",
+          "meaning_vi": "bình thường, phổ thông"
+        },
+        {
+          "text": "居民",
+          "pinyin": "jūmín",
+          "hanviet": "Cư Dân",
+          "hsk": 5,
+          "word_id": "hsk5_632",
+          "meaning_vi": "cư dân"
+        },
+        {
+          "text": "只能",
+          "pinyin": "zhǐ néng",
+          "hanviet": "Chỉ Năng",
+          "hsk": 3,
+          "word_id": "hsk3_1056",
+          "meaning_vi": "chỉ có thể"
+        },
+        {
+          "text": "向",
+          "pinyin": "xiàng",
+          "hanviet": "Hướng",
+          "hsk": 3,
+          "word_id": "hsk3_973",
+          "meaning_vi": "hướng về, về phía"
+        },
+        {
+          "text": "挑水",
+          "pinyin": "tiāo shuǐ",
+          "hanviet": "Khiêu Thuỷ"
+        },
+        {
+          "text": "夫",
+          "pinyin": "fū",
+          "hanviet": "Phu"
+        },
+        {
+          "text": "购买",
+          "pinyin": "gòumǎi",
+          "hanviet": "Cấu Mãi",
+          "hsk": 4,
+          "word_id": "hsk4_261",
+          "meaning_vi": "mua, mua sắm"
+        },
+        {
+          "text": "昂贵",
+          "pinyin": "ángguì",
+          "hanviet": "Ngang Quý",
+          "hsk": 6,
+          "word_id": "hsk6_5",
+          "meaning_vi": "đắt đỏ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "甜",
+          "pinyin": "tián",
+          "hanviet": "Điềm",
+          "hsk": 3,
+          "word_id": "hsk3_934",
+          "meaning_vi": "ngọt"
+        },
+        {
+          "text": "井水",
+          "pinyin": "jǐng shuǐ",
+          "hanviet": "Tỉnh Thuỷ"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "一九零八年，清政府批准成立了京师自来水股份有限公司，通过向社会招股筹集建设资金。",
+      "pinyin": "Yī-jiǔ-líng-bā nián, Qīng zhèngfǔ pīzhǔn chénglì le Jīngshī Zìláishuǐ Gǔfèn Yǒuxiàn Gōngsī, tōngguò xiàng shèhuì zhāogǔ chóují jiànshè zījīn.",
+      "vi": "Năm 1908, triều đình chuẩn thuận thành lập Công ty Nước máy Cổ phần Kinh Sư, phát hành cổ phiếu quyên vốn xây dựng.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "一",
+          "pinyin": "yī",
+          "hanviet": "Nhất",
+          "hsk": 1,
+          "word_id": "hsk1_360",
+          "meaning_vi": "một"
+        },
+        {
+          "text": "九零",
+          "pinyin": "jiǔ líng",
+          "hanviet": "Cửu Linh"
+        },
+        {
+          "text": "八年",
+          "pinyin": "bā nián",
+          "hanviet": "Bát Niên"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "清政府",
+          "pinyin": "qīng zhèng fǔ",
+          "hanviet": "Thanh Chính Phủ"
+        },
+        {
+          "text": "批准",
+          "pinyin": "pīzhǔn",
+          "hanviet": "Phê Chuẩn",
+          "hsk": 5,
+          "word_id": "hsk5_827",
+          "meaning_vi": "phê chuẩn"
+        },
+        {
+          "text": "成立",
+          "pinyin": "chénglì",
+          "hanviet": "Thành Lập",
+          "hsk": 5,
+          "word_id": "hsk5_142",
+          "meaning_vi": "thành lập"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "京师",
+          "pinyin": "jīng shī",
+          "hanviet": "Kinh Sư"
+        },
+        {
+          "text": "自来水",
+          "pinyin": "zìláishuǐ",
+          "hanviet": "Tự Lai Thuỷ",
+          "hsk": 6,
+          "word_id": "hsk6_1778",
+          "meaning_vi": "nước máy"
+        },
+        {
+          "text": "股份",
+          "pinyin": "gǔfèn",
+          "hanviet": "Cổ Phần",
+          "hsk": 7,
+          "word_id": "hsk7_1437",
+          "meaning_vi": "cổ phần"
+        },
+        {
+          "text": "有限公司",
+          "pinyin": "yǒu xiàn gōng sī",
+          "hanviet": "Hữu Hạn Công Ti"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "通过",
+          "pinyin": "tōngguò",
+          "hanviet": "Thông Qua",
+          "hsk": 4,
+          "word_id": "hsk4_744",
+          "meaning_vi": "thông qua"
+        },
+        {
+          "text": "向",
+          "pinyin": "xiàng",
+          "hanviet": "Hướng",
+          "hsk": 3,
+          "word_id": "hsk3_973",
+          "meaning_vi": "hướng về, về phía"
+        },
+        {
+          "text": "社会",
+          "pinyin": "shèhuì",
+          "hanviet": "Xã Hội",
+          "hsk": 4,
+          "word_id": "hsk4_639",
+          "meaning_vi": "xã hội"
+        },
+        {
+          "text": "招股",
+          "pinyin": "zhāo gǔ",
+          "hanviet": "Chiêu Cổ"
+        },
+        {
+          "text": "筹集",
+          "pinyin": "chóují",
+          "hanviet": "Trù Tập",
+          "hsk": 7,
+          "word_id": "hsk7_563",
+          "meaning_vi": "quyên góp, gây quỹ"
+        },
+        {
+          "text": "建设",
+          "pinyin": "jiànshè",
+          "hanviet": "Kiến Thiết",
+          "hsk": 5,
+          "word_id": "hsk5_577",
+          "meaning_vi": "xây dựng"
+        },
+        {
+          "text": "资金",
+          "pinyin": "zījīn",
+          "hanviet": "Tư Kim",
+          "hsk": 5,
+          "word_id": "hsk5_1568",
+          "meaning_vi": "nguồn vốn, tài chính"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "工人们铺设地下管道，在孙河引水净化，并建造了高耸的水塔向全城加压供水。",
+      "pinyin": "Gōngrénmen pūshè dìxià guǎndào, zài Sūnhé yǐnshuǐ jìnghuà, bìng jiànzào le gāosǒng de shuǐtǎ xiàng quánchéng jiāyā gōngshuǐ.",
+      "vi": "Công nhân đào đặt đường ống ngầm, lấy nước sông Tôn Hà lọc sạch và dựng tháp nước cao vút để tăng áp lực cấp nước toàn thành.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "工人",
+          "pinyin": "gōngrén",
+          "hanviet": "Công Nhân",
+          "hsk": 4,
+          "word_id": "hsk4_256",
+          "meaning_vi": "công nhân"
+        },
+        {
+          "text": "们",
+          "pinyin": "men",
+          "hanviet": "Môn",
+          "hsk": 1,
+          "word_id": "hsk1_538",
+          "meaning_vi": "họ (hậu tố)"
+        },
+        {
+          "text": "铺设",
+          "pinyin": "pū shè",
+          "hanviet": "Phô Thiết"
+        },
+        {
+          "text": "地下管道",
+          "pinyin": "dì xià guǎn dào",
+          "hanviet": "Địa Hạ Quản Đạo"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "孙河",
+          "pinyin": "sūn hé",
+          "hanviet": "Tôn Hà"
+        },
+        {
+          "text": "引水",
+          "pinyin": "yǐn shuǐ",
+          "hanviet": "Dẫn Thuỷ"
+        },
+        {
+          "text": "净化",
+          "pinyin": "jìnghuà",
+          "hanviet": "Tịnh Hoa",
+          "hsk": 7,
+          "word_id": "hsk7_2204",
+          "meaning_vi": "thanh lọc"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "并",
+          "pinyin": "bìng",
+          "hanviet": "Tinh",
+          "hsk": 4,
+          "word_id": "hsk4_39",
+          "meaning_vi": "và, đồng thời; hoàn toàn (không)"
+        },
+        {
+          "text": "建造",
+          "pinyin": "jiànzào",
+          "hanviet": "Kiến Tạo",
+          "hsk": 5,
+          "word_id": "hsk5_578",
+          "meaning_vi": "xây dựng"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "高耸",
+          "pinyin": "gāo sǒng",
+          "hanviet": "Cao Tủng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "水塔",
+          "pinyin": "shuǐ tǎ",
+          "hanviet": "Thuỷ Tháp"
+        },
+        {
+          "text": "向全城",
+          "pinyin": "xiàng quán chéng",
+          "hanviet": "Hướng Toàn Thành"
+        },
+        {
+          "text": "加压",
+          "pinyin": "jiā yā",
+          "hanviet": "Gia Áp"
+        },
+        {
+          "text": "供水",
+          "pinyin": "gōng shuǐ",
+          "hanviet": "Cung Thuỷ"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "自来水的普及不仅彻底改善了城市的公共卫生条件，也悄然推动了市民现代生活观念的转变。",
+      "pinyin": "Zìláishuǐ de pǔjí bùjǐn chèdǐ gǎishàn le chéngshì de gōnggòng wèishēng tiáojiàn, yě qiǎorán tuīdòng le shìmín xiàndài shēnghuó guānniàn de zhuǎnbiàn.",
+      "vi": "Phổ cập nước sạch không chỉ cải thiện triệt để vệ sinh công cộng mà còn thúc đẩy bước chuyển trong nếp sống đô thị hiện đại.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "自来水",
+          "pinyin": "zìláishuǐ",
+          "hanviet": "Tự Lai Thuỷ",
+          "hsk": 6,
+          "word_id": "hsk6_1778",
+          "meaning_vi": "nước máy"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "普及",
+          "pinyin": "pǔjí",
+          "hanviet": "Phổ Cập",
+          "hsk": 5,
+          "word_id": "hsk5_849",
+          "meaning_vi": "phổ cập, phổ biến"
+        },
+        {
+          "text": "不仅",
+          "pinyin": "bùjǐn",
+          "hanviet": "Bất Cận",
+          "hsk": 4,
+          "word_id": "hsk4_55",
+          "meaning_vi": "không chỉ"
+        },
+        {
+          "text": "彻底",
+          "pinyin": "chèdǐ",
+          "hanviet": "Triệt Để",
+          "hsk": 5,
+          "word_id": "hsk5_129",
+          "meaning_vi": "triệt để"
+        },
+        {
+          "text": "改善",
+          "pinyin": "gǎishàn",
+          "hanviet": "Cải Thiện",
+          "hsk": 5,
+          "word_id": "hsk5_378",
+          "meaning_vi": "cải thiện"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "城市",
+          "pinyin": "chéngshì",
+          "hanviet": "Thành Thị",
+          "hsk": 3,
+          "word_id": "hsk3_658",
+          "meaning_vi": "thành phố"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "公共卫生",
+          "pinyin": "gōng gòng wèi shēng",
+          "hanviet": "Công Cộng Vệ Sinh"
+        },
+        {
+          "text": "条件",
+          "pinyin": "tiáojiàn",
+          "hanviet": "Điều Kiện",
+          "hsk": 4,
+          "word_id": "hsk4_736",
+          "meaning_vi": "điều kiện"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "也",
+          "pinyin": "yě",
+          "hanviet": "Dã",
+          "hsk": 1,
+          "word_id": "hsk1_359",
+          "meaning_vi": "cũng"
+        },
+        {
+          "text": "悄然",
+          "pinyin": "qiǎo rán",
+          "hanviet": "Tiễu Nhiên"
+        },
+        {
+          "text": "推动",
+          "pinyin": "tuīdòng",
+          "hanviet": "Suy Động",
+          "hsk": 5,
+          "word_id": "hsk5_1158",
+          "meaning_vi": "thúc đẩy, đẩy mạnh"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "市民",
+          "pinyin": "shìmín",
+          "hanviet": "Thị Dân",
+          "hsk": 5,
+          "word_id": "hsk5_1034",
+          "meaning_vi": "công dân"
+        },
+        {
+          "text": "现代",
+          "pinyin": "xiàndài",
+          "hanviet": "Hiện Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1239",
+          "meaning_vi": "hiện đại"
+        },
+        {
+          "text": "生活观念",
+          "pinyin": "shēng huó guān niàn",
+          "hanviet": "Sinh Hoạt Quán Niệm"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "转变",
+          "pinyin": "zhuǎnbiàn",
+          "hanviet": "Chuyển Biến",
+          "hsk": 5,
+          "word_id": "hsk5_1558",
+          "meaning_vi": "chuyển biến, thay đổi"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk4_562",
+    "hsk5_142",
+    "hsk4_736",
+    "hsk5_1158",
+    "hsk7_3296"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Trước khi có nước máy, nguồn nước giếng ở nội thành Bắc Kinh thời xưa có vị gì?",
+      "options_vi": [
+        "Vị mặn đắng, khó uống",
+        "Vị ngọt như mật ong",
+        "Vị thơm mùi hoa cúc"
+      ],
+      "answer": 0,
+      "explanation_vi": "Nước giếng đào nông ở nội thành thời đó thường bị nhiễm phèn chua mặn lợ."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Công ty nước máy đầu tiên ở Bắc Kinh năm 1908 huy động vốn bằng hình thức nào?",
+      "options_vi": [
+        "Phát hành cổ phiếu huy động vốn trong xã hội",
+        "Vay vàng của cướp biển",
+        "Thu thuế thú cưng"
+      ],
+      "answer": 0,
+      "explanation_vi": "Công ty Nước máy Kinh Sư được thành lập theo mô hình công ty cổ phần kêu gọi vốn."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Công trình nước máy sạch mang lại lợi ích to lớn nhất cho thành phố là gì?",
+      "options_vi": [
+        "Nâng cao vệ sinh môi trường, phòng chống dịch bệnh truyền nhiễm từ nguồn nước bẩn",
+        "Làm đường phố ngập lụt",
+        "Làm nước đổi màu đỏ"
+      ],
+      "answer": 0,
+      "explanation_vi": "Nguồn nước sạch tiệt trùng giúp chấm dứt các đợt dịch tả và cải thiện sức khỏe người dân."
+    }
+  ]
+}

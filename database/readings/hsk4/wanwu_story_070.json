@@ -1,0 +1,853 @@
+{
+  "id": "wanwu_story_070",
+  "chapter_no": 70,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 4,
+  "book_page_start": 723,
+  "book_page_end": 734,
+  "page_display": "Trang 723 - 734",
+  "title": {
+    "zh": "和离：一纸管窥唐人离婚",
+    "vi": "Hòa ly: Bức thư ly hôn văn minh thời Đường"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "📜",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_070.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_070.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 723 - 734 · Bức thư 'Phóng thê thư' khai quật ở Đôn Hoàng chúc phúc đôi bên tự do êm thấm thời Thịnh Đường.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "许多人以为中国古代婚姻全部是封建礼教束缚下的包办结合，女性毫无个人意愿。",
+      "pinyin": "Xǔduō rén yǐwéi Zhōngguó gǔdài hūnyīn quánbù shì fēngjiàn lǐjiào shùfù xià de bāobàn jiéhé, nǚxìng háowú gèrén yìyuàn.",
+      "vi": "Nhiều người ngỡ rằng hôn nhân cổ đại đều bị lễ giáo gò bó ép gả, người phụ nữ hoàn toàn không có tiếng nói riêng.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "许多",
+          "pinyin": "xǔduō",
+          "hanviet": "Hứa Đa",
+          "hsk": 4,
+          "word_id": "hsk4_836",
+          "meaning_vi": "nhiều, rất nhiều"
+        },
+        {
+          "text": "人",
+          "pinyin": "rén",
+          "hanviet": "Nhân",
+          "hsk": 1,
+          "word_id": "hsk1_243",
+          "meaning_vi": "người"
+        },
+        {
+          "text": "以为",
+          "pinyin": "yǐwéi",
+          "hanviet": "Dĩ Vi",
+          "hsk": 3,
+          "word_id": "hsk3_1009",
+          "meaning_vi": "cho rằng, nghĩ là"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "婚姻",
+          "pinyin": "hūnyīn",
+          "hanviet": "Hôn Nhân",
+          "hsk": 6,
+          "word_id": "hsk6_593",
+          "meaning_vi": "hôn nhân"
+        },
+        {
+          "text": "全部",
+          "pinyin": "quánbù",
+          "hanviet": "Toàn Bộ",
+          "hsk": 4,
+          "word_id": "hsk4_599",
+          "meaning_vi": "toàn bộ"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "封建礼教",
+          "pinyin": "fēng jiàn lǐ jiào",
+          "hanviet": "Phong Kiến Lễ Giáo"
+        },
+        {
+          "text": "束缚",
+          "pinyin": "shùfù",
+          "hanviet": "Thúc Buộc",
+          "hsk": 7,
+          "word_id": "hsk7_3783",
+          "meaning_vi": "ràng buộc, trói buộc"
+        },
+        {
+          "text": "下",
+          "pinyin": "xià",
+          "hanviet": "Hạ",
+          "hsk": 1,
+          "word_id": "hsk1_581",
+          "meaning_vi": "dưới"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "包办",
+          "pinyin": "bāo bàn",
+          "hanviet": "Bao Biện"
+        },
+        {
+          "text": "结合",
+          "pinyin": "jiéhé",
+          "hanviet": "Kết Hợp",
+          "hsk": 5,
+          "word_id": "hsk5_602",
+          "meaning_vi": "kết hợp"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "女性",
+          "pinyin": "nǚxìng",
+          "hanviet": "Nữ Tính",
+          "hsk": 4,
+          "word_id": "hsk4_539",
+          "meaning_vi": "nữ giới, phụ nữ"
+        },
+        {
+          "text": "毫无",
+          "pinyin": "háo wú",
+          "hanviet": "Hào Vô",
+          "hsk": 6,
+          "word_id": "hsk6_529",
+          "meaning_vi": "hoàn toàn không có, không một chút nào"
+        },
+        {
+          "text": "个人",
+          "pinyin": "gèrén",
+          "hanviet": "Cá Nhân",
+          "hsk": 5,
+          "word_id": "hsk5_400",
+          "meaning_vi": "cá nhân"
+        },
+        {
+          "text": "意愿",
+          "pinyin": "yìyuàn",
+          "hanviet": "Ý Nguyện",
+          "hsk": 7,
+          "word_id": "hsk7_4900",
+          "meaning_vi": "nguyện vọng, mong muốn, ý chí"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "二十世纪在敦煌莫高窟藏经洞出土的唐代文献中，学者发现了令人惊叹的‘放妻书’。",
+      "pinyin": "Èrshí shìjì zài Dūnhuáng Mògāokū cángjīngdòng chūtǔ de Tángdài wénxiàn zhōng, xuézhě fāxiàn le lìng rén jīngtàn de ‘Fàngqīshū’.",
+      "vi": "Vào thế kỷ 20, trong các văn hiến thời Đường khai quật tại hang Mạc Cao Đôn Hoàng, các nhà nghiên cứu đã tìm thấy bản 'Phóng thê thư' kinh ngạc.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "二十世纪",
+          "pinyin": "èr shí shì jì",
+          "hanviet": "Nhị Thập Thế Kỷ"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "敦煌",
+          "pinyin": "dūn huáng",
+          "hanviet": "Đôn Hoàng"
+        },
+        {
+          "text": "莫高窟",
+          "pinyin": "mò gāo kū",
+          "hanviet": "Mạc Cao Quật"
+        },
+        {
+          "text": "藏经洞",
+          "pinyin": "cáng jīng dòng",
+          "hanviet": "Tạng Kinh Động"
+        },
+        {
+          "text": "出土",
+          "pinyin": "chūtǔ",
+          "hanviet": "Xuất Thổ",
+          "hsk": 7,
+          "word_id": "hsk7_590",
+          "meaning_vi": "khai quật, đào được"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "唐代",
+          "pinyin": "táng dài",
+          "hanviet": "Đường Đại"
+        },
+        {
+          "text": "文献",
+          "pinyin": "wénxiàn",
+          "hanviet": "Văn Hiến",
+          "hsk": 6,
+          "word_id": "hsk6_1392",
+          "meaning_vi": "văn hiến, tài liệu"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "学者",
+          "pinyin": "xuézhě",
+          "hanviet": "Học Giả",
+          "hsk": 5,
+          "word_id": "hsk5_1314",
+          "meaning_vi": "học giả, nhà nghiên cứu"
+        },
+        {
+          "text": "发现",
+          "pinyin": "fāxiàn",
+          "hanviet": "Phát Hiện",
+          "hsk": 3,
+          "word_id": "hsk3_712",
+          "meaning_vi": "phát hiện"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "令人惊叹",
+          "pinyin": "lìng rén jīng tàn",
+          "hanviet": "Lệnh Nhân Kinh Thán"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "放妻",
+          "pinyin": "fàng qī",
+          "hanviet": "Phóng Thê"
+        },
+        {
+          "text": "书",
+          "pinyin": "shū",
+          "hanviet": "Thư",
+          "hsk": 1,
+          "word_id": "hsk1_271",
+          "meaning_vi": "sách"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "唐代法律中明确设立了‘和离’制度，即夫妻双方若感情不合，可以平等协商自愿解除婚约。",
+      "pinyin": "Tángdài fǎlǜ zhōng míngquè shèlì le ‘hélí’ zhìdù, jí fūqī shuāngfāng ruò gǎnqíng bùhé, kěyǐ píngděng xiéshāng zìyuàn jiěchú hūnyuē.",
+      "vi": "Luật pháp triều Đường quy định rõ chế độ 'Hòa ly': vợ chồng tình cảm không hợp có thể bình đẳng thương lượng chấm dứt hôn ước.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "唐代",
+          "pinyin": "táng dài",
+          "hanviet": "Đường Đại"
+        },
+        {
+          "text": "法律",
+          "pinyin": "fǎlǜ",
+          "hanviet": "Pháp Luật",
+          "hsk": 4,
+          "word_id": "hsk4_188",
+          "meaning_vi": "pháp luật"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "明确",
+          "pinyin": "míngquè",
+          "hanviet": "Minh Xác",
+          "hsk": 5,
+          "word_id": "hsk5_776",
+          "meaning_vi": "rõ ràng, minh xác"
+        },
+        {
+          "text": "设立",
+          "pinyin": "shèlì",
+          "hanviet": "Thiết Lập",
+          "hsk": 5,
+          "word_id": "hsk5_974",
+          "meaning_vi": "thiết lập, thành lập"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "离",
+          "pinyin": "lí",
+          "hanviet": "Ly",
+          "hsk": 2,
+          "word_id": "hsk2_389",
+          "meaning_vi": "cách (khoảng cách)"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "制度",
+          "pinyin": "zhìdù",
+          "hanviet": "Chế Độ",
+          "hsk": 5,
+          "word_id": "hsk5_1512",
+          "meaning_vi": "chế độ, thể chế"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "即",
+          "pinyin": "jí",
+          "hanviet": "Tức",
+          "hsk": 7,
+          "word_id": "hsk7_1861",
+          "meaning_vi": "tức là, là, liền"
+        },
+        {
+          "text": "夫妻",
+          "pinyin": "fūqī",
+          "hanviet": "Phu Thê",
+          "hsk": 3,
+          "word_id": "hsk3_183",
+          "meaning_vi": "vợ chồng"
+        },
+        {
+          "text": "双方",
+          "pinyin": "shuāngfāng",
+          "hanviet": "Song Phương",
+          "hsk": 5,
+          "word_id": "hsk5_1070",
+          "meaning_vi": "hai bên, đôi bên"
+        },
+        {
+          "text": "若",
+          "pinyin": "ruò",
+          "hanviet": "Nhược",
+          "hsk": 7,
+          "word_id": "hsk7_3466",
+          "meaning_vi": "nếu; nếu như"
+        },
+        {
+          "text": "感情",
+          "pinyin": "gǎnqíng",
+          "hanviet": "Cảm Tình",
+          "hsk": 4,
+          "word_id": "hsk4_229",
+          "meaning_vi": "cảm tình, tình cảm"
+        },
+        {
+          "text": "不合",
+          "pinyin": "bù hé",
+          "hanviet": "Bất Cáp"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "可以",
+          "pinyin": "kěyǐ",
+          "hanviet": "Khả Dĩ",
+          "hsk": 1,
+          "word_id": "hsk1_160",
+          "meaning_vi": "có thể, được"
+        },
+        {
+          "text": "平等",
+          "pinyin": "píngděng",
+          "hanviet": "Bình Đẳng",
+          "hsk": 6,
+          "word_id": "hsk6_997",
+          "meaning_vi": "bình đẳng"
+        },
+        {
+          "text": "协商",
+          "pinyin": "xiéshāng",
+          "hanviet": "Hiệp Thương",
+          "hsk": 7,
+          "word_id": "hsk7_4521",
+          "meaning_vi": "hiệp thương, thương lượng"
+        },
+        {
+          "text": "自愿",
+          "pinyin": "zìyuàn",
+          "hanviet": "Tự Nguyện",
+          "hsk": 6,
+          "word_id": "hsk6_1784",
+          "meaning_vi": "tự nguyện"
+        },
+        {
+          "text": "解除婚约",
+          "pinyin": "jiě chú hūn yuē",
+          "hanviet": "Giải Trừ Hôn Yêu"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "文书中温情写道：‘愿娘子相离之后，重梳蝉鬓，美扫娥眉，巧呈窈窕之姿，选聘高官之主’。",
+      "pinyin": "Wénshū zhōng wēnqíng xiě dào: ‘Yuàn niángzǐ xiānglí zhīhòu, chóng shū chánbìn, měi sǎo éméi, qiǎo chéng yǎotiǎo zhī zī, xuǎnpìn gāoguān zhī zhǔ’.",
+      "vi": "Lời thư ấm áp viết: 'Nguyện nàng sau khi chia tay, lại chải tóc mây vẽ lông mày đẹp, giữ vẻ yêu kiều chọn gả cho bậc tài ba xứng đáng'.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "文书",
+          "pinyin": "wén shū",
+          "hanviet": "Văn Thư"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "温情",
+          "pinyin": "wēn qíng",
+          "hanviet": "Ôn Tình"
+        },
+        {
+          "text": "写道",
+          "pinyin": "xiě dào",
+          "hanviet": "Tả Đạo"
+        },
+        {
+          "text": "："
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "愿",
+          "pinyin": "yuàn",
+          "hanviet": "Nguyện",
+          "hsk": 5,
+          "word_id": "hsk5_1434",
+          "meaning_vi": "nguyện, mong muốn; chúc"
+        },
+        {
+          "text": "娘子",
+          "pinyin": "niáng zǐ",
+          "hanviet": "Nương Tử"
+        },
+        {
+          "text": "相",
+          "pinyin": "xiāng",
+          "hanviet": "Tương"
+        },
+        {
+          "text": "离",
+          "pinyin": "lí",
+          "hanviet": "Ly",
+          "hsk": 2,
+          "word_id": "hsk2_389",
+          "meaning_vi": "cách (khoảng cách)"
+        },
+        {
+          "text": "之后",
+          "pinyin": "zhīhòu",
+          "hanviet": "Chi Hậu",
+          "hsk": 4,
+          "word_id": "hsk4_941",
+          "meaning_vi": "sau, sau khi"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "重梳",
+          "pinyin": "zhòng shū",
+          "hanviet": "Trọng Sơ"
+        },
+        {
+          "text": "蝉",
+          "pinyin": "chán",
+          "hanviet": "Thiền"
+        },
+        {
+          "text": "鬓",
+          "pinyin": "bìn",
+          "hanviet": "Tấn"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "美扫",
+          "pinyin": "měi sǎo",
+          "hanviet": "Mỹ Tảo"
+        },
+        {
+          "text": "娥眉",
+          "pinyin": "é méi",
+          "hanviet": "Nga Mi"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "巧",
+          "pinyin": "qiǎo",
+          "hanviet": "Xảo",
+          "hsk": 4,
+          "word_id": "hsk4_582",
+          "meaning_vi": "khéo; vừa khéo, trùng hợp"
+        },
+        {
+          "text": "呈",
+          "pinyin": "chéng",
+          "hanviet": "Trình",
+          "hsk": 7,
+          "word_id": "hsk7_487",
+          "meaning_vi": "hiện ra, lộ ra, trình lên"
+        },
+        {
+          "text": "窈窕",
+          "pinyin": "yǎo tiǎo",
+          "hanviet": "Yểu Điệu"
+        },
+        {
+          "text": "之姿",
+          "pinyin": "zhī zī",
+          "hanviet": "Chi Tư"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "选聘",
+          "pinyin": "xuǎn pìn",
+          "hanviet": "Tuyển Sính"
+        },
+        {
+          "text": "高官",
+          "pinyin": "gāo guān",
+          "hanviet": "Cao Quan"
+        },
+        {
+          "text": "之主",
+          "pinyin": "zhī zhǔ",
+          "hanviet": "Chi Chủ"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "这份一千多年前的文书充满温和宽容与美好祝愿，展现了大唐社会开放自信的文明气象。",
+      "pinyin": "Zhè fèn yìqiān duō nián qián de wénshū chōngmǎn wēnhé kuānróng yǔ měihǎo zhùyuàn, zhǎnxiàn le Dà Táng shèhuì kāifàng zìxìn de wénmíng qìxiàng.",
+      "vi": "Bản văn tự hơn một ngàn năm trước chan chứa lời chúc an lành bao dung, thể hiện khí độ cởi mở và văn minh của thời Thịnh Đường.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "这份",
+          "pinyin": "zhè fèn",
+          "hanviet": "Giá Phần"
+        },
+        {
+          "text": "一千多年",
+          "pinyin": "yī qiān duō nián",
+          "hanviet": "Nhất Thiên Đa Niên"
+        },
+        {
+          "text": "前",
+          "pinyin": "qián",
+          "hanviet": "Tiền",
+          "hsk": 1,
+          "word_id": "hsk1_558",
+          "meaning_vi": "trước"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "文书",
+          "pinyin": "wén shū",
+          "hanviet": "Văn Thư"
+        },
+        {
+          "text": "充满",
+          "pinyin": "chōngmǎn",
+          "hanviet": "Sung Mãn",
+          "hsk": 5,
+          "word_id": "hsk5_161",
+          "meaning_vi": "đầy, tràn đầy"
+        },
+        {
+          "text": "温和",
+          "pinyin": "wēnhé",
+          "hanviet": "Ôn Hòa",
+          "hsk": 6,
+          "word_id": "hsk6_1384",
+          "meaning_vi": "ôn hòa, dịu dàng"
+        },
+        {
+          "text": "宽容",
+          "pinyin": "kuānróng",
+          "hanviet": "Khoan Dung",
+          "hsk": 7,
+          "word_id": "hsk7_2432",
+          "meaning_vi": "khoan dung"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "美好",
+          "pinyin": "měihǎo",
+          "hanviet": "Mỹ Hảo",
+          "hsk": 4,
+          "word_id": "hsk4_501",
+          "meaning_vi": "tốt đẹp"
+        },
+        {
+          "text": "祝愿",
+          "pinyin": "zhùyuàn",
+          "hanviet": "Chúc Nguyện",
+          "hsk": 6,
+          "word_id": "hsk6_1755",
+          "meaning_vi": "chúc phúc, cầu chúc"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "展现",
+          "pinyin": "zhǎnxiàn",
+          "hanviet": "Triển Hiện",
+          "hsk": 5,
+          "word_id": "hsk5_1467",
+          "meaning_vi": "hiển thị"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "大唐",
+          "pinyin": "dà táng",
+          "hanviet": "Đại Đường"
+        },
+        {
+          "text": "社会",
+          "pinyin": "shèhuì",
+          "hanviet": "Xã Hội",
+          "hsk": 4,
+          "word_id": "hsk4_639",
+          "meaning_vi": "xã hội"
+        },
+        {
+          "text": "开放",
+          "pinyin": "kāifàng",
+          "hanviet": "Khai Phóng",
+          "hsk": 5,
+          "word_id": "hsk5_650",
+          "meaning_vi": "mở cửa, khai phóng"
+        },
+        {
+          "text": "自信",
+          "pinyin": "zìxìn",
+          "hanviet": "Tự Tín",
+          "hsk": 4,
+          "word_id": "hsk4_983",
+          "meaning_vi": "tự tin"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "文明",
+          "pinyin": "wénmíng",
+          "hanviet": "Văn Minh",
+          "hsk": 6,
+          "word_id": "hsk6_1389",
+          "meaning_vi": "văn minh"
+        },
+        {
+          "text": "气象",
+          "pinyin": "qìxiàng",
+          "hanviet": "Khí Tượng",
+          "hsk": 7,
+          "word_id": "hsk7_3190",
+          "meaning_vi": "khí tượng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk3_712",
+    "hsk4_188",
+    "hsk5_1512",
+    "hsk4_639",
+    "hsk4_836"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Văn bản ly hôn thời Đường 'Phóng thê thư' (放妻书) được tìm thấy ở đâu?",
+      "options_vi": [
+        "Hang Mạc Cao ở Đôn Hoàng (敦煌莫高窟)",
+        "Lăng mộ Tần Thủy Hoàng",
+        "Dưới đáy hồ Tây"
+      ],
+      "answer": 0,
+      "explanation_vi": "Văn bản được phát hiện trong kho tàng bản thảo hang Mạc Cao ở Đôn Hoàng."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Chế độ 'Hòa ly' (和离) trong luật pháp thời Đường mang đặc điểm gì nổi bật?",
+      "options_vi": [
+        "Hai bên thuận tình hòa thuận chia tay khi hôn nhân không hạnh phúc và chúc phúc nhau",
+        "Bắt phạt tù người vợ",
+        "Tịch thu toàn bộ ruộng vườn"
+      ],
+      "answer": 0,
+      "explanation_vi": "Hòa ly là hình thức ly hôn hòa bình, hai bên đồng thuận giải thoát cho nhau."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Lời dặn trong 'Phóng thê thư' thể hiện thái độ nào đối với người phụ nữ sau ly hôn?",
+      "options_vi": [
+        "Bao dung, tôn trọng và chân thành chúc người vợ tìm được hạnh phúc mới tốt đẹp hơn",
+        "Nguyền rủa đối phương",
+        "Cấm không cho ra đường"
+      ],
+      "answer": 0,
+      "explanation_vi": "Lời thư tao nhã chúc người vợ tái giá hạnh phúc thể hiện sự văn minh độ lượng."
+    }
+  ]
+}

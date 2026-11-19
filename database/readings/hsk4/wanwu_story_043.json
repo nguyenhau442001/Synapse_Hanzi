@@ -1,0 +1,813 @@
+{
+  "id": "wanwu_story_043",
+  "chapter_no": 43,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 3,
+  "book_page_start": 441,
+  "book_page_end": 456,
+  "page_display": "Trang 441 - 456",
+  "title": {
+    "zh": "姓名：历代取名时尚",
+    "vi": "Họ và tên: Phong cách đặt tên qua các triều đại"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "📜",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_043.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_043.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 441 - 456 · Sự phân biệt cổ xưa giữa 'Họ' và 'Thị', tục đặt tên chữ và xu hướng đặt tên qua các thời kỳ lịch sử.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "在中国古代，‘姓’与‘氏’最初有着非常严格的区别，代表着血缘与贵族阶层。",
+      "pinyin": "Zài Zhōngguó gǔdài, ‘xìng’ yǔ ‘shì’ zuìchū yǒuzhe fēicháng yángé de qūbié, dàibiǎo zhe xuèyuán yǔ guìzú jiēcéng.",
+      "vi": "Vào thời cổ đại Trung Quốc, 'Họ' và 'Thị' ban đầu có sự phân biệt vô cùng nghiêm ngặt, đại diện cho huyết thống và giai tầng quý tộc.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "姓",
+          "pinyin": "xìng",
+          "hanviet": "Tính",
+          "hsk": 2,
+          "word_id": "hsk2_464",
+          "meaning_vi": "họ (tên)"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "氏",
+          "pinyin": "shì",
+          "hanviet": "Thị"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "最初",
+          "pinyin": "zuìchū",
+          "hanviet": "Tối Sơ",
+          "hsk": 5,
+          "word_id": "hsk5_1596",
+          "meaning_vi": "ban đầu, lúc đầu"
+        },
+        {
+          "text": "有着",
+          "pinyin": "yǒuzhe",
+          "hanviet": "Hữu Trước",
+          "hsk": 4,
+          "word_id": "hsk4_894",
+          "meaning_vi": "có (thường dùng trong văn viết)"
+        },
+        {
+          "text": "非常",
+          "pinyin": "fēicháng",
+          "hanviet": "Phi Thường",
+          "hsk": 1,
+          "word_id": "hsk1_515",
+          "meaning_vi": "rất, vô cùng"
+        },
+        {
+          "text": "严格",
+          "pinyin": "yángé",
+          "hanviet": "Nghiêm Cách",
+          "hsk": 4,
+          "word_id": "hsk4_845",
+          "meaning_vi": "nghiêm khắc, chặt chẽ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "区别",
+          "pinyin": "qūbié",
+          "hanviet": "Âu Biệt",
+          "hsk": 4,
+          "word_id": "hsk4_594",
+          "meaning_vi": "sự khác biệt"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "代表",
+          "pinyin": "dàibiǎo",
+          "hanviet": "Đại Biểu",
+          "hsk": 5,
+          "word_id": "hsk5_234",
+          "meaning_vi": "đại diện"
+        },
+        {
+          "text": "着",
+          "pinyin": "zhe",
+          "hanviet": "Trước",
+          "hsk": 2,
+          "word_id": "hsk2_490",
+          "meaning_vi": "đang (trợ từ)"
+        },
+        {
+          "text": "血缘",
+          "pinyin": "xuèyuán",
+          "hanviet": "Huyết Duyên",
+          "hsk": 7,
+          "word_id": "hsk7_4690",
+          "meaning_vi": "huyết thống; huyết duyên"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "贵族",
+          "pinyin": "guìzú",
+          "hanviet": "Quý Tộc",
+          "hsk": 7,
+          "word_id": "hsk7_1533",
+          "meaning_vi": "quý tộc"
+        },
+        {
+          "text": "阶层",
+          "pinyin": "jiēcéng",
+          "hanviet": "Giai Tầng",
+          "hsk": 7,
+          "word_id": "hsk7_2070",
+          "meaning_vi": "tầng lớp, giai tầng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "‘姓’源于母系氏族社会，因此很多古老的大姓如姬、姜、姒都带有女字旁。",
+      "pinyin": "‘Xìng’ yuányú mǔxì shìzú shèhuì, yīncǐ hěn duō gǔlǎo de dàxìng rú Jī, Jiāng, Sì dōu dàiyǒu nǚ zì páng.",
+      "vi": "'Họ' bắt nguồn từ xã hội thị tộc mẫu hệ, vì vậy nhiều dòng họ cổ xưa như Cơ, Khương, Tự đều mang bộ Nữ.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "‘"
+        },
+        {
+          "text": "姓",
+          "pinyin": "xìng",
+          "hanviet": "Tính",
+          "hsk": 2,
+          "word_id": "hsk2_464",
+          "meaning_vi": "họ (tên)"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "源于",
+          "pinyin": "yuányú",
+          "hanviet": "Nguyên Vu",
+          "hsk": 6,
+          "word_id": "hsk6_1625",
+          "meaning_vi": "từ"
+        },
+        {
+          "text": "母系",
+          "pinyin": "mǔ xì",
+          "hanviet": "Mẫu Hệ"
+        },
+        {
+          "text": "氏族社会",
+          "pinyin": "shì zú shè huì",
+          "hanviet": "Thị Tộc Xã Hội"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "因此",
+          "pinyin": "yīncǐ",
+          "hanviet": "Nhân Thử",
+          "hsk": 4,
+          "word_id": "hsk4_871",
+          "meaning_vi": "vì vậy, do đó"
+        },
+        {
+          "text": "很多",
+          "pinyin": "hěn duō",
+          "hanviet": "Ngận Đa"
+        },
+        {
+          "text": "古老",
+          "pinyin": "gǔlǎo",
+          "hanviet": "Cổ Lão",
+          "hsk": 5,
+          "word_id": "hsk5_425",
+          "meaning_vi": "cổ xưa"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "大姓",
+          "pinyin": "dà xìng",
+          "hanviet": "Đại Tính"
+        },
+        {
+          "text": "如姬",
+          "pinyin": "rú jī",
+          "hanviet": "Như Cơ"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "姜",
+          "pinyin": "jiāng",
+          "hanviet": "Khương",
+          "hsk": 7,
+          "word_id": "hsk7_2011",
+          "meaning_vi": "củ gừng, gừng"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "姒",
+          "pinyin": "sì",
+          "hanviet": "Tự"
+        },
+        {
+          "text": "都",
+          "pinyin": "dōu",
+          "hanviet": "Đô",
+          "hsk": 1,
+          "word_id": "hsk1_76",
+          "meaning_vi": "đều"
+        },
+        {
+          "text": "带有",
+          "pinyin": "dài yǒu",
+          "hanviet": "Đới Hữu"
+        },
+        {
+          "text": "女",
+          "pinyin": "nǚ",
+          "hanviet": "Nữ",
+          "hsk": 1,
+          "word_id": "hsk1_553",
+          "meaning_vi": "nữ, con gái"
+        },
+        {
+          "text": "字旁",
+          "pinyin": "zì páng",
+          "hanviet": "Tự Bàng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "古人除了有名之外，成年举行冠礼后还会取‘字’，朋友同辈之间通常称字以示尊敬。",
+      "pinyin": "Gǔrén chúle yǒu míng zhīwài, chéngnián jǔxíng guānlǐ hòu hái huì qǔ ‘zì’, péngyou tóngbèi zhījiān tōngcháng chēng zì yǐ shì zūnjìng.",
+      "vi": "Cổ nhân ngoài tên húy, khi trưởng thành làm lễ đội mũ còn đặt thêm 'tên chữ', bạn bè đồng trang lứa gọi chữ để tỏ lòng tôn kính.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "古人",
+          "pinyin": "gǔrén",
+          "hanviet": "Cổ Nhân",
+          "hsk": 6,
+          "word_id": "hsk6_478",
+          "meaning_vi": "người xưa, người cổ đại"
+        },
+        {
+          "text": "除了",
+          "pinyin": "chúle",
+          "hanviet": "Trừ Liễu",
+          "hsk": 3,
+          "word_id": "hsk3_664",
+          "meaning_vi": "ngoài ra, trừ"
+        },
+        {
+          "text": "有名",
+          "pinyin": "yǒumíng",
+          "hanviet": "Hữu Danh",
+          "hsk": 3,
+          "word_id": "hsk3_1026",
+          "meaning_vi": "nổi tiếng"
+        },
+        {
+          "text": "之外",
+          "pinyin": "zhī wài",
+          "hanviet": "Chi Ngoại"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "成年",
+          "pinyin": "chéng nián",
+          "hanviet": "Thành Niên"
+        },
+        {
+          "text": "举行",
+          "pinyin": "jǔxíng",
+          "hanviet": "Cử Hành",
+          "hsk": 4,
+          "word_id": "hsk4_412",
+          "meaning_vi": "cử hành, tổ chức"
+        },
+        {
+          "text": "冠礼",
+          "pinyin": "guàn lǐ",
+          "hanviet": "Quán Lễ"
+        },
+        {
+          "text": "后",
+          "pinyin": "hòu",
+          "hanviet": "Hậu",
+          "hsk": 1,
+          "word_id": "hsk1_524",
+          "meaning_vi": "sau"
+        },
+        {
+          "text": "还",
+          "pinyin": "hái",
+          "hanviet": "Hoàn",
+          "hsk": 1,
+          "word_id": "hsk1_111",
+          "meaning_vi": "vẫn còn"
+        },
+        {
+          "text": "会取",
+          "pinyin": "huì qǔ",
+          "hanviet": "Hội Thủ"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "字",
+          "pinyin": "zì",
+          "hanviet": "Tự",
+          "hsk": 1,
+          "word_id": "hsk1_415",
+          "meaning_vi": "chữ"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "朋友",
+          "pinyin": "péngyou",
+          "hanviet": "Bằng Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_222",
+          "meaning_vi": "bạn"
+        },
+        {
+          "text": "同辈",
+          "pinyin": "tóng bèi",
+          "hanviet": "Đồng Bối"
+        },
+        {
+          "text": "之间",
+          "pinyin": "zhījiān",
+          "hanviet": "Chi Gian",
+          "hsk": 4,
+          "word_id": "hsk4_942",
+          "meaning_vi": "giữa"
+        },
+        {
+          "text": "通常",
+          "pinyin": "tōngcháng",
+          "hanviet": "Thông Thường",
+          "hsk": 5,
+          "word_id": "hsk5_1139",
+          "meaning_vi": "thông thường"
+        },
+        {
+          "text": "称字",
+          "pinyin": "chēng zì",
+          "hanviet": "Xứng Tự"
+        },
+        {
+          "text": "以示",
+          "pinyin": "yǐ shì",
+          "hanviet": "Dĩ Thị"
+        },
+        {
+          "text": "尊敬",
+          "pinyin": "zūnjìng",
+          "hanviet": "Tôn Kính",
+          "hsk": 5,
+          "word_id": "hsk5_1598",
+          "meaning_vi": "tôn kính"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "例如著名诗人李白字太白，杜甫字子美，名与字之间往往蕴含着互补或相近的文化寓意。",
+      "pinyin": "Lìrú zhùmíng shīrén Lǐ Bái zì Tàibái, Dù Fǔ zì Zǐměi, míng yǔ zì zhījiān wǎngwǎng yùnhán zhe hùbǔ huò xiāngjìn de wénhuà yùyì.",
+      "vi": "Ví dụ thi tiên Lý Bạch tự Thái Bạch, Đỗ Phủ tự Tử Mỹ; tên và chữ thường hàm chứa ý nghĩa văn hóa tương đồng hoặc bổ trợ lẫn nhau.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "例如",
+          "pinyin": "lìrú",
+          "hanviet": "Lệ Như",
+          "hsk": 4,
+          "word_id": "hsk4_466",
+          "meaning_vi": "ví dụ như"
+        },
+        {
+          "text": "著名诗人",
+          "pinyin": "zhù míng shī rén",
+          "hanviet": "Trước Danh Thi Nhân"
+        },
+        {
+          "text": "李白",
+          "pinyin": "lǐ bái",
+          "hanviet": "Lý Bạch"
+        },
+        {
+          "text": "字",
+          "pinyin": "zì",
+          "hanviet": "Tự",
+          "hsk": 1,
+          "word_id": "hsk1_415",
+          "meaning_vi": "chữ"
+        },
+        {
+          "text": "太白",
+          "pinyin": "tài bái",
+          "hanviet": "Thái Bạch"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "杜甫",
+          "pinyin": "dù fǔ",
+          "hanviet": "Đỗ Phủ"
+        },
+        {
+          "text": "字子",
+          "pinyin": "zì zi",
+          "hanviet": "Tự Tử"
+        },
+        {
+          "text": "美",
+          "pinyin": "měi",
+          "hanviet": "Mỹ",
+          "hsk": 4,
+          "word_id": "hsk4_500",
+          "meaning_vi": "đẹp"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "名",
+          "pinyin": "míng",
+          "hanviet": "Danh",
+          "hsk": 2,
+          "word_id": "hsk2_404",
+          "meaning_vi": "người, vị (lượng từ: 一名医生); tên"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "字",
+          "pinyin": "zì",
+          "hanviet": "Tự",
+          "hsk": 1,
+          "word_id": "hsk1_415",
+          "meaning_vi": "chữ"
+        },
+        {
+          "text": "之间",
+          "pinyin": "zhījiān",
+          "hanviet": "Chi Gian",
+          "hsk": 4,
+          "word_id": "hsk4_942",
+          "meaning_vi": "giữa"
+        },
+        {
+          "text": "往往",
+          "pinyin": "wǎngwǎng",
+          "hanviet": "Vãng Vãng",
+          "hsk": 4,
+          "word_id": "hsk4_766",
+          "meaning_vi": "thường thường"
+        },
+        {
+          "text": "蕴含着",
+          "pinyin": "yùn hán zhe",
+          "hanviet": "Uẩn Hàm Trước"
+        },
+        {
+          "text": "互补",
+          "pinyin": "hùbǔ",
+          "hanviet": "Hỗ Bổ",
+          "hsk": 7,
+          "word_id": "hsk7_1711",
+          "meaning_vi": "bổ khuyết cho nhau, tương hỗ"
+        },
+        {
+          "text": "或",
+          "pinyin": "huò",
+          "hanviet": "Hoặc",
+          "hsk": 3,
+          "word_id": "hsk3_774",
+          "meaning_vi": "hoặc"
+        },
+        {
+          "text": "相近",
+          "pinyin": "xiāngjìn",
+          "hanviet": "Tương Cận",
+          "hsk": 7,
+          "word_id": "hsk7_4467",
+          "meaning_vi": "tương đồng gần gũi; xấp xỉ; tương tự"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "文化",
+          "pinyin": "wénhuà",
+          "hanviet": "Văn Hóa",
+          "hsk": 3,
+          "word_id": "hsk3_957",
+          "meaning_vi": "văn hóa"
+        },
+        {
+          "text": "寓意",
+          "pinyin": "yùyì",
+          "hanviet": "Ngụ Ý",
+          "hsk": 7,
+          "word_id": "hsk7_5034",
+          "meaning_vi": "ngụ ý, ý nghĩa biểu trưng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "秦汉以后，姓氏逐渐合二为一，演变成为今天人人皆有的中华百家姓家族标志。",
+      "pinyin": "Qín-Hàn yǐhòu, xìngshì zhújiàn hé'èr-wéiyī, yǎnbiàn chéngwéi jīntiān rénrén jiē yǒu de Zhōnghuá bǎijiāxìng jiāzú biāozhì.",
+      "vi": "Sau thời Tần Hán, họ và thị dần hợp nhất làm một, phát triển thành biểu tượng dòng họ trong Bách Gia Tính mà ai ai ngày nay cũng có.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "秦汉",
+          "pinyin": "qín hàn",
+          "hanviet": "Tần Hán"
+        },
+        {
+          "text": "以后",
+          "pinyin": "yǐhòu",
+          "hanviet": "Dĩ Hậu",
+          "hsk": 3,
+          "word_id": "hsk3_1005",
+          "meaning_vi": "sau này, sau khi"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "姓氏",
+          "pinyin": "xìngshì",
+          "hanviet": "Tính Thị",
+          "hsk": 7,
+          "word_id": "hsk7_4599",
+          "meaning_vi": "dòng họ; họ"
+        },
+        {
+          "text": "逐渐",
+          "pinyin": "zhújiàn",
+          "hanviet": "Trục Tiêm",
+          "hsk": 5,
+          "word_id": "hsk5_1538",
+          "meaning_vi": "dần dần"
+        },
+        {
+          "text": "合二为一",
+          "pinyin": "hé èr wéi yī",
+          "hanviet": "Cáp Nhị Vi Nhất"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "演变",
+          "pinyin": "yǎnbiàn",
+          "hanviet": "Diễn Biến",
+          "hsk": 7,
+          "word_id": "hsk7_4737",
+          "meaning_vi": "diễn biến, biến đổi"
+        },
+        {
+          "text": "成为",
+          "pinyin": "chéngwéi",
+          "hanviet": "Thành Vi",
+          "hsk": 4,
+          "word_id": "hsk4_82",
+          "meaning_vi": "trở thành"
+        },
+        {
+          "text": "今天",
+          "pinyin": "jīntiān",
+          "hanviet": "Kim Thiên",
+          "hsk": 1,
+          "word_id": "hsk1_144",
+          "meaning_vi": "hôm nay"
+        },
+        {
+          "text": "人人",
+          "pinyin": "rén rén",
+          "hanviet": "Nhân Nhân"
+        },
+        {
+          "text": "皆",
+          "pinyin": "jiē",
+          "hanviet": "Giai",
+          "hsk": 7,
+          "word_id": "hsk7_2065",
+          "meaning_vi": "đều, thảy, đều là"
+        },
+        {
+          "text": "有",
+          "pinyin": "yǒu",
+          "hanviet": "Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_380",
+          "meaning_vi": "có"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "中华",
+          "pinyin": "Zhōnghuá",
+          "hanviet": "Trung Hoa",
+          "hsk": 5,
+          "word_id": "hsk5_1520",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "百家姓",
+          "pinyin": "bǎi jiā xìng",
+          "hanviet": "Bách Gia Tính"
+        },
+        {
+          "text": "家族",
+          "pinyin": "jiāzú",
+          "hanviet": "Gia Tộc",
+          "hsk": 7,
+          "word_id": "hsk7_1936",
+          "meaning_vi": "gia đình"
+        },
+        {
+          "text": "标志",
+          "pinyin": "biāozhì",
+          "hanviet": "Tiêu Chí",
+          "hsk": 5,
+          "word_id": "hsk5_61",
+          "meaning_vi": "biểu tượng, dấu hiệu"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk4_845",
+    "hsk3_957",
+    "hsk4_967",
+    "hsk5_61",
+    "hsk1_390"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Tại sao nhiều dòng họ cổ đại như Cơ (姬), Khương (姜) đều mang bộ Nữ (女)?",
+      "options_vi": [
+        "Bắt nguồn từ xã hội thị tộc mẫu hệ thời nguyên thủy",
+        "Do phụ nữ thích thêu thùa",
+        "Do hoàng đế ra lệnh"
+      ],
+      "answer": 0,
+      "explanation_vi": "Thời nguyên thủy theo mẫu hệ nên họ (姓) mang bộ Nữ ghi nhớ dòng máu mẹ."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Người xưa thường dùng 'tên chữ' (字) trong hoàn cảnh nào?",
+      "options_vi": [
+        "Bạn bè, đồng nghiệp gọi nhau hàng ngày để thể hiện sự lịch thiệp, tôn trọng",
+        "Chỉ dùng khi phạm tội",
+        "Chỉ dùng khi viết chúc thư"
+      ],
+      "answer": 0,
+      "explanation_vi": "Tên húy thường do trưởng bối gọi, còn bạn bè xưng hô bằng 'chữ' để bày tỏ lòng kính trọng."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Nhà thơ Lý Bạch có tên chữ là gì?",
+      "options_vi": [
+        "Thái Bạch",
+        "Tử Mỹ",
+        "Đông Pha"
+      ],
+      "answer": 0,
+      "explanation_vi": "Lý Bạch tự Thái Bạch, hiệu Thanh Liên Cư Sĩ."
+    }
+  ]
+}

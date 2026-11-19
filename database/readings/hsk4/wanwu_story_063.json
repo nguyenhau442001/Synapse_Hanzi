@@ -1,0 +1,898 @@
+{
+  "id": "wanwu_story_063",
+  "chapter_no": 63,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 3,
+  "book_page_start": 662,
+  "book_page_end": 675,
+  "page_display": "Trang 662 - 675",
+  "title": {
+    "zh": "年画：历史风物跃然纸上",
+    "vi": "Tranh Tết: Nét phong vật lịch sử trên trang giấy đỏ"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🧧",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_063.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_063.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 662 - 675 · Tranh khắc gỗ dân gian đón xuân từ thần giữ cửa Môn Thần đến tranh em bé ôm cá chép cầu phúc đầu năm.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "每逢新春佳节，千家万户总喜欢在大门和墙壁上张贴色彩喜庆的年画，祈求来年五谷丰登、吉祥安康。",
+      "pinyin": "Měiféng xīnchūn jiājié, qiānjiā-wànhù zǒng xǐhuan zài dàmén hé qiángbì shàng zhāngtiē sècǎi xǐqìng de niánhuà, qǐqiú láinián wǔgǔ-fēngdēng, jíxiáng ānkāng.",
+      "vi": "Mỗi dịp Tết đến xuân về, muôn nhà đều thích dán những bức tranh Tết rực rỡ lên cửa lớn và vách tường, cầu mong mùa màng bội thu, cát tường an khang.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "每逢",
+          "pinyin": "měi féng",
+          "hanviet": "Mỗi Phùng"
+        },
+        {
+          "text": "新春佳节",
+          "pinyin": "xīn chūn jiā jié",
+          "hanviet": "Tân Xuân Giai Tiết"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "千家万户",
+          "pinyin": "qiānjiā-wànhù",
+          "hanviet": "Thiên Gia Mặc Hộ",
+          "hsk": 6,
+          "word_id": "hsk6_1033",
+          "meaning_vi": "muôn nhà, hàng ngàn hộ gia đình"
+        },
+        {
+          "text": "总",
+          "pinyin": "zǒng",
+          "hanviet": "Tổng",
+          "hsk": 3,
+          "word_id": "hsk3_1072",
+          "meaning_vi": "luôn, lúc nào cũng; tổng"
+        },
+        {
+          "text": "喜欢",
+          "pinyin": "xǐhuan",
+          "hanviet": "Hỷ Hoan",
+          "hsk": 1,
+          "word_id": "hsk1_327",
+          "meaning_vi": "thích"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "大门",
+          "pinyin": "dà mén",
+          "hanviet": "Đại Môn"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "墙壁",
+          "pinyin": "qiángbì",
+          "hanviet": "Tường Bích",
+          "hsk": 6,
+          "word_id": "hsk6_1041",
+          "meaning_vi": "bức tường"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "张贴",
+          "pinyin": "zhāngtiē",
+          "hanviet": "Trương Thiếp",
+          "hsk": 7,
+          "word_id": "hsk7_5167",
+          "meaning_vi": "dán, dán thông báo"
+        },
+        {
+          "text": "色彩",
+          "pinyin": "sècǎi",
+          "hanviet": "Sắc Thái",
+          "hsk": 5,
+          "word_id": "hsk5_943",
+          "meaning_vi": "màu sắc, sắc thái"
+        },
+        {
+          "text": "喜庆",
+          "pinyin": "xǐqìng",
+          "hanviet": "Hỷ Khánh",
+          "hsk": 7,
+          "word_id": "hsk7_4392",
+          "meaning_vi": "vui tươi hân hoan; rộn ràng tưng bừng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "年画",
+          "pinyin": "niánhuà",
+          "hanviet": "Niên Hoạ",
+          "hsk": 7,
+          "word_id": "hsk7_2956",
+          "meaning_vi": "tranh Tết"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "祈求",
+          "pinyin": "qí qiú",
+          "hanviet": "Kỳ Cầu"
+        },
+        {
+          "text": "来",
+          "pinyin": "lái",
+          "hanviet": "Lai",
+          "hsk": 1,
+          "word_id": "hsk1_533",
+          "meaning_vi": "đến, tới"
+        },
+        {
+          "text": "年",
+          "pinyin": "nián",
+          "hanviet": "Niên",
+          "hsk": 1,
+          "word_id": "hsk1_214",
+          "meaning_vi": "năm"
+        },
+        {
+          "text": "五谷丰登",
+          "pinyin": "wǔ gǔ fēng dēng",
+          "hanviet": "Ngũ Cốc Phong Đăng"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "吉祥",
+          "pinyin": "jíxiáng",
+          "hanviet": "Cát Tường",
+          "hsk": 6,
+          "word_id": "hsk6_621",
+          "meaning_vi": "cát tường, may mắn, tốt lành"
+        },
+        {
+          "text": "安康",
+          "pinyin": "ān kāng",
+          "hanviet": "An Khang"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "年画最早可以追溯到古代辟邪驱鬼的‘门神’，人们在桃木板上绘制秦琼、尉迟恭等威武将军的画像。",
+      "pinyin": "Niánhuà zuìzǎo kěyǐ zhuīsù dào gǔdài bìxié qūguǐ de ‘ménshén’, rénmen zài táomùbǎn shàng huìzhì Qín Qióng, Yùchí Gōng děng wēiwǔ jiāngjūn de huàxiàng.",
+      "vi": "Tranh Tết khởi thủy từ tục vẽ 'Môn Thần' trừ tà, người xưa vẽ chân dung các dũng tướng uy nghiêm như Tần Thúc Bảo, Uất Trì Cung trên thẻ gỗ đào.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "年画",
+          "pinyin": "niánhuà",
+          "hanviet": "Niên Hoạ",
+          "hsk": 7,
+          "word_id": "hsk7_2956",
+          "meaning_vi": "tranh Tết"
+        },
+        {
+          "text": "最早",
+          "pinyin": "zuì zǎo",
+          "hanviet": "Tối Tảo"
+        },
+        {
+          "text": "可以",
+          "pinyin": "kěyǐ",
+          "hanviet": "Khả Dĩ",
+          "hsk": 1,
+          "word_id": "hsk1_160",
+          "meaning_vi": "có thể, được"
+        },
+        {
+          "text": "追溯到",
+          "pinyin": "zhuī sù dào",
+          "hanviet": "Đôi Tố Đáo"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "辟邪",
+          "pinyin": "bì xié",
+          "hanviet": "Tích Tà"
+        },
+        {
+          "text": "驱鬼",
+          "pinyin": "qū guǐ",
+          "hanviet": "Khu Quỷ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "门神",
+          "pinyin": "mén shén",
+          "hanviet": "Môn Thần"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "人们",
+          "pinyin": "rén men",
+          "hanviet": "Nhân Môn"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "桃",
+          "pinyin": "táo",
+          "hanviet": "Đào",
+          "hsk": 5,
+          "word_id": "hsk5_1105",
+          "meaning_vi": "quả đào"
+        },
+        {
+          "text": "木板",
+          "pinyin": "mù bǎn",
+          "hanviet": "Mộc Bản"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "绘制",
+          "pinyin": "huìzhì",
+          "hanviet": "Hội Chế",
+          "hsk": 7,
+          "word_id": "hsk7_1806",
+          "meaning_vi": "vẽ, phác họa đồ bản"
+        },
+        {
+          "text": "秦琼",
+          "pinyin": "qín qióng",
+          "hanviet": "Tần Quỳnh"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "尉迟恭",
+          "pinyin": "yù chí gōng",
+          "hanviet": "Uý Trì Cung"
+        },
+        {
+          "text": "等",
+          "pinyin": "děng",
+          "hanviet": "Đẳng",
+          "hsk": 2,
+          "word_id": "hsk2_20",
+          "meaning_vi": "đợi, chờ"
+        },
+        {
+          "text": "威武",
+          "pinyin": "wēi wǔ",
+          "hanviet": "Uy Võ"
+        },
+        {
+          "text": "将军",
+          "pinyin": "jiāngjūn",
+          "hanviet": "Tướng Quân",
+          "hsk": 6,
+          "word_id": "hsk6_664",
+          "meaning_vi": "tướng quân"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "画像",
+          "pinyin": "huà xiàng",
+          "hanviet": "Hoạ Tượng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "宋代以后，木版水印技术的成熟推动了年画的大量印制，题材扩展到民间戏曲、神话故事与市井生活。",
+      "pinyin": "Sòngdài yǐhòu, mùbǎn shuǐyìn jìshù de chéngshú tuīdòng le niánhuà de dàliàng yìnzhì, tícái kuòzhǎn dào mínjiān xìqǔ, shénhuà gùshi yǔ shìjǐng shēnghuó.",
+      "vi": "Sau thời Tống, kỹ thuật in mộc bản phát triển đã nhân bản tranh Tết rộng rãi, đề tài mở rộng sang tuồng tích sân khấu và nếp sống dân gian.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "宋代",
+          "pinyin": "sòng dài",
+          "hanviet": "Tống Đại"
+        },
+        {
+          "text": "以后",
+          "pinyin": "yǐhòu",
+          "hanviet": "Dĩ Hậu",
+          "hsk": 3,
+          "word_id": "hsk3_1005",
+          "meaning_vi": "sau này, sau khi"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "木版",
+          "pinyin": "mù bǎn",
+          "hanviet": "Mộc Bản"
+        },
+        {
+          "text": "水印",
+          "pinyin": "shuǐ yìn",
+          "hanviet": "Thủy Ấn"
+        },
+        {
+          "text": "技术",
+          "pinyin": "jìshù",
+          "hanviet": "Kĩ Thuật/kỹ Thuật",
+          "hsk": 4,
+          "word_id": "hsk4_331",
+          "meaning_vi": "kỹ thuật"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "成熟",
+          "pinyin": "chéngshú",
+          "hanviet": "Thành Thục",
+          "hsk": 5,
+          "word_id": "hsk5_148",
+          "meaning_vi": "chín, trưởng thành"
+        },
+        {
+          "text": "推动",
+          "pinyin": "tuīdòng",
+          "hanviet": "Suy Động",
+          "hsk": 5,
+          "word_id": "hsk5_1158",
+          "meaning_vi": "thúc đẩy, đẩy mạnh"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "年画",
+          "pinyin": "niánhuà",
+          "hanviet": "Niên Hoạ",
+          "hsk": 7,
+          "word_id": "hsk7_2956",
+          "meaning_vi": "tranh Tết"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "大量",
+          "pinyin": "dàliàng",
+          "hanviet": "Đại Lượng",
+          "hsk": 4,
+          "word_id": "hsk4_126",
+          "meaning_vi": "lượng lớn, nhiều"
+        },
+        {
+          "text": "印制",
+          "pinyin": "yìn zhì",
+          "hanviet": "Ấn Chế"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "题材",
+          "pinyin": "tícái",
+          "hanviet": "Đề Tài",
+          "hsk": 6,
+          "word_id": "hsk6_1281",
+          "meaning_vi": "đề tài"
+        },
+        {
+          "text": "扩展",
+          "pinyin": "kuòzhǎn",
+          "hanviet": "Khuếch Triển",
+          "hsk": 6,
+          "word_id": "hsk6_809",
+          "meaning_vi": "mở rộng, phát triển rộng ra"
+        },
+        {
+          "text": "到",
+          "pinyin": "dào",
+          "hanviet": "Đáo",
+          "hsk": 1,
+          "word_id": "hsk1_59",
+          "meaning_vi": "đến"
+        },
+        {
+          "text": "民间",
+          "pinyin": "mínjiān",
+          "hanviet": "Dân Gian",
+          "hsk": 6,
+          "word_id": "hsk6_919",
+          "meaning_vi": "dân gian, trong dân chúng"
+        },
+        {
+          "text": "戏曲",
+          "pinyin": "xìqǔ",
+          "hanviet": "Hí Khúc",
+          "hsk": 6,
+          "word_id": "hsk6_1411",
+          "meaning_vi": "hí khúc, nghệ thuật sân khấu truyền thống"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "神话故事",
+          "pinyin": "shén huà gù shì",
+          "hanviet": "Thần Thoại Cố Sự"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "市井",
+          "pinyin": "shì jǐng",
+          "hanviet": "Thị Tỉnh"
+        },
+        {
+          "text": "生活",
+          "pinyin": "shēnghuó",
+          "hanviet": "Sinh Hoạt",
+          "hsk": 3,
+          "word_id": "hsk3_911",
+          "meaning_vi": "sinh hoạt, cuộc sống"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "天津杨柳青、苏州桃花坞和山东潍坊成为了名扬全国的三大木版年画产地。",
+      "pinyin": "Tiānjīn Yángliǔqīng, Sūzhōu Táohuāwù hé Shāndōng Wéifāng chéngwéi le míngyáng quánguó de sān dà mùbǎn niánhuà chǎndì.",
+      "vi": "Dương Liễu Thanh (Thiên Tân), Đào Hoa Ổ (Tô Châu) và Duy Phường (Sơn Đông) trở thành ba cái nôi làm tranh mộc bản nức tiếng khắp nước.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "天津",
+          "pinyin": "tiān jīn",
+          "hanviet": "Thiên Tân"
+        },
+        {
+          "text": "杨柳青",
+          "pinyin": "yáng liǔ qīng",
+          "hanviet": "Dương Liễu Thanh"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "苏州",
+          "pinyin": "sū zhōu",
+          "hanviet": "Tô Châu"
+        },
+        {
+          "text": "桃花坞",
+          "pinyin": "táo huā wù",
+          "hanviet": "Đào Hoa Ổ"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "山东",
+          "pinyin": "shān dōng",
+          "hanviet": "Sơn Đông"
+        },
+        {
+          "text": "潍坊",
+          "pinyin": "wéi fāng",
+          "hanviet": "Duy Phường"
+        },
+        {
+          "text": "成为",
+          "pinyin": "chéngwéi",
+          "hanviet": "Thành Vi",
+          "hsk": 4,
+          "word_id": "hsk4_82",
+          "meaning_vi": "trở thành"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "名扬",
+          "pinyin": "míng yáng",
+          "hanviet": "Danh Dương"
+        },
+        {
+          "text": "全国",
+          "pinyin": "quán guó",
+          "hanviet": "Toàn Quốc"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "三大",
+          "pinyin": "sān dà",
+          "hanviet": "Tam Đại"
+        },
+        {
+          "text": "木版",
+          "pinyin": "mù bǎn",
+          "hanviet": "Mộc Bản"
+        },
+        {
+          "text": "年画",
+          "pinyin": "niánhuà",
+          "hanviet": "Niên Hoạ",
+          "hsk": 7,
+          "word_id": "hsk7_2956",
+          "meaning_vi": "tranh Tết"
+        },
+        {
+          "text": "产地",
+          "pinyin": "chǎndì",
+          "hanviet": "Sản Địa",
+          "hsk": 6,
+          "word_id": "hsk6_123",
+          "meaning_vi": "nơi xuất xứ, nơi sản xuất"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "年画中‘胖娃娃抱大鲤鱼’的经典构图寓意‘连年有余’，寄托着老百姓对美好生活最纯朴热烈的情感期盼。",
+      "pinyin": "Niánhuà zhōng ‘pàng wáwa bào dà lǐyú’ de jīngdiǎn gòutú yùyì ‘liánnián yǒuyú’, jìtuō zhe lǎobǎixìng duì měihǎo shēnghuó zuì chúnpǔ rèliè de qínggǎn qīpàn.",
+      "vi": "Hình tượng em bé bụ bẫm ôm cá chép lớn mang ý nghĩa 'Liên niên hữu dư' (quanh năm dư dả), gửi gắm ước mong mộc mạc về cuộc sống ấm no.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "年画",
+          "pinyin": "niánhuà",
+          "hanviet": "Niên Hoạ",
+          "hsk": 7,
+          "word_id": "hsk7_2956",
+          "meaning_vi": "tranh Tết"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "胖",
+          "pinyin": "pàng",
+          "hanviet": "Bàn",
+          "hsk": 3,
+          "word_id": "hsk3_875",
+          "meaning_vi": "béo, mập"
+        },
+        {
+          "text": "娃娃",
+          "pinyin": "wáwa",
+          "hanviet": "Oa Oa",
+          "hsk": 6,
+          "word_id": "hsk6_1349",
+          "meaning_vi": "búp bê, em bé"
+        },
+        {
+          "text": "抱大",
+          "pinyin": "bào dà",
+          "hanviet": "Bão Đại"
+        },
+        {
+          "text": "鲤鱼",
+          "pinyin": "lǐyú",
+          "hanviet": "Lý Ngư",
+          "hsk": 7,
+          "word_id": "hsk7_2537",
+          "meaning_vi": "cá chép"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "经典",
+          "pinyin": "jīngdiǎn",
+          "hanviet": "Kinh Điển",
+          "hsk": 5,
+          "word_id": "hsk5_621",
+          "meaning_vi": "cổ điển, kinh điển"
+        },
+        {
+          "text": "构图",
+          "pinyin": "gòu tú",
+          "hanviet": "Cấu Đồ"
+        },
+        {
+          "text": "寓意",
+          "pinyin": "yùyì",
+          "hanviet": "Ngụ Ý",
+          "hsk": 7,
+          "word_id": "hsk7_5034",
+          "meaning_vi": "ngụ ý, ý nghĩa biểu trưng"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "连年",
+          "pinyin": "liánnián",
+          "hanviet": "Liên Niên",
+          "hsk": 7,
+          "word_id": "hsk7_2571",
+          "meaning_vi": "liên tiếp nhiều năm"
+        },
+        {
+          "text": "有余",
+          "pinyin": "yǒu yú",
+          "hanviet": "Hữu Dư"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "寄托",
+          "pinyin": "jìtuō",
+          "hanviet": "Ký Thác",
+          "hsk": 7,
+          "word_id": "hsk7_1914",
+          "meaning_vi": "gửi gắm, ký thác"
+        },
+        {
+          "text": "着",
+          "pinyin": "zhe",
+          "hanviet": "Trước",
+          "hsk": 2,
+          "word_id": "hsk2_490",
+          "meaning_vi": "đang (trợ từ)"
+        },
+        {
+          "text": "老百姓",
+          "pinyin": "lǎobǎixìng",
+          "hanviet": "Lão Bách Tính",
+          "hsk": 5,
+          "word_id": "hsk5_684",
+          "meaning_vi": "dân thường, bách tính"
+        },
+        {
+          "text": "对",
+          "pinyin": "duì",
+          "hanviet": "Đối",
+          "hsk": 1,
+          "word_id": "hsk1_79",
+          "meaning_vi": "đối với, hướng về (giới từ)"
+        },
+        {
+          "text": "美好生活",
+          "pinyin": "měi hǎo shēng huó",
+          "hanviet": "Mỹ Hảo Sinh Hoạt"
+        },
+        {
+          "text": "最",
+          "pinyin": "zuì",
+          "hanviet": "Tối",
+          "hsk": 2,
+          "word_id": "hsk2_498",
+          "meaning_vi": "nhất"
+        },
+        {
+          "text": "纯朴",
+          "pinyin": "chúnpǔ",
+          "hanviet": "Thuần Phác",
+          "hsk": 7,
+          "word_id": "hsk7_647",
+          "meaning_vi": "thuần phác, chất phác"
+        },
+        {
+          "text": "热烈",
+          "pinyin": "rèliè",
+          "hanviet": "Nhiệt Liệt",
+          "hsk": 5,
+          "word_id": "hsk5_915",
+          "meaning_vi": "nhiệt liệt, sôi nổi"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "情感",
+          "pinyin": "qínggǎn",
+          "hanviet": "Tình Cảm",
+          "hsk": 5,
+          "word_id": "hsk5_889",
+          "meaning_vi": "cảm xúc"
+        },
+        {
+          "text": "期盼",
+          "pinyin": "qīpàn",
+          "hanviet": "Kỳ Phán",
+          "hsk": 7,
+          "word_id": "hsk7_3143",
+          "meaning_vi": "mong mỏi; mong chờ; ngóng đợi"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk2_374",
+    "hsk3_741",
+    "hsk4_331",
+    "hsk3_911"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Thể loại tranh Tết nguyên thủy bắt nguồn từ hình thức nào?",
+      "options_vi": [
+        "Tranh vẽ hai vị tướng giữ cửa (Môn Thần) dán trừ tà trên cánh cửa",
+        "Tranh phong cảnh Tây phương",
+        "Bản đồ hải trình"
+      ],
+      "answer": 0,
+      "explanation_vi": "Ban đầu tranh Môn Thần vẽ Tần Quỳnh và Uất Trì Cung được dán trước cửa để giữ nhà bình an."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Kỹ thuật nào đã giúp tranh Tết được sản xuất hàng loạt phục vụ đông đảo người dân từ thời Tống?",
+      "options_vi": [
+        "Kỹ thuật in khắc gỗ (mộc bản thủy ấn)",
+        "Chụp ảnh kỹ thuật số",
+        "Vẽ từng nét thủ công trên lụa"
+      ],
+      "answer": 0,
+      "explanation_vi": "Kỹ thuật in mộc bản giúp sản xuất số lượng lớn tranh với chi phí bình dân."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Bức tranh em bé ôm cá chép lớn mang thông điệp chúc phúc cát tường gì?",
+      "options_vi": [
+        "'Liên niên hữu dư' (năm nào cũng sung túc, của cải dư thừa)",
+        "Chúc đi câu được nhiều cá",
+        "Khuyên ăn chay"
+      ],
+      "answer": 0,
+      "explanation_vi": "Chữ Ngư (cá 鱼) đồng âm với Dư (dư dả 余), biểu tượng quanh năm no đủ sung túc."
+    }
+  ]
+}

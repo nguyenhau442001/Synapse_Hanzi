@@ -1,0 +1,933 @@
+{
+  "id": "wanwu_story_067",
+  "chapter_no": 67,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 4,
+  "book_page_start": 696,
+  "book_page_end": 705,
+  "page_display": "Trang 696 - 705",
+  "title": {
+    "zh": "临时工：从“白役”到“替罪羊”",
+    "vi": "Lao động thời vụ: Từ 'Bạch dịch' nha môn đến phận gánh nạn"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "👥",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_067.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_067.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 696 - 705 · Những người phụ việc không biên chế trong quan nha cổ đại và số phận trôi nổi nơi công quyền.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "在古代地方州县衙门里，除了朝廷正式任命的知县与有编制的正役差役之外，还有庞大的雇佣群体。",
+      "pinyin": "Zài gǔdài dìfāng zhōuxiàn yámén lǐ, chúle cháotíng zhèngshì rènmìng de zhīxiàn yǔ yǒu biānzhì de zhèngyì chāiyì zhīwài, hái yǒu pángdà de gùyōng qúntǐ.",
+      "vi": "Trong nha môn phủ huyện thời xưa, ngoài quan Tri huyện và sai dịch có biên chế chính thức, còn có lực lượng làm thuê đông đảo.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "地方",
+          "pinyin": "dìfang",
+          "hanviet": "Địa Phương",
+          "hsk": 3,
+          "word_id": "hsk3_688",
+          "meaning_vi": "nơi, địa phương"
+        },
+        {
+          "text": "州",
+          "pinyin": "zhōu",
+          "hanviet": "Châu",
+          "hsk": 6,
+          "word_id": "hsk6_1736",
+          "meaning_vi": "tiểu bang, châu"
+        },
+        {
+          "text": "县衙门",
+          "pinyin": "xiàn yá mén",
+          "hanviet": "Huyện Nha Môn"
+        },
+        {
+          "text": "里",
+          "pinyin": "lǐ",
+          "hanviet": "Lý",
+          "hsk": 1,
+          "word_id": "hsk1_536",
+          "meaning_vi": "bên trong"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "除了",
+          "pinyin": "chúle",
+          "hanviet": "Trừ Liễu",
+          "hsk": 3,
+          "word_id": "hsk3_664",
+          "meaning_vi": "ngoài ra, trừ"
+        },
+        {
+          "text": "朝廷",
+          "pinyin": "cháo tíng",
+          "hanviet": "Triều Đình"
+        },
+        {
+          "text": "正式",
+          "pinyin": "zhèngshì",
+          "hanviet": "Chính Thức",
+          "hsk": 4,
+          "word_id": "hsk4_937",
+          "meaning_vi": "chính thức"
+        },
+        {
+          "text": "任命",
+          "pinyin": "rènmìng",
+          "hanviet": "Nhâm Mệnh",
+          "hsk": 7,
+          "word_id": "hsk7_3423",
+          "meaning_vi": "bổ nhiệm"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "知县",
+          "pinyin": "zhī xiàn",
+          "hanviet": "Tri Huyện"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "有",
+          "pinyin": "yǒu",
+          "hanviet": "Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_380",
+          "meaning_vi": "có"
+        },
+        {
+          "text": "编制",
+          "pinyin": "biānzhì",
+          "hanviet": "Biên Chế",
+          "hsk": 7,
+          "word_id": "hsk7_206",
+          "meaning_vi": "biên chế; biên soạn"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "正役",
+          "pinyin": "zhèng yì",
+          "hanviet": "Chinh Dịch"
+        },
+        {
+          "text": "差役",
+          "pinyin": "chāi yì",
+          "hanviet": "Sai Dịch"
+        },
+        {
+          "text": "之外",
+          "pinyin": "zhī wài",
+          "hanviet": "Chi Ngoại"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "还有",
+          "pinyin": "hái yǒu",
+          "hanviet": "Hoàn Hữu"
+        },
+        {
+          "text": "庞大",
+          "pinyin": "pángdà",
+          "hanviet": "Bàng Đại",
+          "hsk": 6,
+          "word_id": "hsk6_972",
+          "meaning_vi": "to lớn, khổng lồ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "雇佣",
+          "pinyin": "gùyōng",
+          "hanviet": "Cố Dong",
+          "hsk": 7,
+          "word_id": "hsk7_1457",
+          "meaning_vi": "thuê mướn (lao động)"
+        },
+        {
+          "text": "群体",
+          "pinyin": "qúntǐ",
+          "hanviet": "Quần Thể",
+          "hsk": 5,
+          "word_id": "hsk5_910",
+          "meaning_vi": "quần thể, nhóm cộng đồng, tập thể"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "由于衙门事务繁重而编制名额严格受限，官员们往往私下招聘大量编制外的临时帮工，称为‘白役’。",
+      "pinyin": "Yóuyú yámén shìwù fánzhòng ér biānzhì míng'é yángé shòuxiàn, guānyuánmen wǎngwǎng sīxià zhāopìn dàliàng biānzhìwài de línshí bānggōng, chēng wéi ‘báiyì’.",
+      "vi": "Do việc quan bận rộn mà chỉ tiêu biên chế siết chặt, các quan thường tự tuyển thêm phụ việc thời vụ ngoài biên chế gọi là 'Bạch dịch'.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "由于",
+          "pinyin": "yóuyú",
+          "hanviet": "Do Vu",
+          "hsk": 4,
+          "word_id": "hsk4_888",
+          "meaning_vi": "do, vì"
+        },
+        {
+          "text": "衙门",
+          "pinyin": "yá mén",
+          "hanviet": "Nha Môn"
+        },
+        {
+          "text": "事务",
+          "pinyin": "shìwù",
+          "hanviet": "Sự Vụ",
+          "hsk": 6,
+          "word_id": "hsk6_1205",
+          "meaning_vi": "sự vụ, công việc"
+        },
+        {
+          "text": "繁重",
+          "pinyin": "fánzhòng",
+          "hanviet": "Phồn Trọng",
+          "hsk": 7,
+          "word_id": "hsk7_1074",
+          "meaning_vi": "nặng nề, bộn bề"
+        },
+        {
+          "text": "而",
+          "pinyin": "ér",
+          "hanviet": "Nhi",
+          "hsk": 4,
+          "word_id": "hsk4_183",
+          "meaning_vi": "mà, và"
+        },
+        {
+          "text": "编制",
+          "pinyin": "biānzhì",
+          "hanviet": "Biên Chế",
+          "hsk": 7,
+          "word_id": "hsk7_206",
+          "meaning_vi": "biên chế; biên soạn"
+        },
+        {
+          "text": "名额",
+          "pinyin": "míng’é",
+          "hanviet": "Danh Ngạch",
+          "hsk": 6,
+          "word_id": "hsk6_924",
+          "meaning_vi": "số lượng người được phép, chỉ tiêu"
+        },
+        {
+          "text": "严格",
+          "pinyin": "yángé",
+          "hanviet": "Nghiêm Cách",
+          "hsk": 4,
+          "word_id": "hsk4_845",
+          "meaning_vi": "nghiêm khắc, chặt chẽ"
+        },
+        {
+          "text": "受限",
+          "pinyin": "shòu xiàn",
+          "hanviet": "Thọ Hạn"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "官员",
+          "pinyin": "guānyuán",
+          "hanviet": "Quan Viên",
+          "hsk": 6,
+          "word_id": "hsk6_495",
+          "meaning_vi": "chính thức"
+        },
+        {
+          "text": "们",
+          "pinyin": "men",
+          "hanviet": "Môn",
+          "hsk": 1,
+          "word_id": "hsk1_538",
+          "meaning_vi": "họ (hậu tố)"
+        },
+        {
+          "text": "往往",
+          "pinyin": "wǎngwǎng",
+          "hanviet": "Vãng Vãng",
+          "hsk": 4,
+          "word_id": "hsk4_766",
+          "meaning_vi": "thường thường"
+        },
+        {
+          "text": "私下",
+          "pinyin": "sīxià",
+          "hanviet": "Tư Hạ",
+          "hsk": 7,
+          "word_id": "hsk7_3854",
+          "meaning_vi": "chỗ riêng tư; riêng tư"
+        },
+        {
+          "text": "招聘",
+          "pinyin": "zhāopìn",
+          "hanviet": "Chiêu Sính",
+          "hsk": 4,
+          "word_id": "hsk4_923",
+          "meaning_vi": "tuyển dụng"
+        },
+        {
+          "text": "大量",
+          "pinyin": "dàliàng",
+          "hanviet": "Đại Lượng",
+          "hsk": 4,
+          "word_id": "hsk4_126",
+          "meaning_vi": "lượng lớn, nhiều"
+        },
+        {
+          "text": "编制",
+          "pinyin": "biānzhì",
+          "hanviet": "Biên Chế",
+          "hsk": 7,
+          "word_id": "hsk7_206",
+          "meaning_vi": "biên chế; biên soạn"
+        },
+        {
+          "text": "外",
+          "pinyin": "wài",
+          "hanviet": "Ngoại",
+          "hsk": 1,
+          "word_id": "hsk1_575",
+          "meaning_vi": "ngoài"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "临时",
+          "pinyin": "línshí",
+          "hanviet": "Lâm Thời",
+          "hsk": 5,
+          "word_id": "hsk5_722",
+          "meaning_vi": "tạm thời"
+        },
+        {
+          "text": "帮工",
+          "pinyin": "bāng gōng",
+          "hanviet": "Bang Công"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "称为",
+          "pinyin": "chēngwéi",
+          "hanviet": "Xứng Vi",
+          "hsk": 5,
+          "word_id": "hsk5_134",
+          "meaning_vi": "gọi là"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "白役",
+          "pinyin": "bái yì",
+          "hanviet": "Bạch Dịch"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "白役们虽然没有朝廷发放的固定薪饷，却常利用跟随公差下乡催粮纳税的机会谋取私利。",
+      "pinyin": "Báiyìmen suīrán méiyǒu cháotíng fāfàng de gùdìng xīnxxiǎng, què cháng lìyòng gēnsuí gōngchāi xiàxiāng cuīliáng nàshuì de jīhuì móuqǔ sīlì.",
+      "vi": "Đám bạch dịch dù không có lương bổng chính thức từ quốc khố, nhưng hay dựa bóng sai dịch xuống làng sách nhiễu kiếm tiền riêng.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "白役",
+          "pinyin": "bái yì",
+          "hanviet": "Bạch Dịch"
+        },
+        {
+          "text": "们",
+          "pinyin": "men",
+          "hanviet": "Môn",
+          "hsk": 1,
+          "word_id": "hsk1_538",
+          "meaning_vi": "họ (hậu tố)"
+        },
+        {
+          "text": "虽然",
+          "pinyin": "suīrán",
+          "hanviet": "Tuy Nhiên",
+          "hsk": 2,
+          "word_id": "hsk2_438",
+          "meaning_vi": "mặc dù"
+        },
+        {
+          "text": "没有",
+          "pinyin": "méiyǒu",
+          "hanviet": "Một Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_197",
+          "meaning_vi": "không có"
+        },
+        {
+          "text": "朝廷",
+          "pinyin": "cháo tíng",
+          "hanviet": "Triều Đình"
+        },
+        {
+          "text": "发放",
+          "pinyin": "fāfàng",
+          "hanviet": "Phát Phóng",
+          "hsk": 6,
+          "word_id": "hsk6_353",
+          "meaning_vi": "phân phối"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "固定",
+          "pinyin": "gùdìng",
+          "hanviet": "Cố Định",
+          "hsk": 5,
+          "word_id": "hsk5_427",
+          "meaning_vi": "cố định"
+        },
+        {
+          "text": "薪饷",
+          "pinyin": "xīn xiǎng",
+          "hanviet": "Tân Hướng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "却常",
+          "pinyin": "què cháng",
+          "hanviet": "Khước Thường"
+        },
+        {
+          "text": "利用",
+          "pinyin": "lìyòng",
+          "hanviet": "Lợi Dụng",
+          "hsk": 5,
+          "word_id": "hsk5_710",
+          "meaning_vi": "lợi dụng, tận dụng"
+        },
+        {
+          "text": "跟随",
+          "pinyin": "gēnsuí",
+          "hanviet": "Cân Tuỳ",
+          "hsk": 6,
+          "word_id": "hsk6_448",
+          "meaning_vi": "đi theo, theo sau, đồng hành"
+        },
+        {
+          "text": "公差",
+          "pinyin": "gōng chāi",
+          "hanviet": "Công Sai"
+        },
+        {
+          "text": "下乡",
+          "pinyin": "xià xiāng",
+          "hanviet": "Hạ Hương"
+        },
+        {
+          "text": "催粮",
+          "pinyin": "cuī liáng",
+          "hanviet": "Thôi Lương"
+        },
+        {
+          "text": "纳税",
+          "pinyin": "nàshuì",
+          "hanviet": "Nạp Thuế",
+          "hsk": 7,
+          "word_id": "hsk7_2908",
+          "meaning_vi": "nộp thuế"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "机会",
+          "pinyin": "jīhuì",
+          "hanviet": "Cơ Hội",
+          "hsk": 3,
+          "word_id": "hsk3_778",
+          "meaning_vi": "cơ hội"
+        },
+        {
+          "text": "谋取私利",
+          "pinyin": "móu qǔ sī lì",
+          "hanviet": "Mưu Thủ Tư Lợi"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "一旦衙署发生徇私舞弊或激起民怨，官府往往立即将全部罪责推到这些白役身上，将其作为替罪羊开除法办。",
+      "pinyin": "Yídàn yáshǔ fāshēng xùnsī-wǔbì huò jīqǐ mínyuàn, guānfǔ wǎngwǎng lìjí jiāng quánbù zuìzé tuī dào zhèxiē báiyì shēnshang, jiāng qí zuòwéi tìzuìyáng kāichú fǎbàn.",
+      "vi": "Mỗi khi nha môn xảy ra tệ nạn gian lận bị phát giác, quan trên thường đổ vấy tội lỗi lên đầu đám bạch dịch làm bia đỡ đạn trừng phạt.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "一旦",
+          "pinyin": "yídàn",
+          "hanviet": "Nhất Đán",
+          "hsk": 5,
+          "word_id": "hsk5_1354",
+          "meaning_vi": "một khi, nếu"
+        },
+        {
+          "text": "衙署",
+          "pinyin": "yá shǔ",
+          "hanviet": "Nha Thự"
+        },
+        {
+          "text": "发生",
+          "pinyin": "fāshēng",
+          "hanviet": "Phát Sinh",
+          "hsk": 3,
+          "word_id": "hsk3_711",
+          "meaning_vi": "phát sinh, xảy ra"
+        },
+        {
+          "text": "徇私舞弊",
+          "pinyin": "xùn sī wǔ bì",
+          "hanviet": "Tuẫn Tư Vũ Tệ"
+        },
+        {
+          "text": "或",
+          "pinyin": "huò",
+          "hanviet": "Hoặc",
+          "hsk": 3,
+          "word_id": "hsk3_774",
+          "meaning_vi": "hoặc"
+        },
+        {
+          "text": "激起",
+          "pinyin": "jīqǐ",
+          "hanviet": "Kích Khởi",
+          "hsk": 7,
+          "word_id": "hsk7_1851",
+          "meaning_vi": "dấy lên, khơi dậy, khuấy động"
+        },
+        {
+          "text": "民怨",
+          "pinyin": "mín yuàn",
+          "hanviet": "Dân Oán"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "官府",
+          "pinyin": "guān fǔ",
+          "hanviet": "Quan Phủ"
+        },
+        {
+          "text": "往往",
+          "pinyin": "wǎngwǎng",
+          "hanviet": "Vãng Vãng",
+          "hsk": 4,
+          "word_id": "hsk4_766",
+          "meaning_vi": "thường thường"
+        },
+        {
+          "text": "立即",
+          "pinyin": "lìjí",
+          "hanviet": "Lập Tức",
+          "hsk": 5,
+          "word_id": "hsk5_705",
+          "meaning_vi": "lập tức"
+        },
+        {
+          "text": "将",
+          "pinyin": "jiāng",
+          "hanviet": "Tương",
+          "hsk": 4,
+          "word_id": "hsk4_356",
+          "meaning_vi": "sẽ; đem, lấy (như 把)"
+        },
+        {
+          "text": "全部",
+          "pinyin": "quánbù",
+          "hanviet": "Toàn Bộ",
+          "hsk": 4,
+          "word_id": "hsk4_599",
+          "meaning_vi": "toàn bộ"
+        },
+        {
+          "text": "罪责",
+          "pinyin": "zuì zé",
+          "hanviet": "Tội Trách"
+        },
+        {
+          "text": "推",
+          "pinyin": "tuī",
+          "hanviet": "Suy",
+          "hsk": 4,
+          "word_id": "hsk4_755",
+          "meaning_vi": "đẩy"
+        },
+        {
+          "text": "到",
+          "pinyin": "dào",
+          "hanviet": "Đáo",
+          "hsk": 1,
+          "word_id": "hsk1_59",
+          "meaning_vi": "đến"
+        },
+        {
+          "text": "这些",
+          "pinyin": "zhèxiē",
+          "hanviet": "Giá Ta",
+          "hsk": 1,
+          "word_id": "hsk1_608",
+          "meaning_vi": "những (đại từ) này"
+        },
+        {
+          "text": "白役",
+          "pinyin": "bái yì",
+          "hanviet": "Bạch Dịch"
+        },
+        {
+          "text": "身上",
+          "pinyin": "shēn shàng",
+          "hanviet": "Thân Thướng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "将",
+          "pinyin": "jiāng",
+          "hanviet": "Tương",
+          "hsk": 4,
+          "word_id": "hsk4_356",
+          "meaning_vi": "sẽ; đem, lấy (như 把)"
+        },
+        {
+          "text": "其",
+          "pinyin": "qí",
+          "hanviet": "Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_853",
+          "meaning_vi": "của nó, của họ; trong đó"
+        },
+        {
+          "text": "作为",
+          "pinyin": "xiūgǎi",
+          "hanviet": "Tu Cải",
+          "hsk": 5,
+          "word_id": "hsk5_1300",
+          "meaning_vi": "sửa đổi"
+        },
+        {
+          "text": "替罪羊",
+          "pinyin": "tì zuì yáng",
+          "hanviet": "Thế Tội Dương"
+        },
+        {
+          "text": "开除",
+          "pinyin": "kāichú",
+          "hanviet": "Khai Trừ",
+          "hsk": 7,
+          "word_id": "hsk7_2300",
+          "meaning_vi": "đuổi (việc, học)"
+        },
+        {
+          "text": "法办",
+          "pinyin": "fǎ bàn",
+          "hanviet": "Pháp Biện"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "古代白役的生存困境，生动折射出封建基层官僚制度中管理失范与权力失衡的深层弊端。",
+      "pinyin": "Gǔdài báiyì de shēngcún kùnjìng, shēngdòng zhéshè chū fēngjiàn jīcéng guānliáo zhìdù zhōng guǎnlǐ shīfàn yǔ quánlì shīhéng de shēncéng bìduān.",
+      "vi": "Nghịch cảnh của bạch dịch phản chiếu mặt trái trong quản lý cơ chế hành chính và mất cân bằng quyền lực thời phong kiến.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "白役",
+          "pinyin": "bái yì",
+          "hanviet": "Bạch Dịch"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "生存",
+          "pinyin": "shēngcún",
+          "hanviet": "Sinh Tồn",
+          "hsk": 5,
+          "word_id": "hsk5_991",
+          "meaning_vi": "sinh tồn"
+        },
+        {
+          "text": "困境",
+          "pinyin": "kùnjìng",
+          "hanviet": "Khốn Cảnh",
+          "hsk": 7,
+          "word_id": "hsk7_2452",
+          "meaning_vi": "vấn đề nan giải"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "生动",
+          "pinyin": "shēngdòng",
+          "hanviet": "Sinh Động",
+          "hsk": 5,
+          "word_id": "hsk5_992",
+          "meaning_vi": "sinh động"
+        },
+        {
+          "text": "折射出",
+          "pinyin": "zhé shè chū",
+          "hanviet": "Chiết Xạ Xuất"
+        },
+        {
+          "text": "封建",
+          "pinyin": "fēngjiàn",
+          "hanviet": "Phong Kiến",
+          "hsk": 7,
+          "word_id": "hsk7_1191",
+          "meaning_vi": "phong kiến"
+        },
+        {
+          "text": "基层",
+          "pinyin": "jīcéng",
+          "hanviet": "Cơ Tầng",
+          "hsk": 7,
+          "word_id": "hsk7_1838",
+          "meaning_vi": "cơ sở, cấp dưới"
+        },
+        {
+          "text": "官僚",
+          "pinyin": "guānliáo",
+          "hanviet": "Quan Liêu",
+          "hsk": 7,
+          "word_id": "hsk7_1481",
+          "meaning_vi": "quan liêu"
+        },
+        {
+          "text": "制度",
+          "pinyin": "zhìdù",
+          "hanviet": "Chế Độ",
+          "hsk": 5,
+          "word_id": "hsk5_1512",
+          "meaning_vi": "chế độ, thể chế"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "管理",
+          "pinyin": "guǎnlǐ",
+          "hanviet": "Quản Lí/quản Lý",
+          "hsk": 4,
+          "word_id": "hsk4_273",
+          "meaning_vi": "quản lý"
+        },
+        {
+          "text": "失范",
+          "pinyin": "shī fàn",
+          "hanviet": "Thất Phạm"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "权力",
+          "pinyin": "quánlì",
+          "hanviet": "Quyền Lực",
+          "hsk": 6,
+          "word_id": "hsk6_1081",
+          "meaning_vi": "quyền lực"
+        },
+        {
+          "text": "失衡",
+          "pinyin": "shī héng",
+          "hanviet": "Thất Hành"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "深层",
+          "pinyin": "shēn céng",
+          "hanviet": "Thâm Tầng"
+        },
+        {
+          "text": "弊端",
+          "pinyin": "bìduān",
+          "hanviet": "Tệ Đoan",
+          "hsk": 7,
+          "word_id": "hsk7_185",
+          "meaning_vi": "tệ đoan, sai sót lạm dụng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk4_937",
+    "hsk4_845",
+    "hsk3_711",
+    "hsk4_273",
+    "hsk1_390"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Trong nha môn phong kiến, 'Bạch dịch' (白役) là những người như thế nào?",
+      "options_vi": [
+        "Người làm việc thời vụ, giúp việc ngoài biên chế chính thức của triều đình",
+        "Đầu bếp hoàng cung",
+        "Quan đại thần"
+      ],
+      "answer": 0,
+      "explanation_vi": "Bạch dịch là lực lượng sai dịch làm việc tự phát ngoài biên chế công chức."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Tại sao nha môn lại thuê nhiều lao động ngoài biên chế như vậy?",
+      "options_vi": [
+        "Việc quan nhiều nhưng chỉ tiêu biên chế chính thức bị triều đình giới hạn nghiêm ngặt",
+        "Để đi săn bắn",
+        "Để tổ chức thi ca múa"
+      ],
+      "answer": 0,
+      "explanation_vi": "Biên chế nhà nước ít ỏi không gánh nổi sổ sách, thu thuế nên quan huyện phải thuê thêm ngoài."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Số phận thường thấy của các chân phụ việc 'Bạch dịch' khi xảy ra sai phạm là gì?",
+      "options_vi": [
+        "Bị quy hết trách nhiệm làm 'vật tế thần' gánh tội thay cho quan trên",
+        "Được thăng chức tước vương",
+        "Được thưởng nghìn lượng vàng"
+      ],
+      "answer": 0,
+      "explanation_vi": "Họ thường bị cách chức và đưa ra chịu đòn thay cho các sai phạm của cấp trên."
+    }
+  ]
+}

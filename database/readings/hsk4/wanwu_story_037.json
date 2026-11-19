@@ -1,0 +1,843 @@
+{
+  "id": "wanwu_story_037",
+  "chapter_no": 37,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 2,
+  "book_page_start": 374,
+  "book_page_end": 383,
+  "page_display": "Trang 374 - 383",
+  "title": {
+    "zh": "疫苗：隔离病毒的“防火墙”",
+    "vi": "Vắc-xin: 'Bức tường lửa' ngăn cách độc tố vi rút"
+  },
+  "topic": "science_technology",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "💉",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_037.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_037.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 374 - 383 · Từ khám phá đậu bò của Edward Jenner năm 1796 đến khi nhân loại thanh toán hoàn toàn bệnh đậu mùa.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "疫苗是人类现代医学史上最伟大的发明之一，拯救了数以亿计宝贵的生命。",
+      "pinyin": "Yìmiáo shì rénlèi xiàndài yīxué shǐ shàng zuì wěidà de fāmíng zhī yī, zhěngjiù le shù-yǐ-yì-jì bǎoguì de shēngmìng.",
+      "vi": "Vắc-xin là một trong những phát minh vĩ đại nhất lịch sử y học hiện đại, cứu sống hàng trăm triệu sinh mạng quý giá.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "疫苗",
+          "pinyin": "yìmiáo",
+          "hanviet": "Dịch Miêu",
+          "hsk": 7,
+          "word_id": "hsk7_4870",
+          "meaning_vi": "vắc xin"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "人类",
+          "pinyin": "rénlèi",
+          "hanviet": "Nhân Loại",
+          "hsk": 5,
+          "word_id": "hsk5_921",
+          "meaning_vi": "loài người, nhân loại"
+        },
+        {
+          "text": "现代",
+          "pinyin": "xiàndài",
+          "hanviet": "Hiện Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1239",
+          "meaning_vi": "hiện đại"
+        },
+        {
+          "text": "医学史",
+          "pinyin": "yī xué shǐ",
+          "hanviet": "Y Học Sử"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "最",
+          "pinyin": "zuì",
+          "hanviet": "Tối",
+          "hsk": 2,
+          "word_id": "hsk2_498",
+          "meaning_vi": "nhất"
+        },
+        {
+          "text": "伟大",
+          "pinyin": "wěidà",
+          "hanviet": "Vĩ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1193",
+          "meaning_vi": "vĩ đại"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "发明",
+          "pinyin": "fāmíng",
+          "hanviet": "Phát Minh",
+          "hsk": 5,
+          "word_id": "hsk5_320",
+          "meaning_vi": "phát minh"
+        },
+        {
+          "text": "之一",
+          "pinyin": "zhī yī",
+          "hanviet": "Chi Nhất"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "拯救",
+          "pinyin": "zhěngjiù",
+          "hanviet": "Chửng Cứu",
+          "hsk": 7,
+          "word_id": "hsk7_5258",
+          "meaning_vi": "giải cứu, cứu rỗi, cứu thoát"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "数以亿计",
+          "pinyin": "shù yǐ yì jì",
+          "hanviet": "Sổ Dĩ Ức Kế"
+        },
+        {
+          "text": "宝贵",
+          "pinyin": "bǎoguì",
+          "hanviet": "Bảo Quý",
+          "hsk": 5,
+          "word_id": "hsk5_26",
+          "meaning_vi": "quý báu"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "生命",
+          "pinyin": "shēngmìng",
+          "hanviet": "Sinh Mệnh",
+          "hsk": 4,
+          "word_id": "hsk4_648",
+          "meaning_vi": "sinh mệnh, sự sống"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "在古代，天花病毒曾经夺去了无数人的生命，造成极大的恐慌与痛苦。",
+      "pinyin": "Zài gǔdài, tiānhuā bìngdú céngjīng duóqù le wúshù rén de shēngmìng, zàochéng jídà de kǒnghuāng yǔ tòngkǔ.",
+      "vi": "Thời xưa, virus đậu mùa từng cướp đi sinh mệnh của vô số người, gây nên nỗi hoang mang và đau thương to lớn.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "天花",
+          "pinyin": "tiān huā",
+          "hanviet": "Thiên Hoa"
+        },
+        {
+          "text": "病毒",
+          "pinyin": "bìngdú",
+          "hanviet": "Bệnh Độc",
+          "hsk": 6,
+          "word_id": "hsk6_61",
+          "meaning_vi": "vi-rút, vi khuẩn"
+        },
+        {
+          "text": "曾经",
+          "pinyin": "céngjīng",
+          "hanviet": "Tằng Kinh",
+          "hsk": 5,
+          "word_id": "hsk5_98",
+          "meaning_vi": "đã từng"
+        },
+        {
+          "text": "夺去",
+          "pinyin": "duó qù",
+          "hanviet": "Đoạt Khứ"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "无数",
+          "pinyin": "wúshù",
+          "hanviet": "Vô Số",
+          "hsk": 5,
+          "word_id": "hsk5_1208",
+          "meaning_vi": "vô số"
+        },
+        {
+          "text": "人",
+          "pinyin": "rén",
+          "hanviet": "Nhân",
+          "hsk": 1,
+          "word_id": "hsk1_243",
+          "meaning_vi": "người"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "生命",
+          "pinyin": "shēngmìng",
+          "hanviet": "Sinh Mệnh",
+          "hsk": 4,
+          "word_id": "hsk4_648",
+          "meaning_vi": "sinh mệnh, sự sống"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "造成",
+          "pinyin": "zàochéng",
+          "hanviet": "Tạo Thành",
+          "hsk": 5,
+          "word_id": "hsk5_1454",
+          "meaning_vi": "gây ra, tạo thành"
+        },
+        {
+          "text": "极大",
+          "pinyin": "jí dà",
+          "hanviet": "Cực Đại"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "恐慌",
+          "pinyin": "kǒnghuāng",
+          "hanviet": "Khủng Hoảng",
+          "hsk": 7,
+          "word_id": "hsk7_2380",
+          "meaning_vi": "hoang mang hoảng sợ, khủng hoảng"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "痛苦",
+          "pinyin": "tòngkǔ",
+          "hanviet": "Thống Khổ",
+          "hsk": 5,
+          "word_id": "hsk5_1146",
+          "meaning_vi": "đau khổ"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "十八世纪末，英国乡村医生琴纳注意到挤奶女工感染了温和的牛痘之后，便再也不会染上致命的天花。",
+      "pinyin": "Shíbā shìjì mò, Yīngguó xiāngcūn yīshēng Qínnà zhùyì dào jǐnǎi nǚgōng gǎnrǎn le wēnhé de niúdòu zhīhòu, biàn zàiyě búhuì rǎnshàng zhìmìng de tiānhuā.",
+      "vi": "Cuối thế kỷ 18, bác sĩ người Anh Jenner để ý thấy các cô vắt sữa bò sau khi nhiễm đậu bò nhẹ sẽ không bao giờ mắc bệnh đậu mùa chết người.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "十八",
+          "pinyin": "shí bā",
+          "hanviet": "Thập Bát"
+        },
+        {
+          "text": "世纪末",
+          "pinyin": "shì jì mò",
+          "hanviet": "Thế Kỷ Mạt"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "英国",
+          "pinyin": "yīng guó",
+          "hanviet": "Anh Quốc"
+        },
+        {
+          "text": "乡村",
+          "pinyin": "xiāngcūn",
+          "hanviet": "Hương Thôn",
+          "hsk": 5,
+          "word_id": "hsk5_1248",
+          "meaning_vi": "nông thôn"
+        },
+        {
+          "text": "医生",
+          "pinyin": "yīshēng",
+          "hanviet": "Y Sinh",
+          "hsk": 1,
+          "word_id": "hsk1_366",
+          "meaning_vi": "bác sĩ"
+        },
+        {
+          "text": "琴纳",
+          "pinyin": "qín nà",
+          "hanviet": "Cầm Nạp"
+        },
+        {
+          "text": "注意",
+          "pinyin": "zhùyì",
+          "hanviet": "Chú Ý",
+          "hsk": 3,
+          "word_id": "hsk3_1067",
+          "meaning_vi": "chú ý"
+        },
+        {
+          "text": "到",
+          "pinyin": "dào",
+          "hanviet": "Đáo",
+          "hsk": 1,
+          "word_id": "hsk1_59",
+          "meaning_vi": "đến"
+        },
+        {
+          "text": "挤奶",
+          "pinyin": "jǐ nǎi",
+          "hanviet": "Tễ Nãi"
+        },
+        {
+          "text": "女工",
+          "pinyin": "nǚ gōng",
+          "hanviet": "Nữ Công"
+        },
+        {
+          "text": "感染",
+          "pinyin": "gǎnrǎn",
+          "hanviet": "Cảm Nhiễm",
+          "hsk": 6,
+          "word_id": "hsk6_425",
+          "meaning_vi": "nhiễm trùng, lây nhiễm"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "温和",
+          "pinyin": "wēnhé",
+          "hanviet": "Ôn Hòa",
+          "hsk": 6,
+          "word_id": "hsk6_1384",
+          "meaning_vi": "ôn hòa, dịu dàng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "牛痘",
+          "pinyin": "niú dòu",
+          "hanviet": "Ngưu Đậu"
+        },
+        {
+          "text": "之后",
+          "pinyin": "zhīhòu",
+          "hanviet": "Chi Hậu",
+          "hsk": 4,
+          "word_id": "hsk4_941",
+          "meaning_vi": "sau, sau khi"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "便",
+          "pinyin": "biàn",
+          "hanviet": "Tiện",
+          "hsk": 5,
+          "word_id": "hsk5_56",
+          "meaning_vi": "thì, liền (liên từ)"
+        },
+        {
+          "text": "再也不会",
+          "pinyin": "zài yě bú huì",
+          "hanviet": "Tái Dã Bất Hội"
+        },
+        {
+          "text": "染上",
+          "pinyin": "rǎn shàng",
+          "hanviet": "Nhiễm Thướng"
+        },
+        {
+          "text": "致命",
+          "pinyin": "zhìmìng",
+          "hanviet": "Trí Mệnh",
+          "hsk": 7,
+          "word_id": "hsk7_5338",
+          "meaning_vi": "chí mạng, gây chết người, nguy hại chết người"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "天花",
+          "pinyin": "tiān huā",
+          "hanviet": "Thiên Hoa"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "一七九六年，琴纳大胆进行了人类历史上第一例牛痘接种实验，成功开创了人工免疫防病的新纪元。",
+      "pinyin": "Yī-qī-jiǔ-liù nián, Qínnà dàdǎn jìnxíng le rénlèi lìshǐ shàng dì-yī lì niúdòu jiēzhòng shíyàn, chénggōng kāichuàng le réngōng miǎnyì fángbìng de xīn jìyuán.",
+      "vi": "Năm 1796, Jenner dũng cảm tiến hành ca cấy vắc-xin đậu bò đầu tiên, mở ra kỷ nguyên miễn dịch nhân tạo phòng chống dịch bệnh.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "一",
+          "pinyin": "yī",
+          "hanviet": "Nhất",
+          "hsk": 1,
+          "word_id": "hsk1_360",
+          "meaning_vi": "một"
+        },
+        {
+          "text": "七",
+          "pinyin": "qī",
+          "hanviet": "Thất",
+          "hsk": 1,
+          "word_id": "hsk1_557",
+          "meaning_vi": "bảy"
+        },
+        {
+          "text": "九六年",
+          "pinyin": "jiǔ liù nián",
+          "hanviet": "Cửu Lục Niên"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "琴纳",
+          "pinyin": "qín nà",
+          "hanviet": "Cầm Nạp"
+        },
+        {
+          "text": "大胆",
+          "pinyin": "dàdǎn",
+          "hanviet": "Đại Đảm",
+          "hsk": 5,
+          "word_id": "hsk5_218",
+          "meaning_vi": "mạnh dạn, táo bạo"
+        },
+        {
+          "text": "进行",
+          "pinyin": "jìnxíng",
+          "hanviet": "Tiến Hành",
+          "hsk": 4,
+          "word_id": "hsk4_393",
+          "meaning_vi": "tiến hành"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "人类",
+          "pinyin": "rénlèi",
+          "hanviet": "Nhân Loại",
+          "hsk": 5,
+          "word_id": "hsk5_921",
+          "meaning_vi": "loài người, nhân loại"
+        },
+        {
+          "text": "历史",
+          "pinyin": "lìshǐ",
+          "hanviet": "Lịch Sử",
+          "hsk": 3,
+          "word_id": "hsk3_831",
+          "meaning_vi": "lịch sử"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "第一例",
+          "pinyin": "dì yī lì",
+          "hanviet": "Đệ Nhất Lệ"
+        },
+        {
+          "text": "牛痘",
+          "pinyin": "niú dòu",
+          "hanviet": "Ngưu Đậu"
+        },
+        {
+          "text": "接种",
+          "pinyin": "jiē zhǒng",
+          "hanviet": "Tiếp Chủng"
+        },
+        {
+          "text": "实验",
+          "pinyin": "shíyàn",
+          "hanviet": "Thực Nghiệm",
+          "hsk": 5,
+          "word_id": "hsk5_1022",
+          "meaning_vi": "thí nghiệm, thực nghiệm"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "成功",
+          "pinyin": "chénggōng",
+          "hanviet": "Thành Công",
+          "hsk": 4,
+          "word_id": "hsk4_79",
+          "meaning_vi": "thành công"
+        },
+        {
+          "text": "开创",
+          "pinyin": "kāichuàng",
+          "hanviet": "Khai Sáng",
+          "hsk": 6,
+          "word_id": "hsk6_761",
+          "meaning_vi": "mở ra, khai sáng, đặt nền móng"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "人工免疫",
+          "pinyin": "rén gōng miǎn yì",
+          "hanviet": "Nhân Công Miễn Dịch"
+        },
+        {
+          "text": "防病",
+          "pinyin": "fáng bìng",
+          "hanviet": "Phòng Bệnh"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "新纪元",
+          "pinyin": "xīn jì yuán",
+          "hanviet": "Tân Kỷ Nguyên"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "由于全球大规模接种疫苗，世界卫生组织在一九八零年庄严宣布，人类已在地球上彻底消灭了天花。",
+      "pinyin": "Yóuyú quánqiú dàguīmó jiēzhòng yìmiáo, Shìjiè Wèishēng Zǔzhī zài yī-jiǔ-bā-líng nián zhuāngyán xuānbù, rénlèi yǐ zài dìqiú shàng chèdǐ xiāomiè le tiānhuā.",
+      "vi": "Nhờ phổ cập tiêm chủng vắc-xin, Tổ chức Y tế Thế giới năm 1980 đã long trọng tuyên bố loài người đã xóa sổ hoàn toàn bệnh đậu mùa.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "由于",
+          "pinyin": "yóuyú",
+          "hanviet": "Do Vu",
+          "hsk": 4,
+          "word_id": "hsk4_888",
+          "meaning_vi": "do, vì"
+        },
+        {
+          "text": "全球",
+          "pinyin": "quánqiú",
+          "hanviet": "Toàn Cầu",
+          "hsk": 4,
+          "word_id": "hsk4_601",
+          "meaning_vi": "toàn cầu"
+        },
+        {
+          "text": "大规模",
+          "pinyin": "dà guī mó",
+          "hanviet": "Đại Quy Mô"
+        },
+        {
+          "text": "接种",
+          "pinyin": "jiē zhǒng",
+          "hanviet": "Tiếp Chủng"
+        },
+        {
+          "text": "疫苗",
+          "pinyin": "yìmiáo",
+          "hanviet": "Dịch Miêu",
+          "hsk": 7,
+          "word_id": "hsk7_4870",
+          "meaning_vi": "vắc xin"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "世界卫生组织",
+          "pinyin": "shì jiè wèi shēng zǔ zhī",
+          "hanviet": "Thế Giới Vệ Sinh Tổ Chức"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "一九八",
+          "pinyin": "yī jiǔ bā",
+          "hanviet": "Nhất Cửu Bát"
+        },
+        {
+          "text": "零年",
+          "pinyin": "líng nián",
+          "hanviet": "Linh Niên"
+        },
+        {
+          "text": "庄严",
+          "pinyin": "zhuāngyán",
+          "hanviet": "Trang Nghiêm",
+          "hsk": 7,
+          "word_id": "hsk7_5456",
+          "meaning_vi": "trang nghiêm, uy nghiêm"
+        },
+        {
+          "text": "宣布",
+          "pinyin": "xuānbù",
+          "hanviet": "Tuyên Bố",
+          "hsk": 5,
+          "word_id": "hsk5_1306",
+          "meaning_vi": "tuyên bố"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "人类",
+          "pinyin": "rénlèi",
+          "hanviet": "Nhân Loại",
+          "hsk": 5,
+          "word_id": "hsk5_921",
+          "meaning_vi": "loài người, nhân loại"
+        },
+        {
+          "text": "已",
+          "pinyin": "yǐ",
+          "hanviet": "Dĩ",
+          "hsk": 4,
+          "word_id": "hsk4_866",
+          "meaning_vi": "đã"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "地球",
+          "pinyin": "dìqiú",
+          "hanviet": "Địa Cầu",
+          "hsk": 4,
+          "word_id": "hsk4_155",
+          "meaning_vi": "địa cầu, Trái Đất"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "彻底",
+          "pinyin": "chèdǐ",
+          "hanviet": "Triệt Để",
+          "hsk": 5,
+          "word_id": "hsk5_129",
+          "meaning_vi": "triệt để"
+        },
+        {
+          "text": "消灭",
+          "pinyin": "xiāomiè",
+          "hanviet": "Tiêu Diệt",
+          "hsk": 6,
+          "word_id": "hsk6_1449",
+          "meaning_vi": "tiêu diệt"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "天花",
+          "pinyin": "tiān huā",
+          "hanviet": "Thiên Hoa"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk4_648",
+    "hsk3_1067",
+    "hsk5_1022",
+    "hsk4_79",
+    "hsk7_4870"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Bác sĩ Edward Jenner phát minh vắc-xin đậu mùa nhờ quan sát đối tượng nào?",
+      "options_vi": [
+        "Những cô gái vắt sữa bò không mắc bệnh đậu mùa",
+        "Chim bay trên trời",
+        "Cây nấm sau mưa"
+      ],
+      "answer": 0,
+      "explanation_vi": "Jenner thấy phụ nữ vắt sữa nhiễm đậu bò lành tính thì có miễn dịch với bệnh đậu mùa."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Bệnh truyền nhiễm nguy hiểm nào đã bị nhân loại xóa sổ hoàn toàn nhờ vắc-xin vào năm 1980?",
+      "options_vi": [
+        "Bệnh đậu mùa",
+        "Bệnh cảm cúm thông thường",
+        "Bệnh đau mắt đỏ"
+      ],
+      "answer": 0,
+      "explanation_vi": "Đậu mùa là căn bệnh truyền nhiễm đầu tiên bị quét sạch hoàn toàn khỏi Trái Đất."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Cơ chế chính của vắc-xin là gì?",
+      "options_vi": [
+        "Kích hoạt hệ miễn dịch sinh kháng thể phòng thủ trước mầm bệnh",
+        "Làm đông máu",
+        "Tăng đường huyết"
+      ],
+      "answer": 0,
+      "explanation_vi": "Vắc-xin tập dượt cho hệ thống miễn dịch cách nhận diện và tiêu diệt virus."
+    }
+  ]
+}

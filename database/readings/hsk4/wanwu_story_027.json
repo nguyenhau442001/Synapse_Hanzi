@@ -1,0 +1,815 @@
+{
+  "id": "wanwu_story_027",
+  "chapter_no": 27,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 2,
+  "book_page_start": 265,
+  "book_page_end": 275,
+  "page_display": "Trang 265 - 275",
+  "title": {
+    "zh": "葡萄酒：盛宴的主角",
+    "vi": "Rượu vang: Nhân vật chính của những bữa tiệc lớn"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🍷",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_027.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_027.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 265 - 275 · Lịch sử ủ rượu nho cổ đại từ vùng Kavkaz, văn hóa tiệc rượu Hy Lạp - La Mã đến thi ca Đường thi.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "葡萄酒色泽醇厚，香气迷人，是世界上历史最悠久的酿造酒之一。",
+      "pinyin": "Pútáojiǔ sèzé chúnhòu, xiāngqì mírén, shì shìjiè shàng lìshǐ zuì yōujiǔ de niàngzàojiǔ zhī yī.",
+      "vi": "Rượu vang có màu sắc nồng đượm, hương thơm quyến rũ, là một trong những loại rượu lên men có lịch sử lâu đời nhất thế giới.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "葡萄酒",
+          "pinyin": "pútaojiǔ",
+          "hanviet": "Bồ Đào Tửu",
+          "hsk": 4,
+          "word_id": "hsk4_560",
+          "meaning_vi": "rượu vang"
+        },
+        {
+          "text": "色泽",
+          "pinyin": "sè zé",
+          "hanviet": "Sắc Trạch"
+        },
+        {
+          "text": "醇厚",
+          "pinyin": "chúnhòu",
+          "hanviet": "Thuần Hậu",
+          "hsk": 7,
+          "word_id": "hsk7_645",
+          "meaning_vi": "nồng đượm, đậm đà, đôn hậu"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "香气",
+          "pinyin": "xiāng qì",
+          "hanviet": "Hương Khí"
+        },
+        {
+          "text": "迷人",
+          "pinyin": "mírén",
+          "hanviet": "Mê Nhân",
+          "hsk": 6,
+          "word_id": "hsk6_901",
+          "meaning_vi": "quyến rũ, mê hồn"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "世界",
+          "pinyin": "shìjiè",
+          "hanviet": "Thế Giới",
+          "hsk": 3,
+          "word_id": "hsk3_916",
+          "meaning_vi": "thế giới"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "历史",
+          "pinyin": "lìshǐ",
+          "hanviet": "Lịch Sử",
+          "hsk": 3,
+          "word_id": "hsk3_831",
+          "meaning_vi": "lịch sử"
+        },
+        {
+          "text": "最",
+          "pinyin": "zuì",
+          "hanviet": "Tối",
+          "hsk": 2,
+          "word_id": "hsk2_498",
+          "meaning_vi": "nhất"
+        },
+        {
+          "text": "悠久",
+          "pinyin": "yōujiǔ",
+          "hanviet": "Du Cửu",
+          "hsk": 5,
+          "word_id": "hsk5_1397",
+          "meaning_vi": "lâu đời"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "酿造酒",
+          "pinyin": "niàng zào jiǔ",
+          "hanviet": "Nhưỡng Tạo Tửu"
+        },
+        {
+          "text": "之一",
+          "pinyin": "zhī yī",
+          "hanviet": "Chi Nhất"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "考古发现证明，早在八千年前的高加索和两河流域，人类就已经开始用陶罐酿造葡萄酒。",
+      "pinyin": "Kǎogǔ fāxiàn zhèngmíng, zǎo zài bāqiān nián qián de Gāojiāsuǒ hé liǎnghé liùyù, rénlèi jiù yǐjīng kāishǐ yòng táoguàn niàngzào pútáojiǔ.",
+      "vi": "Phát hiện khảo cổ chứng minh từ tám ngàn năm trước tại vùng Kavkaz và Lưỡng Hà, con người đã bắt đầu ủ rượu vang bằng bình gốm.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "考古",
+          "pinyin": "kǎogǔ",
+          "hanviet": "Khảo Cổ",
+          "hsk": 6,
+          "word_id": "hsk6_776",
+          "meaning_vi": "khảo cổ"
+        },
+        {
+          "text": "发现",
+          "pinyin": "fāxiàn",
+          "hanviet": "Phát Hiện",
+          "hsk": 3,
+          "word_id": "hsk3_712",
+          "meaning_vi": "phát hiện"
+        },
+        {
+          "text": "证明",
+          "pinyin": "zhèngmíng",
+          "hanviet": "Chứng Minh",
+          "hsk": 4,
+          "word_id": "hsk4_935",
+          "meaning_vi": "chứng minh"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "早",
+          "pinyin": "zǎo",
+          "hanviet": "Tảo",
+          "hsk": 1,
+          "word_id": "hsk1_602",
+          "meaning_vi": "sớm"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "八千",
+          "pinyin": "bā qiān",
+          "hanviet": "Bát Thiên"
+        },
+        {
+          "text": "年前",
+          "pinyin": "nián qián",
+          "hanviet": "Niên Tiền"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "高加索",
+          "pinyin": "gāo jiā suǒ",
+          "hanviet": "Cao Gia Sách"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "两河",
+          "pinyin": "liǎng hé",
+          "hanviet": "Lưỡng Hà"
+        },
+        {
+          "text": "流域",
+          "pinyin": "liúyù",
+          "hanviet": "Lưu Vực",
+          "hsk": 7,
+          "word_id": "hsk7_2664",
+          "meaning_vi": "lưu vực"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "人类",
+          "pinyin": "rénlèi",
+          "hanviet": "Nhân Loại",
+          "hsk": 5,
+          "word_id": "hsk5_921",
+          "meaning_vi": "loài người, nhân loại"
+        },
+        {
+          "text": "就",
+          "pinyin": "jiù",
+          "hanviet": "Tựu",
+          "hsk": 2,
+          "word_id": "hsk2_376",
+          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)"
+        },
+        {
+          "text": "已经",
+          "pinyin": "yǐjīng",
+          "hanviet": "Dĩ Kinh",
+          "hsk": 2,
+          "word_id": "hsk2_472",
+          "meaning_vi": "đã"
+        },
+        {
+          "text": "开始",
+          "pinyin": "kāishǐ",
+          "hanviet": "Khai Thuỷ",
+          "hsk": 2,
+          "word_id": "hsk2_378",
+          "meaning_vi": "bắt đầu"
+        },
+        {
+          "text": "用",
+          "pinyin": "yòng",
+          "hanviet": "Dụng",
+          "hsk": 3,
+          "word_id": "hsk3_1020",
+          "meaning_vi": "dùng"
+        },
+        {
+          "text": "陶罐",
+          "pinyin": "táo guàn",
+          "hanviet": "Đào Quán"
+        },
+        {
+          "text": "酿造",
+          "pinyin": "niàngzào",
+          "hanviet": "Nhưỡng Tạo",
+          "hsk": 7,
+          "word_id": "hsk7_2966",
+          "meaning_vi": "ủ men; chưng cất; làm rượu"
+        },
+        {
+          "text": "葡萄酒",
+          "pinyin": "pútaojiǔ",
+          "hanviet": "Bồ Đào Tửu",
+          "hsk": 4,
+          "word_id": "hsk4_560",
+          "meaning_vi": "rượu vang"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "在古希腊和古罗马文明中，葡萄酒不仅是盛大宴会的主角，还被赋予了神圣的宗教意义。",
+      "pinyin": "Zài gǔ Xīlà hé gǔ Luómǎ wénmíng zhōng, pútáojiǔ bùjǐn shì shèngdà yànhuì de zhǔjué, hái bèi fùyǔ le shénshèng de zōngjiào yìyì.",
+      "vi": "Trong nền văn minh Hy Lạp và La Mã cổ đại, rượu vang không chỉ là tâm điểm tiệc tùng mà còn mang ý nghĩa tôn giáo thiêng liêng.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "古希腊",
+          "pinyin": "gǔ xī là",
+          "hanviet": "Cổ Hy Tịch"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "古罗马",
+          "pinyin": "gǔ luó mǎ",
+          "hanviet": "Cổ La Mã"
+        },
+        {
+          "text": "文明",
+          "pinyin": "wénmíng",
+          "hanviet": "Văn Minh",
+          "hsk": 6,
+          "word_id": "hsk6_1389",
+          "meaning_vi": "văn minh"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "葡萄酒",
+          "pinyin": "pútaojiǔ",
+          "hanviet": "Bồ Đào Tửu",
+          "hsk": 4,
+          "word_id": "hsk4_560",
+          "meaning_vi": "rượu vang"
+        },
+        {
+          "text": "不仅",
+          "pinyin": "bùjǐn",
+          "hanviet": "Bất Cận",
+          "hsk": 4,
+          "word_id": "hsk4_55",
+          "meaning_vi": "không chỉ"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "盛大宴会",
+          "pinyin": "shèng dà yàn huì",
+          "hanviet": "Thịnh Đại Yến Hội"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "主角",
+          "pinyin": "zhǔjué",
+          "hanviet": "Chủ Giác",
+          "hsk": 6,
+          "word_id": "hsk6_1748",
+          "meaning_vi": "nhân vật chính"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "还",
+          "pinyin": "hái",
+          "hanviet": "Hoàn",
+          "hsk": 1,
+          "word_id": "hsk1_111",
+          "meaning_vi": "vẫn còn"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "赋予",
+          "pinyin": "fùyǔ",
+          "hanviet": "Phú Dư",
+          "hsk": 6,
+          "word_id": "hsk6_412",
+          "meaning_vi": "ban cho, trao cho, giao phó"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "神圣",
+          "pinyin": "shénshèng",
+          "hanviet": "Thần Thánh",
+          "hsk": 7,
+          "word_id": "hsk7_3590",
+          "meaning_vi": "thần thánh, linh thiêng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "宗教",
+          "pinyin": "zōngjiào",
+          "hanviet": "Tông Giáo",
+          "hsk": 7,
+          "word_id": "hsk7_5540",
+          "meaning_vi": "tôn giáo"
+        },
+        {
+          "text": "意义",
+          "pinyin": "yìyì",
+          "hanviet": "Ý Nghĩa",
+          "hsk": 5,
+          "word_id": "hsk5_1370",
+          "meaning_vi": "ý nghĩa"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "汉代张骞通西域之后，优良的葡萄品种与酿酒技术也传入了中原大地。",
+      "pinyin": "Hàndài Zhāng Qiān tōng xīyù zhīhòu, yōuliáng de pútáo pǐnzhǒng yǔ niàngjiǔ jìshù yě chuánrù le zhōngyuán dàdì.",
+      "vi": "Sau khi Trương Khiên thời Hán thông thương Tây Vực, giống nho hảo hạng và kỹ thuật làm rượu cũng truyền vào Trung Nguyên.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "汉代",
+          "pinyin": "hàn dài",
+          "hanviet": "Hán Đại"
+        },
+        {
+          "text": "张骞通",
+          "pinyin": "zhāng qiān tōng",
+          "hanviet": "Trương Khiên Thông"
+        },
+        {
+          "text": "西域",
+          "pinyin": "xī yù",
+          "hanviet": "Tây Vực"
+        },
+        {
+          "text": "之后",
+          "pinyin": "zhīhòu",
+          "hanviet": "Chi Hậu",
+          "hsk": 4,
+          "word_id": "hsk4_941",
+          "meaning_vi": "sau, sau khi"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "优良",
+          "pinyin": "yōuliáng",
+          "hanviet": "Ưu Lương",
+          "hsk": 5,
+          "word_id": "hsk5_1398",
+          "meaning_vi": "ưu lương, xuất sắc, tốt đẹp"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "葡萄",
+          "pinyin": "pútao",
+          "hanviet": "Bồ Đào",
+          "hsk": 4,
+          "word_id": "hsk4_559",
+          "meaning_vi": "quả nho"
+        },
+        {
+          "text": "品种",
+          "pinyin": "pǐnzhǒng",
+          "hanviet": "Phẩm Chủng",
+          "hsk": 5,
+          "word_id": "hsk5_835",
+          "meaning_vi": "chủng loại, giống loài"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "酿酒",
+          "pinyin": "niàng jiǔ",
+          "hanviet": "Nhưỡng Tửu"
+        },
+        {
+          "text": "技术",
+          "pinyin": "jìshù",
+          "hanviet": "Kĩ Thuật/kỹ Thuật",
+          "hsk": 4,
+          "word_id": "hsk4_331",
+          "meaning_vi": "kỹ thuật"
+        },
+        {
+          "text": "也",
+          "pinyin": "yě",
+          "hanviet": "Dã",
+          "hsk": 1,
+          "word_id": "hsk1_359",
+          "meaning_vi": "cũng"
+        },
+        {
+          "text": "传入",
+          "pinyin": "chuán rù",
+          "hanviet": "Truyền Nhập"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "中原",
+          "pinyin": "zhōng yuán",
+          "hanviet": "Trung Nguyên"
+        },
+        {
+          "text": "大地",
+          "pinyin": "dàdì",
+          "hanviet": "Đại Địa",
+          "hsk": 6,
+          "word_id": "hsk6_246",
+          "meaning_vi": "mặt đất, đất mẹ, đại địa"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "唐代诗人王翰留下了“葡萄美酒夜光杯，欲饮琵琶马上催”的千古名句，见证了中外文化的交融。",
+      "pinyin": "Tángdài shīrén Wáng Hàn liúxià le “pútáo měijiǔ yèguāngbēi, yù yǐn pípá mǎshàng cuī” de qiāngǔ míngjù, jiànzhèng le zhōngwài wénhuà de jiāoróng.",
+      "vi": "Nhà thơ Vương Hàn đời Đường đã để lại câu thơ ngàn đời: 'Bồ đào mỹ tửu dạ quang bôi', minh chứng cho sự giao thoa văn hóa rực rỡ.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "唐代",
+          "pinyin": "táng dài",
+          "hanviet": "Đường Đại"
+        },
+        {
+          "text": "诗人",
+          "pinyin": "shīrén",
+          "hanviet": "Thi Nhân",
+          "hsk": 5,
+          "word_id": "hsk5_1007",
+          "meaning_vi": "nhà thơ"
+        },
+        {
+          "text": "王翰",
+          "pinyin": "wáng hàn",
+          "hanviet": "Vương Hàn"
+        },
+        {
+          "text": "留下",
+          "pinyin": "liúxia",
+          "hanviet": "Lưu Hạ",
+          "hsk": 4,
+          "word_id": "hsk4_485",
+          "meaning_vi": "để lại; ở lại"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "葡萄",
+          "pinyin": "pútao",
+          "hanviet": "Bồ Đào",
+          "hsk": 4,
+          "word_id": "hsk4_559",
+          "meaning_vi": "quả nho"
+        },
+        {
+          "text": "美酒",
+          "pinyin": "měi jiǔ",
+          "hanviet": "Mỹ Tửu"
+        },
+        {
+          "text": "夜光杯",
+          "pinyin": "yè guāng bēi",
+          "hanviet": "Dạ Quang Bôi"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "欲",
+          "pinyin": "yù",
+          "hanviet": "Dục"
+        },
+        {
+          "text": "饮",
+          "pinyin": "yǐn",
+          "hanviet": "Ẩm"
+        },
+        {
+          "text": "琵琶",
+          "pinyin": "pí pá",
+          "hanviet": "Tỳ Bà"
+        },
+        {
+          "text": "马上",
+          "pinyin": "mǎshàng",
+          "hanviet": "Mã Thướng",
+          "hsk": 3,
+          "word_id": "hsk3_848",
+          "meaning_vi": "ngay lập tức"
+        },
+        {
+          "text": "催",
+          "pinyin": "cuī",
+          "hanviet": "Thôi",
+          "hsk": 5,
+          "word_id": "hsk5_207",
+          "meaning_vi": "thúc, đốc thúc"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "千古",
+          "pinyin": "qiān gǔ",
+          "hanviet": "Thiên Cổ"
+        },
+        {
+          "text": "名句",
+          "pinyin": "míng jù",
+          "hanviet": "Danh Câu"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "见证",
+          "pinyin": "jiànzhèng",
+          "hanviet": "Kiến Chứng",
+          "hsk": 7,
+          "word_id": "hsk7_2009",
+          "meaning_vi": "làm chứng, chứng kiến"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "中外",
+          "pinyin": "zhōngwài",
+          "hanviet": "Trung Ngoại",
+          "hsk": 5,
+          "word_id": "hsk5_1525",
+          "meaning_vi": "trong và ngoài nước, Trung Quốc và nước ngoài"
+        },
+        {
+          "text": "文化",
+          "pinyin": "wénhuà",
+          "hanviet": "Văn Hóa",
+          "hsk": 3,
+          "word_id": "hsk3_957",
+          "meaning_vi": "văn hóa"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "交融",
+          "pinyin": "jiāo róng",
+          "hanviet": "Giao Dung"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk4_935",
+    "hsk4_331",
+    "hsk3_957",
+    "hsk3_831",
+    "hsk4_560"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Dấu tích làm rượu vang sớm nhất của nhân loại cách ngày nay bao nhiêu năm?",
+      "options_vi": [
+        "Khoảng 8000 năm trước ở vùng Kavkaz",
+        "Khoảng 500 năm trước",
+        "Mới xuất hiện thời cận đại"
+      ],
+      "answer": 0,
+      "explanation_vi": "Khảo cổ chứng minh con người làm rượu vang từ khoảng 8000 năm trước."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Câu thơ 'Bồ đào mỹ tửu dạ quang bôi' miêu tả loại rượu nào?",
+      "options_vi": [
+        "Rượu nho (rượu vang)",
+        "Rượu nếp cái",
+        "Rượu ngô"
+      ],
+      "answer": 0,
+      "explanation_vi": "'Bồ đào' (葡萄) trong tiếng Hán cổ chính là quả nho, rượu bồ đào là rượu vang."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Kỹ thuật làm rượu vang và giống nho truyền vào Trung Nguyên vào thời kỳ nào?",
+      "options_vi": [
+        "Thời nhà Hán sau chuyến đi sứ của Trương Khiên",
+        "Thời nhà Thanh",
+        "Thời Tam Quốc"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trương Khiên thời Tây Hán đã mang giống nho và cách ủ rượu từ Tây Vực về."
+    }
+  ]
+}

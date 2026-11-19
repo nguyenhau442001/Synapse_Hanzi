@@ -1,0 +1,869 @@
+{
+  "id": "wanwu_story_025",
+  "chapter_no": 25,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 2,
+  "book_page_start": 248,
+  "book_page_end": 256,
+  "page_display": "Trang 248 - 256",
+  "title": {
+    "zh": "莲子：形似航天器密封舱",
+    "vi": "Hạt sen: 'Khoang kín phi thuyền' của tự nhiên"
+  },
+  "topic": "nature_wildlife",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🪷",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_025.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_025.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 248 - 256 · Sức sống bền bỉ nghìn năm của hạt sen cổ đại nhờ cấu trúc vỏ kín đặc biệt tựa khoang tàu vũ trụ.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "在中国传统文化中，莲花出淤泥而不染，被视为君子品格的象征。",
+      "pinyin": "Zài Zhōngguó chuántǒng wénhuà zhōng, liánhuā chū yūní ér bù rǎn, bèi shìwéi jūnzǐ pǐngé de xiàngzhēng.",
+      "vi": "Trong văn hóa truyền thống Trung Hoa, hoa sen gần bùn mà chẳng hôi tanh mùi bùn, được xem là biểu tượng của người quân tử.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "传统",
+          "pinyin": "chuántǒng",
+          "hanviet": "Truyền Thống",
+          "hsk": 5,
+          "word_id": "hsk5_187",
+          "meaning_vi": "truyền thống"
+        },
+        {
+          "text": "文化",
+          "pinyin": "wénhuà",
+          "hanviet": "Văn Hóa",
+          "hsk": 3,
+          "word_id": "hsk3_957",
+          "meaning_vi": "văn hóa"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "莲花",
+          "pinyin": "lián huā",
+          "hanviet": "Liên Hoa"
+        },
+        {
+          "text": "出淤泥而不染",
+          "pinyin": "chū yū ní ér bù rǎn",
+          "hanviet": "Xuất Ứ Nê Nhi Bất Nhiễm"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "视为",
+          "pinyin": "shìwéi",
+          "hanviet": "Thị Vi",
+          "hsk": 5,
+          "word_id": "hsk5_1036",
+          "meaning_vi": "xem như, coi là"
+        },
+        {
+          "text": "君子",
+          "pinyin": "jūnzǐ",
+          "hanviet": "Quân Tử",
+          "hsk": 7,
+          "word_id": "hsk7_2289",
+          "meaning_vi": "quân tử, người chính trực"
+        },
+        {
+          "text": "品格",
+          "pinyin": "pǐn gé",
+          "hanviet": "Phẩm Cách"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "象征",
+          "pinyin": "xiàngzhēng",
+          "hanviet": "Tượng Trưng",
+          "hsk": 5,
+          "word_id": "hsk5_1261",
+          "meaning_vi": "biểu tượng, tượng trưng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "荷花结出的果实莲子，更是大自然中生命力最顽强的种子之一。",
+      "pinyin": "Héhuā jiéchū de guǒshí liánzǐ, gèng shì dàzìrán zhōng shēngmìnglì zuì wánqiáng de zhǒngzǐ zhī yī.",
+      "vi": "Hạt sen kết ra từ hoa sen lại là một trong những hạt giống có sức sống dẻo dai nhất trong tự nhiên.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "荷花",
+          "pinyin": "héhuā",
+          "hanviet": "Hà Hoa",
+          "hsk": 7,
+          "word_id": "hsk7_1629",
+          "meaning_vi": "hoa sen"
+        },
+        {
+          "text": "结出",
+          "pinyin": "jié chū",
+          "hanviet": "Kết Xuất"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "果实",
+          "pinyin": "guǒshí",
+          "hanviet": "Quả Thực",
+          "hsk": 5,
+          "word_id": "hsk5_453",
+          "meaning_vi": "thành quả, quả"
+        },
+        {
+          "text": "莲子",
+          "pinyin": "liánzǐ",
+          "hanviet": "Liên Tử",
+          "hsk": 7,
+          "word_id": "hsk7_2581",
+          "meaning_vi": "hạt sen"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "更是",
+          "pinyin": "gèng shì",
+          "hanviet": "Canh Thị"
+        },
+        {
+          "text": "大自然",
+          "pinyin": "dàzìrán",
+          "hanviet": "Đại Tự Nhiên",
+          "hsk": 4,
+          "word_id": "hsk4_130",
+          "meaning_vi": "thiên nhiên"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "生命力",
+          "pinyin": "shēngmìnglì",
+          "hanviet": "Sinh Mệnh Lực",
+          "hsk": 6,
+          "word_id": "hsk6_1172",
+          "meaning_vi": "sức sống, sức sống mãnh liệt"
+        },
+        {
+          "text": "最",
+          "pinyin": "zuì",
+          "hanviet": "Tối",
+          "hsk": 2,
+          "word_id": "hsk2_498",
+          "meaning_vi": "nhất"
+        },
+        {
+          "text": "顽强",
+          "pinyin": "wánqiáng",
+          "hanviet": "Ngoan Cường",
+          "hsk": 6,
+          "word_id": "hsk6_1358",
+          "meaning_vi": "kiên cường"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "种子",
+          "pinyin": "zhǒngzi",
+          "hanviet": "Chủng Tử",
+          "hsk": 5,
+          "word_id": "hsk5_1530",
+          "meaning_vi": "hạt giống"
+        },
+        {
+          "text": "之一",
+          "pinyin": "zhī yī",
+          "hanviet": "Chi Nhất"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "考古学家曾经在千年古墓中挖掘出埋藏了一千多年的古代莲子。",
+      "pinyin": "Kǎogǔ xuéjiā céngjīng zài qiānnián gǔmù zhōng wājué chū máicáng le yìqiān duō nián de gǔdài liánzǐ.",
+      "vi": "Các nhà khảo cổ từng khai quật được những hạt sen cổ chôn vùi hơn một nghìn năm trong các ngôi mộ cổ.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "考古学家",
+          "pinyin": "kǎo gǔ xué jiā",
+          "hanviet": "Khảo Cổ Học Gia"
+        },
+        {
+          "text": "曾经",
+          "pinyin": "céngjīng",
+          "hanviet": "Tằng Kinh",
+          "hsk": 5,
+          "word_id": "hsk5_98",
+          "meaning_vi": "đã từng"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "千年",
+          "pinyin": "qiān nián",
+          "hanviet": "Thiên Niên"
+        },
+        {
+          "text": "古墓",
+          "pinyin": "gǔ mù",
+          "hanviet": "Cổ Mộ"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "挖掘出",
+          "pinyin": "wā jué chū",
+          "hanviet": "Oạt Quật Xuất"
+        },
+        {
+          "text": "埋藏",
+          "pinyin": "máicáng",
+          "hanviet": "Mai Tạng",
+          "hsk": 7,
+          "word_id": "hsk7_2731",
+          "meaning_vi": "chôn vùi, vùi lấp, chôn giấu"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "一千多年",
+          "pinyin": "yī qiān duō nián",
+          "hanviet": "Nhất Thiên Đa Niên"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "莲子",
+          "pinyin": "liánzǐ",
+          "hanviet": "Liên Tử",
+          "hsk": 7,
+          "word_id": "hsk7_2581",
+          "meaning_vi": "hạt sen"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "科学家对这些古莲子进行培育实验，令人惊奇的是，它们竟然重新发芽开出了美丽的花朵。",
+      "pinyin": "Kēxuéjiā duì zhèxiē gǔliánzǐ jìnxíng péiyù shíyàn, lìng rén jīngqí de shì, tāmen jìngrán chóngxīn fāyá kāichū le měilì de huāduǒ.",
+      "vi": "Các nhà khoa học tiến hành thử nghiệm gieo trồng hạt sen cổ, điều kỳ diệu là chúng vẫn nảy mầm và nở ra những đóa hoa rực rỡ.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "科学家",
+          "pinyin": "kē xué jiā",
+          "hanviet": "Khoa Học Gia"
+        },
+        {
+          "text": "对",
+          "pinyin": "duì",
+          "hanviet": "Đối",
+          "hsk": 1,
+          "word_id": "hsk1_79",
+          "meaning_vi": "đối với, hướng về (giới từ)"
+        },
+        {
+          "text": "这些",
+          "pinyin": "zhèxiē",
+          "hanviet": "Giá Ta",
+          "hsk": 1,
+          "word_id": "hsk1_608",
+          "meaning_vi": "những (đại từ) này"
+        },
+        {
+          "text": "古",
+          "pinyin": "gǔ",
+          "hanviet": "Cổ",
+          "hsk": 5,
+          "word_id": "hsk5_422",
+          "meaning_vi": "cổ, cổ xưa, ngày xưa"
+        },
+        {
+          "text": "莲子",
+          "pinyin": "liánzǐ",
+          "hanviet": "Liên Tử",
+          "hsk": 7,
+          "word_id": "hsk7_2581",
+          "meaning_vi": "hạt sen"
+        },
+        {
+          "text": "进行",
+          "pinyin": "jìnxíng",
+          "hanviet": "Tiến Hành",
+          "hsk": 4,
+          "word_id": "hsk4_393",
+          "meaning_vi": "tiến hành"
+        },
+        {
+          "text": "培育",
+          "pinyin": "péiyù",
+          "hanviet": "Bồi Dục",
+          "hsk": 6,
+          "word_id": "hsk6_977",
+          "meaning_vi": "bồi dưỡng, nuôi dưỡng"
+        },
+        {
+          "text": "实验",
+          "pinyin": "shíyàn",
+          "hanviet": "Thực Nghiệm",
+          "hsk": 5,
+          "word_id": "hsk5_1022",
+          "meaning_vi": "thí nghiệm, thực nghiệm"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "令人",
+          "pinyin": "lìng rén",
+          "hanviet": "Lệnh Nhân"
+        },
+        {
+          "text": "惊奇",
+          "pinyin": "jīngqí",
+          "hanviet": "Kinh Cơ",
+          "hsk": 7,
+          "word_id": "hsk7_2176",
+          "meaning_vi": "kinh ngạc, ngạc nhiên"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "它们",
+          "pinyin": "tāmen",
+          "hanviet": "Tha Môn",
+          "hsk": 1,
+          "word_id": "hsk1_571",
+          "meaning_vi": "chúng nó, chúng (chỉ đồ vật, động vật)"
+        },
+        {
+          "text": "竟然",
+          "pinyin": "jìngrán",
+          "hanviet": "Cánh Nhiên",
+          "hsk": 4,
+          "word_id": "hsk4_404",
+          "meaning_vi": "lại, không ngờ là"
+        },
+        {
+          "text": "重新",
+          "pinyin": "chóngxīn",
+          "hanviet": "Trọng Tân",
+          "hsk": 4,
+          "word_id": "hsk4_87",
+          "meaning_vi": "lại, làm lại từ đầu"
+        },
+        {
+          "text": "发芽",
+          "pinyin": "fāyá",
+          "hanviet": "Phát Nha",
+          "hsk": 7,
+          "word_id": "hsk7_1045",
+          "meaning_vi": "nảy mầm, đâm chồi"
+        },
+        {
+          "text": "开出",
+          "pinyin": "kāi chū",
+          "hanviet": "Khai Xuất"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "美丽",
+          "pinyin": "měilì",
+          "hanviet": "Mỹ Lệ",
+          "hsk": 4,
+          "word_id": "hsk4_503",
+          "meaning_vi": "xinh đẹp"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "花朵",
+          "pinyin": "huāduǒ",
+          "hanviet": "Hoa Đoá",
+          "hsk": 6,
+          "word_id": "hsk6_562",
+          "meaning_vi": "hoa"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "莲子之所以能沉睡千年依然存活，秘密就在于它坚硬无比的种皮。",
+      "pinyin": "Liánzǐ zhī suǒyǐ néng chénshuì qiānnián yīrán cúnhuó, mìmì jiù zàiyú tā jiānyìng wūbǐ de zhǒngpí.",
+      "vi": "Hạt sen sở dĩ có thể ngủ say ngàn năm mà vẫn sống sót, bí mật nằm ở lớp vỏ hạt cứng cáp khác thường.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "莲子",
+          "pinyin": "liánzǐ",
+          "hanviet": "Liên Tử",
+          "hsk": 7,
+          "word_id": "hsk7_2581",
+          "meaning_vi": "hạt sen"
+        },
+        {
+          "text": "之所以",
+          "pinyin": "zhīsuǒyǐ",
+          "hanviet": "Chi Sở Dĩ",
+          "hsk": 6,
+          "word_id": "hsk6_1699",
+          "meaning_vi": "sở dĩ, lý do mà... là vì"
+        },
+        {
+          "text": "能",
+          "pinyin": "néng",
+          "hanviet": "Năng",
+          "hsk": 1,
+          "word_id": "hsk1_212",
+          "meaning_vi": "có thể"
+        },
+        {
+          "text": "沉睡",
+          "pinyin": "chénshuì",
+          "hanviet": "Trầm Thuỵ",
+          "hsk": 7,
+          "word_id": "hsk7_479",
+          "meaning_vi": "ngủ say"
+        },
+        {
+          "text": "千年",
+          "pinyin": "qiān nián",
+          "hanviet": "Thiên Niên"
+        },
+        {
+          "text": "依然",
+          "pinyin": "yīrán",
+          "hanviet": "Y Nhiên",
+          "hsk": 5,
+          "word_id": "hsk5_1349",
+          "meaning_vi": "vẫn như cũ"
+        },
+        {
+          "text": "存活",
+          "pinyin": "cúnhuó",
+          "hanviet": "Tồn Hoạt",
+          "hsk": 7,
+          "word_id": "hsk7_697",
+          "meaning_vi": "sống sót, sinh tồn"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "秘密",
+          "pinyin": "mìmì",
+          "hanviet": "Bí Mật",
+          "hsk": 5,
+          "word_id": "hsk5_764",
+          "meaning_vi": "bí mật"
+        },
+        {
+          "text": "就",
+          "pinyin": "jiù",
+          "hanviet": "Tựu",
+          "hsk": 2,
+          "word_id": "hsk2_376",
+          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)"
+        },
+        {
+          "text": "在于",
+          "pinyin": "zàiyú",
+          "hanviet": "Tại Vu",
+          "hsk": 5,
+          "word_id": "hsk5_1446",
+          "meaning_vi": "ở chỗ, nằm ở"
+        },
+        {
+          "text": "它",
+          "pinyin": "tā",
+          "hanviet": "Tha",
+          "hsk": 1,
+          "word_id": "hsk1_569",
+          "meaning_vi": "nó (vật, con vật)"
+        },
+        {
+          "text": "坚硬无比",
+          "pinyin": "jiān yìng wú bǐ",
+          "hanviet": "Kiên Ngạnh Vô Tỷ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "种皮",
+          "pinyin": "zhǒng pí",
+          "hanviet": "Chủng Bì"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "zh": "莲子的外壳就像航天器的密封舱一样，既完全隔绝水汽，又具备完美的透气平衡保护胚芽。",
+      "pinyin": "Liánzǐ de wàiké jiù xiàng hángtiānqì de mìfēngcāng yíyàng, jì wánquán géjué shuǐqì, yòu jùbèi wánměi de tòuqì pínghéng bǎohù pēiyá.",
+      "vi": "Vỏ ngoài của hạt sen tựa như khoang kín của phi thuyền không gian, vừa cách ly độ ẩm hoàn toàn vừa giữ cân bằng khí bảo vệ mầm sống.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "莲子",
+          "pinyin": "liánzǐ",
+          "hanviet": "Liên Tử",
+          "hsk": 7,
+          "word_id": "hsk7_2581",
+          "meaning_vi": "hạt sen"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "外壳",
+          "pinyin": "wài ké",
+          "hanviet": "Ngoại Xác"
+        },
+        {
+          "text": "就",
+          "pinyin": "jiù",
+          "hanviet": "Tựu",
+          "hsk": 2,
+          "word_id": "hsk2_376",
+          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)"
+        },
+        {
+          "text": "像",
+          "pinyin": "xiàng",
+          "hanviet": "Tượng",
+          "hsk": 3,
+          "word_id": "hsk3_974",
+          "meaning_vi": "giống như"
+        },
+        {
+          "text": "航天器",
+          "pinyin": "háng tiān qì",
+          "hanviet": "Hàng Thiên Khí"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "密封舱",
+          "pinyin": "mì fēng cāng",
+          "hanviet": "Mật Phong Thương"
+        },
+        {
+          "text": "一样",
+          "pinyin": "yíyàng",
+          "hanviet": "Nhất Dạng",
+          "hsk": 3,
+          "word_id": "hsk3_1004",
+          "meaning_vi": "giống nhau"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "既",
+          "pinyin": "jì",
+          "hanviet": "Ký",
+          "hsk": 4,
+          "word_id": "hsk4_327",
+          "meaning_vi": "vừa… vừa; đã (… thì)"
+        },
+        {
+          "text": "完全",
+          "pinyin": "wánquán",
+          "hanviet": "Hoàn Toàn",
+          "hsk": 4,
+          "word_id": "hsk4_762",
+          "meaning_vi": "hoàn toàn"
+        },
+        {
+          "text": "隔绝",
+          "pinyin": "gé jué",
+          "hanviet": "Cách Tuyệt"
+        },
+        {
+          "text": "水汽",
+          "pinyin": "shuǐqì",
+          "hanviet": "Thuỷ Khí",
+          "hsk": 7,
+          "word_id": "hsk7_3818",
+          "meaning_vi": "hơi nước; khí ẩm"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "又",
+          "pinyin": "yòu",
+          "hanviet": "Hựu",
+          "hsk": 3,
+          "word_id": "hsk3_1028",
+          "meaning_vi": "lại (lần nữa)"
+        },
+        {
+          "text": "具备",
+          "pinyin": "jùbèi",
+          "hanviet": "Cụ Bị",
+          "hsk": 5,
+          "word_id": "hsk5_638",
+          "meaning_vi": "có đủ, có sẵn"
+        },
+        {
+          "text": "完美",
+          "pinyin": "wánměi",
+          "hanviet": "Hoàn Mĩ/hoàn Mỹ",
+          "hsk": 5,
+          "word_id": "hsk5_1174",
+          "meaning_vi": "hoàn hảo"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "透气",
+          "pinyin": "tòuqì",
+          "hanviet": "Thấu Khí",
+          "hsk": 7,
+          "word_id": "hsk7_4106",
+          "meaning_vi": "thoáng khí; thông gió"
+        },
+        {
+          "text": "平衡",
+          "pinyin": "pínghéng",
+          "hanviet": "Bình Hành",
+          "hsk": 5,
+          "word_id": "hsk5_841",
+          "meaning_vi": "cân bằng"
+        },
+        {
+          "text": "保护",
+          "pinyin": "bǎohù",
+          "hanviet": "Bảo Hộ",
+          "hsk": 4,
+          "word_id": "hsk4_14",
+          "meaning_vi": "bảo vệ"
+        },
+        {
+          "text": "胚芽",
+          "pinyin": "pēi yá",
+          "hanviet": "Phôi Nha"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk3_957",
+    "hsk5_187",
+    "hsk5_1022",
+    "hsk4_14",
+    "hsk1_390"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Hạt sen cổ chôn vùi nghìn năm có đặc tính kỳ diệu nào?",
+      "options_vi": [
+        "Vẫn có thể nảy mầm và nở hoa khi được gieo trồng",
+        "Biến thành đá quý trong suốt",
+        "Tự phát sáng trong đêm"
+      ],
+      "answer": 0,
+      "explanation_vi": "Hạt sen cổ ngàn năm vẫn giữ được sức sống và nảy mầm nở hoa."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Tại sao hạt sen có thể bảo quản mầm sống lâu như vậy?",
+      "options_vi": [
+        "Vỏ hạt cực kỳ cứng và kín như khoang phi thuyền",
+        "Nhờ ngâm trong dầu",
+        "Nhờ đóng băng vĩnh cửu"
+      ],
+      "answer": 0,
+      "explanation_vi": "Lớp vỏ ngoài cực dày và kín giúp bảo vệ phôi mầm khỏi oxy hóa và độ ẩm bên ngoài."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Hoa sen thường tượng trưng cho điều gì trong văn hóa truyền thống?",
+      "options_vi": [
+        "Phẩm cách thanh cao của người quân tử",
+        "Sự giàu sang hào nhoáng",
+        "Chiến thắng trên sa trường"
+      ],
+      "answer": 0,
+      "explanation_vi": "Hoa sen tượng trưng cho khí tiết thanh cao 'gần bùn mà chẳng hôi tanh mùi bùn'."
+    }
+  ]
+}

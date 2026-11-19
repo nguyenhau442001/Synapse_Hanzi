@@ -1,0 +1,782 @@
+{
+  "id": "wanwu_story_028",
+  "chapter_no": 28,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 2,
+  "book_page_start": 275,
+  "book_page_end": 282,
+  "page_display": "Trang 275 - 282",
+  "title": {
+    "zh": "冰激凌：混搭甜品2000年",
+    "vi": "Kem lạnh: Món tráng miệng biến hóa suốt 2000 năm"
+  },
+  "topic": "food_lifestyle",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🍨",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_028.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_028.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 275 - 282 · Nguồn gốc món tráng miệng lạnh từ băng tuyết ướp mật ong thời cổ đại đến kem sữa hiện đại.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "冰激凌口感丝滑清凉，是炎炎夏日里最能给人们带来快乐的冷饮甜品。",
+      "pinyin": "Bīngjīlíng kǒugǎn sīhuá qīngliáng, shì yányán xiàrì lǐ zuì néng gěi rénmen dàilái kuàilè de lěngyǐn tiánpǐn.",
+      "vi": "Kem có vị ngọt mát lạnh mềm mịn, là món đồ ngọt giải nhiệt mang lại niềm vui lớn nhất trong ngày hè oi bức.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "冰激凌",
+          "pinyin": "bīngjīlíng",
+          "hanviet": "Băng Kích Lăng",
+          "hsk": 3,
+          "word_id": "hsk3_634",
+          "meaning_vi": "kem (món ăn)"
+        },
+        {
+          "text": "口感",
+          "pinyin": "kǒugǎn",
+          "hanviet": "Khẩu Cảm",
+          "hsk": 6,
+          "word_id": "hsk6_793",
+          "meaning_vi": "cảm giác khi ăn, vị giác, độ mềm dai"
+        },
+        {
+          "text": "丝滑",
+          "pinyin": "sī huá",
+          "hanviet": "Tơ Hoạt"
+        },
+        {
+          "text": "清凉",
+          "pinyin": "qīngliáng",
+          "hanviet": "Thanh Lương",
+          "hsk": 7,
+          "word_id": "hsk7_3304",
+          "meaning_vi": "mát rượi; thanh mát; mát mẻ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "炎炎夏日",
+          "pinyin": "yán yán xià rì",
+          "hanviet": "Viêm Viêm Hạ Nhật"
+        },
+        {
+          "text": "里",
+          "pinyin": "lǐ",
+          "hanviet": "Lý",
+          "hsk": 1,
+          "word_id": "hsk1_536",
+          "meaning_vi": "bên trong"
+        },
+        {
+          "text": "最能",
+          "pinyin": "zuì néng",
+          "hanviet": "Tối Năng"
+        },
+        {
+          "text": "给",
+          "pinyin": "gěi",
+          "hanviet": "Cấp",
+          "hsk": 1,
+          "word_id": "hsk1_98",
+          "meaning_vi": "cho, tặng"
+        },
+        {
+          "text": "人们",
+          "pinyin": "rén men",
+          "hanviet": "Nhân Môn"
+        },
+        {
+          "text": "带来",
+          "pinyin": "dài lái",
+          "hanviet": "Đới Lai"
+        },
+        {
+          "text": "快乐",
+          "pinyin": "kuàilè",
+          "hanviet": "Khoái Lạc",
+          "hsk": 2,
+          "word_id": "hsk2_385",
+          "meaning_vi": "vui vẻ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "冷饮",
+          "pinyin": "lěng yǐn",
+          "hanviet": "Lạnh Ẩm"
+        },
+        {
+          "text": "甜品",
+          "pinyin": "tiánpǐn",
+          "hanviet": "Điềm Phẩm",
+          "hsk": 5,
+          "word_id": "hsk5_1127",
+          "meaning_vi": "món tráng miệng, đồ ngọt"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "早在两千多年前，古罗马贵族就让士兵从高山上运回积雪，混合蜂蜜与果汁享用。",
+      "pinyin": "Zǎo zài liǎngqiān duō nián qián, gǔ Luómǎ guìzú jiù ràng shìbīng cóng gāoshān shàng yùnhuí jīxuě, hùnhé fēngmì yǔ guǒzhī xiǎngyòng.",
+      "vi": "Hơn hai ngàn năm trước, giới quý tộc La Mã cổ đại đã sai binh lính gùi băng tuyết từ đỉnh núi cao về trộn mật ong và nước ép trái cây để thưởng thức.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "早",
+          "pinyin": "zǎo",
+          "hanviet": "Tảo",
+          "hsk": 1,
+          "word_id": "hsk1_602",
+          "meaning_vi": "sớm"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "两千多年",
+          "pinyin": "liǎng qiān duō nián",
+          "hanviet": "Lưỡng Thiên Đa Niên"
+        },
+        {
+          "text": "前",
+          "pinyin": "qián",
+          "hanviet": "Tiền",
+          "hsk": 1,
+          "word_id": "hsk1_558",
+          "meaning_vi": "trước"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "古罗马",
+          "pinyin": "gǔ luó mǎ",
+          "hanviet": "Cổ La Mã"
+        },
+        {
+          "text": "贵族",
+          "pinyin": "guìzú",
+          "hanviet": "Quý Tộc",
+          "hsk": 7,
+          "word_id": "hsk7_1533",
+          "meaning_vi": "quý tộc"
+        },
+        {
+          "text": "就让",
+          "pinyin": "jiù ràng",
+          "hanviet": "Tựu Nhượng"
+        },
+        {
+          "text": "士兵",
+          "pinyin": "shìbīng",
+          "hanviet": "Sĩ Binh",
+          "hsk": 6,
+          "word_id": "hsk6_1196",
+          "meaning_vi": "binh sĩ"
+        },
+        {
+          "text": "从",
+          "pinyin": "cóng",
+          "hanviet": "Tòng",
+          "hsk": 2,
+          "word_id": "hsk2_324",
+          "meaning_vi": "từ"
+        },
+        {
+          "text": "高山",
+          "pinyin": "gāo shān",
+          "hanviet": "Cao Sơn"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "运回",
+          "pinyin": "yùn huí",
+          "hanviet": "Vận Hồi"
+        },
+        {
+          "text": "积雪",
+          "pinyin": "jī xuě",
+          "hanviet": "Tích Tuyết"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "混合",
+          "pinyin": "hùnhé",
+          "hanviet": "Hỗn Hợp",
+          "hsk": 6,
+          "word_id": "hsk6_595",
+          "meaning_vi": "pha trộn, hỗn hợp"
+        },
+        {
+          "text": "蜂蜜",
+          "pinyin": "fēngmì",
+          "hanviet": "Phong Mật",
+          "hsk": 7,
+          "word_id": "hsk7_1198",
+          "meaning_vi": "mật ong"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "果汁",
+          "pinyin": "guǒzhī",
+          "hanviet": "Quả Trấp",
+          "hsk": 4,
+          "word_id": "hsk4_281",
+          "meaning_vi": "nước ép trái cây"
+        },
+        {
+          "text": "享用",
+          "pinyin": "xiǎngyòng",
+          "hanviet": "Hưởng Dụng",
+          "hsk": 7,
+          "word_id": "hsk7_4484",
+          "meaning_vi": "thưởng thức; tận hưởng (ẩm thực, tiện ích)"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "在中国唐代，工匠发明了一种名为“酥山”的冷食，用奶油淋在碎冰上并插上鲜花装饰。",
+      "pinyin": "Zài Zhōngguó Tángdài, gōngjiàng fāmíng le yì zhǒng míngwéi “sūshān” de lěngshí, yòng nǎiyóu lín zài suìbīng shàng bìng chāshàng xiānhuā zhuāngshì.",
+      "vi": "Thời nhà Đường ở Trung Quốc, những người thợ khéo tay đã sáng chế món lạnh 'Tô Sơn', rưới kem bơ lên đá bào và cắm hoa tươi trang trí.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "唐代",
+          "pinyin": "táng dài",
+          "hanviet": "Đường Đại"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "工匠",
+          "pinyin": "gōngjiàng",
+          "hanviet": "Công Tượng",
+          "hsk": 7,
+          "word_id": "hsk7_1379",
+          "meaning_vi": "thợ thủ công, nghệ nhân"
+        },
+        {
+          "text": "发明",
+          "pinyin": "fāmíng",
+          "hanviet": "Phát Minh",
+          "hsk": 5,
+          "word_id": "hsk5_320",
+          "meaning_vi": "phát minh"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "一种",
+          "pinyin": "yī zhǒng",
+          "hanviet": "Nhất Chủng"
+        },
+        {
+          "text": "名为",
+          "pinyin": "míng wèi",
+          "hanviet": "Danh Vi"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "酥山",
+          "pinyin": "sū shān",
+          "hanviet": "Tô Sơn"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "冷食",
+          "pinyin": "lěng shí",
+          "hanviet": "Lạnh Thực"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "用",
+          "pinyin": "yòng",
+          "hanviet": "Dụng",
+          "hsk": 3,
+          "word_id": "hsk3_1020",
+          "meaning_vi": "dùng"
+        },
+        {
+          "text": "奶油",
+          "pinyin": "nǎi yóu",
+          "hanviet": "Nãi Dầu"
+        },
+        {
+          "text": "淋在",
+          "pinyin": "lín zài",
+          "hanviet": "Lâm Tại"
+        },
+        {
+          "text": "碎冰",
+          "pinyin": "suì bīng",
+          "hanviet": "Toái Băng"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "并",
+          "pinyin": "bìng",
+          "hanviet": "Tinh",
+          "hsk": 4,
+          "word_id": "hsk4_39",
+          "meaning_vi": "và, đồng thời; hoàn toàn (không)"
+        },
+        {
+          "text": "插",
+          "pinyin": "chā",
+          "hanviet": "Sáp",
+          "hsk": 5,
+          "word_id": "hsk5_99",
+          "meaning_vi": "cắm, chèn vào"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "鲜花",
+          "pinyin": "xiānhuā",
+          "hanviet": "Tiên Hoa",
+          "hsk": 4,
+          "word_id": "hsk4_795",
+          "meaning_vi": "hoa tươi"
+        },
+        {
+          "text": "装饰",
+          "pinyin": "zhuāngshì",
+          "hanviet": "Trang Sức",
+          "hsk": 5,
+          "word_id": "hsk5_1560",
+          "meaning_vi": "trang trí"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "宋代街市上甚至出现了专门售卖冰酪和冰镇果汤的冷饮店铺。",
+      "pinyin": "Sòngdài jiēshì shàng shènzhì chūxiàn le zhuānmén shòumài bīnglào hé bīngzhèn guǒtāng de lěngyǐn diànpù.",
+      "vi": "Vào thời nhà Tống, trên phố phường đã xuất hiện những cửa hàng chuyên bán sữa đông ướp lạnh và nước quả ướp đá.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "宋代",
+          "pinyin": "sòng dài",
+          "hanviet": "Tống Đại"
+        },
+        {
+          "text": "街市",
+          "pinyin": "jiē shì",
+          "hanviet": "Nhai Thị"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "甚至",
+          "pinyin": "shènzhì",
+          "hanviet": "Thậm Chí",
+          "hsk": 4,
+          "word_id": "hsk4_645",
+          "meaning_vi": "thậm chí"
+        },
+        {
+          "text": "出现",
+          "pinyin": "chūxiàn",
+          "hanviet": "Xuất Hiện",
+          "hsk": 4,
+          "word_id": "hsk4_90",
+          "meaning_vi": "xuất hiện"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "专门",
+          "pinyin": "zhuānmén",
+          "hanviet": "Chuyên Môn",
+          "hsk": 4,
+          "word_id": "hsk4_968",
+          "meaning_vi": "chuyên môn, chuyên biệt"
+        },
+        {
+          "text": "售卖",
+          "pinyin": "shòu mài",
+          "hanviet": "Thụ Mại"
+        },
+        {
+          "text": "冰酪",
+          "pinyin": "bīng lào",
+          "hanviet": "Băng Lạc"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "冰镇",
+          "pinyin": "bīng zhèn",
+          "hanviet": "Băng Trấn"
+        },
+        {
+          "text": "果汤",
+          "pinyin": "guǒ tāng",
+          "hanviet": "Quả Thang"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "冷饮",
+          "pinyin": "lěng yǐn",
+          "hanviet": "Lạnh Ẩm"
+        },
+        {
+          "text": "店铺",
+          "pinyin": "diànpù",
+          "hanviet": "Điếm Phô",
+          "hsk": 6,
+          "word_id": "hsk6_302",
+          "meaning_vi": "cửa hàng, tiệm buôn"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "到了十九世纪，人工制冷技术的突破和冰淇淋搅拌机的发明，让这项昔日的宫廷甜品飞入寻常百姓家。",
+      "pinyin": "Dàole shíjiǔ shìjì, réngōng zhìlěng jìshù de tūpò hé bīngqílín jiǎobànjī de fāmíng, ràng zhè xiàng xīrì de gōngtíng tiánpǐn fēirù xúncháng bǎixìng jiā.",
+      "vi": "Đến thế kỷ 19, bước đột phá công nghệ làm lạnh nhân tạo và máy đánh kem đã đưa món tráng miệng cung đình xưa kia đến với mọi gia đình bình dân.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "到",
+          "pinyin": "dào",
+          "hanviet": "Đáo",
+          "hsk": 1,
+          "word_id": "hsk1_59",
+          "meaning_vi": "đến"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "十九世纪",
+          "pinyin": "shí jiǔ shì jì",
+          "hanviet": "Thập Cửu Thế Kỷ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "人工",
+          "pinyin": "réngōng",
+          "hanviet": "Nhân Công",
+          "hsk": 5,
+          "word_id": "hsk5_918",
+          "meaning_vi": "nhân công, nhân tạo"
+        },
+        {
+          "text": "制冷",
+          "pinyin": "zhì lěng",
+          "hanviet": "Chế Lạnh"
+        },
+        {
+          "text": "技术",
+          "pinyin": "jìshù",
+          "hanviet": "Kĩ Thuật/kỹ Thuật",
+          "hsk": 4,
+          "word_id": "hsk4_331",
+          "meaning_vi": "kỹ thuật"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "突破",
+          "pinyin": "tūpò",
+          "hanviet": "Đột Phá",
+          "hsk": 6,
+          "word_id": "hsk6_1327",
+          "meaning_vi": "đột phá"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "冰淇淋",
+          "pinyin": "bīng qí lín",
+          "hanviet": "Băng Kỳ Lâm"
+        },
+        {
+          "text": "搅拌机",
+          "pinyin": "jiǎo bàn jī",
+          "hanviet": "Giảo Bạn Cơ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "发明",
+          "pinyin": "fāmíng",
+          "hanviet": "Phát Minh",
+          "hsk": 5,
+          "word_id": "hsk5_320",
+          "meaning_vi": "phát minh"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "让",
+          "pinyin": "ràng",
+          "hanviet": "Nhượng",
+          "hsk": 2,
+          "word_id": "hsk2_422",
+          "meaning_vi": "để cho, khiến"
+        },
+        {
+          "text": "这项",
+          "pinyin": "zhè xiàng",
+          "hanviet": "Giá Hạng"
+        },
+        {
+          "text": "昔日",
+          "pinyin": "xīrì",
+          "hanviet": "Tích Nhật",
+          "hsk": 7,
+          "word_id": "hsk7_4374",
+          "meaning_vi": "ngày xưa"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "宫廷",
+          "pinyin": "gōngtíng",
+          "hanviet": "Cung Đình",
+          "hsk": 7,
+          "word_id": "hsk7_1399",
+          "meaning_vi": "cung đình, hoàng cung"
+        },
+        {
+          "text": "甜品",
+          "pinyin": "tiánpǐn",
+          "hanviet": "Điềm Phẩm",
+          "hsk": 5,
+          "word_id": "hsk5_1127",
+          "meaning_vi": "món tráng miệng, đồ ngọt"
+        },
+        {
+          "text": "飞入",
+          "pinyin": "fēi rù",
+          "hanviet": "Phi Nhập"
+        },
+        {
+          "text": "寻常百姓",
+          "pinyin": "xún cháng bǎi xìng",
+          "hanviet": "Tầm Thường Bách Tính"
+        },
+        {
+          "text": "家",
+          "pinyin": "jiā",
+          "hanviet": "Gia",
+          "hsk": 1,
+          "word_id": "hsk1_135",
+          "meaning_vi": "nhà"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk5_320",
+    "hsk4_331",
+    "hsk6_1327",
+    "hsk3_634"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Món tráng miệng lạnh 'Tô Sơn' thời Đường có cách chế biến thế nào?",
+      "options_vi": [
+        "Rưới kem bơ lên đá bào và cài hoa tươi trang trí",
+        "Nướng bánh trên than hồng",
+        "Hầm trong nồi áp suất"
+      ],
+      "answer": 0,
+      "explanation_vi": "Tô Sơn thời Đường là món kem sữa nhỏ giọt lên đá lạnh tạo hình tháp đẹp mắt."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Người La Mã cổ đại làm món kem tuyết đầu tiên bằng cách nào?",
+      "options_vi": [
+        "Lấy tuyết trên núi cao trộn mật ong và nước quả",
+        "Dùng tủ lạnh chạy điện",
+        "Đun sôi rượu nho"
+      ],
+      "answer": 0,
+      "explanation_vi": "Quý tộc La Mã dùng tuyết mang từ đỉnh núi cao trộn hoa quả và mật ong."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Điều gì giúp kem lạnh trở thành món ăn phổ thông trong thế kỷ 19?",
+      "options_vi": [
+        "Công nghệ làm lạnh nhân tạo và máy khuấy kem ra đời",
+        "Mùa đông kéo dài quanh năm",
+        "Bỏ cấm đường mía"
+      ],
+      "answer": 0,
+      "explanation_vi": "Kỹ thuật làm lạnh cơ học giúp sản xuất kem quy mô công nghiệp với chi phí rẻ."
+    }
+  ]
+}

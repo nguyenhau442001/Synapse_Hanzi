@@ -1,0 +1,877 @@
+{
+  "id": "wanwu_story_040",
+  "chapter_no": 40,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 2,
+  "book_page_start": 403,
+  "book_page_end": 414,
+  "page_display": "Trang 403 - 414",
+  "title": {
+    "zh": "血型：拯救生命的发现",
+    "vi": "Nhóm máu: Phát hiện cứu sống muôn triệu người"
+  },
+  "topic": "science_technology",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🩸",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_040.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_040.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 403 - 414 · Khám phá hệ nhóm máu ABO năm 1900 của Karl Landsteiner giúp việc truyền máu trở nên an toàn tuyệt đối.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "在医学史上，输血曾经是一项充满巨大风险甚至致命危险的尝试。",
+      "pinyin": "Zài yīxué shǐ shàng, shūxiě céngjīng shì yí xiàng chōngmǎn jùdà fēngxiǎn shènzhì zhìmìng wēixiǎn de chángshì.",
+      "vi": "Trong lịch sử y học, việc truyền máu từng là thử nghiệm chứa đầy rủi ro nguy hiểm đến tính mạng.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "医学史",
+          "pinyin": "yī xué shǐ",
+          "hanviet": "Y Học Sử"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "输血",
+          "pinyin": "shūxuè",
+          "hanviet": "Thâu Huyết",
+          "hsk": 7,
+          "word_id": "hsk7_3772",
+          "meaning_vi": "truyền máu"
+        },
+        {
+          "text": "曾经",
+          "pinyin": "céngjīng",
+          "hanviet": "Tằng Kinh",
+          "hsk": 5,
+          "word_id": "hsk5_98",
+          "meaning_vi": "đã từng"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "一项",
+          "pinyin": "yī xiàng",
+          "hanviet": "Nhất Hạng"
+        },
+        {
+          "text": "充满",
+          "pinyin": "chōngmǎn",
+          "hanviet": "Sung Mãn",
+          "hsk": 5,
+          "word_id": "hsk5_161",
+          "meaning_vi": "đầy, tràn đầy"
+        },
+        {
+          "text": "巨大",
+          "pinyin": "jùdà",
+          "hanviet": "Cự Đại",
+          "hsk": 5,
+          "word_id": "hsk5_640",
+          "meaning_vi": "to lớn"
+        },
+        {
+          "text": "风险",
+          "pinyin": "fēngxiǎn",
+          "hanviet": "Phong Hiểm",
+          "hsk": 5,
+          "word_id": "hsk5_362",
+          "meaning_vi": "rủi ro"
+        },
+        {
+          "text": "甚至",
+          "pinyin": "shènzhì",
+          "hanviet": "Thậm Chí",
+          "hsk": 4,
+          "word_id": "hsk4_645",
+          "meaning_vi": "thậm chí"
+        },
+        {
+          "text": "致命",
+          "pinyin": "zhìmìng",
+          "hanviet": "Trí Mệnh",
+          "hsk": 7,
+          "word_id": "hsk7_5338",
+          "meaning_vi": "chí mạng, gây chết người, nguy hại chết người"
+        },
+        {
+          "text": "危险",
+          "pinyin": "wēixiǎn",
+          "hanviet": "Nguy Hiểm",
+          "hsk": 4,
+          "word_id": "hsk4_770",
+          "meaning_vi": "nguy hiểm"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "尝试",
+          "pinyin": "chángshì",
+          "hanviet": "Thường Thí",
+          "hsk": 5,
+          "word_id": "hsk5_113",
+          "meaning_vi": "thử nghiệm"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "早期的医生直接将别人的血液输给重伤患者，往往导致严重的血液凝集反应而危及生命。",
+      "pinyin": "Zǎoqī de yīshēng zhíjiē jiāng biérén de xièyè shū gěi zhòngshāng huànzhě, wǎngwǎng dǎozhì yánzhòng de xièyè níngjí fǎnyìng ér wēijí shēngmìng.",
+      "vi": "Các bác sĩ thời xưa truyền thẳng máu người này cho người bị thương, thường dẫn đến phản ứng ngưng kết máu trầm trọng đe dọa sinh mệnh.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "早期",
+          "pinyin": "zǎoqī",
+          "hanviet": "Tảo Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_1450",
+          "meaning_vi": "sớm"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "医生",
+          "pinyin": "yīshēng",
+          "hanviet": "Y Sinh",
+          "hsk": 1,
+          "word_id": "hsk1_366",
+          "meaning_vi": "bác sĩ"
+        },
+        {
+          "text": "直接",
+          "pinyin": "zhíjiē",
+          "hanviet": "Trực Tiếp",
+          "hsk": 4,
+          "word_id": "hsk4_948",
+          "meaning_vi": "trực tiếp"
+        },
+        {
+          "text": "将",
+          "pinyin": "jiāng",
+          "hanviet": "Tương",
+          "hsk": 4,
+          "word_id": "hsk4_356",
+          "meaning_vi": "sẽ; đem, lấy (như 把)"
+        },
+        {
+          "text": "别人",
+          "pinyin": "biérén",
+          "hanviet": "Biệt Nhân",
+          "hsk": 3,
+          "word_id": "hsk3_631",
+          "meaning_vi": "người khác"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "血液",
+          "pinyin": "xuèyè",
+          "hanviet": "Huyết Dịch",
+          "hsk": 6,
+          "word_id": "hsk6_1496",
+          "meaning_vi": "máu"
+        },
+        {
+          "text": "输给",
+          "pinyin": "shū gěi",
+          "hanviet": "Thâu Cấp"
+        },
+        {
+          "text": "重伤",
+          "pinyin": "zhòng shāng",
+          "hanviet": "Trọng Thương"
+        },
+        {
+          "text": "患者",
+          "pinyin": "huànzhě",
+          "hanviet": "Hoạn Giả",
+          "hsk": 6,
+          "word_id": "hsk6_580",
+          "meaning_vi": "bệnh nhân, người bệnh"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "往往",
+          "pinyin": "wǎngwǎng",
+          "hanviet": "Vãng Vãng",
+          "hsk": 4,
+          "word_id": "hsk4_766",
+          "meaning_vi": "thường thường"
+        },
+        {
+          "text": "导致",
+          "pinyin": "dǎozhì",
+          "hanviet": "Đạo Trí",
+          "hsk": 5,
+          "word_id": "hsk5_255",
+          "meaning_vi": "dẫn đến, gây ra"
+        },
+        {
+          "text": "严重",
+          "pinyin": "yánzhòng",
+          "hanviet": "Nghiêm Trọng",
+          "hsk": 4,
+          "word_id": "hsk4_848",
+          "meaning_vi": "nghiêm trọng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "血液",
+          "pinyin": "xuèyè",
+          "hanviet": "Huyết Dịch",
+          "hsk": 6,
+          "word_id": "hsk6_1496",
+          "meaning_vi": "máu"
+        },
+        {
+          "text": "凝集反应",
+          "pinyin": "níng jí fǎn yìng",
+          "hanviet": "Ngưng Tập Phản Ưng"
+        },
+        {
+          "text": "而",
+          "pinyin": "ér",
+          "hanviet": "Nhi",
+          "hsk": 4,
+          "word_id": "hsk4_183",
+          "meaning_vi": "mà, và"
+        },
+        {
+          "text": "危及",
+          "pinyin": "wēijí",
+          "hanviet": "Nguy Cập",
+          "hsk": 7,
+          "word_id": "hsk7_4225",
+          "meaning_vi": "đe dọa; làm nguy hại đến"
+        },
+        {
+          "text": "生命",
+          "pinyin": "shēngmìng",
+          "hanviet": "Sinh Mệnh",
+          "hsk": 4,
+          "word_id": "hsk4_648",
+          "meaning_vi": "sinh mệnh, sự sống"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "一九零零年，奥地利科学家兰德斯坦纳发现人类红细胞表面存在不同的抗原，并首次提出了ABO血型系统。",
+      "pinyin": "Yī-jiǔ-líng-líng nián, Àodìlì kēxuéjiā Lándéstǎinà fāxiàn rénlèi hóngxìbāo biǎomiàn cúnzài bùtóng de kàngyuán, bìng shǒucì tíchū le ABO xuèxíng xìtǒng.",
+      "vi": "Năm 1900, nhà khoa học Áo Landsteiner phát hiện trên bề mặt hồng cầu có các kháng nguyên khác nhau và đề xuất hệ nhóm máu ABO.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "一",
+          "pinyin": "yī",
+          "hanviet": "Nhất",
+          "hsk": 1,
+          "word_id": "hsk1_360",
+          "meaning_vi": "một"
+        },
+        {
+          "text": "九",
+          "pinyin": "jiǔ",
+          "hanviet": "Cửu",
+          "hsk": 1,
+          "word_id": "hsk1_148",
+          "meaning_vi": "chín"
+        },
+        {
+          "text": "零零",
+          "pinyin": "líng líng",
+          "hanviet": "Linh Linh"
+        },
+        {
+          "text": "年",
+          "pinyin": "nián",
+          "hanviet": "Niên",
+          "hsk": 1,
+          "word_id": "hsk1_214",
+          "meaning_vi": "năm"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "奥地利",
+          "pinyin": "ào dì lì",
+          "hanviet": "Ảo Địa Lợi"
+        },
+        {
+          "text": "科学家",
+          "pinyin": "kē xué jiā",
+          "hanviet": "Khoa Học Gia"
+        },
+        {
+          "text": "兰德",
+          "pinyin": "lán dé",
+          "hanviet": "Lan Đức"
+        },
+        {
+          "text": "斯坦纳",
+          "pinyin": "sī tǎn nà",
+          "hanviet": "Tư Thản Nạp"
+        },
+        {
+          "text": "发现",
+          "pinyin": "fāxiàn",
+          "hanviet": "Phát Hiện",
+          "hsk": 3,
+          "word_id": "hsk3_712",
+          "meaning_vi": "phát hiện"
+        },
+        {
+          "text": "人类",
+          "pinyin": "rénlèi",
+          "hanviet": "Nhân Loại",
+          "hsk": 5,
+          "word_id": "hsk5_921",
+          "meaning_vi": "loài người, nhân loại"
+        },
+        {
+          "text": "红细胞",
+          "pinyin": "hóng xì bāo",
+          "hanviet": "Hồng Tế Bào"
+        },
+        {
+          "text": "表面",
+          "pinyin": "biǎomiàn",
+          "hanviet": "Biểu Diện",
+          "hsk": 5,
+          "word_id": "hsk5_63",
+          "meaning_vi": "bề mặt"
+        },
+        {
+          "text": "存在",
+          "pinyin": "cúnzài",
+          "hanviet": "Tồn Tại",
+          "hsk": 5,
+          "word_id": "hsk5_210",
+          "meaning_vi": "tồn tại"
+        },
+        {
+          "text": "不同",
+          "pinyin": "bù tóng",
+          "hanviet": "Bất Đồng",
+          "hsk": 3,
+          "word_id": "hsk3_640",
+          "meaning_vi": "khác nhau, không giống"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "抗原",
+          "pinyin": "kàng yuán",
+          "hanviet": "Kháng Nguyên"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "并",
+          "pinyin": "bìng",
+          "hanviet": "Tinh",
+          "hsk": 4,
+          "word_id": "hsk4_39",
+          "meaning_vi": "và, đồng thời; hoàn toàn (không)"
+        },
+        {
+          "text": "首次",
+          "pinyin": "shǒucì",
+          "hanviet": "Thủ Thứ",
+          "hsk": 5,
+          "word_id": "hsk5_1047",
+          "meaning_vi": "lần đầu tiên"
+        },
+        {
+          "text": "提出",
+          "pinyin": "tíchū",
+          "hanviet": "Đề Xuất",
+          "hsk": 4,
+          "word_id": "hsk4_727",
+          "meaning_vi": "đưa ra, nêu ra"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "ABO"
+        },
+        {
+          "text": "血型",
+          "pinyin": "xuèxíng",
+          "hanviet": "Huyết Hình",
+          "hsk": 6,
+          "word_id": "hsk6_1494",
+          "meaning_vi": "nhóm máu"
+        },
+        {
+          "text": "系统",
+          "pinyin": "xìtǒng",
+          "hanviet": "Hệ Thống",
+          "hsk": 5,
+          "word_id": "hsk5_1229",
+          "meaning_vi": "hệ thống"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "这一突破性发现揭示了血型相符才能安全输血的秘密，为此他荣获了一九三零年诺贝尔生理学或医学奖。",
+      "pinyin": "Zhè yí tūpòxìng fāxiàn jiēshì le xuèxíng xiāngfú cái néng ānquán shūxiě de mìmì, wèicǐ tā rónghuò le yī-jiǔ-sān-líng nián Nuòbèi'ěr shēnglǐxué huò yīxuéjiǎng.",
+      "vi": "Khám phá mang tính đột phá này mở ra bí mật truyền máu an toàn, nhờ đó ông được trao giải Nobel Sinh lý và Y học năm 1930.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "这一",
+          "pinyin": "zhè yī",
+          "hanviet": "Giá Nhất"
+        },
+        {
+          "text": "突破性",
+          "pinyin": "tū pò xìng",
+          "hanviet": "Đột Phá Tính"
+        },
+        {
+          "text": "发现",
+          "pinyin": "fāxiàn",
+          "hanviet": "Phát Hiện",
+          "hsk": 3,
+          "word_id": "hsk3_712",
+          "meaning_vi": "phát hiện"
+        },
+        {
+          "text": "揭示",
+          "pinyin": "jiēshì",
+          "hanviet": "Yết Thị",
+          "hsk": 7,
+          "word_id": "hsk7_2081",
+          "meaning_vi": "làm sáng tỏ, hé lộ, vạch rõ"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "血型",
+          "pinyin": "xuèxíng",
+          "hanviet": "Huyết Hình",
+          "hsk": 6,
+          "word_id": "hsk6_1494",
+          "meaning_vi": "nhóm máu"
+        },
+        {
+          "text": "相符",
+          "pinyin": "xiāng fú",
+          "hanviet": "Tương Phù"
+        },
+        {
+          "text": "才能",
+          "pinyin": "cáinéng",
+          "hanviet": "Tài Năng",
+          "hsk": 6,
+          "word_id": "hsk6_97",
+          "meaning_vi": "tài năng"
+        },
+        {
+          "text": "安全",
+          "pinyin": "ānquán",
+          "hanviet": "An Toàn",
+          "hsk": 3,
+          "word_id": "hsk3_605",
+          "meaning_vi": "an toàn"
+        },
+        {
+          "text": "输血",
+          "pinyin": "shūxuè",
+          "hanviet": "Thâu Huyết",
+          "hsk": 7,
+          "word_id": "hsk7_3772",
+          "meaning_vi": "truyền máu"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "秘密",
+          "pinyin": "mìmì",
+          "hanviet": "Bí Mật",
+          "hsk": 5,
+          "word_id": "hsk5_764",
+          "meaning_vi": "bí mật"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "为此",
+          "pinyin": "wèicǐ",
+          "hanviet": "Vi Thử",
+          "hsk": 6,
+          "word_id": "hsk6_1380",
+          "meaning_vi": "cho việc này (kết hợp)"
+        },
+        {
+          "text": "他",
+          "pinyin": "tā",
+          "hanviet": "Tha",
+          "hsk": 1,
+          "word_id": "hsk1_286",
+          "meaning_vi": "anh ấy, nó"
+        },
+        {
+          "text": "荣获",
+          "pinyin": "rónghuò",
+          "hanviet": "Vinh Hoạch",
+          "hsk": 7,
+          "word_id": "hsk7_3436",
+          "meaning_vi": "vinh dự nhận được; vinh dự đoạt giải"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "一九三",
+          "pinyin": "yī jiǔ sān",
+          "hanviet": "Nhất Cửu Tam"
+        },
+        {
+          "text": "零年",
+          "pinyin": "líng nián",
+          "hanviet": "Linh Niên"
+        },
+        {
+          "text": "诺贝尔",
+          "pinyin": "nuò bèi ěr",
+          "hanviet": "Nặc Bối Nhĩ"
+        },
+        {
+          "text": "生理学",
+          "pinyin": "shēng lǐ xué",
+          "hanviet": "Sinh Lý Học"
+        },
+        {
+          "text": "或",
+          "pinyin": "huò",
+          "hanviet": "Hoặc",
+          "hsk": 3,
+          "word_id": "hsk3_774",
+          "meaning_vi": "hoặc"
+        },
+        {
+          "text": "医学奖",
+          "pinyin": "yī xué jiǎng",
+          "hanviet": "Y Học Thưởng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "如今，血型配型已经成为现代医院急救、手术和献血救人中最基础也最重要的准则。",
+      "pinyin": "Rújīn, xuèxíng pèixíng yǐjīng chéngwéi xiàndài yīyuàn jíjiù, shǒushù hé xiànxuè jiùrén zhōng zuì jīchǔ yě zuì zhòngyào de zhǔnzé.",
+      "vi": "Giờ đây, xét nghiệm nhóm máu đã trở thành nguyên tắc cơ bản và tối quan trọng trong cấp cứu bệnh viện và hiến máu cứu người.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "如今",
+          "pinyin": "rújīn",
+          "hanviet": "Như Kim",
+          "hsk": 5,
+          "word_id": "hsk5_935",
+          "meaning_vi": "hiện nay, ngày nay"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "血型",
+          "pinyin": "xuèxíng",
+          "hanviet": "Huyết Hình",
+          "hsk": 6,
+          "word_id": "hsk6_1494",
+          "meaning_vi": "nhóm máu"
+        },
+        {
+          "text": "配型",
+          "pinyin": "pèi xíng",
+          "hanviet": "Phối Hình"
+        },
+        {
+          "text": "已经",
+          "pinyin": "yǐjīng",
+          "hanviet": "Dĩ Kinh",
+          "hsk": 2,
+          "word_id": "hsk2_472",
+          "meaning_vi": "đã"
+        },
+        {
+          "text": "成为",
+          "pinyin": "chéngwéi",
+          "hanviet": "Thành Vi",
+          "hsk": 4,
+          "word_id": "hsk4_82",
+          "meaning_vi": "trở thành"
+        },
+        {
+          "text": "现代",
+          "pinyin": "xiàndài",
+          "hanviet": "Hiện Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1239",
+          "meaning_vi": "hiện đại"
+        },
+        {
+          "text": "医院",
+          "pinyin": "yīyuàn",
+          "hanviet": "Y Viện",
+          "hsk": 1,
+          "word_id": "hsk1_367",
+          "meaning_vi": "bệnh viện"
+        },
+        {
+          "text": "急救",
+          "pinyin": "jíjiù",
+          "hanviet": "Cấp Cứu",
+          "hsk": 6,
+          "word_id": "hsk6_617",
+          "meaning_vi": "sơ cứu, cấp cứu"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "手术",
+          "pinyin": "shǒushù",
+          "hanviet": "Thủ Thuật",
+          "hsk": 5,
+          "word_id": "hsk5_1050",
+          "meaning_vi": "ca phẫu thuật"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "献血",
+          "pinyin": "xiàn xiě",
+          "hanviet": "Hiến Huyết"
+        },
+        {
+          "text": "救人",
+          "pinyin": "jiù rén",
+          "hanviet": "Cứu Nhân"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "最",
+          "pinyin": "zuì",
+          "hanviet": "Tối",
+          "hsk": 2,
+          "word_id": "hsk2_498",
+          "meaning_vi": "nhất"
+        },
+        {
+          "text": "基础",
+          "pinyin": "jīchǔ",
+          "hanviet": "Cơ Sở",
+          "hsk": 4,
+          "word_id": "hsk4_321",
+          "meaning_vi": "cơ sở, nền tảng"
+        },
+        {
+          "text": "也",
+          "pinyin": "yě",
+          "hanviet": "Dã",
+          "hsk": 1,
+          "word_id": "hsk1_359",
+          "meaning_vi": "cũng"
+        },
+        {
+          "text": "最",
+          "pinyin": "zuì",
+          "hanviet": "Tối",
+          "hsk": 2,
+          "word_id": "hsk2_498",
+          "meaning_vi": "nhất"
+        },
+        {
+          "text": "重要",
+          "pinyin": "zhòngyào",
+          "hanviet": "Trọng Yếu",
+          "hsk": 3,
+          "word_id": "hsk3_1064",
+          "meaning_vi": "quan trọng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "准则",
+          "pinyin": "zhǔnzé",
+          "hanviet": "Chuẩn Tắc",
+          "hsk": 7,
+          "word_id": "hsk7_5480",
+          "meaning_vi": "chuẩn tắc, quy tắc chuẩn mực"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk4_648",
+    "hsk3_712",
+    "hsk4_321",
+    "hsk3_1064",
+    "hsk1_390"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Nhà khoa học nào đã khám phá ra hệ nhóm máu ABO vào năm 1900?",
+      "options_vi": [
+        "Karl Landsteiner",
+        "Albert Einstein",
+        "Louis Pasteur"
+      ],
+      "answer": 0,
+      "explanation_vi": "Karl Landsteiner phát hiện ra hệ nhóm máu ABO và nhận giải Nobel năm 1930."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Tại sao việc truyền máu thời xưa hay dẫn đến tử vong?",
+      "options_vi": [
+        "Bất đồng nhóm máu gây ra hiện tượng đông vón hồng cầu trong mạch",
+        "Do kim tiêm làm bằng vàng",
+        "Do máu bị loãng"
+      ],
+      "answer": 0,
+      "explanation_vi": "Khi truyền nhầm nhóm máu không tương thích, kháng thể sẽ làm ngưng kết hồng cầu."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Hệ thống nhóm máu phổ biến nhất được sử dụng trong bệnh viện là gì?",
+      "options_vi": [
+        "Hệ nhóm máu ABO (A, B, AB, O)",
+        "Hệ chữ số La Mã",
+        "Hệ màu sắc xanh đỏ"
+      ],
+      "answer": 0,
+      "explanation_vi": "Hệ ABO là tiêu chuẩn cơ bản nhất trong truyền máu lâm sàng."
+    }
+  ]
+}

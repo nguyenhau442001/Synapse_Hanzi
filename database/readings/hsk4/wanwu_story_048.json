@@ -1,0 +1,716 @@
+{
+  "id": "wanwu_story_048",
+  "chapter_no": 48,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 3,
+  "book_page_start": 497,
+  "book_page_end": 507,
+  "page_display": "Trang 497 - 507",
+  "title": {
+    "zh": "运河：因河而兴，因河而亡",
+    "vi": "Kênh đào Đại Vận Hà: Dòng sông định đoạt hưng thịnh"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🛶",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_048.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_048.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 497 - 507 · Công trình thủy lợi nhân tạo dài nhất thế giới kết nối đôi bờ nam bắc, chuyên chở lúa gạo và lưu thông kinh tế nghìn năm.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "中国京杭大运河是世界上开凿最早、里程最长的人工水利通道。",
+      "pinyin": "Zhōngguó Jīng-Háng Dàyùnhé shì shìjiè shàng kāizáo zuì zǎo, lǐchéng zuì cháng de réngōng shuǐlì tōngdào.",
+      "vi": "Kênh đào Bắc Kinh - Hàng Châu của Trung Quốc là tuyến thủy lợi nhân tạo đào sớm nhất và dài nhất trên thế giới.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "京杭大运河",
+          "pinyin": "jīng háng dà yùn hé",
+          "hanviet": "Kinh Hàng Đại Vận Hà"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "世界",
+          "pinyin": "shìjiè",
+          "hanviet": "Thế Giới",
+          "hsk": 3,
+          "word_id": "hsk3_916",
+          "meaning_vi": "thế giới"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "开凿",
+          "pinyin": "kāi záo",
+          "hanviet": "Khai Tạc"
+        },
+        {
+          "text": "最早",
+          "pinyin": "zuì zǎo",
+          "hanviet": "Tối Tảo"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "里程",
+          "pinyin": "lǐ chéng",
+          "hanviet": "Lý Trình"
+        },
+        {
+          "text": "最长",
+          "pinyin": "zuì zhǎng",
+          "hanviet": "Tối Trường"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "人工",
+          "pinyin": "réngōng",
+          "hanviet": "Nhân Công",
+          "hsk": 5,
+          "word_id": "hsk5_918",
+          "meaning_vi": "nhân công, nhân tạo"
+        },
+        {
+          "text": "水利",
+          "pinyin": "shuǐlì",
+          "hanviet": "Thủy Lợi",
+          "hsk": 7,
+          "word_id": "hsk7_3815",
+          "meaning_vi": "thủy lợi"
+        },
+        {
+          "text": "通道",
+          "pinyin": "tōngdào",
+          "hanviet": "Thông Đạo",
+          "hsk": 6,
+          "word_id": "hsk6_1303",
+          "meaning_vi": "lối đi, hành lang, kênh dẫn"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "隋炀帝时期动员了数百万民工开凿运河，将长江、黄河与海河等五大水系贯通起来。",
+      "pinyin": "Suí Yángdì shíqī dòngyuán le shùbǎiwàn míngōng kāizáo yùnhé, jiāng Chángjiāng, Huánghé yǔ Hǎihé děng wǔdà shuǐxì guàntōng qǐlái.",
+      "vi": "Thời Tùy Dượng Đế đã huy động hàng triệu dân phu đào kênh, thông suốt 5 hệ thống sông lớn gồm Trường Giang, Hoàng Hà và Hải Hà.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "隋炀帝",
+          "pinyin": "suí yáng dì",
+          "hanviet": "Tuỳ Dương Đế"
+        },
+        {
+          "text": "时期",
+          "pinyin": "shíqī",
+          "hanviet": "Thời Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_1016",
+          "meaning_vi": "thời kỳ"
+        },
+        {
+          "text": "动员",
+          "pinyin": "dòngyuán",
+          "hanviet": "Động Viên",
+          "hsk": 7,
+          "word_id": "hsk7_951",
+          "meaning_vi": "động viên, huy động"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "数百万",
+          "pinyin": "shù bǎi wàn",
+          "hanviet": "Sổ Bách Mặc"
+        },
+        {
+          "text": "民工",
+          "pinyin": "mín gōng",
+          "hanviet": "Dân Công"
+        },
+        {
+          "text": "开凿",
+          "pinyin": "kāi záo",
+          "hanviet": "Khai Tạc"
+        },
+        {
+          "text": "运河",
+          "pinyin": "yùnhé",
+          "hanviet": "Vận Hà",
+          "hsk": 7,
+          "word_id": "hsk7_5079",
+          "meaning_vi": "kênh đào, kênh vận tải đường thủy"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "将",
+          "pinyin": "jiāng",
+          "hanviet": "Tương",
+          "hsk": 4,
+          "word_id": "hsk4_356",
+          "meaning_vi": "sẽ; đem, lấy (như 把)"
+        },
+        {
+          "text": "长江",
+          "pinyin": "bōfàng",
+          "hanviet": "Bá Phóng",
+          "hsk": 4,
+          "word_id": "hsk4_41",
+          "meaning_vi": "phát (sóng, nhạc)"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "黄河",
+          "pinyin": "huánghé",
+          "hanviet": "Hoàng Hà",
+          "hsk": 3,
+          "word_id": "hsk3_104",
+          "meaning_vi": "sông Hoàng Hà"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "海河",
+          "pinyin": "hǎi hé",
+          "hanviet": "Hải Hà"
+        },
+        {
+          "text": "等",
+          "pinyin": "děng",
+          "hanviet": "Đẳng",
+          "hsk": 2,
+          "word_id": "hsk2_20",
+          "meaning_vi": "đợi, chờ"
+        },
+        {
+          "text": "五大",
+          "pinyin": "wǔ dà",
+          "hanviet": "Ngũ Đại"
+        },
+        {
+          "text": "水系",
+          "pinyin": "shuǐ xì",
+          "hanviet": "Thuỷ Hệ"
+        },
+        {
+          "text": "贯通",
+          "pinyin": "guàntōng",
+          "hanviet": "Quán Thông",
+          "hsk": 7,
+          "word_id": "hsk7_1500",
+          "meaning_vi": "thông suốt, thông suốt nối liền"
+        },
+        {
+          "text": "起来",
+          "pinyin": "qǐlái",
+          "hanviet": "Khởi Lai",
+          "hsk": 2,
+          "word_id": "hsk2_418",
+          "meaning_vi": "dậy, lên (chỉ hướng)"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "大运河的通航极大地促进了南方丰饶粮食和丝绸向北方京城的‘漕运’输送。",
+      "pinyin": "Dàyùnhé de tōngháng jídà de cùjìn le nánfāng fēngráo liángshi hé sīchóu xiàng běifāng jīngchéng de ‘cáoyùn’ shūsòng.",
+      "vi": "Việc thông thuyền trên Đại Vận Hà thúc đẩy mạnh mẽ hoạt động 'vận tải lương thảo' chở lúa gạo, tơ lụa trù phú từ phương nam lên kinh đô phương bắc.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "大运河",
+          "pinyin": "dà yùn hé",
+          "hanviet": "Đại Vận Hà"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "通航",
+          "pinyin": "tōng háng",
+          "hanviet": "Thông Hàng"
+        },
+        {
+          "text": "极大",
+          "pinyin": "jí dà",
+          "hanviet": "Cực Đại"
+        },
+        {
+          "text": "地",
+          "pinyin": "de",
+          "hanviet": "Địa",
+          "hsk": 2,
+          "word_id": "hsk2_333",
+          "meaning_vi": "cách (trợ từ trạng ngữ)"
+        },
+        {
+          "text": "促进",
+          "pinyin": "cùjìn",
+          "hanviet": "Xúc Tiến",
+          "hsk": 5,
+          "word_id": "hsk5_204",
+          "meaning_vi": "thúc đẩy"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "南方",
+          "pinyin": "nánfāng",
+          "hanviet": "Nam Phương",
+          "hsk": 3,
+          "word_id": "hsk3_858",
+          "meaning_vi": "phương nam, miền nam"
+        },
+        {
+          "text": "丰饶",
+          "pinyin": "fēng ráo",
+          "hanviet": "Phong Nhiêu"
+        },
+        {
+          "text": "粮食",
+          "pinyin": "liángshi",
+          "hanviet": "Lương Thực",
+          "hsk": 5,
+          "word_id": "hsk5_718",
+          "meaning_vi": "lương thực, ngũ cốc"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "丝绸",
+          "pinyin": "sīchóu",
+          "hanviet": "Tơ Trù",
+          "hsk": 7,
+          "word_id": "hsk7_3844",
+          "meaning_vi": "lụa, tơ lụa"
+        },
+        {
+          "text": "向",
+          "pinyin": "xiàng",
+          "hanviet": "Hướng",
+          "hsk": 3,
+          "word_id": "hsk3_973",
+          "meaning_vi": "hướng về, về phía"
+        },
+        {
+          "text": "北方",
+          "pinyin": "běifāng",
+          "hanviet": "Bắc Phương",
+          "hsk": 3,
+          "word_id": "hsk3_618",
+          "meaning_vi": "phía bắc"
+        },
+        {
+          "text": "京城",
+          "pinyin": "jīng chéng",
+          "hanviet": "Kinh Thành"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "漕运",
+          "pinyin": "cáo yùn",
+          "hanviet": "Tào Vận"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "输送",
+          "pinyin": "shūsòng",
+          "hanviet": "Thâu Tống",
+          "hsk": 6,
+          "word_id": "hsk6_1222",
+          "meaning_vi": "vận chuyển, truyền tải, tiếp tế"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "沿河两岸的扬州、苏州和临清等商业重镇因河而兴，繁华盛极一时。",
+      "pinyin": "Yánhé liǎng'àn de Yángzhōu, Sūzhōu hé Línqīng děng shāngyè zhòngzhèn yīn hé ér xīng, fánhuá shèngjí-yìshí.",
+      "vi": "Hai bên bờ kênh, các đô thị thương nghiệp như Dương Châu, Tô Châu, Lâm Thanh nhờ con sông đào mà thịnh vượng tột bậc một thời.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "沿河",
+          "pinyin": "yán hé",
+          "hanviet": "Duyên Hà"
+        },
+        {
+          "text": "两岸",
+          "pinyin": "liǎng’àn",
+          "hanviet": "Lưỡng Ngạn",
+          "hsk": 6,
+          "word_id": "hsk6_847",
+          "meaning_vi": "hai bờ (sông); hai bờ eo biển"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "扬州",
+          "pinyin": "yáng zhōu",
+          "hanviet": "Dương Châu"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "苏州",
+          "pinyin": "sū zhōu",
+          "hanviet": "Tô Châu"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "临清",
+          "pinyin": "lín qīng",
+          "hanviet": "Lâm Thanh"
+        },
+        {
+          "text": "等",
+          "pinyin": "děng",
+          "hanviet": "Đẳng",
+          "hsk": 2,
+          "word_id": "hsk2_20",
+          "meaning_vi": "đợi, chờ"
+        },
+        {
+          "text": "商业",
+          "pinyin": "shāngyè",
+          "hanviet": "Thương Nghiệp",
+          "hsk": 5,
+          "word_id": "hsk5_961",
+          "meaning_vi": "thương nghiệp, kinh doanh"
+        },
+        {
+          "text": "重镇",
+          "pinyin": "zhòng zhèn",
+          "hanviet": "Trọng Trấn"
+        },
+        {
+          "text": "因河",
+          "pinyin": "yīn hé",
+          "hanviet": "Nhân Hà"
+        },
+        {
+          "text": "而兴",
+          "pinyin": "ér xīng",
+          "hanviet": "Nhi Hưng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "繁华",
+          "pinyin": "fánhuá",
+          "hanviet": "Phồn Hoa",
+          "hsk": 7,
+          "word_id": "hsk7_1068",
+          "meaning_vi": "phồn hoa, sầm uất"
+        },
+        {
+          "text": "盛极一时",
+          "pinyin": "shèng jí yī shí",
+          "hanviet": "Thịnh Cực Nhất Thời"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "如今，历经千年风霜的大运河已被列入世界文化遗产名录，重现生态与文化的秀丽风采。",
+      "pinyin": "Rújīn, lìjīng qiānnián fēngshuāng de Dàyùnhé yǐ bèi lièrù Shìjiè Wénhuà Yíchǎn mínglù, chóngxiàn shēngtài yǔ wénhuà de xiùlì fāngcǎi.",
+      "vi": "Ngày nay, trải qua ngàn năm dâu bể, Đại Vận Hà đã được ghi danh vào Di sản Văn hóa Thế giới, tái hiện vẻ đẹp sinh thái và văn hóa rạng ngời.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "如今",
+          "pinyin": "rújīn",
+          "hanviet": "Như Kim",
+          "hsk": 5,
+          "word_id": "hsk5_935",
+          "meaning_vi": "hiện nay, ngày nay"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "历经",
+          "pinyin": "lìjīng",
+          "hanviet": "Lịch Kinh",
+          "hsk": 6,
+          "word_id": "hsk6_839",
+          "meaning_vi": "trải qua, nếm trải qua (thử thách, năm tháng)"
+        },
+        {
+          "text": "千年",
+          "pinyin": "qiān nián",
+          "hanviet": "Thiên Niên"
+        },
+        {
+          "text": "风霜",
+          "pinyin": "fēng shuāng",
+          "hanviet": "Phong Sương"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "大运河",
+          "pinyin": "dà yùn hé",
+          "hanviet": "Đại Vận Hà"
+        },
+        {
+          "text": "已",
+          "pinyin": "yǐ",
+          "hanviet": "Dĩ",
+          "hsk": 4,
+          "word_id": "hsk4_866",
+          "meaning_vi": "đã"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "列入",
+          "pinyin": "liè rù",
+          "hanviet": "Liệt Nhập"
+        },
+        {
+          "text": "世界",
+          "pinyin": "shìjiè",
+          "hanviet": "Thế Giới",
+          "hsk": 3,
+          "word_id": "hsk3_916",
+          "meaning_vi": "thế giới"
+        },
+        {
+          "text": "文化遗产",
+          "pinyin": "wén huà yí chǎn",
+          "hanviet": "Văn Hoa Di Sản"
+        },
+        {
+          "text": "名录",
+          "pinyin": "míng lù",
+          "hanviet": "Danh Lục"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "重现",
+          "pinyin": "chóngxiàn",
+          "hanviet": "Trọng Hiện",
+          "hsk": 7,
+          "word_id": "hsk7_548",
+          "meaning_vi": "tái hiện, xuất hiện lại"
+        },
+        {
+          "text": "生态",
+          "pinyin": "shēngtài",
+          "hanviet": "Sinh Thái",
+          "hsk": 6,
+          "word_id": "hsk6_1173",
+          "meaning_vi": "sinh thái"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "文化",
+          "pinyin": "wénhuà",
+          "hanviet": "Văn Hóa",
+          "hsk": 3,
+          "word_id": "hsk3_957",
+          "meaning_vi": "văn hóa"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "秀丽",
+          "pinyin": "xiùlì",
+          "hanviet": "Tú Ly",
+          "hsk": 7,
+          "word_id": "hsk7_4628",
+          "meaning_vi": "tú lệ; thanh tú; tươi đẹp"
+        },
+        {
+          "text": "风采",
+          "pinyin": "fēngcǎi",
+          "hanviet": "Phong Thái",
+          "hsk": 7,
+          "word_id": "hsk7_1181",
+          "meaning_vi": "phong thái, thần thái"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk5_204",
+    "hsk5_961",
+    "hsk3_957",
+    "hsk1_610"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Đại Vận Hà kết nối hai thành phố lớn nào ở hai đầu?",
+      "options_vi": [
+        "Bắc Kinh và Hàng Châu",
+        "Tây An và Thành Đô",
+        "Quảng Châu và Côn Minh"
+      ],
+      "answer": 0,
+      "explanation_vi": "Kênh mang tên Kinh - Hàng nối liền thủ đô Bắc Kinh và Hàng Châu (Chiết Giang)."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Hoàng đế triều đại nào đã hạ lệnh mở rộng quy mô lớn kết nối các hệ thống sông của Đại Vận Hà?",
+      "options_vi": [
+        "Tùy Dượng Đế (nhà Tùy)",
+        "Hán Cao Tổ",
+        "Càn Long"
+      ],
+      "answer": 0,
+      "explanation_vi": "Tùy Dượng Đế đã huy động đại quy mô dân phu đào thông kênh Vận Hà nối nam bắc."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Chức năng kinh tế trọng yếu nhất của kênh đào trong hàng trăm năm lịch sử là gì?",
+      "options_vi": [
+        "Chuyên chở lúa gạo, tơ lụa và hàng hóa từ phương nam lên kinh đô",
+        "Làm hồ câu cá",
+        "Chặn gió bão biển"
+      ],
+      "answer": 0,
+      "explanation_vi": "Đại Vận Hà đóng vai trò huyết mạch chuyển vận lương thực quốc gia (Tào vận)."
+    }
+  ]
+}

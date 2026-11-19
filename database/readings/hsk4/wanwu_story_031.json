@@ -1,0 +1,803 @@
+{
+  "id": "wanwu_story_031",
+  "chapter_no": 31,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 2,
+  "book_page_start": 302,
+  "book_page_end": 314,
+  "page_display": "Trang 302 - 314",
+  "title": {
+    "zh": "烟草：爱恨之间的纠结",
+    "vi": "Thuốc lá: Vòng xoáy trớ trêu trong lịch sử nhân loại"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🍂",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_031.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_031.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 302 - 314 · Nghi lễ nguyên thủy của thổ dân châu Mỹ, sự lan rộng toàn cầu và nhận thức khoa học về sức khỏe hiện đại.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "烟草是一种原产于美洲大陆的茄科植物，在人类历史上引发了深远的争论。",
+      "pinyin": "Yāncǎo shì yì zhǒng yuánchǎn yú Měizhōu dàlù de qiékē zhíwù, zài rénlèi lìshǐ shàng yǐnfā le shēnyuǎn de zhēnglùn.",
+      "vi": "Thuốc lá là loài cây thuộc họ cà có nguồn gốc từ đại lục châu Mỹ, gây ra những cuộc tranh luận sâu sắc trong lịch sử loài người.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "烟草",
+          "pinyin": "yān cǎo",
+          "hanviet": "Yên Thảo"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "一种",
+          "pinyin": "yī zhǒng",
+          "hanviet": "Nhất Chủng"
+        },
+        {
+          "text": "原产",
+          "pinyin": "yuán chǎn",
+          "hanviet": "Nguyên Sản"
+        },
+        {
+          "text": "于",
+          "pinyin": "yú",
+          "hanviet": "Vu",
+          "hsk": 6,
+          "word_id": "hsk6_1606",
+          "meaning_vi": "tại"
+        },
+        {
+          "text": "美洲",
+          "pinyin": "měi zhōu",
+          "hanviet": "Mỹ Châu"
+        },
+        {
+          "text": "大陆",
+          "pinyin": "dàlù",
+          "hanviet": "Đại Lục",
+          "hsk": 7,
+          "word_id": "hsk7_735",
+          "meaning_vi": "lục địa"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "茄科",
+          "pinyin": "jiā kē",
+          "hanviet": "Gia Khoa"
+        },
+        {
+          "text": "植物",
+          "pinyin": "zhíwù",
+          "hanviet": "Thực Vật",
+          "hsk": 4,
+          "word_id": "hsk4_949",
+          "meaning_vi": "thực vật"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "人类",
+          "pinyin": "rénlèi",
+          "hanviet": "Nhân Loại",
+          "hsk": 5,
+          "word_id": "hsk5_921",
+          "meaning_vi": "loài người, nhân loại"
+        },
+        {
+          "text": "历史",
+          "pinyin": "lìshǐ",
+          "hanviet": "Lịch Sử",
+          "hsk": 3,
+          "word_id": "hsk3_831",
+          "meaning_vi": "lịch sử"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "引发",
+          "pinyin": "yǐnfā",
+          "hanviet": "Dẫn Phát",
+          "hsk": 6,
+          "word_id": "hsk6_1581",
+          "meaning_vi": "gây ra, làm bùng phát, khơi mào"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "深远",
+          "pinyin": "shēnyuǎn",
+          "hanviet": "Thâm Viễn",
+          "hsk": 5,
+          "word_id": "hsk5_986",
+          "meaning_vi": "sâu xa, sâu rộng, lâu dài"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "争论",
+          "pinyin": "zhēnglùn",
+          "hanviet": "Tranh Luận",
+          "hsk": 6,
+          "word_id": "hsk6_1685",
+          "meaning_vi": "tranh luận, cãi vã"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "美洲印第安人早在几千年前就开始使用烟草，通常在宗教祭祀或部落议和仪式上点燃吸食。",
+      "pinyin": "Měizhōu Yìndì'ānrén zǎo zài jǐqiān nián qián jiù kāishǐ shǐyòng yāncǎo, tōngcháng zài zōngjiào jìsì huò bùluò yìhé yíshì shàng diǎnrán xīshí.",
+      "vi": "Người bản địa châu Mỹ từ ngàn năm trước đã dùng thuốc lá, thường châm lửa hút trong các nghi lễ tế thần hoặc hòa giải giữa các bộ lạc.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "美洲",
+          "pinyin": "měi zhōu",
+          "hanviet": "Mỹ Châu"
+        },
+        {
+          "text": "印第安人",
+          "pinyin": "yìn dì ān rén",
+          "hanviet": "Ấn Đệ An Nhân"
+        },
+        {
+          "text": "早",
+          "pinyin": "zǎo",
+          "hanviet": "Tảo",
+          "hsk": 1,
+          "word_id": "hsk1_602",
+          "meaning_vi": "sớm"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "几千年",
+          "pinyin": "jǐ qiān nián",
+          "hanviet": "Kỷ Thiên Niên"
+        },
+        {
+          "text": "前",
+          "pinyin": "qián",
+          "hanviet": "Tiền",
+          "hsk": 1,
+          "word_id": "hsk1_558",
+          "meaning_vi": "trước"
+        },
+        {
+          "text": "就",
+          "pinyin": "jiù",
+          "hanviet": "Tựu",
+          "hsk": 2,
+          "word_id": "hsk2_376",
+          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)"
+        },
+        {
+          "text": "开始",
+          "pinyin": "kāishǐ",
+          "hanviet": "Khai Thuỷ",
+          "hsk": 2,
+          "word_id": "hsk2_378",
+          "meaning_vi": "bắt đầu"
+        },
+        {
+          "text": "使用",
+          "pinyin": "shǐyòng",
+          "hanviet": "Sử Dụng",
+          "hsk": 4,
+          "word_id": "hsk4_668",
+          "meaning_vi": "sử dụng"
+        },
+        {
+          "text": "烟草",
+          "pinyin": "yān cǎo",
+          "hanviet": "Yên Thảo"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "通常",
+          "pinyin": "tōngcháng",
+          "hanviet": "Thông Thường",
+          "hsk": 5,
+          "word_id": "hsk5_1139",
+          "meaning_vi": "thông thường"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "宗教",
+          "pinyin": "zōngjiào",
+          "hanviet": "Tông Giáo",
+          "hsk": 7,
+          "word_id": "hsk7_5540",
+          "meaning_vi": "tôn giáo"
+        },
+        {
+          "text": "祭祀",
+          "pinyin": "jìsì",
+          "hanviet": "Tế Tự",
+          "hsk": 7,
+          "word_id": "hsk7_1913",
+          "meaning_vi": "cúng tế, tế lễ, tế tự"
+        },
+        {
+          "text": "或",
+          "pinyin": "huò",
+          "hanviet": "Hoặc",
+          "hsk": 3,
+          "word_id": "hsk3_774",
+          "meaning_vi": "hoặc"
+        },
+        {
+          "text": "部落",
+          "pinyin": "bù luò",
+          "hanviet": "Bộ Lạc"
+        },
+        {
+          "text": "议和",
+          "pinyin": "yì hé",
+          "hanviet": "Nghị Hoà"
+        },
+        {
+          "text": "仪式",
+          "pinyin": "yíshì",
+          "hanviet": "Nghi Thức",
+          "hsk": 6,
+          "word_id": "hsk6_1553",
+          "meaning_vi": "nghi thức, lễ"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "点燃",
+          "pinyin": "diǎnrán",
+          "hanviet": "Điểm Nhiên",
+          "hsk": 6,
+          "word_id": "hsk6_298",
+          "meaning_vi": "thắp sáng, châm lửa; khơi dậy"
+        },
+        {
+          "text": "吸食",
+          "pinyin": "xī shí",
+          "hanviet": "Hấp Thực"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "哥伦布船队将烟草带回欧洲后，一度被西方医生误认为是可以治疗各种疾病的“神药”。",
+      "pinyin": "Gēlúnbù chuánduì jiāng yāncǎo dàihuí Ōuzhōu hòu, yídù bèi xīfāng yīshēng wùrèn wéi shì kěyǐ zhìliáo gèzhǒng jíbìng de “shényào”.",
+      "vi": "Sau khi đoàn thám hiểm Columbus mang thuốc lá về châu Âu, các bác sĩ phương Tây từng lầm tưởng đó là 'thần dược' trị bách bệnh.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "哥伦布",
+          "pinyin": "gē lún bù",
+          "hanviet": "Ca Luân Bố"
+        },
+        {
+          "text": "船队",
+          "pinyin": "chuán duì",
+          "hanviet": "Thuyền Đội"
+        },
+        {
+          "text": "将",
+          "pinyin": "jiāng",
+          "hanviet": "Tương",
+          "hsk": 4,
+          "word_id": "hsk4_356",
+          "meaning_vi": "sẽ; đem, lấy (như 把)"
+        },
+        {
+          "text": "烟草",
+          "pinyin": "yān cǎo",
+          "hanviet": "Yên Thảo"
+        },
+        {
+          "text": "带回",
+          "pinyin": "dài huí",
+          "hanviet": "Đới Hồi"
+        },
+        {
+          "text": "欧洲",
+          "pinyin": "Ōuzhōu",
+          "hanviet": "Âu Châu",
+          "hsk": 5,
+          "word_id": "hsk5_808",
+          "meaning_vi": "châu Âu"
+        },
+        {
+          "text": "后",
+          "pinyin": "hòu",
+          "hanviet": "Hậu",
+          "hsk": 1,
+          "word_id": "hsk1_524",
+          "meaning_vi": "sau"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "一度",
+          "pinyin": "yídù",
+          "hanviet": "Nhất Độ",
+          "hsk": 7,
+          "word_id": "hsk7_4819",
+          "meaning_vi": "một thời, có lúc"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "西方",
+          "pinyin": "xīfāng",
+          "hanviet": "Tây Phương",
+          "hsk": 3,
+          "word_id": "hsk3_961",
+          "meaning_vi": "phía tây; phương Tây"
+        },
+        {
+          "text": "医生",
+          "pinyin": "yīshēng",
+          "hanviet": "Y Sinh",
+          "hsk": 1,
+          "word_id": "hsk1_366",
+          "meaning_vi": "bác sĩ"
+        },
+        {
+          "text": "误认为",
+          "pinyin": "wù rèn wèi",
+          "hanviet": "Ngộ Nhận Vi"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "可以",
+          "pinyin": "kěyǐ",
+          "hanviet": "Khả Dĩ",
+          "hsk": 1,
+          "word_id": "hsk1_160",
+          "meaning_vi": "có thể, được"
+        },
+        {
+          "text": "治疗",
+          "pinyin": "zhìliáo",
+          "hanviet": "Trị Liệu",
+          "hsk": 5,
+          "word_id": "hsk5_1515",
+          "meaning_vi": "điều trị"
+        },
+        {
+          "text": "各种",
+          "pinyin": "gèzhǒng",
+          "hanviet": "Các Chủng",
+          "hsk": 4,
+          "word_id": "hsk4_248",
+          "meaning_vi": "các loại, đủ loại"
+        },
+        {
+          "text": "疾病",
+          "pinyin": "jíbìng",
+          "hanviet": "Tật Bệnh",
+          "hsk": 5,
+          "word_id": "hsk5_528",
+          "meaning_vi": "căn bệnh"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "神药",
+          "pinyin": "shén yào",
+          "hanviet": "Thần Dược"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "到了二十世纪，医学研究明确证实烟草中的尼古丁具有强烈的成瘾性，燃烧烟雾更会危害呼吸健康。",
+      "pinyin": "Dàole èrshí shìjì, yīxué yánjiū míngquè zhèngshí yāncǎo zhōng de nígǔdīng jùyǒu qiángliè de chéngyǐnxìng, ránshāo yānwù gèng huì wēihài hūxī jiànkāng.",
+      "vi": "Đến thế kỷ 20, nghiên cứu y học xác nhận nicotine trong thuốc lá gây nghiện mạnh và khói thuốc đe dọa nghiêm trọng đến hệ hô hấp.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "到",
+          "pinyin": "dào",
+          "hanviet": "Đáo",
+          "hsk": 1,
+          "word_id": "hsk1_59",
+          "meaning_vi": "đến"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "二十世纪",
+          "pinyin": "èr shí shì jì",
+          "hanviet": "Nhị Thập Thế Kỷ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "医学",
+          "pinyin": "yīxué",
+          "hanviet": "Y Học",
+          "hsk": 5,
+          "word_id": "hsk5_1350",
+          "meaning_vi": "y học"
+        },
+        {
+          "text": "研究",
+          "pinyin": "yánjiū",
+          "hanviet": "Nghiên Cứu",
+          "hsk": 4,
+          "word_id": "hsk4_846",
+          "meaning_vi": "nghiên cứu"
+        },
+        {
+          "text": "明确",
+          "pinyin": "míngquè",
+          "hanviet": "Minh Xác",
+          "hsk": 5,
+          "word_id": "hsk5_776",
+          "meaning_vi": "rõ ràng, minh xác"
+        },
+        {
+          "text": "证实",
+          "pinyin": "zhèngshí",
+          "hanviet": "Chứng Thực",
+          "hsk": 6,
+          "word_id": "hsk6_1691",
+          "meaning_vi": "chứng thực, chứng minh"
+        },
+        {
+          "text": "烟草",
+          "pinyin": "yān cǎo",
+          "hanviet": "Yên Thảo"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "尼古丁",
+          "pinyin": "ní gǔ dīng",
+          "hanviet": "Ni Cổ Đinh"
+        },
+        {
+          "text": "具有",
+          "pinyin": "jùyǒu",
+          "hanviet": "Cụ Hữu",
+          "hsk": 5,
+          "word_id": "hsk5_643",
+          "meaning_vi": "có"
+        },
+        {
+          "text": "强烈",
+          "pinyin": "qiángliè",
+          "hanviet": "Cường Liệt",
+          "hsk": 5,
+          "word_id": "hsk5_873",
+          "meaning_vi": "mạnh mẽ, kịch liệt"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "成瘾性",
+          "pinyin": "chéng yǐn xìng",
+          "hanviet": "Thành Ẩn Tính"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "燃烧",
+          "pinyin": "ránshāo",
+          "hanviet": "Nhiên Thiêu",
+          "hsk": 5,
+          "word_id": "hsk5_911",
+          "meaning_vi": "đốt cháy"
+        },
+        {
+          "text": "烟雾",
+          "pinyin": "yān wù",
+          "hanviet": "Yên Vụ"
+        },
+        {
+          "text": "更会",
+          "pinyin": "gèng huì",
+          "hanviet": "Canh Hội"
+        },
+        {
+          "text": "危害",
+          "pinyin": "wēihài",
+          "hanviet": "Nguy Hại",
+          "hsk": 5,
+          "word_id": "hsk5_1180",
+          "meaning_vi": "gây hại, tổn hại"
+        },
+        {
+          "text": "呼吸",
+          "pinyin": "hūxī",
+          "hanviet": "Hô Hấp",
+          "hsk": 5,
+          "word_id": "hsk5_488",
+          "meaning_vi": "hô hấp, thở"
+        },
+        {
+          "text": "健康",
+          "pinyin": "jiànkāng",
+          "hanviet": "Kiện Khang",
+          "hsk": 3,
+          "word_id": "hsk3_787",
+          "meaning_vi": "khỏe mạnh, sức khỏe"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "如今，世界各国普遍推行控烟政策，倡导健康的生活方式。",
+      "pinyin": "Rújīn, shìjiè gèguó pǔbiàn tuīxíng kòngyān zhèngcè, chàngdǎo jiànkāng de shēnghuó fāngshì.",
+      "vi": "Ngày nay, các quốc gia trên thế giới đều đẩy mạnh chính sách kiểm soát thuốc lá, khuyến khích lối sống lành mạnh.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "如今",
+          "pinyin": "rújīn",
+          "hanviet": "Như Kim",
+          "hsk": 5,
+          "word_id": "hsk5_935",
+          "meaning_vi": "hiện nay, ngày nay"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "世界",
+          "pinyin": "shìjiè",
+          "hanviet": "Thế Giới",
+          "hsk": 3,
+          "word_id": "hsk3_916",
+          "meaning_vi": "thế giới"
+        },
+        {
+          "text": "各国",
+          "pinyin": "gè guó",
+          "hanviet": "Các Quốc"
+        },
+        {
+          "text": "普遍推行",
+          "pinyin": "pǔ biàn tuī xíng",
+          "hanviet": "Phổ Biến Suy Hành"
+        },
+        {
+          "text": "控烟",
+          "pinyin": "kòng yān",
+          "hanviet": "Khống Yên"
+        },
+        {
+          "text": "政策",
+          "pinyin": "zhèngcè",
+          "hanviet": "Chính Sách",
+          "hsk": 6,
+          "word_id": "hsk6_1688",
+          "meaning_vi": "chính sách"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "倡导",
+          "pinyin": "chàngdǎo",
+          "hanviet": "Xướng Đạo",
+          "hsk": 7,
+          "word_id": "hsk7_452",
+          "meaning_vi": "khởi xướng, đề xướng"
+        },
+        {
+          "text": "健康",
+          "pinyin": "jiànkāng",
+          "hanviet": "Kiện Khang",
+          "hsk": 3,
+          "word_id": "hsk3_787",
+          "meaning_vi": "khỏe mạnh, sức khỏe"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "生活",
+          "pinyin": "shēnghuó",
+          "hanviet": "Sinh Hoạt",
+          "hsk": 3,
+          "word_id": "hsk3_911",
+          "meaning_vi": "sinh hoạt, cuộc sống"
+        },
+        {
+          "text": "方式",
+          "pinyin": "fāngshì",
+          "hanviet": "Phương Thức",
+          "hsk": 4,
+          "word_id": "hsk4_194",
+          "meaning_vi": "phương thức, cách thức"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk3_831",
+    "hsk4_846",
+    "hsk3_787",
+    "hsk3_911"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Người bản địa châu Mỹ ban đầu dùng thuốc lá vào dịp nào?",
+      "options_vi": [
+        "Nghi lễ tế thần hoặc hòa giải giữa các bộ lạc",
+        "Nấu cháo bồi bổ",
+        "Làm thức ăn gia súc"
+      ],
+      "answer": 0,
+      "explanation_vi": "Người da đỏ dùng tẩu thuốc lá trong các nghi lễ tôn giáo và ký ước hòa bình."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Khi mới du nhập vào châu Âu thời Phục hưng, thuốc lá từng bị ngộ nhận là gì?",
+      "options_vi": [
+        "Một loại thần dược có thể chữa được bách bệnh",
+        "Loại gia vị ngọt như đường",
+        "Nhiên liệu chạy tàu hỏa"
+      ],
+      "answer": 0,
+      "explanation_vi": "Nhiều bác sĩ châu Âu thời đó tin rằng thuốc lá có thể trị bệnh đau đầu và cảm mạo."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Chất nào trong lá thuốc lá gây nghiện mạnh được y học hiện đại xác nhận?",
+      "options_vi": [
+        "Nicotine",
+        "Vitamin C",
+        "Đường glucose"
+      ],
+      "answer": 0,
+      "explanation_vi": "Chất nicotine tác động lên hệ thần kinh trung ương gây nghiện cao."
+    }
+  ]
+}

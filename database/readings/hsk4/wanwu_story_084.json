@@ -1,0 +1,949 @@
+{
+  "id": "wanwu_story_084",
+  "chapter_no": 84,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 4,
+  "book_page_start": 853,
+  "book_page_end": 862,
+  "page_display": "Trang 853 - 862",
+  "title": {
+    "zh": "鸿门宴：史上第一饭局",
+    "vi": "Hồng Môn Yến: Bữa tiệc sinh tử lừng danh lịch sử"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "⚔️",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_084.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_084.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 853 - 862 · Ván cờ chính trị sinh tử giữa Lưu Bang và Hạng Vũ: Điệu múa kiếm của Hạng Trang và khí phách Phàn Khoái.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "公元前二零六年，在秦帝国轰然倒塌的乱世废墟上，楚霸王项羽与汉王刘邦在鸿门展开了一场惊心动魄的酒宴对决。",
+      "pinyin": "Gōngyuánqián èr-líng-liù nián, zài Qín dìguó hōngrán dǎotā de luànshì fèixū shàng, Chǔ Bàwáng Xiàng Yǔ yǔ Hànwáng Liú Bāng zài Hóngmén zhǎnkāi le yì chǎng jīngxīn-dòngpò de jiǔyàn duìjué.",
+      "vi": "Năm 206 TCN, trên đống hoang tàn sau khi nhà Tần sụp đổ, Sở Bá Vương Hạng Vũ và Hán Vương Lưu Bang đã đối đầu trong bữa tiệc nghẹt thở tại Hồng Môn.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "公元前",
+          "pinyin": "gōng yuán qián",
+          "hanviet": "Công Nguyên Tiền"
+        },
+        {
+          "text": "二零",
+          "pinyin": "èr líng",
+          "hanviet": "Nhị Linh"
+        },
+        {
+          "text": "六年",
+          "pinyin": "liù nián",
+          "hanviet": "Lục Niên"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "秦",
+          "pinyin": "qín",
+          "hanviet": "Tần"
+        },
+        {
+          "text": "帝国",
+          "pinyin": "dìguó",
+          "hanviet": "Đế Quốc",
+          "hsk": 7,
+          "word_id": "hsk7_860",
+          "meaning_vi": "đế quốc, đế chế"
+        },
+        {
+          "text": "轰然",
+          "pinyin": "hōng rán",
+          "hanviet": "Oanh Nhiên"
+        },
+        {
+          "text": "倒塌",
+          "pinyin": "dǎotā",
+          "hanviet": "Đảo Tháp",
+          "hsk": 7,
+          "word_id": "hsk7_798",
+          "meaning_vi": "sụp đổ, sập xuống"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "乱世",
+          "pinyin": "luàn shì",
+          "hanviet": "Loạn Thế"
+        },
+        {
+          "text": "废墟",
+          "pinyin": "fèixū",
+          "hanviet": "Phế Khư",
+          "hsk": 7,
+          "word_id": "hsk7_1147",
+          "meaning_vi": "đống đổ nát"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "楚霸王",
+          "pinyin": "chǔ bà wáng",
+          "hanviet": "Sở Bá Vương"
+        },
+        {
+          "text": "项羽",
+          "pinyin": "xiàng yǔ",
+          "hanviet": "Hạng Vũ"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "汉王",
+          "pinyin": "hàn wáng",
+          "hanviet": "Hán Vương"
+        },
+        {
+          "text": "刘邦",
+          "pinyin": "liú bāng",
+          "hanviet": "Lưu Bang"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "鸿门",
+          "pinyin": "hóng mén",
+          "hanviet": "Hồng Môn"
+        },
+        {
+          "text": "展开",
+          "pinyin": "zhǎnkāi",
+          "hanviet": "Triển Khai",
+          "hsk": 5,
+          "word_id": "hsk5_1464",
+          "meaning_vi": "triển khai, mở rộng"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "一场",
+          "pinyin": "yī cháng",
+          "hanviet": "Nhất Tràng"
+        },
+        {
+          "text": "惊心动魄",
+          "pinyin": "jīngxīn-dòngpò",
+          "hanviet": "Kinh Tâm Động Phách",
+          "hsk": 7,
+          "word_id": "hsk7_2187",
+          "meaning_vi": "nghẹt thở, thót tim, kinh tâm động phách"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "酒宴",
+          "pinyin": "jiǔ yàn",
+          "hanviet": "Tửu Yến"
+        },
+        {
+          "text": "对决",
+          "pinyin": "duì jué",
+          "hanviet": "Đối Quyết"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "这场看似推杯换盏的普通宴席，实则是争夺天下至高统治权的生死政治角力，被称为‘史上第一饭局’。",
+      "pinyin": "Zhè chǎng kànsì tuībēi-huànzhǎn de pǔtōng yànxí, shí zé shì zhēngduó tiānxià zhìgāo tǒngzhìquán de shēngsǐ zhèngzhì jiǎolì, bèi chēng wéi ‘shǐshàng dì-yī fànjú’.",
+      "vi": "Bữa tiệc ngỡ như cạn chén vui vẻ thực chất là cuộc đọ trí sinh tử tranh đoạt quyền thống trị thiên hạ.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "这场",
+          "pinyin": "zhè chǎng",
+          "hanviet": "Giá Tràng"
+        },
+        {
+          "text": "看似",
+          "pinyin": "kànsì",
+          "hanviet": "Khán Tự",
+          "hsk": 6,
+          "word_id": "hsk6_771",
+          "meaning_vi": "trông có vẻ, dường như"
+        },
+        {
+          "text": "推杯",
+          "pinyin": "tuī bēi",
+          "hanviet": "Suy Bôi"
+        },
+        {
+          "text": "换",
+          "pinyin": "huàn",
+          "hanviet": "Hoán",
+          "hsk": 3,
+          "word_id": "hsk3_770",
+          "meaning_vi": "đổi, thay"
+        },
+        {
+          "text": "盏",
+          "pinyin": "zhǎn",
+          "hanviet": "Trản",
+          "hsk": 7,
+          "word_id": "hsk7_5150",
+          "meaning_vi": "ngọn, chén, ngọn (đèn)"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "普通",
+          "pinyin": "pǔtōng",
+          "hanviet": "Phổ Thông",
+          "hsk": 4,
+          "word_id": "hsk4_562",
+          "meaning_vi": "bình thường, phổ thông"
+        },
+        {
+          "text": "宴席",
+          "pinyin": "yàn xí",
+          "hanviet": "Yến Tịch"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "实则",
+          "pinyin": "shí zé",
+          "hanviet": "Thực Tắc"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "争夺",
+          "pinyin": "zhēngduó",
+          "hanviet": "Tranh Đoạt",
+          "hsk": 6,
+          "word_id": "hsk6_1684",
+          "meaning_vi": "tranh đoạt, tranh giành"
+        },
+        {
+          "text": "天下",
+          "pinyin": "tiānxià",
+          "hanviet": "Thiên Hạ",
+          "hsk": 6,
+          "word_id": "hsk6_1293",
+          "meaning_vi": "thiên hạ, thế giới, khắp nơi"
+        },
+        {
+          "text": "至",
+          "pinyin": "zhì",
+          "hanviet": "Chí",
+          "hsk": 5,
+          "word_id": "hsk5_1508",
+          "meaning_vi": "đến"
+        },
+        {
+          "text": "高",
+          "pinyin": "gāo",
+          "hanviet": "Cao",
+          "hsk": 2,
+          "word_id": "hsk2_341",
+          "meaning_vi": "cao"
+        },
+        {
+          "text": "统治权",
+          "pinyin": "tǒng zhì quán",
+          "hanviet": "Thống Trị Quyền"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "生死",
+          "pinyin": "shēngsǐ",
+          "hanviet": "Sinh Tử",
+          "hsk": 7,
+          "word_id": "hsk7_3619",
+          "meaning_vi": "sinh tử; sống chết"
+        },
+        {
+          "text": "政治",
+          "pinyin": "zhèngzhì",
+          "hanviet": "Chính Trị",
+          "hsk": 5,
+          "word_id": "hsk5_1498",
+          "meaning_vi": "chính trị"
+        },
+        {
+          "text": "角力",
+          "pinyin": "jué lì",
+          "hanviet": "Giác Lực"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "称为",
+          "pinyin": "chēngwéi",
+          "hanviet": "Xứng Vi",
+          "hsk": 5,
+          "word_id": "hsk5_134",
+          "meaning_vi": "gọi là"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "史上",
+          "pinyin": "shǐ shàng",
+          "hanviet": "Sử Thướng"
+        },
+        {
+          "text": "第一",
+          "pinyin": "dìyī",
+          "hanviet": "Đệ Nhất",
+          "hsk": 2,
+          "word_id": "hsk2_22",
+          "meaning_vi": "thứ nhất"
+        },
+        {
+          "text": "饭局",
+          "pinyin": "fàn jú",
+          "hanviet": "Phạn Cục"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "席间谋士范增屡次举起佩玉示意项羽下令动手，大将项庄借口舞剑助兴，意图刺杀刘邦，留下了‘项庄舞剑，意在沛公’的千古名言。",
+      "pinyin": "Xíjiān móushì Fàn Zēng lǚcì jǔqǐ pèiyù shìyì Xiàng Yǔ xiàlìng dòngshǒu, dàjiàng Xiàng Zhuāng jièkǒu wǔjiàn zhùxìng, yìtú cìshā Liú Bāng, liúxià le ‘Xiàng Zhuāng wǔjiàn, yì zài Pèigōng’ de qiāngǔ míngyán.",
+      "vi": "Quân sư Phạm Tăng liên tục giơ ngọc quyết ra hiệu hạ sát, Hạng Trang mượn cớ múa kiếm giúp vui hòng ám hại Lưu Bang, để lại câu châm ngôn ngàn đời.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "席间",
+          "pinyin": "xí jiān",
+          "hanviet": "Tịch Gian"
+        },
+        {
+          "text": "谋士",
+          "pinyin": "móu shì",
+          "hanviet": "Mưu Sĩ"
+        },
+        {
+          "text": "范增",
+          "pinyin": "fàn zēng",
+          "hanviet": "Phạm Tăng"
+        },
+        {
+          "text": "屡次",
+          "pinyin": "lǚcì",
+          "hanviet": "Lũ Thứ",
+          "hsk": 7,
+          "word_id": "hsk7_2691",
+          "meaning_vi": "nhiều lần, lặp đi lặp lại"
+        },
+        {
+          "text": "举起",
+          "pinyin": "jǔ qǐ",
+          "hanviet": "Cử Khởi"
+        },
+        {
+          "text": "佩玉",
+          "pinyin": "pèi yù",
+          "hanviet": "Bội Ngọc"
+        },
+        {
+          "text": "示意",
+          "pinyin": "shìyì",
+          "hanviet": "Thị Ý",
+          "hsk": 7,
+          "word_id": "hsk7_3714",
+          "meaning_vi": "ra dấu hiệu, ngụ ý"
+        },
+        {
+          "text": "项羽",
+          "pinyin": "xiàng yǔ",
+          "hanviet": "Hạng Vũ"
+        },
+        {
+          "text": "下令",
+          "pinyin": "xiàlìng",
+          "hanviet": "Hạ Lệnh",
+          "hsk": 7,
+          "word_id": "hsk7_4415",
+          "meaning_vi": "thứ tự"
+        },
+        {
+          "text": "动手",
+          "pinyin": "dòngshǒu",
+          "hanviet": "Động Thủ",
+          "hsk": 5,
+          "word_id": "hsk5_292",
+          "meaning_vi": "ra tay, bắt tay vào làm"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "大将",
+          "pinyin": "dà jiàng",
+          "hanviet": "Đại Tướng"
+        },
+        {
+          "text": "项庄",
+          "pinyin": "xiàng zhuāng",
+          "hanviet": "Hạng Trang"
+        },
+        {
+          "text": "借口",
+          "pinyin": "jièkǒu",
+          "hanviet": "Tá Khẩu",
+          "hsk": 7,
+          "word_id": "hsk7_2118",
+          "meaning_vi": "cái cớ"
+        },
+        {
+          "text": "舞剑",
+          "pinyin": "wǔ jiàn",
+          "hanviet": "Vũ Kiếm"
+        },
+        {
+          "text": "助兴",
+          "pinyin": "zhù xìng",
+          "hanviet": "Trợ Hưng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "意图",
+          "pinyin": "yìtú",
+          "hanviet": "Ý Đồ",
+          "hsk": 7,
+          "word_id": "hsk7_4882",
+          "meaning_vi": "ý đồ"
+        },
+        {
+          "text": "刺杀",
+          "pinyin": "cì shā",
+          "hanviet": "Thích Sát"
+        },
+        {
+          "text": "刘邦",
+          "pinyin": "liú bāng",
+          "hanviet": "Lưu Bang"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "留下",
+          "pinyin": "liúxia",
+          "hanviet": "Lưu Hạ",
+          "hsk": 4,
+          "word_id": "hsk4_485",
+          "meaning_vi": "để lại; ở lại"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "项庄舞剑",
+          "pinyin": "xiàng zhuāng wǔ jiàn",
+          "hanviet": "Hạng Trang Vũ Kiếm"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "意在沛公",
+          "pinyin": "yì zài pèi gōng",
+          "hanviet": "Ý Tại Bái Công"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "千古",
+          "pinyin": "qiān gǔ",
+          "hanviet": "Thiên Cổ"
+        },
+        {
+          "text": "名言",
+          "pinyin": "míngyán",
+          "hanviet": "Danh Ngôn",
+          "hsk": 7,
+          "word_id": "hsk7_2847",
+          "meaning_vi": "câu nói nổi tiếng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "刘邦的大将樊哙持盾握剑闯入大帐义正词严怒斥项羽，刘邦随后借口如厕脱身返回汉军大营。",
+      "pinyin": "Liú Bāng de dàjiàng Fán Kuài chídùn wòjiàn chuǎngrù dàzhàng yìzhèng-cíyán nùchì Xiàng Yǔ, Liú Bāng suíhòu jièkǒu rúcè tuōshēn fǎnhuí Hànjūn dàyíng.",
+      "vi": "Dũng tướng Phàn Khoái ôm khiên cầm gươm xông thẳng vào trướng quát lớn, Lưu Bang liền mượn cớ đi vệ sinh trốn thoát về doanh trại.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "刘邦",
+          "pinyin": "liú bāng",
+          "hanviet": "Lưu Bang"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "大将",
+          "pinyin": "dà jiàng",
+          "hanviet": "Đại Tướng"
+        },
+        {
+          "text": "樊哙",
+          "pinyin": "fán kuài",
+          "hanviet": "Phiền Khoái"
+        },
+        {
+          "text": "持盾",
+          "pinyin": "chí dùn",
+          "hanviet": "Trì Thuẫn"
+        },
+        {
+          "text": "握",
+          "pinyin": "wò",
+          "hanviet": "Ác",
+          "hsk": 5,
+          "word_id": "hsk5_1203",
+          "meaning_vi": "nắm, cầm (tay)"
+        },
+        {
+          "text": "剑",
+          "pinyin": "jiàn",
+          "hanviet": "Kiếm",
+          "hsk": 6,
+          "word_id": "hsk6_657",
+          "meaning_vi": "thanh kiếm, gươm"
+        },
+        {
+          "text": "闯入",
+          "pinyin": "chuǎng rù",
+          "hanviet": "Sấm Nhập"
+        },
+        {
+          "text": "大帐",
+          "pinyin": "dà zhàng",
+          "hanviet": "Đại Trướng"
+        },
+        {
+          "text": "义正词严",
+          "pinyin": "yì zhèng cí yán",
+          "hanviet": "Nghĩa Chinh Từ Nghiêm"
+        },
+        {
+          "text": "怒斥",
+          "pinyin": "nù chì",
+          "hanviet": "Nộ Xích"
+        },
+        {
+          "text": "项羽",
+          "pinyin": "xiàng yǔ",
+          "hanviet": "Hạng Vũ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "刘邦",
+          "pinyin": "liú bāng",
+          "hanviet": "Lưu Bang"
+        },
+        {
+          "text": "随后",
+          "pinyin": "suíhòu",
+          "hanviet": "Tuỳ Hậu",
+          "hsk": 5,
+          "word_id": "hsk5_1089",
+          "meaning_vi": "sau đó, tiếp theo đó"
+        },
+        {
+          "text": "借口",
+          "pinyin": "jièkǒu",
+          "hanviet": "Tá Khẩu",
+          "hsk": 7,
+          "word_id": "hsk7_2118",
+          "meaning_vi": "cái cớ"
+        },
+        {
+          "text": "如厕",
+          "pinyin": "rú cè",
+          "hanviet": "Như Xí"
+        },
+        {
+          "text": "脱身",
+          "pinyin": "tuōshēn",
+          "hanviet": "Thoát Thân",
+          "hsk": 7,
+          "word_id": "hsk7_4155",
+          "meaning_vi": "dứt ra được; thoát thân; rút lui"
+        },
+        {
+          "text": "返回",
+          "pinyin": "fǎnhuí",
+          "hanviet": "Phản Hồi",
+          "hsk": 5,
+          "word_id": "hsk5_333",
+          "meaning_vi": "trở về, quay lại"
+        },
+        {
+          "text": "汉军",
+          "pinyin": "hàn jūn",
+          "hanviet": "Hán Quân"
+        },
+        {
+          "text": "大营",
+          "pinyin": "dà yíng",
+          "hanviet": "Đại Doanh"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "项羽的犹豫不决让他错失了除掉对手的最佳时机，最终在四年后的垓下之战中兵败自刎，改变了历史走向。",
+      "pinyin": "Xiàng Yǔ de yóuyù-bùjué ràng tā cuòshī le chúdiào duìshǒu de zuìjiā shíjī, zuìzhōng zài sì nián hòu de Gāixià zhī zhàn zhōng bīngbài zìwěn, gǎibiàn le lìshǐ zǒuxiàng.",
+      "vi": "Sự do dự của Hạng Vũ khiến ông bỏ lỡ cơ hội ngàn vàng, để rồi 4 năm sau bại trận tại Cai Hạ phải tự vẫn, đổi thay dòng chảy lịch sử.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "项羽",
+          "pinyin": "xiàng yǔ",
+          "hanviet": "Hạng Vũ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "犹豫不决",
+          "pinyin": "yóuyù-bùjué",
+          "hanviet": "Do Dự Bất Quyết",
+          "hsk": 7,
+          "word_id": "hsk7_4979",
+          "meaning_vi": "do dự không quyết, chần chừ lưỡng lự"
+        },
+        {
+          "text": "让",
+          "pinyin": "ràng",
+          "hanviet": "Nhượng",
+          "hsk": 2,
+          "word_id": "hsk2_422",
+          "meaning_vi": "để cho, khiến"
+        },
+        {
+          "text": "他",
+          "pinyin": "tā",
+          "hanviet": "Tha",
+          "hsk": 1,
+          "word_id": "hsk1_286",
+          "meaning_vi": "anh ấy, nó"
+        },
+        {
+          "text": "错失",
+          "pinyin": "cuò shī",
+          "hanviet": "Thác Thất"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "除掉",
+          "pinyin": "chú diào",
+          "hanviet": "Trừ Điệu"
+        },
+        {
+          "text": "对手",
+          "pinyin": "duìshǒu",
+          "hanviet": "Đối Thủ",
+          "hsk": 5,
+          "word_id": "hsk5_307",
+          "meaning_vi": "đối thủ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "最佳时机",
+          "pinyin": "zuì jiā shí jī",
+          "hanviet": "Tối Giai Thời Cơ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "最终",
+          "pinyin": "zuìzhōng",
+          "hanviet": "Tối Chung",
+          "hsk": 4,
+          "word_id": "hsk4_988",
+          "meaning_vi": "cuối cùng"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "四年",
+          "pinyin": "sì nián",
+          "hanviet": "Tứ Niên"
+        },
+        {
+          "text": "后",
+          "pinyin": "hòu",
+          "hanviet": "Hậu",
+          "hsk": 1,
+          "word_id": "hsk1_524",
+          "meaning_vi": "sau"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "垓下",
+          "pinyin": "gāi xià",
+          "hanviet": "Cai Hạ"
+        },
+        {
+          "text": "之战",
+          "pinyin": "zhī zhàn",
+          "hanviet": "Chi Chiến"
+        },
+        {
+          "text": "中兵败",
+          "pinyin": "zhōng bīng bài",
+          "hanviet": "Trung Binh Bại"
+        },
+        {
+          "text": "自刎",
+          "pinyin": "zì wěn",
+          "hanviet": "Tự Vẫn"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "改变",
+          "pinyin": "gǎibiàn",
+          "hanviet": "Cải Biến",
+          "hsk": 4,
+          "word_id": "hsk4_219",
+          "meaning_vi": "thay đổi"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "历史",
+          "pinyin": "lìshǐ",
+          "hanviet": "Lịch Sử",
+          "hsk": 3,
+          "word_id": "hsk3_831",
+          "meaning_vi": "lịch sử"
+        },
+        {
+          "text": "走向",
+          "pinyin": "zǒuxiàng",
+          "hanviet": "Tẩu Hướng",
+          "hsk": 7,
+          "word_id": "hsk7_5557",
+          "meaning_vi": "về phía"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk4_562",
+    "hsk7_2118",
+    "hsk4_219",
+    "hsk3_831"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Câu thành ngữ kinh điển nào bắt nguồn từ bữa tiệc Hồng Môn Yến?",
+      "options_vi": [
+        "Hạng Trang vũ kiếm, ý tại Bái Công (项庄舞剑，意在沛公)",
+        "Họa hổ họa bì",
+        "Đục tường trộm ánh sáng"
+      ],
+      "answer": 0,
+      "explanation_vi": "Hạng Trang múa kiếm bề ngoài là biểu diễn giúp vui nhưng thâm ý là ám sát Lưu Bang (Bái Công)."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Viên dũng tướng nào đã dũng cảm cầm khiên xông vào trướng che chở cho Lưu Bang?",
+      "options_vi": [
+        "Phàn Khoái (樊哙)",
+        "Hàn Tín",
+        "Trương Lương"
+      ],
+      "answer": 0,
+      "explanation_vi": "Phàn Khoái xông vào uống cạn bát rượu lớn, ăn thịt sống khí thế ngất trời cản trở kế sát hại."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Sai lầm chí mạng của Hạng Vũ trong bữa tiệc Hồng Môn là gì?",
+      "options_vi": [
+        "Do dự nhu nhược không quyết đoán hạ thủ, để Lưu Bang tìm cớ trốn thoát",
+        "Uống say ngủ quên",
+        "Làm mất thanh gươm quý"
+      ],
+      "answer": 0,
+      "explanation_vi": "Hạng Vũ không nghe lời Phạm Tăng, thả Lưu Bang về dẫn tới thất bại mất thiên hạ sau này."
+    }
+  ]
+}

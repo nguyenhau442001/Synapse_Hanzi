@@ -1,0 +1,838 @@
+{
+  "id": "wanwu_story_078",
+  "chapter_no": 78,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 4,
+  "book_page_start": 804,
+  "book_page_end": 810,
+  "page_display": "Trang 804 - 810",
+  "title": {
+    "zh": "胭脂稻：粒粒贵如金的“御稻米”",
+    "vi": "Lúa Yên Chi: Hạt ngọc đỏ quý hơn vàng của hoàng cung"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🌾",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_078.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_078.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 804 - 810 · Giống lúa gạo hạt đỏ ngát hương được trồng tại chân núi Ngọc Tuyền dành riêng cho bữa ăn hoàng đế.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "清代古典文学名著《红楼梦》中，贾府贾母餐桌上常常出现一种珍贵无比的‘红稻米粥’。",
+      "pinyin": "Qīngdài gǔdiǎn wénxué míngzhù 《Hónglóumèng》 zhōng, Jiǎfǔ Jiǎmǔ cānzhuō shàng chángcháng chūxiàn yì zhǒng zhēnguì wūbǐ de ‘hóngdàomǐzhōu’.",
+      "vi": "Trong kiệt tác văn học 'Hồng Lâu Mộng', trên bàn ăn của Giả mẫu thường xuất hiện món cháo 'Hồng Đạo Mễ' quý hiếm vô song.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "清代",
+          "pinyin": "qīng dài",
+          "hanviet": "Thanh Đại"
+        },
+        {
+          "text": "古典文学",
+          "pinyin": "gǔ diǎn wén xué",
+          "hanviet": "Cổ Điển Văn Học"
+        },
+        {
+          "text": "名著",
+          "pinyin": "míngzhù",
+          "hanviet": "Danh Trước",
+          "hsk": 7,
+          "word_id": "hsk7_2851",
+          "meaning_vi": "kiệt tác; tác phẩm nổi tiếng"
+        },
+        {
+          "text": "《"
+        },
+        {
+          "text": "红楼梦",
+          "pinyin": "hóng lóu mèng",
+          "hanviet": "Hồng Lâu Mộng"
+        },
+        {
+          "text": "》"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "贾府",
+          "pinyin": "jiǎ fǔ",
+          "hanviet": "Giả Phủ"
+        },
+        {
+          "text": "贾母",
+          "pinyin": "jiǎ mǔ",
+          "hanviet": "Giả Mẫu"
+        },
+        {
+          "text": "餐桌上",
+          "pinyin": "cān zhuō shàng",
+          "hanviet": "Xan Trác Thướng"
+        },
+        {
+          "text": "常常",
+          "pinyin": "chángcháng",
+          "hanviet": "Thường Thường",
+          "hsk": 3,
+          "word_id": "hsk3_655",
+          "meaning_vi": "thường thường, thường xuyên"
+        },
+        {
+          "text": "出现",
+          "pinyin": "chūxiàn",
+          "hanviet": "Xuất Hiện",
+          "hsk": 4,
+          "word_id": "hsk4_90",
+          "meaning_vi": "xuất hiện"
+        },
+        {
+          "text": "一种",
+          "pinyin": "yī zhǒng",
+          "hanviet": "Nhất Chủng"
+        },
+        {
+          "text": "珍贵",
+          "pinyin": "zhēnguì",
+          "hanviet": "Trân Quý",
+          "hsk": 5,
+          "word_id": "hsk5_1483",
+          "meaning_vi": "quý giá"
+        },
+        {
+          "text": "无比",
+          "pinyin": "wúbǐ",
+          "hanviet": "Vô Tỷ",
+          "hsk": 7,
+          "word_id": "hsk7_4301",
+          "meaning_vi": "vô cùng, không gì sánh được"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "红",
+          "pinyin": "hóng",
+          "hanviet": "Hồng",
+          "hsk": 5,
+          "word_id": "hsk5_483",
+          "meaning_vi": "đỏ"
+        },
+        {
+          "text": "稻米",
+          "pinyin": "dào mǐ",
+          "hanviet": "Đạo Mễ"
+        },
+        {
+          "text": "粥",
+          "pinyin": "zhōu",
+          "hanviet": "Dục",
+          "hsk": 6,
+          "word_id": "hsk6_1737",
+          "meaning_vi": "cháo"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "这种米粒色泽微红如胭脂、煮熟后香气扑鼻的特种水稻，便是名闻遐迩的‘胭脂稻’。",
+      "pinyin": "Zhè zhǒng mǐlì sèzé wēihóng rú yānzhi, zhǔshú hòu xiāngqì-pūbí de tèzhǒng shuǐdào, biàn shì míngwén-xiá'ěr de ‘Yānzhidào’.",
+      "vi": "Hạt gạo có sắc đỏ hồng phảng phất như phấn yên chi, khi nấu chín tỏa hương thơm ngào ngạt, đó chính là giống 'Lúa Yên Chi' nức tiếng.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "这种",
+          "pinyin": "zhè zhǒng",
+          "hanviet": "Giá Chủng"
+        },
+        {
+          "text": "米粒",
+          "pinyin": "mǐ lì",
+          "hanviet": "Mễ Lạp"
+        },
+        {
+          "text": "色泽",
+          "pinyin": "sè zé",
+          "hanviet": "Sắc Trạch"
+        },
+        {
+          "text": "微红如",
+          "pinyin": "wēi hóng rú",
+          "hanviet": "Vi Hồng Như"
+        },
+        {
+          "text": "胭脂",
+          "pinyin": "yān zhī",
+          "hanviet": "Yên Chi"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "煮熟",
+          "pinyin": "zhǔ shú",
+          "hanviet": "Chử Thục"
+        },
+        {
+          "text": "后",
+          "pinyin": "hòu",
+          "hanviet": "Hậu",
+          "hsk": 1,
+          "word_id": "hsk1_524",
+          "meaning_vi": "sau"
+        },
+        {
+          "text": "香气扑鼻",
+          "pinyin": "xiāng qì pū bí",
+          "hanviet": "Hương Khí Phác Tỵ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "特种",
+          "pinyin": "tè zhǒng",
+          "hanviet": "Đặc Chủng"
+        },
+        {
+          "text": "水稻",
+          "pinyin": "shuǐdào",
+          "hanviet": "Thuỷ Đạo",
+          "hsk": 6,
+          "word_id": "hsk6_1233",
+          "meaning_vi": "lúa nước"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "便是",
+          "pinyin": "biàn shì",
+          "hanviet": "Tiện Thị"
+        },
+        {
+          "text": "名闻遐迩",
+          "pinyin": "míng wén xiá ěr",
+          "hanviet": "Danh Văn Hà Nhĩ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "胭脂",
+          "pinyin": "yān zhī",
+          "hanviet": "Yên Chi"
+        },
+        {
+          "text": "稻",
+          "pinyin": "dào",
+          "hanviet": "Đạo"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "相传康熙皇帝在京郊玉泉山行宫巡视农田时偶然发现了这种天然红穗稻谷，并亲自在御田中培育推广。",
+      "pinyin": "Xiāngchuán Kāngxī huángdì zài jīngjiāo Yùquánshān xínggōng xúnshì nóngtián shí ǒurán fāxiàn le zhè zhǒng tiānrán hóngsuì dàogǔ, bìng qīnzì zài yùtián zhōng péiyù tuīguǎng.",
+      "vi": "Tương truyền vua Khang Hy khi tuần du ruộng đồng chân núi Ngọc Tuyền tình cờ phát hiện nhánh lúa trổ bông đỏ tự nhiên và đích thân nhân giống.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "相传",
+          "pinyin": "xiāngchuán",
+          "hanviet": "Tương Truyền",
+          "hsk": 6,
+          "word_id": "hsk6_1436",
+          "meaning_vi": "tương truyền, theo truyền thuyết"
+        },
+        {
+          "text": "康熙皇帝",
+          "pinyin": "kāng xī huáng dì",
+          "hanviet": "Khang Hy Hoàng Đế"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "京郊",
+          "pinyin": "jīng jiāo",
+          "hanviet": "Kinh Giao"
+        },
+        {
+          "text": "玉泉山",
+          "pinyin": "yù quán shān",
+          "hanviet": "Ngọc Tuyền Sơn"
+        },
+        {
+          "text": "行宫",
+          "pinyin": "xíng gōng",
+          "hanviet": "Hành Cung"
+        },
+        {
+          "text": "巡视",
+          "pinyin": "xúnshì",
+          "hanviet": "Tuần Thị",
+          "hsk": 7,
+          "word_id": "hsk7_4700",
+          "meaning_vi": "tuần tra kiểm tra; tuần thị"
+        },
+        {
+          "text": "农田",
+          "pinyin": "nóngtián",
+          "hanviet": "Nông Điền",
+          "hsk": 6,
+          "word_id": "hsk6_962",
+          "meaning_vi": "đất nông nghiệp"
+        },
+        {
+          "text": "时",
+          "pinyin": "shí",
+          "hanviet": "Thời",
+          "hsk": 2,
+          "word_id": "hsk2_431",
+          "meaning_vi": "thời gian (danh từ, số lượng)"
+        },
+        {
+          "text": "偶然",
+          "pinyin": "ǒurán",
+          "hanviet": "Ngẫu Nhiên",
+          "hsk": 5,
+          "word_id": "hsk5_809",
+          "meaning_vi": "ngẫu nhiên, bất ngờ"
+        },
+        {
+          "text": "发现",
+          "pinyin": "fāxiàn",
+          "hanviet": "Phát Hiện",
+          "hsk": 3,
+          "word_id": "hsk3_712",
+          "meaning_vi": "phát hiện"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "这种",
+          "pinyin": "zhè zhǒng",
+          "hanviet": "Giá Chủng"
+        },
+        {
+          "text": "天然",
+          "pinyin": "tiānrán",
+          "hanviet": "Thiên Nhiên",
+          "hsk": 6,
+          "word_id": "hsk6_1290",
+          "meaning_vi": "tự nhiên"
+        },
+        {
+          "text": "红穗",
+          "pinyin": "hóng suì",
+          "hanviet": "Hồng Tuệ"
+        },
+        {
+          "text": "稻谷",
+          "pinyin": "jī’è",
+          "hanviet": "Cơ Ngạ",
+          "hsk": 6,
+          "word_id": "hsk6_606",
+          "meaning_vi": "đói khát"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "并",
+          "pinyin": "bìng",
+          "hanviet": "Tinh",
+          "hsk": 4,
+          "word_id": "hsk4_39",
+          "meaning_vi": "và, đồng thời; hoàn toàn (không)"
+        },
+        {
+          "text": "亲自",
+          "pinyin": "qīnzì",
+          "hanviet": "Thân Tự",
+          "hsk": 5,
+          "word_id": "hsk5_884",
+          "meaning_vi": "tự mình, đích thân"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "御",
+          "pinyin": "yù",
+          "hanviet": "Ngự"
+        },
+        {
+          "text": "田中",
+          "pinyin": "tián zhōng",
+          "hanviet": "Điền Trung"
+        },
+        {
+          "text": "培育",
+          "pinyin": "péiyù",
+          "hanviet": "Bồi Dục",
+          "hsk": 6,
+          "word_id": "hsk6_977",
+          "meaning_vi": "bồi dưỡng, nuôi dưỡng"
+        },
+        {
+          "text": "推广",
+          "pinyin": "tuīguǎng",
+          "hanviet": "Suy Nghiễm",
+          "hsk": 5,
+          "word_id": "hsk5_1159",
+          "meaning_vi": "quảng bá, phổ biến rộng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "由于对土壤、清泉水质和气候条件的要求极其苛刻，胭脂稻产量极低，历来专供皇室享用。",
+      "pinyin": "Yóuyú duì tǔrǎng, qīngquán shuǐzhì hé qìhòu tiáojiàn de yāoqiú jíqí kēkè, Yānzhidào chǎnliàng jí dī, lìlái zhuāngōng huángshì xiǎngyòng.",
+      "vi": "Do đòi hỏi nghiêm ngặt về đất đai, nguồn nước suối trong và khí hậu, sản lượng lúa rất thấp, xưa kia chỉ dành riêng cho hoàng thất thưởng thức.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "由于",
+          "pinyin": "yóuyú",
+          "hanviet": "Do Vu",
+          "hsk": 4,
+          "word_id": "hsk4_888",
+          "meaning_vi": "do, vì"
+        },
+        {
+          "text": "对",
+          "pinyin": "duì",
+          "hanviet": "Đối",
+          "hsk": 1,
+          "word_id": "hsk1_79",
+          "meaning_vi": "đối với, hướng về (giới từ)"
+        },
+        {
+          "text": "土壤",
+          "pinyin": "tǔrǎng",
+          "hanviet": "Thổ Nhưỡng",
+          "hsk": 6,
+          "word_id": "hsk6_1334",
+          "meaning_vi": "đất, thổ nhưỡng"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "清泉",
+          "pinyin": "qīng quán",
+          "hanviet": "Thanh Tuyền"
+        },
+        {
+          "text": "水质",
+          "pinyin": "shuǐ zhì",
+          "hanviet": "Thuỷ Chất"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "气候",
+          "pinyin": "qìhòu",
+          "hanviet": "Khí Hậu",
+          "hsk": 4,
+          "word_id": "hsk4_571",
+          "meaning_vi": "khí hậu"
+        },
+        {
+          "text": "条件",
+          "pinyin": "tiáojiàn",
+          "hanviet": "Điều Kiện",
+          "hsk": 4,
+          "word_id": "hsk4_736",
+          "meaning_vi": "điều kiện"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "要求",
+          "pinyin": "yāoqiú",
+          "hanviet": "Yêu Cầu",
+          "hsk": 3,
+          "word_id": "hsk3_999",
+          "meaning_vi": "yêu cầu"
+        },
+        {
+          "text": "极其",
+          "pinyin": "jíqí",
+          "hanviet": "Cực Kì/cực Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_533",
+          "meaning_vi": "cực kỳ, hết sức"
+        },
+        {
+          "text": "苛刻",
+          "pinyin": "kēkè",
+          "hanviet": "Hà Khắc",
+          "hsk": 7,
+          "word_id": "hsk7_2340",
+          "meaning_vi": "khắt khe, cay nghiệt, nghiệt ngã"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "胭脂",
+          "pinyin": "yān zhī",
+          "hanviet": "Yên Chi"
+        },
+        {
+          "text": "稻",
+          "pinyin": "dào",
+          "hanviet": "Đạo"
+        },
+        {
+          "text": "产量",
+          "pinyin": "chǎnliàng",
+          "hanviet": "Sản Lượng",
+          "hsk": 5,
+          "word_id": "hsk5_105",
+          "meaning_vi": "sản lượng"
+        },
+        {
+          "text": "极低",
+          "pinyin": "jí dī",
+          "hanviet": "Cực Đê"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "历来",
+          "pinyin": "lìlái",
+          "hanviet": "Lịch Lai",
+          "hsk": 7,
+          "word_id": "hsk7_2552",
+          "meaning_vi": "từ trước đến nay"
+        },
+        {
+          "text": "专供",
+          "pinyin": "zhuān gōng",
+          "hanviet": "Chuyên Cung"
+        },
+        {
+          "text": "皇室",
+          "pinyin": "huángshì",
+          "hanviet": "Hoàng Thất",
+          "hsk": 7,
+          "word_id": "hsk7_1770",
+          "meaning_vi": "hoàng gia, hoàng thất"
+        },
+        {
+          "text": "享用",
+          "pinyin": "xiǎngyòng",
+          "hanviet": "Hưởng Dụng",
+          "hsk": 7,
+          "word_id": "hsk7_4484",
+          "meaning_vi": "thưởng thức; tận hưởng (ẩm thực, tiện ích)"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "今天农业科研人员采用现代生态育种技术成功复原了这一古老稻种，让昔日宫廷御米重归寻常人间。",
+      "pinyin": "Jīntiān nóngyè kēyán rényuán cǎiyòng xiàndài shēngtài yùzhǒng jìshù chénggōng fùyuán le zhè yí gǔlǎo dàozhǒng, ràng xīrì gōngtíng yùmǐ chóngguī xúncháng rénjiān.",
+      "vi": "Ngày nay các nhà khoa học nông nghiệp đã phục tráng thành công giống lúa quý này, đưa hạt ngọc cung đình xưa trở lại bàn ăn cuộc sống.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "今天",
+          "pinyin": "jīntiān",
+          "hanviet": "Kim Thiên",
+          "hsk": 1,
+          "word_id": "hsk1_144",
+          "meaning_vi": "hôm nay"
+        },
+        {
+          "text": "农业",
+          "pinyin": "nóngyè",
+          "hanviet": "Nông Nghiệp",
+          "hsk": 5,
+          "word_id": "hsk5_805",
+          "meaning_vi": "nông nghiệp"
+        },
+        {
+          "text": "科研人员",
+          "pinyin": "kē yán rén yuán",
+          "hanviet": "Khoa Nghiên Nhân Viên"
+        },
+        {
+          "text": "采用",
+          "pinyin": "cǎiyòng",
+          "hanviet": "Thái Dụng",
+          "hsk": 5,
+          "word_id": "hsk5_88",
+          "meaning_vi": "áp dụng, sử dụng"
+        },
+        {
+          "text": "现代",
+          "pinyin": "xiàndài",
+          "hanviet": "Hiện Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1239",
+          "meaning_vi": "hiện đại"
+        },
+        {
+          "text": "生态",
+          "pinyin": "shēngtài",
+          "hanviet": "Sinh Thái",
+          "hsk": 6,
+          "word_id": "hsk6_1173",
+          "meaning_vi": "sinh thái"
+        },
+        {
+          "text": "育种",
+          "pinyin": "yù zhǒng",
+          "hanviet": "Dục Chủng"
+        },
+        {
+          "text": "技术",
+          "pinyin": "jìshù",
+          "hanviet": "Kĩ Thuật/kỹ Thuật",
+          "hsk": 4,
+          "word_id": "hsk4_331",
+          "meaning_vi": "kỹ thuật"
+        },
+        {
+          "text": "成功",
+          "pinyin": "chénggōng",
+          "hanviet": "Thành Công",
+          "hsk": 4,
+          "word_id": "hsk4_79",
+          "meaning_vi": "thành công"
+        },
+        {
+          "text": "复原",
+          "pinyin": "fùyuán",
+          "hanviet": "Phục Nguyên",
+          "hsk": 7,
+          "word_id": "hsk7_1270",
+          "meaning_vi": "phục hồi nguyên trạng, bình phục"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "这",
+          "pinyin": "zhè",
+          "hanviet": "Giá",
+          "hsk": 1,
+          "word_id": "hsk1_401",
+          "meaning_vi": "này"
+        },
+        {
+          "text": "一",
+          "pinyin": "yī",
+          "hanviet": "Nhất",
+          "hsk": 1,
+          "word_id": "hsk1_360",
+          "meaning_vi": "một"
+        },
+        {
+          "text": "古老",
+          "pinyin": "gǔlǎo",
+          "hanviet": "Cổ Lão",
+          "hsk": 5,
+          "word_id": "hsk5_425",
+          "meaning_vi": "cổ xưa"
+        },
+        {
+          "text": "稻种",
+          "pinyin": "dào zhǒng",
+          "hanviet": "Đạo Chủng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "让",
+          "pinyin": "ràng",
+          "hanviet": "Nhượng",
+          "hsk": 2,
+          "word_id": "hsk2_422",
+          "meaning_vi": "để cho, khiến"
+        },
+        {
+          "text": "昔日",
+          "pinyin": "xīrì",
+          "hanviet": "Tích Nhật",
+          "hsk": 7,
+          "word_id": "hsk7_4374",
+          "meaning_vi": "ngày xưa"
+        },
+        {
+          "text": "宫廷",
+          "pinyin": "gōngtíng",
+          "hanviet": "Cung Đình",
+          "hsk": 7,
+          "word_id": "hsk7_1399",
+          "meaning_vi": "cung đình, hoàng cung"
+        },
+        {
+          "text": "御米",
+          "pinyin": "yù mǐ",
+          "hanviet": "Ngự Mễ"
+        },
+        {
+          "text": "重归",
+          "pinyin": "zhòng guī",
+          "hanviet": "Trọng Quy"
+        },
+        {
+          "text": "寻常",
+          "pinyin": "xúncháng",
+          "hanviet": "Tầm Thường",
+          "hsk": 7,
+          "word_id": "hsk7_4696",
+          "meaning_vi": "bình thường; tầm thường"
+        },
+        {
+          "text": "人间",
+          "pinyin": "rénjiān",
+          "hanviet": "Nhân Gian",
+          "hsk": 7,
+          "word_id": "hsk7_3406",
+          "meaning_vi": "nhân gian, trần gian"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk2_374",
+    "hsk3_712",
+    "hsk3_999",
+    "hsk4_79"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Món cháo gạo đỏ quý hiếm trong tác phẩm 'Hồng Lâu Mộng' nấu từ loại gạo nào?",
+      "options_vi": [
+        "Gạo Yên Chi (胭脂米 / 胭脂稻)",
+        "Gạo nếp cẩm thường",
+        "Gạo lứt đỏ mua chợ"
+      ],
+      "answer": 0,
+      "explanation_vi": "Cháo Hồng Đạo Mễ của Giả mẫu được nấu từ giống gạo Yên Chi tiến vua."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Vị hoàng đế nào thời Thanh đã tình cờ phát hiện nhánh lúa đỏ này ở ngoại ô Bắc Kinh?",
+      "options_vi": [
+        "Hoàng đế Khang Hy (康熙)",
+        "Càn Long",
+        "Gia Khánh"
+      ],
+      "answer": 0,
+      "explanation_vi": "Khang Hy phát hiện giống lúa đỏ tại Ngọc Tuyền Sơn và cho gieo trồng trong ngự điền."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Tại sao gạo Yên Chi thời phong kiến lại cực kỳ hiếm và đắt đỏ?",
+      "options_vi": [
+        "Kén chọn nguồn nước suối tinh khiết và khí hậu đặc thù, sản lượng rất ít",
+        "Vì hạt gạo làm bằng thủy tinh",
+        "Vì cây lúa chỉ mọc vào mùa đông"
+      ],
+      "answer": 0,
+      "explanation_vi": "Lúa Yên Chi đòi hỏi thổ nhưỡng khắt khe nên sản lượng rất khan hiếm, chỉ hoàng tộc mới có."
+    }
+  ]
+}

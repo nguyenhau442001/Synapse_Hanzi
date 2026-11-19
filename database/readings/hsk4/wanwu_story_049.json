@@ -1,0 +1,814 @@
+{
+  "id": "wanwu_story_049",
+  "chapter_no": 49,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 3,
+  "book_page_start": 507,
+  "book_page_end": 519,
+  "page_display": "Trang 507 - 519",
+  "title": {
+    "zh": "铁路：“一日千里”艰辛路",
+    "vi": "Đường sắt: Hành trình 'ngày đi ngàn dặm' gian nan"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🚂",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_049.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_049.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 507 - 519 · Tuyến đường sắt Bắc Kinh - Trương Gia Khẩu tự thiết kế đầu tiên của kỹ sư Chiêm Thiên Hữu với đường ray hình chữ Nhân.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "十九世纪蒸汽火车的轰鸣声，开启了人类陆地交通高速飞奔的新时代。",
+      "pinyin": "Shíjiǔ shìjì zhēngqì huǒchē de hōngmíngshēng, kāiqǐ le rénlèi lùdì jiāotōng gāosù fēibēn de xīn shídài.",
+      "vi": "Tiếng còi tàu hỏa hơi nước thế kỷ 19 đã mở ra kỷ nguyên mới cho giao thông mặt đất với tốc độ phi nước đại.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "十九世纪",
+          "pinyin": "shí jiǔ shì jì",
+          "hanviet": "Thập Cửu Thế Kỷ"
+        },
+        {
+          "text": "蒸汽",
+          "pinyin": "zhēng qì",
+          "hanviet": "Chưng Khí"
+        },
+        {
+          "text": "火车",
+          "pinyin": "huǒchē",
+          "hanviet": "Hoả Xa",
+          "hsk": 1,
+          "word_id": "hsk1_525",
+          "meaning_vi": "xe lửa"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "轰鸣声",
+          "pinyin": "hōng míng shēng",
+          "hanviet": "Oanh Minh Thanh"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "开启",
+          "pinyin": "kāiqǐ",
+          "hanviet": "Khai Khởi",
+          "hsk": 6,
+          "word_id": "hsk6_763",
+          "meaning_vi": "mở ra, khởi đầu (kỷ nguyên mới, hành trình mới)"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "人类",
+          "pinyin": "rénlèi",
+          "hanviet": "Nhân Loại",
+          "hsk": 5,
+          "word_id": "hsk5_921",
+          "meaning_vi": "loài người, nhân loại"
+        },
+        {
+          "text": "陆地",
+          "pinyin": "lùdì",
+          "hanviet": "Lục Địa",
+          "hsk": 5,
+          "word_id": "hsk5_739",
+          "meaning_vi": "đất liền"
+        },
+        {
+          "text": "交通",
+          "pinyin": "jiāotōng",
+          "hanviet": "Giao Thông",
+          "hsk": 4,
+          "word_id": "hsk4_372",
+          "meaning_vi": "giao thông"
+        },
+        {
+          "text": "高速",
+          "pinyin": "gāosù",
+          "hanviet": "Cao Tốc",
+          "hsk": 4,
+          "word_id": "hsk4_238",
+          "meaning_vi": "cao tốc, tốc độ cao"
+        },
+        {
+          "text": "飞奔",
+          "pinyin": "fēi bēn",
+          "hanviet": "Phi Bôn"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "新",
+          "pinyin": "xīn",
+          "hanviet": "Tân",
+          "hsk": 1,
+          "word_id": "hsk1_344",
+          "meaning_vi": "mới"
+        },
+        {
+          "text": "时代",
+          "pinyin": "shídài",
+          "hanviet": "Thời Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1012",
+          "meaning_vi": "thời đại"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "近代中国修建铁路步履维艰，不仅技术落后，路权更是屡屡遭到外国列强的觊觎与控制。",
+      "pinyin": "Jìndài Zhōngguó xiūjiàn tiělù bùlǚ-wéijiān, bùjǐn jìshù luòhòu, lùquán gèng shì lǚlǚ zāodào wàiguó lièqiáng de jìyú yǔ kòngzhì.",
+      "vi": "Xây dựng đường sắt thời cận đại ở Trung Quốc vô cùng chật vật, kỹ thuật lạc hậu lại liên tục bị các cường quốc kiểm soát.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "近代",
+          "pinyin": "jìndài",
+          "hanviet": "Cận Đại",
+          "hsk": 5,
+          "word_id": "hsk5_614",
+          "meaning_vi": "thời cận đại"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "修建",
+          "pinyin": "xiūjiàn",
+          "hanviet": "Tu Kiến",
+          "hsk": 5,
+          "word_id": "hsk5_1301",
+          "meaning_vi": "xây dựng"
+        },
+        {
+          "text": "铁路",
+          "pinyin": "tiělù",
+          "hanviet": "Thiết Lộ",
+          "hsk": 5,
+          "word_id": "hsk5_1137",
+          "meaning_vi": "đường sắt"
+        },
+        {
+          "text": "步履维艰",
+          "pinyin": "bù lǚ wéi jiān",
+          "hanviet": "Bộ Lý Duy Gian"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "不仅",
+          "pinyin": "bùjǐn",
+          "hanviet": "Bất Cận",
+          "hsk": 4,
+          "word_id": "hsk4_55",
+          "meaning_vi": "không chỉ"
+        },
+        {
+          "text": "技术落后",
+          "pinyin": "jì shù luò hòu",
+          "hanviet": "Kỹ Thuật Lạc Hậu"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "路权",
+          "pinyin": "lù quán",
+          "hanviet": "Lộ Quyền"
+        },
+        {
+          "text": "更是",
+          "pinyin": "gèng shì",
+          "hanviet": "Canh Thị"
+        },
+        {
+          "text": "屡屡",
+          "pinyin": "lǚlǚ",
+          "hanviet": "Lũ Lũ",
+          "hsk": 7,
+          "word_id": "hsk7_2692",
+          "meaning_vi": "liên tiếp, liên tục, nhiều lần"
+        },
+        {
+          "text": "遭到",
+          "pinyin": "zāodào",
+          "hanviet": "Tao Đáo",
+          "hsk": 6,
+          "word_id": "hsk6_1648",
+          "meaning_vi": "chịu đựng"
+        },
+        {
+          "text": "外国",
+          "pinyin": "wàiguó",
+          "hanviet": "Ngoại Quốc",
+          "hsk": 2,
+          "word_id": "hsk2_446",
+          "meaning_vi": "nước ngoài"
+        },
+        {
+          "text": "列强",
+          "pinyin": "liè qiáng",
+          "hanviet": "Liệt Cường"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "觊觎",
+          "pinyin": "jì yú",
+          "hanviet": "Ký Du"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "控制",
+          "pinyin": "kòngzhì",
+          "hanviet": "Khống Chế",
+          "hsk": 5,
+          "word_id": "hsk5_673",
+          "meaning_vi": "kiểm soát"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "一九零五年，杰出工程师詹天佑顶住巨大的外界压力，主持修建由中国人完全自主设计的京张铁路。",
+      "pinyin": "Yī-jiǔ-líng-wǔ nián, jiéchū gōngchéngshī Zhān Tiānyòu dǐngzhù jùdà de wàijiè yālì, zhǔchí xiūjiàn yóu Zhōngguó rén wánquán zìzhǔ shèjì de Jīng-Zhāng tiělù.",
+      "vi": "Năm 1905, kỹ sư kiệt xuất Chiêm Thiên Hữu vượt qua áp lực nặng nề, chủ trì xây dựng tuyến đường sắt Kinh - Trương do người Trung Quốc tự thiết kế.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "一",
+          "pinyin": "yī",
+          "hanviet": "Nhất",
+          "hsk": 1,
+          "word_id": "hsk1_360",
+          "meaning_vi": "một"
+        },
+        {
+          "text": "九零",
+          "pinyin": "jiǔ líng",
+          "hanviet": "Cửu Linh"
+        },
+        {
+          "text": "五年",
+          "pinyin": "wǔ nián",
+          "hanviet": "Ngũ Niên"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "杰出",
+          "pinyin": "jiéchū",
+          "hanviet": "Kiệt Xuất",
+          "hsk": 6,
+          "word_id": "hsk6_686",
+          "meaning_vi": "xuất sắc, kiệt xuất"
+        },
+        {
+          "text": "工程师",
+          "pinyin": "gōngchéngshī",
+          "hanviet": "Công Trình Sư",
+          "hsk": 5,
+          "word_id": "hsk5_409",
+          "meaning_vi": "kỹ sư"
+        },
+        {
+          "text": "詹天佑",
+          "pinyin": "zhān tiān yòu",
+          "hanviet": "Chiêm Thiên Hựu"
+        },
+        {
+          "text": "顶住",
+          "pinyin": "dǐng zhù",
+          "hanviet": "Đỉnh Trú"
+        },
+        {
+          "text": "巨大",
+          "pinyin": "jùdà",
+          "hanviet": "Cự Đại",
+          "hsk": 5,
+          "word_id": "hsk5_640",
+          "meaning_vi": "to lớn"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "外界压力",
+          "pinyin": "wài jiè yā lì",
+          "hanviet": "Ngoại Giới Áp Lực"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "主持",
+          "pinyin": "zhǔchí",
+          "hanviet": "Chủ Trì",
+          "hsk": 5,
+          "word_id": "hsk5_1541",
+          "meaning_vi": "chủ trì, dẫn dắt"
+        },
+        {
+          "text": "修建",
+          "pinyin": "xiūjiàn",
+          "hanviet": "Tu Kiến",
+          "hsk": 5,
+          "word_id": "hsk5_1301",
+          "meaning_vi": "xây dựng"
+        },
+        {
+          "text": "由",
+          "pinyin": "yóu",
+          "hanviet": "Do",
+          "hsk": 4,
+          "word_id": "hsk4_884",
+          "meaning_vi": "do, từ"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "人",
+          "pinyin": "rén",
+          "hanviet": "Nhân",
+          "hsk": 1,
+          "word_id": "hsk1_243",
+          "meaning_vi": "người"
+        },
+        {
+          "text": "完全",
+          "pinyin": "wánquán",
+          "hanviet": "Hoàn Toàn",
+          "hsk": 4,
+          "word_id": "hsk4_762",
+          "meaning_vi": "hoàn toàn"
+        },
+        {
+          "text": "自主",
+          "pinyin": "zìzhǔ",
+          "hanviet": "Tự Chủ",
+          "hsk": 7,
+          "word_id": "hsk7_5536",
+          "meaning_vi": "tự chủ, độc lập làm chủ"
+        },
+        {
+          "text": "设计",
+          "pinyin": "shèjì",
+          "hanviet": "Thiết Kế",
+          "hsk": 5,
+          "word_id": "hsk5_973",
+          "meaning_vi": "thiết kế"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "京张",
+          "pinyin": "jīng zhāng",
+          "hanviet": "Kinh Trương"
+        },
+        {
+          "text": "铁路",
+          "pinyin": "tiělù",
+          "hanviet": "Thiết Lộ",
+          "hsk": 5,
+          "word_id": "hsk5_1137",
+          "meaning_vi": "đường sắt"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "面对关沟险峻的地形，詹天佑巧妙设计了‘人’字形折返铁轨，成功解决了列车爬大坡的难题。",
+      "pinyin": "Miànduì Guāngōu xiǎnjùn de dìxíng, Zhān Tiānyòu qiǎomiào shèjì le ‘rén’ zìxíng zhéfǎn tiěguǐ, chénggōng jiějué le lièchē pá dàpō de nántí.",
+      "vi": "Đối mặt với địa hình hiểm trở vùng Quan Câu, ông khéo léo thiết kế đường ray chữ 'Nhân' (人) gập chữ chi, vượt dốc ngoạn mục.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "面对",
+          "pinyin": "miànduì",
+          "hanviet": "Diện Đối",
+          "hsk": 4,
+          "word_id": "hsk4_509",
+          "meaning_vi": "đối mặt"
+        },
+        {
+          "text": "关沟",
+          "pinyin": "guān gōu",
+          "hanviet": "Quan Câu"
+        },
+        {
+          "text": "险峻",
+          "pinyin": "xiǎn jùn",
+          "hanviet": "Hiểm Tuấn"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "地形",
+          "pinyin": "dìxíng",
+          "hanviet": "Địa Hình",
+          "hsk": 6,
+          "word_id": "hsk6_293",
+          "meaning_vi": "địa hình"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "詹天佑",
+          "pinyin": "zhān tiān yòu",
+          "hanviet": "Chiêm Thiên Hựu"
+        },
+        {
+          "text": "巧妙",
+          "pinyin": "qiǎomiào",
+          "hanviet": "Xảo Diệu",
+          "hsk": 6,
+          "word_id": "hsk6_1047",
+          "meaning_vi": "khéo léo, tài tình"
+        },
+        {
+          "text": "设计",
+          "pinyin": "shèjì",
+          "hanviet": "Thiết Kế",
+          "hsk": 5,
+          "word_id": "hsk5_973",
+          "meaning_vi": "thiết kế"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "人",
+          "pinyin": "rén",
+          "hanviet": "Nhân",
+          "hsk": 1,
+          "word_id": "hsk1_243",
+          "meaning_vi": "người"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "字形",
+          "pinyin": "zì xíng",
+          "hanviet": "Tự Hình"
+        },
+        {
+          "text": "折返",
+          "pinyin": "zhé fǎn",
+          "hanviet": "Chiết Phản"
+        },
+        {
+          "text": "铁轨",
+          "pinyin": "tiě guǐ",
+          "hanviet": "Thiết Quỹ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "成功",
+          "pinyin": "chénggōng",
+          "hanviet": "Thành Công",
+          "hsk": 4,
+          "word_id": "hsk4_79",
+          "meaning_vi": "thành công"
+        },
+        {
+          "text": "解决",
+          "pinyin": "jiějué",
+          "hanviet": "Giải Quyết",
+          "hsk": 3,
+          "word_id": "hsk3_447",
+          "meaning_vi": "giải quyết"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "列车",
+          "pinyin": "lièchē",
+          "hanviet": "Liệt Xa",
+          "hsk": 5,
+          "word_id": "hsk5_721",
+          "meaning_vi": "đoàn tàu"
+        },
+        {
+          "text": "爬",
+          "pinyin": "pá",
+          "hanviet": "Bò",
+          "hsk": 3,
+          "word_id": "hsk3_871",
+          "meaning_vi": "leo, trèo; bò"
+        },
+        {
+          "text": "大坡",
+          "pinyin": "dà pō",
+          "hanviet": "Đại Pha"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "难题",
+          "pinyin": "nántí",
+          "hanviet": "Nan Đề",
+          "hsk": 3,
+          "word_id": "hsk3_863",
+          "meaning_vi": "vấn đề khó, bài toán khó"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "如今中国高铁网络纵横四海，飞驰的高速列车展现了当代科技与工程建设的飞跃发展。",
+      "pinyin": "Rújīn Zhōngguó gāotiě wǎnglù zònghéng sìhǎi, fēichí de gāosù lièchē zhǎnxiàn le dāngdài kējì yǔ gōngchéng jiànshè de fēiyuè fāzhǎn.",
+      "vi": "Giờ đây mạng lưới đường sắt cao tốc trải rộng muôn phương, những chuyến tàu cao tốc lướt nhanh thể hiện bước nhảy vọt công nghệ hiện đại.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "如今",
+          "pinyin": "rújīn",
+          "hanviet": "Như Kim",
+          "hsk": 5,
+          "word_id": "hsk5_935",
+          "meaning_vi": "hiện nay, ngày nay"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "高铁",
+          "pinyin": "gāotiě",
+          "hanviet": "Cao Thiết",
+          "hsk": 3,
+          "word_id": "hsk3_736",
+          "meaning_vi": "tàu cao tốc"
+        },
+        {
+          "text": "网络",
+          "pinyin": "wǎngluò",
+          "hanviet": "Võng Lạc",
+          "hsk": 5,
+          "word_id": "hsk5_1179",
+          "meaning_vi": "mạng, internet"
+        },
+        {
+          "text": "纵横",
+          "pinyin": "zònghéng",
+          "hanviet": "Tung Hoành",
+          "hsk": 7,
+          "word_id": "hsk7_5547",
+          "meaning_vi": "dọc ngang, ngang dọc đan xen"
+        },
+        {
+          "text": "四海",
+          "pinyin": "sì hǎi",
+          "hanviet": "Tứ Hải"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "飞驰",
+          "pinyin": "fēi chí",
+          "hanviet": "Phi Trì"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "高速",
+          "pinyin": "gāosù",
+          "hanviet": "Cao Tốc",
+          "hsk": 4,
+          "word_id": "hsk4_238",
+          "meaning_vi": "cao tốc, tốc độ cao"
+        },
+        {
+          "text": "列车",
+          "pinyin": "lièchē",
+          "hanviet": "Liệt Xa",
+          "hsk": 5,
+          "word_id": "hsk5_721",
+          "meaning_vi": "đoàn tàu"
+        },
+        {
+          "text": "展现",
+          "pinyin": "zhǎnxiàn",
+          "hanviet": "Triển Hiện",
+          "hsk": 5,
+          "word_id": "hsk5_1467",
+          "meaning_vi": "hiển thị"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "当代",
+          "pinyin": "dāngdài",
+          "hanviet": "Đương Đại",
+          "hsk": 6,
+          "word_id": "hsk6_269",
+          "meaning_vi": "thời đại hiện nay"
+        },
+        {
+          "text": "科技",
+          "pinyin": "kējì",
+          "hanviet": "Khoa Kỹ",
+          "hsk": 4,
+          "word_id": "hsk4_425",
+          "meaning_vi": "khoa học kỹ thuật, công nghệ"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "工程建设",
+          "pinyin": "gōng chéng jiàn shè",
+          "hanviet": "Công Trình Kiến Thiết"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "飞跃发展",
+          "pinyin": "fēi yuè fā zhǎn",
+          "hanviet": "Phi Dược Phát Triển"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk4_372",
+    "hsk4_331",
+    "hsk4_79",
+    "hsk3_713"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Kỹ sư kiệt xuất nào đã thiết kế tuyến đường sắt Kinh - Trương nổi tiếng?",
+      "options_vi": [
+        "Chiêm Thiên Hữu (詹天佑)",
+        "Lỗ Tấn",
+        "Đặng Tiểu Bình"
+      ],
+      "answer": 0,
+      "explanation_vi": "Chiêm Thiên Hữu là cha đẻ của ngành đường sắt tự thiết kế đầu tiên tại Trung Quốc."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Sáng tạo độc đáo nào giúp đoàn tàu leo qua sườn núi dốc hiểm trở ở Bát Đạt Lĩnh?",
+      "options_vi": [
+        "Thiết kế đường ray ngoặc chữ 'Nhân' (人字形)",
+        "Dùng bóng bay nâng tàu",
+        "Dùng dây thừng kéo"
+      ],
+      "answer": 0,
+      "explanation_vi": "Đường ray hình chữ Nhân với 2 đầu kéo giúp tàu giảm độ dốc và đổi hướng an toàn."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Đặc trưng lớn nhất của mạng lưới đường sắt hiện đại ngày nay là gì?",
+      "options_vi": [
+        "Tàu điện cao tốc chạy êm và tốc độ cao hàng trăm km/h",
+        "Vẫn đốt củi chạy hơi nước",
+        "Chạy trên đường gỗ"
+      ],
+      "answer": 0,
+      "explanation_vi": "Tàu cao tốc chạy điện hiện đại di chuyển với tốc độ trên 300 km/h."
+    }
+  ]
+}

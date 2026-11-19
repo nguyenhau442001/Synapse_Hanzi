@@ -1,0 +1,809 @@
+{
+  "id": "wanwu_story_033",
+  "chapter_no": 33,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 2,
+  "book_page_start": 325,
+  "book_page_end": 334,
+  "page_display": "Trang 325 - 334",
+  "title": {
+    "zh": "测谎仪：从测量脉搏开始",
+    "vi": "Máy phát hiện nói dối: Khởi nguồn từ nhịp đập mạch máu"
+  },
+  "topic": "science_technology",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "💓",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_033.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_033.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 325 - 334 · Nguyên lý sinh lý học của máy đo nói dối qua nhịp thở, mạch đập và điện trở da từ thế kỷ 19.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "当一个人说谎时，内心往往会不由自主地产生紧张、焦虑等情绪波动。",
+      "pinyin": "Dāng yí gè rén shuōhuǎng shí, nèixīn wǎngwǎng huì bùyóu-zìzhǔ de chǎnshēng jǐnzhāng, jiāolǜ děng qíngxù bōdòng.",
+      "vi": "Khi một người nói dối, trong lòng thường vô thức nảy sinh cảm xúc căng thẳng, âu lo dao động.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "当",
+          "pinyin": "dāng",
+          "hanviet": "Đương",
+          "hsk": 4,
+          "word_id": "hsk4_135",
+          "meaning_vi": "khi, lúc"
+        },
+        {
+          "text": "一个",
+          "pinyin": "yí gè",
+          "hanviet": "Nhất Cá"
+        },
+        {
+          "text": "人",
+          "pinyin": "rén",
+          "hanviet": "Nhân",
+          "hsk": 1,
+          "word_id": "hsk1_243",
+          "meaning_vi": "người"
+        },
+        {
+          "text": "说谎",
+          "pinyin": "shuōhuǎng",
+          "hanviet": "Thuyết Hoang",
+          "hsk": 7,
+          "word_id": "hsk7_3839",
+          "meaning_vi": "nói dối"
+        },
+        {
+          "text": "时",
+          "pinyin": "shí",
+          "hanviet": "Thời",
+          "hsk": 2,
+          "word_id": "hsk2_431",
+          "meaning_vi": "thời gian (danh từ, số lượng)"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "内心",
+          "pinyin": "nèixīn",
+          "hanviet": "Nội Tâm",
+          "hsk": 4,
+          "word_id": "hsk4_530",
+          "meaning_vi": "nội tâm, trong lòng"
+        },
+        {
+          "text": "往往",
+          "pinyin": "wǎngwǎng",
+          "hanviet": "Vãng Vãng",
+          "hsk": 4,
+          "word_id": "hsk4_766",
+          "meaning_vi": "thường thường"
+        },
+        {
+          "text": "会",
+          "pinyin": "huì",
+          "hanviet": "Hội",
+          "hsk": 1,
+          "word_id": "hsk1_43",
+          "meaning_vi": "biết, sẽ"
+        },
+        {
+          "text": "不由自主",
+          "pinyin": "bùyóuzìzhǔ",
+          "hanviet": "Bất Do Tự Chủ",
+          "hsk": 7,
+          "word_id": "hsk7_353",
+          "meaning_vi": "bất giác, không kìm được lòng"
+        },
+        {
+          "text": "地",
+          "pinyin": "de",
+          "hanviet": "Địa",
+          "hsk": 2,
+          "word_id": "hsk2_333",
+          "meaning_vi": "cách (trợ từ trạng ngữ)"
+        },
+        {
+          "text": "产生",
+          "pinyin": "chǎnshēng",
+          "hanviet": "Sản Sinh",
+          "hsk": 4,
+          "word_id": "hsk4_71",
+          "meaning_vi": "sinh ra, phát sinh"
+        },
+        {
+          "text": "紧张",
+          "pinyin": "jǐnzhāng",
+          "hanviet": "Khẩn Trương",
+          "hsk": 4,
+          "word_id": "hsk4_391",
+          "meaning_vi": "căng thẳng, hồi hộp"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "焦虑",
+          "pinyin": "jiāolǜ",
+          "hanviet": "Tiêu Lự",
+          "hsk": 6,
+          "word_id": "hsk6_673",
+          "meaning_vi": "lo lắng, lo âu"
+        },
+        {
+          "text": "等",
+          "pinyin": "děng",
+          "hanviet": "Đẳng",
+          "hsk": 2,
+          "word_id": "hsk2_20",
+          "meaning_vi": "đợi, chờ"
+        },
+        {
+          "text": "情绪",
+          "pinyin": "qíngxù",
+          "hanviet": "Tình Tự",
+          "hsk": 5,
+          "word_id": "hsk5_891",
+          "meaning_vi": "tâm trạng, cảm xúc"
+        },
+        {
+          "text": "波动",
+          "pinyin": "bōdòng",
+          "hanviet": "Ba Động",
+          "hsk": 7,
+          "word_id": "hsk7_275",
+          "meaning_vi": "dao động, biến động"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "十九世纪末，意大利犯罪学家龙勃罗梭发现人在撒谎时脉搏会发生微弱变化，并尝试用于案件调查。",
+      "pinyin": "Shíjiǔ shìjì mò, Yìdàlì fànzuì xuéjiā Lóngbólóusuō fāxiàn rén zài sāhuǎng shí màibó huì fāshēng wēiruò biànhuà, bìng chángshì yòngyú ànjiàn diàochá.",
+      "vi": "Cuối thế kỷ 19, nhà tội phạm học Lombroso người Ý phát hiện nhịp mạch thay đổi khi nói dối và đã thử nghiệm trong điều tra vụ án.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "十九",
+          "pinyin": "shí jiǔ",
+          "hanviet": "Thập Cửu"
+        },
+        {
+          "text": "世纪末",
+          "pinyin": "shì jì mò",
+          "hanviet": "Thế Kỷ Mạt"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "意大利",
+          "pinyin": "yì dà lì",
+          "hanviet": "Ý Đại Lợi"
+        },
+        {
+          "text": "犯罪学",
+          "pinyin": "fàn zuì xué",
+          "hanviet": "Phạm Tội Học"
+        },
+        {
+          "text": "家",
+          "pinyin": "jiā",
+          "hanviet": "Gia",
+          "hsk": 1,
+          "word_id": "hsk1_135",
+          "meaning_vi": "nhà"
+        },
+        {
+          "text": "龙勃罗",
+          "pinyin": "lóng bó luó",
+          "hanviet": "Long Bột La"
+        },
+        {
+          "text": "梭",
+          "pinyin": "suō",
+          "hanviet": "Thoa"
+        },
+        {
+          "text": "发现",
+          "pinyin": "fāxiàn",
+          "hanviet": "Phát Hiện",
+          "hsk": 3,
+          "word_id": "hsk3_712",
+          "meaning_vi": "phát hiện"
+        },
+        {
+          "text": "人",
+          "pinyin": "rén",
+          "hanviet": "Nhân",
+          "hsk": 1,
+          "word_id": "hsk1_243",
+          "meaning_vi": "người"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "撒谎",
+          "pinyin": "sāhuǎng",
+          "hanviet": "Tản Hoang",
+          "hsk": 7,
+          "word_id": "hsk7_3472",
+          "meaning_vi": "nói dối"
+        },
+        {
+          "text": "时",
+          "pinyin": "shí",
+          "hanviet": "Thời",
+          "hsk": 2,
+          "word_id": "hsk2_431",
+          "meaning_vi": "thời gian (danh từ, số lượng)"
+        },
+        {
+          "text": "脉搏",
+          "pinyin": "màibó",
+          "hanviet": "Mạch Bác",
+          "hsk": 7,
+          "word_id": "hsk7_2736",
+          "meaning_vi": "mạch đập, nhịp đập"
+        },
+        {
+          "text": "会",
+          "pinyin": "huì",
+          "hanviet": "Hội",
+          "hsk": 1,
+          "word_id": "hsk1_43",
+          "meaning_vi": "biết, sẽ"
+        },
+        {
+          "text": "发生",
+          "pinyin": "fāshēng",
+          "hanviet": "Phát Sinh",
+          "hsk": 3,
+          "word_id": "hsk3_711",
+          "meaning_vi": "phát sinh, xảy ra"
+        },
+        {
+          "text": "微弱",
+          "pinyin": "wēiruò",
+          "hanviet": "Vi Nhược",
+          "hsk": 7,
+          "word_id": "hsk7_4229",
+          "meaning_vi": "yếu ớt; mờ nhạt; le lói"
+        },
+        {
+          "text": "变化",
+          "pinyin": "biànhuà",
+          "hanviet": "Biến Hóa",
+          "hsk": 3,
+          "word_id": "hsk3_628",
+          "meaning_vi": "sự thay đổi"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "并",
+          "pinyin": "bìng",
+          "hanviet": "Tinh",
+          "hsk": 4,
+          "word_id": "hsk4_39",
+          "meaning_vi": "và, đồng thời; hoàn toàn (không)"
+        },
+        {
+          "text": "尝试",
+          "pinyin": "chángshì",
+          "hanviet": "Thường Thí",
+          "hsk": 5,
+          "word_id": "hsk5_113",
+          "meaning_vi": "thử nghiệm"
+        },
+        {
+          "text": "用于",
+          "pinyin": "yòngyú",
+          "hanviet": "Dụng Vu",
+          "hsk": 4,
+          "word_id": "hsk4_880",
+          "meaning_vi": "dùng vào, dùng cho"
+        },
+        {
+          "text": "案件",
+          "pinyin": "ànjiàn",
+          "hanviet": "Án Kiện",
+          "hsk": 7,
+          "word_id": "hsk7_24",
+          "meaning_vi": "vụ án"
+        },
+        {
+          "text": "调查",
+          "pinyin": "diàochá",
+          "hanviet": "Điều Tra",
+          "hsk": 4,
+          "word_id": "hsk4_162",
+          "meaning_vi": "điều tra"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "二十世纪初，科学家在此基础上发明了能够同时监测呼吸、血压和心率的多道测谎仪。",
+      "pinyin": "Èrshí shìjì chū, kēxuéjiā zài cǐ jīchǔ shàng fāmíng le nénggòu tóngshí jiāncè hūxī, xuèyā hé xīnlǜ de duōdào cèhuǎngyí.",
+      "vi": "Đầu thế kỷ 20, các nhà khoa học đã chế tạo ra máy ghi đa nghiệm có thể theo dõi đồng thời nhịp thở, huyết áp và nhịp tim.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "二十世纪",
+          "pinyin": "èr shí shì jì",
+          "hanviet": "Nhị Thập Thế Kỷ"
+        },
+        {
+          "text": "初",
+          "pinyin": "chū",
+          "hanviet": "Sơ",
+          "hsk": 5,
+          "word_id": "hsk5_170",
+          "meaning_vi": "đầu, ban đầu; lần đầu"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "科学家",
+          "pinyin": "kē xué jiā",
+          "hanviet": "Khoa Học Gia"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "此基础",
+          "pinyin": "cǐ jī chǔ",
+          "hanviet": "Thử Cơ Sở"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "发明",
+          "pinyin": "fāmíng",
+          "hanviet": "Phát Minh",
+          "hsk": 5,
+          "word_id": "hsk5_320",
+          "meaning_vi": "phát minh"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "能够",
+          "pinyin": "nénggòu",
+          "hanviet": "Năng Cú",
+          "hsk": 4,
+          "word_id": "hsk4_532",
+          "meaning_vi": "có thể"
+        },
+        {
+          "text": "同时",
+          "pinyin": "tóngshí",
+          "hanviet": "Đồng Thời",
+          "hsk": 4,
+          "word_id": "hsk4_747",
+          "meaning_vi": "đồng thời"
+        },
+        {
+          "text": "监测",
+          "pinyin": "jiāncè",
+          "hanviet": "Giam Trắc",
+          "hsk": 6,
+          "word_id": "hsk6_642",
+          "meaning_vi": "giám sát, theo dõi"
+        },
+        {
+          "text": "呼吸",
+          "pinyin": "hūxī",
+          "hanviet": "Hô Hấp",
+          "hsk": 5,
+          "word_id": "hsk5_488",
+          "meaning_vi": "hô hấp, thở"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "血压",
+          "pinyin": "xuèyā",
+          "hanviet": "Huyết Áp",
+          "hsk": 6,
+          "word_id": "hsk6_1495",
+          "meaning_vi": "huyết áp"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "心率",
+          "pinyin": "xīn lǜ",
+          "hanviet": "Tâm Luật"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "多",
+          "pinyin": "duō",
+          "hanviet": "Đa",
+          "hsk": 1,
+          "word_id": "hsk1_80",
+          "meaning_vi": "nhiều"
+        },
+        {
+          "text": "道",
+          "pinyin": "dào",
+          "hanviet": "Đạo",
+          "hsk": 4,
+          "word_id": "hsk4_140",
+          "meaning_vi": "đường; đạo lý; (lượng từ cho câu hỏi, món ăn, cửa)"
+        },
+        {
+          "text": "测谎仪",
+          "pinyin": "cè huǎng yí",
+          "hanviet": "Trắc Hoang Nghi"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "现代先进测谎设备还会测定手掌微量出汗导致的皮肤电反应。",
+      "pinyin": "Xiàndài xiānjìn cèhuǎng shèbèi hái huì cèdìng shǒuzhǎng wēiliàng chūhàn dǎozhì de pífū diànfǎnyìng.",
+      "vi": "Thiết bị đo nói dối tiên tiến hiện đại còn đo cả phản ứng điện trở da do lòng bàn tay toát mồ hôi li ti gây ra.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "现代",
+          "pinyin": "xiàndài",
+          "hanviet": "Hiện Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1239",
+          "meaning_vi": "hiện đại"
+        },
+        {
+          "text": "先进",
+          "pinyin": "xiānjìn",
+          "hanviet": "Tiên Tiến",
+          "hsk": 5,
+          "word_id": "hsk5_1232",
+          "meaning_vi": "tiên tiến"
+        },
+        {
+          "text": "测谎",
+          "pinyin": "cè huǎng",
+          "hanviet": "Trắc Hoang"
+        },
+        {
+          "text": "设备",
+          "pinyin": "shèbèi",
+          "hanviet": "Thiết Bị",
+          "hsk": 5,
+          "word_id": "hsk5_972",
+          "meaning_vi": "thiết bị"
+        },
+        {
+          "text": "还会",
+          "pinyin": "hái huì",
+          "hanviet": "Hoàn Hội"
+        },
+        {
+          "text": "测定",
+          "pinyin": "cèdìng",
+          "hanviet": "Trắc Định",
+          "hsk": 7,
+          "word_id": "hsk7_405",
+          "meaning_vi": "đo lường xác định, trắc định"
+        },
+        {
+          "text": "手掌",
+          "pinyin": "shǒuzhǎng",
+          "hanviet": "Thủ Chưởng",
+          "hsk": 7,
+          "word_id": "hsk7_3746",
+          "meaning_vi": "lòng bàn tay; bàn tay"
+        },
+        {
+          "text": "微量",
+          "pinyin": "wēi liàng",
+          "hanviet": "Vi Lượng"
+        },
+        {
+          "text": "出汗",
+          "pinyin": "chū hàn",
+          "hanviet": "Xuất Hãn"
+        },
+        {
+          "text": "导致",
+          "pinyin": "dǎozhì",
+          "hanviet": "Đạo Trí",
+          "hsk": 5,
+          "word_id": "hsk5_255",
+          "meaning_vi": "dẫn đến, gây ra"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "皮肤",
+          "pinyin": "pífū",
+          "hanviet": "Bì Phu",
+          "hsk": 4,
+          "word_id": "hsk4_551",
+          "meaning_vi": "da"
+        },
+        {
+          "text": "电",
+          "pinyin": "diàn",
+          "hanviet": "Điện",
+          "hsk": 3,
+          "word_id": "hsk3_690",
+          "meaning_vi": "điện"
+        },
+        {
+          "text": "反应",
+          "pinyin": "fǎnyìng",
+          "hanviet": "Phản Ứng",
+          "hsk": 5,
+          "word_id": "hsk5_334",
+          "meaning_vi": "phản ứng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "不过，测谎仪测量的本质是人体的自主神经生理反应，因此其结果主要作为侦查辅助参考。",
+      "pinyin": "Búguò, cèhuǎngyí cèliáng de běnzhì shì réntǐ de zìzhǔ shénjīng shēnglǐ fǎnyìng, yīncǐ qí jiéguǒ zhǔyào zuòwéi zhēnchá fǔzhù cānkǎo.",
+      "vi": "Dẫu vậy, bản chất của máy là đo phản ứng sinh lý thần kinh thực vật, do đó kết quả chủ yếu mang tính hỗ trợ tham khảo điều tra.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "不过",
+          "pinyin": "búguò",
+          "hanviet": "Bất Quá",
+          "hsk": 4,
+          "word_id": "hsk4_47",
+          "meaning_vi": "nhưng, tuy nhiên"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "测谎仪",
+          "pinyin": "cè huǎng yí",
+          "hanviet": "Trắc Hoang Nghi"
+        },
+        {
+          "text": "测量",
+          "pinyin": "cèliáng",
+          "hanviet": "Trắc Lượng",
+          "hsk": 6,
+          "word_id": "hsk6_113",
+          "meaning_vi": "đo lường, khảo sát"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "本质",
+          "pinyin": "běnzhì",
+          "hanviet": "Bản Chất",
+          "hsk": 5,
+          "word_id": "hsk5_44",
+          "meaning_vi": "bản chất"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "人体",
+          "pinyin": "réntǐ",
+          "hanviet": "Nhân Thể",
+          "hsk": 5,
+          "word_id": "hsk5_926",
+          "meaning_vi": "cơ thể con người"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "自主神经",
+          "pinyin": "zì zhǔ shén jīng",
+          "hanviet": "Tự Chủ Thần Kinh"
+        },
+        {
+          "text": "生理反应",
+          "pinyin": "shēng lǐ fǎn yìng",
+          "hanviet": "Sinh Lý Phản Ưng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "因此",
+          "pinyin": "yīncǐ",
+          "hanviet": "Nhân Thử",
+          "hsk": 4,
+          "word_id": "hsk4_871",
+          "meaning_vi": "vì vậy, do đó"
+        },
+        {
+          "text": "其",
+          "pinyin": "qí",
+          "hanviet": "Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_853",
+          "meaning_vi": "của nó, của họ; trong đó"
+        },
+        {
+          "text": "结果",
+          "pinyin": "jiéguǒ",
+          "hanviet": "Kết Quả",
+          "hsk": 4,
+          "word_id": "hsk4_382",
+          "meaning_vi": "kết quả"
+        },
+        {
+          "text": "主要",
+          "pinyin": "zhǔyào",
+          "hanviet": "Chủ Yếu",
+          "hsk": 3,
+          "word_id": "hsk3_1066",
+          "meaning_vi": "chủ yếu"
+        },
+        {
+          "text": "作为",
+          "pinyin": "xiūgǎi",
+          "hanviet": "Tu Cải",
+          "hsk": 5,
+          "word_id": "hsk5_1300",
+          "meaning_vi": "sửa đổi"
+        },
+        {
+          "text": "侦查",
+          "pinyin": "zhēnchá",
+          "hanviet": "Trinh Tra",
+          "hsk": 7,
+          "word_id": "hsk7_5208",
+          "meaning_vi": "trinh sát, điều tra phá án"
+        },
+        {
+          "text": "辅助",
+          "pinyin": "fǔzhù",
+          "hanviet": "Phụ Trợ",
+          "hsk": 6,
+          "word_id": "hsk6_406",
+          "meaning_vi": "hỗ trợ, phụ trợ"
+        },
+        {
+          "text": "参考",
+          "pinyin": "cānkǎo",
+          "hanviet": "Tham Khảo",
+          "hsk": 5,
+          "word_id": "hsk5_89",
+          "meaning_vi": "tham khảo"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk3_711",
+    "hsk4_162",
+    "hsk4_321",
+    "hsk3_1066",
+    "hsk4_135"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Nguyên lý cơ bản giúp máy phát hiện nói dối hoạt động là gì?",
+      "options_vi": [
+        "Đo phản ứng sinh lý tự nhiên như tim đập nhanh, toát mồ hôi khi căng thẳng",
+        "Đọc trực tiếp suy nghĩ trong đầu",
+        "Chụp tia X hộp sọ"
+      ],
+      "answer": 0,
+      "explanation_vi": "Khi nói dối, sự lo lắng gây biến động nhịp tim, nhịp thở và độ ẩm da."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Nhà khoa học nào khởi xướng việc quan sát nhịp mạch để điều tra nói dối?",
+      "options_vi": [
+        "Lombroso người Ý",
+        "Edison",
+        "Newton"
+      ],
+      "answer": 0,
+      "explanation_vi": "Lombroso là người đầu tiên ghi nhận biến đổi nhịp mạch khi đối tượng nói dối."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Trong pháp luật hiện đại, kết quả máy đo nói dối thường đóng vai trò gì?",
+      "options_vi": [
+        "Tài liệu tham khảo hỗ trợ định hướng điều tra",
+        "Bằng chứng duy nhất để tuyên án",
+        "Chứng chỉ chứng nhận vô tội tuyệt đối"
+      ],
+      "answer": 0,
+      "explanation_vi": "Kết quả máy đo chủ yếu hỗ trợ cơ quan điều tra chứ không phải chứng cứ duy nhất trước tòa."
+    }
+  ]
+}

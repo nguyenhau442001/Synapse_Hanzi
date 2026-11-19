@@ -1,0 +1,967 @@
+{
+  "id": "wanwu_story_023",
+  "chapter_no": 23,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 2,
+  "book_page_start": 232,
+  "book_page_end": 241,
+  "page_display": "Trang 232 - 241",
+  "title": {
+    "zh": "辣椒：点燃味觉的火辣传奇",
+    "vi": "Ớt: Huyền thoại cay nồng đánh thức vị giác"
+  },
+  "topic": "food_lifestyle",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🌶️",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_023.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_023.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 232 - 241 · Hành trình của trái ớt từ rừng nhiệt đới châu Mỹ, trong socola của người Maya cổ đến món cay nổi tiếng toàn cầu.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "近年来，辣味风行各地，川菜、湘菜等经典菜系越来越受到人们的喜爱。",
+      "pinyin": "Jìnnián lái, làwèi fēngxíng gèdì, Chuāncài, Xiāngcài děng jīngdiǎn càixì yuèláiyuè shòudào rénmen de xǐ'ài.",
+      "vi": "Những năm gần đây, vị cay thịnh hành khắp nơi, các trường phái ẩm thực Tứ Xuyên, Hồ Nam ngày càng được ưa chuộng.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "近年来",
+          "pinyin": "jìnnián lái",
+          "hanviet": "Cận Niên Lai",
+          "hsk": 5,
+          "word_id": "hsk5_617",
+          "meaning_vi": "những năm gần đây"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "辣味",
+          "pinyin": "là wèi",
+          "hanviet": "Lạt Vị"
+        },
+        {
+          "text": "风行",
+          "pinyin": "fēng xíng",
+          "hanviet": "Phong Hành"
+        },
+        {
+          "text": "各地",
+          "pinyin": "gèdì",
+          "hanviet": "Các Địa",
+          "hsk": 4,
+          "word_id": "hsk4_245",
+          "meaning_vi": "các nơi"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "川菜",
+          "pinyin": "chuān cài",
+          "hanviet": "Xuyên Thái"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "湘菜",
+          "pinyin": "xiāng cài",
+          "hanviet": "Tương Thái"
+        },
+        {
+          "text": "等",
+          "pinyin": "děng",
+          "hanviet": "Đẳng",
+          "hsk": 2,
+          "word_id": "hsk2_20",
+          "meaning_vi": "đợi, chờ"
+        },
+        {
+          "text": "经典",
+          "pinyin": "jīngdiǎn",
+          "hanviet": "Kinh Điển",
+          "hsk": 5,
+          "word_id": "hsk5_621",
+          "meaning_vi": "cổ điển, kinh điển"
+        },
+        {
+          "text": "菜系",
+          "pinyin": "cài xì",
+          "hanviet": "Thái Hệ"
+        },
+        {
+          "text": "越来越",
+          "pinyin": "yuè lái yuè",
+          "hanviet": "Việt Lai Việt"
+        },
+        {
+          "text": "受到",
+          "pinyin": "shòudào",
+          "hanviet": "Thọ Đáo",
+          "hsk": 3,
+          "word_id": "hsk3_558",
+          "meaning_vi": "nhận được, bị (chịu)"
+        },
+        {
+          "text": "人们",
+          "pinyin": "rén men",
+          "hanviet": "Nhân Môn"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "喜爱",
+          "pinyin": "xǐ’ài",
+          "hanviet": "Hỷ Ái",
+          "hsk": 3,
+          "word_id": "hsk3_965",
+          "meaning_vi": "yêu thích"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "中国是世界上的辣椒生产与消费大国，许多人无辣不欢。",
+      "pinyin": "Zhōngguó shì shìjiè shàng de làjiāo shēngchǎn yǔ xiāofèi dàguó, xǔduō rén wú là bù huān.",
+      "vi": "Trung Quốc là quốc gia sản xuất và tiêu thụ ớt hàng đầu thế giới, nhiều người không có vị cay thì không thấy ngon miệng.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "世界",
+          "pinyin": "shìjiè",
+          "hanviet": "Thế Giới",
+          "hsk": 3,
+          "word_id": "hsk3_916",
+          "meaning_vi": "thế giới"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "辣椒",
+          "pinyin": "làjiāo",
+          "hanviet": "Lạt Tiêu",
+          "hsk": 6,
+          "word_id": "hsk6_811",
+          "meaning_vi": "ớt"
+        },
+        {
+          "text": "生产",
+          "pinyin": "shēngchǎn",
+          "hanviet": "Sinh Sản",
+          "hsk": 5,
+          "word_id": "hsk5_990",
+          "meaning_vi": "sản xuất"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "消费",
+          "pinyin": "xiāofèi",
+          "hanviet": "Tiêu Phí",
+          "hsk": 5,
+          "word_id": "hsk5_1262",
+          "meaning_vi": "tiêu dùng, chi tiêu"
+        },
+        {
+          "text": "大国",
+          "pinyin": "dà guó",
+          "hanviet": "Đại Quốc"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "许多",
+          "pinyin": "xǔduō",
+          "hanviet": "Hứa Đa",
+          "hsk": 4,
+          "word_id": "hsk4_836",
+          "meaning_vi": "nhiều, rất nhiều"
+        },
+        {
+          "text": "人无辣",
+          "pinyin": "rén wú là",
+          "hanviet": "Nhân Vô Lạt"
+        },
+        {
+          "text": "不欢",
+          "pinyin": "bù huān",
+          "hanviet": "Bất Hoan"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "然而在古代，中国原本并没有辣椒，这道火辣的风味起源于美洲的墨西哥一带。",
+      "pinyin": "Rán'ér zài gǔdài, Zhōngguó yuánběn bìng méiyǒu làjiāo, zhè dào huǒlà de fēngwèi qǐyuán yú Měizhōu de Mòxīgē yídài.",
+      "vi": "Tuy nhiên vào thời cổ đại, Trung Quốc vốn không có ớt, hương vị cay nồng này bắt nguồn từ vùng Mexico châu Mỹ.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "然而",
+          "pinyin": "rán’ér",
+          "hanviet": "Nhiên Nhi",
+          "hsk": 4,
+          "word_id": "hsk4_608",
+          "meaning_vi": "tuy nhiên"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "原本",
+          "pinyin": "yuánběn",
+          "hanviet": "Nguyên Bản",
+          "hsk": 6,
+          "word_id": "hsk6_1615",
+          "meaning_vi": "vốn dĩ, ban đầu"
+        },
+        {
+          "text": "并",
+          "pinyin": "bìng",
+          "hanviet": "Tinh",
+          "hsk": 4,
+          "word_id": "hsk4_39",
+          "meaning_vi": "và, đồng thời; hoàn toàn (không)"
+        },
+        {
+          "text": "没有",
+          "pinyin": "méiyǒu",
+          "hanviet": "Một Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_197",
+          "meaning_vi": "không có"
+        },
+        {
+          "text": "辣椒",
+          "pinyin": "làjiāo",
+          "hanviet": "Lạt Tiêu",
+          "hsk": 6,
+          "word_id": "hsk6_811",
+          "meaning_vi": "ớt"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "这道",
+          "pinyin": "zhè dào",
+          "hanviet": "Giá Đạo"
+        },
+        {
+          "text": "火辣",
+          "pinyin": "huǒ là",
+          "hanviet": "Hoả Lạt"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "风味",
+          "pinyin": "fēngwèi",
+          "hanviet": "Phong Vị",
+          "hsk": 7,
+          "word_id": "hsk7_1210",
+          "meaning_vi": "phong vị, hương vị đặc trưng"
+        },
+        {
+          "text": "起源于",
+          "pinyin": "qǐ yuán yú",
+          "hanviet": "Khởi Nguyên Vu"
+        },
+        {
+          "text": "美洲",
+          "pinyin": "měi zhōu",
+          "hanviet": "Mỹ Châu"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "墨西哥",
+          "pinyin": "mò xī gē",
+          "hanviet": "Mặc Tây Ca"
+        },
+        {
+          "text": "一带",
+          "pinyin": "yídài",
+          "hanviet": "Nhất Đới",
+          "hsk": 6,
+          "word_id": "hsk6_1546",
+          "meaning_vi": "dải, vùng, khu vực"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "古代玛雅人很早就开始食用辣椒，他们甚至把辣椒和可可混合在一起制作饮品。",
+      "pinyin": "Gǔdài Mǎyǎ rén hěn zǎo jiù kāishǐ shíyòng làjiāo, tāmen shènzhì bǎ làjiāo hé kěkě hùnhé zài yìqǐ zhìzuò yǐnpǐn.",
+      "vi": "Người Maya cổ đại từ rất sớm đã sử dụng ớt, họ thậm chí trộn ớt với cacao để pha chế thức uống.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "玛雅人",
+          "pinyin": "mǎ yǎ rén",
+          "hanviet": "Mã Nhã Nhân"
+        },
+        {
+          "text": "很",
+          "pinyin": "hěn",
+          "hanviet": "Ngận",
+          "hsk": 1,
+          "word_id": "hsk1_118",
+          "meaning_vi": "rất"
+        },
+        {
+          "text": "早就",
+          "pinyin": "zǎo jiù",
+          "hanviet": "Tảo Tựu"
+        },
+        {
+          "text": "开始",
+          "pinyin": "kāishǐ",
+          "hanviet": "Khai Thuỷ",
+          "hsk": 2,
+          "word_id": "hsk2_378",
+          "meaning_vi": "bắt đầu"
+        },
+        {
+          "text": "食用",
+          "pinyin": "shíyòng",
+          "hanviet": "Thực Dụng",
+          "hsk": 5,
+          "word_id": "hsk5_1025",
+          "meaning_vi": "ăn, dùng làm thực phẩm"
+        },
+        {
+          "text": "辣椒",
+          "pinyin": "làjiāo",
+          "hanviet": "Lạt Tiêu",
+          "hsk": 6,
+          "word_id": "hsk6_811",
+          "meaning_vi": "ớt"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "他们",
+          "pinyin": "tāmen",
+          "hanviet": "Tha Môn",
+          "hsk": 1,
+          "word_id": "hsk1_570",
+          "meaning_vi": "họ (đại từ)"
+        },
+        {
+          "text": "甚至",
+          "pinyin": "shènzhì",
+          "hanviet": "Thậm Chí",
+          "hsk": 4,
+          "word_id": "hsk4_645",
+          "meaning_vi": "thậm chí"
+        },
+        {
+          "text": "把",
+          "pinyin": "bǎ",
+          "hanviet": "Bả",
+          "hsk": 3,
+          "word_id": "hsk3_606",
+          "meaning_vi": "cái, chiếc (lượng từ); cầm, nắm"
+        },
+        {
+          "text": "辣椒",
+          "pinyin": "làjiāo",
+          "hanviet": "Lạt Tiêu",
+          "hsk": 6,
+          "word_id": "hsk6_811",
+          "meaning_vi": "ớt"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "可可",
+          "pinyin": "kě kě",
+          "hanviet": "Khả Khả"
+        },
+        {
+          "text": "混合",
+          "pinyin": "hùnhé",
+          "hanviet": "Hỗn Hợp",
+          "hsk": 6,
+          "word_id": "hsk6_595",
+          "meaning_vi": "pha trộn, hỗn hợp"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "一起",
+          "pinyin": "yìqǐ",
+          "hanviet": "Nhất Khởi",
+          "hsk": 2,
+          "word_id": "hsk2_473",
+          "meaning_vi": "cùng nhau"
+        },
+        {
+          "text": "制作",
+          "pinyin": "zhìzuò",
+          "hanviet": "Chế Tác",
+          "hsk": 5,
+          "word_id": "hsk5_1519",
+          "meaning_vi": "chế tác, làm ra"
+        },
+        {
+          "text": "饮品",
+          "pinyin": "yǐn pǐn",
+          "hanviet": "Ẩm Phẩm"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "哥伦布航海到达美洲后，发现了这种红色的果实，并将其带回欧洲。",
+      "pinyin": "Gēlúnbù hánghǎi dàodá Měizhōu hòu, fāxiàn le zhè zhǒng hóngsè de guǒshí, bìng jiāng qí dàihuí Ōuzhōu.",
+      "vi": "Sau khi Columbus vượt biển đến châu Mỹ, ông đã phát hiện loài quả đỏ này và mang nó trở về châu Âu.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "哥伦布",
+          "pinyin": "gē lún bù",
+          "hanviet": "Ca Luân Bố"
+        },
+        {
+          "text": "航海",
+          "pinyin": "hánghǎi",
+          "hanviet": "Hàng Hải",
+          "hsk": 7,
+          "word_id": "hsk7_1590",
+          "meaning_vi": "đi biển, hàng hải"
+        },
+        {
+          "text": "到达",
+          "pinyin": "dàodá",
+          "hanviet": "Đáo Đạt",
+          "hsk": 5,
+          "word_id": "hsk5_256",
+          "meaning_vi": "đến nơi, đạt tới"
+        },
+        {
+          "text": "美洲",
+          "pinyin": "měi zhōu",
+          "hanviet": "Mỹ Châu"
+        },
+        {
+          "text": "后",
+          "pinyin": "hòu",
+          "hanviet": "Hậu",
+          "hsk": 1,
+          "word_id": "hsk1_524",
+          "meaning_vi": "sau"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "发现",
+          "pinyin": "fāxiàn",
+          "hanviet": "Phát Hiện",
+          "hsk": 3,
+          "word_id": "hsk3_712",
+          "meaning_vi": "phát hiện"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "这种",
+          "pinyin": "zhè zhǒng",
+          "hanviet": "Giá Chủng"
+        },
+        {
+          "text": "红色",
+          "pinyin": "hóngsè",
+          "hanviet": "Hồng Sắc",
+          "hsk": 2,
+          "word_id": "hsk2_355",
+          "meaning_vi": "màu đỏ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "果实",
+          "pinyin": "guǒshí",
+          "hanviet": "Quả Thực",
+          "hsk": 5,
+          "word_id": "hsk5_453",
+          "meaning_vi": "thành quả, quả"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "并",
+          "pinyin": "bìng",
+          "hanviet": "Tinh",
+          "hsk": 4,
+          "word_id": "hsk4_39",
+          "meaning_vi": "và, đồng thời; hoàn toàn (không)"
+        },
+        {
+          "text": "将",
+          "pinyin": "jiāng",
+          "hanviet": "Tương",
+          "hsk": 4,
+          "word_id": "hsk4_356",
+          "meaning_vi": "sẽ; đem, lấy (như 把)"
+        },
+        {
+          "text": "其",
+          "pinyin": "qí",
+          "hanviet": "Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_853",
+          "meaning_vi": "của nó, của họ; trong đó"
+        },
+        {
+          "text": "带回",
+          "pinyin": "dài huí",
+          "hanviet": "Đới Hồi"
+        },
+        {
+          "text": "欧洲",
+          "pinyin": "Ōuzhōu",
+          "hanviet": "Âu Châu",
+          "hsk": 5,
+          "word_id": "hsk5_808",
+          "meaning_vi": "châu Âu"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "zh": "明代末年，辣椒通过海上丝绸之路传入中国，起初只被当作观赏植物栽培。",
+      "pinyin": "Míngdài mònián, làjiāo tōngguò hǎishàng sīchóuzhīlù chuánrù Zhōngguó, qǐchū zhǐ bèi dàngzuò guānshǎng zhíwù zāipéi.",
+      "vi": "Vào cuối triều Minh, ớt theo Con đường Tơ lụa trên biển truyền vào Trung Quốc, ban đầu chỉ được trồng như cây cảnh.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "明代",
+          "pinyin": "míng dài",
+          "hanviet": "Minh Đại"
+        },
+        {
+          "text": "末年",
+          "pinyin": "mò nián",
+          "hanviet": "Mạt Niên"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "辣椒",
+          "pinyin": "làjiāo",
+          "hanviet": "Lạt Tiêu",
+          "hsk": 6,
+          "word_id": "hsk6_811",
+          "meaning_vi": "ớt"
+        },
+        {
+          "text": "通过",
+          "pinyin": "tōngguò",
+          "hanviet": "Thông Qua",
+          "hsk": 4,
+          "word_id": "hsk4_744",
+          "meaning_vi": "thông qua"
+        },
+        {
+          "text": "海上",
+          "pinyin": "hǎi shàng",
+          "hanviet": "Hải Thướng"
+        },
+        {
+          "text": "丝绸之路",
+          "pinyin": "sī chóu zhī lù",
+          "hanviet": "Tơ Trù Chi Lộ"
+        },
+        {
+          "text": "传入",
+          "pinyin": "chuán rù",
+          "hanviet": "Truyền Nhập"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "起初",
+          "pinyin": "qǐchū",
+          "hanviet": "Khởi Sơ",
+          "hsk": 6,
+          "word_id": "hsk6_1018",
+          "meaning_vi": "ban đầu, lúc đầu"
+        },
+        {
+          "text": "只",
+          "pinyin": "zhī",
+          "hanviet": "Chỉ",
+          "hsk": 1,
+          "word_id": "hsk1_609",
+          "meaning_vi": "con, chiếc, cái (lượng từ: 一只猫)"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "当作",
+          "pinyin": "dàngzuò",
+          "hanviet": "Đương Tác",
+          "hsk": 5,
+          "word_id": "hsk5_252",
+          "meaning_vi": "coi như, xem như"
+        },
+        {
+          "text": "观赏植物",
+          "pinyin": "guān shǎng zhí wù",
+          "hanviet": "Quán Thưởng Thực Vật"
+        },
+        {
+          "text": "栽培",
+          "pinyin": "zāipéi",
+          "hanviet": "Tài Bồi",
+          "hsk": 7,
+          "word_id": "hsk7_5091",
+          "meaning_vi": "trồng, vun trồng (cũng nghĩa bồi dưỡng nhân tài)"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "zh": "后来人们发现辣椒具有驱寒开胃的功效，才逐渐成为厨房中不可缺少的调味品。",
+      "pinyin": "Hòulái rénmen fāxiàn làjiāo jùyǒu qūhán kāiwèi de gōngxiào, cái zhújiàn chéngwéi chúfáng zhōng bùkě quēshǎo de tiáowèipǐn.",
+      "vi": "Về sau con người phát hiện ớt có tác dụng trừ hàn kích thích vị giác, mới dần trở thành gia vị không thể thiếu trong căn bếp.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "后来",
+          "pinyin": "hòulái",
+          "hanviet": "Hậu Lai",
+          "hsk": 3,
+          "word_id": "hsk3_761",
+          "meaning_vi": "sau đó"
+        },
+        {
+          "text": "人们",
+          "pinyin": "rén men",
+          "hanviet": "Nhân Môn"
+        },
+        {
+          "text": "发现",
+          "pinyin": "fāxiàn",
+          "hanviet": "Phát Hiện",
+          "hsk": 3,
+          "word_id": "hsk3_712",
+          "meaning_vi": "phát hiện"
+        },
+        {
+          "text": "辣椒",
+          "pinyin": "làjiāo",
+          "hanviet": "Lạt Tiêu",
+          "hsk": 6,
+          "word_id": "hsk6_811",
+          "meaning_vi": "ớt"
+        },
+        {
+          "text": "具有",
+          "pinyin": "jùyǒu",
+          "hanviet": "Cụ Hữu",
+          "hsk": 5,
+          "word_id": "hsk5_643",
+          "meaning_vi": "có"
+        },
+        {
+          "text": "驱寒",
+          "pinyin": "qū hán",
+          "hanviet": "Khu Hàn"
+        },
+        {
+          "text": "开胃",
+          "pinyin": "kāi wèi",
+          "hanviet": "Khai Vị"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "功效",
+          "pinyin": "gōngxiào",
+          "hanviet": "Công Hiệu",
+          "hsk": 6,
+          "word_id": "hsk6_461",
+          "meaning_vi": "công hiệu, hiệu quả"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "才",
+          "pinyin": "cái",
+          "hanviet": "Tài"
+        },
+        {
+          "text": "逐渐",
+          "pinyin": "zhújiàn",
+          "hanviet": "Trục Tiêm",
+          "hsk": 5,
+          "word_id": "hsk5_1538",
+          "meaning_vi": "dần dần"
+        },
+        {
+          "text": "成为",
+          "pinyin": "chéngwéi",
+          "hanviet": "Thành Vi",
+          "hsk": 4,
+          "word_id": "hsk4_82",
+          "meaning_vi": "trở thành"
+        },
+        {
+          "text": "厨房",
+          "pinyin": "chúfáng",
+          "hanviet": "Trù Phòng",
+          "hsk": 4,
+          "word_id": "hsk4_93",
+          "meaning_vi": "nhà bếp"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "不可",
+          "pinyin": "bù kě",
+          "hanviet": "Bất Khả"
+        },
+        {
+          "text": "缺少",
+          "pinyin": "quēshǎo",
+          "hanviet": "Khuyết Thiểu",
+          "hsk": 4,
+          "word_id": "hsk4_605",
+          "meaning_vi": "thiếu"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "调味品",
+          "pinyin": "tiáo wèi pǐn",
+          "hanviet": "Điệu Vị Phẩm"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk3_916",
+    "hsk2_378",
+    "hsk3_712",
+    "hsk4_605",
+    "hsk5_617"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Ớt có nguồn gốc ban đầu từ đâu?",
+      "options_vi": [
+        "Vùng Mexico ở châu Mỹ",
+        "Đông Nam Á",
+        "Tây Á"
+      ],
+      "answer": 0,
+      "explanation_vi": "Ớt có nguồn gốc nguyên sản tại châu Mỹ (vùng Mexico ngày nay)."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Ai là người mang ớt từ châu Mỹ về châu Âu?",
+      "options_vi": [
+        "Columbus",
+        "Marco Polo",
+        "Magellan"
+      ],
+      "answer": 0,
+      "explanation_vi": "Columbus phát hiện quả ớt khi đến châu Mỹ và mang về châu Âu."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Khi mới truyền vào Trung Quốc thời nhà Minh, ớt được dùng làm gì?",
+      "options_vi": [
+        "Làm cây cảnh ngắm hoa trái",
+        "Làm thuốc nhuộm tóc",
+        "Làm thức ăn gia súc"
+      ],
+      "answer": 0,
+      "explanation_vi": "Ban đầu ớt chỉ được trồng trong vườn hoa làm cây cảnh thưởng thức."
+    }
+  ]
+}

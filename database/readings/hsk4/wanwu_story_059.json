@@ -1,0 +1,776 @@
+{
+  "id": "wanwu_story_059",
+  "chapter_no": 59,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 3,
+  "book_page_start": 618,
+  "book_page_end": 633,
+  "page_display": "Trang 618 - 633",
+  "title": {
+    "zh": "民乐：古老声音的流变",
+    "vi": "Âm nhạc dân tộc: Dòng chảy âm thanh cổ xưa"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🪕",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_059.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_059.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 618 - 633 · Ngũ cung 'Cung, Thương, Giốc, Chủy, Vũ' và hành trình hòa quyện của cổ cầm, nhị hồ, đàn tỳ bà qua các thời đại.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "中国传统民族音乐拥有数千年的深厚底蕴，琴声悠扬如高山流水，令人心驰神往。",
+      "pinyin": "Zhōngguó chuántǒng mínzú yīnyuè yǒuzhe shùqiān nián de shēnhòu dǐyùn, qínshēng yōuyáng rú gāoshān-liúshuǐ, lìng rén xīnchí-shénwǎng.",
+      "vi": "Âm nhạc dân tộc truyền thống Trung Hoa có chiều sâu ngàn năm, tiếng đàn thanh thoát như núi cao nước chảy, cuốn hút tâm can.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "传统",
+          "pinyin": "chuántǒng",
+          "hanviet": "Truyền Thống",
+          "hsk": 5,
+          "word_id": "hsk5_187",
+          "meaning_vi": "truyền thống"
+        },
+        {
+          "text": "民族音乐",
+          "pinyin": "mín zú yīn yuè",
+          "hanviet": "Dân Tộc Âm Lạc"
+        },
+        {
+          "text": "拥有",
+          "pinyin": "yōngyǒu",
+          "hanviet": "Ủng Hữu",
+          "hsk": 5,
+          "word_id": "hsk5_1389",
+          "meaning_vi": "sở hữu, có"
+        },
+        {
+          "text": "数千年",
+          "pinyin": "shù qiān nián",
+          "hanviet": "Sổ Thiên Niên"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "深厚",
+          "pinyin": "shēnhòu",
+          "hanviet": "Thâm Hậu",
+          "hsk": 5,
+          "word_id": "hsk5_983",
+          "meaning_vi": "sâu sắc, sâu đậm, thâm hậu"
+        },
+        {
+          "text": "底蕴",
+          "pinyin": "dǐyùn",
+          "hanviet": "Để Uẩn",
+          "hsk": 7,
+          "word_id": "hsk7_852",
+          "meaning_vi": "bề dày, chiều sâu (văn hóa)"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "琴声",
+          "pinyin": "qín shēng",
+          "hanviet": "Cầm Thanh"
+        },
+        {
+          "text": "悠扬",
+          "pinyin": "yōu yáng",
+          "hanviet": "Du Dương"
+        },
+        {
+          "text": "如",
+          "pinyin": "rú",
+          "hanviet": "Như",
+          "hsk": 5,
+          "word_id": "hsk5_932",
+          "meaning_vi": "chẳng hạn như"
+        },
+        {
+          "text": "高山流水",
+          "pinyin": "gāo shān liú shuǐ",
+          "hanviet": "Cao Sơn Lưu Thuỷ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "令人",
+          "pinyin": "lìng rén",
+          "hanviet": "Lệnh Nhân"
+        },
+        {
+          "text": "心驰神往",
+          "pinyin": "xīn chí shén wǎng",
+          "hanviet": "Tâm Trì Thần Vãng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "古人以‘宫、商、角、徵、羽’五声为基础音律，讲究‘乐者天地之和’的自然审美情趣。",
+      "pinyin": "Gǔrén yǐ ‘gōng, shāng, jué, zhǐ, yǔ’ wǔshēng wéi jīchǔ yīnlǜ, jiǎngjiù ‘yuè zhě tiāndì zhī hé’ de zìrán shěnměi qíngqù.",
+      "vi": "Cổ nhân lấy năm cung 'Cung, Thương, Giốc, Chủy, Vũ' làm thang âm cơ bản, đề cao vẻ đẹp tự nhiên 'âm nhạc là hòa khí của đất trời'.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "古人",
+          "pinyin": "gǔrén",
+          "hanviet": "Cổ Nhân",
+          "hsk": 6,
+          "word_id": "hsk6_478",
+          "meaning_vi": "người xưa, người cổ đại"
+        },
+        {
+          "text": "以",
+          "pinyin": "yǐ",
+          "hanviet": "Dĩ",
+          "hsk": 5,
+          "word_id": "hsk5_1362",
+          "meaning_vi": "bằng, dùng"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "宫",
+          "pinyin": "gōng",
+          "hanviet": "Cung",
+          "hsk": 6,
+          "word_id": "hsk6_451",
+          "meaning_vi": "cung điện, hoàng cung"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "商",
+          "pinyin": "shāng",
+          "hanviet": "Thương"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "角",
+          "pinyin": "jiǎo",
+          "hanviet": "Giác",
+          "hsk": 3,
+          "word_id": "hsk3_790",
+          "meaning_vi": "góc; hào (tiền)"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "徵",
+          "pinyin": "zhēng",
+          "hanviet": "Trưng"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "羽",
+          "pinyin": "yǔ",
+          "hanviet": "Vũ"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "五声",
+          "pinyin": "wǔ shēng",
+          "hanviet": "Ngũ Thanh"
+        },
+        {
+          "text": "为",
+          "pinyin": "wèi",
+          "hanviet": "Vi",
+          "hsk": 3,
+          "word_id": "hsk3_954",
+          "meaning_vi": "vì, cho"
+        },
+        {
+          "text": "基础",
+          "pinyin": "jīchǔ",
+          "hanviet": "Cơ Sở",
+          "hsk": 4,
+          "word_id": "hsk4_321",
+          "meaning_vi": "cơ sở, nền tảng"
+        },
+        {
+          "text": "音律",
+          "pinyin": "yīn lǜ",
+          "hanviet": "Âm Luật"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "讲究",
+          "pinyin": "jiǎngjiu",
+          "hanviet": "Giảng Cứu",
+          "hsk": 5,
+          "word_id": "hsk5_582",
+          "meaning_vi": "chú trọng, cầu kỳ"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "乐者",
+          "pinyin": "lè zhě",
+          "hanviet": "Lạc Giả"
+        },
+        {
+          "text": "天地",
+          "pinyin": "tiāndì",
+          "hanviet": "Thiên Địa",
+          "hsk": 7,
+          "word_id": "hsk7_4009",
+          "meaning_vi": "trời đất; thế giới; khoảng trời riêng"
+        },
+        {
+          "text": "之",
+          "pinyin": "pǔtōnghuà",
+          "hanviet": "Phổ Thông Thoại",
+          "hsk": 4,
+          "word_id": "hsk4_563",
+          "meaning_vi": "tiếng phổ thông (Trung Quốc)"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "自然",
+          "pinyin": "zìrán",
+          "hanviet": "Tự Nhiên",
+          "hsk": 4,
+          "word_id": "hsk4_981",
+          "meaning_vi": "tự nhiên"
+        },
+        {
+          "text": "审美",
+          "pinyin": "shěnměi",
+          "hanviet": "Thẩm Mĩ/thẩm Mỹ",
+          "hsk": 6,
+          "word_id": "hsk6_1168",
+          "meaning_vi": "thẩm mỹ"
+        },
+        {
+          "text": "情趣",
+          "pinyin": "qíng qù",
+          "hanviet": "Tình Thú"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "在古代文人的案头，古琴不仅是一种乐器，更是修身养性、抒发情怀的精神伴侣。",
+      "pinyin": "Zài gǔdài wénrén de àntóu, gǔqín bùjǐn shì yì zhǒng yuèqì, gèng shì xiūshēn-yǎngxìng, shūfā qínghuái de jīngshén bànlǚ.",
+      "vi": "Trên bàn đọc của văn nhân xưa, cổ cầm không đơn thuần là nhạc cụ mà còn là người bạn tri kỷ để tu tâm dưỡng tính, gửi gắm tâm tư.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "文人",
+          "pinyin": "wénrén",
+          "hanviet": "Văn Nhân",
+          "hsk": 7,
+          "word_id": "hsk7_4278",
+          "meaning_vi": "văn nhân; mặc khách; học giả"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "案头",
+          "pinyin": "àn tóu",
+          "hanviet": "Án Đầu"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "古琴",
+          "pinyin": "gǔ qín",
+          "hanviet": "Cổ Cầm"
+        },
+        {
+          "text": "不仅",
+          "pinyin": "bùjǐn",
+          "hanviet": "Bất Cận",
+          "hsk": 4,
+          "word_id": "hsk4_55",
+          "meaning_vi": "không chỉ"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "一种",
+          "pinyin": "yī zhǒng",
+          "hanviet": "Nhất Chủng"
+        },
+        {
+          "text": "乐器",
+          "pinyin": "yuèqì",
+          "hanviet": "Nhạc Khí",
+          "hsk": 6,
+          "word_id": "hsk6_1630",
+          "meaning_vi": "nhạc cụ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "更是",
+          "pinyin": "gèng shì",
+          "hanviet": "Canh Thị"
+        },
+        {
+          "text": "修身养性",
+          "pinyin": "xiū shēn yǎng xìng",
+          "hanviet": "Tu Thân Dưỡng Tính"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "抒发",
+          "pinyin": "shū fā",
+          "hanviet": "Trữ Phát"
+        },
+        {
+          "text": "情怀",
+          "pinyin": "qínghuái",
+          "hanviet": "Tình Hoài",
+          "hsk": 7,
+          "word_id": "hsk7_3317",
+          "meaning_vi": "tấm lòng; tình cảm sâu sắc"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "精神",
+          "pinyin": "jīngshen",
+          "hanviet": "Tinh Thần",
+          "hsk": 5,
+          "word_id": "hsk5_623",
+          "meaning_vi": "tinh thần; minh mẫn, hoạt bát"
+        },
+        {
+          "text": "伴侣",
+          "pinyin": "bànlǚ",
+          "hanviet": "Bạn Lữ",
+          "hsk": 7,
+          "word_id": "hsk7_85",
+          "meaning_vi": "bạn đời, người bạn đồng hành"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "汉唐以来，琵琶、二胡等源自西域的异域乐器逐渐融入华夏乐章，演化出丰富多彩的民乐体系。",
+      "pinyin": "Hàn-Táng yǐlái, pípá, èrhú děng yuánzì xīyù de yìyù yuèqì zhújiàn róngrù Huáxià yuèzhāng, yǎnhuà chū fēngfù-duōcǎi de mínyuè tǐxì.",
+      "vi": "Từ thời Hán Đường, các nhạc cụ du nhập từ Tây Vực như tỳ bà, nhị hồ đã hòa nhập vào nhạc khúc Hoa Hạ, làm giàu cho nền âm nhạc.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "汉唐",
+          "pinyin": "hàn táng",
+          "hanviet": "Hán Đường"
+        },
+        {
+          "text": "以来",
+          "pinyin": "yǐlái",
+          "hanviet": "Dĩ Lai",
+          "hsk": 5,
+          "word_id": "hsk5_1364",
+          "meaning_vi": "từ trước đến nay"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "琵琶",
+          "pinyin": "pí pá",
+          "hanviet": "Tỳ Bà"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "二胡",
+          "pinyin": "èr hú",
+          "hanviet": "Nhị Hồ"
+        },
+        {
+          "text": "等",
+          "pinyin": "děng",
+          "hanviet": "Đẳng",
+          "hsk": 2,
+          "word_id": "hsk2_20",
+          "meaning_vi": "đợi, chờ"
+        },
+        {
+          "text": "源自",
+          "pinyin": "yuán zì",
+          "hanviet": "Nguyên Tự"
+        },
+        {
+          "text": "西域",
+          "pinyin": "xī yù",
+          "hanviet": "Tây Vực"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "异域",
+          "pinyin": "yì yù",
+          "hanviet": "Dị Vực"
+        },
+        {
+          "text": "乐器",
+          "pinyin": "yuèqì",
+          "hanviet": "Nhạc Khí",
+          "hsk": 6,
+          "word_id": "hsk6_1630",
+          "meaning_vi": "nhạc cụ"
+        },
+        {
+          "text": "逐渐",
+          "pinyin": "zhújiàn",
+          "hanviet": "Trục Tiêm",
+          "hsk": 5,
+          "word_id": "hsk5_1538",
+          "meaning_vi": "dần dần"
+        },
+        {
+          "text": "融入",
+          "pinyin": "róngrù",
+          "hanviet": "Dung Nhập",
+          "hsk": 6,
+          "word_id": "hsk6_1116",
+          "meaning_vi": "hòa nhập vào, hòa mình vào"
+        },
+        {
+          "text": "华夏",
+          "pinyin": "huá xià",
+          "hanviet": "Hoa Hạ"
+        },
+        {
+          "text": "乐章",
+          "pinyin": "yuè zhāng",
+          "hanviet": "Lạc Chương"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "演化出",
+          "pinyin": "yǎn huà chū",
+          "hanviet": "Diễn Hoa Xuất"
+        },
+        {
+          "text": "丰富多彩",
+          "pinyin": "fēngfù-duōcǎi",
+          "hanviet": "Phong Phú Đa Thái",
+          "hsk": 5,
+          "word_id": "hsk5_358",
+          "meaning_vi": "phong phú đa dạng, muôn màu muôn vẻ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "民乐",
+          "pinyin": "mín yuè",
+          "hanviet": "Dân Lạc"
+        },
+        {
+          "text": "体系",
+          "pinyin": "tǐxì",
+          "hanviet": "Thể Hệ",
+          "hsk": 6,
+          "word_id": "hsk6_1286",
+          "meaning_vi": "hệ thống"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "现代民乐融合交响乐编曲技法，让传统竹笛与古筝在国际舞台上奏响震撼人心的华美乐章。",
+      "pinyin": "Xiàndài mínyuè rónghé jiāoxiǎngyuè biānqǔ jìfǎ, ràng chuántǒng zhúdí yǔ gǔzhēng zài guójì wǔtái shàng zòuxiǎng zhènhàn-rénxīn de huáměi yuèzhāng.",
+      "vi": "Âm nhạc dân tộc ngày nay kết hợp cùng nghệ thuật phối khí giao hưởng, đưa tiếng sáo trúc và đàn tranh ngân vang khắp vũ đài quốc tế.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "现代",
+          "pinyin": "xiàndài",
+          "hanviet": "Hiện Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1239",
+          "meaning_vi": "hiện đại"
+        },
+        {
+          "text": "民乐",
+          "pinyin": "mín yuè",
+          "hanviet": "Dân Lạc"
+        },
+        {
+          "text": "融合",
+          "pinyin": "rónghé",
+          "hanviet": "Dung Hợp",
+          "hsk": 6,
+          "word_id": "hsk6_1113",
+          "meaning_vi": "dung hợp, hòa hợp, gắn kết"
+        },
+        {
+          "text": "交响乐",
+          "pinyin": "jiāoxiǎngyuè",
+          "hanviet": "Giao Hưởng Lạc",
+          "hsk": 7,
+          "word_id": "hsk7_2043",
+          "meaning_vi": "nhạc giao hưởng, bản giao hưởng"
+        },
+        {
+          "text": "编曲",
+          "pinyin": "biān qū",
+          "hanviet": "Biên Khúc"
+        },
+        {
+          "text": "技法",
+          "pinyin": "jì fǎ",
+          "hanviet": "Kỹ Pháp"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "让",
+          "pinyin": "ràng",
+          "hanviet": "Nhượng",
+          "hsk": 2,
+          "word_id": "hsk2_422",
+          "meaning_vi": "để cho, khiến"
+        },
+        {
+          "text": "传统",
+          "pinyin": "chuántǒng",
+          "hanviet": "Truyền Thống",
+          "hsk": 5,
+          "word_id": "hsk5_187",
+          "meaning_vi": "truyền thống"
+        },
+        {
+          "text": "竹笛",
+          "pinyin": "zhú dí",
+          "hanviet": "Trúc Địch"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "古筝",
+          "pinyin": "gǔ zhēng",
+          "hanviet": "Cổ Tranh"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "国际舞台",
+          "pinyin": "guó jì wǔ tái",
+          "hanviet": "Quốc Tế Vũ Đài"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "奏响",
+          "pinyin": "zòu xiǎng",
+          "hanviet": "Tấu Hưởng"
+        },
+        {
+          "text": "震撼人心",
+          "pinyin": "zhèn hàn rén xīn",
+          "hanviet": "Chấn Hám Nhân Tâm"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "华美",
+          "pinyin": "huá měi",
+          "hanviet": "Hoa Mỹ"
+        },
+        {
+          "text": "乐章",
+          "pinyin": "yuè zhāng",
+          "hanviet": "Lạc Chương"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk5_187",
+    "hsk3_1014",
+    "hsk4_321",
+    "hsk4_204",
+    "hsk1_610"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Hệ thống ngũ cung cơ bản trong âm nhạc cổ truyền gồm những nốt nào?",
+      "options_vi": [
+        "Cung, Thương, Giốc, Chủy, Vũ (宫、商、角、徵、羽)",
+        "Đồ, Rê, Mi, Pha, Son",
+        "Một, Hai, Ba, Bốn, Năm"
+      ],
+      "answer": 0,
+      "explanation_vi": "Ngũ thanh truyền thống phương Đông là Cung, Thương, Giốc, Chủy, Vũ."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Nhạc cụ nào được coi là biểu tượng thanh cao tu tâm dưỡng tính của văn nhân cổ đại?",
+      "options_vi": [
+        "Đàn Cổ Cầm (古琴)",
+        "Kèn đồng",
+        "Trống trận"
+      ],
+      "answer": 0,
+      "explanation_vi": "Cổ Cầm đứng đầu trong 'Cầm Kỳ Thi Họa' đại diện cho học vấn thanh nhã."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Những nhạc cụ nào bắt nguồn từ Tây Vực sau đó được hòa nhập thành nhạc cụ dân tộc quen thuộc?",
+      "options_vi": [
+        "Tỳ bà và đàn Nhị hồ",
+        "Chuông đồng",
+        "Khánh đá"
+      ],
+      "answer": 0,
+      "explanation_vi": "Tỳ bà và nhị hồ (chữ Hồ nghĩa là người phương bắc/Tây Vực) được du nhập và bản địa hóa xuất sắc."
+    }
+  ]
+}

@@ -1,0 +1,861 @@
+{
+  "id": "wanwu_story_060",
+  "chapter_no": 60,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 3,
+  "book_page_start": 633,
+  "book_page_end": 645,
+  "page_display": "Trang 633 - 645",
+  "title": {
+    "zh": "“大圣”：俺老孙来也",
+    "vi": "Tề Thiên Đại Thánh: Lão Tôn tới đây!"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🐒",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_060.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_060.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 633 - 645 · Hình tượng Tôn Ngộ Không trong Tây Du Ký: cội nguồn văn học dân gian và biểu tượng tự do, bất khuất.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "只要提起头戴金箍、手握如意金箍棒的美猴王孙悟空，几乎每个中国人都能讲出一段精彩故事。",
+      "pinyin": "Zhǐyào tíqǐ tóu dài jīngū, shǒu wò rúyì-jīngūbàng de Měihóuwáng Sūn Wùkōng, jīhū měi gè Zhōngguó rén dōu néng jiǎngchū yí duàn jīngcǎi gùshi.",
+      "vi": "Chỉ cần nhắc tới Mỹ Hầu Vương Tôn Ngộ Không đầu đeo vòng kim cô, tay cầm gậy Như Ý, hầu như người nào cũng kể được câu chuyện ly kỳ.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "只要",
+          "pinyin": "zhǐyào",
+          "hanviet": "Chỉ Yêu",
+          "hsk": 3,
+          "word_id": "hsk3_1058",
+          "meaning_vi": "chỉ cần"
+        },
+        {
+          "text": "提起",
+          "pinyin": "tíqǐ",
+          "hanviet": "Đề Khởi",
+          "hsk": 5,
+          "word_id": "hsk5_1116",
+          "meaning_vi": "nhắc đến, đề cập tới"
+        },
+        {
+          "text": "头戴",
+          "pinyin": "tóu dài",
+          "hanviet": "Đầu Đội"
+        },
+        {
+          "text": "金箍",
+          "pinyin": "jīn gū",
+          "hanviet": "Kim Cô"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "手握",
+          "pinyin": "shǒu wò",
+          "hanviet": "Thủ Ác"
+        },
+        {
+          "text": "如意",
+          "pinyin": "rúyì",
+          "hanviet": "Như Ý",
+          "hsk": 7,
+          "word_id": "hsk7_3454",
+          "meaning_vi": "như ý; vừa lòng; toại nguyện"
+        },
+        {
+          "text": "金箍棒",
+          "pinyin": "jīn gū bàng",
+          "hanviet": "Kim Cô Bổng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "美猴王",
+          "pinyin": "měi hóu wáng",
+          "hanviet": "Mỹ Hầu Vương"
+        },
+        {
+          "text": "孙悟空",
+          "pinyin": "sūn wù kōng",
+          "hanviet": "Tôn Ngộ Không"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "几乎",
+          "pinyin": "jīhū",
+          "hanviet": "Kỷ Hồ",
+          "hsk": 3,
+          "word_id": "hsk3_777",
+          "meaning_vi": "hầu như"
+        },
+        {
+          "text": "每个",
+          "pinyin": "měi gè",
+          "hanviet": "Mỗi Cá"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "人",
+          "pinyin": "rén",
+          "hanviet": "Nhân",
+          "hsk": 1,
+          "word_id": "hsk1_243",
+          "meaning_vi": "người"
+        },
+        {
+          "text": "都",
+          "pinyin": "dōu",
+          "hanviet": "Đô",
+          "hsk": 1,
+          "word_id": "hsk1_76",
+          "meaning_vi": "đều"
+        },
+        {
+          "text": "能",
+          "pinyin": "néng",
+          "hanviet": "Năng",
+          "hsk": 1,
+          "word_id": "hsk1_212",
+          "meaning_vi": "có thể"
+        },
+        {
+          "text": "讲",
+          "pinyin": "jiǎng",
+          "hanviet": "Giảng",
+          "hsk": 3,
+          "word_id": "hsk3_789",
+          "meaning_vi": "nói, giảng giải"
+        },
+        {
+          "text": "出",
+          "pinyin": "chū",
+          "hanviet": "Xuất",
+          "hsk": 2,
+          "word_id": "hsk2_316",
+          "meaning_vi": "ra, đi ra"
+        },
+        {
+          "text": "一段",
+          "pinyin": "yī duàn",
+          "hanviet": "Nhất Đoạn"
+        },
+        {
+          "text": "精彩",
+          "pinyin": "jīngcǎi",
+          "hanviet": "Tinh Thái",
+          "hsk": 4,
+          "word_id": "hsk4_395",
+          "meaning_vi": "hay, đặc sắc"
+        },
+        {
+          "text": "故事",
+          "pinyin": "gùshi",
+          "hanviet": "Cố Sự",
+          "hsk": 3,
+          "word_id": "hsk3_741",
+          "meaning_vi": "câu chuyện"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "在明代吴承恩的古典名著《西游记》中，孙悟空被塑造成为一位神通广大、蔑视强权的齐天大圣。",
+      "pinyin": "Zài Míngdài Wú Chéng'ēn de gǔdiǎn míngzhù 《Xīyóujì》 zhōng, Sūn Wùkōng bèi sùzào chéngwéi yí wèi shéntōng-guǎngdà, mièshì qiángquán de Qítiān Dàshèng.",
+      "vi": "Trong danh tác cổ điển Tây Du Ký của Ngô Thừa Ân đời Minh, Tôn Ngộ Không được khắc họa là Tề Thiên Đại Thánh thần thông quảng đại, không sợ cường quyền.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "明代",
+          "pinyin": "míng dài",
+          "hanviet": "Minh Đại"
+        },
+        {
+          "text": "吴承恩",
+          "pinyin": "wú chéng ēn",
+          "hanviet": "Ngô Thừa Ân"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "古典名著",
+          "pinyin": "gǔ diǎn míng zhù",
+          "hanviet": "Cổ Điển Danh Trước"
+        },
+        {
+          "text": "《"
+        },
+        {
+          "text": "西游记",
+          "pinyin": "xī yóu jì",
+          "hanviet": "Tây Du Ký"
+        },
+        {
+          "text": "》"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "孙悟空",
+          "pinyin": "sūn wù kōng",
+          "hanviet": "Tôn Ngộ Không"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "塑造",
+          "pinyin": "sùzào",
+          "hanviet": "Tố Tạo",
+          "hsk": 6,
+          "word_id": "hsk6_1245",
+          "meaning_vi": "tạo hình, xây dựng (hình tượng)"
+        },
+        {
+          "text": "成为",
+          "pinyin": "chéngwéi",
+          "hanviet": "Thành Vi",
+          "hsk": 4,
+          "word_id": "hsk4_82",
+          "meaning_vi": "trở thành"
+        },
+        {
+          "text": "一位",
+          "pinyin": "yī wèi",
+          "hanviet": "Nhất Vị"
+        },
+        {
+          "text": "神通广大",
+          "pinyin": "shén tōng guǎng dà",
+          "hanviet": "Thần Thông Nghiễm Đại"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "蔑视",
+          "pinyin": "mièshì",
+          "hanviet": "Miệt Thị",
+          "hsk": 7,
+          "word_id": "hsk7_2827",
+          "meaning_vi": "khinh miệt, coi thường"
+        },
+        {
+          "text": "强权",
+          "pinyin": "qiáng quán",
+          "hanviet": "Cường Quyền"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "齐天大圣",
+          "pinyin": "qí tiān dà shèng",
+          "hanviet": "Tề Thiên Đại Khốt"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "学者研究发现，孙悟空的文学形象可能融合了印度史诗中的神猴哈奴曼以及中国古代无支祁水怪传说。",
+      "pinyin": "Xuézhě yánjiū fāxiàn, Sūn Wùkōng de wénxué xíngxiàng kěnéng rónghé le Yìndù shǐshī zhōng de shénhóu Hānǔmàn yǐjí Zhōngguó gǔdài Wúzhīqí shuǐguài chuánshuō.",
+      "vi": "Nghiên cứu văn học chỉ ra hình tượng Ngộ Không có thể giao thoa từ thần khỉ Hanuman trong sử thi Ấn Độ và truyền thuyết vượn nước Vô Chi Kỳ.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "学者",
+          "pinyin": "xuézhě",
+          "hanviet": "Học Giả",
+          "hsk": 5,
+          "word_id": "hsk5_1314",
+          "meaning_vi": "học giả, nhà nghiên cứu"
+        },
+        {
+          "text": "研究",
+          "pinyin": "yánjiū",
+          "hanviet": "Nghiên Cứu",
+          "hsk": 4,
+          "word_id": "hsk4_846",
+          "meaning_vi": "nghiên cứu"
+        },
+        {
+          "text": "发现",
+          "pinyin": "fāxiàn",
+          "hanviet": "Phát Hiện",
+          "hsk": 3,
+          "word_id": "hsk3_712",
+          "meaning_vi": "phát hiện"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "孙悟空",
+          "pinyin": "sūn wù kōng",
+          "hanviet": "Tôn Ngộ Không"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "文学",
+          "pinyin": "wénxué",
+          "hanviet": "Văn Học",
+          "hsk": 5,
+          "word_id": "hsk5_1200",
+          "meaning_vi": "văn học"
+        },
+        {
+          "text": "形象",
+          "pinyin": "xíngxiàng",
+          "hanviet": "Hình Tượng",
+          "hsk": 5,
+          "word_id": "hsk5_1295",
+          "meaning_vi": "hình tượng"
+        },
+        {
+          "text": "可能",
+          "pinyin": "kěnéng",
+          "hanviet": "Khả Năng",
+          "hsk": 2,
+          "word_id": "hsk2_382",
+          "meaning_vi": "có thể"
+        },
+        {
+          "text": "融合",
+          "pinyin": "rónghé",
+          "hanviet": "Dung Hợp",
+          "hsk": 6,
+          "word_id": "hsk6_1113",
+          "meaning_vi": "dung hợp, hòa hợp, gắn kết"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "印度",
+          "pinyin": "yìn dù",
+          "hanviet": "Ấn Độ"
+        },
+        {
+          "text": "史诗",
+          "pinyin": "shǐ shī",
+          "hanviet": "Sử Thi"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "神猴哈",
+          "pinyin": "shén hóu hā",
+          "hanviet": "Thần Hầu Ha"
+        },
+        {
+          "text": "奴曼",
+          "pinyin": "nú màn",
+          "hanviet": "Nô Mạn"
+        },
+        {
+          "text": "以及",
+          "pinyin": "yǐjí",
+          "hanviet": "Dĩ Cập",
+          "hsk": 5,
+          "word_id": "hsk5_1363",
+          "meaning_vi": "cùng với, và"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "无支",
+          "pinyin": "wú zhī",
+          "hanviet": "Vô Chi"
+        },
+        {
+          "text": "祁",
+          "pinyin": "qí",
+          "hanviet": "Kỳ"
+        },
+        {
+          "text": "水怪",
+          "pinyin": "shuǐ guài",
+          "hanviet": "Thuỷ Quái"
+        },
+        {
+          "text": "传说",
+          "pinyin": "chuánshuō",
+          "hanviet": "Truyền Thuyết",
+          "hsk": 5,
+          "word_id": "hsk5_186",
+          "meaning_vi": "truyền thuyết"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "在历经九九八十一难的取经路上，大圣机智勇敢、降妖除魔，始终忠诚护送师父唐僧到达西天。",
+      "pinyin": "Zài lìjīng jiǔjiǔ-bāshíyī nàn de qǔjīng lùshàng, Dàshèng jīzhì yǒnggǎn, xiángyāo-chúmó, shǐzhōng zhōngchéng hùsòng shīfu Tángsēng dàodá xītiān.",
+      "vi": "Trên đường thỉnh kinh qua 81 kiếp nạn, Đại Thánh mưu trí dũng cảm hàng yêu trừ ma, trước sau một lòng trung thành hộ tống sư phụ Đường Tăng đến Tây phương.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "历经",
+          "pinyin": "lìjīng",
+          "hanviet": "Lịch Kinh",
+          "hsk": 6,
+          "word_id": "hsk6_839",
+          "meaning_vi": "trải qua, nếm trải qua (thử thách, năm tháng)"
+        },
+        {
+          "text": "九九八十一",
+          "pinyin": "jiǔ jiǔ bā shí yī",
+          "hanviet": "Cửu Cửu Bát Thập Nhất"
+        },
+        {
+          "text": "难",
+          "pinyin": "nán",
+          "hanviet": "Nan",
+          "hsk": 3,
+          "word_id": "hsk3_857",
+          "meaning_vi": "khó"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "取经",
+          "pinyin": "qǔjīng",
+          "hanviet": "Thủ Kinh",
+          "hsk": 7,
+          "word_id": "hsk7_3349",
+          "meaning_vi": "học hỏi kinh nghiệm"
+        },
+        {
+          "text": "路上",
+          "pinyin": "lùshang",
+          "hanviet": "Lộ Thướng",
+          "hsk": 2,
+          "word_id": "hsk2_393",
+          "meaning_vi": "trên đường"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "大圣",
+          "pinyin": "dà shèng",
+          "hanviet": "Đại Khốt"
+        },
+        {
+          "text": "机智勇敢",
+          "pinyin": "jī zhì yǒng gǎn",
+          "hanviet": "Cơ Trí Dũng Cảm"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "降妖除魔",
+          "pinyin": "jiàng yāo chú mó",
+          "hanviet": "Giáng Yêu Trừ Ma"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "始终",
+          "pinyin": "shǐzhōng",
+          "hanviet": "Thủy Chung",
+          "hsk": 5,
+          "word_id": "hsk5_1027",
+          "meaning_vi": "trước sau, luôn luôn"
+        },
+        {
+          "text": "忠诚",
+          "pinyin": "zhōngchéng",
+          "hanviet": "Trung Thành",
+          "hsk": 7,
+          "word_id": "hsk7_5352",
+          "meaning_vi": "trung thành, lòng trung thành"
+        },
+        {
+          "text": "护送",
+          "pinyin": "hù sòng",
+          "hanviet": "Hộ Tống"
+        },
+        {
+          "text": "师父",
+          "pinyin": "shīfu",
+          "hanviet": "Sư Phụ",
+          "hsk": 6,
+          "word_id": "hsk6_1178",
+          "meaning_vi": "sư phụ, thầy (dạy nghề/võ)"
+        },
+        {
+          "text": "唐僧",
+          "pinyin": "táng sēng",
+          "hanviet": "Đường Tăng"
+        },
+        {
+          "text": "到达",
+          "pinyin": "dàodá",
+          "hanviet": "Đáo Đạt",
+          "hsk": 5,
+          "word_id": "hsk5_256",
+          "meaning_vi": "đến nơi, đạt tới"
+        },
+        {
+          "text": "西天",
+          "pinyin": "xī tiān",
+          "hanviet": "Tây Thiên"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "孙悟空那份不畏艰难、追求自由与正义的叛逆精神，让他成为了跨越国界与时空的超级文化符号。",
+      "pinyin": "Sūn Wùkōng nà fèn bú wèi jiānnán, zhuīqiú zìyóu yǔ zhèngyì de pànnì jīngshén, ràng tā chéngwéi le kuàyuè guójiè yǔ shíkōng de chāojí wénhuà fúhào.",
+      "vi": "Tinh thần bất khuất trước gian nguy, hướng tới tự do và chính nghĩa đã biến Tôn Ngộ Không thành biểu tượng văn hóa trường tồn qua thời gian.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "孙悟空",
+          "pinyin": "sūn wù kōng",
+          "hanviet": "Tôn Ngộ Không"
+        },
+        {
+          "text": "那",
+          "pinyin": "nà",
+          "hanviet": "Na",
+          "hsk": 1,
+          "word_id": "hsk1_207",
+          "meaning_vi": "đó, kia"
+        },
+        {
+          "text": "份",
+          "pinyin": "fèn",
+          "hanviet": "Phần",
+          "hsk": 4,
+          "word_id": "hsk4_203",
+          "meaning_vi": "phần (lượng từ)"
+        },
+        {
+          "text": "不畏艰难",
+          "pinyin": "bù wèi jiān nán",
+          "hanviet": "Bất Uý Gian Nan"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "追求",
+          "pinyin": "zhuīqiú",
+          "hanviet": "Truy Cầu",
+          "hsk": 5,
+          "word_id": "hsk5_1566",
+          "meaning_vi": "theo đuổi"
+        },
+        {
+          "text": "自由",
+          "pinyin": "zìyóu",
+          "hanviet": "Tự Do",
+          "hsk": 5,
+          "word_id": "hsk5_1579",
+          "meaning_vi": "tự do"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "正义",
+          "pinyin": "zhèngyì",
+          "hanviet": "Chính Nghĩa",
+          "hsk": 6,
+          "word_id": "hsk6_1692",
+          "meaning_vi": "chính nghĩa, công lý"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "叛逆",
+          "pinyin": "pànnì",
+          "hanviet": "Phản Nghịch",
+          "hsk": 7,
+          "word_id": "hsk7_3020",
+          "meaning_vi": "nổi loạn; phản nghịch; chống đối"
+        },
+        {
+          "text": "精神",
+          "pinyin": "jīngshen",
+          "hanviet": "Tinh Thần",
+          "hsk": 5,
+          "word_id": "hsk5_623",
+          "meaning_vi": "tinh thần; minh mẫn, hoạt bát"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "让",
+          "pinyin": "ràng",
+          "hanviet": "Nhượng",
+          "hsk": 2,
+          "word_id": "hsk2_422",
+          "meaning_vi": "để cho, khiến"
+        },
+        {
+          "text": "他",
+          "pinyin": "tā",
+          "hanviet": "Tha",
+          "hsk": 1,
+          "word_id": "hsk1_286",
+          "meaning_vi": "anh ấy, nó"
+        },
+        {
+          "text": "成为",
+          "pinyin": "chéngwéi",
+          "hanviet": "Thành Vi",
+          "hsk": 4,
+          "word_id": "hsk4_82",
+          "meaning_vi": "trở thành"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "跨越国界",
+          "pinyin": "kuà yuè guó jiè",
+          "hanviet": "Khoá Việt Quốc Giới"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "时空",
+          "pinyin": "shíkōng",
+          "hanviet": "Thời Không",
+          "hsk": 7,
+          "word_id": "hsk7_3672",
+          "meaning_vi": "không gian và thời gian; thời không"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "超级",
+          "pinyin": "chāojí",
+          "hanviet": "Siêu Cấp",
+          "hsk": 5,
+          "word_id": "hsk5_119",
+          "meaning_vi": "siêu, hạng nhất"
+        },
+        {
+          "text": "文化",
+          "pinyin": "wénhuà",
+          "hanviet": "Văn Hóa",
+          "hsk": 3,
+          "word_id": "hsk3_957",
+          "meaning_vi": "văn hóa"
+        },
+        {
+          "text": "符号",
+          "pinyin": "fúhào",
+          "hanviet": "Phù Hiệu",
+          "hsk": 6,
+          "word_id": "hsk6_402",
+          "meaning_vi": "ký hiệu, biểu tượng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk3_741",
+    "hsk4_846",
+    "hsk3_712",
+    "hsk3_957",
+    "hsk3_1058"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Tác giả danh tác 'Tây Du Ký' thời nhà Minh là ai?",
+      "options_vi": [
+        "Ngô Thừa Ân (吴承恩)",
+        "La Quán Trung",
+        "Thi Nại Am"
+      ],
+      "answer": 0,
+      "explanation_vi": "Ngô Thừa Ân là tác giả tiểu thuyết thần thoại kinh điển Tây Du Ký."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Binh khí hộ thân nổi tiếng của Tôn Ngộ Không là gì?",
+      "options_vi": [
+        "Gậy Như Ý Kim Cô Bổng (lấy từ Long Cung)",
+        "Cây chổi quét nhà",
+        "Thanh bảo kiếm bằng gỗ"
+      ],
+      "answer": 0,
+      "explanation_vi": "Như Ý Kim Cô Bổng vốn là Định Hải Thần Châm của Đông Hải Long Cung."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Hình tượng Tôn Ngộ Không đại diện cho phẩm chất tinh thần nào được yêu mến nhất?",
+      "options_vi": [
+        "Mưu trí dũng cảm, yêu chuộng tự do và không sợ khó khăn cường quyền",
+        "Lười biếng chỉ thích ăn ngủ",
+        "Hay ghen ghét bạn bè"
+      ],
+      "answer": 0,
+      "explanation_vi": "Đại Thánh tượng trưng cho lòng quả cảm diệt trừ cái ác và tinh thần tự do phóng khoáng."
+    }
+  ]
+}

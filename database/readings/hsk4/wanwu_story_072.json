@@ -1,0 +1,878 @@
+{
+  "id": "wanwu_story_072",
+  "chapter_no": 72,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 4,
+  "book_page_start": 744,
+  "book_page_end": 753,
+  "page_display": "Trang 744 - 753",
+  "title": {
+    "zh": "地图：从古到今的“神器”",
+    "vi": "Bản đồ: 'Bảo bối' định vị địa lý từ xưa đến nay"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🗺️",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_072.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_072.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 744 - 753 · 'Chế đồ lục thể' của Bùi Tú thời Tây Tấn và bản đồ tơ lụa Mã Vương Đôi đến bản đồ vệ tinh kỹ thuật số.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "地图将广袤无垠的山川河海缩绘于方寸之间，是人类认识与探索地球空间最直观的工具。",
+      "pinyin": "Dìtú jiāng guǎngmào-wúyín de shānchuān héhǎi suōhuì yú fāngcùn zhījiān, shì rénlèi rènshi yǔ tànsuǒ dìqiú kōngjiān zuì zhíguān de gōngjù.",
+      "vi": "Bản đồ thu nhỏ non sông bờ cõi bao la lên một khuôn khổ, là công cụ trực quan nhất để loài người nhận thức và thám hiểm không gian địa lý.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "地图",
+          "pinyin": "dìtú",
+          "hanviet": "Địa Đồ",
+          "hsk": 3,
+          "word_id": "hsk3_689",
+          "meaning_vi": "bản đồ"
+        },
+        {
+          "text": "将",
+          "pinyin": "jiāng",
+          "hanviet": "Tương",
+          "hsk": 4,
+          "word_id": "hsk4_356",
+          "meaning_vi": "sẽ; đem, lấy (như 把)"
+        },
+        {
+          "text": "广袤",
+          "pinyin": "guǎng mào",
+          "hanviet": "Nghiễm Mậu"
+        },
+        {
+          "text": "无垠",
+          "pinyin": "wú yín",
+          "hanviet": "Vô Ngần"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "山川",
+          "pinyin": "shānchuān",
+          "hanviet": "Sơn Xuyên",
+          "hsk": 7,
+          "word_id": "hsk7_3502",
+          "meaning_vi": "non sông; núi sông"
+        },
+        {
+          "text": "河海",
+          "pinyin": "hé hǎi",
+          "hanviet": "Hà Hải"
+        },
+        {
+          "text": "缩绘于",
+          "pinyin": "suō huì yú",
+          "hanviet": "Súc Hội Vu"
+        },
+        {
+          "text": "方寸之间",
+          "pinyin": "fāng cùn zhī jiān",
+          "hanviet": "Phương Thốn Chi Gian"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "人类",
+          "pinyin": "rénlèi",
+          "hanviet": "Nhân Loại",
+          "hsk": 5,
+          "word_id": "hsk5_921",
+          "meaning_vi": "loài người, nhân loại"
+        },
+        {
+          "text": "认识",
+          "pinyin": "rènshi",
+          "hanviet": "Nhận Thức",
+          "hsk": 1,
+          "word_id": "hsk1_244",
+          "meaning_vi": "biết, quen biết"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "探索",
+          "pinyin": "tànsuǒ",
+          "hanviet": "Thám Sách",
+          "hsk": 6,
+          "word_id": "hsk6_1264",
+          "meaning_vi": "thám hiểm, tìm hiểu"
+        },
+        {
+          "text": "地球空间",
+          "pinyin": "dì qiú kōng jiān",
+          "hanviet": "Địa Cầu Không Gian"
+        },
+        {
+          "text": "最",
+          "pinyin": "zuì",
+          "hanviet": "Tối",
+          "hsk": 2,
+          "word_id": "hsk2_498",
+          "meaning_vi": "nhất"
+        },
+        {
+          "text": "直观",
+          "pinyin": "zhíguān",
+          "hanviet": "Trực Quan",
+          "hsk": 7,
+          "word_id": "hsk7_5293",
+          "meaning_vi": "trực quan, sinh động dễ thấy"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "工具",
+          "pinyin": "gōngjù",
+          "hanviet": "Công Cụ",
+          "hsk": 5,
+          "word_id": "hsk5_410",
+          "meaning_vi": "công cụ"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "长沙马王堆汉墓出土的三幅绘制在丝绸上的古代地图，精准展现了两千多年前的地形起伏与道路水网。",
+      "pinyin": "Chángshā Mǎwángduī Hànmù chūtǔ de sān fú huìzhì zài sīchóu shàng de gǔdài dìtú, jīngzhǔn zhǎnxiàn le liǎngqiān duō nián qián de dìxíng qǐfú yǔ dàolù shuǐwǎng.",
+      "vi": "Ba bức bản đồ vẽ trên lụa khai quật tại mộ Hán Mã Vương Đôi đã tái hiện chuẩn xác địa hình và mạng lưới giao thông đường thủy từ hai ngàn năm trước.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "长沙",
+          "pinyin": "cháng shā",
+          "hanviet": "Trường Sa"
+        },
+        {
+          "text": "马王堆",
+          "pinyin": "mǎ wáng duī",
+          "hanviet": "Mã Vương Đồi"
+        },
+        {
+          "text": "汉墓",
+          "pinyin": "hàn mù",
+          "hanviet": "Hán Mộ"
+        },
+        {
+          "text": "出土",
+          "pinyin": "chūtǔ",
+          "hanviet": "Xuất Thổ",
+          "hsk": 7,
+          "word_id": "hsk7_590",
+          "meaning_vi": "khai quật, đào được"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "三幅",
+          "pinyin": "sān fú",
+          "hanviet": "Tam Bức"
+        },
+        {
+          "text": "绘制",
+          "pinyin": "huìzhì",
+          "hanviet": "Hội Chế",
+          "hsk": 7,
+          "word_id": "hsk7_1806",
+          "meaning_vi": "vẽ, phác họa đồ bản"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "丝绸",
+          "pinyin": "sīchóu",
+          "hanviet": "Tơ Trù",
+          "hsk": 7,
+          "word_id": "hsk7_3844",
+          "meaning_vi": "lụa, tơ lụa"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "地图",
+          "pinyin": "dìtú",
+          "hanviet": "Địa Đồ",
+          "hsk": 3,
+          "word_id": "hsk3_689",
+          "meaning_vi": "bản đồ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "精准",
+          "pinyin": "jīngzhǔn",
+          "hanviet": "Tinh Chuẩn",
+          "hsk": 6,
+          "word_id": "hsk6_721",
+          "meaning_vi": "chuẩn xác, chính xác cao"
+        },
+        {
+          "text": "展现",
+          "pinyin": "zhǎnxiàn",
+          "hanviet": "Triển Hiện",
+          "hsk": 5,
+          "word_id": "hsk5_1467",
+          "meaning_vi": "hiển thị"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "两千多年",
+          "pinyin": "liǎng qiān duō nián",
+          "hanviet": "Lưỡng Thiên Đa Niên"
+        },
+        {
+          "text": "前",
+          "pinyin": "qián",
+          "hanviet": "Tiền",
+          "hsk": 1,
+          "word_id": "hsk1_558",
+          "meaning_vi": "trước"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "地形",
+          "pinyin": "dìxíng",
+          "hanviet": "Địa Hình",
+          "hsk": 6,
+          "word_id": "hsk6_293",
+          "meaning_vi": "địa hình"
+        },
+        {
+          "text": "起伏",
+          "pinyin": "qǐfú",
+          "hanviet": "Khởi Phục",
+          "hsk": 7,
+          "word_id": "hsk7_3161",
+          "meaning_vi": "lên xuống, nhấp nhô"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "道路",
+          "pinyin": "dàolù",
+          "hanviet": "Đạo Lộ",
+          "hsk": 4,
+          "word_id": "hsk4_143",
+          "meaning_vi": "đường sá, con đường"
+        },
+        {
+          "text": "水网",
+          "pinyin": "shuǐ wǎng",
+          "hanviet": "Thuỷ Võng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "西晋著名地理学家裴秀总结创立了‘制图六体’理论，确立了比例尺、方向与高程测绘准则。",
+      "pinyin": "Xījìn zhùmíng dìlǐ xuéjiā Péi Xiù zǒngjié chuànglì le ‘Zhìtú liùtǐ’ lǐlùn, quèlì le bǐlìchǐ, fāngxiàng yǔ gāochéng cèhuì zhǔnzé.",
+      "vi": "Nhà địa lý Bùi Tú thời Tây Tấn đã đúc kết lý luận 'Chế đồ lục thể', xác lập tiêu chuẩn về tỷ lệ xích, phương hướng và độ cao.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "西晋",
+          "pinyin": "xī jìn",
+          "hanviet": "Tây Tấn"
+        },
+        {
+          "text": "著名",
+          "pinyin": "zhùmíng",
+          "hanviet": "Trước Danh",
+          "hsk": 4,
+          "word_id": "hsk4_967",
+          "meaning_vi": "nổi tiếng"
+        },
+        {
+          "text": "地理学家",
+          "pinyin": "dì lǐ xué jiā",
+          "hanviet": "Địa Lý Học Gia"
+        },
+        {
+          "text": "裴秀",
+          "pinyin": "péi xiù",
+          "hanviet": "Bùi Tú"
+        },
+        {
+          "text": "总结",
+          "pinyin": "zǒngjié",
+          "hanviet": "Tổng Kết",
+          "hsk": 4,
+          "word_id": "hsk4_985",
+          "meaning_vi": "tổng kết"
+        },
+        {
+          "text": "创立",
+          "pinyin": "chuànglì",
+          "hanviet": "Sáng Lập",
+          "hsk": 6,
+          "word_id": "hsk6_214",
+          "meaning_vi": "sáng lập"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "制图",
+          "pinyin": "zhì tú",
+          "hanviet": "Chế Đồ"
+        },
+        {
+          "text": "六体",
+          "pinyin": "liù tǐ",
+          "hanviet": "Lục Thể"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "理论",
+          "pinyin": "lǐlùn",
+          "hanviet": "Lí Luận/lý Luận",
+          "hsk": 5,
+          "word_id": "hsk5_701",
+          "meaning_vi": "lý luận"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "确立",
+          "pinyin": "quèlì",
+          "hanviet": "Xác Lập",
+          "hsk": 6,
+          "word_id": "hsk6_1084",
+          "meaning_vi": "xác lập"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "比例尺",
+          "pinyin": "bǐ lì chǐ",
+          "hanviet": "Tỷ Lệ Xích"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "方向",
+          "pinyin": "fāngxiàng",
+          "hanviet": "Phương Hướng",
+          "hsk": 3,
+          "word_id": "hsk3_717",
+          "meaning_vi": "phương hướng"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "高程",
+          "pinyin": "gāo chéng",
+          "hanviet": "Cao Trình"
+        },
+        {
+          "text": "测绘",
+          "pinyin": "cè huì",
+          "hanviet": "Trắc Hội"
+        },
+        {
+          "text": "准则",
+          "pinyin": "zhǔnzé",
+          "hanviet": "Chuẩn Tắc",
+          "hsk": 7,
+          "word_id": "hsk7_5480",
+          "meaning_vi": "chuẩn tắc, quy tắc chuẩn mực"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "在古代军事作战与国家治理中，精准的地形图被奉为不可外泄的战略机密与治国神器。",
+      "pinyin": "Zài gǔdài jūnshì zuòzhàn yǔ guójiā zhìlǐ zhōng, jīngzhǔn de dìxíngtú bèi fèng wéi bùkě wàixiè de zhànlüè jīmì yǔ zhìguó shénqì.",
+      "vi": "Trong quân sự và bang giao cổ đại, tấm bản đồ địa hình chính xác được xem là bí mật chiến lược và bảo bối trị quốc tối cao.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "军事",
+          "pinyin": "jūnshì",
+          "hanviet": "Quân Sự",
+          "hsk": 7,
+          "word_id": "hsk7_2288",
+          "meaning_vi": "quân sự"
+        },
+        {
+          "text": "作战",
+          "pinyin": "zuòzhàn",
+          "hanviet": "Tác Chiến",
+          "hsk": 7,
+          "word_id": "hsk7_5598",
+          "meaning_vi": "tác chiến, chiến đấu"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "国家",
+          "pinyin": "guójiā",
+          "hanviet": "Quốc Gia",
+          "hsk": 3,
+          "word_id": "hsk3_749",
+          "meaning_vi": "quốc gia"
+        },
+        {
+          "text": "治理",
+          "pinyin": "zhìlǐ",
+          "hanviet": "Trị Lý",
+          "hsk": 6,
+          "word_id": "hsk6_1715",
+          "meaning_vi": "cải tạo, xử lý, trị lý (môi trường/sông suối)"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "精准",
+          "pinyin": "jīngzhǔn",
+          "hanviet": "Tinh Chuẩn",
+          "hsk": 6,
+          "word_id": "hsk6_721",
+          "meaning_vi": "chuẩn xác, chính xác cao"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "地形图",
+          "pinyin": "dì xíng tú",
+          "hanviet": "Địa Hình Đồ"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "奉",
+          "pinyin": "fèng",
+          "hanviet": "Phụng"
+        },
+        {
+          "text": "为",
+          "pinyin": "wèi",
+          "hanviet": "Vi",
+          "hsk": 3,
+          "word_id": "hsk3_954",
+          "meaning_vi": "vì, cho"
+        },
+        {
+          "text": "不可",
+          "pinyin": "bù kě",
+          "hanviet": "Bất Khả"
+        },
+        {
+          "text": "外泄",
+          "pinyin": "wài xiè",
+          "hanviet": "Ngoại Tiết"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "战略",
+          "pinyin": "zhànlüè",
+          "hanviet": "Chiến Lược",
+          "hsk": 7,
+          "word_id": "hsk7_5159",
+          "meaning_vi": "chiến lược, tầm nhìn chiến lược"
+        },
+        {
+          "text": "机密",
+          "pinyin": "jīmì",
+          "hanviet": "Cơ Mật",
+          "hsk": 7,
+          "word_id": "hsk7_1850",
+          "meaning_vi": "cơ mật, bí mật"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "治国",
+          "pinyin": "zhì guó",
+          "hanviet": "Trị Quốc"
+        },
+        {
+          "text": "神器",
+          "pinyin": "shén qì",
+          "hanviet": "Thần Khí"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "现代卫星遥感和数字导航软件的结合，让我们可以随时随地精准定位并畅行天下。",
+      "pinyin": "Xiàndài wèixīng yáogǎn hé shùzì dǎoháng ruǎnjiàn de jiéhé, ràng wǒmen kěyǐ suíshí-suídì jīngzhǔn dìngwèi bìng chàngxíng tiānxià.",
+      "vi": "Sự kết hợp giữa viễn thám vệ tinh và ứng dụng định vị số giúp chúng ta định vị chính xác mọi lúc mọi nơi và tự tin đi khắp thế gian.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "现代",
+          "pinyin": "xiàndài",
+          "hanviet": "Hiện Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1239",
+          "meaning_vi": "hiện đại"
+        },
+        {
+          "text": "卫星",
+          "pinyin": "wèixīng",
+          "hanviet": "Vệ Tinh",
+          "hsk": 7,
+          "word_id": "hsk7_4263",
+          "meaning_vi": "vệ tinh"
+        },
+        {
+          "text": "遥感",
+          "pinyin": "yáo gǎn",
+          "hanviet": "Dao Cảm"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "数字",
+          "pinyin": "shùzì",
+          "hanviet": "Sổ Tự",
+          "hsk": 4,
+          "word_id": "hsk4_694",
+          "meaning_vi": "số, chữ số"
+        },
+        {
+          "text": "导航",
+          "pinyin": "dǎoháng",
+          "hanviet": "Đạo Hàng",
+          "hsk": 7,
+          "word_id": "hsk7_794",
+          "meaning_vi": "định vị dẫn đường"
+        },
+        {
+          "text": "软件",
+          "pinyin": "ruǎnjiàn",
+          "hanviet": "Nhuyễn Kiện",
+          "hsk": 5,
+          "word_id": "hsk5_939",
+          "meaning_vi": "phần mềm"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "结合",
+          "pinyin": "jiéhé",
+          "hanviet": "Kết Hợp",
+          "hsk": 5,
+          "word_id": "hsk5_602",
+          "meaning_vi": "kết hợp"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "让",
+          "pinyin": "ràng",
+          "hanviet": "Nhượng",
+          "hsk": 2,
+          "word_id": "hsk2_422",
+          "meaning_vi": "để cho, khiến"
+        },
+        {
+          "text": "我们",
+          "pinyin": "wǒmen",
+          "hanviet": "Ngã Môn",
+          "hsk": 1,
+          "word_id": "hsk1_320",
+          "meaning_vi": "chúng tôi, chúng ta"
+        },
+        {
+          "text": "可以",
+          "pinyin": "kěyǐ",
+          "hanviet": "Khả Dĩ",
+          "hsk": 1,
+          "word_id": "hsk1_160",
+          "meaning_vi": "có thể, được"
+        },
+        {
+          "text": "随时随地",
+          "pinyin": "suíshí-suídì",
+          "hanviet": "Tuỳ Thời Tuỳ Địa",
+          "hsk": 7,
+          "word_id": "hsk7_3909",
+          "meaning_vi": "mọi lúc mọi nơi; bất cứ lúc nào bất cứ nơi đâu"
+        },
+        {
+          "text": "精准",
+          "pinyin": "jīngzhǔn",
+          "hanviet": "Tinh Chuẩn",
+          "hsk": 6,
+          "word_id": "hsk6_721",
+          "meaning_vi": "chuẩn xác, chính xác cao"
+        },
+        {
+          "text": "定位",
+          "pinyin": "dìngwèi",
+          "hanviet": "Định Vị",
+          "hsk": 6,
+          "word_id": "hsk6_313",
+          "meaning_vi": "định vị; định hướng vị thế"
+        },
+        {
+          "text": "并",
+          "pinyin": "bìng",
+          "hanviet": "Tinh",
+          "hsk": 4,
+          "word_id": "hsk4_39",
+          "meaning_vi": "và, đồng thời; hoàn toàn (không)"
+        },
+        {
+          "text": "畅行",
+          "pinyin": "chàng xíng",
+          "hanviet": "Sướng Hành"
+        },
+        {
+          "text": "天下",
+          "pinyin": "tiānxià",
+          "hanviet": "Thiên Hạ",
+          "hsk": 6,
+          "word_id": "hsk6_1293",
+          "meaning_vi": "thiên hạ, thế giới, khắp nơi"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk5_410",
+    "hsk4_967",
+    "hsk7_5480",
+    "hsk5_602",
+    "hsk3_689"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Nhà địa lý Bùi Tú thời Tây Tấn đã đề ra nguyên tắc vẽ bản đồ nổi tiếng nào?",
+      "options_vi": [
+        "Chế đồ lục thể (制图六体 - sáu nguyên tắc vẽ bản đồ gồm tỷ lệ, phương vị, cự ly)",
+        "Vẽ tranh phong cảnh",
+        "Đo bằng mắt thường"
+      ],
+      "answer": 0,
+      "explanation_vi": "Bùi Tú thiết lập 6 nguyên lý khoa học tạo nền móng cho bản đồ học phương Đông."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Bản đồ cổ vẽ trên lụa có niên đại hơn 2000 năm được khai quật tại di chỉ nào?",
+      "options_vi": [
+        "Khu lăng mộ Mã Vương Đôi (Trường Sa, Hồ Nam)",
+        "Hang đá Long Môn",
+        "Cố Cung Bắc Kinh"
+      ],
+      "answer": 0,
+      "explanation_vi": "Bản đồ lụa Mã Vương Đôi có độ chuẩn xác đáng kinh ngạc từ thời Tây Hán."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Công nghệ nào đóng vai trò định vị cốt lõi cho bản đồ số trên điện thoại thông minh hiện nay?",
+      "options_vi": [
+        "Định vị vệ tinh (GPS / Beidou)",
+        "Quan sát hướng gió thổi",
+        "Xem rêu mọc trên thân cây"
+      ],
+      "answer": 0,
+      "explanation_vi": "Các hệ thống vệ tinh định vị toàn cầu giúp điện thoại xác định tọa độ tức thì."
+    }
+  ]
+}

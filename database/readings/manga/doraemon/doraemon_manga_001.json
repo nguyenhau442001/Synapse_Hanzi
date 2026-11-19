@@ -1,0 +1,786 @@
+{
+  "id": "doraemon_manga_001",
+  "series": "doraemon",
+  "series_title": "哆啦A梦",
+  "series_title_vi": "Đô-rê-mon",
+  "chapter_no": 1,
+  "title": {
+    "zh": "没有雪也可滑雪",
+    "zh_trad": "沒有雪也可滑雪",
+    "vi": "Không Có Tuyết Vẫn Có Thể Trượt Tuyết",
+    "pinyin": "Méi yǒu xuě yě kě huáxuě"
+  },
+  "description_vi": "Mùa đông nhưng thành phố không hề có tuyết rơi. Thấy Suneo khoe khoang được đi trượt tuyết trên núi, Nobita nằng nặc đòi Doraemon đưa bảo bối để trượt tuyết ngay tại khu phố!",
+  "cover_image": "assets/images/readings/manga/doraemon/skiing/page_01.webp",
+  "source": "《哆啦A梦》第21卷 · 原作：藤子·F·不二雄 · 小学馆 / 香港文化传信",
+  "source_credits": "Bản quyền nguyên tác thuộc Fujiko Pro & Shogakukan. Sử dụng làm tư liệu đối chiếu học tập tiếng Trung phi thương mại.",
+  "page_count": 9,
+  "difficulty": "HSK 2 - 3 (Hội thoại đời sống thường nhật)",
+  "estimatedMinutes": 8,
+  "pages": [
+    {
+      "page_num": 1,
+      "image": "assets/images/readings/manga/doraemon/skiing/page_01.webp",
+      "dialogues": [
+        {
+          "id": "p1_d1",
+          "character": "哆啦A梦",
+          "bbox": {
+            "x": 30.0,
+            "y": 28.0,
+            "width": 26.0,
+            "height": 18.0
+          },
+          "zh": "只要肯好好练习，没有雪也可以滑雪！",
+          "zh_trad": "只要肯好好練習，沒有雪也可滑雪！",
+          "pinyin": "Zhǐyào kěn hǎohǎo liànxí, méiyǒu xuě yě kěyǐ huáxuě!",
+          "vi": "Chỉ cần chịu khó chăm chỉ luyện tập, không có tuyết cũng có thể trượt tuyết được!",
+          "tokens": [
+            {
+              "text": "只要",
+              "pinyin": "zhǐyào",
+              "hanviet": "Chỉ Yếu",
+              "meaning_vi": "chỉ cần",
+              "hsk": 3
+            },
+            {
+              "text": "肯",
+              "pinyin": "kěn",
+              "hanviet": "Khẳng",
+              "meaning_vi": "chịu, bằng lòng",
+              "hsk": 3
+            },
+            {
+              "text": "好好",
+              "pinyin": "hǎohǎo",
+              "hanviet": "Hảo Hảo",
+              "meaning_vi": "chăm chỉ, tử tế",
+              "hsk": 2
+            },
+            {
+              "text": "练习",
+              "pinyin": "liànxí",
+              "hanviet": "Luyện Tập",
+              "meaning_vi": "luyện tập",
+              "hsk": 3
+            },
+            {
+              "text": "滑雪",
+              "pinyin": "huáxuě",
+              "hanviet": "Hoạt Tuyết",
+              "meaning_vi": "trượt tuyết",
+              "hsk": 3
+            }
+          ]
+        },
+        {
+          "id": "p1_d2",
+          "character": "标题",
+          "bbox": {
+            "x": 25.0,
+            "y": 48.0,
+            "width": 50.0,
+            "height": 16.0
+          },
+          "zh": "没有雪也可滑雪",
+          "zh_trad": "沒有雪也可滑雪",
+          "pinyin": "Méi yǒu xuě yě kě huáxuě",
+          "vi": "Tiêu đề: Không có tuyết vẫn có thể trượt tuyết",
+          "tokens": [
+            {
+              "text": "没有",
+              "pinyin": "méiyǒu",
+              "hanviet": "Một Hữu",
+              "meaning_vi": "không có",
+              "hsk": 1
+            },
+            {
+              "text": "雪",
+              "pinyin": "xuě",
+              "hanviet": "Tuyết",
+              "meaning_vi": "tuyết",
+              "hsk": 2
+            },
+            {
+              "text": "滑雪",
+              "pinyin": "huáxuě",
+              "hanviet": "Hoạt Tuyết",
+              "meaning_vi": "trượt tuyết",
+              "hsk": 3
+            }
+          ]
+        },
+        {
+          "id": "p1_d3",
+          "character": "大雄",
+          "bbox": {
+            "x": 68.0,
+            "y": 70.0,
+            "width": 26.0,
+            "height": 18.0
+          },
+          "zh": "太棒了！快点教我吧！",
+          "zh_trad": "太棒了！快點教我吧！",
+          "pinyin": "Tài bàng le! Kuài diǎn jiāo wǒ ba!",
+          "vi": "Tuyệt quá! Mau dạy tớ đi nào!",
+          "tokens": [
+            {
+              "text": "太棒了",
+              "pinyin": "tài bàng le",
+              "hanviet": "Thái Bổng Liễu",
+              "meaning_vi": "tuyệt vời, cừ quá",
+              "hsk": 2
+            },
+            {
+              "text": "快点",
+              "pinyin": "kuài diǎn",
+              "hanviet": "Khoái Điểm",
+              "meaning_vi": "nhanh lên một chút",
+              "hsk": 2
+            },
+            {
+              "text": "教",
+              "pinyin": "jiāo",
+              "hanviet": "Giáo",
+              "meaning_vi": "dạy dỗ, chỉ bảo",
+              "hsk": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_num": 2,
+      "image": "assets/images/readings/manga/doraemon/skiing/page_02.webp",
+      "dialogues": [
+        {
+          "id": "p2_d1",
+          "character": "小夫 (阿福)",
+          "bbox": {
+            "x": 58.0,
+            "y": 14.0,
+            "width": 32.0,
+            "height": 22.0
+          },
+          "zh": "我们全家要去滑雪场度假，那里的雪景美极了！",
+          "zh_trad": "我們全家要去滑雪場度假，那裏的雪景美極了！",
+          "pinyin": "Wǒmen quánjiā yào qù huáxuěchǎng dùjià, nàlǐ de xuějǐng měi jí le!",
+          "vi": "Cả nhà tớ sắp đi nghỉ mát ở khu trượt tuyết, cảnh tuyết ở đấy đẹp tuyệt trần luôn!",
+          "tokens": [
+            {
+              "text": "全家",
+              "pinyin": "quánjiā",
+              "hanviet": "Toàn Gia",
+              "meaning_vi": "cả gia đình",
+              "hsk": 2
+            },
+            {
+              "text": "滑雪场",
+              "pinyin": "huáxuěchǎng",
+              "hanviet": "Hoạt Tuyết Trường",
+              "meaning_vi": "khu trượt tuyết",
+              "hsk": 3
+            },
+            {
+              "text": "度假",
+              "pinyin": "dùjià",
+              "hanviet": "Độ Giả",
+              "meaning_vi": "nghỉ mát, nghỉ lễ",
+              "hsk": 4
+            },
+            {
+              "text": "美极了",
+              "pinyin": "měi jí le",
+              "hanviet": "Mỹ Cực Liễu",
+              "meaning_vi": "đẹp vô cùng",
+              "hsk": 2
+            }
+          ]
+        },
+        {
+          "id": "p2_d2",
+          "character": "大雄",
+          "bbox": {
+            "x": 16.0,
+            "y": 68.0,
+            "width": 28.0,
+            "height": 20.0
+          },
+          "zh": "真羡慕啊……要是我也能去滑雪就好了。",
+          "zh_trad": "真羨慕啊……要是我也能去滑雪就好了。",
+          "pinyin": "Zhēn xiànmù a... Yàoshi wǒ yě néng qù huáxuě jiù hǎo le.",
+          "vi": "Ghen tị thật đấy... Giá như mình cũng được đi trượt tuyết thì tốt biết mấy.",
+          "tokens": [
+            {
+              "text": "羡慕",
+              "pinyin": "xiànmù",
+              "hanviet": "Tiện Mộ",
+              "meaning_vi": "ghen tị, ngưỡng mộ",
+              "hsk": 4
+            },
+            {
+              "text": "要是",
+              "pinyin": "yàoshi",
+              "hanviet": "Yếu Thị",
+              "meaning_vi": "nếu như",
+              "hsk": 3
+            },
+            {
+              "text": "滑雪",
+              "pinyin": "huáxuě",
+              "hanviet": "Hoạt Tuyết",
+              "meaning_vi": "trượt tuyết",
+              "hsk": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_num": 3,
+      "image": "assets/images/readings/manga/doraemon/skiing/page_03.webp",
+      "dialogues": [
+        {
+          "id": "p3_d1",
+          "character": "哆啦A梦",
+          "bbox": {
+            "x": 62.0,
+            "y": 12.0,
+            "width": 30.0,
+            "height": 24.0
+          },
+          "zh": "戴上这顶滑雪帽，就能随时随地体验滑雪的乐趣！",
+          "zh_trad": "戴上這頂滑雪帽，就能隨時隨地體驗滑雪的樂趣！",
+          "pinyin": "Dài shàng zhè dǐng huáxuě mào, jiù néng suíshí suídì tǐyàn huáxuě de lèqù!",
+          "vi": "Chỉ cần đội chiếc mũ trượt tuyết này vào, là có thể trải nghiệm cảm giác trượt tuyết mọi lúc mọi nơi!",
+          "tokens": [
+            {
+              "text": "戴上",
+              "pinyin": "dàishang",
+              "hanviet": "Đới Thượng",
+              "meaning_vi": "đội vào, đeo vào",
+              "hsk": 2
+            },
+            {
+              "text": "随时随地",
+              "pinyin": "suíshí suídì",
+              "hanviet": "Tùy Thời Tùy Địa",
+              "meaning_vi": "bất cứ lúc nào, ở đâu",
+              "hsk": 4
+            },
+            {
+              "text": "体验",
+              "pinyin": "tǐyàn",
+              "hanviet": "Thể Nghiệm",
+              "meaning_vi": "trải nghiệm",
+              "hsk": 4
+            },
+            {
+              "text": "乐趣",
+              "pinyin": "lèqù",
+              "hanviet": "Lạc Thú",
+              "meaning_vi": "niềm vui thích",
+              "hsk": 4
+            }
+          ]
+        },
+        {
+          "id": "p3_d2",
+          "character": "大雄",
+          "bbox": {
+            "x": 18.0,
+            "y": 66.0,
+            "width": 30.0,
+            "height": 22.0
+          },
+          "zh": "哇！地面看起来真的像厚厚的白雪一样！",
+          "zh_trad": "哇！地面看起來真的像厚厚的白雪一樣！",
+          "pinyin": "Wā! Dìmiàn kàn qǐlái zhēnde xiàng hòuhòu de báixuě yíyàng!",
+          "vi": "Oa! Mặt đất trông như phủ một lớp tuyết trắng dày cộp thật này!",
+          "tokens": [
+            {
+              "text": "地面",
+              "pinyin": "dìmiàn",
+              "hanviet": "Địa Diện",
+              "meaning_vi": "mặt đất",
+              "hsk": 3
+            },
+            {
+              "text": "看起来",
+              "pinyin": "kàn qǐlái",
+              "hanviet": "Khán Khởi Lai",
+              "meaning_vi": "trông có vẻ",
+              "hsk": 3
+            },
+            {
+              "text": "厚",
+              "pinyin": "hòu",
+              "hanviet": "Hậu",
+              "meaning_vi": "dày",
+              "hsk": 3
+            },
+            {
+              "text": "白雪",
+              "pinyin": "báixuě",
+              "hanviet": "Bạch Tuyết",
+              "meaning_vi": "tuyết trắng",
+              "hsk": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_num": 4,
+      "image": "assets/images/readings/manga/doraemon/skiing/page_04.webp",
+      "dialogues": [
+        {
+          "id": "p4_d1",
+          "character": "哆啦A梦",
+          "bbox": {
+            "x": 58.0,
+            "y": 14.0,
+            "width": 35.0,
+            "height": 24.0
+          },
+          "zh": "你完全不懂滑雪，所以先要在平地练习步行……",
+          "zh_trad": "你完全不懂滑雪，所以先要在平地練習步行……",
+          "pinyin": "Nǐ wánquán bù dǒng huáxuě, suǒyǐ xiān yào zài píngdì liànxí bùxíng...",
+          "vi": "Cậu hoàn toàn không biết trượt tuyết, cho nên trước tiên phải tập đi trên mặt đất phẳng đã...",
+          "tokens": [
+            {
+              "text": "完全",
+              "pinyin": "wánquán",
+              "hanviet": "Hoàn Toàn",
+              "meaning_vi": "hoàn toàn",
+              "hsk": 3
+            },
+            {
+              "text": "平地",
+              "pinyin": "píngdì",
+              "hanviet": "Bình Địa",
+              "meaning_vi": "đất bằng phẳng",
+              "hsk": 3
+            },
+            {
+              "text": "练习",
+              "pinyin": "liànxí",
+              "hanviet": "Luyện Tập",
+              "meaning_vi": "luyện tập",
+              "hsk": 3
+            },
+            {
+              "text": "步行",
+              "pinyin": "bùxíng",
+              "hanviet": "Bộ Hành",
+              "meaning_vi": "đi bộ",
+              "hsk": 3
+            }
+          ]
+        },
+        {
+          "id": "p4_d2",
+          "character": "大雄",
+          "bbox": {
+            "x": 16.0,
+            "y": 62.0,
+            "width": 30.0,
+            "height": 22.0
+          },
+          "zh": "太没趣味了！这样我又怎会有心情练习？",
+          "zh_trad": "太沒趣味了！這樣我又怎會有心情練習？",
+          "pinyin": "Tài méi qùwèi le! Zhèyàng wǒ yòu zěn huì yǒu xīnqíng liànxí?",
+          "vi": "Chán chết đi được! Cứ như thế này thì sao tớ có hứng thú luyện tập chứ?",
+          "tokens": [
+            {
+              "text": "趣味",
+              "pinyin": "qùwèi",
+              "hanviet": "Thú Vị",
+              "meaning_vi": "sự thú vị, hứng thú",
+              "hsk": 4
+            },
+            {
+              "text": "怎会",
+              "pinyin": "zěn huì",
+              "hanviet": "Trẫm Hội",
+              "meaning_vi": "làm sao mà, sao có thể",
+              "hsk": 3
+            },
+            {
+              "text": "心情",
+              "pinyin": "xīnqíng",
+              "hanviet": "Tâm Tình",
+              "meaning_vi": "tâm trạng, hứng thú",
+              "hsk": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_num": 5,
+      "image": "assets/images/readings/manga/doraemon/skiing/page_05.webp",
+      "dialogues": [
+        {
+          "id": "p5_d1",
+          "character": "哆啦A梦",
+          "bbox": {
+            "x": 62.0,
+            "y": 10.0,
+            "width": 32.0,
+            "height": 24.0
+          },
+          "zh": "你永远也是未学行先学走！小心摔倒啊！",
+          "zh_trad": "你永遠也是未學行先學走！小心摔倒啊！",
+          "pinyin": "Nǐ yǒngyuǎn yě shì wèi xué xíng xiān xué zǒu! Xiǎoxīn shuāidǎo a!",
+          "vi": "Cậu lúc nào cũng chưa học bò chớ lo học chạy! Cẩn thận ngã đấy!",
+          "tokens": [
+            {
+              "text": "永远",
+              "pinyin": "yǒngyuǎn",
+              "hanviet": "Vĩnh Viễn",
+              "meaning_vi": "mãi mãi, luôn luôn",
+              "hsk": 3
+            },
+            {
+              "text": "小心",
+              "pinyin": "xiǎoxīn",
+              "hanviet": "Tiểu Tâm",
+              "meaning_vi": "cẩn thận",
+              "hsk": 2
+            },
+            {
+              "text": "摔倒",
+              "pinyin": "shuāidǎo",
+              "hanviet": "Suất Đảo",
+              "meaning_vi": "vấp ngã",
+              "hsk": 3
+            }
+          ]
+        },
+        {
+          "id": "p5_d2",
+          "character": "大雄",
+          "bbox": {
+            "x": 20.0,
+            "y": 55.0,
+            "width": 28.0,
+            "height": 22.0
+          },
+          "zh": "哇啊！停不下来了！救命啊！",
+          "zh_trad": "哇啊！停不下來了！救命啊！",
+          "pinyin": "Wā a! Tíng bu xiàlai le! Jiùmìng a!",
+          "vi": "Oa a! Không dừng lại được rồi! Cứu mạng với!",
+          "tokens": [
+            {
+              "text": "停不下来",
+              "pinyin": "tíng bu xiàlai",
+              "hanviet": "Đình Bất Hạ Lai",
+              "meaning_vi": "không dừng lại được",
+              "hsk": 2
+            },
+            {
+              "text": "救命",
+              "pinyin": "jiùmìng",
+              "hanviet": "Cứu Mệnh",
+              "meaning_vi": "cứu mạng",
+              "hsk": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_num": 6,
+      "image": "assets/images/readings/manga/doraemon/skiing/page_06.webp",
+      "dialogues": [
+        {
+          "id": "p6_d1",
+          "character": "胖虎 (技安)",
+          "bbox": {
+            "x": 65.0,
+            "y": 12.0,
+            "width": 30.0,
+            "height": 25.0
+          },
+          "zh": "看！大雄竟然在屋顶上飞快地滑雪！",
+          "zh_trad": "看！大雄竟然在屋頂上飛快地滑雪！",
+          "pinyin": "Kàn! Dàxióng jìngrán zài wūdǐng shàng fēikuài de huáxuě!",
+          "vi": "Nhìn kìa! Nobita thế mà lại đang trượt tuyết vèo vèo trên mái nhà!",
+          "tokens": [
+            {
+              "text": "竟然",
+              "pinyin": "jìngrán",
+              "hanviet": "Cánh Nhiên",
+              "meaning_vi": "không ngờ, thế mà",
+              "hsk": 4
+            },
+            {
+              "text": "屋顶",
+              "pinyin": "wūdǐng",
+              "hanviet": "Ốc Đỉnh",
+              "meaning_vi": "nóc nhà, mái nhà",
+              "hsk": 3
+            },
+            {
+              "text": "飞快",
+              "pinyin": "fēikuài",
+              "hanviet": "Phi Khoái",
+              "meaning_vi": "nhanh như bay",
+              "hsk": 3
+            }
+          ]
+        },
+        {
+          "id": "p6_d2",
+          "character": "小夫",
+          "bbox": {
+            "x": 22.0,
+            "y": 60.0,
+            "width": 28.0,
+            "height": 22.0
+          },
+          "zh": "可恶！那顶帽子到底是什么神奇道具？我也要！",
+          "zh_trad": "可惡！那頂帽子到底是什麼神奇道具？我也要！",
+          "pinyin": "Kěwù! Nà dǐng màozi dàodǐ shì shénme shénqí dàojù? Wǒ yě yào!",
+          "vi": "Đáng ghét thật! Cái mũ đó rốt cuộc là bảo bối thần kỳ gì thế? Mình cũng muốn!",
+          "tokens": [
+            {
+              "text": "可恶",
+              "pinyin": "kěwù",
+              "hanviet": "Khả Ác",
+              "meaning_vi": "đáng ghét",
+              "hsk": 4
+            },
+            {
+              "text": "到底",
+              "pinyin": "dàodǐ",
+              "hanviet": "Đáo Để",
+              "meaning_vi": "rốt cuộc",
+              "hsk": 3
+            },
+            {
+              "text": "神奇",
+              "pinyin": "shénqí",
+              "hanviet": "Thần Kỳ",
+              "meaning_vi": "thần kỳ, kỳ diệu",
+              "hsk": 4
+            },
+            {
+              "text": "道具",
+              "pinyin": "dàojù",
+              "hanviet": "Đạo Cụ",
+              "meaning_vi": "bảo bối, đạo cụ",
+              "hsk": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_num": 7,
+      "image": "assets/images/readings/manga/doraemon/skiing/page_07.webp",
+      "dialogues": [
+        {
+          "id": "p7_d1",
+          "character": "大雄",
+          "bbox": {
+            "x": 55.0,
+            "y": 10.0,
+            "width": 35.0,
+            "height": 22.0
+          },
+          "zh": "快追上来了！大家都在抢我的滑雪帽！",
+          "zh_trad": "快追上來了！大家都在搶我的滑雪帽！",
+          "pinyin": "Kuài zhuī shànglai le! Dàjiā dōu zài qiǎng wǒ de huáxuě mào!",
+          "vi": "Sắp đuổi kịp rồi! Mọi người đều đang tranh giành chiếc mũ trượt tuyết của tớ!",
+          "tokens": [
+            {
+              "text": "追上",
+              "pinyin": "zhuīshàng",
+              "hanviet": "Truy Thượng",
+              "meaning_vi": "đuổi kịp",
+              "hsk": 3
+            },
+            {
+              "text": "抢",
+              "pinyin": "qiǎng",
+              "hanviet": "Cướp",
+              "meaning_vi": "giành giật, cướp",
+              "hsk": 4
+            }
+          ]
+        },
+        {
+          "id": "p7_d2",
+          "character": "哆啦A梦",
+          "bbox": {
+            "x": 15.0,
+            "y": 65.0,
+            "width": 30.0,
+            "height": 22.0
+          },
+          "zh": "快往这边滑！转弯！快点转弯！",
+          "zh_trad": "快往這邊滑！轉彎！快點轉彎！",
+          "pinyin": "Kuài wǎng zhèbiān huá! Zhuǎnwān! Kuài diǎn zhuǎnwān!",
+          "vi": "Mau trượt về bên này! Rẽ đi! Mau rẽ nhanh lên!",
+          "tokens": [
+            {
+              "text": "这边",
+              "pinyin": "zhèbiān",
+              "hanviet": "Giá Biên",
+              "meaning_vi": "phía này, bên này",
+              "hsk": 2
+            },
+            {
+              "text": "转弯",
+              "pinyin": "zhuǎnwān",
+              "hanviet": "Chuyển Loan",
+              "meaning_vi": "rẽ, quẹo",
+              "hsk": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_num": 8,
+      "image": "assets/images/readings/manga/doraemon/skiing/page_08.webp",
+      "dialogues": [
+        {
+          "id": "p8_d1",
+          "character": "大雄",
+          "bbox": {
+            "x": 52.0,
+            "y": 20.0,
+            "width": 32.0,
+            "height": 24.0
+          },
+          "zh": "哎哟！撞到墙壁了！好痛啊！",
+          "zh_trad": "哎喲！撞到牆壁了！好痛啊！",
+          "pinyin": "Āiyō! Zhuàng dào qiángbì le! Hǎo tòng a!",
+          "vi": "Ái chà! Đâm sầm vào tường rồi! Đau quá đi mất!",
+          "tokens": [
+            {
+              "text": "撞到",
+              "pinyin": "zhuàng dào",
+              "hanviet": "Chàng Đáo",
+              "meaning_vi": "va trúng, tông vào",
+              "hsk": 3
+            },
+            {
+              "text": "墙壁",
+              "pinyin": "qiángbì",
+              "hanviet": "Tường Bích",
+              "meaning_vi": "bức tường",
+              "hsk": 3
+            },
+            {
+              "text": "痛",
+              "pinyin": "tòng",
+              "hanviet": "Thống",
+              "meaning_vi": "đau đớn",
+              "hsk": 3
+            }
+          ]
+        },
+        {
+          "id": "p8_d2",
+          "character": "胖虎",
+          "bbox": {
+            "x": 16.0,
+            "y": 62.0,
+            "width": 30.0,
+            "height": 22.0
+          },
+          "zh": "哈哈！原来在屋顶滑雪是这种下场！",
+          "zh_trad": "哈哈！原來在屋頂滑雪是這種下場！",
+          "pinyin": "Hāhā! Yuánlái zài wūdǐng huáxuě shì zhè zhǒng xiàchǎng!",
+          "vi": "Ha ha! Hóa ra trượt tuyết trên nóc nhà lại có kết cục thảm hại thế này!",
+          "tokens": [
+            {
+              "text": "原来",
+              "pinyin": "yuánlái",
+              "hanviet": "Nguyên Lai",
+              "meaning_vi": "hóa ra, ban đầu",
+              "hsk": 3
+            },
+            {
+              "text": "下场",
+              "pinyin": "xiàchǎng",
+              "hanviet": "Hạ Trường",
+              "meaning_vi": "kết cục, hậu quả",
+              "hsk": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_num": 9,
+      "image": "assets/images/readings/manga/doraemon/skiing/page_09.webp",
+      "dialogues": [
+        {
+          "id": "p9_d1",
+          "character": "哆啦A梦",
+          "bbox": {
+            "x": 48.0,
+            "y": 18.0,
+            "width": 35.0,
+            "height": 24.0
+          },
+          "zh": "你看吧，叫你好好打好基础你不听，这下尝到苦头了吧！",
+          "zh_trad": "你看吧，叫你好好打好基礎你不聽，這下嚐到苦頭了吧！",
+          "pinyin": "Nǐ kàn ba, jiào nǐ hǎohǎo dǎ hǎo jīchǔ nǐ bù tīng, zhèxià cháng dào kǔtou le ba!",
+          "vi": "Cậu thấy chưa, bảo cậu phải rèn vững căn bản thì không chịu nghe, giờ thì nếm mùi khổ chưa!",
+          "tokens": [
+            {
+              "text": "基础",
+              "pinyin": "jīchǔ",
+              "hanviet": "Cơ Sở",
+              "meaning_vi": "nền tảng, căn bản",
+              "hsk": 3
+            },
+            {
+              "text": "苦头",
+              "pinyin": "kǔtou",
+              "hanviet": "Khổ Đầu",
+              "meaning_vi": "vị đắng, nỗi khổ",
+              "hsk": 4
+            }
+          ]
+        },
+        {
+          "id": "p9_d2",
+          "character": "大雄",
+          "bbox": {
+            "x": 15.0,
+            "y": 58.0,
+            "width": 32.0,
+            "height": 22.0
+          },
+          "zh": "下次……我一定乖乖在平地练习……呜呜……",
+          "zh_trad": "下次……我一定乖乖在平地練習……嗚嗚……",
+          "pinyin": "Xià cì... wǒ yídìng guāiguāi zài píngdì liànxí... Wūwū...",
+          "vi": "Lần sau... tớ nhất định sẽ ngoan ngoãn tập đi trên đất bằng... hu hu...",
+          "tokens": [
+            {
+              "text": "乖乖",
+              "pinyin": "guāiguāi",
+              "hanviet": "Quai Quai",
+              "meaning_vi": "ngoan ngoãn",
+              "hsk": 3
+            },
+            {
+              "text": "练习",
+              "pinyin": "liànxí",
+              "hanviet": "Luyện Tập",
+              "meaning_vi": "luyện tập",
+              "hsk": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

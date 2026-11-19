@@ -1,0 +1,718 @@
+{
+  "id": "wanwu_story_032",
+  "chapter_no": 32,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 2,
+  "book_page_start": 314,
+  "book_page_end": 325,
+  "page_display": "Trang 314 - 325",
+  "title": {
+    "zh": "琥珀：树的精灵",
+    "vi": "Hổ phách: Linh hồn hóa thạch của loài cây"
+  },
+  "topic": "nature_wildlife",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "✨",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_032.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_032.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 314 - 325 · Nhựa cây hóa thạch hàng chục triệu năm lưu giữ sinh vật cổ đại như chiếc hộp thời gian kỳ vĩ.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "琥珀晶莹剔透，色泽金黄温润，是自然界中极为罕见的有机宝石。",
+      "pinyin": "Hǔpò jīngyíng-tītòu, sèzé jīnhuáng wēnrùn, shì zìránjiè zhōng jíwéi hǎnjiàn de yǒujī bǎoshí.",
+      "vi": "Hổ phách trong suốt lấp lánh, ánh sắc vàng ấm áp, là loại đá quý hữu cơ vô cùng hiếm gặp trong tự nhiên.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "琥珀",
+          "pinyin": "hǔ pò",
+          "hanviet": "Hổ Phách"
+        },
+        {
+          "text": "晶莹剔透",
+          "pinyin": "jīng yíng tī tòu",
+          "hanviet": "Tinh Oánh Dịch Thấu"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "色泽",
+          "pinyin": "sè zé",
+          "hanviet": "Sắc Trạch"
+        },
+        {
+          "text": "金黄",
+          "pinyin": "jīn huáng",
+          "hanviet": "Kim Hoàng"
+        },
+        {
+          "text": "温润",
+          "pinyin": "wēn rùn",
+          "hanviet": "Ôn Nhuận"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "自然界",
+          "pinyin": "zìránjiè",
+          "hanviet": "Tự Nhiên Giới",
+          "hsk": 7,
+          "word_id": "hsk7_5522",
+          "meaning_vi": "giới tự nhiên, thế giới tự nhiên"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "极为",
+          "pinyin": "jíwéi",
+          "hanviet": "Cực Vi",
+          "hsk": 6,
+          "word_id": "hsk6_620",
+          "meaning_vi": "cực kỳ, vô cùng"
+        },
+        {
+          "text": "罕见",
+          "pinyin": "hǎnjiàn",
+          "hanviet": "Hãn Kiến",
+          "hsk": 6,
+          "word_id": "hsk6_525",
+          "meaning_vi": "hiếm thấy"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "有机",
+          "pinyin": "yǒujī",
+          "hanviet": "Hữu Cơ",
+          "hsk": 6,
+          "word_id": "hsk6_1603",
+          "meaning_vi": "hữu cơ"
+        },
+        {
+          "text": "宝石",
+          "pinyin": "bǎoshí",
+          "hanviet": "Bảo Thạch",
+          "hsk": 7,
+          "word_id": "hsk7_112",
+          "meaning_vi": "đá quý"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "数千万年前，古代松柏等植物受到损伤时会分泌出大量粘稠的树脂。",
+      "pinyin": "Shùqiānwàn nián qián, gǔdài sōngbǎi děng zhíwù shòudào sǔnshāng shí huì fēnmì chū dàliàng niánchóu de shùzhī.",
+      "vi": "Hàng chục triệu năm trước, các loài cây lá kim cổ đại khi bị thương tổn đã tiết ra lượng lớn nhựa cây quánh đặc.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "数千万",
+          "pinyin": "shù qiān wàn",
+          "hanviet": "Sổ Thiên Mặc"
+        },
+        {
+          "text": "年前",
+          "pinyin": "nián qián",
+          "hanviet": "Niên Tiền"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "松柏",
+          "pinyin": "sōng bǎi",
+          "hanviet": "Tùng Bách"
+        },
+        {
+          "text": "等",
+          "pinyin": "děng",
+          "hanviet": "Đẳng",
+          "hsk": 2,
+          "word_id": "hsk2_20",
+          "meaning_vi": "đợi, chờ"
+        },
+        {
+          "text": "植物",
+          "pinyin": "zhíwù",
+          "hanviet": "Thực Vật",
+          "hsk": 4,
+          "word_id": "hsk4_949",
+          "meaning_vi": "thực vật"
+        },
+        {
+          "text": "受到",
+          "pinyin": "shòudào",
+          "hanviet": "Thọ Đáo",
+          "hsk": 3,
+          "word_id": "hsk3_558",
+          "meaning_vi": "nhận được, bị (chịu)"
+        },
+        {
+          "text": "损伤",
+          "pinyin": "sǔnshāng",
+          "hanviet": "Tổn Thương",
+          "hsk": 6,
+          "word_id": "hsk6_1253",
+          "meaning_vi": "thiệt hại"
+        },
+        {
+          "text": "时会",
+          "pinyin": "shí huì",
+          "hanviet": "Thời Hội"
+        },
+        {
+          "text": "分泌",
+          "pinyin": "fēnmì",
+          "hanviet": "Phân Bí",
+          "hsk": 7,
+          "word_id": "hsk7_1160",
+          "meaning_vi": "tiết ra (hormone, dịch)"
+        },
+        {
+          "text": "出",
+          "pinyin": "chū",
+          "hanviet": "Xuất",
+          "hsk": 2,
+          "word_id": "hsk2_316",
+          "meaning_vi": "ra, đi ra"
+        },
+        {
+          "text": "大量",
+          "pinyin": "dàliàng",
+          "hanviet": "Đại Lượng",
+          "hsk": 4,
+          "word_id": "hsk4_126",
+          "meaning_vi": "lượng lớn, nhiều"
+        },
+        {
+          "text": "粘稠",
+          "pinyin": "nián chóu",
+          "hanviet": "Niêm Trù"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "树脂",
+          "pinyin": "shù zhī",
+          "hanviet": "Thụ Chi"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "树脂滴落下来时，偶尔会将附近路过的小昆虫、落叶或花瓣包裹在其中。",
+      "pinyin": "Shùzhī dīluò xiàlái shí, ǒu'ěr huì jiāng fùjìn lùguò de xiǎo kūnchóng, luòyè huò huābàn bāoguǒ zài qízhōng.",
+      "vi": "Khi giọt nhựa rơi xuống, đôi khi bọc gọn những chú côn trùng nhỏ, lá rụng hoặc cánh hoa đi ngang qua.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "树脂",
+          "pinyin": "shù zhī",
+          "hanviet": "Thụ Chi"
+        },
+        {
+          "text": "滴落",
+          "pinyin": "dī luò",
+          "hanviet": "Tích Lạc"
+        },
+        {
+          "text": "下来",
+          "pinyin": "xiàlái",
+          "hanviet": "Hạ Lai",
+          "hsk": 2,
+          "word_id": "hsk2_458",
+          "meaning_vi": "đi xuống"
+        },
+        {
+          "text": "时",
+          "pinyin": "shí",
+          "hanviet": "Thời",
+          "hsk": 2,
+          "word_id": "hsk2_431",
+          "meaning_vi": "thời gian (danh từ, số lượng)"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "偶尔",
+          "pinyin": "ǒu’ěr",
+          "hanviet": "Ngẫu Nhĩ",
+          "hsk": 4,
+          "word_id": "hsk4_541",
+          "meaning_vi": "đôi khi, ngẫu nhiên"
+        },
+        {
+          "text": "会",
+          "pinyin": "huì",
+          "hanviet": "Hội",
+          "hsk": 1,
+          "word_id": "hsk1_43",
+          "meaning_vi": "biết, sẽ"
+        },
+        {
+          "text": "将",
+          "pinyin": "jiāng",
+          "hanviet": "Tương",
+          "hsk": 4,
+          "word_id": "hsk4_356",
+          "meaning_vi": "sẽ; đem, lấy (như 把)"
+        },
+        {
+          "text": "附近",
+          "pinyin": "fùjìn",
+          "hanviet": "Phụ Cận",
+          "hsk": 3,
+          "word_id": "hsk3_726",
+          "meaning_vi": "gần đây, lân cận"
+        },
+        {
+          "text": "路过",
+          "pinyin": "lùguò",
+          "hanviet": "Lộ Quá",
+          "hsk": 4,
+          "word_id": "hsk4_487",
+          "meaning_vi": "đi ngang qua"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "小",
+          "pinyin": "xiǎo",
+          "hanviet": "Tiểu",
+          "hsk": 1,
+          "word_id": "hsk1_337",
+          "meaning_vi": "nhỏ"
+        },
+        {
+          "text": "昆虫",
+          "pinyin": "kūnchóng",
+          "hanviet": "Côn Trùng",
+          "hsk": 5,
+          "word_id": "hsk5_680",
+          "meaning_vi": "côn trùng"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "落叶",
+          "pinyin": "luò yè",
+          "hanviet": "Lạc Hiệp"
+        },
+        {
+          "text": "或",
+          "pinyin": "huò",
+          "hanviet": "Hoặc",
+          "hsk": 3,
+          "word_id": "hsk3_774",
+          "meaning_vi": "hoặc"
+        },
+        {
+          "text": "花瓣",
+          "pinyin": "huābàn",
+          "hanviet": "Hoa Biện",
+          "hsk": 7,
+          "word_id": "hsk7_1713",
+          "meaning_vi": "cánh hoa"
+        },
+        {
+          "text": "包裹",
+          "pinyin": "bāoguǒ",
+          "hanviet": "Bao Khoả",
+          "hsk": 5,
+          "word_id": "hsk5_15",
+          "meaning_vi": "bưu phẩm, kiện hàng"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "其中",
+          "pinyin": "qízhōng",
+          "hanviet": "Kỳ Trung",
+          "hsk": 4,
+          "word_id": "hsk4_568",
+          "meaning_vi": "trong đó"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "经过漫长地质年代的高温高压石化过程，这些树脂最终蜕变成为坚硬的琥珀。",
+      "pinyin": "Jīngguò màncháng dìzhì niándài de gāowēn gāoyā shíhuà guòchéng, zhèxiē shùzhī zuìzhōng tuìbiàn chéngwéi jiānyìng de hǔpò.",
+      "vi": "Trải qua quá trình hóa thạch dưới nhiệt độ và áp suất cao qua các kỷ địa chất, lớp nhựa cây này đã hóa thành hổ phách cứng cáp.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "经过",
+          "pinyin": "jīngguò",
+          "hanviet": "Kinh Qua",
+          "hsk": 3,
+          "word_id": "hsk3_801",
+          "meaning_vi": "trải qua, đi qua"
+        },
+        {
+          "text": "漫长",
+          "pinyin": "màncháng",
+          "hanviet": "Mạn Trường",
+          "hsk": 6,
+          "word_id": "hsk6_890",
+          "meaning_vi": "dài đằng đẵng, dài lâu"
+        },
+        {
+          "text": "地质年代",
+          "pinyin": "dì zhì nián dài",
+          "hanviet": "Địa Chất Niên Đại"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "高温高压",
+          "pinyin": "gāo wēn gāo yā",
+          "hanviet": "Cao Ôn Cao Áp"
+        },
+        {
+          "text": "石化",
+          "pinyin": "shí huà",
+          "hanviet": "Thạch Hoa"
+        },
+        {
+          "text": "过程",
+          "pinyin": "guòchéng",
+          "hanviet": "Quá Trình",
+          "hsk": 4,
+          "word_id": "hsk4_282",
+          "meaning_vi": "quá trình"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "这些",
+          "pinyin": "zhèxiē",
+          "hanviet": "Giá Ta",
+          "hsk": 1,
+          "word_id": "hsk1_608",
+          "meaning_vi": "những (đại từ) này"
+        },
+        {
+          "text": "树脂",
+          "pinyin": "shù zhī",
+          "hanviet": "Thụ Chi"
+        },
+        {
+          "text": "最终",
+          "pinyin": "zuìzhōng",
+          "hanviet": "Tối Chung",
+          "hsk": 4,
+          "word_id": "hsk4_988",
+          "meaning_vi": "cuối cùng"
+        },
+        {
+          "text": "蜕变",
+          "pinyin": "tuì biàn",
+          "hanviet": "Thuế Biến"
+        },
+        {
+          "text": "成为",
+          "pinyin": "chéngwéi",
+          "hanviet": "Thành Vi",
+          "hsk": 4,
+          "word_id": "hsk4_82",
+          "meaning_vi": "trở thành"
+        },
+        {
+          "text": "坚硬",
+          "pinyin": "jiānyìng",
+          "hanviet": "Kiên Ngạnh",
+          "hsk": 6,
+          "word_id": "hsk6_649",
+          "meaning_vi": "cứng rắn, rắn chắc"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "琥珀",
+          "pinyin": "hǔ pò",
+          "hanviet": "Hổ Phách"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "琥珀完整保存了远古生物的立体形态甚至羽毛细节，被科学家视为珍贵的时间胶囊。",
+      "pinyin": "Hǔpò wánzhěng bǎocún le yuǎngǔ shēngwù de lìtǐ xíngtài shènzhì yǔmáo xìjié, bèi kēxuéjiā shìwéi zhēnguì de shíjiān jiāonáng.",
+      "vi": "Hổ phách lưu giữ nguyên vẹn hình thái không gian ba chiều và từng chi tiết lông vũ của sinh vật cổ, được giới khoa học coi là khoang thời gian quý giá.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "琥珀",
+          "pinyin": "hǔ pò",
+          "hanviet": "Hổ Phách"
+        },
+        {
+          "text": "完整",
+          "pinyin": "wánzhěng",
+          "hanviet": "Hoàn Chỉnh",
+          "hsk": 5,
+          "word_id": "hsk5_1176",
+          "meaning_vi": "hoàn chỉnh, đầy đủ"
+        },
+        {
+          "text": "保存",
+          "pinyin": "bǎocún",
+          "hanviet": "Bảo Tồn",
+          "hsk": 5,
+          "word_id": "hsk5_25",
+          "meaning_vi": "bảo tồn, lưu giữ"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "远古",
+          "pinyin": "yuǎn gǔ",
+          "hanviet": "Viễn Cổ"
+        },
+        {
+          "text": "生物",
+          "pinyin": "shēngwù",
+          "hanviet": "Sinh Vật",
+          "hsk": 5,
+          "word_id": "hsk5_995",
+          "meaning_vi": "sinh vật"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "立体",
+          "pinyin": "lìtǐ",
+          "hanviet": "Lập Thể",
+          "hsk": 7,
+          "word_id": "hsk7_2559",
+          "meaning_vi": "ba chiều, lập thể"
+        },
+        {
+          "text": "形态",
+          "pinyin": "xíngtài",
+          "hanviet": "Hình Thái",
+          "hsk": 6,
+          "word_id": "hsk6_1477",
+          "meaning_vi": "hình thái"
+        },
+        {
+          "text": "甚至",
+          "pinyin": "shènzhì",
+          "hanviet": "Thậm Chí",
+          "hsk": 4,
+          "word_id": "hsk4_645",
+          "meaning_vi": "thậm chí"
+        },
+        {
+          "text": "羽毛",
+          "pinyin": "yǔ máo",
+          "hanviet": "Vũ Mao"
+        },
+        {
+          "text": "细节",
+          "pinyin": "xìjié",
+          "hanviet": "Tế Tiết",
+          "hsk": 5,
+          "word_id": "hsk5_1227",
+          "meaning_vi": "chi tiết"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "科学家",
+          "pinyin": "kē xué jiā",
+          "hanviet": "Khoa Học Gia"
+        },
+        {
+          "text": "视为",
+          "pinyin": "shìwéi",
+          "hanviet": "Thị Vi",
+          "hsk": 5,
+          "word_id": "hsk5_1036",
+          "meaning_vi": "xem như, coi là"
+        },
+        {
+          "text": "珍贵",
+          "pinyin": "zhēnguì",
+          "hanviet": "Trân Quý",
+          "hsk": 5,
+          "word_id": "hsk5_1483",
+          "meaning_vi": "quý giá"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "时间",
+          "pinyin": "shíjiān",
+          "hanviet": "Thời Gian",
+          "hsk": 1,
+          "word_id": "hsk1_263",
+          "meaning_vi": "thời gian"
+        },
+        {
+          "text": "胶囊",
+          "pinyin": "jiāonáng",
+          "hanviet": "Giao Nang",
+          "hsk": 7,
+          "word_id": "hsk7_2036",
+          "meaning_vi": "viên nang, con nhộng (thuốc)"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk4_981",
+    "hsk4_949",
+    "hsk3_801",
+    "hsk1_266"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Hổ phách thực chất được hình thành từ chất liệu gì?",
+      "options_vi": [
+        "Nhựa cây hóa thạch qua hàng chục triệu năm",
+        "Thủy tinh núi lửa đông nguội",
+        "Bột đá nghiền mịn ép chặt"
+      ],
+      "answer": 0,
+      "explanation_vi": "Hổ phách là nhựa cây hóa thạch của các loài thực vật cổ đại."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Tại sao hổ phách lại có giá trị nghiên cứu khoa học cực cao?",
+      "options_vi": [
+        "Lưu giữ nguyên vẹn cấu trúc côn trùng và sinh vật cổ đại",
+        "Có thể ăn được",
+        "Tỏa nhiệt vĩnh cửu"
+      ],
+      "answer": 0,
+      "explanation_vi": "Hổ phách bọc giữ xác sinh vật tiền sử như chiếc hộp thời gian còn nguyên vẹn."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Màu sắc phổ biến và đặc trưng nhất của hổ phách là gì?",
+      "options_vi": [
+        "Màu vàng trong suốt óng ả",
+        "Màu đen kịt như than",
+        "Màu xanh da trời sẫm"
+      ],
+      "answer": 0,
+      "explanation_vi": "Hổ phách tự nhiên nổi tiếng nhất với sắc vàng kim ấm áp lấp lánh."
+    }
+  ]
+}

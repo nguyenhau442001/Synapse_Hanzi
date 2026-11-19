@@ -1,0 +1,854 @@
+{
+  "id": "wanwu_story_035",
+  "chapter_no": 35,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 2,
+  "book_page_start": 344,
+  "book_page_end": 353,
+  "page_display": "Trang 344 - 353",
+  "title": {
+    "zh": "机器人：是福还是祸？",
+    "vi": "Robot: Niềm hạnh phúc hay nỗi lo của tương lai?"
+  },
+  "topic": "science_technology",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🤖",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_035.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_035.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 344 - 353 · Từ vở kịch văn học Séc năm 1920 đến thời đại cánh tay robot công nghiệp và trí tuệ nhân tạo.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "“机器人”一词最早出现在一九二零年捷克作家的戏剧作品中，原意是指从事苦役的劳工。",
+      "pinyin": "“Jīqìrén” yì cí zuìzǎo chūxiàn zài yī-jiǔ-èr-líng nián Jiékè zuòjiā de xìjù zuòpǐn zhōng, yuányì shì zhǐ cóngshì kǔyì de láogōng.",
+      "vi": "Từ 'robot' xuất hiện lần đầu trong vở kịch năm 1920 của nhà văn Tiệp Khắc, nghĩa gốc ám chỉ người làm lao dịch khổ sai.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "“"
+        },
+        {
+          "text": "机器人",
+          "pinyin": "jīqìrén",
+          "hanviet": "Cơ Khí Nhân",
+          "hsk": 5,
+          "word_id": "hsk5_523",
+          "meaning_vi": "người máy, rô-bốt"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "一词",
+          "pinyin": "yī cí",
+          "hanviet": "Nhất Từ"
+        },
+        {
+          "text": "最早",
+          "pinyin": "zuì zǎo",
+          "hanviet": "Tối Tảo"
+        },
+        {
+          "text": "出现",
+          "pinyin": "chūxiàn",
+          "hanviet": "Xuất Hiện",
+          "hsk": 4,
+          "word_id": "hsk4_90",
+          "meaning_vi": "xuất hiện"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "一九二",
+          "pinyin": "yī jiǔ èr",
+          "hanviet": "Nhất Cửu Nhị"
+        },
+        {
+          "text": "零年",
+          "pinyin": "líng nián",
+          "hanviet": "Linh Niên"
+        },
+        {
+          "text": "捷克",
+          "pinyin": "jié kè",
+          "hanviet": "Tiệp Khắc"
+        },
+        {
+          "text": "作家",
+          "pinyin": "zuòjiā",
+          "hanviet": "Tác Gia",
+          "hsk": 4,
+          "word_id": "hsk4_993",
+          "meaning_vi": "nhà văn"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "戏剧",
+          "pinyin": "xìjù",
+          "hanviet": "Hí Kịch",
+          "hsk": 5,
+          "word_id": "hsk5_1228",
+          "meaning_vi": "kịch, hí kịch"
+        },
+        {
+          "text": "作品",
+          "pinyin": "zuòpǐn",
+          "hanviet": "Tác Phẩm",
+          "hsk": 4,
+          "word_id": "hsk4_995",
+          "meaning_vi": "tác phẩm"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "原意",
+          "pinyin": "yuán yì",
+          "hanviet": "Nguyên Ý"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "指",
+          "pinyin": "zhǐ",
+          "hanviet": "Chỉ",
+          "hsk": 4,
+          "word_id": "hsk4_951",
+          "meaning_vi": "ngón tay; chỉ vào"
+        },
+        {
+          "text": "从事",
+          "pinyin": "cóngshì",
+          "hanviet": "Tòng Sự",
+          "hsk": 5,
+          "word_id": "hsk5_203",
+          "meaning_vi": "làm việc, theo đuổi (nghề)"
+        },
+        {
+          "text": "苦役",
+          "pinyin": "kǔ yì",
+          "hanviet": "Khổ Dịch"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "劳工",
+          "pinyin": "láo gōng",
+          "hanviet": "Lao Công"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "随着现代科技的发展，机器人早已从科幻小说中的想象走进了各行各业的现实生产之中。",
+      "pinyin": "Suízhe xiàndài kējì de fāzhǎn, jīqìrén zǎoyǐ cóng kēhuàn xiǎoshuō zhōng de xiǎngxiàng zǒujìn le gèháng-gèyè de xiànshí shēngchǎn zhī zhōng.",
+      "vi": "Cùng với sự phát triển khoa học công nghệ, robot từ trí tưởng tượng trong truyện viễn tưởng đã bước vào các dây chuyền sản xuất thực tế.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "随着",
+          "pinyin": "suízhe",
+          "hanviet": "Tuỳ Trước",
+          "hsk": 4,
+          "word_id": "hsk4_710",
+          "meaning_vi": "theo cùng với"
+        },
+        {
+          "text": "现代科技",
+          "pinyin": "xiàn dài kē jì",
+          "hanviet": "Hiện Đại Khoa Kỹ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "发展",
+          "pinyin": "fāzhǎn",
+          "hanviet": "Phát Triển",
+          "hsk": 3,
+          "word_id": "hsk3_713",
+          "meaning_vi": "phát triển"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "机器人",
+          "pinyin": "jīqìrén",
+          "hanviet": "Cơ Khí Nhân",
+          "hsk": 5,
+          "word_id": "hsk5_523",
+          "meaning_vi": "người máy, rô-bốt"
+        },
+        {
+          "text": "早已",
+          "pinyin": "zǎoyǐ",
+          "hanviet": "Tảo Dĩ",
+          "hsk": 5,
+          "word_id": "hsk5_1452",
+          "meaning_vi": "đã từ lâu, sớm đã"
+        },
+        {
+          "text": "从",
+          "pinyin": "cóng",
+          "hanviet": "Tòng",
+          "hsk": 2,
+          "word_id": "hsk2_324",
+          "meaning_vi": "từ"
+        },
+        {
+          "text": "科幻小说",
+          "pinyin": "kē huàn xiǎo shuō",
+          "hanviet": "Khoa Huyễn Tiểu Thuyết"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "想象",
+          "pinyin": "xiǎngxiàng",
+          "hanviet": "Tưởng Tượng",
+          "hsk": 5,
+          "word_id": "hsk5_1256",
+          "meaning_vi": "tưởng tượng"
+        },
+        {
+          "text": "走进",
+          "pinyin": "zǒu jìn",
+          "hanviet": "Tẩu Tiến"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "各行各业",
+          "pinyin": "gèháng-gèyè",
+          "hanviet": "Các Hành Các Nghiệp",
+          "hsk": 5,
+          "word_id": "hsk5_399",
+          "meaning_vi": "các ngành các nghề, mọi ngành nghề"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "现实",
+          "pinyin": "xiànshí",
+          "hanviet": "Hiện Thực",
+          "hsk": 5,
+          "word_id": "hsk5_1242",
+          "meaning_vi": "thực tế, hiện thực"
+        },
+        {
+          "text": "生产",
+          "pinyin": "shēngchǎn",
+          "hanviet": "Sinh Sản",
+          "hsk": 5,
+          "word_id": "hsk5_990",
+          "meaning_vi": "sản xuất"
+        },
+        {
+          "text": "之中",
+          "pinyin": "zhīzhōng",
+          "hanviet": "Chi Trung",
+          "hsk": 4,
+          "word_id": "hsk4_945",
+          "meaning_vi": "trong, trong số"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "在汽车装配工厂里，自动机械臂能够不知疲倦、精准高效地完成焊接与喷漆等繁重作业。",
+      "pinyin": "Zài qìchē zhuāngpèi gōngchǎng lǐ, zìdòng jīxièbì nénggòu bùzhī píjuàn, jīngzhǔn gāoxiào de wánchéng hànjiē yǔ pēnqī děng fánzhòng zuòyè.",
+      "vi": "Trong các nhà máy lắp ráp ô tô, những cánh tay cơ học tự động làm việc không biết mệt mỏi, hàn và sơn chuẩn xác hiệu quả.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "汽车",
+          "pinyin": "qìchē",
+          "hanviet": "Khí Xa",
+          "hsk": 3,
+          "word_id": "hsk3_885",
+          "meaning_vi": "ô tô, xe hơi"
+        },
+        {
+          "text": "装配工厂",
+          "pinyin": "zhuāng pèi gōng chǎng",
+          "hanviet": "Trang Phối Công Hán"
+        },
+        {
+          "text": "里",
+          "pinyin": "lǐ",
+          "hanviet": "Lý",
+          "hsk": 1,
+          "word_id": "hsk1_536",
+          "meaning_vi": "bên trong"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "自动",
+          "pinyin": "zìdòng",
+          "hanviet": "Tự Động",
+          "hsk": 5,
+          "word_id": "hsk5_1575",
+          "meaning_vi": "tự động"
+        },
+        {
+          "text": "机械",
+          "pinyin": "jīxiè",
+          "hanviet": "Cơ Giới",
+          "hsk": 6,
+          "word_id": "hsk6_611",
+          "meaning_vi": "máy móc, cơ khí"
+        },
+        {
+          "text": "臂",
+          "pinyin": "chāichú",
+          "hanviet": "Sách Trừ",
+          "hsk": 6,
+          "word_id": "hsk6_121",
+          "meaning_vi": "tháo dỡ, dỡ bỏ (nhà, công trình)"
+        },
+        {
+          "text": "能够",
+          "pinyin": "nénggòu",
+          "hanviet": "Năng Cú",
+          "hsk": 4,
+          "word_id": "hsk4_532",
+          "meaning_vi": "có thể"
+        },
+        {
+          "text": "不知疲倦",
+          "pinyin": "bù zhī pí juàn",
+          "hanviet": "Bất Tri Bì Quyện"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "精准",
+          "pinyin": "jīngzhǔn",
+          "hanviet": "Tinh Chuẩn",
+          "hsk": 6,
+          "word_id": "hsk6_721",
+          "meaning_vi": "chuẩn xác, chính xác cao"
+        },
+        {
+          "text": "高效",
+          "pinyin": "gāoxiào",
+          "hanviet": "Cao Hiệu",
+          "hsk": 5,
+          "word_id": "hsk5_391",
+          "meaning_vi": "hiệu quả cao"
+        },
+        {
+          "text": "地",
+          "pinyin": "de",
+          "hanviet": "Địa",
+          "hsk": 2,
+          "word_id": "hsk2_333",
+          "meaning_vi": "cách (trợ từ trạng ngữ)"
+        },
+        {
+          "text": "完成",
+          "pinyin": "wánchéng",
+          "hanviet": "Hoàn Thành",
+          "hsk": 3,
+          "word_id": "hsk3_947",
+          "meaning_vi": "hoàn thành"
+        },
+        {
+          "text": "焊接",
+          "pinyin": "hàn jiē",
+          "hanviet": "Hàn Tiếp"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "喷漆",
+          "pinyin": "pēn qī",
+          "hanviet": "Phun Tất"
+        },
+        {
+          "text": "等",
+          "pinyin": "děng",
+          "hanviet": "Đẳng",
+          "hsk": 2,
+          "word_id": "hsk2_20",
+          "meaning_vi": "đợi, chờ"
+        },
+        {
+          "text": "繁重",
+          "pinyin": "fánzhòng",
+          "hanviet": "Phồn Trọng",
+          "hsk": 7,
+          "word_id": "hsk7_1074",
+          "meaning_vi": "nặng nề, bộn bề"
+        },
+        {
+          "text": "作业",
+          "pinyin": "zuòyè",
+          "hanviet": "Tác Nghiệp",
+          "hsk": 3,
+          "word_id": "hsk3_1079",
+          "meaning_vi": "bài tập về nhà"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "而在医院手术室和危险探测救援现场，特种机器人更是成为了医生与救援人员得力的助手。",
+      "pinyin": "Ér zài yīyuàn shǒushùshì hé wēixiǎn tàncè jiùyuán xiànchǎng, tèzhǒng jīqìrén gèng shì chéngwéi le yīshēng yǔ jiùyuán rényuán délì de zhùshǒu.",
+      "vi": "Trong phòng phẫu thuật bệnh viện hay hiện trường cứu hộ hiểm nguy, các robot chuyên dụng trở thành trợ thủ đắc lực.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "而",
+          "pinyin": "ér",
+          "hanviet": "Nhi",
+          "hsk": 4,
+          "word_id": "hsk4_183",
+          "meaning_vi": "mà, và"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "医院",
+          "pinyin": "yīyuàn",
+          "hanviet": "Y Viện",
+          "hsk": 1,
+          "word_id": "hsk1_367",
+          "meaning_vi": "bệnh viện"
+        },
+        {
+          "text": "手术室",
+          "pinyin": "shǒu shù shì",
+          "hanviet": "Thủ Thuật Thất"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "危险",
+          "pinyin": "wēixiǎn",
+          "hanviet": "Nguy Hiểm",
+          "hsk": 4,
+          "word_id": "hsk4_770",
+          "meaning_vi": "nguy hiểm"
+        },
+        {
+          "text": "探测",
+          "pinyin": "tàncè",
+          "hanviet": "Thám Trắc",
+          "hsk": 7,
+          "word_id": "hsk7_3953",
+          "meaning_vi": "dò tìm, thăm dò"
+        },
+        {
+          "text": "救援",
+          "pinyin": "jiùyuán",
+          "hanviet": "Cứu Viện",
+          "hsk": 6,
+          "word_id": "hsk6_738",
+          "meaning_vi": "cứu hộ, ứng cứu"
+        },
+        {
+          "text": "现场",
+          "pinyin": "xiànchǎng",
+          "hanviet": "Hiện Trường",
+          "hsk": 5,
+          "word_id": "hsk5_1238",
+          "meaning_vi": "hiện trường"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "特种",
+          "pinyin": "tè zhǒng",
+          "hanviet": "Đặc Chủng"
+        },
+        {
+          "text": "机器人",
+          "pinyin": "jīqìrén",
+          "hanviet": "Cơ Khí Nhân",
+          "hsk": 5,
+          "word_id": "hsk5_523",
+          "meaning_vi": "người máy, rô-bốt"
+        },
+        {
+          "text": "更是",
+          "pinyin": "gèng shì",
+          "hanviet": "Canh Thị"
+        },
+        {
+          "text": "成为",
+          "pinyin": "chéngwéi",
+          "hanviet": "Thành Vi",
+          "hsk": 4,
+          "word_id": "hsk4_82",
+          "meaning_vi": "trở thành"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "医生",
+          "pinyin": "yīshēng",
+          "hanviet": "Y Sinh",
+          "hsk": 1,
+          "word_id": "hsk1_366",
+          "meaning_vi": "bác sĩ"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "救援",
+          "pinyin": "jiùyuán",
+          "hanviet": "Cứu Viện",
+          "hsk": 6,
+          "word_id": "hsk6_738",
+          "meaning_vi": "cứu hộ, ứng cứu"
+        },
+        {
+          "text": "人员",
+          "pinyin": "rényuán",
+          "hanviet": "Nhân Viên",
+          "hsk": 4,
+          "word_id": "hsk4_612",
+          "meaning_vi": "nhân viên, người làm"
+        },
+        {
+          "text": "得力",
+          "pinyin": "délì",
+          "hanviet": "Đắc Lực",
+          "hsk": 7,
+          "word_id": "hsk7_816",
+          "meaning_vi": "đắc lực"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "助手",
+          "pinyin": "zhùshǒu",
+          "hanviet": "Trợ Thủ",
+          "hsk": 6,
+          "word_id": "hsk6_1754",
+          "meaning_vi": "trợ thủ, người phụ tá"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "面对人工智能时代，人类需要制定严密合理的伦理规范，确保机器人始终造福社会。",
+      "pinyin": "Miànduì réngōng zhìnéng shídài, rénlèi xūyào zhìdìng yánmì hélǐ de lúnlǐ guīfàn, quèbǎo jīqìrén shǐzhōng zàofú shèhuì.",
+      "vi": "Đối diện kỷ nguyên trí tuệ nhân tạo, nhân loại cần xây dựng chuẩn mực đạo đức hợp lý để robot luôn phục vụ đời sống con người.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "面对",
+          "pinyin": "miànduì",
+          "hanviet": "Diện Đối",
+          "hsk": 4,
+          "word_id": "hsk4_509",
+          "meaning_vi": "đối mặt"
+        },
+        {
+          "text": "人工智能",
+          "pinyin": "réngōng zhìnéng",
+          "hanviet": "Nhân Công Trí Năng",
+          "hsk": 6,
+          "word_id": "hsk6_1094",
+          "meaning_vi": "trí tuệ nhân tạo"
+        },
+        {
+          "text": "时代",
+          "pinyin": "shídài",
+          "hanviet": "Thời Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1012",
+          "meaning_vi": "thời đại"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "人类",
+          "pinyin": "rénlèi",
+          "hanviet": "Nhân Loại",
+          "hsk": 5,
+          "word_id": "hsk5_921",
+          "meaning_vi": "loài người, nhân loại"
+        },
+        {
+          "text": "需要",
+          "pinyin": "xūyào",
+          "hanviet": "Nhu Yêu",
+          "hsk": 3,
+          "word_id": "hsk3_991",
+          "meaning_vi": "cần thiết, cần"
+        },
+        {
+          "text": "制定",
+          "pinyin": "zhìdìng",
+          "hanviet": "Chế Định",
+          "hsk": 5,
+          "word_id": "hsk5_1511",
+          "meaning_vi": "đặt ra, định ra (quy định)"
+        },
+        {
+          "text": "严密",
+          "pinyin": "yánmì",
+          "hanviet": "Nghiêm Mật",
+          "hsk": 7,
+          "word_id": "hsk7_4729",
+          "meaning_vi": "chặt chẽ, nghiêm ngặt"
+        },
+        {
+          "text": "合理",
+          "pinyin": "hélǐ",
+          "hanviet": "Hợp Lí/hợp Lý",
+          "hsk": 5,
+          "word_id": "hsk5_477",
+          "meaning_vi": "hợp lý"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "伦理",
+          "pinyin": "lúnlǐ",
+          "hanviet": "Luân Lý",
+          "hsk": 7,
+          "word_id": "hsk7_2704",
+          "meaning_vi": "luân lý, đạo đức"
+        },
+        {
+          "text": "规范",
+          "pinyin": "guīfàn",
+          "hanviet": "Quy Phạm",
+          "hsk": 6,
+          "word_id": "hsk6_500",
+          "meaning_vi": "quy phạm, chuẩn mực"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "确保",
+          "pinyin": "quèbǎo",
+          "hanviet": "Xác Bảo",
+          "hsk": 5,
+          "word_id": "hsk5_906",
+          "meaning_vi": "đảm bảo chắc chắn"
+        },
+        {
+          "text": "机器人",
+          "pinyin": "jīqìrén",
+          "hanviet": "Cơ Khí Nhân",
+          "hsk": 5,
+          "word_id": "hsk5_523",
+          "meaning_vi": "người máy, rô-bốt"
+        },
+        {
+          "text": "始终",
+          "pinyin": "shǐzhōng",
+          "hanviet": "Thủy Chung",
+          "hsk": 5,
+          "word_id": "hsk5_1027",
+          "meaning_vi": "trước sau, luôn luôn"
+        },
+        {
+          "text": "造福",
+          "pinyin": "zàofú",
+          "hanviet": "Tạo Phúc",
+          "hsk": 7,
+          "word_id": "hsk7_5119",
+          "meaning_vi": "tạo phúc, mang lại lợi ích cho"
+        },
+        {
+          "text": "社会",
+          "pinyin": "shèhuì",
+          "hanviet": "Xã Hội",
+          "hsk": 4,
+          "word_id": "hsk4_639",
+          "meaning_vi": "xã hội"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk4_425",
+    "hsk3_713",
+    "hsk5_1242",
+    "hsk4_639"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Từ 'robot' xuất hiện lần đầu tiên ở đâu?",
+      "options_vi": [
+        "Trong một vở kịch của nhà văn Tiệp Khắc năm 1920",
+        "Trong kinh Phật cổ",
+        "Trên bảng quảng cáo máy tính Mỹ"
+      ],
+      "answer": 0,
+      "explanation_vi": "Nhà văn Karel Capek đưa từ 'robot' vào vở kịch R.U.R năm 1920."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Cánh tay robot công nghiệp được ứng dụng rộng rãi nhất ở ngành nào?",
+      "options_vi": [
+        "Dây chuyền lắp ráp ô tô và sản xuất điện tử",
+        "Chèo thuyền câu cá",
+        "Gieo mạ đồng ruộng"
+      ],
+      "answer": 0,
+      "explanation_vi": "Robot công nghiệp đảm nhận các việc hàn ráp ô tô chính xác, bền bỉ."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Yếu tố quan trọng để đảm bảo công nghệ robot và AI phục vụ tốt cho loài người là gì?",
+      "options_vi": [
+        "Xây dựng các quy tắc đạo đức và an toàn hợp lý",
+        "Cấm hoàn toàn việc học hành",
+        "Tắt toàn bộ mạng Internet"
+      ],
+      "answer": 0,
+      "explanation_vi": "Cần xây dựng khung pháp lý và đạo đức công nghệ an toàn."
+    }
+  ]
+}

@@ -1,0 +1,880 @@
+{
+  "id": "wanwu_story_071",
+  "chapter_no": 71,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 4,
+  "book_page_start": 734,
+  "book_page_end": 744,
+  "page_display": "Trang 734 - 744",
+  "title": {
+    "zh": "磁铁：从司南到超级储能王",
+    "vi": "Nam châm: Từ chiếc muỗng Tư Nam đến công nghệ siêu từ tính"
+  },
+  "topic": "science_technology",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🧲",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_071.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_071.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 734 - 744 · Từ dụng cụ định hướng bằng đá nam châm thời Chiến Quốc đến kim chỉ nam dẫn đường hàng hải thế giới.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "磁铁具有吸引铁磁性金属和指示南北极的神奇属性，在人类科技探索中扮演着先驱角色。",
+      "pinyin": "Cítiě jùyǒu xīyǐn tiěcíxìng jīnshǔ hé zhǐshì nán-běijí de shénqí shǔxìng, zài rénlèi kējì tànsuǒ zhōng bànyǎn zhe xiānqū juésè.",
+      "vi": "Nam châm có đặc tính kỳ diệu hút kim loại sắt từ và chỉ rõ hai cực nam bắc, đóng vai trò tiên phong trong khám phá khoa học.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "磁铁",
+          "pinyin": "cítiě",
+          "hanviet": "Từ Thiết",
+          "hsk": 7,
+          "word_id": "hsk7_657",
+          "meaning_vi": "nam châm"
+        },
+        {
+          "text": "具有",
+          "pinyin": "jùyǒu",
+          "hanviet": "Cụ Hữu",
+          "hsk": 5,
+          "word_id": "hsk5_643",
+          "meaning_vi": "có"
+        },
+        {
+          "text": "吸引",
+          "pinyin": "xīyǐn",
+          "hanviet": "Hấp Dẫn",
+          "hsk": 4,
+          "word_id": "hsk4_790",
+          "meaning_vi": "thu hút"
+        },
+        {
+          "text": "铁磁性",
+          "pinyin": "tiě cí xìng",
+          "hanviet": "Thiết Từ Tính"
+        },
+        {
+          "text": "金属",
+          "pinyin": "jīnshǔ",
+          "hanviet": "Kim Thuộc",
+          "hsk": 6,
+          "word_id": "hsk6_704",
+          "meaning_vi": "kim loại"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "指示",
+          "pinyin": "zhǐshì",
+          "hanviet": "Chỉ Thị",
+          "hsk": 6,
+          "word_id": "hsk6_1710",
+          "meaning_vi": "chỉ thị, hướng dẫn"
+        },
+        {
+          "text": "南北极",
+          "pinyin": "nán běi jí",
+          "hanviet": "Nam Bắc Cực"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "神奇",
+          "pinyin": "shénqí",
+          "hanviet": "Thần Kì/thần Kỳ",
+          "hsk": 6,
+          "word_id": "hsk6_1167",
+          "meaning_vi": "thần kỳ, kỳ diệu"
+        },
+        {
+          "text": "属性",
+          "pinyin": "shǔxìng",
+          "hanviet": "Thuộc Tính",
+          "hsk": 7,
+          "word_id": "hsk7_3780",
+          "meaning_vi": "thuộc tính; đặc tính"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "人类",
+          "pinyin": "rénlèi",
+          "hanviet": "Nhân Loại",
+          "hsk": 5,
+          "word_id": "hsk5_921",
+          "meaning_vi": "loài người, nhân loại"
+        },
+        {
+          "text": "科技",
+          "pinyin": "kējì",
+          "hanviet": "Khoa Kỹ",
+          "hsk": 4,
+          "word_id": "hsk4_425",
+          "meaning_vi": "khoa học kỹ thuật, công nghệ"
+        },
+        {
+          "text": "探索",
+          "pinyin": "tànsuǒ",
+          "hanviet": "Thám Sách",
+          "hsk": 6,
+          "word_id": "hsk6_1264",
+          "meaning_vi": "thám hiểm, tìm hiểu"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "扮演着",
+          "pinyin": "bàn yǎn zhe",
+          "hanviet": "Ban Diễn Trước"
+        },
+        {
+          "text": "先驱",
+          "pinyin": "xiān qū",
+          "hanviet": "Tiên Khu"
+        },
+        {
+          "text": "角色",
+          "pinyin": "juésè",
+          "hanviet": "Giác Sắc",
+          "hsk": 5,
+          "word_id": "hsk5_647",
+          "meaning_vi": "vai diễn, vai trò"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "早在战国时期，中国古代先民就利用天然磁石琢磨成了世界上最早的指向仪器——‘司南’。",
+      "pinyin": "Zǎo zài Zhànguó shíqī, Zhōngguó gǔdài xiānmín jiù lìyòng tiānrán císhí zhuómó chéng le shìjiè shàng zuì zǎo de zhǐxiàng yíqì——‘Sīnán’.",
+      "vi": "Từ thời Chiến Quốc, người xưa đã mài giũa đá nam châm tự nhiên thành dụng cụ chỉ hướng sớm nhất thế giới gọi là 'Tư Nam'.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "早",
+          "pinyin": "zǎo",
+          "hanviet": "Tảo",
+          "hsk": 1,
+          "word_id": "hsk1_602",
+          "meaning_vi": "sớm"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "战国时期",
+          "pinyin": "zhàn guó shí qī",
+          "hanviet": "Chiến Quốc Thời Kỳ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "先民",
+          "pinyin": "xiān mín",
+          "hanviet": "Tiên Dân"
+        },
+        {
+          "text": "就",
+          "pinyin": "jiù",
+          "hanviet": "Tựu",
+          "hsk": 2,
+          "word_id": "hsk2_376",
+          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)"
+        },
+        {
+          "text": "利用",
+          "pinyin": "lìyòng",
+          "hanviet": "Lợi Dụng",
+          "hsk": 5,
+          "word_id": "hsk5_710",
+          "meaning_vi": "lợi dụng, tận dụng"
+        },
+        {
+          "text": "天然",
+          "pinyin": "tiānrán",
+          "hanviet": "Thiên Nhiên",
+          "hsk": 6,
+          "word_id": "hsk6_1290",
+          "meaning_vi": "tự nhiên"
+        },
+        {
+          "text": "磁石",
+          "pinyin": "cí shí",
+          "hanviet": "Từ Thạch"
+        },
+        {
+          "text": "琢磨",
+          "pinyin": "zuómo",
+          "hanviet": "Trác Ma",
+          "hsk": 7,
+          "word_id": "hsk7_5584",
+          "meaning_vi": "suy ngẫm, đắn đo nghiền ngẫm"
+        },
+        {
+          "text": "成",
+          "pinyin": "chéng",
+          "hanviet": "Thành",
+          "hsk": 6,
+          "word_id": "hsk6_156",
+          "meaning_vi": "vào (số lượng)"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "世界",
+          "pinyin": "shìjiè",
+          "hanviet": "Thế Giới",
+          "hsk": 3,
+          "word_id": "hsk3_916",
+          "meaning_vi": "thế giới"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "最早",
+          "pinyin": "zuì zǎo",
+          "hanviet": "Tối Tảo"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "指向",
+          "pinyin": "zhǐxiàng",
+          "hanviet": "Chỉ Hướng",
+          "hsk": 7,
+          "word_id": "hsk7_5321",
+          "meaning_vi": "hướng tới, chỉ về hướng"
+        },
+        {
+          "text": "仪器",
+          "pinyin": "yíqì",
+          "hanviet": "Nghi Khí",
+          "hsk": 6,
+          "word_id": "hsk6_1552",
+          "meaning_vi": "thiết bị, máy đo"
+        },
+        {
+          "text": "—"
+        },
+        {
+          "text": "—"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "司南",
+          "pinyin": "sī nán",
+          "hanviet": "Ti Nam"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "北宋学者沈括在《梦溪笔谈》中系统记载了人工磁化钢针的技术，发明了精巧实用的指南针。",
+      "pinyin": "Běisòng xuézhě Shěn Kuò zài 《Mèngxī Bǐtán》 zhōng xìtǒng jìzǎi le réngōng cíhuà gāngzhēn de jìshù, fāmíng le jīngqiǎo shíyòng de zhǐnánzhēn.",
+      "vi": "Học giả Thẩm Quát thời Bắc Tống trong 'Mộng Khê Bút Đàm' đã ghi chép kỹ thuật từ hóa kim thép, phát minh la bàn chỉ nam tiện dụng.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "北宋",
+          "pinyin": "běi sòng",
+          "hanviet": "Bắc Tống"
+        },
+        {
+          "text": "学者",
+          "pinyin": "xuézhě",
+          "hanviet": "Học Giả",
+          "hsk": 5,
+          "word_id": "hsk5_1314",
+          "meaning_vi": "học giả, nhà nghiên cứu"
+        },
+        {
+          "text": "沈括",
+          "pinyin": "shěn kuò",
+          "hanviet": "Thẩm Quát"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "《"
+        },
+        {
+          "text": "梦溪笔谈",
+          "pinyin": "mèng xī bǐ tán",
+          "hanviet": "Mộng Khê Bút Đàm"
+        },
+        {
+          "text": "》"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "系统",
+          "pinyin": "xìtǒng",
+          "hanviet": "Hệ Thống",
+          "hsk": 5,
+          "word_id": "hsk5_1229",
+          "meaning_vi": "hệ thống"
+        },
+        {
+          "text": "记载",
+          "pinyin": "jìzǎi",
+          "hanviet": "Ký Tải",
+          "hsk": 5,
+          "word_id": "hsk5_550",
+          "meaning_vi": "ghi chép, ghi lại"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "人工",
+          "pinyin": "réngōng",
+          "hanviet": "Nhân Công",
+          "hsk": 5,
+          "word_id": "hsk5_918",
+          "meaning_vi": "nhân công, nhân tạo"
+        },
+        {
+          "text": "磁化",
+          "pinyin": "cí huà",
+          "hanviet": "Từ Hoa"
+        },
+        {
+          "text": "钢针",
+          "pinyin": "gāng zhēn",
+          "hanviet": "Cương Châm"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "技术",
+          "pinyin": "jìshù",
+          "hanviet": "Kĩ Thuật/kỹ Thuật",
+          "hsk": 4,
+          "word_id": "hsk4_331",
+          "meaning_vi": "kỹ thuật"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "发明",
+          "pinyin": "fāmíng",
+          "hanviet": "Phát Minh",
+          "hsk": 5,
+          "word_id": "hsk5_320",
+          "meaning_vi": "phát minh"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "精巧",
+          "pinyin": "jīngqiǎo",
+          "hanviet": "Tinh Xảo",
+          "hsk": 7,
+          "word_id": "hsk7_2177",
+          "meaning_vi": "tinh xảo, khéo léo tinh xảo"
+        },
+        {
+          "text": "实用",
+          "pinyin": "shíyòng",
+          "hanviet": "Thực Dụng",
+          "hsk": 5,
+          "word_id": "hsk5_1024",
+          "meaning_vi": "thực dụng, hữu dụng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "指南针",
+          "pinyin": "zhǐ nán zhēn",
+          "hanviet": "Chỉ Nam Châm"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "指南针应用于远洋航海，直接引领了地理大发现时代，推动了各大洲贸易与文化的蓬勃交流。",
+      "pinyin": "Zhǐnánzhēn yìngyòng yú yuǎnyáng hánghǎi, zhíjiē yǐnlǐng le dìlǐ dàfāxiàn shídài, tuīdòng le gè dàzhōu màoyì yǔ wénhuà de péngbó jiāoliú.",
+      "vi": "La bàn áp dụng vào ngành hàng hải viễn dương đã mở ra thời đại phát kiến địa lý, thúc đẩy giao thương toàn cầu bùng nổ.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "指南针",
+          "pinyin": "zhǐ nán zhēn",
+          "hanviet": "Chỉ Nam Châm"
+        },
+        {
+          "text": "应用",
+          "pinyin": "yìngyòng",
+          "hanviet": "Ứng Dụng",
+          "hsk": 5,
+          "word_id": "hsk5_1387",
+          "meaning_vi": "ứng dụng"
+        },
+        {
+          "text": "于",
+          "pinyin": "yú",
+          "hanviet": "Vu",
+          "hsk": 6,
+          "word_id": "hsk6_1606",
+          "meaning_vi": "tại"
+        },
+        {
+          "text": "远洋",
+          "pinyin": "yuǎn yáng",
+          "hanviet": "Viễn Dương"
+        },
+        {
+          "text": "航海",
+          "pinyin": "hánghǎi",
+          "hanviet": "Hàng Hải",
+          "hsk": 7,
+          "word_id": "hsk7_1590",
+          "meaning_vi": "đi biển, hàng hải"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "直接",
+          "pinyin": "zhíjiē",
+          "hanviet": "Trực Tiếp",
+          "hsk": 4,
+          "word_id": "hsk4_948",
+          "meaning_vi": "trực tiếp"
+        },
+        {
+          "text": "引领",
+          "pinyin": "yǐnlǐng",
+          "hanviet": "Dẫn Lãnh",
+          "hsk": 7,
+          "word_id": "hsk7_4921",
+          "meaning_vi": "dẫn dắt, dẫn đầu, dẫn dắt xu thế"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "地理",
+          "pinyin": "dìlǐ",
+          "hanviet": "Địa Lí/địa Lý",
+          "hsk": 5,
+          "word_id": "hsk5_270",
+          "meaning_vi": "địa lý"
+        },
+        {
+          "text": "大",
+          "pinyin": "dà",
+          "hanviet": "Đại",
+          "hsk": 1,
+          "word_id": "hsk1_53",
+          "meaning_vi": "to, lớn"
+        },
+        {
+          "text": "发现",
+          "pinyin": "fāxiàn",
+          "hanviet": "Phát Hiện",
+          "hsk": 3,
+          "word_id": "hsk3_712",
+          "meaning_vi": "phát hiện"
+        },
+        {
+          "text": "时代",
+          "pinyin": "shídài",
+          "hanviet": "Thời Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1012",
+          "meaning_vi": "thời đại"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "推动",
+          "pinyin": "tuīdòng",
+          "hanviet": "Suy Động",
+          "hsk": 5,
+          "word_id": "hsk5_1158",
+          "meaning_vi": "thúc đẩy, đẩy mạnh"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "各",
+          "pinyin": "gè",
+          "hanviet": "Các",
+          "hsk": 4,
+          "word_id": "hsk4_244",
+          "meaning_vi": "mỗi, từng"
+        },
+        {
+          "text": "大洲",
+          "pinyin": "dà zhōu",
+          "hanviet": "Đại Châu"
+        },
+        {
+          "text": "贸易",
+          "pinyin": "màoyì",
+          "hanviet": "Mậu Dịch",
+          "hsk": 6,
+          "word_id": "hsk6_895",
+          "meaning_vi": "mậu dịch, thương mại"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "文化",
+          "pinyin": "wénhuà",
+          "hanviet": "Văn Hóa",
+          "hsk": 3,
+          "word_id": "hsk3_957",
+          "meaning_vi": "văn hóa"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "蓬勃",
+          "pinyin": "péngbó",
+          "hanviet": "Bồng Bột",
+          "hsk": 7,
+          "word_id": "hsk7_3043",
+          "meaning_vi": "phát triển mạnh mẽ; bừng bừng sức sống"
+        },
+        {
+          "text": "交流",
+          "pinyin": "jiāoliú",
+          "hanviet": "Giao Lưu",
+          "hsk": 4,
+          "word_id": "hsk4_370",
+          "meaning_vi": "giao lưu, trao đổi"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "今天，强大的超导磁铁更广泛应用于磁悬浮列车、医疗核磁共振成像与绿色储能技术之中。",
+      "pinyin": "Jīntiān, qiángdà de chāodǎo cítǐě gèng guǎngfàn yìngyòng yú cíxuánfú lièchē, yīliáo hécí gòngzhèn chéngxiàng yǔ lǜsè chǔnéng jìshù zhī zhōng.",
+      "vi": "Ngày nay, nam châm siêu dẫn được ứng dụng rộng rãi trong tàu đệm từ, chụp cộng hưởng từ (MRI) y tế và công nghệ tích trữ năng lượng.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "今天",
+          "pinyin": "jīntiān",
+          "hanviet": "Kim Thiên",
+          "hsk": 1,
+          "word_id": "hsk1_144",
+          "meaning_vi": "hôm nay"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "强大",
+          "pinyin": "qiángdà",
+          "hanviet": "Cường Đại",
+          "hsk": 5,
+          "word_id": "hsk5_870",
+          "meaning_vi": "mạnh mẽ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "超导",
+          "pinyin": "chāo dǎo",
+          "hanviet": "Siêu Đạo"
+        },
+        {
+          "text": "磁铁",
+          "pinyin": "cítiě",
+          "hanviet": "Từ Thiết",
+          "hsk": 7,
+          "word_id": "hsk7_657",
+          "meaning_vi": "nam châm"
+        },
+        {
+          "text": "更",
+          "pinyin": "gèng",
+          "hanviet": "Canh",
+          "hsk": 3,
+          "word_id": "hsk3_737",
+          "meaning_vi": "càng, hơn"
+        },
+        {
+          "text": "广泛应用",
+          "pinyin": "guǎng fàn yìng yòng",
+          "hanviet": "Nghiễm Phiếm Ưng Dụng"
+        },
+        {
+          "text": "于",
+          "pinyin": "yú",
+          "hanviet": "Vu",
+          "hsk": 6,
+          "word_id": "hsk6_1606",
+          "meaning_vi": "tại"
+        },
+        {
+          "text": "磁悬浮列车",
+          "pinyin": "cí xuán fú liè chē",
+          "hanviet": "Từ Huyền Phù Liệt Xa"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "医疗",
+          "pinyin": "yīliáo",
+          "hanviet": "Y Liệu",
+          "hsk": 5,
+          "word_id": "hsk5_1348",
+          "meaning_vi": "y tế, khám chữa bệnh"
+        },
+        {
+          "text": "核磁共振",
+          "pinyin": "hé cí gòng zhèn",
+          "hanviet": "Hạch Từ Cộng Chấn"
+        },
+        {
+          "text": "成像",
+          "pinyin": "chéng xiàng",
+          "hanviet": "Thành Tượng"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "绿色",
+          "pinyin": "lǜsè",
+          "hanviet": "Lục Sắc",
+          "hsk": 2,
+          "word_id": "hsk2_396",
+          "meaning_vi": "xanh"
+        },
+        {
+          "text": "储能",
+          "pinyin": "chǔ néng",
+          "hanviet": "Trữ Năng"
+        },
+        {
+          "text": "技术",
+          "pinyin": "jìshù",
+          "hanviet": "Kĩ Thuật/kỹ Thuật",
+          "hsk": 4,
+          "word_id": "hsk4_331",
+          "meaning_vi": "kỹ thuật"
+        },
+        {
+          "text": "之中",
+          "pinyin": "zhīzhōng",
+          "hanviet": "Chi Trung",
+          "hsk": 4,
+          "word_id": "hsk4_945",
+          "meaning_vi": "trong, trong số"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk4_425",
+    "hsk4_331",
+    "hsk5_1387",
+    "hsk7_657"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Thiết bị chỉ hướng bằng nam châm tự nhiên sớm nhất thời Chiến Quốc gọi là gì?",
+      "options_vi": [
+        "Tư Nam (司南)",
+        "Điện thoại thông minh",
+        "Đồng hồ cát"
+      ],
+      "answer": 0,
+      "explanation_vi": "Tư Nam có hình chiếc thìa bằng đá nam châm đặt trên đĩa đồng khắc phương hướng."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Học giả Thẩm Quát đã ghi chép các phương pháp đặt kim chỉ nam trong tác phẩm nổi tiếng nào?",
+      "options_vi": [
+        "Mộng Khê Bút Đàm (梦溪笔谈)",
+        "Tam Quốc Diễn Nghĩa",
+        "Bản Thảo Cương Mục"
+      ],
+      "answer": 0,
+      "explanation_vi": "Mộng Khê Bút Đàm là bách khoa toàn thư khoa học cổ đại ghi lại phát minh la bàn."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Ứng dụng của nam châm trong ngành giao thông vận tải hiện đại là gì?",
+      "options_vi": [
+        "Tàu đệm từ trường (Maglev) bay lướt trên đường ray",
+        "Xe bò kéo",
+        "Thuyền buồm gỗ"
+      ],
+      "answer": 0,
+      "explanation_vi": "Nam châm điện nâng đoàn tàu đệm từ chạy không ma sát với vận tốc cực cao."
+    }
+  ]
+}

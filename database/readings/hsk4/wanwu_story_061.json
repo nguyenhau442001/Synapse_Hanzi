@@ -1,0 +1,889 @@
+{
+  "id": "wanwu_story_061",
+  "chapter_no": 61,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 3,
+  "book_page_start": 645,
+  "book_page_end": 651,
+  "page_display": "Trang 645 - 651",
+  "title": {
+    "zh": "国服：穿过岁月的华裳",
+    "vi": "Quốc phục: Y phục hoa mỹ vượt tháng năm"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "👘",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_061.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_061.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 645 - 651 · Tiến trình phát triển trang phục từ Thâm y thời Chu Hán, áo cổ tròn thời Đường đến nét đẹp quốc phục ngày nay.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "服饰不仅是人类遮体御寒的日常衣物，更是展现民族文化与礼仪制度的重要载体。",
+      "pinyin": "Fúshì bùjǐn shì rénlèi zhētǐ yùhán de rìcháng yīwù, gèng shì zhǎnxiàn mínzú wénhuà yǔ lǐyí zhìdù de zhòngyào zàitǐ.",
+      "vi": "Trang phục không chỉ là y phục mặc che thân chống rét mỗi ngày, mà còn là phương tiện quan trọng thể hiện văn hóa và lễ nghi dân tộc.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "服饰",
+          "pinyin": "fúshì",
+          "hanviet": "Phục Sức",
+          "hsk": 7,
+          "word_id": "hsk7_1236",
+          "meaning_vi": "trang phục, y phục"
+        },
+        {
+          "text": "不仅",
+          "pinyin": "bùjǐn",
+          "hanviet": "Bất Cận",
+          "hsk": 4,
+          "word_id": "hsk4_55",
+          "meaning_vi": "không chỉ"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "人类",
+          "pinyin": "rénlèi",
+          "hanviet": "Nhân Loại",
+          "hsk": 5,
+          "word_id": "hsk5_921",
+          "meaning_vi": "loài người, nhân loại"
+        },
+        {
+          "text": "遮体",
+          "pinyin": "zhē tǐ",
+          "hanviet": "Già Thể"
+        },
+        {
+          "text": "御寒",
+          "pinyin": "yù hán",
+          "hanviet": "Ngự Hàn"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "日常",
+          "pinyin": "rìcháng",
+          "hanviet": "Nhật Thường",
+          "hsk": 4,
+          "word_id": "hsk4_618",
+          "meaning_vi": "thường ngày, hàng ngày"
+        },
+        {
+          "text": "衣物",
+          "pinyin": "yī wù",
+          "hanviet": "Y Vật"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "更是",
+          "pinyin": "gèng shì",
+          "hanviet": "Canh Thị"
+        },
+        {
+          "text": "展现",
+          "pinyin": "zhǎnxiàn",
+          "hanviet": "Triển Hiện",
+          "hsk": 5,
+          "word_id": "hsk5_1467",
+          "meaning_vi": "hiển thị"
+        },
+        {
+          "text": "民族",
+          "pinyin": "mínzú",
+          "hanviet": "Dân Tộc",
+          "hsk": 4,
+          "word_id": "hsk4_512",
+          "meaning_vi": "dân tộc"
+        },
+        {
+          "text": "文化",
+          "pinyin": "wénhuà",
+          "hanviet": "Văn Hóa",
+          "hsk": 3,
+          "word_id": "hsk3_957",
+          "meaning_vi": "văn hóa"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "礼仪",
+          "pinyin": "lǐyí",
+          "hanviet": "Lễ Nghi",
+          "hsk": 7,
+          "word_id": "hsk7_2536",
+          "meaning_vi": "lễ nghi, nghi lễ, phong thái lễ phép"
+        },
+        {
+          "text": "制度",
+          "pinyin": "zhìdù",
+          "hanviet": "Chế Độ",
+          "hsk": 5,
+          "word_id": "hsk5_1512",
+          "meaning_vi": "chế độ, thể chế"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "重要",
+          "pinyin": "zhòngyào",
+          "hanviet": "Trọng Yếu",
+          "hsk": 3,
+          "word_id": "hsk3_1064",
+          "meaning_vi": "quan trọng"
+        },
+        {
+          "text": "载体",
+          "pinyin": "zàitǐ",
+          "hanviet": "Tải Thể",
+          "hsk": 7,
+          "word_id": "hsk7_5097",
+          "meaning_vi": "vật mang, phương tiện truyền tải, chất mang"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "中国自古被称为‘衣冠上国、礼仪之邦’，历朝历代的服饰形制都有着严格而典雅的规范。",
+      "pinyin": "Zhōngguó zìgǔ bèi chēng wéi ‘yīguān-shàngguó, lǐyí zhī bāng’, lìcháo-lìdài de fúshì xíngzhì dōu yǒuzhe yángé ér diǎnyǎ de guīfàn.",
+      "vi": "Trung Quốc từ xưa được mệnh danh là 'Đất nước y quan, xứ sở lễ nghi', quy chế trang phục mỗi triều đại đều có chuẩn mực thanh nhã.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "自古",
+          "pinyin": "zì gǔ",
+          "hanviet": "Tự Cổ"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "称为",
+          "pinyin": "chēngwéi",
+          "hanviet": "Xứng Vi",
+          "hsk": 5,
+          "word_id": "hsk5_134",
+          "meaning_vi": "gọi là"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "衣冠",
+          "pinyin": "yī guān",
+          "hanviet": "Y Quán"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "国",
+          "pinyin": "guó",
+          "hanviet": "Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_518",
+          "meaning_vi": "đất nước"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "礼仪之邦",
+          "pinyin": "lǐ yí zhī bāng",
+          "hanviet": "Lễ Nghi Chi Bang"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "历朝历代",
+          "pinyin": "lì cháo lì dài",
+          "hanviet": "Lịch Triều Lịch Đại"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "服饰",
+          "pinyin": "fúshì",
+          "hanviet": "Phục Sức",
+          "hsk": 7,
+          "word_id": "hsk7_1236",
+          "meaning_vi": "trang phục, y phục"
+        },
+        {
+          "text": "形制",
+          "pinyin": "xíng zhì",
+          "hanviet": "Hình Chế"
+        },
+        {
+          "text": "都",
+          "pinyin": "dōu",
+          "hanviet": "Đô",
+          "hsk": 1,
+          "word_id": "hsk1_76",
+          "meaning_vi": "đều"
+        },
+        {
+          "text": "有着",
+          "pinyin": "yǒuzhe",
+          "hanviet": "Hữu Trước",
+          "hsk": 4,
+          "word_id": "hsk4_894",
+          "meaning_vi": "có (thường dùng trong văn viết)"
+        },
+        {
+          "text": "严格",
+          "pinyin": "yángé",
+          "hanviet": "Nghiêm Cách",
+          "hsk": 4,
+          "word_id": "hsk4_845",
+          "meaning_vi": "nghiêm khắc, chặt chẽ"
+        },
+        {
+          "text": "而",
+          "pinyin": "ér",
+          "hanviet": "Nhi",
+          "hsk": 4,
+          "word_id": "hsk4_183",
+          "meaning_vi": "mà, và"
+        },
+        {
+          "text": "典雅",
+          "pinyin": "diǎn yǎ",
+          "hanviet": "Điển Nhã"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "规范",
+          "pinyin": "guīfàn",
+          "hanviet": "Quy Phạm",
+          "hsk": 6,
+          "word_id": "hsk6_500",
+          "meaning_vi": "quy phạm, chuẩn mực"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "先秦汉代的‘深衣’将衣与裳上下缝合在一起，宽袍大袖展现出端庄沉稳的君子之风。",
+      "pinyin": "Xiān-Qín-Hàndài de ‘shēnyī’ jiāng yī yǔ cháng shàngxià fénghé zài yìqǐ, kuānpáo-dàxiù zhǎnxiàn chū duānzhuāng chénwěn de jūnzǐ zhī fēng.",
+      "vi": "Mẫu áo 'Thâm y' thời Tiên Tần và Hán may liền vạt áo trên với thân váy dưới, vạt rộng tay dài biểu hiện phong thái đoan chính của người quân tử.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "先秦",
+          "pinyin": "xiān qín",
+          "hanviet": "Tiên Tần"
+        },
+        {
+          "text": "汉代",
+          "pinyin": "hàn dài",
+          "hanviet": "Hán Đại"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "深衣",
+          "pinyin": "shēn yī",
+          "hanviet": "Thâm Y"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "将",
+          "pinyin": "jiāng",
+          "hanviet": "Tương",
+          "hsk": 4,
+          "word_id": "hsk4_356",
+          "meaning_vi": "sẽ; đem, lấy (như 把)"
+        },
+        {
+          "text": "衣",
+          "pinyin": "yī",
+          "hanviet": "Y"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "裳",
+          "pinyin": "shang",
+          "hanviet": "Thường"
+        },
+        {
+          "text": "上下",
+          "pinyin": "shàngxià",
+          "hanviet": "Thướng Hạ",
+          "hsk": 5,
+          "word_id": "hsk5_965",
+          "meaning_vi": "lên và xuống"
+        },
+        {
+          "text": "缝合",
+          "pinyin": "fénghé",
+          "hanviet": "Phùng Cáp",
+          "hsk": 7,
+          "word_id": "hsk7_1217",
+          "meaning_vi": "khâu, khâu vết thương"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "一起",
+          "pinyin": "yìqǐ",
+          "hanviet": "Nhất Khởi",
+          "hsk": 2,
+          "word_id": "hsk2_473",
+          "meaning_vi": "cùng nhau"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "宽袍",
+          "pinyin": "kuān páo",
+          "hanviet": "Khoan Bào"
+        },
+        {
+          "text": "大袖",
+          "pinyin": "dà xiù",
+          "hanviet": "Đại Tụ"
+        },
+        {
+          "text": "展现出",
+          "pinyin": "zhǎn xiàn chū",
+          "hanviet": "Triển Hiện Xuất"
+        },
+        {
+          "text": "端庄",
+          "pinyin": "duān zhuāng",
+          "hanviet": "Đoan Trang"
+        },
+        {
+          "text": "沉稳",
+          "pinyin": "chénwěn",
+          "hanviet": "Trầm Ổn",
+          "hsk": 7,
+          "word_id": "hsk7_481",
+          "meaning_vi": "điềm đạm, trầm tĩnh"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "君子",
+          "pinyin": "jūnzǐ",
+          "hanviet": "Quân Tử",
+          "hsk": 7,
+          "word_id": "hsk7_2289",
+          "meaning_vi": "quân tử, người chính trực"
+        },
+        {
+          "text": "之风",
+          "pinyin": "zhī fēng",
+          "hanviet": "Chi Phong"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "盛唐时期的服饰则绚丽奔放，圆领袍衫与齐胸襦裙展现了当时开放包容的帝国盛世气象。",
+      "pinyin": "Shèngtáng shíqī de fúshì zé xuànlì bēnfàng, yuánlǐng páoshān yǔ qíxiōng rúqún zhǎnxiàn le dāngshí kāifàng bāoróng de dìguó shèngshì qìxiàng.",
+      "vi": "Trang phục thời Thịnh Đường lại rực rỡ phóng khoáng, áo vạt cổ tròn và váy nhu quần ngang ngực phản ánh khí thế phồn hoa cởi mở.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "盛唐",
+          "pinyin": "shèng táng",
+          "hanviet": "Thịnh Đường"
+        },
+        {
+          "text": "时期",
+          "pinyin": "shíqī",
+          "hanviet": "Thời Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_1016",
+          "meaning_vi": "thời kỳ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "服饰",
+          "pinyin": "fúshì",
+          "hanviet": "Phục Sức",
+          "hsk": 7,
+          "word_id": "hsk7_1236",
+          "meaning_vi": "trang phục, y phục"
+        },
+        {
+          "text": "则",
+          "pinyin": "xìtǒng",
+          "hanviet": "Hệ Thống",
+          "hsk": 5,
+          "word_id": "hsk5_1229",
+          "meaning_vi": "hệ thống"
+        },
+        {
+          "text": "绚丽",
+          "pinyin": "xuàn lì",
+          "hanviet": "Huyến Ly"
+        },
+        {
+          "text": "奔放",
+          "pinyin": "bēn fàng",
+          "hanviet": "Bôn Phóng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "圆领",
+          "pinyin": "yuán lǐng",
+          "hanviet": "Viên Lãnh"
+        },
+        {
+          "text": "袍衫",
+          "pinyin": "páo shān",
+          "hanviet": "Bào Sam"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "齐胸",
+          "pinyin": "qí xiōng",
+          "hanviet": "Tề Hung"
+        },
+        {
+          "text": "襦",
+          "pinyin": "rú",
+          "hanviet": "Nhu"
+        },
+        {
+          "text": "裙",
+          "pinyin": "qún",
+          "hanviet": "Quần"
+        },
+        {
+          "text": "展现",
+          "pinyin": "zhǎnxiàn",
+          "hanviet": "Triển Hiện",
+          "hsk": 5,
+          "word_id": "hsk5_1467",
+          "meaning_vi": "hiển thị"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "当时",
+          "pinyin": "dāngshí",
+          "hanviet": "Đương Thời",
+          "hsk": 4,
+          "word_id": "hsk4_136",
+          "meaning_vi": "lúc đó, khi đó"
+        },
+        {
+          "text": "开放",
+          "pinyin": "kāifàng",
+          "hanviet": "Khai Phóng",
+          "hsk": 5,
+          "word_id": "hsk5_650",
+          "meaning_vi": "mở cửa, khai phóng"
+        },
+        {
+          "text": "包容",
+          "pinyin": "bāoróng",
+          "hanviet": "Bao Dung",
+          "hsk": 7,
+          "word_id": "hsk7_102",
+          "meaning_vi": "bao dung, độ lượng khoan dung"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "帝国",
+          "pinyin": "dìguó",
+          "hanviet": "Đế Quốc",
+          "hsk": 7,
+          "word_id": "hsk7_860",
+          "meaning_vi": "đế quốc, đế chế"
+        },
+        {
+          "text": "盛世",
+          "pinyin": "shèng shì",
+          "hanviet": "Thịnh Thế"
+        },
+        {
+          "text": "气象",
+          "pinyin": "qìxiàng",
+          "hanviet": "Khí Tượng",
+          "hsk": 7,
+          "word_id": "hsk7_3190",
+          "meaning_vi": "khí tượng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "如今，以汉服为代表的传统服饰热潮在年轻一代中兴起，焕发出蓬勃的文化自信与现代活力。",
+      "pinyin": "Rújīn, yǐ hànfú wéi dàibiǎo de chuántǒng fúshì rècháo zài niánqīng yídài zhōng xīngqǐ, huànfā chū péngbó de wénhuà zìxìn yǔ xiàndài huólì.",
+      "vi": "Ngày nay, làn sóng cổ phục Hán phục đang nở rộ trong giới trẻ, tỏa ra niềm tự hào văn hóa tràn đầy sức sống thời hiện đại.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "如今",
+          "pinyin": "rújīn",
+          "hanviet": "Như Kim",
+          "hsk": 5,
+          "word_id": "hsk5_935",
+          "meaning_vi": "hiện nay, ngày nay"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "以",
+          "pinyin": "yǐ",
+          "hanviet": "Dĩ",
+          "hsk": 5,
+          "word_id": "hsk5_1362",
+          "meaning_vi": "bằng, dùng"
+        },
+        {
+          "text": "汉服",
+          "pinyin": "Hànfú",
+          "hanviet": "Hán Phục",
+          "hsk": 7,
+          "word_id": "hsk7_1586",
+          "meaning_vi": "hán phục, trang phục truyền thống"
+        },
+        {
+          "text": "为",
+          "pinyin": "wèi",
+          "hanviet": "Vi",
+          "hsk": 3,
+          "word_id": "hsk3_954",
+          "meaning_vi": "vì, cho"
+        },
+        {
+          "text": "代表",
+          "pinyin": "dàibiǎo",
+          "hanviet": "Đại Biểu",
+          "hsk": 5,
+          "word_id": "hsk5_234",
+          "meaning_vi": "đại diện"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "传统",
+          "pinyin": "chuántǒng",
+          "hanviet": "Truyền Thống",
+          "hsk": 5,
+          "word_id": "hsk5_187",
+          "meaning_vi": "truyền thống"
+        },
+        {
+          "text": "服饰",
+          "pinyin": "fúshì",
+          "hanviet": "Phục Sức",
+          "hsk": 7,
+          "word_id": "hsk7_1236",
+          "meaning_vi": "trang phục, y phục"
+        },
+        {
+          "text": "热潮",
+          "pinyin": "rècháo",
+          "hanviet": "Nhiệt Trào",
+          "hsk": 7,
+          "word_id": "hsk7_3396",
+          "meaning_vi": "làn sóng sôi nổi; cao trào; trào lưu"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "年轻一代",
+          "pinyin": "nián qīng yí dài",
+          "hanviet": "Niên Khinh Nhất Đại"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "兴起",
+          "pinyin": "xīngqǐ",
+          "hanviet": "Hứng Khởi",
+          "hsk": 6,
+          "word_id": "hsk6_1475",
+          "meaning_vi": "nổi lên, trỗi dậy, hưng thịnh"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "焕发",
+          "pinyin": "huànfā",
+          "hanviet": "Hoán Phát",
+          "hsk": 7,
+          "word_id": "hsk7_1750",
+          "meaning_vi": "bừng sáng, rạng rỡ, tràn trề"
+        },
+        {
+          "text": "出",
+          "pinyin": "chū",
+          "hanviet": "Xuất",
+          "hsk": 2,
+          "word_id": "hsk2_316",
+          "meaning_vi": "ra, đi ra"
+        },
+        {
+          "text": "蓬勃",
+          "pinyin": "péngbó",
+          "hanviet": "Bồng Bột",
+          "hsk": 7,
+          "word_id": "hsk7_3043",
+          "meaning_vi": "phát triển mạnh mẽ; bừng bừng sức sống"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "文化",
+          "pinyin": "wénhuà",
+          "hanviet": "Văn Hóa",
+          "hsk": 3,
+          "word_id": "hsk3_957",
+          "meaning_vi": "văn hóa"
+        },
+        {
+          "text": "自信",
+          "pinyin": "zìxìn",
+          "hanviet": "Tự Tín",
+          "hsk": 4,
+          "word_id": "hsk4_983",
+          "meaning_vi": "tự tin"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "现代",
+          "pinyin": "xiàndài",
+          "hanviet": "Hiện Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1239",
+          "meaning_vi": "hiện đại"
+        },
+        {
+          "text": "活力",
+          "pinyin": "huólì",
+          "hanviet": "Hoạt Lực",
+          "hsk": 6,
+          "word_id": "hsk6_597",
+          "meaning_vi": "sức sống, sinh khí, sự năng động"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk5_1466",
+    "hsk3_957",
+    "hsk5_1512",
+    "hsk4_845",
+    "hsk7_1236"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Kiểu trang phục cổ xưa nào may nối thân áo trên và vạt váy dưới thành một thể thống nhất?",
+      "options_vi": [
+        "Thâm y (深衣) thời Tiên Tần và Hán",
+        "Áo sơ mi thắt cà vạt",
+        "Áo mưa tiện lợi"
+      ],
+      "answer": 0,
+      "explanation_vi": "Thâm y may liền vạt trên và dưới tượng trưng cho sự ngay thẳng và quy củ."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Trang phục thời Thịnh Đường phản ánh nét đặc trưng xã hội nào?",
+      "options_vi": [
+        "Sự phồn hoa, cởi mở, tự tin và màu sắc phóng khoáng",
+        "Sự buồn bã cô lập",
+        "Sự tiết kiệm không dám nhuộm vải"
+      ],
+      "answer": 0,
+      "explanation_vi": "Thời Đường giao lưu quốc tế rộng rãi nên y phục tươi sáng, thanh thoát và tự do."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Trang phục truyền thống ngày nay đang được thế hệ trẻ đón nhận bằng cách nào?",
+      "options_vi": [
+        "Mặc Hán phục dạo phố, chụp ảnh và biểu diễn tôn vinh văn hóa truyền thống",
+        "Đem đốt hết",
+        "Cấm không cho ai xem"
+      ],
+      "answer": 0,
+      "explanation_vi": "Giới trẻ ngày càng say mê mặc trang phục truyền thống để lan tỏa nét đẹp cổ điển."
+    }
+  ]
+}

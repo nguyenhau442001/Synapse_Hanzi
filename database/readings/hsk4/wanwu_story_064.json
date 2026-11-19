@@ -1,0 +1,865 @@
+{
+  "id": "wanwu_story_064",
+  "chapter_no": 64,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 4,
+  "book_page_start": 675,
+  "book_page_end": 685,
+  "page_display": "Trang 675 - 685",
+  "title": {
+    "zh": "钱荒：困扰千年的治国难题",
+    "vi": "Nạn khan tiền: Bài toán kinh tế nhức nhối ngàn năm"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🪙",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_064.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_064.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 675 - 685 · Nạn thiếu tiền đồng thời Tống và phát minh tiền giấy Giao Tử sớm nhất thế giới ở Tứ Xuyên.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "在中国古代商品经济繁荣的宋代，市场上却经常发生铜钱严重短缺的‘钱荒’现象。",
+      "pinyin": "Zài Zhōngguó gǔdài shāngpǐn jīngjì fánróng de Sòngdài, shìchǎng shàng què jīngcháng fāshēng tóngqián yánzhòng duǎnquē de ‘qiánhuāng’ xiànxiàng.",
+      "vi": "Vào thời Tống khi kinh tế thương nghiệp hưng thịnh, trên thị trường lại thường xuyên xảy ra nạn 'khan tiền' đồng nghiêm trọng.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "商品经济",
+          "pinyin": "shāng pǐn jīng jì",
+          "hanviet": "Thương Phẩm Kinh Tể"
+        },
+        {
+          "text": "繁荣",
+          "pinyin": "fánróng",
+          "hanviet": "Phồn Vinh",
+          "hsk": 5,
+          "word_id": "hsk5_329",
+          "meaning_vi": "phồn vinh, thịnh vượng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "宋代",
+          "pinyin": "sòng dài",
+          "hanviet": "Tống Đại"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "市场",
+          "pinyin": "shìchǎng",
+          "hanviet": "Thị Trường",
+          "hsk": 4,
+          "word_id": "hsk4_669",
+          "meaning_vi": "thị trường, chợ"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "却",
+          "pinyin": "què",
+          "hanviet": "Khước",
+          "hsk": 4,
+          "word_id": "hsk4_606",
+          "meaning_vi": "nhưng, lại"
+        },
+        {
+          "text": "经常",
+          "pinyin": "jīngcháng",
+          "hanviet": "Kinh Thường",
+          "hsk": 2,
+          "word_id": "hsk2_374",
+          "meaning_vi": "thường xuyên"
+        },
+        {
+          "text": "发生",
+          "pinyin": "fāshēng",
+          "hanviet": "Phát Sinh",
+          "hsk": 3,
+          "word_id": "hsk3_711",
+          "meaning_vi": "phát sinh, xảy ra"
+        },
+        {
+          "text": "铜钱",
+          "pinyin": "tóng qián",
+          "hanviet": "Đồng Tiền"
+        },
+        {
+          "text": "严重",
+          "pinyin": "yánzhòng",
+          "hanviet": "Nghiêm Trọng",
+          "hsk": 4,
+          "word_id": "hsk4_848",
+          "meaning_vi": "nghiêm trọng"
+        },
+        {
+          "text": "短缺",
+          "pinyin": "duǎnquē",
+          "hanviet": "Đoản Khuyết",
+          "hsk": 6,
+          "word_id": "hsk6_328",
+          "meaning_vi": "thiếu hụt, khan hiếm"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "钱荒",
+          "pinyin": "qián huāng",
+          "hanviet": "Tiền Hoang"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "现象",
+          "pinyin": "xiànxiàng",
+          "hanviet": "Hiện Tượng",
+          "hsk": 5,
+          "word_id": "hsk5_1243",
+          "meaning_vi": "hiện tượng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "由于铜矿开采有限，加之大量铜钱流向海外贸易或被民间熔铸成铜器，货币严重供不应求。",
+      "pinyin": "Yóuyú tóngkuàng kāicǎi yǒuxiàn, jiāzhī dàliàng tóngqián liúxiàng hǎiwài màoyì huò bèi mínjiān róngzhù chéng tóngqì, huòbì yánzhòng gōngbùyìngqiú.",
+      "vi": "Do quặng đồng khai thác hạn chế, tiền đồng lại chảy ra nước ngoài hoặc bị đúc thành đồ đồng gia dụng, khiến tiền tệ thiếu hụt lớn.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "由于",
+          "pinyin": "yóuyú",
+          "hanviet": "Do Vu",
+          "hsk": 4,
+          "word_id": "hsk4_888",
+          "meaning_vi": "do, vì"
+        },
+        {
+          "text": "铜矿",
+          "pinyin": "tóng kuàng",
+          "hanviet": "Đồng Khoáng"
+        },
+        {
+          "text": "开采",
+          "pinyin": "kāicǎi",
+          "hanviet": "Khai Thái",
+          "hsk": 7,
+          "word_id": "hsk7_2297",
+          "meaning_vi": "khai thác (mỏ)"
+        },
+        {
+          "text": "有限",
+          "pinyin": "yǒuxiàn",
+          "hanviet": "Hữu Hạn",
+          "hsk": 5,
+          "word_id": "hsk5_1412",
+          "meaning_vi": "có hạn, hữu hạn"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "加之",
+          "pinyin": "jiāzhī",
+          "hanviet": "Gia Chi",
+          "hsk": 7,
+          "word_id": "hsk7_1934",
+          "meaning_vi": "hơn nữa, thêm vào đó, cộng thêm"
+        },
+        {
+          "text": "大量",
+          "pinyin": "dàliàng",
+          "hanviet": "Đại Lượng",
+          "hsk": 4,
+          "word_id": "hsk4_126",
+          "meaning_vi": "lượng lớn, nhiều"
+        },
+        {
+          "text": "铜钱",
+          "pinyin": "tóng qián",
+          "hanviet": "Đồng Tiền"
+        },
+        {
+          "text": "流向",
+          "pinyin": "liúxiàng",
+          "hanviet": "Lưu Hướng",
+          "hsk": 7,
+          "word_id": "hsk7_2660",
+          "meaning_vi": "hướng dòng chảy, dòng luân chuyển"
+        },
+        {
+          "text": "海外",
+          "pinyin": "hǎiwài",
+          "hanviet": "Hải Ngoại",
+          "hsk": 5,
+          "word_id": "hsk5_461",
+          "meaning_vi": "hải ngoại, nước ngoài"
+        },
+        {
+          "text": "贸易",
+          "pinyin": "màoyì",
+          "hanviet": "Mậu Dịch",
+          "hsk": 6,
+          "word_id": "hsk6_895",
+          "meaning_vi": "mậu dịch, thương mại"
+        },
+        {
+          "text": "或",
+          "pinyin": "huò",
+          "hanviet": "Hoặc",
+          "hsk": 3,
+          "word_id": "hsk3_774",
+          "meaning_vi": "hoặc"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "民间",
+          "pinyin": "mínjiān",
+          "hanviet": "Dân Gian",
+          "hsk": 6,
+          "word_id": "hsk6_919",
+          "meaning_vi": "dân gian, trong dân chúng"
+        },
+        {
+          "text": "熔铸",
+          "pinyin": "róng zhù",
+          "hanviet": "Dung Chú"
+        },
+        {
+          "text": "成",
+          "pinyin": "chéng",
+          "hanviet": "Thành",
+          "hsk": 6,
+          "word_id": "hsk6_156",
+          "meaning_vi": "vào (số lượng)"
+        },
+        {
+          "text": "铜器",
+          "pinyin": "tóng qì",
+          "hanviet": "Đồng Khí"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "货币",
+          "pinyin": "huòbì",
+          "hanviet": "Hoá Tệ",
+          "hsk": 6,
+          "word_id": "hsk6_601",
+          "meaning_vi": "tiền tệ"
+        },
+        {
+          "text": "严重",
+          "pinyin": "yánzhòng",
+          "hanviet": "Nghiêm Trọng",
+          "hsk": 4,
+          "word_id": "hsk4_848",
+          "meaning_vi": "nghiêm trọng"
+        },
+        {
+          "text": "供不应求",
+          "pinyin": "gōngbúyìngqiú",
+          "hanviet": "Cung Bất Ưng Cầu",
+          "hsk": 7,
+          "word_id": "hsk7_1369",
+          "meaning_vi": "cung không đủ cầu"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "在商业发达的四川地区，由于铁钱沉重不易携带，富商们联合发行了名为‘交子’的纸质凭证。",
+      "pinyin": "Zài shāngyè fādá de Sìchuān dìqū, yóuyú tiěqián chénzhòng bùyì xiédài, fùshāngmen liánhé fāxíng le míngwéi ‘jiāozǐ’ de zhǐzhì píngzhèng.",
+      "vi": "Tại đất Tứ Xuyên sầm uất, vì tiền sắt quá nặng nề khó mang theo, các phú thương đã cùng phát hành tín phiếu giấy gọi là 'Giao Tử'.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "商业",
+          "pinyin": "shāngyè",
+          "hanviet": "Thương Nghiệp",
+          "hsk": 5,
+          "word_id": "hsk5_961",
+          "meaning_vi": "thương nghiệp, kinh doanh"
+        },
+        {
+          "text": "发达",
+          "pinyin": "fādá",
+          "hanviet": "Phát Đạt",
+          "hsk": 5,
+          "word_id": "hsk5_318",
+          "meaning_vi": "phát triển"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "四川",
+          "pinyin": "sì chuān",
+          "hanviet": "Tứ Xuyên"
+        },
+        {
+          "text": "地区",
+          "pinyin": "dìqū",
+          "hanviet": "Địa Âu",
+          "hsk": 5,
+          "word_id": "hsk5_272",
+          "meaning_vi": "khu vực, vùng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "由于",
+          "pinyin": "yóuyú",
+          "hanviet": "Do Vu",
+          "hsk": 4,
+          "word_id": "hsk4_888",
+          "meaning_vi": "do, vì"
+        },
+        {
+          "text": "铁钱",
+          "pinyin": "tiě qián",
+          "hanviet": "Thiết Tiền"
+        },
+        {
+          "text": "沉重",
+          "pinyin": "chénzhòng",
+          "hanviet": "Trầm Trọng",
+          "hsk": 6,
+          "word_id": "hsk6_150",
+          "meaning_vi": "nặng nề, nghiêm trọng"
+        },
+        {
+          "text": "不易",
+          "pinyin": "bù yì",
+          "hanviet": "Bất Dịch"
+        },
+        {
+          "text": "携带",
+          "pinyin": "xiédài",
+          "hanviet": "Huề Đới",
+          "hsk": 6,
+          "word_id": "hsk6_1456",
+          "meaning_vi": "mang theo"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "富商",
+          "pinyin": "fù shāng",
+          "hanviet": "Phú Thương"
+        },
+        {
+          "text": "们",
+          "pinyin": "men",
+          "hanviet": "Môn",
+          "hsk": 1,
+          "word_id": "hsk1_538",
+          "meaning_vi": "họ (hậu tố)"
+        },
+        {
+          "text": "联合",
+          "pinyin": "liánhé",
+          "hanviet": "Liên Hợp",
+          "hsk": 5,
+          "word_id": "hsk5_711",
+          "meaning_vi": "liên hợp, liên minh"
+        },
+        {
+          "text": "发行",
+          "pinyin": "fāxíng",
+          "hanviet": "Phát Hành",
+          "hsk": 6,
+          "word_id": "hsk6_356",
+          "meaning_vi": "phát hành"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "名为",
+          "pinyin": "míng wèi",
+          "hanviet": "Danh Vi"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "交子",
+          "pinyin": "jiāo zi",
+          "hanviet": "Giao Tử"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "纸质",
+          "pinyin": "zhǐ zhì",
+          "hanviet": "Chỉ Chất"
+        },
+        {
+          "text": "凭证",
+          "pinyin": "píngzhèng",
+          "hanviet": "Bằng Chứng",
+          "hsk": 7,
+          "word_id": "hsk7_3116",
+          "meaning_vi": "chứng từ; bằng chứng; chứng chỉ"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "这是人类历史上最早出现的纸币，后来被北宋官方正式接管并设立专营机构印发。",
+      "pinyin": "Zhè shì rénlèi lìshǐ shàng zuì zǎo chūxiàn de zhǐbì, hòulái bèi Běisòng guānfāng zhèngshì jiēguǎn bìng shèlì zhuānyíng jīgòu yìnfā.",
+      "vi": "Đây là tiền giấy xuất hiện sớm nhất trong lịch sử nhân loại, sau đó được triều đình Bắc Tống tiếp quản và lập cơ quan phát hành.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "这是",
+          "pinyin": "zhè shì",
+          "hanviet": "Giá Thị"
+        },
+        {
+          "text": "人类",
+          "pinyin": "rénlèi",
+          "hanviet": "Nhân Loại",
+          "hsk": 5,
+          "word_id": "hsk5_921",
+          "meaning_vi": "loài người, nhân loại"
+        },
+        {
+          "text": "历史",
+          "pinyin": "lìshǐ",
+          "hanviet": "Lịch Sử",
+          "hsk": 3,
+          "word_id": "hsk3_831",
+          "meaning_vi": "lịch sử"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "最早",
+          "pinyin": "zuì zǎo",
+          "hanviet": "Tối Tảo"
+        },
+        {
+          "text": "出现",
+          "pinyin": "chūxiàn",
+          "hanviet": "Xuất Hiện",
+          "hsk": 4,
+          "word_id": "hsk4_90",
+          "meaning_vi": "xuất hiện"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "纸币",
+          "pinyin": "zhǐbì",
+          "hanviet": "Chỉ Tệ",
+          "hsk": 7,
+          "word_id": "hsk7_5306",
+          "meaning_vi": "tiền giấy"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "后来",
+          "pinyin": "hòulái",
+          "hanviet": "Hậu Lai",
+          "hsk": 3,
+          "word_id": "hsk3_761",
+          "meaning_vi": "sau đó"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "北宋",
+          "pinyin": "běi sòng",
+          "hanviet": "Bắc Tống"
+        },
+        {
+          "text": "官方",
+          "pinyin": "guānfāng",
+          "hanviet": "Quan Phương",
+          "hsk": 6,
+          "word_id": "hsk6_490",
+          "meaning_vi": "chính thức (của nhà nước)"
+        },
+        {
+          "text": "正式",
+          "pinyin": "zhèngshì",
+          "hanviet": "Chính Thức",
+          "hsk": 4,
+          "word_id": "hsk4_937",
+          "meaning_vi": "chính thức"
+        },
+        {
+          "text": "接管",
+          "pinyin": "jiē guǎn",
+          "hanviet": "Tiếp Quản"
+        },
+        {
+          "text": "并",
+          "pinyin": "bìng",
+          "hanviet": "Tinh",
+          "hsk": 4,
+          "word_id": "hsk4_39",
+          "meaning_vi": "và, đồng thời; hoàn toàn (không)"
+        },
+        {
+          "text": "设立",
+          "pinyin": "shèlì",
+          "hanviet": "Thiết Lập",
+          "hsk": 5,
+          "word_id": "hsk5_974",
+          "meaning_vi": "thiết lập, thành lập"
+        },
+        {
+          "text": "专营",
+          "pinyin": "zhuān yíng",
+          "hanviet": "Chuyên Doanh"
+        },
+        {
+          "text": "机构",
+          "pinyin": "jīgòu",
+          "hanviet": "Cơ Cấu",
+          "hsk": 5,
+          "word_id": "hsk5_520",
+          "meaning_vi": "cơ cấu, cơ quan, tổ chức"
+        },
+        {
+          "text": "印发",
+          "pinyin": "yìn fā",
+          "hanviet": "Ấn Phát"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "纸币的诞生有效缓解了货币短缺危机，开创了人类金融货币体系崭新的历史篇章。",
+      "pinyin": "Zhǐbì de dànshēng yǒuxiào huǎnjiě le huòbì duǎnquē wēijī, kāichuàng le rénlèi jīnróng huòbì tǐxì zhǎnxīn de lìshǐ piānzhāng.",
+      "vi": "Sự ra đời của tiền giấy giải tỏa hữu hiệu khủng hoảng thiếu tiền, mở ra trang sử mới cho hệ thống tiền tệ thế giới.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "纸币",
+          "pinyin": "zhǐbì",
+          "hanviet": "Chỉ Tệ",
+          "hsk": 7,
+          "word_id": "hsk7_5306",
+          "meaning_vi": "tiền giấy"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "诞生",
+          "pinyin": "dànshēng",
+          "hanviet": "Đản Sinh",
+          "hsk": 6,
+          "word_id": "hsk6_266",
+          "meaning_vi": "ra đời, sinh ra"
+        },
+        {
+          "text": "有效",
+          "pinyin": "yǒuxiào",
+          "hanviet": "Hữu Hiệu",
+          "hsk": 4,
+          "word_id": "hsk4_892",
+          "meaning_vi": "có hiệu lực, hiệu quả"
+        },
+        {
+          "text": "缓解",
+          "pinyin": "huǎnjiě",
+          "hanviet": "Hoãn Giải",
+          "hsk": 5,
+          "word_id": "hsk5_503",
+          "meaning_vi": "làm giảm, giảm nhẹ"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "货币",
+          "pinyin": "huòbì",
+          "hanviet": "Hoá Tệ",
+          "hsk": 6,
+          "word_id": "hsk6_601",
+          "meaning_vi": "tiền tệ"
+        },
+        {
+          "text": "短缺",
+          "pinyin": "duǎnquē",
+          "hanviet": "Đoản Khuyết",
+          "hsk": 6,
+          "word_id": "hsk6_328",
+          "meaning_vi": "thiếu hụt, khan hiếm"
+        },
+        {
+          "text": "危机",
+          "pinyin": "wēijī",
+          "hanviet": "Nguy Cơ",
+          "hsk": 6,
+          "word_id": "hsk6_1366",
+          "meaning_vi": "khủng hoảng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "开创",
+          "pinyin": "kāichuàng",
+          "hanviet": "Khai Sáng",
+          "hsk": 6,
+          "word_id": "hsk6_761",
+          "meaning_vi": "mở ra, khai sáng, đặt nền móng"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "人类",
+          "pinyin": "rénlèi",
+          "hanviet": "Nhân Loại",
+          "hsk": 5,
+          "word_id": "hsk5_921",
+          "meaning_vi": "loài người, nhân loại"
+        },
+        {
+          "text": "金融",
+          "pinyin": "jīnróng",
+          "hanviet": "Kim Dung",
+          "hsk": 6,
+          "word_id": "hsk6_703",
+          "meaning_vi": "tài chính, tiền tệ"
+        },
+        {
+          "text": "货币",
+          "pinyin": "huòbì",
+          "hanviet": "Hoá Tệ",
+          "hsk": 6,
+          "word_id": "hsk6_601",
+          "meaning_vi": "tiền tệ"
+        },
+        {
+          "text": "体系",
+          "pinyin": "tǐxì",
+          "hanviet": "Thể Hệ",
+          "hsk": 6,
+          "word_id": "hsk6_1286",
+          "meaning_vi": "hệ thống"
+        },
+        {
+          "text": "崭新",
+          "pinyin": "zhǎnxīn",
+          "hanviet": "Sàm Tân",
+          "hsk": 6,
+          "word_id": "hsk6_1658",
+          "meaning_vi": "mới tinh, mới toanh"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "历史",
+          "pinyin": "lìshǐ",
+          "hanviet": "Lịch Sử",
+          "hsk": 3,
+          "word_id": "hsk3_831",
+          "meaning_vi": "lịch sử"
+        },
+        {
+          "text": "篇章",
+          "pinyin": "piān zhāng",
+          "hanviet": "Thiên Chương"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk4_396",
+    "hsk3_711",
+    "hsk5_961",
+    "hsk4_937",
+    "hsk1_390"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Loại tiền giấy đầu tiên trên thế giới xuất hiện tại khu vực nào ở Trung Quốc?",
+      "options_vi": [
+        "Vùng đất Tứ Xuyên (Bắc Tống)",
+        "Bán đảo Sơn Đông",
+        "Đảo Đài Loan"
+      ],
+      "answer": 0,
+      "explanation_vi": "Tiền giấy Giao Tử ra đời đầu tiên tại Tứ Xuyên vào thời Bắc Tống."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Tên gọi của tờ tiền giấy sớm nhất lịch sử nhân loại là gì?",
+      "options_vi": [
+        "Giao Tử (交子)",
+        "Bảo sao",
+        "Đô la"
+      ],
+      "answer": 0,
+      "explanation_vi": "Tiền giấy thời Tống có tên gọi là Giao Tử."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Nguyên nhân chính dẫn tới nạn 'khan tiền' (钱荒) thời cổ đại là gì?",
+      "options_vi": [
+        "Khai thác kim loại hạn chế trong khi thương mại bùng nổ, tiền đồng bị tích trữ hoặc đúc thành đồ dùng",
+        "Người dân không thích mua bán",
+        "Hoàng đế cấm xài tiền"
+      ],
+      "answer": 0,
+      "explanation_vi": "Sự phát triển mạnh mẽ của buôn bán vượt xa sản lượng đúc tiền đồng dẫn tới khan hiếm tiền mặt."
+    }
+  ]
+}

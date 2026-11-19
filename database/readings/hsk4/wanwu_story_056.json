@@ -1,0 +1,767 @@
+{
+  "id": "wanwu_story_056",
+  "chapter_no": 56,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 3,
+  "book_page_start": 587,
+  "book_page_end": 595,
+  "page_display": "Trang 587 - 595",
+  "title": {
+    "zh": "牌坊：明清时代社会导向标",
+    "vi": "Cổng bài phường: Cột mốc chuẩn mực đạo đức thời Minh Thanh"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "⛩️",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_056.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_056.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 587 - 595 · Kiến trúc cổng vòm bằng đá và gỗ khắc ghi công trạng khoa cử, lòng hiếu thảo và khí tiết thời phong kiến.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "牌坊是中国传统建筑文化中极具特色的一种纪念性门洞式建筑。",
+      "pinyin": "Páifāng shì Zhōngguó chuántǒng jiànzhù wénhuà zhōng jí jù tèsè de yí zhǒng jǐniànxìng méndòngshì jiànzhù.",
+      "vi": "Bài phường là dạng kiến trúc cổng vòm kỷ niệm mang đậm nét đặc trưng trong văn hóa kiến trúc truyền thống Trung Hoa.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "牌坊",
+          "pinyin": "pái fāng",
+          "hanviet": "Bài Phường"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "传统",
+          "pinyin": "chuántǒng",
+          "hanviet": "Truyền Thống",
+          "hsk": 5,
+          "word_id": "hsk5_187",
+          "meaning_vi": "truyền thống"
+        },
+        {
+          "text": "建筑",
+          "pinyin": "jiànzhù",
+          "hanviet": "Kiến Trúc",
+          "hsk": 5,
+          "word_id": "hsk5_579",
+          "meaning_vi": "kiến trúc, công trình"
+        },
+        {
+          "text": "文化",
+          "pinyin": "wénhuà",
+          "hanviet": "Văn Hóa",
+          "hsk": 3,
+          "word_id": "hsk3_957",
+          "meaning_vi": "văn hóa"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "极具",
+          "pinyin": "jí jù",
+          "hanviet": "Cực Cụ"
+        },
+        {
+          "text": "特色",
+          "pinyin": "tèsè",
+          "hanviet": "Đặc Sắc",
+          "hsk": 5,
+          "word_id": "hsk5_1108",
+          "meaning_vi": "đặc sắc, nét đặc trưng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "一种",
+          "pinyin": "yī zhǒng",
+          "hanviet": "Nhất Chủng"
+        },
+        {
+          "text": "纪念性",
+          "pinyin": "jì niàn xìng",
+          "hanviet": "Kỷ Niệm Tính"
+        },
+        {
+          "text": "门洞",
+          "pinyin": "mén dòng",
+          "hanviet": "Môn Động"
+        },
+        {
+          "text": "式",
+          "pinyin": "shì",
+          "hanviet": "Thức",
+          "hsk": 5,
+          "word_id": "hsk5_1028",
+          "meaning_vi": "kiểu, dạng, phong cách"
+        },
+        {
+          "text": "建筑",
+          "pinyin": "jiànzhù",
+          "hanviet": "Kiến Trúc",
+          "hsk": 5,
+          "word_id": "hsk5_579",
+          "meaning_vi": "kiến trúc, công trình"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "牌坊最早起源于古代里坊制度的坊门，后来逐渐演变成为表彰功德与忠孝节义的崇高载体。",
+      "pinyin": "Páifāng zuìzǎo qǐyuán yú gǔdài lǐfāng zhìdù de fāngmén, hòulái zhújiàn yǎnbiàn chéngwéi biǎozhāng gōngdé yǔ zhōngxiào-jiéyì de chónggāo zàitǐ.",
+      "vi": "Bài phường khởi thủy từ cổng ngõ trong quy hoạch phường xóm cổ, sau dần biến thành công trình tôn vinh công đức, trung hiếu tiết nghĩa.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "牌坊",
+          "pinyin": "pái fāng",
+          "hanviet": "Bài Phường"
+        },
+        {
+          "text": "最早",
+          "pinyin": "zuì zǎo",
+          "hanviet": "Tối Tảo"
+        },
+        {
+          "text": "起源于",
+          "pinyin": "qǐ yuán yú",
+          "hanviet": "Khởi Nguyên Vu"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "里坊",
+          "pinyin": "lǐ fāng",
+          "hanviet": "Lý Phường"
+        },
+        {
+          "text": "制度",
+          "pinyin": "zhìdù",
+          "hanviet": "Chế Độ",
+          "hsk": 5,
+          "word_id": "hsk5_1512",
+          "meaning_vi": "chế độ, thể chế"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "坊",
+          "pinyin": "fāng",
+          "hanviet": "Phường"
+        },
+        {
+          "text": "门",
+          "pinyin": "mén",
+          "hanviet": "Môn",
+          "hsk": 2,
+          "word_id": "hsk2_400",
+          "meaning_vi": "cửa"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "后来",
+          "pinyin": "hòulái",
+          "hanviet": "Hậu Lai",
+          "hsk": 3,
+          "word_id": "hsk3_761",
+          "meaning_vi": "sau đó"
+        },
+        {
+          "text": "逐渐",
+          "pinyin": "zhújiàn",
+          "hanviet": "Trục Tiêm",
+          "hsk": 5,
+          "word_id": "hsk5_1538",
+          "meaning_vi": "dần dần"
+        },
+        {
+          "text": "演变",
+          "pinyin": "yǎnbiàn",
+          "hanviet": "Diễn Biến",
+          "hsk": 7,
+          "word_id": "hsk7_4737",
+          "meaning_vi": "diễn biến, biến đổi"
+        },
+        {
+          "text": "成为",
+          "pinyin": "chéngwéi",
+          "hanviet": "Thành Vi",
+          "hsk": 4,
+          "word_id": "hsk4_82",
+          "meaning_vi": "trở thành"
+        },
+        {
+          "text": "表彰",
+          "pinyin": "biǎozhāng",
+          "hanviet": "Biểu Chương",
+          "hsk": 7,
+          "word_id": "hsk7_247",
+          "meaning_vi": "tuyên dương, khen thưởng"
+        },
+        {
+          "text": "功德",
+          "pinyin": "gōng dé",
+          "hanviet": "Công Đức"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "忠孝节义",
+          "pinyin": "zhōng xiào jié yì",
+          "hanviet": "Trung Hiếu Tiết Nghĩa"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "崇高",
+          "pinyin": "chónggāo",
+          "hanviet": "Sùng Cao",
+          "hsk": 7,
+          "word_id": "hsk7_543",
+          "meaning_vi": "cao cả"
+        },
+        {
+          "text": "载体",
+          "pinyin": "zàitǐ",
+          "hanviet": "Tải Thể",
+          "hsk": 7,
+          "word_id": "hsk7_5097",
+          "meaning_vi": "vật mang, phương tiện truyền tải, chất mang"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "在明清时代，无论是金榜题名的状元进士，还是仁义行善的乡贤名臣，都可以奉旨立坊表彰。",
+      "pinyin": "Zài Míng-Qīng shídài, wúlùn shì jīnbǎng-tímíng de zhuàngyuan jìnshì, háishì rényì xíngshàn de xiāngxián míngchén, dōu kěyǐ fèngzhǐ lìfāng biǎozhāng.",
+      "vi": "Thời Minh Thanh, dù là trạng nguyên đỗ đạt khoa bảng hay bậc hiền tài nhân nghĩa, đều có thể vâng chỉ vua ban dựng cổng biểu dương.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "明清",
+          "pinyin": "míng qīng",
+          "hanviet": "Minh Thanh"
+        },
+        {
+          "text": "时代",
+          "pinyin": "shídài",
+          "hanviet": "Thời Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1012",
+          "meaning_vi": "thời đại"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "无论是",
+          "pinyin": "wú lùn shì",
+          "hanviet": "Vô Luận Thị"
+        },
+        {
+          "text": "金榜题名",
+          "pinyin": "jīn bǎng tí míng",
+          "hanviet": "Kim Bảng Đề Danh"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "状元",
+          "pinyin": "zhuàngyuan",
+          "hanviet": "Trạng Nguyên",
+          "hsk": 7,
+          "word_id": "hsk7_5467",
+          "meaning_vi": "trạng nguyên, thủ khoa đầu bảng"
+        },
+        {
+          "text": "进士",
+          "pinyin": "jìn shì",
+          "hanviet": "Tiến Sĩ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "还是",
+          "pinyin": "háishi",
+          "hanviet": "Hoàn Thị",
+          "hsk": 2,
+          "word_id": "hsk2_352",
+          "meaning_vi": "hay là; vẫn là"
+        },
+        {
+          "text": "仁义",
+          "pinyin": "rén yì",
+          "hanviet": "Nhân Nghĩa"
+        },
+        {
+          "text": "行善",
+          "pinyin": "xíng shàn",
+          "hanviet": "Hành Thiện"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "乡贤",
+          "pinyin": "xiāng xián",
+          "hanviet": "Hương Hiền"
+        },
+        {
+          "text": "名臣",
+          "pinyin": "míng chén",
+          "hanviet": "Danh Thần"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "都",
+          "pinyin": "dōu",
+          "hanviet": "Đô",
+          "hsk": 1,
+          "word_id": "hsk1_76",
+          "meaning_vi": "đều"
+        },
+        {
+          "text": "可以",
+          "pinyin": "kěyǐ",
+          "hanviet": "Khả Dĩ",
+          "hsk": 1,
+          "word_id": "hsk1_160",
+          "meaning_vi": "có thể, được"
+        },
+        {
+          "text": "奉旨",
+          "pinyin": "fèng zhǐ",
+          "hanviet": "Phụng Chỉ"
+        },
+        {
+          "text": "立坊",
+          "pinyin": "lì fāng",
+          "hanviet": "Lập Phường"
+        },
+        {
+          "text": "表彰",
+          "pinyin": "biǎozhāng",
+          "hanviet": "Biểu Chương",
+          "hsk": 7,
+          "word_id": "hsk7_247",
+          "meaning_vi": "tuyên dương, khen thưởng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "徽州古村落里的石雕牌坊工艺极其精湛，四柱三楼飞檐翘角，巍然屹立数百年不倒。",
+      "pinyin": "Huīzhōu gǔcūnluò lǐ de shídiāo páifāng gōngyì jíqí jīngzhàn, sì zhù sān lóu fēiyán-qiàojiǎo, wēirán yìlì shùbǎi nián bù dǎo.",
+      "vi": "Các cổng bài phường điêu khắc đá tại làng cổ Huy Châu có tay nghề tinh xảo, bốn cột ba tầng mái cong sừng sững hàng trăm năm.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "徽州",
+          "pinyin": "huī zhōu",
+          "hanviet": "Huy Châu"
+        },
+        {
+          "text": "古村落",
+          "pinyin": "gǔ cūn luò",
+          "hanviet": "Cổ Thôn Lạc"
+        },
+        {
+          "text": "里",
+          "pinyin": "lǐ",
+          "hanviet": "Lý",
+          "hsk": 1,
+          "word_id": "hsk1_536",
+          "meaning_vi": "bên trong"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "石雕",
+          "pinyin": "shí diāo",
+          "hanviet": "Thạch Điêu"
+        },
+        {
+          "text": "牌坊",
+          "pinyin": "pái fāng",
+          "hanviet": "Bài Phường"
+        },
+        {
+          "text": "工艺",
+          "pinyin": "gōngyì",
+          "hanviet": "Công Nghệ",
+          "hsk": 5,
+          "word_id": "hsk5_416",
+          "meaning_vi": "công nghệ, kỹ thuật chế tác"
+        },
+        {
+          "text": "极其",
+          "pinyin": "jíqí",
+          "hanviet": "Cực Kì/cực Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_533",
+          "meaning_vi": "cực kỳ, hết sức"
+        },
+        {
+          "text": "精湛",
+          "pinyin": "jīngzhàn",
+          "hanviet": "Tinh Trạm",
+          "hsk": 7,
+          "word_id": "hsk7_2191",
+          "meaning_vi": "tuyệt vời"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "四柱",
+          "pinyin": "sì zhù",
+          "hanviet": "Tứ Trụ"
+        },
+        {
+          "text": "三楼",
+          "pinyin": "sān lóu",
+          "hanviet": "Tam Lâu"
+        },
+        {
+          "text": "飞檐翘角",
+          "pinyin": "fēi yán qiào jiǎo",
+          "hanviet": "Phi Diêm Kiều Giác"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "巍然屹立",
+          "pinyin": "wēi rán yì lì",
+          "hanviet": "Nguy Nhiên Ngật Lập"
+        },
+        {
+          "text": "数百年",
+          "pinyin": "shù bǎi nián",
+          "hanviet": "Sổ Bách Niên"
+        },
+        {
+          "text": "不倒",
+          "pinyin": "bù dào",
+          "hanviet": "Bất Đảo"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "牌坊上的每道题字和图案不仅记录了家族荣耀，更折射出古代社会的道德追求与文化取向。",
+      "pinyin": "Páifāng shàng de měi dào tízì hé tú'àn bùjǐn jìlù le jiāzú róngyào, gèng zhéshè chū gǔdài shèhuì de dàodé zhuīqiú yǔ wénhuà qǔxiàng.",
+      "vi": "Từng nét chữ và hoa văn trên bài phường không chỉ ghi lại vinh quang gia tộc mà còn phản chiếu chuẩn mực đạo đức của xã hội xưa.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "牌坊",
+          "pinyin": "pái fāng",
+          "hanviet": "Bài Phường"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "每道",
+          "pinyin": "měi dào",
+          "hanviet": "Mỗi Đạo"
+        },
+        {
+          "text": "题字",
+          "pinyin": "tí zì",
+          "hanviet": "Đề Tự"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "图案",
+          "pinyin": "tú’àn",
+          "hanviet": "Đồ Án",
+          "hsk": 6,
+          "word_id": "hsk6_1328",
+          "meaning_vi": "hoa văn, mẫu hình"
+        },
+        {
+          "text": "不仅",
+          "pinyin": "bùjǐn",
+          "hanviet": "Bất Cận",
+          "hsk": 4,
+          "word_id": "hsk4_55",
+          "meaning_vi": "không chỉ"
+        },
+        {
+          "text": "记录",
+          "pinyin": "jìlù",
+          "hanviet": "Ký Lục",
+          "hsk": 5,
+          "word_id": "hsk5_541",
+          "meaning_vi": "ghi chép, kỷ lục"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "家族",
+          "pinyin": "jiāzú",
+          "hanviet": "Gia Tộc",
+          "hsk": 7,
+          "word_id": "hsk7_1936",
+          "meaning_vi": "gia đình"
+        },
+        {
+          "text": "荣耀",
+          "pinyin": "róngyào",
+          "hanviet": "Vinh Diệu",
+          "hsk": 7,
+          "word_id": "hsk7_3446",
+          "meaning_vi": "vinh quang; vinh dự vẻ vang"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "更",
+          "pinyin": "gèng",
+          "hanviet": "Canh",
+          "hsk": 3,
+          "word_id": "hsk3_737",
+          "meaning_vi": "càng, hơn"
+        },
+        {
+          "text": "折射出",
+          "pinyin": "zhé shè chū",
+          "hanviet": "Chiết Xạ Xuất"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "社会",
+          "pinyin": "shèhuì",
+          "hanviet": "Xã Hội",
+          "hsk": 4,
+          "word_id": "hsk4_639",
+          "meaning_vi": "xã hội"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "道德",
+          "pinyin": "dàodé",
+          "hanviet": "Đạo Đức",
+          "hsk": 6,
+          "word_id": "hsk6_280",
+          "meaning_vi": "đạo đức"
+        },
+        {
+          "text": "追求",
+          "pinyin": "zhuīqiú",
+          "hanviet": "Truy Cầu",
+          "hsk": 5,
+          "word_id": "hsk5_1566",
+          "meaning_vi": "theo đuổi"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "文化",
+          "pinyin": "wénhuà",
+          "hanviet": "Văn Hóa",
+          "hsk": 3,
+          "word_id": "hsk3_957",
+          "meaning_vi": "văn hóa"
+        },
+        {
+          "text": "取向",
+          "pinyin": "qǔ xiàng",
+          "hanviet": "Thủ Hướng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk5_187",
+    "hsk5_579",
+    "hsk3_957",
+    "hsk4_639"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Cổng bài phường trong xã hội cổ đại được dựng lên với mục đích chính là gì?",
+      "options_vi": [
+        "Tôn vinh đỗ đạt khoa cử, công trạng hoặc đạo đức hiếu nghĩa",
+        "Làm chuồng ngựa",
+        "Làm kho chứa ngũ cốc"
+      ],
+      "answer": 0,
+      "explanation_vi": "Bài phường được triều đình phê chuẩn dựng lên để ghi nhận tấm gương công đức tiêu biểu."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Địa danh nào nổi tiếng với các cụm bài phường đá cổ điêu khắc tinh xảo?",
+      "options_vi": [
+        "Vùng đất Huy Châu (An Huy)",
+        "Đảo Hải Nam",
+        "Sa mạc Gobi"
+      ],
+      "answer": 0,
+      "explanation_vi": "Huy Châu nổi tiếng với các cổng bài phường đá chạm trổ công phu."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Nguồn gốc ban đầu của bài phường xuất phát từ đâu?",
+      "options_vi": [
+        "Cổng ranh giới các khối phố (phường môn) trong các đô thị cổ",
+        "Bến phà vượt sông",
+        "Hàng rào vườn hoa"
+      ],
+      "answer": 0,
+      "explanation_vi": "Khởi nguyên bài phường là cổng ra vào các ô bàn cờ Lý Phường thời cổ."
+    }
+  ]
+}

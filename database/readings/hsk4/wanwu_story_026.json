@@ -1,0 +1,809 @@
+{
+  "id": "wanwu_story_026",
+  "chapter_no": 26,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 2,
+  "book_page_start": 256,
+  "book_page_end": 265,
+  "page_display": "Trang 256 - 265",
+  "title": {
+    "zh": "香蕉：改变世界的水果",
+    "vi": "Chuối: Thứ quả làm thay đổi thế giới"
+  },
+  "topic": "food_lifestyle",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🍌",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_026.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_026.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 256 - 265 · Lịch sử thuần dưỡng giống chuối nhiệt đới và tác động to lớn đến chuỗi cung ứng nông sản toàn cầu.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "香蕉软糯香甜，富含丰富的钾元素，是世界上贸易量最大的热带水果之一。",
+      "pinyin": "Xiāngjiāo ruǎnnuò xiāngtián, fùhán fēngfù de jiǎ yuánsù, shì shìjiè shàng màoyìliàng zuìdà de rèdài shuǐguǒ zhī yī.",
+      "vi": "Quả chuối thơm mềm ngọt ngào, giàu hàm lượng kali, là một trong những loại trái cây nhiệt đới có lượng giao thương lớn nhất thế giới.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "香蕉",
+          "pinyin": "xiāngjiāo",
+          "hanviet": "Hương Tiêu",
+          "hsk": 3,
+          "word_id": "hsk3_970",
+          "meaning_vi": "quả chuối"
+        },
+        {
+          "text": "软",
+          "pinyin": "ruǎn",
+          "hanviet": "Nhuyễn",
+          "hsk": 5,
+          "word_id": "hsk5_938",
+          "meaning_vi": "mềm"
+        },
+        {
+          "text": "糯",
+          "pinyin": "nuò",
+          "hanviet": "Noạ"
+        },
+        {
+          "text": "香甜",
+          "pinyin": "xiāng tián",
+          "hanviet": "Hương Điềm"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "富含",
+          "pinyin": "fùhán",
+          "hanviet": "Phú Hàm",
+          "hsk": 7,
+          "word_id": "hsk7_1258",
+          "meaning_vi": "giàu hàm lượng, chứa nhiều"
+        },
+        {
+          "text": "丰富",
+          "pinyin": "fēngfù",
+          "hanviet": "Phong Phú",
+          "hsk": 4,
+          "word_id": "hsk4_204",
+          "meaning_vi": "phong phú"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "钾",
+          "pinyin": "jiǎ",
+          "hanviet": "Giáp"
+        },
+        {
+          "text": "元素",
+          "pinyin": "yuánsù",
+          "hanviet": "Nguyên Tố",
+          "hsk": 6,
+          "word_id": "hsk6_1622",
+          "meaning_vi": "nguyên tố, yếu tố"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "世界",
+          "pinyin": "shìjiè",
+          "hanviet": "Thế Giới",
+          "hsk": 3,
+          "word_id": "hsk3_916",
+          "meaning_vi": "thế giới"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "贸易量",
+          "pinyin": "mào yì liàng",
+          "hanviet": "Mậu Dịch Lượng"
+        },
+        {
+          "text": "最大",
+          "pinyin": "zuì dà",
+          "hanviet": "Tối Đại"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "热带",
+          "pinyin": "rèdài",
+          "hanviet": "Nhiệt Đới",
+          "hsk": 7,
+          "word_id": "hsk7_3397",
+          "meaning_vi": "nhiệt đới"
+        },
+        {
+          "text": "水果",
+          "pinyin": "shuǐguǒ",
+          "hanviet": "Thuỷ Quả",
+          "hsk": 1,
+          "word_id": "hsk1_278",
+          "meaning_vi": "trái cây"
+        },
+        {
+          "text": "之一",
+          "pinyin": "zhī yī",
+          "hanviet": "Chi Nhất"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "野生香蕉其实充满了坚硬的黑色籽粒，果肉极少，几乎无法直接吞咽食用。",
+      "pinyin": "Yěshēng xiāngjiāo qíshí chōngmǎn le jiānyìng de hēisè zǐlì, guǒròu jí shǎo, jīhū wúfǎ zhíjiē tūnyàn shíyòng.",
+      "vi": "Chuối rừng hoang dã thực chất chứa đầy những hạt cứng màu đen, rất ít thịt quả, hầu như không thể nuốt trực tiếp.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "野生",
+          "pinyin": "yěshēng",
+          "hanviet": "Dã Sinh",
+          "hsk": 6,
+          "word_id": "hsk6_1532",
+          "meaning_vi": "hoang dã (động thực vật thiên nhiên)"
+        },
+        {
+          "text": "香蕉",
+          "pinyin": "xiāngjiāo",
+          "hanviet": "Hương Tiêu",
+          "hsk": 3,
+          "word_id": "hsk3_970",
+          "meaning_vi": "quả chuối"
+        },
+        {
+          "text": "其实",
+          "pinyin": "qíshí",
+          "hanviet": "Kỳ Thật",
+          "hsk": 3,
+          "word_id": "hsk3_881",
+          "meaning_vi": "thực ra"
+        },
+        {
+          "text": "充满",
+          "pinyin": "chōngmǎn",
+          "hanviet": "Sung Mãn",
+          "hsk": 5,
+          "word_id": "hsk5_161",
+          "meaning_vi": "đầy, tràn đầy"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "坚硬",
+          "pinyin": "jiānyìng",
+          "hanviet": "Kiên Ngạnh",
+          "hsk": 6,
+          "word_id": "hsk6_649",
+          "meaning_vi": "cứng rắn, rắn chắc"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "黑色",
+          "pinyin": "hēisè",
+          "hanviet": "Hắc Sắc",
+          "hsk": 2,
+          "word_id": "hsk2_353",
+          "meaning_vi": "màu đen"
+        },
+        {
+          "text": "籽粒",
+          "pinyin": "zǐ lì",
+          "hanviet": "Tử Lạp"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "果肉",
+          "pinyin": "guǒ ròu",
+          "hanviet": "Quả Nhục"
+        },
+        {
+          "text": "极少",
+          "pinyin": "jí shǎo",
+          "hanviet": "Cực Thiểu"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "几乎",
+          "pinyin": "jīhū",
+          "hanviet": "Kỷ Hồ",
+          "hsk": 3,
+          "word_id": "hsk3_777",
+          "meaning_vi": "hầu như"
+        },
+        {
+          "text": "无法",
+          "pinyin": "wúfǎ",
+          "hanviet": "Vô Pháp",
+          "hsk": 4,
+          "word_id": "hsk4_782",
+          "meaning_vi": "không thể, không có cách nào"
+        },
+        {
+          "text": "直接",
+          "pinyin": "zhíjiē",
+          "hanviet": "Trực Tiếp",
+          "hsk": 4,
+          "word_id": "hsk4_948",
+          "meaning_vi": "trực tiếp"
+        },
+        {
+          "text": "吞咽",
+          "pinyin": "tūn yàn",
+          "hanviet": "Thôn Yết"
+        },
+        {
+          "text": "食用",
+          "pinyin": "shíyòng",
+          "hanviet": "Thực Dụng",
+          "hsk": 5,
+          "word_id": "hsk5_1025",
+          "meaning_vi": "ăn, dùng làm thực phẩm"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "数千年前，东南亚的早期居民发现了无籽的天然变异品种，并开始人工分株繁殖。",
+      "pinyin": "Shùqiān nián qián, Dōngnányà de zǎoqī jūmín fāxiàn le wú zǐ de tiānrán biànyì pǐnzhǒng, bìng kāishǐ réngōng fēnzhū fánzhí.",
+      "vi": "Vài ngàn năm trước, cư dân cổ vùng Đông Nam Á đã phát hiện ra giống chuối đột biến tự nhiên không hạt và nhân giống sinh sản vô tính.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "数千年",
+          "pinyin": "shù qiān nián",
+          "hanviet": "Sổ Thiên Niên"
+        },
+        {
+          "text": "前",
+          "pinyin": "qián",
+          "hanviet": "Tiền",
+          "hsk": 1,
+          "word_id": "hsk1_558",
+          "meaning_vi": "trước"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "东南亚",
+          "pinyin": "dōng nán yà",
+          "hanviet": "Đông Nam Á"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "早期",
+          "pinyin": "zǎoqī",
+          "hanviet": "Tảo Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_1450",
+          "meaning_vi": "sớm"
+        },
+        {
+          "text": "居民",
+          "pinyin": "jūmín",
+          "hanviet": "Cư Dân",
+          "hsk": 5,
+          "word_id": "hsk5_632",
+          "meaning_vi": "cư dân"
+        },
+        {
+          "text": "发现",
+          "pinyin": "fāxiàn",
+          "hanviet": "Phát Hiện",
+          "hsk": 3,
+          "word_id": "hsk3_712",
+          "meaning_vi": "phát hiện"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "无籽",
+          "pinyin": "wú zǐ",
+          "hanviet": "Vô Tử"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "天然",
+          "pinyin": "tiānrán",
+          "hanviet": "Thiên Nhiên",
+          "hsk": 6,
+          "word_id": "hsk6_1290",
+          "meaning_vi": "tự nhiên"
+        },
+        {
+          "text": "变异",
+          "pinyin": "biànyì",
+          "hanviet": "Biến Dị",
+          "hsk": 7,
+          "word_id": "hsk7_228",
+          "meaning_vi": "biến dị, đột biến"
+        },
+        {
+          "text": "品种",
+          "pinyin": "pǐnzhǒng",
+          "hanviet": "Phẩm Chủng",
+          "hsk": 5,
+          "word_id": "hsk5_835",
+          "meaning_vi": "chủng loại, giống loài"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "并",
+          "pinyin": "bìng",
+          "hanviet": "Tinh",
+          "hsk": 4,
+          "word_id": "hsk4_39",
+          "meaning_vi": "và, đồng thời; hoàn toàn (không)"
+        },
+        {
+          "text": "开始",
+          "pinyin": "kāishǐ",
+          "hanviet": "Khai Thuỷ",
+          "hsk": 2,
+          "word_id": "hsk2_378",
+          "meaning_vi": "bắt đầu"
+        },
+        {
+          "text": "人工",
+          "pinyin": "réngōng",
+          "hanviet": "Nhân Công",
+          "hsk": 5,
+          "word_id": "hsk5_918",
+          "meaning_vi": "nhân công, nhân tạo"
+        },
+        {
+          "text": "分株",
+          "pinyin": "fēn zhū",
+          "hanviet": "Phân Chu"
+        },
+        {
+          "text": "繁殖",
+          "pinyin": "fánzhí",
+          "hanviet": "Phồn Thực",
+          "hsk": 6,
+          "word_id": "hsk6_365",
+          "meaning_vi": "sinh sản"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "现代全球超市中销售的香蕉几乎全部属于华蕉品种，它们全部来自同一种基因克隆。",
+      "pinyin": "Xiàndài quánqiú chāoshì zhōng xiāoshòu de xiāngjiāo jīhū quánbù shǔyú Huájiāo pǐnzhǒng, tāmen quánbù láizì tóng yì zhǒng jīyīn kèlóng.",
+      "vi": "Gần như toàn bộ chuối bán trong siêu thị hiện đại đều thuộc giống chuối Cavendish, tất cả đều nhân bản từ cùng một kiểu gen.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "现代",
+          "pinyin": "xiàndài",
+          "hanviet": "Hiện Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1239",
+          "meaning_vi": "hiện đại"
+        },
+        {
+          "text": "全球",
+          "pinyin": "quánqiú",
+          "hanviet": "Toàn Cầu",
+          "hsk": 4,
+          "word_id": "hsk4_601",
+          "meaning_vi": "toàn cầu"
+        },
+        {
+          "text": "超市",
+          "pinyin": "chāoshì",
+          "hanviet": "Siêu Thị",
+          "hsk": 1,
+          "word_id": "hsk1_34",
+          "meaning_vi": "siêu thị"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "销售",
+          "pinyin": "xiāoshòu",
+          "hanviet": "Tiêu Thụ",
+          "hsk": 5,
+          "word_id": "hsk5_1268",
+          "meaning_vi": "tiêu thụ, bán hàng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "香蕉",
+          "pinyin": "xiāngjiāo",
+          "hanviet": "Hương Tiêu",
+          "hsk": 3,
+          "word_id": "hsk3_970",
+          "meaning_vi": "quả chuối"
+        },
+        {
+          "text": "几乎",
+          "pinyin": "jīhū",
+          "hanviet": "Kỷ Hồ",
+          "hsk": 3,
+          "word_id": "hsk3_777",
+          "meaning_vi": "hầu như"
+        },
+        {
+          "text": "全部",
+          "pinyin": "quánbù",
+          "hanviet": "Toàn Bộ",
+          "hsk": 4,
+          "word_id": "hsk4_599",
+          "meaning_vi": "toàn bộ"
+        },
+        {
+          "text": "属于",
+          "pinyin": "shǔyú",
+          "hanviet": "Thuộc Vu",
+          "hsk": 5,
+          "word_id": "hsk5_1065",
+          "meaning_vi": "thuộc về"
+        },
+        {
+          "text": "华蕉",
+          "pinyin": "huá jiāo",
+          "hanviet": "Hoa Tiêu"
+        },
+        {
+          "text": "品种",
+          "pinyin": "pǐnzhǒng",
+          "hanviet": "Phẩm Chủng",
+          "hsk": 5,
+          "word_id": "hsk5_835",
+          "meaning_vi": "chủng loại, giống loài"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "它们",
+          "pinyin": "tāmen",
+          "hanviet": "Tha Môn",
+          "hsk": 1,
+          "word_id": "hsk1_571",
+          "meaning_vi": "chúng nó, chúng (chỉ đồ vật, động vật)"
+        },
+        {
+          "text": "全部",
+          "pinyin": "quánbù",
+          "hanviet": "Toàn Bộ",
+          "hsk": 4,
+          "word_id": "hsk4_599",
+          "meaning_vi": "toàn bộ"
+        },
+        {
+          "text": "来自",
+          "pinyin": "láizì",
+          "hanviet": "Lai Tự",
+          "hsk": 3,
+          "word_id": "hsk3_471",
+          "meaning_vi": "đến từ"
+        },
+        {
+          "text": "同",
+          "pinyin": "tóng",
+          "hanviet": "Đồng",
+          "hsk": 5,
+          "word_id": "hsk5_1141",
+          "meaning_vi": "cùng, cùng với; giống nhau"
+        },
+        {
+          "text": "一种",
+          "pinyin": "yī zhǒng",
+          "hanviet": "Nhất Chủng"
+        },
+        {
+          "text": "基因",
+          "pinyin": "jīyīn",
+          "hanviet": "Cơ Nhân",
+          "hsk": 6,
+          "word_id": "hsk6_612",
+          "meaning_vi": "gene"
+        },
+        {
+          "text": "克隆",
+          "pinyin": "kèlóng",
+          "hanviet": "Khắc Long",
+          "hsk": 7,
+          "word_id": "hsk7_2360",
+          "meaning_vi": "nhân bản vô tính, sao chép rập khuôn"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "由于缺乏遗传多样性，现代香蕉更容易受到真菌疾病的威胁，科学家正在积极培育新品种。",
+      "pinyin": "Yóuyú quēfá yíchuán duōyàngxìng, xiàndài xiāngjiāo gèng róngyì shòudào zhēnjūn jíbìng de wēixié, kēxuéjiā zhèngzài jījí péiyù xīn pǐnzhǒng.",
+      "vi": "Do thiếu tính đa dạng di truyền, cây chuối hiện đại dễ bị đe dọa bởi nấm bệnh, các nhà khoa học đang tích cực lai tạo giống mới.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "由于",
+          "pinyin": "yóuyú",
+          "hanviet": "Do Vu",
+          "hsk": 4,
+          "word_id": "hsk4_888",
+          "meaning_vi": "do, vì"
+        },
+        {
+          "text": "缺乏",
+          "pinyin": "quēfá",
+          "hanviet": "Khuyết Phạp",
+          "hsk": 5,
+          "word_id": "hsk5_905",
+          "meaning_vi": "thiếu thốn"
+        },
+        {
+          "text": "遗传",
+          "pinyin": "yíchuán",
+          "hanviet": "Di Truyền",
+          "hsk": 6,
+          "word_id": "hsk6_1545",
+          "meaning_vi": "di truyền"
+        },
+        {
+          "text": "多样性",
+          "pinyin": "duō yàng xìng",
+          "hanviet": "Đa Dạng Tính"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "现代",
+          "pinyin": "xiàndài",
+          "hanviet": "Hiện Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1239",
+          "meaning_vi": "hiện đại"
+        },
+        {
+          "text": "香蕉",
+          "pinyin": "xiāngjiāo",
+          "hanviet": "Hương Tiêu",
+          "hsk": 3,
+          "word_id": "hsk3_970",
+          "meaning_vi": "quả chuối"
+        },
+        {
+          "text": "更",
+          "pinyin": "gèng",
+          "hanviet": "Canh",
+          "hsk": 3,
+          "word_id": "hsk3_737",
+          "meaning_vi": "càng, hơn"
+        },
+        {
+          "text": "容易",
+          "pinyin": "róngyì",
+          "hanviet": "Dung Dịch",
+          "hsk": 3,
+          "word_id": "hsk3_900",
+          "meaning_vi": "dễ dàng"
+        },
+        {
+          "text": "受到",
+          "pinyin": "shòudào",
+          "hanviet": "Thọ Đáo",
+          "hsk": 3,
+          "word_id": "hsk3_558",
+          "meaning_vi": "nhận được, bị (chịu)"
+        },
+        {
+          "text": "真菌",
+          "pinyin": "zhēn jūn",
+          "hanviet": "Chân Khuẩn"
+        },
+        {
+          "text": "疾病",
+          "pinyin": "jíbìng",
+          "hanviet": "Tật Bệnh",
+          "hsk": 5,
+          "word_id": "hsk5_528",
+          "meaning_vi": "căn bệnh"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "威胁",
+          "pinyin": "wēixié",
+          "hanviet": "Uy Hiếp",
+          "hsk": 5,
+          "word_id": "hsk5_1182",
+          "meaning_vi": "đe dọa"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "科学家",
+          "pinyin": "kē xué jiā",
+          "hanviet": "Khoa Học Gia"
+        },
+        {
+          "text": "正在",
+          "pinyin": "zhèngzài",
+          "hanviet": "Chinh Tại",
+          "hsk": 1,
+          "word_id": "hsk1_404",
+          "meaning_vi": "đang"
+        },
+        {
+          "text": "积极",
+          "pinyin": "jījí",
+          "hanviet": "Tích Cực",
+          "hsk": 4,
+          "word_id": "hsk4_323",
+          "meaning_vi": "tích cực"
+        },
+        {
+          "text": "培育",
+          "pinyin": "péiyù",
+          "hanviet": "Bồi Dục",
+          "hsk": 6,
+          "word_id": "hsk6_977",
+          "meaning_vi": "bồi dưỡng, nuôi dưỡng"
+        },
+        {
+          "text": "新品种",
+          "pinyin": "xīn pǐn zhǒng",
+          "hanviet": "Tân Phẩm Chủng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk4_204",
+    "hsk3_916",
+    "hsk1_34",
+    "hsk4_323",
+    "hsk3_970"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Quả chuối rừng hoang dã thời xa xưa có đặc điểm gì?",
+      "options_vi": [
+        "Chứa rất nhiều hạt cứng màu đen và ít thịt quả",
+        "Hoàn toàn không có vỏ",
+        "Vỏ màu xanh lam phát sáng"
+      ],
+      "answer": 0,
+      "explanation_vi": "Chuối hoang dã nguyên thủy chứa đầy hạt cứng và rất ít ruột."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Phần lớn chuối thương phẩm trên thị trường ngày nay được nhân giống bằng cách nào?",
+      "options_vi": [
+        "Nhân giống vô tính (chiết nhánh, cấy mô từ cùng dòng gen)",
+        "Thụ phấn nhờ chim ưng",
+        "Gieo hạt dại trong cát sa mạc"
+      ],
+      "answer": 0,
+      "explanation_vi": "Chuối ăn ngày nay là giống tam bội không hạt, nhân giống hoàn toàn bằng nhân bản vô tính."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Thách thức lớn nhất đối với cây chuối hiện đại là gì?",
+      "options_vi": [
+        "Thiếu đa dạng di truyền nên dễ bị nấm bệnh tấn công hàng loạt",
+        "Cây mọc quá cao không với tới",
+        "Chim thích ăn vỏ chuối"
+      ],
+      "answer": 0,
+      "explanation_vi": "Tính đồng nhất di truyền khiến chuối dễ bị các chủng nấm bệnh Panama tàn phá."
+    }
+  ]
+}

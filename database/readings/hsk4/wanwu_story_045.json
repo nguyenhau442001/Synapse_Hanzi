@@ -1,0 +1,833 @@
+{
+  "id": "wanwu_story_045",
+  "chapter_no": 45,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 3,
+  "book_page_start": 468,
+  "book_page_end": 477,
+  "page_display": "Trang 468 - 477",
+  "title": {
+    "zh": "书信传递：从邮驿到邮局",
+    "vi": "Bưu tín: Từ trạm dịch ngựa phi đến bưu cục hiện đại"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "✉️",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_045.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_045.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 468 - 477 · Trạm dịch ngựa phi 'ngày đi tám trăm dặm', thư từ bằng thẻ tre, lụa và sự ra đời của dịch vụ bưu chính.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "在没有电话和网络的漫长古代，书信是人们维系亲情与国家传递政令的唯一桥梁。",
+      "pinyin": "Zài méiyǒu diànhuà hé wǎnglù de màncháng gǔdài, shūxìn shì rénmen wéixì qīnqíng yǔ guójiā chuándì zhènglìng de wéiyī qiáoliáng.",
+      "vi": "Trong thời cổ đại xa xôi chưa có điện thoại và mạng internet, thư từ là cây cầu duy nhất gắn kết tình thân và truyền đạt chiếu chỉ quốc gia.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "没有",
+          "pinyin": "méiyǒu",
+          "hanviet": "Một Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_197",
+          "meaning_vi": "không có"
+        },
+        {
+          "text": "电话",
+          "pinyin": "diànhuà",
+          "hanviet": "Điện Thoại",
+          "hsk": 1,
+          "word_id": "hsk1_510",
+          "meaning_vi": "điện thoại"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "网络",
+          "pinyin": "wǎngluò",
+          "hanviet": "Võng Lạc",
+          "hsk": 5,
+          "word_id": "hsk5_1179",
+          "meaning_vi": "mạng, internet"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "漫长",
+          "pinyin": "màncháng",
+          "hanviet": "Mạn Trường",
+          "hsk": 6,
+          "word_id": "hsk6_890",
+          "meaning_vi": "dài đằng đẵng, dài lâu"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "书信",
+          "pinyin": "shū xìn",
+          "hanviet": "Thư Tín"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "人们",
+          "pinyin": "rén men",
+          "hanviet": "Nhân Môn"
+        },
+        {
+          "text": "维系",
+          "pinyin": "wéi xì",
+          "hanviet": "Duy Hệ"
+        },
+        {
+          "text": "亲情",
+          "pinyin": "qīnqíng",
+          "hanviet": "Thân Tình",
+          "hsk": 5,
+          "word_id": "hsk5_882",
+          "meaning_vi": "tình thân, tình cảm gia đình"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "国家",
+          "pinyin": "guójiā",
+          "hanviet": "Quốc Gia",
+          "hsk": 3,
+          "word_id": "hsk3_749",
+          "meaning_vi": "quốc gia"
+        },
+        {
+          "text": "传递",
+          "pinyin": "chuándì",
+          "hanviet": "Truyền Đệ",
+          "hsk": 5,
+          "word_id": "hsk5_185",
+          "meaning_vi": "truyền, chuyển (tin tức, vật)"
+        },
+        {
+          "text": "政令",
+          "pinyin": "zhèng lìng",
+          "hanviet": "Chính Lệnh"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "唯一",
+          "pinyin": "wéiyī",
+          "hanviet": "Duy Nhất",
+          "hsk": 5,
+          "word_id": "hsk5_1191",
+          "meaning_vi": "duy nhất"
+        },
+        {
+          "text": "桥梁",
+          "pinyin": "qiáoliáng",
+          "hanviet": "Kiều Lương",
+          "hsk": 6,
+          "word_id": "hsk6_1046",
+          "meaning_vi": "cầu, cầu nối"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "早在周代，官方就建立了完备的邮驿制度，沿途每隔几十里设立驿站供给马匹和食宿。",
+      "pinyin": "Zǎo zài Zhōudài, guānfāng jiù jiànlì le wánbèi de yóuyì zhìdù, yántú měi gé jǐshí lǐ shèlì yìzhàn gōngjǐ mǎpǐ hé shí-sù.",
+      "vi": "Từ thời nhà Chu, triều đình đã xây dựng chế độ trạm dịch hoàn chỉnh, dọc đường cách vài chục dặm lại đặt trạm cung cấp ngựa, cơm nước.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "早",
+          "pinyin": "zǎo",
+          "hanviet": "Tảo",
+          "hsk": 1,
+          "word_id": "hsk1_602",
+          "meaning_vi": "sớm"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "周代",
+          "pinyin": "zhōu dài",
+          "hanviet": "Chu Đại"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "官方",
+          "pinyin": "guānfāng",
+          "hanviet": "Quan Phương",
+          "hsk": 6,
+          "word_id": "hsk6_490",
+          "meaning_vi": "chính thức (của nhà nước)"
+        },
+        {
+          "text": "就",
+          "pinyin": "jiù",
+          "hanviet": "Tựu",
+          "hsk": 2,
+          "word_id": "hsk2_376",
+          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)"
+        },
+        {
+          "text": "建立",
+          "pinyin": "jiànlì",
+          "hanviet": "Kiến Lập",
+          "hsk": 5,
+          "word_id": "hsk5_575",
+          "meaning_vi": "xây dựng, kiến lập"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "完备",
+          "pinyin": "wánbèi",
+          "hanviet": "Hoàn Bị",
+          "hsk": 7,
+          "word_id": "hsk7_4185",
+          "meaning_vi": "hoàn chỉnh, đầy đủ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "邮驿",
+          "pinyin": "yóu yì",
+          "hanviet": "Bưu Dịch"
+        },
+        {
+          "text": "制度",
+          "pinyin": "zhìdù",
+          "hanviet": "Chế Độ",
+          "hsk": 5,
+          "word_id": "hsk5_1512",
+          "meaning_vi": "chế độ, thể chế"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "沿途",
+          "pinyin": "yántú",
+          "hanviet": "Duyên Đồ",
+          "hsk": 7,
+          "word_id": "hsk7_4731",
+          "meaning_vi": "dọc đường; trên đường đi"
+        },
+        {
+          "text": "每隔",
+          "pinyin": "měi gé",
+          "hanviet": "Mỗi Cách"
+        },
+        {
+          "text": "几十里",
+          "pinyin": "jǐ shí lǐ",
+          "hanviet": "Kỷ Thập Lý"
+        },
+        {
+          "text": "设立",
+          "pinyin": "shèlì",
+          "hanviet": "Thiết Lập",
+          "hsk": 5,
+          "word_id": "hsk5_974",
+          "meaning_vi": "thiết lập, thành lập"
+        },
+        {
+          "text": "驿站",
+          "pinyin": "yì zhàn",
+          "hanviet": "Dịch Trạm"
+        },
+        {
+          "text": "供给",
+          "pinyin": "gōngjǐ",
+          "hanviet": "Cung Cấp",
+          "hsk": 6,
+          "word_id": "hsk6_456",
+          "meaning_vi": "cung cấp"
+        },
+        {
+          "text": "马匹",
+          "pinyin": "mǎ pǐ",
+          "hanviet": "Mã Thất"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "食宿",
+          "pinyin": "shísù",
+          "hanviet": "Thực Túc",
+          "hsk": 7,
+          "word_id": "hsk7_3678",
+          "meaning_vi": "chỗ ăn chỗ ở; ăn ở"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "遇到紧急军情，驿卒们日夜兼程、快马加鞭，创造了‘八百里加急’的神速传奇。",
+      "pinyin": "Yùdào jǐnjí jūnqíng, yìzúmen rìyè-jiānchéng, kuàimǎ-jiābiān, chuàngzào le ‘bābǎilǐ jiājí’ de shénsù chuánqí.",
+      "vi": "Gặp quân tình khẩn cấp, các trạm dịch chạy suốt ngày đêm, quất ngựa phi nhanh tạo nên huyền thoại thần tốc 'hỏa tốc 800 dặm'.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "遇到",
+          "pinyin": "yùdào",
+          "hanviet": "Ngộ Đáo",
+          "hsk": 3,
+          "word_id": "hsk3_1032",
+          "meaning_vi": "gặp phải"
+        },
+        {
+          "text": "紧急",
+          "pinyin": "jǐnjí",
+          "hanviet": "Khẩn Cấp",
+          "hsk": 5,
+          "word_id": "hsk5_608",
+          "meaning_vi": "cấp bách, khẩn cấp"
+        },
+        {
+          "text": "军情",
+          "pinyin": "jūn qíng",
+          "hanviet": "Quân Tình"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "驿卒",
+          "pinyin": "yì zú",
+          "hanviet": "Dịch Thốt"
+        },
+        {
+          "text": "们",
+          "pinyin": "men",
+          "hanviet": "Môn",
+          "hsk": 1,
+          "word_id": "hsk1_538",
+          "meaning_vi": "họ (hậu tố)"
+        },
+        {
+          "text": "日夜兼程",
+          "pinyin": "rì yè jiān chéng",
+          "hanviet": "Nhật Dạ Kiêm Trình"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "快马加鞭",
+          "pinyin": "kuài mǎ jiā biān",
+          "hanviet": "Khoái Mã Gia Tiên"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "创造",
+          "pinyin": "chuàngzào",
+          "hanviet": "Sáng Tạo",
+          "hsk": 5,
+          "word_id": "hsk5_192",
+          "meaning_vi": "sáng tạo"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "八百里",
+          "pinyin": "bā bǎi lǐ",
+          "hanviet": "Bát Bách Lý"
+        },
+        {
+          "text": "加急",
+          "pinyin": "jiā jí",
+          "hanviet": "Gia Cấp"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "神速",
+          "pinyin": "shén sù",
+          "hanviet": "Thần Tốc"
+        },
+        {
+          "text": "传奇",
+          "pinyin": "chuánqí",
+          "hanviet": "Truyền Kỳ",
+          "hsk": 7,
+          "word_id": "hsk7_625",
+          "meaning_vi": "huyền thoại, truyền kỳ"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "而普通百姓则常常依靠行商托带‘家书’，唐诗中便有‘烽火连三月，家书抵万金’的动人感叹。",
+      "pinyin": "Ér pǔtōng bǎixìng zé chángcháng yīkào hángshāng tuōdài ‘jiāshū’, Tángshī zhōng biàn yǒu ‘fēnghuǒ lián sānyuè, jiāshū dǐ wànjīn’ de dòngrén gǎntàn.",
+      "vi": "Còn dân thường thường nhờ thương lái mang 'thư nhà', thi ca đời Đường từng thốt lên xúc động: 'Chiến hỏa liền ba tháng, thư nhà đáng vạn vàng'.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "而",
+          "pinyin": "ér",
+          "hanviet": "Nhi",
+          "hsk": 4,
+          "word_id": "hsk4_183",
+          "meaning_vi": "mà, và"
+        },
+        {
+          "text": "普通百姓",
+          "pinyin": "pǔ tōng bǎi xìng",
+          "hanviet": "Phổ Thông Bách Tính"
+        },
+        {
+          "text": "则",
+          "pinyin": "xìtǒng",
+          "hanviet": "Hệ Thống",
+          "hsk": 5,
+          "word_id": "hsk5_1229",
+          "meaning_vi": "hệ thống"
+        },
+        {
+          "text": "常常",
+          "pinyin": "chángcháng",
+          "hanviet": "Thường Thường",
+          "hsk": 3,
+          "word_id": "hsk3_655",
+          "meaning_vi": "thường thường, thường xuyên"
+        },
+        {
+          "text": "依靠",
+          "pinyin": "yīkào",
+          "hanviet": "Y Kháo",
+          "hsk": 5,
+          "word_id": "hsk5_1347",
+          "meaning_vi": "dựa vào"
+        },
+        {
+          "text": "行商",
+          "pinyin": "xíng shāng",
+          "hanviet": "Hành Thương"
+        },
+        {
+          "text": "托带",
+          "pinyin": "tuō dài",
+          "hanviet": "Thác Đới"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "家书",
+          "pinyin": "jiā shū",
+          "hanviet": "Gia Thư"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "唐诗",
+          "pinyin": "táng shī",
+          "hanviet": "Đường Thi"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "便",
+          "pinyin": "biàn",
+          "hanviet": "Tiện",
+          "hsk": 5,
+          "word_id": "hsk5_56",
+          "meaning_vi": "thì, liền (liên từ)"
+        },
+        {
+          "text": "有",
+          "pinyin": "yǒu",
+          "hanviet": "Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_380",
+          "meaning_vi": "có"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "烽火连三",
+          "pinyin": "fēng huǒ lián sān",
+          "hanviet": "Phong Hoả Liên Tam"
+        },
+        {
+          "text": "月",
+          "pinyin": "yuè",
+          "hanviet": "Nguyệt",
+          "hsk": 1,
+          "word_id": "hsk1_387",
+          "meaning_vi": "tháng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "家书",
+          "pinyin": "jiā shū",
+          "hanviet": "Gia Thư"
+        },
+        {
+          "text": "抵",
+          "pinyin": "dǐ",
+          "hanviet": "Để",
+          "hsk": 7,
+          "word_id": "hsk7_844",
+          "meaning_vi": "chống đỡ, gán nợ, tương đương"
+        },
+        {
+          "text": "万金",
+          "pinyin": "wàn jīn",
+          "hanviet": "Mặc Kim"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "动人",
+          "pinyin": "dòngrén",
+          "hanviet": "Động Nhân",
+          "hsk": 5,
+          "word_id": "hsk5_291",
+          "meaning_vi": "cảm động, lay động lòng người"
+        },
+        {
+          "text": "感叹",
+          "pinyin": "gǎntàn",
+          "hanviet": "Cảm Thán",
+          "hsk": 7,
+          "word_id": "hsk7_1295",
+          "meaning_vi": "cảm thán, trầm trồ, than thở"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "近代以来，绿色邮筒与邮政网络的普及，让信息传递更加安全便捷地飞向千家万户。",
+      "pinyin": "Jìndài yǐlái, lǜsè yóutǒng yǔ yóuzhèng wǎnglù de pǔjí, ràng xìnxī chuándì gèngjiā ānquán biànjié de fēixiàng qiānjiā-wànhù.",
+      "vi": "Thời cận đại, hòm thư màu xanh và mạng lưới bưu điện phổ cập đã giúp việc gửi trao thông tin đến với muôn nhà an toàn, tiện lợi hơn.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "近代",
+          "pinyin": "jìndài",
+          "hanviet": "Cận Đại",
+          "hsk": 5,
+          "word_id": "hsk5_614",
+          "meaning_vi": "thời cận đại"
+        },
+        {
+          "text": "以来",
+          "pinyin": "yǐlái",
+          "hanviet": "Dĩ Lai",
+          "hsk": 5,
+          "word_id": "hsk5_1364",
+          "meaning_vi": "từ trước đến nay"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "绿色",
+          "pinyin": "lǜsè",
+          "hanviet": "Lục Sắc",
+          "hsk": 2,
+          "word_id": "hsk2_396",
+          "meaning_vi": "xanh"
+        },
+        {
+          "text": "邮筒",
+          "pinyin": "yóu tǒng",
+          "hanviet": "Bưu Đồng"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "邮政",
+          "pinyin": "yóuzhèng",
+          "hanviet": "Bưu Chính",
+          "hsk": 7,
+          "word_id": "hsk7_4980",
+          "meaning_vi": "bưu chính, bưu điện"
+        },
+        {
+          "text": "网络",
+          "pinyin": "wǎngluò",
+          "hanviet": "Võng Lạc",
+          "hsk": 5,
+          "word_id": "hsk5_1179",
+          "meaning_vi": "mạng, internet"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "普及",
+          "pinyin": "pǔjí",
+          "hanviet": "Phổ Cập",
+          "hsk": 5,
+          "word_id": "hsk5_849",
+          "meaning_vi": "phổ cập, phổ biến"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "让",
+          "pinyin": "ràng",
+          "hanviet": "Nhượng",
+          "hsk": 2,
+          "word_id": "hsk2_422",
+          "meaning_vi": "để cho, khiến"
+        },
+        {
+          "text": "信息",
+          "pinyin": "xìnxī",
+          "hanviet": "Tín Tức",
+          "hsk": 4,
+          "word_id": "hsk4_823",
+          "meaning_vi": "thông tin"
+        },
+        {
+          "text": "传递",
+          "pinyin": "chuándì",
+          "hanviet": "Truyền Đệ",
+          "hsk": 5,
+          "word_id": "hsk5_185",
+          "meaning_vi": "truyền, chuyển (tin tức, vật)"
+        },
+        {
+          "text": "更加",
+          "pinyin": "gèngjiā",
+          "hanviet": "Canh Gia",
+          "hsk": 4,
+          "word_id": "hsk4_249",
+          "meaning_vi": "càng, càng thêm"
+        },
+        {
+          "text": "安全",
+          "pinyin": "ānquán",
+          "hanviet": "An Toàn",
+          "hsk": 3,
+          "word_id": "hsk3_605",
+          "meaning_vi": "an toàn"
+        },
+        {
+          "text": "便捷",
+          "pinyin": "biànjié",
+          "hanviet": "Tiện Tiệp",
+          "hsk": 6,
+          "word_id": "hsk6_58",
+          "meaning_vi": "nhanh chóng tiện lợi, thuận tiện"
+        },
+        {
+          "text": "地飞",
+          "pinyin": "dì fēi",
+          "hanviet": "Địa Phi"
+        },
+        {
+          "text": "向",
+          "pinyin": "xiàng",
+          "hanviet": "Hướng",
+          "hsk": 3,
+          "word_id": "hsk3_973",
+          "meaning_vi": "hướng về, về phía"
+        },
+        {
+          "text": "千家万户",
+          "pinyin": "qiānjiā-wànhù",
+          "hanviet": "Thiên Gia Mặc Hộ",
+          "hsk": 6,
+          "word_id": "hsk6_1033",
+          "meaning_vi": "muôn nhà, hàng ngàn hộ gia đình"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk5_575",
+    "hsk5_1512",
+    "hsk3_605",
+    "hsk4_823",
+    "hsk1_390"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Trong hệ thống trạm dịch cổ đại, cụm từ nào thể hiện tốc độ chuyển thư quân cơ khẩn cấp nhất?",
+      "options_vi": [
+        "Bát bách lý gia cấp (Hỏa tốc tám trăm dặm)",
+        "Đi bộ túc tắc",
+        "Thả bồ câu một tháng"
+      ],
+      "answer": 0,
+      "explanation_vi": "'Bát bách lý gia cấp' là mức truyền tin khẩn cấp nhất của trạm ngựa thời xưa."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Câu thơ 'Chiến hỏa liền ba tháng, thư nhà đáng vạn vàng' của nhà thơ nào?",
+      "options_vi": [
+        "Đỗ Phủ",
+        "Lý Bạch",
+        "Bạch Cư Dị"
+      ],
+      "answer": 0,
+      "explanation_vi": "Đỗ Phủ sáng tác bài Xuân vọng chứa câu thơ nổi tiếng về nỗi nhớ gia đình trong loạn lạc."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Màu sắc truyền thống của hòm thư bưu điện ở nhiều nơi là màu gì?",
+      "options_vi": [
+        "Màu xanh lá cây",
+        "Màu tím hoa cà",
+        "Màu đen sẫm"
+      ],
+      "answer": 0,
+      "explanation_vi": "Hòm thư bưu chính truyền thống thường mang sắc xanh lá cây biểu tượng hy vọng và hòa bình."
+    }
+  ]
+}

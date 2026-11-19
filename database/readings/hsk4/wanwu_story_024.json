@@ -1,0 +1,725 @@
+{
+  "id": "wanwu_story_024",
+  "chapter_no": 24,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 2,
+  "book_page_start": 241,
+  "book_page_end": 248,
+  "page_display": "Trang 241 - 248",
+  "title": {
+    "zh": "黄瓜：漂洋过海3000年",
+    "vi": "Dưa chuột: Hành trình vượt đại dương 3000 năm"
+  },
+  "topic": "food_lifestyle",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🥒",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_024.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_024.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 241 - 248 · Nguồn gốc loài dưa chuột từ chân dãy Himalaya đến cái tên 'Hồ qua' của Trương Khiên thời Hán.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "黄瓜清脆爽口，是夏天餐桌上最受欢迎的蔬菜之一。",
+      "pinyin": "Huángguā qīngcuì shuǎngkǒu, shì xiàtiān cānzhuō shàng zuì shòuyuānyíng de shūcài zhī yī.",
+      "vi": "Dưa chuột giòn ngọt thanh mát, là một trong những món rau được ưa chuộng nhất trên bàn ăn mùa hè.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "黄瓜",
+          "pinyin": "huángguā",
+          "hanviet": "Hoàng Qua",
+          "hsk": 5,
+          "word_id": "hsk5_505",
+          "meaning_vi": "dưa chuột, dưa leo"
+        },
+        {
+          "text": "清脆",
+          "pinyin": "qīngcuì",
+          "hanviet": "Thanh Thuý",
+          "hsk": 7,
+          "word_id": "hsk7_3298",
+          "meaning_vi": "trong trẻo; giòn giã"
+        },
+        {
+          "text": "爽口",
+          "pinyin": "shuǎng kǒu",
+          "hanviet": "Sảng Khẩu"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "夏天",
+          "pinyin": "xiàtiān",
+          "hanviet": "Hạ Thiên",
+          "hsk": 3,
+          "word_id": "hsk3_968",
+          "meaning_vi": "mùa hè"
+        },
+        {
+          "text": "餐桌上",
+          "pinyin": "cān zhuō shàng",
+          "hanviet": "Xan Trác Thướng"
+        },
+        {
+          "text": "最",
+          "pinyin": "zuì",
+          "hanviet": "Tối",
+          "hsk": 2,
+          "word_id": "hsk2_498",
+          "meaning_vi": "nhất"
+        },
+        {
+          "text": "受欢迎",
+          "pinyin": "shòu huān yíng",
+          "hanviet": "Thọ Hoan Nghênh"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "蔬菜",
+          "pinyin": "shūcài",
+          "hanviet": "Sơ Thái",
+          "hsk": 5,
+          "word_id": "hsk5_1055",
+          "meaning_vi": "rau xanh"
+        },
+        {
+          "text": "之一",
+          "pinyin": "zhī yī",
+          "hanviet": "Chi Nhất"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "黄瓜的原产地是喜马拉雅山南麓的热带雨林，距今已有三千多年的栽培历史。",
+      "pinyin": "Huángguā de yuánchǎndì shì Xǐmǎlāyǎshān nánlù de rèdài yǔlín, jùjīn yǐ yǒu sānqiān duō nián de zāipéi lìshǐ.",
+      "vi": "Quê hương ban đầu của dưa chuột là những cánh rừng mưa nhiệt đới dưới chân phía nam dãy Himalaya, có hơn 3000 năm lịch sử trồng trọt.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "黄瓜",
+          "pinyin": "huángguā",
+          "hanviet": "Hoàng Qua",
+          "hsk": 5,
+          "word_id": "hsk5_505",
+          "meaning_vi": "dưa chuột, dưa leo"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "原产地",
+          "pinyin": "yuán chǎn dì",
+          "hanviet": "Nguyên Sản Địa"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "喜马拉雅山",
+          "pinyin": "xǐ mǎ lā yǎ shān",
+          "hanviet": "Hỷ Mã Lạp Nhã Sơn"
+        },
+        {
+          "text": "南麓",
+          "pinyin": "nán lù",
+          "hanviet": "Nam Lộc"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "热带雨林",
+          "pinyin": "rè dài yǔ lín",
+          "hanviet": "Nhiệt Đới Vũ Lâm"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "距今已有",
+          "pinyin": "jù jīn yǐ yǒu",
+          "hanviet": "Cự Kim Dĩ Hữu"
+        },
+        {
+          "text": "三千多年",
+          "pinyin": "sān qiān duō nián",
+          "hanviet": "Tam Thiên Đa Niên"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "栽培",
+          "pinyin": "zāipéi",
+          "hanviet": "Tài Bồi",
+          "hsk": 7,
+          "word_id": "hsk7_5091",
+          "meaning_vi": "trồng, vun trồng (cũng nghĩa bồi dưỡng nhân tài)"
+        },
+        {
+          "text": "历史",
+          "pinyin": "lìshǐ",
+          "hanviet": "Lịch Sử",
+          "hsk": 3,
+          "word_id": "hsk3_831",
+          "meaning_vi": "lịch sử"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "西汉时期，张骞出使西域，把这种特别的瓜果种子带回了中原。",
+      "pinyin": "Xīhàn shíqī, Zhāng Qiān chūshǐ xīyù, bǎ zhè zhǒng tèbié de guāguǒ zhǒngzǐ dàihuí le zhōngyuán.",
+      "vi": "Thời Tây Hán, Trương Khiên đi sứ Tây Vực, đã mang hạt giống của loài quả dưa đặc biệt này về vùng Trung Nguyên.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "西汉时期",
+          "pinyin": "xī hàn shí qī",
+          "hanviet": "Tây Hán Thời Kỳ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "张骞",
+          "pinyin": "zhāng qiān",
+          "hanviet": "Trương Khiên"
+        },
+        {
+          "text": "出使",
+          "pinyin": "chū shǐ",
+          "hanviet": "Xuất Sử"
+        },
+        {
+          "text": "西域",
+          "pinyin": "xī yù",
+          "hanviet": "Tây Vực"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "把",
+          "pinyin": "bǎ",
+          "hanviet": "Bả",
+          "hsk": 3,
+          "word_id": "hsk3_606",
+          "meaning_vi": "cái, chiếc (lượng từ); cầm, nắm"
+        },
+        {
+          "text": "这种",
+          "pinyin": "zhè zhǒng",
+          "hanviet": "Giá Chủng"
+        },
+        {
+          "text": "特别",
+          "pinyin": "tèbié",
+          "hanviet": "Đặc Biệt",
+          "hsk": 3,
+          "word_id": "hsk3_931",
+          "meaning_vi": "đặc biệt"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "瓜果",
+          "pinyin": "guā guǒ",
+          "hanviet": "Qua Quả"
+        },
+        {
+          "text": "种子",
+          "pinyin": "zhǒngzi",
+          "hanviet": "Chủng Tử",
+          "hsk": 5,
+          "word_id": "hsk5_1530",
+          "meaning_vi": "hạt giống"
+        },
+        {
+          "text": "带回",
+          "pinyin": "dài huí",
+          "hanviet": "Đới Hồi"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "中原",
+          "pinyin": "zhōng yuán",
+          "hanviet": "Trung Nguyên"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "因为是从西域胡人地区传入的，所以古人最早把它叫做“胡瓜”。",
+      "pinyin": "Yīnwèi shì cóng xīyù hùrén dìqū chuánrù de, suǒyǐ gǔrén zuìzǎo bǎ tā jiàozuò “húguā”.",
+      "vi": "Bởi vì truyền vào từ vùng đất của các tộc người Hồ ở Tây Vực, nên người xưa ban đầu gọi nó là 'Hồ qua'.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "因为",
+          "pinyin": "yīnwèi",
+          "hanviet": "Nhân Vi",
+          "hsk": 2,
+          "word_id": "hsk2_476",
+          "meaning_vi": "bởi vì"
+        },
+        {
+          "text": "是从",
+          "pinyin": "shì cóng",
+          "hanviet": "Thị Tòng"
+        },
+        {
+          "text": "西域",
+          "pinyin": "xī yù",
+          "hanviet": "Tây Vực"
+        },
+        {
+          "text": "胡人",
+          "pinyin": "hú rén",
+          "hanviet": "Hồ Nhân"
+        },
+        {
+          "text": "地区",
+          "pinyin": "dìqū",
+          "hanviet": "Địa Âu",
+          "hsk": 5,
+          "word_id": "hsk5_272",
+          "meaning_vi": "khu vực, vùng"
+        },
+        {
+          "text": "传入",
+          "pinyin": "chuán rù",
+          "hanviet": "Truyền Nhập"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "所以",
+          "pinyin": "suǒyǐ",
+          "hanviet": "Sở Dĩ",
+          "hsk": 2,
+          "word_id": "hsk2_439",
+          "meaning_vi": "vì vậy"
+        },
+        {
+          "text": "古人",
+          "pinyin": "gǔrén",
+          "hanviet": "Cổ Nhân",
+          "hsk": 6,
+          "word_id": "hsk6_478",
+          "meaning_vi": "người xưa, người cổ đại"
+        },
+        {
+          "text": "最早",
+          "pinyin": "zuì zǎo",
+          "hanviet": "Tối Tảo"
+        },
+        {
+          "text": "把",
+          "pinyin": "bǎ",
+          "hanviet": "Bả",
+          "hsk": 3,
+          "word_id": "hsk3_606",
+          "meaning_vi": "cái, chiếc (lượng từ); cầm, nắm"
+        },
+        {
+          "text": "它",
+          "pinyin": "tā",
+          "hanviet": "Tha",
+          "hsk": 1,
+          "word_id": "hsk1_569",
+          "meaning_vi": "nó (vật, con vật)"
+        },
+        {
+          "text": "叫做",
+          "pinyin": "jiào zuò",
+          "hanviet": "Khiếu Tố"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "胡瓜",
+          "pinyin": "hú guā",
+          "hanviet": "Hồ Qua"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "到了后赵时期，皇帝石勒下令改名，胡瓜才正式被称为“黄瓜”。",
+      "pinyin": "Dàole Hòuzhào shíqī, huángdì Shílè xiàlìng gǎimíng, húguā cái zhèngshì bèi chēng wéi “huángguā”.",
+      "vi": "Đến thời Hậu Triệu, hoàng đế Thạch Lặc hạ lệnh đổi tên, Hồ qua mới chính thức được gọi là 'Hoàng qua' (dưa chuột).",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "到",
+          "pinyin": "dào",
+          "hanviet": "Đáo",
+          "hsk": 1,
+          "word_id": "hsk1_59",
+          "meaning_vi": "đến"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "后赵",
+          "pinyin": "hòu zhào",
+          "hanviet": "Hậu Triệu"
+        },
+        {
+          "text": "时期",
+          "pinyin": "shíqī",
+          "hanviet": "Thời Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_1016",
+          "meaning_vi": "thời kỳ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "皇帝",
+          "pinyin": "huángdì",
+          "hanviet": "Hoàng Đế",
+          "hsk": 6,
+          "word_id": "hsk6_582",
+          "meaning_vi": "hoàng đế"
+        },
+        {
+          "text": "石勒",
+          "pinyin": "shí lēi",
+          "hanviet": "Thạch Lặc"
+        },
+        {
+          "text": "下令",
+          "pinyin": "xiàlìng",
+          "hanviet": "Hạ Lệnh",
+          "hsk": 7,
+          "word_id": "hsk7_4415",
+          "meaning_vi": "thứ tự"
+        },
+        {
+          "text": "改名",
+          "pinyin": "gǎi míng",
+          "hanviet": "Cải Danh"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "胡瓜",
+          "pinyin": "hú guā",
+          "hanviet": "Hồ Qua"
+        },
+        {
+          "text": "才",
+          "pinyin": "cái",
+          "hanviet": "Tài"
+        },
+        {
+          "text": "正式",
+          "pinyin": "zhèngshì",
+          "hanviet": "Chính Thức",
+          "hsk": 4,
+          "word_id": "hsk4_937",
+          "meaning_vi": "chính thức"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "称为",
+          "pinyin": "chēngwéi",
+          "hanviet": "Xứng Vi",
+          "hsk": 5,
+          "word_id": "hsk5_134",
+          "meaning_vi": "gọi là"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "黄瓜",
+          "pinyin": "huángguā",
+          "hanviet": "Hoàng Qua",
+          "hsk": 5,
+          "word_id": "hsk5_505",
+          "meaning_vi": "dưa chuột, dưa leo"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "zh": "黄瓜成熟时表皮其实会变成黄色，现代人吃的青绿色黄瓜只是嫩果状态。",
+      "pinyin": "Huángguā chéngshú shí biǎopí qíshí huì biànchéng huángsè, xiàndàirén chī de qīnglǜsè huángguā zhǐshì nènguǒ zhuàngtài.",
+      "vi": "Dưa chuột khi chín già vỏ ngoài thực ra chuyển sang màu vàng ươm, quả dưa màu xanh mà người hiện đại ăn chỉ là lúc quả còn non.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "黄瓜",
+          "pinyin": "huángguā",
+          "hanviet": "Hoàng Qua",
+          "hsk": 5,
+          "word_id": "hsk5_505",
+          "meaning_vi": "dưa chuột, dưa leo"
+        },
+        {
+          "text": "成熟",
+          "pinyin": "chéngshú",
+          "hanviet": "Thành Thục",
+          "hsk": 5,
+          "word_id": "hsk5_148",
+          "meaning_vi": "chín, trưởng thành"
+        },
+        {
+          "text": "时",
+          "pinyin": "shí",
+          "hanviet": "Thời",
+          "hsk": 2,
+          "word_id": "hsk2_431",
+          "meaning_vi": "thời gian (danh từ, số lượng)"
+        },
+        {
+          "text": "表皮",
+          "pinyin": "biǎo pí",
+          "hanviet": "Biểu Bì"
+        },
+        {
+          "text": "其实",
+          "pinyin": "qíshí",
+          "hanviet": "Kỳ Thật",
+          "hsk": 3,
+          "word_id": "hsk3_881",
+          "meaning_vi": "thực ra"
+        },
+        {
+          "text": "会",
+          "pinyin": "huì",
+          "hanviet": "Hội",
+          "hsk": 1,
+          "word_id": "hsk1_43",
+          "meaning_vi": "biết, sẽ"
+        },
+        {
+          "text": "变成",
+          "pinyin": "biànchéng",
+          "hanviet": "Biến Thành",
+          "hsk": 3,
+          "word_id": "hsk3_307",
+          "meaning_vi": "trở thành, biến thành"
+        },
+        {
+          "text": "黄色",
+          "pinyin": "huángsè",
+          "hanviet": "Hoàng Sắc",
+          "hsk": 3,
+          "word_id": "hsk3_771",
+          "meaning_vi": "màu vàng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "现代人",
+          "pinyin": "xiàn dài rén",
+          "hanviet": "Hiện Đại Nhân"
+        },
+        {
+          "text": "吃",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "青绿色",
+          "pinyin": "qīng lǜ sè",
+          "hanviet": "Thanh Lục Sắc"
+        },
+        {
+          "text": "黄瓜",
+          "pinyin": "huángguā",
+          "hanviet": "Hoàng Qua",
+          "hsk": 5,
+          "word_id": "hsk5_505",
+          "meaning_vi": "dưa chuột, dưa leo"
+        },
+        {
+          "text": "只是",
+          "pinyin": "zhǐshì",
+          "hanviet": "Chỉ Thị",
+          "hsk": 3,
+          "word_id": "hsk3_1057",
+          "meaning_vi": "chỉ là; có điều"
+        },
+        {
+          "text": "嫩果",
+          "pinyin": "nèn guǒ",
+          "hanviet": "Nộn Quả"
+        },
+        {
+          "text": "状态",
+          "pinyin": "zhuàngtài",
+          "hanviet": "Trạng Thái",
+          "hsk": 5,
+          "word_id": "hsk5_1564",
+          "meaning_vi": "trạng thái"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk3_931",
+    "hsk4_937",
+    "hsk3_558",
+    "hsk3_831",
+    "hsk5_505"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Dưa chuột ban đầu được Trương Khiên mang về có tên gọi là gì?",
+      "options_vi": [
+        "Hồ qua (胡瓜)",
+        "Thanh qua (青瓜)",
+        "Bí đao (冬瓜)"
+      ],
+      "answer": 0,
+      "explanation_vi": "Ban đầu dưa chuột được gọi là 'Hồ qua' vì đến từ Tây Vực."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Dưa chuột có nguồn gốc tự nhiên từ đâu?",
+      "options_vi": [
+        "Vùng chân núi phía nam dãy Himalaya",
+        "Bắc Cực",
+        "Bắc Mỹ"
+      ],
+      "answer": 0,
+      "explanation_vi": "Dưa chuột bắt nguồn từ rừng nhiệt đới dưới chân dãy Himalaya ở Nam Á."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Tại sao dưa chuột lại có chữ 'hoàng' (vàng) trong tên tiếng Hán?",
+      "options_vi": [
+        "Khi chín già vỏ quả sẽ chuyển sang màu vàng",
+        "Hoa dưa chuột màu đỏ",
+        "Ruột dưa màu tím"
+      ],
+      "answer": 0,
+      "explanation_vi": "Khi chín tự nhiên hoàn toàn, quả dưa chuột sẽ ngả sang màu vàng ươm."
+    }
+  ]
+}

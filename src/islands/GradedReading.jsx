@@ -3,6 +3,7 @@
 // Preact port of the former assets/js/graded-reading.js. Renders the same markup inside
 // #screenGradedReading and keeps window.GradedReading for the tab router and SpaRouter.
 import { render } from 'preact';
+import { useEffect } from 'preact/hooks';
 import { signal, computed } from '@preact/signals';
 
 /* global exampleSpeechSpeed, SRS, currentLevel, srsCards, SpaRouter -- classic-script globals */
@@ -17,8 +18,19 @@ let manifest = [];
 let manifestLoaded = false;
 const storyCache = {};
 
+// ---- Manga Leisure Reading state ---------------------------------------------------------------
+const readingMode = signal('articles'); // 'articles' | 'manga'
+const activeMangaStory = signal(null);
+const activeMangaPage = signal(0);
+const showMangaOutlines = signal(true);
+const hoveredMangaDialogue = signal(null);
+const selectedMangaDialogue = signal(null);
+let mangaManifestData = [];
+let mangaManifestLoaded = false;
+const mangaStoryCache = {};
+
 // ---- UI state ----------------------------------------------------------------------------------
-const view = signal('idle');           // 'idle' | 'hub' | 'loading' | 'error' | 'story'
+const view = signal('idle');           // 'idle' | 'hub' | 'loading' | 'error' | 'story' | 'manga'
 const errorMessage = signal('');
 const activeStory = signal(null);
 const levelFilter = signal('all');

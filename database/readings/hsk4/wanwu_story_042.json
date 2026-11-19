@@ -1,0 +1,811 @@
+{
+  "id": "wanwu_story_042",
+  "chapter_no": 42,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 2,
+  "book_page_start": 425,
+  "book_page_end": 441,
+  "page_display": "Trang 425 - 441",
+  "title": {
+    "zh": "整形：刀刃上的美丑之战",
+    "vi": "Phẫu thuật tạo hình: Ranh giới y thuật và thẩm mỹ"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🪞",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_042.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_042.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 425 - 441 · Từ thuật ghép da tái tạo mũi của danh y Ấn Độ cổ đại đến y học tái tạo khuôn mặt cho thương binh.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "许多人以为整形手术是现代流行文化的产物，其实它的医疗根源可以追溯到数千年前。",
+      "pinyin": "Xǔduō rén yǐwéi zhěngxíng shǒushù shì xiàndài liúxíng wénhuà de chǎnwù, qíshí tā de yīliáo gēnyuán kěyǐ zhuīsù dào shùqiān nián qián.",
+      "vi": "Nhiều người ngỡ rằng phẫu thuật thẩm mỹ là sản phẩm của văn hóa hiện đại, thực chất cội nguồn y khoa của nó bắt nguồn từ hàng ngàn năm trước.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "许多",
+          "pinyin": "xǔduō",
+          "hanviet": "Hứa Đa",
+          "hsk": 4,
+          "word_id": "hsk4_836",
+          "meaning_vi": "nhiều, rất nhiều"
+        },
+        {
+          "text": "人",
+          "pinyin": "rén",
+          "hanviet": "Nhân",
+          "hsk": 1,
+          "word_id": "hsk1_243",
+          "meaning_vi": "người"
+        },
+        {
+          "text": "以为",
+          "pinyin": "yǐwéi",
+          "hanviet": "Dĩ Vi",
+          "hsk": 3,
+          "word_id": "hsk3_1009",
+          "meaning_vi": "cho rằng, nghĩ là"
+        },
+        {
+          "text": "整形手术",
+          "pinyin": "zhěng xíng shǒu shù",
+          "hanviet": "Chỉnh Hình Thủ Thuật"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "现代",
+          "pinyin": "xiàndài",
+          "hanviet": "Hiện Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1239",
+          "meaning_vi": "hiện đại"
+        },
+        {
+          "text": "流行",
+          "pinyin": "liúxíng",
+          "hanviet": "Lưu Hành",
+          "hsk": 4,
+          "word_id": "hsk4_486",
+          "meaning_vi": "phổ biến, thịnh hành"
+        },
+        {
+          "text": "文化",
+          "pinyin": "wénhuà",
+          "hanviet": "Văn Hóa",
+          "hsk": 3,
+          "word_id": "hsk3_957",
+          "meaning_vi": "văn hóa"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "产物",
+          "pinyin": "chǎnwù",
+          "hanviet": "Sản Vật",
+          "hsk": 7,
+          "word_id": "hsk7_437",
+          "meaning_vi": "sản vật, sản phẩm tạo thành"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "其实",
+          "pinyin": "qíshí",
+          "hanviet": "Kỳ Thật",
+          "hsk": 3,
+          "word_id": "hsk3_881",
+          "meaning_vi": "thực ra"
+        },
+        {
+          "text": "它",
+          "pinyin": "tā",
+          "hanviet": "Tha",
+          "hsk": 1,
+          "word_id": "hsk1_569",
+          "meaning_vi": "nó (vật, con vật)"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "医疗",
+          "pinyin": "yīliáo",
+          "hanviet": "Y Liệu",
+          "hsk": 5,
+          "word_id": "hsk5_1348",
+          "meaning_vi": "y tế, khám chữa bệnh"
+        },
+        {
+          "text": "根源",
+          "pinyin": "gēnyuán",
+          "hanviet": "Căn Nguyên",
+          "hsk": 7,
+          "word_id": "hsk7_1354",
+          "meaning_vi": "căn nguyên, nguồn cội"
+        },
+        {
+          "text": "可以",
+          "pinyin": "kěyǐ",
+          "hanviet": "Khả Dĩ",
+          "hsk": 1,
+          "word_id": "hsk1_160",
+          "meaning_vi": "có thể, được"
+        },
+        {
+          "text": "追溯到",
+          "pinyin": "zhuī sù dào",
+          "hanviet": "Đôi Tố Đáo"
+        },
+        {
+          "text": "数千年",
+          "pinyin": "shù qiān nián",
+          "hanviet": "Sổ Thiên Niên"
+        },
+        {
+          "text": "前",
+          "pinyin": "qián",
+          "hanviet": "Tiền",
+          "hsk": 1,
+          "word_id": "hsk1_558",
+          "meaning_vi": "trước"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "早在公元前六世纪的古印度，著名外科医学家妙闻就发明了用额头皮瓣修复受损鼻子的手术方法。",
+      "pinyin": "Zǎo zài gōngyuánqián liù shìjì de gǔ Yìndù, zhùmíng wàikē yīxuéjiā Miàowén jiù fāmíng le yòng étóu píbàn xiūfù shòusǔn bízǐ de shǒushù fāngfǎ.",
+      "vi": "Từ thế kỷ 6 trước Công nguyên tại Ấn Độ cổ đại, danh y Sushruta đã sáng tạo cách dùng vạt da trán để tái tạo mũi bị thương tổn.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "早",
+          "pinyin": "zǎo",
+          "hanviet": "Tảo",
+          "hsk": 1,
+          "word_id": "hsk1_602",
+          "meaning_vi": "sớm"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "公元前",
+          "pinyin": "gōng yuán qián",
+          "hanviet": "Công Nguyên Tiền"
+        },
+        {
+          "text": "六世纪",
+          "pinyin": "liù shì jì",
+          "hanviet": "Lục Thế Kỷ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "古印度",
+          "pinyin": "gǔ yìn dù",
+          "hanviet": "Cổ Ấn Độ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "著名",
+          "pinyin": "zhùmíng",
+          "hanviet": "Trước Danh",
+          "hsk": 4,
+          "word_id": "hsk4_967",
+          "meaning_vi": "nổi tiếng"
+        },
+        {
+          "text": "外科",
+          "pinyin": "wàikē",
+          "hanviet": "Ngoại Khoa",
+          "hsk": 6,
+          "word_id": "hsk6_1354",
+          "meaning_vi": "ngoại khoa"
+        },
+        {
+          "text": "医学家",
+          "pinyin": "yī xué jiā",
+          "hanviet": "Y Học Gia"
+        },
+        {
+          "text": "妙闻",
+          "pinyin": "miào wén",
+          "hanviet": "Diệu Văn"
+        },
+        {
+          "text": "就",
+          "pinyin": "jiù",
+          "hanviet": "Tựu",
+          "hsk": 2,
+          "word_id": "hsk2_376",
+          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)"
+        },
+        {
+          "text": "发明",
+          "pinyin": "fāmíng",
+          "hanviet": "Phát Minh",
+          "hsk": 5,
+          "word_id": "hsk5_320",
+          "meaning_vi": "phát minh"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "用",
+          "pinyin": "yòng",
+          "hanviet": "Dụng",
+          "hsk": 3,
+          "word_id": "hsk3_1020",
+          "meaning_vi": "dùng"
+        },
+        {
+          "text": "额头",
+          "pinyin": "é tóu",
+          "hanviet": "Ngạch Đầu"
+        },
+        {
+          "text": "皮瓣",
+          "pinyin": "pí bàn",
+          "hanviet": "Bì Biện"
+        },
+        {
+          "text": "修复",
+          "pinyin": "xiūfù",
+          "hanviet": "Tu Phục",
+          "hsk": 6,
+          "word_id": "hsk6_1482",
+          "meaning_vi": "khôi phục, sửa chữa"
+        },
+        {
+          "text": "受损",
+          "pinyin": "shòu sǔn",
+          "hanviet": "Thọ Tổn"
+        },
+        {
+          "text": "鼻子",
+          "pinyin": "bízi",
+          "hanviet": "Tỵ Tử",
+          "hsk": 4,
+          "word_id": "hsk4_27",
+          "meaning_vi": "cái mũi"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "手术",
+          "pinyin": "shǒushù",
+          "hanviet": "Thủ Thuật",
+          "hsk": 5,
+          "word_id": "hsk5_1050",
+          "meaning_vi": "ca phẫu thuật"
+        },
+        {
+          "text": "方法",
+          "pinyin": "fāngfǎ",
+          "hanviet": "Phương Pháp",
+          "hsk": 3,
+          "word_id": "hsk3_716",
+          "meaning_vi": "phương pháp"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "第一次世界大战期间，面对数以万计面部遭受重创的伤残士兵，现代整形外科应运而生。",
+      "pinyin": "Dì-yī-cì shìjiè dàzhàn qījiān, miànduì shù-yǐ-wàn-jì miànbù zāoshòu zhòngchuāng de shāngcán shìbīng, xiàndài zhěngxíng wàikē yìngyùn'érshēng.",
+      "vi": "Trong Thế chiến I, trước hàng vạn thương binh bị tổn thương nghiêm trọng vùng mặt, ngành phẫu thuật tạo hình hiện đại đã ra đời.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "第一次世界大战",
+          "pinyin": "dì yí cì shì jiè dà zhàn",
+          "hanviet": "Đệ Nhất Thứ Thế Giới Đại Chiến"
+        },
+        {
+          "text": "期间",
+          "pinyin": "qījiān",
+          "hanviet": "Kỳ Gian",
+          "hsk": 5,
+          "word_id": "hsk5_851",
+          "meaning_vi": "thời gian, khoảng thời gian"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "面对",
+          "pinyin": "miànduì",
+          "hanviet": "Diện Đối",
+          "hsk": 4,
+          "word_id": "hsk4_509",
+          "meaning_vi": "đối mặt"
+        },
+        {
+          "text": "数以万计",
+          "pinyin": "shǔ yǐ wàn jì",
+          "hanviet": "Sổ Dĩ Mặc Kế"
+        },
+        {
+          "text": "面部",
+          "pinyin": "miànbù",
+          "hanviet": "Diện Bộ",
+          "hsk": 6,
+          "word_id": "hsk6_911",
+          "meaning_vi": "khuôn mặt, vùng mặt"
+        },
+        {
+          "text": "遭受",
+          "pinyin": "zāoshòu",
+          "hanviet": "Tao Thọ",
+          "hsk": 6,
+          "word_id": "hsk6_1649",
+          "meaning_vi": "chịu đựng, gặp phải (điều xấu)"
+        },
+        {
+          "text": "重创",
+          "pinyin": "zhòngchuāng",
+          "hanviet": "Trọng Thương",
+          "hsk": 7,
+          "word_id": "hsk7_5374",
+          "meaning_vi": "giáng đòn nặng nề, tàn phá nặng nề"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "伤残",
+          "pinyin": "shāngcán",
+          "hanviet": "Thương Tàn",
+          "hsk": 7,
+          "word_id": "hsk7_3515",
+          "meaning_vi": "thương tật; tàn tật"
+        },
+        {
+          "text": "士兵",
+          "pinyin": "shìbīng",
+          "hanviet": "Sĩ Binh",
+          "hsk": 6,
+          "word_id": "hsk6_1196",
+          "meaning_vi": "binh sĩ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "现代",
+          "pinyin": "xiàndài",
+          "hanviet": "Hiện Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1239",
+          "meaning_vi": "hiện đại"
+        },
+        {
+          "text": "整形外科",
+          "pinyin": "zhěng xíng wài kē",
+          "hanviet": "Chỉnh Hình Ngoại Khoa"
+        },
+        {
+          "text": "应运而生",
+          "pinyin": "yìng yùn ér shēng",
+          "hanviet": "Ưng Vận Nhi Sinh"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "医生通过精湛的组织移植手术，帮助重伤员修复容貌并重获重返社会的信心与尊严。",
+      "pinyin": "Yīshēng tōngguò jīngzhàn de zǔzhī yízhí shǒushù, bāngzhù zhòngshāngyuán xiūfù róngmào bìng chónghuò chóngfǎn shèhuì de xìnxīn yǔ zūnyán.",
+      "vi": "Các bác sĩ qua kỹ thuật ghép mô khéo léo đã giúp thương binh hồi phục diện mạo, tìm lại niềm tin và phẩm giá hòa nhập xã hội.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "医生",
+          "pinyin": "yīshēng",
+          "hanviet": "Y Sinh",
+          "hsk": 1,
+          "word_id": "hsk1_366",
+          "meaning_vi": "bác sĩ"
+        },
+        {
+          "text": "通过",
+          "pinyin": "tōngguò",
+          "hanviet": "Thông Qua",
+          "hsk": 4,
+          "word_id": "hsk4_744",
+          "meaning_vi": "thông qua"
+        },
+        {
+          "text": "精湛",
+          "pinyin": "jīngzhàn",
+          "hanviet": "Tinh Trạm",
+          "hsk": 7,
+          "word_id": "hsk7_2191",
+          "meaning_vi": "tuyệt vời"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "组织",
+          "pinyin": "zǔzhī",
+          "hanviet": "Tổ Chức",
+          "hsk": 5,
+          "word_id": "hsk5_1593",
+          "meaning_vi": "tổ chức"
+        },
+        {
+          "text": "移植手术",
+          "pinyin": "yí zhí shǒu shù",
+          "hanviet": "Di Thực Thủ Thuật"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "帮助",
+          "pinyin": "bāngzhù",
+          "hanviet": "Bang Trợ",
+          "hsk": 3,
+          "word_id": "hsk3_614",
+          "meaning_vi": "giúp đỡ"
+        },
+        {
+          "text": "重伤员",
+          "pinyin": "zhòng shāng yuán",
+          "hanviet": "Trọng Thương Viên"
+        },
+        {
+          "text": "修复",
+          "pinyin": "xiūfù",
+          "hanviet": "Tu Phục",
+          "hsk": 6,
+          "word_id": "hsk6_1482",
+          "meaning_vi": "khôi phục, sửa chữa"
+        },
+        {
+          "text": "容貌",
+          "pinyin": "róngmào",
+          "hanviet": "Dung Mạo",
+          "hsk": 7,
+          "word_id": "hsk7_3438",
+          "meaning_vi": "dung mạo, vẻ ngoài"
+        },
+        {
+          "text": "并重",
+          "pinyin": "bìng zhòng",
+          "hanviet": "Tinh Trọng"
+        },
+        {
+          "text": "获",
+          "pinyin": "huò",
+          "hanviet": "Hoạch"
+        },
+        {
+          "text": "重返",
+          "pinyin": "chóngfǎn",
+          "hanviet": "Trọng Phản",
+          "hsk": 7,
+          "word_id": "hsk7_542",
+          "meaning_vi": "trở lại, quay lại"
+        },
+        {
+          "text": "社会",
+          "pinyin": "shèhuì",
+          "hanviet": "Xã Hội",
+          "hsk": 4,
+          "word_id": "hsk4_639",
+          "meaning_vi": "xã hội"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "信心",
+          "pinyin": "xìnxīn",
+          "hanviet": "Tín Tâm",
+          "hsk": 4,
+          "word_id": "hsk4_824",
+          "meaning_vi": "sự tự tin"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "尊严",
+          "pinyin": "zūnyán",
+          "hanviet": "Tôn Nghiêm",
+          "hsk": 7,
+          "word_id": "hsk7_5582",
+          "meaning_vi": "phẩm giá"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "如今，整形技术涵盖了先天畸形矫正、创伤修复以及美容外科，展现了医学的人文关怀。",
+      "pinyin": "Rújīn, zhěngxíng jìshù hángài le xiāntiān jīxíng jiǎozhèng, chuāngshāng xiūfù yǐjí měiróng wàikē, zhǎnxiàn le yīxué de rénwén guānhuái.",
+      "vi": "Ngày nay, phẫu thuật tạo hình bao gồm chỉnh hình dị tật bẩm sinh, tái tạo vết thương và thẩm mỹ, thể hiện sự quan tâm nhân văn của y học.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "如今",
+          "pinyin": "rújīn",
+          "hanviet": "Như Kim",
+          "hsk": 5,
+          "word_id": "hsk5_935",
+          "meaning_vi": "hiện nay, ngày nay"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "整形",
+          "pinyin": "zhěng xíng",
+          "hanviet": "Chỉnh Hình"
+        },
+        {
+          "text": "技术",
+          "pinyin": "jìshù",
+          "hanviet": "Kĩ Thuật/kỹ Thuật",
+          "hsk": 4,
+          "word_id": "hsk4_331",
+          "meaning_vi": "kỹ thuật"
+        },
+        {
+          "text": "涵盖",
+          "pinyin": "hángài",
+          "hanviet": "Hàm Cái",
+          "hsk": 7,
+          "word_id": "hsk7_1582",
+          "meaning_vi": "bao quát, bao gồm, bao hàm"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "先天",
+          "pinyin": "xiāntiān",
+          "hanviet": "Tiên Thiên",
+          "hsk": 7,
+          "word_id": "hsk7_4434",
+          "meaning_vi": "bẩm sinh; tiên thiên"
+        },
+        {
+          "text": "畸形",
+          "pinyin": "jīxíng",
+          "hanviet": "Ky Hình",
+          "hsk": 7,
+          "word_id": "hsk7_1854",
+          "meaning_vi": "méo mó, biến dạng, dị dạng"
+        },
+        {
+          "text": "矫正",
+          "pinyin": "jiǎozhèng",
+          "hanviet": "Kiểu Chinh",
+          "hsk": 7,
+          "word_id": "hsk7_2056",
+          "meaning_vi": "uốn nắn, chỉnh sửa, hiệu chỉnh"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "创伤",
+          "pinyin": "chuāngshāng",
+          "hanviet": "Thương Thương",
+          "hsk": 7,
+          "word_id": "hsk7_633",
+          "meaning_vi": "thương tổn, vết thương lòng"
+        },
+        {
+          "text": "修复",
+          "pinyin": "xiūfù",
+          "hanviet": "Tu Phục",
+          "hsk": 6,
+          "word_id": "hsk6_1482",
+          "meaning_vi": "khôi phục, sửa chữa"
+        },
+        {
+          "text": "以及",
+          "pinyin": "yǐjí",
+          "hanviet": "Dĩ Cập",
+          "hsk": 5,
+          "word_id": "hsk5_1363",
+          "meaning_vi": "cùng với, và"
+        },
+        {
+          "text": "美容外科",
+          "pinyin": "měi róng wài kē",
+          "hanviet": "Mỹ Dung Ngoại Khoa"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "展现",
+          "pinyin": "zhǎnxiàn",
+          "hanviet": "Triển Hiện",
+          "hsk": 5,
+          "word_id": "hsk5_1467",
+          "meaning_vi": "hiển thị"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "医学",
+          "pinyin": "yīxué",
+          "hanviet": "Y Học",
+          "hsk": 5,
+          "word_id": "hsk5_1350",
+          "meaning_vi": "y học"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "人文",
+          "pinyin": "rénwén",
+          "hanviet": "Nhân Văn",
+          "hsk": 7,
+          "word_id": "hsk7_3413",
+          "meaning_vi": "nhân văn; văn hóa nhân bản"
+        },
+        {
+          "text": "关怀",
+          "pinyin": "guānhuái",
+          "hanviet": "Quan Hoài",
+          "hsk": 6,
+          "word_id": "hsk6_492",
+          "meaning_vi": "quan tâm, chăm sóc"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk3_957",
+    "hsk4_967",
+    "hsk5_320",
+    "hsk4_639",
+    "hsk4_836"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Phẫu thuật tạo hình mũi đầu tiên trong lịch sử cổ đại được ghi chép ở đâu?",
+      "options_vi": [
+        "Tại Ấn Độ cổ đại (danh y Sushruta)",
+        "Tại Ai Cập",
+        "Tại Hy Lạp"
+      ],
+      "answer": 0,
+      "explanation_vi": "Danh y Sushruta ở Ấn Độ cổ đại đã thực hiện chuyển vạt da trán để tái tạo mũi."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Sự kiện lịch sử lớn nào đã thúc đẩy ngành phẫu thuật tạo hình hiện đại ra đời?",
+      "options_vi": [
+        "Chiến tranh thế giới thứ nhất (chữa trị vết thương khuôn mặt cho binh sĩ)",
+        "Thám hiểm Nam Cực",
+        "Cuộc cách mạng công nghiệp hơi nước"
+      ],
+      "answer": 0,
+      "explanation_vi": "Nhu cầu tái tạo khuôn mặt biến dạng cho hàng vạn thương binh Thế chiến I đã hình thành nên môn tạo hình."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Mục đích ban đầu và quan trọng nhất của phẫu thuật tạo hình là gì?",
+      "options_vi": [
+        "Khôi phục chức năng và diện mạo bị tổn thương, giúp người bệnh hòa nhập lại đời sống",
+        "Chỉ để làm người mẫu chụp ảnh",
+        "Làm thay đổi vân tay"
+      ],
+      "answer": 0,
+      "explanation_vi": "Y học tái tạo hướng tới phục hồi chức năng và thể diện nhân phẩm cho người bệnh tổn thương."
+    }
+  ]
+}

@@ -1,0 +1,930 @@
+{
+  "id": "wanwu_story_068",
+  "chapter_no": 68,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 4,
+  "book_page_start": 705,
+  "book_page_end": 715,
+  "page_display": "Trang 705 - 715",
+  "title": {
+    "zh": "禁酒：都是贪杯惹的祸",
+    "vi": "Lệnh cấm rượu: Men say và những biến cố thời thế"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🍶",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_068.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_068.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 705 - 715 · Những sắc lệnh cấm rượu nghiêm ngặt để tiết kiệm lương thực và duy trì kỷ cương xã hội trong lịch sử.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "美酒虽然能够增添宴席气氛与诗意灵感，但在古代却曾屡次遭到统治者的严厉查禁。",
+      "pinyin": "Měijiǔ suīrán nénggòu zēngtiān yànxí qìfēn yǔ shīyì línggǎn, dàn zài gǔdài què céng lǚcì zāodào tǒngzhìzhě de yánlì chájìn.",
+      "vi": "Rượu ngon dù tăng thêm không khí tiệc tùng và cảm hứng thơ ca, nhưng trong lịch sử đã nhiều lần bị triều đình ra lệnh cấm nghiêm ngặt.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "美酒",
+          "pinyin": "měi jiǔ",
+          "hanviet": "Mỹ Tửu"
+        },
+        {
+          "text": "虽然",
+          "pinyin": "suīrán",
+          "hanviet": "Tuy Nhiên",
+          "hsk": 2,
+          "word_id": "hsk2_438",
+          "meaning_vi": "mặc dù"
+        },
+        {
+          "text": "能够",
+          "pinyin": "nénggòu",
+          "hanviet": "Năng Cú",
+          "hsk": 4,
+          "word_id": "hsk4_532",
+          "meaning_vi": "có thể"
+        },
+        {
+          "text": "增添",
+          "pinyin": "zēngtiān",
+          "hanviet": "Tăng Thiêm",
+          "hsk": 7,
+          "word_id": "hsk7_5130",
+          "meaning_vi": "thêm vào, tô điểm thêm"
+        },
+        {
+          "text": "宴席",
+          "pinyin": "yàn xí",
+          "hanviet": "Yến Tịch"
+        },
+        {
+          "text": "气氛",
+          "pinyin": "qìfēn",
+          "hanviet": "Khí Phân",
+          "hsk": 6,
+          "word_id": "hsk6_1025",
+          "meaning_vi": "không khí, bầu không khí"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "诗意",
+          "pinyin": "shī yì",
+          "hanviet": "Thi Ý"
+        },
+        {
+          "text": "灵感",
+          "pinyin": "línggǎn",
+          "hanviet": "Linh Cảm",
+          "hsk": 7,
+          "word_id": "hsk7_2625",
+          "meaning_vi": "cảm hứng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "但",
+          "pinyin": "dàn",
+          "hanviet": "Đãn",
+          "hsk": 2,
+          "word_id": "hsk2_330",
+          "meaning_vi": "nhưng, nhưng mà"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "却",
+          "pinyin": "què",
+          "hanviet": "Khước",
+          "hsk": 4,
+          "word_id": "hsk4_606",
+          "meaning_vi": "nhưng, lại"
+        },
+        {
+          "text": "曾",
+          "pinyin": "céng",
+          "hanviet": "Tằng",
+          "hsk": 5,
+          "word_id": "hsk5_97",
+          "meaning_vi": "từng, đã từng"
+        },
+        {
+          "text": "屡次",
+          "pinyin": "lǚcì",
+          "hanviet": "Lũ Thứ",
+          "hsk": 7,
+          "word_id": "hsk7_2691",
+          "meaning_vi": "nhiều lần, lặp đi lặp lại"
+        },
+        {
+          "text": "遭到",
+          "pinyin": "zāodào",
+          "hanviet": "Tao Đáo",
+          "hsk": 6,
+          "word_id": "hsk6_1648",
+          "meaning_vi": "chịu đựng"
+        },
+        {
+          "text": "统治者",
+          "pinyin": "tǒng zhì zhě",
+          "hanviet": "Thống Trị Giả"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "严厉",
+          "pinyin": "yánlì",
+          "hanviet": "Nghiêm Lệ",
+          "hsk": 6,
+          "word_id": "hsk6_1507",
+          "meaning_vi": "nghiêm khắc"
+        },
+        {
+          "text": "查禁",
+          "pinyin": "chá jìn",
+          "hanviet": "Tra Cầm"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "商纣王因沉湎于酒色荒废政事导致灭亡，周公继位后颁布了中国历史上最早的禁酒法令《酒诰》。",
+      "pinyin": "Shāng Zhòuwáng yīn chénmiǎn yú jiǔsè huāngfèi zhèngshì dǎozhì mièwáng, Zhōugōng jìwèi hòu bānbù le Zhōngguó lìshǐ shàng zuì zǎo de jìnjiǔ fǎlìng 《Jiǔgào》.",
+      "vi": "Vua Trụ nhà Thương vì chìm đắm men rượu tửu sắc mà mất nước, Chu Công sau đó đã ban hành đạo luật cấm rượu sớm nhất mang tên Tửu Cáo.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "商",
+          "pinyin": "shāng",
+          "hanviet": "Thương"
+        },
+        {
+          "text": "纣王",
+          "pinyin": "zhòu wáng",
+          "hanviet": "Trụ Vương"
+        },
+        {
+          "text": "因",
+          "pinyin": "yīn",
+          "hanviet": "Nhân",
+          "hsk": 6,
+          "word_id": "hsk6_1574",
+          "meaning_vi": "bởi vì"
+        },
+        {
+          "text": "沉湎",
+          "pinyin": "chén miǎn",
+          "hanviet": "Trầm Miện"
+        },
+        {
+          "text": "于",
+          "pinyin": "yú",
+          "hanviet": "Vu",
+          "hsk": 6,
+          "word_id": "hsk6_1606",
+          "meaning_vi": "tại"
+        },
+        {
+          "text": "酒色",
+          "pinyin": "jiǔ sè",
+          "hanviet": "Tửu Sắc"
+        },
+        {
+          "text": "荒废",
+          "pinyin": "huāng fèi",
+          "hanviet": "Hoang Phế"
+        },
+        {
+          "text": "政事",
+          "pinyin": "zhèng shì",
+          "hanviet": "Chính Sự"
+        },
+        {
+          "text": "导致",
+          "pinyin": "dǎozhì",
+          "hanviet": "Đạo Trí",
+          "hsk": 5,
+          "word_id": "hsk5_255",
+          "meaning_vi": "dẫn đến, gây ra"
+        },
+        {
+          "text": "灭亡",
+          "pinyin": "mièwáng",
+          "hanviet": "Diệt Vong",
+          "hsk": 7,
+          "word_id": "hsk7_2828",
+          "meaning_vi": "diệt vong, tiêu vong"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "周公",
+          "pinyin": "zhōu gōng",
+          "hanviet": "Chu Công"
+        },
+        {
+          "text": "继位",
+          "pinyin": "jì wèi",
+          "hanviet": "Kế Vị"
+        },
+        {
+          "text": "后",
+          "pinyin": "hòu",
+          "hanviet": "Hậu",
+          "hsk": 1,
+          "word_id": "hsk1_524",
+          "meaning_vi": "sau"
+        },
+        {
+          "text": "颁布",
+          "pinyin": "bānbù",
+          "hanviet": "Ban Bố",
+          "hsk": 7,
+          "word_id": "hsk7_68",
+          "meaning_vi": "ban hành (luật)"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "历史",
+          "pinyin": "lìshǐ",
+          "hanviet": "Lịch Sử",
+          "hsk": 3,
+          "word_id": "hsk3_831",
+          "meaning_vi": "lịch sử"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "最早",
+          "pinyin": "zuì zǎo",
+          "hanviet": "Tối Tảo"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "禁酒",
+          "pinyin": "jìn jiǔ",
+          "hanviet": "Cầm Tửu"
+        },
+        {
+          "text": "法令",
+          "pinyin": "fǎ lìng",
+          "hanviet": "Pháp Lệnh"
+        },
+        {
+          "text": "《"
+        },
+        {
+          "text": "酒",
+          "pinyin": "jiǔ",
+          "hanviet": "Tửu",
+          "hsk": 3,
+          "word_id": "hsk3_804",
+          "meaning_vi": "rượu"
+        },
+        {
+          "text": "诰",
+          "pinyin": "gào",
+          "hanviet": "Cáo"
+        },
+        {
+          "text": "》"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "在农耕时代，酿造大量酒水需要消耗极多的粮食，遇到灾荒战乱年份，朝廷必然颁布严格禁酒令以节约口粮。",
+      "pinyin": "Zài nónggēng shídài, niàngzào dàliàng jiǔshuǐ xūyào xiāohào jí duō de liángshi, yùdào zāihuāng zhànluàn niánfèn, cháotíng bìrán bānbù yángé jìnjiǔlìng yǐ jiéyuē kǒuliáng.",
+      "vi": "Thời kỳ nông nghiệp, nấu rượu tốn rất nhiều ngũ cốc, gặp năm mất mùa hạn hán triều đình buộc phải cấm rượu để dành lương thực.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "农耕",
+          "pinyin": "nóng gēng",
+          "hanviet": "Nông Canh"
+        },
+        {
+          "text": "时代",
+          "pinyin": "shídài",
+          "hanviet": "Thời Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1012",
+          "meaning_vi": "thời đại"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "酿造",
+          "pinyin": "niàngzào",
+          "hanviet": "Nhưỡng Tạo",
+          "hsk": 7,
+          "word_id": "hsk7_2966",
+          "meaning_vi": "ủ men; chưng cất; làm rượu"
+        },
+        {
+          "text": "大量",
+          "pinyin": "dàliàng",
+          "hanviet": "Đại Lượng",
+          "hsk": 4,
+          "word_id": "hsk4_126",
+          "meaning_vi": "lượng lớn, nhiều"
+        },
+        {
+          "text": "酒水",
+          "pinyin": "jiǔshuǐ",
+          "hanviet": "Tửu Thuỷ",
+          "hsk": 6,
+          "word_id": "hsk6_733",
+          "meaning_vi": "đồ uống có cồn và nước giải khát"
+        },
+        {
+          "text": "需要",
+          "pinyin": "xūyào",
+          "hanviet": "Nhu Yêu",
+          "hsk": 3,
+          "word_id": "hsk3_991",
+          "meaning_vi": "cần thiết, cần"
+        },
+        {
+          "text": "消耗",
+          "pinyin": "xiāohào",
+          "hanviet": "Tiêu Hao",
+          "hsk": 6,
+          "word_id": "hsk6_1448",
+          "meaning_vi": "tiêu hao"
+        },
+        {
+          "text": "极多",
+          "pinyin": "jí duō",
+          "hanviet": "Cực Đa"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "粮食",
+          "pinyin": "liángshi",
+          "hanviet": "Lương Thực",
+          "hsk": 5,
+          "word_id": "hsk5_718",
+          "meaning_vi": "lương thực, ngũ cốc"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "遇到",
+          "pinyin": "yùdào",
+          "hanviet": "Ngộ Đáo",
+          "hsk": 3,
+          "word_id": "hsk3_1032",
+          "meaning_vi": "gặp phải"
+        },
+        {
+          "text": "灾荒",
+          "pinyin": "zāi huāng",
+          "hanviet": "Tai Hoang"
+        },
+        {
+          "text": "战乱",
+          "pinyin": "zhàn luàn",
+          "hanviet": "Chiến Loạn"
+        },
+        {
+          "text": "年份",
+          "pinyin": "nián fèn",
+          "hanviet": "Niên Phần"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "朝廷",
+          "pinyin": "cháo tíng",
+          "hanviet": "Triều Đình"
+        },
+        {
+          "text": "必然",
+          "pinyin": "bìrán",
+          "hanviet": "Tất Nhiên",
+          "hsk": 5,
+          "word_id": "hsk5_53",
+          "meaning_vi": "tất nhiên, chắc chắn"
+        },
+        {
+          "text": "颁布",
+          "pinyin": "bānbù",
+          "hanviet": "Ban Bố",
+          "hsk": 7,
+          "word_id": "hsk7_68",
+          "meaning_vi": "ban hành (luật)"
+        },
+        {
+          "text": "严格",
+          "pinyin": "yángé",
+          "hanviet": "Nghiêm Cách",
+          "hsk": 4,
+          "word_id": "hsk4_845",
+          "meaning_vi": "nghiêm khắc, chặt chẽ"
+        },
+        {
+          "text": "禁酒令",
+          "pinyin": "jìn jiǔ lìng",
+          "hanviet": "Cầm Tửu Lệnh"
+        },
+        {
+          "text": "以",
+          "pinyin": "yǐ",
+          "hanviet": "Dĩ",
+          "hsk": 5,
+          "word_id": "hsk5_1362",
+          "meaning_vi": "bằng, dùng"
+        },
+        {
+          "text": "节约",
+          "pinyin": "jiéyuē",
+          "hanviet": "Tiết Yêu",
+          "hsk": 4,
+          "word_id": "hsk4_384",
+          "meaning_vi": "tiết kiệm"
+        },
+        {
+          "text": "口粮",
+          "pinyin": "kǒu liáng",
+          "hanviet": "Khẩu Lương"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "三国时期的曹操为了保证军粮供给与整肃军纪，也曾坚决推行全境戒酒政策。",
+      "pinyin": "Sānguó shíqī de Cáo Cāo wèile bǎozhèng jūnliáng gōngjǐ yǔ zhěngsù jūnjì, yě céng jiānjué tuīxíng quánjìng jièjiǔ zhèngcè.",
+      "vi": "Thời Tam Quốc, Tào Tháo vì muốn đảm bảo quân lương và giữ nghiêm quân kỷ cũng thi hành triệt để chính sách cấm rượu.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "三国",
+          "pinyin": "sān guó",
+          "hanviet": "Tam Quốc"
+        },
+        {
+          "text": "时期",
+          "pinyin": "shíqī",
+          "hanviet": "Thời Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_1016",
+          "meaning_vi": "thời kỳ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "曹操",
+          "pinyin": "cáo cāo",
+          "hanviet": "Tào Tháo"
+        },
+        {
+          "text": "为了",
+          "pinyin": "wèile",
+          "hanviet": "Vi Liễu",
+          "hsk": 3,
+          "word_id": "hsk3_955",
+          "meaning_vi": "để (mục đích)"
+        },
+        {
+          "text": "保证",
+          "pinyin": "bǎozhèng",
+          "hanviet": "Bảo Chứng",
+          "hsk": 4,
+          "word_id": "hsk4_15",
+          "meaning_vi": "đảm bảo"
+        },
+        {
+          "text": "军粮",
+          "pinyin": "jūn liáng",
+          "hanviet": "Quân Lương"
+        },
+        {
+          "text": "供给",
+          "pinyin": "gōngjǐ",
+          "hanviet": "Cung Cấp",
+          "hsk": 6,
+          "word_id": "hsk6_456",
+          "meaning_vi": "cung cấp"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "整肃",
+          "pinyin": "zhěng sù",
+          "hanviet": "Chỉnh Túc"
+        },
+        {
+          "text": "军纪",
+          "pinyin": "jūn jì",
+          "hanviet": "Quân Kỷ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "也",
+          "pinyin": "yě",
+          "hanviet": "Dã",
+          "hsk": 1,
+          "word_id": "hsk1_359",
+          "meaning_vi": "cũng"
+        },
+        {
+          "text": "曾",
+          "pinyin": "céng",
+          "hanviet": "Tằng",
+          "hsk": 5,
+          "word_id": "hsk5_97",
+          "meaning_vi": "từng, đã từng"
+        },
+        {
+          "text": "坚决",
+          "pinyin": "jiānjué",
+          "hanviet": "Kiên Quyết",
+          "hsk": 6,
+          "word_id": "hsk6_646",
+          "meaning_vi": "kiên quyết"
+        },
+        {
+          "text": "推行",
+          "pinyin": "tuīxíng",
+          "hanviet": "Suy Hành",
+          "hsk": 6,
+          "word_id": "hsk6_1341",
+          "meaning_vi": "thúc đẩy thực hiện, triển khai rộng rãi"
+        },
+        {
+          "text": "全境",
+          "pinyin": "quán jìng",
+          "hanviet": "Toàn Cảnh"
+        },
+        {
+          "text": "戒酒",
+          "pinyin": "jiè jiǔ",
+          "hanviet": "Giới Tửu"
+        },
+        {
+          "text": "政策",
+          "pinyin": "zhèngcè",
+          "hanviet": "Chính Sách",
+          "hsk": 6,
+          "word_id": "hsk6_1688",
+          "meaning_vi": "chính sách"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "从防灾备荒到专卖榷酒以充实国库，古代酒政的收放体现了国家治理在经济与民生之间的动态权衡。",
+      "pinyin": "Cóng fángzāi-bèihuāng dào zhuānmài quèjiǔ yǐ chōngshí guókù, gǔdài jiǔzhèng de shōufàng tǐxiàn le guójiā zhìlǐ zài jīngjì yǔ mínshēng zhījiān de dòngtài quánhéng.",
+      "vi": "Từ phòng dịch đói kém đến việc độc quyền bán rượu sung công, chính sách rượu xưa thể hiện sự cân đối linh hoạt của phép trị quốc.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "从",
+          "pinyin": "cóng",
+          "hanviet": "Tòng",
+          "hsk": 2,
+          "word_id": "hsk2_324",
+          "meaning_vi": "từ"
+        },
+        {
+          "text": "防灾",
+          "pinyin": "fáng zāi",
+          "hanviet": "Phòng Tai"
+        },
+        {
+          "text": "备荒",
+          "pinyin": "bèi huāng",
+          "hanviet": "Bị Hoang"
+        },
+        {
+          "text": "到",
+          "pinyin": "dào",
+          "hanviet": "Đáo",
+          "hsk": 1,
+          "word_id": "hsk1_59",
+          "meaning_vi": "đến"
+        },
+        {
+          "text": "专卖",
+          "pinyin": "zhuānmài",
+          "hanviet": "Chuyên Mại",
+          "hsk": 7,
+          "word_id": "hsk7_5435",
+          "meaning_vi": "độc quyền bán, kinh doanh chuyên biệt"
+        },
+        {
+          "text": "榷",
+          "pinyin": "què",
+          "hanviet": "Các"
+        },
+        {
+          "text": "酒",
+          "pinyin": "jiǔ",
+          "hanviet": "Tửu",
+          "hsk": 3,
+          "word_id": "hsk3_804",
+          "meaning_vi": "rượu"
+        },
+        {
+          "text": "以",
+          "pinyin": "yǐ",
+          "hanviet": "Dĩ",
+          "hsk": 5,
+          "word_id": "hsk5_1362",
+          "meaning_vi": "bằng, dùng"
+        },
+        {
+          "text": "充实",
+          "pinyin": "chōngshí",
+          "hanviet": "Sung Thực",
+          "hsk": 6,
+          "word_id": "hsk6_175",
+          "meaning_vi": "sung túc, đầy đủ phong phú"
+        },
+        {
+          "text": "国库",
+          "pinyin": "guó kù",
+          "hanviet": "Quốc Khố"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "酒政",
+          "pinyin": "jiǔ zhèng",
+          "hanviet": "Tửu Chính"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "收放",
+          "pinyin": "shōu fàng",
+          "hanviet": "Thu Phóng"
+        },
+        {
+          "text": "体现",
+          "pinyin": "tǐxiàn",
+          "hanviet": "Thể Hiện",
+          "hsk": 5,
+          "word_id": "hsk5_1121",
+          "meaning_vi": "thể hiện"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "国家",
+          "pinyin": "guójiā",
+          "hanviet": "Quốc Gia",
+          "hsk": 3,
+          "word_id": "hsk3_749",
+          "meaning_vi": "quốc gia"
+        },
+        {
+          "text": "治理",
+          "pinyin": "zhìlǐ",
+          "hanviet": "Trị Lý",
+          "hsk": 6,
+          "word_id": "hsk6_1715",
+          "meaning_vi": "cải tạo, xử lý, trị lý (môi trường/sông suối)"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "经济",
+          "pinyin": "jīngjì",
+          "hanviet": "Kinh Tế",
+          "hsk": 4,
+          "word_id": "hsk4_396",
+          "meaning_vi": "kinh tế"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "民生",
+          "pinyin": "mínshēng",
+          "hanviet": "Dân Sinh",
+          "hsk": 7,
+          "word_id": "hsk7_2831",
+          "meaning_vi": "dân sinh; đời sống nhân dân"
+        },
+        {
+          "text": "之间",
+          "pinyin": "zhījiān",
+          "hanviet": "Chi Gian",
+          "hsk": 4,
+          "word_id": "hsk4_942",
+          "meaning_vi": "giữa"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "动态",
+          "pinyin": "dòngtài",
+          "hanviet": "Động Thái",
+          "hsk": 6,
+          "word_id": "hsk6_320",
+          "meaning_vi": "động thái, diễn biến"
+        },
+        {
+          "text": "权衡",
+          "pinyin": "quánhéng",
+          "hanviet": "Quyền Hành",
+          "hsk": 7,
+          "word_id": "hsk7_3362",
+          "meaning_vi": "cân nhắc, đắn đo"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk3_831",
+    "hsk4_845",
+    "hsk4_15",
+    "hsk4_396"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Văn bản pháp luật cấm rượu sớm nhất trong lịch sử Trung Quốc do Chu Công ban hành có tên là gì?",
+      "options_vi": [
+        "Tửu Cáo (酒诰)",
+        "Luật Hình thư",
+        "Kinh Thi"
+      ],
+      "answer": 0,
+      "explanation_vi": "Chu Công ban hành 'Tửu Cáo' răn dạy con cháu không được say sưa bỏ bê việc nước."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Lý do quan trọng nhất khiến triều đình phong kiến thường cấm nấu rượu trong các năm đói kém là gì?",
+      "options_vi": [
+        "Nấu rượu hao tốn lượng lớn lúa gạo lương thực của dân",
+        "Rượu làm hỏng ly sứ",
+        "Cạn kiệt nguồn nước suối"
+      ],
+      "answer": 0,
+      "explanation_vi": "Ủ rượu tiêu tốn cực nhiều ngũ cốc nên khi mất mùa phải cấm triệt để giữ lương thực ăn."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Nhân vật lịch sử thời Tam Quốc nào từng ra lệnh cấm rượu nghiêm ngặt để dồn lương thực nuôi quân?",
+      "options_vi": [
+        "Tào Tháo (曹操)",
+        "Lưu Bị",
+        "Tôn Quyền"
+      ],
+      "answer": 0,
+      "explanation_vi": "Tào Tháo ban hành lệnh cấm rượu để dự trữ lương thực đánh trận."
+    }
+  ]
+}

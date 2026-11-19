@@ -1,0 +1,792 @@
+{
+  "id": "wanwu_story_041",
+  "chapter_no": 41,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 2,
+  "book_page_start": 414,
+  "book_page_end": 425,
+  "page_display": "Trang 414 - 425",
+  "title": {
+    "zh": "病毒：看不见的天敌",
+    "vi": "Vi rút: Kẻ thù vô hình của muôn loài"
+  },
+  "topic": "science_technology",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🔬",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_041.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_041.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 414 - 425 · Cấu trúc siêu vi thể và cuộc chiến không ngừng nghỉ giữa hệ miễn dịch với các mầm bệnh siêu nhỏ.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "病毒是自然界中结构极其简单却威力惊人的微小存在，甚至无法被普通光学显微镜看见。",
+      "pinyin": "Bìngdú shì zìránjiè zhōng jiégòu jíqí jiǎndān què wēilì jīngrén de wēixiǎo cúnzài, shènzhì wúfǎ bèi pǔtōng guāngxué xiǎnwéijìng kànjiàn.",
+      "vi": "Vi rút là dạng tồn tại cực kỳ đơn giản nhưng có sức mạnh đáng kinh ngạc trong tự nhiên, kính hiển vi quang học thông thường không thể thấy.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "病毒",
+          "pinyin": "bìngdú",
+          "hanviet": "Bệnh Độc",
+          "hsk": 6,
+          "word_id": "hsk6_61",
+          "meaning_vi": "vi-rút, vi khuẩn"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "自然界",
+          "pinyin": "zìránjiè",
+          "hanviet": "Tự Nhiên Giới",
+          "hsk": 7,
+          "word_id": "hsk7_5522",
+          "meaning_vi": "giới tự nhiên, thế giới tự nhiên"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "结构",
+          "pinyin": "jiégòu",
+          "hanviet": "Kết Cấu",
+          "hsk": 5,
+          "word_id": "hsk5_601",
+          "meaning_vi": "cấu trúc"
+        },
+        {
+          "text": "极其",
+          "pinyin": "jíqí",
+          "hanviet": "Cực Kì/cực Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_533",
+          "meaning_vi": "cực kỳ, hết sức"
+        },
+        {
+          "text": "简单",
+          "pinyin": "jiǎndān",
+          "hanviet": "Giản Thiện",
+          "hsk": 3,
+          "word_id": "hsk3_433",
+          "meaning_vi": "đơn giản"
+        },
+        {
+          "text": "却",
+          "pinyin": "què",
+          "hanviet": "Khước",
+          "hsk": 4,
+          "word_id": "hsk4_606",
+          "meaning_vi": "nhưng, lại"
+        },
+        {
+          "text": "威力",
+          "pinyin": "wēilì",
+          "hanviet": "Uy Lực",
+          "hsk": 7,
+          "word_id": "hsk7_4227",
+          "meaning_vi": "uy lực"
+        },
+        {
+          "text": "惊人",
+          "pinyin": "jīngrén",
+          "hanviet": "Kinh Nhân",
+          "hsk": 6,
+          "word_id": "hsk6_715",
+          "meaning_vi": "đáng kinh ngạc, kinh người"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "微小",
+          "pinyin": "wēixiǎo",
+          "hanviet": "Vi Tiểu",
+          "hsk": 6,
+          "word_id": "hsk6_1367",
+          "meaning_vi": "vi mô, nhỏ bé"
+        },
+        {
+          "text": "存在",
+          "pinyin": "cúnzài",
+          "hanviet": "Tồn Tại",
+          "hsk": 5,
+          "word_id": "hsk5_210",
+          "meaning_vi": "tồn tại"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "甚至",
+          "pinyin": "shènzhì",
+          "hanviet": "Thậm Chí",
+          "hsk": 4,
+          "word_id": "hsk4_645",
+          "meaning_vi": "thậm chí"
+        },
+        {
+          "text": "无法",
+          "pinyin": "wúfǎ",
+          "hanviet": "Vô Pháp",
+          "hsk": 4,
+          "word_id": "hsk4_782",
+          "meaning_vi": "không thể, không có cách nào"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "普通",
+          "pinyin": "pǔtōng",
+          "hanviet": "Phổ Thông",
+          "hsk": 4,
+          "word_id": "hsk4_562",
+          "meaning_vi": "bình thường, phổ thông"
+        },
+        {
+          "text": "光学",
+          "pinyin": "guāng xué",
+          "hanviet": "Quang Học"
+        },
+        {
+          "text": "显微镜",
+          "pinyin": "xiǎnwēijìng",
+          "hanviet": "Hiển Vi Kính",
+          "hsk": 7,
+          "word_id": "hsk7_4447",
+          "meaning_vi": "kính hiển vi"
+        },
+        {
+          "text": "看见",
+          "pinyin": "kànjiàn",
+          "hanviet": "Khán Kiến",
+          "hsk": 1,
+          "word_id": "hsk1_156",
+          "meaning_vi": "nhìn thấy"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "十九世纪末，俄国植物学家伊万诺夫斯基在研究烟草花叶病时，发现了比细菌还要小得多的感染因子。",
+      "pinyin": "Shíjiǔ shìjì mò, Éguó zhíwù xuéjiā Yīwànnuòfūsījī zài yánjiū yāncǎo huāyèbìng shí, fāxiàn le bǐ xìjūn hái yào xiǎo de duō de gǎnrǎn yīnzǐ.",
+      "vi": "Cuối thế kỷ 19, nhà thực vật học người Nga Ivanovsky khi nghiên cứu bệnh khảm thuốc lá đã phát hiện tác nhân truyền nhiễm nhỏ hơn vi khuẩn rất nhiều.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "十九",
+          "pinyin": "shí jiǔ",
+          "hanviet": "Thập Cửu"
+        },
+        {
+          "text": "世纪末",
+          "pinyin": "shì jì mò",
+          "hanviet": "Thế Kỷ Mạt"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "俄国",
+          "pinyin": "é guó",
+          "hanviet": "Nga Quốc"
+        },
+        {
+          "text": "植物学家",
+          "pinyin": "zhí wù xué jiā",
+          "hanviet": "Thực Vật Học Gia"
+        },
+        {
+          "text": "伊万诺夫",
+          "pinyin": "yī wàn nuò fū",
+          "hanviet": "Y Mặc Nặc Phu"
+        },
+        {
+          "text": "斯基",
+          "pinyin": "sī jī",
+          "hanviet": "Tư Cơ"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "研究",
+          "pinyin": "yánjiū",
+          "hanviet": "Nghiên Cứu",
+          "hsk": 4,
+          "word_id": "hsk4_846",
+          "meaning_vi": "nghiên cứu"
+        },
+        {
+          "text": "烟草",
+          "pinyin": "yān cǎo",
+          "hanviet": "Yên Thảo"
+        },
+        {
+          "text": "花叶病",
+          "pinyin": "huā yè bìng",
+          "hanviet": "Hoa Hiệp Bệnh"
+        },
+        {
+          "text": "时",
+          "pinyin": "shí",
+          "hanviet": "Thời",
+          "hsk": 2,
+          "word_id": "hsk2_431",
+          "meaning_vi": "thời gian (danh từ, số lượng)"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "发现",
+          "pinyin": "fāxiàn",
+          "hanviet": "Phát Hiện",
+          "hsk": 3,
+          "word_id": "hsk3_712",
+          "meaning_vi": "phát hiện"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "比",
+          "pinyin": "bǐ",
+          "hanviet": "Tỷ",
+          "hsk": 2,
+          "word_id": "hsk2_309",
+          "meaning_vi": "so với"
+        },
+        {
+          "text": "细菌",
+          "pinyin": "xìjūn",
+          "hanviet": "Tế Khuẩn",
+          "hsk": 6,
+          "word_id": "hsk6_1409",
+          "meaning_vi": "vi khuẩn"
+        },
+        {
+          "text": "还要",
+          "pinyin": "hái yào",
+          "hanviet": "Hoàn Yêu"
+        },
+        {
+          "text": "小得多",
+          "pinyin": "xiǎo dé duō",
+          "hanviet": "Tiểu Đắc Đa"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "感染",
+          "pinyin": "gǎnrǎn",
+          "hanviet": "Cảm Nhiễm",
+          "hsk": 6,
+          "word_id": "hsk6_425",
+          "meaning_vi": "nhiễm trùng, lây nhiễm"
+        },
+        {
+          "text": "因子",
+          "pinyin": "yīn zi",
+          "hanviet": "Nhân Tử"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "病毒本身没有细胞结构，只能寄生在活细胞内利用宿主的能量进行自我复制。",
+      "pinyin": "Bìngdú běnshēn méiyǒu xìbāo jiégòu, zhǐ néng jìshēng zài huó xìbāo nèi lìyòng xiùzhǔ de néngliàng jìnxíng zìwǒ fùzhì.",
+      "vi": "Vi rút bản thân không có cấu trúc tế bào, chỉ có thể ký sinh trong tế bào sống và mượn năng lượng của vật chủ để nhân bản.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "病毒",
+          "pinyin": "bìngdú",
+          "hanviet": "Bệnh Độc",
+          "hsk": 6,
+          "word_id": "hsk6_61",
+          "meaning_vi": "vi-rút, vi khuẩn"
+        },
+        {
+          "text": "本身",
+          "pinyin": "běnshēn",
+          "hanviet": "Bản Thân",
+          "hsk": 6,
+          "word_id": "hsk6_46",
+          "meaning_vi": "bản thân, chính nó"
+        },
+        {
+          "text": "没有",
+          "pinyin": "méiyǒu",
+          "hanviet": "Một Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_197",
+          "meaning_vi": "không có"
+        },
+        {
+          "text": "细胞",
+          "pinyin": "xìbāo",
+          "hanviet": "Tế Bào",
+          "hsk": 6,
+          "word_id": "hsk6_1408",
+          "meaning_vi": "tế bào"
+        },
+        {
+          "text": "结构",
+          "pinyin": "jiégòu",
+          "hanviet": "Kết Cấu",
+          "hsk": 5,
+          "word_id": "hsk5_601",
+          "meaning_vi": "cấu trúc"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "只能",
+          "pinyin": "zhǐ néng",
+          "hanviet": "Chỉ Năng",
+          "hsk": 3,
+          "word_id": "hsk3_1056",
+          "meaning_vi": "chỉ có thể"
+        },
+        {
+          "text": "寄生",
+          "pinyin": "jì shēng",
+          "hanviet": "Kí Sinh/ký Sinh"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "活",
+          "pinyin": "huó",
+          "hanviet": "Hoạt",
+          "hsk": 4,
+          "word_id": "hsk4_311",
+          "meaning_vi": "sống; sinh động; công việc"
+        },
+        {
+          "text": "细胞",
+          "pinyin": "xìbāo",
+          "hanviet": "Tế Bào",
+          "hsk": 6,
+          "word_id": "hsk6_1408",
+          "meaning_vi": "tế bào"
+        },
+        {
+          "text": "内",
+          "pinyin": "nèi",
+          "hanviet": "Nội",
+          "hsk": 4,
+          "word_id": "hsk4_528",
+          "meaning_vi": "trong, nội"
+        },
+        {
+          "text": "利用",
+          "pinyin": "lìyòng",
+          "hanviet": "Lợi Dụng",
+          "hsk": 5,
+          "word_id": "hsk5_710",
+          "meaning_vi": "lợi dụng, tận dụng"
+        },
+        {
+          "text": "宿主",
+          "pinyin": "sù zhǔ",
+          "hanviet": "Túc Chủ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "能量",
+          "pinyin": "néngliàng",
+          "hanviet": "Năng Lượng",
+          "hsk": 6,
+          "word_id": "hsk6_953",
+          "meaning_vi": "năng lượng"
+        },
+        {
+          "text": "进行",
+          "pinyin": "jìnxíng",
+          "hanviet": "Tiến Hành",
+          "hsk": 4,
+          "word_id": "hsk4_393",
+          "meaning_vi": "tiến hành"
+        },
+        {
+          "text": "自我",
+          "pinyin": "zìwǒ",
+          "hanviet": "Tự Ngã",
+          "hsk": 6,
+          "word_id": "hsk6_1782",
+          "meaning_vi": "bản thân, tự mình, cái tôi"
+        },
+        {
+          "text": "复制",
+          "pinyin": "fùzhì",
+          "hanviet": "Phục Chế",
+          "hsk": 5,
+          "word_id": "hsk5_375",
+          "meaning_vi": "sao chép"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "直到电子显微镜问世，人类才真正看清了病毒千姿百态的立体外貌。",
+      "pinyin": "Zhídào diànzǐ xiǎnwéijìng wènshì, rénlèi cái zhēnzhèng kànqīng le bìngdú qiānzī-bǎitài de lìtǐ wàimào.",
+      "vi": "Mãi đến khi kính hiển vi điện tử ra đời, con người mới thực sự nhìn rõ diện mạo ba chiều muôn hình vạn trạng của vi rút.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "直到",
+          "pinyin": "zhídào",
+          "hanviet": "Trực Đáo",
+          "hsk": 3,
+          "word_id": "hsk3_1053",
+          "meaning_vi": "cho đến, mãi đến"
+        },
+        {
+          "text": "电子显微镜",
+          "pinyin": "diàn zi xiǎn wēi jìng",
+          "hanviet": "Điện Tử Hiển Vi Kính"
+        },
+        {
+          "text": "问世",
+          "pinyin": "wènshì",
+          "hanviet": "Vấn Thế",
+          "hsk": 7,
+          "word_id": "hsk7_4291",
+          "meaning_vi": "ra mắt, ra đời"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "人类",
+          "pinyin": "rénlèi",
+          "hanviet": "Nhân Loại",
+          "hsk": 5,
+          "word_id": "hsk5_921",
+          "meaning_vi": "loài người, nhân loại"
+        },
+        {
+          "text": "才",
+          "pinyin": "cái",
+          "hanviet": "Tài"
+        },
+        {
+          "text": "真正",
+          "pinyin": "zhēnzhèng",
+          "hanviet": "Chân Chính",
+          "hsk": 4,
+          "word_id": "hsk4_927",
+          "meaning_vi": "thực sự, chân chính"
+        },
+        {
+          "text": "看清",
+          "pinyin": "kàn qīng",
+          "hanviet": "Khán Thanh"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "病毒",
+          "pinyin": "bìngdú",
+          "hanviet": "Bệnh Độc",
+          "hsk": 6,
+          "word_id": "hsk6_61",
+          "meaning_vi": "vi-rút, vi khuẩn"
+        },
+        {
+          "text": "千姿百态",
+          "pinyin": "qiānzī-bǎitài",
+          "hanviet": "Thiên Tư Bách Thái",
+          "hsk": 7,
+          "word_id": "hsk7_3218",
+          "meaning_vi": "muôn hình muôn vẻ; thiên hình vạn trạng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "立体",
+          "pinyin": "lìtǐ",
+          "hanviet": "Lập Thể",
+          "hsk": 7,
+          "word_id": "hsk7_2559",
+          "meaning_vi": "ba chiều, lập thể"
+        },
+        {
+          "text": "外貌",
+          "pinyin": "wàimào",
+          "hanviet": "Ngoại Mạo",
+          "hsk": 7,
+          "word_id": "hsk7_4178",
+          "meaning_vi": "ngoại hình; diện mạo bề ngoài"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "了解病毒的传播机理，有助于我们研发更有效的抗病毒药物，更好地守护公众健康。",
+      "pinyin": "Liǎojiě bìngdú de chuánbō jīlǐ, yǒuzhùyú wǒmen yánfā gèng yǒuxiào de kàngbìngdú yàowù, gèng hǎo de shǒuhù gōngzhòng jiànkāng.",
+      "vi": "Thấu hiểu cơ chế lây truyền của vi rút giúp chúng ta nghiên cứu các loại thuốc kháng vi rút hiệu quả, bảo vệ tốt hơn sức khỏe cộng đồng.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "了解",
+          "pinyin": "liǎojiě",
+          "hanviet": "Liễu Giải",
+          "hsk": 3,
+          "word_id": "hsk3_839",
+          "meaning_vi": "hiểu rõ, tìm hiểu"
+        },
+        {
+          "text": "病毒",
+          "pinyin": "bìngdú",
+          "hanviet": "Bệnh Độc",
+          "hsk": 6,
+          "word_id": "hsk6_61",
+          "meaning_vi": "vi-rút, vi khuẩn"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "传播",
+          "pinyin": "chuánbō",
+          "hanviet": "Truyền Bá",
+          "hsk": 5,
+          "word_id": "hsk5_184",
+          "meaning_vi": "truyền bá, lan truyền"
+        },
+        {
+          "text": "机理",
+          "pinyin": "jī lǐ",
+          "hanviet": "Cơ Lý"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "有助于",
+          "pinyin": "yǒuzhùyú",
+          "hanviet": "Hữu Trợ Vu",
+          "hsk": 5,
+          "word_id": "hsk5_1414",
+          "meaning_vi": "có lợi cho, giúp ích cho, góp phần"
+        },
+        {
+          "text": "我们",
+          "pinyin": "wǒmen",
+          "hanviet": "Ngã Môn",
+          "hsk": 1,
+          "word_id": "hsk1_320",
+          "meaning_vi": "chúng tôi, chúng ta"
+        },
+        {
+          "text": "研发",
+          "pinyin": "yánfā",
+          "hanviet": "Nghiên Phát",
+          "hsk": 5,
+          "word_id": "hsk5_1327",
+          "meaning_vi": "nghiên cứu và phát triển (R&D)"
+        },
+        {
+          "text": "更",
+          "pinyin": "gèng",
+          "hanviet": "Canh",
+          "hsk": 3,
+          "word_id": "hsk3_737",
+          "meaning_vi": "càng, hơn"
+        },
+        {
+          "text": "有效",
+          "pinyin": "yǒuxiào",
+          "hanviet": "Hữu Hiệu",
+          "hsk": 4,
+          "word_id": "hsk4_892",
+          "meaning_vi": "có hiệu lực, hiệu quả"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "抗病毒",
+          "pinyin": "kàng bìng dú",
+          "hanviet": "Kháng Bệnh Độc"
+        },
+        {
+          "text": "药物",
+          "pinyin": "yàowù",
+          "hanviet": "Dược Vật",
+          "hsk": 5,
+          "word_id": "hsk5_1341",
+          "meaning_vi": "thuốc, dược chất"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "更好",
+          "pinyin": "gèng hǎo",
+          "hanviet": "Canh Hảo"
+        },
+        {
+          "text": "地守护",
+          "pinyin": "dì shǒu hù",
+          "hanviet": "Địa Thủ Hộ"
+        },
+        {
+          "text": "公众",
+          "pinyin": "gōngzhòng",
+          "hanviet": "Công Chúng",
+          "hsk": 6,
+          "word_id": "hsk6_467",
+          "meaning_vi": "công cộng"
+        },
+        {
+          "text": "健康",
+          "pinyin": "jiànkāng",
+          "hanviet": "Kiện Khang",
+          "hsk": 3,
+          "word_id": "hsk3_787",
+          "meaning_vi": "khỏe mạnh, sức khỏe"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk3_433",
+    "hsk4_846",
+    "hsk3_712",
+    "hsk3_787",
+    "hsk6_61"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Vi rút có cấu tạo sinh học khác với vi khuẩn ở điểm cơ bản nào?",
+      "options_vi": [
+        "Không có cấu trúc tế bào hoàn chỉnh, bắt buộc phải ký sinh trong tế bào sống",
+        "Có lông mao bơi tự do trong nước",
+        "Kích thước to bằng hạt đậu"
+      ],
+      "answer": 0,
+      "explanation_vi": "Vi rút chỉ gồm vỏ protein bọc vật liệu di truyền và không có cấu trúc tế bào tự lập."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Thiết bị quang học nào đã giúp con người lần đầu nhìn thấy diện mạo thật sự của vi rút?",
+      "options_vi": [
+        "Kính hiển vi điện tử phóng đại siêu cấp",
+        "Kính thiên văn ngắm sao",
+        "Kính lúp cầm tay"
+      ],
+      "answer": 0,
+      "explanation_vi": "Kính hiển vi điện tử sử dụng chùm electron mới đủ độ phân giải soi thấy vi rút siêu nhỏ."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Thực vật nào là đối tượng nghiên cứu giúp nhà khoa học Ivanovsky phát hiện ra vi rút?",
+      "options_vi": [
+        "Cây thuốc lá (bệnh khảm lá)",
+        "Cây xương rồng sa mạc",
+        "Cây bắp cải tím"
+      ],
+      "answer": 0,
+      "explanation_vi": "Bệnh đốm khảm trên lá cây thuốc lá đã dẫn tới phát hiện ra virus khảm thuốc lá (TMV)."
+    }
+  ]
+}

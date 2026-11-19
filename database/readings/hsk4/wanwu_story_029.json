@@ -1,0 +1,834 @@
+{
+  "id": "wanwu_story_029",
+  "chapter_no": 29,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 2,
+  "book_page_start": 282,
+  "book_page_end": 293,
+  "page_display": "Trang 282 - 293",
+  "title": {
+    "zh": "奶酪：香臭总宜人",
+    "vi": "Phô mai: Vị béo nồng đậm đà qua thời gian"
+  },
+  "topic": "food_lifestyle",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🧀",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_029.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_029.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 282 - 293 · Phát minh tình cờ từ túi đựng sữa bằng dạ dày gia súc của người du mục đến hàng nghìn loại phô mai hảo hạng.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "奶酪营养极其丰富，被誉为乳品中的“黄金”，深受世界各地美食家的赞赏。",
+      "pinyin": "Nǎilào yíngyǎng jíqí fēngfù, bèi yù wéi rǔpǐn zhōng de “huángjīn”, shēn shòu shìjiè gèdì měishíjiā de zànshǎng.",
+      "vi": "Phô mai cực kỳ giàu dinh dưỡng, được mệnh danh là 'vàng mười' trong các sản phẩm từ sữa, được người sành ăn khắp thế giới khen ngợi.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "奶酪",
+          "pinyin": "nǎilào",
+          "hanviet": "Nãi Lạc",
+          "hsk": 7,
+          "word_id": "hsk7_2911",
+          "meaning_vi": "phô mai; pho mát"
+        },
+        {
+          "text": "营养",
+          "pinyin": "yíngyǎng",
+          "hanviet": "Dinh Dưỡng",
+          "hsk": 5,
+          "word_id": "hsk5_1380",
+          "meaning_vi": "dinh dưỡng"
+        },
+        {
+          "text": "极其丰富",
+          "pinyin": "jí qí fēng fù",
+          "hanviet": "Cực Kỳ Phong Phú"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "被誉为",
+          "pinyin": "bèi yù wéi",
+          "hanviet": "Bị Dự Vi"
+        },
+        {
+          "text": "乳品",
+          "pinyin": "rǔ pǐn",
+          "hanviet": "Nhũ Phẩm"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "黄金",
+          "pinyin": "huángjīn",
+          "hanviet": "Hoàng Kim",
+          "hsk": 5,
+          "word_id": "hsk5_506",
+          "meaning_vi": "vàng"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "深受",
+          "pinyin": "shēn shòu",
+          "hanviet": "Thâm Thọ"
+        },
+        {
+          "text": "世界各地",
+          "pinyin": "shì jiè gè dì",
+          "hanviet": "Thế Giới Các Địa"
+        },
+        {
+          "text": "美食家",
+          "pinyin": "měi shí jiā",
+          "hanviet": "Mỹ Thực Gia"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "赞赏",
+          "pinyin": "zànshǎng",
+          "hanviet": "Tán Thưởng",
+          "hsk": 6,
+          "word_id": "hsk6_1646",
+          "meaning_vi": "tán thưởng, khen ngợi"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "传说数千年前，一位中东游牧民把鲜奶装进羊胃制成的小水囊里横穿沙漠。",
+      "pinyin": "Chuánshuō shùqiān nián qián, yí wèi Zhōngdōng yóumùmín bǎ xiānnǎi zhuāngjìn yángwèi zhìchéng de xiǎoshuǐnáng lǐ héngchuān shāmò.",
+      "vi": "Tương truyền ngàn năm trước, một người du mục Trung Đông đã đựng sữa tươi trong chiếc túi làm bằng dạ dày cừu vượt sa mạc.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "传说",
+          "pinyin": "chuánshuō",
+          "hanviet": "Truyền Thuyết",
+          "hsk": 5,
+          "word_id": "hsk5_186",
+          "meaning_vi": "truyền thuyết"
+        },
+        {
+          "text": "数千年",
+          "pinyin": "shù qiān nián",
+          "hanviet": "Sổ Thiên Niên"
+        },
+        {
+          "text": "前",
+          "pinyin": "qián",
+          "hanviet": "Tiền",
+          "hsk": 1,
+          "word_id": "hsk1_558",
+          "meaning_vi": "trước"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "一位",
+          "pinyin": "yī wèi",
+          "hanviet": "Nhất Vị"
+        },
+        {
+          "text": "中东",
+          "pinyin": "zhōng dōng",
+          "hanviet": "Trung Đông"
+        },
+        {
+          "text": "游牧民",
+          "pinyin": "yóu mù mín",
+          "hanviet": "Du Mục Dân"
+        },
+        {
+          "text": "把",
+          "pinyin": "bǎ",
+          "hanviet": "Bả",
+          "hsk": 3,
+          "word_id": "hsk3_606",
+          "meaning_vi": "cái, chiếc (lượng từ); cầm, nắm"
+        },
+        {
+          "text": "鲜奶",
+          "pinyin": "xiān nǎi",
+          "hanviet": "Tiên Nãi"
+        },
+        {
+          "text": "装进",
+          "pinyin": "zhuāng jìn",
+          "hanviet": "Trang Tiến"
+        },
+        {
+          "text": "羊胃",
+          "pinyin": "yáng wèi",
+          "hanviet": "Dương Vị"
+        },
+        {
+          "text": "制成",
+          "pinyin": "zhì chéng",
+          "hanviet": "Chế Thành"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "小",
+          "pinyin": "xiǎo",
+          "hanviet": "Tiểu",
+          "hsk": 1,
+          "word_id": "hsk1_337",
+          "meaning_vi": "nhỏ"
+        },
+        {
+          "text": "水囊",
+          "pinyin": "shuǐ náng",
+          "hanviet": "Thuỷ Nang"
+        },
+        {
+          "text": "里",
+          "pinyin": "lǐ",
+          "hanviet": "Lý",
+          "hsk": 1,
+          "word_id": "hsk1_536",
+          "meaning_vi": "bên trong"
+        },
+        {
+          "text": "横穿",
+          "pinyin": "héng chuān",
+          "hanviet": "Hoành Xuyên"
+        },
+        {
+          "text": "沙漠",
+          "pinyin": "shāmò",
+          "hanviet": "Sa Mạc",
+          "hsk": 5,
+          "word_id": "hsk5_944",
+          "meaning_vi": "sa mạc"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "在烈日照耀和胃液凝乳酶的作用下，鲜奶凝固成了半固态的白色凝乳，这就是最初的奶酪。",
+      "pinyin": "Zài lièrì zhàoyào hé wèiyè níngrǔméi de zuòyòng xià, xiānnǎi nínggù chéng le bàn gùtài de báisè níngrǔ, zhè jiùshì zuìchū de nǎilào.",
+      "vi": "Dưới ánh nắng gay gắt và tác động của men rennet trong dạ dày động vật, sữa đã đông tụ thành khối sữa đặc màu trắng, chính là phô mai nguyên sơ.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "烈日",
+          "pinyin": "lièrì",
+          "hanviet": "Liệt Nhật",
+          "hsk": 7,
+          "word_id": "hsk7_2613",
+          "meaning_vi": "nắng gắt, mặt trời chói chang"
+        },
+        {
+          "text": "照耀",
+          "pinyin": "zhàoyào",
+          "hanviet": "Chiếu Diệu",
+          "hsk": 7,
+          "word_id": "hsk7_5197",
+          "meaning_vi": "soi sáng, chiếu tỏa"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "胃液",
+          "pinyin": "wèi yè",
+          "hanviet": "Vị Dịch"
+        },
+        {
+          "text": "凝乳酶",
+          "pinyin": "níng rǔ méi",
+          "hanviet": "Ngưng Nhũ Môi"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "作用",
+          "pinyin": "zuòyòng",
+          "hanviet": "Tác Dụng",
+          "hsk": 4,
+          "word_id": "hsk4_999",
+          "meaning_vi": "tác dụng"
+        },
+        {
+          "text": "下",
+          "pinyin": "xià",
+          "hanviet": "Hạ",
+          "hsk": 1,
+          "word_id": "hsk1_581",
+          "meaning_vi": "dưới"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "鲜奶",
+          "pinyin": "xiān nǎi",
+          "hanviet": "Tiên Nãi"
+        },
+        {
+          "text": "凝固",
+          "pinyin": "nínggù",
+          "hanviet": "Ngưng Cố",
+          "hsk": 7,
+          "word_id": "hsk7_2971",
+          "meaning_vi": "đông cứng, ngưng kết"
+        },
+        {
+          "text": "成",
+          "pinyin": "chéng",
+          "hanviet": "Thành",
+          "hsk": 6,
+          "word_id": "hsk6_156",
+          "meaning_vi": "vào (số lượng)"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "半",
+          "pinyin": "bàn",
+          "hanviet": "Bán",
+          "hsk": 1,
+          "word_id": "hsk1_434",
+          "meaning_vi": "một nửa"
+        },
+        {
+          "text": "固态",
+          "pinyin": "gù tài",
+          "hanviet": "Cố Thái"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "白色",
+          "pinyin": "báisè",
+          "hanviet": "Bạch Sắc",
+          "hsk": 2,
+          "word_id": "hsk2_303",
+          "meaning_vi": "trắng"
+        },
+        {
+          "text": "凝乳",
+          "pinyin": "níng rǔ",
+          "hanviet": "Ngưng Nhũ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "这",
+          "pinyin": "zhè",
+          "hanviet": "Giá",
+          "hsk": 1,
+          "word_id": "hsk1_401",
+          "meaning_vi": "này"
+        },
+        {
+          "text": "就是",
+          "pinyin": "jiùshì",
+          "hanviet": "Tựu Thị",
+          "hsk": 4,
+          "word_id": "hsk4_408",
+          "meaning_vi": "chính là; dù… cũng"
+        },
+        {
+          "text": "最初",
+          "pinyin": "zuìchū",
+          "hanviet": "Tối Sơ",
+          "hsk": 5,
+          "word_id": "hsk5_1596",
+          "meaning_vi": "ban đầu, lúc đầu"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "奶酪",
+          "pinyin": "nǎilào",
+          "hanviet": "Nãi Lạc",
+          "hsk": 7,
+          "word_id": "hsk7_2911",
+          "meaning_vi": "phô mai; pho mát"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "制作奶酪不仅让多余的鲜奶得到了长久保存，还大大降低了乳糖含量，更易被人体吸收。",
+      "pinyin": "Zhìzuò nǎilào bùjǐn ràng duōyú de xiānnǎi dédào le chángjiǔ bǎocún, hái dàdà jiàngdī le rǔtáng hánliàng, gèng yì bèi réntǐ xīshōu.",
+      "vi": "Chế biến phô mai không chỉ bảo quản được nguồn sữa dư thừa lâu dài mà còn giảm đáng kể lượng đường lactose, giúp cơ thể dễ hấp thụ hơn.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "制作",
+          "pinyin": "zhìzuò",
+          "hanviet": "Chế Tác",
+          "hsk": 5,
+          "word_id": "hsk5_1519",
+          "meaning_vi": "chế tác, làm ra"
+        },
+        {
+          "text": "奶酪",
+          "pinyin": "nǎilào",
+          "hanviet": "Nãi Lạc",
+          "hsk": 7,
+          "word_id": "hsk7_2911",
+          "meaning_vi": "phô mai; pho mát"
+        },
+        {
+          "text": "不仅",
+          "pinyin": "bùjǐn",
+          "hanviet": "Bất Cận",
+          "hsk": 4,
+          "word_id": "hsk4_55",
+          "meaning_vi": "không chỉ"
+        },
+        {
+          "text": "让",
+          "pinyin": "ràng",
+          "hanviet": "Nhượng",
+          "hsk": 2,
+          "word_id": "hsk2_422",
+          "meaning_vi": "để cho, khiến"
+        },
+        {
+          "text": "多余",
+          "pinyin": "duōyú",
+          "hanviet": "Đa Dư",
+          "hsk": 6,
+          "word_id": "hsk6_339",
+          "meaning_vi": "dư thừa, thừa thãi"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "鲜奶",
+          "pinyin": "xiān nǎi",
+          "hanviet": "Tiên Nãi"
+        },
+        {
+          "text": "得到",
+          "pinyin": "dédào",
+          "hanviet": "Đắc Đáo",
+          "hsk": 3,
+          "word_id": "hsk3_681",
+          "meaning_vi": "nhận được, có được"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "长久",
+          "pinyin": "chángjiǔ",
+          "hanviet": "Trường Cửu",
+          "hsk": 5,
+          "word_id": "hsk5_110",
+          "meaning_vi": "lâu dài"
+        },
+        {
+          "text": "保存",
+          "pinyin": "bǎocún",
+          "hanviet": "Bảo Tồn",
+          "hsk": 5,
+          "word_id": "hsk5_25",
+          "meaning_vi": "bảo tồn, lưu giữ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "还",
+          "pinyin": "hái",
+          "hanviet": "Hoàn",
+          "hsk": 1,
+          "word_id": "hsk1_111",
+          "meaning_vi": "vẫn còn"
+        },
+        {
+          "text": "大大降低",
+          "pinyin": "dà dà jiàng dī",
+          "hanviet": "Đại Đại Giáng Đê"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "乳糖",
+          "pinyin": "rǔ táng",
+          "hanviet": "Nhũ Đường"
+        },
+        {
+          "text": "含量",
+          "pinyin": "hánliàng",
+          "hanviet": "Hàm Lượng",
+          "hsk": 5,
+          "word_id": "hsk5_464",
+          "meaning_vi": "hàm lượng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "更易",
+          "pinyin": "gēng yì",
+          "hanviet": "Canh Dịch"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "人体",
+          "pinyin": "réntǐ",
+          "hanviet": "Nhân Thể",
+          "hsk": 5,
+          "word_id": "hsk5_926",
+          "meaning_vi": "cơ thể con người"
+        },
+        {
+          "text": "吸收",
+          "pinyin": "xīshōu",
+          "hanviet": "Hấp Thu",
+          "hsk": 5,
+          "word_id": "hsk5_1223",
+          "meaning_vi": "hấp thu"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "如今全球有数千种不同风味的奶酪，从奶香浓郁到气味独特，展现了微生物发酵的奇妙魅力。",
+      "pinyin": "Rújīn quánqiú yǒu shùqiān zhǒng bùtóng fēngwèi de nǎilào, cóng nǎixiāng nóngyù dào qìwèi dètè, zhǎnxiàn le wēishēngwù fājiào de qímiào mèilì.",
+      "vi": "Ngày nay toàn cầu có hàng ngàn loại phô mai với hương vị phong phú, biểu hiện sức quyến rũ kỳ diệu của quá trình lên men vi sinh vật.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "如今",
+          "pinyin": "rújīn",
+          "hanviet": "Như Kim",
+          "hsk": 5,
+          "word_id": "hsk5_935",
+          "meaning_vi": "hiện nay, ngày nay"
+        },
+        {
+          "text": "全球",
+          "pinyin": "quánqiú",
+          "hanviet": "Toàn Cầu",
+          "hsk": 4,
+          "word_id": "hsk4_601",
+          "meaning_vi": "toàn cầu"
+        },
+        {
+          "text": "有",
+          "pinyin": "yǒu",
+          "hanviet": "Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_380",
+          "meaning_vi": "có"
+        },
+        {
+          "text": "数千种",
+          "pinyin": "shù qiān zhǒng",
+          "hanviet": "Sổ Thiên Chủng"
+        },
+        {
+          "text": "不同",
+          "pinyin": "bù tóng",
+          "hanviet": "Bất Đồng",
+          "hsk": 3,
+          "word_id": "hsk3_640",
+          "meaning_vi": "khác nhau, không giống"
+        },
+        {
+          "text": "风味",
+          "pinyin": "fēngwèi",
+          "hanviet": "Phong Vị",
+          "hsk": 7,
+          "word_id": "hsk7_1210",
+          "meaning_vi": "phong vị, hương vị đặc trưng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "奶酪",
+          "pinyin": "nǎilào",
+          "hanviet": "Nãi Lạc",
+          "hsk": 7,
+          "word_id": "hsk7_2911",
+          "meaning_vi": "phô mai; pho mát"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "从",
+          "pinyin": "cóng",
+          "hanviet": "Tòng",
+          "hsk": 2,
+          "word_id": "hsk2_324",
+          "meaning_vi": "từ"
+        },
+        {
+          "text": "奶香",
+          "pinyin": "nǎi xiāng",
+          "hanviet": "Nãi Hương"
+        },
+        {
+          "text": "浓郁",
+          "pinyin": "nóngyù",
+          "hanviet": "Nồng Úc",
+          "hsk": 7,
+          "word_id": "hsk7_2988",
+          "meaning_vi": "nồng nàn; đậm đà"
+        },
+        {
+          "text": "到",
+          "pinyin": "dào",
+          "hanviet": "Đáo",
+          "hsk": 1,
+          "word_id": "hsk1_59",
+          "meaning_vi": "đến"
+        },
+        {
+          "text": "气味",
+          "pinyin": "qìwèi",
+          "hanviet": "Khí Vị",
+          "hsk": 6,
+          "word_id": "hsk6_1027",
+          "meaning_vi": "mùi vị, khí vị"
+        },
+        {
+          "text": "独特",
+          "pinyin": "dútè",
+          "hanviet": "Độc Đặc",
+          "hsk": 5,
+          "word_id": "hsk5_296",
+          "meaning_vi": "độc đáo"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "展现",
+          "pinyin": "zhǎnxiàn",
+          "hanviet": "Triển Hiện",
+          "hsk": 5,
+          "word_id": "hsk5_1467",
+          "meaning_vi": "hiển thị"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "微生物",
+          "pinyin": "wēishēngwù",
+          "hanviet": "Vi Sinh Vật",
+          "hsk": 7,
+          "word_id": "hsk7_4231",
+          "meaning_vi": "vi sinh vật"
+        },
+        {
+          "text": "发酵",
+          "pinyin": "fājiào",
+          "hanviet": "Phát Diếu",
+          "hsk": 7,
+          "word_id": "hsk7_1036",
+          "meaning_vi": "lên men"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "奇妙",
+          "pinyin": "qímiào",
+          "hanviet": "Kì Diệu/kỳ Diệu",
+          "hsk": 7,
+          "word_id": "hsk7_3149",
+          "meaning_vi": "kỳ diệu, kỳ lạ"
+        },
+        {
+          "text": "魅力",
+          "pinyin": "mèilì",
+          "hanviet": "Mị Lực",
+          "hsk": 5,
+          "word_id": "hsk5_760",
+          "meaning_vi": "sức hấp dẫn, sự quyến rũ"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk4_204",
+    "hsk4_999",
+    "hsk4_363",
+    "hsk4_36",
+    "hsk7_2911"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Phô mai được phát hiện tình cờ từ hiện tượng nào?",
+      "options_vi": [
+        "Men rennet trong túi dạ dày cừu làm đông tụ sữa tươi",
+        "Sữa bị cháy khét trên lửa",
+        "Trộn sữa với giấm nuôi"
+      ],
+      "answer": 0,
+      "explanation_vi": "Túi đựng sữa làm bằng dạ dày động vật tiết ra men rennet tự nhiên làm đông sữa."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Ưu điểm lớn nhất của việc làm phô mai đối với người xưa là gì?",
+      "options_vi": [
+        "Bảo quản nguồn sữa tươi giàu dinh dưỡng lâu dài",
+        "Làm sữa đổi màu đen",
+        "Khiến sữa bốc cháy"
+      ],
+      "answer": 0,
+      "explanation_vi": "Phô mai giúp người chăn nuôi bảo quản sữa cả năm mà không bị ôi thiu."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Quá trình chính tạo nên hàng nghìn loại phô mai khác nhau là gì?",
+      "options_vi": [
+        "Lên men vi sinh vật",
+        "Nướng bánh lò vi sóng",
+        "Ướp đường mía"
+      ],
+      "answer": 0,
+      "explanation_vi": "Các chủng vi sinh vật và nấm mốc khác nhau tạo ra mùi vị và cấu trúc riêng cho từng loại phô mai."
+    }
+  ]
+}

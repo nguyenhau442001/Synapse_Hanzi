@@ -1,0 +1,865 @@
+{
+  "id": "wanwu_story_065",
+  "chapter_no": 65,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 4,
+  "book_page_start": 685,
+  "book_page_end": 691,
+  "page_display": "Trang 685 - 691",
+  "title": {
+    "zh": "腊赐：汉代始有年终奖",
+    "vi": "Lạp tứ: Thưởng tết nguyên đán thời Hán"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🧧",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_065.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_065.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 685 - 691 · Chế độ thưởng tết bằng tiền bạc, thịt bò, rượu ngon và tơ lụa của các vị hoàng đế dành cho quan lại.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "年终岁尾领取一笔丰厚的年终奖，是现代职场人一年中最期盼的欣喜时刻。",
+      "pinyin": "Niánzhōng-suìwěi lǐngqǔ yì bǐ fēnghòu de niánzhōngjiǎng, shì xiàndài zhíchǎngrén yì nián zhōng zuì qīpàn de xīnxǐ shíkè.",
+      "vi": "Cuối năm nhận một khoản tiền thưởng tết hậu hĩnh là khoảnh khắc người đi làm mong đợi nhất sau một năm vất vả.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "年终",
+          "pinyin": "niánzhōng",
+          "hanviet": "Niên Chung",
+          "hsk": 6,
+          "word_id": "hsk6_957",
+          "meaning_vi": "cuối năm"
+        },
+        {
+          "text": "岁尾",
+          "pinyin": "suì wěi",
+          "hanviet": "Tuế Vĩ"
+        },
+        {
+          "text": "领取",
+          "pinyin": "lǐngqǔ",
+          "hanviet": "Lãnh Thủ",
+          "hsk": 5,
+          "word_id": "hsk5_728",
+          "meaning_vi": "nhận, lĩnh (tiền, đồ, chứng chỉ)"
+        },
+        {
+          "text": "一笔",
+          "pinyin": "yī bǐ",
+          "hanviet": "Nhất Bút"
+        },
+        {
+          "text": "丰厚",
+          "pinyin": "fēnghòu",
+          "hanviet": "Phong Hậu",
+          "hsk": 7,
+          "word_id": "hsk7_1188",
+          "meaning_vi": "hậu hĩnh, dồi dào"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "年终奖",
+          "pinyin": "nián zhōng jiǎng",
+          "hanviet": "Niên Chung Thưởng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "现代",
+          "pinyin": "xiàndài",
+          "hanviet": "Hiện Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1239",
+          "meaning_vi": "hiện đại"
+        },
+        {
+          "text": "职场",
+          "pinyin": "zhíchǎng",
+          "hanviet": "Chức Tràng",
+          "hsk": 5,
+          "word_id": "hsk5_1503",
+          "meaning_vi": "chốn công sở, môi trường làm việc"
+        },
+        {
+          "text": "人",
+          "pinyin": "rén",
+          "hanviet": "Nhân",
+          "hsk": 1,
+          "word_id": "hsk1_243",
+          "meaning_vi": "người"
+        },
+        {
+          "text": "一年",
+          "pinyin": "yī nián",
+          "hanviet": "Nhất Niên"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "最",
+          "pinyin": "zuì",
+          "hanviet": "Tối",
+          "hsk": 2,
+          "word_id": "hsk2_498",
+          "meaning_vi": "nhất"
+        },
+        {
+          "text": "期盼",
+          "pinyin": "qīpàn",
+          "hanviet": "Kỳ Phán",
+          "hsk": 7,
+          "word_id": "hsk7_3143",
+          "meaning_vi": "mong mỏi; mong chờ; ngóng đợi"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "欣喜",
+          "pinyin": "xīnxǐ",
+          "hanviet": "Hân Hỷ",
+          "hsk": 7,
+          "word_id": "hsk7_4560",
+          "meaning_vi": "hân hoan; vui sướng; mừng rỡ"
+        },
+        {
+          "text": "时刻",
+          "pinyin": "shíkè",
+          "hanviet": "Thời Khắc",
+          "hsk": 5,
+          "word_id": "hsk5_1014",
+          "meaning_vi": "thời khắc, giây phút"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "其实早在两千多年前的东汉时期，朝廷就已经建立了制度化的年终奖励——‘腊赐’。",
+      "pinyin": "Qíshí zǎo zài liǎngqiān duō nián qián de Dōnghàn shíqī, cháotíng jiù yǐjīng jiànlì le zhìdùhuà de niánzhōng jiǎnglì——‘Làcì’.",
+      "vi": "Thực ra hơn hai ngàn năm trước thời Đông Hán, triều đình đã lập ra chế độ khen thưởng cuối năm quy củ gọi là 'Lạp tứ'.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "其实",
+          "pinyin": "qíshí",
+          "hanviet": "Kỳ Thật",
+          "hsk": 3,
+          "word_id": "hsk3_881",
+          "meaning_vi": "thực ra"
+        },
+        {
+          "text": "早",
+          "pinyin": "zǎo",
+          "hanviet": "Tảo",
+          "hsk": 1,
+          "word_id": "hsk1_602",
+          "meaning_vi": "sớm"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "两千多年",
+          "pinyin": "liǎng qiān duō nián",
+          "hanviet": "Lưỡng Thiên Đa Niên"
+        },
+        {
+          "text": "前",
+          "pinyin": "qián",
+          "hanviet": "Tiền",
+          "hsk": 1,
+          "word_id": "hsk1_558",
+          "meaning_vi": "trước"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "东汉时期",
+          "pinyin": "dōng hàn shí qī",
+          "hanviet": "Đông Hán Thời Kỳ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "朝廷",
+          "pinyin": "cháo tíng",
+          "hanviet": "Triều Đình"
+        },
+        {
+          "text": "就",
+          "pinyin": "jiù",
+          "hanviet": "Tựu",
+          "hsk": 2,
+          "word_id": "hsk2_376",
+          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)"
+        },
+        {
+          "text": "已经",
+          "pinyin": "yǐjīng",
+          "hanviet": "Dĩ Kinh",
+          "hsk": 2,
+          "word_id": "hsk2_472",
+          "meaning_vi": "đã"
+        },
+        {
+          "text": "建立",
+          "pinyin": "jiànlì",
+          "hanviet": "Kiến Lập",
+          "hsk": 5,
+          "word_id": "hsk5_575",
+          "meaning_vi": "xây dựng, kiến lập"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "制度化",
+          "pinyin": "zhì dù huà",
+          "hanviet": "Chế Độ Hoa"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "年终",
+          "pinyin": "niánzhōng",
+          "hanviet": "Niên Chung",
+          "hsk": 6,
+          "word_id": "hsk6_957",
+          "meaning_vi": "cuối năm"
+        },
+        {
+          "text": "奖励",
+          "pinyin": "jiǎnglì",
+          "hanviet": "Thưởng Lệ",
+          "hsk": 5,
+          "word_id": "hsk5_583",
+          "meaning_vi": "khen thưởng, phần thưởng"
+        },
+        {
+          "text": "—"
+        },
+        {
+          "text": "—"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "腊赐",
+          "pinyin": "là cì",
+          "hanviet": "Tịch Tứ"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "每逢岁末‘腊日’祭祀之后，皇帝会根据官员品级赏赐大量的钱币、牛肉、美酒以及上等丝绸。",
+      "pinyin": "Měiféng suìmò ‘Làrì’ jìsì zhīhòu, huángdì huì gēnjù guānyuán pǐnjí shǎngcì dàliàng de qiánbì, niúròu, měijiǔ yǐjí shàngděng sīchóu.",
+      "vi": "Mỗi dịp tế lễ cuối năm ngày Lạp Nhật, hoàng đế căn cứ phẩm hàm ban thưởng lượng lớn tiền tài, thịt bò, rượu ngon và lụa là.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "每逢",
+          "pinyin": "měi féng",
+          "hanviet": "Mỗi Phùng"
+        },
+        {
+          "text": "岁末",
+          "pinyin": "suì mò",
+          "hanviet": "Tuế Mạt"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "腊日",
+          "pinyin": "là rì",
+          "hanviet": "Tịch Nhật"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "祭祀",
+          "pinyin": "jìsì",
+          "hanviet": "Tế Tự",
+          "hsk": 7,
+          "word_id": "hsk7_1913",
+          "meaning_vi": "cúng tế, tế lễ, tế tự"
+        },
+        {
+          "text": "之后",
+          "pinyin": "zhīhòu",
+          "hanviet": "Chi Hậu",
+          "hsk": 4,
+          "word_id": "hsk4_941",
+          "meaning_vi": "sau, sau khi"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "皇帝",
+          "pinyin": "huángdì",
+          "hanviet": "Hoàng Đế",
+          "hsk": 6,
+          "word_id": "hsk6_582",
+          "meaning_vi": "hoàng đế"
+        },
+        {
+          "text": "会",
+          "pinyin": "huì",
+          "hanviet": "Hội",
+          "hsk": 1,
+          "word_id": "hsk1_43",
+          "meaning_vi": "biết, sẽ"
+        },
+        {
+          "text": "根据",
+          "pinyin": "gēnjù",
+          "hanviet": "Căn Cứ",
+          "hsk": 3,
+          "word_id": "hsk3_379",
+          "meaning_vi": "căn cứ, dựa theo"
+        },
+        {
+          "text": "官员",
+          "pinyin": "guānyuán",
+          "hanviet": "Quan Viên",
+          "hsk": 6,
+          "word_id": "hsk6_495",
+          "meaning_vi": "chính thức"
+        },
+        {
+          "text": "品级",
+          "pinyin": "pǐn jí",
+          "hanviet": "Phẩm Cấp"
+        },
+        {
+          "text": "赏赐",
+          "pinyin": "shǎng cì",
+          "hanviet": "Thưởng Tứ"
+        },
+        {
+          "text": "大量",
+          "pinyin": "dàliàng",
+          "hanviet": "Đại Lượng",
+          "hsk": 4,
+          "word_id": "hsk4_126",
+          "meaning_vi": "lượng lớn, nhiều"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "钱币",
+          "pinyin": "qián bì",
+          "hanviet": "Tiền Tệ"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "牛肉",
+          "pinyin": "niú ròu",
+          "hanviet": "Ngưu Nhục"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "美酒",
+          "pinyin": "měi jiǔ",
+          "hanviet": "Mỹ Tửu"
+        },
+        {
+          "text": "以及",
+          "pinyin": "yǐjí",
+          "hanviet": "Dĩ Cập",
+          "hsk": 5,
+          "word_id": "hsk5_1363",
+          "meaning_vi": "cùng với, và"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "等",
+          "pinyin": "děng",
+          "hanviet": "Đẳng",
+          "hsk": 2,
+          "word_id": "hsk2_20",
+          "meaning_vi": "đợi, chờ"
+        },
+        {
+          "text": "丝绸",
+          "pinyin": "sīchóu",
+          "hanviet": "Tơ Trù",
+          "hsk": 7,
+          "word_id": "hsk7_3844",
+          "meaning_vi": "lụa, tơ lụa"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "高级官员如大将军、三公所领取的腊赐极其丰厚，甚至超过了他们一整年的日常俸禄收入。",
+      "pinyin": "Gāojí guānyuán rú dàjiāngjūn, sāngōng suǒ lǐngqǔ de làcì jíqí fēnghòu, shènzhì chāoguò le tāmen yì zhěng nián de rìcháng fènglù shōurù.",
+      "vi": "Quan lại cấp cao như Đại tướng quân, Tam công nhận phần thưởng cực kỳ lớn, thậm chí vượt qua cả bổng lộc cả một năm.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "高级官员",
+          "pinyin": "gāo jí guān yuán",
+          "hanviet": "Cao Cấp Quan Viên"
+        },
+        {
+          "text": "如",
+          "pinyin": "rú",
+          "hanviet": "Như",
+          "hsk": 5,
+          "word_id": "hsk5_932",
+          "meaning_vi": "chẳng hạn như"
+        },
+        {
+          "text": "大将军",
+          "pinyin": "dà jiāng jūn",
+          "hanviet": "Đại Tướng Quân"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "三公",
+          "pinyin": "sān gōng",
+          "hanviet": "Tam Công"
+        },
+        {
+          "text": "所",
+          "pinyin": "sǔnshī",
+          "hanviet": "Tổn Thất",
+          "hsk": 5,
+          "word_id": "hsk5_1095",
+          "meaning_vi": "tổn thất, thiệt hại"
+        },
+        {
+          "text": "领取",
+          "pinyin": "lǐngqǔ",
+          "hanviet": "Lãnh Thủ",
+          "hsk": 5,
+          "word_id": "hsk5_728",
+          "meaning_vi": "nhận, lĩnh (tiền, đồ, chứng chỉ)"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "腊",
+          "pinyin": "là",
+          "hanviet": "Tịch"
+        },
+        {
+          "text": "赐",
+          "pinyin": "cì",
+          "hanviet": "Tứ",
+          "hsk": 7,
+          "word_id": "hsk7_663",
+          "meaning_vi": "ban cho, ban thưởng"
+        },
+        {
+          "text": "极其",
+          "pinyin": "jíqí",
+          "hanviet": "Cực Kì/cực Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_533",
+          "meaning_vi": "cực kỳ, hết sức"
+        },
+        {
+          "text": "丰厚",
+          "pinyin": "fēnghòu",
+          "hanviet": "Phong Hậu",
+          "hsk": 7,
+          "word_id": "hsk7_1188",
+          "meaning_vi": "hậu hĩnh, dồi dào"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "甚至",
+          "pinyin": "shènzhì",
+          "hanviet": "Thậm Chí",
+          "hsk": 4,
+          "word_id": "hsk4_645",
+          "meaning_vi": "thậm chí"
+        },
+        {
+          "text": "超过",
+          "pinyin": "chāoguò",
+          "hanviet": "Siêu Quá",
+          "hsk": 4,
+          "word_id": "hsk4_74",
+          "meaning_vi": "vượt qua"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "他们",
+          "pinyin": "tāmen",
+          "hanviet": "Tha Môn",
+          "hsk": 1,
+          "word_id": "hsk1_570",
+          "meaning_vi": "họ (đại từ)"
+        },
+        {
+          "text": "一",
+          "pinyin": "yī",
+          "hanviet": "Nhất",
+          "hsk": 1,
+          "word_id": "hsk1_360",
+          "meaning_vi": "một"
+        },
+        {
+          "text": "整年",
+          "pinyin": "zhěng nián",
+          "hanviet": "Chỉnh Niên"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "日常",
+          "pinyin": "rìcháng",
+          "hanviet": "Nhật Thường",
+          "hsk": 4,
+          "word_id": "hsk4_618",
+          "meaning_vi": "thường ngày, hàng ngày"
+        },
+        {
+          "text": "俸禄",
+          "pinyin": "fèng lù",
+          "hanviet": "Bổng Lộc"
+        },
+        {
+          "text": "收入",
+          "pinyin": "shōurù",
+          "hanviet": "Thu Nhập",
+          "hsk": 4,
+          "word_id": "hsk4_678",
+          "meaning_vi": "thu nhập"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "这项优厚待遇不仅体现了朝廷对百官辛劳的犒劳慰问，更在冬日里增添了阖家欢乐的年节温情。",
+      "pinyin": "Zhè xiàng yōuhòu dàiyù bùjǐn tǐxiàn le cháotíng duì bǎiguān xīnláo de kàoláo wèiwèn, gèng zài dōngrì lǐ zēngtiān le héjiā-huānlè de niánjié wēnqíng.",
+      "vi": "Chế độ đãi ngộ này không chỉ thể hiện sự thăm hỏi của hoàng cung mà còn mang đến không khí ấm áp sum vầy trong những ngày đông giá rét.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "这项",
+          "pinyin": "zhè xiàng",
+          "hanviet": "Giá Hạng"
+        },
+        {
+          "text": "优厚",
+          "pinyin": "yōu hòu",
+          "hanviet": "Ưu Hậu"
+        },
+        {
+          "text": "待遇",
+          "pinyin": "dàiyù",
+          "hanviet": "Đãi Ngộ",
+          "hsk": 5,
+          "word_id": "hsk5_237",
+          "meaning_vi": "đãi ngộ"
+        },
+        {
+          "text": "不仅",
+          "pinyin": "bùjǐn",
+          "hanviet": "Bất Cận",
+          "hsk": 4,
+          "word_id": "hsk4_55",
+          "meaning_vi": "không chỉ"
+        },
+        {
+          "text": "体现",
+          "pinyin": "tǐxiàn",
+          "hanviet": "Thể Hiện",
+          "hsk": 5,
+          "word_id": "hsk5_1121",
+          "meaning_vi": "thể hiện"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "朝廷",
+          "pinyin": "cháo tíng",
+          "hanviet": "Triều Đình"
+        },
+        {
+          "text": "对",
+          "pinyin": "duì",
+          "hanviet": "Đối",
+          "hsk": 1,
+          "word_id": "hsk1_79",
+          "meaning_vi": "đối với, hướng về (giới từ)"
+        },
+        {
+          "text": "百官",
+          "pinyin": "bǎi guān",
+          "hanviet": "Bách Quan"
+        },
+        {
+          "text": "辛劳",
+          "pinyin": "xīn láo",
+          "hanviet": "Tân Lao"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "犒劳",
+          "pinyin": "kào láo",
+          "hanviet": "Khao Lao"
+        },
+        {
+          "text": "慰问",
+          "pinyin": "wèiwèn",
+          "hanviet": "Uỷ Vấn",
+          "hsk": 7,
+          "word_id": "hsk7_4262",
+          "meaning_vi": "thăm hỏi, an ủi"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "更",
+          "pinyin": "gèng",
+          "hanviet": "Canh",
+          "hsk": 3,
+          "word_id": "hsk3_737",
+          "meaning_vi": "càng, hơn"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "冬日",
+          "pinyin": "dōng rì",
+          "hanviet": "Đông Nhật"
+        },
+        {
+          "text": "里",
+          "pinyin": "lǐ",
+          "hanviet": "Lý",
+          "hsk": 1,
+          "word_id": "hsk1_536",
+          "meaning_vi": "bên trong"
+        },
+        {
+          "text": "增添",
+          "pinyin": "zēngtiān",
+          "hanviet": "Tăng Thiêm",
+          "hsk": 7,
+          "word_id": "hsk7_5130",
+          "meaning_vi": "thêm vào, tô điểm thêm"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "阖家欢乐",
+          "pinyin": "hé jiā huān lè",
+          "hanviet": "Hạp Gia Hoan Lạc"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "年节",
+          "pinyin": "nián jié",
+          "hanviet": "Niên Tiết"
+        },
+        {
+          "text": "温情",
+          "pinyin": "wēn qíng",
+          "hanviet": "Ôn Tình"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk5_575",
+    "hsk5_1512",
+    "hsk3_379",
+    "hsk4_678",
+    "hsk6_957"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Chế độ thưởng tết 'Lạp tứ' (腊赐) được ghi chép quy củ đầu tiên vào triều đại nào?",
+      "options_vi": [
+        "Thời Đông Hán",
+        "Thời nhà Đường",
+        "Thời nhà Thanh"
+      ],
+      "answer": 0,
+      "explanation_vi": "Hậu Hán Thư ghi chép rất rõ về khoản thưởng 'Lạp tứ' cuối năm của triều đình Đông Hán."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Các vật phẩm thường được vua ban thưởng trong dịp Lạp tứ gồm những gì?",
+      "options_vi": [
+        "Tiền bạc, thịt bò, rượu ngon và gấm vóc lụa là",
+        "Bột mì mốc",
+        "Vỏ sò biển"
+      ],
+      "answer": 0,
+      "explanation_vi": "Quan chức nhận tiền đồng, bò ngon, rượu hảo hạng để ăn Tết sung túc."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Quy mô phần thưởng tết của các đại thần cấp cao thời Hán có giá trị ra sao?",
+      "options_vi": [
+        "Rất lớn, có thể bằng hoặc vượt lương bổng cả năm",
+        "Chỉ mang tính tượng trưng vài xu",
+        "Chỉ là một củ cải"
+      ],
+      "answer": 0,
+      "explanation_vi": "Đại thần hàng Tam công được thưởng tới 20 vạn tiền và hàng trăm cân thịt."
+    }
+  ]
+}

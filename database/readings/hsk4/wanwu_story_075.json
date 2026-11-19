@@ -1,0 +1,869 @@
+{
+  "id": "wanwu_story_075",
+  "chapter_no": 75,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 4,
+  "book_page_start": 772,
+  "book_page_end": 786,
+  "page_display": "Trang 772 - 786",
+  "title": {
+    "zh": "云南白药：“百宝丹”的配方传奇",
+    "vi": "Vân Nam Bạch Dược: Bí mật phương thuốc 'Bách Bảo Đan'"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "💊",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_075.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_075.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 772 - 786 · Phương thuốc thảo dược cầm máu thần kỳ do danh y Khúc Hoán Chương sáng chế năm 1902 cứu vạn sinh linh.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "云南白药是中国中医药宝库中享有盛誉的传世神药，具有止血愈伤、活血化瘀的奇特疗效。",
+      "pinyin": "Yúnnán Báiyào shì Zhōngguó zhōngyīyào bǎokù zhōng xiǎngyǒu shèngyù de chuánshì shényào, jùyǒu zhǐxuè yùshāng, huóxuè huàyū de qítè liáoxiào.",
+      "vi": "Vân Nam Bạch Dược là phương thuốc danh tiếng trong kho tàng đông y, có công hiệu thần kỳ cầm máu vết thương, tiêu sưng giảm đau.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "云南白药",
+          "pinyin": "yún nán bái yào",
+          "hanviet": "Vân Nam Bạch Dược"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "中医药",
+          "pinyin": "zhōng yī yào",
+          "hanviet": "Trung Y Dược"
+        },
+        {
+          "text": "宝库",
+          "pinyin": "bǎokù",
+          "hanviet": "Bảo Khố",
+          "hsk": 7,
+          "word_id": "hsk7_107",
+          "meaning_vi": "kho báu, kho tàng"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "享有盛誉",
+          "pinyin": "xiǎng yǒu shèng yù",
+          "hanviet": "Hưởng Hữu Thịnh Dự"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "传世",
+          "pinyin": "chuán shì",
+          "hanviet": "Truyền Thế"
+        },
+        {
+          "text": "神药",
+          "pinyin": "shén yào",
+          "hanviet": "Thần Dược"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "具有",
+          "pinyin": "jùyǒu",
+          "hanviet": "Cụ Hữu",
+          "hsk": 5,
+          "word_id": "hsk5_643",
+          "meaning_vi": "có"
+        },
+        {
+          "text": "止血",
+          "pinyin": "zhǐ xuè",
+          "hanviet": "Chỉ Huyết"
+        },
+        {
+          "text": "愈伤",
+          "pinyin": "yù shāng",
+          "hanviet": "Dũ Thương"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "活血化瘀",
+          "pinyin": "huó xuè huà yū",
+          "hanviet": "Hoạt Huyết Hoa Ứ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "奇特",
+          "pinyin": "qítè",
+          "hanviet": "Cơ Đặc",
+          "hsk": 7,
+          "word_id": "hsk7_3153",
+          "meaning_vi": "đặc biệt"
+        },
+        {
+          "text": "疗效",
+          "pinyin": "liáoxiào",
+          "hanviet": "Liệu Hiệu",
+          "hsk": 7,
+          "word_id": "hsk7_2603",
+          "meaning_vi": "hiệu quả điều trị"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "一九零二年，云南民间医师曲焕章历经多年艰辛跋涉，在深山采尝百草，研制出了神奇的‘曲焕章百宝丹’。",
+      "pinyin": "Yī-jiǔ-líng-èr nián, Yúnnán mínjiān yīshī Qū Huànzhāng lìjīng duō nián jiānxīn báshè, zài shēnshān cǎi cháng bǎicǎo, yánzhì chū le shénqí de ‘Qū Huànzhāng Bǎibǎodān’.",
+      "vi": "Năm 1902, thầy thuốc Khúc Hoán Chương qua nhiều năm lặn lội núi rừng nếm thử trăm cây cỏ, đã bào chế ra 'Khúc Hoán Chương Bách Bảo Đan'.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "一",
+          "pinyin": "yī",
+          "hanviet": "Nhất",
+          "hsk": 1,
+          "word_id": "hsk1_360",
+          "meaning_vi": "một"
+        },
+        {
+          "text": "九零",
+          "pinyin": "jiǔ líng",
+          "hanviet": "Cửu Linh"
+        },
+        {
+          "text": "二年",
+          "pinyin": "èr nián",
+          "hanviet": "Nhị Niên"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "云南",
+          "pinyin": "yún nán",
+          "hanviet": "Vân Nam"
+        },
+        {
+          "text": "民间",
+          "pinyin": "mínjiān",
+          "hanviet": "Dân Gian",
+          "hsk": 6,
+          "word_id": "hsk6_919",
+          "meaning_vi": "dân gian, trong dân chúng"
+        },
+        {
+          "text": "医师",
+          "pinyin": "yī shī",
+          "hanviet": "Y Sư"
+        },
+        {
+          "text": "曲焕章",
+          "pinyin": "qū huàn zhāng",
+          "hanviet": "Khúc Hoán Chương"
+        },
+        {
+          "text": "历经",
+          "pinyin": "lìjīng",
+          "hanviet": "Lịch Kinh",
+          "hsk": 6,
+          "word_id": "hsk6_839",
+          "meaning_vi": "trải qua, nếm trải qua (thử thách, năm tháng)"
+        },
+        {
+          "text": "多年",
+          "pinyin": "duō nián",
+          "hanviet": "Đa Niên"
+        },
+        {
+          "text": "艰辛",
+          "pinyin": "jiānxīn",
+          "hanviet": "Gian Tân",
+          "hsk": 6,
+          "word_id": "hsk6_648",
+          "meaning_vi": "gian nan vất vả, gian truân"
+        },
+        {
+          "text": "跋涉",
+          "pinyin": "bá shè",
+          "hanviet": "Bạt Thiệp"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "深山",
+          "pinyin": "shēn shān",
+          "hanviet": "Thâm Sơn"
+        },
+        {
+          "text": "采尝",
+          "pinyin": "cǎi cháng",
+          "hanviet": "Thái Thường"
+        },
+        {
+          "text": "百草",
+          "pinyin": "bǎi cǎo",
+          "hanviet": "Bách Thảo"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "研制",
+          "pinyin": "yánzhì",
+          "hanviet": "Nghiên Chế",
+          "hsk": 5,
+          "word_id": "hsk5_1329",
+          "meaning_vi": "nghiên cứu chế tạo, phát triển"
+        },
+        {
+          "text": "出",
+          "pinyin": "chū",
+          "hanviet": "Xuất",
+          "hsk": 2,
+          "word_id": "hsk2_316",
+          "meaning_vi": "ra, đi ra"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "神奇",
+          "pinyin": "shénqí",
+          "hanviet": "Thần Kì/thần Kỳ",
+          "hsk": 6,
+          "word_id": "hsk6_1167",
+          "meaning_vi": "thần kỳ, kỳ diệu"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "曲焕章",
+          "pinyin": "qū huàn zhāng",
+          "hanviet": "Khúc Hoán Chương"
+        },
+        {
+          "text": "百宝",
+          "pinyin": "bǎi bǎo",
+          "hanviet": "Bách Bảo"
+        },
+        {
+          "text": "丹",
+          "pinyin": "dān",
+          "hanviet": "Đan"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "无论多么严重的刀伤出血，敷上这种白色粉末便能立竿见影地止住流血并迅速愈合伤口。",
+      "pinyin": "Wúlùn duōme yánzhòng de dāoshāng chūxiě, fūshàng zhè zhǒng báisè fěnmò biàn néng lìgānjiànyǐng de zhǐzhù liúxiě bìng xùnsù yùhé shāngkǒu.",
+      "vi": "Dù vết thương chém chảy máu nghiêm trọng đến đâu, rắc thứ bột trắng này lên là lập tức cầm máu và nhanh chóng lành miệng.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "无论",
+          "pinyin": "wúlùn",
+          "hanviet": "Vô Luận",
+          "hsk": 4,
+          "word_id": "hsk4_784",
+          "meaning_vi": "bất luận, dù"
+        },
+        {
+          "text": "多么",
+          "pinyin": "duōme",
+          "hanviet": "Đa Ma",
+          "hsk": 4,
+          "word_id": "hsk4_180",
+          "meaning_vi": "biết bao, thế nào"
+        },
+        {
+          "text": "严重",
+          "pinyin": "yánzhòng",
+          "hanviet": "Nghiêm Trọng",
+          "hsk": 4,
+          "word_id": "hsk4_848",
+          "meaning_vi": "nghiêm trọng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "刀伤",
+          "pinyin": "dāo shāng",
+          "hanviet": "Đao Thương"
+        },
+        {
+          "text": "出血",
+          "pinyin": "chū xiě",
+          "hanviet": "Xuất Huyết"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "敷上",
+          "pinyin": "fū shàng",
+          "hanviet": "Phu Thướng"
+        },
+        {
+          "text": "这种",
+          "pinyin": "zhè zhǒng",
+          "hanviet": "Giá Chủng"
+        },
+        {
+          "text": "白色",
+          "pinyin": "báisè",
+          "hanviet": "Bạch Sắc",
+          "hsk": 2,
+          "word_id": "hsk2_303",
+          "meaning_vi": "trắng"
+        },
+        {
+          "text": "粉末",
+          "pinyin": "fěnmò",
+          "hanviet": "Phấn Mạt",
+          "hsk": 7,
+          "word_id": "hsk7_1167",
+          "meaning_vi": "bột, vụn mịn"
+        },
+        {
+          "text": "便",
+          "pinyin": "biàn",
+          "hanviet": "Tiện",
+          "hsk": 5,
+          "word_id": "hsk5_56",
+          "meaning_vi": "thì, liền (liên từ)"
+        },
+        {
+          "text": "能",
+          "pinyin": "néng",
+          "hanviet": "Năng",
+          "hsk": 1,
+          "word_id": "hsk1_212",
+          "meaning_vi": "có thể"
+        },
+        {
+          "text": "立竿见影",
+          "pinyin": "lì gān jiàn yǐng",
+          "hanviet": "Lập Can Kiến Ảnh"
+        },
+        {
+          "text": "地",
+          "pinyin": "de",
+          "hanviet": "Địa",
+          "hsk": 2,
+          "word_id": "hsk2_333",
+          "meaning_vi": "cách (trợ từ trạng ngữ)"
+        },
+        {
+          "text": "止住",
+          "pinyin": "zhǐ zhù",
+          "hanviet": "Chỉ Trú"
+        },
+        {
+          "text": "流血",
+          "pinyin": "liúxuè",
+          "hanviet": "Lưu Huyết",
+          "hsk": 7,
+          "word_id": "hsk7_2662",
+          "meaning_vi": "chảy máu, đổ máu"
+        },
+        {
+          "text": "并",
+          "pinyin": "bìng",
+          "hanviet": "Tinh",
+          "hsk": 4,
+          "word_id": "hsk4_39",
+          "meaning_vi": "và, đồng thời; hoàn toàn (không)"
+        },
+        {
+          "text": "迅速",
+          "pinyin": "xùnsù",
+          "hanviet": "Tấn Tốc",
+          "hsk": 5,
+          "word_id": "hsk5_1319",
+          "meaning_vi": "nhanh chóng"
+        },
+        {
+          "text": "愈合",
+          "pinyin": "yùhé",
+          "hanviet": "Dũ Cáp",
+          "hsk": 7,
+          "word_id": "hsk7_5019",
+          "meaning_vi": "lành miệng, khép miệng (vết thương)"
+        },
+        {
+          "text": "伤口",
+          "pinyin": "shāngkǒu",
+          "hanviet": "Thương Khẩu",
+          "hsk": 6,
+          "word_id": "hsk6_1144",
+          "meaning_vi": "vết thương"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "抗日战争期间的台儿庄战役中，数万瓶百宝丹紧急运往前线救治伤员，拯救了大量抗日将士的生命。",
+      "pinyin": "Kàngrì zhànzhēng qījiān de Tái'érzhuāng zhànyì zhōng, shùwànpíng bǎibǎodān jǐnjí yùnqián wǎng qiánxiàn jiùzhì shāngyuán, zhěngjiù le dàliàng kàngrì jiàngshì de shēngmìng.",
+      "vi": "Trong trận Đài Nhi Trang thời kháng chiến, hàng vạn lọ Bách Bảo Đan đã được khẩn cấp đưa ra mặt trận cứu sống vô số thương binh.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "抗日战争",
+          "pinyin": "kàng rì zhàn zhēng",
+          "hanviet": "Kháng Nhật Chiến Tranh"
+        },
+        {
+          "text": "期间",
+          "pinyin": "qījiān",
+          "hanviet": "Kỳ Gian",
+          "hsk": 5,
+          "word_id": "hsk5_851",
+          "meaning_vi": "thời gian, khoảng thời gian"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "台儿庄",
+          "pinyin": "tái ér zhuāng",
+          "hanviet": "Đài Nhi Trang"
+        },
+        {
+          "text": "战役",
+          "pinyin": "zhànyì",
+          "hanviet": "Chiến Dịch",
+          "hsk": 7,
+          "word_id": "hsk7_5162",
+          "meaning_vi": "chiến dịch (quân sự)"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "数万",
+          "pinyin": "shù wàn",
+          "hanviet": "Sổ Mặc"
+        },
+        {
+          "text": "瓶",
+          "pinyin": "píng",
+          "hanviet": "Bình"
+        },
+        {
+          "text": "百宝",
+          "pinyin": "bǎi bǎo",
+          "hanviet": "Bách Bảo"
+        },
+        {
+          "text": "丹",
+          "pinyin": "dān",
+          "hanviet": "Đan"
+        },
+        {
+          "text": "紧急",
+          "pinyin": "jǐnjí",
+          "hanviet": "Khẩn Cấp",
+          "hsk": 5,
+          "word_id": "hsk5_608",
+          "meaning_vi": "cấp bách, khẩn cấp"
+        },
+        {
+          "text": "运往",
+          "pinyin": "yùn wǎng",
+          "hanviet": "Vận Vãng"
+        },
+        {
+          "text": "前线",
+          "pinyin": "qiánxiàn",
+          "hanviet": "Tiền Tuyến",
+          "hsk": 7,
+          "word_id": "hsk7_3234",
+          "meaning_vi": "tiền tuyến; tuyến đầu"
+        },
+        {
+          "text": "救治",
+          "pinyin": "jiùzhì",
+          "hanviet": "Cứu Trị",
+          "hsk": 7,
+          "word_id": "hsk7_2238",
+          "meaning_vi": "cứu chữa, cấp cứu điều trị"
+        },
+        {
+          "text": "伤员",
+          "pinyin": "shāngyuán",
+          "hanviet": "Thương Viên",
+          "hsk": 6,
+          "word_id": "hsk6_1146",
+          "meaning_vi": "bị thương"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "拯救",
+          "pinyin": "zhěngjiù",
+          "hanviet": "Chửng Cứu",
+          "hsk": 7,
+          "word_id": "hsk7_5258",
+          "meaning_vi": "giải cứu, cứu rỗi, cứu thoát"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "大量",
+          "pinyin": "dàliàng",
+          "hanviet": "Đại Lượng",
+          "hsk": 4,
+          "word_id": "hsk4_126",
+          "meaning_vi": "lượng lớn, nhiều"
+        },
+        {
+          "text": "抗日",
+          "pinyin": "kàng rì",
+          "hanviet": "Kháng Nhật"
+        },
+        {
+          "text": "将士",
+          "pinyin": "jiàng shì",
+          "hanviet": "Tướng Sĩ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "生命",
+          "pinyin": "shēngmìng",
+          "hanviet": "Sinh Mệnh",
+          "hsk": 4,
+          "word_id": "hsk4_648",
+          "meaning_vi": "sinh mệnh, sự sống"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "新中国成立后，曲氏家族无私献出秘方，国家将其列为绝密级中药保护品种，造福着亿万百姓。",
+      "pinyin": "Xīn Zhōngguó chénglì hòu, Qū shì jiāzú wúsī xiànchū mìfāng, guójiā jiāng qí liè wéi juémìjí zhōngyào bǎohù pǐnzhǒng, zàofú zhe yìwàn bǎixìng.",
+      "vi": "Gia tộc họ Khúc sau đó đã hiến tặng phương thuốc cho quốc gia, được đưa vào danh mục bảo mật cấp quốc gia bảo vệ sức khỏe nhân dân.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "新",
+          "pinyin": "xīn",
+          "hanviet": "Tân",
+          "hsk": 1,
+          "word_id": "hsk1_344",
+          "meaning_vi": "mới"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "成立",
+          "pinyin": "chénglì",
+          "hanviet": "Thành Lập",
+          "hsk": 5,
+          "word_id": "hsk5_142",
+          "meaning_vi": "thành lập"
+        },
+        {
+          "text": "后",
+          "pinyin": "hòu",
+          "hanviet": "Hậu",
+          "hsk": 1,
+          "word_id": "hsk1_524",
+          "meaning_vi": "sau"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "曲氏",
+          "pinyin": "qū shì",
+          "hanviet": "Khúc Thị"
+        },
+        {
+          "text": "家族",
+          "pinyin": "jiāzú",
+          "hanviet": "Gia Tộc",
+          "hsk": 7,
+          "word_id": "hsk7_1936",
+          "meaning_vi": "gia đình"
+        },
+        {
+          "text": "无私",
+          "pinyin": "wúsī",
+          "hanviet": "Vô Tư",
+          "hsk": 7,
+          "word_id": "hsk7_4328",
+          "meaning_vi": "vô tư; chí công vô tư; không vụ lợi"
+        },
+        {
+          "text": "献出",
+          "pinyin": "xiàn chū",
+          "hanviet": "Hiến Xuất"
+        },
+        {
+          "text": "秘方",
+          "pinyin": "mìfāng",
+          "hanviet": "Bí Phương",
+          "hsk": 7,
+          "word_id": "hsk7_2801",
+          "meaning_vi": "phương thuốc bí truyền, bí phương"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "国家",
+          "pinyin": "guójiā",
+          "hanviet": "Quốc Gia",
+          "hsk": 3,
+          "word_id": "hsk3_749",
+          "meaning_vi": "quốc gia"
+        },
+        {
+          "text": "将",
+          "pinyin": "jiāng",
+          "hanviet": "Tương",
+          "hsk": 4,
+          "word_id": "hsk4_356",
+          "meaning_vi": "sẽ; đem, lấy (như 把)"
+        },
+        {
+          "text": "其",
+          "pinyin": "qí",
+          "hanviet": "Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_853",
+          "meaning_vi": "của nó, của họ; trong đó"
+        },
+        {
+          "text": "列为",
+          "pinyin": "liè wèi",
+          "hanviet": "Liệt Vi"
+        },
+        {
+          "text": "绝密级",
+          "pinyin": "jué mì jí",
+          "hanviet": "Tuyệt Mật Cấp"
+        },
+        {
+          "text": "中药",
+          "pinyin": "zhōngyào",
+          "hanviet": "Trung Dược",
+          "hsk": 5,
+          "word_id": "hsk5_1527",
+          "meaning_vi": "thuốc đông y, thuốc bắc"
+        },
+        {
+          "text": "保护",
+          "pinyin": "bǎohù",
+          "hanviet": "Bảo Hộ",
+          "hsk": 4,
+          "word_id": "hsk4_14",
+          "meaning_vi": "bảo vệ"
+        },
+        {
+          "text": "品种",
+          "pinyin": "pǐnzhǒng",
+          "hanviet": "Phẩm Chủng",
+          "hsk": 5,
+          "word_id": "hsk5_835",
+          "meaning_vi": "chủng loại, giống loài"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "造福",
+          "pinyin": "zàofú",
+          "hanviet": "Tạo Phúc",
+          "hsk": 7,
+          "word_id": "hsk7_5119",
+          "meaning_vi": "tạo phúc, mang lại lợi ích cho"
+        },
+        {
+          "text": "着",
+          "pinyin": "zhe",
+          "hanviet": "Trước",
+          "hsk": 2,
+          "word_id": "hsk2_490",
+          "meaning_vi": "đang (trợ từ)"
+        },
+        {
+          "text": "亿万",
+          "pinyin": "yìwàn",
+          "hanviet": "Ức Mặc",
+          "hsk": 7,
+          "word_id": "hsk7_4883",
+          "meaning_vi": "hàng trăm triệu, ức vạn"
+        },
+        {
+          "text": "百姓",
+          "pinyin": "bǎi xìng",
+          "hanviet": "Bách Tính"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk2_374",
+    "hsk4_848",
+    "hsk4_648",
+    "hsk4_14"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Vân Nam Bạch Dược do danh y nào sáng chế vào năm 1902?",
+      "options_vi": [
+        "Khúc Hoán Chương (曲焕章)",
+        "Lý Thời Trân",
+        "Hoa Đà"
+      ],
+      "answer": 0,
+      "explanation_vi": "Thầy thuốc Khúc Hoán Chương là người sáng chế ra phương thuốc Bách Bảo Đan tại Vân Nam."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Công hiệu nổi tiếng nhất của Vân Nam Bạch Dược là gì?",
+      "options_vi": [
+        "Cầm máu nhanh chóng, tiêu viêm giảm đau và mau liền sẹo",
+        "Làm sáng mắt ban đêm",
+        "Chữa rụng tóc"
+      ],
+      "answer": 0,
+      "explanation_vi": "Bạch Dược có khả năng cầm máu và làm lành các vết thương chảy máu cực kỳ thần tốc."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Trong kháng chiến, thuốc này đã lập công lớn cứu chữa binh sĩ ở chiến dịch lịch sử nào?",
+      "options_vi": [
+        "Chiến dịch Đài Nhi Trang (台儿庄战役)",
+        "Trận Xích Bích",
+        "Trận Trường Bình"
+      ],
+      "answer": 0,
+      "explanation_vi": "Hàng vạn lọ thuốc gửi ra chiến trường Đài Nhi Trang đã cứu sống rất nhiều thương binh."
+    }
+  ]
+}

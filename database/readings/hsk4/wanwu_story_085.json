@@ -1,0 +1,961 @@
+{
+  "id": "wanwu_story_085",
+  "chapter_no": 85,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 4,
+  "book_page_start": 862,
+  "book_page_end": 875,
+  "page_display": "Trang 862 - 875",
+  "title": {
+    "zh": "和亲：公主琵琶忧怨多",
+    "vi": "Hòa thân: Tiếng đàn tỳ bà của công chúa nơi biên cương"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🪕",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_085.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_085.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 862 - 875 · Chính sách gả công chúa cầu hòa của các vương triều và hành trình vượt quan ải của nàng Vương Chiêu Quân.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "在中国古代长达两千多年的边疆交往中，‘和亲’是一项通过联姻来换取边境和平的重要政治外交手段。",
+      "pinyin": "Zài Zhōngguó gǔdài cháng dá liǎngqiān duō nián de biānjiāng jiāowǎng zhōng, ‘héqīn’ shì yí xiàng tōngguò liányīn lái huànqǔ biānjìng hépíng de zhòngyào zhèngzhì wàijiāo shǒuduàn.",
+      "vi": "Suốt hơn hai ngàn năm bang giao biên cương, 'Hòa thân' là thủ đoạn ngoại giao quan trọng dùng hôn nhân đổi lấy hòa bình biên giới.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "长",
+          "pinyin": "cháng",
+          "hanviet": "Trường",
+          "hsk": 2,
+          "word_id": "hsk2_314",
+          "meaning_vi": "dài"
+        },
+        {
+          "text": "达",
+          "pinyin": "dá",
+          "hanviet": "Đạt"
+        },
+        {
+          "text": "两千多年",
+          "pinyin": "liǎng qiān duō nián",
+          "hanviet": "Lưỡng Thiên Đa Niên"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "边疆",
+          "pinyin": "biānjiāng",
+          "hanviet": "Biên Cương",
+          "hsk": 7,
+          "word_id": "hsk7_197",
+          "meaning_vi": "biên cương"
+        },
+        {
+          "text": "交往",
+          "pinyin": "jiāowǎng",
+          "hanviet": "Giao Vãng",
+          "hsk": 5,
+          "word_id": "hsk5_589",
+          "meaning_vi": "giao tiếp, qua lại"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "和亲",
+          "pinyin": "hé qīn",
+          "hanviet": "Hoà Thân"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "一项",
+          "pinyin": "yī xiàng",
+          "hanviet": "Nhất Hạng"
+        },
+        {
+          "text": "通过",
+          "pinyin": "tōngguò",
+          "hanviet": "Thông Qua",
+          "hsk": 4,
+          "word_id": "hsk4_744",
+          "meaning_vi": "thông qua"
+        },
+        {
+          "text": "联姻",
+          "pinyin": "lián yīn",
+          "hanviet": "Liên Nhân"
+        },
+        {
+          "text": "来",
+          "pinyin": "lái",
+          "hanviet": "Lai",
+          "hsk": 1,
+          "word_id": "hsk1_533",
+          "meaning_vi": "đến, tới"
+        },
+        {
+          "text": "换取",
+          "pinyin": "huànqǔ",
+          "hanviet": "Hoán Thủ",
+          "hsk": 7,
+          "word_id": "hsk7_1753",
+          "meaning_vi": "đổi lấy, đánh đổi"
+        },
+        {
+          "text": "边境",
+          "pinyin": "biānjìng",
+          "hanviet": "Biên Cảnh",
+          "hsk": 7,
+          "word_id": "hsk7_199",
+          "meaning_vi": "vùng biên giới"
+        },
+        {
+          "text": "和平",
+          "pinyin": "hépíng",
+          "hanviet": "Hòa Bình",
+          "hsk": 6,
+          "word_id": "hsk6_540",
+          "meaning_vi": "hòa bình"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "重要",
+          "pinyin": "zhòngyào",
+          "hanviet": "Trọng Yếu",
+          "hsk": 3,
+          "word_id": "hsk3_1064",
+          "meaning_vi": "quan trọng"
+        },
+        {
+          "text": "政治",
+          "pinyin": "zhèngzhì",
+          "hanviet": "Chính Trị",
+          "hsk": 5,
+          "word_id": "hsk5_1498",
+          "meaning_vi": "chính trị"
+        },
+        {
+          "text": "外交",
+          "pinyin": "wàijiāo",
+          "hanviet": "Ngoại Giao",
+          "hsk": 6,
+          "word_id": "hsk6_1352",
+          "meaning_vi": "ngoại giao"
+        },
+        {
+          "text": "手段",
+          "pinyin": "shǒuduàn",
+          "hanviet": "Thủ Đoạn",
+          "hsk": 5,
+          "word_id": "hsk5_1048",
+          "meaning_vi": "có nghĩa là"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "西汉建国初期国力孱弱，汉高祖刘邦在平城受困后，不得不开启了向北方匈奴和亲结盟的先例。",
+      "pinyin": "Xīhàn jiànguó chūqī guólì chánruò, Hàn Gāozǔ Liú Bāng zài Píngchéng shòukùn hòu, bùdébù kāiqǐ le xiàng běifāng Xiōngnú héqīn jiéméng de xiānlì.",
+      "vi": "Đầu thời Tây Hán thực lực còn non yếu, Hán Cao Tổ sau khi bị vây ở Bình Thành buộc phải mở đầu tiền lệ gả con gái cầu hòa với Hung Nô.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "西汉",
+          "pinyin": "xī hàn",
+          "hanviet": "Tây Hán"
+        },
+        {
+          "text": "建国初期",
+          "pinyin": "jiàn guó chū qī",
+          "hanviet": "Kiến Quốc Sơ Kỳ"
+        },
+        {
+          "text": "国力",
+          "pinyin": "guó lì",
+          "hanviet": "Quốc Lực"
+        },
+        {
+          "text": "孱弱",
+          "pinyin": "chán ruò",
+          "hanviet": "Sàn Nhược"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "汉高祖",
+          "pinyin": "hàn gāo zǔ",
+          "hanviet": "Hán Cao Tổ"
+        },
+        {
+          "text": "刘邦",
+          "pinyin": "liú bāng",
+          "hanviet": "Lưu Bang"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "平城",
+          "pinyin": "píng chéng",
+          "hanviet": "Bình Thành"
+        },
+        {
+          "text": "受困",
+          "pinyin": "shòu kùn",
+          "hanviet": "Thọ Khốn"
+        },
+        {
+          "text": "后",
+          "pinyin": "hòu",
+          "hanviet": "Hậu",
+          "hsk": 1,
+          "word_id": "hsk1_524",
+          "meaning_vi": "sau"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "不得不",
+          "pinyin": "bùdébù",
+          "hanviet": "Bất Đắc Bất",
+          "hsk": 4,
+          "word_id": "hsk4_51",
+          "meaning_vi": "không thể không, buộc phải"
+        },
+        {
+          "text": "开启",
+          "pinyin": "kāiqǐ",
+          "hanviet": "Khai Khởi",
+          "hsk": 6,
+          "word_id": "hsk6_763",
+          "meaning_vi": "mở ra, khởi đầu (kỷ nguyên mới, hành trình mới)"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "向",
+          "pinyin": "xiàng",
+          "hanviet": "Hướng",
+          "hsk": 3,
+          "word_id": "hsk3_973",
+          "meaning_vi": "hướng về, về phía"
+        },
+        {
+          "text": "北方",
+          "pinyin": "běifāng",
+          "hanviet": "Bắc Phương",
+          "hsk": 3,
+          "word_id": "hsk3_618",
+          "meaning_vi": "phía bắc"
+        },
+        {
+          "text": "匈奴",
+          "pinyin": "xiōng nú",
+          "hanviet": "Hung Nô"
+        },
+        {
+          "text": "和亲",
+          "pinyin": "hé qīn",
+          "hanviet": "Hoà Thân"
+        },
+        {
+          "text": "结盟",
+          "pinyin": "jié méng",
+          "hanviet": "Kết Minh"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "先例",
+          "pinyin": "xiānlì",
+          "hanviet": "Tiên Lệ",
+          "hsk": 7,
+          "word_id": "hsk7_4430",
+          "meaning_vi": "tiền lệ"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "汉元帝时期，美丽聪慧的宫女王昭君自愿请缨远嫁匈奴呼韩邪单于，成就了流芳百世的‘昭君出塞’佳话。",
+      "pinyin": "Hàn Yuándì shíqī, měilì cōnghuì de gōngnǚ Wáng Zhāojūn zìyuàn qǐngyīng yuǎnjià Xiōngnú Hūhánxié Chányú, chéngjiù le liúfāng-bǎishì de ‘Zhāojūn chūsài’ jiāhuà.",
+      "vi": "Thời Hán Nguyên Đế, nàng cung nữ xinh đẹp tài ba Vương Chiêu Quân đã tình nguyện gả đi xa cho Thiền Vu Hung Nô, lập nên giai thoại 'Chiêu Quân xuất tái'.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "汉元帝",
+          "pinyin": "hàn yuán dì",
+          "hanviet": "Hán Nguyên Đế"
+        },
+        {
+          "text": "时期",
+          "pinyin": "shíqī",
+          "hanviet": "Thời Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_1016",
+          "meaning_vi": "thời kỳ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "美丽",
+          "pinyin": "měilì",
+          "hanviet": "Mỹ Lệ",
+          "hsk": 4,
+          "word_id": "hsk4_503",
+          "meaning_vi": "xinh đẹp"
+        },
+        {
+          "text": "聪慧",
+          "pinyin": "cōng huì",
+          "hanviet": "Thông Tuệ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "宫女",
+          "pinyin": "gōng nǚ",
+          "hanviet": "Cung Nữ"
+        },
+        {
+          "text": "王昭君",
+          "pinyin": "wáng zhāo jūn",
+          "hanviet": "Vương Chiêu Quân"
+        },
+        {
+          "text": "自愿",
+          "pinyin": "zìyuàn",
+          "hanviet": "Tự Nguyện",
+          "hsk": 6,
+          "word_id": "hsk6_1784",
+          "meaning_vi": "tự nguyện"
+        },
+        {
+          "text": "请缨",
+          "pinyin": "qǐng yīng",
+          "hanviet": "Thỉnh Anh"
+        },
+        {
+          "text": "远嫁",
+          "pinyin": "yuǎn jià",
+          "hanviet": "Viễn Giá"
+        },
+        {
+          "text": "匈奴",
+          "pinyin": "xiōng nú",
+          "hanviet": "Hung Nô"
+        },
+        {
+          "text": "呼韩邪",
+          "pinyin": "hū hán xié",
+          "hanviet": "Hô Hàn Tà"
+        },
+        {
+          "text": "单于",
+          "pinyin": "chán yú",
+          "hanviet": "Thiện Vu"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "成就",
+          "pinyin": "chéngjiù",
+          "hanviet": "Thành Tựu",
+          "hsk": 5,
+          "word_id": "hsk5_141",
+          "meaning_vi": "thành tựu"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "流芳百世",
+          "pinyin": "liú fāng bǎi shì",
+          "hanviet": "Lưu Phương Bách Thế"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "昭君",
+          "pinyin": "zhāo jūn",
+          "hanviet": "Chiêu Quân"
+        },
+        {
+          "text": "出塞",
+          "pinyin": "chū sài",
+          "hanviet": "Xuất Tắc"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "佳话",
+          "pinyin": "jiā huà",
+          "hanviet": "Giai Thoại"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "昭君出塞不仅带来了北方边境长达数十年的和平安定与贸易往来，更将中原先进的耕作技术与文化传播到了广阔草原。",
+      "pinyin": "Zhāojūn chūsài bùjǐn dàilái le běifāng biānjìng cháng dá shùshí nián de hépíng āndìng yǔ màoyì wǎnglái, gèng jiāng zhōngyuán xiānjìn de gēngzuò jìshù yǔ wénhuà chuánbō dào le guǎngkuò cǎoyuán.",
+      "vi": "Chiêu Quân đi cống hồ mang lại hòa bình và giao thương suốt nhiều thập kỷ cho biên cương, truyền bá kỹ thuật canh tác và văn hóa Trung Nguyên lên thảo nguyên.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "昭君",
+          "pinyin": "zhāo jūn",
+          "hanviet": "Chiêu Quân"
+        },
+        {
+          "text": "出塞",
+          "pinyin": "chū sài",
+          "hanviet": "Xuất Tắc"
+        },
+        {
+          "text": "不仅",
+          "pinyin": "bùjǐn",
+          "hanviet": "Bất Cận",
+          "hsk": 4,
+          "word_id": "hsk4_55",
+          "meaning_vi": "không chỉ"
+        },
+        {
+          "text": "带来",
+          "pinyin": "dài lái",
+          "hanviet": "Đới Lai"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "北方",
+          "pinyin": "běifāng",
+          "hanviet": "Bắc Phương",
+          "hsk": 3,
+          "word_id": "hsk3_618",
+          "meaning_vi": "phía bắc"
+        },
+        {
+          "text": "边境",
+          "pinyin": "biānjìng",
+          "hanviet": "Biên Cảnh",
+          "hsk": 7,
+          "word_id": "hsk7_199",
+          "meaning_vi": "vùng biên giới"
+        },
+        {
+          "text": "长",
+          "pinyin": "cháng",
+          "hanviet": "Trường",
+          "hsk": 2,
+          "word_id": "hsk2_314",
+          "meaning_vi": "dài"
+        },
+        {
+          "text": "达",
+          "pinyin": "dá",
+          "hanviet": "Đạt"
+        },
+        {
+          "text": "数十年",
+          "pinyin": "shù shí nián",
+          "hanviet": "Sổ Thập Niên"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "和平",
+          "pinyin": "hépíng",
+          "hanviet": "Hòa Bình",
+          "hsk": 6,
+          "word_id": "hsk6_540",
+          "meaning_vi": "hòa bình"
+        },
+        {
+          "text": "安定",
+          "pinyin": "āndìng",
+          "hanviet": "An Định",
+          "hsk": 7,
+          "word_id": "hsk7_14",
+          "meaning_vi": "an định, ổn định, yên lòng"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "贸易往来",
+          "pinyin": "mào yì wǎng lái",
+          "hanviet": "Mậu Dịch Vãng Lai"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "更",
+          "pinyin": "gèng",
+          "hanviet": "Canh",
+          "hsk": 3,
+          "word_id": "hsk3_737",
+          "meaning_vi": "càng, hơn"
+        },
+        {
+          "text": "将",
+          "pinyin": "jiāng",
+          "hanviet": "Tương",
+          "hsk": 4,
+          "word_id": "hsk4_356",
+          "meaning_vi": "sẽ; đem, lấy (như 把)"
+        },
+        {
+          "text": "中原",
+          "pinyin": "zhōng yuán",
+          "hanviet": "Trung Nguyên"
+        },
+        {
+          "text": "先进",
+          "pinyin": "xiānjìn",
+          "hanviet": "Tiên Tiến",
+          "hsk": 5,
+          "word_id": "hsk5_1232",
+          "meaning_vi": "tiên tiến"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "耕作",
+          "pinyin": "gēng zuò",
+          "hanviet": "Canh Tác"
+        },
+        {
+          "text": "技术",
+          "pinyin": "jìshù",
+          "hanviet": "Kĩ Thuật/kỹ Thuật",
+          "hsk": 4,
+          "word_id": "hsk4_331",
+          "meaning_vi": "kỹ thuật"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "文化",
+          "pinyin": "wénhuà",
+          "hanviet": "Văn Hóa",
+          "hsk": 3,
+          "word_id": "hsk3_957",
+          "meaning_vi": "văn hóa"
+        },
+        {
+          "text": "传播",
+          "pinyin": "chuánbō",
+          "hanviet": "Truyền Bá",
+          "hsk": 5,
+          "word_id": "hsk5_184",
+          "meaning_vi": "truyền bá, lan truyền"
+        },
+        {
+          "text": "到",
+          "pinyin": "dào",
+          "hanviet": "Đáo",
+          "hsk": 1,
+          "word_id": "hsk1_59",
+          "meaning_vi": "đến"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "广阔",
+          "pinyin": "guǎngkuò",
+          "hanviet": "Nghiễm Khoát",
+          "hsk": 6,
+          "word_id": "hsk6_498",
+          "meaning_vi": "rộng lớn, bao la, bát ngát"
+        },
+        {
+          "text": "草原",
+          "pinyin": "cǎoyuán",
+          "hanviet": "Thảo Nguyên",
+          "hsk": 6,
+          "word_id": "hsk6_110",
+          "meaning_vi": "đồng cỏ"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "背井离乡的公主们怀抱琵琶北上，用柔弱的双肩承担起家国安宁的重任，值得后人永远铭记与赞颂。",
+      "pinyin": "Bèijǐng-líxiāng de gōngzhǔmen huáibào pípá běishàng, yòng róuruò de shuāngjiān chéngdān qǐ jiāguó ānníng de zhòngrèn, zhíde hòurén yǒngyuǎn míngjì yǔ zànsòng.",
+      "vi": "Những người con gái rời xa quê cha đất mẹ ôm đàn tỳ bà lên đường, gánh trên vai trọng trách non sông, xứng đáng được hậu thế đời đời ghi nhớ.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "背井离乡",
+          "pinyin": "bèi jǐng lí xiāng",
+          "hanviet": "Bối Tỉnh Ly Hương"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "公主",
+          "pinyin": "gōngzhǔ",
+          "hanviet": "Công Chủ",
+          "hsk": 6,
+          "word_id": "hsk6_468",
+          "meaning_vi": "công chúa"
+        },
+        {
+          "text": "们",
+          "pinyin": "men",
+          "hanviet": "Môn",
+          "hsk": 1,
+          "word_id": "hsk1_538",
+          "meaning_vi": "họ (hậu tố)"
+        },
+        {
+          "text": "怀抱",
+          "pinyin": "huáibào",
+          "hanviet": "Hoài Bão",
+          "hsk": 7,
+          "word_id": "hsk7_1738",
+          "meaning_vi": "vòng tay, lòng mẹ"
+        },
+        {
+          "text": "琵琶",
+          "pinyin": "pí pá",
+          "hanviet": "Tỳ Bà"
+        },
+        {
+          "text": "北上",
+          "pinyin": "běi shàng",
+          "hanviet": "Bắc Thướng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "用",
+          "pinyin": "yòng",
+          "hanviet": "Dụng",
+          "hsk": 3,
+          "word_id": "hsk3_1020",
+          "meaning_vi": "dùng"
+        },
+        {
+          "text": "柔弱",
+          "pinyin": "róu ruò",
+          "hanviet": "Nhu Nhược"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "双肩",
+          "pinyin": "shuāng jiān",
+          "hanviet": "Song Kiên"
+        },
+        {
+          "text": "承担",
+          "pinyin": "chéngdān",
+          "hanviet": "Thừa Đảm",
+          "hsk": 5,
+          "word_id": "hsk5_137",
+          "meaning_vi": "đảm nhận, chịu trách nhiệm"
+        },
+        {
+          "text": "起家",
+          "pinyin": "qǐ jiā",
+          "hanviet": "Khởi Gia"
+        },
+        {
+          "text": "国",
+          "pinyin": "guó",
+          "hanviet": "Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_518",
+          "meaning_vi": "đất nước"
+        },
+        {
+          "text": "安宁",
+          "pinyin": "ānníng",
+          "hanviet": "An Ninh",
+          "hsk": 7,
+          "word_id": "hsk7_17",
+          "meaning_vi": "yên bình, thanh bình"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "重任",
+          "pinyin": "zhòngrèn",
+          "hanviet": "Trọng Nhâm",
+          "hsk": 7,
+          "word_id": "hsk7_5376",
+          "meaning_vi": "trọng trách, nhiệm vụ nặng nề"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "值得",
+          "pinyin": "zhídé",
+          "hanviet": "Trị Đắc",
+          "hsk": 4,
+          "word_id": "hsk4_947",
+          "meaning_vi": "đáng, xứng đáng"
+        },
+        {
+          "text": "后人",
+          "pinyin": "hòurén",
+          "hanviet": "Hậu Nhân",
+          "hsk": 6,
+          "word_id": "hsk6_554",
+          "meaning_vi": "con cháu, thế hệ sau, hậu nhân"
+        },
+        {
+          "text": "永远",
+          "pinyin": "yǒngyuǎn",
+          "hanviet": "Vĩnh Viễn",
+          "hsk": 4,
+          "word_id": "hsk4_878",
+          "meaning_vi": "vĩnh viễn, mãi mãi"
+        },
+        {
+          "text": "铭记",
+          "pinyin": "míngjì",
+          "hanviet": "Minh Ký",
+          "hsk": 7,
+          "word_id": "hsk7_2842",
+          "meaning_vi": "khắc ghi; ghi nhớ sâu sắc"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "赞颂",
+          "pinyin": "zàn sòng",
+          "hanviet": "Tán Tụng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk3_1064",
+    "hsk4_331",
+    "hsk3_957",
+    "hsk1_390"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Nhân vật lịch sử nổi tiếng nào gắn liền với giai thoại 'Chiêu Quân xuất tái' (昭君出塞)?",
+      "options_vi": [
+        "Vương Chiêu Quân (王昭君)",
+        "Tây Thi",
+        "Điêu Thuyền"
+      ],
+      "answer": 0,
+      "explanation_vi": "Vương Chiêu Quân tình nguyện đi hòa thân với Thiền vu Hung Nô để giữ yên bờ cõi."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Ý nghĩa lịch sử quan trọng nhất của chuyến xuất tái của Vương Chiêu Quân là gì?",
+      "options_vi": [
+        "Mang lại hòa bình và giao lưu văn hóa, buôn bán suốt hơn nửa thế kỷ ở vùng biên giới",
+        "Gây ra chiến tranh lớn",
+        "Làm mất hết ngựa chiến"
+      ],
+      "answer": 0,
+      "explanation_vi": "Cuộc hòa thân mang lại nửa thế kỷ bình yên không tiếng đao kiếm giữa hai dân tộc."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Nhạc cụ nào thường gắn liền với hình ảnh công chúa đi hòa thân trong thi ca hội họa?",
+      "options_vi": [
+        "Đàn Tỳ Bà (琵琶)",
+        "Kèn đám cưới",
+        "Chiêng đồng"
+      ],
+      "answer": 0,
+      "explanation_vi": "Hình ảnh nàng Chiêu Quân ôm cây đàn tỳ bà vượt quan ải là biểu tượng nghệ thuật kinh điển."
+    }
+  ]
+}

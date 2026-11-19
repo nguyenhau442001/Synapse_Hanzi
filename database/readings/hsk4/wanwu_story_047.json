@@ -1,0 +1,1063 @@
+{
+  "id": "wanwu_story_047",
+  "chapter_no": 47,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 3,
+  "book_page_start": 488,
+  "book_page_end": 497,
+  "page_display": "Trang 488 - 497",
+  "title": {
+    "zh": "治水：从“凿龙门”到“都江堰”",
+    "vi": "Trị thủy: Từ 'Đục Long Môn' đến kỳ tích 'Đô Giang Yển'"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🌊",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_047.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_047.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 488 - 497 · Trí tuệ trị thủy ngàn năm: từ huyền thoại Đại Vũ đục núi xẻ kênh đến công trình vĩ đại Đô Giang Yển của Lý Băng.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "水是生命之源，但凶猛的洪水自古以来也是威胁人类生存的严重灾难。",
+      "pinyin": "Shuǐ shì shēngmìng zhī yuán, dàn xiōngměng de hóngshuǐ zìgǔ yǐlái yě shì wēixié rénlèi shēngcún de yánzhòng zāinàn.",
+      "vi": "Nước là nguồn gốc của sự sống, nhưng những cơn lũ dữ từ xưa đến nay cũng là thảm họa nghiêm trọng đe dọa sự sinh tồn của loài người.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "水是",
+          "pinyin": "shuǐ shì",
+          "hanviet": "Thuỷ Thị"
+        },
+        {
+          "text": "生命",
+          "pinyin": "shēngmìng",
+          "hanviet": "Sinh Mệnh",
+          "hsk": 4,
+          "word_id": "hsk4_648",
+          "meaning_vi": "sinh mệnh, sự sống"
+        },
+        {
+          "text": "之源",
+          "pinyin": "zhī yuán",
+          "hanviet": "Chi Nguyên"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "但",
+          "pinyin": "dàn",
+          "hanviet": "Đãn",
+          "hsk": 2,
+          "word_id": "hsk2_330",
+          "meaning_vi": "nhưng, nhưng mà"
+        },
+        {
+          "text": "凶猛",
+          "pinyin": "xiōngměng",
+          "hanviet": "Hung Mãnh",
+          "hsk": 7,
+          "word_id": "hsk7_4606",
+          "meaning_vi": "hung dữ; mãnh liệt"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "洪水",
+          "pinyin": "hóngshuǐ",
+          "hanviet": "Hồng Thuỷ",
+          "hsk": 6,
+          "word_id": "hsk6_551",
+          "meaning_vi": "lũ lụt"
+        },
+        {
+          "text": "自古以来",
+          "pinyin": "zì gǔ yǐ lái",
+          "hanviet": "Tự Cổ Dĩ Lai"
+        },
+        {
+          "text": "也",
+          "pinyin": "yě",
+          "hanviet": "Dã",
+          "hsk": 1,
+          "word_id": "hsk1_359",
+          "meaning_vi": "cũng"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "威胁",
+          "pinyin": "wēixié",
+          "hanviet": "Uy Hiếp",
+          "hsk": 5,
+          "word_id": "hsk5_1182",
+          "meaning_vi": "đe dọa"
+        },
+        {
+          "text": "人类",
+          "pinyin": "rénlèi",
+          "hanviet": "Nhân Loại",
+          "hsk": 5,
+          "word_id": "hsk5_921",
+          "meaning_vi": "loài người, nhân loại"
+        },
+        {
+          "text": "生存",
+          "pinyin": "shēngcún",
+          "hanviet": "Sinh Tồn",
+          "hsk": 5,
+          "word_id": "hsk5_991",
+          "meaning_vi": "sinh tồn"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "严重",
+          "pinyin": "yánzhòng",
+          "hanviet": "Nghiêm Trọng",
+          "hsk": 4,
+          "word_id": "hsk4_848",
+          "meaning_vi": "nghiêm trọng"
+        },
+        {
+          "text": "灾难",
+          "pinyin": "zāinàn",
+          "hanviet": "Tai Nạn",
+          "hsk": 6,
+          "word_id": "hsk6_1641",
+          "meaning_vi": "tai nạn, thiên tai"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "上古时期，黄河流域洪水泛滥，大禹继承父亲的遗志，历经十三年辛苦治水。",
+      "pinyin": "Shànggǔ shíqī, Huánghé liùyù hóngshuǐ fànlàn, Dà Yǔ jìchéng fùqīn de yízhì, lìjīng shísān nián xīnkǔ zhìshuǐ.",
+      "vi": "Thời thượng cổ, lưu vực Hoàng Hà lũ lụt ngập tràn, Đại Vũ nối chí người cha, trải qua 13 năm gian khổ trị thủy.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "上古",
+          "pinyin": "shàng gǔ",
+          "hanviet": "Thượng Cổ"
+        },
+        {
+          "text": "时期",
+          "pinyin": "shíqī",
+          "hanviet": "Thời Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_1016",
+          "meaning_vi": "thời kỳ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "黄河流域",
+          "pinyin": "huáng hé liú yù",
+          "hanviet": "Hoàng Hà Lưu Vực"
+        },
+        {
+          "text": "洪水泛滥",
+          "pinyin": "hóng shuǐ fàn làn",
+          "hanviet": "Hồng Thuỷ Phiếm Lạm"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "大禹",
+          "pinyin": "dà yǔ",
+          "hanviet": "Đại Vũ"
+        },
+        {
+          "text": "继承",
+          "pinyin": "jìchéng",
+          "hanviet": "Kế Thừa",
+          "hsk": 6,
+          "word_id": "hsk6_622",
+          "meaning_vi": "kế thừa"
+        },
+        {
+          "text": "父亲",
+          "pinyin": "fùqīn",
+          "hanviet": "Phụ Thân",
+          "hsk": 4,
+          "word_id": "hsk4_212",
+          "meaning_vi": "cha"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "遗志",
+          "pinyin": "yí zhì",
+          "hanviet": "Di Chí"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "历经",
+          "pinyin": "lìjīng",
+          "hanviet": "Lịch Kinh",
+          "hsk": 6,
+          "word_id": "hsk6_839",
+          "meaning_vi": "trải qua, nếm trải qua (thử thách, năm tháng)"
+        },
+        {
+          "text": "十三年",
+          "pinyin": "shí sān nián",
+          "hanviet": "Thập Tam Niên"
+        },
+        {
+          "text": "辛苦",
+          "pinyin": "xīnkǔ",
+          "hanviet": "Tân Khổ",
+          "hsk": 4,
+          "word_id": "hsk4_820",
+          "meaning_vi": "vất vả, gian khổ"
+        },
+        {
+          "text": "治水",
+          "pinyin": "zhì shuǐ",
+          "hanviet": "Trị Thuỷ"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "与父亲只用筑堤“堵水”不同，大禹采用顺应水性的“疏导”方法，开凿龙门，引水入海。",
+      "pinyin": "Yǔ fùqīn zhǐ yòng zhùdī “dǔshuǐ” bùtóng, Dà Yǔ cǎiyòng shùnyìng shuǐxìng de “shūdǎo” fāngfǎ, kāizáo Lóngmén, yǐnshuǐ rùhǎi.",
+      "vi": "Khác với người cha chỉ biết đắp đê 'chặn nước', Đại Vũ thuận theo tính nước mà dùng phương pháp 'khơi thông khai thông', đục núi Long Môn, dẫn dòng ra biển.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "父亲",
+          "pinyin": "fùqīn",
+          "hanviet": "Phụ Thân",
+          "hsk": 4,
+          "word_id": "hsk4_212",
+          "meaning_vi": "cha"
+        },
+        {
+          "text": "只用",
+          "pinyin": "zhǐ yòng",
+          "hanviet": "Chỉ Dụng"
+        },
+        {
+          "text": "筑堤",
+          "pinyin": "zhù dī",
+          "hanviet": "Trúc Đê"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "堵水",
+          "pinyin": "dǔ shuǐ",
+          "hanviet": "Đổ Thuỷ"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "不同",
+          "pinyin": "bù tóng",
+          "hanviet": "Bất Đồng",
+          "hsk": 3,
+          "word_id": "hsk3_640",
+          "meaning_vi": "khác nhau, không giống"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "大禹",
+          "pinyin": "dà yǔ",
+          "hanviet": "Đại Vũ"
+        },
+        {
+          "text": "采用",
+          "pinyin": "cǎiyòng",
+          "hanviet": "Thái Dụng",
+          "hsk": 5,
+          "word_id": "hsk5_88",
+          "meaning_vi": "áp dụng, sử dụng"
+        },
+        {
+          "text": "顺应",
+          "pinyin": "shùnyìng",
+          "hanviet": "Thuận Ưng",
+          "hsk": 7,
+          "word_id": "hsk7_3837",
+          "meaning_vi": "thuận theo; thích ứng với"
+        },
+        {
+          "text": "水性",
+          "pinyin": "shuǐ xìng",
+          "hanviet": "Thuỷ Tính"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "疏导",
+          "pinyin": "shūdǎo",
+          "hanviet": "Sơ Đạo",
+          "hsk": 7,
+          "word_id": "hsk7_3764",
+          "meaning_vi": "phân luồng; giải tỏa"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "方法",
+          "pinyin": "fāngfǎ",
+          "hanviet": "Phương Pháp",
+          "hsk": 3,
+          "word_id": "hsk3_716",
+          "meaning_vi": "phương pháp"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "开凿",
+          "pinyin": "kāi záo",
+          "hanviet": "Khai Tạc"
+        },
+        {
+          "text": "龙门",
+          "pinyin": "lóng mén",
+          "hanviet": "Long Môn"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "引水",
+          "pinyin": "yǐn shuǐ",
+          "hanviet": "Dẫn Thuỷ"
+        },
+        {
+          "text": "入海",
+          "pinyin": "rù hǎi",
+          "hanviet": "Nhập Hải"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "战国时期，蜀郡太守李冰父子总结了古人的经验，在成都平原修建了举世闻名的都江堰。",
+      "pinyin": "Zhànguó shíqī, Shǔjùn tàishǒu Lǐ Bīng fùzǐ zǒngjié le gǔrén de jīngyàn, zài Chéngdū píngyuán xiūjiàn le jǔshì wénmíng de Dūjiāngyàn.",
+      "vi": "Thời Chiến Quốc, thái thú Thục quận là Lý Băng cùng con trai đúc kết kinh nghiệm cổ nhân, xây dựng công trình Đô Giang Yển chấn động thế giới trên đồng bằng Thành Đô.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "战国时期",
+          "pinyin": "zhàn guó shí qī",
+          "hanviet": "Chiến Quốc Thời Kỳ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "蜀",
+          "pinyin": "shǔ",
+          "hanviet": "Thục"
+        },
+        {
+          "text": "郡",
+          "pinyin": "jùn",
+          "hanviet": "Quận"
+        },
+        {
+          "text": "太守",
+          "pinyin": "tài shǒu",
+          "hanviet": "Thái Thú"
+        },
+        {
+          "text": "李冰",
+          "pinyin": "lǐ bīng",
+          "hanviet": "Lý Băng"
+        },
+        {
+          "text": "父子",
+          "pinyin": "fùzǐ",
+          "hanviet": "Phụ Tử",
+          "hsk": 4,
+          "word_id": "hsk4_217",
+          "meaning_vi": "cha con (bố và con trai)"
+        },
+        {
+          "text": "总结",
+          "pinyin": "zǒngjié",
+          "hanviet": "Tổng Kết",
+          "hsk": 4,
+          "word_id": "hsk4_985",
+          "meaning_vi": "tổng kết"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "古人",
+          "pinyin": "gǔrén",
+          "hanviet": "Cổ Nhân",
+          "hsk": 6,
+          "word_id": "hsk6_478",
+          "meaning_vi": "người xưa, người cổ đại"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "经验",
+          "pinyin": "jīngyàn",
+          "hanviet": "Kinh Nghiệm",
+          "hsk": 4,
+          "word_id": "hsk4_399",
+          "meaning_vi": "kinh nghiệm"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "成都平原",
+          "pinyin": "chéng dū píng yuán",
+          "hanviet": "Thành Đô Bình Nguyên"
+        },
+        {
+          "text": "修建",
+          "pinyin": "xiūjiàn",
+          "hanviet": "Tu Kiến",
+          "hsk": 5,
+          "word_id": "hsk5_1301",
+          "meaning_vi": "xây dựng"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "举世闻名",
+          "pinyin": "táo",
+          "hanviet": "Đào",
+          "hsk": 6,
+          "word_id": "hsk6_1270",
+          "meaning_vi": "chạy trốn, trốn"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "都江堰",
+          "pinyin": "dū jiāng yàn",
+          "hanviet": "Đô Giang Yển"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "都江堰没有修建任何高大的水坝，而是巧妙利用自然地形与水流力量，实现了无坝引水、自然分流与自动排沙。",
+      "pinyin": "Dūjiāngyàn méiyǒu xiūjiàn rènhé gāodà de shuǐbà, érshì qiǎomiào lìyòng zìrán dìxíng yǔ shuǐliú lìliàng, shíxiàn le wú bà yǐnshuǐ, zìrán fēnliú yǔ zìdòng páishā.",
+      "vi": "Đô Giang Yển không hề đắp đập cao chặn dòng, mà khéo léo tận dụng địa hình tự nhiên cùng sức nước để dẫn nước không cần đập, chia dòng tự nhiên và tự động xả cát.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "都江堰",
+          "pinyin": "dū jiāng yàn",
+          "hanviet": "Đô Giang Yển"
+        },
+        {
+          "text": "没有",
+          "pinyin": "méiyǒu",
+          "hanviet": "Một Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_197",
+          "meaning_vi": "không có"
+        },
+        {
+          "text": "修建",
+          "pinyin": "xiūjiàn",
+          "hanviet": "Tu Kiến",
+          "hsk": 5,
+          "word_id": "hsk5_1301",
+          "meaning_vi": "xây dựng"
+        },
+        {
+          "text": "任何",
+          "pinyin": "rènhé",
+          "hanviet": "Nhâm Hà",
+          "hsk": 4,
+          "word_id": "hsk4_613",
+          "meaning_vi": "bất kỳ, mọi"
+        },
+        {
+          "text": "高大",
+          "pinyin": "gāodà",
+          "hanviet": "Cao Đại",
+          "hsk": 5,
+          "word_id": "hsk5_386",
+          "meaning_vi": "cao lớn"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "水坝",
+          "pinyin": "shuǐ bà",
+          "hanviet": "Thuỷ Bá"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "而是",
+          "pinyin": "ér shì",
+          "hanviet": "Nhi Thị"
+        },
+        {
+          "text": "巧妙",
+          "pinyin": "qiǎomiào",
+          "hanviet": "Xảo Diệu",
+          "hsk": 6,
+          "word_id": "hsk6_1047",
+          "meaning_vi": "khéo léo, tài tình"
+        },
+        {
+          "text": "利用",
+          "pinyin": "lìyòng",
+          "hanviet": "Lợi Dụng",
+          "hsk": 5,
+          "word_id": "hsk5_710",
+          "meaning_vi": "lợi dụng, tận dụng"
+        },
+        {
+          "text": "自然",
+          "pinyin": "zìrán",
+          "hanviet": "Tự Nhiên",
+          "hsk": 4,
+          "word_id": "hsk4_981",
+          "meaning_vi": "tự nhiên"
+        },
+        {
+          "text": "地形",
+          "pinyin": "dìxíng",
+          "hanviet": "Địa Hình",
+          "hsk": 6,
+          "word_id": "hsk6_293",
+          "meaning_vi": "địa hình"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "水流",
+          "pinyin": "shuǐliú",
+          "hanviet": "Thuỷ Lưu",
+          "hsk": 6,
+          "word_id": "hsk6_1235",
+          "meaning_vi": "dòng nước, dòng chảy"
+        },
+        {
+          "text": "力量",
+          "pinyin": "lìliàng",
+          "hanviet": "Lực Lượng",
+          "hsk": 5,
+          "word_id": "hsk5_707",
+          "meaning_vi": "lực lượng, sức mạnh"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "实现",
+          "pinyin": "shíxiàn",
+          "hanviet": "Thực Hiện",
+          "hsk": 5,
+          "word_id": "hsk5_1020",
+          "meaning_vi": "thực hiện"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "无坝",
+          "pinyin": "wú bà",
+          "hanviet": "Vô Bá"
+        },
+        {
+          "text": "引水",
+          "pinyin": "yǐn shuǐ",
+          "hanviet": "Dẫn Thuỷ"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "自然",
+          "pinyin": "zìrán",
+          "hanviet": "Tự Nhiên",
+          "hsk": 4,
+          "word_id": "hsk4_981",
+          "meaning_vi": "tự nhiên"
+        },
+        {
+          "text": "分流",
+          "pinyin": "fēn liú",
+          "hanviet": "Phân Lưu"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "自动",
+          "pinyin": "zìdòng",
+          "hanviet": "Tự Động",
+          "hsk": 5,
+          "word_id": "hsk5_1575",
+          "meaning_vi": "tự động"
+        },
+        {
+          "text": "排沙",
+          "pinyin": "pái shā",
+          "hanviet": "Bài Sa"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "zh": "两千多年过去了，都江堰依然在滋养着拥有天府之国美称的成都平原。",
+      "pinyin": "Liǎng qiān duō nián guòqù le, Dūjiāngyàn yīrán zài zīyǎng zhe yōngyǒu tiānfǔ zhī guó měichēng de Chéngdū píngyuán.",
+      "vi": "Hơn 2.000 năm trôi qua, Đô Giang Yển vẫn ngày đêm tưới mát đồng bằng Thành Đô - nơi được mệnh danh là Đất nước Thiên Phủ.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "两千多年",
+          "pinyin": "liǎng qiān duō nián",
+          "hanviet": "Lưỡng Thiên Đa Niên"
+        },
+        {
+          "text": "过去",
+          "pinyin": "guòqù",
+          "hanviet": "Quá Khứ",
+          "hsk": 3,
+          "word_id": "hsk3_89",
+          "meaning_vi": "quá khứ"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "都江堰",
+          "pinyin": "dū jiāng yàn",
+          "hanviet": "Đô Giang Yển"
+        },
+        {
+          "text": "依然",
+          "pinyin": "yīrán",
+          "hanviet": "Y Nhiên",
+          "hsk": 5,
+          "word_id": "hsk5_1349",
+          "meaning_vi": "vẫn như cũ"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "滋养",
+          "pinyin": "zī yǎng",
+          "hanviet": "Tư Dưỡng"
+        },
+        {
+          "text": "着",
+          "pinyin": "zhe",
+          "hanviet": "Trước",
+          "hsk": 2,
+          "word_id": "hsk2_490",
+          "meaning_vi": "đang (trợ từ)"
+        },
+        {
+          "text": "拥有",
+          "pinyin": "yōngyǒu",
+          "hanviet": "Ủng Hữu",
+          "hsk": 5,
+          "word_id": "hsk5_1389",
+          "meaning_vi": "sở hữu, có"
+        },
+        {
+          "text": "天府之国",
+          "pinyin": "tiān fǔ zhī guó",
+          "hanviet": "Thiên Phủ Chi Quốc"
+        },
+        {
+          "text": "美称",
+          "pinyin": "měi chēng",
+          "hanviet": "Mỹ Xứng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "成都平原",
+          "pinyin": "chéng dū píng yuán",
+          "hanviet": "Thành Đô Bình Nguyên"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "zh": "从大禹治水到都江堰，中国古人“道法自然、因势利导”的生态智慧，至今依然散发着灿烂的光芒。",
+      "pinyin": "Cóng Dà Yǔ zhìshuǐ dào Dūjiāngyàn, Zhōngguó gǔrén “dào fǎ zìrán, yīn shì lì dǎo” de shēngtài zhìhuì, zhìjīn yīrán sànfā zhe cànlàn de guāngmáng.",
+      "vi": "Từ Đại Vũ trị thủy đến Đô Giang Yển, trí tuệ sinh thái 'thuận theo tự nhiên, dựa vào thế nước mà dẫn dụ' của cổ nhân Trung Hoa đến nay vẫn rạng rỡ muôn phần.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "从",
+          "pinyin": "cóng",
+          "hanviet": "Tòng",
+          "hsk": 2,
+          "word_id": "hsk2_324",
+          "meaning_vi": "từ"
+        },
+        {
+          "text": "大禹治水",
+          "pinyin": "dà yǔ zhì shuǐ",
+          "hanviet": "Đại Vũ Trị Thuỷ"
+        },
+        {
+          "text": "到",
+          "pinyin": "dào",
+          "hanviet": "Đáo",
+          "hsk": 1,
+          "word_id": "hsk1_59",
+          "meaning_vi": "đến"
+        },
+        {
+          "text": "都江堰",
+          "pinyin": "dū jiāng yàn",
+          "hanviet": "Đô Giang Yển"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "古人",
+          "pinyin": "gǔrén",
+          "hanviet": "Cổ Nhân",
+          "hsk": 6,
+          "word_id": "hsk6_478",
+          "meaning_vi": "người xưa, người cổ đại"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "道",
+          "pinyin": "dào",
+          "hanviet": "Đạo",
+          "hsk": 4,
+          "word_id": "hsk4_140",
+          "meaning_vi": "đường; đạo lý; (lượng từ cho câu hỏi, món ăn, cửa)"
+        },
+        {
+          "text": "法",
+          "pinyin": "fǎ",
+          "hanviet": "Pháp",
+          "hsk": 4,
+          "word_id": "hsk4_187",
+          "meaning_vi": "luật, pháp luật; phương pháp"
+        },
+        {
+          "text": "自然",
+          "pinyin": "zìrán",
+          "hanviet": "Tự Nhiên",
+          "hsk": 4,
+          "word_id": "hsk4_981",
+          "meaning_vi": "tự nhiên"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "因势利导",
+          "pinyin": "yīn shì lì dǎo",
+          "hanviet": "Nhân Thế Lợi Đạo"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "生态",
+          "pinyin": "shēngtài",
+          "hanviet": "Sinh Thái",
+          "hsk": 6,
+          "word_id": "hsk6_1173",
+          "meaning_vi": "sinh thái"
+        },
+        {
+          "text": "智慧",
+          "pinyin": "zhìhuì",
+          "hanviet": "Trí Tuệ",
+          "hsk": 5,
+          "word_id": "hsk5_1513",
+          "meaning_vi": "trí tuệ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "至今",
+          "pinyin": "zhìjīn",
+          "hanviet": "Chí Kim",
+          "hsk": 5,
+          "word_id": "hsk5_1514",
+          "meaning_vi": "đến nay"
+        },
+        {
+          "text": "依然",
+          "pinyin": "yīrán",
+          "hanviet": "Y Nhiên",
+          "hsk": 5,
+          "word_id": "hsk5_1349",
+          "meaning_vi": "vẫn như cũ"
+        },
+        {
+          "text": "散发",
+          "pinyin": "sànfā",
+          "hanviet": "Tản Phát",
+          "hsk": 6,
+          "word_id": "hsk6_1129",
+          "meaning_vi": "phát ra, tỏa ra"
+        },
+        {
+          "text": "着",
+          "pinyin": "zhe",
+          "hanviet": "Trước",
+          "hsk": 2,
+          "word_id": "hsk2_490",
+          "meaning_vi": "đang (trợ từ)"
+        },
+        {
+          "text": "灿烂",
+          "pinyin": "cànlàn",
+          "hanviet": "Xán Lạn",
+          "hsk": 7,
+          "word_id": "hsk7_385",
+          "meaning_vi": "rực rỡ, sáng chói"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "光芒",
+          "pinyin": "guāngmáng",
+          "hanviet": "Quang Mang",
+          "hsk": 7,
+          "word_id": "hsk7_1509",
+          "meaning_vi": "tia sáng rực rỡ, ánh sáng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk4_981",
+    "hsk4_399",
+    "hsk5_707",
+    "hsk4_648"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Đại Vũ đã dùng phương pháp trị thủy nào khác biệt so với người cha?",
+      "options_vi": [
+        "Phương pháp khơi thông dòng chảy (疏导), thuận theo tính nước",
+        "Đắp thêm nhiều tường đê cao hơn nữa",
+        "Di dời toàn bộ người dân lên núi cao"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trong bài viết: 大禹采用顺应水性的“疏导”方法，开凿龙门，引水入海."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Ai là người chỉ huy xây dựng công trình thủy lợi Đô Giang Yển?",
+      "options_vi": [
+        "Lý Băng (李冰) và con trai",
+        "Khổng Tử",
+        "Gia Cát Lượng"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trong bài viết: 蜀郡太守李冰父子总结了古人的经验，在成都平原修建了举世闻名的都江堰."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Đặc điểm kỳ diệu nhất của công trình Đô Giang Yển là gì?",
+      "options_vi": [
+        "Không dùng đập cao mà dựa vào địa hình tự nhiên để phân dòng xả cát",
+        "Dùng sắt thép hiện đại để ngăn dòng lũ",
+        "Chỉ hoạt động được vào mùa khô"
+      ],
+      "answer": 0,
+      "explanation_vi": "Trong bài viết: 巧妙利用自然地形与水流力量，实现了无坝引水、自然分流与自动排沙."
+    }
+  ]
+}

@@ -1,0 +1,812 @@
+{
+  "id": "wanwu_story_082",
+  "chapter_no": 82,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 4,
+  "book_page_start": 833,
+  "book_page_end": 843,
+  "page_display": "Trang 833 - 843",
+  "title": {
+    "zh": "炼丹术：世上真有不死药？",
+    "vi": "Thuật luyện đan: Liệu có thần dược trường sinh?"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🧪",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_082.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_082.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 833 - 843 · Giấc mộng bất tử của các hoàng đế cổ đại và phát minh thuốc súng bất ngờ từ lò luyện đan của đạo sĩ.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "自古以来，追求健康长寿甚至长生不老，是许多古代帝王与贵族梦寐以求的执念。",
+      "pinyin": "Zìgǔ-yǐlái, zhuīqiú jiànkāng chángshòu shènzhì chángshēng-bùlǎo, shì xǔduō gǔdài dìwáng yǔ guìzú mèngmèi-yǐqiú de zhíniàn.",
+      "vi": "Từ xưa tới nay, mưu cầu trường thọ thậm chí trường sinh bất tử là nỗi khát khao cháy bỏng của bao bậc đế vương quý tộc.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "自古以来",
+          "pinyin": "zì gǔ yǐ lái",
+          "hanviet": "Tự Cổ Dĩ Lai"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "追求",
+          "pinyin": "zhuīqiú",
+          "hanviet": "Truy Cầu",
+          "hsk": 5,
+          "word_id": "hsk5_1566",
+          "meaning_vi": "theo đuổi"
+        },
+        {
+          "text": "健康长寿",
+          "pinyin": "jiàn kāng cháng shòu",
+          "hanviet": "Kiện Khang Trường Thọ"
+        },
+        {
+          "text": "甚至",
+          "pinyin": "shènzhì",
+          "hanviet": "Thậm Chí",
+          "hsk": 4,
+          "word_id": "hsk4_645",
+          "meaning_vi": "thậm chí"
+        },
+        {
+          "text": "长生不老",
+          "pinyin": "cháng shēng bù lǎo",
+          "hanviet": "Trường Sinh Bất Lão"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "许多",
+          "pinyin": "xǔduō",
+          "hanviet": "Hứa Đa",
+          "hsk": 4,
+          "word_id": "hsk4_836",
+          "meaning_vi": "nhiều, rất nhiều"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "帝王",
+          "pinyin": "dì wáng",
+          "hanviet": "Đế Vương"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "贵族",
+          "pinyin": "guìzú",
+          "hanviet": "Quý Tộc",
+          "hsk": 7,
+          "word_id": "hsk7_1533",
+          "meaning_vi": "quý tộc"
+        },
+        {
+          "text": "梦寐以求",
+          "pinyin": "mèngmèiyǐqiú",
+          "hanviet": "Mộng Mị Dĩ Cầu",
+          "hsk": 7,
+          "word_id": "hsk7_2789",
+          "meaning_vi": "hằng ao ước, mơ ước bấy lâu"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "执念",
+          "pinyin": "zhí niàn",
+          "hanviet": "Chấp Niệm"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "秦始皇曾派遣徐福率领数千童男童海东渡蓬莱寻找仙药，而汉唐多位皇帝更沉迷于道士的‘外丹术’。",
+      "pinyin": "Qín Shǐhuáng céng pàiqiǎn Xú Fú shuàilǐng shùqiān tóngnán-tóngnǚ dōngdù Pénglái xúnzhǎo xiānyào, ér Hàn-Táng duō wèi huángdì gèng chénmí yú dàoshì de ‘wàidānshù’.",
+      "vi": "Tần Thủy Hoàng từng sai Từ Phúc dẫn nghìn đồng nam đồng nữ vượt biển tìm thuốc tiên, vua chúa Hán Đường lại mê muội thuật luyện đan.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "秦始皇",
+          "pinyin": "qín shǐ huáng",
+          "hanviet": "Tần Thuỷ Hoàng"
+        },
+        {
+          "text": "曾",
+          "pinyin": "céng",
+          "hanviet": "Tằng",
+          "hsk": 5,
+          "word_id": "hsk5_97",
+          "meaning_vi": "từng, đã từng"
+        },
+        {
+          "text": "派遣",
+          "pinyin": "pàiqiǎn",
+          "hanviet": "Phái Khiển",
+          "hsk": 7,
+          "word_id": "hsk7_3009",
+          "meaning_vi": "cử đi, điều đi"
+        },
+        {
+          "text": "徐福",
+          "pinyin": "xú fú",
+          "hanviet": "Từ Phúc"
+        },
+        {
+          "text": "率领",
+          "pinyin": "shuàilǐng",
+          "hanviet": "Luật Lãnh",
+          "hsk": 6,
+          "word_id": "hsk6_1231",
+          "meaning_vi": "dẫn đầu, chỉ huy"
+        },
+        {
+          "text": "数千",
+          "pinyin": "shù qiān",
+          "hanviet": "Sổ Thiên"
+        },
+        {
+          "text": "童男",
+          "pinyin": "tóng nán",
+          "hanviet": "Đồng Nam"
+        },
+        {
+          "text": "童海",
+          "pinyin": "tóng hǎi",
+          "hanviet": "Đồng Hải"
+        },
+        {
+          "text": "东渡",
+          "pinyin": "dōng dù",
+          "hanviet": "Đông Độ"
+        },
+        {
+          "text": "蓬莱",
+          "pinyin": "péng lái",
+          "hanviet": "Bồng Lai"
+        },
+        {
+          "text": "寻找",
+          "pinyin": "xúnzhǎo",
+          "hanviet": "Tầm Trảo",
+          "hsk": 5,
+          "word_id": "hsk5_1317",
+          "meaning_vi": "tìm kiếm"
+        },
+        {
+          "text": "仙药",
+          "pinyin": "xiān yào",
+          "hanviet": "Tiên Dược"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "而",
+          "pinyin": "ér",
+          "hanviet": "Nhi",
+          "hsk": 4,
+          "word_id": "hsk4_183",
+          "meaning_vi": "mà, và"
+        },
+        {
+          "text": "汉唐",
+          "pinyin": "hàn táng",
+          "hanviet": "Hán Đường"
+        },
+        {
+          "text": "多位",
+          "pinyin": "duō wèi",
+          "hanviet": "Đa Vị"
+        },
+        {
+          "text": "皇帝",
+          "pinyin": "huángdì",
+          "hanviet": "Hoàng Đế",
+          "hsk": 6,
+          "word_id": "hsk6_582",
+          "meaning_vi": "hoàng đế"
+        },
+        {
+          "text": "更",
+          "pinyin": "gèng",
+          "hanviet": "Canh",
+          "hsk": 3,
+          "word_id": "hsk3_737",
+          "meaning_vi": "càng, hơn"
+        },
+        {
+          "text": "沉迷于",
+          "pinyin": "chén mí yú",
+          "hanviet": "Trầm Mê Vu"
+        },
+        {
+          "text": "道士",
+          "pinyin": "dào shì",
+          "hanviet": "Đạo Sĩ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "外",
+          "pinyin": "wài",
+          "hanviet": "Ngoại",
+          "hsk": 1,
+          "word_id": "hsk1_575",
+          "meaning_vi": "ngoài"
+        },
+        {
+          "text": "丹术",
+          "pinyin": "dān shù",
+          "hanviet": "Đan Thuật"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "道士们将丹砂、水银、硫黄与铅等重金属矿物放入密封丹炉中，用熊熊烈火长时间烧炼金丹。",
+      "pinyin": "Dàoshìmen jiāng dānshā, shuǐyín, liúhuáng yǔ qiān děng zhòngjīnshǔ kuàngwù fàngrù mìfēng dānlú zhōng, yòng xióngxióng lièhuǒ cháng shíjiān shāoliàn jīndān.",
+      "vi": "Các đạo sĩ cho chu sa, thủy ngân, lưu huỳnh và chì vào lò kín, dùng lửa đỏ nung luyện kim đan suốt ngày đêm.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "道士",
+          "pinyin": "dào shì",
+          "hanviet": "Đạo Sĩ"
+        },
+        {
+          "text": "们",
+          "pinyin": "men",
+          "hanviet": "Môn",
+          "hsk": 1,
+          "word_id": "hsk1_538",
+          "meaning_vi": "họ (hậu tố)"
+        },
+        {
+          "text": "将",
+          "pinyin": "jiāng",
+          "hanviet": "Tương",
+          "hsk": 4,
+          "word_id": "hsk4_356",
+          "meaning_vi": "sẽ; đem, lấy (như 把)"
+        },
+        {
+          "text": "丹砂",
+          "pinyin": "dān shā",
+          "hanviet": "Đan Sa"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "水银",
+          "pinyin": "shuǐ yín",
+          "hanviet": "Thủy Ngân"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "硫黄",
+          "pinyin": "liú huáng",
+          "hanviet": "Lưu Hoàng"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "铅",
+          "pinyin": "qiān",
+          "hanviet": "Duyên"
+        },
+        {
+          "text": "等",
+          "pinyin": "děng",
+          "hanviet": "Đẳng",
+          "hsk": 2,
+          "word_id": "hsk2_20",
+          "meaning_vi": "đợi, chờ"
+        },
+        {
+          "text": "重金属",
+          "pinyin": "zhòng jīn shǔ",
+          "hanviet": "Trọng Kim Thuộc"
+        },
+        {
+          "text": "矿物",
+          "pinyin": "túdì",
+          "hanviet": "Đồ Đệ",
+          "hsk": 6,
+          "word_id": "hsk6_1330",
+          "meaning_vi": "học trò, đệ tử"
+        },
+        {
+          "text": "放入",
+          "pinyin": "fàng rù",
+          "hanviet": "Phóng Nhập"
+        },
+        {
+          "text": "密封",
+          "pinyin": "mìfēng",
+          "hanviet": "Mật Phong",
+          "hsk": 7,
+          "word_id": "hsk7_2802",
+          "meaning_vi": "đóng kín, bịt kín"
+        },
+        {
+          "text": "丹炉",
+          "pinyin": "dān lú",
+          "hanviet": "Đan Lò"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "用",
+          "pinyin": "yòng",
+          "hanviet": "Dụng",
+          "hsk": 3,
+          "word_id": "hsk3_1020",
+          "meaning_vi": "dùng"
+        },
+        {
+          "text": "熊熊烈火",
+          "pinyin": "xióng xióng liè huǒ",
+          "hanviet": "Hùng Hùng Liệt Hoả"
+        },
+        {
+          "text": "长时间",
+          "pinyin": "zhǎng shí jiān",
+          "hanviet": "Trường Thời Gian"
+        },
+        {
+          "text": "烧炼",
+          "pinyin": "shāo liàn",
+          "hanviet": "Thiêu Luyện"
+        },
+        {
+          "text": "金丹",
+          "pinyin": "jīn dān",
+          "hanviet": "Kim Đan"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "这些重金属矿物不仅不能使人延年益寿，反而富含剧毒，多位皇帝因长期服用金丹导致铅汞中毒暴毙。",
+      "pinyin": "Zhèxiē zhòngjīnshǔ kuàngwù bùjǐn bùnéng shǐ rén yánnián-yìshòu, fǎn'ér fùhán jùdú, duō wèi huángdì yīn chángqī fúyòng jīndān dǎozhì qiān-gǒng zhòngdú bàobì.",
+      "vi": "Những khoáng chất này chẳng những không kéo dài tuổi thọ mà còn chứa kịch độc, nhiều vị hoàng đế trúng độc tử vong vì uống đan dược.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "这些",
+          "pinyin": "zhèxiē",
+          "hanviet": "Giá Ta",
+          "hsk": 1,
+          "word_id": "hsk1_608",
+          "meaning_vi": "những (đại từ) này"
+        },
+        {
+          "text": "重金属",
+          "pinyin": "zhòng jīn shǔ",
+          "hanviet": "Trọng Kim Thuộc"
+        },
+        {
+          "text": "矿物",
+          "pinyin": "túdì",
+          "hanviet": "Đồ Đệ",
+          "hsk": 6,
+          "word_id": "hsk6_1330",
+          "meaning_vi": "học trò, đệ tử"
+        },
+        {
+          "text": "不仅",
+          "pinyin": "bùjǐn",
+          "hanviet": "Bất Cận",
+          "hsk": 4,
+          "word_id": "hsk4_55",
+          "meaning_vi": "không chỉ"
+        },
+        {
+          "text": "不能",
+          "pinyin": "bù néng",
+          "hanviet": "Bất Năng"
+        },
+        {
+          "text": "使人",
+          "pinyin": "shǐ rén",
+          "hanviet": "Sử Nhân"
+        },
+        {
+          "text": "延年益寿",
+          "pinyin": "yán nián yì shòu",
+          "hanviet": "Diên Niên Ích Thọ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "反而",
+          "pinyin": "fǎn’ér",
+          "hanviet": "Phản Nhi",
+          "hsk": 5,
+          "word_id": "hsk5_331",
+          "meaning_vi": "ngược lại, trái lại"
+        },
+        {
+          "text": "富含",
+          "pinyin": "fùhán",
+          "hanviet": "Phú Hàm",
+          "hsk": 7,
+          "word_id": "hsk7_1258",
+          "meaning_vi": "giàu hàm lượng, chứa nhiều"
+        },
+        {
+          "text": "剧毒",
+          "pinyin": "jù dú",
+          "hanviet": "Kịch Độc"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "多位",
+          "pinyin": "duō wèi",
+          "hanviet": "Đa Vị"
+        },
+        {
+          "text": "皇帝",
+          "pinyin": "huángdì",
+          "hanviet": "Hoàng Đế",
+          "hsk": 6,
+          "word_id": "hsk6_582",
+          "meaning_vi": "hoàng đế"
+        },
+        {
+          "text": "因",
+          "pinyin": "yīn",
+          "hanviet": "Nhân",
+          "hsk": 6,
+          "word_id": "hsk6_1574",
+          "meaning_vi": "bởi vì"
+        },
+        {
+          "text": "长期",
+          "pinyin": "chángqī",
+          "hanviet": "Trường Kì",
+          "hsk": 5,
+          "word_id": "hsk5_111",
+          "meaning_vi": "thời gian dài, dài hạn"
+        },
+        {
+          "text": "服用",
+          "pinyin": "fúyòng",
+          "hanviet": "Phục Dụng",
+          "hsk": 6,
+          "word_id": "hsk6_404",
+          "meaning_vi": "uống thuốc, dùng thuốc"
+        },
+        {
+          "text": "金丹",
+          "pinyin": "jīn dān",
+          "hanviet": "Kim Đan"
+        },
+        {
+          "text": "导致",
+          "pinyin": "dǎozhì",
+          "hanviet": "Đạo Trí",
+          "hsk": 5,
+          "word_id": "hsk5_255",
+          "meaning_vi": "dẫn đến, gây ra"
+        },
+        {
+          "text": "铅汞",
+          "pinyin": "qiān gǒng",
+          "hanviet": "Duyên Cống"
+        },
+        {
+          "text": "中毒",
+          "pinyin": "zhòngdú",
+          "hanviet": "Trúng Độc",
+          "hsk": 6,
+          "word_id": "hsk6_1730",
+          "meaning_vi": "trúng độc, ngộ độc"
+        },
+        {
+          "text": "暴毙",
+          "pinyin": "bào bì",
+          "hanviet": "Bạo Tễ"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "然而在屡屡发生丹炉起火爆炸的意外中，炼丹士们意外发明了改变世界军事历史的‘黑火药’。",
+      "pinyin": "Rán'ér zài lǚlǚ fāshēng dānlú qǐhuǒ bàozhà de yìwài zhōng, liàndānshìmen yìwài fāmíng le gǎibiàn shìjiè jūnshì lìshǐ de ‘hēihuǒyào’.",
+      "vi": "Dẫu vậy qua các vụ nổ lò đan, các đạo sĩ đã tình cờ sáng chế ra thuốc súng đen làm thay đổi lịch sử quân sự toàn cầu.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "然而",
+          "pinyin": "rán’ér",
+          "hanviet": "Nhiên Nhi",
+          "hsk": 4,
+          "word_id": "hsk4_608",
+          "meaning_vi": "tuy nhiên"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "屡屡",
+          "pinyin": "lǚlǚ",
+          "hanviet": "Lũ Lũ",
+          "hsk": 7,
+          "word_id": "hsk7_2692",
+          "meaning_vi": "liên tiếp, liên tục, nhiều lần"
+        },
+        {
+          "text": "发生",
+          "pinyin": "fāshēng",
+          "hanviet": "Phát Sinh",
+          "hsk": 3,
+          "word_id": "hsk3_711",
+          "meaning_vi": "phát sinh, xảy ra"
+        },
+        {
+          "text": "丹炉",
+          "pinyin": "dān lú",
+          "hanviet": "Đan Lò"
+        },
+        {
+          "text": "起火",
+          "pinyin": "qǐ huǒ",
+          "hanviet": "Khởi Hoả"
+        },
+        {
+          "text": "爆炸",
+          "pinyin": "bàozhà",
+          "hanviet": "Bộc Trác",
+          "hsk": 6,
+          "word_id": "hsk6_33",
+          "meaning_vi": "nổ, vụ nổ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "意外",
+          "pinyin": "yìwài",
+          "hanviet": "Ý Ngoại",
+          "hsk": 5,
+          "word_id": "hsk5_1367",
+          "meaning_vi": "ngoài ý muốn, bất ngờ"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "炼丹",
+          "pinyin": "liàn dān",
+          "hanviet": "Luyện Đan"
+        },
+        {
+          "text": "士们",
+          "pinyin": "shì men",
+          "hanviet": "Sĩ Môn"
+        },
+        {
+          "text": "意外",
+          "pinyin": "yìwài",
+          "hanviet": "Ý Ngoại",
+          "hsk": 5,
+          "word_id": "hsk5_1367",
+          "meaning_vi": "ngoài ý muốn, bất ngờ"
+        },
+        {
+          "text": "发明",
+          "pinyin": "fāmíng",
+          "hanviet": "Phát Minh",
+          "hsk": 5,
+          "word_id": "hsk5_320",
+          "meaning_vi": "phát minh"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "改变",
+          "pinyin": "gǎibiàn",
+          "hanviet": "Cải Biến",
+          "hsk": 4,
+          "word_id": "hsk4_219",
+          "meaning_vi": "thay đổi"
+        },
+        {
+          "text": "世界",
+          "pinyin": "shìjiè",
+          "hanviet": "Thế Giới",
+          "hsk": 3,
+          "word_id": "hsk3_916",
+          "meaning_vi": "thế giới"
+        },
+        {
+          "text": "军事",
+          "pinyin": "jūnshì",
+          "hanviet": "Quân Sự",
+          "hsk": 7,
+          "word_id": "hsk7_2288",
+          "meaning_vi": "quân sự"
+        },
+        {
+          "text": "历史",
+          "pinyin": "lìshǐ",
+          "hanviet": "Lịch Sử",
+          "hsk": 3,
+          "word_id": "hsk3_831",
+          "meaning_vi": "lịch sử"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "黑火药",
+          "pinyin": "hēi huǒ yào",
+          "hanviet": "Hắc Hoả Dược"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk3_787",
+    "hsk5_370",
+    "hsk3_711",
+    "hsk5_320"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Thành phần chủ yếu trong các viên kim đan thời cổ là gì?",
+      "options_vi": [
+        "Khoáng chất kim loại nặng độc hại như thủy ngân, chu sa, chì và lưu huỳnh",
+        "Bột gạo nếp",
+        "Mật ong rừng"
+      ],
+      "answer": 0,
+      "explanation_vi": "Kim đan làm từ các khoáng vật độc chứa thủy ngân và chì gây ngộ độc mãn tính."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Phát minh vĩ đại nào của nhân loại ra đời tình cờ từ các vụ nổ lò luyện đan của đạo sĩ?",
+      "options_vi": [
+        "Thuốc súng đen (火药)",
+        "Tàu ngầm hạt nhân",
+        "Đèn pin năng lượng mặt trời"
+      ],
+      "answer": 0,
+      "explanation_vi": "Hỗn hợp diêm tiêu, lưu huỳnh và than củi trong lò đan đã tạo ra thuốc súng."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Hậu quả của việc uống kim đan trường sinh đối với nhiều vị vua chúa cổ đại là gì?",
+      "options_vi": [
+        "Bị ngộ độc kim loại nặng dẫn tới tổn thương tạng phủ và đoản thọ",
+        "Trở nên bất tử bay lên trời",
+        "Tự biết bay"
+      ],
+      "answer": 0,
+      "explanation_vi": "Nhiều hoàng đế nhà Đường qua đời sớm do nhiễm độc thủy ngân từ đan dược."
+    }
+  ]
+}

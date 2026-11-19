@@ -1,0 +1,828 @@
+{
+  "id": "wanwu_story_046",
+  "chapter_no": 46,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 3,
+  "book_page_start": 477,
+  "book_page_end": 488,
+  "page_display": "Trang 477 - 488",
+  "title": {
+    "zh": "翻译：文化的“摆渡人”",
+    "vi": "Dịch thuật: 'Người lái đò' đưa văn hóa qua sông"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🌐",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_046.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_046.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 477 - 488 · Từ công cuộc dịch kinh Phật của Đường Huyền Trang tại Nhạn Tháp đến chuẩn mực 'Tín - Đạt - Nhã' của Nghiêm Phục.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "翻译就像一座横跨在不同语言与文明之间的桥梁，促进了人类智慧的分享与交融。",
+      "pinyin": "Fānyì jiù xiàng yí zuò héngkuà zài bùtóng yǔyán yǔ wénmíng zhījiān de qiáoliáng, cùjìn le rénlèi zhìhuì de fēnxiǎng yǔ jiāoróng.",
+      "vi": "Dịch thuật tựa như cây cầu bắc qua các ngôn ngữ và nền văn minh khác nhau, thúc đẩy sự sẻ chia và giao hòa trí tuệ nhân loại.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "翻译",
+          "pinyin": "fānyì",
+          "hanviet": "Phiên Dịch",
+          "hsk": 4,
+          "word_id": "hsk4_189",
+          "meaning_vi": "dịch, phiên dịch"
+        },
+        {
+          "text": "就",
+          "pinyin": "jiù",
+          "hanviet": "Tựu",
+          "hsk": 2,
+          "word_id": "hsk2_376",
+          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)"
+        },
+        {
+          "text": "像",
+          "pinyin": "xiàng",
+          "hanviet": "Tượng",
+          "hsk": 3,
+          "word_id": "hsk3_974",
+          "meaning_vi": "giống như"
+        },
+        {
+          "text": "一座",
+          "pinyin": "yī zuò",
+          "hanviet": "Nhất Toạ"
+        },
+        {
+          "text": "横跨",
+          "pinyin": "héng kuà",
+          "hanviet": "Hoành Khoá"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "不同",
+          "pinyin": "bù tóng",
+          "hanviet": "Bất Đồng",
+          "hsk": 3,
+          "word_id": "hsk3_640",
+          "meaning_vi": "khác nhau, không giống"
+        },
+        {
+          "text": "语言",
+          "pinyin": "yǔyán",
+          "hanviet": "Ngữ Ngôn",
+          "hsk": 3,
+          "word_id": "hsk3_1030",
+          "meaning_vi": "ngôn ngữ"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "文明",
+          "pinyin": "wénmíng",
+          "hanviet": "Văn Minh",
+          "hsk": 6,
+          "word_id": "hsk6_1389",
+          "meaning_vi": "văn minh"
+        },
+        {
+          "text": "之间",
+          "pinyin": "zhījiān",
+          "hanviet": "Chi Gian",
+          "hsk": 4,
+          "word_id": "hsk4_942",
+          "meaning_vi": "giữa"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "桥梁",
+          "pinyin": "qiáoliáng",
+          "hanviet": "Kiều Lương",
+          "hsk": 6,
+          "word_id": "hsk6_1046",
+          "meaning_vi": "cầu, cầu nối"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "促进",
+          "pinyin": "cùjìn",
+          "hanviet": "Xúc Tiến",
+          "hsk": 5,
+          "word_id": "hsk5_204",
+          "meaning_vi": "thúc đẩy"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "人类",
+          "pinyin": "rénlèi",
+          "hanviet": "Nhân Loại",
+          "hsk": 5,
+          "word_id": "hsk5_921",
+          "meaning_vi": "loài người, nhân loại"
+        },
+        {
+          "text": "智慧",
+          "pinyin": "zhìhuì",
+          "hanviet": "Trí Tuệ",
+          "hsk": 5,
+          "word_id": "hsk5_1513",
+          "meaning_vi": "trí tuệ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "分享",
+          "pinyin": "fēnxiǎng",
+          "hanviet": "Phân Hưởng",
+          "hsk": 5,
+          "word_id": "hsk5_356",
+          "meaning_vi": "chia sẻ"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "交融",
+          "pinyin": "jiāo róng",
+          "hanviet": "Giao Dung"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "唐代高僧玄奘历经千辛万苦西行取经，归国后在大雁塔主持翻译了数千卷梵文佛典。",
+      "pinyin": "Tángdài gāosēng Xuánzàng lìjīng qiānxīn-wànkǔ xīxíng qǔjīng, guīguó hòu zài Dàyàntǎ zhǔchí fānyì le shùqiān juàn Fànwén fódiǎn.",
+      "vi": "Thời Đường, cao tăng Huyền Trang trải muôn vàn gian khổ sang Tây Trúc thỉnh kinh, về nước đã chủ trì dịch hàng ngàn quyển kinh Phật chữ Phạn tại tháp Đại Nhạn.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "唐代",
+          "pinyin": "táng dài",
+          "hanviet": "Đường Đại"
+        },
+        {
+          "text": "高僧",
+          "pinyin": "gāo sēng",
+          "hanviet": "Cao Tăng"
+        },
+        {
+          "text": "玄奘",
+          "pinyin": "xuán zàng",
+          "hanviet": "Huyền Trang"
+        },
+        {
+          "text": "历经",
+          "pinyin": "lìjīng",
+          "hanviet": "Lịch Kinh",
+          "hsk": 6,
+          "word_id": "hsk6_839",
+          "meaning_vi": "trải qua, nếm trải qua (thử thách, năm tháng)"
+        },
+        {
+          "text": "千辛万苦",
+          "pinyin": "qiān xīn wàn kǔ",
+          "hanviet": "Thiên Tân Mặc Khổ"
+        },
+        {
+          "text": "西行",
+          "pinyin": "xī xíng",
+          "hanviet": "Tây Hành"
+        },
+        {
+          "text": "取经",
+          "pinyin": "qǔjīng",
+          "hanviet": "Thủ Kinh",
+          "hsk": 7,
+          "word_id": "hsk7_3349",
+          "meaning_vi": "học hỏi kinh nghiệm"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "归国",
+          "pinyin": "guī guó",
+          "hanviet": "Quy Quốc"
+        },
+        {
+          "text": "后",
+          "pinyin": "hòu",
+          "hanviet": "Hậu",
+          "hsk": 1,
+          "word_id": "hsk1_524",
+          "meaning_vi": "sau"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "大雁塔",
+          "pinyin": "dà yàn tǎ",
+          "hanviet": "Đại Nhạn Tháp"
+        },
+        {
+          "text": "主持",
+          "pinyin": "zhǔchí",
+          "hanviet": "Chủ Trì",
+          "hsk": 5,
+          "word_id": "hsk5_1541",
+          "meaning_vi": "chủ trì, dẫn dắt"
+        },
+        {
+          "text": "翻译",
+          "pinyin": "fānyì",
+          "hanviet": "Phiên Dịch",
+          "hsk": 4,
+          "word_id": "hsk4_189",
+          "meaning_vi": "dịch, phiên dịch"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "数千卷",
+          "pinyin": "shù qiān juǎn",
+          "hanviet": "Sổ Thiên Cuộn"
+        },
+        {
+          "text": "梵文",
+          "pinyin": "fàn wén",
+          "hanviet": "Phạn Văn"
+        },
+        {
+          "text": "佛典",
+          "pinyin": "fó diǎn",
+          "hanviet": "Phật Điển"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "玄奘治学严谨，创立了‘五种不翻’的原则，成为中国翻译史上的崇高丰碑。",
+      "pinyin": "Xuánzàng zhìxué yánjǐn, chuànglì le ‘wǔ zhǒng bù fān’ de yuánzé, chéngwéi Zhōngguó fānyì shǐ shàng de chónggāo fēngbēi.",
+      "vi": "Ngài Huyền Trang nghiên cứu nghiêm cẩn, lập ra nguyên tắc 'Năm phép không dịch' (Ngũ bất phiên), trở thành tượng đài trong lịch sử dịch thuật.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "玄奘",
+          "pinyin": "xuán zàng",
+          "hanviet": "Huyền Trang"
+        },
+        {
+          "text": "治学严谨",
+          "pinyin": "zhì xué yán jǐn",
+          "hanviet": "Trị Học Nghiêm Cẩn"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "创立",
+          "pinyin": "chuànglì",
+          "hanviet": "Sáng Lập",
+          "hsk": 6,
+          "word_id": "hsk6_214",
+          "meaning_vi": "sáng lập"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "五种",
+          "pinyin": "wǔ zhǒng",
+          "hanviet": "Ngũ Chủng"
+        },
+        {
+          "text": "不翻",
+          "pinyin": "bù fān",
+          "hanviet": "Bất Phiên"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "原则",
+          "pinyin": "yuánzé",
+          "hanviet": "Nguyên Tắc",
+          "hsk": 5,
+          "word_id": "hsk5_1433",
+          "meaning_vi": "nguyên tắc"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "成为",
+          "pinyin": "chéngwéi",
+          "hanviet": "Thành Vi",
+          "hsk": 4,
+          "word_id": "hsk4_82",
+          "meaning_vi": "trở thành"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "翻译",
+          "pinyin": "fānyì",
+          "hanviet": "Phiên Dịch",
+          "hsk": 4,
+          "word_id": "hsk4_189",
+          "meaning_vi": "dịch, phiên dịch"
+        },
+        {
+          "text": "史上",
+          "pinyin": "shǐ shàng",
+          "hanviet": "Sử Thướng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "崇高",
+          "pinyin": "chónggāo",
+          "hanviet": "Sùng Cao",
+          "hsk": 7,
+          "word_id": "hsk7_543",
+          "meaning_vi": "cao cả"
+        },
+        {
+          "text": "丰碑",
+          "pinyin": "fēng bēi",
+          "hanviet": "Phong Bi"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "近代启蒙思想家严复系统翻译了西方科学与哲学经典，提出了‘信、达、雅’的卓越翻译标准。",
+      "pinyin": "Jìndài qǐméng sīxiǎngjiā Yán Fù xìtǒng fānyì le xīfāng kēxué yǔ zhéxué jīngdiǎn, tíchū le ‘xìn, dá, yǎ’ de zhuóyuè fānyì biāozhǔn.",
+      "vi": "Nhà tư tưởng khai sáng Nghiêm Phục thời cận đại đã dịch các tác phẩm khoa học và triết học phương Tây, đề ra tiêu chuẩn 'Tín, Đạt, Nhã' mẫu mực.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "近代",
+          "pinyin": "jìndài",
+          "hanviet": "Cận Đại",
+          "hsk": 5,
+          "word_id": "hsk5_614",
+          "meaning_vi": "thời cận đại"
+        },
+        {
+          "text": "启蒙",
+          "pinyin": "qǐméng",
+          "hanviet": "Khởi Mông",
+          "hsk": 7,
+          "word_id": "hsk7_3166",
+          "meaning_vi": "khai sáng, vỡ lòng"
+        },
+        {
+          "text": "思想家",
+          "pinyin": "sī xiǎng jiā",
+          "hanviet": "Tư Tưởng Gia"
+        },
+        {
+          "text": "严复",
+          "pinyin": "yán fù",
+          "hanviet": "Nghiêm Phục"
+        },
+        {
+          "text": "系统",
+          "pinyin": "xìtǒng",
+          "hanviet": "Hệ Thống",
+          "hsk": 5,
+          "word_id": "hsk5_1229",
+          "meaning_vi": "hệ thống"
+        },
+        {
+          "text": "翻译",
+          "pinyin": "fānyì",
+          "hanviet": "Phiên Dịch",
+          "hsk": 4,
+          "word_id": "hsk4_189",
+          "meaning_vi": "dịch, phiên dịch"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "西方",
+          "pinyin": "xīfāng",
+          "hanviet": "Tây Phương",
+          "hsk": 3,
+          "word_id": "hsk3_961",
+          "meaning_vi": "phía tây; phương Tây"
+        },
+        {
+          "text": "科学",
+          "pinyin": "kēxué",
+          "hanviet": "Khoa Học",
+          "hsk": 4,
+          "word_id": "hsk4_426",
+          "meaning_vi": "khoa học"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "哲学",
+          "pinyin": "zhéxué",
+          "hanviet": "Triết Học",
+          "hsk": 5,
+          "word_id": "hsk5_1480",
+          "meaning_vi": "triết học"
+        },
+        {
+          "text": "经典",
+          "pinyin": "jīngdiǎn",
+          "hanviet": "Kinh Điển",
+          "hsk": 5,
+          "word_id": "hsk5_621",
+          "meaning_vi": "cổ điển, kinh điển"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "提出",
+          "pinyin": "tíchū",
+          "hanviet": "Đề Xuất",
+          "hsk": 4,
+          "word_id": "hsk4_727",
+          "meaning_vi": "đưa ra, nêu ra"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "‘"
+        },
+        {
+          "text": "信",
+          "pinyin": "xìn",
+          "hanviet": "Tín",
+          "hsk": 3,
+          "word_id": "hsk3_985",
+          "meaning_vi": "thư; tin, tin tưởng"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "达",
+          "pinyin": "dá",
+          "hanviet": "Đạt"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "雅",
+          "pinyin": "yǎ",
+          "hanviet": "Nhã"
+        },
+        {
+          "text": "’"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "卓越",
+          "pinyin": "zhuóyuè",
+          "hanviet": "Trác Việt",
+          "hsk": 7,
+          "word_id": "hsk7_5491",
+          "meaning_vi": "trắc việt, kiệt xuất, xuất sắc vượt trội"
+        },
+        {
+          "text": "翻译",
+          "pinyin": "fānyì",
+          "hanviet": "Phiên Dịch",
+          "hsk": 4,
+          "word_id": "hsk4_189",
+          "meaning_vi": "dịch, phiên dịch"
+        },
+        {
+          "text": "标准",
+          "pinyin": "biāozhǔn",
+          "hanviet": "Tiêu Chuẩn",
+          "hsk": 4,
+          "word_id": "hsk4_32",
+          "meaning_vi": "tiêu chuẩn"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "今天，无论是文学交流还是科技合作，优秀的翻译者始终扮演着推动世界前行的文化摆渡人角色。",
+      "pinyin": "Jīntiān, wúlùn shì wénxué jiāoliú háishì kējì hézuò, yōuxiù de fānyìzhě shǐzhōng bànyǎn zhe tuīdòng shìjiè qiánxíng de wénhuà bǎidùrén juésè.",
+      "vi": "Ngày nay, dù là giao lưu văn học hay hợp tác công nghệ, các dịch giả xuất sắc luôn đóng vai người lái đò đưa tri thức tiến bước.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "今天",
+          "pinyin": "jīntiān",
+          "hanviet": "Kim Thiên",
+          "hsk": 1,
+          "word_id": "hsk1_144",
+          "meaning_vi": "hôm nay"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "无论是",
+          "pinyin": "wú lùn shì",
+          "hanviet": "Vô Luận Thị"
+        },
+        {
+          "text": "文学",
+          "pinyin": "wénxué",
+          "hanviet": "Văn Học",
+          "hsk": 5,
+          "word_id": "hsk5_1200",
+          "meaning_vi": "văn học"
+        },
+        {
+          "text": "交流",
+          "pinyin": "jiāoliú",
+          "hanviet": "Giao Lưu",
+          "hsk": 4,
+          "word_id": "hsk4_370",
+          "meaning_vi": "giao lưu, trao đổi"
+        },
+        {
+          "text": "还是",
+          "pinyin": "háishi",
+          "hanviet": "Hoàn Thị",
+          "hsk": 2,
+          "word_id": "hsk2_352",
+          "meaning_vi": "hay là; vẫn là"
+        },
+        {
+          "text": "科技",
+          "pinyin": "kējì",
+          "hanviet": "Khoa Kỹ",
+          "hsk": 4,
+          "word_id": "hsk4_425",
+          "meaning_vi": "khoa học kỹ thuật, công nghệ"
+        },
+        {
+          "text": "合作",
+          "pinyin": "hézuò",
+          "hanviet": "Hợp Tác",
+          "hsk": 5,
+          "word_id": "hsk5_481",
+          "meaning_vi": "hợp tác"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "优秀",
+          "pinyin": "yōuxiù",
+          "hanviet": "Ưu Tú",
+          "hsk": 4,
+          "word_id": "hsk4_883",
+          "meaning_vi": "ưu tú, xuất sắc"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "翻译者",
+          "pinyin": "fān yì zhě",
+          "hanviet": "Phiên Dịch Giả"
+        },
+        {
+          "text": "始终",
+          "pinyin": "shǐzhōng",
+          "hanviet": "Thủy Chung",
+          "hsk": 5,
+          "word_id": "hsk5_1027",
+          "meaning_vi": "trước sau, luôn luôn"
+        },
+        {
+          "text": "扮演着",
+          "pinyin": "bàn yǎn zhe",
+          "hanviet": "Ban Diễn Trước"
+        },
+        {
+          "text": "推动",
+          "pinyin": "tuīdòng",
+          "hanviet": "Suy Động",
+          "hsk": 5,
+          "word_id": "hsk5_1158",
+          "meaning_vi": "thúc đẩy, đẩy mạnh"
+        },
+        {
+          "text": "世界",
+          "pinyin": "shìjiè",
+          "hanviet": "Thế Giới",
+          "hsk": 3,
+          "word_id": "hsk3_916",
+          "meaning_vi": "thế giới"
+        },
+        {
+          "text": "前行",
+          "pinyin": "qián xíng",
+          "hanviet": "Tiền Hành"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "文化",
+          "pinyin": "wénhuà",
+          "hanviet": "Văn Hóa",
+          "hsk": 3,
+          "word_id": "hsk3_957",
+          "meaning_vi": "văn hóa"
+        },
+        {
+          "text": "摆渡人",
+          "pinyin": "bǎi dù rén",
+          "hanviet": "Bài Độ Nhân"
+        },
+        {
+          "text": "角色",
+          "pinyin": "juésè",
+          "hanviet": "Giác Sắc",
+          "hsk": 5,
+          "word_id": "hsk5_647",
+          "meaning_vi": "vai diễn, vai trò"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk4_189",
+    "hsk5_204",
+    "hsk4_82",
+    "hsk4_32"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Cao tăng Đường Huyền Trang đã dịch kinh Phật chữ Phạn tại địa điểm nổi tiếng nào?",
+      "options_vi": [
+        "Tháp Đại Nhạn (Tây An)",
+        "Cố Cung Bắc Kinh",
+        "Chùa Thiếu Lâm"
+      ],
+      "answer": 0,
+      "explanation_vi": "Đường Huyền Trang dịch kinh tại Dịch kinh viện ở Đại Nhạn Tháp (Tây An)."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Tiêu chuẩn dịch thuật kinh điển 'Tín, Đạt, Nhã' (信、达、雅) do ai đề xướng?",
+      "options_vi": [
+        "Học giả Nghiêm Phục",
+        "Lỗ Tấn",
+        "Từ Vạn Thọ"
+      ],
+      "answer": 0,
+      "explanation_vi": "Nghiêm Phục đề ra chuẩn 'Tín' (trung thành), 'Đạt' (thông suốt), 'Nhã' (trang nhã)."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Hình ảnh ẩn dụ nào thường được dùng để ca ngợi vai trò của các dịch giả?",
+      "options_vi": [
+        "Người lái đò văn hóa đưa tri thức qua sông",
+        "Người canh gác cổng thành",
+        "Thợ mộc đóng thuyền"
+      ],
+      "answer": 0,
+      "explanation_vi": "Dịch giả được ví như người lái đò đưa người đọc vượt qua rào cản ngôn ngữ đến bến bờ hiểu biết."
+    }
+  ]
+}
