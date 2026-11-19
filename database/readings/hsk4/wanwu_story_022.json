@@ -1,0 +1,770 @@
+{
+  "id": "wanwu_story_022",
+  "chapter_no": 22,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 1,
+  "book_page_start": 219,
+  "book_page_end": 232,
+  "page_display": "Trang 219 - 232",
+  "title": {
+    "zh": "养老金：缘起互助互济",
+    "vi": "Lương hưu: Bắt nguồn từ tương trợ lẫn nhau"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "👵",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_022.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_022.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 219 - 232 · Hành trình của quỹ hưu trí: từ các hội ái hữu tương trợ thời công nghiệp hóa đến trụ cột an sinh xã hội hiện đại.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "“老有所养”自古以来就是人类社会对安宁尊严晚年生活的美好期盼。",
+      "pinyin": "“Lǎo yǒu suǒ yǎng” zìgǔ yǐlái jiù shì rénlèi shèhuì duì ānníng zūnyán wǎnnián shēnghuó de měihǎo qīpàn.",
+      "vi": "'Tuổi già được phụng dưỡng' từ xưa tới nay luôn là khát vọng về cuộc sống lúc xế chiều bình yên và tôn nghiêm.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "“"
+        },
+        {
+          "text": "老有所养",
+          "pinyin": "lǎo yǒu suǒ yǎng",
+          "hanviet": "Lão Hữu Sở Dưỡng"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "自古以来",
+          "pinyin": "zì gǔ yǐ lái",
+          "hanviet": "Tự Cổ Dĩ Lai"
+        },
+        {
+          "text": "就是",
+          "pinyin": "jiùshì",
+          "hanviet": "Tựu Thị",
+          "hsk": 4,
+          "word_id": "hsk4_408",
+          "meaning_vi": "chính là; dù… cũng"
+        },
+        {
+          "text": "人类",
+          "pinyin": "rénlèi",
+          "hanviet": "Nhân Loại",
+          "hsk": 5,
+          "word_id": "hsk5_921",
+          "meaning_vi": "loài người, nhân loại"
+        },
+        {
+          "text": "社会",
+          "pinyin": "shèhuì",
+          "hanviet": "Xã Hội",
+          "hsk": 4,
+          "word_id": "hsk4_639",
+          "meaning_vi": "xã hội"
+        },
+        {
+          "text": "对",
+          "pinyin": "duì",
+          "hanviet": "Đối",
+          "hsk": 1,
+          "word_id": "hsk1_79",
+          "meaning_vi": "đối với, hướng về (giới từ)"
+        },
+        {
+          "text": "安宁",
+          "pinyin": "ānníng",
+          "hanviet": "An Ninh",
+          "hsk": 7,
+          "word_id": "hsk7_17",
+          "meaning_vi": "yên bình, thanh bình"
+        },
+        {
+          "text": "尊严",
+          "pinyin": "zūnyán",
+          "hanviet": "Tôn Nghiêm",
+          "hsk": 7,
+          "word_id": "hsk7_5582",
+          "meaning_vi": "phẩm giá"
+        },
+        {
+          "text": "晚年生活",
+          "pinyin": "wǎn nián shēng huó",
+          "hanviet": "Vãn Niên Sinh Hoạt"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "美好",
+          "pinyin": "měihǎo",
+          "hanviet": "Mỹ Hảo",
+          "hsk": 4,
+          "word_id": "hsk4_501",
+          "meaning_vi": "tốt đẹp"
+        },
+        {
+          "text": "期盼",
+          "pinyin": "qīpàn",
+          "hanviet": "Kỳ Phán",
+          "hsk": 7,
+          "word_id": "hsk7_3143",
+          "meaning_vi": "mong mỏi; mong chờ; ngóng đợi"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "工业革命以前，老人晚年的照料主要完全依靠家族内部的子女赡养。",
+      "pinyin": "Gōngyè gémìng yǐqián, lǎorén wǎnnián de zhàoliào zhǔyào wánquán yīkào jiāzú nèibù de zǐnǚ shànyǎng.",
+      "vi": "Trước cách mạng công nghiệp, việc chăm sóc người già hoàn toàn trông cậy vào con cháu trong gia tộc.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "工业革命",
+          "pinyin": "gōng yè gé mìng",
+          "hanviet": "Công Nghiệp Cách Mệnh"
+        },
+        {
+          "text": "以前",
+          "pinyin": "yǐqián",
+          "hanviet": "Dĩ Tiền",
+          "hsk": 3,
+          "word_id": "hsk3_1006",
+          "meaning_vi": "trước đây"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "老人",
+          "pinyin": "lǎorén",
+          "hanviet": "Lão Nhân",
+          "hsk": 3,
+          "word_id": "hsk3_828",
+          "meaning_vi": "người già"
+        },
+        {
+          "text": "晚年",
+          "pinyin": "wǎnnián",
+          "hanviet": "Vãn Niên",
+          "hsk": 7,
+          "word_id": "hsk7_4197",
+          "meaning_vi": "tuổi già; những năm cuối đời"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "照料",
+          "pinyin": "zhàoliào",
+          "hanviet": "Chiếu Liệu",
+          "hsk": 7,
+          "word_id": "hsk7_5192",
+          "meaning_vi": "chăm sóc, săn sóc"
+        },
+        {
+          "text": "主要",
+          "pinyin": "zhǔyào",
+          "hanviet": "Chủ Yếu",
+          "hsk": 3,
+          "word_id": "hsk3_1066",
+          "meaning_vi": "chủ yếu"
+        },
+        {
+          "text": "完全",
+          "pinyin": "wánquán",
+          "hanviet": "Hoàn Toàn",
+          "hsk": 4,
+          "word_id": "hsk4_762",
+          "meaning_vi": "hoàn toàn"
+        },
+        {
+          "text": "依靠",
+          "pinyin": "yīkào",
+          "hanviet": "Y Kháo",
+          "hsk": 5,
+          "word_id": "hsk5_1347",
+          "meaning_vi": "dựa vào"
+        },
+        {
+          "text": "家族",
+          "pinyin": "jiāzú",
+          "hanviet": "Gia Tộc",
+          "hsk": 7,
+          "word_id": "hsk7_1936",
+          "meaning_vi": "gia đình"
+        },
+        {
+          "text": "内部",
+          "pinyin": "nèibù",
+          "hanviet": "Nội Bộ",
+          "hsk": 5,
+          "word_id": "hsk5_795",
+          "meaning_vi": "nội bộ, bên trong"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "子女",
+          "pinyin": "zǐnǚ",
+          "hanviet": "Tử Nữ",
+          "hsk": 5,
+          "word_id": "hsk5_1573",
+          "meaning_vi": "con cái"
+        },
+        {
+          "text": "赡养",
+          "pinyin": "shànyǎng",
+          "hanviet": "Thiệm Dưỡng",
+          "hsk": 7,
+          "word_id": "hsk7_3511",
+          "meaning_vi": "phụng dưỡng; nuôi dưỡng"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "十九世纪末，德国铁血宰相俾斯麦为了稳定社会秩序，创立了世界上第一个国家法定的养老金保险制度。",
+      "pinyin": "Shíjiǔ shìjì mò, Déguó tiěxuè zǎixiàng Bǐsīmài wèile wěndìng shèhuì zhìxù, chuànglì le shìjiè shàng dì-yī gè guójiā fǎdìng de yǎnglǎojīn bǎoxiǎn zhìdù.",
+      "vi": "Cuối thế kỷ 19, thủ tướng Đức Bismarck đã sáng lập hệ thống bảo hiểm hưu trí nhà nước đầu tiên trên thế giới.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "十九",
+          "pinyin": "shí jiǔ",
+          "hanviet": "Thập Cửu"
+        },
+        {
+          "text": "世纪末",
+          "pinyin": "shì jì mò",
+          "hanviet": "Thế Kỷ Mạt"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "德国",
+          "pinyin": "dé guó",
+          "hanviet": "Đức Quốc"
+        },
+        {
+          "text": "铁血宰相",
+          "pinyin": "tiě xuè zǎi xiàng",
+          "hanviet": "Thiết Huyết Tể Tương"
+        },
+        {
+          "text": "俾斯麦",
+          "pinyin": "bǐ sī mài",
+          "hanviet": "Tỷ Tư Mạch"
+        },
+        {
+          "text": "为了",
+          "pinyin": "wèile",
+          "hanviet": "Vi Liễu",
+          "hsk": 3,
+          "word_id": "hsk3_955",
+          "meaning_vi": "để (mục đích)"
+        },
+        {
+          "text": "稳定",
+          "pinyin": "wěndìng",
+          "hanviet": "Ổn Định",
+          "hsk": 5,
+          "word_id": "hsk5_1201",
+          "meaning_vi": "ổn định"
+        },
+        {
+          "text": "社会秩序",
+          "pinyin": "shè huì zhì xù",
+          "hanviet": "Xã Hội Trật Tự"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "创立",
+          "pinyin": "chuànglì",
+          "hanviet": "Sáng Lập",
+          "hsk": 6,
+          "word_id": "hsk6_214",
+          "meaning_vi": "sáng lập"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "世界",
+          "pinyin": "shìjiè",
+          "hanviet": "Thế Giới",
+          "hsk": 3,
+          "word_id": "hsk3_916",
+          "meaning_vi": "thế giới"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "第一个",
+          "pinyin": "dì yí gè",
+          "hanviet": "Đệ Nhất Cá"
+        },
+        {
+          "text": "国家",
+          "pinyin": "guójiā",
+          "hanviet": "Quốc Gia",
+          "hsk": 3,
+          "word_id": "hsk3_749",
+          "meaning_vi": "quốc gia"
+        },
+        {
+          "text": "法定",
+          "pinyin": "fǎdìng",
+          "hanviet": "Pháp Định",
+          "hsk": 6,
+          "word_id": "hsk6_359",
+          "meaning_vi": "theo luật định, luật định"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "养老金",
+          "pinyin": "yǎng lǎo jīn",
+          "hanviet": "Dưỡng Lão Kim"
+        },
+        {
+          "text": "保险制度",
+          "pinyin": "bǎo xiǎn zhì dù",
+          "hanviet": "Bảo Hiểm Chế Độ"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "这种由国家、企业雇主与个人共同缴纳保险费的模式，迅速成为现代福利国家的基石。",
+      "pinyin": "Zhè zhǒng yóu guójiā, qǐyè gùzhǔ yǔ gèrén gòngtóng jiǎonà bǎoxiǎnfèi de móshì, xùnsù chéngwéi xiàndài fúlì guójiā de jīshí.",
+      "vi": "Mô hình cùng đóng góp giữa Nhà nước, người sử dụng lao động và người lao động đã trở thành nền móng an sinh.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "这种",
+          "pinyin": "zhè zhǒng",
+          "hanviet": "Giá Chủng"
+        },
+        {
+          "text": "由",
+          "pinyin": "yóu",
+          "hanviet": "Do",
+          "hsk": 4,
+          "word_id": "hsk4_884",
+          "meaning_vi": "do, từ"
+        },
+        {
+          "text": "国家",
+          "pinyin": "guójiā",
+          "hanviet": "Quốc Gia",
+          "hsk": 3,
+          "word_id": "hsk3_749",
+          "meaning_vi": "quốc gia"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "企业",
+          "pinyin": "qǐyè",
+          "hanviet": "Xí Nghiệp",
+          "hsk": 5,
+          "word_id": "hsk5_856",
+          "meaning_vi": "doanh nghiệp"
+        },
+        {
+          "text": "雇主",
+          "pinyin": "gùzhǔ",
+          "hanviet": "Cố Chủ",
+          "hsk": 7,
+          "word_id": "hsk7_1461",
+          "meaning_vi": "chủ thuê, người sử dụng lao động"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "个人",
+          "pinyin": "gèrén",
+          "hanviet": "Cá Nhân",
+          "hsk": 5,
+          "word_id": "hsk5_400",
+          "meaning_vi": "cá nhân"
+        },
+        {
+          "text": "共同",
+          "pinyin": "gòngtóng",
+          "hanviet": "Cộng Đồng",
+          "hsk": 4,
+          "word_id": "hsk4_259",
+          "meaning_vi": "chung, cùng nhau"
+        },
+        {
+          "text": "缴纳",
+          "pinyin": "jiǎonà",
+          "hanviet": "Kiểu Nạp",
+          "hsk": 7,
+          "word_id": "hsk7_2053",
+          "meaning_vi": "đóng nộp, nộp (thuế, phí)"
+        },
+        {
+          "text": "保险费",
+          "pinyin": "bǎo xiǎn fèi",
+          "hanviet": "Bảo Hiểm Phí"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "模式",
+          "pinyin": "móshì",
+          "hanviet": "Mô Thức",
+          "hsk": 5,
+          "word_id": "hsk5_783",
+          "meaning_vi": "mô hình, phương thức"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "迅速",
+          "pinyin": "xùnsù",
+          "hanviet": "Tấn Tốc",
+          "hsk": 5,
+          "word_id": "hsk5_1319",
+          "meaning_vi": "nhanh chóng"
+        },
+        {
+          "text": "成为",
+          "pinyin": "chéngwéi",
+          "hanviet": "Thành Vi",
+          "hsk": 4,
+          "word_id": "hsk4_82",
+          "meaning_vi": "trở thành"
+        },
+        {
+          "text": "现代",
+          "pinyin": "xiàndài",
+          "hanviet": "Hiện Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1239",
+          "meaning_vi": "hiện đại"
+        },
+        {
+          "text": "福利",
+          "pinyin": "fúlì",
+          "hanviet": "Phúc Lợi",
+          "hsk": 6,
+          "word_id": "hsk6_403",
+          "meaning_vi": "phúc lợi"
+        },
+        {
+          "text": "国家",
+          "pinyin": "guójiā",
+          "hanviet": "Quốc Gia",
+          "hsk": 3,
+          "word_id": "hsk3_749",
+          "meaning_vi": "quốc gia"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "基石",
+          "pinyin": "jī shí",
+          "hanviet": "Cơ Thạch"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "健全的可持续养老金体系，如同一张坚实的社会安全网，为每位辛勤工作的人撑起温暖的晚年天空。",
+      "pinyin": "Jiànquán de kě-chíxù yǎnglǎojīn tǐxì, rútóng yì zhāng jiānshí de shèhuì ānquánwǎng, wèi měi wèi xīnqín gōngzuò de rén chēng qǐ wēnxīn de wǎnnián tiānkōng.",
+      "vi": "Hệ thống hưu trí bền vững như tấm lưới an sinh vững chãi, nâng đỡ tuổi già ấm áp cho những người cả đời lao động.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "健全",
+          "pinyin": "jiànquán",
+          "hanviet": "Kiện Toàn",
+          "hsk": 6,
+          "word_id": "hsk6_662",
+          "meaning_vi": "hoàn thiện, kiện toàn"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "可",
+          "pinyin": "kě",
+          "hanviet": "Khả",
+          "hsk": 3,
+          "word_id": "hsk3_814",
+          "meaning_vi": "nhưng; thật là (nhấn mạnh)"
+        },
+        {
+          "text": "持续",
+          "pinyin": "chíxù",
+          "hanviet": "Trì Tục",
+          "hsk": 5,
+          "word_id": "hsk5_155",
+          "meaning_vi": "tiếp tục, kéo dài"
+        },
+        {
+          "text": "养老金",
+          "pinyin": "yǎng lǎo jīn",
+          "hanviet": "Dưỡng Lão Kim"
+        },
+        {
+          "text": "体系",
+          "pinyin": "tǐxì",
+          "hanviet": "Thể Hệ",
+          "hsk": 6,
+          "word_id": "hsk6_1286",
+          "meaning_vi": "hệ thống"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "如同",
+          "pinyin": "rútóng",
+          "hanviet": "Như Đồng",
+          "hsk": 5,
+          "word_id": "hsk5_936",
+          "meaning_vi": "như, giống như, tựa như"
+        },
+        {
+          "text": "一张",
+          "pinyin": "yī zhāng",
+          "hanviet": "Nhất Trương"
+        },
+        {
+          "text": "坚实",
+          "pinyin": "jiānshí",
+          "hanviet": "Kiên Thực",
+          "hsk": 7,
+          "word_id": "hsk7_1965",
+          "meaning_vi": "vững chắc, kiên cố, bền vững"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "社会",
+          "pinyin": "shèhuì",
+          "hanviet": "Xã Hội",
+          "hsk": 4,
+          "word_id": "hsk4_639",
+          "meaning_vi": "xã hội"
+        },
+        {
+          "text": "安全网",
+          "pinyin": "ān quán wǎng",
+          "hanviet": "An Toàn Võng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "为",
+          "pinyin": "wèi",
+          "hanviet": "Vi",
+          "hsk": 3,
+          "word_id": "hsk3_954",
+          "meaning_vi": "vì, cho"
+        },
+        {
+          "text": "每位",
+          "pinyin": "měi wèi",
+          "hanviet": "Mỗi Vị"
+        },
+        {
+          "text": "辛勤工作",
+          "pinyin": "xīn qín gōng zuò",
+          "hanviet": "Tân Cần Công Tác"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "人",
+          "pinyin": "rén",
+          "hanviet": "Nhân",
+          "hsk": 1,
+          "word_id": "hsk1_243",
+          "meaning_vi": "người"
+        },
+        {
+          "text": "撑起",
+          "pinyin": "chēng qǐ",
+          "hanviet": "Chống Khởi"
+        },
+        {
+          "text": "温暖",
+          "pinyin": "wēnnuǎn",
+          "hanviet": "Ôn Noãn",
+          "hsk": 5,
+          "word_id": "hsk5_1199",
+          "meaning_vi": "ấm áp"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "晚年",
+          "pinyin": "wǎnnián",
+          "hanviet": "Vãn Niên",
+          "hsk": 7,
+          "word_id": "hsk7_4197",
+          "meaning_vi": "tuổi già; những năm cuối đời"
+        },
+        {
+          "text": "天空",
+          "pinyin": "tiānkōng",
+          "hanviet": "Thiên Không",
+          "hsk": 5,
+          "word_id": "hsk5_1124",
+          "meaning_vi": "bầu trời"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk4_639",
+    "hsk3_749",
+    "hsk3_911",
+    "hsk1_103"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Quốc gia nào ban hành đạo luật bảo hiểm hưu trí nhà nước đầu tiên trên thế giới?",
+      "options_vi": [
+        "Nước Đức dưới thời Thủ tướng Bismarck",
+        "Nước Mỹ",
+        "Nước Anh"
+      ],
+      "answer": 0,
+      "explanation_vi": "Nước Đức ban hành luật bảo hiểm hưu trí xã hội đầu tiên vào cuối thế kỷ 19."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Mô hình quỹ hưu trí hiện đại dựa trên sự đóng góp của các bên nào?",
+      "options_vi": [
+        "Nhà nước, doanh nghiệp và cá nhân người lao động",
+        "Chỉ cá nhân tự đóng",
+        "Chỉ người thân chu cấp"
+      ],
+      "answer": 0,
+      "explanation_vi": "Ba trụ cột: Nhà nước, doanh nghiệp sử dụng lao động và cá nhân đóng góp."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Ý nghĩa lớn nhất của hệ thống hưu trí là gì?",
+      "options_vi": [
+        "Bảo đảm sự độc lập tài chính và cuộc sống an yên khi về già",
+        "Khuyến khích nghỉ việc sớm",
+        "Thay thế con cháu"
+      ],
+      "answer": 0,
+      "explanation_vi": "Bảo đảm an sinh, tôn nghiêm và sự tự chủ tài chính cho người cao tuổi."
+    }
+  ]
+}

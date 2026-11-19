@@ -1,0 +1,839 @@
+{
+  "id": "wanwu_story_018",
+  "chapter_no": 18,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 1,
+  "book_page_start": 174,
+  "book_page_end": 187,
+  "page_display": "Trang 174 - 187",
+  "title": {
+    "zh": "厕所：折射文明进程的一个侧影",
+    "vi": "Nhà vệ sinh: Góc khuất phản chiếu tiến trình văn minh"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🚽",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_018.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_018.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 174 - 187 · Lịch sử vệ sinh công cộng: từ rãnh nước ngầm La Mã cổ đại đến chiếc bồn cầu xả nước thay đổi sức khỏe nhân loại.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "历史学家常说，人类文明的真正成熟，往往是从第一个公共卫生设施的建立开始的。",
+      "pinyin": "Lìshǐ xuéjiā cháng shuō, rénlèi wénmíng de zhēnzhèng chéngshú, wǎngwǎng shì cóng dì-yī gè gōnggòng wèishēng shèshī de jiànlì kāishǐ de.",
+      "vi": "Các sử gia nhận định sự trưởng thành của văn minh thường khởi nguồn từ công trình vệ sinh công cộng đầu tiên.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "历史学家",
+          "pinyin": "lì shǐ xué jiā",
+          "hanviet": "Lịch Sử Học Gia"
+        },
+        {
+          "text": "常说",
+          "pinyin": "cháng shuō",
+          "hanviet": "Thường Thuyết"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "人类文明",
+          "pinyin": "rén lèi wén míng",
+          "hanviet": "Nhân Loại Văn Minh"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "真正",
+          "pinyin": "zhēnzhèng",
+          "hanviet": "Chân Chính",
+          "hsk": 4,
+          "word_id": "hsk4_927",
+          "meaning_vi": "thực sự, chân chính"
+        },
+        {
+          "text": "成熟",
+          "pinyin": "chéngshú",
+          "hanviet": "Thành Thục",
+          "hsk": 5,
+          "word_id": "hsk5_148",
+          "meaning_vi": "chín, trưởng thành"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "往往",
+          "pinyin": "wǎngwǎng",
+          "hanviet": "Vãng Vãng",
+          "hsk": 4,
+          "word_id": "hsk4_766",
+          "meaning_vi": "thường thường"
+        },
+        {
+          "text": "是从",
+          "pinyin": "shì cóng",
+          "hanviet": "Thị Tòng"
+        },
+        {
+          "text": "第一个",
+          "pinyin": "dì yí gè",
+          "hanviet": "Đệ Nhất Cá"
+        },
+        {
+          "text": "公共卫生",
+          "pinyin": "gōng gòng wèi shēng",
+          "hanviet": "Công Cộng Vệ Sinh"
+        },
+        {
+          "text": "设施",
+          "pinyin": "shèshī",
+          "hanviet": "Thiết Thi",
+          "hsk": 5,
+          "word_id": "hsk5_976",
+          "meaning_vi": "cơ sở vật chất, hạ tầng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "建立",
+          "pinyin": "jiànlì",
+          "hanviet": "Kiến Lập",
+          "hsk": 5,
+          "word_id": "hsk5_575",
+          "meaning_vi": "xây dựng, kiến lập"
+        },
+        {
+          "text": "开始",
+          "pinyin": "kāishǐ",
+          "hanviet": "Khai Thuỷ",
+          "hsk": 2,
+          "word_id": "hsk2_378",
+          "meaning_vi": "bắt đầu"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "古罗马时期就修建了宏伟的公共排水系统，但现代意义上的抽水马桶直到十六世纪末才被发明。",
+      "pinyin": "Gǔ Luómǎ shíqī jiù xiūjiàn le hóngwěi de gōnggòng páishuǐ xìtǒng, dàn xiàndài yìyì shàng de chōushuǐ mǎtǒng zhídào shíliù shìjì mò cái bèi fāmíng.",
+      "vi": "Thời La Mã đã có hệ thống cống ngầm, nhưng bồn cầu xả nước hiện đại đến cuối thế kỷ 16 mới ra đời.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "古罗马",
+          "pinyin": "gǔ luó mǎ",
+          "hanviet": "Cổ La Mã"
+        },
+        {
+          "text": "时期",
+          "pinyin": "shíqī",
+          "hanviet": "Thời Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_1016",
+          "meaning_vi": "thời kỳ"
+        },
+        {
+          "text": "就",
+          "pinyin": "jiù",
+          "hanviet": "Tựu",
+          "hsk": 2,
+          "word_id": "hsk2_376",
+          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)"
+        },
+        {
+          "text": "修建",
+          "pinyin": "xiūjiàn",
+          "hanviet": "Tu Kiến",
+          "hsk": 5,
+          "word_id": "hsk5_1301",
+          "meaning_vi": "xây dựng"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "宏伟",
+          "pinyin": "hóngwěi",
+          "hanviet": "Hoành Vĩ",
+          "hsk": 7,
+          "word_id": "hsk7_1676",
+          "meaning_vi": "hùng vĩ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "公共",
+          "pinyin": "gōnggòng",
+          "hanviet": "Công Cộng",
+          "hsk": 4,
+          "word_id": "hsk4_252",
+          "meaning_vi": "công cộng"
+        },
+        {
+          "text": "排水系统",
+          "pinyin": "pái shuǐ xì tǒng",
+          "hanviet": "Bài Thuỷ Hệ Thống"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "但",
+          "pinyin": "dàn",
+          "hanviet": "Đãn",
+          "hsk": 2,
+          "word_id": "hsk2_330",
+          "meaning_vi": "nhưng, nhưng mà"
+        },
+        {
+          "text": "现代",
+          "pinyin": "xiàndài",
+          "hanviet": "Hiện Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1239",
+          "meaning_vi": "hiện đại"
+        },
+        {
+          "text": "意义",
+          "pinyin": "yìyì",
+          "hanviet": "Ý Nghĩa",
+          "hsk": 5,
+          "word_id": "hsk5_1370",
+          "meaning_vi": "ý nghĩa"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "抽水马桶",
+          "pinyin": "chōu shuǐ mǎ tǒng",
+          "hanviet": "Trừu Thuỷ Mã Thùng"
+        },
+        {
+          "text": "直到",
+          "pinyin": "zhídào",
+          "hanviet": "Trực Đáo",
+          "hsk": 3,
+          "word_id": "hsk3_1053",
+          "meaning_vi": "cho đến, mãi đến"
+        },
+        {
+          "text": "十六",
+          "pinyin": "shí liù",
+          "hanviet": "Thập Lục"
+        },
+        {
+          "text": "世纪末",
+          "pinyin": "shì jì mò",
+          "hanviet": "Thế Kỷ Mạt"
+        },
+        {
+          "text": "才",
+          "pinyin": "cái",
+          "hanviet": "Tài"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "发明",
+          "pinyin": "fāmíng",
+          "hanviet": "Phát Minh",
+          "hsk": 5,
+          "word_id": "hsk5_320",
+          "meaning_vi": "phát minh"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "一五九六年，英国爵士哈灵顿为伊丽莎白一世女王发明了第一座带水箱与冲水阀门的马桶。",
+      "pinyin": "Yī-wǔ-jiǔ-liù nián, Yīngguó juéshì Hālíngdùn wèi Yīlìshābái Yīshì nǚwáng fāmíng le dì-yī zuò dài shuǐxiāng yǔ chōngshuǐ fámén de mǎtǒng.",
+      "vi": "Năm 1596, Sir Harrington chế tạo bồn cầu có két xả nước đầu tiên cho Nữ hoàng Elizabeth I.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "一五",
+          "pinyin": "yī wǔ",
+          "hanviet": "Nhất Ngũ"
+        },
+        {
+          "text": "九六年",
+          "pinyin": "jiǔ liù nián",
+          "hanviet": "Cửu Lục Niên"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "英国",
+          "pinyin": "yīng guó",
+          "hanviet": "Anh Quốc"
+        },
+        {
+          "text": "爵士",
+          "pinyin": "jué shì",
+          "hanviet": "Tước Sĩ"
+        },
+        {
+          "text": "哈灵顿",
+          "pinyin": "hā líng dùn",
+          "hanviet": "Ha Linh Đốn"
+        },
+        {
+          "text": "为",
+          "pinyin": "wèi",
+          "hanviet": "Vi",
+          "hsk": 3,
+          "word_id": "hsk3_954",
+          "meaning_vi": "vì, cho"
+        },
+        {
+          "text": "伊丽莎白",
+          "pinyin": "yī lì shā bái",
+          "hanviet": "Y Ly Sa Bạch"
+        },
+        {
+          "text": "一世",
+          "pinyin": "yī shì",
+          "hanviet": "Nhất Thế"
+        },
+        {
+          "text": "女王",
+          "pinyin": "nǚ wáng",
+          "hanviet": "Nữ Vương"
+        },
+        {
+          "text": "发明",
+          "pinyin": "fāmíng",
+          "hanviet": "Phát Minh",
+          "hsk": 5,
+          "word_id": "hsk5_320",
+          "meaning_vi": "phát minh"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "第一座",
+          "pinyin": "dì yī zuò",
+          "hanviet": "Đệ Nhất Toạ"
+        },
+        {
+          "text": "带",
+          "pinyin": "dài",
+          "hanviet": "Đới",
+          "hsk": 3,
+          "word_id": "hsk3_676",
+          "meaning_vi": "mang theo, đai"
+        },
+        {
+          "text": "水箱",
+          "pinyin": "shuǐ xiāng",
+          "hanviet": "Thuỷ Rương"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "冲水",
+          "pinyin": "chōng shuǐ",
+          "hanviet": "Xung Thuỷ"
+        },
+        {
+          "text": "阀门",
+          "pinyin": "fámén",
+          "hanviet": "Phiệt Môn",
+          "hsk": 7,
+          "word_id": "hsk7_1053",
+          "meaning_vi": "van khóa, van"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "马桶",
+          "pinyin": "mǎtǒng",
+          "hanviet": "Mã Thùng",
+          "hsk": 7,
+          "word_id": "hsk7_2730",
+          "meaning_vi": "bồn cầu"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "冲水马桶与现代下水道网络的普及，彻底阻断了霍乱等严重传染病的滋生传播，拯救了数以亿计的生命。",
+      "pinyin": "Chōushuǐ mǎtǒng yǔ xiàndài xiàshuǐdào wǎngluò de pǔjí, chèdǐ zǔduàn le huòluàn děng yánzhòng chuánrǎnbìng de zīshēng chuándì, zhèngjiù le shù yǐ yì jì de shēngmìng.",
+      "vi": "Bồn cầu xả nước và cống ngầm hiện đại đã dập tắt dịch tả và các bệnh truyền nhiễm, cứu sống hàng trăm triệu người.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "冲水",
+          "pinyin": "chōng shuǐ",
+          "hanviet": "Xung Thuỷ"
+        },
+        {
+          "text": "马桶",
+          "pinyin": "mǎtǒng",
+          "hanviet": "Mã Thùng",
+          "hsk": 7,
+          "word_id": "hsk7_2730",
+          "meaning_vi": "bồn cầu"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "现代",
+          "pinyin": "xiàndài",
+          "hanviet": "Hiện Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1239",
+          "meaning_vi": "hiện đại"
+        },
+        {
+          "text": "下水道",
+          "pinyin": "xià shuǐ dào",
+          "hanviet": "Hạ Thuỷ Đạo"
+        },
+        {
+          "text": "网络",
+          "pinyin": "wǎngluò",
+          "hanviet": "Võng Lạc",
+          "hsk": 5,
+          "word_id": "hsk5_1179",
+          "meaning_vi": "mạng, internet"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "普及",
+          "pinyin": "pǔjí",
+          "hanviet": "Phổ Cập",
+          "hsk": 5,
+          "word_id": "hsk5_849",
+          "meaning_vi": "phổ cập, phổ biến"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "彻底",
+          "pinyin": "chèdǐ",
+          "hanviet": "Triệt Để",
+          "hsk": 5,
+          "word_id": "hsk5_129",
+          "meaning_vi": "triệt để"
+        },
+        {
+          "text": "阻断",
+          "pinyin": "zǔ duàn",
+          "hanviet": "Trở Đoạn"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "霍乱",
+          "pinyin": "huò luàn",
+          "hanviet": "Hoắc Loạn"
+        },
+        {
+          "text": "等",
+          "pinyin": "děng",
+          "hanviet": "Đẳng",
+          "hsk": 2,
+          "word_id": "hsk2_20",
+          "meaning_vi": "đợi, chờ"
+        },
+        {
+          "text": "严重",
+          "pinyin": "yánzhòng",
+          "hanviet": "Nghiêm Trọng",
+          "hsk": 4,
+          "word_id": "hsk4_848",
+          "meaning_vi": "nghiêm trọng"
+        },
+        {
+          "text": "传染病",
+          "pinyin": "chuánrǎnbìng",
+          "hanviet": "Truyền Nhiễm Bệnh",
+          "hsk": 6,
+          "word_id": "hsk6_204",
+          "meaning_vi": "bệnh truyền nhiễm"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "滋生",
+          "pinyin": "zīshēng",
+          "hanviet": "Tư Sinh",
+          "hsk": 7,
+          "word_id": "hsk7_5499",
+          "meaning_vi": "sinh sôi nảy nở, nảy sinh (tệ nạn, vi khuẩn)"
+        },
+        {
+          "text": "传播",
+          "pinyin": "chuánbō",
+          "hanviet": "Truyền Bá",
+          "hsk": 5,
+          "word_id": "hsk5_184",
+          "meaning_vi": "truyền bá, lan truyền"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "拯救",
+          "pinyin": "zhěngjiù",
+          "hanviet": "Chửng Cứu",
+          "hsk": 7,
+          "word_id": "hsk7_5258",
+          "meaning_vi": "giải cứu, cứu rỗi, cứu thoát"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "数以亿计",
+          "pinyin": "shù yǐ yì jì",
+          "hanviet": "Sổ Dĩ Ức Kế"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "生命",
+          "pinyin": "shēngmìng",
+          "hanviet": "Sinh Mệnh",
+          "hsk": 4,
+          "word_id": "hsk4_648",
+          "meaning_vi": "sinh mệnh, sự sống"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "今天，干净整洁的卫生间已经成为衡量一个国家公共健康与社会文明程度的重要标志。",
+      "pinyin": "Jīntiān, gānjìng zhěngjié de wèishēngjiān yǐjīng chéngwéi héngliáng yí gè guójiā gōnggòng jiànkāng yǔ shèhuì wénmíng chéngdù de zhòngyào biāozhì.",
+      "vi": "Ngày nay, nhà vệ sinh sạch sẽ là thước đo chuẩn xác về mức độ văn minh và sức khỏe cộng đồng của mỗi quốc gia.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "今天",
+          "pinyin": "jīntiān",
+          "hanviet": "Kim Thiên",
+          "hsk": 1,
+          "word_id": "hsk1_144",
+          "meaning_vi": "hôm nay"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "干净",
+          "pinyin": "gānjìng",
+          "hanviet": "Can Tịnh",
+          "hsk": 3,
+          "word_id": "hsk3_728",
+          "meaning_vi": "sạch sẽ"
+        },
+        {
+          "text": "整洁",
+          "pinyin": "zhěngjié",
+          "hanviet": "Chỉnh Khiết",
+          "hsk": 7,
+          "word_id": "hsk7_5257",
+          "meaning_vi": "gọn gàng ngăn nắp, sạch sẽ tươm tất"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "卫生间",
+          "pinyin": "wèishēngjiān",
+          "hanviet": "Vệ Sinh Gian",
+          "hsk": 3,
+          "word_id": "hsk3_956",
+          "meaning_vi": "nhà vệ sinh"
+        },
+        {
+          "text": "已经",
+          "pinyin": "yǐjīng",
+          "hanviet": "Dĩ Kinh",
+          "hsk": 2,
+          "word_id": "hsk2_472",
+          "meaning_vi": "đã"
+        },
+        {
+          "text": "成为",
+          "pinyin": "chéngwéi",
+          "hanviet": "Thành Vi",
+          "hsk": 4,
+          "word_id": "hsk4_82",
+          "meaning_vi": "trở thành"
+        },
+        {
+          "text": "衡量",
+          "pinyin": "héngliáng",
+          "hanviet": "Hành Lượng",
+          "hsk": 6,
+          "word_id": "hsk6_549",
+          "meaning_vi": "đo lường, cân nhắc"
+        },
+        {
+          "text": "一个",
+          "pinyin": "yí gè",
+          "hanviet": "Nhất Cá"
+        },
+        {
+          "text": "国家",
+          "pinyin": "guójiā",
+          "hanviet": "Quốc Gia",
+          "hsk": 3,
+          "word_id": "hsk3_749",
+          "meaning_vi": "quốc gia"
+        },
+        {
+          "text": "公共",
+          "pinyin": "gōnggòng",
+          "hanviet": "Công Cộng",
+          "hsk": 4,
+          "word_id": "hsk4_252",
+          "meaning_vi": "công cộng"
+        },
+        {
+          "text": "健康",
+          "pinyin": "jiànkāng",
+          "hanviet": "Kiện Khang",
+          "hsk": 3,
+          "word_id": "hsk3_787",
+          "meaning_vi": "khỏe mạnh, sức khỏe"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "社会",
+          "pinyin": "shèhuì",
+          "hanviet": "Xã Hội",
+          "hsk": 4,
+          "word_id": "hsk4_639",
+          "meaning_vi": "xã hội"
+        },
+        {
+          "text": "文明",
+          "pinyin": "wénmíng",
+          "hanviet": "Văn Minh",
+          "hsk": 6,
+          "word_id": "hsk6_1389",
+          "meaning_vi": "văn minh"
+        },
+        {
+          "text": "程度",
+          "pinyin": "chéngdù",
+          "hanviet": "Trình Độ",
+          "hsk": 5,
+          "word_id": "hsk5_138",
+          "meaning_vi": "mức độ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "重要",
+          "pinyin": "zhòngyào",
+          "hanviet": "Trọng Yếu",
+          "hsk": 3,
+          "word_id": "hsk3_1064",
+          "meaning_vi": "quan trọng"
+        },
+        {
+          "text": "标志",
+          "pinyin": "biāozhì",
+          "hanviet": "Tiêu Chí",
+          "hsk": 5,
+          "word_id": "hsk5_61",
+          "meaning_vi": "biểu tượng, dấu hiệu"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk3_831",
+    "hsk5_320",
+    "hsk3_787",
+    "hsk4_639"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Ai là người chế tạo chiếc bồn cầu xả nước đầu tiên năm 1596?",
+      "options_vi": [
+        "Sir John Harrington cho Nữ hoàng Elizabeth I",
+        "James Watt",
+        "Newton"
+      ],
+      "answer": 0,
+      "explanation_vi": "Harrington phát minh bồn cầu có két xả nước dâng lên Nữ hoàng Anh."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Hệ thống bồn cầu xả nước và cống ngầm có công lao vĩ đại nào?",
+      "options_vi": [
+        "Chặn đứng dịch tả và các bệnh lây nhiễm, cứu sống hàng trăm triệu người",
+        "Giúp tiết kiệm nước",
+        "Làm cảnh đẹp thành phố"
+      ],
+      "answer": 0,
+      "explanation_vi": "Ngăn chặn dịch bệnh ô nhiễm nguồn nước hiệu quả nhất trong lịch sử."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Nhà vệ sinh sạch sẽ hiện nay phản ánh điều gì?",
+      "options_vi": [
+        "Trình độ văn minh và mức độ chăm sóc sức khỏe cộng đồng",
+        "Sự xa hoa lãng phí",
+        "Chỉ phục vụ khách du lịch"
+      ],
+      "answer": 0,
+      "explanation_vi": "Là thước đo chuẩn mực về văn minh và vệ sinh của một xã hội."
+    }
+  ]
+}

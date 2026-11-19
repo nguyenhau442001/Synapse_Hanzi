@@ -1,27 +1,29 @@
 {
   "id": "wanwu_story_003",
+  "chapter_no": 3,
   "level": "HSK4",
   "series": "wanwu",
+  "book_volume": 1,
   "book_page_start": 30,
-  "book_page_end": 36,
-  "page_display": "Trang 30 - 36",
+  "book_page_end": 37,
+  "page_display": "Trang 30 - 37",
   "title": {
     "zh": "鹦鹉：善言不由心",
     "vi": "Con vẹt: Khéo nói nhưng không từ tâm"
   },
-  "topic": "culture_history",
+  "topic": "nature_wildlife",
   "topic_vi": "📚 Vạn vật thú vị",
   "icon": "🦜",
   "cover_image": "assets/images/readings/wanwu/wanwu_story_003.webp",
   "illustration": "assets/images/readings/wanwu/wanwu_story_003.webp",
   "estimatedMinutes": 5,
-  "description_vi": "📖 Trang 30 - 36 · Khám phá tài bắt chước tiếng người độc đáo của loài vẹt - 'viên ngọc có lông vũ' và cấu tạo đặc biệt của vòm họng.",
+  "description_vi": "📖 Trang 30 - 37 · Khám phá tài bắt chước tiếng người độc đáo của loài vẹt - 'viên ngọc có lông vũ' và cấu tạo đặc biệt của vòm họng.",
   "sentences": [
     {
       "id": "s1",
       "zh": "鹦鹉是一大类色彩艳丽而形态多样的鸟类，被人们誉为“带羽毛的宝石”。",
       "pinyin": "Yīngwǔ shì yí dà lèi sècǎi yànlì ér xíngtài duōyàng de niǎolèi, bèi rénmen yùwéi “dài yǔmáo de bǎoshí”.",
-      "vi": "Vẹt là một bộ lớn các loài chim màu sắc rực rỡ và muôn hình vạn trạng, được người đời ngợi ca là 'viên ngọc mang lông vũ'.",
+      "vi": "Vẹt là loài chim sắc màu sặc sỡ, được ca ngợi là viên ngọc mang lông vũ.",
       "audio_start_ms": null,
       "audio_end_ms": null,
       "tokens": [
@@ -156,189 +158,9 @@
     },
     {
       "id": "s2",
-      "zh": "全世界已知的鹦鹉大约有三百多种，主要分布在热带地区，羽毛常有红、绿、黄、蓝等鲜艳的颜色。",
-      "pinyin": "Quán shìjiè yǐzhī de yīngwǔ dàyuē yǒu sānbǎi duō zhǒng, zhǔyào fēnbù zài rèdài dìqū, yǔmáo cháng yǒu hóng, lǜ, huáng, lán děng xiānyàn de yánsè.",
-      "vi": "Toàn thế giới đã biết khoảng hơn 300 loài vẹt, phân bố chủ yếu ở các vùng nhiệt đới, lông chim thường mang sắc đỏ, lục, vàng, lam tươi thắm.",
-      "audio_start_ms": null,
-      "audio_end_ms": null,
-      "tokens": [
-        {
-          "text": "全世界",
-          "pinyin": "quán shì jiè",
-          "hanviet": "Toàn Thế Giới"
-        },
-        {
-          "text": "已知",
-          "pinyin": "yǐ zhī",
-          "hanviet": "Dĩ Tri"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "鹦鹉",
-          "pinyin": "yīng wǔ",
-          "hanviet": "Anh Vũ"
-        },
-        {
-          "text": "大约",
-          "pinyin": "dàyuē",
-          "hanviet": "Đại Yêu",
-          "hsk": 4,
-          "word_id": "hsk4_129",
-          "meaning_vi": "khoảng, ước chừng"
-        },
-        {
-          "text": "有",
-          "pinyin": "yǒu",
-          "hanviet": "Hữu",
-          "hsk": 1,
-          "word_id": "hsk1_380",
-          "meaning_vi": "có"
-        },
-        {
-          "text": "三百",
-          "pinyin": "sān bǎi",
-          "hanviet": "Tam Bách"
-        },
-        {
-          "text": "多种",
-          "pinyin": "duō zhǒng",
-          "hanviet": "Đa Chủng"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "主要",
-          "pinyin": "zhǔyào",
-          "hanviet": "Chủ Yếu",
-          "hsk": 3,
-          "word_id": "hsk3_1066",
-          "meaning_vi": "chủ yếu"
-        },
-        {
-          "text": "分布",
-          "pinyin": "fēnbù",
-          "hanviet": "Phân Bố",
-          "hsk": 5,
-          "word_id": "hsk5_349",
-          "meaning_vi": "phân bố"
-        },
-        {
-          "text": "在",
-          "pinyin": "zài",
-          "hanviet": "Tại",
-          "hsk": 1,
-          "word_id": "hsk1_390",
-          "meaning_vi": "ở, đang"
-        },
-        {
-          "text": "热带地区",
-          "pinyin": "rè dài dì qū",
-          "hanviet": "Nhiệt Đới Địa Âu"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "羽毛",
-          "pinyin": "yǔ máo",
-          "hanviet": "Vũ Mao"
-        },
-        {
-          "text": "常有",
-          "pinyin": "cháng yǒu",
-          "hanviet": "Thường Hữu"
-        },
-        {
-          "text": "红",
-          "pinyin": "hóng",
-          "hanviet": "Hồng",
-          "hsk": 5,
-          "word_id": "hsk5_483",
-          "meaning_vi": "đỏ"
-        },
-        {
-          "text": "、"
-        },
-        {
-          "text": "绿",
-          "pinyin": "lǜ",
-          "hanviet": "Lục",
-          "hsk": 3,
-          "word_id": "hsk3_158",
-          "meaning_vi": "màu xanh lá"
-        },
-        {
-          "text": "、"
-        },
-        {
-          "text": "黄",
-          "pinyin": "huáng",
-          "hanviet": "Hoàng",
-          "hsk": 6,
-          "word_id": "hsk6_581",
-          "meaning_vi": "màu vàng; hỏng (kế hoạch)"
-        },
-        {
-          "text": "、"
-        },
-        {
-          "text": "蓝",
-          "pinyin": "lán",
-          "hanviet": "Lam",
-          "hsk": 3,
-          "word_id": "hsk3_826",
-          "meaning_vi": "màu xanh dương"
-        },
-        {
-          "text": "等",
-          "pinyin": "děng",
-          "hanviet": "Đẳng",
-          "hsk": 2,
-          "word_id": "hsk2_20",
-          "meaning_vi": "đợi, chờ"
-        },
-        {
-          "text": "鲜艳",
-          "pinyin": "xiānyàn",
-          "hanviet": "Tiên Diễm",
-          "hsk": 6,
-          "word_id": "hsk6_1421",
-          "meaning_vi": "rực rỡ, tươi sáng"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "颜色",
-          "pinyin": "yánsè",
-          "hanviet": "Nhan Sắc",
-          "hsk": 2,
-          "word_id": "hsk2_466",
-          "meaning_vi": "màu sắc"
-        },
-        {
-          "text": "。"
-        }
-      ]
-    },
-    {
-      "id": "s3",
       "zh": "鹦鹉最引人注目的本领，莫过于它们能够惟妙惟肖地模仿人类说话和各种声音。",
       "pinyin": "Yīngwǔ zuì yǐn rén zhùmù de běnlǐng, mòguò yú tāmen nénggòu wéimiào-wéixiào de mófǎng rénlèi shuōhuà hé gèzhǒng shēngyīn.",
-      "vi": "Bản lĩnh thu hút sự chú ý nhất của loài vẹt không gì bằng khả năng bắt chước tiếng người và các loại âm thanh một cách sống động như thật.",
+      "vi": "Tài năng nổi bật nhất của vẹt là bắt chước tiếng người và các loại âm thanh sinh động.",
       "audio_start_ms": null,
       "audio_end_ms": null,
       "tokens": [
@@ -470,10 +292,10 @@
       ]
     },
     {
-      "id": "s4",
-      "zh": "俗话说“鹦鹉学舌，善言不由心”，意思是鹦鹉虽然会学人说话，但并不理解话语背后的真正含义。",
-      "pinyin": "Súhuà shuō “yīngwǔ xué shé, shàn yán bù yóu xīn”, yìsi shì yīngwǔ suīrán huì xué rén shuōhuà, dàn bìng bù lǐjiě huàyǔ bèihòu de zhēnzhèng hányì.",
-      "vi": "Dục ngữ có câu 'Vẹt học nói, khéo nói chẳng bởi tâm', ý nói vẹt tuy bắt chước tiếng người nói, nhưng không hề hiểu ý nghĩa chân chính đằng sau câu chữ.",
+      "id": "s3",
+      "zh": "俗话说“鹦鹉学舌，善言不由心”，意思是鹦鹉虽然会学人说话，但并不理解真正含义。",
+      "pinyin": "Súhuà shuō “yīngwǔ xué shé, shàn yán bù yóu xīn”, yìsi shì yīngwǔ suīrán huì xué rén shuōhuà, dàn bìng bù lǐjiě zhēnzhèng hányì.",
+      "vi": "Tục ngữ có câu vẹt học nói khéo nhưng không hiểu nghĩa thực sự.",
       "audio_start_ms": null,
       "audio_end_ms": null,
       "tokens": [
@@ -595,30 +417,6 @@
           "meaning_vi": "lý giải, hiểu"
         },
         {
-          "text": "话语",
-          "pinyin": "huàyǔ",
-          "hanviet": "Thoại Ngữ",
-          "hsk": 7,
-          "word_id": "hsk7_1737",
-          "meaning_vi": "diễn ngôn"
-        },
-        {
-          "text": "背后",
-          "pinyin": "bèihòu",
-          "hanviet": "Bối Hậu",
-          "hsk": 5,
-          "word_id": "hsk5_37",
-          "meaning_vi": "phía sau, sau lưng"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
           "text": "真正",
           "pinyin": "zhēnzhèng",
           "hanviet": "Chân Chính",
@@ -640,10 +438,10 @@
       ]
     },
     {
-      "id": "s5",
-      "zh": "科学家研究发现，鹦鹉之所以能够“说话”，是因为它们拥有非常特殊的发音器官和肥厚圆润的舌头。",
-      "pinyin": "Kēxuéjiā yánjiū fāxiàn, yīngwǔ zhīsuǒyǐ nénggòu “shuōhuà”, shì yīnwèi tāmen yōngyǒu fēicháng tèshū de fāyīn qìguān hé féihòu yuánrùn de shétou.",
-      "vi": "Các nhà khoa học phát hiện, sở dĩ vẹt có thể 'nói' là nhờ sở hữu cơ quan phát âm đặc biệt và chiếc lưỡi tròn dày mềm mại.",
+      "id": "s4",
+      "zh": "科学家发现，鹦鹉能说话是因为它们拥有特殊的发音器官和肥厚圆润的舌头。",
+      "pinyin": "Kēxuéjiā fāxiàn, yīngwǔ néng shuōhuà shì yīnwèi tāmen yōngyǒu tèshū de fāyīn qìguān hé féihòu yuánrùn de shétou.",
+      "vi": "Vẹt phát âm được nhờ cơ quan phát âm đặc biệt và chiếc lưỡi tròn dày mềm mại.",
       "audio_start_ms": null,
       "audio_end_ms": null,
       "tokens": [
@@ -651,14 +449,6 @@
           "text": "科学家",
           "pinyin": "kē xué jiā",
           "hanviet": "Khoa Học Gia"
-        },
-        {
-          "text": "研究",
-          "pinyin": "yánjiū",
-          "hanviet": "Nghiên Cứu",
-          "hsk": 4,
-          "word_id": "hsk4_846",
-          "meaning_vi": "nghiên cứu"
         },
         {
           "text": "发现",
@@ -677,23 +467,12 @@
           "hanviet": "Anh Vũ"
         },
         {
-          "text": "之所以",
-          "pinyin": "zhīsuǒyǐ",
-          "hanviet": "Chi Sở Dĩ",
-          "hsk": 6,
-          "word_id": "hsk6_1699",
-          "meaning_vi": "sở dĩ, lý do mà... là vì"
-        },
-        {
-          "text": "能够",
-          "pinyin": "nénggòu",
-          "hanviet": "Năng Cú",
-          "hsk": 4,
-          "word_id": "hsk4_532",
+          "text": "能",
+          "pinyin": "néng",
+          "hanviet": "Năng",
+          "hsk": 1,
+          "word_id": "hsk1_212",
           "meaning_vi": "có thể"
-        },
-        {
-          "text": "“"
         },
         {
           "text": "说话",
@@ -702,12 +481,6 @@
           "hsk": 1,
           "word_id": "hsk1_568",
           "meaning_vi": "nói chuyện"
-        },
-        {
-          "text": "”"
-        },
-        {
-          "text": "，"
         },
         {
           "text": "是因为",
@@ -729,14 +502,6 @@
           "hsk": 5,
           "word_id": "hsk5_1389",
           "meaning_vi": "sở hữu, có"
-        },
-        {
-          "text": "非常",
-          "pinyin": "fēicháng",
-          "hanviet": "Phi Thường",
-          "hsk": 1,
-          "word_id": "hsk1_515",
-          "meaning_vi": "rất, vô cùng"
         },
         {
           "text": "特殊",
@@ -799,196 +564,13 @@
       ]
     },
     {
-      "id": "s6",
-      "zh": "它们的大脑中还有专门控制声音学习的复杂区域，这在所有鸟类中是非常罕见的。",
-      "pinyin": "Tāmen de dànǎo zhōng hái yǒu zhuānmén kòngzhì shēngyīn xuéxí de fùzá qūyù, zhè zài suǒyǒu niǎolèi zhōng shì fēicháng hǎnjiàn de.",
-      "vi": "Trong não bộ của chúng còn có vùng chuyên biệt điều khiển học hỏi âm thanh, điều này rất hiếm gặp trong thế giới các loài chim.",
+      "id": "s5",
+      "zh": "聪明伶俐又长相美丽，让鹦鹉几千年来一直是人类最喜爱的宠物鸟之一。",
+      "pinyin": "Cōngmíng línglì yòu zhǎngxiàng měilì, ràng yīngwǔ jǐ qiān nián lái yìzhí shì rénlèi zuì xǐ'ài de chǒngwù niǎo zhī yī.",
+      "vi": "Thông minh xinh đẹp giúp loài vẹt ngàn đời nay luôn là thú cưng chim cảnh được mến mộ.",
       "audio_start_ms": null,
       "audio_end_ms": null,
       "tokens": [
-        {
-          "text": "它们",
-          "pinyin": "tāmen",
-          "hanviet": "Tha Môn",
-          "hsk": 1,
-          "word_id": "hsk1_571",
-          "meaning_vi": "chúng nó, chúng (chỉ đồ vật, động vật)"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "大脑",
-          "pinyin": "dànǎo",
-          "hanviet": "Đại Não",
-          "hsk": 5,
-          "word_id": "hsk5_224",
-          "meaning_vi": "đại não, bộ não"
-        },
-        {
-          "text": "中",
-          "pinyin": "zhōng",
-          "hanviet": "Trung",
-          "hsk": 3,
-          "word_id": "hsk3_1060",
-          "meaning_vi": "giữa, trong"
-        },
-        {
-          "text": "还有",
-          "pinyin": "hái yǒu",
-          "hanviet": "Hoàn Hữu"
-        },
-        {
-          "text": "专门",
-          "pinyin": "zhuānmén",
-          "hanviet": "Chuyên Môn",
-          "hsk": 4,
-          "word_id": "hsk4_968",
-          "meaning_vi": "chuyên môn, chuyên biệt"
-        },
-        {
-          "text": "控制",
-          "pinyin": "kòngzhì",
-          "hanviet": "Khống Chế",
-          "hsk": 5,
-          "word_id": "hsk5_673",
-          "meaning_vi": "kiểm soát"
-        },
-        {
-          "text": "声音",
-          "pinyin": "shēngyīn",
-          "hanviet": "Thanh Âm",
-          "hsk": 3,
-          "word_id": "hsk3_538",
-          "meaning_vi": "âm thanh, giọng nói"
-        },
-        {
-          "text": "学习",
-          "pinyin": "xuéxí",
-          "hanviet": "Học Tập",
-          "hsk": 1,
-          "word_id": "hsk1_352",
-          "meaning_vi": "học tập"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "复杂",
-          "pinyin": "fùzá",
-          "hanviet": "Phức Tạp",
-          "hsk": 4,
-          "word_id": "hsk4_214",
-          "meaning_vi": "phức tạp"
-        },
-        {
-          "text": "区域",
-          "pinyin": "qūyù",
-          "hanviet": "Khu Vực",
-          "hsk": 5,
-          "word_id": "hsk5_896",
-          "meaning_vi": "khu vực, vùng"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "这",
-          "pinyin": "zhè",
-          "hanviet": "Giá",
-          "hsk": 1,
-          "word_id": "hsk1_401",
-          "meaning_vi": "này"
-        },
-        {
-          "text": "在",
-          "pinyin": "zài",
-          "hanviet": "Tại",
-          "hsk": 1,
-          "word_id": "hsk1_390",
-          "meaning_vi": "ở, đang"
-        },
-        {
-          "text": "所有",
-          "pinyin": "suǒyǒu",
-          "hanviet": "Sở Hữu",
-          "hsk": 4,
-          "word_id": "hsk4_713",
-          "meaning_vi": "tất cả, toàn bộ"
-        },
-        {
-          "text": "鸟类",
-          "pinyin": "niǎo lèi",
-          "hanviet": "Điểu Loại"
-        },
-        {
-          "text": "中是",
-          "pinyin": "zhōng shì",
-          "hanviet": "Trung Thị"
-        },
-        {
-          "text": "非常",
-          "pinyin": "fēicháng",
-          "hanviet": "Phi Thường",
-          "hsk": 1,
-          "word_id": "hsk1_515",
-          "meaning_vi": "rất, vô cùng"
-        },
-        {
-          "text": "罕见",
-          "pinyin": "hǎnjiàn",
-          "hanviet": "Hãn Kiến",
-          "hsk": 6,
-          "word_id": "hsk6_525",
-          "meaning_vi": "hiếm thấy"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "。"
-        }
-      ]
-    },
-    {
-      "id": "s7",
-      "zh": "正因为聪明伶俐又长相美丽，鹦鹉几千年来一直是人类最喜爱的宠物鸟之一。",
-      "pinyin": "Zhèng yīnwèi cōngmíng línglì yòu zhǎngxiàng měilì, yīngwǔ jǐ qiān nián lái yìzhí shì rénlèi zuì xǐ'ài de chǒngwù niǎo zhī yī.",
-      "vi": "Chính nhờ thông minh lanh lợi lại có vẻ ngoài xinh xắn, loài vẹt suốt hàng nghìn năm qua luôn là một trong những loài chim cảnh được con người yêu thích nhất.",
-      "audio_start_ms": null,
-      "audio_end_ms": null,
-      "tokens": [
-        {
-          "text": "正",
-          "pinyin": "zhèng",
-          "hanviet": "Chinh",
-          "hsk": 2,
-          "word_id": "hsk2_491",
-          "meaning_vi": "vừa, đang (trạng từ)"
-        },
-        {
-          "text": "因为",
-          "pinyin": "yīnwèi",
-          "hanviet": "Nhân Vi",
-          "hsk": 2,
-          "word_id": "hsk2_476",
-          "meaning_vi": "bởi vì"
-        },
         {
           "text": "聪明伶俐",
           "pinyin": "cōng míng líng lì",
@@ -1020,6 +602,14 @@
         },
         {
           "text": "，"
+        },
+        {
+          "text": "让",
+          "pinyin": "ràng",
+          "hanviet": "Nhượng",
+          "hsk": 2,
+          "word_id": "hsk2_422",
+          "meaning_vi": "để cho, khiến"
         },
         {
           "text": "鹦鹉",
@@ -1112,36 +702,36 @@
   "quiz": [
     {
       "id": "q1",
-      "question_vi": "Loài vẹt được người đời ca tụng bằng mỹ từ nào?",
+      "question_vi": "Vẹt được mệnh danh là gì?",
       "options_vi": [
         "Viên ngọc mang lông vũ",
-        "Sứ giả của mùa xuân",
-        "Chiếc chuông vàng rừng sâu"
+        "Chúa tể bầu trời",
+        "Chim thông thái"
       ],
       "answer": 0,
-      "explanation_vi": "Trong bài viết: 被人们誉为“带羽毛的宝石” (Được ngợi ca là 'viên ngọc mang lông vũ')."
+      "explanation_vi": "Vẹt được ví như viên ngọc có lông vũ."
     },
     {
       "id": "q2",
-      "question_vi": "Câu thành ngữ '鹦鹉学舌' (Vẹt học nói) mang ý nghĩa gì?",
+      "question_vi": "Câu '鹦鹉学舌' ám chỉ điều gì?",
       "options_vi": [
-        "Bắt chước lời nói mà không hiểu ý nghĩa thực sự",
-        "Rất giỏi sáng tác thơ văn",
-        "Chỉ thích nói chuyện một mình"
+        "Học vẹt không hiểu nghĩa",
+        "Hát rất hay",
+        "Chăm chỉ nói chuyện"
       ],
       "answer": 0,
-      "explanation_vi": "Trong bài viết: 意思是鹦鹉虽然会学人说话，但并不理解话语背后的真正含义."
+      "explanation_vi": "Chỉ việc lặp lại lời nói của người khác mà không hiểu."
     },
     {
       "id": "q3",
-      "question_vi": "Nhờ đặc điểm giải phẫu nào mà vẹt có thể phát âm bắt chước giọng người?",
+      "question_vi": "Cơ quan nào giúp vẹt nói được?",
       "options_vi": [
-        "Cơ quan phát âm đặc biệt và chiếc lưỡi tròn dày",
-        "Mỏ chim rất dài và nhọn",
-        "Đôi cánh vỗ tạo ra tiếng kêu"
+        "Khí quản đặc biệt và lưỡi tròn dày",
+        "Mỏ dài nhọn",
+        "Đôi cánh"
       ],
       "answer": 0,
-      "explanation_vi": "Trong bài viết: 拥有非常特殊的发音器官和肥厚圆润的舌头."
+      "explanation_vi": "Vẹt có lưỡi dày tròn và bộ máy phát thanh đặc biệt."
     }
   ]
 }

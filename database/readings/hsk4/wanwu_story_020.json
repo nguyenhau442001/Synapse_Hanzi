@@ -1,0 +1,906 @@
+{
+  "id": "wanwu_story_020",
+  "chapter_no": 20,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 1,
+  "book_page_start": 197,
+  "book_page_end": 209,
+  "page_display": "Trang 197 - 209",
+  "title": {
+    "zh": "航班安检：血泪教训倒逼而生",
+    "vi": "An ninh hàng không: Sinh ra từ bài học xương máu"
+  },
+  "topic": "science_technology",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🛫",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_020.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_020.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 197 - 209 · Lịch sử an ninh sân bay: từ thời kỳ lên máy bay thoải mái như xe buýt đến hệ thống soi quét nhiều lớp bảo vệ bầu trời.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "今天乘坐飞机时严格的安检流程，并非一开始就存在，而是由一系列血泪教训倒逼出来的。",
+      "pinyin": "Jīntiān chéngzuò fēijī shí yángé de ānjiǎn liúchéng, bìngfēi yì kāishǐ jiù cúnzài, érshì yóu yí xìliè xuèlèi jiàoxun dǎobī chūlái de.",
+      "vi": "Quy trình kiểm tra an ninh hàng không nghiêm ngặt ngày nay được đúc kết từ nhiều bài học xương máu.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "今天",
+          "pinyin": "jīntiān",
+          "hanviet": "Kim Thiên",
+          "hsk": 1,
+          "word_id": "hsk1_144",
+          "meaning_vi": "hôm nay"
+        },
+        {
+          "text": "乘坐",
+          "pinyin": "chéngzuò",
+          "hanviet": "Thừa Toạ",
+          "hsk": 4,
+          "word_id": "hsk4_83",
+          "meaning_vi": "đi (xe, tàu...)"
+        },
+        {
+          "text": "飞机",
+          "pinyin": "fēijī",
+          "hanviet": "Phi Cơ",
+          "hsk": 1,
+          "word_id": "hsk1_90",
+          "meaning_vi": "máy bay"
+        },
+        {
+          "text": "时",
+          "pinyin": "shí",
+          "hanviet": "Thời",
+          "hsk": 2,
+          "word_id": "hsk2_431",
+          "meaning_vi": "thời gian (danh từ, số lượng)"
+        },
+        {
+          "text": "严格",
+          "pinyin": "yángé",
+          "hanviet": "Nghiêm Cách",
+          "hsk": 4,
+          "word_id": "hsk4_845",
+          "meaning_vi": "nghiêm khắc, chặt chẽ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "安检",
+          "pinyin": "ānjiǎn",
+          "hanviet": "An Kiểm",
+          "hsk": 4,
+          "word_id": "hsk4_4",
+          "meaning_vi": "kiểm tra an ninh"
+        },
+        {
+          "text": "流程",
+          "pinyin": "liúchéng",
+          "hanviet": "Lưu Trình",
+          "hsk": 6,
+          "word_id": "hsk6_854",
+          "meaning_vi": "quá trình"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "并非",
+          "pinyin": "bìngfēi",
+          "hanviet": "Tinh Phi",
+          "hsk": 7,
+          "word_id": "hsk7_267",
+          "meaning_vi": "thực ra không phải"
+        },
+        {
+          "text": "一",
+          "pinyin": "yī",
+          "hanviet": "Nhất",
+          "hsk": 1,
+          "word_id": "hsk1_360",
+          "meaning_vi": "một"
+        },
+        {
+          "text": "开始",
+          "pinyin": "kāishǐ",
+          "hanviet": "Khai Thuỷ",
+          "hsk": 2,
+          "word_id": "hsk2_378",
+          "meaning_vi": "bắt đầu"
+        },
+        {
+          "text": "就",
+          "pinyin": "jiù",
+          "hanviet": "Tựu",
+          "hsk": 2,
+          "word_id": "hsk2_376",
+          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)"
+        },
+        {
+          "text": "存在",
+          "pinyin": "cúnzài",
+          "hanviet": "Tồn Tại",
+          "hsk": 5,
+          "word_id": "hsk5_210",
+          "meaning_vi": "tồn tại"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "而是",
+          "pinyin": "ér shì",
+          "hanviet": "Nhi Thị"
+        },
+        {
+          "text": "由",
+          "pinyin": "yóu",
+          "hanviet": "Do",
+          "hsk": 4,
+          "word_id": "hsk4_884",
+          "meaning_vi": "do, từ"
+        },
+        {
+          "text": "一系列",
+          "pinyin": "yíxìliè",
+          "hanviet": "Nhất Hệ Liệt",
+          "hsk": 6,
+          "word_id": "hsk6_1555",
+          "meaning_vi": "một loạt, chuỗi"
+        },
+        {
+          "text": "血泪",
+          "pinyin": "xuè lèi",
+          "hanviet": "Huyết Lệ"
+        },
+        {
+          "text": "教训",
+          "pinyin": "jiàoxùn",
+          "hanviet": "Giáo Huấn",
+          "hsk": 6,
+          "word_id": "hsk6_680",
+          "meaning_vi": "bài học, giáo huấn"
+        },
+        {
+          "text": "倒逼",
+          "pinyin": "dào bī",
+          "hanviet": "Đảo Bức"
+        },
+        {
+          "text": "出来",
+          "pinyin": "chūlái",
+          "hanviet": "Xuất Lai",
+          "hsk": 2,
+          "word_id": "hsk2_318",
+          "meaning_vi": "đi ra"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "在民航业发展初期，旅客登机就像乘坐火车或巴士一样随意，行李甚至不需要开箱检查。",
+      "pinyin": "Zài mínhángyè fāzhǎn chūqī, lǚkè dēngjī jiù xiàng chéngzuò huǒchē huò bāshì yíyàng suíyì, xíngli shènzhì bù xūyào kāixiāng jiǎnchá.",
+      "vi": "Thuở sơ khai của hàng không, hành khách lên phi cơ thoải mái như lên xe buýt, không cần soi chiếu hành lý.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "民航业",
+          "pinyin": "mín háng yè",
+          "hanviet": "Dân Hàng Nghiệp"
+        },
+        {
+          "text": "发展",
+          "pinyin": "fāzhǎn",
+          "hanviet": "Phát Triển",
+          "hsk": 3,
+          "word_id": "hsk3_713",
+          "meaning_vi": "phát triển"
+        },
+        {
+          "text": "初期",
+          "pinyin": "chūqī",
+          "hanviet": "Sơ Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_173",
+          "meaning_vi": "thời kỳ đầu"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "旅客",
+          "pinyin": "lǚkè",
+          "hanviet": "Lữ Khách",
+          "hsk": 4,
+          "word_id": "hsk4_489",
+          "meaning_vi": "hành khách, lữ khách"
+        },
+        {
+          "text": "登机",
+          "pinyin": "dēngjī",
+          "hanviet": "Đăng Cơ",
+          "hsk": 4,
+          "word_id": "hsk4_146",
+          "meaning_vi": "lên máy bay"
+        },
+        {
+          "text": "就",
+          "pinyin": "jiù",
+          "hanviet": "Tựu",
+          "hsk": 2,
+          "word_id": "hsk2_376",
+          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)"
+        },
+        {
+          "text": "像",
+          "pinyin": "xiàng",
+          "hanviet": "Tượng",
+          "hsk": 3,
+          "word_id": "hsk3_974",
+          "meaning_vi": "giống như"
+        },
+        {
+          "text": "乘坐",
+          "pinyin": "chéngzuò",
+          "hanviet": "Thừa Toạ",
+          "hsk": 4,
+          "word_id": "hsk4_83",
+          "meaning_vi": "đi (xe, tàu...)"
+        },
+        {
+          "text": "火车",
+          "pinyin": "huǒchē",
+          "hanviet": "Hoả Xa",
+          "hsk": 1,
+          "word_id": "hsk1_525",
+          "meaning_vi": "xe lửa"
+        },
+        {
+          "text": "或",
+          "pinyin": "huò",
+          "hanviet": "Hoặc",
+          "hsk": 3,
+          "word_id": "hsk3_774",
+          "meaning_vi": "hoặc"
+        },
+        {
+          "text": "巴士",
+          "pinyin": "bā shì",
+          "hanviet": "Ba Sĩ"
+        },
+        {
+          "text": "一样",
+          "pinyin": "yíyàng",
+          "hanviet": "Nhất Dạng",
+          "hsk": 3,
+          "word_id": "hsk3_1004",
+          "meaning_vi": "giống nhau"
+        },
+        {
+          "text": "随意",
+          "pinyin": "suíyì",
+          "hanviet": "Tùy Ý",
+          "hsk": 5,
+          "word_id": "hsk5_1092",
+          "meaning_vi": "tùy ý, tự nhiên"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "行李",
+          "pinyin": "xíngli",
+          "hanviet": "Hành Lí/hành Lý",
+          "hsk": 3,
+          "word_id": "hsk3_988",
+          "meaning_vi": "hành lý"
+        },
+        {
+          "text": "甚至",
+          "pinyin": "shènzhì",
+          "hanviet": "Thậm Chí",
+          "hsk": 4,
+          "word_id": "hsk4_645",
+          "meaning_vi": "thậm chí"
+        },
+        {
+          "text": "不",
+          "pinyin": "bù",
+          "hanviet": "Bất",
+          "hsk": 1,
+          "word_id": "hsk1_25",
+          "meaning_vi": "không"
+        },
+        {
+          "text": "需要",
+          "pinyin": "xūyào",
+          "hanviet": "Nhu Yêu",
+          "hsk": 3,
+          "word_id": "hsk3_991",
+          "meaning_vi": "cần thiết, cần"
+        },
+        {
+          "text": "开箱",
+          "pinyin": "kāi xiāng",
+          "hanviet": "Khai Rương"
+        },
+        {
+          "text": "检查",
+          "pinyin": "jiǎnchá",
+          "hanviet": "Kiểm Tra",
+          "hsk": 3,
+          "word_id": "hsk3_785",
+          "meaning_vi": "kiểm tra"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "二十世纪六七十年代，全球劫机事件频繁发生，促使各大国际机场安装了金属探测门与行李X光机。",
+      "pinyin": "Èrshí shìjì liù-qīshí niándài, quánqiú jiéjī shìjiàn pínfán fāshēng, cùshǐ gè dà guójì jīchǎng ānzhuāng le jīnshǔ tàncèmén yǔ xíngli X-guāng jī.",
+      "vi": "Thập niên 60-70 thế kỷ 20, nạn không tặc hoành hành buộc các phi trường lắp cổng từ và máy quét X-quang.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "二十世纪",
+          "pinyin": "èr shí shì jì",
+          "hanviet": "Nhị Thập Thế Kỷ"
+        },
+        {
+          "text": "六七十年代",
+          "pinyin": "liù qī shí nián dài",
+          "hanviet": "Lục Thất Thập Niên Đại"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "全球",
+          "pinyin": "quánqiú",
+          "hanviet": "Toàn Cầu",
+          "hsk": 4,
+          "word_id": "hsk4_601",
+          "meaning_vi": "toàn cầu"
+        },
+        {
+          "text": "劫机",
+          "pinyin": "jié jī",
+          "hanviet": "Kiếp Cơ"
+        },
+        {
+          "text": "事件",
+          "pinyin": "shìjiàn",
+          "hanviet": "Sự Kiện",
+          "hsk": 5,
+          "word_id": "hsk5_1032",
+          "meaning_vi": "sự kiện"
+        },
+        {
+          "text": "频繁",
+          "pinyin": "pínfán",
+          "hanviet": "Tần Phồn",
+          "hsk": 6,
+          "word_id": "hsk6_993",
+          "meaning_vi": "thường xuyên, liên tục"
+        },
+        {
+          "text": "发生",
+          "pinyin": "fāshēng",
+          "hanviet": "Phát Sinh",
+          "hsk": 3,
+          "word_id": "hsk3_711",
+          "meaning_vi": "phát sinh, xảy ra"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "促使",
+          "pinyin": "cùshǐ",
+          "hanviet": "Xúc Sử",
+          "hsk": 5,
+          "word_id": "hsk5_205",
+          "meaning_vi": "thúc đẩy, khiến cho"
+        },
+        {
+          "text": "各大",
+          "pinyin": "gè dà",
+          "hanviet": "Các Đại"
+        },
+        {
+          "text": "国际",
+          "pinyin": "guójì",
+          "hanviet": "Quốc Tế",
+          "hsk": 4,
+          "word_id": "hsk4_280",
+          "meaning_vi": "quốc tế"
+        },
+        {
+          "text": "机场",
+          "pinyin": "jīchǎng",
+          "hanviet": "Cơ Trường",
+          "hsk": 2,
+          "word_id": "hsk2_363",
+          "meaning_vi": "sân bay"
+        },
+        {
+          "text": "安装",
+          "pinyin": "ānzhuāng",
+          "hanviet": "An Trang",
+          "hsk": 5,
+          "word_id": "hsk5_8",
+          "meaning_vi": "lắp đặt"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "金属",
+          "pinyin": "jīnshǔ",
+          "hanviet": "Kim Thuộc",
+          "hsk": 6,
+          "word_id": "hsk6_704",
+          "meaning_vi": "kim loại"
+        },
+        {
+          "text": "探测",
+          "pinyin": "tàncè",
+          "hanviet": "Thám Trắc",
+          "hsk": 7,
+          "word_id": "hsk7_3953",
+          "meaning_vi": "dò tìm, thăm dò"
+        },
+        {
+          "text": "门",
+          "pinyin": "mén",
+          "hanviet": "Môn",
+          "hsk": 2,
+          "word_id": "hsk2_400",
+          "meaning_vi": "cửa"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "行李",
+          "pinyin": "xíngli",
+          "hanviet": "Hành Lí/hành Lý",
+          "hsk": 3,
+          "word_id": "hsk3_988",
+          "meaning_vi": "hành lý"
+        },
+        {
+          "text": "X光",
+          "pinyin": "X guāng",
+          "hanviet": "Quang"
+        },
+        {
+          "text": "机",
+          "pinyin": "jī",
+          "hanviet": "Cơ"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "二零零一年“九一一”恐怖袭击后，全球航空安全标准再次升级，连液体、打火机和刀具都受到严格限制。",
+      "pinyin": "Èr-líng-líng-yī nián “Jiǔ-Yī-Yī” kǒngbù xíjī hòu, quánqiú hángkōng ānquán biāozhǔn zàicì shēngjí, lián yètǐ, dǎhuǒjī hé dāojù dōu shòudào yángé xiànzhì.",
+      "vi": "Sau sự kiện 11/9/2001, an ninh sân bay siết chặt tối đa, cấm chất lỏng, bật lửa và dao nhọn lên cabin.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "二零零一年",
+          "pinyin": "èr líng líng yī nián",
+          "hanviet": "Nhị Linh Linh Nhất Niên"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "九",
+          "pinyin": "jiǔ",
+          "hanviet": "Cửu",
+          "hsk": 1,
+          "word_id": "hsk1_148",
+          "meaning_vi": "chín"
+        },
+        {
+          "text": "一一",
+          "pinyin": "yīyī",
+          "hanviet": "Nhất Nhất",
+          "hsk": 6,
+          "word_id": "hsk6_1541",
+          "meaning_vi": "từng cái một, lần lượt từng người/việc"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "恐怖袭击",
+          "pinyin": "kǒng bù xí jī",
+          "hanviet": "Khủng Bố Tập Kích"
+        },
+        {
+          "text": "后",
+          "pinyin": "hòu",
+          "hanviet": "Hậu",
+          "hsk": 1,
+          "word_id": "hsk1_524",
+          "meaning_vi": "sau"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "全球",
+          "pinyin": "quánqiú",
+          "hanviet": "Toàn Cầu",
+          "hsk": 4,
+          "word_id": "hsk4_601",
+          "meaning_vi": "toàn cầu"
+        },
+        {
+          "text": "航空安全",
+          "pinyin": "háng kōng ān quán",
+          "hanviet": "Hàng Không An Toàn"
+        },
+        {
+          "text": "标准",
+          "pinyin": "biāozhǔn",
+          "hanviet": "Tiêu Chuẩn",
+          "hsk": 4,
+          "word_id": "hsk4_32",
+          "meaning_vi": "tiêu chuẩn"
+        },
+        {
+          "text": "再次",
+          "pinyin": "zàicì",
+          "hanviet": "Tái Thứ",
+          "hsk": 4,
+          "word_id": "hsk4_914",
+          "meaning_vi": "lần nữa, một lần nữa"
+        },
+        {
+          "text": "升级",
+          "pinyin": "shēngjí",
+          "hanviet": "Thăng Cấp",
+          "hsk": 5,
+          "word_id": "hsk5_993",
+          "meaning_vi": "nâng cấp"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "连",
+          "pinyin": "lián",
+          "hanviet": "Liên",
+          "hsk": 4,
+          "word_id": "hsk4_469",
+          "meaning_vi": "liên tiếp, ngay cả"
+        },
+        {
+          "text": "液体",
+          "pinyin": "yètǐ",
+          "hanviet": "Dịch Thể",
+          "hsk": 6,
+          "word_id": "hsk6_1535",
+          "meaning_vi": "chất lỏng"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "打火机",
+          "pinyin": "dǎ huǒ jī",
+          "hanviet": "Đả Hoả Cơ"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "刀具",
+          "pinyin": "dāo jù",
+          "hanviet": "Đao Cụ"
+        },
+        {
+          "text": "都",
+          "pinyin": "dōu",
+          "hanviet": "Đô",
+          "hsk": 1,
+          "word_id": "hsk1_76",
+          "meaning_vi": "đều"
+        },
+        {
+          "text": "受到",
+          "pinyin": "shòudào",
+          "hanviet": "Thọ Đáo",
+          "hsk": 3,
+          "word_id": "hsk3_558",
+          "meaning_vi": "nhận được, bị (chịu)"
+        },
+        {
+          "text": "严格",
+          "pinyin": "yángé",
+          "hanviet": "Nghiêm Cách",
+          "hsk": 4,
+          "word_id": "hsk4_845",
+          "meaning_vi": "nghiêm khắc, chặt chẽ"
+        },
+        {
+          "text": "限制",
+          "pinyin": "xiànzhì",
+          "hanviet": "Hạn Chế",
+          "hsk": 5,
+          "word_id": "hsk5_1244",
+          "meaning_vi": "hạn chế"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "看似繁琐复杂的安检检查，用最严谨的技术防线默默守护着千万万旅客的生命安全。",
+      "pinyin": "Kànsì fánsuǒ fùzá de ānjiǎn jiǎnchá, yòng zuì yánjǐn de jìshù fángxiàn mòmò shǒuhù zhe qiānwànwàn lǚkè de shēngmìng ānquán.",
+      "vi": "Những khâu kiểm tra tưởng chừng phiền phức ấy là hàng rào công nghệ âm thầm bảo vệ sinh mệnh hàng triệu hành khách.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "看似",
+          "pinyin": "kànsì",
+          "hanviet": "Khán Tự",
+          "hsk": 6,
+          "word_id": "hsk6_771",
+          "meaning_vi": "trông có vẻ, dường như"
+        },
+        {
+          "text": "繁琐",
+          "pinyin": "fán suǒ",
+          "hanviet": "Phồn Toả"
+        },
+        {
+          "text": "复杂",
+          "pinyin": "fùzá",
+          "hanviet": "Phức Tạp",
+          "hsk": 4,
+          "word_id": "hsk4_214",
+          "meaning_vi": "phức tạp"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "安检",
+          "pinyin": "ānjiǎn",
+          "hanviet": "An Kiểm",
+          "hsk": 4,
+          "word_id": "hsk4_4",
+          "meaning_vi": "kiểm tra an ninh"
+        },
+        {
+          "text": "检查",
+          "pinyin": "jiǎnchá",
+          "hanviet": "Kiểm Tra",
+          "hsk": 3,
+          "word_id": "hsk3_785",
+          "meaning_vi": "kiểm tra"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "用",
+          "pinyin": "yòng",
+          "hanviet": "Dụng",
+          "hsk": 3,
+          "word_id": "hsk3_1020",
+          "meaning_vi": "dùng"
+        },
+        {
+          "text": "最",
+          "pinyin": "zuì",
+          "hanviet": "Tối",
+          "hsk": 2,
+          "word_id": "hsk2_498",
+          "meaning_vi": "nhất"
+        },
+        {
+          "text": "严谨",
+          "pinyin": "yánjǐn",
+          "hanviet": "Nghiêm Cẩn",
+          "hsk": 7,
+          "word_id": "hsk7_4726",
+          "meaning_vi": "nghiêm cẩn; cẩn trọng; chặt chẽ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "技术",
+          "pinyin": "jìshù",
+          "hanviet": "Kĩ Thuật/kỹ Thuật",
+          "hsk": 4,
+          "word_id": "hsk4_331",
+          "meaning_vi": "kỹ thuật"
+        },
+        {
+          "text": "防线",
+          "pinyin": "fáng xiàn",
+          "hanviet": "Phòng Tuyến"
+        },
+        {
+          "text": "默默",
+          "pinyin": "mòmò",
+          "hanviet": "Mặc Mặc",
+          "hsk": 6,
+          "word_id": "hsk6_936",
+          "meaning_vi": "lặng lẽ, âm thầm"
+        },
+        {
+          "text": "守护",
+          "pinyin": "shǒuhù",
+          "hanviet": "Thủ Hộ",
+          "hsk": 7,
+          "word_id": "hsk7_3734",
+          "meaning_vi": "bảo vệ, gìn giữ"
+        },
+        {
+          "text": "着",
+          "pinyin": "zhe",
+          "hanviet": "Trước",
+          "hsk": 2,
+          "word_id": "hsk2_490",
+          "meaning_vi": "đang (trợ từ)"
+        },
+        {
+          "text": "千万",
+          "pinyin": "qiānwàn",
+          "hanviet": "Thiên Mặc",
+          "hsk": 4,
+          "word_id": "hsk4_575",
+          "meaning_vi": "nhất định, ngàn vạn lần"
+        },
+        {
+          "text": "万",
+          "pinyin": "wàn",
+          "hanviet": "Mặc",
+          "hsk": 2,
+          "word_id": "hsk2_449",
+          "meaning_vi": "vạn (mười nghìn)"
+        },
+        {
+          "text": "旅客",
+          "pinyin": "lǚkè",
+          "hanviet": "Lữ Khách",
+          "hsk": 4,
+          "word_id": "hsk4_489",
+          "meaning_vi": "hành khách, lữ khách"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "生命安全",
+          "pinyin": "shēng mìng ān quán",
+          "hanviet": "Sinh Mệnh An Toàn"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk3_605",
+    "hsk3_785",
+    "hsk4_331",
+    "hsk4_648",
+    "hsk1_144"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Thời kỳ đầu của ngành hàng không, việc lên máy bay diễn ra thế nào?",
+      "options_vi": [
+        "Rất tự do thoải mái như lên xe buýt, không cần soi chiếu",
+        "Phải kiểm tra cả ngày",
+        "Phải mặc đồ bảo hộ"
+      ],
+      "answer": 0,
+      "explanation_vi": "Ban đầu hành khách lên máy bay không hề có cửa soi an ninh."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Sự kiện nào dẫn đến việc lắp đặt cổng từ và máy chiếu X-quang tại sân bay?",
+      "options_vi": [
+        "Làn sóng không tặc cướp máy bay thập niên 60-70",
+        "Mất hành lý thất lạc",
+        "Máy bay bay quá nhanh"
+      ],
+      "answer": 0,
+      "explanation_vi": "Làn sóng cướp máy bay buộc các sân bay trang bị máy quét kim loại."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Ý nghĩa tối thượng của quy trình an ninh sân bay là gì?",
+      "options_vi": [
+        "Bảo đảm tuyệt đối tính mạng của hành khách trên từng chuyến bay",
+        "Làm phiền hành khách",
+        "Bán đồ uống tại sảnh"
+      ],
+      "answer": 0,
+      "explanation_vi": "Bảo vệ sinh mạng và an toàn cho phi hành đoàn và hành khách."
+    }
+  ]
+}

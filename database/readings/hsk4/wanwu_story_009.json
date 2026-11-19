@@ -1,27 +1,29 @@
 {
   "id": "wanwu_story_009",
+  "chapter_no": 9,
   "level": "HSK4",
   "series": "wanwu",
-  "book_page_start": 545,
-  "book_page_end": 556,
-  "page_display": "Trang 545 - 556",
+  "book_volume": 1,
+  "book_page_start": 85,
+  "book_page_end": 97,
+  "page_display": "Trang 85 - 97",
   "title": {
-    "zh": "扇子：终年无尽风",
-    "vi": "Chiếc quạt: Quanh năm không dứt gió"
+    "zh": "窃听器：冷战“明星”武器",
+    "vi": "Máy nghe trộm: Vũ khí ngôi sao thời Chiến tranh Lạnh"
   },
-  "topic": "culture_history",
+  "topic": "science_technology",
   "topic_vi": "📚 Vạn vật thú vị",
-  "icon": "🪭",
+  "icon": "🎙️",
   "cover_image": "assets/images/readings/wanwu/wanwu_story_009.webp",
   "illustration": "assets/images/readings/wanwu/wanwu_story_009.webp",
   "estimatedMinutes": 5,
-  "description_vi": "📖 Trang 545 - 556 · Lịch sử chiếc quạt xua tan oi bức: từ quạt lông vũ thời cổ, quạt tròn cung đình đến quạt xếp thư pháp nghệ thuật.",
+  "description_vi": "📖 Trang 85 - 97 · Cuộc đấu trí tình báo công nghệ cao: từ món quà chạm khắc gỗ chứa thiết bị thụ động đến trận chiến bảo mật thông tin.",
   "sentences": [
     {
       "id": "s1",
-      "zh": "在没有空调和电风扇的古代，人们度过炎热夏天的最得力工具，就是拿在手中的一把扇子。",
-      "pinyin": "Zài méiyǒu kōngtiáo hé diànfēngshàn de gǔdài, rénmen dùguò yánrè xiàtiān de zuì délì gōngjù, jiù shì ná zài shǒuzhōng de yì bǎ shànzi.",
-      "vi": "Thời cổ đại khi chưa có máy lạnh hay quạt điện, công cụ đắc lực nhất để mọi người vượt qua ngày hè oi ả chính là chiếc quạt cầm tay.",
+      "zh": "在没有硝烟的冷战情报战场上，微小的窃听器成为了最隐蔽却最具威力的情报武器。",
+      "pinyin": "Zài méiyǒu xiāoyān de Lěngzhàn qíngbào zhànchǎng shàng, wēixiǎo de qiètīngqì chéngwéi le zuì yǐnbì què zuì jù wēilì de qíngbào wǔqì.",
+      "vi": "Trên mặt trận tình báo Chiến tranh Lạnh không khói súng, máy nghe lén tí hon là vũ khí ngầm đáng sợ nhất.",
       "audio_start_ms": null,
       "audio_end_ms": null,
       "tokens": [
@@ -42,25 +44,9 @@
           "meaning_vi": "không có"
         },
         {
-          "text": "空调",
-          "pinyin": "kōngtiáo",
-          "hanviet": "Không Điệu",
-          "hsk": 3,
-          "word_id": "hsk3_822",
-          "meaning_vi": "máy điều hòa"
-        },
-        {
-          "text": "和",
-          "pinyin": "chī",
-          "hanviet": "Cật",
-          "hsk": 1,
-          "word_id": "hsk1_39",
-          "meaning_vi": "ăn"
-        },
-        {
-          "text": "电风扇",
-          "pinyin": "diàn fēng shàn",
-          "hanviet": "Điện Phong Thiên"
+          "text": "硝烟",
+          "pinyin": "xiāo yān",
+          "hanviet": "Tiêu Yên"
         },
         {
           "text": "的",
@@ -71,630 +57,28 @@
           "meaning_vi": "của (trợ từ)"
         },
         {
-          "text": "古代",
-          "pinyin": "gǔdài",
-          "hanviet": "Cổ Đại",
-          "hsk": 5,
-          "word_id": "hsk5_424",
-          "meaning_vi": "cổ đại"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "人们",
-          "pinyin": "rén men",
-          "hanviet": "Nhân Môn"
-        },
-        {
-          "text": "度过",
-          "pinyin": "chángshì",
-          "hanviet": "Thường Thí",
-          "hsk": 5,
-          "word_id": "hsk5_113",
-          "meaning_vi": "thử nghiệm"
-        },
-        {
-          "text": "炎热",
-          "pinyin": "yánrè",
-          "hanviet": "Viêm Nhiệt",
-          "hsk": 6,
-          "word_id": "hsk6_1509",
-          "meaning_vi": "nóng bức"
-        },
-        {
-          "text": "夏天",
-          "pinyin": "xiàtiān",
-          "hanviet": "Hạ Thiên",
-          "hsk": 3,
-          "word_id": "hsk3_968",
-          "meaning_vi": "mùa hè"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "最",
-          "pinyin": "zuì",
-          "hanviet": "Tối",
-          "hsk": 2,
-          "word_id": "hsk2_498",
-          "meaning_vi": "nhất"
-        },
-        {
-          "text": "得力",
-          "pinyin": "délì",
-          "hanviet": "Đắc Lực",
+          "text": "冷战",
+          "pinyin": "lěngzhàn",
+          "hanviet": "Lạnh Chiến",
           "hsk": 7,
-          "word_id": "hsk7_816",
-          "meaning_vi": "đắc lực"
+          "word_id": "hsk7_2521",
+          "meaning_vi": "chiến tranh lạnh"
         },
         {
-          "text": "工具",
-          "pinyin": "gōngjù",
-          "hanviet": "Công Cụ",
-          "hsk": 5,
-          "word_id": "hsk5_410",
-          "meaning_vi": "công cụ"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "就是",
-          "pinyin": "jiùshì",
-          "hanviet": "Tựu Thị",
-          "hsk": 4,
-          "word_id": "hsk4_408",
-          "meaning_vi": "chính là; dù… cũng"
-        },
-        {
-          "text": "拿",
-          "pinyin": "ná",
-          "hanviet": "Nã",
-          "hsk": 2,
-          "word_id": "hsk2_405",
-          "meaning_vi": "cầm, lấy"
-        },
-        {
-          "text": "在",
-          "pinyin": "zài",
-          "hanviet": "Tại",
-          "hsk": 1,
-          "word_id": "hsk1_390",
-          "meaning_vi": "ở, đang"
-        },
-        {
-          "text": "手中",
-          "pinyin": "shǒu zhōng",
-          "hanviet": "Thủ Trung"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "一把",
-          "pinyin": "yī bǎ",
-          "hanviet": "Nhất Bả"
-        },
-        {
-          "text": "扇子",
-          "pinyin": "shànzi",
-          "hanviet": "Thiên Tử",
-          "hsk": 5,
-          "word_id": "hsk5_955",
-          "meaning_vi": "cái quạt"
-        },
-        {
-          "text": "。"
-        }
-      ]
-    },
-    {
-      "id": "s2",
-      "zh": "最早的扇子大约出现在三千年前的商周时期，当时并不是用来纳凉，而是用羽毛制作的仪仗扇。",
-      "pinyin": "Zuìzǎo de shànzi dàyuē chūxiàn zài sānqiān nián qián de Shāng-Zhōu shíqī, dāngshí bìng bú shì yòng lái nàliáng, érshì yòng yǔmáo zhìzuò de yízhàng shàn.",
-      "vi": "Chiếc quạt đầu tiên xuất hiện khoảng 3.000 năm trước thời Thương Chu, thuở ấy không dùng hóng mát mà là quạt nghi trượng kết bằng lông chim.",
-      "audio_start_ms": null,
-      "audio_end_ms": null,
-      "tokens": [
-        {
-          "text": "最早",
-          "pinyin": "zuì zǎo",
-          "hanviet": "Tối Tảo"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "扇子",
-          "pinyin": "shànzi",
-          "hanviet": "Thiên Tử",
-          "hsk": 5,
-          "word_id": "hsk5_955",
-          "meaning_vi": "cái quạt"
-        },
-        {
-          "text": "大约",
-          "pinyin": "dàyuē",
-          "hanviet": "Đại Yêu",
-          "hsk": 4,
-          "word_id": "hsk4_129",
-          "meaning_vi": "khoảng, ước chừng"
-        },
-        {
-          "text": "出现",
-          "pinyin": "chūxiàn",
-          "hanviet": "Xuất Hiện",
-          "hsk": 4,
-          "word_id": "hsk4_90",
-          "meaning_vi": "xuất hiện"
-        },
-        {
-          "text": "在",
-          "pinyin": "zài",
-          "hanviet": "Tại",
-          "hsk": 1,
-          "word_id": "hsk1_390",
-          "meaning_vi": "ở, đang"
-        },
-        {
-          "text": "三千年",
-          "pinyin": "sān qiān nián",
-          "hanviet": "Tam Thiên Niên"
-        },
-        {
-          "text": "前",
-          "pinyin": "qián",
-          "hanviet": "Tiền",
-          "hsk": 1,
-          "word_id": "hsk1_558",
-          "meaning_vi": "trước"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "商周",
-          "pinyin": "shāng zhōu",
-          "hanviet": "Thương Chu"
-        },
-        {
-          "text": "时期",
-          "pinyin": "shíqī",
-          "hanviet": "Thời Kỳ",
-          "hsk": 5,
-          "word_id": "hsk5_1016",
-          "meaning_vi": "thời kỳ"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "当时",
-          "pinyin": "dāngshí",
-          "hanviet": "Đương Thời",
-          "hsk": 4,
-          "word_id": "hsk4_136",
-          "meaning_vi": "lúc đó, khi đó"
-        },
-        {
-          "text": "并",
-          "pinyin": "bìng",
-          "hanviet": "Tinh",
-          "hsk": 4,
-          "word_id": "hsk4_39",
-          "meaning_vi": "và, đồng thời; hoàn toàn (không)"
-        },
-        {
-          "text": "不是",
-          "pinyin": "bú shì",
-          "hanviet": "Bất Thị"
-        },
-        {
-          "text": "用来",
-          "pinyin": "yònglái",
-          "hanviet": "Dụng Lai",
-          "hsk": 4,
-          "word_id": "hsk4_879",
-          "meaning_vi": "dùng để"
-        },
-        {
-          "text": "纳凉",
-          "pinyin": "nà liáng",
-          "hanviet": "Nạp Lương"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "而是",
-          "pinyin": "ér shì",
-          "hanviet": "Nhi Thị"
-        },
-        {
-          "text": "用",
-          "pinyin": "yòng",
-          "hanviet": "Dụng",
-          "hsk": 3,
-          "word_id": "hsk3_1020",
-          "meaning_vi": "dùng"
-        },
-        {
-          "text": "羽毛",
-          "pinyin": "yǔ máo",
-          "hanviet": "Vũ Mao"
-        },
-        {
-          "text": "制作",
-          "pinyin": "zhìzuò",
-          "hanviet": "Chế Tác",
-          "hsk": 5,
-          "word_id": "hsk5_1519",
-          "meaning_vi": "chế tác, làm ra"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "仪仗",
-          "pinyin": "yí zhàng",
-          "hanviet": "Nghi Trượng"
-        },
-        {
-          "text": "扇",
-          "pinyin": "shān",
-          "hanviet": "Thiên",
-          "hsk": 5,
-          "word_id": "hsk5_949",
-          "meaning_vi": "quạt (gió)"
-        },
-        {
-          "text": "。"
-        }
-      ]
-    },
-    {
-      "id": "s3",
-      "zh": "汉代以后，丝织品制作的团扇开始流行，圆圆的扇面象征着“合欢”与“团圆”，深受宫廷女子喜爱。",
-      "pinyin": "Hàndài yǐhòu, sīzhīpǐn zhìzuò de tuánshàn kāishǐ liúxíng, yuányuán de shànmiàn xiàngzhēng zhe “héhuān” yǔ “tuányuán”, shēnshòu gōngtíng nǚzǐ xǐ'ài.",
-      "vi": "Từ thời Hán về sau, quạt tròn (đoàn phiến) dệt bằng tơ lụa bắt đầu thịnh hành, mặt quạt tròn vành vạnh tượng trưng cho 'hợp hoan' và 'đoàn viên', rất được các cung nhân yêu thích.",
-      "audio_start_ms": null,
-      "audio_end_ms": null,
-      "tokens": [
-        {
-          "text": "汉代",
-          "pinyin": "hàn dài",
-          "hanviet": "Hán Đại"
-        },
-        {
-          "text": "以后",
-          "pinyin": "yǐhòu",
-          "hanviet": "Dĩ Hậu",
-          "hsk": 3,
-          "word_id": "hsk3_1005",
-          "meaning_vi": "sau này, sau khi"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "丝织品",
-          "pinyin": "sī zhī pǐn",
-          "hanviet": "Tơ Chức Phẩm"
-        },
-        {
-          "text": "制作",
-          "pinyin": "zhìzuò",
-          "hanviet": "Chế Tác",
-          "hsk": 5,
-          "word_id": "hsk5_1519",
-          "meaning_vi": "chế tác, làm ra"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "团扇",
-          "pinyin": "tuán shàn",
-          "hanviet": "Đoàn Thiên"
-        },
-        {
-          "text": "开始",
-          "pinyin": "kāishǐ",
-          "hanviet": "Khai Thuỷ",
-          "hsk": 2,
-          "word_id": "hsk2_378",
-          "meaning_vi": "bắt đầu"
-        },
-        {
-          "text": "流行",
-          "pinyin": "liúxíng",
-          "hanviet": "Lưu Hành",
-          "hsk": 4,
-          "word_id": "hsk4_486",
-          "meaning_vi": "phổ biến, thịnh hành"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "圆圆的",
-          "pinyin": "yuán yuán de",
-          "hanviet": "Viên Viên Đích"
-        },
-        {
-          "text": "扇面",
-          "pinyin": "shàn miàn",
-          "hanviet": "Thiên Diện"
-        },
-        {
-          "text": "象征",
-          "pinyin": "xiàngzhēng",
-          "hanviet": "Tượng Trưng",
-          "hsk": 5,
-          "word_id": "hsk5_1261",
-          "meaning_vi": "biểu tượng, tượng trưng"
-        },
-        {
-          "text": "着",
-          "pinyin": "zhe",
-          "hanviet": "Trước",
-          "hsk": 2,
-          "word_id": "hsk2_490",
-          "meaning_vi": "đang (trợ từ)"
-        },
-        {
-          "text": "“"
-        },
-        {
-          "text": "合欢",
-          "pinyin": "hé huān",
-          "hanviet": "Cáp Hoan"
-        },
-        {
-          "text": "”"
-        },
-        {
-          "text": "与",
-          "pinyin": "yǔ",
-          "hanviet": "Dư",
-          "hsk": 4,
-          "word_id": "hsk4_897",
-          "meaning_vi": "và, với"
-        },
-        {
-          "text": "“"
-        },
-        {
-          "text": "团圆",
-          "pinyin": "tuányuán",
-          "hanviet": "Đoàn Viên",
-          "hsk": 6,
-          "word_id": "hsk6_1338",
-          "meaning_vi": "đoàn viên, sum họp"
-        },
-        {
-          "text": "”"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "深受",
-          "pinyin": "shēn shòu",
-          "hanviet": "Thâm Thọ"
-        },
-        {
-          "text": "宫廷",
-          "pinyin": "gōngtíng",
-          "hanviet": "Cung Đình",
+          "text": "情报",
+          "pinyin": "qíngbào",
+          "hanviet": "Tình Báo",
           "hsk": 7,
-          "word_id": "hsk7_1399",
-          "meaning_vi": "cung đình, hoàng cung"
+          "word_id": "hsk7_3314",
+          "meaning_vi": "tin tình báo"
         },
         {
-          "text": "女子",
-          "pinyin": "nǚzǐ",
-          "hanviet": "Nữ Tử",
-          "hsk": 5,
-          "word_id": "hsk5_806",
-          "meaning_vi": "người phụ nữ, nữ giới"
-        },
-        {
-          "text": "喜爱",
-          "pinyin": "xǐ’ài",
-          "hanviet": "Hỷ Ái",
-          "hsk": 3,
-          "word_id": "hsk3_965",
-          "meaning_vi": "yêu thích"
-        },
-        {
-          "text": "。"
-        }
-      ]
-    },
-    {
-      "id": "s4",
-      "zh": "宋代时期，可以自由开合折叠的折扇传入中原，并迅速在文人雅士之间流传开来。",
-      "pinyin": "Sòngdài shíqī, kěyǐ zìyóu kāihé zhédié de zhéshàn chuánrù zhōngyuán, bìng xùnsù zài wénrén yǎshì zhījiān liúchuán kāi lái.",
-      "vi": "Vào thời Tống, chiếc quạt xếp có thể tự do mở ra gập lại truyền vào Trung Nguyên, nhanh chóng lan rộng trong giới văn nhân tao nhã.",
-      "audio_start_ms": null,
-      "audio_end_ms": null,
-      "tokens": [
-        {
-          "text": "宋代",
-          "pinyin": "sòng dài",
-          "hanviet": "Tống Đại"
-        },
-        {
-          "text": "时期",
-          "pinyin": "shíqī",
-          "hanviet": "Thời Kỳ",
-          "hsk": 5,
-          "word_id": "hsk5_1016",
-          "meaning_vi": "thời kỳ"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "可以",
-          "pinyin": "kěyǐ",
-          "hanviet": "Khả Dĩ",
-          "hsk": 1,
-          "word_id": "hsk1_160",
-          "meaning_vi": "có thể, được"
-        },
-        {
-          "text": "自由",
-          "pinyin": "zìyóu",
-          "hanviet": "Tự Do",
-          "hsk": 5,
-          "word_id": "hsk5_1579",
-          "meaning_vi": "tự do"
-        },
-        {
-          "text": "开合",
-          "pinyin": "kāi hé",
-          "hanviet": "Khai Cáp"
-        },
-        {
-          "text": "折叠",
-          "pinyin": "zhédié",
-          "hanviet": "Chiết Điệp",
+          "text": "战场",
+          "pinyin": "zhànchǎng",
+          "hanviet": "Chiến Trường",
           "hsk": 7,
-          "word_id": "hsk7_5202",
-          "meaning_vi": "gấp lại, xếp gập"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "折扇",
-          "pinyin": "zhé shàn",
-          "hanviet": "Chiết Thiên"
-        },
-        {
-          "text": "传入",
-          "pinyin": "chuán rù",
-          "hanviet": "Truyền Nhập"
-        },
-        {
-          "text": "中原",
-          "pinyin": "zhōng yuán",
-          "hanviet": "Trung Nguyên"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "并",
-          "pinyin": "bìng",
-          "hanviet": "Tinh",
-          "hsk": 4,
-          "word_id": "hsk4_39",
-          "meaning_vi": "và, đồng thời; hoàn toàn (không)"
-        },
-        {
-          "text": "迅速",
-          "pinyin": "xùnsù",
-          "hanviet": "Tấn Tốc",
-          "hsk": 5,
-          "word_id": "hsk5_1319",
-          "meaning_vi": "nhanh chóng"
-        },
-        {
-          "text": "在",
-          "pinyin": "zài",
-          "hanviet": "Tại",
-          "hsk": 1,
-          "word_id": "hsk1_390",
-          "meaning_vi": "ở, đang"
-        },
-        {
-          "text": "文人雅士",
-          "pinyin": "wén rén yǎ shì",
-          "hanviet": "Văn Nhân Nhã Sĩ"
-        },
-        {
-          "text": "之间",
-          "pinyin": "zhījiān",
-          "hanviet": "Chi Gian",
-          "hsk": 4,
-          "word_id": "hsk4_942",
-          "meaning_vi": "giữa"
-        },
-        {
-          "text": "流传开来",
-          "pinyin": "liú chuán kāi lái",
-          "hanviet": "Lưu Truyền Khai Lai"
-        },
-        {
-          "text": "。"
-        }
-      ]
-    },
-    {
-      "id": "s5",
-      "zh": "文人墨客在扇面上题诗作画，让一把实用的日常工具升华为极具审美品位的艺术品。",
-      "pinyin": "Wénrén mòkè zài shànmiàn shàng tíshī zuòhuà, ràng yì bǎ shíyòng de rìcháng gōngjù shēnghuá wéi jí jù shěnměi pǐnwèi de yìshùpǐn.",
-      "vi": "Thi nhân mặc khách đề thơ vẽ tranh lên mặt quạt, khiến một món đồ dùng sinh hoạt thường ngày thăng hoa thành một tác phẩm nghệ thuật đầy thẩm mỹ.",
-      "audio_start_ms": null,
-      "audio_end_ms": null,
-      "tokens": [
-        {
-          "text": "文人墨客",
-          "pinyin": "wén rén mò kè",
-          "hanviet": "Văn Nhân Mặc Khách"
-        },
-        {
-          "text": "在",
-          "pinyin": "zài",
-          "hanviet": "Tại",
-          "hsk": 1,
-          "word_id": "hsk1_390",
-          "meaning_vi": "ở, đang"
-        },
-        {
-          "text": "扇面",
-          "pinyin": "shàn miàn",
-          "hanviet": "Thiên Diện"
+          "word_id": "hsk7_5155",
+          "meaning_vi": "chiến trường"
         },
         {
           "text": "上",
@@ -705,99 +89,15 @@
           "meaning_vi": "trên"
         },
         {
-          "text": "题诗",
-          "pinyin": "tí shī",
-          "hanviet": "Đề Thi"
-        },
-        {
-          "text": "作画",
-          "pinyin": "zuò huà",
-          "hanviet": "Tác Hoạ"
-        },
-        {
           "text": "，"
         },
         {
-          "text": "让",
-          "pinyin": "ràng",
-          "hanviet": "Nhượng",
-          "hsk": 2,
-          "word_id": "hsk2_422",
-          "meaning_vi": "để cho, khiến"
-        },
-        {
-          "text": "一把",
-          "pinyin": "yī bǎ",
-          "hanviet": "Nhất Bả"
-        },
-        {
-          "text": "实用",
-          "pinyin": "shíyòng",
-          "hanviet": "Thực Dụng",
-          "hsk": 5,
-          "word_id": "hsk5_1024",
-          "meaning_vi": "thực dụng, hữu dụng"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "日常",
-          "pinyin": "rìcháng",
-          "hanviet": "Nhật Thường",
-          "hsk": 4,
-          "word_id": "hsk4_618",
-          "meaning_vi": "thường ngày, hàng ngày"
-        },
-        {
-          "text": "工具",
-          "pinyin": "gōngjù",
-          "hanviet": "Công Cụ",
-          "hsk": 5,
-          "word_id": "hsk5_410",
-          "meaning_vi": "công cụ"
-        },
-        {
-          "text": "升华",
-          "pinyin": "shēnghuá",
-          "hanviet": "Thăng Hoa",
-          "hsk": 7,
-          "word_id": "hsk7_3609",
-          "meaning_vi": "thăng hoa; nâng cao lên tầm cao mới"
-        },
-        {
-          "text": "为",
-          "pinyin": "wèi",
-          "hanviet": "Vi",
-          "hsk": 3,
-          "word_id": "hsk3_954",
-          "meaning_vi": "vì, cho"
-        },
-        {
-          "text": "极具",
-          "pinyin": "jí jù",
-          "hanviet": "Cực Cụ"
-        },
-        {
-          "text": "审美",
-          "pinyin": "shěnměi",
-          "hanviet": "Thẩm Mĩ/thẩm Mỹ",
+          "text": "微小",
+          "pinyin": "wēixiǎo",
+          "hanviet": "Vi Tiểu",
           "hsk": 6,
-          "word_id": "hsk6_1168",
-          "meaning_vi": "thẩm mỹ"
-        },
-        {
-          "text": "品位",
-          "pinyin": "pǐnwèi",
-          "hanviet": "Phẩm Vị",
-          "hsk": 7,
-          "word_id": "hsk7_3090",
-          "meaning_vi": "gu thẩm mỹ; đẳng cấp; thị hiếu"
+          "word_id": "hsk6_1367",
+          "meaning_vi": "vi mô, nhỏ bé"
         },
         {
           "text": "的",
@@ -808,199 +108,17 @@
           "meaning_vi": "của (trợ từ)"
         },
         {
-          "text": "艺术品",
-          "pinyin": "yì shù pǐn",
-          "hanviet": "Nghệ Thuật Phẩm"
+          "text": "窃听器",
+          "pinyin": "qiè tīng qì",
+          "hanviet": "Thiết Thính Khí"
         },
         {
-          "text": "。"
-        }
-      ]
-    },
-    {
-      "id": "s6",
-      "zh": "一把轻巧的折扇，开合之间既能送来清风，也能展现主人的学识与风度。",
-      "pinyin": "Yì bǎ qīngqiǎo de zhéshàn, kāihé zhījiān jì néng sòng lái qīngfēng, yě néng zhǎnxiàn zhǔrén de xuéshí yǔ fēngdù.",
-      "vi": "Một chiếc quạt xếp nhẹ nhàng, lúc mở lúc gập vừa mang lại làn gió mát lành, vừa biểu đạt học vấn và phong độ đĩnh đạc của chủ nhân.",
-      "audio_start_ms": null,
-      "audio_end_ms": null,
-      "tokens": [
-        {
-          "text": "一把",
-          "pinyin": "yī bǎ",
-          "hanviet": "Nhất Bả"
-        },
-        {
-          "text": "轻巧",
-          "pinyin": "qīng qiǎo",
-          "hanviet": "Khinh Xảo"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "折扇",
-          "pinyin": "zhé shàn",
-          "hanviet": "Chiết Thiên"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "开合",
-          "pinyin": "kāi hé",
-          "hanviet": "Khai Cáp"
-        },
-        {
-          "text": "之间",
-          "pinyin": "zhījiān",
-          "hanviet": "Chi Gian",
+          "text": "成为",
+          "pinyin": "chéngwéi",
+          "hanviet": "Thành Vi",
           "hsk": 4,
-          "word_id": "hsk4_942",
-          "meaning_vi": "giữa"
-        },
-        {
-          "text": "既",
-          "pinyin": "jì",
-          "hanviet": "Ký",
-          "hsk": 4,
-          "word_id": "hsk4_327",
-          "meaning_vi": "vừa… vừa; đã (… thì)"
-        },
-        {
-          "text": "能",
-          "pinyin": "néng",
-          "hanviet": "Năng",
-          "hsk": 1,
-          "word_id": "hsk1_212",
-          "meaning_vi": "có thể"
-        },
-        {
-          "text": "送来",
-          "pinyin": "sòng lái",
-          "hanviet": "Tống Lai"
-        },
-        {
-          "text": "清风",
-          "pinyin": "qīng fēng",
-          "hanviet": "Thanh Phong"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "也",
-          "pinyin": "yě",
-          "hanviet": "Dã",
-          "hsk": 1,
-          "word_id": "hsk1_359",
-          "meaning_vi": "cũng"
-        },
-        {
-          "text": "能",
-          "pinyin": "néng",
-          "hanviet": "Năng",
-          "hsk": 1,
-          "word_id": "hsk1_212",
-          "meaning_vi": "có thể"
-        },
-        {
-          "text": "展现",
-          "pinyin": "zhǎnxiàn",
-          "hanviet": "Triển Hiện",
-          "hsk": 5,
-          "word_id": "hsk5_1467",
-          "meaning_vi": "hiển thị"
-        },
-        {
-          "text": "主人",
-          "pinyin": "zhǔrén",
-          "hanviet": "Chủ Nhân",
-          "hsk": 5,
-          "word_id": "hsk5_1544",
-          "meaning_vi": "chủ nhân"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "学识",
-          "pinyin": "xuéshí",
-          "hanviet": "Học Thức",
-          "hsk": 7,
-          "word_id": "hsk7_4681",
-          "meaning_vi": "học thức; sự hiểu biết sâu rộng"
-        },
-        {
-          "text": "与",
-          "pinyin": "yǔ",
-          "hanviet": "Dư",
-          "hsk": 4,
-          "word_id": "hsk4_897",
-          "meaning_vi": "và, với"
-        },
-        {
-          "text": "风度",
-          "pinyin": "fēngdù",
-          "hanviet": "Phong Độ",
-          "hsk": 7,
-          "word_id": "hsk7_1185",
-          "meaning_vi": "phong độ, phong thái lịch thiệp"
-        },
-        {
-          "text": "。"
-        }
-      ]
-    },
-    {
-      "id": "s7",
-      "zh": "如今扇子虽然退出了主要的避暑功能，但它蕴含的典雅诗意依然在中华文化中世代流传。",
-      "pinyin": "Rújīn shànzi suīrán tuìchū le zhǔyào de bìshǔ gōngnéng, dàn tā yùnhán de diǎnyǎ shīyì yīrán zài Zhōnghuá wénhuà zhōng shìdài liúchuán.",
-      "vi": "Ngày nay chiếc quạt tuy không còn là phương tiện tránh nóng chủ yếu, nhưng nét thi vị tao nhã của nó vẫn lưu truyền qua bao thế hệ trong văn hóa Trung Hoa.",
-      "audio_start_ms": null,
-      "audio_end_ms": null,
-      "tokens": [
-        {
-          "text": "如今",
-          "pinyin": "rújīn",
-          "hanviet": "Như Kim",
-          "hsk": 5,
-          "word_id": "hsk5_935",
-          "meaning_vi": "hiện nay, ngày nay"
-        },
-        {
-          "text": "扇子",
-          "pinyin": "shànzi",
-          "hanviet": "Thiên Tử",
-          "hsk": 5,
-          "word_id": "hsk5_955",
-          "meaning_vi": "cái quạt"
-        },
-        {
-          "text": "虽然",
-          "pinyin": "suīrán",
-          "hanviet": "Tuy Nhiên",
-          "hsk": 2,
-          "word_id": "hsk2_438",
-          "meaning_vi": "mặc dù"
-        },
-        {
-          "text": "退出",
-          "pinyin": "tuìchū",
-          "hanviet": "Thoái Xuất",
-          "hsk": 5,
-          "word_id": "hsk5_1163",
-          "meaning_vi": "rút lui, thoát ra"
+          "word_id": "hsk4_82",
+          "meaning_vi": "trở thành"
         },
         {
           "text": "了",
@@ -1011,12 +129,41 @@
           "meaning_vi": "rồi (trợ từ)"
         },
         {
-          "text": "主要",
-          "pinyin": "zhǔyào",
-          "hanviet": "Chủ Yếu",
-          "hsk": 3,
-          "word_id": "hsk3_1066",
-          "meaning_vi": "chủ yếu"
+          "text": "最",
+          "pinyin": "zuì",
+          "hanviet": "Tối",
+          "hsk": 2,
+          "word_id": "hsk2_498",
+          "meaning_vi": "nhất"
+        },
+        {
+          "text": "隐蔽",
+          "pinyin": "yǐnbì",
+          "hanviet": "Ẩn Tế",
+          "hsk": 7,
+          "word_id": "hsk7_4916",
+          "meaning_vi": "ẩn giấu, che khuất"
+        },
+        {
+          "text": "却",
+          "pinyin": "què",
+          "hanviet": "Khước",
+          "hsk": 4,
+          "word_id": "hsk4_606",
+          "meaning_vi": "nhưng, lại"
+        },
+        {
+          "text": "最具",
+          "pinyin": "zuì jù",
+          "hanviet": "Tối Cụ"
+        },
+        {
+          "text": "威力",
+          "pinyin": "wēilì",
+          "hanviet": "Uy Lực",
+          "hsk": 7,
+          "word_id": "hsk7_4227",
+          "meaning_vi": "uy lực"
         },
         {
           "text": "的",
@@ -1027,47 +174,109 @@
           "meaning_vi": "của (trợ từ)"
         },
         {
-          "text": "避暑",
-          "pinyin": "bìshǔ",
-          "hanviet": "Tị Thử",
+          "text": "情报",
+          "pinyin": "qíngbào",
+          "hanviet": "Tình Báo",
           "hsk": 7,
-          "word_id": "hsk7_193",
-          "meaning_vi": "tránh nóng mùa hè, đi nghỉ mát"
+          "word_id": "hsk7_3314",
+          "meaning_vi": "tin tình báo"
         },
         {
-          "text": "功能",
-          "pinyin": "gōngnéng",
-          "hanviet": "Công Năng",
-          "hsk": 5,
-          "word_id": "hsk5_411",
-          "meaning_vi": "công năng, chức năng"
+          "text": "武器",
+          "pinyin": "wǔqì",
+          "hanviet": "Vũ Khí",
+          "hsk": 6,
+          "word_id": "hsk6_1398",
+          "meaning_vi": "vũ khí"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "一九四五年，苏联少先队员向美国驻苏大使赠送了一面精美的美国国徽木雕工艺品。",
+      "pinyin": "Yī-jiǔ-sì-wǔ nián, Sūlián shǎoxiānduìyuán xiàng Měiguó zhù Sū dàshǐ zèngsòng le yí miàn jīngměi de Měiguó guóhuī mùdiāo gōngyìpǐn.",
+      "vi": "Năm 1945, thiếu nhi Liên Xô tặng Đại sứ Mỹ bức chạm khắc quốc huy Mỹ tinh xảo bằng gỗ.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "一九四五年",
+          "pinyin": "yī jiǔ sì wǔ nián",
+          "hanviet": "Nhất Cửu Tứ Ngũ Niên"
         },
         {
           "text": "，"
         },
         {
-          "text": "但",
-          "pinyin": "dàn",
-          "hanviet": "Đãn",
-          "hsk": 2,
-          "word_id": "hsk2_330",
-          "meaning_vi": "nhưng, nhưng mà"
+          "text": "苏联",
+          "pinyin": "sū lián",
+          "hanviet": "Tô Liên"
         },
         {
-          "text": "它",
-          "pinyin": "tā",
-          "hanviet": "Tha",
+          "text": "少先队员",
+          "pinyin": "shào xiān duì yuán",
+          "hanviet": "Thiểu Tiên Đội Viên"
+        },
+        {
+          "text": "向",
+          "pinyin": "xiàng",
+          "hanviet": "Hướng",
+          "hsk": 3,
+          "word_id": "hsk3_973",
+          "meaning_vi": "hướng về, về phía"
+        },
+        {
+          "text": "美国",
+          "pinyin": "měi guó",
+          "hanviet": "Mỹ Quốc"
+        },
+        {
+          "text": "驻苏",
+          "pinyin": "zhù sū",
+          "hanviet": "Trú Tô"
+        },
+        {
+          "text": "大使",
+          "pinyin": "dàshǐ",
+          "hanviet": "Đại Sứ",
+          "hsk": 6,
+          "word_id": "hsk6_251",
+          "meaning_vi": "đại sứ"
+        },
+        {
+          "text": "赠送",
+          "pinyin": "zèngsòng",
+          "hanviet": "Tặng Tống",
+          "hsk": 5,
+          "word_id": "hsk5_1459",
+          "meaning_vi": "tặng, biếu tặng"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
           "hsk": 1,
-          "word_id": "hsk1_569",
-          "meaning_vi": "nó (vật, con vật)"
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
         },
         {
-          "text": "蕴含",
-          "pinyin": "yùnhán",
-          "hanviet": "Uẩn Hàm",
+          "text": "一面",
+          "pinyin": "yímiàn",
+          "hanviet": "Nhất Diện",
           "hsk": 7,
-          "word_id": "hsk7_5078",
-          "meaning_vi": "hàm chứa, ẩn chứa bên trong"
+          "word_id": "hsk7_4829",
+          "meaning_vi": "một lần (gặp mặt); một mặt"
+        },
+        {
+          "text": "精美",
+          "pinyin": "jīngměi",
+          "hanviet": "Tinh Mỹ",
+          "hsk": 6,
+          "word_id": "hsk6_713",
+          "meaning_vi": "tinh xảo, tinh mỹ, tuyệt đẹp"
         },
         {
           "text": "的",
@@ -1078,22 +287,85 @@
           "meaning_vi": "của (trợ từ)"
         },
         {
-          "text": "典雅",
-          "pinyin": "diǎn yǎ",
-          "hanviet": "Điển Nhã"
+          "text": "美国",
+          "pinyin": "měi guó",
+          "hanviet": "Mỹ Quốc"
         },
         {
-          "text": "诗意",
-          "pinyin": "shī yì",
-          "hanviet": "Thi Ý"
+          "text": "国徽",
+          "pinyin": "guóhuī",
+          "hanviet": "Quốc Huy",
+          "hsk": 7,
+          "word_id": "hsk7_1536",
+          "meaning_vi": "quốc huy"
         },
         {
-          "text": "依然",
-          "pinyin": "yīrán",
-          "hanviet": "Y Nhiên",
-          "hsk": 5,
-          "word_id": "hsk5_1349",
-          "meaning_vi": "vẫn như cũ"
+          "text": "木雕",
+          "pinyin": "mù diāo",
+          "hanviet": "Mộc Điêu"
+        },
+        {
+          "text": "工艺品",
+          "pinyin": "gōng yì pǐn",
+          "hanviet": "Công Nghệ Phẩm"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "谁也没有料到，这件挂在大使办公室整整八年的国徽内部，竟然隐藏着一种无需电源的被动窃听装置。",
+      "pinyin": "Shéi yě méiyǒu liàodào, zhè jiàn guà zài dàshǐ bàngōngshì zhěngzhěng bā nián de guóhuī nèibù, jìngrán yǐncáng zhe yì zhǒng wúxū diànyuán de bèidòng qiètīng zhuāngzhì.",
+      "vi": "Không ai ngờ bên trong bức phù điêu treo 8 năm ở phòng đại sứ lại gắn máy nghe lén thụ động không cần pin.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "谁",
+          "pinyin": "shéi/shuí",
+          "hanviet": "Thuỳ",
+          "hsk": 1,
+          "word_id": "hsk1_564",
+          "meaning_vi": "ai"
+        },
+        {
+          "text": "也",
+          "pinyin": "yě",
+          "hanviet": "Dã",
+          "hsk": 1,
+          "word_id": "hsk1_359",
+          "meaning_vi": "cũng"
+        },
+        {
+          "text": "没有",
+          "pinyin": "méiyǒu",
+          "hanviet": "Một Hữu",
+          "hsk": 1,
+          "word_id": "hsk1_197",
+          "meaning_vi": "không có"
+        },
+        {
+          "text": "料到",
+          "pinyin": "liào dào",
+          "hanviet": "Liệu Đáo"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "这件",
+          "pinyin": "zhè jiàn",
+          "hanviet": "Giá Kiện"
+        },
+        {
+          "text": "挂",
+          "pinyin": "guà",
+          "hanviet": "Quải",
+          "hsk": 4,
+          "word_id": "hsk4_268",
+          "meaning_vi": "treo"
         },
         {
           "text": "在",
@@ -1104,33 +376,445 @@
           "meaning_vi": "ở, đang"
         },
         {
-          "text": "中华文化",
-          "pinyin": "zhōng huá wén huà",
-          "hanviet": "Trung Hoa Văn Hoa"
+          "text": "大使",
+          "pinyin": "dàshǐ",
+          "hanviet": "Đại Sứ",
+          "hsk": 6,
+          "word_id": "hsk6_251",
+          "meaning_vi": "đại sứ"
         },
         {
-          "text": "中",
-          "pinyin": "zhōng",
-          "hanviet": "Trung",
+          "text": "办公室",
+          "pinyin": "bàngōngshì",
+          "hanviet": "Biện Công Thất",
           "hsk": 3,
-          "word_id": "hsk3_1060",
-          "meaning_vi": "giữa, trong"
+          "word_id": "hsk3_612",
+          "meaning_vi": "văn phòng"
         },
         {
-          "text": "世代",
-          "pinyin": "shìdài",
-          "hanviet": "Thế Đại",
-          "hsk": 7,
-          "word_id": "hsk7_3691",
-          "meaning_vi": "thế hệ, đời đời"
-        },
-        {
-          "text": "流传",
-          "pinyin": "liúchuán",
-          "hanviet": "Lưu Truyền",
+          "text": "整整",
+          "pinyin": "zhěngzhěng",
+          "hanviet": "Chỉnh Chỉnh",
           "hsk": 5,
-          "word_id": "hsk5_732",
-          "meaning_vi": "lưu truyền"
+          "word_id": "hsk5_1492",
+          "meaning_vi": "tròn, trọn vẹn, ròng rã"
+        },
+        {
+          "text": "八年",
+          "pinyin": "bā nián",
+          "hanviet": "Bát Niên"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "国徽",
+          "pinyin": "guóhuī",
+          "hanviet": "Quốc Huy",
+          "hsk": 7,
+          "word_id": "hsk7_1536",
+          "meaning_vi": "quốc huy"
+        },
+        {
+          "text": "内部",
+          "pinyin": "nèibù",
+          "hanviet": "Nội Bộ",
+          "hsk": 5,
+          "word_id": "hsk5_795",
+          "meaning_vi": "nội bộ, bên trong"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "竟然",
+          "pinyin": "jìngrán",
+          "hanviet": "Cánh Nhiên",
+          "hsk": 4,
+          "word_id": "hsk4_404",
+          "meaning_vi": "lại, không ngờ là"
+        },
+        {
+          "text": "隐藏",
+          "pinyin": "yǐncáng",
+          "hanviet": "Ẩn Tạng",
+          "hsk": 6,
+          "word_id": "hsk6_1579",
+          "meaning_vi": "ẩn giấu, giấu kín"
+        },
+        {
+          "text": "着",
+          "pinyin": "zhe",
+          "hanviet": "Trước",
+          "hsk": 2,
+          "word_id": "hsk2_490",
+          "meaning_vi": "đang (trợ từ)"
+        },
+        {
+          "text": "一种",
+          "pinyin": "yī zhǒng",
+          "hanviet": "Nhất Chủng"
+        },
+        {
+          "text": "无需",
+          "pinyin": "wú xū",
+          "hanviet": "Vô Nhu"
+        },
+        {
+          "text": "电源",
+          "pinyin": "diànyuán",
+          "hanviet": "Điện Nguyên",
+          "hsk": 6,
+          "word_id": "hsk6_303",
+          "meaning_vi": "nguồn điện"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "被动",
+          "pinyin": "bèidòng",
+          "hanviet": "Bị Động",
+          "hsk": 6,
+          "word_id": "hsk6_39",
+          "meaning_vi": "bị động"
+        },
+        {
+          "text": "窃听",
+          "pinyin": "qiè tīng",
+          "hanviet": "Thiết Thính"
+        },
+        {
+          "text": "装置",
+          "pinyin": "zhuāngzhì",
+          "hanviet": "Trang Trí",
+          "hsk": 7,
+          "word_id": "hsk7_5458",
+          "meaning_vi": "thiết bị, bộ máy, hệ thống cơ cấu"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "只有当特定频率的无线电微波射向它时，它才会将房间里的谈话声波反射回去。",
+      "pinyin": "Zhǐyǒu dāng tèdìng pínlǜ de wúxiàndiàn wēibō shèxiàng tā shí, tā cái huì jiāng fángjiān lǐ de tánhuà shēngbō fǎnshè huíqù.",
+      "vi": "Chỉ khi có chùm sóng vô tuyến chiếu vào, màng rung mới phản hồi âm thanh cuộc trò chuyện ra ngoài.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "只有",
+          "pinyin": "zhǐyǒu",
+          "hanviet": "Chỉ Hữu",
+          "hsk": 3,
+          "word_id": "hsk3_1059",
+          "meaning_vi": "chỉ có"
+        },
+        {
+          "text": "当",
+          "pinyin": "dāng",
+          "hanviet": "Đương",
+          "hsk": 4,
+          "word_id": "hsk4_135",
+          "meaning_vi": "khi, lúc"
+        },
+        {
+          "text": "特定",
+          "pinyin": "tèdìng",
+          "hanviet": "Đặc Định",
+          "hsk": 6,
+          "word_id": "hsk6_1278",
+          "meaning_vi": "đặc định, nhất định"
+        },
+        {
+          "text": "频率",
+          "pinyin": "pínlǜ",
+          "hanviet": "Tần Suất",
+          "hsk": 6,
+          "word_id": "hsk6_995",
+          "meaning_vi": "tần suất, tần số"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "无线电",
+          "pinyin": "wú xiàn diàn",
+          "hanviet": "Vô Tuyến Điện"
+        },
+        {
+          "text": "微波",
+          "pinyin": "wēi bō",
+          "hanviet": "Vi Ba"
+        },
+        {
+          "text": "射向",
+          "pinyin": "shè xiàng",
+          "hanviet": "Xạ Hướng"
+        },
+        {
+          "text": "它",
+          "pinyin": "tā",
+          "hanviet": "Tha",
+          "hsk": 1,
+          "word_id": "hsk1_569",
+          "meaning_vi": "nó (vật, con vật)"
+        },
+        {
+          "text": "时",
+          "pinyin": "shí",
+          "hanviet": "Thời",
+          "hsk": 2,
+          "word_id": "hsk2_431",
+          "meaning_vi": "thời gian (danh từ, số lượng)"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "它",
+          "pinyin": "tā",
+          "hanviet": "Tha",
+          "hsk": 1,
+          "word_id": "hsk1_569",
+          "meaning_vi": "nó (vật, con vật)"
+        },
+        {
+          "text": "才",
+          "pinyin": "cái",
+          "hanviet": "Tài"
+        },
+        {
+          "text": "会",
+          "pinyin": "huì",
+          "hanviet": "Hội",
+          "hsk": 1,
+          "word_id": "hsk1_43",
+          "meaning_vi": "biết, sẽ"
+        },
+        {
+          "text": "将",
+          "pinyin": "jiāng",
+          "hanviet": "Tương",
+          "hsk": 4,
+          "word_id": "hsk4_356",
+          "meaning_vi": "sẽ; đem, lấy (như 把)"
+        },
+        {
+          "text": "房间",
+          "pinyin": "fángjiān",
+          "hanviet": "Phòng Gian",
+          "hsk": 1,
+          "word_id": "hsk1_87",
+          "meaning_vi": "phòng"
+        },
+        {
+          "text": "里",
+          "pinyin": "lǐ",
+          "hanviet": "Lý",
+          "hsk": 1,
+          "word_id": "hsk1_536",
+          "meaning_vi": "bên trong"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "谈话",
+          "pinyin": "tánhuà",
+          "hanviet": "Đàm Thoại",
+          "hsk": 5,
+          "word_id": "hsk5_1104",
+          "meaning_vi": "nói chuyện, trò chuyện, đàm đạo"
+        },
+        {
+          "text": "声波",
+          "pinyin": "shēng bō",
+          "hanviet": "Thanh Ba"
+        },
+        {
+          "text": "反射",
+          "pinyin": "fǎnshè",
+          "hanviet": "Phản Xạ",
+          "hsk": 7,
+          "word_id": "hsk7_1084",
+          "meaning_vi": "phản chiếu, phản xạ"
+        },
+        {
+          "text": "回去",
+          "pinyin": "huíqù",
+          "hanviet": "Hồi Khứ",
+          "hsk": 2,
+          "word_id": "hsk2_362",
+          "meaning_vi": "quay về, đi về"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "这项被称为“金唇”的绝密发明，揭开了现代无线电电子对抗与防窃密技术的序幕。",
+      "pinyin": "Zhè xiàng bèi chēng wéi “Jīnchún” de juémì fāmíng, jiēkāi le xiàndài wúxiàndiàn diànzǐ duìkàng yǔ fáng-qièmì jìshù de xùmù.",
+      "vi": "Thiết bị 'Môi Vàng' huyền thoại này đã mở màn cho công nghệ tác chiến điện tử và bảo mật hiện đại.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "这项",
+          "pinyin": "zhè xiàng",
+          "hanviet": "Giá Hạng"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "称为",
+          "pinyin": "chēngwéi",
+          "hanviet": "Xứng Vi",
+          "hsk": 5,
+          "word_id": "hsk5_134",
+          "meaning_vi": "gọi là"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "金唇",
+          "pinyin": "jīn chún",
+          "hanviet": "Kim Thần"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "绝密",
+          "pinyin": "jué mì",
+          "hanviet": "Tuyệt Mật"
+        },
+        {
+          "text": "发明",
+          "pinyin": "fāmíng",
+          "hanviet": "Phát Minh",
+          "hsk": 5,
+          "word_id": "hsk5_320",
+          "meaning_vi": "phát minh"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "揭开",
+          "pinyin": "jiē kāi",
+          "hanviet": "Yết Khai"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "现代",
+          "pinyin": "xiàndài",
+          "hanviet": "Hiện Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1239",
+          "meaning_vi": "hiện đại"
+        },
+        {
+          "text": "无线电",
+          "pinyin": "wú xiàn diàn",
+          "hanviet": "Vô Tuyến Điện"
+        },
+        {
+          "text": "电子对抗",
+          "pinyin": "diàn zi duì kàng",
+          "hanviet": "Điện Tử Đối Kháng"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "防",
+          "pinyin": "fáng",
+          "hanviet": "Phòng",
+          "hsk": 5,
+          "word_id": "hsk5_340",
+          "meaning_vi": "phòng, đề phòng"
+        },
+        {
+          "text": "窃密",
+          "pinyin": "qiè mì",
+          "hanviet": "Thiết Mật"
+        },
+        {
+          "text": "技术",
+          "pinyin": "jìshù",
+          "hanviet": "Kĩ Thuật/kỹ Thuật",
+          "hsk": 4,
+          "word_id": "hsk4_331",
+          "meaning_vi": "kỹ thuật"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "序幕",
+          "pinyin": "xùmù",
+          "hanviet": "Tự Màn",
+          "hsk": 7,
+          "word_id": "hsk7_4652",
+          "meaning_vi": "màn dạo đầu; mở màn"
         },
         {
           "text": "。"
@@ -1139,45 +823,45 @@
     }
   ],
   "vocabulary_spotlight": [
-    "hsk5_955",
-    "hsk5_410",
-    "hsk4_870",
-    "hsk3_957",
+    "hsk6_1398",
+    "hsk4_331",
+    "hsk3_830",
+    "hsk6_1579",
     "hsk1_390"
   ],
   "quiz": [
     {
       "id": "q1",
-      "question_vi": "Ban đầu thời Thương Chu, chiếc quạt được dùng vào mục đích gì?",
+      "question_vi": "Thiết bị nghe lén 'Môi Vàng' được giấu trong vật phẩm nào?",
       "options_vi": [
-        "Làm quạt nghi trượng kết bằng lông chim (仪仗)",
-        "Dùng để quạt mát mùa hè",
-        "Dùng để che mưa bão"
+        "Bức chạm gỗ quốc huy Mỹ treo tường phòng đại sứ",
+        "Chiếc bút máy",
+        "Đôi giày"
       ],
       "answer": 0,
-      "explanation_vi": "Trong bài viết: 当时并不是用来纳凉，而是用羽毛制作的仪仗扇."
+      "explanation_vi": "Nó được giấu trong bức phù điêu quốc huy Mỹ suốt 8 năm."
     },
     {
       "id": "q2",
-      "question_vi": "Quạt tròn (đoàn phiến) thời xưa mang ý nghĩa tượng trưng cho điều gì?",
+      "question_vi": "Điểm độc đáo nhất của thiết bị nghe lén này là gì?",
       "options_vi": [
-        "Đoàn viên và hòa hợp hạnh phúc (合欢团圆)",
-        "Tài lộc giàu sang",
-        "Sức khỏe dồi dào"
+        "Không cần pin nguồn điện bên trong",
+        "Rất to lớn",
+        "Có đèn nhấp nháy"
       ],
       "answer": 0,
-      "explanation_vi": "Trong bài viết: 圆圆的扇面象征着“合欢”与“团圆”."
+      "explanation_vi": "Thiết bị thụ động, chỉ kích hoạt khi bị chiếu sóng vi ba từ ngoài."
     },
     {
       "id": "q3",
-      "question_vi": "Văn nhân tao nhã thường làm gì để biến chiếc quạt thành tác phẩm nghệ thuật?",
+      "question_vi": "Cuộc chiến nghe lén đã thúc đẩy lĩnh vực nào phát triển?",
       "options_vi": [
-        "Đề thơ và vẽ tranh lên mặt quạt (题诗作画)",
-        "Dán vàng ngọc lên nan quạt",
-        "Đeo chuông nhỏ vào cán quạt"
+        "Kỹ thuật bảo mật và tác chiến điện tử",
+        "Kỹ thuật đúc gang",
+        "Kỹ thuật in ấn"
       ],
       "answer": 0,
-      "explanation_vi": "Trong bài viết: 文人墨客在扇面上题诗作画，让一把实用的日常工具升华为极具审美品位的艺术品."
+      "explanation_vi": "Thúc đẩy các công nghệ chống nghe lén và bảo mật thông tin."
     }
   ]
 }

@@ -1,50 +1,84 @@
 {
   "id": "wanwu_story_016",
+  "chapter_no": 16,
   "level": "HSK4",
   "series": "wanwu",
-  "book_page_start": 824,
-  "book_page_end": 831,
-  "page_display": "Trang 824 - 831",
+  "book_volume": 1,
+  "book_page_start": 152,
+  "book_page_end": 163,
+  "page_display": "Trang 152 - 163",
   "title": {
-    "zh": "豆腐：素食经典中国创造",
-    "vi": "Đậu phụ: Phát minh kinh điển của ẩm thực thanh đạm"
+    "zh": "婴儿喂养：母亲与乳母之争",
+    "vi": "Nuôi con bằng sữa: Cuộc chiến mẹ ruột và nhũ mẫu"
   },
   "topic": "culture_history",
   "topic_vi": "📚 Vạn vật thú vị",
-  "icon": "🥢",
+  "icon": "🍼",
   "cover_image": "assets/images/readings/wanwu/wanwu_story_016.webp",
   "illustration": "assets/images/readings/wanwu/wanwu_story_016.webp",
   "estimatedMinutes": 5,
-  "description_vi": "📖 Trang 824 - 831 · Khám phá nguồn gốc chiếc bìa đậu phụ trắng ngần từ lò luyện đan thời Tây Hán của Hoài Nam Vương Lưu An.",
+  "description_vi": "📖 Trang 152 - 163 · Lịch sử nuôi dạy trẻ sơ sinh: từ chế độ vú nuôi trong hoàng gia cổ đại đến khoa học dinh dưỡng sữa mẹ hiện đại.",
   "sentences": [
     {
       "id": "s1",
-      "zh": "洁白如玉、入口即化的豆腐，是中华美食对全人类餐桌的一大杰出贡献。",
-      "pinyin": "Jiébái rú yù, rùkǒu jí huà de dòufu, shì Zhōnghuá měishí duì quán rénlèi cānzhuō de yí dà jiéchū gòngxiàn.",
-      "vi": "Miếng đậu phụ trắng ngần như ngọc, tan ngay nơi đầu lưỡi là một cống hiến kiệt xuất của ẩm thực Trung Hoa đối với bàn ăn nhân loại.",
+      "zh": "婴儿喂养不仅关系到每个家庭的幸福，更是一部折射人类社会阶层变迁的文化史。",
+      "pinyin": "Yīng'ér wèiyǎng bùjǐn guānxì dào měi gè jiātíng de xìngfú, gèng shì yì bù zhéshè rénlèi shèhuì jiēcéng biànqiān de wénhuàshǐ.",
+      "vi": "Nuôi nấng trẻ thơ không chỉ là hạnh phúc gia đình, mà còn là trang sử văn hóa về các giai tầng xã hội.",
       "audio_start_ms": null,
       "audio_end_ms": null,
       "tokens": [
         {
-          "text": "洁白如玉",
-          "pinyin": "jié bái rú yù",
-          "hanviet": "Khiết Bạch Như Ngọc"
+          "text": "婴儿",
+          "pinyin": "yīng’ér",
+          "hanviet": "Anh Nhân",
+          "hsk": 6,
+          "word_id": "hsk6_1586",
+          "meaning_vi": "trẻ sơ sinh"
         },
         {
-          "text": "、"
+          "text": "喂养",
+          "pinyin": "wèiyǎng",
+          "hanviet": "Uy Dưỡng",
+          "hsk": 7,
+          "word_id": "hsk7_4264",
+          "meaning_vi": "cho ăn; nuôi dưỡng (động vật, trẻ nhỏ)"
         },
         {
-          "text": "入口",
-          "pinyin": "rùkǒu",
-          "hanviet": "Nhập Khẩu",
+          "text": "不仅",
+          "pinyin": "bùjǐn",
+          "hanviet": "Bất Cận",
           "hsk": 4,
-          "word_id": "hsk4_623",
-          "meaning_vi": "lối vào"
+          "word_id": "hsk4_55",
+          "meaning_vi": "không chỉ"
         },
         {
-          "text": "即化",
-          "pinyin": "jí huà",
-          "hanviet": "Tức Hoa"
+          "text": "关系",
+          "pinyin": "guānxì",
+          "hanviet": "Quan Hệ",
+          "hsk": 3,
+          "word_id": "hsk3_745",
+          "meaning_vi": "quan hệ"
+        },
+        {
+          "text": "到",
+          "pinyin": "dào",
+          "hanviet": "Đáo",
+          "hsk": 1,
+          "word_id": "hsk1_59",
+          "meaning_vi": "đến"
+        },
+        {
+          "text": "每个",
+          "pinyin": "měi gè",
+          "hanviet": "Mỗi Cá"
+        },
+        {
+          "text": "家庭",
+          "pinyin": "jiātíng",
+          "hanviet": "Gia Đình",
+          "hsk": 4,
+          "word_id": "hsk4_340",
+          "meaning_vi": "gia đình"
         },
         {
           "text": "的",
@@ -55,46 +89,54 @@
           "meaning_vi": "của (trợ từ)"
         },
         {
-          "text": "豆腐",
-          "pinyin": "dòufu",
-          "hanviet": "Đậu Hủ",
-          "hsk": 5,
-          "word_id": "hsk5_293",
-          "meaning_vi": "đậu phụ"
+          "text": "幸福",
+          "pinyin": "xìngfú",
+          "hanviet": "Hạnh Phúc",
+          "hsk": 4,
+          "word_id": "hsk4_830",
+          "meaning_vi": "hạnh phúc"
         },
         {
           "text": "，"
         },
         {
-          "text": "是",
-          "pinyin": "shì",
-          "hanviet": "Thị",
-          "hsk": 1,
-          "word_id": "hsk1_266",
-          "meaning_vi": "là"
+          "text": "更是",
+          "pinyin": "gèng shì",
+          "hanviet": "Canh Thị"
         },
         {
-          "text": "中华美食",
-          "pinyin": "zhōng huá měi shí",
-          "hanviet": "Trung Hoa Mỹ Thực"
+          "text": "一部",
+          "pinyin": "yī bù",
+          "hanviet": "Nhất Bộ"
         },
         {
-          "text": "对",
-          "pinyin": "duì",
-          "hanviet": "Đối",
-          "hsk": 1,
-          "word_id": "hsk1_79",
-          "meaning_vi": "đối với, hướng về (giới từ)"
+          "text": "折射",
+          "pinyin": "zhéshè",
+          "hanviet": "Chiết Xạ",
+          "hsk": 7,
+          "word_id": "hsk7_5206",
+          "meaning_vi": "khúc xạ; phản ánh, phản chiếu"
         },
         {
-          "text": "全人类",
-          "pinyin": "quán rén lèi",
-          "hanviet": "Toàn Nhân Loại"
+          "text": "人类",
+          "pinyin": "rénlèi",
+          "hanviet": "Nhân Loại",
+          "hsk": 5,
+          "word_id": "hsk5_921",
+          "meaning_vi": "loài người, nhân loại"
         },
         {
-          "text": "餐桌",
-          "pinyin": "cān zhuō",
-          "hanviet": "Xan Trác"
+          "text": "社会阶层",
+          "pinyin": "shè huì jiē céng",
+          "hanviet": "Xã Hội Giai Tầng"
+        },
+        {
+          "text": "变迁",
+          "pinyin": "biànqiān",
+          "hanviet": "Biến Thiên",
+          "hsk": 7,
+          "word_id": "hsk7_223",
+          "meaning_vi": "biến đổi, thay đổi theo thời gian"
         },
         {
           "text": "的",
@@ -105,14 +147,9 @@
           "meaning_vi": "của (trợ từ)"
         },
         {
-          "text": "一大",
-          "pinyin": "yī dà",
-          "hanviet": "Nhất Đại"
-        },
-        {
-          "text": "杰出贡献",
-          "pinyin": "jié chū gòng xiàn",
-          "hanviet": "Kiệt Xuất Cống Hiến"
+          "text": "文化史",
+          "pinyin": "wén huà shǐ",
+          "hanviet": "Văn Hoa Sử"
         },
         {
           "text": "。"
@@ -121,20 +158,12 @@
     },
     {
       "id": "s2",
-      "zh": "相传在西汉时期，淮南王刘安在八公山隐居炼丹，渴望炼制出长生不老的仙丹。",
-      "pinyin": "Xiāngchuán zài Xīhàn shíqī, Huáinán Wáng Liú'ān zài Bāgōngshān yǐnjū liàndān, kěwàng liànzhì chū chángshēng-bùlǎo de xiāndān.",
-      "vi": "Tương truyền vào thời Tây Hán, Hoài Nam Vương Lưu An ẩn cư tại núi Bát Công luyện đan, khao khát chế ra linh đơn trường sinh bất lão.",
+      "zh": "在古代王公贵族家庭中，生下婴儿后雇佣健康的乳母哺乳，曾是一种极为普遍的社会风尚。",
+      "pinyin": "Zài gǔdài wánggōng guìzú jiātíng zhōng, shēng xià yīng'ér hòu gùyōng jiànkāng de rǔmǔ bǔrǔ, céng shì yì zhǒng jíwéi pǔbiàn de shèhuì fēngshàng.",
+      "vi": "Trong giới quý tộc xưa, thuê nhũ mẫu khỏe mạnh nuôi con là tập quán hết sức phổ biến.",
       "audio_start_ms": null,
       "audio_end_ms": null,
       "tokens": [
-        {
-          "text": "相传",
-          "pinyin": "xiāngchuán",
-          "hanviet": "Tương Truyền",
-          "hsk": 6,
-          "word_id": "hsk6_1436",
-          "meaning_vi": "tương truyền, theo truyền thuyết"
-        },
         {
           "text": "在",
           "pinyin": "zài",
@@ -144,126 +173,25 @@
           "meaning_vi": "ở, đang"
         },
         {
-          "text": "西汉时期",
-          "pinyin": "xī hàn shí qī",
-          "hanviet": "Tây Hán Thời Kỳ"
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
         },
         {
-          "text": "，"
+          "text": "王公贵族",
+          "pinyin": "wáng gōng guì zú",
+          "hanviet": "Vương Công Quý Tộc"
         },
         {
-          "text": "淮南",
-          "pinyin": "huái nán",
-          "hanviet": "Hoài Nam"
-        },
-        {
-          "text": "王刘安",
-          "pinyin": "wáng liú ān",
-          "hanviet": "Vương Lưu An"
-        },
-        {
-          "text": "在",
-          "pinyin": "zài",
-          "hanviet": "Tại",
-          "hsk": 1,
-          "word_id": "hsk1_390",
-          "meaning_vi": "ở, đang"
-        },
-        {
-          "text": "八",
-          "pinyin": "bā",
-          "hanviet": "Bát",
-          "hsk": 1,
-          "word_id": "hsk1_3",
-          "meaning_vi": "tám"
-        },
-        {
-          "text": "公山",
-          "pinyin": "gōng shān",
-          "hanviet": "Công Sơn"
-        },
-        {
-          "text": "隐居",
-          "pinyin": "yǐn jū",
-          "hanviet": "Ẩn Cư"
-        },
-        {
-          "text": "炼丹",
-          "pinyin": "liàn dān",
-          "hanviet": "Luyện Đan"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "渴望",
-          "pinyin": "kěwàng",
-          "hanviet": "Khát Vọng",
-          "hsk": 6,
-          "word_id": "hsk6_785",
-          "meaning_vi": "khát khao, mong mỏi"
-        },
-        {
-          "text": "炼制",
-          "pinyin": "liàn zhì",
-          "hanviet": "Luyện Chế"
-        },
-        {
-          "text": "出",
-          "pinyin": "chū",
-          "hanviet": "Xuất",
-          "hsk": 2,
-          "word_id": "hsk2_316",
-          "meaning_vi": "ra, đi ra"
-        },
-        {
-          "text": "长生不老",
-          "pinyin": "cháng shēng bù lǎo",
-          "hanviet": "Trường Sinh Bất Lão"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "仙丹",
-          "pinyin": "xiān dān",
-          "hanviet": "Tiên Đan"
-        },
-        {
-          "text": "。"
-        }
-      ]
-    },
-    {
-      "id": "s3",
-      "zh": "一次炼丹过程中，他不小心把豆浆和石膏卤水倒在了一起，结果并没有炼出仙丹，反而凝固成了白嫩清香的豆制品。",
-      "pinyin": "Yí cì liàndān guòchéng zhōng, tā bù xiǎoxīn bǎ dòujiāng hé shígāo lǔshuǐ dào zài le yìqǐ, jiéguǒ bìng méiyǒu liànchū xiāndān, fǎn'ér nínggù chéng le báinèn qīngxiāng de dòuzhìpǐn.",
-      "vi": "Trong một lần luyện đan, ông sơ ý đổ nước đậu nành hòa cùng nước thạch cao làm đông, kết quả không luyện được tiên đan, mà lại đông kết thành một món đậu trắng ngần thanh mát.",
-      "audio_start_ms": null,
-      "audio_end_ms": null,
-      "tokens": [
-        {
-          "text": "一次",
-          "pinyin": "yī cì",
-          "hanviet": "Nhất Thứ"
-        },
-        {
-          "text": "炼丹",
-          "pinyin": "liàn dān",
-          "hanviet": "Luyện Đan"
-        },
-        {
-          "text": "过程",
-          "pinyin": "guòchéng",
-          "hanviet": "Quá Trình",
+          "text": "家庭",
+          "pinyin": "jiātíng",
+          "hanviet": "Gia Đình",
           "hsk": 4,
-          "word_id": "hsk4_282",
-          "meaning_vi": "quá trình"
+          "word_id": "hsk4_340",
+          "meaning_vi": "gia đình"
         },
         {
           "text": "中",
@@ -277,176 +205,49 @@
           "text": "，"
         },
         {
-          "text": "他",
-          "pinyin": "tā",
-          "hanviet": "Tha",
+          "text": "生",
+          "pinyin": "shēng",
+          "hanviet": "Sinh"
+        },
+        {
+          "text": "下",
+          "pinyin": "xià",
+          "hanviet": "Hạ",
           "hsk": 1,
-          "word_id": "hsk1_286",
-          "meaning_vi": "anh ấy, nó"
+          "word_id": "hsk1_581",
+          "meaning_vi": "dưới"
         },
         {
-          "text": "不",
-          "pinyin": "bù",
-          "hanviet": "Bất",
-          "hsk": 1,
-          "word_id": "hsk1_25",
-          "meaning_vi": "không"
-        },
-        {
-          "text": "小心",
-          "pinyin": "xiǎoxīn",
-          "hanviet": "Tiểu Tâm",
-          "hsk": 3,
-          "word_id": "hsk3_977",
-          "meaning_vi": "cẩn thận"
-        },
-        {
-          "text": "把",
-          "pinyin": "bǎ",
-          "hanviet": "Bả",
-          "hsk": 3,
-          "word_id": "hsk3_606",
-          "meaning_vi": "cái, chiếc (lượng từ); cầm, nắm"
-        },
-        {
-          "text": "豆浆",
-          "pinyin": "dòujiāng",
-          "hanviet": "Đậu Tương",
-          "hsk": 5,
-          "word_id": "hsk5_294",
-          "meaning_vi": "sữa đậu nành"
-        },
-        {
-          "text": "和",
-          "pinyin": "chī",
-          "hanviet": "Cật",
-          "hsk": 1,
-          "word_id": "hsk1_39",
-          "meaning_vi": "ăn"
-        },
-        {
-          "text": "石膏",
-          "pinyin": "shí gāo",
-          "hanviet": "Thạch Cao"
-        },
-        {
-          "text": "卤水",
-          "pinyin": "lǔ shuǐ",
-          "hanviet": "Lỗ Thuỷ"
-        },
-        {
-          "text": "倒",
-          "pinyin": "dào",
-          "hanviet": "Đảo",
-          "hsk": 4,
-          "word_id": "hsk4_139",
-          "meaning_vi": "đổ, lật ngược"
-        },
-        {
-          "text": "在",
-          "pinyin": "zài",
-          "hanviet": "Tại",
-          "hsk": 1,
-          "word_id": "hsk1_390",
-          "meaning_vi": "ở, đang"
-        },
-        {
-          "text": "了",
-          "pinyin": "le",
-          "hanviet": "Liễu",
-          "hsk": 1,
-          "word_id": "hsk1_535",
-          "meaning_vi": "rồi (trợ từ)"
-        },
-        {
-          "text": "一起",
-          "pinyin": "yìqǐ",
-          "hanviet": "Nhất Khởi",
-          "hsk": 2,
-          "word_id": "hsk2_473",
-          "meaning_vi": "cùng nhau"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "结果",
-          "pinyin": "jiéguǒ",
-          "hanviet": "Kết Quả",
-          "hsk": 4,
-          "word_id": "hsk4_382",
-          "meaning_vi": "kết quả"
-        },
-        {
-          "text": "并",
-          "pinyin": "bìng",
-          "hanviet": "Tinh",
-          "hsk": 4,
-          "word_id": "hsk4_39",
-          "meaning_vi": "và, đồng thời; hoàn toàn (không)"
-        },
-        {
-          "text": "没有",
-          "pinyin": "méiyǒu",
-          "hanviet": "Một Hữu",
-          "hsk": 1,
-          "word_id": "hsk1_197",
-          "meaning_vi": "không có"
-        },
-        {
-          "text": "炼出",
-          "pinyin": "liàn chū",
-          "hanviet": "Luyện Xuất"
-        },
-        {
-          "text": "仙丹",
-          "pinyin": "xiān dān",
-          "hanviet": "Tiên Đan"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "反而",
-          "pinyin": "fǎn’ér",
-          "hanviet": "Phản Nhi",
-          "hsk": 5,
-          "word_id": "hsk5_331",
-          "meaning_vi": "ngược lại, trái lại"
-        },
-        {
-          "text": "凝固",
-          "pinyin": "nínggù",
-          "hanviet": "Ngưng Cố",
-          "hsk": 7,
-          "word_id": "hsk7_2971",
-          "meaning_vi": "đông cứng, ngưng kết"
-        },
-        {
-          "text": "成",
-          "pinyin": "chéng",
-          "hanviet": "Thành",
+          "text": "婴儿",
+          "pinyin": "yīng’ér",
+          "hanviet": "Anh Nhân",
           "hsk": 6,
-          "word_id": "hsk6_156",
-          "meaning_vi": "vào (số lượng)"
+          "word_id": "hsk6_1586",
+          "meaning_vi": "trẻ sơ sinh"
         },
         {
-          "text": "了",
-          "pinyin": "le",
-          "hanviet": "Liễu",
+          "text": "后",
+          "pinyin": "hòu",
+          "hanviet": "Hậu",
           "hsk": 1,
-          "word_id": "hsk1_535",
-          "meaning_vi": "rồi (trợ từ)"
+          "word_id": "hsk1_524",
+          "meaning_vi": "sau"
         },
         {
-          "text": "白嫩",
-          "pinyin": "bái nèn",
-          "hanviet": "Bạch Nộn"
+          "text": "雇佣",
+          "pinyin": "gùyōng",
+          "hanviet": "Cố Dong",
+          "hsk": 7,
+          "word_id": "hsk7_1457",
+          "meaning_vi": "thuê mướn (lao động)"
         },
         {
-          "text": "清香",
-          "pinyin": "qīng xiāng",
-          "hanviet": "Thanh Hương"
+          "text": "健康",
+          "pinyin": "jiànkāng",
+          "hanviet": "Kiện Khang",
+          "hsk": 3,
+          "word_id": "hsk3_787",
+          "meaning_vi": "khỏe mạnh, sức khỏe"
         },
         {
           "text": "的",
@@ -457,168 +258,57 @@
           "meaning_vi": "của (trợ từ)"
         },
         {
-          "text": "豆制品",
-          "pinyin": "dòu zhì pǐn",
-          "hanviet": "Đậu Chế Phẩm"
+          "text": "乳母",
+          "pinyin": "rǔ mǔ",
+          "hanviet": "Nhũ Mẫu"
         },
         {
-          "text": "。"
-        }
-      ]
-    },
-    {
-      "id": "s4",
-      "zh": "有人大着胆子尝了一口，发现口感滑嫩、味道极其鲜美，这就是世界上第一块豆腐的诞生。",
-      "pinyin": "Yǒu rén dà zhe dǎnzi cháng le yì kǒu, fāxiàn kǒugǎn huánèn, wèidào jíqí xiānměi, zhè jiù shì shìjiè shàng dì-yī kuài dòufu de dànshēng.",
-      "vi": "Có người bạo gan nếm thử một miếng, phát hiện cảm giác mềm mượt, mùi vị tươi ngon vô cùng, đó chính là sự ra đời của miếng đậu phụ đầu tiên trên thế giới.",
-      "audio_start_ms": null,
-      "audio_end_ms": null,
-      "tokens": [
-        {
-          "text": "有",
-          "pinyin": "yǒu",
-          "hanviet": "Hữu",
-          "hsk": 1,
-          "word_id": "hsk1_380",
-          "meaning_vi": "có"
-        },
-        {
-          "text": "人大",
-          "pinyin": "rén dà",
-          "hanviet": "Nhân Đại"
-        },
-        {
-          "text": "着",
-          "pinyin": "zhe",
-          "hanviet": "Trước",
-          "hsk": 2,
-          "word_id": "hsk2_490",
-          "meaning_vi": "đang (trợ từ)"
-        },
-        {
-          "text": "胆子",
-          "pinyin": "dǎn zi",
-          "hanviet": "Đảm Tử"
-        },
-        {
-          "text": "尝",
-          "pinyin": "cháng",
-          "hanviet": "Thường",
-          "hsk": 3,
-          "word_id": "hsk3_651",
-          "meaning_vi": "nếm thử"
-        },
-        {
-          "text": "了",
-          "pinyin": "le",
-          "hanviet": "Liễu",
-          "hsk": 1,
-          "word_id": "hsk1_535",
-          "meaning_vi": "rồi (trợ từ)"
-        },
-        {
-          "text": "一口",
-          "pinyin": "yī kǒu",
-          "hanviet": "Nhất Khẩu"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "发现",
-          "pinyin": "fāxiàn",
-          "hanviet": "Phát Hiện",
-          "hsk": 3,
-          "word_id": "hsk3_712",
-          "meaning_vi": "phát hiện"
-        },
-        {
-          "text": "口感",
-          "pinyin": "kǒugǎn",
-          "hanviet": "Khẩu Cảm",
-          "hsk": 6,
-          "word_id": "hsk6_793",
-          "meaning_vi": "cảm giác khi ăn, vị giác, độ mềm dai"
-        },
-        {
-          "text": "滑嫩",
-          "pinyin": "huá nèn",
-          "hanviet": "Hoạt Nộn"
-        },
-        {
-          "text": "、"
-        },
-        {
-          "text": "味道",
-          "pinyin": "wèidào",
-          "hanviet": "Vị Đạo",
-          "hsk": 4,
-          "word_id": "hsk4_773",
-          "meaning_vi": "mùi vị"
-        },
-        {
-          "text": "极其",
-          "pinyin": "jíqí",
-          "hanviet": "Cực Kì/cực Kỳ",
-          "hsk": 5,
-          "word_id": "hsk5_533",
-          "meaning_vi": "cực kỳ, hết sức"
-        },
-        {
-          "text": "鲜美",
-          "pinyin": "xiānměi",
-          "hanviet": "Tiên Mỹ",
+          "text": "哺乳",
+          "pinyin": "bǔrǔ",
+          "hanviet": "Bú Nhũ",
           "hsk": 7,
-          "word_id": "hsk7_4431",
-          "meaning_vi": "thơm ngon đậm đà; tươi ngon"
+          "word_id": "hsk7_314",
+          "meaning_vi": "cho con bú"
         },
         {
           "text": "，"
         },
         {
-          "text": "这",
-          "pinyin": "zhè",
-          "hanviet": "Giá",
-          "hsk": 1,
-          "word_id": "hsk1_401",
-          "meaning_vi": "này"
-        },
-        {
-          "text": "就是",
-          "pinyin": "jiùshì",
-          "hanviet": "Tựu Thị",
-          "hsk": 4,
-          "word_id": "hsk4_408",
-          "meaning_vi": "chính là; dù… cũng"
-        },
-        {
-          "text": "世界",
-          "pinyin": "shìjiè",
-          "hanviet": "Thế Giới",
-          "hsk": 3,
-          "word_id": "hsk3_916",
-          "meaning_vi": "thế giới"
-        },
-        {
-          "text": "上",
-          "pinyin": "shàng",
-          "hanviet": "Thướng",
-          "hsk": 1,
-          "word_id": "hsk1_561",
-          "meaning_vi": "trên"
-        },
-        {
-          "text": "第一块",
-          "pinyin": "dì yī kuài",
-          "hanviet": "Đệ Nhất Khối"
-        },
-        {
-          "text": "豆腐",
-          "pinyin": "dòufu",
-          "hanviet": "Đậu Hủ",
+          "text": "曾",
+          "pinyin": "céng",
+          "hanviet": "Tằng",
           "hsk": 5,
-          "word_id": "hsk5_293",
-          "meaning_vi": "đậu phụ"
+          "word_id": "hsk5_97",
+          "meaning_vi": "từng, đã từng"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "一种",
+          "pinyin": "yī zhǒng",
+          "hanviet": "Nhất Chủng"
+        },
+        {
+          "text": "极为",
+          "pinyin": "jíwéi",
+          "hanviet": "Cực Vi",
+          "hsk": 6,
+          "word_id": "hsk6_620",
+          "meaning_vi": "cực kỳ, vô cùng"
+        },
+        {
+          "text": "普遍",
+          "pinyin": "pǔbiàn",
+          "hanviet": "Phổ Biến",
+          "hsk": 4,
+          "word_id": "hsk4_561",
+          "meaning_vi": "phổ biến"
         },
         {
           "text": "的",
@@ -629,12 +319,9 @@
           "meaning_vi": "của (trợ từ)"
         },
         {
-          "text": "诞生",
-          "pinyin": "dànshēng",
-          "hanviet": "Đản Sinh",
-          "hsk": 6,
-          "word_id": "hsk6_266",
-          "meaning_vi": "ra đời, sinh ra"
+          "text": "社会风尚",
+          "pinyin": "shè huì fēng shàng",
+          "hanviet": "Xã Hội Phong Thượng"
         },
         {
           "text": "。"
@@ -642,172 +329,36 @@
       ]
     },
     {
-      "id": "s5",
-      "zh": "豆腐营养极其丰富，不仅富含优质植物蛋白，而且容易被人体消化和吸收。",
-      "pinyin": "Dòufu yíngyǎng jíqí fēngfù, bùjǐn fùhán yōuzhì zhíwù dànbái, érqiě róngyì bèi réntǐ xiāohuà hé xīshōu.",
-      "vi": "Đậu phụ dinh dưỡng vô cùng phong phú, không chỉ giàu protein thực vật hảo hạng, mà còn dễ dàng được cơ thể tiêu hóa và hấp thụ.",
+      "id": "s3",
+      "zh": "直到近代医学与解剖学的成熟，医生们才深刻认识到初乳中富含各种不可替代的抗体与免疫成分。",
+      "pinyin": "Zhídào jìndài yīxué yǔ jiěpǒuxué de chéngshú, yīshēng men cái shēnkè rènshi dào chūrǔ zhōng fùhán gèzhǒng bùkě tìdài de kàngtǐ yǔ miǎnyì chéngfèn.",
+      "vi": "Đến thời y học cận đại, bác sĩ mới chứng minh sữa mẹ dồi dào kháng thể miễn dịch tự nhiên quý giá.",
       "audio_start_ms": null,
       "audio_end_ms": null,
       "tokens": [
         {
-          "text": "豆腐",
-          "pinyin": "dòufu",
-          "hanviet": "Đậu Hủ",
-          "hsk": 5,
-          "word_id": "hsk5_293",
-          "meaning_vi": "đậu phụ"
-        },
-        {
-          "text": "营养",
-          "pinyin": "yíngyǎng",
-          "hanviet": "Dinh Dưỡng",
-          "hsk": 5,
-          "word_id": "hsk5_1380",
-          "meaning_vi": "dinh dưỡng"
-        },
-        {
-          "text": "极其丰富",
-          "pinyin": "jí qí fēng fù",
-          "hanviet": "Cực Kỳ Phong Phú"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "不仅",
-          "pinyin": "bùjǐn",
-          "hanviet": "Bất Cận",
-          "hsk": 4,
-          "word_id": "hsk4_55",
-          "meaning_vi": "không chỉ"
-        },
-        {
-          "text": "富含",
-          "pinyin": "fùhán",
-          "hanviet": "Phú Hàm",
-          "hsk": 7,
-          "word_id": "hsk7_1258",
-          "meaning_vi": "giàu hàm lượng, chứa nhiều"
-        },
-        {
-          "text": "优质",
-          "pinyin": "yōuzhì",
-          "hanviet": "Ưu Chất",
-          "hsk": 5,
-          "word_id": "hsk5_1401",
-          "meaning_vi": "chất lượng cao, hảo hạng"
-        },
-        {
-          "text": "植物蛋白",
-          "pinyin": "zhí wù dàn bái",
-          "hanviet": "Thực Vật Đản Bạch"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "而且",
-          "pinyin": "érqiě",
-          "hanviet": "Nhi Thả",
+          "text": "直到",
+          "pinyin": "zhídào",
+          "hanviet": "Trực Đáo",
           "hsk": 3,
-          "word_id": "hsk3_707",
-          "meaning_vi": "mà còn, hơn nữa"
+          "word_id": "hsk3_1053",
+          "meaning_vi": "cho đến, mãi đến"
         },
         {
-          "text": "容易",
-          "pinyin": "róngyì",
-          "hanviet": "Dung Dịch",
-          "hsk": 3,
-          "word_id": "hsk3_900",
-          "meaning_vi": "dễ dàng"
-        },
-        {
-          "text": "被",
-          "pinyin": "bèi",
-          "hanviet": "Bị",
-          "hsk": 3,
-          "word_id": "hsk3_619",
-          "meaning_vi": "bị (trợ từ bị động)"
-        },
-        {
-          "text": "人体",
-          "pinyin": "réntǐ",
-          "hanviet": "Nhân Thể",
+          "text": "近代",
+          "pinyin": "jìndài",
+          "hanviet": "Cận Đại",
           "hsk": 5,
-          "word_id": "hsk5_926",
-          "meaning_vi": "cơ thể con người"
+          "word_id": "hsk5_614",
+          "meaning_vi": "thời cận đại"
         },
         {
-          "text": "消化",
-          "pinyin": "xiāohuà",
-          "hanviet": "Tiêu Hóa",
+          "text": "医学",
+          "pinyin": "yīxué",
+          "hanviet": "Y Học",
           "hsk": 5,
-          "word_id": "hsk5_1264",
-          "meaning_vi": "tiêu hóa"
-        },
-        {
-          "text": "和",
-          "pinyin": "chī",
-          "hanviet": "Cật",
-          "hsk": 1,
-          "word_id": "hsk1_39",
-          "meaning_vi": "ăn"
-        },
-        {
-          "text": "吸收",
-          "pinyin": "xīshōu",
-          "hanviet": "Hấp Thu",
-          "hsk": 5,
-          "word_id": "hsk5_1223",
-          "meaning_vi": "hấp thu"
-        },
-        {
-          "text": "。"
-        }
-      ]
-    },
-    {
-      "id": "s6",
-      "zh": "它质地温和，能够与各种山珍海味完美搭配，被赞誉为中国烹饪界最具包容性的“百搭君子”。",
-      "pinyin": "Tā zhìdì wēnhé, nénggòu yǔ gèzhǒng shānzhēn-hǎiwèi wánměi dāpèi, bèi zànyù wéi Zhōngguó pēngrènjiè zuì jù bāoróngxìng de “bǎidā jūnzǐ”.",
-      "vi": "Đậu phụ tính tình hòa nhã, có thể sánh duyên hoàn mỹ với mọi của ngon vật lạ, được ca ngợi là 'bậc quân tử vạn năng' có tính dung nạp cao nhất trong nghệ thuật ẩm thực Trung Hoa.",
-      "audio_start_ms": null,
-      "audio_end_ms": null,
-      "tokens": [
-        {
-          "text": "它",
-          "pinyin": "tā",
-          "hanviet": "Tha",
-          "hsk": 1,
-          "word_id": "hsk1_569",
-          "meaning_vi": "nó (vật, con vật)"
-        },
-        {
-          "text": "质地",
-          "pinyin": "zhìdì",
-          "hanviet": "Chất Địa",
-          "hsk": 7,
-          "word_id": "hsk7_5330",
-          "meaning_vi": "chất liệu, chất đất, kết cấu"
-        },
-        {
-          "text": "温和",
-          "pinyin": "wēnhé",
-          "hanviet": "Ôn Hòa",
-          "hsk": 6,
-          "word_id": "hsk6_1384",
-          "meaning_vi": "ôn hòa, dịu dàng"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "能够",
-          "pinyin": "nénggòu",
-          "hanviet": "Năng Cú",
-          "hsk": 4,
-          "word_id": "hsk4_532",
-          "meaning_vi": "có thể"
+          "word_id": "hsk5_1350",
+          "meaning_vi": "y học"
         },
         {
           "text": "与",
@@ -818,91 +369,9 @@
           "meaning_vi": "và, với"
         },
         {
-          "text": "各种",
-          "pinyin": "gèzhǒng",
-          "hanviet": "Các Chủng",
-          "hsk": 4,
-          "word_id": "hsk4_248",
-          "meaning_vi": "các loại, đủ loại"
-        },
-        {
-          "text": "山珍海味",
-          "pinyin": "shān zhēn hǎi wèi",
-          "hanviet": "Sơn Trân Hải Vị"
-        },
-        {
-          "text": "完美",
-          "pinyin": "wánměi",
-          "hanviet": "Hoàn Mĩ/hoàn Mỹ",
-          "hsk": 5,
-          "word_id": "hsk5_1174",
-          "meaning_vi": "hoàn hảo"
-        },
-        {
-          "text": "搭配",
-          "pinyin": "dāpèi",
-          "hanviet": "Đáp Phối",
-          "hsk": 6,
-          "word_id": "hsk6_234",
-          "meaning_vi": "kết hợp, phối hợp"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "被",
-          "pinyin": "bèi",
-          "hanviet": "Bị",
-          "hsk": 3,
-          "word_id": "hsk3_619",
-          "meaning_vi": "bị (trợ từ bị động)"
-        },
-        {
-          "text": "赞誉",
-          "pinyin": "zàn yù",
-          "hanviet": "Tán Dự"
-        },
-        {
-          "text": "为",
-          "pinyin": "wèi",
-          "hanviet": "Vi",
-          "hsk": 3,
-          "word_id": "hsk3_954",
-          "meaning_vi": "vì, cho"
-        },
-        {
-          "text": "中国",
-          "pinyin": "Zhōngguó",
-          "hanviet": "Trung Quốc",
-          "hsk": 1,
-          "word_id": "hsk1_610",
-          "meaning_vi": "trung Quốc"
-        },
-        {
-          "text": "烹饪",
-          "pinyin": "pēngrèn",
-          "hanviet": "Phanh Nhẫm",
-          "hsk": 7,
-          "word_id": "hsk7_3040",
-          "meaning_vi": "nấu nướng, ẩm thực"
-        },
-        {
-          "text": "界",
-          "pinyin": "jiè",
-          "hanviet": "Giới",
-          "hsk": 7,
-          "word_id": "hsk7_2115",
-          "meaning_vi": "giới, ranh giới, phạm vi"
-        },
-        {
-          "text": "最具",
-          "pinyin": "zuì jù",
-          "hanviet": "Tối Cụ"
-        },
-        {
-          "text": "包容性",
-          "pinyin": "bāo róng xìng",
-          "hanviet": "Bao Dung Tính"
+          "text": "解剖学",
+          "pinyin": "jiě pōu xué",
+          "hanviet": "Giải Phẫu Học"
         },
         {
           "text": "的",
@@ -913,23 +382,450 @@
           "meaning_vi": "của (trợ từ)"
         },
         {
-          "text": "“"
+          "text": "成熟",
+          "pinyin": "chéngshú",
+          "hanviet": "Thành Thục",
+          "hsk": 5,
+          "word_id": "hsk5_148",
+          "meaning_vi": "chín, trưởng thành"
         },
         {
-          "text": "百搭",
-          "pinyin": "bǎi dā",
-          "hanviet": "Bách Đáp"
+          "text": "，"
         },
         {
-          "text": "君子",
-          "pinyin": "jūnzǐ",
-          "hanviet": "Quân Tử",
+          "text": "医生",
+          "pinyin": "yīshēng",
+          "hanviet": "Y Sinh",
+          "hsk": 1,
+          "word_id": "hsk1_366",
+          "meaning_vi": "bác sĩ"
+        },
+        {
+          "text": "们",
+          "pinyin": "men",
+          "hanviet": "Môn",
+          "hsk": 1,
+          "word_id": "hsk1_538",
+          "meaning_vi": "họ (hậu tố)"
+        },
+        {
+          "text": "才",
+          "pinyin": "cái",
+          "hanviet": "Tài"
+        },
+        {
+          "text": "深刻",
+          "pinyin": "shēnkè",
+          "hanviet": "Thâm Khắc",
+          "hsk": 5,
+          "word_id": "hsk5_984",
+          "meaning_vi": "sâu sắc"
+        },
+        {
+          "text": "认识",
+          "pinyin": "rènshi",
+          "hanviet": "Nhận Thức",
+          "hsk": 1,
+          "word_id": "hsk1_244",
+          "meaning_vi": "biết, quen biết"
+        },
+        {
+          "text": "到",
+          "pinyin": "dào",
+          "hanviet": "Đáo",
+          "hsk": 1,
+          "word_id": "hsk1_59",
+          "meaning_vi": "đến"
+        },
+        {
+          "text": "初乳",
+          "pinyin": "chū rǔ",
+          "hanviet": "Sơ Nhũ"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "富含",
+          "pinyin": "fùhán",
+          "hanviet": "Phú Hàm",
           "hsk": 7,
-          "word_id": "hsk7_2289",
-          "meaning_vi": "quân tử, người chính trực"
+          "word_id": "hsk7_1258",
+          "meaning_vi": "giàu hàm lượng, chứa nhiều"
         },
         {
-          "text": "”"
+          "text": "各种",
+          "pinyin": "gèzhǒng",
+          "hanviet": "Các Chủng",
+          "hsk": 4,
+          "word_id": "hsk4_248",
+          "meaning_vi": "các loại, đủ loại"
+        },
+        {
+          "text": "不可",
+          "pinyin": "bù kě",
+          "hanviet": "Bất Khả"
+        },
+        {
+          "text": "替代",
+          "pinyin": "tì dài",
+          "hanviet": "Thế Đại"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "抗体",
+          "pinyin": "kàng tǐ",
+          "hanviet": "Kháng Thể"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "免疫",
+          "pinyin": "miǎnyì",
+          "hanviet": "Miễn Dịch",
+          "hsk": 6,
+          "word_id": "hsk6_910",
+          "meaning_vi": "miễn dịch"
+        },
+        {
+          "text": "成分",
+          "pinyin": "chéngfèn",
+          "hanviet": "Thành Phân",
+          "hsk": 5,
+          "word_id": "hsk5_139",
+          "meaning_vi": "thành phần"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "母亲亲自母乳喂养不仅能为新生儿提供最佳营养，更能建立起母子之间不可割舍的情感纽带。",
+      "pinyin": "Mǔqīn qīnzì mǔrǔ wèiyǎng bùjǐn néng wèi xīnshēng'ér tígōng zuì jiā yíngyǎng, gèng néng jiànlì qǐ mǔ-zǐ zhījiān bùkě gēshě de qínggǎn niǔdài.",
+      "vi": "Người mẹ tự nuôi con bằng sữa mẹ mang lại dưỡng chất tốt nhất và gắn kết tình mẫu tử thiêng liêng.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "母亲",
+          "pinyin": "mǔqīn",
+          "hanviet": "Mẫu Thân",
+          "hsk": 4,
+          "word_id": "hsk4_515",
+          "meaning_vi": "mẹ"
+        },
+        {
+          "text": "亲自",
+          "pinyin": "qīnzì",
+          "hanviet": "Thân Tự",
+          "hsk": 5,
+          "word_id": "hsk5_884",
+          "meaning_vi": "tự mình, đích thân"
+        },
+        {
+          "text": "母乳喂养",
+          "pinyin": "mǔ rǔ wèi yǎng",
+          "hanviet": "Mẫu Nhũ Uy Dưỡng"
+        },
+        {
+          "text": "不仅",
+          "pinyin": "bùjǐn",
+          "hanviet": "Bất Cận",
+          "hsk": 4,
+          "word_id": "hsk4_55",
+          "meaning_vi": "không chỉ"
+        },
+        {
+          "text": "能为",
+          "pinyin": "néng wèi",
+          "hanviet": "Năng Vi"
+        },
+        {
+          "text": "新生儿",
+          "pinyin": "xīn shēng ér",
+          "hanviet": "Tân Sinh Nhi"
+        },
+        {
+          "text": "提供",
+          "pinyin": "tígōng",
+          "hanviet": "Đề Cung",
+          "hsk": 4,
+          "word_id": "hsk4_729",
+          "meaning_vi": "cung cấp"
+        },
+        {
+          "text": "最佳",
+          "pinyin": "zuìjiā",
+          "hanviet": "Tối Giai",
+          "hsk": 5,
+          "word_id": "hsk5_1597",
+          "meaning_vi": "tốt nhất, tối ưu, xuất sắc nhất"
+        },
+        {
+          "text": "营养",
+          "pinyin": "yíngyǎng",
+          "hanviet": "Dinh Dưỡng",
+          "hsk": 5,
+          "word_id": "hsk5_1380",
+          "meaning_vi": "dinh dưỡng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "更能",
+          "pinyin": "gèng néng",
+          "hanviet": "Canh Năng"
+        },
+        {
+          "text": "建立",
+          "pinyin": "jiànlì",
+          "hanviet": "Kiến Lập",
+          "hsk": 5,
+          "word_id": "hsk5_575",
+          "meaning_vi": "xây dựng, kiến lập"
+        },
+        {
+          "text": "起",
+          "pinyin": "qǐ",
+          "hanviet": "Khởi",
+          "hsk": 3,
+          "word_id": "hsk3_883",
+          "meaning_vi": "dậy, đứng lên; vụ (lượng từ)"
+        },
+        {
+          "text": "母子",
+          "pinyin": "mǔzǐ",
+          "hanviet": "Mẫu Tử",
+          "hsk": 4,
+          "word_id": "hsk4_516",
+          "meaning_vi": "mẹ con (mẹ và con trai)"
+        },
+        {
+          "text": "之间",
+          "pinyin": "zhījiān",
+          "hanviet": "Chi Gian",
+          "hsk": 4,
+          "word_id": "hsk4_942",
+          "meaning_vi": "giữa"
+        },
+        {
+          "text": "不可",
+          "pinyin": "bù kě",
+          "hanviet": "Bất Khả"
+        },
+        {
+          "text": "割舍",
+          "pinyin": "gē shě",
+          "hanviet": "Cắt Xá"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "情感",
+          "pinyin": "qínggǎn",
+          "hanviet": "Tình Cảm",
+          "hsk": 5,
+          "word_id": "hsk5_889",
+          "meaning_vi": "cảm xúc"
+        },
+        {
+          "text": "纽带",
+          "pinyin": "niǔdài",
+          "hanviet": "Nữu Đới",
+          "hsk": 7,
+          "word_id": "hsk7_2979",
+          "meaning_vi": "cầu nối; mối liên kết; sợi dây liên lạc"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "今天，世界卫生组织大力倡导母乳喂养，让每一个新生命都能在最自然健康的母爱中茁壮成长。",
+      "pinyin": "Jīntiān, Shìjiè Wèishēng Zǔzhī dàlì chàngdǎo mǔrǔ wèiyǎng, ràng měi yí gè xīn shēngmìng dōu néng zài zuì zìrán jiànkāng de mǔ'ài zhōng zhuózhuàng chéngzhǎng.",
+      "vi": "Hiện nay, WHO khuyến khích nuôi con bằng sữa mẹ để mỗi đứa trẻ lớn lên trong nguồn dưỡng chất an lành nhất.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "今天",
+          "pinyin": "jīntiān",
+          "hanviet": "Kim Thiên",
+          "hsk": 1,
+          "word_id": "hsk1_144",
+          "meaning_vi": "hôm nay"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "世界卫生组织",
+          "pinyin": "shì jiè wèi shēng zǔ zhī",
+          "hanviet": "Thế Giới Vệ Sinh Tổ Chức"
+        },
+        {
+          "text": "大力",
+          "pinyin": "dàlì",
+          "hanviet": "Đại Lực",
+          "hsk": 5,
+          "word_id": "hsk5_221",
+          "meaning_vi": "ra sức, mạnh mẽ"
+        },
+        {
+          "text": "倡导",
+          "pinyin": "chàngdǎo",
+          "hanviet": "Xướng Đạo",
+          "hsk": 7,
+          "word_id": "hsk7_452",
+          "meaning_vi": "khởi xướng, đề xướng"
+        },
+        {
+          "text": "母乳喂养",
+          "pinyin": "mǔ rǔ wèi yǎng",
+          "hanviet": "Mẫu Nhũ Uy Dưỡng"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "让",
+          "pinyin": "ràng",
+          "hanviet": "Nhượng",
+          "hsk": 2,
+          "word_id": "hsk2_422",
+          "meaning_vi": "để cho, khiến"
+        },
+        {
+          "text": "每",
+          "pinyin": "měi",
+          "hanviet": "Mỗi",
+          "hsk": 2,
+          "word_id": "hsk2_399",
+          "meaning_vi": "mỗi"
+        },
+        {
+          "text": "一个",
+          "pinyin": "yí gè",
+          "hanviet": "Nhất Cá"
+        },
+        {
+          "text": "新",
+          "pinyin": "xīn",
+          "hanviet": "Tân",
+          "hsk": 1,
+          "word_id": "hsk1_344",
+          "meaning_vi": "mới"
+        },
+        {
+          "text": "生命",
+          "pinyin": "shēngmìng",
+          "hanviet": "Sinh Mệnh",
+          "hsk": 4,
+          "word_id": "hsk4_648",
+          "meaning_vi": "sinh mệnh, sự sống"
+        },
+        {
+          "text": "都",
+          "pinyin": "dōu",
+          "hanviet": "Đô",
+          "hsk": 1,
+          "word_id": "hsk1_76",
+          "meaning_vi": "đều"
+        },
+        {
+          "text": "能",
+          "pinyin": "néng",
+          "hanviet": "Năng",
+          "hsk": 1,
+          "word_id": "hsk1_212",
+          "meaning_vi": "có thể"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "最",
+          "pinyin": "zuì",
+          "hanviet": "Tối",
+          "hsk": 2,
+          "word_id": "hsk2_498",
+          "meaning_vi": "nhất"
+        },
+        {
+          "text": "自然",
+          "pinyin": "zìrán",
+          "hanviet": "Tự Nhiên",
+          "hsk": 4,
+          "word_id": "hsk4_981",
+          "meaning_vi": "tự nhiên"
+        },
+        {
+          "text": "健康",
+          "pinyin": "jiànkāng",
+          "hanviet": "Kiện Khang",
+          "hsk": 3,
+          "word_id": "hsk3_787",
+          "meaning_vi": "khỏe mạnh, sức khỏe"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "母爱",
+          "pinyin": "mǔ ài",
+          "hanviet": "Mẫu Ái"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "茁壮成长",
+          "pinyin": "zhuó zhuàng chéng zhǎng",
+          "hanviet": "Truất Tráng Thành Trường"
         },
         {
           "text": "。"
@@ -938,44 +834,45 @@
     }
   ],
   "vocabulary_spotlight": [
-    "hsk5_293",
-    "hsk4_773",
-    "hsk4_204",
-    "hsk5_1380"
+    "hsk3_787",
+    "hsk5_1380",
+    "hsk4_639",
+    "hsk4_981",
+    "hsk6_1586"
   ],
   "quiz": [
     {
       "id": "q1",
-      "question_vi": "Theo truyền thuyết, ai là người tình cờ phát minh ra món đậu phụ?",
+      "question_vi": "Trong giới quý tộc thời xưa, việc thuê vú nuôi (nhũ mẫu) là biểu hiện của điều gì?",
       "options_vi": [
-        "Hoài Nam Vương Lưu An (刘安)",
-        "Gia Cát Lượng",
-        "Đỗ Phủ"
+        "Một tập tục phân tầng xã hội thịnh hành",
+        "Bắt buộc theo luật",
+        "Không ai muốn làm"
       ],
       "answer": 0,
-      "explanation_vi": "Trong bài viết: 淮南王刘安在八公山隐居炼丹... 诞生了第一块豆腐."
+      "explanation_vi": "Thuê vú nuôi từng là thói quen phổ biến của tầng lớp quyền quý."
     },
     {
       "id": "q2",
-      "question_vi": "Đậu phụ ra đời trong hoàn cảnh tình cờ nào?",
+      "question_vi": "Khoa học hiện đại chỉ ra sữa mẹ có ưu điểm gì vượt trội?",
       "options_vi": [
-        "Đổ nhầm nước đậu nành với thạch cao làm đông khi đang luyện đan",
-        "Làm rơi hạt đậu vào nồi súp thịt gà",
-        "Phơi đậu nành ngoài trời nắng lâu ngày"
+        "Chứa kháng thể tự nhiên và dưỡng chất hoàn hảo",
+        "Để được rất lâu",
+        "Có vị ngọt nhân tạo"
       ],
       "answer": 0,
-      "explanation_vi": "Trong bài viết: 他不小心把豆浆和石膏卤水倒在了一起... 凝固成了白嫩清香的豆制品."
+      "explanation_vi": "Sữa mẹ chứa kháng thể tự nhiên quý giá bảo vệ trẻ sơ sinh."
     },
     {
       "id": "q3",
-      "question_vi": "Tại sao đậu phụ được xưng tụng là 'quân tử vạn năng' (百搭君子) trong ẩm thực?",
+      "question_vi": "Nuôi con bằng sữa mẹ giúp ích gì cho tình cảm mẹ con?",
       "options_vi": [
-        "Vì tính chất ôn hòa, có thể phối hợp hoàn hảo với mọi nguyên liệu",
-        "Vì chỉ dành riêng cho bậc vua chúa thưởng thức",
-        "Vì chỉ ăn được vào mùa xuân"
+        "Tạo sợi dây gắn kết tâm lý sâu sắc thiêng liêng",
+        "Không có tác dụng gì",
+        "Chỉ tốn thời gian"
       ],
       "answer": 0,
-      "explanation_vi": "Trong bài viết: 质地温和，能够与各种山珍海味完美搭配，被赞誉为中国烹饪界最具包容性的“百搭君子”."
+      "explanation_vi": "Tăng cường liên kết tình cảm mật thiết giữa mẹ và bé."
     }
   ]
 }

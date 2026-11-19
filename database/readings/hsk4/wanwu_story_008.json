@@ -1,50 +1,73 @@
 {
   "id": "wanwu_story_008",
+  "chapter_no": 8,
   "level": "HSK4",
   "series": "wanwu",
-  "book_page_start": 534,
-  "book_page_end": 544,
-  "page_display": "Trang 534 - 544",
+  "book_volume": 1,
+  "book_page_start": 76,
+  "book_page_end": 85,
+  "page_display": "Trang 76 - 85",
   "title": {
-    "zh": "筷子：高妙绝伦的杠杆",
-    "vi": "Đôi đũa: Chiếc đòn bẩy tuyệt diệu"
+    "zh": "坦克：陆战之王",
+    "vi": "Xe tăng: Vua chiến trường trên bộ"
   },
-  "topic": "culture_history",
+  "topic": "science_technology",
   "topic_vi": "📚 Vạn vật thú vị",
-  "icon": "🥢",
+  "icon": "🛡️",
   "cover_image": "assets/images/readings/wanwu/wanwu_story_008.webp",
   "illustration": "assets/images/readings/wanwu/wanwu_story_008.webp",
   "estimatedMinutes": 5,
-  "description_vi": "📖 Trang 534 - 544 · Khám phá nguồn gốc chiếc đũa, nguyên lý đòn bẩy vật lý và tại sao cổ nhân đổi tên từ 'Trợ' (箸) thành 'Khoái' (筷).",
+  "description_vi": "📖 Trang 76 - 85 · Cỗ máy bọc thép phá vỡ thế bế tắc chiến hào: nguồn gốc tên gọi 'Tank' bí mật và vai trò bá chủ lục quân.",
   "sentences": [
     {
       "id": "s1",
-      "zh": "说起中国人的发明，大家常常想到“四大发明”。",
-      "pinyin": "Shuō qǐ Zhōngguórén de fāmíng, dàjiā chángcháng xiǎngdào “sì dà fāmíng”.",
-      "vi": "Nói về phát minh của người Trung Quốc, mọi người thường nghĩ đến 'Tứ đại phát minh'.",
+      "zh": "一战时期，铁丝网、战壕与机枪的结合让进攻方寸步难行，战场陷入了长期的僵局。",
+      "pinyin": "Yīzhàn shíqī, tiěsīwǎng, zhànháo yǔ jīqiāng de jiéhé ràng jìngōngfāng cùnbù-nánxíng, zhànchǎng xiànrù le chángqī de jiāngjú.",
+      "vi": "Thời Thế chiến I, hào sâu, dây thép gai và súng máy khiến các đợt tiến công bế tắc hoàn toàn.",
       "audio_start_ms": null,
       "audio_end_ms": null,
       "tokens": [
         {
-          "text": "说起",
-          "pinyin": "shuō qǐ",
-          "hanviet": "Thuyết Khởi"
+          "text": "一战",
+          "pinyin": "yī zhàn",
+          "hanviet": "Nhất Chiến"
         },
         {
-          "text": "中国",
-          "pinyin": "Zhōngguó",
-          "hanviet": "Trung Quốc",
-          "hsk": 1,
-          "word_id": "hsk1_610",
-          "meaning_vi": "trung Quốc"
+          "text": "时期",
+          "pinyin": "shíqī",
+          "hanviet": "Thời Kỳ",
+          "hsk": 5,
+          "word_id": "hsk5_1016",
+          "meaning_vi": "thời kỳ"
         },
         {
-          "text": "人",
-          "pinyin": "rén",
-          "hanviet": "Nhân",
-          "hsk": 1,
-          "word_id": "hsk1_243",
-          "meaning_vi": "người"
+          "text": "，"
+        },
+        {
+          "text": "铁丝网",
+          "pinyin": "tiě sī wǎng",
+          "hanviet": "Thiết Tơ Võng"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "战壕",
+          "pinyin": "zhàn háo",
+          "hanviet": "Chiến Hào"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "机枪",
+          "pinyin": "jī qiāng",
+          "hanviet": "Cơ Thương"
         },
         {
           "text": "的",
@@ -55,47 +78,81 @@
           "meaning_vi": "của (trợ từ)"
         },
         {
-          "text": "发明",
-          "pinyin": "fāmíng",
-          "hanviet": "Phát Minh",
+          "text": "结合",
+          "pinyin": "jiéhé",
+          "hanviet": "Kết Hợp",
           "hsk": 5,
-          "word_id": "hsk5_320",
-          "meaning_vi": "phát minh"
+          "word_id": "hsk5_602",
+          "meaning_vi": "kết hợp"
+        },
+        {
+          "text": "让",
+          "pinyin": "ràng",
+          "hanviet": "Nhượng",
+          "hsk": 2,
+          "word_id": "hsk2_422",
+          "meaning_vi": "để cho, khiến"
+        },
+        {
+          "text": "进攻方",
+          "pinyin": "jìn gōng fāng",
+          "hanviet": "Tiến Công Phương"
+        },
+        {
+          "text": "寸步难行",
+          "pinyin": "cùn bù nán xíng",
+          "hanviet": "Thốn Bộ Nan Hành"
         },
         {
           "text": "，"
         },
         {
-          "text": "大家",
-          "pinyin": "dàjiā",
-          "hanviet": "Đại Gia",
+          "text": "战场",
+          "pinyin": "zhànchǎng",
+          "hanviet": "Chiến Trường",
+          "hsk": 7,
+          "word_id": "hsk7_5155",
+          "meaning_vi": "chiến trường"
+        },
+        {
+          "text": "陷入",
+          "pinyin": "xiànrù",
+          "hanviet": "Hãm Nhập",
+          "hsk": 6,
+          "word_id": "hsk6_1431",
+          "meaning_vi": "rơi vào, sa vào"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
           "hsk": 1,
-          "word_id": "hsk1_54",
-          "meaning_vi": "mọi người"
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
         },
         {
-          "text": "常常",
-          "pinyin": "chángcháng",
-          "hanviet": "Thường Thường",
-          "hsk": 3,
-          "word_id": "hsk3_655",
-          "meaning_vi": "thường thường, thường xuyên"
+          "text": "长期",
+          "pinyin": "chángqī",
+          "hanviet": "Trường Kì",
+          "hsk": 5,
+          "word_id": "hsk5_111",
+          "meaning_vi": "thời gian dài, dài hạn"
         },
         {
-          "text": "想到",
-          "pinyin": "xiǎng dào",
-          "hanviet": "Tưởng Đáo"
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
         },
         {
-          "text": "“"
-        },
-        {
-          "text": "四大发明",
-          "pinyin": "sì dà fā míng",
-          "hanviet": "Tứ Đại Phát Minh"
-        },
-        {
-          "text": "”"
+          "text": "僵局",
+          "pinyin": "jiāngjú",
+          "hanviet": "Cương Cục",
+          "hsk": 7,
+          "word_id": "hsk7_2015",
+          "meaning_vi": "thế bế tắc, thế giằng co"
         },
         {
           "text": "。"
@@ -104,1279 +161,90 @@
     },
     {
       "id": "s2",
-      "zh": "其实还有一个非常重要、每天都离不开的发明，那就是——筷子。",
-      "pinyin": "Qíshí hái yǒu yí gè fēicháng zhòngyào, měitiān dōu lí bù kāi de fāmíng, nà jiùshì —— kuàizi.",
-      "vi": "Thực ra còn có một phát minh vô cùng quan trọng, mỗi ngày đều không thể tách rời, đó chính là đôi đũa.",
+      "zh": "为了突破这种死亡防线，英国人秘密研制出一种披着厚重装甲、依靠履带行驶的钢铁巨兽。",
+      "pinyin": "Wèile tūpò zhè zhǒng sǐwáng fángxiàn, Yīngguórén mìmì yánzhì chū yì zhǒng pī zhe hòuzhòng zhuāngjiǎ, yīkào lǚdài xíngshǐ de gāngtiě jùshòu.",
+      "vi": "Để phá thế bế tắc, người Anh bí mật chế tạo quái vật thép bọc giáp dày chạy bằng xích xe.",
       "audio_start_ms": null,
       "audio_end_ms": null,
       "tokens": [
         {
-          "text": "其实",
-          "pinyin": "qíshí",
-          "hanviet": "Kỳ Thật",
+          "text": "为了",
+          "pinyin": "wèile",
+          "hanviet": "Vi Liễu",
           "hsk": 3,
-          "word_id": "hsk3_881",
-          "meaning_vi": "thực ra"
+          "word_id": "hsk3_955",
+          "meaning_vi": "để (mục đích)"
         },
         {
-          "text": "还有",
-          "pinyin": "hái yǒu",
-          "hanviet": "Hoàn Hữu"
-        },
-        {
-          "text": "一个",
-          "pinyin": "yí gè",
-          "hanviet": "Nhất Cá"
-        },
-        {
-          "text": "非常",
-          "pinyin": "fēicháng",
-          "hanviet": "Phi Thường",
-          "hsk": 1,
-          "word_id": "hsk1_515",
-          "meaning_vi": "rất, vô cùng"
-        },
-        {
-          "text": "重要",
-          "pinyin": "zhòngyào",
-          "hanviet": "Trọng Yếu",
-          "hsk": 3,
-          "word_id": "hsk3_1064",
-          "meaning_vi": "quan trọng"
-        },
-        {
-          "text": "、"
-        },
-        {
-          "text": "每天",
-          "pinyin": "měi tiān",
-          "hanviet": "Mỗi Thiên"
-        },
-        {
-          "text": "都",
-          "pinyin": "dōu",
-          "hanviet": "Đô",
-          "hsk": 1,
-          "word_id": "hsk1_76",
-          "meaning_vi": "đều"
-        },
-        {
-          "text": "离不开",
-          "pinyin": "lí bù kāi",
-          "hanviet": "Ly Bất Khai"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "发明",
-          "pinyin": "fāmíng",
-          "hanviet": "Phát Minh",
-          "hsk": 5,
-          "word_id": "hsk5_320",
-          "meaning_vi": "phát minh"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "那",
-          "pinyin": "nà",
-          "hanviet": "Na",
-          "hsk": 1,
-          "word_id": "hsk1_207",
-          "meaning_vi": "đó, kia"
-        },
-        {
-          "text": "就是",
-          "pinyin": "jiùshì",
-          "hanviet": "Tựu Thị",
-          "hsk": 4,
-          "word_id": "hsk4_408",
-          "meaning_vi": "chính là; dù… cũng"
-        },
-        {
-          "text": "—"
-        },
-        {
-          "text": "—"
-        },
-        {
-          "text": "筷子",
-          "pinyin": "kuàizi",
-          "hanviet": "Khoái Tử",
-          "hsk": 3,
-          "word_id": "hsk3_824",
-          "meaning_vi": "đôi đũa"
-        },
-        {
-          "text": "。"
-        }
-      ]
-    },
-    {
-      "id": "s3",
-      "zh": "物理学家李政道曾经说过，筷子虽然只有简单的两根，却巧妙地应用了杠杆原理。",
-      "pinyin": "Wùlǐ xuéjiā Lǐ Zhèngdào céngjīng shuō guò, kuàizi suīrán zhǐyǒu jiǎndān de liǎng gēn, què qiǎomiào de yìngyòng le gànggǎn yuánlǐ.",
-      "vi": "Nhà vật lý học Lý Chính Đạo từng nói, đũa tuy chỉ có hai chiếc que đơn giản, nhưng lại ứng dụng khéo léo nguyên lý đòn bẩy.",
-      "audio_start_ms": null,
-      "audio_end_ms": null,
-      "tokens": [
-        {
-          "text": "物理学家",
-          "pinyin": "wù lǐ xué jiā",
-          "hanviet": "Vật Lý Học Gia"
-        },
-        {
-          "text": "李政道",
-          "pinyin": "lǐ zhèng dào",
-          "hanviet": "Lý Chính Đạo"
-        },
-        {
-          "text": "曾经",
-          "pinyin": "céngjīng",
-          "hanviet": "Tằng Kinh",
-          "hsk": 5,
-          "word_id": "hsk5_98",
-          "meaning_vi": "đã từng"
-        },
-        {
-          "text": "说",
-          "pinyin": "shuō",
-          "hanviet": "Thuyết",
-          "hsk": 1,
-          "word_id": "hsk1_280",
-          "meaning_vi": "nói"
-        },
-        {
-          "text": "过",
-          "pinyin": "guò",
-          "hanviet": "Quá",
-          "hsk": 2,
-          "word_id": "hsk2_347",
-          "meaning_vi": "vượt qua"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "筷子",
-          "pinyin": "kuàizi",
-          "hanviet": "Khoái Tử",
-          "hsk": 3,
-          "word_id": "hsk3_824",
-          "meaning_vi": "đôi đũa"
-        },
-        {
-          "text": "虽然",
-          "pinyin": "suīrán",
-          "hanviet": "Tuy Nhiên",
-          "hsk": 2,
-          "word_id": "hsk2_438",
-          "meaning_vi": "mặc dù"
-        },
-        {
-          "text": "只有",
-          "pinyin": "zhǐyǒu",
-          "hanviet": "Chỉ Hữu",
-          "hsk": 3,
-          "word_id": "hsk3_1059",
-          "meaning_vi": "chỉ có"
-        },
-        {
-          "text": "简单",
-          "pinyin": "jiǎndān",
-          "hanviet": "Giản Thiện",
-          "hsk": 3,
-          "word_id": "hsk3_433",
-          "meaning_vi": "đơn giản"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "两根",
-          "pinyin": "liǎng gēn",
-          "hanviet": "Lưỡng Căn"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "却",
-          "pinyin": "què",
-          "hanviet": "Khước",
-          "hsk": 4,
-          "word_id": "hsk4_606",
-          "meaning_vi": "nhưng, lại"
-        },
-        {
-          "text": "巧妙",
-          "pinyin": "qiǎomiào",
-          "hanviet": "Xảo Diệu",
+          "text": "突破",
+          "pinyin": "tūpò",
+          "hanviet": "Đột Phá",
           "hsk": 6,
-          "word_id": "hsk6_1047",
-          "meaning_vi": "khéo léo, tài tình"
+          "word_id": "hsk6_1327",
+          "meaning_vi": "đột phá"
         },
         {
-          "text": "地",
-          "pinyin": "de",
-          "hanviet": "Địa",
-          "hsk": 2,
-          "word_id": "hsk2_333",
-          "meaning_vi": "cách (trợ từ trạng ngữ)"
+          "text": "这种",
+          "pinyin": "zhè zhǒng",
+          "hanviet": "Giá Chủng"
         },
         {
-          "text": "应用",
-          "pinyin": "yìngyòng",
-          "hanviet": "Ứng Dụng",
-          "hsk": 5,
-          "word_id": "hsk5_1387",
-          "meaning_vi": "ứng dụng"
-        },
-        {
-          "text": "了",
-          "pinyin": "le",
-          "hanviet": "Liễu",
-          "hsk": 1,
-          "word_id": "hsk1_535",
-          "meaning_vi": "rồi (trợ từ)"
-        },
-        {
-          "text": "杠杆原理",
-          "pinyin": "gàng gǎn yuán lǐ",
-          "hanviet": "Giang Can Nguyên Lý"
-        },
-        {
-          "text": "。"
-        }
-      ]
-    },
-    {
-      "id": "s4",
-      "zh": "筷子就像手指的延伸，手指能做的事情它都能做，而且不怕热也不怕冷。",
-      "pinyin": "Kuàizi jiù xiàng shǒuzhǐ de yánshēn, shǒuzhǐ néng zuò de shìqing tā dōu néng zuò, érqiě bú pà rè yě bú pà lěng.",
-      "vi": "Đôi đũa giống như cánh tay nối dài của ngón tay, việc ngón tay làm được nó đều làm được, hơn nữa không sợ nóng cũng không sợ lạnh.",
-      "audio_start_ms": null,
-      "audio_end_ms": null,
-      "tokens": [
-        {
-          "text": "筷子",
-          "pinyin": "kuàizi",
-          "hanviet": "Khoái Tử",
-          "hsk": 3,
-          "word_id": "hsk3_824",
-          "meaning_vi": "đôi đũa"
-        },
-        {
-          "text": "就",
-          "pinyin": "jiù",
-          "hanviet": "Tựu",
-          "hsk": 2,
-          "word_id": "hsk2_376",
-          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)"
-        },
-        {
-          "text": "像",
-          "pinyin": "xiàng",
-          "hanviet": "Tượng",
-          "hsk": 3,
-          "word_id": "hsk3_974",
-          "meaning_vi": "giống như"
-        },
-        {
-          "text": "手指",
-          "pinyin": "shǒuzhǐ",
-          "hanviet": "Thủ Chỉ",
-          "hsk": 5,
-          "word_id": "hsk5_1053",
-          "meaning_vi": "ngón tay"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "延伸",
-          "pinyin": "yánshēn",
-          "hanviet": "Diên Thân",
+          "text": "死亡",
+          "pinyin": "sǐwáng",
+          "hanviet": "Tử Vong",
           "hsk": 6,
-          "word_id": "hsk6_1510",
-          "meaning_vi": "kéo dài, mở rộng"
+          "word_id": "hsk6_1241",
+          "meaning_vi": "tử vong, chết"
+        },
+        {
+          "text": "防线",
+          "pinyin": "fáng xiàn",
+          "hanviet": "Phòng Tuyến"
         },
         {
           "text": "，"
         },
         {
-          "text": "手指",
-          "pinyin": "shǒuzhǐ",
-          "hanviet": "Thủ Chỉ",
+          "text": "英国人",
+          "pinyin": "yīng guó rén",
+          "hanviet": "Anh Quốc Nhân"
+        },
+        {
+          "text": "秘密",
+          "pinyin": "mìmì",
+          "hanviet": "Bí Mật",
           "hsk": 5,
-          "word_id": "hsk5_1053",
-          "meaning_vi": "ngón tay"
+          "word_id": "hsk5_764",
+          "meaning_vi": "bí mật"
         },
         {
-          "text": "能",
-          "pinyin": "néng",
-          "hanviet": "Năng",
-          "hsk": 1,
-          "word_id": "hsk1_212",
-          "meaning_vi": "có thể"
-        },
-        {
-          "text": "做",
-          "pinyin": "zuò",
-          "hanviet": "Tố",
-          "hsk": 1,
-          "word_id": "hsk1_424",
-          "meaning_vi": "làm"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "事情",
-          "pinyin": "shìqing",
-          "hanviet": "Sự Tình",
-          "hsk": 2,
-          "word_id": "hsk2_432",
-          "meaning_vi": "việc, sự việc"
-        },
-        {
-          "text": "它",
-          "pinyin": "tā",
-          "hanviet": "Tha",
-          "hsk": 1,
-          "word_id": "hsk1_569",
-          "meaning_vi": "nó (vật, con vật)"
-        },
-        {
-          "text": "都",
-          "pinyin": "dōu",
-          "hanviet": "Đô",
-          "hsk": 1,
-          "word_id": "hsk1_76",
-          "meaning_vi": "đều"
-        },
-        {
-          "text": "能",
-          "pinyin": "néng",
-          "hanviet": "Năng",
-          "hsk": 1,
-          "word_id": "hsk1_212",
-          "meaning_vi": "có thể"
-        },
-        {
-          "text": "做",
-          "pinyin": "zuò",
-          "hanviet": "Tố",
-          "hsk": 1,
-          "word_id": "hsk1_424",
-          "meaning_vi": "làm"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "而且",
-          "pinyin": "érqiě",
-          "hanviet": "Nhi Thả",
-          "hsk": 3,
-          "word_id": "hsk3_707",
-          "meaning_vi": "mà còn, hơn nữa"
-        },
-        {
-          "text": "不怕",
-          "pinyin": "bù pà",
-          "hanviet": "Bất Phạ"
-        },
-        {
-          "text": "热",
-          "pinyin": "rè",
-          "hanviet": "Nhiệt",
-          "hsk": 1,
-          "word_id": "hsk1_242",
-          "meaning_vi": "nóng"
-        },
-        {
-          "text": "也",
-          "pinyin": "yě",
-          "hanviet": "Dã",
-          "hsk": 1,
-          "word_id": "hsk1_359",
-          "meaning_vi": "cũng"
-        },
-        {
-          "text": "不怕",
-          "pinyin": "bù pà",
-          "hanviet": "Bất Phạ"
-        },
-        {
-          "text": "冷",
-          "pinyin": "lěng",
-          "hanviet": "Lạnh",
-          "hsk": 1,
-          "word_id": "hsk1_168",
-          "meaning_vi": "lạnh"
-        },
-        {
-          "text": "。"
-        }
-      ]
-    },
-    {
-      "id": "s5",
-      "zh": "很多人不知道，在古代，筷子并不叫“筷子”，而是被称为“箸”。",
-      "pinyin": "Hěn duō rén bù zhīdào, zài gǔdài, kuàizi bìng bù jiào “kuàizi”, érshì bèi chēng wéi “zhù”.",
-      "vi": "Nhiều người không biết rằng, thời cổ đại, đũa không gọi là 'khoái tử', mà được gọi là 'trợ' (箸).",
-      "audio_start_ms": null,
-      "audio_end_ms": null,
-      "tokens": [
-        {
-          "text": "很多",
-          "pinyin": "hěn duō",
-          "hanviet": "Ngận Đa"
-        },
-        {
-          "text": "人",
-          "pinyin": "rén",
-          "hanviet": "Nhân",
-          "hsk": 1,
-          "word_id": "hsk1_243",
-          "meaning_vi": "người"
-        },
-        {
-          "text": "不",
-          "pinyin": "bù",
-          "hanviet": "Bất",
-          "hsk": 1,
-          "word_id": "hsk1_25",
-          "meaning_vi": "không"
-        },
-        {
-          "text": "知道",
-          "pinyin": "zhīdào",
-          "hanviet": "Tri Đạo",
-          "hsk": 1,
-          "word_id": "hsk1_405",
-          "meaning_vi": "biết"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "在",
-          "pinyin": "zài",
-          "hanviet": "Tại",
-          "hsk": 1,
-          "word_id": "hsk1_390",
-          "meaning_vi": "ở, đang"
-        },
-        {
-          "text": "古代",
-          "pinyin": "gǔdài",
-          "hanviet": "Cổ Đại",
+          "text": "研制",
+          "pinyin": "yánzhì",
+          "hanviet": "Nghiên Chế",
           "hsk": 5,
-          "word_id": "hsk5_424",
-          "meaning_vi": "cổ đại"
+          "word_id": "hsk5_1329",
+          "meaning_vi": "nghiên cứu chế tạo, phát triển"
         },
         {
-          "text": "，"
-        },
-        {
-          "text": "筷子",
-          "pinyin": "kuàizi",
-          "hanviet": "Khoái Tử",
-          "hsk": 3,
-          "word_id": "hsk3_824",
-          "meaning_vi": "đôi đũa"
-        },
-        {
-          "text": "并",
-          "pinyin": "bìng",
-          "hanviet": "Tinh",
-          "hsk": 4,
-          "word_id": "hsk4_39",
-          "meaning_vi": "và, đồng thời; hoàn toàn (không)"
-        },
-        {
-          "text": "不",
-          "pinyin": "bù",
-          "hanviet": "Bất",
-          "hsk": 1,
-          "word_id": "hsk1_25",
-          "meaning_vi": "không"
-        },
-        {
-          "text": "叫",
-          "pinyin": "jiào",
-          "hanviet": "Khiếu",
-          "hsk": 1,
-          "word_id": "hsk1_140",
-          "meaning_vi": "gọi là, tên là"
-        },
-        {
-          "text": "“"
-        },
-        {
-          "text": "筷子",
-          "pinyin": "kuàizi",
-          "hanviet": "Khoái Tử",
-          "hsk": 3,
-          "word_id": "hsk3_824",
-          "meaning_vi": "đôi đũa"
-        },
-        {
-          "text": "”"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "而是",
-          "pinyin": "ér shì",
-          "hanviet": "Nhi Thị"
-        },
-        {
-          "text": "被",
-          "pinyin": "bèi",
-          "hanviet": "Bị",
-          "hsk": 3,
-          "word_id": "hsk3_619",
-          "meaning_vi": "bị (trợ từ bị động)"
-        },
-        {
-          "text": "称为",
-          "pinyin": "chēngwéi",
-          "hanviet": "Xứng Vi",
-          "hsk": 5,
-          "word_id": "hsk5_134",
-          "meaning_vi": "gọi là"
-        },
-        {
-          "text": "“"
-        },
-        {
-          "text": "箸",
-          "pinyin": "zhù",
-          "hanviet": "Trợ"
-        },
-        {
-          "text": "”"
-        },
-        {
-          "text": "。"
-        }
-      ]
-    },
-    {
-      "id": "s6",
-      "zh": "这个字上面是竹字头，下面是一个“者”字，说明最早的筷子多半是用竹子做成的。",
-      "pinyin": "Zhè gè zì shàngmiàn shì zhúzìtóu, xiàmiàn shì yí gè “zhě” zì, shuōmíng zuìzǎo de kuàizi duōbàn shì yòng zhúzi zuòchéng de.",
-      "vi": "Chữ này trên đầu là bộ trúc, bên dưới là chữ 'giả', cho thấy đũa thuở ban đầu phần lớn làm bằng tre trúc.",
-      "audio_start_ms": null,
-      "audio_end_ms": null,
-      "tokens": [
-        {
-          "text": "这个",
-          "pinyin": "zhège",
-          "hanviet": "Giá Cá",
-          "hsk": 1,
-          "word_id": "hsk1_605",
-          "meaning_vi": "cái này (đại từ)"
-        },
-        {
-          "text": "字",
-          "pinyin": "zì",
-          "hanviet": "Tự",
-          "hsk": 1,
-          "word_id": "hsk1_415",
-          "meaning_vi": "chữ"
-        },
-        {
-          "text": "上面",
-          "pinyin": "shàngmiàn",
-          "hanviet": "Thướng Diện",
+          "text": "出",
+          "pinyin": "chū",
+          "hanviet": "Xuất",
           "hsk": 2,
-          "word_id": "hsk2_426",
-          "meaning_vi": "phía trên, bên trên"
+          "word_id": "hsk2_316",
+          "meaning_vi": "ra, đi ra"
         },
         {
-          "text": "是",
-          "pinyin": "shì",
-          "hanviet": "Thị",
-          "hsk": 1,
-          "word_id": "hsk1_266",
-          "meaning_vi": "là"
+          "text": "一种",
+          "pinyin": "yī zhǒng",
+          "hanviet": "Nhất Chủng"
         },
         {
-          "text": "竹",
-          "pinyin": "zhú",
-          "hanviet": "Trúc"
-        },
-        {
-          "text": "字头",
-          "pinyin": "zì tóu",
-          "hanviet": "Tự Đầu"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "下面",
-          "pinyin": "xiàmiàn",
-          "hanviet": "Hạ Diện",
-          "hsk": 2,
-          "word_id": "hsk2_459",
-          "meaning_vi": "bên dưới"
-        },
-        {
-          "text": "是",
-          "pinyin": "shì",
-          "hanviet": "Thị",
-          "hsk": 1,
-          "word_id": "hsk1_266",
-          "meaning_vi": "là"
-        },
-        {
-          "text": "一个",
-          "pinyin": "yí gè",
-          "hanviet": "Nhất Cá"
-        },
-        {
-          "text": "“"
-        },
-        {
-          "text": "者",
-          "pinyin": "zhě",
-          "hanviet": "Giả",
-          "hsk": 4,
-          "word_id": "hsk4_926",
-          "meaning_vi": "người (hậu tố: …giả)"
-        },
-        {
-          "text": "”"
-        },
-        {
-          "text": "字",
-          "pinyin": "zì",
-          "hanviet": "Tự",
-          "hsk": 1,
-          "word_id": "hsk1_415",
-          "meaning_vi": "chữ"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "说明",
-          "pinyin": "shuōmíng",
-          "hanviet": "Thuyết Minh",
-          "hsk": 4,
-          "word_id": "hsk4_700",
-          "meaning_vi": "giải thích, nói rõ"
-        },
-        {
-          "text": "最早",
-          "pinyin": "zuì zǎo",
-          "hanviet": "Tối Tảo"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "筷子",
-          "pinyin": "kuàizi",
-          "hanviet": "Khoái Tử",
-          "hsk": 3,
-          "word_id": "hsk3_824",
-          "meaning_vi": "đôi đũa"
-        },
-        {
-          "text": "多半",
-          "pinyin": "duōbàn",
-          "hanviet": "Đa Bán",
-          "hsk": 7,
-          "word_id": "hsk7_1004",
-          "meaning_vi": "phần lớn, đa phần, có lẽ"
-        },
-        {
-          "text": "是",
-          "pinyin": "shì",
-          "hanviet": "Thị",
-          "hsk": 1,
-          "word_id": "hsk1_266",
-          "meaning_vi": "là"
-        },
-        {
-          "text": "用",
-          "pinyin": "yòng",
-          "hanviet": "Dụng",
-          "hsk": 3,
-          "word_id": "hsk3_1020",
-          "meaning_vi": "dùng"
-        },
-        {
-          "text": "竹子",
-          "pinyin": "zhúzi",
-          "hanviet": "Trúc Tử",
-          "hsk": 5,
-          "word_id": "hsk5_1539",
-          "meaning_vi": "cây tre"
-        },
-        {
-          "text": "做成",
-          "pinyin": "zuò chéng",
-          "hanviet": "Tố Thành"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "。"
-        }
-      ]
-    },
-    {
-      "id": "s7",
-      "zh": "在江南水乡，划船的人最忌讳“住”，因为“住”和“停住”发音相同，意头不好。",
-      "pinyin": "Zài Jiāngnán shuǐxiāng, huáchuán de rén zuì jìhuì “zhù”, yīnwèi “zhù” hé “tíngzhù” fāyīn xiāngtóng, yìtou bù hǎo.",
-      "vi": "Ở vùng sông nước Giang Nam, người chèo thuyền rất kiêng kỵ chữ 'trợ' (đọc gần như 'trú'), vì đồng âm với 'dừng lại', mang điềm chẳng lành.",
-      "audio_start_ms": null,
-      "audio_end_ms": null,
-      "tokens": [
-        {
-          "text": "在",
-          "pinyin": "zài",
-          "hanviet": "Tại",
-          "hsk": 1,
-          "word_id": "hsk1_390",
-          "meaning_vi": "ở, đang"
-        },
-        {
-          "text": "江南水乡",
-          "pinyin": "jiāng nán shuǐ xiāng",
-          "hanviet": "Giang Nam Thuỷ Hương"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "划船",
-          "pinyin": "huá chuán",
-          "hanviet": "Hoa Thuyền"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "人",
-          "pinyin": "rén",
-          "hanviet": "Nhân",
-          "hsk": 1,
-          "word_id": "hsk1_243",
-          "meaning_vi": "người"
-        },
-        {
-          "text": "最",
-          "pinyin": "zuì",
-          "hanviet": "Tối",
-          "hsk": 2,
-          "word_id": "hsk2_498",
-          "meaning_vi": "nhất"
-        },
-        {
-          "text": "忌讳",
-          "pinyin": "jìhuì",
-          "hanviet": "Kỵ Huý",
-          "hsk": 7,
-          "word_id": "hsk7_1905",
-          "meaning_vi": "kiêng kỵ"
-        },
-        {
-          "text": "“"
-        },
-        {
-          "text": "住",
-          "pinyin": "zhù",
-          "hanviet": "Trú",
-          "hsk": 1,
-          "word_id": "hsk1_412",
-          "meaning_vi": "ở, sống"
-        },
-        {
-          "text": "”"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "因为",
-          "pinyin": "yīnwèi",
-          "hanviet": "Nhân Vi",
-          "hsk": 2,
-          "word_id": "hsk2_476",
-          "meaning_vi": "bởi vì"
-        },
-        {
-          "text": "“"
-        },
-        {
-          "text": "住",
-          "pinyin": "zhù",
-          "hanviet": "Trú",
-          "hsk": 1,
-          "word_id": "hsk1_412",
-          "meaning_vi": "ở, sống"
-        },
-        {
-          "text": "”"
-        },
-        {
-          "text": "和",
-          "pinyin": "chī",
-          "hanviet": "Cật",
-          "hsk": 1,
-          "word_id": "hsk1_39",
-          "meaning_vi": "ăn"
-        },
-        {
-          "text": "“"
-        },
-        {
-          "text": "停住",
-          "pinyin": "tíng zhù",
-          "hanviet": "Đình Trú"
-        },
-        {
-          "text": "”"
-        },
-        {
-          "text": "发音",
-          "pinyin": "fāyīn",
-          "hanviet": "Phát Âm",
-          "hsk": 5,
-          "word_id": "hsk5_323",
-          "meaning_vi": "phát âm"
-        },
-        {
-          "text": "相同",
-          "pinyin": "xiāngtóng",
-          "hanviet": "Tương Đồng",
-          "hsk": 4,
-          "word_id": "hsk4_806",
-          "meaning_vi": "giống nhau"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "意头",
-          "pinyin": "yì tóu",
-          "hanviet": "Ý Đầu"
-        },
-        {
-          "text": "不好",
-          "pinyin": "bù hǎo",
-          "hanviet": "Bất Hảo"
-        },
-        {
-          "text": "。"
-        }
-      ]
-    },
-    {
-      "id": "s8",
-      "zh": "船家希望船行得快，于是就把“箸”改叫成了“快儿”。",
-      "pinyin": "Chuánjiā xīwàng chuán xíng de kuài, yútì jiù bǎ “zhù” gǎi jiào chéng le “kuàir”.",
-      "vi": "Nhà thuyền mong thuyền lướt đi thật nhanh, thế là đổi gọi 'trợ' thành 'khoái nhi' (nhanh nhẹn).",
-      "audio_start_ms": null,
-      "audio_end_ms": null,
-      "tokens": [
-        {
-          "text": "船家",
-          "pinyin": "chuán jiā",
-          "hanviet": "Thuyền Gia"
-        },
-        {
-          "text": "希望",
-          "pinyin": "xīwàng",
-          "hanviet": "Hi Vọng/hy Vọng",
-          "hsk": 2,
-          "word_id": "hsk2_455",
-          "meaning_vi": "hy vọng"
-        },
-        {
-          "text": "船行",
-          "pinyin": "chuán xíng",
-          "hanviet": "Thuyền Hành"
-        },
-        {
-          "text": "得",
-          "pinyin": "de",
-          "hanviet": "Đắc",
-          "hsk": 2,
-          "word_id": "hsk2_332",
-          "meaning_vi": "được (trợ từ)"
-        },
-        {
-          "text": "快",
-          "pinyin": "kuài",
-          "hanviet": "Khoái",
-          "hsk": 2,
-          "word_id": "hsk2_384",
-          "meaning_vi": "nhanh"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "于是",
-          "pinyin": "yúshì",
-          "hanviet": "Vu Thị",
-          "hsk": 4,
-          "word_id": "hsk4_896",
-          "meaning_vi": "vì vậy, do đó"
-        },
-        {
-          "text": "就",
-          "pinyin": "jiù",
-          "hanviet": "Tựu",
-          "hsk": 2,
-          "word_id": "hsk2_376",
-          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)"
-        },
-        {
-          "text": "把",
-          "pinyin": "bǎ",
-          "hanviet": "Bả",
-          "hsk": 3,
-          "word_id": "hsk3_606",
-          "meaning_vi": "cái, chiếc (lượng từ); cầm, nắm"
-        },
-        {
-          "text": "“"
-        },
-        {
-          "text": "箸",
-          "pinyin": "zhù",
-          "hanviet": "Trợ"
-        },
-        {
-          "text": "”"
-        },
-        {
-          "text": "改叫",
-          "pinyin": "gǎi jiào",
-          "hanviet": "Cải Khiếu"
-        },
-        {
-          "text": "成",
-          "pinyin": "chéng",
-          "hanviet": "Thành",
+          "text": "披",
+          "pinyin": "pī",
+          "hanviet": "Phi",
           "hsk": 6,
-          "word_id": "hsk6_156",
-          "meaning_vi": "vào (số lượng)"
-        },
-        {
-          "text": "了",
-          "pinyin": "le",
-          "hanviet": "Liễu",
-          "hsk": 1,
-          "word_id": "hsk1_535",
-          "meaning_vi": "rồi (trợ từ)"
-        },
-        {
-          "text": "“"
-        },
-        {
-          "text": "快儿",
-          "pinyin": "kuài ér",
-          "hanviet": "Khoái Nhi"
-        },
-        {
-          "text": "”"
-        },
-        {
-          "text": "。"
-        }
-      ]
-    },
-    {
-      "id": "s9",
-      "zh": "后来，人们又在“快”字上面加上了竹字头，正式造出了“筷”这个字。",
-      "pinyin": "Hòulái, rénmen yòu zài “kuài” zì shàngmiàn jiāshàng le zhúzìtóu, zhèngshì zàochū le “kuài” zhè gè zì.",
-      "vi": "Về sau, người ta thêm bộ trúc lên đầu chữ 'khoái', chính thức tạo nên chữ 'đũa' (筷).",
-      "audio_start_ms": null,
-      "audio_end_ms": null,
-      "tokens": [
-        {
-          "text": "后来",
-          "pinyin": "hòulái",
-          "hanviet": "Hậu Lai",
-          "hsk": 3,
-          "word_id": "hsk3_761",
-          "meaning_vi": "sau đó"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "人们",
-          "pinyin": "rén men",
-          "hanviet": "Nhân Môn"
-        },
-        {
-          "text": "又",
-          "pinyin": "yòu",
-          "hanviet": "Hựu",
-          "hsk": 3,
-          "word_id": "hsk3_1028",
-          "meaning_vi": "lại (lần nữa)"
-        },
-        {
-          "text": "在",
-          "pinyin": "zài",
-          "hanviet": "Tại",
-          "hsk": 1,
-          "word_id": "hsk1_390",
-          "meaning_vi": "ở, đang"
-        },
-        {
-          "text": "“"
-        },
-        {
-          "text": "快",
-          "pinyin": "kuài",
-          "hanviet": "Khoái",
-          "hsk": 2,
-          "word_id": "hsk2_384",
-          "meaning_vi": "nhanh"
-        },
-        {
-          "text": "”"
-        },
-        {
-          "text": "字",
-          "pinyin": "zì",
-          "hanviet": "Tự",
-          "hsk": 1,
-          "word_id": "hsk1_415",
-          "meaning_vi": "chữ"
-        },
-        {
-          "text": "上面",
-          "pinyin": "shàngmiàn",
-          "hanviet": "Thướng Diện",
-          "hsk": 2,
-          "word_id": "hsk2_426",
-          "meaning_vi": "phía trên, bên trên"
-        },
-        {
-          "text": "加上",
-          "pinyin": "jiāshàng",
-          "hanviet": "Gia Thướng",
-          "hsk": 4,
-          "word_id": "hsk4_339",
-          "meaning_vi": "cộng thêm, thêm vào đó"
-        },
-        {
-          "text": "了",
-          "pinyin": "le",
-          "hanviet": "Liễu",
-          "hsk": 1,
-          "word_id": "hsk1_535",
-          "meaning_vi": "rồi (trợ từ)"
-        },
-        {
-          "text": "竹",
-          "pinyin": "zhú",
-          "hanviet": "Trúc"
-        },
-        {
-          "text": "字头",
-          "pinyin": "zì tóu",
-          "hanviet": "Tự Đầu"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "正式",
-          "pinyin": "zhèngshì",
-          "hanviet": "Chính Thức",
-          "hsk": 4,
-          "word_id": "hsk4_937",
-          "meaning_vi": "chính thức"
-        },
-        {
-          "text": "造出",
-          "pinyin": "zào chū",
-          "hanviet": "Tạo Xuất"
-        },
-        {
-          "text": "了",
-          "pinyin": "le",
-          "hanviet": "Liễu",
-          "hsk": 1,
-          "word_id": "hsk1_535",
-          "meaning_vi": "rồi (trợ từ)"
-        },
-        {
-          "text": "“"
-        },
-        {
-          "text": "筷",
-          "pinyin": "kuài",
-          "hanviet": "Khoái"
-        },
-        {
-          "text": "”"
-        },
-        {
-          "text": "这个",
-          "pinyin": "zhège",
-          "hanviet": "Giá Cá",
-          "hsk": 1,
-          "word_id": "hsk1_605",
-          "meaning_vi": "cái này (đại từ)"
-        },
-        {
-          "text": "字",
-          "pinyin": "zì",
-          "hanviet": "Tự",
-          "hsk": 1,
-          "word_id": "hsk1_415",
-          "meaning_vi": "chữ"
-        },
-        {
-          "text": "。"
-        }
-      ]
-    },
-    {
-      "id": "s10",
-      "zh": "一双小小的筷子，不仅是一件实用的餐具，更承载着中华民族几千年的生活智慧与文化底蕴。",
-      "pinyin": "Yì shuāng xiǎoxiǎo de kuàizi, bùjǐn shì yí jiàn shíyòng de cānjù, gèng chéngzài zhe Zhōnghuá mínzú jǐ qiān nián de shēnghuó zhìhuì yǔ wénhuà dǐyùn.",
-      "vi": "Một đôi đũa nhỏ bé, không chỉ là món đồ dùng ăn uống tiện lợi, mà còn chở che trí tuệ sinh hoạt và bề dày văn hóa hàng nghìn năm của dân tộc Trung Hoa.",
-      "audio_start_ms": null,
-      "audio_end_ms": null,
-      "tokens": [
-        {
-          "text": "一双",
-          "pinyin": "yī shuāng",
-          "hanviet": "Nhất Song"
-        },
-        {
-          "text": "小小的",
-          "pinyin": "xiǎo xiǎo de",
-          "hanviet": "Tiểu Tiểu Đích"
-        },
-        {
-          "text": "筷子",
-          "pinyin": "kuàizi",
-          "hanviet": "Khoái Tử",
-          "hsk": 3,
-          "word_id": "hsk3_824",
-          "meaning_vi": "đôi đũa"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "不仅",
-          "pinyin": "bùjǐn",
-          "hanviet": "Bất Cận",
-          "hsk": 4,
-          "word_id": "hsk4_55",
-          "meaning_vi": "không chỉ"
-        },
-        {
-          "text": "是",
-          "pinyin": "shì",
-          "hanviet": "Thị",
-          "hsk": 1,
-          "word_id": "hsk1_266",
-          "meaning_vi": "là"
-        },
-        {
-          "text": "一件",
-          "pinyin": "yī jiàn",
-          "hanviet": "Nhất Kiện"
-        },
-        {
-          "text": "实用",
-          "pinyin": "shíyòng",
-          "hanviet": "Thực Dụng",
-          "hsk": 5,
-          "word_id": "hsk5_1024",
-          "meaning_vi": "thực dụng, hữu dụng"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "餐具",
-          "pinyin": "cān jù",
-          "hanviet": "Xan Cụ"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "更",
-          "pinyin": "gèng",
-          "hanviet": "Canh",
-          "hsk": 3,
-          "word_id": "hsk3_737",
-          "meaning_vi": "càng, hơn"
-        },
-        {
-          "text": "承载",
-          "pinyin": "chéngzài",
-          "hanviet": "Thừa Tải",
-          "hsk": 7,
-          "word_id": "hsk7_504",
-          "meaning_vi": "chứa đựng, gánh vác"
+          "word_id": "hsk6_984",
+          "meaning_vi": "khoác, choàng"
         },
         {
           "text": "着",
@@ -1387,17 +255,38 @@
           "meaning_vi": "đang (trợ từ)"
         },
         {
-          "text": "中华民族",
-          "pinyin": "Zhōnghuá Mínzú",
-          "hanviet": "Trung Hoa Dân Tộc",
-          "hsk": 5,
-          "word_id": "hsk5_1521",
-          "meaning_vi": "dân tộc Trung Hoa"
+          "text": "厚重",
+          "pinyin": "hòu zhòng",
+          "hanviet": "Hậu Trọng"
         },
         {
-          "text": "几千年",
-          "pinyin": "jǐ qiān nián",
-          "hanviet": "Kỷ Thiên Niên"
+          "text": "装甲",
+          "pinyin": "zhuāng jiǎ",
+          "hanviet": "Trang Giáp"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "依靠",
+          "pinyin": "yīkào",
+          "hanviet": "Y Kháo",
+          "hsk": 5,
+          "word_id": "hsk5_1347",
+          "meaning_vi": "dựa vào"
+        },
+        {
+          "text": "履带",
+          "pinyin": "lǚ dài",
+          "hanviet": "Lý Đới"
+        },
+        {
+          "text": "行驶",
+          "pinyin": "xíngshǐ",
+          "hanviet": "Hành Sử",
+          "hsk": 5,
+          "word_id": "hsk5_1293",
+          "meaning_vi": "du lịch"
         },
         {
           "text": "的",
@@ -1408,33 +297,17 @@
           "meaning_vi": "của (trợ từ)"
         },
         {
-          "text": "生活",
-          "pinyin": "shēnghuó",
-          "hanviet": "Sinh Hoạt",
-          "hsk": 3,
-          "word_id": "hsk3_911",
-          "meaning_vi": "sinh hoạt, cuộc sống"
+          "text": "钢铁",
+          "pinyin": "gāngtiě",
+          "hanviet": "Cương Thiết",
+          "hsk": 7,
+          "word_id": "hsk7_1303",
+          "meaning_vi": "thép, sắt"
         },
         {
-          "text": "智慧",
-          "pinyin": "zhìhuì",
-          "hanviet": "Trí Tuệ",
-          "hsk": 5,
-          "word_id": "hsk5_1513",
-          "meaning_vi": "trí tuệ"
-        },
-        {
-          "text": "与",
-          "pinyin": "yǔ",
-          "hanviet": "Dư",
-          "hsk": 4,
-          "word_id": "hsk4_897",
-          "meaning_vi": "và, với"
-        },
-        {
-          "text": "文化底蕴",
-          "pinyin": "wén huà dǐ yùn",
-          "hanviet": "Văn Hoa Để Uẩn"
+          "text": "巨兽",
+          "pinyin": "jù shòu",
+          "hanviet": "Cự Thú"
         },
         {
           "text": "。"
@@ -1442,89 +315,62 @@
       ]
     },
     {
-      "id": "s11",
-      "zh": "当你每天拿起筷子吃饭时，其实也是在与古老文明进行一次亲切的握手。",
-      "pinyin": "Dāng nǐ měitiān ná qǐ kuàizi chīfàn shí, qíshí yě shì zài yǔ gǔlǎo wénmíng jìnxíng yí cì qīnqiè de wòshǒu.",
-      "vi": "Mỗi ngày khi bạn cầm đũa lên dùng bữa, thực chất bạn đang có một cái bắt tay thân mật cùng một nền văn minh cổ xưa.",
+      "id": "s3",
+      "zh": "为了保密，制造厂对外宣称这些铁箱子是运往俄国的水箱，“坦克”（Tank）这个名字便沿用至今。",
+      "pinyin": "Wèile bǎomì, zhìzàochǎng duìwài xuānchēng zhèxiē tiěxiāngzi shì yùn wǎng Éguó de shuǐxiāng, “tǎnkè” (Tank) zhè gè míngzi biàn yányòng zhìjīn.",
+      "vi": "Để giữ bí mật, người ta ngụy trang chúng là bể chứa nước (Tank) chở sang Nga, tên gọi xe tăng bắt đầu từ đó.",
       "audio_start_ms": null,
       "audio_end_ms": null,
       "tokens": [
         {
-          "text": "当",
-          "pinyin": "dāng",
-          "hanviet": "Đương",
-          "hsk": 4,
-          "word_id": "hsk4_135",
-          "meaning_vi": "khi, lúc"
-        },
-        {
-          "text": "你",
-          "pinyin": "nǐ",
-          "hanviet": "Nễ",
-          "hsk": 1,
-          "word_id": "hsk1_213",
-          "meaning_vi": "bạn"
-        },
-        {
-          "text": "每天",
-          "pinyin": "měi tiān",
-          "hanviet": "Mỗi Thiên"
-        },
-        {
-          "text": "拿",
-          "pinyin": "ná",
-          "hanviet": "Nã",
-          "hsk": 2,
-          "word_id": "hsk2_405",
-          "meaning_vi": "cầm, lấy"
-        },
-        {
-          "text": "起",
-          "pinyin": "qǐ",
-          "hanviet": "Khởi",
+          "text": "为了",
+          "pinyin": "wèile",
+          "hanviet": "Vi Liễu",
           "hsk": 3,
-          "word_id": "hsk3_883",
-          "meaning_vi": "dậy, đứng lên; vụ (lượng từ)"
+          "word_id": "hsk3_955",
+          "meaning_vi": "để (mục đích)"
         },
         {
-          "text": "筷子",
-          "pinyin": "kuàizi",
-          "hanviet": "Khoái Tử",
-          "hsk": 3,
-          "word_id": "hsk3_824",
-          "meaning_vi": "đôi đũa"
-        },
-        {
-          "text": "吃饭",
-          "pinyin": "chī fàn",
-          "hanviet": "Cật Phạn"
-        },
-        {
-          "text": "时",
-          "pinyin": "shí",
-          "hanviet": "Thời",
-          "hsk": 2,
-          "word_id": "hsk2_431",
-          "meaning_vi": "thời gian (danh từ, số lượng)"
+          "text": "保密",
+          "pinyin": "bǎomì",
+          "hanviet": "Bảo Mật",
+          "hsk": 7,
+          "word_id": "hsk7_110",
+          "meaning_vi": "giữ bí mật"
         },
         {
           "text": "，"
         },
         {
-          "text": "其实",
-          "pinyin": "qíshí",
-          "hanviet": "Kỳ Thật",
-          "hsk": 3,
-          "word_id": "hsk3_881",
-          "meaning_vi": "thực ra"
+          "text": "制造厂",
+          "pinyin": "zhì zào chǎng",
+          "hanviet": "Chế Tạo Hán"
         },
         {
-          "text": "也",
-          "pinyin": "yě",
-          "hanviet": "Dã",
+          "text": "对外",
+          "pinyin": "duì wài",
+          "hanviet": "Đối Ngoại"
+        },
+        {
+          "text": "宣称",
+          "pinyin": "xuānchēng",
+          "hanviet": "Tuyên Xứng",
+          "hsk": 7,
+          "word_id": "hsk7_4655",
+          "meaning_vi": "tuyên bố; tự xưng"
+        },
+        {
+          "text": "这些",
+          "pinyin": "zhèxiē",
+          "hanviet": "Giá Ta",
           "hsk": 1,
-          "word_id": "hsk1_359",
-          "meaning_vi": "cũng"
+          "word_id": "hsk1_608",
+          "meaning_vi": "những (đại từ) này"
+        },
+        {
+          "text": "铁箱子",
+          "pinyin": "tiě xiāng zi",
+          "hanviet": "Thiết Rương Tử"
         },
         {
           "text": "是",
@@ -1535,57 +381,14 @@
           "meaning_vi": "là"
         },
         {
-          "text": "在",
-          "pinyin": "zài",
-          "hanviet": "Tại",
-          "hsk": 1,
-          "word_id": "hsk1_390",
-          "meaning_vi": "ở, đang"
+          "text": "运往",
+          "pinyin": "yùn wǎng",
+          "hanviet": "Vận Vãng"
         },
         {
-          "text": "与",
-          "pinyin": "yǔ",
-          "hanviet": "Dư",
-          "hsk": 4,
-          "word_id": "hsk4_897",
-          "meaning_vi": "và, với"
-        },
-        {
-          "text": "古老",
-          "pinyin": "gǔlǎo",
-          "hanviet": "Cổ Lão",
-          "hsk": 5,
-          "word_id": "hsk5_425",
-          "meaning_vi": "cổ xưa"
-        },
-        {
-          "text": "文明",
-          "pinyin": "wénmíng",
-          "hanviet": "Văn Minh",
-          "hsk": 6,
-          "word_id": "hsk6_1389",
-          "meaning_vi": "văn minh"
-        },
-        {
-          "text": "进行",
-          "pinyin": "jìnxíng",
-          "hanviet": "Tiến Hành",
-          "hsk": 4,
-          "word_id": "hsk4_393",
-          "meaning_vi": "tiến hành"
-        },
-        {
-          "text": "一次",
-          "pinyin": "yī cì",
-          "hanviet": "Nhất Thứ"
-        },
-        {
-          "text": "亲切",
-          "pinyin": "qīnqiè",
-          "hanviet": "Thân Thiết",
-          "hsk": 5,
-          "word_id": "hsk5_881",
-          "meaning_vi": "thân thiết, gần gũi"
+          "text": "俄国",
+          "pinyin": "é guó",
+          "hanviet": "Nga Quốc"
         },
         {
           "text": "的",
@@ -1596,12 +399,314 @@
           "meaning_vi": "của (trợ từ)"
         },
         {
-          "text": "握手",
-          "pinyin": "wòshǒu",
-          "hanviet": "Ác Thủ",
+          "text": "水箱",
+          "pinyin": "shuǐ xiāng",
+          "hanviet": "Thuỷ Rương"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "坦克",
+          "pinyin": "tǎnkè",
+          "hanviet": "Thản Khắc",
+          "hsk": 7,
+          "word_id": "hsk7_3946",
+          "meaning_vi": "xe tăng"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "（"
+        },
+        {
+          "text": "Tank"
+        },
+        {
+          "text": "）"
+        },
+        {
+          "text": "这个",
+          "pinyin": "zhège",
+          "hanviet": "Giá Cá",
+          "hsk": 1,
+          "word_id": "hsk1_605",
+          "meaning_vi": "cái này (đại từ)"
+        },
+        {
+          "text": "名字",
+          "pinyin": "míngzi",
+          "hanviet": "Danh Tự",
+          "hsk": 1,
+          "word_id": "hsk1_203",
+          "meaning_vi": "tên"
+        },
+        {
+          "text": "便",
+          "pinyin": "biàn",
+          "hanviet": "Tiện",
           "hsk": 5,
-          "word_id": "hsk5_1205",
-          "meaning_vi": "bắt tay"
+          "word_id": "hsk5_56",
+          "meaning_vi": "thì, liền (liên từ)"
+        },
+        {
+          "text": "沿用至今",
+          "pinyin": "yán yòng zhì jīn",
+          "hanviet": "Duyên Dụng Chí Kim"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "一九一六年，英国坦克首次出现在索姆河战场，所向披靡地碾压铁丝网并跨越壕沟。",
+      "pinyin": "Yī-jiǔ-yī-liù nián, Yīngguó tǎnkè shǒucì chūxiàn zài Suǒmǔhé zhànchǎng, suǒxiàng-pīmǐ de niǎnyā tiěsīwǎng bìng kuàyuè háogōu.",
+      "vi": "Năm 1916, xe tăng Anh lần đầu xuất trận tại Somme, nghiền nát dây thép gai và vượt rãnh hào dễ dàng.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "一九一六年",
+          "pinyin": "yī jiǔ yī liù nián",
+          "hanviet": "Nhất Cửu Nhất Lục Niên"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "英国",
+          "pinyin": "yīng guó",
+          "hanviet": "Anh Quốc"
+        },
+        {
+          "text": "坦克",
+          "pinyin": "tǎnkè",
+          "hanviet": "Thản Khắc",
+          "hsk": 7,
+          "word_id": "hsk7_3946",
+          "meaning_vi": "xe tăng"
+        },
+        {
+          "text": "首次",
+          "pinyin": "shǒucì",
+          "hanviet": "Thủ Thứ",
+          "hsk": 5,
+          "word_id": "hsk5_1047",
+          "meaning_vi": "lần đầu tiên"
+        },
+        {
+          "text": "出现",
+          "pinyin": "chūxiàn",
+          "hanviet": "Xuất Hiện",
+          "hsk": 4,
+          "word_id": "hsk4_90",
+          "meaning_vi": "xuất hiện"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "索姆河",
+          "pinyin": "suǒ mǔ hé",
+          "hanviet": "Sách Mẫu Hà"
+        },
+        {
+          "text": "战场",
+          "pinyin": "zhànchǎng",
+          "hanviet": "Chiến Trường",
+          "hsk": 7,
+          "word_id": "hsk7_5155",
+          "meaning_vi": "chiến trường"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "所向披靡",
+          "pinyin": "suǒ xiàng pī mǐ",
+          "hanviet": "Sở Hướng Phi My"
+        },
+        {
+          "text": "地",
+          "pinyin": "de",
+          "hanviet": "Địa",
+          "hsk": 2,
+          "word_id": "hsk2_333",
+          "meaning_vi": "cách (trợ từ trạng ngữ)"
+        },
+        {
+          "text": "碾压",
+          "pinyin": "niǎn yā",
+          "hanviet": "Niễn Áp"
+        },
+        {
+          "text": "铁丝网",
+          "pinyin": "tiě sī wǎng",
+          "hanviet": "Thiết Tơ Võng"
+        },
+        {
+          "text": "并",
+          "pinyin": "bìng",
+          "hanviet": "Tinh",
+          "hsk": 4,
+          "word_id": "hsk4_39",
+          "meaning_vi": "và, đồng thời; hoàn toàn (không)"
+        },
+        {
+          "text": "跨越",
+          "pinyin": "kuàyuè",
+          "hanviet": "Khoá Việt",
+          "hsk": 7,
+          "word_id": "hsk7_2425",
+          "meaning_vi": "vượt qua, bước qua, băng qua"
+        },
+        {
+          "text": "壕沟",
+          "pinyin": "háo gōu",
+          "hanviet": "Hào Câu"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "凭借强大的火力、防护力与越野机动性，坦克成为了二十世纪当之无愧的“陆战之王”。",
+      "pinyin": "Píngjiè qiángdà de huǒlì, fánghùlì yǔ yuèyě jīdòngxìng, tǎnkè chéngwéi le èrshí shìjì dāngzhī-wúkuì de “lùzhàn zhī wáng”.",
+      "vi": "Với hỏa lực mạnh mẽ, giáp kiên cố và cơ động việt dã, xe tăng trở thành vua chiến trường trên bộ của thế kỷ 20.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "凭借",
+          "pinyin": "píngjiè",
+          "hanviet": "Bằng Tá",
+          "hsk": 5,
+          "word_id": "hsk5_843",
+          "meaning_vi": "bằng"
+        },
+        {
+          "text": "强大",
+          "pinyin": "qiángdà",
+          "hanviet": "Cường Đại",
+          "hsk": 5,
+          "word_id": "hsk5_870",
+          "meaning_vi": "mạnh mẽ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "火力",
+          "pinyin": "huǒ lì",
+          "hanviet": "Hỏa Lực"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "防护力",
+          "pinyin": "fáng hù lì",
+          "hanviet": "Phòng Hộ Lực"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "越野",
+          "pinyin": "yuè yě",
+          "hanviet": "Việt Dã"
+        },
+        {
+          "text": "机动性",
+          "pinyin": "jī dòng xìng",
+          "hanviet": "Cơ Động Tính"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "坦克",
+          "pinyin": "tǎnkè",
+          "hanviet": "Thản Khắc",
+          "hsk": 7,
+          "word_id": "hsk7_3946",
+          "meaning_vi": "xe tăng"
+        },
+        {
+          "text": "成为",
+          "pinyin": "chéngwéi",
+          "hanviet": "Thành Vi",
+          "hsk": 4,
+          "word_id": "hsk4_82",
+          "meaning_vi": "trở thành"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "二十世纪",
+          "pinyin": "èr shí shì jì",
+          "hanviet": "Nhị Thập Thế Kỷ"
+        },
+        {
+          "text": "当之无愧",
+          "pinyin": "dāngzhīwúkuì",
+          "hanviet": "Đương Chi Vô Quý",
+          "hsk": 7,
+          "word_id": "hsk7_786",
+          "meaning_vi": "hoàn toàn xứng đáng, không hổ danh"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "陆战",
+          "pinyin": "lù zhàn",
+          "hanviet": "Lục Chiến"
+        },
+        {
+          "text": "之王",
+          "pinyin": "zhī wáng",
+          "hanviet": "Chi Vương"
+        },
+        {
+          "text": "”"
         },
         {
           "text": "。"
@@ -1610,44 +715,44 @@
     }
   ],
   "vocabulary_spotlight": [
-    "hsk3_824",
-    "hsk5_320",
-    "hsk5_1217",
-    "hsk3_957"
+    "hsk5_764",
+    "hsk4_14",
+    "hsk6_1327",
+    "hsk4_90"
   ],
   "quiz": [
     {
       "id": "q1",
-      "question_vi": "Nhà vật lý học Lý Chính Đạo nhận xét đôi đũa ứng dụng nguyên lý nào?",
+      "question_vi": "Tại sao xe tăng lại có tên gọi là 'Tank'?",
       "options_vi": [
-        "Nguyên lý đòn bẩy",
-        "Nguyên lý phản lực",
-        "Nguyên lý dẫn nhiệt"
+        "Bí mật ngụy trang là 'bể nước' (Water Tank)",
+        "Đặt theo tên người chế tạo",
+        "Tên một thị trấn nước Anh"
       ],
       "answer": 0,
-      "explanation_vi": "Trong bài viết: 巧妙地应用了杠杆原理 (Ứng dụng khéo léo nguyên lý đòn bẩy)."
+      "explanation_vi": "Quân đội Anh ngụy trang xe thành các thùng nước (Tank) chở hàng."
     },
     {
       "id": "q2",
-      "question_vi": "Thời cổ đại, đôi đũa được gọi bằng chữ gì?",
+      "question_vi": "Xe tăng ra đời nhằm phá vỡ thế trận nào?",
       "options_vi": [
-        "Trợ (箸)",
-        "Chước (勺)",
-        "Kiềm (钳)"
+        "Thế trận chiến hào bế tắc thời Thế chiến I",
+        "Hải chiến ban đêm",
+        "Chiến tranh trên không"
       ],
       "answer": 0,
-      "explanation_vi": "Trong bài viết: 很多不知道，在古代，筷子并不叫“筷子”，而是被称为“箸”."
+      "explanation_vi": "Đột phá phòng tuyến hào sâu và dây thép gai kiên cố."
     },
     {
       "id": "q3",
-      "question_vi": "Tại sao người dân vùng sông nước Giang Nam đổi tên đũa thành 'Khoái' (筷)?",
+      "question_vi": "Ba yếu tố cốt lõi của xe tăng là gì?",
       "options_vi": [
-        "Vì kiêng chữ 'Trợ' đồng âm với dừng thuyền, muốn thuyền chạy mau lẹ",
-        "Vì ăn bằng đũa rất nhanh",
-        "Vì do nhà vua ban lệnh đổi tên"
+        "Hỏa lực, vỏ giáp bảo vệ và độ cơ động vượt địa hình",
+        "Tốc độ bay và radar",
+        "Khả năng lặn sâu"
       ],
       "answer": 0,
-      "explanation_vi": "Trong bài viết: 划船的人最忌讳“住”... 船家希望船行得快，于是就把“箸”改叫成了“快儿”."
+      "explanation_vi": "Hỏa lực, giáp phòng hộ và khả năng vượt chướng ngại vật."
     }
   ]
 }

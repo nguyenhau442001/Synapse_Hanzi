@@ -1,10 +1,12 @@
 {
   "id": "wanwu_story_002",
+  "chapter_no": 2,
   "level": "HSK4",
   "series": "wanwu",
+  "book_volume": 1,
   "book_page_start": 19,
-  "book_page_end": 29,
-  "page_display": "Trang 19 - 29",
+  "book_page_end": 30,
+  "page_display": "Trang 19 - 30",
   "title": {
     "zh": "蛇：亦神亦邪",
     "vi": "Rắn: Vừa là thần linh, vừa là tà ác"
@@ -15,13 +17,13 @@
   "cover_image": "assets/images/readings/wanwu/wanwu_story_002.webp",
   "illustration": "assets/images/readings/wanwu/wanwu_story_002.webp",
   "estimatedMinutes": 5,
-  "description_vi": "📖 Trang 19 - 29 · Hình tượng loài rắn trong thần thoại Nữ Oa, Phục Hy và biểu tượng ngành y học thế giới.",
+  "description_vi": "📖 Trang 19 - 30 · Hình tượng loài rắn trong thần thoại Nữ Oa, Phục Hy và biểu tượng ngành y học thế giới.",
   "sentences": [
     {
       "id": "s1",
-      "zh": "在人类漫长的文明历史中，很少有一种动物像蛇这样，同时背负着崇拜与恐惧两种截然相反的情感。",
-      "pinyin": "Zài rénlèi màncháng de wénmíng lìshǐ zhōng, hěn shǎo yǒu yì zhǒng dòngwù xiàng shé zhèyàng, tóngshí bēifù zhe chóngbài yǔ kǒngjù liǎng zhǒng jiérán xiāngfǎn de qínggǎn.",
-      "vi": "Trong lịch sử văn minh dài lâu của nhân loại, hiếm có loài động vật nào như rắn, đồng thời gánh vác cả hai cảm xúc trái ngược hoàn toàn: sùng bái và khiếp sợ.",
+      "zh": "在人类漫长的文明历史中，蛇同时背负着崇拜与恐惧两种截然相反的情感。",
+      "pinyin": "Zài rénlèi màncháng de wénmíng lìshǐ zhōng, shé tóngshí bēifù zhe chóngbài yǔ kǒngjù liǎng zhǒng jiérán xiāngfǎn de qínggǎn.",
+      "vi": "Trong lịch sử văn minh nhân loại, rắn đồng thời gánh vác cả hai cảm xúc trái ngược: sùng kính và khiếp sợ.",
       "audio_start_ms": null,
       "audio_end_ms": null,
       "tokens": [
@@ -85,57 +87,12 @@
           "text": "，"
         },
         {
-          "text": "很少",
-          "pinyin": "hěn shǎo",
-          "hanviet": "Ngận Thiểu"
-        },
-        {
-          "text": "有",
-          "pinyin": "yǒu",
-          "hanviet": "Hữu",
-          "hsk": 1,
-          "word_id": "hsk1_380",
-          "meaning_vi": "có"
-        },
-        {
-          "text": "一种",
-          "pinyin": "yī zhǒng",
-          "hanviet": "Nhất Chủng"
-        },
-        {
-          "text": "动物",
-          "pinyin": "dòngwù",
-          "hanviet": "Động Vật",
-          "hsk": 3,
-          "word_id": "hsk3_700",
-          "meaning_vi": "động vật"
-        },
-        {
-          "text": "像",
-          "pinyin": "xiàng",
-          "hanviet": "Tượng",
-          "hsk": 3,
-          "word_id": "hsk3_974",
-          "meaning_vi": "giống như"
-        },
-        {
           "text": "蛇",
           "pinyin": "shé",
           "hanviet": "Xà",
           "hsk": 5,
           "word_id": "hsk5_969",
           "meaning_vi": "con rắn"
-        },
-        {
-          "text": "这样",
-          "pinyin": "zhèyàng",
-          "hanviet": "Giá Dạng",
-          "hsk": 2,
-          "word_id": "hsk2_489",
-          "meaning_vi": "như thế này (đại từ)"
-        },
-        {
-          "text": "，"
         },
         {
           "text": "同时",
@@ -217,7 +174,7 @@
       "id": "s2",
       "zh": "在中国古代神话中，开天辟地的人类始祖伏羲和女娲，形象都是人首蛇身。",
       "pinyin": "Zài Zhōngguó gǔdài shénhuà zhōng, kāitiān-pìdì de rénlèi shǐzǔ Fúxī hé Nǚwā, xíngxiàng dōu shì rénshǒu-shéshēn.",
-      "vi": "Trong thần thoại cổ đại Trung Quốc, thủy tổ của loài người là Phục Hy và Nữ Oa đều mang hình tượng đầu người mình rắn.",
+      "vi": "Trong thần thoại cổ đại Trung Quốc, thủy tổ loài người là Phục Hy và Nữ Oa đều mang hình tượng đầu người mình rắn.",
       "audio_start_ms": null,
       "audio_end_ms": null,
       "tokens": [
@@ -360,7 +317,7 @@
       "id": "s3",
       "zh": "古人认为蛇具有蜕皮重生的神奇能力，因此把蛇看作生命力旺盛与长生不老的象征。",
       "pinyin": "Gǔrén rènwéi shé jùyǒu tuìpí chóngshēng de shénqí nénglì, yīncǐ bǎ shé kànzuò shēngmìnglì wàngshèng yǔ chángshēng-bùlǎo de xiàngzhēng.",
-      "vi": "Cổ nhân cho rằng loài rắn có năng lực lột da tái sinh kỳ diệu, vì thế coi rắn là biểu tượng của sức sống dồi dào và trường sinh bất lão.",
+      "vi": "Cổ nhân cho rằng rắn có khả năng lột da tái sinh, coi đó là biểu tượng của sức sống mãnh liệt và trường sinh.",
       "audio_start_ms": null,
       "audio_end_ms": null,
       "tokens": [
@@ -519,7 +476,7 @@
       "id": "s4",
       "zh": "西方医学的标志也是一条盘绕在木杖上的蛇，被称为“阿斯克勒庇俄斯之杖”。",
       "pinyin": "Xīfāng yīxué de biāozhì yě shì yì tiáo pánrào zài mùzhàng shàng de shé, bèi chēng wéi “Āsīkèlèbǐ'éosī zhī zhàng”.",
-      "vi": "Biểu tượng của nền y học phương Tây cũng là một con rắn quấn quanh cây gậy gỗ, được gọi là 'Cây trượng Asclepius'.",
+      "vi": "Biểu tượng của y học phương Tây là con rắn quấn quanh cây trượng Asclepius.",
       "audio_start_ms": null,
       "audio_end_ms": null,
       "tokens": [
@@ -665,189 +622,9 @@
     },
     {
       "id": "s5",
-      "zh": "然而在很多民间传说中，蛇又因为剧毒和冰冷的眼神，被人们视为阴险、狡诈和邪恶的化身。",
-      "pinyin": "Rán'ér zài hěn duō mínjiān chuánshuō zhōng, shé yòu yīnwèi jùdú hé bīnglěng de yǎnshén, bèi rénmen shìwéi yīnxiǎn, jiǎozhà hé xié'è de huàshēn.",
-      "vi": "Tuy nhiên trong nhiều truyền thuyết dân gian, rắn lại vì nọc độc chết người và ánh mắt lạnh lẽo mà bị coi là hóa thân của sự nham hiểm, giảo hoạt và tà ác.",
-      "audio_start_ms": null,
-      "audio_end_ms": null,
-      "tokens": [
-        {
-          "text": "然而",
-          "pinyin": "rán’ér",
-          "hanviet": "Nhiên Nhi",
-          "hsk": 4,
-          "word_id": "hsk4_608",
-          "meaning_vi": "tuy nhiên"
-        },
-        {
-          "text": "在",
-          "pinyin": "zài",
-          "hanviet": "Tại",
-          "hsk": 1,
-          "word_id": "hsk1_390",
-          "meaning_vi": "ở, đang"
-        },
-        {
-          "text": "很多",
-          "pinyin": "hěn duō",
-          "hanviet": "Ngận Đa"
-        },
-        {
-          "text": "民间传说",
-          "pinyin": "mín jiān chuán shuō",
-          "hanviet": "Dân Gian Truyền Thuyết"
-        },
-        {
-          "text": "中",
-          "pinyin": "zhōng",
-          "hanviet": "Trung",
-          "hsk": 3,
-          "word_id": "hsk3_1060",
-          "meaning_vi": "giữa, trong"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "蛇",
-          "pinyin": "shé",
-          "hanviet": "Xà",
-          "hsk": 5,
-          "word_id": "hsk5_969",
-          "meaning_vi": "con rắn"
-        },
-        {
-          "text": "又",
-          "pinyin": "yòu",
-          "hanviet": "Hựu",
-          "hsk": 3,
-          "word_id": "hsk3_1028",
-          "meaning_vi": "lại (lần nữa)"
-        },
-        {
-          "text": "因为",
-          "pinyin": "yīnwèi",
-          "hanviet": "Nhân Vi",
-          "hsk": 2,
-          "word_id": "hsk2_476",
-          "meaning_vi": "bởi vì"
-        },
-        {
-          "text": "剧毒",
-          "pinyin": "jù dú",
-          "hanviet": "Kịch Độc"
-        },
-        {
-          "text": "和",
-          "pinyin": "chī",
-          "hanviet": "Cật",
-          "hsk": 1,
-          "word_id": "hsk1_39",
-          "meaning_vi": "ăn"
-        },
-        {
-          "text": "冰冷",
-          "pinyin": "bīng lěng",
-          "hanviet": "Băng Lạnh"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "眼神",
-          "pinyin": "yǎnshén",
-          "hanviet": "Nhãn Thần",
-          "hsk": 7,
-          "word_id": "hsk7_4747",
-          "meaning_vi": "thần thái ánh mắt"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "被",
-          "pinyin": "bèi",
-          "hanviet": "Bị",
-          "hsk": 3,
-          "word_id": "hsk3_619",
-          "meaning_vi": "bị (trợ từ bị động)"
-        },
-        {
-          "text": "人们",
-          "pinyin": "rén men",
-          "hanviet": "Nhân Môn"
-        },
-        {
-          "text": "视为",
-          "pinyin": "shìwéi",
-          "hanviet": "Thị Vi",
-          "hsk": 5,
-          "word_id": "hsk5_1036",
-          "meaning_vi": "xem như, coi là"
-        },
-        {
-          "text": "阴险",
-          "pinyin": "yīn xiǎn",
-          "hanviet": "Âm Hiểm"
-        },
-        {
-          "text": "、"
-        },
-        {
-          "text": "狡诈",
-          "pinyin": "shǐjìn",
-          "hanviet": "Sử Kình",
-          "hsk": 6,
-          "word_id": "hsk6_1195",
-          "meaning_vi": "ra sức, dùng sức"
-        },
-        {
-          "text": "和",
-          "pinyin": "chī",
-          "hanviet": "Cật",
-          "hsk": 1,
-          "word_id": "hsk1_39",
-          "meaning_vi": "ăn"
-        },
-        {
-          "text": "邪恶",
-          "pinyin": "xié’è",
-          "hanviet": "Tà Ác",
-          "hsk": 7,
-          "word_id": "hsk7_4520",
-          "meaning_vi": "ác"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "化身",
-          "pinyin": "huàshēn",
-          "hanviet": "Hóa Thân",
-          "hsk": 7,
-          "word_id": "hsk7_1732",
-          "meaning_vi": "hiện thân, hóa thân"
-        },
-        {
-          "text": "。"
-        }
-      ]
-    },
-    {
-      "id": "s6",
       "zh": "事实上，蛇是自然界生态平衡中不可缺少的重要一环，它们每年捕食大量危害农作物的田鼠。",
       "pinyin": "Shìshí shàng, shé shì zìránjiè shēngtài pínghéng zhōng bùkě quēshǎo de zhòngyào yì huán, tāmen měinián bǔshí dàliàng wēihài nóngzuòwù de tiánshǔ.",
-      "vi": "Trên thực tế, rắn là một mắt xích quan trọng không thể thiếu trong cân bằng sinh thái tự nhiên, hằng năm chúng săn bắt lượng lớn chuột đồng gây hại mùa màng.",
+      "vi": "Trên thực tế, rắn là mắt xích quan trọng trong cân bằng sinh thái, săn bắt lượng lớn chuột đồng bảo vệ mùa màng.",
       "audio_start_ms": null,
       "audio_end_ms": null,
       "tokens": [
@@ -984,176 +761,6 @@
           "text": "。"
         }
       ]
-    },
-    {
-      "id": "s7",
-      "zh": "神圣与邪恶交织在一起，让蛇这种古老的爬行动物始终笼罩在神秘的文化光环之中。",
-      "pinyin": "Shénshèng yǔ xié'è jiāozhī zài yìqǐ, ràng shé zhè zhǒng gǔlǎo de páxíng dòngwù shǐzhōng lǒngzhào zài shénmì de wénhuà guānghuán zhī zhōng.",
-      "vi": "Sự thần thánh đan xen cùng tà ác khiến loài bò sát cổ xưa này luôn bao phủ trong vầng hào quang văn hóa đầy huyền bí.",
-      "audio_start_ms": null,
-      "audio_end_ms": null,
-      "tokens": [
-        {
-          "text": "神圣",
-          "pinyin": "shénshèng",
-          "hanviet": "Thần Thánh",
-          "hsk": 7,
-          "word_id": "hsk7_3590",
-          "meaning_vi": "thần thánh, linh thiêng"
-        },
-        {
-          "text": "与",
-          "pinyin": "yǔ",
-          "hanviet": "Dư",
-          "hsk": 4,
-          "word_id": "hsk4_897",
-          "meaning_vi": "và, với"
-        },
-        {
-          "text": "邪恶",
-          "pinyin": "xié’è",
-          "hanviet": "Tà Ác",
-          "hsk": 7,
-          "word_id": "hsk7_4520",
-          "meaning_vi": "ác"
-        },
-        {
-          "text": "交织",
-          "pinyin": "jiāozhī",
-          "hanviet": "Giao Chức",
-          "hsk": 7,
-          "word_id": "hsk7_2046",
-          "meaning_vi": "đan xen, quyện vào nhau"
-        },
-        {
-          "text": "在",
-          "pinyin": "zài",
-          "hanviet": "Tại",
-          "hsk": 1,
-          "word_id": "hsk1_390",
-          "meaning_vi": "ở, đang"
-        },
-        {
-          "text": "一起",
-          "pinyin": "yìqǐ",
-          "hanviet": "Nhất Khởi",
-          "hsk": 2,
-          "word_id": "hsk2_473",
-          "meaning_vi": "cùng nhau"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "让",
-          "pinyin": "ràng",
-          "hanviet": "Nhượng",
-          "hsk": 2,
-          "word_id": "hsk2_422",
-          "meaning_vi": "để cho, khiến"
-        },
-        {
-          "text": "蛇",
-          "pinyin": "shé",
-          "hanviet": "Xà",
-          "hsk": 5,
-          "word_id": "hsk5_969",
-          "meaning_vi": "con rắn"
-        },
-        {
-          "text": "这种",
-          "pinyin": "zhè zhǒng",
-          "hanviet": "Giá Chủng"
-        },
-        {
-          "text": "古老",
-          "pinyin": "gǔlǎo",
-          "hanviet": "Cổ Lão",
-          "hsk": 5,
-          "word_id": "hsk5_425",
-          "meaning_vi": "cổ xưa"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "爬行动物",
-          "pinyin": "pá xíng dòng wù",
-          "hanviet": "Bò Hành Động Vật"
-        },
-        {
-          "text": "始终",
-          "pinyin": "shǐzhōng",
-          "hanviet": "Thủy Chung",
-          "hsk": 5,
-          "word_id": "hsk5_1027",
-          "meaning_vi": "trước sau, luôn luôn"
-        },
-        {
-          "text": "笼罩",
-          "pinyin": "lǒngzhào",
-          "hanviet": "Lồng Tráo",
-          "hsk": 7,
-          "word_id": "hsk7_2674",
-          "meaning_vi": "bao trùm, bao phủ, phủ kín"
-        },
-        {
-          "text": "在",
-          "pinyin": "zài",
-          "hanviet": "Tại",
-          "hsk": 1,
-          "word_id": "hsk1_390",
-          "meaning_vi": "ở, đang"
-        },
-        {
-          "text": "神秘",
-          "pinyin": "shénmì",
-          "hanviet": "Thần Bí",
-          "hsk": 5,
-          "word_id": "hsk5_988",
-          "meaning_vi": "thần bí, huyền bí"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "文化",
-          "pinyin": "wénhuà",
-          "hanviet": "Văn Hóa",
-          "hsk": 3,
-          "word_id": "hsk3_957",
-          "meaning_vi": "văn hóa"
-        },
-        {
-          "text": "光环",
-          "pinyin": "guānghuán",
-          "hanviet": "Quang Hoàn",
-          "hsk": 7,
-          "word_id": "hsk7_1506",
-          "meaning_vi": "ánh hào quang, vầng hào quang"
-        },
-        {
-          "text": "之中",
-          "pinyin": "zhīzhōng",
-          "hanviet": "Chi Trung",
-          "hsk": 4,
-          "word_id": "hsk4_945",
-          "meaning_vi": "trong, trong số"
-        },
-        {
-          "text": "。"
-        }
-      ]
     }
   ],
   "vocabulary_spotlight": [
@@ -1166,36 +773,36 @@
   "quiz": [
     {
       "id": "q1",
-      "question_vi": "Trong thần thoại Trung Quốc, Phục Hy và Nữ Oa có hình tượng như thế nào?",
+      "question_vi": "Phục Hy và Nữ Oa có hình tượng thế nào?",
       "options_vi": [
         "Đầu người mình rắn",
-        "Đầu rồng đuôi cá",
-        "Đầu chim cánh phượng"
+        "Đầu chim cánh phụng",
+        "Đầu cá đuôi lươn"
       ],
       "answer": 0,
-      "explanation_vi": "Trong bài viết: 伏羲和女娲，形象都是人首蛇身 (Phục Hy và Nữ Oa hình tượng đầu người mình rắn)."
+      "explanation_vi": "Cả hai đều mang hình tượng đầu người mình rắn."
     },
     {
       "id": "q2",
-      "question_vi": "Tại sao cổ nhân coi loài rắn là biểu tượng của sự tái sinh?",
+      "question_vi": "Tại sao cổ nhân coi rắn là biểu tượng tái sinh?",
       "options_vi": [
-        "Vì rắn có khả năng lột da",
-        "Vì rắn ngủ đông nhiều tháng",
-        "Vì rắn có thể bơi dưới nước"
+        "Khả năng lột da",
+        "Biết bơi dưới nước",
+        "Ngủ đông"
       ],
       "answer": 0,
-      "explanation_vi": "Trong bài viết: 古人认为蛇具有蜕皮重生的神奇能力 (Cổ nhân cho rằng rắn có năng lực lột da tái sinh)."
+      "explanation_vi": "Rắn có đặc tính lột da để phát triển."
     },
     {
       "id": "q3",
-      "question_vi": "Biểu tượng của ngành y học thế giới có hình ảnh gì?",
+      "question_vi": "Rắn giúp ích gì cho nông nghiệp?",
       "options_vi": [
-        "Con rắn quấn quanh cây gậy gỗ",
-        "Bông hoa hồng đỏ",
-        "Ngôi sao năm cánh"
+        "Bắt chuột đồng phá hoại",
+        "Làm tơi đất",
+        "Tạo bóng mát"
       ],
       "answer": 0,
-      "explanation_vi": "Trong bài viết: 西方医学的标志也是一条盘绕在木杖上的蛇 (Biểu tượng y học là con rắn quấn trên cây trượng)."
+      "explanation_vi": "Rắn săn bắt chuột đồng bảo vệ hoa màu."
     }
   ]
 }

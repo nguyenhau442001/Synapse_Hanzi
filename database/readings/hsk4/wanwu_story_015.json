@@ -1,45 +1,221 @@
 {
   "id": "wanwu_story_015",
+  "chapter_no": 15,
   "level": "HSK4",
   "series": "wanwu",
-  "book_page_start": 817,
-  "book_page_end": 823,
-  "page_display": "Trang 817 - 823",
+  "book_volume": 1,
+  "book_page_start": 141,
+  "book_page_end": 152,
+  "page_display": "Trang 141 - 152",
   "title": {
-    "zh": "火锅：涮一把滚烫的生活",
-    "vi": "Nồi lẩu: Nhúng một muôi cuộc đời sôi sục"
+    "zh": "科学实验：大胆且“疯狂”",
+    "vi": "Thí nghiệm khoa học: Táo bạo và điên rồ"
   },
-  "topic": "culture_history",
+  "topic": "science_technology",
   "topic_vi": "📚 Vạn vật thú vị",
-  "icon": "🍲",
+  "icon": "🔬",
   "cover_image": "assets/images/readings/wanwu/wanwu_story_015.webp",
   "illustration": "assets/images/readings/wanwu/wanwu_story_015.webp",
   "estimatedMinutes": 5,
-  "description_vi": "📖 Trang 817 - 823 · Nồi lẩu ấm nồng gắn kết sum vầy: từ nồi đồng hầm thịt thời Thương Chu đến hương vị cay nồng trứ danh của lẩu Tứ Xuyên.",
+  "description_vi": "📖 Trang 141 - 152 · Những thí nghiệm táo bạo trong lịch sử: từ khám phá điện của Franklin đến tinh thần dấn thân vì chân lý khoa học.",
   "sentences": [
     {
       "id": "s1",
-      "zh": "无论行走在哪一座城市，街道两旁热气腾腾的火锅店，总能勾起人们大快朵颐的冲动。",
-      "pinyin": "Wúlùn xíngzǒu zài nǎ yí zuò chéngshì, jiēdào liǎngpáng rèqì-téngténg de huǒguō diàn, zǒng néng gōuqǐ rénmen dàkuài-duǒyí de chōngdòng.",
-      "vi": "Bất kể dạo bước trên thành phố nào, những quán lẩu bốc khói nghi ngút hai bên đường luôn khơi dậy cảm giác muốn ăn một bữa thật đã đời.",
+      "zh": "人类认识世界、战胜未知的每一步飞跃，都离不开无数勇敢而大胆的科学实验。",
+      "pinyin": "Rénlèi rènshi shìjiè, zhànshèng wèizhī de měi yí bù fēiyuè, dōu lí bù kāi wúshù yǒnggǎn ér dàdǎn de kēxué shíyàn.",
+      "vi": "Mỗi bước tiến chinh phục thế giới của nhân loại đều gắn liền với những thí nghiệm khoa học quả cảm.",
       "audio_start_ms": null,
       "audio_end_ms": null,
       "tokens": [
         {
-          "text": "无论",
-          "pinyin": "wúlùn",
-          "hanviet": "Vô Luận",
-          "hsk": 4,
-          "word_id": "hsk4_784",
-          "meaning_vi": "bất luận, dù"
+          "text": "人类",
+          "pinyin": "rénlèi",
+          "hanviet": "Nhân Loại",
+          "hsk": 5,
+          "word_id": "hsk5_921",
+          "meaning_vi": "loài người, nhân loại"
         },
         {
-          "text": "行走",
-          "pinyin": "xíngzǒu",
-          "hanviet": "Hành Tẩu",
+          "text": "认识",
+          "pinyin": "rènshi",
+          "hanviet": "Nhận Thức",
+          "hsk": 1,
+          "word_id": "hsk1_244",
+          "meaning_vi": "biết, quen biết"
+        },
+        {
+          "text": "世界",
+          "pinyin": "shìjiè",
+          "hanviet": "Thế Giới",
+          "hsk": 3,
+          "word_id": "hsk3_916",
+          "meaning_vi": "thế giới"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "战胜",
+          "pinyin": "zhànshèng",
+          "hanviet": "Chiến Thắng",
+          "hsk": 6,
+          "word_id": "hsk6_1662",
+          "meaning_vi": "thắng"
+        },
+        {
+          "text": "未知",
+          "pinyin": "wèi zhī",
+          "hanviet": "Vị Tri"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "每",
+          "pinyin": "měi",
+          "hanviet": "Mỗi",
+          "hsk": 2,
+          "word_id": "hsk2_399",
+          "meaning_vi": "mỗi"
+        },
+        {
+          "text": "一步",
+          "pinyin": "yī bù",
+          "hanviet": "Nhất Bộ"
+        },
+        {
+          "text": "飞跃",
+          "pinyin": "fēiyuè",
+          "hanviet": "Phi Dược",
+          "hsk": 7,
+          "word_id": "hsk7_1132",
+          "meaning_vi": "nhảy vọt"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "都",
+          "pinyin": "dōu",
+          "hanviet": "Đô",
+          "hsk": 1,
+          "word_id": "hsk1_76",
+          "meaning_vi": "đều"
+        },
+        {
+          "text": "离不开",
+          "pinyin": "lí bù kāi",
+          "hanviet": "Ly Bất Khai"
+        },
+        {
+          "text": "无数",
+          "pinyin": "wúshù",
+          "hanviet": "Vô Số",
           "hsk": 5,
-          "word_id": "hsk5_1297",
-          "meaning_vi": "đi bộ, bước đi"
+          "word_id": "hsk5_1208",
+          "meaning_vi": "vô số"
+        },
+        {
+          "text": "勇敢",
+          "pinyin": "yǒnggǎn",
+          "hanviet": "Dũng Cảm",
+          "hsk": 4,
+          "word_id": "hsk4_877",
+          "meaning_vi": "dũng cảm"
+        },
+        {
+          "text": "而",
+          "pinyin": "ér",
+          "hanviet": "Nhi",
+          "hsk": 4,
+          "word_id": "hsk4_183",
+          "meaning_vi": "mà, và"
+        },
+        {
+          "text": "大胆",
+          "pinyin": "dàdǎn",
+          "hanviet": "Đại Đảm",
+          "hsk": 5,
+          "word_id": "hsk5_218",
+          "meaning_vi": "mạnh dạn, táo bạo"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "科学实验",
+          "pinyin": "kē xué shí yàn",
+          "hanviet": "Khoa Học Thực Nghiệm"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "一七五二年，富兰克林冒着生命危险在雷雨天放风筝，成功证实了雷电就是天上的电荷。",
+      "pinyin": "Yī-qī-wǔ-èr nián, Fùlánkèlín màozhe shēngmìng wēixiǎn zài léiyǔ tiān fàng fēngzheng, chénggōng zhèngshí le léidiàn jiù shì tiānshàng de diànhè.",
+      "vi": "Năm 1752, Franklin mạo hiểm thả diều trong mưa dông, chứng minh sấm sét chính là hiện tượng điện.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "一",
+          "pinyin": "yī",
+          "hanviet": "Nhất",
+          "hsk": 1,
+          "word_id": "hsk1_360",
+          "meaning_vi": "một"
+        },
+        {
+          "text": "七五",
+          "pinyin": "qī wǔ",
+          "hanviet": "Thất Ngũ"
+        },
+        {
+          "text": "二年",
+          "pinyin": "èr nián",
+          "hanviet": "Nhị Niên"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "富兰克林",
+          "pinyin": "fù lán kè lín",
+          "hanviet": "Phú Lan Khắc Lâm"
+        },
+        {
+          "text": "冒",
+          "pinyin": "mào",
+          "hanviet": "Mạo",
+          "hsk": 6,
+          "word_id": "hsk6_893",
+          "meaning_vi": "rủi ro"
+        },
+        {
+          "text": "着",
+          "pinyin": "zhe",
+          "hanviet": "Trước",
+          "hsk": 2,
+          "word_id": "hsk2_490",
+          "meaning_vi": "đang (trợ từ)"
+        },
+        {
+          "text": "生命危险",
+          "pinyin": "shēng mìng wēi xiǎn",
+          "hanviet": "Sinh Mệnh Nguy Hiểm"
         },
         {
           "text": "在",
@@ -50,98 +226,83 @@
           "meaning_vi": "ở, đang"
         },
         {
-          "text": "哪",
-          "pinyin": "nǎ",
-          "hanviet": "Nả",
+          "text": "雷雨",
+          "pinyin": "léi yǔ",
+          "hanviet": "Lôi Vũ"
+        },
+        {
+          "text": "天",
+          "pinyin": "tiān",
+          "hanviet": "Thiên",
           "hsk": 1,
-          "word_id": "hsk1_206",
-          "meaning_vi": "nào"
+          "word_id": "hsk1_573",
+          "meaning_vi": "trời (danh từ, định lượng)"
         },
         {
-          "text": "一座",
-          "pinyin": "yī zuò",
-          "hanviet": "Nhất Toạ"
-        },
-        {
-          "text": "城市",
-          "pinyin": "chéngshì",
-          "hanviet": "Thành Thị",
-          "hsk": 3,
-          "word_id": "hsk3_658",
-          "meaning_vi": "thành phố"
+          "text": "放风筝",
+          "pinyin": "fàng fēng zhēng",
+          "hanviet": "Phóng Phong Tranh"
         },
         {
           "text": "，"
         },
         {
-          "text": "街道",
-          "pinyin": "jiēdào",
-          "hanviet": "Nhai Đạo",
+          "text": "成功",
+          "pinyin": "chénggōng",
+          "hanviet": "Thành Công",
           "hsk": 4,
-          "word_id": "hsk4_379",
-          "meaning_vi": "đường phố"
+          "word_id": "hsk4_79",
+          "meaning_vi": "thành công"
         },
         {
-          "text": "两旁",
-          "pinyin": "liǎng páng",
-          "hanviet": "Lưỡng Bàng"
-        },
-        {
-          "text": "热气腾腾",
-          "pinyin": "rè qì téng téng",
-          "hanviet": "Nhiệt Khí Đằng Đằng"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "火锅店",
-          "pinyin": "huǒ guō diàn",
-          "hanviet": "Hoả Oa Điếm"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "总能",
-          "pinyin": "zǒng néng",
-          "hanviet": "Tổng Năng"
-        },
-        {
-          "text": "勾起",
-          "pinyin": "gōu qǐ",
-          "hanviet": "Câu Khởi"
-        },
-        {
-          "text": "人们",
-          "pinyin": "rén men",
-          "hanviet": "Nhân Môn"
-        },
-        {
-          "text": "大快朵颐",
-          "pinyin": "dà kuài duǒ yí",
-          "hanviet": "Đại Khoái Đoá Di"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "冲动",
-          "pinyin": "chōngdòng",
-          "hanviet": "Xung Động",
+          "text": "证实",
+          "pinyin": "zhèngshí",
+          "hanviet": "Chứng Thực",
           "hsk": 6,
-          "word_id": "hsk6_173",
-          "meaning_vi": "bốc đồng, xung động"
+          "word_id": "hsk6_1691",
+          "meaning_vi": "chứng thực, chứng minh"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "雷电",
+          "pinyin": "léi diàn",
+          "hanviet": "Lôi Điện"
+        },
+        {
+          "text": "就是",
+          "pinyin": "jiùshì",
+          "hanviet": "Tựu Thị",
+          "hsk": 4,
+          "word_id": "hsk4_408",
+          "meaning_vi": "chính là; dù… cũng"
+        },
+        {
+          "text": "天上",
+          "pinyin": "tiānshàng",
+          "hanviet": "Thiên Thướng",
+          "hsk": 5,
+          "word_id": "hsk5_1125",
+          "meaning_vi": "trên trời, bầu trời"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "电荷",
+          "pinyin": "diàn hè",
+          "hanviet": "Điện Hà"
         },
         {
           "text": "。"
@@ -149,17 +310,101 @@
       ]
     },
     {
-      "id": "s2",
-      "zh": "寒冬腊月里，三五好友围着滚烫的火锅举杯共饮，享受美味的同时也拉近了彼此的心灵。",
-      "pinyin": "Hándōng-làyuè lǐ, sān-wǔ hǎoyǒu wéizhe gǔntàng de huǒguō jǔbēi gòngyǐn, xiǎngshòu měiwèi de tóngshí yě lājìn le bǐcǐ de xīnlíng.",
-      "vi": "Vào những ngày đông buốt giá, dăm ba người bạn quây quần bên nồi lẩu sôi sùng sục nâng chén sum vầy, vừa thưởng thức mỹ vị vừa kéo gần khoảng cách tâm hồn.",
+      "id": "s3",
+      "zh": "居里夫人为了提炼出纯净的放射性元素镭，常年在简陋破旧的工棚里日夜艰苦劳作。",
+      "pinyin": "Jūlǐ fūrén wèile tíliàn chū chúnjìng de fàngshèxìng yuánsù léi, chángnián zài jiǎnlòu pòjiù de gōngpéng lǐ rìyè jiānkǔ láozuò.",
+      "vi": "Bà Curie để chiết xuất radium đã miệt mài trong nhà kho tồi tàn bất chấp phóng xạ độc hại.",
       "audio_start_ms": null,
       "audio_end_ms": null,
       "tokens": [
         {
-          "text": "寒冬腊月",
-          "pinyin": "hán dōng là yuè",
-          "hanviet": "Hàn Đông Tịch Nguyệt"
+          "text": "居里夫人",
+          "pinyin": "jū lǐ fū rén",
+          "hanviet": "Cư Lý Phu Nhân"
+        },
+        {
+          "text": "为了",
+          "pinyin": "wèile",
+          "hanviet": "Vi Liễu",
+          "hsk": 3,
+          "word_id": "hsk3_955",
+          "meaning_vi": "để (mục đích)"
+        },
+        {
+          "text": "提炼出",
+          "pinyin": "tí liàn chū",
+          "hanviet": "Đề Luyện Xuất"
+        },
+        {
+          "text": "纯净",
+          "pinyin": "chún jìng",
+          "hanviet": "Thuần Tịnh"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "放射性元素",
+          "pinyin": "fàng shè xìng yuán sù",
+          "hanviet": "Phóng Xạ Tính Nguyên Tố"
+        },
+        {
+          "text": "镭",
+          "pinyin": "léi",
+          "hanviet": "Lôi"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "常年",
+          "pinyin": "chángnián",
+          "hanviet": "Thường Niên",
+          "hsk": 6,
+          "word_id": "hsk6_127",
+          "meaning_vi": "quanh năm, hằng năm"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "简陋",
+          "pinyin": "jiǎnlòu",
+          "hanviet": "Giản Lậu",
+          "hsk": 7,
+          "word_id": "hsk7_1981",
+          "meaning_vi": "đơn sơ, sơ sài, tồi tàn"
+        },
+        {
+          "text": "破旧",
+          "pinyin": "pòjiù",
+          "hanviet": "Phá Cựu",
+          "hsk": 7,
+          "word_id": "hsk7_3124",
+          "meaning_vi": "cũ nát; rách nát; tồi tàn"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "工棚",
+          "pinyin": "gōng péng",
+          "hanviet": "Công Bằng"
         },
         {
           "text": "里",
@@ -170,27 +415,125 @@
           "meaning_vi": "bên trong"
         },
         {
+          "text": "日夜",
+          "pinyin": "rìyè",
+          "hanviet": "Nhật Dạ",
+          "hsk": 6,
+          "word_id": "hsk6_1111",
+          "meaning_vi": "ngày đêm"
+        },
+        {
+          "text": "艰苦",
+          "pinyin": "jiānkǔ",
+          "hanviet": "Gian Khổ",
+          "hsk": 5,
+          "word_id": "hsk5_564",
+          "meaning_vi": "gian khổ"
+        },
+        {
+          "text": "劳作",
+          "pinyin": "láo zuò",
+          "hanviet": "Lao Tác"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "有些实验在当时看来匪夷所思甚至疯狂，但正是这种打破常规的探索推动了文明的进步。",
+      "pinyin": "Yǒuxiē shíyàn zài dāngshí kànlái fěiyí-suǒsī shènzhì fēngkuáng, dàn zhèng shì zhè zhǒng dǎpò chángguī de tànsuǒ tuīdòng le wénmíng de jìnbù.",
+      "vi": "Có những thí nghiệm thuở ấy bị coi là điên rồ, nhưng chính sự bứt phá ấy đã thúc đẩy văn minh tiến bước.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "有些",
+          "pinyin": "yǒuxiē",
+          "hanviet": "Hữu Ta",
+          "hsk": 1,
+          "word_id": "hsk1_599",
+          "meaning_vi": "một số (đại từ, trạng từ)"
+        },
+        {
+          "text": "实验",
+          "pinyin": "shíyàn",
+          "hanviet": "Thực Nghiệm",
+          "hsk": 5,
+          "word_id": "hsk5_1022",
+          "meaning_vi": "thí nghiệm, thực nghiệm"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "当时",
+          "pinyin": "dāngshí",
+          "hanviet": "Đương Thời",
+          "hsk": 4,
+          "word_id": "hsk4_136",
+          "meaning_vi": "lúc đó, khi đó"
+        },
+        {
+          "text": "看来",
+          "pinyin": "kànlái",
+          "hanviet": "Khán Lai",
+          "hsk": 3,
+          "word_id": "hsk3_813",
+          "meaning_vi": "xem ra, có vẻ như"
+        },
+        {
+          "text": "匪夷所思",
+          "pinyin": "fěi yí suǒ sī",
+          "hanviet": "Phỉ Di Sở Tư"
+        },
+        {
+          "text": "甚至",
+          "pinyin": "shènzhì",
+          "hanviet": "Thậm Chí",
+          "hsk": 4,
+          "word_id": "hsk4_645",
+          "meaning_vi": "thậm chí"
+        },
+        {
+          "text": "疯狂",
+          "pinyin": "fēngkuáng",
+          "hanviet": "Phong Cuồng",
+          "hsk": 5,
+          "word_id": "hsk5_360",
+          "meaning_vi": "cuồng loạn, điên cuồng"
+        },
+        {
           "text": "，"
         },
         {
-          "text": "三五",
-          "pinyin": "sān wǔ",
-          "hanviet": "Tam Ngũ"
+          "text": "但",
+          "pinyin": "dàn",
+          "hanviet": "Đãn",
+          "hsk": 2,
+          "word_id": "hsk2_330",
+          "meaning_vi": "nhưng, nhưng mà"
         },
         {
-          "text": "好友",
-          "pinyin": "hǎo yǒu",
-          "hanviet": "Hảo Hữu"
+          "text": "正是",
+          "pinyin": "zhèng shì",
+          "hanviet": "Chính Thị"
         },
         {
-          "text": "围着",
-          "pinyin": "wéi zhe",
-          "hanviet": "Vi Trước"
+          "text": "这种",
+          "pinyin": "zhè zhǒng",
+          "hanviet": "Giá Chủng"
         },
         {
-          "text": "滚烫",
-          "pinyin": "gǔn tàng",
-          "hanviet": "Cổn Năng"
+          "text": "打破常规",
+          "pinyin": "dǎ pò cháng guī",
+          "hanviet": "Đả Phá Thường Quy"
         },
         {
           "text": "的",
@@ -201,41 +544,121 @@
           "meaning_vi": "của (trợ từ)"
         },
         {
-          "text": "火锅",
-          "pinyin": "huǒguō",
-          "hanviet": "Hoả Oa",
+          "text": "探索",
+          "pinyin": "tànsuǒ",
+          "hanviet": "Thám Sách",
+          "hsk": 6,
+          "word_id": "hsk6_1264",
+          "meaning_vi": "thám hiểm, tìm hiểu"
+        },
+        {
+          "text": "推动",
+          "pinyin": "tuīdòng",
+          "hanviet": "Suy Động",
           "hsk": 5,
-          "word_id": "hsk5_516",
-          "meaning_vi": "lẩu"
+          "word_id": "hsk5_1158",
+          "meaning_vi": "thúc đẩy, đẩy mạnh"
         },
         {
-          "text": "举杯",
-          "pinyin": "jǔ bēi",
-          "hanviet": "Cử Bôi"
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
         },
         {
-          "text": "共饮",
-          "pinyin": "gòng yǐn",
-          "hanviet": "Cộng Ẩm"
+          "text": "文明",
+          "pinyin": "wénmíng",
+          "hanviet": "Văn Minh",
+          "hsk": 6,
+          "word_id": "hsk6_1389",
+          "meaning_vi": "văn minh"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "进步",
+          "pinyin": "jìnbù",
+          "hanviet": "Tiến Bộ",
+          "hsk": 5,
+          "word_id": "hsk5_613",
+          "meaning_vi": "tiến bộ"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "今天，现代科学在保持大胆探索精神的同时，也更加注重科学伦理与对生命的敬畏。",
+      "pinyin": "Jīntiān, xiàndài kēxué zài bǎochí dàdǎn tànsuǒ jīngshén de tóngshí, yě gèngjiā zhùzhòng kēxué lúnlǐ yǔ duì shēngmìng de jìngwèi.",
+      "vi": "Ngày nay, khoa học vừa đề cao tinh thần khám phá, vừa tuân thủ đạo đức và trân trọng sự sống.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "今天",
+          "pinyin": "jīntiān",
+          "hanviet": "Kim Thiên",
+          "hsk": 1,
+          "word_id": "hsk1_144",
+          "meaning_vi": "hôm nay"
         },
         {
           "text": "，"
         },
         {
-          "text": "享受",
-          "pinyin": "xiǎngshòu",
-          "hanviet": "Hưởng Thụ",
-          "hsk": 5,
-          "word_id": "hsk5_1255",
-          "meaning_vi": "hưởng thụ"
+          "text": "现代科学",
+          "pinyin": "xiàn dài kē xué",
+          "hanviet": "Hiện Đại Khoa Học"
         },
         {
-          "text": "美味",
-          "pinyin": "měiwèi",
-          "hanviet": "Mỹ Vị",
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "保持",
+          "pinyin": "bǎochí",
+          "hanviet": "Bảo Trì",
           "hsk": 5,
-          "word_id": "hsk5_759",
-          "meaning_vi": "món ngon; thơm ngon, mỹ vị"
+          "word_id": "hsk5_24",
+          "meaning_vi": "duy trì, giữ vững"
+        },
+        {
+          "text": "大胆",
+          "pinyin": "dàdǎn",
+          "hanviet": "Đại Đảm",
+          "hsk": 5,
+          "word_id": "hsk5_218",
+          "meaning_vi": "mạnh dạn, táo bạo"
+        },
+        {
+          "text": "探索",
+          "pinyin": "tànsuǒ",
+          "hanviet": "Thám Sách",
+          "hsk": 6,
+          "word_id": "hsk6_1264",
+          "meaning_vi": "thám hiểm, tìm hiểu"
+        },
+        {
+          "text": "精神",
+          "pinyin": "jīngshen",
+          "hanviet": "Tinh Thần",
+          "hsk": 5,
+          "word_id": "hsk5_623",
+          "meaning_vi": "tinh thần; minh mẫn, hoạt bát"
         },
         {
           "text": "的",
@@ -254,6 +677,9 @@
           "meaning_vi": "đồng thời"
         },
         {
+          "text": "，"
+        },
+        {
           "text": "也",
           "pinyin": "yě",
           "hanviet": "Dã",
@@ -262,190 +688,60 @@
           "meaning_vi": "cũng"
         },
         {
-          "text": "拉近",
-          "pinyin": "lā jìn",
-          "hanviet": "Lạp Cận"
-        },
-        {
-          "text": "了",
-          "pinyin": "le",
-          "hanviet": "Liễu",
-          "hsk": 1,
-          "word_id": "hsk1_535",
-          "meaning_vi": "rồi (trợ từ)"
-        },
-        {
-          "text": "彼此",
-          "pinyin": "bǐcǐ",
-          "hanviet": "Bỉ Thử",
-          "hsk": 5,
-          "word_id": "hsk5_45",
-          "meaning_vi": "lẫn nhau, hai bên"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "心灵",
-          "pinyin": "xīnlíng",
-          "hanviet": "Tâm Linh",
-          "hsk": 6,
-          "word_id": "hsk6_1463",
-          "meaning_vi": "tâm hồn"
-        },
-        {
-          "text": "。"
-        }
-      ]
-    },
-    {
-      "id": "s3",
-      "zh": "吃火锅不仅是一种饮食方式，更被公认为中国最温暖、最富有烟火气的聚餐文化。",
-      "pinyin": "Chī huǒguō bùjǐn shì yì zhǒng yǐnshí fāngshì, gèng bèi gōngrèn wéi Zhōngguó zuì wēnnuǎn, zuì fùyǒu yānhuǒqì de jùcān wénhuà.",
-      "vi": "Ăn lẩu không chỉ là một cách thức ẩm thực, mà còn được công nhận là nét văn hóa sum họp ấm áp và đậm đà phong vị đời thường nhất của người Trung Quốc.",
-      "audio_start_ms": null,
-      "audio_end_ms": null,
-      "tokens": [
-        {
-          "text": "吃火锅",
-          "pinyin": "chī huǒ guō",
-          "hanviet": "Cật Hoả Oa"
-        },
-        {
-          "text": "不仅",
-          "pinyin": "bùjǐn",
-          "hanviet": "Bất Cận",
+          "text": "更加",
+          "pinyin": "gèngjiā",
+          "hanviet": "Canh Gia",
           "hsk": 4,
-          "word_id": "hsk4_55",
-          "meaning_vi": "không chỉ"
+          "word_id": "hsk4_249",
+          "meaning_vi": "càng, càng thêm"
         },
         {
-          "text": "是",
-          "pinyin": "shì",
-          "hanviet": "Thị",
-          "hsk": 1,
-          "word_id": "hsk1_266",
-          "meaning_vi": "là"
-        },
-        {
-          "text": "一种",
-          "pinyin": "yī zhǒng",
-          "hanviet": "Nhất Chủng"
-        },
-        {
-          "text": "饮食",
-          "pinyin": "yǐnshí",
-          "hanviet": "Ẩm Thực",
+          "text": "注重",
+          "pinyin": "zhùzhòng",
+          "hanviet": "Chú Trọng",
           "hsk": 5,
-          "word_id": "hsk5_1375",
-          "meaning_vi": "ăn uống"
+          "word_id": "hsk5_1553",
+          "meaning_vi": "chú ý đến"
         },
         {
-          "text": "方式",
-          "pinyin": "fāngshì",
-          "hanviet": "Phương Thức",
+          "text": "科学",
+          "pinyin": "kēxué",
+          "hanviet": "Khoa Học",
           "hsk": 4,
-          "word_id": "hsk4_194",
-          "meaning_vi": "phương thức, cách thức"
+          "word_id": "hsk4_426",
+          "meaning_vi": "khoa học"
         },
         {
-          "text": "，"
-        },
-        {
-          "text": "更",
-          "pinyin": "gèng",
-          "hanviet": "Canh",
-          "hsk": 3,
-          "word_id": "hsk3_737",
-          "meaning_vi": "càng, hơn"
-        },
-        {
-          "text": "被",
-          "pinyin": "bèi",
-          "hanviet": "Bị",
-          "hsk": 3,
-          "word_id": "hsk3_619",
-          "meaning_vi": "bị (trợ từ bị động)"
-        },
-        {
-          "text": "公认",
-          "pinyin": "gōngrèn",
-          "hanviet": "Công Nhận",
-          "hsk": 6,
-          "word_id": "hsk6_460",
-          "meaning_vi": "được công nhận chung"
-        },
-        {
-          "text": "为",
-          "pinyin": "wèi",
-          "hanviet": "Vi",
-          "hsk": 3,
-          "word_id": "hsk3_954",
-          "meaning_vi": "vì, cho"
-        },
-        {
-          "text": "中国",
-          "pinyin": "Zhōngguó",
-          "hanviet": "Trung Quốc",
-          "hsk": 1,
-          "word_id": "hsk1_610",
-          "meaning_vi": "trung Quốc"
-        },
-        {
-          "text": "最",
-          "pinyin": "zuì",
-          "hanviet": "Tối",
-          "hsk": 2,
-          "word_id": "hsk2_498",
-          "meaning_vi": "nhất"
-        },
-        {
-          "text": "温暖",
-          "pinyin": "wēnnuǎn",
-          "hanviet": "Ôn Noãn",
-          "hsk": 5,
-          "word_id": "hsk5_1199",
-          "meaning_vi": "ấm áp"
-        },
-        {
-          "text": "、"
-        },
-        {
-          "text": "最",
-          "pinyin": "zuì",
-          "hanviet": "Tối",
-          "hsk": 2,
-          "word_id": "hsk2_498",
-          "meaning_vi": "nhất"
-        },
-        {
-          "text": "富有",
-          "pinyin": "fùyǒu",
-          "hanviet": "Phú Hữu",
-          "hsk": 5,
-          "word_id": "hsk5_374",
-          "meaning_vi": "giàu có"
-        },
-        {
-          "text": "烟火",
-          "pinyin": "yānhuǒ",
-          "hanviet": "Yên Hoả",
+          "text": "伦理",
+          "pinyin": "lúnlǐ",
+          "hanviet": "Luân Lý",
           "hsk": 7,
-          "word_id": "hsk7_4721",
-          "meaning_vi": "khói lửa nhân gian; khói lửa; bếp núc"
+          "word_id": "hsk7_2704",
+          "meaning_vi": "luân lý, đạo đức"
         },
         {
-          "text": "气",
-          "pinyin": "qì",
-          "hanviet": "Khí",
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
           "hsk": 4,
-          "word_id": "hsk4_570",
-          "meaning_vi": "khí, hơi; tức giận; làm tức"
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "对",
+          "pinyin": "duì",
+          "hanviet": "Đối",
+          "hsk": 1,
+          "word_id": "hsk1_79",
+          "meaning_vi": "đối với, hướng về (giới từ)"
+        },
+        {
+          "text": "生命",
+          "pinyin": "shēngmìng",
+          "hanviet": "Sinh Mệnh",
+          "hsk": 4,
+          "word_id": "hsk4_648",
+          "meaning_vi": "sinh mệnh, sự sống"
         },
         {
           "text": "的",
@@ -456,673 +752,12 @@
           "meaning_vi": "của (trợ từ)"
         },
         {
-          "text": "聚餐",
-          "pinyin": "jùcān",
-          "hanviet": "Tụ Xan",
-          "hsk": 4,
-          "word_id": "hsk4_414",
-          "meaning_vi": "liên hoan, ăn uống tập thể"
-        },
-        {
-          "text": "文化",
-          "pinyin": "wénhuà",
-          "hanviet": "Văn Hóa",
-          "hsk": 3,
-          "word_id": "hsk3_957",
-          "meaning_vi": "văn hóa"
-        },
-        {
-          "text": "。"
-        }
-      ]
-    },
-    {
-      "id": "s4",
-      "zh": "考古发现表明，早在商周时期的青铜器皿中，就已经出现了底部可以放置炭火加热的微型青铜温鼎。",
-      "pinyin": "Kǎogǔ fāxiàn biǎomíng, zǎo zài Shāng-Zhōu shíqī de qīngtóng qìmǐn zhōng, jiù yǐjīng chūxiàn le dǐbù kěyǐ fàngzhì tànhuǒ jiārè de wēixíng qīngtóng wēndǐng.",
-      "vi": "Phát hiện khảo cổ cho thấy, ngay từ các đồ đồng thời Thương Chu đã xuất hiện chiếc vạc đồng nhỏ có đáy đựng than củi sưởi nhiệt.",
-      "audio_start_ms": null,
-      "audio_end_ms": null,
-      "tokens": [
-        {
-          "text": "考古",
-          "pinyin": "kǎogǔ",
-          "hanviet": "Khảo Cổ",
-          "hsk": 6,
-          "word_id": "hsk6_776",
-          "meaning_vi": "khảo cổ"
-        },
-        {
-          "text": "发现",
-          "pinyin": "fāxiàn",
-          "hanviet": "Phát Hiện",
-          "hsk": 3,
-          "word_id": "hsk3_712",
-          "meaning_vi": "phát hiện"
-        },
-        {
-          "text": "表明",
-          "pinyin": "biǎomíng",
-          "hanviet": "Biểu Minh",
-          "hsk": 5,
-          "word_id": "hsk5_64",
-          "meaning_vi": "chứng tỏ, biểu thị rõ"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "早",
-          "pinyin": "zǎo",
-          "hanviet": "Tảo",
-          "hsk": 1,
-          "word_id": "hsk1_602",
-          "meaning_vi": "sớm"
-        },
-        {
-          "text": "在",
-          "pinyin": "zài",
-          "hanviet": "Tại",
-          "hsk": 1,
-          "word_id": "hsk1_390",
-          "meaning_vi": "ở, đang"
-        },
-        {
-          "text": "商周",
-          "pinyin": "shāng zhōu",
-          "hanviet": "Thương Chu"
-        },
-        {
-          "text": "时期",
-          "pinyin": "shíqī",
-          "hanviet": "Thời Kỳ",
-          "hsk": 5,
-          "word_id": "hsk5_1016",
-          "meaning_vi": "thời kỳ"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "青铜",
-          "pinyin": "qīng tóng",
-          "hanviet": "Thanh Đồng"
-        },
-        {
-          "text": "器皿",
-          "pinyin": "qì mǐn",
-          "hanviet": "Khí Mãnh"
-        },
-        {
-          "text": "中",
-          "pinyin": "zhōng",
-          "hanviet": "Trung",
-          "hsk": 3,
-          "word_id": "hsk3_1060",
-          "meaning_vi": "giữa, trong"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "就",
-          "pinyin": "jiù",
-          "hanviet": "Tựu",
-          "hsk": 2,
-          "word_id": "hsk2_376",
-          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)"
-        },
-        {
-          "text": "已经",
-          "pinyin": "yǐjīng",
-          "hanviet": "Dĩ Kinh",
-          "hsk": 2,
-          "word_id": "hsk2_472",
-          "meaning_vi": "đã"
-        },
-        {
-          "text": "出现",
-          "pinyin": "chūxiàn",
-          "hanviet": "Xuất Hiện",
-          "hsk": 4,
-          "word_id": "hsk4_90",
-          "meaning_vi": "xuất hiện"
-        },
-        {
-          "text": "了",
-          "pinyin": "le",
-          "hanviet": "Liễu",
-          "hsk": 1,
-          "word_id": "hsk1_535",
-          "meaning_vi": "rồi (trợ từ)"
-        },
-        {
-          "text": "底部",
-          "pinyin": "dǐ bù",
-          "hanviet": "Để Bộ"
-        },
-        {
-          "text": "可以",
-          "pinyin": "kěyǐ",
-          "hanviet": "Khả Dĩ",
-          "hsk": 1,
-          "word_id": "hsk1_160",
-          "meaning_vi": "có thể, được"
-        },
-        {
-          "text": "放置",
-          "pinyin": "fàngzhì",
-          "hanviet": "Phóng Trí",
+          "text": "敬畏",
+          "pinyin": "jìngwèi",
+          "hanviet": "Kính Uý",
           "hsk": 7,
-          "word_id": "hsk7_1120",
-          "meaning_vi": "đặt, để, bố trí"
-        },
-        {
-          "text": "炭火",
-          "pinyin": "tàn huǒ",
-          "hanviet": "Thán Hoả"
-        },
-        {
-          "text": "加热",
-          "pinyin": "jiārè",
-          "hanviet": "Gia Nhiệt",
-          "hsk": 5,
-          "word_id": "hsk5_554",
-          "meaning_vi": "hâm nóng, làm nóng, gia nhiệt"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "微型",
-          "pinyin": "wēixíng",
-          "hanviet": "Vi Hình",
-          "hsk": 7,
-          "word_id": "hsk7_4235",
-          "meaning_vi": "siêu nhỏ; thu nhỏ; mini"
-        },
-        {
-          "text": "青铜",
-          "pinyin": "qīng tóng",
-          "hanviet": "Thanh Đồng"
-        },
-        {
-          "text": "温鼎",
-          "pinyin": "wēn dǐng",
-          "hanviet": "Ôn Đỉnh"
-        },
-        {
-          "text": "。"
-        }
-      ]
-    },
-    {
-      "id": "s5",
-      "zh": "到了清代，火锅甚至登上了皇家国宴的大雅之堂，乾隆皇帝下江南时就曾多次大设火锅千叟宴。",
-      "pinyin": "Dào le Qīngdài, huǒguō shènzhì dēngshàng le huángjiā guóyàn de dàyǎ-zhītáng, Qiánlóng huángdì xià Jiāngnán shí jiù céng duō cì dà shè huǒguō qiānshǒuyàn.",
-      "vi": "Đến thời nhà Thanh, lẩu thậm chí bước lên chốn quốc yến hoàng gia cao quý, hoàng đế Càn Long khi vi hành Giang Nam từng mở đại tiệc lẩu chiêu đãi ngàn bô lão.",
-      "audio_start_ms": null,
-      "audio_end_ms": null,
-      "tokens": [
-        {
-          "text": "到",
-          "pinyin": "dào",
-          "hanviet": "Đáo",
-          "hsk": 1,
-          "word_id": "hsk1_59",
-          "meaning_vi": "đến"
-        },
-        {
-          "text": "了",
-          "pinyin": "le",
-          "hanviet": "Liễu",
-          "hsk": 1,
-          "word_id": "hsk1_535",
-          "meaning_vi": "rồi (trợ từ)"
-        },
-        {
-          "text": "清代",
-          "pinyin": "qīng dài",
-          "hanviet": "Thanh Đại"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "火锅",
-          "pinyin": "huǒguō",
-          "hanviet": "Hoả Oa",
-          "hsk": 5,
-          "word_id": "hsk5_516",
-          "meaning_vi": "lẩu"
-        },
-        {
-          "text": "甚至",
-          "pinyin": "shènzhì",
-          "hanviet": "Thậm Chí",
-          "hsk": 4,
-          "word_id": "hsk4_645",
-          "meaning_vi": "thậm chí"
-        },
-        {
-          "text": "登上",
-          "pinyin": "dēng shàng",
-          "hanviet": "Đăng Thướng"
-        },
-        {
-          "text": "了",
-          "pinyin": "le",
-          "hanviet": "Liễu",
-          "hsk": 1,
-          "word_id": "hsk1_535",
-          "meaning_vi": "rồi (trợ từ)"
-        },
-        {
-          "text": "皇家",
-          "pinyin": "huáng jiā",
-          "hanviet": "Hoàng Gia"
-        },
-        {
-          "text": "国宴",
-          "pinyin": "guó yàn",
-          "hanviet": "Quốc Yến"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "大雅之堂",
-          "pinyin": "dà yǎ zhī táng",
-          "hanviet": "Đại Nhã Chi Đường"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "乾隆皇帝",
-          "pinyin": "qián lóng huáng dì",
-          "hanviet": "Càn Long Hoàng Đế"
-        },
-        {
-          "text": "下",
-          "pinyin": "xià",
-          "hanviet": "Hạ",
-          "hsk": 1,
-          "word_id": "hsk1_581",
-          "meaning_vi": "dưới"
-        },
-        {
-          "text": "江南",
-          "pinyin": "jiāng nán",
-          "hanviet": "Giang Nam"
-        },
-        {
-          "text": "时",
-          "pinyin": "shí",
-          "hanviet": "Thời",
-          "hsk": 2,
-          "word_id": "hsk2_431",
-          "meaning_vi": "thời gian (danh từ, số lượng)"
-        },
-        {
-          "text": "就",
-          "pinyin": "jiù",
-          "hanviet": "Tựu",
-          "hsk": 2,
-          "word_id": "hsk2_376",
-          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)"
-        },
-        {
-          "text": "曾多次",
-          "pinyin": "céng duō cì",
-          "hanviet": "Tằng Đa Thứ"
-        },
-        {
-          "text": "大设",
-          "pinyin": "dà shè",
-          "hanviet": "Đại Thiết"
-        },
-        {
-          "text": "火锅",
-          "pinyin": "huǒguō",
-          "hanviet": "Hoả Oa",
-          "hsk": 5,
-          "word_id": "hsk5_516",
-          "meaning_vi": "lẩu"
-        },
-        {
-          "text": "千叟宴",
-          "pinyin": "qiān sǒu yàn",
-          "hanviet": "Thiên Tẩu Yến"
-        },
-        {
-          "text": "。"
-        }
-      ]
-    },
-    {
-      "id": "s6",
-      "zh": "从北京传统的铜锅涮羊肉，到四川重庆麻辣鲜香的红油九宫格，各地的火锅各有独特的风味。",
-      "pinyin": "Cóng Běijīng chuántǒng de tóngguō shuànyángròu, dào Sìchuān Chóngqìng málà xiānxiāng de hóngyóu jiǔgōnggé, gèdì de huǒguō gè yǒu dútè de fēngwèi.",
-      "vi": "Từ nồi đồng nhúng thịt cừu truyền thống của Bắc Kinh, đến nồi lẩu chín ô dầu đỏ cay tê thơm nồng của Tứ Xuyên Trùng Khánh, lẩu mỗi miền mang một phong vị độc đáo riêng.",
-      "audio_start_ms": null,
-      "audio_end_ms": null,
-      "tokens": [
-        {
-          "text": "从",
-          "pinyin": "cóng",
-          "hanviet": "Tòng",
-          "hsk": 2,
-          "word_id": "hsk2_324",
-          "meaning_vi": "từ"
-        },
-        {
-          "text": "北京",
-          "pinyin": "ba",
-          "hanviet": "Ba",
-          "hsk": 1,
-          "word_id": "hsk1_5",
-          "meaning_vi": "nhé (trợ từ)"
-        },
-        {
-          "text": "传统",
-          "pinyin": "chuántǒng",
-          "hanviet": "Truyền Thống",
-          "hsk": 5,
-          "word_id": "hsk5_187",
-          "meaning_vi": "truyền thống"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "铜锅",
-          "pinyin": "tóng guō",
-          "hanviet": "Đồng Oa"
-        },
-        {
-          "text": "涮羊肉",
-          "pinyin": "shuàn yáng ròu",
-          "hanviet": "Xuyến Dương Nhục"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "到",
-          "pinyin": "dào",
-          "hanviet": "Đáo",
-          "hsk": 1,
-          "word_id": "hsk1_59",
-          "meaning_vi": "đến"
-        },
-        {
-          "text": "四川",
-          "pinyin": "sì chuān",
-          "hanviet": "Tứ Xuyên"
-        },
-        {
-          "text": "重庆",
-          "pinyin": "chóng qìng",
-          "hanviet": "Trùng Khánh"
-        },
-        {
-          "text": "麻辣",
-          "pinyin": "málà",
-          "hanviet": "Ma Lạt",
-          "hsk": 7,
-          "word_id": "hsk7_2723",
-          "meaning_vi": "cay nồng, cay tê"
-        },
-        {
-          "text": "鲜香",
-          "pinyin": "xiān xiāng",
-          "hanviet": "Tiên Hương"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "红油",
-          "pinyin": "hóng yóu",
-          "hanviet": "Hồng Dầu"
-        },
-        {
-          "text": "九宫格",
-          "pinyin": "jiǔ gōng gé",
-          "hanviet": "Cửu Cung Cách"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "各地",
-          "pinyin": "gèdì",
-          "hanviet": "Các Địa",
-          "hsk": 4,
-          "word_id": "hsk4_245",
-          "meaning_vi": "các nơi"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "火锅",
-          "pinyin": "huǒguō",
-          "hanviet": "Hoả Oa",
-          "hsk": 5,
-          "word_id": "hsk5_516",
-          "meaning_vi": "lẩu"
-        },
-        {
-          "text": "各有",
-          "pinyin": "gè yǒu",
-          "hanviet": "Các Hữu"
-        },
-        {
-          "text": "独特",
-          "pinyin": "dútè",
-          "hanviet": "Độc Đặc",
-          "hsk": 5,
-          "word_id": "hsk5_296",
-          "meaning_vi": "độc đáo"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "风味",
-          "pinyin": "fēngwèi",
-          "hanviet": "Phong Vị",
-          "hsk": 7,
-          "word_id": "hsk7_1210",
-          "meaning_vi": "phong vị, hương vị đặc trưng"
-        },
-        {
-          "text": "。"
-        }
-      ]
-    },
-    {
-      "id": "s7",
-      "zh": "一锅红汤沸腾翻滚，包容万物食材，正如平凡生活中滚烫而真实的美好人间。",
-      "pinyin": "Yì guō hóngtāng fèiténg fāngǔn, bāoróng wànwù shícái, zhèng rú píngfán shēnghuó zhōng gǔntàng ér zhēnshí de měihǎo rénjiān.",
-      "vi": "Một nồi nước dùng sôi sục đỏ tươi, dung nạp vạn vật thực phẩm tươi ngon, hệt như cuộc đời bình dị ấm nồng và chân thực giữa nhân gian.",
-      "audio_start_ms": null,
-      "audio_end_ms": null,
-      "tokens": [
-        {
-          "text": "一锅",
-          "pinyin": "yī guō",
-          "hanviet": "Nhất Oa"
-        },
-        {
-          "text": "红",
-          "pinyin": "hóng",
-          "hanviet": "Hồng",
-          "hsk": 5,
-          "word_id": "hsk5_483",
-          "meaning_vi": "đỏ"
-        },
-        {
-          "text": "汤",
-          "pinyin": "tāng",
-          "hanviet": "Thang",
-          "hsk": 4,
-          "word_id": "hsk4_720",
-          "meaning_vi": "canh, súp"
-        },
-        {
-          "text": "沸腾",
-          "pinyin": "fèiténg",
-          "hanviet": "Phí Đằng",
-          "hsk": 7,
-          "word_id": "hsk7_1145",
-          "meaning_vi": "sôi, sôi sục"
-        },
-        {
-          "text": "翻滚",
-          "pinyin": "fān gǔn",
-          "hanviet": "Phiên Cổn"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "包容",
-          "pinyin": "bāoróng",
-          "hanviet": "Bao Dung",
-          "hsk": 7,
-          "word_id": "hsk7_102",
-          "meaning_vi": "bao dung, độ lượng khoan dung"
-        },
-        {
-          "text": "万物",
-          "pinyin": "wànwù",
-          "hanviet": "Vạn Vật",
-          "hsk": 6,
-          "word_id": "hsk6_1359",
-          "meaning_vi": "vạn vật, muôn loài"
-        },
-        {
-          "text": "食材",
-          "pinyin": "shí cái",
-          "hanviet": "Thực Tài"
-        },
-        {
-          "text": "，"
-        },
-        {
-          "text": "正如",
-          "pinyin": "zhèngrú",
-          "hanviet": "Chinh Như",
-          "hsk": 5,
-          "word_id": "hsk5_1496",
-          "meaning_vi": "đúng như, giống như"
-        },
-        {
-          "text": "平凡",
-          "pinyin": "píngfán",
-          "hanviet": "Bình Phàm",
-          "hsk": 6,
-          "word_id": "hsk6_998",
-          "meaning_vi": "bình thường, tầm thường"
-        },
-        {
-          "text": "生活",
-          "pinyin": "shēnghuó",
-          "hanviet": "Sinh Hoạt",
-          "hsk": 3,
-          "word_id": "hsk3_911",
-          "meaning_vi": "sinh hoạt, cuộc sống"
-        },
-        {
-          "text": "中",
-          "pinyin": "zhōng",
-          "hanviet": "Trung",
-          "hsk": 3,
-          "word_id": "hsk3_1060",
-          "meaning_vi": "giữa, trong"
-        },
-        {
-          "text": "滚烫",
-          "pinyin": "gǔn tàng",
-          "hanviet": "Cổn Năng"
-        },
-        {
-          "text": "而",
-          "pinyin": "ér",
-          "hanviet": "Nhi",
-          "hsk": 4,
-          "word_id": "hsk4_183",
-          "meaning_vi": "mà, và"
-        },
-        {
-          "text": "真实",
-          "pinyin": "zhēnshí",
-          "hanviet": "Chân Thật",
-          "hsk": 5,
-          "word_id": "hsk5_1484",
-          "meaning_vi": "chân thực"
-        },
-        {
-          "text": "的",
-          "pinyin": "de",
-          "hanviet": "Đích",
-          "hsk": 1,
-          "word_id": "hsk1_60",
-          "meaning_vi": "của (trợ từ)"
-        },
-        {
-          "text": "美好",
-          "pinyin": "měihǎo",
-          "hanviet": "Mỹ Hảo",
-          "hsk": 4,
-          "word_id": "hsk4_501",
-          "meaning_vi": "tốt đẹp"
-        },
-        {
-          "text": "人间",
-          "pinyin": "rénjiān",
-          "hanviet": "Nhân Gian",
-          "hsk": 7,
-          "word_id": "hsk7_3406",
-          "meaning_vi": "nhân gian, trần gian"
+          "word_id": "hsk7_2212",
+          "meaning_vi": "kính sợ, tôn kính nể sợ"
         },
         {
           "text": "。"
@@ -1131,45 +766,45 @@
     }
   ],
   "vocabulary_spotlight": [
-    "hsk5_516",
-    "hsk3_658",
-    "hsk4_773",
-    "hsk3_957",
-    "hsk4_784"
+    "hsk4_426",
+    "hsk5_1022",
+    "hsk4_770",
+    "hsk4_79",
+    "hsk5_921"
   ],
   "quiz": [
     {
       "id": "q1",
-      "question_vi": "Hiện vật khảo cổ nào chứng minh nguồn gốc ban sơ của nồi lẩu từ thời Thương Chu?",
+      "question_vi": "Franklin thả diều trong mưa dông để chứng minh điều gì?",
       "options_vi": [
-        "Vạc đồng nhỏ có đáy đựng than sưởi ấm (温鼎)",
-        "Chảo gang lớn chiên xào",
-        "Bát đất nung nấu cháo"
+        "Sấm sét chính là dòng điện tự nhiên",
+        "Gió mùa hè rất mạnh",
+        "Diều bay cao nhất"
       ],
       "answer": 0,
-      "explanation_vi": "Trong bài viết: 出现了底部可以放置炭火加热的微型青铜温鼎."
+      "explanation_vi": "Chứng minh sấm sét tự nhiên cùng bản chất với dòng điện."
     },
     {
       "id": "q2",
-      "question_vi": "Vị hoàng đế nhà Thanh nào từng tổ chức đại tiệc lẩu chiêu đãi ngàn bô lão?",
+      "question_vi": "Bà Curie đã kiên trì nghiên cứu tìm ra nguyên tố nào?",
       "options_vi": [
-        "Vua Càn Long (乾隆皇帝)",
-        "Vua Khang Hy",
-        "Vua Ung Chính"
+        "Nguyên tố phóng xạ Radium",
+        "Vàng ròng",
+        "Sắt"
       ],
       "answer": 0,
-      "explanation_vi": "Trong bài viết: 乾隆皇帝下江南时就曾多次大设火锅千叟宴."
+      "explanation_vi": "Chiết xuất radium và polonium mở ra kỷ nguyên hạt nhân."
     },
     {
       "id": "q3",
-      "question_vi": "Món lẩu truyền thống của Bắc Kinh nổi tiếng với cách ăn nào?",
+      "question_vi": "Thí nghiệm khoa học ngày nay cần kết hợp với yếu tố nào?",
       "options_vi": [
-        "Nồi đồng nhúng thịt cừu (铜锅涮羊肉)",
-        "Lẩu cá cay chín ô",
-        "Lẩu nấm gà tiềm thuốc bắc"
+        "Đạo đức khoa học và tôn trọng sự sống",
+        "Chỉ cần nhanh chóng",
+        "Không cần quy tắc"
       ],
       "answer": 0,
-      "explanation_vi": "Trong bài viết: 从北京传统的铜锅涮羊肉，到四川重庆麻辣鲜香..."
+      "explanation_vi": "Cần gắn liền với luân lý đạo đức và an toàn sinh học."
     }
   ]
 }

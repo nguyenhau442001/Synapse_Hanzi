@@ -1,0 +1,881 @@
+{
+  "id": "wanwu_story_021",
+  "chapter_no": 21,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 1,
+  "book_page_start": 209,
+  "book_page_end": 219,
+  "page_display": "Trang 209 - 219",
+  "title": {
+    "zh": "诺贝尔科学奖：获奖是非之争一直存在",
+    "vi": "Giải thưởng Nobel khoa học: Tranh cãi chưa bao giờ dứt"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🏅",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_021.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_021.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 209 - 219 · Đằng sau tấm huy chương danh giá nhất hành tinh: di chúc của Alfred Nobel và những tranh luận về đóng góp khoa học cá nhân và tập thể.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "诺贝尔奖被公认为人类科技领域荣誉最高的桂冠，激励着无数科学家攀登知识的高峰。",
+      "pinyin": "Nuòbèi'ěr Jiǎng bèi gōngrèn wéi rénlèi kējì lǐngyù róngyù zuì gāo de guìguān, jīlì zhe wúshù kēxuéjiā pāndēng zhīshi de gāofēng.",
+      "vi": "Giải Nobel được xem là vinh quang tột đỉnh trong khoa học, thôi thúc bao nhà trí thức chinh phục đỉnh cao tri thức.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "诺贝尔奖",
+          "pinyin": "nuò bèi ěr jiǎng",
+          "hanviet": "Nặc Bối Nhĩ Thưởng"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "公认",
+          "pinyin": "gōngrèn",
+          "hanviet": "Công Nhận",
+          "hsk": 6,
+          "word_id": "hsk6_460",
+          "meaning_vi": "được công nhận chung"
+        },
+        {
+          "text": "为",
+          "pinyin": "wèi",
+          "hanviet": "Vi",
+          "hsk": 3,
+          "word_id": "hsk3_954",
+          "meaning_vi": "vì, cho"
+        },
+        {
+          "text": "人类",
+          "pinyin": "rénlèi",
+          "hanviet": "Nhân Loại",
+          "hsk": 5,
+          "word_id": "hsk5_921",
+          "meaning_vi": "loài người, nhân loại"
+        },
+        {
+          "text": "科技领域",
+          "pinyin": "kē jì lǐng yù",
+          "hanviet": "Khoa Kỹ Lãnh Vực"
+        },
+        {
+          "text": "荣誉",
+          "pinyin": "róngyù",
+          "hanviet": "Vinh Dự",
+          "hsk": 6,
+          "word_id": "hsk6_1117",
+          "meaning_vi": "danh dự, vinh dự"
+        },
+        {
+          "text": "最高",
+          "pinyin": "zuì gāo",
+          "hanviet": "Tối Cao"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "桂冠",
+          "pinyin": "guì guān",
+          "hanviet": "Quế Quán"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "激励",
+          "pinyin": "jīlì",
+          "hanviet": "Kích Lệ",
+          "hsk": 6,
+          "word_id": "hsk6_609",
+          "meaning_vi": "khích lệ, động viên, cổ vũ"
+        },
+        {
+          "text": "着",
+          "pinyin": "zhe",
+          "hanviet": "Trước",
+          "hsk": 2,
+          "word_id": "hsk2_490",
+          "meaning_vi": "đang (trợ từ)"
+        },
+        {
+          "text": "无数",
+          "pinyin": "wúshù",
+          "hanviet": "Vô Số",
+          "hsk": 5,
+          "word_id": "hsk5_1208",
+          "meaning_vi": "vô số"
+        },
+        {
+          "text": "科学家",
+          "pinyin": "kē xué jiā",
+          "hanviet": "Khoa Học Gia"
+        },
+        {
+          "text": "攀登",
+          "pinyin": "pāndēng",
+          "hanviet": "Phan Đăng",
+          "hsk": 7,
+          "word_id": "hsk7_3011",
+          "meaning_vi": "leo lên, chinh phục (núi)"
+        },
+        {
+          "text": "知识",
+          "pinyin": "zhīshi",
+          "hanviet": "Tri Thức",
+          "hsk": 4,
+          "word_id": "hsk4_944",
+          "meaning_vi": "kiến thức"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "高峰",
+          "pinyin": "gāofēng",
+          "hanviet": "Cao Phong",
+          "hsk": 6,
+          "word_id": "hsk6_434",
+          "meaning_vi": "cao điểm, đỉnh cao"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "发明炸药积累巨额财富的瑞典科学家诺贝尔立下遗嘱，将全部财产设立奖项奖励造福人类的杰出贡献者。",
+      "pinyin": "Fāmíng zhàyào jīlěi jù'é cáifù de Ruìdiǎn kēxuéjiā Nuòbèi'ěr lìxià yízhǔ, jiāng quánbù cáichǎn shèlì jiǎngxiàng jiǎnglì zàofú rénlèi de jiéchū gòngxiànzhě.",
+      "vi": "Nhà sáng chế thuốc nổ Alfred Nobel đã lập di chúc hiến toàn bộ tài sản làm quỹ trao thưởng cho người cống hiến cho nhân loại.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "发明",
+          "pinyin": "fāmíng",
+          "hanviet": "Phát Minh",
+          "hsk": 5,
+          "word_id": "hsk5_320",
+          "meaning_vi": "phát minh"
+        },
+        {
+          "text": "炸药",
+          "pinyin": "zhàyào",
+          "hanviet": "Trác Dược",
+          "hsk": 7,
+          "word_id": "hsk7_5140",
+          "meaning_vi": "thuốc nổ"
+        },
+        {
+          "text": "积累",
+          "pinyin": "jīlěi",
+          "hanviet": "Tích Lũy",
+          "hsk": 4,
+          "word_id": "hsk4_324",
+          "meaning_vi": "tích lũy"
+        },
+        {
+          "text": "巨额",
+          "pinyin": "jù’é",
+          "hanviet": "Cự Ngạch",
+          "hsk": 7,
+          "word_id": "hsk7_2259",
+          "meaning_vi": "số tiền khổng lồ, số lượng cực lớn"
+        },
+        {
+          "text": "财富",
+          "pinyin": "cáifù",
+          "hanviet": "Tài Phú",
+          "hsk": 6,
+          "word_id": "hsk6_95",
+          "meaning_vi": "của cải, tài sản"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "瑞典",
+          "pinyin": "ruì diǎn",
+          "hanviet": "Thuỵ Điển"
+        },
+        {
+          "text": "科学家",
+          "pinyin": "kē xué jiā",
+          "hanviet": "Khoa Học Gia"
+        },
+        {
+          "text": "诺贝尔",
+          "pinyin": "nuò bèi ěr",
+          "hanviet": "Nặc Bối Nhĩ"
+        },
+        {
+          "text": "立下",
+          "pinyin": "lì xià",
+          "hanviet": "Lập Hạ"
+        },
+        {
+          "text": "遗嘱",
+          "pinyin": "yízhǔ",
+          "hanviet": "Di Chúc",
+          "hsk": 7,
+          "word_id": "hsk7_4841",
+          "meaning_vi": "di chúc"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "将",
+          "pinyin": "jiāng",
+          "hanviet": "Tương",
+          "hsk": 4,
+          "word_id": "hsk4_356",
+          "meaning_vi": "sẽ; đem, lấy (như 把)"
+        },
+        {
+          "text": "全部",
+          "pinyin": "quánbù",
+          "hanviet": "Toàn Bộ",
+          "hsk": 4,
+          "word_id": "hsk4_599",
+          "meaning_vi": "toàn bộ"
+        },
+        {
+          "text": "财产",
+          "pinyin": "cáichǎn",
+          "hanviet": "Tài Sản",
+          "hsk": 6,
+          "word_id": "hsk6_94",
+          "meaning_vi": "tài sản"
+        },
+        {
+          "text": "设立",
+          "pinyin": "shèlì",
+          "hanviet": "Thiết Lập",
+          "hsk": 5,
+          "word_id": "hsk5_974",
+          "meaning_vi": "thiết lập, thành lập"
+        },
+        {
+          "text": "奖项",
+          "pinyin": "jiǎngxiàng",
+          "hanviet": "Thưởng Hạng",
+          "hsk": 7,
+          "word_id": "hsk7_2022",
+          "meaning_vi": "hạng mục giải thưởng, giải thưởng"
+        },
+        {
+          "text": "奖励",
+          "pinyin": "jiǎnglì",
+          "hanviet": "Thưởng Lệ",
+          "hsk": 5,
+          "word_id": "hsk5_583",
+          "meaning_vi": "khen thưởng, phần thưởng"
+        },
+        {
+          "text": "造福人类",
+          "pinyin": "zào fú rén lèi",
+          "hanviet": "Tạo Phúc Nhân Loại"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "杰出",
+          "pinyin": "jiéchū",
+          "hanviet": "Kiệt Xuất",
+          "hsk": 6,
+          "word_id": "hsk6_686",
+          "meaning_vi": "xuất sắc, kiệt xuất"
+        },
+        {
+          "text": "贡献者",
+          "pinyin": "gòng xiàn zhě",
+          "hanviet": "Cống Hiến Giả"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "一九零一年首届诺贝尔奖颁发以来，物理、化学与生理学或医学奖见证了人类重大科学突破。",
+      "pinyin": "Yī-jiǔ-líng-yī nián shǒujiè Nuòbèi'ěr Jiǎng bānfā yǐlái, wùlǐ, huàxué yǔ shēnglǐxué huò yīxué jiǎng jiànzhèng le rénlèi zhòngdà kēxué tūpò.",
+      "vi": "Từ năm 1901 đến nay, các giải Nobel vật lý, hóa học và y học đã chứng kiến những phát kiến đột phá vĩ đại.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "一",
+          "pinyin": "yī",
+          "hanviet": "Nhất",
+          "hsk": 1,
+          "word_id": "hsk1_360",
+          "meaning_vi": "một"
+        },
+        {
+          "text": "九零",
+          "pinyin": "jiǔ líng",
+          "hanviet": "Cửu Linh"
+        },
+        {
+          "text": "一年",
+          "pinyin": "yī nián",
+          "hanviet": "Nhất Niên"
+        },
+        {
+          "text": "首届",
+          "pinyin": "shǒu jiè",
+          "hanviet": "Thủ Giới"
+        },
+        {
+          "text": "诺贝尔奖",
+          "pinyin": "nuò bèi ěr jiǎng",
+          "hanviet": "Nặc Bối Nhĩ Thưởng"
+        },
+        {
+          "text": "颁发",
+          "pinyin": "bānfā",
+          "hanviet": "Ban Phát",
+          "hsk": 7,
+          "word_id": "hsk7_70",
+          "meaning_vi": "cấp phát, trao (giải, văn bản)"
+        },
+        {
+          "text": "以来",
+          "pinyin": "yǐlái",
+          "hanviet": "Dĩ Lai",
+          "hsk": 5,
+          "word_id": "hsk5_1364",
+          "meaning_vi": "từ trước đến nay"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "物理",
+          "pinyin": "wùlǐ",
+          "hanviet": "Vật Lí/vật Lý",
+          "hsk": 5,
+          "word_id": "hsk5_1217",
+          "meaning_vi": "vật lý"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "化学",
+          "pinyin": "huàxué",
+          "hanviet": "Hóa Học",
+          "hsk": 5,
+          "word_id": "hsk5_501",
+          "meaning_vi": "hóa học"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "生理学",
+          "pinyin": "shēng lǐ xué",
+          "hanviet": "Sinh Lý Học"
+        },
+        {
+          "text": "或",
+          "pinyin": "huò",
+          "hanviet": "Hoặc",
+          "hsk": 3,
+          "word_id": "hsk3_774",
+          "meaning_vi": "hoặc"
+        },
+        {
+          "text": "医学奖",
+          "pinyin": "yī xué jiǎng",
+          "hanviet": "Y Học Thưởng"
+        },
+        {
+          "text": "见证",
+          "pinyin": "jiànzhèng",
+          "hanviet": "Kiến Chứng",
+          "hsk": 7,
+          "word_id": "hsk7_2009",
+          "meaning_vi": "làm chứng, chứng kiến"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "人类",
+          "pinyin": "rénlèi",
+          "hanviet": "Nhân Loại",
+          "hsk": 5,
+          "word_id": "hsk5_921",
+          "meaning_vi": "loài người, nhân loại"
+        },
+        {
+          "text": "重大",
+          "pinyin": "zhòngdà",
+          "hanviet": "Trọng Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1531",
+          "meaning_vi": "to lớn, trọng đại"
+        },
+        {
+          "text": "科学",
+          "pinyin": "kēxué",
+          "hanviet": "Khoa Học",
+          "hsk": 4,
+          "word_id": "hsk4_426",
+          "meaning_vi": "khoa học"
+        },
+        {
+          "text": "突破",
+          "pinyin": "tūpò",
+          "hanviet": "Đột Phá",
+          "hsk": 6,
+          "word_id": "hsk6_1327",
+          "meaning_vi": "đột phá"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "然而由于规定每个奖项单次获奖人数不能超过三人，现代大型科研团队中的署名归属常引发热议。",
+      "pinyin": "Rán'ér yóuyú guīdìng měi gè jiǎngxiàng dān cì huòjiǎng rénshù bù néng chāoguò sān rén, xiàndài dàxíng kēyán tuánduì zhōng de shǔmíng guīshǔ cháng yǐnfā rèyì.",
+      "vi": "Tuy nhiên quy định tối đa 3 người nhận giải mỗi năm thường dấy lên tranh cãi trong các dự án khoa học tập thể lớn.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "然而",
+          "pinyin": "rán’ér",
+          "hanviet": "Nhiên Nhi",
+          "hsk": 4,
+          "word_id": "hsk4_608",
+          "meaning_vi": "tuy nhiên"
+        },
+        {
+          "text": "由于",
+          "pinyin": "yóuyú",
+          "hanviet": "Do Vu",
+          "hsk": 4,
+          "word_id": "hsk4_888",
+          "meaning_vi": "do, vì"
+        },
+        {
+          "text": "规定",
+          "pinyin": "guīdìng",
+          "hanviet": "Quy Định",
+          "hsk": 4,
+          "word_id": "hsk4_278",
+          "meaning_vi": "quy định"
+        },
+        {
+          "text": "每个",
+          "pinyin": "měi gè",
+          "hanviet": "Mỗi Cá"
+        },
+        {
+          "text": "奖项",
+          "pinyin": "jiǎngxiàng",
+          "hanviet": "Thưởng Hạng",
+          "hsk": 7,
+          "word_id": "hsk7_2022",
+          "meaning_vi": "hạng mục giải thưởng, giải thưởng"
+        },
+        {
+          "text": "单次",
+          "pinyin": "dān cì",
+          "hanviet": "Thiện Thứ"
+        },
+        {
+          "text": "获奖",
+          "pinyin": "huòjiǎng",
+          "hanviet": "Hoạch Thưởng",
+          "hsk": 4,
+          "word_id": "hsk4_317",
+          "meaning_vi": "đoạt giải, được giải"
+        },
+        {
+          "text": "人数",
+          "pinyin": "rénshù",
+          "hanviet": "Nhân Sổ",
+          "hsk": 4,
+          "word_id": "hsk4_611",
+          "meaning_vi": "số người"
+        },
+        {
+          "text": "不能",
+          "pinyin": "bù néng",
+          "hanviet": "Bất Năng"
+        },
+        {
+          "text": "超过",
+          "pinyin": "chāoguò",
+          "hanviet": "Siêu Quá",
+          "hsk": 4,
+          "word_id": "hsk4_74",
+          "meaning_vi": "vượt qua"
+        },
+        {
+          "text": "三人",
+          "pinyin": "sān rén",
+          "hanviet": "Tam Nhân"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "现代",
+          "pinyin": "xiàndài",
+          "hanviet": "Hiện Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1239",
+          "meaning_vi": "hiện đại"
+        },
+        {
+          "text": "大型",
+          "pinyin": "dàxíng",
+          "hanviet": "Đại Hình",
+          "hsk": 5,
+          "word_id": "hsk5_229",
+          "meaning_vi": "cỡ lớn, quy mô lớn"
+        },
+        {
+          "text": "科研",
+          "pinyin": "kēyán",
+          "hanviet": "Khoa Nghiên",
+          "hsk": 5,
+          "word_id": "hsk5_663",
+          "meaning_vi": "nghiên cứu khoa học"
+        },
+        {
+          "text": "团队",
+          "pinyin": "tuánduì",
+          "hanviet": "Đoàn Đội",
+          "hsk": 5,
+          "word_id": "hsk5_1157",
+          "meaning_vi": "đội"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "署名",
+          "pinyin": "shǔ míng",
+          "hanviet": "Thự Danh"
+        },
+        {
+          "text": "归属",
+          "pinyin": "guīshǔ",
+          "hanviet": "Quy Thuộc",
+          "hsk": 7,
+          "word_id": "hsk7_1523",
+          "meaning_vi": "thuộc về, quyền sở hữu"
+        },
+        {
+          "text": "常",
+          "pinyin": "cháng",
+          "hanviet": "Thường",
+          "hsk": 3,
+          "word_id": "hsk3_652",
+          "meaning_vi": "thường, hay"
+        },
+        {
+          "text": "引发",
+          "pinyin": "yǐnfā",
+          "hanviet": "Dẫn Phát",
+          "hsk": 6,
+          "word_id": "hsk6_1581",
+          "meaning_vi": "gây ra, làm bùng phát, khơi mào"
+        },
+        {
+          "text": "热议",
+          "pinyin": "rèyì",
+          "hanviet": "Nhiệt Nghị",
+          "hsk": 6,
+          "word_id": "hsk6_1093",
+          "meaning_vi": "bàn tán sôi nổi, thảo luận sôi nổi"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "无论争议如何，诺贝尔奖所弘扬的探索真理、造福全人类的精神，始终激励着科学世界的步伐。",
+      "pinyin": "Wúlùn zhēngyì rúhé, Nuòbèi'ěr Jiǎng suǒ hóngyáng de tànsuǒ zhēnlǐ, zàofú quán rénlèi de jīngshén, shǐzhōng jīlì zhe kēxué shìjiè de bùfá.",
+      "vi": "Dù có tranh luận, lý tưởng khám phá chân lý và phụng sự nhân loại của giải Nobel luôn thôi thúc khoa học tiến bước.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "无论",
+          "pinyin": "wúlùn",
+          "hanviet": "Vô Luận",
+          "hsk": 4,
+          "word_id": "hsk4_784",
+          "meaning_vi": "bất luận, dù"
+        },
+        {
+          "text": "争议",
+          "pinyin": "zhēngyì",
+          "hanviet": "Tranh Nghị",
+          "hsk": 6,
+          "word_id": "hsk6_1687",
+          "meaning_vi": "tranh cãi, tranh chấp"
+        },
+        {
+          "text": "如何",
+          "pinyin": "rúhé",
+          "hanviet": "Như Hà",
+          "hsk": 5,
+          "word_id": "hsk5_934",
+          "meaning_vi": "như thế nào, làm sao"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "诺贝尔奖",
+          "pinyin": "nuò bèi ěr jiǎng",
+          "hanviet": "Nặc Bối Nhĩ Thưởng"
+        },
+        {
+          "text": "所",
+          "pinyin": "sǔnshī",
+          "hanviet": "Tổn Thất",
+          "hsk": 5,
+          "word_id": "hsk5_1095",
+          "meaning_vi": "tổn thất, thiệt hại"
+        },
+        {
+          "text": "弘扬",
+          "pinyin": "hóngyáng",
+          "hanviet": "Hoằng Dương",
+          "hsk": 7,
+          "word_id": "hsk7_1677",
+          "meaning_vi": "phát huy, truyền bá phát dương"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "探索",
+          "pinyin": "tànsuǒ",
+          "hanviet": "Thám Sách",
+          "hsk": 6,
+          "word_id": "hsk6_1264",
+          "meaning_vi": "thám hiểm, tìm hiểu"
+        },
+        {
+          "text": "真理",
+          "pinyin": "zhēnlǐ",
+          "hanviet": "Chân Lý",
+          "hsk": 7,
+          "word_id": "hsk7_5212",
+          "meaning_vi": "chân lý"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "造福",
+          "pinyin": "zàofú",
+          "hanviet": "Tạo Phúc",
+          "hsk": 7,
+          "word_id": "hsk7_5119",
+          "meaning_vi": "tạo phúc, mang lại lợi ích cho"
+        },
+        {
+          "text": "全人类",
+          "pinyin": "quán rén lèi",
+          "hanviet": "Toàn Nhân Loại"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "精神",
+          "pinyin": "jīngshen",
+          "hanviet": "Tinh Thần",
+          "hsk": 5,
+          "word_id": "hsk5_623",
+          "meaning_vi": "tinh thần; minh mẫn, hoạt bát"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "始终",
+          "pinyin": "shǐzhōng",
+          "hanviet": "Thủy Chung",
+          "hsk": 5,
+          "word_id": "hsk5_1027",
+          "meaning_vi": "trước sau, luôn luôn"
+        },
+        {
+          "text": "激励",
+          "pinyin": "jīlì",
+          "hanviet": "Kích Lệ",
+          "hsk": 6,
+          "word_id": "hsk6_609",
+          "meaning_vi": "khích lệ, động viên, cổ vũ"
+        },
+        {
+          "text": "着",
+          "pinyin": "zhe",
+          "hanviet": "Trước",
+          "hsk": 2,
+          "word_id": "hsk2_490",
+          "meaning_vi": "đang (trợ từ)"
+        },
+        {
+          "text": "科学",
+          "pinyin": "kēxué",
+          "hanviet": "Khoa Học",
+          "hsk": 4,
+          "word_id": "hsk4_426",
+          "meaning_vi": "khoa học"
+        },
+        {
+          "text": "世界",
+          "pinyin": "shìjiè",
+          "hanviet": "Thế Giới",
+          "hsk": 3,
+          "word_id": "hsk3_916",
+          "meaning_vi": "thế giới"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "步伐",
+          "pinyin": "bùfá",
+          "hanviet": "Bộ Phạt",
+          "hsk": 7,
+          "word_id": "hsk7_327",
+          "meaning_vi": "bước chân, nhịp bước"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk4_426",
+    "hsk3_1064",
+    "hsk3_916",
+    "hsk4_79"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Giải Nobel do ai sáng lập bằng di chúc?",
+      "options_vi": [
+        "Alfred Nobel - nhà phát minh thuốc nổ",
+        "Einstein",
+        "Newton"
+      ],
+      "answer": 0,
+      "explanation_vi": "Do nhà hóa học Thụy Điển Alfred Nobel lập di chúc hiến tặng tài sản."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Theo quy chế, mỗi giải Nobel khoa học được trao cho tối đa bao nhiêu người mỗi lần?",
+      "options_vi": [
+        "Tối đa 3 người",
+        "Tối đa 10 người",
+        "Không giới hạn số người"
+      ],
+      "answer": 0,
+      "explanation_vi": "Mỗi giải thưởng được trao cho tối đa không quá 3 cá nhân."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Mục đích thiêng liêng nhất của giải Nobel là gì?",
+      "options_vi": [
+        "Tôn vinh những cống hiến vĩ đại nhất mang lại lợi ích cho toàn nhân loại",
+        "Để thu hút du lịch Thụy Điển",
+        "Để kiếm tiền"
+      ],
+      "answer": 0,
+      "explanation_vi": "Vinh danh những người đem lại lợi ích lớn nhất cho nhân loại."
+    }
+  ]
+}

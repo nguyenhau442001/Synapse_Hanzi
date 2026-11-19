@@ -1,0 +1,843 @@
+{
+  "id": "wanwu_story_019",
+  "chapter_no": 19,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 1,
+  "book_page_start": 187,
+  "book_page_end": 197,
+  "page_display": "Trang 187 - 197",
+  "title": {
+    "zh": "隐私权：从无到有不过百年",
+    "vi": "Quyền riêng tư: Từ không đến có chưa đầy trăm năm"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "🔒",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_019.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_019.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 187 - 197 · Lịch sử quyền riêng tư: từ bài báo pháp lý kinh điển năm 1890 của Warren & Brandeis đến kỷ nguyên bảo vệ dữ liệu số.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "不偷看他人日记、不偷拆私人信件，今天已被公认为每个人理应受到保护的基本权利。",
+      "pinyin": "Bù tōukàn tārén rìjì, bù tōuchāi sīrén xìnjiàn, jīntiān yǐ bèi gōngrèn wéi měi gè rén lǐyīng shòudào bǎohù de jīběn quánlì.",
+      "vi": "Không xem lén nhật ký, không bóc trộm thư từ, ngày nay được công nhận là quyền riêng tư cơ bản của mỗi người.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "不",
+          "pinyin": "bù",
+          "hanviet": "Bất",
+          "hsk": 1,
+          "word_id": "hsk1_25",
+          "meaning_vi": "không"
+        },
+        {
+          "text": "偷看",
+          "pinyin": "tōu kàn",
+          "hanviet": "Thâu Khán"
+        },
+        {
+          "text": "他人",
+          "pinyin": "tārén",
+          "hanviet": "Tha Nhân",
+          "hsk": 5,
+          "word_id": "hsk5_1100",
+          "meaning_vi": "những người khác (đại từ)"
+        },
+        {
+          "text": "日记",
+          "pinyin": "rìjì",
+          "hanviet": "Nhật Kí/nhật Ký",
+          "hsk": 4,
+          "word_id": "hsk4_619",
+          "meaning_vi": "nhật ký"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "不偷",
+          "pinyin": "bù tōu",
+          "hanviet": "Bất Thâu"
+        },
+        {
+          "text": "拆",
+          "pinyin": "chāi",
+          "hanviet": "Sách",
+          "hsk": 5,
+          "word_id": "hsk5_103",
+          "meaning_vi": "dỡ, tháo ra"
+        },
+        {
+          "text": "私人",
+          "pinyin": "sīrén",
+          "hanviet": "Tư Nhân",
+          "hsk": 5,
+          "word_id": "hsk5_1078",
+          "meaning_vi": "cá nhân, riêng tư"
+        },
+        {
+          "text": "信件",
+          "pinyin": "xìnjiàn",
+          "hanviet": "Tín Kiện",
+          "hsk": 7,
+          "word_id": "hsk7_4568",
+          "meaning_vi": "thư từ; thư tín"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "今天",
+          "pinyin": "jīntiān",
+          "hanviet": "Kim Thiên",
+          "hsk": 1,
+          "word_id": "hsk1_144",
+          "meaning_vi": "hôm nay"
+        },
+        {
+          "text": "已",
+          "pinyin": "yǐ",
+          "hanviet": "Dĩ",
+          "hsk": 4,
+          "word_id": "hsk4_866",
+          "meaning_vi": "đã"
+        },
+        {
+          "text": "被",
+          "pinyin": "bèi",
+          "hanviet": "Bị",
+          "hsk": 3,
+          "word_id": "hsk3_619",
+          "meaning_vi": "bị (trợ từ bị động)"
+        },
+        {
+          "text": "公认",
+          "pinyin": "gōngrèn",
+          "hanviet": "Công Nhận",
+          "hsk": 6,
+          "word_id": "hsk6_460",
+          "meaning_vi": "được công nhận chung"
+        },
+        {
+          "text": "为",
+          "pinyin": "wèi",
+          "hanviet": "Vi",
+          "hsk": 3,
+          "word_id": "hsk3_954",
+          "meaning_vi": "vì, cho"
+        },
+        {
+          "text": "每个",
+          "pinyin": "měi gè",
+          "hanviet": "Mỗi Cá"
+        },
+        {
+          "text": "人",
+          "pinyin": "rén",
+          "hanviet": "Nhân",
+          "hsk": 1,
+          "word_id": "hsk1_243",
+          "meaning_vi": "người"
+        },
+        {
+          "text": "理应",
+          "pinyin": "lǐ yīng",
+          "hanviet": "Lý Ưng"
+        },
+        {
+          "text": "受到",
+          "pinyin": "shòudào",
+          "hanviet": "Thọ Đáo",
+          "hsk": 3,
+          "word_id": "hsk3_558",
+          "meaning_vi": "nhận được, bị (chịu)"
+        },
+        {
+          "text": "保护",
+          "pinyin": "bǎohù",
+          "hanviet": "Bảo Hộ",
+          "hsk": 4,
+          "word_id": "hsk4_14",
+          "meaning_vi": "bảo vệ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "基本权利",
+          "pinyin": "jī běn quán lì",
+          "hanviet": "Cơ Bản Quyền Lợi"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "然而在人类漫长的历史中，“隐私权”作为一个法学概念出现其实不过短短一百多年。",
+      "pinyin": "Rán'ér zài rénlèi màncháng de lìshǐ zhōng, “yǐnsīquán” zuòwéi yí gè fǎxué gàiniàn chūxiàn qíshí búguò duǎnduǎn yìbǎi duō nián.",
+      "vi": "Thế nhưng trong dòng chảy lịch sử, khái niệm pháp lý quyền riêng tư mới ra đời hơn một trăm năm.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "然而",
+          "pinyin": "rán’ér",
+          "hanviet": "Nhiên Nhi",
+          "hsk": 4,
+          "word_id": "hsk4_608",
+          "meaning_vi": "tuy nhiên"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "人类",
+          "pinyin": "rénlèi",
+          "hanviet": "Nhân Loại",
+          "hsk": 5,
+          "word_id": "hsk5_921",
+          "meaning_vi": "loài người, nhân loại"
+        },
+        {
+          "text": "漫长",
+          "pinyin": "màncháng",
+          "hanviet": "Mạn Trường",
+          "hsk": 6,
+          "word_id": "hsk6_890",
+          "meaning_vi": "dài đằng đẵng, dài lâu"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "历史",
+          "pinyin": "lìshǐ",
+          "hanviet": "Lịch Sử",
+          "hsk": 3,
+          "word_id": "hsk3_831",
+          "meaning_vi": "lịch sử"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "隐私权",
+          "pinyin": "yǐn sī quán",
+          "hanviet": "Ẩn Tư Quyền"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "作为",
+          "pinyin": "xiūgǎi",
+          "hanviet": "Tu Cải",
+          "hsk": 5,
+          "word_id": "hsk5_1300",
+          "meaning_vi": "sửa đổi"
+        },
+        {
+          "text": "一个",
+          "pinyin": "yí gè",
+          "hanviet": "Nhất Cá"
+        },
+        {
+          "text": "法学",
+          "pinyin": "fǎ xué",
+          "hanviet": "Pháp Học"
+        },
+        {
+          "text": "概念",
+          "pinyin": "gàiniàn",
+          "hanviet": "Khái Niệm",
+          "hsk": 5,
+          "word_id": "hsk5_383",
+          "meaning_vi": "khái niệm"
+        },
+        {
+          "text": "出现",
+          "pinyin": "chūxiàn",
+          "hanviet": "Xuất Hiện",
+          "hsk": 4,
+          "word_id": "hsk4_90",
+          "meaning_vi": "xuất hiện"
+        },
+        {
+          "text": "其实",
+          "pinyin": "qíshí",
+          "hanviet": "Kỳ Thật",
+          "hsk": 3,
+          "word_id": "hsk3_881",
+          "meaning_vi": "thực ra"
+        },
+        {
+          "text": "不过",
+          "pinyin": "búguò",
+          "hanviet": "Bất Quá",
+          "hsk": 4,
+          "word_id": "hsk4_47",
+          "meaning_vi": "nhưng, tuy nhiên"
+        },
+        {
+          "text": "短短",
+          "pinyin": "duǎn duǎn",
+          "hanviet": "Đoản Đoản"
+        },
+        {
+          "text": "一百多年",
+          "pinyin": "yì bǎi duō nián",
+          "hanviet": "Nhất Bách Đa Niên"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "一八九零年，两位美国年轻法学家沃伦与布兰代斯发表了著名的《论隐私权》论文。",
+      "pinyin": "Yī-bā-jiǔ-líng nián, liǎng wèi Měiguó niánqīng fǎxuéjiā Wòlún yǔ Bùlándàisī fābiǎo le zhùmíng de “Lùn Yǐnsīquán” lùnwén.",
+      "vi": "Năm 1890, hai học giả luật trẻ Warren và Brandeis xuất bản bài luận kinh điển Luận về quyền riêng tư.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "一八",
+          "pinyin": "yī bā",
+          "hanviet": "Nhất Bát"
+        },
+        {
+          "text": "九零年",
+          "pinyin": "jiǔ líng nián",
+          "hanviet": "Cửu Linh Niên"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "两位",
+          "pinyin": "liǎng wèi",
+          "hanviet": "Lưỡng Vị"
+        },
+        {
+          "text": "美国",
+          "pinyin": "měi guó",
+          "hanviet": "Mỹ Quốc"
+        },
+        {
+          "text": "年轻",
+          "pinyin": "niánqīng",
+          "hanviet": "Niên Khinh",
+          "hsk": 3,
+          "word_id": "hsk3_866",
+          "meaning_vi": "trẻ tuổi"
+        },
+        {
+          "text": "法学家",
+          "pinyin": "fǎ xué jiā",
+          "hanviet": "Pháp Học Gia"
+        },
+        {
+          "text": "沃伦",
+          "pinyin": "wò lún",
+          "hanviet": "Ốc Luân"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "布兰代斯",
+          "pinyin": "bù lán dài sī",
+          "hanviet": "Bố Lan Đại Tư"
+        },
+        {
+          "text": "发表",
+          "pinyin": "fābiǎo",
+          "hanviet": "Phát Biểu",
+          "hsk": 5,
+          "word_id": "hsk5_316",
+          "meaning_vi": "phát biểu, công bố"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "著名",
+          "pinyin": "zhùmíng",
+          "hanviet": "Trước Danh",
+          "hsk": 4,
+          "word_id": "hsk4_967",
+          "meaning_vi": "nổi tiếng"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "《"
+        },
+        {
+          "text": "论",
+          "pinyin": "lùn",
+          "hanviet": "Luận"
+        },
+        {
+          "text": "隐私权",
+          "pinyin": "yǐn sī quán",
+          "hanviet": "Ẩn Tư Quyền"
+        },
+        {
+          "text": "》"
+        },
+        {
+          "text": "论文",
+          "pinyin": "lùnwén",
+          "hanviet": "Luận Văn",
+          "hsk": 5,
+          "word_id": "hsk5_746",
+          "meaning_vi": "luận văn"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "当时便携相机的发明导致报纸记者滥用偷拍，促使他们提出了“独处而不受打扰的权利”。",
+      "pinyin": "Dāngshí biànxié xiàngjī de fāmíng dǎozhì bàozhǐ jìzhě lànyòng tōupāi, cùshǐ tāmen tíchū le “dúchǔ ér bú shòu dǎrǎo de quánlì”.",
+      "vi": "Sự ra đời của máy ảnh cầm tay khiến phóng viên chụp lén tràn lan, thúc đẩy họ nêu quyền được yên tĩnh một mình.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "当时",
+          "pinyin": "dāngshí",
+          "hanviet": "Đương Thời",
+          "hsk": 4,
+          "word_id": "hsk4_136",
+          "meaning_vi": "lúc đó, khi đó"
+        },
+        {
+          "text": "便携",
+          "pinyin": "biàn xié",
+          "hanviet": "Tiện Huề"
+        },
+        {
+          "text": "相机",
+          "pinyin": "xiàngjī",
+          "hanviet": "Tương Cơ",
+          "hsk": 3,
+          "word_id": "hsk3_975",
+          "meaning_vi": "máy ảnh"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "发明",
+          "pinyin": "fāmíng",
+          "hanviet": "Phát Minh",
+          "hsk": 5,
+          "word_id": "hsk5_320",
+          "meaning_vi": "phát minh"
+        },
+        {
+          "text": "导致",
+          "pinyin": "dǎozhì",
+          "hanviet": "Đạo Trí",
+          "hsk": 5,
+          "word_id": "hsk5_255",
+          "meaning_vi": "dẫn đến, gây ra"
+        },
+        {
+          "text": "报纸",
+          "pinyin": "bàozhǐ",
+          "hanviet": "Báo Chỉ",
+          "hsk": 3,
+          "word_id": "hsk3_616",
+          "meaning_vi": "báo"
+        },
+        {
+          "text": "记者",
+          "pinyin": "jìzhě",
+          "hanviet": "Ký Giả",
+          "hsk": 4,
+          "word_id": "hsk4_333",
+          "meaning_vi": "nhà báo, phóng viên"
+        },
+        {
+          "text": "滥用",
+          "pinyin": "lànyòng",
+          "hanviet": "Lạm Dụng",
+          "hsk": 7,
+          "word_id": "hsk7_2483",
+          "meaning_vi": "lạm dụng"
+        },
+        {
+          "text": "偷拍",
+          "pinyin": "tōu pāi",
+          "hanviet": "Thâu Phách"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "促使",
+          "pinyin": "cùshǐ",
+          "hanviet": "Xúc Sử",
+          "hsk": 5,
+          "word_id": "hsk5_205",
+          "meaning_vi": "thúc đẩy, khiến cho"
+        },
+        {
+          "text": "他们",
+          "pinyin": "tāmen",
+          "hanviet": "Tha Môn",
+          "hsk": 1,
+          "word_id": "hsk1_570",
+          "meaning_vi": "họ (đại từ)"
+        },
+        {
+          "text": "提出",
+          "pinyin": "tíchū",
+          "hanviet": "Đề Xuất",
+          "hsk": 4,
+          "word_id": "hsk4_727",
+          "meaning_vi": "đưa ra, nêu ra"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "独处",
+          "pinyin": "dú chǔ",
+          "hanviet": "Độc Xử"
+        },
+        {
+          "text": "而",
+          "pinyin": "ér",
+          "hanviet": "Nhi",
+          "hsk": 4,
+          "word_id": "hsk4_183",
+          "meaning_vi": "mà, và"
+        },
+        {
+          "text": "不受",
+          "pinyin": "bù shòu",
+          "hanviet": "Bất Thọ"
+        },
+        {
+          "text": "打扰",
+          "pinyin": "dǎrǎo",
+          "hanviet": "Đả Nhiễu",
+          "hsk": 4,
+          "word_id": "hsk4_118",
+          "meaning_vi": "làm phiền"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "权利",
+          "pinyin": "quánlì",
+          "hanviet": "Quyền Lợi",
+          "hsk": 5,
+          "word_id": "hsk5_899",
+          "meaning_vi": "quyền lợi"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "在当今大数据与人工智能时代，保护个人数字信息隐私已成为全球公民社会的最重大挑战之一。",
+      "pinyin": "Zài dāngjīn dà-shùjù yǔ réngōng-zhìnéng shídài, bǎohù gèrén shùzì xìnxī yǐnsī yǐ chéngwéi quánqiú gōngmín shèhuì de zuì zhòngdà tiǎozhàn zhī yī.",
+      "vi": "Trong kỷ nguyên dữ liệu lớn và AI, bảo vệ quyền riêng tư số đang là thách thức hàng đầu của toàn nhân loại.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "当今",
+          "pinyin": "dāngjīn",
+          "hanviet": "Đương Kim",
+          "hsk": 6,
+          "word_id": "hsk6_270",
+          "meaning_vi": "ngày nay, hiện nay, đương thời"
+        },
+        {
+          "text": "大",
+          "pinyin": "dà",
+          "hanviet": "Đại",
+          "hsk": 1,
+          "word_id": "hsk1_53",
+          "meaning_vi": "to, lớn"
+        },
+        {
+          "text": "数据",
+          "pinyin": "shùjù",
+          "hanviet": "Sổ Cư",
+          "hsk": 5,
+          "word_id": "hsk5_1067",
+          "meaning_vi": "số liệu, dữ liệu"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "人工智能",
+          "pinyin": "réngōng zhìnéng",
+          "hanviet": "Nhân Công Trí Năng",
+          "hsk": 6,
+          "word_id": "hsk6_1094",
+          "meaning_vi": "trí tuệ nhân tạo"
+        },
+        {
+          "text": "时代",
+          "pinyin": "shídài",
+          "hanviet": "Thời Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1012",
+          "meaning_vi": "thời đại"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "保护",
+          "pinyin": "bǎohù",
+          "hanviet": "Bảo Hộ",
+          "hsk": 4,
+          "word_id": "hsk4_14",
+          "meaning_vi": "bảo vệ"
+        },
+        {
+          "text": "个人",
+          "pinyin": "gèrén",
+          "hanviet": "Cá Nhân",
+          "hsk": 5,
+          "word_id": "hsk5_400",
+          "meaning_vi": "cá nhân"
+        },
+        {
+          "text": "数字信息",
+          "pinyin": "shù zì xìn xī",
+          "hanviet": "Sổ Tự Tín Tức"
+        },
+        {
+          "text": "隐私",
+          "pinyin": "yǐnsī",
+          "hanviet": "Ẩn Tư",
+          "hsk": 6,
+          "word_id": "hsk6_1583",
+          "meaning_vi": "đời tư, riêng tư"
+        },
+        {
+          "text": "已",
+          "pinyin": "yǐ",
+          "hanviet": "Dĩ",
+          "hsk": 4,
+          "word_id": "hsk4_866",
+          "meaning_vi": "đã"
+        },
+        {
+          "text": "成为",
+          "pinyin": "chéngwéi",
+          "hanviet": "Thành Vi",
+          "hsk": 4,
+          "word_id": "hsk4_82",
+          "meaning_vi": "trở thành"
+        },
+        {
+          "text": "全球",
+          "pinyin": "quánqiú",
+          "hanviet": "Toàn Cầu",
+          "hsk": 4,
+          "word_id": "hsk4_601",
+          "meaning_vi": "toàn cầu"
+        },
+        {
+          "text": "公民",
+          "pinyin": "gōngmín",
+          "hanviet": "Công Dân",
+          "hsk": 6,
+          "word_id": "hsk6_459",
+          "meaning_vi": "công dân"
+        },
+        {
+          "text": "社会",
+          "pinyin": "shèhuì",
+          "hanviet": "Xã Hội",
+          "hsk": 4,
+          "word_id": "hsk4_639",
+          "meaning_vi": "xã hội"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "最",
+          "pinyin": "zuì",
+          "hanviet": "Tối",
+          "hsk": 2,
+          "word_id": "hsk2_498",
+          "meaning_vi": "nhất"
+        },
+        {
+          "text": "重大",
+          "pinyin": "zhòngdà",
+          "hanviet": "Trọng Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1531",
+          "meaning_vi": "to lớn, trọng đại"
+        },
+        {
+          "text": "挑战",
+          "pinyin": "tiǎozhàn",
+          "hanviet": "Khiêu Chiến",
+          "hsk": 5,
+          "word_id": "hsk5_1133",
+          "meaning_vi": "thử thách, thách thức"
+        },
+        {
+          "text": "之一",
+          "pinyin": "zhī yī",
+          "hanviet": "Chi Nhất"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk4_14",
+    "hsk5_899",
+    "hsk5_1012",
+    "hsk4_639",
+    "hsk1_25"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Khái niệm quyền riêng tư ra đời cách đây khoảng bao lâu?",
+      "options_vi": [
+        "Hơn 100 năm trước (năm 1890)",
+        "Từ thời cổ đại Hy Lạp",
+        "Mới có từ năm 2010"
+      ],
+      "answer": 0,
+      "explanation_vi": "Bài luận mở đường về quyền riêng tư được xuất bản năm 1890."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Sự phát minh nào vào cuối thế kỷ 19 đã thúc đẩy sự ra đời của quyền riêng tư?",
+      "options_vi": [
+        "Máy ảnh cầm tay gọn nhẹ gây nạn chụp lén của báo chí",
+        "Điện thoại thông minh",
+        "Máy in báo"
+      ],
+      "answer": 0,
+      "explanation_vi": "Máy ảnh nhỏ gọn giúp cánh săn ảnh chụp trộm đời tư người khác."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Định nghĩa kinh điển nhất của Brandeis về quyền riêng tư là gì?",
+      "options_vi": [
+        "Quyền được yên tĩnh một mình mà không bị quấy rầy",
+        "Quyền có nhiều tiền",
+        "Quyền được giấu đồ đạc"
+      ],
+      "answer": 0,
+      "explanation_vi": "The right to be let alone - quyền được để yên mà không bị dòm ngó."
+    }
+  ]
+}

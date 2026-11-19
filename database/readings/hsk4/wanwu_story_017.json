@@ -1,0 +1,869 @@
+{
+  "id": "wanwu_story_017",
+  "chapter_no": 17,
+  "level": "HSK4",
+  "series": "wanwu",
+  "book_volume": 1,
+  "book_page_start": 163,
+  "book_page_end": 174,
+  "page_display": "Trang 163 - 174",
+  "title": {
+    "zh": "征婚广告：社会发展的一面镜子",
+    "vi": "Quảng cáo kết hôn: Tấm gương phản chiếu xã hội"
+  },
+  "topic": "culture_history",
+  "topic_vi": "📚 Vạn vật thú vị",
+  "icon": "💌",
+  "cover_image": "assets/images/readings/wanwu/wanwu_story_017.webp",
+  "illustration": "assets/images/readings/wanwu/wanwu_story_017.webp",
+  "estimatedMinutes": 5,
+  "description_vi": "📖 Trang 163 - 174 · Lịch sử quảng cáo tìm bạn trăm năm: từ 'lời mai mối' trên báo giấy thế kỷ 17 đến thời kỳ mai mối số hiện đại.",
+  "sentences": [
+    {
+      "id": "s1",
+      "zh": "从古代“父母之命、媒妁之言”到现代自主寻找幸福，征婚广告是社会观念变迁的生动镜子。",
+      "pinyin": "Cóng gǔdài “fùmǔ zhī mìng, méishuò zhī yán” dào xiàndài zìzhǔ xúnzhǎo xìngfú, zhēnghūn guǎnggào shì shèhuì guānniàn biànqiān de shēngdòng jìngzi.",
+      "vi": "Từ 'cha mẹ đặt đâu con ngồi đấy' đến tự do tìm hạnh phúc, quảng cáo tìm bạn đời là tấm gương phản chiếu xã hội.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "从",
+          "pinyin": "cóng",
+          "hanviet": "Tòng",
+          "hsk": 2,
+          "word_id": "hsk2_324",
+          "meaning_vi": "từ"
+        },
+        {
+          "text": "古代",
+          "pinyin": "gǔdài",
+          "hanviet": "Cổ Đại",
+          "hsk": 5,
+          "word_id": "hsk5_424",
+          "meaning_vi": "cổ đại"
+        },
+        {
+          "text": "“"
+        },
+        {
+          "text": "父母之命",
+          "pinyin": "fù mǔ zhī mìng",
+          "hanviet": "Phụ Mẫu Chi Mệnh"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "媒妁之言",
+          "pinyin": "méi shuò zhī yán",
+          "hanviet": "Môi Chước Chi Ngôn"
+        },
+        {
+          "text": "”"
+        },
+        {
+          "text": "到",
+          "pinyin": "dào",
+          "hanviet": "Đáo",
+          "hsk": 1,
+          "word_id": "hsk1_59",
+          "meaning_vi": "đến"
+        },
+        {
+          "text": "现代",
+          "pinyin": "xiàndài",
+          "hanviet": "Hiện Đại",
+          "hsk": 5,
+          "word_id": "hsk5_1239",
+          "meaning_vi": "hiện đại"
+        },
+        {
+          "text": "自主",
+          "pinyin": "zìzhǔ",
+          "hanviet": "Tự Chủ",
+          "hsk": 7,
+          "word_id": "hsk7_5536",
+          "meaning_vi": "tự chủ, độc lập làm chủ"
+        },
+        {
+          "text": "寻找",
+          "pinyin": "xúnzhǎo",
+          "hanviet": "Tầm Trảo",
+          "hsk": 5,
+          "word_id": "hsk5_1317",
+          "meaning_vi": "tìm kiếm"
+        },
+        {
+          "text": "幸福",
+          "pinyin": "xìngfú",
+          "hanviet": "Hạnh Phúc",
+          "hsk": 4,
+          "word_id": "hsk4_830",
+          "meaning_vi": "hạnh phúc"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "征婚广告",
+          "pinyin": "zhēng hūn guǎng gào",
+          "hanviet": "Chinh Hôn Nghiễm Cáo"
+        },
+        {
+          "text": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "hsk": 1,
+          "word_id": "hsk1_266",
+          "meaning_vi": "là"
+        },
+        {
+          "text": "社会",
+          "pinyin": "shèhuì",
+          "hanviet": "Xã Hội",
+          "hsk": 4,
+          "word_id": "hsk4_639",
+          "meaning_vi": "xã hội"
+        },
+        {
+          "text": "观念",
+          "pinyin": "guānniàn",
+          "hanviet": "Quan Niệm",
+          "hsk": 5,
+          "word_id": "hsk5_434",
+          "meaning_vi": "quan niệm"
+        },
+        {
+          "text": "变迁",
+          "pinyin": "biànqiān",
+          "hanviet": "Biến Thiên",
+          "hsk": 7,
+          "word_id": "hsk7_223",
+          "meaning_vi": "biến đổi, thay đổi theo thời gian"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "生动",
+          "pinyin": "shēngdòng",
+          "hanviet": "Sinh Động",
+          "hsk": 5,
+          "word_id": "hsk5_992",
+          "meaning_vi": "sinh động"
+        },
+        {
+          "text": "镜子",
+          "pinyin": "jìngzi",
+          "hanviet": "Kính Tử",
+          "hsk": 4,
+          "word_id": "hsk4_406",
+          "meaning_vi": "cái gương"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "zh": "一六九五年，英国的一家农业报刊上刊登了世界上第一则征婚广告，引发了轰动。",
+      "pinyin": "Yī-liù-jiǔ-wǔ nián, Yīngguó de yì jiā nóngyè bàokān shàng kāndēng le shìjiè shàng dì-yī zé zhēnghūn guǎnggào, yǐnfā le hōngdòng.",
+      "vi": "Năm 1695, một tờ báo nông nghiệp nước Anh đăng mẩu quảng cáo kén duyên đầu tiên trên thế giới.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "一",
+          "pinyin": "yī",
+          "hanviet": "Nhất",
+          "hsk": 1,
+          "word_id": "hsk1_360",
+          "meaning_vi": "một"
+        },
+        {
+          "text": "六",
+          "pinyin": "liù",
+          "hanviet": "Lục",
+          "hsk": 1,
+          "word_id": "hsk1_183",
+          "meaning_vi": "sáu"
+        },
+        {
+          "text": "九五",
+          "pinyin": "jiǔ wǔ",
+          "hanviet": "Cửu Ngũ"
+        },
+        {
+          "text": "年",
+          "pinyin": "nián",
+          "hanviet": "Niên",
+          "hsk": 1,
+          "word_id": "hsk1_214",
+          "meaning_vi": "năm"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "英国",
+          "pinyin": "yīng guó",
+          "hanviet": "Anh Quốc"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "一家",
+          "pinyin": "yī jiā",
+          "hanviet": "Nhất Gia"
+        },
+        {
+          "text": "农业",
+          "pinyin": "nóngyè",
+          "hanviet": "Nông Nghiệp",
+          "hsk": 5,
+          "word_id": "hsk5_805",
+          "meaning_vi": "nông nghiệp"
+        },
+        {
+          "text": "报刊",
+          "pinyin": "bàokān",
+          "hanviet": "Báo San",
+          "hsk": 6,
+          "word_id": "hsk6_29",
+          "meaning_vi": "báo chí, báo và tạp chí"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "刊登",
+          "pinyin": "kāndēng",
+          "hanviet": "San Đăng",
+          "hsk": 7,
+          "word_id": "hsk7_2319",
+          "meaning_vi": "đăng tải, đăng báo"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "世界",
+          "pinyin": "shìjiè",
+          "hanviet": "Thế Giới",
+          "hsk": 3,
+          "word_id": "hsk3_916",
+          "meaning_vi": "thế giới"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "第一",
+          "pinyin": "dìyī",
+          "hanviet": "Đệ Nhất",
+          "hsk": 2,
+          "word_id": "hsk2_22",
+          "meaning_vi": "thứ nhất"
+        },
+        {
+          "text": "则",
+          "pinyin": "xìtǒng",
+          "hanviet": "Hệ Thống",
+          "hsk": 5,
+          "word_id": "hsk5_1229",
+          "meaning_vi": "hệ thống"
+        },
+        {
+          "text": "征婚广告",
+          "pinyin": "zhēng hūn guǎng gào",
+          "hanviet": "Chinh Hôn Nghiễm Cáo"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "引发",
+          "pinyin": "yǐnfā",
+          "hanviet": "Dẫn Phát",
+          "hsk": 6,
+          "word_id": "hsk6_1581",
+          "meaning_vi": "gây ra, làm bùng phát, khơi mào"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "轰动",
+          "pinyin": "hōngdòng",
+          "hanviet": "Oanh Động",
+          "hsk": 7,
+          "word_id": "hsk7_1664",
+          "meaning_vi": "gây chấn động"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "zh": "近代清末民初，随着新思想的传播，中国报纸上也开始大量出现追求自由恋爱的征婚启事。",
+      "pinyin": "Jìndài Qīngmò Mínchū, suízhe xīn sīxiǎng de chuánbō, Zhōngguó bàozhǐ shàng yě kāishǐ dàliàng chūxiàn zhuīqiú zìyóu liàn'ài de zhēnghūn qǐshì.",
+      "vi": "Cuối thời Thanh đầu thời Dân quốc, báo chí xuất hiện nhiều mục tìm bạn trăm năm hướng tới tự do hôn nhân.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "近代",
+          "pinyin": "jìndài",
+          "hanviet": "Cận Đại",
+          "hsk": 5,
+          "word_id": "hsk5_614",
+          "meaning_vi": "thời cận đại"
+        },
+        {
+          "text": "清末",
+          "pinyin": "qīng mò",
+          "hanviet": "Thanh Mạt"
+        },
+        {
+          "text": "民初",
+          "pinyin": "mín chū",
+          "hanviet": "Dân Sơ"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "随着",
+          "pinyin": "suízhe",
+          "hanviet": "Tuỳ Trước",
+          "hsk": 4,
+          "word_id": "hsk4_710",
+          "meaning_vi": "theo cùng với"
+        },
+        {
+          "text": "新",
+          "pinyin": "xīn",
+          "hanviet": "Tân",
+          "hsk": 1,
+          "word_id": "hsk1_344",
+          "meaning_vi": "mới"
+        },
+        {
+          "text": "思想",
+          "pinyin": "sīxiǎng",
+          "hanviet": "Tư Tưởng",
+          "hsk": 5,
+          "word_id": "hsk5_1080",
+          "meaning_vi": "tư tưởng, suy nghĩ"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "传播",
+          "pinyin": "chuánbō",
+          "hanviet": "Truyền Bá",
+          "hsk": 5,
+          "word_id": "hsk5_184",
+          "meaning_vi": "truyền bá, lan truyền"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "中国",
+          "pinyin": "Zhōngguó",
+          "hanviet": "Trung Quốc",
+          "hsk": 1,
+          "word_id": "hsk1_610",
+          "meaning_vi": "trung Quốc"
+        },
+        {
+          "text": "报纸",
+          "pinyin": "bàozhǐ",
+          "hanviet": "Báo Chỉ",
+          "hsk": 3,
+          "word_id": "hsk3_616",
+          "meaning_vi": "báo"
+        },
+        {
+          "text": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "hsk": 1,
+          "word_id": "hsk1_561",
+          "meaning_vi": "trên"
+        },
+        {
+          "text": "也",
+          "pinyin": "yě",
+          "hanviet": "Dã",
+          "hsk": 1,
+          "word_id": "hsk1_359",
+          "meaning_vi": "cũng"
+        },
+        {
+          "text": "开始",
+          "pinyin": "kāishǐ",
+          "hanviet": "Khai Thuỷ",
+          "hsk": 2,
+          "word_id": "hsk2_378",
+          "meaning_vi": "bắt đầu"
+        },
+        {
+          "text": "大量",
+          "pinyin": "dàliàng",
+          "hanviet": "Đại Lượng",
+          "hsk": 4,
+          "word_id": "hsk4_126",
+          "meaning_vi": "lượng lớn, nhiều"
+        },
+        {
+          "text": "出现",
+          "pinyin": "chūxiàn",
+          "hanviet": "Xuất Hiện",
+          "hsk": 4,
+          "word_id": "hsk4_90",
+          "meaning_vi": "xuất hiện"
+        },
+        {
+          "text": "追求",
+          "pinyin": "zhuīqiú",
+          "hanviet": "Truy Cầu",
+          "hsk": 5,
+          "word_id": "hsk5_1566",
+          "meaning_vi": "theo đuổi"
+        },
+        {
+          "text": "自由恋爱",
+          "pinyin": "zì yóu liàn ài",
+          "hanviet": "Tự Do Luyến Ái"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "征婚启事",
+          "pinyin": "zhēng hūn qǐ shì",
+          "hanviet": "Chinh Hôn Khởi Sự"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "zh": "人们在广告中写下自己的才学、志趣与择偶期望，打破了封建门第观念的束缚。",
+      "pinyin": "Rénmen zài guǎnggào zhōng xiěxià zìjǐ de cáixué, zhìqù yǔ zé'ǒu qīwàng, dǎpò le fēngjiàn méndì guānniàn de shùfù.",
+      "vi": "Người trẻ viết rõ tài năng, sở thích và tiêu chuẩn bạn đời, phá tan rào cản 'môn đăng hộ đối' phong kiến.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "人们",
+          "pinyin": "rén men",
+          "hanviet": "Nhân Môn"
+        },
+        {
+          "text": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "hsk": 1,
+          "word_id": "hsk1_390",
+          "meaning_vi": "ở, đang"
+        },
+        {
+          "text": "广告",
+          "pinyin": "guǎnggào",
+          "hanviet": "Quảng Cáo",
+          "hsk": 4,
+          "word_id": "hsk4_276",
+          "meaning_vi": "quảng cáo"
+        },
+        {
+          "text": "中",
+          "pinyin": "zhōng",
+          "hanviet": "Trung",
+          "hsk": 3,
+          "word_id": "hsk3_1060",
+          "meaning_vi": "giữa, trong"
+        },
+        {
+          "text": "写下",
+          "pinyin": "xiě xià",
+          "hanviet": "Tả Hạ"
+        },
+        {
+          "text": "自己",
+          "pinyin": "zìjǐ",
+          "hanviet": "Tự Kỷ",
+          "hsk": 2,
+          "word_id": "hsk2_494",
+          "meaning_vi": "tự mình, bản thân"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "才学",
+          "pinyin": "cái xué",
+          "hanviet": "Tài Học"
+        },
+        {
+          "text": "、"
+        },
+        {
+          "text": "志趣",
+          "pinyin": "zhì qù",
+          "hanviet": "Chí Thú"
+        },
+        {
+          "text": "与",
+          "pinyin": "yǔ",
+          "hanviet": "Dư",
+          "hsk": 4,
+          "word_id": "hsk4_897",
+          "meaning_vi": "và, với"
+        },
+        {
+          "text": "择偶",
+          "pinyin": "zé ǒu",
+          "hanviet": "Trạch Ngẫu"
+        },
+        {
+          "text": "期望",
+          "pinyin": "qīwàng",
+          "hanviet": "Kì Vọng/kỳ Vọng",
+          "hsk": 6,
+          "word_id": "hsk6_1013",
+          "meaning_vi": "kỳ vọng, mong đợi"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "打破",
+          "pinyin": "dǎpò",
+          "hanviet": "Đả Phá",
+          "hsk": 5,
+          "word_id": "hsk5_216",
+          "meaning_vi": "làm vỡ; phá (kỷ lục)"
+        },
+        {
+          "text": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "hsk": 1,
+          "word_id": "hsk1_535",
+          "meaning_vi": "rồi (trợ từ)"
+        },
+        {
+          "text": "封建",
+          "pinyin": "fēngjiàn",
+          "hanviet": "Phong Kiến",
+          "hsk": 7,
+          "word_id": "hsk7_1191",
+          "meaning_vi": "phong kiến"
+        },
+        {
+          "text": "门第",
+          "pinyin": "mén dì",
+          "hanviet": "Môn Đệ"
+        },
+        {
+          "text": "观念",
+          "pinyin": "guānniàn",
+          "hanviet": "Quan Niệm",
+          "hsk": 5,
+          "word_id": "hsk5_434",
+          "meaning_vi": "quan niệm"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "束缚",
+          "pinyin": "shùfù",
+          "hanviet": "Thúc Buộc",
+          "hsk": 7,
+          "word_id": "hsk7_3783",
+          "meaning_vi": "ràng buộc, trói buộc"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "zh": "今天，互联网和社交媒体让寻找伴侣更加便捷，但人们对真诚爱情的追求始终未曾改变。",
+      "pinyin": "Jīntiān, hùliánwǎng hé shèjiāo méitǐ ràng xúnzhǎo bànlǚ gèngjiā biànjié, dàn rénmen duì zhēnchéng àiqíng de zhuīqiú shǐzhōng wèicéng gǎibiàn.",
+      "vi": "Internet giúp việc tìm kiếm bạn đời tiện lợi hơn, nhưng khao khát tình yêu chân thành thì bất biến.",
+      "audio_start_ms": null,
+      "audio_end_ms": null,
+      "tokens": [
+        {
+          "text": "今天",
+          "pinyin": "jīntiān",
+          "hanviet": "Kim Thiên",
+          "hsk": 1,
+          "word_id": "hsk1_144",
+          "meaning_vi": "hôm nay"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "互联网",
+          "pinyin": "hùliánwǎng",
+          "hanviet": "Hỗ Liên Võng",
+          "hsk": 4,
+          "word_id": "hsk4_299",
+          "meaning_vi": "internet"
+        },
+        {
+          "text": "和",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "hsk": 1,
+          "word_id": "hsk1_39",
+          "meaning_vi": "ăn"
+        },
+        {
+          "text": "社交",
+          "pinyin": "shèjiāo",
+          "hanviet": "Xã Giao",
+          "hsk": 7,
+          "word_id": "hsk7_3560",
+          "meaning_vi": "xã hội"
+        },
+        {
+          "text": "媒体",
+          "pinyin": "méitǐ",
+          "hanviet": "Môi Thể",
+          "hsk": 5,
+          "word_id": "hsk5_757",
+          "meaning_vi": "truyền thông, media"
+        },
+        {
+          "text": "让",
+          "pinyin": "ràng",
+          "hanviet": "Nhượng",
+          "hsk": 2,
+          "word_id": "hsk2_422",
+          "meaning_vi": "để cho, khiến"
+        },
+        {
+          "text": "寻找",
+          "pinyin": "xúnzhǎo",
+          "hanviet": "Tầm Trảo",
+          "hsk": 5,
+          "word_id": "hsk5_1317",
+          "meaning_vi": "tìm kiếm"
+        },
+        {
+          "text": "伴侣",
+          "pinyin": "bànlǚ",
+          "hanviet": "Bạn Lữ",
+          "hsk": 7,
+          "word_id": "hsk7_85",
+          "meaning_vi": "bạn đời, người bạn đồng hành"
+        },
+        {
+          "text": "更加",
+          "pinyin": "gèngjiā",
+          "hanviet": "Canh Gia",
+          "hsk": 4,
+          "word_id": "hsk4_249",
+          "meaning_vi": "càng, càng thêm"
+        },
+        {
+          "text": "便捷",
+          "pinyin": "biànjié",
+          "hanviet": "Tiện Tiệp",
+          "hsk": 6,
+          "word_id": "hsk6_58",
+          "meaning_vi": "nhanh chóng tiện lợi, thuận tiện"
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "但",
+          "pinyin": "dàn",
+          "hanviet": "Đãn",
+          "hsk": 2,
+          "word_id": "hsk2_330",
+          "meaning_vi": "nhưng, nhưng mà"
+        },
+        {
+          "text": "人们",
+          "pinyin": "rén men",
+          "hanviet": "Nhân Môn"
+        },
+        {
+          "text": "对",
+          "pinyin": "duì",
+          "hanviet": "Đối",
+          "hsk": 1,
+          "word_id": "hsk1_79",
+          "meaning_vi": "đối với, hướng về (giới từ)"
+        },
+        {
+          "text": "真诚",
+          "pinyin": "zhēnchéng",
+          "hanviet": "Chân Thành",
+          "hsk": 5,
+          "word_id": "hsk5_1481",
+          "meaning_vi": "chân thành"
+        },
+        {
+          "text": "爱情",
+          "pinyin": "àiqíng",
+          "hanviet": "Ái Tình",
+          "hsk": 4,
+          "word_id": "hsk4_2",
+          "meaning_vi": "tình yêu"
+        },
+        {
+          "text": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "hsk": 1,
+          "word_id": "hsk1_60",
+          "meaning_vi": "của (trợ từ)"
+        },
+        {
+          "text": "追求",
+          "pinyin": "zhuīqiú",
+          "hanviet": "Truy Cầu",
+          "hsk": 5,
+          "word_id": "hsk5_1566",
+          "meaning_vi": "theo đuổi"
+        },
+        {
+          "text": "始终",
+          "pinyin": "shǐzhōng",
+          "hanviet": "Thủy Chung",
+          "hsk": 5,
+          "word_id": "hsk5_1027",
+          "meaning_vi": "trước sau, luôn luôn"
+        },
+        {
+          "text": "未曾",
+          "pinyin": "wèi céng",
+          "hanviet": "Vị Tằng"
+        },
+        {
+          "text": "改变",
+          "pinyin": "gǎibiàn",
+          "hanviet": "Cải Biến",
+          "hsk": 4,
+          "word_id": "hsk4_219",
+          "meaning_vi": "thay đổi"
+        },
+        {
+          "text": "。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_spotlight": [
+    "hsk4_639",
+    "hsk4_276",
+    "hsk4_830",
+    "hsk4_219",
+    "hsk2_324"
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "question_vi": "Quảng cáo kết hôn đầu tiên xuất hiện khi nào?",
+      "options_vi": [
+        "Năm 1695 tại nước Anh",
+        "Thời cổ đại La Mã",
+        "Mới có từ năm 2000"
+      ],
+      "answer": 0,
+      "explanation_vi": "Xuất hiện năm 1695 trên báo chí nước Anh."
+    },
+    {
+      "id": "q2",
+      "question_vi": "Tại Trung Quốc, quảng cáo tìm bạn đời bùng nổ vào giai đoạn nào?",
+      "options_vi": [
+        "Cuối thời Thanh - đầu thời Dân quốc với trào lưu tự do hôn nhân",
+        "Thời nhà Đường",
+        "Thời nhà Tống"
+      ],
+      "answer": 0,
+      "explanation_vi": "Bùng nổ khi tân văn hóa và tư tưởng tự do yêu đương lan rộng."
+    },
+    {
+      "id": "q3",
+      "question_vi": "Mục đích lớn nhất của quảng cáo kết hôn thời cận đại là gì?",
+      "options_vi": [
+        "Phá bỏ ràng buộc môn đăng hộ đối, tìm người tâm đầu ý hợp",
+        "Khoe khoang của cải",
+        "Tìm người làm công"
+      ],
+      "answer": 0,
+      "explanation_vi": "Chủ động tìm kiếm hạnh phúc theo sở thích và lý tưởng cá nhân."
+    }
+  ]
+}
