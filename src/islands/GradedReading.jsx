@@ -495,12 +495,19 @@ function StoryCard({ story }) {
             </button>
           </div>
         </div>{' '}
-        <div class="graded-card-body">
-          <h2 class="graded-card-zh-title" title={zhTitle}>
-            <span>{zhTitle}</span>
-          </h2>{' '}
-          <div class="graded-card-vi-title" title={viTitle}>{viTitle}</div>{' '}
-          <p class="graded-card-desc" title={descVi}>{descVi}</p>
+        <div class="graded-card-body" style={story.cover_image ? "display: flex; gap: 14px; align-items: flex-start; justify-content: space-between;" : ""}>
+          <div style={story.cover_image ? "flex: 1; min-width: 0;" : ""}>
+            <h2 class="graded-card-zh-title" title={zhTitle}>
+              <span>{zhTitle}</span>
+            </h2>{' '}
+            <div class="graded-card-vi-title" title={viTitle}>{viTitle}</div>{' '}
+            <p class="graded-card-desc" title={descVi}>{descVi}</p>
+          </div>
+          {story.cover_image ? (
+            <div class="graded-card-thumb-wrap" style="flex-shrink: 0; width: 76px; height: 76px; border-radius: 8px; overflow: hidden; border: 1px solid var(--graded-border); box-shadow: 0 1px 3px rgba(0,0,0,0.06); background: var(--graded-chip-bg);">
+              <img src={story.cover_image} alt={viTitle} loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+            </div>
+          ) : null}
         </div>
       </div>{' '}
       <footer class="graded-card-footer">
@@ -911,6 +918,14 @@ function StoryReader({ story }) {
         )])}
       </div>{' '}
       <main class="graded-passage-card">
+        {story.cover_image ? (
+          <div class="graded-story-illustration-wrap" style="margin-bottom: 24px; border-radius: 12px; overflow: hidden; border: 1px solid var(--graded-border); background: var(--bg-card); text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+            <img src={story.cover_image} alt={story.title ? story.title.vi : ''} loading="lazy" style="max-height: 420px; max-width: 100%; object-fit: contain; margin: 0 auto; display: block;" />
+            <div style="padding: 7px 14px; font-size: 0.8rem; color: var(--text-secondary); background: var(--graded-chip-bg); border-top: 1px solid var(--graded-border); font-style: italic;">
+              {`📖 Minh họa từ sách: 《万物有意思》${story.page_display ? ` (${story.page_display})` : ''}`}
+            </div>
+          </div>
+        ) : null}
         <SentenceStream story={story} />
       </main>{' '}
       <section class="graded-section-card">

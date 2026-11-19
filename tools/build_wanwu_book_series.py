@@ -1375,6 +1375,9 @@ def main():
 
         spotlight = resolve_spotlight(sentences, sdata.get("preferred_spotlight", []))
 
+        img_rel = f"assets/images/readings/wanwu/{sid}.webp"
+        has_img = (REPO_ROOT / img_rel).exists()
+
         story_obj = {
             "id": sid,
             "level": sdata["level"],
@@ -1386,6 +1389,8 @@ def main():
             "topic": sdata["topic"],
             "topic_vi": sdata["topic_vi"],
             "icon": sdata["icon"],
+            "cover_image": img_rel if has_img else None,
+            "illustration": img_rel if has_img else None,
             "estimatedMinutes": sdata["estimatedMinutes"],
             "description_vi": sdata["description_vi"],
             "sentences": sentences,
@@ -1423,6 +1428,8 @@ def main():
             "topic": sdata["topic"],
             "topic_vi": sdata["topic_vi"],
             "icon": sdata["icon"],
+            "cover_image": img_rel if has_img else None,
+            "illustration": img_rel if has_img else None,
             "estimatedMinutes": sdata["estimatedMinutes"],
             "description_vi": sdata["description_vi"],
             "sentence_count": len(sentences),
