@@ -44,6 +44,13 @@ def test_graded_reading_jsx_layout_structure():
     assert "graded-card-thumb-wrap" in jsx_content
     assert "graded-card-footer" in jsx_content
 
+    # 5. Mobile reader 3-tier hierarchy & illustration frame
+    assert "graded-reader-top-bar" in jsx_content
+    assert "graded-reader-title-block" in jsx_content
+    assert "graded-reader-actions-bar" in jsx_content
+    assert "graded-illustration-frame" in jsx_content
+    assert "graded-legend-title" in jsx_content
+
 def test_graded_reading_css_responsive_grid():
     css_path = ROOT / "assets" / "css" / "graded-reading.css"
     assert css_path.exists(), "graded-reading.css not found"
@@ -58,6 +65,18 @@ def test_graded_reading_css_responsive_grid():
 
     # 2-column tablet grid
     assert "grid-template-columns: repeat(2, 1fr)" in css_content
+
+    # 1-column mobile grid
+    assert "grid-template-columns: 1fr" in css_content
+
+    # Horizontal filter scrolling protection
+    assert "overflow-x: auto" in css_content
+    assert "-webkit-overflow-scrolling: touch" in css_content
+
+    # Reader mobile 3-tier grid & zen mode
+    assert "grid-template-columns: repeat(3, 1fr)" in css_content
+    assert "padding-bottom: 96px" in css_content
+    assert "max-height: 150px" in css_content
 
     # 1-column mobile grid
     assert "grid-template-columns: 1fr" in css_content

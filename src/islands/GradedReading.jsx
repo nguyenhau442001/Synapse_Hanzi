@@ -1031,42 +1031,81 @@ function Quiz({ story }) {
   );
 }
 
+const imageExpanded = signal(false);
+
 function ReaderNav({ story }) {
   const isRead = isStoryRead(story.id);
   const p = prefs.value;
   const playingAll = playingId.value === 'full-story';
+  const lvl = (story.level || 'hsk1').toLowerCase();
+
   return (
     <header class="graded-reader-nav">
-      <button type="button" class="graded-back-btn" onClick={goBackToHub} title="Trở về danh sách bài đọc (Esc)">
-        ← Hub bài đọc
-      </button>{' '}
-      <div class="graded-reader-title-group">
-        <h1 class="graded-reader-zh-title">
-          <span>{story.title.zh}</span>{' '}
-          <span class={`graded-card-level-badge lvl-${(story.level || 'hsk1').toLowerCase()}`}>{story.level}</span>
-        </h1>{' '}
-        <div class="graded-reader-vi-title">
+      {/* Row 1: Back button on left, HSK Badge + Duration in middle, Mark-Read toggle on right */}
+      <div class="graded-reader-top-bar">
+        <button type="button" class="graded-back-btn" onClick={goBackToHub} title="Trở về danh sách bài đọc (Esc)">
+          ← Hub bài đọc
+        </button>
+        <div class="graded-reader-top-meta">
+          <span class={`graded-card-level-badge lvl-${lvl}`}>{story.level}</span>
           {story.page_display ? (
-            <span style="display: inline-block; margin-right: 6px; padding: 1px 7px; border-radius: 4px; background: rgba(194,101,74,0.15); color: #c2654a; font-weight: 700; font-size: 0.82rem;">
+            <span class="graded-reader-page-badge" title="Trang trong sách">
               {`📖 ${story.page_display}`}
             </span>
           ) : null}
-          {`${story.title.vi} · ⏱️ ${story.estimatedMinutes} phút`}
+          <span class="graded-reader-duration" title="Thời lượng đọc ước tính">
+            {`⏱️ ${story.estimatedMinutes || 3}m`}
+          </span>
         </div>
-      </div>{' '}
-      <div class="graded-reader-actions">
-        <button type="button" id="playFullStoryBtn" class={playingAll ? 'graded-toggle-btn active' : 'graded-toggle-btn'} onClick={speakFullStory} title="Nghe đọc toàn bộ bài đọc">
-          <span>{playingAll ? '⏹ Dừng đọc' : '🔊 Đọc toàn bài'}</span>
-        </button>{' '}
-        <button type="button" id="toggleReadStoryBtn" class={`graded-toggle-btn ${isRead ? 'active read-active' : ''}`} onClick={toggleCurrentStoryRead}
-          title={isRead ? 'Đã đọc (Bấm để hủy)' : 'Đánh dấu đã đọc bài này'}>
+        <button
+          type="button"
+          id="toggleReadStoryBtn"
+          class={`graded-toggle-btn graded-reader-mark-btn ${isRead ? 'active read-active' : ''}`}
+          onClick={toggleCurrentStoryRead}
+          title={isRead ? 'Đã đọc (Bấm để hủy)' : 'Đánh dấu đã đọc bài này'}
+        >
           <span>{isRead ? '✓ Đã đọc' : '○ Đã đọc'}</span>
-        </button>{' '}
-        <button type="button" id="togglePinyinBtn" class={`graded-toggle-btn ${p.showPinyin ? 'active' : ''}`} onClick={togglePinyin} title="Bật/Tắt phiên âm Pinyin">
+        </button>
+      </div>
+
+      {/* Row 2: Chinese Title (100% full width, never squished or prematurely broken) + Vietnamese subtitle */}
+      <div class="graded-reader-title-block">
+        <h1 class="graded-reader-zh-title">
+          <span>{story.title.zh}</span>
+        </h1>
+        <div class="graded-reader-vi-title">
+          {story.title.vi}
+        </div>
+      </div>
+
+      {/* Row 3: Reading Action buttons (Audio, Pinyin, Translation) spaced in a 1fr 1fr 1fr grid */}
+      <div class="graded-reader-actions-bar">
+        <button
+          type="button"
+          id="playFullStoryBtn"
+          class={`graded-toggle-btn ${playingAll ? 'active' : ''}`}
+          onClick={speakFullStory}
+          title="Nghe đọc toàn bộ bài đọc"
+        >
+          <span>{playingAll ? '⏹ Dừng' : '🔊 Nghe bài'}</span>
+        </button>
+        <button
+          type="button"
+          id="togglePinyinBtn"
+          class={`graded-toggle-btn ${p.showPinyin ? 'active' : ''}`}
+          onClick={togglePinyin}
+          title="Bật/Tắt phiên âm Pinyin"
+        >
           拼 Pinyin
-        </button>{' '}
-        <button type="button" id="toggleTransBtn" class={`graded-toggle-btn ${p.showTranslation ? 'active' : ''}`} onClick={toggleTranslation} title="Bật/Tắt bản dịch tiếng Việt">
-          🇻🇳 Dịch
+        </button>
+        <button
+          type="button"
+          id="toggleTransBtn"
+          class={`graded-toggle-btn ${p.showTranslation ? 'active' : ''}`}
+          onClick={toggleTranslation}
+          title="Bật/Tắt bản dịch tiếng Việt"
+        >
+          🇻🇳 Bản dịch
         </button>
       </div>
     </header>
@@ -1099,23 +1138,37 @@ function SectionTitle({ icon, text }) {
 }
 
 function StoryReader({ story }) {
+  const isExpanded = imageExpanded.value;
   return (
     <div class="graded-reading-container graded-reader-shell">
       <ReaderNav story={story} />{' '}
       <div class="graded-srs-legend-bar" aria-label="Chú giải trạng thái từ vựng">
-        <span style="font-weight: 700; color: var(--text-secondary);">Vốn từ cá nhân:</span>
-        {[['mastered', 'Đã thuộc'], ['learning', 'Đang học (SRS)'], ['new', 'Từ mới'], ['overlevel', 'Vượt cấp (+1)']].map(([cls, label]) => [' ', (
-          <div class="graded-legend-item" key={cls}>
-            <span class={`legend-swatch ${cls}`}></span>{' '}
-            <span>{label}</span>
-          </div>
-        )])}
+        <span class="graded-legend-title">Vốn từ:</span>
+        <div class="graded-legend-items">
+          {[['mastered', 'Đã thuộc'], ['learning', 'Đang học (SRS)'], ['new', 'Từ mới'], ['overlevel', 'Vượt cấp (+1)']].map(([cls, label]) => (
+            <div class="graded-legend-item" key={cls}>
+              <span class={`legend-swatch ${cls}`}></span>
+              <span>{label}</span>
+            </div>
+          ))}
+        </div>
       </div>{' '}
       <main class="graded-passage-card">
         {story.cover_image ? (
-          <div class="graded-story-illustration-wrap" style="margin-bottom: 24px; border-radius: 12px; overflow: hidden; border: 1px solid var(--graded-border); background: var(--bg-card); text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
-            <img src={story.cover_image} alt={story.title ? story.title.vi : ''} loading="lazy" style="max-height: 420px; max-width: 100%; object-fit: contain; margin: 0 auto; display: block;" />
-            <div style="padding: 7px 14px; font-size: 0.8rem; color: var(--text-secondary); background: var(--graded-chip-bg); border-top: 1px solid var(--graded-border); font-style: italic;">
+          <div class={`graded-story-illustration-wrap ${isExpanded ? 'is-expanded' : ''}`}>
+            <div
+              class="graded-illustration-frame"
+              onClick={() => { imageExpanded.value = !imageExpanded.value; }}
+              title={isExpanded ? 'Bấm để thu nhỏ ảnh' : 'Chạm để xem ảnh phóng to'}
+              role="button"
+              tabindex="0"
+            >
+              <img src={story.cover_image} alt={story.title ? story.title.vi : ''} loading="lazy" />
+              <span class="graded-illustration-zoom-tag" aria-hidden="true">
+                {isExpanded ? '✕ Thu gọn' : '🔍 Phóng to'}
+              </span>
+            </div>
+            <div class="graded-illustration-caption">
               {`📖 Minh họa từ sách: 《万物有意思》${story.page_display ? ` (${story.page_display})` : ''}`}
             </div>
           </div>

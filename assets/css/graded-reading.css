@@ -301,9 +301,21 @@ body.graded-reading-active #screenReadingAnalysis {
   display: none !important;
 }
 
-/* When reading an individual story, hide primary navigation tabs for full zen immersion */
-body.graded-story-active #primaryTabs {
+/* When reading an individual story, hide primary navigation tabs and search for full zen immersion */
+body.graded-story-active #primaryTabs,
+body.graded-story-active .header-search-wrap,
+body.graded-story-active .header-review-cluster,
+body.graded-story-active .header-streak-cluster,
+body.graded-story-active .header-divider {
   display: none !important;
+}
+
+body.graded-story-active .app-header {
+  margin-bottom: 8px !important;
+}
+
+body.graded-story-active .graded-reader-shell {
+  padding-bottom: 96px !important;
 }
 
 body.graded-reading-active #screenGradedReading {
@@ -1206,17 +1218,103 @@ body.graded-reading-active #screenGradedReading {
   gap: 16px;
 }
 
-/* Unified Navigation Bar */
+/* Unified Navigation Bar - 3-Tier Hierarchy */
 .graded-reader-nav {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 18px;
+  flex-direction: column;
+  padding: 12px 16px;
   border-radius: 14px;
   background: var(--graded-card-bg);
   border: 1px solid var(--graded-border);
-  gap: 12px;
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+/* Tier 1: Top Bar (Back on Left, HSK + Duration in Middle, Mark-Read on Right) */
+.graded-reader-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 8px;
+}
+
+.graded-reader-top-meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-width: 0;
+  overflow: hidden;
   flex-wrap: wrap;
+}
+
+.graded-reader-page-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 6px;
+  background: rgba(194, 101, 74, 0.14);
+  color: #c2654a;
+  border: 1px solid rgba(194, 101, 74, 0.3);
+  white-space: nowrap;
+}
+
+.graded-reader-duration {
+  font-size: 0.76rem;
+  color: var(--graded-text-secondary);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.graded-reader-mark-btn {
+  flex-shrink: 0;
+  padding: 5px 10px;
+  font-size: 0.78rem;
+}
+
+/* Tier 2: Title Block (100% Horizontal Width, Never Squished) */
+.graded-reader-title-block {
+  width: 100%;
+  text-align: center;
+  padding: 2px 0;
+}
+
+.graded-reader-zh-title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--graded-text-primary);
+  margin: 0 0 4px;
+  line-height: 1.35;
+  width: 100%;
+  word-break: break-word;
+}
+
+.graded-reader-vi-title {
+  font-size: 0.85rem;
+  color: var(--graded-text-secondary);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Tier 3: Reader Actions Bar (1fr 1fr 1fr Grid, Never Wraps or Clips) */
+.graded-reader-actions-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.graded-reader-actions-bar .graded-toggle-btn {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  padding: 7px 6px;
+  font-size: 0.82rem;
+  box-sizing: border-box;
 }
 
 .graded-back-btn {
@@ -1232,41 +1330,14 @@ body.graded-reading-active #screenGradedReading {
   align-items: center;
   gap: 6px;
   transition: all 0.2s;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .graded-back-btn:hover {
   border-color: var(--accent);
   color: var(--graded-text-primary);
   background: var(--graded-hover-bg);
-}
-
-.graded-reader-title-group {
-  text-align: center;
-  flex: 1;
-  min-width: 200px;
-}
-
-.graded-reader-zh-title {
-  font-size: 1.15rem;
-  font-weight: 800;
-  color: var(--graded-text-primary);
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-
-.graded-reader-vi-title {
-  font-size: 0.82rem;
-  color: var(--graded-text-secondary);
-  margin: 2px 0 0;
-}
-
-.graded-reader-actions {
-  display: flex;
-  align-items: center;
-  gap: 8px;
 }
 
 .graded-toggle-btn {
@@ -1309,26 +1380,49 @@ body.graded-reading-active #screenGradedReading {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
-  padding: 8px 16px;
+  gap: 12px;
+  padding: 6px 14px;
   border-radius: 10px;
   background: var(--graded-legend-bg);
   border: 1px solid var(--graded-legend-border);
-  font-size: 0.76rem;
+  font-size: 0.74rem;
   color: var(--graded-text-muted);
-  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+}
+
+.graded-srs-legend-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.graded-legend-title {
+  font-weight: 700;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+.graded-legend-items {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
 }
 
 .graded-legend-item {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
+  flex-shrink: 0;
 }
 
 .legend-swatch {
   display: inline-block;
-  width: 14px;
-  height: 10px;
+  width: 12px;
+  height: 8px;
   border-radius: 2px;
 }
 
@@ -1350,6 +1444,67 @@ body.graded-reading-active #screenGradedReading {
 .legend-swatch.overlevel {
   background: var(--graded-overlevel-bg);
   border: 1px solid var(--graded-overlevel-border);
+}
+
+/* Illustration Wrap & Frame */
+.graded-story-illustration-wrap {
+  margin-bottom: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--graded-border);
+  background: var(--bg-card);
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+.graded-illustration-frame {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  max-height: 380px;
+  background: var(--graded-chip-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.graded-illustration-frame img {
+  max-height: 380px;
+  max-width: 100%;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+  transition: transform 0.25s ease;
+}
+
+.graded-illustration-frame:hover img {
+  transform: scale(1.01);
+}
+
+.graded-illustration-zoom-tag {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 6px;
+  backdrop-filter: blur(4px);
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.graded-illustration-caption {
+  padding: 6px 14px;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  background: var(--graded-chip-bg);
+  border-top: 1px solid var(--graded-border);
+  font-style: italic;
 }
 
 /* Main Story Card */
@@ -1897,9 +2052,70 @@ body.graded-translation-hidden .graded-sentence-vi {
 @media (max-width: 768px) {
   .graded-hub-title { font-size: 1.3rem; }
   .graded-stories-grid { grid-template-columns: 1fr; }
-  .graded-passage-card { padding: 20px 16px; }
+  .graded-passage-card { padding: 18px 14px; }
   .graded-sentence-zh { font-size: 1.25rem; line-height: 2.3; }
   .graded-token-popover { width: calc(100vw - 32px); left: 16px !important; right: 16px !important; }
+
+  /* Mobile Story Reader 3-Tier Layout & Dimensions */
+  .graded-reader-nav {
+    padding: 10px 12px;
+    gap: 8px;
+  }
+  .graded-reader-top-bar {
+    gap: 6px;
+  }
+  .graded-reader-top-meta {
+    gap: 4px;
+  }
+  .graded-reader-zh-title {
+    font-size: 1.22rem;
+    line-height: 1.35;
+  }
+  .graded-reader-vi-title {
+    font-size: 0.8rem;
+  }
+  .graded-reader-actions-bar {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }
+  .graded-reader-actions-bar .graded-toggle-btn {
+    padding: 7px 4px;
+    font-size: 0.78rem;
+    gap: 3px;
+  }
+
+  /* Compact Adaptive Illustration */
+  .graded-story-illustration-wrap {
+    margin-bottom: 16px;
+  }
+  .graded-story-illustration-wrap .graded-illustration-frame {
+    max-height: 150px;
+  }
+  .graded-story-illustration-wrap .graded-illustration-frame img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .graded-story-illustration-wrap.is-expanded .graded-illustration-frame {
+    max-height: 480px;
+  }
+  .graded-story-illustration-wrap.is-expanded .graded-illustration-frame img {
+    height: auto;
+    max-height: 480px;
+    object-fit: contain;
+  }
+
+  /* Compact SRS Legend */
+  .graded-srs-legend-bar {
+    padding: 5px 10px;
+    gap: 8px;
+    font-size: 0.7rem;
+  }
+
+  /* Zen Mode Bottom Safe Area */
+  .graded-reader-shell {
+    padding-bottom: 96px !important;
+  }
 }
 
 /* ==========================================================================
