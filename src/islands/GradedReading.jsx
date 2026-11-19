@@ -5,6 +5,7 @@
 import { render } from 'preact';
 import { useEffect } from 'preact/hooks';
 import { signal, computed } from '@preact/signals';
+import { toggleTheme } from './ThemeManager.js';
 
 /* global exampleSpeechSpeed, SRS, currentLevel, srsCards, SpaRouter -- classic-script globals */
 
@@ -41,7 +42,24 @@ function setMangaSpread(on) {
   mangaSpreadPref.value = on;
   try { localStorage.setItem(MANGA_SPREAD_KEY, on ? '1' : '0'); } catch (e) { /* ignore */ }
 }
-const showMangaShortcutsModal = signal(false);
+const showMangaShortcutsModal = signal(false); // settings (⚙) popover, which also lists the shortcuts
+const mangaAppTheme = signal(typeof document !== 'undefined' && document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light');
+const MANGA_CANVAS_KEY = 'manga.canvas';
+try { if (localStorage.getItem(MANGA_CANVAS_KEY) === 'sepia') mangaCanvasTheme.value = 'sepia'; } catch (e) { /* storage unavailable */ }
+
+// One look control for the reader: light / paper (light + sepia stage) / dark (app theme).
+function getMangaLook() {
+  if (mangaAppTheme.value === 'dark') return 'dark';
+  return mangaCanvasTheme.value === 'sepia' ? 'sepia' : 'light';
+}
+function setMangaLook(look) {
+  const wantDark = look === 'dark';
+  const isDark = document.documentElement.dataset.theme === 'dark';
+  if (wantDark !== isDark) toggleTheme();
+  mangaAppTheme.value = wantDark ? 'dark' : 'light';
+  mangaCanvasTheme.value = look === 'sepia' ? 'sepia' : 'light';
+  try { localStorage.setItem(MANGA_CANVAS_KEY, mangaCanvasTheme.value); } catch (e) { /* storage unavailable */ }
+}
 let mangaManifestData = [];
 let mangaManifestLoaded = false;
 const mangaStoryCache = {};
@@ -1481,6 +1499,43 @@ function MangaWordPanel({ dialogues, current, multiPage }) {
   );
 }
 
+function MangaSegmented({ label, options, value, onPick }) {
+  return (
+    <div class="manga-setting-row">
+      <span class="manga-setting-label">{label}</span>
+      <div class="manga-segmented" role="group" aria-label={label}>
+        {options.map(([val, text]) => (
+          <button key={val} type="button" class={value === val ? 'active' : ''} aria-pressed={value === val} onClick={() => onPick(val)}>{text}</button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function MangaSettings({ canSpread, spread }) {
+  return (
+    <div class="manga-settings" role="dialog" aria-label="Cài đặt đọc" onClick={(e) => e.stopPropagation()}>
+      {canSpread ? (
+        <MangaSegmented label="Bố cục" value={spread ? 'two' : 'one'} options={[['one', '1 trang'], ['two', '2 trang']]} onPick={(v) => setMangaSpread(v === 'two')} />
+      ) : null}
+      <MangaSegmented label="Giao diện" value={getMangaLook()} options={[['light', 'Sáng'], ['sepia', 'Giấy'], ['dark', 'Tối']]} onPick={setMangaLook} />
+      <label class="manga-setting-row manga-setting-check">
+        <span class="manga-setting-label">Số bóng thoại trên trang</span>
+        <input type="checkbox" checked={showMangaOutlines.value} onChange={(e) => { showMangaOutlines.value = e.target.checked; }} />
+      </label>
+      <div class="manga-settings-keys">
+        <div class="manga-setting-label">Phím tắt</div>
+        <div class="manga-shortcut-row"><span>Trang trước / sau</span><span><kbd>←</kbd> <kbd>→</kbd></span></div>
+        <div class="manga-shortcut-row"><span>Bóng thoại trước / sau</span><span><kbd>↑</kbd> <kbd>↓</kbd></span></div>
+        <div class="manga-shortcut-row"><span>1 trang / 2 trang</span><span><kbd>D</kbd></span></div>
+        <div class="manga-shortcut-row"><span>Số bóng thoại</span><span><kbd>O</kbd></span></div>
+        <div class="manga-shortcut-row"><span>Toàn màn hình</span><span><kbd>F</kbd></span></div>
+        <div class="manga-shortcut-row"><span>Đóng / về tủ truyện</span><span><kbd>Esc</kbd></span></div>
+      </div>
+    </div>
+  );
+}
+
 function MangaViewer({ story }) {
   const totalPages = (story && story.pages) ? story.pages.length : 1;
   const spread = mangaSpreadPref.value && mangaWideViewport.value && totalPages > 1;
@@ -1533,10 +1588,12 @@ function MangaViewer({ story }) {
     }
   };
 
+  // Immersive reading: the reader covers the app chrome and owns the viewport.
   useEffect(() => {
-    const shell = document.getElementById('mangaViewerShell');
-    if (shell) shell.scrollIntoView({ block: 'start' });
-  }, [pageIdx, spread]);
+    document.body.classList.add('manga-reading');
+    mangaAppTheme.value = document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light';
+    return () => document.body.classList.remove('manga-reading');
+  }, []);
 
   useEffect(() => {
     const onFsChange = () => { mangaIsFullscreen.value = Boolean(document.fullscreenElement); };
@@ -1622,46 +1679,41 @@ function MangaViewer({ story }) {
       class={`manga-viewer-root theme-${mangaCanvasTheme.value} ${spread ? 'is-spread' : ''}`}
       onClick={() => { if (showMangaShortcutsModal.value) showMangaShortcutsModal.value = false; }}
     >
-      <header class="manga-header" onClick={(e) => e.stopPropagation()}>
-        <button type="button" class="manga-back-btn" onClick={goBackToMangaHub} title="Trở về tủ truyện (Esc)">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"></path><path d="m12 19-7-7 7-7"></path></svg>
-          <span>Tủ truyện</span>
+      <header class="manga-topbar" onClick={(e) => e.stopPropagation()}>
+        <button type="button" class="manga-icon-btn" onClick={goBackToMangaHub} aria-label="Về tủ truyện" title="Về tủ truyện (Esc)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"></path><path d="m12 19-7-7 7-7"></path></svg>
         </button>
+        <span class="manga-brand" aria-hidden="true">
+          <img src="assets/images/logo.svg" alt="" width="22" height="22" />
+          <span class="manga-brand-name" lang="zh-Hans">汉字思维</span>
+        </span>
+        <span class="manga-topbar-sep" aria-hidden="true"></span>
         <div class="manga-title-group" title={story.title.vi}>
           <span class="manga-title-zh" lang="zh-Hant">{story.title.zh_trad || story.title.zh}</span>
-          <span class="manga-title-vi">{story.title.vi}</span>
           {story.difficulty ? <span class="manga-title-level">{String(story.difficulty).split('(')[0].trim()}</span> : null}
         </div>
-        <div class="manga-header-tools">
-          {mangaWideViewport.value && totalPages > 1 && (
-            <div class="manga-segmented" role="group" aria-label="Bố cục trang">
-              <button type="button" class={!spread ? 'active' : ''} aria-pressed={!spread} onClick={() => setMangaSpread(false)} title="Một trang kèm bảng từ (Phím D)">1 trang</button>
-              <button type="button" class={spread ? 'active' : ''} aria-pressed={spread} onClick={() => setMangaSpread(true)} title="Hai trang như sách mở (Phím D)">2 trang</button>
-            </div>
-          )}
-          <div class="manga-segmented" role="group" aria-label="Nền đọc">
-            <button type="button" class={mangaCanvasTheme.value === 'light' ? 'active' : ''} aria-pressed={mangaCanvasTheme.value === 'light'} onClick={() => { mangaCanvasTheme.value = 'light'; }}>Sáng</button>
-            <button type="button" class={mangaCanvasTheme.value === 'sepia' ? 'active' : ''} aria-pressed={mangaCanvasTheme.value === 'sepia'} onClick={() => { mangaCanvasTheme.value = 'sepia'; }}>Giấy</button>
-            <button type="button" class={mangaCanvasTheme.value === 'theater' ? 'active' : ''} aria-pressed={mangaCanvasTheme.value === 'theater'} onClick={() => { mangaCanvasTheme.value = 'theater'; }}>Tối</button>
-          </div>
-          <button
-            type="button"
-            class={`manga-tool-btn ${showMangaOutlines.value ? 'active' : ''}`}
-            aria-pressed={showMangaOutlines.value}
-            onClick={() => { showMangaOutlines.value = !showMangaOutlines.value; }}
-            title="Hiện/ẩn khung bóng thoại (Phím O)"
-          >
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.4A8 8 0 1 1 21 12Z"></path></svg>
-            <span>Bóng thoại</span>
-          </button>
-          <button type="button" class="manga-icon-btn" onClick={toggleFullscreen} aria-label="Toàn màn hình" title={mangaIsFullscreen.value ? 'Thoát toàn màn hình (Phím F)' : 'Toàn màn hình (Phím F)'}>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              {mangaIsFullscreen.value
-                ? <path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"></path>
-                : <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>}
-            </svg>
-          </button>
+        <div class="manga-topbar-progress" aria-label={`Trang ${lastVisibleIdx + 1} trên ${totalPages}`}>
+          <span class="manga-topbar-track"><i style={`width: ${progressPct}%;`}></i></span>
+          <span class="manga-topbar-count">{`${lastVisibleIdx + 1}/${totalPages}`}</span>
         </div>
+        <button
+          type="button"
+          class={`manga-icon-btn ${showMangaShortcutsModal.value ? 'active' : ''}`}
+          aria-label="Cài đặt đọc"
+          aria-expanded={showMangaShortcutsModal.value}
+          title="Cài đặt đọc (?)"
+          onClick={() => { showMangaShortcutsModal.value = !showMangaShortcutsModal.value; }}
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"></path></svg>
+        </button>
+        <button type="button" class="manga-icon-btn" onClick={toggleFullscreen} aria-label="Toàn màn hình" title={mangaIsFullscreen.value ? 'Thoát toàn màn hình (F)' : 'Toàn màn hình (F)'}>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            {mangaIsFullscreen.value
+              ? <path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"></path>
+              : <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>}
+          </svg>
+        </button>
+        {showMangaShortcutsModal.value ? <MangaSettings canSpread={mangaWideViewport.value && totalPages > 1} spread={spread} /> : null}
       </header>
 
       <div class="manga-reader-body">
@@ -1679,7 +1731,6 @@ function MangaViewer({ story }) {
             <div class="manga-page-progress">
               <div class="manga-page-progress-row">
                 <span><strong>{lastVisibleIdx > pageIdx ? `Trang ${pageIdx + 1}–${lastVisibleIdx + 1}` : `Trang ${pageIdx + 1}`}</strong>{` / ${totalPages}`}</span>
-                <button type="button" class="manga-kbd-btn" onClick={(e) => { e.stopPropagation(); showMangaShortcutsModal.value = !showMangaShortcutsModal.value; }} title="Phím tắt" aria-label="Phím tắt"><kbd>?</kbd></button>
               </div>
               <input
                 type="range"
@@ -1704,17 +1755,6 @@ function MangaViewer({ story }) {
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
             </button>
 
-            {showMangaShortcutsModal.value && (
-              <div class="manga-shortcuts-popover" onClick={(e) => e.stopPropagation()}>
-                <div class="manga-shortcuts-title">Phím tắt</div>
-                <div class="manga-shortcut-row"><span>Trang trước / sau</span><span><kbd>←</kbd> <kbd>→</kbd></span></div>
-                <div class="manga-shortcut-row"><span>Bóng thoại trước / sau</span><span><kbd>↑</kbd> <kbd>↓</kbd></span></div>
-                <div class="manga-shortcut-row"><span>1 trang / 2 trang</span><span><kbd>D</kbd></span></div>
-                <div class="manga-shortcut-row"><span>Hiện/ẩn khung bóng thoại</span><span><kbd>O</kbd></span></div>
-                <div class="manga-shortcut-row"><span>Toàn màn hình</span><span><kbd>F</kbd></span></div>
-                <div class="manga-shortcut-row"><span>Về tủ truyện</span><span><kbd>Esc</kbd></span></div>
-              </div>
-            )}
           </nav>
 
           {lastVisibleIdx === totalPages - 1 ? (
