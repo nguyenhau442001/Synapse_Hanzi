@@ -1357,7 +1357,8 @@ function bubbleStyle(b) {
 }
 
 const mangaTokenIdx = signal(-1); // -1 = no word card until a word is tapped
-const mangaShowVi = signal(false); // translation hidden until asked for (active recall)
+const mangaShowVi = signal(false);
+const mangaSheetOpen = signal(false); // mobile bottom sheet: peek (false) / expanded (true) // translation hidden until asked for (active recall)
 const mangaSeen = signal({});
 
 // Display script: Traditional by default (matches the scan). Lookup stays keyed to Simplified (`text`).
@@ -1463,7 +1464,16 @@ function MangaWordPanel({ current, order, onStep }) {
   const speaker = current && current.character ? current.character.split('(')[0].trim() : '';
 
   return (
-    <aside class="manga-panel" aria-label="Bảng từ" onClick={(e) => e.stopPropagation()}>
+    <aside class={`manga-panel ${mangaSheetOpen.value ? 'is-open' : ''}`} aria-label="Bảng từ" onClick={(e) => e.stopPropagation()}>
+      <button
+        type="button"
+        class="manga-sheet-handle"
+        aria-expanded={mangaSheetOpen.value}
+        aria-label={mangaSheetOpen.value ? 'Thu gọn bảng từ' : 'Mở rộng bảng từ'}
+        onClick={() => { mangaSheetOpen.value = !mangaSheetOpen.value; }}
+      >
+        <span aria-hidden="true"></span>
+      </button>
       {current ? (
         <div class="manga-panel-sentence">
           <div class="manga-panel-row">
@@ -1488,7 +1498,11 @@ function MangaWordPanel({ current, order, onStep }) {
                 class={`manga-sent-token band-${mangaHskBand(t.hsk)} ${i === tIdx ? 'is-active' : ''}`}
                 aria-pressed={i === tIdx}
                 title={mangaHskLabel(t.hsk)}
-                onClick={() => { mangaTokenIdx.value = i === tIdx ? -1 : i; }}
+                onClick={() => {
+                  mangaTokenIdx.value = i === tIdx ? -1 : i;
+                  // On phones the word card sits below the peek: open the sheet to show it.
+                  if (i !== tIdx && window.matchMedia('(max-width: 767px)').matches) mangaSheetOpen.value = true;
+                }}
               >
                 {mangaPinyinOn.value ? <span class="manga-sent-py">{t.pinyin}</span> : null}
                 <span class="manga-sent-hz">{mangaText(t)}</span>
@@ -1863,7 +1877,7 @@ function MangaViewer({ story }) {
           <span class="manga-title-zh" lang={mangaLang()}>{mangaText(story.title)}</span>
           {coverage ? (
             <span class="manga-title-level" title={`${coverage.pct}% số từ (trừ tên riêng, dấu câu) thuộc ${coverage.label.replace('> ', '')} trở xuống`}>
-              {`${coverage.label} · ${coverage.pct}%`}
+              {coverage.label}<span class="manga-badge-pct">{` · ${coverage.pct}%`}</span>
             </span>
           ) : null}
         </div>
