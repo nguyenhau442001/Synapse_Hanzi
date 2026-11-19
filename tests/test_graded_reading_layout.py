@@ -19,31 +19,30 @@ def test_graded_reading_jsx_layout_structure():
     assert jsx_path.exists(), "GradedReading.jsx not found"
     jsx_content = jsx_path.read_text(encoding="utf-8")
 
-    # 1. Compact header and reading progress
-    assert "graded-hub-header" in jsx_content
-    assert "graded-hub-progress-card" in jsx_content
-    assert "graded-hub-progress-bar" in jsx_content
-    assert "graded-hub-hero" not in jsx_content  # Oversized hero replaced
+    # 1. Hub opens on a continue-reading strip instead of the old hero header
+    assert "graded-continue" in jsx_content
+    assert "graded-hub-header" not in jsx_content
+    assert "graded-collections-strip" not in jsx_content  # duplicated the source filter
+    assert "LAST_STORY_KEY" in jsx_content
 
-    # 2. Streamlined secondary featured collection strip
-    assert "graded-collections-strip" in jsx_content
-    assert "graded-col-card" in jsx_content
-    assert "graded-book-strip" not in jsx_content  # legacy strip markup removed
+    # 2. Filter bar: search, source segment, topic/sort panel, HSK chips, hide-read
+    assert "graded-filterbar" in jsx_content
+    assert "graded-source-seg" in jsx_content
+    assert "graded-filter-panel" in jsx_content
+    assert "graded-level-chips" in jsx_content
+    assert "graded-hide-read" in jsx_content
+    assert "sourceFilter" in jsx_content  # source and level combine
+    assert "'suggested'" in jsx_content
 
-    # 3. Unified toolbar and structured filters
-    assert "graded-toolbar" in jsx_content
-    assert "graded-toolbar-top" in jsx_content
-    assert "graded-toolbar-filters" in jsx_content
-    assert "graded-filter-divider" in jsx_content
-    assert "graded-filter-levels" in jsx_content
-    assert "graded-results-bar" in jsx_content
+    # 3. Results heading and grid
+    assert "graded-results-head" in jsx_content
+    assert "graded-story-grid" in jsx_content
 
-    # 4. Reading card information hierarchy
-    assert "graded-card-titles" in jsx_content
-    assert "graded-card-zh-title" in jsx_content
-    assert "graded-card-vi-title" in jsx_content
-    assert "graded-card-thumb-wrap" in jsx_content
-    assert "graded-card-footer" in jsx_content
+    # 4. Story card: real link, separate mark button, no nested interactive elements
+    assert 'class="graded-card-link"' in jsx_content
+    assert "graded-card-mark" in jsx_content
+    assert "graded-card-cover" in jsx_content
+    assert 'role="button" aria-label={`Đọc bài' not in jsx_content
 
     # 5. Mobile reader 3-tier hierarchy & illustration frame
     assert "graded-reader-top-bar" in jsx_content
@@ -61,30 +60,25 @@ def test_graded_reading_css_responsive_grid():
     assert "max-width: 1040px" in css_content
     assert ".graded-reading-container" in css_content
 
-    # 3-column desktop grid
-    assert "grid-template-columns: repeat(3, 1fr)" in css_content
+    # Hub grid: 3 columns, 2 on tablets, card rows on phones
+    assert "grid-template-columns: repeat(3, minmax(0, 1fr))" in css_content
+    assert "grid-template-columns: repeat(2, minmax(0, 1fr))" in css_content
+    assert ".graded-story-grid { grid-template-columns: minmax(0, 1fr)" in css_content
 
-    # 2-column tablet grid
-    assert "grid-template-columns: repeat(2, 1fr)" in css_content
-
-    # 1-column mobile grid
-    assert "grid-template-columns: 1fr" in css_content
-
-    # Horizontal filter scrolling protection
+    # Level chips scroll horizontally with a faded edge; phone filter bar is sticky
     assert "overflow-x: auto" in css_content
     assert "-webkit-overflow-scrolling: touch" in css_content
+    assert "mask-image" in css_content
+    assert "position: sticky" in css_content
+
+    # Old hub blocks are gone
+    assert ".graded-hub-header" not in css_content
+    assert ".graded-col-card" not in css_content
 
     # Reader mobile 3-tier grid & zen mode
     assert "grid-template-columns: repeat(3, 1fr)" in css_content
     assert "padding-bottom: 96px" in css_content
     assert "max-height: 150px" in css_content
-
-    # 1-column mobile grid
-    assert "grid-template-columns: 1fr" in css_content
-
-    # Horizontal filter scrolling protection
-    assert "overflow-x: auto" in css_content
-    assert "-webkit-overflow-scrolling: touch" in css_content
 
 if __name__ == "__main__":
     test_graded_reading_jsx_layout_structure()

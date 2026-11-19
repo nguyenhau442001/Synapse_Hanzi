@@ -127,6 +127,7 @@ export function initAppEventBindings() {
 
   // Mobile bottom navigation items & dialogs
   onId('mobNavVocab', 'click', () => handlePrimaryTab('vocab'));
+  onId('mobNavReading', 'click', () => handlePrimaryTab('gradedReading'));
   onId('mobNavReview', 'click', () => handlePrimaryTab('review'));
   onId('mobNavNotebook', 'click', () => {
     if (typeof openMobileNotebookSheet === 'function') openMobileNotebookSheet();

@@ -68,9 +68,12 @@ const mangaStoryCache = {};
 const view = signal('idle');           // 'idle' | 'hub' | 'loading' | 'error' | 'story' | 'manga'
 const errorMessage = signal('');
 const activeStory = signal(null);
-const levelFilter = signal('all');
+const levelFilter = signal('all');    // 'all' | 'HSK1' ... 'HSK9'
+const sourceFilter = signal('all');   // 'all' | 'textbook' | 'wanwu'
+const hideRead = signal(false);
 const categoryFilter = signal('all');
-const sortOrder = signal('default');
+const sortOrder = signal('suggested'); // 'suggested' | 'level_asc' | 'time_asc' | 'time_desc' | 'title'
+const filterPanelOpen = signal(false);
 const searchQuery = signal('');
 const hubLimit = signal(PAGE_SIZE);
 const quizState = signal({});          // qId -> { selectedIdx, isCorrect }
@@ -96,6 +99,17 @@ const readStories = signal((() => {
 function savePrefs(next) {
   prefs.value = next;
   try { localStorage.setItem(PREFS_KEY, JSON.stringify(next)); } catch (e) { /* quota */ }
+}
+
+// The story opened most recently, offered as "Đọc tiếp" on the hub until it is marked read.
+const LAST_STORY_KEY = 'synapse_graded_last_story_v1';
+const lastStoryId = signal((() => {
+  try { return localStorage.getItem(LAST_STORY_KEY) || null; } catch (e) { return null; }
+})());
+
+function saveLastStory(storyId) {
+  lastStoryId.value = storyId;
+  try { localStorage.setItem(LAST_STORY_KEY, storyId); } catch (e) { /* quota */ }
 }
 
 function saveReadStories(next) {
@@ -313,34 +327,42 @@ function goBackToMangaHub() {
 // A story's category is the first part of its topic ("Gia đình & Bạn bè" -> "Gia đình").
 const storyCategory = (m) => (m.topic_vi || '').split('&')[0].trim();
 
+const isWanwuStory = (m) => m.series === 'wanwu' || Boolean(m.topic_vi && m.topic_vi.includes('Vạn vật'));
+const isTextbookStory = (m) => m.series === 'textbook' || m.id.startsWith('hsk');
+const levelNumOf = (m) => parseInt(String(m.level || '').replace(/\D/g, '') || '0', 10);
+
+function matchesSource(m, src) {
+  if (src === 'wanwu') return isWanwuStory(m);
+  if (src === 'textbook') return isTextbookStory(m);
+  return true;
+}
+
 function getFilteredManifest() {
   const lvl = levelFilter.value;
+  const src = sourceFilter.value;
   const cat = categoryFilter.value;
   const sort = sortOrder.value;
   const q = searchQuery.value.toLowerCase().trim();
-  return manifest.filter((m) => {
-    if (lvl === 'wanwu') {
-      const isWanwu = m.series === 'wanwu' || (m.topic_vi && m.topic_vi.includes('Vạn vật'));
-      if (!isWanwu) return false;
-    } else if (lvl === 'textbook') {
-      const isTextbook = m.series === 'textbook' || m.id.startsWith('hsk');
-      if (!isTextbook) return false;
-    } else if (lvl === 'read') {
-      if (!isStoryRead(m.id)) return false;
-    } else if (lvl !== 'all' && m.level.toLowerCase() !== lvl.toLowerCase()) {
-      return false;
-    }
+  const list = manifest.filter((m) => {
+    if (!matchesSource(m, src)) return false;
+    if (lvl !== 'all' && m.level.toUpperCase() !== lvl) return false;
+    if (hideRead.value && isStoryRead(m.id)) return false;
     if (cat !== 'all' && storyCategory(m) !== cat) return false;
     if (q) {
-      const fields = [m.title && m.title.zh, m.title && m.title.vi, m.description_vi, m.topic_vi].map((s) => (s || '').toLowerCase());
+      const fields = [m.title && m.title.zh, m.title && m.title.vi, m.description_vi, m.topic_vi].map((v) => (v || '').toLowerCase());
       if (!fields.some((f) => f.includes(q))) return false;
     }
     return true;
-  }).sort((a, b) => {
-    if (sort === 'time_asc') return (a.estimatedMinutes || 3) - (b.estimatedMinutes || 3);
-    if (sort === 'time_desc') return (b.estimatedMinutes || 3) - (a.estimatedMinutes || 3);
+  });
+  // Array.prototype.sort is stable, so ties keep the manifest order.
+  return list.sort((a, b) => {
+    if (sort === 'time_asc') return (a.estimatedMinutes || 0) - (b.estimatedMinutes || 0);
+    if (sort === 'time_desc') return (b.estimatedMinutes || 0) - (a.estimatedMinutes || 0);
     if (sort === 'title') return (a.title.vi || '').localeCompare(b.title.vi || '');
-    return 0;
+    if (sort === 'level_asc') return levelNumOf(a) - levelNumOf(b);
+    // 'suggested': unread first, then easier levels first
+    const readDiff = Number(isStoryRead(a.id)) - Number(isStoryRead(b.id));
+    return readDiff || levelNumOf(a) - levelNumOf(b);
   });
 }
 
@@ -354,6 +376,7 @@ async function init() {
     document.addEventListener('keydown', (e) => {
       if (e.key !== 'Escape') return;
       if (popover.value) closePopover();
+      else if (filterPanelOpen.value) filterPanelOpen.value = false;
       else if (activeMangaStory.value) goBackToMangaHub();
       else if (activeStory.value) goBackToHub();
     });
@@ -401,6 +424,7 @@ async function openStory(storyId, updateUrl = true) {
     const story = await loadStory(storyId);
     quizState.value = {};
     activeStory.value = story;
+    saveLastStory(storyId);
     if (updateUrl && typeof SpaRouter !== 'undefined') {
       SpaRouter.pushView({ view: 'tab', tab: 'gradedReading', story: storyId }, `${window.location.pathname}?tab=gradedReading&story=${storyId}`);
     }
@@ -421,11 +445,20 @@ function setFilter(sig, value) {
   renderHub();
 }
 
+// Legacy callers passed the source ('wanwu' / 'textbook') through the level filter.
+function setLevelOrSource(value) {
+  if (value === 'wanwu' || value === 'textbook') setFilter(sourceFilter, value);
+  else if (value === 'read') setFilter(hideRead, false);
+  else setFilter(levelFilter, value && value !== 'all' ? String(value).toUpperCase() : 'all');
+}
+
 function resetFilters() {
   searchQuery.value = '';
   categoryFilter.value = 'all';
   levelFilter.value = 'all';
-  sortOrder.value = 'default';
+  sourceFilter.value = 'all';
+  hideRead.value = false;
+  sortOrder.value = 'suggested';
   renderHub();
 }
 
@@ -585,91 +618,215 @@ function inspectByWordId(wid, event) {
 }
 
 // ---- Hub -------------------------------------------------------------------------------------
-const CHECK_SVG_PATH = <><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></>;
+const CHECK_ICON = <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="5 12 10 17 19 7"></polyline></svg>;
+const SEARCH_ICON = <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.5" y2="16.5"></line></svg>;
+const SLIDERS_ICON = <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="7" y1="12" x2="17" y2="12"></line><line x1="10" y1="18" x2="14" y2="18"></line></svg>;
+const PLAY_ICON = <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4v16l13-8z"></path></svg>;
+
+const SOURCE_OPTIONS = [
+  { value: 'all', label: 'Tất cả' },
+  { value: 'textbook', label: 'Giáo trình' },
+  { value: 'wanwu', label: '万物有意思' },
+];
+const SORT_OPTIONS = [
+  { value: 'suggested', label: 'Gợi ý cho bạn' },
+  { value: 'level_asc', label: 'Dễ → khó' },
+  { value: 'time_asc', label: 'Ngắn nhất trước' },
+  { value: 'time_desc', label: 'Dài nhất trước' },
+  { value: 'title', label: 'Tên bài A–Z' },
+];
+// Topics that duplicate the source filter or say nothing are left out of the topic list.
+const HIDDEN_TOPICS = new Set(['Chung']);
+
+const CJK_RE = /[㐀-鿿]/;
+// Function words would give many textbook covers the same glyph (我的一天, 我的猫…).
+const SEAL_SKIP = new Set('我你他她它们的了是在和与及一个这那有不也都很就要会去来上下中之对把被从到'.split(''));
+function sealCharOf(story) {
+  const chars = ((story.title && story.title.zh) || '').split('').filter((ch) => CJK_RE.test(ch));
+  return chars.find((ch) => !SEAL_SKIP.has(ch)) || chars[0] || '文';
+}
+
+function storySourceLabel(story) {
+  if (isWanwuStory(story)) {
+    const chapter = (story.description_vi || '').match(/chương\s+(\d+)/i);
+    if (chapter) return `万物有意思 · Ch.${chapter[1]}`;
+    return story.page_display ? `万物有意思 · ${story.page_display}` : '万物有意思';
+  }
+  const topic = storyCategory(story);
+  const base = isTextbookStory(story) ? 'Giáo trình HSK' : '';
+  if (topic && !HIDDEN_TOPICS.has(topic)) return base ? `${base} · ${topic}` : topic;
+  return base;
+}
+
+// Only real counts are shown; a missing field is hidden instead of faked.
+function storyMetaParts(story, { withWords = true } = {}) {
+  const sentCount = story.sentence_count ?? story.sentences_count;
+  const wordCount = story.spotlight_count ?? story.words_count;
+  return [
+    sentCount != null ? `${sentCount} câu` : null,
+    story.estimatedMinutes ? `${story.estimatedMinutes} phút` : null,
+    withWords && wordCount != null ? `${wordCount} từ trọng tâm` : null,
+  ].filter(Boolean);
+}
+
+const levelLabelOf = (story) => `HSK ${levelNumOf(story) || ''}`.trim();
+
+// Plain clicks open the story in place; modified clicks keep the real link (new tab, copy link).
+function onStoryLinkClick(event, storyId) {
+  if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+  event.preventDefault();
+  openStory(storyId);
+}
+
+const storyHref = (storyId) => `?tab=gradedReading&story=${encodeURIComponent(storyId)}`;
+
+function StoryCover({ story, className }) {
+  return story.cover_image ? (
+    <span class={className}><img src={story.cover_image} alt="" loading="lazy" /></span>
+  ) : (
+    <span class={`${className} is-seal`} aria-hidden="true">{sealCharOf(story)}</span>
+  );
+}
 
 function StoryCard({ story }) {
   const isRead = isStoryRead(story.id);
-  const lvl = (story.level || 'hsk1').toLowerCase();
-  // Only real counts are shown; a missing field is hidden instead of faked.
-  const sentCount = story.sentence_count ?? story.sentences_count;
-  const wordCount = story.spotlight_count ?? story.words_count;
-  const metaParts = [
-    sentCount != null ? `${sentCount} câu` : null,
-    wordCount != null ? `${wordCount} từ` : null,
-    story.estimatedMinutes ? `⏱️ ${story.estimatedMinutes}m` : null,
-  ].filter(Boolean);
   const zhTitle = story.title && story.title.zh ? story.title.zh : '';
   const viTitle = story.title && story.title.vi ? story.title.vi : '';
-  const descVi = story.description_vi || '';
-  const topicVi = story.topic_vi || '';
-  const isWanwu = story.series === 'wanwu' || (story.topic_vi && story.topic_vi.includes('Vạn vật'));
-  const isTextbook = story.series === 'textbook' || story.id.startsWith('hsk');
-  const readLabel = isRead ? 'Đã đọc (Bấm để hủy)' : 'Đánh dấu đã đọc';
+  const readLabel = isRead ? 'Bỏ đánh dấu đã đọc' : 'Đánh dấu đã đọc';
+  const isCurrent = lastStoryId.value === story.id && !isRead;
 
   return (
-    <article class={`graded-story-card ${isRead ? 'is-read' : ''}`} onClick={() => openStory(story.id)} tabindex="0" role="button" aria-label={`Đọc bài ${viTitle}`}>
-      <div class="graded-card-main">
-        {/* 1. Level, Collection & Topic Metadata */}
-        <header class="graded-card-header">
-          <div class="graded-card-header-left">
-            <span class={`graded-card-level-badge lvl-${lvl}`}>{story.level}</span>{' '}
-            {isWanwu ? (
-              <span class="graded-book-badge" title="Tủ sách Vạn vật thú vị">
-                {`📚 万物有意思${story.page_display ? ` · ${story.page_display}` : ''}`}
-              </span>
-            ) : isTextbook ? (
-              <span class="graded-textbook-badge" title="Bài đọc Giáo trình HSK Chuẩn">
-                📖 Giáo trình HSK
-              </span>
-            ) : null}
-            {(!isWanwu || !topicVi.includes('Vạn vật')) && topicVi ? (
-              <span class="graded-card-topic" title={topicVi}>{topicVi}</span>
-            ) : null}
-          </div>{' '}
-          <div class="graded-card-header-right">
-            <button type="button" class={`graded-card-mark-toggle ${isRead ? 'read' : ''}`} onClick={(e) => toggleStoryRead(story.id, e)} title={readLabel} aria-label={readLabel}>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill={isRead ? 'currentColor' : 'none'} stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">{CHECK_SVG_PATH}</svg>
-            </button>
-          </div>
-        </header>{' '}
-
-        {/* 2. Reading Titles (Full horizontal space) */}
-        <div class="graded-card-titles">
-          <h2 class="graded-card-zh-title" title={zhTitle}>
-            <span>{zhTitle}</span>
-          </h2>
-          <div class="graded-card-vi-title" title={viTitle}>{viTitle}</div>
-        </div>{' '}
-
-        {/* 3. Supporting Info & Illustration */}
-        <div class="graded-card-body">
-          {story.cover_image ? (
-            <div class="graded-card-thumb-wrap">
-              <img src={story.cover_image} alt={viTitle} loading="lazy" />
-            </div>
-          ) : null}
-          <p class="graded-card-desc" title={descVi}>{descVi}</p>
-        </div>
-      </div>{' '}
-
-      {/* 4. Secondary Learning Metadata Footer */}
-      <footer class="graded-card-footer">
-        <div class="graded-card-meta">
-          {metaParts.map((part, i) => (
-            <Fragment key={part}>
-              {i > 0 ? <><span class="graded-meta-divider">·</span>{' '}</> : null}
-              <span>{part}</span>{' '}
-            </Fragment>
-          ))}
-        </div>{' '}
-        <div class="graded-card-arrow" aria-hidden="true">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
-          </svg>
-        </div>
-      </footer>
+    <article class={`graded-card ${isRead ? 'is-read' : ''}`}>
+      <a class="graded-card-link" href={storyHref(story.id)} onClick={(e) => onStoryLinkClick(e, story.id)}>
+        <StoryCover story={story} className="graded-card-cover" />
+        <span class="graded-card-content">
+          <span class="graded-card-eyebrow">
+            <span class="graded-card-level">{levelLabelOf(story)}</span>
+            <span class="graded-card-source">{storySourceLabel(story)}</span>
+            {isCurrent ? <span class="graded-card-status">Đang đọc</span> : null}
+            {isRead ? <span class="graded-card-status is-done">Đã đọc</span> : null}
+          </span>
+          <span class="graded-card-zh" lang="zh">{zhTitle}</span>
+          <span class="graded-card-vi">{viTitle}</span>
+          <span class="graded-card-meta">{storyMetaParts(story).join(' · ')}</span>
+        </span>
+      </a>
+      <button type="button" class={`graded-card-mark ${isRead ? 'is-on' : ''}`} onClick={(e) => toggleStoryRead(story.id, e)} title={readLabel} aria-label={`${readLabel}: ${viTitle || zhTitle}`} aria-pressed={isRead}>
+        {CHECK_ICON}
+      </button>
     </article>
+  );
+}
+
+// The most recently opened story that is not finished yet, with the next unread one in its series.
+function ContinueReading() {
+  const story = manifest.find((m) => m.id === lastStoryId.value);
+  if (!story || isStoryRead(story.id)) return null;
+  const idx = manifest.indexOf(story);
+  const next = manifest.slice(idx + 1).find((m) => m.level === story.level && m.series === story.series && !isStoryRead(m.id));
+  return (
+    <section class="graded-continue" aria-label="Đọc tiếp">
+      <StoryCover story={story} className="graded-continue-cover" />
+      <div class="graded-continue-text">
+        <span class="graded-continue-eyebrow">Đọc tiếp</span>
+        <a class="graded-continue-title" lang="zh" href={storyHref(story.id)} onClick={(e) => onStoryLinkClick(e, story.id)}>{story.title.zh}</a>
+        <span class="graded-continue-meta">{[levelLabelOf(story), story.title.vi, ...storyMetaParts(story, { withWords: false })].filter(Boolean).join(' · ')}</span>
+      </div>
+      <div class="graded-continue-actions">
+        <a class="graded-continue-btn" href={storyHref(story.id)} onClick={(e) => onStoryLinkClick(e, story.id)} aria-label={`Đọc tiếp: ${story.title.vi || story.title.zh}`}>
+          {PLAY_ICON}<span>Đọc tiếp</span>
+        </a>
+        {next ? (
+          <a class="graded-continue-next" href={storyHref(next.id)} onClick={(e) => onStoryLinkClick(e, next.id)}>
+            Bài kế: <span lang="zh">{next.title.zh}</span> →
+          </a>
+        ) : null}
+      </div>
+    </section>
+  );
+}
+
+function SourceSegment({ counts }) {
+  return (
+    <div class="graded-source-seg" role="group" aria-label="Nguồn bài đọc">
+      {SOURCE_OPTIONS.map((opt) => (
+        <button
+          key={opt.value}
+          type="button"
+          class={sourceFilter.value === opt.value ? 'is-on' : ''}
+          aria-pressed={sourceFilter.value === opt.value}
+          onClick={() => setFilter(sourceFilter, opt.value)}
+        >
+          {opt.label}
+          {opt.value !== 'all' ? <span class="graded-source-count">{counts[opt.value]}</span> : null}
+        </button>
+      ))}
+    </div>
+  );
+}
+
+function HideReadToggle() {
+  return (
+    <label class="graded-hide-read">
+      <input type="checkbox" checked={hideRead.value} onChange={(e) => setFilter(hideRead, e.currentTarget.checked)} />
+      <span>Ẩn bài đã đọc</span>
+    </label>
+  );
+}
+
+// Topic + sort. A dropdown under its button on wide screens, a bottom sheet on phones
+// (which also carries the source and hide-read controls the narrow toolbar drops).
+function FilterPanel({ categories, counts, resultCount }) {
+  const ref = useRef(null);
+  useEffect(() => {
+    const onDown = (e) => {
+      if (ref.current && !ref.current.contains(e.target) && !e.target.closest('.graded-filter-btn')) filterPanelOpen.value = false;
+    };
+    document.addEventListener('pointerdown', onDown);
+    return () => document.removeEventListener('pointerdown', onDown);
+  }, []);
+  const close = () => { filterPanelOpen.value = false; };
+  return (
+    <>
+      <button type="button" class="graded-filter-backdrop" aria-label="Đóng bộ lọc" onClick={close}></button>
+      <div class="graded-filter-panel" id="gradedFilterPanel" ref={ref} role="dialog" aria-label="Chủ đề và sắp xếp">
+        <div class="graded-filter-panel-head">
+          <span class="graded-filter-panel-title">Lọc bài đọc</span>
+          <button type="button" class="graded-filter-panel-close" aria-label="Đóng" onClick={close}>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"></line><line x1="18" y1="6" x2="6" y2="18"></line></svg>
+          </button>
+        </div>
+        <div class="graded-filter-panel-body">
+          <fieldset class="graded-filter-group graded-only-narrow">
+            <legend>Nguồn</legend>
+            <SourceSegment counts={counts} />
+          </fieldset>
+          <fieldset class="graded-filter-group">
+            <legend>Sắp xếp</legend>
+            {SORT_OPTIONS.map((opt) => (
+              <label key={opt.value} class="graded-sort-option">
+                <input type="radio" name="gradedSort" value={opt.value} checked={sortOrder.value === opt.value} onChange={() => setFilter(sortOrder, opt.value)} />
+                <span>{opt.label}</span>
+              </label>
+            ))}
+          </fieldset>
+          <div class="graded-filter-group">
+            <label class="graded-filter-label" for="gradedTopicSelect">Chủ đề</label>
+            <select id="gradedTopicSelect" class="graded-topic-select" value={categoryFilter.value} onChange={(e) => setFilter(categoryFilter, e.currentTarget.value || 'all')}>
+              <option value="all">Mọi chủ đề</option>
+              {categories.map(([c, n]) => <option key={c} value={c}>{`${c} (${n})`}</option>)}
+            </select>
+          </div>
+          <div class="graded-filter-group graded-only-narrow">
+            <HideReadToggle />
+          </div>
+        </div>
+        <div class="graded-filter-panel-foot graded-only-narrow">
+          <button type="button" class="graded-btn-ghost" onClick={resetFilters}>Đặt lại</button>
+          <button type="button" class="graded-btn-primary" onClick={close}>{`Xem ${resultCount} bài`}</button>
+        </div>
+      </div>
+    </>
   );
 }
 
@@ -688,7 +845,7 @@ function LoadMore({ remaining }) {
         }, { rootMargin: '300px' });
         obs.observe(el);
       }}>
-      <button type="button" class="graded-filter-pill" onClick={loadMoreStories} style="padding: 10px 24px; font-weight: 700; font-size: 0.95rem;">
+      <button type="button" class="graded-btn-ghost" onClick={loadMoreStories}>
         {`Xem thêm bài đọc (${remaining} bài còn lại) ↓`}
       </button>
     </div>
@@ -729,233 +886,110 @@ function ModeSwitcher() {
 }
 
 function Hub() {
-  const readCount = manifest.filter((m) => isStoryRead(m.id)).length;
-  const progressPercent = manifest.length ? Math.round((readCount / manifest.length) * 100) : 0;
-  const categories = Array.from(new Set(manifest.map(storyCategory).filter(Boolean))).sort();
   const filtered = filteredManifest.value;
   const shown = filtered.slice(0, hubLimit.value);
-  const lvlFilter = levelFilter.value;
-  const wanwuCount = manifest.filter((m) => m.series === 'wanwu' || (m.topic_vi && m.topic_vi.includes('Vạn vật'))).length;
-  const textbookCount = manifest.filter((m) => m.series === 'textbook' || m.id.startsWith('hsk')).length;
-  const hasActiveFilters = Boolean(searchQuery.value || categoryFilter.value !== 'all' || levelFilter.value !== 'all' || sortOrder.value !== 'default');
+  const lvl = levelFilter.value;
+  const src = sourceFilter.value;
+  const inLevel = manifest.filter((m) => lvl === 'all' || m.level.toUpperCase() === lvl);
+  const counts = {
+    textbook: inLevel.filter(isTextbookStory).length,
+    wanwu: inLevel.filter(isWanwuStory).length,
+  };
+  const inScope = inLevel.filter((m) => matchesSource(m, src));
+  // Topics present in the current level + source, with story counts, A–Z.
+  const topicCounts = new Map();
+  inScope.forEach((m) => {
+    const c = storyCategory(m);
+    if (c && !HIDDEN_TOPICS.has(c) && !c.includes('Vạn vật')) topicCounts.set(c, (topicCounts.get(c) || 0) + 1);
+  });
+  if (categoryFilter.value !== 'all' && !topicCounts.has(categoryFilter.value)) topicCounts.set(categoryFilter.value, 0);
+  const categories = Array.from(topicCounts.entries()).sort((a, b) => a[0].localeCompare(b[0], 'vi'));
+  const readInScope = inScope.filter((m) => isStoryRead(m.id)).length;
+  const panelFilters = (categoryFilter.value !== 'all' ? 1 : 0) + (sortOrder.value !== 'suggested' ? 1 : 0);
+  const hasActiveFilters = Boolean(searchQuery.value || categoryFilter.value !== 'all' || lvl !== 'all' || src !== 'all' || hideRead.value || sortOrder.value !== 'suggested');
+  const sourceName = SOURCE_OPTIONS.find((o) => o.value === src);
+  const scopeTitle = [lvl === 'all' ? 'Tất cả cấp' : lvl.replace('HSK', 'HSK '), src !== 'all' ? sourceName.label : null].filter(Boolean).join(' · ');
+  const sortName = (SORT_OPTIONS.find((o) => o.value === sortOrder.value) || SORT_OPTIONS[0]).label;
 
   return (
-    <div class="graded-reading-container">
+    <div class={`graded-reading-container graded-hub ${filterPanelOpen.value ? 'is-filter-open' : ''}`}>
       <ModeSwitcher />
-      {/* 1. Compact Page Header & Progress */}
-      <header class="graded-hub-header">
-        <div class="graded-hub-header-left">
-          <button type="button" class="graded-back-btn" onClick={() => window.setPrimaryTab('vocab')} title="Quay lại Hub Từ vựng">
-            ← Hub Từ vựng
-          </button>
-          <div class="graded-hub-title-group">
-            <h1 class="graded-hub-title">
-              <span>汉字思维 · Graded Reading</span>
-              <span class="graded-hub-badge">Đọc hiểu HSK</span>
-            </h1>
-            <p class="graded-hub-subtitle">
-              Luyện đọc phân cấp theo ngữ cảnh · Vòng lặp học từ khép kín với SRS cá nhân
-            </p>
-          </div>
-        </div>
+      <ContinueReading />
 
-        <div class="graded-hub-progress-card" title={`Đã đọc ${readCount} trên tổng số ${manifest.length} bài`}>
-          <div class="graded-hub-progress-info">
-            <span class="graded-hub-progress-label">Tiến độ đọc</span>
-            <span class="graded-hub-progress-stat"><strong>{readCount}</strong>/{manifest.length} ({progressPercent}%)</span>
-          </div>
-          <div class="graded-hub-progress-bar">
-            <div class="graded-hub-progress-fill" style={`width: ${progressPercent}%;`}></div>
-          </div>
-        </div>
-      </header>{' '}
-
-      {/* 2. Dual Featured Collections Strip */}
-      <div class="graded-collections-strip">
-        <div
-          class={`graded-col-card textbook ${lvlFilter === 'textbook' ? 'active' : ''}`}
-          onClick={() => setFilter(levelFilter, lvlFilter === 'textbook' ? 'all' : 'textbook')}
-          role="button"
-          tabindex="0"
-          title="Lọc bài đọc Giáo trình HSK Chuẩn"
-        >
-          <div class="graded-col-left">
-            <span class="graded-col-icon">📖</span>
-            <div class="graded-col-text">
-              <div class="graded-col-title">Giáo trình HSK (H1 - H9)</div>
-              <div class="graded-col-desc">Sách giáo khoa phân cấp · {textbookCount} bài</div>
-            </div>
-          </div>
-          <span class="graded-col-action">
-            {lvlFilter === 'textbook' ? '✓ Đang xem' : 'Xem giáo trình →'}
-          </span>
-        </div>
-
-        <div
-          class={`graded-col-card wanwu ${lvlFilter === 'wanwu' ? 'active' : ''}`}
-          onClick={() => setFilter(levelFilter, lvlFilter === 'wanwu' ? 'all' : 'wanwu')}
-          role="button"
-          tabindex="0"
-          title="Lọc tủ sách Vạn vật thú vị"
-        >
-          <div class="graded-col-left">
-            <span class="graded-col-icon">📚</span>
-            <div class="graded-col-text">
-              <div class="graded-col-title">Tuyển tập 《万物有意思》</div>
-              <div class="graded-col-desc">Bách khoa đời sống minh họa · {wanwuCount} bài</div>
-            </div>
-          </div>
-          <span class="graded-col-action">
-            {lvlFilter === 'wanwu' ? '✓ Đang xem' : 'Xem tủ sách →'}
-          </span>
-        </div>
-      </div>{' '}
-
-      {/* 3. Unified Search and Filtering Toolbar */}
-      <div class="graded-toolbar">
-        <div class="graded-toolbar-top">
-          <div class="graded-search-box">
-            <span class="graded-search-icon" aria-hidden="true">🔍</span>
+      <section class="graded-filterbar" aria-label="Bộ lọc bài đọc">
+        <div class="graded-filterbar-row">
+          <label class="graded-search">
+            {SEARCH_ICON}
+            <span class="graded-sr-only">Tìm bài đọc</span>
             <input
               type="search"
               id="gradedSearchInput"
-              class="graded-search-input"
-              placeholder="Tìm bài đọc theo tiêu đề, chủ đề..."
+              placeholder="Tìm theo tiêu đề, chủ đề…"
               value={searchQuery.value}
               onInput={(e) => setFilter(searchQuery, e.currentTarget.value || '')}
-              aria-label="Tìm kiếm bài đọc"
             />
-            {searchQuery.value ? (
-              <button
-                type="button"
-                class="graded-search-clear-btn"
-                onClick={() => setFilter(searchQuery, '')}
-                aria-label="Xóa tìm kiếm"
-              >
-                ✕
-              </button>
-            ) : null}
+          </label>
+          <div class="graded-only-wide">
+            <SourceSegment counts={counts} />
           </div>
-
-          <div class="graded-select-group">
-            <select
-              id="gradedCategorySelect"
-              class="graded-select"
-              value={categoryFilter.value}
-              onChange={(e) => setFilter(categoryFilter, e.currentTarget.value || 'all')}
-              aria-label="Lọc theo chủ đề"
+          <div class="graded-filter-anchor">
+            <button
+              type="button"
+              class={`graded-filter-btn ${panelFilters ? 'has-filters' : ''}`}
+              aria-expanded={filterPanelOpen.value}
+              aria-controls="gradedFilterPanel"
+              onClick={() => { filterPanelOpen.value = !filterPanelOpen.value; }}
             >
-              <option value="all">Mọi chủ đề</option>
-              {categories.map((c) => <option key={c} value={c}>{c}</option>)}
-            </select>
-
-            <select
-              id="gradedSortSelect"
-              class="graded-select"
-              value={sortOrder.value}
-              onChange={(e) => setFilter(sortOrder, e.currentTarget.value || 'default')}
-              aria-label="Sắp xếp bài đọc"
-            >
-              <option value="default">Sắp xếp: Mặc định</option>
-              <option value="time_asc">Thời lượng: Ngắn nhất</option>
-              <option value="time_desc">Thời lượng: Dài nhất</option>
-              <option value="title">Tên bài (A-Z)</option>
-            </select>
+              {SLIDERS_ICON}
+              <span class="graded-only-wide">Chủ đề &amp; sắp xếp</span>
+              <span class="graded-only-narrow">Lọc</span>
+              {panelFilters ? <span class="graded-filter-count">{panelFilters}</span> : null}
+            </button>
+            {filterPanelOpen.value ? <FilterPanel categories={categories} counts={counts} resultCount={filtered.length} /> : null}
           </div>
         </div>
-
-        <nav class="graded-toolbar-filters" aria-label="Bộ lọc bài đọc">
-          <div class="graded-filter-group" role="group" aria-label="Trạng thái & Tuyển tập">
-            <button
-              type="button"
-              class={`graded-filter-pill ${lvlFilter === 'all' ? 'active' : ''}`}
-              onClick={() => setFilter(levelFilter, 'all')}
-            >
-              {`Tất cả (${manifest.length})`}
-            </button>
-            <button
-              type="button"
-              class={`graded-filter-pill graded-pill-textbook ${lvlFilter === 'textbook' ? 'active' : ''}`}
-              onClick={() => setFilter(levelFilter, 'textbook')}
-              title="Sách giáo khoa / Giáo trình HSK (H1-H9)"
-            >
-              {`📖 Giáo trình (${textbookCount})`}
-            </button>
-            <button
-              type="button"
-              class={`graded-filter-pill graded-pill-book ${lvlFilter === 'wanwu' ? 'active' : ''}`}
-              onClick={() => setFilter(levelFilter, 'wanwu')}
-              title="Tuyển tập Vạn vật thú vị"
-            >
-              {`📚 Vạn vật (${wanwuCount})`}
-            </button>
-            <button
-              type="button"
-              class={`graded-filter-pill ${lvlFilter === 'read' ? 'active' : ''} ${readCount === 0 ? 'disabled' : ''}`}
-              onClick={() => setFilter(levelFilter, 'read')}
-              title="Xem bài đã đọc"
-            >
-              {`✓ Đã đọc (${readCount})`}
-            </button>
-          </div>
-
-          <div class="graded-filter-divider" aria-hidden="true"></div>
-
-          <div class="graded-filter-group graded-filter-levels" role="group" aria-label="Cấp độ HSK">
-            {LEVELS.map((lvl) => {
-              const count = manifest.filter((m) => m.level.toUpperCase() === lvl).length;
-              const lvlDisplay = lvl.replace('HSK', 'HSK ');
-              if (!count) {
-                return (
-                  <button key={lvl} type="button" class="graded-filter-pill disabled" title="Đang cập nhật thêm bài đọc">
-                    {`${lvlDisplay}`}
-                  </button>
-                );
-              }
-              const lvlReadCount = manifest.filter((m) => m.level.toUpperCase() === lvl && isStoryRead(m.id)).length;
-              const readTag = lvlReadCount > 0 ? ` · ${lvlReadCount}✓` : '';
+        <div class="graded-filterbar-row graded-levels-row">
+          <span class="graded-levels-label graded-only-wide">Cấp HSK</span>
+          <div class="graded-level-chips" role="group" aria-label="Cấp HSK">
+            {['all', ...LEVELS].map((code) => {
+              const isOn = lvl === code;
+              let label = code === 'all' ? 'Tất cả' : code.replace('HSK', 'HSK ');
+              if (isOn && code !== 'all') label += ` · ${readInScope}/${inScope.length}`;
               return (
-                <button
-                  key={lvl}
-                  type="button"
-                  class={`graded-filter-pill ${lvlFilter === lvl ? 'active' : ''}`}
-                  onClick={() => setFilter(levelFilter, lvl)}
-                >
-                  {`${lvlDisplay} (${count}${readTag})`}
+                <button key={code} type="button" class={`graded-chip ${isOn ? 'is-on' : ''}`} aria-pressed={isOn} onClick={() => setFilter(levelFilter, code)}>
+                  {label}
                 </button>
               );
             })}
           </div>
-        </nav>
-      </div>{' '}
+          <div class="graded-only-wide">
+            <HideReadToggle />
+          </div>
+        </div>
+      </section>
 
-      {/* 4. Reading Results Summary Bar */}
-      <div class="graded-results-bar">
-        <span class="graded-results-count">
-          Hiển thị <strong>{filtered.length}</strong> bài đọc phù hợp
-        </span>
-        {hasActiveFilters ? (
-          <button type="button" class="graded-reset-filters-btn" onClick={resetFilters}>
-            Đặt lại bộ lọc ✕
+      <div class="graded-results-head">
+        <h2 class="graded-results-title">
+          {scopeTitle}
+          <span>{` · ${filtered.length} bài${readInScope ? ` · đã đọc ${readInScope}` : ''}`}</span>
+        </h2>
+        <div class="graded-results-actions">
+          {hasActiveFilters ? <button type="button" class="graded-link-btn" onClick={resetFilters}>Đặt lại bộ lọc</button> : null}
+          <button type="button" class="graded-link-btn graded-only-wide" onClick={() => { filterPanelOpen.value = true; }}>
+            Sắp xếp: <strong>{sortName}</strong>
           </button>
-        ) : null}
-      </div>{' '}
+        </div>
+      </div>
 
-      {/* 5. Reading Cards Grid */}
-      <div class="graded-stories-grid" id="gradedStoriesGrid">
+      <div class="graded-story-grid" id="gradedStoriesGrid">
         {filtered.length === 0 ? (
           <div class="graded-empty-state">
-            <span style="font-size: 2.2rem;">📖</span>{' '}
-            <div style="font-weight: 700; font-size: 1.05rem; margin-top: 10px; color: var(--graded-text-primary);">
-              {lvlFilter === 'read' ? 'Bạn chưa đánh dấu bài đọc nào' : 'Không có bài đọc nào phù hợp'}
-            </div>{' '}
-            <p style="color: var(--graded-text-secondary); font-size: 0.88rem; max-width: 480px; margin: 6px auto 16px;">
-              {lvlFilter === 'read' ? 'Hãy mở một bài đọc và bấm "Đánh dấu đã đọc" sau khi đọc xong, hoặc bấm nút tích trên thẻ bài đọc.' : 'Vui lòng chọn cấp độ hoặc từ khóa khác.'}
-            </p>{' '}
-            <button type="button" class="graded-filter-pill active" onClick={resetFilters}>Xem tất cả bài đọc</button>
+            <div class="graded-empty-title">Không có bài đọc nào phù hợp</div>
+            <p>{hideRead.value ? 'Bạn đã đọc hết các bài trong bộ lọc này, hoặc hãy thử cấp độ / từ khóa khác.' : 'Hãy thử cấp độ, nguồn hoặc từ khóa khác.'}</p>
+            <button type="button" class="graded-btn-primary" onClick={resetFilters}>Xem tất cả bài đọc</button>
           </div>
         ) : shown.map((story) => <StoryCard key={story.id} story={story} />)}
-      </div>{' '}
+      </div>
 
       {filtered.length > shown.length && <LoadMore key={shown.length} remaining={filtered.length - shown.length} />}
     </div>
@@ -2011,9 +2045,11 @@ export const GradedReading = {
   setReadingMode: (mode) => { readingMode.value = mode; renderHub(); },
   togglePinyin,
   toggleTranslation,
-  setLevelFilter: (lvl) => setFilter(levelFilter, lvl),
+  setLevelFilter: setLevelOrSource,
+  setSourceFilter: (src) => setFilter(sourceFilter, src || 'all'),
+  setHideRead: (on) => setFilter(hideRead, Boolean(on)),
   setCategoryFilter: (cat) => setFilter(categoryFilter, cat || 'all'),
-  setSort: (s) => setFilter(sortOrder, s || 'default'),
+  setSort: (s) => setFilter(sortOrder, !s || s === 'default' ? 'suggested' : s),
   handleSearchInput: (val) => setFilter(searchQuery, val || ''),
   resetFilters,
   loadMoreStories,

@@ -146,6 +146,8 @@ export function setPrimaryTab(tab, options) {
   const mobProfile = document.getElementById('mobNavProfile');
   if (mobVocab) mobVocab.classList.toggle('active', tab === 'vocab');
   if (mobReview) mobReview.classList.toggle('active', tab === 'review');
+  const mobReading = document.getElementById('mobNavReading');
+  if (mobReading) mobReading.classList.toggle('active', tab === 'gradedReading');
   if (mobProfile) mobProfile.classList.remove('active');
   if (typeof closeMobileStatsSheet === 'function') closeMobileStatsSheet();
   const isTool = ['radicals', 'sentenceGame', 'guessWord', 'speedQuiz', 'reading', 'gradedReading', 'listening'].includes(tab);

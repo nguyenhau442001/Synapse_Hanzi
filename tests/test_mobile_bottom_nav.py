@@ -26,6 +26,10 @@ def test_mobile_bottom_nav_markup():
     assert mob_vocab is not None, "#mobNavVocab button missing"
     assert "Từ vựng" in mob_vocab.get_text()
 
+    mob_reading = soup.find(id="mobNavReading")
+    assert mob_reading is not None, "#mobNavReading button missing"
+    assert "Đọc" in mob_reading.get_text()
+
     mob_review = soup.find(id="mobNavReview")
     assert mob_review is not None, "#mobNavReview button missing"
     assert "Ôn nhanh" in mob_review.get_text()
@@ -49,6 +53,7 @@ def test_mobile_bottom_nav_event_wiring():
 
     # AppBootstrap.js bindings
     assert "mobNavVocab" in bootstrap_js
+    assert "mobNavReading" in bootstrap_js
     assert "mobNavReview" in bootstrap_js
     assert "mobNavNotebook" in bootstrap_js
     assert "mobNavProfile" in bootstrap_js
@@ -65,6 +70,7 @@ def test_mobile_bottom_nav_event_wiring():
 
     # Compiled islands bundle has them
     assert "mobNavVocab" in islands_bundle
+    assert "mobNavReading" in islands_bundle
     assert "mobNavReview" in islands_bundle
     assert "mobNavNotebook" in islands_bundle
     assert "mobNavProfile" in islands_bundle
