@@ -214,6 +214,68 @@ async function loadStory(storyId) {
   return data;
 }
 
+async function ensureMangaManifestLoaded() {
+  if (mangaManifestLoaded && mangaManifestData.length) return mangaManifestData;
+  try {
+    const res = await fetch('database/readings/manga/doraemon/manifest.json?v=' + Date.now());
+    if (!res.ok) throw new Error('Không thể tải danh sách truyện tranh.');
+    mangaManifestData = await res.json();
+    mangaManifest.value = mangaManifestData;
+    mangaManifestLoaded = true;
+    return mangaManifestData;
+  } catch (e) {
+    console.error('Manga manifest load error:', e);
+    return [];
+  }
+}
+
+async function loadMangaStory(mangaId) {
+  if (mangaStoryCache[mangaId]) return mangaStoryCache[mangaId];
+  const list = await ensureMangaManifestLoaded();
+  const item = list.find((m) => m.id === mangaId);
+  const file = item ? item.file : `database/readings/manga/doraemon/${mangaId}.json`;
+  const res = await fetch(file + '?v=' + Date.now());
+  if (!res.ok) throw new Error('Không thể tải truyện tranh: ' + mangaId);
+  const data = await res.json();
+  mangaStoryCache[mangaId] = data;
+  return data;
+}
+
+async function openMangaStory(mangaId, updateUrl = true) {
+  if (!document.getElementById('screenGradedReading')) return;
+  view.value = 'loading';
+  try {
+    const story = await loadMangaStory(mangaId);
+    activeMangaStory.value = story;
+    activeMangaPage.value = 0;
+    hoveredMangaDialogue.value = null;
+    selectedMangaDialogue.value = null;
+    if (updateUrl && typeof SpaRouter !== 'undefined') {
+      SpaRouter.pushView({ view: 'tab', tab: 'gradedReading', manga: mangaId }, `${window.location.pathname}?tab=gradedReading&manga=${mangaId}`);
+    }
+    document.body.classList.add('graded-story-active');
+    view.value = 'manga';
+  } catch (e) {
+    errorMessage.value = e.message;
+    view.value = 'error';
+  }
+}
+
+function goBackToMangaHub() {
+  activeMangaStory.value = null;
+  hoveredMangaDialogue.value = null;
+  selectedMangaDialogue.value = null;
+  closePopover();
+  document.body.classList.remove('graded-story-active');
+  if (typeof SpaRouter !== 'undefined') {
+    SpaRouter.pushView({ view: 'tab', tab: 'gradedReading' }, `${window.location.pathname}?tab=gradedReading`);
+  } else {
+    window.history.pushState({}, '', `${window.location.pathname}?tab=gradedReading`);
+  }
+  readingMode.value = 'manga';
+  renderHub();
+}
+
 // A story's category is the first part of its topic ("Gia đình & Bạn bè" -> "Gia đình").
 const storyCategory = (m) => (m.topic_vi || '').split('&')[0].trim();
 
@@ -255,18 +317,25 @@ async function init() {
     document.addEventListener('keydown', (e) => {
       if (e.key !== 'Escape') return;
       if (popover.value) closePopover();
+      else if (activeMangaStory.value) goBackToMangaHub();
       else if (activeStory.value) goBackToHub();
     });
     escapeListenerBound = true;
   }
-  const storyParam = new URLSearchParams(window.location.search).get('story');
-  await ensureManifestLoaded();
-  if (storyParam) await openStory(storyParam, false);
+  const params = new URLSearchParams(window.location.search);
+  const storyParam = params.get('story');
+  const mangaParam = params.get('manga');
+  await Promise.all([ensureManifestLoaded(), ensureMangaManifestLoaded()]);
+  if (mangaParam) await openMangaStory(mangaParam, false);
+  else if (storyParam) await openStory(storyParam, false);
   else renderHub();
 }
 
 function renderHub() {
   activeStory.value = null;
+  activeMangaStory.value = null;
+  hoveredMangaDialogue.value = null;
+  selectedMangaDialogue.value = null;
   closePopover();
   document.body.classList.remove('graded-story-active', 'graded-pinyin-hidden', 'graded-translation-hidden');
   hubLimit.value = PAGE_SIZE;
@@ -275,6 +344,9 @@ function renderHub() {
 
 function goBackToHub() {
   activeStory.value = null;
+  activeMangaStory.value = null;
+  hoveredMangaDialogue.value = null;
+  selectedMangaDialogue.value = null;
   closePopover();
   document.body.classList.remove('graded-story-active');
   if (typeof SpaRouter !== 'undefined') {
@@ -580,6 +652,35 @@ const filteredManifest = computed(() => {
   return view.value === 'hub' ? getFilteredManifest() : [];
 });
 
+function ModeSwitcher() {
+  return (
+    <div class="manga-mode-switcher" role="tablist" aria-label="Chế độ đọc">
+      <button
+        type="button"
+        role="tab"
+        aria-selected={readingMode.value === 'articles'}
+        class={`manga-mode-btn ${readingMode.value === 'articles' ? 'active' : ''}`}
+        onClick={() => { readingMode.value = 'articles'; }}
+      >
+        <span>📚 Bài đọc phân cấp & Bách khoa</span>
+        <span style="opacity: 0.8; font-size: 0.8rem;">({manifest.length})</span>
+      </button>
+      <button
+        type="button"
+        role="tab"
+        aria-selected={readingMode.value === 'manga'}
+        class={`manga-mode-btn manga-theme ${readingMode.value === 'manga' ? 'active' : ''}`}
+        onClick={() => { readingMode.value = 'manga'; }}
+      >
+        <span>🎨 Truyện tranh Manga (Đọc giải trí)</span>
+        <span style="opacity: 0.9; font-size: 0.8rem; background: rgba(255,255,255,0.25); padding: 1px 6px; border-radius: 8px;">
+          {mangaManifestData.length} truyện
+        </span>
+      </button>
+    </div>
+  );
+}
+
 function Hub() {
   const readCount = manifest.filter((m) => isStoryRead(m.id)).length;
   const progressPercent = manifest.length ? Math.round((readCount / manifest.length) * 100) : 0;
@@ -592,6 +693,7 @@ function Hub() {
 
   return (
     <div class="graded-reading-container">
+      <ModeSwitcher />
       {/* 1. Compact Page Header & Progress */}
       <header class="graded-hub-header">
         <div class="graded-hub-header-left">
@@ -1033,15 +1135,303 @@ function StoryReader({ story }) {
   );
 }
 
+function MangaHub() {
+  return (
+    <div class="graded-reading-container">
+      <div style="display: flex; align-items: center; justify-content: flex-start; margin-bottom: 16px;">
+        <button type="button" class="graded-back-btn" onClick={() => window.setPrimaryTab('vocab')} title="Quay lại Hub Từ vựng">
+          ← Quay lại Hub Từ vựng
+        </button>
+      </div>
+
+      <ModeSwitcher />
+
+      <section class="manga-hub-hero">
+        <span class="manga-hero-badge">🎨 Manga Corner · Đọc giải trí</span>
+        <h1 class="manga-hero-title">《哆啦A梦》· Doraemon Truyện Tranh Nguyên Bản</h1>
+        <p class="manga-hero-desc">
+          Đọc truyện tranh Doraemon nguyên bản bằng tiếng Trung. Rê chuột trực tiếp trên khung thoại để tra từ, xem phiên âm Pinyin và bản dịch tiếng Việt tức thì mà vẫn giữ trọn vẹn từng trang truyện gốc!
+        </p>
+
+        <div class="manga-source-notice">
+          <strong>📖 Ghi nguồn & Bản quyền:</strong> Tác phẩm 《哆啦A梦》(Doraemon) · Tác giả: <strong>Fujiko F. Fujio (藤子·F·不二雄)</strong> · Nhà xuất bản: Shogakukan (小学馆) / NXB Kim Đồng / 香港文化传信. Toàn bộ hình ảnh scan nguyên bản phục vụ mục đích học tập phi thương mại và nghiên cứu ngôn ngữ (Fair Use).
+        </div>
+      </section>
+
+      <div style="font-size: 0.95rem; font-weight: 750; color: var(--graded-text-primary); margin-bottom: 14px; display: flex; align-items: center; gap: 8px;">
+        <span>📚 Danh sách tập truyện có sẵn</span>
+        <span style="font-size: 0.8rem; color: var(--graded-text-secondary); font-weight: normal;">(Tải ảnh gốc 100%, hỗ trợ rê chuột dịch từng câu)</span>
+      </div>
+
+      <div class="manga-cards-grid">
+        {mangaManifestData.map((m) => (
+          <article key={m.id} class="manga-story-card" onClick={() => openMangaStory(m.id)}>
+            <div class="manga-card-thumb-box">
+              <div class="manga-card-badge-row">
+                <span class="manga-tag series">Doraemon</span>
+                <span class="manga-tag pages">{`${m.page_count} trang`}</span>
+              </div>
+              <img src={m.cover_image} alt={m.title.vi} loading="lazy" />
+            </div>
+            <div class="manga-card-body">
+              <h2 class="manga-card-zh-title">{m.title.zh}</h2>
+              <div class="manga-card-vi-title">{m.title.vi}</div>
+              <p class="manga-card-desc">{m.description_vi}</p>
+              <div class="manga-card-footer">
+                <span>⏱️ {m.estimatedMinutes || 8} phút đọc</span>
+                <button type="button" class="manga-read-btn">
+                  Đọc truyện ngay →
+                </button>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function MangaViewer({ story }) {
+  const pageIdx = activeMangaPage.value;
+  const page = (story && story.pages && story.pages[pageIdx]) || (story && story.pages && story.pages[0]);
+  const totalPages = (story && story.pages) ? story.pages.length : 1;
+  const activeDlg = hoveredMangaDialogue.value || selectedMangaDialogue.value;
+
+  const goToPrev = () => {
+    if (pageIdx > 0) {
+      activeMangaPage.value = pageIdx - 1;
+      hoveredMangaDialogue.value = null;
+      selectedMangaDialogue.value = null;
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
+  const goToNext = () => {
+    if (pageIdx < totalPages - 1) {
+      activeMangaPage.value = pageIdx + 1;
+      hoveredMangaDialogue.value = null;
+      selectedMangaDialogue.value = null;
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
+  useEffect(() => {
+    const onKeyDown = (e) => {
+      if (e.key === 'ArrowRight') goToNext();
+      else if (e.key === 'ArrowLeft') goToPrev();
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [pageIdx, totalPages]);
+
+  if (!page) return null;
+
+  return (
+    <div class="manga-viewer-shell">
+      <header class="manga-viewer-nav">
+        <button type="button" class="graded-back-btn" onClick={goBackToMangaHub} title="Trở về tủ truyện (Esc)">
+          ← Tủ truyện tranh
+        </button>
+
+        <div style="flex: 1; min-width: 200px; text-align: center;">
+          <div style="font-weight: 800; font-size: 1.05rem; color: var(--graded-text-primary);">
+            {story.title.zh} · <span style="font-weight: 600; color: #0284c7;">{story.title.vi}</span>
+          </div>
+          <div style="font-size: 0.8rem; color: var(--graded-text-secondary); margin-top: 2px;">
+            {`Trang ${pageIdx + 1} / ${totalPages} · ${story.source || ''}`}
+          </div>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <button
+            type="button"
+            class="graded-toggle-btn"
+            onClick={() => { showMangaOutlines.value = !showMangaOutlines.value; }}
+            title="Bật/Tắt hiện khung viền thoại"
+          >
+            {showMangaOutlines.value ? '👁️ Ẩn viền' : '👁️ Hiện viền'}
+          </button>
+          <button
+            type="button"
+            class="graded-toggle-btn"
+            disabled={pageIdx === 0}
+            onClick={goToPrev}
+            title="Trang trước (Phím mũi tên trái)"
+          >
+            ← Trước
+          </button>
+          <button
+            type="button"
+            class="graded-toggle-btn"
+            disabled={pageIdx === totalPages - 1}
+            onClick={goToNext}
+            title="Trang sau (Phím mũi tên phải)"
+            style="background: #0284c7; color: #fff; border-color: #0284c7; font-weight: 700;"
+          >
+            Sau →
+          </button>
+        </div>
+      </header>
+
+      {/* Comic Page Viewport with Original Image */}
+      <div class="manga-page-viewport" id="mangaViewport">
+        <img
+          src={page.image}
+          alt={`Trang ${pageIdx + 1}`}
+          class="manga-page-img"
+          loading="eager"
+        />
+
+        {/* Hotspots for speech bubbles */}
+        {(page.dialogues || []).map((d) => {
+          const isSelected = (selectedMangaDialogue.value && selectedMangaDialogue.value.id === d.id);
+          const isHovered = (hoveredMangaDialogue.value && hoveredMangaDialogue.value.id === d.id);
+          return (
+            <div
+              key={d.id}
+              class={`manga-hotspot ${showMangaOutlines.value ? 'show-outline' : ''} ${isSelected || isHovered ? 'is-active' : ''}`}
+              style={`left: ${d.bbox.x}%; top: ${d.bbox.y}%; width: ${d.bbox.width}%; height: ${d.bbox.height}%;`}
+              onMouseEnter={() => {
+                hoveredMangaDialogue.value = d;
+              }}
+              onMouseLeave={() => {
+                hoveredMangaDialogue.value = null;
+              }}
+              onClick={(e) => {
+                e.stopPropagation();
+                if (selectedMangaDialogue.value && selectedMangaDialogue.value.id === d.id) {
+                  selectedMangaDialogue.value = null;
+                } else {
+                  selectedMangaDialogue.value = d;
+                }
+              }}
+              title="Rê chuột hoặc bấm để xem bản dịch & từ vựng"
+            >
+              <span class="manga-hotspot-hint">💬</span>
+            </div>
+          );
+        })}
+
+        {/* Interactive Floating Tooltip */}
+        {activeDlg ? (
+          <div
+            class="manga-dialogue-tooltip"
+            style={(() => {
+              const x = activeDlg.bbox.x;
+              const y = activeDlg.bbox.y;
+              const placeLeft = x > 50 ? `${Math.max(5, x - 36)}%` : `${Math.min(64, x + activeDlg.bbox.width + 2)}%`;
+              const placeTop = `${Math.min(74, Math.max(5, y))}%`;
+              return `left: ${placeLeft}; top: ${placeTop};`;
+            })()}
+            onClick={(e) => e.stopPropagation()}
+            onMouseEnter={() => { hoveredMangaDialogue.value = activeDlg; }}
+          >
+            <div class="manga-dialogue-header">
+              <span class="manga-char-tag">👤 {activeDlg.character}</span>
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <button
+                  type="button"
+                  class="sentence-audio-btn speech-btn"
+                  onClick={() => speakSentence(activeDlg.zh, `dlg-${activeDlg.id}`)}
+                  title="Nghe phát âm"
+                  style="padding: 2px 8px; font-size: 0.76rem; border-radius: 6px;"
+                >
+                  🔊 Nghe
+                </button>
+                {selectedMangaDialogue.value && (
+                  <button
+                    type="button"
+                    class="popover-close-btn"
+                    onClick={() => { selectedMangaDialogue.value = null; }}
+                    aria-label="Đóng"
+                  >
+                    ✕
+                  </button>
+                )}
+              </div>
+            </div>
+
+            <div class="manga-dialogue-zh">{activeDlg.zh}</div>
+            <div class="manga-dialogue-py">{activeDlg.pinyin}</div>
+            <div class="manga-dialogue-vi">{activeDlg.vi}</div>
+
+            {/* Word Tokens Breakdown */}
+            {activeDlg.tokens && activeDlg.tokens.length > 0 ? (
+              <div>
+                <div style="font-size: 0.74rem; font-weight: 700; color: var(--graded-text-secondary); text-transform: uppercase; margin-bottom: 4px;">
+                  Từ vựng trong câu (Bấm để tra & thêm SRS):
+                </div>
+                <div class="manga-tokens-wrap">
+                  {activeDlg.tokens.map((t, idx) => (
+                    <button
+                      key={idx}
+                      type="button"
+                      class="manga-token-pill"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        showTokenPopover(t, e.currentTarget);
+                      }}
+                      title="Bấm để xem chi tiết & thêm SRS"
+                    >
+                      <span class="manga-token-hz">{t.text}</span>
+                      <span class="manga-token-py">{t.pinyin}</span>
+                      <span class="manga-token-mean">{t.meaning_vi}</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            ) : null}
+          </div>
+        ) : null}
+      </div>
+
+      {/* Page thumbnail scrubber */}
+      <div class="manga-page-scrubber">
+        {story.pages.map((p, idx) => (
+          <button
+            key={idx}
+            type="button"
+            class={`manga-page-pill-btn ${idx === pageIdx ? 'active' : ''}`}
+            onClick={() => {
+              activeMangaPage.value = idx;
+              hoveredMangaDialogue.value = null;
+              selectedMangaDialogue.value = null;
+            }}
+            title={`Chuyển đến trang ${idx + 1}`}
+          >
+            {idx + 1}
+          </button>
+        ))}
+      </div>
+
+      {/* Completion message on last page */}
+      {pageIdx === totalPages - 1 ? (
+        <div style="margin-top: 30px; padding: 20px; border-radius: 12px; background: rgba(2, 132, 199, 0.08); border: 1px solid rgba(2, 132, 199, 0.3); text-align: center;">
+          <div style="font-size: 1.8rem; margin-bottom: 8px;">🎉</div>
+          <div style="font-weight: 800; font-size: 1.1rem; color: var(--graded-text-primary);">
+            {`Bạn đã hoàn thành câu chuyện 《${story.title.vi}》!`}
+          </div>
+          <p style="color: var(--graded-text-secondary); font-size: 0.88rem; max-width: 480px; margin: 6px auto 14px;">
+            Chúc mừng bạn đã đọc trọn vẹn tập truyện tranh Doraemon này. Hãy tiếp tục khám phá các tập truyện khác!
+          </p>
+          <button type="button" class="graded-filter-pill active" onClick={goBackToMangaHub} style="background: #0284c7; border-color: #0284c7;">
+            ← Khám phá tập truyện khác
+          </button>
+        </div>
+      ) : null}
+    </div>
+  );
+}
+
 export function GradedReadingScreen() {
   switch (view.value) {
     case 'hub':
-      return <Hub />;
+      return readingMode.value === 'manga' ? <MangaHub /> : <Hub />;
     case 'loading':
       return (
         <div class="graded-reading-container" style="text-align: center; padding: 60px 0;">
           <div style="font-size: 1.5rem; margin-bottom: 12px;">📖</div>{' '}
-          <div style="color: var(--text-secondary);">Đang tải bài đọc...</div>
+          <div style="color: var(--text-secondary);">Đang tải dữ liệu...</div>
         </div>
       );
     case 'error':
@@ -1054,6 +1444,8 @@ export function GradedReadingScreen() {
       );
     case 'story':
       return activeStory.value ? <StoryReader key={activeStory.value.id} story={activeStory.value} /> : null;
+    case 'manga':
+      return activeMangaStory.value ? <MangaViewer key={activeMangaStory.value.id} story={activeMangaStory.value} /> : null;
     default:
       return null;
   }
@@ -1063,7 +1455,10 @@ export const GradedReading = {
   init,
   renderHub,
   openStory,
+  openMangaStory,
   goBackToHub,
+  goBackToMangaHub,
+  setReadingMode: (mode) => { readingMode.value = mode; renderHub(); },
   togglePinyin,
   toggleTranslation,
   setLevelFilter: (lvl) => setFilter(levelFilter, lvl),
