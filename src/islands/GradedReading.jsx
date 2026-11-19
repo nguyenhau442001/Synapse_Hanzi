@@ -25,6 +25,9 @@ const activeMangaPage = signal(0);
 const showMangaOutlines = signal(true);
 const hoveredMangaDialogue = signal(null);
 const selectedMangaDialogue = signal(null);
+const mangaZoomLevel = signal(1.0);
+const mangaCanvasTheme = signal('theater'); // 'theater' | 'light' | 'sepia'
+const mangaIsFullscreen = signal(false);
 let mangaManifestData = [];
 let mangaManifestLoaded = false;
 const mangaStoryCache = {};
@@ -1246,10 +1249,10 @@ function MangaHub() {
       <ModeSwitcher />
 
       <section class="manga-hub-hero">
-        <span class="manga-hero-badge">🎨 Manga Corner · Đọc giải trí</span>
+        <span class="manga-hero-badge">🎨 Manga Corner · Học tiếng Trung qua truyện tranh</span>
         <h1 class="manga-hero-title">《哆啦A梦》· Doraemon Truyện Tranh Nguyên Bản</h1>
         <p class="manga-hero-desc">
-          Đọc truyện tranh Doraemon nguyên bản bằng tiếng Trung. Rê chuột trực tiếp trên khung thoại để tra từ, xem phiên âm Pinyin và bản dịch tiếng Việt tức thì mà vẫn giữ trọn vẹn từng trang truyện gốc!
+          Trải nghiệm đọc truyện tranh nguyên tác tiếng Trung đỉnh cao. Chạm hoặc rê chuột trực tiếp vào bóng thoại để tra từ, nghe phát âm, xem phiên âm Pinyin và bản dịch tức thì mà vẫn giữ trọn vẹn từng trang truyện gốc.
         </p>
 
         <div class="manga-source-notice">
@@ -1314,210 +1317,417 @@ function MangaViewer({ story }) {
     }
   };
 
+  const adjustZoom = (delta) => {
+    const next = Math.round((mangaZoomLevel.value + delta) * 100) / 100;
+    if (next >= 0.7 && next <= 2.0) {
+      mangaZoomLevel.value = next;
+    }
+  };
+
+  const toggleFullscreen = () => {
+    const el = document.getElementById('mangaViewerShell') || document.documentElement;
+    if (!document.fullscreenElement) {
+      el.requestFullscreen().then(() => {
+        mangaIsFullscreen.value = true;
+      }).catch(() => {});
+    } else {
+      document.exitFullscreen().then(() => {
+        mangaIsFullscreen.value = false;
+      }).catch(() => {});
+    }
+  };
+
   useEffect(() => {
+    const onFsChange = () => {
+      mangaIsFullscreen.value = Boolean(document.fullscreenElement);
+    };
+    document.addEventListener('fullscreenchange', onFsChange);
+
     const onKeyDown = (e) => {
-      if (e.key === 'ArrowRight') goToNext();
-      else if (e.key === 'ArrowLeft') goToPrev();
+      if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) return;
+      if (e.key === 'ArrowRight' || e.key === 'PageDown') {
+        e.preventDefault();
+        goToNext();
+      } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+        e.preventDefault();
+        goToPrev();
+      } else if (e.key === '+' || e.key === '=') {
+        e.preventDefault();
+        adjustZoom(0.15);
+      } else if (e.key === '-' || e.key === '_') {
+        e.preventDefault();
+        adjustZoom(-0.15);
+      } else if (e.key === '0') {
+        e.preventDefault();
+        mangaZoomLevel.value = 1.0;
+      } else if (e.key === 'f' || e.key === 'F') {
+        e.preventDefault();
+        toggleFullscreen();
+      } else if (e.key === 'o' || e.key === 'O') {
+        e.preventDefault();
+        showMangaOutlines.value = !showMangaOutlines.value;
+      }
     };
     window.addEventListener('keydown', onKeyDown);
-    return () => window.removeEventListener('keydown', onKeyDown);
+    return () => {
+      document.removeEventListener('fullscreenchange', onFsChange);
+      window.removeEventListener('keydown', onKeyDown);
+    };
   }, [pageIdx, totalPages]);
 
   if (!page) return null;
 
   return (
-    <div class="manga-viewer-shell">
-      <header class="manga-viewer-nav">
-        <button type="button" class="graded-back-btn" onClick={goBackToMangaHub} title="Trở về tủ truyện (Esc)">
-          ← Tủ truyện tranh
-        </button>
-
-        <div style="flex: 1; min-width: 200px; text-align: center;">
-          <div style="font-weight: 800; font-size: 1.05rem; color: var(--graded-text-primary);">
-            {story.title.zh} · <span style="font-weight: 600; color: #0284c7;">{story.title.vi}</span>
-          </div>
-          <div style="font-size: 0.8rem; color: var(--graded-text-secondary); margin-top: 2px;">
-            {`Trang ${pageIdx + 1} / ${totalPages} · ${story.source || ''}`}
+    <div
+      id="mangaViewerShell"
+      class={`manga-viewer-root theme-${mangaCanvasTheme.value}`}
+      onClick={() => {
+        if (selectedMangaDialogue.value) selectedMangaDialogue.value = null;
+      }}
+    >
+      {/* 1. Header Navigation Command Bar */}
+      <header class="manga-header" onClick={(e) => e.stopPropagation()}>
+        <div class="manga-header-left">
+          <button
+            type="button"
+            class="manga-nav-back-btn"
+            onClick={goBackToMangaHub}
+            title="Trở về tủ truyện (Esc)"
+          >
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            <span class="manga-back-label">Tủ truyện</span>
+          </button>
+          <div class="manga-header-divider"></div>
+          <div class="manga-header-title-block">
+            <div class="manga-title-badge-row">
+              <span class="manga-brand-badge">Doraemon</span>
+              <span class="manga-chapter-badge">{`Tập ${story.chapter_no || 1}`}</span>
+            </div>
+            <div class="manga-title-text" title={`${story.title.zh} · ${story.title.vi}`}>
+              <span class="manga-title-zh">{story.title.zh}</span>
+              <span class="manga-title-sep">·</span>
+              <span class="manga-title-vi">{story.title.vi}</span>
+            </div>
           </div>
         </div>
 
-        <div style="display: flex; align-items: center; gap: 8px;">
+        <div class="manga-header-center">
+          <div class="manga-page-badge" title="Tiến độ đọc trang hiện tại">
+            <span class="page-current">{pageIdx + 1}</span>
+            <span class="page-divider">/</span>
+            <span class="page-total">{totalPages}</span>
+          </div>
+        </div>
+
+        <div class="manga-header-right">
+          {/* Toggle speech outlines */}
           <button
             type="button"
-            class="graded-toggle-btn"
+            class={`manga-btn-icon ${showMangaOutlines.value ? 'active' : ''}`}
             onClick={() => { showMangaOutlines.value = !showMangaOutlines.value; }}
-            title="Bật/Tắt hiện khung viền thoại"
+            title={showMangaOutlines.value ? 'Ẩn viền khung thoại (Phím O)' : 'Hiện viền khung thoại (Phím O)'}
+            aria-label="Hiện/ẩn viền thoại"
           >
-            {showMangaOutlines.value ? '👁️ Ẩn viền' : '👁️ Hiện viền'}
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
           </button>
+
+          {/* Reading theme switcher */}
+          <div class="manga-theme-picker" role="group" aria-label="Màu nền đọc">
+            <button
+              type="button"
+              class={`manga-theme-dot theme-theater ${mangaCanvasTheme.value === 'theater' ? 'active' : ''}`}
+              onClick={() => { mangaCanvasTheme.value = 'theater'; }}
+              title="Nền Rạp chiếu (Tối)"
+            ></button>
+            <button
+              type="button"
+              class={`manga-theme-dot theme-light ${mangaCanvasTheme.value === 'light' ? 'active' : ''}`}
+              onClick={() => { mangaCanvasTheme.value = 'light'; }}
+              title="Nền Sáng (Editorial)"
+            ></button>
+            <button
+              type="button"
+              class={`manga-theme-dot theme-sepia ${mangaCanvasTheme.value === 'sepia' ? 'active' : ''}`}
+              onClick={() => { mangaCanvasTheme.value = 'sepia'; }}
+              title="Nền Sepia (Ấm áp)"
+            ></button>
+          </div>
+
+          {/* Fullscreen toggle */}
           <button
             type="button"
-            class="graded-toggle-btn"
-            disabled={pageIdx === 0}
-            onClick={goToPrev}
-            title="Trang trước (Phím mũi tên trái)"
+            class={`manga-btn-icon ${mangaIsFullscreen.value ? 'active' : ''}`}
+            onClick={toggleFullscreen}
+            title={mangaIsFullscreen.value ? 'Thoát toàn màn hình (Phím F)' : 'Toàn màn hình (Phím F)'}
+            aria-label="Toàn màn hình"
           >
-            ← Trước
-          </button>
-          <button
-            type="button"
-            class="graded-toggle-btn"
-            disabled={pageIdx === totalPages - 1}
-            onClick={goToNext}
-            title="Trang sau (Phím mũi tên phải)"
-            style="background: #0284c7; color: #fff; border-color: #0284c7; font-weight: 700;"
-          >
-            Sau →
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              {mangaIsFullscreen.value ? (
+                <path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"></path>
+              ) : (
+                <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
+              )}
+            </svg>
           </button>
         </div>
       </header>
 
-      {/* Comic Page Viewport with Original Image */}
-      <div class="manga-page-viewport" id="mangaViewport">
-        <img
-          src={page.image}
-          alt={`Trang ${pageIdx + 1}`}
-          class="manga-page-img"
-          loading="eager"
-        />
+      {/* 2. Main Reading Canvas (Visual Centerpiece) */}
+      <main class="manga-canvas-container" id="mangaCanvas">
+        <div
+          class="manga-stage"
+          style={`transform: scale(${mangaZoomLevel.value});`}
+        >
+          <div class="manga-page-frame">
+            <img
+              src={page.image}
+              alt={`Trang ${pageIdx + 1} - ${story.title.vi}`}
+              class="manga-page-img"
+              loading="eager"
+            />
 
-        {/* Hotspots for speech bubbles */}
-        {(page.dialogues || []).map((d) => {
-          const isSelected = (selectedMangaDialogue.value && selectedMangaDialogue.value.id === d.id);
-          const isHovered = (hoveredMangaDialogue.value && hoveredMangaDialogue.value.id === d.id);
-          return (
-            <div
-              key={d.id}
-              class={`manga-hotspot ${showMangaOutlines.value ? 'show-outline' : ''} ${isSelected || isHovered ? 'is-active' : ''}`}
-              style={`left: ${d.bbox.x}%; top: ${d.bbox.y}%; width: ${d.bbox.width}%; height: ${d.bbox.height}%;`}
-              onMouseEnter={() => {
-                hoveredMangaDialogue.value = d;
-              }}
-              onMouseLeave={() => {
-                hoveredMangaDialogue.value = null;
-              }}
-              onClick={(e) => {
-                e.stopPropagation();
-                if (selectedMangaDialogue.value && selectedMangaDialogue.value.id === d.id) {
-                  selectedMangaDialogue.value = null;
-                } else {
-                  selectedMangaDialogue.value = d;
-                }
-              }}
-              title="Rê chuột hoặc bấm để xem bản dịch & từ vựng"
-            >
-              <span class="manga-hotspot-hint">💬</span>
-            </div>
-          );
-        })}
-
-        {/* Interactive Floating Tooltip */}
-        {activeDlg ? (
-          <div
-            class="manga-dialogue-tooltip"
-            style={(() => {
-              const x = activeDlg.bbox.x;
-              const y = activeDlg.bbox.y;
-              const placeLeft = x > 50 ? `${Math.max(5, x - 36)}%` : `${Math.min(64, x + activeDlg.bbox.width + 2)}%`;
-              const placeTop = `${Math.min(74, Math.max(5, y))}%`;
-              return `left: ${placeLeft}; top: ${placeTop};`;
-            })()}
-            onClick={(e) => e.stopPropagation()}
-            onMouseEnter={() => { hoveredMangaDialogue.value = activeDlg; }}
-          >
-            <div class="manga-dialogue-header">
-              <span class="manga-char-tag">👤 {activeDlg.character}</span>
-              <div style="display: flex; align-items: center; gap: 6px;">
-                <button
-                  type="button"
-                  class="sentence-audio-btn speech-btn"
-                  onClick={() => speakSentence(activeDlg.zh, `dlg-${activeDlg.id}`)}
-                  title="Nghe phát âm"
-                  style="padding: 2px 8px; font-size: 0.76rem; border-radius: 6px;"
+            {/* Hotspots for speech bubbles */}
+            {(page.dialogues || []).map((d) => {
+              const isSelected = (selectedMangaDialogue.value && selectedMangaDialogue.value.id === d.id);
+              const isHovered = (hoveredMangaDialogue.value && hoveredMangaDialogue.value.id === d.id);
+              return (
+                <div
+                  key={d.id}
+                  class={`manga-hotspot ${showMangaOutlines.value ? 'show-outline' : ''} ${isSelected || isHovered ? 'is-active' : ''}`}
+                  style={`left: ${d.bbox.x}%; top: ${d.bbox.y}%; width: ${d.bbox.width}%; height: ${d.bbox.height}%;`}
+                  onMouseEnter={() => {
+                    hoveredMangaDialogue.value = d;
+                  }}
+                  onMouseLeave={() => {
+                    hoveredMangaDialogue.value = null;
+                  }}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    if (selectedMangaDialogue.value && selectedMangaDialogue.value.id === d.id) {
+                      selectedMangaDialogue.value = null;
+                    } else {
+                      selectedMangaDialogue.value = d;
+                    }
+                  }}
+                  title="Rê chuột hoặc bấm để xem bản dịch & từ vựng"
                 >
-                  🔊 Nghe
-                </button>
-                {selectedMangaDialogue.value && (
-                  <button
-                    type="button"
-                    class="popover-close-btn"
-                    onClick={() => { selectedMangaDialogue.value = null; }}
-                    aria-label="Đóng"
-                  >
-                    ✕
-                  </button>
-                )}
-              </div>
-            </div>
-
-            <div class="manga-dialogue-zh">{activeDlg.zh}</div>
-            <div class="manga-dialogue-py">{activeDlg.pinyin}</div>
-            <div class="manga-dialogue-vi">{activeDlg.vi}</div>
-
-            {/* Word Tokens Breakdown */}
-            {activeDlg.tokens && activeDlg.tokens.length > 0 ? (
-              <div>
-                <div style="font-size: 0.74rem; font-weight: 700; color: var(--graded-text-secondary); text-transform: uppercase; margin-bottom: 4px;">
-                  Từ vựng trong câu (Bấm để tra & thêm SRS):
+                  <span class="manga-hotspot-hint">💬</span>
                 </div>
-                <div class="manga-tokens-wrap">
-                  {activeDlg.tokens.map((t, idx) => (
+              );
+            })}
+
+            {/* Interactive Floating Dialogue Card / Bottom Sheet */}
+            {activeDlg ? (
+              <div
+                class="manga-dialogue-card"
+                style={(() => {
+                  const x = activeDlg.bbox.x;
+                  const y = activeDlg.bbox.y;
+                  const placeLeft = x > 50 ? `${Math.max(4, x - 35)}%` : `${Math.min(65, x + activeDlg.bbox.width + 2)}%`;
+                  const placeTop = `${Math.min(75, Math.max(4, y))}%`;
+                  return `left: ${placeLeft}; top: ${placeTop};`;
+                })()}
+                onClick={(e) => e.stopPropagation()}
+                onMouseEnter={() => { hoveredMangaDialogue.value = activeDlg; }}
+              >
+                <div class="manga-dialogue-card-header">
+                  <span class="manga-char-pill">👤 {activeDlg.character}</span>
+                  <div class="manga-dialogue-actions">
                     <button
-                      key={idx}
                       type="button"
-                      class="manga-token-pill"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        showTokenPopover(t, e.currentTarget);
-                      }}
-                      title="Bấm để xem chi tiết & thêm SRS"
+                      class="manga-audio-speak-btn"
+                      onClick={() => speakSentence(activeDlg.zh, `dlg-${activeDlg.id}`)}
+                      title="Nghe phát âm câu thoại"
                     >
-                      <span class="manga-token-hz">{t.text}</span>
-                      <span class="manga-token-py">{t.pinyin}</span>
-                      <span class="manga-token-mean">{t.meaning_vi}</span>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                        <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                      </svg>
+                      <span>Nghe</span>
                     </button>
-                  ))}
+                    {selectedMangaDialogue.value && (
+                      <button
+                        type="button"
+                        class="manga-dlg-close-btn"
+                        onClick={() => { selectedMangaDialogue.value = null; }}
+                        aria-label="Đóng"
+                        title="Đóng bảng dịch"
+                      >
+                        ✕
+                      </button>
+                    )}
+                  </div>
                 </div>
+
+                <div class="manga-dlg-zh-text">{activeDlg.zh}</div>
+                <div class="manga-dlg-py-text">{activeDlg.pinyin}</div>
+                <div class="manga-dlg-vi-text">{activeDlg.vi}</div>
+
+                {/* Word Tokens Breakdown with SRS Integration */}
+                {activeDlg.tokens && activeDlg.tokens.length > 0 ? (
+                  <div>
+                    <div class="manga-tokens-section-title">
+                      Từ vựng trong câu (Bấm để tra & thêm SRS):
+                    </div>
+                    <div class="manga-tokens-grid">
+                      {activeDlg.tokens.map((t, idx) => (
+                        <button
+                          key={idx}
+                          type="button"
+                          class="manga-token-chip"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            showTokenPopover(t, e.currentTarget);
+                          }}
+                          title="Bấm để xem chi tiết & thêm SRS"
+                        >
+                          <span class="manga-chip-hz">{t.text}</span>
+                          <span class="manga-chip-py">{t.pinyin}</span>
+                          <span class="manga-chip-vi">{t.meaning_vi}</span>
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                ) : null}
               </div>
             ) : null}
           </div>
-        ) : null}
-      </div>
+        </div>
 
-      {/* Page thumbnail scrubber */}
-      <div class="manga-page-scrubber">
-        {story.pages.map((p, idx) => (
-          <button
-            key={idx}
-            type="button"
-            class={`manga-page-pill-btn ${idx === pageIdx ? 'active' : ''}`}
-            onClick={() => {
-              activeMangaPage.value = idx;
-              hoveredMangaDialogue.value = null;
-              selectedMangaDialogue.value = null;
-            }}
-            title={`Chuyển đến trang ${idx + 1}`}
-          >
-            {idx + 1}
-          </button>
-        ))}
-      </div>
-
-      {/* Completion message on last page */}
-      {pageIdx === totalPages - 1 ? (
-        <div style="margin-top: 30px; padding: 20px; border-radius: 12px; background: rgba(2, 132, 199, 0.08); border: 1px solid rgba(2, 132, 199, 0.3); text-align: center;">
-          <div style="font-size: 1.8rem; margin-bottom: 8px;">🎉</div>
-          <div style="font-weight: 800; font-size: 1.1rem; color: var(--graded-text-primary);">
-            {`Bạn đã hoàn thành câu chuyện 《${story.title.vi}》!`}
+        {/* Completion Card on last page */}
+        {pageIdx === totalPages - 1 ? (
+          <div class="manga-finish-card">
+            <div class="manga-finish-icon">🎉</div>
+            <h2 class="manga-finish-title">
+              {`Hoàn thành câu chuyện 《${story.title.vi}》!`}
+            </h2>
+            <p class="manga-finish-desc">
+              Chúc mừng bạn đã đọc trọn vẹn tập truyện tranh Doraemon này. Chăm chỉ đọc truyện tranh mỗi ngày sẽ giúp phản xạ đọc và vốn từ đời sống của bạn tăng lên vượt bậc!
+            </p>
+            <button
+              type="button"
+              class="manga-finish-cta"
+              onClick={goBackToMangaHub}
+            >
+              ← Khám phá tập truyện tiếp theo
+            </button>
           </div>
-          <p style="color: var(--graded-text-secondary); font-size: 0.88rem; max-width: 480px; margin: 6px auto 14px;">
-            Chúc mừng bạn đã đọc trọn vẹn tập truyện tranh Doraemon này. Hãy tiếp tục khám phá các tập truyện khác!
-          </p>
-          <button type="button" class="graded-filter-pill active" onClick={goBackToMangaHub} style="background: #0284c7; border-color: #0284c7;">
-            ← Khám phá tập truyện khác
+        ) : null}
+      </main>
+
+      {/* 3. Bottom Floating Control Dock (Apple/Readwise Style) */}
+      <footer class="manga-bottom-dock" onClick={(e) => e.stopPropagation()}>
+        <div class="manga-dock-pill">
+          {/* Previous Page Button */}
+          <button
+            type="button"
+            class="manga-dock-btn prev-action"
+            disabled={pageIdx === 0}
+            onClick={goToPrev}
+            title="Trang trước (Phím mũi tên trái)"
+          >
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            <span>Trước</span>
+          </button>
+
+          <div class="manga-dock-divider"></div>
+
+          {/* Zoom Controls */}
+          <div class="manga-zoom-controls">
+            <button
+              type="button"
+              class="manga-zoom-icon-btn"
+              onClick={() => adjustZoom(-0.15)}
+              disabled={mangaZoomLevel.value <= 0.7}
+              title="Thu nhỏ (Phím -)"
+              aria-label="Thu nhỏ"
+            >
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </button>
+            <span
+              class="manga-zoom-val"
+              onClick={() => { mangaZoomLevel.value = 1.0; }}
+              title="Nhấn để đặt lại 100% (Phím 0)"
+            >
+              {Math.round(mangaZoomLevel.value * 100)}%
+            </span>
+            <button
+              type="button"
+              class="manga-zoom-icon-btn"
+              onClick={() => adjustZoom(0.15)}
+              disabled={mangaZoomLevel.value >= 2.0}
+              title="Phóng to (Phím +)"
+              aria-label="Phóng to"
+            >
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </button>
+          </div>
+
+          <div class="manga-dock-divider"></div>
+
+          {/* Scrubber row dots */}
+          <div class="manga-scrub-row" role="tablist" aria-label="Danh sách trang">
+            {story.pages.map((p, idx) => (
+              <button
+                key={idx}
+                type="button"
+                class={`manga-scrub-dot ${idx === pageIdx ? 'active' : ''}`}
+                onClick={() => {
+                  activeMangaPage.value = idx;
+                  hoveredMangaDialogue.value = null;
+                  selectedMangaDialogue.value = null;
+                }}
+                title={`Chuyển tới trang ${idx + 1}`}
+                aria-label={`Trang ${idx + 1}`}
+              >
+                {idx + 1}
+              </button>
+            ))}
+          </div>
+
+          <div class="manga-dock-divider"></div>
+
+          {/* Next Page Button (Primary CTA) */}
+          <button
+            type="button"
+            class="manga-dock-btn primary-action"
+            disabled={pageIdx === totalPages - 1}
+            onClick={goToNext}
+            title="Trang sau (Phím mũi tên phải)"
+          >
+            <span>Trang sau</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
           </button>
         </div>
-      ) : null}
+
+        <div class="manga-dock-shortcuts-hint">
+          <span>Phím tắt:</span>
+          <kbd>←</kbd> <kbd>→</kbd> <span>Đổi trang</span>
+          <span style="opacity: 0.4;">·</span>
+          <kbd>+</kbd> <kbd>-</kbd> <span>Thu phóng</span>
+          <span style="opacity: 0.4;">·</span>
+          <kbd>O</kbd> <span>Viền thoại</span>
+          <span style="opacity: 0.4;">·</span>
+          <kbd>F</kbd> <span>Toàn màn hình</span>
+        </div>
+      </footer>
     </div>
   );
 }
