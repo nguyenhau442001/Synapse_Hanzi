@@ -80,7 +80,26 @@ def test_graded_reading_css_responsive_grid():
     assert "padding-bottom: 96px" in css_content
     assert "max-height: 150px" in css_content
 
+def test_reading_is_a_primary_destination():
+    index_html = (ROOT / "index.html").read_text(encoding="utf-8")
+    tabs_js = (ROOT / "src" / "islands" / "RadicalHub.jsx").read_text(encoding="utf-8")
+    bootstrap_js = (ROOT / "src" / "islands" / "AppBootstrap.js").read_text(encoding="utf-8")
+
+    # Desktop primary tabs and the phone bottom nav both link to the reading hub
+    assert 'id="primaryNavReading"' in index_html
+    assert 'id="mobNavReading"' in index_html
+    assert "primaryNavReading" in bootstrap_js
+    assert "primaryNavReading" in tabs_js and "mobNavReading" in tabs_js
+
+    # Count badges carry text labels; the long tagline no longer squeezes the header
+    assert 'class="header-badge-label">Sổ từ<' in index_html
+    assert 'class="header-badge-label">Cần ôn<' in index_html
+    base_css = (ROOT / "assets" / "css" / "base.css").read_text(encoding="utf-8")
+    assert ".brand-tagline-wrap { display: none; }" in base_css
+
+
 if __name__ == "__main__":
     test_graded_reading_jsx_layout_structure()
     test_graded_reading_css_responsive_grid()
+    test_reading_is_a_primary_destination()
     print("All graded reading layout tests passed!")

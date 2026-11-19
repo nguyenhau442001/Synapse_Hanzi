@@ -395,10 +395,8 @@ body {
   .header-streak-badge { height: 40px; font-size: 13px; }
 }
 
-/* Tablet / narrow desktop: the full tagline pushed the header actions off screen. */
-@media (max-width: 1199px) {
-  .brand-tagline-wrap { display: none; }
-}
+/* The long tagline squeezed the search pill and pushed the header actions off screen. */
+.brand-tagline-wrap { display: none; }
 
 /* Mobile header styling */
 @media (max-width: 767px) {
@@ -409,7 +407,11 @@ body {
     min-height: auto;
   }
   .app-header-brand {
-    flex: 1 1 auto;
+    order: 1;
+    flex: 1 1 0;
+    min-width: 0;
+    align-items: flex-start;
+    margin-bottom: 0;
   }
   .app-brand-badge {
     height: auto;
@@ -436,11 +438,11 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  .brand-tagline-wrap {
-    display: none;
-  }
+  /* Second header line: streak, count badges and utilities spread across the width. */
   .app-header-actions {
-    flex: 0 0 auto;
+    order: 3;
+    flex: 1 1 100%;
+    justify-content: space-between;
     gap: 6px;
   }
   .header-streak-badge { padding: 0 8px; font-size: 12px; height: 38px; }

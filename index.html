@@ -108,10 +108,12 @@
       <div class="header-cluster header-review-cluster" role="group" aria-label="Truy cập nhanh từ vựng">
         <button type="button" id="headerSavedWordsBtn" class="header-action-badge header-badge-saved" title="Từ khó đã đánh dấu (Sổ từ)" aria-label="Từ khó đã đánh dấu">
           <span class="header-badge-icon" aria-hidden="true">🔖</span>
+          <span class="header-badge-label">Sổ từ</span>
           <span class="header-badge-count" id="headerSavedCount">0</span>
         </button>
         <button type="button" id="headerUrgentReviewBtn" class="header-action-badge header-badge-urgent" title="Từ cần ôn gấp" aria-label="Từ cần ôn gấp">
           <span class="header-badge-icon" aria-hidden="true">⚡</span>
+          <span class="header-badge-label">Cần ôn</span>
           <span class="header-badge-count" id="headerUrgentCount">0</span>
         </button>
       </div>
@@ -180,6 +182,11 @@
         aria-controls="screenVocabHub" data-tab="vocab">
         <svg class="nav-tab-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
         <span>Từ vựng</span>
+      </button>
+      <button id="primaryNavReading" class="primary-tab" type="button" role="tab" aria-pressed="false"
+        aria-controls="screenGradedReading" data-tab="gradedReading">
+        <svg class="nav-tab-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4h7a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H2z"/><path d="M22 4h-7a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h8z"/></svg>
+        <span>Đọc</span>
       </button>
       <button id="primaryTabReview" class="primary-tab" type="button" role="tab" aria-pressed="false"
         aria-controls="screenReviewPicker" data-tab="review">

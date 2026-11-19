@@ -148,9 +148,14 @@ export function setPrimaryTab(tab, options) {
   if (mobReview) mobReview.classList.toggle('active', tab === 'review');
   const mobReading = document.getElementById('mobNavReading');
   if (mobReading) mobReading.classList.toggle('active', tab === 'gradedReading');
+  const navReading = document.getElementById('primaryNavReading');
+  if (navReading) {
+    navReading.classList.toggle('active', tab === 'gradedReading');
+    navReading.setAttribute('aria-pressed', String(tab === 'gradedReading'));
+  }
   if (mobProfile) mobProfile.classList.remove('active');
   if (typeof closeMobileStatsSheet === 'function') closeMobileStatsSheet();
-  const isTool = ['radicals', 'sentenceGame', 'guessWord', 'speedQuiz', 'reading', 'gradedReading', 'listening'].includes(tab);
+  const isTool = ['radicals', 'sentenceGame', 'guessWord', 'speedQuiz', 'reading', 'listening'].includes(tab);
   const isGame = ['sentenceGame', 'guessWord', 'speedQuiz'].includes(tab);
   document.body.classList.toggle('is-game-view', isGame);
   document.body.classList.toggle('reading-view-active', tab === 'reading');

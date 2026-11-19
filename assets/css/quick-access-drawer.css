@@ -212,6 +212,29 @@
   line-height: 1;
 }
 
+/* Text labels next to the count badges, only where the header has room. */
+.header-badge-label {
+  display: none;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+@media (min-width: 1280px) {
+  .header-badge-label { display: inline; }
+}
+
+/* A zero streak is not an achievement: neutral pill, muted flame. */
+:root .header-streak-badge.is-zero,
+:root[data-theme="dark"] .header-streak-badge.is-zero {
+  background: var(--card-bg);
+  border-color: var(--border);
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+.header-streak-badge.is-zero .header-streak-icon {
+  filter: grayscale(1);
+  opacity: 0.55;
+}
+
 .header-badge-count {
   display: inline-flex;
   align-items: center;
@@ -1026,16 +1049,23 @@
   }
 
   .header-search-wrap {
-    order: 3;
-    width: 100%;
-    max-width: 100%;
-    margin: 8px 0 0;
+    order: 2;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
     min-width: 0;
+    margin: 0;
   }
 
   .header-quick-search-btn {
-    height: 38px;
-    font-size: 13px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .hqs-placeholder {
+    display: none;
   }
 
   .hqs-kbd {

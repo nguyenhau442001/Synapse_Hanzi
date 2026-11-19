@@ -108,6 +108,7 @@ export function initAppEventBindings() {
     else if (window.setPrimaryTab) window.setPrimaryTab(tab, opts);
   };
   onId('primaryTabVocab', 'click', () => handlePrimaryTab('vocab'));
+  onId('primaryNavReading', 'click', () => handlePrimaryTab('gradedReading'));
   onId('primaryTabReview', 'click', () => handlePrimaryTab('review'));
   onId('primaryTabListening', 'click', () => handlePrimaryTab('listening'));
   onId('primaryTabGradedReading', 'click', () => handlePrimaryTab('gradedReading'));

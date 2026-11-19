@@ -524,6 +524,8 @@ export function renderLearningDashboard() {
 
   const headerStreak = document.getElementById('headerStreakText');
   if (headerStreak) headerStreak.textContent = `${streak} ngày`;
+  const headerStreakBadge = document.getElementById('headerStreakBadge');
+  if (headerStreakBadge) headerStreakBadge.classList.toggle('is-zero', !(streak > 0));
   const bannerStreak = document.getElementById('bannerStreakText');
   if (bannerStreak) bannerStreak.textContent = `${streak} ngày`;
   const bannerStreakBadge = document.getElementById('bannerStreakBadge');
