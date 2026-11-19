@@ -3,7 +3,7 @@
 // Preact port of the former assets/js/graded-reading.js. Renders the same markup inside
 // #screenGradedReading and keeps window.GradedReading for the tab router and SpaRouter.
 import { render } from 'preact';
-import { useEffect } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'preact/hooks';
 import { signal, computed } from '@preact/signals';
 import { toggleTheme } from './ThemeManager.js';
 
@@ -1499,6 +1499,58 @@ function MangaWordPanel({ dialogues, current, multiPage }) {
   );
 }
 
+// Bubble zoom never upsamples the scan: at most 1 image pixel per CSS pixel, and at most 1.4x.
+const MANGA_MAX_ZOOM = 1.4;
+const MANGA_STAGE_PAD = 16;
+const MANGA_ZOOM_KEY = 'manga.zoom';
+const mangaZoomOn = signal((() => { try { return localStorage.getItem(MANGA_ZOOM_KEY) !== '0'; } catch (e) { return true; } })());
+function setMangaZoom(on) {
+  mangaZoomOn.value = on;
+  try { localStorage.setItem(MANGA_ZOOM_KEY, on ? '1' : '0'); } catch (e) { /* storage unavailable */ }
+}
+
+// Fit the visible sheets into the stage box and compute the transform that centres the active bubble.
+function mangaStageLayout(box, visible, active) {
+  const n = visible.length;
+  const ars = visible.map(({ pg }) => {
+    const px = pg.ocr && pg.ocr.image_px;
+    return px && px[0] && px[1] ? px[0] / px[1] : 0.647;
+  });
+  const ar = ars[0];
+  const innerW = Math.max(0, box.w - MANGA_STAGE_PAD * 2);
+  const innerH = Math.max(0, box.h - MANGA_STAGE_PAD * 2);
+  const sheetH = Math.max(0, Math.min(innerH, innerW / (n * ar)));
+  const sheetW = sheetH * ar;
+  const left0 = (box.w - n * sheetW) / 2;
+  const top0 = (box.h - sheetH) / 2;
+  // Spread reads right-to-left: the earlier page (visible[0]) sits on the right.
+  const sheetX = (i) => left0 + (n === 2 ? (i === 0 ? sheetW : 0) : 0);
+
+  let transform = 'none';
+  let scale = 1;
+  if (active && sheetW > 0) {
+    const i = visible.findIndex(({ pg }) => (pg.dialogues || []).some((d) => d.id === active.id));
+    const pg = i >= 0 ? visible[i].pg : null;
+    const naturalW = pg && pg.ocr && pg.ocr.image_px ? pg.ocr.image_px[0] : 0;
+    const cap = naturalW ? Math.min(MANGA_MAX_ZOOM, naturalW / sheetW) : 1;
+    if (pg && cap >= 1.05) {
+      scale = cap;
+      const b = active.bbox;
+      const cx = sheetX(i) + ((b.x + b.width / 2) / 100) * sheetW;
+      const cy = top0 + ((b.y + b.height / 2) / 100) * sheetH;
+      const clampAxis = (view, start, size, c) => {
+        const scaled = size * scale;
+        if (scaled <= view) return (view - scaled) / 2 - start * scale;
+        return Math.min(-start * scale, Math.max(view - (start + size) * scale, view / 2 - c * scale));
+      };
+      const tx = clampAxis(box.w, left0, n * sheetW, cx);
+      const ty = clampAxis(box.h, top0, sheetH, cy);
+      transform = `translate(${tx.toFixed(1)}px, ${ty.toFixed(1)}px) scale(${scale.toFixed(3)})`;
+    }
+  }
+  return { sheetW, sheetH, sheetX, top0, transform, scale };
+}
+
 function MangaSegmented({ label, options, value, onPick }) {
   return (
     <div class="manga-setting-row">
@@ -1528,6 +1580,7 @@ function MangaSettings({ canSpread, spread }) {
         <div class="manga-shortcut-row"><span>Trang trước / sau</span><span><kbd>←</kbd> <kbd>→</kbd></span></div>
         <div class="manga-shortcut-row"><span>Bóng thoại trước / sau</span><span><kbd>↑</kbd> <kbd>↓</kbd></span></div>
         <div class="manga-shortcut-row"><span>1 trang / 2 trang</span><span><kbd>D</kbd></span></div>
+        <div class="manga-shortcut-row"><span>Phóng to / toàn trang</span><span><kbd>Z</kbd></span></div>
         <div class="manga-shortcut-row"><span>Số bóng thoại</span><span><kbd>O</kbd></span></div>
         <div class="manga-shortcut-row"><span>Toàn màn hình</span><span><kbd>F</kbd></span></div>
         <div class="manga-shortcut-row"><span>Đóng / về tủ truyện</span><span><kbd>Esc</kbd></span></div>
@@ -1588,6 +1641,19 @@ function MangaViewer({ story }) {
     }
   };
 
+  const stageRef = useRef(null);
+  const [stageBox, setStageBox] = useState({ w: 0, h: 0 });
+  useEffect(() => {
+    const el = stageRef.current;
+    if (!el || typeof ResizeObserver === 'undefined') return undefined;
+    const ro = new ResizeObserver(([entry]) => {
+      const { width, height } = entry.contentRect;
+      setStageBox({ w: Math.round(width), h: Math.round(height) });
+    });
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
+
   // Immersive reading: the reader covers the app chrome and owns the viewport.
   useEffect(() => {
     document.body.classList.add('manga-reading');
@@ -1622,6 +1688,9 @@ function MangaViewer({ story }) {
       } else if (e.key === 'd' || e.key === 'D') {
         e.preventDefault();
         setMangaSpread(!mangaSpreadPref.value);
+      } else if (e.key === 'z' || e.key === 'Z') {
+        e.preventDefault();
+        setMangaZoom(!mangaZoomOn.value);
       } else if (e.key === 'o' || e.key === 'O') {
         e.preventDefault();
         showMangaOutlines.value = !showMangaOutlines.value;
@@ -1641,11 +1710,13 @@ function MangaViewer({ story }) {
     };
   }, [pageIdx, totalPages, step, lastVisibleIdx, current && current.id, dialogues.length]);
 
-  const renderSheet = (pg, idx) => {
-    const px = pg.ocr && pg.ocr.image_px;
-    const ratio = px && px[0] && px[1] ? px[0] / px[1] : 0.647;
+  const zoomed = mangaZoomOn.value && Boolean(selectedMangaDialogue.value) && current;
+  const layout = mangaStageLayout(stageBox, visible, zoomed ? current : null);
+
+  const renderSheet = (pg, idx, i) => {
+    const pos = `left: ${layout.sheetX(i).toFixed(1)}px; top: ${layout.top0.toFixed(1)}px; width: ${layout.sheetW.toFixed(1)}px; height: ${layout.sheetH.toFixed(1)}px;`;
     return (
-      <div class="manga-paper-sheet" key={pg.page_num || idx} style={`--ar: ${ratio};`}>
+      <div class={`manga-paper-sheet ${visible.length === 2 ? (i === 0 ? 'is-right' : 'is-left') : ''}`} key={pg.page_num || idx} style={pos}>
         <img src={pg.image} alt={`Trang ${idx + 1} - ${story.title.vi}`} class="manga-page-img" loading="eager" />
         {(pg.dialogues || []).map((d, i) => {
           const isActive = current && current.id === d.id;
@@ -1718,9 +1789,21 @@ function MangaViewer({ story }) {
 
       <div class="manga-reader-body">
         <main class="manga-stage-col" id="mangaCanvas">
-          <div class={`manga-stage ${spread ? 'is-spread' : ''}`}>
-            {/* Spread mode: like a printed manga, the earlier page sits on the right */}
-            {visible.map(({ pg, idx }) => renderSheet(pg, idx))}
+          <div class="manga-stage-viewport" ref={stageRef} onClick={() => { if (selectedMangaDialogue.value && mangaZoomOn.value) selectedMangaDialogue.value = null; }}>
+            <div class={`manga-stage ${layout.scale > 1 ? 'is-zoomed' : ''}`} style={`transform: ${layout.transform};`}>
+              {/* Spread mode: like a printed manga, the earlier page sits on the right */}
+              {stageBox.w ? visible.map(({ pg, idx }, i) => renderSheet(pg, idx, i)) : null}
+            </div>
+            <button
+              type="button"
+              class={`manga-zoom-btn ${mangaZoomOn.value ? 'active' : ''}`}
+              aria-pressed={mangaZoomOn.value}
+              onClick={(e) => { e.stopPropagation(); setMangaZoom(!mangaZoomOn.value); }}
+              title={mangaZoomOn.value ? 'Đang phóng to bóng thoại — bấm để xem toàn trang (Z)' : 'Phóng to bóng thoại đang đọc (Z)'}
+            >
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m21 21-4.3-4.3"></path>{mangaZoomOn.value ? <path d="M8 11h6"></path> : <path d="M8 11h6M11 8v6"></path>}</svg>
+              <span>{mangaZoomOn.value ? 'Toàn trang' : 'Phóng to'}</span>
+            </button>
           </div>
 
           <nav class="manga-page-nav" aria-label="Chuyển trang" onClick={(e) => e.stopPropagation()}>

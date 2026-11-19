@@ -2324,8 +2324,6 @@ body.graded-translation-hidden .graded-sentence-vi {
   --manga-tint-mid: rgba(205, 160, 80, 0.36);
   --manga-tint-adv: rgba(106, 100, 168, 0.3);
   --manga-tint-none: rgba(140, 130, 115, 0.16);
-  --manga-sheet-h: max(520px, calc(100vh - 236px));
-  --manga-panel-w: 380px;
 }
 
 :root[data-theme="dark"] {
@@ -2590,7 +2588,6 @@ body.manga-reading { overflow: hidden; }
   background: var(--manga-stage);
   overflow: hidden;
   --manga-topbar-h: 48px;
-  --manga-sheet-h: calc(100vh - 150px);
 }
 
 .manga-ghost-btn,
@@ -2749,58 +2746,59 @@ body.manga-reading { overflow: hidden; }
 .manga-icon-btn:hover { background: var(--surface-subtle); color: var(--text-primary); }
 .manga-icon-btn.sm { width: 30px; height: 30px; border-radius: 8px; }
 
-/* 6D. Stage + panel layout */
+/* 6D. Stage + panel layout: page ~65%, panel ~35% */
 .manga-reader-body {
   flex: 1;
-  display: flex;
   min-height: 0;
-  overflow: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) clamp(320px, 35%, 520px);
 }
 
 .manga-stage-col {
-  flex: 1;
   min-width: 0;
+  min-height: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  padding: 18px 24px 16px;
   background: var(--manga-stage);
   transition: background 200ms ease;
 }
 
 .theme-sepia .manga-stage-col { background: var(--manga-stage-paper); }
 
-.manga-stage {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+.manga-stage-viewport {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
 }
 
-/* Spread: earlier page on the right, as in a printed tankobon */
-.manga-stage.is-spread { flex-direction: row-reverse; }
+/* Same box as the viewport; transformed to zoom onto the active bubble. */
+.manga-stage {
+  position: absolute;
+  inset: 0;
+  transform-origin: 0 0;
+  transition: transform 320ms cubic-bezier(0.2, 0.7, 0.2, 1);
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .manga-stage { transition: none; }
+}
 
 .manga-paper-sheet {
-  position: relative;
-  flex: none;
-  aspect-ratio: var(--ar);
-  width: min(calc(var(--manga-sheet-h) * var(--ar)), 100%);
+  position: absolute;
   border-radius: 3px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 12px 32px -8px rgba(60, 40, 20, 0.35);
   background: #F3EBDD;
 }
 
-.manga-stage.is-spread .manga-paper-sheet {
-  width: min(calc(var(--manga-sheet-h) * var(--ar)), 50%);
-  border-radius: 0;
-}
-
-.manga-stage.is-spread .manga-paper-sheet:first-child { border-radius: 0 3px 3px 0; }
-.manga-stage.is-spread .manga-paper-sheet:last-child:not(:first-child) { border-radius: 3px 0 0 3px; }
+/* Spread: earlier page on the right, as in a printed tankobon */
+.manga-paper-sheet.is-right { border-radius: 0 3px 3px 0; }
+.manga-paper-sheet.is-left { border-radius: 3px 0 0 3px; }
 
 /* gutter shading drawn above the artwork, never blocking the bubbles */
-.manga-stage.is-spread .manga-paper-sheet:first-child::after,
-.manga-stage.is-spread .manga-paper-sheet:last-child:not(:first-child)::after {
+.manga-paper-sheet.is-right::after,
+.manga-paper-sheet.is-left::after {
   content: "";
   position: absolute;
   top: 0;
@@ -2809,15 +2807,29 @@ body.manga-reading { overflow: hidden; }
   pointer-events: none;
 }
 
-.manga-stage.is-spread .manga-paper-sheet:first-child::after {
-  left: 0;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.16), transparent);
+.manga-paper-sheet.is-right::after { left: 0; background: linear-gradient(90deg, rgba(0, 0, 0, 0.16), transparent); }
+.manga-paper-sheet.is-left::after { right: 0; background: linear-gradient(270deg, rgba(0, 0, 0, 0.16), transparent); }
+
+.manga-zoom-btn {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  z-index: 5;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 32px;
+  padding: 0 11px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--card-bg);
+  color: var(--text-secondary);
+  font: 600 12px var(--font-sans);
+  box-shadow: 0 4px 14px -6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
-.manga-stage.is-spread .manga-paper-sheet:last-child:not(:first-child)::after {
-  right: 0;
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0.16), transparent);
-}
+.manga-zoom-btn:hover { color: var(--text-primary); }
 
 .manga-page-img {
   display: block;
@@ -2883,7 +2895,10 @@ body.manga-reading { overflow: hidden; }
 /* 6F. Page navigation under the page */
 .manga-page-nav {
   position: relative;
-  width: min(560px, 100%);
+  flex: none;
+  align-self: center;
+  width: min(560px, calc(100% - 24px));
+  padding: 8px 0 12px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -2970,14 +2985,14 @@ body.manga-reading { overflow: hidden; }
 
 /* 6G. Word panel */
 .manga-panel {
-  width: var(--manga-panel-w);
-  flex: none;
+  min-width: 0;
+  min-height: 0;
   display: flex;
   flex-direction: column;
-  max-height: calc(var(--manga-sheet-h) + 100px);
   background: var(--manga-panel-bg);
   border-left: 1px solid var(--border);
-  overflow: hidden;
+  overflow-y: auto; /* the panel is the only scroll container */
+  overscroll-behavior: contain;
 }
 
 .manga-panel-sentence {
@@ -3184,9 +3199,6 @@ body.manga-reading { overflow: hidden; }
 }
 
 .manga-dlg-list {
-  flex: 1;
-  min-height: 0;
-  overflow-y: auto;
   display: flex;
   flex-direction: column;
   gap: 2px;
@@ -3261,15 +3273,8 @@ body.manga-reading { overflow: hidden; }
 
 /* 6I. Responsive */
 @media (max-width: 999px) {
-  .manga-reader-body { flex-direction: column; }
-  .manga-panel {
-    width: 100%;
-    max-height: none;
-    border-left: none;
-    border-top: 1px solid var(--border);
-  }
-  .manga-dlg-list { max-height: 320px; }
-  .manga-stage-col { padding: 14px 12px; }
+  .manga-reader-body { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) minmax(0, 40%); }
+  .manga-panel { border-left: none; border-top: 1px solid var(--border); }
 }
 
 @media (max-width: 760px) {
