@@ -288,6 +288,9 @@ function getFilteredManifest() {
     if (lvl === 'wanwu') {
       const isWanwu = m.series === 'wanwu' || (m.topic_vi && m.topic_vi.includes('Vạn vật'));
       if (!isWanwu) return false;
+    } else if (lvl === 'textbook') {
+      const isTextbook = m.series === 'textbook' || m.id.startsWith('hsk');
+      if (!isTextbook) return false;
     } else if (lvl === 'read') {
       if (!isStoryRead(m.id)) return false;
     } else if (lvl !== 'all' && m.level.toLowerCase() !== lvl.toLowerCase()) {
@@ -560,6 +563,7 @@ function StoryCard({ story }) {
   const descVi = story.description_vi || '';
   const topicVi = story.topic_vi || '';
   const isWanwu = story.series === 'wanwu' || (story.topic_vi && story.topic_vi.includes('Vạn vật'));
+  const isTextbook = story.series === 'textbook' || story.id.startsWith('hsk');
   const readLabel = isRead ? 'Đã đọc (Bấm để hủy)' : 'Đánh dấu đã đọc';
 
   return (
@@ -572,6 +576,10 @@ function StoryCard({ story }) {
             {isWanwu ? (
               <span class="graded-book-badge" title="Tủ sách Vạn vật thú vị">
                 {`📚 万物有意思${story.page_display ? ` · ${story.page_display}` : ''}`}
+              </span>
+            ) : isTextbook ? (
+              <span class="graded-textbook-badge" title="Bài đọc Giáo trình HSK Chuẩn">
+                📖 Giáo trình HSK
               </span>
             ) : null}
             {(!isWanwu || !topicVi.includes('Vạn vật')) && topicVi ? (
@@ -689,6 +697,7 @@ function Hub() {
   const shown = filtered.slice(0, hubLimit.value);
   const lvlFilter = levelFilter.value;
   const wanwuCount = manifest.filter((m) => m.series === 'wanwu' || (m.topic_vi && m.topic_vi.includes('Vạn vật'))).length;
+  const textbookCount = manifest.filter((m) => m.series === 'textbook' || m.id.startsWith('hsk')).length;
   const hasActiveFilters = Boolean(searchQuery.value || categoryFilter.value !== 'all' || levelFilter.value !== 'all' || sortOrder.value !== 'default');
 
   return (
@@ -722,20 +731,45 @@ function Hub() {
         </div>
       </header>{' '}
 
-      {/* 2. Optional Featured Collection Banner (Streamlined secondary strip) */}
-      <div class="graded-book-strip">
-        <div class="graded-book-strip-left">
-          <span class="graded-book-strip-icon">📚</span>
-          <span class="graded-book-strip-title">Tuyển tập 《万物有意思》 (Vạn vật thú vị)</span>
-          <span class="graded-book-strip-desc">Văn hóa & đời sống ({wanwuCount} bài)</span>
-        </div>
-        <button
-          type="button"
-          class={`graded-book-strip-btn ${lvlFilter === 'wanwu' ? 'active' : ''}`}
-          onClick={() => setFilter(levelFilter, lvlFilter === 'wanwu' ? 'all' : 'wanwu')}
+      {/* 2. Dual Featured Collections Strip */}
+      <div class="graded-collections-strip">
+        <div
+          class={`graded-col-card textbook ${lvlFilter === 'textbook' ? 'active' : ''}`}
+          onClick={() => setFilter(levelFilter, lvlFilter === 'textbook' ? 'all' : 'textbook')}
+          role="button"
+          tabindex="0"
+          title="Lọc bài đọc Giáo trình HSK Chuẩn"
         >
-          {lvlFilter === 'wanwu' ? '✓ Đang xem tủ sách' : `Xem tủ sách (${wanwuCount}) →`}
-        </button>
+          <div class="graded-col-left">
+            <span class="graded-col-icon">📖</span>
+            <div class="graded-col-text">
+              <div class="graded-col-title">Giáo trình HSK (H1 - H9)</div>
+              <div class="graded-col-desc">Sách giáo khoa phân cấp · {textbookCount} bài</div>
+            </div>
+          </div>
+          <span class="graded-col-action">
+            {lvlFilter === 'textbook' ? '✓ Đang xem' : 'Xem giáo trình →'}
+          </span>
+        </div>
+
+        <div
+          class={`graded-col-card wanwu ${lvlFilter === 'wanwu' ? 'active' : ''}`}
+          onClick={() => setFilter(levelFilter, lvlFilter === 'wanwu' ? 'all' : 'wanwu')}
+          role="button"
+          tabindex="0"
+          title="Lọc tủ sách Vạn vật thú vị"
+        >
+          <div class="graded-col-left">
+            <span class="graded-col-icon">📚</span>
+            <div class="graded-col-text">
+              <div class="graded-col-title">Tuyển tập 《万物有意思》</div>
+              <div class="graded-col-desc">Bách khoa đời sống minh họa · {wanwuCount} bài</div>
+            </div>
+          </div>
+          <span class="graded-col-action">
+            {lvlFilter === 'wanwu' ? '✓ Đang xem' : 'Xem tủ sách →'}
+          </span>
+        </div>
       </div>{' '}
 
       {/* 3. Unified Search and Filtering Toolbar */}
@@ -802,11 +836,11 @@ function Hub() {
             </button>
             <button
               type="button"
-              class={`graded-filter-pill ${lvlFilter === 'read' ? 'active' : ''} ${readCount === 0 ? 'disabled' : ''}`}
-              onClick={() => setFilter(levelFilter, 'read')}
-              title="Xem bài đã đọc"
+              class={`graded-filter-pill graded-pill-textbook ${lvlFilter === 'textbook' ? 'active' : ''}`}
+              onClick={() => setFilter(levelFilter, 'textbook')}
+              title="Sách giáo khoa / Giáo trình HSK (H1-H9)"
             >
-              {`✓ Đã đọc (${readCount})`}
+              {`📖 Giáo trình (${textbookCount})`}
             </button>
             <button
               type="button"
@@ -815,6 +849,14 @@ function Hub() {
               title="Tuyển tập Vạn vật thú vị"
             >
               {`📚 Vạn vật (${wanwuCount})`}
+            </button>
+            <button
+              type="button"
+              class={`graded-filter-pill ${lvlFilter === 'read' ? 'active' : ''} ${readCount === 0 ? 'disabled' : ''}`}
+              onClick={() => setFilter(levelFilter, 'read')}
+              title="Xem bài đã đọc"
+            >
+              {`✓ Đã đọc (${readCount})`}
             </button>
           </div>
 
@@ -1051,6 +1093,10 @@ function ReaderNav({ story }) {
           {story.page_display ? (
             <span class="graded-reader-page-badge" title="Trang trong sách">
               {`📖 ${story.page_display}`}
+            </span>
+          ) : story.series === 'textbook' || story.id.startsWith('hsk') ? (
+            <span class="graded-reader-textbook-badge" title="Bài đọc Giáo trình HSK Chuẩn">
+              📖 Giáo trình HSK
             </span>
           ) : null}
           <span class="graded-reader-duration" title="Thời lượng đọc ước tính">
