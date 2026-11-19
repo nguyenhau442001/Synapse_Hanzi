@@ -1453,17 +1453,12 @@ const EYE_ICON = (
   </svg>
 );
 
-function MangaWordPanel({ dialogues, current, order }) {
+function MangaWordPanel({ current, order, onStep }) {
   const tokens = (current && current.tokens) || [];
   // No word is selected until the learner taps one: read first, look up second.
   const tIdx = mangaTokenIdx.value;
   const word = tIdx >= 0 && tokens[tIdx] && !tokens[tIdx].punct ? tokens[tIdx] : null;
-  const pos = current ? dialogues.findIndex((x) => x.d.id === current.id) : -1;
-  const step = (delta) => {
-    if (!dialogues.length) return;
-    const next = (pos + delta + dialogues.length) % dialogues.length;
-    selectMangaDialogue(dialogues[next].d);
-  };
+  const step = onStep;
   const added = word && mangaAddedWords.value[word.text];
   const speaker = current && current.character ? current.character.split('(')[0].trim() : '';
 
@@ -1654,14 +1649,14 @@ function MangaSettings({ canSpread, spread }) {
       </div>
       <div class="manga-settings-keys">
         <div class="manga-setting-label">Phím tắt</div>
-        <div class="manga-shortcut-row"><span>Trang trước / sau</span><span><kbd>←</kbd> <kbd>→</kbd></span></div>
-        <div class="manga-shortcut-row"><span>Bóng thoại trước / sau</span><span><kbd>↑</kbd> <kbd>↓</kbd></span></div>
+        <div class="manga-shortcut-row"><span>Bóng thoại trước / sau</span><span><kbd>←</kbd> <kbd>→</kbd></span></div>
+        <div class="manga-shortcut-row"><span>Trang sau / trước</span><span><kbd>Space</kbd> <kbd>⇧ Space</kbd></span></div>
         <div class="manga-shortcut-row"><span>1 trang / 2 trang</span><span><kbd>D</kbd></span></div>
         <div class="manga-shortcut-row"><span>Hiện / ẩn nghĩa</span><span><kbd>T</kbd></span></div>
         <div class="manga-shortcut-row"><span>Phóng to / toàn trang</span><span><kbd>Z</kbd></span></div>
         <div class="manga-shortcut-row"><span>Số bóng thoại</span><span><kbd>O</kbd></span></div>
         <div class="manga-shortcut-row"><span>Toàn màn hình</span><span><kbd>F</kbd></span></div>
-        <div class="manga-shortcut-row"><span>Đóng / về tủ truyện</span><span><kbd>Esc</kbd></span></div>
+        <div class="manga-shortcut-row"><span>Thoát toàn màn hình / về tủ truyện</span><span><kbd>Esc</kbd></span></div>
       </div>
     </div>
   );
@@ -1711,9 +1706,15 @@ function MangaViewer({ story }) {
   };
 
   const stepDialogue = (delta) => {
-    if (!dialogues.length) return;
-    const pos = current ? dialogues.findIndex((x) => x.d.id === current.id) : -1;
-    selectMangaDialogue(dialogues[(pos + delta + dialogues.length) % dialogues.length].d);
+    // Chapter-wide: stepping past the last bubble of a page turns the page.
+    const all = [];
+    (story.pages || []).forEach((pg, pi) => (pg.dialogues || []).forEach((d) => all.push({ d, pi })));
+    if (!all.length) return;
+    const pos = current ? all.findIndex((x) => x.d.id === current.id) : -1;
+    const target = all[pos + delta];
+    if (!target) return;
+    if (target.pi < pageIdx || target.pi > lastVisibleIdx) activeMangaPage.value = target.pi;
+    selectMangaDialogue(target.d);
   };
 
   const toggleFullscreen = () => {
@@ -1745,6 +1746,11 @@ function MangaViewer({ story }) {
     return () => document.body.classList.remove('manga-reading');
   }, []);
 
+  // The key listener is registered once and always calls the latest handlers, so held or
+  // rapid key presses never run against a stale page / bubble.
+  const keyActions = useRef({});
+  keyActions.current = { stepDialogue, goToNext, goToPrev, toggleFullscreen };
+
   useEffect(() => {
     const onFsChange = () => { mangaIsFullscreen.value = Boolean(document.fullscreenElement); };
     document.addEventListener('fullscreenchange', onFsChange);
@@ -1752,40 +1758,44 @@ function MangaViewer({ story }) {
     window.addEventListener('resize', onResize);
 
     const onKeyDown = (e) => {
-      if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) return;
+      if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable)) return;
       if (e.metaKey || e.ctrlKey || e.altKey) return;
-      if (e.key === 'ArrowRight' || e.key === 'PageDown') {
+      const key = e.key;
+      const act = keyActions.current;
+      if (key === 'ArrowRight' || key === 'ArrowDown') {
         e.preventDefault();
-        goToNext();
-      } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+        act.stepDialogue(1);
+      } else if (key === 'ArrowLeft' || key === 'ArrowUp') {
         e.preventDefault();
-        goToPrev();
-      } else if (e.key === 'ArrowDown' || e.key === 'j' || e.key === 'J') {
+        act.stepDialogue(-1);
+      } else if (key === ' ' || key === 'PageDown' || key === 'PageUp') {
         e.preventDefault();
-        stepDialogue(1);
-      } else if (e.key === 'ArrowUp' || e.key === 'k' || e.key === 'K') {
+        // A focused button would otherwise be "clicked" by the Space keyup.
+        if (document.activeElement && document.activeElement !== document.body) document.activeElement.blur();
+        if ((key === ' ' && e.shiftKey) || key === 'PageUp') act.goToPrev();
+        else act.goToNext();
+      } else if (key === 'f' || key === 'F') {
         e.preventDefault();
-        stepDialogue(-1);
-      } else if (e.key === 'f' || e.key === 'F') {
-        e.preventDefault();
-        toggleFullscreen();
-      } else if (e.key === 'd' || e.key === 'D') {
+        act.toggleFullscreen();
+      } else if (key === 'd' || key === 'D') {
         e.preventDefault();
         setMangaSpread(!mangaSpreadPref.value);
-      } else if (e.key === 't' || e.key === 'T') {
+      } else if (key === 't' || key === 'T') {
         e.preventDefault();
         mangaShowVi.value = !mangaShowVi.value;
-      } else if (e.key === 'z' || e.key === 'Z') {
+      } else if (key === 'z' || key === 'Z') {
         e.preventDefault();
         setMangaZoom(!mangaZoomOn.value);
-      } else if (e.key === 'o' || e.key === 'O') {
+      } else if (key === 'o' || key === 'O') {
         e.preventDefault();
         showMangaOutlines.value = !showMangaOutlines.value;
-      } else if (e.key === '?') {
+      } else if (key === '?') {
         e.preventDefault();
         showMangaShortcutsModal.value = !showMangaShortcutsModal.value;
-      } else if (e.key === 'Escape') {
+      } else if (key === 'Escape') {
+        // Order: close settings, then leave fullscreen, then back to the shelf.
         if (showMangaShortcutsModal.value) showMangaShortcutsModal.value = false;
+        else if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
         else goBackToMangaHub();
       }
     };
@@ -1795,7 +1805,7 @@ function MangaViewer({ story }) {
       window.removeEventListener('resize', onResize);
       window.removeEventListener('keydown', onKeyDown);
     };
-  }, [pageIdx, totalPages, step, lastVisibleIdx, current && current.id, dialogues.length]);
+  }, []);
 
   const zoomed = mangaZoomOn.value && Boolean(selectedMangaDialogue.value) && current;
   const layout = mangaStageLayout(stageBox, visible, zoomed ? current : null);
@@ -1901,7 +1911,7 @@ function MangaViewer({ story }) {
           </div>
 
           <nav class="manga-strip" aria-label="Bóng thoại trên trang" onClick={(e) => e.stopPropagation()}>
-            <button type="button" class="manga-strip-btn" disabled={pageIdx === 0} onClick={goToPrev} title="Trang trước">
+            <button type="button" class="manga-strip-btn" disabled={pageIdx === 0} onClick={goToPrev} title="Trang trước (⇧ Space)">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
               <span>Trang trước</span>
             </button>
@@ -1928,7 +1938,7 @@ function MangaViewer({ story }) {
                 <span>✓ Đọc xong</span>
               </button>
             ) : (
-              <button type="button" class="manga-strip-btn" onClick={goToNext} title="Trang sau">
+              <button type="button" class="manga-strip-btn" onClick={goToNext} title="Trang sau (Space)">
                 <span>Trang sau</span>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
               </button>
@@ -1936,7 +1946,7 @@ function MangaViewer({ story }) {
           </nav>
         </main>
 
-        <MangaWordPanel dialogues={dialogues} current={current} order={order} />
+        <MangaWordPanel current={current} order={order} onStep={stepDialogue} />
       </div>
     </div>
   );
