@@ -3009,6 +3009,14 @@ body.graded-translation-hidden .graded-sentence-vi {
   cursor: pointer;
 }
 
+.manga-sent-punct {
+  font-family: var(--font-classical);
+  font-size: 25px;
+  line-height: 1.15;
+  padding-bottom: 6px;
+  color: var(--text-secondary);
+}
+
 .manga-sent-token:hover { background: var(--manga-chip); }
 .manga-sent-token.is-active { background: var(--manga-soft); }
 

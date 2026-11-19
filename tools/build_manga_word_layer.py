@@ -355,22 +355,32 @@ def build_story(sid, misses):
                 "bbox": union(dlg_rects), "zh": zh_s, "zh_trad": zh_t,
                 "pinyin": bub.get("pinyin") or sentence_py, "vi": bub.get("vi", ""), "tokens": [],
             }
+            # Every segment becomes a token so the panel can show the whole sentence:
+            # joined text_trad == zh_trad. Punctuation runs are kept as "punct" tokens;
+            # words the lexicon does not know stay in with hsk: null.
             pos = 0
             for wi, word_s in enumerate(segment(zh_s, bub.get("seg"))):
                 start, pos = pos, pos + len(word_s)
                 word_t = zh_t[start:pos]
                 if not CJK_RE.search(word_s):
+                    prev = dialogue["tokens"][-1] if dialogue["tokens"] else None
+                    if prev and prev.get("punct"):
+                        prev["text"] += word_s
+                        prev["text_trad"] += word_t
+                    else:
+                        dialogue["tokens"].append({"text": word_s, "text_trad": word_t, "punct": True})
                     continue
                 py, hv, mean, hsk, known = lookup(word_s, word_t)
                 if not known:
                     misses.setdefault(word_s, f"{sid} p{pn}: {zh_s}")
+                tok = {"text": word_s, "text_trad": word_t, "pinyin": py, "hanviet": hv,
+                       "meaning_vi": mean, "hsk": hsk}
+                dialogue["tokens"].append(tok)
+                # Hover hotspots still need a located glyph box on the scan.
                 wboxes = [boxes[k] for k in range(start, pos) if boxes[k] and CJK_RE.match(zh_t[k])]
                 if not wboxes:
                     continue
                 rects = rects_for(wboxes, W, H)
-                tok = {"text": word_s, "text_trad": word_t, "pinyin": py, "hanviet": hv,
-                       "meaning_vi": mean, "hsk": hsk}
-                dialogue["tokens"].append(tok)
                 hotspots.append({
                     "id": f"{did}_w{wi}", **tok, "bbox": union(rects), "rects": rects,
                     "sentence_zh": zh_t, "sentence_zh_simplified": zh_s,

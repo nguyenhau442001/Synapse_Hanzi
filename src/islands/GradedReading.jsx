@@ -1367,8 +1367,9 @@ function addMangaTokenToSrs(token) {
 
 function MangaWordPanel({ dialogues, current, multiPage }) {
   const tokens = (current && current.tokens) || [];
-  const tIdx = Math.min(mangaTokenIdx.value, Math.max(0, tokens.length - 1));
-  const word = tokens[tIdx];
+  let tIdx = Math.min(mangaTokenIdx.value, Math.max(0, tokens.length - 1));
+  if (tokens[tIdx] && tokens[tIdx].punct) tIdx = Math.max(0, tokens.findIndex((t) => !t.punct));
+  const word = tokens[tIdx] && !tokens[tIdx].punct ? tokens[tIdx] : null;
   const pos = current ? dialogues.findIndex((x) => x.d.id === current.id) : -1;
   const step = (delta) => {
     if (!dialogues.length) return;
@@ -1400,7 +1401,7 @@ function MangaWordPanel({ dialogues, current, multiPage }) {
             </button>
           </div>
           <div class="manga-sentence-tokens" lang="zh-Hant">
-            {tokens.map((t, i) => (
+            {tokens.map((t, i) => (t.punct ? <span key={`${current.id}-${i}`} class="manga-sent-punct">{t.text_trad || t.text}</span> : (
               <button
                 key={`${current.id}-${i}`}
                 type="button"
@@ -1410,7 +1411,7 @@ function MangaWordPanel({ dialogues, current, multiPage }) {
                 <span class="manga-sent-py">{t.pinyin}</span>
                 <span class="manga-sent-hz">{t.text_trad || t.text}</span>
               </button>
-            ))}
+            )))}
           </div>
           <p class="manga-sentence-vi">{current.vi}</p>
           <div class="manga-band-legend" aria-hidden="true">
