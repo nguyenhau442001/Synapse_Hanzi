@@ -303,6 +303,15 @@ body.graded-story-active #primaryTabs {
   }
 }
 
+/* Wide screens: scale the home dashboard up proportionally instead of
+   leaving large empty margins on both sides. Layout stays identical. */
+@media (min-width: 1600px) {
+  body.home-screen .app { zoom: 1.15; }
+}
+@media (min-width: 1840px) {
+  body.home-screen .app { zoom: 1.25; }
+}
+
 /* ==========================================================================
    Focused Study Workspace (Studio Layout & Focused Ergonomics)
    - Desktop (>= 1080px): Asymmetric 2-column Studio (Flashcard Stage + Docked Companion Panel)
