@@ -1107,9 +1107,25 @@ function tokenUnits(tokens) {
   return units;
 }
 
+// Full-width CJK marks: the glyph fills only half of its box, so CSS trims the empty half.
+const PUNCT_OPEN = '“‘（《〈【';
+const PUNCT_CLOSE = '，。？！、：；”’）》〉】';
+
+function punctClass(ch) {
+  if (PUNCT_OPEN.includes(ch)) return 'punct-open';
+  if (PUNCT_CLOSE.includes(ch)) return 'punct-close';
+  return undefined;
+}
+
 // Word tokens keep the legacy newline whitespace around them (it affects CJK line breaking).
 function Token({ token, sidx, tidx, lvlNum }) {
-  if (PUNCT_RE.test(token.text)) return <span class="graded-punctuation">{token.text}</span>;
+  if (PUNCT_RE.test(token.text)) {
+    return (
+      <span class="graded-punctuation">
+        {[...token.text].map((ch) => <span class={punctClass(ch)}>{ch}</span>)}
+      </span>
+    );
+  }
   const status = getTokenSrsStatus(token);
   const tokenLvl = token.hsk || 1;
   const isOverLevel = Boolean(token.word_id && tokenLvl > lvlNum);

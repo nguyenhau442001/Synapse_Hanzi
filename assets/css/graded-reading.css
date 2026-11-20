@@ -1906,6 +1906,10 @@ body.graded-pinyin-new .graded-token.token-overlevel rt.token-pinyin {
   margin-left: 0;
 }
 
+/* Trim the empty half of full-width CJK punctuation so more words fit per line */
+.graded-punctuation .punct-close { margin-right: -0.4em; }
+.graded-punctuation .punct-open { margin-left: -0.4em; }
+
 /* Sentence Translation */
 .graded-sentence-vi {
   font-size: 0.98rem;
