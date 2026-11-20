@@ -78,6 +78,14 @@ export function daySeconds(dayEntry) {
   return dayEntry && typeof dayEntry.seconds === 'number' ? dayEntry.seconds : 0;
 }
 
+// A day counts as studied once at least one card was graded, or the app was
+// actively open for STUDIED_DAY_MIN_SECONDS (reading, listening, manga, ...).
+export const STUDIED_DAY_MIN_SECONDS = 5 * 60;
+
+export function isStudiedDay(dayEntry) {
+  return dayWordCount(dayEntry) > 0 || daySeconds(dayEntry) >= STUDIED_DAY_MIN_SECONDS;
+}
+
 export function formatStudyDuration(totalMinutes) {
   const minutes = Math.round(totalMinutes);
   if (minutes <= 0) return '0 phút';
@@ -120,14 +128,14 @@ export function studyStreak(days) {
   cursor.setHours(12, 0, 0, 0);
   const today = localDateKey(cursor);
 
-  if (dayWordCount(days[today]) === 0) {
+  if (!isStudiedDay(days[today])) {
     cursor.setDate(cursor.getDate() - 1);
   }
 
   let streak = 0;
   while (streak < 3650) {
     const key = localDateKey(cursor);
-    if (dayWordCount(days[key]) === 0) break;
+    if (!isStudiedDay(days[key])) break;
     streak++;
     cursor.setDate(cursor.getDate() - 1);
   }
@@ -136,7 +144,7 @@ export function studyStreak(days) {
 
 export function streakStats(days) {
   const studiedKeys = Object.keys(days)
-    .filter(key => dayWordCount(days[key]) > 0)
+    .filter(key => isStudiedDay(days[key]))
     .sort();
 
   if (studiedKeys.length === 0) {
@@ -204,7 +212,7 @@ export function buildMonthGrid(days, year, month) {
       day: d,
       minutes,
       bucket: intensityBucket(minutes),
-      studied: dayWordCount(days[key]) > 0,
+      studied: isStudiedDay(days[key]),
       isToday: key === todayKey,
       isFuture: dateOnly > now,
       inMonth: true,
@@ -222,7 +230,7 @@ export function yearSummary(days, year) {
   Object.keys(days).forEach(key => {
     if (!key.startsWith(String(year) + '-')) return;
     const entry = days[key];
-    if (dayWordCount(entry) > 0) studiedDays++;
+    if (isStudiedDay(entry)) studiedDays++;
     totalMinutes += daySeconds(entry) / 60;
   });
   return { studiedDays, totalMinutes };
@@ -1049,6 +1057,8 @@ export function mountLevels() {
   window.readStudyActivity = readStudyActivity;
   window.dayWordCount = dayWordCount;
   window.daySeconds = daySeconds;
+  window.STUDIED_DAY_MIN_SECONDS = STUDIED_DAY_MIN_SECONDS;
+  window.isStudiedDay = isStudiedDay;
   window.formatStudyDuration = formatStudyDuration;
   window.readDailyStudyGoal = readDailyStudyGoal;
   window.updateDailyStudyGoal = updateDailyStudyGoal;
