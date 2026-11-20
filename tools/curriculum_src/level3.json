@@ -1,0 +1,236 @@
+{
+ "name": "HSK 3",
+ "band": "Sơ cấp",
+ "grammarTotal": 81,
+ "lessons": [
+  {
+   "zh": "请把门关上", "vi": "Xử lý đồ vật với 把", "topic": "Việc nhà",
+   "grammar": [
+    {"t": "Câu chữ 把", "tag": "三级 · 句型 · 把字句", "f": "Chủ ngữ + 把 + tân ngữ + động từ + thành phần khác (了 / bổ ngữ / 在…)", "n": "把 đưa tân ngữ (xác định) lên trước để nói nó bị xử lý thế nào. Động từ không đứng trơ một mình.", "k": "把",
+     "ex": [["请把门关上。", "Làm ơn đóng cửa lại."], ["我把手机放在桌子上了。", "Tôi để điện thoại trên bàn rồi."]]},
+    {"t": "Bổ ngữ xu hướng đơn 上 / 下 / 进 / 出 / 回", "tag": "三级 · 补语 · 趋向补语", "f": "Động từ + 上 / 下 / 进 / 出 / 回 / 过 / 起 (+ 来 / 去)", "n": "Cho biết hướng di chuyển của hành động; 上 còn có nghĩa \"khép lại, gắn vào\".", "k": "上",
+     "ex": [["他把书放回去了。", "Anh ấy đã đặt sách trở lại."], ["你快把衣服穿上。", "Bạn mau mặc áo vào."]]}
+   ],
+   "dlg": [
+    ["妈妈", "小林，外面刮风了，请把窗户关上。", "Tiểu Lâm, bên ngoài nổi gió rồi, đóng cửa sổ lại đi con."],
+    ["小林", "好的。妈妈，我的钥匙呢？", "Vâng ạ. Mẹ ơi, chìa khóa của con đâu?"],
+    ["妈妈", "我把它放在冰箱上面了。", "Mẹ để nó trên nóc tủ lạnh rồi."],
+    ["小林", "找到了。我出去一下，把这些垃圾拿下去。", "Con thấy rồi. Con ra ngoài một chút, mang chỗ rác này xuống."],
+    ["妈妈", "回来的时候把牛奶买回来，好吗？", "Lúc về con mua sữa về nhé?"],
+    ["小林", "没问题！", "Không vấn đề gì ạ!"]
+   ]
+  },
+  {
+   "zh": "我的自行车被借走了", "vi": "Câu bị động", "topic": "Sự cố hằng ngày",
+   "grammar": [
+    {"t": "Câu chữ 被", "tag": "三级 · 句型 · 被字句", "f": "Tân ngữ (bị tác động) + 被 + (người làm) + động từ + thành phần khác", "n": "被 thường nói việc không như ý. Người làm có thể lược bỏ; phủ định đặt 没 trước 被.", "k": "被",
+     "ex": [["我的自行车被朋友借走了。", "Xe đạp của tôi bị bạn mượn đi rồi."], ["蛋糕被弟弟吃完了。", "Bánh ga-tô bị em trai ăn hết rồi."]]},
+    {"t": "Bổ ngữ kết quả 走 / 掉 / 坏 / 错", "tag": "三级 · 补语 · 结果补语", "f": "Động từ + 走 / 掉 / 坏 / 错", "n": "走: rời đi; 掉: mất, hết; 坏: hỏng; 错: sai.", "k": "错",
+     "ex": [["我写错了一个字。", "Tôi viết sai một chữ."], ["电脑被我用坏了。", "Máy tính bị tôi dùng hỏng rồi."]]}
+   ],
+   "dlg": [
+    ["大卫", "你怎么走路来上课了？", "Sao hôm nay bạn đi bộ đến lớp?"],
+    ["王明", "我的自行车被我哥哥骑走了。", "Xe đạp của mình bị anh trai đạp đi mất rồi."],
+    ["大卫", "那你的电动车呢？", "Thế còn xe điện của bạn?"],
+    ["王明", "上个星期被我弄坏了，还没修好。", "Tuần trước bị mình làm hỏng, vẫn chưa sửa xong."],
+    ["大卫", "真不巧。下课以后我送你回家吧。", "Thật không may. Tan học mình đưa bạn về nhé."],
+    ["王明", "太感谢了！", "Cảm ơn bạn nhiều lắm!"]
+   ]
+  },
+  {
+   "zh": "黑板上的字你看得清楚吗？", "vi": "Có thể / không thể", "topic": "Lớp học",
+   "grammar": [
+    {"t": "Bổ ngữ khả năng", "tag": "三级 · 补语 · 可能补语", "f": "Động từ + 得 / 不 + bổ ngữ kết quả / xu hướng", "n": "Nói khả năng đạt được kết quả: 看得见 (nhìn thấy được), 听不懂 (nghe không hiểu).", "k": "得",
+     "ex": [["黑板上的字你看得清楚吗？", "Chữ trên bảng bạn nhìn có rõ không?"], ["他说得太快，我听不懂。", "Anh ấy nói nhanh quá, tôi nghe không hiểu."]]},
+    {"t": "Bổ ngữ xu hướng kép", "tag": "三级 · 补语 · 复合趋向补语", "f": "Động từ + 上 / 下 / 进 / 出 / 回 / 过 / 起 + 来 / 去", "n": "来 hướng về người nói, 去 rời xa người nói. Tân ngữ nơi chốn đặt trước 来 / 去.", "k": "出来",
+     "ex": [["他从教室里走出来了。", "Anh ấy từ trong lớp đi ra."], ["请把书拿过来。", "Làm ơn mang sách lại đây."]]}
+   ],
+   "dlg": [
+    ["李老师", "后面的同学，黑板上的字你们看得清楚吗？", "Các em ngồi sau, chữ trên bảng có nhìn rõ không?"],
+    ["大卫", "老师，我看不清楚。", "Thưa thầy, em nhìn không rõ ạ."],
+    ["李老师", "那你坐到前面来吧。", "Vậy em lên ngồi phía trước đi."],
+    ["大卫", "好。老师，这个问题太难了，我做不出来。", "Vâng. Thầy ơi, câu này khó quá, em làm không ra."],
+    ["李老师", "别着急，先想想我们上节课学过的词。", "Đừng vội, trước hết hãy nghĩ lại các từ đã học buổi trước."],
+    ["大卫", "我想起来了！谢谢老师。", "Em nhớ ra rồi! Cảm ơn thầy."]
+   ]
+  },
+  {
+   "zh": "虽然很累，但是很开心", "vi": "Tương phản", "topic": "Cuối tuần",
+   "grammar": [
+    {"t": "虽然…但是…", "tag": "三级 · 复句 · 转折", "f": "虽然 + A，但是 / 可是 + B", "n": "Thừa nhận A nhưng nhấn mạnh B. 虽然 có thể đứng sau chủ ngữ.", "k": "虽然",
+     "ex": [["虽然很累，但是我很开心。", "Tuy rất mệt nhưng tôi rất vui."], ["他虽然很忙，可是每天都运动。", "Dù rất bận nhưng ngày nào anh ấy cũng vận động."]]},
+    {"t": "又…又… vừa… vừa…", "tag": "三级 · 关联词", "f": "又 + tính từ / động từ，又 + tính từ / động từ", "n": "Nối hai đặc điểm cùng tồn tại, thường cùng sắc thái (cùng tốt hoặc cùng xấu).", "k": "又",
+     "ex": [["这家饭店的菜又便宜又好吃。", "Món ăn nhà hàng này vừa rẻ vừa ngon."], ["今天又冷又刮风。", "Hôm nay vừa lạnh vừa có gió."]]}
+   ],
+   "dlg": [
+    ["阿兰", "周末你去哪儿了？", "Cuối tuần bạn đi đâu?"],
+    ["小林", "我和朋友去爬山了。山很高，路又长又难走。", "Mình đi leo núi với bạn. Núi rất cao, đường vừa dài vừa khó đi."],
+    ["阿兰", "累不累？", "Có mệt không?"],
+    ["小林", "虽然很累，但是很开心。山上的风景特别漂亮。", "Tuy mệt nhưng rất vui. Phong cảnh trên núi đẹp đặc biệt."],
+    ["阿兰", "下次也叫上我吧！", "Lần sau gọi mình với nhé!"],
+    ["小林", "好啊，我们又可以一起照相了。", "Được thôi, chúng ta lại được chụp ảnh cùng nhau."]
+   ]
+  },
+  {
+   "zh": "只要努力，就一定能学好", "vi": "Điều kiện", "topic": "Mục tiêu học tập",
+   "grammar": [
+    {"t": "只要…就…", "tag": "三级 · 复句 · 条件", "f": "只要 + điều kiện đủ，就 + kết quả", "n": "Chỉ cần có điều kiện này là sẽ có kết quả kia.", "k": "只要",
+     "ex": [["只要努力，你就一定能学好汉语。", "Chỉ cần cố gắng, bạn nhất định sẽ học giỏi tiếng Trung."], ["只要有时间，我就去看你。", "Chỉ cần có thời gian là tôi sẽ đến thăm bạn."]]},
+    {"t": "如果…就… giả định", "tag": "三级 · 复句 · 假设", "f": "如果 + giả định，(chủ ngữ) + 就 + kết quả", "n": "Nêu giả định và kết quả; văn nói có thể dùng 要是.", "k": "如果",
+     "ex": [["如果明天下雨，我们就不去了。", "Nếu mai trời mưa thì chúng ta không đi nữa."], ["如果你有问题，就问老师。", "Nếu bạn có thắc mắc thì hỏi thầy giáo."]]}
+   ],
+   "dlg": [
+    ["大卫", "老师，我的汉语水平提高得太慢了。", "Thưa thầy, trình độ tiếng Trung của em tiến bộ chậm quá."],
+    ["李老师", "别担心。只要每天练习，就一定能学好。", "Đừng lo. Chỉ cần luyện tập mỗi ngày, nhất định sẽ học tốt."],
+    ["大卫", "如果我听不懂中国人说话，怎么办？", "Nếu em nghe không hiểu người Trung Quốc nói thì làm sao ạ?"],
+    ["李老师", "你可以请他们说得慢一点儿。多听多说就会越来越好。", "Em có thể nhờ họ nói chậm một chút. Nghe nhiều nói nhiều sẽ ngày càng tốt hơn."],
+    ["大卫", "我明白了，我会努力的。", "Em hiểu rồi, em sẽ cố gắng."]
+   ]
+  },
+  {
+   "zh": "连小孩子都知道", "vi": "Nhấn mạnh mức độ", "topic": "Văn hóa",
+   "grammar": [
+    {"t": "连…都 / 也…", "tag": "三级 · 句型 · 强调", "f": "连 + thành phần nhấn mạnh + 都 / 也 + động từ", "n": "Nhấn mạnh trường hợp cực đoan: ngay cả… cũng….", "k": "连",
+     "ex": [["这个故事连小孩子都知道。", "Câu chuyện này ngay cả trẻ con cũng biết."], ["他忙得连饭都没吃。", "Anh ấy bận đến mức cơm cũng chưa ăn."]]},
+    {"t": "一 + lượng từ + 也 / 都 + 不 / 没", "tag": "三级 · 句型 · 强调否定", "f": "一 + lượng từ + danh từ + 也 / 都 + 没 / 不 + động từ", "n": "Phủ định tuyệt đối: một… cũng không.", "k": "一",
+     "ex": [["我一点儿也不累。", "Tôi không mệt chút nào."], ["教室里一个人都没有。", "Trong lớp không có một ai."]]}
+   ],
+   "dlg": [
+    ["阿兰", "春节的时候中国人做什么？", "Dịp Tết người Trung Quốc làm gì?"],
+    ["王明", "全家人一起吃饭，还要包饺子。这个连小孩子都知道。", "Cả nhà cùng ăn cơm, còn gói sủi cảo nữa. Điều này đến trẻ con cũng biết."],
+    ["阿兰", "我一次也没包过饺子。", "Mình chưa gói sủi cảo lần nào."],
+    ["王明", "一点儿也不难，今年你来我家，我教你。", "Không khó chút nào, năm nay bạn đến nhà mình, mình dạy cho."],
+    ["阿兰", "真的吗？太好了！", "Thật à? Tuyệt quá!"]
+   ]
+  },
+  {
+   "zh": "除了游泳以外，我还喜欢跑步", "vi": "Ngoài ra", "topic": "Sở thích",
+   "grammar": [
+    {"t": "除了…以外，还 / 也 / 都…", "tag": "三级 · 句型", "f": "除了 A (以外)，还 / 也 + B (bổ sung) · 除了 A (以外)，都 + … (loại trừ)", "n": "Đi với 还 / 也: ngoài A còn có B. Đi với 都: trừ A ra thì tất cả đều….", "k": "除了",
+     "ex": [["除了游泳以外，我还喜欢跑步。", "Ngoài bơi ra, tôi còn thích chạy bộ."], ["除了大卫，大家都来了。", "Trừ David ra, mọi người đều đến rồi."]]},
+    {"t": "Giống như: 跟…一样", "tag": "三级 · 句型 · 比较", "f": "A + 跟 + B + 一样 (+ tính từ)", "n": "So sánh ngang bằng. Phủ định: 跟…不一样.", "k": "一样",
+     "ex": [["我的爱好跟你一样。", "Sở thích của tôi giống bạn."], ["他跟他爸爸一样高。", "Anh ấy cao bằng bố mình."]]}
+   ],
+   "dlg": [
+    ["大卫", "你有什么爱好？", "Bạn có sở thích gì?"],
+    ["阿兰", "我喜欢游泳。除了游泳以外，我还喜欢跑步。", "Mình thích bơi. Ngoài bơi ra mình còn thích chạy bộ."],
+    ["大卫", "我的爱好跟你一样！我每天早上都去跑步。", "Sở thích của mình giống bạn! Sáng nào mình cũng đi chạy."],
+    ["阿兰", "除了星期天，我每天也跑半个小时。", "Trừ Chủ Nhật, ngày nào mình cũng chạy nửa tiếng."],
+    ["大卫", "那明天早上我们一起跑吧。", "Vậy sáng mai chúng ta chạy cùng nhé."]
+   ]
+  },
+  {
+   "zh": "他一回家就睡觉了", "vi": "Hai việc nối tiếp", "topic": "Sức khỏe",
+   "grammar": [
+    {"t": "一…就… vừa… là…", "tag": "三级 · 关联词", "f": "(Chủ ngữ) + 一 + việc 1，(chủ ngữ) + 就 + việc 2", "n": "Việc 2 xảy ra ngay sau việc 1, hoặc hễ có việc 1 là có việc 2.", "k": "就",
+     "ex": [["他一回家就睡觉了。", "Anh ấy vừa về nhà là đi ngủ."], ["我一喝咖啡就睡不着。", "Hễ uống cà phê là tôi không ngủ được."]]},
+    {"t": "Động từ năng nguyện 应该 / 得 (děi)", "tag": "三级 · 能愿动词", "f": "应该 + động từ (nên) · 得 + động từ (phải)", "n": "应该 khuyên nên làm; 得 (děi) là phải, văn nói. Phủ định 得 dùng 不用.", "k": "应该",
+     "ex": [["你应该多喝水。", "Bạn nên uống nhiều nước."], ["我得去医院看看。", "Tôi phải đi bệnh viện khám xem sao."]]}
+   ],
+   "dlg": [
+    ["阿兰", "小林今天怎么了？他一回家就睡觉了。", "Hôm nay Tiểu Lâm sao vậy? Vừa về nhà là đi ngủ."],
+    ["王明", "他感冒了，还有点儿发烧。", "Cậu ấy bị cảm, còn hơi sốt."],
+    ["阿兰", "他应该去医院看看。", "Cậu ấy nên đi bệnh viện khám."],
+    ["王明", "我也这么说。可是他一听医院就头疼。", "Mình cũng nói vậy. Nhưng hễ nghe đến bệnh viện là cậu ấy đau đầu."],
+    ["阿兰", "那我们得给他买点儿药。", "Vậy chúng ta phải mua ít thuốc cho cậu ấy."]
+   ]
+  },
+  {
+   "zh": "为了健康，我每天锻炼", "vi": "Mục đích", "topic": "Thể thao",
+   "grammar": [
+    {"t": "Giới từ 为了 chỉ mục đích", "tag": "三级 · 介词", "f": "为了 + mục đích，chủ ngữ + hành động", "n": "为了 thường đứng đầu câu, nêu mục đích của hành động phía sau.", "k": "为了",
+     "ex": [["为了健康，我每天锻炼身体。", "Vì sức khỏe, mỗi ngày tôi đều rèn luyện thân thể."], ["为了学好汉语，他来到了中国。", "Để học giỏi tiếng Trung, anh ấy đã đến Trung Quốc."]]},
+    {"t": "越…越… càng… càng…", "tag": "三级 · 句型", "f": "(Chủ ngữ) + 越 + A，(chủ ngữ) + 越 + B", "n": "B thay đổi theo mức độ của A.", "k": "越",
+     "ex": [["他越跑越快。", "Anh ấy càng chạy càng nhanh."], ["这本书我越看越喜欢。", "Cuốn sách này tôi càng đọc càng thích."]]}
+   ],
+   "dlg": [
+    ["大卫", "你每天几点起床？", "Hằng ngày bạn dậy lúc mấy giờ?"],
+    ["王明", "六点。为了健康，我每天早上都去公园锻炼。", "Sáu giờ. Vì sức khỏe, sáng nào mình cũng ra công viên tập."],
+    ["大卫", "起得那么早，不累吗？", "Dậy sớm thế không mệt à?"],
+    ["王明", "刚开始很累，可是越锻炼越有精神。", "Lúc đầu thì mệt, nhưng càng tập càng thấy khỏe khoắn."],
+    ["大卫", "我也应该锻炼了，我最近越来越胖了。", "Mình cũng nên tập rồi, dạo này mình ngày càng béo."]
+   ]
+  },
+  {
+   "zh": "墙上挂着一张地图", "vi": "Miêu tả sự tồn tại", "topic": "Phòng ở",
+   "grammar": [
+    {"t": "Câu tồn hiện", "tag": "三级 · 句型 · 存现句", "f": "Nơi chốn + động từ + 着 / 了 + số lượng + danh từ", "n": "Miêu tả ở đâu có cái gì, hoặc ai đó xuất hiện / rời đi.", "k": "着",
+     "ex": [["墙上挂着一张地图。", "Trên tường treo một tấm bản đồ."], ["前面走过来一个人。", "Phía trước có một người đi tới."]]},
+    {"t": "Giới từ 关于 về (chủ đề)", "tag": "三级 · 介词", "f": "关于 + chủ đề (+ 的 + danh từ)", "n": "关于 giới thiệu chủ đề, nội dung được nói tới.", "k": "关于",
+     "ex": [["这是一本关于中国历史的书。", "Đây là một cuốn sách về lịch sử Trung Quốc."], ["关于这个问题，我们明天再讨论。", "Về vấn đề này, mai chúng ta bàn tiếp."]]}
+   ],
+   "dlg": [
+    ["阿兰", "你的房间真干净！墙上挂着的是什么？", "Phòng bạn sạch thật! Cái treo trên tường là gì vậy?"],
+    ["小林", "是一张中国地图。我想去很多地方旅游。", "Là một tấm bản đồ Trung Quốc. Mình muốn đi du lịch nhiều nơi."],
+    ["阿兰", "书架上放着这么多书，都是关于什么的？", "Trên giá sách để nhiều sách thế, đều viết về gì vậy?"],
+    ["小林", "大部分是关于历史和文化的。", "Phần lớn là về lịch sử và văn hóa."],
+    ["阿兰", "我可以借一本看看吗？", "Mình mượn một cuốn đọc thử được không?"],
+    ["小林", "当然可以。", "Tất nhiên là được."]
+   ]
+  },
+  {
+   "zh": "他不但会唱歌，而且唱得很好", "vi": "Tăng tiến", "topic": "Tài năng",
+   "grammar": [
+    {"t": "不但…而且…", "tag": "三级 · 复句 · 递进", "f": "不但 + A，而且 + B (mức cao hơn)", "n": "Không những A mà còn B. Cùng chủ ngữ thì 不但 đứng sau chủ ngữ.", "k": "不但",
+     "ex": [["他不但会唱歌，而且唱得很好。", "Anh ấy không những biết hát mà còn hát rất hay."], ["这里不但有山，而且有河。", "Ở đây không chỉ có núi mà còn có sông."]]},
+    {"t": "Câu hỏi phản vấn 不是…吗？", "tag": "三级 · 句型 · 反问句", "f": "不是 + … + 吗？", "n": "Dùng câu hỏi để khẳng định: chẳng phải là… sao?", "k": "不是",
+     "ex": [["你不是去过北京吗？", "Chẳng phải bạn đã đến Bắc Kinh rồi sao?"], ["他不是你的朋友吗？", "Anh ấy chẳng phải là bạn của bạn sao?"]]}
+   ],
+   "dlg": [
+    ["王明", "昨天的晚会你去了吗？", "Buổi dạ hội hôm qua bạn có đi không?"],
+    ["阿兰", "去了。大卫唱了一首中文歌，他不但会唱，而且唱得很好！", "Có. David hát một bài tiếng Trung, cậu ấy không những biết hát mà còn hát rất hay!"],
+    ["王明", "你不是也会唱中文歌吗？你怎么没唱？", "Chẳng phải bạn cũng biết hát tiếng Trung sao? Sao bạn không hát?"],
+    ["阿兰", "我太紧张了。", "Mình hồi hộp quá."],
+    ["王明", "下次你一定要试试。", "Lần sau bạn nhất định phải thử."]
+   ]
+  },
+  {
+   "zh": "这件事不是他做的", "vi": "Phủ định và đính chính", "topic": "Hiểu lầm",
+   "grammar": [
+    {"t": "不是…而是…", "tag": "三级 · 复句 · 并列", "f": "不是 A，而是 B", "n": "Phủ định A để khẳng định B, dùng khi đính chính.", "k": "而是",
+     "ex": [["这件事不是他做的，而是我做的。", "Việc này không phải anh ấy làm mà là tôi làm."], ["我不是不想去，而是没有时间。", "Không phải tôi không muốn đi, mà là không có thời gian."]]},
+    {"t": "Tưởng rằng: 以为", "tag": "三级 · 动词", "f": "Chủ ngữ + 以为 + nhận định (sai)", "n": "以为 thường dùng cho nhận định hóa ra không đúng; khác với 认为 (cho rằng).", "k": "以为",
+     "ex": [["我以为你不来了。", "Tôi tưởng bạn không đến nữa."], ["我们都以为他是老师。", "Chúng tôi đều tưởng anh ấy là giáo viên."]]}
+   ],
+   "dlg": [
+    ["李老师", "大卫，黑板是你写的吗？", "David, bảng là em viết à?"],
+    ["大卫", "老师，不是我写的，而是王明写的。", "Thưa thầy, không phải em viết mà là Vương Minh viết ạ."],
+    ["李老师", "我以为是你写的呢，字写得很漂亮。", "Thầy cứ tưởng là em viết, chữ đẹp lắm."],
+    ["王明", "谢谢老师。我不是写得好，而是写得慢。", "Em cảm ơn thầy. Không phải em viết đẹp, mà là em viết chậm thôi ạ."],
+    ["李老师", "慢一点儿没关系，写对最重要。", "Chậm một chút không sao, viết đúng là quan trọng nhất."]
+   ]
+  },
+  {
+   "zh": "看起来要下雨了", "vi": "Phán đoán và cảm nhận", "topic": "Thời tiết",
+   "grammar": [
+    {"t": "Động từ + 起来 (nghĩa mở rộng)", "tag": "三级 · 补语 · 趋向补语引申", "f": "看起来 / 听起来 / 说起来 + nhận xét · Động từ + 起来 (bắt đầu)", "n": "看起来 = trông có vẻ; 下起雨来 = bắt đầu mưa.", "k": "起来",
+     "ex": [["看起来要下雨了。", "Trông có vẻ sắp mưa rồi."], ["这个主意听起来不错。", "Ý này nghe có vẻ hay đấy."]]},
+    {"t": "会 chỉ khả năng xảy ra", "tag": "三级 · 能愿动词", "f": "会 + động từ (+ 的)", "n": "会 dự đoán việc có khả năng xảy ra; 会…的 nhấn mạnh sự chắc chắn.", "k": "会",
+     "ex": [["明天会下雪吗？", "Ngày mai có tuyết không?"], ["别担心，他会来的。", "Đừng lo, anh ấy sẽ đến mà."]]}
+   ],
+   "dlg": [
+    ["阿兰", "天阴了，看起来要下雨了。", "Trời âm u rồi, trông có vẻ sắp mưa."],
+    ["大卫", "你带伞了吗？", "Bạn mang ô chưa?"],
+    ["阿兰", "没带。早上天气那么好，我以为不会下雨。", "Chưa mang. Sáng nay trời đẹp thế, mình tưởng sẽ không mưa."],
+    ["大卫", "你看，已经下起来了！我们先在这儿等一会儿吧。", "Nhìn kìa, mưa bắt đầu rồi! Chúng ta đợi ở đây một lát đã."],
+    ["阿兰", "好，雨不会下很长时间的。", "Ừ, mưa sẽ không lâu đâu."]
+   ]
+  },
+  {
+   "zh": "我是不是应该换个工作？", "vi": "Xin lời khuyên", "topic": "Công việc",
+   "grammar": [
+    {"t": "Câu hỏi 是不是", "tag": "三级 · 疑问句", "f": "Chủ ngữ + 是不是 + vị ngữ？ / … ，是不是？", "n": "Dùng khi người hỏi đã có phán đoán, muốn xác nhận lại.", "k": "是不是",
+     "ex": [["我是不是应该换个工作？", "Có phải tôi nên đổi công việc không?"], ["你是不是感冒了？", "Có phải bạn bị cảm rồi không?"]]},
+    {"t": "Còn hơn nữa: 还 + tính từ / 再 + động từ", "tag": "三级 · 副词", "f": "还 (vẫn, còn) · 再 (lại, nữa — chưa xảy ra) · 又 (lại — đã xảy ra)", "n": "再 dùng cho việc lặp lại trong tương lai; 又 cho việc đã lặp lại.", "k": "再",
+     "ex": [["你明天再来吧。", "Mai bạn lại đến nhé."], ["他昨天又迟到了。", "Hôm qua anh ấy lại đến muộn."]]}
+   ],
+   "dlg": [
+    ["小林", "张经理，我最近工作压力很大。我是不是应该换个工作？", "Giám đốc Trương, dạo này tôi áp lực công việc lắm. Có phải tôi nên đổi việc không?"],
+    ["张经理", "别着急，你再想一想。你对现在的工作哪儿不满意？", "Đừng vội, cậu nghĩ thêm đi. Cậu không hài lòng chỗ nào với công việc hiện tại?"],
+    ["小林", "每天都加班，这个星期我又加了三次班。", "Ngày nào cũng tăng ca, tuần này tôi lại tăng ca ba lần rồi."],
+    ["张经理", "我们下个月会再找一个新同事，你就不会那么忙了。", "Tháng sau chúng ta sẽ tuyển thêm một đồng nghiệp mới, cậu sẽ không bận như vậy nữa."],
+    ["小林", "那太好了，我再试试吧。", "Vậy thì tốt quá, tôi sẽ thử thêm."]
+   ]
+  }
+ ]
+}

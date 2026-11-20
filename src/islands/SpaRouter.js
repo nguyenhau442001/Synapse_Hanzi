@@ -17,7 +17,8 @@ export const SpaRouter = (function() {
       const q = params.get('q');
       const mode = params.get('mode');
       const exam = params.get('exam');
-      return { view: 'tab', tab, story, q, mode, exam };
+      const lesson = params.get('lesson');
+      return { view: 'tab', tab, story, q, mode, exam, lesson };
     }
     if (params.get('screen') === 'today-reviews') {
       return { view: 'todayReviews' };
@@ -49,6 +50,9 @@ export const SpaRouter = (function() {
       if (state.tab === 'reading' && state.q) {
         return `${base}?tab=reading&q=${encodeURIComponent(state.q)}${themeParam}`;
       }
+      if (state.tab === 'curriculum' && state.lesson) {
+        return `${base}?tab=curriculum&lesson=${encodeURIComponent(state.lesson)}${themeParam}`;
+      }
       if (state.tab === 'listening' && state.mode) {
         return `${base}?tab=listening&mode=${encodeURIComponent(state.mode)}${themeParam}`;
       }
@@ -79,6 +83,7 @@ export const SpaRouter = (function() {
       currentState.view === state.view &&
       currentState.level === state.level &&
       currentState.tab === state.tab &&
+      (currentState.lesson || null) === (state.lesson || null) &&
       Boolean(currentState.drawerOpen) === Boolean(state.drawerOpen)
     ) {
       return;
@@ -206,6 +211,9 @@ export const SpaRouter = (function() {
         if (state.tab === 'gradedReading' && state.story && typeof GradedReading !== 'undefined') {
           GradedReading.openStory(state.story, false);
         }
+        if (state.tab === 'curriculum' && state.lesson && typeof Curriculum !== 'undefined') {
+          Curriculum.openLesson(state.lesson, false);
+        }
         if (state.tab === 'listening' && state.mode && typeof ListeningPractice !== 'undefined') {
           ListeningPractice.setMode(state.mode);
         }
@@ -249,6 +257,10 @@ export const SpaRouter = (function() {
           setPrimaryTab(initialState.tab);
           if (initialState.tab === 'gradedReading' && initialState.story && typeof GradedReading !== 'undefined') {
             GradedReading.openStory(initialState.story, false);
+          }
+          if (initialState.tab === 'curriculum' && initialState.lesson && typeof Curriculum !== 'undefined') {
+            // setPrimaryTab pushed the plain tab URL; push the lesson so the link survives and Back returns to the list.
+            Curriculum.openLesson(initialState.lesson, true);
           }
           if (initialState.tab === 'listening' && initialState.mode && typeof ListeningPractice !== 'undefined') {
             ListeningPractice.setMode(initialState.mode);

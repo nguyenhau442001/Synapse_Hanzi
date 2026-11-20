@@ -1,0 +1,307 @@
+{
+ "name": "HSK 7–9",
+ "band": "Cao cấp",
+ "grammarTotal": 148,
+ "lessons": [
+  {
+   "zh": "为众人所知", "vi": "Bị động văn viết", "topic": "Nhân vật lịch sử",
+   "grammar": [
+    {"t": "为…所… (bị động văn viết)", "tag": "高等 · 句型 · 被动", "f": "A + 为 + B + 所 + động từ", "n": "Cấu trúc bị động trang trọng, thường gặp trong văn bản, sách báo.", "k": "所",
+     "ex": [["他的贡献早已为众人所知。", "Đóng góp của ông từ lâu đã được mọi người biết đến."], ["我们不应为表面现象所迷惑。", "Chúng ta không nên bị hiện tượng bề ngoài làm cho mê hoặc."]]},
+    {"t": "Liên từ văn ngôn 而", "tag": "高等 · 连词 · 而", "f": "A 而 B (tiếp nối / tương phản / mục đích)", "n": "而 nối hai thành phần, có thể mang nghĩa \"và\", \"mà\", \"nhưng\" tùy ngữ cảnh.", "k": "而",
+     "ex": [["他因病而辞职。", "Ông ấy từ chức vì bệnh."], ["这里冬天寒冷而干燥。", "Mùa đông ở đây lạnh và khô."]]}
+   ],
+   "dlg": [
+    ["主持人", "张衡发明地动仪的故事为众人所知，您认为他最大的贡献是什么？", "Câu chuyện Trương Hành phát minh địa động nghi được nhiều người biết đến, ông cho rằng đóng góp lớn nhất của ông ấy là gì?"],
+    ["陈教授", "在于他用实验而非想象来解释自然。", "Nằm ở chỗ ông dùng thực nghiệm chứ không phải tưởng tượng để giải thích tự nhiên."],
+    ["主持人", "这种精神在当时并不多见。", "Tinh thần ấy thời đó không nhiều."],
+    ["陈教授", "正因如此，他才为后人所敬仰。", "Chính vì vậy mà ông được hậu thế kính ngưỡng."]
+   ]
+  },
+  {
+   "zh": "问题不在于钱，而在于人", "vi": "Chỉ ra cốt lõi", "topic": "Quản trị",
+   "grammar": [
+    {"t": "不在于…而在于…", "tag": "高等 · 句型", "f": "(Vấn đề / chìa khóa) 不在于 A，而在于 B", "n": "Phủ định nguyên nhân bề ngoài để chỉ ra mấu chốt thật sự.", "k": "在于",
+     "ex": [["问题不在于资金，而在于管理。", "Vấn đề không nằm ở vốn mà ở quản lý."], ["学习的关键不在于时间长短，而在于方法。", "Mấu chốt học tập không ở thời gian dài ngắn mà ở phương pháp."]]},
+    {"t": "Chẳng qua là: 无非 / 不外乎", "tag": "高等 · 副词", "f": "无非 (是) + … · 不外乎 + phạm vi", "n": "Thu hẹp phạm vi, ý chỉ không có gì khác ngoài điều đó.", "k": "无非",
+     "ex": [["他这么做，无非是想引起注意。", "Anh ta làm vậy chẳng qua là muốn gây chú ý."], ["成功的原因不外乎勤奋和机遇。", "Nguyên nhân thành công không ngoài sự cần cù và cơ hội."]]}
+   ],
+   "dlg": [
+    ["小林", "公司这次投入了大量资金，项目还是失败了。", "Lần này công ty đầu tư rất nhiều vốn mà dự án vẫn thất bại."],
+    ["张经理", "问题不在于钱，而在于团队之间缺乏沟通。", "Vấn đề không nằm ở tiền mà ở việc các nhóm thiếu giao tiếp."],
+    ["小林", "那下一步怎么改进？", "Vậy bước tiếp theo cải tiến thế nào?"],
+    ["张经理", "无非是明确责任、加强协调这两点。", "Chẳng qua là hai điểm: làm rõ trách nhiệm và tăng cường phối hợp."]
+   ]
+  },
+  {
+   "zh": "尚且如此，何况我们", "vi": "Suy luận tăng cấp", "topic": "Khoa học",
+   "grammar": [
+    {"t": "尚且…何况…", "tag": "高等 · 复句 · 递进", "f": "A 尚且 + …，(更) 何况 + B (呢)", "n": "Trường hợp A còn như vậy, B lại càng như vậy.", "k": "尚且",
+     "ex": [["专家尚且没有把握，何况我们这些外行。", "Chuyên gia còn chưa chắc chắn, huống hồ dân ngoại đạo như chúng tôi."], ["大人尚且觉得难，何况孩子呢？", "Người lớn còn thấy khó, huống chi trẻ con?"]]},
+    {"t": "Không những không… trái lại: 非但…反而…", "tag": "高等 · 复句 · 递进", "f": "非但不 / 没 + A，反而 + B", "n": "Văn viết của 不但不…反而….", "k": "非但",
+     "ex": [["药物非但没有效果，反而产生了副作用。", "Thuốc không những không hiệu quả mà còn gây tác dụng phụ."], ["他非但不认错，反而怪别人。", "Anh ta không những không nhận lỗi mà còn trách người khác."]]}
+   ],
+   "dlg": [
+    ["阿兰", "这个领域的研究进展好像很慢。", "Nghiên cứu ở lĩnh vực này có vẻ tiến triển rất chậm."],
+    ["陈教授", "顶尖实验室尚且需要十年，何况我们刚刚起步。", "Phòng thí nghiệm hàng đầu còn cần mười năm, huống hồ chúng ta mới khởi đầu."],
+    ["阿兰", "急于求成会不会有问题？", "Nóng vội cầu thành có gây vấn đề không ạ?"],
+    ["陈教授", "当然。急于求成非但不能加快进度，反而容易出错。", "Đương nhiên. Nóng vội không những không đẩy nhanh tiến độ mà còn dễ sai sót."]
+   ]
+  },
+  {
+   "zh": "诚然，这种看法有一定道理", "vi": "Thừa nhận rồi phản bác", "topic": "Nghị luận xã hội",
+   "grammar": [
+    {"t": "Quả thật: 诚然…但…", "tag": "高等 · 复句 · 让步转折", "f": "诚然，A；但 / 然而 + B", "n": "Thừa nhận một quan điểm trước khi đưa ra phản biện; văn nghị luận.", "k": "诚然",
+     "ex": [["诚然，网络带来了便利，但也带来了新的问题。", "Quả thật Internet mang lại tiện lợi, nhưng cũng mang lại vấn đề mới."], ["诚然，这种看法有一定道理，然而并不全面。", "Quả thật quan điểm này có lý nhất định, nhưng chưa toàn diện."]]},
+    {"t": "Tuy nhiên: 然而", "tag": "高等 · 连词", "f": "A。然而，B (chuyển ý)", "n": "Chuyển ý trang trọng, thường đứng đầu câu.", "k": "然而",
+     "ex": [["计划很完美，然而执行起来困难重重。", "Kế hoạch rất hoàn hảo, nhưng khi thực hiện lại gặp vô vàn khó khăn."], ["他失败了很多次，然而从未放弃。", "Anh ấy thất bại nhiều lần, thế nhưng chưa bao giờ bỏ cuộc."]]}
+   ],
+   "dlg": [
+    ["主持人", "有人认为短视频让年轻人失去了深度思考的能力。", "Có người cho rằng video ngắn khiến giới trẻ mất khả năng tư duy sâu."],
+    ["陈教授", "诚然，这种担心有一定道理。", "Quả thật, mối lo ngại này có lý nhất định."],
+    ["陈教授", "然而，工具本身无所谓好坏，关键在于如何使用。", "Tuy nhiên, công cụ tự nó không tốt không xấu, mấu chốt ở cách sử dụng."],
+    ["主持人", "也就是说，责任在于使用者自身。", "Nghĩa là trách nhiệm nằm ở chính người sử dụng."]
+   ]
+  },
+  {
+   "zh": "殊不知，健康比财富更重要", "vi": "Nào ngờ / nào biết", "topic": "Lối sống",
+   "grammar": [
+    {"t": "Nào biết đâu: 殊不知", "tag": "高等 · 动词 · 插入", "f": "Nhận thức sai của người khác，殊不知 + sự thật", "n": "Chỉ ra sự thật mà người khác không ngờ tới, thường hàm ý phê bình.", "k": "殊不知",
+     "ex": [["很多人拼命赚钱，殊不知健康比财富更重要。", "Nhiều người liều mạng kiếm tiền, nào biết sức khỏe quan trọng hơn của cải."], ["他以为自己很聪明，殊不知早被人看穿了。", "Hắn tưởng mình thông minh, nào ngờ đã bị người ta nhìn thấu."]]},
+    {"t": "Hễ cứ / mỗi khi: 动辄", "tag": "高等 · 副词", "f": "动辄 + động từ (hễ một chút là…)", "n": "Chỉ hành vi hay xảy ra dễ dàng, thường mang nghĩa tiêu cực.", "k": "动辄",
+     "ex": [["他动辄发脾气。", "Anh ta hơi một tí là nổi nóng."], ["一些商品动辄上万元。", "Một số mặt hàng hễ động đến là hàng vạn tệ."]]}
+   ],
+   "dlg": [
+    ["阿兰", "现在很多年轻人动辄熬夜到两三点。", "Bây giờ nhiều người trẻ hơi tí là thức khuya đến hai ba giờ."],
+    ["王明", "他们觉得年轻身体好，殊不知长期熬夜危害很大。", "Họ nghĩ còn trẻ sức khỏe tốt, nào biết thức khuya lâu ngày rất có hại."],
+    ["阿兰", "等发现问题就晚了。", "Đến khi phát hiện vấn đề thì đã muộn."],
+    ["王明", "所以要防患于未然。", "Vì vậy phải phòng bệnh từ khi chưa xảy ra."]
+   ]
+  },
+  {
+   "zh": "惟有坚持，才能看到希望", "vi": "Điều kiện duy nhất (văn viết)", "topic": "Nghị lực",
+   "grammar": [
+    {"t": "惟有 / 唯有…才…", "tag": "高等 · 复句 · 条件", "f": "惟有 + điều kiện，才 + kết quả", "n": "Văn viết của 只有…才….", "k": "惟有",
+     "ex": [["惟有坚持，才能看到希望。", "Chỉ có kiên trì mới thấy được hy vọng."], ["唯有不断创新，企业才能生存。", "Chỉ có không ngừng đổi mới, doanh nghiệp mới tồn tại được."]]},
+    {"t": "Một khi đã… thì: 一经…便…", "tag": "高等 · 复句", "f": "一经 + động từ，便 / 就 + kết quả", "n": "Hễ trải qua hành động nào đó là lập tức có kết quả.", "k": "一经",
+     "ex": [["这个产品一经推出，便受到欢迎。", "Sản phẩm này vừa ra mắt đã được hoan nghênh."], ["合同一经签订，便具有法律效力。", "Hợp đồng một khi đã ký là có hiệu lực pháp lý."]]}
+   ],
+   "dlg": [
+    ["记者", "您的小说一经出版便成为畅销书，有什么秘诀吗？", "Tiểu thuyết của bà vừa xuất bản đã thành sách bán chạy, có bí quyết gì không?"],
+    ["作家", "没有秘诀。这部作品我写了整整八年。", "Không có bí quyết. Tác phẩm này tôi viết tròn tám năm."],
+    ["记者", "中间想过放弃吗？", "Giữa chừng có lúc nào muốn bỏ cuộc không?"],
+    ["作家", "想过很多次。可我相信，惟有坚持，才能看到希望。", "Nhiều lần. Nhưng tôi tin chỉ có kiên trì mới thấy được hy vọng."]
+   ]
+  },
+  {
+   "zh": "且不说价格，质量就有问题", "vi": "Gác lại một ý", "topic": "Tiêu dùng",
+   "grammar": [
+    {"t": "Chưa nói đến: 且不说…就…", "tag": "高等 · 复句 · 递进", "f": "且不说 + A，(单) 就 + B + 也 / 就 …", "n": "Tạm gác A (rõ ràng hơn), chỉ riêng B đã đủ để kết luận.", "k": "且不说",
+     "ex": [["且不说价格，单是质量就有问题。", "Chưa nói đến giá, riêng chất lượng đã có vấn đề."], ["且不说出国，就是去外地他也没去过。", "Chưa nói ra nước ngoài, ngay cả đi tỉnh khác anh ấy cũng chưa từng."]]},
+    {"t": "Không thiếu: 不乏", "tag": "高等 · 动词", "f": "不乏 + danh từ (người / ví dụ)", "n": "Có không ít, sắc thái trang trọng.", "k": "不乏",
+     "ex": [["参加比赛的人中不乏高手。", "Trong số người dự thi không thiếu cao thủ."], ["历史上不乏这样的例子。", "Trong lịch sử không thiếu ví dụ như vậy."]]}
+   ],
+   "dlg": [
+    ["阿兰", "这款网红产品你怎么看？", "Bạn thấy sản phẩm đang hot trên mạng này thế nào?"],
+    ["小林", "且不说价格偏高，单是售后服务就让人不放心。", "Chưa nói giá hơi cao, riêng dịch vụ hậu mãi đã khiến người ta không yên tâm."],
+    ["阿兰", "可评论里不乏好评。", "Nhưng trong bình luận không thiếu lời khen."],
+    ["小林", "其中有多少是真实的，就很难说了。", "Trong đó bao nhiêu là thật thì khó nói lắm."]
+   ]
+  },
+  {
+   "zh": "截至目前，已有三千人报名", "vi": "Văn bản thông báo", "topic": "Tin tức",
+   "grammar": [
+    {"t": "Tính đến: 截至 / 截止", "tag": "高等 · 介词 · 动词", "f": "截至 + thời điểm，… · (thời hạn) 截止", "n": "截至 là giới từ \"tính đến\"; 截止 là động từ \"hết hạn\".", "k": "截至",
+     "ex": [["截至目前，已有三千人报名。", "Tính đến nay đã có ba nghìn người đăng ký."], ["报名将于本月底截止。", "Hạn đăng ký kết thúc vào cuối tháng này."]]},
+    {"t": "Đều (văn viết): 均 / 皆 / 亦", "tag": "高等 · 副词 · 书面", "f": "均 / 皆 = 都 · 亦 = 也", "n": "Phó từ văn viết thường gặp trong báo chí, văn bản hành chính.", "k": "均",
+     "ex": [["参赛者均需提前报到。", "Các thí sinh đều phải báo danh trước."], ["此事人人皆知。", "Việc này ai ai cũng biết."]]}
+   ],
+   "dlg": [
+    ["主持人", "国际马拉松赛报名情况如何？", "Tình hình đăng ký giải marathon quốc tế thế nào?"],
+    ["工作人员", "截至昨天下午五点，已有三万两千人报名。", "Tính đến năm giờ chiều qua đã có ba vạn hai nghìn người đăng ký."],
+    ["主持人", "对参赛者有什么要求？", "Có yêu cầu gì với người tham gia?"],
+    ["工作人员", "参赛者均需提供健康证明，外籍选手亦须持有效证件。", "Người tham gia đều phải có giấy khám sức khỏe, vận động viên nước ngoài cũng phải có giấy tờ hợp lệ."]
+   ]
+  },
+  {
+   "zh": "归根结底，是教育的问题", "vi": "Quy về gốc rễ", "topic": "Giáo dục",
+   "grammar": [
+    {"t": "Suy cho cùng: 归根结底 / 说到底", "tag": "高等 · 插入语", "f": "归根结底，+ kết luận bản chất", "n": "Quy vấn đề về nguyên nhân gốc rễ.", "k": "归根结底",
+     "ex": [["归根结底，这是教育的问题。", "Suy cho cùng đây là vấn đề giáo dục."], ["说到底，还是要靠自己。", "Nói cho cùng vẫn phải dựa vào chính mình."]]},
+    {"t": "Tập trung vào: 着眼于", "tag": "高等 · 动词", "f": "着眼于 + mục tiêu / phương diện", "n": "Đặt trọng tâm, tầm nhìn vào điều gì.", "k": "着眼于",
+     "ex": [["改革应着眼于长远发展。", "Cải cách nên nhắm tới phát triển lâu dài."], ["我们着眼于解决实际问题。", "Chúng tôi tập trung giải quyết vấn đề thực tế."]]}
+   ],
+   "dlg": [
+    ["主持人", "社会上的诚信问题越来越受关注。", "Vấn đề chữ tín trong xã hội ngày càng được quan tâm."],
+    ["陈教授", "法律固然重要，归根结底还是教育的问题。", "Pháp luật dĩ nhiên quan trọng, nhưng suy cho cùng vẫn là vấn đề giáo dục."],
+    ["主持人", "那教育应该怎么做？", "Vậy giáo dục nên làm thế nào?"],
+    ["陈教授", "要着眼于品格培养，而不只是考试成绩。", "Phải chú trọng bồi dưỡng nhân cách, chứ không chỉ điểm thi."]
+   ]
+  },
+  {
+   "zh": "对此予以高度重视", "vi": "Động từ hình thức trang trọng", "topic": "Chính sách",
+   "grammar": [
+    {"t": "Dành cho / tiến hành: 予以 / 给予", "tag": "高等 · 动词", "f": "予以 / 给予 + động từ hai âm tiết / danh từ", "n": "Động từ hình thức trong văn bản: 予以支持, 给予帮助.", "k": "予以",
+     "ex": [["政府对此予以高度重视。", "Chính phủ dành sự coi trọng cao độ cho việc này."], ["学校给予他奖励。", "Nhà trường khen thưởng cậu ấy."]]},
+    {"t": "Dẫn đến (xấu): 致使", "tag": "高等 · 动词", "f": "Nguyên nhân，致使 + kết quả tiêu cực", "n": "Văn viết; kết quả thường không tốt.", "k": "致使",
+     "ex": [["暴雨致使多条道路中断。", "Mưa lớn khiến nhiều tuyến đường bị chia cắt."], ["管理不善，致使公司亏损。", "Quản lý yếu kém dẫn đến công ty thua lỗ."]]}
+   ],
+   "dlg": [
+    ["记者", "上周的暴雨致使城市部分地区停电，市政府如何应对？", "Trận mưa lớn tuần trước khiến một số khu vực thành phố mất điện, chính quyền ứng phó thế nào?"],
+    ["发言人", "市政府对此予以高度重视，第一时间组织了抢修。", "Chính quyền thành phố rất coi trọng việc này, đã tổ chức sửa chữa ngay lập tức."],
+    ["记者", "受影响的居民能得到补偿吗？", "Cư dân bị ảnh hưởng có được bồi thường không?"],
+    ["发言人", "对受损家庭将给予一定的补助。", "Các hộ bị thiệt hại sẽ được hỗ trợ một phần."]
+   ]
+  },
+  {
+   "zh": "有所改善，以期更好", "vi": "Mục đích và mức độ", "topic": "Môi trường",
+   "grammar": [
+    {"t": "Có phần: 有所", "tag": "高等 · 动词", "f": "有所 + động từ hai âm tiết (改善 / 提高 / 下降)", "n": "Diễn tả có thay đổi ở mức độ nhất định, văn viết.", "k": "有所",
+     "ex": [["空气质量有所改善。", "Chất lượng không khí đã được cải thiện phần nào."], ["今年的收入有所增加。", "Thu nhập năm nay có tăng lên."]]},
+    {"t": "Nhằm mong: 以期", "tag": "高等 · 连词", "f": "Hành động，以期 + mục tiêu mong muốn", "n": "Đứng ở vế sau, nêu kết quả hy vọng đạt được.", "k": "以期",
+     "ex": [["我们将继续努力，以期取得更好的成绩。", "Chúng tôi sẽ tiếp tục nỗ lực, mong đạt được thành tích tốt hơn."], ["政府加大投入，以期改善环境。", "Chính phủ tăng đầu tư nhằm cải thiện môi trường."]]}
+   ],
+   "dlg": [
+    ["主持人", "近年来城市的空气质量怎么样？", "Mấy năm gần đây chất lượng không khí đô thị thế nào?"],
+    ["陈教授", "整体有所改善，但冬季的问题依然突出。", "Nhìn chung đã cải thiện phần nào, nhưng vấn đề mùa đông vẫn còn nổi bật."],
+    ["主持人", "下一步有什么措施？", "Bước tiếp theo có biện pháp gì?"],
+    ["陈教授", "推广清洁能源，以期从根本上解决问题。", "Mở rộng năng lượng sạch, nhằm giải quyết vấn đề tận gốc."]
+   ]
+  },
+  {
+   "zh": "但凡有一点儿办法，我也不会麻烦你", "vi": "Hễ mà có", "topic": "Nhờ giúp đỡ",
+   "grammar": [
+    {"t": "Hễ mà: 但凡", "tag": "高等 · 连词", "f": "但凡 + điều kiện (dù nhỏ)，也 / 就 + …", "n": "Chỉ cần có chút điều kiện thì đã…; khẩu ngữ trang trọng.", "k": "但凡",
+     "ex": [["但凡有一点儿办法，我也不会麻烦你。", "Hễ có chút cách nào, tôi cũng không làm phiền bạn."], ["但凡去过的人，都说那里很美。", "Hễ ai từng đến đều nói nơi đó rất đẹp."]]},
+    {"t": "Hoàn toàn / nhất loạt: 一概 / 一律", "tag": "高等 · 副词", "f": "一概 + 不 / 没 + động từ · 一律 + động từ", "n": "Áp dụng cho tất cả, không ngoại lệ.", "k": "一律",
+     "ex": [["过期申请一律不予受理。", "Đơn quá hạn nhất loạt không thụ lý."], ["对这些说法，他一概不信。", "Với những lời này, anh ấy hoàn toàn không tin."]]}
+   ],
+   "dlg": [
+    ["小林", "王明，能不能借我一点儿钱？但凡有别的办法，我也不会开口。", "Vương Minh, cho mình mượn ít tiền được không? Nếu có cách khác mình cũng chẳng mở lời."],
+    ["王明", "出什么事了？", "Có chuyện gì vậy?"],
+    ["小林", "房东突然要求提前交半年房租，而且一律不接受分期。", "Chủ nhà đột nhiên đòi nộp trước nửa năm tiền thuê, mà nhất loạt không nhận trả góp."],
+    ["王明", "别着急，朋友之间就是要互相帮忙。", "Đừng lo, bạn bè với nhau là phải giúp đỡ."]
+   ]
+  },
+  {
+   "zh": "这可谓一举两得", "vi": "Đánh giá súc tích", "topic": "Thành ngữ",
+   "grammar": [
+    {"t": "Có thể nói là: 可谓", "tag": "高等 · 动词", "f": "A + 可谓 + đánh giá (thường là thành ngữ)", "n": "Đánh giá súc tích, văn viết.", "k": "可谓",
+     "ex": [["这个办法可谓一举两得。", "Cách này có thể nói là nhất cử lưỡng tiện."], ["他的一生可谓传奇。", "Cuộc đời ông có thể nói là một huyền thoại."]]},
+    {"t": "Chưa hẳn không: 未尝不", "tag": "高等 · 副词", "f": "未尝不 + động từ / tính từ", "n": "Phủ định kép mềm mỏng: cũng không phải là không…", "k": "未尝",
+     "ex": [["换个角度看，这未尝不是一件好事。", "Nhìn từ góc khác, đây chưa hẳn không phải chuyện tốt."], ["这个建议未尝不可。", "Đề xuất này cũng không phải là không được."]]}
+   ],
+   "dlg": [
+    ["阿兰", "我骑车上班，既锻炼身体又省了交通费。", "Mình đạp xe đi làm, vừa rèn luyện sức khỏe vừa tiết kiệm tiền đi lại."],
+    ["王明", "这可谓一举两得。", "Đúng là nhất cử lưỡng tiện."],
+    ["阿兰", "就是下雨天有点儿麻烦。", "Chỉ là ngày mưa hơi phiền."],
+    ["王明", "下雨天坐地铁，顺便看看书，也未尝不是一种享受。", "Ngày mưa đi tàu điện, tiện thể đọc sách, cũng chưa hẳn không phải một thú vui."]
+   ]
+  },
+  {
+   "zh": "从长远来看，利大于弊", "vi": "Cân nhắc lợi hại", "topic": "Kinh tế",
+   "grammar": [
+    {"t": "Xét từ… mà nói: 从…来看 / 从…角度", "tag": "高等 · 句型", "f": "从 + góc độ / phạm vi + 来看 / 来说，…", "n": "Xác lập góc nhìn trước khi đánh giá.", "k": "来看",
+     "ex": [["从长远来看，这项改革利大于弊。", "Về lâu dài, cuộc cải cách này lợi nhiều hơn hại."], ["从数据来看，市场正在恢复。", "Xét từ số liệu, thị trường đang phục hồi."]]},
+    {"t": "So sánh văn viết: A 大于 / 小于 / 高于 B", "tag": "高等 · 句型 · 比较", "f": "A + tính từ + 于 + B", "n": "于 thay cho 比 trong văn viết: 高于 = cao hơn.", "k": "于",
+     "ex": [["今年的增长率高于去年。", "Tốc độ tăng trưởng năm nay cao hơn năm ngoái."], ["支出不能大于收入。", "Chi tiêu không được lớn hơn thu nhập."]]}
+   ],
+   "dlg": [
+    ["小林", "很多人反对提高环保标准，说会增加企业成本。", "Nhiều người phản đối nâng tiêu chuẩn môi trường, nói sẽ tăng chi phí doanh nghiệp."],
+    ["陈教授", "短期看确实如此，但从长远来看，利大于弊。", "Ngắn hạn quả là vậy, nhưng về lâu dài lợi lớn hơn hại."],
+    ["小林", "有数据支持吗？", "Có số liệu chứng minh không ạ?"],
+    ["陈教授", "研究显示，绿色企业的平均寿命明显高于传统企业。", "Nghiên cứu cho thấy tuổi thọ trung bình của doanh nghiệp xanh cao hơn rõ rệt so với doanh nghiệp truyền thống."]
+   ]
+  },
+  {
+   "zh": "即便如此，我们也不能放松", "vi": "Nhượng bộ trang trọng", "topic": "Y tế cộng đồng",
+   "grammar": [
+    {"t": "即便…也…", "tag": "高等 · 复句 · 让步", "f": "即便 + giả định / sự thật，也 + kết quả", "n": "Văn viết của 即使….", "k": "即便",
+     "ex": [["即便如此，我们也不能放松警惕。", "Dù vậy, chúng ta cũng không được lơi lỏng cảnh giác."], ["即便困难再大，也要按时完成。", "Dù khó khăn lớn đến đâu cũng phải hoàn thành đúng hạn."]]},
+    {"t": "Không cho phép: 不容", "tag": "高等 · 动词", "f": "不容 + động từ (忽视 / 置疑 / 拖延)", "n": "Không được phép, không thể; sắc thái nghiêm túc.", "k": "不容",
+     "ex": [["这个问题不容忽视。", "Vấn đề này không thể xem nhẹ."], ["事实不容置疑。", "Sự thật không thể nghi ngờ."]]}
+   ],
+   "dlg": [
+    ["记者", "流感病例已连续两周下降。", "Ca cúm đã giảm hai tuần liên tiếp."],
+    ["医生", "是的，但即便如此，我们也不能放松。", "Đúng vậy, nhưng dù thế chúng ta cũng không thể lơ là."],
+    ["记者", "您对市民有什么建议？", "Ông có lời khuyên gì cho người dân?"],
+    ["医生", "老人和儿童的防护不容忽视，建议及时接种疫苗。", "Không được xem nhẹ việc bảo vệ người già và trẻ em, khuyến nghị tiêm vắc-xin kịp thời."]
+   ]
+  },
+  {
+   "zh": "就连专家也感到意外", "vi": "Nhấn mạnh cực điểm", "topic": "Khám phá",
+   "grammar": [
+    {"t": "Ngay cả: 就连…也 / 都…", "tag": "高等 · 句型 · 强调", "f": "就连 + đối tượng ít khả năng nhất + 也 / 都 + …", "n": "Mạnh hơn 连…都, nhấn mạnh trường hợp bất ngờ nhất.", "k": "就连",
+     "ex": [["这个发现就连专家也感到意外。", "Phát hiện này ngay cả chuyên gia cũng bất ngờ."], ["就连小孩子都明白这个道理。", "Ngay cả trẻ con cũng hiểu đạo lý này."]]},
+    {"t": "Cỡ nào: 何其", "tag": "高等 · 副词 · 感叹", "f": "何其 + tính từ (cảm thán)", "n": "Cảm thán văn viết: biết bao, thật là….", "k": "何其",
+     "ex": [["宇宙何其广阔！", "Vũ trụ rộng lớn biết bao!"], ["这样的机会何其难得。", "Cơ hội như vậy hiếm có biết bao."]]}
+   ],
+   "dlg": [
+    ["主持人", "听说考古队在沙漠里发现了一座古城？", "Nghe nói đoàn khảo cổ phát hiện một cổ thành trong sa mạc?"],
+    ["陈教授", "是的，保存得非常完整，就连我们也感到意外。", "Đúng vậy, được bảo tồn rất nguyên vẹn, ngay cả chúng tôi cũng bất ngờ."],
+    ["主持人", "这对研究有什么意义？", "Điều này có ý nghĩa gì với nghiên cứu?"],
+    ["陈教授", "它能告诉我们古代丝绸之路的贸易何其繁荣。", "Nó cho chúng ta biết giao thương trên con đường tơ lụa xưa phồn thịnh biết bao."]
+   ]
+  },
+  {
+   "zh": "故而，我们必须改变", "vi": "Hư từ văn ngôn", "topic": "Văn bản học thuật",
+   "grammar": [
+    {"t": "Vì vậy: 故 / 故而 / 因而", "tag": "高等 · 连词 · 书面", "f": "Nguyên nhân，故 / 故而 / 因而 + kết luận", "n": "Liên từ kết quả trong văn viết học thuật.", "k": "因而",
+     "ex": [["资源有限，因而必须合理分配。", "Tài nguyên có hạn, vì thế phải phân bổ hợp lý."], ["条件不足，故而暂缓实施。", "Điều kiện chưa đủ nên tạm hoãn thực hiện."]]},
+    {"t": "Thì / lại (đối chiếu): 则", "tag": "高等 · 连词 · 书面", "f": "A …，B 则 …", "n": "Dùng để đối chiếu hai trường hợp, hoặc nêu hệ quả: 欲速则不达.", "k": "则",
+     "ex": [["南方多雨，北方则比较干燥。", "Miền Nam mưa nhiều, miền Bắc thì khá khô."], ["欲速则不达。", "Dục tốc bất đạt."]]}
+   ],
+   "dlg": [
+    ["陈教授", "城市人口仍在增长，而土地资源有限，因而必须提高土地利用效率。", "Dân số đô thị vẫn tăng mà quỹ đất có hạn, vì thế phải nâng hiệu quả sử dụng đất."],
+    ["阿兰", "老师，大城市和小城市的情况一样吗？", "Thưa thầy, tình hình thành phố lớn và nhỏ có giống nhau không ạ?"],
+    ["陈教授", "大城市面临拥挤，小城市则面临人口外流。", "Thành phố lớn đối mặt quá tải, thành phố nhỏ thì đối mặt dân số di cư."],
+    ["阿兰", "故而政策也应因地制宜。", "Vì vậy chính sách cũng nên tùy nơi mà áp dụng."]
+   ]
+  },
+  {
+   "zh": "有鉴于此，特制定本办法", "vi": "Văn bản quy phạm", "topic": "Hành chính",
+   "grammar": [
+    {"t": "Xét thấy điều đó: 有鉴于此 / 为此", "tag": "高等 · 篇章连接", "f": "Tình hình。有鉴于此 / 为此，+ quyết định", "n": "Mở đầu phần quyết định trong văn bản quy phạm.", "k": "为此",
+     "ex": [["有鉴于此，特制定本办法。", "Xét thấy điều đó, đặc biệt ban hành quy định này."], ["为此，公司成立了专门小组。", "Vì vậy công ty đã thành lập tổ chuyên trách."]]},
+    {"t": "Là (văn ngôn): 乃 / 系", "tag": "高等 · 动词 · 书面", "f": "A 乃 / 系 B (= A 是 B)", "n": "Dùng trong văn bản trang trọng, thư pháp, khẩu hiệu.", "k": "乃",
+     "ex": [["失败乃成功之母。", "Thất bại là mẹ thành công."], ["此事系误会。", "Việc này là hiểu lầm."]]}
+   ],
+   "dlg": [
+    ["发言人", "近年来，部分小区存在垃圾分类执行不到位的情况。", "Những năm gần đây, một số khu dân cư thực hiện phân loại rác chưa đến nơi đến chốn."],
+    ["发言人", "有鉴于此，特制定本办法，自下月起施行。", "Xét thấy điều đó, đặc biệt ban hành quy định này, có hiệu lực từ tháng sau."],
+    ["记者", "对违反规定的行为如何处理？", "Hành vi vi phạm sẽ xử lý thế nào?"],
+    ["发言人", "首次以提醒为主，屡次违反者将依法处理。保护环境乃每位市民的责任。", "Lần đầu chủ yếu nhắc nhở, vi phạm nhiều lần sẽ xử lý theo pháp luật. Bảo vệ môi trường là trách nhiệm của mỗi người dân."]
+   ]
+  },
+  {
+   "zh": "与其说是巧合，毋宁说是必然", "vi": "Lập luận tinh tế", "topic": "Triết lý",
+   "grammar": [
+    {"t": "与其…毋宁…", "tag": "高等 · 复句 · 选择", "f": "与其 (说) A，毋宁 (说) B", "n": "Biến thể văn viết của 与其…不如….", "k": "毋宁",
+     "ex": [["这与其说是巧合，毋宁说是必然。", "Đây nói là trùng hợp chẳng bằng nói là tất yếu."], ["与其坐而论道，毋宁起而行之。", "Ngồi bàn luận suông chẳng bằng đứng dậy mà làm."]]},
+    {"t": "Cấu trúc 之 (văn ngôn)", "tag": "高等 · 助词 · 之", "f": "A 之 B (= A 的 B) · …之所以 / 之一 / 之后", "n": "之 tương đương 的 trong văn viết và thành ngữ.", "k": "之",
+     "ex": [["这是成功之道。", "Đây là con đường thành công."], ["长城是世界奇迹之一。", "Trường Thành là một trong những kỳ quan thế giới."]]}
+   ],
+   "dlg": [
+    ["阿兰", "他们两人在异国重逢，真是太巧了。", "Hai người họ gặp lại nhau nơi đất khách, thật quá trùng hợp."],
+    ["陈教授", "与其说是巧合，毋宁说是必然。他们都在追求同一个梦想。", "Nói là trùng hợp chẳng bằng nói là tất yếu. Họ cùng theo đuổi một giấc mơ."],
+    ["阿兰", "所以走到了同一个地方。", "Nên mới đi đến cùng một nơi."],
+    ["陈教授", "志同道合，这正是友谊之本。", "Chí hướng hợp nhau, đó chính là gốc rễ của tình bạn."]
+   ]
+  },
+  {
+   "zh": "务求实效，切忌空谈", "vi": "Yêu cầu và cấm kỵ", "topic": "Tác phong làm việc",
+   "grammar": [
+    {"t": "Nhất định cầu: 务求 / 力求", "tag": "高等 · 动词", "f": "务求 / 力求 + mục tiêu (实效 / 准确 / 完美)", "n": "Cố gắng hết sức để đạt yêu cầu, văn viết.", "k": "力求",
+     "ex": [["工作务求实效。", "Công việc cần cầu hiệu quả thực tế."], ["翻译力求准确。", "Dịch thuật cố gắng chính xác."]]},
+    {"t": "Kiêng kỵ: 切忌 / 切勿", "tag": "高等 · 动词 · 副词", "f": "切忌 + hành động · 切勿 + động từ", "n": "Lời khuyên, cảnh báo nghiêm túc: tuyệt đối tránh.", "k": "切忌",
+     "ex": [["学习切忌急于求成。", "Học tập tối kỵ nóng vội."], ["请切勿将贵重物品留在车内。", "Xin tuyệt đối không để đồ quý giá trong xe."]]}
+   ],
+   "dlg": [
+    ["张经理", "新项目启动在即，我讲两点要求。", "Dự án mới sắp khởi động, tôi nêu hai yêu cầu."],
+    ["张经理", "第一，务求实效，每项任务都要有明确结果。", "Thứ nhất, phải cầu hiệu quả thực tế, mỗi nhiệm vụ đều phải có kết quả rõ ràng."],
+    ["张经理", "第二，切忌空谈，有问题当场提出，当场解决。", "Thứ hai, tránh nói suông, có vấn đề nêu ngay, giải quyết ngay."],
+    ["小林", "明白，我们力求在月底前完成第一阶段。", "Rõ, chúng tôi cố gắng hoàn thành giai đoạn một trước cuối tháng."]
+   ]
+  }
+ ]
+}

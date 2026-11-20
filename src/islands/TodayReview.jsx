@@ -16,7 +16,9 @@ const revealed = signal(false);
 const progress = signal({ counter: '1 / 25', text: 'Đang tải...', pct: 0 });
 let doneMessage = 'Không còn thẻ đến hạn hôm nay.';
 
-const availableLevels = () => Object.keys(LEVELS).filter((level) => LEVELS[level].available);
+const availableLevels = () => Object.keys(LEVELS).filter((level) => (
+  typeof window.isReviewableLevel === 'function' ? window.isReviewableLevel(LEVELS[level], level) : LEVELS[level].available
+));
 
 async function loadTodayReviewQueue() {
   const now = new Date();

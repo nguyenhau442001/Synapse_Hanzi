@@ -70,7 +70,7 @@ export async function fetchLevelWords(level) {
 }
 
 export function hskLevelKeys() {
-  return Object.keys(LEVELS).filter(key => !TOPICS[key] && !LEVELS_HSK30[key]);
+  return Object.keys(LEVELS).filter(key => !TOPICS[key] && !LEVELS_HSK30[key] && !LEVELS[key].isLesson);
 }
 
 export function hsk30LevelKeys() {

@@ -1,0 +1,179 @@
+{
+ "name": "HSK 2",
+ "band": "Sơ cấp",
+ "grammarTotal": 81,
+ "lessons": [
+  {
+   "zh": "我去过长城", "vi": "Kinh nghiệm đã từng", "topic": "Du lịch",
+   "grammar": [
+    {"t": "Trợ từ 过 chỉ kinh nghiệm", "tag": "二级 · 助词 · 过", "f": "Động từ + 过 (+ tân ngữ) · Phủ định: 没 + động từ + 过", "n": "过 nói về việc đã từng trải qua trong quá khứ. Câu hỏi: …过…吗？ / …过…没有？", "k": "过",
+     "ex": [["我去过长城。", "Tôi đã từng đến Vạn Lý Trường Thành."], ["他没吃过越南菜。", "Anh ấy chưa từng ăn món Việt."]]},
+    {"t": "Bổ ngữ động lượng 次 / 遍", "tag": "二级 · 补语 · 动量补语", "f": "Động từ + (过/了) + số + 次 / 遍 (+ tân ngữ)", "n": "次 đếm số lần làm việc; 遍 nhấn mạnh làm trọn vẹn từ đầu đến cuối.", "k": "次",
+     "ex": [["我去过两次北京。", "Tôi đã đến Bắc Kinh hai lần."], ["这本书我看了三遍。", "Cuốn sách này tôi đã đọc ba lượt."]]}
+   ],
+   "dlg": [
+    ["大卫", "王明，你去过长城吗？", "Vương Minh, bạn đã đến Vạn Lý Trường Thành chưa?"],
+    ["王明", "去过，我去过三次。你呢？", "Rồi, mình đã đến ba lần. Còn bạn?"],
+    ["大卫", "我还没去过。从这儿到长城远吗？", "Mình chưa đến bao giờ. Từ đây đến Trường Thành có xa không?"],
+    ["王明", "不太远，坐车两个小时就到了。", "Không xa lắm, đi xe hai tiếng là tới."],
+    ["大卫", "这个星期六你有时间吗？我们一起去吧。", "Thứ Bảy này bạn có rảnh không? Chúng ta đi cùng nhé."],
+    ["王明", "好啊，我再去一次！", "Được đấy, mình đi thêm một lần nữa!"]
+   ]
+  },
+  {
+   "zh": "她比我高一点儿", "vi": "So sánh", "topic": "Ngoại hình",
+   "grammar": [
+    {"t": "Câu so sánh với 比", "tag": "二级 · 句型 · 比较句", "f": "A + 比 + B + tính từ (+ 一点儿 / 多了 / số lượng)", "n": "Không dùng 很, 非常 trước tính từ trong câu 比. Muốn nói mức chênh lệch thì đặt sau tính từ.", "k": "比",
+     "ex": [["她比我高一点儿。", "Cô ấy cao hơn tôi một chút."], ["今天比昨天冷多了。", "Hôm nay lạnh hơn hôm qua nhiều."]]},
+    {"t": "Phủ định so sánh với 没有", "tag": "二级 · 句型 · 比较句", "f": "A + 没有 + B + (这么 / 那么) + tính từ", "n": "没有 dùng để nói A không bằng B.", "k": "没有",
+     "ex": [["我没有她那么高。", "Tôi không cao bằng cô ấy."], ["这个房间没有那个大。", "Phòng này không rộng bằng phòng kia."]]},
+    {"t": "Phó từ 最 và 更", "tag": "二级 · 副词", "f": "最 + tính từ (nhất) · 更 + tính từ (hơn nữa)", "n": "更 so sánh thêm một bậc; 最 là bậc cao nhất trong nhóm.", "k": "最",
+     "ex": [["她是我们班最高的学生。", "Cô ấy là học sinh cao nhất lớp chúng tôi."], ["坐飞机更快。", "Đi máy bay nhanh hơn nữa."]]}
+   ],
+   "dlg": [
+    ["阿兰", "这是你妹妹吗？她真高！", "Đây là em gái bạn à? Cao thật đấy!"],
+    ["小林", "对，她比我小两岁，可是比我高一点儿。", "Đúng, em ấy nhỏ hơn mình hai tuổi nhưng cao hơn mình một chút."],
+    ["阿兰", "你们家谁最高？", "Nhà bạn ai cao nhất?"],
+    ["小林", "我爸爸最高。我没有妹妹那么高。", "Bố mình cao nhất. Mình không cao bằng em gái."],
+    ["阿兰", "她喜欢运动吗？", "Em ấy thích thể thao không?"],
+    ["小林", "很喜欢，她每天去打篮球。", "Rất thích, ngày nào em ấy cũng đi chơi bóng rổ."]
+   ]
+  },
+  {
+   "zh": "你汉语说得很好", "vi": "Đánh giá mức độ", "topic": "Học tập",
+   "grammar": [
+    {"t": "Bổ ngữ trình độ với 得", "tag": "二级 · 补语 · 程度补语", "f": "Động từ + 得 + (很) tính từ · (Động từ +) tân ngữ + động từ + 得 + tính từ", "n": "Khi có tân ngữ, lặp lại động từ hoặc đưa tân ngữ lên trước. Phủ định: 得 + 不 + tính từ.", "k": "得",
+     "ex": [["你汉语说得很好。", "Bạn nói tiếng Trung rất giỏi."], ["他跑得不快。", "Anh ấy chạy không nhanh."]]},
+    {"t": "Lặp lại động từ", "tag": "二级 · 动词重叠", "f": "AA · A一A · ABAB", "n": "Lặp động từ làm câu nhẹ nhàng, mang nghĩa \"thử, một chút\".", "k": "看看",
+     "ex": [["你看看这本书。", "Bạn xem thử cuốn sách này đi."], ["我们休息休息吧。", "Chúng ta nghỉ ngơi một chút đi."]]}
+   ],
+   "dlg": [
+    ["李老师", "阿兰，你汉语说得很好！", "Lan, em nói tiếng Trung giỏi lắm!"],
+    ["阿兰", "谢谢老师！可是我写得不太好。", "Cảm ơn thầy! Nhưng em viết chưa tốt lắm."],
+    ["李老师", "你每天写多长时间汉字？", "Mỗi ngày em viết chữ Hán bao lâu?"],
+    ["阿兰", "半个小时。老师，您看看我的作业，好吗？", "Nửa tiếng ạ. Thầy xem giúp em bài tập được không ạ?"],
+    ["李老师", "写得不错，比上个星期好多了。", "Viết khá đấy, tốt hơn tuần trước nhiều."],
+    ["阿兰", "太好了，我会继续努力的。", "Tuyệt quá, em sẽ tiếp tục cố gắng."]
+   ]
+  },
+  {
+   "zh": "我是坐地铁来的", "vi": "Nhấn mạnh cách thức", "topic": "Giao thông",
+   "grammar": [
+    {"t": "Cấu trúc 是…的 nhấn mạnh", "tag": "二级 · 句型 · 是……的", "f": "Chủ ngữ + 是 + thời gian / nơi chốn / cách thức + động từ + 的", "n": "Dùng cho việc đã xảy ra, nhấn mạnh khi nào, ở đâu, bằng cách nào, với ai.", "k": "的",
+     "ex": [["我是坐地铁来的。", "Tôi đến bằng tàu điện ngầm."], ["你是什么时候到北京的？", "Bạn đến Bắc Kinh lúc nào?"]]},
+    {"t": "Giới từ 离 chỉ khoảng cách", "tag": "二级 · 介词", "f": "A + 离 + B + 远 / 近", "n": "离 nói khoảng cách giữa hai địa điểm hoặc thời điểm.", "k": "离",
+     "ex": [["我家离公司很远。", "Nhà tôi cách công ty rất xa."], ["离考试还有三天。", "Còn ba ngày nữa là thi."]]}
+   ],
+   "dlg": [
+    ["王明", "大卫，你今天是怎么来的？", "David, hôm nay bạn đến bằng gì?"],
+    ["大卫", "我是坐地铁来的。", "Mình đi tàu điện ngầm."],
+    ["王明", "你家离学校远吗？", "Nhà bạn cách trường có xa không?"],
+    ["大卫", "有点儿远，坐地铁要四十分钟。你呢？", "Hơi xa, đi tàu mất bốn mươi phút. Còn bạn?"],
+    ["王明", "我家很近，我是走路来的。", "Nhà mình gần lắm, mình đi bộ đến."],
+    ["大卫", "真好，早上你可以多睡一会儿。", "Sướng thật, buổi sáng bạn được ngủ thêm một lúc."]
+   ]
+  },
+  {
+   "zh": "门开着呢", "vi": "Trạng thái kéo dài", "topic": "Trong nhà",
+   "grammar": [
+    {"t": "Trợ từ 着 chỉ trạng thái", "tag": "二级 · 助词 · 着", "f": "Động từ + 着 (+ 呢)", "n": "着 diễn tả trạng thái đang được duy trì. Phủ định: 没 + động từ + 着.", "k": "着",
+     "ex": [["门开着呢。", "Cửa đang mở."], ["桌子上放着一本书。", "Trên bàn có đặt một cuốn sách."]]},
+    {"t": "Vừa… vừa… với 一边", "tag": "二级 · 关联词", "f": "一边 + động từ 1，一边 + động từ 2", "n": "Hai hành động diễn ra cùng lúc, do cùng một người làm.", "k": "一边",
+     "ex": [["他一边吃饭，一边看电视。", "Anh ấy vừa ăn cơm vừa xem tivi."], ["我们一边走一边聊吧。", "Chúng ta vừa đi vừa nói chuyện nhé."]]}
+   ],
+   "dlg": [
+    ["阿兰", "小林，你在家吗？门开着呢。", "Tiểu Lâm, bạn có nhà không? Cửa đang mở này."],
+    ["小林", "在！进来吧，我正在做饭呢。", "Có! Vào đi, mình đang nấu cơm."],
+    ["阿兰", "你一边做饭一边听音乐啊。", "Bạn vừa nấu cơm vừa nghe nhạc à."],
+    ["小林", "对，这样做饭很快乐。你坐吧，桌子上放着水果。", "Ừ, nấu như vậy vui lắm. Bạn ngồi đi, trên bàn có hoa quả đấy."],
+    ["阿兰", "谢谢。你的猫在椅子上睡着呢。", "Cảm ơn. Con mèo của bạn đang nằm ngủ trên ghế kìa."],
+    ["小林", "它每天都睡十几个小时。", "Ngày nào nó cũng ngủ hơn mười tiếng."]
+   ]
+  },
+  {
+   "zh": "我听懂了", "vi": "Kết quả của hành động", "topic": "Lớp học",
+   "grammar": [
+    {"t": "Bổ ngữ kết quả 懂 / 完 / 到 / 好 / 见", "tag": "二级 · 补语 · 结果补语", "f": "Động từ + 懂 / 完 / 到 / 好 / 见 (+ 了)", "n": "Bổ ngữ kết quả cho biết hành động đạt được kết quả gì. Phủ định: 没 + động từ + bổ ngữ.", "k": "懂",
+     "ex": [["老师说的话我听懂了。", "Lời thầy nói tôi nghe hiểu rồi."], ["我还没做完作业。", "Tôi vẫn chưa làm xong bài tập."]]},
+    {"t": "就 và 才", "tag": "二级 · 副词", "f": "Thời gian + 就 (sớm, nhanh) · Thời gian + 才 (muộn, chậm)", "n": "就 cho thấy việc xảy ra sớm hơn mong đợi; 才 cho thấy muộn hơn mong đợi.", "k": "才",
+     "ex": [["他七点就来了。", "Anh ấy bảy giờ đã đến rồi."], ["我十一点才睡觉。", "Tôi mười một giờ mới đi ngủ."]]}
+   ],
+   "dlg": [
+    ["李老师", "大家听懂了吗？", "Các em nghe hiểu chưa?"],
+    ["大卫", "老师，我没听懂最后一句话。", "Thưa thầy, em chưa nghe hiểu câu cuối."],
+    ["李老师", "好，我再说一遍。现在呢？", "Được, thầy nói lại một lần. Giờ thì sao?"],
+    ["大卫", "现在听懂了，谢谢老师！", "Giờ em hiểu rồi, cảm ơn thầy!"],
+    ["李老师", "作业都写完了吗？", "Bài tập đã làm xong hết chưa?"],
+    ["阿兰", "我写完了。大卫昨天十二点才睡觉，还没写完。", "Em làm xong rồi. David hôm qua mười hai giờ mới ngủ, vẫn chưa làm xong ạ."]
+   ]
+  },
+  {
+   "zh": "因为下雨，所以我没去", "vi": "Nguyên nhân và kết quả", "topic": "Kế hoạch",
+   "grammar": [
+    {"t": "因为…所以…", "tag": "二级 · 复句 · 因果", "f": "因为 + nguyên nhân，所以 + kết quả", "n": "Có thể chỉ dùng một trong hai từ. Hỏi nguyên nhân dùng 为什么.", "k": "因为",
+     "ex": [["因为下雨，所以我没去公园。", "Vì trời mưa nên tôi không đi công viên."], ["他没来上课，因为他生病了。", "Anh ấy không đến lớp vì bị ốm."]]},
+    {"t": "要…了 / 快…了 sắp xảy ra", "tag": "二级 · 句型 · 将要", "f": "(快 / 就) 要 + động từ + 了", "n": "Diễn tả việc sắp xảy ra. Khi có thời gian cụ thể, dùng 就要…了, không dùng 快要.", "k": "要",
+     "ex": [["火车要开了。", "Tàu sắp chạy rồi."], ["下个月我就要回国了。", "Tháng sau tôi sắp về nước rồi."]]}
+   ],
+   "dlg": [
+    ["阿兰", "王明，你昨天为什么没去爬山？", "Vương Minh, sao hôm qua bạn không đi leo núi?"],
+    ["王明", "因为下雨，所以我在家看书了。", "Vì trời mưa nên mình ở nhà đọc sách."],
+    ["阿兰", "我们这个星期天再去，怎么样？", "Chủ Nhật tuần này mình đi lại, thế nào?"],
+    ["王明", "这个星期天不行，我妈妈要来北京了。", "Chủ Nhật này không được, mẹ mình sắp đến Bắc Kinh."],
+    ["阿兰", "那下个星期吧。", "Vậy tuần sau nhé."],
+    ["王明", "好，下个星期天就要考试了，考完以后我们去。", "Được, Chủ Nhật tuần sau là thi rồi, thi xong chúng ta đi."]
+   ]
+  },
+  {
+   "zh": "天气越来越热了", "vi": "Sự thay đổi", "topic": "Mùa trong năm",
+   "grammar": [
+    {"t": "越来越 + tính từ", "tag": "二级 · 句型", "f": "Chủ ngữ + 越来越 + tính từ / động từ tâm lý (+ 了)", "n": "Diễn tả mức độ tăng dần theo thời gian. Không thêm 很 sau 越来越.", "k": "越来越",
+     "ex": [["天气越来越热了。", "Thời tiết ngày càng nóng."], ["我越来越喜欢学汉语了。", "Tôi ngày càng thích học tiếng Trung."]]},
+    {"t": "了 cuối câu chỉ sự thay đổi", "tag": "二级 · 助词 · 了", "f": "… + 了 (tình huống mới)", "n": "了 cuối câu cho biết tình huống đã thay đổi so với trước.", "k": "了",
+     "ex": [["夏天到了。", "Mùa hè đến rồi."], ["我现在不喝咖啡了。", "Bây giờ tôi không uống cà phê nữa."]]}
+   ],
+   "dlg": [
+    ["大卫", "五月了，天气越来越热了。", "Tháng Năm rồi, trời càng ngày càng nóng."],
+    ["阿兰", "是啊，北京的夏天热吗？", "Đúng thế, mùa hè Bắc Kinh có nóng không?"],
+    ["大卫", "很热，可是没有河内那么热。", "Nóng lắm, nhưng không nóng bằng Hà Nội."],
+    ["阿兰", "你最喜欢哪个季节？", "Bạn thích mùa nào nhất?"],
+    ["大卫", "我最喜欢秋天，不冷也不热。", "Mình thích mùa thu nhất, không lạnh cũng không nóng."],
+    ["阿兰", "我也是。现在我越来越喜欢北京了。", "Mình cũng vậy. Giờ mình ngày càng thích Bắc Kinh rồi."]
+   ]
+  },
+  {
+   "zh": "我学了两年汉语", "vi": "Thời lượng", "topic": "Thời gian học",
+   "grammar": [
+    {"t": "Bổ ngữ thời lượng", "tag": "二级 · 补语 · 时量补语", "f": "Động từ + 了 + thời lượng (+ 的) + tân ngữ", "n": "Thời lượng đứng sau động từ. Thêm 了 cuối câu nếu hành động vẫn đang tiếp diễn.", "k": "了",
+     "ex": [["我学了两年汉语。", "Tôi đã học tiếng Trung hai năm."], ["我等了你半个小时了。", "Tôi đợi bạn nửa tiếng rồi."]]},
+    {"t": "Trước… sau đó… với 先…然后…", "tag": "二级 · 关联词", "f": "先 + việc 1，然后 / 再 + việc 2", "n": "Dùng để sắp xếp trình tự các hành động.", "k": "先",
+     "ex": [["我们先吃饭，然后去看电影。", "Chúng ta ăn cơm trước, sau đó đi xem phim."], ["你先休息一下，再工作。", "Bạn nghỉ một chút rồi hẵng làm việc."]]}
+   ],
+   "dlg": [
+    ["张经理", "你汉语说得真不错，学了多长时间了？", "Tiếng Trung của bạn tốt thật, học bao lâu rồi?"],
+    ["阿兰", "我学了两年了。", "Tôi học được hai năm rồi."],
+    ["张经理", "你是在越南学的还是在中国学的？", "Bạn học ở Việt Nam hay ở Trung Quốc?"],
+    ["阿兰", "先在越南学了一年，然后来北京学了一年。", "Trước học ở Việt Nam một năm, sau đó sang Bắc Kinh học một năm."],
+    ["张经理", "毕业以后你想做什么工作？", "Tốt nghiệp xong bạn muốn làm công việc gì?"],
+    ["阿兰", "我想当翻译。", "Tôi muốn làm phiên dịch."]
+   ]
+  },
+  {
+   "zh": "我给你介绍一下", "vi": "Đối tượng của hành động", "topic": "Công việc",
+   "grammar": [
+    {"t": "Giới từ 给 và 对", "tag": "二级 · 介词", "f": "给 + người + động từ (cho ai) · 对 + người / việc + tính từ / động từ (đối với)", "n": "给 chỉ người nhận hành động; 对 chỉ đối tượng của thái độ, cảm nhận.", "k": "给",
+     "ex": [["我给你介绍一下。", "Để tôi giới thiệu với bạn một chút."], ["运动对身体很好。", "Vận động rất tốt cho sức khỏe."]]},
+    {"t": "Hay là: 还是 và 或者", "tag": "二级 · 连词", "f": "Câu hỏi: A 还是 B？ · Câu trần thuật: A 或者 B", "n": "还是 dùng trong câu hỏi lựa chọn; 或者 dùng trong câu trần thuật.", "k": "或者",
+     "ex": [["你喝咖啡还是喝茶？", "Bạn uống cà phê hay uống trà?"], ["星期六或者星期天都可以。", "Thứ Bảy hoặc Chủ Nhật đều được."]]}
+   ],
+   "dlg": [
+    ["王明", "张经理，我给您介绍一下，这是我的同学大卫。", "Giám đốc Trương, tôi xin giới thiệu, đây là bạn học của tôi, David."],
+    ["张经理", "你好！欢迎你来我们公司。", "Chào bạn! Chào mừng bạn đến công ty chúng tôi."],
+    ["大卫", "您好！我对这个工作很感兴趣。", "Chào ông! Tôi rất hứng thú với công việc này."],
+    ["张经理", "你什么时候可以开始上班？", "Khi nào bạn có thể bắt đầu đi làm?"],
+    ["大卫", "下个星期一或者星期二都可以。", "Thứ Hai hoặc thứ Ba tuần sau đều được ạ."],
+    ["张经理", "好，星期一见。有问题可以给我打电话。", "Được, hẹn thứ Hai. Có vấn đề gì cứ gọi điện cho tôi."]
+   ]
+  }
+ ]
+}

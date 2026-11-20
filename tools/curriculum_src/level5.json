@@ -1,0 +1,247 @@
+{
+ "name": "HSK 5",
+ "band": "Trung cấp",
+ "grammarTotal": 71,
+ "lessons": [
+  {
+   "zh": "与其抱怨，不如行动", "vi": "So sánh lựa chọn", "topic": "Thái độ sống",
+   "grammar": [
+    {"t": "与其…不如…", "tag": "五级 · 复句 · 选择", "f": "与其 + A (không nên)，不如 + B (nên chọn)", "n": "So sánh hai cách làm và khẳng định B tốt hơn A.", "k": "与其",
+     "ex": [["与其抱怨，不如马上行动。", "Thay vì than phiền, chi bằng hành động ngay."], ["与其在家睡觉，不如出去走走。", "Thay vì ở nhà ngủ, chi bằng ra ngoài đi dạo."]]},
+    {"t": "Chưa chắc: 未必 / 不见得", "tag": "五级 · 副词", "f": "未必 / 不见得 + động từ / tính từ", "n": "Phủ định một cách mềm mỏng: không hẳn, chưa chắc.", "k": "未必",
+     "ex": [["贵的东西未必都好。", "Đồ đắt chưa chắc đã tốt."], ["他不见得会同意。", "Anh ấy chưa chắc sẽ đồng ý."]]}
+   ],
+   "dlg": [
+    ["小林", "这份工作压力太大，工资也不高，真让人烦。", "Công việc này áp lực quá, lương cũng không cao, thật bực mình."],
+    ["王明", "与其每天抱怨，不如想想怎么提高自己。", "Thay vì ngày nào cũng than, chi bằng nghĩ cách nâng cao bản thân."],
+    ["小林", "可是换工作也未必能找到更好的。", "Nhưng đổi việc cũng chưa chắc tìm được chỗ tốt hơn."],
+    ["王明", "所以先学点儿新技能，机会来了才抓得住。", "Vì vậy hãy học thêm kỹ năng mới trước, cơ hội đến mới nắm được."]
+   ]
+  },
+  {
+   "zh": "哪怕只有一点儿希望，也要坚持", "vi": "Nhượng bộ mạnh", "topic": "Ý chí",
+   "grammar": [
+    {"t": "哪怕…也…", "tag": "五级 · 复句 · 让步", "f": "哪怕 + giả định cực đoan，也 + quyết tâm", "n": "Nhấn mạnh hơn 即使, mang sắc thái khẩu ngữ.", "k": "哪怕",
+     "ex": [["哪怕只有一点儿希望，我们也要坚持。", "Dù chỉ còn một chút hy vọng, chúng ta cũng phải kiên trì."], ["哪怕再累，他也每天读书。", "Dù mệt đến mấy anh ấy vẫn đọc sách mỗi ngày."]]},
+    {"t": "Khó tránh: 难免 / 不免", "tag": "五级 · 副词", "f": "难免 + động từ (khó tránh khỏi)", "n": "Nói việc khó tránh xảy ra trong hoàn cảnh nào đó.", "k": "难免",
+     "ex": [["第一次做，难免会出错。", "Lần đầu làm khó tránh khỏi sai sót."], ["离开家乡，心里不免有点儿难过。", "Rời quê hương, trong lòng không khỏi buồn."]]}
+   ],
+   "dlg": [
+    ["阿兰", "我们的实验又失败了，已经是第五次了。", "Thí nghiệm của chúng ta lại thất bại, đã là lần thứ năm rồi."],
+    ["陈教授", "做研究难免会遇到失败，这很正常。", "Làm nghiên cứu khó tránh gặp thất bại, điều đó rất bình thường."],
+    ["阿兰", "我有点儿想放弃了。", "Em hơi muốn bỏ cuộc rồi."],
+    ["陈教授", "哪怕只有一点儿希望，也要坚持下去。我们一起找找原因。", "Dù chỉ còn chút hy vọng cũng phải kiên trì. Chúng ta cùng tìm nguyên nhân."]
+   ]
+  },
+  {
+   "zh": "之所以成功，是因为他从不放弃", "vi": "Giải thích nguyên nhân", "topic": "Thành công",
+   "grammar": [
+    {"t": "之所以…是因为…", "tag": "五级 · 复句 · 因果", "f": "(Chủ ngữ) + 之所以 + kết quả，是因为 + nguyên nhân", "n": "Nêu kết quả trước rồi nhấn mạnh nguyên nhân; phong cách trang trọng.", "k": "之所以",
+     "ex": [["他之所以成功，是因为他从不放弃。", "Sở dĩ anh ấy thành công là vì không bao giờ bỏ cuộc."], ["我之所以学汉语，是因为喜欢中国文化。", "Sở dĩ tôi học tiếng Trung là vì thích văn hóa Trung Quốc."]]},
+    {"t": "Dựa vào: 凭", "tag": "五级 · 介词", "f": "凭 + năng lực / giấy tờ / căn cứ", "n": "Dựa vào cái gì để làm hoặc đạt được điều gì.", "k": "凭",
+     "ex": [["他凭自己的努力考上了大学。", "Anh ấy dựa vào nỗ lực của mình mà đỗ đại học."], ["请凭票入场。", "Vui lòng vào cửa bằng vé."]]}
+   ],
+   "dlg": [
+    ["记者", "很多人说您的成功是运气好，您怎么看？", "Nhiều người nói thành công của ông là do may mắn, ông nghĩ sao?"],
+    ["张经理", "运气当然重要。但我之所以能走到今天，是因为从来没放弃过。", "May mắn tất nhiên quan trọng. Nhưng sở dĩ tôi đi đến hôm nay là vì chưa bao giờ bỏ cuộc."],
+    ["记者", "您对年轻人有什么建议？", "Ông có lời khuyên gì cho người trẻ?"],
+    ["张经理", "要凭自己的能力吃饭，不要总想着走捷径。", "Hãy sống bằng năng lực của mình, đừng lúc nào cũng nghĩ đến đường tắt."]
+   ]
+  },
+  {
+   "zh": "一方面要工作，另一方面要照顾家庭", "vi": "Hai mặt của vấn đề", "topic": "Cân bằng cuộc sống",
+   "grammar": [
+    {"t": "一方面…另一方面…", "tag": "五级 · 复句 · 并列", "f": "一方面 + A，另一方面 (+ 也 / 还) + B", "n": "Trình bày hai khía cạnh của cùng một vấn đề.", "k": "一方面",
+     "ex": [["她一方面要工作，另一方面还要照顾孩子。", "Một mặt cô ấy phải làm việc, mặt khác còn phải chăm con."], ["这个政策一方面保护了环境，另一方面也增加了就业。", "Chính sách này một mặt bảo vệ môi trường, mặt khác cũng tăng việc làm."]]},
+    {"t": "Không phải… thì là…: 不是…就是…", "tag": "五级 · 复句 · 选择", "f": "不是 A，就是 B", "n": "Chỉ có hai khả năng, không A thì B.", "k": "就是",
+     "ex": [["他周末不是加班，就是在家睡觉。", "Cuối tuần anh ấy không tăng ca thì ở nhà ngủ."], ["最近不是刮风就是下雨。", "Dạo này không gió thì mưa."]]}
+   ],
+   "dlg": [
+    ["阿兰", "你姐姐最近怎么样？", "Dạo này chị gái bạn thế nào?"],
+    ["小林", "很辛苦。她一方面要上班，另一方面还要照顾两个孩子。", "Vất vả lắm. Một mặt chị ấy phải đi làm, mặt khác còn chăm hai đứa con."],
+    ["阿兰", "她有自己的时间吗？", "Chị ấy có thời gian cho mình không?"],
+    ["小林", "几乎没有，周末不是带孩子上课，就是做家务。", "Hầu như không, cuối tuần không đưa con đi học thì làm việc nhà."]
+   ]
+  },
+  {
+   "zh": "提前出发，以免迟到", "vi": "Để tránh / để tiện", "topic": "Lên kế hoạch",
+   "grammar": [
+    {"t": "以免 / 以便", "tag": "五级 · 连词", "f": "Hành động，以免 + điều không mong muốn · Hành động，以便 + mục đích", "n": "以免 = để tránh; 以便 = để tiện cho. Cả hai đứng ở vế sau.", "k": "以免",
+     "ex": [["我们提前出发，以免迟到。", "Chúng ta xuất phát sớm để khỏi đến muộn."], ["请留下电话，以便我们联系你。", "Vui lòng để lại số điện thoại để tiện liên hệ với bạn."]]},
+    {"t": "Cần gì phải: 何必", "tag": "五级 · 副词", "f": "何必 + động từ (+ 呢)？", "n": "Câu phản vấn: không cần thiết phải làm vậy.", "k": "何必",
+     "ex": [["这么近，何必打车呢？", "Gần thế này, cần gì phải đi taxi?"], ["小事一件，何必生气？", "Chuyện nhỏ thôi, cần gì phải giận?"]]}
+   ],
+   "dlg": [
+    ["大卫", "明天的面试是九点，我七点就出发。", "Buổi phỏng vấn mai lúc chín giờ, bảy giờ mình đã xuất phát."],
+    ["王明", "坐地铁才半个小时，何必那么早？", "Đi tàu điện chỉ nửa tiếng, cần gì sớm vậy?"],
+    ["大卫", "早上地铁人多，我想提前到，以免出什么问题。", "Buổi sáng tàu đông, mình muốn đến sớm để tránh có trục trặc."],
+    ["王明", "也对。把简历多打印几份，以便面试官看。", "Cũng đúng. In thêm vài bản sơ yếu lý lịch để người phỏng vấn tiện xem."]
+   ]
+  },
+  {
+   "zh": "通过不断学习，从而提高能力", "vi": "Từ đó dẫn đến", "topic": "Phát triển bản thân",
+   "grammar": [
+    {"t": "Từ đó: 从而 / 进而", "tag": "五级 · 连词", "f": "Cách thức / nguyên nhân，从而 + kết quả · …，进而 + bước tiếp theo", "n": "从而 nêu kết quả đạt được; 进而 nêu bước phát triển cao hơn.", "k": "从而",
+     "ex": [["他通过不断学习，从而提高了自己的能力。", "Anh ấy không ngừng học tập, nhờ đó nâng cao năng lực."], ["先了解客户，进而提供更好的服务。", "Trước hết hiểu khách hàng, tiến tới cung cấp dịch vụ tốt hơn."]]},
+    {"t": "Lấy… làm…: 以…为…", "tag": "五级 · 句型", "f": "以 + A + 为 + B", "n": "Coi A là B; văn viết trang trọng.", "k": "为",
+     "ex": [["我们以学生为中心。", "Chúng tôi lấy học sinh làm trung tâm."], ["这家公司以质量为生命。", "Công ty này coi chất lượng là sinh mệnh."]]}
+   ],
+   "dlg": [
+    ["陈教授", "这门课以实践为主，每周都有小组项目。", "Môn này lấy thực hành làm chính, tuần nào cũng có dự án nhóm."],
+    ["阿兰", "老师，我们为什么要做这么多项目？", "Thưa thầy, vì sao chúng em phải làm nhiều dự án thế ạ?"],
+    ["陈教授", "通过合作完成项目，从而学会解决实际问题。", "Thông qua hợp tác làm dự án, từ đó học được cách giải quyết vấn đề thực tế."],
+    ["阿兰", "明白了，进而也能提高沟通能力。", "Em hiểu rồi, tiến tới còn nâng cao được kỹ năng giao tiếp."]
+   ]
+  },
+  {
+   "zh": "就这个问题而言，我有不同的看法", "vi": "Bày tỏ quan điểm", "topic": "Thảo luận",
+   "grammar": [
+    {"t": "就…而言 / 来说", "tag": "五级 · 句型", "f": "就 + phạm vi / đối tượng + 而言，…", "n": "Giới hạn phạm vi nhận xét: xét về….", "k": "而言",
+     "ex": [["就这个问题而言，我有不同的看法。", "Xét về vấn đề này, tôi có quan điểm khác."], ["就价格来说，这款手机很合适。", "Xét về giá, mẫu điện thoại này rất hợp lý."]]},
+    {"t": "Tóm lại / có thể thấy: 总之 / 可见", "tag": "五级 · 连词", "f": "…，总之 + kết luận · …，可见 + suy luận", "n": "总之 tổng kết ý; 可见 rút ra kết luận từ dẫn chứng.", "k": "可见",
+     "ex": [["他连续三年第一名，可见他有多努力。", "Anh ấy ba năm liền đứng đầu, đủ thấy anh ấy chăm chỉ thế nào."], ["总之，我们要按时完成任务。", "Tóm lại, chúng ta phải hoàn thành nhiệm vụ đúng hạn."]]}
+   ],
+   "dlg": [
+    ["张经理", "大家对新的上班时间有什么意见？", "Mọi người có ý kiến gì về giờ làm mới?"],
+    ["小林", "就效率而言，我觉得弹性上班更好。", "Xét về hiệu suất, tôi thấy giờ làm linh hoạt tốt hơn."],
+    ["阿兰", "我同意。上个月试了两周，大家完成的任务更多了，可见这个办法有效。", "Tôi đồng ý. Tháng trước thử hai tuần, mọi người hoàn thành nhiều việc hơn, đủ thấy cách này hiệu quả."],
+    ["张经理", "好，总之以结果为标准，下个月正式开始。", "Được, tóm lại lấy kết quả làm tiêu chuẩn, tháng sau chính thức bắt đầu."]
+   ]
+  },
+  {
+   "zh": "要么现在说，要么永远别说", "vi": "Một trong hai", "topic": "Quyết định",
+   "grammar": [
+    {"t": "要么…要么…", "tag": "五级 · 复句 · 选择", "f": "要么 + A，要么 + B", "n": "Đưa ra hai lựa chọn, buộc chọn một.", "k": "要么",
+     "ex": [["要么现在说，要么永远别说。", "Hoặc nói ngay bây giờ, hoặc đừng bao giờ nói."], ["周末我们要么去爬山，要么去看电影。", "Cuối tuần chúng ta hoặc đi leo núi, hoặc đi xem phim."]]},
+    {"t": "Không đến mức: 不至于", "tag": "五级 · 副词", "f": "不至于 + động từ / tính từ", "n": "Tình hình chưa đến mức nghiêm trọng như vậy.", "k": "不至于",
+     "ex": [["他不至于连这个都不懂吧。", "Anh ấy chắc không đến mức cái này cũng không hiểu."], ["只是小感冒，不至于去医院。", "Chỉ cảm nhẹ thôi, không đến mức phải đi viện."]]}
+   ],
+   "dlg": [
+    ["大卫", "我不知道该不该告诉她我的想法。", "Mình không biết có nên nói với cô ấy suy nghĩ của mình không."],
+    ["王明", "要么现在说，要么就别再想了。", "Hoặc nói ngay bây giờ, hoặc đừng nghĩ nữa."],
+    ["大卫", "如果她拒绝我，那多尴尬啊。", "Nếu cô ấy từ chối thì ngại lắm."],
+    ["王明", "不至于吧，你们是好朋友，她会理解的。", "Không đến mức đó đâu, các bạn là bạn thân, cô ấy sẽ hiểu mà."]
+   ]
+  },
+  {
+   "zh": "我把他当作最好的朋友", "vi": "Coi như, xem như", "topic": "Tình bạn",
+   "grammar": [
+    {"t": "把…当作 / 看作…", "tag": "五级 · 句型 · 把字句", "f": "把 + A + 当作 / 看作 / 当成 + B", "n": "Coi A như là B.", "k": "当作",
+     "ex": [["我一直把他当作最好的朋友。", "Tôi luôn coi anh ấy là người bạn tốt nhất."], ["别把我的话当成玩笑。", "Đừng coi lời tôi là trò đùa."]]},
+    {"t": "Hoàn toàn không: 毫无 / 毫不", "tag": "五级 · 副词", "f": "毫无 + danh từ · 毫不 + động từ / tính từ", "n": "Phủ định tuyệt đối, sắc thái văn viết.", "k": "毫无",
+     "ex": [["这样做毫无意义。", "Làm như vậy hoàn toàn vô nghĩa."], ["他毫不犹豫地答应了。", "Anh ấy đồng ý không chút do dự."]]}
+   ],
+   "dlg": [
+    ["阿兰", "你和小林认识多少年了？", "Bạn và Tiểu Lâm quen nhau bao nhiêu năm rồi?"],
+    ["王明", "十几年了。我一直把他当作亲兄弟。", "Hơn mười năm rồi. Mình luôn coi cậu ấy như anh em ruột."],
+    ["阿兰", "难怪他有困难的时候，你毫不犹豫地帮忙。", "Thảo nào lúc cậu ấy khó khăn, bạn giúp không chút do dự."],
+    ["王明", "朋友之间本来就应该互相帮助。", "Bạn bè với nhau vốn nên giúp đỡ lẫn nhau."]
+   ]
+  },
+  {
+   "zh": "这是我所知道的情况", "vi": "Văn viết trang trọng", "topic": "Báo cáo",
+   "grammar": [
+    {"t": "所 + động từ + 的", "tag": "五级 · 助词 · 所", "f": "(Chủ ngữ) + 所 + động từ + 的 (+ danh từ)", "n": "所 nhấn mạnh tân ngữ của động từ, mang sắc thái văn viết.", "k": "所",
+     "ex": [["这就是我所知道的情况。", "Đó là tình hình mà tôi biết."], ["我们所做的一切都是为了孩子。", "Mọi điều chúng tôi làm đều vì con cái."]]},
+    {"t": "Tiến hành: 加以 / 进行", "tag": "五级 · 动词", "f": "加以 / 进行 + động từ hai âm tiết", "n": "Động từ hình thức đứng trước động từ khác: 加以研究, 进行调查.", "k": "加以",
+     "ex": [["这个问题需要加以研究。", "Vấn đề này cần được nghiên cứu."], ["公司对市场进行了调查。", "Công ty đã tiến hành khảo sát thị trường."]]}
+   ],
+   "dlg": [
+    ["张经理", "这次事故的原因调查清楚了吗？", "Nguyên nhân sự cố lần này đã điều tra rõ chưa?"],
+    ["小林", "这是我们目前所了解的情况：主要是系统更新出了问题。", "Đây là tình hình chúng tôi nắm được hiện nay: chủ yếu do cập nhật hệ thống gặp lỗi."],
+    ["张经理", "以后的每次更新都要先加以测试。", "Sau này mỗi lần cập nhật đều phải thử nghiệm trước."],
+    ["小林", "明白，我们下周会对整个系统进行检查。", "Rõ, tuần sau chúng tôi sẽ tiến hành kiểm tra toàn bộ hệ thống."]
+   ]
+  },
+  {
+   "zh": "鉴于天气原因，比赛推迟", "vi": "Thông báo chính thức", "topic": "Sự kiện",
+   "grammar": [
+    {"t": "Xét thấy: 鉴于", "tag": "五级 · 介词", "f": "鉴于 + tình hình，(quyết định)", "n": "Dùng trong văn bản, thông báo để nêu căn cứ của quyết định.", "k": "鉴于",
+     "ex": [["鉴于天气原因，比赛推迟到下周。", "Do điều kiện thời tiết, trận đấu hoãn sang tuần sau."], ["鉴于他的表现，公司决定给他升职。", "Xét thành tích của anh ấy, công ty quyết định thăng chức."]]},
+    {"t": "Đại từ 其 (văn viết)", "tag": "五级 · 代词", "f": "其 = 他的 / 它的 / 他 / 它", "n": "其 thay cho người hoặc vật đã nhắc, hay gặp trong văn bản trang trọng.", "k": "其",
+     "ex": [["这本书的作者及其家人住在上海。", "Tác giả cuốn sách và gia đình ông sống ở Thượng Hải."], ["我们要了解其原因。", "Chúng ta cần tìm hiểu nguyên nhân của nó."]]}
+   ],
+   "dlg": [
+    ["阿兰", "你看到学校的通知了吗？", "Bạn xem thông báo của trường chưa?"],
+    ["大卫", "看到了：鉴于天气原因，运动会推迟一周举行。", "Xem rồi: do thời tiết, hội thao lùi lại một tuần."],
+    ["阿兰", "那其他活动呢？", "Thế còn các hoạt động khác?"],
+    ["大卫", "通知说其安排不变，照常进行。", "Thông báo nói lịch trình của chúng không đổi, vẫn tiến hành như thường."]
+   ]
+  },
+  {
+   "zh": "说不定他已经到了", "vi": "Phỏng đoán", "topic": "Hẹn gặp",
+   "grammar": [
+    {"t": "Biết đâu: 说不定 / 也许", "tag": "五级 · 副词", "f": "说不定 / 也许 + phán đoán", "n": "Đưa ra khả năng không chắc chắn; 说不定 mang tính khẩu ngữ.", "k": "说不定",
+     "ex": [["说不定他已经到了。", "Biết đâu anh ấy đến rồi."], ["明天也许会下雨。", "Mai có lẽ sẽ mưa."]]},
+    {"t": "Rõ ràng là: 明明", "tag": "五级 · 副词", "f": "明明 + sự thật，(nhưng) …", "n": "Nhấn mạnh sự thật hiển nhiên, vế sau thường trái ngược.", "k": "明明",
+     "ex": [["你明明知道，为什么不告诉我？", "Rõ ràng bạn biết, sao không nói cho tôi?"], ["他明明在家，却不开门。", "Rõ ràng anh ấy ở nhà mà không mở cửa."]]}
+   ],
+   "dlg": [
+    ["小林", "王明怎么还没来？我明明说了七点在门口见。", "Sao Vương Minh vẫn chưa đến? Rõ ràng mình đã nói bảy giờ gặp ở cổng."],
+    ["阿兰", "说不定他已经到了，在里面等我们呢。", "Biết đâu cậu ấy đến rồi, đang đợi chúng ta bên trong."],
+    ["小林", "我打个电话问问。", "Để mình gọi điện hỏi xem."],
+    ["阿兰", "看，他在那儿！他也在找我们。", "Nhìn kìa, cậu ấy ở đằng kia! Cậu ấy cũng đang tìm chúng ta."]
+   ]
+  },
+  {
+   "zh": "他不但没生气，反而笑了", "vi": "Ngược lại", "topic": "Tính cách",
+   "grammar": [
+    {"t": "不但不 / 没…反而…", "tag": "五级 · 复句 · 递进", "f": "不但不 / 没 + A，反而 + B (ngược với dự đoán)", "n": "Kết quả trái ngược với điều người ta mong đợi.", "k": "反而",
+     "ex": [["他不但没生气，反而笑了。", "Anh ấy không những không giận mà ngược lại còn cười."], ["吃了药，病不但没好，反而更重了。", "Uống thuốc rồi bệnh không những không khỏi mà còn nặng hơn."]]},
+    {"t": "Mặc dù: 尽管", "tag": "五级 · 连词", "f": "尽管 + A，但是 / 还是 / 却 + B", "n": "Gần nghĩa 虽然, sắc thái trang trọng hơn.", "k": "尽管",
+     "ex": [["尽管很累，她还是坚持做完了。", "Dù rất mệt cô ấy vẫn kiên trì làm xong."], ["尽管下着雨，比赛却照常进行。", "Dù trời mưa, trận đấu vẫn diễn ra như thường."]]}
+   ],
+   "dlg": [
+    ["大卫", "我不小心把咖啡洒在李老师的书上了。", "Mình lỡ làm đổ cà phê lên sách của thầy Lý."],
+    ["阿兰", "老师生气了吗？", "Thầy có giận không?"],
+    ["大卫", "他不但没生气，反而问我有没有烫着。", "Thầy không những không giận mà còn hỏi mình có bị bỏng không."],
+    ["阿兰", "尽管李老师看起来很严肃，其实他特别温和。", "Tuy thầy Lý trông nghiêm khắc nhưng thật ra rất hiền."]
+   ]
+  },
+  {
+   "zh": "他把房间收拾得干干净净", "vi": "Miêu tả sinh động", "topic": "Nhà cửa",
+   "grammar": [
+    {"t": "Lặp tính từ AABB / ABB", "tag": "五级 · 形容词重叠", "f": "AABB (干干净净) · ABB (红通通) · A里AB (糊里糊涂)", "n": "Lặp tính từ làm miêu tả sinh động; không dùng thêm 很 trước dạng lặp.", "k": "干干净净",
+     "ex": [["他把房间收拾得干干净净。", "Anh ấy dọn phòng sạch sẽ tinh tươm."], ["孩子们高高兴兴地去上学了。", "Bọn trẻ vui vẻ đi học."]]},
+    {"t": "Trợ từ trạng ngữ 地", "tag": "五级 · 助词 · 地", "f": "Tính từ / cụm từ + 地 + động từ", "n": "地 nối trạng ngữ miêu tả cách thức với động từ phía sau.", "k": "地",
+     "ex": [["她认真地听老师讲课。", "Cô ấy chăm chú nghe thầy giảng bài."], ["大家热烈地鼓掌。", "Mọi người vỗ tay nhiệt liệt."]]}
+   ],
+   "dlg": [
+    ["妈妈", "今天怎么这么干净？", "Hôm nay sao sạch thế này?"],
+    ["小林", "我上午把房间收拾得干干净净，下午朋友要来。", "Sáng nay con dọn phòng sạch sẽ, chiều bạn con sẽ đến."],
+    ["妈妈", "平时你可不是这样的。", "Bình thường con đâu có như vậy."],
+    ["小林", "以后我一定会认认真真地打扫，您就放心吧。", "Sau này con nhất định sẽ dọn dẹp cẩn thận, mẹ cứ yên tâm."]
+   ]
+  },
+  {
+   "zh": "看样子，他今天心情不错", "vi": "Suy đoán từ biểu hiện", "topic": "Cảm xúc",
+   "grammar": [
+    {"t": "Thành phần chêm xen: 看样子 / 看来 / 据说", "tag": "五级 · 插入语", "f": "看样子 / 看来 / 据说 / 听说，+ câu", "n": "Thành phần chêm xen nêu căn cứ hoặc nguồn thông tin của nhận định.", "k": "看来",
+     "ex": [["看来他今天心情不错。", "Xem ra hôm nay anh ấy tâm trạng tốt."], ["据说这家店已经开了一百年了。", "Nghe nói cửa hàng này đã mở được một trăm năm."]]},
+    {"t": "Không nhịn được: 忍不住 / 禁不住", "tag": "五级 · 补语 · 可能补语", "f": "忍不住 + động từ", "n": "Không kìm được mà làm việc gì đó.", "k": "忍不住",
+     "ex": [["听到这个消息，她忍不住哭了。", "Nghe tin này, cô ấy không kìm được mà khóc."], ["看到这么好吃的蛋糕，我忍不住买了一个。", "Thấy chiếc bánh ngon thế, tôi không nhịn được mua một cái."]]}
+   ],
+   "dlg": [
+    ["阿兰", "看样子，张经理今天心情不错，一直在笑。", "Trông giám đốc Trương hôm nay tâm trạng tốt, cứ cười suốt."],
+    ["小林", "据说我们的项目得了公司的大奖。", "Nghe nói dự án của chúng ta đạt giải lớn của công ty."],
+    ["阿兰", "真的？我忍不住想马上告诉大家！", "Thật à? Mình không nhịn được muốn báo ngay cho mọi người!"],
+    ["小林", "先等正式通知吧。", "Đợi thông báo chính thức đã."]
+   ]
+  },
+  {
+   "zh": "这部电影值得一看", "vi": "Đánh giá và giới thiệu", "topic": "Phim ảnh",
+   "grammar": [
+    {"t": "Đáng: 值得", "tag": "五级 · 动词", "f": "值得 + động từ · 值得 + 一 + động từ", "n": "Nói việc gì đó có giá trị, đáng làm.", "k": "值得",
+     "ex": [["这部电影值得一看。", "Bộ phim này đáng xem."], ["这个问题值得我们认真思考。", "Vấn đề này đáng để chúng ta suy nghĩ nghiêm túc."]]},
+    {"t": "Không chỉ: 不光 / 不只", "tag": "五级 · 连词", "f": "不光 / 不只 + A，还 / 也 + B", "n": "Biến thể khẩu ngữ của 不但.", "k": "不光",
+     "ex": [["这部电影不光故事好，音乐也很美。", "Phim này không chỉ cốt truyện hay mà nhạc cũng rất đẹp."], ["不只是我，大家都喜欢她。", "Không chỉ tôi, mọi người đều thích cô ấy."]]}
+   ],
+   "dlg": [
+    ["大卫", "你看过那部关于长城的纪录片吗？", "Bạn xem bộ phim tài liệu về Trường Thành chưa?"],
+    ["阿兰", "看了，非常值得一看！", "Xem rồi, rất đáng xem!"],
+    ["大卫", "它好在哪儿？", "Nó hay ở chỗ nào?"],
+    ["阿兰", "不光画面漂亮，还讲了很多历史故事，让人印象深刻。", "Không chỉ hình ảnh đẹp mà còn kể nhiều câu chuyện lịch sử, để lại ấn tượng sâu sắc."]
+   ]
+  }
+ ]
+}

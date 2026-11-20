@@ -1,0 +1,247 @@
+{
+ "name": "HSK 4",
+ "band": "Trung cấp",
+ "grammarTotal": 76,
+ "lessons": [
+  {
+   "zh": "无论多忙，他都坚持运动", "vi": "Bất kể điều kiện", "topic": "Thói quen",
+   "grammar": [
+    {"t": "无论 / 不管…都…", "tag": "四级 · 复句 · 条件", "f": "无论 / 不管 + đại từ nghi vấn / A 还是 B / A 不 A，都 + kết quả", "n": "Kết quả không thay đổi trong mọi điều kiện. Sau 无论 phải có thành phần mang tính lựa chọn.", "k": "无论",
+     "ex": [["无论多忙，他都坚持运动。", "Dù bận đến đâu anh ấy vẫn kiên trì vận động."], ["不管刮风还是下雨，她都按时上班。", "Bất kể gió hay mưa, cô ấy đều đi làm đúng giờ."]]},
+    {"t": "Phó từ 一直 và 总是", "tag": "四级 · 副词", "f": "一直 + động từ (liên tục, suốt) · 总是 + động từ (luôn luôn, lần nào cũng)", "n": "一直 nhấn mạnh sự liên tục không gián đoạn; 总是 nhấn mạnh tính lặp lại.", "k": "一直",
+     "ex": [["雨一直下到晚上。", "Mưa rơi liên tục đến tối."], ["他总是第一个到办公室。", "Anh ấy luôn là người đến văn phòng đầu tiên."]]}
+   ],
+   "dlg": [
+    ["阿兰", "张经理每天工作那么多，怎么还有时间跑步？", "Giám đốc Trương ngày nào cũng làm nhiều việc thế, sao vẫn có thời gian chạy bộ?"],
+    ["王明", "他说无论多忙，都要坚持锻炼一个小时。", "Ông ấy nói dù bận đến đâu cũng phải kiên trì tập một tiếng."],
+    ["阿兰", "真不容易。我总是说要运动，可是一直没开始。", "Thật không dễ. Mình lúc nào cũng nói sẽ vận động mà mãi chưa bắt đầu."],
+    ["王明", "不管做什么，开始最难。明天我们一起去吧。", "Làm gì cũng vậy, bắt đầu là khó nhất. Mai chúng ta đi cùng nhé."]
+   ]
+  },
+  {
+   "zh": "即使失败了，也不要放弃", "vi": "Giả định nhượng bộ", "topic": "Thi cử",
+   "grammar": [
+    {"t": "即使…也…", "tag": "四级 · 复句 · 让步", "f": "即使 + giả định (kể cả khi)，也 + kết quả không đổi", "n": "Nêu một giả định bất lợi nhưng kết quả vẫn giữ nguyên.", "k": "即使",
+     "ex": [["即使失败了，也不要放弃。", "Dù có thất bại cũng đừng bỏ cuộc."], ["即使你不说，我也知道。", "Dù bạn không nói tôi cũng biết."]]},
+    {"t": "Không thể không: 不得不", "tag": "四级 · 句型", "f": "Chủ ngữ + 不得不 + động từ", "n": "Buộc phải làm vì hoàn cảnh, không có lựa chọn khác.", "k": "不得不",
+     "ex": [["因为生病，他不得不推迟考试。", "Vì ốm, anh ấy buộc phải hoãn kỳ thi."], ["时间太晚了，我们不得不打车回家。", "Muộn quá rồi, chúng tôi đành phải bắt taxi về nhà."]]}
+   ],
+   "dlg": [
+    ["大卫", "这次考试我可能考不好，复习的时间太少了。", "Kỳ thi này có lẽ mình làm không tốt, thời gian ôn tập ít quá."],
+    ["李老师", "即使成绩不理想，也不要放弃，下次还有机会。", "Dù kết quả không như mong muốn cũng đừng bỏ cuộc, lần sau vẫn còn cơ hội."],
+    ["大卫", "这个月我一直在打工，不得不减少学习时间。", "Tháng này em vẫn đi làm thêm nên buộc phải giảm thời gian học."],
+    ["李老师", "那你要好好安排时间，学习和工作都很重要。", "Vậy em phải sắp xếp thời gian cho tốt, học và làm đều quan trọng."]
+   ]
+  },
+  {
+   "zh": "既然来了，就多住几天吧", "vi": "Đã… thì…", "topic": "Tiếp khách",
+   "grammar": [
+    {"t": "既然…就…", "tag": "四级 · 复句 · 推论", "f": "既然 + sự thật đã biết，就 + suy luận / đề nghị", "n": "Dựa trên một sự thật đã có để đưa ra kết luận hoặc lời khuyên.", "k": "既然",
+     "ex": [["既然来了，就多住几天吧。", "Đã đến rồi thì ở thêm vài ngày đi."], ["既然你不舒服，就早点儿休息。", "Đã không khỏe thì nghỉ sớm một chút."]]},
+    {"t": "Bổ ngữ xu hướng 下去 / 下来 (nghĩa mở rộng)", "tag": "四级 · 补语 · 趋向补语引申", "f": "Động từ + 下去 (tiếp tục) · Động từ + 下来 (giữ lại, ổn định)", "n": "说下去 = nói tiếp; 留下来 = ở lại; 停下来 = dừng lại.", "k": "下去",
+     "ex": [["请你说下去。", "Mời bạn nói tiếp."], ["他决定在北京留下来。", "Anh ấy quyết định ở lại Bắc Kinh."]]}
+   ],
+   "dlg": [
+    ["王明", "阿姨，您明天就要回去了吗？", "Cô ơi, mai cô đã về rồi ạ?"],
+    ["阿姨", "是啊，在这儿已经住了一个星期了。", "Ừ, ở đây đã một tuần rồi."],
+    ["王明", "既然来了，就多住几天吧，北京还有很多好玩儿的地方。", "Cô đã đến rồi thì ở thêm vài ngày đi, Bắc Kinh còn nhiều chỗ chơi lắm."],
+    ["阿姨", "家里还有事，不能再住下去了。下次再来看你们。", "Nhà còn việc, không ở thêm được nữa. Lần sau cô lại đến thăm các cháu."]
+   ]
+  },
+  {
+   "zh": "只有多练习，才能说得流利", "vi": "Điều kiện duy nhất", "topic": "Kỹ năng nói",
+   "grammar": [
+    {"t": "只有…才…", "tag": "四级 · 复句 · 条件", "f": "只有 + điều kiện duy nhất，才 + kết quả", "n": "Khác 只要…就 (điều kiện đủ): 只有…才 là điều kiện bắt buộc.", "k": "只有",
+     "ex": [["只有多练习，才能说得流利。", "Chỉ có luyện nhiều mới nói lưu loát được."], ["只有你同意，我们才能开始。", "Chỉ khi bạn đồng ý chúng ta mới bắt đầu được."]]},
+    {"t": "Dựa theo: 按照 / 根据", "tag": "四级 · 介词", "f": "按照 + quy định / kế hoạch · 根据 + căn cứ, số liệu", "n": "按照 = làm theo; 根据 = căn cứ vào để rút ra kết luận.", "k": "按照",
+     "ex": [["请按照要求填写表格。", "Vui lòng điền bảng theo yêu cầu."], ["根据调查，年轻人越来越喜欢网上购物。", "Theo khảo sát, giới trẻ ngày càng thích mua sắm trực tuyến."]]}
+   ],
+   "dlg": [
+    ["阿兰", "老师，我的阅读成绩不错，可是口语一直不太好。", "Thưa thầy, điểm đọc của em khá nhưng khẩu ngữ mãi không tốt lắm."],
+    ["李老师", "只有多跟中国人交流，才能说得流利。", "Chỉ có giao tiếp nhiều với người Trung Quốc mới nói lưu loát được."],
+    ["阿兰", "可是我怕说错。", "Nhưng em sợ nói sai."],
+    ["李老师", "说错没关系。你可以按照课文的句子先练习，再慢慢自己说。", "Nói sai không sao. Em có thể luyện theo câu trong bài trước, rồi dần tự nói."]
+   ]
+  },
+  {
+   "zh": "难道你不知道吗？", "vi": "Hỏi vặn và ngạc nhiên", "topic": "Tin tức",
+   "grammar": [
+    {"t": "Câu phản vấn với 难道…吗", "tag": "四级 · 句型 · 反问句", "f": "难道 + (không) … + 吗？", "n": "Tăng ý ngạc nhiên hoặc trách móc: lẽ nào…?", "k": "难道",
+     "ex": [["难道你不知道吗？", "Lẽ nào bạn không biết?"], ["难道这是真的吗？", "Lẽ nào điều này là thật?"]]},
+    {"t": "Không ngờ: 竟然 / 居然", "tag": "四级 · 副词", "f": "Chủ ngữ + 竟然 / 居然 + vị ngữ (ngoài dự đoán)", "n": "Diễn tả sự việc ngoài dự đoán của người nói.", "k": "竟然",
+     "ex": [["他竟然一个人完成了这么多工作。", "Không ngờ anh ấy một mình hoàn thành nhiều việc như vậy."], ["这么简单的问题，你居然不会？", "Câu hỏi đơn giản thế mà bạn lại không biết?"]]}
+   ],
+   "dlg": [
+    ["大卫", "听说小林得了比赛第一名！", "Nghe nói Tiểu Lâm đạt giải nhất cuộc thi!"],
+    ["阿兰", "真的吗？他才学了一年，竟然得了第一名！", "Thật à? Cậu ấy mới học một năm mà lại đạt giải nhất!"],
+    ["大卫", "难道你没看学校的新闻吗？大家都知道了。", "Lẽ nào bạn chưa xem tin của trường? Mọi người đều biết rồi."],
+    ["阿兰", "这几天太忙了，我还没上网呢。我们应该祝贺他。", "Mấy hôm nay bận quá, mình chưa lên mạng. Chúng ta nên chúc mừng cậu ấy."]
+   ]
+  },
+  {
+   "zh": "通过这次旅行，我了解了很多", "vi": "Phương tiện và con đường", "topic": "Du lịch",
+   "grammar": [
+    {"t": "Giới từ 通过", "tag": "四级 · 介词", "f": "通过 + phương tiện / cách thức，chủ ngữ + kết quả", "n": "Thông qua một cách hoặc một quá trình để đạt kết quả.", "k": "通过",
+     "ex": [["通过这次旅行，我了解了很多中国文化。", "Qua chuyến đi này tôi hiểu được nhiều về văn hóa Trung Quốc."], ["我们是通过朋友认识的。", "Chúng tôi quen nhau qua bạn bè."]]},
+    {"t": "Vì vậy: 由于…因此…", "tag": "四级 · 复句 · 因果", "f": "由于 + nguyên nhân，因此 / 所以 + kết quả", "n": "由于 trang trọng hơn 因为; 因此 hay dùng trong văn viết.", "k": "由于",
+     "ex": [["由于天气不好，因此航班推迟了。", "Do thời tiết xấu nên chuyến bay bị hoãn."], ["由于大家的努力，活动非常成功。", "Nhờ sự nỗ lực của mọi người, hoạt động rất thành công."]]}
+   ],
+   "dlg": [
+    ["王明", "你这次去云南玩儿得怎么样？", "Chuyến đi Vân Nam lần này của bạn thế nào?"],
+    ["阿兰", "非常好！通过这次旅行，我了解了很多少数民族的文化。", "Rất tuyệt! Qua chuyến đi này mình hiểu được nhiều về văn hóa các dân tộc thiểu số."],
+    ["王明", "听说那边常常下雨，你们的计划没受影响吗？", "Nghe nói bên đó hay mưa, kế hoạch của các bạn không bị ảnh hưởng chứ?"],
+    ["阿兰", "有一天由于下大雨，因此我们不得不改变了路线。", "Có một hôm vì mưa to nên chúng mình đành phải đổi lộ trình."]
+   ]
+  },
+  {
+   "zh": "我宁可走路，也不坐这么挤的车", "vi": "Lựa chọn và ưu tiên", "topic": "Giao thông",
+   "grammar": [
+    {"t": "宁可…也不…", "tag": "四级 · 复句 · 选择", "f": "宁可 + A (chấp nhận)，也不 + B (không chịu)", "n": "Sau khi cân nhắc, thà chọn A còn hơn làm B.", "k": "宁可",
+     "ex": [["我宁可走路，也不坐这么挤的车。", "Tôi thà đi bộ còn hơn đi chiếc xe chật thế này."], ["他宁可少赚钱，也不愿意加班。", "Anh ấy thà kiếm ít tiền chứ không muốn tăng ca."]]},
+    {"t": "Nếu không thì: 否则", "tag": "四级 · 连词", "f": "A (điều nên làm)，否则 + hậu quả", "n": "否则 = nếu không thì; thường dùng để nhắc nhở, cảnh báo.", "k": "否则",
+     "ex": [["快点儿走吧，否则要迟到了。", "Đi nhanh lên, nếu không sẽ muộn mất."], ["你要提前订票，否则买不到。", "Bạn phải đặt vé trước, không thì không mua được."]]}
+   ],
+   "dlg": [
+    ["大卫", "公共汽车来了，人太多了！", "Xe buýt đến rồi, đông người quá!"],
+    ["小林", "我宁可走路，也不坐这么挤的车。", "Mình thà đi bộ còn hơn đi chiếc xe chật thế này."],
+    ["大卫", "可是走路要四十分钟，我们得快点儿，否则会迟到的。", "Nhưng đi bộ mất bốn mươi phút, chúng ta phải nhanh lên, không thì sẽ muộn."],
+    ["小林", "那我们骑共享单车吧，又快又方便。", "Vậy mình đi xe đạp công cộng đi, vừa nhanh vừa tiện."]
+   ]
+  },
+  {
+   "zh": "这个问题究竟怎么解决？", "vi": "Truy hỏi đến cùng", "topic": "Họp nhóm",
+   "grammar": [
+    {"t": "Rốt cuộc: 究竟 / 到底", "tag": "四级 · 副词", "f": "究竟 / 到底 + câu hỏi", "n": "Dùng trong câu hỏi để truy hỏi đến cùng. Không dùng với 吗.", "k": "究竟",
+     "ex": [["这个问题究竟怎么解决？", "Rốt cuộc vấn đề này giải quyết thế nào?"], ["你到底去不去？", "Rốt cuộc bạn có đi hay không?"]]},
+    {"t": "Và: 并且 / 以及", "tag": "四级 · 连词", "f": "A，并且 + B (hành động tiếp nối) · A、B 以及 C (liệt kê)", "n": "并且 nối hai vế cùng chủ ngữ; 以及 nối các danh từ, hay dùng trong văn viết.", "k": "并且",
+     "ex": [["他同意了这个计划，并且马上开始准备。", "Anh ấy đồng ý kế hoạch này và lập tức bắt đầu chuẩn bị."], ["会议讨论了时间、地点以及费用。", "Cuộc họp đã thảo luận thời gian, địa điểm và chi phí."]]}
+   ],
+   "dlg": [
+    ["张经理", "客户对我们的产品不满意，这个问题究竟怎么解决？", "Khách hàng không hài lòng với sản phẩm, rốt cuộc vấn đề này giải quyết ra sao?"],
+    ["小林", "我们先了解他们的具体要求，并且尽快改进。", "Trước tiên chúng ta tìm hiểu yêu cầu cụ thể của họ và nhanh chóng cải tiến."],
+    ["张经理", "好。你负责联系客户，以及整理大家的意见。", "Được. Cậu phụ trách liên hệ khách hàng và tổng hợp ý kiến mọi người."],
+    ["小林", "没问题，我下周一以前交报告。", "Không vấn đề, trước thứ Hai tuần sau tôi nộp báo cáo."]
+   ]
+  },
+  {
+   "zh": "一旦养成习惯，就很难改变", "vi": "Một khi…", "topic": "Thói quen sống",
+   "grammar": [
+    {"t": "一旦…就…", "tag": "四级 · 复句 · 假设", "f": "一旦 + tình huống (khi đã xảy ra)，就 + kết quả", "n": "Một khi điều gì đó xảy ra thì sẽ dẫn đến kết quả.", "k": "一旦",
+     "ex": [["一旦养成习惯，就很难改变。", "Một khi đã thành thói quen thì rất khó thay đổi."], ["一旦出了问题，马上告诉我。", "Hễ có vấn đề, báo tôi ngay."]]},
+    {"t": "Dù sao thì: 毕竟", "tag": "四级 · 副词", "f": "毕竟 + lý do / sự thật cốt lõi", "n": "Nhấn mạnh sự thật quan trọng nhất để giải thích, thông cảm.", "k": "毕竟",
+     "ex": [["别怪他，他毕竟还是个孩子。", "Đừng trách cậu ấy, dù sao cậu ấy vẫn là trẻ con."], ["毕竟是第一次，紧张是正常的。", "Dù gì cũng là lần đầu, hồi hộp là bình thường."]]}
+   ],
+   "dlg": [
+    ["阿兰", "我每天晚上都玩手机玩到很晚。", "Tối nào mình cũng chơi điện thoại đến rất khuya."],
+    ["王明", "这个习惯不好，一旦养成了，就很难改变。", "Thói quen này không tốt, một khi đã thành thì rất khó bỏ."],
+    ["阿兰", "我也知道，可是总是忍不住。", "Mình cũng biết, nhưng lúc nào cũng không nhịn được."],
+    ["王明", "慢慢来吧，毕竟改变习惯需要时间。睡觉前可以把手机放远一点儿。", "Từ từ thôi, dù sao thay đổi thói quen cần thời gian. Trước khi ngủ để điện thoại xa ra một chút."]
+   ]
+  },
+  {
+   "zh": "这件事非你去不可", "vi": "Bắt buộc phải", "topic": "Nhiệm vụ",
+   "grammar": [
+    {"t": "非…不可", "tag": "四级 · 句型", "f": "Chủ ngữ + 非 + động từ / người + 不可", "n": "Nhấn mạnh nhất định phải như vậy, không thể khác.", "k": "非",
+     "ex": [["这件事非你去不可。", "Việc này nhất định phải là bạn đi."], ["今天我非把作业写完不可。", "Hôm nay tôi nhất định phải làm xong bài tập."]]},
+    {"t": "Giới từ 由 chỉ người phụ trách", "tag": "四级 · 介词", "f": "(Việc) + 由 + người + động từ", "n": "由 nhấn mạnh trách nhiệm thuộc về ai.", "k": "由",
+     "ex": [["这个活动由你负责。", "Hoạt động này do bạn phụ trách."], ["会议由张经理主持。", "Cuộc họp do giám đốc Trương chủ trì."]]}
+   ],
+   "dlg": [
+    ["张经理", "下个月的国际会议，由你负责翻译。", "Hội nghị quốc tế tháng sau do cô phụ trách phiên dịch."],
+    ["阿兰", "我经验还不够，别人可以吗？", "Kinh nghiệm của tôi chưa đủ, người khác được không ạ?"],
+    ["张经理", "客户都说越南语和汉语，这件事非你去不可。", "Khách đều nói tiếng Việt và tiếng Trung, việc này nhất định phải là cô."],
+    ["阿兰", "好，那我从今天开始好好准备。", "Vâng, vậy từ hôm nay tôi sẽ chuẩn bị thật kỹ."]
+   ]
+  },
+  {
+   "zh": "再难也要试一试", "vi": "Dù… đến mấy", "topic": "Thử thách",
+   "grammar": [
+    {"t": "再…也…", "tag": "四级 · 复句 · 让步", "f": "再 + tính từ / động từ，也 + kết quả không đổi", "n": "Dù mức độ cao đến đâu thì kết quả vẫn vậy.", "k": "再",
+     "ex": [["再难也要试一试。", "Khó đến mấy cũng phải thử."], ["你再忙也要吃早饭。", "Bận đến mấy bạn cũng phải ăn sáng."]]},
+    {"t": "Thậm chí: 甚至", "tag": "四级 · 副词 / 连词", "f": "A，甚至 + B (mức cao hơn)", "n": "Đưa ra trường hợp nổi bật, vượt mức bình thường.", "k": "甚至",
+     "ex": [["他忙得甚至忘了吃饭。", "Anh ấy bận đến mức quên cả ăn cơm."], ["这首歌大人、孩子甚至老人都会唱。", "Bài hát này người lớn, trẻ em, thậm chí người già đều biết hát."]]}
+   ],
+   "dlg": [
+    ["大卫", "学校组织了马拉松比赛，你报名了吗？", "Trường tổ chức thi marathon, bạn đăng ký chưa?"],
+    ["小林", "报了。我以前甚至没跑过五公里。", "Rồi. Trước đây mình thậm chí chưa từng chạy năm cây số."],
+    ["大卫", "那你还报名？", "Thế mà bạn vẫn đăng ký?"],
+    ["小林", "再难也要试一试，我想挑战一下自己。", "Khó mấy cũng phải thử, mình muốn thử thách bản thân."]
+   ]
+  },
+  {
+   "zh": "何况他还是个新人", "vi": "Huống hồ", "topic": "Nơi làm việc",
+   "grammar": [
+    {"t": "Huống hồ: 何况", "tag": "四级 · 连词", "f": "A 都 / 也…，(更) 何况 B 呢？", "n": "Nêu trường hợp A rồi suy ra B càng như vậy.", "k": "何况",
+     "ex": [["老员工都觉得难，何况他还是个新人。", "Nhân viên cũ còn thấy khó, huống hồ cậu ấy mới vào."], ["大人都搬不动，更何况孩子呢？", "Người lớn còn không khiêng nổi, huống hồ trẻ con?"]]},
+    {"t": "Không những… mà còn: 不仅…还 / 也…", "tag": "四级 · 复句 · 递进", "f": "不仅 + A，还 / 也 / 而且 + B", "n": "Trang trọng hơn 不但; hay dùng trong văn viết.", "k": "不仅",
+     "ex": [["他不仅工作认真，还很愿意帮助别人。", "Anh ấy không những làm việc chăm chỉ mà còn sẵn lòng giúp người khác."], ["这里不仅环境好，交通也很方便。", "Ở đây không chỉ môi trường tốt mà giao thông cũng tiện."]]}
+   ],
+   "dlg": [
+    ["小林", "新同事这次的报告写得不太好。", "Đồng nghiệp mới lần này viết báo cáo chưa tốt lắm."],
+    ["张经理", "这个报告连我都觉得复杂，何况他还是个新人。", "Báo cáo này đến tôi còn thấy phức tạp, huống hồ cậu ấy mới vào."],
+    ["小林", "也是。他不仅很努力，还常常问问题。", "Cũng đúng. Cậu ấy không những rất cố gắng mà còn hay đặt câu hỏi."],
+    ["张经理", "你多帮帮他，他会进步得很快。", "Cậu giúp đỡ cậu ấy nhiều vào, cậu ấy sẽ tiến bộ nhanh thôi."]
+   ]
+  },
+  {
+   "zh": "于是我们决定换一家饭店", "vi": "Kể lại diễn biến", "topic": "Ăn uống",
+   "grammar": [
+    {"t": "Thế là: 于是", "tag": "四级 · 连词", "f": "Sự việc 1，于是 + sự việc 2 (hệ quả tiếp theo)", "n": "Nối hai sự việc nối tiếp, việc sau do việc trước dẫn đến.", "k": "于是",
+     "ex": [["那家饭店人太多，于是我们决定换一家。", "Nhà hàng đó đông quá, thế là chúng tôi quyết định đổi chỗ."], ["天黑了，于是大家都回家了。", "Trời tối rồi, thế là mọi người về nhà."]]},
+    {"t": "Bổ ngữ 出来 / 起来 nghĩa nhận ra, nhớ ra", "tag": "四级 · 补语 · 趋向补语引申", "f": "看出来 / 听出来 (nhận ra) · 想起来 (nhớ ra)", "n": "出来: làm cho điều ẩn trở nên rõ; 起来: hồi tưởng lại.", "k": "出来",
+     "ex": [["我听出来了，这是小林的声音。", "Tôi nghe ra rồi, đây là giọng Tiểu Lâm."], ["我想起来了，我们见过面。", "Tôi nhớ ra rồi, chúng ta từng gặp nhau."]]}
+   ],
+   "dlg": [
+    ["阿兰", "昨天你们去吃烤鸭了吗？", "Hôm qua các bạn đi ăn vịt quay chưa?"],
+    ["大卫", "去了，可是那家店要排一个小时的队，于是我们换了一家饭店。", "Đi rồi, nhưng quán đó phải xếp hàng một tiếng, thế là bọn mình đổi nhà hàng khác."],
+    ["阿兰", "新的那家怎么样？", "Nhà mới thế nào?"],
+    ["大卫", "味道很好。服务员一听就听出来我是外国人，还送了我们一个菜。", "Vị rất ngon. Nhân viên vừa nghe đã nhận ra mình là người nước ngoài, còn tặng bọn mình một món."]
+   ]
+  },
+  {
+   "zh": "你千万别忘了带护照", "vi": "Dặn dò và nhắc nhở", "topic": "Chuẩn bị đi xa",
+   "grammar": [
+    {"t": "Nhất thiết: 千万", "tag": "四级 · 副词", "f": "千万 + 要 / 别 / 不要 + động từ", "n": "Lời dặn dò khẩn thiết, thường dùng trong câu cầu khiến.", "k": "千万",
+     "ex": [["你千万别忘了带护照。", "Bạn nhất định đừng quên mang hộ chiếu."], ["路上千万要注意安全。", "Trên đường nhất định phải chú ý an toàn."]]},
+    {"t": "Kịp / không kịp: 来得及 / 来不及", "tag": "四级 · 补语 · 可能补语", "f": "来得及 / 来不及 + động từ", "n": "Nói về việc còn đủ thời gian hay không.", "k": "来不及",
+     "ex": [["现在出发还来得及。", "Bây giờ xuất phát vẫn còn kịp."], ["来不及吃早饭了，我先走了。", "Không kịp ăn sáng rồi, tôi đi trước đây."]]}
+   ],
+   "dlg": [
+    ["妈妈", "明天的飞机几点起飞？", "Chuyến bay ngày mai mấy giờ cất cánh?"],
+    ["小林", "早上八点。我六点出门应该来得及。", "Tám giờ sáng ạ. Sáu giờ con ra khỏi nhà chắc là kịp."],
+    ["妈妈", "你千万别忘了带护照，到了就给我打电话。", "Con nhất định đừng quên mang hộ chiếu, đến nơi thì gọi điện cho mẹ."],
+    ["小林", "放心吧，行李我已经整理好了。", "Mẹ yên tâm, hành lý con đã sắp xếp xong rồi."]
+   ]
+  },
+  {
+   "zh": "随着经济的发展，生活越来越方便", "vi": "Thay đổi theo thời gian", "topic": "Xã hội",
+   "grammar": [
+    {"t": "Cùng với: 随着", "tag": "四级 · 介词", "f": "随着 + sự thay đổi，chủ ngữ + thay đổi tương ứng", "n": "Một sự việc thay đổi kéo theo sự việc khác thay đổi.", "k": "随着",
+     "ex": [["随着经济的发展，人们的生活越来越方便。", "Cùng với sự phát triển kinh tế, đời sống ngày càng tiện lợi."], ["随着年龄的增长，他的想法也变了。", "Theo tuổi tác, suy nghĩ của anh ấy cũng thay đổi."]]},
+    {"t": "Đối với: 对于", "tag": "四级 · 介词", "f": "对于 + đối tượng / vấn đề，…", "n": "对于 giới thiệu đối tượng được bàn tới; trang trọng hơn 对.", "k": "对于",
+     "ex": [["对于这个问题，大家的看法不同。", "Đối với vấn đề này, mọi người có quan điểm khác nhau."], ["对于老人来说，网上购物还不太方便。", "Với người già, mua sắm trực tuyến vẫn chưa tiện lắm."]]}
+   ],
+   "dlg": [
+    ["陈教授", "随着科技的发展，我们的生活发生了很大的变化。", "Cùng với sự phát triển khoa học kỹ thuật, cuộc sống của chúng ta đã thay đổi rất nhiều."],
+    ["阿兰", "是的，现在用手机就可以付钱、打车、点外卖。", "Vâng, bây giờ dùng điện thoại là có thể trả tiền, gọi xe, đặt đồ ăn."],
+    ["陈教授", "不过对于很多老人来说，这些新技术并不容易。", "Có điều với nhiều người già, những công nghệ mới này không hề dễ."],
+    ["阿兰", "所以年轻人应该多帮助他们。", "Vì vậy người trẻ nên giúp đỡ họ nhiều hơn."]
+   ]
+  },
+  {
+   "zh": "这家公司是去年成立的", "vi": "Giới thiệu doanh nghiệp", "topic": "Kinh doanh",
+   "grammar": [
+    {"t": "是…的 nhấn mạnh thông tin quá khứ (nâng cao)", "tag": "四级 · 句型 · 是……的", "f": "Chủ ngữ + 是 + thời gian / người / mục đích + động từ + 的", "n": "Mở rộng 是…的: nhấn mạnh người thực hiện, mục đích, căn cứ của việc đã xảy ra.", "k": "是",
+     "ex": [["这家公司是去年成立的。", "Công ty này được thành lập năm ngoái."], ["这个决定是大家一起做的。", "Quyết định này là mọi người cùng đưa ra."]]},
+    {"t": "Bị động không dùng 被", "tag": "四级 · 句型 · 意义被动句", "f": "Vật + động từ + thành phần khác", "n": "Khi chủ ngữ rõ ràng là vật chịu tác động, câu không cần 被: 信写好了 (thư đã viết xong).", "k": "好",
+     "ex": [["报告已经写好了。", "Báo cáo đã được viết xong."], ["房间打扫得很干净。", "Phòng được dọn rất sạch."]]}
+   ],
+   "dlg": [
+    ["记者", "请您介绍一下贵公司。", "Xin ông giới thiệu về công ty của mình."],
+    ["张经理", "我们公司是去年三月成立的，主要做网上教育。", "Công ty chúng tôi thành lập tháng Ba năm ngoái, chủ yếu làm giáo dục trực tuyến."],
+    ["记者", "现在有多少学生？", "Hiện giờ có bao nhiêu học viên?"],
+    ["张经理", "已经有五万多名了。新的课程也准备好了，下个月就上线。", "Đã hơn năm vạn người. Các khóa học mới cũng đã chuẩn bị xong, tháng sau sẽ ra mắt."]
+   ]
+  }
+ ]
+}

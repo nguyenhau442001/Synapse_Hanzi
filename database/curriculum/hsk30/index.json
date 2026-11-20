@@ -1,0 +1,923 @@
+{
+ "standard": "GF0025-2021",
+ "levels": [
+  {
+   "level": "1",
+   "name": "HSK 1",
+   "band": "Sơ cấp",
+   "deck": "hsk30_1",
+   "words": 300,
+   "grammarTotal": 48,
+   "lessons": [
+    {
+     "key": "cur30_1_01",
+     "n": 1,
+     "zh": "你好！",
+     "vi": "Chào hỏi và tạm biệt",
+     "words": 25,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_1_02",
+     "n": 2,
+     "zh": "我叫王明",
+     "vi": "Tên và quốc tịch",
+     "words": 25,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_1_03",
+     "n": 3,
+     "zh": "这是我的朋友",
+     "vi": "Giới thiệu người khác",
+     "words": 25,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_1_04",
+     "n": 4,
+     "zh": "你今年多大？",
+     "vi": "Số đếm và tuổi",
+     "words": 25,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_1_05",
+     "n": 5,
+     "zh": "我家有四口人",
+     "vi": "Gia đình và số lượng",
+     "words": 25,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_1_06",
+     "n": 6,
+     "zh": "今天星期几？",
+     "vi": "Ngày, tháng, thứ",
+     "words": 25,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_1_07",
+     "n": 7,
+     "zh": "现在几点？",
+     "vi": "Giờ giấc và lịch hằng ngày",
+     "words": 25,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_1_08",
+     "n": 8,
+     "zh": "我想喝茶",
+     "vi": "Ăn uống, gọi món",
+     "words": 25,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_1_09",
+     "n": 9,
+     "zh": "你住在哪儿？",
+     "vi": "Nơi chốn và vị trí",
+     "words": 25,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_1_10",
+     "n": 10,
+     "zh": "我会说一点儿汉语",
+     "vi": "Khả năng và cho phép",
+     "words": 25,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_1_11",
+     "n": 11,
+     "zh": "今天天气怎么样？",
+     "vi": "Thời tiết và cảm nhận",
+     "words": 25,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_1_12",
+     "n": 12,
+     "zh": "我昨天去买东西了",
+     "vi": "Mua sắm và việc đã làm",
+     "words": 25,
+     "grammar": 2
+    }
+   ]
+  },
+  {
+   "level": "2",
+   "name": "HSK 2",
+   "band": "Sơ cấp",
+   "deck": "hsk30_2",
+   "words": 200,
+   "grammarTotal": 81,
+   "lessons": [
+    {
+     "key": "cur30_2_01",
+     "n": 1,
+     "zh": "我去过长城",
+     "vi": "Kinh nghiệm đã từng",
+     "words": 20,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_2_02",
+     "n": 2,
+     "zh": "她比我高一点儿",
+     "vi": "So sánh",
+     "words": 20,
+     "grammar": 3
+    },
+    {
+     "key": "cur30_2_03",
+     "n": 3,
+     "zh": "你汉语说得很好",
+     "vi": "Đánh giá mức độ",
+     "words": 20,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_2_04",
+     "n": 4,
+     "zh": "我是坐地铁来的",
+     "vi": "Nhấn mạnh cách thức",
+     "words": 20,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_2_05",
+     "n": 5,
+     "zh": "门开着呢",
+     "vi": "Trạng thái kéo dài",
+     "words": 20,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_2_06",
+     "n": 6,
+     "zh": "我听懂了",
+     "vi": "Kết quả của hành động",
+     "words": 20,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_2_07",
+     "n": 7,
+     "zh": "因为下雨，所以我没去",
+     "vi": "Nguyên nhân và kết quả",
+     "words": 20,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_2_08",
+     "n": 8,
+     "zh": "天气越来越热了",
+     "vi": "Sự thay đổi",
+     "words": 19,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_2_09",
+     "n": 9,
+     "zh": "我学了两年汉语",
+     "vi": "Thời lượng",
+     "words": 19,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_2_10",
+     "n": 10,
+     "zh": "我给你介绍一下",
+     "vi": "Đối tượng của hành động",
+     "words": 22,
+     "grammar": 2
+    }
+   ]
+  },
+  {
+   "level": "3",
+   "name": "HSK 3",
+   "band": "Sơ cấp",
+   "deck": "hsk30_3",
+   "words": 500,
+   "grammarTotal": 81,
+   "lessons": [
+    {
+     "key": "cur30_3_01",
+     "n": 1,
+     "zh": "请把门关上",
+     "vi": "Xử lý đồ vật với 把",
+     "words": 36,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_3_02",
+     "n": 2,
+     "zh": "我的自行车被借走了",
+     "vi": "Câu bị động",
+     "words": 36,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_3_03",
+     "n": 3,
+     "zh": "黑板上的字你看得清楚吗？",
+     "vi": "Có thể / không thể",
+     "words": 36,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_3_04",
+     "n": 4,
+     "zh": "虽然很累，但是很开心",
+     "vi": "Tương phản",
+     "words": 36,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_3_05",
+     "n": 5,
+     "zh": "只要努力，就一定能学好",
+     "vi": "Điều kiện",
+     "words": 36,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_3_06",
+     "n": 6,
+     "zh": "连小孩子都知道",
+     "vi": "Nhấn mạnh mức độ",
+     "words": 32,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_3_07",
+     "n": 7,
+     "zh": "除了游泳以外，我还喜欢跑步",
+     "vi": "Ngoài ra",
+     "words": 34,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_3_08",
+     "n": 8,
+     "zh": "他一回家就睡觉了",
+     "vi": "Hai việc nối tiếp",
+     "words": 35,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_3_09",
+     "n": 9,
+     "zh": "为了健康，我每天锻炼",
+     "vi": "Mục đích",
+     "words": 36,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_3_10",
+     "n": 10,
+     "zh": "墙上挂着一张地图",
+     "vi": "Miêu tả sự tồn tại",
+     "words": 36,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_3_11",
+     "n": 11,
+     "zh": "他不但会唱歌，而且唱得很好",
+     "vi": "Tăng tiến",
+     "words": 36,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_3_12",
+     "n": 12,
+     "zh": "这件事不是他做的",
+     "vi": "Phủ định và đính chính",
+     "words": 36,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_3_13",
+     "n": 13,
+     "zh": "看起来要下雨了",
+     "vi": "Phán đoán và cảm nhận",
+     "words": 36,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_3_14",
+     "n": 14,
+     "zh": "我是不是应该换个工作？",
+     "vi": "Xin lời khuyên",
+     "words": 39,
+     "grammar": 2
+    }
+   ]
+  },
+  {
+   "level": "4",
+   "name": "HSK 4",
+   "band": "Trung cấp",
+   "deck": "hsk30_4",
+   "words": 1000,
+   "grammarTotal": 76,
+   "lessons": [
+    {
+     "key": "cur30_4_01",
+     "n": 1,
+     "zh": "无论多忙，他都坚持运动",
+     "vi": "Bất kể điều kiện",
+     "words": 62,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_4_02",
+     "n": 2,
+     "zh": "即使失败了，也不要放弃",
+     "vi": "Giả định nhượng bộ",
+     "words": 63,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_4_03",
+     "n": 3,
+     "zh": "既然来了，就多住几天吧",
+     "vi": "Đã… thì…",
+     "words": 63,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_4_04",
+     "n": 4,
+     "zh": "只有多练习，才能说得流利",
+     "vi": "Điều kiện duy nhất",
+     "words": 63,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_4_05",
+     "n": 5,
+     "zh": "难道你不知道吗？",
+     "vi": "Hỏi vặn và ngạc nhiên",
+     "words": 60,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_4_06",
+     "n": 6,
+     "zh": "通过这次旅行，我了解了很多",
+     "vi": "Phương tiện và con đường",
+     "words": 63,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_4_07",
+     "n": 7,
+     "zh": "我宁可走路，也不坐这么挤的车",
+     "vi": "Lựa chọn và ưu tiên",
+     "words": 63,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_4_08",
+     "n": 8,
+     "zh": "这个问题究竟怎么解决？",
+     "vi": "Truy hỏi đến cùng",
+     "words": 63,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_4_09",
+     "n": 9,
+     "zh": "一旦养成习惯，就很难改变",
+     "vi": "Một khi…",
+     "words": 60,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_4_10",
+     "n": 10,
+     "zh": "这件事非你去不可",
+     "vi": "Bắt buộc phải",
+     "words": 62,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_4_11",
+     "n": 11,
+     "zh": "再难也要试一试",
+     "vi": "Dù… đến mấy",
+     "words": 63,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_4_12",
+     "n": 12,
+     "zh": "何况他还是个新人",
+     "vi": "Huống hồ",
+     "words": 62,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_4_13",
+     "n": 13,
+     "zh": "于是我们决定换一家饭店",
+     "vi": "Kể lại diễn biến",
+     "words": 62,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_4_14",
+     "n": 14,
+     "zh": "你千万别忘了带护照",
+     "vi": "Dặn dò và nhắc nhở",
+     "words": 62,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_4_15",
+     "n": 15,
+     "zh": "随着经济的发展，生活越来越方便",
+     "vi": "Thay đổi theo thời gian",
+     "words": 63,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_4_16",
+     "n": 16,
+     "zh": "这家公司是去年成立的",
+     "vi": "Giới thiệu doanh nghiệp",
+     "words": 66,
+     "grammar": 2
+    }
+   ]
+  },
+  {
+   "level": "5",
+   "name": "HSK 5",
+   "band": "Trung cấp",
+   "deck": "hsk30_5",
+   "words": 1600,
+   "grammarTotal": 71,
+   "lessons": [
+    {
+     "key": "cur30_5_01",
+     "n": 1,
+     "zh": "与其抱怨，不如行动",
+     "vi": "So sánh lựa chọn",
+     "words": 100,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_5_02",
+     "n": 2,
+     "zh": "哪怕只有一点儿希望，也要坚持",
+     "vi": "Nhượng bộ mạnh",
+     "words": 99,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_5_03",
+     "n": 3,
+     "zh": "之所以成功，是因为他从不放弃",
+     "vi": "Giải thích nguyên nhân",
+     "words": 100,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_5_04",
+     "n": 4,
+     "zh": "一方面要工作，另一方面要照顾家庭",
+     "vi": "Hai mặt của vấn đề",
+     "words": 100,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_5_05",
+     "n": 5,
+     "zh": "提前出发，以免迟到",
+     "vi": "Để tránh / để tiện",
+     "words": 100,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_5_06",
+     "n": 6,
+     "zh": "通过不断学习，从而提高能力",
+     "vi": "Từ đó dẫn đến",
+     "words": 100,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_5_07",
+     "n": 7,
+     "zh": "就这个问题而言，我有不同的看法",
+     "vi": "Bày tỏ quan điểm",
+     "words": 100,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_5_08",
+     "n": 8,
+     "zh": "要么现在说，要么永远别说",
+     "vi": "Một trong hai",
+     "words": 97,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_5_09",
+     "n": 9,
+     "zh": "我把他当作最好的朋友",
+     "vi": "Coi như, xem như",
+     "words": 100,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_5_10",
+     "n": 10,
+     "zh": "这是我所知道的情况",
+     "vi": "Văn viết trang trọng",
+     "words": 100,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_5_11",
+     "n": 11,
+     "zh": "鉴于天气原因，比赛推迟",
+     "vi": "Thông báo chính thức",
+     "words": 100,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_5_12",
+     "n": 12,
+     "zh": "说不定他已经到了",
+     "vi": "Phỏng đoán",
+     "words": 99,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_5_13",
+     "n": 13,
+     "zh": "他不但没生气，反而笑了",
+     "vi": "Ngược lại",
+     "words": 100,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_5_14",
+     "n": 14,
+     "zh": "他把房间收拾得干干净净",
+     "vi": "Miêu tả sinh động",
+     "words": 100,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_5_15",
+     "n": 15,
+     "zh": "看样子，他今天心情不错",
+     "vi": "Suy đoán từ biểu hiện",
+     "words": 100,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_5_16",
+     "n": 16,
+     "zh": "这部电影值得一看",
+     "vi": "Đánh giá và giới thiệu",
+     "words": 105,
+     "grammar": 2
+    }
+   ]
+  },
+  {
+   "level": "6",
+   "name": "HSK 6",
+   "band": "Trung cấp",
+   "deck": "hsk30_6",
+   "words": 1800,
+   "grammarTotal": 67,
+   "lessons": [
+    {
+     "key": "cur30_6_01",
+     "n": 1,
+     "zh": "他忙得以至于忘了吃饭",
+     "vi": "Hệ quả mức độ",
+     "words": 100,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_6_02",
+     "n": 2,
+     "zh": "倘若有机会，我一定去西藏",
+     "vi": "Giả định văn viết",
+     "words": 100,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_6_03",
+     "n": 3,
+     "zh": "况且时间也来不及了",
+     "vi": "Thêm lý do",
+     "words": 100,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_6_04",
+     "n": 4,
+     "zh": "听到这个消息，她不禁流下了眼泪",
+     "vi": "Phản ứng tự nhiên",
+     "words": 100,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_6_05",
+     "n": 5,
+     "zh": "请务必按时提交材料",
+     "vi": "Yêu cầu bắt buộc",
+     "words": 100,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_6_06",
+     "n": 6,
+     "zh": "与此同时，问题也越来越多",
+     "vi": "Liên kết đoạn văn",
+     "words": 100,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_6_07",
+     "n": 7,
+     "zh": "莫非你早就知道了？",
+     "vi": "Nghi vấn phỏng đoán",
+     "words": 100,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_6_08",
+     "n": 8,
+     "zh": "他为了实现梦想，不惜一切代价",
+     "vi": "Hy sinh vì mục tiêu",
+     "words": 100,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_6_09",
+     "n": 9,
+     "zh": "他一向很守时",
+     "vi": "Thói quen lâu nay",
+     "words": 100,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_6_10",
+     "n": 10,
+     "zh": "你不妨试试这个办法",
+     "vi": "Gợi ý nhẹ nhàng",
+     "words": 100,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_6_11",
+     "n": 11,
+     "zh": "幸亏你提醒了我",
+     "vi": "May mà",
+     "words": 99,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_6_12",
+     "n": 12,
+     "zh": "他不愧是有经验的医生",
+     "vi": "Khen ngợi xứng đáng",
+     "words": 100,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_6_13",
+     "n": 13,
+     "zh": "早点儿说，免得大家担心",
+     "vi": "Tránh phiền phức",
+     "words": 100,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_6_14",
+     "n": 14,
+     "zh": "由此可见，习惯决定命运",
+     "vi": "Lập luận và kết luận",
+     "words": 98,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_6_15",
+     "n": 15,
+     "zh": "这座古城犹如一幅画",
+     "vi": "So sánh tu từ",
+     "words": 100,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_6_16",
+     "n": 16,
+     "zh": "无从得知真相",
+     "vi": "Không có cách nào",
+     "words": 100,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_6_17",
+     "n": 17,
+     "zh": "何以见得？",
+     "vi": "Chất vấn lập luận",
+     "words": 100,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_6_18",
+     "n": 18,
+     "zh": "与其说是运气，不如说是实力",
+     "vi": "Đánh giá lại bản chất",
+     "words": 103,
+     "grammar": 2
+    }
+   ]
+  },
+  {
+   "level": "7",
+   "name": "HSK 7–9",
+   "band": "Cao cấp",
+   "deck": "hsk30_7",
+   "words": 5600,
+   "grammarTotal": 148,
+   "lessons": [
+    {
+     "key": "cur30_7_01",
+     "n": 1,
+     "zh": "为众人所知",
+     "vi": "Bị động văn viết",
+     "words": 280,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_7_02",
+     "n": 2,
+     "zh": "问题不在于钱，而在于人",
+     "vi": "Chỉ ra cốt lõi",
+     "words": 279,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_7_03",
+     "n": 3,
+     "zh": "尚且如此，何况我们",
+     "vi": "Suy luận tăng cấp",
+     "words": 280,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_7_04",
+     "n": 4,
+     "zh": "诚然，这种看法有一定道理",
+     "vi": "Thừa nhận rồi phản bác",
+     "words": 280,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_7_05",
+     "n": 5,
+     "zh": "殊不知，健康比财富更重要",
+     "vi": "Nào ngờ / nào biết",
+     "words": 278,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_7_06",
+     "n": 6,
+     "zh": "惟有坚持，才能看到希望",
+     "vi": "Điều kiện duy nhất (văn viết)",
+     "words": 280,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_7_07",
+     "n": 7,
+     "zh": "且不说价格，质量就有问题",
+     "vi": "Gác lại một ý",
+     "words": 279,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_7_08",
+     "n": 8,
+     "zh": "截至目前，已有三千人报名",
+     "vi": "Văn bản thông báo",
+     "words": 280,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_7_09",
+     "n": 9,
+     "zh": "归根结底，是教育的问题",
+     "vi": "Quy về gốc rễ",
+     "words": 278,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_7_10",
+     "n": 10,
+     "zh": "对此予以高度重视",
+     "vi": "Động từ hình thức trang trọng",
+     "words": 280,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_7_11",
+     "n": 11,
+     "zh": "有所改善，以期更好",
+     "vi": "Mục đích và mức độ",
+     "words": 279,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_7_12",
+     "n": 12,
+     "zh": "但凡有一点儿办法，我也不会麻烦你",
+     "vi": "Hễ mà có",
+     "words": 280,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_7_13",
+     "n": 13,
+     "zh": "这可谓一举两得",
+     "vi": "Đánh giá súc tích",
+     "words": 280,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_7_14",
+     "n": 14,
+     "zh": "从长远来看，利大于弊",
+     "vi": "Cân nhắc lợi hại",
+     "words": 278,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_7_15",
+     "n": 15,
+     "zh": "即便如此，我们也不能放松",
+     "vi": "Nhượng bộ trang trọng",
+     "words": 280,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_7_16",
+     "n": 16,
+     "zh": "就连专家也感到意外",
+     "vi": "Nhấn mạnh cực điểm",
+     "words": 280,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_7_17",
+     "n": 17,
+     "zh": "故而，我们必须改变",
+     "vi": "Hư từ văn ngôn",
+     "words": 280,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_7_18",
+     "n": 18,
+     "zh": "有鉴于此，特制定本办法",
+     "vi": "Văn bản quy phạm",
+     "words": 280,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_7_19",
+     "n": 19,
+     "zh": "与其说是巧合，毋宁说是必然",
+     "vi": "Lập luận tinh tế",
+     "words": 280,
+     "grammar": 2
+    },
+    {
+     "key": "cur30_7_20",
+     "n": 20,
+     "zh": "务求实效，切忌空谈",
+     "vi": "Yêu cầu và cấm kỵ",
+     "words": 289,
+     "grammar": 2
+    }
+   ]
+  }
+ ]
+}

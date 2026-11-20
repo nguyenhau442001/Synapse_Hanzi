@@ -1,0 +1,216 @@
+{
+ "name": "HSK 1",
+ "band": "Sơ cấp",
+ "grammarTotal": 48,
+ "lessons": [
+  {
+   "zh": "你好！", "vi": "Chào hỏi và tạm biệt", "topic": "Chào hỏi",
+   "grammar": [
+    {"t": "Đại từ nhân xưng", "tag": "一级 · 代词", "f": "我 / 你 / 您 / 他 / 她 + 们 (số nhiều)", "n": "您 là cách gọi lịch sự của 你. Thêm 们 để chỉ số nhiều: 我们, 你们, 他们.", "k": "们",
+     "ex": [["你们好！", "Chào các bạn!"], ["他们是老师。", "Họ là giáo viên."]]},
+    {"t": "Câu hỏi có/không với 吗", "tag": "一级 · 疑问句", "f": "Câu trần thuật + 吗？", "n": "Thêm 吗 vào cuối câu để biến câu trần thuật thành câu hỏi có/không.", "k": "吗",
+     "ex": [["你好吗？", "Bạn khỏe không?"], ["你是学生吗？", "Bạn là học sinh à?"]]}
+   ],
+   "dlg": [
+    ["王明", "你好！", "Xin chào!"],
+    ["阿兰", "你好！你好吗？", "Chào bạn! Bạn khỏe không?"],
+    ["王明", "我很好，谢谢。你呢？", "Mình rất khỏe, cảm ơn. Còn bạn?"],
+    ["阿兰", "我也很好。", "Mình cũng rất khỏe."],
+    ["王明", "老师好！", "Em chào thầy ạ!"],
+    ["李老师", "你们好！明天见。", "Chào các em! Mai gặp lại."],
+    ["阿兰", "老师再见！", "Em chào thầy ạ!"]
+   ]
+  },
+  {
+   "zh": "我叫王明", "vi": "Tên và quốc tịch", "topic": "Giới thiệu bản thân",
+   "grammar": [
+    {"t": "Câu chữ 是", "tag": "一级 · 句型 · 是字句", "f": "A + 是 + B · Phủ định: A + 不是 + B", "n": "是 nối chủ ngữ với danh từ chỉ danh tính, nghề nghiệp, quốc tịch. Phủ định luôn dùng 不是.", "k": "是",
+     "ex": [["我是越南人。", "Tôi là người Việt Nam."], ["他不是中国人。", "Anh ấy không phải người Trung Quốc."]]},
+    {"t": "Hỏi bằng 什么 và 哪", "tag": "一级 · 疑问代词", "f": "叫什么名字？ · 是哪国人？", "n": "Đại từ nghi vấn đứng đúng vị trí của thành phần được hỏi, không đảo trật tự câu.", "k": "什么",
+     "ex": [["你叫什么名字？", "Bạn tên là gì?"], ["你是哪国人？", "Bạn là người nước nào?"]]}
+   ],
+   "dlg": [
+    ["阿兰", "你好！你叫什么名字？", "Chào bạn! Bạn tên là gì?"],
+    ["大卫", "我叫大卫。你呢？", "Mình tên là David. Còn bạn?"],
+    ["阿兰", "我叫阿兰。我是越南人。你是哪国人？", "Mình tên là Lan. Mình là người Việt Nam. Bạn là người nước nào?"],
+    ["大卫", "我是美国人。他是谁？", "Mình là người Mỹ. Anh ấy là ai?"],
+    ["阿兰", "他叫王明，他是中国人。", "Anh ấy tên là Vương Minh, là người Trung Quốc."],
+    ["大卫", "认识你很高兴！", "Rất vui được làm quen với bạn!"]
+   ]
+  },
+  {
+   "zh": "这是我的朋友", "vi": "Giới thiệu người khác", "topic": "Bạn bè",
+   "grammar": [
+    {"t": "Đại từ chỉ thị 这 / 那", "tag": "一级 · 代词", "f": "这 (này) / 那 (kia) + 是 + …", "n": "这 chỉ vật gần, 那 chỉ vật xa. Có thể đứng trực tiếp làm chủ ngữ.", "k": "这",
+     "ex": [["这是我的书。", "Đây là sách của tôi."], ["那是谁？", "Kia là ai?"]]},
+    {"t": "Trợ từ sở hữu 的", "tag": "一级 · 助词", "f": "Danh từ / đại từ + 的 + danh từ", "n": "的 chỉ quan hệ sở hữu. Với người thân, bạn bè có thể bỏ 的: 我妈妈, 我朋友.", "k": "的",
+     "ex": [["这是老师的杯子。", "Đây là cốc của thầy giáo."], ["她是我的同学。", "Cô ấy là bạn học của tôi."]]}
+   ],
+   "dlg": [
+    ["王明", "阿兰，这是我的朋友，他叫大卫。", "Lan ơi, đây là bạn của mình, tên là David."],
+    ["阿兰", "你好，大卫！你也是学生吗？", "Chào David! Bạn cũng là học sinh à?"],
+    ["大卫", "是，我们都是北京大学的学生。", "Ừ, bọn mình đều là sinh viên Đại học Bắc Kinh."],
+    ["阿兰", "那个人是谁？", "Người kia là ai vậy?"],
+    ["王明", "那是我们的汉语老师，李老师。", "Đó là giáo viên tiếng Trung của bọn mình, thầy Lý."],
+    ["阿兰", "李老师好！", "Em chào thầy Lý ạ!"]
+   ]
+  },
+  {
+   "zh": "你今年多大？", "vi": "Số đếm và tuổi", "topic": "Con số",
+   "grammar": [
+    {"t": "Câu vị ngữ danh từ (tuổi, giá)", "tag": "一级 · 句型 · 名词谓语句", "f": "Chủ ngữ + số + 岁 / 块", "n": "Khi nói tuổi, ngày tháng, giá cả có thể bỏ 是. Phủ định phải thêm 不是.", "k": "岁",
+     "ex": [["我今年二十岁。", "Năm nay tôi hai mươi tuổi."], ["这个苹果三块。", "Quả táo này ba tệ."]]},
+    {"t": "Hỏi số với 几 và 多少", "tag": "一级 · 疑问代词", "f": "几 + lượng từ (số nhỏ) · 多少 (+ lượng từ) (số bất kỳ)", "n": "几 thường dùng khi đoán số nhỏ hơn 10. 多少 dùng cho mọi số, có thể bỏ lượng từ.", "k": "多少",
+     "ex": [["你的电话是多少？", "Số điện thoại của bạn là bao nhiêu?"], ["你女儿几岁了？", "Con gái anh mấy tuổi rồi?"]]}
+   ],
+   "dlg": [
+    ["大卫", "阿兰，你今年多大？", "Lan, năm nay bạn bao nhiêu tuổi?"],
+    ["阿兰", "我今年十九岁。你呢？", "Năm nay mình mười chín tuổi. Còn bạn?"],
+    ["大卫", "我二十一岁。李老师多大？", "Mình hai mươi mốt. Thầy Lý bao nhiêu tuổi?"],
+    ["阿兰", "我不知道。老师有一个女儿，她五岁。", "Mình không biết. Thầy có một con gái, bé năm tuổi."],
+    ["大卫", "你的电话是多少？", "Số điện thoại của bạn là bao nhiêu?"],
+    ["阿兰", "一三九，八六五四，二七零一。", "1-3-9, 8-6-5-4, 2-7-0-1."]
+   ]
+  },
+  {
+   "zh": "我家有四口人", "vi": "Gia đình và số lượng", "topic": "Gia đình",
+   "grammar": [
+    {"t": "Câu chữ 有 chỉ sở hữu", "tag": "一级 · 句型 · 有字句", "f": "A + 有 + (số + lượng từ) + danh từ · Phủ định: 没有", "n": "Phủ định của 有 luôn là 没有, không dùng 不有.", "k": "有",
+     "ex": [["我家有四口人。", "Nhà tôi có bốn người."], ["我没有哥哥。", "Tôi không có anh trai."]]},
+    {"t": "Lượng từ 个 / 口 / 本", "tag": "一级 · 量词", "f": "Số + lượng từ + danh từ", "n": "Giữa số và danh từ phải có lượng từ. 个 dùng chung nhất; 口 đếm người trong nhà; 本 đếm sách.", "k": "个",
+     "ex": [["我有两个姐姐。", "Tôi có hai chị gái."], ["桌子上有三本书。", "Trên bàn có ba quyển sách."]]}
+   ],
+   "dlg": [
+    ["王明", "你家有几口人？", "Nhà bạn có mấy người?"],
+    ["阿兰", "我家有四口人：爸爸、妈妈、哥哥和我。", "Nhà mình có bốn người: bố, mẹ, anh trai và mình."],
+    ["王明", "你哥哥做什么工作？", "Anh trai bạn làm nghề gì?"],
+    ["阿兰", "他是医生。你有哥哥吗？", "Anh ấy là bác sĩ. Bạn có anh trai không?"],
+    ["王明", "我没有哥哥，我有一个妹妹。", "Mình không có anh trai, mình có một em gái."],
+    ["阿兰", "你妹妹也是学生吗？", "Em gái bạn cũng là học sinh à?"],
+    ["王明", "对，她在中学学习。", "Đúng, em ấy học cấp hai."]
+   ]
+  },
+  {
+   "zh": "今天星期几？", "vi": "Ngày, tháng, thứ", "topic": "Thời gian",
+   "grammar": [
+    {"t": "Cách nói ngày tháng", "tag": "一级 · 时间表达", "f": "… 年 … 月 … 号 (日) 星期 …", "n": "Thứ tự từ lớn đến nhỏ: năm → tháng → ngày → thứ. Văn nói dùng 号, văn viết dùng 日.", "k": "号",
+     "ex": [["今天九月一号，星期一。", "Hôm nay là mùng 1 tháng 9, thứ Hai."], ["我的生日是十月八号。", "Sinh nhật tôi là ngày 8 tháng 10."]]},
+    {"t": "Trạng ngữ thời gian đứng trước động từ", "tag": "一级 · 句子成分", "f": "Chủ ngữ + thời gian + động từ  /  Thời gian + chủ ngữ + động từ", "n": "Từ chỉ thời gian đứng trước động từ, có thể đứng đầu câu — không đặt cuối câu như tiếng Việt.", "k": "明天",
+     "ex": [["我明天去学校。", "Ngày mai tôi đến trường."], ["星期六我们去看电影。", "Thứ Bảy chúng tôi đi xem phim."]]}
+   ],
+   "dlg": [
+    ["大卫", "今天几月几号？", "Hôm nay là ngày mấy tháng mấy?"],
+    ["阿兰", "今天十月七号。", "Hôm nay là ngày 7 tháng 10."],
+    ["大卫", "星期几？", "Thứ mấy?"],
+    ["阿兰", "星期五。明天是我的生日！", "Thứ Sáu. Ngày mai là sinh nhật mình!"],
+    ["大卫", "真的吗？明天你想做什么？", "Thật à? Ngày mai bạn muốn làm gì?"],
+    ["阿兰", "明天下午我和朋友去看电影。", "Chiều mai mình đi xem phim với bạn."],
+    ["大卫", "生日快乐！", "Chúc mừng sinh nhật!"]
+   ]
+  },
+  {
+   "zh": "现在几点？", "vi": "Giờ giấc và lịch hằng ngày", "topic": "Sinh hoạt",
+   "grammar": [
+    {"t": "Cách nói giờ", "tag": "一级 · 时间表达", "f": "… 点 … 分 · … 点半 · 差 … 分 … 点", "n": "两点 (hai giờ) không nói 二点. 半 = rưỡi.", "k": "点",
+     "ex": [["现在八点半。", "Bây giờ là tám giờ rưỡi."], ["我每天七点起床。", "Hằng ngày tôi dậy lúc bảy giờ."]]},
+    {"t": "Liên động: đi / đến làm gì", "tag": "一级 · 句型 · 连动句", "f": "去 / 来 + nơi chốn + động từ (+ tân ngữ)", "n": "Hai động từ cùng một chủ ngữ, động từ sau nêu mục đích của hành động trước.", "k": "去",
+     "ex": [["我去商店买东西。", "Tôi đến cửa hàng mua đồ."], ["他来中国学习汉语。", "Anh ấy đến Trung Quốc học tiếng Trung."]]}
+   ],
+   "dlg": [
+    ["王明", "大卫，现在几点？", "David, bây giờ mấy giờ rồi?"],
+    ["大卫", "差五分九点。", "Chín giờ kém năm."],
+    ["王明", "我们九点上课，快走吧！", "Chín giờ mình vào học, đi nhanh thôi!"],
+    ["大卫", "下午你去哪儿？", "Chiều nay bạn đi đâu?"],
+    ["王明", "我去医院看朋友。你呢？", "Mình đi bệnh viện thăm bạn. Còn bạn?"],
+    ["大卫", "我回家睡觉，昨天我十二点才睡。", "Mình về nhà ngủ, hôm qua mười hai giờ mình mới ngủ."]
+   ]
+  },
+  {
+   "zh": "我想喝茶", "vi": "Ăn uống, gọi món", "topic": "Ăn uống",
+   "grammar": [
+    {"t": "Động từ năng nguyện 想 / 要", "tag": "一级 · 能愿动词", "f": "想 / 要 + động từ", "n": "想 = muốn (mong muốn), 要 = muốn / cần (ý định chắc hơn). Phủ định thường dùng 不想.", "k": "想",
+     "ex": [["我想喝茶。", "Tôi muốn uống trà."], ["你要吃什么？", "Bạn muốn ăn gì?"]]},
+    {"t": "Câu hỏi lựa chọn với 还是", "tag": "一级 · 疑问句", "f": "A 还是 B？", "n": "还是 chỉ dùng trong câu hỏi lựa chọn; câu trả lời chọn một trong hai.", "k": "还是",
+     "ex": [["你喝茶还是喝水？", "Bạn uống trà hay uống nước?"], ["你吃米饭还是吃面条？", "Bạn ăn cơm hay ăn mì?"]]}
+   ],
+   "dlg": [
+    ["服务员", "你好！你们想吃什么？", "Xin chào! Các bạn muốn ăn gì?"],
+    ["阿兰", "我要一个米饭和一个鸡蛋汤。", "Cho tôi một bát cơm và một bát canh trứng."],
+    ["服务员", "你们喝茶还是喝水？", "Các bạn uống trà hay nước lọc?"],
+    ["大卫", "我想喝茶，她喝水。", "Tôi muốn uống trà, cô ấy uống nước."],
+    ["阿兰", "这个菜多少钱？", "Món này bao nhiêu tiền?"],
+    ["服务员", "二十八块。", "Hai mươi tám tệ."],
+    ["大卫", "好，谢谢！", "Được, cảm ơn!"]
+   ]
+  },
+  {
+   "zh": "你住在哪儿？", "vi": "Nơi chốn và vị trí", "topic": "Nơi ở",
+   "grammar": [
+    {"t": "Giới từ 在 chỉ nơi chốn", "tag": "一级 · 介词", "f": "Chủ ngữ + 在 + nơi chốn + động từ  /  động từ + 在 + nơi chốn", "n": "在 đứng trước động từ để chỉ nơi hành động diễn ra; với 住, 坐 có thể đặt sau động từ.", "k": "在",
+     "ex": [["我在学校吃饭。", "Tôi ăn cơm ở trường."], ["你住在哪儿？", "Bạn sống ở đâu?"]]},
+    {"t": "Phương vị từ 上 / 下 / 里 / 前 / 后", "tag": "一级 · 方位名词", "f": "Danh từ + 上 / 下 / 里 / 前面 / 后面", "n": "Muốn chỉ vị trí, đặt phương vị từ sau danh từ: 桌子上 (trên bàn), 房间里 (trong phòng).", "k": "里",
+     "ex": [["猫在椅子下面。", "Con mèo ở dưới ghế."], ["我的手机在包里。", "Điện thoại của tôi ở trong túi."]]}
+   ],
+   "dlg": [
+    ["阿兰", "王明，你住在哪儿？", "Vương Minh, bạn sống ở đâu?"],
+    ["王明", "我住在学校后面，离这儿很近。", "Mình sống phía sau trường, cách đây rất gần."],
+    ["阿兰", "你家附近有商店吗？", "Gần nhà bạn có cửa hàng không?"],
+    ["王明", "有，商店在我家前面。", "Có, cửa hàng ở trước nhà mình."],
+    ["阿兰", "我的书呢？", "Sách của mình đâu nhỉ?"],
+    ["王明", "在桌子上，电脑旁边。", "Ở trên bàn, cạnh máy tính."]
+   ]
+  },
+  {
+   "zh": "我会说一点儿汉语", "vi": "Khả năng và cho phép", "topic": "Học tập",
+   "grammar": [
+    {"t": "会 / 能 / 可以", "tag": "一级 · 能愿动词", "f": "会 (kỹ năng học được) · 能 (có khả năng) · 可以 (được phép)", "n": "会 nói về kỹ năng học mà có; 能 về năng lực hoặc điều kiện; 可以 hỏi xin phép.", "k": "会",
+     "ex": [["我会说汉语。", "Tôi biết nói tiếng Trung."], ["我可以坐这儿吗？", "Tôi ngồi đây được không?"]]},
+    {"t": "Phó từ 不 và 没", "tag": "一级 · 副词", "f": "不 + động từ (hiện tại, tương lai, thói quen) · 没 + động từ (quá khứ, chưa xảy ra)", "n": "不 phủ định ý muốn và thói quen; 没 phủ định việc đã xảy ra. 有 chỉ đi với 没.", "k": "不",
+     "ex": [["我不喝咖啡。", "Tôi không uống cà phê."], ["他昨天没来。", "Hôm qua anh ấy không đến."]]}
+   ],
+   "dlg": [
+    ["大卫", "阿兰，你会说汉语吗？", "Lan, bạn biết nói tiếng Trung không?"],
+    ["阿兰", "我会说一点儿，可是不会写汉字。", "Mình nói được một chút, nhưng không biết viết chữ Hán."],
+    ["大卫", "汉字很难，我也写得不好。", "Chữ Hán khó lắm, mình cũng viết không tốt."],
+    ["阿兰", "我可以用你的电脑吗？", "Mình dùng máy tính của bạn được không?"],
+    ["大卫", "可以。你想做什么？", "Được. Bạn muốn làm gì?"],
+    ["阿兰", "我想听中文歌。昨天我没听。", "Mình muốn nghe bài hát tiếng Trung. Hôm qua mình chưa nghe."]
+   ]
+  },
+  {
+   "zh": "今天天气怎么样？", "vi": "Thời tiết và cảm nhận", "topic": "Thời tiết",
+   "grammar": [
+    {"t": "Câu vị ngữ tính từ với 很 / 太…了", "tag": "一级 · 句型 · 形容词谓语句", "f": "Chủ ngữ + 很 / 不 / 太 + tính từ (+ 了)", "n": "Tính từ làm vị ngữ không cần 是; thường thêm 很. 太…了 diễn tả mức độ cao, cảm thán.", "k": "太",
+     "ex": [["今天很热。", "Hôm nay rất nóng."], ["这个菜太好吃了！", "Món này ngon quá!"]]},
+    {"t": "Hỏi tình trạng với 怎么样", "tag": "一级 · 疑问代词", "f": "… 怎么样？", "n": "怎么样 hỏi về tình trạng, ý kiến hoặc đề nghị: …được không?", "k": "怎么样",
+     "ex": [["明天天气怎么样？", "Thời tiết ngày mai thế nào?"], ["我们去喝茶，怎么样？", "Chúng ta đi uống trà nhé, thế nào?"]]}
+   ],
+   "dlg": [
+    ["阿兰", "今天天气怎么样？", "Thời tiết hôm nay thế nào?"],
+    ["王明", "今天很冷，外面下雨了。", "Hôm nay lạnh lắm, bên ngoài mưa rồi."],
+    ["阿兰", "明天呢？", "Còn ngày mai?"],
+    ["王明", "明天是晴天，不太冷。", "Ngày mai trời nắng, không lạnh lắm."],
+    ["阿兰", "太好了！明天我们去公园，怎么样？", "Tuyệt quá! Mai mình đi công viên, được không?"],
+    ["王明", "好啊！", "Được thôi!"]
+   ]
+  },
+  {
+   "zh": "我昨天去买东西了", "vi": "Mua sắm và việc đã làm", "topic": "Mua sắm",
+   "grammar": [
+    {"t": "Trợ từ 了 (hoàn thành)", "tag": "一级 · 助词 · 了", "f": "Động từ + 了 + (số lượng) tân ngữ  /  … 了。", "n": "了 báo hành động đã hoàn thành. Phủ định dùng 没 (+ động từ), bỏ 了.", "k": "了",
+     "ex": [["我买了一件衣服。", "Tôi đã mua một bộ quần áo."], ["他去商店了。", "Anh ấy đi cửa hàng rồi."]]},
+    {"t": "Tiến hành: (正)在 … 呢", "tag": "一级 · 句型 · 进行", "f": "Chủ ngữ + (正)在 + động từ + (呢)", "n": "Diễn tả hành động đang diễn ra. Có thể dùng một mình 呢 ở cuối câu.", "k": "在",
+     "ex": [["妈妈在做饭呢。", "Mẹ đang nấu cơm."], ["你在看什么？", "Bạn đang xem gì vậy?"]]}
+   ],
+   "dlg": [
+    ["大卫", "你在做什么呢？", "Bạn đang làm gì đấy?"],
+    ["阿兰", "我在看我昨天买的衣服。", "Mình đang xem bộ quần áo hôm qua mình mua."],
+    ["大卫", "你买了几件？", "Bạn mua mấy bộ?"],
+    ["阿兰", "我买了三件，都很便宜。", "Mình mua ba bộ, đều rất rẻ."],
+    ["大卫", "你在哪儿买的？", "Bạn mua ở đâu thế?"],
+    ["阿兰", "在学校前面的商店。你去了吗？", "Ở cửa hàng trước cổng trường. Bạn đến đó chưa?"],
+    ["大卫", "我没去，明天我也想去看看。", "Mình chưa đến, mai mình cũng muốn đi xem."]
+   ]
+  }
+ ]
+}

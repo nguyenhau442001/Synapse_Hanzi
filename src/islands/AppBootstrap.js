@@ -108,6 +108,7 @@ export function initAppEventBindings() {
     else if (window.setPrimaryTab) window.setPrimaryTab(tab, opts);
   };
   onId('primaryTabVocab', 'click', () => handlePrimaryTab('vocab'));
+  onId('primaryTabCurriculum', 'click', () => handlePrimaryTab('curriculum'));
   onId('primaryNavReading', 'click', () => handlePrimaryTab('gradedReading'));
   onId('primaryTabReview', 'click', () => handlePrimaryTab('review'));
   onId('primaryTabListening', 'click', () => handlePrimaryTab('listening'));
@@ -128,6 +129,7 @@ export function initAppEventBindings() {
 
   // Mobile bottom navigation items & dialogs
   onId('mobNavVocab', 'click', () => handlePrimaryTab('vocab'));
+  onId('mobNavCurriculum', 'click', () => handlePrimaryTab('curriculum'));
   onId('mobNavReading', 'click', () => handlePrimaryTab('gradedReading'));
   onId('mobNavReview', 'click', () => handlePrimaryTab('review'));
   onId('mobNavNotebook', 'click', () => {

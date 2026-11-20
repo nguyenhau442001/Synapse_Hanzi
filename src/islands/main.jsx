@@ -38,6 +38,7 @@ import { mountCardInteractions } from './CardInteractions';
 import { mountWordIllustrations } from './WordIllustrations';
 import { mountHsk30Grid } from './Hsk30Grid';
 import { mountTopicGrid } from './TopicGrid';
+import { mountCurriculum } from './Curriculum';
 import { mountBackupSync } from './BackupSync';
 import { mountThemeManager } from './ThemeManager';
 import { mountSpeechAudio } from './SpeechAudio';
@@ -84,6 +85,7 @@ mountCardInteractions();
 mountWordIllustrations();
 mountHsk30Grid();
 mountTopicGrid();
+mountCurriculum(); // after AppState: registers lesson decks in LEVELS before the router restores a deep link
 mountBackupSync();
 mountThemeManager();
 mountSpeechAudio();

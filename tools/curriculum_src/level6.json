@@ -1,0 +1,277 @@
+{
+ "name": "HSK 6",
+ "band": "Trung cấp",
+ "grammarTotal": 67,
+ "lessons": [
+  {
+   "zh": "他忙得以至于忘了吃饭", "vi": "Hệ quả mức độ", "topic": "Áp lực công việc",
+   "grammar": [
+    {"t": "以至于 / 以致", "tag": "六级 · 连词", "f": "Nguyên nhân / mức độ，以至于 + kết quả · …，以致 + kết quả xấu", "n": "以至于 nêu kết quả do mức độ cao gây ra; 以致 thường dẫn tới kết quả không tốt.", "k": "以至于",
+     "ex": [["他工作太投入，以至于忘了吃饭。", "Anh ấy quá chú tâm vào công việc đến nỗi quên ăn."], ["他平时不注意休息，以致病倒了。", "Anh ấy thường ngày không chú ý nghỉ ngơi nên đổ bệnh."]]},
+    {"t": "Thậm chí đến: 乃至", "tag": "六级 · 连词", "f": "A、B，乃至 + C (phạm vi rộng nhất)", "n": "Mở rộng phạm vi liệt kê, văn viết.", "k": "乃至",
+     "ex": [["这项技术影响了整个行业，乃至整个社会。", "Công nghệ này ảnh hưởng cả ngành, thậm chí cả xã hội."], ["他的作品在国内乃至世界都很有名。", "Tác phẩm của ông nổi tiếng trong nước, thậm chí trên thế giới."]]}
+   ],
+   "dlg": [
+    ["阿兰", "听说小林最近住院了？", "Nghe nói dạo này Tiểu Lâm nhập viện?"],
+    ["王明", "是啊，项目太紧，他连续加班一个月，以致身体出了问题。", "Đúng vậy, dự án gấp quá, cậu ấy tăng ca liên tục một tháng nên sức khỏe gặp vấn đề."],
+    ["阿兰", "工作固然重要，可健康才是一切的基础。", "Công việc tất nhiên quan trọng, nhưng sức khỏe mới là nền tảng của mọi thứ."],
+    ["王明", "对，这关系到个人，乃至整个家庭。", "Đúng, việc này liên quan đến bản thân, thậm chí cả gia đình."]
+   ]
+  },
+  {
+   "zh": "倘若有机会，我一定去西藏", "vi": "Giả định văn viết", "topic": "Ước mơ",
+   "grammar": [
+    {"t": "倘若 / 假如 / 若", "tag": "六级 · 连词 · 假设", "f": "倘若 / 假如 / 若 + giả định，(就 / 便) + kết quả", "n": "Tương đương 如果 nhưng trang trọng hơn; 若 ngắn gọn, hay dùng trong văn viết.", "k": "倘若",
+     "ex": [["倘若有机会，我一定去西藏看看。", "Nếu có cơ hội, tôi nhất định đến Tây Tạng xem."], ["若有问题，请及时联系我们。", "Nếu có vấn đề, xin liên hệ chúng tôi kịp thời."]]},
+    {"t": "Không ngờ: 不料", "tag": "六级 · 连词", "f": "Dự định / tình huống ban đầu，不料 + diễn biến bất ngờ", "n": "Nêu sự việc diễn ra ngoài dự liệu.", "k": "不料",
+     "ex": [["我们本想去爬山，不料下起了大雨。", "Chúng tôi định đi leo núi, không ngờ trời đổ mưa lớn."], ["他以为考试很容易，不料题目这么难。", "Anh ấy tưởng thi dễ, không ngờ đề khó thế."]]}
+   ],
+   "dlg": [
+    ["大卫", "你最想去的地方是哪儿？", "Nơi bạn muốn đến nhất là đâu?"],
+    ["阿兰", "西藏。倘若有机会，我想在那儿住一个月。", "Tây Tạng. Nếu có cơ hội, mình muốn sống ở đó một tháng."],
+    ["大卫", "我去年去过，本来很期待，不料一到就有高原反应。", "Năm ngoái mình đi rồi, vốn rất mong chờ, không ngờ vừa đến đã bị say độ cao."],
+    ["阿兰", "若是我去，一定提前做好准备。", "Nếu mình đi, nhất định sẽ chuẩn bị kỹ trước."]
+   ]
+  },
+  {
+   "zh": "况且时间也来不及了", "vi": "Thêm lý do", "topic": "Từ chối khéo",
+   "grammar": [
+    {"t": "Hơn nữa: 况且 / 再说", "tag": "六级 · 连词", "f": "Lý do 1，况且 / 再说 + lý do 2", "n": "Bổ sung thêm lý do để củng cố lập luận.", "k": "况且",
+     "ex": [["这件事太复杂，况且时间也来不及了。", "Việc này quá phức tạp, huống chi thời gian cũng không kịp."], ["外面太冷，再说你还感冒着呢。", "Bên ngoài lạnh quá, hơn nữa bạn còn đang cảm."]]},
+    {"t": "Có phần hơi quá: 未免", "tag": "六级 · 副词", "f": "未免 + (太 / 有点儿) + tính từ", "n": "Đánh giá nhẹ nhàng rằng điều gì đó hơi quá mức.", "k": "未免",
+     "ex": [["你这样说未免太过分了。", "Bạn nói vậy e là hơi quá đáng."], ["一个人做这么多工作，未免太辛苦了。", "Một người làm nhiều việc vậy thì có phần quá vất vả."]]}
+   ],
+   "dlg": [
+    ["张经理", "这个周末你能加班完成新方案吗？", "Cuối tuần này cậu tăng ca hoàn thành phương án mới được không?"],
+    ["小林", "一个周末做完整个方案，未免太赶了。", "Một cuối tuần làm xong cả phương án thì e là quá gấp."],
+    ["张经理", "客户催得很急。", "Khách hàng giục gấp lắm."],
+    ["小林", "我理解。况且数据还没收齐，不如我们跟客户再商量一下时间？", "Tôi hiểu. Hơn nữa số liệu còn chưa đủ, hay chúng ta bàn lại thời gian với khách?"]
+   ]
+  },
+  {
+   "zh": "听到这个消息，她不禁流下了眼泪", "vi": "Phản ứng tự nhiên", "topic": "Cảm xúc",
+   "grammar": [
+    {"t": "Không kìm được: 不禁 / 不由得", "tag": "六级 · 副词", "f": "不禁 / 不由得 + động từ", "n": "Phản ứng tự nhiên khó kìm lại, văn viết.", "k": "不禁",
+     "ex": [["听到这个消息，她不禁流下了眼泪。", "Nghe tin này, cô ấy bất giác rơi nước mắt."], ["看到家乡的照片，他不由得想起了童年。", "Nhìn ảnh quê nhà, anh ấy bất giác nhớ về tuổi thơ."]]},
+    {"t": "Lúc thì… lúc thì…: 时而…时而…", "tag": "六级 · 关联词", "f": "时而 + A，时而 + B", "n": "Hai trạng thái thay đổi luân phiên.", "k": "时而",
+     "ex": [["山里的天气时而晴，时而雨。", "Thời tiết trong núi lúc nắng lúc mưa."], ["他时而看书，时而望着窗外。", "Anh ấy lúc đọc sách, lúc nhìn ra cửa sổ."]]}
+   ],
+   "dlg": [
+    ["阿兰", "昨天的毕业典礼怎么样？", "Lễ tốt nghiệp hôm qua thế nào?"],
+    ["大卫", "很感人。校长讲话的时候，很多同学不禁哭了。", "Rất cảm động. Lúc hiệu trưởng phát biểu, nhiều bạn không kìm được mà khóc."],
+    ["阿兰", "你呢？", "Còn bạn?"],
+    ["大卫", "我心情很复杂，时而高兴，时而舍不得离开。", "Tâm trạng mình phức tạp lắm, lúc thì vui, lúc thì không nỡ rời đi."]
+   ]
+  },
+  {
+   "zh": "请务必按时提交材料", "vi": "Yêu cầu bắt buộc", "topic": "Thủ tục",
+   "grammar": [
+    {"t": "Nhất thiết phải: 务必", "tag": "六级 · 副词", "f": "务必 + động từ", "n": "Yêu cầu bắt buộc, giọng trang trọng trong thông báo.", "k": "务必",
+     "ex": [["请务必按时提交材料。", "Vui lòng nhất thiết nộp hồ sơ đúng hạn."], ["出发前务必检查证件。", "Trước khi xuất phát nhất định phải kiểm tra giấy tờ."]]},
+    {"t": "Tất yếu sẽ: 势必", "tag": "六级 · 副词", "f": "势必 + động từ / kết quả", "n": "Theo xu thế thì chắc chắn sẽ xảy ra.", "k": "势必",
+     "ex": [["材料不全，势必影响审批。", "Hồ sơ không đủ tất yếu sẽ ảnh hưởng việc xét duyệt."], ["人口增加势必带来新的问题。", "Dân số tăng tất sẽ kéo theo vấn đề mới."]]}
+   ],
+   "dlg": [
+    ["工作人员", "申请奖学金的同学请务必在月底前提交材料。", "Các bạn xin học bổng nhất thiết nộp hồ sơ trước cuối tháng."],
+    ["阿兰", "推荐信晚几天交可以吗？", "Thư giới thiệu nộp muộn vài ngày được không ạ?"],
+    ["工作人员", "恐怕不行，材料不全势必会影响评审结果。", "E là không được, hồ sơ thiếu tất sẽ ảnh hưởng kết quả xét duyệt."],
+    ["阿兰", "明白了，我今天就去找老师。", "Em hiểu rồi, hôm nay em đi gặp thầy luôn."]
+   ]
+  },
+  {
+   "zh": "与此同时，问题也越来越多", "vi": "Liên kết đoạn văn", "topic": "Đô thị hóa",
+   "grammar": [
+    {"t": "Liên từ liên kết đoạn: 与此同时 / 此外 / 总而言之", "tag": "六级 · 篇章连接", "f": "与此同时 (đồng thời) · 此外 (ngoài ra) · 总而言之 (tóm lại)", "n": "Dùng ở đầu câu để nối ý giữa các câu, đoạn trong bài viết.", "k": "与此同时",
+     "ex": [["城市发展很快，与此同时，交通问题也越来越多。", "Thành phố phát triển nhanh, đồng thời vấn đề giao thông cũng ngày càng nhiều."], ["此外，我们还需要考虑成本。", "Ngoài ra, chúng ta còn cần tính đến chi phí."]]},
+    {"t": "Nói cách khác: 换句话说 / 也就是说", "tag": "六级 · 插入语", "f": "…，换句话说，+ diễn đạt lại", "n": "Diễn giải lại ý vừa nêu cho rõ hơn.", "k": "换句话说",
+     "ex": [["他没有回复，换句话说，他不同意。", "Anh ấy không trả lời, nói cách khác là không đồng ý."], ["机会只给有准备的人，也就是说，要早做准备。", "Cơ hội chỉ dành cho người có chuẩn bị, tức là phải chuẩn bị sớm."]]}
+   ],
+   "dlg": [
+    ["陈教授", "近二十年来，城市人口增长了一倍。与此同时，住房和交通压力也明显加大。", "Hai mươi năm qua dân số đô thị tăng gấp đôi. Đồng thời, áp lực nhà ở và giao thông cũng tăng rõ rệt."],
+    ["阿兰", "换句话说，城市的发展速度超过了管理能力？", "Nói cách khác, tốc độ phát triển đô thị đã vượt quá năng lực quản lý?"],
+    ["陈教授", "可以这么说。此外，环境问题也不能忽视。", "Có thể nói vậy. Ngoài ra, vấn đề môi trường cũng không thể xem nhẹ."],
+    ["阿兰", "总而言之，城市规划需要更长远的眼光。", "Tóm lại, quy hoạch đô thị cần tầm nhìn xa hơn."]
+   ]
+  },
+  {
+   "zh": "莫非你早就知道了？", "vi": "Nghi vấn phỏng đoán", "topic": "Bí mật",
+   "grammar": [
+    {"t": "Lẽ nào: 莫非", "tag": "六级 · 副词", "f": "莫非 + phỏng đoán (+ 吗 / 不成)？", "n": "Đưa ra phỏng đoán kèm ngạc nhiên, mang sắc thái văn viết.", "k": "莫非",
+     "ex": [["莫非你早就知道了？", "Lẽ nào bạn đã biết từ sớm?"], ["他今天没来，莫非生病了？", "Hôm nay anh ấy không đến, lẽ nào bị ốm?"]]},
+    {"t": "Chẳng phải là: 岂不是", "tag": "六级 · 句型 · 反问句", "f": "(如果…)，岂不是 + kết quả？", "n": "Câu phản vấn khẳng định kết quả hiển nhiên.", "k": "岂不是",
+     "ex": [["这样做岂不是浪费时间？", "Làm thế chẳng phải lãng phí thời gian sao?"], ["你不去，岂不是让大家失望？", "Bạn không đi chẳng phải làm mọi người thất vọng sao?"]]}
+   ],
+   "dlg": [
+    ["小林", "生日快乐！这个蛋糕是大家一起给你准备的。", "Chúc mừng sinh nhật! Chiếc bánh này mọi người cùng chuẩn bị cho bạn."],
+    ["阿兰", "我一点儿也没想到……莫非这几天你们都在偷偷准备？", "Mình không ngờ chút nào… Lẽ nào mấy hôm nay mọi người lén chuẩn bị?"],
+    ["小林", "当然！告诉你的话，岂不是就没有惊喜了？", "Tất nhiên! Nói cho bạn biết thì chẳng phải hết bất ngờ sao?"],
+    ["阿兰", "谢谢你们，我太感动了。", "Cảm ơn mọi người, mình cảm động quá."]
+   ]
+  },
+  {
+   "zh": "他为了实现梦想，不惜一切代价", "vi": "Hy sinh vì mục tiêu", "topic": "Ước mơ",
+   "grammar": [
+    {"t": "Không tiếc: 不惜", "tag": "六级 · 动词", "f": "不惜 + cái giá / hành động", "n": "Sẵn sàng trả giá lớn để đạt mục đích.", "k": "不惜",
+     "ex": [["他为了实现梦想，不惜一切代价。", "Vì thực hiện ước mơ, anh ấy bất chấp mọi giá."], ["公司不惜重金引进人才。", "Công ty không tiếc tiền thu hút nhân tài."]]},
+    {"t": "Thà: 宁愿", "tag": "六级 · 副词", "f": "宁愿 + A，也不 / 也要 + B", "n": "Biểu thị lựa chọn sau khi cân nhắc thiệt hơn; gần với 宁可.", "k": "宁愿",
+     "ex": [["我宁愿自己辛苦一点儿，也不想麻烦别人。", "Tôi thà mình vất vả một chút còn hơn làm phiền người khác."], ["她宁愿少睡觉，也要把书看完。", "Cô ấy thà ngủ ít cũng phải đọc xong cuốn sách."]]}
+   ],
+   "dlg": [
+    ["记者", "听说您辞去了大公司的工作，回乡办农场？", "Nghe nói ông bỏ công việc ở công ty lớn về quê mở nông trại?"],
+    ["张经理", "是的。我宁愿收入少一些，也想做自己真正喜欢的事。", "Đúng vậy. Tôi thà thu nhập ít hơn cũng muốn làm điều mình thật sự yêu thích."],
+    ["记者", "家人支持您吗？", "Gia đình có ủng hộ ông không?"],
+    ["张经理", "一开始反对，后来看到我不惜一切地投入，也就理解了。", "Lúc đầu phản đối, sau thấy tôi dốc toàn lực thì cũng hiểu."]
+   ]
+  },
+  {
+   "zh": "他一向很守时", "vi": "Thói quen lâu nay", "topic": "Tác phong",
+   "grammar": [
+    {"t": "Xưa nay: 一向 / 向来 / 历来", "tag": "六级 · 副词", "f": "一向 / 向来 / 历来 + động từ / tính từ", "n": "Nói về đặc điểm, thói quen trước sau như một.", "k": "一向",
+     "ex": [["他一向很守时。", "Anh ấy xưa nay luôn đúng giờ."], ["中国历来重视教育。", "Trung Quốc từ trước đến nay luôn coi trọng giáo dục."]]},
+    {"t": "Vừa đúng: 恰恰 / 恰好", "tag": "六级 · 副词", "f": "恰恰 + 相反 / 是 … · 恰好 + động từ", "n": "恰恰 nhấn mạnh đúng là (thường trái kỳ vọng); 恰好 = vừa khéo, trùng hợp.", "k": "恰恰",
+     "ex": [["事实恰恰相反。", "Sự thật lại hoàn toàn ngược lại."], ["我到的时候，他恰好出门了。", "Lúc tôi đến, anh ấy vừa khéo đi ra ngoài."]]}
+   ],
+   "dlg": [
+    ["阿兰", "王明今天迟到了半个小时，真少见。", "Hôm nay Vương Minh đến muộn nửa tiếng, thật hiếm thấy."],
+    ["大卫", "是啊，他一向很守时。", "Đúng vậy, cậu ấy xưa nay luôn đúng giờ."],
+    ["阿兰", "我还以为他睡过头了，事实恰恰相反——他早上帮一位老人去了医院。", "Mình còn tưởng cậu ấy ngủ quên, sự thật lại ngược lại — sáng nay cậu ấy đưa một cụ già đi viện."],
+    ["大卫", "这才是我们认识的王明。", "Đó mới là Vương Minh mà chúng ta biết."]
+   ]
+  },
+  {
+   "zh": "你不妨试试这个办法", "vi": "Gợi ý nhẹ nhàng", "topic": "Học tập",
+   "grammar": [
+    {"t": "Chẳng ngại gì: 不妨 / 何不", "tag": "六级 · 副词", "f": "不妨 + động từ · 何不 + động từ (+ 呢)？", "n": "Đưa ra gợi ý một cách lịch sự, khéo léo.", "k": "不妨",
+     "ex": [["你不妨试试这个办法。", "Bạn cứ thử cách này xem."], ["既然有空，何不出去走走？", "Đã rảnh thì sao không ra ngoài đi dạo?"]]},
+    {"t": "Đủ để: 足以", "tag": "六级 · 动词", "f": "A + 足以 + động từ / kết quả", "n": "Đủ để dẫn đến kết quả nào đó.", "k": "足以",
+     "ex": [["这些证据足以说明问题。", "Những bằng chứng này đủ để nói rõ vấn đề."], ["他的经验足以胜任这份工作。", "Kinh nghiệm của anh ấy đủ để đảm nhận công việc này."]]}
+   ],
+   "dlg": [
+    ["大卫", "我背单词总是背了就忘。", "Mình học từ vựng cứ học xong là quên."],
+    ["李老师", "你不妨试试间隔复习，每隔几天复习一次。", "Em cứ thử ôn tập ngắt quãng, cách vài ngày ôn một lần."],
+    ["大卫", "这个方法有用吗？", "Cách này có hiệu quả không ạ?"],
+    ["李老师", "很多研究的结果足以证明它的效果。何不从今天开始？", "Kết quả nhiều nghiên cứu đủ chứng minh hiệu quả của nó. Sao không bắt đầu từ hôm nay?"]
+   ]
+  },
+  {
+   "zh": "幸亏你提醒了我", "vi": "May mà", "topic": "Sự cố",
+   "grammar": [
+    {"t": "May mà: 幸亏 / 好在", "tag": "六级 · 副词", "f": "幸亏 / 好在 + điều thuận lợi，(才 / 否则 …)", "n": "Nhờ có điều kiện thuận lợi mà tránh được hậu quả xấu.", "k": "幸亏",
+     "ex": [["幸亏你提醒了我，不然我就忘了。", "May mà bạn nhắc tôi, không thì tôi quên rồi."], ["路上堵车，好在我们出发得早。", "Trên đường tắc xe, may mà chúng tôi xuất phát sớm."]]},
+    {"t": "Lỡ như: 万一", "tag": "六级 · 连词", "f": "万一 + tình huống xấu (ít khả năng)，…", "n": "Giả định một khả năng nhỏ nhưng không mong muốn.", "k": "万一",
+     "ex": [["带上伞吧，万一下雨呢。", "Mang ô theo đi, lỡ mưa thì sao."], ["万一有什么事，马上给我打电话。", "Lỡ có chuyện gì, gọi tôi ngay."]]}
+   ],
+   "dlg": [
+    ["阿兰", "幸亏你提醒我带护照，不然今天就上不了飞机了。", "May mà bạn nhắc mình mang hộ chiếu, không thì hôm nay không lên được máy bay."],
+    ["小林", "出国旅行最重要的就是证件。", "Đi du lịch nước ngoài quan trọng nhất là giấy tờ."],
+    ["阿兰", "我把护照拍了照片存在手机里，万一丢了也有备份。", "Mình chụp ảnh hộ chiếu lưu trong điện thoại, lỡ mất cũng có bản sao."],
+    ["小林", "这个习惯很好。", "Thói quen này rất tốt."]
+   ]
+  },
+  {
+   "zh": "他不愧是有经验的医生", "vi": "Khen ngợi xứng đáng", "topic": "Nghề nghiệp",
+   "grammar": [
+    {"t": "Xứng danh: 不愧是 / 不愧为", "tag": "六级 · 动词", "f": "A + 不愧是 + danh hiệu / thân phận", "n": "Khen ngợi rằng ai đó xứng đáng với danh hiệu của mình.", "k": "不愧是",
+     "ex": [["他不愧是有经验的医生。", "Ông ấy quả không hổ là bác sĩ giàu kinh nghiệm."], ["这家店不愧是百年老店，味道真好。", "Tiệm này đúng là tiệm trăm năm, vị ngon thật."]]},
+    {"t": "Dường như: 似乎 / 仿佛", "tag": "六级 · 副词", "f": "似乎 + nhận định · 仿佛 + 一样 / 似的 (so sánh)", "n": "似乎 = có vẻ như; 仿佛 = như thể, dùng nhiều khi so sánh hình ảnh.", "k": "似乎",
+     "ex": [["他似乎有点儿不高兴。", "Anh ấy dường như hơi không vui."], ["站在山顶，仿佛到了另一个世界。", "Đứng trên đỉnh núi như thể đến một thế giới khác."]]}
+   ],
+   "dlg": [
+    ["王明", "我爸爸的手术很成功，陈医生只用了两个小时。", "Ca phẫu thuật của bố mình rất thành công, bác sĩ Trần chỉ mất hai tiếng."],
+    ["阿兰", "不愧是这方面最有经验的医生。", "Quả không hổ là bác sĩ giàu kinh nghiệm nhất lĩnh vực này."],
+    ["王明", "手术前我爸似乎很紧张，医生跟他聊了很久。", "Trước phẫu thuật bố mình có vẻ rất căng thẳng, bác sĩ đã trò chuyện với ông rất lâu."],
+    ["阿兰", "好医生不仅医术高，还懂得关心病人。", "Bác sĩ giỏi không chỉ y thuật cao mà còn biết quan tâm bệnh nhân."]
+   ]
+  },
+  {
+   "zh": "早点儿说，免得大家担心", "vi": "Tránh phiền phức", "topic": "Giao tiếp",
+   "grammar": [
+    {"t": "Để khỏi: 免得 / 省得", "tag": "六级 · 连词", "f": "Hành động，免得 / 省得 + điều không mong muốn", "n": "Khẩu ngữ của 以免; đứng ở vế sau.", "k": "免得",
+     "ex": [["你早点儿说，免得大家担心。", "Bạn nói sớm đi, để mọi người khỏi lo."], ["多穿点儿衣服，省得感冒。", "Mặc thêm áo vào cho khỏi cảm."]]},
+    {"t": "Chẳng hề: 何尝", "tag": "六级 · 副词 · 反问", "f": "何尝 + 不 / 没 + động từ", "n": "Câu phản vấn: đâu phải không…, thật ra là có.", "k": "何尝",
+     "ex": [["我何尝不想去，只是太忙了。", "Tôi đâu phải không muốn đi, chỉ là bận quá."], ["他何尝没努力过？", "Anh ấy đâu phải chưa từng cố gắng?"]]}
+   ],
+   "dlg": [
+    ["阿兰", "你周末不来聚会，最好提前在群里说一声，免得大家等你。", "Cuối tuần bạn không đến buổi tụ tập thì nên báo trước trong nhóm, để mọi người khỏi chờ."],
+    ["大卫", "我何尝不想去，可是那天要搬家。", "Mình đâu phải không muốn đi, nhưng hôm đó phải chuyển nhà."],
+    ["阿兰", "要不要我们来帮忙？", "Có cần bọn mình đến giúp không?"],
+    ["大卫", "那太好了，省得我请搬家公司了！", "Thế thì tốt quá, đỡ phải thuê công ty chuyển nhà!"]
+   ]
+  },
+  {
+   "zh": "由此可见，习惯决定命运", "vi": "Lập luận và kết luận", "topic": "Nghị luận",
+   "grammar": [
+    {"t": "Từ đó có thể thấy: 由此可见", "tag": "六级 · 篇章连接", "f": "Dẫn chứng。由此可见，+ kết luận", "n": "Rút ra kết luận từ dẫn chứng phía trước; dùng trong văn nghị luận.", "k": "由此可见",
+     "ex": [["坚持读书的人更容易成功，由此可见，习惯非常重要。", "Người kiên trì đọc sách dễ thành công hơn, từ đó thấy thói quen rất quan trọng."], ["由此可见，这个方法是有效的。", "Từ đó có thể thấy phương pháp này hiệu quả."]]},
+    {"t": "Cố nhiên… nhưng: 固然…但…", "tag": "六级 · 复句 · 转折", "f": "A 固然 + đúng / tốt，但 / 可是 + B", "n": "Thừa nhận A rồi chuyển sang ý chính B.", "k": "固然",
+     "ex": [["天赋固然重要，但努力更重要。", "Năng khiếu cố nhiên quan trọng, nhưng nỗ lực còn quan trọng hơn."], ["这个方案固然好，可是成本太高。", "Phương án này dĩ nhiên tốt nhưng chi phí quá cao."]]}
+   ],
+   "dlg": [
+    ["陈教授", "研究发现，每天阅读半小时的学生，写作成绩普遍更好。", "Nghiên cứu cho thấy học sinh đọc nửa tiếng mỗi ngày thường có điểm viết tốt hơn."],
+    ["阿兰", "由此可见，好习惯的作用很大。", "Từ đó có thể thấy thói quen tốt có tác dụng rất lớn."],
+    ["陈教授", "没错。天赋固然重要，但长期的积累往往更关键。", "Đúng vậy. Năng khiếu dĩ nhiên quan trọng, nhưng tích lũy lâu dài thường mới là then chốt."],
+    ["阿兰", "我也要养成每天读书的习惯。", "Em cũng phải tập thói quen đọc sách mỗi ngày."]
+   ]
+  },
+  {
+   "zh": "这座古城犹如一幅画", "vi": "So sánh tu từ", "topic": "Danh lam",
+   "grammar": [
+    {"t": "Tựa như: 犹如 / 好比 / 如同", "tag": "六级 · 动词 · 比喻", "f": "A + 犹如 / 如同 / 好比 + B (hình ảnh so sánh)", "n": "Dùng trong miêu tả văn chương để so sánh.", "k": "犹如",
+     "ex": [["这座古城犹如一幅美丽的画。", "Cổ thành này như một bức tranh tuyệt đẹp."], ["时间如同流水，一去不复返。", "Thời gian như nước chảy, một đi không trở lại."]]},
+    {"t": "Bổ ngữ chỉ mức độ cao: …极了 / …得很 / …得要命", "tag": "六级 · 补语 · 程度补语", "f": "Tính từ + 极了 / 得很 / 得要命 / 得不得了", "n": "Diễn tả mức độ rất cao; 得要命 mang sắc thái khẩu ngữ.", "k": "极了",
+     "ex": [["这里的风景美极了。", "Phong cảnh ở đây đẹp tuyệt."], ["今天热得要命。", "Hôm nay nóng kinh khủng."]]}
+   ],
+   "dlg": [
+    ["阿兰", "丽江古城真美，石板路、小河、老房子，犹如一幅水墨画。", "Cổ trấn Lệ Giang đẹp thật, đường đá, dòng sông nhỏ, nhà cổ, như một bức tranh thủy mặc."],
+    ["王明", "晚上的灯光更是漂亮极了。", "Ánh đèn buổi tối lại càng đẹp tuyệt."],
+    ["阿兰", "就是游客多得要命。", "Chỉ là du khách đông kinh khủng."],
+    ["王明", "明天早点儿起，清晨的古城安静得很。", "Mai dậy sớm một chút, cổ thành lúc sáng sớm yên tĩnh lắm."]
+   ]
+  },
+  {
+   "zh": "无从得知真相", "vi": "Không có cách nào", "topic": "Lịch sử",
+   "grammar": [
+    {"t": "Không có cách: 无从 / 无法", "tag": "六级 · 副词", "f": "无从 + động từ (không có căn cứ, đường nào để…) · 无法 + động từ", "n": "无从 nhấn mạnh không có manh mối, đầu mối để làm.", "k": "无从",
+     "ex": [["资料太少，我们无从得知真相。", "Tư liệu quá ít, chúng ta không cách nào biết được sự thật."], ["他的心情我无法形容。", "Tâm trạng của anh ấy tôi không thể diễn tả."]]},
+    {"t": "Cuối cùng: 终于 / 最终 / 终究", "tag": "六级 · 副词", "f": "终于 (rốt cuộc đã, sau chờ đợi) · 最终 (kết cục) · 终究 (rốt cuộc vẫn)", "n": "终究 nhấn mạnh bản chất không đổi: 真相终究会出来.", "k": "终究",
+     "ex": [["谎言终究会被发现。", "Lời nói dối rốt cuộc sẽ bị phát hiện."], ["经过多年研究，他们最终找到了答案。", "Sau nhiều năm nghiên cứu, cuối cùng họ đã tìm ra câu trả lời."]]}
+   ],
+   "dlg": [
+    ["大卫", "这座古墓到底是谁的？", "Ngôi mộ cổ này rốt cuộc là của ai?"],
+    ["陈教授", "目前没有文字记录，我们无从确定。", "Hiện chưa có ghi chép văn tự, chúng tôi không có cách nào xác định."],
+    ["大卫", "以后能知道吗？", "Sau này có biết được không ạ?"],
+    ["陈教授", "随着技术进步，真相终究会被发现的。", "Cùng với tiến bộ kỹ thuật, sự thật rốt cuộc sẽ được phát hiện."]
+   ]
+  },
+  {
+   "zh": "何以见得？", "vi": "Chất vấn lập luận", "topic": "Tranh luận",
+   "grammar": [
+    {"t": "Vì sao / dựa vào đâu: 何以", "tag": "六级 · 代词 · 文言", "f": "何以 + động từ？(vì sao / bằng cách nào)", "n": "Đại từ nghi vấn cổ, dùng trong văn viết hoặc thành ngữ: 何以见得 (dựa vào đâu mà thấy vậy).", "k": "何以",
+     "ex": [["你说他会赢，何以见得？", "Bạn nói anh ấy sẽ thắng, dựa vào đâu?"], ["不努力，何以成功？", "Không nỗ lực thì lấy gì thành công?"]]},
+    {"t": "Tuyệt đối không: 绝不 / 决不", "tag": "六级 · 副词", "f": "绝不 / 决不 + động từ", "n": "Khẳng định dứt khoát sẽ không làm.", "k": "绝不",
+     "ex": [["我绝不放弃。", "Tôi tuyệt đối không bỏ cuộc."], ["这种错误决不能再犯。", "Sai lầm kiểu này quyết không được tái phạm."]]}
+   ],
+   "dlg": [
+    ["小林", "我觉得这次辩论我们一定能赢。", "Mình thấy cuộc tranh biện lần này chúng ta nhất định thắng."],
+    ["阿兰", "何以见得？对方准备得也很充分。", "Dựa vào đâu? Đối phương cũng chuẩn bị rất kỹ."],
+    ["小林", "我们的数据更新、更全面。", "Số liệu của chúng ta mới hơn, đầy đủ hơn."],
+    ["阿兰", "好，那我们绝不能轻视对手，再练习一遍吧。", "Được, vậy chúng ta tuyệt đối không được coi thường đối thủ, luyện thêm một lượt nữa."]
+   ]
+  },
+  {
+   "zh": "与其说是运气，不如说是实力", "vi": "Đánh giá lại bản chất", "topic": "Thể thao",
+   "grammar": [
+    {"t": "与其说…不如说…", "tag": "六级 · 复句 · 选择", "f": "与其说 A，不如说 B", "n": "Điều chỉnh nhận định: nói là A chẳng bằng nói là B (chính xác hơn).", "k": "与其说",
+     "ex": [["他的成功与其说是运气，不如说是实力。", "Thành công của anh ấy, nói là may mắn chẳng bằng nói là thực lực."], ["这与其说是一本小说，不如说是一部历史。", "Đây nói là tiểu thuyết chẳng bằng nói là một bộ sử."]]},
+    {"t": "Nhất định / khẳng định: 必然 / 必定", "tag": "六级 · 副词 · 形容词", "f": "必然 + kết quả · (là) 必然的", "n": "Nhấn mạnh tính tất yếu, chắc chắn.", "k": "必然",
+     "ex": [["长期努力必然会有回报。", "Nỗ lực lâu dài tất nhiên sẽ được đền đáp."], ["这是发展的必然结果。", "Đây là kết quả tất yếu của sự phát triển."]]}
+   ],
+   "dlg": [
+    ["记者", "有人说你们这次夺冠靠的是运气。", "Có người nói các bạn vô địch lần này là nhờ may mắn."],
+    ["大卫", "与其说是运气，不如说是我们一年的训练。", "Nói là may mắn chẳng bằng nói là kết quả một năm luyện tập của chúng tôi."],
+    ["记者", "接下来有什么目标？", "Mục tiêu tiếp theo là gì?"],
+    ["大卫", "继续努力。只要坚持，必然会有更好的成绩。", "Tiếp tục cố gắng. Chỉ cần kiên trì, tất sẽ có thành tích tốt hơn."]
+   ]
+  }
+ ]
+}

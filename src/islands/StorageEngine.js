@@ -294,10 +294,17 @@ export function countNewReviewsToday() {
   return reviewed.size;
 }
 
+// Regular decks are always reviewable; curriculum lesson decks only once studied.
+export function isReviewableLevel(config, level) {
+  if (!config) return false;
+  if (config.available) return true;
+  return Boolean(config.isLesson) && Boolean(readSrsRecord(level));
+}
+
 export function countDueCardsAcrossLevels(now) {
   const currentTime = (now || new Date()).getTime();
   const levelsObj = typeof LEVELS !== 'undefined' ? LEVELS : (typeof window !== 'undefined' ? window.LEVELS : {});
-  return Object.keys(levelsObj).filter(level => levelsObj[level] && levelsObj[level].available).reduce((count, level) => {
+  return Object.keys(levelsObj).filter(level => isReviewableLevel(levelsObj[level], level)).reduce((count, level) => {
     const record = readSrsRecord(level);
     if (record) {
       return count + Object.values(record.cards).filter(card => SRS.isDue(card, currentTime)).length;
@@ -331,6 +338,7 @@ export function mountStorageEngine() {
       reviewSrsCard,
       countNewReviewsToday,
       countDueCardsAcrossLevels,
+      isReviewableLevel,
     });
   }
 }
