@@ -149,6 +149,7 @@ export function renderRadicalCard(animate) {
 export function radicalFlip() {
   if (radicalFilteredOrder.length === 0) return;
   backShown = !backShown;
+  if (backShown && typeof window.recordStudyTouch === 'function') window.recordStudyTouch();
   rerender();
 }
 
@@ -169,6 +170,7 @@ function markRadical(status) {
   const itemIndex = radicalFilteredOrder[radicalIdx % radicalFilteredOrder.length];
   radicalProgress[window.radicalProgressKey(radicalWords[itemIndex])] = status;
   window.saveRadicalProgress();
+  if (typeof window.recordStudyTouch === 'function') window.recordStudyTouch();
   advanceAfterRadicalMark(itemIndex);
 }
 

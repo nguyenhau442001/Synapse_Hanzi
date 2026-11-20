@@ -349,6 +349,7 @@ export function flip() {
   m.classList.toggle('show');
   if (ex) ex.classList.toggle('show', willShow);
   if (card) card.classList.toggle('is-flipped', willShow);
+  if (willShow && typeof window.recordStudyTouch === 'function') window.recordStudyTouch();
   const soundBtn = document.getElementById('soundBtn');
   if (soundBtn) soundBtn.classList.toggle('show', willShow);
   if (willShow && !showPinyin) {

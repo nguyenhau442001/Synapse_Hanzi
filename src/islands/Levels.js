@@ -78,12 +78,15 @@ export function daySeconds(dayEntry) {
   return dayEntry && typeof dayEntry.seconds === 'number' ? dayEntry.seconds : 0;
 }
 
-// A day counts as studied once at least one card was graded, or the app was
-// actively open for STUDIED_DAY_MIN_SECONDS (reading, listening, manga, ...).
+// A day counts as studied once at least one card was graded or flipped, or the
+// app was actively open for STUDIED_DAY_MIN_SECONDS (reading, listening, manga, ...).
 export const STUDIED_DAY_MIN_SECONDS = 5 * 60;
 
 export function isStudiedDay(dayEntry) {
-  return dayWordCount(dayEntry) > 0 || daySeconds(dayEntry) >= STUDIED_DAY_MIN_SECONDS;
+  if (!dayEntry) return false;
+  return dayEntry.active === true
+    || dayWordCount(dayEntry) > 0
+    || daySeconds(dayEntry) >= STUDIED_DAY_MIN_SECONDS;
 }
 
 export function formatStudyDuration(totalMinutes) {
@@ -414,7 +417,7 @@ export function recordDailyStudy(wordId, level = (typeof currentLevel !== 'undef
   const dayEntry = activity.days[today] || { words: [], seconds: 0 };
   const learnedWords = new Set(dayEntry.words);
   learnedWords.add(level + ':' + String(wordId));
-  activity.days[today] = { words: Array.from(learnedWords), seconds: dayEntry.seconds };
+  activity.days[today] = { ...dayEntry, words: Array.from(learnedWords), seconds: dayEntry.seconds || 0 };
 
   try { localStorage.setItem(STUDY_ACTIVITY_KEY, JSON.stringify(activity)); } catch (e) {}
   renderLearningDashboard();
@@ -426,9 +429,22 @@ export function recordStudySeconds(deltaSeconds) {
   const activity = readStudyActivity();
   const today = localDateKey(new Date());
   const dayEntry = activity.days[today] || { words: [], seconds: 0 };
-  activity.days[today] = { words: dayEntry.words, seconds: dayEntry.seconds + deltaSeconds };
+  activity.days[today] = { ...dayEntry, words: dayEntry.words || [], seconds: (dayEntry.seconds || 0) + deltaSeconds };
 
   try { localStorage.setItem(STUDY_ACTIVITY_KEY, JSON.stringify(activity)); } catch (e) {}
+}
+
+// Marks today as studied (flipping a card, radical flashcards) without adding
+// to the daily word goal. Only writes and re-renders on the first touch of the day.
+export function recordStudyTouch() {
+  const activity = readStudyActivity();
+  const today = localDateKey(new Date());
+  const dayEntry = activity.days[today] || { words: [], seconds: 0 };
+  if (dayEntry.active === true) return;
+  activity.days[today] = { ...dayEntry, words: dayEntry.words || [], seconds: dayEntry.seconds || 0, active: true };
+
+  try { localStorage.setItem(STUDY_ACTIVITY_KEY, JSON.stringify(activity)); } catch (e) {}
+  renderLearningDashboard();
 }
 
 export function startStudyHeartbeat() {
@@ -1085,6 +1101,7 @@ export function mountLevels() {
   window.recordDailyStudy = recordDailyStudy;
   window.STUDY_HEARTBEAT_SECONDS = STUDY_HEARTBEAT_SECONDS;
   window.recordStudySeconds = recordStudySeconds;
+  window.recordStudyTouch = recordStudyTouch;
   window.startStudyHeartbeat = startStudyHeartbeat;
   window.learningProgressSummary = learningProgressSummary;
   window.prefetchSuggestedLevel = prefetchSuggestedLevel;
