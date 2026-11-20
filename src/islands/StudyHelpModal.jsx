@@ -11,7 +11,7 @@ const activeTab = signal('shortcuts');
 
 const TABS = [
   { key: 'shortcuts', icon: '⌨️', label: 'Phím tắt' },
-  { key: 'method', icon: '🎯', label: 'Phương pháp SRS' },
+  { key: 'method', icon: '🎯', label: 'Ôn ngắt quãng' },
   { key: 'features', icon: '✨', label: 'Tính năng' },
   { key: 'faq', icon: '❓', label: 'Câu hỏi (FAQ)' },
   { key: 'about', icon: 'ℹ️', label: 'Giới thiệu' }
@@ -50,7 +50,7 @@ const SHORTCUT_GROUPS = [
 const linkStyle = 'color:var(--brand-primary);text-decoration:underline;';
 
 const METHOD_CARDS = [
-  ['🧠', 'Thuật toán Lặp lại ngắt quãng (SRS)', '汉字思维 (Hanzi Mind) áp dụng thuật toán giãn cách thông minh (FSRS & Ebbinghaus). Các từ bạn đánh giá "Chưa nhớ" sẽ xuất hiện lại ngay, còn các từ "Đã thuộc" sẽ được tự động dời lịch ôn sang 3 ngày, 7 ngày hoặc 1 tháng tới để đưa vào vùng trí nhớ dài hạn.'],
+  ['🧠', 'Thuật toán lặp lại ngắt quãng', '汉字思维 (Hanzi Mind) áp dụng thuật toán giãn cách thông minh (FSRS & Ebbinghaus). Các từ bạn đánh giá "Chưa nhớ" sẽ xuất hiện lại ngay, còn các từ "Đã thuộc" sẽ được tự động dời lịch ôn sang 3 ngày, 7 ngày hoặc 1 tháng tới để đưa vào vùng trí nhớ dài hạn.'],
   ['🧩', 'Ghi nhớ chữ Hán qua Chiết tự & Bộ thủ', 'Thay vì nhớ vẹt từng nét bút vô nghĩa, hệ thống giúp bạn bóc tách từng chữ thành 214 bộ thủ biểu ý và thanh phù biểu âm. Nhờ đó, bạn sẽ hiểu được gốc rễ chữ Hán và đoán nghĩa từ mới dễ dàng hơn.'],
   ['🎨', 'Học đa giác quan qua Ngữ cảnh & Hình ảnh', 'Mỗi từ vựng được liên kết với tranh minh họa trực quan, câu ví dụ đời thường có phiên âm pinyin và dịch nghĩa ngữ pháp chi tiết. Não bộ tiếp nhận hình ảnh và âm thanh song song giúp tăng 300% hiệu suất ghi nhớ.']
 ];
@@ -63,14 +63,14 @@ const FEATURE_CARDS = [
 ];
 
 const FAQ_ITEMS = [
-  ['Dữ liệu và tiến trình học của tôi có bị mất không?', 'Toàn bộ số từ đã học, chuỗi ngày streak và dữ liệu lịch ôn SRS đều được tự động lưu cục bộ trên trình duyệt thiết bị của bạn. Bạn có thể sử dụng ứng dụng an toàn mà không cần tạo tài khoản.'],
+  ['Dữ liệu và tiến trình học của tôi có bị mất không?', 'Toàn bộ số từ đã học, chuỗi ngày streak và dữ liệu lịch ôn đều được tự động lưu cục bộ trên trình duyệt thiết bị của bạn. Bạn có thể sử dụng ứng dụng an toàn mà không cần tạo tài khoản.'],
   ['Làm sao để dùng ứng dụng khi không có mạng (Offline)?', <>汉字思维 (Hanzi Mind) được thiết kế chuẩn PWA (Progressive Web App). Trên trình duyệt Chrome, Safari hoặc Edge, bạn hãy nhấn nút <strong>"Thêm vào Màn hình chính"</strong> hoặc <strong>"Cài đặt ứng dụng"</strong> để học ngoại tuyến mọi lúc mọi nơi.</>],
   ['Sự khác biệt giữa HSK 2.0 và HSK 3.0 là gì?', 'HSK 2.0 gồm 6 cấp độ truyền thống (phù hợp ôn thi hiện tại). HSK 3.0 là khung tiêu chuẩn mới mở rộng đến cấp 9 với khối lượng từ vựng hiện đại hơn. Bạn có thể chuyển đổi linh hoạt tại bộ chọn phiên bản ở trang chủ.'],
   ['Làm cách nào để đổi giao diện Sáng / Tối?', 'Nhấn vào biểu tượng mặt trăng 🌙 / mặt trời ☀️ ở góc trên bên phải thanh tiêu đề (hoặc trong thanh công cụ khi đang lật thẻ) để chuyển đổi nhanh theo nhu cầu mắt nhìn.']
 ];
 
 const ABOUT_CARDS = [
-  ['⚡', 'Synapse Hanzi', 'Nền tảng học và ghi nhớ chữ Hán thông minh, kết hợp thuật toán lặp lại ngắt quãng (FSRS/SRS), chiết tự bộ thủ, luyện nghe phân cấp và bài đọc tương tác.'],
+  ['⚡', 'Synapse Hanzi', 'Nền tảng học và ghi nhớ chữ Hán thông minh, kết hợp thuật toán lặp lại ngắt quãng (FSRS), chiết tự bộ thủ, luyện nghe phân cấp và bài đọc tương tác.'],
   ['👨‍💻', 'Tác giả & Đóng góp', <>Phát triển bởi <strong>haunguyenngoc442001</strong>.<br />
     • Mã nguồn: <a href="https://github.com/nguyenhau442001/synapse-hanzi/" target="_blank" rel="noopener noreferrer" style={linkStyle}>GitHub Repository</a><br />
     • Liên hệ: <a href="https://www.facebook.com/haunguyenngoc442001/" target="_blank" rel="noopener noreferrer" style={linkStyle}>Facebook cá nhân</a></>]

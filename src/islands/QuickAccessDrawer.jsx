@@ -180,7 +180,7 @@ function UrgentPane() {
     <div id="quickDrawerUrgentPane" class="quick-drawer-pane" hidden={drawerTab.value !== 'urgent'}>
       <div class="quick-pane-intro">
         <span class="quick-pane-title">Từ vựng hay nhầm lẫn</span>{' '}
-        <span class="quick-pane-subtitle">Dựa trên thuật toán SRS</span>
+        <span class="quick-pane-subtitle">Dựa trên lịch ôn ngắt quãng</span>
       </div>{' '}
       <ul class="quick-word-list" id="quickUrgentWordsList">
         {(items || []).map((item, i) => {

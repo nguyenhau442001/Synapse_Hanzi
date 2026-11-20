@@ -604,10 +604,10 @@ function TokenPopover({ token, added }) {
   const isAboveLevel = Boolean(token.hsk && token.hsk > lvlNum);
   const isAlreadyInSrs = srsStatus === 'mastered' || srsStatus === 'learning';
   let displayStatus = srsStatus !== 'none' ? srsStatus : 'new';
-  let statusLabel = srsStatus === 'mastered' ? '✓ Đã thuộc' : (srsStatus === 'learning' ? '⚡ Đang ôn (SRS)' : (isAboveLevel ? '⭐ Vượt cấp' : '✨ Từ mới'));
+  let statusLabel = srsStatus === 'mastered' ? '✓ Đã thuộc' : (srsStatus === 'learning' ? '⚡ Đang ôn' : (isAboveLevel ? '⭐ Vượt cấp' : '✨ Từ mới'));
   if (added) {
     displayStatus = 'learning';
-    statusLabel = '⚡ Đang ôn (SRS)';
+    statusLabel = '⚡ Đang ôn';
   }
   const hanviet = token.hanviet || (typeof window.getWordHanViet === 'function' ? window.getWordHanViet(token.text) : '');
   const meaning = token.meaning_vi || (hanviet ? `Âm Hán-Việt: ${hanviet}` : 'Chữ Hán trong bài đọc');
@@ -640,7 +640,7 @@ function TokenPopover({ token, added }) {
         ) : null}
       </div>{' '}
       <button type="button" class={btnDone ? 'popover-action-btn added' : 'popover-action-btn '} id="popoverAddSrsBtn" onClick={triggerAddSrs} disabled={btnDone}>
-        {added ? '✓ Đã thêm vào SRS' : (isAlreadyInSrs ? '✓ Đã có trong SRS' : '+ Thêm vào hàng đợi SRS')}
+        {added ? '✓ Đã thêm vào lịch ôn' : (isAlreadyInSrs ? '✓ Đã có trong lịch ôn' : '+ Thêm vào lịch ôn')}
       </button>
     </>
   );
@@ -1117,7 +1117,7 @@ function Token({ token, sidx, tidx, lvlNum }) {
     '\n      ',
     <span class={`graded-token token-${status !== 'none' ? status : 'new'} ${isOverLevel ? 'token-overlevel' : ''}`}
       data-sidx={sidx} data-tidx={tidx} data-word-id={token.word_id || ''}
-      onClick={(e) => handleTokenClick(e, sidx, tidx)} title="Bấm để xem nghĩa & thêm vào SRS">
+      onClick={(e) => handleTokenClick(e, sidx, tidx)} title="Bấm để xem nghĩa & thêm vào lịch ôn">
       {'\n        '}
       <ruby>
         {'\n          '}<rt class="token-pinyin">{token.pinyin || ''}</rt>{'\n          '}<rb>{token.text}</rb>{'\n        '}
@@ -1248,7 +1248,7 @@ const readerPanelOpen = signal(false);
 const srsTick = signal(0); // bumped after bulk SRS adds so word counts re-render
 
 const PINYIN_MODES = [['all', 'Pinyin', 'Hiện pinyin cho mọi từ'], ['new', 'Từ mới', 'Chỉ hiện pinyin cho từ mới và từ vượt cấp'], ['off', 'Tắt', 'Ẩn pinyin']];
-const LEGEND_ITEMS = [['new', '新', 'Từ mới'], ['learning', '学', 'Đang học (SRS)'], ['overlevel', '难', 'Vượt cấp'], ['mastered', '会', 'Đã thuộc']];
+const LEGEND_ITEMS = [['new', '新', 'Từ mới'], ['learning', '学', 'Đang học'], ['overlevel', '难', 'Vượt cấp'], ['mastered', '会', 'Đã thuộc']];
 
 // Unique vocabulary words of a story, split by SRS status and level.
 function storyWordStats(story) {
@@ -1456,7 +1456,7 @@ function CompletionCard({ story }) {
         {freshKey.length > 0 || addedCount !== null ? (
           <button type="button" class="graded-completion-btn secondary" disabled={addedCount !== null}
             onClick={() => setAddedCount(addStoryKeyWordsToSrs(story))}>
-            {addedCount !== null ? `✓ Đã thêm ${addedCount} từ vào SRS` : `Thêm ${freshKey.length} từ trọng tâm vào SRS`}
+            {addedCount !== null ? `✓ Đã thêm ${addedCount} từ vào lịch ôn` : `Thêm ${freshKey.length} từ trọng tâm vào lịch ôn`}
           </button>
         ) : null}
         <button type="button" class={`graded-completion-btn ${isRead ? 'active' : ''}`} onClick={toggleCurrentStoryRead}>
