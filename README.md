@@ -2,7 +2,7 @@
 
 > **Think in Characters. Master Chinese.**  
 > Trạm học từ vựng chữ Hán qua tư duy bản chất, liên kết ngữ cảnh, đa giác quan và 100% Offline (PWA).  
-> Kết hợp lặp lại ngắt quãng **FSRS**, tranh minh họa ngữ cảnh, **bài đọc phân cấp HSK 1–9**, **đọc truyện tranh Đô-rê-mon tương tác**, luyện nghe đề thi HSK 4 thật, mô phỏng nét bút thuận và tra cứu âm Hán - Việt.
+> Kết hợp lặp lại ngắt quãng **FSRS**, tranh minh họa ngữ cảnh, **bài đọc phân cấp HSK 1–9**, **đọc truyện tranh Pepper&Carrot tương tác (39 tập)**, luyện nghe đề thi HSK 4 thật, mô phỏng nét bút thuận và tra cứu âm Hán - Việt.
 
 ---
 
@@ -33,7 +33,7 @@ Thanh điều hướng chính gồm 3 tab và một menu **Công cụ**:
 | Khu vực | Nội dung |
 | :--- | :--- |
 | **📖 Từ vựng** | Chọn chuẩn **HSK 2.0 / HSK 3.0**, chọn cấp độ, học flashcard, xem tổng quan & đường cong ghi nhớ |
-| **📚 Đọc** | Bài đọc phân cấp HSK 1–9, tủ sách *Vạn vật thú vị* và **truyện tranh Đô-rê-mon** |
+| **📚 Đọc** | Bài đọc phân cấp HSK 1–9, tủ sách *Vạn vật thú vị* và **truyện tranh Pepper&Carrot** (CC BY 4.0) |
 | **⚡ Ôn nhanh** | Kiểm tra nhanh 5 mạng, đếm ngược 20 giây, xen kẽ gõ pinyin và trắc nghiệm |
 | **🧰 Công cụ** | Luyện nghe HSK4 · Đọc hiểu HSK4 · Xếp câu HSK4 · Điền từ · Đuổi hình bắt chữ · Bộ thủ · Tra cứu 214 bộ thủ · Hướng dẫn & phím tắt |
 
@@ -79,7 +79,7 @@ Ngăn trượt bên cạnh thẻ mô phỏng từng nét bút thuận bằng ani
 ### 4. 📚 Bài đọc phân cấp & Truyện tranh
 - **535 bài đọc** có pinyin đầy đủ: 50 bài giáo trình cho mỗi cấp **HSK 1–9** và **85 chương** bộ sách *Vạn vật thú vị (万物有意思)* có tranh minh họa gốc.
 - Trang tổng hợp gọn với dải **"Đọc tiếp"**, lọc kết hợp theo cấp độ và bộ sách, chế độ **Zen** khi đọc.
-- **Truyện tranh Đô-rê-mon (哆啦A梦):** đọc theo từng bong bóng thoại, di chuột/chạm để tra nghĩa từng từ, bật/tắt bản dịch, chuyển **giản thể / phồn thể**, bật/tắt pinyin, huy hiệu độ phủ HSK, gắn sao từ vào flashcard. Bố cục 65/35 trên máy tính và bottom sheet trên điện thoại.
+- **Truyện tranh Pepper&Carrot (胡椒和胡萝卜), 39 tập tiếng Trung giản thể:** đọc theo từng bong bóng thoại, di chuột/chạm để tra nghĩa từng từ, bật/tắt bản dịch, chuyển **giản thể / phồn thể**, bật/tắt pinyin, huy hiệu độ phủ HSK, gắn sao từ vào flashcard. Bố cục 65/35 trên máy tính và bottom sheet trên điện thoại.
 
 ---
 
@@ -191,7 +191,7 @@ VERSION                     # Nguồn phiên bản duy nhất
 │
 ├── database/               # Dữ liệu JSON
 │   ├── vocabs/             # HSK 2.0, HSK 3.0 (hsk3_0/), chủ đề, ngân hàng game
-│   ├── readings/           # Bài đọc HSK 1–9, Vạn vật thú vị, manga/doraemon
+│   ├── readings/           # Bài đọc HSK 1–9, Vạn vật thú vị, manga/peppercarrot
 │   ├── listening/          # 12 đề nghe HSK 4
 │   ├── reading/, grammar/, sentence/, radicals/, illustrations/
 │   └── prebuilt_audio/     # MP3 từ & câu ví dụ theo cấp
@@ -232,13 +232,14 @@ python3 -m pytest tests # kiểm thử bố cục & dữ liệu
 python3 tools/bump_version.py patch   # hoặc minor / major / X.Y.Z
 ```
 
-### Thêm chương truyện tranh
+### Nhập / cập nhật truyện tranh Pepper&Carrot
 ```bash
-.venv-ocr/bin/python tools/import_manga_chapter.py --src ~/scans/vol01_ch01 \
-    --volume 1 --chapter 1 --slug from-the-future \
-    --title-zh "來自未來的國度" --title-vi "Đến từ đất nước tương lai"
+python3 -m venv .venv-manga
+.venv-manga/bin/pip install jieba opencc-python-reimplemented pypinyin Pillow
+.venv-manga/bin/python tools/import_peppercarrot.py          # tất cả các tập
+.venv-manga/bin/python tools/import_peppercarrot.py 40 41    # chỉ một vài tập
 ```
-Script chuyển ảnh sang webp, tạo khung dữ liệu, cập nhật manifest theo thứ tự bộ truyện, chạy OCR và dựng lớp tra từ. Xem hướng dẫn chi tiết ở đầu file [tools/import_manga_chapter.py](tools/import_manga_chapter.py).
+Script tải ảnh bản tiếng Trung và file SVG nguồn (cn + vi) từ peppercarrot.com, lấy chữ thoại và tọa độ chính xác từ SVG (không cần OCR), dựng lớp tra từ và ghi manifest. Xem [tools/import_peppercarrot.py](tools/import_peppercarrot.py).
 
 ---
 
@@ -254,7 +255,7 @@ Script chuyển ảnh sang webp, tạo khung dữ liệu, cập nhật manifest 
 ## 📜 Bản quyền nội dung
 
 - Danh sách từ HSK 3.0: xem [database/vocabs/hsk3_0/ATTRIBUTION.md](database/vocabs/hsk3_0/ATTRIBUTION.md).
-- Truyện tranh *Đô-rê-mon* © Fujiko Pro & Shogakukan, chỉ dùng làm tư liệu đối chiếu học tiếng Trung phi thương mại.
+- Truyện tranh [*Pepper&Carrot*](https://www.peppercarrot.com) © David Revoy, giấy phép [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Bản dịch tiếng Trung và tiếng Việt do cộng đồng Pepper&Carrot thực hiện (ghi tên ở từng tập).
 
 ---
 

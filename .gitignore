@@ -448,3 +448,7 @@ tools/.deps/
 
 # manga OCR debug overlays (tools/manga_ocr.py --debug)
 tools/.manga_ocr_debug/
+
+# Pepper&Carrot import cache (tools/import_peppercarrot.py)
+tools/.peppercarrot_cache/
+.venv-manga/

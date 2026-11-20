@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 JSX = (ROOT / "src" / "islands" / "GradedReading.jsx").read_text(encoding="utf-8")
 CSS = (ROOT / "assets" / "css" / "graded-reading.css").read_text(encoding="utf-8")
-MANIFEST = json.loads((ROOT / "database" / "readings" / "manga" / "doraemon" / "manifest.json").read_text(encoding="utf-8"))
+MANIFEST = json.loads((ROOT / "database" / "readings" / "manga" / "peppercarrot" / "manifest.json").read_text(encoding="utf-8"))
 
 
 def test_single_top_bar_replaces_header_and_toolbar():
@@ -58,7 +58,7 @@ def test_recall_first_panel():
 
 
 def test_script_toggle_and_coverage_badge():
-    assert "readPref(MANGA_SCRIPT_KEY, 'trad')" in JSX
+    assert "readPref(MANGA_SCRIPT_KEY, 'simp')" in JSX
     assert "const MANGA_COVERAGE_TARGET = 0.9;" in JSX
     for item in MANIFEST:
         assert isinstance(item.get("proper_names"), list) and item["proper_names"]

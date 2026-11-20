@@ -2,14 +2,14 @@
 """Manga transcript data: every bubble's tokens must spell its full sentence.
 
 The reader shows the whole sentence from `tokens`; a dropped word means the
-learner cannot read the bubble. Rebuild with tools/build_manga_word_layer.py.
+learner cannot read the bubble. Rebuild with tools/import_peppercarrot.py.
 """
 
 import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-MANIFEST = ROOT / "database" / "readings" / "manga" / "doraemon" / "manifest.json"
+MANIFEST = ROOT / "database" / "readings" / "manga" / "peppercarrot" / "manifest.json"
 
 
 def iter_dialogues():
