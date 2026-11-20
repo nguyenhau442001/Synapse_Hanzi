@@ -2358,6 +2358,32 @@ body.graded-translation-hidden .graded-sentence-vi {
 .manga-hub-stat span { font-size: 11px; color: var(--manga-label); }
 .manga-hub-stat strong { font-size: 18px; color: var(--text-primary); }
 
+.manga-collection + .manga-collection { margin-top: 30px; }
+
+.manga-collection-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 0 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--manga-line);
+}
+
+.manga-collection-title {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.manga-collection-title [lang] { font-family: var(--font-classical); color: var(--accent); }
+.manga-collection-meta { font-size: 12.5px; color: var(--manga-label); }
+
 .manga-cards-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

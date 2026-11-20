@@ -1307,6 +1307,47 @@ function StoryReader({ story }) {
   );
 }
 
+// Series shelves, in reading order. Entries without `collection` are short stories.
+const MANGA_COLLECTIONS = [
+  { key: 'short', zh: '短篇', vi: 'Truyện ngắn', range: 'Tập 1 → 45' },
+  { key: 'adventure', zh: '大長篇', vi: 'Nobita phiêu lưu', range: 'Truyện dài' },
+];
+
+function mangaChapterLabel(m) {
+  if (m.collection === 'adventure') {
+    return m.volume ? `Phần ${m.volume}${m.chapter_in_volume ? ` · Chương ${m.chapter_in_volume}` : ''}` : `Chương ${m.chapter_no || 1}`;
+  }
+  if (!m.volume) return `Tập ${m.chapter_no || 1}`;
+  return `Tập ${m.volume}${m.chapter_in_volume ? ` · Chương ${m.chapter_in_volume}` : ''}`;
+}
+
+function MangaCard({ m }) {
+  return (
+    <button type="button" class="manga-story-card" onClick={() => openMangaStory(m.id)}>
+      <div class="manga-card-thumb">
+        <img src={m.cover_image} alt={`Bìa truyện ${m.title.vi}`} loading="lazy" />
+      </div>
+      <div class="manga-card-body">
+        <div class="manga-card-tags">
+          {m.difficulty ? <span class="manga-card-level">{String(m.difficulty).split('(')[0].trim()}</span> : null}
+          <span class="manga-card-chapter">{mangaChapterLabel(m)}</span>
+          {isStoryRead(m.id) ? <span class="manga-card-read">✓ Đã đọc</span> : null}
+        </div>
+        <h2 class="manga-card-zh" lang="zh-Hant">{m.title.zh_trad || m.title.zh}</h2>
+        {m.title.pinyin ? <span class="manga-card-py">{m.title.pinyin}</span> : null}
+        <span class="manga-card-vi">{m.title.vi}</span>
+        <p class="manga-card-desc">{m.description_vi}</p>
+        <div class="manga-card-footer">
+          <span>{`${m.page_count} trang`}</span>
+          <span aria-hidden="true">·</span>
+          <span>{`~${m.estimatedMinutes || 8} phút`}</span>
+          <span class="manga-card-cta">Đọc →</span>
+        </div>
+      </div>
+    </button>
+  );
+}
+
 function MangaHub() {
   const readCount = mangaManifestData.filter((m) => isStoryRead(m.id)).length;
   return (
@@ -1338,32 +1379,24 @@ function MangaHub() {
         </div>
       </section>
 
-      <div class="manga-cards-grid">
-        {mangaManifestData.map((m) => (
-          <button key={m.id} type="button" class="manga-story-card" onClick={() => openMangaStory(m.id)}>
-            <div class="manga-card-thumb">
-              <img src={m.cover_image} alt={`Bìa truyện ${m.title.vi}`} loading="lazy" />
+      {MANGA_COLLECTIONS.map((c) => {
+        const items = mangaManifestData.filter((m) => (m.collection || 'short') === c.key);
+        if (!items.length) return null;
+        return (
+          <section key={c.key} class="manga-collection" aria-label={c.vi}>
+            <header class="manga-collection-head">
+              <h2 class="manga-collection-title">
+                <span lang="zh-Hant">{c.zh}</span>
+                <span>{c.vi}</span>
+              </h2>
+              <span class="manga-collection-meta">{`${items.filter((m) => isStoryRead(m.id)).length} / ${items.length} đã đọc · ${c.range}`}</span>
+            </header>
+            <div class="manga-cards-grid">
+              {items.map((m) => <MangaCard key={m.id} m={m} />)}
             </div>
-            <div class="manga-card-body">
-              <div class="manga-card-tags">
-                {m.difficulty ? <span class="manga-card-level">{String(m.difficulty).split('(')[0].trim()}</span> : null}
-                <span class="manga-card-chapter">{`Tập ${m.chapter_no || 1}`}</span>
-                {isStoryRead(m.id) ? <span class="manga-card-read">✓ Đã đọc</span> : null}
-              </div>
-              <h2 class="manga-card-zh" lang="zh-Hant">{m.title.zh_trad || m.title.zh}</h2>
-              {m.title.pinyin ? <span class="manga-card-py">{m.title.pinyin}</span> : null}
-              <span class="manga-card-vi">{m.title.vi}</span>
-              <p class="manga-card-desc">{m.description_vi}</p>
-              <div class="manga-card-footer">
-                <span>{`${m.page_count} trang`}</span>
-                <span aria-hidden="true">·</span>
-                <span>{`~${m.estimatedMinutes || 8} phút`}</span>
-                <span class="manga-card-cta">Đọc →</span>
-              </div>
-            </div>
-          </button>
-        ))}
-      </div>
+          </section>
+        );
+      })}
 
       <p class="manga-hub-credit">
         Nguồn: 《哆啦A梦》 của Fujiko F. Fujio (Shogakukan; bản tiếng Trung 香港文化传信). Ảnh scan chỉ dùng cho mục đích học tập phi thương mại.

@@ -784,6 +784,17 @@ manifest = [
     }
 ]
 
-with open(MANGA_DIR / "manifest.json", "w", encoding="utf-8") as f:
-    json.dump(manifest, f, ensure_ascii=False, indent=2)
-print("Saved manga manifest.json")
+# Merge into the existing manifest so chapters added by tools/import_manga_chapter.py survive.
+import sys
+sys.path.insert(0, str(REPO_ROOT / "tools"))
+from import_manga_chapter import upsert_manifest  # noqa: E402
+
+manifest_path = MANGA_DIR / "manifest.json"
+merged = json.loads(manifest_path.read_text(encoding="utf-8")) if manifest_path.exists() else []
+for entry in manifest:
+    entry.update({"collection": "short", "volume": 21, "chapter_in_volume": None})
+    entry["proper_names"] = next((m.get("proper_names") for m in merged if m["id"] == entry["id"]), None) \
+        or ["大雄", "靜兒", "叮噹", "技安", "小夫"]
+    merged = upsert_manifest(merged, entry)
+manifest_path.write_text(json.dumps(merged, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+print("Merged entries into manga manifest.json")
