@@ -1633,12 +1633,13 @@ body.graded-reading-active #screenGradedReading {
   font-weight: 700;
 }
 
-/* Reading column: one centred measure for title, text and the cards below it */
+/* Reading column: one centred measure for title, text and the cards below it.
+   Wide enough to use the page width; 112px reserved for the audio gutter. */
 .graded-reader-shell > .graded-passage-card,
 .graded-reader-shell > .graded-section-card,
 .graded-reader-shell > .graded-completion-card {
   width: 100%;
-  max-width: 720px;
+  max-width: min(960px, calc(100% - 112px));
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
@@ -2371,6 +2372,13 @@ body.graded-translation-hidden .graded-sentence-vi {
   .graded-illustration-frame img { max-height: 30vh; }
 
   .graded-sentence-zh { font-size: var(--graded-reader-fs, 22px); }
+
+  /* Audio button moves inline, so the column can use the full width */
+  .graded-reader-shell > .graded-passage-card,
+  .graded-reader-shell > .graded-section-card,
+  .graded-reader-shell > .graded-completion-card {
+    max-width: 100%;
+  }
 
   /* Sentence audio sits after the text instead of in the gutter */
   .graded-sentence-top-row {
