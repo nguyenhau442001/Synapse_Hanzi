@@ -169,7 +169,7 @@ export function setPrimaryTab(tab, options) {
     document.body.classList.remove('reading-zen-active');
   }
   if (tab !== 'gradedReading') {
-    document.body.classList.remove('graded-pinyin-hidden', 'graded-translation-hidden', 'graded-story-active');
+    document.body.classList.remove('graded-pinyin-hidden', 'graded-pinyin-new', 'graded-translation-hidden', 'graded-srs-plain', 'graded-paper-sepia', 'graded-story-active');
   }
   const gamesMenu = document.getElementById('primaryGamesMenu');
   if (gamesMenu) {

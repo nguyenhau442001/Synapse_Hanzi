@@ -81,13 +81,38 @@ const playingId = signal(null);        // sentence id, 'full-story' or null
 
 const PREFS_KEY = 'synapse_graded_prefs_v1';
 const prefs = signal((() => {
-  const base = { showPinyin: true, showTranslation: true, showSrsHighlights: true };
+  // pinyinMode: 'all' | 'new' (only new and over-level words) | 'off'; fontSize: px or null (CSS default)
+  const base = { showPinyin: true, pinyinMode: 'all', showTranslation: true, showSrsHighlights: true, fontSize: null, paper: 'cream' };
   try {
     const saved = localStorage.getItem(PREFS_KEY);
-    if (saved) return Object.assign(base, JSON.parse(saved));
+    if (saved) {
+      const parsed = JSON.parse(saved) || {};
+      const merged = Object.assign(base, parsed);
+      if (!parsed.pinyinMode) merged.pinyinMode = parsed.showPinyin === false ? 'off' : 'all';
+      return merged;
+    }
   } catch (e) { /* corrupt prefs */ }
   return base;
 })());
+
+const READER_FONT_MIN = 18;
+const READER_FONT_MAX = 38;
+const READER_BODY_CLASSES = ['graded-pinyin-hidden', 'graded-pinyin-new', 'graded-translation-hidden', 'graded-srs-plain', 'graded-paper-sepia'];
+
+// Mirrors the reader preferences onto <body> so CSS can switch pinyin, translation, highlights and paper.
+function applyReaderBodyClasses() {
+  const p = prefs.value;
+  const cl = document.body.classList;
+  cl.toggle('graded-pinyin-hidden', p.pinyinMode === 'off');
+  cl.toggle('graded-pinyin-new', p.pinyinMode === 'new');
+  cl.toggle('graded-translation-hidden', !p.showTranslation);
+  cl.toggle('graded-srs-plain', p.showSrsHighlights === false);
+  cl.toggle('graded-paper-sepia', p.paper === 'sepia');
+}
+
+function clearReaderBodyClasses() {
+  document.body.classList.remove(...READER_BODY_CLASSES);
+}
 
 const READ_STORIES_STORAGE_KEY = 'synapse_graded_read_stories_v1';
 const readStories = signal((() => {
@@ -118,15 +143,28 @@ function saveReadStories(next) {
 }
 
 // ---- Audio -------------------------------------------------------------------------------------
+// Full-story playback reads sentence by sentence so the current sentence can be highlighted.
+const fullStoryPlaying = signal(false);
+let fullStoryRun = 0;
+
 function clearPlaying() {
   playingId.value = null;
 }
 
+function stopFullStory() {
+  fullStoryRun++;
+  fullStoryPlaying.value = false;
+}
+
+const sentencePlainText = (s) => (s.zh || (s.tokens || []).map((t) => t.text).join('') || s.text || '').replace(/^[，。？！、\s]+/, '');
+
 function speakSentence(text, sentId) {
   if (!text) return;
   const isPlaying = playingId.value === sentId;
+  const wasFullStory = fullStoryPlaying.value;
+  stopFullStory();
   if (typeof window.stopSpeaking === 'function') window.stopSpeaking();
-  if (isPlaying) {
+  if (isPlaying && !wasFullStory) {
     clearPlaying();
     return;
   }
@@ -137,10 +175,38 @@ function speakSentence(text, sentId) {
   }
 }
 
+function playStoryFrom(index, run) {
+  const story = activeStory.value;
+  if (run !== fullStoryRun || !story) return;
+  const sentence = story.sentences[index];
+  if (!sentence) {
+    stopFullStory();
+    clearPlaying();
+    return;
+  }
+  const text = sentencePlainText(sentence);
+  if (!text) { playStoryFrom(index + 1, run); return; }
+  playingId.value = sentence.id;
+  const el = document.getElementById(`sent-${sentence.id}`);
+  if (el && typeof el.scrollIntoView === 'function') el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  const rate = typeof exampleSpeechSpeed !== 'undefined' ? exampleSpeechSpeed : 0.8;
+  const stop = () => { if (run === fullStoryRun) { stopFullStory(); clearPlaying(); } };
+  if (typeof window.speakChinese !== 'function' || window.speakChinese(text, { rate, onEnd: () => playStoryFrom(index + 1, run), onError: stop }) === false) stop();
+}
+
 function speakFullStory() {
   const story = activeStory.value;
   if (!story || !story.sentences) return;
-  speakSentence(story.sentences.map((s) => s.zh || s.text || '').filter(Boolean).join(' '), 'full-story');
+  if (fullStoryPlaying.value) {
+    stopFullStory();
+    if (typeof window.stopSpeaking === 'function') window.stopSpeaking();
+    clearPlaying();
+    return;
+  }
+  stopFullStory();
+  const run = fullStoryRun;
+  fullStoryPlaying.value = true;
+  playStoryFrom(0, run);
 }
 
 // ---- Read tracking -----------------------------------------------------------------------------
@@ -266,7 +332,7 @@ async function loadStory(storyId) {
 async function ensureMangaManifestLoaded() {
   if (mangaManifestLoaded && mangaManifestData.length) return mangaManifestData;
   try {
-    const res = await fetch('database/readings/manga/doraemon/manifest.json?v=' + Date.now());
+    const res = await fetch('database/readings/manga/peppercarrot/manifest.json?v=' + Date.now());
     if (!res.ok) throw new Error('Không thể tải danh sách truyện tranh.');
     mangaManifestData = await res.json();
     mangaManifestLoaded = true;
@@ -281,7 +347,7 @@ async function loadMangaStory(mangaId) {
   if (mangaStoryCache[mangaId]) return mangaStoryCache[mangaId];
   const list = await ensureMangaManifestLoaded();
   const item = list.find((m) => m.id === mangaId);
-  const file = item ? item.file : `database/readings/manga/doraemon/${mangaId}.json`;
+  const file = item ? item.file : `database/readings/manga/peppercarrot/${mangaId}.json`;
   const res = await fetch(file + '?v=' + Date.now());
   if (!res.ok) throw new Error('Không thể tải truyện tranh: ' + mangaId);
   const data = await res.json();
@@ -397,7 +463,14 @@ function renderHub() {
   hoveredMangaDialogue.value = null;
   selectedMangaDialogue.value = null;
   closePopover();
-  document.body.classList.remove('graded-story-active', 'graded-pinyin-hidden', 'graded-translation-hidden');
+  document.body.classList.remove('graded-story-active');
+  clearReaderBodyClasses();
+  readerPanelOpen.value = false;
+  if (fullStoryPlaying.value || playingId.value) {
+    stopFullStory();
+    if (typeof window.stopSpeaking === 'function') window.stopSpeaking();
+    clearPlaying();
+  }
   hubLimit.value = PAGE_SIZE;
   view.value = 'hub';
 }
@@ -429,8 +502,8 @@ async function openStory(storyId, updateUrl = true) {
       SpaRouter.pushView({ view: 'tab', tab: 'gradedReading', story: storyId }, `${window.location.pathname}?tab=gradedReading&story=${storyId}`);
     }
     document.body.classList.add('graded-story-active');
-    document.body.classList.toggle('graded-pinyin-hidden', !prefs.value.showPinyin);
-    document.body.classList.toggle('graded-translation-hidden', !prefs.value.showTranslation);
+    readerPanelOpen.value = false;
+    applyReaderBodyClasses();
     view.value = 'story';
   } catch (e) {
     errorMessage.value = e.message;
@@ -462,16 +535,28 @@ function resetFilters() {
   renderHub();
 }
 
+function updateReaderPrefs(patch) {
+  savePrefs({ ...prefs.value, ...patch });
+  applyReaderBodyClasses();
+}
+
+function setPinyinMode(mode) {
+  updateReaderPrefs({ pinyinMode: mode, showPinyin: mode !== 'off' });
+}
+
+// Legacy toggle kept for window.GradedReading callers: all <-> off.
 function togglePinyin() {
-  const next = { ...prefs.value, showPinyin: !prefs.value.showPinyin };
-  savePrefs(next);
-  document.body.classList.toggle('graded-pinyin-hidden', !next.showPinyin);
+  setPinyinMode(prefs.value.pinyinMode === 'off' ? 'all' : 'off');
 }
 
 function toggleTranslation() {
-  const next = { ...prefs.value, showTranslation: !prefs.value.showTranslation };
-  savePrefs(next);
-  document.body.classList.toggle('graded-translation-hidden', !next.showTranslation);
+  updateReaderPrefs({ showTranslation: !prefs.value.showTranslation });
+}
+
+function stepReaderFont(delta) {
+  const base = window.innerWidth < 768 ? 22 : 26;
+  const current = prefs.value.fontSize || base;
+  updateReaderPrefs({ fontSize: Math.max(READER_FONT_MIN, Math.min(READER_FONT_MAX, current + delta)) });
 }
 
 function answerQuiz(qId, selectedIdx) {
@@ -1053,29 +1138,41 @@ function SentenceTokens({ sentence, sidx, lvlNum }) {
   ));
 }
 
+const ICON_SPEAKER = (
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M11 5L6 9H2v6h4l5 4V5z" /><path d="M15.5 8.5a5 5 0 010 7" />
+  </svg>
+);
+const ICON_STOP = (
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2" /></svg>
+);
+const ICON_PLAY = (
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg>
+);
+
 function SentenceAudioButton({ sentence, sidx }) {
   const playing = playingId.value === sentence.id;
-  const cleanZh = (sentence.zh || sentence.tokens.map((t) => t.text).join('')).replace(/^[，。？！、\s]+/, '');
   return (
     <button type="button" class={playing ? 'sentence-audio-btn speech-btn playing' : 'sentence-audio-btn speech-btn'} data-sentence-id={sentence.id}
-      onClick={() => speakSentence(cleanZh, sentence.id)} title="Nghe câu này" aria-label={`Nghe câu ${sidx + 1}`}
-      style="flex-shrink: 0; margin-top: 6px; padding: 4px 8px; font-size: 0.76rem; border-radius: 6px; border: 1px solid var(--graded-border); background: var(--graded-chip-bg); color: var(--graded-text-secondary); cursor: pointer;">
-      {playing ? '⏹ Dừng' : '🔊 Nghe'}
+      onClick={() => speakSentence(sentencePlainText(sentence), sentence.id)} title={playing ? 'Dừng' : 'Nghe câu này'}
+      aria-label={playing ? `Dừng câu ${sidx + 1}` : `Nghe câu ${sidx + 1}`} aria-pressed={playing ? 'true' : 'false'}>
+      {playing ? ICON_STOP : ICON_SPEAKER}
     </button>
   );
 }
 
 function SentenceStream({ story }) {
   const lvlNum = storyLevelNum(story);
+  const current = playingId.value;
   return (
     <div class="graded-sentence-stream">
       {story.sentences.map((sentence, sidx) => (
-        <div class="graded-sentence-block" id={`sent-${sentence.id}`} key={sentence.id}>
-          <div class="graded-sentence-top-row" style="display: flex; align-items: flex-start; justify-content: space-between; gap: 8px;">
+        <div class={current === sentence.id ? 'graded-sentence-block is-playing' : 'graded-sentence-block'} id={`sent-${sentence.id}`} key={sentence.id}>
+          <div class="graded-sentence-top-row">
+            <SentenceAudioButton sentence={sentence} sidx={sidx} />{' '}
             <div class="graded-sentence-zh">
               {'\n                    '}<SentenceTokens sentence={sentence} sidx={sidx} lvlNum={lvlNum} />{'\n                  '}
-            </div>{' '}
-            <SentenceAudioButton sentence={sentence} sidx={sidx} />
+            </div>
           </div>{' '}
           <div class="graded-sentence-vi">{sentence.vi}</div>
         </div>
@@ -1147,102 +1244,230 @@ function Quiz({ story }) {
 }
 
 const imageExpanded = signal(false);
+const readerPanelOpen = signal(false);
+const srsTick = signal(0); // bumped after bulk SRS adds so word counts re-render
+
+const PINYIN_MODES = [['all', 'Pinyin', 'Hiện pinyin cho mọi từ'], ['new', 'Từ mới', 'Chỉ hiện pinyin cho từ mới và từ vượt cấp'], ['off', 'Tắt', 'Ẩn pinyin']];
+const LEGEND_ITEMS = [['new', '新', 'Từ mới'], ['learning', '学', 'Đang học (SRS)'], ['overlevel', '难', 'Vượt cấp'], ['mastered', '会', 'Đã thuộc']];
+
+// Unique vocabulary words of a story, split by SRS status and level.
+function storyWordStats(story) {
+  void srsTick.value;
+  const lvlNum = storyLevelNum(story);
+  const seen = new Set();
+  const fresh = [];
+  let overLevel = 0;
+  story.sentences.forEach((s) => (s.tokens || []).forEach((tok) => {
+    if (!tok.word_id || seen.has(tok.word_id)) return;
+    seen.add(tok.word_id);
+    if ((tok.hsk || 1) > lvlNum) overLevel++;
+    if (getTokenSrsStatus(tok) === 'new') fresh.push(tok);
+  }));
+  // Bulk SRS adds are limited to the story's spotlight words so a long chapter does not flood the queue.
+  const spotlight = new Set(story.vocabulary_spotlight || []);
+  const freshKey = fresh.filter((tok) => spotlight.has(tok.word_id));
+  return { fresh, freshKey, overLevel };
+}
+
+function addStoryKeyWordsToSrs(story) {
+  const { freshKey } = storyWordStats(story);
+  let added = 0;
+  freshKey.forEach((tok) => { if (addTokenToSrs(tok)) added++; });
+  srsTick.value++;
+  return added;
+}
+
+// Next story in the hub's current order, falling back to the manifest order.
+function nextStoryId(storyId) {
+  const filtered = getFilteredManifest();
+  let idx = filtered.findIndex((m) => m.id === storyId);
+  if (idx >= 0 && filtered[idx + 1]) return filtered[idx + 1].id;
+  idx = manifest.findIndex((m) => m.id === storyId);
+  if (idx >= 0 && manifest[idx + 1]) return manifest[idx + 1].id;
+  return null;
+}
+
+// Thin bar under the reader toolbar showing how far the page has been scrolled.
+function ReaderProgress() {
+  const fillRef = useRef(null);
+  useEffect(() => {
+    let frame = 0;
+    const update = () => {
+      frame = 0;
+      const doc = document.documentElement;
+      const max = doc.scrollHeight - window.innerHeight;
+      const pct = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
+      if (fillRef.current) fillRef.current.style.transform = `scaleX(${pct})`;
+    };
+    const onScroll = () => { if (!frame) frame = requestAnimationFrame(update); };
+    update();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+      if (frame) cancelAnimationFrame(frame);
+    };
+  }, []);
+  return <div class="graded-reader-progress" aria-hidden="true"><div class="graded-reader-progress-fill" ref={fillRef}></div></div>;
+}
+
+function ReaderSettingsPanel() {
+  const p = prefs.value;
+  const size = p.fontSize || (window.innerWidth < 768 ? 22 : 26);
+  return (
+    <div class="graded-reader-panel" id="gradedReaderPanel" role="dialog" aria-label="Tùy chỉnh hiển thị">
+      <div class="graded-panel-group">
+        <span class="graded-panel-label">Cỡ chữ Hán</span>
+        <div class="graded-panel-stepper">
+          <button type="button" class="graded-panel-btn" onClick={() => stepReaderFont(-2)} disabled={size <= READER_FONT_MIN} aria-label="Giảm cỡ chữ">
+            <span style="font-size: 14px;">字</span>
+          </button>
+          <span class="graded-panel-value">{`${size} px`}</span>
+          <button type="button" class="graded-panel-btn" onClick={() => stepReaderFont(2)} disabled={size >= READER_FONT_MAX} aria-label="Tăng cỡ chữ">
+            <span style="font-size: 22px;">字</span>
+          </button>
+        </div>
+      </div>
+      <div class="graded-panel-group">
+        <span class="graded-panel-label">Nền trang</span>
+        <div class="graded-panel-papers">
+          {[['cream', 'Kem'], ['sepia', 'Sepia']].map(([id, label]) => (
+            <button key={id} type="button" class={`graded-paper-btn paper-${id} ${p.paper === id ? 'active' : ''}`}
+              aria-pressed={p.paper === id ? 'true' : 'false'} onClick={() => updateReaderPrefs({ paper: id })}>
+              {label}
+            </button>
+          ))}
+        </div>
+        <span class="graded-panel-hint">Chế độ tối dùng nút mặt trăng trên thanh đầu trang.</span>
+      </div>
+      <label class="graded-panel-switch">
+        <span>Tô màu từ vựng</span>
+        <input type="checkbox" checked={p.showSrsHighlights !== false}
+          onChange={(e) => updateReaderPrefs({ showSrsHighlights: e.currentTarget.checked })} />
+      </label>
+      <div class="graded-panel-legend" aria-label="Chú giải trạng thái từ vựng">
+        {LEGEND_ITEMS.map(([cls, glyph, label]) => (
+          <span class="graded-legend-item" key={cls}>
+            <span class={`legend-glyph legend-${cls}`}>{glyph}</span>
+            <span>{label}</span>
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 function ReaderNav({ story }) {
-  const isRead = isStoryRead(story.id);
   const p = prefs.value;
-  const playingAll = playingId.value === 'full-story';
+  const playingAll = fullStoryPlaying.value;
   const lvl = (story.level || 'hsk1').toLowerCase();
+  const panelOpen = readerPanelOpen.value;
+
+  useEffect(() => {
+    if (!panelOpen) return undefined;
+    const onDown = (e) => {
+      if (e.target.closest && (e.target.closest('#gradedReaderPanel') || e.target.closest('#gradedReaderAaBtn'))) return;
+      readerPanelOpen.value = false;
+    };
+    const onKey = (e) => { if (e.key === 'Escape') { e.stopPropagation(); readerPanelOpen.value = false; } };
+    document.addEventListener('pointerdown', onDown);
+    document.addEventListener('keydown', onKey, true);
+    return () => {
+      document.removeEventListener('pointerdown', onDown);
+      document.removeEventListener('keydown', onKey, true);
+    };
+  }, [panelOpen]);
 
   return (
     <header class="graded-reader-nav">
-      {/* Row 1: Back button on left, HSK Badge + Duration in middle, Mark-Read toggle on right */}
       <div class="graded-reader-top-bar">
-        <button type="button" class="graded-back-btn" onClick={goBackToHub} title="Trở về danh sách bài đọc (Esc)">
-          ← Hub bài đọc
+        <button type="button" class="graded-back-btn" onClick={goBackToHub} title="Trở về danh sách bài đọc (Esc)" aria-label="Về Hub bài đọc">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6" /></svg>
+          <span class="graded-back-label">Hub</span>
         </button>
-        <div class="graded-reader-top-meta">
+        <div class="graded-reader-bar-title">
+          <span class="graded-reader-bar-zh">{story.title.zh}</span>
           <span class={`graded-card-level-badge lvl-${lvl}`}>{story.level}</span>
-          {story.page_display ? (
-            <span class="graded-reader-page-badge" title="Trang trong sách">
-              {`📖 ${story.page_display}`}
-            </span>
-          ) : story.series === 'textbook' || story.id.startsWith('hsk') ? (
-            <span class="graded-reader-textbook-badge" title="Bài đọc Giáo trình HSK Chuẩn">
-              📖 Giáo trình HSK
-            </span>
-          ) : null}
-          <span class="graded-reader-duration" title="Thời lượng đọc ước tính">
-            {`⏱️ ${story.estimatedMinutes || 3}m`}
-          </span>
         </div>
-        <button
-          type="button"
-          id="toggleReadStoryBtn"
-          class={`graded-toggle-btn graded-reader-mark-btn ${isRead ? 'active read-active' : ''}`}
-          onClick={toggleCurrentStoryRead}
-          title={isRead ? 'Đã đọc (Bấm để hủy)' : 'Đánh dấu đã đọc bài này'}
-        >
-          <span>{isRead ? '✓ Đã đọc' : '○ Đã đọc'}</span>
-        </button>
-      </div>
-
-      {/* Row 2: Chinese Title (100% full width, never squished or prematurely broken) + Vietnamese subtitle */}
-      <div class="graded-reader-title-block">
-        <h1 class="graded-reader-zh-title">
-          <span>{story.title.zh}</span>
-        </h1>
-        <div class="graded-reader-vi-title">
-          {story.title.vi}
+        <div class="graded-reader-controls">
+          <button type="button" id="playFullStoryBtn" class={`graded-icon-btn graded-play-btn ${playingAll ? 'active' : ''}`}
+            onClick={speakFullStory} title={playingAll ? 'Dừng nghe' : 'Nghe cả bài'} aria-label={playingAll ? 'Dừng nghe' : 'Nghe cả bài'} aria-pressed={playingAll ? 'true' : 'false'}>
+            {playingAll ? ICON_STOP : ICON_PLAY}
+          </button>
+          <div class="graded-pinyin-seg" role="group" aria-label="Chế độ pinyin" id="togglePinyinBtn">
+            {PINYIN_MODES.map(([id, label, hint]) => (
+              <button key={id} type="button" class={p.pinyinMode === id ? 'seg-btn active' : 'seg-btn'} title={hint}
+                aria-pressed={p.pinyinMode === id ? 'true' : 'false'} onClick={() => setPinyinMode(id)}>
+                {label}
+              </button>
+            ))}
+          </div>
+          <button type="button" id="toggleTransBtn" class={`graded-toggle-btn ${p.showTranslation ? 'active' : ''}`}
+            onClick={toggleTranslation} title="Bật/Tắt bản dịch tiếng Việt" aria-pressed={p.showTranslation ? 'true' : 'false'}>
+            Dịch
+          </button>
         </div>
-      </div>
-
-      {/* Row 3: Reading Action buttons (Audio, Pinyin, Translation) spaced in a 1fr 1fr 1fr grid */}
-      <div class="graded-reader-actions-bar">
-        <button
-          type="button"
-          id="playFullStoryBtn"
-          class={`graded-toggle-btn ${playingAll ? 'active' : ''}`}
-          onClick={speakFullStory}
-          title="Nghe đọc toàn bộ bài đọc"
-        >
-          <span>{playingAll ? '⏹ Dừng' : '🔊 Nghe bài'}</span>
-        </button>
-        <button
-          type="button"
-          id="togglePinyinBtn"
-          class={`graded-toggle-btn ${p.showPinyin ? 'active' : ''}`}
-          onClick={togglePinyin}
-          title="Bật/Tắt phiên âm Pinyin"
-        >
-          拼 Pinyin
-        </button>
-        <button
-          type="button"
-          id="toggleTransBtn"
-          class={`graded-toggle-btn ${p.showTranslation ? 'active' : ''}`}
-          onClick={toggleTranslation}
-          title="Bật/Tắt bản dịch tiếng Việt"
-        >
-          🇻🇳 Bản dịch
+        <button type="button" id="gradedReaderAaBtn" class={`graded-icon-btn graded-aa-btn ${panelOpen ? 'active' : ''}`}
+          onClick={() => { readerPanelOpen.value = !panelOpen; }} title="Tùy chỉnh hiển thị" aria-label="Tùy chỉnh hiển thị"
+          aria-expanded={panelOpen ? 'true' : 'false'} aria-controls="gradedReaderPanel">
+          Aa
         </button>
       </div>
+      <ReaderProgress />
+      {panelOpen ? <ReaderSettingsPanel /> : null}
     </header>
+  );
+}
+
+function ReaderTitle({ story }) {
+  const source = storySourceLabel(story);
+  const page = story.page_display && !(source || '').includes(story.page_display) ? story.page_display : null;
+  const meta = [source, page, `${story.estimatedMinutes || 3} phút`].filter(Boolean);
+  return (
+    <div class="graded-reader-title-block">
+      <p class="graded-reader-meta">{meta.join(' · ')}</p>
+      <h1 class="graded-reader-zh-title">{story.title.zh}</h1>
+      <p class="graded-reader-vi-title">{story.title.vi}</p>
+    </div>
   );
 }
 
 function CompletionCard({ story }) {
   const isRead = isStoryRead(story.id);
+  const { fresh, freshKey, overLevel } = storyWordStats(story);
+  const [addedCount, setAddedCount] = useState(null);
+  const nextId = nextStoryId(story.id);
+  const finishAndNext = () => {
+    if (!isRead) markStoryAsRead(story.id);
+    if (nextId) {
+      openStory(nextId);
+      window.scrollTo({ top: 0 });
+    }
+  };
   return (
     <section class={`graded-completion-card ${isRead ? 'completed' : ''}`} id="storyCompletionCard">
-      <div class="completion-icon-box">{isRead ? '🎉' : '📖'}</div>{' '}
-      <div class="completion-content">
-        <h3 class="completion-heading">{isRead ? 'Đã hoàn thành bài đọc!' : 'Hoàn thành bài đọc này?'}</h3>{' '}
-        <p class="completion-sub">{isRead ? 'Bài viết đã được lưu vào danh sách Đã đọc của bạn.' : 'Đánh dấu đã đọc để lưu tiến trình và theo dõi lộ trình học tập.'}</p>
-      </div>{' '}
-      <button type="button" class={`graded-completion-btn ${isRead ? 'active' : ''}`} onClick={toggleCurrentStoryRead}>
-        {isRead ? '✓ Đã hoàn thành (Bấm để hủy)' : '✓ Đã đọc (Lưu tiến trình)'}
-      </button>
+      <h3 class="completion-heading">{isRead ? '读完了！' : '读完了吗？'}</h3>
+      <p class="completion-sub">
+        {isRead ? 'Bài đọc đã được lưu vào danh sách Đã đọc.' : 'Đánh dấu đã đọc để lưu tiến trình.'}
+        {` Bài có ${fresh.length} từ mới`}{overLevel ? ` · ${overLevel} từ vượt cấp` : ''}.
+      </p>
+      <div class="completion-actions">
+        {freshKey.length > 0 || addedCount !== null ? (
+          <button type="button" class="graded-completion-btn secondary" disabled={addedCount !== null}
+            onClick={() => setAddedCount(addStoryKeyWordsToSrs(story))}>
+            {addedCount !== null ? `✓ Đã thêm ${addedCount} từ vào SRS` : `Thêm ${freshKey.length} từ trọng tâm vào SRS`}
+          </button>
+        ) : null}
+        <button type="button" class={`graded-completion-btn ${isRead ? 'active' : ''}`} onClick={toggleCurrentStoryRead}>
+          {isRead ? '✓ Đã đọc (bấm để hủy)' : 'Đánh dấu đã đọc'}
+        </button>
+        {nextId ? (
+          <button type="button" class="graded-completion-btn primary" onClick={finishAndNext}>
+            {isRead ? 'Bài tiếp →' : 'Đã đọc · Bài tiếp →'}
+          </button>
+        ) : null}
+      </div>
     </section>
   );
 }
@@ -1258,39 +1483,27 @@ function SectionTitle({ icon, text }) {
 
 function StoryReader({ story }) {
   const isExpanded = imageExpanded.value;
+  const fontSize = prefs.value.fontSize;
   return (
-    <div class="graded-reading-container graded-reader-shell">
+    <div class="graded-reading-container graded-reader-shell" style={fontSize ? `--graded-reader-fs: ${fontSize}px;` : undefined}>
       <ReaderNav story={story} />{' '}
-      <div class="graded-srs-legend-bar" aria-label="Chú giải trạng thái từ vựng">
-        <span class="graded-legend-title">Vốn từ:</span>
-        <div class="graded-legend-items">
-          {[['mastered', 'Đã thuộc'], ['learning', 'Đang học (SRS)'], ['new', 'Từ mới'], ['overlevel', 'Vượt cấp (+1)']].map(([cls, label]) => (
-            <div class="graded-legend-item" key={cls}>
-              <span class={`legend-swatch ${cls}`}></span>
-              <span>{label}</span>
-            </div>
-          ))}
-        </div>
-      </div>{' '}
       <main class="graded-passage-card">
+        <ReaderTitle story={story} />
         {story.cover_image ? (
-          <div class={`graded-story-illustration-wrap ${isExpanded ? 'is-expanded' : ''}`}>
-            <div
+          <figure class={`graded-story-illustration-wrap ${isExpanded ? 'is-expanded' : ''}`}>
+            <button
+              type="button"
               class="graded-illustration-frame"
               onClick={() => { imageExpanded.value = !imageExpanded.value; }}
-              title={isExpanded ? 'Bấm để thu nhỏ ảnh' : 'Chạm để xem ảnh phóng to'}
-              role="button"
-              tabindex="0"
+              aria-label={isExpanded ? 'Thu nhỏ ảnh minh họa' : 'Phóng to ảnh minh họa'}
+              aria-expanded={isExpanded ? 'true' : 'false'}
             >
               <img src={story.cover_image} alt={story.title ? story.title.vi : ''} loading="lazy" />
-              <span class="graded-illustration-zoom-tag" aria-hidden="true">
-                {isExpanded ? '✕ Thu gọn' : '🔍 Phóng to'}
-              </span>
-            </div>
-            <div class="graded-illustration-caption">
-              {`📖 Minh họa từ sách: 《万物有意思》${story.page_display ? ` (${story.page_display})` : ''}`}
-            </div>
-          </div>
+            </button>
+            <figcaption class="graded-illustration-caption">
+              {`Minh họa từ sách 《万物有意思》${story.page_display ? ` · ${story.page_display}` : ''} · ${isExpanded ? 'chạm để thu nhỏ' : 'chạm để phóng to'}`}
+            </figcaption>
+          </figure>
         ) : null}
         <SentenceStream story={story} />
       </main>{' '}
@@ -1307,18 +1520,13 @@ function StoryReader({ story }) {
   );
 }
 
-// Series shelves, in reading order. Entries without `collection` are short stories.
+// Series shelves, in reading order. Entries without `collection` land on the first shelf.
 const MANGA_COLLECTIONS = [
-  { key: 'short', zh: '短篇', vi: 'Truyện ngắn', range: 'Tập 1 → 45' },
-  { key: 'adventure', zh: '大長篇', vi: 'Nobita phiêu lưu', range: 'Truyện dài' },
+  { key: 'peppercarrot', zh: '胡椒和胡萝卜', vi: 'Pepper&Carrot', range: 'Tập 1 → 39' },
 ];
 
 function mangaChapterLabel(m) {
-  if (m.collection === 'adventure') {
-    return m.volume ? `Phần ${m.volume}${m.chapter_in_volume ? ` · Chương ${m.chapter_in_volume}` : ''}` : `Chương ${m.chapter_no || 1}`;
-  }
-  if (!m.volume) return `Tập ${m.chapter_no || 1}`;
-  return `Tập ${m.volume}${m.chapter_in_volume ? ` · Chương ${m.chapter_in_volume}` : ''}`;
+  return `Tập ${m.volume || m.chapter_no || 1}`;
 }
 
 function MangaCard({ m }) {
@@ -1333,7 +1541,7 @@ function MangaCard({ m }) {
           <span class="manga-card-chapter">{mangaChapterLabel(m)}</span>
           {isStoryRead(m.id) ? <span class="manga-card-read">✓ Đã đọc</span> : null}
         </div>
-        <h2 class="manga-card-zh" lang="zh-Hant">{m.title.zh_trad || m.title.zh}</h2>
+        <h2 class="manga-card-zh" lang="zh-Hans">{m.title.zh || m.title.zh_trad}</h2>
         {m.title.pinyin ? <span class="manga-card-py">{m.title.pinyin}</span> : null}
         <span class="manga-card-vi">{m.title.vi}</span>
         <p class="manga-card-desc">{m.description_vi}</p>
@@ -1364,11 +1572,11 @@ function MangaHub() {
         <div class="manga-hub-hero-copy">
           <span class="manga-hub-kicker">TRUYỆN TRANH · ĐỌC GIẢI TRÍ</span>
           <h1 class="manga-hub-title">
-            <span class="manga-hub-title-zh" lang="zh-Hans">哆啦A梦</span>
-            <span class="manga-hub-title-vi">Doraemon</span>
+            <span class="manga-hub-title-zh" lang="zh-Hans">胡椒和胡萝卜</span>
+            <span class="manga-hub-title-vi">Pepper&amp;Carrot</span>
           </h1>
           <p class="manga-hub-desc">
-            Đọc bản tiếng Trung phồn thể gốc. Bấm vào một bóng thoại để xem pinyin, nghĩa từng từ và câu dịch.
+            Truyện về cô phù thủy nhỏ Pepper và chú mèo Carrot, bản tiếng Trung giản thể. Bấm vào một bóng thoại để xem pinyin, nghĩa từng từ và câu dịch.
           </p>
         </div>
         <div class="manga-hub-stats">
@@ -1380,13 +1588,13 @@ function MangaHub() {
       </section>
 
       {MANGA_COLLECTIONS.map((c) => {
-        const items = mangaManifestData.filter((m) => (m.collection || 'short') === c.key);
+        const items = mangaManifestData.filter((m) => (m.collection || MANGA_COLLECTIONS[0].key) === c.key);
         if (!items.length) return null;
         return (
           <section key={c.key} class="manga-collection" aria-label={c.vi}>
             <header class="manga-collection-head">
               <h2 class="manga-collection-title">
-                <span lang="zh-Hant">{c.zh}</span>
+                <span lang="zh-Hans">{c.zh}</span>
                 <span>{c.vi}</span>
               </h2>
               <span class="manga-collection-meta">{`${items.filter((m) => isStoryRead(m.id)).length} / ${items.length} đã đọc · ${c.range}`}</span>
@@ -1399,7 +1607,9 @@ function MangaHub() {
       })}
 
       <p class="manga-hub-credit">
-        Nguồn: 《哆啦A梦》 của Fujiko F. Fujio (Shogakukan; bản tiếng Trung 香港文化传信). Ảnh scan chỉ dùng cho mục đích học tập phi thương mại.
+        Nguồn: <a href="https://www.peppercarrot.com" target="_blank" rel="noopener">Pepper&amp;Carrot</a> của David Revoy, giấy phép{' '}
+        <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>. Bản dịch tiếng Trung và tiếng Việt do cộng đồng
+        Pepper&amp;Carrot thực hiện; tên người dịch ghi ở từng tập. Lớp tra từ (pinyin, Hán-Việt, nghĩa) do Synapse Hanzi bổ sung.
       </p>
     </div>
   );
@@ -1435,12 +1645,12 @@ const mangaShowVi = signal(false);
 const mangaSheetOpen = signal(false); // mobile bottom sheet: peek (false) / expanded (true) // translation hidden until asked for (active recall)
 const mangaSeen = signal({});
 
-// Display script: Traditional by default (matches the scan). Lookup stays keyed to Simplified (`text`).
-const MANGA_SCRIPT_KEY = 'manga.script';
+// Display script: Simplified by default (matches the Pepper&Carrot pages). Lookup stays keyed to Simplified (`text`).
+const MANGA_SCRIPT_KEY = 'manga.script.v2';
 const MANGA_PINYIN_KEY = 'manga.pinyin';
 const readPref = (key, fallback) => { try { return localStorage.getItem(key) || fallback; } catch (e) { return fallback; } };
 const writePref = (key, val) => { try { localStorage.setItem(key, val); } catch (e) { /* storage unavailable */ } };
-const mangaScript = signal(readPref(MANGA_SCRIPT_KEY, 'trad') === 'simp' ? 'simp' : 'trad');
+const mangaScript = signal(readPref(MANGA_SCRIPT_KEY, 'simp') === 'trad' ? 'trad' : 'simp');
 const mangaPinyinOn = signal(readPref(MANGA_PINYIN_KEY, '1') !== '0');
 function setMangaScript(v) { mangaScript.value = v; writePref(MANGA_SCRIPT_KEY, v); }
 function setMangaPinyin(on) { mangaPinyinOn.value = on; writePref(MANGA_PINYIN_KEY, on ? '1' : '0'); }
@@ -1746,6 +1956,19 @@ function MangaSettings({ canSpread, spread }) {
         <div class="manga-shortcut-row"><span>Toàn màn hình</span><span><kbd>F</kbd></span></div>
         <div class="manga-shortcut-row"><span>Thoát toàn màn hình / về tủ truyện</span><span><kbd>Esc</kbd></span></div>
       </div>
+      <MangaCredits story={activeMangaStory.value} />
+    </div>
+  );
+}
+
+// CC BY attribution for the open comic currently open (author, licence, translators, source link).
+function MangaCredits({ story }) {
+  if (!story || !story.source_credits) return null;
+  return (
+    <div class="manga-settings-credits">
+      <div class="manga-setting-label">Nguồn</div>
+      <p>{story.source_credits}</p>
+      {story.source_url ? <a href={story.source_url} target="_blank" rel="noopener">Xem bản gốc ↗</a> : null}
     </div>
   );
 }
