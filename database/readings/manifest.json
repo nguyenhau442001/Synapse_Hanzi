@@ -2314,7 +2314,9 @@
     "path": "database/readings/hsk1/hsk1_story_001.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/起床.svg",
+    "cover_word": "起床"
   },
   {
     "id": "hsk1_story_002",
@@ -2336,7 +2338,9 @@
     "path": "database/readings/hsk1/hsk1_story_002.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/猫.svg",
+    "cover_word": "猫"
   },
   {
     "id": "hsk1_story_003",
@@ -2358,7 +2362,9 @@
     "path": "database/readings/hsk1/hsk1_story_003.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/商店.svg",
+    "cover_word": "商店"
   },
   {
     "id": "hsk1_story_004",
@@ -2380,7 +2386,9 @@
     "path": "database/readings/hsk1/hsk1_story_004.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/学校.svg",
+    "cover_word": "学校"
   },
   {
     "id": "hsk1_story_005",
@@ -2402,7 +2410,9 @@
     "path": "database/readings/hsk1/hsk1_story_005.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/家.svg",
+    "cover_word": "家"
   },
   {
     "id": "hsk1_story_006",
@@ -2424,7 +2434,9 @@
     "path": "database/readings/hsk1/hsk1_story_006.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/朋友.svg",
+    "cover_word": "朋友"
   },
   {
     "id": "hsk1_story_007",
@@ -2446,7 +2458,9 @@
     "path": "database/readings/hsk1/hsk1_story_007.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/饭馆.svg",
+    "cover_word": "饭馆"
   },
   {
     "id": "hsk1_story_008",
@@ -2468,7 +2482,9 @@
     "path": "database/readings/hsk1/hsk1_story_008.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/衣服.svg",
+    "cover_word": "衣服"
   },
   {
     "id": "hsk1_story_009",
@@ -2490,7 +2506,9 @@
     "path": "database/readings/hsk1/hsk1_story_009.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/下雨.svg",
+    "cover_word": "下雨"
   },
   {
     "id": "hsk1_story_010",
@@ -2512,7 +2530,9 @@
     "path": "database/readings/hsk1/hsk1_story_010.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/飞机.svg",
+    "cover_word": "飞机"
   },
   {
     "id": "hsk1_story_011",
@@ -2534,7 +2554,9 @@
     "path": "database/readings/hsk1/hsk1_story_011.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/狗.svg",
+    "cover_word": "狗"
   },
   {
     "id": "hsk1_story_012",
@@ -2556,7 +2578,9 @@
     "path": "database/readings/hsk1/hsk1_story_012.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/茶.svg",
+    "cover_word": "茶"
   },
   {
     "id": "hsk1_story_013",
@@ -2578,7 +2602,9 @@
     "path": "database/readings/hsk1/hsk1_story_013.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/医生.svg",
+    "cover_word": "医生"
   },
   {
     "id": "hsk1_story_014",
@@ -2600,7 +2626,9 @@
     "path": "database/readings/hsk1/hsk1_story_014.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/星期天.svg",
+    "cover_word": "星期天"
   },
   {
     "id": "hsk1_story_015",
@@ -2622,7 +2650,9 @@
     "path": "database/readings/hsk1/hsk1_story_015.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/做饭.svg",
+    "cover_word": "做饭"
   },
   {
     "id": "hsk1_story_016",
@@ -2644,7 +2674,9 @@
     "path": "database/readings/hsk1/hsk1_story_016.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/汉字.svg",
+    "cover_word": "汉字"
   },
   {
     "id": "hsk1_story_017",
@@ -2666,7 +2698,9 @@
     "path": "database/readings/hsk1/hsk1_story_017.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/音乐.svg",
+    "cover_word": "音乐"
   },
   {
     "id": "hsk1_story_018",
@@ -2688,7 +2722,9 @@
     "path": "database/readings/hsk1/hsk1_story_018.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/天气.svg",
+    "cover_word": "天气"
   },
   {
     "id": "hsk1_story_019",
@@ -2710,7 +2746,9 @@
     "path": "database/readings/hsk1/hsk1_story_019.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/电脑.svg",
+    "cover_word": "电脑"
   },
   {
     "id": "hsk1_story_020",
@@ -2732,7 +2770,9 @@
     "path": "database/readings/hsk1/hsk1_story_020.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/杯子.svg",
+    "cover_word": "杯子"
   },
   {
     "id": "hsk1_story_021",
@@ -2754,7 +2794,9 @@
     "path": "database/readings/hsk1/hsk1_story_021.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/出租车.svg",
+    "cover_word": "出租车"
   },
   {
     "id": "hsk1_story_022",
@@ -2776,7 +2818,9 @@
     "path": "database/readings/hsk1/hsk1_story_022.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/朋友.svg",
+    "cover_word": "朋友"
   },
   {
     "id": "hsk1_story_023",
@@ -2798,7 +2842,9 @@
     "path": "database/readings/hsk1/hsk1_story_023.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/汉语.svg",
+    "cover_word": "汉语"
   },
   {
     "id": "hsk1_story_024",
@@ -2820,7 +2866,9 @@
     "path": "database/readings/hsk1/hsk1_story_024.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/电影.svg",
+    "cover_word": "电影"
   },
   {
     "id": "hsk1_story_025",
@@ -2842,7 +2890,9 @@
     "path": "database/readings/hsk1/hsk1_story_025.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/衣服.svg",
+    "cover_word": "衣服"
   },
   {
     "id": "hsk1_story_026",
@@ -2864,7 +2914,9 @@
     "path": "database/readings/hsk1/hsk1_story_026.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/飞机.svg",
+    "cover_word": "飞机"
   },
   {
     "id": "hsk1_story_027",
@@ -2886,7 +2938,9 @@
     "path": "database/readings/hsk1/hsk1_story_027.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/米饭.svg",
+    "cover_word": "米饭"
   },
   {
     "id": "hsk1_story_028",
@@ -2908,7 +2962,9 @@
     "path": "database/readings/hsk1/hsk1_story_028.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/儿子.svg",
+    "cover_word": "儿子"
   },
   {
     "id": "hsk1_story_029",
@@ -2930,7 +2986,9 @@
     "path": "database/readings/hsk1/hsk1_story_029.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/书.svg",
+    "cover_word": "书"
   },
   {
     "id": "hsk1_story_030",
@@ -2952,7 +3010,9 @@
     "path": "database/readings/hsk1/hsk1_story_030.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/睡觉.svg",
+    "cover_word": "睡觉"
   },
   {
     "id": "hsk1_story_031",
@@ -2974,7 +3034,9 @@
     "path": "database/readings/hsk1/hsk1_story_031.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/妈妈.svg",
+    "cover_word": "妈妈"
   },
   {
     "id": "hsk1_story_032",
@@ -2996,7 +3058,9 @@
     "path": "database/readings/hsk1/hsk1_story_032.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/冷.svg",
+    "cover_word": "冷"
   },
   {
     "id": "hsk1_story_033",
@@ -3018,7 +3082,9 @@
     "path": "database/readings/hsk1/hsk1_story_033.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/同学.svg",
+    "cover_word": "同学"
   },
   {
     "id": "hsk1_story_034",
@@ -3040,7 +3106,9 @@
     "path": "database/readings/hsk1/hsk1_story_034.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/苹果.svg",
+    "cover_word": "苹果"
   },
   {
     "id": "hsk1_story_035",
@@ -3062,7 +3130,9 @@
     "path": "database/readings/hsk1/hsk1_story_035.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/爸爸.svg",
+    "cover_word": "爸爸"
   },
   {
     "id": "hsk1_story_036",
@@ -3084,7 +3154,9 @@
     "path": "database/readings/hsk1/hsk1_story_036.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/椅子.svg",
+    "cover_word": "椅子"
   },
   {
     "id": "hsk1_story_037",
@@ -3106,7 +3178,9 @@
     "path": "database/readings/hsk1/hsk1_story_037.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/筷子.svg",
+    "cover_word": "筷子"
   },
   {
     "id": "hsk1_story_038",
@@ -3128,7 +3202,9 @@
     "path": "database/readings/hsk1/hsk1_story_038.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/人.svg",
+    "cover_word": "人"
   },
   {
     "id": "hsk1_story_039",
@@ -3150,7 +3226,9 @@
     "path": "database/readings/hsk1/hsk1_story_039.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/星期.svg",
+    "cover_word": "星期"
   },
   {
     "id": "hsk1_story_040",
@@ -3172,7 +3250,9 @@
     "path": "database/readings/hsk1/hsk1_story_040.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/饭店.svg",
+    "cover_word": "饭店"
   },
   {
     "id": "hsk1_story_041",
@@ -3194,7 +3274,9 @@
     "path": "database/readings/hsk1/hsk1_story_041.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/汉字.svg",
+    "cover_word": "汉字"
   },
   {
     "id": "hsk1_story_042",
@@ -3216,7 +3298,9 @@
     "path": "database/readings/hsk1/hsk1_story_042.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/水.svg",
+    "cover_word": "水"
   },
   {
     "id": "hsk1_story_043",
@@ -3238,7 +3322,9 @@
     "path": "database/readings/hsk1/hsk1_story_043.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/老师.svg",
+    "cover_word": "老师"
   },
   {
     "id": "hsk1_story_044",
@@ -3260,7 +3346,9 @@
     "path": "database/readings/hsk1/hsk1_story_044.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/电视.svg",
+    "cover_word": "电视"
   },
   {
     "id": "hsk1_story_045",
@@ -3282,7 +3370,9 @@
     "path": "database/readings/hsk1/hsk1_story_045.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/下雨.svg",
+    "cover_word": "下雨"
   },
   {
     "id": "hsk1_story_046",
@@ -3304,7 +3394,9 @@
     "path": "database/readings/hsk1/hsk1_story_046.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/水果.svg",
+    "cover_word": "水果"
   },
   {
     "id": "hsk1_story_047",
@@ -3326,7 +3418,9 @@
     "path": "database/readings/hsk1/hsk1_story_047.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/女儿.svg",
+    "cover_word": "女儿"
   },
   {
     "id": "hsk1_story_048",
@@ -3348,7 +3442,9 @@
     "path": "database/readings/hsk1/hsk1_story_048.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/学校.svg",
+    "cover_word": "学校"
   },
   {
     "id": "hsk1_story_049",
@@ -3370,7 +3466,9 @@
     "path": "database/readings/hsk1/hsk1_story_049.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/朋友.svg",
+    "cover_word": "朋友"
   },
   {
     "id": "hsk1_story_050",
@@ -3392,7 +3490,9 @@
     "path": "database/readings/hsk1/hsk1_story_050.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/汉语.svg",
+    "cover_word": "汉语"
   },
   {
     "id": "hsk2_story_001",
@@ -3414,7 +3514,9 @@
     "path": "database/readings/hsk2/hsk2_story_001.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/医生.svg",
+    "cover_word": "医生"
   },
   {
     "id": "hsk2_story_002",
@@ -3436,7 +3538,9 @@
     "path": "database/readings/hsk2/hsk2_story_002.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/篮球.svg",
+    "cover_word": "篮球"
   },
   {
     "id": "hsk2_story_003",
@@ -3458,7 +3562,9 @@
     "path": "database/readings/hsk2/hsk2_story_003.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/火车.svg",
+    "cover_word": "火车"
   },
   {
     "id": "hsk2_story_004",
@@ -3480,7 +3586,9 @@
     "path": "database/readings/hsk2/hsk2_story_004.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/狗.svg",
+    "cover_word": "狗"
   },
   {
     "id": "hsk2_story_005",
@@ -3502,7 +3610,9 @@
     "path": "database/readings/hsk2/hsk2_story_005.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/宾馆.svg",
+    "cover_word": "宾馆"
   },
   {
     "id": "hsk2_story_006",
@@ -3524,7 +3634,9 @@
     "path": "database/readings/hsk2/hsk2_story_006.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/生日.svg",
+    "cover_word": "生日"
   },
   {
     "id": "hsk2_story_007",
@@ -3546,7 +3658,9 @@
     "path": "database/readings/hsk2/hsk2_story_007.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/公司.svg",
+    "cover_word": "公司"
   },
   {
     "id": "hsk2_story_008",
@@ -3568,7 +3682,9 @@
     "path": "database/readings/hsk2/hsk2_story_008.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/西瓜.svg",
+    "cover_word": "西瓜"
   },
   {
     "id": "hsk2_story_009",
@@ -3590,7 +3706,9 @@
     "path": "database/readings/hsk2/hsk2_story_009.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/累.svg",
+    "cover_word": "累"
   },
   {
     "id": "hsk2_story_010",
@@ -3612,7 +3730,9 @@
     "path": "database/readings/hsk2/hsk2_story_010.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/咖啡.svg",
+    "cover_word": "咖啡"
   },
   {
     "id": "hsk2_story_011",
@@ -3634,7 +3754,9 @@
     "path": "database/readings/hsk2/hsk2_story_011.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/跑步.svg",
+    "cover_word": "跑步"
   },
   {
     "id": "hsk2_story_012",
@@ -3656,7 +3778,9 @@
     "path": "database/readings/hsk2/hsk2_story_012.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/教室.svg",
+    "cover_word": "教室"
   },
   {
     "id": "hsk2_story_013",
@@ -3678,7 +3802,9 @@
     "path": "database/readings/hsk2/hsk2_story_013.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/公司.svg",
+    "cover_word": "公司"
   },
   {
     "id": "hsk2_story_014",
@@ -3700,7 +3826,9 @@
     "path": "database/readings/hsk2/hsk2_story_014.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/做饭.svg",
+    "cover_word": "做饭"
   },
   {
     "id": "hsk2_story_015",
@@ -3722,7 +3850,9 @@
     "path": "database/readings/hsk2/hsk2_story_015.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/公交车.svg",
+    "cover_word": "公交车"
   },
   {
     "id": "hsk2_story_016",
@@ -3744,7 +3874,9 @@
     "path": "database/readings/hsk2/hsk2_story_016.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/妹妹.svg",
+    "cover_word": "妹妹"
   },
   {
     "id": "hsk2_story_017",
@@ -3766,7 +3898,9 @@
     "path": "database/readings/hsk2/hsk2_story_017.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/雪.svg",
+    "cover_word": "雪"
   },
   {
     "id": "hsk2_story_018",
@@ -3788,7 +3922,9 @@
     "path": "database/readings/hsk2/hsk2_story_018.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/饭馆.svg",
+    "cover_word": "饭馆"
   },
   {
     "id": "hsk2_story_019",
@@ -3810,7 +3946,9 @@
     "path": "database/readings/hsk2/hsk2_story_019.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/旅游.svg",
+    "cover_word": "旅游"
   },
   {
     "id": "hsk2_story_020",
@@ -3832,7 +3970,9 @@
     "path": "database/readings/hsk2/hsk2_story_020.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/衣服.svg",
+    "cover_word": "衣服"
   },
   {
     "id": "hsk2_story_021",
@@ -3854,7 +3994,9 @@
     "path": "database/readings/hsk2/hsk2_story_021.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/哥哥.svg",
+    "cover_word": "哥哥"
   },
   {
     "id": "hsk2_story_022",
@@ -3876,7 +4018,9 @@
     "path": "database/readings/hsk2/hsk2_story_022.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/足球.svg",
+    "cover_word": "足球"
   },
   {
     "id": "hsk2_story_023",
@@ -3898,7 +4042,9 @@
     "path": "database/readings/hsk2/hsk2_story_023.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/走路.svg",
+    "cover_word": "走路"
   },
   {
     "id": "hsk2_story_024",
@@ -3920,7 +4066,9 @@
     "path": "database/readings/hsk2/hsk2_story_024.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/朋友.svg",
+    "cover_word": "朋友"
   },
   {
     "id": "hsk2_story_025",
@@ -3942,7 +4090,9 @@
     "path": "database/readings/hsk2/hsk2_story_025.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/累.svg",
+    "cover_word": "累"
   },
   {
     "id": "hsk2_story_026",
@@ -3964,7 +4114,9 @@
     "path": "database/readings/hsk2/hsk2_story_026.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/手机.svg",
+    "cover_word": "手机"
   },
   {
     "id": "hsk2_story_027",
@@ -3986,7 +4138,9 @@
     "path": "database/readings/hsk2/hsk2_story_027.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/鸡蛋.svg",
+    "cover_word": "鸡蛋"
   },
   {
     "id": "hsk2_story_028",
@@ -4008,7 +4162,9 @@
     "path": "database/readings/hsk2/hsk2_story_028.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/钥匙.svg",
+    "cover_word": "钥匙"
   },
   {
     "id": "hsk2_story_029",
@@ -4030,7 +4186,9 @@
     "path": "database/readings/hsk2/hsk2_story_029.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/书店.svg",
+    "cover_word": "书店"
   },
   {
     "id": "hsk2_story_030",
@@ -4052,7 +4210,9 @@
     "path": "database/readings/hsk2/hsk2_story_030.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/歌.svg",
+    "cover_word": "歌"
   },
   {
     "id": "hsk2_story_031",
@@ -4074,7 +4234,9 @@
     "path": "database/readings/hsk2/hsk2_story_031.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/医生.svg",
+    "cover_word": "医生"
   },
   {
     "id": "hsk2_story_032",
@@ -4096,7 +4258,9 @@
     "path": "database/readings/hsk2/hsk2_story_032.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/猫.svg",
+    "cover_word": "猫"
   },
   {
     "id": "hsk2_story_033",
@@ -4118,7 +4282,9 @@
     "path": "database/readings/hsk2/hsk2_story_033.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/报纸.svg",
+    "cover_word": "报纸"
   },
   {
     "id": "hsk2_story_034",
@@ -4140,7 +4306,9 @@
     "path": "database/readings/hsk2/hsk2_story_034.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/同事.svg",
+    "cover_word": "同事"
   },
   {
     "id": "hsk2_story_035",
@@ -4162,7 +4330,9 @@
     "path": "database/readings/hsk2/hsk2_story_035.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/笑.svg",
+    "cover_word": "笑"
   },
   {
     "id": "hsk2_story_036",
@@ -4184,7 +4354,9 @@
     "path": "database/readings/hsk2/hsk2_story_036.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/考试.svg",
+    "cover_word": "考试"
   },
   {
     "id": "hsk2_story_037",
@@ -4206,7 +4378,9 @@
     "path": "database/readings/hsk2/hsk2_story_037.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/游泳.svg",
+    "cover_word": "游泳"
   },
   {
     "id": "hsk2_story_038",
@@ -4228,7 +4402,9 @@
     "path": "database/readings/hsk2/hsk2_story_038.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/妻子.svg",
+    "cover_word": "妻子"
   },
   {
     "id": "hsk2_story_039",
@@ -4250,7 +4426,9 @@
     "path": "database/readings/hsk2/hsk2_story_039.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/公园.svg",
+    "cover_word": "公园"
   },
   {
     "id": "hsk2_story_040",
@@ -4272,7 +4450,9 @@
     "path": "database/readings/hsk2/hsk2_story_040.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/火车.svg",
+    "cover_word": "火车"
   },
   {
     "id": "hsk2_story_041",
@@ -4294,7 +4474,9 @@
     "path": "database/readings/hsk2/hsk2_story_041.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/手机.svg",
+    "cover_word": "手机"
   },
   {
     "id": "hsk2_story_042",
@@ -4316,7 +4498,9 @@
     "path": "database/readings/hsk2/hsk2_story_042.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/红色.svg",
+    "cover_word": "红色"
   },
   {
     "id": "hsk2_story_043",
@@ -4338,7 +4522,9 @@
     "path": "database/readings/hsk2/hsk2_story_043.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/弟弟.svg",
+    "cover_word": "弟弟"
   },
   {
     "id": "hsk2_story_044",
@@ -4360,7 +4546,9 @@
     "path": "database/readings/hsk2/hsk2_story_044.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/太阳.svg",
+    "cover_word": "太阳"
   },
   {
     "id": "hsk2_story_045",
@@ -4382,7 +4570,9 @@
     "path": "database/readings/hsk2/hsk2_story_045.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/学习.svg",
+    "cover_word": "学习"
   },
   {
     "id": "hsk2_story_046",
@@ -4404,7 +4594,9 @@
     "path": "database/readings/hsk2/hsk2_story_046.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/家.svg",
+    "cover_word": "家"
   },
   {
     "id": "hsk2_story_047",
@@ -4426,7 +4618,9 @@
     "path": "database/readings/hsk2/hsk2_story_047.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/西瓜.svg",
+    "cover_word": "西瓜"
   },
   {
     "id": "hsk2_story_048",
@@ -4448,7 +4642,9 @@
     "path": "database/readings/hsk2/hsk2_story_048.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/生日.svg",
+    "cover_word": "生日"
   },
   {
     "id": "hsk2_story_049",
@@ -4470,7 +4666,9 @@
     "path": "database/readings/hsk2/hsk2_story_049.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/衣服.svg",
+    "cover_word": "衣服"
   },
   {
     "id": "hsk2_story_050",
@@ -4492,7 +4690,9 @@
     "path": "database/readings/hsk2/hsk2_story_050.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/雪.svg",
+    "cover_word": "雪"
   },
   {
     "id": "hsk3_story_001",
@@ -4514,7 +4714,9 @@
     "path": "database/readings/hsk3/hsk3_story_001.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/家.svg",
+    "cover_word": "家"
   },
   {
     "id": "hsk3_story_002",
@@ -4536,7 +4738,9 @@
     "path": "database/readings/hsk3/hsk3_story_002.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/山.svg",
+    "cover_word": "山"
   },
   {
     "id": "hsk3_story_003",
@@ -4558,7 +4762,9 @@
     "path": "database/readings/hsk3/hsk3_story_003.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/图书馆.svg",
+    "cover_word": "图书馆"
   },
   {
     "id": "hsk3_story_004",
@@ -4580,7 +4786,9 @@
     "path": "database/readings/hsk3/hsk3_story_004.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/地铁.svg",
+    "cover_word": "地铁"
   },
   {
     "id": "hsk3_story_005",
@@ -4602,7 +4810,9 @@
     "path": "database/readings/hsk3/hsk3_story_005.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/演讲.svg",
+    "cover_word": "演讲"
   },
   {
     "id": "hsk3_story_006",
@@ -4624,7 +4834,9 @@
     "path": "database/readings/hsk3/hsk3_story_006.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/超市.svg",
+    "cover_word": "超市"
   },
   {
     "id": "hsk3_story_007",
@@ -4646,7 +4858,9 @@
     "path": "database/readings/hsk3/hsk3_story_007.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/感冒.svg",
+    "cover_word": "感冒"
   },
   {
     "id": "hsk3_story_008",
@@ -4668,7 +4882,9 @@
     "path": "database/readings/hsk3/hsk3_story_008.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/奶奶.svg",
+    "cover_word": "奶奶"
   },
   {
     "id": "hsk3_story_009",
@@ -4690,7 +4906,9 @@
     "path": "database/readings/hsk3/hsk3_story_009.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/春天.svg",
+    "cover_word": "春天"
   },
   {
     "id": "hsk3_story_010",
@@ -4712,7 +4930,9 @@
     "path": "database/readings/hsk3/hsk3_story_010.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/朋友.svg",
+    "cover_word": "朋友"
   },
   {
     "id": "hsk3_story_011",
@@ -4734,7 +4954,9 @@
     "path": "database/readings/hsk3/hsk3_story_011.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/餐厅.svg",
+    "cover_word": "餐厅"
   },
   {
     "id": "hsk3_story_012",
@@ -4756,7 +4978,9 @@
     "path": "database/readings/hsk3/hsk3_story_012.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/自行车.svg",
+    "cover_word": "自行车"
   },
   {
     "id": "hsk3_story_013",
@@ -4778,7 +5002,9 @@
     "path": "database/readings/hsk3/hsk3_story_013.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/车站.svg",
+    "cover_word": "车站"
   },
   {
     "id": "hsk3_story_014",
@@ -4800,7 +5026,9 @@
     "path": "database/readings/hsk3/hsk3_story_014.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/暑假.svg",
+    "cover_word": "暑假"
   },
   {
     "id": "hsk3_story_015",
@@ -4822,7 +5050,9 @@
     "path": "database/readings/hsk3/hsk3_story_015.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/包.svg",
+    "cover_word": "包"
   },
   {
     "id": "hsk3_story_016",
@@ -4844,7 +5074,9 @@
     "path": "database/readings/hsk3/hsk3_story_016.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/动物园.svg",
+    "cover_word": "动物园"
   },
   {
     "id": "hsk3_story_017",
@@ -4866,7 +5098,9 @@
     "path": "database/readings/hsk3/hsk3_story_017.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/西红柿.svg",
+    "cover_word": "西红柿"
   },
   {
     "id": "hsk3_story_018",
@@ -4888,7 +5122,9 @@
     "path": "database/readings/hsk3/hsk3_story_018.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/邻居.svg",
+    "cover_word": "邻居"
   },
   {
     "id": "hsk3_story_019",
@@ -4910,7 +5146,9 @@
     "path": "database/readings/hsk3/hsk3_story_019.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/期末.svg",
+    "cover_word": "期末"
   },
   {
     "id": "hsk3_story_020",
@@ -4932,7 +5170,9 @@
     "path": "database/readings/hsk3/hsk3_story_020.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/商场.svg",
+    "cover_word": "商场"
   },
   {
     "id": "hsk3_story_021",
@@ -4954,7 +5194,9 @@
     "path": "database/readings/hsk3/hsk3_story_021.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/博物馆.svg",
+    "cover_word": "博物馆"
   },
   {
     "id": "hsk3_story_022",
@@ -4976,7 +5218,9 @@
     "path": "database/readings/hsk3/hsk3_story_022.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/足球.svg",
+    "cover_word": "足球"
   },
   {
     "id": "hsk3_story_023",
@@ -4998,7 +5242,9 @@
     "path": "database/readings/hsk3/hsk3_story_023.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level7/吉他.svg",
+    "cover_word": "吉他"
   },
   {
     "id": "hsk3_story_024",
@@ -5020,7 +5266,9 @@
     "path": "database/readings/hsk3/hsk3_story_024.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/雨.svg",
+    "cover_word": "雨"
   },
   {
     "id": "hsk3_story_025",
@@ -5042,7 +5290,9 @@
     "path": "database/readings/hsk3/hsk3_story_025.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/爷爷.svg",
+    "cover_word": "爷爷"
   },
   {
     "id": "hsk3_story_026",
@@ -5064,7 +5314,9 @@
     "path": "database/readings/hsk3/hsk3_story_026.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/电影院.svg",
+    "cover_word": "电影院"
   },
   {
     "id": "hsk3_story_027",
@@ -5086,7 +5338,9 @@
     "path": "database/readings/hsk3/hsk3_story_027.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/眼睛.svg",
+    "cover_word": "眼睛"
   },
   {
     "id": "hsk3_story_028",
@@ -5108,7 +5362,9 @@
     "path": "database/readings/hsk3/hsk3_story_028.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/迷路.svg",
+    "cover_word": "迷路"
   },
   {
     "id": "hsk3_story_029",
@@ -5130,7 +5386,9 @@
     "path": "database/readings/hsk3/hsk3_story_029.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/月饼.svg",
+    "cover_word": "月饼"
   },
   {
     "id": "hsk3_story_030",
@@ -5152,7 +5410,9 @@
     "path": "database/readings/hsk3/hsk3_story_030.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/银行.svg",
+    "cover_word": "银行"
   },
   {
     "id": "hsk3_story_031",
@@ -5174,7 +5434,9 @@
     "path": "database/readings/hsk3/hsk3_story_031.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/飞机.svg",
+    "cover_word": "飞机"
   },
   {
     "id": "hsk3_story_032",
@@ -5196,7 +5458,9 @@
     "path": "database/readings/hsk3/hsk3_story_032.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/书房.svg",
+    "cover_word": "书房"
   },
   {
     "id": "hsk3_story_033",
@@ -5218,7 +5482,9 @@
     "path": "database/readings/hsk3/hsk3_story_033.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/小朋友.svg",
+    "cover_word": "小朋友"
   },
   {
     "id": "hsk3_story_034",
@@ -5240,7 +5506,9 @@
     "path": "database/readings/hsk3/hsk3_story_034.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/雪.svg",
+    "cover_word": "雪"
   },
   {
     "id": "hsk3_story_035",
@@ -5262,7 +5530,9 @@
     "path": "database/readings/hsk3/hsk3_story_035.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/公园.svg",
+    "cover_word": "公园"
   },
   {
     "id": "hsk3_story_036",
@@ -5284,7 +5554,9 @@
     "path": "database/readings/hsk3/hsk3_story_036.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/老师.svg",
+    "cover_word": "老师"
   },
   {
     "id": "hsk3_story_037",
@@ -5306,7 +5578,9 @@
     "path": "database/readings/hsk3/hsk3_story_037.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/牙.svg",
+    "cover_word": "牙"
   },
   {
     "id": "hsk3_story_038",
@@ -5328,7 +5602,9 @@
     "path": "database/readings/hsk3/hsk3_story_038.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/筷子.svg",
+    "cover_word": "筷子"
   },
   {
     "id": "hsk3_story_039",
@@ -5350,7 +5626,9 @@
     "path": "database/readings/hsk3/hsk3_story_039.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/运动会.svg",
+    "cover_word": "运动会"
   },
   {
     "id": "hsk3_story_040",
@@ -5372,7 +5650,9 @@
     "path": "database/readings/hsk3/hsk3_story_040.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/购物.svg",
+    "cover_word": "购物"
   },
   {
     "id": "hsk3_story_041",
@@ -5394,7 +5674,9 @@
     "path": "database/readings/hsk3/hsk3_story_041.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/包裹.svg",
+    "cover_word": "包裹"
   },
   {
     "id": "hsk3_story_042",
@@ -5416,7 +5698,9 @@
     "path": "database/readings/hsk3/hsk3_story_042.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/面包.svg",
+    "cover_word": "面包"
   },
   {
     "id": "hsk3_story_043",
@@ -5438,7 +5722,9 @@
     "path": "database/readings/hsk3/hsk3_story_043.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/画.svg",
+    "cover_word": "画"
   },
   {
     "id": "hsk3_story_044",
@@ -5460,7 +5746,9 @@
     "path": "database/readings/hsk3/hsk3_story_044.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/湖.svg",
+    "cover_word": "湖"
   },
   {
     "id": "hsk3_story_045",
@@ -5482,7 +5770,9 @@
     "path": "database/readings/hsk3/hsk3_story_045.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/植物.svg",
+    "cover_word": "植物"
   },
   {
     "id": "hsk3_story_046",
@@ -5504,7 +5794,9 @@
     "path": "database/readings/hsk3/hsk3_story_046.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/手机.svg",
+    "cover_word": "手机"
   },
   {
     "id": "hsk3_story_047",
@@ -5526,7 +5818,9 @@
     "path": "database/readings/hsk3/hsk3_story_047.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/年夜饭.svg",
+    "cover_word": "年夜饭"
   },
   {
     "id": "hsk3_story_048",
@@ -5548,7 +5842,9 @@
     "path": "database/readings/hsk3/hsk3_story_048.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/茶.svg",
+    "cover_word": "茶"
   },
   {
     "id": "hsk3_story_049",
@@ -5570,7 +5866,9 @@
     "path": "database/readings/hsk3/hsk3_story_049.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/游泳.svg",
+    "cover_word": "游泳"
   },
   {
     "id": "hsk3_story_050",
@@ -5592,7 +5890,9 @@
     "path": "database/readings/hsk3/hsk3_story_050.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/毕业.svg",
+    "cover_word": "毕业"
   },
   {
     "id": "hsk4_story_001",
@@ -5614,7 +5914,9 @@
     "path": "database/readings/hsk4/hsk4_story_001.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/面试.svg",
+    "cover_word": "面试"
   },
   {
     "id": "hsk4_story_002",
@@ -5636,7 +5938,9 @@
     "path": "database/readings/hsk4/hsk4_story_002.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/经历.svg",
+    "cover_word": "经历"
   },
   {
     "id": "hsk4_story_003",
@@ -5658,7 +5962,9 @@
     "path": "database/readings/hsk4/hsk4_story_003.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/环境.svg",
+    "cover_word": "环境"
   },
   {
     "id": "hsk4_story_004",
@@ -5680,7 +5986,9 @@
     "path": "database/readings/hsk4/hsk4_story_004.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/京剧.svg",
+    "cover_word": "京剧"
   },
   {
     "id": "hsk4_story_005",
@@ -5702,7 +6010,9 @@
     "path": "database/readings/hsk4/hsk4_story_005.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/运动.svg",
+    "cover_word": "运动"
   },
   {
     "id": "hsk4_story_006",
@@ -5724,7 +6034,9 @@
     "path": "database/readings/hsk4/hsk4_story_006.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/合同.svg",
+    "cover_word": "合同"
   },
   {
     "id": "hsk4_story_007",
@@ -5746,7 +6058,9 @@
     "path": "database/readings/hsk4/hsk4_story_007.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/朋友.svg",
+    "cover_word": "朋友"
   },
   {
     "id": "hsk4_story_008",
@@ -5768,7 +6082,9 @@
     "path": "database/readings/hsk4/hsk4_story_008.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/健康.svg",
+    "cover_word": "健康"
   },
   {
     "id": "hsk4_story_009",
@@ -5790,7 +6106,9 @@
     "path": "database/readings/hsk4/hsk4_story_009.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/山.svg",
+    "cover_word": "山"
   },
   {
     "id": "hsk4_story_010",
@@ -5812,7 +6130,9 @@
     "path": "database/readings/hsk4/hsk4_story_010.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/茶.svg",
+    "cover_word": "茶"
   },
   {
     "id": "hsk4_story_011",
@@ -5834,7 +6154,9 @@
     "path": "database/readings/hsk4/hsk4_story_011.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/垃圾.svg",
+    "cover_word": "垃圾"
   },
   {
     "id": "hsk4_story_012",
@@ -5856,7 +6178,9 @@
     "path": "database/readings/hsk4/hsk4_story_012.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/购物.svg",
+    "cover_word": "购物"
   },
   {
     "id": "hsk4_story_013",
@@ -5878,7 +6202,9 @@
     "path": "database/readings/hsk4/hsk4_story_013.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/职场.svg",
+    "cover_word": "职场"
   },
   {
     "id": "hsk4_story_014",
@@ -5900,7 +6226,9 @@
     "path": "database/readings/hsk4/hsk4_story_014.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level6/拖延.svg",
+    "cover_word": "拖延"
   },
   {
     "id": "hsk4_story_015",
@@ -5922,7 +6250,9 @@
     "path": "database/readings/hsk4/hsk4_story_015.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/手机.svg",
+    "cover_word": "手机"
   },
   {
     "id": "hsk4_story_016",
@@ -5944,7 +6274,9 @@
     "path": "database/readings/hsk4/hsk4_story_016.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/纸.svg",
+    "cover_word": "纸"
   },
   {
     "id": "hsk4_story_017",
@@ -5966,7 +6298,9 @@
     "path": "database/readings/hsk4/hsk4_story_017.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/志愿者.svg",
+    "cover_word": "志愿者"
   },
   {
     "id": "hsk4_story_018",
@@ -5988,7 +6322,9 @@
     "path": "database/readings/hsk4/hsk4_story_018.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/水.svg",
+    "cover_word": "水"
   },
   {
     "id": "hsk4_story_019",
@@ -6010,7 +6346,9 @@
     "path": "database/readings/hsk4/hsk4_story_019.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/学习.svg",
+    "cover_word": "学习"
   },
   {
     "id": "hsk4_story_020",
@@ -6032,7 +6370,9 @@
     "path": "database/readings/hsk4/hsk4_story_020.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/情绪.svg",
+    "cover_word": "情绪"
   },
   {
     "id": "hsk4_story_021",
@@ -6054,7 +6394,9 @@
     "path": "database/readings/hsk4/hsk4_story_021.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/高铁.svg",
+    "cover_word": "高铁"
   },
   {
     "id": "hsk4_story_022",
@@ -6076,7 +6418,9 @@
     "path": "database/readings/hsk4/hsk4_story_022.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/自行车.svg",
+    "cover_word": "自行车"
   },
   {
     "id": "hsk4_story_023",
@@ -6098,7 +6442,9 @@
     "path": "database/readings/hsk4/hsk4_story_023.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/饮食.svg",
+    "cover_word": "饮食"
   },
   {
     "id": "hsk4_story_024",
@@ -6120,7 +6466,9 @@
     "path": "database/readings/hsk4/hsk4_story_024.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level6/人工智能.svg",
+    "cover_word": "人工智能"
   },
   {
     "id": "hsk4_story_025",
@@ -6142,7 +6490,9 @@
     "path": "database/readings/hsk4/hsk4_story_025.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/地球.svg",
+    "cover_word": "地球"
   },
   {
     "id": "hsk4_story_026",
@@ -6164,7 +6514,9 @@
     "path": "database/readings/hsk4/hsk4_story_026.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/书法.svg",
+    "cover_word": "书法"
   },
   {
     "id": "hsk4_story_027",
@@ -6186,7 +6538,9 @@
     "path": "database/readings/hsk4/hsk4_story_027.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/动物.svg",
+    "cover_word": "动物"
   },
   {
     "id": "hsk4_story_028",
@@ -6208,7 +6562,9 @@
     "path": "database/readings/hsk4/hsk4_story_028.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/钱.svg",
+    "cover_word": "钱"
   },
   {
     "id": "hsk4_story_029",
@@ -6230,7 +6586,9 @@
     "path": "database/readings/hsk4/hsk4_story_029.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/电脑.svg",
+    "cover_word": "电脑"
   },
   {
     "id": "hsk4_story_030",
@@ -6252,7 +6610,9 @@
     "path": "database/readings/hsk4/hsk4_story_030.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level6/园林.svg",
+    "cover_word": "园林"
   },
   {
     "id": "hsk4_story_031",
@@ -6274,7 +6634,9 @@
     "path": "database/readings/hsk4/hsk4_story_031.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/睡眠.svg",
+    "cover_word": "睡眠"
   },
   {
     "id": "hsk4_story_032",
@@ -6296,7 +6658,9 @@
     "path": "database/readings/hsk4/hsk4_story_032.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/农村.svg",
+    "cover_word": "农村"
   },
   {
     "id": "hsk4_story_033",
@@ -6318,7 +6682,9 @@
     "path": "database/readings/hsk4/hsk4_story_033.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/手机.svg",
+    "cover_word": "手机"
   },
   {
     "id": "hsk4_story_034",
@@ -6340,7 +6706,9 @@
     "path": "database/readings/hsk4/hsk4_story_034.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/锻炼.svg",
+    "cover_word": "锻炼"
   },
   {
     "id": "hsk4_story_035",
@@ -6362,7 +6730,9 @@
     "path": "database/readings/hsk4/hsk4_story_035.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level6/灯笼.svg",
+    "cover_word": "灯笼"
   },
   {
     "id": "hsk4_story_036",
@@ -6384,7 +6754,9 @@
     "path": "database/readings/hsk4/hsk4_story_036.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/自行车.svg",
+    "cover_word": "自行车"
   },
   {
     "id": "hsk4_story_037",
@@ -6406,7 +6778,9 @@
     "path": "database/readings/hsk4/hsk4_story_037.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/阅读.svg",
+    "cover_word": "阅读"
   },
   {
     "id": "hsk4_story_038",
@@ -6428,7 +6802,9 @@
     "path": "database/readings/hsk4/hsk4_story_038.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/建筑.svg",
+    "cover_word": "建筑"
   },
   {
     "id": "hsk4_story_039",
@@ -6450,7 +6826,9 @@
     "path": "database/readings/hsk4/hsk4_story_039.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/音乐.svg",
+    "cover_word": "音乐"
   },
   {
     "id": "hsk4_story_040",
@@ -6472,7 +6850,9 @@
     "path": "database/readings/hsk4/hsk4_story_040.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/博物馆.svg",
+    "cover_word": "博物馆"
   },
   {
     "id": "hsk4_story_041",
@@ -6494,7 +6874,9 @@
     "path": "database/readings/hsk4/hsk4_story_041.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/创业.svg",
+    "cover_word": "创业"
   },
   {
     "id": "hsk4_story_042",
@@ -6516,7 +6898,9 @@
     "path": "database/readings/hsk4/hsk4_story_042.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level6/新能源.svg",
+    "cover_word": "新能源"
   },
   {
     "id": "hsk4_story_043",
@@ -6538,7 +6922,9 @@
     "path": "database/readings/hsk4/hsk4_story_043.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/家庭.svg",
+    "cover_word": "家庭"
   },
   {
     "id": "hsk4_story_044",
@@ -6560,7 +6946,9 @@
     "path": "database/readings/hsk4/hsk4_story_044.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/锻炼.svg",
+    "cover_word": "锻炼"
   },
   {
     "id": "hsk4_story_045",
@@ -6582,7 +6970,9 @@
     "path": "database/readings/hsk4/hsk4_story_045.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/海洋.svg",
+    "cover_word": "海洋"
   },
   {
     "id": "hsk4_story_046",
@@ -6604,7 +6994,9 @@
     "path": "database/readings/hsk4/hsk4_story_046.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/市场.svg",
+    "cover_word": "市场"
   },
   {
     "id": "hsk4_story_047",
@@ -6626,7 +7018,9 @@
     "path": "database/readings/hsk4/hsk4_story_047.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/时间.svg",
+    "cover_word": "时间"
   },
   {
     "id": "hsk4_story_048",
@@ -6648,7 +7042,9 @@
     "path": "database/readings/hsk4/hsk4_story_048.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/汉语.svg",
+    "cover_word": "汉语"
   },
   {
     "id": "hsk4_story_049",
@@ -6670,7 +7066,9 @@
     "path": "database/readings/hsk4/hsk4_story_049.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level7/徒步.svg",
+    "cover_word": "徒步"
   },
   {
     "id": "hsk4_story_050",
@@ -6692,7 +7090,9 @@
     "path": "database/readings/hsk4/hsk4_story_050.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/太阳.svg",
+    "cover_word": "太阳"
   },
   {
     "id": "hsk5_story_001",
@@ -6714,7 +7114,9 @@
     "path": "database/readings/hsk5/hsk5_story_001.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/手工.svg",
+    "cover_word": "手工"
   },
   {
     "id": "hsk5_story_002",
@@ -6736,7 +7138,9 @@
     "path": "database/readings/hsk5/hsk5_story_002.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level6/人工智能.svg",
+    "cover_word": "人工智能"
   },
   {
     "id": "hsk5_story_003",
@@ -6758,7 +7162,9 @@
     "path": "database/readings/hsk5/hsk5_story_003.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/创业.svg",
+    "cover_word": "创业"
   },
   {
     "id": "hsk5_story_004",
@@ -6780,7 +7186,9 @@
     "path": "database/readings/hsk5/hsk5_story_004.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/读书.svg",
+    "cover_word": "读书"
   },
   {
     "id": "hsk5_story_005",
@@ -6802,7 +7210,9 @@
     "path": "database/readings/hsk5/hsk5_story_005.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/树.svg",
+    "cover_word": "树"
   },
   {
     "id": "hsk5_story_006",
@@ -6824,7 +7234,9 @@
     "path": "database/readings/hsk5/hsk5_story_006.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/地球.svg",
+    "cover_word": "地球"
   },
   {
     "id": "hsk5_story_007",
@@ -6846,7 +7258,9 @@
     "path": "database/readings/hsk5/hsk5_story_007.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/压力.svg",
+    "cover_word": "压力"
   },
   {
     "id": "hsk5_story_008",
@@ -6868,7 +7282,9 @@
     "path": "database/readings/hsk5/hsk5_story_008.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level6/古典.svg",
+    "cover_word": "古典"
   },
   {
     "id": "hsk5_story_009",
@@ -6890,7 +7306,9 @@
     "path": "database/readings/hsk5/hsk5_story_009.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/手机.svg",
+    "cover_word": "手机"
   },
   {
     "id": "hsk5_story_010",
@@ -6912,7 +7330,9 @@
     "path": "database/readings/hsk5/hsk5_story_010.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/饮食.svg",
+    "cover_word": "饮食"
   },
   {
     "id": "hsk5_story_011",
@@ -6934,7 +7354,9 @@
     "path": "database/readings/hsk5/hsk5_story_011.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/自行车.svg",
+    "cover_word": "自行车"
   },
   {
     "id": "hsk5_story_012",
@@ -6956,7 +7378,9 @@
     "path": "database/readings/hsk5/hsk5_story_012.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/同事.svg",
+    "cover_word": "同事"
   },
   {
     "id": "hsk5_story_013",
@@ -6978,7 +7402,9 @@
     "path": "database/readings/hsk5/hsk5_story_013.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/茶.svg",
+    "cover_word": "茶"
   },
   {
     "id": "hsk5_story_014",
@@ -7000,7 +7426,9 @@
     "path": "database/readings/hsk5/hsk5_story_014.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/电脑.svg",
+    "cover_word": "电脑"
   },
   {
     "id": "hsk5_story_015",
@@ -7022,7 +7450,9 @@
     "path": "database/readings/hsk5/hsk5_story_015.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/书.svg",
+    "cover_word": "书"
   },
   {
     "id": "hsk5_story_016",
@@ -7044,7 +7474,9 @@
     "path": "database/readings/hsk5/hsk5_story_016.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/农村.svg",
+    "cover_word": "农村"
   },
   {
     "id": "hsk5_story_017",
@@ -7066,7 +7498,9 @@
     "path": "database/readings/hsk5/hsk5_story_017.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level6/灯笼.svg",
+    "cover_word": "灯笼"
   },
   {
     "id": "hsk5_story_018",
@@ -7088,7 +7522,9 @@
     "path": "database/readings/hsk5/hsk5_story_018.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/大脑.svg",
+    "cover_word": "大脑"
   },
   {
     "id": "hsk5_story_019",
@@ -7110,7 +7546,9 @@
     "path": "database/readings/hsk5/hsk5_story_019.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/房间.svg",
+    "cover_word": "房间"
   },
   {
     "id": "hsk5_story_020",
@@ -7132,7 +7570,9 @@
     "path": "database/readings/hsk5/hsk5_story_020.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/医院.svg",
+    "cover_word": "医院"
   },
   {
     "id": "hsk5_story_021",
@@ -7154,7 +7594,9 @@
     "path": "database/readings/hsk5/hsk5_story_021.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/团队.svg",
+    "cover_word": "团队"
   },
   {
     "id": "hsk5_story_022",
@@ -7176,7 +7618,9 @@
     "path": "database/readings/hsk5/hsk5_story_022.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/书法.svg",
+    "cover_word": "书法"
   },
   {
     "id": "hsk5_story_023",
@@ -7198,7 +7642,9 @@
     "path": "database/readings/hsk5/hsk5_story_023.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/宠物.svg",
+    "cover_word": "宠物"
   },
   {
     "id": "hsk5_story_024",
@@ -7220,7 +7666,9 @@
     "path": "database/readings/hsk5/hsk5_story_024.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/数据.svg",
+    "cover_word": "数据"
   },
   {
     "id": "hsk5_story_025",
@@ -7242,7 +7690,9 @@
     "path": "database/readings/hsk5/hsk5_story_025.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/博物馆.svg",
+    "cover_word": "博物馆"
   },
   {
     "id": "hsk5_story_026",
@@ -7264,7 +7714,9 @@
     "path": "database/readings/hsk5/hsk5_story_026.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/地球.svg",
+    "cover_word": "地球"
   },
   {
     "id": "hsk5_story_027",
@@ -7286,7 +7738,9 @@
     "path": "database/readings/hsk5/hsk5_story_027.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/学生.svg",
+    "cover_word": "学生"
   },
   {
     "id": "hsk5_story_028",
@@ -7308,7 +7762,9 @@
     "path": "database/readings/hsk5/hsk5_story_028.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/睡眠.svg",
+    "cover_word": "睡眠"
   },
   {
     "id": "hsk5_story_029",
@@ -7330,7 +7786,9 @@
     "path": "database/readings/hsk5/hsk5_story_029.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/农业.svg",
+    "cover_word": "农业"
   },
   {
     "id": "hsk5_story_030",
@@ -7352,7 +7810,9 @@
     "path": "database/readings/hsk5/hsk5_story_030.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/音乐.svg",
+    "cover_word": "音乐"
   },
   {
     "id": "hsk5_story_031",
@@ -7374,7 +7834,9 @@
     "path": "database/readings/hsk5/hsk5_story_031.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/绿色.svg",
+    "cover_word": "绿色"
   },
   {
     "id": "hsk5_story_032",
@@ -7396,7 +7858,9 @@
     "path": "database/readings/hsk5/hsk5_story_032.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level6/远程.svg",
+    "cover_word": "远程"
   },
   {
     "id": "hsk5_story_033",
@@ -7418,7 +7882,9 @@
     "path": "database/readings/hsk5/hsk5_story_033.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/建筑.svg",
+    "cover_word": "建筑"
   },
   {
     "id": "hsk5_story_034",
@@ -7440,7 +7906,9 @@
     "path": "database/readings/hsk5/hsk5_story_034.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/友谊.svg",
+    "cover_word": "友谊"
   },
   {
     "id": "hsk5_story_035",
@@ -7462,7 +7930,9 @@
     "path": "database/readings/hsk5/hsk5_story_035.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/体育.svg",
+    "cover_word": "体育"
   },
   {
     "id": "hsk5_story_036",
@@ -7484,7 +7954,9 @@
     "path": "database/readings/hsk5/hsk5_story_036.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/书.svg",
+    "cover_word": "书"
   },
   {
     "id": "hsk5_story_037",
@@ -7506,7 +7978,9 @@
     "path": "database/readings/hsk5/hsk5_story_037.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/旅行.svg",
+    "cover_word": "旅行"
   },
   {
     "id": "hsk5_story_038",
@@ -7528,7 +8002,9 @@
     "path": "database/readings/hsk5/hsk5_story_038.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level6/挫折.svg",
+    "cover_word": "挫折"
   },
   {
     "id": "hsk5_story_039",
@@ -7550,7 +8026,9 @@
     "path": "database/readings/hsk5/hsk5_story_039.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/冰.svg",
+    "cover_word": "冰"
   },
   {
     "id": "hsk5_story_040",
@@ -7572,7 +8050,9 @@
     "path": "database/readings/hsk5/hsk5_story_040.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/舞台.svg",
+    "cover_word": "舞台"
   },
   {
     "id": "hsk5_story_041",
@@ -7594,7 +8074,9 @@
     "path": "database/readings/hsk5/hsk5_story_041.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level6/倾听.svg",
+    "cover_word": "倾听"
   },
   {
     "id": "hsk5_story_042",
@@ -7616,7 +8098,9 @@
     "path": "database/readings/hsk5/hsk5_story_042.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/共享.svg",
+    "cover_word": "共享"
   },
   {
     "id": "hsk5_story_043",
@@ -7638,7 +8122,9 @@
     "path": "database/readings/hsk5/hsk5_story_043.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/乡村.svg",
+    "cover_word": "乡村"
   },
   {
     "id": "hsk5_story_044",
@@ -7660,7 +8146,9 @@
     "path": "database/readings/hsk5/hsk5_story_044.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level7/节气.svg",
+    "cover_word": "节气"
   },
   {
     "id": "hsk5_story_045",
@@ -7682,7 +8170,9 @@
     "path": "database/readings/hsk5/hsk5_story_045.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level6/拖延.svg",
+    "cover_word": "拖延"
   },
   {
     "id": "hsk5_story_046",
@@ -7704,7 +8194,9 @@
     "path": "database/readings/hsk5/hsk5_story_046.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/社区.svg",
+    "cover_word": "社区"
   },
   {
     "id": "hsk5_story_047",
@@ -7726,7 +8218,9 @@
     "path": "database/readings/hsk5/hsk5_story_047.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/塑料.svg",
+    "cover_word": "塑料"
   },
   {
     "id": "hsk5_story_048",
@@ -7748,7 +8242,9 @@
     "path": "database/readings/hsk5/hsk5_story_048.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/节日.svg",
+    "cover_word": "节日"
   },
   {
     "id": "hsk5_story_049",
@@ -7770,7 +8266,9 @@
     "path": "database/readings/hsk5/hsk5_story_049.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/老人.svg",
+    "cover_word": "老人"
   },
   {
     "id": "hsk5_story_050",
@@ -7792,7 +8290,9 @@
     "path": "database/readings/hsk5/hsk5_story_050.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level7/火箭.svg",
+    "cover_word": "火箭"
   },
   {
     "id": "hsk6_story_001",
@@ -7814,7 +8314,9 @@
     "path": "database/readings/hsk6/hsk6_story_001.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/海洋.svg",
+    "cover_word": "海洋"
   },
   {
     "id": "hsk6_story_002",
@@ -7836,7 +8338,9 @@
     "path": "database/readings/hsk6/hsk6_story_002.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level6/诗词.svg",
+    "cover_word": "诗词"
   },
   {
     "id": "hsk6_story_003",
@@ -7858,7 +8362,9 @@
     "path": "database/readings/hsk6/hsk6_story_003.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/森林.svg",
+    "cover_word": "森林"
   },
   {
     "id": "hsk6_story_004",
@@ -7880,7 +8386,9 @@
     "path": "database/readings/hsk6/hsk6_story_004.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/钱.svg",
+    "cover_word": "钱"
   },
   {
     "id": "hsk6_story_005",
@@ -7902,7 +8410,9 @@
     "path": "database/readings/hsk6/hsk6_story_005.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/大脑.svg",
+    "cover_word": "大脑"
   },
   {
     "id": "hsk6_story_006",
@@ -7924,7 +8434,9 @@
     "path": "database/readings/hsk6/hsk6_story_006.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/工厂.svg",
+    "cover_word": "工厂"
   },
   {
     "id": "hsk6_story_007",
@@ -7946,7 +8458,9 @@
     "path": "database/readings/hsk6/hsk6_story_007.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level6/基因.svg",
+    "cover_word": "基因"
   },
   {
     "id": "hsk6_story_008",
@@ -7968,7 +8482,9 @@
     "path": "database/readings/hsk6/hsk6_story_008.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level7/丝绸.svg",
+    "cover_word": "丝绸"
   },
   {
     "id": "hsk6_story_009",
@@ -7990,7 +8506,9 @@
     "path": "database/readings/hsk6/hsk6_story_009.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level6/太阳能.svg",
+    "cover_word": "太阳能"
   },
   {
     "id": "hsk6_story_010",
@@ -8012,7 +8530,9 @@
     "path": "database/readings/hsk6/hsk6_story_010.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/机器人.svg",
+    "cover_word": "机器人"
   },
   {
     "id": "hsk6_story_011",
@@ -8034,7 +8554,9 @@
     "path": "database/readings/hsk6/hsk6_story_011.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level7/望远镜.svg",
+    "cover_word": "望远镜"
   },
   {
     "id": "hsk6_story_012",
@@ -8056,7 +8578,9 @@
     "path": "database/readings/hsk6/hsk6_story_012.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/地球.svg",
+    "cover_word": "地球"
   },
   {
     "id": "hsk6_story_013",
@@ -8078,7 +8602,9 @@
     "path": "database/readings/hsk6/hsk6_story_013.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/药.svg",
+    "cover_word": "药"
   },
   {
     "id": "hsk6_story_014",
@@ -8100,7 +8626,9 @@
     "path": "database/readings/hsk6/hsk6_story_014.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/电脑.svg",
+    "cover_word": "电脑"
   },
   {
     "id": "hsk6_story_015",
@@ -8122,7 +8650,9 @@
     "path": "database/readings/hsk6/hsk6_story_015.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/山.svg",
+    "cover_word": "山"
   },
   {
     "id": "hsk6_story_016",
@@ -8144,7 +8674,9 @@
     "path": "database/readings/hsk6/hsk6_story_016.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/眼镜.svg",
+    "cover_word": "眼镜"
   },
   {
     "id": "hsk6_story_017",
@@ -8166,7 +8698,9 @@
     "path": "database/readings/hsk6/hsk6_story_017.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/音乐.svg",
+    "cover_word": "音乐"
   },
   {
     "id": "hsk6_story_018",
@@ -8188,7 +8722,9 @@
     "path": "database/readings/hsk6/hsk6_story_018.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/工业.svg",
+    "cover_word": "工业"
   },
   {
     "id": "hsk6_story_019",
@@ -8210,7 +8746,9 @@
     "path": "database/readings/hsk6/hsk6_story_019.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/大脑.svg",
+    "cover_word": "大脑"
   },
   {
     "id": "hsk6_story_020",
@@ -8232,7 +8770,9 @@
     "path": "database/readings/hsk6/hsk6_story_020.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/书.svg",
+    "cover_word": "书"
   },
   {
     "id": "hsk6_story_021",
@@ -8254,7 +8794,9 @@
     "path": "database/readings/hsk6/hsk6_story_021.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/银行.svg",
+    "cover_word": "银行"
   },
   {
     "id": "hsk6_story_022",
@@ -8276,7 +8818,9 @@
     "path": "database/readings/hsk6/hsk6_story_022.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level6/考古.svg",
+    "cover_word": "考古"
   },
   {
     "id": "hsk6_story_023",
@@ -8298,7 +8842,9 @@
     "path": "database/readings/hsk6/hsk6_story_023.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level7/显微镜.svg",
+    "cover_word": "显微镜"
   },
   {
     "id": "hsk6_story_024",
@@ -8320,7 +8866,9 @@
     "path": "database/readings/hsk6/hsk6_story_024.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level6/审美.svg",
+    "cover_word": "审美"
   },
   {
     "id": "hsk6_story_025",
@@ -8342,7 +8890,9 @@
     "path": "database/readings/hsk6/hsk6_story_025.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/城市.svg",
+    "cover_word": "城市"
   },
   {
     "id": "hsk6_story_026",
@@ -8364,7 +8914,9 @@
     "path": "database/readings/hsk6/hsk6_story_026.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level7/物种.svg",
+    "cover_word": "物种"
   },
   {
     "id": "hsk6_story_027",
@@ -8386,7 +8938,9 @@
     "path": "database/readings/hsk6/hsk6_story_027.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/书.svg",
+    "cover_word": "书"
   },
   {
     "id": "hsk6_story_028",
@@ -8408,7 +8962,9 @@
     "path": "database/readings/hsk6/hsk6_story_028.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/海洋.svg",
+    "cover_word": "海洋"
   },
   {
     "id": "hsk6_story_029",
@@ -8430,7 +8986,9 @@
     "path": "database/readings/hsk6/hsk6_story_029.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/网络.svg",
+    "cover_word": "网络"
   },
   {
     "id": "hsk6_story_030",
@@ -8452,7 +9010,9 @@
     "path": "database/readings/hsk6/hsk6_story_030.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/画.svg",
+    "cover_word": "画"
   },
   {
     "id": "hsk6_story_031",
@@ -8474,7 +9034,9 @@
     "path": "database/readings/hsk6/hsk6_story_031.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/钱.svg",
+    "cover_word": "钱"
   },
   {
     "id": "hsk6_story_032",
@@ -8496,7 +9058,9 @@
     "path": "database/readings/hsk6/hsk6_story_032.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/雨.svg",
+    "cover_word": "雨"
   },
   {
     "id": "hsk6_story_033",
@@ -8518,7 +9082,9 @@
     "path": "database/readings/hsk6/hsk6_story_033.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/大脑.svg",
+    "cover_word": "大脑"
   },
   {
     "id": "hsk6_story_034",
@@ -8540,7 +9106,9 @@
     "path": "database/readings/hsk6/hsk6_story_034.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/书.svg",
+    "cover_word": "书"
   },
   {
     "id": "hsk6_story_035",
@@ -8562,7 +9130,9 @@
     "path": "database/readings/hsk6/hsk6_story_035.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level6/能源.svg",
+    "cover_word": "能源"
   },
   {
     "id": "hsk6_story_036",
@@ -8584,7 +9154,9 @@
     "path": "database/readings/hsk6/hsk6_story_036.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/博物馆.svg",
+    "cover_word": "博物馆"
   },
   {
     "id": "hsk6_story_037",
@@ -8606,7 +9178,9 @@
     "path": "database/readings/hsk6/hsk6_story_037.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/手机.svg",
+    "cover_word": "手机"
   },
   {
     "id": "hsk6_story_038",
@@ -8628,7 +9202,9 @@
     "path": "database/readings/hsk6/hsk6_story_038.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/河.svg",
+    "cover_word": "河"
   },
   {
     "id": "hsk6_story_039",
@@ -8650,7 +9226,9 @@
     "path": "database/readings/hsk6/hsk6_story_039.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/戏剧.svg",
+    "cover_word": "戏剧"
   },
   {
     "id": "hsk6_story_040",
@@ -8672,7 +9250,9 @@
     "path": "database/readings/hsk6/hsk6_story_040.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/汽车.svg",
+    "cover_word": "汽车"
   },
   {
     "id": "hsk6_story_041",
@@ -8694,7 +9274,9 @@
     "path": "database/readings/hsk6/hsk6_story_041.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/河.svg",
+    "cover_word": "河"
   },
   {
     "id": "hsk6_story_042",
@@ -8716,7 +9298,9 @@
     "path": "database/readings/hsk6/hsk6_story_042.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/数学.svg",
+    "cover_word": "数学"
   },
   {
     "id": "hsk6_story_043",
@@ -8738,7 +9322,9 @@
     "path": "database/readings/hsk6/hsk6_story_043.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/电脑.svg",
+    "cover_word": "电脑"
   },
   {
     "id": "hsk6_story_044",
@@ -8760,7 +9346,9 @@
     "path": "database/readings/hsk6/hsk6_story_044.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/星星.svg",
+    "cover_word": "星星"
   },
   {
     "id": "hsk6_story_045",
@@ -8782,7 +9370,9 @@
     "path": "database/readings/hsk6/hsk6_story_045.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/窗户.svg",
+    "cover_word": "窗户"
   },
   {
     "id": "hsk6_story_046",
@@ -8804,7 +9394,9 @@
     "path": "database/readings/hsk6/hsk6_story_046.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/种子.svg",
+    "cover_word": "种子"
   },
   {
     "id": "hsk6_story_047",
@@ -8826,7 +9418,9 @@
     "path": "database/readings/hsk6/hsk6_story_047.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level7/空间站.svg",
+    "cover_word": "空间站"
   },
   {
     "id": "hsk6_story_048",
@@ -8848,7 +9442,9 @@
     "path": "database/readings/hsk6/hsk6_story_048.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/画.svg",
+    "cover_word": "画"
   },
   {
     "id": "hsk6_story_049",
@@ -8870,7 +9466,9 @@
     "path": "database/readings/hsk6/hsk6_story_049.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/老人.svg",
+    "cover_word": "老人"
   },
   {
     "id": "hsk6_story_050",
@@ -8892,7 +9490,9 @@
     "path": "database/readings/hsk6/hsk6_story_050.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/冰.svg",
+    "cover_word": "冰"
   },
   {
     "id": "hsk7_story_001",
@@ -8914,7 +9514,9 @@
     "path": "database/readings/hsk7/hsk7_story_001.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/工厂.svg",
+    "cover_word": "工厂"
   },
   {
     "id": "hsk7_story_002",
@@ -8936,7 +9538,9 @@
     "path": "database/readings/hsk7/hsk7_story_002.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level7/古籍.svg",
+    "cover_word": "古籍"
   },
   {
     "id": "hsk7_story_003",
@@ -8958,7 +9562,9 @@
     "path": "database/readings/hsk7/hsk7_story_003.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/电脑.svg",
+    "cover_word": "电脑"
   },
   {
     "id": "hsk7_story_004",
@@ -8980,7 +9586,9 @@
     "path": "database/readings/hsk7/hsk7_story_004.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/河.svg",
+    "cover_word": "河"
   },
   {
     "id": "hsk7_story_005",
@@ -9002,7 +9610,9 @@
     "path": "database/readings/hsk7/hsk7_story_005.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/法律.svg",
+    "cover_word": "法律"
   },
   {
     "id": "hsk7_story_006",
@@ -9024,7 +9634,9 @@
     "path": "database/readings/hsk7/hsk7_story_006.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/药.svg",
+    "cover_word": "药"
   },
   {
     "id": "hsk7_story_007",
@@ -9046,7 +9658,9 @@
     "path": "database/readings/hsk7/hsk7_story_007.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/地球.svg",
+    "cover_word": "地球"
   },
   {
     "id": "hsk7_story_008",
@@ -9068,7 +9682,9 @@
     "path": "database/readings/hsk7/hsk7_story_008.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level6/月球.svg",
+    "cover_word": "月球"
   },
   {
     "id": "hsk7_story_009",
@@ -9090,7 +9706,9 @@
     "path": "database/readings/hsk7/hsk7_story_009.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/乡村.svg",
+    "cover_word": "乡村"
   },
   {
     "id": "hsk7_story_010",
@@ -9112,7 +9730,9 @@
     "path": "database/readings/hsk7/hsk7_story_010.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/城市.svg",
+    "cover_word": "城市"
   },
   {
     "id": "hsk7_story_011",
@@ -9134,7 +9754,9 @@
     "path": "database/readings/hsk7/hsk7_story_011.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/城市.svg",
+    "cover_word": "城市"
   },
   {
     "id": "hsk7_story_012",
@@ -9156,7 +9778,9 @@
     "path": "database/readings/hsk7/hsk7_story_012.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level6/太阳能.svg",
+    "cover_word": "太阳能"
   },
   {
     "id": "hsk7_story_013",
@@ -9178,7 +9802,9 @@
     "path": "database/readings/hsk7/hsk7_story_013.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/机器人.svg",
+    "cover_word": "机器人"
   },
   {
     "id": "hsk7_story_014",
@@ -9200,7 +9826,9 @@
     "path": "database/readings/hsk7/hsk7_story_014.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/乡村.svg",
+    "cover_word": "乡村"
   },
   {
     "id": "hsk7_story_015",
@@ -9222,7 +9850,9 @@
     "path": "database/readings/hsk7/hsk7_story_015.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level7/集装箱.svg",
+    "cover_word": "集装箱"
   },
   {
     "id": "hsk7_story_016",
@@ -9244,7 +9874,9 @@
     "path": "database/readings/hsk7/hsk7_story_016.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/老人.svg",
+    "cover_word": "老人"
   },
   {
     "id": "hsk7_story_017",
@@ -9266,7 +9898,9 @@
     "path": "database/readings/hsk7/hsk7_story_017.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/电脑.svg",
+    "cover_word": "电脑"
   },
   {
     "id": "hsk7_story_018",
@@ -9288,7 +9922,9 @@
     "path": "database/readings/hsk7/hsk7_story_018.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/海洋.svg",
+    "cover_word": "海洋"
   },
   {
     "id": "hsk7_story_019",
@@ -9310,7 +9946,9 @@
     "path": "database/readings/hsk7/hsk7_story_019.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/工厂.svg",
+    "cover_word": "工厂"
   },
   {
     "id": "hsk7_story_020",
@@ -9332,7 +9970,9 @@
     "path": "database/readings/hsk7/hsk7_story_020.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/银行.svg",
+    "cover_word": "银行"
   },
   {
     "id": "hsk7_story_021",
@@ -9354,7 +9994,9 @@
     "path": "database/readings/hsk7/hsk7_story_021.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/森林.svg",
+    "cover_word": "森林"
   },
   {
     "id": "hsk7_story_022",
@@ -9376,7 +10018,9 @@
     "path": "database/readings/hsk7/hsk7_story_022.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/互联网.svg",
+    "cover_word": "互联网"
   },
   {
     "id": "hsk7_story_023",
@@ -9398,7 +10042,9 @@
     "path": "database/readings/hsk7/hsk7_story_023.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/火车.svg",
+    "cover_word": "火车"
   },
   {
     "id": "hsk7_story_024",
@@ -9420,7 +10066,9 @@
     "path": "database/readings/hsk7/hsk7_story_024.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level6/港口.svg",
+    "cover_word": "港口"
   },
   {
     "id": "hsk7_story_025",
@@ -9442,7 +10090,9 @@
     "path": "database/readings/hsk7/hsk7_story_025.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/社区.svg",
+    "cover_word": "社区"
   },
   {
     "id": "hsk7_story_026",
@@ -9464,7 +10114,9 @@
     "path": "database/readings/hsk7/hsk7_story_026.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/医院.svg",
+    "cover_word": "医院"
   },
   {
     "id": "hsk7_story_027",
@@ -9486,7 +10138,9 @@
     "path": "database/readings/hsk7/hsk7_story_027.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level6/灯笼.svg",
+    "cover_word": "灯笼"
   },
   {
     "id": "hsk7_story_028",
@@ -9508,7 +10162,9 @@
     "path": "database/readings/hsk7/hsk7_story_028.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level6/水稻.svg",
+    "cover_word": "水稻"
   },
   {
     "id": "hsk7_story_029",
@@ -9530,7 +10186,9 @@
     "path": "database/readings/hsk7/hsk7_story_029.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/楼.svg",
+    "cover_word": "楼"
   },
   {
     "id": "hsk7_story_030",
@@ -9552,7 +10210,9 @@
     "path": "database/readings/hsk7/hsk7_story_030.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/电脑.svg",
+    "cover_word": "电脑"
   },
   {
     "id": "hsk7_story_031",
@@ -9574,7 +10234,9 @@
     "path": "database/readings/hsk7/hsk7_story_031.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level7/地下水.svg",
+    "cover_word": "地下水"
   },
   {
     "id": "hsk7_story_032",
@@ -9596,7 +10258,9 @@
     "path": "database/readings/hsk7/hsk7_story_032.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/电池.svg",
+    "cover_word": "电池"
   },
   {
     "id": "hsk7_story_033",
@@ -9618,7 +10282,9 @@
     "path": "database/readings/hsk7/hsk7_story_033.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/银行.svg",
+    "cover_word": "银行"
   },
   {
     "id": "hsk7_story_034",
@@ -9640,7 +10306,9 @@
     "path": "database/readings/hsk7/hsk7_story_034.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level7/火箭.svg",
+    "cover_word": "火箭"
   },
   {
     "id": "hsk7_story_035",
@@ -9662,7 +10330,9 @@
     "path": "database/readings/hsk7/hsk7_story_035.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/法院.svg",
+    "cover_word": "法院"
   },
   {
     "id": "hsk7_story_036",
@@ -9684,7 +10354,9 @@
     "path": "database/readings/hsk7/hsk7_story_036.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/高铁.svg",
+    "cover_word": "高铁"
   },
   {
     "id": "hsk7_story_037",
@@ -9706,7 +10378,9 @@
     "path": "database/readings/hsk7/hsk7_story_037.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/数据.svg",
+    "cover_word": "数据"
   },
   {
     "id": "hsk7_story_038",
@@ -9728,7 +10402,9 @@
     "path": "database/readings/hsk7/hsk7_story_038.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/工厂.svg",
+    "cover_word": "工厂"
   },
   {
     "id": "hsk7_story_039",
@@ -9750,7 +10426,9 @@
     "path": "database/readings/hsk7/hsk7_story_039.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/电脑.svg",
+    "cover_word": "电脑"
   },
   {
     "id": "hsk7_story_040",
@@ -9772,7 +10450,9 @@
     "path": "database/readings/hsk7/hsk7_story_040.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/银行.svg",
+    "cover_word": "银行"
   },
   {
     "id": "hsk7_story_041",
@@ -9794,7 +10474,9 @@
     "path": "database/readings/hsk7/hsk7_story_041.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/工厂.svg",
+    "cover_word": "工厂"
   },
   {
     "id": "hsk7_story_042",
@@ -9816,7 +10498,9 @@
     "path": "database/readings/hsk7/hsk7_story_042.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/地震.svg",
+    "cover_word": "地震"
   },
   {
     "id": "hsk7_story_043",
@@ -9838,7 +10522,9 @@
     "path": "database/readings/hsk7/hsk7_story_043.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/手工.svg",
+    "cover_word": "手工"
   },
   {
     "id": "hsk7_story_044",
@@ -9860,7 +10546,9 @@
     "path": "database/readings/hsk7/hsk7_story_044.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/汽车.svg",
+    "cover_word": "汽车"
   },
   {
     "id": "hsk7_story_045",
@@ -9882,7 +10570,9 @@
     "path": "database/readings/hsk7/hsk7_story_045.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/河.svg",
+    "cover_word": "河"
   },
   {
     "id": "hsk7_story_046",
@@ -9904,7 +10594,9 @@
     "path": "database/readings/hsk7/hsk7_story_046.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/警察.svg",
+    "cover_word": "警察"
   },
   {
     "id": "hsk7_story_047",
@@ -9926,7 +10618,9 @@
     "path": "database/readings/hsk7/hsk7_story_047.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level6/货币.svg",
+    "cover_word": "货币"
   },
   {
     "id": "hsk7_story_048",
@@ -9948,7 +10642,9 @@
     "path": "database/readings/hsk7/hsk7_story_048.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/大学.svg",
+    "cover_word": "大学"
   },
   {
     "id": "hsk7_story_049",
@@ -9970,7 +10666,9 @@
     "path": "database/readings/hsk7/hsk7_story_049.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/机器人.svg",
+    "cover_word": "机器人"
   },
   {
     "id": "hsk7_story_050",
@@ -9992,7 +10690,9 @@
     "path": "database/readings/hsk7/hsk7_story_050.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level7/温泉.svg",
+    "cover_word": "温泉"
   },
   {
     "id": "hsk8_story_001",
@@ -10014,7 +10714,9 @@
     "path": "database/readings/hsk8/hsk8_story_001.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/书.svg",
+    "cover_word": "书"
   },
   {
     "id": "hsk8_story_002",
@@ -10036,7 +10738,9 @@
     "path": "database/readings/hsk8/hsk8_story_002.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/大脑.svg",
+    "cover_word": "大脑"
   },
   {
     "id": "hsk8_story_003",
@@ -10058,7 +10762,9 @@
     "path": "database/readings/hsk8/hsk8_story_003.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level7/集装箱.svg",
+    "cover_word": "集装箱"
   },
   {
     "id": "hsk8_story_004",
@@ -10080,7 +10786,9 @@
     "path": "database/readings/hsk8/hsk8_story_004.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/博物馆.svg",
+    "cover_word": "博物馆"
   },
   {
     "id": "hsk8_story_005",
@@ -10102,7 +10810,9 @@
     "path": "database/readings/hsk8/hsk8_story_005.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level7/望远镜.svg",
+    "cover_word": "望远镜"
   },
   {
     "id": "hsk8_story_006",
@@ -10124,7 +10834,9 @@
     "path": "database/readings/hsk8/hsk8_story_006.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/电脑.svg",
+    "cover_word": "电脑"
   },
   {
     "id": "hsk8_story_007",
@@ -10146,7 +10858,9 @@
     "path": "database/readings/hsk8/hsk8_story_007.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/森林.svg",
+    "cover_word": "森林"
   },
   {
     "id": "hsk8_story_008",
@@ -10168,7 +10882,9 @@
     "path": "database/readings/hsk8/hsk8_story_008.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level6/灯笼.svg",
+    "cover_word": "灯笼"
   },
   {
     "id": "hsk8_story_009",
@@ -10190,7 +10906,9 @@
     "path": "database/readings/hsk8/hsk8_story_009.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level7/显微镜.svg",
+    "cover_word": "显微镜"
   },
   {
     "id": "hsk8_story_010",
@@ -10212,7 +10930,9 @@
     "path": "database/readings/hsk8/hsk8_story_010.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/城市.svg",
+    "cover_word": "城市"
   },
   {
     "id": "hsk8_story_011",
@@ -10234,7 +10954,9 @@
     "path": "database/readings/hsk8/hsk8_story_011.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/船.svg",
+    "cover_word": "船"
   },
   {
     "id": "hsk8_story_012",
@@ -10256,7 +10978,9 @@
     "path": "database/readings/hsk8/hsk8_story_012.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level7/显微镜.svg",
+    "cover_word": "显微镜"
   },
   {
     "id": "hsk8_story_013",
@@ -10278,7 +11002,9 @@
     "path": "database/readings/hsk8/hsk8_story_013.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/电脑.svg",
+    "cover_word": "电脑"
   },
   {
     "id": "hsk8_story_014",
@@ -10300,7 +11026,9 @@
     "path": "database/readings/hsk8/hsk8_story_014.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/冰.svg",
+    "cover_word": "冰"
   },
   {
     "id": "hsk8_story_015",
@@ -10322,7 +11050,9 @@
     "path": "database/readings/hsk8/hsk8_story_015.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level7/卫星.svg",
+    "cover_word": "卫星"
   },
   {
     "id": "hsk8_story_016",
@@ -10344,7 +11074,9 @@
     "path": "database/readings/hsk8/hsk8_story_016.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/法院.svg",
+    "cover_word": "法院"
   },
   {
     "id": "hsk8_story_017",
@@ -10366,7 +11098,9 @@
     "path": "database/readings/hsk8/hsk8_story_017.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/警察.svg",
+    "cover_word": "警察"
   },
   {
     "id": "hsk8_story_018",
@@ -10388,7 +11122,9 @@
     "path": "database/readings/hsk8/hsk8_story_018.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/家庭.svg",
+    "cover_word": "家庭"
   },
   {
     "id": "hsk8_story_019",
@@ -10410,7 +11146,9 @@
     "path": "database/readings/hsk8/hsk8_story_019.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/城市.svg",
+    "cover_word": "城市"
   },
   {
     "id": "hsk8_story_020",
@@ -10432,7 +11170,9 @@
     "path": "database/readings/hsk8/hsk8_story_020.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level7/显微镜.svg",
+    "cover_word": "显微镜"
   },
   {
     "id": "hsk8_story_021",
@@ -10454,7 +11194,9 @@
     "path": "database/readings/hsk8/hsk8_story_021.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level7/集装箱.svg",
+    "cover_word": "集装箱"
   },
   {
     "id": "hsk8_story_022",
@@ -10476,7 +11218,9 @@
     "path": "database/readings/hsk8/hsk8_story_022.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/医院.svg",
+    "cover_word": "医院"
   },
   {
     "id": "hsk8_story_023",
@@ -10498,7 +11242,9 @@
     "path": "database/readings/hsk8/hsk8_story_023.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/电脑.svg",
+    "cover_word": "电脑"
   },
   {
     "id": "hsk8_story_024",
@@ -10520,7 +11266,9 @@
     "path": "database/readings/hsk8/hsk8_story_024.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/海洋.svg",
+    "cover_word": "海洋"
   },
   {
     "id": "hsk8_story_025",
@@ -10542,7 +11290,9 @@
     "path": "database/readings/hsk8/hsk8_story_025.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/博物馆.svg",
+    "cover_word": "博物馆"
   },
   {
     "id": "hsk8_story_026",
@@ -10564,7 +11314,9 @@
     "path": "database/readings/hsk8/hsk8_story_026.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/画.svg",
+    "cover_word": "画"
   },
   {
     "id": "hsk8_story_027",
@@ -10586,7 +11338,9 @@
     "path": "database/readings/hsk8/hsk8_story_027.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level6/货币.svg",
+    "cover_word": "货币"
   },
   {
     "id": "hsk8_story_028",
@@ -10608,7 +11362,9 @@
     "path": "database/readings/hsk8/hsk8_story_028.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/地球.svg",
+    "cover_word": "地球"
   },
   {
     "id": "hsk8_story_029",
@@ -10630,7 +11386,9 @@
     "path": "database/readings/hsk8/hsk8_story_029.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/机器人.svg",
+    "cover_word": "机器人"
   },
   {
     "id": "hsk8_story_030",
@@ -10652,7 +11410,9 @@
     "path": "database/readings/hsk8/hsk8_story_030.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/银行.svg",
+    "cover_word": "银行"
   },
   {
     "id": "hsk8_story_031",
@@ -10674,7 +11434,9 @@
     "path": "database/readings/hsk8/hsk8_story_031.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/书.svg",
+    "cover_word": "书"
   },
   {
     "id": "hsk8_story_032",
@@ -10696,7 +11458,9 @@
     "path": "database/readings/hsk8/hsk8_story_032.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level7/显微镜.svg",
+    "cover_word": "显微镜"
   },
   {
     "id": "hsk8_story_033",
@@ -10718,7 +11482,9 @@
     "path": "database/readings/hsk8/hsk8_story_033.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/地震.svg",
+    "cover_word": "地震"
   },
   {
     "id": "hsk8_story_034",
@@ -10740,7 +11506,9 @@
     "path": "database/readings/hsk8/hsk8_story_034.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/法院.svg",
+    "cover_word": "法院"
   },
   {
     "id": "hsk8_story_035",
@@ -10762,7 +11530,9 @@
     "path": "database/readings/hsk8/hsk8_story_035.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/大脑.svg",
+    "cover_word": "大脑"
   },
   {
     "id": "hsk8_story_036",
@@ -10784,7 +11554,9 @@
     "path": "database/readings/hsk8/hsk8_story_036.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/药.svg",
+    "cover_word": "药"
   },
   {
     "id": "hsk8_story_037",
@@ -10806,7 +11578,9 @@
     "path": "database/readings/hsk8/hsk8_story_037.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/书.svg",
+    "cover_word": "书"
   },
   {
     "id": "hsk8_story_038",
@@ -10828,7 +11602,9 @@
     "path": "database/readings/hsk8/hsk8_story_038.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/草地.svg",
+    "cover_word": "草地"
   },
   {
     "id": "hsk8_story_039",
@@ -10850,7 +11626,9 @@
     "path": "database/readings/hsk8/hsk8_story_039.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level7/显微镜.svg",
+    "cover_word": "显微镜"
   },
   {
     "id": "hsk8_story_040",
@@ -10872,7 +11650,9 @@
     "path": "database/readings/hsk8/hsk8_story_040.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/工厂.svg",
+    "cover_word": "工厂"
   },
   {
     "id": "hsk8_story_041",
@@ -10894,7 +11674,9 @@
     "path": "database/readings/hsk8/hsk8_story_041.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/河.svg",
+    "cover_word": "河"
   },
   {
     "id": "hsk8_story_042",
@@ -10916,7 +11698,9 @@
     "path": "database/readings/hsk8/hsk8_story_042.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/手机.svg",
+    "cover_word": "手机"
   },
   {
     "id": "hsk8_story_043",
@@ -10938,7 +11722,9 @@
     "path": "database/readings/hsk8/hsk8_story_043.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/电脑.svg",
+    "cover_word": "电脑"
   },
   {
     "id": "hsk8_story_044",
@@ -10960,7 +11746,9 @@
     "path": "database/readings/hsk8/hsk8_story_044.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level7/显微镜.svg",
+    "cover_word": "显微镜"
   },
   {
     "id": "hsk8_story_045",
@@ -10982,7 +11770,9 @@
     "path": "database/readings/hsk8/hsk8_story_045.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/合同.svg",
+    "cover_word": "合同"
   },
   {
     "id": "hsk8_story_046",
@@ -11004,7 +11794,9 @@
     "path": "database/readings/hsk8/hsk8_story_046.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/工厂.svg",
+    "cover_word": "工厂"
   },
   {
     "id": "hsk8_story_047",
@@ -11026,7 +11818,9 @@
     "path": "database/readings/hsk8/hsk8_story_047.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/法院.svg",
+    "cover_word": "法院"
   },
   {
     "id": "hsk8_story_048",
@@ -11048,7 +11842,9 @@
     "path": "database/readings/hsk8/hsk8_story_048.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/电脑.svg",
+    "cover_word": "电脑"
   },
   {
     "id": "hsk8_story_049",
@@ -11070,7 +11866,9 @@
     "path": "database/readings/hsk8/hsk8_story_049.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/钱.svg",
+    "cover_word": "钱"
   },
   {
     "id": "hsk8_story_050",
@@ -11092,7 +11890,9 @@
     "path": "database/readings/hsk8/hsk8_story_050.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/电脑.svg",
+    "cover_word": "电脑"
   },
   {
     "id": "hsk9_story_001",
@@ -11114,7 +11914,9 @@
     "path": "database/readings/hsk9/hsk9_story_001.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/书.svg",
+    "cover_word": "书"
   },
   {
     "id": "hsk9_story_002",
@@ -11136,7 +11938,9 @@
     "path": "database/readings/hsk9/hsk9_story_002.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level7/望远镜.svg",
+    "cover_word": "望远镜"
   },
   {
     "id": "hsk9_story_003",
@@ -11158,7 +11962,9 @@
     "path": "database/readings/hsk9/hsk9_story_003.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/网络.svg",
+    "cover_word": "网络"
   },
   {
     "id": "hsk9_story_004",
@@ -11180,7 +11986,9 @@
     "path": "database/readings/hsk9/hsk9_story_004.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/大脑.svg",
+    "cover_word": "大脑"
   },
   {
     "id": "hsk9_story_005",
@@ -11202,7 +12010,9 @@
     "path": "database/readings/hsk9/hsk9_story_005.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/书.svg",
+    "cover_word": "书"
   },
   {
     "id": "hsk9_story_006",
@@ -11224,7 +12034,9 @@
     "path": "database/readings/hsk9/hsk9_story_006.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/时间.svg",
+    "cover_word": "时间"
   },
   {
     "id": "hsk9_story_007",
@@ -11246,7 +12058,9 @@
     "path": "database/readings/hsk9/hsk9_story_007.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/海洋.svg",
+    "cover_word": "海洋"
   },
   {
     "id": "hsk9_story_008",
@@ -11268,7 +12082,9 @@
     "path": "database/readings/hsk9/hsk9_story_008.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/大脑.svg",
+    "cover_word": "大脑"
   },
   {
     "id": "hsk9_story_009",
@@ -11290,7 +12106,9 @@
     "path": "database/readings/hsk9/hsk9_story_009.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/银行.svg",
+    "cover_word": "银行"
   },
   {
     "id": "hsk9_story_010",
@@ -11312,7 +12130,9 @@
     "path": "database/readings/hsk9/hsk9_story_010.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/地球.svg",
+    "cover_word": "地球"
   },
   {
     "id": "hsk9_story_011",
@@ -11334,7 +12154,9 @@
     "path": "database/readings/hsk9/hsk9_story_011.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/书.svg",
+    "cover_word": "书"
   },
   {
     "id": "hsk9_story_012",
@@ -11356,7 +12178,9 @@
     "path": "database/readings/hsk9/hsk9_story_012.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/星星.svg",
+    "cover_word": "星星"
   },
   {
     "id": "hsk9_story_013",
@@ -11378,7 +12202,9 @@
     "path": "database/readings/hsk9/hsk9_story_013.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/大脑.svg",
+    "cover_word": "大脑"
   },
   {
     "id": "hsk9_story_014",
@@ -11400,7 +12226,9 @@
     "path": "database/readings/hsk9/hsk9_story_014.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/数学.svg",
+    "cover_word": "数学"
   },
   {
     "id": "hsk9_story_015",
@@ -11422,7 +12250,9 @@
     "path": "database/readings/hsk9/hsk9_story_015.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/书.svg",
+    "cover_word": "书"
   },
   {
     "id": "hsk9_story_016",
@@ -11444,7 +12274,9 @@
     "path": "database/readings/hsk9/hsk9_story_016.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/温度.svg",
+    "cover_word": "温度"
   },
   {
     "id": "hsk9_story_017",
@@ -11466,7 +12298,9 @@
     "path": "database/readings/hsk9/hsk9_story_017.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/大脑.svg",
+    "cover_word": "大脑"
   },
   {
     "id": "hsk9_story_018",
@@ -11488,7 +12322,9 @@
     "path": "database/readings/hsk9/hsk9_story_018.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/网络.svg",
+    "cover_word": "网络"
   },
   {
     "id": "hsk9_story_019",
@@ -11510,7 +12346,9 @@
     "path": "database/readings/hsk9/hsk9_story_019.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/书.svg",
+    "cover_word": "书"
   },
   {
     "id": "hsk9_story_020",
@@ -11532,7 +12370,9 @@
     "path": "database/readings/hsk9/hsk9_story_020.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/星星.svg",
+    "cover_word": "星星"
   },
   {
     "id": "hsk9_story_021",
@@ -11554,7 +12394,9 @@
     "path": "database/readings/hsk9/hsk9_story_021.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/窗户.svg",
+    "cover_word": "窗户"
   },
   {
     "id": "hsk9_story_022",
@@ -11576,7 +12418,9 @@
     "path": "database/readings/hsk9/hsk9_story_022.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/动物.svg",
+    "cover_word": "动物"
   },
   {
     "id": "hsk9_story_023",
@@ -11598,7 +12442,9 @@
     "path": "database/readings/hsk9/hsk9_story_023.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/游戏.svg",
+    "cover_word": "游戏"
   },
   {
     "id": "hsk9_story_024",
@@ -11620,7 +12466,9 @@
     "path": "database/readings/hsk9/hsk9_story_024.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/星星.svg",
+    "cover_word": "星星"
   },
   {
     "id": "hsk9_story_025",
@@ -11642,7 +12490,9 @@
     "path": "database/readings/hsk9/hsk9_story_025.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/机器.svg",
+    "cover_word": "机器"
   },
   {
     "id": "hsk9_story_026",
@@ -11664,7 +12514,9 @@
     "path": "database/readings/hsk9/hsk9_story_026.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level7/天平.svg",
+    "cover_word": "天平"
   },
   {
     "id": "hsk9_story_027",
@@ -11686,7 +12538,9 @@
     "path": "database/readings/hsk9/hsk9_story_027.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/物理.svg",
+    "cover_word": "物理"
   },
   {
     "id": "hsk9_story_028",
@@ -11708,7 +12562,9 @@
     "path": "database/readings/hsk9/hsk9_story_028.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/工厂.svg",
+    "cover_word": "工厂"
   },
   {
     "id": "hsk9_story_029",
@@ -11730,7 +12586,9 @@
     "path": "database/readings/hsk9/hsk9_story_029.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/地球.svg",
+    "cover_word": "地球"
   },
   {
     "id": "hsk9_story_030",
@@ -11752,7 +12610,9 @@
     "path": "database/readings/hsk9/hsk9_story_030.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/时间.svg",
+    "cover_word": "时间"
   },
   {
     "id": "hsk9_story_031",
@@ -11774,7 +12634,9 @@
     "path": "database/readings/hsk9/hsk9_story_031.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/植物.svg",
+    "cover_word": "植物"
   },
   {
     "id": "hsk9_story_032",
@@ -11796,7 +12658,9 @@
     "path": "database/readings/hsk9/hsk9_story_032.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level2/画.svg",
+    "cover_word": "画"
   },
   {
     "id": "hsk9_story_033",
@@ -11818,7 +12682,9 @@
     "path": "database/readings/hsk9/hsk9_story_033.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/星星.svg",
+    "cover_word": "星星"
   },
   {
     "id": "hsk9_story_034",
@@ -11840,7 +12706,9 @@
     "path": "database/readings/hsk9/hsk9_story_034.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/法院.svg",
+    "cover_word": "法院"
   },
   {
     "id": "hsk9_story_035",
@@ -11862,7 +12730,9 @@
     "path": "database/readings/hsk9/hsk9_story_035.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/物理.svg",
+    "cover_word": "物理"
   },
   {
     "id": "hsk9_story_036",
@@ -11884,7 +12754,9 @@
     "path": "database/readings/hsk9/hsk9_story_036.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/科学.svg",
+    "cover_word": "科学"
   },
   {
     "id": "hsk9_story_037",
@@ -11906,7 +12778,9 @@
     "path": "database/readings/hsk9/hsk9_story_037.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/动物.svg",
+    "cover_word": "动物"
   },
   {
     "id": "hsk9_story_038",
@@ -11928,7 +12802,9 @@
     "path": "database/readings/hsk9/hsk9_story_038.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/物理.svg",
+    "cover_word": "物理"
   },
   {
     "id": "hsk9_story_039",
@@ -11950,7 +12826,9 @@
     "path": "database/readings/hsk9/hsk9_story_039.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/书.svg",
+    "cover_word": "书"
   },
   {
     "id": "hsk9_story_040",
@@ -11972,7 +12850,9 @@
     "path": "database/readings/hsk9/hsk9_story_040.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/地图.svg",
+    "cover_word": "地图"
   },
   {
     "id": "hsk9_story_041",
@@ -11994,7 +12874,9 @@
     "path": "database/readings/hsk9/hsk9_story_041.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/沙子.svg",
+    "cover_word": "沙子"
   },
   {
     "id": "hsk9_story_042",
@@ -12016,7 +12898,9 @@
     "path": "database/readings/hsk9/hsk9_story_042.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/机器人.svg",
+    "cover_word": "机器人"
   },
   {
     "id": "hsk9_story_043",
@@ -12038,7 +12922,9 @@
     "path": "database/readings/hsk9/hsk9_story_043.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/星星.svg",
+    "cover_word": "星星"
   },
   {
     "id": "hsk9_story_044",
@@ -12060,7 +12946,9 @@
     "path": "database/readings/hsk9/hsk9_story_044.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/地球.svg",
+    "cover_word": "地球"
   },
   {
     "id": "hsk9_story_045",
@@ -12082,7 +12970,9 @@
     "path": "database/readings/hsk9/hsk9_story_045.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level5/大脑.svg",
+    "cover_word": "大脑"
   },
   {
     "id": "hsk9_story_046",
@@ -12104,7 +12994,9 @@
     "path": "database/readings/hsk9/hsk9_story_046.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/书.svg",
+    "cover_word": "书"
   },
   {
     "id": "hsk9_story_047",
@@ -12126,7 +13018,9 @@
     "path": "database/readings/hsk9/hsk9_story_047.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level7/望远镜.svg",
+    "cover_word": "望远镜"
   },
   {
     "id": "hsk9_story_048",
@@ -12148,7 +13042,9 @@
     "path": "database/readings/hsk9/hsk9_story_048.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level1/书.svg",
+    "cover_word": "书"
   },
   {
     "id": "hsk9_story_049",
@@ -12170,7 +13066,9 @@
     "path": "database/readings/hsk9/hsk9_story_049.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level4/科学.svg",
+    "cover_word": "科学"
   },
   {
     "id": "hsk9_story_050",
@@ -12192,6 +13090,8 @@
     "path": "database/readings/hsk9/hsk9_story_050.json",
     "series": "textbook",
     "series_title": "HSK 标准教程",
-    "series_title_vi": "Giáo trình HSK"
+    "series_title_vi": "Giáo trình HSK",
+    "cover_image": "images/HSK_3.0/level3/地图.svg",
+    "cover_word": "地图"
   }
 ]

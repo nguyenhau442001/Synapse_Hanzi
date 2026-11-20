@@ -432,6 +432,16 @@ body.graded-reading-active #screenGradedReading {
   display: block;
 }
 
+/* Square word illustrations (cream editorial SVGs) sit whole on matching paper. */
+.graded-continue-cover.is-illustration,
+.graded-card-cover.is-illustration {
+  background: #F4EDE2;
+}
+
+.graded-card-cover.is-illustration img {
+  object-fit: contain;
+}
+
 .graded-continue-cover {
   width: 64px;
   height: 64px;
