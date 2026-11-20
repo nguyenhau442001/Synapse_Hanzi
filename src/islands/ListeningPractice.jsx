@@ -1455,7 +1455,7 @@ function TopNav() {
   return (
     <header class="listening-top-nav" aria-label={getQuestionProgressText()}>
       <div class="listening-nav-left">
-        <button type="button" class="listening-back-btn" onClick={goBack} title="Quay lại Hub">
+        <button type="button" class="listening-back-btn" onClick={goBack} title="Quay lại danh sách">
           <ChevronLeft size={14} />{' '}
           <span>Trở về</span>
         </button>{' '}

@@ -1382,9 +1382,9 @@ function ReaderNav({ story }) {
   return (
     <header class="graded-reader-nav">
       <div class="graded-reader-top-bar">
-        <button type="button" class="graded-back-btn" onClick={goBackToHub} title="Trở về danh sách bài đọc (Esc)" aria-label="Về Hub bài đọc">
+        <button type="button" class="graded-back-btn" onClick={goBackToHub} title="Trở về danh sách bài đọc (Esc)" aria-label="Về danh sách bài đọc">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6" /></svg>
-          <span class="graded-back-label">Hub</span>
+          <span class="graded-back-label">Danh sách</span>
         </button>
         <div class="graded-reader-bar-title">
           <span class="graded-reader-bar-zh">{story.title.zh}</span>
@@ -1561,8 +1561,8 @@ function MangaHub() {
   return (
     <div class="graded-reading-container manga-hub">
       <div class="manga-hub-topbar">
-        <button type="button" class="graded-back-btn" onClick={() => window.setPrimaryTab('vocab')} title="Quay lại Hub Từ vựng">
-          ← Hub Từ vựng
+        <button type="button" class="graded-back-btn" onClick={() => window.setPrimaryTab('vocab')} title="Quay lại Từ vựng">
+          ← Về Từ vựng
         </button>
       </div>
 
