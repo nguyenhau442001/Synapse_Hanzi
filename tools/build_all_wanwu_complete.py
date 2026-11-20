@@ -131,7 +131,7 @@ def extract_illustration(sp: int, ep: int, sid: str) -> str:
 
     best_img = None
     best_size = 0
-    for p in range(max(0, sp - 1), min(ep, len(reader.pages))):
+    for p in range(max(0, sp - 1), min(ep - 1, len(reader.pages))):
         for img_obj in reader.pages[p].images:
             if len(img_obj.data) > best_size and len(img_obj.data) > 15000:
                 try:

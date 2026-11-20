@@ -767,7 +767,7 @@ const storyHref = (storyId) => `?tab=gradedReading&story=${encodeURIComponent(st
 
 function StoryCover({ story, className }) {
   return story.cover_image ? (
-    <span class={story.cover_word ? `${className} is-illustration` : className}><img src={story.cover_image} alt="" loading="lazy" /></span>
+    <span class={story.cover_word ? `${className} is-illustration` : className}><img src={story.cover_image} alt="" loading="lazy" style={story.cover_focus ? { objectPosition: story.cover_focus } : undefined} /></span>
   ) : (
     <span class={`${className} is-seal`} aria-hidden="true">{sealCharOf(story)}</span>
   );

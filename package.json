@@ -1,6 +1,6 @@
 {
   "name": "hanzi-mind",
-  "version": "3.36.0",
+  "version": "3.36.1",
   "description": "汉字思维 (Hànzì Sīwéi) · Hanzi Mind — Trạm học từ vựng chữ Hán đa giác quan, hiện đại, mỹ học truyền thống Đông phương và 100% Offline (PWA)",
   "private": true,
   "scripts": {
@@ -9,7 +9,7 @@
     "build:islands": "vite build --config vite.islands.config.mjs",
     "build:css": "python3 tools/bundle_css.py",
     "preview": "vite preview",
-    "test": "node tools/test_fast_review_pinyin.js",
+    "test": "node tools/test_fast_review_pinyin.js && python3 tools/check_reading_covers.py",
     "version:patch": "python3 tools/bump_version.py patch",
     "version:minor": "python3 tools/bump_version.py minor",
     "version:major": "python3 tools/bump_version.py major"
