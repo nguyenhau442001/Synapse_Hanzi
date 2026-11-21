@@ -31117,5 +31117,63 @@
     "meaning": "làm chủ, quyết định, đứng ra chủ trì quyết định",
     "zh": "现代青年在人生的重大职业规划和婚姻大事上完全有能力由自己独立<u>做主</u>。",
     "vi": "Thanh niên hiện đại trong các quy hoạch nghề nghiệp trọng đại và việc hôn nhân đại sự của cuộc đời hoàn toàn có năng lực do chính mình độc lập <u>làm chủ</u> quyết định."
+  },
+  "太|tài": {
+    "patterns": [
+      {
+        "form": "太 + Adj + 了",
+        "meaning": "quá …",
+        "match": "太[^，。！？]+?了"
+      },
+      {
+        "form": "不太 + Adj",
+        "meaning": "không … lắm",
+        "match": "不太[^，。！？了]{1,2}"
+      }
+    ]
+  },
+  "很|hěn": {
+    "patterns": [
+      {
+        "form": "Chủ ngữ + 很 + Adj",
+        "meaning": "rất … (câu vị ngữ tính từ thường cần 很)"
+      }
+    ]
+  },
+  "也|yě": {
+    "patterns": [
+      {
+        "form": "Chủ ngữ + 也 + V/Adj",
+        "meaning": "… cũng …"
+      }
+    ]
+  },
+  "都|dōu": {
+    "patterns": [
+      {
+        "form": "Chủ ngữ (số nhiều) + 都 + V",
+        "meaning": "… đều …"
+      }
+    ]
+  },
+  "在|zài": {
+    "patterns": [
+      {
+        "form": "在 + nơi chốn",
+        "meaning": "ở …"
+      },
+      {
+        "form": "在 + nơi chốn + V",
+        "meaning": "làm gì ở đâu"
+      }
+    ]
+  },
+  "不|bù": {
+    "patterns": [
+      {
+        "form": "不 + V/Adj",
+        "meaning": "không … (đọc bú trước thanh 4)"
+      }
+    ]
   }
 }

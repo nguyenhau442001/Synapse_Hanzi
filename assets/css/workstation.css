@@ -1156,6 +1156,42 @@ body.flashcard-study-mode .meta-badges-row .hanviet-badge .hanviet-value {
   letter-spacing: 0.04em;
 }
 
+/* "Mẫu câu" grammar pattern line (back of the card) */
+.card-patterns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 4px 10px;
+  margin: 2px auto 10px;
+  max-width: 640px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+.card-patterns[hidden],
+.card:not(.is-flipped) .card-patterns { display: none !important; }
+.card-patterns-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+.card-patterns-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.card-pattern-form {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.card-pattern-meaning::before { content: "— "; opacity: 0.7; }
+
 /* Mode switch + today's review counters on one row */
 .study-mode-bar {
   display: flex;

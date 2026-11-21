@@ -104,6 +104,9 @@ function buildCardArea() {
           <div class="card-supporting-group" id="cardSupportingGroup" style="display: none;"></div>
         </div>
 
+        <!-- Grammar patterns for function words (back of the card only) -->
+        <div class="card-patterns" id="cardPatterns" hidden></div>
+
         <!-- Khối ví dụ thực tế (Chỉ hiển thị sau khi lật đáp án) -->
         <div class="example-box" id="exampleBox">
           <div class="ex-header-row">
@@ -610,6 +613,41 @@ function updateSrsPreviews(word) {
     if (btn) btn.title = `${label}${nextInterval ? ` (ôn lại sau ${nextInterval})` : ''} • Phím [${key}]`;
   });
 }
+// "Mẫu câu" line: [{ form, meaning, match? }] from the vocab data (function words only).
+function renderCardPatterns(patterns) {
+  const box = document.getElementById('cardPatterns');
+  if (!box) return;
+  const list = Array.isArray(patterns) ? patterns.filter(p => p && p.form) : [];
+  box.hidden = list.length === 0;
+  box.innerHTML = list.length === 0 ? '' : `
+    <span class="card-patterns-label">Mẫu câu</span>
+    <ul class="card-patterns-list">
+      ${list.map(p => `
+        <li class="card-pattern">
+          <span class="card-pattern-form">${window.escapeHtml(p.form)}</span>
+          ${p.meaning ? `<span class="card-pattern-meaning">${window.escapeHtml(p.meaning)}</span>` : ''}
+        </li>`).join('')}
+    </ul>`;
+}
+
+// Underlines the whole grammar pattern (e.g. 太贵了) instead of only the headword when a
+// pattern's `match` regex finds it in the sentence; otherwise keeps the original markup.
+function highlightPatternInExample(exampleHtml, patterns) {
+  if (!exampleHtml || !Array.isArray(patterns)) return exampleHtml || '';
+  const plain = String(exampleHtml).replace(/<\/?u>/g, '');
+  for (const p of patterns) {
+    if (!p || !p.match) continue;
+    let found = null;
+    try { found = new RegExp(p.match).exec(plain); } catch (e) { found = null; }
+    if (found && found[0]) {
+      const start = found.index;
+      const end = start + found[0].length;
+      return plain.slice(0, start) + '<u class="pattern-hl">' + found[0] + '</u>' + plain.slice(end);
+    }
+  }
+  return exampleHtml;
+}
+
 function isCardRevealed() {
   const meaning = document.getElementById('meaning');
   return Boolean(meaning && meaning.classList.contains('show'));
@@ -1478,7 +1516,8 @@ function render(animate) {
     const hasExample = Boolean(w.example_zh || w.example_py || w.example_vi);
     const exampleBox = document.getElementById('exampleBox');
     if (exampleBox) exampleBox.hidden = !hasExample;
-    document.getElementById('exZh').innerHTML = w.example_zh;
+    document.getElementById('exZh').innerHTML = highlightPatternInExample(w.example_zh, w.patterns);
+    renderCardPatterns(w.patterns);
     document.getElementById('exPy').innerHTML = w.example_py;
     document.getElementById('exVi').innerHTML = w.example_vi;
 

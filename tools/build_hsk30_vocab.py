@@ -387,7 +387,7 @@ def build():
             if candidate:
                 example_zh, example_py, example_vi = highlighted_example(*candidate)
 
-        groups[level].append({
+        entry = {
             'id': len(groups[level]) + 1,
             '_source_key': (canonical, row['pinyin']),
             'hanzi': hanzi,
@@ -397,7 +397,12 @@ def build():
             'example_py': example_py,
             'expected_pinyin': expected_pinyin,
             'example_vi': example_vi,
-        })
+        }
+        # Optional grammar patterns for function words: [{form, meaning, match?}], where `match`
+        # is a regex that highlights the whole pattern inside example_zh.
+        if review.get('patterns'):
+            entry['patterns'] = review['patterns']
+        groups[level].append(entry)
 
     expected = {1: 300, 2: 200, 3: 500, 4: 1000, 5: 1600, 6: 1800, 7: 5600}
     for level, count in expected.items():
