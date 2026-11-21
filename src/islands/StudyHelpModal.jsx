@@ -24,9 +24,9 @@ const SHORTCUT_GROUPS = [
     heading: '🃏 Thao tác thẻ ghi nhớ (Flashcard)',
     rows: [
       ['Lật mặt thẻ', 'Xem pinyin, nghĩa tiếng Việt và câu ví dụ', ['Space']],
-      ['Đánh giá mức độ nhớ', '1: Chưa nhớ (ôn lại ngay) · 2: Nhớ mang máng · 3: Đã thuộc', ['1', '2', '3']],
+      ['Đánh giá mức độ nhớ (chế độ Ôn tập)', 'Sau khi lật thẻ · 1: Chưa nhớ · 2: Đã nhớ', ['1', '2']],
       ['Phát âm thanh từ vựng', 'Đọc to chữ Hán chuẩn giọng bản xứ', ['A']],
-      ['Chuyển thẻ trước / thẻ kế tiếp', 'Duyệt qua danh sách các thẻ trong bài', ['←', '→']]
+      ['Chuyển thẻ trước / thẻ kế tiếp', 'Chỉ trong chế độ Duyệt danh sách', ['←', '→']]
     ]
   },
   {

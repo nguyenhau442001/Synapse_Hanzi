@@ -566,11 +566,10 @@ function ratingButtonsHtml(handlerName, previewIdPrefix, previews) {
   return RATING_BUTTONS.map(button => {
     const preview = previews ? previews[button.rating] : null;
     const intervalText = preview ? formatSrsInterval(preview, button.interval) : button.interval;
-    const shortcutArrow = button.rating === 'again' ? '←' : '→';
     const iconSvg = button.rating === 'again'
       ? `<svg class="rating-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>`
       : `<svg class="rating-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>`;
-    const titleText = `${button.label}${intervalText ? ` (${intervalText})` : ''} • Phím [${button.key}] hoặc [${shortcutArrow}]`;
+    const titleText = `${button.label}${intervalText ? ` (${intervalText})` : ''} • Phím [${button.key}]`;
     return `
     <button type="button" class="rating-btn rating-btn--${button.rating}"
       onclick="${handlerName}('${button.rating}')" aria-keyshortcuts="${button.key}"
@@ -579,8 +578,6 @@ function ratingButtonsHtml(handlerName, previewIdPrefix, previews) {
       <span class="rating-label">${button.label}</span>
       <span class="rating-kbd-badge" aria-hidden="true">
         <kbd>${button.key}</kbd>
-        <span class="rating-kbd-sep">/</span>
-        <kbd>${shortcutArrow}</kbd>
       </span>
     </button>`;
   }).join('');
@@ -605,8 +602,7 @@ function updateSrsPreviews(word) {
     const btn = document.querySelector(`.rating-btn--${rating}`);
     if (btn) {
       const nextInterval = formatSrsInterval(previews[rating], interval);
-      const arrow = rating === 'again' ? '←' : '→';
-      btn.title = `Đánh giá: ${label}${nextInterval ? ` (${nextInterval})` : ''} • Phím [${key}] hoặc [${arrow}]`;
+      btn.title = `Đánh giá: ${label}${nextInterval ? ` (${nextInterval})` : ''} • Phím [${key}]`;
     }
   });
 }

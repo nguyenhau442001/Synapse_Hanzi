@@ -677,48 +677,17 @@ function handleStudyKeydown(event) {
     flip();
     return;
   }
-  if (event.key === 'ArrowRight') {
-    if (document.activeElement && document.activeElement.closest('input, textarea, select')) return;
+  // Arrow keys only navigate, and only in browse mode; grading uses the number keys.
+  if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
+    if (studyMode !== 'browse') return;
     event.preventDefault();
-    if (studyMode === 'review' && revealed && typeof rateCurrentCard === 'function') {
-      rateCurrentCard('good');
-    } else if (typeof nextCard === 'function') {
-      nextCard();
-    }
-    return;
-  }
-  if (event.key === 'ArrowLeft') {
-    if (document.activeElement && document.activeElement.closest('input, textarea, select')) return;
-    event.preventDefault();
-    if (studyMode === 'review' && revealed && typeof rateCurrentCard === 'function') {
-      rateCurrentCard('again');
-    } else if (typeof prevCard === 'function') {
-      prevCard();
-    }
-    return;
-  }
-  if (event.key === '1') {
-    if (document.activeElement && document.activeElement.closest('input, textarea, select')) return;
-    event.preventDefault();
-    if (typeof rateCurrentCard === 'function') rateCurrentCard('again');
-    return;
-  }
-  if (event.key === '2') {
-    if (document.activeElement && document.activeElement.closest('input, textarea, select')) return;
-    event.preventDefault();
-    if (typeof rateCurrentCard === 'function') rateCurrentCard('good');
+    if (event.key === 'ArrowRight') nextCard(); else prevCard();
     return;
   }
   const rating = (typeof RATING_KEYS !== 'undefined' && RATING_KEYS) ? RATING_KEYS[event.key] : null;
-  if (rating) {
-    if (document.activeElement && document.activeElement.closest('input, textarea, select')) return;
+  if (rating && studyMode === 'review') {
     event.preventDefault();
     rateCurrentCard(rating);
-    return;
-  }
-  if (event.key === 'r' || event.key === 'R') {
-    event.preventDefault();
-    jumpToRandomWord();
     return;
   }
 }
