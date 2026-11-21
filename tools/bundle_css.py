@@ -25,6 +25,7 @@ BUNDLE_FILES = [
     "assets/css/reading-analysis.css",
     "assets/css/graded-reading.css",
     "assets/css/curriculum.css",
+    "assets/css/writing.css",
     "assets/css/fast-review-picker.css",
     "assets/css/fast-review.css",
     "assets/css/sentence-game.css",

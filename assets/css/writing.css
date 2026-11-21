@@ -1,0 +1,664 @@
+/* Writing practice (Tập viết) — src/islands/Writing.jsx.
+   A 字帖 worksheet: contiguous 田/米字格 cells with a red ruling, Kai stroke outlines,
+   and brush ink. Built on the design-system tokens in base.css. */
+
+:root {
+  --wr-rule: rgba(168, 50, 45, 0.45);
+  --wr-guide: #A8322D;
+  --wr-faint: #E6DED2;
+  --wr-ink: #1F1D1A;
+  --wr-active-bg: #FFF8F5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --wr-rule: rgba(224, 109, 99, 0.45);
+    --wr-guide: #E06D63;
+    --wr-faint: #3A3F48;
+    --wr-ink: #F1EBDD;
+    --wr-active-bg: rgba(224, 109, 99, 0.08);
+  }
+}
+
+:root[data-theme="dark"] {
+  --wr-rule: rgba(224, 109, 99, 0.45);
+  --wr-guide: #E06D63;
+  --wr-faint: #3A3F48;
+  --wr-ink: #F1EBDD;
+  --wr-active-bg: rgba(224, 109, 99, 0.08);
+}
+
+#screenWriting {
+  padding: 0 0 var(--space-7);
+}
+
+.wr-wrap {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+}
+
+.wr-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.wr-zh,
+.wr-char-big,
+.wr-char-chip {
+  font-family: var(--font-zh);
+}
+
+/* Header */
+.wr-head {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.wr-head-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.wr-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--accent-text);
+  font: 600 var(--fs-body) var(--font-sans);
+  cursor: pointer;
+}
+
+.wr-title {
+  margin: 0;
+  font-size: var(--fs-section);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  outline: none;
+}
+
+.wr-source {
+  margin-left: auto;
+  min-width: 0;
+}
+
+.wr-source select {
+  max-width: 320px;
+  height: 40px;
+  padding: 0 var(--space-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-input);
+  background: var(--card-bg);
+  color: var(--text-primary);
+  font: 500 var(--fs-body) var(--font-sans);
+}
+
+.wr-source select:focus-visible {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: var(--focus-ring);
+}
+
+.wr-chars {
+  display: flex;
+  gap: var(--space-1);
+  overflow-x: auto;
+  scrollbar-width: none;
+  contain: inline-size;
+  padding-bottom: 2px;
+}
+
+.wr-chars::-webkit-scrollbar {
+  display: none;
+}
+
+.wr-char-chip {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-btn);
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text-primary);
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out);
+}
+
+.wr-char-chip:hover {
+  border-color: var(--text-tertiary);
+}
+
+.wr-char-chip.is-done {
+  background: var(--success-bg);
+  border-color: transparent;
+  color: var(--success-text);
+}
+
+.wr-char-chip.is-current {
+  border: 2px solid var(--accent);
+  background: var(--card-bg);
+  color: var(--accent-text);
+}
+
+.wr-char-chip:focus-visible,
+.wr-seg-btn:focus-visible,
+.wr-pen-toggle:focus-visible,
+.wr-icon-btn:focus-visible,
+.wr-step-btn:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+/* Layout: worksheet + settings column on wide screens */
+.wr-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-5);
+  align-items: start;
+}
+
+.wr-main {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+@media (min-width: 1180px) {
+  .wr-body {
+    grid-template-columns: minmax(0, 1fr) 260px;
+  }
+
+  .wr-settings-btn {
+    display: none;
+  }
+}
+
+.wr-char-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-2) var(--space-3);
+}
+
+.wr-char-big {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.wr-char-py {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.wr-char-vi {
+  color: var(--text-secondary);
+}
+
+.wr-char-meta {
+  margin-left: auto;
+  font-size: var(--fs-caption);
+  color: var(--text-tertiary);
+  font-variant-numeric: tabular-nums;
+}
+
+.wr-icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-btn);
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text-secondary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  cursor: pointer;
+}
+
+.wr-icon-btn:hover {
+  color: var(--accent-text);
+}
+
+.wr-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.wr-seg {
+  display: inline-flex;
+  gap: var(--space-1);
+  padding: var(--space-1);
+  background: var(--surface-chip);
+  border-radius: var(--radius-card);
+}
+
+.wr-seg-btn {
+  height: 36px;
+  padding: 0 var(--space-3);
+  border: 0;
+  border-radius: var(--radius-btn);
+  background: transparent;
+  color: var(--text-secondary);
+  font: 500 var(--fs-body) var(--font-sans);
+  cursor: pointer;
+}
+
+.wr-seg-btn.is-on {
+  background: var(--card-bg);
+  color: var(--accent-text);
+  font-weight: 600;
+}
+
+.wr-pen-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  height: 44px;
+  padding: 0 var(--space-3);
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text-primary);
+  font: 500 13px var(--font-sans);
+  cursor: pointer;
+}
+
+.wr-switch {
+  position: relative;
+  width: 34px;
+  height: 20px;
+  border-radius: var(--radius-pill);
+  background: var(--progress-track);
+  transition: background-color var(--dur-fast) var(--ease-out);
+}
+
+.wr-switch::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: var(--radius-pill);
+  background: #FFFFFF;
+  transition: transform var(--dur-fast) var(--ease-out);
+}
+
+.wr-pen-toggle.is-on .wr-switch {
+  background: var(--accent);
+}
+
+.wr-pen-toggle.is-on .wr-switch::after {
+  transform: translateX(14px);
+}
+
+.wr-settings-btn {
+  margin-left: auto;
+}
+
+/* The worksheet: contiguous cells, ruled like a 字帖 page */
+.wr-sheet-wrap {
+  min-width: 0;
+}
+
+.wr-sheet {
+  display: grid;
+  background: var(--card-bg);
+  border-top: 1px solid var(--wr-rule);
+  border-left: 1px solid var(--wr-rule);
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.wr-cell {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border-right: 1px solid var(--wr-rule);
+  border-bottom: 1px solid var(--wr-rule);
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.wr-cell.is-faint,
+.wr-cell.is-empty {
+  cursor: crosshair;
+}
+
+.wr-cell svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: visible;
+}
+
+.wr-cell.is-active {
+  background: var(--wr-active-bg);
+  box-shadow: inset 0 0 0 3px var(--accent);
+  z-index: 1;
+}
+
+.wr-grid-lines line {
+  stroke: var(--wr-guide);
+  stroke-opacity: 0.22;
+  stroke-width: 8;
+  stroke-dasharray: 32 32;
+}
+
+.wr-glyph-model {
+  fill: var(--text-primary);
+}
+
+.wr-glyph-faint {
+  fill: var(--wr-faint);
+}
+
+.wr-glyph-current {
+  fill: var(--accent);
+}
+
+.wr-glyph-hint {
+  fill: var(--accent);
+  animation: wr-hint 700ms ease-in-out 2;
+}
+
+.wr-ink {
+  fill: var(--wr-ink);
+}
+
+.wr-ink-reject {
+  fill: var(--accent);
+  opacity: 0.5;
+  animation: wr-fade 650ms ease-out forwards;
+}
+
+@keyframes wr-hint {
+  50% { opacity: 0.25; }
+}
+
+@keyframes wr-fade {
+  to { opacity: 0; }
+}
+
+.wr-step-n {
+  position: absolute;
+  left: 5px;
+  bottom: 3px;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--accent-text);
+  pointer-events: none;
+}
+
+.wr-done {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 18px;
+  height: 18px;
+  border-radius: var(--radius-pill);
+  background: var(--success-bg);
+  color: var(--success-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.wr-status {
+  min-height: 20px;
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.wr-status.is-good {
+  color: var(--success-text);
+}
+
+.wr-status.is-bad {
+  color: var(--accent-text);
+}
+
+.wr-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.wr-actions-spacer {
+  flex: 1 1 auto;
+}
+
+/* Settings */
+.wr-settings {
+  display: none;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding-top: var(--space-4);
+  border-top: 2px solid var(--text-primary);
+}
+
+.wr-settings.is-open {
+  display: flex;
+}
+
+@media (min-width: 1180px) {
+  .wr-settings {
+    display: flex;
+    position: sticky;
+    top: 88px;
+  }
+}
+
+.wr-h2,
+.wr-h3 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.wr-h2 {
+  font-size: var(--fs-section);
+}
+
+.wr-h3 {
+  font-size: 15px;
+}
+
+.wr-setting-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  font-size: var(--fs-body);
+}
+
+.wr-setting-row input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--accent);
+}
+
+.wr-stepper {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.wr-stepper strong {
+  min-width: 16px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.wr-step-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-btn);
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text-primary);
+  font: 600 16px var(--font-sans);
+  cursor: pointer;
+}
+
+.wr-step-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.wr-setting-note {
+  margin: calc(var(--space-2) * -1) 0 0;
+  font-size: var(--fs-caption);
+  line-height: 1.5;
+  color: var(--text-tertiary);
+}
+
+.wr-clear-page {
+  align-self: flex-start;
+}
+
+/* Enlarged pad for small screens */
+.wr-pad-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  background: rgba(20, 19, 18, 0.35);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.wr-pad {
+  width: 100%;
+  max-width: 480px;
+  box-sizing: border-box;
+  padding: var(--space-3) var(--space-5) calc(var(--space-5) + env(safe-area-inset-bottom));
+  background: var(--card-bg);
+  border-radius: 16px 16px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.wr-pad-head {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--fs-body);
+}
+
+.wr-pad-head span {
+  margin-left: auto;
+  font-size: var(--fs-caption);
+  color: var(--text-tertiary);
+}
+
+.wr-pad .wr-cell {
+  width: min(340px, 100%);
+  border: 1px solid var(--wr-rule);
+}
+
+.wr-pad .wr-cell.is-active {
+  box-shadow: none;
+  background: var(--card-bg);
+}
+
+.wr-pad .wr-grid-lines line {
+  stroke-width: 4;
+  stroke-dasharray: 18 18;
+}
+
+.wr-pad .wr-status {
+  align-self: stretch;
+  text-align: center;
+}
+
+.wr-pad-actions {
+  align-self: stretch;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-2);
+}
+
+/* Loading and empty states */
+.wr-skel {
+  height: 420px;
+  border-radius: var(--radius-card);
+  background: var(--surface-chip);
+  animation: cur-pulse 1.4s ease-in-out infinite;
+}
+
+.wr-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-7) var(--space-5);
+  text-align: center;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-card);
+  color: var(--text-secondary);
+}
+
+@media (max-width: 760px) {
+  .wr-source {
+    margin-left: 0;
+    flex: 1 1 100%;
+  }
+
+  .wr-source select {
+    width: 100%;
+    max-width: none;
+  }
+
+  .wr-char-meta {
+    margin-left: 0;
+  }
+
+  .wr-actions .ds-btn {
+    flex: 1 1 auto;
+  }
+
+  .wr-actions-spacer {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wr-glyph-hint,
+  .wr-ink-reject,
+  .wr-skel {
+    animation: none;
+  }
+}

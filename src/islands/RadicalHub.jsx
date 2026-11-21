@@ -11,7 +11,7 @@ import { render } from 'preact';
    setActiveStudyWord, startReadingAnalysis, GradedReading, ListeningPractice,
    showReviewSetup, updateReviewRangeLabel, updateReviewMobileAuxBadge, renderTopicGrid,
    startSentenceGame, startGuessWordGame, startSpeedQuizGame, abandonReviewSession, closeReviewBottomSheet,
-   syncHomeScreen, SpaRouter, Curriculum, buildRadicalCardArea, renderRadicalFilters, setRadicalViewMode, renderRadicalCard,
+   syncHomeScreen, SpaRouter, Curriculum, Writing, buildRadicalCardArea, renderRadicalFilters, setRadicalViewMode, renderRadicalCard,
    closeMobileStatsSheet */
 /* eslint-disable no-global-assign */
 
@@ -23,6 +23,7 @@ let radicalDataLoadPromise = null;
 export const PRIMARY_TAB_SCREENS = {
   vocab: { tabId: 'primaryTabVocab', screenId: 'screenVocabHub' },
   curriculum: { tabId: 'primaryTabCurriculum', screenId: 'screenCurriculum' },
+  writing: { tabId: 'primaryTabWriting', screenId: 'screenWriting' },
   radicals: { tabId: 'primaryTabRadicals', screenId: 'screenRadicalHub' },
   review: { tabId: 'primaryTabReview', screenId: 'screenReviewPicker' },
   reading: { tabId: 'primaryTabReading', screenId: 'screenReadingAnalysis' },
@@ -158,7 +159,7 @@ export function setPrimaryTab(tab, options) {
   }
   if (mobProfile) mobProfile.classList.remove('active');
   if (typeof closeMobileStatsSheet === 'function') closeMobileStatsSheet();
-  const isTool = ['radicals', 'sentenceGame', 'guessWord', 'speedQuiz', 'reading', 'listening'].includes(tab);
+  const isTool = ['radicals', 'sentenceGame', 'guessWord', 'speedQuiz', 'reading', 'listening', 'writing'].includes(tab);
   const isGame = ['sentenceGame', 'guessWord', 'speedQuiz'].includes(tab);
   document.body.classList.toggle('is-game-view', isGame);
   document.body.classList.toggle('reading-view-active', tab === 'reading');
@@ -166,6 +167,7 @@ export function setPrimaryTab(tab, options) {
   document.body.classList.toggle('listening-view-active', tab === 'listening');
   document.body.classList.toggle('review-view-active', tab === 'review');
   document.body.classList.toggle('curriculum-view-active', tab === 'curriculum');
+  document.body.classList.toggle('writing-view-active', tab === 'writing');
   if (previousTab === 'listening' && tab !== 'listening') {
     if (typeof ListeningPractice !== 'undefined') ListeningPractice.stopAudio();
   }
@@ -198,6 +200,9 @@ export function setPrimaryTab(tab, options) {
   }
   if (tab === 'curriculum') {
     if (typeof Curriculum !== 'undefined') Curriculum.init();
+  }
+  if (tab === 'writing') {
+    if (typeof Writing !== 'undefined') Writing.init();
   }
   if (tab === 'listening') {
     if (typeof ListeningPractice !== 'undefined') {

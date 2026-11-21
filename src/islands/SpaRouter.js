@@ -53,6 +53,9 @@ export const SpaRouter = (function() {
       if (state.tab === 'curriculum' && state.lesson) {
         return `${base}?tab=curriculum&lesson=${encodeURIComponent(state.lesson)}${themeParam}`;
       }
+      if (state.tab === 'writing' && state.lesson) {
+        return `${base}?tab=writing&lesson=${encodeURIComponent(state.lesson)}${themeParam}`;
+      }
       if (state.tab === 'listening' && state.mode) {
         return `${base}?tab=listening&mode=${encodeURIComponent(state.mode)}${themeParam}`;
       }
@@ -214,6 +217,9 @@ export const SpaRouter = (function() {
         if (state.tab === 'curriculum' && state.lesson && typeof Curriculum !== 'undefined') {
           Curriculum.openLesson(state.lesson, false);
         }
+        if (state.tab === 'writing' && state.lesson && typeof Writing !== 'undefined') {
+          Writing.open(state.lesson, false);
+        }
         if (state.tab === 'listening' && state.mode && typeof ListeningPractice !== 'undefined') {
           ListeningPractice.setMode(state.mode);
         }
@@ -257,6 +263,9 @@ export const SpaRouter = (function() {
           setPrimaryTab(initialState.tab);
           if (initialState.tab === 'gradedReading' && initialState.story && typeof GradedReading !== 'undefined') {
             GradedReading.openStory(initialState.story, false);
+          }
+          if (initialState.tab === 'writing' && initialState.lesson && typeof Writing !== 'undefined') {
+            Writing.open(initialState.lesson, true);
           }
           if (initialState.tab === 'curriculum' && initialState.lesson && typeof Curriculum !== 'undefined') {
             // setPrimaryTab pushed the plain tab URL; push the lesson so the link survives and Back returns to the list.

@@ -531,7 +531,10 @@ function LessonView({ lesson, levelData }) {
       <section class="cur-section" id="curSection-vocab" aria-labelledby="curHeadVocab">
         <div class="cur-section-head">
           <h3 class="cur-h2" id="curHeadVocab">生词 · Từ vựng <span class="cur-count">{`${words.length} từ${known ? ` · đã nhớ ${known}` : ''}`}</span></h3>
-          <button type="button" class="ds-btn ds-btn--secondary cur-btn-accent" onClick={() => startLessonFlashcards(lesson.key)}>Học flashcard bài này</button>
+          <div class="cur-actions">
+            <button type="button" class="ds-btn ds-btn--secondary" onClick={() => window.openWritingPractice && window.openWritingPractice(lesson.key)}>Tập viết bài này</button>
+            <button type="button" class="ds-btn ds-btn--secondary cur-btn-accent" onClick={() => startLessonFlashcards(lesson.key)}>Học flashcard bài này</button>
+          </div>
         </div>
         <div class="cur-word-grid">
           {shownWords.map((w) => (

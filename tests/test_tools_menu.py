@@ -66,11 +66,13 @@ def test_tools_menu_skill_grouping_and_order():
 
     # 3. Viết
     viet_items = sections[2]["items"]
-    assert len(viet_items) == 2
+    assert len(viet_items) == 3
     assert "Xếp câu HSK4" in viet_items[0]["label"]
     assert "sentenceGame" in viet_items[0]["action"]
-    assert "Điền từ" in viet_items[1]["label"]
-    assert "speedQuiz" in viet_items[1]["action"]
+    assert "Tập viết chữ Hán" in viet_items[1]["label"]
+    assert "writing" in viet_items[1]["action"]
+    assert "Điền từ" in viet_items[2]["label"]
+    assert "speedQuiz" in viet_items[2]["action"]
 
     # 4. Từ vựng & chữ Hán
     vocab_items = sections[3]["items"]

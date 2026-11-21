@@ -109,6 +109,7 @@ export function initAppEventBindings() {
   };
   onId('primaryTabVocab', 'click', () => handlePrimaryTab('vocab'));
   onId('primaryTabCurriculum', 'click', () => handlePrimaryTab('curriculum'));
+  onId('primaryTabWriting', 'click', () => handlePrimaryTab('writing'));
   onId('primaryNavReading', 'click', () => handlePrimaryTab('gradedReading'));
   onId('primaryTabReview', 'click', () => handlePrimaryTab('review'));
   onId('primaryTabListening', 'click', () => handlePrimaryTab('listening'));
