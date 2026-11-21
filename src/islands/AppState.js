@@ -122,7 +122,10 @@ export function showAllWordsAt(wordIndex) {
   if (typeof window !== 'undefined') window.studyMode = 'browse';
   if (typeof currentFilter !== 'undefined') currentFilter = 'all';
   if (typeof window !== 'undefined') window.currentFilter = 'all';
-  const currentOrder = typeof order !== 'undefined' ? order : (typeof window !== 'undefined' ? window.order : []);
+  // The live deck order is kept on window by the other islands; this module's own `order`
+  // binding is only the initial value, so read window first.
+  const currentOrder = (typeof window !== 'undefined' && Array.isArray(window.order)) ? window.order
+    : (typeof order !== 'undefined' ? order : []);
   const nextFiltered = currentOrder.slice();
   if (typeof filteredOrder !== 'undefined') filteredOrder = nextFiltered;
   if (typeof window !== 'undefined') window.filteredOrder = nextFiltered;

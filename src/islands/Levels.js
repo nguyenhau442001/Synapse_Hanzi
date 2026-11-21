@@ -1057,6 +1057,7 @@ export async function openWordInLevel(level, wordIdOrHanzi, autoReveal = true) {
 
   if (typeof showAllWordsAt === 'function') showAllWordsAt(wordIndex);
   else if (typeof window.showAllWordsAt === 'function') window.showAllWordsAt(wordIndex);
+  if (typeof window.syncStudyModeUrl === 'function') window.syncStudyModeUrl();
 
   if (typeof preloadSingleWordIllustration === 'function') {
     preloadSingleWordIllustration(wordsList[wordIndex], 'high');
