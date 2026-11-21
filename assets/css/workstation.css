@@ -5522,3 +5522,21 @@ body.flashcard-study-mode .example-sound-btn:hover,
   border-color: var(--hs-accent-line, var(--accent));
   transform: none;
 }
+
+/* --- WCAG AA text contrast on the study screen --------------------------------
+   Muted/tertiary text (part of speech, labels, hints, counters) must reach 4.5:1
+   on the card, the example box and the page in both themes. */
+body.flashcard-study-mode {
+  --text-muted: #686D69;
+  --text-tertiary: #6B665E;
+}
+:root[data-theme="dark"] body.flashcard-study-mode {
+  --text-muted: #A0A6A2;
+  --text-tertiary: #A8A194;
+}
+body.flashcard-study-mode .card:not(.is-flipped) .card-flip-prompt,
+body.flashcard-study-mode .card.is-flipped .card-flip-prompt { opacity: 1; }
+body.flashcard-study-mode .card-flip-prompt .hint,
+:root[data-theme="dark"] body.flashcard-study-mode .card-flip-prompt .hint { color: var(--text-tertiary); }
+body.flashcard-study-mode .rating-interval { opacity: 1; }
+body.flashcard-study-mode .rating-btn .rating-kbd-badge { opacity: 1; }
