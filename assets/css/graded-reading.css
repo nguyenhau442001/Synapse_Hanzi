@@ -3032,6 +3032,118 @@ body.manga-reading .mobile-bottom-nav { display: none; }
   outline-offset: 2px;
 }
 
+/* 6E-1. Visible comic speech balloons for original & classic stories */
+.manga-bubble.is-comic-balloon {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1.5px solid #292722;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 5px 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease, background 120ms ease;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.manga-bubble.is-comic-balloon:hover,
+.manga-bubble.is-comic-balloon.is-hover {
+  background: #FFFFFF;
+  border-color: var(--brand-primary, #A8322D);
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 6px 16px rgba(168, 50, 45, 0.18), 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 15;
+}
+
+.manga-bubble.is-comic-balloon.is-active {
+  background: #FFFFFF;
+  border-color: var(--brand-primary, #A8322D);
+  box-shadow: 0 0 0 3px rgba(168, 50, 45, 0.25), 0 6px 18px rgba(0, 0, 0, 0.18);
+  z-index: 20;
+}
+
+.manga-bubble.is-comic-balloon.is-narration {
+  background: rgba(254, 250, 240, 0.96);
+  border-radius: 8px;
+  border-style: dashed;
+}
+
+.manga-balloon-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  width: 100%;
+}
+
+.manga-balloon-speaker {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--brand-primary, #A8322D);
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+
+.manga-balloon-pinyin {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  color: #6E685E;
+  line-height: 1.2;
+}
+
+.manga-balloon-text {
+  font-family: var(--font-zh);
+  font-size: clamp(13px, 1.35vw, 17px);
+  font-weight: 600;
+  color: #1A1917;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+}
+
+/* Dark mode for comic speech balloons */
+:root[data-theme="dark"] .manga-bubble.is-comic-balloon,
+body.dark-mode .manga-bubble.is-comic-balloon {
+  background: rgba(30, 33, 40, 0.95);
+  border-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+:root[data-theme="dark"] .manga-bubble.is-comic-balloon:hover,
+body.dark-mode .manga-bubble.is-comic-balloon:hover {
+  background: #252A33;
+  border-color: var(--brand-primary-hover, #BF3B32);
+}
+
+:root[data-theme="dark"] .manga-bubble.is-comic-balloon.is-active,
+body.dark-mode .manga-bubble.is-comic-balloon.is-active {
+  background: #252A33;
+  border-color: var(--brand-primary-hover, #BF3B32);
+  box-shadow: 0 0 0 3px rgba(191, 59, 50, 0.35), 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+:root[data-theme="dark"] .manga-balloon-text,
+body.dark-mode .manga-balloon-text {
+  color: #EDE6D8;
+}
+
+:root[data-theme="dark"] .manga-balloon-pinyin,
+body.dark-mode .manga-balloon-pinyin {
+  color: #B0A99C;
+}
+
+:root[data-theme="dark"] .manga-balloon-speaker,
+body.dark-mode .manga-balloon-speaker {
+  color: #E06D63;
+}
+
 .manga-bubble-num {
   position: absolute;
   left: -9px;

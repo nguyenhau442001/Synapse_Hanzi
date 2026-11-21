@@ -1722,7 +1722,7 @@ const MANGA_COVERAGE_TARGET = 0.9;
 const mangaCoverageCache = new WeakMap();
 function mangaHskCoverage(story, properNames) {
   if (mangaCoverageCache.has(story)) return mangaCoverageCache.get(story);
-  const names = new Set(properNames || []);
+  const names = new Set([...(properNames || []), ...((story && story.proper_names) || [])]);
   const levels = [];
   (story.pages || []).forEach((pg) => (pg.dialogues || []).forEach((d) => (d.tokens || []).forEach((t) => {
     if (t.punct || names.has(t.text_trad) || names.has(t.text)) return;
@@ -2170,17 +2170,19 @@ function MangaViewer({ story }) {
 
   const renderSheet = (pg, idx, i) => {
     const pos = `left: ${layout.sheetX(i).toFixed(1)}px; top: ${layout.top0.toFixed(1)}px; width: ${layout.sheetW.toFixed(1)}px; height: ${layout.sheetH.toFixed(1)}px;`;
+    const hasVisibleOverlay = Boolean(story.overlay_bubbles);
     return (
       <div class={`manga-paper-sheet ${visible.length === 2 ? (i === 0 ? 'is-right' : 'is-left') : ''}`} key={pg.page_num || idx} style={pos}>
         <img src={pg.image} alt={`Trang ${idx + 1} - ${story.title.vi}`} class="manga-page-img" loading="eager" />
         {(pg.dialogues || []).map((d) => {
           const isActive = current && current.id === d.id;
           const isHover = hoveredMangaDialogue.value && hoveredMangaDialogue.value.id === d.id;
+          const isNarration = d.character && d.character.includes('旁白');
           return (
             <button
               key={d.id}
               type="button"
-              class={`manga-bubble ${showMangaOutlines.value ? 'show-outline' : ''} ${isActive ? 'is-active' : ''} ${isHover ? 'is-hover' : ''}`}
+              class={`manga-bubble ${hasVisibleOverlay ? 'is-comic-balloon' : ''} ${isNarration ? 'is-narration' : ''} ${showMangaOutlines.value ? 'show-outline' : ''} ${isActive ? 'is-active' : ''} ${isHover ? 'is-hover' : ''}`}
               style={bubbleStyle(d.bbox)}
               data-dlg={d.id}
               aria-label={`Bóng thoại ${order.index[d.id]}: ${mangaText(d)}`}
@@ -2190,6 +2192,21 @@ function MangaViewer({ story }) {
               onClick={(e) => { e.stopPropagation(); selectMangaDialogue(d); }}
             >
               {showMangaOutlines.value ? <span class="manga-bubble-num" aria-hidden="true">{order.index[d.id]}</span> : null}
+              {hasVisibleOverlay ? (
+                <div class="manga-balloon-content">
+                  {d.character ? (
+                    <span class="manga-balloon-speaker">
+                      {d.character.split(' ')[0]}
+                    </span>
+                  ) : null}
+                  {mangaPinyinOn.value && d.pinyin ? (
+                    <span class="manga-balloon-pinyin">{d.pinyin}</span>
+                  ) : null}
+                  <span class="manga-balloon-text" lang="zh-Hans">
+                    {mangaText(d)}
+                  </span>
+                </div>
+              ) : null}
             </button>
           );
         })}

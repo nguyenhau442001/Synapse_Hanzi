@@ -29,21 +29,21 @@ PAGES_DATA = [
             {
                 "id": "p1_d1",
                 "character": "王经理 (Sếp Vương)",
-                "bbox": {"x": 14.0, "y": 8.0, "width": 45.0, "height": 13.0},
+                "bbox": {"x": 10.0, "y": 6.0, "width": 32.0, "height": 15.0},
                 "zh": "小阳，在吗？",
                 "vi": "Tiểu Dương, em có đó không?"
             },
             {
                 "id": "p1_d2",
                 "character": "小阳 (Tiểu Dương)",
-                "bbox": {"x": 48.0, "y": 24.0, "width": 46.0, "height": 13.0},
+                "bbox": {"x": 58.0, "y": 6.0, "width": 32.0, "height": 15.0},
                 "zh": "在……王总？",
                 "vi": "Dạ có... Sếp Vương?"
             },
             {
                 "id": "p1_d3",
                 "character": "王经理 (Sếp Vương)",
-                "bbox": {"x": 14.0, "y": 78.0, "width": 48.0, "height": 13.0},
+                "bbox": {"x": 10.0, "y": 68.0, "width": 36.0, "height": 15.0},
                 "zh": "来我办公室一下。",
                 "vi": "Qua văn phòng anh một lát nhé."
             }
@@ -56,14 +56,14 @@ PAGES_DATA = [
             {
                 "id": "p2_d1",
                 "character": "小铃 (Tiểu Linh)",
-                "bbox": {"x": 62.0, "y": 10.0, "width": 32.0, "height": 13.0},
+                "bbox": {"x": 64.0, "y": 8.0, "width": 26.0, "height": 14.0},
                 "zh": "怎么了？",
                 "vi": "Sao thế?"
             },
             {
                 "id": "p2_d2",
                 "character": "小阳 (Tiểu Dương)",
-                "bbox": {"x": 15.0, "y": 12.0, "width": 45.0, "height": 13.0},
+                "bbox": {"x": 14.0, "y": 8.0, "width": 42.0, "height": 16.0},
                 "zh": "不知道，感觉要出事了。",
                 "vi": "Không biết nữa, nhưng có linh cảm sắp to chuyện rồi."
             }
@@ -76,14 +76,14 @@ PAGES_DATA = [
             {
                 "id": "p3_d1",
                 "character": "王经理 (Sếp Vương)",
-                "bbox": {"x": 45.0, "y": 10.0, "width": 50.0, "height": 13.0},
+                "bbox": {"x": 18.0, "y": 6.0, "width": 42.0, "height": 15.0},
                 "zh": "别紧张，没什么大事。",
                 "vi": "Đừng căng thẳng, chẳng có chuyện gì lớn đâu."
             },
             {
                 "id": "p3_d2",
                 "character": "王经理 (Sếp Vương)",
-                "bbox": {"x": 45.0, "y": 26.0, "width": 50.0, "height": 13.0},
+                "bbox": {"x": 22.0, "y": 24.0, "width": 40.0, "height": 15.0},
                 "zh": "这个项目，你跟一下。",
                 "vi": "Dự án này, em theo sát nhé."
             }
@@ -96,14 +96,14 @@ PAGES_DATA = [
             {
                 "id": "p4_d1",
                 "character": "小铃 (Tiểu Linh)",
-                "bbox": {"x": 60.0, "y": 10.0, "width": 34.0, "height": 13.0},
+                "bbox": {"x": 64.0, "y": 10.0, "width": 26.0, "height": 14.0},
                 "zh": "所以呢？",
                 "vi": "Thế rốt cuộc sao?"
             },
             {
                 "id": "p4_d2",
                 "character": "小阳 (Tiểu Dương)",
-                "bbox": {"x": 15.0, "y": 12.0, "width": 42.0, "height": 13.0},
+                "bbox": {"x": 14.0, "y": 10.0, "width": 38.0, "height": 15.0},
                 "zh": "他说没什么大事。",
                 "vi": "Sếp bảo không có chuyện gì to tát cả."
             }
@@ -116,14 +116,14 @@ PAGES_DATA = [
             {
                 "id": "p5_d1",
                 "character": "小铃 (Tiểu Linh)",
-                "bbox": {"x": 8.0, "y": 10.0, "width": 44.0, "height": 13.0},
+                "bbox": {"x": 6.0, "y": 8.0, "width": 38.0, "height": 15.0},
                 "zh": "那你怎么一脸绝望？",
                 "vi": "Thế sao mặt cậu trông tuyệt vọng thế?"
             },
             {
                 "id": "p5_d2",
                 "character": "小阳 (Tiểu Dương)",
-                "bbox": {"x": 52.0, "y": 10.0, "width": 45.0, "height": 15.0},
+                "bbox": {"x": 52.0, "y": 6.0, "width": 44.0, "height": 17.0},
                 "zh": "每次他说没什么大事，最后都有大事。",
                 "vi": "Lần nào sếp bảo không có chuyện gì lớn, y như rằng cuối cùng việc lớn ngập đầu."
             }

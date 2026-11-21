@@ -17,7 +17,7 @@
   "cover_image": "assets/images/readings/manga/office/office_ep01/cover.webp",
   "source": "《打工人日记》原创职场情景喜剧 · Synapse Hanzi Studio",
   "source_url": "https://github.com/Synapse-Hanzi",
-  "source_credits": "Kịch bản và tạo hình nhân vật độc quyền của Synapse Hanzi Studio. Thiết kế hỗ trợ học tiếng Trung công sở thực chiến với hệ thống tương tác đa giác quan (Pinyin, Hán-Việt, phân tích từ vựng & âm thanh).",
+  "source_credits": "Kịch bản và tạo hình nhân vật độc quyền: Synapse Hanzi Studio. Tranh minh họa kết hợp hệ thống tra từ tương tác, pinyin, Hán-Việt và âm thanh đa giác quan.",
   "license": "Original / Educational",
   "page_count": 5,
   "difficulty": "HSK 1 - 3",
@@ -39,15 +39,15 @@
           "id": "p1_d1",
           "character": "王经理 (Sếp Vương)",
           "bbox": {
-            "x": 14.0,
-            "y": 8.0,
-            "width": 45.0,
-            "height": 13.0
+            "x": 10.17,
+            "y": 6.51,
+            "width": 23.26,
+            "height": 12.37
           },
           "zh": "小阳，在吗？",
-          "vi": "Tiểu Dương, em có đó không?",
           "zh_trad": "小陽，在嗎？",
           "pinyin": "xiǎo yáng ， zài ma ？",
+          "vi": "Tiểu Dương, em có đó không?",
           "tokens": [
             {
               "text": "小阳",
@@ -79,15 +79,15 @@
           "id": "p1_d2",
           "character": "小阳 (Tiểu Dương)",
           "bbox": {
-            "x": 48.0,
-            "y": 24.0,
-            "width": 46.0,
-            "height": 13.0
+            "x": 56.69,
+            "y": 6.51,
+            "width": 21.8,
+            "height": 12.37
           },
           "zh": "在……王总？",
-          "vi": "Dạ có... Sếp Vương?",
           "zh_trad": "在……王總？",
           "pinyin": "zài …… wáng zǒng ？",
+          "vi": "Dạ có... Sếp Vương?",
           "tokens": [
             {
               "text": "在",
@@ -111,15 +111,15 @@
           "id": "p1_d3",
           "character": "王经理 (Sếp Vương)",
           "bbox": {
-            "x": 14.0,
-            "y": 78.0,
-            "width": 48.0,
-            "height": 13.0
+            "x": 10.17,
+            "y": 70.31,
+            "width": 26.16,
+            "height": 12.37
           },
           "zh": "来我办公室一下。",
-          "vi": "Qua văn phòng anh một lát nhé.",
           "zh_trad": "來我辦公室一下。",
           "pinyin": "lái wǒ bàn gōng shì yī xià 。",
+          "vi": "Qua văn phòng anh một lát nhé.",
           "tokens": [
             {
               "text": "来",
@@ -166,17 +166,17 @@
           "meaning_vi": "Tiểu Dương (nhân viên văn phòng trẻ)",
           "hsk": null,
           "bbox": {
-            "x": 14.0,
-            "y": 8.0,
-            "width": 22.5,
-            "height": 13.0
+            "x": 11.483,
+            "y": 10.938,
+            "width": 3.779,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 14.0,
-              "y": 8.0,
-              "width": 22.5,
-              "height": 13.0
+              "x": 11.483,
+              "y": 10.938,
+              "width": 3.779,
+              "height": 4.167
             }
           ],
           "sentence_zh": "小陽，在嗎？",
@@ -194,17 +194,17 @@
           "meaning_vi": "ở, đang",
           "hsk": 1,
           "bbox": {
-            "x": 36.5,
-            "y": 8.0,
-            "width": 11.25,
-            "height": 13.0
+            "x": 15.262,
+            "y": 10.938,
+            "width": 1.89,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 36.5,
-              "y": 8.0,
-              "width": 11.25,
-              "height": 13.0
+              "x": 15.262,
+              "y": 10.938,
+              "width": 1.89,
+              "height": 4.167
             }
           ],
           "sentence_zh": "小陽，在嗎？",
@@ -222,17 +222,17 @@
           "meaning_vi": "à, không (trợ từ hỏi)",
           "hsk": 1,
           "bbox": {
-            "x": 47.75,
-            "y": 8.0,
-            "width": 11.25,
-            "height": 13.0
+            "x": 17.151,
+            "y": 10.938,
+            "width": 1.89,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 47.75,
-              "y": 8.0,
-              "width": 11.25,
-              "height": 13.0
+              "x": 17.151,
+              "y": 10.938,
+              "width": 1.89,
+              "height": 4.167
             }
           ],
           "sentence_zh": "小陽，在嗎？",
@@ -250,17 +250,17 @@
           "meaning_vi": "ở, đang",
           "hsk": 1,
           "bbox": {
-            "x": 48.0,
-            "y": 24.0,
-            "width": 15.333,
-            "height": 13.0
+            "x": 57.994,
+            "y": 10.938,
+            "width": 1.89,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 48.0,
-              "y": 24.0,
-              "width": 15.333,
-              "height": 13.0
+              "x": 57.994,
+              "y": 10.938,
+              "width": 1.89,
+              "height": 4.167
             }
           ],
           "sentence_zh": "在……王總？",
@@ -278,17 +278,17 @@
           "meaning_vi": "Sếp Vương (Tổng giám đốc Vương)",
           "hsk": null,
           "bbox": {
-            "x": 63.333,
-            "y": 24.0,
-            "width": 30.667,
-            "height": 13.0
+            "x": 59.884,
+            "y": 10.938,
+            "width": 3.779,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 63.333,
-              "y": 24.0,
-              "width": 30.667,
-              "height": 13.0
+              "x": 59.884,
+              "y": 10.938,
+              "width": 3.779,
+              "height": 4.167
             }
           ],
           "sentence_zh": "在……王總？",
@@ -306,17 +306,17 @@
           "meaning_vi": "đến, tới",
           "hsk": 1,
           "bbox": {
-            "x": 14.0,
-            "y": 78.0,
-            "width": 6.857,
-            "height": 13.0
+            "x": 11.483,
+            "y": 74.74,
+            "width": 1.89,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 14.0,
-              "y": 78.0,
-              "width": 6.857,
-              "height": 13.0
+              "x": 11.483,
+              "y": 74.74,
+              "width": 1.89,
+              "height": 4.167
             }
           ],
           "sentence_zh": "來我辦公室一下。",
@@ -334,17 +334,17 @@
           "meaning_vi": "tôi",
           "hsk": 1,
           "bbox": {
-            "x": 20.857,
-            "y": 78.0,
-            "width": 6.857,
-            "height": 13.0
+            "x": 13.372,
+            "y": 74.74,
+            "width": 1.89,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 20.857,
-              "y": 78.0,
-              "width": 6.857,
-              "height": 13.0
+              "x": 13.372,
+              "y": 74.74,
+              "width": 1.89,
+              "height": 4.167
             }
           ],
           "sentence_zh": "來我辦公室一下。",
@@ -362,17 +362,17 @@
           "meaning_vi": "văn phòng",
           "hsk": 3,
           "bbox": {
-            "x": 27.714,
-            "y": 78.0,
-            "width": 20.571,
-            "height": 13.0
+            "x": 15.262,
+            "y": 74.74,
+            "width": 5.669,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 27.714,
-              "y": 78.0,
-              "width": 20.571,
-              "height": 13.0
+              "x": 15.262,
+              "y": 74.74,
+              "width": 5.669,
+              "height": 4.167
             }
           ],
           "sentence_zh": "來我辦公室一下。",
@@ -390,17 +390,17 @@
           "meaning_vi": "một chút, một lát, thử xem",
           "hsk": 1,
           "bbox": {
-            "x": 48.286,
-            "y": 78.0,
-            "width": 13.714,
-            "height": 13.0
+            "x": 20.93,
+            "y": 74.74,
+            "width": 3.779,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 48.286,
-              "y": 78.0,
-              "width": 13.714,
-              "height": 13.0
+              "x": 20.93,
+              "y": 74.74,
+              "width": 3.779,
+              "height": 4.167
             }
           ],
           "sentence_zh": "來我辦公室一下。",
@@ -425,15 +425,15 @@
           "id": "p2_d1",
           "character": "小铃 (Tiểu Linh)",
           "bbox": {
-            "x": 62.0,
-            "y": 10.0,
-            "width": 32.0,
-            "height": 13.0
+            "x": 63.95,
+            "y": 6.51,
+            "width": 18.9,
+            "height": 12.37
           },
           "zh": "怎么了？",
-          "vi": "Sao thế?",
           "zh_trad": "怎麼了？",
           "pinyin": "zěn me le ？",
+          "vi": "Sao thế?",
           "tokens": [
             {
               "text": "怎么",
@@ -457,15 +457,15 @@
           "id": "p2_d2",
           "character": "小阳 (Tiểu Dương)",
           "bbox": {
-            "x": 15.0,
-            "y": 12.0,
-            "width": 45.0,
-            "height": 13.0
+            "x": 13.08,
+            "y": 6.51,
+            "width": 31.98,
+            "height": 12.37
           },
           "zh": "不知道，感觉要出事了。",
-          "vi": "Không biết nữa, nhưng có linh cảm sắp to chuyện rồi.",
           "zh_trad": "不知道，感覺要出事了。",
           "pinyin": "bù zhī dào ， gǎn jué yào chū shì le 。",
+          "vi": "Không biết nữa, nhưng có linh cảm sắp to chuyện rồi.",
           "tokens": [
             {
               "text": "不",
@@ -505,7 +505,7 @@
               "pinyin": "chūshì",
               "hanviet": "Xuất Sự",
               "meaning_vi": "xảy ra chuyện không hay, gặp biến cố",
-              "hsk": null
+              "hsk": 2
             },
             {
               "text": "了",
@@ -528,17 +528,17 @@
           "meaning_vi": "thế nào, sao",
           "hsk": 1,
           "bbox": {
-            "x": 62.0,
-            "y": 10.0,
-            "width": 21.333,
-            "height": 13.0
+            "x": 65.262,
+            "y": 10.938,
+            "width": 3.779,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 62.0,
-              "y": 10.0,
-              "width": 21.333,
-              "height": 13.0
+              "x": 65.262,
+              "y": 10.938,
+              "width": 3.779,
+              "height": 4.167
             }
           ],
           "sentence_zh": "怎麼了？",
@@ -556,17 +556,17 @@
           "meaning_vi": "rồi (trợ từ)",
           "hsk": 1,
           "bbox": {
-            "x": 83.333,
-            "y": 10.0,
-            "width": 10.667,
-            "height": 13.0
+            "x": 69.041,
+            "y": 10.938,
+            "width": 1.89,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 83.333,
-              "y": 10.0,
-              "width": 10.667,
-              "height": 13.0
+              "x": 69.041,
+              "y": 10.938,
+              "width": 1.89,
+              "height": 4.167
             }
           ],
           "sentence_zh": "怎麼了？",
@@ -584,17 +584,17 @@
           "meaning_vi": "không",
           "hsk": 1,
           "bbox": {
-            "x": 15.0,
-            "y": 12.0,
-            "width": 5.0,
-            "height": 13.0
+            "x": 14.39,
+            "y": 10.938,
+            "width": 1.89,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 15.0,
-              "y": 12.0,
-              "width": 5.0,
-              "height": 13.0
+              "x": 14.39,
+              "y": 10.938,
+              "width": 1.89,
+              "height": 4.167
             }
           ],
           "sentence_zh": "不知道，感覺要出事了。",
@@ -612,17 +612,17 @@
           "meaning_vi": "biết",
           "hsk": 1,
           "bbox": {
-            "x": 20.0,
-            "y": 12.0,
-            "width": 10.0,
-            "height": 13.0
+            "x": 16.279,
+            "y": 10.938,
+            "width": 3.779,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 20.0,
-              "y": 12.0,
-              "width": 10.0,
-              "height": 13.0
+              "x": 16.279,
+              "y": 10.938,
+              "width": 3.779,
+              "height": 4.167
             }
           ],
           "sentence_zh": "不知道，感覺要出事了。",
@@ -640,17 +640,17 @@
           "meaning_vi": "cảm giác",
           "hsk": 4,
           "bbox": {
-            "x": 30.0,
-            "y": 12.0,
-            "width": 10.0,
-            "height": 13.0
+            "x": 20.058,
+            "y": 10.938,
+            "width": 3.779,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 30.0,
-              "y": 12.0,
-              "width": 10.0,
-              "height": 13.0
+              "x": 20.058,
+              "y": 10.938,
+              "width": 3.779,
+              "height": 4.167
             }
           ],
           "sentence_zh": "不知道，感覺要出事了。",
@@ -668,17 +668,17 @@
           "meaning_vi": "muốn, cần",
           "hsk": 1,
           "bbox": {
-            "x": 40.0,
-            "y": 12.0,
-            "width": 5.0,
-            "height": 13.0
+            "x": 23.837,
+            "y": 10.938,
+            "width": 1.89,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 40.0,
-              "y": 12.0,
-              "width": 5.0,
-              "height": 13.0
+              "x": 23.837,
+              "y": 10.938,
+              "width": 1.89,
+              "height": 4.167
             }
           ],
           "sentence_zh": "不知道，感覺要出事了。",
@@ -694,19 +694,19 @@
           "pinyin": "chūshì",
           "hanviet": "Xuất Sự",
           "meaning_vi": "xảy ra chuyện không hay, gặp biến cố",
-          "hsk": null,
+          "hsk": 2,
           "bbox": {
-            "x": 45.0,
-            "y": 12.0,
-            "width": 10.0,
-            "height": 13.0
+            "x": 25.727,
+            "y": 10.938,
+            "width": 3.779,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 45.0,
-              "y": 12.0,
-              "width": 10.0,
-              "height": 13.0
+              "x": 25.727,
+              "y": 10.938,
+              "width": 3.779,
+              "height": 4.167
             }
           ],
           "sentence_zh": "不知道，感覺要出事了。",
@@ -724,17 +724,17 @@
           "meaning_vi": "rồi (trợ từ)",
           "hsk": 1,
           "bbox": {
-            "x": 55.0,
-            "y": 12.0,
-            "width": 5.0,
-            "height": 13.0
+            "x": 29.506,
+            "y": 10.938,
+            "width": 1.89,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 55.0,
-              "y": 12.0,
-              "width": 5.0,
-              "height": 13.0
+              "x": 29.506,
+              "y": 10.938,
+              "width": 1.89,
+              "height": 4.167
             }
           ],
           "sentence_zh": "不知道，感覺要出事了。",
@@ -759,15 +759,15 @@
           "id": "p3_d1",
           "character": "王经理 (Sếp Vương)",
           "bbox": {
-            "x": 45.0,
-            "y": 10.0,
-            "width": 50.0,
-            "height": 13.0
+            "x": 4.36,
+            "y": 5.21,
+            "width": 30.52,
+            "height": 12.37
           },
           "zh": "别紧张，没什么大事。",
-          "vi": "Đừng căng thẳng, chẳng có chuyện gì lớn đâu.",
           "zh_trad": "別緊張，沒什麼大事。",
           "pinyin": "bié jǐn zhāng ， méi shén me dà shì 。",
+          "vi": "Đừng căng thẳng, chẳng có chuyện gì lớn đâu.",
           "tokens": [
             {
               "text": "别",
@@ -791,7 +791,7 @@
               "pinyin": "méi",
               "hanviet": "Một",
               "meaning_vi": "không có; chưa",
-              "hsk": null
+              "hsk": 1
             },
             {
               "text": "什么",
@@ -815,15 +815,15 @@
           "id": "p3_d2",
           "character": "王经理 (Sếp Vương)",
           "bbox": {
-            "x": 45.0,
-            "y": 26.0,
-            "width": 50.0,
-            "height": 13.0
+            "x": 35.61,
+            "y": 5.21,
+            "width": 30.52,
+            "height": 12.37
           },
           "zh": "这个项目，你跟一下。",
-          "vi": "Dự án này, em theo sát nhé.",
           "zh_trad": "這個項目，你跟一下。",
           "pinyin": "zhè ge xiàng mù ， nǐ gēn yī xià 。",
+          "vi": "Dự án này, em theo sát nhé.",
           "tokens": [
             {
               "text": "这个",
@@ -878,17 +878,17 @@
           "meaning_vi": "đừng",
           "hsk": 2,
           "bbox": {
-            "x": 45.0,
-            "y": 10.0,
-            "width": 6.25,
-            "height": 13.0
+            "x": 5.669,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 45.0,
-              "y": 10.0,
-              "width": 6.25,
-              "height": 13.0
+              "x": 5.669,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
             }
           ],
           "sentence_zh": "別緊張，沒什麼大事。",
@@ -906,17 +906,17 @@
           "meaning_vi": "căng thẳng, hồi hộp",
           "hsk": 4,
           "bbox": {
-            "x": 51.25,
-            "y": 10.0,
-            "width": 12.5,
-            "height": 13.0
+            "x": 7.558,
+            "y": 9.635,
+            "width": 3.779,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 51.25,
-              "y": 10.0,
-              "width": 12.5,
-              "height": 13.0
+              "x": 7.558,
+              "y": 9.635,
+              "width": 3.779,
+              "height": 4.167
             }
           ],
           "sentence_zh": "別緊張，沒什麼大事。",
@@ -932,19 +932,19 @@
           "pinyin": "méi",
           "hanviet": "Một",
           "meaning_vi": "không có; chưa",
-          "hsk": null,
+          "hsk": 1,
           "bbox": {
-            "x": 63.75,
-            "y": 10.0,
-            "width": 6.25,
-            "height": 13.0
+            "x": 11.337,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 63.75,
-              "y": 10.0,
-              "width": 6.25,
-              "height": 13.0
+              "x": 11.337,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
             }
           ],
           "sentence_zh": "別緊張，沒什麼大事。",
@@ -962,17 +962,17 @@
           "meaning_vi": "cái gì",
           "hsk": 1,
           "bbox": {
-            "x": 70.0,
-            "y": 10.0,
-            "width": 12.5,
-            "height": 13.0
+            "x": 13.227,
+            "y": 9.635,
+            "width": 3.779,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 70.0,
-              "y": 10.0,
-              "width": 12.5,
-              "height": 13.0
+              "x": 13.227,
+              "y": 9.635,
+              "width": 3.779,
+              "height": 4.167
             }
           ],
           "sentence_zh": "別緊張，沒什麼大事。",
@@ -990,17 +990,17 @@
           "meaning_vi": "việc lớn, chuyện lớn",
           "hsk": 5,
           "bbox": {
-            "x": 82.5,
-            "y": 10.0,
-            "width": 12.5,
-            "height": 13.0
+            "x": 17.006,
+            "y": 9.635,
+            "width": 3.779,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 82.5,
-              "y": 10.0,
-              "width": 12.5,
-              "height": 13.0
+              "x": 17.006,
+              "y": 9.635,
+              "width": 3.779,
+              "height": 4.167
             }
           ],
           "sentence_zh": "別緊張，沒什麼大事。",
@@ -1018,17 +1018,17 @@
           "meaning_vi": "cái này (đại từ)",
           "hsk": 1,
           "bbox": {
-            "x": 45.0,
-            "y": 26.0,
-            "width": 12.5,
-            "height": 13.0
+            "x": 36.919,
+            "y": 9.635,
+            "width": 3.779,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 45.0,
-              "y": 26.0,
-              "width": 12.5,
-              "height": 13.0
+              "x": 36.919,
+              "y": 9.635,
+              "width": 3.779,
+              "height": 4.167
             }
           ],
           "sentence_zh": "這個項目，你跟一下。",
@@ -1046,17 +1046,17 @@
           "meaning_vi": "dự án, hạng mục",
           "hsk": 5,
           "bbox": {
-            "x": 57.5,
-            "y": 26.0,
-            "width": 12.5,
-            "height": 13.0
+            "x": 40.698,
+            "y": 9.635,
+            "width": 3.779,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 57.5,
-              "y": 26.0,
-              "width": 12.5,
-              "height": 13.0
+              "x": 40.698,
+              "y": 9.635,
+              "width": 3.779,
+              "height": 4.167
             }
           ],
           "sentence_zh": "這個項目，你跟一下。",
@@ -1074,17 +1074,17 @@
           "meaning_vi": "bạn",
           "hsk": 1,
           "bbox": {
-            "x": 70.0,
-            "y": 26.0,
-            "width": 6.25,
-            "height": 13.0
+            "x": 44.477,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 70.0,
-              "y": 26.0,
-              "width": 6.25,
-              "height": 13.0
+              "x": 44.477,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
             }
           ],
           "sentence_zh": "這個項目，你跟一下。",
@@ -1102,17 +1102,17 @@
           "meaning_vi": "cùng với, theo",
           "hsk": 2,
           "bbox": {
-            "x": 76.25,
-            "y": 26.0,
-            "width": 6.25,
-            "height": 13.0
+            "x": 46.366,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 76.25,
-              "y": 26.0,
-              "width": 6.25,
-              "height": 13.0
+              "x": 46.366,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
             }
           ],
           "sentence_zh": "這個項目，你跟一下。",
@@ -1130,17 +1130,17 @@
           "meaning_vi": "một chút, một lát, thử xem",
           "hsk": 1,
           "bbox": {
-            "x": 82.5,
-            "y": 26.0,
-            "width": 12.5,
-            "height": 13.0
+            "x": 48.256,
+            "y": 9.635,
+            "width": 3.779,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 82.5,
-              "y": 26.0,
-              "width": 12.5,
-              "height": 13.0
+              "x": 48.256,
+              "y": 9.635,
+              "width": 3.779,
+              "height": 4.167
             }
           ],
           "sentence_zh": "這個項目，你跟一下。",
@@ -1165,15 +1165,15 @@
           "id": "p4_d1",
           "character": "小铃 (Tiểu Linh)",
           "bbox": {
-            "x": 60.0,
-            "y": 10.0,
-            "width": 34.0,
-            "height": 13.0
+            "x": 63.95,
+            "y": 7.81,
+            "width": 18.9,
+            "height": 12.37
           },
           "zh": "所以呢？",
-          "vi": "Thế rốt cuộc sao?",
           "zh_trad": "所以呢？",
           "pinyin": "suǒ yǐ ne ？",
+          "vi": "Thế rốt cuộc sao?",
           "tokens": [
             {
               "text": "所以",
@@ -1197,15 +1197,15 @@
           "id": "p4_d2",
           "character": "小阳 (Tiểu Dương)",
           "bbox": {
-            "x": 15.0,
-            "y": 12.0,
-            "width": 42.0,
-            "height": 13.0
+            "x": 13.08,
+            "y": 7.81,
+            "width": 29.07,
+            "height": 12.37
           },
           "zh": "他说没什么大事。",
-          "vi": "Sếp bảo không có chuyện gì to tát cả.",
           "zh_trad": "他說沒什麼大事。",
           "pinyin": "tā shuō méi shén me dà shì 。",
+          "vi": "Sếp bảo không có chuyện gì to tát cả.",
           "tokens": [
             {
               "text": "他",
@@ -1229,7 +1229,7 @@
               "pinyin": "méi",
               "hanviet": "Một",
               "meaning_vi": "không có; chưa",
-              "hsk": null
+              "hsk": 1
             },
             {
               "text": "什么",
@@ -1260,17 +1260,17 @@
           "meaning_vi": "vì vậy",
           "hsk": 2,
           "bbox": {
-            "x": 60.0,
-            "y": 10.0,
-            "width": 22.667,
-            "height": 13.0
+            "x": 65.262,
+            "y": 12.24,
+            "width": 3.779,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 60.0,
-              "y": 10.0,
-              "width": 22.667,
-              "height": 13.0
+              "x": 65.262,
+              "y": 12.24,
+              "width": 3.779,
+              "height": 4.167
             }
           ],
           "sentence_zh": "所以呢？",
@@ -1288,17 +1288,17 @@
           "meaning_vi": "thế còn (trợ từ)",
           "hsk": 1,
           "bbox": {
-            "x": 82.667,
-            "y": 10.0,
-            "width": 11.333,
-            "height": 13.0
+            "x": 69.041,
+            "y": 12.24,
+            "width": 1.89,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 82.667,
-              "y": 10.0,
-              "width": 11.333,
-              "height": 13.0
+              "x": 69.041,
+              "y": 12.24,
+              "width": 1.89,
+              "height": 4.167
             }
           ],
           "sentence_zh": "所以呢？",
@@ -1316,17 +1316,17 @@
           "meaning_vi": "anh ấy, nó",
           "hsk": 1,
           "bbox": {
-            "x": 15.0,
-            "y": 12.0,
-            "width": 6.0,
-            "height": 13.0
+            "x": 14.39,
+            "y": 12.24,
+            "width": 1.89,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 15.0,
-              "y": 12.0,
-              "width": 6.0,
-              "height": 13.0
+              "x": 14.39,
+              "y": 12.24,
+              "width": 1.89,
+              "height": 4.167
             }
           ],
           "sentence_zh": "他說沒什麼大事。",
@@ -1344,17 +1344,17 @@
           "meaning_vi": "nói",
           "hsk": 1,
           "bbox": {
-            "x": 21.0,
-            "y": 12.0,
-            "width": 6.0,
-            "height": 13.0
+            "x": 16.279,
+            "y": 12.24,
+            "width": 1.89,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 21.0,
-              "y": 12.0,
-              "width": 6.0,
-              "height": 13.0
+              "x": 16.279,
+              "y": 12.24,
+              "width": 1.89,
+              "height": 4.167
             }
           ],
           "sentence_zh": "他說沒什麼大事。",
@@ -1370,19 +1370,19 @@
           "pinyin": "méi",
           "hanviet": "Một",
           "meaning_vi": "không có; chưa",
-          "hsk": null,
+          "hsk": 1,
           "bbox": {
-            "x": 27.0,
-            "y": 12.0,
-            "width": 6.0,
-            "height": 13.0
+            "x": 18.169,
+            "y": 12.24,
+            "width": 1.89,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 27.0,
-              "y": 12.0,
-              "width": 6.0,
-              "height": 13.0
+              "x": 18.169,
+              "y": 12.24,
+              "width": 1.89,
+              "height": 4.167
             }
           ],
           "sentence_zh": "他說沒什麼大事。",
@@ -1400,17 +1400,17 @@
           "meaning_vi": "cái gì",
           "hsk": 1,
           "bbox": {
-            "x": 33.0,
-            "y": 12.0,
-            "width": 12.0,
-            "height": 13.0
+            "x": 20.058,
+            "y": 12.24,
+            "width": 3.779,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 33.0,
-              "y": 12.0,
-              "width": 12.0,
-              "height": 13.0
+              "x": 20.058,
+              "y": 12.24,
+              "width": 3.779,
+              "height": 4.167
             }
           ],
           "sentence_zh": "他說沒什麼大事。",
@@ -1428,17 +1428,17 @@
           "meaning_vi": "việc lớn, chuyện lớn",
           "hsk": 5,
           "bbox": {
-            "x": 45.0,
-            "y": 12.0,
-            "width": 12.0,
-            "height": 13.0
+            "x": 23.837,
+            "y": 12.24,
+            "width": 3.779,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 45.0,
-              "y": 12.0,
-              "width": 12.0,
-              "height": 13.0
+              "x": 23.837,
+              "y": 12.24,
+              "width": 3.779,
+              "height": 4.167
             }
           ],
           "sentence_zh": "他說沒什麼大事。",
@@ -1463,15 +1463,15 @@
           "id": "p5_d1",
           "character": "小铃 (Tiểu Linh)",
           "bbox": {
-            "x": 8.0,
-            "y": 10.0,
-            "width": 44.0,
-            "height": 13.0
+            "x": 5.81,
+            "y": 6.51,
+            "width": 31.98,
+            "height": 12.37
           },
           "zh": "那你怎么一脸绝望？",
-          "vi": "Thế sao mặt cậu trông tuyệt vọng thế?",
           "zh_trad": "那你怎麼一臉絕望？",
           "pinyin": "nà nǐ zěn me yī liǎn jué wàng ？",
+          "vi": "Thế sao mặt cậu trông tuyệt vọng thế?",
           "tokens": [
             {
               "text": "那",
@@ -1503,7 +1503,7 @@
               "pinyin": "yìliǎn",
               "hanviet": "Nhất Kiểm",
               "meaning_vi": "tràn ngập vẻ mặt, nguyên cả nét mặt",
-              "hsk": null
+              "hsk": 3
             },
             {
               "text": "绝望",
@@ -1519,15 +1519,15 @@
           "id": "p5_d2",
           "character": "小阳 (Tiểu Dương)",
           "bbox": {
-            "x": 52.0,
-            "y": 10.0,
-            "width": 45.0,
-            "height": 15.0
+            "x": 52.33,
+            "y": 5.86,
+            "width": 43.6,
+            "height": 13.02
           },
           "zh": "每次他说没什么大事，最后都有大事。",
-          "vi": "Lần nào sếp bảo không có chuyện gì lớn, y như rằng cuối cùng việc lớn ngập đầu.",
           "zh_trad": "每次他說沒什麼大事，最後都有大事。",
           "pinyin": "měi cì tā shuō méi shén me dà shì ， zuì hòu dōu yǒu dà shì 。",
+          "vi": "Lần nào sếp bảo không có chuyện gì lớn, y như rằng cuối cùng việc lớn ngập đầu.",
           "tokens": [
             {
               "text": "每次",
@@ -1535,7 +1535,7 @@
               "pinyin": "měicì",
               "hanviet": "Mỗi Thứ",
               "meaning_vi": "mỗi lần, lần nào cũng",
-              "hsk": null
+              "hsk": 2
             },
             {
               "text": "他",
@@ -1559,7 +1559,7 @@
               "pinyin": "méi",
               "hanviet": "Một",
               "meaning_vi": "không có; chưa",
-              "hsk": null
+              "hsk": 1
             },
             {
               "text": "什么",
@@ -1622,17 +1622,17 @@
           "meaning_vi": "đó, kia",
           "hsk": 1,
           "bbox": {
-            "x": 8.0,
-            "y": 10.0,
-            "width": 5.5,
-            "height": 13.0
+            "x": 7.122,
+            "y": 10.938,
+            "width": 1.89,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 8.0,
-              "y": 10.0,
-              "width": 5.5,
-              "height": 13.0
+              "x": 7.122,
+              "y": 10.938,
+              "width": 1.89,
+              "height": 4.167
             }
           ],
           "sentence_zh": "那你怎麼一臉絕望？",
@@ -1650,17 +1650,17 @@
           "meaning_vi": "bạn",
           "hsk": 1,
           "bbox": {
-            "x": 13.5,
-            "y": 10.0,
-            "width": 5.5,
-            "height": 13.0
+            "x": 9.012,
+            "y": 10.938,
+            "width": 1.89,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 13.5,
-              "y": 10.0,
-              "width": 5.5,
-              "height": 13.0
+              "x": 9.012,
+              "y": 10.938,
+              "width": 1.89,
+              "height": 4.167
             }
           ],
           "sentence_zh": "那你怎麼一臉絕望？",
@@ -1678,17 +1678,17 @@
           "meaning_vi": "thế nào, sao",
           "hsk": 1,
           "bbox": {
-            "x": 19.0,
-            "y": 10.0,
-            "width": 11.0,
-            "height": 13.0
+            "x": 10.901,
+            "y": 10.938,
+            "width": 3.779,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 19.0,
-              "y": 10.0,
-              "width": 11.0,
-              "height": 13.0
+              "x": 10.901,
+              "y": 10.938,
+              "width": 3.779,
+              "height": 4.167
             }
           ],
           "sentence_zh": "那你怎麼一臉絕望？",
@@ -1704,19 +1704,19 @@
           "pinyin": "yìliǎn",
           "hanviet": "Nhất Kiểm",
           "meaning_vi": "tràn ngập vẻ mặt, nguyên cả nét mặt",
-          "hsk": null,
+          "hsk": 3,
           "bbox": {
-            "x": 30.0,
-            "y": 10.0,
-            "width": 11.0,
-            "height": 13.0
+            "x": 14.68,
+            "y": 10.938,
+            "width": 3.779,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 30.0,
-              "y": 10.0,
-              "width": 11.0,
-              "height": 13.0
+              "x": 14.68,
+              "y": 10.938,
+              "width": 3.779,
+              "height": 4.167
             }
           ],
           "sentence_zh": "那你怎麼一臉絕望？",
@@ -1734,17 +1734,17 @@
           "meaning_vi": "tuyệt vọng",
           "hsk": 6,
           "bbox": {
-            "x": 41.0,
-            "y": 10.0,
-            "width": 11.0,
-            "height": 13.0
+            "x": 18.459,
+            "y": 10.938,
+            "width": 3.779,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 41.0,
-              "y": 10.0,
-              "width": 11.0,
-              "height": 13.0
+              "x": 18.459,
+              "y": 10.938,
+              "width": 3.779,
+              "height": 4.167
             }
           ],
           "sentence_zh": "那你怎麼一臉絕望？",
@@ -1760,19 +1760,19 @@
           "pinyin": "měicì",
           "hanviet": "Mỗi Thứ",
           "meaning_vi": "mỗi lần, lần nào cũng",
-          "hsk": null,
+          "hsk": 2,
           "bbox": {
-            "x": 52.0,
-            "y": 10.0,
-            "width": 6.0,
-            "height": 15.0
+            "x": 53.634,
+            "y": 10.286,
+            "width": 3.779,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 52.0,
-              "y": 10.0,
-              "width": 6.0,
-              "height": 15.0
+              "x": 53.634,
+              "y": 10.286,
+              "width": 3.779,
+              "height": 4.167
             }
           ],
           "sentence_zh": "每次他說沒什麼大事，最後都有大事。",
@@ -1790,17 +1790,17 @@
           "meaning_vi": "anh ấy, nó",
           "hsk": 1,
           "bbox": {
-            "x": 58.0,
-            "y": 10.0,
-            "width": 3.0,
-            "height": 15.0
+            "x": 57.413,
+            "y": 10.286,
+            "width": 1.89,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 58.0,
-              "y": 10.0,
-              "width": 3.0,
-              "height": 15.0
+              "x": 57.413,
+              "y": 10.286,
+              "width": 1.89,
+              "height": 4.167
             }
           ],
           "sentence_zh": "每次他說沒什麼大事，最後都有大事。",
@@ -1818,17 +1818,17 @@
           "meaning_vi": "nói",
           "hsk": 1,
           "bbox": {
-            "x": 61.0,
-            "y": 10.0,
-            "width": 3.0,
-            "height": 15.0
+            "x": 59.302,
+            "y": 10.286,
+            "width": 1.89,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 61.0,
-              "y": 10.0,
-              "width": 3.0,
-              "height": 15.0
+              "x": 59.302,
+              "y": 10.286,
+              "width": 1.89,
+              "height": 4.167
             }
           ],
           "sentence_zh": "每次他說沒什麼大事，最後都有大事。",
@@ -1844,19 +1844,19 @@
           "pinyin": "méi",
           "hanviet": "Một",
           "meaning_vi": "không có; chưa",
-          "hsk": null,
+          "hsk": 1,
           "bbox": {
-            "x": 64.0,
-            "y": 10.0,
-            "width": 3.0,
-            "height": 15.0
+            "x": 61.192,
+            "y": 10.286,
+            "width": 1.89,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 64.0,
-              "y": 10.0,
-              "width": 3.0,
-              "height": 15.0
+              "x": 61.192,
+              "y": 10.286,
+              "width": 1.89,
+              "height": 4.167
             }
           ],
           "sentence_zh": "每次他說沒什麼大事，最後都有大事。",
@@ -1874,17 +1874,17 @@
           "meaning_vi": "cái gì",
           "hsk": 1,
           "bbox": {
-            "x": 67.0,
-            "y": 10.0,
-            "width": 6.0,
-            "height": 15.0
+            "x": 63.081,
+            "y": 10.286,
+            "width": 3.779,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 67.0,
-              "y": 10.0,
-              "width": 6.0,
-              "height": 15.0
+              "x": 63.081,
+              "y": 10.286,
+              "width": 3.779,
+              "height": 4.167
             }
           ],
           "sentence_zh": "每次他說沒什麼大事，最後都有大事。",
@@ -1902,17 +1902,17 @@
           "meaning_vi": "việc lớn, chuyện lớn",
           "hsk": 5,
           "bbox": {
-            "x": 73.0,
-            "y": 10.0,
-            "width": 6.0,
-            "height": 15.0
+            "x": 66.86,
+            "y": 10.286,
+            "width": 3.779,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 73.0,
-              "y": 10.0,
-              "width": 6.0,
-              "height": 15.0
+              "x": 66.86,
+              "y": 10.286,
+              "width": 3.779,
+              "height": 4.167
             }
           ],
           "sentence_zh": "每次他說沒什麼大事，最後都有大事。",
@@ -1930,17 +1930,17 @@
           "meaning_vi": "cuối cùng",
           "hsk": 3,
           "bbox": {
-            "x": 79.0,
-            "y": 10.0,
-            "width": 6.0,
-            "height": 15.0
+            "x": 70.64,
+            "y": 10.286,
+            "width": 3.779,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 79.0,
-              "y": 10.0,
-              "width": 6.0,
-              "height": 15.0
+              "x": 70.64,
+              "y": 10.286,
+              "width": 3.779,
+              "height": 4.167
             }
           ],
           "sentence_zh": "每次他說沒什麼大事，最後都有大事。",
@@ -1958,17 +1958,17 @@
           "meaning_vi": "đều",
           "hsk": 1,
           "bbox": {
-            "x": 85.0,
-            "y": 10.0,
-            "width": 3.0,
-            "height": 15.0
+            "x": 74.419,
+            "y": 10.286,
+            "width": 1.89,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 85.0,
-              "y": 10.0,
-              "width": 3.0,
-              "height": 15.0
+              "x": 74.419,
+              "y": 10.286,
+              "width": 1.89,
+              "height": 4.167
             }
           ],
           "sentence_zh": "每次他說沒什麼大事，最後都有大事。",
@@ -1986,17 +1986,17 @@
           "meaning_vi": "có",
           "hsk": 1,
           "bbox": {
-            "x": 88.0,
-            "y": 10.0,
-            "width": 3.0,
-            "height": 15.0
+            "x": 76.308,
+            "y": 10.286,
+            "width": 1.89,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 88.0,
-              "y": 10.0,
-              "width": 3.0,
-              "height": 15.0
+              "x": 76.308,
+              "y": 10.286,
+              "width": 1.89,
+              "height": 4.167
             }
           ],
           "sentence_zh": "每次他說沒什麼大事，最後都有大事。",
@@ -2014,17 +2014,17 @@
           "meaning_vi": "việc lớn, chuyện lớn",
           "hsk": 5,
           "bbox": {
-            "x": 91.0,
-            "y": 10.0,
-            "width": 6.0,
-            "height": 15.0
+            "x": 78.198,
+            "y": 10.286,
+            "width": 3.779,
+            "height": 4.167
           },
           "rects": [
             {
-              "x": 91.0,
-              "y": 10.0,
-              "width": 6.0,
-              "height": 15.0
+              "x": 78.198,
+              "y": 10.286,
+              "width": 3.779,
+              "height": 4.167
             }
           ],
           "sentence_zh": "每次他說沒什麼大事，最後都有大事。",

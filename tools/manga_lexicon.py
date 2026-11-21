@@ -103,7 +103,8 @@ def lookup(word):
     py = (g or {}).get("pinyin") or base.get("pinyin") or " ".join(lazy_pinyin(word, style=Style.TONE))
     hv = (g or {}).get("hanviet") or base.get("hanviet") or hanviet_of(word)
     mean = (g or {}).get("meaning_vi") or base.get("meaning_vi") or ""
-    return py, hv, mean, base.get("hsk"), bool(mean)
+    hsk = (g or {}).get("hsk") if (g and "hsk" in g) else base.get("hsk")
+    return py, hv, mean, hsk, bool(mean)
 
 
 def known(w):
