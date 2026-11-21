@@ -32,7 +32,7 @@
   --bg: #F5F0E7;
   --card-bg: #FFFFFF;
   --border: #E8E1D7;
-  --card-shadow: 0 2px 10px -2px rgba(41, 43, 48, 0.05), 0 1px 3px 0 rgba(41, 43, 48, 0.03);
+  --card-shadow: none;
   --surface-subtle: #FAF6EE;
   --surface-chip: #F1EBDD;
   --progress-track: #E4DACE;
@@ -40,8 +40,8 @@
   --accent: #A8322D;
   --accent-hover: #852722;
   --accent-gold: #C5A46D;
-  --accent-gradient: linear-gradient(135deg, #A8322D 0%, #852722 100%);
-  --accent-gradient-hover: linear-gradient(135deg, #B83A31 0%, #A8322A 100%);
+  --accent-gradient: linear-gradient(var(--accent), var(--accent));
+  --accent-gradient-hover: linear-gradient(var(--accent-hover), var(--accent-hover));
   --accent-light: rgba(168, 50, 45, 0.08);
   --on-accent: #FFFFFF;
   --accent-text: #A8322D;
@@ -57,8 +57,8 @@
 
   --example-bg: #F8F3EA;
   --example-border: #DDD2BE;
-  --radius-lg: 16px;
-  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-md: 8px;
 
   /* Design system scale (v3.38) — shared by every screen */
   --font-zh: "Noto Serif SC", "Songti SC", "STSong", "SimSun", serif;
@@ -113,7 +113,7 @@
     --bg: #17191D;
     --card-bg: #22252B;
     --border: #333945;
-    --card-shadow: 0 6px 20px -3px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(184, 155, 104, 0.16);
+    --card-shadow: none;
     --surface-subtle: #22252B;
     --surface-chip: #2A303A;
     --progress-track: #282E38;
@@ -121,8 +121,8 @@
     --accent: #A8322D;
     --accent-hover: #BF3B32;
     --accent-gold: #B89B68;
-    --accent-gradient: linear-gradient(135deg, #A8322A 0%, #8F2525 100%);
-    --accent-gradient-hover: linear-gradient(135deg, #BF3B32 0%, #A8322A 100%);
+    --accent-gradient: linear-gradient(var(--accent), var(--accent));
+    --accent-gradient-hover: linear-gradient(var(--accent-hover), var(--accent-hover));
     --accent-light: rgba(168, 50, 42, 0.15);
     --on-accent: #EDE6D8;
     --accent-text: #E06D63;
@@ -137,8 +137,8 @@
     --warning-text: #D4B37F;
     --example-bg: #1B1E24;
     --example-border: #2D333D;
-    --radius-lg: 16px;
-    --radius-md: 10px;
+    --radius-lg: 12px;
+    --radius-md: 8px;
     --surface-hover: rgba(237, 230, 216, 0.05);
     --surface-active: rgba(224, 109, 99, 0.12);
     --focus-ring: 0 0 0 3px rgba(224, 109, 99, 0.35);
@@ -168,7 +168,7 @@
   --bg: #17191D;
   --card-bg: #22252B;
   --border: #333945;
-  --card-shadow: 0 6px 20px -3px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(184, 155, 104, 0.16);
+  --card-shadow: none;
   --surface-subtle: #22252B;
   --surface-chip: #2A303A;
   --progress-track: #282E38;
@@ -176,8 +176,8 @@
   --accent: #A8322D;
   --accent-hover: #BF3B32;
   --accent-gold: #B89B68;
-  --accent-gradient: linear-gradient(135deg, #A8322A 0%, #8F2525 100%);
-  --accent-gradient-hover: linear-gradient(135deg, #BF3B32 0%, #A8322A 100%);
+  --accent-gradient: linear-gradient(var(--accent), var(--accent));
+  --accent-gradient-hover: linear-gradient(var(--accent-hover), var(--accent-hover));
   --accent-light: rgba(168, 50, 42, 0.15);
   --on-accent: #EDE6D8;
   --accent-text: #E06D63;
@@ -192,8 +192,8 @@
   --warning-text: #D4B37F;
   --example-bg: #1B1E24;
   --example-border: #2D333D;
-  --radius-lg: 16px;
-  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-md: 8px;
   --surface-hover: rgba(237, 230, 216, 0.05);
   --surface-active: rgba(224, 109, 99, 0.12);
   --focus-ring: 0 0 0 3px rgba(224, 109, 99, 0.35);

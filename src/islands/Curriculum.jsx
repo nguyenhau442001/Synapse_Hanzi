@@ -616,8 +616,12 @@ function LessonView({ lesson, levelData }) {
 function CurriculumScreen() {
   if (ui.error) {
     return (
-      <div class="cur-wrap"><div class="cur-card cur-empty">
-        <p>{ui.error}</p>
+      <div class="cur-wrap"><div class="cur-empty" role="alert">
+        <span class="cur-empty-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7" /><path d="M21 4v5h-5" /></svg>
+        </span>
+        <h2 class="cur-empty-title">Chưa tải được giáo trình</h2>
+        <p class="cur-empty-text">{`${ui.error} Kiểm tra kết nối mạng rồi thử lại.`}</p>
         <button type="button" class="ds-btn ds-btn--primary" onClick={() => { ui.error = null; initCurriculum(); }}>Thử lại</button>
       </div></div>
     );

@@ -3,6 +3,14 @@
    compact header, quiet pills, ghost icon buttons and a borderless segmented nav.
    Screen-specific styles live in their own files (e.g. curriculum.css). */
 
+/* Headings focused programmatically on screen change (tabindex="-1") should not show a ring. */
+[tabindex="-1"]:focus:not(:focus-visible),
+h1[tabindex="-1"]:focus,
+h2[tabindex="-1"]:focus,
+h3[tabindex="-1"]:focus {
+  outline: none;
+}
+
 .ds-icon {
   display: block;
   flex-shrink: 0;
@@ -194,6 +202,14 @@ body.curriculum-view-active:not(.study-mode) .app-header {
   clip-path: inset(0 -100vmax);
 }
 body.curriculum-view-active:not(.study-mode) .chinese-aesthetic-bg { z-index: 0; }
+/* Phones: the header wraps to two rows and the bottom nav already stays in view. */
+@media (max-width: 767px) {
+  body.curriculum-view-active:not(.study-mode) .app-header {
+    position: relative;
+    box-shadow: none;
+    clip-path: none;
+  }
+}
 
 /* ── Primary navigation ─────────────────────────────────────────────────── */
 .primary-tabs { margin: var(--space-2) 0 var(--space-5); }
@@ -256,4 +272,162 @@ body.curriculum-view-active:not(.study-mode) .chinese-aesthetic-bg { z-index: 0;
 @media (prefers-reduced-motion: reduce) {
   .app-header *,
   .primary-tabs * { transition: none !important; }
+}
+
+/* ── Screen refinements: home (Từ vựng) ─────────────────────────────────── */
+.learning-dashboard,
+body.home-screen .learning-dashboard.dashboard-hero-banner,
+:root[data-theme="dark"] body.home-screen .learning-dashboard.dashboard-hero-banner {
+  border-radius: var(--radius-card);
+  border-color: var(--border);
+  background-image: none;
+  box-shadow: none;
+}
+.learning-dashboard-eyebrow {
+  font-size: var(--fs-caption);
+  font-weight: 600;
+  color: var(--accent-text);
+}
+.learning-dashboard h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.level-card,
+:root[data-theme="dark"] .level-card {
+  border-radius: var(--radius-card);
+  border-color: var(--border);
+  box-shadow: none;
+  transition: border-color var(--dur-fast) var(--ease-out), background-color var(--dur-fast) var(--ease-out);
+}
+.level-card:hover,
+:root[data-theme="dark"] .level-card:hover {
+  transform: none;
+  border-color: var(--text-tertiary);
+  box-shadow: none;
+}
+.level-card:active { transform: translateY(1px); }
+.level-card.is-active-level,
+:root[data-theme="dark"] .level-card.is-active-level {
+  border: 1px solid var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+.level-card .lvl-num {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.level-card::after {
+  font-family: var(--font-zh);
+  font-weight: 600;
+}
+.level-card .lvl-percent-value { font-weight: 600; }
+
+/* ── Screen refinements: quick review picker (Ôn nhanh) ─────────────────── */
+.review-unified-card {
+  border-radius: var(--radius-card);
+  box-shadow: none;
+}
+.review-hero-title {
+  font-family: var(--font-sans);
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+/* Scope and rules sit directly on the card: dividers instead of nested boxes */
+.review-scope-box {
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--border-subtle);
+  border-radius: 0;
+  padding: var(--space-4) 0 0;
+}
+.review-filter-chip {
+  border-radius: var(--radius-btn);
+  box-shadow: none;
+  background-image: none;
+  transition: background-color var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+.review-filter-chip:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+.review-rules-container {
+  gap: var(--space-2) var(--space-4);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--border-subtle);
+}
+.review-rule-card {
+  padding: var(--space-2) 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.review-rule-title { font-size: var(--fs-body); font-weight: 600; }
+.review-rule-sub { font-size: var(--fs-caption); color: var(--text-tertiary); }
+.review-cta-btn {
+  min-height: 48px;
+  border-radius: var(--radius-btn);
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0;
+  box-shadow: none;
+  transition: background-color var(--dur-fast) var(--ease-out), transform var(--dur-fast) var(--ease-out);
+}
+.review-cta-btn:hover {
+  filter: none;
+  transform: none;
+  background: var(--accent-hover);
+  box-shadow: none;
+}
+.review-cta-btn:active { transform: translateY(1px); filter: none; }
+.review-cta-btn:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+
+/* Home picker cards are styled under body.home-screen #screenPicker — match that scope. */
+body.home-screen #screenPicker .level-card,
+:root[data-theme="dark"] body.home-screen #screenPicker .level-card {
+  border-radius: var(--radius-card);
+  border: 1px solid var(--border);
+  box-shadow: none;
+  transition: border-color var(--dur-fast) var(--ease-out), background-color var(--dur-fast) var(--ease-out);
+}
+body.home-screen #screenPicker .level-card:hover,
+:root[data-theme="dark"] body.home-screen #screenPicker .level-card:hover,
+body.home-screen #screenPicker .level-card.is-complete-level:hover {
+  transform: none;
+  border-color: var(--text-tertiary);
+  box-shadow: none;
+}
+body.home-screen #screenPicker .level-card.is-active-level,
+:root[data-theme="dark"] body.home-screen #screenPicker .level-card.is-active-level {
+  border: 1px solid var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+body.home-screen #screenPicker .lvl-num {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+body.home-screen #screenPicker .lvl-percent-value {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+body.home-screen #screenPicker .level-status-badge {
+  border: 0;
+  font-weight: 500;
+  padding: 3px 10px;
+}
+
+/* ── Responsive guards: scroll rows must not widen the page on phones ───── */
+@media (max-width: 767px) {
+  .sentence-question-nav { contain: inline-size; }
+  .reading-filter-controls {
+    flex-wrap: wrap;
+    min-width: 0;
+    max-width: 100%;
+  }
+  .reading-select-pill { min-width: 0; max-width: 100%; }
+  .reading-select-pill select { min-width: 0; max-width: 100%; }
 }
