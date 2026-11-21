@@ -47,7 +47,7 @@ class TestReviewFlow(unittest.TestCase):
         self.assertIn("export const DEFAULT_DAILY_STUDY_GOAL = 20;", levels)
         body = self.progress.split("export function newCardAllowance", 1)[1].split("\n}\n", 1)[0]
         self.assertIn("readDailyStudyGoal()", body)
-        self.assertIn("countNewReviewsToday()", body)
+        self.assertIn("countNewReviewsToday(readStudyDirection())", body)
 
     def test_review_counters_rendered(self):
         self.assertIn("Hôm nay cần ôn:", self.flashcard)
