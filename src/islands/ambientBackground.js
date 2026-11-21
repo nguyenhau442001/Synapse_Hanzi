@@ -379,8 +379,11 @@ class ChineseInkAmbientEngine {
       const dt = currentTime - this.lastTime;
       this.lastTime = currentTime;
 
-      this.update(dt);
-      this.render();
+      // The canvas is hidden on the flashcard study screen; skip the drawing work there.
+      if (!document.body.classList.contains('flashcard-study-mode')) {
+        this.update(dt);
+        this.render();
+      }
 
       this.animationFrameId = requestAnimationFrame(loop);
     };

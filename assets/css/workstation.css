@@ -5540,3 +5540,12 @@ body.flashcard-study-mode .card-flip-prompt .hint,
 :root[data-theme="dark"] body.flashcard-study-mode .card-flip-prompt .hint { color: var(--text-tertiary); }
 body.flashcard-study-mode .rating-interval { opacity: 1; }
 body.flashcard-study-mode .rating-btn .rating-kbd-badge { opacity: 1; }
+
+/* --- Quiet study backdrop ------------------------------------------------------
+   No landscape swooshes, floating ink dots or pooled drop shadow behind the card:
+   the deep offset shadow read as a misaligned second card under the bottom edge. */
+body.flashcard-study-mode .chinese-aesthetic-bg { display: none !important; }
+body.flashcard-study-mode #cardArea > .card,
+:root[data-theme="dark"] body.flashcard-study-mode #cardArea > .card {
+  box-shadow: 0 1px 2px rgba(60, 46, 32, 0.05);
+}
