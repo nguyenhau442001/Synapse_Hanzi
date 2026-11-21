@@ -1,8 +1,9 @@
 // Radical (Bộ thủ) hub screen #screenRadicalHub: tab switcher (50 basic / 214 Kangxi),
 // group cards by stroke count with character previews and learning progress,
-// plus the primary tab router and skills menu navigation.
+// plus the primary tab router (section/sub-tab highlighting lives in NavSections.js).
 // Preact port of the former assets/js/radicals.js with identical markup and behavior.
 import { render } from 'preact';
+import { syncNavSections } from './NavSections';
 
 /* global RADICAL_STROKE_COUNTS, RADICAL_GROUPS, radicalTab, radicalDataLoaded, radicalStrokeUrl, primaryTab,
    radicalProgress, radicalProgressKey, radicalReturnTab, radicalGroupIndex, radicalWords, radicalOrder,
@@ -21,17 +22,17 @@ let hubError = false;
 let radicalDataLoadPromise = null;
 
 export const PRIMARY_TAB_SCREENS = {
-  vocab: { tabId: 'primaryTabVocab', screenId: 'screenVocabHub' },
-  curriculum: { tabId: 'primaryTabCurriculum', screenId: 'screenCurriculum' },
-  writing: { tabId: 'primaryTabWriting', screenId: 'screenWriting' },
-  radicals: { tabId: 'primaryTabRadicals', screenId: 'screenRadicalHub' },
-  review: { tabId: 'primaryTabReview', screenId: 'screenReviewPicker' },
-  reading: { tabId: 'primaryTabReading', screenId: 'screenReadingAnalysis' },
-  gradedReading: { tabId: 'primaryTabGradedReading', screenId: 'screenGradedReading' },
-  listening: { tabId: 'primaryTabListening', screenId: 'screenListeningPractice' },
-  sentenceGame: { tabId: 'primaryTabSentenceGame', screenId: 'screenSentenceGame' },
-  guessWord: { tabId: 'primaryTabGuessWord', screenId: 'screenGuessWord' },
-  speedQuiz: { tabId: 'primaryTabSpeedQuiz', screenId: 'screenSpeedQuiz' },
+  vocab: { screenId: 'screenVocabHub' },
+  curriculum: { screenId: 'screenCurriculum' },
+  writing: { screenId: 'screenWriting' },
+  radicals: { screenId: 'screenRadicalHub' },
+  review: { screenId: 'screenReviewPicker' },
+  reading: { screenId: 'screenReadingAnalysis' },
+  gradedReading: { screenId: 'screenGradedReading' },
+  listening: { screenId: 'screenListeningPractice' },
+  sentenceGame: { screenId: 'screenSentenceGame' },
+  guessWord: { screenId: 'screenGuessWord' },
+  speedQuiz: { screenId: 'screenSpeedQuiz' },
 };
 
 let vocabSubTab = 'level';
@@ -84,16 +85,7 @@ export async function ensureRadicalDataLoaded() {
 export function setVocabSubTab(tab) {
   vocabSubTab = tab;
   try { localStorage.setItem('hsk_vocab_subtab', tab); } catch (e) {}
-  const tabLevel = document.getElementById('vocabSubTabLevel');
-  const tabTopic = document.getElementById('vocabSubTabTopic');
-  if (tabLevel) {
-    tabLevel.classList.toggle('active', tab === 'level');
-    tabLevel.setAttribute('aria-selected', String(tab === 'level'));
-  }
-  if (tabTopic) {
-    tabTopic.classList.toggle('active', tab === 'topic');
-    tabTopic.setAttribute('aria-selected', String(tab === 'topic'));
-  }
+  if (primaryTab === 'vocab') syncNavSections('vocab');
   const screenPicker = document.getElementById('screenPicker');
   const screenTopicPicker = document.getElementById('screenTopicPicker');
   if (screenPicker) {
@@ -131,18 +123,13 @@ export function setPrimaryTab(tab, options) {
   if (tab !== 'vocab') {
     currentLevel = null;
   }
-  Object.entries(PRIMARY_TAB_SCREENS).forEach(([key, { tabId, screenId }]) => {
-    const isActive = key === tab;
-    const tabEl = document.getElementById(tabId);
+  Object.entries(PRIMARY_TAB_SCREENS).forEach(([key, { screenId }]) => {
     const screenEl = document.getElementById(screenId);
-    if (tabEl) {
-      tabEl.classList.toggle('active', isActive);
-      tabEl.setAttribute('aria-pressed', String(isActive));
-    }
     if (screenEl) {
-      screenEl.style.display = isActive ? '' : 'none';
+      screenEl.style.display = key === tab ? '' : 'none';
     }
   });
+  syncNavSections(tab);
   const mobVocab = document.getElementById('mobNavVocab');
   const mobReview = document.getElementById('mobNavReview');
   const mobProfile = document.getElementById('mobNavProfile');
@@ -152,19 +139,8 @@ export function setPrimaryTab(tab, options) {
   if (mobCurriculum) mobCurriculum.classList.toggle('active', tab === 'curriculum');
   const mobReading = document.getElementById('mobNavReading');
   if (mobReading) mobReading.classList.toggle('active', tab === 'gradedReading');
-  const navReading = document.getElementById('primaryNavReading');
-  if (navReading) {
-    navReading.classList.toggle('active', tab === 'gradedReading');
-    navReading.setAttribute('aria-pressed', String(tab === 'gradedReading'));
-  }
-  const navWriting = document.getElementById('primaryNavWriting');
-  if (navWriting) {
-    navWriting.classList.toggle('active', tab === 'writing');
-    navWriting.setAttribute('aria-pressed', String(tab === 'writing'));
-  }
   if (mobProfile) mobProfile.classList.remove('active');
   if (typeof closeMobileStatsSheet === 'function') closeMobileStatsSheet();
-  const isTool = ['radicals', 'sentenceGame', 'guessWord', 'speedQuiz', 'reading', 'listening'].includes(tab);
   const isGame = ['sentenceGame', 'guessWord', 'speedQuiz'].includes(tab);
   document.body.classList.toggle('is-game-view', isGame);
   document.body.classList.toggle('reading-view-active', tab === 'reading');
@@ -181,11 +157,6 @@ export function setPrimaryTab(tab, options) {
   }
   if (tab !== 'gradedReading') {
     document.body.classList.remove('graded-pinyin-hidden', 'graded-pinyin-new', 'graded-translation-hidden', 'graded-srs-plain', 'graded-paper-sepia', 'graded-story-active');
-  }
-  const gamesMenu = document.getElementById('primaryGamesMenu');
-  if (gamesMenu) {
-    gamesMenu.open = false;
-    gamesMenu.classList.toggle('has-active-tool', isTool);
   }
   const versionControls = document.getElementById('pickerVersionControls');
   if (versionControls) {
@@ -364,79 +335,6 @@ export function goBackToRadicalHub() {
   }
 }
 
-export function initPrimaryMenuKeyboard() {
-  function handleMenuKeydown(event) {
-    const menu = document.getElementById('primaryGamesMenu');
-    if (!menu) return;
-    const trigger = menu.querySelector('.primary-menu-trigger');
-    const items = Array.from(menu.querySelectorAll('.primary-games-menu-panel [role="menuitem"]:not([disabled])'));
-    if (!items.length) return;
-
-    if (event.target === trigger) {
-      if (event.key === 'ArrowDown' || event.key === 'Down') {
-        event.preventDefault();
-        menu.open = true;
-        items[0].focus();
-        return;
-      }
-      if (event.key === 'ArrowUp' || event.key === 'Up') {
-        event.preventDefault();
-        menu.open = true;
-        items[items.length - 1].focus();
-        return;
-      }
-    }
-
-    const currentIndex = items.indexOf(document.activeElement);
-    if (currentIndex !== -1) {
-      if (event.key === 'ArrowDown' || event.key === 'Down') {
-        event.preventDefault();
-        const nextIndex = (currentIndex + 1) % items.length;
-        items[nextIndex].focus();
-      } else if (event.key === 'ArrowUp' || event.key === 'Up') {
-        event.preventDefault();
-        const prevIndex = (currentIndex - 1 + items.length) % items.length;
-        items[prevIndex].focus();
-      } else if (event.key === 'Home') {
-        event.preventDefault();
-        items[0].focus();
-      } else if (event.key === 'End') {
-        event.preventDefault();
-        items[items.length - 1].focus();
-      }
-    }
-  }
-
-  const menu = document.getElementById('primaryGamesMenu');
-  if (menu) {
-    menu.addEventListener('keydown', handleMenuKeydown);
-  } else if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => {
-      const el = document.getElementById('primaryGamesMenu');
-      if (el) el.addEventListener('keydown', handleMenuKeydown);
-    });
-  }
-}
-
-export function initPrimaryMenuAria() {
-  function bindToggle() {
-    const menu = document.getElementById('primaryGamesMenu');
-    if (menu) {
-      menu.addEventListener('toggle', () => {
-        const trigger = menu.querySelector('.primary-menu-trigger');
-        if (trigger) {
-          trigger.setAttribute('aria-expanded', String(menu.open));
-        }
-      });
-    }
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', bindToggle);
-  } else {
-    bindToggle();
-  }
-}
-
 function GroupCards({ set }) {
   const groups = RADICAL_GROUPS[set] || [];
   return (
@@ -478,6 +376,7 @@ function RadicalHubComponent() {
   }
   return (
     <>
+      <div class="radical-hub-toolbar">
       <div class="radical-tabs view-tabs" role="tablist" aria-label="Bộ Bộ thủ">
         <button
           id="radicalTabBasic50"
@@ -497,6 +396,11 @@ function RadicalHubComponent() {
         >
           214 bộ Khang Hy
         </button>
+      </div>
+      <button type="button" id="radicalLookupBtn" class="radical-overview-btn radical-lookup-btn" onClick={() => openRadicalDirectory()}>
+        <svg class="nav-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        Tra cứu 214 bộ thủ
+      </button>
       </div>
 
       <div id="radicalBasic50Panel" class="radical-panel" hidden={radicalTab !== 'basic50'}>
@@ -549,8 +453,6 @@ export function mountRadicalHub() {
     openRadicalOverviewFromHub,
     goBackToRadicalHub,
     PRIMARY_TAB_SCREENS,
-    initPrimaryMenuKeyboard,
-    initPrimaryMenuAria,
   });
 
   try {
@@ -560,31 +462,6 @@ export function mountRadicalHub() {
       configurable: true,
     });
   } catch (e) {}
-
-  // Close primary tools & skills menu on click outside or item selection
-  document.addEventListener('click', (event) => {
-    const menu = document.getElementById('primaryGamesMenu');
-    if (!menu || !menu.open) return;
-    if (!menu.contains(event.target) || event.target.closest('.primary-games-menu-panel button')) {
-      menu.open = false;
-    }
-  });
-
-  // Close primary tools & skills menu on Escape and return focus to trigger
-  document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape' || event.key === 'Esc') {
-      const menu = document.getElementById('primaryGamesMenu');
-      if (menu && menu.open) {
-        event.preventDefault();
-        menu.open = false;
-        const trigger = menu.querySelector('.primary-menu-trigger');
-        if (trigger) trigger.focus();
-      }
-    }
-  });
-
-  initPrimaryMenuKeyboard();
-  initPrimaryMenuAria();
 
   try {
     const savedVocabTab = localStorage.getItem('hsk_vocab_subtab');

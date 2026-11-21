@@ -23,11 +23,11 @@ def test_reading_analysis_syntax_and_references():
     assert "<PracticePanels entry={entry} />" in content
     assert "renderInteractiveExerciseForm" not in content
 
-def test_tools_menu_contains_reading_tools():
+def test_reading_section_contains_reading_tools():
     index_html = (ROOT / "index.html").read_text(encoding="utf-8")
-    assert 'id="primaryGamesMenu"' in index_html
-    assert 'data-tab="gradedReading"' in index_html
-    assert 'data-tab="reading"' in index_html
+    assert 'id="primaryGamesMenu"' not in index_html
+    assert 'data-section="reading" data-subtab="gradedReading"' in index_html
+    assert 'data-section="reading" data-subtab="reading"' in index_html
     assert 'id="screenReadingAnalysis"' in index_html
     assert 'id="screenGradedReading"' in index_html
 

@@ -55,7 +55,7 @@ def test_curriculum_tab_is_wired_into_the_app():
     assert 'id="screenCurriculum"' in html
     assert 'id="mobNavCurriculum"' in html
     hub = (ROOT / "src" / "islands" / "RadicalHub.jsx").read_text(encoding="utf-8")
-    assert "curriculum: { tabId: 'primaryTabCurriculum', screenId: 'screenCurriculum' }" in hub
+    assert "curriculum: { screenId: 'screenCurriculum' }" in hub
     main = (ROOT / "src" / "islands" / "main.jsx").read_text(encoding="utf-8")
     assert "mountCurriculum();" in main
     bundle = (ROOT / "tools" / "bundle_css.py").read_text(encoding="utf-8")

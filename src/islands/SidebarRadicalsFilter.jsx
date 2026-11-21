@@ -1,5 +1,5 @@
 // Compact desktop entry point into the searchable 214-radical directory (left dock).
-// Below 1280px the same entry lives in the "Công cụ" menu instead (.primary-menu-radical-lookup).
+// Below 1280px the same entry lives in the Bộ thủ sub-tab (#radicalLookupBtn).
 // Preact port of the former assets/js/sidebar-radicals-filter.js with the same markup.
 import { render } from 'preact';
 import { onDomReady } from './domReady';

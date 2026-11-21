@@ -1136,16 +1136,6 @@ body.home-screen .featured-topics {
     font-size: 13px;
     border-radius: 8px;
   }
-  body.home-screen .primary-menu-trigger {
-    min-height: 44px;
-    height: 44px;
-    padding: 0 14px;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1;
-    border-radius: 10px;
-  }
-
   body.home-screen #screenVocabHub {
     display: flex;
     flex-direction: column;

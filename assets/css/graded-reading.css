@@ -280,47 +280,6 @@ body.graded-reading-active #primaryTabs {
   margin: 0 auto 12px !important;
 }
 
-@media (max-width: 1023px) {
-  body.graded-reading-active:not(.graded-story-active) #primaryTabs {
-    position: relative !important;
-    z-index: 40;
-    height: 0;
-    min-height: 0;
-    margin: 0 auto !important;
-    padding: 0 !important;
-    border: none !important;
-    overflow: visible;
-  }
-  body.graded-reading-active:not(.graded-story-active) #primaryToolbarCluster {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: auto !important;
-  }
-  body.graded-reading-active:not(.graded-story-active) #primaryToolbarCluster .primary-menu-trigger {
-    min-height: 38px;
-    height: 38px;
-  }
-  body.graded-reading-active:not(.graded-story-active) .manga-mode-switcher {
-    padding-right: 150px;
-  }
-}
-
-@media (max-width: 767px) {
-  body.graded-reading-active:not(.graded-story-active) #primaryToolbarCluster .primary-menu-trigger {
-    width: 44px;
-    padding: 0;
-    justify-content: center;
-  }
-  body.graded-reading-active:not(.graded-story-active) #primaryToolbarCluster .primary-menu-trigger > span,
-  body.graded-reading-active:not(.graded-story-active) #primaryToolbarCluster .primary-menu-chevron {
-    display: none;
-  }
-  body.graded-reading-active:not(.graded-story-active) .manga-mode-switcher {
-    padding-right: 52px;
-  }
-}
-
 /* Eliminate all sidebar clutter, dashboard cards, and other hub screens */
 body.graded-reading-active .workstation-left,
 body.graded-reading-active .workstation-right,
@@ -1970,6 +1929,30 @@ body.graded-translation-hidden .graded-sentence-vi {
   font-weight: 600;
   margin-top: 2px;
 }
+
+.popover-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.popover-speak-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: var(--graded-chip-bg);
+  color: var(--graded-vi-title);
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.popover-speak-btn svg { width: 17px; height: 17px; }
+.popover-speak-btn:hover { transform: scale(1.06); color: var(--graded-text-primary); }
+.popover-speak-btn.playing { color: #fff; background: var(--graded-vi-title); }
 
 .popover-close-btn {
   background: none;

@@ -2,6 +2,7 @@
 // Port of legacy assets/flashcards.js.
 import { onDomReady } from './domReady';
 import { loadRadicalProgress, loadRadicalPrefs } from './radicalsState';
+import { initNavSections } from './NavSections';
 
 /* global LEVELS, selectLevel, renderLevelProgress, showWelcomeToast, renderLearningDashboard, prefetchSuggestedLevel, startStudyHeartbeat */
 
@@ -107,27 +108,8 @@ export function initAppEventBindings() {
     if (typeof setPrimaryTab === 'function') setPrimaryTab(tab, opts);
     else if (window.setPrimaryTab) window.setPrimaryTab(tab, opts);
   };
-  onId('primaryTabVocab', 'click', () => handlePrimaryTab('vocab'));
-  onId('primaryTabCurriculum', 'click', () => handlePrimaryTab('curriculum'));
-  onId('primaryTabWriting', 'click', () => handlePrimaryTab('writing'));
-  onId('primaryNavReading', 'click', () => handlePrimaryTab('gradedReading'));
-  onId('primaryNavWriting', 'click', () => handlePrimaryTab('writing'));
-  onId('primaryTabReview', 'click', () => handlePrimaryTab('review'));
-  onId('primaryTabListening', 'click', () => handlePrimaryTab('listening'));
-  onId('primaryTabGradedReading', 'click', () => handlePrimaryTab('gradedReading'));
-  onId('primaryTabReading', 'click', () => handlePrimaryTab('reading'));
-  onId('primaryTabSentenceGame', 'click', () => handlePrimaryTab('sentenceGame'));
-  onId('primaryTabSpeedQuiz', 'click', () => handlePrimaryTab('speedQuiz'));
-  onId('primaryTabGuessWord', 'click', () => handlePrimaryTab('guessWord'));
-  onId('primaryTabRadicals', 'click', () => handlePrimaryTab('radicals'));
-  onId('primaryMenuRadicalLookup', 'click', () => {
-    if (typeof openRadicalDirectory === 'function') openRadicalDirectory();
-    else if (window.openRadicalDirectory) window.openRadicalDirectory();
-  });
-  onId('primaryMenuHelpBtn', 'click', () => {
-    if (typeof openStudyHelpModal === 'function') openStudyHelpModal();
-    else if (window.openStudyHelpModal) window.openStudyHelpModal();
-  });
+  // Top sections and their sub-tabs (#skillSubTabs) are bound in NavSections.js.
+  initNavSections();
 
   // Mobile bottom navigation items & dialogs
   onId('mobNavVocab', 'click', () => handlePrimaryTab('vocab'));
@@ -166,9 +148,7 @@ export function initAppEventBindings() {
     else if (window.setVocabSubTab) window.setVocabSubTab(tab);
   };
   onId('tabLevelPicker', 'click', () => handleVocabSubTab('level'));
-  onId('vocabSubTabLevel', 'click', () => handleVocabSubTab('level'));
   onId('tabTopicPicker', 'click', () => handleVocabSubTab('topic'));
-  onId('vocabSubTabTopic', 'click', () => handleVocabSubTab('topic'));
   on('.featured-topic-more, .featured-topic-pill', 'click', () => handleVocabSubTab('topic'));
   onId('dashboardQuickQuizBtn', 'click', () => {
     handlePrimaryTab('speedQuiz', { roundLimit: 5 });

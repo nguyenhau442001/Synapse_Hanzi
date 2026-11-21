@@ -67,10 +67,10 @@ def test_index_html_sentence_game_ui_integration():
     with open(INDEX_PATH, "r", encoding="utf-8") as f:
         content = f.read()
 
-    # Tools menu tab label
+    # Viết section sub-tab label
     assert "Xếp câu HSK4" in content
     assert 'aria-controls="screenSentenceGame"' in content
-    assert 'data-tab="sentenceGame"' in content
+    assert 'data-subtab="sentenceGame"' in content
 
     # Screen DOM elements (the screen body is rendered by the Preact island)
     assert 'id="screenSentenceGame"' in content

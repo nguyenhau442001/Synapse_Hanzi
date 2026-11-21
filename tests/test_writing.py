@@ -49,15 +49,14 @@ def test_stroke_bundles_are_up_to_date():
 def test_writing_screen_is_wired_into_the_app():
     html = read("index.html")
     assert 'id="screenWriting"' in html
-    assert 'id="primaryTabWriting"' in html and 'data-tab="writing"' in html
-    # Primary navigation: Tập viết sits right after Đọc
+    assert 'id="primaryTabWriting"' in html and 'data-subtab="writing"' in html
+    # Primary navigation: Viết sits right after Đọc
     tabs = html[html.index('class="primary-tabs-group"'):html.index('id="primaryToolbarCluster"')]
     assert tabs.index('id="primaryNavReading"') < tabs.index('id="primaryNavWriting"') < tabs.index('id="primaryTabReview"')
-    assert "onId('primaryNavWriting'" in read("src/islands/AppBootstrap.js")
+    assert "navId: 'primaryNavWriting'" in read("src/islands/NavSections.js")
     hub = read("src/islands/RadicalHub.jsx")
-    assert "writing: { tabId: 'primaryTabWriting', screenId: 'screenWriting' }" in hub
+    assert "writing: { screenId: 'screenWriting' }" in hub
     assert "writing-view-active" in hub and "Writing.init()" in hub
-    assert "onId('primaryTabWriting'" in read("src/islands/AppBootstrap.js")
     router = read("src/islands/SpaRouter.js")
     assert "?tab=writing&lesson=" in router and "Writing.open(" in router
     assert "mountWriting();" in read("src/islands/main.jsx")

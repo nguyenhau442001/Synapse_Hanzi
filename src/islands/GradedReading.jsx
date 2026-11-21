@@ -610,8 +610,10 @@ function TokenPopover({ token, added }) {
     statusLabel = '⚡ Đang ôn';
   }
   const hanviet = token.hanviet || (typeof window.getWordHanViet === 'function' ? window.getWordHanViet(token.text) : '');
-  const meaning = token.meaning_vi || (hanviet ? `Âm Hán-Việt: ${hanviet}` : 'Chữ Hán trong bài đọc');
+  const meaning = token.meaning_vi || hanviet || token.text;
   const btnDone = added || isAlreadyInSrs;
+  const audioId = `popover-${token.text}`;
+  const speaking = playingId.value === audioId;
 
   return (
     <>
@@ -620,7 +622,14 @@ function TokenPopover({ token, added }) {
           <div class="popover-hanzi">{token.text}</div>{' '}
           <div class="popover-pinyin">{token.pinyin || ''}</div>
         </div>{' '}
-        <button type="button" class="popover-close-btn" onClick={closePopover} aria-label="Đóng">✕</button>
+        <div class="popover-header-actions">
+          <button type="button" class={speaking ? 'popover-speak-btn playing' : 'popover-speak-btn'}
+            onClick={(e) => { e.stopPropagation(); speakSentence(token.text, audioId); }}
+            aria-label="Nghe phát âm" title="Nghe phát âm">
+            {SPEAKER_ICON}
+          </button>{' '}
+          <button type="button" class="popover-close-btn" onClick={closePopover} aria-label="Đóng">✕</button>
+        </div>
       </div>{' '}
       <div class="popover-meta">
         {token.hsk ? <span class="popover-hsk-badge">{`HSK ${token.hsk}`}</span> : null}{' '}

@@ -126,7 +126,7 @@ def test_integration_files():
     assert "mountListeningPractice()" in (ROOT / "src/islands/main.jsx").read_text(encoding="utf-8")
 
     # radicals.js
-    assert "listening: { tabId: 'primaryTabListening', screenId: 'screenListeningPractice' }" in radicals_js
+    assert "listening: { screenId: 'screenListeningPractice' }" in radicals_js
     assert "ListeningPractice.init()" in radicals_js
     assert "ListeningPractice.stopAudio()" in radicals_js
 
@@ -141,7 +141,7 @@ def test_integration_files():
     # non-regression on reading
     assert "screenReadingAnalysis" in index_html
     assert "screenGradedReading" in index_html
-    assert "reading: { tabId: 'primaryTabReading', screenId: 'screenReadingAnalysis' }" in radicals_js
+    assert "reading: { screenId: 'screenReadingAnalysis' }" in radicals_js
 
     print("   ✓ Navigation, routing, sw.js, and reading non-regression pass!")
 

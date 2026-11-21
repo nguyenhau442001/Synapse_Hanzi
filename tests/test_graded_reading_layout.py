@@ -90,8 +90,9 @@ def test_reading_is_a_primary_destination():
     # Desktop primary tabs and the phone bottom nav both link to the reading hub
     assert 'id="primaryNavReading"' in index_html
     assert 'id="mobNavReading"' in index_html
-    assert "primaryNavReading" in bootstrap_js
-    assert "primaryNavReading" in tabs_js and "mobNavReading" in tabs_js
+    nav_js = (ROOT / "src" / "islands" / "NavSections.js").read_text(encoding="utf-8")
+    assert "initNavSections()" in bootstrap_js and "primaryNavReading" in nav_js
+    assert "mobNavReading" in tabs_js
 
     # Count badges carry text labels; the long tagline no longer squeezes the header
     assert 'class="header-badge-label">Sổ từ<' in index_html
