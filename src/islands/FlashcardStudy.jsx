@@ -16,16 +16,16 @@ function toggleToneColors() {
   applyToneColorsPref(enabled);
   updateCardMoreMenuState();
 }
+// One hint per device: phones/tablets (no hover, coarse pointer) tap; everything with a
+// mouse or trackpad, including touch-screen laptops, uses the Space key.
 function getCardHintText(isFlipped) {
-  const isTouch = (typeof window !== 'undefined') && (
-    window.matchMedia('(pointer: coarse)').matches ||
-    ('ontouchstart' in window) ||
-    (navigator.maxTouchPoints > 0)
-  );
-  if (isTouch) {
+  const isTouchOnly = typeof window !== 'undefined'
+    && typeof window.matchMedia === 'function'
+    && window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+  if (isTouchOnly) {
     return isFlipped ? 'Chạm để lật lại' : 'Chạm để lật';
   }
-  return isFlipped ? 'Chạm để lật lại · Space' : 'Chạm để lật · Space';
+  return isFlipped ? 'Space để lật lại' : 'Space để lật';
 }
 window.getCardHintText = getCardHintText;
 

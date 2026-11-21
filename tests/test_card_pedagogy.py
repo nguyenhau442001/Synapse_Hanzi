@@ -51,5 +51,11 @@ class TestCardPedagogy(unittest.TestCase):
         self.assertIn("INLINE_DECOMP_MAX_CHARS = 2", decomp)
 
 
+    def test_flip_hint_one_per_device(self):
+        self.assertIn("(hover: none) and (pointer: coarse)", FLASHCARD_JS)
+        self.assertIn("'Space để lật'", FLASHCARD_JS)
+        self.assertNotIn("Chạm để lật · Space", FLASHCARD_JS)
+
+
 if __name__ == "__main__":
     unittest.main()
