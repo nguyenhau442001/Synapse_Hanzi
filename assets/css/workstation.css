@@ -336,8 +336,8 @@ body.flashcard-study-mode {
   --text-muted: #8B918C;
   --border-color: #E6E8E5;
   --border-subtle: #EFEFEA;
-  --accent-sage: #567C69;
-  --accent-sage-subtle: #EDF3F0;
+  --accent-sage: #B4532F;
+  --accent-sage-subtle: #F6EAE3;
   --rating-again-bg: #FBF4F3;
   --rating-again-border: #F2D2CE;
   --rating-again-text: #BA372A;
@@ -5007,8 +5007,8 @@ body.flashcard-study-mode {
   --text-muted: #828A86;
   --border-color: #343A3C;
   --border-subtle: #2A3032;
-  --accent-sage: #72B99A;
-  --accent-sage-subtle: rgba(114, 185, 154, 0.14);
+  --accent-sage: #D98A62;
+  --accent-sage-subtle: rgba(217, 138, 98, 0.14);
   --rating-again-bg: rgba(239, 68, 68, 0.12);
   --rating-again-border: rgba(239, 68, 68, 0.28);
   --rating-again-text: #F87171;

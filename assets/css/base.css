@@ -45,16 +45,17 @@
   --accent-light: rgba(168, 50, 45, 0.08);
   --on-accent: #FFFFFF;
   --accent-text: #A8322D;
-  /* Learning-state colors (one color per state; never reuse --accent for state meaning) */
-  --state-known: #2D664D;
-  --state-known-bg: rgba(45, 102, 77, 0.08);
-  --state-known-border: rgba(45, 102, 77, 0.32);
-  --state-due: #8F5B0A;
-  --state-due-bg: rgba(143, 91, 10, 0.08);
-  --state-due-border: rgba(143, 91, 10, 0.32);
-  --state-new: #5A6472;
-  --state-new-bg: rgba(90, 100, 114, 0.07);
-  --state-new-border: rgba(90, 100, 114, 0.3);
+  /* Learning-state colors in the warm brand family (one color per state; never reuse --accent):
+     Đã nhớ = olive-brown, Cần ôn = amber-orange, Chưa học = warm grey. */
+  --state-known: #5E5A1C;
+  --state-known-bg: rgba(94, 90, 28, 0.08);
+  --state-known-border: rgba(94, 90, 28, 0.32);
+  --state-due: #A3540A;
+  --state-due-bg: rgba(163, 84, 10, 0.08);
+  --state-due-border: rgba(163, 84, 10, 0.32);
+  --state-new: #6E6860;
+  --state-new-bg: rgba(110, 104, 96, 0.07);
+  --state-new-border: rgba(110, 104, 96, 0.3);
   /* Pinyin tone colors: one warm family around the brand orange (gold, orange, terracotta,
      brown, warm grey), all >= 4.7:1. Tone marks stay, so color is only an extra cue. */
   --tone-1: #8C6400;
@@ -143,15 +144,15 @@
     --accent-light: rgba(168, 50, 42, 0.15);
     --on-accent: #EDE6D8;
     --accent-text: #E06D63;
-    --state-known: #7FB8A7;
-    --state-known-bg: rgba(127, 184, 167, 0.14);
-    --state-known-border: rgba(127, 184, 167, 0.4);
-    --state-due: #E0A458;
-    --state-due-bg: rgba(224, 164, 88, 0.14);
-    --state-due-border: rgba(224, 164, 88, 0.4);
-    --state-new: #A3ADB9;
-    --state-new-bg: rgba(163, 173, 185, 0.12);
-    --state-new-border: rgba(163, 173, 185, 0.35);
+    --state-known: #CFC57E;
+    --state-known-bg: rgba(207, 197, 126, 0.14);
+    --state-known-border: rgba(207, 197, 126, 0.4);
+    --state-due: #F0A04B;
+    --state-due-bg: rgba(240, 160, 75, 0.14);
+    --state-due-border: rgba(240, 160, 75, 0.4);
+    --state-new: #A8A194;
+    --state-new-bg: rgba(168, 161, 148, 0.12);
+    --state-new-border: rgba(168, 161, 148, 0.35);
     --tone-1: #E8B04A;
     --tone-2: #F28C4E;
     --tone-3: #F07766;
@@ -212,15 +213,15 @@
   --accent-light: rgba(168, 50, 42, 0.15);
   --on-accent: #EDE6D8;
   --accent-text: #E06D63;
-  --state-known: #7FB8A7;
-  --state-known-bg: rgba(127, 184, 167, 0.14);
-  --state-known-border: rgba(127, 184, 167, 0.4);
-  --state-due: #E0A458;
-  --state-due-bg: rgba(224, 164, 88, 0.14);
-  --state-due-border: rgba(224, 164, 88, 0.4);
-  --state-new: #A3ADB9;
-  --state-new-bg: rgba(163, 173, 185, 0.12);
-  --state-new-border: rgba(163, 173, 185, 0.35);
+  --state-known: #CFC57E;
+  --state-known-bg: rgba(207, 197, 126, 0.14);
+  --state-known-border: rgba(207, 197, 126, 0.4);
+  --state-due: #F0A04B;
+  --state-due-bg: rgba(240, 160, 75, 0.14);
+  --state-due-border: rgba(240, 160, 75, 0.4);
+  --state-new: #A8A194;
+  --state-new-bg: rgba(168, 161, 148, 0.12);
+  --state-new-border: rgba(168, 161, 148, 0.35);
   --tone-1: #E8B04A;
   --tone-2: #F28C4E;
   --tone-3: #F07766;
