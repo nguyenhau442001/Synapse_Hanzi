@@ -332,9 +332,13 @@ async function loadStory(storyId) {
 async function ensureMangaManifestLoaded() {
   if (mangaManifestLoaded && mangaManifestData.length) return mangaManifestData;
   try {
-    const res = await fetch('database/readings/manga/peppercarrot/manifest.json?v=' + Date.now());
-    if (!res.ok) throw new Error('Không thể tải danh sách truyện tranh.');
-    mangaManifestData = await res.json();
+    const [resDoraemon, resPc] = await Promise.allSettled([
+      fetch('database/readings/manga/doraemon/manifest.json?v=' + Date.now()),
+      fetch('database/readings/manga/peppercarrot/manifest.json?v=' + Date.now())
+    ]);
+    const dList = resDoraemon.status === 'fulfilled' && resDoraemon.value.ok ? await resDoraemon.value.json() : [];
+    const pcList = resPc.status === 'fulfilled' && resPc.value.ok ? await resPc.value.json() : [];
+    mangaManifestData = [...dList, ...pcList];
     mangaManifestLoaded = true;
     return mangaManifestData;
   } catch (e) {
@@ -347,7 +351,12 @@ async function loadMangaStory(mangaId) {
   if (mangaStoryCache[mangaId]) return mangaStoryCache[mangaId];
   const list = await ensureMangaManifestLoaded();
   const item = list.find((m) => m.id === mangaId);
-  const file = item ? item.file : `database/readings/manga/peppercarrot/${mangaId}.json`;
+  let file = item ? item.file : null;
+  if (!file) {
+    file = mangaId.startsWith('doraemon')
+      ? `database/readings/manga/doraemon/${mangaId}.json`
+      : `database/readings/manga/peppercarrot/${mangaId}.json`;
+  }
   const res = await fetch(file + '?v=' + Date.now());
   if (!res.ok) throw new Error('Không thể tải truyện tranh: ' + mangaId);
   const data = await res.json();
@@ -1547,7 +1556,8 @@ function StoryReader({ story }) {
 
 // Series shelves, in reading order. Entries without `collection` land on the first shelf.
 const MANGA_COLLECTIONS = [
-  { key: 'peppercarrot', zh: '胡椒和胡萝卜', vi: 'Pepper&Carrot', range: 'Tập 1 → 39' },
+  { key: 'doraemon', zh: '哆啦A梦', vi: 'Doraemon (Đô-rê-mon)', range: 'Tập 21 · Đọc giải trí phi lợi nhuận' },
+  { key: 'peppercarrot', zh: '胡椒和胡萝卜', vi: 'Pepper&Carrot', range: 'Tập 1 → 39 · CC BY 4.0' },
 ];
 
 function mangaChapterLabel(m) {
@@ -1595,13 +1605,13 @@ function MangaHub() {
 
       <section class="manga-hub-hero">
         <div class="manga-hub-hero-copy">
-          <span class="manga-hub-kicker">TRUYỆN TRANH · ĐỌC GIẢI TRÍ</span>
+          <span class="manga-hub-kicker">TRUYỆN TRANH · ĐỌC GIẢI TRÍ & HỌC TỪ VỰNG</span>
           <h1 class="manga-hub-title">
-            <span class="manga-hub-title-zh" lang="zh-Hans">胡椒和胡萝卜</span>
-            <span class="manga-hub-title-vi">Pepper&amp;Carrot</span>
+            <span class="manga-hub-title-zh" lang="zh-Hans">漫画阅读 · 哆啦A梦 & 胡椒和胡萝卜</span>
+            <span class="manga-hub-title-vi">Truyện Tranh Song Ngữ · Doraemon &amp; Pepper&amp;Carrot</span>
           </h1>
           <p class="manga-hub-desc">
-            Truyện về cô phù thủy nhỏ Pepper và chú mèo Carrot, bản tiếng Trung giản thể. Bấm vào một bóng thoại để xem pinyin, nghĩa từng từ và câu dịch.
+            Đọc truyện tranh tiếng Trung nguyên bản có hỗ trợ tra từ vựng, pinyin, Hán-Việt và dịch nghĩa theo từng câu và bóng thoại trực tiếp.
           </p>
         </div>
         <div class="manga-hub-stats">
@@ -1611,6 +1621,14 @@ function MangaHub() {
           </div>
         </div>
       </section>
+
+      <div class="manga-disclaimer-banner" style="background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--primary, #4263EB); border-radius: 8px; padding: 12px 16px; margin: 16px 0 24px; font-size: 0.85rem; line-height: 1.6; color: var(--text-secondary);">
+        <strong style="color: var(--text); display: block; margin-bottom: 4px;">ℹ️ Ghi chú nguồn gốc & Tuyên bố phi thương mại:</strong>
+        <ul style="margin: 0; padding-left: 20px;">
+          <li><strong>Doraemon (哆啦A梦):</strong> Tác quyền nguyên tác thuộc về tác giả <em>Fujiko F. Fujio</em>, Fujiko Pro và Nhà xuất bản <em>Shogakukan / Hồng Kông Văn Hóa Truyền Tín</em>. Bản số hóa đối chiếu được phục vụ thuần túy cho mục đích nghiên cứu, học tập ngoại ngữ và phi thương mại (Non-profit Educational Fair Use).</li>
+          <li><strong>Pepper&amp;Carrot (胡椒和胡萝卜):</strong> Tác giả David Revoy, phát hành theo giấy phép mở quốc tế <em>Creative Commons Attribution 4.0 (CC BY 4.0)</em>.</li>
+        </ul>
+      </div>
 
       {MANGA_COLLECTIONS.map((c) => {
         const items = mangaManifestData.filter((m) => (m.collection || MANGA_COLLECTIONS[0].key) === c.key);
@@ -1632,9 +1650,7 @@ function MangaHub() {
       })}
 
       <p class="manga-hub-credit">
-        Nguồn: <a href="https://www.peppercarrot.com" target="_blank" rel="noopener">Pepper&amp;Carrot</a> của David Revoy, giấy phép{' '}
-        <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>. Bản dịch tiếng Trung và tiếng Việt do cộng đồng
-        Pepper&amp;Carrot thực hiện; tên người dịch ghi ở từng tập. Lớp tra từ (pinyin, Hán-Việt, nghĩa) do Synapse Hanzi bổ sung.
+        Nguồn: Doraemon © Fujiko Pro & Shogakukan (phi lợi nhuận giáo dục); Pepper&amp;Carrot © David Revoy (CC BY 4.0). Lớp tra từ (pinyin, Hán-Việt, phân tích từ vựng) do Synapse Hanzi biên soạn phục vụ người học tiếng Trung.
       </p>
     </div>
   );

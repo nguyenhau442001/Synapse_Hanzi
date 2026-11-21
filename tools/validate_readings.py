@@ -58,7 +58,7 @@ total_quizzes = 0
 
 reading_files = sorted([
     f for f in READINGS_DIR.glob("**/*.json")
-    if f.name != "manifest.json" and "raw_books" not in f.parts and "manga" not in f.parts and not f.name.endswith("_catalog.json")
+    if f.name != "manifest.json" and "raw_books" not in f.parts and "manga" not in f.parts and not f.name.endswith("_catalog.json") and not f.name.endswith("_cache.json")
 ])
 manifest_file = READINGS_DIR / "manifest.json"
 if not reading_files:
