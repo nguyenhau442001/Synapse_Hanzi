@@ -49,6 +49,12 @@ class TestStateTokens(unittest.TestCase):
         self.assertIn("--rating-color: var(--state-due);", FLASHCARD_CSS)
         self.assertIn("--rating-color: var(--state-known);", FLASHCARD_CSS)
 
+    def test_progress_bar_is_segmented_without_legend(self):
+        for seg in ("progress-nav-seg--known", "progress-nav-seg--unknown", "progress-nav-seg--unseen"):
+            self.assertIn(seg, FLASHCARD_JS)
+        self.assertNotIn('class="progress-nav-stats-breakdown"', FLASHCARD_JS)
+        self.assertIn(".progress-nav-seg--unseen {\n  background: var(--state-new-border);", WORKSTATION_CSS)
+
     def test_due_state_label_is_can_on(self):
         self.assertIn("label: 'Cần ôn'", FLASHCARD_JS)
         self.assertNotIn("label: 'Chưa nhớ',\n      count: unknown", FLASHCARD_JS)

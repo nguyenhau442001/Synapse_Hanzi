@@ -1075,6 +1075,17 @@ body.flashcard-study-mode .filter-row {
   background: var(--state-due);
 }
 
+/* "Chưa học" fills the rest of the track in a quiet tint of its state color. */
+.progress-nav-seg--unseen {
+  background: var(--state-new-border);
+}
+
+/* A 2px gap separates states without relying on color alone. */
+.progress-nav-seg:not([style*="width: 0%"]) + .progress-nav-seg:not([style*="width: 0%"]) { margin-left: 2px; }
+
+/* The segmented bar is its own legend (segment titles + aria-label). */
+.progress-nav-stats-breakdown { display: none !important; }
+
 /* Four Interactive Status Cards Grid - Quiet Editorial Horizontal Strip */
 .progress-nav-cards {
   display: grid;

@@ -430,21 +430,10 @@ function renderFilters() {
               ${isAllLearned ? `onclick="if (typeof showCelebration === 'function') showCelebration('${isAllMastered ? 'mastered' : 'learned'}', true);" title="Nhấn để xem lại hiệu ứng thành tựu 🎉"` : ''}>${pctDisplay}</span>
           </div>
         </div>
-        <div class="progress-nav-stats-breakdown" aria-label="Chú thích phân bổ ghi nhớ">
-          <span class="progress-nav-stat progress-nav-stat--known" title="Đã nhớ: ${known}/${total} từ (${Math.round(knownPctNum)}%)">
-            <span class="progress-nav-stat-dot" aria-hidden="true"></span>
-            <span class="progress-nav-stat-label">Đã nhớ</span>
-          </span>
-          <span class="progress-nav-stat progress-nav-stat--unknown" title="Cần ôn: ${unknown}/${total} từ (${Math.round(unknownPctNum)}%)">
-            <span class="progress-nav-stat-dot" aria-hidden="true"></span>
-            <span class="progress-nav-stat-label">Cần ôn</span>
-          </span>
-        </div>
       </div>
 
-      <div class="progress-nav-bar" role="progressbar"
-           aria-label="Tiến độ học: ${known} đã nhớ, ${unknown} cần ôn, ${unseen} chưa học trên tổng số ${total} từ"
-           aria-valuenow="${learnedPct}" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-nav-bar" role="img"
+           aria-label="Tiến độ học: ${known} đã nhớ, ${unknown} cần ôn, ${unseen} chưa học trên tổng số ${total} từ">
         <div class="progress-nav-track">
           <div class="progress-nav-seg progress-nav-seg--known"
                style="width: ${knownPctNum}%;"
@@ -452,6 +441,9 @@ function renderFilters() {
           <div class="progress-nav-seg progress-nav-seg--unknown"
                style="width: ${unknownPctNum}%;"
                title="Cần ôn: ${unknown} từ (${Math.round(unknownPctNum)}%)"></div>
+          <div class="progress-nav-seg progress-nav-seg--unseen"
+               style="width: ${total > 0 ? (unseen / total) * 100 : 0}%;"
+               title="Chưa học: ${unseen} từ"></div>
         </div>
       </div>
 
@@ -716,10 +708,15 @@ function updateProgress(current, total) {
     navSegKnown.title = `Đã nhớ: ${deck.known} từ (${Math.round(kPct)}%)`;
     navSegUnknown.style.width = uPct + '%';
     navSegUnknown.title = `Cần ôn: ${deck.unknown} từ (${Math.round(uPct)}%)`;
+    const navSegUnseen = document.querySelector('.progress-nav-seg--unseen');
+    if (navSegUnseen) {
+      navSegUnseen.style.width = (deck.total > 0 ? (deck.unseen / tot) * 100 : 0) + '%';
+      navSegUnseen.title = `Chưa học: ${deck.unseen} từ`;
+    }
   }
   const navBar = document.querySelector('.progress-nav-bar');
   if (navBar) {
-    navBar.setAttribute('aria-valuenow', String(deck.pct));
+    navBar.setAttribute('aria-label', `Tiến độ học: ${deck.known} đã nhớ, ${deck.unknown} cần ôn, ${deck.unseen} chưa học trên tổng số ${deck.total} từ`);
   }
 }
 
