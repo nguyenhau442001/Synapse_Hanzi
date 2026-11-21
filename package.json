@@ -9,7 +9,7 @@
     "build:islands": "vite build --config vite.islands.config.mjs",
     "build:css": "python3 tools/bundle_css.py",
     "preview": "vite preview",
-    "test": "node tools/test_fast_review_pinyin.js && node --no-warnings tools/test_srs_engine.mjs && node --no-warnings tools/test_writing_ink.mjs && python3 tools/check_reading_covers.py",
+    "test": "node tools/test_fast_review_pinyin.js && node --no-warnings tools/test_srs_engine.mjs && node --no-warnings tools/test_pinyin_tones.mjs && node --no-warnings tools/test_writing_ink.mjs && python3 tools/check_reading_covers.py",
     "version:patch": "python3 tools/bump_version.py patch",
     "version:minor": "python3 tools/bump_version.py minor",
     "version:major": "python3 tools/bump_version.py major"

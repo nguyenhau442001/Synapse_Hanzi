@@ -55,6 +55,12 @@
   --state-new: #5A6472;
   --state-new-bg: rgba(90, 100, 114, 0.07);
   --state-new-border: rgba(90, 100, 114, 0.3);
+  /* Pinyin tone colors (Okabe-Ito based, colorblind-safe, >= 4.8:1 on light surfaces) */
+  --tone-1: #B8360F;
+  --tone-2: #00735A;
+  --tone-3: #0060A8;
+  --tone-4: #9A3C80;
+  --tone-5: #666A6E;
 
   --success-bg: #E9F2EA;
   --success-text: #375F53;
@@ -145,6 +151,11 @@
     --state-new: #A3ADB9;
     --state-new-bg: rgba(163, 173, 185, 0.12);
     --state-new-border: rgba(163, 173, 185, 0.35);
+    --tone-1: #FF8F66;
+    --tone-2: #3FC9A0;
+    --tone-3: #6FB6F2;
+    --tone-4: #E59AD0;
+    --tone-5: #A9AEB3;
 
     --success-bg: rgba(98, 153, 136, 0.16);
     --success-text: #7FB8A7;
@@ -209,6 +220,11 @@
   --state-new: #A3ADB9;
   --state-new-bg: rgba(163, 173, 185, 0.12);
   --state-new-border: rgba(163, 173, 185, 0.35);
+  --tone-1: #FF8F66;
+  --tone-2: #3FC9A0;
+  --tone-3: #6FB6F2;
+  --tone-4: #E59AD0;
+  --tone-5: #A9AEB3;
 
   --success-bg: rgba(98, 153, 136, 0.16);
   --success-text: #7FB8A7;

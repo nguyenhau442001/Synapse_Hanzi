@@ -1156,6 +1156,20 @@ body.flashcard-study-mode .meta-badges-row .hanviet-badge .hanviet-value {
   letter-spacing: 0.04em;
 }
 
+/* Pinyin tone colors: tone marks always stay; color is an extra cue (toggle in the card menu). */
+.tone-1 { color: var(--tone-1); }
+.tone-2 { color: var(--tone-2); }
+.tone-3 { color: var(--tone-3); }
+.tone-4 { color: var(--tone-4); }
+.tone-5 { color: var(--tone-5); }
+body.flashcard-study-mode .pinyin .tone-1 { color: var(--tone-1); }
+body.flashcard-study-mode .pinyin .tone-2 { color: var(--tone-2); }
+body.flashcard-study-mode .pinyin .tone-3 { color: var(--tone-3); }
+body.flashcard-study-mode .pinyin .tone-4 { color: var(--tone-4); }
+body.flashcard-study-mode .pinyin .tone-5 { color: var(--tone-5); }
+html.tone-colors-off .tone,
+html.tone-colors-off body.flashcard-study-mode .pinyin .tone { color: inherit; }
+
 /* Inline decomposition line (back of the card) */
 .card-decomp-inline {
   display: flex;

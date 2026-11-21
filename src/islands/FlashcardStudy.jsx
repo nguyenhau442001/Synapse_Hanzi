@@ -1,4 +1,21 @@
 // Flashcard markup, filtering, statistics, and rendering.
+import { colorizePinyin, colorizePinyinHtml } from './pinyinTones.js';
+
+// Tone colors for pinyin (on by default). The syllable spans are always rendered;
+// html.tone-colors-off turns the colors off so tone marks alone remain.
+const TONE_COLORS_KEY = 'hsk_tone_colors_v1';
+function readToneColorsPref() {
+  try { return localStorage.getItem(TONE_COLORS_KEY) !== 'off'; } catch (e) { return true; }
+}
+function applyToneColorsPref(enabled) {
+  document.documentElement.classList.toggle('tone-colors-off', !enabled);
+}
+function toggleToneColors() {
+  const enabled = !readToneColorsPref();
+  try { localStorage.setItem(TONE_COLORS_KEY, enabled ? 'on' : 'off'); } catch (e) {}
+  applyToneColorsPref(enabled);
+  updateCardMoreMenuState();
+}
 function getCardHintText(isFlipped) {
   const isTouch = (typeof window !== 'undefined') && (
     window.matchMedia('(pointer: coarse)').matches ||
@@ -42,6 +59,10 @@ function buildCardArea() {
             <button type="button" class="card-dropdown-item" id="menuShuffle" onclick="shuffleDeck(); closeCardMoreMenu();" role="menuitem">
               <span class="dropdown-item-icon">🔀</span>
               <span class="dropdown-item-label">Xáo trộn thứ tự từ</span>
+            </button>
+            <button type="button" class="card-dropdown-item" id="menuToggleToneColors" onclick="toggleToneColors(); closeCardMoreMenu();" role="menuitem">
+              <span class="dropdown-item-icon" aria-hidden="true">🎨</span>
+              <span class="dropdown-item-label" id="menuToneColorsText">Tô màu thanh điệu</span>
             </button>
             <button type="button" class="card-dropdown-item" id="menuToggleHanviet" onclick="toggleHanViet(); closeCardMoreMenu();" role="menuitem">
               <span class="dropdown-item-icon">漢</span>
@@ -269,6 +290,9 @@ function updateCardMoreMenuState() {
   const pinyinIcon = document.getElementById('menuPinyinIcon');
   if (pinyinLabel) pinyinLabel.textContent = showPinyin ? 'Ẩn pinyin' : 'Hiện pinyin';
   if (pinyinIcon) pinyinIcon.textContent = showPinyin ? '👁️' : '🙈';
+
+  const toneLabel = document.getElementById('menuToneColorsText');
+  if (toneLabel) toneLabel.textContent = readToneColorsPref() ? 'Tắt màu thanh điệu' : 'Bật màu thanh điệu';
 
   const hvLabel = document.getElementById('menuHanvietText');
   if (hvLabel) hvLabel.textContent = showHanViet ? 'Tắt âm Hán - Việt' : 'Bật âm Hán - Việt';
@@ -1460,7 +1484,7 @@ function render(animate) {
       renderHanziWithClarifier(hanziEl, w.hanzi);
       applyHanziLengthFit(hanziEl, w.hanzi);
     }
-    document.getElementById('pinyin').textContent = showPinyin ? w.pinyin : '';
+    document.getElementById('pinyin').innerHTML = showPinyin ? colorizePinyin(w.pinyin) : '';
     const hvBadge = document.getElementById('hanvietBadge');
     if (hvBadge) {
       let hv = (typeof getWordHanViet === 'function' ? getWordHanViet(w) : '') || w.hanviet;
@@ -1521,7 +1545,7 @@ function render(animate) {
     if (exampleBox) exampleBox.hidden = !hasExample;
     document.getElementById('exZh').innerHTML = highlightPatternInExample(w.example_zh, w.patterns);
     renderCardPatterns(w.patterns);
-    document.getElementById('exPy').innerHTML = w.example_py;
+    document.getElementById('exPy').innerHTML = colorizePinyinHtml(w.example_py);
     document.getElementById('exVi').innerHTML = w.example_vi;
 
     // Cập nhật hình ảnh minh họa trực quan (Visual Mnemonic Anchor): inline SVG, or an <img> fallback.
@@ -1629,6 +1653,8 @@ function render(animate) {
 }
 
 export function mountFlashcardStudy() {
+  applyToneColorsPref(readToneColorsPref());
+  window.toggleToneColors = toggleToneColors;
   window.getCardHintText = getCardHintText;
   window.buildCardArea = buildCardArea;
   window.STUDY_MENUS = STUDY_MENUS;

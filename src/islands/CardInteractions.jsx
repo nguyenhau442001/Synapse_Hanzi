@@ -1,5 +1,6 @@
 // Pointer gestures and card reveal interactions.
 // Preact island port replacing legacy assets/js/card-interactions.js.
+import { colorizePinyin } from './pinyinTones.js';
 
 /* global filteredOrder, radicalFilteredOrder, idx, WORDS, showPinyin,
    markKnown, markUnknown, radicalFlip, markRadicalKnown, markRadicalUnknown,
@@ -361,7 +362,7 @@ export function flip() {
   if (willShow && !showPinyin) {
     const wIdx = filteredOrder[idx % filteredOrder.length];
     const pinyinEl = document.getElementById('pinyin');
-    if (pinyinEl && WORDS && WORDS[wIdx]) pinyinEl.textContent = WORDS[wIdx].pinyin;
+    if (pinyinEl && WORDS && WORDS[wIdx]) pinyinEl.innerHTML = colorizePinyin(WORDS[wIdx].pinyin);
   } else if (!willShow && !showPinyin) {
     const pinyinEl = document.getElementById('pinyin');
     if (pinyinEl) pinyinEl.textContent = '';
