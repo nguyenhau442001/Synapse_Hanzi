@@ -43,5 +43,13 @@ class TestCardPedagogy(unittest.TestCase):
         self.assertIn("entry['patterns'] = review['patterns']", build)
 
 
+    def test_inline_decomposition_line(self):
+        decomp = (ROOT / "src" / "islands" / "HanziDecomposition.jsx").read_text(encoding="utf-8")
+        self.assertIn('id="cardDecompInline"', FLASHCARD_JS)
+        self.assertIn("renderInlineDecomposition(charDecomps);", decomp)
+        self.assertIn("c.char !== d.ch", decomp)
+        self.assertIn("INLINE_DECOMP_MAX_CHARS = 2", decomp)
+
+
 if __name__ == "__main__":
     unittest.main()

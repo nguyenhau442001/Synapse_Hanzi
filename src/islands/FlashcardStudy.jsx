@@ -104,6 +104,9 @@ function buildCardArea() {
           <div class="card-supporting-group" id="cardSupportingGroup" style="display: none;"></div>
         </div>
 
+        <!-- One-line character decomposition, e.g. 太 = 大 + 丶 (details stay in the accordion) -->
+        <div class="card-decomp-inline" id="cardDecompInline" aria-label="Cấu tạo chữ" hidden></div>
+
         <!-- Grammar patterns for function words (back of the card only) -->
         <div class="card-patterns" id="cardPatterns" hidden></div>
 

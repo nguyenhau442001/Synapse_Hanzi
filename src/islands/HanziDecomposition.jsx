@@ -166,6 +166,44 @@ function CardRadicals({ charDecomps }) {
   );
 }
 
+// One-line formula on the card back, e.g. "太 = 大 + 丶" (words of up to two distinct characters).
+const INLINE_DECOMP_MAX_CHARS = 2;
+
+function renderInlineDecomposition(charDecomps) {
+  const line = document.getElementById('cardDecompInline');
+  if (!line) return;
+  const unique = [];
+  (charDecomps || []).forEach((d) => {
+    // Skip duplicates and atomic characters whose only "component" is the character itself.
+    const parts = (d.comps || []).filter((c) => c && c.char && c.char !== d.ch);
+    if (parts.length > 0 && !unique.some((u) => u.ch === d.ch)) unique.push({ ch: d.ch, comps: parts });
+  });
+  if (unique.length === 0 || unique.length > INLINE_DECOMP_MAX_CHARS) {
+    render(null, line);
+    line.hidden = true;
+    return;
+  }
+  line.hidden = false;
+  render(
+    <>
+      {unique.map(({ ch, comps }, i) => (
+        <span class="card-decomp-formula" key={ch}>
+          {i > 0 && <span class="card-decomp-sep" aria-hidden="true">·</span>}
+          <span class="card-decomp-char">{ch}</span>
+          {' = '}
+          {comps.map((c, j) => (
+            <span key={j}>
+              {j > 0 && ' + '}
+              <span class="card-decomp-part" title={[c.name, c.meaning].filter(Boolean).join(': ')}>{c.char}</span>
+            </span>
+          ))}
+        </span>
+      ))}
+    </>,
+    line
+  );
+}
+
 export function renderCardRadicals(word) {
   const mount = document.getElementById('cardRadicalsRow');
   const wrap = document.getElementById('cardDecompositionWrap');
@@ -173,6 +211,7 @@ export function renderCardRadicals(word) {
   if (!mount) return;
 
   const hideDecomp = () => {
+    renderInlineDecomposition([]);
     render(null, mount);
     mount.style.display = 'none';
     window.setCardSectionVisible(accordion, wrap, false);
@@ -195,6 +234,7 @@ export function renderCardRadicals(word) {
     window.setCardSectionVisible(accordion, wrap, true);
     mount.style.display = 'flex';
     render(<CardRadicals charDecomps={charDecomps} />, mount);
+    renderInlineDecomposition(charDecomps);
     if (typeof window.syncCardSupportingGroup === 'function') window.syncCardSupportingGroup();
   });
 }
