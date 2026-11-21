@@ -447,6 +447,8 @@ class TestAssetAndPwaSynchronization(unittest.TestCase):
         """Every stylesheet referenced in index.html must exist on the local filesystem."""
         hrefs = re.findall(r'<link[^>]+rel=["\']stylesheet["\'][^>]+href=["\']([^"\']+)["\']', self.index_html, re.I)
         for href in hrefs:
+            if href.startswith(("https://", "http://")):
+                continue  # external webfonts (Google Fonts) fall back to system fonts offline
             clean_path = href.split("?")[0]
             file_path = REPO_ROOT / clean_path
             self.assertTrue(file_path.exists(), f"Stylesheet missing on disk: {clean_path}")

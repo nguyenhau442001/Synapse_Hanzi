@@ -237,66 +237,117 @@ function SpeakerIcon() {
   );
 }
 
-function LevelPicker({ levels, active }) {
+function CheckIcon({ size = 14 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>
+  );
+}
+
+function ArrowIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+  );
+}
+
+function isDone(store, key) {
+  return Boolean(store.lessons[key] && store.lessons[key].done);
+}
+
+function LevelPicker({ levels, active, store }) {
   return (
     <div class="cur-levels" role="tablist" aria-label="Chọn cấp độ giáo trình">
-      {levels.map((lv) => (
-        <button
-          type="button"
-          role="tab"
-          aria-selected={String(lv.level === active)}
-          class={'cur-level-chip' + (lv.level === active ? ' active' : '')}
-          onClick={() => selectCurriculumLevel(lv.level)}
-        >
-          <span class="cur-level-name">{lv.name}</span>
-          <span class="cur-level-meta">{`${lv.lessons.length} bài · ${lv.words} từ`}</span>
-        </button>
-      ))}
+      {levels.map((lv) => {
+        const done = lv.lessons.filter((l) => isDone(store, l.key)).length;
+        const complete = lv.lessons.length > 0 && done === lv.lessons.length;
+        const meta = complete ? 'Đã hoàn thành' : done ? `${done}/${lv.lessons.length} bài` : `${lv.lessons.length} bài · ${lv.words} từ`;
+        return (
+          <button
+            type="button"
+            role="tab"
+            aria-selected={String(lv.level === active)}
+            class={'cur-level-chip' + (lv.level === active ? ' active' : '') + (complete ? ' is-complete' : '')}
+            onClick={() => selectCurriculumLevel(lv.level)}
+          >
+            <span class="cur-level-name">
+              {lv.name}
+              {complete && <span class="cur-level-check" aria-label="Đã hoàn thành"><CheckIcon size={12} /></span>}
+            </span>
+            <span class="cur-level-meta">{meta}</span>
+          </button>
+        );
+      })}
     </div>
+  );
+}
+
+function Meter({ label, value, total }) {
+  const pct = total ? Math.min(100, Math.round((value / total) * 100)) : 0;
+  return (
+    <li class="cur-meter">
+      <div class="cur-meter-row"><span>{label}</span><strong>{`${value} / ${total}`}</strong></div>
+      <div class="cur-progress is-thin" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow={pct} aria-label={label}><div class="cur-progress-fill" style={`width:${pct}%`}></div></div>
+    </li>
   );
 }
 
 function OverviewView({ index, levelId }) {
   const store = readStore();
   const level = index.levels.find((l) => l.level === levelId) || index.levels[0];
-  const doneCount = level.lessons.filter((l) => store.lessons[l.key] && store.lessons[l.key].done).length;
+  const details = {};
+  ((levelCache[level.level] && levelCache[level.level].lessons) || []).forEach((l) => { details[l.key] = l; });
+  const doneCount = level.lessons.filter((l) => isDone(store, l.key)).length;
   const knownWords = level.lessons.reduce((sum, l) => sum + knownCount(l.key), 0);
-  const grammarDone = level.lessons.reduce((sum, l) => sum + (store.lessons[l.key] && store.lessons[l.key].done ? l.grammar : 0), 0);
+  const grammarDone = level.lessons.reduce((sum, l) => sum + (isDone(store, l.key) ? l.grammar : 0), 0);
   const grammarInLessons = level.lessons.reduce((sum, l) => sum + l.grammar, 0);
   const lastKey = store.last && level.lessons.some((l) => l.key === store.last) ? store.last : null;
-  const nextLesson = level.lessons.find((l) => !(store.lessons[l.key] && store.lessons[l.key].done)) || level.lessons[level.lessons.length - 1];
-  const current = lastKey && !(store.lessons[lastKey] && store.lessons[lastKey].done) ? level.lessons.find((l) => l.key === lastKey) : nextLesson;
+  const nextLesson = level.lessons.find((l) => !isDone(store, l.key)) || level.lessons[level.lessons.length - 1];
+  const current = lastKey && !isDone(store, lastKey) ? level.lessons.find((l) => l.key === lastKey) : nextLesson;
   const pct = level.lessons.length ? Math.round((doneCount / level.lessons.length) * 100) : 0;
+  const levelComplete = level.lessons.length > 0 && doneCount === level.lessons.length;
+  const featureState = levelComplete ? 'complete' : (doneCount || (current && store.lessons[current.key])) ? 'continue' : 'start';
+  const currentRec = current && store.lessons[current.key];
+  const currentDetail = current && details[current.key];
+  const currentKnown = current ? knownCount(current.key) : 0;
+  const featureEyebrow = featureState === 'complete' ? `Đã hoàn thành ${level.name}` : `${featureState === 'continue' ? 'Tiếp tục' : 'Bắt đầu'} · Bài ${current ? current.n : ''}`;
+  const featureCta = featureState === 'complete' ? 'Ôn lại bài' : featureState === 'continue' ? 'Học tiếp' : 'Bắt đầu học';
   return (
     <div class="cur-wrap">
       <header class="cur-hero">
         <div class="cur-hero-text">
           <div class="cur-eyebrow">Chuẩn trình độ tiếng Trung quốc tế · {index.standard}</div>
-          <h2 class="cur-title" tabindex="-1">Giáo trình HSK 3.0 <span class="cur-title-accent">课程</span></h2>
+          <h2 class="cur-title" tabindex="-1">Giáo trình HSK 3.0 <span class="cur-title-accent" lang="zh-CN">课程</span></h2>
           <p class="cur-lede">Học theo bài: từ vựng, điểm ngữ pháp, hội thoại và bài luyện trong cùng một lộ trình. Từ của mỗi bài học được bằng flashcard và vào lịch ôn.</p>
         </div>
-        <div class="cur-stats">
-          <div class="cur-stat"><div class="cur-stat-num">{doneCount}<span>/{level.lessons.length}</span></div><div class="cur-stat-label">{`Bài ${level.name}`}</div></div>
-          <div class="cur-stat"><div class="cur-stat-num">{knownWords}</div><div class="cur-stat-label">Từ đã nhớ</div></div>
-          <div class="cur-stat"><div class="cur-stat-num">{grammarDone}</div><div class="cur-stat-label">Ngữ pháp</div></div>
-        </div>
+        <dl class="cur-metrics" aria-label={`Tiến độ ${level.name}`}>
+          <div class="cur-metric"><dt>{`Bài ${level.name}`}</dt><dd>{doneCount}<span>{`/${level.lessons.length}`}</span></dd></div>
+          <div class="cur-metric"><dt>Từ đã nhớ</dt><dd>{knownWords}<span>{`/${level.words}`}</span></dd></div>
+          <div class="cur-metric"><dt>Ngữ pháp</dt><dd>{grammarDone}<span>{`/${grammarInLessons}`}</span></dd></div>
+        </dl>
       </header>
 
-      <LevelPicker levels={index.levels} active={level.level} />
+      <LevelPicker levels={index.levels} active={level.level} store={store} />
 
       <div class="cur-columns">
         <div class="cur-main">
           {current && (
-            <article class="cur-continue">
-              <div class="cur-continue-info">
-                <div class="cur-continue-glyph" aria-hidden="true">{current.zh.replace(/[^㐀-鿿]/g, '').slice(0, 1)}</div>
-                <div class="cur-continue-text">
-                  <div class="cur-continue-eyebrow">{`${doneCount ? 'Tiếp tục' : 'Bắt đầu'} · Bài ${current.n}`}</div>
-                  <div class="cur-continue-title">{current.zh}</div>
-                  <div class="cur-continue-meta">{`${current.vi} · ${current.words} từ · ${current.grammar} điểm ngữ pháp`}</div>
+            <article class={'cur-feature is-' + featureState} aria-label="Bài học tiếp theo">
+              <div class="cur-feature-glyph" aria-hidden="true" lang="zh-CN">{current.zh.replace(/[^㐀-鿿]/g, '').slice(0, 1)}</div>
+              <div class="cur-feature-body">
+                <div class="cur-feature-eyebrow">{featureEyebrow}</div>
+                <h3 class="cur-feature-title" lang="zh-CN">{current.zh}</h3>
+                {currentDetail && currentDetail.py && <div class="cur-feature-py">{currentDetail.py}</div>}
+                <p class="cur-feature-desc">{current.vi}</p>
+                <div class="cur-feature-stats">
+                  <span class="ds-pill">{`${current.words} từ`}</span>
+                  <span class="ds-pill">{`${current.grammar} điểm ngữ pháp`}</span>
+                  {currentKnown > 0 && <span class="ds-pill ds-pill--success">{`Đã nhớ ${currentKnown}/${current.words}`}</span>}
+                  {currentRec && <span class={'ds-pill' + (currentRec.done ? ' ds-pill--success' : ' ds-pill--accent')}>{`Điểm cao nhất ${currentRec.best}%`}</span>}
                 </div>
               </div>
-              <button type="button" class="cur-btn-primary" onClick={() => openLesson(current.key)}>{doneCount ? 'Học tiếp' : 'Bắt đầu học'}</button>
+              <button type="button" class="ds-btn ds-btn--primary ds-btn--lg cur-feature-cta" onClick={() => openLesson(current.key)}>
+                {featureCta}
+                <ArrowIcon />
+              </button>
             </article>
           )}
 
@@ -309,12 +360,16 @@ function OverviewView({ index, levelId }) {
               const rec = store.lessons[l.key];
               const state = rec && rec.done ? 'done' : (current && current.key === l.key ? 'current' : 'todo');
               const label = state === 'done' ? 'Đã xong' : state === 'current' ? 'Đang học' : (rec ? `${rec.best}%` : 'Chưa học');
+              const py = details[l.key] && details[l.key].py;
               return (
                 <li class={'cur-lesson-row is-' + state}>
-                  <button type="button" class="cur-lesson-btn" onClick={() => openLesson(l.key)}>
-                    <span class="cur-lesson-badge" aria-hidden="true">{l.n}</span>
+                  <button type="button" class="cur-lesson-btn" aria-current={state === 'current' ? 'step' : undefined} onClick={() => openLesson(l.key)}>
+                    <span class="cur-lesson-badge" aria-hidden="true">{state === 'done' ? <CheckIcon /> : l.n}</span>
                     <span class="cur-lesson-text">
-                      <span class="cur-lesson-zh">{l.zh}</span>
+                      <span class="cur-lesson-title-row">
+                        <span class="cur-lesson-zh" lang="zh-CN">{l.zh}</span>
+                        {py && <span class="cur-lesson-py">{py}</span>}
+                      </span>
                       <span class="cur-lesson-vi">{l.vi}</span>
                     </span>
                     <span class="cur-lesson-meta">{`${l.words} từ · ${l.grammar} NP`}</span>
@@ -326,27 +381,47 @@ function OverviewView({ index, levelId }) {
           </ol>
         </div>
 
-        <aside class="cur-aside">
-          <div class="cur-card">
-            <h3 class="cur-h3">{`Tiến độ ${level.name}`}</h3>
+        <aside class="cur-aside" aria-label="Tổng quan học tập">
+          <section class="cur-overview">
+            <div class="cur-overview-head">
+              <h3 class="cur-h3">{`Tổng quan ${level.name}`}</h3>
+              <span class="cur-overview-pct">{`${pct}%`}</span>
+            </div>
             <div class="cur-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow={pct} aria-label="Tiến độ cấp độ"><div class="cur-progress-fill" style={`width:${pct}%`}></div></div>
-            <div class="cur-kv"><span>Từ vựng đã nhớ</span><strong>{`${knownWords} / ${level.words}`}</strong></div>
-            <div class="cur-kv"><span>Ngữ pháp đã học</span><strong>{`${grammarDone} / ${grammarInLessons}`}</strong></div>
-            <div class="cur-kv"><span>Bài luyện đạt ≥ 80%</span><strong>{`${doneCount} / ${level.lessons.length}`}</strong></div>
-          </div>
-          <div class="cur-card cur-card-soft">
+            <ul class="cur-meters">
+              <Meter label="Từ vựng đã nhớ" value={knownWords} total={level.words} />
+              <Meter label="Ngữ pháp đã học" value={grammarDone} total={grammarInLessons} />
+              <Meter label="Bài luyện đạt ≥ 80%" value={doneCount} total={level.lessons.length} />
+            </ul>
+          </section>
+          <section class="cur-structure">
             <h3 class="cur-h3">Mỗi bài gồm</h3>
-            {[
-              ['1', 'Từ vựng', 'Từ mới của bài, phát âm, Hán Việt; học bằng flashcard.'],
-              ['2', 'Ngữ pháp', 'Điểm ngữ pháp theo chuẩn, có công thức và câu mẫu.'],
-              ['3', 'Hội thoại', 'Đoạn hội thoại ngắn dùng lại từ và mẫu câu của bài.'],
-              ['4', 'Luyện tập', 'Trắc nghiệm nhanh; đạt 80% để hoàn thành bài.'],
-            ].map(([n, t, d]) => (
-              <div class="cur-step"><span class="cur-step-n">{n}</span><div><div class="cur-step-t">{t}</div><div class="cur-step-d">{d}</div></div></div>
-            ))}
-          </div>
+            <ol class="cur-steps">
+              {[
+                ['Từ vựng', 'Từ mới của bài, phát âm, Hán Việt; học bằng flashcard.'],
+                ['Ngữ pháp', 'Điểm ngữ pháp theo chuẩn, có công thức và câu mẫu.'],
+                ['Hội thoại', 'Đoạn hội thoại ngắn dùng lại từ và mẫu câu của bài.'],
+                ['Luyện tập', 'Trắc nghiệm nhanh; đạt 80% để hoàn thành bài.'],
+              ].map(([t, d], i) => (
+                <li class="cur-step"><span class="cur-step-n">{i + 1}</span><div><div class="cur-step-t">{t}</div><div class="cur-step-d">{d}</div></div></li>
+              ))}
+            </ol>
+          </section>
         </aside>
       </div>
+    </div>
+  );
+}
+
+function CurriculumSkeleton({ label }) {
+  return (
+    <div class="cur-wrap cur-skeleton" aria-busy="true">
+      <span class="cur-sr-only" role="status">{label}</span>
+      <div class="cur-skel cur-skel-title"></div>
+      <div class="cur-skel cur-skel-line"></div>
+      <div class="cur-skel cur-skel-levels"></div>
+      <div class="cur-skel cur-skel-block"></div>
+      {[0, 1, 2, 3].map(() => <div class="cur-skel cur-skel-row"></div>)}
     </div>
   );
 }
@@ -359,7 +434,7 @@ function QuizView({ lesson, levelData }) {
       <div class="cur-card cur-quiz-start">
         <p class="cur-quiz-intro">{`Khoảng ${QUIZ_SIZE} câu trắc nghiệm về từ vựng và ngữ pháp của bài. Đúng từ 80% trở lên là hoàn thành bài.`}</p>
         {rec && <p class="cur-quiz-best">{`Điểm cao nhất: ${rec.best}%${rec.done ? ' · Đã hoàn thành' : ''}`}</p>}
-        <button type="button" class="cur-btn-primary" onClick={() => setUi({ quiz: buildQuiz(lesson, levelData) })}>Bắt đầu luyện tập</button>
+        <button type="button" class="ds-btn ds-btn--primary" onClick={() => setUi({ quiz: buildQuiz(lesson, levelData) })}>Bắt đầu luyện tập</button>
       </div>
     );
   }
@@ -371,7 +446,7 @@ function QuizView({ lesson, levelData }) {
         <div class="cur-quiz-score">{`${quiz.score} / ${total}`}</div>
         <p class={'cur-feedback ' + (passed ? 'is-correct' : 'is-wrong')}>{passed ? 'Hoàn thành bài! Bạn có thể sang bài tiếp theo.' : 'Chưa đạt 80%. Xem lại từ vựng và ngữ pháp rồi thử lại nhé.'}</p>
         <div class="cur-actions">
-          <button type="button" class="cur-btn-ghost" onClick={() => setUi({ quiz: buildQuiz(lesson, levelData) })}>Làm lại</button>
+          <button type="button" class="ds-btn ds-btn--secondary" onClick={() => setUi({ quiz: buildQuiz(lesson, levelData) })}>Làm lại</button>
           {passed && <NextLessonButton lesson={lesson} levelData={levelData} />}
         </div>
       </div>
@@ -410,7 +485,7 @@ function QuizView({ lesson, levelData }) {
         <div class={'cur-feedback ' + (correct ? 'is-correct' : 'is-wrong')}><strong>{correct ? 'Đúng. ' : 'Chưa đúng. '}</strong>{q.explain}</div>
       )}
       {answered && (
-        <div class="cur-actions cur-actions-end"><button type="button" class="cur-btn-primary" onClick={next}>{quiz.index + 1 >= total ? 'Xem kết quả' : 'Câu tiếp theo'}</button></div>
+        <div class="cur-actions cur-actions-end"><button type="button" class="ds-btn ds-btn--primary" onClick={next}>{quiz.index + 1 >= total ? 'Xem kết quả' : 'Câu tiếp theo'}</button></div>
       )}
     </div>
   );
@@ -419,7 +494,7 @@ function QuizView({ lesson, levelData }) {
 function NextLessonButton({ lesson, levelData }) {
   const next = levelData.lessons.find((l) => l.n === lesson.n + 1);
   if (!next) return null;
-  return <button type="button" class="cur-btn-primary" onClick={() => openLesson(next.key)}>{`Bài ${next.n}: ${next.zh}`}</button>;
+  return <button type="button" class="ds-btn ds-btn--primary" onClick={() => openLesson(next.key)}>{`Bài ${next.n}: ${next.zh}`}</button>;
 }
 
 function LessonView({ lesson, levelData }) {
@@ -456,7 +531,7 @@ function LessonView({ lesson, levelData }) {
       <section class="cur-section" id="curSection-vocab" aria-labelledby="curHeadVocab">
         <div class="cur-section-head">
           <h3 class="cur-h2" id="curHeadVocab">生词 · Từ vựng <span class="cur-count">{`${words.length} từ${known ? ` · đã nhớ ${known}` : ''}`}</span></h3>
-          <button type="button" class="cur-btn-outline" onClick={() => startLessonFlashcards(lesson.key)}>Học flashcard bài này</button>
+          <button type="button" class="ds-btn ds-btn--secondary cur-btn-accent" onClick={() => startLessonFlashcards(lesson.key)}>Học flashcard bài này</button>
         </div>
         <div class="cur-word-grid">
           {shownWords.map((w) => (
@@ -507,8 +582,8 @@ function LessonView({ lesson, levelData }) {
         <div class="cur-section-head">
           <h3 class="cur-h2" id="curHeadDialogue">课文 · Hội thoại{lesson.dialogueTitle ? <span class="cur-count">{lesson.dialogueTitle}</span> : null}</h3>
           <div class="cur-actions">
-            <button type="button" class="cur-btn-ghost" onClick={(e) => speak(lesson.dialogue.map((l) => l.zh).join(''), e)}>Nghe cả bài</button>
-            <button type="button" class="cur-btn-ghost" aria-pressed={String(ui.hidePinyin)} onClick={() => setUi({ hidePinyin: !ui.hidePinyin })}>{ui.hidePinyin ? 'Hiện pinyin' : 'Ẩn pinyin'}</button>
+            <button type="button" class="ds-btn ds-btn--secondary" onClick={(e) => speak(lesson.dialogue.map((l) => l.zh).join(''), e)}>Nghe cả bài</button>
+            <button type="button" class="ds-btn ds-btn--secondary" aria-pressed={String(ui.hidePinyin)} onClick={() => setUi({ hidePinyin: !ui.hidePinyin })}>{ui.hidePinyin ? 'Hiện pinyin' : 'Ẩn pinyin'}</button>
           </div>
         </div>
         <div class="cur-card cur-dialogue">
@@ -543,16 +618,16 @@ function CurriculumScreen() {
     return (
       <div class="cur-wrap"><div class="cur-card cur-empty">
         <p>{ui.error}</p>
-        <button type="button" class="cur-btn-primary" onClick={() => { ui.error = null; initCurriculum(); }}>Thử lại</button>
+        <button type="button" class="ds-btn ds-btn--primary" onClick={() => { ui.error = null; initCurriculum(); }}>Thử lại</button>
       </div></div>
     );
   }
-  if (!indexData) return <div class="cur-wrap"><div class="loading-text">Đang tải giáo trình…</div></div>;
+  if (!indexData) return <CurriculumSkeleton label="Đang tải giáo trình…" />;
   const levelId = ui.level || indexData.levels[0].level;
   const levelData = levelCache[levelId];
   if (ui.lessonKey) {
     const lesson = levelData && levelData.lessons.find((l) => l.key === ui.lessonKey);
-    if (!lesson) return <div class="cur-wrap"><div class="loading-text">Đang tải bài học…</div></div>;
+    if (!lesson) return <CurriculumSkeleton label="Đang tải bài học…" />;
     return <LessonView lesson={lesson} levelData={levelData} />;
   }
   return <OverviewView index={indexData} levelId={levelId} />;

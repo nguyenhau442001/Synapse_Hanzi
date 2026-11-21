@@ -31,9 +31,9 @@ def test_base_css_tokens_and_layering():
     css_content = BASE_CSS.read_text(encoding="utf-8")
 
     # Modern Chinese Learning palette
-    assert "#F7F3EA" in css_content  # Main warm ivory
+    assert "#F5F0E7" in css_content  # Main warm ivory canvas
     assert "#F1EBDD" in css_content  # Secondary Xuan paper
-    assert "#A8322A" in css_content  # Vermilion
+    assert "#A8322D" in css_content  # Vermilion
     assert "#C5A46D" in css_content  # Antique gold
 
     # Dark mode classical palette

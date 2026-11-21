@@ -1,0 +1,259 @@
+/* Design system shell layer — loaded LAST in the bundle (tools/bundle_css.py).
+   Refines the shared app header and primary navigation with the tokens in base.css:
+   compact header, quiet pills, ghost icon buttons and a borderless segmented nav.
+   Screen-specific styles live in their own files (e.g. curriculum.css). */
+
+.ds-icon {
+  display: block;
+  flex-shrink: 0;
+}
+
+/* ── Header ─────────────────────────────────────────────────────────────── */
+.app-header {
+  gap: var(--space-4);
+  margin-bottom: var(--space-3);
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.app-brand-badge { gap: var(--space-3); }
+
+.app-brand-logo-img {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-btn);
+  box-shadow: none;
+}
+
+.app-header-brand { margin-bottom: 0; }
+
+.app-header-brand h1 {
+  font-family: var(--font-zh);
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+}
+
+.app-header-brand p {
+  margin-top: 2px;
+  font-size: var(--fs-caption);
+  color: var(--text-tertiary);
+}
+
+.brand-pinyin { font-weight: 600; color: var(--accent-text); }
+.brand-en { font-weight: 500; color: var(--text-secondary); opacity: 1; }
+
+/* Search: input-shaped trigger with the ⌘K hint */
+.app-header .header-quick-search-btn {
+  height: 38px;
+  border-radius: var(--radius-input);
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  box-shadow: none;
+  font-size: var(--fs-body);
+  transition: border-color var(--dur-fast) var(--ease-out), background-color var(--dur-fast) var(--ease-out);
+}
+.app-header .header-quick-search-btn:hover {
+  border-color: var(--text-tertiary);
+  background: var(--card-bg);
+  box-shadow: none;
+  transform: none;
+}
+.app-header .header-quick-search-btn:focus-visible {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: var(--focus-ring);
+}
+.app-header .hqs-kbd {
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface-subtle);
+  box-shadow: none;
+  color: var(--text-tertiary);
+  font-family: var(--font-sans);
+}
+
+/* Stat pills: streak, saved words, due reviews */
+.app-header .header-cluster { gap: var(--space-2); }
+
+.app-header .header-divider {
+  height: 18px;
+  background: var(--border);
+  opacity: 1;
+  margin: 0 var(--space-1);
+}
+
+.app-header .header-streak-badge,
+.app-header .header-action-badge {
+  height: 34px;
+  gap: 6px;
+  padding: 0 var(--space-3);
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: none;
+  transition: background-color var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out),
+    color var(--dur-fast) var(--ease-out);
+}
+.app-header .header-action-badge { padding-right: 6px; }
+
+.app-header .header-streak-badge:hover,
+.app-header .header-action-badge:hover {
+  background: var(--surface-subtle);
+  border-color: var(--text-tertiary);
+  color: var(--text-primary);
+  box-shadow: none;
+  transform: none;
+}
+.app-header .header-streak-badge:focus-visible,
+.app-header .header-action-badge:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+:root[data-theme="dark"] .app-header .header-streak-badge { background: var(--card-bg); border-color: var(--border); }
+
+.app-header .header-streak-icon,
+.app-header .header-badge-icon {
+  display: inline-flex;
+  font-size: 0;
+}
+.app-header .header-streak-icon { color: var(--accent-text); }
+.app-header .header-badge-saved .header-badge-icon { color: var(--text-secondary); }
+.app-header .header-badge-urgent .header-badge-icon { color: var(--status-warning); }
+
+.app-header .header-badge-count,
+.app-header .header-badge-urgent .header-badge-count {
+  min-width: 22px;
+  height: 22px;
+  padding: 0 6px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: var(--surface-chip);
+  color: var(--text-secondary);
+  font-size: var(--fs-caption);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.app-header .header-badge-urgent .header-badge-count {
+  background: var(--danger-bg);
+  color: var(--accent-text);
+}
+:root[data-theme="dark"] .app-header .header-badge-urgent .header-badge-count {
+  background: var(--danger-bg);
+  color: var(--accent-text);
+  border: 0;
+}
+
+/* Ghost icon buttons: help, theme, profile */
+.app-header .header-utility-cluster { gap: var(--space-1); }
+
+.app-header .header-utility-cluster .header-help-btn,
+.app-header .header-utility-cluster .theme-toggle-btn,
+.app-header .header-utility-cluster .header-profile-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-btn);
+  border: 0;
+  background: transparent;
+  color: var(--text-secondary);
+  box-shadow: none;
+  transition: background-color var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+.app-header .header-utility-cluster .header-help-btn:hover,
+.app-header .header-utility-cluster .theme-toggle-btn:hover,
+.app-header .header-utility-cluster .header-profile-btn:hover {
+  background: var(--surface-hover);
+  color: var(--text-primary);
+  border: 0;
+  box-shadow: none;
+  transform: none;
+}
+.app-header .header-utility-cluster .header-help-btn:focus-visible,
+.app-header .header-utility-cluster .theme-toggle-btn:focus-visible,
+.app-header .header-utility-cluster .header-profile-btn:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+.app-header .header-avatar-icon { display: inline-flex; font-size: 0; }
+
+/* Sticky header on screens without their own sticky toolbars. The box-shadow +
+   clip-path pair paints the canvas colour edge to edge without adding page width. */
+body.curriculum-view-active:not(.study-mode) .app-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--bg);
+  box-shadow: 0 0 0 100vmax var(--bg);
+  clip-path: inset(0 -100vmax);
+}
+body.curriculum-view-active:not(.study-mode) .chinese-aesthetic-bg { z-index: 0; }
+
+/* ── Primary navigation ─────────────────────────────────────────────────── */
+.primary-tabs { margin: var(--space-2) 0 var(--space-5); }
+
+.primary-tabs-group {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  gap: var(--space-1);
+}
+
+.primary-tabs-group .primary-tab {
+  height: 36px;
+  padding: 0 var(--space-3);
+  border: 0;
+  border-radius: var(--radius-btn);
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  font-weight: 500;
+  gap: var(--space-2);
+  transition: background-color var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+.primary-tabs-group .primary-tab:hover:not(.active) {
+  background: var(--surface-hover);
+  color: var(--text-primary);
+}
+.primary-tabs-group .primary-tab.active {
+  background: var(--surface-active);
+  border: 0;
+  color: var(--accent-text);
+  font-weight: 600;
+  box-shadow: none;
+}
+.primary-tabs-group .primary-tab:focus-visible,
+.primary-menu-trigger:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+.primary-menu-trigger {
+  height: 36px;
+  padding: 0 var(--space-3);
+  border-radius: var(--radius-btn);
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  font-weight: 500;
+  transition: background-color var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out),
+    color var(--dur-fast) var(--ease-out);
+}
+.primary-menu-trigger:hover {
+  background: var(--surface-subtle);
+  border-color: var(--text-tertiary);
+  color: var(--text-primary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app-header *,
+  .primary-tabs * { transition: none !important; }
+}

@@ -6,50 +6,50 @@
   --c-jade-text: #375F53;   /* 青铜褐 / 泥金褐 - Muted Bronze */
 
   /* Typography Font Stacks */
-  --font-sans: Inter, "Be Vietnam Pro", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-classical: "Songti SC", "Noto Serif SC", "STSong", "SimSun", serif;
+  --font-sans: "Be Vietnam Pro", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-classical: "Noto Serif SC", "Songti SC", "STSong", "SimSun", serif;
 
   /* Theme semantic mappings - Light Mode */
-  --bg-canvas: #F7F3EA;
+  --bg-canvas: #F5F0E7;
   --bg-surface: #FFFFFF;
   --bg-elevated: #F1EBDD;
 
-  --text-primary: #1F2228;
+  --text-primary: #292722;
   --text-secondary: #5A564F;
-  --text-tertiary: #8C857B;
+  --text-tertiary: #858078;
   --text-muted: #8E877C;
 
-  --border-subtle: #E8E1D2;
+  --border-subtle: #E8E1D7;
   --border-strong: #C5A46D;
 
-  --brand-primary: #A8322A;
-  --brand-primary-hover: #8F2525;
+  --brand-primary: #A8322D;
+  --brand-primary-hover: #852722;
 
   --status-success: #527D70;
   --status-warning: #A88B62;
 
   /* Aliases & unified token architecture */
-  --bg: #F7F3EA;
+  --bg: #F5F0E7;
   --card-bg: #FFFFFF;
-  --border: #DDD4C4;
+  --border: #E8E1D7;
   --card-shadow: 0 2px 10px -2px rgba(41, 43, 48, 0.05), 0 1px 3px 0 rgba(41, 43, 48, 0.03);
   --surface-subtle: #FAF6EE;
   --surface-chip: #F1EBDD;
   --progress-track: #E4DACE;
 
-  --accent: #A8322A;
-  --accent-hover: #8F2525;
+  --accent: #A8322D;
+  --accent-hover: #852722;
   --accent-gold: #C5A46D;
-  --accent-gradient: linear-gradient(135deg, #A8322A 0%, #8F2525 100%);
+  --accent-gradient: linear-gradient(135deg, #A8322D 0%, #852722 100%);
   --accent-gradient-hover: linear-gradient(135deg, #B83A31 0%, #A8322A 100%);
-  --accent-light: rgba(168, 50, 42, 0.08);
+  --accent-light: rgba(168, 50, 45, 0.08);
   --on-accent: #FFFFFF;
-  --accent-text: #A8322A;
+  --accent-text: #A8322D;
 
-  --success-bg: #EFF5F1;
+  --success-bg: #E9F2EA;
   --success-text: #375F53;
-  --danger-bg: #FAF0EE;
-  --danger-text: #A8322A;
+  --danger-bg: #F8EDE7;
+  --danger-text: #A8322D;
   --info-bg: #EEF3F5;
   --info-text: #3D6B78;
   --warning-bg: #FAF5EB;
@@ -59,6 +59,34 @@
   --example-border: #DDD2BE;
   --radius-lg: 16px;
   --radius-md: 10px;
+
+  /* Design system scale (v3.38) — shared by every screen */
+  --font-zh: "Noto Serif SC", "Songti SC", "STSong", "SimSun", serif;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --radius-card: 12px;
+  --radius-btn: 8px;
+  --radius-input: 9px;
+  --radius-pill: 999px;
+  --fs-page: 32px;
+  --fs-section: 20px;
+  --fs-lesson: 19px;
+  --fs-body: 14px;
+  --fs-caption: 12px;
+  --lh-tight: 1.25;
+  --lh-body: 1.55;
+  --ease-out: cubic-bezier(0.2, 0, 0, 1);
+  --dur-fast: 150ms;
+  --dur-base: 200ms;
+  --focus-ring: 0 0 0 3px rgba(168, 50, 45, 0.28);
+  --surface-hover: rgba(41, 39, 34, 0.04);
+  --surface-active: rgba(168, 50, 45, 0.07);
+  --content-max: 1200px;
 }
 
 /* Dark palette — Deep nocturnal ink wash (松烟黛墨) with subtle gold ornaments & cinnabar accents */
@@ -90,7 +118,7 @@
     --surface-chip: #2A303A;
     --progress-track: #282E38;
 
-    --accent: #A8322A;
+    --accent: #A8322D;
     --accent-hover: #BF3B32;
     --accent-gold: #B89B68;
     --accent-gradient: linear-gradient(135deg, #A8322A 0%, #8F2525 100%);
@@ -111,6 +139,9 @@
     --example-border: #2D333D;
     --radius-lg: 16px;
     --radius-md: 10px;
+    --surface-hover: rgba(237, 230, 216, 0.05);
+    --surface-active: rgba(224, 109, 99, 0.12);
+    --focus-ring: 0 0 0 3px rgba(224, 109, 99, 0.35);
   }
 }
 
@@ -142,7 +173,7 @@
   --surface-chip: #2A303A;
   --progress-track: #282E38;
 
-  --accent: #A8322A;
+  --accent: #A8322D;
   --accent-hover: #BF3B32;
   --accent-gold: #B89B68;
   --accent-gradient: linear-gradient(135deg, #A8322A 0%, #8F2525 100%);
@@ -163,6 +194,9 @@
   --example-border: #2D333D;
   --radius-lg: 16px;
   --radius-md: 10px;
+  --surface-hover: rgba(237, 230, 216, 0.05);
+  --surface-active: rgba(224, 109, 99, 0.12);
+  --focus-ring: 0 0 0 3px rgba(224, 109, 99, 0.35);
 }
 /* Chinese Classical Landscape Canvas (梅花与水墨意境背景) */
 .chinese-aesthetic-bg {
@@ -455,4 +489,52 @@ body {
 @media (min-width: 700px) and (max-height: 950px) {
   body.study-mode { padding: 12px 16px; }
   .study-mode .app-header { margin-bottom: 14px; }
+}
+
+/* ── Design system primitives (buttons, pills) ─────────────────────────────
+   States: default, :hover, :active, :focus-visible, :disabled, [aria-busy="true"] (loading). */
+.ds-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  min-height: 40px;
+  padding: 0 var(--space-4);
+  border-radius: var(--radius-btn);
+  border: 1px solid transparent;
+  font: 600 var(--fs-body) / 1 var(--font-sans);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out),
+    color var(--dur-fast) var(--ease-out), transform var(--dur-fast) var(--ease-out), opacity var(--dur-fast) var(--ease-out);
+}
+.ds-btn:active:not(:disabled) { transform: translateY(1px); }
+.ds-btn:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+.ds-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.ds-btn[aria-busy="true"] { cursor: progress; opacity: 0.7; }
+.ds-btn--primary { background: var(--accent); color: #FFFFFF; border-color: var(--accent); }
+.ds-btn--primary:hover:not(:disabled) { background: var(--accent-hover); border-color: var(--accent-hover); }
+.ds-btn--secondary { background: var(--card-bg); color: var(--text-primary); border-color: var(--border); }
+.ds-btn--secondary:hover:not(:disabled) { background: var(--surface-subtle); border-color: var(--text-tertiary); }
+.ds-btn--ghost { background: transparent; color: var(--text-secondary); }
+.ds-btn--ghost:hover:not(:disabled) { background: var(--surface-hover); color: var(--text-primary); }
+.ds-btn--lg { min-height: 44px; padding: 0 var(--space-5); }
+
+.ds-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  height: 24px;
+  padding: 0 10px;
+  border-radius: var(--radius-pill);
+  font: 500 var(--fs-caption) / 1 var(--font-sans);
+  background: var(--surface-chip);
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+.ds-pill--accent { background: var(--danger-bg); color: var(--accent-text); }
+.ds-pill--success { background: var(--success-bg); color: var(--success-text); }
+
+@media (prefers-reduced-motion: reduce) {
+  .ds-btn { transition: none; }
 }
