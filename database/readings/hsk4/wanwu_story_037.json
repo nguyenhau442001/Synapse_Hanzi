@@ -130,7 +130,8 @@
         {
           "text": "才",
           "pinyin": "cái",
-          "hanviet": "Tài"
+          "hanviet": "Tài",
+          "meaning_vi": "mới, rồi mới (chỉ việc xảy ra muộn / có điều kiện)"
         },
         {
           "text": "能够",
@@ -239,7 +240,8 @@
         {
           "text": "一种",
           "pinyin": "yī zhǒng",
-          "hanviet": "Nhất Chủng"
+          "hanviet": "Nhất Chủng",
+          "meaning_vi": "một loại"
         },
         {
           "text": "药物",
@@ -279,7 +281,8 @@
         {
           "text": "接种",
           "pinyin": "jiē zhǒng",
-          "hanviet": "Tiếp Chủng"
+          "hanviet": "Tiếp Chủng",
+          "meaning_vi": "tiêm chủng"
         },
         {
           "text": "后",
@@ -292,7 +295,8 @@
         {
           "text": "不可避免",
           "pinyin": "bù kě bì miǎn",
-          "hanviet": "Bất Khả Tị Miễn"
+          "hanviet": "Bất Khả Tị Miễn",
+          "meaning_vi": "không thể tránh khỏi"
         },
         {
           "text": "地",
@@ -321,7 +325,8 @@
         {
           "text": "不良反应",
           "pinyin": "bù liáng fǎn yìng",
-          "hanviet": "Bất Lương Phản Ưng"
+          "hanviet": "Bất Lương Phản Ưng",
+          "meaning_vi": "phản ứng bất lợi"
         },
         {
           "text": "。"
@@ -347,12 +352,14 @@
         {
           "text": "最早",
           "pinyin": "zuì zǎo",
-          "hanviet": "Tối Tảo"
+          "hanviet": "Tối Tảo",
+          "meaning_vi": "sớm nhất"
         },
         {
           "text": "起源于",
           "pinyin": "qǐ yuán yú",
-          "hanviet": "Khởi Nguyên Vu"
+          "hanviet": "Khởi Nguyên Vu",
+          "meaning_vi": "Bắt nguồn từ"
         },
         {
           "text": "中国",
@@ -360,7 +367,7 @@
           "hanviet": "Trung Quốc",
           "hsk": 1,
           "word_id": "hsk1_610",
-          "meaning_vi": "trung Quốc"
+          "meaning_vi": "Trung Quốc"
         },
         {
           "text": "回顾",
@@ -381,7 +388,8 @@
         {
           "text": "走过",
           "pinyin": "zǒu guò",
-          "hanviet": "Tẩu Quá"
+          "hanviet": "Tẩu Quá",
+          "meaning_vi": "Tẩu Quá"
         },
         {
           "text": "的",
@@ -558,7 +566,8 @@
         {
           "text": "无助",
           "pinyin": "wú zhù",
-          "hanviet": "Vô Trợ"
+          "hanviet": "Vô Trợ",
+          "meaning_vi": "Vô Trợ"
         },
         {
           "text": "和",
@@ -608,7 +617,8 @@
         {
           "text": "染上瘟疫",
           "pinyin": "rǎn shàng wēn yì",
-          "hanviet": "Nhiễm Thướng Ôn Dịch"
+          "hanviet": "Nhiễm Thướng Ôn Dịch",
+          "meaning_vi": "Nhiễm Thướng Ôn Dịch"
         },
         {
           "text": "的",
@@ -763,7 +773,8 @@
         {
           "text": "拉肚子",
           "pinyin": "lā dù zi",
-          "hanviet": "Lạp Đỗ Tử"
+          "hanviet": "Lạp Đỗ Tử",
+          "meaning_vi": "Lạp Đỗ Tử"
         },
         {
           "text": "就是",
@@ -800,7 +811,8 @@
         {
           "text": "征兆",
           "pinyin": "zhēng zhào",
-          "hanviet": "Chinh Triệu"
+          "hanviet": "Chinh Triệu",
+          "meaning_vi": "ký tên"
         },
         {
           "text": "，"
@@ -878,7 +890,8 @@
         {
           "text": "无计可施",
           "pinyin": "wú jì kě shī",
-          "hanviet": "Vô Kế Khả Thi"
+          "hanviet": "Vô Kế Khả Thi",
+          "meaning_vi": "Vô Kế Khả Thi"
         },
         {
           "text": "的",
@@ -891,7 +904,8 @@
         {
           "text": "人们",
           "pinyin": "rén men",
-          "hanviet": "Nhân Môn"
+          "hanviet": "Nhân Môn",
+          "meaning_vi": "mọi người"
         },
         {
           "text": "开始",
@@ -936,7 +950,8 @@
         {
           "text": "家里",
           "pinyin": "jiā lǐ",
-          "hanviet": "Gia Lý"
+          "hanviet": "Gia Lý",
+          "meaning_vi": "ở nhà"
         },
         {
           "text": "，"
@@ -944,7 +959,8 @@
         {
           "text": "或弃",
           "pinyin": "huò qì",
-          "hanviet": "Hoặc Khí"
+          "hanviet": "Hoặc Khí",
+          "meaning_vi": "Hoặc Khí"
         },
         {
           "text": "城",
@@ -1013,7 +1029,8 @@
         {
           "text": "黑死病",
           "pinyin": "hēi sǐ bìng",
-          "hanviet": "Hắc Tử Bệnh"
+          "hanviet": "Hắc Tử Bệnh",
+          "meaning_vi": "Cái chết đen"
         },
         {
           "text": "也",
@@ -1034,7 +1051,8 @@
         {
           "text": "鼠疫",
           "pinyin": "shǔ yì",
-          "hanviet": "Thử Dịch"
+          "hanviet": "Thử Dịch",
+          "meaning_vi": "Bệnh dịch hạch"
         },
         {
           "text": "的",
@@ -1082,7 +1100,8 @@
         {
           "text": "逃离",
           "pinyin": "táo lí",
-          "hanviet": "Đào Ly"
+          "hanviet": "Đào Ly",
+          "meaning_vi": "Đào Ly"
         },
         {
           "text": "城市",
@@ -1098,7 +1117,8 @@
         {
           "text": "甚至于",
           "pinyin": "shèn zhì yú",
-          "hanviet": "Thậm Chí Vu"
+          "hanviet": "Thậm Chí Vu",
+          "meaning_vi": "Thậm Chí Vu"
         },
         {
           "text": "整个",
@@ -1119,7 +1139,8 @@
         {
           "text": "禁浴",
           "pinyin": "jìn yù",
-          "hanviet": "Cầm Dục"
+          "hanviet": "Cầm Dục",
+          "meaning_vi": "Cầm Dục"
         },
         {
           "text": "200"
@@ -1164,7 +1185,8 @@
         {
           "text": "统治者",
           "pinyin": "tǒng zhì zhě",
-          "hanviet": "Thống Trị Giả"
+          "hanviet": "Thống Trị Giả",
+          "meaning_vi": "người cai trị"
         },
         {
           "text": "、"
@@ -1172,7 +1194,8 @@
         {
           "text": "政客",
           "pinyin": "zhèng kè",
-          "hanviet": "Chính Khách"
+          "hanviet": "Chính Khách",
+          "meaning_vi": "chính trị gia"
         },
         {
           "text": "和",
@@ -1185,7 +1208,8 @@
         {
           "text": "巫师",
           "pinyin": "wū shī",
-          "hanviet": "Vu Sư"
+          "hanviet": "Vu Sư",
+          "meaning_vi": "thuật sĩ"
         },
         {
           "text": "往往",
@@ -1214,7 +1238,8 @@
         {
           "text": "人们",
           "pinyin": "rén men",
-          "hanviet": "Nhân Môn"
+          "hanviet": "Nhân Môn",
+          "meaning_vi": "mọi người"
         },
         {
           "text": "对",
@@ -1387,7 +1412,8 @@
         {
           "text": "找到",
           "pinyin": "zhǎo dào",
-          "hanviet": "Trảo Đáo"
+          "hanviet": "Trảo Đáo",
+          "meaning_vi": "tìm thấy"
         },
         {
           "text": "了",
@@ -1499,7 +1525,8 @@
         {
           "text": "带来",
           "pinyin": "dài lái",
-          "hanviet": "Đới Lai"
+          "hanviet": "Đới Lai",
+          "meaning_vi": "mang theo"
         },
         {
           "text": "的",
@@ -1520,7 +1547,8 @@
         {
           "text": "不可估量",
           "pinyin": "bù kě gū liáng",
-          "hanviet": "Bất Khả Cổ Lượng"
+          "hanviet": "Bất Khả Cổ Lượng",
+          "meaning_vi": "không thể đo lường được"
         },
         {
           "text": "，"
@@ -1571,7 +1599,8 @@
         {
           "text": "第一次",
           "pinyin": "dì yī cì",
-          "hanviet": "Đệ Nhất Thứ"
+          "hanviet": "Đệ Nhất Thứ",
+          "meaning_vi": "lần đầu tiên"
         },
         {
           "text": "消灭",
@@ -1592,7 +1621,8 @@
         {
           "text": "一种",
           "pinyin": "yī zhǒng",
-          "hanviet": "Nhất Chủng"
+          "hanviet": "Nhất Chủng",
+          "meaning_vi": "một loại"
         },
         {
           "text": "疾病",
@@ -1611,7 +1641,8 @@
         {
           "text": "天花",
           "pinyin": "tiān huā",
-          "hanviet": "Thiên Hoa"
+          "hanviet": "Thiên Hoa",
+          "meaning_vi": "bệnh đậu mùa"
         },
         {
           "text": "。"
@@ -1661,7 +1692,8 @@
         {
           "text": "第二个",
           "pinyin": "dì èr gè",
-          "hanviet": "Đệ Nhị Cá"
+          "hanviet": "Đệ Nhị Cá",
+          "meaning_vi": "thứ hai"
         },
         {
           "text": "价值",
@@ -1719,7 +1751,8 @@
         {
           "text": "美国",
           "pinyin": "měi guó",
-          "hanviet": "Mỹ Quốc"
+          "hanviet": "Mỹ Quốc",
+          "meaning_vi": "Hoa Kỳ"
         },
         {
           "text": "的",
@@ -1732,7 +1765,8 @@
         {
           "text": "一项",
           "pinyin": "yī xiàng",
-          "hanviet": "Nhất Hạng"
+          "hanviet": "Nhất Hạng",
+          "meaning_vi": "một món đồ"
         },
         {
           "text": "成本",
@@ -1815,7 +1849,8 @@
         {
           "text": "美元",
           "pinyin": "měi yuán",
-          "hanviet": "Mỹ Nguyên"
+          "hanviet": "Mỹ Nguyên",
+          "meaning_vi": "đô la Mỹ"
         },
         {
           "text": "可",
@@ -1845,7 +1880,8 @@
         {
           "text": "美元",
           "pinyin": "měi yuán",
-          "hanviet": "Mỹ Nguyên"
+          "hanviet": "Mỹ Nguyên",
+          "meaning_vi": "đô la Mỹ"
         },
         {
           "text": "的",
@@ -1895,12 +1931,14 @@
         {
           "text": "最早",
           "pinyin": "zuì zǎo",
-          "hanviet": "Tối Tảo"
+          "hanviet": "Tối Tảo",
+          "meaning_vi": "sớm nhất"
         },
         {
           "text": "起源于",
           "pinyin": "qǐ yuán yú",
-          "hanviet": "Khởi Nguyên Vu"
+          "hanviet": "Khởi Nguyên Vu",
+          "meaning_vi": "Bắt nguồn từ"
         },
         {
           "text": "中国",
@@ -1908,7 +1946,7 @@
           "hanviet": "Trung Quốc",
           "hsk": 1,
           "word_id": "hsk1_610",
-          "meaning_vi": "trung Quốc"
+          "meaning_vi": "Trung Quốc"
         },
         {
           "text": "，"
@@ -1919,7 +1957,7 @@
           "hanviet": "Trung Quốc",
           "hsk": 1,
           "word_id": "hsk1_610",
-          "meaning_vi": "trung Quốc"
+          "meaning_vi": "Trung Quốc"
         },
         {
           "text": "古代",
@@ -2031,7 +2069,8 @@
         {
           "text": "患过",
           "pinyin": "huàn guò",
-          "hanviet": "Hoạn Quá"
+          "hanviet": "Hoạn Quá",
+          "meaning_vi": "Hoạn Quá"
         },
         {
           "text": "传染病",
@@ -2087,7 +2126,8 @@
         {
           "text": "不再",
           "pinyin": "bù zài",
-          "hanviet": "Bất Tái"
+          "hanviet": "Bất Tái",
+          "meaning_vi": "không còn nữa"
         },
         {
           "text": "患",
@@ -2188,7 +2228,8 @@
         {
           "text": "捣碎",
           "pinyin": "dǎo suì",
-          "hanviet": "Đảo Toái"
+          "hanviet": "Đảo Toái",
+          "meaning_vi": "Đảo Toái"
         },
         {
           "text": "、"
@@ -2196,7 +2237,8 @@
         {
           "text": "研磨",
           "pinyin": "yán mó",
-          "hanviet": "Nghiên Ma"
+          "hanviet": "Nghiên Ma",
+          "meaning_vi": "Nghiên Ma"
         },
         {
           "text": "）"
@@ -2244,12 +2286,14 @@
         {
           "text": "脏器",
           "pinyin": "zàng qì",
-          "hanviet": "Tang Khí"
+          "hanviet": "Tang Khí",
+          "meaning_vi": "Tang Khí"
         },
         {
           "text": "制成",
           "pinyin": "zhì chéng",
-          "hanviet": "Chế Thành"
+          "hanviet": "Chế Thành",
+          "meaning_vi": "thực hiện"
         },
         {
           "text": "最",
@@ -2289,7 +2333,8 @@
         {
           "text": "这种",
           "pinyin": "zhè zhǒng",
-          "hanviet": "Giá Chủng"
+          "hanviet": "Giá Chủng",
+          "meaning_vi": "Loại này"
         },
         {
           "text": "疫苗",
@@ -2326,7 +2371,8 @@
         {
           "text": "全身性",
           "pinyin": "quán shēn xìng",
-          "hanviet": "Toàn Thân Tính"
+          "hanviet": "Toàn Thân Tính",
+          "meaning_vi": "Toàn Thân Tính"
         },
         {
           "text": "副作用",
@@ -2350,7 +2396,8 @@
         {
           "text": "散毒",
           "pinyin": "sàn dú",
-          "hanviet": "Tản Độc"
+          "hanviet": "Tản Độc",
+          "meaning_vi": "Tản Độc"
         },
         {
           "text": "和",
@@ -2371,7 +2418,8 @@
         {
           "text": "新疫源",
           "pinyin": "xīn yì yuán",
-          "hanviet": "Tân Dịch Nguyên"
+          "hanviet": "Tân Dịch Nguyên",
+          "meaning_vi": "Tân Dịch Nguyên"
         },
         {
           "text": "的",
@@ -2542,7 +2590,8 @@
         {
           "text": "我国",
           "pinyin": "wǒ guó",
-          "hanviet": "Ngã Quốc"
+          "hanviet": "Ngã Quốc",
+          "meaning_vi": "đất nước chúng tôi"
         },
         {
           "text": "东",
@@ -2555,12 +2604,14 @@
         {
           "text": "晋葛洪",
           "pinyin": "jìn gé hóng",
-          "hanviet": "Tấn Cát Hồng"
+          "hanviet": "Tấn Cát Hồng",
+          "meaning_vi": "Tấn Cát Hồng"
         },
         {
           "text": "所著",
           "pinyin": "suǒ zhù",
-          "hanviet": "Sở Trước"
+          "hanviet": "Sở Trước",
+          "meaning_vi": "Được viết bởi"
         },
         {
           "text": "《"
@@ -2568,7 +2619,8 @@
         {
           "text": "肘后方",
           "pinyin": "zhǒu hòu fāng",
-          "hanviet": "Chỏ Hậu Phương"
+          "hanviet": "Chỏ Hậu Phương",
+          "meaning_vi": "Chỏ Hậu Phương"
         },
         {
           "text": "》"
@@ -2619,7 +2671,8 @@
         {
           "text": "狂犬病",
           "pinyin": "kuáng quǎn bìng",
-          "hanviet": "Cuồng Khuyển Bệnh"
+          "hanviet": "Cuồng Khuyển Bệnh",
+          "meaning_vi": "bệnh dại"
         },
         {
           "text": "的",
@@ -2654,7 +2707,8 @@
         {
           "text": "治卒",
           "pinyin": "zhì zú",
-          "hanviet": "Trị Thốt"
+          "hanviet": "Trị Thốt",
+          "meaning_vi": "Trị Thốt"
         },
         {
           "text": "有",
@@ -2667,7 +2721,8 @@
         {
           "text": "猘",
           "pinyin": "zhì",
-          "hanviet": "Chế"
+          "hanviet": "Chế",
+          "meaning_vi": "Chế"
         },
         {
           "text": "犬",
@@ -2680,7 +2735,8 @@
         {
           "text": "凡",
           "pinyin": "fán",
-          "hanviet": "Phàm"
+          "hanviet": "Phàm",
+          "meaning_vi": "quạt"
         },
         {
           "text": "所",
@@ -2701,7 +2757,8 @@
         {
           "text": "毒方",
           "pinyin": "dú fāng",
-          "hanviet": "Độc Phương"
+          "hanviet": "Độc Phương",
+          "meaning_vi": "Độc Phương"
         },
         {
           "text": "”"
@@ -2709,7 +2766,8 @@
         {
           "text": "有云",
           "pinyin": "yǒu yún",
-          "hanviet": "Hữu Vân"
+          "hanviet": "Hữu Vân",
+          "meaning_vi": "Hữu Vân"
         },
         {
           "text": "："
@@ -2763,7 +2821,8 @@
         {
           "text": "取脑傅",
           "pinyin": "qǔ nǎo fù",
-          "hanviet": "Thủ Não Phó"
+          "hanviet": "Thủ Não Phó",
+          "meaning_vi": "Thủ Não Phó"
         },
         {
           "text": "之",
@@ -2819,12 +2878,14 @@
         {
           "text": "杀掉",
           "pinyin": "shā diào",
-          "hanviet": "Sát Điệu"
+          "hanviet": "Sát Điệu",
+          "meaning_vi": "Sát Điệu"
         },
         {
           "text": "咬人",
           "pinyin": "yǎo rén",
-          "hanviet": "Giảo Nhân"
+          "hanviet": "Giảo Nhân",
+          "meaning_vi": "Giảo Nhân"
         },
         {
           "text": "的",
@@ -2837,7 +2898,8 @@
         {
           "text": "狂犬",
           "pinyin": "kuáng quǎn",
-          "hanviet": "Cuồng Khuyển"
+          "hanviet": "Cuồng Khuyển",
+          "meaning_vi": "Cuồng Khuyển"
         },
         {
           "text": "，"
@@ -2861,12 +2923,14 @@
         {
           "text": "脑浆",
           "pinyin": "nǎo jiāng",
-          "hanviet": "Não Tương"
+          "hanviet": "Não Tương",
+          "meaning_vi": "Não Tương"
         },
         {
           "text": "敷于",
           "pinyin": "fū yú",
-          "hanviet": "Phu Vu"
+          "hanviet": "Phu Vu",
+          "meaning_vi": "Phu Vu"
         },
         {
           "text": "被",
@@ -2917,7 +2981,8 @@
         {
           "text": "以毒攻毒",
           "pinyin": "yǐ dú gōng dú",
-          "hanviet": "Dĩ Độc Công Độc"
+          "hanviet": "Dĩ Độc Công Độc",
+          "meaning_vi": "Chống chất độc bằng chất độc"
         },
         {
           "text": "”"
@@ -2962,7 +3027,8 @@
         {
           "text": "天花",
           "pinyin": "tiān huā",
-          "hanviet": "Thiên Hoa"
+          "hanviet": "Thiên Hoa",
+          "meaning_vi": "bệnh đậu mùa"
         },
         {
           "text": "因",
@@ -2978,7 +3044,8 @@
         {
           "text": "种痘",
           "pinyin": "zhòng dòu",
-          "hanviet": "Chủng Đậu"
+          "hanviet": "Chủng Đậu",
+          "meaning_vi": "tiêm chủng"
         },
         {
           "text": "”"
@@ -3010,7 +3077,8 @@
         {
           "text": "这种",
           "pinyin": "zhè zhǒng",
-          "hanviet": "Giá Chủng"
+          "hanviet": "Giá Chủng",
+          "meaning_vi": "Loại này"
         },
         {
           "text": "思维",
@@ -3106,17 +3174,20 @@
         {
           "text": "痘",
           "pinyin": "dòu",
-          "hanviet": "Đậu"
+          "hanviet": "Đậu",
+          "meaning_vi": "Mụn trứng cá"
         },
         {
           "text": "接种",
           "pinyin": "jiē zhǒng",
-          "hanviet": "Tiếp Chủng"
+          "hanviet": "Tiếp Chủng",
+          "meaning_vi": "tiêm chủng"
         },
         {
           "text": "术来",
           "pinyin": "shù lái",
-          "hanviet": "Thuật Lai"
+          "hanviet": "Thuật Lai",
+          "meaning_vi": "Thuật Lai"
         },
         {
           "text": "对抗",
@@ -3129,7 +3200,8 @@
         {
           "text": "天花",
           "pinyin": "tiān huā",
-          "hanviet": "Thiên Hoa"
+          "hanviet": "Thiên Hoa",
+          "meaning_vi": "bệnh đậu mùa"
         },
         {
           "text": "病毒",
@@ -3150,7 +3222,8 @@
         {
           "text": "侵袭",
           "pinyin": "qīn xí",
-          "hanviet": "Xâm Tập"
+          "hanviet": "Xâm Tập",
+          "meaning_vi": "xâm chiếm"
         },
         {
           "text": "。"
@@ -3168,7 +3241,8 @@
         {
           "text": "据传",
           "pinyin": "jù chuán",
-          "hanviet": "Cư Truyền"
+          "hanviet": "Cư Truyền",
+          "meaning_vi": "Cư Truyền"
         },
         {
           "text": "，"
@@ -3190,7 +3264,7 @@
           "hanviet": "Trung Quốc",
           "hsk": 1,
           "word_id": "hsk1_610",
-          "meaning_vi": "trung Quốc"
+          "meaning_vi": "Trung Quốc"
         },
         {
           "text": "就",
@@ -3211,17 +3285,20 @@
         {
           "text": "接种",
           "pinyin": "jiē zhǒng",
-          "hanviet": "Tiếp Chủng"
+          "hanviet": "Tiếp Chủng",
+          "meaning_vi": "tiêm chủng"
         },
         {
           "text": "人痘",
           "pinyin": "rén dòu",
-          "hanviet": "Nhân Đậu"
+          "hanviet": "Nhân Đậu",
+          "meaning_vi": "giống đậu nành"
         },
         {
           "text": "获得成功",
           "pinyin": "huò dé chéng gōng",
-          "hanviet": "Hoạch Đắc Thành Công"
+          "hanviet": "Hoạch Đắc Thành Công",
+          "meaning_vi": "Hoạch Đắc Thành Công"
         },
         {
           "text": "的",
@@ -3296,7 +3373,8 @@
         {
           "text": "俞茂鲲",
           "pinyin": "yú mào kūn",
-          "hanviet": "Du Mậu Côn"
+          "hanviet": "Du Mậu Côn",
+          "meaning_vi": "Du Mậu Côn"
         },
         {
           "text": "在",
@@ -3312,22 +3390,26 @@
         {
           "text": "痘",
           "pinyin": "dòu",
-          "hanviet": "Đậu"
+          "hanviet": "Đậu",
+          "meaning_vi": "Mụn trứng cá"
         },
         {
           "text": "科金镜",
           "pinyin": "kē jīn jìng",
-          "hanviet": "Khoa Kim Kính"
+          "hanviet": "Khoa Kim Kính",
+          "meaning_vi": "Khoa Kim Kính"
         },
         {
           "text": "赋",
           "pinyin": "fù",
-          "hanviet": "Phú"
+          "hanviet": "Phú",
+          "meaning_vi": "Phú"
         },
         {
           "text": "集解",
           "pinyin": "jí jiě",
-          "hanviet": "Tập Giải"
+          "hanviet": "Tập Giải",
+          "meaning_vi": "Tập Giải"
         },
         {
           "text": "》"
@@ -3343,7 +3425,8 @@
         {
           "text": "写道",
           "pinyin": "xiě dào",
-          "hanviet": "Tả Đạo"
+          "hanviet": "Tả Đạo",
+          "meaning_vi": "đã viết"
         },
         {
           "text": "："
@@ -3362,12 +3445,14 @@
         {
           "text": "种痘",
           "pinyin": "zhòng dòu",
-          "hanviet": "Chủng Đậu"
+          "hanviet": "Chủng Đậu",
+          "meaning_vi": "tiêm chủng"
         },
         {
           "text": "法起",
           "pinyin": "fǎ qǐ",
-          "hanviet": "Pháp Khởi"
+          "hanviet": "Pháp Khởi",
+          "meaning_vi": "Pháp Khởi"
         },
         {
           "text": "于",
@@ -3380,17 +3465,20 @@
         {
           "text": "明朝",
           "pinyin": "míng cháo",
-          "hanviet": "Minh Triều"
+          "hanviet": "Minh Triều",
+          "meaning_vi": "nhà Minh"
         },
         {
           "text": "隆庆",
           "pinyin": "lóng qìng",
-          "hanviet": "Long Khánh"
+          "hanviet": "Long Khánh",
+          "meaning_vi": "Long Khánh"
         },
         {
           "text": "年间",
           "pinyin": "nián jiān",
-          "hanviet": "Niên Gian"
+          "hanviet": "Niên Gian",
+          "meaning_vi": "năm"
         },
         {
           "text": "（"
@@ -3421,12 +3509,14 @@
         {
           "text": "宁国府",
           "pinyin": "níng guó fǔ",
-          "hanviet": "Trữ Quốc Phủ"
+          "hanviet": "Trữ Quốc Phủ",
+          "meaning_vi": "Trữ Quốc Phủ"
         },
         {
           "text": "太平县",
           "pinyin": "tài píng xiàn",
-          "hanviet": "Thái Bình Huyện"
+          "hanviet": "Thái Bình Huyện",
+          "meaning_vi": "Thái Bình Huyện"
         },
         {
           "text": "，"
@@ -3442,7 +3532,8 @@
         {
           "text": "失考",
           "pinyin": "shī kǎo",
-          "hanviet": "Thất Khảo"
+          "hanviet": "Thất Khảo",
+          "meaning_vi": "Thất Khảo"
         },
         {
           "text": "，"
@@ -3458,17 +3549,20 @@
         {
           "text": "之异",
           "pinyin": "zhī yì",
-          "hanviet": "Chi Dị"
+          "hanviet": "Chi Dị",
+          "meaning_vi": "sự khác biệt"
         },
         {
           "text": "人丹家",
           "pinyin": "rén dān jiā",
-          "hanviet": "Nhân Đan Gia"
+          "hanviet": "Nhân Đan Gia",
+          "meaning_vi": "Đan Gia"
         },
         {
           "text": "之传",
           "pinyin": "zhī chuán",
-          "hanviet": "Chi Truyền"
+          "hanviet": "Chi Truyền",
+          "meaning_vi": "truyền thuyết"
         },
         {
           "text": "，"
@@ -3521,7 +3615,8 @@
         {
           "text": "种花",
           "pinyin": "zhòng huā",
-          "hanviet": "Chủng Hoa"
+          "hanviet": "Chủng Hoa",
+          "meaning_vi": "Chủng Hoa"
         },
         {
           "text": "者",
@@ -3537,7 +3632,8 @@
         {
           "text": "宁国",
           "pinyin": "níng guó",
-          "hanviet": "Trữ Quốc"
+          "hanviet": "Trữ Quốc",
+          "meaning_vi": "Trữ Quốc"
         },
         {
           "text": "人",
@@ -3550,7 +3646,8 @@
         {
           "text": "居多",
           "pinyin": "jū duō",
-          "hanviet": "Cư Đa"
+          "hanviet": "Cư Đa",
+          "meaning_vi": "Cư Đa"
         },
         {
           "text": "，"
@@ -3566,12 +3663,14 @@
         {
           "text": "溧阳",
           "pinyin": "lì yáng",
-          "hanviet": "Lật Dương"
+          "hanviet": "Lật Dương",
+          "meaning_vi": "Lật Dương"
         },
         {
           "text": "人窃",
           "pinyin": "rén qiè",
-          "hanviet": "Nhân Thiết"
+          "hanviet": "Nhân Thiết",
+          "meaning_vi": "Trộm cắp"
         },
         {
           "text": "而",
@@ -3592,7 +3691,8 @@
         {
           "text": "之者",
           "pinyin": "zhī zhě",
-          "hanviet": "Chi Giả"
+          "hanviet": "Chi Giả",
+          "meaning_vi": "của"
         },
         {
           "text": "亦",
@@ -3605,7 +3705,8 @@
         {
           "text": "不少",
           "pinyin": "bù shǎo",
-          "hanviet": "Bất Thiểu"
+          "hanviet": "Bất Thiểu",
+          "meaning_vi": "Khá nhiều"
         },
         {
           "text": "。"
@@ -3631,12 +3732,14 @@
         {
           "text": "异传",
           "pinyin": "yì chuán",
-          "hanviet": "Dị Truyền"
+          "hanviet": "Dị Truyền",
+          "meaning_vi": "Dị Truyền"
         },
         {
           "text": "之家",
           "pinyin": "zhī jiā",
-          "hanviet": "Chi Gia"
+          "hanviet": "Chi Gia",
+          "meaning_vi": "nhà"
         },
         {
           "text": "，"
@@ -3652,12 +3755,14 @@
         {
           "text": "尚留",
           "pinyin": "shàng liú",
-          "hanviet": "Thượng Lưu"
+          "hanviet": "Thượng Lưu",
+          "meaning_vi": "Thượng Lưu"
         },
         {
           "text": "苗种",
           "pinyin": "miáo zhǒng",
-          "hanviet": "Miêu Chủng"
+          "hanviet": "Miêu Chủng",
+          "meaning_vi": "Miêu Chủng"
         },
         {
           "text": "，"
@@ -3681,7 +3786,8 @@
         {
           "text": "金",
           "pinyin": "jīn",
-          "hanviet": "Kim"
+          "hanviet": "Kim",
+          "meaning_vi": "vàng"
         },
         {
           "text": "，"
@@ -3689,12 +3795,14 @@
         {
           "text": "方得",
           "pinyin": "fāng dé",
-          "hanviet": "Phương Đắc"
+          "hanviet": "Phương Đắc",
+          "meaning_vi": "Phương Đắc"
         },
         {
           "text": "一丹苗",
           "pinyin": "yī dān miáo",
-          "hanviet": "Nhất Đan Miêu"
+          "hanviet": "Nhất Đan Miêu",
+          "meaning_vi": "Dịch Đan Miêu"
         },
         {
           "text": "，"
@@ -3702,22 +3810,26 @@
         {
           "text": "买苗后",
           "pinyin": "mǎi miáo hòu",
-          "hanviet": "Mãi Miêu Hậu"
+          "hanviet": "Mãi Miêu Hậu",
+          "meaning_vi": "Sau khi mua cây giống"
         },
         {
           "text": "一家",
           "pinyin": "yī jiā",
-          "hanviet": "Nhất Gia"
+          "hanviet": "Nhất Gia",
+          "meaning_vi": "gia đình"
         },
         {
           "text": "因以",
           "pinyin": "yīn yǐ",
-          "hanviet": "Nhân Dĩ"
+          "hanviet": "Nhân Dĩ",
+          "meaning_vi": "Nhân Dĩ"
         },
         {
           "text": "获利",
           "pinyin": "huò lì",
-          "hanviet": "Hoạch Lợi"
+          "hanviet": "Hoạch Lợi",
+          "meaning_vi": "Hoạch Lợi"
         },
         {
           "text": "。"
@@ -3746,12 +3858,14 @@
         {
           "text": "人痘",
           "pinyin": "rén dòu",
-          "hanviet": "Nhân Đậu"
+          "hanviet": "Nhân Đậu",
+          "meaning_vi": "giống đậu nành"
         },
         {
           "text": "接种",
           "pinyin": "jiē zhǒng",
-          "hanviet": "Tiếp Chủng"
+          "hanviet": "Tiếp Chủng",
+          "meaning_vi": "tiêm chủng"
         },
         {
           "text": "，"
@@ -3799,7 +3913,8 @@
         {
           "text": "身上",
           "pinyin": "shēn shàng",
-          "hanviet": "Thân Thướng"
+          "hanviet": "Thân Thướng",
+          "meaning_vi": "cơ thể"
         },
         {
           "text": "自然",
@@ -3828,7 +3943,8 @@
         {
           "text": "天花",
           "pinyin": "tiān huā",
-          "hanviet": "Thiên Hoa"
+          "hanviet": "Thiên Hoa",
+          "meaning_vi": "bệnh đậu mùa"
         },
         {
           "text": "的",
@@ -3841,7 +3957,8 @@
         {
           "text": "痂",
           "pinyin": "jiā",
-          "hanviet": "Già"
+          "hanviet": "Già",
+          "meaning_vi": "Già"
         },
         {
           "text": "，"
@@ -3849,7 +3966,8 @@
         {
           "text": "人们",
           "pinyin": "rén men",
-          "hanviet": "Nhân Môn"
+          "hanviet": "Nhân Môn",
+          "meaning_vi": "mọi người"
         },
         {
           "text": "把",
@@ -3881,7 +3999,8 @@
         {
           "text": "时苗",
           "pinyin": "shí miáo",
-          "hanviet": "Thời Miêu"
+          "hanviet": "Thời Miêu",
+          "meaning_vi": "Thời Miêu"
         },
         {
           "text": "”"
@@ -3913,7 +4032,8 @@
         {
           "text": "时苗",
           "pinyin": "shí miáo",
-          "hanviet": "Thời Miêu"
+          "hanviet": "Thời Miêu",
+          "meaning_vi": "Thời Miêu"
         },
         {
           "text": "”"
@@ -3929,12 +4049,14 @@
         {
           "text": "毒性",
           "pinyin": "dú xìng",
-          "hanviet": "Độc Tính"
+          "hanviet": "Độc Tính",
+          "meaning_vi": "Độc Tính"
         },
         {
           "text": "很大",
           "pinyin": "hěn dà",
-          "hanviet": "Ngận Đại"
+          "hanviet": "Ngận Đại",
+          "meaning_vi": "rất lớn"
         },
         {
           "text": "，"
@@ -3942,12 +4064,14 @@
         {
           "text": "不能",
           "pinyin": "bù néng",
-          "hanviet": "Bất Năng"
+          "hanviet": "Bất Năng",
+          "meaning_vi": "không thể"
         },
         {
           "text": "百分之百",
           "pinyin": "bǎi fēn zhī bǎi",
-          "hanviet": "Bách Phân Chi Bách"
+          "hanviet": "Bách Phân Chi Bách",
+          "meaning_vi": "Bách Phân Chi Bách"
         },
         {
           "text": "保证",
@@ -3968,7 +4092,8 @@
         {
           "text": "接种",
           "pinyin": "jiē zhǒng",
-          "hanviet": "Tiếp Chủng"
+          "hanviet": "Tiếp Chủng",
+          "meaning_vi": "tiêm chủng"
         },
         {
           "text": "者",
@@ -3989,7 +4114,8 @@
         {
           "text": "生命安全",
           "pinyin": "shēng mìng ān quán",
-          "hanviet": "Sinh Mệnh An Toàn"
+          "hanviet": "Sinh Mệnh An Toàn",
+          "meaning_vi": "Sinh Mệnh An Toàn"
         },
         {
           "text": "，"
@@ -4000,12 +4126,14 @@
         {
           "text": "苗顺者",
           "pinyin": "miáo shùn zhě",
-          "hanviet": "Miêu Thuận Giả"
+          "hanviet": "Miêu Thuận Giả",
+          "meaning_vi": "Miêu Thuận Giả"
         },
         {
           "text": "十无一死",
           "pinyin": "shí wú yī sǐ",
-          "hanviet": "Thập Vô Nhất Tử"
+          "hanviet": "Thập Vô Nhất Tử",
+          "meaning_vi": "Thập Vô Nhất Tử"
         },
         {
           "text": "，"
@@ -4013,17 +4141,20 @@
         {
           "text": "苗凶者",
           "pinyin": "miáo xiōng zhě",
-          "hanviet": "Miêu Hung Giả"
+          "hanviet": "Miêu Hung Giả",
+          "meaning_vi": "Miêu Hung Giả"
         },
         {
           "text": "十只",
           "pinyin": "shí zhǐ",
-          "hanviet": "Thập Chỉ"
+          "hanviet": "Thập Chỉ",
+          "meaning_vi": "Thập Chỉ"
         },
         {
           "text": "八存",
           "pinyin": "bā cún",
-          "hanviet": "Bát Tồn"
+          "hanviet": "Bát Tồn",
+          "meaning_vi": "Bát Tồn"
         },
         {
           "text": "”"
@@ -4098,7 +4229,8 @@
         {
           "text": "熟苗",
           "pinyin": "shú miáo",
-          "hanviet": "Thục Miêu"
+          "hanviet": "Thục Miêu",
+          "meaning_vi": "Thục Miêu"
         },
         {
           "text": "”"
@@ -4106,7 +4238,8 @@
         {
           "text": "接种",
           "pinyin": "jiē zhǒng",
-          "hanviet": "Tiếp Chủng"
+          "hanviet": "Tiếp Chủng",
+          "meaning_vi": "tiêm chủng"
         },
         {
           "text": "之",
@@ -4151,7 +4284,8 @@
         {
           "text": "熟苗",
           "pinyin": "shú miáo",
-          "hanviet": "Thục Miêu"
+          "hanviet": "Thục Miêu",
+          "meaning_vi": "Thục Miêu"
         },
         {
           "text": "”"
@@ -4191,7 +4325,8 @@
         {
           "text": "接种",
           "pinyin": "jiē zhǒng",
-          "hanviet": "Tiếp Chủng"
+          "hanviet": "Tiếp Chủng",
+          "meaning_vi": "tiêm chủng"
         },
         {
           "text": "发出",
@@ -4220,7 +4355,8 @@
         {
           "text": "痘",
           "pinyin": "dòu",
-          "hanviet": "Đậu"
+          "hanviet": "Đậu",
+          "meaning_vi": "Mụn trứng cá"
         },
         {
           "text": "作为",
@@ -4233,7 +4369,8 @@
         {
           "text": "种苗",
           "pinyin": "zhǒng miáo",
-          "hanviet": "Chủng Miêu"
+          "hanviet": "Chủng Miêu",
+          "meaning_vi": "Chủng Miêu"
         },
         {
           "text": "，"
@@ -4252,7 +4389,8 @@
         {
           "text": "养苗",
           "pinyin": "yǎng miáo",
-          "hanviet": "Dưỡng Miêu"
+          "hanviet": "Dưỡng Miêu",
+          "meaning_vi": "Dưỡng Miêu"
         },
         {
           "text": "”"
@@ -4263,7 +4401,8 @@
         {
           "text": "选炼",
           "pinyin": "xuǎn liàn",
-          "hanviet": "Tuyển Luyện"
+          "hanviet": "Tuyển Luyện",
+          "meaning_vi": "Tuyển Luyện"
         },
         {
           "text": "”"
@@ -4290,7 +4429,8 @@
         {
           "text": "七代",
           "pinyin": "qī dài",
-          "hanviet": "Thất Đại"
+          "hanviet": "Thất Đại",
+          "meaning_vi": "Bảy thế hệ"
         },
         {
           "text": "过后",
@@ -4314,7 +4454,8 @@
         {
           "text": "种苗",
           "pinyin": "zhǒng miáo",
-          "hanviet": "Chủng Miêu"
+          "hanviet": "Chủng Miêu",
+          "meaning_vi": "Chủng Miêu"
         },
         {
           "text": "就",
@@ -4335,7 +4476,8 @@
         {
           "text": "精纯",
           "pinyin": "jīng chún",
-          "hanviet": "Tinh Thuần"
+          "hanviet": "Tinh Thuần",
+          "meaning_vi": "Tinh Thuần"
         },
         {
           "text": "，"
@@ -4343,12 +4485,14 @@
         {
           "text": "火毒",
           "pinyin": "huǒ dú",
-          "hanviet": "Hoả Độc"
+          "hanviet": "Hoả Độc",
+          "meaning_vi": "Hoả Độc"
         },
         {
           "text": "就汰",
           "pinyin": "jiù tài",
-          "hanviet": "Tựu Thải"
+          "hanviet": "Tựu Thải",
+          "meaning_vi": "Tựu Thải"
         },
         {
           "text": "尽",
@@ -4388,12 +4532,14 @@
         {
           "text": "七代",
           "pinyin": "qī dài",
-          "hanviet": "Thất Đại"
+          "hanviet": "Thất Đại",
+          "meaning_vi": "Bảy thế hệ"
         },
         {
           "text": "接种",
           "pinyin": "jiē zhǒng",
-          "hanviet": "Tiếp Chủng"
+          "hanviet": "Tiếp Chủng",
+          "meaning_vi": "tiêm chủng"
         },
         {
           "text": "的",
@@ -4406,7 +4552,8 @@
         {
           "text": "种苗",
           "pinyin": "zhǒng miáo",
-          "hanviet": "Chủng Miêu"
+          "hanviet": "Chủng Miêu",
+          "meaning_vi": "Chủng Miêu"
         },
         {
           "text": "来",
@@ -4435,7 +4582,8 @@
         {
           "text": "人种",
           "pinyin": "rén zhǒng",
-          "hanviet": "Nhân Chủng"
+          "hanviet": "Nhân Chủng",
+          "meaning_vi": "cuộc đua"
         },
         {
           "text": "就",
@@ -4488,12 +4636,14 @@
         {
           "text": "种痘",
           "pinyin": "zhòng dòu",
-          "hanviet": "Chủng Đậu"
+          "hanviet": "Chủng Đậu",
+          "meaning_vi": "tiêm chủng"
         },
         {
           "text": "新书",
           "pinyin": "xīn shū",
-          "hanviet": "Tân Thư"
+          "hanviet": "Tân Thư",
+          "meaning_vi": "Tân Thư"
         },
         {
           "text": "》"
@@ -4515,7 +4665,8 @@
         {
           "text": "种痘",
           "pinyin": "zhòng dòu",
-          "hanviet": "Chủng Đậu"
+          "hanviet": "Chủng Đậu",
+          "meaning_vi": "tiêm chủng"
         },
         {
           "text": "者",
@@ -4528,7 +4679,8 @@
         {
           "text": "八九千",
           "pinyin": "bā jiǔ qiān",
-          "hanviet": "Bát Cửu Thiên"
+          "hanviet": "Bát Cửu Thiên",
+          "meaning_vi": "Bát Cửu Thiên"
         },
         {
           "text": "人",
@@ -4544,17 +4696,20 @@
         {
           "text": "其莫救者",
           "pinyin": "qí mò jiù zhě",
-          "hanviet": "Kỳ Mạc Cứu Giả"
+          "hanviet": "Kỳ Mạc Cứu Giả",
+          "meaning_vi": "Kỳ Mạc Cứu Giả"
         },
         {
           "text": "二三十",
           "pinyin": "èr sān shí",
-          "hanviet": "Nhị Tam Thập"
+          "hanviet": "Nhị Tam Thập",
+          "meaning_vi": "Hai mươi hay ba mươi"
         },
         {
           "text": "耳",
           "pinyin": "ěr",
-          "hanviet": "Nhĩ"
+          "hanviet": "Nhĩ",
+          "meaning_vi": "tai"
         },
         {
           "text": "。"
@@ -4575,17 +4730,20 @@
         {
           "text": "法国",
           "pinyin": "fǎ guó",
-          "hanviet": "Pháp Quốc"
+          "hanviet": "Pháp Quốc",
+          "meaning_vi": "Pháp"
         },
         {
           "text": "哲学家",
           "pinyin": "zhé xué jiā",
-          "hanviet": "Triết Học Gia"
+          "hanviet": "Triết Học Gia",
+          "meaning_vi": "triết gia"
         },
         {
           "text": "伏尔泰",
           "pinyin": "fú ěr tài",
-          "hanviet": "Phục Nhĩ Thái"
+          "hanviet": "Phục Nhĩ Thái",
+          "meaning_vi": "Voltaire"
         },
         {
           "text": "这样",
@@ -4598,17 +4756,20 @@
         {
           "text": "高度赞扬",
           "pinyin": "gāo dù zàn yáng",
-          "hanviet": "Cao Độ Tán Dương"
+          "hanviet": "Cao Độ Tán Dương",
+          "meaning_vi": "Cao Độ Tán Dương"
         },
         {
           "text": "人痘",
           "pinyin": "rén dòu",
-          "hanviet": "Nhân Đậu"
+          "hanviet": "Nhân Đậu",
+          "meaning_vi": "giống đậu nành"
         },
         {
           "text": "接种",
           "pinyin": "jiē zhǒng",
-          "hanviet": "Tiếp Chủng"
+          "hanviet": "Tiếp Chủng",
+          "meaning_vi": "tiêm chủng"
         },
         {
           "text": "："
@@ -4638,7 +4799,8 @@
         {
           "text": "年来",
           "pinyin": "nián lái",
-          "hanviet": "Niên Lai"
+          "hanviet": "Niên Lai",
+          "meaning_vi": "Niên Lai"
         },
         {
           "text": "，"
@@ -4649,7 +4811,7 @@
           "hanviet": "Trung Quốc",
           "hsk": 1,
           "word_id": "hsk1_610",
-          "meaning_vi": "trung Quốc"
+          "meaning_vi": "Trung Quốc"
         },
         {
           "text": "人",
@@ -4745,7 +4907,8 @@
         {
           "text": "全世界",
           "pinyin": "quán shì jiè",
-          "hanviet": "Toàn Thế Giới"
+          "hanviet": "Toàn Thế Giới",
+          "meaning_vi": "trên toàn thế giới"
         },
         {
           "text": "最",
@@ -4777,7 +4940,8 @@
         {
           "text": "讲礼貌",
           "pinyin": "jiǎng lǐ mào",
-          "hanviet": "Giảng Lễ Mạo"
+          "hanviet": "Giảng Lễ Mạo",
+          "meaning_vi": "Giảng Lễ Mạo"
         },
         {
           "text": "的",
@@ -4790,7 +4954,8 @@
         {
           "text": "一个",
           "pinyin": "yí gè",
-          "hanviet": "Nhất Cá"
+          "hanviet": "Nhất Cá",
+          "meaning_vi": "một"
         },
         {
           "text": "民族",
@@ -4867,17 +5032,20 @@
         {
           "text": "康熙帝",
           "pinyin": "kāng xī dì",
-          "hanviet": "Khang Hy Đế"
+          "hanviet": "Khang Hy Đế",
+          "meaning_vi": "Khang Hy Đế"
         },
         {
           "text": "曾下",
           "pinyin": "céng xià",
-          "hanviet": "Tằng Hạ"
+          "hanviet": "Tằng Hạ",
+          "meaning_vi": "Tằng Hạ"
         },
         {
           "text": "诏",
           "pinyin": "zhào",
-          "hanviet": "Chiếu"
+          "hanviet": "Chiếu",
+          "meaning_vi": "sắc lệnh"
         },
         {
           "text": "征集",
@@ -4890,12 +5058,14 @@
         {
           "text": "种痘",
           "pinyin": "zhòng dòu",
-          "hanviet": "Chủng Đậu"
+          "hanviet": "Chủng Đậu",
+          "meaning_vi": "tiêm chủng"
         },
         {
           "text": "医师",
           "pinyin": "yī shī",
-          "hanviet": "Y Sư"
+          "hanviet": "Y Sư",
+          "meaning_vi": "Y Sư"
         },
         {
           "text": "，"
@@ -4903,12 +5073,14 @@
         {
           "text": "并加",
           "pinyin": "bìng jiā",
-          "hanviet": "Tinh Gia"
+          "hanviet": "Tinh Gia",
+          "meaning_vi": "Tinh Gia"
         },
         {
           "text": "考选",
           "pinyin": "kǎo xuǎn",
-          "hanviet": "Khảo Tuyển"
+          "hanviet": "Khảo Tuyển",
+          "meaning_vi": "Khảo Tuyển"
         },
         {
           "text": "18"
@@ -4943,7 +5115,8 @@
         {
           "text": "天花",
           "pinyin": "tiān huā",
-          "hanviet": "Thiên Hoa"
+          "hanviet": "Thiên Hoa",
+          "meaning_vi": "bệnh đậu mùa"
         },
         {
           "text": "的",
@@ -4964,12 +5137,14 @@
         {
           "text": "痘",
           "pinyin": "dòu",
-          "hanviet": "Đậu"
+          "hanviet": "Đậu",
+          "meaning_vi": "Mụn trứng cá"
         },
         {
           "text": "接种",
           "pinyin": "jiē zhǒng",
-          "hanviet": "Tiếp Chủng"
+          "hanviet": "Tiếp Chủng",
+          "meaning_vi": "tiêm chủng"
         },
         {
           "text": "法",
@@ -5019,7 +5194,8 @@
         {
           "text": "英国",
           "pinyin": "yīng guó",
-          "hanviet": "Anh Quốc"
+          "hanviet": "Anh Quốc",
+          "meaning_vi": "Vương quốc Anh"
         },
         {
           "text": "医生",
@@ -5032,7 +5208,8 @@
         {
           "text": "爱德华",
           "pinyin": "ài dé huá",
-          "hanviet": "Ái Đức Hoa"
+          "hanviet": "Ái Đức Hoa",
+          "meaning_vi": "Edward"
         },
         {
           "text": "·"
@@ -5040,7 +5217,8 @@
         {
           "text": "詹纳",
           "pinyin": "zhān nà",
-          "hanviet": "Chiêm Nạp"
+          "hanviet": "Chiêm Nạp",
+          "meaning_vi": "Chiêm Nạp"
         },
         {
           "text": "注意",
@@ -5088,7 +5266,8 @@
         {
           "text": "牛患",
           "pinyin": "niú huàn",
-          "hanviet": "Ngưu Hoạn"
+          "hanviet": "Ngưu Hoạn",
+          "meaning_vi": "Ngưu Hoạn"
         },
         {
           "text": "了",
@@ -5109,7 +5288,8 @@
         {
           "text": "天花",
           "pinyin": "tiān huā",
-          "hanviet": "Thiên Hoa"
+          "hanviet": "Thiên Hoa",
+          "meaning_vi": "bệnh đậu mùa"
         },
         {
           "text": "相似",
@@ -5149,12 +5329,14 @@
         {
           "text": "挤奶",
           "pinyin": "jǐ nǎi",
-          "hanviet": "Tễ Nãi"
+          "hanviet": "Tễ Nãi",
+          "meaning_vi": "Tễ Nãi"
         },
         {
           "text": "女工",
           "pinyin": "nǚ gōng",
-          "hanviet": "Nữ Công"
+          "hanviet": "Nữ Công",
+          "meaning_vi": "Nữ Công"
         },
         {
           "text": "在",
@@ -5191,7 +5373,8 @@
         {
           "text": "身上",
           "pinyin": "shēn shàng",
-          "hanviet": "Thân Thướng"
+          "hanviet": "Thân Thướng",
+          "meaning_vi": "cơ thể"
         },
         {
           "text": "的",
@@ -5204,7 +5387,8 @@
         {
           "text": "疱疹",
           "pinyin": "pào zhěn",
-          "hanviet": "Pháo Chẩn"
+          "hanviet": "Pháo Chẩn",
+          "meaning_vi": "mụn rộp"
         },
         {
           "text": "时",
@@ -5217,7 +5401,8 @@
         {
           "text": "受到感染",
           "pinyin": "shòu dào gǎn rǎn",
-          "hanviet": "Thọ Đáo Cảm Nhiễm"
+          "hanviet": "Thọ Đáo Cảm Nhiễm",
+          "meaning_vi": "Thọ Đáo Cảm Nhiễm"
         },
         {
           "text": "，"
@@ -5225,7 +5410,8 @@
         {
           "text": "身上",
           "pinyin": "shēn shàng",
-          "hanviet": "Thân Thướng"
+          "hanviet": "Thân Thướng",
+          "meaning_vi": "cơ thể"
         },
         {
           "text": "也",
@@ -5238,12 +5424,14 @@
         {
           "text": "会长",
           "pinyin": "huì zhǎng",
-          "hanviet": "Hội Trưởng"
+          "hanviet": "Hội Trưởng",
+          "meaning_vi": "Tổng thống"
         },
         {
           "text": "出小",
           "pinyin": "chū xiǎo",
-          "hanviet": "Xuất Tiểu"
+          "hanviet": "Xuất Tiểu",
+          "meaning_vi": "Xuất Tiểu"
         },
         {
           "text": "一些",
@@ -5264,7 +5452,8 @@
         {
           "text": "疱疹",
           "pinyin": "pào zhěn",
-          "hanviet": "Pháo Chẩn"
+          "hanviet": "Pháo Chẩn",
+          "meaning_vi": "mụn rộp"
         },
         {
           "text": "，"
@@ -5288,7 +5477,8 @@
         {
           "text": "牛痘",
           "pinyin": "niú dòu",
-          "hanviet": "Ngưu Đậu"
+          "hanviet": "Ngưu Đậu",
+          "meaning_vi": "bệnh đậu bò"
         },
         {
           "text": "。"
@@ -5330,7 +5520,8 @@
         {
           "text": "牛痘",
           "pinyin": "niú dòu",
-          "hanviet": "Ngưu Đậu"
+          "hanviet": "Ngưu Đậu",
+          "meaning_vi": "bệnh đậu bò"
         },
         {
           "text": "的",
@@ -5391,7 +5582,8 @@
         {
           "text": "天花",
           "pinyin": "tiān huā",
-          "hanviet": "Thiên Hoa"
+          "hanviet": "Thiên Hoa",
+          "meaning_vi": "bệnh đậu mùa"
         },
         {
           "text": "。"
@@ -5409,7 +5601,8 @@
         {
           "text": "詹纳",
           "pinyin": "zhān nà",
-          "hanviet": "Chiêm Nạp"
+          "hanviet": "Chiêm Nạp",
+          "meaning_vi": "Chiêm Nạp"
         },
         {
           "text": "发现",
@@ -5425,7 +5618,8 @@
         {
           "text": "牛痘",
           "pinyin": "niú dòu",
-          "hanviet": "Ngưu Đậu"
+          "hanviet": "Ngưu Đậu",
+          "meaning_vi": "bệnh đậu bò"
         },
         {
           "text": "的",
@@ -5462,12 +5656,14 @@
         {
           "text": "天花",
           "pinyin": "tiān huā",
-          "hanviet": "Thiên Hoa"
+          "hanviet": "Thiên Hoa",
+          "meaning_vi": "bệnh đậu mùa"
         },
         {
           "text": "轻得",
           "pinyin": "qīng dé",
-          "hanviet": "Khinh Đắc"
+          "hanviet": "Khinh Đắc",
+          "meaning_vi": "Khinh Đắc"
         },
         {
           "text": "多",
@@ -5499,7 +5695,8 @@
         {
           "text": "令牛",
           "pinyin": "lìng niú",
-          "hanviet": "Lệnh Ngưu"
+          "hanviet": "Lệnh Ngưu",
+          "meaning_vi": "linh ngưu"
         },
         {
           "text": "死亡",
@@ -5523,12 +5720,14 @@
         {
           "text": "不会",
           "pinyin": "bú huì",
-          "hanviet": "Bất Hội"
+          "hanviet": "Bất Hội",
+          "meaning_vi": "Không"
         },
         {
           "text": "令人",
           "pinyin": "lìng rén",
-          "hanviet": "Lệnh Nhân"
+          "hanviet": "Lệnh Nhân",
+          "meaning_vi": "ấn tượng"
         },
         {
           "text": "死亡",
@@ -5576,12 +5775,14 @@
         {
           "text": "牛痘",
           "pinyin": "niú dòu",
-          "hanviet": "Ngưu Đậu"
+          "hanviet": "Ngưu Đậu",
+          "meaning_vi": "bệnh đậu bò"
         },
         {
           "text": "痊愈",
           "pinyin": "quán yù",
-          "hanviet": "Thuyên Dũ"
+          "hanviet": "Thuyên Dũ",
+          "meaning_vi": "Thuyên Dũ"
         },
         {
           "text": "后",
@@ -5594,7 +5795,8 @@
         {
           "text": "不会",
           "pinyin": "bú huì",
-          "hanviet": "Bất Hội"
+          "hanviet": "Bất Hội",
+          "meaning_vi": "Không"
         },
         {
           "text": "留下",
@@ -5615,7 +5817,8 @@
         {
           "text": "疤痕",
           "pinyin": "bā hén",
-          "hanviet": "Ba Ngân"
+          "hanviet": "Ba Ngân",
+          "meaning_vi": "Ba Ngân"
         },
         {
           "text": "。"
@@ -5669,7 +5872,8 @@
         {
           "text": "詹纳",
           "pinyin": "zhān nà",
-          "hanviet": "Chiêm Nạp"
+          "hanviet": "Chiêm Nạp",
+          "meaning_vi": "Chiêm Nạp"
         },
         {
           "text": "找",
@@ -5698,7 +5902,8 @@
         {
           "text": "一位",
           "pinyin": "yī wèi",
-          "hanviet": "Nhất Vị"
+          "hanviet": "Nhất Vị",
+          "meaning_vi": "một người"
         },
         {
           "text": "患",
@@ -5711,7 +5916,8 @@
         {
           "text": "牛痘",
           "pinyin": "niú dòu",
-          "hanviet": "Ngưu Đậu"
+          "hanviet": "Ngưu Đậu",
+          "meaning_vi": "bệnh đậu bò"
         },
         {
           "text": "的",
@@ -5724,12 +5930,14 @@
         {
           "text": "挤奶",
           "pinyin": "jǐ nǎi",
-          "hanviet": "Tễ Nãi"
+          "hanviet": "Tễ Nãi",
+          "meaning_vi": "Tễ Nãi"
         },
         {
           "text": "女工",
           "pinyin": "nǚ gōng",
-          "hanviet": "Nữ Công"
+          "hanviet": "Nữ Công",
+          "meaning_vi": "Nữ Công"
         },
         {
           "text": "，"
@@ -5769,7 +5977,8 @@
         {
           "text": "疱疹",
           "pinyin": "pào zhěn",
-          "hanviet": "Pháo Chẩn"
+          "hanviet": "Pháo Chẩn",
+          "meaning_vi": "mụn rộp"
         },
         {
           "text": "中",
@@ -5833,7 +6042,8 @@
         {
           "text": "一位",
           "pinyin": "yī wèi",
-          "hanviet": "Nhất Vị"
+          "hanviet": "Nhất Vị",
+          "meaning_vi": "một người"
         },
         {
           "text": "8"
@@ -5849,7 +6059,8 @@
         {
           "text": "男孩",
           "pinyin": "nán hái",
-          "hanviet": "Nam Hài"
+          "hanviet": "Nam Hài",
+          "meaning_vi": "Nam Hài"
         },
         {
           "text": "的",
@@ -5878,12 +6089,14 @@
         {
           "text": "手术刀",
           "pinyin": "shǒu shù dāo",
-          "hanviet": "Thủ Thuật Đao"
+          "hanviet": "Thủ Thuật Đao",
+          "meaning_vi": "Thủ Thuật Đao"
         },
         {
           "text": "划破",
           "pinyin": "huà pò",
-          "hanviet": "Hoa Phá"
+          "hanviet": "Hoa Phá",
+          "meaning_vi": "Hoa Phá"
         },
         {
           "text": "，"
@@ -5899,17 +6112,20 @@
         {
           "text": "牛痘",
           "pinyin": "niú dòu",
-          "hanviet": "Ngưu Đậu"
+          "hanviet": "Ngưu Đậu",
+          "meaning_vi": "bệnh đậu bò"
         },
         {
           "text": "疱疹",
           "pinyin": "pào zhěn",
-          "hanviet": "Pháo Chẩn"
+          "hanviet": "Pháo Chẩn",
+          "meaning_vi": "mụn rộp"
         },
         {
           "text": "液滴",
           "pinyin": "yè dī",
-          "hanviet": "Dịch Tích"
+          "hanviet": "Dịch Tích",
+          "meaning_vi": "Dịch Tích"
         },
         {
           "text": "在",
@@ -5954,7 +6170,8 @@
         {
           "text": "天后",
           "pinyin": "tiān hòu",
-          "hanviet": "Thiên Hậu"
+          "hanviet": "Thiên Hậu",
+          "meaning_vi": "Thiên Hậu"
         },
         {
           "text": "，"
@@ -5962,7 +6179,8 @@
         {
           "text": "詹纳",
           "pinyin": "zhān nà",
-          "hanviet": "Chiêm Nạp"
+          "hanviet": "Chiêm Nạp",
+          "meaning_vi": "Chiêm Nạp"
         },
         {
           "text": "将",
@@ -5983,7 +6201,8 @@
         {
           "text": "天花",
           "pinyin": "tiān huā",
-          "hanviet": "Thiên Hoa"
+          "hanviet": "Thiên Hoa",
+          "meaning_vi": "bệnh đậu mùa"
         },
         {
           "text": "患者",
@@ -5996,7 +6215,8 @@
         {
           "text": "脓疱",
           "pinyin": "nóng pào",
-          "hanviet": "Nùng Pháo"
+          "hanviet": "Nùng Pháo",
+          "meaning_vi": "Nùng Pháo"
         },
         {
           "text": "中",
@@ -6041,7 +6261,8 @@
         {
           "text": "一次",
           "pinyin": "yī cì",
-          "hanviet": "Nhất Thứ"
+          "hanviet": "Nhất Thứ",
+          "meaning_vi": "một lần"
         },
         {
           "text": "滴",
@@ -6078,7 +6299,8 @@
         {
           "text": "男孩",
           "pinyin": "nán hái",
-          "hanviet": "Nam Hài"
+          "hanviet": "Nam Hài",
+          "meaning_vi": "Nam Hài"
         },
         {
           "text": "被",
@@ -6091,12 +6313,14 @@
         {
           "text": "手术刀",
           "pinyin": "shǒu shù dāo",
-          "hanviet": "Thủ Thuật Đao"
+          "hanviet": "Thủ Thuật Đao",
+          "meaning_vi": "Thủ Thuật Đao"
         },
         {
           "text": "划破",
           "pinyin": "huà pò",
-          "hanviet": "Hoa Phá"
+          "hanviet": "Hoa Phá",
+          "meaning_vi": "Hoa Phá"
         },
         {
           "text": "的",
@@ -6128,7 +6352,8 @@
         {
           "text": "男孩",
           "pinyin": "nán hái",
-          "hanviet": "Nam Hài"
+          "hanviet": "Nam Hài",
+          "meaning_vi": "Nam Hài"
         },
         {
           "text": "的",
@@ -6141,7 +6366,8 @@
         {
           "text": "免疫系统",
           "pinyin": "miǎn yì xì tǒng",
-          "hanviet": "Miễn Dịch Hệ Thống"
+          "hanviet": "Miễn Dịch Hệ Thống",
+          "meaning_vi": "hệ thống miễn dịch"
         },
         {
           "text": "抵抗",
@@ -6170,7 +6396,8 @@
         {
           "text": "天花",
           "pinyin": "tiān huā",
-          "hanviet": "Thiên Hoa"
+          "hanviet": "Thiên Hoa",
+          "meaning_vi": "bệnh đậu mùa"
         },
         {
           "text": "病毒",
@@ -6220,17 +6447,20 @@
         {
           "text": "牛痘",
           "pinyin": "niú dòu",
-          "hanviet": "Ngưu Đậu"
+          "hanviet": "Ngưu Đậu",
+          "meaning_vi": "bệnh đậu bò"
         },
         {
           "text": "比人",
           "pinyin": "bǐ rén",
-          "hanviet": "Tỷ Nhân"
+          "hanviet": "Tỷ Nhân",
+          "meaning_vi": "Tỷ Nhân"
         },
         {
           "text": "痘",
           "pinyin": "dòu",
-          "hanviet": "Đậu"
+          "hanviet": "Đậu",
+          "meaning_vi": "Mụn trứng cá"
         },
         {
           "text": "更",
@@ -6254,7 +6484,8 @@
         {
           "text": "简便",
           "pinyin": "jiǎn biàn",
-          "hanviet": "Giản Tiện"
+          "hanviet": "Giản Tiện",
+          "meaning_vi": "Giản Tiện"
         },
         {
           "text": "，"
@@ -6262,17 +6493,20 @@
         {
           "text": "牛痘",
           "pinyin": "niú dòu",
-          "hanviet": "Ngưu Đậu"
+          "hanviet": "Ngưu Đậu",
+          "meaning_vi": "bệnh đậu bò"
         },
         {
           "text": "接种",
           "pinyin": "jiē zhǒng",
-          "hanviet": "Tiếp Chủng"
+          "hanviet": "Tiếp Chủng",
+          "meaning_vi": "tiêm chủng"
         },
         {
           "text": "术",
           "pinyin": "shù",
-          "hanviet": "Thuật"
+          "hanviet": "Thuật",
+          "meaning_vi": "kỹ thuật"
         },
         {
           "text": "逐渐",
@@ -6309,17 +6543,20 @@
         {
           "text": "痘",
           "pinyin": "dòu",
-          "hanviet": "Đậu"
+          "hanviet": "Đậu",
+          "meaning_vi": "Mụn trứng cá"
         },
         {
           "text": "接种",
           "pinyin": "jiē zhǒng",
-          "hanviet": "Tiếp Chủng"
+          "hanviet": "Tiếp Chủng",
+          "meaning_vi": "tiêm chủng"
         },
         {
           "text": "术",
           "pinyin": "shù",
-          "hanviet": "Thuật"
+          "hanviet": "Thuật",
+          "meaning_vi": "kỹ thuật"
         },
         {
           "text": "。"
@@ -6345,7 +6582,8 @@
         {
           "text": "科学技术",
           "pinyin": "kē xué jì shù",
-          "hanviet": "Khoa Học Kỹ Thuật"
+          "hanviet": "Khoa Học Kỹ Thuật",
+          "meaning_vi": "khoa học và công nghệ"
         },
         {
           "text": "的",
@@ -6369,7 +6607,8 @@
         {
           "text": "牛痘",
           "pinyin": "niú dòu",
-          "hanviet": "Ngưu Đậu"
+          "hanviet": "Ngưu Đậu",
+          "meaning_vi": "bệnh đậu bò"
         },
         {
           "text": "疫苗",
@@ -6406,7 +6645,8 @@
         {
           "text": "不断改进",
           "pinyin": "bù duàn gǎi jìn",
-          "hanviet": "Bất Đoạn Cải Tiến"
+          "hanviet": "Bất Đoạn Cải Tiến",
+          "meaning_vi": "Cải tiến liên tục"
         },
         {
           "text": "，"
@@ -6454,7 +6694,8 @@
         {
           "text": "广泛开展",
           "pinyin": "guǎng fàn kāi zhǎn",
-          "hanviet": "Nghiễm Phiếm Khai Triển"
+          "hanviet": "Nghiễm Phiếm Khai Triển",
+          "meaning_vi": "Nghiễm Phiếm Khai Triển"
         },
         {
           "text": "了",
@@ -6475,7 +6716,8 @@
         {
           "text": "接种",
           "pinyin": "jiē zhǒng",
-          "hanviet": "Tiếp Chủng"
+          "hanviet": "Tiếp Chủng",
+          "meaning_vi": "tiêm chủng"
         },
         {
           "text": "。"
@@ -6507,7 +6749,8 @@
         {
           "text": "天花",
           "pinyin": "tiān huā",
-          "hanviet": "Thiên Hoa"
+          "hanviet": "Thiên Hoa",
+          "meaning_vi": "bệnh đậu mùa"
         },
         {
           "text": "在",
@@ -6547,7 +6790,8 @@
         {
           "text": "这是",
           "pinyin": "zhè shì",
-          "hanviet": "Giá Thị"
+          "hanviet": "Giá Thị",
+          "meaning_vi": "Đây là"
         },
         {
           "text": "人类",
@@ -6605,7 +6849,8 @@
         {
           "text": "血清",
           "pinyin": "xuè qīng",
-          "hanviet": "Huyết Thanh"
+          "hanviet": "Huyết Thanh",
+          "meaning_vi": "huyết thanh"
         },
         {
           "text": "疗法",
@@ -6626,7 +6871,8 @@
         {
           "text": "获诺奖",
           "pinyin": "huò nuò jiǎng",
-          "hanviet": "Hoạch Nặc Thưởng"
+          "hanviet": "Hoạch Nặc Thưởng",
+          "meaning_vi": "Hoạch Nặc Thưởng"
         },
         {
           "text": "被",
@@ -6650,7 +6896,8 @@
         {
           "text": "微生物学",
           "pinyin": "wēi shēng wù xué",
-          "hanviet": "Vi Sinh Vật Học"
+          "hanviet": "Vi Sinh Vật Học",
+          "meaning_vi": "Vi sinh vật"
         },
         {
           "text": "之",
@@ -6663,7 +6910,8 @@
         {
           "text": "父",
           "pinyin": "fù",
-          "hanviet": "Phụ"
+          "hanviet": "Phụ",
+          "meaning_vi": "cha"
         },
         {
           "text": "”"
@@ -6679,12 +6927,14 @@
         {
           "text": "法国人",
           "pinyin": "fǎ guó rén",
-          "hanviet": "Pháp Quốc Nhân"
+          "hanviet": "Pháp Quốc Nhân",
+          "meaning_vi": "người pháp"
         },
         {
           "text": "路易",
           "pinyin": "lù yì",
-          "hanviet": "Lộ Dịch"
+          "hanviet": "Lộ Dịch",
+          "meaning_vi": "Lộ Dịch"
         },
         {
           "text": "·"
@@ -6692,7 +6942,8 @@
         {
           "text": "巴斯德",
           "pinyin": "bā sī dé",
-          "hanviet": "Ba Tư Đức"
+          "hanviet": "Ba Tư Đức",
+          "meaning_vi": "Pasteur"
         },
         {
           "text": "，"
@@ -6743,7 +6994,8 @@
         {
           "text": "病原",
           "pinyin": "bìng yuán",
-          "hanviet": "Bệnh Nguyên"
+          "hanviet": "Bệnh Nguyên",
+          "meaning_vi": "Bệnh Nguyên"
         },
         {
           "text": "微生物",
@@ -6756,7 +7008,8 @@
         {
           "text": "毒力",
           "pinyin": "dú lì",
-          "hanviet": "Độc Lực"
+          "hanviet": "Độc Lực",
+          "meaning_vi": "Độc Lực"
         },
         {
           "text": "的",
@@ -6814,12 +7067,14 @@
         {
           "text": "患过",
           "pinyin": "huàn guò",
-          "hanviet": "Hoạn Quá"
+          "hanviet": "Hoạn Quá",
+          "meaning_vi": "Hoạn Quá"
         },
         {
           "text": "某种",
           "pinyin": "mǒu zhǒng",
-          "hanviet": "Mỗ Chủng"
+          "hanviet": "Mỗ Chủng",
+          "meaning_vi": "một số loại"
         },
         {
           "text": "传染病",
@@ -6848,7 +7103,8 @@
         {
           "text": "痊愈",
           "pinyin": "quán yù",
-          "hanviet": "Thuyên Dũ"
+          "hanviet": "Thuyên Dũ",
+          "meaning_vi": "Thuyên Dũ"
         },
         {
           "text": "的",
@@ -6888,7 +7144,8 @@
         {
           "text": "该病",
           "pinyin": "gāi bìng",
-          "hanviet": "Cai Bệnh"
+          "hanviet": "Cai Bệnh",
+          "meaning_vi": "Cai Bệnh"
         },
         {
           "text": "有",
@@ -6901,7 +7158,8 @@
         {
           "text": "免疫力",
           "pinyin": "miǎn yì lì",
-          "hanviet": "Miễn Dịch Lực"
+          "hanviet": "Miễn Dịch Lực",
+          "meaning_vi": "miễn dịch"
         },
         {
           "text": "，"
@@ -6909,7 +7167,8 @@
         {
           "text": "据此",
           "pinyin": "jù cǐ",
-          "hanviet": "Cư Thử"
+          "hanviet": "Cư Thử",
+          "meaning_vi": "Cư Thử"
         },
         {
           "text": "用",
@@ -6922,7 +7181,8 @@
         {
           "text": "减毒",
           "pinyin": "jiǎn dú",
-          "hanviet": "Giảm Độc"
+          "hanviet": "Giảm Độc",
+          "meaning_vi": "Giảm Độc"
         },
         {
           "text": "的",
@@ -6935,7 +7195,8 @@
         {
           "text": "炭疽",
           "pinyin": "tàn jū",
-          "hanviet": "Thán Thư"
+          "hanviet": "Thán Thư",
+          "meaning_vi": "Thán Thư"
         },
         {
           "text": "、"
@@ -6943,12 +7204,14 @@
         {
           "text": "鸡霍乱",
           "pinyin": "jī huò luàn",
-          "hanviet": "Kê Hoắc Loạn"
+          "hanviet": "Kê Hoắc Loạn",
+          "meaning_vi": "Kê Hoắc Loạn"
         },
         {
           "text": "病原菌",
           "pinyin": "bìng yuán jūn",
-          "hanviet": "Bệnh Nguyên Khuẩn"
+          "hanviet": "Bệnh Nguyên Khuẩn",
+          "meaning_vi": "Bệnh Nguyên Khuẩn"
         },
         {
           "text": "分别",
@@ -6969,7 +7232,8 @@
         {
           "text": "绵羊",
           "pinyin": "mián yáng",
-          "hanviet": "Miên Dương"
+          "hanviet": "Miên Dương",
+          "meaning_vi": "Miên Dương"
         },
         {
           "text": "和",
@@ -6993,7 +7257,8 @@
         {
           "text": "获得成功",
           "pinyin": "huò dé chéng gōng",
-          "hanviet": "Hoạch Đắc Thành Công"
+          "hanviet": "Hoạch Đắc Thành Công",
+          "meaning_vi": "Hoạch Đắc Thành Công"
         },
         {
           "text": "。"
@@ -7051,7 +7316,8 @@
         {
           "text": "科学家",
           "pinyin": "kē xué jiā",
-          "hanviet": "Khoa Học Gia"
+          "hanviet": "Khoa Học Gia",
+          "meaning_vi": "nhà khoa học"
         },
         {
           "text": "的",
@@ -7075,7 +7341,8 @@
         {
           "text": "人们",
           "pinyin": "rén men",
-          "hanviet": "Nhân Môn"
+          "hanviet": "Nhân Môn",
+          "meaning_vi": "mọi người"
         },
         {
           "text": "从此",
@@ -7104,7 +7371,8 @@
         {
           "text": "这种",
           "pinyin": "zhè zhǒng",
-          "hanviet": "Giá Chủng"
+          "hanviet": "Giá Chủng",
+          "meaning_vi": "Loại này"
         },
         {
           "text": "方法",
@@ -7176,7 +7444,8 @@
         {
           "text": "巴斯德",
           "pinyin": "bā sī dé",
-          "hanviet": "Ba Tư Đức"
+          "hanviet": "Ba Tư Đức",
+          "meaning_vi": "Pasteur"
         },
         {
           "text": "开始",
@@ -7197,7 +7466,8 @@
         {
           "text": "狂犬病",
           "pinyin": "kuáng quǎn bìng",
-          "hanviet": "Cuồng Khuyển Bệnh"
+          "hanviet": "Cuồng Khuyển Bệnh",
+          "meaning_vi": "bệnh dại"
         },
         {
           "text": "，"
@@ -7229,7 +7499,8 @@
         {
           "text": "病原体",
           "pinyin": "bìng yuán tǐ",
-          "hanviet": "Bệnh Nguyên Thể"
+          "hanviet": "Bệnh Nguyên Thể",
+          "meaning_vi": "Bệnh Nguyên Thể"
         },
         {
           "text": "存在",
@@ -7250,7 +7521,8 @@
         {
           "text": "患兽",
           "pinyin": "huàn shòu",
-          "hanviet": "Hoạn Thú"
+          "hanviet": "Hoạn Thú",
+          "meaning_vi": "Hoạn Thú"
         },
         {
           "text": "唾液",
@@ -7271,7 +7543,8 @@
         {
           "text": "神经系统",
           "pinyin": "shén jīng xì tǒng",
-          "hanviet": "Thần Kinh Hệ Thống"
+          "hanviet": "Thần Kinh Hệ Thống",
+          "meaning_vi": "Thần Kinh Hệ Thống"
         },
         {
           "text": "中",
@@ -7295,7 +7568,8 @@
         {
           "text": "制成",
           "pinyin": "zhì chéng",
-          "hanviet": "Chế Thành"
+          "hanviet": "Chế Thành",
+          "meaning_vi": "thực hiện"
         },
         {
           "text": "病毒",
@@ -7308,7 +7582,8 @@
         {
           "text": "活疫苗",
           "pinyin": "huó yì miáo",
-          "hanviet": "Hoạt Dịch Miêu"
+          "hanviet": "Hoạt Dịch Miêu",
+          "meaning_vi": "Hoạt Dịch Miêu"
         },
         {
           "text": "，"
@@ -7364,7 +7639,8 @@
         {
           "text": "该病",
           "pinyin": "gāi bìng",
-          "hanviet": "Cai Bệnh"
+          "hanviet": "Cai Bệnh",
+          "meaning_vi": "Cai Bệnh"
         },
         {
           "text": "的",
@@ -7377,7 +7653,8 @@
         {
           "text": "免疫力",
           "pinyin": "miǎn yì lì",
-          "hanviet": "Miễn Dịch Lực"
+          "hanviet": "Miễn Dịch Lực",
+          "meaning_vi": "miễn dịch"
         },
         {
           "text": "。"
@@ -7403,7 +7680,8 @@
         {
           "text": "巴斯德",
           "pinyin": "bā sī dé",
-          "hanviet": "Ba Tư Đức"
+          "hanviet": "Ba Tư Đức",
+          "meaning_vi": "Pasteur"
         },
         {
           "text": "免疫",
@@ -7435,7 +7713,8 @@
         {
           "text": "科学家",
           "pinyin": "kē xué jiā",
-          "hanviet": "Khoa Học Gia"
+          "hanviet": "Khoa Học Gia",
+          "meaning_vi": "nhà khoa học"
         },
         {
           "text": "们",
@@ -7472,7 +7751,8 @@
         {
           "text": "若干种",
           "pinyin": "ruò gān zhǒng",
-          "hanviet": "Nhược Can Chủng"
+          "hanviet": "Nhược Can Chủng",
+          "meaning_vi": "Nhược Can Chủng"
         },
         {
           "text": "危险",
@@ -7544,7 +7824,8 @@
         {
           "text": "多种",
           "pinyin": "duō zhǒng",
-          "hanviet": "Đa Chủng"
+          "hanviet": "Đa Chủng",
+          "meaning_vi": "khác nhau"
         },
         {
           "text": "疾病",
@@ -7602,7 +7883,8 @@
         {
           "text": "诺贝尔奖",
           "pinyin": "nuò bèi ěr jiǎng",
-          "hanviet": "Nặc Bối Nhĩ Thưởng"
+          "hanviet": "Nặc Bối Nhĩ Thưởng",
+          "meaning_vi": "giải Nobel"
         },
         {
           "text": "的",
@@ -7615,12 +7897,14 @@
         {
           "text": "第一位",
           "pinyin": "dì yī wèi",
-          "hanviet": "Đệ Nhất Vị"
+          "hanviet": "Đệ Nhất Vị",
+          "meaning_vi": "vị trí đầu tiên"
         },
         {
           "text": "医学家",
           "pinyin": "yī xué jiā",
-          "hanviet": "Y Học Gia"
+          "hanviet": "Y Học Gia",
+          "meaning_vi": "Y Học Gia"
         },
         {
           "text": "，"
@@ -7628,7 +7912,8 @@
         {
           "text": "埃米尔",
           "pinyin": "āi mǐ ěr",
-          "hanviet": "Ai Mễ Nhĩ"
+          "hanviet": "Ai Mễ Nhĩ",
+          "meaning_vi": "Ai Mễ Nhĩ"
         },
         {
           "text": "·"
@@ -7636,7 +7921,8 @@
         {
           "text": "冯",
           "pinyin": "féng",
-          "hanviet": "Phùng"
+          "hanviet": "Phùng",
+          "meaning_vi": "Âm Hán-Việt: Phùng"
         },
         {
           "text": "·"
@@ -7644,7 +7930,8 @@
         {
           "text": "贝林",
           "pinyin": "bèi lín",
-          "hanviet": "Bối Lâm"
+          "hanviet": "Bối Lâm",
+          "meaning_vi": "Bối Lâm"
         },
         {
           "text": "根据",
@@ -7692,7 +7979,8 @@
         {
           "text": "抗毒素",
           "pinyin": "kàng dú sù",
-          "hanviet": "Kháng Độc Tố"
+          "hanviet": "Kháng Độc Tố",
+          "meaning_vi": "Thuốc kháng độc tố"
         },
         {
           "text": "免疫",
@@ -7746,7 +8034,8 @@
         {
           "text": "多次",
           "pinyin": "duō cì",
-          "hanviet": "Đa Thứ"
+          "hanviet": "Đa Thứ",
+          "meaning_vi": "nhiều lần"
         },
         {
           "text": "实验",
@@ -7805,12 +8094,14 @@
         {
           "text": "破伤风",
           "pinyin": "pò shāng fēng",
-          "hanviet": "Phá Thương Phong"
+          "hanviet": "Phá Thương Phong",
+          "meaning_vi": "uốn ván"
         },
         {
           "text": "杆菌",
           "pinyin": "gǎn jūn",
-          "hanviet": "Can Khuẩn"
+          "hanviet": "Can Khuẩn",
+          "meaning_vi": "trực khuẩn"
         },
         {
           "text": "而",
@@ -7863,7 +8154,8 @@
         {
           "text": "血清",
           "pinyin": "xuè qīng",
-          "hanviet": "Huyết Thanh"
+          "hanviet": "Huyết Thanh",
+          "meaning_vi": "huyết thanh"
         },
         {
           "text": "，"
@@ -7903,12 +8195,14 @@
         {
           "text": "破伤风",
           "pinyin": "pò shāng fēng",
-          "hanviet": "Phá Thương Phong"
+          "hanviet": "Phá Thương Phong",
+          "meaning_vi": "uốn ván"
         },
         {
           "text": "杆菌",
           "pinyin": "gǎn jūn",
-          "hanviet": "Can Khuẩn"
+          "hanviet": "Can Khuẩn",
+          "meaning_vi": "trực khuẩn"
         },
         {
           "text": "的",
@@ -7948,7 +8242,8 @@
         {
           "text": "破伤风",
           "pinyin": "pò shāng fēng",
-          "hanviet": "Phá Thương Phong"
+          "hanviet": "Phá Thương Phong",
+          "meaning_vi": "uốn ván"
         },
         {
           "text": "病症",
@@ -7990,7 +8285,8 @@
         {
           "text": "这一",
           "pinyin": "zhè yī",
-          "hanviet": "Giá Nhất"
+          "hanviet": "Giá Nhất",
+          "meaning_vi": "cái này"
         },
         {
           "text": "事实",
@@ -8014,7 +8310,8 @@
         {
           "text": "耐受",
           "pinyin": "nài shòu",
-          "hanviet": "Nại Thọ"
+          "hanviet": "Nại Thọ",
+          "meaning_vi": "Nại Thọ"
         },
         {
           "text": "过",
@@ -8027,7 +8324,8 @@
         {
           "text": "破伤风",
           "pinyin": "pò shāng fēng",
-          "hanviet": "Phá Thương Phong"
+          "hanviet": "Phá Thương Phong",
+          "meaning_vi": "uốn ván"
         },
         {
           "text": "的",
@@ -8048,7 +8346,8 @@
         {
           "text": "血清",
           "pinyin": "xuè qīng",
-          "hanviet": "Huyết Thanh"
+          "hanviet": "Huyết Thanh",
+          "meaning_vi": "huyết thanh"
         },
         {
           "text": "中",
@@ -8077,12 +8376,14 @@
         {
           "text": "破伤风",
           "pinyin": "pò shāng fēng",
-          "hanviet": "Phá Thương Phong"
+          "hanviet": "Phá Thương Phong",
+          "meaning_vi": "uốn ván"
         },
         {
           "text": "毒素",
           "pinyin": "dú sù",
-          "hanviet": "Độc Tố"
+          "hanviet": "Độc Tố",
+          "meaning_vi": "chất độc"
         },
         {
           "text": "的",
@@ -8095,7 +8396,8 @@
         {
           "text": "抗毒素",
           "pinyin": "kàng dú sù",
-          "hanviet": "Kháng Độc Tố"
+          "hanviet": "Kháng Độc Tố",
+          "meaning_vi": "Thuốc kháng độc tố"
         },
         {
           "text": "，"
@@ -8135,7 +8437,8 @@
         {
           "text": "毒素",
           "pinyin": "dú sù",
-          "hanviet": "Độc Tố"
+          "hanviet": "Độc Tố",
+          "meaning_vi": "chất độc"
         },
         {
           "text": "，"
@@ -8213,7 +8516,8 @@
         {
           "text": "抗毒素",
           "pinyin": "kàng dú sù",
-          "hanviet": "Kháng Độc Tố"
+          "hanviet": "Kháng Độc Tố",
+          "meaning_vi": "Thuốc kháng độc tố"
         },
         {
           "text": "的",
@@ -8226,7 +8530,8 @@
         {
           "text": "被动免疫",
           "pinyin": "bèi dòng miǎn yì",
-          "hanviet": "Bị Động Miễn Dịch"
+          "hanviet": "Bị Động Miễn Dịch",
+          "meaning_vi": "Bị Động Miễn Dịch"
         },
         {
           "text": "”"
@@ -8274,17 +8579,20 @@
         {
           "text": "贝林",
           "pinyin": "bèi lín",
-          "hanviet": "Bối Lâm"
+          "hanviet": "Bối Lâm",
+          "meaning_vi": "Bối Lâm"
         },
         {
           "text": "被誉为",
           "pinyin": "bèi yù wéi",
-          "hanviet": "Bị Dự Vi"
+          "hanviet": "Bị Dự Vi",
+          "meaning_vi": "được gọi là"
         },
         {
           "text": "免疫学",
           "pinyin": "miǎn yì xué",
-          "hanviet": "Miễn Dịch Học"
+          "hanviet": "Miễn Dịch Học",
+          "meaning_vi": "Miễn Dịch Học"
         },
         {
           "text": "尤其",
@@ -8305,7 +8613,8 @@
         {
           "text": "血清",
           "pinyin": "xuè qīng",
-          "hanviet": "Huyết Thanh"
+          "hanviet": "Huyết Thanh",
+          "meaning_vi": "huyết thanh"
         },
         {
           "text": "疗法",
@@ -8377,7 +8686,8 @@
         {
           "text": "一天",
           "pinyin": "yī tiān",
-          "hanviet": "Nhất Thiên"
+          "hanviet": "Nhất Thiên",
+          "meaning_vi": "một ngày"
         },
         {
           "text": "，"
@@ -8385,7 +8695,8 @@
         {
           "text": "贝林",
           "pinyin": "bèi lín",
-          "hanviet": "Bối Lâm"
+          "hanviet": "Bối Lâm",
+          "meaning_vi": "Bối Lâm"
         },
         {
           "text": "在",
@@ -8398,12 +8709,14 @@
         {
           "text": "柏",
           "pinyin": "bǎi",
-          "hanviet": "Bách"
+          "hanviet": "Bách",
+          "meaning_vi": "Bách"
         },
         {
           "text": "里格",
           "pinyin": "lǐ gé",
-          "hanviet": "Lý Cách"
+          "hanviet": "Lý Cách",
+          "meaning_vi": "Lý Cách"
         },
         {
           "text": "医院",
@@ -8432,7 +8745,8 @@
         {
           "text": "第一次",
           "pinyin": "dì yī cì",
-          "hanviet": "Đệ Nhất Thứ"
+          "hanviet": "Đệ Nhất Thứ",
+          "meaning_vi": "lần đầu tiên"
         },
         {
           "text": "尝试",
@@ -8474,7 +8788,8 @@
         {
           "text": "自制",
           "pinyin": "zì zhì",
-          "hanviet": "Tự Chế"
+          "hanviet": "Tự Chế",
+          "meaning_vi": "Tự Chế"
         },
         {
           "text": "的",
@@ -8487,17 +8802,20 @@
         {
           "text": "白喉",
           "pinyin": "bái hóu",
-          "hanviet": "Bạch Hầu"
+          "hanviet": "Bạch Hầu",
+          "meaning_vi": "bệnh bạch hầu"
         },
         {
           "text": "抗毒素",
           "pinyin": "kàng dú sù",
-          "hanviet": "Kháng Độc Tố"
+          "hanviet": "Kháng Độc Tố",
+          "meaning_vi": "Thuốc kháng độc tố"
         },
         {
           "text": "血清",
           "pinyin": "xuè qīng",
-          "hanviet": "Huyết Thanh"
+          "hanviet": "Huyết Thanh",
+          "meaning_vi": "huyết thanh"
         },
         {
           "text": "，"
@@ -8505,7 +8823,8 @@
         {
           "text": "缓缓",
           "pinyin": "huǎn huǎn",
-          "hanviet": "Hoãn Hoãn"
+          "hanviet": "Hoãn Hoãn",
+          "meaning_vi": "Hoãn Hoãn"
         },
         {
           "text": "地",
@@ -8534,22 +8853,26 @@
         {
           "text": "一位",
           "pinyin": "yī wèi",
-          "hanviet": "Nhất Vị"
+          "hanviet": "Nhất Vị",
+          "meaning_vi": "một người"
         },
         {
           "text": "因患",
           "pinyin": "yīn huàn",
-          "hanviet": "Nhân Hoạn"
+          "hanviet": "Nhân Hoạn",
+          "meaning_vi": "Nhân Hoạn"
         },
         {
           "text": "白喉",
           "pinyin": "bái hóu",
-          "hanviet": "Bạch Hầu"
+          "hanviet": "Bạch Hầu",
+          "meaning_vi": "bệnh bạch hầu"
         },
         {
           "text": "急症",
           "pinyin": "jí zhèng",
-          "hanviet": "Cấp Chứng"
+          "hanviet": "Cấp Chứng",
+          "meaning_vi": "Cấp Chứng"
         },
         {
           "text": "而",
@@ -8562,7 +8885,8 @@
         {
           "text": "奄奄一息",
           "pinyin": "yǎn yǎn yī xī",
-          "hanviet": "Yểm Yểm Nhất Tức"
+          "hanviet": "Yểm Yểm Nhất Tức",
+          "meaning_vi": "Yểm Yểm Nhất Tức"
         },
         {
           "text": "的",
@@ -8575,7 +8899,8 @@
         {
           "text": "病儿",
           "pinyin": "bìng ér",
-          "hanviet": "Bệnh Nhi"
+          "hanviet": "Bệnh Nhi",
+          "meaning_vi": "Bệnh Nhi"
         },
         {
           "text": "。"
@@ -8593,12 +8918,14 @@
         {
           "text": "病儿",
           "pinyin": "bìng ér",
-          "hanviet": "Bệnh Nhi"
+          "hanviet": "Bệnh Nhi",
+          "meaning_vi": "Bệnh Nhi"
         },
         {
           "text": "那颗",
           "pinyin": "nà kē",
-          "hanviet": "Na Khoa"
+          "hanviet": "Na Khoa",
+          "meaning_vi": "Na Khoa"
         },
         {
           "text": "被",
@@ -8611,7 +8938,8 @@
         {
           "text": "白喉毒素",
           "pinyin": "bái hóu dú sù",
-          "hanviet": "Bạch Hầu Độc Tố"
+          "hanviet": "Bạch Hầu Độc Tố",
+          "meaning_vi": "Bạch Hầu Độc Tố"
         },
         {
           "text": "麻痹",
@@ -8651,12 +8979,14 @@
         {
           "text": "由弱",
           "pinyin": "yóu ruò",
-          "hanviet": "Do Nhược"
+          "hanviet": "Do Nhược",
+          "meaning_vi": "Do Nhược"
         },
         {
           "text": "变强",
           "pinyin": "biàn qiáng",
-          "hanviet": "Biến Cường"
+          "hanviet": "Biến Cường",
+          "meaning_vi": "Biến Cường"
         },
         {
           "text": "，"
@@ -8664,7 +8994,8 @@
         {
           "text": "呆滞",
           "pinyin": "dāi zhì",
-          "hanviet": "Ngốc Trệ"
+          "hanviet": "Ngốc Trệ",
+          "meaning_vi": "Ngốc Trệ"
         },
         {
           "text": "的",
@@ -8754,12 +9085,14 @@
         {
           "text": "白喉",
           "pinyin": "bái hóu",
-          "hanviet": "Bạch Hầu"
+          "hanviet": "Bạch Hầu",
+          "meaning_vi": "bệnh bạch hầu"
         },
         {
           "text": "抗毒素",
           "pinyin": "kàng dú sù",
-          "hanviet": "Kháng Độc Tố"
+          "hanviet": "Kháng Độc Tố",
+          "meaning_vi": "Thuốc kháng độc tố"
         },
         {
           "text": "不久",
@@ -8788,7 +9121,8 @@
         {
           "text": "药房",
           "pinyin": "yào fáng",
-          "hanviet": "Dược Phòng"
+          "hanviet": "Dược Phòng",
+          "meaning_vi": "Dược Phòng"
         },
         {
           "text": "里",
@@ -8860,7 +9194,8 @@
         {
           "text": "病儿",
           "pinyin": "bìng ér",
-          "hanviet": "Bệnh Nhi"
+          "hanviet": "Bệnh Nhi",
+          "meaning_vi": "Bệnh Nhi"
         },
         {
           "text": "。"
@@ -8886,7 +9221,8 @@
         {
           "text": "血清",
           "pinyin": "xuè qīng",
-          "hanviet": "Huyết Thanh"
+          "hanviet": "Huyết Thanh",
+          "meaning_vi": "huyết thanh"
         },
         {
           "text": "疗法",
@@ -8915,7 +9251,8 @@
         {
           "text": "白喉",
           "pinyin": "bái hóu",
-          "hanviet": "Bạch Hầu"
+          "hanviet": "Bạch Hầu",
+          "meaning_vi": "bệnh bạch hầu"
         },
         {
           "text": "的",
@@ -8928,7 +9265,8 @@
         {
           "text": "一种",
           "pinyin": "yī zhǒng",
-          "hanviet": "Nhất Chủng"
+          "hanviet": "Nhất Chủng",
+          "meaning_vi": "một loại"
         },
         {
           "text": "普遍",
@@ -8968,7 +9306,8 @@
         {
           "text": "该病",
           "pinyin": "gāi bìng",
-          "hanviet": "Cai Bệnh"
+          "hanviet": "Cai Bệnh",
+          "meaning_vi": "Cai Bệnh"
         },
         {
           "text": "的",
@@ -8981,7 +9320,8 @@
         {
           "text": "死亡率",
           "pinyin": "sǐ wáng lǜ",
-          "hanviet": "Tử Vong Luật"
+          "hanviet": "Tử Vong Luật",
+          "meaning_vi": "Tử Vong Luật"
         },
         {
           "text": "由",
@@ -9013,7 +9353,8 @@
         {
           "text": "降到",
           "pinyin": "jiàng dào",
-          "hanviet": "Giáng Đáo"
+          "hanviet": "Giáng Đáo",
+          "meaning_vi": "Giáng Đáo"
         },
         {
           "text": "了",
@@ -9042,7 +9383,8 @@
         {
           "text": "小儿麻痹",
           "pinyin": "xiǎo ér má bì",
-          "hanviet": "Tiểu Nhi Ma Tý"
+          "hanviet": "Tiểu Nhi Ma Tý",
+          "meaning_vi": "Tiểu Nhi Ma Tý"
         },
         {
           "text": "疫苗",
@@ -9055,7 +9397,8 @@
         {
           "text": "研制者",
           "pinyin": "yán zhì zhě",
-          "hanviet": "Nghiên Chế Giả"
+          "hanviet": "Nghiên Chế Giả",
+          "meaning_vi": "Nghiên Chế Giả"
         },
         {
           "text": "率先",
@@ -9068,12 +9411,14 @@
         {
           "text": "接种",
           "pinyin": "jiē zhǒng",
-          "hanviet": "Tiếp Chủng"
+          "hanviet": "Tiếp Chủng",
+          "meaning_vi": "tiêm chủng"
         },
         {
           "text": "肺结核",
           "pinyin": "fèi jié hé",
-          "hanviet": "Phế Kết Hạch"
+          "hanviet": "Phế Kết Hạch",
+          "meaning_vi": "Phế Kết Hạch"
         },
         {
           "text": "曾经",
@@ -9118,7 +9463,8 @@
         {
           "text": "医治",
           "pinyin": "yī zhì",
-          "hanviet": "Y Trị"
+          "hanviet": "Y Trị",
+          "meaning_vi": "Y Trị"
         },
         {
           "text": "的",
@@ -9131,7 +9477,8 @@
         {
           "text": "绝症",
           "pinyin": "jué zhèng",
-          "hanviet": "Tuyệt Chứng"
+          "hanviet": "Tuyệt Chứng",
+          "meaning_vi": "Tuyệt Chứng"
         },
         {
           "text": "，"
@@ -9206,7 +9553,8 @@
         {
           "text": "肺部",
           "pinyin": "fèi bù",
-          "hanviet": "Phế Bộ"
+          "hanviet": "Phế Bộ",
+          "meaning_vi": "Phế Bộ"
         },
         {
           "text": "的",
@@ -9270,22 +9618,26 @@
         {
           "text": "肋骨",
           "pinyin": "lèi gǔ",
-          "hanviet": "Lặc Cốt"
+          "hanviet": "Lặc Cốt",
+          "meaning_vi": "Lặc Cốt"
         },
         {
           "text": "生",
           "pinyin": "shēng",
-          "hanviet": "Sinh"
+          "hanviet": "Sinh",
+          "meaning_vi": "sinh, đẻ; sinh ra"
         },
         {
           "text": "生地",
           "pinyin": "shēng dì",
-          "hanviet": "Sinh Địa"
+          "hanviet": "Sinh Địa",
+          "meaning_vi": "Sinh Địa"
         },
         {
           "text": "摘除",
           "pinyin": "zhāi chú",
-          "hanviet": "Trích Trừ"
+          "hanviet": "Trích Trừ",
+          "meaning_vi": "Trích Trừ"
         },
         {
           "text": "。"
@@ -9317,7 +9669,8 @@
         {
           "text": "德国",
           "pinyin": "dé guó",
-          "hanviet": "Đức Quốc"
+          "hanviet": "Đức Quốc",
+          "meaning_vi": "nước Đức"
         },
         {
           "text": "“"
@@ -9325,7 +9678,8 @@
         {
           "text": "细菌学",
           "pinyin": "xì jūn xué",
-          "hanviet": "Tế Khuẩn Học"
+          "hanviet": "Tế Khuẩn Học",
+          "meaning_vi": "Tế Khuẩn Học"
         },
         {
           "text": "之",
@@ -9338,7 +9692,8 @@
         {
           "text": "父",
           "pinyin": "fù",
-          "hanviet": "Phụ"
+          "hanviet": "Phụ",
+          "meaning_vi": "cha"
         },
         {
           "text": "”"
@@ -9346,7 +9701,8 @@
         {
           "text": "赫德",
           "pinyin": "hè dé",
-          "hanviet": "Hách Đức"
+          "hanviet": "Hách Đức",
+          "meaning_vi": "Hách Đức"
         },
         {
           "text": "经过",
@@ -9429,7 +9785,8 @@
         {
           "text": "结核病",
           "pinyin": "jié hé bìng",
-          "hanviet": "Kết Hạch Bệnh"
+          "hanviet": "Kết Hạch Bệnh",
+          "meaning_vi": "Kết Hạch Bệnh"
         },
         {
           "text": "的",
@@ -9490,7 +9847,8 @@
         {
           "text": "这种",
           "pinyin": "zhè zhǒng",
-          "hanviet": "Giá Chủng"
+          "hanviet": "Giá Chủng",
+          "meaning_vi": "Loại này"
         },
         {
           "text": "微生物",
@@ -9506,22 +9864,26 @@
         {
           "text": "法国",
           "pinyin": "fǎ guó",
-          "hanviet": "Pháp Quốc"
+          "hanviet": "Pháp Quốc",
+          "meaning_vi": "Pháp"
         },
         {
           "text": "科学家",
           "pinyin": "kē xué jiā",
-          "hanviet": "Khoa Học Gia"
+          "hanviet": "Khoa Học Gia",
+          "meaning_vi": "nhà khoa học"
         },
         {
           "text": "卡尔梅",
           "pinyin": "kǎ ěr méi",
-          "hanviet": "Ca Nhĩ Mai"
+          "hanviet": "Ca Nhĩ Mai",
+          "meaning_vi": "Ca Nhĩ Mai"
         },
         {
           "text": "特和介朗",
           "pinyin": "tè hé jiè lǎng",
-          "hanviet": "Đặc Hoà Giới Lãng"
+          "hanviet": "Đặc Hoà Giới Lãng",
+          "meaning_vi": "Đặc Hoà Giới Lãng"
         },
         {
           "text": "整整",
@@ -9564,7 +9926,8 @@
         {
           "text": "一种",
           "pinyin": "yī zhǒng",
-          "hanviet": "Nhất Chủng"
+          "hanviet": "Nhất Chủng",
+          "meaning_vi": "một loại"
         },
         {
           "text": "含有",
@@ -9577,17 +9940,20 @@
         {
           "text": "稀薄",
           "pinyin": "xī bó",
-          "hanviet": "Hy Bạc"
+          "hanviet": "Hy Bạc",
+          "meaning_vi": "Hy Bạc"
         },
         {
           "text": "活性",
           "pinyin": "huó xìng",
-          "hanviet": "Hoạt Tính"
+          "hanviet": "Hoạt Tính",
+          "meaning_vi": "Hoạt Tính"
         },
         {
           "text": "肺结核",
           "pinyin": "fèi jié hé",
-          "hanviet": "Phế Kết Hạch"
+          "hanviet": "Phế Kết Hạch",
+          "meaning_vi": "Phế Kết Hạch"
         },
         {
           "text": "细菌",
@@ -9600,7 +9966,8 @@
         {
           "text": "菌株",
           "pinyin": "jūn zhū",
-          "hanviet": "Khuẩn Chu"
+          "hanviet": "Khuẩn Chu",
+          "meaning_vi": "Khuẩn Chu"
         },
         {
           "text": "的",
@@ -9630,7 +9997,8 @@
         {
           "text": "卡介苗",
           "pinyin": "kǎ jiè miáo",
-          "hanviet": "Ca Giới Miêu"
+          "hanviet": "Ca Giới Miêu",
+          "meaning_vi": "Ca Giới Miêu"
         },
         {
           "text": "”"
@@ -9708,7 +10076,8 @@
         {
           "text": "介朗",
           "pinyin": "jiè lǎng",
-          "hanviet": "Giới Lãng"
+          "hanviet": "Giới Lãng",
+          "meaning_vi": "Giải Lãng"
         },
         {
           "text": "去世",
@@ -9732,12 +10101,14 @@
         {
           "text": "全世界",
           "pinyin": "quán shì jiè",
-          "hanviet": "Toàn Thế Giới"
+          "hanviet": "Toàn Thế Giới",
+          "meaning_vi": "trên toàn thế giới"
         },
         {
           "text": "已有",
           "pinyin": "yǐ yǒu",
-          "hanviet": "Dĩ Hữu"
+          "hanviet": "Dĩ Hữu",
+          "meaning_vi": "Đã rồi"
         },
         {
           "text": "2"
@@ -9745,7 +10116,8 @@
         {
           "text": "亿多",
           "pinyin": "yì duō",
-          "hanviet": "Ức Đa"
+          "hanviet": "Ức Đa",
+          "meaning_vi": "Hơn 100 triệu"
         },
         {
           "text": "人",
@@ -9774,7 +10146,8 @@
         {
           "text": "这种",
           "pinyin": "zhè zhǒng",
-          "hanviet": "Giá Chủng"
+          "hanviet": "Giá Chủng",
+          "meaning_vi": "Loại này"
         },
         {
           "text": "抵抗",
@@ -9787,7 +10160,8 @@
         {
           "text": "肺结核病",
           "pinyin": "fèi jié hé bìng",
-          "hanviet": "Phế Kết Hạch Bệnh"
+          "hanviet": "Phế Kết Hạch Bệnh",
+          "meaning_vi": "Phế Kết Hạch Bệnh"
         },
         {
           "text": "的",
@@ -9821,7 +10195,8 @@
         {
           "text": "小儿麻痹症",
           "pinyin": "xiǎo ér má bì zhèng",
-          "hanviet": "Tiểu Nhi Ma Tý Chứng"
+          "hanviet": "Tiểu Nhi Ma Tý Chứng",
+          "meaning_vi": "Tiểu Nhi Ma Tý Chứng"
         },
         {
           "text": "，"
@@ -9829,17 +10204,20 @@
         {
           "text": "医学界",
           "pinyin": "yī xué jiè",
-          "hanviet": "Y Học Giới"
+          "hanviet": "Y Học Giới",
+          "meaning_vi": "Y Học Giới"
         },
         {
           "text": "称之为",
           "pinyin": "chēng zhī wèi",
-          "hanviet": "Xứng Chi Vi"
+          "hanviet": "Xứng Chi Vi",
+          "meaning_vi": "gọi nó"
         },
         {
           "text": "脊髓灰质炎",
           "pinyin": "jí suǐ huī zhì yán",
-          "hanviet": "Tích Tuỷ Hôi Chất Viêm"
+          "hanviet": "Tích Tuỷ Hôi Chất Viêm",
+          "meaning_vi": "bệnh bại liệt"
         },
         {
           "text": "，"
@@ -9940,7 +10318,8 @@
         {
           "text": "高峰期",
           "pinyin": "gāo fēng qī",
-          "hanviet": "Cao Phong Kỳ"
+          "hanviet": "Cao Phong Kỳ",
+          "meaning_vi": "Cao Phong Kỳ"
         },
         {
           "text": "，"
@@ -9948,7 +10327,8 @@
         {
           "text": "美国",
           "pinyin": "měi guó",
-          "hanviet": "Mỹ Quốc"
+          "hanviet": "Mỹ Quốc",
+          "meaning_vi": "Hoa Kỳ"
         },
         {
           "text": "以及",
@@ -10012,7 +10392,8 @@
         {
           "text": "万人",
           "pinyin": "wàn rén",
-          "hanviet": "Mặc Nhân"
+          "hanviet": "Mặc Nhân",
+          "meaning_vi": "Hàng ngàn người"
         },
         {
           "text": "发病",
@@ -10038,7 +10419,8 @@
         {
           "text": "美国",
           "pinyin": "měi guó",
-          "hanviet": "Mỹ Quốc"
+          "hanviet": "Mỹ Quốc",
+          "meaning_vi": "Hoa Kỳ"
         },
         {
           "text": "历史",
@@ -10091,12 +10473,14 @@
         {
           "text": "之一",
           "pinyin": "zhī yī",
-          "hanviet": "Chi Nhất"
+          "hanviet": "Chi Nhất",
+          "meaning_vi": "một trong"
         },
         {
           "text": "富兰克林",
           "pinyin": "fù lán kè lín",
-          "hanviet": "Phú Lan Khắc Lâm"
+          "hanviet": "Phú Lan Khắc Lâm",
+          "meaning_vi": "Phú Lan Khắc Lâm"
         },
         {
           "text": "·"
@@ -10104,7 +10488,8 @@
         {
           "text": "罗斯福",
           "pinyin": "luó sī fú",
-          "hanviet": "La Tư Phúc"
+          "hanviet": "La Tư Phúc",
+          "meaning_vi": "La Tư Phúc"
         },
         {
           "text": "，"
@@ -10120,7 +10505,8 @@
         {
           "text": "美国",
           "pinyin": "měi guó",
-          "hanviet": "Mỹ Quốc"
+          "hanviet": "Mỹ Quốc",
+          "meaning_vi": "Hoa Kỳ"
         },
         {
           "text": "历史",
@@ -10149,7 +10535,8 @@
         {
           "text": "一位",
           "pinyin": "yī wèi",
-          "hanviet": "Nhất Vị"
+          "hanviet": "Nhất Vị",
+          "meaning_vi": "một người"
         },
         {
           "text": "连任",
@@ -10162,7 +10549,8 @@
         {
           "text": "四届",
           "pinyin": "sì jiè",
-          "hanviet": "Tứ Giới"
+          "hanviet": "Tứ Giới",
+          "meaning_vi": "Tứ Giới"
         },
         {
           "text": "的",
@@ -10210,12 +10598,14 @@
         {
           "text": "一位",
           "pinyin": "yī wèi",
-          "hanviet": "Nhất Vị"
+          "hanviet": "Nhất Vị",
+          "meaning_vi": "một người"
         },
         {
           "text": "残疾人",
           "pinyin": "cán jí rén",
-          "hanviet": "Tàn Tật Nhân"
+          "hanviet": "Tàn Tật Nhân",
+          "meaning_vi": "Tàn Tật Nhân"
         },
         {
           "text": "总统",
@@ -10271,7 +10661,8 @@
         {
           "text": "正是",
           "pinyin": "zhèng shì",
-          "hanviet": "Chính Thị"
+          "hanviet": "Chính Thị",
+          "meaning_vi": "Chính xác"
         },
         {
           "text": "因为",
@@ -10284,7 +10675,8 @@
         {
           "text": "小儿麻痹",
           "pinyin": "xiǎo ér má bì",
-          "hanviet": "Tiểu Nhi Ma Tý"
+          "hanviet": "Tiểu Nhi Ma Tý",
+          "meaning_vi": "Tiểu Nhi Ma Tý"
         },
         {
           "text": "。"
@@ -10302,12 +10694,14 @@
         {
           "text": "美国",
           "pinyin": "měi guó",
-          "hanviet": "Mỹ Quốc"
+          "hanviet": "Mỹ Quốc",
+          "meaning_vi": "Hoa Kỳ"
         },
         {
           "text": "索尔克",
           "pinyin": "suǒ ěr kè",
-          "hanviet": "Sách Nhĩ Khắc"
+          "hanviet": "Sách Nhĩ Khắc",
+          "meaning_vi": "Sách Nhĩ Khắc"
         },
         {
           "text": "医生",
@@ -10417,12 +10811,14 @@
         {
           "text": "出灭",
           "pinyin": "chū miè",
-          "hanviet": "Xuất Diệt"
+          "hanviet": "Xuất Diệt",
+          "meaning_vi": "Xuất Diệt"
         },
         {
           "text": "过菌",
           "pinyin": "guò jūn",
-          "hanviet": "Quá Khuẩn"
+          "hanviet": "Quá Khuẩn",
+          "meaning_vi": "Quá Khuẩn"
         },
         {
           "text": "的",
@@ -10435,7 +10831,8 @@
         {
           "text": "脊髓灰质炎",
           "pinyin": "jí suǐ huī zhì yán",
-          "hanviet": "Tích Tuỷ Hôi Chất Viêm"
+          "hanviet": "Tích Tuỷ Hôi Chất Viêm",
+          "meaning_vi": "bệnh bại liệt"
         },
         {
           "text": "疫苗",
@@ -10461,7 +10858,8 @@
         {
           "text": "索尔克",
           "pinyin": "suǒ ěr kè",
-          "hanviet": "Sách Nhĩ Khắc"
+          "hanviet": "Sách Nhĩ Khắc",
+          "meaning_vi": "Sách Nhĩ Khắc"
         },
         {
           "text": "医生",
@@ -10498,7 +10896,8 @@
         {
           "text": "第一个",
           "pinyin": "dì yí gè",
-          "hanviet": "Đệ Nhất Cá"
+          "hanviet": "Đệ Nhất Cá",
+          "meaning_vi": "cái đầu tiên"
         },
         {
           "text": "接受",
@@ -10519,7 +10918,8 @@
         {
           "text": "接种",
           "pinyin": "jiē zhǒng",
-          "hanviet": "Tiếp Chủng"
+          "hanviet": "Tiếp Chủng",
+          "meaning_vi": "tiêm chủng"
         },
         {
           "text": "的",
@@ -10615,7 +11015,8 @@
         {
           "text": "一种",
           "pinyin": "yī zhǒng",
-          "hanviet": "Nhất Chủng"
+          "hanviet": "Nhất Chủng",
+          "meaning_vi": "một loại"
         },
         {
           "text": "典礼",
@@ -10660,7 +11061,8 @@
         {
           "text": "紧接着",
           "pinyin": "jǐn jiē zhe",
-          "hanviet": "Khẩn Tiếp Trước"
+          "hanviet": "Khẩn Tiếp Trước",
+          "meaning_vi": "Khẩn Tiếp Trước"
         },
         {
           "text": "，"
@@ -10668,12 +11070,14 @@
         {
           "text": "全世界",
           "pinyin": "quán shì jiè",
-          "hanviet": "Toàn Thế Giới"
+          "hanviet": "Toàn Thế Giới",
+          "meaning_vi": "trên toàn thế giới"
         },
         {
           "text": "几百万",
           "pinyin": "jǐ bǎi wàn",
-          "hanviet": "Kỷ Bách Mặc"
+          "hanviet": "Kỷ Bách Mặc",
+          "meaning_vi": "Kỷ Bách Mặc"
         },
         {
           "text": "的",
@@ -10734,7 +11138,8 @@
         {
           "text": "小儿麻痹症",
           "pinyin": "xiǎo ér má bì zhèng",
-          "hanviet": "Tiểu Nhi Ma Tý Chứng"
+          "hanviet": "Tiểu Nhi Ma Tý Chứng",
+          "meaning_vi": "Tiểu Nhi Ma Tý Chứng"
         },
         {
           "text": "的",
@@ -10750,12 +11155,14 @@
         {
           "text": "索尔克",
           "pinyin": "suǒ ěr kè",
-          "hanviet": "Sách Nhĩ Khắc"
+          "hanviet": "Sách Nhĩ Khắc",
+          "meaning_vi": "Sách Nhĩ Khắc"
         },
         {
           "text": "氏",
           "pinyin": "shì",
-          "hanviet": "Thị"
+          "hanviet": "Thị",
+          "meaning_vi": "thị tộc"
         },
         {
           "text": "疫苗",
@@ -10854,7 +11261,8 @@
         {
           "text": "终",
           "pinyin": "zhōng",
-          "hanviet": "Chung"
+          "hanviet": "Chung",
+          "meaning_vi": "Chung"
         },
         {
           "text": "有",
@@ -10867,7 +11275,8 @@
         {
           "text": "一天",
           "pinyin": "yī tiān",
-          "hanviet": "Nhất Thiên"
+          "hanviet": "Nhất Thiên",
+          "meaning_vi": "một ngày"
         },
         {
           "text": "会",
@@ -10931,7 +11340,8 @@
         {
           "text": "不治之症",
           "pinyin": "bù zhì zhī zhèng",
-          "hanviet": "Bất Trị Chi Chứng"
+          "hanviet": "Bất Trị Chi Chứng",
+          "meaning_vi": "bệnh nan y"
         },
         {
           "text": "的",
@@ -11080,12 +11490,14 @@
         {
           "text": "人们",
           "pinyin": "rén men",
-          "hanviet": "Nhân Môn"
+          "hanviet": "Nhân Môn",
+          "meaning_vi": "mọi người"
         },
         {
           "text": "带来",
           "pinyin": "dài lái",
-          "hanviet": "Đới Lai"
+          "hanviet": "Đới Lai",
+          "meaning_vi": "mang theo"
         },
         {
           "text": "了",
@@ -11125,7 +11537,8 @@
         {
           "text": "几千年",
           "pinyin": "jǐ qiān nián",
-          "hanviet": "Kỷ Thiên Niên"
+          "hanviet": "Kỷ Thiên Niên",
+          "meaning_vi": "Hàng ngàn năm"
         },
         {
           "text": "来",
@@ -11162,7 +11575,8 @@
         {
           "text": "科学研究",
           "pinyin": "kē xué yán jiū",
-          "hanviet": "Khoa Học Nghiên Cứu"
+          "hanviet": "Khoa Học Nghiên Cứu",
+          "meaning_vi": "Khoa Học Nghiên Cứu"
         },
         {
           "text": "，"
@@ -11170,7 +11584,8 @@
         {
           "text": "一步步",
           "pinyin": "yí bù bù",
-          "hanviet": "Nhất Bộ Bộ"
+          "hanviet": "Nhất Bộ Bộ",
+          "meaning_vi": "từng bước một"
         },
         {
           "text": "实现",
@@ -11226,7 +11641,8 @@
         {
           "text": "筑起",
           "pinyin": "zhù qǐ",
-          "hanviet": "Trúc Khởi"
+          "hanviet": "Trúc Khởi",
+          "meaning_vi": "Trúc Khởi"
         },
         {
           "text": "了",
@@ -11306,22 +11722,26 @@
         {
           "text": "偶合",
           "pinyin": "ǒu hé",
-          "hanviet": "Ngẫu Cáp"
+          "hanviet": "Ngẫu Cáp",
+          "meaning_vi": "Sự trùng hợp ngẫu nhiên"
         },
         {
           "text": "症",
           "pinyin": "zhèng",
-          "hanviet": "Chứng"
+          "hanviet": "Chứng",
+          "meaning_vi": "bệnh tật"
         },
         {
           "text": "偶合",
           "pinyin": "ǒu hé",
-          "hanviet": "Ngẫu Cáp"
+          "hanviet": "Ngẫu Cáp",
+          "meaning_vi": "Sự trùng hợp ngẫu nhiên"
         },
         {
           "text": "症是",
           "pinyin": "zhèng shì",
-          "hanviet": "Chứng Thị"
+          "hanviet": "Chứng Thị",
+          "meaning_vi": "Chứng Thị"
         },
         {
           "text": "指",
@@ -11342,7 +11762,8 @@
         {
           "text": "受种",
           "pinyin": "shòu zhǒng",
-          "hanviet": "Thọ Chủng"
+          "hanviet": "Thọ Chủng",
+          "meaning_vi": "Thọ Chủng"
         },
         {
           "text": "者",
@@ -11371,7 +11792,8 @@
         {
           "text": "某种",
           "pinyin": "mǒu zhǒng",
-          "hanviet": "Mỗ Chủng"
+          "hanviet": "Mỗ Chủng",
+          "meaning_vi": "một số loại"
         },
         {
           "text": "疾病",
@@ -11392,7 +11814,8 @@
         {
           "text": "潜伏期",
           "pinyin": "qián fú qī",
-          "hanviet": "Tiềm Phục Kỳ"
+          "hanviet": "Tiềm Phục Kỳ",
+          "meaning_vi": "Tiềm Phục Kỳ"
         },
         {
           "text": "，"
@@ -11459,7 +11882,8 @@
         {
           "text": "接种",
           "pinyin": "jiē zhǒng",
-          "hanviet": "Tiếp Chủng"
+          "hanviet": "Tiếp Chủng",
+          "meaning_vi": "tiêm chủng"
         },
         {
           "text": "后",
@@ -11539,12 +11963,14 @@
         {
           "text": "偶合",
           "pinyin": "ǒu hé",
-          "hanviet": "Ngẫu Cáp"
+          "hanviet": "Ngẫu Cáp",
+          "meaning_vi": "Sự trùng hợp ngẫu nhiên"
         },
         {
           "text": "症",
           "pinyin": "zhèng",
-          "hanviet": "Chứng"
+          "hanviet": "Chứng",
+          "meaning_vi": "bệnh tật"
         },
         {
           "text": "的",
@@ -11634,17 +12060,20 @@
         {
           "text": "偶合",
           "pinyin": "ǒu hé",
-          "hanviet": "Ngẫu Cáp"
+          "hanviet": "Ngẫu Cáp",
+          "meaning_vi": "Sự trùng hợp ngẫu nhiên"
         },
         {
           "text": "症为",
           "pinyin": "zhèng wèi",
-          "hanviet": "Chứng Vi"
+          "hanviet": "Chứng Vi",
+          "meaning_vi": "Chứng Vi"
         },
         {
           "text": "猝死",
           "pinyin": "cù sǐ",
-          "hanviet": "Thốt Tử"
+          "hanviet": "Thốt Tử",
+          "meaning_vi": "Thốt Tử"
         },
         {
           "text": "，"
@@ -11697,7 +12126,8 @@
         {
           "text": "接种",
           "pinyin": "jiē zhǒng",
-          "hanviet": "Tiếp Chủng"
+          "hanviet": "Tiếp Chủng",
+          "meaning_vi": "tiêm chủng"
         },
         {
           "text": "后",
@@ -11742,7 +12172,8 @@
         {
           "text": "受种",
           "pinyin": "shòu zhǒng",
-          "hanviet": "Thọ Chủng"
+          "hanviet": "Thọ Chủng",
+          "meaning_vi": "Thọ Chủng"
         },
         {
           "text": "者",
@@ -11798,7 +12229,8 @@
         {
           "text": "心血管",
           "pinyin": "xīn xuè guǎn",
-          "hanviet": "Tâm Huyết Quản"
+          "hanviet": "Tâm Huyết Quản",
+          "meaning_vi": "Tâm Huyết Quản"
         },
         {
           "text": "疾病",
@@ -11913,12 +12345,14 @@
         {
           "text": "偶合",
           "pinyin": "ǒu hé",
-          "hanviet": "Ngẫu Cáp"
+          "hanviet": "Ngẫu Cáp",
+          "meaning_vi": "Sự trùng hợp ngẫu nhiên"
         },
         {
           "text": "症",
           "pinyin": "zhèng",
-          "hanviet": "Chứng"
+          "hanviet": "Chứng",
+          "meaning_vi": "bệnh tật"
         },
         {
           "text": "的",
@@ -11971,7 +12405,8 @@
         {
           "text": "预防接种",
           "pinyin": "yù fáng jiē zhòng",
-          "hanviet": "Dự Phòng Tiếp Chủng"
+          "hanviet": "Dự Phòng Tiếp Chủng",
+          "meaning_vi": "Dự Phòng Tiếp Chủng"
         },
         {
           "text": "的",
@@ -11984,7 +12419,8 @@
         {
           "text": "禁忌症",
           "pinyin": "jìn jì zhèng",
-          "hanviet": "Cầm Kỵ Chứng"
+          "hanviet": "Cầm Kỵ Chứng",
+          "meaning_vi": "Cầm Kỵ Chứng"
         },
         {
           "text": "。"
@@ -12018,12 +12454,14 @@
         {
           "text": "接种",
           "pinyin": "jiē zhǒng",
-          "hanviet": "Tiếp Chủng"
+          "hanviet": "Tiếp Chủng",
+          "meaning_vi": "tiêm chủng"
         },
         {
           "text": "狂犬病",
           "pinyin": "kuáng quǎn bìng",
-          "hanviet": "Cuồng Khuyển Bệnh"
+          "hanviet": "Cuồng Khuyển Bệnh",
+          "meaning_vi": "bệnh dại"
         },
         {
           "text": "疫苗",
@@ -12047,7 +12485,8 @@
         {
           "text": "接种",
           "pinyin": "jiē zhǒng",
-          "hanviet": "Tiếp Chủng"
+          "hanviet": "Tiếp Chủng",
+          "meaning_vi": "tiêm chủng"
         },
         {
           "text": "其他",
@@ -12068,7 +12507,8 @@
         {
           "text": "一种",
           "pinyin": "yī zhǒng",
-          "hanviet": "Nhất Chủng"
+          "hanviet": "Nhất Chủng",
+          "meaning_vi": "một loại"
         },
         {
           "text": "疫苗",
@@ -12097,7 +12537,8 @@
         {
           "text": "禁忌症",
           "pinyin": "jìn jì zhèng",
-          "hanviet": "Cầm Kỵ Chứng"
+          "hanviet": "Cầm Kỵ Chứng",
+          "meaning_vi": "Cầm Kỵ Chứng"
         },
         {
           "text": "。"
@@ -12123,7 +12564,8 @@
         {
           "text": "麻疹",
           "pinyin": "má zhěn",
-          "hanviet": "Ma Chẩn"
+          "hanviet": "Ma Chẩn",
+          "meaning_vi": "Ma Chẩn"
         },
         {
           "text": "疫苗",
@@ -12136,7 +12578,8 @@
         {
           "text": "为例",
           "pinyin": "wèi lì",
-          "hanviet": "Vi Lệ"
+          "hanviet": "Vi Lệ",
+          "meaning_vi": "Ví dụ"
         },
         {
           "text": "，"
@@ -12144,7 +12587,8 @@
         {
           "text": "麻疹",
           "pinyin": "má zhěn",
-          "hanviet": "Ma Chẩn"
+          "hanviet": "Ma Chẩn",
+          "meaning_vi": "Ma Chẩn"
         },
         {
           "text": "疫苗",
@@ -12165,7 +12609,8 @@
         {
           "text": "禁忌症",
           "pinyin": "jìn jì zhèng",
-          "hanviet": "Cầm Kỵ Chứng"
+          "hanviet": "Cầm Kỵ Chứng",
+          "meaning_vi": "Cầm Kỵ Chứng"
         },
         {
           "text": "有",
@@ -12189,7 +12634,8 @@
         {
           "text": "患有",
           "pinyin": "huàn yǒu",
-          "hanviet": "Hoạn Hữu"
+          "hanviet": "Hoạn Hữu",
+          "meaning_vi": "Hoạn Hữu"
         },
         {
           "text": "严重",
@@ -12245,7 +12691,8 @@
         {
           "text": "活动期",
           "pinyin": "huó dòng qī",
-          "hanviet": "Hoạt Động Kỳ"
+          "hanviet": "Hoạt Động Kỳ",
+          "meaning_vi": "Hoạt Động Kỳ"
         },
         {
           "text": "的",
@@ -12277,7 +12724,8 @@
         {
           "text": "感染性",
           "pinyin": "gǎn rǎn xìng",
-          "hanviet": "Cảm Nhiễm Tính"
+          "hanviet": "Cảm Nhiễm Tính",
+          "meaning_vi": "Cảm Nhiễm Tính"
         },
         {
           "text": "疾病",
@@ -12365,7 +12813,8 @@
         {
           "text": "禁忌症",
           "pinyin": "jìn jì zhèng",
-          "hanviet": "Cầm Kỵ Chứng"
+          "hanviet": "Cầm Kỵ Chứng",
+          "meaning_vi": "Cầm Kỵ Chứng"
         },
         {
           "text": "的",
@@ -12397,12 +12846,14 @@
         {
           "text": "不能",
           "pinyin": "bù néng",
-          "hanviet": "Bất Năng"
+          "hanviet": "Bất Năng",
+          "meaning_vi": "không thể"
         },
         {
           "text": "接种",
           "pinyin": "jiē zhǒng",
-          "hanviet": "Tiếp Chủng"
+          "hanviet": "Tiếp Chủng",
+          "meaning_vi": "tiêm chủng"
         },
         {
           "text": "疫苗",
@@ -12418,7 +12869,8 @@
         {
           "text": "应待病",
           "pinyin": "yīng dài bìng",
-          "hanviet": "Ưng Đãi Bệnh"
+          "hanviet": "Ưng Đãi Bệnh",
+          "meaning_vi": "Ưng Đãi Bệnh"
         },
         {
           "text": "好",
@@ -12447,7 +12899,8 @@
         {
           "text": "接种",
           "pinyin": "jiē zhǒng",
-          "hanviet": "Tiếp Chủng"
+          "hanviet": "Tiếp Chủng",
+          "meaning_vi": "tiêm chủng"
         },
         {
           "text": "。"
@@ -12532,7 +12985,8 @@
         {
           "text": "健康状况",
           "pinyin": "jiàn kāng zhuàng kuàng",
-          "hanviet": "Kiện Khang Trạng Huống"
+          "hanviet": "Kiện Khang Trạng Huống",
+          "meaning_vi": "Kiện Khang Trạng Huống"
         },
         {
           "text": "并",
@@ -12561,7 +13015,8 @@
         {
           "text": "接种",
           "pinyin": "jiē zhǒng",
-          "hanviet": "Tiếp Chủng"
+          "hanviet": "Tiếp Chủng",
+          "meaning_vi": "tiêm chủng"
         },
         {
           "text": "医生",
@@ -12587,7 +13042,8 @@
         {
           "text": "鼠疫",
           "pinyin": "shǔ yì",
-          "hanviet": "Thử Dịch"
+          "hanviet": "Thử Dịch",
+          "meaning_vi": "Bệnh dịch hạch"
         },
         {
           "text": "导致",
@@ -12608,12 +13064,14 @@
         {
           "text": "禁浴",
           "pinyin": "jìn yù",
-          "hanviet": "Cầm Dục"
+          "hanviet": "Cầm Dục",
+          "meaning_vi": "Cầm Dục"
         },
         {
           "text": "两百年",
           "pinyin": "liǎng bǎi nián",
-          "hanviet": "Lưỡng Bách Niên"
+          "hanviet": "Lưỡng Bách Niên",
+          "meaning_vi": "hai trăm năm"
         },
         {
           "text": "1347"
@@ -12632,7 +13090,8 @@
         {
           "text": "一艘",
           "pinyin": "yī sōu",
-          "hanviet": "Nhất Sưu"
+          "hanviet": "Nhất Sưu",
+          "meaning_vi": "một con tàu"
         },
         {
           "text": "来自",
@@ -12661,22 +13120,26 @@
         {
           "text": "商船",
           "pinyin": "shāng chuán",
-          "hanviet": "Thương Thuyền"
+          "hanviet": "Thương Thuyền",
+          "meaning_vi": "Thương Thuyền"
         },
         {
           "text": "停靠在",
           "pinyin": "tíng kào zài",
-          "hanviet": "Đình Kháo Tại"
+          "hanviet": "Đình Kháo Tại",
+          "meaning_vi": "Đình Kháo Tại"
         },
         {
           "text": "意大利",
           "pinyin": "yì dà lì",
-          "hanviet": "Ý Đại Lợi"
+          "hanviet": "Ý Đại Lợi",
+          "meaning_vi": "Ý"
         },
         {
           "text": "热那亚",
           "pinyin": "rè nà yà",
-          "hanviet": "Nhiệt Na Á"
+          "hanviet": "Nhiệt Na Á",
+          "meaning_vi": "Genova"
         },
         {
           "text": "的",
@@ -12716,7 +13179,8 @@
         {
           "text": "船上",
           "pinyin": "chuán shàng",
-          "hanviet": "Thuyền Thướng"
+          "hanviet": "Thuyền Thướng",
+          "meaning_vi": "Thuyền Thướng"
         },
         {
           "text": "的",
@@ -12729,7 +13193,8 @@
         {
           "text": "水手",
           "pinyin": "shuǐ shǒu",
-          "hanviet": "Thủy Thủ"
+          "hanviet": "Thủy Thủ",
+          "meaning_vi": "Thủy Thủ"
         },
         {
           "text": "、"
@@ -12769,17 +13234,20 @@
         {
           "text": "一种",
           "pinyin": "yī zhǒng",
-          "hanviet": "Nhất Chủng"
+          "hanviet": "Nhất Chủng",
+          "meaning_vi": "một loại"
         },
         {
           "text": "痛到",
           "pinyin": "tòng dào",
-          "hanviet": "Thống Đáo"
+          "hanviet": "Thống Đáo",
+          "meaning_vi": "Thống Đáo"
         },
         {
           "text": "骨髓",
           "pinyin": "gǔ suǐ",
-          "hanviet": "Cốt Tủy"
+          "hanviet": "Cốt Tủy",
+          "meaning_vi": "Cốt Tủy"
         },
         {
           "text": "的",
@@ -12837,12 +13305,14 @@
         {
           "text": "攻占",
           "pinyin": "gōng zhàn",
-          "hanviet": "Công Chiêm"
+          "hanviet": "Công Chiêm",
+          "meaning_vi": "Công Chiêm"
         },
         {
           "text": "某座",
           "pinyin": "mǒu zuò",
-          "hanviet": "Mỗ Toạ"
+          "hanviet": "Mỗ Toạ",
+          "meaning_vi": "Mỗ Toạ"
         },
         {
           "text": "城市",
@@ -12858,7 +13328,8 @@
         {
           "text": "蒙古人",
           "pinyin": "méng gǔ rén",
-          "hanviet": "Mông Cổ Nhân"
+          "hanviet": "Mông Cổ Nhân",
+          "meaning_vi": "người Mông Cổ"
         },
         {
           "text": "用",
@@ -12871,7 +13342,8 @@
         {
           "text": "病死",
           "pinyin": "bìng sǐ",
-          "hanviet": "Bệnh Tử"
+          "hanviet": "Bệnh Tử",
+          "meaning_vi": "Bệnh Tử"
         },
         {
           "text": "的",
@@ -12900,17 +13372,20 @@
         {
           "text": "炮弹",
           "pinyin": "pào dàn",
-          "hanviet": "Bào Đạn"
+          "hanviet": "Bào Đạn",
+          "meaning_vi": "Bào Đạn"
         },
         {
           "text": "打入",
           "pinyin": "dǎ rù",
-          "hanviet": "Đả Nhập"
+          "hanviet": "Đả Nhập",
+          "meaning_vi": "Đả Nhập"
         },
         {
           "text": "城中",
           "pinyin": "chéng zhōng",
-          "hanviet": "Thành Trung"
+          "hanviet": "Thành Trung",
+          "meaning_vi": "Thành Trung"
         },
         {
           "text": "。"
@@ -12928,7 +13403,8 @@
         {
           "text": "这群",
           "pinyin": "zhè qún",
-          "hanviet": "Giá Quần"
+          "hanviet": "Giá Quần",
+          "meaning_vi": "Giá Quần"
         },
         {
           "text": "商人",
@@ -12957,7 +13433,8 @@
         {
           "text": "逃离",
           "pinyin": "táo lí",
-          "hanviet": "Đào Ly"
+          "hanviet": "Đào Ly",
+          "meaning_vi": "Đào Ly"
         },
         {
           "text": "，"
@@ -12981,17 +13458,20 @@
         {
           "text": "这场",
           "pinyin": "zhè chǎng",
-          "hanviet": "Giá Tràng"
+          "hanviet": "Giá Tràng",
+          "meaning_vi": "Lần này"
         },
         {
           "text": "鼠疫",
           "pinyin": "shǔ yì",
-          "hanviet": "Thử Dịch"
+          "hanviet": "Thử Dịch",
+          "meaning_vi": "Bệnh dịch hạch"
         },
         {
           "text": "带到",
           "pinyin": "dài dào",
-          "hanviet": "Đới Đáo"
+          "hanviet": "Đới Đáo",
+          "meaning_vi": "mang đến"
         },
         {
           "text": "了",
@@ -13004,7 +13484,8 @@
         {
           "text": "热那亚",
           "pinyin": "rè nà yà",
-          "hanviet": "Nhiệt Na Á"
+          "hanviet": "Nhiệt Na Á",
+          "meaning_vi": "Genova"
         },
         {
           "text": "，"
@@ -13012,7 +13493,8 @@
         {
           "text": "带到",
           "pinyin": "dài dào",
-          "hanviet": "Đới Đáo"
+          "hanviet": "Đới Đáo",
+          "meaning_vi": "mang đến"
         },
         {
           "text": "了",
@@ -13046,7 +13528,8 @@
         {
           "text": "短短",
           "pinyin": "duǎn duǎn",
-          "hanviet": "Đoản Đoản"
+          "hanviet": "Đoản Đoản",
+          "meaning_vi": "ngắn"
         },
         {
           "text": "3"
@@ -13073,7 +13556,8 @@
         {
           "text": "这场",
           "pinyin": "zhè chǎng",
-          "hanviet": "Giá Tràng"
+          "hanviet": "Giá Tràng",
+          "meaning_vi": "Lần này"
         },
         {
           "text": "来自",
@@ -13110,12 +13594,14 @@
         {
           "text": "鼠疫",
           "pinyin": "shǔ yì",
-          "hanviet": "Thử Dịch"
+          "hanviet": "Thử Dịch",
+          "meaning_vi": "Bệnh dịch hạch"
         },
         {
           "text": "夺走",
           "pinyin": "duó zǒu",
-          "hanviet": "Đoạt Tẩu"
+          "hanviet": "Đoạt Tẩu",
+          "meaning_vi": "Đoạt Tẩu"
         },
         {
           "text": "了",
@@ -13198,7 +13684,8 @@
         {
           "text": "肆虐",
           "pinyin": "sì nüè",
-          "hanviet": "Tứ Ngược"
+          "hanviet": "Tứ Ngược",
+          "meaning_vi": "Tứ Ngược"
         },
         {
           "text": "的",
@@ -13289,7 +13776,8 @@
         {
           "text": "热气",
           "pinyin": "rè qì",
-          "hanviet": "Nhiệt Khí"
+          "hanviet": "Nhiệt Khí",
+          "meaning_vi": "nhiệt"
         },
         {
           "text": "让",
@@ -13310,12 +13798,14 @@
         {
           "text": "毛孔",
           "pinyin": "máo kǒng",
-          "hanviet": "Mao Khổng"
+          "hanviet": "Mao Khổng",
+          "meaning_vi": "Mao Khổng"
         },
         {
           "text": "张开",
           "pinyin": "zhāng kāi",
-          "hanviet": "Trương Khai"
+          "hanviet": "Trương Khai",
+          "meaning_vi": "mở"
         },
         {
           "text": "，"
@@ -13331,7 +13821,8 @@
         {
           "text": "病气",
           "pinyin": "bìng qì",
-          "hanviet": "Bệnh Khí"
+          "hanviet": "Bệnh Khí",
+          "meaning_vi": "Bệnh Khí"
         },
         {
           "text": "得以",
@@ -13344,7 +13835,8 @@
         {
           "text": "侵入",
           "pinyin": "qīn rù",
-          "hanviet": "Xâm Nhập"
+          "hanviet": "Xâm Nhập",
+          "meaning_vi": "xâm chiếm"
         },
         {
           "text": "人体",
@@ -13370,7 +13862,8 @@
         {
           "text": "人们",
           "pinyin": "rén men",
-          "hanviet": "Nhân Môn"
+          "hanviet": "Nhân Môn",
+          "meaning_vi": "mọi người"
         },
         {
           "text": "逐渐",
@@ -13426,12 +13919,14 @@
         {
           "text": "水会",
           "pinyin": "shuǐ huì",
-          "hanviet": "Thuỷ Hội"
+          "hanviet": "Thuỷ Hội",
+          "meaning_vi": "Thuỷ Hội"
         },
         {
           "text": "渗入",
           "pinyin": "shèn rù",
-          "hanviet": "Sấm Nhập"
+          "hanviet": "Sấm Nhập",
+          "meaning_vi": "Sấm Nhập"
         },
         {
           "text": "皮肤",
@@ -13447,7 +13942,8 @@
         {
           "text": "热气",
           "pinyin": "rè qì",
-          "hanviet": "Nhiệt Khí"
+          "hanviet": "Nhiệt Khí",
+          "meaning_vi": "nhiệt"
         },
         {
           "text": "和",
@@ -13460,7 +13956,8 @@
         {
           "text": "水会",
           "pinyin": "shuǐ huì",
-          "hanviet": "Thuỷ Hội"
+          "hanviet": "Thuỷ Hội",
+          "meaning_vi": "Thuỷ Hội"
         },
         {
           "text": "使",
@@ -13489,7 +13986,8 @@
         {
           "text": "裂纹",
           "pinyin": "liè wén",
-          "hanviet": "Liệt Văn"
+          "hanviet": "Liệt Văn",
+          "meaning_vi": "Liệt Văn"
         },
         {
           "text": "，"
@@ -13505,7 +14003,8 @@
         {
           "text": "鼠疫",
           "pinyin": "shǔ yì",
-          "hanviet": "Thử Dịch"
+          "hanviet": "Thử Dịch",
+          "meaning_vi": "Bệnh dịch hạch"
         },
         {
           "text": "病毒",
@@ -13518,7 +14017,8 @@
         {
           "text": "乘虚而入",
           "pinyin": "chéng xū ér rù",
-          "hanviet": "Thừa Hư Nhi Nhập"
+          "hanviet": "Thừa Hư Nhi Nhập",
+          "meaning_vi": "Tận dụng hoàn cảnh"
         },
         {
           "text": "。"
@@ -13620,7 +14120,8 @@
         {
           "text": "人们",
           "pinyin": "rén men",
-          "hanviet": "Nhân Môn"
+          "hanviet": "Nhân Môn",
+          "meaning_vi": "mọi người"
         },
         {
           "text": "头脑",
@@ -13649,7 +14150,8 @@
         {
           "text": "定格",
           "pinyin": "dìng gé",
-          "hanviet": "Định Cách"
+          "hanviet": "Định Cách",
+          "meaning_vi": "Định Cách"
         },
         {
           "text": "，"
@@ -13708,7 +14210,8 @@
         {
           "text": "人们",
           "pinyin": "rén men",
-          "hanviet": "Nhân Môn"
+          "hanviet": "Nhân Môn",
+          "meaning_vi": "mọi người"
         },
         {
           "text": "都",
@@ -13721,12 +14224,14 @@
         {
           "text": "尽可能",
           "pinyin": "jǐn kě néng",
-          "hanviet": "Tận Khả Năng"
+          "hanviet": "Tận Khả Năng",
+          "meaning_vi": "Tận Khả Năng"
         },
         {
           "text": "避开",
           "pinyin": "bì kāi",
-          "hanviet": "Tị Khai"
+          "hanviet": "Tị Khai",
+          "meaning_vi": "Tị Khai"
         },
         {
           "text": "水",
@@ -13801,7 +14306,8 @@
         {
           "text": "最大",
           "pinyin": "zuì dà",
-          "hanviet": "Tối Đại"
+          "hanviet": "Tối Đại",
+          "meaning_vi": "tối đa"
         },
         {
           "text": "接触",
@@ -13830,17 +14336,20 @@
         {
           "text": "每日",
           "pinyin": "měi rì",
-          "hanviet": "Mỗi Nhật"
+          "hanviet": "Mỗi Nhật",
+          "meaning_vi": "hàng ngày"
         },
         {
           "text": "以水",
           "pinyin": "yǐ shuǐ",
-          "hanviet": "Dĩ Thuỷ"
+          "hanviet": "Dĩ Thuỷ",
+          "meaning_vi": "với nước"
         },
         {
           "text": "洗手",
           "pinyin": "xǐ shǒu",
-          "hanviet": "Tẩy Thủ"
+          "hanviet": "Tẩy Thủ",
+          "meaning_vi": "Tẩy Thủ"
         },
         {
           "text": "。"
@@ -13858,12 +14367,14 @@
         {
           "text": "法王",
           "pinyin": "fǎ wáng",
-          "hanviet": "Pháp Vương"
+          "hanviet": "Pháp Vương",
+          "meaning_vi": "Pháp Vương"
         },
         {
           "text": "路易十三",
           "pinyin": "lù yì shí sān",
-          "hanviet": "Lộ Dịch Thập Tam"
+          "hanviet": "Lộ Dịch Thập Tam",
+          "meaning_vi": "Lộ Dịch Thập Tam"
         },
         {
           "text": "7"
@@ -13887,7 +14398,8 @@
         {
           "text": "双腿",
           "pinyin": "shuāng tuǐ",
-          "hanviet": "Song Thối"
+          "hanviet": "Song Thối",
+          "meaning_vi": "Song Thối"
         },
         {
           "text": "从未",
@@ -13937,17 +14449,20 @@
         {
           "text": "王",
           "pinyin": "wáng",
-          "hanviet": "Vương"
+          "hanviet": "Vương",
+          "meaning_vi": "vua"
         },
         {
           "text": "路易十四",
           "pinyin": "lù yì shí sì",
-          "hanviet": "Lộ Dịch Thập Tứ"
+          "hanviet": "Lộ Dịch Thập Tứ",
+          "meaning_vi": "Lộ Dịch Thập Tứ"
         },
         {
           "text": "重病",
           "pinyin": "zhòng bìng",
-          "hanviet": "Trọng Bệnh"
+          "hanviet": "Trọng Bệnh",
+          "meaning_vi": "Trọng Bệnh"
         },
         {
           "text": "，"
@@ -13963,7 +14478,8 @@
         {
           "text": "出血",
           "pinyin": "chū xiě",
-          "hanviet": "Xuất Huyết"
+          "hanviet": "Xuất Huyết",
+          "meaning_vi": "Xuất Huyết"
         },
         {
           "text": "8"
@@ -13971,7 +14487,8 @@
         {
           "text": "次后",
           "pinyin": "cì hòu",
-          "hanviet": "Thứ Hậu"
+          "hanviet": "Thứ Hậu",
+          "meaning_vi": "Thứ Hậu"
         },
         {
           "text": "，"
@@ -13987,7 +14504,8 @@
         {
           "text": "御医",
           "pinyin": "yù yī",
-          "hanviet": "Ngự Y"
+          "hanviet": "Ngự Y",
+          "meaning_vi": "Ngự Y"
         },
         {
           "text": "采用",
@@ -14008,7 +14526,8 @@
         {
           "text": "润湿",
           "pinyin": "rùn shī",
-          "hanviet": "Nhuận Thấp"
+          "hanviet": "Nhuận Thấp",
+          "meaning_vi": "Nhuận Thấp"
         },
         {
           "text": "一下",
@@ -14072,7 +14591,8 @@
         {
           "text": "这种",
           "pinyin": "zhè zhǒng",
-          "hanviet": "Giá Chủng"
+          "hanviet": "Giá Chủng",
+          "meaning_vi": "Loại này"
         },
         {
           "text": "“"
@@ -14091,7 +14611,8 @@
         {
           "text": "太多",
           "pinyin": "tài duō",
-          "hanviet": "Thái Đa"
+          "hanviet": "Thái Đa",
+          "meaning_vi": "Thái Đa"
         },
         {
           "text": "的",
@@ -14136,7 +14657,8 @@
         {
           "text": "世纪末",
           "pinyin": "shì jì mò",
-          "hanviet": "Thế Kỷ Mạt"
+          "hanviet": "Thế Kỷ Mạt",
+          "meaning_vi": "cuối thế kỷ"
         },
         {
           "text": "，"
@@ -14144,12 +14666,14 @@
         {
           "text": "欧洲各国",
           "pinyin": "ōu zhōu gè guó",
-          "hanviet": "Âu Châu Các Quốc"
+          "hanviet": "Âu Châu Các Quốc",
+          "meaning_vi": "các nước châu Âu"
         },
         {
           "text": "才",
           "pinyin": "cái",
-          "hanviet": "Tài"
+          "hanviet": "Tài",
+          "meaning_vi": "mới, rồi mới (chỉ việc xảy ra muộn / có điều kiện)"
         },
         {
           "text": "开始",
@@ -14189,7 +14713,8 @@
         {
           "text": "鼠疫",
           "pinyin": "shǔ yì",
-          "hanviet": "Thử Dịch"
+          "hanviet": "Thử Dịch",
+          "meaning_vi": "Bệnh dịch hạch"
         },
         {
           "text": "的",
@@ -14226,12 +14751,14 @@
         {
           "text": "卡住",
           "pinyin": "kǎ zhù",
-          "hanviet": "Ca Trú"
+          "hanviet": "Ca Trú",
+          "meaning_vi": "Ca Trú"
         },
         {
           "text": "疫情",
           "pinyin": "yì qíng",
-          "hanviet": "Dịch Tình"
+          "hanviet": "Dịch Tình",
+          "meaning_vi": "Dịch Tình"
         },
         {
           "text": "的",
@@ -14247,7 +14774,8 @@
         {
           "text": "七寸",
           "pinyin": "qī cùn",
-          "hanviet": "Thất Thốn"
+          "hanviet": "Thất Thốn",
+          "meaning_vi": "bảy inch"
         },
         {
           "text": "”"
@@ -14308,7 +14836,8 @@
         {
           "text": "卫生设施",
           "pinyin": "wèi shēng shè shī",
-          "hanviet": "Vệ Sinh Thiết Thi"
+          "hanviet": "Vệ Sinh Thiết Thi",
+          "meaning_vi": "Vệ Sinh Thiết Thi"
         },
         {
           "text": "建设",
@@ -14332,7 +14861,8 @@
         {
           "text": "下水道",
           "pinyin": "xià shuǐ dào",
-          "hanviet": "Hạ Thuỷ Đạo"
+          "hanviet": "Hạ Thuỷ Đạo",
+          "meaning_vi": "cống thoát nước"
         },
         {
           "text": "，"
@@ -14372,7 +14902,8 @@
         {
           "text": "杀虫",
           "pinyin": "shā chóng",
-          "hanviet": "Sát Trùng"
+          "hanviet": "Sát Trùng",
+          "meaning_vi": "Sát Trùng"
         },
         {
           "text": "和",
@@ -14438,7 +14969,8 @@
         {
           "text": "鼠疫",
           "pinyin": "shǔ yì",
-          "hanviet": "Thử Dịch"
+          "hanviet": "Thử Dịch",
+          "meaning_vi": "Bệnh dịch hạch"
         },
         {
           "text": "得到",
@@ -14529,7 +15061,8 @@
         {
           "text": "第一次",
           "pinyin": "dì yī cì",
-          "hanviet": "Đệ Nhất Thứ"
+          "hanviet": "Đệ Nhất Thứ",
+          "meaning_vi": "lần đầu tiên"
         },
         {
           "text": "卫生",
@@ -14630,7 +15163,8 @@
         {
           "text": "试制",
           "pinyin": "shì zhì",
-          "hanviet": "Thí Chế"
+          "hanviet": "Thí Chế",
+          "meaning_vi": "Thí Chế"
         },
         {
           "text": "和",
@@ -14689,7 +15223,8 @@
         {
           "text": "减毒",
           "pinyin": "jiǎn dú",
-          "hanviet": "Giảm Độc"
+          "hanviet": "Giảm Độc",
+          "meaning_vi": "Giảm Độc"
         },
         {
           "text": "不",
@@ -14713,7 +15248,8 @@
         {
           "text": "脱毒",
           "pinyin": "tuō dú",
-          "hanviet": "Thoát Độc"
+          "hanviet": "Thoát Độc",
+          "meaning_vi": "Thoát Độc"
         },
         {
           "text": "方法",
@@ -14820,7 +15356,8 @@
         {
           "text": "无菌",
           "pinyin": "wú jūn",
-          "hanviet": "Vô Khuẩn"
+          "hanviet": "Vô Khuẩn",
+          "meaning_vi": "Vô Khuẩn"
         },
         {
           "text": "生产",
@@ -14876,7 +15413,8 @@
         {
           "text": "在历史上",
           "pinyin": "zài lì shǐ shàng",
-          "hanviet": "Tại Lịch Sử Thướng"
+          "hanviet": "Tại Lịch Sử Thướng",
+          "meaning_vi": "Tại Lịch Sử Thướng"
         },
         {
           "text": "曾经",
@@ -14905,7 +15443,8 @@
         {
           "text": "多次",
           "pinyin": "duō cì",
-          "hanviet": "Đa Thứ"
+          "hanviet": "Đa Thứ",
+          "meaning_vi": "nhiều lần"
         },
         {
           "text": "疫苗",
@@ -14963,17 +15502,20 @@
         {
           "text": "血清",
           "pinyin": "xuè qīng",
-          "hanviet": "Huyết Thanh"
+          "hanviet": "Huyết Thanh",
+          "meaning_vi": "huyết thanh"
         },
         {
           "text": "白喉",
           "pinyin": "bái hóu",
-          "hanviet": "Bạch Hầu"
+          "hanviet": "Bạch Hầu",
+          "meaning_vi": "bệnh bạch hầu"
         },
         {
           "text": "抗毒素",
           "pinyin": "kàng dú sù",
-          "hanviet": "Kháng Độc Tố"
+          "hanviet": "Kháng Độc Tố",
+          "meaning_vi": "Thuốc kháng độc tố"
         },
         {
           "text": "事故",
@@ -15008,7 +15550,8 @@
         {
           "text": "美国",
           "pinyin": "měi guó",
-          "hanviet": "Mỹ Quốc"
+          "hanviet": "Mỹ Quốc",
+          "meaning_vi": "Hoa Kỳ"
         },
         {
           "text": "接连",
@@ -15088,17 +15631,20 @@
         {
           "text": "血清",
           "pinyin": "xuè qīng",
-          "hanviet": "Huyết Thanh"
+          "hanviet": "Huyết Thanh",
+          "meaning_vi": "huyết thanh"
         },
         {
           "text": "白喉",
           "pinyin": "bái hóu",
-          "hanviet": "Bạch Hầu"
+          "hanviet": "Bạch Hầu",
+          "meaning_vi": "bệnh bạch hầu"
         },
         {
           "text": "抗毒素",
           "pinyin": "kàng dú sù",
-          "hanviet": "Kháng Độc Tố"
+          "hanviet": "Kháng Độc Tố",
+          "meaning_vi": "Thuốc kháng độc tố"
         },
         {
           "text": "以后",
@@ -15122,7 +15668,8 @@
         {
           "text": "破伤风",
           "pinyin": "pò shāng fēng",
-          "hanviet": "Phá Thương Phong"
+          "hanviet": "Phá Thương Phong",
+          "meaning_vi": "uốn ván"
         },
         {
           "text": "感染",
@@ -15159,7 +15706,8 @@
         {
           "text": "严重事故",
           "pinyin": "yán zhòng shì gù",
-          "hanviet": "Nghiêm Trọng Sự Cố"
+          "hanviet": "Nghiêm Trọng Sự Cố",
+          "meaning_vi": "tai nạn nghiêm trọng"
         },
         {
           "text": "。"
@@ -15185,7 +15733,8 @@
         {
           "text": "找到",
           "pinyin": "zhǎo dào",
-          "hanviet": "Trảo Đáo"
+          "hanviet": "Trảo Đáo",
+          "meaning_vi": "tìm thấy"
         },
         {
           "text": "的",
@@ -15214,12 +15763,14 @@
         {
           "text": "这种",
           "pinyin": "zhè zhǒng",
-          "hanviet": "Giá Chủng"
+          "hanviet": "Giá Chủng",
+          "meaning_vi": "Loại này"
         },
         {
           "text": "抗毒素",
           "pinyin": "kàng dú sù",
-          "hanviet": "Kháng Độc Tố"
+          "hanviet": "Kháng Độc Tố",
+          "meaning_vi": "Thuốc kháng độc tố"
         },
         {
           "text": "是",
@@ -15232,7 +15783,8 @@
         {
           "text": "用染",
           "pinyin": "yòng rǎn",
-          "hanviet": "Dụng Nhiễm"
+          "hanviet": "Dụng Nhiễm",
+          "meaning_vi": "Dụng Nhiễm"
         },
         {
           "text": "了",
@@ -15245,7 +15797,8 @@
         {
           "text": "破伤风",
           "pinyin": "pò shāng fēng",
-          "hanviet": "Phá Thương Phong"
+          "hanviet": "Phá Thương Phong",
+          "meaning_vi": "uốn ván"
         },
         {
           "text": "的",
@@ -15274,12 +15827,14 @@
         {
           "text": "血清",
           "pinyin": "xuè qīng",
-          "hanviet": "Huyết Thanh"
+          "hanviet": "Huyết Thanh",
+          "meaning_vi": "huyết thanh"
         },
         {
           "text": "制备",
           "pinyin": "zhì bèi",
-          "hanviet": "Chế Bị"
+          "hanviet": "Chế Bị",
+          "meaning_vi": "Chế Bị"
         },
         {
           "text": "的",
@@ -15321,7 +15876,8 @@
         {
           "text": "沉痛",
           "pinyin": "chén tòng",
-          "hanviet": "Trầm Thống"
+          "hanviet": "Trầm Thống",
+          "meaning_vi": "Trầm Thống"
         },
         {
           "text": "的",
@@ -15345,7 +15901,8 @@
         {
           "text": "美国国会",
           "pinyin": "měi guó guó huì",
-          "hanviet": "Mỹ Quốc Quốc Hội"
+          "hanviet": "Mỹ Quốc Quốc Hội",
+          "meaning_vi": "Mỹ Quốc Quốc Hội"
         },
         {
           "text": "于",
@@ -15385,17 +15942,20 @@
         {
           "text": "第一个",
           "pinyin": "dì yí gè",
-          "hanviet": "Đệ Nhất Cá"
+          "hanviet": "Đệ Nhất Cá",
+          "meaning_vi": "cái đầu tiên"
         },
         {
           "text": "生物制品",
           "pinyin": "shēng wù zhì pǐn",
-          "hanviet": "Sinh Vật Chế Phẩm"
+          "hanviet": "Sinh Vật Chế Phẩm",
+          "meaning_vi": "Sinh Vật Chế Phẩm"
         },
         {
           "text": "管制",
           "pinyin": "guǎn zhì",
-          "hanviet": "Quản Chế"
+          "hanviet": "Quản Chế",
+          "meaning_vi": "Quản Chế"
         },
         {
           "text": "法规",
@@ -15438,7 +15998,8 @@
         {
           "text": "血清",
           "pinyin": "xuè qīng",
-          "hanviet": "Huyết Thanh"
+          "hanviet": "Huyết Thanh",
+          "meaning_vi": "huyết thanh"
         },
         {
           "text": "和",
@@ -15451,12 +16012,14 @@
         {
           "text": "毒素",
           "pinyin": "dú sù",
-          "hanviet": "Độc Tố"
+          "hanviet": "Độc Tố",
+          "meaning_vi": "chất độc"
         },
         {
           "text": "管制法",
           "pinyin": "guǎn zhì fǎ",
-          "hanviet": "Quản Chế Pháp"
+          "hanviet": "Quản Chế Pháp",
+          "meaning_vi": "Quản Chế Pháp"
         },
         {
           "text": "。"
@@ -15498,7 +16061,8 @@
         {
           "text": "权威性",
           "pinyin": "quán wēi xìng",
-          "hanviet": "Quyền Uy Tính"
+          "hanviet": "Quyền Uy Tính",
+          "meaning_vi": "Quyền Uy Tính"
         },
         {
           "text": "的",
@@ -15511,7 +16075,8 @@
         {
           "text": "美国",
           "pinyin": "měi guó",
-          "hanviet": "Mỹ Quốc"
+          "hanviet": "Mỹ Quốc",
+          "meaning_vi": "Hoa Kỳ"
         },
         {
           "text": "食品",
@@ -15548,7 +16113,8 @@
         {
           "text": "署",
           "pinyin": "shǔ",
-          "hanviet": "Thự"
+          "hanviet": "Thự",
+          "meaning_vi": "Thự"
         },
         {
           "text": "（"
@@ -15607,7 +16173,8 @@
         {
           "text": "吕贝克",
           "pinyin": "lǚ bèi kè",
-          "hanviet": "Lữ Bối Khắc"
+          "hanviet": "Lữ Bối Khắc",
+          "meaning_vi": "Lữ Bối Khắc"
         },
         {
           "text": "灾难",
@@ -15620,7 +16187,8 @@
         {
           "text": "卡介苗",
           "pinyin": "kǎ jiè miáo",
-          "hanviet": "Ca Giới Miêu"
+          "hanviet": "Ca Giới Miêu",
+          "meaning_vi": "Ca Giới Miêu"
         },
         {
           "text": "在",
@@ -15657,7 +16225,8 @@
         {
           "text": "口服",
           "pinyin": "kǒu fú",
-          "hanviet": "Khẩu Phục"
+          "hanviet": "Khẩu Phục",
+          "meaning_vi": "Bằng miệng"
         },
         {
           "text": "的",
@@ -15694,12 +16263,14 @@
         {
           "text": "免疫预防",
           "pinyin": "miǎn yì yù fáng",
-          "hanviet": "Miễn Dịch Dự Phòng"
+          "hanviet": "Miễn Dịch Dự Phòng",
+          "meaning_vi": "Miễn Dịch Dự Phòng"
         },
         {
           "text": "肺结核病",
           "pinyin": "fèi jié hé bìng",
-          "hanviet": "Phế Kết Hạch Bệnh"
+          "hanviet": "Phế Kết Hạch Bệnh",
+          "meaning_vi": "Phế Kết Hạch Bệnh"
         },
         {
           "text": "的",
@@ -15766,7 +16337,8 @@
         {
           "text": "德国",
           "pinyin": "dé guó",
-          "hanviet": "Đức Quốc"
+          "hanviet": "Đức Quốc",
+          "meaning_vi": "nước Đức"
         },
         {
           "text": "的",
@@ -15779,7 +16351,8 @@
         {
           "text": "吕贝克",
           "pinyin": "lǚ bèi kè",
-          "hanviet": "Lữ Bối Khắc"
+          "hanviet": "Lữ Bối Khắc",
+          "meaning_vi": "Lữ Bối Khắc"
         },
         {
           "text": "，"
@@ -15814,7 +16387,8 @@
         {
           "text": "误服",
           "pinyin": "wù fú",
-          "hanviet": "Ngộ Phục"
+          "hanviet": "Ngộ Phục",
+          "meaning_vi": "Ngộ Phục"
         },
         {
           "text": "了",
@@ -15835,7 +16409,8 @@
         {
           "text": "致病性",
           "pinyin": "zhì bìng xìng",
-          "hanviet": "Trí Bệnh Tính"
+          "hanviet": "Trí Bệnh Tính",
+          "meaning_vi": "Trí Bệnh Tính"
         },
         {
           "text": "的",
@@ -15848,7 +16423,8 @@
         {
           "text": "结核杆菌",
           "pinyin": "jié hé gǎn jūn",
-          "hanviet": "Kết Hạch Can Khuẩn"
+          "hanviet": "Kết Hạch Can Khuẩn",
+          "meaning_vi": "Mycobacteria bệnh lao"
         },
         {
           "text": "，"
@@ -15864,12 +16440,14 @@
         {
           "text": "不是",
           "pinyin": "bú shì",
-          "hanviet": "Bất Thị"
+          "hanviet": "Bất Thị",
+          "meaning_vi": "Không"
         },
         {
           "text": "减毒",
           "pinyin": "jiǎn dú",
-          "hanviet": "Giảm Độc"
+          "hanviet": "Giảm Độc",
+          "meaning_vi": "Giảm Độc"
         },
         {
           "text": "的",
@@ -15882,7 +16460,8 @@
         {
           "text": "卡介苗",
           "pinyin": "kǎ jiè miáo",
-          "hanviet": "Ca Giới Miêu"
+          "hanviet": "Ca Giới Miêu",
+          "meaning_vi": "Ca Giới Miêu"
         },
         {
           "text": "。"
@@ -15965,7 +16544,8 @@
         {
           "text": "不到",
           "pinyin": "bú dào",
-          "hanviet": "Bất Đáo"
+          "hanviet": "Bất Đáo",
+          "meaning_vi": "ít hơn"
         },
         {
           "text": "1"
@@ -15989,7 +16569,8 @@
         {
           "text": "夭折",
           "pinyin": "yāo zhé",
-          "hanviet": "Yểu Chiết"
+          "hanviet": "Yểu Chiết",
+          "meaning_vi": "Yểu Chiết"
         },
         {
           "text": "。"
@@ -16042,12 +16623,14 @@
         {
           "text": "是因为",
           "pinyin": "shì yīn wèi",
-          "hanviet": "Thị Nhân Vi"
+          "hanviet": "Thị Nhân Vi",
+          "meaning_vi": "Đó là bởi vì"
         },
         {
           "text": "有毒",
           "pinyin": "yǒu dú",
-          "hanviet": "Hữu Độc"
+          "hanviet": "Hữu Độc",
+          "meaning_vi": "chất độc"
         },
         {
           "text": "力",
@@ -16068,7 +16651,8 @@
         {
           "text": "结核杆菌",
           "pinyin": "jié hé gǎn jūn",
-          "hanviet": "Kết Hạch Can Khuẩn"
+          "hanviet": "Kết Hạch Can Khuẩn",
+          "meaning_vi": "Mycobacteria bệnh lao"
         },
         {
           "text": "和",
@@ -16081,12 +16665,14 @@
         {
           "text": "卡介苗",
           "pinyin": "kǎ jiè miáo",
-          "hanviet": "Ca Giới Miêu"
+          "hanviet": "Ca Giới Miêu",
+          "meaning_vi": "Ca Giới Miêu"
         },
         {
           "text": "菌种",
           "pinyin": "jūn zhǒng",
-          "hanviet": "Khuẩn Chủng"
+          "hanviet": "Khuẩn Chủng",
+          "meaning_vi": "Khuẩn Chủng"
         },
         {
           "text": "保存",
@@ -16107,7 +16693,8 @@
         {
           "text": "同一个",
           "pinyin": "tóng yī gè",
-          "hanviet": "Đồng Nhất Cá"
+          "hanviet": "Đồng Nhất Cá",
+          "meaning_vi": "Đồng Nhất Cá"
         },
         {
           "text": "实验室",
@@ -16144,7 +16731,8 @@
         {
           "text": "误用",
           "pinyin": "wù yòng",
-          "hanviet": "Ngộ Dụng"
+          "hanviet": "Ngộ Dụng",
+          "meaning_vi": "Ngộ Dụng"
         },
         {
           "text": "。"
@@ -16162,7 +16750,8 @@
         {
           "text": "金葡菌",
           "pinyin": "jīn pú jūn",
-          "hanviet": "Kim Bồ Khuẩn"
+          "hanviet": "Kim Bồ Khuẩn",
+          "meaning_vi": "Kim Bồ Khuẩn"
         },
         {
           "text": "污染",
@@ -16175,7 +16764,8 @@
         {
           "text": "白喉",
           "pinyin": "bái hóu",
-          "hanviet": "Bạch Hầu"
+          "hanviet": "Bạch Hầu",
+          "meaning_vi": "bệnh bạch hầu"
         },
         {
           "text": "疫苗",
@@ -16220,7 +16810,8 @@
         {
           "text": "白喉",
           "pinyin": "bái hóu",
-          "hanviet": "Bạch Hầu"
+          "hanviet": "Bạch Hầu",
+          "meaning_vi": "bệnh bạch hầu"
         },
         {
           "text": "疫苗",
@@ -16241,12 +16832,14 @@
         {
           "text": "白喉",
           "pinyin": "bái hóu",
-          "hanviet": "Bạch Hầu"
+          "hanviet": "Bạch Hầu",
+          "meaning_vi": "bệnh bạch hầu"
         },
         {
           "text": "类毒素",
           "pinyin": "lèi dú sù",
-          "hanviet": "Loại Độc Tố"
+          "hanviet": "Loại Độc Tố",
+          "meaning_vi": "Loại Độc Tố"
         },
         {
           "text": "和",
@@ -16259,12 +16852,14 @@
         {
           "text": "白喉",
           "pinyin": "bái hóu",
-          "hanviet": "Bạch Hầu"
+          "hanviet": "Bạch Hầu",
+          "meaning_vi": "bệnh bạch hầu"
         },
         {
           "text": "抗毒素",
           "pinyin": "kàng dú sù",
-          "hanviet": "Kháng Độc Tố"
+          "hanviet": "Kháng Độc Tố",
+          "meaning_vi": "Thuốc kháng độc tố"
         },
         {
           "text": "的",
@@ -16277,7 +16872,8 @@
         {
           "text": "混合物",
           "pinyin": "hùn hé wù",
-          "hanviet": "Hỗn Cáp Vật"
+          "hanviet": "Hỗn Cáp Vật",
+          "meaning_vi": "Hỗn Cáp Vật"
         },
         {
           "text": "。"
@@ -16303,7 +16899,8 @@
         {
           "text": "澳大利亚",
           "pinyin": "ào dà lì yà",
-          "hanviet": "Úc Đại Lợi Á"
+          "hanviet": "Úc Đại Lợi Á",
+          "meaning_vi": "Úc"
         },
         {
           "text": "的",
@@ -16316,7 +16913,8 @@
         {
           "text": "班达堡",
           "pinyin": "bān dá bǎo",
-          "hanviet": "Ban Đạt Bảo"
+          "hanviet": "Ban Đạt Bảo",
+          "meaning_vi": "Ban Đạt Bảo"
         },
         {
           "text": "，"
@@ -16332,12 +16930,14 @@
         {
           "text": "这种",
           "pinyin": "zhè zhǒng",
-          "hanviet": "Giá Chủng"
+          "hanviet": "Giá Chủng",
+          "meaning_vi": "Loại này"
         },
         {
           "text": "白喉",
           "pinyin": "bái hóu",
-          "hanviet": "Bạch Hầu"
+          "hanviet": "Bạch Hầu",
+          "meaning_vi": "bệnh bạch hầu"
         },
         {
           "text": "疫苗",
@@ -16398,7 +16998,8 @@
         {
           "text": "防腐剂",
           "pinyin": "fáng fǔ jì",
-          "hanviet": "Phòng Hủ Tễ"
+          "hanviet": "Phòng Hủ Tễ",
+          "meaning_vi": "Phòng Hủ Tễ"
         },
         {
           "text": "，"
@@ -16414,7 +17015,8 @@
         {
           "text": "一瓶",
           "pinyin": "yī píng",
-          "hanviet": "Nhất Bình"
+          "hanviet": "Nhất Bình",
+          "meaning_vi": "một cái chai"
         },
         {
           "text": "疫苗",
@@ -16435,12 +17037,14 @@
         {
           "text": "金黄色",
           "pinyin": "jīn huáng sè",
-          "hanviet": "Kim Hoàng Sắc"
+          "hanviet": "Kim Hoàng Sắc",
+          "meaning_vi": "Kim Hoàng Sắc"
         },
         {
           "text": "葡萄球菌",
           "pinyin": "pú táo qiú jūn",
-          "hanviet": "Bồ Đào Cầu Khuẩn"
+          "hanviet": "Bồ Đào Cầu Khuẩn",
+          "meaning_vi": "Bồ Đào Cầu Khuẩn"
         },
         {
           "text": "污染",
@@ -16485,17 +17089,20 @@
         {
           "text": "接种",
           "pinyin": "jiē zhǒng",
-          "hanviet": "Tiếp Chủng"
+          "hanviet": "Tiếp Chủng",
+          "meaning_vi": "tiêm chủng"
         },
         {
           "text": "该瓶",
           "pinyin": "gāi píng",
-          "hanviet": "Cai Bình"
+          "hanviet": "Cai Bình",
+          "meaning_vi": "Cai Bình"
         },
         {
           "text": "白喉",
           "pinyin": "bái hóu",
-          "hanviet": "Bạch Hầu"
+          "hanviet": "Bạch Hầu",
+          "meaning_vi": "bệnh bạch hầu"
         },
         {
           "text": "疫苗",
@@ -16546,12 +17153,14 @@
         {
           "text": "名死于",
           "pinyin": "míng sǐ yú",
-          "hanviet": "Danh Tử Vu"
+          "hanviet": "Danh Tử Vu",
+          "meaning_vi": "Danh Tử Vu"
         },
         {
           "text": "败血症",
           "pinyin": "bài xuè zhèng",
-          "hanviet": "Bại Huyết Chứng"
+          "hanviet": "Bại Huyết Chứng",
+          "meaning_vi": "Bại Huyết Chứng"
         },
         {
           "text": "，"
@@ -16640,7 +17249,8 @@
         {
           "text": "安然无恙",
           "pinyin": "ān rán wú yàng",
-          "hanviet": "An Nhiên Vô Dạng"
+          "hanviet": "An Nhiên Vô Dạng",
+          "meaning_vi": "an toàn và âm thanh"
         },
         {
           "text": "。"
@@ -16658,12 +17268,14 @@
         {
           "text": "口服",
           "pinyin": "kǒu fú",
-          "hanviet": "Khẩu Phục"
+          "hanviet": "Khẩu Phục",
+          "meaning_vi": "Bằng miệng"
         },
         {
           "text": "伤寒",
           "pinyin": "shāng hán",
-          "hanviet": "Thương Hàn"
+          "hanviet": "Thương Hàn",
+          "meaning_vi": "sốt thương hàn"
         },
         {
           "text": "疫苗",
@@ -16684,7 +17296,8 @@
         {
           "text": "灭活",
           "pinyin": "miè huó",
-          "hanviet": "Diệt Hoạt"
+          "hanviet": "Diệt Hoạt",
+          "meaning_vi": "Diệt Hoạt"
         },
         {
           "text": "不",
@@ -16727,7 +17340,8 @@
         {
           "text": "美国",
           "pinyin": "měi guó",
-          "hanviet": "Mỹ Quốc"
+          "hanviet": "Mỹ Quốc",
+          "meaning_vi": "Hoa Kỳ"
         },
         {
           "text": "军队",
@@ -16756,7 +17370,8 @@
         {
           "text": "细菌学家",
           "pinyin": "xì jūn xué jiā",
-          "hanviet": "Tế Khuẩn Học Gia"
+          "hanviet": "Tế Khuẩn Học Gia",
+          "meaning_vi": "Tế Khuẩn Học Gia"
         },
         {
           "text": "建议",
@@ -16777,12 +17392,14 @@
         {
           "text": "口服",
           "pinyin": "kǒu fú",
-          "hanviet": "Khẩu Phục"
+          "hanviet": "Khẩu Phục",
+          "meaning_vi": "Bằng miệng"
         },
         {
           "text": "伤寒",
           "pinyin": "shāng hán",
-          "hanviet": "Thương Hàn"
+          "hanviet": "Thương Hàn",
+          "meaning_vi": "sốt thương hàn"
         },
         {
           "text": "死",
@@ -16819,7 +17436,8 @@
         {
           "text": "伤寒病",
           "pinyin": "shāng hán bìng",
-          "hanviet": "Thương Hàn Bệnh"
+          "hanviet": "Thương Hàn Bệnh",
+          "meaning_vi": "sốt thương hàn"
         },
         {
           "text": "。"
@@ -16837,12 +17455,14 @@
         {
           "text": "伤寒",
           "pinyin": "shāng hán",
-          "hanviet": "Thương Hàn"
+          "hanviet": "Thương Hàn",
+          "meaning_vi": "sốt thương hàn"
         },
         {
           "text": "菌",
           "pinyin": "jūn",
-          "hanviet": "Khuẩn"
+          "hanviet": "Khuẩn",
+          "meaning_vi": "Khuẩn"
         },
         {
           "text": "培养",
@@ -16855,7 +17475,8 @@
         {
           "text": "物经",
           "pinyin": "wù jīng",
-          "hanviet": "Vật Kinh"
+          "hanviet": "Vật Kinh",
+          "meaning_vi": "Vật Kinh"
         },
         {
           "text": "56"
@@ -16882,7 +17503,8 @@
         {
           "text": "灭活",
           "pinyin": "miè huó",
-          "hanviet": "Diệt Hoạt"
+          "hanviet": "Diệt Hoạt",
+          "meaning_vi": "Diệt Hoạt"
         },
         {
           "text": "后",
@@ -16968,7 +17590,8 @@
         {
           "text": "伤寒",
           "pinyin": "shāng hán",
-          "hanviet": "Thương Hàn"
+          "hanviet": "Thương Hàn",
+          "meaning_vi": "sốt thương hàn"
         },
         {
           "text": "热",
@@ -16984,7 +17607,8 @@
         {
           "text": "另有",
           "pinyin": "lìng yǒu",
-          "hanviet": "Lánh Hữu"
+          "hanviet": "Lánh Hữu",
+          "meaning_vi": "Ngoài ra"
         },
         {
           "text": "3"
@@ -17008,12 +17632,14 @@
         {
           "text": "口服",
           "pinyin": "kǒu fú",
-          "hanviet": "Khẩu Phục"
+          "hanviet": "Khẩu Phục",
+          "meaning_vi": "Bằng miệng"
         },
         {
           "text": "这种",
           "pinyin": "zhè zhǒng",
-          "hanviet": "Giá Chủng"
+          "hanviet": "Giá Chủng",
+          "meaning_vi": "Loại này"
         },
         {
           "text": "疫苗",
@@ -17034,7 +17660,8 @@
         {
           "text": "剂后",
           "pinyin": "jì hòu",
-          "hanviet": "Tễ Hậu"
+          "hanviet": "Tễ Hậu",
+          "meaning_vi": "Tễ Hậu"
         },
         {
           "text": "的",
@@ -17144,7 +17771,8 @@
         {
           "text": "这种",
           "pinyin": "zhè zhǒng",
-          "hanviet": "Giá Chủng"
+          "hanviet": "Giá Chủng",
+          "meaning_vi": "Loại này"
         },
         {
           "text": "疫苗",
@@ -17208,7 +17836,8 @@
         {
           "text": "每毫升",
           "pinyin": "měi háo shēng",
-          "hanviet": "Mỗi Hào Thăng"
+          "hanviet": "Mỗi Hào Thăng",
+          "meaning_vi": "Mỗi Hào Thăng"
         },
         {
           "text": "死",
@@ -17286,7 +17915,8 @@
         {
           "text": "没",
           "pinyin": "méi",
-          "hanviet": "Một"
+          "hanviet": "Một",
+          "meaning_vi": "không có; chưa"
         },
         {
           "text": "被",
@@ -17299,7 +17929,8 @@
         {
           "text": "热灭活",
           "pinyin": "rè miè huó",
-          "hanviet": "Nhiệt Diệt Hoạt"
+          "hanviet": "Nhiệt Diệt Hoạt",
+          "meaning_vi": "Nhiệt Diệt Hoạt"
         },
         {
           "text": "而",
@@ -17349,7 +17980,8 @@
         {
           "text": "卡特",
           "pinyin": "kǎ tè",
-          "hanviet": "Ca Đặc"
+          "hanviet": "Ca Đặc",
+          "meaning_vi": "Ca Đặc"
         },
         {
           "text": "实验室",
@@ -17370,12 +18002,14 @@
         {
           "text": "灭活",
           "pinyin": "miè huó",
-          "hanviet": "Diệt Hoạt"
+          "hanviet": "Diệt Hoạt",
+          "meaning_vi": "Diệt Hoạt"
         },
         {
           "text": "脊髓灰质炎",
           "pinyin": "jí suǐ huī zhì yán",
-          "hanviet": "Tích Tuỷ Hôi Chất Viêm"
+          "hanviet": "Tích Tuỷ Hôi Chất Viêm",
+          "meaning_vi": "bệnh bại liệt"
         },
         {
           "text": "疫苗",
@@ -17396,7 +18030,8 @@
         {
           "text": "临床实验",
           "pinyin": "lín chuáng shí yàn",
-          "hanviet": "Lâm Sàng Thực Nghiệm"
+          "hanviet": "Lâm Sàng Thực Nghiệm",
+          "meaning_vi": "thử nghiệm lâm sàng"
         },
         {
           "text": "在",
@@ -17431,7 +18066,8 @@
         {
           "text": "获得成功",
           "pinyin": "huò dé chéng gōng",
-          "hanviet": "Hoạch Đắc Thành Công"
+          "hanviet": "Hoạch Đắc Thành Công",
+          "meaning_vi": "Hoạch Đắc Thành Công"
         },
         {
           "text": "以后",
@@ -17447,7 +18083,8 @@
         {
           "text": "美国",
           "pinyin": "měi guó",
-          "hanviet": "Mỹ Quốc"
+          "hanviet": "Mỹ Quốc",
+          "meaning_vi": "Hoa Kỳ"
         },
         {
           "text": "FDA"
@@ -17455,7 +18092,8 @@
         {
           "text": "很快",
           "pinyin": "hěn kuài",
-          "hanviet": "Ngận Khoái"
+          "hanviet": "Ngận Khoái",
+          "meaning_vi": "sớm thôi"
         },
         {
           "text": "批准",
@@ -17476,7 +18114,8 @@
         {
           "text": "数家",
           "pinyin": "shù jiā",
-          "hanviet": "Sổ Gia"
+          "hanviet": "Sổ Gia",
+          "meaning_vi": "Sổ Gia"
         },
         {
           "text": "厂商",
@@ -17497,7 +18136,8 @@
         {
           "text": "这种",
           "pinyin": "zhè zhǒng",
-          "hanviet": "Giá Chủng"
+          "hanviet": "Giá Chủng",
+          "meaning_vi": "Loại này"
         },
         {
           "text": "死",
@@ -17607,7 +18247,8 @@
         {
           "text": "共有",
           "pinyin": "gòng yǒu",
-          "hanviet": "Cộng Hữu"
+          "hanviet": "Cộng Hữu",
+          "meaning_vi": "chia sẻ"
         },
         {
           "text": "12"
@@ -17631,7 +18272,8 @@
         {
           "text": "接种",
           "pinyin": "jiē zhǒng",
-          "hanviet": "Tiếp Chủng"
+          "hanviet": "Tiếp Chủng",
+          "meaning_vi": "tiêm chủng"
         },
         {
           "text": "了",
@@ -17652,12 +18294,14 @@
         {
           "text": "加州",
           "pinyin": "jiā zhōu",
-          "hanviet": "Gia Châu"
+          "hanviet": "Gia Châu",
+          "meaning_vi": "California"
         },
         {
           "text": "伯克莱",
           "pinyin": "bó kè lái",
-          "hanviet": "Bá Khắc Lai"
+          "hanviet": "Bá Khắc Lai",
+          "meaning_vi": "Berkeley"
         },
         {
           "text": "·"
@@ -17665,7 +18309,8 @@
         {
           "text": "卡特",
           "pinyin": "kǎ tè",
-          "hanviet": "Ca Đặc"
+          "hanviet": "Ca Đặc",
+          "meaning_vi": "Ca Đặc"
         },
         {
           "text": "实验室",
@@ -17678,7 +18323,8 @@
         {
           "text": "制备",
           "pinyin": "zhì bèi",
-          "hanviet": "Chế Bị"
+          "hanviet": "Chế Bị",
+          "meaning_vi": "Chế Bị"
         },
         {
           "text": "的",
@@ -17691,12 +18337,14 @@
         {
           "text": "两个",
           "pinyin": "liǎng gè",
-          "hanviet": "Lưỡng Cá"
+          "hanviet": "Lưỡng Cá",
+          "meaning_vi": "hai"
         },
         {
           "text": "批号",
           "pinyin": "pī hào",
-          "hanviet": "Phê Hiệu"
+          "hanviet": "Phê Hiệu",
+          "meaning_vi": "Phê Hiệu"
         },
         {
           "text": "的",
@@ -17709,7 +18357,8 @@
         {
           "text": "脊髓灰质炎",
           "pinyin": "jí suǐ huī zhì yán",
-          "hanviet": "Tích Tuỷ Hôi Chất Viêm"
+          "hanviet": "Tích Tuỷ Hôi Chất Viêm",
+          "meaning_vi": "bệnh bại liệt"
         },
         {
           "text": "疫苗",
@@ -17752,7 +18401,8 @@
         {
           "text": "接种",
           "pinyin": "jiē zhǒng",
-          "hanviet": "Tiếp Chủng"
+          "hanviet": "Tiếp Chủng",
+          "meaning_vi": "tiêm chủng"
         },
         {
           "text": "者",
@@ -17765,7 +18415,8 @@
         {
           "text": "及其",
           "pinyin": "jí qí",
-          "hanviet": "Cập Kỳ"
+          "hanviet": "Cập Kỳ",
+          "meaning_vi": "và nó"
         },
         {
           "text": "89"
@@ -17781,7 +18432,8 @@
         {
           "text": "家庭成员",
           "pinyin": "jiā tíng chéng yuán",
-          "hanviet": "Gia Đình Thành Viên"
+          "hanviet": "Gia Đình Thành Viên",
+          "meaning_vi": "Gia Đình Thành Viên"
         },
         {
           "text": "发生",
@@ -17794,7 +18446,8 @@
         {
           "text": "小儿麻痹症",
           "pinyin": "xiǎo ér má bì zhèng",
-          "hanviet": "Tiểu Nhi Ma Tý Chứng"
+          "hanviet": "Tiểu Nhi Ma Tý Chứng",
+          "meaning_vi": "Tiểu Nhi Ma Tý Chứng"
         },
         {
           "text": "。"
@@ -17820,7 +18473,8 @@
         {
           "text": "接种",
           "pinyin": "jiē zhǒng",
-          "hanviet": "Tiếp Chủng"
+          "hanviet": "Tiếp Chủng",
+          "meaning_vi": "tiêm chủng"
         },
         {
           "text": "者",
@@ -17857,7 +18511,8 @@
         {
           "text": "潜伏期",
           "pinyin": "qián fú qī",
-          "hanviet": "Tiềm Phục Kỳ"
+          "hanviet": "Tiềm Phục Kỳ",
+          "meaning_vi": "Tiềm Phục Kỳ"
         },
         {
           "text": "是",
@@ -17940,7 +18595,8 @@
         {
           "text": "潜伏期",
           "pinyin": "qián fú qī",
-          "hanviet": "Tiềm Phục Kỳ"
+          "hanviet": "Tiềm Phục Kỳ",
+          "meaning_vi": "Tiềm Phục Kỳ"
         },
         {
           "text": "是",
@@ -17993,7 +18649,8 @@
         {
           "text": "纰漏",
           "pinyin": "pī lòu",
-          "hanviet": "Phi Lậu"
+          "hanviet": "Phi Lậu",
+          "meaning_vi": "Phi Lậu"
         },
         {
           "text": "出",
@@ -18022,22 +18679,26 @@
         {
           "text": "福尔马林",
           "pinyin": "fú ěr mǎ lín",
-          "hanviet": "Phúc Nhĩ Mã Lâm"
+          "hanviet": "Phúc Nhĩ Mã Lâm",
+          "meaning_vi": "Phúc Nhĩ Mã Lâm"
         },
         {
           "text": "灭活",
           "pinyin": "miè huó",
-          "hanviet": "Diệt Hoạt"
+          "hanviet": "Diệt Hoạt",
+          "meaning_vi": "Diệt Hoạt"
         },
         {
           "text": "野生型",
           "pinyin": "yě shēng xíng",
-          "hanviet": "Dã Sinh Hình"
+          "hanviet": "Dã Sinh Hình",
+          "meaning_vi": "Dã Sinh Hình"
         },
         {
           "text": "脊髓灰质炎",
           "pinyin": "jí suǐ huī zhì yán",
-          "hanviet": "Tích Tuỷ Hôi Chất Viêm"
+          "hanviet": "Tích Tuỷ Hôi Chất Viêm",
+          "meaning_vi": "bệnh bại liệt"
         },
         {
           "text": "病毒",
@@ -18117,7 +18778,8 @@
         {
           "text": "杀死",
           "pinyin": "shā sǐ",
-          "hanviet": "Sát Tử"
+          "hanviet": "Sát Tử",
+          "meaning_vi": "giết"
         },
         {
           "text": "。"

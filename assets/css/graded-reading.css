@@ -2118,8 +2118,45 @@ body.graded-translation-hidden .graded-sentence-vi {
 
 .spotlight-top {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
+}
+
+.spotlight-word-group {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.spotlight-speak-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border: none;
+  border-radius: 50%;
+  background: var(--graded-chip-bg);
+  color: var(--graded-vi-title);
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+
+.spotlight-speak-btn svg {
+  width: 13px;
+  height: 13px;
+}
+
+.spotlight-speak-btn:hover {
+  transform: scale(1.1);
+  color: var(--graded-text-primary);
+  background: var(--graded-filter-chip-active-bg, rgba(66, 99, 235, 0.15));
+}
+
+.spotlight-speak-btn.playing {
+  color: #fff;
+  background: var(--graded-vi-title);
 }
 
 .spotlight-hz {

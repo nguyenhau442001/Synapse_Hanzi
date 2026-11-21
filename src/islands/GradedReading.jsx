@@ -19,6 +19,13 @@ let manifest = [];
 let manifestLoaded = false;
 const storyCache = {};
 
+const SPEAKER_ICON = (
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M11 5 6 9H2v6h4l5 4V5Z"></path>
+    <path d="M15.5 8.5a5 5 0 0 1 0 7"></path>
+  </svg>
+);
+
 // ---- Manga Leisure Reading state ---------------------------------------------------------------
 const readingMode = signal('articles'); // 'articles' | 'manga'
 const activeMangaStory = signal(null);
@@ -332,13 +339,9 @@ async function loadStory(storyId) {
 async function ensureMangaManifestLoaded() {
   if (mangaManifestLoaded && mangaManifestData.length) return mangaManifestData;
   try {
-    const [resDoraemon, resPc] = await Promise.allSettled([
-      fetch('database/readings/manga/doraemon/manifest.json?v=' + Date.now()),
-      fetch('database/readings/manga/peppercarrot/manifest.json?v=' + Date.now())
-    ]);
-    const dList = resDoraemon.status === 'fulfilled' && resDoraemon.value.ok ? await resDoraemon.value.json() : [];
-    const pcList = resPc.status === 'fulfilled' && resPc.value.ok ? await resPc.value.json() : [];
-    mangaManifestData = [...dList, ...pcList];
+    const res = await fetch('database/readings/manga/peppercarrot/manifest.json?v=' + Date.now());
+    if (!res.ok) throw new Error('Không thể tải danh sách truyện tranh.');
+    mangaManifestData = await res.json();
     mangaManifestLoaded = true;
     return mangaManifestData;
   } catch (e) {
@@ -351,12 +354,7 @@ async function loadMangaStory(mangaId) {
   if (mangaStoryCache[mangaId]) return mangaStoryCache[mangaId];
   const list = await ensureMangaManifestLoaded();
   const item = list.find((m) => m.id === mangaId);
-  let file = item ? item.file : null;
-  if (!file) {
-    file = mangaId.startsWith('doraemon')
-      ? `database/readings/manga/doraemon/${mangaId}.json`
-      : `database/readings/manga/peppercarrot/${mangaId}.json`;
-  }
+  const file = item ? item.file : `database/readings/manga/peppercarrot/${mangaId}.json`;
   const res = await fetch(file + '?v=' + Date.now());
   if (!res.ok) throw new Error('Không thể tải truyện tranh: ' + mangaId);
   const data = await res.json();
@@ -619,7 +617,7 @@ function TokenPopover({ token, added }) {
     statusLabel = '⚡ Đang ôn';
   }
   const hanviet = token.hanviet || (typeof window.getWordHanViet === 'function' ? window.getWordHanViet(token.text) : '');
-  const meaning = token.meaning_vi || hanviet || token.text;
+  const meaning = token.meaning_vi || (hanviet ? `Âm Hán-Việt: ${hanviet}` : token.text);
   const btnDone = added || isAlreadyInSrs;
   const audioId = `popover-${token.text}`;
   const speaking = playingId.value === audioId;
@@ -1225,13 +1223,24 @@ function Spotlight({ story }) {
     if (!tok) return null;
     const status = getTokenSrsStatus(tok);
     const label = status === 'mastered' ? 'Đã nhớ' : (status === 'learning' ? 'Đang ôn' : 'Từ mới');
+    const hanviet = tok.hanviet || (typeof window.getWordHanViet === 'function' ? window.getWordHanViet(tok.text) : '');
+    const meaning = tok.meaning_vi || (hanviet ? `Âm Hán-Việt: ${hanviet}` : '—');
+    const audioId = `spotlight-${tok.text}`;
+    const speaking = playingId.value === audioId;
     return [' ', (
       <div key={wid} class="graded-spotlight-item" onClick={(e) => inspectByWordId(wid, e)}>
         <div class="spotlight-top">
-          <span class="spotlight-hz">{tok.text}</span>{' '}
-          <span class="spotlight-py">{tok.pinyin}</span>
+          <div class="spotlight-word-group">
+            <span class="spotlight-hz">{tok.text}</span>{' '}
+            <span class="spotlight-py">{tok.pinyin}</span>
+          </div>{' '}
+          <button type="button" class={speaking ? 'spotlight-speak-btn playing' : 'spotlight-speak-btn'}
+            onClick={(e) => { e.stopPropagation(); speakSentence(tok.text, audioId); }}
+            aria-label={`Nghe phát âm ${tok.text}`} title="Nghe từ này">
+            {SPEAKER_ICON}
+          </button>
         </div>{' '}
-        <div class="spotlight-vi">{tok.meaning_vi}</div>{' '}
+        <div class="spotlight-vi">{meaning}</div>{' '}
         <div style="margin-top: 4px;">
           <span class={`popover-srs-status ${status}`}>{label}</span>
         </div>
@@ -1556,7 +1565,6 @@ function StoryReader({ story }) {
 
 // Series shelves, in reading order. Entries without `collection` land on the first shelf.
 const MANGA_COLLECTIONS = [
-  { key: 'doraemon', zh: '哆啦A梦', vi: 'Doraemon (Đô-rê-mon)', range: 'Tập 21 · Đọc giải trí phi lợi nhuận' },
   { key: 'peppercarrot', zh: '胡椒和胡萝卜', vi: 'Pepper&Carrot', range: 'Tập 1 → 39 · CC BY 4.0' },
 ];
 
@@ -1605,13 +1613,13 @@ function MangaHub() {
 
       <section class="manga-hub-hero">
         <div class="manga-hub-hero-copy">
-          <span class="manga-hub-kicker">TRUYỆN TRANH · ĐỌC GIẢI TRÍ & HỌC TỪ VỰNG</span>
+          <span class="manga-hub-kicker">TRUYỆN TRANH · ĐỌC GIẢI TRÍ</span>
           <h1 class="manga-hub-title">
-            <span class="manga-hub-title-zh" lang="zh-Hans">漫画阅读 · 哆啦A梦 & 胡椒和胡萝卜</span>
-            <span class="manga-hub-title-vi">Truyện Tranh Song Ngữ · Doraemon &amp; Pepper&amp;Carrot</span>
+            <span class="manga-hub-title-zh" lang="zh-Hans">胡椒和胡萝卜</span>
+            <span class="manga-hub-title-vi">Pepper&amp;Carrot</span>
           </h1>
           <p class="manga-hub-desc">
-            Đọc truyện tranh tiếng Trung nguyên bản có hỗ trợ tra từ vựng, pinyin, Hán-Việt và dịch nghĩa theo từng câu và bóng thoại trực tiếp.
+            Truyện về cô phù thủy nhỏ Pepper và chú mèo Carrot, bản tiếng Trung giản thể. Bấm vào một bóng thoại để xem pinyin, nghĩa từng từ và câu dịch.
           </p>
         </div>
         <div class="manga-hub-stats">
@@ -1621,14 +1629,6 @@ function MangaHub() {
           </div>
         </div>
       </section>
-
-      <div class="manga-disclaimer-banner" style="background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--primary, #4263EB); border-radius: 8px; padding: 12px 16px; margin: 16px 0 24px; font-size: 0.85rem; line-height: 1.6; color: var(--text-secondary);">
-        <strong style="color: var(--text); display: block; margin-bottom: 4px;">ℹ️ Ghi chú nguồn gốc & Tuyên bố phi thương mại:</strong>
-        <ul style="margin: 0; padding-left: 20px;">
-          <li><strong>Doraemon (哆啦A梦):</strong> Tác quyền nguyên tác thuộc về tác giả <em>Fujiko F. Fujio</em>, Fujiko Pro và Nhà xuất bản <em>Shogakukan / Hồng Kông Văn Hóa Truyền Tín</em>. Bản số hóa đối chiếu được phục vụ thuần túy cho mục đích nghiên cứu, học tập ngoại ngữ và phi thương mại (Non-profit Educational Fair Use).</li>
-          <li><strong>Pepper&amp;Carrot (胡椒和胡萝卜):</strong> Tác giả David Revoy, phát hành theo giấy phép mở quốc tế <em>Creative Commons Attribution 4.0 (CC BY 4.0)</em>.</li>
-        </ul>
-      </div>
 
       {MANGA_COLLECTIONS.map((c) => {
         const items = mangaManifestData.filter((m) => (m.collection || MANGA_COLLECTIONS[0].key) === c.key);
@@ -1650,7 +1650,9 @@ function MangaHub() {
       })}
 
       <p class="manga-hub-credit">
-        Nguồn: Doraemon © Fujiko Pro & Shogakukan (phi lợi nhuận giáo dục); Pepper&amp;Carrot © David Revoy (CC BY 4.0). Lớp tra từ (pinyin, Hán-Việt, phân tích từ vựng) do Synapse Hanzi biên soạn phục vụ người học tiếng Trung.
+        Nguồn: <a href="https://www.peppercarrot.com" target="_blank" rel="noopener">Pepper&amp;Carrot</a> của David Revoy, giấy phép{' '}
+        <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>. Bản dịch tiếng Trung và tiếng Việt do cộng đồng
+        Pepper&amp;Carrot thực hiện; tên người dịch ghi ở từng tập. Lớp tra từ (pinyin, Hán-Việt, nghĩa) do Synapse Hanzi bổ sung.
       </p>
     </div>
   );
@@ -1745,13 +1747,6 @@ function mangaChapterOrder(story) {
   return order;
 }
 const mangaAddedWords = signal({});
-
-const SPEAKER_ICON = (
-  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-    <path d="M11 5 6 9H2v6h4l5 4V5Z"></path>
-    <path d="M15.5 8.5a5 5 0 0 1 0 7"></path>
-  </svg>
-);
 
 function selectMangaDialogue(d) {
   selectedMangaDialogue.value = d;
@@ -1887,7 +1882,7 @@ function MangaWordPanel({ current, order, onStep }) {
               </button>
             </div>
           </div>
-          <div class="manga-word-meaning">{word.meaning_vi || '—'}</div>
+          <div class="manga-word-meaning">{word.meaning_vi || (word.hanviet ? `Âm Hán-Việt: ${word.hanviet}` : (typeof window.getWordHanViet === 'function' && window.getWordHanViet(word.text) ? `Âm Hán-Việt: ${window.getWordHanViet(word.text)}` : '—'))}</div>
         </div>
       ) : current ? (
         <p class="manga-panel-hint">Chạm vào một từ để xem nghĩa.</p>

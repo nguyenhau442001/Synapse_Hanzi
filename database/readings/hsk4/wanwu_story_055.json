@@ -44,7 +44,8 @@
         {
           "text": "棋",
           "pinyin": "qí",
-          "hanviet": "Kỳ"
+          "hanviet": "Kỳ",
+          "meaning_vi": "cờ vua"
         },
         {
           "text": "、"
@@ -101,7 +102,8 @@
         {
           "text": "一个",
           "pinyin": "yí gè",
-          "hanviet": "Nhất Cá"
+          "hanviet": "Nhất Cá",
+          "meaning_vi": "một"
         },
         {
           "text": "人",
@@ -146,7 +148,8 @@
         {
           "text": "雅事",
           "pinyin": "yǎ shì",
-          "hanviet": "Nhã Sự"
+          "hanviet": "Nhã Sự",
+          "meaning_vi": "Nhã Sự"
         },
         {
           "text": "。"
@@ -178,7 +181,7 @@
           "hanviet": "Trung Quốc",
           "hsk": 1,
           "word_id": "hsk1_610",
-          "meaning_vi": "trung Quốc"
+          "meaning_vi": "Trung Quốc"
         },
         {
           "text": "人",
@@ -191,7 +194,8 @@
         {
           "text": "所说",
           "pinyin": "suǒ shuō",
-          "hanviet": "Sở Thuyết"
+          "hanviet": "Sở Thuyết",
+          "meaning_vi": "đã nói"
         },
         {
           "text": "的",
@@ -207,7 +211,8 @@
         {
           "text": "棋",
           "pinyin": "qí",
-          "hanviet": "Kỳ"
+          "hanviet": "Kỳ",
+          "meaning_vi": "cờ vua"
         },
         {
           "text": "”"
@@ -293,7 +298,8 @@
         {
           "text": "中国象棋",
           "pinyin": "zhōng guó xiàng qí",
-          "hanviet": "Trung Quốc Tượng Kỳ"
+          "hanviet": "Trung Quốc Tượng Kỳ",
+          "meaning_vi": "cờ tướng"
         },
         {
           "text": "则",
@@ -301,7 +307,7 @@
           "hanviet": "Hệ Thống",
           "hsk": 5,
           "word_id": "hsk5_1229",
-          "meaning_vi": "hệ thống"
+          "meaning_vi": "thì, là (liên từ văn viết)"
         },
         {
           "text": "更",
@@ -338,7 +344,8 @@
         {
           "text": "舶来品",
           "pinyin": "bó lái pǐn",
-          "hanviet": "Bạc Lai Phẩm"
+          "hanviet": "Bạc Lai Phẩm",
+          "meaning_vi": "sản phẩm kỳ lạ"
         },
         {
           "text": "。"
@@ -356,7 +363,8 @@
         {
           "text": "孔夫子",
           "pinyin": "kǒng fū zǐ",
-          "hanviet": "Khổng Phu Tử"
+          "hanviet": "Khổng Phu Tử",
+          "meaning_vi": "Khổng Phu Tử"
         },
         {
           "text": "对",
@@ -369,7 +377,8 @@
         {
           "text": "下围棋",
           "pinyin": "xià wéi qí",
-          "hanviet": "Hạ Vi Kỳ"
+          "hanviet": "Hạ Vi Kỳ",
+          "meaning_vi": "Chơi cờ vây"
         },
         {
           "text": "不",
@@ -433,7 +442,7 @@
           "hanviet": "Trung Quốc",
           "hsk": 1,
           "word_id": "hsk1_610",
-          "meaning_vi": "trung Quốc"
+          "meaning_vi": "Trung Quốc"
         },
         {
           "text": "人",
@@ -481,7 +490,8 @@
         {
           "text": "一点",
           "pinyin": "yì diǎn",
-          "hanviet": "Nhất Điểm"
+          "hanviet": "Nhất Điểm",
+          "meaning_vi": "một chút"
         },
         {
           "text": "几乎",
@@ -550,7 +560,8 @@
         {
           "text": "最早",
           "pinyin": "zuì zǎo",
-          "hanviet": "Tối Tảo"
+          "hanviet": "Tối Tảo",
+          "meaning_vi": "sớm nhất"
         },
         {
           "text": "是",
@@ -685,7 +696,8 @@
         {
           "text": "考证",
           "pinyin": "kǎo zhèng",
-          "hanviet": "Khảo Chứng"
+          "hanviet": "Khảo Chứng",
+          "meaning_vi": "Nghiên cứu"
         },
         {
           "text": "了",
@@ -735,7 +747,8 @@
         {
           "text": "称之为",
           "pinyin": "chēng zhī wèi",
-          "hanviet": "Xứng Chi Vi"
+          "hanviet": "Xứng Chi Vi",
+          "meaning_vi": "gọi nó"
         },
         {
           "text": "“"
@@ -743,7 +756,8 @@
         {
           "text": "弈",
           "pinyin": "yì",
-          "hanviet": "Dịch"
+          "hanviet": "Dịch",
+          "meaning_vi": "Dịch"
         },
         {
           "text": "”"
@@ -767,7 +781,7 @@
           "hanviet": "Trung Quốc",
           "hsk": 1,
           "word_id": "hsk1_610",
-          "meaning_vi": "trung Quốc"
+          "meaning_vi": "Trung Quốc"
         },
         {
           "text": "古籍",
@@ -788,7 +802,8 @@
         {
           "text": "最早",
           "pinyin": "zuì zǎo",
-          "hanviet": "Tối Tảo"
+          "hanviet": "Tối Tảo",
+          "meaning_vi": "sớm nhất"
         },
         {
           "text": "提到",
@@ -836,7 +851,8 @@
         {
           "text": "春秋时期",
           "pinyin": "chūn qiū shí qī",
-          "hanviet": "Xuân Thu Thời Kỳ"
+          "hanviet": "Xuân Thu Thời Kỳ",
+          "meaning_vi": "Thời Xuân Thu"
         },
         {
           "text": "的",
@@ -852,7 +868,8 @@
         {
           "text": "左传",
           "pinyin": "zuǒ zhuàn",
-          "hanviet": "Tả Truyền"
+          "hanviet": "Tả Truyền",
+          "meaning_vi": "Đường chuyền trái"
         },
         {
           "text": "》"
@@ -911,7 +928,8 @@
         {
           "text": "一个",
           "pinyin": "yí gè",
-          "hanviet": "Nhất Cá"
+          "hanviet": "Nhất Cá",
+          "meaning_vi": "một"
         },
         {
           "text": "成语",
@@ -941,7 +959,8 @@
         {
           "text": "原句",
           "pinyin": "yuán jù",
-          "hanviet": "Nguyên Câu"
+          "hanviet": "Nguyên Câu",
+          "meaning_vi": "Nguyên Câu"
         },
         {
           "text": "是",
@@ -957,7 +976,8 @@
         {
           "text": "弈者",
           "pinyin": "yì zhě",
-          "hanviet": "Dịch Giả"
+          "hanviet": "Dịch Giả",
+          "meaning_vi": "Dịch Giả"
         },
         {
           "text": "举棋不定",
@@ -973,7 +993,8 @@
         {
           "text": "不胜",
           "pinyin": "bù shèng",
-          "hanviet": "Bất Thắng"
+          "hanviet": "Bất Thắng",
+          "meaning_vi": "Bất khả chiến bại"
         },
         {
           "text": "其",
@@ -986,7 +1007,8 @@
         {
           "text": "耦",
           "pinyin": "ǒu",
-          "hanviet": "Ngẫu"
+          "hanviet": "Ngẫu",
+          "meaning_vi": "Âm Hán-Việt: Ngẫu"
         },
         {
           "text": "”"
@@ -1023,7 +1045,8 @@
         {
           "text": "春秋时期",
           "pinyin": "chūn qiū shí qī",
-          "hanviet": "Xuân Thu Thời Kỳ"
+          "hanviet": "Xuân Thu Thời Kỳ",
+          "meaning_vi": "Thời Xuân Thu"
         },
         {
           "text": "，"
@@ -1039,7 +1062,8 @@
         {
           "text": "孔子",
           "pinyin": "kǒng zi",
-          "hanviet": "Khổng Tử"
+          "hanviet": "Khổng Tử",
+          "meaning_vi": "Khổng Tử"
         },
         {
           "text": "的",
@@ -1055,7 +1079,8 @@
         {
           "text": "论语",
           "pinyin": "lún yǔ",
-          "hanviet": "Luận Ngữ"
+          "hanviet": "Luận Ngữ",
+          "meaning_vi": "Luận Ngữ"
         },
         {
           "text": "》"
@@ -1109,7 +1134,8 @@
         {
           "text": "饱食终日",
           "pinyin": "bǎo shí zhōng rì",
-          "hanviet": "Bão Thực Chung Nhật"
+          "hanviet": "Bão Thực Chung Nhật",
+          "meaning_vi": "Bão Thực Chung Nhật"
         },
         {
           "text": "，"
@@ -1117,7 +1143,8 @@
         {
           "text": "无所用心",
           "pinyin": "wú suǒ yòng xīn",
-          "hanviet": "Vô Sở Dụng Tâm"
+          "hanviet": "Vô Sở Dụng Tâm",
+          "meaning_vi": "Vô Sở Dụng Tâm"
         },
         {
           "text": "，"
@@ -1133,7 +1160,8 @@
         {
           "text": "矣哉",
           "pinyin": "yǐ zāi",
-          "hanviet": "Hĩ Tai"
+          "hanviet": "Hĩ Tai",
+          "meaning_vi": "Hĩ Tai"
         },
         {
           "text": "。"
@@ -1151,17 +1179,20 @@
         {
           "text": "不有",
           "pinyin": "bù yǒu",
-          "hanviet": "Bất Hữu"
+          "hanviet": "Bất Hữu",
+          "meaning_vi": "Không"
         },
         {
           "text": "博弈者",
           "pinyin": "bó yì zhě",
-          "hanviet": "Bác Dịch Giả"
+          "hanviet": "Bác Dịch Giả",
+          "meaning_vi": "Bác Dịch Giả"
         },
         {
           "text": "乎",
           "pinyin": "hū",
-          "hanviet": "Hồ"
+          "hanviet": "Hồ",
+          "meaning_vi": "gần như"
         },
         {
           "text": "？"
@@ -1195,7 +1226,8 @@
         {
           "text": "犹贤乎",
           "pinyin": "yóu xián hū",
-          "hanviet": "Do Hiền Hồ"
+          "hanviet": "Do Hiền Hồ",
+          "meaning_vi": "Do Hiền Hồ"
         },
         {
           "text": "已",
@@ -1254,12 +1286,14 @@
         {
           "text": "整天",
           "pinyin": "zhěng tiān",
-          "hanviet": "Chỉnh Thiên"
+          "hanviet": "Chỉnh Thiên",
+          "meaning_vi": "Chỉnh Thiên"
         },
         {
           "text": "吃饱",
           "pinyin": "chī bǎo",
-          "hanviet": "Cật Bão"
+          "hanviet": "Cật Bão",
+          "meaning_vi": "Cật Bão"
         },
         {
           "text": "了",
@@ -1363,7 +1397,8 @@
         {
           "text": "不是",
           "pinyin": "bú shì",
-          "hanviet": "Bất Thị"
+          "hanviet": "Bất Thị",
+          "meaning_vi": "Không"
         },
         {
           "text": "有",
@@ -1384,7 +1419,8 @@
         {
           "text": "博和弈",
           "pinyin": "bó hé yì",
-          "hanviet": "Bác Hoà Dịch"
+          "hanviet": "Bác Hoà Dịch",
+          "meaning_vi": "Bác Hoà Dịch"
         },
         {
           "text": "的",
@@ -1426,7 +1462,8 @@
         {
           "text": "这种",
           "pinyin": "zhè zhǒng",
-          "hanviet": "Giá Chủng"
+          "hanviet": "Giá Chủng",
+          "meaning_vi": "Loại này"
         },
         {
           "text": "事",
@@ -1479,7 +1516,8 @@
         {
           "text": "做好",
           "pinyin": "zuò hǎo",
-          "hanviet": "Tố Hảo"
+          "hanviet": "Tố Hảo",
+          "meaning_vi": "Tố Hảo"
         },
         {
           "text": "。"
@@ -1522,7 +1560,8 @@
         {
           "text": "博",
           "pinyin": "bó",
-          "hanviet": "Bác"
+          "hanviet": "Bác",
+          "meaning_vi": "Bồ"
         },
         {
           "text": "”"
@@ -1546,7 +1585,8 @@
         {
           "text": "我国",
           "pinyin": "wǒ guó",
-          "hanviet": "Ngã Quốc"
+          "hanviet": "Ngã Quốc",
+          "meaning_vi": "đất nước chúng tôi"
         },
         {
           "text": "古代",
@@ -1559,7 +1599,8 @@
         {
           "text": "一种",
           "pinyin": "yī zhǒng",
-          "hanviet": "Nhất Chủng"
+          "hanviet": "Nhất Chủng",
+          "meaning_vi": "một loại"
         },
         {
           "text": "叫",
@@ -1575,7 +1616,8 @@
         {
           "text": "六博",
           "pinyin": "liù bó",
-          "hanviet": "Lục Bác"
+          "hanviet": "Lục Bác",
+          "meaning_vi": "Lục Bác"
         },
         {
           "text": "”"
@@ -1613,7 +1655,8 @@
         {
           "text": "弈",
           "pinyin": "yì",
-          "hanviet": "Dịch"
+          "hanviet": "Dịch",
+          "meaning_vi": "Dịch"
         },
         {
           "text": "”"
@@ -1682,7 +1725,8 @@
         {
           "text": "看出",
           "pinyin": "kàn chū",
-          "hanviet": "Khán Xuất"
+          "hanviet": "Khán Xuất",
+          "meaning_vi": "xem"
         },
         {
           "text": "，"
@@ -1706,7 +1750,8 @@
         {
           "text": "春秋时期",
           "pinyin": "chūn qiū shí qī",
-          "hanviet": "Xuân Thu Thời Kỳ"
+          "hanviet": "Xuân Thu Thời Kỳ",
+          "meaning_vi": "Thời Xuân Thu"
         },
         {
           "text": "，"
@@ -1730,7 +1775,8 @@
         {
           "text": "我国",
           "pinyin": "wǒ guó",
-          "hanviet": "Ngã Quốc"
+          "hanviet": "Ngã Quốc",
+          "meaning_vi": "đất nước chúng tôi"
         },
         {
           "text": "就",
@@ -1759,7 +1805,8 @@
         {
           "text": "一种",
           "pinyin": "yī zhǒng",
-          "hanviet": "Nhất Chủng"
+          "hanviet": "Nhất Chủng",
+          "meaning_vi": "một loại"
         },
         {
           "text": "很",
@@ -1833,7 +1880,8 @@
         {
           "text": "战国时期",
           "pinyin": "zhàn guó shí qī",
-          "hanviet": "Chiến Quốc Thời Kỳ"
+          "hanviet": "Chiến Quốc Thời Kỳ",
+          "meaning_vi": "Thời Chiến Quốc"
         },
         {
           "text": "，"
@@ -1868,7 +1916,8 @@
         {
           "text": "弈秋",
           "pinyin": "yì qiū",
-          "hanviet": "Dịch Thu"
+          "hanviet": "Dịch Thu",
+          "meaning_vi": "Dịch Thu"
         },
         {
           "text": "”"
@@ -1884,7 +1933,8 @@
         {
           "text": "最早",
           "pinyin": "zuì zǎo",
-          "hanviet": "Tối Tảo"
+          "hanviet": "Tối Tảo",
+          "meaning_vi": "sớm nhất"
         },
         {
           "text": "的",
@@ -1908,7 +1958,8 @@
         {
           "text": "国手",
           "pinyin": "guó shǒu",
-          "hanviet": "Quốc Thủ"
+          "hanviet": "Quốc Thủ",
+          "meaning_vi": "Quốc Thủ"
         },
         {
           "text": "”"
@@ -1943,7 +1994,8 @@
         {
           "text": "留名",
           "pinyin": "liú míng",
-          "hanviet": "Lưu Danh"
+          "hanviet": "Lưu Danh",
+          "meaning_vi": "Lưu Danh"
         },
         {
           "text": "则",
@@ -1951,7 +2003,7 @@
           "hanviet": "Hệ Thống",
           "hsk": 5,
           "word_id": "hsk5_1229",
-          "meaning_vi": "hệ thống"
+          "meaning_vi": "thì, là (liên từ văn viết)"
         },
         {
           "text": "靠",
@@ -1980,12 +2032,14 @@
         {
           "text": "一位",
           "pinyin": "yī wèi",
-          "hanviet": "Nhất Vị"
+          "hanviet": "Nhất Vị",
+          "meaning_vi": "một người"
         },
         {
           "text": "大圣",
           "pinyin": "dà shèng",
-          "hanviet": "Đại Khốt"
+          "hanviet": "Đại Khốt",
+          "meaning_vi": "Đại Khốt"
         },
         {
           "text": "人",
@@ -1998,7 +2052,8 @@
         {
           "text": "孟子",
           "pinyin": "mèng zi",
-          "hanviet": "Mạnh Tử"
+          "hanviet": "Mạnh Tử",
+          "meaning_vi": "Mạnh Tử"
         },
         {
           "text": "的",
@@ -2033,7 +2088,8 @@
         {
           "text": "今夫弈",
           "pinyin": "jīn fū yì",
-          "hanviet": "Kim Phu Dịch"
+          "hanviet": "Kim Phu Dịch",
+          "meaning_vi": "Trò chơi của chồng hôm nay"
         },
         {
           "text": "之",
@@ -2046,7 +2102,8 @@
         {
           "text": "为数",
           "pinyin": "wéi shù",
-          "hanviet": "Vi Sổ"
+          "hanviet": "Vi Sổ",
+          "meaning_vi": "con số"
         },
         {
           "text": "，"
@@ -2054,7 +2111,8 @@
         {
           "text": "小数",
           "pinyin": "xiǎo shù",
-          "hanviet": "Tiểu Sổ"
+          "hanviet": "Tiểu Sổ",
+          "meaning_vi": "Tiểu Sổ"
         },
         {
           "text": "也",
@@ -2078,7 +2136,8 @@
         {
           "text": "专心致志",
           "pinyin": "zhuān xīn zhì zhì",
-          "hanviet": "Chuyên Tâm Trí Chí"
+          "hanviet": "Chuyên Tâm Trí Chí",
+          "meaning_vi": "tập trung"
         },
         {
           "text": "，"
@@ -2089,7 +2148,7 @@
           "hanviet": "Hệ Thống",
           "hsk": 5,
           "word_id": "hsk5_1229",
-          "meaning_vi": "hệ thống"
+          "meaning_vi": "thì, là (liên từ văn viết)"
         },
         {
           "text": "不得",
@@ -2123,7 +2182,8 @@
         {
           "text": "弈秋",
           "pinyin": "yì qiū",
-          "hanviet": "Dịch Thu"
+          "hanviet": "Dịch Thu",
+          "meaning_vi": "Dịch Thu"
         },
         {
           "text": "，"
@@ -2131,12 +2191,14 @@
         {
           "text": "通国",
           "pinyin": "tōng guó",
-          "hanviet": "Thông Quốc"
+          "hanviet": "Thông Quốc",
+          "meaning_vi": "Thông Quốc"
         },
         {
           "text": "之善弈者",
           "pinyin": "zhī shàn yì zhě",
-          "hanviet": "Chi Thiện Dịch Giả"
+          "hanviet": "Chi Thiện Dịch Giả",
+          "meaning_vi": "người chơi cờ giỏi"
         },
         {
           "text": "也",
@@ -2162,22 +2224,26 @@
         {
           "text": "使弈秋",
           "pinyin": "shǐ yì qiū",
-          "hanviet": "Sử Dịch Thu"
+          "hanviet": "Sử Dịch Thu",
+          "meaning_vi": "Shi Yiqiu"
         },
         {
           "text": "诲",
           "pinyin": "huì",
-          "hanviet": "Hối"
+          "hanviet": "Hối",
+          "meaning_vi": "Hối"
         },
         {
           "text": "二人",
           "pinyin": "èr rén",
-          "hanviet": "Nhị Nhân"
+          "hanviet": "Nhị Nhân",
+          "meaning_vi": "hai người"
         },
         {
           "text": "弈",
           "pinyin": "yì",
-          "hanviet": "Dịch"
+          "hanviet": "Dịch",
+          "meaning_vi": "Dịch"
         },
         {
           "text": "，"
@@ -2185,7 +2251,8 @@
         {
           "text": "其一",
           "pinyin": "qí yī",
-          "hanviet": "Kỳ Nhất"
+          "hanviet": "Kỳ Nhất",
+          "meaning_vi": "Kỳ Nhất"
         },
         {
           "text": "人",
@@ -2198,7 +2265,8 @@
         {
           "text": "专心致志",
           "pinyin": "zhuān xīn zhì zhì",
-          "hanviet": "Chuyên Tâm Trí Chí"
+          "hanviet": "Chuyên Tâm Trí Chí",
+          "meaning_vi": "tập trung"
         },
         {
           "text": "，"
@@ -2206,7 +2274,8 @@
         {
           "text": "唯弈秋",
           "pinyin": "wéi yì qiū",
-          "hanviet": "Duy Dịch Thu"
+          "hanviet": "Duy Dịch Thu",
+          "meaning_vi": "Duy Dịch Thu"
         },
         {
           "text": "之",
@@ -2238,7 +2307,8 @@
         {
           "text": "一人",
           "pinyin": "yī rén",
-          "hanviet": "Nhất Nhân"
+          "hanviet": "Nhất Nhân",
+          "meaning_vi": "một người"
         },
         {
           "text": "虽",
@@ -2294,7 +2364,8 @@
         {
           "text": "鸿鹄将至",
           "pinyin": "hóng hú jiāng zhì",
-          "hanviet": "Hồng Cốc Tương Chí"
+          "hanviet": "Hồng Cốc Tương Chí",
+          "meaning_vi": "Hồng Cốc Tương Chí"
         },
         {
           "text": "，"
@@ -2302,7 +2373,8 @@
         {
           "text": "思援",
           "pinyin": "sī yuán",
-          "hanviet": "Tư Viện"
+          "hanviet": "Tư Viện",
+          "meaning_vi": "Tư Viện"
         },
         {
           "text": "弓",
@@ -2315,7 +2387,8 @@
         {
           "text": "缴而射",
           "pinyin": "jiǎo ér shè",
-          "hanviet": "Kiểu Nhi Xạ"
+          "hanviet": "Kiểu Nhi Xạ",
+          "meaning_vi": "Kiểu Nhi Xạ"
         },
         {
           "text": "之",
@@ -2347,7 +2420,8 @@
         {
           "text": "之俱学",
           "pinyin": "zhī jù xué",
-          "hanviet": "Chi Câu Học"
+          "hanviet": "Chi Câu Học",
+          "meaning_vi": "Tìm hiểu tất cả"
         },
         {
           "text": "，"
@@ -2355,7 +2429,8 @@
         {
           "text": "弗若",
           "pinyin": "fú ruò",
-          "hanviet": "Phất Nhược"
+          "hanviet": "Phất Nhược",
+          "meaning_vi": "Phất Nhược"
         },
         {
           "text": "之",
@@ -2405,7 +2480,8 @@
         {
           "text": "其智弗若",
           "pinyin": "qí zhì fú ruò",
-          "hanviet": "Kỳ Trí Phất Nhược"
+          "hanviet": "Kỳ Trí Phất Nhược",
+          "meaning_vi": "Kỳ Trí Phất Nhược"
         },
         {
           "text": "与",
@@ -2442,7 +2518,8 @@
         {
           "text": "非然",
           "pinyin": "fēi rán",
-          "hanviet": "Phi Nhiên"
+          "hanviet": "Phi Nhiên",
+          "meaning_vi": "Phi Nhiên"
         },
         {
           "text": "也",
@@ -2471,12 +2548,14 @@
         {
           "text": "五代",
           "pinyin": "wǔ dài",
-          "hanviet": "Ngũ Đại"
+          "hanviet": "Ngũ Đại",
+          "meaning_vi": "Năm thế hệ"
         },
         {
           "text": "周文矩",
           "pinyin": "zhōu wén jǔ",
-          "hanviet": "Chu Văn Củ"
+          "hanviet": "Chu Văn Củ",
+          "meaning_vi": "Chu Văn Củ"
         },
         {
           "text": "《"
@@ -2484,12 +2563,14 @@
         {
           "text": "重屏会",
           "pinyin": "zhòng píng huì",
-          "hanviet": "Trọng Bình Hội"
+          "hanviet": "Trọng Bình Hội",
+          "meaning_vi": "Trọng Bình Hội"
         },
         {
           "text": "棋图",
           "pinyin": "qí tú",
-          "hanviet": "Kỳ Đồ"
+          "hanviet": "Kỳ Đồ",
+          "meaning_vi": "Kỳ Đồ"
         },
         {
           "text": "》"
@@ -2497,7 +2578,8 @@
         {
           "text": "汉代",
           "pinyin": "hàn dài",
-          "hanviet": "Hán Đại"
+          "hanviet": "Hán Đại",
+          "meaning_vi": "nhà Hán"
         },
         {
           "text": "皇帝",
@@ -2510,7 +2592,8 @@
         {
           "text": "首开",
           "pinyin": "shǒu kāi",
-          "hanviet": "Thủ Khai"
+          "hanviet": "Thủ Khai",
+          "meaning_vi": "Thủ Khai"
         },
         {
           "text": "为",
@@ -2523,12 +2606,14 @@
         {
           "text": "棋友",
           "pinyin": "qí yǒu",
-          "hanviet": "Kỳ Hữu"
+          "hanviet": "Kỳ Hữu",
+          "meaning_vi": "Kỳ Hữu"
         },
         {
           "text": "赐官",
           "pinyin": "cì guān",
-          "hanviet": "Tứ Quan"
+          "hanviet": "Tứ Quan",
+          "meaning_vi": "Tứ Quan"
         },
         {
           "text": "先例",
@@ -2541,7 +2626,8 @@
         {
           "text": "汉代",
           "pinyin": "hàn dài",
-          "hanviet": "Hán Đại"
+          "hanviet": "Hán Đại",
+          "meaning_vi": "nhà Hán"
         },
         {
           "text": "的",
@@ -2554,7 +2640,8 @@
         {
           "text": "开国",
           "pinyin": "kāi guó",
-          "hanviet": "Khai Quốc"
+          "hanviet": "Khai Quốc",
+          "meaning_vi": "Sự thành lập nước Cộng hòa Nhân dân Trung Hoa"
         },
         {
           "text": "皇帝",
@@ -2567,7 +2654,8 @@
         {
           "text": "刘邦",
           "pinyin": "liú bāng",
-          "hanviet": "Lưu Bang"
+          "hanviet": "Lưu Bang",
+          "meaning_vi": "Lưu Bang"
         },
         {
           "text": "是",
@@ -2612,7 +2700,8 @@
         {
           "text": "爱好者",
           "pinyin": "ài hào zhě",
-          "hanviet": "Ái Hảo Giả"
+          "hanviet": "Ái Hảo Giả",
+          "meaning_vi": "người đam mê"
         },
         {
           "text": "，"
@@ -2644,12 +2733,14 @@
         {
           "text": "妾",
           "pinyin": "qiè",
-          "hanviet": "Thiếp"
+          "hanviet": "Thiếp",
+          "meaning_vi": "Thiếp"
         },
         {
           "text": "戚夫人",
           "pinyin": "qī fū rén",
-          "hanviet": "Thích Phu Nhân"
+          "hanviet": "Thích Phu Nhân",
+          "meaning_vi": "Thích Phu Nhân"
         },
         {
           "text": "一起",
@@ -2662,7 +2753,8 @@
         {
           "text": "下围棋",
           "pinyin": "xià wéi qí",
-          "hanviet": "Hạ Vi Kỳ"
+          "hanviet": "Hạ Vi Kỳ",
+          "meaning_vi": "Chơi cờ vây"
         },
         {
           "text": "娱乐",
@@ -2688,7 +2780,8 @@
         {
           "text": "戚夫人",
           "pinyin": "qī fū rén",
-          "hanviet": "Thích Phu Nhân"
+          "hanviet": "Thích Phu Nhân",
+          "meaning_vi": "Thích Phu Nhân"
         },
         {
           "text": "多才多艺",
@@ -2712,7 +2805,8 @@
         {
           "text": "击筑",
           "pinyin": "jī zhù",
-          "hanviet": "Kích Trúc"
+          "hanviet": "Kích Trúc",
+          "meaning_vi": "Kích Trúc"
         },
         {
           "text": "，"
@@ -2736,7 +2830,8 @@
         {
           "text": "刘邦",
           "pinyin": "liú bāng",
-          "hanviet": "Lưu Bang"
+          "hanviet": "Lưu Bang",
+          "meaning_vi": "Lưu Bang"
         },
         {
           "text": "唱",
@@ -2752,7 +2847,8 @@
         {
           "text": "大风歌",
           "pinyin": "dà fēng gē",
-          "hanviet": "Đại Phong Ca"
+          "hanviet": "Đại Phong Ca",
+          "meaning_vi": "Đại Phong Ca"
         },
         {
           "text": "》"
@@ -2771,7 +2867,8 @@
         {
           "text": "擅",
           "pinyin": "shàn",
-          "hanviet": "Thiện"
+          "hanviet": "Thiện",
+          "meaning_vi": "Thiện"
         },
         {
           "text": "歌舞",
@@ -2787,7 +2884,8 @@
         {
           "text": "还会",
           "pinyin": "hái huì",
-          "hanviet": "Hoàn Hội"
+          "hanviet": "Hoàn Hội",
+          "meaning_vi": "Sẽ vẫn"
         },
         {
           "text": "围棋",
@@ -2803,12 +2901,14 @@
         {
           "text": "深得",
           "pinyin": "shēn dé",
-          "hanviet": "Thâm Đắc"
+          "hanviet": "Thâm Đắc",
+          "meaning_vi": "Thâm Đắc"
         },
         {
           "text": "刘邦",
           "pinyin": "liú bāng",
-          "hanviet": "Lưu Bang"
+          "hanviet": "Lưu Bang",
+          "meaning_vi": "Lưu Bang"
         },
         {
           "text": "宠爱",
@@ -2842,7 +2942,8 @@
         {
           "text": "招来",
           "pinyin": "zhāo lái",
-          "hanviet": "Chiêu Lai"
+          "hanviet": "Chiêu Lai",
+          "meaning_vi": "Chiêu Lai"
         },
         {
           "text": "了",
@@ -2855,7 +2956,8 @@
         {
           "text": "吕后",
           "pinyin": "lǚ hòu",
-          "hanviet": "Lữ Hậu"
+          "hanviet": "Lữ Hậu",
+          "meaning_vi": "Lữ Hậu"
         },
         {
           "text": "的",
@@ -2868,7 +2970,8 @@
         {
           "text": "忌恨",
           "pinyin": "jì hèn",
-          "hanviet": "Kỵ Hận"
+          "hanviet": "Kỵ Hận",
+          "meaning_vi": "Kỵ Hận"
         },
         {
           "text": "，"
@@ -2876,12 +2979,14 @@
         {
           "text": "刘邦",
           "pinyin": "liú bāng",
-          "hanviet": "Lưu Bang"
+          "hanviet": "Lưu Bang",
+          "meaning_vi": "Lưu Bang"
         },
         {
           "text": "死后",
           "pinyin": "sǐ hòu",
-          "hanviet": "Tử Hậu"
+          "hanviet": "Tử Hậu",
+          "meaning_vi": "sau khi chết"
         },
         {
           "text": "，"
@@ -2889,7 +2994,8 @@
         {
           "text": "吕后",
           "pinyin": "lǚ hòu",
-          "hanviet": "Lữ Hậu"
+          "hanviet": "Lữ Hậu",
+          "meaning_vi": "Lữ Hậu"
         },
         {
           "text": "便",
@@ -2910,7 +3016,8 @@
         {
           "text": "戚夫人",
           "pinyin": "qī fū rén",
-          "hanviet": "Thích Phu Nhân"
+          "hanviet": "Thích Phu Nhân",
+          "meaning_vi": "Thích Phu Nhân"
         },
         {
           "text": "和",
@@ -2947,12 +3054,14 @@
         {
           "text": "赵王如意",
           "pinyin": "zhào wáng rú yì",
-          "hanviet": "Triệu Vương Như Ý"
+          "hanviet": "Triệu Vương Như Ý",
+          "meaning_vi": "Triệu Vương Như Ý"
         },
         {
           "text": "害死",
           "pinyin": "hài sǐ",
-          "hanviet": "Hại Tử"
+          "hanviet": "Hại Tử",
+          "meaning_vi": "Hại Tử"
         },
         {
           "text": "了",
@@ -2978,12 +3087,14 @@
         {
           "text": "汉宣帝",
           "pinyin": "hàn xuān dì",
-          "hanviet": "Hán Tuyên Đế"
+          "hanviet": "Hán Tuyên Đế",
+          "meaning_vi": "Hoàng đế Xuân nhà Hán"
         },
         {
           "text": "刘询",
           "pinyin": "liú xún",
-          "hanviet": "Lưu Tuân"
+          "hanviet": "Lưu Tuân",
+          "meaning_vi": "Lưu Tuân"
         },
         {
           "text": "也",
@@ -3012,7 +3123,8 @@
         {
           "text": "下围棋",
           "pinyin": "xià wéi qí",
-          "hanviet": "Hạ Vi Kỳ"
+          "hanviet": "Hạ Vi Kỳ",
+          "meaning_vi": "Chơi cờ vây"
         },
         {
           "text": "。"
@@ -3038,7 +3150,8 @@
         {
           "text": "没",
           "pinyin": "méi",
-          "hanviet": "Một"
+          "hanviet": "Một",
+          "meaning_vi": "không có; chưa"
         },
         {
           "text": "做",
@@ -3078,7 +3191,8 @@
         {
           "text": "同杜陵",
           "pinyin": "tóng dù líng",
-          "hanviet": "Đồng Đỗ Lăng"
+          "hanviet": "Đồng Đỗ Lăng",
+          "meaning_vi": "Đồng Đỗ Lăng"
         },
         {
           "text": "人",
@@ -3091,7 +3205,8 @@
         {
           "text": "陈遂",
           "pinyin": "chén suì",
-          "hanviet": "Trần Toại"
+          "hanviet": "Trần Toại",
+          "meaning_vi": "Trần Tùy"
         },
         {
           "text": "十分",
@@ -3123,7 +3238,8 @@
         {
           "text": "二人",
           "pinyin": "èr rén",
-          "hanviet": "Nhị Nhân"
+          "hanviet": "Nhị Nhân",
+          "meaning_vi": "hai người"
         },
         {
           "text": "经常",
@@ -3152,7 +3268,8 @@
         {
           "text": "下棋",
           "pinyin": "xià qí",
-          "hanviet": "Hạ Kỳ"
+          "hanviet": "Hạ Kỳ",
+          "meaning_vi": "chơi cờ"
         },
         {
           "text": "。"
@@ -3170,17 +3287,20 @@
         {
           "text": "陈遂",
           "pinyin": "chén suì",
-          "hanviet": "Trần Toại"
+          "hanviet": "Trần Toại",
+          "meaning_vi": "Trần Tùy"
         },
         {
           "text": "棋艺",
           "pinyin": "qí yì",
-          "hanviet": "Kỳ Nghệ"
+          "hanviet": "Kỳ Nghệ",
+          "meaning_vi": "Kỳ Nghệ"
         },
         {
           "text": "略逊一筹",
           "pinyin": "lüè xùn yī chóu",
-          "hanviet": "Lược Tốn Nhất Trù"
+          "hanviet": "Lược Tốn Nhất Trù",
+          "meaning_vi": "Lược Tốn Nhất Trù"
         },
         {
           "text": "，"
@@ -3196,7 +3316,8 @@
         {
           "text": "输棋",
           "pinyin": "shū qí",
-          "hanviet": "Thâu Kỳ"
+          "hanviet": "Thâu Kỳ",
+          "meaning_vi": "Thâu Kỳ"
         },
         {
           "text": "，"
@@ -3220,17 +3341,20 @@
         {
           "text": "刘询",
           "pinyin": "liú xún",
-          "hanviet": "Lưu Tuân"
+          "hanviet": "Lưu Tuân",
+          "meaning_vi": "Lưu Tuân"
         },
         {
           "text": "不少",
           "pinyin": "bù shǎo",
-          "hanviet": "Bất Thiểu"
+          "hanviet": "Bất Thiểu",
+          "meaning_vi": "Khá nhiều"
         },
         {
           "text": "棋注",
           "pinyin": "qí zhù",
-          "hanviet": "Kỳ Chú"
+          "hanviet": "Kỳ Chú",
+          "meaning_vi": "Kỳ Chú"
         },
         {
           "text": "。"
@@ -3248,7 +3372,8 @@
         {
           "text": "刘询",
           "pinyin": "liú xún",
-          "hanviet": "Lưu Tuân"
+          "hanviet": "Lưu Tuân",
+          "meaning_vi": "Lưu Tuân"
         },
         {
           "text": "当",
@@ -3296,7 +3421,8 @@
         {
           "text": "陈遂",
           "pinyin": "chén suì",
-          "hanviet": "Trần Toại"
+          "hanviet": "Trần Toại",
+          "meaning_vi": "Trần Tùy"
         },
         {
           "text": "为",
@@ -3309,12 +3435,14 @@
         {
           "text": "太原",
           "pinyin": "tài yuán",
-          "hanviet": "Thái Nguyên"
+          "hanviet": "Thái Nguyên",
+          "meaning_vi": "Thái Nguyên"
         },
         {
           "text": "太守",
           "pinyin": "tài shǒu",
-          "hanviet": "Thái Thú"
+          "hanviet": "Thái Thú",
+          "meaning_vi": "Tỉnh trưởng"
         },
         {
           "text": "，"
@@ -3354,12 +3482,14 @@
         {
           "text": "一封",
           "pinyin": "yī fēng",
-          "hanviet": "Nhất Phong"
+          "hanviet": "Nhất Phong",
+          "meaning_vi": "một lá thư"
         },
         {
           "text": "玺",
           "pinyin": "xǐ",
-          "hanviet": "Tỷ"
+          "hanviet": "Tỷ",
+          "meaning_vi": "Tỷ"
         },
         {
           "text": "书",
@@ -3383,22 +3513,26 @@
         {
           "text": "太原",
           "pinyin": "tài yuán",
-          "hanviet": "Thái Nguyên"
+          "hanviet": "Thái Nguyên",
+          "meaning_vi": "Thái Nguyên"
         },
         {
           "text": "太守",
           "pinyin": "tài shǒu",
-          "hanviet": "Thái Thú"
+          "hanviet": "Thái Thú",
+          "meaning_vi": "Tỉnh trưởng"
         },
         {
           "text": "官职",
           "pinyin": "guān zhí",
-          "hanviet": "Quan Chức"
+          "hanviet": "Quan Chức",
+          "meaning_vi": "chức vụ chính thức"
         },
         {
           "text": "不小",
           "pinyin": "bù xiǎo",
-          "hanviet": "Bất Tiểu"
+          "hanviet": "Bất Tiểu",
+          "meaning_vi": "Không nhỏ"
         },
         {
           "text": "，"
@@ -3406,7 +3540,8 @@
         {
           "text": "俸禄",
           "pinyin": "fèng lù",
-          "hanviet": "Bổng Lộc"
+          "hanviet": "Bổng Lộc",
+          "meaning_vi": "Mức lương"
         },
         {
           "text": "丰厚",
@@ -3422,7 +3557,8 @@
         {
           "text": "这下",
           "pinyin": "zhè xià",
-          "hanviet": "Giá Hạ"
+          "hanviet": "Giá Hạ",
+          "meaning_vi": "Giá Hạ"
         },
         {
           "text": "可以",
@@ -3475,7 +3611,8 @@
         {
           "text": "棋注",
           "pinyin": "qí zhù",
-          "hanviet": "Kỳ Chú"
+          "hanviet": "Kỳ Chú",
+          "meaning_vi": "Kỳ Chú"
         },
         {
           "text": "了",
@@ -3501,7 +3638,8 @@
         {
           "text": "陈遂",
           "pinyin": "chén suì",
-          "hanviet": "Trần Toại"
+          "hanviet": "Trần Toại",
+          "meaning_vi": "Trần Tùy"
         },
         {
           "text": "也",
@@ -3514,7 +3652,8 @@
         {
           "text": "仗",
           "pinyin": "zhàng",
-          "hanviet": "Trượng"
+          "hanviet": "Trượng",
+          "meaning_vi": "trận chiến"
         },
         {
           "text": "着",
@@ -3527,12 +3666,14 @@
         {
           "text": "棋友",
           "pinyin": "qí yǒu",
-          "hanviet": "Kỳ Hữu"
+          "hanviet": "Kỳ Hữu",
+          "meaning_vi": "Kỳ Hữu"
         },
         {
           "text": "之谊",
           "pinyin": "zhī yì",
-          "hanviet": "Chi Nghị"
+          "hanviet": "Chi Nghị",
+          "meaning_vi": "tình bạn"
         },
         {
           "text": "和",
@@ -3596,12 +3737,14 @@
         {
           "text": "元平",
           "pinyin": "yuán píng",
-          "hanviet": "Nguyên Bình"
+          "hanviet": "Nguyên Bình",
+          "meaning_vi": "Nguyên Bình"
         },
         {
           "text": "元年",
           "pinyin": "yuán nián",
-          "hanviet": "Nguyên Niên"
+          "hanviet": "Nguyên Niên",
+          "meaning_vi": "năm đầu tiên"
         },
         {
           "text": "（"
@@ -3609,7 +3752,8 @@
         {
           "text": "公元前",
           "pinyin": "gōng yuán qián",
-          "hanviet": "Công Nguyên Tiền"
+          "hanviet": "Công Nguyên Tiền",
+          "meaning_vi": "BC"
         },
         {
           "text": "74"
@@ -3636,7 +3780,8 @@
         {
           "text": "大赦令",
           "pinyin": "dà shè lìng",
-          "hanviet": "Đại Xá Lệnh"
+          "hanviet": "Đại Xá Lệnh",
+          "meaning_vi": "Đại Xá Lệnh"
         },
         {
           "text": "以前",
@@ -3681,7 +3826,8 @@
         {
           "text": "大赦令",
           "pinyin": "dà shè lìng",
-          "hanviet": "Đại Xá Lệnh"
+          "hanviet": "Đại Xá Lệnh",
+          "meaning_vi": "Đại Xá Lệnh"
         },
         {
           "text": "下来",
@@ -3705,7 +3851,8 @@
         {
           "text": "有罪",
           "pinyin": "yǒu zuì",
-          "hanviet": "Hữu Tội"
+          "hanviet": "Hữu Tội",
+          "meaning_vi": "có tội"
         },
         {
           "text": "的",
@@ -3734,7 +3881,8 @@
         {
           "text": "赦免",
           "pinyin": "shè miǎn",
-          "hanviet": "Xá Miễn"
+          "hanviet": "Xá Miễn",
+          "meaning_vi": "Xá Miễn"
         },
         {
           "text": "了",
@@ -3758,7 +3906,8 @@
         {
           "text": "赌债",
           "pinyin": "dǔ zhài",
-          "hanviet": "Đổ Trái"
+          "hanviet": "Đổ Trái",
+          "meaning_vi": "Đổ Trái"
         },
         {
           "text": "也",
@@ -3771,7 +3920,8 @@
         {
           "text": "该免",
           "pinyin": "gāi miǎn",
-          "hanviet": "Cai Miễn"
+          "hanviet": "Cai Miễn",
+          "meaning_vi": "Cai Miễn"
         },
         {
           "text": "了",
@@ -3813,7 +3963,8 @@
         {
           "text": "玩笑",
           "pinyin": "wán xiào",
-          "hanviet": "Ngoạn Tiếu"
+          "hanviet": "Ngoạn Tiếu",
+          "meaning_vi": "Ngoạn Tiếu"
         },
         {
           "text": "归",
@@ -3826,7 +3977,8 @@
         {
           "text": "玩笑",
           "pinyin": "wán xiào",
-          "hanviet": "Ngoạn Tiếu"
+          "hanviet": "Ngoạn Tiếu",
+          "meaning_vi": "Ngoạn Tiếu"
         },
         {
           "text": "，"
@@ -3834,22 +3986,26 @@
         {
           "text": "陈遂",
           "pinyin": "chén suì",
-          "hanviet": "Trần Toại"
+          "hanviet": "Trần Toại",
+          "meaning_vi": "Trần Tùy"
         },
         {
           "text": "深知",
           "pinyin": "shēn zhī",
-          "hanviet": "Thâm Tri"
+          "hanviet": "Thâm Tri",
+          "meaning_vi": "Thâm Tri"
         },
         {
           "text": "为臣",
           "pinyin": "wèi chén",
-          "hanviet": "Vi Thần"
+          "hanviet": "Vi Thần",
+          "meaning_vi": "với tư cách là một bộ trưởng"
         },
         {
           "text": "之道",
           "pinyin": "zhī dào",
-          "hanviet": "Chi Đạo"
+          "hanviet": "Chi Đạo",
+          "meaning_vi": "đường"
         },
         {
           "text": "、"
@@ -3857,12 +4013,14 @@
         {
           "text": "今昔",
           "pinyin": "jīn xī",
-          "hanviet": "Kim Tích"
+          "hanviet": "Kim Tích",
+          "meaning_vi": "quá khứ và hiện tại"
         },
         {
           "text": "之别",
           "pinyin": "zhī bié",
-          "hanviet": "Chi Biệt"
+          "hanviet": "Chi Biệt",
+          "meaning_vi": "sự khác biệt"
         },
         {
           "text": "，"
@@ -3870,17 +4028,20 @@
         {
           "text": "不敢",
           "pinyin": "bù gǎn",
-          "hanviet": "Bất Cảm"
+          "hanviet": "Bất Cảm",
+          "meaning_vi": "Không dám"
         },
         {
           "text": "领此",
           "pinyin": "lǐng cǐ",
-          "hanviet": "Lãnh Thử"
+          "hanviet": "Lãnh Thử",
+          "meaning_vi": "Lãnh Thử"
         },
         {
           "text": "厚爱",
           "pinyin": "hòu ài",
-          "hanviet": "Hậu Ái"
+          "hanviet": "Hậu Ái",
+          "meaning_vi": "Hậu Ái"
         },
         {
           "text": "，"
@@ -3888,12 +4049,14 @@
         {
           "text": "婉言",
           "pinyin": "wǎn yán",
-          "hanviet": "Uyển Ngôn"
+          "hanviet": "Uyển Ngôn",
+          "meaning_vi": "Uyển Ngôn"
         },
         {
           "text": "辞谢",
           "pinyin": "cí xiè",
-          "hanviet": "Từ Tạ"
+          "hanviet": "Từ Tạ",
+          "meaning_vi": "Từ Tạ"
         },
         {
           "text": "了",
@@ -3943,17 +4106,20 @@
         {
           "text": "陈遂",
           "pinyin": "chén suì",
-          "hanviet": "Trần Toại"
+          "hanviet": "Trần Toại",
+          "meaning_vi": "Trần Tùy"
         },
         {
           "text": "虽未",
           "pinyin": "suī wèi",
-          "hanviet": "Tuy Vị"
+          "hanviet": "Tuy Vị",
+          "meaning_vi": "Tuy Vị"
         },
         {
           "text": "受官",
           "pinyin": "shòu guān",
-          "hanviet": "Thọ Quan"
+          "hanviet": "Thọ Quan",
+          "meaning_vi": "Thọ Quan"
         },
         {
           "text": "，"
@@ -3969,7 +4135,8 @@
         {
           "text": "此事",
           "pinyin": "cǐ shì",
-          "hanviet": "Thử Sự"
+          "hanviet": "Thử Sự",
+          "meaning_vi": "vấn đề"
         },
         {
           "text": "算是",
@@ -3998,7 +4165,8 @@
         {
           "text": "第一个",
           "pinyin": "dì yí gè",
-          "hanviet": "Đệ Nhất Cá"
+          "hanviet": "Đệ Nhất Cá",
+          "meaning_vi": "cái đầu tiên"
         },
         {
           "text": "因",
@@ -4027,7 +4195,8 @@
         {
           "text": "赐官",
           "pinyin": "cì guān",
-          "hanviet": "Tứ Quan"
+          "hanviet": "Tứ Quan",
+          "meaning_vi": "Tứ Quan"
         },
         {
           "text": "的",
@@ -4061,7 +4230,8 @@
         {
           "text": "汉代",
           "pinyin": "hàn dài",
-          "hanviet": "Hán Đại"
+          "hanviet": "Hán Đại",
+          "meaning_vi": "nhà Hán"
         },
         {
           "text": "历史",
@@ -4109,12 +4279,14 @@
         {
           "text": "还有",
           "pinyin": "hái yǒu",
-          "hanviet": "Hoàn Hữu"
+          "hanviet": "Hoàn Hữu",
+          "meaning_vi": "Ngoài ra"
         },
         {
           "text": "一件",
           "pinyin": "yī jiàn",
-          "hanviet": "Nhất Kiện"
+          "hanviet": "Nhất Kiện",
+          "meaning_vi": "một mảnh"
         },
         {
           "text": "重要",
@@ -4162,7 +4334,8 @@
         {
           "text": "史学家",
           "pinyin": "shǐ xué jiā",
-          "hanviet": "Sử Học Gia"
+          "hanviet": "Sử Học Gia",
+          "meaning_vi": "nhà sử học"
         },
         {
           "text": "、"
@@ -4173,7 +4346,8 @@
         {
           "text": "汉书",
           "pinyin": "hàn shū",
-          "hanviet": "Hán Thư"
+          "hanviet": "Hán Thư",
+          "meaning_vi": "Hán thư"
         },
         {
           "text": "》"
@@ -4197,7 +4371,8 @@
         {
           "text": "班固",
           "pinyin": "bān gù",
-          "hanviet": "Ban Cố"
+          "hanviet": "Ban Cố",
+          "meaning_vi": "Ban Cố"
         },
         {
           "text": "专门",
@@ -4226,7 +4401,8 @@
         {
           "text": "一篇",
           "pinyin": "yī piān",
-          "hanviet": "Nhất Thiên"
+          "hanviet": "Nhất Thiên",
+          "meaning_vi": "một bài viết"
         },
         {
           "text": "叫",
@@ -4242,7 +4418,8 @@
         {
           "text": "弈旨",
           "pinyin": "yì zhǐ",
-          "hanviet": "Dịch Chỉ"
+          "hanviet": "Dịch Chỉ",
+          "meaning_vi": "Dịch Chỉ"
         },
         {
           "text": "》"
@@ -4269,7 +4446,8 @@
         {
           "text": "第一次",
           "pinyin": "dì yī cì",
-          "hanviet": "Đệ Nhất Thứ"
+          "hanviet": "Đệ Nhất Thứ",
+          "meaning_vi": "lần đầu tiên"
         },
         {
           "text": "对",
@@ -4290,7 +4468,8 @@
         {
           "text": "作",
           "pinyin": "zuò",
-          "hanviet": "Tác"
+          "hanviet": "Tác",
+          "meaning_vi": "làm"
         },
         {
           "text": "了",
@@ -4362,7 +4541,8 @@
         {
           "text": "多有",
           "pinyin": "duō yǒu",
-          "hanviet": "Đa Hữu"
+          "hanviet": "Đa Hữu",
+          "meaning_vi": "Đa Hữu"
         },
         {
           "text": "发掘",
@@ -4386,7 +4566,8 @@
         {
           "text": "一篇",
           "pinyin": "yī piān",
-          "hanviet": "Nhất Thiên"
+          "hanviet": "Nhất Thiên",
+          "meaning_vi": "một bài viết"
         },
         {
           "text": "划时代",
@@ -4444,12 +4625,14 @@
         {
           "text": "明代",
           "pinyin": "míng dài",
-          "hanviet": "Minh Đại"
+          "hanviet": "Minh Đại",
+          "meaning_vi": "nhà Minh"
         },
         {
           "text": "仇英",
           "pinyin": "chóu yīng",
-          "hanviet": "Cừu Anh"
+          "hanviet": "Cừu Anh",
+          "meaning_vi": "Thu Anh"
         },
         {
           "text": "《"
@@ -4457,12 +4640,14 @@
         {
           "text": "汉",
           "pinyin": "hàn",
-          "hanviet": "Hán"
+          "hanviet": "Hán",
+          "meaning_vi": "Hàn"
         },
         {
           "text": "宫春晓",
           "pinyin": "gōng chūn xiǎo",
-          "hanviet": "Cung Xuân Hiểu"
+          "hanviet": "Cung Xuân Hiểu",
+          "meaning_vi": "Cung Xuân Hiểu"
         },
         {
           "text": "图",
@@ -4495,12 +4680,14 @@
         {
           "text": "图中",
           "pinyin": "tú zhōng",
-          "hanviet": "Đồ Trung"
+          "hanviet": "Đồ Trung",
+          "meaning_vi": "Trong hình"
         },
         {
           "text": "右侧",
           "pinyin": "yòu cè",
-          "hanviet": "Hữu Trắc"
+          "hanviet": "Hữu Trắc",
+          "meaning_vi": "bên phải"
         },
         {
           "text": "可见",
@@ -4513,7 +4700,8 @@
         {
           "text": "弈棋",
           "pinyin": "yì qí",
-          "hanviet": "Dịch Kỳ"
+          "hanviet": "Dịch Kỳ",
+          "meaning_vi": "Dịch Kỳ"
         },
         {
           "text": "场景",
@@ -4534,7 +4722,8 @@
         {
           "text": "曹丕",
           "pinyin": "cáo pī",
-          "hanviet": "Tào Phi"
+          "hanviet": "Tào Phi",
+          "meaning_vi": "Tào Phi"
         },
         {
           "text": "利用",
@@ -4555,7 +4744,8 @@
         {
           "text": "谋杀",
           "pinyin": "móu shā",
-          "hanviet": "Mưu Sát"
+          "hanviet": "Mưu Sát",
+          "meaning_vi": "giết người"
         },
         {
           "text": "兄弟",
@@ -4568,7 +4758,8 @@
         {
           "text": "三国",
           "pinyin": "sān guó",
-          "hanviet": "Tam Quốc"
+          "hanviet": "Tam Quốc",
+          "meaning_vi": "Tam Quốc"
         },
         {
           "text": "时期",
@@ -4584,7 +4775,8 @@
         {
           "text": "曹操",
           "pinyin": "cáo cāo",
-          "hanviet": "Tào Tháo"
+          "hanviet": "Tào Tháo",
+          "meaning_vi": "Tào Tháo"
         },
         {
           "text": "父子",
@@ -4621,7 +4813,8 @@
         {
           "text": "爱好者",
           "pinyin": "ài hào zhě",
-          "hanviet": "Ái Hảo Giả"
+          "hanviet": "Ái Hảo Giả",
+          "meaning_vi": "người đam mê"
         },
         {
           "text": "。"
@@ -4647,7 +4840,8 @@
         {
           "text": "曹操",
           "pinyin": "cáo cāo",
-          "hanviet": "Tào Tháo"
+          "hanviet": "Tào Tháo",
+          "meaning_vi": "Tào Tháo"
         },
         {
           "text": "与",
@@ -4692,7 +4886,8 @@
         {
           "text": "山子",
           "pinyin": "shān zi",
-          "hanviet": "Sơn Tử"
+          "hanviet": "Sơn Tử",
+          "meaning_vi": "Sơn Tử"
         },
         {
           "text": "道",
@@ -4708,7 +4903,8 @@
         {
           "text": "王九真",
           "pinyin": "wáng jiǔ zhēn",
-          "hanviet": "Vương Cửu Chân"
+          "hanviet": "Vương Cửu Chân",
+          "meaning_vi": "Vương Cửu Chân"
         },
         {
           "text": "、"
@@ -4716,7 +4912,8 @@
         {
           "text": "郭凯",
           "pinyin": "guō kǎi",
-          "hanviet": "Quách Khải"
+          "hanviet": "Quách Khải",
+          "meaning_vi": "Quách Khải"
         },
         {
           "text": "等",
@@ -4745,7 +4942,8 @@
         {
           "text": "对局",
           "pinyin": "duì jú",
-          "hanviet": "Đối Cục"
+          "hanviet": "Đối Cục",
+          "meaning_vi": "Đối Cục"
         },
         {
           "text": "，"
@@ -4761,7 +4959,8 @@
         {
           "text": "棋力",
           "pinyin": "qí lì",
-          "hanviet": "Kỳ Lực"
+          "hanviet": "Kỳ Lực",
+          "meaning_vi": "Kỳ Lực"
         },
         {
           "text": "不相上下",
@@ -4787,7 +4986,8 @@
         {
           "text": "曹操",
           "pinyin": "cáo cāo",
-          "hanviet": "Tào Tháo"
+          "hanviet": "Tào Tháo",
+          "meaning_vi": "Tào Tháo"
         },
         {
           "text": "的",
@@ -4800,7 +5000,8 @@
         {
           "text": "两个",
           "pinyin": "liǎng gè",
-          "hanviet": "Lưỡng Cá"
+          "hanviet": "Lưỡng Cá",
+          "meaning_vi": "hai"
         },
         {
           "text": "儿子",
@@ -4813,7 +5014,8 @@
         {
           "text": "曹丕",
           "pinyin": "cáo pī",
-          "hanviet": "Tào Phi"
+          "hanviet": "Tào Phi",
+          "meaning_vi": "Tào Phi"
         },
         {
           "text": "和",
@@ -4826,7 +5028,8 @@
         {
           "text": "曹彰",
           "pinyin": "cáo zhāng",
-          "hanviet": "Tào Chương"
+          "hanviet": "Tào Chương",
+          "meaning_vi": "Tào Chương"
         },
         {
           "text": "也",
@@ -4868,12 +5071,14 @@
         {
           "text": "南朝",
           "pinyin": "nán cháo",
-          "hanviet": "Nam Triều"
+          "hanviet": "Nam Triều",
+          "meaning_vi": "Nam triều"
         },
         {
           "text": "刘义庆",
           "pinyin": "liú yì qìng",
-          "hanviet": "Lưu Nghĩa Khánh"
+          "hanviet": "Lưu Nghĩa Khánh",
+          "meaning_vi": "Lưu Nghĩa Khánh"
         },
         {
           "text": "的",
@@ -4889,7 +5094,8 @@
         {
           "text": "世说新语",
           "pinyin": "shì shuō xīn yǔ",
-          "hanviet": "Thế Thuyết Tân Ngữ"
+          "hanviet": "Thế Thuyết Tân Ngữ",
+          "meaning_vi": "Shishuoxinyu"
         },
         {
           "text": "》"
@@ -4897,7 +5103,8 @@
         {
           "text": "中说",
           "pinyin": "zhōng shuō",
-          "hanviet": "Trung Thuyết"
+          "hanviet": "Trung Thuyết",
+          "meaning_vi": "Trung Sóc"
         },
         {
           "text": "，"
@@ -4905,12 +5112,14 @@
         {
           "text": "曹彰",
           "pinyin": "cáo zhāng",
-          "hanviet": "Tào Chương"
+          "hanviet": "Tào Chương",
+          "meaning_vi": "Tào Chương"
         },
         {
           "text": "骁勇善战",
           "pinyin": "xiāo yǒng shàn zhàn",
-          "hanviet": "Kiêu Dũng Thiện Chiến"
+          "hanviet": "Kiêu Dũng Thiện Chiến",
+          "meaning_vi": "Kiêu Dũng Thiện Chiến"
         },
         {
           "text": "，"
@@ -4918,7 +5127,8 @@
         {
           "text": "曹丕",
           "pinyin": "cáo pī",
-          "hanviet": "Tào Phi"
+          "hanviet": "Tào Phi",
+          "meaning_vi": "Tào Phi"
         },
         {
           "text": "为此",
@@ -4939,7 +5149,8 @@
         {
           "text": "忌恨",
           "pinyin": "jì hèn",
-          "hanviet": "Kỵ Hận"
+          "hanviet": "Kỵ Hận",
+          "meaning_vi": "Kỵ Hận"
         },
         {
           "text": "他",
@@ -4963,7 +5174,8 @@
         {
           "text": "害死",
           "pinyin": "hài sǐ",
-          "hanviet": "Hại Tử"
+          "hanviet": "Hại Tử",
+          "meaning_vi": "Hại Tử"
         },
         {
           "text": "他",
@@ -4989,7 +5201,8 @@
         {
           "text": "曹丕",
           "pinyin": "cáo pī",
-          "hanviet": "Tào Phi"
+          "hanviet": "Tào Phi",
+          "meaning_vi": "Tào Phi"
         },
         {
           "text": "在",
@@ -5010,7 +5223,8 @@
         {
           "text": "枣子",
           "pinyin": "zǎo zi",
-          "hanviet": "Táo Tử"
+          "hanviet": "Táo Tử",
+          "meaning_vi": "Ngày"
         },
         {
           "text": "的",
@@ -5023,12 +5237,14 @@
         {
           "text": "蒂",
           "pinyin": "dì",
-          "hanviet": "Đế"
+          "hanviet": "Đế",
+          "meaning_vi": "Đế"
         },
         {
           "text": "部放",
           "pinyin": "bù fàng",
-          "hanviet": "Bộ Phóng"
+          "hanviet": "Bộ Phóng",
+          "meaning_vi": "Bộ Phóng"
         },
         {
           "text": "了",
@@ -5041,7 +5257,8 @@
         {
           "text": "毒药",
           "pinyin": "dú yào",
-          "hanviet": "Độc Dược"
+          "hanviet": "Độc Dược",
+          "meaning_vi": "Độc Dược"
         },
         {
           "text": "，"
@@ -5097,7 +5314,8 @@
         {
           "text": "放毒",
           "pinyin": "fàng dú",
-          "hanviet": "Phóng Độc"
+          "hanviet": "Phóng Độc",
+          "meaning_vi": "Phóng Độc"
         },
         {
           "text": "的",
@@ -5110,12 +5328,14 @@
         {
           "text": "枣子",
           "pinyin": "zǎo zi",
-          "hanviet": "Táo Tử"
+          "hanviet": "Táo Tử",
+          "meaning_vi": "Ngày"
         },
         {
           "text": "混在",
           "pinyin": "hùn zài",
-          "hanviet": "Hỗn Tại"
+          "hanviet": "Hỗn Tại",
+          "meaning_vi": "Hỗn Tại"
         },
         {
           "text": "一起",
@@ -5157,7 +5377,8 @@
         {
           "text": "曹彰",
           "pinyin": "cáo zhāng",
-          "hanviet": "Tào Chương"
+          "hanviet": "Tào Chương",
+          "meaning_vi": "Tào Chương"
         },
         {
           "text": "到",
@@ -5170,17 +5391,20 @@
         {
           "text": "卞太后",
           "pinyin": "biàn tài hòu",
-          "hanviet": "Biện Thái Hậu"
+          "hanviet": "Biện Thái Hậu",
+          "meaning_vi": "Biện Thái Hậu"
         },
         {
           "text": "屋里",
           "pinyin": "wū lǐ",
-          "hanviet": "Ốc Lý"
+          "hanviet": "Ốc Lý",
+          "meaning_vi": "trong nhà"
         },
         {
           "text": "下围棋",
           "pinyin": "xià wéi qí",
-          "hanviet": "Hạ Vi Kỳ"
+          "hanviet": "Hạ Vi Kỳ",
+          "meaning_vi": "Chơi cờ vây"
         },
         {
           "text": "，"
@@ -5188,7 +5412,8 @@
         {
           "text": "命人",
           "pinyin": "mìng rén",
-          "hanviet": "Mệnh Nhân"
+          "hanviet": "Mệnh Nhân",
+          "meaning_vi": "Mệnh Nhân"
         },
         {
           "text": "把",
@@ -5201,7 +5426,8 @@
         {
           "text": "枣子",
           "pinyin": "zǎo zi",
-          "hanviet": "Táo Tử"
+          "hanviet": "Táo Tử",
+          "meaning_vi": "Ngày"
         },
         {
           "text": "端",
@@ -5233,7 +5459,8 @@
         {
           "text": "下棋",
           "pinyin": "xià qí",
-          "hanviet": "Hạ Kỳ"
+          "hanviet": "Hạ Kỳ",
+          "meaning_vi": "chơi cờ"
         },
         {
           "text": "一边",
@@ -5254,7 +5481,8 @@
         {
           "text": "枣子",
           "pinyin": "zǎo zi",
-          "hanviet": "Táo Tử"
+          "hanviet": "Táo Tử",
+          "meaning_vi": "Ngày"
         },
         {
           "text": "。"
@@ -5280,7 +5508,8 @@
         {
           "text": "曹丕",
           "pinyin": "cáo pī",
-          "hanviet": "Tào Phi"
+          "hanviet": "Tào Phi",
+          "meaning_vi": "Tào Phi"
         },
         {
           "text": "知道",
@@ -5301,12 +5530,14 @@
         {
           "text": "枣子",
           "pinyin": "zǎo zi",
-          "hanviet": "Táo Tử"
+          "hanviet": "Táo Tử",
+          "meaning_vi": "Ngày"
         },
         {
           "text": "有毒",
           "pinyin": "yǒu dú",
-          "hanviet": "Hữu Độc"
+          "hanviet": "Hữu Độc",
+          "meaning_vi": "chất độc"
         },
         {
           "text": "，"
@@ -5330,12 +5561,14 @@
         {
           "text": "专挑",
           "pinyin": "zhuān tiāo",
-          "hanviet": "Chuyên Khiêu"
+          "hanviet": "Chuyên Khiêu",
+          "meaning_vi": "Được lựa chọn đặc biệt"
         },
         {
           "text": "没毒",
           "pinyin": "méi dú",
-          "hanviet": "Một Độc"
+          "hanviet": "Một Độc",
+          "meaning_vi": "Một Độc"
         },
         {
           "text": "的",
@@ -5369,7 +5602,8 @@
         {
           "text": "曹彰",
           "pinyin": "cáo zhāng",
-          "hanviet": "Tào Chương"
+          "hanviet": "Tào Chương",
+          "meaning_vi": "Tào Chương"
         },
         {
           "text": "则",
@@ -5377,7 +5611,7 @@
           "hanviet": "Hệ Thống",
           "hsk": 5,
           "word_id": "hsk5_1229",
-          "meaning_vi": "hệ thống"
+          "meaning_vi": "thì, là (liên từ văn viết)"
         },
         {
           "text": "摸",
@@ -5417,7 +5651,8 @@
         {
           "text": "有毒",
           "pinyin": "yǒu dú",
-          "hanviet": "Hữu Độc"
+          "hanviet": "Hữu Độc",
+          "meaning_vi": "chất độc"
         },
         {
           "text": "的",
@@ -5438,7 +5673,8 @@
         {
           "text": "没毒",
           "pinyin": "méi dú",
-          "hanviet": "Một Độc"
+          "hanviet": "Một Độc",
+          "meaning_vi": "Một Độc"
         },
         {
           "text": "的",
@@ -5475,7 +5711,8 @@
         {
           "text": "不少",
           "pinyin": "bù shǎo",
-          "hanviet": "Bất Thiểu"
+          "hanviet": "Bất Thiểu",
+          "meaning_vi": "Khá nhiều"
         },
         {
           "text": "。"
@@ -5493,7 +5730,8 @@
         {
           "text": "曹彰",
           "pinyin": "cáo zhāng",
-          "hanviet": "Tào Chương"
+          "hanviet": "Tào Chương",
+          "meaning_vi": "Tào Chương"
         },
         {
           "text": "中",
@@ -5525,7 +5763,8 @@
         {
           "text": "卞太后",
           "pinyin": "biàn tài hòu",
-          "hanviet": "Biện Thái Hậu"
+          "hanviet": "Biện Thái Hậu",
+          "meaning_vi": "Biện Thái Hậu"
         },
         {
           "text": "要",
@@ -5594,7 +5833,8 @@
         {
           "text": "曹丕",
           "pinyin": "cáo pī",
-          "hanviet": "Tào Phi"
+          "hanviet": "Tào Phi",
+          "meaning_vi": "Tào Phi"
         },
         {
           "text": "已",
@@ -5639,7 +5879,8 @@
         {
           "text": "盛水",
           "pinyin": "shèng shuǐ",
-          "hanviet": "Thịnh Thuỷ"
+          "hanviet": "Thịnh Thuỷ",
+          "meaning_vi": "Thịnh Thuỷ"
         },
         {
           "text": "的",
@@ -5652,7 +5893,8 @@
         {
           "text": "器皿",
           "pinyin": "qì mǐn",
-          "hanviet": "Khí Mãnh"
+          "hanviet": "Khí Mãnh",
+          "meaning_vi": "Khí Mãnh"
         },
         {
           "text": "都",
@@ -5665,7 +5907,8 @@
         {
           "text": "打碎",
           "pinyin": "dǎ suì",
-          "hanviet": "Đả Toái"
+          "hanviet": "Đả Toái",
+          "meaning_vi": "Đả Toái"
         },
         {
           "text": "了",
@@ -5691,7 +5934,8 @@
         {
           "text": "太后",
           "pinyin": "tài hòu",
-          "hanviet": "Thái Hậu"
+          "hanviet": "Thái Hậu",
+          "meaning_vi": "Thái hậu"
         },
         {
           "text": "急",
@@ -5715,7 +5959,8 @@
         {
           "text": "连鞋",
           "pinyin": "lián xié",
-          "hanviet": "Liên Hài"
+          "hanviet": "Liên Hài",
+          "meaning_vi": "Liên Hài"
         },
         {
           "text": "都",
@@ -5728,7 +5973,8 @@
         {
           "text": "没",
           "pinyin": "méi",
-          "hanviet": "Một"
+          "hanviet": "Một",
+          "meaning_vi": "không có; chưa"
         },
         {
           "text": "来得及",
@@ -5765,7 +6011,8 @@
         {
           "text": "井边",
           "pinyin": "jǐng biān",
-          "hanviet": "Tỉnh Biên"
+          "hanviet": "Tỉnh Biên",
+          "meaning_vi": "Bên cạnh giếng"
         },
         {
           "text": "跑",
@@ -5797,7 +6044,8 @@
         {
           "text": "井边",
           "pinyin": "jǐng biān",
-          "hanviet": "Tỉnh Biên"
+          "hanviet": "Tỉnh Biên",
+          "meaning_vi": "Bên cạnh giếng"
         },
         {
           "text": "却",
@@ -5818,7 +6066,8 @@
         {
           "text": "不到",
           "pinyin": "bú dào",
-          "hanviet": "Bất Đáo"
+          "hanviet": "Bất Đáo",
+          "meaning_vi": "ít hơn"
         },
         {
           "text": "能",
@@ -5831,7 +6080,8 @@
         {
           "text": "打水",
           "pinyin": "dǎ shuǐ",
-          "hanviet": "Đả Thuỷ"
+          "hanviet": "Đả Thuỷ",
+          "meaning_vi": "Đả Thuỷ"
         },
         {
           "text": "的",
@@ -5844,7 +6094,8 @@
         {
           "text": "器皿",
           "pinyin": "qì mǐn",
-          "hanviet": "Khí Mãnh"
+          "hanviet": "Khí Mãnh",
+          "meaning_vi": "Khí Mãnh"
         },
         {
           "text": "。"
@@ -5897,7 +6148,8 @@
         {
           "text": "曹彰",
           "pinyin": "cáo zhāng",
-          "hanviet": "Tào Chương"
+          "hanviet": "Tào Chương",
+          "meaning_vi": "Tào Chương"
         },
         {
           "text": "不",
@@ -5910,7 +6162,8 @@
         {
           "text": "长时间",
           "pinyin": "zhǎng shí jiān",
-          "hanviet": "Trường Thời Gian"
+          "hanviet": "Trường Thời Gian",
+          "meaning_vi": "lâu rồi"
         },
         {
           "text": "就",
@@ -5952,7 +6205,8 @@
         {
           "text": "此事",
           "pinyin": "cǐ shì",
-          "hanviet": "Thử Sự"
+          "hanviet": "Thử Sự",
+          "meaning_vi": "vấn đề"
         },
         {
           "text": "真实",
@@ -5989,7 +6243,8 @@
         {
           "text": "考证",
           "pinyin": "kǎo zhèng",
-          "hanviet": "Khảo Chứng"
+          "hanviet": "Khảo Chứng",
+          "meaning_vi": "Nghiên cứu"
         },
         {
           "text": "，"
@@ -5997,7 +6252,8 @@
         {
           "text": "却是",
           "pinyin": "què shì",
-          "hanviet": "Khước Thị"
+          "hanviet": "Khước Thị",
+          "meaning_vi": "Nhưng nó là"
         },
         {
           "text": "历史",
@@ -6066,7 +6322,8 @@
         {
           "text": "谋杀案",
           "pinyin": "móu shā àn",
-          "hanviet": "Mưu Sát Án"
+          "hanviet": "Mưu Sát Án",
+          "meaning_vi": "Mưu Sát Án"
         },
         {
           "text": "。"
@@ -6084,12 +6341,14 @@
         {
           "text": "唐代",
           "pinyin": "táng dài",
-          "hanviet": "Đường Đại"
+          "hanviet": "Đường Đại",
+          "meaning_vi": "nhà Đường"
         },
         {
           "text": "阎立本",
           "pinyin": "yán lì běn",
-          "hanviet": "Diêm Lập Bản"
+          "hanviet": "Diêm Lập Bản",
+          "meaning_vi": "Diêm Lập Bản"
         },
         {
           "text": "《"
@@ -6097,7 +6356,8 @@
         {
           "text": "历代帝王",
           "pinyin": "lì dài dì wáng",
-          "hanviet": "Lịch Đại Đế Vương"
+          "hanviet": "Lịch Đại Đế Vương",
+          "meaning_vi": "Lịch Đại Đế Vương"
         },
         {
           "text": "图",
@@ -6130,7 +6390,8 @@
         {
           "text": "图中",
           "pinyin": "tú zhōng",
-          "hanviet": "Đồ Trung"
+          "hanviet": "Đồ Trung",
+          "meaning_vi": "Trong hình"
         },
         {
           "text": "人物",
@@ -6151,17 +6412,20 @@
         {
           "text": "魏文帝",
           "pinyin": "wèi wén dì",
-          "hanviet": "Nguỵ Văn Đế"
+          "hanviet": "Nguỵ Văn Đế",
+          "meaning_vi": "Nguỵ Văn Đế"
         },
         {
           "text": "曹丕",
           "pinyin": "cáo pī",
-          "hanviet": "Tào Phi"
+          "hanviet": "Tào Phi",
+          "meaning_vi": "Tào Phi"
         },
         {
           "text": "唐代",
           "pinyin": "táng dài",
-          "hanviet": "Đường Đại"
+          "hanviet": "Đường Đại",
+          "meaning_vi": "nhà Đường"
         },
         {
           "text": "的",
@@ -6174,7 +6438,8 @@
         {
           "text": "一场",
           "pinyin": "yī cháng",
-          "hanviet": "Nhất Tràng"
+          "hanviet": "Nhất Tràng",
+          "meaning_vi": "một trò chơi"
         },
         {
           "text": "“"
@@ -6182,7 +6447,8 @@
         {
           "text": "中日",
           "pinyin": "zhōng rì",
-          "hanviet": "Trung Nhật"
+          "hanviet": "Trung Nhật",
+          "meaning_vi": "Trung Quốc và Nhật Bản"
         },
         {
           "text": "围棋",
@@ -6195,7 +6461,8 @@
         {
           "text": "擂台赛",
           "pinyin": "lèi tái sài",
-          "hanviet": "Lôi Đài Tái"
+          "hanviet": "Lôi Đài Tái",
+          "meaning_vi": "Lôi Đài Tái"
         },
         {
           "text": "”"
@@ -6203,7 +6470,8 @@
         {
           "text": "唐代",
           "pinyin": "táng dài",
-          "hanviet": "Đường Đại"
+          "hanviet": "Đường Đại",
+          "meaning_vi": "nhà Đường"
         },
         {
           "text": "的",
@@ -6216,7 +6484,8 @@
         {
           "text": "帝王",
           "pinyin": "dì wáng",
-          "hanviet": "Đế Vương"
+          "hanviet": "Đế Vương",
+          "meaning_vi": "hoàng đế"
         },
         {
           "text": "，"
@@ -6232,12 +6501,14 @@
         {
           "text": "唐高祖",
           "pinyin": "táng gāo zǔ",
-          "hanviet": "Đường Cao Tổ"
+          "hanviet": "Đường Cao Tổ",
+          "meaning_vi": "Đường Cao Tổ"
         },
         {
           "text": "李渊",
           "pinyin": "lǐ yuān",
-          "hanviet": "Lý Uyên"
+          "hanviet": "Lý Uyên",
+          "meaning_vi": "Lý Uyên"
         },
         {
           "text": "、"
@@ -6245,12 +6516,14 @@
         {
           "text": "唐太宗",
           "pinyin": "táng tài zōng",
-          "hanviet": "Đường Thái Tông"
+          "hanviet": "Đường Thái Tông",
+          "meaning_vi": "Hoàng đế Thái Tông nhà Đường"
         },
         {
           "text": "李世民",
           "pinyin": "lǐ shì mín",
-          "hanviet": "Lý Thế Dân"
+          "hanviet": "Lý Thế Dân",
+          "meaning_vi": "Lý Thế Dân"
         },
         {
           "text": "、"
@@ -6258,12 +6531,14 @@
         {
           "text": "唐玄宗",
           "pinyin": "táng xuán zōng",
-          "hanviet": "Đường Huyền Tông"
+          "hanviet": "Đường Huyền Tông",
+          "meaning_vi": "Đường Huyền Tông"
         },
         {
           "text": "李隆基",
           "pinyin": "lǐ lóng jī",
-          "hanviet": "Lý Long Cơ"
+          "hanviet": "Lý Long Cơ",
+          "meaning_vi": "Lý Long Cơ"
         },
         {
           "text": "等",
@@ -6308,7 +6583,8 @@
         {
           "text": "爱好者",
           "pinyin": "ài hào zhě",
-          "hanviet": "Ái Hảo Giả"
+          "hanviet": "Ái Hảo Giả",
+          "meaning_vi": "người đam mê"
         },
         {
           "text": "。"
@@ -6334,17 +6610,20 @@
         {
           "text": "唐代",
           "pinyin": "táng dài",
-          "hanviet": "Đường Đại"
+          "hanviet": "Đường Đại",
+          "meaning_vi": "nhà Đường"
         },
         {
           "text": "一改",
           "pinyin": "yī gǎi",
-          "hanviet": "Nhất Cải"
+          "hanviet": "Nhất Cải",
+          "meaning_vi": "Thay đổi"
         },
         {
           "text": "旧制",
           "pinyin": "jiù zhì",
-          "hanviet": "Cựu Chế"
+          "hanviet": "Cựu Chế",
+          "meaning_vi": "Cựu Chế"
         },
         {
           "text": "，"
@@ -6371,12 +6650,14 @@
         {
           "text": "棋待",
           "pinyin": "qí dài",
-          "hanviet": "Kỳ Đãi"
+          "hanviet": "Kỳ Đãi",
+          "meaning_vi": "Kỳ Đãi"
         },
         {
           "text": "诏",
           "pinyin": "zhào",
-          "hanviet": "Chiếu"
+          "hanviet": "Chiếu",
+          "meaning_vi": "sắc lệnh"
         },
         {
           "text": "”"
@@ -6395,7 +6676,8 @@
         {
           "text": "棋",
           "pinyin": "qí",
-          "hanviet": "Kỳ"
+          "hanviet": "Kỳ",
+          "meaning_vi": "cờ vua"
         },
         {
           "text": "博士",
@@ -6419,7 +6701,8 @@
         {
           "text": "官职",
           "pinyin": "guān zhí",
-          "hanviet": "Quan Chức"
+          "hanviet": "Quan Chức",
+          "meaning_vi": "chức vụ chính thức"
         },
         {
           "text": "。"
@@ -6437,12 +6720,14 @@
         {
           "text": "棋待",
           "pinyin": "qí dài",
-          "hanviet": "Kỳ Đãi"
+          "hanviet": "Kỳ Đãi",
+          "meaning_vi": "Kỳ Đãi"
         },
         {
           "text": "诏",
           "pinyin": "zhào",
-          "hanviet": "Chiếu"
+          "hanviet": "Chiếu",
+          "meaning_vi": "sắc lệnh"
         },
         {
           "text": "是",
@@ -6471,7 +6756,8 @@
         {
           "text": "召唤",
           "pinyin": "zhào huàn",
-          "hanviet": "Thiệu Hoán"
+          "hanviet": "Thiệu Hoán",
+          "meaning_vi": "Triệu hồi"
         },
         {
           "text": "、"
@@ -6503,7 +6789,8 @@
         {
           "text": "下棋",
           "pinyin": "xià qí",
-          "hanviet": "Hạ Kỳ"
+          "hanviet": "Hạ Kỳ",
+          "meaning_vi": "chơi cờ"
         },
         {
           "text": "的",
@@ -6527,7 +6814,8 @@
         {
           "text": "棋",
           "pinyin": "qí",
-          "hanviet": "Kỳ"
+          "hanviet": "Kỳ",
+          "meaning_vi": "cờ vua"
         },
         {
           "text": "博士",
@@ -6556,7 +6844,8 @@
         {
           "text": "宫内",
           "pinyin": "gōng nèi",
-          "hanviet": "Cung Nội"
+          "hanviet": "Cung Nội",
+          "meaning_vi": "Cung Nội"
         },
         {
           "text": "教授",
@@ -6569,7 +6858,8 @@
         {
           "text": "内廷",
           "pinyin": "nèi tíng",
-          "hanviet": "Nội Đình"
+          "hanviet": "Nội Đình",
+          "meaning_vi": "Nội Đình"
         },
         {
           "text": "人员",
@@ -6582,7 +6872,8 @@
         {
           "text": "下棋",
           "pinyin": "xià qí",
-          "hanviet": "Hạ Kỳ"
+          "hanviet": "Hạ Kỳ",
+          "meaning_vi": "chơi cờ"
         },
         {
           "text": "的",
@@ -6616,7 +6907,8 @@
         {
           "text": "唐代",
           "pinyin": "táng dài",
-          "hanviet": "Đường Đại"
+          "hanviet": "Đường Đại",
+          "meaning_vi": "nhà Đường"
         },
         {
           "text": "著名",
@@ -6637,12 +6929,14 @@
         {
           "text": "棋待",
           "pinyin": "qí dài",
-          "hanviet": "Kỳ Đãi"
+          "hanviet": "Kỳ Đãi",
+          "meaning_vi": "Kỳ Đãi"
         },
         {
           "text": "诏",
           "pinyin": "zhào",
-          "hanviet": "Chiếu"
+          "hanviet": "Chiếu",
+          "meaning_vi": "sắc lệnh"
         },
         {
           "text": "有",
@@ -6655,7 +6949,8 @@
         {
           "text": "王积薪",
           "pinyin": "wáng jī xīn",
-          "hanviet": "Vương Tích Tân"
+          "hanviet": "Vương Tích Tân",
+          "meaning_vi": "Vương Tích Tân"
         },
         {
           "text": "、"
@@ -6663,7 +6958,8 @@
         {
           "text": "王叔文",
           "pinyin": "wáng shū wén",
-          "hanviet": "Vương Thúc Văn"
+          "hanviet": "Vương Thúc Văn",
+          "meaning_vi": "Vương Thúc Văn"
         },
         {
           "text": "、"
@@ -6671,7 +6967,8 @@
         {
           "text": "顾师言",
           "pinyin": "gù shī yán",
-          "hanviet": "Cố Sư Ngôn"
+          "hanviet": "Cố Sư Ngôn",
+          "meaning_vi": "Gu Shiyan"
         },
         {
           "text": "、"
@@ -6679,7 +6976,8 @@
         {
           "text": "滑能",
           "pinyin": "huá néng",
-          "hanviet": "Hoạt Năng"
+          "hanviet": "Hoạt Năng",
+          "meaning_vi": "Hoạt Năng"
         },
         {
           "text": "等",
@@ -6705,12 +7003,14 @@
         {
           "text": "新疆",
           "pinyin": "xīn jiāng",
-          "hanviet": "Tân Cương"
+          "hanviet": "Tân Cương",
+          "meaning_vi": "Tân Cương"
         },
         {
           "text": "吐鲁番",
           "pinyin": "tǔ lǔ fān",
-          "hanviet": "Thổ Lỗ Phan"
+          "hanviet": "Thổ Lỗ Phan",
+          "meaning_vi": "Thổ Lỗ Phan"
         },
         {
           "text": "出土",
@@ -6731,22 +7031,26 @@
         {
           "text": "唐代",
           "pinyin": "táng dài",
-          "hanviet": "Đường Đại"
+          "hanviet": "Đường Đại",
+          "meaning_vi": "nhà Đường"
         },
         {
           "text": "仕女",
           "pinyin": "shì nǚ",
-          "hanviet": "Sĩ Nữ"
+          "hanviet": "Sĩ Nữ",
+          "meaning_vi": "quý cô"
         },
         {
           "text": "弈棋",
           "pinyin": "yì qí",
-          "hanviet": "Dịch Kỳ"
+          "hanviet": "Dịch Kỳ",
+          "meaning_vi": "Dịch Kỳ"
         },
         {
           "text": "绢画",
           "pinyin": "juàn huà",
-          "hanviet": "Quyên Hoạ"
+          "hanviet": "Quyên Hoạ",
+          "meaning_vi": "Quyên Hoạ"
         },
         {
           "text": "至少",
@@ -6767,7 +7071,8 @@
         {
           "text": "西汉时期",
           "pinyin": "xī hàn shí qī",
-          "hanviet": "Tây Hán Thời Kỳ"
+          "hanviet": "Tây Hán Thời Kỳ",
+          "meaning_vi": "Tây Hán Thời Kỳ"
         },
         {
           "text": "，"
@@ -6775,7 +7080,8 @@
         {
           "text": "日本",
           "pinyin": "rì běn",
-          "hanviet": "Nhật Bản"
+          "hanviet": "Nhật Bản",
+          "meaning_vi": "Nhật Bản"
         },
         {
           "text": "就",
@@ -6799,7 +7105,7 @@
           "hanviet": "Trung Quốc",
           "hsk": 1,
           "word_id": "hsk1_610",
-          "meaning_vi": "trung Quốc"
+          "meaning_vi": "Trung Quốc"
         },
         {
           "text": "文化",
@@ -6852,7 +7158,8 @@
         {
           "text": "世纪末",
           "pinyin": "shì jì mò",
-          "hanviet": "Thế Kỷ Mạt"
+          "hanviet": "Thế Kỷ Mạt",
+          "meaning_vi": "cuối thế kỷ"
         },
         {
           "text": "到",
@@ -6903,7 +7210,8 @@
         {
           "text": "日本",
           "pinyin": "rì běn",
-          "hanviet": "Nhật Bản"
+          "hanviet": "Nhật Bản",
+          "meaning_vi": "Nhật Bản"
         },
         {
           "text": "已",
@@ -6948,7 +7256,8 @@
         {
           "text": "旧唐书",
           "pinyin": "jiù táng shū",
-          "hanviet": "Cựu Đường Thư"
+          "hanviet": "Cựu Đường Thư",
+          "meaning_vi": "Cựu Đường Thư"
         },
         {
           "text": "·"
@@ -6956,7 +7265,8 @@
         {
           "text": "宣宗纪",
           "pinyin": "xuān zōng jì",
-          "hanviet": "Tuyên Tông Kỷ"
+          "hanviet": "Tuyên Tông Kỷ",
+          "meaning_vi": "Tuyên Tông Kỷ"
         },
         {
           "text": "》"
@@ -6991,7 +7301,8 @@
         {
           "text": "二年",
           "pinyin": "èr nián",
-          "hanviet": "Nhị Niên"
+          "hanviet": "Nhị Niên",
+          "meaning_vi": "hai năm"
         },
         {
           "text": "（"
@@ -7013,7 +7324,8 @@
         {
           "text": "三月",
           "pinyin": "sān yuè",
-          "hanviet": "Tam Nguyệt"
+          "hanviet": "Tam Nguyệt",
+          "meaning_vi": "tháng ba"
         },
         {
           "text": "，"
@@ -7021,7 +7333,8 @@
         {
           "text": "日本",
           "pinyin": "rì běn",
-          "hanviet": "Nhật Bản"
+          "hanviet": "Nhật Bản",
+          "meaning_vi": "Nhật Bản"
         },
         {
           "text": "王子",
@@ -7034,7 +7347,8 @@
         {
           "text": "来朝",
           "pinyin": "lái cháo",
-          "hanviet": "Lai Triều"
+          "hanviet": "Lai Triều",
+          "meaning_vi": "Lai Triều"
         },
         {
           "text": "。"
@@ -7068,7 +7382,8 @@
         {
           "text": "下围棋",
           "pinyin": "xià wéi qí",
-          "hanviet": "Hạ Vi Kỳ"
+          "hanviet": "Hạ Vi Kỳ",
+          "meaning_vi": "Chơi cờ vây"
         },
         {
           "text": "，"
@@ -7076,27 +7391,32 @@
         {
           "text": "宣宗",
           "pinyin": "xuān zōng",
-          "hanviet": "Tuyên Tông"
+          "hanviet": "Tuyên Tông",
+          "meaning_vi": "Tuyên Tông"
         },
         {
           "text": "特命",
           "pinyin": "tè mìng",
-          "hanviet": "Đặc Mệnh"
+          "hanviet": "Đặc Mệnh",
+          "meaning_vi": "Đặc Mệnh"
         },
         {
           "text": "棋待",
           "pinyin": "qí dài",
-          "hanviet": "Kỳ Đãi"
+          "hanviet": "Kỳ Đãi",
+          "meaning_vi": "Kỳ Đãi"
         },
         {
           "text": "诏",
           "pinyin": "zhào",
-          "hanviet": "Chiếu"
+          "hanviet": "Chiếu",
+          "meaning_vi": "sắc lệnh"
         },
         {
           "text": "顾师言",
           "pinyin": "gù shī yán",
-          "hanviet": "Cố Sư Ngôn"
+          "hanviet": "Cố Sư Ngôn",
+          "meaning_vi": "Gu Shiyan"
         },
         {
           "text": "与",
@@ -7117,7 +7437,8 @@
         {
           "text": "对局",
           "pinyin": "duì jú",
-          "hanviet": "Đối Cục"
+          "hanviet": "Đối Cục",
+          "meaning_vi": "Đối Cục"
         },
         {
           "text": "。"
@@ -7135,17 +7456,20 @@
         {
           "text": "唐朝",
           "pinyin": "táng cháo",
-          "hanviet": "Đường Triều"
+          "hanviet": "Đường Triều",
+          "meaning_vi": "nhà Đường"
         },
         {
           "text": "人苏",
           "pinyin": "rén sū",
-          "hanviet": "Nhân Tô"
+          "hanviet": "Nhân Tô",
+          "meaning_vi": "Rensu"
         },
         {
           "text": "鹦",
           "pinyin": "yīng",
-          "hanviet": "Anh"
+          "hanviet": "Anh",
+          "meaning_vi": "Anh"
         },
         {
           "text": "的",
@@ -7161,12 +7485,14 @@
         {
           "text": "杜阳",
           "pinyin": "dù yáng",
-          "hanviet": "Đỗ Dương"
+          "hanviet": "Đỗ Dương",
+          "meaning_vi": "Đỗ Dương"
         },
         {
           "text": "杂编",
           "pinyin": "zá biān",
-          "hanviet": "Tạp Biên"
+          "hanviet": "Tạp Biên",
+          "meaning_vi": "Tạp Biên"
         },
         {
           "text": "》"
@@ -7206,7 +7532,8 @@
         {
           "text": "对局",
           "pinyin": "duì jú",
-          "hanviet": "Đối Cục"
+          "hanviet": "Đối Cục",
+          "meaning_vi": "Đối Cục"
         },
         {
           "text": "过程",
@@ -7243,7 +7570,8 @@
         {
           "text": "顾师言",
           "pinyin": "gù shī yán",
-          "hanviet": "Cố Sư Ngôn"
+          "hanviet": "Cố Sư Ngôn",
+          "meaning_vi": "Gu Shiyan"
         },
         {
           "text": "和",
@@ -7256,7 +7584,8 @@
         {
           "text": "日本",
           "pinyin": "rì běn",
-          "hanviet": "Nhật Bản"
+          "hanviet": "Nhật Bản",
+          "meaning_vi": "Nhật Bản"
         },
         {
           "text": "王子",
@@ -7269,7 +7598,8 @@
         {
           "text": "对局",
           "pinyin": "duì jú",
-          "hanviet": "Đối Cục"
+          "hanviet": "Đối Cục",
+          "meaning_vi": "Đối Cục"
         },
         {
           "text": "，"
@@ -7277,7 +7607,8 @@
         {
           "text": "两个",
           "pinyin": "liǎng gè",
-          "hanviet": "Lưỡng Cá"
+          "hanviet": "Lưỡng Cá",
+          "meaning_vi": "hai"
         },
         {
           "text": "人",
@@ -7349,12 +7680,14 @@
         {
           "text": "第三十三",
           "pinyin": "dì sān shí sān",
-          "hanviet": "Đệ Tam Thập Tam"
+          "hanviet": "Đệ Tam Thập Tam",
+          "meaning_vi": "Đệ Tam Thập Tam"
         },
         {
           "text": "手时",
           "pinyin": "shǒu shí",
-          "hanviet": "Thủ Thời"
+          "hanviet": "Thủ Thời",
+          "meaning_vi": "Thủ Thời"
         },
         {
           "text": "，"
@@ -7362,12 +7695,14 @@
         {
           "text": "顾师言",
           "pinyin": "gù shī yán",
-          "hanviet": "Cố Sư Ngôn"
+          "hanviet": "Cố Sư Ngôn",
+          "meaning_vi": "Gu Shiyan"
         },
         {
           "text": "发现自己",
           "pinyin": "fā xiàn zì jǐ",
-          "hanviet": "Phát Hiện Tự Kỷ"
+          "hanviet": "Phát Hiện Tự Kỷ",
+          "meaning_vi": "Phát Hiện Tự Kỷ"
         },
         {
           "text": "有",
@@ -7380,12 +7715,14 @@
         {
           "text": "两片",
           "pinyin": "liǎng piàn",
-          "hanviet": "Lưỡng Phiến"
+          "hanviet": "Lưỡng Phiến",
+          "meaning_vi": "hai lát"
         },
         {
           "text": "棋",
           "pinyin": "qí",
-          "hanviet": "Kỳ"
+          "hanviet": "Kỳ",
+          "meaning_vi": "cờ vua"
         },
         {
           "text": "都",
@@ -7443,7 +7780,8 @@
         {
           "text": "顾师言",
           "pinyin": "gù shī yán",
-          "hanviet": "Cố Sư Ngôn"
+          "hanviet": "Cố Sư Ngôn",
+          "meaning_vi": "Gu Shiyan"
         },
         {
           "text": "拿",
@@ -7464,7 +7802,8 @@
         {
           "text": "一颗",
           "pinyin": "yī kē",
-          "hanviet": "Nhất Khoa"
+          "hanviet": "Nhất Khoa",
+          "meaning_vi": "một"
         },
         {
           "text": "子",
@@ -7515,7 +7854,8 @@
         {
           "text": "落子",
           "pinyin": "lào zi",
-          "hanviet": "Lạc Tử"
+          "hanviet": "Lạc Tử",
+          "meaning_vi": "Lạc Tử"
         },
         {
           "text": "，"
@@ -7523,7 +7863,8 @@
         {
           "text": "手上",
           "pinyin": "shǒu shàng",
-          "hanviet": "Thủ Thướng"
+          "hanviet": "Thủ Thướng",
+          "meaning_vi": "Thủ Thướng"
         },
         {
           "text": "都",
@@ -7552,7 +7893,8 @@
         {
           "text": "冷汗",
           "pinyin": "lěng hàn",
-          "hanviet": "Lạnh Hãn"
+          "hanviet": "Lạnh Hãn",
+          "meaning_vi": "Lạnh Hãn"
         },
         {
           "text": "。"
@@ -7581,7 +7923,8 @@
         {
           "text": "顾师言",
           "pinyin": "gù shī yán",
-          "hanviet": "Cố Sư Ngôn"
+          "hanviet": "Cố Sư Ngôn",
+          "meaning_vi": "Gu Shiyan"
         },
         {
           "text": "终于",
@@ -7610,12 +7953,14 @@
         {
           "text": "第三十四",
           "pinyin": "dì sān shí sì",
-          "hanviet": "Đệ Tam Thập Tứ"
+          "hanviet": "Đệ Tam Thập Tứ",
+          "meaning_vi": "Đệ Tam Thập Tứ"
         },
         {
           "text": "颗子",
           "pinyin": "kē zi",
-          "hanviet": "Khoa Tử"
+          "hanviet": "Khoa Tử",
+          "meaning_vi": "Khoa Tử"
         },
         {
           "text": "，"
@@ -7647,12 +7992,14 @@
         {
           "text": "两片",
           "pinyin": "liǎng piàn",
-          "hanviet": "Lưỡng Phiến"
+          "hanviet": "Lưỡng Phiến",
+          "meaning_vi": "hai lát"
         },
         {
           "text": "棋",
           "pinyin": "qí",
-          "hanviet": "Kỳ"
+          "hanviet": "Kỳ",
+          "meaning_vi": "cờ vua"
         },
         {
           "text": "的",
@@ -7686,12 +8033,14 @@
         {
           "text": "这一着",
           "pinyin": "zhè yī zhe",
-          "hanviet": "Giá Nhất Trước"
+          "hanviet": "Giá Nhất Trước",
+          "meaning_vi": "Giá Nhất Trước"
         },
         {
           "text": "儿",
           "pinyin": "ér",
-          "hanviet": "Nhi"
+          "hanviet": "Nhi",
+          "meaning_vi": "con trai"
         },
         {
           "text": "被",
@@ -7723,7 +8072,8 @@
         {
           "text": "神头",
           "pinyin": "shén tóu",
-          "hanviet": "Thần Đầu"
+          "hanviet": "Thần Đầu",
+          "meaning_vi": "Thần Đầu"
         },
         {
           "text": "”"
@@ -7744,12 +8094,14 @@
         {
           "text": "唐代",
           "pinyin": "táng dài",
-          "hanviet": "Đường Đại"
+          "hanviet": "Đường Đại",
+          "meaning_vi": "nhà Đường"
         },
         {
           "text": "紫檀",
           "pinyin": "zǐ tán",
-          "hanviet": "Tử Đàn"
+          "hanviet": "Tử Đàn",
+          "meaning_vi": "Tử Đàn"
         },
         {
           "text": "围",
@@ -7762,12 +8114,14 @@
         {
           "text": "棋盘",
           "pinyin": "qí pán",
-          "hanviet": "Kỳ Bàn"
+          "hanviet": "Kỳ Bàn",
+          "meaning_vi": "Kỳ Bàn"
         },
         {
           "text": "日本",
           "pinyin": "rì běn",
-          "hanviet": "Nhật Bản"
+          "hanviet": "Nhật Bản",
+          "meaning_vi": "Nhật Bản"
         },
         {
           "text": "王子",
@@ -7780,12 +8134,14 @@
         {
           "text": "对此",
           "pinyin": "duì cǐ",
-          "hanviet": "Đối Thử"
+          "hanviet": "Đối Thử",
+          "meaning_vi": "Về vấn đề này"
         },
         {
           "text": "无计可施",
           "pinyin": "wú jì kě shī",
-          "hanviet": "Vô Kế Khả Thi"
+          "hanviet": "Vô Kế Khả Thi",
+          "meaning_vi": "Vô Kế Khả Thi"
         },
         {
           "text": "，"
@@ -7801,12 +8157,14 @@
         {
           "text": "中盘",
           "pinyin": "zhōng pán",
-          "hanviet": "Trung Bàn"
+          "hanviet": "Trung Bàn",
+          "meaning_vi": "Giữa trận"
         },
         {
           "text": "认输",
           "pinyin": "rèn shū",
-          "hanviet": "Nhận Thâu"
+          "hanviet": "Nhận Thâu",
+          "meaning_vi": "Nhận Thâu"
         },
         {
           "text": "了",
@@ -7832,7 +8190,8 @@
         {
           "text": "日本",
           "pinyin": "rì běn",
-          "hanviet": "Nhật Bản"
+          "hanviet": "Nhật Bản",
+          "meaning_vi": "Nhật Bản"
         },
         {
           "text": "王子",
@@ -7853,7 +8212,8 @@
         {
           "text": "礼宾官",
           "pinyin": "lǐ bīn guān",
-          "hanviet": "Lễ Tân Quan"
+          "hanviet": "Lễ Tân Quan",
+          "meaning_vi": "Lễ Tân Quan"
         },
         {
           "text": "说",
@@ -7872,12 +8232,14 @@
         {
           "text": "顾待",
           "pinyin": "gù dài",
-          "hanviet": "Cố Đãi"
+          "hanviet": "Cố Đãi",
+          "meaning_vi": "Cố Đãi"
         },
         {
           "text": "诏",
           "pinyin": "zhào",
-          "hanviet": "Chiếu"
+          "hanviet": "Chiếu",
+          "meaning_vi": "sắc lệnh"
         },
         {
           "text": "是",
@@ -7890,17 +8252,20 @@
         {
           "text": "贵国",
           "pinyin": "guì guó",
-          "hanviet": "Quý Quốc"
+          "hanviet": "Quý Quốc",
+          "meaning_vi": "Quý Quốc"
         },
         {
           "text": "第几",
           "pinyin": "dì jǐ",
-          "hanviet": "Đệ Kỷ"
+          "hanviet": "Đệ Kỷ",
+          "meaning_vi": "Đệ Kỷ"
         },
         {
           "text": "棋手",
           "pinyin": "qí shǒu",
-          "hanviet": "Kỳ Thủ"
+          "hanviet": "Kỳ Thủ",
+          "meaning_vi": "Kỳ Thủ"
         },
         {
           "text": "？"
@@ -7921,7 +8286,8 @@
         {
           "text": "礼宾官",
           "pinyin": "lǐ bīn guān",
-          "hanviet": "Lễ Tân Quan"
+          "hanviet": "Lễ Tân Quan",
+          "meaning_vi": "Lễ Tân Quan"
         },
         {
           "text": "不假思索",
@@ -7964,7 +8330,8 @@
         {
           "text": "第三手",
           "pinyin": "dì sān shǒu",
-          "hanviet": "Đệ Tam Thủ"
+          "hanviet": "Đệ Tam Thủ",
+          "meaning_vi": "Đệ Tam Thủ"
         },
         {
           "text": "。"
@@ -8004,7 +8371,8 @@
         {
           "text": "顾师言",
           "pinyin": "gù shī yán",
-          "hanviet": "Cố Sư Ngôn"
+          "hanviet": "Cố Sư Ngôn",
+          "meaning_vi": "Gu Shiyan"
         },
         {
           "text": "是",
@@ -8025,7 +8393,8 @@
         {
           "text": "国手",
           "pinyin": "guó shǒu",
-          "hanviet": "Quốc Thủ"
+          "hanviet": "Quốc Thủ",
+          "meaning_vi": "Quốc Thủ"
         },
         {
           "text": "。"
@@ -8043,7 +8412,8 @@
         {
           "text": "礼宾官",
           "pinyin": "lǐ bīn guān",
-          "hanviet": "Lễ Tân Quan"
+          "hanviet": "Lễ Tân Quan",
+          "meaning_vi": "Lễ Tân Quan"
         },
         {
           "text": "为了",
@@ -8064,7 +8434,8 @@
         {
           "text": "大国",
           "pinyin": "dà guó",
-          "hanviet": "Đại Quốc"
+          "hanviet": "Đại Quốc",
+          "meaning_vi": "đất nước lớn"
         },
         {
           "text": "的",
@@ -8101,7 +8472,8 @@
         {
           "text": "谎",
           "pinyin": "huǎng",
-          "hanviet": "Hoang"
+          "hanviet": "Hoang",
+          "meaning_vi": "nói dối"
         },
         {
           "text": "。"
@@ -8119,7 +8491,8 @@
         {
           "text": "日本",
           "pinyin": "rì běn",
-          "hanviet": "Nhật Bản"
+          "hanviet": "Nhật Bản",
+          "meaning_vi": "Nhật Bản"
         },
         {
           "text": "王子",
@@ -8140,7 +8513,8 @@
         {
           "text": "唬住",
           "pinyin": "hǔ zhù",
-          "hanviet": "Hổ Trú"
+          "hanviet": "Hổ Trú",
+          "meaning_vi": "Hổ Trú"
         },
         {
           "text": "了",
@@ -8186,7 +8560,8 @@
         {
           "text": "小国",
           "pinyin": "xiǎo guó",
-          "hanviet": "Tiểu Quốc"
+          "hanviet": "Tiểu Quốc",
+          "meaning_vi": "đất nước nhỏ"
         },
         {
           "text": "的",
@@ -8199,7 +8574,8 @@
         {
           "text": "第一名",
           "pinyin": "dì yì míng",
-          "hanviet": "Đệ Nhất Danh"
+          "hanviet": "Đệ Nhất Danh",
+          "meaning_vi": "vị trí đầu tiên"
         },
         {
           "text": "不如",
@@ -8212,7 +8588,8 @@
         {
           "text": "大国",
           "pinyin": "dà guó",
-          "hanviet": "Đại Quốc"
+          "hanviet": "Đại Quốc",
+          "meaning_vi": "đất nước lớn"
         },
         {
           "text": "的",
@@ -8225,7 +8602,8 @@
         {
           "text": "第三名",
           "pinyin": "dì sān míng",
-          "hanviet": "Đệ Tam Danh"
+          "hanviet": "Đệ Tam Danh",
+          "meaning_vi": "Đệ Tam Danh"
         },
         {
           "text": "，"
@@ -8284,12 +8662,14 @@
         {
           "text": "当湖",
           "pinyin": "dāng hú",
-          "hanviet": "Đương Hồ"
+          "hanviet": "Đương Hồ",
+          "meaning_vi": "Đương Hồ"
         },
         {
           "text": "十局",
           "pinyin": "shí jú",
-          "hanviet": "Thập Cục"
+          "hanviet": "Thập Cục",
+          "meaning_vi": "Thập Cục"
         },
         {
           "text": "”"
@@ -8327,7 +8707,8 @@
         {
           "text": "之战",
           "pinyin": "zhī zhàn",
-          "hanviet": "Chi Chiến"
+          "hanviet": "Chi Chiến",
+          "meaning_vi": "trận chiến"
         },
         {
           "text": "熟悉",
@@ -8383,7 +8764,8 @@
         {
           "text": "要说",
           "pinyin": "yào shuō",
-          "hanviet": "Yêu Thuyết"
+          "hanviet": "Yêu Thuyết",
+          "meaning_vi": "Yêu Thuyết"
         },
         {
           "text": "中国",
@@ -8391,7 +8773,7 @@
           "hanviet": "Trung Quốc",
           "hsk": 1,
           "word_id": "hsk1_610",
-          "meaning_vi": "trung Quốc"
+          "meaning_vi": "Trung Quốc"
         },
         {
           "text": "古代",
@@ -8420,7 +8802,8 @@
         {
           "text": "顶峰",
           "pinyin": "dǐng fēng",
-          "hanviet": "Đỉnh Phong"
+          "hanviet": "Đỉnh Phong",
+          "meaning_vi": "Đỉnh Phong"
         },
         {
           "text": "，"
@@ -8428,17 +8811,20 @@
         {
           "text": "当属",
           "pinyin": "dāng shǔ",
-          "hanviet": "Đương Thuộc"
+          "hanviet": "Đương Thuộc",
+          "meaning_vi": "Chắc chắn rồi"
         },
         {
           "text": "清代",
           "pinyin": "qīng dài",
-          "hanviet": "Thanh Đại"
+          "hanviet": "Thanh Đại",
+          "meaning_vi": "nhà Thanh"
         },
         {
           "text": "雍正",
           "pinyin": "yōng zhèng",
-          "hanviet": "Ung Chinh"
+          "hanviet": "Ung Chinh",
+          "meaning_vi": "Ung Chính"
         },
         {
           "text": "、"
@@ -8446,7 +8832,8 @@
         {
           "text": "乾隆年间",
           "pinyin": "qián lóng nián jiān",
-          "hanviet": "Càn Long Niên Gian"
+          "hanviet": "Càn Long Niên Gian",
+          "meaning_vi": "thời Càn Long"
         },
         {
           "text": "的",
@@ -8459,7 +8846,8 @@
         {
           "text": "范西屏",
           "pinyin": "fàn xī píng",
-          "hanviet": "Phạm Tây Bình"
+          "hanviet": "Phạm Tây Bình",
+          "meaning_vi": "Fan Xiping"
         },
         {
           "text": "、"
@@ -8467,17 +8855,20 @@
         {
           "text": "施襄夏",
           "pinyin": "shī xiāng xià",
-          "hanviet": "Thi Tương Hạ"
+          "hanviet": "Thi Tương Hạ",
+          "meaning_vi": "Thạch Tương Hạ"
         },
         {
           "text": "两位",
           "pinyin": "liǎng wèi",
-          "hanviet": "Lưỡng Vị"
+          "hanviet": "Lưỡng Vị",
+          "meaning_vi": "hai người"
         },
         {
           "text": "棋士",
           "pinyin": "qí shì",
-          "hanviet": "Kỳ Sĩ"
+          "hanviet": "Kỳ Sĩ",
+          "meaning_vi": "Kỳ Sĩ"
         },
         {
           "text": "。"
@@ -8495,7 +8886,8 @@
         {
           "text": "范西屏",
           "pinyin": "fàn xī píng",
-          "hanviet": "Phạm Tây Bình"
+          "hanviet": "Phạm Tây Bình",
+          "meaning_vi": "Fan Xiping"
         },
         {
           "text": "、"
@@ -8503,12 +8895,14 @@
         {
           "text": "施襄夏",
           "pinyin": "shī xiāng xià",
-          "hanviet": "Thi Tương Hạ"
+          "hanviet": "Thi Tương Hạ",
+          "meaning_vi": "Thạch Tương Hạ"
         },
         {
           "text": "二人",
           "pinyin": "èr rén",
-          "hanviet": "Nhị Nhân"
+          "hanviet": "Nhị Nhân",
+          "meaning_vi": "hai người"
         },
         {
           "text": "都",
@@ -8529,12 +8923,14 @@
         {
           "text": "浙江",
           "pinyin": "zhè jiāng",
-          "hanviet": "Chiết Giang"
+          "hanviet": "Chiết Giang",
+          "meaning_vi": "Chiết Giang"
         },
         {
           "text": "海宁",
           "pinyin": "hǎi níng",
-          "hanviet": "Hải Trữ"
+          "hanviet": "Hải Trữ",
+          "meaning_vi": "Hải Trữ"
         },
         {
           "text": "人",
@@ -8560,12 +8956,14 @@
         {
           "text": "范西屏",
           "pinyin": "fàn xī píng",
-          "hanviet": "Phạm Tây Bình"
+          "hanviet": "Phạm Tây Bình",
+          "meaning_vi": "Fan Xiping"
         },
         {
           "text": "三岁时",
           "pinyin": "sān suì shí",
-          "hanviet": "Tam Tuế Thời"
+          "hanviet": "Tam Tuế Thời",
+          "meaning_vi": "ba tuổi"
         },
         {
           "text": "，"
@@ -8605,7 +9003,8 @@
         {
           "text": "下棋",
           "pinyin": "xià qí",
-          "hanviet": "Hạ Kỳ"
+          "hanviet": "Hạ Kỳ",
+          "meaning_vi": "chơi cờ"
         },
         {
           "text": "，"
@@ -8637,7 +9036,8 @@
         {
           "text": "咿咿呀呀",
           "pinyin": "yī yī yā ya",
-          "hanviet": "Y Y Nha Nha"
+          "hanviet": "Y Y Nha Nha",
+          "meaning_vi": "Y Y Nha Nha"
         },
         {
           "text": "、"
@@ -8645,12 +9045,14 @@
         {
           "text": "指指",
           "pinyin": "zhǐ zhǐ",
-          "hanviet": "Chỉ Chỉ"
+          "hanviet": "Chỉ Chỉ",
+          "meaning_vi": "Chỉ Chỉ"
         },
         {
           "text": "画画",
           "pinyin": "huà huà",
-          "hanviet": "Hoạ Hoạ"
+          "hanviet": "Hoạ Hoạ",
+          "meaning_vi": "Hoạ Hoạ"
         },
         {
           "text": "，"
@@ -8666,7 +9068,8 @@
         {
           "text": "看出",
           "pinyin": "kàn chū",
-          "hanviet": "Khán Xuất"
+          "hanviet": "Khán Xuất",
+          "meaning_vi": "xem"
         },
         {
           "text": "了",
@@ -8679,7 +9082,8 @@
         {
           "text": "门道",
           "pinyin": "mén dào",
-          "hanviet": "Môn Đạo"
+          "hanviet": "Môn Đạo",
+          "meaning_vi": "Môn Đạo"
         },
         {
           "text": "。"
@@ -8705,7 +9109,8 @@
         {
           "text": "大些",
           "pinyin": "dà xiē",
-          "hanviet": "Đại Ta"
+          "hanviet": "Đại Ta",
+          "meaning_vi": "Đại Ta"
         },
         {
           "text": "后",
@@ -8721,12 +9126,14 @@
         {
           "text": "范西屏",
           "pinyin": "fàn xī píng",
-          "hanviet": "Phạm Tây Bình"
+          "hanviet": "Phạm Tây Bình",
+          "meaning_vi": "Fan Xiping"
         },
         {
           "text": "拜",
           "pinyin": "bài",
-          "hanviet": "Bái"
+          "hanviet": "Bái",
+          "meaning_vi": "tạm biệt"
         },
         {
           "text": "在",
@@ -8747,22 +9154,26 @@
         {
           "text": "名家",
           "pinyin": "míng jiā",
-          "hanviet": "Danh Gia"
+          "hanviet": "Danh Gia",
+          "meaning_vi": "Danh Gia"
         },
         {
           "text": "俞长",
           "pinyin": "yú zhǎng",
-          "hanviet": "Du Trường"
+          "hanviet": "Du Trường",
+          "meaning_vi": "Du Trường"
         },
         {
           "text": "侯",
           "pinyin": "hóu",
-          "hanviet": "Hầu"
+          "hanviet": "Hầu",
+          "meaning_vi": "Hầu"
         },
         {
           "text": "门下",
           "pinyin": "mén xià",
-          "hanviet": "Môn Hạ"
+          "hanviet": "Môn Hạ",
+          "meaning_vi": "Môn Hạ"
         },
         {
           "text": "学",
@@ -8796,7 +9207,8 @@
         {
           "text": "十二岁",
           "pinyin": "shí èr suì",
-          "hanviet": "Thập Nhị Tuế"
+          "hanviet": "Thập Nhị Tuế",
+          "meaning_vi": "Thập Nhị Tuế"
         },
         {
           "text": "左右",
@@ -8825,12 +9237,14 @@
         {
           "text": "俞长",
           "pinyin": "yú zhǎng",
-          "hanviet": "Du Trường"
+          "hanviet": "Du Trường",
+          "meaning_vi": "Du Trường"
         },
         {
           "text": "侯",
           "pinyin": "hóu",
-          "hanviet": "Hầu"
+          "hanviet": "Hầu",
+          "meaning_vi": "Hầu"
         },
         {
           "text": "对弈",
@@ -8843,7 +9257,8 @@
         {
           "text": "七局",
           "pinyin": "qī jú",
-          "hanviet": "Thất Cục"
+          "hanviet": "Thất Cục",
+          "meaning_vi": "Bảy trò chơi"
         },
         {
           "text": "，"
@@ -8859,7 +9274,8 @@
         {
           "text": "战皆胜",
           "pinyin": "zhàn jiē shèng",
-          "hanviet": "Chiến Giai Thắng"
+          "hanviet": "Chiến Giai Thắng",
+          "meaning_vi": "Chiến Giai Thắng"
         },
         {
           "text": "。"
@@ -8888,17 +9304,20 @@
         {
           "text": "俞长",
           "pinyin": "yú zhǎng",
-          "hanviet": "Du Trường"
+          "hanviet": "Du Trường",
+          "meaning_vi": "Du Trường"
         },
         {
           "text": "侯",
           "pinyin": "hóu",
-          "hanviet": "Hầu"
+          "hanviet": "Hầu",
+          "meaning_vi": "Hầu"
         },
         {
           "text": "自知",
           "pinyin": "zì zhī",
-          "hanviet": "Tự Tri"
+          "hanviet": "Tự Tri",
+          "meaning_vi": "Tự Tri"
         },
         {
           "text": "非",
@@ -8927,7 +9346,8 @@
         {
           "text": "敌",
           "pinyin": "dí",
-          "hanviet": "Địch"
+          "hanviet": "Địch",
+          "meaning_vi": "Địch"
         },
         {
           "text": "，"
@@ -8935,7 +9355,8 @@
         {
           "text": "师徒",
           "pinyin": "shī tú",
-          "hanviet": "Sư Đồ"
+          "hanviet": "Sư Đồ",
+          "meaning_vi": "Sư Đồ"
         },
         {
           "text": "间",
@@ -8956,7 +9377,8 @@
         {
           "text": "再也",
           "pinyin": "zài yě",
-          "hanviet": "Tái Dã"
+          "hanviet": "Tái Dã",
+          "meaning_vi": "Tái Dã"
         },
         {
           "text": "不",
@@ -8969,7 +9391,8 @@
         {
           "text": "下棋",
           "pinyin": "xià qí",
-          "hanviet": "Hạ Kỳ"
+          "hanviet": "Hạ Kỳ",
+          "meaning_vi": "chơi cờ"
         },
         {
           "text": "了",
@@ -8995,7 +9418,8 @@
         {
           "text": "施襄夏",
           "pinyin": "shī xiāng xià",
-          "hanviet": "Thi Tương Hạ"
+          "hanviet": "Thi Tương Hạ",
+          "meaning_vi": "Thạch Tương Hạ"
         },
         {
           "text": "（"
@@ -9003,12 +9427,14 @@
         {
           "text": "字定",
           "pinyin": "zì dìng",
-          "hanviet": "Tự Định"
+          "hanviet": "Tự Định",
+          "meaning_vi": "Tự Định"
         },
         {
           "text": "庵",
           "pinyin": "ān",
-          "hanviet": "Am"
+          "hanviet": "Am",
+          "meaning_vi": "Am"
         },
         {
           "text": "）"
@@ -9016,7 +9442,8 @@
         {
           "text": "比范西屏",
           "pinyin": "bǐ fàn xī píng",
-          "hanviet": "Tỷ Phạm Tây Bình"
+          "hanviet": "Tỷ Phạm Tây Bình",
+          "meaning_vi": "Tỷ Phạm Tây Bình"
         },
         {
           "text": "小",
@@ -9029,7 +9456,8 @@
         {
           "text": "一岁",
           "pinyin": "yī suì",
-          "hanviet": "Nhất Tuế"
+          "hanviet": "Nhất Tuế",
+          "meaning_vi": "một tuổi"
         },
         {
           "text": "，"
@@ -9045,7 +9473,8 @@
         {
           "text": "范西屏",
           "pinyin": "fàn xī píng",
-          "hanviet": "Phạm Tây Bình"
+          "hanviet": "Phạm Tây Bình",
+          "meaning_vi": "Fan Xiping"
         },
         {
           "text": "那样",
@@ -9096,7 +9525,8 @@
         {
           "text": "体弱多病",
           "pinyin": "tǐ ruò duō bìng",
-          "hanviet": "Thể Nhược Đa Bệnh"
+          "hanviet": "Thể Nhược Đa Bệnh",
+          "meaning_vi": "yếu đuối và ốm yếu"
         },
         {
           "text": "。"
@@ -9114,7 +9544,8 @@
         {
           "text": "施襄夏",
           "pinyin": "shī xiāng xià",
-          "hanviet": "Thi Tương Hạ"
+          "hanviet": "Thi Tương Hạ",
+          "meaning_vi": "Thạch Tương Hạ"
         },
         {
           "text": "也",
@@ -9127,7 +9558,8 @@
         {
           "text": "拜",
           "pinyin": "bài",
-          "hanviet": "Bái"
+          "hanviet": "Bái",
+          "meaning_vi": "tạm biệt"
         },
         {
           "text": "到",
@@ -9140,22 +9572,26 @@
         {
           "text": "俞长",
           "pinyin": "yú zhǎng",
-          "hanviet": "Du Trường"
+          "hanviet": "Du Trường",
+          "meaning_vi": "Du Trường"
         },
         {
           "text": "侯",
           "pinyin": "hóu",
-          "hanviet": "Hầu"
+          "hanviet": "Hầu",
+          "meaning_vi": "Hầu"
         },
         {
           "text": "门下",
           "pinyin": "mén xià",
-          "hanviet": "Môn Hạ"
+          "hanviet": "Môn Hạ",
+          "meaning_vi": "Môn Hạ"
         },
         {
           "text": "学棋",
           "pinyin": "xué qí",
-          "hanviet": "Học Kỳ"
+          "hanviet": "Học Kỳ",
+          "meaning_vi": "Học Kỳ"
         },
         {
           "text": "，"
@@ -9171,12 +9607,14 @@
         {
           "text": "天资",
           "pinyin": "tiān zī",
-          "hanviet": "Thiên Tư"
+          "hanviet": "Thiên Tư",
+          "meaning_vi": "Thiên Tư"
         },
         {
           "text": "不太高",
           "pinyin": "bù tài gāo",
-          "hanviet": "Bất Thái Cao"
+          "hanviet": "Bất Thái Cao",
+          "meaning_vi": "không quá cao"
         },
         {
           "text": "，"
@@ -9235,7 +9673,8 @@
         {
           "text": "很大",
           "pinyin": "hěn dà",
-          "hanviet": "Ngận Đại"
+          "hanviet": "Ngận Đại",
+          "meaning_vi": "rất lớn"
         },
         {
           "text": "进步",
@@ -9269,7 +9708,8 @@
         {
           "text": "十五六岁",
           "pinyin": "shí wǔ liù suì",
-          "hanviet": "Thập Ngũ Lục Tuế"
+          "hanviet": "Thập Ngũ Lục Tuế",
+          "meaning_vi": "Thập Ngũ Lục Tuế"
         },
         {
           "text": "时",
@@ -9285,7 +9725,8 @@
         {
           "text": "两个",
           "pinyin": "liǎng gè",
-          "hanviet": "Lưỡng Cá"
+          "hanviet": "Lưỡng Cá",
+          "meaning_vi": "hai"
         },
         {
           "text": "人",
@@ -9322,7 +9763,8 @@
         {
           "text": "国手",
           "pinyin": "guó shǒu",
-          "hanviet": "Quốc Thủ"
+          "hanviet": "Quốc Thủ",
+          "meaning_vi": "Quốc Thủ"
         },
         {
           "text": "。"
@@ -9343,12 +9785,14 @@
         {
           "text": "当湖",
           "pinyin": "dāng hú",
-          "hanviet": "Đương Hồ"
+          "hanviet": "Đương Hồ",
+          "meaning_vi": "Đương Hồ"
         },
         {
           "text": "十局",
           "pinyin": "shí jú",
-          "hanviet": "Thập Cục"
+          "hanviet": "Thập Cục",
+          "meaning_vi": "Thập Cục"
         },
         {
           "text": "”"
@@ -9356,7 +9800,8 @@
         {
           "text": "棋谱",
           "pinyin": "qí pǔ",
-          "hanviet": "Kỳ Phả"
+          "hanviet": "Kỳ Phả",
+          "meaning_vi": "Kỳ Phả"
         },
         {
           "text": "关于",
@@ -9369,7 +9814,8 @@
         {
           "text": "范西屏",
           "pinyin": "fàn xī píng",
-          "hanviet": "Phạm Tây Bình"
+          "hanviet": "Phạm Tây Bình",
+          "meaning_vi": "Fan Xiping"
         },
         {
           "text": "、"
@@ -9377,17 +9823,20 @@
         {
           "text": "施襄",
           "pinyin": "shī xiāng",
-          "hanviet": "Thi Tương"
+          "hanviet": "Thi Tương",
+          "meaning_vi": "Thi Tương"
         },
         {
           "text": "夏有",
           "pinyin": "xià yǒu",
-          "hanviet": "Hạ Hữu"
+          "hanviet": "Hạ Hữu",
+          "meaning_vi": "Hạ Hữu"
         },
         {
           "text": "很多",
           "pinyin": "hěn duō",
-          "hanviet": "Ngận Đa"
+          "hanviet": "Ngận Đa",
+          "meaning_vi": "rất nhiều"
         },
         {
           "text": "传说",
@@ -9413,7 +9862,8 @@
         {
           "text": "一则",
           "pinyin": "yī zé",
-          "hanviet": "Nhất Tắc"
+          "hanviet": "Nhất Tắc",
+          "meaning_vi": "một"
         },
         {
           "text": "故事",
@@ -9437,12 +9887,14 @@
         {
           "text": "扬州",
           "pinyin": "yáng zhōu",
-          "hanviet": "Dương Châu"
+          "hanviet": "Dương Châu",
+          "meaning_vi": "Dương Châu"
         },
         {
           "text": "有个",
           "pinyin": "yǒu gè",
-          "hanviet": "Hữu Cá"
+          "hanviet": "Hữu Cá",
+          "meaning_vi": "Có một cái"
         },
         {
           "text": "叫",
@@ -9455,7 +9907,8 @@
         {
           "text": "胡肇麟",
           "pinyin": "hú zhào lín",
-          "hanviet": "Hồ Triệu Lân"
+          "hanviet": "Hồ Triệu Lân",
+          "meaning_vi": "Hồ Triệu Lân"
         },
         {
           "text": "的",
@@ -9476,7 +9929,8 @@
         {
           "text": "有钱",
           "pinyin": "yǒu qián",
-          "hanviet": "Hữu Tiền"
+          "hanviet": "Hữu Tiền",
+          "meaning_vi": "Hữu Tiền"
         },
         {
           "text": "的",
@@ -9489,7 +9943,8 @@
         {
           "text": "盐商",
           "pinyin": "yán shāng",
-          "hanviet": "Diêm Thương"
+          "hanviet": "Diêm Thương",
+          "meaning_vi": "Diêm Thương"
         },
         {
           "text": "，"
@@ -9505,7 +9960,8 @@
         {
           "text": "下围棋",
           "pinyin": "xià wéi qí",
-          "hanviet": "Hạ Vi Kỳ"
+          "hanviet": "Hạ Vi Kỳ",
+          "meaning_vi": "Chơi cờ vây"
         },
         {
           "text": "，"
@@ -9553,7 +10009,8 @@
         {
           "text": "输赢",
           "pinyin": "shū yíng",
-          "hanviet": "Thâu Doanh"
+          "hanviet": "Thâu Doanh",
+          "meaning_vi": "Thâu Doanh"
         },
         {
           "text": "。"
@@ -9571,7 +10028,8 @@
         {
           "text": "一天",
           "pinyin": "yī tiān",
-          "hanviet": "Nhất Thiên"
+          "hanviet": "Nhất Thiên",
+          "meaning_vi": "một ngày"
         },
         {
           "text": "，"
@@ -9587,12 +10045,14 @@
         {
           "text": "同范西屏",
           "pinyin": "tóng fàn xī píng",
-          "hanviet": "Đồng Phạm Tây Bình"
+          "hanviet": "Đồng Phạm Tây Bình",
+          "meaning_vi": "Đồng Phạm Tây Bình"
         },
         {
           "text": "下棋",
           "pinyin": "xià qí",
-          "hanviet": "Hạ Kỳ"
+          "hanviet": "Hạ Kỳ",
+          "meaning_vi": "chơi cờ"
         },
         {
           "text": "，"
@@ -9651,7 +10111,8 @@
         {
           "text": "棋",
           "pinyin": "qí",
-          "hanviet": "Kỳ"
+          "hanviet": "Kỳ",
+          "meaning_vi": "cờ vua"
         },
         {
           "text": "遇到",
@@ -9699,7 +10160,8 @@
         {
           "text": "有病",
           "pinyin": "yǒu bìng",
-          "hanviet": "Hữu Bệnh"
+          "hanviet": "Hữu Bệnh",
+          "meaning_vi": "Hữu Bệnh"
         },
         {
           "text": "，"
@@ -9715,17 +10177,20 @@
         {
           "text": "范西屏",
           "pinyin": "fàn xī píng",
-          "hanviet": "Phạm Tây Bình"
+          "hanviet": "Phạm Tây Bình",
+          "meaning_vi": "Fan Xiping"
         },
         {
           "text": "中盘",
           "pinyin": "zhōng pán",
-          "hanviet": "Trung Bàn"
+          "hanviet": "Trung Bàn",
+          "meaning_vi": "Giữa trận"
         },
         {
           "text": "封棋",
           "pinyin": "fēng qí",
-          "hanviet": "Phong Kỳ"
+          "hanviet": "Phong Kỳ",
+          "meaning_vi": "Phong Kỳ"
         },
         {
           "text": "。"
@@ -9751,7 +10216,8 @@
         {
           "text": "施襄夏",
           "pinyin": "shī xiāng xià",
-          "hanviet": "Thi Tương Hạ"
+          "hanviet": "Thi Tương Hạ",
+          "meaning_vi": "Thạch Tương Hạ"
         },
         {
           "text": "在",
@@ -9764,12 +10230,14 @@
         {
           "text": "江苏",
           "pinyin": "jiāng sū",
-          "hanviet": "Giang Tô"
+          "hanviet": "Giang Tô",
+          "meaning_vi": "Giang Tô"
         },
         {
           "text": "东台",
           "pinyin": "dōng tái",
-          "hanviet": "Đông Đài"
+          "hanviet": "Đông Đài",
+          "meaning_vi": "Đông Đài"
         },
         {
           "text": "，"
@@ -9777,7 +10245,8 @@
         {
           "text": "胡肇麟",
           "pinyin": "hú zhào lín",
-          "hanviet": "Hồ Triệu Lân"
+          "hanviet": "Hồ Triệu Lân",
+          "meaning_vi": "Hồ Triệu Lân"
         },
         {
           "text": "赶紧",
@@ -9822,12 +10291,14 @@
         {
           "text": "东台",
           "pinyin": "dōng tái",
-          "hanviet": "Đông Đài"
+          "hanviet": "Đông Đài",
+          "meaning_vi": "Đông Đài"
         },
         {
           "text": "求援",
           "pinyin": "qiú yuán",
-          "hanviet": "Cầu Viện"
+          "hanviet": "Cầu Viện",
+          "meaning_vi": "Cầu Viện"
         },
         {
           "text": "。"
@@ -9845,7 +10316,8 @@
         {
           "text": "施襄夏",
           "pinyin": "shī xiāng xià",
-          "hanviet": "Thi Tương Hạ"
+          "hanviet": "Thi Tương Hạ",
+          "meaning_vi": "Thạch Tương Hạ"
         },
         {
           "text": "看",
@@ -9882,7 +10354,8 @@
         {
           "text": "带来",
           "pinyin": "dài lái",
-          "hanviet": "Đới Lai"
+          "hanviet": "Đới Lai",
+          "meaning_vi": "mang theo"
         },
         {
           "text": "的",
@@ -9895,7 +10368,8 @@
         {
           "text": "棋谱",
           "pinyin": "qí pǔ",
-          "hanviet": "Kỳ Phả"
+          "hanviet": "Kỳ Phả",
+          "meaning_vi": "Kỳ Phả"
         },
         {
           "text": "，"
@@ -9903,7 +10377,8 @@
         {
           "text": "找出",
           "pinyin": "zhǎo chū",
-          "hanviet": "Trảo Xuất"
+          "hanviet": "Trảo Xuất",
+          "meaning_vi": "tìm hiểu"
         },
         {
           "text": "了",
@@ -9953,7 +10428,8 @@
         {
           "text": "两天",
           "pinyin": "liǎng tiān",
-          "hanviet": "Lưỡng Thiên"
+          "hanviet": "Lưỡng Thiên",
+          "meaning_vi": "hai ngày"
         },
         {
           "text": "以后",
@@ -9969,12 +10445,14 @@
         {
           "text": "派往",
           "pinyin": "pài wǎng",
-          "hanviet": "Phái Vãng"
+          "hanviet": "Phái Vãng",
+          "meaning_vi": "Phái Vãng"
         },
         {
           "text": "东台",
           "pinyin": "dōng tái",
-          "hanviet": "Đông Đài"
+          "hanviet": "Đông Đài",
+          "meaning_vi": "Đông Đài"
         },
         {
           "text": "的",
@@ -10014,7 +10492,8 @@
         {
           "text": "胡肇麟",
           "pinyin": "hú zhào lín",
-          "hanviet": "Hồ Triệu Lân"
+          "hanviet": "Hồ Triệu Lân",
+          "meaning_vi": "Hồ Triệu Lân"
         },
         {
           "text": "这",
@@ -10027,7 +10506,8 @@
         {
           "text": "才",
           "pinyin": "cái",
-          "hanviet": "Tài"
+          "hanviet": "Tài",
+          "meaning_vi": "mới, rồi mới (chỉ việc xảy ra muộn / có điều kiện)"
         },
         {
           "text": "提出",
@@ -10048,12 +10528,14 @@
         {
           "text": "同范西",
           "pinyin": "tóng fàn xī",
-          "hanviet": "Đồng Phạm Tây"
+          "hanviet": "Đồng Phạm Tây",
+          "meaning_vi": "Đồng Phạm Tây"
         },
         {
           "text": "屏下",
           "pinyin": "píng xià",
-          "hanviet": "Bình Hạ"
+          "hanviet": "Bình Hạ",
+          "meaning_vi": "Bình Hạ"
         },
         {
           "text": "完",
@@ -10066,12 +10548,14 @@
         {
           "text": "那局",
           "pinyin": "nà jú",
-          "hanviet": "Na Cục"
+          "hanviet": "Na Cục",
+          "meaning_vi": "Na Cục"
         },
         {
           "text": "棋",
           "pinyin": "qí",
-          "hanviet": "Kỳ"
+          "hanviet": "Kỳ",
+          "meaning_vi": "cờ vua"
         },
         {
           "text": "。"
@@ -10100,7 +10584,8 @@
         {
           "text": "胡肇麟",
           "pinyin": "hú zhào lín",
-          "hanviet": "Hồ Triệu Lân"
+          "hanviet": "Hồ Triệu Lân",
+          "meaning_vi": "Hồ Triệu Lân"
         },
         {
           "text": "按照",
@@ -10113,17 +10598,20 @@
         {
           "text": "施定",
           "pinyin": "shī dìng",
-          "hanviet": "Thi Định"
+          "hanviet": "Thi Định",
+          "meaning_vi": "Thi Định"
         },
         {
           "text": "庵",
           "pinyin": "ān",
-          "hanviet": "Am"
+          "hanviet": "Am",
+          "meaning_vi": "Am"
         },
         {
           "text": "教给",
           "pinyin": "jiāo gěi",
-          "hanviet": "Giáo Cấp"
+          "hanviet": "Giáo Cấp",
+          "meaning_vi": "Giáo Cấp"
         },
         {
           "text": "的",
@@ -10144,7 +10632,8 @@
         {
           "text": "法下",
           "pinyin": "fǎ xià",
-          "hanviet": "Pháp Hạ"
+          "hanviet": "Pháp Hạ",
+          "meaning_vi": "Pháp Hạ"
         },
         {
           "text": "了",
@@ -10157,7 +10646,8 @@
         {
           "text": "一子",
           "pinyin": "yī zi",
-          "hanviet": "Nhất Tử"
+          "hanviet": "Nhất Tử",
+          "meaning_vi": "một đứa con trai"
         },
         {
           "text": "。"
@@ -10175,12 +10665,14 @@
         {
           "text": "范西屏",
           "pinyin": "fàn xī píng",
-          "hanviet": "Phạm Tây Bình"
+          "hanviet": "Phạm Tây Bình",
+          "meaning_vi": "Fan Xiping"
         },
         {
           "text": "一看",
           "pinyin": "yī kàn",
-          "hanviet": "Nhất Khán"
+          "hanviet": "Nhất Khán",
+          "meaning_vi": "Hãy nhìn"
         },
         {
           "text": "这",
@@ -10209,7 +10701,8 @@
         {
           "text": "棋",
           "pinyin": "qí",
-          "hanviet": "Kỳ"
+          "hanviet": "Kỳ",
+          "meaning_vi": "cờ vua"
         },
         {
           "text": "，"
@@ -10282,7 +10775,8 @@
         {
           "text": "定庵",
           "pinyin": "dìng ān",
-          "hanviet": "Định Am"
+          "hanviet": "Định Am",
+          "meaning_vi": "Định Am"
         },
         {
           "text": "人",
@@ -10295,7 +10789,8 @@
         {
           "text": "没到",
           "pinyin": "méi dào",
-          "hanviet": "Một Đáo"
+          "hanviet": "Một Đáo",
+          "meaning_vi": "Một Đáo"
         },
         {
           "text": "这里",
@@ -10311,7 +10806,8 @@
         {
           "text": "棋倒",
           "pinyin": "qí dào",
-          "hanviet": "Kỳ Đảo"
+          "hanviet": "Kỳ Đảo",
+          "meaning_vi": "Kỳ Đảo"
         },
         {
           "text": "是",
@@ -10324,7 +10820,8 @@
         {
           "text": "先到",
           "pinyin": "xiān dào",
-          "hanviet": "Tiên Đáo"
+          "hanviet": "Tiên Đáo",
+          "meaning_vi": "Tiên Đáo"
         },
         {
           "text": "了",
@@ -10353,7 +10850,8 @@
         {
           "text": "范西屏",
           "pinyin": "fàn xī píng",
-          "hanviet": "Phạm Tây Bình"
+          "hanviet": "Phạm Tây Bình",
+          "meaning_vi": "Fan Xiping"
         },
         {
           "text": "和",
@@ -10366,12 +10864,14 @@
         {
           "text": "施定",
           "pinyin": "shī dìng",
-          "hanviet": "Thi Định"
+          "hanviet": "Thi Định",
+          "meaning_vi": "Thi Định"
         },
         {
           "text": "庵",
           "pinyin": "ān",
-          "hanviet": "Am"
+          "hanviet": "Am",
+          "meaning_vi": "Am"
         },
         {
           "text": "是",
@@ -10387,7 +10887,7 @@
           "hanviet": "Trung Quốc",
           "hsk": 1,
           "word_id": "hsk1_610",
-          "meaning_vi": "trung Quốc"
+          "meaning_vi": "Trung Quốc"
         },
         {
           "text": "古代",
@@ -10400,7 +10900,8 @@
         {
           "text": "棋坛",
           "pinyin": "qí tán",
-          "hanviet": "Kỳ Đàn"
+          "hanviet": "Kỳ Đàn",
+          "meaning_vi": "Kỳ Đàn"
         },
         {
           "text": "的",
@@ -10413,7 +10914,8 @@
         {
           "text": "奇才",
           "pinyin": "qí cái",
-          "hanviet": "Kỳ Tài"
+          "hanviet": "Kỳ Tài",
+          "meaning_vi": "Kỳ Tài"
         },
         {
           "text": "。"
@@ -10431,12 +10933,14 @@
         {
           "text": "乾隆",
           "pinyin": "qián lóng",
-          "hanviet": "Càn Long"
+          "hanviet": "Càn Long",
+          "meaning_vi": "Càn Long"
         },
         {
           "text": "四年",
           "pinyin": "sì nián",
-          "hanviet": "Tứ Niên"
+          "hanviet": "Tứ Niên",
+          "meaning_vi": "bốn năm"
         },
         {
           "text": "（"
@@ -10469,7 +10973,8 @@
         {
           "text": "二人",
           "pinyin": "èr rén",
-          "hanviet": "Nhị Nhân"
+          "hanviet": "Nhị Nhân",
+          "meaning_vi": "hai người"
         },
         {
           "text": "受",
@@ -10482,12 +10987,14 @@
         {
           "text": "浙江",
           "pinyin": "zhè jiāng",
-          "hanviet": "Chiết Giang"
+          "hanviet": "Chiết Giang",
+          "meaning_vi": "Chiết Giang"
         },
         {
           "text": "不湖",
           "pinyin": "bù hú",
-          "hanviet": "Bất Hồ"
+          "hanviet": "Bất Hồ",
+          "meaning_vi": "không có hồ"
         },
         {
           "text": "（"
@@ -10495,12 +11002,14 @@
         {
           "text": "又名",
           "pinyin": "yòu míng",
-          "hanviet": "Hựu Danh"
+          "hanviet": "Hựu Danh",
+          "meaning_vi": "Hựu Danh"
         },
         {
           "text": "当湖",
           "pinyin": "dāng hú",
-          "hanviet": "Đương Hồ"
+          "hanviet": "Đương Hồ",
+          "meaning_vi": "Đương Hồ"
         },
         {
           "text": "）"
@@ -10508,12 +11017,14 @@
         {
           "text": "缙绅",
           "pinyin": "jìn shēn",
-          "hanviet": "Tấn Thân"
+          "hanviet": "Tấn Thân",
+          "meaning_vi": "Tấn Thân"
         },
         {
           "text": "张永年",
           "pinyin": "zhāng yǒng nián",
-          "hanviet": "Trương Vĩnh Niên"
+          "hanviet": "Trương Vĩnh Niên",
+          "meaning_vi": "Trương Vĩnh Niên"
         },
         {
           "text": "邀请",
@@ -10566,7 +11077,8 @@
         {
           "text": "张家",
           "pinyin": "zhāng jiā",
-          "hanviet": "Trương Gia"
+          "hanviet": "Trương Gia",
+          "meaning_vi": "Trương Gia"
         },
         {
           "text": "他们",
@@ -10595,12 +11107,14 @@
         {
           "text": "十三",
           "pinyin": "shí sān",
-          "hanviet": "Thập Tam"
+          "hanviet": "Thập Tam",
+          "meaning_vi": "Mười ba"
         },
         {
           "text": "局棋",
           "pinyin": "jú qí",
-          "hanviet": "Cục Kỳ"
+          "hanviet": "Cục Kỳ",
+          "meaning_vi": "Cục Kỳ"
         },
         {
           "text": "，"
@@ -10608,7 +11122,8 @@
         {
           "text": "留存",
           "pinyin": "liú cún",
-          "hanviet": "Lưu Tồn"
+          "hanviet": "Lưu Tồn",
+          "meaning_vi": "giữ lại"
         },
         {
           "text": "下来",
@@ -10621,7 +11136,8 @@
         {
           "text": "十一",
           "pinyin": "shí yī",
-          "hanviet": "Thập Nhất"
+          "hanviet": "Thập Nhất",
+          "meaning_vi": "Thập Nhất"
         },
         {
           "text": "谱",
@@ -10637,7 +11153,8 @@
         {
           "text": "人称",
           "pinyin": "rén chēng",
-          "hanviet": "Nhân Xưng"
+          "hanviet": "Nhân Xưng",
+          "meaning_vi": "tên cá nhân"
         },
         {
           "text": "“"
@@ -10645,12 +11162,14 @@
         {
           "text": "当湖",
           "pinyin": "dāng hú",
-          "hanviet": "Đương Hồ"
+          "hanviet": "Đương Hồ",
+          "meaning_vi": "Đương Hồ"
         },
         {
           "text": "十局",
           "pinyin": "shí jú",
-          "hanviet": "Thập Cục"
+          "hanviet": "Thập Cục",
+          "meaning_vi": "Thập Cục"
         },
         {
           "text": "”"
@@ -10671,7 +11190,8 @@
         {
           "text": "这次",
           "pinyin": "zhè cì",
-          "hanviet": "Giá Thứ"
+          "hanviet": "Giá Thứ",
+          "meaning_vi": "lần này"
         },
         {
           "text": "对弈",
@@ -10684,7 +11204,8 @@
         {
           "text": "二人",
           "pinyin": "èr rén",
-          "hanviet": "Nhị Nhân"
+          "hanviet": "Nhị Nhân",
+          "meaning_vi": "hai người"
         },
         {
           "text": "都",
@@ -10705,7 +11226,8 @@
         {
           "text": "壮龄",
           "pinyin": "zhuàng líng",
-          "hanviet": "Tráng Linh"
+          "hanviet": "Tráng Linh",
+          "meaning_vi": "Tráng Linh"
         },
         {
           "text": "，"
@@ -10713,7 +11235,8 @@
         {
           "text": "精力充沛",
           "pinyin": "jīng lì chōng pèi",
-          "hanviet": "Tinh Lực Sung Bái"
+          "hanviet": "Tinh Lực Sung Bái",
+          "meaning_vi": "Tinh Lực Sung Bái"
         },
         {
           "text": "，"
@@ -10729,7 +11252,8 @@
         {
           "text": "老成",
           "pinyin": "lǎo chéng",
-          "hanviet": "Lão Thành"
+          "hanviet": "Lão Thành",
+          "meaning_vi": "Lão Thành"
         },
         {
           "text": "，"
@@ -10798,7 +11322,8 @@
         {
           "text": "谋算",
           "pinyin": "móu suàn",
-          "hanviet": "Mưu Toán"
+          "hanviet": "Mưu Toán",
+          "meaning_vi": "Mưu Toán"
         },
         {
           "text": "深远",
@@ -10814,12 +11339,14 @@
         {
           "text": "杀法",
           "pinyin": "shā fǎ",
-          "hanviet": "Sát Pháp"
+          "hanviet": "Sát Pháp",
+          "meaning_vi": "Sát Pháp"
         },
         {
           "text": "精紧",
           "pinyin": "jīng jǐn",
-          "hanviet": "Tinh Khẩn"
+          "hanviet": "Tinh Khẩn",
+          "meaning_vi": "Tinh Khẩn"
         },
         {
           "text": "、"
@@ -10889,7 +11416,8 @@
         {
           "text": "轩轾",
           "pinyin": "xuān zhì",
-          "hanviet": "Hiên Chí"
+          "hanviet": "Hiên Chí",
+          "meaning_vi": "Hiên Chí"
         },
         {
           "text": "。"
@@ -10907,7 +11435,8 @@
         {
           "text": "这是",
           "pinyin": "zhè shì",
-          "hanviet": "Giá Thị"
+          "hanviet": "Giá Thị",
+          "meaning_vi": "Đây là"
         },
         {
           "text": "他们",
@@ -10968,7 +11497,8 @@
         {
           "text": "杰作",
           "pinyin": "jié zuò",
-          "hanviet": "Kiệt Tác"
+          "hanviet": "Kiệt Tác",
+          "meaning_vi": "kiệt tác"
         },
         {
           "text": "，"
@@ -11064,12 +11594,14 @@
         {
           "text": "登峰造极",
           "pinyin": "dēng fēng zào jí",
-          "hanviet": "Đăng Phong Tạo Cực"
+          "hanviet": "Đăng Phong Tạo Cực",
+          "meaning_vi": "Đăng Phong Tạo Cực"
         },
         {
           "text": "之作",
           "pinyin": "zhī zuò",
-          "hanviet": "Chi Tác"
+          "hanviet": "Chi Tác",
+          "meaning_vi": "làm việc"
         },
         {
           "text": "。"
@@ -11087,7 +11619,8 @@
         {
           "text": "邓",
           "pinyin": "dèng",
-          "hanviet": "Đặng"
+          "hanviet": "Đặng",
+          "meaning_vi": "Đặng"
         },
         {
           "text": "元",
@@ -11100,7 +11633,8 @@
         {
           "text": "鏸",
           "pinyin": "huì",
-          "hanviet": "Huệ"
+          "hanviet": "Huệ",
+          "meaning_vi": "Huệ"
         },
         {
           "text": "曾",
@@ -11135,7 +11669,8 @@
         {
           "text": "西屏",
           "pinyin": "xī píng",
-          "hanviet": "Tây Bình"
+          "hanviet": "Tây Bình",
+          "meaning_vi": "Tây Bình"
         },
         {
           "text": "奇妙",
@@ -11148,7 +11683,8 @@
         {
           "text": "高远",
           "pinyin": "gāo yuǎn",
-          "hanviet": "Cao Viễn"
+          "hanviet": "Cao Viễn",
+          "meaning_vi": "Cao Viễn"
         },
         {
           "text": "，"
@@ -11164,7 +11700,8 @@
         {
           "text": "神龙",
           "pinyin": "shén lóng",
-          "hanviet": "Thần Long"
+          "hanviet": "Thần Long",
+          "meaning_vi": "Thần Long"
         },
         {
           "text": "变化",
@@ -11180,12 +11717,14 @@
         {
           "text": "莫测",
           "pinyin": "mò cè",
-          "hanviet": "Mạc Trắc"
+          "hanviet": "Mạc Trắc",
+          "meaning_vi": "Mạc Trắc"
         },
         {
           "text": "首尾",
           "pinyin": "shǒu wěi",
-          "hanviet": "Thủ Vĩ"
+          "hanviet": "Thủ Vĩ",
+          "meaning_vi": "Thủ Vĩ"
         },
         {
           "text": "。"
@@ -11203,7 +11742,8 @@
         {
           "text": "定庵邃",
           "pinyin": "dìng ān suì",
-          "hanviet": "Định Am Thuý"
+          "hanviet": "Định Am Thuý",
+          "meaning_vi": "Định Am Thuý"
         },
         {
           "text": "密",
@@ -11216,7 +11756,8 @@
         {
           "text": "精严",
           "pinyin": "jīng yán",
-          "hanviet": "Tinh Nghiêm"
+          "hanviet": "Tinh Nghiêm",
+          "meaning_vi": "Tinh Nghiêm"
         },
         {
           "text": "，"
@@ -11224,12 +11765,14 @@
         {
           "text": "如老骥",
           "pinyin": "rú lǎo jì",
-          "hanviet": "Như Lão Ký"
+          "hanviet": "Như Lão Ký",
+          "meaning_vi": "Như Lão Ký"
         },
         {
           "text": "驰骋",
           "pinyin": "chí chěng",
-          "hanviet": "Trì Sính"
+          "hanviet": "Trì Sính",
+          "meaning_vi": "Trì Sính"
         },
         {
           "text": "，"
@@ -11237,7 +11780,8 @@
         {
           "text": "不失",
           "pinyin": "bù shī",
-          "hanviet": "Bất Thất"
+          "hanviet": "Bất Thất",
+          "meaning_vi": "mà không mất"
         },
         {
           "text": "步骤",
@@ -11263,12 +11807,14 @@
         {
           "text": "论者",
           "pinyin": "lùn zhě",
-          "hanviet": "Luận Giả"
+          "hanviet": "Luận Giả",
+          "meaning_vi": "Luận Giả"
         },
         {
           "text": "方之诗",
           "pinyin": "fāng zhī shī",
-          "hanviet": "Phương Chi Thi"
+          "hanviet": "Phương Chi Thi",
+          "meaning_vi": "Phương Chi Thi"
         },
         {
           "text": "中",
@@ -11281,7 +11827,8 @@
         {
           "text": "李杜",
           "pinyin": "lǐ dù",
-          "hanviet": "Lý Đỗ"
+          "hanviet": "Lý Đỗ",
+          "meaning_vi": "Lý Đỗ"
         },
         {
           "text": "，"
@@ -11289,7 +11836,8 @@
         {
           "text": "洵",
           "pinyin": "xún",
-          "hanviet": "Tuân"
+          "hanviet": "Tuân",
+          "meaning_vi": "Tuân"
         },
         {
           "text": "为",
@@ -11334,12 +11882,14 @@
         {
           "text": "清乾隆",
           "pinyin": "qīng qián lóng",
-          "hanviet": "Thanh Càn Long"
+          "hanviet": "Thanh Càn Long",
+          "meaning_vi": "Thanh Càn Long"
         },
         {
           "text": "刻本",
           "pinyin": "kè běn",
-          "hanviet": "Khắc Bản"
+          "hanviet": "Khắc Bản",
+          "meaning_vi": "khắc"
         },
         {
           "text": "《"
@@ -11347,12 +11897,14 @@
         {
           "text": "桃花",
           "pinyin": "táo huā",
-          "hanviet": "Đào Hoa"
+          "hanviet": "Đào Hoa",
+          "meaning_vi": "hoa đào"
         },
         {
           "text": "泉奕谱",
           "pinyin": "quán yì pǔ",
-          "hanviet": "Tuyền Dịch Phả"
+          "hanviet": "Tuyền Dịch Phả",
+          "meaning_vi": "Tuyền Dịch Phả"
         },
         {
           "text": "》"
@@ -11363,12 +11915,14 @@
         {
           "text": "范西屏",
           "pinyin": "fàn xī píng",
-          "hanviet": "Phạm Tây Bình"
+          "hanviet": "Phạm Tây Bình",
+          "meaning_vi": "Fan Xiping"
         },
         {
           "text": "著",
           "pinyin": "zhù",
-          "hanviet": "Trước"
+          "hanviet": "Trước",
+          "meaning_vi": "Với"
         },
         {
           "text": "象棋",
@@ -11389,12 +11943,14 @@
         {
           "text": "起源于",
           "pinyin": "qǐ yuán yú",
-          "hanviet": "Khởi Nguyên Vu"
+          "hanviet": "Khởi Nguyên Vu",
+          "meaning_vi": "Bắt nguồn từ"
         },
         {
           "text": "印度",
           "pinyin": "yìn dù",
-          "hanviet": "Ấn Độ"
+          "hanviet": "Ấn Độ",
+          "meaning_vi": "Ấn Độ"
         },
         {
           "text": "而",
@@ -11418,7 +11974,7 @@
           "hanviet": "Trung Quốc",
           "hsk": 1,
           "word_id": "hsk1_610",
-          "meaning_vi": "trung Quốc"
+          "meaning_vi": "Trung Quốc"
         },
         {
           "text": "，"
@@ -11442,7 +11998,8 @@
         {
           "text": "下棋",
           "pinyin": "xià qí",
-          "hanviet": "Hạ Kỳ"
+          "hanviet": "Hạ Kỳ",
+          "meaning_vi": "chơi cờ"
         },
         {
           "text": "，"
@@ -11543,7 +12100,8 @@
         {
           "text": "我国",
           "pinyin": "wǒ guó",
-          "hanviet": "Ngã Quốc"
+          "hanviet": "Ngã Quốc",
+          "meaning_vi": "đất nước chúng tôi"
         },
         {
           "text": "流行",
@@ -11564,12 +12122,14 @@
         {
           "text": "两大",
           "pinyin": "liǎng dà",
-          "hanviet": "Lưỡng Đại"
+          "hanviet": "Lưỡng Đại",
+          "meaning_vi": "Hai chính"
         },
         {
           "text": "棋类",
           "pinyin": "qí lèi",
-          "hanviet": "Kỳ Loại"
+          "hanviet": "Kỳ Loại",
+          "meaning_vi": "Kỳ Loại"
         },
         {
           "text": "。"
@@ -11619,17 +12179,20 @@
         {
           "text": "一个",
           "pinyin": "yí gè",
-          "hanviet": "Nhất Cá"
+          "hanviet": "Nhất Cá",
+          "meaning_vi": "một"
         },
         {
           "text": "非常复杂",
           "pinyin": "fēi cháng fù zá",
-          "hanviet": "Phi Thường Phục Tạp"
+          "hanviet": "Phi Thường Phục Tạp",
+          "meaning_vi": "Phi Thường Phục Tạp"
         },
         {
           "text": "难解",
           "pinyin": "nán jiě",
-          "hanviet": "Nan Giải"
+          "hanviet": "Nan Giải",
+          "meaning_vi": "Nan Giải"
         },
         {
           "text": "的",
@@ -11685,7 +12248,8 @@
         {
           "text": "定型",
           "pinyin": "dìng xíng",
-          "hanviet": "Định Hình"
+          "hanviet": "Định Hình",
+          "meaning_vi": "hoàn thiện"
         },
         {
           "text": "之前",
@@ -11717,7 +12281,8 @@
         {
           "text": "多次",
           "pinyin": "duō cì",
-          "hanviet": "Đa Thứ"
+          "hanviet": "Đa Thứ",
+          "meaning_vi": "nhiều lần"
         },
         {
           "text": "演变",
@@ -11775,7 +12340,8 @@
         {
           "text": "诤",
           "pinyin": "zhèng",
-          "hanviet": "Tránh"
+          "hanviet": "Tránh",
+          "meaning_vi": "Tránh"
         },
         {
           "text": "先生",
@@ -11788,7 +12354,8 @@
         {
           "text": "所著",
           "pinyin": "suǒ zhù",
-          "hanviet": "Sở Trước"
+          "hanviet": "Sở Trước",
+          "meaning_vi": "Được viết bởi"
         },
         {
           "text": "的",
@@ -11804,7 +12371,8 @@
         {
           "text": "话",
           "pinyin": "huà",
-          "hanviet": "Thoại"
+          "hanviet": "Thoại",
+          "meaning_vi": "lời nói"
         },
         {
           "text": "说",
@@ -11828,7 +12396,8 @@
         {
           "text": "一书中",
           "pinyin": "yī shū zhōng",
-          "hanviet": "Nhất Thư Trung"
+          "hanviet": "Nhất Thư Trung",
+          "meaning_vi": "trong một cuốn sách"
         },
         {
           "text": "提到",
@@ -11860,7 +12429,8 @@
         {
           "text": "很多",
           "pinyin": "hěn duō",
-          "hanviet": "Ngận Đa"
+          "hanviet": "Ngận Đa",
+          "meaning_vi": "rất nhiều"
         },
         {
           "text": "学者",
@@ -11887,7 +12457,7 @@
           "hanviet": "Trung Quốc",
           "hsk": 1,
           "word_id": "hsk1_610",
-          "meaning_vi": "trung Quốc"
+          "meaning_vi": "Trung Quốc"
         },
         {
           "text": "的",
@@ -11924,12 +12494,14 @@
         {
           "text": "印度",
           "pinyin": "yìn dù",
-          "hanviet": "Ấn Độ"
+          "hanviet": "Ấn Độ",
+          "meaning_vi": "Ấn Độ"
         },
         {
           "text": "传入",
           "pinyin": "chuán rù",
-          "hanviet": "Truyền Nhập"
+          "hanviet": "Truyền Nhập",
+          "meaning_vi": "đến"
         },
         {
           "text": "演化",
@@ -11942,7 +12514,8 @@
         {
           "text": "而成",
           "pinyin": "ér chéng",
-          "hanviet": "Nhi Thành"
+          "hanviet": "Nhi Thành",
+          "meaning_vi": "trở thành"
         },
         {
           "text": "。"
@@ -11971,12 +12544,14 @@
         {
           "text": "英国",
           "pinyin": "yīng guó",
-          "hanviet": "Anh Quốc"
+          "hanviet": "Anh Quốc",
+          "meaning_vi": "Vương quốc Anh"
         },
         {
           "text": "威廉",
           "pinyin": "wēi lián",
-          "hanviet": "Uy Liêm"
+          "hanviet": "Uy Liêm",
+          "meaning_vi": "William"
         },
         {
           "text": "·"
@@ -11984,7 +12559,8 @@
         {
           "text": "琼斯",
           "pinyin": "qióng sī",
-          "hanviet": "Quỳnh Tư"
+          "hanviet": "Quỳnh Tư",
+          "meaning_vi": "Quỳnh Tư"
         },
         {
           "text": "认为",
@@ -12000,7 +12576,8 @@
         {
           "text": "中西",
           "pinyin": "zhōng xī",
-          "hanviet": "Trung Tây"
+          "hanviet": "Trung Tây",
+          "meaning_vi": "Trung Quốc và phương Tây"
         },
         {
           "text": "象棋",
@@ -12032,7 +12609,8 @@
         {
           "text": "其源",
           "pinyin": "qí yuán",
-          "hanviet": "Kỳ Nguyên"
+          "hanviet": "Kỳ Nguyên",
+          "meaning_vi": "Kỳ Nguyên"
         },
         {
           "text": "必",
@@ -12045,7 +12623,8 @@
         {
           "text": "无异",
           "pinyin": "wú yì",
-          "hanviet": "Vô Dị"
+          "hanviet": "Vô Dị",
+          "meaning_vi": "Vô Dị"
         },
         {
           "text": "。"
@@ -12066,7 +12645,7 @@
           "hanviet": "Trung Quốc",
           "hsk": 1,
           "word_id": "hsk1_610",
-          "meaning_vi": "trung Quốc"
+          "meaning_vi": "Trung Quốc"
         },
         {
           "text": "古代",
@@ -12079,7 +12658,8 @@
         {
           "text": "不产象",
           "pinyin": "bù chǎn xiàng",
-          "hanviet": "Bất Sản Tượng"
+          "hanviet": "Bất Sản Tượng",
+          "meaning_vi": "Không có dấu hiệu"
         },
         {
           "text": "，"
@@ -12087,7 +12667,8 @@
         {
           "text": "印度",
           "pinyin": "yìn dù",
-          "hanviet": "Ấn Độ"
+          "hanviet": "Ấn Độ",
+          "meaning_vi": "Ấn Độ"
         },
         {
           "text": "则",
@@ -12095,7 +12676,7 @@
           "hanviet": "Hệ Thống",
           "hsk": 5,
           "word_id": "hsk5_1229",
-          "meaning_vi": "hệ thống"
+          "meaning_vi": "thì, là (liên từ văn viết)"
         },
         {
           "text": "是",
@@ -12108,7 +12689,8 @@
         {
           "text": "产象国",
           "pinyin": "chǎn xiàng guó",
-          "hanviet": "Sản Tượng Quốc"
+          "hanviet": "Sản Tượng Quốc",
+          "meaning_vi": "nước sản xuất"
         },
         {
           "text": "。"
@@ -12129,12 +12711,13 @@
           "hanviet": "Trung Quốc",
           "hsk": 1,
           "word_id": "hsk1_610",
-          "meaning_vi": "trung Quốc"
+          "meaning_vi": "Trung Quốc"
         },
         {
           "text": "既名",
           "pinyin": "jì míng",
-          "hanviet": "Ký Danh"
+          "hanviet": "Ký Danh",
+          "meaning_vi": "Ký Danh"
         },
         {
           "text": "象棋",
@@ -12158,12 +12741,14 @@
         {
           "text": "棋中",
           "pinyin": "qí zhōng",
-          "hanviet": "Kỳ Trung"
+          "hanviet": "Kỳ Trung",
+          "meaning_vi": "Kỳ Trung"
         },
         {
           "text": "有象",
           "pinyin": "yǒu xiàng",
-          "hanviet": "Hữu Tượng"
+          "hanviet": "Hữu Tượng",
+          "meaning_vi": "Hữu Tượng"
         },
         {
           "text": "，"
@@ -12195,12 +12780,14 @@
         {
           "text": "印度",
           "pinyin": "yìn dù",
-          "hanviet": "Ấn Độ"
+          "hanviet": "Ấn Độ",
+          "meaning_vi": "Ấn Độ"
         },
         {
           "text": "传入",
           "pinyin": "chuán rù",
-          "hanviet": "Truyền Nhập"
+          "hanviet": "Truyền Nhập",
+          "meaning_vi": "đến"
         },
         {
           "text": "的",
@@ -12245,7 +12832,8 @@
         {
           "text": "苏",
           "pinyin": "sū",
-          "hanviet": "Tô"
+          "hanviet": "Tô",
+          "meaning_vi": "Tô"
         },
         {
           "text": "的",
@@ -12288,12 +12876,13 @@
           "hanviet": "Trung Quốc",
           "hsk": 1,
           "word_id": "hsk1_610",
-          "meaning_vi": "trung Quốc"
+          "meaning_vi": "Trung Quốc"
         },
         {
           "text": "唐代",
           "pinyin": "táng dài",
-          "hanviet": "Đường Đại"
+          "hanviet": "Đường Đại",
+          "meaning_vi": "nhà Đường"
         },
         {
           "text": "称",
@@ -12325,7 +12914,8 @@
         {
           "text": "象戏",
           "pinyin": "xiàng xì",
-          "hanviet": "Tượng Hí"
+          "hanviet": "Tượng Hí",
+          "meaning_vi": "Tương Tây"
         },
         {
           "text": "”"
@@ -12347,7 +12937,8 @@
         {
           "text": "象戏",
           "pinyin": "xiàng xì",
-          "hanviet": "Tượng Hí"
+          "hanviet": "Tượng Hí",
+          "meaning_vi": "Tương Tây"
         },
         {
           "text": "”"
@@ -12355,22 +12946,26 @@
         {
           "text": "一名",
           "pinyin": "yī míng",
-          "hanviet": "Nhất Danh"
+          "hanviet": "Nhất Danh",
+          "meaning_vi": "một"
         },
         {
           "text": "始于",
           "pinyin": "shǐ yú",
-          "hanviet": "Thuỷ Vu"
+          "hanviet": "Thuỷ Vu",
+          "meaning_vi": "Bắt đầu với"
         },
         {
           "text": "北周",
           "pinyin": "běi zhōu",
-          "hanviet": "Bắc Chu"
+          "hanviet": "Bắc Chu",
+          "meaning_vi": "Triều đại Bắc Chu"
         },
         {
           "text": "武帝天",
           "pinyin": "wǔ dì tiān",
-          "hanviet": "Võ Đế Thiên"
+          "hanviet": "Võ Đế Thiên",
+          "meaning_vi": "Võ Đế Thiên"
         },
         {
           "text": "和",
@@ -12383,7 +12978,8 @@
         {
           "text": "四年",
           "pinyin": "sì nián",
-          "hanviet": "Tứ Niên"
+          "hanviet": "Tứ Niên",
+          "meaning_vi": "bốn năm"
         },
         {
           "text": "（"
@@ -12416,7 +13012,8 @@
         {
           "text": "印度",
           "pinyin": "yìn dù",
-          "hanviet": "Ấn Độ"
+          "hanviet": "Ấn Độ",
+          "meaning_vi": "Ấn Độ"
         },
         {
           "text": "象棋",
@@ -12469,7 +13066,8 @@
         {
           "text": "传入",
           "pinyin": "chuán rù",
-          "hanviet": "Truyền Nhập"
+          "hanviet": "Truyền Nhập",
+          "meaning_vi": "đến"
         },
         {
           "text": "中国",
@@ -12477,7 +13075,7 @@
           "hanviet": "Trung Quốc",
           "hsk": 1,
           "word_id": "hsk1_610",
-          "meaning_vi": "trung Quốc"
+          "meaning_vi": "Trung Quốc"
         },
         {
           "text": "。"
@@ -12498,12 +13096,13 @@
           "hanviet": "Trung Quốc",
           "hsk": 1,
           "word_id": "hsk1_610",
-          "meaning_vi": "trung Quốc"
+          "meaning_vi": "Trung Quốc"
         },
         {
           "text": "象戏",
           "pinyin": "xiàng xì",
-          "hanviet": "Tượng Hí"
+          "hanviet": "Tượng Hí",
+          "meaning_vi": "Tương Tây"
         },
         {
           "text": "（"
@@ -12549,7 +13148,8 @@
         {
           "text": "史料",
           "pinyin": "shǐ liào",
-          "hanviet": "Sử Liệu"
+          "hanviet": "Sử Liệu",
+          "meaning_vi": "dữ liệu lịch sử"
         },
         {
           "text": "记载",
@@ -12621,7 +13221,8 @@
         {
           "text": "一种",
           "pinyin": "yī zhǒng",
-          "hanviet": "Nhất Chủng"
+          "hanviet": "Nhất Chủng",
+          "meaning_vi": "một loại"
         },
         {
           "text": "新",
@@ -12642,7 +13243,8 @@
         {
           "text": "盘戏",
           "pinyin": "pán xì",
-          "hanviet": "Bàn Hí"
+          "hanviet": "Bàn Hí",
+          "meaning_vi": "Bàn Hi"
         },
         {
           "text": "，"
@@ -12658,7 +13260,8 @@
         {
           "text": "棋盘",
           "pinyin": "qí pán",
-          "hanviet": "Kỳ Bàn"
+          "hanviet": "Kỳ Bàn",
+          "meaning_vi": "Kỳ Bàn"
         },
         {
           "text": "、"
@@ -12720,7 +13323,7 @@
           "hanviet": "Trung Quốc",
           "hsk": 1,
           "word_id": "hsk1_610",
-          "meaning_vi": "trung Quốc"
+          "meaning_vi": "Trung Quốc"
         },
         {
           "text": "传统",
@@ -12741,12 +13344,14 @@
         {
           "text": "几种",
           "pinyin": "jǐ zhǒng",
-          "hanviet": "Kỷ Chủng"
+          "hanviet": "Kỷ Chủng",
+          "meaning_vi": "một số loại"
         },
         {
           "text": "盘戏",
           "pinyin": "pán xì",
-          "hanviet": "Bàn Hí"
+          "hanviet": "Bàn Hí",
+          "meaning_vi": "Bàn Hi"
         },
         {
           "text": "有",
@@ -12810,7 +13415,8 @@
         {
           "text": "征兆",
           "pinyin": "zhēng zhào",
-          "hanviet": "Chinh Triệu"
+          "hanviet": "Chinh Triệu",
+          "meaning_vi": "ký tên"
         },
         {
           "text": "的",
@@ -12880,7 +13486,8 @@
         {
           "text": "北周",
           "pinyin": "běi zhōu",
-          "hanviet": "Bắc Chu"
+          "hanviet": "Bắc Chu",
+          "meaning_vi": "Triều đại Bắc Chu"
         },
         {
           "text": "的",
@@ -12893,7 +13500,8 @@
         {
           "text": "朝廷",
           "pinyin": "cháo tíng",
-          "hanviet": "Triều Đình"
+          "hanviet": "Triều Đình",
+          "meaning_vi": "triều đình"
         },
         {
           "text": "中",
@@ -12933,7 +13541,8 @@
         {
           "text": "不小",
           "pinyin": "bù xiǎo",
-          "hanviet": "Bất Tiểu"
+          "hanviet": "Bất Tiểu",
+          "meaning_vi": "Không nhỏ"
         },
         {
           "text": "的",
@@ -12967,7 +13576,8 @@
         {
           "text": "如前所述",
           "pinyin": "rú qián suǒ shù",
-          "hanviet": "Như Tiền Sở Thuật"
+          "hanviet": "Như Tiền Sở Thuật",
+          "meaning_vi": "Như Tiền Sở Thuật"
         },
         {
           "text": "，"
@@ -12978,7 +13588,8 @@
         {
           "text": "象戏",
           "pinyin": "xiàng xì",
-          "hanviet": "Tượng Hí"
+          "hanviet": "Tượng Hí",
+          "meaning_vi": "Tương Tây"
         },
         {
           "text": "”"
@@ -12986,12 +13597,14 @@
         {
           "text": "一词",
           "pinyin": "yī cí",
-          "hanviet": "Nhất Từ"
+          "hanviet": "Nhất Từ",
+          "meaning_vi": "từ"
         },
         {
           "text": "最早",
           "pinyin": "zuì zǎo",
-          "hanviet": "Tối Tảo"
+          "hanviet": "Tối Tảo",
+          "meaning_vi": "sớm nhất"
         },
         {
           "text": "出现",
@@ -13012,12 +13625,14 @@
         {
           "text": "北周",
           "pinyin": "běi zhōu",
-          "hanviet": "Bắc Chu"
+          "hanviet": "Bắc Chu",
+          "meaning_vi": "Triều đại Bắc Chu"
         },
         {
           "text": "武帝天",
           "pinyin": "wǔ dì tiān",
-          "hanviet": "Võ Đế Thiên"
+          "hanviet": "Võ Đế Thiên",
+          "meaning_vi": "Võ Đế Thiên"
         },
         {
           "text": "和",
@@ -13030,7 +13645,8 @@
         {
           "text": "四年",
           "pinyin": "sì nián",
-          "hanviet": "Tứ Niên"
+          "hanviet": "Tứ Niên",
+          "meaning_vi": "bốn năm"
         },
         {
           "text": "（"
@@ -13066,7 +13682,8 @@
         {
           "text": "周书",
           "pinyin": "zhōu shū",
-          "hanviet": "Chu Thư"
+          "hanviet": "Chu Thư",
+          "meaning_vi": "Chu Thư"
         },
         {
           "text": "·"
@@ -13074,7 +13691,8 @@
         {
           "text": "本纪",
           "pinyin": "běn jì",
-          "hanviet": "Bản Kỷ"
+          "hanviet": "Bản Kỷ",
+          "meaning_vi": "Thế kỷ này"
         },
         {
           "text": "》"
@@ -13112,7 +13730,8 @@
         {
           "text": "四年",
           "pinyin": "sì nián",
-          "hanviet": "Tứ Niên"
+          "hanviet": "Tứ Niên",
+          "meaning_vi": "bốn năm"
         },
         {
           "text": "，"
@@ -13120,12 +13739,14 @@
         {
           "text": "五月",
           "pinyin": "wǔ yuè",
-          "hanviet": "Ngũ Nguyệt"
+          "hanviet": "Ngũ Nguyệt",
+          "meaning_vi": "tháng 5"
         },
         {
           "text": "乙丑",
           "pinyin": "yǐ chǒu",
-          "hanviet": "Ất Sửu"
+          "hanviet": "Ất Sửu",
+          "meaning_vi": "Nghi Sầu"
         },
         {
           "text": "，"
@@ -13133,7 +13754,8 @@
         {
           "text": "帝制",
           "pinyin": "dì zhì",
-          "hanviet": "Đế Chế"
+          "hanviet": "Đế Chế",
+          "meaning_vi": "hệ thống đế quốc"
         },
         {
           "text": "《"
@@ -13141,7 +13763,8 @@
         {
           "text": "象经",
           "pinyin": "xiàng jīng",
-          "hanviet": "Tượng Kinh"
+          "hanviet": "Tượng Kinh",
+          "meaning_vi": "Tương Kinh"
         },
         {
           "text": "》"
@@ -13160,12 +13783,14 @@
         {
           "text": "集百",
           "pinyin": "jí bǎi",
-          "hanviet": "Tập Bách"
+          "hanviet": "Tập Bách",
+          "meaning_vi": "Tập Bách"
         },
         {
           "text": "寮",
           "pinyin": "liáo",
-          "hanviet": "Liêu"
+          "hanviet": "Liêu",
+          "meaning_vi": "Liêu"
         },
         {
           "text": "讲",
@@ -13218,7 +13843,8 @@
         {
           "text": "北周",
           "pinyin": "běi zhōu",
-          "hanviet": "Bắc Chu"
+          "hanviet": "Bắc Chu",
+          "meaning_vi": "Triều đại Bắc Chu"
         },
         {
           "text": "的",
@@ -13231,7 +13857,8 @@
         {
           "text": "朝廷",
           "pinyin": "cháo tíng",
-          "hanviet": "Triều Đình"
+          "hanviet": "Triều Đình",
+          "meaning_vi": "triều đình"
         },
         {
           "text": "上",
@@ -13260,12 +13887,14 @@
         {
           "text": "一件",
           "pinyin": "yī jiàn",
-          "hanviet": "Nhất Kiện"
+          "hanviet": "Nhất Kiện",
+          "meaning_vi": "một mảnh"
         },
         {
           "text": "盛事",
           "pinyin": "shèng shì",
-          "hanviet": "Thịnh Sự"
+          "hanviet": "Thịnh Sự",
+          "meaning_vi": "Thịnh Sự"
         },
         {
           "text": "，"
@@ -13297,7 +13926,8 @@
         {
           "text": "一番",
           "pinyin": "yī fān",
-          "hanviet": "Nhất Phan"
+          "hanviet": "Nhất Phan",
+          "meaning_vi": "Ichiban"
         },
         {
           "text": "。"
@@ -13323,7 +13953,8 @@
         {
           "text": "王褒",
           "pinyin": "wáng bāo",
-          "hanviet": "Vương Bao"
+          "hanviet": "Vương Bao",
+          "meaning_vi": "Vương Bao"
         },
         {
           "text": "为",
@@ -13339,7 +13970,8 @@
         {
           "text": "象经",
           "pinyin": "xiàng jīng",
-          "hanviet": "Tượng Kinh"
+          "hanviet": "Tượng Kinh",
+          "meaning_vi": "Tương Kinh"
         },
         {
           "text": "》"
@@ -13347,7 +13979,8 @@
         {
           "text": "作序",
           "pinyin": "zuò xù",
-          "hanviet": "Tác Tự"
+          "hanviet": "Tác Tự",
+          "meaning_vi": "Lời nói đầu"
         },
         {
           "text": "，"
@@ -13363,12 +13996,14 @@
         {
           "text": "周武帝",
           "pinyin": "zhōu wǔ dì",
-          "hanviet": "Chu Võ Đế"
+          "hanviet": "Chu Võ Đế",
+          "meaning_vi": "Chu Vũ Đế"
         },
         {
           "text": "称赏",
           "pinyin": "chēng shǎng",
-          "hanviet": "Xứng Thưởng"
+          "hanviet": "Xứng Thưởng",
+          "meaning_vi": "Xứng Thưởng"
         },
         {
           "text": "。"
@@ -13394,17 +14029,20 @@
         {
           "text": "文学家",
           "pinyin": "wén xué jiā",
-          "hanviet": "Văn Học Gia"
+          "hanviet": "Văn Học Gia",
+          "meaning_vi": "Văn Học Gia"
         },
         {
           "text": "庾信",
           "pinyin": "yǔ xìn",
-          "hanviet": "Dữu Tín"
+          "hanviet": "Dữu Tín",
+          "meaning_vi": "Dữu Tín"
         },
         {
           "text": "作",
           "pinyin": "zuò",
-          "hanviet": "Tác"
+          "hanviet": "Tác",
+          "meaning_vi": "làm"
         },
         {
           "text": "了",
@@ -13417,7 +14055,8 @@
         {
           "text": "一篇",
           "pinyin": "yī piān",
-          "hanviet": "Nhất Thiên"
+          "hanviet": "Nhất Thiên",
+          "meaning_vi": "một bài viết"
         },
         {
           "text": "《"
@@ -13425,12 +14064,14 @@
         {
           "text": "象戏",
           "pinyin": "xiàng xì",
-          "hanviet": "Tượng Hí"
+          "hanviet": "Tượng Hí",
+          "meaning_vi": "Tương Tây"
         },
         {
           "text": "经赋",
           "pinyin": "jīng fù",
-          "hanviet": "Kinh Phú"
+          "hanviet": "Kinh Phú",
+          "meaning_vi": "Kinh Phú"
         },
         {
           "text": "》"
@@ -13438,12 +14079,14 @@
         {
           "text": "献给",
           "pinyin": "xiàn gěi",
-          "hanviet": "Hiến Cấp"
+          "hanviet": "Hiến Cấp",
+          "meaning_vi": "dành riêng cho"
         },
         {
           "text": "周武帝",
           "pinyin": "zhōu wǔ dì",
-          "hanviet": "Chu Võ Đế"
+          "hanviet": "Chu Võ Đế",
+          "meaning_vi": "Chu Vũ Đế"
         },
         {
           "text": "，"
@@ -13451,7 +14094,8 @@
         {
           "text": "奏称",
           "pinyin": "zòu chēng",
-          "hanviet": "Tấu Xứng"
+          "hanviet": "Tấu Xứng",
+          "meaning_vi": "Tấu Xứng"
         },
         {
           "text": "："
@@ -13462,12 +14106,14 @@
         {
           "text": "臣伏读",
           "pinyin": "chén fú dú",
-          "hanviet": "Thần Phục Độc"
+          "hanviet": "Thần Phục Độc",
+          "meaning_vi": "Thần Phục Độc"
         },
         {
           "text": "圣制",
           "pinyin": "shèng zhì",
-          "hanviet": "Khốt Chế"
+          "hanviet": "Khốt Chế",
+          "meaning_vi": "Khốt Chế"
         },
         {
           "text": "《"
@@ -13475,7 +14121,8 @@
         {
           "text": "象经",
           "pinyin": "xiàng jīng",
-          "hanviet": "Tượng Kinh"
+          "hanviet": "Tượng Kinh",
+          "meaning_vi": "Tương Kinh"
         },
         {
           "text": "》"
@@ -13494,7 +14141,8 @@
         {
           "text": "观象",
           "pinyin": "guān xiàng",
-          "hanviet": "Quán Tượng"
+          "hanviet": "Quán Tượng",
+          "meaning_vi": "Quán Tượng"
         },
         {
           "text": "戏",
@@ -13510,7 +14158,8 @@
         {
           "text": "私心",
           "pinyin": "sī xīn",
-          "hanviet": "Tư Tâm"
+          "hanviet": "Tư Tâm",
+          "meaning_vi": "Tư Tâm"
         },
         {
           "text": "踊跃",
@@ -13526,12 +14175,14 @@
         {
           "text": "不胜",
           "pinyin": "bù shèng",
-          "hanviet": "Bất Thắng"
+          "hanviet": "Bất Thắng",
+          "meaning_vi": "Bất khả chiến bại"
         },
         {
           "text": "忭",
           "pinyin": "biàn",
-          "hanviet": "Biện"
+          "hanviet": "Biện",
+          "meaning_vi": "Biện"
         },
         {
           "text": "舞",
@@ -13584,7 +14235,8 @@
         {
           "text": "四年",
           "pinyin": "sì nián",
-          "hanviet": "Tứ Niên"
+          "hanviet": "Tứ Niên",
+          "meaning_vi": "bốn năm"
         },
         {
           "text": "（"
@@ -13617,7 +14269,8 @@
         {
           "text": "象戏",
           "pinyin": "xiàng xì",
-          "hanviet": "Tượng Hí"
+          "hanviet": "Tượng Hí",
+          "meaning_vi": "Tương Tây"
         },
         {
           "text": "不",
@@ -13630,7 +14283,8 @@
         {
           "text": "见于",
           "pinyin": "jiàn yú",
-          "hanviet": "Kiến Vu"
+          "hanviet": "Kiến Vu",
+          "meaning_vi": "nhìn thấy trong"
         },
         {
           "text": "记载",
@@ -13662,12 +14316,14 @@
         {
           "text": "有人",
           "pinyin": "yǒu rén",
-          "hanviet": "Hữu Nhân"
+          "hanviet": "Hữu Nhân",
+          "meaning_vi": "ai đó"
         },
         {
           "text": "将象",
           "pinyin": "jiāng xiàng",
-          "hanviet": "Tương Tượng"
+          "hanviet": "Tương Tượng",
+          "meaning_vi": "Tương Tượng"
         },
         {
           "text": "戏",
@@ -13688,22 +14344,26 @@
         {
           "text": "发明权",
           "pinyin": "fā míng quán",
-          "hanviet": "Phát Minh Quyền"
+          "hanviet": "Phát Minh Quyền",
+          "meaning_vi": "Phát Minh Quyền"
         },
         {
           "text": "赠予",
           "pinyin": "zèng yǔ",
-          "hanviet": "Tặng Dư"
+          "hanviet": "Tặng Dư",
+          "meaning_vi": "Tặng Dư"
         },
         {
           "text": "周武帝",
           "pinyin": "zhōu wǔ dì",
-          "hanviet": "Chu Võ Đế"
+          "hanviet": "Chu Võ Đế",
+          "meaning_vi": "Chu Vũ Đế"
         },
         {
           "text": "宇文邕",
           "pinyin": "yǔ wén yōng",
-          "hanviet": "Vũ Văn Ung"
+          "hanviet": "Vũ Văn Ung",
+          "meaning_vi": "Vũ Văn Ung"
         },
         {
           "text": "。"
@@ -13780,7 +14440,8 @@
         {
           "text": "周武帝",
           "pinyin": "zhōu wǔ dì",
-          "hanviet": "Chu Võ Đế"
+          "hanviet": "Chu Võ Đế",
+          "meaning_vi": "Chu Vũ Đế"
         },
         {
           "text": "只是",
@@ -13801,12 +14462,14 @@
         {
           "text": "象戏",
           "pinyin": "xiàng xì",
-          "hanviet": "Tượng Hí"
+          "hanviet": "Tượng Hí",
+          "meaning_vi": "Tương Tây"
         },
         {
           "text": "而制",
           "pinyin": "ér zhì",
-          "hanviet": "Nhi Chế"
+          "hanviet": "Nhi Chế",
+          "meaning_vi": "Nhi Chế"
         },
         {
           "text": "《"
@@ -13814,7 +14477,8 @@
         {
           "text": "象经",
           "pinyin": "xiàng jīng",
-          "hanviet": "Tượng Kinh"
+          "hanviet": "Tượng Kinh",
+          "meaning_vi": "Tương Kinh"
         },
         {
           "text": "》"
@@ -13825,7 +14489,8 @@
         {
           "text": "意欲",
           "pinyin": "yì yù",
-          "hanviet": "Ý Dục"
+          "hanviet": "Ý Dục",
+          "meaning_vi": "Ý Dục"
         },
         {
           "text": "在",
@@ -13838,7 +14503,8 @@
         {
           "text": "朝臣",
           "pinyin": "cháo chén",
-          "hanviet": "Triều Thần"
+          "hanviet": "Triều Thần",
+          "meaning_vi": "Triều Thần"
         },
         {
           "text": "中",
@@ -13904,7 +14570,8 @@
         {
           "text": "象戏",
           "pinyin": "xiàng xì",
-          "hanviet": "Tượng Hí"
+          "hanviet": "Tượng Hí",
+          "meaning_vi": "Tương Tây"
         },
         {
           "text": "必然",
@@ -13925,7 +14592,8 @@
         {
           "text": "一种",
           "pinyin": "yī zhǒng",
-          "hanviet": "Nhất Chủng"
+          "hanviet": "Nhất Chủng",
+          "meaning_vi": "một loại"
         },
         {
           "text": "新",
@@ -13954,7 +14622,8 @@
         {
           "text": "盘戏",
           "pinyin": "pán xì",
-          "hanviet": "Bàn Hí"
+          "hanviet": "Bàn Hí",
+          "meaning_vi": "Bàn Hi"
         },
         {
           "text": "，"
@@ -13970,7 +14639,8 @@
         {
           "text": "周武帝",
           "pinyin": "zhōu wǔ dì",
-          "hanviet": "Chu Võ Đế"
+          "hanviet": "Chu Võ Đế",
+          "meaning_vi": "Chu Vũ Đế"
         },
         {
           "text": "也",
@@ -14002,12 +14672,14 @@
         {
           "text": "集百",
           "pinyin": "jí bǎi",
-          "hanviet": "Tập Bách"
+          "hanviet": "Tập Bách",
+          "meaning_vi": "Tập Bách"
         },
         {
           "text": "寮",
           "pinyin": "liáo",
-          "hanviet": "Liêu"
+          "hanviet": "Liêu",
+          "meaning_vi": "Liêu"
         },
         {
           "text": "讲",
@@ -14042,7 +14714,8 @@
         {
           "text": "庾信",
           "pinyin": "yǔ xìn",
-          "hanviet": "Dữu Tín"
+          "hanviet": "Dữu Tín",
+          "meaning_vi": "Dữu Tín"
         },
         {
           "text": "也",
@@ -14055,17 +14728,20 @@
         {
           "text": "不会",
           "pinyin": "bú huì",
-          "hanviet": "Bất Hội"
+          "hanviet": "Bất Hội",
+          "meaning_vi": "Không"
         },
         {
           "text": "看到",
           "pinyin": "kàn dào",
-          "hanviet": "Khán Đáo"
+          "hanviet": "Khán Đáo",
+          "meaning_vi": "xem"
         },
         {
           "text": "象戏",
           "pinyin": "xiàng xì",
-          "hanviet": "Tượng Hí"
+          "hanviet": "Tượng Hí",
+          "meaning_vi": "Tương Tây"
         },
         {
           "text": "就",
@@ -14081,7 +14757,8 @@
         {
           "text": "私心",
           "pinyin": "sī xīn",
-          "hanviet": "Tư Tâm"
+          "hanviet": "Tư Tâm",
+          "meaning_vi": "Tư Tâm"
         },
         {
           "text": "踊跃",
@@ -14097,12 +14774,14 @@
         {
           "text": "不胜",
           "pinyin": "bù shèng",
-          "hanviet": "Bất Thắng"
+          "hanviet": "Bất Thắng",
+          "meaning_vi": "Bất khả chiến bại"
         },
         {
           "text": "忭",
           "pinyin": "biàn",
-          "hanviet": "Biện"
+          "hanviet": "Biện",
+          "meaning_vi": "Biện"
         },
         {
           "text": "舞",
@@ -14139,7 +14818,8 @@
         {
           "text": "象戏",
           "pinyin": "xiàng xì",
-          "hanviet": "Tượng Hí"
+          "hanviet": "Tượng Hí",
+          "meaning_vi": "Tương Tây"
         },
         {
           "text": "是",
@@ -14152,7 +14832,8 @@
         {
           "text": "一种",
           "pinyin": "yī zhǒng",
-          "hanviet": "Nhất Chủng"
+          "hanviet": "Nhất Chủng",
+          "meaning_vi": "một loại"
         },
         {
           "text": "新",
@@ -14181,7 +14862,8 @@
         {
           "text": "盘戏",
           "pinyin": "pán xì",
-          "hanviet": "Bàn Hí"
+          "hanviet": "Bàn Hí",
+          "meaning_vi": "Bàn Hi"
         },
         {
           "text": "，"
@@ -14205,7 +14887,8 @@
         {
           "text": "举出",
           "pinyin": "jǔ chū",
-          "hanviet": "Cử Xuất"
+          "hanviet": "Cử Xuất",
+          "meaning_vi": "trích dẫn"
         },
         {
           "text": "一些",
@@ -14218,7 +14901,8 @@
         {
           "text": "例证",
           "pinyin": "lì zhèng",
-          "hanviet": "Lệ Chứng"
+          "hanviet": "Lệ Chứng",
+          "meaning_vi": "hình minh họa"
         },
         {
           "text": "。"
@@ -14247,7 +14931,8 @@
         {
           "text": "旧唐书",
           "pinyin": "jiù táng shū",
-          "hanviet": "Cựu Đường Thư"
+          "hanviet": "Cựu Đường Thư",
+          "meaning_vi": "Cựu Đường Thư"
         },
         {
           "text": "·"
@@ -14255,7 +14940,8 @@
         {
           "text": "吕才",
           "pinyin": "lǚ cái",
-          "hanviet": "Lữ Tài"
+          "hanviet": "Lữ Tài",
+          "meaning_vi": "Lữ Tài"
         },
         {
           "text": "传",
@@ -14271,7 +14957,8 @@
         {
           "text": "载",
           "pinyin": "zài",
-          "hanviet": "Tải"
+          "hanviet": "Tải",
+          "meaning_vi": "tải"
         },
         {
           "text": "："
@@ -14282,27 +14969,32 @@
         {
           "text": "太宗",
           "pinyin": "tài zōng",
-          "hanviet": "Thái Tông"
+          "hanviet": "Thái Tông",
+          "meaning_vi": "Thái Tông"
         },
         {
           "text": "尝览",
           "pinyin": "cháng lǎn",
-          "hanviet": "Thường Lãm"
+          "hanviet": "Thường Lãm",
+          "meaning_vi": "Thường Lãm"
         },
         {
           "text": "周武帝",
           "pinyin": "zhōu wǔ dì",
-          "hanviet": "Chu Võ Đế"
+          "hanviet": "Chu Võ Đế",
+          "meaning_vi": "Chu Vũ Đế"
         },
         {
           "text": "所撰",
           "pinyin": "suǒ zhuàn",
-          "hanviet": "Sở Soạn"
+          "hanviet": "Sở Soạn",
+          "meaning_vi": "Sở Soạn"
         },
         {
           "text": "之局",
           "pinyin": "zhī jú",
-          "hanviet": "Chi Cục"
+          "hanviet": "Chi Cục",
+          "meaning_vi": "tình huống"
         },
         {
           "text": "《"
@@ -14310,7 +15002,8 @@
         {
           "text": "象经",
           "pinyin": "xiàng jīng",
-          "hanviet": "Tượng Kinh"
+          "hanviet": "Tượng Kinh",
+          "meaning_vi": "Tương Kinh"
         },
         {
           "text": "》"
@@ -14321,7 +15014,8 @@
         {
           "text": "不晓其旨",
           "pinyin": "bù xiǎo qí zhǐ",
-          "hanviet": "Bất Hiểu Kỳ Chỉ"
+          "hanviet": "Bất Hiểu Kỳ Chỉ",
+          "meaning_vi": "Không biết mục đích của nó"
         },
         {
           "text": "。"
@@ -14339,27 +15033,32 @@
         {
           "text": "太子",
           "pinyin": "tài zi",
-          "hanviet": "Thái Tử"
+          "hanviet": "Thái Tử",
+          "meaning_vi": "hoàng tử"
         },
         {
           "text": "洗马",
           "pinyin": "xǐ mǎ",
-          "hanviet": "Tẩy Mã"
+          "hanviet": "Tẩy Mã",
+          "meaning_vi": "Tẩy Mã"
         },
         {
           "text": "蔡元",
           "pinyin": "cài yuán",
-          "hanviet": "Thái Nguyên"
+          "hanviet": "Thái Nguyên",
+          "meaning_vi": "Thái Nguyên"
         },
         {
           "text": "恭",
           "pinyin": "gōng",
-          "hanviet": "Cung"
+          "hanviet": "Cung",
+          "meaning_vi": "Cung"
         },
         {
           "text": "年少时",
           "pinyin": "nián shào shí",
-          "hanviet": "Niên Thiểu Thời"
+          "hanviet": "Niên Thiểu Thời",
+          "meaning_vi": "Niên Thiểu Thời"
         },
         {
           "text": "尝",
@@ -14391,12 +15090,14 @@
         {
           "text": "太宗",
           "pinyin": "tài zōng",
-          "hanviet": "Thái Tông"
+          "hanviet": "Thái Tông",
+          "meaning_vi": "Thái Tông"
         },
         {
           "text": "召问",
           "pinyin": "zhào wèn",
-          "hanviet": "Thiệu Vấn"
+          "hanviet": "Thiệu Vấn",
+          "meaning_vi": "Thiệu Vấn"
         },
         {
           "text": "，"
@@ -14428,7 +15129,8 @@
         {
           "text": "不通",
           "pinyin": "bù tōng",
-          "hanviet": "Bất Thông"
+          "hanviet": "Bất Thông",
+          "meaning_vi": "Không có ý nghĩa"
         },
         {
           "text": "。"
@@ -14449,12 +15151,14 @@
         {
           "text": "唐太宗",
           "pinyin": "táng tài zōng",
-          "hanviet": "Đường Thái Tông"
+          "hanviet": "Đường Thái Tông",
+          "meaning_vi": "Hoàng đế Thái Tông nhà Đường"
         },
         {
           "text": "贞观",
           "pinyin": "zhēn guàn",
-          "hanviet": "Trinh Quán"
+          "hanviet": "Trinh Quán",
+          "meaning_vi": "Trinh Quán"
         },
         {
           "text": "时期",
@@ -14475,7 +15179,8 @@
         {
           "text": "北周",
           "pinyin": "běi zhōu",
-          "hanviet": "Bắc Chu"
+          "hanviet": "Bắc Chu",
+          "meaning_vi": "Triều đại Bắc Chu"
         },
         {
           "text": "天",
@@ -14496,12 +15201,14 @@
         {
           "text": "年间",
           "pinyin": "nián jiān",
-          "hanviet": "Niên Gian"
+          "hanviet": "Niên Gian",
+          "meaning_vi": "năm"
         },
         {
           "text": "相去不远",
           "pinyin": "xiāng qù bù yuǎn",
-          "hanviet": "Tương Khứ Bất Viễn"
+          "hanviet": "Tương Khứ Bất Viễn",
+          "meaning_vi": "Tương Khứ Bất Viễn"
         },
         {
           "text": "，"
@@ -14517,7 +15224,8 @@
         {
           "text": "象戏",
           "pinyin": "xiàng xì",
-          "hanviet": "Tượng Hí"
+          "hanviet": "Tượng Hí",
+          "meaning_vi": "Tương Tây"
         },
         {
           "text": "在",
@@ -14562,7 +15270,8 @@
         {
           "text": "未广",
           "pinyin": "wèi guǎng",
-          "hanviet": "Vị Nghiễm"
+          "hanviet": "Vị Nghiễm",
+          "meaning_vi": "Vị Nghiễm"
         },
         {
           "text": "，"
@@ -14586,7 +15295,8 @@
         {
           "text": "规制",
           "pinyin": "guī zhì",
-          "hanviet": "Quy Chế"
+          "hanviet": "Quy Chế",
+          "meaning_vi": "Quy Chế"
         },
         {
           "text": "也",
@@ -14615,7 +15325,8 @@
         {
           "text": "盘戏",
           "pinyin": "pán xì",
-          "hanviet": "Bàn Hí"
+          "hanviet": "Bàn Hí",
+          "meaning_vi": "Bàn Hi"
         },
         {
           "text": "围棋",
@@ -14631,12 +15342,14 @@
         {
           "text": "六博有",
           "pinyin": "liù bó yǒu",
-          "hanviet": "Lục Bác Hữu"
+          "hanviet": "Lục Bác Hữu",
+          "meaning_vi": "Lục Bác Hữu"
         },
         {
           "text": "较大",
           "pinyin": "jiào dà",
-          "hanviet": "Giảo Đại"
+          "hanviet": "Giảo Đại",
+          "meaning_vi": "lớn hơn"
         },
         {
           "text": "差异",
@@ -14660,7 +15373,8 @@
         {
           "text": "唐太宗",
           "pinyin": "táng tài zōng",
-          "hanviet": "Đường Thái Tông"
+          "hanviet": "Đường Thái Tông",
+          "meaning_vi": "Hoàng đế Thái Tông nhà Đường"
         },
         {
           "text": "等",
@@ -14743,7 +15457,8 @@
         {
           "text": "象经",
           "pinyin": "xiàng jīng",
-          "hanviet": "Tượng Kinh"
+          "hanviet": "Tượng Kinh",
+          "meaning_vi": "Tương Kinh"
         },
         {
           "text": "》"
@@ -14759,7 +15474,8 @@
         {
           "text": "看不懂",
           "pinyin": "kàn bù dǒng",
-          "hanviet": "Khán Bất Đổng"
+          "hanviet": "Khán Bất Đổng",
+          "meaning_vi": "Khán Bất Đổng"
         },
         {
           "text": "。"
@@ -14777,7 +15493,8 @@
         {
           "text": "北周",
           "pinyin": "běi zhōu",
-          "hanviet": "Bắc Chu"
+          "hanviet": "Bắc Chu",
+          "meaning_vi": "Triều đại Bắc Chu"
         },
         {
           "text": "天",
@@ -14798,7 +15515,8 @@
         {
           "text": "年间",
           "pinyin": "nián jiān",
-          "hanviet": "Niên Gian"
+          "hanviet": "Niên Gian",
+          "meaning_vi": "năm"
         },
         {
           "text": "的",
@@ -14811,7 +15529,8 @@
         {
           "text": "象戏",
           "pinyin": "xiàng xì",
-          "hanviet": "Tượng Hí"
+          "hanviet": "Tượng Hí",
+          "meaning_vi": "Tương Tây"
         },
         {
           "text": "是",
@@ -14861,7 +15580,8 @@
         {
           "text": "史料",
           "pinyin": "shǐ liào",
-          "hanviet": "Sử Liệu"
+          "hanviet": "Sử Liệu",
+          "meaning_vi": "dữ liệu lịch sử"
         },
         {
           "text": "中",
@@ -14943,7 +15663,8 @@
         {
           "text": "唐代",
           "pinyin": "táng dài",
-          "hanviet": "Đường Đại"
+          "hanviet": "Đường Đại",
+          "meaning_vi": "nhà Đường"
         },
         {
           "text": "流行",
@@ -14964,7 +15685,8 @@
         {
           "text": "八八",
           "pinyin": "bā bā",
-          "hanviet": "Bát Bát"
+          "hanviet": "Bát Bát",
+          "meaning_vi": "tám mươi tám"
         },
         {
           "text": "象棋",
@@ -14980,12 +15702,14 @@
         {
           "text": "又名",
           "pinyin": "yòu míng",
-          "hanviet": "Hựu Danh"
+          "hanviet": "Hựu Danh",
+          "meaning_vi": "Hựu Danh"
         },
         {
           "text": "宝应",
           "pinyin": "bǎo yìng",
-          "hanviet": "Bảo Ưng"
+          "hanviet": "Bảo Ưng",
+          "meaning_vi": "Bảo Ưng"
         },
         {
           "text": "象棋",
@@ -15014,7 +15738,8 @@
         {
           "text": "唐代",
           "pinyin": "táng dài",
-          "hanviet": "Đường Đại"
+          "hanviet": "Đường Đại",
+          "meaning_vi": "nhà Đường"
         },
         {
           "text": "象棋",
@@ -15035,7 +15760,8 @@
         {
           "text": "棋盘",
           "pinyin": "qí pán",
-          "hanviet": "Kỳ Bàn"
+          "hanviet": "Kỳ Bàn",
+          "meaning_vi": "Kỳ Bàn"
         },
         {
           "text": "系",
@@ -15048,12 +15774,14 @@
         {
           "text": "六十四",
           "pinyin": "liù shí sì",
-          "hanviet": "Lục Thập Tứ"
+          "hanviet": "Lục Thập Tứ",
+          "meaning_vi": "Lục Thập Tứ"
         },
         {
           "text": "格",
           "pinyin": "gé",
-          "hanviet": "Cách"
+          "hanviet": "Cách",
+          "meaning_vi": "lưới"
         },
         {
           "text": "，"
@@ -15080,7 +15808,8 @@
         {
           "text": "八八",
           "pinyin": "bā bā",
-          "hanviet": "Bát Bát"
+          "hanviet": "Bát Bát",
+          "meaning_vi": "tám mươi tám"
         },
         {
           "text": "象棋",
@@ -15112,7 +15841,8 @@
         {
           "text": "玄怪录",
           "pinyin": "xuán guài lù",
-          "hanviet": "Huyền Quái Lục"
+          "hanviet": "Huyền Quái Lục",
+          "meaning_vi": "Huyền Quái Lục"
         },
         {
           "text": "》"
@@ -15120,7 +15850,8 @@
         {
           "text": "一书中",
           "pinyin": "yī shū zhōng",
-          "hanviet": "Nhất Thư Trung"
+          "hanviet": "Nhất Thư Trung",
+          "meaning_vi": "trong một cuốn sách"
         },
         {
           "text": "描写",
@@ -15141,7 +15872,8 @@
         {
           "text": "八八",
           "pinyin": "bā bā",
-          "hanviet": "Bát Bát"
+          "hanviet": "Bát Bát",
+          "meaning_vi": "tám mươi tám"
         },
         {
           "text": "象棋",
@@ -15170,7 +15902,8 @@
         {
           "text": "形制",
           "pinyin": "xíng zhì",
-          "hanviet": "Hình Chế"
+          "hanviet": "Hình Chế",
+          "meaning_vi": "hình dạng"
         },
         {
           "text": "、"
@@ -15189,7 +15922,8 @@
         {
           "text": "走法",
           "pinyin": "zǒu fǎ",
-          "hanviet": "Tẩu Pháp"
+          "hanviet": "Tẩu Pháp",
+          "meaning_vi": "Tẩu Pháp"
         },
         {
           "text": "等",
@@ -15237,7 +15971,8 @@
         {
           "text": "国际象棋",
           "pinyin": "guó jì xiàng qí",
-          "hanviet": "Quốc Tế Tượng Kỳ"
+          "hanviet": "Quốc Tế Tượng Kỳ",
+          "meaning_vi": "Quốc Tế Tượng Kỳ"
         },
         {
           "text": "非常",
@@ -15287,7 +16022,8 @@
         {
           "text": "北周",
           "pinyin": "běi zhōu",
-          "hanviet": "Bắc Chu"
+          "hanviet": "Bắc Chu",
+          "meaning_vi": "Triều đại Bắc Chu"
         },
         {
           "text": "、"
@@ -15295,7 +16031,8 @@
         {
           "text": "唐初",
           "pinyin": "táng chū",
-          "hanviet": "Đường Sơ"
+          "hanviet": "Đường Sơ",
+          "meaning_vi": "Đường Sơ"
         },
         {
           "text": "时",
@@ -15311,7 +16048,8 @@
         {
           "text": "阿拉伯",
           "pinyin": "ā lā bó",
-          "hanviet": "A Lạp Bá"
+          "hanviet": "A Lạp Bá",
+          "meaning_vi": "Ả Rập"
         },
         {
           "text": "世界",
@@ -15324,12 +16062,14 @@
         {
           "text": "正在流行",
           "pinyin": "zhèng zài liú xíng",
-          "hanviet": "Chinh Tại Lưu Hành"
+          "hanviet": "Chinh Tại Lưu Hành",
+          "meaning_vi": "Chinh Tại Lưu Hành"
         },
         {
           "text": "一种",
           "pinyin": "yī zhǒng",
-          "hanviet": "Nhất Chủng"
+          "hanviet": "Nhất Chủng",
+          "meaning_vi": "một loại"
         },
         {
           "text": "“"
@@ -15337,12 +16077,14 @@
         {
           "text": "沙特",
           "pinyin": "shā tè",
-          "hanviet": "Sa Đặc"
+          "hanviet": "Sa Đặc",
+          "meaning_vi": "Ả Rập Saudi"
         },
         {
           "text": "朗兹",
           "pinyin": "lǎng zī",
-          "hanviet": "Lãng Tư"
+          "hanviet": "Lãng Tư",
+          "meaning_vi": "Lowndes"
         },
         {
           "text": "”"
@@ -15377,7 +16119,8 @@
         {
           "text": "象形",
           "pinyin": "xiàng xíng",
-          "hanviet": "Tượng Hình"
+          "hanviet": "Tượng Hình",
+          "meaning_vi": "chữ tượng hình"
         },
         {
           "text": "，"
@@ -15393,12 +16136,14 @@
         {
           "text": "国际象棋",
           "pinyin": "guó jì xiàng qí",
-          "hanviet": "Quốc Tế Tượng Kỳ"
+          "hanviet": "Quốc Tế Tượng Kỳ",
+          "meaning_vi": "Quốc Tế Tượng Kỳ"
         },
         {
           "text": "步法",
           "pinyin": "bù fǎ",
-          "hanviet": "Bộ Pháp"
+          "hanviet": "Bộ Pháp",
+          "meaning_vi": "Bộ Pháp"
         },
         {
           "text": "相似",
@@ -15424,7 +16169,8 @@
         {
           "text": "国外",
           "pinyin": "guó wài",
-          "hanviet": "Quốc Ngoại"
+          "hanviet": "Quốc Ngoại",
+          "meaning_vi": "ở nước ngoài"
         },
         {
           "text": "的",
@@ -15467,12 +16213,14 @@
         {
           "text": "沙特",
           "pinyin": "shā tè",
-          "hanviet": "Sa Đặc"
+          "hanviet": "Sa Đặc",
+          "meaning_vi": "Ả Rập Saudi"
         },
         {
           "text": "朗兹",
           "pinyin": "lǎng zī",
-          "hanviet": "Lãng Tư"
+          "hanviet": "Lãng Tư",
+          "meaning_vi": "Lowndes"
         },
         {
           "text": "”"
@@ -15488,7 +16236,8 @@
         {
           "text": "乃是",
           "pinyin": "nǎi shì",
-          "hanviet": "Nãi Thị"
+          "hanviet": "Nãi Thị",
+          "meaning_vi": "Có"
         },
         {
           "text": "现代",
@@ -15501,7 +16250,8 @@
         {
           "text": "国际象棋",
           "pinyin": "guó jì xiàng qí",
-          "hanviet": "Quốc Tế Tượng Kỳ"
+          "hanviet": "Quốc Tế Tượng Kỳ",
+          "meaning_vi": "Quốc Tế Tượng Kỳ"
         },
         {
           "text": "的",
@@ -15514,7 +16264,8 @@
         {
           "text": "前身",
           "pinyin": "qián shēn",
-          "hanviet": "Tiền Thân"
+          "hanviet": "Tiền Thân",
+          "meaning_vi": "người tiền nhiệm"
         },
         {
           "text": "。"
@@ -15543,12 +16294,14 @@
         {
           "text": "沙特",
           "pinyin": "shā tè",
-          "hanviet": "Sa Đặc"
+          "hanviet": "Sa Đặc",
+          "meaning_vi": "Ả Rập Saudi"
         },
         {
           "text": "朗兹",
           "pinyin": "lǎng zī",
-          "hanviet": "Lãng Tư"
+          "hanviet": "Lãng Tư",
+          "meaning_vi": "Lowndes"
         },
         {
           "text": "”"
@@ -15567,17 +16320,19 @@
           "hanviet": "Hệ Thống",
           "hsk": 5,
           "word_id": "hsk5_1229",
-          "meaning_vi": "hệ thống"
+          "meaning_vi": "thì, là (liên từ văn viết)"
         },
         {
           "text": "来源于",
           "pinyin": "lái yuán yú",
-          "hanviet": "Lai Nguyên Vu"
+          "hanviet": "Lai Nguyên Vu",
+          "meaning_vi": "Từ"
         },
         {
           "text": "古印度",
           "pinyin": "gǔ yìn dù",
-          "hanviet": "Cổ Ấn Độ"
+          "hanviet": "Cổ Ấn Độ",
+          "meaning_vi": "Ấn Độ cổ đại"
         },
         {
           "text": "的",
@@ -15593,12 +16348,14 @@
         {
           "text": "恰图",
           "pinyin": "qià tú",
-          "hanviet": "Kháp Đồ"
+          "hanviet": "Kháp Đồ",
+          "meaning_vi": "Kháp Đồ"
         },
         {
           "text": "兰格",
           "pinyin": "lán gé",
-          "hanviet": "Lan Cách"
+          "hanviet": "Lan Cách",
+          "meaning_vi": "Lan Cách"
         },
         {
           "text": "”"
@@ -15662,7 +16419,8 @@
         {
           "text": "一个",
           "pinyin": "yí gè",
-          "hanviet": "Nhất Cá"
+          "hanviet": "Nhất Cá",
+          "meaning_vi": "một"
         },
         {
           "text": "有趣",
@@ -15727,7 +16485,7 @@
           "hanviet": "Trung Quốc",
           "hsk": 1,
           "word_id": "hsk1_610",
-          "meaning_vi": "trung Quốc"
+          "meaning_vi": "Trung Quốc"
         },
         {
           "text": "和",
@@ -15740,7 +16498,8 @@
         {
           "text": "阿拉伯",
           "pinyin": "ā lā bó",
-          "hanviet": "A Lạp Bá"
+          "hanviet": "A Lạp Bá",
+          "meaning_vi": "Ả Rập"
         },
         {
           "text": "世界",
@@ -15772,7 +16531,8 @@
         {
           "text": "两种",
           "pinyin": "liǎng zhǒng",
-          "hanviet": "Lưỡng Chủng"
+          "hanviet": "Lưỡng Chủng",
+          "meaning_vi": "Hai loại"
         },
         {
           "text": "内容",
@@ -15812,7 +16572,8 @@
         {
           "text": "八八",
           "pinyin": "bā bā",
-          "hanviet": "Bát Bát"
+          "hanviet": "Bát Bát",
+          "meaning_vi": "tám mươi tám"
         },
         {
           "text": "象棋",
@@ -15836,12 +16597,14 @@
         {
           "text": "沙特",
           "pinyin": "shā tè",
-          "hanviet": "Sa Đặc"
+          "hanviet": "Sa Đặc",
+          "meaning_vi": "Ả Rập Saudi"
         },
         {
           "text": "朗兹",
           "pinyin": "lǎng zī",
-          "hanviet": "Lãng Tư"
+          "hanviet": "Lãng Tư",
+          "meaning_vi": "Lowndes"
         },
         {
           "text": "”"
@@ -15878,7 +16641,8 @@
         {
           "text": "合乎逻辑",
           "pinyin": "hé hū luó jí",
-          "hanviet": "Cáp Hồ La Tập"
+          "hanviet": "Cáp Hồ La Tập",
+          "meaning_vi": "Cáp Hồ La Tập"
         },
         {
           "text": "的",
@@ -15910,7 +16674,8 @@
         {
           "text": "八八",
           "pinyin": "bā bā",
-          "hanviet": "Bát Bát"
+          "hanviet": "Bát Bát",
+          "meaning_vi": "tám mươi tám"
         },
         {
           "text": "象棋",
@@ -15934,12 +16699,14 @@
         {
           "text": "沙特",
           "pinyin": "shā tè",
-          "hanviet": "Sa Đặc"
+          "hanviet": "Sa Đặc",
+          "meaning_vi": "Ả Rập Saudi"
         },
         {
           "text": "朗兹",
           "pinyin": "lǎng zī",
-          "hanviet": "Lãng Tư"
+          "hanviet": "Lãng Tư",
+          "meaning_vi": "Lowndes"
         },
         {
           "text": "”"
@@ -15955,17 +16722,20 @@
         {
           "text": "必有",
           "pinyin": "bì yǒu",
-          "hanviet": "Tất Hữu"
+          "hanviet": "Tất Hữu",
+          "meaning_vi": "Phải có"
         },
         {
           "text": "某种",
           "pinyin": "mǒu zhǒng",
-          "hanviet": "Mỗ Chủng"
+          "hanviet": "Mỗ Chủng",
+          "meaning_vi": "một số loại"
         },
         {
           "text": "连带关系",
           "pinyin": "lián dài guān xì",
-          "hanviet": "Liên Đới Quan Hệ"
+          "hanviet": "Liên Đới Quan Hệ",
+          "meaning_vi": "Liên Đới Quan Hệ"
         },
         {
           "text": "。"
@@ -15991,7 +16761,8 @@
         {
           "text": "南北朝",
           "pinyin": "nán běi cháo",
-          "hanviet": "Nam Bắc Triều"
+          "hanviet": "Nam Bắc Triều",
+          "meaning_vi": "Nam triều và Bắc triều"
         },
         {
           "text": "乃至",
@@ -16004,7 +16775,8 @@
         {
           "text": "隋唐",
           "pinyin": "suí táng",
-          "hanviet": "Tuỳ Đường"
+          "hanviet": "Tuỳ Đường",
+          "meaning_vi": "Nhà Tùy và nhà Đường"
         },
         {
           "text": "时期",
@@ -16020,7 +16792,7 @@
           "hanviet": "Trung Quốc",
           "hsk": 1,
           "word_id": "hsk1_610",
-          "meaning_vi": "trung Quốc"
+          "meaning_vi": "Trung Quốc"
         },
         {
           "text": "与",
@@ -16033,7 +16805,8 @@
         {
           "text": "印度",
           "pinyin": "yìn dù",
-          "hanviet": "Ấn Độ"
+          "hanviet": "Ấn Độ",
+          "meaning_vi": "Ấn Độ"
         },
         {
           "text": "、"
@@ -16041,7 +16814,8 @@
         {
           "text": "西域",
           "pinyin": "xī yù",
-          "hanviet": "Tây Vực"
+          "hanviet": "Tây Vực",
+          "meaning_vi": "Miền Tây"
         },
         {
           "text": "、"
@@ -16049,7 +16823,8 @@
         {
           "text": "阿拉伯",
           "pinyin": "ā lā bó",
-          "hanviet": "A Lạp Bá"
+          "hanviet": "A Lạp Bá",
+          "meaning_vi": "Ả Rập"
         },
         {
           "text": "世界",
@@ -16086,7 +16861,8 @@
         {
           "text": "来看",
           "pinyin": "lái kàn",
-          "hanviet": "Lai Khán"
+          "hanviet": "Lai Khán",
+          "meaning_vi": "Hãy đến và xem"
         },
         {
           "text": "，"
@@ -16097,12 +16873,14 @@
         {
           "text": "沙特",
           "pinyin": "shā tè",
-          "hanviet": "Sa Đặc"
+          "hanviet": "Sa Đặc",
+          "meaning_vi": "Ả Rập Saudi"
         },
         {
           "text": "朗兹",
           "pinyin": "lǎng zī",
-          "hanviet": "Lãng Tư"
+          "hanviet": "Lãng Tư",
+          "meaning_vi": "Lowndes"
         },
         {
           "text": "”"
@@ -16118,7 +16896,8 @@
         {
           "text": "传入",
           "pinyin": "chuán rù",
-          "hanviet": "Truyền Nhập"
+          "hanviet": "Truyền Nhập",
+          "meaning_vi": "đến"
         },
         {
           "text": "中国",
@@ -16126,7 +16905,7 @@
           "hanviet": "Trung Quốc",
           "hsk": 1,
           "word_id": "hsk1_610",
-          "meaning_vi": "trung Quốc"
+          "meaning_vi": "Trung Quốc"
         },
         {
           "text": "也",
@@ -16184,7 +16963,8 @@
         {
           "text": "合乎逻辑",
           "pinyin": "hé hū luó jí",
-          "hanviet": "Cáp Hồ La Tập"
+          "hanviet": "Cáp Hồ La Tập",
+          "meaning_vi": "Cáp Hồ La Tập"
         },
         {
           "text": "的",
@@ -16216,7 +16996,8 @@
         {
           "text": "八八",
           "pinyin": "bā bā",
-          "hanviet": "Bát Bát"
+          "hanviet": "Bát Bát",
+          "meaning_vi": "tám mươi tám"
         },
         {
           "text": "象棋",
@@ -16237,12 +17018,14 @@
         {
           "text": "来源于",
           "pinyin": "lái yuán yú",
-          "hanviet": "Lai Nguyên Vu"
+          "hanviet": "Lai Nguyên Vu",
+          "meaning_vi": "Từ"
         },
         {
           "text": "阿拉伯",
           "pinyin": "ā lā bó",
-          "hanviet": "A Lạp Bá"
+          "hanviet": "A Lạp Bá",
+          "meaning_vi": "Ả Rập"
         },
         {
           "text": "世界",
@@ -16266,12 +17049,14 @@
         {
           "text": "沙特",
           "pinyin": "shā tè",
-          "hanviet": "Sa Đặc"
+          "hanviet": "Sa Đặc",
+          "meaning_vi": "Ả Rập Saudi"
         },
         {
           "text": "朗兹",
           "pinyin": "lǎng zī",
-          "hanviet": "Lãng Tư"
+          "hanviet": "Lãng Tư",
+          "meaning_vi": "Lowndes"
         },
         {
           "text": "”"
@@ -16290,7 +17075,8 @@
         {
           "text": "传入",
           "pinyin": "chuán rù",
-          "hanviet": "Truyền Nhập"
+          "hanviet": "Truyền Nhập",
+          "meaning_vi": "đến"
         },
         {
           "text": "的",
@@ -16338,7 +17124,8 @@
         {
           "text": "末期",
           "pinyin": "mò qī",
-          "hanviet": "Mạt Kỳ"
+          "hanviet": "Mạt Kỳ",
+          "meaning_vi": "Cuối kỳ"
         },
         {
           "text": "。"
@@ -16356,7 +17143,8 @@
         {
           "text": "这种",
           "pinyin": "zhè zhǒng",
-          "hanviet": "Giá Chủng"
+          "hanviet": "Giá Chủng",
+          "meaning_vi": "Loại này"
         },
         {
           "text": "象棋",
@@ -16401,7 +17189,8 @@
         {
           "text": "一段时间",
           "pinyin": "yī duàn shí jiān",
-          "hanviet": "Nhất Đoạn Thời Gian"
+          "hanviet": "Nhất Đoạn Thời Gian",
+          "meaning_vi": "một lúc nào đó"
         },
         {
           "text": "以后",
@@ -16417,12 +17206,14 @@
         {
           "text": "以北",
           "pinyin": "yǐ běi",
-          "hanviet": "Dĩ Bắc"
+          "hanviet": "Dĩ Bắc",
+          "meaning_vi": "phía bắc của"
         },
         {
           "text": "周天",
           "pinyin": "zhōu tiān",
-          "hanviet": "Chu Thiên"
+          "hanviet": "Chu Thiên",
+          "meaning_vi": "Chu Thiên"
         },
         {
           "text": "和",
@@ -16435,17 +17226,20 @@
         {
           "text": "四年",
           "pinyin": "sì nián",
-          "hanviet": "Tứ Niên"
+          "hanviet": "Tứ Niên",
+          "meaning_vi": "bốn năm"
         },
         {
           "text": "武帝",
           "pinyin": "wǔ dì",
-          "hanviet": "Võ Đế"
+          "hanviet": "Võ Đế",
+          "meaning_vi": "Võ Đế"
         },
         {
           "text": "宇文邕",
           "pinyin": "yǔ wén yōng",
-          "hanviet": "Vũ Văn Ung"
+          "hanviet": "Vũ Văn Ung",
+          "meaning_vi": "Vũ Văn Ung"
         },
         {
           "text": "制",
@@ -16461,7 +17255,8 @@
         {
           "text": "象经",
           "pinyin": "xiàng jīng",
-          "hanviet": "Tượng Kinh"
+          "hanviet": "Tượng Kinh",
+          "meaning_vi": "Tương Kinh"
         },
         {
           "text": "》"
@@ -16496,7 +17291,8 @@
         {
           "text": "上层社会",
           "pinyin": "shàng céng shè huì",
-          "hanviet": "Thướng Tầng Xã Hội"
+          "hanviet": "Thướng Tầng Xã Hội",
+          "meaning_vi": "xã hội thượng lưu"
         },
         {
           "text": "的",
@@ -16570,7 +17366,8 @@
         {
           "text": "唐代",
           "pinyin": "táng dài",
-          "hanviet": "Đường Đại"
+          "hanviet": "Đường Đại",
+          "meaning_vi": "nhà Đường"
         },
         {
           "text": "则",
@@ -16578,7 +17375,7 @@
           "hanviet": "Hệ Thống",
           "hsk": 5,
           "word_id": "hsk5_1229",
-          "meaning_vi": "hệ thống"
+          "meaning_vi": "thì, là (liên từ văn viết)"
         },
         {
           "text": "成为",
@@ -16599,7 +17396,8 @@
         {
           "text": "各阶层",
           "pinyin": "gè jiē céng",
-          "hanviet": "Các Giai Tầng"
+          "hanviet": "Các Giai Tầng",
+          "meaning_vi": "Các Giai Tầng"
         },
         {
           "text": "普遍",
@@ -16628,12 +17426,14 @@
         {
           "text": "一种",
           "pinyin": "yī zhǒng",
-          "hanviet": "Nhất Chủng"
+          "hanviet": "Nhất Chủng",
+          "meaning_vi": "một loại"
         },
         {
           "text": "盘戏",
           "pinyin": "pán xì",
-          "hanviet": "Bàn Hí"
+          "hanviet": "Bàn Hí",
+          "meaning_vi": "Bàn Hi"
         },
         {
           "text": "。"
@@ -16651,17 +17451,20 @@
         {
           "text": "宋代",
           "pinyin": "sòng dài",
-          "hanviet": "Tống Đại"
+          "hanviet": "Tống Đại",
+          "meaning_vi": "Nhà Tống"
         },
         {
           "text": "景德镇",
           "pinyin": "jǐng dé zhèn",
-          "hanviet": "Cảnh Đức Trấn"
+          "hanviet": "Cảnh Đức Trấn",
+          "meaning_vi": "Cảnh Đức Trấn"
         },
         {
           "text": "白瓷",
           "pinyin": "bái cí",
-          "hanviet": "Bạch Từ"
+          "hanviet": "Bạch Từ",
+          "meaning_vi": "Bạch Từ"
         },
         {
           "text": "象棋",
@@ -16674,7 +17477,8 @@
         {
           "text": "陶模",
           "pinyin": "táo mó",
-          "hanviet": "Đào Mô"
+          "hanviet": "Đào Mô",
+          "meaning_vi": "Đào Mô"
         },
         {
           "text": "当然",
@@ -16698,7 +17502,8 @@
         {
           "text": "传入",
           "pinyin": "chuán rù",
-          "hanviet": "Truyền Nhập"
+          "hanviet": "Truyền Nhập",
+          "meaning_vi": "đến"
         },
         {
           "text": "中国",
@@ -16706,7 +17511,7 @@
           "hanviet": "Trung Quốc",
           "hsk": 1,
           "word_id": "hsk1_610",
-          "meaning_vi": "trung Quốc"
+          "meaning_vi": "Trung Quốc"
         },
         {
           "text": "以后",
@@ -16741,7 +17546,8 @@
         {
           "text": "中国化",
           "pinyin": "zhōng guó huà",
-          "hanviet": "Trung Quốc Hoa"
+          "hanviet": "Trung Quốc Hoa",
+          "meaning_vi": "Hán hóa"
         },
         {
           "text": "”"
@@ -16776,7 +17582,8 @@
         {
           "text": "这种",
           "pinyin": "zhè zhǒng",
-          "hanviet": "Giá Chủng"
+          "hanviet": "Giá Chủng",
+          "meaning_vi": "Loại này"
         },
         {
           "text": "改造",
@@ -16805,7 +17612,8 @@
         {
           "text": "从根本上",
           "pinyin": "cóng gēn běn shàng",
-          "hanviet": "Tòng Căn Bản Thướng"
+          "hanviet": "Tòng Căn Bản Thướng",
+          "meaning_vi": "về cơ bản"
         },
         {
           "text": "动摇",
@@ -16938,7 +17746,8 @@
         {
           "text": "八八",
           "pinyin": "bā bā",
-          "hanviet": "Bát Bát"
+          "hanviet": "Bát Bát",
+          "meaning_vi": "tám mươi tám"
         },
         {
           "text": "象棋",
@@ -16994,7 +17803,8 @@
         {
           "text": "唐代",
           "pinyin": "táng dài",
-          "hanviet": "Đường Đại"
+          "hanviet": "Đường Đại",
+          "meaning_vi": "nhà Đường"
         },
         {
           "text": "就",
@@ -17042,7 +17852,8 @@
         {
           "text": "北宋",
           "pinyin": "běi sòng",
-          "hanviet": "Bắc Tống"
+          "hanviet": "Bắc Tống",
+          "meaning_vi": "Triều đại Bắc Tống"
         },
         {
           "text": "时期",
@@ -17058,7 +17869,7 @@
           "hanviet": "Hệ Thống",
           "hsk": 5,
           "word_id": "hsk5_1229",
-          "meaning_vi": "hệ thống"
+          "meaning_vi": "thì, là (liên từ văn viết)"
         },
         {
           "text": "达到",
@@ -17108,12 +17919,14 @@
         {
           "text": "北宋",
           "pinyin": "běi sòng",
-          "hanviet": "Bắc Tống"
+          "hanviet": "Bắc Tống",
+          "meaning_vi": "Triều đại Bắc Tống"
         },
         {
           "text": "末年",
           "pinyin": "mò nián",
-          "hanviet": "Mạt Niên"
+          "hanviet": "Mạt Niên",
+          "meaning_vi": "những năm qua"
         },
         {
           "text": "，"
@@ -17145,7 +17958,8 @@
         {
           "text": "定型",
           "pinyin": "dìng xíng",
-          "hanviet": "Định Hình"
+          "hanviet": "Định Hình",
+          "meaning_vi": "hoàn thiện"
         },
         {
           "text": "。"
@@ -17171,7 +17985,8 @@
         {
           "text": "定型",
           "pinyin": "dìng xíng",
-          "hanviet": "Định Hình"
+          "hanviet": "Định Hình",
+          "meaning_vi": "hoàn thiện"
         },
         {
           "text": "以后",
@@ -17230,7 +18045,8 @@
         {
           "text": "比较简单",
           "pinyin": "bǐ jiào jiǎn dān",
-          "hanviet": "Tỷ Giảo Giản Thiện"
+          "hanviet": "Tỷ Giảo Giản Thiện",
+          "meaning_vi": "Tỷ Giảo Giản Thiện"
         },
         {
           "text": "、"
@@ -17273,7 +18089,8 @@
         {
           "text": "广大群众",
           "pinyin": "guǎng dà qún zhòng",
-          "hanviet": "Nghiễm Đại Quần Chúng"
+          "hanviet": "Nghiễm Đại Quần Chúng",
+          "meaning_vi": "Nghiễm Đại Quần Chúng"
         },
         {
           "text": "，"
@@ -17297,7 +18114,8 @@
         {
           "text": "平民百姓",
           "pinyin": "píng mín bǎi xìng",
-          "hanviet": "Bình Dân Bách Tính"
+          "hanviet": "Bình Dân Bách Tính",
+          "meaning_vi": "Bình Dân Bách Tính"
         },
         {
           "text": "的",
@@ -17339,7 +18157,8 @@
         {
           "text": "南宋",
           "pinyin": "nán sòng",
-          "hanviet": "Nam Tống"
+          "hanviet": "Nam Tống",
+          "meaning_vi": "Nam Tống"
         },
         {
           "text": "开始",
@@ -17371,12 +18190,14 @@
         {
           "text": "城乡",
           "pinyin": "chéng xiāng",
-          "hanviet": "Thành Hương"
+          "hanviet": "Thành Hương",
+          "meaning_vi": "Thành Hương"
         },
         {
           "text": "广为",
           "pinyin": "guǎng wèi",
-          "hanviet": "Nghiễm Vi"
+          "hanviet": "Nghiễm Vi",
+          "meaning_vi": "rộng rãi"
         },
         {
           "text": "普及",
@@ -17416,12 +18237,14 @@
         {
           "text": "娱乐活动",
           "pinyin": "yú lè huó dòng",
-          "hanviet": "Ngu Lạc Hoạt Động"
+          "hanviet": "Ngu Lạc Hoạt Động",
+          "meaning_vi": "Ngu Lạc Hoạt Động"
         },
         {
           "text": "之一",
           "pinyin": "zhī yī",
-          "hanviet": "Chi Nhất"
+          "hanviet": "Chi Nhất",
+          "meaning_vi": "một trong"
         },
         {
           "text": "。"

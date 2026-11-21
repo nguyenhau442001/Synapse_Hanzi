@@ -68,6 +68,14 @@ def needs_meaning(tok):
     return not tok.get('punct') and bool(CJK_RE.search(tok.get('text') or '')) and not (tok.get('meaning_vi') or '').strip()
 
 
+def needs_upgrade(tok):
+    if tok.get('punct') or not bool(CJK_RE.search(tok.get('text') or '')):
+        return False
+    mvi = (tok.get('meaning_vi') or '').strip().lower()
+    hv = (tok.get('hanviet') or '').strip().lower()
+    return not mvi or (bool(hv) and mvi == hv)
+
+
 def build_dictionary(docs):
     lex = {}
 
@@ -79,7 +87,10 @@ def build_dictionary(docs):
 
     for doc in docs.values():
         for tok in iter_tokens(doc):
-            add(tok.get('text'), tok.get('meaning_vi'))
+            mvi = (tok.get('meaning_vi') or '').strip()
+            hv = (tok.get('hanviet') or '').strip()
+            if mvi and (not hv or mvi.lower() != hv.lower()):
+                add(tok.get('text'), mvi)
     for lvl in range(1, 7):
         path = VOCAB_DIR / f'hsk{lvl}_vocabularies.json'
         if path.exists():
@@ -199,16 +210,19 @@ def main():
     for path, doc in docs.items():
         changed = False
         for tok in iter_tokens(doc):
-            if not needs_meaning(tok):
+            if not needs_upgrade(tok):
                 continue
             word = tok['text']
             meaning = lex.get(word) or cache.get(word)
             if not meaning:
+                if tok.get('meaning_vi'):
+                    continue
                 meaning = tok.get('hanviet') or hanviet_of(word, compounds, chars)
                 fallback += 1
-            tok['meaning_vi'] = meaning
-            filled += 1
-            changed = True
+            if tok.get('meaning_vi') != meaning:
+                tok['meaning_vi'] = meaning
+                filled += 1
+                changed = True
         if changed:
             path.write_text(dump_like(raws[path], doc), encoding='utf-8')
             changed_files += 1

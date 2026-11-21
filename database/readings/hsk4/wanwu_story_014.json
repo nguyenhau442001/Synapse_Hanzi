@@ -33,7 +33,8 @@
         {
           "text": "多年",
           "pinyin": "duō nián",
-          "hanviet": "Đa Niên"
+          "hanviet": "Đa Niên",
+          "meaning_vi": "nhiều năm"
         },
         {
           "text": "来",
@@ -68,7 +69,8 @@
         {
           "text": "主旋律",
           "pinyin": "zhǔ xuán lǜ",
-          "hanviet": "Chủ Hoàn Luật"
+          "hanviet": "Chủ Hoàn Luật",
+          "meaning_vi": "giai điệu chính"
         },
         {
           "text": "”"
@@ -143,7 +145,8 @@
         {
           "text": "论",
           "pinyin": "lùn",
-          "hanviet": "Luận"
+          "hanviet": "Luận",
+          "meaning_vi": "Bật"
         },
         {
           "text": "值得",
@@ -156,7 +159,8 @@
         {
           "text": "商榷",
           "pinyin": "shāng què",
-          "hanviet": "Thương Các"
+          "hanviet": "Thương Các",
+          "meaning_vi": "Thương Các"
         },
         {
           "text": "—"
@@ -186,7 +190,8 @@
         {
           "text": "一种",
           "pinyin": "yī zhǒng",
-          "hanviet": "Nhất Chủng"
+          "hanviet": "Nhất Chủng",
+          "meaning_vi": "một loại"
         },
         {
           "text": "复杂",
@@ -215,7 +220,8 @@
         {
           "text": "有机物",
           "pinyin": "yǒu jī wù",
-          "hanviet": "Hữu Cơ Vật"
+          "hanviet": "Hữu Cơ Vật",
+          "meaning_vi": "chất hữu cơ"
         },
         {
           "text": "的",
@@ -228,7 +234,8 @@
         {
           "text": "混合物",
           "pinyin": "hùn hé wù",
-          "hanviet": "Hỗn Cáp Vật"
+          "hanviet": "Hỗn Cáp Vật",
+          "meaning_vi": "Hỗn Cáp Vật"
         },
         {
           "text": "。"
@@ -249,7 +256,8 @@
         {
           "text": "这是",
           "pinyin": "zhè shì",
-          "hanviet": "Giá Thị"
+          "hanviet": "Giá Thị",
+          "meaning_vi": "Đây là"
         },
         {
           "text": "教科书",
@@ -358,12 +366,14 @@
         {
           "text": "无机",
           "pinyin": "wú jī",
-          "hanviet": "Vô Cơ"
+          "hanviet": "Vô Cơ",
+          "meaning_vi": "Vô Cơ"
         },
         {
           "text": "成因",
           "pinyin": "chéng yīn",
-          "hanviet": "Thành Nhân"
+          "hanviet": "Thành Nhân",
+          "meaning_vi": "nguyên nhân"
         },
         {
           "text": "说",
@@ -435,7 +445,8 @@
         {
           "text": "并非如此",
           "pinyin": "bìng fēi rú cǐ",
-          "hanviet": "Tinh Phi Như Thử"
+          "hanviet": "Tinh Phi Như Thử",
+          "meaning_vi": "Tinh Phi Như Thử"
         },
         {
           "text": "。"
@@ -491,7 +502,8 @@
         {
           "text": "周期律",
           "pinyin": "zhōu qī lǜ",
-          "hanviet": "Chu Kỳ Luật"
+          "hanviet": "Chu Kỳ Luật",
+          "meaning_vi": "Chu Kỳ Luật"
         },
         {
           "text": "的",
@@ -504,12 +516,14 @@
         {
           "text": "发现者",
           "pinyin": "fā xiàn zhě",
-          "hanviet": "Phát Hiện Giả"
+          "hanviet": "Phát Hiện Giả",
+          "meaning_vi": "Phát Hiện Giả"
         },
         {
           "text": "门捷列夫",
           "pinyin": "mén jié liè fū",
-          "hanviet": "Môn Tiệp Liệt Phu"
+          "hanviet": "Môn Tiệp Liệt Phu",
+          "meaning_vi": "Môn Tiệp Liệt Phu"
         },
         {
           "text": "就",
@@ -549,12 +563,14 @@
         {
           "text": "无机物",
           "pinyin": "wú jī wù",
-          "hanviet": "Vô Cơ Vật"
+          "hanviet": "Vô Cơ Vật",
+          "meaning_vi": "Vô Cơ Vật"
         },
         {
           "text": "化学反应",
           "pinyin": "huà xué fǎn yìng",
-          "hanviet": "Hoa Học Phản Ưng"
+          "hanviet": "Hoa Học Phản Ưng",
+          "meaning_vi": "Hoa Học Phản Ưng"
         },
         {
           "text": "生成",
@@ -620,7 +636,8 @@
         {
           "text": "一个",
           "pinyin": "yí gè",
-          "hanviet": "Nhất Cá"
+          "hanviet": "Nhất Cá",
+          "meaning_vi": "một"
         },
         {
           "text": "追问",
@@ -687,12 +704,14 @@
         {
           "text": "万多个",
           "pinyin": "wàn duō gè",
-          "hanviet": "Mặc Đa Cá"
+          "hanviet": "Mặc Đa Cá",
+          "meaning_vi": "Hơn mười nghìn"
         },
         {
           "text": "油田",
           "pinyin": "yóu tián",
-          "hanviet": "Dầu Điền"
+          "hanviet": "Dầu Điền",
+          "meaning_vi": "mỏ dầu"
         },
         {
           "text": "中",
@@ -727,12 +746,14 @@
         {
           "text": "特大",
           "pinyin": "tè dà",
-          "hanviet": "Đặc Đại"
+          "hanviet": "Đặc Đại",
+          "meaning_vi": "Đặc Đại"
         },
         {
           "text": "油田",
           "pinyin": "yóu tián",
-          "hanviet": "Dầu Điền"
+          "hanviet": "Dầu Điền",
+          "meaning_vi": "mỏ dầu"
         },
         {
           "text": "占",
@@ -777,7 +798,8 @@
         {
           "text": "一半左右",
           "pinyin": "yí bàn zuǒ yòu",
-          "hanviet": "Nhất Bán Tả Hữu"
+          "hanviet": "Nhất Bán Tả Hữu",
+          "meaning_vi": "khoảng một nửa"
         },
         {
           "text": "。"
@@ -795,7 +817,8 @@
         {
           "text": "如果说",
           "pinyin": "rú guǒ shuō",
-          "hanviet": "Như Quả Thuyết"
+          "hanviet": "Như Quả Thuyết",
+          "meaning_vi": "Nếu chúng ta nói"
         },
         {
           "text": "石油",
@@ -824,7 +847,8 @@
         {
           "text": "动植物",
           "pinyin": "dòng zhí wù",
-          "hanviet": "Động Thực Vật"
+          "hanviet": "Động Thực Vật",
+          "meaning_vi": "Động Thực Vật"
         },
         {
           "text": "演变",
@@ -837,7 +861,8 @@
         {
           "text": "而成",
           "pinyin": "ér chéng",
-          "hanviet": "Nhi Thành"
+          "hanviet": "Nhi Thành",
+          "meaning_vi": "trở thành"
         },
         {
           "text": "的",
@@ -869,7 +894,8 @@
         {
           "text": "不会",
           "pinyin": "bú huì",
-          "hanviet": "Bất Hội"
+          "hanviet": "Bất Hội",
+          "meaning_vi": "Không"
         },
         {
           "text": "出现",
@@ -882,7 +908,8 @@
         {
           "text": "这种",
           "pinyin": "zhè zhǒng",
-          "hanviet": "Giá Chủng"
+          "hanviet": "Giá Chủng",
+          "meaning_vi": "Loại này"
         },
         {
           "text": "情况",
@@ -1059,7 +1086,8 @@
         {
           "text": "绝不会",
           "pinyin": "jué bú huì",
-          "hanviet": "Tuyệt Bất Hội"
+          "hanviet": "Tuyệt Bất Hội",
+          "meaning_vi": "Tuyệt Bất Hội"
         },
         {
           "text": "造成",
@@ -1213,7 +1241,8 @@
         {
           "text": "幡然悔悟",
           "pinyin": "fān rán huǐ wù",
-          "hanviet": "Phướn Nhiên Hối Ngộ"
+          "hanviet": "Phướn Nhiên Hối Ngộ",
+          "meaning_vi": "Phướn Nhiên Hối Ngộ"
         },
         {
           "text": "”"
@@ -1240,12 +1269,14 @@
         {
           "text": "峰值",
           "pinyin": "fēng zhí",
-          "hanviet": "Phong Trị"
+          "hanviet": "Phong Trị",
+          "meaning_vi": "đỉnh điểm"
         },
         {
           "text": "论",
           "pinyin": "lùn",
-          "hanviet": "Luận"
+          "hanviet": "Luận",
+          "meaning_vi": "Bật"
         },
         {
           "text": "道歉",
@@ -1277,7 +1308,8 @@
         {
           "text": "美国",
           "pinyin": "měi guó",
-          "hanviet": "Mỹ Quốc"
+          "hanviet": "Mỹ Quốc",
+          "meaning_vi": "Hoa Kỳ"
         },
         {
           "text": "学者",
@@ -1290,7 +1322,8 @@
         {
           "text": "威廉",
           "pinyin": "wēi lián",
-          "hanviet": "Uy Liêm"
+          "hanviet": "Uy Liêm",
+          "meaning_vi": "William"
         },
         {
           "text": "·"
@@ -1298,12 +1331,14 @@
         {
           "text": "恩",
           "pinyin": "ēn",
-          "hanviet": "Ân"
+          "hanviet": "Ân",
+          "meaning_vi": "Vâng"
         },
         {
           "text": "道尔",
           "pinyin": "dào ěr",
-          "hanviet": "Đạo Nhĩ"
+          "hanviet": "Đạo Nhĩ",
+          "meaning_vi": "Đạo Nhĩ"
         },
         {
           "text": "研究",
@@ -1335,7 +1370,8 @@
         {
           "text": "是从",
           "pinyin": "shì cóng",
-          "hanviet": "Thị Tòng"
+          "hanviet": "Thị Tòng",
+          "meaning_vi": "đến từ"
         },
         {
           "text": "20"
@@ -1362,17 +1398,20 @@
         {
           "text": "第一次",
           "pinyin": "dì yī cì",
-          "hanviet": "Đệ Nhất Thứ"
+          "hanviet": "Đệ Nhất Thứ",
+          "meaning_vi": "lần đầu tiên"
         },
         {
           "text": "中东",
           "pinyin": "zhōng dōng",
-          "hanviet": "Trung Đông"
+          "hanviet": "Trung Đông",
+          "meaning_vi": "trung đông"
         },
         {
           "text": "石油危机",
           "pinyin": "shí yóu wēi jī",
-          "hanviet": "Thạch Dầu Nguy Cơ"
+          "hanviet": "Thạch Dầu Nguy Cơ",
+          "meaning_vi": "Thạch Dầu Nguy Cơ"
         },
         {
           "text": "爆发",
@@ -1385,7 +1424,8 @@
         {
           "text": "时起",
           "pinyin": "shí qǐ",
-          "hanviet": "Thời Khởi"
+          "hanviet": "Thời Khởi",
+          "meaning_vi": "Thời Khởi"
         },
         {
           "text": "开始",
@@ -1535,7 +1575,8 @@
         {
           "text": "东西方",
           "pinyin": "dōng xī fāng",
-          "hanviet": "Đông Tây Phương"
+          "hanviet": "Đông Tây Phương",
+          "meaning_vi": "Đông và Tây"
         },
         {
           "text": "都",
@@ -1548,7 +1589,8 @@
         {
           "text": "引起轰动",
           "pinyin": "yǐn qǐ hōng dòng",
-          "hanviet": "Dẫn Khởi Oanh Động"
+          "hanviet": "Dẫn Khởi Oanh Động",
+          "meaning_vi": "Dẫn Khởi Oanh Động"
         },
         {
           "text": "。"
@@ -1566,7 +1608,8 @@
         {
           "text": "此书",
           "pinyin": "cǐ shū",
-          "hanviet": "Thử Thư"
+          "hanviet": "Thử Thư",
+          "meaning_vi": "cuốn sách này"
         },
         {
           "text": "在",
@@ -1582,7 +1625,7 @@
           "hanviet": "Trung Quốc",
           "hsk": 1,
           "word_id": "hsk1_610",
-          "meaning_vi": "trung Quốc"
+          "meaning_vi": "Trung Quốc"
         },
         {
           "text": "销售",
@@ -1649,7 +1692,7 @@
           "hanviet": "Trung Quốc",
           "hsk": 1,
           "word_id": "hsk1_610",
-          "meaning_vi": "trung Quốc"
+          "meaning_vi": "Trung Quốc"
         },
         {
           "text": "的",
@@ -1665,12 +1708,14 @@
         {
           "text": "万名",
           "pinyin": "wàn míng",
-          "hanviet": "Mặc Danh"
+          "hanviet": "Mặc Danh",
+          "meaning_vi": "Hàng ngàn cái tên"
         },
         {
           "text": "购书",
           "pinyin": "gòu shū",
-          "hanviet": "Cấu Thư"
+          "hanviet": "Cấu Thư",
+          "meaning_vi": "Cấu Thư"
         },
         {
           "text": "者",
@@ -1683,7 +1728,8 @@
         {
           "text": "致歉",
           "pinyin": "zhì qiàn",
-          "hanviet": "Trí Khiểm"
+          "hanviet": "Trí Khiểm",
+          "meaning_vi": "Trí Khiểm"
         },
         {
           "text": "。"
@@ -1701,7 +1747,8 @@
         {
           "text": "威廉",
           "pinyin": "wēi lián",
-          "hanviet": "Uy Liêm"
+          "hanviet": "Uy Liêm",
+          "meaning_vi": "William"
         },
         {
           "text": "·"
@@ -1709,12 +1756,14 @@
         {
           "text": "恩",
           "pinyin": "ēn",
-          "hanviet": "Ân"
+          "hanviet": "Ân",
+          "meaning_vi": "Vâng"
         },
         {
           "text": "道尔",
           "pinyin": "dào ěr",
-          "hanviet": "Đạo Nhĩ"
+          "hanviet": "Đạo Nhĩ",
+          "meaning_vi": "Đạo Nhĩ"
         },
         {
           "text": "说",
@@ -1733,7 +1782,8 @@
         {
           "text": "年时",
           "pinyin": "nián shí",
-          "hanviet": "Niên Thời"
+          "hanviet": "Niên Thời",
+          "meaning_vi": "Niên Thời"
         },
         {
           "text": "，"
@@ -1768,12 +1818,14 @@
         {
           "text": "峰值",
           "pinyin": "fēng zhí",
-          "hanviet": "Phong Trị"
+          "hanviet": "Phong Trị",
+          "meaning_vi": "đỉnh điểm"
         },
         {
           "text": "论",
           "pinyin": "lùn",
-          "hanviet": "Luận"
+          "hanviet": "Luận",
+          "meaning_vi": "Bật"
         },
         {
           "text": "”"
@@ -1816,7 +1868,8 @@
         {
           "text": "这一",
           "pinyin": "zhè yī",
-          "hanviet": "Giá Nhất"
+          "hanviet": "Giá Nhất",
+          "meaning_vi": "cái này"
         },
         {
           "text": "理论",
@@ -1853,12 +1906,14 @@
         {
           "text": "华盛顿",
           "pinyin": "huá shèng dùn",
-          "hanviet": "Hoa Thịnh Đốn"
+          "hanviet": "Hoa Thịnh Đốn",
+          "meaning_vi": "Washington"
         },
         {
           "text": "甘冒",
           "pinyin": "gān mào",
-          "hanviet": "Cam Mạo"
+          "hanviet": "Cam Mạo",
+          "meaning_vi": "Cam Mạo"
         },
         {
           "text": "巨大",
@@ -1887,7 +1942,8 @@
         {
           "text": "伊拉克",
           "pinyin": "yī lā kè",
-          "hanviet": "Y Lạp Khắc"
+          "hanviet": "Y Lạp Khắc",
+          "meaning_vi": "Irắc"
         },
         {
           "text": "战争",
@@ -1929,7 +1985,8 @@
         {
           "text": "我错",
           "pinyin": "wǒ cuò",
-          "hanviet": "Ngã Thác"
+          "hanviet": "Ngã Thác",
+          "meaning_vi": "Ngã Thác"
         },
         {
           "text": "了",
@@ -1964,12 +2021,14 @@
         {
           "text": "峰值",
           "pinyin": "fēng zhí",
-          "hanviet": "Phong Trị"
+          "hanviet": "Phong Trị",
+          "meaning_vi": "đỉnh điểm"
         },
         {
           "text": "论",
           "pinyin": "lùn",
-          "hanviet": "Luận"
+          "hanviet": "Luận",
+          "meaning_vi": "Bật"
         },
         {
           "text": "”"
@@ -1985,7 +2044,8 @@
         {
           "text": "基石",
           "pinyin": "jī shí",
-          "hanviet": "Cơ Thạch"
+          "hanviet": "Cơ Thạch",
+          "meaning_vi": "Cơ Thạch"
         },
         {
           "text": "—"
@@ -2012,7 +2072,8 @@
         {
           "text": "一种",
           "pinyin": "yī zhǒng",
-          "hanviet": "Nhất Chủng"
+          "hanviet": "Nhất Chủng",
+          "meaning_vi": "một loại"
         },
         {
           "text": "“"
@@ -2095,7 +2156,8 @@
         {
           "text": "一个多",
           "pinyin": "yí gè duō",
-          "hanviet": "Nhất Cá Đa"
+          "hanviet": "Nhất Cá Đa",
+          "meaning_vi": "Nhiều hơn một"
         },
         {
           "text": "世纪",
@@ -2135,7 +2197,8 @@
         {
           "text": "成因",
           "pinyin": "chéng yīn",
-          "hanviet": "Thành Nhân"
+          "hanviet": "Thành Nhân",
+          "meaning_vi": "nguyên nhân"
         },
         {
           "text": "理论",
@@ -2303,7 +2366,8 @@
         {
           "text": "一种",
           "pinyin": "yī zhǒng",
-          "hanviet": "Nhất Chủng"
+          "hanviet": "Nhất Chủng",
+          "meaning_vi": "một loại"
         },
         {
           "text": "“"
@@ -2357,12 +2421,14 @@
         {
           "text": "主",
           "pinyin": "zhǔ",
-          "hanviet": "Chủ"
+          "hanviet": "Chủ",
+          "meaning_vi": "Chúa ơi"
         },
         {
           "text": "基调",
           "pinyin": "jī diào",
-          "hanviet": "Cơ Điệu"
+          "hanviet": "Cơ Điệu",
+          "meaning_vi": "Cơ Điệu"
         },
         {
           "text": "，"
@@ -2370,12 +2436,14 @@
         {
           "text": "绝大多数",
           "pinyin": "jué dà duō shù",
-          "hanviet": "Tuyệt Đại Đa Sổ"
+          "hanviet": "Tuyệt Đại Đa Sổ",
+          "meaning_vi": "đại đa số"
         },
         {
           "text": "地质学家",
           "pinyin": "dì zhì xué jiā",
-          "hanviet": "Địa Chất Học Gia"
+          "hanviet": "Địa Chất Học Gia",
+          "meaning_vi": "nhà địa chất"
         },
         {
           "text": "认为",
@@ -2415,7 +2483,8 @@
         {
           "text": "生物体",
           "pinyin": "shēng wù tǐ",
-          "hanviet": "Sinh Vật Thể"
+          "hanviet": "Sinh Vật Thể",
+          "meaning_vi": "Sinh Vật Thể"
         },
         {
           "text": "的",
@@ -2455,7 +2524,8 @@
         {
           "text": "遗骸",
           "pinyin": "yí hái",
-          "hanviet": "Di Hài"
+          "hanviet": "Di Hài",
+          "meaning_vi": "Di Hài"
         },
         {
           "text": "，"
@@ -2495,7 +2565,8 @@
         {
           "text": "沉积",
           "pinyin": "chén jī",
-          "hanviet": "Trầm Tích"
+          "hanviet": "Trầm Tích",
+          "meaning_vi": "Trầm Tích"
         },
         {
           "text": "与",
@@ -2564,7 +2635,8 @@
         {
           "text": "论",
           "pinyin": "lùn",
-          "hanviet": "Luận"
+          "hanviet": "Luận",
+          "meaning_vi": "Bật"
         },
         {
           "text": "还",
@@ -2649,7 +2721,8 @@
         {
           "text": "某些",
           "pinyin": "mǒu xiē",
-          "hanviet": "Mỗ Ta"
+          "hanviet": "Mỗ Ta",
+          "meaning_vi": "nhất định"
         },
         {
           "text": "地区",
@@ -2700,7 +2773,8 @@
         {
           "text": "数百",
           "pinyin": "shù bǎi",
-          "hanviet": "Sổ Bách"
+          "hanviet": "Sổ Bách",
+          "meaning_vi": "Sổ Bách"
         },
         {
           "text": "上",
@@ -2713,7 +2787,8 @@
         {
           "text": "千万年",
           "pinyin": "qiān wàn nián",
-          "hanviet": "Thiên Mặc Niên"
+          "hanviet": "Thiên Mặc Niên",
+          "meaning_vi": "Thiên Mặc Niên"
         },
         {
           "text": "前",
@@ -2742,12 +2817,14 @@
         {
           "text": "遗骸",
           "pinyin": "yí hái",
-          "hanviet": "Di Hài"
+          "hanviet": "Di Hài",
+          "meaning_vi": "Di Hài"
         },
         {
           "text": "沉降",
           "pinyin": "chén jiàng",
-          "hanviet": "Trầm Giáng"
+          "hanviet": "Trầm Giáng",
+          "meaning_vi": "Trầm Giáng"
         },
         {
           "text": "区",
@@ -2773,7 +2850,8 @@
         {
           "text": "油价",
           "pinyin": "yóu jià",
-          "hanviet": "Dầu Giá"
+          "hanviet": "Dầu Giá",
+          "meaning_vi": "Dầu Giá"
         },
         {
           "text": "几乎",
@@ -2786,7 +2864,8 @@
         {
           "text": "每天",
           "pinyin": "měi tiān",
-          "hanviet": "Mỗi Thiên"
+          "hanviet": "Mỗi Thiên",
+          "meaning_vi": "mỗi ngày"
         },
         {
           "text": "都",
@@ -2815,7 +2894,8 @@
         {
           "text": "正是",
           "pinyin": "zhèng shì",
-          "hanviet": "Chính Thị"
+          "hanviet": "Chính Thị",
+          "meaning_vi": "Chính xác"
         },
         {
           "text": "基于",
@@ -2828,7 +2908,8 @@
         {
           "text": "此种",
           "pinyin": "cǐ zhǒng",
-          "hanviet": "Thử Chủng"
+          "hanviet": "Thử Chủng",
+          "meaning_vi": "Thử Chủng"
         },
         {
           "text": "理论",
@@ -2858,7 +2939,8 @@
         {
           "text": "美国",
           "pinyin": "měi guó",
-          "hanviet": "Mỹ Quốc"
+          "hanviet": "Mỹ Quốc",
+          "meaning_vi": "Hoa Kỳ"
         },
         {
           "text": "著名",
@@ -2879,12 +2961,14 @@
         {
           "text": "地质学家",
           "pinyin": "dì zhì xué jiā",
-          "hanviet": "Địa Chất Học Gia"
+          "hanviet": "Địa Chất Học Gia",
+          "meaning_vi": "nhà địa chất"
         },
         {
           "text": "哈伯",
           "pinyin": "hā bó",
-          "hanviet": "Ha Bá"
+          "hanviet": "Ha Bá",
+          "meaning_vi": "Harper"
         },
         {
           "text": "特",
@@ -2924,12 +3008,14 @@
         {
           "text": "峰值",
           "pinyin": "fēng zhí",
-          "hanviet": "Phong Trị"
+          "hanviet": "Phong Trị",
+          "meaning_vi": "đỉnh điểm"
         },
         {
           "text": "论",
           "pinyin": "lùn",
-          "hanviet": "Luận"
+          "hanviet": "Luận",
+          "meaning_vi": "Bật"
         },
         {
           "text": "”"
@@ -2950,7 +3036,8 @@
         {
           "text": "哈伯",
           "pinyin": "hā bó",
-          "hanviet": "Ha Bá"
+          "hanviet": "Ha Bá",
+          "meaning_vi": "Harper"
         },
         {
           "text": "特",
@@ -2990,12 +3077,14 @@
         {
           "text": "不可",
           "pinyin": "bù kě",
-          "hanviet": "Bất Khả"
+          "hanviet": "Bất Khả",
+          "meaning_vi": "Không"
         },
         {
           "text": "再生资源",
           "pinyin": "zài shēng zī yuán",
-          "hanviet": "Tái Sinh Tư Nguyên"
+          "hanviet": "Tái Sinh Tư Nguyên",
+          "meaning_vi": "Tái Sinh Tư Nguyên"
         },
         {
           "text": "，"
@@ -3067,7 +3156,8 @@
         {
           "text": "最高点",
           "pinyin": "zuì gāo diǎn",
-          "hanviet": "Tối Cao Điểm"
+          "hanviet": "Tối Cao Điểm",
+          "meaning_vi": "Tối Cao Điểm"
         },
         {
           "text": "；"
@@ -3083,12 +3173,14 @@
         {
           "text": "峰值",
           "pinyin": "fēng zhí",
-          "hanviet": "Phong Trị"
+          "hanviet": "Phong Trị",
+          "meaning_vi": "đỉnh điểm"
         },
         {
           "text": "后该",
           "pinyin": "hòu gāi",
-          "hanviet": "Hậu Cai"
+          "hanviet": "Hậu Cai",
+          "meaning_vi": "Hậu Cai"
         },
         {
           "text": "地区",
@@ -3133,7 +3225,8 @@
         {
           "text": "不可避免",
           "pinyin": "bù kě bì miǎn",
-          "hanviet": "Bất Khả Tị Miễn"
+          "hanviet": "Bất Khả Tị Miễn",
+          "meaning_vi": "không thể tránh khỏi"
         },
         {
           "text": "地",
@@ -3189,7 +3282,8 @@
         {
           "text": "哈伯",
           "pinyin": "hā bó",
-          "hanviet": "Ha Bá"
+          "hanviet": "Ha Bá",
+          "meaning_vi": "Harper"
         },
         {
           "text": "特",
@@ -3218,7 +3312,8 @@
         {
           "text": "美国",
           "pinyin": "měi guó",
-          "hanviet": "Mỹ Quốc"
+          "hanviet": "Mỹ Quốc",
+          "meaning_vi": "Hoa Kỳ"
         },
         {
           "text": "石油",
@@ -3288,7 +3383,8 @@
         {
           "text": "峰值",
           "pinyin": "fēng zhí",
-          "hanviet": "Phong Trị"
+          "hanviet": "Phong Trị",
+          "meaning_vi": "đỉnh điểm"
         },
         {
           "text": "，"
@@ -3304,7 +3400,8 @@
         {
           "text": "便会",
           "pinyin": "biàn huì",
-          "hanviet": "Tiện Hội"
+          "hanviet": "Tiện Hội",
+          "meaning_vi": "Sẽ"
         },
         {
           "text": "下降",
@@ -3338,7 +3435,8 @@
         {
           "text": "美国",
           "pinyin": "měi guó",
-          "hanviet": "Mỹ Quốc"
+          "hanviet": "Mỹ Quốc",
+          "meaning_vi": "Hoa Kỳ"
         },
         {
           "text": "的",
@@ -3351,12 +3449,14 @@
         {
           "text": "石油工业",
           "pinyin": "shí yóu gōng yè",
-          "hanviet": "Thạch Dầu Công Nghiệp"
+          "hanviet": "Thạch Dầu Công Nghiệp",
+          "meaning_vi": "Thạch Dầu Công Nghiệp"
         },
         {
           "text": "蒸蒸日上",
           "pinyin": "zhēng zhēng rì shàng",
-          "hanviet": "Chưng Chưng Nhật Thướng"
+          "hanviet": "Chưng Chưng Nhật Thướng",
+          "meaning_vi": "Chưng Chưng Nhật Thướng"
         },
         {
           "text": "，"
@@ -3404,12 +3504,14 @@
         {
           "text": "引来",
           "pinyin": "yǐn lái",
-          "hanviet": "Dẫn Lai"
+          "hanviet": "Dẫn Lai",
+          "meaning_vi": "Dẫn Lai"
         },
         {
           "text": "很多",
           "pinyin": "hěn duō",
-          "hanviet": "Ngận Đa"
+          "hanviet": "Ngận Đa",
+          "meaning_vi": "rất nhiều"
         },
         {
           "text": "的",
@@ -3502,7 +3604,8 @@
         {
           "text": "美国",
           "pinyin": "měi guó",
-          "hanviet": "Mỹ Quốc"
+          "hanviet": "Mỹ Quốc",
+          "meaning_vi": "Hoa Kỳ"
         },
         {
           "text": "的确",
@@ -3550,7 +3653,8 @@
         {
           "text": "峰值",
           "pinyin": "fēng zhí",
-          "hanviet": "Phong Trị"
+          "hanviet": "Phong Trị",
+          "meaning_vi": "đỉnh điểm"
         },
         {
           "text": "。"
@@ -3608,12 +3712,14 @@
         {
           "text": "峰值",
           "pinyin": "fēng zhí",
-          "hanviet": "Phong Trị"
+          "hanviet": "Phong Trị",
+          "meaning_vi": "đỉnh điểm"
         },
         {
           "text": "论",
           "pinyin": "lùn",
-          "hanviet": "Luận"
+          "hanviet": "Luận",
+          "meaning_vi": "Bật"
         },
         {
           "text": "的",
@@ -3626,7 +3732,8 @@
         {
           "text": "正确性",
           "pinyin": "zhèng què xìng",
-          "hanviet": "Chinh Xác Tính"
+          "hanviet": "Chinh Xác Tính",
+          "meaning_vi": "Chinh Xác Tính"
         },
         {
           "text": "。"
@@ -3644,17 +3751,20 @@
         {
           "text": "爱尔兰",
           "pinyin": "ài ěr lán",
-          "hanviet": "Ái Nhĩ Lan"
+          "hanviet": "Ái Nhĩ Lan",
+          "meaning_vi": "Ireland"
         },
         {
           "text": "地质学家",
           "pinyin": "dì zhì xué jiā",
-          "hanviet": "Địa Chất Học Gia"
+          "hanviet": "Địa Chất Học Gia",
+          "meaning_vi": "nhà địa chất"
         },
         {
           "text": "坎贝尔",
           "pinyin": "kǎn bèi ěr",
-          "hanviet": "Khảm Bối Nhĩ"
+          "hanviet": "Khảm Bối Nhĩ",
+          "meaning_vi": "Khảm Bối Nhĩ"
         },
         {
           "text": "继承",
@@ -3683,12 +3793,14 @@
         {
           "text": "峰值",
           "pinyin": "fēng zhí",
-          "hanviet": "Phong Trị"
+          "hanviet": "Phong Trị",
+          "meaning_vi": "đỉnh điểm"
         },
         {
           "text": "论",
           "pinyin": "lùn",
-          "hanviet": "Luận"
+          "hanviet": "Luận",
+          "meaning_vi": "Bật"
         },
         {
           "text": "。"
@@ -3720,7 +3832,8 @@
         {
           "text": "坎贝尔",
           "pinyin": "kǎn bèi ěr",
-          "hanviet": "Khảm Bối Nhĩ"
+          "hanviet": "Khảm Bối Nhĩ",
+          "meaning_vi": "Khảm Bối Nhĩ"
         },
         {
           "text": "与",
@@ -3733,17 +3846,20 @@
         {
           "text": "一位",
           "pinyin": "yī wèi",
-          "hanviet": "Nhất Vị"
+          "hanviet": "Nhất Vị",
+          "meaning_vi": "một người"
         },
         {
           "text": "法国",
           "pinyin": "fǎ guó",
-          "hanviet": "Pháp Quốc"
+          "hanviet": "Pháp Quốc",
+          "meaning_vi": "Pháp"
         },
         {
           "text": "地质学家",
           "pinyin": "dì zhì xué jiā",
-          "hanviet": "Địa Chất Học Gia"
+          "hanviet": "Địa Chất Học Gia",
+          "meaning_vi": "nhà địa chất"
         },
         {
           "text": "发表",
@@ -3813,7 +3929,8 @@
         {
           "text": "得出",
           "pinyin": "dé chū",
-          "hanviet": "Đắc Xuất"
+          "hanviet": "Đắc Xuất",
+          "meaning_vi": "Hãy đến"
         },
         {
           "text": "廉价",
@@ -3887,7 +4004,8 @@
         {
           "text": "近几年来",
           "pinyin": "jìn jǐ nián lái",
-          "hanviet": "Cận Kỷ Niên Lai"
+          "hanviet": "Cận Kỷ Niên Lai",
+          "meaning_vi": "Cận Kỷ Niên Lai"
         },
         {
           "text": "，"
@@ -3919,7 +4037,8 @@
         {
           "text": "高油价",
           "pinyin": "gāo yóu jià",
-          "hanviet": "Cao Dầu Giá"
+          "hanviet": "Cao Dầu Giá",
+          "meaning_vi": "Cao Dầu Giá"
         },
         {
           "text": "似乎",
@@ -3977,7 +4096,8 @@
         {
           "text": "威廉",
           "pinyin": "wēi lián",
-          "hanviet": "Uy Liêm"
+          "hanviet": "Uy Liêm",
+          "meaning_vi": "William"
         },
         {
           "text": "·"
@@ -3985,12 +4105,14 @@
         {
           "text": "恩",
           "pinyin": "ēn",
-          "hanviet": "Ân"
+          "hanviet": "Ân",
+          "meaning_vi": "Vâng"
         },
         {
           "text": "道尔",
           "pinyin": "dào ěr",
-          "hanviet": "Đạo Nhĩ"
+          "hanviet": "Đạo Nhĩ",
+          "meaning_vi": "Đạo Nhĩ"
         },
         {
           "text": "对",
@@ -4003,7 +4125,8 @@
         {
           "text": "两次",
           "pinyin": "liǎng cì",
-          "hanviet": "Lưỡng Thứ"
+          "hanviet": "Lưỡng Thứ",
+          "meaning_vi": "hai lần"
         },
         {
           "text": "成功",
@@ -4062,7 +4185,7 @@
           "hanviet": "Trung Quốc",
           "hsk": 1,
           "word_id": "hsk1_610",
-          "meaning_vi": "trung Quốc"
+          "meaning_vi": "Trung Quốc"
         },
         {
           "text": "读者",
@@ -4083,7 +4206,8 @@
         {
           "text": "三点",
           "pinyin": "sān diǎn",
-          "hanviet": "Tam Điểm"
+          "hanviet": "Tam Điểm",
+          "meaning_vi": "ba giờ"
         },
         {
           "text": "，"
@@ -4091,12 +4215,14 @@
         {
           "text": "一是",
           "pinyin": "yī shì",
-          "hanviet": "Nhất Thị"
+          "hanviet": "Nhất Thị",
+          "meaning_vi": "Một là"
         },
         {
           "text": "哈伯",
           "pinyin": "hā bó",
-          "hanviet": "Ha Bá"
+          "hanviet": "Ha Bá",
+          "meaning_vi": "Harper"
         },
         {
           "text": "特",
@@ -4160,7 +4286,8 @@
         {
           "text": "二是",
           "pinyin": "èr shì",
-          "hanviet": "Nhị Thị"
+          "hanviet": "Nhị Thị",
+          "meaning_vi": "Thứ hai là"
         },
         {
           "text": "20"
@@ -4187,12 +4314,14 @@
         {
           "text": "美国",
           "pinyin": "měi guó",
-          "hanviet": "Mỹ Quốc"
+          "hanviet": "Mỹ Quốc",
+          "meaning_vi": "Hoa Kỳ"
         },
         {
           "text": "产油量",
           "pinyin": "chǎn yóu liàng",
-          "hanviet": "Sản Dầu Lượng"
+          "hanviet": "Sản Dầu Lượng",
+          "meaning_vi": "Sản xuất dầu"
         },
         {
           "text": "开始",
@@ -4221,7 +4350,8 @@
         {
           "text": "不是",
           "pinyin": "bú shì",
-          "hanviet": "Bất Thị"
+          "hanviet": "Bất Thị",
+          "meaning_vi": "Không"
         },
         {
           "text": "因为",
@@ -4234,12 +4364,14 @@
         {
           "text": "美国",
           "pinyin": "měi guó",
-          "hanviet": "Mỹ Quốc"
+          "hanviet": "Mỹ Quốc",
+          "meaning_vi": "Hoa Kỳ"
         },
         {
           "text": "油田",
           "pinyin": "yóu tián",
-          "hanviet": "Dầu Điền"
+          "hanviet": "Dầu Điền",
+          "meaning_vi": "mỏ dầu"
         },
         {
           "text": "储量",
@@ -4263,7 +4395,8 @@
         {
           "text": "而是",
           "pinyin": "ér shì",
-          "hanviet": "Nhi Thị"
+          "hanviet": "Nhi Thị",
+          "meaning_vi": "đúng hơn"
         },
         {
           "text": "因为",
@@ -4276,7 +4409,8 @@
         {
           "text": "沙特",
           "pinyin": "shā tè",
-          "hanviet": "Sa Đặc"
+          "hanviet": "Sa Đặc",
+          "meaning_vi": "Ả Rập Saudi"
         },
         {
           "text": "等",
@@ -4337,7 +4471,8 @@
         {
           "text": "油田",
           "pinyin": "yóu tián",
-          "hanviet": "Dầu Điền"
+          "hanviet": "Dầu Điền",
+          "meaning_vi": "mỏ dầu"
         },
         {
           "text": "，"
@@ -4377,7 +4512,8 @@
         {
           "text": "低廉",
           "pinyin": "dī lián",
-          "hanviet": "Đê Liêm"
+          "hanviet": "Đê Liêm",
+          "meaning_vi": "giá rẻ"
         },
         {
           "text": "，"
@@ -4385,7 +4521,8 @@
         {
           "text": "美国",
           "pinyin": "měi guó",
-          "hanviet": "Mỹ Quốc"
+          "hanviet": "Mỹ Quốc",
+          "meaning_vi": "Hoa Kỳ"
         },
         {
           "text": "的",
@@ -4446,12 +4583,14 @@
         {
           "text": "中东地区",
           "pinyin": "zhōng dōng dì qū",
-          "hanviet": "Trung Đông Địa Âu"
+          "hanviet": "Trung Đông Địa Âu",
+          "meaning_vi": "Trung Đông"
         },
         {
           "text": "圈地",
           "pinyin": "quān dì",
-          "hanviet": "Khuyên Địa"
+          "hanviet": "Khuyên Địa",
+          "meaning_vi": "Khuyên Địa"
         },
         {
           "text": "开采",
@@ -4483,7 +4622,8 @@
         {
           "text": "中东",
           "pinyin": "zhōng dōng",
-          "hanviet": "Trung Đông"
+          "hanviet": "Trung Đông",
+          "meaning_vi": "trung đông"
         },
         {
           "text": "的",
@@ -4512,7 +4652,8 @@
         {
           "text": "原油",
           "pinyin": "yuán yóu",
-          "hanviet": "Nguyên Dầu"
+          "hanviet": "Nguyên Dầu",
+          "meaning_vi": "Nguyên Dầu"
         },
         {
           "text": "向",
@@ -4525,7 +4666,8 @@
         {
           "text": "美国市场",
           "pinyin": "měi guó shì chǎng",
-          "hanviet": "Mỹ Quốc Thị Tràng"
+          "hanviet": "Mỹ Quốc Thị Tràng",
+          "meaning_vi": "Mỹ Quốc Thị Tràng"
         },
         {
           "text": "倾销",
@@ -4557,7 +4699,8 @@
         {
           "text": "美国",
           "pinyin": "měi guó",
-          "hanviet": "Mỹ Quốc"
+          "hanviet": "Mỹ Quốc",
+          "meaning_vi": "Hoa Kỳ"
         },
         {
           "text": "本土",
@@ -4570,12 +4713,14 @@
         {
           "text": "很多",
           "pinyin": "hěn duō",
-          "hanviet": "Ngận Đa"
+          "hanviet": "Ngận Đa",
+          "meaning_vi": "rất nhiều"
         },
         {
           "text": "中小",
           "pinyin": "zhōng xiǎo",
-          "hanviet": "Trung Tiểu"
+          "hanviet": "Trung Tiểu",
+          "meaning_vi": "Nhỏ và vừa"
         },
         {
           "text": "石油",
@@ -4596,7 +4741,8 @@
         {
           "text": "停产",
           "pinyin": "tíng chǎn",
-          "hanviet": "Đình Sản"
+          "hanviet": "Đình Sản",
+          "meaning_vi": "Đình Sản"
         },
         {
           "text": "；"
@@ -4604,12 +4750,14 @@
         {
           "text": "三是",
           "pinyin": "sān shì",
-          "hanviet": "Tam Thị"
+          "hanviet": "Tam Thị",
+          "meaning_vi": "Thứ ba là"
         },
         {
           "text": "小布什",
           "pinyin": "xiǎo bù shén",
-          "hanviet": "Tiểu Bố Thập"
+          "hanviet": "Tiểu Bố Thập",
+          "meaning_vi": "Tiểu Bố Thập"
         },
         {
           "text": "政府",
@@ -4657,7 +4805,8 @@
         {
           "text": "石油价格",
           "pinyin": "shí yóu jià gé",
-          "hanviet": "Thạch Dầu Giá Cách"
+          "hanviet": "Thạch Dầu Giá Cách",
+          "meaning_vi": "Thạch Dầu Giá Cách"
         },
         {
           "text": "、"
@@ -4697,7 +4846,8 @@
         {
           "text": "美元",
           "pinyin": "měi yuán",
-          "hanviet": "Mỹ Nguyên"
+          "hanviet": "Mỹ Nguyên",
+          "meaning_vi": "đô la Mỹ"
         },
         {
           "text": "的",
@@ -4742,7 +4892,8 @@
         {
           "text": "美元",
           "pinyin": "měi yuán",
-          "hanviet": "Mỹ Nguyên"
+          "hanviet": "Mỹ Nguyên",
+          "meaning_vi": "đô la Mỹ"
         },
         {
           "text": "的",
@@ -4755,7 +4906,8 @@
         {
           "text": "主导地位",
           "pinyin": "zhǔ dǎo dì wèi",
-          "hanviet": "Chủ Đạo Địa Vị"
+          "hanviet": "Chủ Đạo Địa Vị",
+          "meaning_vi": "Sự thống trị"
         },
         {
           "text": "，"
@@ -4763,7 +4915,8 @@
         {
           "text": "美国",
           "pinyin": "měi guó",
-          "hanviet": "Mỹ Quốc"
+          "hanviet": "Mỹ Quốc",
+          "meaning_vi": "Hoa Kỳ"
         },
         {
           "text": "重新",
@@ -4776,7 +4929,8 @@
         {
           "text": "抛出",
           "pinyin": "pāo chū",
-          "hanviet": "Phao Xuất"
+          "hanviet": "Phao Xuất",
+          "meaning_vi": "Phao Xuất"
         },
         {
           "text": "了",
@@ -4805,12 +4959,14 @@
         {
           "text": "地质学家",
           "pinyin": "dì zhì xué jiā",
-          "hanviet": "Địa Chất Học Gia"
+          "hanviet": "Địa Chất Học Gia",
+          "meaning_vi": "nhà địa chất"
         },
         {
           "text": "哈伯",
           "pinyin": "hā bó",
-          "hanviet": "Ha Bá"
+          "hanviet": "Ha Bá",
+          "meaning_vi": "Harper"
         },
         {
           "text": "特",
@@ -4842,7 +4998,8 @@
         {
           "text": "峰值",
           "pinyin": "fēng zhí",
-          "hanviet": "Phong Trị"
+          "hanviet": "Phong Trị",
+          "meaning_vi": "đỉnh điểm"
         },
         {
           "text": "理论",
@@ -4901,7 +5058,8 @@
         {
           "text": "石油价格",
           "pinyin": "shí yóu jià gé",
-          "hanviet": "Thạch Dầu Giá Cách"
+          "hanviet": "Thạch Dầu Giá Cách",
+          "meaning_vi": "Thạch Dầu Giá Cách"
         },
         {
           "text": "的",
@@ -4933,7 +5091,8 @@
         {
           "text": "由头",
           "pinyin": "yóu tou",
-          "hanviet": "Do Đầu"
+          "hanviet": "Do Đầu",
+          "meaning_vi": "Do Đầu"
         },
         {
           "text": "”"
@@ -4978,7 +5137,8 @@
         {
           "text": "成因",
           "pinyin": "chéng yīn",
-          "hanviet": "Thành Nhân"
+          "hanviet": "Thành Nhân",
+          "meaning_vi": "nguyên nhân"
         },
         {
           "text": "，"
@@ -4989,7 +5149,8 @@
         {
           "text": "土卫六",
           "pinyin": "tǔ wèi liù",
-          "hanviet": "Thổ Vệ Lục"
+          "hanviet": "Thổ Vệ Lục",
+          "meaning_vi": "Thổ Vệ Lục"
         },
         {
           "text": "”"
@@ -5013,7 +5174,8 @@
         {
           "text": "有机物",
           "pinyin": "yǒu jī wù",
-          "hanviet": "Hữu Cơ Vật"
+          "hanviet": "Hữu Cơ Vật",
+          "meaning_vi": "chất hữu cơ"
         },
         {
           "text": "早",
@@ -5056,7 +5218,8 @@
         {
           "text": "周期律",
           "pinyin": "zhōu qī lǜ",
-          "hanviet": "Chu Kỳ Luật"
+          "hanviet": "Chu Kỳ Luật",
+          "meaning_vi": "Chu Kỳ Luật"
         },
         {
           "text": "的",
@@ -5069,12 +5232,14 @@
         {
           "text": "发现者",
           "pinyin": "fā xiàn zhě",
-          "hanviet": "Phát Hiện Giả"
+          "hanviet": "Phát Hiện Giả",
+          "meaning_vi": "Phát Hiện Giả"
         },
         {
           "text": "门捷列夫",
           "pinyin": "mén jié liè fū",
-          "hanviet": "Môn Tiệp Liệt Phu"
+          "hanviet": "Môn Tiệp Liệt Phu",
+          "meaning_vi": "Môn Tiệp Liệt Phu"
         },
         {
           "text": "在",
@@ -5138,7 +5303,8 @@
         {
           "text": "碳化物",
           "pinyin": "tàn huà wù",
-          "hanviet": "Thán Hoa Vật"
+          "hanviet": "Thán Hoa Vật",
+          "meaning_vi": "Thán Hoa Vật"
         },
         {
           "text": "能",
@@ -5159,7 +5325,8 @@
         {
           "text": "高温高压",
           "pinyin": "gāo wēn gāo yā",
-          "hanviet": "Cao Ôn Cao Áp"
+          "hanviet": "Cao Ôn Cao Áp",
+          "meaning_vi": "Cao Ôn Cao Áp"
         },
         {
           "text": "下",
@@ -5180,7 +5347,8 @@
         {
           "text": "化学反应",
           "pinyin": "huà xué fǎn yìng",
-          "hanviet": "Hoa Học Phản Ưng"
+          "hanviet": "Hoa Học Phản Ưng",
+          "meaning_vi": "Hoa Học Phản Ưng"
         },
         {
           "text": "，"
@@ -5220,7 +5388,8 @@
         {
           "text": "碳氢化合物",
           "pinyin": "tàn qīng huà hé wù",
-          "hanviet": "Thán Khinh Hoa Cáp Vật"
+          "hanviet": "Thán Khinh Hoa Cáp Vật",
+          "meaning_vi": "hiđrocacbon"
         },
         {
           "text": "。"
@@ -5254,7 +5423,8 @@
         {
           "text": "一种",
           "pinyin": "yī zhǒng",
-          "hanviet": "Nhất Chủng"
+          "hanviet": "Nhất Chủng",
+          "meaning_vi": "một loại"
         },
         {
           "text": "假设",
@@ -5326,7 +5496,8 @@
         {
           "text": "碳",
           "pinyin": "tàn",
-          "hanviet": "Thán"
+          "hanviet": "Thán",
+          "meaning_vi": "Thán"
         },
         {
           "text": "，"
@@ -5406,7 +5577,8 @@
         {
           "text": "碳化铁",
           "pinyin": "tàn huà tiě",
-          "hanviet": "Thán Hoa Thiết"
+          "hanviet": "Thán Hoa Thiết",
+          "meaning_vi": "Thán Hoa Thiết"
         },
         {
           "text": "，"
@@ -5438,7 +5610,8 @@
         {
           "text": "过热",
           "pinyin": "guò rè",
-          "hanviet": "Quá Nhiệt"
+          "hanviet": "Quá Nhiệt",
+          "meaning_vi": "Quá Nhiệt"
         },
         {
           "text": "的",
@@ -5470,7 +5643,8 @@
         {
           "text": "遂",
           "pinyin": "suì",
-          "hanviet": "Toại"
+          "hanviet": "Toại",
+          "meaning_vi": "Sau đó"
         },
         {
           "text": "生成",
@@ -5483,7 +5657,8 @@
         {
           "text": "碳氢化合物",
           "pinyin": "tàn qīng huà hé wù",
-          "hanviet": "Thán Khinh Hoa Cáp Vật"
+          "hanviet": "Thán Khinh Hoa Cáp Vật",
+          "meaning_vi": "hiđrocacbon"
         },
         {
           "text": "；"
@@ -5499,7 +5674,8 @@
         {
           "text": "碳氢化合物",
           "pinyin": "tàn qīng huà hé wù",
-          "hanviet": "Thán Khinh Hoa Cáp Vật"
+          "hanviet": "Thán Khinh Hoa Cáp Vật",
+          "meaning_vi": "hiđrocacbon"
         },
         {
           "text": "沿",
@@ -5512,7 +5688,8 @@
         {
           "text": "地壳",
           "pinyin": "dì qiào",
-          "hanviet": "Địa Xác"
+          "hanviet": "Địa Xác",
+          "meaning_vi": "Địa Xác"
         },
         {
           "text": "裂缝",
@@ -5565,7 +5742,8 @@
         {
           "text": "冷凝",
           "pinyin": "lěng níng",
-          "hanviet": "Lạnh Ngưng"
+          "hanviet": "Lạnh Ngưng",
+          "meaning_vi": "Lạnh Ngưng"
         },
         {
           "text": "，"
@@ -5618,7 +5796,8 @@
         {
           "text": "门捷列夫",
           "pinyin": "mén jié liè fū",
-          "hanviet": "Môn Tiệp Liệt Phu"
+          "hanviet": "Môn Tiệp Liệt Phu",
+          "meaning_vi": "Môn Tiệp Liệt Phu"
         },
         {
           "text": "的",
@@ -5684,12 +5863,14 @@
         {
           "text": "很快",
           "pinyin": "hěn kuài",
-          "hanviet": "Ngận Khoái"
+          "hanviet": "Ngận Khoái",
+          "meaning_vi": "sớm thôi"
         },
         {
           "text": "人们",
           "pinyin": "rén men",
-          "hanviet": "Nhân Môn"
+          "hanviet": "Nhân Môn",
+          "meaning_vi": "mọi người"
         },
         {
           "text": "就",
@@ -5718,7 +5899,8 @@
         {
           "text": "一个",
           "pinyin": "yí gè",
-          "hanviet": "Nhất Cá"
+          "hanviet": "Nhất Cá",
+          "meaning_vi": "một"
         },
         {
           "text": "致命",
@@ -5817,7 +5999,8 @@
         {
           "text": "根本无法",
           "pinyin": "gēn běn wú fǎ",
-          "hanviet": "Căn Bản Vô Pháp"
+          "hanviet": "Căn Bản Vô Pháp",
+          "meaning_vi": "Căn Bản Vô Pháp"
         },
         {
           "text": "到达",
@@ -5886,7 +6069,8 @@
         {
           "text": "碳化铁",
           "pinyin": "tàn huà tiě",
-          "hanviet": "Thán Hoa Thiết"
+          "hanviet": "Thán Hoa Thiết",
+          "meaning_vi": "Thán Hoa Thiết"
         },
         {
           "text": "，"
@@ -5910,7 +6094,8 @@
         {
           "text": "碳化铁",
           "pinyin": "tàn huà tiě",
-          "hanviet": "Thán Hoa Thiết"
+          "hanviet": "Thán Hoa Thiết",
+          "meaning_vi": "Thán Hoa Thiết"
         },
         {
           "text": "的",
@@ -5950,7 +6135,8 @@
         {
           "text": "不能",
           "pinyin": "bù néng",
-          "hanviet": "Bất Năng"
+          "hanviet": "Bất Năng",
+          "meaning_vi": "không thể"
         },
         {
           "text": "形成",
@@ -5987,7 +6173,8 @@
         {
           "text": "化学成分",
           "pinyin": "huà xué chéng fèn",
-          "hanviet": "Hoa Học Thành Phân"
+          "hanviet": "Hoa Học Thành Phân",
+          "meaning_vi": "Hoa Học Thành Phân"
         },
         {
           "text": "。"
@@ -6019,7 +6206,8 @@
         {
           "text": "俄国",
           "pinyin": "é guó",
-          "hanviet": "Nga Quốc"
+          "hanviet": "Nga Quốc",
+          "meaning_vi": "Nga"
         },
         {
           "text": "的",
@@ -6032,12 +6220,14 @@
         {
           "text": "索柯",
           "pinyin": "suǒ kē",
-          "hanviet": "Sách Kha"
+          "hanviet": "Sách Kha",
+          "meaning_vi": "Sách Kha"
         },
         {
           "text": "洛夫",
           "pinyin": "luò fū",
-          "hanviet": "Lạc Phu"
+          "hanviet": "Lạc Phu",
+          "meaning_vi": "Lạc Phu"
         },
         {
           "text": "提出",
@@ -6066,7 +6256,8 @@
         {
           "text": "成因",
           "pinyin": "chéng yīn",
-          "hanviet": "Thành Nhân"
+          "hanviet": "Thành Nhân",
+          "meaning_vi": "nguyên nhân"
         },
         {
           "text": "的",
@@ -6157,7 +6348,8 @@
         {
           "text": "伊始",
           "pinyin": "yī shǐ",
-          "hanviet": "Y Thuỷ"
+          "hanviet": "Y Thuỷ",
+          "meaning_vi": "Bắt đầu"
         },
         {
           "text": "尚",
@@ -6178,7 +6370,8 @@
         {
           "text": "熔融",
           "pinyin": "róng róng",
-          "hanviet": "Dung Dung"
+          "hanviet": "Dung Dung",
+          "meaning_vi": "Dung Dung"
         },
         {
           "text": "的",
@@ -6191,7 +6384,8 @@
         {
           "text": "火球",
           "pinyin": "huǒ qiú",
-          "hanviet": "Hỏa Cầu"
+          "hanviet": "Hỏa Cầu",
+          "meaning_vi": "Hỏa Cầu"
         },
         {
           "text": "状态",
@@ -6263,7 +6457,8 @@
         {
           "text": "碳氢化合物",
           "pinyin": "tàn qīng huà hé wù",
-          "hanviet": "Thán Khinh Hoa Cáp Vật"
+          "hanviet": "Thán Khinh Hoa Cáp Vật",
+          "meaning_vi": "hiđrocacbon"
         },
         {
           "text": "，"
@@ -6330,7 +6525,8 @@
         {
           "text": "碳氢化合物",
           "pinyin": "tàn qīng huà hé wù",
-          "hanviet": "Thán Khinh Hoa Cáp Vật"
+          "hanviet": "Thán Khinh Hoa Cáp Vật",
+          "meaning_vi": "hiđrocacbon"
         },
         {
           "text": "逐渐",
@@ -6343,7 +6539,8 @@
         {
           "text": "冷凝",
           "pinyin": "lěng níng",
-          "hanviet": "Lạnh Ngưng"
+          "hanviet": "Lạnh Ngưng",
+          "meaning_vi": "Lạnh Ngưng"
         },
         {
           "text": "埋藏",
@@ -6364,7 +6561,8 @@
         {
           "text": "地壳",
           "pinyin": "dì qiào",
-          "hanviet": "Địa Xác"
+          "hanviet": "Địa Xác",
+          "meaning_vi": "Địa Xác"
         },
         {
           "text": "中",
@@ -6458,7 +6656,8 @@
         {
           "text": "天文学家",
           "pinyin": "tiān wén xué jiā",
-          "hanviet": "Thiên Văn Học Gia"
+          "hanviet": "Thiên Văn Học Gia",
+          "meaning_vi": "nhà thiên văn học"
         },
         {
           "text": "利用",
@@ -6471,7 +6670,8 @@
         {
           "text": "光谱分析",
           "pinyin": "guāng pǔ fēn xī",
-          "hanviet": "Quang Phả Phân Tích"
+          "hanviet": "Quang Phả Phân Tích",
+          "meaning_vi": "Quang Phả Phân Tích"
         },
         {
           "text": "，"
@@ -6631,7 +6831,8 @@
         {
           "text": "碳氢化合物",
           "pinyin": "tàn qīng huà hé wù",
-          "hanviet": "Thán Khinh Hoa Cáp Vật"
+          "hanviet": "Thán Khinh Hoa Cáp Vật",
+          "meaning_vi": "hiđrocacbon"
         },
         {
           "text": "不仅",
@@ -6644,7 +6845,8 @@
         {
           "text": "见于",
           "pinyin": "jiàn yú",
-          "hanviet": "Kiến Vu"
+          "hanviet": "Kiến Vu",
+          "meaning_vi": "nhìn thấy trong"
         },
         {
           "text": "一些",
@@ -6697,7 +6899,8 @@
         {
           "text": "彗星",
           "pinyin": "huì xīng",
-          "hanviet": "Tuệ Tinh"
+          "hanviet": "Tuệ Tinh",
+          "meaning_vi": "sao chổi"
         },
         {
           "text": "的",
@@ -6710,7 +6913,8 @@
         {
           "text": "彗核",
           "pinyin": "huì hé",
-          "hanviet": "Tuệ Hạch"
+          "hanviet": "Tuệ Hạch",
+          "meaning_vi": "Tuệ Hạch"
         },
         {
           "text": "中",
@@ -6782,7 +6986,8 @@
         {
           "text": "分子",
           "pinyin": "fèn zǐ",
-          "hanviet": "Phân Tử"
+          "hanviet": "Phân Tử",
+          "meaning_vi": "phân tử"
         },
         {
           "text": "云",
@@ -6835,7 +7040,8 @@
         {
           "text": "人们",
           "pinyin": "rén men",
-          "hanviet": "Nhân Môn"
+          "hanviet": "Nhân Môn",
+          "meaning_vi": "mọi người"
         },
         {
           "text": "还",
@@ -6848,7 +7054,8 @@
         {
           "text": "找到",
           "pinyin": "zhǎo dào",
-          "hanviet": "Trảo Đáo"
+          "hanviet": "Trảo Đáo",
+          "meaning_vi": "tìm thấy"
         },
         {
           "text": "了",
@@ -6885,7 +7092,8 @@
         {
           "text": "有机物",
           "pinyin": "yǒu jī wù",
-          "hanviet": "Hữu Cơ Vật"
+          "hanviet": "Hữu Cơ Vật",
+          "meaning_vi": "chất hữu cơ"
         },
         {
           "text": "，"
@@ -6997,7 +7205,8 @@
         {
           "text": "有机物",
           "pinyin": "yǒu jī wù",
-          "hanviet": "Hữu Cơ Vật"
+          "hanviet": "Hữu Cơ Vật",
+          "meaning_vi": "chất hữu cơ"
         },
         {
           "text": "完全",
@@ -7026,7 +7235,8 @@
         {
           "text": "非生物",
           "pinyin": "fēi shēng wù",
-          "hanviet": "Phi Sinh Vật"
+          "hanviet": "Phi Sinh Vật",
+          "meaning_vi": "Phi Sinh Vật"
         },
         {
           "text": "途径",
@@ -7121,17 +7331,20 @@
         {
           "text": "美国康奈尔大学",
           "pinyin": "měi guó kāng nài ěr dà xué",
-          "hanviet": "Mỹ Quốc Khang Nại Nhĩ Đại Học"
+          "hanviet": "Mỹ Quốc Khang Nại Nhĩ Đại Học",
+          "meaning_vi": "Mỹ Quốc Khang Nại Nhĩ Đại Học"
         },
         {
           "text": "天文学家",
           "pinyin": "tiān wén xué jiā",
-          "hanviet": "Thiên Văn Học Gia"
+          "hanviet": "Thiên Văn Học Gia",
+          "meaning_vi": "nhà thiên văn học"
         },
         {
           "text": "高尔德",
           "pinyin": "gāo ěr dé",
-          "hanviet": "Cao Nhĩ Đức"
+          "hanviet": "Cao Nhĩ Đức",
+          "meaning_vi": "Cao Nhĩ Đức"
         },
         {
           "text": "认为",
@@ -7187,7 +7400,8 @@
         {
           "text": "来源于",
           "pinyin": "lái yuán yú",
-          "hanviet": "Lai Nguyên Vu"
+          "hanviet": "Lai Nguyên Vu",
+          "meaning_vi": "Từ"
         },
         {
           "text": "宇宙",
@@ -7229,7 +7443,8 @@
         {
           "text": "油矿",
           "pinyin": "yóu kuàng",
-          "hanviet": "Dầu Khoáng"
+          "hanviet": "Dầu Khoáng",
+          "meaning_vi": "Dầu Khoáng"
         },
         {
           "text": "的",
@@ -7274,17 +7489,20 @@
         {
           "text": "沉积",
           "pinyin": "chén jī",
-          "hanviet": "Trầm Tích"
+          "hanviet": "Trầm Tích",
+          "meaning_vi": "Trầm Tích"
         },
         {
           "text": "矿体",
           "pinyin": "kuàng tǐ",
-          "hanviet": "Khoáng Thể"
+          "hanviet": "Khoáng Thể",
+          "meaning_vi": "Khoáng Thể"
         },
         {
           "text": "大得多",
           "pinyin": "dà dé duō",
-          "hanviet": "Đại Đắc Đa"
+          "hanviet": "Đại Đắc Đa",
+          "meaning_vi": "Đại Đắc Đa"
         },
         {
           "text": "，"
@@ -7316,7 +7534,8 @@
         {
           "text": "油气",
           "pinyin": "yóu qì",
-          "hanviet": "Dầu Khí"
+          "hanviet": "Dầu Khí",
+          "meaning_vi": "Dầu Khí"
         },
         {
           "text": "储量",
@@ -7401,17 +7620,20 @@
         {
           "text": "高出",
           "pinyin": "gāo chū",
-          "hanviet": "Cao Xuất"
+          "hanviet": "Cao Xuất",
+          "meaning_vi": "Cao Xuất"
         },
         {
           "text": "数百倍",
           "pinyin": "shù bǎi bèi",
-          "hanviet": "Sổ Bách Bội"
+          "hanviet": "Sổ Bách Bội",
+          "meaning_vi": "Sổ Bách Bội"
         },
         {
           "text": "之多",
           "pinyin": "zhī duō",
-          "hanviet": "Chi Đa"
+          "hanviet": "Chi Đa",
+          "meaning_vi": "Rất nhiều"
         },
         {
           "text": "；"
@@ -7435,7 +7657,8 @@
         {
           "text": "无法说明",
           "pinyin": "wú fǎ shuō míng",
-          "hanviet": "Vô Pháp Thuyết Minh"
+          "hanviet": "Vô Pháp Thuyết Minh",
+          "meaning_vi": "Vô Pháp Thuyết Minh"
         },
         {
           "text": "世界",
@@ -7448,7 +7671,8 @@
         {
           "text": "油田",
           "pinyin": "yóu tián",
-          "hanviet": "Dầu Điền"
+          "hanviet": "Dầu Điền",
+          "meaning_vi": "mỏ dầu"
         },
         {
           "text": "分布",
@@ -7461,7 +7685,8 @@
         {
           "text": "高度集中",
           "pinyin": "gāo dù jí zhōng",
-          "hanviet": "Cao Độ Tập Trung"
+          "hanviet": "Cao Độ Tập Trung",
+          "meaning_vi": "Cao Độ Tập Trung"
         },
         {
           "text": "在",
@@ -7474,7 +7699,8 @@
         {
           "text": "中东地区",
           "pinyin": "zhōng dōng dì qū",
-          "hanviet": "Trung Đông Địa Âu"
+          "hanviet": "Trung Đông Địa Âu",
+          "meaning_vi": "Trung Đông"
         },
         {
           "text": "。"
@@ -7543,7 +7769,8 @@
         {
           "text": "油气田",
           "pinyin": "yóu qì tián",
-          "hanviet": "Dầu Khí Điền"
+          "hanviet": "Dầu Khí Điền",
+          "meaning_vi": "Dầu Khí Điền"
         },
         {
           "text": "中",
@@ -7580,7 +7807,8 @@
         {
           "text": "氦",
           "pinyin": "hài",
-          "hanviet": "Hợi"
+          "hanviet": "Hợi",
+          "meaning_vi": "Heli"
         },
         {
           "text": "，"
@@ -7612,7 +7840,8 @@
         {
           "text": "氦",
           "pinyin": "hài",
-          "hanviet": "Hợi"
+          "hanviet": "Hợi",
+          "meaning_vi": "Heli"
         },
         {
           "text": "的",
@@ -7625,12 +7854,14 @@
         {
           "text": "浓集",
           "pinyin": "nóng jí",
-          "hanviet": "Nồng Tập"
+          "hanviet": "Nồng Tập",
+          "meaning_vi": "Nồng Tập"
         },
         {
           "text": "不起",
           "pinyin": "bù qǐ",
-          "hanviet": "Bất Khởi"
+          "hanviet": "Bất Khởi",
+          "meaning_vi": "Không đủ khả năng"
         },
         {
           "text": "任何",
@@ -7672,7 +7903,8 @@
         {
           "text": "氦",
           "pinyin": "hài",
-          "hanviet": "Hợi"
+          "hanviet": "Hợi",
+          "meaning_vi": "Heli"
         },
         {
           "text": "是",
@@ -7701,17 +7933,20 @@
         {
           "text": "丰度",
           "pinyin": "fēng dù",
-          "hanviet": "Phong Độ"
+          "hanviet": "Phong Độ",
+          "meaning_vi": "Sự phong phú"
         },
         {
           "text": "仅次于",
           "pinyin": "jǐn cì yú",
-          "hanviet": "Cận Thứ Vu"
+          "hanviet": "Cận Thứ Vu",
+          "meaning_vi": "chỉ đứng sau"
         },
         {
           "text": "氢",
           "pinyin": "qīng",
-          "hanviet": "Khinh"
+          "hanviet": "Khinh",
+          "meaning_vi": "Âm Hán-Việt: Khinh"
         },
         {
           "text": "的",
@@ -7724,7 +7959,8 @@
         {
           "text": "一种",
           "pinyin": "yī zhǒng",
-          "hanviet": "Nhất Chủng"
+          "hanviet": "Nhất Chủng",
+          "meaning_vi": "một loại"
         },
         {
           "text": "元素",
@@ -7748,12 +7984,14 @@
         {
           "text": "星云",
           "pinyin": "xīng yún",
-          "hanviet": "Tinh Vân"
+          "hanviet": "Tinh Vân",
+          "meaning_vi": "Tinh Vân"
         },
         {
           "text": "体中",
           "pinyin": "tǐ zhōng",
-          "hanviet": "Thể Trung"
+          "hanviet": "Thể Trung",
+          "meaning_vi": "trong cơ thể"
         },
         {
           "text": "存在",
@@ -7830,7 +8068,8 @@
         {
           "text": "氦",
           "pinyin": "hài",
-          "hanviet": "Hợi"
+          "hanviet": "Hợi",
+          "meaning_vi": "Heli"
         },
         {
           "text": "元素",
@@ -7867,12 +8106,14 @@
         {
           "text": "却是",
           "pinyin": "què shì",
-          "hanviet": "Khước Thị"
+          "hanviet": "Khước Thị",
+          "meaning_vi": "Nhưng nó là"
         },
         {
           "text": "极低",
           "pinyin": "jí dī",
-          "hanviet": "Cực Đê"
+          "hanviet": "Cực Đê",
+          "meaning_vi": "Cực Đê"
         },
         {
           "text": "的",
@@ -7888,12 +8129,14 @@
         {
           "text": "人们",
           "pinyin": "rén men",
-          "hanviet": "Nhân Môn"
+          "hanviet": "Nhân Môn",
+          "meaning_vi": "mọi người"
         },
         {
           "text": "最早",
           "pinyin": "zuì zǎo",
-          "hanviet": "Tối Tảo"
+          "hanviet": "Tối Tảo",
+          "meaning_vi": "sớm nhất"
         },
         {
           "text": "发现",
@@ -7906,7 +8149,8 @@
         {
           "text": "氦",
           "pinyin": "hài",
-          "hanviet": "Hợi"
+          "hanviet": "Hợi",
+          "meaning_vi": "Heli"
         },
         {
           "text": "元素",
@@ -7922,7 +8166,8 @@
         {
           "text": "不是",
           "pinyin": "bú shì",
-          "hanviet": "Bất Thị"
+          "hanviet": "Bất Thị",
+          "meaning_vi": "Không"
         },
         {
           "text": "在",
@@ -7954,7 +8199,8 @@
         {
           "text": "而是",
           "pinyin": "ér shì",
-          "hanviet": "Nhi Thị"
+          "hanviet": "Nhi Thị",
+          "meaning_vi": "đúng hơn"
         },
         {
           "text": "在",
@@ -8013,7 +8259,8 @@
         {
           "text": "人们",
           "pinyin": "rén men",
-          "hanviet": "Nhân Môn"
+          "hanviet": "Nhân Môn",
+          "meaning_vi": "mọi người"
         },
         {
           "text": "在",
@@ -8034,7 +8281,8 @@
         {
           "text": "油气田",
           "pinyin": "yóu qì tián",
-          "hanviet": "Dầu Khí Điền"
+          "hanviet": "Dầu Khí Điền",
+          "meaning_vi": "Dầu Khí Điền"
         },
         {
           "text": "中",
@@ -8087,7 +8335,8 @@
         {
           "text": "氦",
           "pinyin": "hài",
-          "hanviet": "Hợi"
+          "hanviet": "Hợi",
+          "meaning_vi": "Heli"
         },
         {
           "text": "。"
@@ -8129,12 +8378,14 @@
         {
           "text": "无机",
           "pinyin": "wú jī",
-          "hanviet": "Vô Cơ"
+          "hanviet": "Vô Cơ",
+          "meaning_vi": "Vô Cơ"
         },
         {
           "text": "成因",
           "pinyin": "chéng yīn",
-          "hanviet": "Thành Nhân"
+          "hanviet": "Thành Nhân",
+          "meaning_vi": "nguyên nhân"
         },
         {
           "text": "说",
@@ -8155,7 +8406,8 @@
         {
           "text": "研究者",
           "pinyin": "yán jiū zhě",
-          "hanviet": "Nghiên Cứu Giả"
+          "hanviet": "Nghiên Cứu Giả",
+          "meaning_vi": "nhà nghiên cứu"
         },
         {
           "text": "，"
@@ -8166,7 +8418,7 @@
           "hanviet": "Hệ Thống",
           "hsk": 5,
           "word_id": "hsk5_1229",
-          "meaning_vi": "hệ thống"
+          "meaning_vi": "thì, là (liên từ văn viết)"
         },
         {
           "text": "吸收",
@@ -8187,7 +8439,8 @@
         {
           "text": "一部分",
           "pinyin": "yī bù fèn",
-          "hanviet": "Nhất Bộ Phân"
+          "hanviet": "Nhất Bộ Phân",
+          "meaning_vi": "một phần"
         },
         {
           "text": "石油",
@@ -8216,7 +8469,8 @@
         {
           "text": "论",
           "pinyin": "lùn",
-          "hanviet": "Luận"
+          "hanviet": "Luận",
+          "meaning_vi": "Bật"
         },
         {
           "text": "的",
@@ -8264,7 +8518,8 @@
         {
           "text": "一部分",
           "pinyin": "yī bù fèn",
-          "hanviet": "Nhất Bộ Phân"
+          "hanviet": "Nhất Bộ Phân",
+          "meaning_vi": "một phần"
         },
         {
           "text": "石油",
@@ -8339,7 +8594,7 @@
           "hanviet": "Hệ Thống",
           "hsk": 5,
           "word_id": "hsk5_1229",
-          "meaning_vi": "hệ thống"
+          "meaning_vi": "thì, là (liên từ văn viết)"
         },
         {
           "text": "来自",
@@ -8475,7 +8730,8 @@
         {
           "text": "有机物",
           "pinyin": "yǒu jī wù",
-          "hanviet": "Hữu Cơ Vật"
+          "hanviet": "Hữu Cơ Vật",
+          "meaning_vi": "chất hữu cơ"
         },
         {
           "text": "便",
@@ -8496,12 +8752,14 @@
         {
           "text": "甲烷",
           "pinyin": "jiǎ wán",
-          "hanviet": "Giáp Hoàn"
+          "hanviet": "Giáp Hoàn",
+          "meaning_vi": "Giáp Hoàn"
         },
         {
           "text": "及其",
           "pinyin": "jí qí",
-          "hanviet": "Cập Kỳ"
+          "hanviet": "Cập Kỳ",
+          "meaning_vi": "và nó"
         },
         {
           "text": "他",
@@ -8514,7 +8772,8 @@
         {
           "text": "碳氢化合物",
           "pinyin": "tàn qīng huà hé wù",
-          "hanviet": "Thán Khinh Hoa Cáp Vật"
+          "hanviet": "Thán Khinh Hoa Cáp Vật",
+          "meaning_vi": "hiđrocacbon"
         },
         {
           "text": "形式",
@@ -8602,7 +8861,8 @@
         {
           "text": "热力",
           "pinyin": "rè lì",
-          "hanviet": "Nhiệt Lực"
+          "hanviet": "Nhiệt Lực",
+          "meaning_vi": "Nhiệt Lực"
         },
         {
           "text": "和",
@@ -8666,12 +8926,14 @@
         {
           "text": "深部",
           "pinyin": "shēn bù",
-          "hanviet": "Thâm Bộ"
+          "hanviet": "Thâm Bộ",
+          "meaning_vi": "Thâm Bộ"
         },
         {
           "text": "释放出来",
           "pinyin": "shì fàng chū lái",
-          "hanviet": "Thích Phóng Xuất Lai"
+          "hanviet": "Thích Phóng Xuất Lai",
+          "meaning_vi": "Thích Phóng Xuất Lai"
         },
         {
           "text": "，"
@@ -8687,7 +8949,8 @@
         {
           "text": "某种",
           "pinyin": "mǒu zhǒng",
-          "hanviet": "Mỗ Chủng"
+          "hanviet": "Mỗ Chủng",
+          "meaning_vi": "một số loại"
         },
         {
           "text": "有利",
@@ -8823,7 +9086,8 @@
         {
           "text": "原生",
           "pinyin": "yuán shēng",
-          "hanviet": "Nguyên Sinh"
+          "hanviet": "Nguyên Sinh",
+          "meaning_vi": "Nguyên Sinh"
         },
         {
           "text": "石油",
@@ -8852,7 +9116,8 @@
         {
           "text": "有机物",
           "pinyin": "yǒu jī wù",
-          "hanviet": "Hữu Cơ Vật"
+          "hanviet": "Hữu Cơ Vật",
+          "meaning_vi": "chất hữu cơ"
         },
         {
           "text": "的",
@@ -8924,7 +9189,8 @@
         {
           "text": "复杂化",
           "pinyin": "fù zá huà",
-          "hanviet": "Phục Tạp Hoa"
+          "hanviet": "Phục Tạp Hoa",
+          "meaning_vi": "Phục Tạp Hoa"
         },
         {
           "text": "。"
@@ -8956,12 +9222,14 @@
         {
           "text": "美国",
           "pinyin": "měi guó",
-          "hanviet": "Mỹ Quốc"
+          "hanviet": "Mỹ Quốc",
+          "meaning_vi": "Hoa Kỳ"
         },
         {
           "text": "航天局",
           "pinyin": "háng tiān jú",
-          "hanviet": "Hàng Thiên Cục"
+          "hanviet": "Hàng Thiên Cục",
+          "meaning_vi": "Hàng Thiên Cục"
         },
         {
           "text": "宣布",
@@ -8985,7 +9253,8 @@
         {
           "text": "土星",
           "pinyin": "tǔ xīng",
-          "hanviet": "Thổ Tinh"
+          "hanviet": "Thổ Tinh",
+          "meaning_vi": "Thổ Tinh"
         },
         {
           "text": "的",
@@ -9006,7 +9275,8 @@
         {
           "text": "土卫六",
           "pinyin": "tǔ wèi liù",
-          "hanviet": "Thổ Vệ Lục"
+          "hanviet": "Thổ Vệ Lục",
+          "meaning_vi": "Thổ Vệ Lục"
         },
         {
           "text": "上",
@@ -9027,12 +9297,14 @@
         {
           "text": "碳氢化合物",
           "pinyin": "tàn qīng huà hé wù",
-          "hanviet": "Thán Khinh Hoa Cáp Vật"
+          "hanviet": "Thán Khinh Hoa Cáp Vật",
+          "meaning_vi": "hiđrocacbon"
         },
         {
           "text": "远超",
           "pinyin": "yuǎn chāo",
-          "hanviet": "Viễn Siêu"
+          "hanviet": "Viễn Siêu",
+          "meaning_vi": "Viễn Siêu"
         },
         {
           "text": "地球",
@@ -9045,7 +9317,8 @@
         {
           "text": "油气",
           "pinyin": "yóu qì",
-          "hanviet": "Dầu Khí"
+          "hanviet": "Dầu Khí",
+          "meaning_vi": "Dầu Khí"
         },
         {
           "text": "储量",
@@ -9087,7 +9360,8 @@
         {
           "text": "重大新闻",
           "pinyin": "zhòng dà xīn wén",
-          "hanviet": "Trọng Đại Tân Văn"
+          "hanviet": "Trọng Đại Tân Văn",
+          "meaning_vi": "Trọng Đại Tân Văn"
         },
         {
           "text": "再次",
@@ -9111,7 +9385,8 @@
         {
           "text": "有机物",
           "pinyin": "yǒu jī wù",
-          "hanviet": "Hữu Cơ Vật"
+          "hanviet": "Hữu Cơ Vật",
+          "meaning_vi": "chất hữu cơ"
         },
         {
           "text": "完全",
@@ -9140,7 +9415,8 @@
         {
           "text": "非生物",
           "pinyin": "fēi shēng wù",
-          "hanviet": "Phi Sinh Vật"
+          "hanviet": "Phi Sinh Vật",
+          "meaning_vi": "Phi Sinh Vật"
         },
         {
           "text": "途径",
@@ -9222,7 +9498,8 @@
         {
           "text": "成因",
           "pinyin": "chéng yīn",
-          "hanviet": "Thành Nhân"
+          "hanviet": "Thành Nhân",
+          "meaning_vi": "nguyên nhân"
         },
         {
           "text": "说",
@@ -9259,7 +9536,8 @@
         {
           "text": "例证",
           "pinyin": "lì zhèng",
-          "hanviet": "Lệ Chứng"
+          "hanviet": "Lệ Chứng",
+          "meaning_vi": "hình minh họa"
         },
         {
           "text": "，"
@@ -9302,7 +9580,7 @@
           "hanviet": "Hệ Thống",
           "hsk": 5,
           "word_id": "hsk5_1229",
-          "meaning_vi": "hệ thống"
+          "meaning_vi": "thì, là (liên từ văn viết)"
         },
         {
           "text": "反驳",
@@ -9318,7 +9596,8 @@
         {
           "text": "土卫六",
           "pinyin": "tǔ wèi liù",
-          "hanviet": "Thổ Vệ Lục"
+          "hanviet": "Thổ Vệ Lục",
+          "meaning_vi": "Thổ Vệ Lục"
         },
         {
           "text": "上",
@@ -9339,7 +9618,8 @@
         {
           "text": "有机物",
           "pinyin": "yǒu jī wù",
-          "hanviet": "Hữu Cơ Vật"
+          "hanviet": "Hữu Cơ Vật",
+          "meaning_vi": "chất hữu cơ"
         },
         {
           "text": "恐怕",
@@ -9352,7 +9632,8 @@
         {
           "text": "不能",
           "pinyin": "bù néng",
-          "hanviet": "Bất Năng"
+          "hanviet": "Bất Năng",
+          "meaning_vi": "không thể"
         },
         {
           "text": "和",
@@ -9373,7 +9654,8 @@
         {
           "text": "画上",
           "pinyin": "huà shàng",
-          "hanviet": "Hoạ Thướng"
+          "hanviet": "Hoạ Thướng",
+          "meaning_vi": "Hoạ Thướng"
         },
         {
           "text": "等",
@@ -9423,7 +9705,8 @@
         {
           "text": "前行",
           "pinyin": "qián xíng",
-          "hanviet": "Tiền Hành"
+          "hanviet": "Tiền Hành",
+          "meaning_vi": "tiến về phía trước"
         },
         {
           "text": "，"
@@ -9455,7 +9738,8 @@
         {
           "text": "之王",
           "pinyin": "zhī wáng",
-          "hanviet": "Chi Vương"
+          "hanviet": "Chi Vương",
+          "meaning_vi": "vua"
         },
         {
           "text": "在",
@@ -9468,12 +9752,14 @@
         {
           "text": "第一次",
           "pinyin": "dì yī cì",
-          "hanviet": "Đệ Nhất Thứ"
+          "hanviet": "Đệ Nhất Thứ",
+          "meaning_vi": "lần đầu tiên"
         },
         {
           "text": "工业革命",
           "pinyin": "gōng yè gé mìng",
-          "hanviet": "Công Nghiệp Cách Mệnh"
+          "hanviet": "Công Nghiệp Cách Mệnh",
+          "meaning_vi": "cuộc cách mạng công nghiệp"
         },
         {
           "text": "后",
@@ -9521,7 +9807,8 @@
         {
           "text": "之王",
           "pinyin": "zhī wáng",
-          "hanviet": "Chi Vương"
+          "hanviet": "Chi Vương",
+          "meaning_vi": "vua"
         },
         {
           "text": "。"
@@ -9553,17 +9840,20 @@
         {
           "text": "英国",
           "pinyin": "yīng guó",
-          "hanviet": "Anh Quốc"
+          "hanviet": "Anh Quốc",
+          "meaning_vi": "Vương quốc Anh"
         },
         {
           "text": "经济学家",
           "pinyin": "jīng jì xué jiā",
-          "hanviet": "Kinh Tể Học Gia"
+          "hanviet": "Kinh Tể Học Gia",
+          "meaning_vi": "Kinh Tể Học Gia"
         },
         {
           "text": "威廉",
           "pinyin": "wēi lián",
-          "hanviet": "Uy Liêm"
+          "hanviet": "Uy Liêm",
+          "meaning_vi": "William"
         },
         {
           "text": "·"
@@ -9571,12 +9861,14 @@
         {
           "text": "斯坦利",
           "pinyin": "sī tǎn lì",
-          "hanviet": "Tư Thản Lợi"
+          "hanviet": "Tư Thản Lợi",
+          "meaning_vi": "Tư Thản Lợi"
         },
         {
           "text": "杰文斯",
           "pinyin": "jié wén sī",
-          "hanviet": "Kiệt Văn Tư"
+          "hanviet": "Kiệt Văn Tư",
+          "meaning_vi": "Kiệt Văn Tư"
         },
         {
           "text": "在",
@@ -9597,7 +9889,8 @@
         {
           "text": "著",
           "pinyin": "zhù",
-          "hanviet": "Trước"
+          "hanviet": "Trước",
+          "meaning_vi": "Với"
         },
         {
           "text": "的",
@@ -9632,7 +9925,8 @@
         {
           "text": "一书中",
           "pinyin": "yī shū zhōng",
-          "hanviet": "Nhất Thư Trung"
+          "hanviet": "Nhất Thư Trung",
+          "meaning_vi": "trong một cuốn sách"
         },
         {
           "text": "，"
@@ -9648,12 +9942,14 @@
         {
           "text": "忧心忡忡",
           "pinyin": "yōu xīn chōng chōng",
-          "hanviet": "Ưu Tâm Xung Xung"
+          "hanviet": "Ưu Tâm Xung Xung",
+          "meaning_vi": "Ưu Tâm Xung Xung"
         },
         {
           "text": "地说",
           "pinyin": "dì shuō",
-          "hanviet": "Địa Thuyết"
+          "hanviet": "Địa Thuyết",
+          "meaning_vi": "nói"
         },
         {
           "text": "："
@@ -9731,7 +10027,8 @@
         {
           "text": "不能不",
           "pinyin": "bù néng bù",
-          "hanviet": "Bất Năng Bất"
+          "hanviet": "Bất Năng Bất",
+          "meaning_vi": "không thể giúp được"
         },
         {
           "text": "引发",
@@ -9803,7 +10100,8 @@
         {
           "text": "耗竭",
           "pinyin": "hào jié",
-          "hanviet": "Hao Kiệt"
+          "hanviet": "Hao Kiệt",
+          "meaning_vi": "Hao Kiệt"
         },
         {
           "text": "时",
@@ -9827,7 +10125,8 @@
         {
           "text": "高能量",
           "pinyin": "gāo néng liàng",
-          "hanviet": "Cao Năng Lượng"
+          "hanviet": "Cao Năng Lượng",
+          "meaning_vi": "Cao Năng Lượng"
         },
         {
           "text": "的",
@@ -9840,7 +10139,8 @@
         {
           "text": "替代物",
           "pinyin": "tì dài wù",
-          "hanviet": "Thế Đại Vật"
+          "hanviet": "Thế Đại Vật",
+          "meaning_vi": "Thế Đại Vật"
         },
         {
           "text": "出现",
@@ -9861,7 +10161,8 @@
         {
           "text": "可能性",
           "pinyin": "kě néng xìng",
-          "hanviet": "Khả Năng Tính"
+          "hanviet": "Khả Năng Tính",
+          "meaning_vi": "Khả Năng Tính"
         },
         {
           "text": "并",
@@ -9925,7 +10226,8 @@
         {
           "text": "本书",
           "pinyin": "běn shū",
-          "hanviet": "Bản Thư"
+          "hanviet": "Bản Thư",
+          "meaning_vi": "cuốn sách"
         },
         {
           "text": "出版",
@@ -9954,7 +10256,8 @@
         {
           "text": "六年",
           "pinyin": "liù nián",
-          "hanviet": "Lục Niên"
+          "hanviet": "Lục Niên",
+          "meaning_vi": "sáu năm"
         },
         {
           "text": "，"
@@ -9978,7 +10281,8 @@
         {
           "text": "第一口",
           "pinyin": "dì yī kǒu",
-          "hanviet": "Đệ Nhất Khẩu"
+          "hanviet": "Đệ Nhất Khẩu",
+          "meaning_vi": "Đệ Nhất Khẩu"
         },
         {
           "text": "现代",
@@ -9991,7 +10295,8 @@
         {
           "text": "油井",
           "pinyin": "yóu jǐng",
-          "hanviet": "Dầu Tỉnh"
+          "hanviet": "Dầu Tỉnh",
+          "meaning_vi": "Dầu Tỉnh"
         },
         {
           "text": "刚刚",
@@ -10092,7 +10397,8 @@
         {
           "text": "之争",
           "pinyin": "zhī zhēng",
-          "hanviet": "Chi Tranh"
+          "hanviet": "Chi Tranh",
+          "meaning_vi": "tranh chấp"
         },
         {
           "text": "并",
@@ -10137,7 +10443,8 @@
         {
           "text": "前行",
           "pinyin": "qián xíng",
-          "hanviet": "Tiền Hành"
+          "hanviet": "Tiền Hành",
+          "meaning_vi": "tiến về phía trước"
         },
         {
           "text": "，"
@@ -10254,7 +10561,8 @@
         {
           "text": "论者",
           "pinyin": "lùn zhě",
-          "hanviet": "Luận Giả"
+          "hanviet": "Luận Giả",
+          "meaning_vi": "Luận Giả"
         },
         {
           "text": "认为",
@@ -10273,7 +10581,8 @@
         {
           "text": "多年",
           "pinyin": "duō nián",
-          "hanviet": "Đa Niên"
+          "hanviet": "Đa Niên",
+          "meaning_vi": "nhiều năm"
         },
         {
           "text": "的",
@@ -10286,7 +10595,8 @@
         {
           "text": "石油工业",
           "pinyin": "shí yóu gōng yè",
-          "hanviet": "Thạch Dầu Công Nghiệp"
+          "hanviet": "Thạch Dầu Công Nghiệp",
+          "meaning_vi": "Thạch Dầu Công Nghiệp"
         },
         {
           "text": "发展",
@@ -10342,7 +10652,8 @@
         {
           "text": "论断",
           "pinyin": "lùn duàn",
-          "hanviet": "Luận Đoạn"
+          "hanviet": "Luận Đoạn",
+          "meaning_vi": "Luận Đoạn"
         },
         {
           "text": "的",
@@ -10355,7 +10666,8 @@
         {
           "text": "科学性",
           "pinyin": "kē xué xìng",
-          "hanviet": "Khoa Học Tính"
+          "hanviet": "Khoa Học Tính",
+          "meaning_vi": "Khoa Học Tính"
         },
         {
           "text": "。"
@@ -10397,7 +10709,8 @@
         {
           "text": "论",
           "pinyin": "lùn",
-          "hanviet": "Luận"
+          "hanviet": "Luận",
+          "meaning_vi": "Bật"
         },
         {
           "text": "，"
@@ -10413,7 +10726,8 @@
         {
           "text": "钻探",
           "pinyin": "zuān tàn",
-          "hanviet": "Khoan Thám"
+          "hanviet": "Khoan Thám",
+          "meaning_vi": "Khoan Thám"
         },
         {
           "text": "和",
@@ -10442,7 +10756,8 @@
         {
           "text": "相似之处",
           "pinyin": "xiāng sì zhī chù",
-          "hanviet": "Tương Tự Chi Xử"
+          "hanviet": "Tương Tự Chi Xử",
+          "meaning_vi": "Tương Tự Chi Xử"
         },
         {
           "text": "，"
@@ -10458,7 +10773,8 @@
         {
           "text": "工作者",
           "pinyin": "gōng zuò zhě",
-          "hanviet": "Công Tác Giả"
+          "hanviet": "Công Tác Giả",
+          "meaning_vi": "công nhân"
         },
         {
           "text": "甚至",
@@ -10471,7 +10787,8 @@
         {
           "text": "钻取",
           "pinyin": "zuān qǔ",
-          "hanviet": "Khoan Thủ"
+          "hanviet": "Khoan Thủ",
+          "meaning_vi": "Khoan Thủ"
         },
         {
           "text": "岩石",
@@ -10484,7 +10801,8 @@
         {
           "text": "芯中",
           "pinyin": "xīn zhōng",
-          "hanviet": "Tâm Trung"
+          "hanviet": "Tâm Trung",
+          "meaning_vi": "Tâm Trung"
         },
         {
           "text": "所",
@@ -10529,7 +10847,8 @@
         {
           "text": "花粉",
           "pinyin": "huā fěn",
-          "hanviet": "Hoa Phấn"
+          "hanviet": "Hoa Phấn",
+          "meaning_vi": "Hoa Phấn"
         },
         {
           "text": "组合",
@@ -10569,7 +10888,8 @@
         {
           "text": "地层",
           "pinyin": "dì céng",
-          "hanviet": "Địa Tầng"
+          "hanviet": "Địa Tầng",
+          "meaning_vi": "Địa Tầng"
         },
         {
           "text": "属于",
@@ -10590,7 +10910,8 @@
         {
           "text": "地质年代",
           "pinyin": "dì zhì nián dài",
-          "hanviet": "Địa Chất Niên Đại"
+          "hanviet": "Địa Chất Niên Đại",
+          "meaning_vi": "Địa Chất Niên Đại"
         },
         {
           "text": "和",
@@ -10611,7 +10932,8 @@
         {
           "text": "含油层",
           "pinyin": "hán yóu céng",
-          "hanviet": "Hàm Dầu Tầng"
+          "hanviet": "Hàm Dầu Tầng",
+          "meaning_vi": "Hàm Dầu Tầng"
         },
         {
           "text": "位",
@@ -10651,7 +10973,8 @@
         {
           "text": "多年",
           "pinyin": "duō nián",
-          "hanviet": "Đa Niên"
+          "hanviet": "Đa Niên",
+          "meaning_vi": "nhiều năm"
         },
         {
           "text": "来",
@@ -10675,7 +10998,8 @@
         {
           "text": "深刻影响",
           "pinyin": "shēn kè yǐng xiǎng",
-          "hanviet": "Thâm Khắc Ảnh Hưởng"
+          "hanviet": "Thâm Khắc Ảnh Hưởng",
+          "meaning_vi": "Thâm Khắc Ảnh Hưởng"
         },
         {
           "text": "了",
@@ -10758,7 +11082,8 @@
         {
           "text": "副产品",
           "pinyin": "fù chǎn pǐn",
-          "hanviet": "Phó Sản Phẩm"
+          "hanviet": "Phó Sản Phẩm",
+          "meaning_vi": "Phó Sản Phẩm"
         },
         {
           "text": "进入",
@@ -10779,7 +11104,8 @@
         {
           "text": "人们",
           "pinyin": "rén men",
-          "hanviet": "Nhân Môn"
+          "hanviet": "Nhân Môn",
+          "meaning_vi": "mọi người"
         },
         {
           "text": "的",
@@ -10792,7 +11118,8 @@
         {
           "text": "日常生活",
           "pinyin": "rì cháng shēng huó",
-          "hanviet": "Nhật Thường Sinh Hoạt"
+          "hanviet": "Nhật Thường Sinh Hoạt",
+          "meaning_vi": "cuộc sống hàng ngày"
         },
         {
           "text": "，"
@@ -10840,7 +11167,8 @@
         {
           "text": "润滑油",
           "pinyin": "rùn huá yóu",
-          "hanviet": "Nhuận Hoạt Dầu"
+          "hanviet": "Nhuận Hoạt Dầu",
+          "meaning_vi": "Nhuận Hoạt Dầu"
         },
         {
           "text": "、"
@@ -10880,12 +11208,14 @@
         {
           "text": "中要",
           "pinyin": "zhōng yào",
-          "hanviet": "Trung Yêu"
+          "hanviet": "Trung Yêu",
+          "meaning_vi": "quan trọng"
         },
         {
           "text": "用到",
           "pinyin": "yòng dào",
-          "hanviet": "Dụng Đáo"
+          "hanviet": "Dụng Đáo",
+          "meaning_vi": "Dụng Đáo"
         },
         {
           "text": "的",
@@ -10941,7 +11271,8 @@
         {
           "text": "聚乙烯",
           "pinyin": "jù yǐ xī",
-          "hanviet": "Tụ Ất Hy"
+          "hanviet": "Tụ Ất Hy",
+          "meaning_vi": "Tụ Ất Hy"
         },
         {
           "text": "注册",
@@ -10976,7 +11307,8 @@
         {
           "text": "绝大多数",
           "pinyin": "jué dà duō shù",
-          "hanviet": "Tuyệt Đại Đa Sổ"
+          "hanviet": "Tuyệt Đại Đa Sổ",
+          "meaning_vi": "đại đa số"
         },
         {
           "text": "的",
@@ -10989,7 +11321,8 @@
         {
           "text": "家居用品",
           "pinyin": "jiā jū yòng pǐn",
-          "hanviet": "Gia Cư Dụng Phẩm"
+          "hanviet": "Gia Cư Dụng Phẩm",
+          "meaning_vi": "Gia Cư Dụng Phẩm"
         },
         {
           "text": "都",
@@ -11018,7 +11351,8 @@
         {
           "text": "这种",
           "pinyin": "zhè zhǒng",
-          "hanviet": "Giá Chủng"
+          "hanviet": "Giá Chủng",
+          "meaning_vi": "Loại này"
         },
         {
           "text": "材料",
@@ -11136,7 +11470,8 @@
         {
           "text": "之王",
           "pinyin": "zhī wáng",
-          "hanviet": "Chi Vương"
+          "hanviet": "Chi Vương",
+          "meaning_vi": "vua"
         },
         {
           "text": "。"
@@ -11154,7 +11489,8 @@
         {
           "text": "在此期间",
           "pinyin": "zài cǐ qī jiān",
-          "hanviet": "Tại Thử Kỳ Gian"
+          "hanviet": "Tại Thử Kỳ Gian",
+          "meaning_vi": "Tại Thử Kỳ Gian"
         },
         {
           "text": "，"
@@ -11256,12 +11592,14 @@
         {
           "text": "民航",
           "pinyin": "mín háng",
-          "hanviet": "Dân Hàng"
+          "hanviet": "Dân Hàng",
+          "meaning_vi": "hàng không dân dụng"
         },
         {
           "text": "里程",
           "pinyin": "lǐ chéng",
-          "hanviet": "Lý Trình"
+          "hanviet": "Lý Trình",
+          "meaning_vi": "Lý Trình"
         },
         {
           "text": "翻",
@@ -11306,12 +11644,14 @@
         {
           "text": "两次",
           "pinyin": "liǎng cì",
-          "hanviet": "Lưỡng Thứ"
+          "hanviet": "Lưỡng Thứ",
+          "meaning_vi": "hai lần"
         },
         {
           "text": "石油危机",
           "pinyin": "shí yóu wēi jī",
-          "hanviet": "Thạch Dầu Nguy Cơ"
+          "hanviet": "Thạch Dầu Nguy Cơ",
+          "meaning_vi": "Thạch Dầu Nguy Cơ"
         },
         {
           "text": "的",
@@ -11367,7 +11707,8 @@
         {
           "text": "带来",
           "pinyin": "dài lái",
-          "hanviet": "Đới Lai"
+          "hanviet": "Đới Lai",
+          "meaning_vi": "mang theo"
         },
         {
           "text": "了",
@@ -11380,7 +11721,8 @@
         {
           "text": "经济危机",
           "pinyin": "jīng jì wēi jī",
-          "hanviet": "Kinh Tể Nguy Cơ"
+          "hanviet": "Kinh Tể Nguy Cơ",
+          "meaning_vi": "khủng hoảng kinh tế"
         },
         {
           "text": "。"
@@ -11412,12 +11754,14 @@
         {
           "text": "第四次",
           "pinyin": "dì sì cì",
-          "hanviet": "Đệ Tứ Thứ"
+          "hanviet": "Đệ Tứ Thứ",
+          "meaning_vi": "Đệ Tứ Thứ"
         },
         {
           "text": "中东战争",
           "pinyin": "zhōng dōng zhàn zhēng",
-          "hanviet": "Trung Đông Chiến Tranh"
+          "hanviet": "Trung Đông Chiến Tranh",
+          "meaning_vi": "chiến tranh trung đông"
         },
         {
           "text": "爆发",
@@ -11433,7 +11777,8 @@
         {
           "text": "石油输出国组织",
           "pinyin": "shí yóu shū chū guó zǔ zhī",
-          "hanviet": "Thạch Dầu Thâu Xuất Quốc Tổ Chức"
+          "hanviet": "Thạch Dầu Thâu Xuất Quốc Tổ Chức",
+          "meaning_vi": "Thạch Dầu Thâu Xuất Quốc Tổ Chức"
         },
         {
           "text": "将",
@@ -11446,7 +11791,8 @@
         {
           "text": "原油",
           "pinyin": "yuán yóu",
-          "hanviet": "Nguyên Dầu"
+          "hanviet": "Nguyên Dầu",
+          "meaning_vi": "Nguyên Dầu"
         },
         {
           "text": "从",
@@ -11459,7 +11805,8 @@
         {
           "text": "每桶",
           "pinyin": "měi tǒng",
-          "hanviet": "Mỗi Thùng"
+          "hanviet": "Mỗi Thùng",
+          "meaning_vi": "Mỗi Thùng"
         },
         {
           "text": "3.011"
@@ -11467,7 +11814,8 @@
         {
           "text": "美元",
           "pinyin": "měi yuán",
-          "hanviet": "Mỹ Nguyên"
+          "hanviet": "Mỹ Nguyên",
+          "meaning_vi": "đô la Mỹ"
         },
         {
           "text": "提高",
@@ -11491,7 +11839,8 @@
         {
           "text": "美元",
           "pinyin": "měi yuán",
-          "hanviet": "Mỹ Nguyên"
+          "hanviet": "Mỹ Nguyên",
+          "meaning_vi": "đô la Mỹ"
         },
         {
           "text": "。"
@@ -11509,12 +11858,14 @@
         {
           "text": "这次",
           "pinyin": "zhè cì",
-          "hanviet": "Giá Thứ"
+          "hanviet": "Giá Thứ",
+          "meaning_vi": "lần này"
         },
         {
           "text": "石油危机",
           "pinyin": "shí yóu wēi jī",
-          "hanviet": "Thạch Dầu Nguy Cơ"
+          "hanviet": "Thạch Dầu Nguy Cơ",
+          "meaning_vi": "Thạch Dầu Nguy Cơ"
         },
         {
           "text": "使",
@@ -11527,7 +11878,8 @@
         {
           "text": "美国",
           "pinyin": "měi guó",
-          "hanviet": "Mỹ Quốc"
+          "hanviet": "Mỹ Quốc",
+          "meaning_vi": "Hoa Kỳ"
         },
         {
           "text": "的",
@@ -11540,7 +11892,8 @@
         {
           "text": "工业生产",
           "pinyin": "gōng yè shēng chǎn",
-          "hanviet": "Công Nghiệp Sinh Sản"
+          "hanviet": "Công Nghiệp Sinh Sản",
+          "meaning_vi": "Công Nghiệp Sinh Sản"
         },
         {
           "text": "下降",
@@ -11570,12 +11923,14 @@
         {
           "text": "日本",
           "pinyin": "rì běn",
-          "hanviet": "Nhật Bản"
+          "hanviet": "Nhật Bản",
+          "meaning_vi": "Nhật Bản"
         },
         {
           "text": "工业生产",
           "pinyin": "gōng yè shēng chǎn",
-          "hanviet": "Công Nghiệp Sinh Sản"
+          "hanviet": "Công Nghiệp Sinh Sản",
+          "meaning_vi": "Công Nghiệp Sinh Sản"
         },
         {
           "text": "下降",
@@ -11645,7 +12000,8 @@
         {
           "text": "第二",
           "pinyin": "dì èr",
-          "hanviet": "Đệ Nhị"
+          "hanviet": "Đệ Nhị",
+          "meaning_vi": "thứ hai"
         },
         {
           "text": "大",
@@ -11666,12 +12022,14 @@
         {
           "text": "出口国",
           "pinyin": "chū kǒu guó",
-          "hanviet": "Xuất Khẩu Quốc"
+          "hanviet": "Xuất Khẩu Quốc",
+          "meaning_vi": "Xuất Khẩu Quốc"
         },
         {
           "text": "伊朗",
           "pinyin": "yī lǎng",
-          "hanviet": "Y Lãng"
+          "hanviet": "Y Lãng",
+          "meaning_vi": "Iran"
         },
         {
           "text": "的",
@@ -11684,7 +12042,8 @@
         {
           "text": "政局",
           "pinyin": "zhèng jú",
-          "hanviet": "Chính Cục"
+          "hanviet": "Chính Cục",
+          "meaning_vi": "Chính Cục"
         },
         {
           "text": "发生",
@@ -11751,7 +12110,8 @@
         {
           "text": "油价",
           "pinyin": "yóu jià",
-          "hanviet": "Dầu Giá"
+          "hanviet": "Dầu Giá",
+          "meaning_vi": "Dầu Giá"
         },
         {
           "text": "1979"
@@ -11775,7 +12135,8 @@
         {
           "text": "暴涨",
           "pinyin": "bào zhǎng",
-          "hanviet": "Bạo Trướng"
+          "hanviet": "Bạo Trướng",
+          "meaning_vi": "Bạo Trướng"
         },
         {
           "text": "，"
@@ -11783,12 +12144,14 @@
         {
           "text": "第二次",
           "pinyin": "dì èr cì",
-          "hanviet": "Đệ Nhị Thứ"
+          "hanviet": "Đệ Nhị Thứ",
+          "meaning_vi": "lần thứ hai"
         },
         {
           "text": "石油危机",
           "pinyin": "shí yóu wēi jī",
-          "hanviet": "Thạch Dầu Nguy Cơ"
+          "hanviet": "Thạch Dầu Nguy Cơ",
+          "meaning_vi": "Thạch Dầu Nguy Cơ"
         },
         {
           "text": "的",
@@ -11857,7 +12220,8 @@
         {
           "text": "经济危机",
           "pinyin": "jīng jì wēi jī",
-          "hanviet": "Kinh Tể Nguy Cơ"
+          "hanviet": "Kinh Tể Nguy Cơ",
+          "meaning_vi": "khủng hoảng kinh tế"
         },
         {
           "text": "。"
@@ -11883,7 +12247,8 @@
         {
           "text": "油田",
           "pinyin": "yóu tián",
-          "hanviet": "Dầu Điền"
+          "hanviet": "Dầu Điền",
+          "meaning_vi": "mỏ dầu"
         },
         {
           "text": "，"
@@ -11899,7 +12264,8 @@
         {
           "text": "饱受",
           "pinyin": "bǎo shòu",
-          "hanviet": "Bão Thọ"
+          "hanviet": "Bão Thọ",
+          "meaning_vi": "Bão Thọ"
         },
         {
           "text": "世人",
@@ -11912,7 +12278,8 @@
         {
           "text": "瞩目",
           "pinyin": "zhǔ mù",
-          "hanviet": "Chúc Mục"
+          "hanviet": "Chúc Mục",
+          "meaning_vi": "Chúc Mục"
         },
         {
           "text": "。"
@@ -11944,12 +12311,14 @@
         {
           "text": "中东",
           "pinyin": "zhōng dōng",
-          "hanviet": "Trung Đông"
+          "hanviet": "Trung Đông",
+          "meaning_vi": "trung đông"
         },
         {
           "text": "伊朗",
           "pinyin": "yī lǎng",
-          "hanviet": "Y Lãng"
+          "hanviet": "Y Lãng",
+          "meaning_vi": "Iran"
         },
         {
           "text": "首次",
@@ -11992,7 +12361,8 @@
         {
           "text": "沙特阿拉伯",
           "pinyin": "shā tè ā lā bó",
-          "hanviet": "Sa Đặc A Lạp Bá"
+          "hanviet": "Sa Đặc A Lạp Bá",
+          "meaning_vi": "Sa Đặc A Lạp Bá"
         },
         {
           "text": "发现",
@@ -12005,7 +12375,8 @@
         {
           "text": "油田",
           "pinyin": "yóu tián",
-          "hanviet": "Dầu Điền"
+          "hanviet": "Dầu Điền",
+          "meaning_vi": "mỏ dầu"
         },
         {
           "text": "。"
@@ -12034,12 +12405,14 @@
         {
           "text": "中东",
           "pinyin": "zhōng dōng",
-          "hanviet": "Trung Đông"
+          "hanviet": "Trung Đông",
+          "meaning_vi": "trung đông"
         },
         {
           "text": "储油量",
           "pinyin": "chǔ yóu liàng",
-          "hanviet": "Trữ Dầu Lượng"
+          "hanviet": "Trữ Dầu Lượng",
+          "meaning_vi": "Trữ Dầu Lượng"
         },
         {
           "text": "占",
@@ -12092,7 +12465,8 @@
         {
           "text": "利比亚",
           "pinyin": "lì bǐ yà",
-          "hanviet": "Lợi Tỷ Á"
+          "hanviet": "Lợi Tỷ Á",
+          "meaning_vi": "Lợi Tỷ Á"
         },
         {
           "text": "，"
@@ -12194,7 +12568,8 @@
         {
           "text": "家美欧",
           "pinyin": "jiā měi ōu",
-          "hanviet": "Gia Mỹ Âu"
+          "hanviet": "Gia Mỹ Âu",
+          "meaning_vi": "Gia Mỹ Âu"
         },
         {
           "text": "公司",
@@ -12207,12 +12582,14 @@
         {
           "text": "夺得",
           "pinyin": "duó de",
-          "hanviet": "Đoạt Đắc"
+          "hanviet": "Đoạt Đắc",
+          "meaning_vi": "thắng"
         },
         {
           "text": "利比亚",
           "pinyin": "lì bǐ yà",
-          "hanviet": "Lợi Tỷ Á"
+          "hanviet": "Lợi Tỷ Á",
+          "meaning_vi": "Lợi Tỷ Á"
         },
         {
           "text": "84"
@@ -12228,7 +12605,8 @@
         {
           "text": "特许",
           "pinyin": "tè xǔ",
-          "hanviet": "Đặc Hứa"
+          "hanviet": "Đặc Hứa",
+          "meaning_vi": "Đặc Hứa"
         },
         {
           "text": "地",
@@ -12249,7 +12627,8 @@
         {
           "text": "开采权",
           "pinyin": "kāi cǎi quán",
-          "hanviet": "Khai Thái Quyền"
+          "hanviet": "Khai Thái Quyền",
+          "meaning_vi": "Khai Thái Quyền"
         },
         {
           "text": "。"
@@ -12281,7 +12660,8 @@
         {
           "text": "利比亚",
           "pinyin": "lì bǐ yà",
-          "hanviet": "Lợi Tỷ Á"
+          "hanviet": "Lợi Tỷ Á",
+          "meaning_vi": "Lợi Tỷ Á"
         },
         {
           "text": "已",
@@ -12310,7 +12690,8 @@
         {
           "text": "第六",
           "pinyin": "dì liù",
-          "hanviet": "Đệ Lục"
+          "hanviet": "Đệ Lục",
+          "meaning_vi": "Đệ Lục"
         },
         {
           "text": "大",
@@ -12331,7 +12712,8 @@
         {
           "text": "出口国",
           "pinyin": "chū kǒu guó",
-          "hanviet": "Xuất Khẩu Quốc"
+          "hanviet": "Xuất Khẩu Quốc",
+          "meaning_vi": "Xuất Khẩu Quốc"
         },
         {
           "text": "，"
@@ -12339,12 +12721,14 @@
         {
           "text": "日产",
           "pinyin": "rì chǎn",
-          "hanviet": "Nhật Sản"
+          "hanviet": "Nhật Sản",
+          "meaning_vi": "Nhật Sản"
         },
         {
           "text": "原油",
           "pinyin": "yuán yóu",
-          "hanviet": "Nguyên Dầu"
+          "hanviet": "Nguyên Dầu",
+          "meaning_vi": "Nguyên Dầu"
         },
         {
           "text": "300"
@@ -12352,7 +12736,8 @@
         {
           "text": "万桶",
           "pinyin": "wàn tǒng",
-          "hanviet": "Mặc Thùng"
+          "hanviet": "Mặc Thùng",
+          "meaning_vi": "10.000 thùng"
         },
         {
           "text": "以上",
@@ -12443,7 +12828,8 @@
         {
           "text": "迅猛发展",
           "pinyin": "xùn měng fā zhǎn",
-          "hanviet": "Tấn Mãnh Phát Triển"
+          "hanviet": "Tấn Mãnh Phát Triển",
+          "meaning_vi": "Tấn Mãnh Phát Triển"
         },
         {
           "text": "。"
