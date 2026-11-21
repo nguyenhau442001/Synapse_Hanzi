@@ -33,7 +33,7 @@ function buildCardArea() {
   document.getElementById('cardArea').innerHTML = `
     <div class="card" id="card">
       <div class="card-header-bar" id="cardHeaderBar" onclick="event.stopPropagation()">
-        <span class="card-position-pill" id="cardPositionBadge">Từ 1 / 300</span>
+        <span class="card-header-spacer" aria-hidden="true"></span>
         <button type="button" class="card-star-btn" id="weakWordToggleBtn" style="display:none" hidden aria-hidden="true"></button>
         <div class="card-more-menu-wrap" id="cardMoreMenuWrap">
           <button type="button" class="card-more-btn" id="cardMoreBtn" onclick="toggleCardMoreMenu(event)" aria-label="Tùy chọn thẻ" aria-haspopup="menu" aria-expanded="false" title="Tùy chọn khác">
@@ -834,8 +834,9 @@ function updateProgress(current, total) {
   }
 }
 
+// The only position counter is the one between Trước / Tiếp (browse mode); review mode shows
+// the remaining due/new counts in the mode bar instead.
 function updateCardPosition() {
-  const badge = document.getElementById('cardPositionBadge');
   const counter = document.getElementById('cardCounter');
   const navCurrent = document.getElementById('studyNavCurrent');
   const navTotal = document.getElementById('studyNavTotal');
@@ -845,10 +846,6 @@ function updateCardPosition() {
   if (!filteredOrder || filteredOrder.length === 0) {
     const deck = computeDeckProgress();
     const txt = (currentFilter === 'unseen' && deck.unseen === 0 && deck.total > 0) ? 'Hoàn thành' : '0 / 0';
-    if (badge) {
-      badge.textContent = txt;
-      if (txt === 'Hoàn thành') badge.title = 'Đã học qua 100% từ vựng mới của cấp độ này';
-    }
     if (counter) counter.textContent = txt;
     if (navCurrent) navCurrent.textContent = '0';
     if (navTotal) navTotal.textContent = '0';
@@ -858,15 +855,6 @@ function updateCardPosition() {
   }
   const current = (idx % filteredOrder.length) + 1;
   const total = filteredOrder.length;
-  const posText = `Từ ${current} / ${total}`;
-  if (badge) {
-    badge.textContent = posText;
-    const filterLabel = currentFilter === 'all' ? 'Tất cả'
-      : currentFilter === 'known' ? 'Đã nhớ'
-      : currentFilter === 'unknown' ? 'Cần ôn'
-      : currentFilter === 'unseen' ? 'Chưa học' : currentFilter;
-    badge.title = `Thẻ ${current} / ${total} (${filterLabel})`;
-  }
   if (counter) {
     counter.textContent = `${current} / ${total}`;
   }
