@@ -1,0 +1,35 @@
+[
+  {
+    "id": "office_ep01",
+    "series": "office",
+    "series_title": "打工人日记",
+    "series_title_vi": "Nhật Ký Dân Công Sở",
+    "collection": "office",
+    "volume": 1,
+    "chapter_in_volume": null,
+    "chapter_no": 1,
+    "title": {
+      "zh": "第一集：你在吗？",
+      "zh_trad": "第一集：你在嗎？",
+      "vi": "Tập 1: Em Có Đó Không?",
+      "pinyin": "dì yī jí ： nǐ zài ma ？"
+    },
+    "description_vi": "9 giờ 47 phút sáng, chuông thông báo công ty bỗng vang lên từ màn hình máy tính: 'Tiểu Dương, em có đó không? Qua văn phòng anh một lát nhé.' Lời nói nghe chừng vô hại, nhưng dân công sở đều biết: mỗi lần sếp bảo 'không có chuyện gì lớn', thì y như rằng việc lớn ngập đầu!",
+    "cover_image": "assets/images/readings/manga/office/office_ep01/cover.webp",
+    "source": "《打工人日记》原创职场情景喜剧 · Synapse Hanzi Studio",
+    "source_url": "https://github.com/Synapse-Hanzi",
+    "source_credits": "Kịch bản và tạo hình nhân vật độc quyền của Synapse Hanzi Studio. Thiết kế hỗ trợ học tiếng Trung công sở thực chiến với hệ thống tương tác đa giác quan (Pinyin, Hán-Việt, phân tích từ vựng & âm thanh).",
+    "license": "Original / Educational",
+    "page_count": 5,
+    "difficulty": "HSK 1 - 3",
+    "estimatedMinutes": 3,
+    "file": "database/readings/manga/office/office_ep01.json",
+    "proper_names": [
+      "小阳",
+      "小铃",
+      "王经理",
+      "王总",
+      "老周"
+    ]
+  }
+]

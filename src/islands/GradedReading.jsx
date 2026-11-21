@@ -339,13 +339,15 @@ async function loadStory(storyId) {
 async function ensureMangaManifestLoaded() {
   if (mangaManifestLoaded && mangaManifestData.length) return mangaManifestData;
   try {
-    const [resClassic, resPc] = await Promise.allSettled([
+    const [resOffice, resClassic, resPc] = await Promise.allSettled([
+      fetch('database/readings/manga/office/manifest.json?v=' + Date.now()),
       fetch('database/readings/manga/classic/manifest.json?v=' + Date.now()),
       fetch('database/readings/manga/peppercarrot/manifest.json?v=' + Date.now())
     ]);
+    const officeList = resOffice.status === 'fulfilled' && resOffice.value.ok ? await resOffice.value.json() : [];
     const classicList = resClassic.status === 'fulfilled' && resClassic.value.ok ? await resClassic.value.json() : [];
     const pcList = resPc.status === 'fulfilled' && resPc.value.ok ? await resPc.value.json() : [];
-    mangaManifestData = [...classicList, ...pcList];
+    mangaManifestData = [...officeList, ...classicList, ...pcList];
     mangaManifestLoaded = true;
     return mangaManifestData;
   } catch (e) {
@@ -358,7 +360,11 @@ async function loadMangaStory(mangaId) {
   if (mangaStoryCache[mangaId]) return mangaStoryCache[mangaId];
   const list = await ensureMangaManifestLoaded();
   const item = list.find((m) => m.id === mangaId);
-  const file = item ? item.file : (mangaId.startsWith('xiyouji') ? `database/readings/manga/classic/${mangaId}.json` : `database/readings/manga/peppercarrot/${mangaId}.json`);
+  const file = item ? item.file : (
+    mangaId.startsWith('office') ? `database/readings/manga/office/${mangaId}.json` :
+    mangaId.startsWith('xiyouji') ? `database/readings/manga/classic/${mangaId}.json` :
+    `database/readings/manga/peppercarrot/${mangaId}.json`
+  );
   const res = await fetch(file + '?v=' + Date.now());
   if (!res.ok) throw new Error('Không thể tải truyện tranh: ' + mangaId);
   const data = await res.json();
@@ -1569,6 +1575,7 @@ function StoryReader({ story }) {
 
 // Series shelves, in reading order. Entries without `collection` land on the first shelf.
 const MANGA_COLLECTIONS = [
+  { key: 'office', zh: '打工人日记', vi: 'Hài Công Sở (Diary of Dagongren)', range: 'Tập 1: 你在吗？ · Sitcom Hài HSK 1-3' },
   { key: 'classic', zh: '中国古典四大名著', vi: 'Kinh Điển Cổ Phong (Tây Du Ký)', range: 'Hồi 1 · Mỹ Hầu Vương Xuất Thế' },
   { key: 'peppercarrot', zh: '胡椒和胡萝卜', vi: 'Pepper&Carrot', range: 'Tập 1 → 39 · CC BY 4.0' },
 ];
@@ -1655,7 +1662,7 @@ function MangaHub() {
       })}
 
       <p class="manga-hub-credit">
-        Nguồn: 《西游记》 (Ngô Thừa Ân · Public Domain); <a href="https://www.peppercarrot.com" target="_blank" rel="noopener">Pepper&amp;Carrot</a> của David Revoy, giấy phép{' '}
+        Nguồn: 《打工人日记》 (Synapse Hanzi Studio Original); 《西游记》 (Ngô Thừa Ân · Public Domain); <a href="https://www.peppercarrot.com" target="_blank" rel="noopener">Pepper&amp;Carrot</a> của David Revoy, giấy phép{' '}
         <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>. Bản dịch tiếng Trung và tiếng Việt do cộng đồng thực hiện; Lớp tra từ (pinyin, Hán-Việt, nghĩa) do Synapse Hanzi biên soạn.
       </p>
     </div>

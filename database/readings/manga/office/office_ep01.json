@@ -1,0 +1,2045 @@
+{
+  "id": "office_ep01",
+  "series": "office",
+  "series_title": "打工人日记",
+  "series_title_vi": "Nhật Ký Dân Công Sở",
+  "collection": "office",
+  "volume": 1,
+  "chapter_in_volume": null,
+  "chapter_no": 1,
+  "title": {
+    "zh": "第一集：你在吗？",
+    "zh_trad": "第一集：你在嗎？",
+    "vi": "Tập 1: Em Có Đó Không?",
+    "pinyin": "dì yī jí ： nǐ zài ma ？"
+  },
+  "description_vi": "9 giờ 47 phút sáng, chuông thông báo công ty bỗng vang lên từ màn hình máy tính: 'Tiểu Dương, em có đó không? Qua văn phòng anh một lát nhé.' Lời nói nghe chừng vô hại, nhưng dân công sở đều biết: mỗi lần sếp bảo 'không có chuyện gì lớn', thì y như rằng việc lớn ngập đầu!",
+  "cover_image": "assets/images/readings/manga/office/office_ep01/cover.webp",
+  "source": "《打工人日记》原创职场情景喜剧 · Synapse Hanzi Studio",
+  "source_url": "https://github.com/Synapse-Hanzi",
+  "source_credits": "Kịch bản và tạo hình nhân vật độc quyền của Synapse Hanzi Studio. Thiết kế hỗ trợ học tiếng Trung công sở thực chiến với hệ thống tương tác đa giác quan (Pinyin, Hán-Việt, phân tích từ vựng & âm thanh).",
+  "license": "Original / Educational",
+  "page_count": 5,
+  "difficulty": "HSK 1 - 3",
+  "estimatedMinutes": 3,
+  "file": "database/readings/manga/office/office_ep01.json",
+  "proper_names": [
+    "小阳",
+    "小铃",
+    "王经理",
+    "王总",
+    "老周"
+  ],
+  "pages": [
+    {
+      "page_num": 1,
+      "image": "assets/images/readings/manga/office/office_ep01/page_01.webp",
+      "dialogues": [
+        {
+          "id": "p1_d1",
+          "character": "王经理 (Sếp Vương)",
+          "bbox": {
+            "x": 14.0,
+            "y": 8.0,
+            "width": 45.0,
+            "height": 13.0
+          },
+          "zh": "小阳，在吗？",
+          "vi": "Tiểu Dương, em có đó không?",
+          "zh_trad": "小陽，在嗎？",
+          "pinyin": "xiǎo yáng ， zài ma ？",
+          "tokens": [
+            {
+              "text": "小阳",
+              "text_trad": "小陽",
+              "pinyin": "Xiǎoyáng",
+              "hanviet": "Tiểu Dương",
+              "meaning_vi": "Tiểu Dương (nhân viên văn phòng trẻ)",
+              "hsk": null
+            },
+            {
+              "text": "在",
+              "text_trad": "在",
+              "pinyin": "zài",
+              "hanviet": "Tại",
+              "meaning_vi": "ở, đang",
+              "hsk": 1
+            },
+            {
+              "text": "吗",
+              "text_trad": "嗎",
+              "pinyin": "ma",
+              "hanviet": "Ma",
+              "meaning_vi": "à, không (trợ từ hỏi)",
+              "hsk": 1
+            }
+          ]
+        },
+        {
+          "id": "p1_d2",
+          "character": "小阳 (Tiểu Dương)",
+          "bbox": {
+            "x": 48.0,
+            "y": 24.0,
+            "width": 46.0,
+            "height": 13.0
+          },
+          "zh": "在……王总？",
+          "vi": "Dạ có... Sếp Vương?",
+          "zh_trad": "在……王總？",
+          "pinyin": "zài …… wáng zǒng ？",
+          "tokens": [
+            {
+              "text": "在",
+              "text_trad": "在",
+              "pinyin": "zài",
+              "hanviet": "Tại",
+              "meaning_vi": "ở, đang",
+              "hsk": 1
+            },
+            {
+              "text": "王总",
+              "text_trad": "王總",
+              "pinyin": "Wáng zǒng",
+              "hanviet": "Vương Tổng",
+              "meaning_vi": "Sếp Vương (Tổng giám đốc Vương)",
+              "hsk": null
+            }
+          ]
+        },
+        {
+          "id": "p1_d3",
+          "character": "王经理 (Sếp Vương)",
+          "bbox": {
+            "x": 14.0,
+            "y": 78.0,
+            "width": 48.0,
+            "height": 13.0
+          },
+          "zh": "来我办公室一下。",
+          "vi": "Qua văn phòng anh một lát nhé.",
+          "zh_trad": "來我辦公室一下。",
+          "pinyin": "lái wǒ bàn gōng shì yī xià 。",
+          "tokens": [
+            {
+              "text": "来",
+              "text_trad": "來",
+              "pinyin": "lái",
+              "hanviet": "Lai",
+              "meaning_vi": "đến, tới",
+              "hsk": 1
+            },
+            {
+              "text": "我",
+              "text_trad": "我",
+              "pinyin": "wǒ",
+              "hanviet": "Ngã",
+              "meaning_vi": "tôi",
+              "hsk": 1
+            },
+            {
+              "text": "办公室",
+              "text_trad": "辦公室",
+              "pinyin": "bàngōngshì",
+              "hanviet": "Biện Công Thất",
+              "meaning_vi": "văn phòng",
+              "hsk": 3
+            },
+            {
+              "text": "一下",
+              "text_trad": "一下",
+              "pinyin": "yíxià",
+              "hanviet": "Nhất Hạ",
+              "meaning_vi": "một chút, một lát, thử xem",
+              "hsk": 1
+            }
+          ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "p1_d1_w1",
+          "text": "小阳",
+          "text_trad": "小陽",
+          "pinyin": "Xiǎoyáng",
+          "hanviet": "Tiểu Dương",
+          "meaning_vi": "Tiểu Dương (nhân viên văn phòng trẻ)",
+          "hsk": null,
+          "bbox": {
+            "x": 14.0,
+            "y": 8.0,
+            "width": 22.5,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 14.0,
+              "y": 8.0,
+              "width": 22.5,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "小陽，在嗎？",
+          "sentence_zh_simplified": "小阳，在吗？",
+          "sentence_vi": "Tiểu Dương, em có đó không?",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d1_w2",
+          "text": "在",
+          "text_trad": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "meaning_vi": "ở, đang",
+          "hsk": 1,
+          "bbox": {
+            "x": 36.5,
+            "y": 8.0,
+            "width": 11.25,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 36.5,
+              "y": 8.0,
+              "width": 11.25,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "小陽，在嗎？",
+          "sentence_zh_simplified": "小阳，在吗？",
+          "sentence_vi": "Tiểu Dương, em có đó không?",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d1_w3",
+          "text": "吗",
+          "text_trad": "嗎",
+          "pinyin": "ma",
+          "hanviet": "Ma",
+          "meaning_vi": "à, không (trợ từ hỏi)",
+          "hsk": 1,
+          "bbox": {
+            "x": 47.75,
+            "y": 8.0,
+            "width": 11.25,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 47.75,
+              "y": 8.0,
+              "width": 11.25,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "小陽，在嗎？",
+          "sentence_zh_simplified": "小阳，在吗？",
+          "sentence_vi": "Tiểu Dương, em có đó không?",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d2_w1",
+          "text": "在",
+          "text_trad": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "meaning_vi": "ở, đang",
+          "hsk": 1,
+          "bbox": {
+            "x": 48.0,
+            "y": 24.0,
+            "width": 15.333,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 48.0,
+              "y": 24.0,
+              "width": 15.333,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "在……王總？",
+          "sentence_zh_simplified": "在……王总？",
+          "sentence_vi": "Dạ có... Sếp Vương?",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p1_d2"
+        },
+        {
+          "id": "p1_d2_w2",
+          "text": "王总",
+          "text_trad": "王總",
+          "pinyin": "Wáng zǒng",
+          "hanviet": "Vương Tổng",
+          "meaning_vi": "Sếp Vương (Tổng giám đốc Vương)",
+          "hsk": null,
+          "bbox": {
+            "x": 63.333,
+            "y": 24.0,
+            "width": 30.667,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 63.333,
+              "y": 24.0,
+              "width": 30.667,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "在……王總？",
+          "sentence_zh_simplified": "在……王总？",
+          "sentence_vi": "Dạ có... Sếp Vương?",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p1_d2"
+        },
+        {
+          "id": "p1_d3_w1",
+          "text": "来",
+          "text_trad": "來",
+          "pinyin": "lái",
+          "hanviet": "Lai",
+          "meaning_vi": "đến, tới",
+          "hsk": 1,
+          "bbox": {
+            "x": 14.0,
+            "y": 78.0,
+            "width": 6.857,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 14.0,
+              "y": 78.0,
+              "width": 6.857,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "來我辦公室一下。",
+          "sentence_zh_simplified": "来我办公室一下。",
+          "sentence_vi": "Qua văn phòng anh một lát nhé.",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p1_d3"
+        },
+        {
+          "id": "p1_d3_w2",
+          "text": "我",
+          "text_trad": "我",
+          "pinyin": "wǒ",
+          "hanviet": "Ngã",
+          "meaning_vi": "tôi",
+          "hsk": 1,
+          "bbox": {
+            "x": 20.857,
+            "y": 78.0,
+            "width": 6.857,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 20.857,
+              "y": 78.0,
+              "width": 6.857,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "來我辦公室一下。",
+          "sentence_zh_simplified": "来我办公室一下。",
+          "sentence_vi": "Qua văn phòng anh một lát nhé.",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p1_d3"
+        },
+        {
+          "id": "p1_d3_w3",
+          "text": "办公室",
+          "text_trad": "辦公室",
+          "pinyin": "bàngōngshì",
+          "hanviet": "Biện Công Thất",
+          "meaning_vi": "văn phòng",
+          "hsk": 3,
+          "bbox": {
+            "x": 27.714,
+            "y": 78.0,
+            "width": 20.571,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 27.714,
+              "y": 78.0,
+              "width": 20.571,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "來我辦公室一下。",
+          "sentence_zh_simplified": "来我办公室一下。",
+          "sentence_vi": "Qua văn phòng anh một lát nhé.",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p1_d3"
+        },
+        {
+          "id": "p1_d3_w4",
+          "text": "一下",
+          "text_trad": "一下",
+          "pinyin": "yíxià",
+          "hanviet": "Nhất Hạ",
+          "meaning_vi": "một chút, một lát, thử xem",
+          "hsk": 1,
+          "bbox": {
+            "x": 48.286,
+            "y": 78.0,
+            "width": 13.714,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 48.286,
+              "y": 78.0,
+              "width": 13.714,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "來我辦公室一下。",
+          "sentence_zh_simplified": "来我办公室一下。",
+          "sentence_vi": "Qua văn phòng anh một lát nhé.",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p1_d3"
+        }
+      ],
+      "ocr": {
+        "image_px": [
+          1376,
+          768
+        ]
+      }
+    },
+    {
+      "page_num": 2,
+      "image": "assets/images/readings/manga/office/office_ep01/page_02.webp",
+      "dialogues": [
+        {
+          "id": "p2_d1",
+          "character": "小铃 (Tiểu Linh)",
+          "bbox": {
+            "x": 62.0,
+            "y": 10.0,
+            "width": 32.0,
+            "height": 13.0
+          },
+          "zh": "怎么了？",
+          "vi": "Sao thế?",
+          "zh_trad": "怎麼了？",
+          "pinyin": "zěn me le ？",
+          "tokens": [
+            {
+              "text": "怎么",
+              "text_trad": "怎麼",
+              "pinyin": "zěnme",
+              "hanviet": "Chẩm Ma",
+              "meaning_vi": "thế nào, sao",
+              "hsk": 1
+            },
+            {
+              "text": "了",
+              "text_trad": "了",
+              "pinyin": "le",
+              "hanviet": "Liễu",
+              "meaning_vi": "rồi (trợ từ)",
+              "hsk": 1
+            }
+          ]
+        },
+        {
+          "id": "p2_d2",
+          "character": "小阳 (Tiểu Dương)",
+          "bbox": {
+            "x": 15.0,
+            "y": 12.0,
+            "width": 45.0,
+            "height": 13.0
+          },
+          "zh": "不知道，感觉要出事了。",
+          "vi": "Không biết nữa, nhưng có linh cảm sắp to chuyện rồi.",
+          "zh_trad": "不知道，感覺要出事了。",
+          "pinyin": "bù zhī dào ， gǎn jué yào chū shì le 。",
+          "tokens": [
+            {
+              "text": "不",
+              "text_trad": "不",
+              "pinyin": "bù",
+              "hanviet": "Bất",
+              "meaning_vi": "không",
+              "hsk": 1
+            },
+            {
+              "text": "知道",
+              "text_trad": "知道",
+              "pinyin": "zhīdào",
+              "hanviet": "Tri Đạo",
+              "meaning_vi": "biết",
+              "hsk": 1
+            },
+            {
+              "text": "感觉",
+              "text_trad": "感覺",
+              "pinyin": "gǎnjué",
+              "hanviet": "Cảm Giác",
+              "meaning_vi": "cảm giác",
+              "hsk": 4
+            },
+            {
+              "text": "要",
+              "text_trad": "要",
+              "pinyin": "yào",
+              "hanviet": "Yêu",
+              "meaning_vi": "muốn, cần",
+              "hsk": 1
+            },
+            {
+              "text": "出事",
+              "text_trad": "出事",
+              "pinyin": "chūshì",
+              "hanviet": "Xuất Sự",
+              "meaning_vi": "xảy ra chuyện không hay, gặp biến cố",
+              "hsk": null
+            },
+            {
+              "text": "了",
+              "text_trad": "了",
+              "pinyin": "le",
+              "hanviet": "Liễu",
+              "meaning_vi": "rồi (trợ từ)",
+              "hsk": 1
+            }
+          ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "p2_d1_w1",
+          "text": "怎么",
+          "text_trad": "怎麼",
+          "pinyin": "zěnme",
+          "hanviet": "Chẩm Ma",
+          "meaning_vi": "thế nào, sao",
+          "hsk": 1,
+          "bbox": {
+            "x": 62.0,
+            "y": 10.0,
+            "width": 21.333,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 62.0,
+              "y": 10.0,
+              "width": 21.333,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "怎麼了？",
+          "sentence_zh_simplified": "怎么了？",
+          "sentence_vi": "Sao thế?",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w2",
+          "text": "了",
+          "text_trad": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "meaning_vi": "rồi (trợ từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 83.333,
+            "y": 10.0,
+            "width": 10.667,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 83.333,
+              "y": 10.0,
+              "width": 10.667,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "怎麼了？",
+          "sentence_zh_simplified": "怎么了？",
+          "sentence_vi": "Sao thế?",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d2_w1",
+          "text": "不",
+          "text_trad": "不",
+          "pinyin": "bù",
+          "hanviet": "Bất",
+          "meaning_vi": "không",
+          "hsk": 1,
+          "bbox": {
+            "x": 15.0,
+            "y": 12.0,
+            "width": 5.0,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 15.0,
+              "y": 12.0,
+              "width": 5.0,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "不知道，感覺要出事了。",
+          "sentence_zh_simplified": "不知道，感觉要出事了。",
+          "sentence_vi": "Không biết nữa, nhưng có linh cảm sắp to chuyện rồi.",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p2_d2"
+        },
+        {
+          "id": "p2_d2_w2",
+          "text": "知道",
+          "text_trad": "知道",
+          "pinyin": "zhīdào",
+          "hanviet": "Tri Đạo",
+          "meaning_vi": "biết",
+          "hsk": 1,
+          "bbox": {
+            "x": 20.0,
+            "y": 12.0,
+            "width": 10.0,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 20.0,
+              "y": 12.0,
+              "width": 10.0,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "不知道，感覺要出事了。",
+          "sentence_zh_simplified": "不知道，感觉要出事了。",
+          "sentence_vi": "Không biết nữa, nhưng có linh cảm sắp to chuyện rồi.",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p2_d2"
+        },
+        {
+          "id": "p2_d2_w3",
+          "text": "感觉",
+          "text_trad": "感覺",
+          "pinyin": "gǎnjué",
+          "hanviet": "Cảm Giác",
+          "meaning_vi": "cảm giác",
+          "hsk": 4,
+          "bbox": {
+            "x": 30.0,
+            "y": 12.0,
+            "width": 10.0,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 30.0,
+              "y": 12.0,
+              "width": 10.0,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "不知道，感覺要出事了。",
+          "sentence_zh_simplified": "不知道，感觉要出事了。",
+          "sentence_vi": "Không biết nữa, nhưng có linh cảm sắp to chuyện rồi.",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p2_d2"
+        },
+        {
+          "id": "p2_d2_w4",
+          "text": "要",
+          "text_trad": "要",
+          "pinyin": "yào",
+          "hanviet": "Yêu",
+          "meaning_vi": "muốn, cần",
+          "hsk": 1,
+          "bbox": {
+            "x": 40.0,
+            "y": 12.0,
+            "width": 5.0,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 40.0,
+              "y": 12.0,
+              "width": 5.0,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "不知道，感覺要出事了。",
+          "sentence_zh_simplified": "不知道，感觉要出事了。",
+          "sentence_vi": "Không biết nữa, nhưng có linh cảm sắp to chuyện rồi.",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p2_d2"
+        },
+        {
+          "id": "p2_d2_w5",
+          "text": "出事",
+          "text_trad": "出事",
+          "pinyin": "chūshì",
+          "hanviet": "Xuất Sự",
+          "meaning_vi": "xảy ra chuyện không hay, gặp biến cố",
+          "hsk": null,
+          "bbox": {
+            "x": 45.0,
+            "y": 12.0,
+            "width": 10.0,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 45.0,
+              "y": 12.0,
+              "width": 10.0,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "不知道，感覺要出事了。",
+          "sentence_zh_simplified": "不知道，感觉要出事了。",
+          "sentence_vi": "Không biết nữa, nhưng có linh cảm sắp to chuyện rồi.",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p2_d2"
+        },
+        {
+          "id": "p2_d2_w6",
+          "text": "了",
+          "text_trad": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "meaning_vi": "rồi (trợ từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 55.0,
+            "y": 12.0,
+            "width": 5.0,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 55.0,
+              "y": 12.0,
+              "width": 5.0,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "不知道，感覺要出事了。",
+          "sentence_zh_simplified": "不知道，感觉要出事了。",
+          "sentence_vi": "Không biết nữa, nhưng có linh cảm sắp to chuyện rồi.",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p2_d2"
+        }
+      ],
+      "ocr": {
+        "image_px": [
+          1376,
+          768
+        ]
+      }
+    },
+    {
+      "page_num": 3,
+      "image": "assets/images/readings/manga/office/office_ep01/page_03.webp",
+      "dialogues": [
+        {
+          "id": "p3_d1",
+          "character": "王经理 (Sếp Vương)",
+          "bbox": {
+            "x": 45.0,
+            "y": 10.0,
+            "width": 50.0,
+            "height": 13.0
+          },
+          "zh": "别紧张，没什么大事。",
+          "vi": "Đừng căng thẳng, chẳng có chuyện gì lớn đâu.",
+          "zh_trad": "別緊張，沒什麼大事。",
+          "pinyin": "bié jǐn zhāng ， méi shén me dà shì 。",
+          "tokens": [
+            {
+              "text": "别",
+              "text_trad": "別",
+              "pinyin": "bié",
+              "hanviet": "Biệt ¹",
+              "meaning_vi": "đừng",
+              "hsk": 2
+            },
+            {
+              "text": "紧张",
+              "text_trad": "緊張",
+              "pinyin": "jǐnzhāng",
+              "hanviet": "Khẩn Trương",
+              "meaning_vi": "căng thẳng, hồi hộp",
+              "hsk": 4
+            },
+            {
+              "text": "没",
+              "text_trad": "沒",
+              "pinyin": "méi",
+              "hanviet": "Một",
+              "meaning_vi": "không có; chưa",
+              "hsk": null
+            },
+            {
+              "text": "什么",
+              "text_trad": "什麼",
+              "pinyin": "shénme",
+              "hanviet": "Thập Ma",
+              "meaning_vi": "cái gì",
+              "hsk": 1
+            },
+            {
+              "text": "大事",
+              "text_trad": "大事",
+              "pinyin": "dàshì",
+              "hanviet": "Đại Sự",
+              "meaning_vi": "việc lớn, chuyện lớn",
+              "hsk": 5
+            }
+          ]
+        },
+        {
+          "id": "p3_d2",
+          "character": "王经理 (Sếp Vương)",
+          "bbox": {
+            "x": 45.0,
+            "y": 26.0,
+            "width": 50.0,
+            "height": 13.0
+          },
+          "zh": "这个项目，你跟一下。",
+          "vi": "Dự án này, em theo sát nhé.",
+          "zh_trad": "這個項目，你跟一下。",
+          "pinyin": "zhè ge xiàng mù ， nǐ gēn yī xià 。",
+          "tokens": [
+            {
+              "text": "这个",
+              "text_trad": "這個",
+              "pinyin": "zhège",
+              "hanviet": "Giá Cá",
+              "meaning_vi": "cái này (đại từ)",
+              "hsk": 1
+            },
+            {
+              "text": "项目",
+              "text_trad": "項目",
+              "pinyin": "xiàngmù",
+              "hanviet": "Hạng Mục",
+              "meaning_vi": "dự án, hạng mục",
+              "hsk": 5
+            },
+            {
+              "text": "你",
+              "text_trad": "你",
+              "pinyin": "nǐ",
+              "hanviet": "Nễ",
+              "meaning_vi": "bạn",
+              "hsk": 1
+            },
+            {
+              "text": "跟",
+              "text_trad": "跟",
+              "pinyin": "gēn",
+              "hanviet": "Cân",
+              "meaning_vi": "cùng với, theo",
+              "hsk": 2
+            },
+            {
+              "text": "一下",
+              "text_trad": "一下",
+              "pinyin": "yíxià",
+              "hanviet": "Nhất Hạ",
+              "meaning_vi": "một chút, một lát, thử xem",
+              "hsk": 1
+            }
+          ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "p3_d1_w1",
+          "text": "别",
+          "text_trad": "別",
+          "pinyin": "bié",
+          "hanviet": "Biệt ¹",
+          "meaning_vi": "đừng",
+          "hsk": 2,
+          "bbox": {
+            "x": 45.0,
+            "y": 10.0,
+            "width": 6.25,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 45.0,
+              "y": 10.0,
+              "width": 6.25,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "別緊張，沒什麼大事。",
+          "sentence_zh_simplified": "别紧张，没什么大事。",
+          "sentence_vi": "Đừng căng thẳng, chẳng có chuyện gì lớn đâu.",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w2",
+          "text": "紧张",
+          "text_trad": "緊張",
+          "pinyin": "jǐnzhāng",
+          "hanviet": "Khẩn Trương",
+          "meaning_vi": "căng thẳng, hồi hộp",
+          "hsk": 4,
+          "bbox": {
+            "x": 51.25,
+            "y": 10.0,
+            "width": 12.5,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 51.25,
+              "y": 10.0,
+              "width": 12.5,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "別緊張，沒什麼大事。",
+          "sentence_zh_simplified": "别紧张，没什么大事。",
+          "sentence_vi": "Đừng căng thẳng, chẳng có chuyện gì lớn đâu.",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w3",
+          "text": "没",
+          "text_trad": "沒",
+          "pinyin": "méi",
+          "hanviet": "Một",
+          "meaning_vi": "không có; chưa",
+          "hsk": null,
+          "bbox": {
+            "x": 63.75,
+            "y": 10.0,
+            "width": 6.25,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 63.75,
+              "y": 10.0,
+              "width": 6.25,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "別緊張，沒什麼大事。",
+          "sentence_zh_simplified": "别紧张，没什么大事。",
+          "sentence_vi": "Đừng căng thẳng, chẳng có chuyện gì lớn đâu.",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w4",
+          "text": "什么",
+          "text_trad": "什麼",
+          "pinyin": "shénme",
+          "hanviet": "Thập Ma",
+          "meaning_vi": "cái gì",
+          "hsk": 1,
+          "bbox": {
+            "x": 70.0,
+            "y": 10.0,
+            "width": 12.5,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 70.0,
+              "y": 10.0,
+              "width": 12.5,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "別緊張，沒什麼大事。",
+          "sentence_zh_simplified": "别紧张，没什么大事。",
+          "sentence_vi": "Đừng căng thẳng, chẳng có chuyện gì lớn đâu.",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w5",
+          "text": "大事",
+          "text_trad": "大事",
+          "pinyin": "dàshì",
+          "hanviet": "Đại Sự",
+          "meaning_vi": "việc lớn, chuyện lớn",
+          "hsk": 5,
+          "bbox": {
+            "x": 82.5,
+            "y": 10.0,
+            "width": 12.5,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 82.5,
+              "y": 10.0,
+              "width": 12.5,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "別緊張，沒什麼大事。",
+          "sentence_zh_simplified": "别紧张，没什么大事。",
+          "sentence_vi": "Đừng căng thẳng, chẳng có chuyện gì lớn đâu.",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d2_w1",
+          "text": "这个",
+          "text_trad": "這個",
+          "pinyin": "zhège",
+          "hanviet": "Giá Cá",
+          "meaning_vi": "cái này (đại từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 45.0,
+            "y": 26.0,
+            "width": 12.5,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 45.0,
+              "y": 26.0,
+              "width": 12.5,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "這個項目，你跟一下。",
+          "sentence_zh_simplified": "这个项目，你跟一下。",
+          "sentence_vi": "Dự án này, em theo sát nhé.",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p3_d2"
+        },
+        {
+          "id": "p3_d2_w2",
+          "text": "项目",
+          "text_trad": "項目",
+          "pinyin": "xiàngmù",
+          "hanviet": "Hạng Mục",
+          "meaning_vi": "dự án, hạng mục",
+          "hsk": 5,
+          "bbox": {
+            "x": 57.5,
+            "y": 26.0,
+            "width": 12.5,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 57.5,
+              "y": 26.0,
+              "width": 12.5,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "這個項目，你跟一下。",
+          "sentence_zh_simplified": "这个项目，你跟一下。",
+          "sentence_vi": "Dự án này, em theo sát nhé.",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p3_d2"
+        },
+        {
+          "id": "p3_d2_w3",
+          "text": "你",
+          "text_trad": "你",
+          "pinyin": "nǐ",
+          "hanviet": "Nễ",
+          "meaning_vi": "bạn",
+          "hsk": 1,
+          "bbox": {
+            "x": 70.0,
+            "y": 26.0,
+            "width": 6.25,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 70.0,
+              "y": 26.0,
+              "width": 6.25,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "這個項目，你跟一下。",
+          "sentence_zh_simplified": "这个项目，你跟一下。",
+          "sentence_vi": "Dự án này, em theo sát nhé.",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p3_d2"
+        },
+        {
+          "id": "p3_d2_w4",
+          "text": "跟",
+          "text_trad": "跟",
+          "pinyin": "gēn",
+          "hanviet": "Cân",
+          "meaning_vi": "cùng với, theo",
+          "hsk": 2,
+          "bbox": {
+            "x": 76.25,
+            "y": 26.0,
+            "width": 6.25,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 76.25,
+              "y": 26.0,
+              "width": 6.25,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "這個項目，你跟一下。",
+          "sentence_zh_simplified": "这个项目，你跟一下。",
+          "sentence_vi": "Dự án này, em theo sát nhé.",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p3_d2"
+        },
+        {
+          "id": "p3_d2_w5",
+          "text": "一下",
+          "text_trad": "一下",
+          "pinyin": "yíxià",
+          "hanviet": "Nhất Hạ",
+          "meaning_vi": "một chút, một lát, thử xem",
+          "hsk": 1,
+          "bbox": {
+            "x": 82.5,
+            "y": 26.0,
+            "width": 12.5,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 82.5,
+              "y": 26.0,
+              "width": 12.5,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "這個項目，你跟一下。",
+          "sentence_zh_simplified": "这个项目，你跟一下。",
+          "sentence_vi": "Dự án này, em theo sát nhé.",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p3_d2"
+        }
+      ],
+      "ocr": {
+        "image_px": [
+          1376,
+          768
+        ]
+      }
+    },
+    {
+      "page_num": 4,
+      "image": "assets/images/readings/manga/office/office_ep01/page_04.webp",
+      "dialogues": [
+        {
+          "id": "p4_d1",
+          "character": "小铃 (Tiểu Linh)",
+          "bbox": {
+            "x": 60.0,
+            "y": 10.0,
+            "width": 34.0,
+            "height": 13.0
+          },
+          "zh": "所以呢？",
+          "vi": "Thế rốt cuộc sao?",
+          "zh_trad": "所以呢？",
+          "pinyin": "suǒ yǐ ne ？",
+          "tokens": [
+            {
+              "text": "所以",
+              "text_trad": "所以",
+              "pinyin": "suǒyǐ",
+              "hanviet": "Sở Dĩ",
+              "meaning_vi": "vì vậy",
+              "hsk": 2
+            },
+            {
+              "text": "呢",
+              "text_trad": "呢",
+              "pinyin": "ne",
+              "hanviet": "Ni",
+              "meaning_vi": "thế còn (trợ từ)",
+              "hsk": 1
+            }
+          ]
+        },
+        {
+          "id": "p4_d2",
+          "character": "小阳 (Tiểu Dương)",
+          "bbox": {
+            "x": 15.0,
+            "y": 12.0,
+            "width": 42.0,
+            "height": 13.0
+          },
+          "zh": "他说没什么大事。",
+          "vi": "Sếp bảo không có chuyện gì to tát cả.",
+          "zh_trad": "他說沒什麼大事。",
+          "pinyin": "tā shuō méi shén me dà shì 。",
+          "tokens": [
+            {
+              "text": "他",
+              "text_trad": "他",
+              "pinyin": "tā",
+              "hanviet": "Tha",
+              "meaning_vi": "anh ấy, nó",
+              "hsk": 1
+            },
+            {
+              "text": "说",
+              "text_trad": "說",
+              "pinyin": "shuō",
+              "hanviet": "Thuyết",
+              "meaning_vi": "nói",
+              "hsk": 1
+            },
+            {
+              "text": "没",
+              "text_trad": "沒",
+              "pinyin": "méi",
+              "hanviet": "Một",
+              "meaning_vi": "không có; chưa",
+              "hsk": null
+            },
+            {
+              "text": "什么",
+              "text_trad": "什麼",
+              "pinyin": "shénme",
+              "hanviet": "Thập Ma",
+              "meaning_vi": "cái gì",
+              "hsk": 1
+            },
+            {
+              "text": "大事",
+              "text_trad": "大事",
+              "pinyin": "dàshì",
+              "hanviet": "Đại Sự",
+              "meaning_vi": "việc lớn, chuyện lớn",
+              "hsk": 5
+            }
+          ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "p4_d1_w1",
+          "text": "所以",
+          "text_trad": "所以",
+          "pinyin": "suǒyǐ",
+          "hanviet": "Sở Dĩ",
+          "meaning_vi": "vì vậy",
+          "hsk": 2,
+          "bbox": {
+            "x": 60.0,
+            "y": 10.0,
+            "width": 22.667,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 60.0,
+              "y": 10.0,
+              "width": 22.667,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "所以呢？",
+          "sentence_zh_simplified": "所以呢？",
+          "sentence_vi": "Thế rốt cuộc sao?",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d1_w2",
+          "text": "呢",
+          "text_trad": "呢",
+          "pinyin": "ne",
+          "hanviet": "Ni",
+          "meaning_vi": "thế còn (trợ từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 82.667,
+            "y": 10.0,
+            "width": 11.333,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 82.667,
+              "y": 10.0,
+              "width": 11.333,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "所以呢？",
+          "sentence_zh_simplified": "所以呢？",
+          "sentence_vi": "Thế rốt cuộc sao?",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d2_w1",
+          "text": "他",
+          "text_trad": "他",
+          "pinyin": "tā",
+          "hanviet": "Tha",
+          "meaning_vi": "anh ấy, nó",
+          "hsk": 1,
+          "bbox": {
+            "x": 15.0,
+            "y": 12.0,
+            "width": 6.0,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 15.0,
+              "y": 12.0,
+              "width": 6.0,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "他說沒什麼大事。",
+          "sentence_zh_simplified": "他说没什么大事。",
+          "sentence_vi": "Sếp bảo không có chuyện gì to tát cả.",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p4_d2"
+        },
+        {
+          "id": "p4_d2_w2",
+          "text": "说",
+          "text_trad": "說",
+          "pinyin": "shuō",
+          "hanviet": "Thuyết",
+          "meaning_vi": "nói",
+          "hsk": 1,
+          "bbox": {
+            "x": 21.0,
+            "y": 12.0,
+            "width": 6.0,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 21.0,
+              "y": 12.0,
+              "width": 6.0,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "他說沒什麼大事。",
+          "sentence_zh_simplified": "他说没什么大事。",
+          "sentence_vi": "Sếp bảo không có chuyện gì to tát cả.",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p4_d2"
+        },
+        {
+          "id": "p4_d2_w3",
+          "text": "没",
+          "text_trad": "沒",
+          "pinyin": "méi",
+          "hanviet": "Một",
+          "meaning_vi": "không có; chưa",
+          "hsk": null,
+          "bbox": {
+            "x": 27.0,
+            "y": 12.0,
+            "width": 6.0,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 27.0,
+              "y": 12.0,
+              "width": 6.0,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "他說沒什麼大事。",
+          "sentence_zh_simplified": "他说没什么大事。",
+          "sentence_vi": "Sếp bảo không có chuyện gì to tát cả.",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p4_d2"
+        },
+        {
+          "id": "p4_d2_w4",
+          "text": "什么",
+          "text_trad": "什麼",
+          "pinyin": "shénme",
+          "hanviet": "Thập Ma",
+          "meaning_vi": "cái gì",
+          "hsk": 1,
+          "bbox": {
+            "x": 33.0,
+            "y": 12.0,
+            "width": 12.0,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 33.0,
+              "y": 12.0,
+              "width": 12.0,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "他說沒什麼大事。",
+          "sentence_zh_simplified": "他说没什么大事。",
+          "sentence_vi": "Sếp bảo không có chuyện gì to tát cả.",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p4_d2"
+        },
+        {
+          "id": "p4_d2_w5",
+          "text": "大事",
+          "text_trad": "大事",
+          "pinyin": "dàshì",
+          "hanviet": "Đại Sự",
+          "meaning_vi": "việc lớn, chuyện lớn",
+          "hsk": 5,
+          "bbox": {
+            "x": 45.0,
+            "y": 12.0,
+            "width": 12.0,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 45.0,
+              "y": 12.0,
+              "width": 12.0,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "他說沒什麼大事。",
+          "sentence_zh_simplified": "他说没什么大事。",
+          "sentence_vi": "Sếp bảo không có chuyện gì to tát cả.",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p4_d2"
+        }
+      ],
+      "ocr": {
+        "image_px": [
+          1376,
+          768
+        ]
+      }
+    },
+    {
+      "page_num": 5,
+      "image": "assets/images/readings/manga/office/office_ep01/page_05.webp",
+      "dialogues": [
+        {
+          "id": "p5_d1",
+          "character": "小铃 (Tiểu Linh)",
+          "bbox": {
+            "x": 8.0,
+            "y": 10.0,
+            "width": 44.0,
+            "height": 13.0
+          },
+          "zh": "那你怎么一脸绝望？",
+          "vi": "Thế sao mặt cậu trông tuyệt vọng thế?",
+          "zh_trad": "那你怎麼一臉絕望？",
+          "pinyin": "nà nǐ zěn me yī liǎn jué wàng ？",
+          "tokens": [
+            {
+              "text": "那",
+              "text_trad": "那",
+              "pinyin": "nà",
+              "hanviet": "Na",
+              "meaning_vi": "đó, kia",
+              "hsk": 1
+            },
+            {
+              "text": "你",
+              "text_trad": "你",
+              "pinyin": "nǐ",
+              "hanviet": "Nễ",
+              "meaning_vi": "bạn",
+              "hsk": 1
+            },
+            {
+              "text": "怎么",
+              "text_trad": "怎麼",
+              "pinyin": "zěnme",
+              "hanviet": "Chẩm Ma",
+              "meaning_vi": "thế nào, sao",
+              "hsk": 1
+            },
+            {
+              "text": "一脸",
+              "text_trad": "一臉",
+              "pinyin": "yìliǎn",
+              "hanviet": "Nhất Kiểm",
+              "meaning_vi": "tràn ngập vẻ mặt, nguyên cả nét mặt",
+              "hsk": null
+            },
+            {
+              "text": "绝望",
+              "text_trad": "絕望",
+              "pinyin": "juéwàng",
+              "hanviet": "Tuyệt Vọng",
+              "meaning_vi": "tuyệt vọng",
+              "hsk": 6
+            }
+          ]
+        },
+        {
+          "id": "p5_d2",
+          "character": "小阳 (Tiểu Dương)",
+          "bbox": {
+            "x": 52.0,
+            "y": 10.0,
+            "width": 45.0,
+            "height": 15.0
+          },
+          "zh": "每次他说没什么大事，最后都有大事。",
+          "vi": "Lần nào sếp bảo không có chuyện gì lớn, y như rằng cuối cùng việc lớn ngập đầu.",
+          "zh_trad": "每次他說沒什麼大事，最後都有大事。",
+          "pinyin": "měi cì tā shuō méi shén me dà shì ， zuì hòu dōu yǒu dà shì 。",
+          "tokens": [
+            {
+              "text": "每次",
+              "text_trad": "每次",
+              "pinyin": "měicì",
+              "hanviet": "Mỗi Thứ",
+              "meaning_vi": "mỗi lần, lần nào cũng",
+              "hsk": null
+            },
+            {
+              "text": "他",
+              "text_trad": "他",
+              "pinyin": "tā",
+              "hanviet": "Tha",
+              "meaning_vi": "anh ấy, nó",
+              "hsk": 1
+            },
+            {
+              "text": "说",
+              "text_trad": "說",
+              "pinyin": "shuō",
+              "hanviet": "Thuyết",
+              "meaning_vi": "nói",
+              "hsk": 1
+            },
+            {
+              "text": "没",
+              "text_trad": "沒",
+              "pinyin": "méi",
+              "hanviet": "Một",
+              "meaning_vi": "không có; chưa",
+              "hsk": null
+            },
+            {
+              "text": "什么",
+              "text_trad": "什麼",
+              "pinyin": "shénme",
+              "hanviet": "Thập Ma",
+              "meaning_vi": "cái gì",
+              "hsk": 1
+            },
+            {
+              "text": "大事",
+              "text_trad": "大事",
+              "pinyin": "dàshì",
+              "hanviet": "Đại Sự",
+              "meaning_vi": "việc lớn, chuyện lớn",
+              "hsk": 5
+            },
+            {
+              "text": "最后",
+              "text_trad": "最後",
+              "pinyin": "zuìhòu",
+              "hanviet": "Tối Hậu",
+              "meaning_vi": "cuối cùng",
+              "hsk": 3
+            },
+            {
+              "text": "都",
+              "text_trad": "都",
+              "pinyin": "dōu",
+              "hanviet": "Đô",
+              "meaning_vi": "đều",
+              "hsk": 1
+            },
+            {
+              "text": "有",
+              "text_trad": "有",
+              "pinyin": "yǒu",
+              "hanviet": "Hữu",
+              "meaning_vi": "có",
+              "hsk": 1
+            },
+            {
+              "text": "大事",
+              "text_trad": "大事",
+              "pinyin": "dàshì",
+              "hanviet": "Đại Sự",
+              "meaning_vi": "việc lớn, chuyện lớn",
+              "hsk": 5
+            }
+          ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "p5_d1_w1",
+          "text": "那",
+          "text_trad": "那",
+          "pinyin": "nà",
+          "hanviet": "Na",
+          "meaning_vi": "đó, kia",
+          "hsk": 1,
+          "bbox": {
+            "x": 8.0,
+            "y": 10.0,
+            "width": 5.5,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 8.0,
+              "y": 10.0,
+              "width": 5.5,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "那你怎麼一臉絕望？",
+          "sentence_zh_simplified": "那你怎么一脸绝望？",
+          "sentence_vi": "Thế sao mặt cậu trông tuyệt vọng thế?",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w2",
+          "text": "你",
+          "text_trad": "你",
+          "pinyin": "nǐ",
+          "hanviet": "Nễ",
+          "meaning_vi": "bạn",
+          "hsk": 1,
+          "bbox": {
+            "x": 13.5,
+            "y": 10.0,
+            "width": 5.5,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 13.5,
+              "y": 10.0,
+              "width": 5.5,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "那你怎麼一臉絕望？",
+          "sentence_zh_simplified": "那你怎么一脸绝望？",
+          "sentence_vi": "Thế sao mặt cậu trông tuyệt vọng thế?",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w3",
+          "text": "怎么",
+          "text_trad": "怎麼",
+          "pinyin": "zěnme",
+          "hanviet": "Chẩm Ma",
+          "meaning_vi": "thế nào, sao",
+          "hsk": 1,
+          "bbox": {
+            "x": 19.0,
+            "y": 10.0,
+            "width": 11.0,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 19.0,
+              "y": 10.0,
+              "width": 11.0,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "那你怎麼一臉絕望？",
+          "sentence_zh_simplified": "那你怎么一脸绝望？",
+          "sentence_vi": "Thế sao mặt cậu trông tuyệt vọng thế?",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w4",
+          "text": "一脸",
+          "text_trad": "一臉",
+          "pinyin": "yìliǎn",
+          "hanviet": "Nhất Kiểm",
+          "meaning_vi": "tràn ngập vẻ mặt, nguyên cả nét mặt",
+          "hsk": null,
+          "bbox": {
+            "x": 30.0,
+            "y": 10.0,
+            "width": 11.0,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 30.0,
+              "y": 10.0,
+              "width": 11.0,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "那你怎麼一臉絕望？",
+          "sentence_zh_simplified": "那你怎么一脸绝望？",
+          "sentence_vi": "Thế sao mặt cậu trông tuyệt vọng thế?",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w5",
+          "text": "绝望",
+          "text_trad": "絕望",
+          "pinyin": "juéwàng",
+          "hanviet": "Tuyệt Vọng",
+          "meaning_vi": "tuyệt vọng",
+          "hsk": 6,
+          "bbox": {
+            "x": 41.0,
+            "y": 10.0,
+            "width": 11.0,
+            "height": 13.0
+          },
+          "rects": [
+            {
+              "x": 41.0,
+              "y": 10.0,
+              "width": 11.0,
+              "height": 13.0
+            }
+          ],
+          "sentence_zh": "那你怎麼一臉絕望？",
+          "sentence_zh_simplified": "那你怎么一脸绝望？",
+          "sentence_vi": "Thế sao mặt cậu trông tuyệt vọng thế?",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d2_w1",
+          "text": "每次",
+          "text_trad": "每次",
+          "pinyin": "měicì",
+          "hanviet": "Mỗi Thứ",
+          "meaning_vi": "mỗi lần, lần nào cũng",
+          "hsk": null,
+          "bbox": {
+            "x": 52.0,
+            "y": 10.0,
+            "width": 6.0,
+            "height": 15.0
+          },
+          "rects": [
+            {
+              "x": 52.0,
+              "y": 10.0,
+              "width": 6.0,
+              "height": 15.0
+            }
+          ],
+          "sentence_zh": "每次他說沒什麼大事，最後都有大事。",
+          "sentence_zh_simplified": "每次他说没什么大事，最后都有大事。",
+          "sentence_vi": "Lần nào sếp bảo không có chuyện gì lớn, y như rằng cuối cùng việc lớn ngập đầu.",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p5_d2"
+        },
+        {
+          "id": "p5_d2_w2",
+          "text": "他",
+          "text_trad": "他",
+          "pinyin": "tā",
+          "hanviet": "Tha",
+          "meaning_vi": "anh ấy, nó",
+          "hsk": 1,
+          "bbox": {
+            "x": 58.0,
+            "y": 10.0,
+            "width": 3.0,
+            "height": 15.0
+          },
+          "rects": [
+            {
+              "x": 58.0,
+              "y": 10.0,
+              "width": 3.0,
+              "height": 15.0
+            }
+          ],
+          "sentence_zh": "每次他說沒什麼大事，最後都有大事。",
+          "sentence_zh_simplified": "每次他说没什么大事，最后都有大事。",
+          "sentence_vi": "Lần nào sếp bảo không có chuyện gì lớn, y như rằng cuối cùng việc lớn ngập đầu.",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p5_d2"
+        },
+        {
+          "id": "p5_d2_w3",
+          "text": "说",
+          "text_trad": "說",
+          "pinyin": "shuō",
+          "hanviet": "Thuyết",
+          "meaning_vi": "nói",
+          "hsk": 1,
+          "bbox": {
+            "x": 61.0,
+            "y": 10.0,
+            "width": 3.0,
+            "height": 15.0
+          },
+          "rects": [
+            {
+              "x": 61.0,
+              "y": 10.0,
+              "width": 3.0,
+              "height": 15.0
+            }
+          ],
+          "sentence_zh": "每次他說沒什麼大事，最後都有大事。",
+          "sentence_zh_simplified": "每次他说没什么大事，最后都有大事。",
+          "sentence_vi": "Lần nào sếp bảo không có chuyện gì lớn, y như rằng cuối cùng việc lớn ngập đầu.",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p5_d2"
+        },
+        {
+          "id": "p5_d2_w4",
+          "text": "没",
+          "text_trad": "沒",
+          "pinyin": "méi",
+          "hanviet": "Một",
+          "meaning_vi": "không có; chưa",
+          "hsk": null,
+          "bbox": {
+            "x": 64.0,
+            "y": 10.0,
+            "width": 3.0,
+            "height": 15.0
+          },
+          "rects": [
+            {
+              "x": 64.0,
+              "y": 10.0,
+              "width": 3.0,
+              "height": 15.0
+            }
+          ],
+          "sentence_zh": "每次他說沒什麼大事，最後都有大事。",
+          "sentence_zh_simplified": "每次他说没什么大事，最后都有大事。",
+          "sentence_vi": "Lần nào sếp bảo không có chuyện gì lớn, y như rằng cuối cùng việc lớn ngập đầu.",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p5_d2"
+        },
+        {
+          "id": "p5_d2_w5",
+          "text": "什么",
+          "text_trad": "什麼",
+          "pinyin": "shénme",
+          "hanviet": "Thập Ma",
+          "meaning_vi": "cái gì",
+          "hsk": 1,
+          "bbox": {
+            "x": 67.0,
+            "y": 10.0,
+            "width": 6.0,
+            "height": 15.0
+          },
+          "rects": [
+            {
+              "x": 67.0,
+              "y": 10.0,
+              "width": 6.0,
+              "height": 15.0
+            }
+          ],
+          "sentence_zh": "每次他說沒什麼大事，最後都有大事。",
+          "sentence_zh_simplified": "每次他说没什么大事，最后都有大事。",
+          "sentence_vi": "Lần nào sếp bảo không có chuyện gì lớn, y như rằng cuối cùng việc lớn ngập đầu.",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p5_d2"
+        },
+        {
+          "id": "p5_d2_w6",
+          "text": "大事",
+          "text_trad": "大事",
+          "pinyin": "dàshì",
+          "hanviet": "Đại Sự",
+          "meaning_vi": "việc lớn, chuyện lớn",
+          "hsk": 5,
+          "bbox": {
+            "x": 73.0,
+            "y": 10.0,
+            "width": 6.0,
+            "height": 15.0
+          },
+          "rects": [
+            {
+              "x": 73.0,
+              "y": 10.0,
+              "width": 6.0,
+              "height": 15.0
+            }
+          ],
+          "sentence_zh": "每次他說沒什麼大事，最後都有大事。",
+          "sentence_zh_simplified": "每次他说没什么大事，最后都有大事。",
+          "sentence_vi": "Lần nào sếp bảo không có chuyện gì lớn, y như rằng cuối cùng việc lớn ngập đầu.",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p5_d2"
+        },
+        {
+          "id": "p5_d2_w7",
+          "text": "最后",
+          "text_trad": "最後",
+          "pinyin": "zuìhòu",
+          "hanviet": "Tối Hậu",
+          "meaning_vi": "cuối cùng",
+          "hsk": 3,
+          "bbox": {
+            "x": 79.0,
+            "y": 10.0,
+            "width": 6.0,
+            "height": 15.0
+          },
+          "rects": [
+            {
+              "x": 79.0,
+              "y": 10.0,
+              "width": 6.0,
+              "height": 15.0
+            }
+          ],
+          "sentence_zh": "每次他說沒什麼大事，最後都有大事。",
+          "sentence_zh_simplified": "每次他说没什么大事，最后都有大事。",
+          "sentence_vi": "Lần nào sếp bảo không có chuyện gì lớn, y như rằng cuối cùng việc lớn ngập đầu.",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p5_d2"
+        },
+        {
+          "id": "p5_d2_w8",
+          "text": "都",
+          "text_trad": "都",
+          "pinyin": "dōu",
+          "hanviet": "Đô",
+          "meaning_vi": "đều",
+          "hsk": 1,
+          "bbox": {
+            "x": 85.0,
+            "y": 10.0,
+            "width": 3.0,
+            "height": 15.0
+          },
+          "rects": [
+            {
+              "x": 85.0,
+              "y": 10.0,
+              "width": 3.0,
+              "height": 15.0
+            }
+          ],
+          "sentence_zh": "每次他說沒什麼大事，最後都有大事。",
+          "sentence_zh_simplified": "每次他说没什么大事，最后都有大事。",
+          "sentence_vi": "Lần nào sếp bảo không có chuyện gì lớn, y như rằng cuối cùng việc lớn ngập đầu.",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p5_d2"
+        },
+        {
+          "id": "p5_d2_w9",
+          "text": "有",
+          "text_trad": "有",
+          "pinyin": "yǒu",
+          "hanviet": "Hữu",
+          "meaning_vi": "có",
+          "hsk": 1,
+          "bbox": {
+            "x": 88.0,
+            "y": 10.0,
+            "width": 3.0,
+            "height": 15.0
+          },
+          "rects": [
+            {
+              "x": 88.0,
+              "y": 10.0,
+              "width": 3.0,
+              "height": 15.0
+            }
+          ],
+          "sentence_zh": "每次他說沒什麼大事，最後都有大事。",
+          "sentence_zh_simplified": "每次他说没什么大事，最后都有大事。",
+          "sentence_vi": "Lần nào sếp bảo không có chuyện gì lớn, y như rằng cuối cùng việc lớn ngập đầu.",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p5_d2"
+        },
+        {
+          "id": "p5_d2_w10",
+          "text": "大事",
+          "text_trad": "大事",
+          "pinyin": "dàshì",
+          "hanviet": "Đại Sự",
+          "meaning_vi": "việc lớn, chuyện lớn",
+          "hsk": 5,
+          "bbox": {
+            "x": 91.0,
+            "y": 10.0,
+            "width": 6.0,
+            "height": 15.0
+          },
+          "rects": [
+            {
+              "x": 91.0,
+              "y": 10.0,
+              "width": 6.0,
+              "height": 15.0
+            }
+          ],
+          "sentence_zh": "每次他說沒什麼大事，最後都有大事。",
+          "sentence_zh_simplified": "每次他说没什么大事，最后都有大事。",
+          "sentence_vi": "Lần nào sếp bảo không có chuyện gì lớn, y như rằng cuối cùng việc lớn ngập đầu.",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p5_d2"
+        }
+      ],
+      "ocr": {
+        "image_px": [
+          1376,
+          768
+        ]
+      }
+    }
+  ]
+}
