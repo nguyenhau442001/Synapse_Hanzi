@@ -1136,6 +1136,31 @@ body.flashcard-study-mode .filter-row {
   font-weight: 700;
 }
 
+/* Mode switch + today's review counters on one row */
+.study-mode-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px 14px;
+}
+
+.study-review-counters {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  font-size: 13.5px;
+  color: var(--text-secondary);
+}
+
+.study-review-counter strong {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}
+
+.study-review-counter--due strong { color: var(--state-due); }
+.study-review-counter--new strong { color: var(--state-new); }
+
 /* Swipe badges describe grades; in browse mode a swipe only navigates. */
 body.study-mode-browse .swipe-badge { display: none !important; }
 

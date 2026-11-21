@@ -455,15 +455,18 @@ function renderFilters() {
         </div>
       </div>
 
+      <div class="study-mode-bar">
       <div class="study-mode-switch" role="tablist" aria-label="Chế độ học">
         <button type="button" role="tab" class="study-mode-tab${studyMode === 'review' ? ' is-active' : ''}"
           aria-selected="${studyMode === 'review'}" onclick="setStudyMode('review')">
-          Ôn tập${studyMode === 'review' ? ` <span class="study-mode-count">${filteredOrder.length}</span>` : ''}
+          Ôn tập
         </button>
         <button type="button" role="tab" class="study-mode-tab${studyMode === 'browse' ? ' is-active' : ''}"
           aria-selected="${studyMode === 'browse'}" onclick="setStudyMode('browse')">
           Duyệt danh sách
         </button>
+      </div>
+      ${studyMode === 'review' ? reviewCountersHtml() : ''}
       </div>
 
       <div class="progress-nav-cards" role="radiogroup" aria-label="Lọc danh sách thẻ từ vựng"${studyMode === 'review' ? ' hidden' : ''}>
@@ -512,6 +515,21 @@ function renderFilters() {
       </div>
     `;
   }
+}
+// "Hôm nay cần ôn: N · Thẻ mới: M" for the cards left in the current review session.
+function reviewCountersHtml() {
+  let dueCount = 0;
+  let newCount = 0;
+  (filteredOrder || []).forEach(i => {
+    const card = WORDS[i] && srsCards[WORDS[i].id];
+    if (!card || card.state === SRS.State.New) newCount++; else dueCount++;
+  });
+  const goal = typeof readDailyStudyGoal === 'function' ? readDailyStudyGoal() : 20;
+  return `
+    <div class="study-review-counters" aria-live="polite">
+      <span class="study-review-counter study-review-counter--due">Hôm nay cần ôn: <strong>${dueCount}</strong></span>
+      <span class="study-review-counter study-review-counter--new" title="Tối đa ${goal} thẻ mới mỗi ngày (đổi ở Mục tiêu hằng ngày trên trang chủ)">Thẻ mới: <strong>${newCount}</strong></span>
+    </div>`;
 }
 function setFilter(key) {
   const currentWordId = (filteredOrder && filteredOrder[idx] !== undefined && WORDS[filteredOrder[idx]])
@@ -1160,13 +1178,21 @@ function render(animate) {
     const levelLabel = (LEVELS[currentLevel] && LEVELS[currentLevel].label) || 'cấp độ này';
 
     if (studyMode === 'review') {
+      // Unseen cards left but today's new-card limit is used up.
+      const limitReached = deck.unseen > 0;
       container.innerHTML = `
         <div class="generic-empty-card">
-          <h3 class="generic-empty-title">Đã xong phiên ôn tập</h3>
+          <h3 class="generic-empty-title">Đã xong phiên ôn tập hôm nay</h3>
           <p class="generic-empty-desc">
-            Không còn thẻ đến hạn hay thẻ mới trong ${levelLabel}. Hãy quay lại khi có thẻ cần ôn.
+            ${limitReached
+              ? `Không còn thẻ đến hạn, và bạn đã học đủ số thẻ mới của hôm nay. ${levelLabel} còn ${deck.unseen} từ chưa học.`
+              : `Không còn thẻ đến hạn hay thẻ mới trong ${levelLabel}. Hãy quay lại khi có thẻ cần ôn.`}
           </p>
           <div class="generic-empty-actions">
+            ${limitReached ? `
+            <button type="button" class="empty-btn empty-btn--primary" onclick="studyMoreNewCards()">
+              Học thêm 10 thẻ mới
+            </button>` : ''}
             <button type="button" class="empty-btn empty-btn--secondary" onclick="setFilter('all')">
               Duyệt danh sách từ
             </button>

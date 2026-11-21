@@ -40,7 +40,18 @@ class TestReviewFlow(unittest.TestCase):
     def test_review_queue_puts_due_before_new(self):
         body = self.progress.split("export function buildReviewQueue", 1)[1].split("\n}\n", 1)[0]
         self.assertIn("SRS.isDue", body)
-        self.assertIn("due.map(d => d.i).concat(fresh)", body)
+        self.assertIn("due.map(d => d.i).concat(fresh.slice(0, newCardAllowance()))", body)
+
+    def test_daily_new_card_limit_reuses_daily_goal(self):
+        levels = (ROOT / "src" / "islands" / "Levels.js").read_text(encoding="utf-8")
+        self.assertIn("export const DEFAULT_DAILY_STUDY_GOAL = 20;", levels)
+        body = self.progress.split("export function newCardAllowance", 1)[1].split("\n}\n", 1)[0]
+        self.assertIn("readDailyStudyGoal()", body)
+        self.assertIn("countNewReviewsToday()", body)
+
+    def test_review_counters_rendered(self):
+        self.assertIn("Hôm nay cần ôn:", self.flashcard)
+        self.assertIn("Thẻ mới:", self.flashcard)
 
     def test_controls_follow_mode(self):
         self.assertIn("const showRating = revealed && studyMode === 'review';", self.flashcard)

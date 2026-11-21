@@ -11,14 +11,35 @@ import { signal } from '@preact/signals';
    toggleDisclosurePanel, toggleRadicalTransferPanel, closeCardMoreMenu,
    closeAllStudyDrawers, SpaRouter, goBackToPicker, toggleStudyWritingPanel,
    toggleStudyRadicalsPanel, toggleStudySidebar, toggleHanViet, speakWord,
-   isCardRevealed, flip, setActiveStudyWord, studyMode */
+   isCardRevealed, flip, setActiveStudyWord, studyMode, readDailyStudyGoal, countNewReviewsToday */
 
 const celebrationState = signal(null);
 
 // Cards graded "again" come back in the same session when they fall due within this window.
 const SESSION_RELEARN_WINDOW_MS = 30 * 60 * 1000;
 
-// Review queue: due cards (oldest due first), then never-studied cards in deck order.
+// Extra new cards the learner unlocked for today's session ("Học thêm thẻ mới").
+let extraNewCardsToday = 0;
+const EXTRA_NEW_CARDS_STEP = 10;
+
+// New cards still allowed today: the daily goal minus new cards already introduced in any level.
+export function newCardAllowance() {
+  const goal = typeof readDailyStudyGoal === 'function' ? readDailyStudyGoal() : 20;
+  const introduced = typeof countNewReviewsToday === 'function' ? countNewReviewsToday() : 0;
+  return Math.max(0, goal + extraNewCardsToday - introduced);
+}
+
+export function studyMoreNewCards() {
+  extraNewCardsToday += EXTRA_NEW_CARDS_STEP;
+  studyMode = 'review';
+  applyStudyModeOrder();
+  syncStudyModeUrl();
+  if (typeof renderFilters === 'function') renderFilters();
+  window.render('fade');
+}
+
+// Review queue: due cards (oldest due first), then never-studied cards in deck order up to
+// the daily new-card limit.
 export function buildReviewQueue(now) {
   const time = (now || new Date()).getTime();
   const due = [];
@@ -31,7 +52,7 @@ export function buildReviewQueue(now) {
     else if (SRS.isDue(card, time)) due.push({ i, at: new Date(card.due).getTime() });
   });
   due.sort((a, b) => a.at - b.at);
-  return due.map(d => d.i).concat(fresh);
+  return due.map(d => d.i).concat(fresh.slice(0, newCardAllowance()));
 }
 
 // Rebuilds filteredOrder for the active mode without rendering.
@@ -723,6 +744,8 @@ export function mountStudyProgress() {
 
   // Re-export study controls on window for template event handlers and external scripts
   window.buildReviewQueue = buildReviewQueue;
+  window.newCardAllowance = newCardAllowance;
+  window.studyMoreNewCards = studyMoreNewCards;
   window.applyStudyModeOrder = applyStudyModeOrder;
   window.syncStudyModeUrl = syncStudyModeUrl;
   window.setStudyMode = setStudyMode;

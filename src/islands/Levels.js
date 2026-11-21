@@ -41,7 +41,8 @@ export function hasSavedProgress() {
   });
 }
 
-export const DEFAULT_DAILY_STUDY_GOAL = 10;
+// Also the daily limit of new cards in a review session.
+export const DEFAULT_DAILY_STUDY_GOAL = 20;
 export const DAILY_STUDY_GOAL_OPTIONS = [10, 20, 30, 50];
 export const DAILY_STUDY_GOAL_KEY = 'hsk_daily_study_goal_v1';
 export const STUDY_ACTIVITY_KEY = 'hsk_study_activity_v1';
