@@ -1147,6 +1147,15 @@ body.flashcard-study-mode .filter-row {
   font-weight: 700;
 }
 
+/* Hán Việt line: explicit label + reading in the primary text color */
+.meta-badges-row .hanviet-badge .hanviet-label { font-weight: 500; }
+.meta-badges-row .hanviet-badge .hanviet-value { margin-left: 0.35em; }
+body.flashcard-study-mode .meta-badges-row .hanviet-badge .hanviet-value {
+  color: var(--text-primary);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
 /* Mode switch + today's review counters on one row */
 .study-mode-bar {
   display: flex;

@@ -1435,7 +1435,8 @@ function render(animate) {
         cleanMeaning.startsWith(cleanHv + ' ')
       );
       if (hv && !isDuplicateOfMeaning) {
-        hvBadge.textContent = hv;
+        // Labelled explicitly so it never reads as an unnamed tag after the part of speech.
+        hvBadge.innerHTML = `<span class="hanviet-label">Hán Việt:</span> <b class="hanviet-value">${window.escapeHtml(hv.toLocaleUpperCase('vi'))}</b>`;
         hvBadge.title = `Âm Hán - Việt: ${hv}`;
         hvBadge.hidden = false;
         hvBadge.style.display = showHanViet ? 'inline-flex' : 'none';
