@@ -98,7 +98,7 @@ def get_api_keys(cli_arg: str | None = None) -> list[str]:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--level", default="hsk4", choices=[f"hsk{i}" for i in range(1, 7)])
+    parser.add_argument("--level", default="hsk4", help="Level name: hsk1..hsk6 or hsk30_1..hsk30_9")
     parser.add_argument("--model", default=DEFAULT_MODEL, help="Gemini TTS model name")
     parser.add_argument("--voice", default=DEFAULT_VOICE, help="Voice name (Aoede, Kore, Puck, Charon, Fenrir)")
     parser.add_argument("--api-key", help="Gemini API key or comma-separated keys")
@@ -127,8 +127,15 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
+def get_vocab_path(level: str) -> Path:
+    if level.startswith("hsk30_"):
+        num = level.replace("hsk30_", "")
+        return REPO_ROOT / "database" / "vocabs" / "hsk3_0" / f"level{num}_vocabularies.json"
+    return REPO_ROOT / "database" / "vocabs" / f"{level}_vocabularies.json"
+
+
 def load_rows(level: str, start_id: int | None, limit: int | None, ids_filter: set[int] | None) -> list[dict[str, Any]]:
-    source = REPO_ROOT / "database" / "vocabs" / f"{level}_vocabularies.json"
+    source = get_vocab_path(level)
     if not source.is_file():
         raise FileNotFoundError(f"Vocabulary file not found: {source}")
 
@@ -291,7 +298,7 @@ def update_manifest(level: str, model: str, voice: str) -> None:
     manifest_dir.mkdir(parents=True, exist_ok=True)
     manifest_path = manifest_dir / "manifest.json"
 
-    vocab_file = REPO_ROOT / "database" / "vocabs" / f"{level}_vocabularies.json"
+    vocab_file = get_vocab_path(level)
     if not vocab_file.is_file():
         return
     with vocab_file.open(encoding="utf-8") as h:
@@ -331,13 +338,25 @@ def update_manifest(level: str, model: str, voice: str) -> None:
     temp_path.replace(manifest_path)
     print(f"Updated manifest: {manifest_path} ({len(items)} items, {total_words} words, {total_examples} examples)")
 
+    try:
+        if str(REPO_ROOT) not in sys.path:
+            sys.path.insert(0, str(REPO_ROOT))
+        from tools.build_hanzi_audio_map import main as update_global_map
+        update_global_map()
+    except Exception as e:
+        print(f"Global Hanzi audio map sync notice: {e}")
+
 
 def git_commit_and_push(batch_count: int, level: str) -> None:
     try:
         manifest_path = REPO_ROOT / "database" / "prebuilt_audio" / level / "manifest.json"
         audio_dir = REPO_ROOT / "database" / "prebuilt_audio" / level
+        hanzi_map_path = REPO_ROOT / "database" / "prebuilt_audio" / "hanzi_audio_map.json"
         print(f"\n[>>> GIT] Committing and pushing batch of {batch_count} audio clips for {level.upper()} to main...", flush=True)
-        subprocess.run(["git", "add", str(audio_dir), str(manifest_path)], cwd=REPO_ROOT, check=True)
+        files_to_add = [str(audio_dir), str(manifest_path)]
+        if hanzi_map_path.is_file():
+            files_to_add.append(str(hanzi_map_path))
+        subprocess.run(["git", "add"] + files_to_add, cwd=REPO_ROOT, check=True)
         commit_msg = f"feat(audio): batch generate prebuilt audio ({level.upper()}: +{batch_count} clips)"
         res = subprocess.run(["git", "commit", "-m", commit_msg], cwd=REPO_ROOT, capture_output=True, text=True)
         print(f"[>>> GIT] {res.stdout.strip()}", flush=True)
@@ -407,6 +426,7 @@ def main() -> int:
 
     for i, task in enumerate(pending, 1):
         key = api_keys[key_index % len(api_keys)]
+        key_index += 1
         print(f"[{i}/{len(pending)}] Generating #{task['id']:04d} ({task['kind']}): {task['text']} ...", end="", flush=True)
 
         generated = False

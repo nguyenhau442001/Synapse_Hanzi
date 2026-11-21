@@ -928,9 +928,9 @@ export async function selectLevel(level, targetWordIdOrHanzi = null, autoReveal 
   await new Promise(r => requestAnimationFrame(r));
 
   if (typeof loadPrebuiltAudioManifest === 'function') {
-    loadPrebuiltAudioManifest(level);
+    await loadPrebuiltAudioManifest(level);
   } else if (typeof window.loadPrebuiltAudioManifest === 'function') {
-    window.loadPrebuiltAudioManifest(level);
+    await window.loadPrebuiltAudioManifest(level);
   }
 
   try {

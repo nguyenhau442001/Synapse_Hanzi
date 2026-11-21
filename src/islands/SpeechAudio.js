@@ -231,6 +231,56 @@ let localAudioManifest = null;
 let speechRequestId = 0;
 let activeSpeechButton = null;
 let activeSpeechAudio = null;
+let globalHanziAudioMap = null;
+let isLoadingGlobalMap = false;
+
+export async function loadGlobalHanziAudioMap() {
+  if (globalHanziAudioMap) return globalHanziAudioMap;
+  if (isLoadingGlobalMap) return null;
+  isLoadingGlobalMap = true;
+  try {
+    const res = await fetch('database/prebuilt_audio/hanzi_audio_map.json');
+    if (res.ok) {
+      const data = await res.json();
+      globalHanziAudioMap = data;
+      if (typeof window !== 'undefined') window.globalHanziAudioMap = data;
+    }
+  } catch (err) {
+    // Non-fatal, fallback to local manifest or Web Speech
+  } finally {
+    isLoadingGlobalMap = false;
+  }
+  return globalHanziAudioMap;
+}
+
+export function resolvePrebuiltAudio(text) {
+  if (!text) return null;
+  const rawText = String(text).replace(/<[^>]*>/g, '').trim();
+  const cleanText = rawText.replace(/[（\(].*?[）\)]/g, '').trim() || rawText;
+
+  // 1. Try global Hanzi audio index
+  const gMap = globalHanziAudioMap || (typeof window !== 'undefined' && window.globalHanziAudioMap);
+  if (gMap) {
+    if (gMap[cleanText]) return gMap[cleanText];
+    if (gMap[rawText]) return gMap[rawText];
+  }
+
+  // 2. Try current active manifest items
+  const manifest = localAudioManifest || (typeof window !== 'undefined' && window.prebuiltAudioManifest);
+  if (manifest && manifest.items) {
+    const words = typeof WORDS !== 'undefined' ? WORDS : (typeof window !== 'undefined' ? window.WORDS : null);
+    if (Array.isArray(words)) {
+      const match = words.find(w => w && (w.hanzi === rawText || w.hanzi === cleanText || w.example_zh === rawText));
+      if (match && manifest.items[String(match.id)]) {
+        const item = manifest.items[String(match.id)];
+        if (match.example_zh === rawText && item.example) return item.example;
+        if (item.word) return item.word;
+      }
+    }
+  }
+
+  return null;
+}
 
 export async function loadPrebuiltAudioManifest(level) {
   localAudioManifest = null;
@@ -255,9 +305,21 @@ export async function loadPrebuiltAudioManifest(level) {
 export function prebuiltAudioUrl(word, kind) {
   const currentLvl = typeof currentLevel !== 'undefined' ? currentLevel : window.currentLevel;
   const manifest = localAudioManifest || (typeof window !== 'undefined' && window.prebuiltAudioManifest);
-  if (!word || !manifest || manifest.level !== currentLvl) return null;
-  const item = manifest.items[String(word.id)];
-  return item && typeof item[kind] === 'string' ? item[kind] : null;
+  if (word && manifest && manifest.level === currentLvl) {
+    const item = manifest.items[String(word.id)];
+    if (item && typeof item[kind] === 'string') return item[kind];
+  }
+
+  // Fallback to global Hanzi audio map
+  if (word && kind === 'word') {
+    const candidate = resolvePrebuiltAudio(word.hanzi);
+    if (candidate) return candidate;
+  } else if (word && kind === 'example' && word.example_zh) {
+    const candidate = resolvePrebuiltAudio(word.example_zh);
+    if (candidate) return candidate;
+  }
+
+  return null;
 }
 
 export function speakWord() {
@@ -317,9 +379,11 @@ export function speakText(text, button, rate = (typeof SPEECH_RATE !== 'undefine
 
   activeSpeechButton = button;
 
+  const finalAudioUrl = audioUrl || resolvePrebuiltAudio(text);
+
   // PRIORITY 1: Prebuilt studio-grade audio
-  if (audioUrl) {
-    playPrebuiltAudio(text, button, rate, audioUrl, requestId, hint, prevHint);
+  if (finalAudioUrl) {
+    playPrebuiltAudio(text, button, rate, finalAudioUrl, requestId, hint, prevHint);
     return;
   }
 
@@ -485,6 +549,7 @@ export function stopSpeech() {
 
 export function mountSpeechAudio() {
   initVoiceLoading();
+  loadGlobalHanziAudioMap().catch(() => {});
 
   window.SpeechService = SpeechService;
   window.isSpeechSupported = isSpeechSupported;
@@ -492,6 +557,8 @@ export function mountSpeechAudio() {
   window.speakChinese = speakChinese;
   window.stopSpeaking = stopSpeaking;
   window.loadPrebuiltAudioManifest = loadPrebuiltAudioManifest;
+  window.loadGlobalHanziAudioMap = loadGlobalHanziAudioMap;
+  window.resolvePrebuiltAudio = resolvePrebuiltAudio;
   window.prebuiltAudioUrl = prebuiltAudioUrl;
   window.speakWord = speakWord;
   window.speakExample = speakExample;
