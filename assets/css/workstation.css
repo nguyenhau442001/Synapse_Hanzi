@@ -1252,6 +1252,59 @@ html.tone-colors-off body.flashcard-study-mode .pinyin .tone { color: inherit; }
 .study-review-counter--due strong { color: var(--state-due); }
 .study-review-counter--new strong { color: var(--state-new); }
 
+/* Study direction picker (Hán -> Nghĩa / Nghe -> Nghĩa / Việt -> Hán) */
+.study-direction-picker {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+.study-direction-select {
+  min-height: 30px;
+  padding: 2px 8px;
+  border: 1px solid var(--border, rgba(41, 43, 48, 0.16));
+  border-radius: 8px;
+  background: var(--card-bg, #FFFFFF);
+  color: var(--text-primary);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Non-default directions replace the Hanzi front with a prompt. */
+.card-direction-prompt {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 0 6px;
+  text-align: center;
+}
+html:not([data-study-direction="zh2vi"]) .card:not(.is-flipped) .card-direction-prompt:not([hidden]) { display: flex; }
+html[data-study-direction="listen"] .card:not(.is-flipped) .hanzi-stage,
+html[data-study-direction="vi2zh"] .card:not(.is-flipped) .hanzi-stage { display: none !important; }
+.direction-prompt-meaning {
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.direction-prompt-pos { font-size: 14px; color: var(--text-secondary); }
+.direction-prompt-hint { font-size: 13px; color: var(--text-secondary); }
+.direction-listen-btn {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 1px solid var(--border, rgba(41, 43, 48, 0.16));
+  background: var(--surface-subtle, transparent);
+  color: var(--text-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.direction-listen-btn:hover { border-color: var(--accent); color: var(--accent); }
+
 /* Swipe badges describe grades; in browse mode a swipe only navigates. */
 body.study-mode-browse .swipe-badge { display: none !important; }
 

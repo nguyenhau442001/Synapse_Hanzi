@@ -11,7 +11,8 @@ import { signal } from '@preact/signals';
    toggleDisclosurePanel, toggleRadicalTransferPanel, closeCardMoreMenu,
    closeAllStudyDrawers, SpaRouter, goBackToPicker, toggleStudyWritingPanel,
    toggleStudyRadicalsPanel, toggleStudySidebar, toggleHanViet, speakWord,
-   isCardRevealed, flip, setActiveStudyWord, studyMode, readDailyStudyGoal, countNewReviewsToday */
+   isCardRevealed, flip, setActiveStudyWord, studyMode, readDailyStudyGoal, countNewReviewsToday,
+   readStudyDirection, saveStudyDirection, loadState */
 
 const celebrationState = signal(null);
 
@@ -25,7 +26,7 @@ const EXTRA_NEW_CARDS_STEP = 10;
 // New cards still allowed today: the daily goal minus new cards already introduced in any level.
 export function newCardAllowance() {
   const goal = typeof readDailyStudyGoal === 'function' ? readDailyStudyGoal() : 20;
-  const introduced = typeof countNewReviewsToday === 'function' ? countNewReviewsToday() : 0;
+  const introduced = typeof countNewReviewsToday === 'function' ? countNewReviewsToday(readStudyDirection()) : 0;
   return Math.max(0, goal + extraNewCardsToday - introduced);
 }
 
@@ -90,6 +91,18 @@ export function setStudyMode(mode) {
   window.render('fade');
 }
 
+// Switches the study direction (Hán -> nghĩa, Nghe -> nghĩa, Việt -> Hán): each has its own deck.
+export function setStudyDirection(direction) {
+  const next = saveStudyDirection(direction);
+  document.documentElement.dataset.studyDirection = next;
+  if (!currentLevel || !Array.isArray(WORDS) || WORDS.length === 0) return;
+  loadState();
+  applyStudyModeOrder();
+  if (typeof renderFilters === 'function') renderFilters();
+  if (typeof updateStats === 'function') updateStats();
+  window.render('fade');
+}
+
 export function nextCard() {
   if (studyMode !== 'browse' || filteredOrder.length === 0) return;
   idx = (idx + 1) % filteredOrder.length;
@@ -141,7 +154,7 @@ export function rateCurrentCard(rating) {
   const word = WORDS[wIdx];
   if (!word) return;
   const prevDeck = typeof computeDeckProgress === 'function' ? computeDeckProgress() : null;
-  reviewSrsCard(currentLevel, word.id, rating, srsCards);
+  reviewSrsCard(currentLevel, word.id, rating, srsCards, readStudyDirection());
   const limitMessage = document.getElementById('dailyNewLimitMessage');
   if (limitMessage) limitMessage.textContent = '';
   saveProgress();
@@ -744,6 +757,8 @@ export function mountStudyProgress() {
 
   // Re-export study controls on window for template event handlers and external scripts
   window.buildReviewQueue = buildReviewQueue;
+  window.setStudyDirection = setStudyDirection;
+  document.documentElement.dataset.studyDirection = readStudyDirection();
   window.newCardAllowance = newCardAllowance;
   window.studyMoreNewCards = studyMoreNewCards;
   window.applyStudyModeOrder = applyStudyModeOrder;

@@ -91,6 +91,9 @@ function buildCardArea() {
       <div class="swipe-badge swipe-badge--unknown" id="swipeBadgeUnknown">✗ Quên</div>
       <div id="cardContent" class="card-content">
         <div class="word-hero-container" id="wordMainBlock">
+          <!-- Front prompt for the Nghe -> nghĩa and Việt -> Hán directions (hidden after flipping) -->
+          <div class="card-direction-prompt" id="cardDirectionPrompt" hidden></div>
+
           <!-- Chữ Hán to bản ở trung tâm: vững chãi, thoáng đãng, tinh tế (Focal Point chính) -->
           <div class="hanzi-stage" id="hanziStage" onclick="event.stopPropagation(); toggleStudyWritingPanel(true);" title="Nhấn để luyện viết chữ Hán (W)">
             <div class="hanzi" id="hanzi"></div>
@@ -489,6 +492,7 @@ function renderFilters() {
         </button>
       </div>
       ${studyMode === 'review' ? reviewCountersHtml() : ''}
+      ${studyDirectionSelectHtml()}
       </div>
 
       <div class="progress-nav-cards" role="radiogroup" aria-label="Lọc danh sách thẻ từ vựng"${studyMode === 'review' ? ' hidden' : ''}>
@@ -538,6 +542,51 @@ function renderFilters() {
     `;
   }
 }
+const STUDY_DIRECTION_LABELS = {
+  zh2vi: 'Hán → Nghĩa',
+  listen: 'Nghe → Nghĩa',
+  vi2zh: 'Việt → Hán',
+};
+
+function studyDirectionSelectHtml() {
+  const current = readStudyDirection();
+  return `
+    <label class="study-direction-picker" title="Mỗi chiều học có lịch ôn riêng">
+      <span class="study-direction-label">Chiều học</span>
+      <select class="study-direction-select" onchange="setStudyDirection(this.value)" aria-label="Chiều học">
+        ${Object.entries(STUDY_DIRECTION_LABELS).map(([value, label]) =>
+          `<option value="${value}"${value === current ? ' selected' : ''}>${label}</option>`).join('')}
+      </select>
+    </label>`;
+}
+
+// Front of the card for the non-default directions. Hán -> nghĩa keeps the Hanzi front.
+function renderDirectionPrompt(word) {
+  const prompt = document.getElementById('cardDirectionPrompt');
+  if (!prompt) return;
+  const direction = readStudyDirection();
+  if (!word || direction === 'zh2vi') {
+    prompt.hidden = true;
+    prompt.innerHTML = '';
+    return;
+  }
+  prompt.hidden = false;
+  if (direction === 'listen') {
+    prompt.innerHTML = `
+      <button type="button" class="direction-listen-btn speech-btn" onclick="event.stopPropagation(); speakWord()"
+        aria-label="Nghe lại (A)" title="Nghe lại (A)">
+        ${speakerIconSvg(28, 'sound-btn-icon')}
+      </button>
+      <span class="direction-prompt-hint">Nghe và nhớ lại nghĩa</span>`;
+  } else {
+    const pos = typeof getWordPartOfSpeech === 'function' ? getWordPartOfSpeech(word) : null;
+    prompt.innerHTML = `
+      <span class="direction-prompt-meaning">${window.escapeHtml(word.meaning || '')}</span>
+      ${pos && pos.label ? `<span class="direction-prompt-pos">${window.escapeHtml(pos.label)}</span>` : ''}
+      <span class="direction-prompt-hint">Nhớ lại chữ Hán và pinyin</span>`;
+  }
+}
+
 // "Hôm nay cần ôn: N · Thẻ mới: M" for the cards left in the current review session.
 function reviewCountersHtml() {
   let dueCount = 0;
@@ -1411,6 +1460,7 @@ function render(animate) {
     if (initRelatedWrap) { initRelatedWrap.hidden = true; initRelatedWrap.style.display = 'none'; }
 
     if (filteredOrder.length === 0) {
+      renderDirectionPrompt(null);
       if (wordMainBlock) wordMainBlock.style.display = 'none';
       if (exBox) { exBox.classList.remove('show'); exBox.style.display = 'none'; }
       if (decompAcc) { decompAcc.open = false; decompAcc.style.display = 'none'; decompAcc.hidden = true; }
@@ -1622,6 +1672,11 @@ function render(animate) {
       preloadNearbyIllustrations(WORDS, filteredOrder, idx % filteredOrder.length, 15);
     }
 
+    renderDirectionPrompt(w);
+    if (readStudyDirection() === 'listen' && typeof speakWord === 'function') {
+      // Audio-first front: play the word as soon as the card appears (A replays it).
+      setTimeout(() => { if (!isCardRevealed()) speakWord(); }, 220);
+    }
     document.getElementById('hint').textContent = getCardHintText(false);
     updateCardMoreMenuState();
     updateProgress();

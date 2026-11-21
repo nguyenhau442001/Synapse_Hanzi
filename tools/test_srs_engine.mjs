@@ -155,4 +155,35 @@ test('reviewSrsCard persists the card and appends a review log entry', () => {
   assert.equal(log[0].stateBefore, SRS.State.New);
 });
 
+test('study directions use separate decks; the default keeps the original keys', () => {
+  assert.equal(storage.srsCardsKey('hsk1'), 'hsk_hsk1_srs_v3');
+  assert.equal(storage.srsCardsKey('hsk1', 'zh2vi'), 'hsk_hsk1_srs_v3');
+  assert.equal(storage.srsCardsKey('hsk1', 'listen'), 'hsk_hsk1_srs_v3_listen');
+  assert.equal(storage.reviewLogKey('hsk1', 'vi2zh'), 'hsk_hsk1_review_log_v1_vi2zh');
+  assert.equal(storage.srsCardsKey('hsk1', 'bogus'), 'hsk_hsk1_srs_v3', 'unknown direction falls back to default');
+  assert.equal(storage.readStudyDirection(), 'zh2vi');
+  storage.saveStudyDirection('listen');
+  assert.equal(storage.readStudyDirection(), 'listen');
+});
+
+test('a non-default direction starts fresh instead of migrating legacy progress', () => {
+  localStorage.setItem('hsk_hsk4_progress_v2', JSON.stringify({ 1: 'known' }));
+  const legacy = storage.readSavedLevelProgressLegacy('hsk4');
+  const listen = storage.loadSrsForLevel('hsk4', [{ id: 1 }], legacy, 'listen');
+  assert.equal(listen[1].state, SRS.State.New);
+  const main = storage.loadSrsForLevel('hsk4', [{ id: 1 }], legacy, 'zh2vi');
+  assert.equal(main[1].state, SRS.State.Review);
+});
+
+test('reviewSrsCard with a direction writes only that deck and its log', () => {
+  storage.saveSrsRecord('hsk5', { 9: SRS.createNewCard(T0) }, false);
+  storage.saveSrsRecord('hsk5', { 9: SRS.createNewCard(T0) }, false, 'vi2zh');
+  const cards = storage.readSrsRecord('hsk5', 'vi2zh').cards;
+  storage.reviewSrsCard('hsk5', 9, 'easy', cards, 'vi2zh');
+  assert.equal(storage.readSrsRecord('hsk5', 'vi2zh').cards[9].state, SRS.State.Review);
+  assert.equal(storage.readSrsRecord('hsk5').cards[9].state, SRS.State.New, 'default deck untouched');
+  assert.equal(storage.readSrsReviewLog('hsk5', 'vi2zh').length, 1);
+  assert.equal(storage.readSrsReviewLog('hsk5').length, 0);
+});
+
 console.log(`\n${passed} SRS engine tests passed`);

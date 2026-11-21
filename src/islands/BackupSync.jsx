@@ -6,14 +6,16 @@
    appendImportedReviewLog, saveRetention, saveProgress, savePrefs, renderLearningDashboard,
    setFilter, updateSrsPreviews, toggleTransferPanel, toggleRadicalTransferPanel,
    radicalProgress, showRadicalPinyin, saveRadicalProgress, saveRadicalPrefs,
-   setRadicalFilter, radicalCurrentFilter, radicalCurrentView, renderRadicalOverview */
+   setRadicalFilter, radicalCurrentFilter, radicalCurrentView, renderRadicalOverview, readStudyDirection */
 
 export function exportProgress() {
   const data = JSON.stringify({
     schemaVersion: 3,
     level: currentLevel,
+    // The cards and log of the study direction currently in use (Hán -> nghĩa by default).
+    direction: typeof readStudyDirection === 'function' ? readStudyDirection() : 'zh2vi',
     cards: srsCards,
-    reviewLog: typeof readSrsReviewLog === 'function' ? readSrsReviewLog(currentLevel) : [],
+    reviewLog: typeof readSrsReviewLog === 'function' ? readSrsReviewLog(currentLevel, typeof readStudyDirection === 'function' ? readStudyDirection() : undefined) : [],
     prefs: {
       showPinyin: typeof showPinyin !== 'undefined' ? showPinyin : true,
       showIllustrationV2: typeof showIllustration !== 'undefined' ? showIllustration : false,
@@ -70,7 +72,7 @@ export function importProgress(event) {
       Object.keys(progress).forEach(key => delete progress[key]);
       Object.assign(progress, newProg);
 
-      appendImportedReviewLog(currentLevel, data.reviewLog);
+      appendImportedReviewLog(currentLevel, data.reviewLog, typeof readStudyDirection === 'function' ? readStudyDirection() : undefined);
       if (Array.isArray(backupPrefs.order) && backupPrefs.order.length === WORDS.length) {
         order.length = 0;
         backupPrefs.order.forEach(item => order.push(item));
