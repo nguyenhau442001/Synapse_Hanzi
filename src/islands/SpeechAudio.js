@@ -41,6 +41,13 @@ export function stopSpeaking() {
     } catch (e) {}
     activeSpeechAudio = null;
   }
+  if (typeof window !== 'undefined' && window.activeSpeechAudio && window.activeSpeechAudio !== activeSpeechAudio) {
+    try {
+      window.activeSpeechAudio.pause();
+      window.activeSpeechAudio.currentTime = 0;
+    } catch (e) {}
+    window.activeSpeechAudio = null;
+  }
 }
 
 export function speakChinese(text, options = {}) {

@@ -165,7 +165,12 @@ function stopFullStory() {
 
 const sentencePlainText = (s) => (s.zh || (s.tokens || []).map((t) => t.text).join('') || s.text || '').replace(/^[，。？！、\s]+/, '');
 
-function speakSentence(text, sentId) {
+function getSentenceAudioUrl(storyId, sentId) {
+  if (!storyId || !sentId) return null;
+  return `database/prebuilt_audio/readings/${storyId}/${sentId}.mp3`;
+}
+
+function speakSentence(text, sentId, audioUrl = null) {
   if (!text) return;
   const isPlaying = playingId.value === sentId;
   const wasFullStory = fullStoryPlaying.value;
@@ -177,6 +182,37 @@ function speakSentence(text, sentId) {
   }
   playingId.value = sentId;
   const rate = typeof exampleSpeechSpeed !== 'undefined' ? exampleSpeechSpeed : 0.8;
+  const story = activeStory.value;
+  const targetUrl = audioUrl || (story && sentId && !sentId.startsWith('dlg-') && !sentId.startsWith('word-') ? getSentenceAudioUrl(story.id, sentId) : null);
+
+  if (targetUrl) {
+    const audio = new Audio(targetUrl);
+    if (typeof window !== 'undefined') window.activeSpeechAudio = audio;
+    audio.playbackRate = Math.min(2, Math.max(0.25, rate));
+    if ('preservesPitch' in audio) audio.preservesPitch = true;
+    audio.onended = () => {
+      if (playingId.value === sentId) clearPlaying();
+    };
+    audio.onerror = () => {
+      if (typeof window.speakChinese === 'function') {
+        window.speakChinese(text, { rate, onEnd: clearPlaying, onError: clearPlaying });
+      } else {
+        if (playingId.value === sentId) clearPlaying();
+      }
+    };
+    const p = audio.play();
+    if (p && typeof p.catch === 'function') {
+      p.catch(() => {
+        if (typeof window.speakChinese === 'function') {
+          window.speakChinese(text, { rate, onEnd: clearPlaying, onError: clearPlaying });
+        } else {
+          clearPlaying();
+        }
+      });
+    }
+    return;
+  }
+
   if (typeof window.speakChinese === 'function') {
     window.speakChinese(text, { rate, onEnd: clearPlaying, onError: clearPlaying });
   }
@@ -198,7 +234,32 @@ function playStoryFrom(index, run) {
   if (el && typeof el.scrollIntoView === 'function') el.scrollIntoView({ behavior: 'smooth', block: 'center' });
   const rate = typeof exampleSpeechSpeed !== 'undefined' ? exampleSpeechSpeed : 0.8;
   const stop = () => { if (run === fullStoryRun) { stopFullStory(); clearPlaying(); } };
-  if (typeof window.speakChinese !== 'function' || window.speakChinese(text, { rate, onEnd: () => playStoryFrom(index + 1, run), onError: stop }) === false) stop();
+
+  const audioUrl = getSentenceAudioUrl(story.id, sentence.id);
+  const audio = new Audio(audioUrl);
+  if (typeof window !== 'undefined') window.activeSpeechAudio = audio;
+  audio.playbackRate = Math.min(2, Math.max(0.25, rate));
+  if ('preservesPitch' in audio) audio.preservesPitch = true;
+  audio.onended = () => {
+    if (run === fullStoryRun) playStoryFrom(index + 1, run);
+  };
+  audio.onerror = () => {
+    if (typeof window.speakChinese === 'function') {
+      window.speakChinese(text, { rate, onEnd: () => playStoryFrom(index + 1, run), onError: stop });
+    } else {
+      stop();
+    }
+  };
+  const p = audio.play();
+  if (p && typeof p.catch === 'function') {
+    p.catch(() => {
+      if (typeof window.speakChinese === 'function') {
+        window.speakChinese(text, { rate, onEnd: () => playStoryFrom(index + 1, run), onError: stop });
+      } else {
+        stop();
+      }
+    });
+  }
 }
 
 function speakFullStory() {
