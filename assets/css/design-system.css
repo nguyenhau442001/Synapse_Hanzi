@@ -4,10 +4,9 @@
    Screen-specific styles live in their own files (e.g. curriculum.css). */
 
 /* Headings focused programmatically on screen change (tabindex="-1") should not show a ring. */
-[tabindex="-1"]:focus:not(:focus-visible),
-h1[tabindex="-1"]:focus,
-h2[tabindex="-1"]:focus,
-h3[tabindex="-1"]:focus {
+/* Elements focused programmatically on screen change (tabindex="-1", not tab stops)
+   should not show a focus ring. */
+[tabindex="-1"]:focus {
   outline: none;
 }
 
@@ -202,12 +201,11 @@ body.curriculum-view-active:not(.study-mode) .app-header {
   clip-path: inset(0 -100vmax);
 }
 body.curriculum-view-active:not(.study-mode) .chinese-aesthetic-bg { z-index: 0; }
-/* Phones: the header wraps to two rows and the bottom nav already stays in view. */
+/* Phones: the header wraps to two rows. Let the brand row scroll away and keep
+   only the compact stats row pinned (negative sticky offset = brand row height). */
 @media (max-width: 767px) {
   body.curriculum-view-active:not(.study-mode) .app-header {
-    position: relative;
-    box-shadow: none;
-    clip-path: none;
+    top: -58px;
   }
 }
 
@@ -430,4 +428,40 @@ body.home-screen #screenPicker .level-status-badge {
   }
   .reading-select-pill { min-width: 0; max-width: 100%; }
   .reading-select-pill select { min-width: 0; max-width: 100%; }
+}
+
+/* ── Borders over shadows: flatten decorative card and button shadows ───── */
+:is(.hw-primary-btn, .listening-top-nav, .listening-unified-card, .listening-play-primary-btn,
+  .listening-choice-btn, .reading-unified-nav, .reading-exercise-card, .reading-global-footer,
+  .sentence-game-header, .sentence-card-board, .sentence-token, .sentence-action-btn,
+  .speed-quiz-header, .speed-quiz-card, .speed-quiz-option,
+  .guess-word-header, .guess-word-card, .guess-word-option),
+:root[data-theme="dark"] :is(.listening-unified-card, .reading-exercise-card, .sentence-card-board,
+  .speed-quiz-card, .guess-word-card, .speed-quiz-header, .guess-word-header, .sentence-game-header) {
+  box-shadow: none;
+}
+:is(.listening-unified-card, .reading-exercise-card, .sentence-card-board, .speed-quiz-card,
+  .guess-word-card, .speed-quiz-header, .guess-word-header, .sentence-game-header) {
+  border-radius: var(--radius-card);
+}
+
+/* Game accents follow the primary palette instead of orange */
+.speed-quiz-badge,
+.guess-word-level-badge {
+  background: var(--danger-bg);
+  border-color: transparent;
+  color: var(--accent-text);
+}
+.speed-quiz-timer-bar {
+  background: var(--accent);
+}
+
+/* Listening top bar on small phones: icon-only rules / sync chips so the exam picker fits */
+@media (max-width: 420px) {
+  .listening-rules-btn > span:not(:first-child),
+  .listening-sync-indicator > span:last-child {
+    display: none;
+  }
+  .listening-nav-left { min-width: 0; flex: 1 1 auto; }
+  .listening-exam-picker-wrap { min-width: 0; flex: 1 1 auto; }
 }
