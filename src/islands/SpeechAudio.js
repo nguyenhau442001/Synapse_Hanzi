@@ -13,9 +13,7 @@ let activePlaybackId = 0;
 const voiceListeners = [];
 
 export function isSpeechSupported() {
-  return typeof window !== 'undefined'
-    && 'speechSynthesis' in window
-    && typeof window.SpeechSynthesisUtterance !== 'undefined';
+  return typeof window !== 'undefined' && 'Audio' in window;
 }
 
 export function normalizeLang(lang) {
@@ -23,108 +21,25 @@ export function normalizeLang(lang) {
 }
 
 export function loadVoices() {
-  if (!isSpeechSupported()) return [];
-  try {
-    const voices = window.speechSynthesis.getVoices() || [];
-    if (voices.length > 0) {
-      cachedVoices = voices;
-      isVoicesLoaded = true;
-    }
-    return voices.length > 0 ? voices : cachedVoices;
-  } catch (e) {
-    console.warn('[SpeechService] Error loading voices:', e);
-    return [];
-  }
+  return [];
 }
 
-export function initVoiceLoading() {
-  if (!isSpeechSupported()) return;
+export function initVoiceLoading() {}
 
-  loadVoices();
+export function onVoicesChanged(callback) {}
 
-  const handleVoicesChanged = () => {
-    const voices = loadVoices();
-    voiceListeners.forEach(fn => {
-      try { fn(voices); } catch (e) { console.warn(e); }
-    });
-  };
-
-  if (typeof window.speechSynthesis.addEventListener === 'function') {
-    window.speechSynthesis.addEventListener('voiceschanged', handleVoicesChanged);
-  }
-  window.speechSynthesis.onvoiceschanged = handleVoicesChanged;
-}
-
-export function onVoicesChanged(callback) {
-  if (typeof callback !== 'function') return;
-  voiceListeners.push(callback);
-  const voices = loadVoices();
-  if (voices && voices.length > 0) {
-    try { callback(voices); } catch (e) {}
-  }
-}
-
-function matchesLangPrefix(voice, prefix) {
-  if (!voice || !voice.lang) return false;
-  const l = normalizeLang(voice.lang);
-  return l === prefix || l.startsWith(prefix + '-') || l.startsWith(prefix);
-}
-
-export function getChineseVoice(providedVoices) {
-  if (!isSpeechSupported()) return null;
-
-  let voices = providedVoices;
-  if (!voices || !voices.length) {
-    voices = loadVoices();
-  }
-  if (!voices || !voices.length) return null;
-
-  // 1. Prefer zh-CN
-  let voice = voices.find(v =>
-    matchesLangPrefix(v, 'zh-cn') ||
-    matchesLangPrefix(v, 'zh-hans') ||
-    matchesLangPrefix(v, 'cmn-hans') ||
-    matchesLangPrefix(v, 'cmn-cn')
-  );
-  if (voice) return voice;
-
-  // 2. Prefer zh-TW
-  voice = voices.find(v =>
-    matchesLangPrefix(v, 'zh-tw') ||
-    matchesLangPrefix(v, 'zh-hant') ||
-    matchesLangPrefix(v, 'cmn-hant') ||
-    matchesLangPrefix(v, 'cmn-tw')
-  );
-  if (voice) return voice;
-
-  // 3. Prefer zh-HK
-  voice = voices.find(v =>
-    matchesLangPrefix(v, 'zh-hk') ||
-    matchesLangPrefix(v, 'yue-hk')
-  );
-  if (voice) return voice;
-
-  // 4. Any other Chinese voice starting with zh or cmn
-  voice = voices.find(v =>
-    matchesLangPrefix(v, 'zh') ||
-    matchesLangPrefix(v, 'cmn')
-  );
-  if (voice) return voice;
-
+export function getChineseVoice() {
   return null;
 }
 
 export function stopSpeaking() {
   activePlaybackId++;
-  activeUtterance = null;
-  if (isSpeechSupported()) {
+  if (activeSpeechAudio) {
     try {
-      if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
-        window.speechSynthesis.cancel();
-      }
-    } catch (e) {
-      console.warn('[SpeechService] stopSpeaking error:', e);
-    }
+      activeSpeechAudio.pause();
+      activeSpeechAudio.currentTime = 0;
+    } catch (e) {}
+    activeSpeechAudio = null;
   }
 }
 
@@ -134,82 +49,60 @@ export function speakChinese(text, options = {}) {
   const cleanText = String(text).replace(/<[^>]*>/g, '').trim();
   if (!cleanText) return false;
 
-  if (!isSpeechSupported()) {
+  stopSpeaking();
+  const playbackId = activePlaybackId;
+
+  const audioUrl = resolvePrebuiltAudio(cleanText);
+  if (!audioUrl) {
     if (typeof options.onError === 'function') {
       try {
-        options.onError(new Error('Web Speech API (speechSynthesis) is not supported in this browser.'));
+        options.onError(new Error('Chưa có bản thu studio cho mục này.'));
       } catch (e) {}
     }
     return false;
   }
 
-  stopSpeaking();
-
-  const playbackId = activePlaybackId;
-  const rate = typeof options.rate === 'number' ? Math.max(0.1, Math.min(2.0, options.rate)) : 0.8;
-  const pitch = typeof options.pitch === 'number' ? Math.max(0, Math.min(2.0, options.pitch)) : 1.0;
-  const volume = typeof options.volume === 'number' ? Math.max(0, Math.min(1.0, options.volume)) : 1.0;
-
   try {
-    const UtteranceClass = (typeof window !== 'undefined' && window.SpeechSynthesisUtterance) || (typeof SpeechSynthesisUtterance !== 'undefined' ? SpeechSynthesisUtterance : null);
-    if (!UtteranceClass) throw new Error('SpeechSynthesisUtterance not available');
-    const utterance = new UtteranceClass(cleanText);
-    const voice = options.voice || getChineseVoice();
+    const audio = new Audio(audioUrl);
+    activeSpeechAudio = audio;
+    const rate = typeof options.rate === 'number' ? Math.max(0.25, Math.min(2.0, options.rate)) : 0.8;
+    audio.playbackRate = rate;
+    if ('preservesPitch' in audio) audio.preservesPitch = true;
 
-    if (voice) {
-      utterance.voice = voice;
-      utterance.lang = voice.lang || 'zh-CN';
-    } else {
-      utterance.lang = 'zh-CN';
-    }
-
-    utterance.rate = rate;
-    utterance.pitch = pitch;
-    utterance.volume = volume;
-
-    let settled = false;
-
-    utterance.onstart = () => {
+    audio.onplay = () => {
       if (playbackId !== activePlaybackId) return;
       if (typeof options.onStart === 'function') {
         try { options.onStart(); } catch (e) { console.warn(e); }
       }
     };
 
-    utterance.onend = () => {
-      if (settled || playbackId !== activePlaybackId) return;
-      settled = true;
-      activeUtterance = null;
+    audio.onended = () => {
+      if (playbackId !== activePlaybackId) return;
+      if (activeSpeechAudio === audio) activeSpeechAudio = null;
       if (typeof options.onEnd === 'function') {
         try { options.onEnd(); } catch (e) { console.warn(e); }
       }
     };
 
-    utterance.onerror = (event) => {
-      if (settled || playbackId !== activePlaybackId) return;
-      settled = true;
-      activeUtterance = null;
-      if (event && (event.error === 'canceled' || event.error === 'interrupted')) {
-        if (typeof options.onEnd === 'function') {
-          try { options.onEnd(); } catch (e) {}
-        }
-        return;
-      }
+    audio.onerror = (event) => {
+      if (playbackId !== activePlaybackId) return;
+      if (activeSpeechAudio === audio) activeSpeechAudio = null;
       if (typeof options.onError === 'function') {
         try { options.onError(event); } catch (e) { console.warn(e); }
       }
     };
 
-    activeUtterance = utterance;
-
-    if (window.speechSynthesis.paused) {
-      window.speechSynthesis.resume();
+    const playPromise = audio.play();
+    if (playPromise && typeof playPromise.catch === 'function') {
+      playPromise.catch((err) => {
+        if (playbackId !== activePlaybackId) return;
+        if (activeSpeechAudio === audio) activeSpeechAudio = null;
+        if (typeof options.onError === 'function') options.onError(err);
+      });
     }
-
-    window.speechSynthesis.speak(utterance);
     return true;
   } catch (error) {
-    console.warn('[SpeechService] Speech execution error:', error);
+    console.warn('[SpeechService] Audio playback error:', error);
     if (typeof options.onError === 'function') {
       try { options.onError(error); } catch (e) {}
     }
@@ -381,14 +274,15 @@ export function speakText(text, button, rate = (typeof SPEECH_RATE !== 'undefine
 
   const finalAudioUrl = audioUrl || resolvePrebuiltAudio(text);
 
-  // PRIORITY 1: Prebuilt studio-grade audio
+  // Prebuilt studio-grade audio
   if (finalAudioUrl) {
     playPrebuiltAudio(text, button, rate, finalAudioUrl, requestId, hint, prevHint);
     return;
   }
 
-  // PRIORITY 2: Fallback to Web Speech API
-  speakWithWebSpeech(text, button, rate, requestId, hint, prevHint);
+  // No prebuilt audio available
+  setSpeechButtonState(button, false);
+  showSpeechHint(hint, 'Chưa có bản thu âm cho mục này', prevHint);
 }
 
 export function playPrebuiltAudio(text, button, rate, audioUrl, requestId, hint, prevHint) {
@@ -407,7 +301,8 @@ export function playPrebuiltAudio(text, button, rate, audioUrl, requestId, hint,
     audio.onerror = null;
     audio.pause();
     if (activeSpeechAudio === audio) activeSpeechAudio = null;
-    speakWithWebSpeech(text, button, rate, requestId, hint, prevHint);
+    setSpeechButtonState(button, false);
+    showSpeechHint(hint, 'Không thể tải âm thanh, vui lòng thử lại', prevHint);
   };
 
   audio.onplaying = () => {
@@ -428,35 +323,8 @@ export function playPrebuiltAudio(text, button, rate, audioUrl, requestId, hint,
 
 export function speakWithWebSpeech(text, button, rate, requestId, hint, prevHint) {
   if (requestId !== speechRequestId) return;
-  const supported = isSpeechSupported();
-  if (!supported) {
-    setSpeechButtonState(button, false);
-    showSpeechHint(hint, 'Trình duyệt này không hỗ trợ phát âm, hãy mở bằng Chrome hoặc Safari', prevHint);
-    return;
-  }
-
-  activeSpeechButton = button;
-  const started = speakChinese(text, {
-    rate: rate,
-    onStart: () => {
-      if (requestId !== speechRequestId) return;
-      setSpeechButtonState(button, true, text);
-    },
-    onEnd: () => {
-      if (requestId !== speechRequestId) return;
-      setSpeechButtonState(button, false);
-    },
-    onError: () => {
-      if (requestId !== speechRequestId) return;
-      setSpeechButtonState(button, false);
-      showSpeechHint(hint, 'Không thể phát âm trên trình duyệt này', prevHint);
-    }
-  });
-
-  if (!started) {
-    setSpeechButtonState(button, false);
-    showSpeechHint(hint, 'Không thể phát âm trên trình duyệt này', prevHint);
-  }
+  setSpeechButtonState(button, false);
+  showSpeechHint(hint, 'Chưa có bản thu âm cho mục này', prevHint);
 }
 
 export function showSpeechHint(hint, message, previousMessage) {

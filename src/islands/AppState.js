@@ -185,29 +185,7 @@ export function setExampleSpeechSpeed(value) {
   if (speedPicker) speedPicker.open = false;
 }
 
-if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-  cachedVoices = speechSynthesis.getVoices();
-  speechSynthesis.onvoiceschanged = () => {
-    cachedVoices = speechSynthesis.getVoices();
-    if (typeof window !== 'undefined') window.cachedVoices = cachedVoices;
-  };
-}
-
-let speechWarmed = false;
-export function warmUpSpeech() {
-  if (speechWarmed || typeof window === 'undefined' || !('speechSynthesis' in window)) return;
-  speechWarmed = true;
-  try {
-    const warmUp = new SpeechSynthesisUtterance('');
-    warmUp.volume = 0;
-    speechSynthesis.speak(warmUp);
-  } catch (e) {}
-}
-
-if (typeof document !== 'undefined') {
-  document.addEventListener('touchstart', warmUpSpeech, { once: true, passive: true });
-  document.addEventListener('click', warmUpSpeech, { once: true });
-}
+export function warmUpSpeech() {}
 
 export function storageKey(suffix) {
   const activeLevel = typeof currentLevel !== 'undefined' ? currentLevel : (typeof window !== 'undefined' ? window.currentLevel : null);
