@@ -465,3 +465,87 @@ body.home-screen #screenPicker .level-status-badge {
   .listening-nav-left { min-width: 0; flex: 1 1 auto; }
   .listening-exam-picker-wrap { min-width: 0; flex: 1 1 auto; }
 }
+
+/* ── Tile grids as one surface ─────────────────────────────────────────────
+   Instead of a card per tile: one bordered container, tiles separated by hairlines.
+   Each tile draws its right/bottom line; the container clips the outer edges, so
+   any column count (and incomplete last rows) stays clean. */
+body.home-screen #screenPicker #levelGrid30,
+body.home-screen #screenPicker #levelGrid20,
+.cur-word-grid,
+.radical-group-grid {
+  gap: 0;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+body.home-screen #screenPicker .level-grid .level-card,
+:root[data-theme="dark"] body.home-screen #screenPicker .level-grid .level-card,
+.cur-word-grid .cur-word,
+.radical-group-grid .radical-group-card {
+  border: 0;
+  border-radius: 0;
+  box-shadow: 1px 0 0 var(--border-subtle), 0 1px 0 var(--border-subtle);
+  background: transparent;
+  transform: none;
+}
+body.home-screen #screenPicker .level-grid .level-card:hover,
+:root[data-theme="dark"] body.home-screen #screenPicker .level-grid .level-card:hover,
+.cur-word-grid .cur-word:hover,
+.radical-group-grid .radical-group-card:hover {
+  background: var(--surface-hover);
+  border: 0;
+  box-shadow: 1px 0 0 var(--border-subtle), 0 1px 0 var(--border-subtle);
+  transform: none;
+}
+body.home-screen #screenPicker .level-grid .level-card.is-active-level,
+:root[data-theme="dark"] body.home-screen #screenPicker .level-grid .level-card.is-active-level {
+  border: 0;
+  background: var(--surface-active);
+  box-shadow: inset 3px 0 0 var(--accent), 1px 0 0 var(--border-subtle), 0 1px 0 var(--border-subtle);
+}
+body.home-screen #screenPicker .level-grid .level-card:focus-visible,
+.cur-word-grid .cur-word:focus-visible,
+.radical-group-grid .radical-group-card:focus-visible {
+  outline: none;
+  box-shadow: inset var(--focus-ring);
+}
+
+/* ── Radicals: segmented tabs and section heading in the shared style ──── */
+.radical-tabs.view-tabs {
+  background: var(--surface-chip);
+  border: 0;
+  border-radius: var(--radius-card);
+  padding: var(--space-1);
+  box-shadow: none;
+}
+.radical-tabs .view-tab {
+  border-radius: var(--radius-btn);
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  font-weight: 500;
+  color: var(--text-secondary);
+  box-shadow: none;
+  transition: background-color var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+.radical-tabs .view-tab.active {
+  background: var(--card-bg);
+  color: var(--accent-text);
+  font-weight: 600;
+  box-shadow: none;
+}
+.radical-panel h2 {
+  font-family: var(--font-sans);
+  font-size: var(--fs-section);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-transform: none;
+}
+
+/* Study screen level badge uses the sans UI font like the rest of the shell */
+.progress-nav-level-tag {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  border-radius: var(--radius-pill);
+}

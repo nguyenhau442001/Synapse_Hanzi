@@ -1348,9 +1348,6 @@
     padding: var(--space-3) var(--space-4);
   }
 
-  .cur-word + .cur-word {
-    border-top: 1px solid var(--border-subtle);
-  }
 
   .cur-lesson-state.is-todo {
     display: none;
