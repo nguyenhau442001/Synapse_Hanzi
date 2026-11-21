@@ -1092,6 +1092,61 @@ body.flashcard-study-mode .filter-row {
   box-sizing: border-box;
 }
 
+/* Review / browse mode switch above the filter cards */
+.progress-nav-cards[hidden] { display: none !important; }
+
+.study-mode-switch {
+  display: inline-flex;
+  gap: 4px;
+  padding: 3px;
+  border-radius: 10px;
+  border: 1px solid rgba(221, 212, 196, 0.55);
+  background: rgba(255, 255, 255, 0.55);
+  align-self: flex-start;
+}
+
+:root[data-theme="dark"] .study-mode-switch {
+  background: rgba(32, 36, 42, 0.65);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.study-mode-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 32px;
+  padding: 4px 14px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-secondary);
+  font: inherit;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.study-mode-tab:hover { color: var(--text-primary); }
+
+.study-mode-tab.is-active {
+  background: var(--card-bg, #FFFFFF);
+  color: var(--text-primary);
+  box-shadow: 0 1px 3px rgba(41, 43, 48, 0.08);
+}
+
+:root[data-theme="dark"] .study-mode-tab.is-active {
+  background: #2A303A;
+  box-shadow: none;
+}
+
+.study-mode-count {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}
+
+/* Swipe badges describe grades; in browse mode a swipe only navigates. */
+body.study-mode-browse .swipe-badge { display: none !important; }
+
 .progress-nav-card {
   display: flex;
   flex-direction: row;

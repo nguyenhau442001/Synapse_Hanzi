@@ -112,9 +112,14 @@ if (typeof document !== 'undefined') {
   if (document.body) document.body.classList.toggle('hide-illustrations', !showIllustration);
 }
 export let currentFilter = 'all';
+// 'review' = graded SRS queue (due first, then new); 'browse' = free list navigation, no grading.
+export let studyMode = 'review';
 
 // Clear the deck filter and point idx at WORDS[wordIndex] (or the first card).
 export function showAllWordsAt(wordIndex) {
+  // Jumping to a specific word is list navigation, so it always lands in browse mode.
+  if (typeof studyMode !== 'undefined') studyMode = 'browse';
+  if (typeof window !== 'undefined') window.studyMode = 'browse';
   if (typeof currentFilter !== 'undefined') currentFilter = 'all';
   if (typeof window !== 'undefined') window.currentFilter = 'all';
   const currentOrder = typeof order !== 'undefined' ? order : (typeof window !== 'undefined' ? window.order : []);
@@ -311,6 +316,7 @@ export function mountAppState() {
       showHanViet,
       showIllustration,
       currentFilter,
+      studyMode,
       showAllWordsAt,
       transitionTimer,
       celebrationShown,

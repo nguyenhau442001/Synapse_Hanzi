@@ -11,24 +11,78 @@ import { signal } from '@preact/signals';
    toggleDisclosurePanel, toggleRadicalTransferPanel, closeCardMoreMenu,
    closeAllStudyDrawers, SpaRouter, goBackToPicker, toggleStudyWritingPanel,
    toggleStudyRadicalsPanel, toggleStudySidebar, toggleHanViet, speakWord,
-   isCardRevealed, flip, setActiveStudyWord */
+   isCardRevealed, flip, setActiveStudyWord, studyMode */
 
 const celebrationState = signal(null);
 
+// Cards graded "again" come back in the same session when they fall due within this window.
+const SESSION_RELEARN_WINDOW_MS = 30 * 60 * 1000;
+
+// Review queue: due cards (oldest due first), then never-studied cards in deck order.
+export function buildReviewQueue(now) {
+  const time = (now || new Date()).getTime();
+  const due = [];
+  const fresh = [];
+  (order || []).forEach(i => {
+    const word = WORDS[i];
+    if (!word) return;
+    const card = srsCards[word.id];
+    if (!card || card.state === SRS.State.New) fresh.push(i);
+    else if (SRS.isDue(card, time)) due.push({ i, at: new Date(card.due).getTime() });
+  });
+  due.sort((a, b) => a.at - b.at);
+  return due.map(d => d.i).concat(fresh);
+}
+
+// Rebuilds filteredOrder for the active mode without rendering.
+export function applyStudyModeOrder() {
+  if (studyMode === 'review') {
+    currentFilter = 'all';
+    filteredOrder = buildReviewQueue();
+  } else if (currentFilter === 'all') {
+    filteredOrder = order.slice();
+  } else if (currentFilter === 'unseen') {
+    filteredOrder = order.filter(i => !progress[WORDS[i].id]);
+  } else {
+    filteredOrder = order.filter(i => progress[WORDS[i].id] === currentFilter);
+  }
+  idx = 0;
+  window.studyMode = studyMode;
+  window.filteredOrder = filteredOrder;
+  window.currentFilter = currentFilter;
+}
+
+export function syncStudyModeUrl() {
+  if (typeof SpaRouter === 'undefined' || !currentLevel) return;
+  const state = window.history.state || {};
+  if (state.view === 'cards' && state.level === currentLevel && (state.mode || 'review') === studyMode) return;
+  SpaRouter.replaceView({ ...state, view: 'cards', level: currentLevel, mode: studyMode });
+}
+
+export function setStudyMode(mode) {
+  const next = mode === 'browse' ? 'browse' : 'review';
+  if (next === studyMode && filteredOrder.length > 0) return;
+  studyMode = next;
+  applyStudyModeOrder();
+  syncStudyModeUrl();
+  if (typeof renderFilters === 'function') renderFilters();
+  window.render('fade');
+}
+
 export function nextCard() {
-  if (filteredOrder.length === 0) return;
+  if (studyMode !== 'browse' || filteredOrder.length === 0) return;
   idx = (idx + 1) % filteredOrder.length;
   window.render('next');
 }
 
 export function prevCard() {
-  if (filteredOrder.length === 0) return;
+  if (studyMode !== 'browse' || filteredOrder.length === 0) return;
   idx = (idx - 1 + filteredOrder.length) % filteredOrder.length;
   window.render('prev');
 }
 
 export function jumpToRandomWord() {
-  if (!filteredOrder || filteredOrder.length === 0) return;
+  if (studyMode !== 'browse' || !filteredOrder || filteredOrder.length === 0) return;
   if (filteredOrder.length === 1) {
     idx = 0;
     window.render('fade');
@@ -58,8 +112,11 @@ export function jumpToRandomWord() {
 }
 
 export function rateCurrentCard(rating) {
-  if (filteredOrder.length === 0) return;
-  const wIdx = filteredOrder[idx % filteredOrder.length];
+  // Grading only happens in review mode, and only after the answer was revealed.
+  if (studyMode !== 'review' || filteredOrder.length === 0) return;
+  if (typeof isCardRevealed === 'function' && !isCardRevealed()) return;
+  const pos = idx % filteredOrder.length;
+  const wIdx = filteredOrder[pos];
   const word = WORDS[wIdx];
   if (!word) return;
   const prevDeck = typeof computeDeckProgress === 'function' ? computeDeckProgress() : null;
@@ -76,7 +133,21 @@ export function rateCurrentCard(rating) {
     renderOverview();
   }
   checkCelebration(prevDeck);
-  if (currentFilter !== 'all') advanceAfterMark(wIdx); else nextCard();
+  advanceReviewQueue(pos, wIdx, word);
+}
+
+// Drops the graded card from the queue (re-queueing it at the end when it is due again
+// within this session) and shows the next one.
+function advanceReviewQueue(pos, wIdx, word) {
+  const queue = filteredOrder.slice();
+  queue.splice(pos, 1);
+  const card = srsCards[word.id];
+  if (card && SRS.isDue(card, Date.now() + SESSION_RELEARN_WINDOW_MS)) queue.push(wIdx);
+  filteredOrder = queue;
+  window.filteredOrder = queue;
+  idx = queue.length === 0 ? 0 : pos % queue.length;
+  if (typeof renderFilters === 'function') renderFilters();
+  window.render(queue.length === 0 ? 'fade' : 'next');
 }
 
 export function markKnown() {
@@ -365,10 +436,21 @@ export function togglePinyin() {
   window.render();
 }
 
+// Rebuilds the visible deck after `order` or progress changed, keeping the current mode.
+function refreshStudyDeck() {
+  if (studyMode === 'review') {
+    applyStudyModeOrder();
+    if (typeof renderFilters === 'function') renderFilters();
+    window.render('fade');
+  } else {
+    window.setFilter(currentFilter);
+  }
+}
+
 export function shuffleDeck() {
   shuffleInPlace(order);
   savePrefs();
-  window.setFilter(currentFilter);
+  refreshStudyDeck();
 }
 
 export function resetProgress() {
@@ -391,7 +473,7 @@ export function resetProgress() {
   WORDS.forEach(word => { srsCards[word.id] = SRS.createNewCard(); });
   Object.keys(progress).forEach(key => delete progress[key]);
   saveProgress();
-  window.setFilter(currentFilter);
+  refreshStudyDeck();
 }
 
 export function toggleTransferPanel(forceOpen) {
@@ -598,7 +680,7 @@ function handleStudyKeydown(event) {
   if (event.key === 'ArrowRight') {
     if (document.activeElement && document.activeElement.closest('input, textarea, select')) return;
     event.preventDefault();
-    if (revealed && typeof rateCurrentCard === 'function') {
+    if (studyMode === 'review' && revealed && typeof rateCurrentCard === 'function') {
       rateCurrentCard('good');
     } else if (typeof nextCard === 'function') {
       nextCard();
@@ -608,7 +690,7 @@ function handleStudyKeydown(event) {
   if (event.key === 'ArrowLeft') {
     if (document.activeElement && document.activeElement.closest('input, textarea, select')) return;
     event.preventDefault();
-    if (revealed && typeof rateCurrentCard === 'function') {
+    if (studyMode === 'review' && revealed && typeof rateCurrentCard === 'function') {
       rateCurrentCard('again');
     } else if (typeof prevCard === 'function') {
       prevCard();
@@ -671,6 +753,10 @@ export function mountStudyProgress() {
   document.addEventListener('keydown', handleStudyKeydown);
 
   // Re-export study controls on window for template event handlers and external scripts
+  window.buildReviewQueue = buildReviewQueue;
+  window.applyStudyModeOrder = applyStudyModeOrder;
+  window.syncStudyModeUrl = syncStudyModeUrl;
+  window.setStudyMode = setStudyMode;
   window.nextCard = nextCard;
   window.prevCard = prevCard;
   window.jumpToRandomWord = jumpToRandomWord;

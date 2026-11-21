@@ -455,7 +455,18 @@ function renderFilters() {
         </div>
       </div>
 
-      <div class="progress-nav-cards" role="radiogroup" aria-label="Lọc danh sách thẻ từ vựng">
+      <div class="study-mode-switch" role="tablist" aria-label="Chế độ học">
+        <button type="button" role="tab" class="study-mode-tab${studyMode === 'review' ? ' is-active' : ''}"
+          aria-selected="${studyMode === 'review'}" onclick="setStudyMode('review')">
+          Ôn tập${studyMode === 'review' ? ` <span class="study-mode-count">${filteredOrder.length}</span>` : ''}
+        </button>
+        <button type="button" role="tab" class="study-mode-tab${studyMode === 'browse' ? ' is-active' : ''}"
+          aria-selected="${studyMode === 'browse'}" onclick="setStudyMode('browse')">
+          Duyệt danh sách
+        </button>
+      </div>
+
+      <div class="progress-nav-cards" role="radiogroup" aria-label="Lọc danh sách thẻ từ vựng"${studyMode === 'review' ? ' hidden' : ''}>
         ${filters.map(f => {
           const isSelected = currentFilter === f.key;
           const isEmpty = f.count === 0;
@@ -507,6 +518,10 @@ function setFilter(key) {
     ? WORDS[filteredOrder[idx]].id
     : null;
 
+  // Filters are a browse-mode tool: picking one leaves the graded review queue.
+  studyMode = 'browse';
+  window.studyMode = 'browse';
+  if (typeof syncStudyModeUrl === 'function') syncStudyModeUrl();
   currentFilter = key;
   if (key === 'all') filteredOrder = order.slice();
   else if (key === 'unseen') filteredOrder = order.filter(i => !progress[WORDS[i].id]);
@@ -610,18 +625,23 @@ function syncRevealControls() {
   const studyNavRow = document.getElementById('studyNavRow');
   const hasCard = Array.isArray(filteredOrder) && filteredOrder.length > 0;
   const revealed = hasCard && isCardRevealed();
+  // Review mode: grade after flipping, no free navigation. Browse mode: navigation only.
+  const showRating = revealed && studyMode === 'review';
+  const showNav = hasCard && studyMode === 'browse';
   if (ratingRow) {
-    ratingRow.hidden = !revealed;
-    ratingRow.style.display = revealed ? '' : 'none';
+    ratingRow.hidden = !showRating;
+    ratingRow.style.display = showRating ? '' : 'none';
   }
   if (ratingArea) {
-    ratingArea.hidden = !revealed;
-    ratingArea.style.display = revealed ? '' : 'none';
+    ratingArea.hidden = !showRating;
+    ratingArea.style.display = showRating ? '' : 'none';
   }
   if (studyNavRow) {
-    studyNavRow.hidden = !hasCard;
-    studyNavRow.style.display = hasCard ? '' : 'none';
+    studyNavRow.hidden = !showNav;
+    studyNavRow.style.display = showNav ? '' : 'none';
   }
+  document.body.classList.toggle('study-mode-review', studyMode === 'review');
+  document.body.classList.toggle('study-mode-browse', studyMode === 'browse');
 }
 function computeDeckProgress() {
   if (!Array.isArray(WORDS) || WORDS.length === 0) {
@@ -982,7 +1002,14 @@ function ensureStudyWordList() {
 // is in it and falling back to "all" otherwise. Returns whether it moved.
 function jumpToWordByIndex(wordIndex) {
   if (wordIndex < 0 || !Array.isArray(WORDS) || wordIndex >= WORDS.length) return false;
-  if (!filteredOrder.includes(wordIndex)) {
+  if (studyMode !== 'browse') {
+    studyMode = 'browse';
+    window.studyMode = 'browse';
+    if (typeof syncStudyModeUrl === 'function') syncStudyModeUrl();
+    currentFilter = 'all';
+    filteredOrder = order.slice();
+    renderFilters();
+  } else if (!filteredOrder.includes(wordIndex)) {
     currentFilter = 'all';
     filteredOrder = order.slice();
     renderFilters();
@@ -1141,6 +1168,22 @@ function render(animate) {
     const deck = typeof computeDeckProgress === 'function' ? computeDeckProgress() : { learned: 0, total: WORDS.length, known: 0, unknown: 0, unseen: 0 };
     const levelLabel = (LEVELS[currentLevel] && LEVELS[currentLevel].label) || 'cấp độ này';
 
+    if (studyMode === 'review') {
+      container.innerHTML = `
+        <div class="generic-empty-card">
+          <h3 class="generic-empty-title">Đã xong phiên ôn tập</h3>
+          <p class="generic-empty-desc">
+            Không còn thẻ đến hạn hay thẻ mới trong ${levelLabel}. Hãy quay lại khi có thẻ cần ôn.
+          </p>
+          <div class="generic-empty-actions">
+            <button type="button" class="empty-btn empty-btn--secondary" onclick="setFilter('all')">
+              Duyệt danh sách từ
+            </button>
+          </div>
+        </div>`;
+      return;
+    }
+
     if (currentFilter === 'unseen' || (deck.unseen === 0 && deck.total > 0 && currentFilter !== 'unknown' && currentFilter !== 'known')) {
       celebrateDeckMilestone();
       container.innerHTML = `
@@ -1171,7 +1214,7 @@ function render(animate) {
           </div>
           <div class="achievement-hero-actions">
             ${deck.unknown > 0 ? `
-            <button type="button" class="empty-btn empty-btn--primary" onclick="setFilter('unknown')">
+            <button type="button" class="empty-btn empty-btn--primary" onclick="setStudyMode('review')">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
               Ôn tập ngay ${deck.unknown} từ chưa nhớ
             </button>` : ''}
@@ -1215,7 +1258,7 @@ function render(animate) {
           </p>
           <div class="generic-empty-actions">
             ${deck.unseen > 0 ? `
-            <button type="button" class="empty-btn empty-btn--primary" onclick="setFilter('unseen')">
+            <button type="button" class="empty-btn empty-btn--primary" onclick="setStudyMode('review')">
               Học tiếp ${deck.unseen} từ mới
             </button>` : ''}
             <button type="button" class="empty-btn empty-btn--secondary" onclick="setFilter('all')">

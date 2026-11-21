@@ -8,7 +8,7 @@
    showAllWordsAt, render, flip, preloadDeckIllustrations, loadLevelIllustrationPack,
    loadPrebuiltAudioManifest, setActiveStudyWord, setPrimaryTab, setVocabSubTab,
    renderHsk30Grid, renderDashboardEnhancements, closeAllStudyDrawers, renderStudyWordList,
-   preloadSingleWordIllustration */
+   preloadSingleWordIllustration, studyMode, applyStudyModeOrder */
 
 export function localDateKey(date) {
   const year = date.getFullYear();
@@ -835,8 +835,19 @@ export async function selectLevel(level, targetWordIdOrHanzi = null, autoReveal 
   window.currentLevel = level;
   try { currentLevel = level; } catch (e) {}
 
+  // Review (graded queue) is the default; browse is kept for deep links to a word or a
+  // reload of a ?mode=browse URL for this same level.
+  let initialMode = 'review';
+  try {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('level') === level && params.get('mode') === 'browse') initialMode = 'browse';
+  } catch (e) {}
+  if (targetWordIdOrHanzi) initialMode = 'browse';
+  window.studyMode = initialMode;
+  try { studyMode = initialMode; } catch (e) {}
+
   if (typeof SpaRouter !== 'undefined') {
-    SpaRouter.pushView({ view: 'cards', level: level });
+    SpaRouter.pushView({ view: 'cards', level: level, mode: initialMode });
   }
 
   if (typeof closeAllStudyDrawers === 'function') closeAllStudyDrawers();
@@ -987,6 +998,9 @@ export async function selectLevel(level, targetWordIdOrHanzi = null, autoReveal 
       if (typeof showAllWordsAt === 'function') showAllWordsAt(targetIdx);
       else if (typeof window.showAllWordsAt === 'function') window.showAllWordsAt(targetIdx);
     }
+  } else if (initialMode === 'review') {
+    if (typeof applyStudyModeOrder === 'function') applyStudyModeOrder();
+    else if (typeof window.applyStudyModeOrder === 'function') window.applyStudyModeOrder();
   } else if (filtered && filtered.length > 0) {
     const randIdx = Math.floor(Math.random() * filtered.length);
     window.idx = randIdx;
@@ -994,10 +1008,11 @@ export async function selectLevel(level, targetWordIdOrHanzi = null, autoReveal 
   }
 
   const curIdx = typeof idx !== 'undefined' ? idx : window.idx;
+  const filteredNow = typeof filteredOrder !== 'undefined' ? filteredOrder : window.filteredOrder;
   if (typeof preloadDeckIllustrations === 'function') {
-    preloadDeckIllustrations(wordsList, curIdx, filtered, level);
+    preloadDeckIllustrations(wordsList, curIdx, filteredNow, level);
   } else if (typeof window.preloadDeckIllustrations === 'function') {
-    window.preloadDeckIllustrations(wordsList, curIdx, filtered, level);
+    window.preloadDeckIllustrations(wordsList, curIdx, filteredNow, level);
   }
 
   if (typeof render === 'function') render();

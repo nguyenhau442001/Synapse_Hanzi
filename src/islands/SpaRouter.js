@@ -9,7 +9,7 @@ export const SpaRouter = (function() {
   function getCurrentUrlState() {
     const params = new URLSearchParams(window.location.search);
     if (params.has('level')) {
-      return { view: 'cards', level: params.get('level') };
+      return { view: 'cards', level: params.get('level'), mode: params.get('mode') === 'browse' ? 'browse' : 'review' };
     }
     if (params.has('tab')) {
       const tab = params.get('tab');
@@ -41,7 +41,8 @@ export const SpaRouter = (function() {
       return themeParam ? `${base}?${themeParam.slice(1)}` : base;
     }
     if (state.view === 'cards' && state.level) {
-      return `${base}?level=${encodeURIComponent(state.level)}${themeParam}`;
+      const modeParam = state.mode === 'browse' ? '&mode=browse' : '';
+      return `${base}?level=${encodeURIComponent(state.level)}${modeParam}${themeParam}`;
     }
     if (state.view === 'tab' && state.tab && state.tab !== 'vocab') {
       if (state.tab === 'gradedReading' && state.story) {
