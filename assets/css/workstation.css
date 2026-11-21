@@ -5273,7 +5273,7 @@ body.flashcard-study-mode .accordion-badge,
   font-weight: 500;
   font-variant-numeric: tabular-nums;
 }
-body.flashcard-study-mode .accordion-badge::before { content: "· "; }
+body.flashcard-study-mode .accordion-badge::before { content: none; }
 
 /* --- Learning controls: one balanced block ------------------------------- */
 body.flashcard-study-mode .rating-btn {

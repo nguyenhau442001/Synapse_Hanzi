@@ -390,7 +390,8 @@ export async function renderCardRelated(word) {
   }
   window.setCardSectionVisible(accordion, wrap, true, 'flex');
   if (countBadge) {
-    countBadge.textContent = relatedList.length;
+    countBadge.textContent = `(${relatedList.length})`;
+    countBadge.setAttribute('aria-label', `${relatedList.length} chữ liên quan`);
     countBadge.hidden = false;
   }
   const lastItem = relatedNavHistory.length > 0 ? relatedNavHistory[relatedNavHistory.length - 1] : null;
