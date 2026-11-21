@@ -111,6 +111,7 @@ export function initAppEventBindings() {
   onId('primaryTabCurriculum', 'click', () => handlePrimaryTab('curriculum'));
   onId('primaryTabWriting', 'click', () => handlePrimaryTab('writing'));
   onId('primaryNavReading', 'click', () => handlePrimaryTab('gradedReading'));
+  onId('primaryNavWriting', 'click', () => handlePrimaryTab('writing'));
   onId('primaryTabReview', 'click', () => handlePrimaryTab('review'));
   onId('primaryTabListening', 'click', () => handlePrimaryTab('listening'));
   onId('primaryTabGradedReading', 'click', () => handlePrimaryTab('gradedReading'));

@@ -157,9 +157,14 @@ export function setPrimaryTab(tab, options) {
     navReading.classList.toggle('active', tab === 'gradedReading');
     navReading.setAttribute('aria-pressed', String(tab === 'gradedReading'));
   }
+  const navWriting = document.getElementById('primaryNavWriting');
+  if (navWriting) {
+    navWriting.classList.toggle('active', tab === 'writing');
+    navWriting.setAttribute('aria-pressed', String(tab === 'writing'));
+  }
   if (mobProfile) mobProfile.classList.remove('active');
   if (typeof closeMobileStatsSheet === 'function') closeMobileStatsSheet();
-  const isTool = ['radicals', 'sentenceGame', 'guessWord', 'speedQuiz', 'reading', 'listening', 'writing'].includes(tab);
+  const isTool = ['radicals', 'sentenceGame', 'guessWord', 'speedQuiz', 'reading', 'listening'].includes(tab);
   const isGame = ['sentenceGame', 'guessWord', 'speedQuiz'].includes(tab);
   document.body.classList.toggle('is-game-view', isGame);
   document.body.classList.toggle('reading-view-active', tab === 'reading');
