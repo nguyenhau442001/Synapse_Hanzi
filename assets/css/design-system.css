@@ -549,3 +549,97 @@ body.home-screen #screenPicker .level-grid .level-card:focus-visible,
   font-weight: 600;
   border-radius: var(--radius-pill);
 }
+
+/* ── Reading analysis (Đọc hiểu): theme tokens instead of hard-coded slate/navy ── */
+.reading-global-footer {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  box-shadow: none;
+}
+.reading-jump-select,
+.reading-jump-select:hover,
+.reading-jump-select:focus {
+  background-color: var(--surface-subtle);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-input);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+}
+.reading-jump-select:focus-visible { box-shadow: var(--focus-ring); }
+.reading-global-footer .reading-nav-btn {
+  border-radius: var(--radius-btn);
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text-primary);
+  box-shadow: none;
+  font-family: var(--font-sans);
+  font-weight: 600;
+}
+.reading-global-footer .reading-nav-btn:hover:not(:disabled) { background: var(--surface-subtle); border-color: var(--text-tertiary); }
+.reading-global-footer .reading-nav-btn:disabled { opacity: 0.5; }
+
+.reading-exercise-card { border-color: var(--border); }
+.reading-exercise-card :is(.exercise-meta-pill) { border-color: var(--border); color: var(--text-secondary); }
+.reading-exercise-card :is(.meta-label, .meta-separator, .practice-empty-placeholder) { color: var(--text-tertiary); }
+.reading-exercise-card .prompt-text { color: var(--text-primary); }
+:root:not([data-theme="dark"]) body:not(.dark-mode) .reading-exercise-card .exercise-prompt-box,
+.reading-exercise-card .exercise-prompt-box {
+  background: var(--surface-subtle);
+  border-color: var(--border);
+  border-left-color: var(--accent);
+}
+:root:not([data-theme="dark"]) body:not(.dark-mode) .reading-exercise-card .practice-slots-area,
+.reading-exercise-card .practice-slots-area { border-color: var(--border); background: transparent; }
+:root:not([data-theme="dark"]) body:not(.dark-mode) .reading-exercise-card .practice-bank-area,
+.reading-exercise-card .practice-bank-area { border-color: var(--border-subtle); background: var(--surface-subtle); }
+
+/* Category pills: one neutral style (the label already names the type) */
+.cat-pill,
+.cat-building, .cat-logic, .cat-cloze, .cat-para {
+  background: var(--surface-chip);
+  color: var(--text-secondary);
+  border: 0;
+  font-weight: 600;
+}
+.status-answering { background: var(--danger-bg); color: var(--accent-text); border: 0; }
+.status-reviewed { background: var(--success-bg); color: var(--success-text); border: 0; }
+
+/* ── Home: the one-minute challenge is a slim row, not another card ──────── */
+.quick-quiz-card,
+body.home-screen .quick-quiz-card,
+:root[data-theme="dark"] body.home-screen .quick-quiz-card {
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* ── Lesson grammar points: dividers instead of stacked cards ────────────── */
+.cur-grammar.cur-card {
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--border);
+  border-radius: 0;
+  padding: var(--space-5) 0 var(--space-2);
+}
+.cur-grammar .cur-formula { background: var(--card-bg); border-style: solid; }
+
+/* Reading footer "next" follows the primary action style in both themes */
+.reading-global-footer .reading-nav-btn.next-btn,
+:root[data-theme="dark"] .reading-global-footer .reading-nav-btn.next-btn,
+body.dark-mode .reading-global-footer .reading-nav-btn.next-btn {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #FFFFFF;
+  box-shadow: none;
+}
+.reading-global-footer .reading-nav-btn.next-btn:hover:not(:disabled),
+:root[data-theme="dark"] .reading-global-footer .reading-nav-btn.next-btn:hover:not(:disabled),
+body.dark-mode .reading-global-footer .reading-nav-btn.next-btn:hover:not(:disabled) {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+  color: #FFFFFF;
+}
