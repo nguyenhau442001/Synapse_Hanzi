@@ -5457,7 +5457,7 @@ body.flashcard-study-mode .rating-btn,
   justify-items: center;
   align-content: center;
   row-gap: 2px !important;
-  min-height: 58px !important;
+  min-height: 48px !important;
   height: auto !important;
   padding: 8px 6px !important;
   border-radius: 12px !important;

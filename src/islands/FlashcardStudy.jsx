@@ -665,11 +665,7 @@ function ratingButtonsHtml(handlerName, previewIdPrefix, previews) {
     <button type="button" class="rating-btn rating-btn--${button.rating}"
       onclick="${handlerName}('${button.rating}')" aria-keyshortcuts="${button.key}"
       title="${titleText}">
-      <span class="rating-interval" id="${previewIdPrefix || 'preview-'}${button.rating}">${intervalText}</span>
       <span class="rating-label">${button.label}</span>
-      <span class="rating-kbd-badge" aria-hidden="true">
-        <kbd>${button.key}</kbd>
-      </span>
     </button>`;
   }).join('');
 }

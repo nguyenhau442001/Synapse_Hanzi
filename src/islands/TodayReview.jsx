@@ -173,9 +173,7 @@ function RatingButtons({ card }) {
     return (
       <button type="button" key={rating} class={`rating-btn rating-btn--${rating}`} onClick={stop(() => rateTodayReview(rating))}
         aria-keyshortcuts={key} title={`${label}${interval ? ` (ôn lại sau ${interval})` : ''} • Phím [${key}]`}>
-        <span class="rating-interval">{interval}</span>
         <span class="rating-label">{label}</span>
-        <span class="rating-kbd-badge" aria-hidden="true"><kbd>{key}</kbd></span>
       </button>
     );
   });

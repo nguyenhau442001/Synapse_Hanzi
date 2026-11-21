@@ -2,7 +2,7 @@
 """
 Unit tests for the Flashcard Active Recall redesign:
 1. Active Recall: Front displays only Hanzi + Illustration mnemonic anchor, hides Pinyin, Meaning, Badges, Examples, Accordions until flipped.
-2. Interaction Design & Ergonomics: Number-key shortcut badges [1] & [2] on rating buttons (arrows only navigate in browse mode), enhanced hover states, compact card height.
+2. Interaction Design & Ergonomics: label-only rating buttons (keys 1-4 in the tooltip; arrows only navigate in browse mode), enhanced hover states, compact card height.
 3. Clean-up & Accordions: Expandable accordion components for Hanzi Decomposition and Related Words (collapsed by default).
 """
 
@@ -56,10 +56,12 @@ class TestFlashcardActiveRecall(unittest.TestCase):
         self.assertIn("decompAcc.open = false", self.fc_js)
         self.assertIn("relatedAcc.open = false", self.fc_js)
 
-    def test_rating_buttons_show_keyboard_shortcuts(self):
-        """Rating buttons show only the number key; arrow keys are reserved for browse navigation."""
-        self.assertIn("rating-kbd-badge", self.fc_js)
-        self.assertIn("<kbd>${button.key}</kbd>", self.fc_js)
+    def test_rating_buttons_show_only_labels(self):
+        """Rating buttons show only the label; keys 1-4 still work and are listed in the tooltip."""
+        self.assertNotIn("rating-kbd-badge", self.fc_js)
+        self.assertNotIn('class="rating-interval"', self.fc_js)
+        self.assertIn('aria-keyshortcuts="${button.key}"', self.fc_js)
+        self.assertIn("Phím [${button.key}]", self.fc_js)
         self.assertNotIn("shortcutArrow", self.fc_js)
 
     def test_arrow_keys_never_grade(self):
