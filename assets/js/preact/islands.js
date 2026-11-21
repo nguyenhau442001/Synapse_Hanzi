@@ -306,9 +306,9 @@ function Ke(e){return k.rating(e)}var qe=Object.freeze([O.Again,O.Hard,O.Good,O.
         <div class="card-more-menu-wrap" id="cardMoreMenuWrap">
           <button type="button" class="card-more-btn" id="cardMoreBtn" onclick="toggleCardMoreMenu(event)" aria-label="Tùy chọn thẻ" aria-haspopup="menu" aria-expanded="false" title="Tùy chọn khác">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <circle cx="12" cy="5" r="2.2"/>
+              <circle cx="5" cy="12" r="2.2"/>
               <circle cx="12" cy="12" r="2.2"/>
-              <circle cx="12" cy="19" r="2.2"/>
+              <circle cx="19" cy="12" r="2.2"/>
             </svg>
           </button>
           <div class="card-more-dropdown" id="cardMoreDropdown" role="menu" hidden>
@@ -410,7 +410,7 @@ function Ke(e){return k.rating(e)}var qe=Object.freeze([O.Again,O.Hard,O.Good,O.
               <button class="example-sound-btn speech-btn" id="exampleSoundBtn" type="button"
                 onclick="event.stopPropagation(); speakExample()"
                 aria-label="Nghe câu ví dụ" aria-live="polite" title="Nghe câu ví dụ">
-                <svg class="sound-btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+                ${speakerIconSvg(16,`sound-btn-icon`)}
               </button>
               <details class="example-speed-picker" id="exampleSpeedPicker"
                 onclick="event.stopPropagation()">

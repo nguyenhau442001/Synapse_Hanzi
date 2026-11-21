@@ -5490,3 +5490,35 @@ body.flashcard-study-mode .rating-btn .rating-kbd-badge,
 @media (hover: none) and (pointer: coarse) {
   .rating-btn .rating-kbd-badge { display: none !important; }
 }
+
+/* --- One speaker-button style for the word and the example -----------------
+   Same 32px rounded square, neutral at rest, accent tint on hover. */
+body.flashcard-study-mode .sound-btn,
+body.flashcard-study-mode .example-sound-btn,
+:root[data-theme="light"] body.flashcard-study-mode .sound-btn,
+:root[data-theme="dark"] body.flashcard-study-mode .sound-btn,
+:root[data-theme="dark"] body.flashcard-study-mode .example-sound-btn {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  padding: 0;
+  border-radius: 8px;
+  border: 1px solid var(--hs-beige, var(--border));
+  background: var(--hs-surface, var(--surface-subtle));
+  color: var(--text-secondary);
+  align-items: center;
+  justify-content: center;
+}
+body.flashcard-study-mode .example-sound-btn { display: inline-flex; }
+body.flashcard-study-mode .sound-btn svg,
+body.flashcard-study-mode .example-sound-btn svg { width: 16px; height: 16px; }
+body.flashcard-study-mode .sound-btn:hover,
+body.flashcard-study-mode .example-sound-btn:hover,
+:root[data-theme="light"] body.flashcard-study-mode .sound-btn:hover,
+:root[data-theme="dark"] body.flashcard-study-mode .sound-btn:hover,
+:root[data-theme="dark"] body.flashcard-study-mode .example-sound-btn:hover {
+  color: var(--hs-accent-ink, var(--accent));
+  background: var(--hs-accent-tint, var(--accent-light));
+  border-color: var(--hs-accent-line, var(--accent));
+  transform: none;
+}
