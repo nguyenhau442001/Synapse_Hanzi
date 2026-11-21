@@ -44,12 +44,15 @@ def test_graded_reading_jsx_layout_structure():
     assert "graded-card-cover" in jsx_content
     assert 'role="button" aria-label={`Đọc bài' not in jsx_content
 
-    # 5. Mobile reader 3-tier hierarchy & illustration frame
+    # 5. Book-mode reader: sticky top bar with progress, controls, settings panel, illustration
     assert "graded-reader-top-bar" in jsx_content
     assert "graded-reader-title-block" in jsx_content
-    assert "graded-reader-actions-bar" in jsx_content
+    assert "graded-reader-progress" in jsx_content
+    assert "graded-reader-controls" in jsx_content
+    assert "graded-pinyin-seg" in jsx_content
+    assert "graded-reader-panel" in jsx_content
+    assert "graded-panel-legend" in jsx_content
     assert "graded-illustration-frame" in jsx_content
-    assert "graded-legend-title" in jsx_content
 
 def test_graded_reading_css_responsive_grid():
     css_path = ROOT / "assets" / "css" / "graded-reading.css"
@@ -75,10 +78,9 @@ def test_graded_reading_css_responsive_grid():
     assert ".graded-hub-header" not in css_content
     assert ".graded-col-card" not in css_content
 
-    # Reader mobile 3-tier grid & zen mode
-    assert "grid-template-columns: repeat(3, 1fr)" in css_content
+    # Book-mode reader: room for the phone reading dock
     assert "padding-bottom: 96px" in css_content
-    assert "max-height: 150px" in css_content
+    assert ".graded-reader-panel" in css_content
 
 def test_reading_is_a_primary_destination():
     index_html = (ROOT / "index.html").read_text(encoding="utf-8")
