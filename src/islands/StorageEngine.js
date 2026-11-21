@@ -1,7 +1,7 @@
 // src/islands/StorageEngine.js
 // Local persistence for the currently selected HSK level and cross-level SRS progress.
 
-import { SRS } from './SrsEngine';
+import { SRS } from './SrsEngine.js';
 
 export const SRS_SCHEMA_VERSION = 3;
 export const SRS_RETENTION_KEY = 'hsk_srs_prefs_v1';
@@ -92,20 +92,21 @@ export function saveRetention(value) {
   return norm;
 }
 
-export function statusFromCard(card) {
-  if (!card) return null;
-  if (card.status === 'unknown' || card.status === 'known') return card.status;
-  if (card.last_rating === 'again' || card.last_rating === 'hard') return 'unknown';
-  if (card.last_rating === 'good' || card.last_rating === 'easy') return 'known';
-  if (card.state === SRS.State.Review) return 'known';
-  if (card.state === SRS.State.Learning || card.state === SRS.State.Relearning) return 'unknown';
-  return null;
+// Learning state shown in the UI, derived from the FSRS card (never stored):
+//   null      -> Chưa học (new card)
+//   'known'   -> Đã nhớ  (graduated to Review and not yet due)
+//   'unknown' -> Cần ôn  (learning/relearning, or a review card that is due)
+export function statusFromCard(card, now) {
+  if (!card || card.state === undefined || card.state === SRS.State.New) return null;
+  if (card.state === SRS.State.Review && !SRS.isDue(card, now || new Date())) return 'known';
+  return 'unknown';
 }
 
-export function progressFromCards(cards) {
+export function progressFromCards(cards, now) {
   const statuses = {};
+  const time = now || new Date();
   Object.keys(cards || {}).forEach(id => {
-    const status = statusFromCard(cards[id]);
+    const status = statusFromCard(cards[id], time);
     if (status) statuses[id] = status;
   });
   return statuses;
@@ -118,18 +119,19 @@ export function migrateLegacyProgress(level, words, legacyProgress, retention) {
     let card = SRS.createNewCard(now);
     const legacyStatus = legacyProgress && legacyProgress[word.id];
     if (legacyStatus === 'known') {
+      // Reviewed once and graduated, due again after a short interval (1-7 days, spread out
+      // so a large legacy deck does not all fall due on the same day).
       card = SRS.review(card, 'good', now, retention).card;
       card.state = SRS.State.Review;
-      card.status = 'known';
       card.last_rating = 'good';
       const due = new Date(now.getTime());
       due.setDate(due.getDate() + 1 + Math.floor(Math.random() * 7));
       card.due = due.toISOString();
+      card.scheduled_days = Math.round((due.getTime() - now.getTime()) / 86400000);
     } else if (legacyStatus === 'unknown') {
+      // Forgotten: in relearning and due right now.
       card = SRS.review(card, 'again', now, retention).card;
-      card.status = 'unknown';
       card.last_rating = 'again';
-      card.lapses = 1;
       card.due = now.toISOString();
     }
     card.historyStartAt = now.toISOString();
@@ -149,14 +151,12 @@ export function loadSrsForLevel(level, words, legacyProgress) {
     cards = existing.cards;
     migratedFromV2 = existing.migratedFromV2;
     (words || []).forEach(word => {
-      if (!cards[word.id]) {
-        cards[word.id] = SRS.createNewCard();
-      } else {
-        const c = cards[word.id];
-        if (!c.status && c.state !== SRS.State.New) {
-          c.status = statusFromCard(c);
-        }
-      }
+      if (!cards[word.id]) cards[word.id] = SRS.createNewCard();
+    });
+    // Cards saved by the old two-button scheduler are valid FSRS cards (their due dates are kept);
+    // only the stored `status` field is dropped because the state is now derived from state/due.
+    Object.keys(cards).forEach(id => {
+      if (cards[id] && 'status' in cards[id]) delete cards[id].status;
     });
   } else {
     cards = migrateLegacyProgress(level, words, legacyProgress || {}, retention);

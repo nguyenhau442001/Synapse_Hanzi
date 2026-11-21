@@ -25,7 +25,8 @@ class TestSplitVocabCard(unittest.TestCase):
 
     def test_mobile_stays_single_column(self):
         block = WORKSTATION_CSS.split("Split vocabulary card", 1)[1]
-        mobile = block.split("@media (max-width: 767px)", 1)[1]
+        # Only the split card's own mobile media block (it ends at the first top-level "}").
+        mobile = block.split("@media (max-width: 767px)", 1)[1].split("\n}\n", 1)[0]
         self.assertNotIn("display: grid", mobile)
 
     def test_hidden_illustration_never_reserves_space(self):

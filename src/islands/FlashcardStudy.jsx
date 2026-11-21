@@ -66,8 +66,8 @@ function buildCardArea() {
           </div>
         </div>
       </div>
-      <div class="swipe-badge swipe-badge--known" id="swipeBadgeKnown">✓ Đã nhớ</div>
-      <div class="swipe-badge swipe-badge--unknown" id="swipeBadgeUnknown">✗ Chưa nhớ</div>
+      <div class="swipe-badge swipe-badge--known" id="swipeBadgeKnown">✓ Được</div>
+      <div class="swipe-badge swipe-badge--unknown" id="swipeBadgeUnknown">✗ Quên</div>
       <div id="cardContent" class="card-content">
         <div class="word-hero-container" id="wordMainBlock">
           <!-- Chữ Hán to bản ở trung tâm: vững chãi, thoáng đãng, tinh tế (Focal Point chính) -->
@@ -169,7 +169,7 @@ function buildCardArea() {
       </div>
     </div>
 
-    <!-- Rating actions row: Subtle Filled Buttons with height >= 48px & keyboard shortcuts 1 and 2 -->
+    <!-- Rating actions row: four FSRS grades (keys 1-4) with the next interval on each button -->
     <div class="rating-area" id="ratingArea">
       <div class="rating-row" id="ratingRow" hidden>
         ${ratingButtonsHtml('rateCurrentCard', 'preview-')}
@@ -552,29 +552,31 @@ function updateStats() {
   renderFilters();
   updateProgress();
 }
+// FSRS grades. Each button shows the interval the card would get (e.g. "10p", "1n", "3n").
 const RATING_BUTTONS = [
-  { rating: 'again', emoji: '❌', label: 'Chưa nhớ', key: '1', interval: 'Hôm nay' },
-  { rating: 'good', emoji: '✅', label: 'Đã nhớ', key: '2', interval: 'Ôn ngắt quãng' },
+  { rating: 'again', label: 'Quên', key: '1', interval: '' },
+  { rating: 'hard', label: 'Khó', key: '2', interval: '' },
+  { rating: 'good', label: 'Được', key: '3', interval: '' },
+  { rating: 'easy', label: 'Dễ', key: '4', interval: '' },
 ];
 const RATING_KEYS = {
   '1': 'again',
-  '2': 'good',
+  '2': 'hard',
+  '3': 'good',
+  '4': 'easy',
 };
 
-// Shared by the level deck and "Ôn hôm nay": label with icon, no cluttered subtext.
+// Shared by the level deck and "Ôn hôm nay".
 function ratingButtonsHtml(handlerName, previewIdPrefix, previews) {
   return RATING_BUTTONS.map(button => {
     const preview = previews ? previews[button.rating] : null;
-    const intervalText = preview ? formatSrsInterval(preview, button.interval) : button.interval;
-    const iconSvg = button.rating === 'again'
-      ? `<svg class="rating-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>`
-      : `<svg class="rating-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>`;
-    const titleText = `${button.label}${intervalText ? ` (${intervalText})` : ''} • Phím [${button.key}]`;
+    const intervalText = formatSrsInterval(preview, button.interval);
+    const titleText = `${button.label}${intervalText ? ` (ôn lại sau ${intervalText})` : ''} • Phím [${button.key}]`;
     return `
     <button type="button" class="rating-btn rating-btn--${button.rating}"
       onclick="${handlerName}('${button.rating}')" aria-keyshortcuts="${button.key}"
       title="${titleText}">
-      <span class="rating-icon-wrap" aria-hidden="true">${iconSvg}</span>
+      <span class="rating-interval" id="${previewIdPrefix || 'preview-'}${button.rating}">${intervalText}</span>
       <span class="rating-label">${button.label}</span>
       <span class="rating-kbd-badge" aria-hidden="true">
         <kbd>${button.key}</kbd>
@@ -584,26 +586,18 @@ function ratingButtonsHtml(handlerName, previewIdPrefix, previews) {
 }
 function formatSrsInterval(preview, fallback) {
   if (preview && preview.intervalText) return preview.intervalText;
-  if (!preview) return fallback || '';
-  if (preview.rating === 'again') return 'Hôm nay';
-  const ms = preview.intervalMs;
-  if (!Number.isFinite(ms)) return fallback || '';
-  const days = Math.round(ms / 86400000);
-  if (days <= 0) return 'Hôm nay';
-  if (days === 1) return '1 ngày';
-  return days + ' ngày';
+  if (preview && Number.isFinite(preview.intervalMs)) return SRS.formatInterval(preview.intervalMs);
+  return fallback || '';
 }
 function updateSrsPreviews(word) {
   const card = word && srsCards[word.id];
   const previews = card ? SRS.preview(card, new Date(), srsRetention) : {};
   RATING_BUTTONS.forEach(({ rating, interval, label, key }) => {
+    const nextInterval = formatSrsInterval(previews[rating], interval);
     const node = document.getElementById('preview-' + rating);
-    if (node) node.textContent = formatSrsInterval(previews[rating], interval);
-    const btn = document.querySelector(`.rating-btn--${rating}`);
-    if (btn) {
-      const nextInterval = formatSrsInterval(previews[rating], interval);
-      btn.title = `Đánh giá: ${label}${nextInterval ? ` (${nextInterval})` : ''} • Phím [${key}]`;
-    }
+    if (node) node.textContent = nextInterval;
+    const btn = document.querySelector(`#ratingRow .rating-btn--${rating}`);
+    if (btn) btn.title = `${label}${nextInterval ? ` (ôn lại sau ${nextInterval})` : ''} • Phím [${key}]`;
   });
 }
 function isCardRevealed() {
@@ -623,6 +617,7 @@ function syncRevealControls() {
   const revealed = hasCard && isCardRevealed();
   // Review mode: grade after flipping, no free navigation. Browse mode: navigation only.
   const showRating = revealed && studyMode === 'review';
+  if (showRating) updateSrsPreviews(WORDS[filteredOrder[idx % filteredOrder.length]]);
   const showNav = hasCard && studyMode === 'browse';
   if (ratingRow) {
     ratingRow.hidden = !showRating;

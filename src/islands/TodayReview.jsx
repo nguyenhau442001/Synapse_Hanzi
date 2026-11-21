@@ -86,7 +86,8 @@ export function rateTodayReview(rating) {
   const record = window.readSrsRecord(item.level);
   const result = window.reviewSrsCard(item.level, item.word.id, rating, record ? record.cards : {});
   window.recordDailyStudy(item.word.id, item.level);
-  if (rating === 'again') {
+  // Cards still in (re)learning come back later in the same session.
+  if (SRS.isDue(result.card, Date.now() + 30 * 60 * 1000)) {
     queue.value = [...queue.value, { ...item, card: result.card, due: new Date(result.card.due).getTime() }];
   }
   index.value++;
@@ -157,20 +158,27 @@ function Celebration() {
   );
 }
 
-function RatingButton({ rating, label, keys, mobileKey, title: btnTitle, icon }) {
-  return (
-    <button type="button" class={`today-rating-btn today-rating-btn--${rating}`} onClick={stop(() => rateTodayReview(rating))}
-      aria-keyshortcuts={rating === 'again' ? '1' : '2'} title={btnTitle}>
-      <span class="today-rating-icon" aria-hidden="true">{icon}</span>{' '}
-      <span class="today-rating-body">
-        <span class="today-rating-main">{label}</span>{' '}
-        <span class="today-rating-sub">
-          <span class="today-rating-sub-desktop">{keys}</span>{' '}
-          <span class="today-rating-sub-mobile" aria-hidden="true">{mobileKey}</span>
-        </span>
-      </span>
-    </button>
-  );
+const TODAY_GRADES = [
+  { rating: 'again', label: 'Quên', key: '1' },
+  { rating: 'hard', label: 'Khó', key: '2' },
+  { rating: 'good', label: 'Được', key: '3' },
+  { rating: 'easy', label: 'Dễ', key: '4' },
+];
+
+// Same four FSRS grades and styling as the level deck, with the next interval on each button.
+function RatingButtons({ card }) {
+  const previews = card ? SRS.preview(card, new Date(), window.srsRetention) : {};
+  return TODAY_GRADES.map(({ rating, label, key }) => {
+    const interval = previews[rating] ? previews[rating].intervalText : '';
+    return (
+      <button type="button" key={rating} class={`rating-btn rating-btn--${rating}`} onClick={stop(() => rateTodayReview(rating))}
+        aria-keyshortcuts={key} title={`${label}${interval ? ` (ôn lại sau ${interval})` : ''} • Phím [${key}]`}>
+        <span class="rating-interval">{interval}</span>
+        <span class="rating-label">{label}</span>
+        <span class="rating-kbd-badge" aria-hidden="true"><kbd>{key}</kbd></span>
+      </button>
+    );
+  });
 }
 
 function ReviewCard() {
@@ -222,11 +230,8 @@ function ReviewCard() {
           </button>
         </div>{' '}
 
-        <div id="todayRatingRow" class="today-rating-row" hidden={!isRevealed}>
-          <RatingButton rating="again" label="Chưa nhớ" keys="Phím 1 / ←" mobileKey="←" title="Chưa nhớ (Phím 1 hoặc ←)"
-            icon={<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>} />{' '}
-          <RatingButton rating="good" label="Đã nhớ" keys="Phím 2 / →" mobileKey="→" title="Đã nhớ (Phím 2 hoặc →)"
-            icon={<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>} />
+        <div id="todayRatingRow" class="today-rating-row rating-row" hidden={!isRevealed}>
+          <RatingButtons card={item.card} />
         </div>
       </div>
     </article>
@@ -296,8 +301,7 @@ export function TodayReviewScreen() {
       <footer class="today-review-footer-bar">
         <div class="today-review-shortcuts">
           <span class="shortcut-item"><kbd>Space</kbd> Lật thẻ</span>{' '}
-          <span class="shortcut-item"><kbd>1</kbd> / <kbd>←</kbd> Chưa nhớ</span>{' '}
-          <span class="shortcut-item"><kbd>2</kbd> / <kbd>→</kbd> Đã nhớ</span>{' '}
+          <span class="shortcut-item"><kbd>1</kbd>–<kbd>4</kbd> Quên · Khó · Được · Dễ</span>{' '}
           <span class="shortcut-item"><kbd>P</kbd> Phát âm</span>{' '}
           <span class="shortcut-item"><kbd>Esc</kbd> Thoát</span>
         </div>
@@ -333,7 +337,7 @@ function onKeydown(event, screen) {
     rateTodayReview(rating);
     return;
   }
-  if (revealed.value && (event.key === 'Enter' || event.key === '3')) {
+  if (revealed.value && event.key === 'Enter') {
     event.preventDefault();
     rateTodayReview('good');
   }

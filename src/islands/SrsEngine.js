@@ -69,6 +69,30 @@ function createSrsEngine() {
     return serializeCard(library.createEmptyCard(parseDate(now) || new Date()));
   }
 
+  // Compact Vietnamese interval label: "1p", "10p", "3g", "1n", "12n", "2th", "1,5 năm".
+  function formatInterval(ms) {
+    const minutes = Math.max(0, ms) / 60000;
+    if (minutes < 1) return '<1p';
+    if (minutes < 60) return Math.round(minutes) + 'p';
+    const hours = minutes / 60;
+    if (hours < 24) return Math.round(hours) + 'g';
+    const days = hours / 24;
+    if (days < 30) return Math.round(days) + 'n';
+    if (days < 365) return Math.round(days / 30) + 'th';
+    const years = Math.round((days / 365) * 10) / 10;
+    return String(years).replace('.', ',') + ' năm';
+  }
+
+  function decorate(nextCard, ratingName, previous, reviewedAt) {
+    // Older builds stored a derived `status`; the learning state is now computed from state/due.
+    const { status: _legacyStatus, ...rest } = nextCard;
+    return serializeCard({
+      ...rest,
+      last_rating: ratingName,
+      historyStartAt: previous.historyStartAt || reviewedAt.toISOString(),
+    });
+  }
+
   function review(cardValue, ratingName, now, retention) {
     const card = deserializeCard(cardValue);
     const rating = RATINGS[ratingName];
@@ -76,124 +100,47 @@ function createSrsEngine() {
     if (rating === undefined) throw new Error('Mức đánh giá FSRS không hợp lệ.');
     const reviewedAt = parseDate(now) || new Date();
     const result = scheduler(retention).next(card, reviewedAt, rating);
-
-    const reps = (card.reps || 0) + 1;
-    let scheduled_days = 0;
-    let due = new Date(reviewedAt.getTime());
-    let state = library.State.Review;
-    let lapses = card.lapses || 0;
-    let status = 'known';
-
-    if (ratingName === 'again' || ratingName === 'hard') {
-      // ❌ Chưa nhớ: Ôn lại ngay trong ngày / Hôm nay (0 ngày)
-      scheduled_days = 0;
-      due = new Date(reviewedAt.getTime());
-      lapses = Math.max(1, lapses + 1);
-      state = lapses > 1 ? library.State.Relearning : library.State.Learning;
-      status = 'unknown';
-    } else {
-      // ✅ Đã nhớ: Lên lịch lặp lại ngắt quãng (3 -> 7 -> 14 -> 30+ ngày)
-      const fsrsDays = (result && result.card && Number.isFinite(result.card.scheduled_days)) ? result.card.scheduled_days : 0;
-      if (reps <= 1) {
-        scheduled_days = Math.max(3, fsrsDays || 3);
-      } else if (reps === 2) {
-        scheduled_days = Math.max(7, fsrsDays || 7);
-      } else if (reps === 3) {
-        scheduled_days = Math.max(14, fsrsDays || 14);
-      } else {
-        scheduled_days = Math.max(30, fsrsDays || 30);
-      }
-      due = new Date(reviewedAt.getTime() + scheduled_days * 86400000);
-      state = library.State.Review;
-      status = 'known';
-    }
-
-    const nextCard = serializeCard({
-      ...result.card,
-      status,
-      last_rating: ratingName,
-      lapses,
-      reps,
-      state,
-      scheduled_days,
-      due,
-      last_review: reviewedAt,
-      historyStartAt: card.historyStartAt || reviewedAt.toISOString(),
-    });
+    const nextCard = decorate(result.card, ratingName, card, reviewedAt);
 
     return {
       card: nextCard,
       log: {
         ...result.log,
         rating: ratingName,
-        state,
-        scheduled_days,
+        state: result.card.state,
+        scheduled_days: result.card.scheduled_days,
         due: nextCard.due,
         review: reviewedAt.toISOString(),
       },
       rating: ratingName,
       stateBefore: card.state,
-      stateAfter: state,
+      stateAfter: result.card.state,
       elapsedDays: card.last_review
         ? Math.max(0, (reviewedAt.getTime() - card.last_review.getTime()) / 86400000)
         : 0,
     };
   }
 
+  // Next interval for every rating, without changing the card.
   function preview(cardValue, now, retention) {
     const card = deserializeCard(cardValue);
     if (!card) return {};
     const reviewedAt = parseDate(now) || new Date();
-    const reps = (card.reps || 0) + 1;
-    const lapses = card.lapses || 0;
-
-    const goodDays = reps <= 1 ? 3 : reps === 2 ? 7 : reps === 3 ? 14 : 30;
-    const goodDue = new Date(reviewedAt.getTime() + goodDays * 86400000);
-
-    return {
-      again: {
-        card: serializeCard({
-          ...card,
-          status: 'unknown',
-          last_rating: 'again',
-          lapses: Math.max(1, lapses + 1),
-          reps,
-          scheduled_days: 0,
-          due: reviewedAt,
-          state: lapses > 0 ? library.State.Relearning : library.State.Learning,
-        }),
-        due: reviewedAt.toISOString(),
-        intervalMs: 0,
-        scheduledDays: 0,
-        intervalText: 'Hôm nay',
-      },
-      good: {
-        card: serializeCard({
-          ...card,
-          status: 'known',
-          last_rating: 'good',
-          lapses,
-          reps,
-          scheduled_days: goodDays,
-          due: goodDue,
-          state: library.State.Review,
-        }),
-        due: goodDue.toISOString(),
-        intervalMs: goodDays * 86400000,
-        scheduledDays: goodDays,
-        intervalText: `${goodDays} ngày`,
-      },
-      hard: {
-        intervalMs: 0,
-        scheduledDays: 0,
-        intervalText: 'Hôm nay',
-      },
-      easy: {
-        intervalMs: goodDays * 86400000,
-        scheduledDays: goodDays,
-        intervalText: `${goodDays} ngày`,
-      },
-    };
+    const outcomes = scheduler(retention).repeat(card, reviewedAt);
+    const previews = {};
+    Object.keys(RATINGS).forEach(name => {
+      const outcome = outcomes[RATINGS[name]];
+      if (!outcome) return;
+      const intervalMs = outcome.card.due.getTime() - reviewedAt.getTime();
+      previews[name] = {
+        card: decorate(outcome.card, name, card, reviewedAt),
+        due: outcome.card.due.toISOString(),
+        intervalMs,
+        scheduledDays: outcome.card.scheduled_days,
+        intervalText: formatInterval(intervalMs),
+      };
+    });
+    return previews;
   }
 
   function isDue(cardValue, now) {
@@ -227,6 +174,7 @@ function createSrsEngine() {
     serializeCard,
     review,
     preview,
+    formatInterval,
     isDue,
     retrievability,
     ratingValue,

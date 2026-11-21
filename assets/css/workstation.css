@@ -5256,3 +5256,78 @@ body.flashcard-study-mode .card.is-flipped .word-hero-container.has-illustration
   box-shadow: 0 0 0 1px rgba(60, 46, 32, 0.1);
 }
 body.flashcard-study-mode .card-illustration-svg svg[data-style="editorial"] { filter: none; }
+
+/* --- Four FSRS grade buttons (Quên / Khó / Được / Dễ) ---------------------
+   Last in the study-screen cascade on purpose: replaces the older two-button
+   sizing rules at every breakpoint. Colors: "again" leads to Cần ôn (due),
+   "good"/"easy" lead to Đã nhớ (known), "hard" stays neutral. */
+.rating-btn--hard,
+.rating-btn--easy {
+  background-color: var(--rating-bg);
+  color: var(--rating-color);
+  border: 1.5px solid var(--rating-border);
+}
+.rating-btn--hard {
+  --rating-color: var(--text-primary);
+  --rating-bg: transparent;
+  --rating-border: var(--border, rgba(41, 43, 48, 0.16));
+}
+.rating-btn--easy {
+  --rating-color: var(--state-known);
+  --rating-bg: var(--state-known-bg);
+  --rating-border: var(--state-known-border);
+}
+.rating-btn--hard .rating-label,
+.rating-btn--easy .rating-label { color: var(--rating-color); }
+.rating-btn--hard:hover,
+.rating-btn--easy:hover { border-color: var(--rating-color); }
+
+body.flashcard-study-mode .rating-row:not([hidden]),
+.today-reviews-screen .rating-row:not([hidden]) {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 8px !important;
+  width: 100% !important;
+  max-width: 560px !important;
+  margin: 0 auto !important;
+}
+body.flashcard-study-mode .rating-btn,
+.today-reviews-screen .rating-btn {
+  display: grid !important;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-content: center;
+  row-gap: 2px !important;
+  min-height: 58px !important;
+  height: auto !important;
+  padding: 8px 6px !important;
+  border-radius: 12px !important;
+  background: var(--rating-bg);
+  border: 1px solid var(--rating-border);
+}
+body.flashcard-study-mode .rating-btn .rating-label,
+.today-reviews-screen .rating-btn .rating-label {
+  font-size: 15px !important;
+  font-weight: 650 !important;
+  line-height: 1.15 !important;
+  color: var(--rating-color);
+}
+.rating-interval {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+  color: var(--rating-color);
+  opacity: 0.9;
+  min-height: 1.2em;
+}
+body.flashcard-study-mode .rating-btn .rating-kbd-badge,
+.today-reviews-screen .rating-btn .rating-kbd-badge {
+  margin: 2px 0 0 !important;
+  padding: 0 5px !important;
+  font-size: 10.5px !important;
+}
+/* Touch screens have no number keys to hint at. */
+@media (hover: none) and (pointer: coarse) {
+  .rating-btn .rating-kbd-badge { display: none !important; }
+}

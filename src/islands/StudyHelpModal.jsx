@@ -24,7 +24,7 @@ const SHORTCUT_GROUPS = [
     heading: '🃏 Thao tác thẻ ghi nhớ (Flashcard)',
     rows: [
       ['Lật mặt thẻ', 'Xem pinyin, nghĩa tiếng Việt và câu ví dụ', ['Space']],
-      ['Đánh giá mức độ nhớ (chế độ Ôn tập)', 'Sau khi lật thẻ · 1: Chưa nhớ · 2: Đã nhớ', ['1', '2']],
+      ['Đánh giá mức độ nhớ (chế độ Ôn tập)', 'Sau khi lật thẻ · 1: Quên · 2: Khó · 3: Được · 4: Dễ', ['1', '2', '3', '4']],
       ['Phát âm thanh từ vựng', 'Đọc to chữ Hán chuẩn giọng bản xứ', ['A']],
       ['Chuyển thẻ trước / thẻ kế tiếp', 'Chỉ trong chế độ Duyệt danh sách', ['←', '→']]
     ]
@@ -50,7 +50,7 @@ const SHORTCUT_GROUPS = [
 const linkStyle = 'color:var(--brand-primary);text-decoration:underline;';
 
 const METHOD_CARDS = [
-  ['🧠', 'Thuật toán lặp lại ngắt quãng', '汉字思维 (Hanzi Mind) áp dụng thuật toán giãn cách thông minh (FSRS & Ebbinghaus). Các từ bạn đánh giá "Chưa nhớ" sẽ xuất hiện lại ngay, còn các từ "Đã thuộc" sẽ được tự động dời lịch ôn sang 3 ngày, 7 ngày hoặc 1 tháng tới để đưa vào vùng trí nhớ dài hạn.'],
+  ['🧠', 'Thuật toán lặp lại ngắt quãng', '汉字思维 (Hanzi Mind) áp dụng thuật toán giãn cách thông minh (FSRS & Ebbinghaus). Từ chọn "Quên" sẽ quay lại sau vài phút; "Khó", "Được", "Dễ" giãn lịch ôn dần theo trí nhớ của bạn. Mỗi nút hiển thị trước khoảng thời gian tới lần ôn sau.'],
   ['🧩', 'Ghi nhớ chữ Hán qua Chiết tự & Bộ thủ', 'Thay vì nhớ vẹt từng nét bút vô nghĩa, hệ thống giúp bạn bóc tách từng chữ thành 214 bộ thủ biểu ý và thanh phù biểu âm. Nhờ đó, bạn sẽ hiểu được gốc rễ chữ Hán và đoán nghĩa từ mới dễ dàng hơn.'],
   ['🎨', 'Học đa giác quan qua Ngữ cảnh & Hình ảnh', 'Mỗi từ vựng được liên kết với tranh minh họa trực quan, câu ví dụ đời thường có phiên âm pinyin và dịch nghĩa ngữ pháp chi tiết. Não bộ tiếp nhận hình ảnh và âm thanh song song giúp tăng 300% hiệu suất ghi nhớ.']
 ];
