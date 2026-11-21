@@ -1,9 +1,8 @@
 {
   "version": 1,
   "level": "hsk4",
-  "model": "gemini-3.8-flash-tts",
-  "engine": "GeminiFlashTTS",
-  "voice": "Aoede",
+  "engine": "EdgeTTS",
+  "voice": "zh-CN-XiaoxiaoNeural",
   "speed": 1.0,
   "items": {
     "1": {
@@ -663,14 +662,180 @@
       "example": "database/prebuilt_audio/hsk4/examples/0164.mp3?v=1ecabc4b595f"
     },
     "165": {
+      "word": "database/prebuilt_audio/hsk4/words/0165.mp3?v=22b54bb52e6e",
       "example": "database/prebuilt_audio/hsk4/examples/0165.mp3?v=de843d339959"
     },
     "166": {
+      "word": "database/prebuilt_audio/hsk4/words/0166.mp3?v=5f6d2ddde4f2",
       "example": "database/prebuilt_audio/hsk4/examples/0166.mp3?v=091083c4a67e"
     },
     "167": {
       "word": "database/prebuilt_audio/hsk4/words/0167.mp3?v=c77eba67fb3e",
       "example": "database/prebuilt_audio/hsk4/examples/0167.mp3?v=8df91309d7d3"
+    },
+    "168": {
+      "word": "database/prebuilt_audio/hsk4/words/0168.mp3?v=c4e52611b7c9",
+      "example": "database/prebuilt_audio/hsk4/examples/0168.mp3?v=11b67a7ea771"
+    },
+    "169": {
+      "word": "database/prebuilt_audio/hsk4/words/0169.mp3?v=e5b9ab22b130",
+      "example": "database/prebuilt_audio/hsk4/examples/0169.mp3?v=8dfdd5f2230a"
+    },
+    "170": {
+      "word": "database/prebuilt_audio/hsk4/words/0170.mp3?v=02c43c85fc47",
+      "example": "database/prebuilt_audio/hsk4/examples/0170.mp3?v=56e991ffb390"
+    },
+    "171": {
+      "word": "database/prebuilt_audio/hsk4/words/0171.mp3?v=3c279d567c20",
+      "example": "database/prebuilt_audio/hsk4/examples/0171.mp3?v=6002b1d37f85"
+    },
+    "172": {
+      "word": "database/prebuilt_audio/hsk4/words/0172.mp3?v=09bccacab1db",
+      "example": "database/prebuilt_audio/hsk4/examples/0172.mp3?v=1238d1e29119"
+    },
+    "173": {
+      "word": "database/prebuilt_audio/hsk4/words/0173.mp3?v=5ceb58334789",
+      "example": "database/prebuilt_audio/hsk4/examples/0173.mp3?v=70084c89d4cf"
+    },
+    "174": {
+      "word": "database/prebuilt_audio/hsk4/words/0174.mp3?v=174277324645",
+      "example": "database/prebuilt_audio/hsk4/examples/0174.mp3?v=9be5a74150f0"
+    },
+    "175": {
+      "word": "database/prebuilt_audio/hsk4/words/0175.mp3?v=40ea988afe84",
+      "example": "database/prebuilt_audio/hsk4/examples/0175.mp3?v=1b7ea5423273"
+    },
+    "176": {
+      "word": "database/prebuilt_audio/hsk4/words/0176.mp3?v=30703fef18bb",
+      "example": "database/prebuilt_audio/hsk4/examples/0176.mp3?v=5185d803b2ba"
+    },
+    "177": {
+      "word": "database/prebuilt_audio/hsk4/words/0177.mp3?v=ddbb65079233",
+      "example": "database/prebuilt_audio/hsk4/examples/0177.mp3?v=12f8301c9bcc"
+    },
+    "178": {
+      "word": "database/prebuilt_audio/hsk4/words/0178.mp3?v=a876580e32a8",
+      "example": "database/prebuilt_audio/hsk4/examples/0178.mp3?v=866450cfa57f"
+    },
+    "179": {
+      "word": "database/prebuilt_audio/hsk4/words/0179.mp3?v=da3834d01265",
+      "example": "database/prebuilt_audio/hsk4/examples/0179.mp3?v=d4f14418e199"
+    },
+    "180": {
+      "word": "database/prebuilt_audio/hsk4/words/0180.mp3?v=10299f298536",
+      "example": "database/prebuilt_audio/hsk4/examples/0180.mp3?v=3d4dba0613f5"
+    },
+    "181": {
+      "word": "database/prebuilt_audio/hsk4/words/0181.mp3?v=d201e1dd9c39",
+      "example": "database/prebuilt_audio/hsk4/examples/0181.mp3?v=7c069ac6297c"
+    },
+    "182": {
+      "word": "database/prebuilt_audio/hsk4/words/0182.mp3?v=ef7b5aa003ca",
+      "example": "database/prebuilt_audio/hsk4/examples/0182.mp3?v=3b50e28bc834"
+    },
+    "183": {
+      "word": "database/prebuilt_audio/hsk4/words/0183.mp3?v=f765c1c4abcd",
+      "example": "database/prebuilt_audio/hsk4/examples/0183.mp3?v=060369523454"
+    },
+    "184": {
+      "word": "database/prebuilt_audio/hsk4/words/0184.mp3?v=c012b8467910",
+      "example": "database/prebuilt_audio/hsk4/examples/0184.mp3?v=a0118159d452"
+    },
+    "185": {
+      "word": "database/prebuilt_audio/hsk4/words/0185.mp3?v=f2a7e4ab30c7",
+      "example": "database/prebuilt_audio/hsk4/examples/0185.mp3?v=4e8ca296b652"
+    },
+    "186": {
+      "word": "database/prebuilt_audio/hsk4/words/0186.mp3?v=60049c1172c2",
+      "example": "database/prebuilt_audio/hsk4/examples/0186.mp3?v=006b3494193f"
+    },
+    "187": {
+      "word": "database/prebuilt_audio/hsk4/words/0187.mp3?v=e09ef06a1aec",
+      "example": "database/prebuilt_audio/hsk4/examples/0187.mp3?v=40c535791a92"
+    },
+    "188": {
+      "word": "database/prebuilt_audio/hsk4/words/0188.mp3?v=5efe19a7165b",
+      "example": "database/prebuilt_audio/hsk4/examples/0188.mp3?v=67a424cfa538"
+    },
+    "189": {
+      "word": "database/prebuilt_audio/hsk4/words/0189.mp3?v=043ba49f16f3",
+      "example": "database/prebuilt_audio/hsk4/examples/0189.mp3?v=d74cc8e61fed"
+    },
+    "190": {
+      "word": "database/prebuilt_audio/hsk4/words/0190.mp3?v=78d99abffa59",
+      "example": "database/prebuilt_audio/hsk4/examples/0190.mp3?v=7d6dfad8052b"
+    },
+    "191": {
+      "word": "database/prebuilt_audio/hsk4/words/0191.mp3?v=374b7effbccb",
+      "example": "database/prebuilt_audio/hsk4/examples/0191.mp3?v=a9d8c9979510"
+    },
+    "192": {
+      "word": "database/prebuilt_audio/hsk4/words/0192.mp3?v=fd2f19708955",
+      "example": "database/prebuilt_audio/hsk4/examples/0192.mp3?v=b4318842c7dd"
+    },
+    "193": {
+      "word": "database/prebuilt_audio/hsk4/words/0193.mp3?v=248e97ac252c",
+      "example": "database/prebuilt_audio/hsk4/examples/0193.mp3?v=3b05d4518ebe"
+    },
+    "194": {
+      "word": "database/prebuilt_audio/hsk4/words/0194.mp3?v=f4cfac20a893",
+      "example": "database/prebuilt_audio/hsk4/examples/0194.mp3?v=6a9990968699"
+    },
+    "195": {
+      "word": "database/prebuilt_audio/hsk4/words/0195.mp3?v=68259f42cea8",
+      "example": "database/prebuilt_audio/hsk4/examples/0195.mp3?v=917f7a2bf006"
+    },
+    "196": {
+      "word": "database/prebuilt_audio/hsk4/words/0196.mp3?v=b10c23346605",
+      "example": "database/prebuilt_audio/hsk4/examples/0196.mp3?v=e12050c5ccf2"
+    },
+    "197": {
+      "word": "database/prebuilt_audio/hsk4/words/0197.mp3?v=af476b2176dd",
+      "example": "database/prebuilt_audio/hsk4/examples/0197.mp3?v=f75b9bd07c85"
+    },
+    "198": {
+      "word": "database/prebuilt_audio/hsk4/words/0198.mp3?v=680f16e2becc",
+      "example": "database/prebuilt_audio/hsk4/examples/0198.mp3?v=23807514f35c"
+    },
+    "199": {
+      "word": "database/prebuilt_audio/hsk4/words/0199.mp3?v=2eb20e5bdd75",
+      "example": "database/prebuilt_audio/hsk4/examples/0199.mp3?v=10d703ea0a74"
+    },
+    "200": {
+      "word": "database/prebuilt_audio/hsk4/words/0200.mp3?v=0cb61dc5b28d",
+      "example": "database/prebuilt_audio/hsk4/examples/0200.mp3?v=a9adf9cf1a67"
+    },
+    "201": {
+      "word": "database/prebuilt_audio/hsk4/words/0201.mp3?v=5e3e87fb969c",
+      "example": "database/prebuilt_audio/hsk4/examples/0201.mp3?v=ff9a69e3b7f4"
+    },
+    "202": {
+      "word": "database/prebuilt_audio/hsk4/words/0202.mp3?v=fb3efea94824",
+      "example": "database/prebuilt_audio/hsk4/examples/0202.mp3?v=d213263ebd6b"
+    },
+    "203": {
+      "word": "database/prebuilt_audio/hsk4/words/0203.mp3?v=85af46b59254",
+      "example": "database/prebuilt_audio/hsk4/examples/0203.mp3?v=52bf71c1f3ef"
+    },
+    "204": {
+      "word": "database/prebuilt_audio/hsk4/words/0204.mp3?v=de7dafa19dab",
+      "example": "database/prebuilt_audio/hsk4/examples/0204.mp3?v=64c29c347a4a"
+    },
+    "205": {
+      "word": "database/prebuilt_audio/hsk4/words/0205.mp3?v=f3a074e901bc",
+      "example": "database/prebuilt_audio/hsk4/examples/0205.mp3?v=58d416f2e044"
+    },
+    "206": {
+      "word": "database/prebuilt_audio/hsk4/words/0206.mp3?v=e1a443275352",
+      "example": "database/prebuilt_audio/hsk4/examples/0206.mp3?v=16bd28dd811c"
+    },
+    "207": {
+      "word": "database/prebuilt_audio/hsk4/words/0207.mp3?v=240a8834129f",
+      "example": "database/prebuilt_audio/hsk4/examples/0207.mp3?v=0df8a618a841"
+    },
+    "208": {
+      "word": "database/prebuilt_audio/hsk4/words/0208.mp3?v=667f15ba2439",
+      "example": "database/prebuilt_audio/hsk4/examples/0208.mp3?v=8b64bd1899bd"
     },
     "209": {
       "word": "database/prebuilt_audio/hsk4/words/0209.mp3?v=61b9fd2bf8e5",
@@ -681,9 +846,11 @@
       "example": "database/prebuilt_audio/hsk4/examples/0210.mp3?v=b8c1b7465cb0"
     },
     "211": {
+      "word": "database/prebuilt_audio/hsk4/words/0211.mp3?v=7a5d50336b1d",
       "example": "database/prebuilt_audio/hsk4/examples/0211.mp3?v=5a96c2ccd233"
     },
     "212": {
+      "word": "database/prebuilt_audio/hsk4/words/0212.mp3?v=2016d0b0e998",
       "example": "database/prebuilt_audio/hsk4/examples/0212.mp3?v=875a91b82151"
     },
     "213": {
@@ -691,10 +858,40 @@
       "example": "database/prebuilt_audio/hsk4/examples/0213.mp3?v=60cb86c2c303"
     },
     "214": {
+      "word": "database/prebuilt_audio/hsk4/words/0214.mp3?v=72dcc485f79a",
       "example": "database/prebuilt_audio/hsk4/examples/0214.mp3?v=31bf217303f6"
     },
+    "215": {
+      "word": "database/prebuilt_audio/hsk4/words/0215.mp3?v=55423a64d785",
+      "example": "database/prebuilt_audio/hsk4/examples/0215.mp3?v=22d18a3150be"
+    },
     "216": {
-      "word": "database/prebuilt_audio/hsk4/words/0216.mp3?v=ce5be32c5fb1"
+      "word": "database/prebuilt_audio/hsk4/words/0216.mp3?v=ce5be32c5fb1",
+      "example": "database/prebuilt_audio/hsk4/examples/0216.mp3?v=edc814797759"
+    },
+    "217": {
+      "word": "database/prebuilt_audio/hsk4/words/0217.mp3?v=49a17559160e",
+      "example": "database/prebuilt_audio/hsk4/examples/0217.mp3?v=b79a483f7d74"
+    },
+    "218": {
+      "word": "database/prebuilt_audio/hsk4/words/0218.mp3?v=08b7c3e033bb",
+      "example": "database/prebuilt_audio/hsk4/examples/0218.mp3?v=fccd5ab875e0"
+    },
+    "219": {
+      "word": "database/prebuilt_audio/hsk4/words/0219.mp3?v=9f76149aa9f3",
+      "example": "database/prebuilt_audio/hsk4/examples/0219.mp3?v=9c0b0497f99d"
+    },
+    "220": {
+      "word": "database/prebuilt_audio/hsk4/words/0220.mp3?v=73a80cf7eafd",
+      "example": "database/prebuilt_audio/hsk4/examples/0220.mp3?v=89c02560ffc1"
+    },
+    "221": {
+      "word": "database/prebuilt_audio/hsk4/words/0221.mp3?v=8a82a3637e3c",
+      "example": "database/prebuilt_audio/hsk4/examples/0221.mp3?v=d1cbbb957801"
+    },
+    "222": {
+      "word": "database/prebuilt_audio/hsk4/words/0222.mp3?v=f087ed1212ab",
+      "example": "database/prebuilt_audio/hsk4/examples/0222.mp3?v=453afe12cbbc"
     }
   }
 }
