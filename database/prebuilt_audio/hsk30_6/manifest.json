@@ -3950,7 +3950,207 @@
       "example": "database/prebuilt_audio/hsk30_6/examples/0988.mp3?v=8d828808ea70"
     },
     "989": {
-      "word": "database/prebuilt_audio/hsk30_6/words/0989.mp3?v=16e86dde9585"
+      "word": "database/prebuilt_audio/hsk30_6/words/0989.mp3?v=16e86dde9585",
+      "example": "database/prebuilt_audio/hsk30_6/examples/0989.mp3?v=d3402dd960ee"
+    },
+    "990": {
+      "word": "database/prebuilt_audio/hsk30_6/words/0990.mp3?v=1fa1b6bd4421",
+      "example": "database/prebuilt_audio/hsk30_6/examples/0990.mp3?v=c6d2355599a8"
+    },
+    "991": {
+      "word": "database/prebuilt_audio/hsk30_6/words/0991.mp3?v=1fa1b6bd4421",
+      "example": "database/prebuilt_audio/hsk30_6/examples/0991.mp3?v=e448b8a1230d"
+    },
+    "992": {
+      "word": "database/prebuilt_audio/hsk30_6/words/0992.mp3?v=b6682a70ecd8",
+      "example": "database/prebuilt_audio/hsk30_6/examples/0992.mp3?v=f82247349e72"
+    },
+    "993": {
+      "word": "database/prebuilt_audio/hsk30_6/words/0993.mp3?v=b3ddbf5c3433",
+      "example": "database/prebuilt_audio/hsk30_6/examples/0993.mp3?v=16b760708d76"
+    },
+    "994": {
+      "word": "database/prebuilt_audio/hsk30_6/words/0994.mp3?v=265a12d9d03f",
+      "example": "database/prebuilt_audio/hsk30_6/examples/0994.mp3?v=92df2bd823c7"
+    },
+    "995": {
+      "word": "database/prebuilt_audio/hsk30_6/words/0995.mp3?v=593622eea730",
+      "example": "database/prebuilt_audio/hsk30_6/examples/0995.mp3?v=fcc272d26cb8"
+    },
+    "996": {
+      "word": "database/prebuilt_audio/hsk30_6/words/0996.mp3?v=be03e51501c8",
+      "example": "database/prebuilt_audio/hsk30_6/examples/0996.mp3?v=29bb8c790303"
+    },
+    "997": {
+      "word": "database/prebuilt_audio/hsk30_6/words/0997.mp3?v=0c7612472df7",
+      "example": "database/prebuilt_audio/hsk30_6/examples/0997.mp3?v=65598755a30d"
+    },
+    "998": {
+      "word": "database/prebuilt_audio/hsk30_6/words/0998.mp3?v=266447cd1d94",
+      "example": "database/prebuilt_audio/hsk30_6/examples/0998.mp3?v=5a4815ecfc21"
+    },
+    "999": {
+      "word": "database/prebuilt_audio/hsk30_6/words/0999.mp3?v=9fe21d9735c9",
+      "example": "database/prebuilt_audio/hsk30_6/examples/0999.mp3?v=9b2469a8f1b1"
+    },
+    "1000": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1000.mp3?v=6c6721f760fd",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1000.mp3?v=ea91db45d446"
+    },
+    "1001": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1001.mp3?v=0e43808dd086",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1001.mp3?v=7153aba35f9d"
+    },
+    "1002": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1002.mp3?v=cbb14400b305",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1002.mp3?v=18a9c3cddfab"
+    },
+    "1003": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1003.mp3?v=d772fa3669c9",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1003.mp3?v=7640c2f96359"
+    },
+    "1004": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1004.mp3?v=3eadcaef2fc4",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1004.mp3?v=68861122401a"
+    },
+    "1005": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1005.mp3?v=3eadcaef2fc4",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1005.mp3?v=d5b25e01e289"
+    },
+    "1006": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1006.mp3?v=a911c73951f8",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1006.mp3?v=f1431e251fbe"
+    },
+    "1007": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1007.mp3?v=7be13b6b291e",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1007.mp3?v=49f7833ff83d"
+    },
+    "1008": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1008.mp3?v=fcb5bdf2d00b",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1008.mp3?v=cd303b940ced"
+    },
+    "1009": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1009.mp3?v=88514a4aa7cf",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1009.mp3?v=4dcd9769f3d8"
+    },
+    "1010": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1010.mp3?v=b5c4e47e6999",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1010.mp3?v=3c4efdc53115"
+    },
+    "1011": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1011.mp3?v=f2d85f891e3f",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1011.mp3?v=79ed6af7b974"
+    },
+    "1012": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1012.mp3?v=b3c59bc3e844",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1012.mp3?v=dd322131fd9c"
+    },
+    "1013": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1013.mp3?v=ee3e06f5c3ab",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1013.mp3?v=a33354983304"
+    },
+    "1014": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1014.mp3?v=a2d4bd18fd25",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1014.mp3?v=d00e78077fb2"
+    },
+    "1015": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1015.mp3?v=136aab8ddbb8",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1015.mp3?v=0c45b7d6b3d7"
+    },
+    "1016": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1016.mp3?v=57f916712207",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1016.mp3?v=6e6fc9505279"
+    },
+    "1017": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1017.mp3?v=9959c3a5576e",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1017.mp3?v=dd80174e1d95"
+    },
+    "1018": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1018.mp3?v=20f43be7914c",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1018.mp3?v=33de9bb184b8"
+    },
+    "1019": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1019.mp3?v=298090089866",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1019.mp3?v=647c5532545b"
+    },
+    "1020": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1020.mp3?v=0153764c0a1d",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1020.mp3?v=90061c1d0f55"
+    },
+    "1021": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1021.mp3?v=798f5101b0e6",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1021.mp3?v=1c9d0168b2a3"
+    },
+    "1022": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1022.mp3?v=77c242494ffd",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1022.mp3?v=a70ee4937a33"
+    },
+    "1023": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1023.mp3?v=10d164c15fa3",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1023.mp3?v=76a734469747"
+    },
+    "1024": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1024.mp3?v=b3135d2eeee4",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1024.mp3?v=dfbad00070c8"
+    },
+    "1025": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1025.mp3?v=6bc7fdcc5a24",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1025.mp3?v=7452de601db7"
+    },
+    "1026": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1026.mp3?v=a354d7ddfbf7",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1026.mp3?v=39c9dbe16163"
+    },
+    "1027": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1027.mp3?v=2dab3a0a9500",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1027.mp3?v=b88a954b28f8"
+    },
+    "1028": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1028.mp3?v=f317561cc1b9",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1028.mp3?v=c60a46076fa0"
+    },
+    "1029": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1029.mp3?v=6dd9873d6f43",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1029.mp3?v=bdcc8a6f07f8"
+    },
+    "1030": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1030.mp3?v=3c14abbd306e",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1030.mp3?v=586ce8e12bef"
+    },
+    "1031": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1031.mp3?v=2f3556862898",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1031.mp3?v=b19307427dc7"
+    },
+    "1032": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1032.mp3?v=c8a0a9d0b331",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1032.mp3?v=dc9c12676caa"
+    },
+    "1033": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1033.mp3?v=eb6192a52527",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1033.mp3?v=8d2dba8ab560"
+    },
+    "1034": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1034.mp3?v=2cc4c6210af6",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1034.mp3?v=eb26d9b83e35"
+    },
+    "1035": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1035.mp3?v=667f544171c6",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1035.mp3?v=7a1116e3c075"
+    },
+    "1036": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1036.mp3?v=84151d03e568",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1036.mp3?v=562b486f2f15"
+    },
+    "1037": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1037.mp3?v=445e82b623ae",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1037.mp3?v=b69f958fe103"
+    },
+    "1038": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1038.mp3?v=735bb2402ceb",
+      "example": "database/prebuilt_audio/hsk30_6/examples/1038.mp3?v=ee062016e1df"
+    },
+    "1039": {
+      "word": "database/prebuilt_audio/hsk30_6/words/1039.mp3?v=10fabb38e1ef"
     }
   }
 }
