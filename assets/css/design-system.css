@@ -700,3 +700,28 @@ body.dark-mode .reading-global-footer .reading-nav-btn.next-btn:hover:not(:disab
   font-family: var(--font-sans);
 }
 #overviewView .overview-search:focus-within { border-color: var(--accent); box-shadow: var(--focus-ring); }
+
+/* ── Curriculum: overview and dialogue sit on the canvas, ruled by hairlines ──
+   The featured lesson stays the single framed block (it must lead the page). */
+.cur-overview {
+  background: transparent;
+  border: 0;
+  border-top: 2px solid var(--text-primary);
+  border-radius: 0;
+  padding: var(--space-4) 0 0;
+}
+.cur-structure {
+  padding: var(--space-4) 0 0;
+  border-top: 1px solid var(--border);
+}
+.cur-dialogue.cur-card {
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  border-radius: 0;
+  padding: var(--space-5) 0;
+}
+
+/* Lesson section links: the last section can scroll to the top under the sticky header */
+#curSection-practice { min-height: calc(100vh - 120px); }
