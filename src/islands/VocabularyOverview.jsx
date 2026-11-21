@@ -10,7 +10,7 @@ import { signal } from '@preact/signals';
    filteredOrder, currentFilter -- `let`/`const` globals of the classic scripts */
 
 const PAGE_SIZE = 80;
-const STATUS_LABELS = { unseen: 'Chưa học', unknown: 'Chưa nhớ', known: 'Đã nhớ' };
+const STATUS_LABELS = { unseen: 'Chưa học', unknown: 'Cần ôn', known: 'Đã nhớ' };
 
 // { title, description, total, summary, rows: [{ word, wordIndex, status }], numberWidth } or null before the first render
 const snapshot = signal(null);
@@ -194,7 +194,7 @@ export function VocabularyOverview() {
           <select id="overviewStatus" aria-label="Lọc theo trạng thái học" onChange={(e) => updateOverviewStatus(e.currentTarget.value)}>
             <option value="all">Tất cả trạng thái</option>
             <option value="unseen">Chưa học</option>
-            <option value="unknown">Chưa nhớ</option>
+            <option value="unknown">Cần ôn</option>
             <option value="known">Đã nhớ</option>
           </select>
         </label>

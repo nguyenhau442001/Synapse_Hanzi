@@ -17,8 +17,10 @@ POLISH = CSS[CSS.index("Design system polish (v3.8.2)"):]
 
 class TestDesignSystemPolish(unittest.TestCase):
     def test_single_palette_tokens_for_study_screen(self):
-        for token in ("--accent: #B4532F;", "--hs-sage:", "--hs-coral:", "--hs-beige:", "--hs-ink-plate:"):
+        # Review-state colors (formerly --hs-sage / --hs-coral) now come from the --state-* tokens in base.css.
+        for token in ("--accent: #B4532F;", "--hs-beige:", "--hs-ink-plate:"):
             self.assertIn(token, POLISH)
+        self.assertIn("var(--rating-color)", POLISH)
 
     def test_illustration_backdrop_is_repainted_not_replaced(self):
         # The SVG artwork is untouched; only its full-bleed backdrop rect is tagged for CSS.

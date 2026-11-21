@@ -1035,11 +1035,11 @@ body.flashcard-study-mode .filter-row {
 }
 
 .progress-nav-stat--known .progress-nav-stat-dot {
-  background: var(--status-success, #10b981);
+  background: var(--state-known);
 }
 
 .progress-nav-stat--unknown .progress-nav-stat-dot {
-  background: var(--status-warning, #f59e0b);
+  background: var(--state-due);
 }
 
 /* Segmented Progress Bar Track */
@@ -1068,19 +1068,11 @@ body.flashcard-study-mode .filter-row {
 }
 
 .progress-nav-seg--known {
-  background: var(--status-success, #10b981);
-}
-
-:root[data-theme="dark"] .progress-nav-seg--known {
-  background: #629988;
+  background: var(--state-known);
 }
 
 .progress-nav-seg--unknown {
-  background: var(--status-warning, #f59e0b);
-}
-
-:root[data-theme="dark"] .progress-nav-seg--unknown {
-  background: #D4B37F;
+  background: var(--state-due);
 }
 
 /* Four Interactive Status Cards Grid - Quiet Editorial Horizontal Strip */
@@ -1201,33 +1193,18 @@ body.study-mode-browse .swipe-badge { display: none !important; }
 }
 
 .progress-nav-card--known.is-active {
-  border-color: var(--c-jade-green, #527D70);
-  background: rgba(82, 125, 112, 0.08);
-}
-
-:root[data-theme="dark"] .progress-nav-card--known.is-active {
-  border-color: rgba(98, 153, 136, 0.45);
-  background: rgba(98, 153, 136, 0.12);
+  border-color: var(--state-known-border);
+  background: var(--state-known-bg);
 }
 
 .progress-nav-card--unknown.is-active {
-  border-color: var(--brand-primary, #A8322A);
-  background: rgba(168, 50, 42, 0.07);
-}
-
-:root[data-theme="dark"] .progress-nav-card--unknown.is-active {
-  border-color: rgba(200, 70, 59, 0.45);
-  background: rgba(200, 70, 59, 0.12);
+  border-color: var(--state-due-border);
+  background: var(--state-due-bg);
 }
 
 .progress-nav-card--unseen.is-active {
-  border-color: var(--text-tertiary);
-  background: rgba(0, 0, 0, 0.04);
-}
-
-:root[data-theme="dark"] .progress-nav-card--unseen.is-active {
-  border-color: rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.06);
+  border-color: var(--state-new-border);
+  background: var(--state-new-bg);
 }
 
 .progress-nav-card:active {
@@ -1284,27 +1261,15 @@ body.study-mode-browse .swipe-badge { display: none !important; }
 }
 
 .progress-nav-card--known .progress-nav-card-icon {
-  color: #527D70;
-}
-
-:root[data-theme="dark"] .progress-nav-card--known .progress-nav-card-icon {
-  color: #629988;
+  color: var(--state-known);
 }
 
 .progress-nav-card--unknown .progress-nav-card-icon {
-  color: #A8322A;
-}
-
-:root[data-theme="dark"] .progress-nav-card--unknown .progress-nav-card-icon {
-  color: #C8463B;
+  color: var(--state-due);
 }
 
 .progress-nav-card--unseen .progress-nav-card-icon {
-  color: var(--text-tertiary);
-}
-
-:root[data-theme="dark"] .progress-nav-card--unseen .progress-nav-card-icon {
-  color: var(--text-tertiary);
+  color: var(--state-new);
 }
 
 .progress-nav-card-label {
@@ -2448,59 +2413,29 @@ body.flashcard-study-mode .rating-label {
 
 /* Subtle Semantic Neutral - Chưa nhớ (Again): Muted Coral */
 body.flashcard-study-mode .rating-btn--again {
-  box-shadow: 0 1px 3px rgba(184, 74, 57, 0.05);
+  box-shadow: none;
 }
 body.flashcard-study-mode .rating-btn--again .rating-icon {
-  stroke: var(--rating-again-text, #B84A39);
+  stroke: var(--state-due);
 }
 body.flashcard-study-mode .rating-btn--again:hover {
-  color: #A43929;
   transform: translateY(-1px);
 }
 body.flashcard-study-mode .rating-btn--again:active {
-  background: #ECD1CC;
-  transform: translateY(1px);
-}
-:root[data-theme="dark"] body.flashcard-study-mode .rating-btn--again .rating-icon {
-  stroke: var(--rating-again-text, #F08C7D);
-}
-:root[data-theme="dark"] body.flashcard-study-mode .rating-btn--again:hover {
-  background: rgba(184, 74, 57, 0.24);
-  border-color: rgba(240, 203, 197, 0.45);
-  color: #FFA496;
-  transform: translateY(-1px);
-}
-:root[data-theme="dark"] body.flashcard-study-mode .rating-btn--again:active {
-  background: rgba(184, 74, 57, 0.32);
   transform: translateY(1px);
 }
 
 /* Subtle Semantic Neutral - Đã nhớ (Good): Muted Sage */
 body.flashcard-study-mode .rating-btn--good {
-  box-shadow: 0 1px 3px rgba(45, 102, 77, 0.05);
+  box-shadow: none;
 }
 body.flashcard-study-mode .rating-btn--good .rating-icon {
-  stroke: var(--rating-good-text, #2D664D);
+  stroke: var(--state-known);
 }
 body.flashcard-study-mode .rating-btn--good:hover {
-  color: #24543E;
   transform: translateY(-1px);
 }
 body.flashcard-study-mode .rating-btn--good:active {
-  background: #D4E7DC;
-  transform: translateY(1px);
-}
-:root[data-theme="dark"] body.flashcard-study-mode .rating-btn--good .rating-icon {
-  stroke: var(--rating-good-text, #7ED3A6);
-}
-:root[data-theme="dark"] body.flashcard-study-mode .rating-btn--good:hover {
-  background: rgba(45, 102, 77, 0.26);
-  border-color: rgba(196, 220, 207, 0.48);
-  color: #9EE3C0;
-  transform: translateY(-1px);
-}
-:root[data-theme="dark"] body.flashcard-study-mode .rating-btn--good:active {
-  background: rgba(45, 102, 77, 0.34);
   transform: translateY(1px);
 }
 
@@ -3409,61 +3344,6 @@ body.flashcard-study-mode .memory-curve-panel.is-empty { display: none !importan
     width: 17px !important;
     height: 17px !important;
     flex-shrink: 0 !important;
-  }
-
-  /* Muted Coral for Chưa nhớ (Again) on mobile */
-  body.flashcard-study-mode .rating-btn--again {
-    background: #FAF0EE !important;
-    color: #B84A39 !important;
-    border: 1px solid #EED1CC !important;
-    box-shadow: 0 1px 4px rgba(184, 74, 57, 0.05) !important;
-  }
-  body.flashcard-study-mode .rating-btn--again .rating-icon {
-    stroke: #B84A39 !important;
-  }
-  body.flashcard-study-mode .rating-btn--again .rating-label {
-    color: #B84A39 !important;
-  }
-
-  /* Muted Sage for Đã nhớ (Good) on mobile */
-  body.flashcard-study-mode .rating-btn--good {
-    background: #EFF5F1 !important;
-    color: #2D664D !important;
-    border: 1px solid #CCE0D5 !important;
-    box-shadow: 0 1px 4px rgba(45, 102, 77, 0.05) !important;
-  }
-  body.flashcard-study-mode .rating-btn--good .rating-icon {
-    stroke: #2D664D !important;
-  }
-  body.flashcard-study-mode .rating-btn--good .rating-label {
-    color: #2D664D !important;
-  }
-
-  /* Dark mode muted colors */
-  :root[data-theme="dark"] body.flashcard-study-mode .rating-btn--again {
-    background: rgba(184, 74, 57, 0.16) !important;
-    color: #F08C7D !important;
-    border: 1px solid rgba(240, 203, 197, 0.22) !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25) !important;
-  }
-  :root[data-theme="dark"] body.flashcard-study-mode .rating-btn--again .rating-icon {
-    stroke: #F08C7D !important;
-  }
-  :root[data-theme="dark"] body.flashcard-study-mode .rating-btn--again .rating-label {
-    color: #F08C7D !important;
-  }
-
-  :root[data-theme="dark"] body.flashcard-study-mode .rating-btn--good {
-    background: rgba(45, 102, 77, 0.18) !important;
-    color: #7ED3A6 !important;
-    border: 1px solid rgba(196, 220, 207, 0.25) !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25) !important;
-  }
-  :root[data-theme="dark"] body.flashcard-study-mode .rating-btn--good .rating-icon {
-    stroke: #7ED3A6 !important;
-  }
-  :root[data-theme="dark"] body.flashcard-study-mode .rating-btn--good .rating-label {
-    color: #7ED3A6 !important;
   }
 
   /* Refined, compact 3-dot dropdowns on mobile */
@@ -4912,14 +4792,6 @@ body.flashcard-study-mode .card-accordion[open] {
 :root[data-theme="dark"] body.flashcard-study-mode .card-accordion { border-color: rgba(255, 255, 255, 0.08); }
 
 /* --- Review actions: softer tones, distinct, tidy shortcut chips ---------- */
-:root[data-theme="dark"] body.flashcard-study-mode .rating-btn--again {
-  box-shadow: none;
-  border-color: rgba(200, 88, 74, 0.3);
-}
-:root[data-theme="dark"] body.flashcard-study-mode .rating-btn--good {
-  box-shadow: none;
-  border-color: rgba(110, 160, 134, 0.3);
-}
 
 /* --- Prev / position / next: one centered, balanced group ----------------- */
 @media (max-width: 767px) {
@@ -4964,12 +4836,6 @@ body.flashcard-study-mode {
   --hs-accent-ink: #9A4426;     /* terracotta, text on tinted surfaces */
   --hs-accent-tint: rgba(180, 83, 47, 0.07);
   --hs-accent-line: rgba(180, 83, 47, 0.3);
-  --hs-sage: #56765F;
-  --hs-sage-bg: #F1F4EF;
-  --hs-sage-line: rgba(86, 118, 95, 0.24);
-  --hs-coral: #B05A48;
-  --hs-coral-bg: #FBF2EE;
-  --hs-coral-line: rgba(176, 90, 72, 0.24);
   --hs-beige: #E7DECF;
   --hs-surface: #FAF6EF;        /* subtle warm surface inside the card */
   --hs-card: #FFFDF9;           /* warm white */
@@ -4996,12 +4862,6 @@ body.flashcard-study-mode {
   --hs-accent-ink: #E3A07E;
   --hs-accent-tint: rgba(217, 138, 98, 0.1);
   --hs-accent-line: rgba(217, 138, 98, 0.36);
-  --hs-sage: #93B8A0;
-  --hs-sage-bg: rgba(147, 184, 160, 0.08);
-  --hs-sage-line: rgba(147, 184, 160, 0.26);
-  --hs-coral: #E2A08F;
-  --hs-coral-bg: rgba(226, 160, 143, 0.08);
-  --hs-coral-line: rgba(226, 160, 143, 0.26);
   --hs-beige: rgba(255, 255, 255, 0.08);
   --hs-surface: rgba(255, 255, 255, 0.025);
   --hs-card: var(--card-bg, #22252B);
@@ -5016,20 +4876,25 @@ body.flashcard-study-mode .progress-nav-metric-pct,
 body.flashcard-study-mode .progress-nav-seg--known,
 body.flashcard-study-mode .progress-nav-stat--known .progress-nav-stat-dot,
 :root[data-theme="dark"] body.flashcard-study-mode .progress-nav-seg--known,
-:root[data-theme="dark"] body.flashcard-study-mode .progress-nav-stat--known .progress-nav-stat-dot { background: var(--accent); }
+:root[data-theme="dark"] body.flashcard-study-mode .progress-nav-stat--known .progress-nav-stat-dot { background: var(--state-known); }
 body.flashcard-study-mode .progress-nav-seg--unknown,
-body.flashcard-study-mode .progress-nav-stat--unknown .progress-nav-stat-dot { background: #DDB89A; }
+body.flashcard-study-mode .progress-nav-stat--unknown .progress-nav-stat-dot,
+:root[data-theme="dark"] body.flashcard-study-mode .progress-nav-seg--unknown,
+:root[data-theme="dark"] body.flashcard-study-mode .progress-nav-stat--unknown .progress-nav-stat-dot { background: var(--state-due); }
 body.flashcard-study-mode .progress-nav-level-tag {
   font-weight: 700;
   letter-spacing: 0.02em;
   color: var(--hs-accent-ink);
   border-color: var(--hs-accent-line);
 }
-body.flashcard-study-mode .progress-nav-card.is-active,
-:root[data-theme="dark"] body.flashcard-study-mode .progress-nav-card.is-active {
+body.flashcard-study-mode .progress-nav-card--all.is-active,
+:root[data-theme="dark"] body.flashcard-study-mode .progress-nav-card--all.is-active {
   border-color: var(--hs-accent-line);
   background: var(--hs-accent-tint);
 }
+body.flashcard-study-mode .progress-nav-card--known.is-active { border-color: var(--state-known-border); background: var(--state-known-bg); }
+body.flashcard-study-mode .progress-nav-card--unknown.is-active { border-color: var(--state-due-border); background: var(--state-due-bg); }
+body.flashcard-study-mode .progress-nav-card--unseen.is-active { border-color: var(--state-new-border); background: var(--state-new-bg); }
 body.flashcard-study-mode .progress-nav-card {
   min-height: 38px !important;
   height: 38px;
@@ -5272,34 +5137,19 @@ body.flashcard-study-mode .rating-btn {
   font-weight: 650;
   box-shadow: none;
 }
+/* Rating colors come from the learning-state tokens (see flashcard.css). */
 body.flashcard-study-mode .rating-btn--again,
-:root[data-theme="dark"] body.flashcard-study-mode .rating-btn--again {
-  background: var(--hs-coral-bg);
-  border: 1px solid var(--hs-coral-line);
-  color: var(--hs-coral);
-}
-body.flashcard-study-mode .rating-btn--good,
-:root[data-theme="dark"] body.flashcard-study-mode .rating-btn--good {
-  background: var(--hs-sage-bg);
-  border: 1px solid var(--hs-sage-line);
-  color: var(--hs-sage);
+body.flashcard-study-mode .rating-btn--good {
+  background: var(--rating-bg);
+  border: 1px solid var(--rating-border);
+  color: var(--rating-color);
 }
 body.flashcard-study-mode .rating-btn--again .rating-icon,
 body.flashcard-study-mode .rating-btn--again .rating-label,
-:root[data-theme="dark"] body.flashcard-study-mode .rating-btn--again .rating-icon,
-:root[data-theme="dark"] body.flashcard-study-mode .rating-btn--again .rating-label { color: var(--hs-coral); }
 body.flashcard-study-mode .rating-btn--good .rating-icon,
-body.flashcard-study-mode .rating-btn--good .rating-label,
-:root[data-theme="dark"] body.flashcard-study-mode .rating-btn--good .rating-icon,
-:root[data-theme="dark"] body.flashcard-study-mode .rating-btn--good .rating-label { color: var(--hs-sage); }
-body.flashcard-study-mode .rating-btn--again:hover {
-  background: #F7E9E5;
-  border-color: var(--hs-coral);
-}
-body.flashcard-study-mode .rating-btn--good:hover {
-  background: #E8EFE8;
-  border-color: var(--hs-sage);
-}
+body.flashcard-study-mode .rating-btn--good .rating-label { color: var(--rating-color); }
+body.flashcard-study-mode .rating-btn--again:hover,
+body.flashcard-study-mode .rating-btn--good:hover { border-color: var(--rating-color); }
 body.flashcard-study-mode .rating-btn .rating-icon { width: 17px; height: 17px; }
 body.flashcard-study-mode .rating-kbd-badge {
   border-radius: 6px;

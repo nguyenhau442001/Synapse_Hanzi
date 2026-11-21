@@ -161,28 +161,22 @@
 }
 .swipe-badge--known  {
   right: 16px;
-  background: var(--success-bg, #EFF5F1);
-  color: var(--status-success, #527D70);
-  border: 2px solid var(--status-success, #527D70);
+  background: var(--state-known-bg);
+  color: var(--state-known);
+  border: 2px solid var(--state-known);
   transform: rotate(6deg);
 }
 .swipe-badge--unknown {
   left: 16px;
-  background: var(--danger-bg, #FAF0EE);
-  color: var(--accent, #A8322A);
-  border: 2px solid var(--accent, #A8322A);
+  background: var(--state-due-bg);
+  color: var(--state-due);
+  border: 2px solid var(--state-due);
   transform: rotate(-6deg);
 }
 :root[data-theme="dark"] .swipe-badge--known {
-  background: rgba(98, 153, 136, 0.22);
-  color: #7ED3A6;
-  border-color: #629988;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
 }
 :root[data-theme="dark"] .swipe-badge--unknown {
-  background: rgba(200, 70, 59, 0.22);
-  color: #F08C7D;
-  border-color: #C8463B;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
 }
 @media (prefers-reduced-motion: reduce) { .swipe-badge { display: none; } }
@@ -643,38 +637,18 @@ body.hide-illustrations .card .card-visual-col {
 
 /* Trạng thái màu sắc của Chip: Xanh = Đã nhớ, Cam = Chưa nhớ, Xám = Chưa học */
 .related-chip--known {
-  background: #ecfdf5;
-  border-color: rgba(46, 125, 90, 0.35);
-  color: #166534;
+  background: var(--state-known-bg);
+  border-color: var(--state-known-border);
+  color: var(--state-known);
 }
-:root[data-theme="dark"] .related-chip--known {
-  background: rgba(114, 185, 154, 0.14);
-  border-color: rgba(114, 185, 154, 0.45);
-  color: #a7f3d0;
-}
-.related-chip--known .related-chip-pinyin {
-  color: #15803d;
-}
-:root[data-theme="dark"] .related-chip--known .related-chip-pinyin {
-  color: #6ee7b7;
-}
+.related-chip--known .related-chip-pinyin { color: var(--state-known); }
 
 .related-chip--unknown {
-  background: #fff7ed;
-  border-color: rgba(234, 88, 12, 0.35);
-  color: #9a3412;
+  background: var(--state-due-bg);
+  border-color: var(--state-due-border);
+  color: var(--state-due);
 }
-:root[data-theme="dark"] .related-chip--unknown {
-  background: rgba(219, 137, 87, 0.16);
-  border-color: rgba(219, 137, 87, 0.5);
-  color: #fdba74;
-}
-.related-chip--unknown .related-chip-pinyin {
-  color: #c2410c;
-}
-:root[data-theme="dark"] .related-chip--unknown .related-chip-pinyin {
-  color: #fb923c;
-}
+.related-chip--unknown .related-chip-pinyin { color: var(--state-due); }
 
 .related-chip--unseen {
   background: var(--surface-card, #ffffff);
@@ -1142,93 +1116,36 @@ body.hide-illustrations .card .card-visual-col {
   font-size: 10px;
 }
 
-/* Light Mode Defaults: Subtle Semantic Neutral - Muted Coral & Muted Sage */
-.rating-btn--again {
-  background-color: var(--rating-again-bg, #FAF0EE);
-  color: var(--rating-again-text, #B84A39);
-  border: 1.5px solid var(--rating-again-border, #F0CBC5);
-  box-shadow: 0 1px 3px rgba(184, 74, 57, 0.06);
-}
-.rating-btn--again .rating-icon { stroke: var(--rating-again-text, #B84A39); }
-.rating-btn--again .rating-label { color: var(--rating-again-text, #B84A39); }
-.rating-btn--again:hover {
-  background-color: #FEE2E2 !important;
-  border-color: #EF4444 !important;
-  color: #B91C1C !important;
-  box-shadow: 0 4px 14px rgba(239, 68, 68, 0.22);
-  transform: translateY(-1.5px);
-}
-.rating-btn--again:hover .rating-icon { stroke: #B91C1C !important; }
-.rating-btn--again:hover .rating-label { color: #B91C1C !important; }
-.rating-btn--again:active {
-  background-color: #FCA5A5 !important;
-  transform: scale(0.98);
+/* Rating buttons use the learning-state tokens: "again" sends a card to Cần ôn,
+   "good" moves it toward Đã nhớ. Light/dark values come from base.css. */
+.rating-btn--again,
+.rating-btn--good {
+  --rating-color: var(--state-due);
+  --rating-bg: var(--state-due-bg);
+  --rating-border: var(--state-due-border);
+  background-color: var(--rating-bg);
+  color: var(--rating-color);
+  border: 1.5px solid var(--rating-border);
+  box-shadow: none;
 }
 .rating-btn--good {
-  background-color: var(--rating-good-bg, #EFF5F1);
-  color: var(--rating-good-text, #2D664D);
-  border: 1.5px solid var(--rating-good-border, #C4DCCF);
-  box-shadow: 0 1px 3px rgba(45, 102, 77, 0.06);
+  --rating-color: var(--state-known);
+  --rating-bg: var(--state-known-bg);
+  --rating-border: var(--state-known-border);
 }
-.rating-btn--good .rating-icon { stroke: var(--rating-good-text, #2D664D); }
-.rating-btn--good .rating-label { color: var(--rating-good-text, #2D664D); }
+.rating-btn--again .rating-icon,
+.rating-btn--good .rating-icon { stroke: var(--rating-color); }
+.rating-btn--again .rating-label,
+.rating-btn--good .rating-label { color: var(--rating-color); }
+.rating-btn--again:hover,
 .rating-btn--good:hover {
-  background-color: #DCFCE7 !important;
-  border-color: #10B981 !important;
-  color: #15803D !important;
-  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.22);
+  border-color: var(--rating-color);
+  box-shadow: 0 4px 14px -6px var(--rating-border);
   transform: translateY(-1.5px);
 }
-.rating-btn--good:hover .rating-icon { stroke: #15803D !important; }
-.rating-btn--good:hover .rating-label { color: #15803D !important; }
+.rating-btn--again:active,
 .rating-btn--good:active {
-  background-color: #86EFAC !important;
   transform: scale(0.98);
-}
-
-/* Dark Mode Quiet & Minimal */
-:root[data-theme="dark"] .rating-btn--again {
-  background-color: var(--rating-again-bg, rgba(184, 74, 57, 0.16));
-  color: var(--rating-again-text, #F08C7D);
-  border: 1.5px solid var(--rating-again-border, rgba(240, 203, 197, 0.32));
-  box-shadow: none;
-}
-:root[data-theme="dark"] .rating-btn--again .rating-icon { stroke: var(--rating-again-text, #F08C7D); }
-:root[data-theme="dark"] .rating-btn--again .rating-label { color: var(--rating-again-text, #F08C7D); }
-:root[data-theme="dark"] .rating-btn--again:hover {
-  background-color: rgba(239, 68, 68, 0.28) !important;
-  border-color: #F87171 !important;
-  color: #FECACA !important;
-  box-shadow: 0 4px 14px rgba(239, 68, 68, 0.32);
-  transform: translateY(-1.5px);
-}
-:root[data-theme="dark"] .rating-btn--again:hover .rating-icon { stroke: #FECACA !important; }
-:root[data-theme="dark"] .rating-btn--again:hover .rating-label { color: #FECACA !important; }
-:root[data-theme="dark"] .rating-btn--again:active {
-  background-color: rgba(239, 68, 68, 0.4) !important;
-  transform: scale(0.98);
-}
-
-:root[data-theme="dark"] .rating-btn--good {
-  background-color: var(--rating-good-bg, rgba(45, 102, 77, 0.18));
-  color: var(--rating-good-text, #7ED3A6);
-  border: 1.5px solid var(--rating-good-border, rgba(196, 220, 207, 0.35));
-  box-shadow: none;
-}
-:root[data-theme="dark"] .rating-btn--good .rating-icon { stroke: var(--rating-good-text, #7ED3A6); }
-:root[data-theme="dark"] .rating-btn--good .rating-label { color: var(--rating-good-text, #7ED3A6); }
-:root[data-theme="dark"] .rating-btn--good:hover {
-  background-color: rgba(16, 185, 129, 0.28) !important;
-  border-color: #34D399 !important;
-  color: #A7F3D0 !important;
-  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.32);
-  transform: translateY(-1.5px);
-}
-:root[data-theme="dark"] .rating-btn--good:hover .rating-icon { stroke: #A7F3D0 !important; }
-:root[data-theme="dark"] .rating-btn--good:hover .rating-label { color: #A7F3D0 !important; }
-:root[data-theme="dark"] .rating-btn--good:active {
-  background-color: rgba(16, 185, 129, 0.4) !important;
-  transform: translateY(1px);
 }
 .daily-new-limit-message { min-height: 1.2em; margin-top: 6px; color: var(--text-secondary); font-size: 13px; }
 /* ==========================================================================

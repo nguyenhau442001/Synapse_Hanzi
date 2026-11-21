@@ -462,7 +462,7 @@ export function resetProgress() {
     '',
     'Sẽ bị reset:',
     '• Lịch ôn FSRS của cả ' + WORDS.length + ' từ (' + started + ' từ đã học, ' + known + ' từ đã nhớ) — mọi thẻ quay về "chưa học".',
-    '• Trạng thái Đã nhớ / Chưa nhớ và số thẻ đến hạn của cấp độ này.',
+    '• Trạng thái Đã nhớ / Cần ôn và số thẻ đến hạn của cấp độ này.',
     '',
     'Giữ nguyên: nhật ký ôn tập, chuỗi ngày học, từ khó đã đánh dấu và các cấp độ khác.',
     '',
@@ -488,21 +488,21 @@ export function toggleUnknownWords() {
 
   if (isOpen) {
     box.classList.remove('show');
-    button.textContent = 'Hiển thị từ chưa nhớ';
+    button.textContent = 'Hiển thị từ cần ôn';
     button.setAttribute('aria-expanded', 'false');
     return;
   }
 
   const unknownWords = WORDS.filter(w => progress[w.id] === 'unknown');
   if (unknownWords.length === 0) {
-    box.textContent = 'Chưa có từ nào được đánh dấu "Chưa nhớ".';
+    box.textContent = 'Chưa có từ nào cần ôn.';
   } else {
     box.textContent = unknownWords
       .map((w, index) => (index + 1) + '. ' + w.hanzi + ' (' + w.pinyin + ') - ' + w.meaning)
       .join('\n');
   }
   box.classList.add('show');
-  button.textContent = 'Ẩn từ chưa nhớ';
+  button.textContent = 'Ẩn từ cần ôn';
   button.setAttribute('aria-expanded', 'true');
 }
 
@@ -530,7 +530,7 @@ export function CelebrationModal() {
     ? 'Tuyệt Đỉnh! Tinh Thông 100% Từ Vựng!'
     : `Chúc Mừng! Bạn Đã Hoàn Thành ${levelLabel}!`;
   const msgHtml = isMastered
-    ? `Bạn đã nhớ xuất sắc toàn bộ <strong>${deck.total} / ${deck.total}</strong> từ vựng. Không còn từ nào chưa nhớ!`
+    ? `Bạn đã nhớ xuất sắc toàn bộ <strong>${deck.total} / ${deck.total}</strong> từ vựng. Không còn từ nào cần ôn!`
     : `Bạn đã học qua tất cả <strong>${deck.total} / ${deck.total}</strong> từ vựng của <strong>${levelLabel}</strong>. Cột mốc 100% cực kỳ ấn tượng!`;
 
   return (
@@ -580,7 +580,7 @@ export function CelebrationModal() {
               className="celebration-btn celebration-btn--primary"
               onClick={() => setFilterAndCloseCelebration('unknown')}
             >
-              {`🔁 Ôn tập ngay ${deck.unknown} từ chưa nhớ`}
+              {`🔁 Ôn tập ngay ${deck.unknown} từ cần ôn`}
             </button>
           ) : (
             <button

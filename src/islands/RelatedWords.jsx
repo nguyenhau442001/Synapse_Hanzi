@@ -292,7 +292,7 @@ export function queryRelatedWords(targetWord, targetLevelKey) {
 }
 
 /**
- * Lấy trạng thái học tập của một từ (Đã nhớ / Chưa nhớ / Chưa học)
+ * Lấy trạng thái học tập của một từ (Đã nhớ / Cần ôn / Chưa học)
  */
 function getWordLearnStatus(levelKey, wordId) {
   try {
@@ -323,7 +323,7 @@ function formatShortMeaning(meaning) {
 
 const statusInfo = {
   known: ['related-chip--known', 'Đã nhớ'],
-  unknown: ['related-chip--unknown', 'Chưa nhớ'],
+  unknown: ['related-chip--unknown', 'Cần ôn'],
   unseen: ['related-chip--unseen', 'Chưa học']
 };
 

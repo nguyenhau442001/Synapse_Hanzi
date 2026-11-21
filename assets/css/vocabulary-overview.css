@@ -69,9 +69,9 @@
 .vocabulary-status {
   padding: 4px 7px; border-radius: 999px; font-size: 10.5px; white-space: nowrap;
 }
-.vocabulary-status--unseen { background: var(--bg); color: var(--text-tertiary); }
-.vocabulary-status--unknown { background: var(--danger-bg); color: var(--danger-text); }
-.vocabulary-status--known { background: var(--success-bg); color: var(--success-text); }
+.vocabulary-status--unseen { background: var(--state-new-bg); color: var(--state-new); }
+.vocabulary-status--unknown { background: var(--state-due-bg); color: var(--state-due); }
+.vocabulary-status--known { background: var(--state-known-bg); color: var(--state-known); }
 .overview-empty {
   padding: 38px 20px; color: var(--text-secondary); font-size: 13px;
   line-height: 1.5; text-align: center;

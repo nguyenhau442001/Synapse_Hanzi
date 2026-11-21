@@ -200,7 +200,7 @@ function buildCardArea() {
     <div class="action-row secondary-actions" style="display:none" hidden>
       <button class="show-unknown-btn" id="unknownWordsToggle" onclick="toggleUnknownWords()"
         aria-controls="unknownWordsList" aria-expanded="false">
-        Hiển thị từ chưa nhớ
+        Hiển thị từ cần ôn
       </button>
       <button class="reset-progress-btn" type="button" onclick="resetProgress()">↻ Học lại từ đầu</button>
     </div>
@@ -406,7 +406,7 @@ function renderFilters() {
     },
     {
       key: 'unknown',
-      label: 'Chưa nhớ',
+      label: 'Cần ôn',
       count: unknown,
       iconSvg: `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.19"/></svg>`
     },
@@ -689,7 +689,7 @@ function updateProgress(current, total) {
   }
   const topbar = document.getElementById('studyTopbarProgress');
   if (topbar) {
-    topbar.title = `Tiến độ học: ${deck.learned}/${deck.total} (${deck.pct}%) • Đã nhớ: ${deck.known}, Chưa nhớ: ${deck.unknown}`;
+    topbar.title = `Tiến độ học: ${deck.learned}/${deck.total} (${deck.pct}%) • Đã nhớ: ${deck.known}, Cần ôn: ${deck.unknown}`;
   }
 
   // Also synchronize learning progress navigator in study view
@@ -739,7 +739,7 @@ function updateCardPosition() {
     badge.textContent = posText;
     const filterLabel = currentFilter === 'all' ? 'Tất cả'
       : currentFilter === 'known' ? 'Đã nhớ'
-      : currentFilter === 'unknown' ? 'Chưa nhớ'
+      : currentFilter === 'unknown' ? 'Cần ôn'
       : currentFilter === 'unseen' ? 'Chưa học' : currentFilter;
     badge.title = `Thẻ ${current} / ${total} (${filterLabel})`;
   }
@@ -1036,7 +1036,7 @@ function renderStudyWordList() {
   if (activeBanner) {
     if (activeWord) {
       const status = progress[activeWord.id];
-      const statusText = status === 'known' ? 'Đã nhớ' : status === 'unknown' ? 'Chưa nhớ' : 'Chưa học';
+      const statusText = status === 'known' ? 'Đã nhớ' : status === 'unknown' ? 'Cần ôn' : 'Chưa học';
       const statusClass = status === 'known' ? 'badge-known' : status === 'unknown' ? 'badge-unknown' : 'badge-unseen';
       activeBanner.innerHTML = `
         <div class="active-word-info">
@@ -1212,7 +1212,7 @@ function render(animate) {
             ${deck.unknown > 0 ? `
             <button type="button" class="empty-btn empty-btn--primary" onclick="setStudyMode('review')">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
-              Ôn tập ngay ${deck.unknown} từ chưa nhớ
+              Ôn tập ngay ${deck.unknown} từ cần ôn
             </button>` : ''}
             <button type="button" class="empty-btn empty-btn--secondary" onclick="setFilter('all'); if (typeof shuffleDeck==='function') shuffleDeck();">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 18h1.4c1.3 0 2.5-.6 3.3-1.7l6.1-8.6c.8-1.1 2-1.7 3.3-1.7H22"/><path d="m18 2 4 4-4 4"/></svg>
@@ -1235,7 +1235,7 @@ function render(animate) {
             <div class="achievement-hero-badge achievement-hero-badge--gold">ĐẠI THÀNH TỰU · MASTERED</div>
             <h2 class="achievement-hero-title">Tuyệt Đỉnh Tinh Thông ${levelLabel}!</h2>
             <p class="achievement-hero-desc">
-              Bạn đã nhớ hoàn toàn <strong>${deck.total} / ${deck.total}</strong> từ vựng. Không còn bất kỳ từ nào chưa nhớ!
+              Bạn đã nhớ hoàn toàn <strong>${deck.total} / ${deck.total}</strong> từ vựng. Không còn bất kỳ từ nào cần ôn!
             </p>
             <div class="achievement-hero-actions">
               <button type="button" class="empty-btn empty-btn--primary" onclick="setFilter('all'); if (typeof shuffleDeck==='function') shuffleDeck();">
