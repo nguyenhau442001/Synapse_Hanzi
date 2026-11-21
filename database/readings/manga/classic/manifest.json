@@ -1,0 +1,35 @@
+[
+  {
+    "id": "xiyouji_01",
+    "series": "xiyouji",
+    "series_title": "西游记",
+    "series_title_vi": "Tây Du Ký",
+    "collection": "classic",
+    "volume": 1,
+    "chapter_in_volume": null,
+    "chapter_no": 1,
+    "title": {
+      "zh": "第一回：猴王出世",
+      "zh_trad": "第一回：猴王出世",
+      "vi": "Hồi 1: Mỹ Hầu Vương Xuất Thế",
+      "pinyin": "dì yī huí ： hóu wáng chū shì"
+    },
+    "description_vi": "Trời đất tạo hóa, tảng đá tiên trên đỉnh núi Hoa Quả hấp thu linh khí nhật nguyệt bỗng nứt toác sinh ra một con khỉ đá. Thạch Hầu dũng cảm nhảy qua thác nước tìm thấy Thủy Liêm Động, được vạn khỉ tôn xưng làm Mỹ Hầu Vương!",
+    "cover_image": "assets/images/readings/manga/classic/xiyouji_01/page_01.webp",
+    "source": "《西游记》原著：吴承恩 · 经典国风水墨连环画改编 · 公有领域 (Public Domain)",
+    "source_url": "https://zh.wikipedia.org/wiki/西游记",
+    "source_credits": "Nguyên tác văn học: Ngô Thừa Ân (Minh đại - Public Domain). Bộ tranh chuyển thể liên hoàn họa cổ phong và hệ thống tra từ tương tác được phát triển cho mục đích giáo dục phi lợi nhuận của Synapse Hanzi.",
+    "license": "Public Domain / Educational",
+    "page_count": 6,
+    "difficulty": "HSK 3 - 4",
+    "estimatedMinutes": 6,
+    "file": "database/readings/manga/classic/xiyouji_01.json",
+    "proper_names": [
+      "花果山",
+      "水帘洞",
+      "美猴王",
+      "石猴",
+      "傲来国"
+    ]
+  }
+]

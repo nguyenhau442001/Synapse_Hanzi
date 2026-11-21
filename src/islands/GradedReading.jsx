@@ -339,9 +339,13 @@ async function loadStory(storyId) {
 async function ensureMangaManifestLoaded() {
   if (mangaManifestLoaded && mangaManifestData.length) return mangaManifestData;
   try {
-    const res = await fetch('database/readings/manga/peppercarrot/manifest.json?v=' + Date.now());
-    if (!res.ok) throw new Error('Không thể tải danh sách truyện tranh.');
-    mangaManifestData = await res.json();
+    const [resClassic, resPc] = await Promise.allSettled([
+      fetch('database/readings/manga/classic/manifest.json?v=' + Date.now()),
+      fetch('database/readings/manga/peppercarrot/manifest.json?v=' + Date.now())
+    ]);
+    const classicList = resClassic.status === 'fulfilled' && resClassic.value.ok ? await resClassic.value.json() : [];
+    const pcList = resPc.status === 'fulfilled' && resPc.value.ok ? await resPc.value.json() : [];
+    mangaManifestData = [...classicList, ...pcList];
     mangaManifestLoaded = true;
     return mangaManifestData;
   } catch (e) {
@@ -354,7 +358,7 @@ async function loadMangaStory(mangaId) {
   if (mangaStoryCache[mangaId]) return mangaStoryCache[mangaId];
   const list = await ensureMangaManifestLoaded();
   const item = list.find((m) => m.id === mangaId);
-  const file = item ? item.file : `database/readings/manga/peppercarrot/${mangaId}.json`;
+  const file = item ? item.file : (mangaId.startsWith('xiyouji') ? `database/readings/manga/classic/${mangaId}.json` : `database/readings/manga/peppercarrot/${mangaId}.json`);
   const res = await fetch(file + '?v=' + Date.now());
   if (!res.ok) throw new Error('Không thể tải truyện tranh: ' + mangaId);
   const data = await res.json();
@@ -1565,6 +1569,7 @@ function StoryReader({ story }) {
 
 // Series shelves, in reading order. Entries without `collection` land on the first shelf.
 const MANGA_COLLECTIONS = [
+  { key: 'classic', zh: '中国古典四大名著', vi: 'Kinh Điển Cổ Phong (Tây Du Ký)', range: 'Hồi 1 · Mỹ Hầu Vương Xuất Thế' },
   { key: 'peppercarrot', zh: '胡椒和胡萝卜', vi: 'Pepper&Carrot', range: 'Tập 1 → 39 · CC BY 4.0' },
 ];
 
@@ -1613,13 +1618,13 @@ function MangaHub() {
 
       <section class="manga-hub-hero">
         <div class="manga-hub-hero-copy">
-          <span class="manga-hub-kicker">TRUYỆN TRANH · ĐỌC GIẢI TRÍ</span>
+          <span class="manga-hub-kicker">TRUYỆN TRANH · ĐỌC GIẢI TRÍ & HỌC TỪ VỰNG</span>
           <h1 class="manga-hub-title">
-            <span class="manga-hub-title-zh" lang="zh-Hans">胡椒和胡萝卜</span>
-            <span class="manga-hub-title-vi">Pepper&amp;Carrot</span>
+            <span class="manga-hub-title-zh" lang="zh-Hans">漫画阅读 · 西游记 & 胡椒和胡萝卜</span>
+            <span class="manga-hub-title-vi">Truyện Tranh Song Ngữ · Tây Du Ký &amp; Pepper&amp;Carrot</span>
           </h1>
           <p class="manga-hub-desc">
-            Truyện về cô phù thủy nhỏ Pepper và chú mèo Carrot, bản tiếng Trung giản thể. Bấm vào một bóng thoại để xem pinyin, nghĩa từng từ và câu dịch.
+            Đọc truyện tranh tiếng Trung có hỗ trợ tra từ vựng, pinyin, Hán-Việt và dịch nghĩa theo từng câu và bóng thoại trực tiếp.
           </p>
         </div>
         <div class="manga-hub-stats">
@@ -1650,9 +1655,8 @@ function MangaHub() {
       })}
 
       <p class="manga-hub-credit">
-        Nguồn: <a href="https://www.peppercarrot.com" target="_blank" rel="noopener">Pepper&amp;Carrot</a> của David Revoy, giấy phép{' '}
-        <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>. Bản dịch tiếng Trung và tiếng Việt do cộng đồng
-        Pepper&amp;Carrot thực hiện; tên người dịch ghi ở từng tập. Lớp tra từ (pinyin, Hán-Việt, nghĩa) do Synapse Hanzi bổ sung.
+        Nguồn: 《西游记》 (Ngô Thừa Ân · Public Domain); <a href="https://www.peppercarrot.com" target="_blank" rel="noopener">Pepper&amp;Carrot</a> của David Revoy, giấy phép{' '}
+        <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>. Bản dịch tiếng Trung và tiếng Việt do cộng đồng thực hiện; Lớp tra từ (pinyin, Hán-Việt, nghĩa) do Synapse Hanzi biên soạn.
       </p>
     </div>
   );
