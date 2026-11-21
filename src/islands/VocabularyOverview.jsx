@@ -123,7 +123,7 @@ function VocabularyRow({ word, wordIndex, status, numberWidth }) {
         <span class={`vocabulary-status vocabulary-status--${status}`}>{STATUS_LABELS[status]}</span>
       </button>
       <button type="button" class="vocabulary-curve-btn" aria-label={'Xem đường cong ghi nhớ: ' + word.hanzi}
-        onClick={(event) => { event.stopPropagation(); window.openMemoryCurve(currentLevel, word.id); }}>📈</button>
+        onClick={(event) => { event.stopPropagation(); window.openMemoryCurve(currentLevel, word.id); }}><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18" /><path d="m7 15 4-4 3 3 5-6" /></svg></button>
     </div>
   );
 }

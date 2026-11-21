@@ -643,3 +643,60 @@ body.dark-mode .reading-global-footer .reading-nav-btn.next-btn:hover:not(:disab
   border-color: var(--accent-hover);
   color: #FFFFFF;
 }
+
+/* ── Reading hub: open gallery — only the cover is framed, text sits on the canvas ── */
+.graded-card,
+:root[data-theme="dark"] .graded-card {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  overflow: visible;
+  box-shadow: none;
+}
+.graded-card:hover { box-shadow: none; }
+.graded-card-cover {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  transition: border-color var(--dur-fast) var(--ease-out);
+}
+.graded-card:hover .graded-card-cover { border-color: var(--text-tertiary); }
+.graded-card-content { padding: var(--space-3) var(--space-1) 52px; }
+.graded-card-link:focus-visible {
+  outline: none;
+  border-radius: var(--radius-card);
+  box-shadow: var(--focus-ring);
+}
+.graded-card-level { border: 0; border-radius: var(--radius-pill); background: var(--surface-chip); font-weight: 600; }
+.graded-card-mark { right: var(--space-1); bottom: var(--space-2); background: transparent; }
+
+/* ── Vocabulary overview: quiet metadata, token inputs, line-icon action ──── */
+#overviewView .vocabulary-hanzi { font-family: var(--font-zh); font-size: 24px; font-weight: 600; }
+#overviewView .vocabulary-hanviet.hanviet-badge {
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: var(--surface-chip);
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: var(--fs-caption);
+  font-weight: 500;
+  padding: 2px 8px;
+  box-shadow: none;
+}
+#overviewView .vocabulary-curve-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-btn);
+  color: var(--text-secondary);
+  transition: background-color var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+#overviewView .vocabulary-curve-btn:hover { background: var(--surface-hover); color: var(--accent-text); }
+#overviewView .vocabulary-curve-btn:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+#overviewView .overview-search,
+#overviewView .overview-status-label select {
+  border-radius: var(--radius-input);
+  border-color: var(--border);
+  font-family: var(--font-sans);
+}
+#overviewView .overview-search:focus-within { border-color: var(--accent); box-shadow: var(--focus-ring); }
