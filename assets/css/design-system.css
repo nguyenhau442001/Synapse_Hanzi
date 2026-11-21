@@ -320,7 +320,6 @@ body.home-screen .learning-dashboard.dashboard-hero-banner,
   font-family: var(--font-zh);
   font-weight: 600;
 }
-.level-card .lvl-percent-value { font-weight: 600; }
 
 /* ── Screen refinements: quick review picker (Ôn nhanh) ─────────────────── */
 .review-unified-card {
@@ -401,21 +400,102 @@ body.home-screen #screenPicker .level-card.is-active-level,
   border: 1px solid var(--accent);
   box-shadow: inset 0 0 0 1px var(--accent);
 }
-body.home-screen #screenPicker .lvl-num {
-  font-family: var(--font-sans);
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-}
-body.home-screen #screenPicker .lvl-percent-value {
-  font-size: 22px;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-}
 body.home-screen #screenPicker .level-status-badge {
   border: 0;
-  font-weight: 500;
   padding: 3px 10px;
+}
+
+/* ── HSK level cards: canonical typography ─────────────────────────────────
+   The single source of truth for level-card text in #levelGrid20 / #levelGrid30.
+   Older layers (dashboard-enhancements.css) only keep layout; topic cards
+   (#topicGrid, also .level-card) are intentionally out of scope.
+   Specificity (1 id + 3 classes) outranks every remaining .level-card rule.
+   Line-heights are tuned so card heights match the previous typography. */
+:root {
+  --card-font: "Nunito Sans", "Be Vietnam Pro", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  --card-title-size: 19px;
+  --card-title-weight: 600;
+  --card-number-size: 20px;
+  --card-number-weight: 500;
+  --card-body-size: 13px;
+  --card-body-weight: 400;
+  --card-meta-size: 12px;
+  --card-meta-weight: 400;
+  --card-badge-size: 11px;
+  --card-badge-weight: 500;
+}
+@media (max-width: 767px) {
+  :root {
+    --card-title-size: 16px;
+    --card-number-size: 17px;
+    --card-body-size: 12px;
+    --card-meta-size: 11px;
+    --card-badge-size: 10.5px;
+  }
+}
+#screenPicker .level-grid .level-card {
+  font-family: var(--card-font);
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#screenPicker .level-grid .level-card .lvl-num {
+  font-family: inherit;
+  font-size: var(--card-title-size);
+  font-weight: var(--card-title-weight);
+  line-height: 1.04;
+  letter-spacing: -0.005em;
+  color: var(--text-primary);
+}
+#screenPicker .level-grid .level-card .lvl-percent-value {
+  font-family: inherit;
+  font-size: var(--card-number-size);
+  font-weight: var(--card-number-weight);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-tertiary);
+}
+#screenPicker .level-grid .is-learning-level .lvl-percent-value { color: var(--accent-text, var(--accent)); }
+#screenPicker .level-grid .is-complete-level .lvl-percent-value { color: var(--success-text, var(--status-success)); }
+#screenPicker .level-grid .level-card .level-card-meta,
+#screenPicker .level-grid .level-card .lvl-label,
+#screenPicker .level-grid .level-card .lvl-count {
+  font-size: var(--card-body-size);
+  font-weight: var(--card-body-weight);
+  line-height: 1.3;
+  letter-spacing: 0;
+  color: var(--text-secondary);
+}
+#screenPicker .level-grid .level-card .lvl-mastery-text {
+  font-size: var(--card-meta-size);
+  font-weight: var(--card-meta-weight);
+  line-height: 1.15;
+  letter-spacing: 0;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-secondary);
+}
+#screenPicker .level-grid .level-card .lvl-action-hint,
+#screenPicker .level-grid .level-card .lvl-today-count {
+  font-weight: var(--card-badge-weight);
+}
+#screenPicker .level-grid .level-card .level-status-badge {
+  font-size: var(--card-badge-size);
+  font-weight: var(--card-badge-weight);
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  border: 0;
+  border-radius: 999px;
+  color: var(--text-secondary);
+  background: color-mix(in srgb, var(--text-tertiary) 9%, transparent);
+}
+#screenPicker .level-grid .level-card .level-status-badge.is-learning {
+  color: var(--accent-text, var(--accent));
+  background: color-mix(in srgb, var(--accent-text, var(--accent)) 8%, transparent);
+}
+#screenPicker .level-grid .level-card .level-status-badge.is-complete {
+  color: var(--success-text, var(--status-success));
+  background: color-mix(in srgb, var(--success-text, var(--status-success)) 10%, transparent);
 }
 
 /* ── Responsive guards: scroll rows must not widen the page on phones ───── */

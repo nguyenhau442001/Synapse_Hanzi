@@ -131,21 +131,6 @@
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
-:root[data-theme="dark"] .level-status-badge.is-learning {
-  color: var(--status-warning, #D2AD6E);
-  background: rgba(210, 173, 110, 0.12);
-  border-color: rgba(210, 173, 110, 0.28);
-}
-.level-status-badge.is-complete {
-  color: var(--status-success, #2e7d5a);
-  background: var(--success-bg, #ecfdf5);
-  border-color: color-mix(in srgb, var(--status-success, #2e7d5a) 30%, transparent);
-}
-:root[data-theme="dark"] .level-status-badge.is-complete {
-  color: var(--status-success, #72B99A);
-  background: rgba(114, 185, 154, 0.12);
-  border-color: rgba(114, 185, 154, 0.28);
-}
 .level-card-meta {
   display: flex;
   align-items: center;
@@ -168,19 +153,6 @@
   align-items: baseline;
   justify-content: space-between;
   gap: 6px;
-}
-.level-card .lvl-percent-value {
-  font-size: 20px;
-  font-weight: 800;
-  line-height: 1;
-  color: var(--text-primary);
-  font-variant-numeric: tabular-nums;
-}
-.level-card.is-learning-level .lvl-percent-value {
-  color: var(--accent-text);
-}
-.level-card.is-complete-level .lvl-percent-value {
-  color: var(--success-text);
 }
 .level-card .lvl-today-count {
   display: none;
@@ -642,7 +614,6 @@ body.home-screen .dashboard-bottom-widgets .hw-card:hover {
 }
 .daily-goal-track, .progress-bar-track { background: var(--progress-track); border-radius: 999px; overflow: hidden; }
 .level-card.is-active-level { border-color: var(--brand-primary); box-shadow: 0 0 0 1px var(--brand-primary), 0 4px 14px rgba(0, 0, 0, 0.25); }
-.level-status-badge.is-learning { border-color: color-mix(in srgb, var(--status-warning) 30%, transparent); background: var(--warning-bg); color: var(--status-warning); }
 .hanzi,
 .review-hanzi,
 .radical-char,
@@ -700,7 +671,6 @@ body.home-screen .dashboard-bottom-widgets .hw-card:hover {
     font-size: 18px;
   }
   .level-status-badge {
-    font-size: 9.5px;
     padding: 1.5px 6px;
   }
   .level-card-meta {
@@ -711,9 +681,6 @@ body.home-screen .dashboard-bottom-widgets .hw-card:hover {
   .level-card-progress {
     margin: 8px 0 5px;
     gap: 4px;
-  }
-  .level-card .lvl-percent-value {
-    font-size: 17px;
   }
   .level-card .lvl-today-count {
     font-size: 9.5px;
@@ -1317,60 +1284,17 @@ body.home-screen .featured-topics {
     justify-content: space-between;
     gap: 8px;
   }
-  body.home-screen #screenPicker .lvl-num {
-    font-family: var(--font-classical);
-    font-size: 21px;
-    font-weight: 800;
-    color: var(--text-primary);
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-  }
+  /* Level-card typography lives in one canonical block in design-system.css. */
   body.home-screen #screenPicker .level-status-badge {
-    font-size: 11px;
-    font-weight: 650;
-    color: var(--text-tertiary);
-    background: var(--surface-subtle);
-    border: 1px solid var(--border);
     padding: 2.5px 8px;
     border-radius: 999px;
     white-space: nowrap;
-    letter-spacing: 0.01em;
-  }
-  body.home-screen #screenPicker .level-status-badge.is-learning {
-    color: var(--brand-primary);
-    background: rgba(168, 50, 42, 0.07);
-    border-color: rgba(168, 50, 42, 0.25);
-  }
-  :root[data-theme="dark"] body.home-screen #screenPicker .level-status-badge.is-learning {
-    color: #F0786E;
-    background: rgba(200, 70, 59, 0.15);
-    border-color: rgba(200, 70, 59, 0.35);
-  }
-  body.home-screen #screenPicker .level-status-badge.is-complete {
-    color: var(--status-success, #527D70);
-    background: rgba(82, 125, 112, 0.09);
-    border-color: rgba(82, 125, 112, 0.28);
-  }
-  :root[data-theme="dark"] body.home-screen #screenPicker .level-status-badge.is-complete {
-    color: #7FB8A7;
-    background: rgba(98, 153, 136, 0.15);
-    border-color: rgba(98, 153, 136, 0.35);
   }
   body.home-screen #screenPicker .level-card-meta {
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: 12px;
-    color: var(--text-secondary);
     margin: 2px 0 0;
-    font-weight: 500;
-  }
-  body.home-screen #screenPicker .lvl-label {
-    font-weight: 600;
-    color: var(--text-secondary);
-  }
-  body.home-screen #screenPicker .lvl-count {
-    color: var(--text-tertiary);
   }
 
   body.home-screen #screenPicker .level-card-progress {
@@ -1384,19 +1308,6 @@ body.home-screen .featured-topics {
     align-items: baseline;
     justify-content: space-between;
     gap: 8px;
-  }
-  body.home-screen #screenPicker .lvl-percent-value {
-    font-size: 19px;
-    font-weight: 850;
-    line-height: 1;
-    color: var(--text-primary);
-    font-variant-numeric: tabular-nums;
-  }
-  body.home-screen #screenPicker .level-card.is-learning-level .lvl-percent-value {
-    color: var(--brand-primary);
-  }
-  body.home-screen #screenPicker .level-card.is-complete-level .lvl-percent-value {
-    color: var(--status-success, #527D70);
   }
   body.home-screen #screenPicker .lvl-today-count {
     display: none;
@@ -1440,12 +1351,7 @@ body.home-screen .featured-topics {
     margin-top: 2px;
   }
   body.home-screen #screenPicker .lvl-mastery-text {
-    color: var(--text-tertiary);
-    font-size: 11.5px;
-    font-weight: 500;
-    line-height: 1.2;
     white-space: nowrap;
-    font-variant-numeric: tabular-nums;
   }
   body.home-screen #screenPicker .lvl-action-hint {
     font-size: 11.5px;
