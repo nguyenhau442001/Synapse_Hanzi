@@ -1,0 +1,12 @@
+{
+  "status": "quota_exhausted",
+  "exhausted_at": "2026-11-21T21:01:07.241698",
+  "reset_at": "2026-11-22T15:00:01.241698",
+  "reset_at_human": "2026-11-22 15:00:01",
+  "wait_seconds": 64734,
+  "wait_human": "17h 58m 54s",
+  "last_exhausted_model": "gemini-2.5-flash-preview-tts",
+  "level": "hsk4",
+  "clips_generated_this_run": 0,
+  "total_pending_remaining": 3
+}

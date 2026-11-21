@@ -18,6 +18,12 @@ python3 tools/generate_hsk_audio_gemini.py --level hsk4 --dry-run
 
 ### Generation Examples
 
+Check current Gemini TTS daily quota status & reset schedule:
+
+```bash
+python3 tools/generate_hsk_audio_gemini.py --check-quota
+```
+
 Generate the first 10 rows of HSK4 on Free Tier (3 RPM with automatic 20.5s rate-limit delay):
 
 ```bash

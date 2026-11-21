@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import argparse
 import base64
+from datetime import datetime, timedelta
 import hashlib
 import html
 from html.parser import HTMLParser
@@ -123,8 +124,52 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--overwrite", action="store_true", help="Regenerate and overwrite existing audio files")
     parser.add_argument("--skip-manifest", action="store_true", help="Do not update manifest.json")
+    parser.add_argument("--stop-on-quota", action=argparse.BooleanOptionalAction, default=True, help="Stop and log reset time when daily quota is exhausted (default: True)")
+    parser.add_argument("--check-quota", action="store_true", help="Check and display recorded quota reset time and remaining duration")
     parser.add_argument("--dry-run", action="store_true", help="Show planned audio clips without calling the API")
     return parser.parse_args()
+
+
+def check_quota_status() -> int:
+    quota_file = REPO_ROOT / "database" / "prebuilt_audio" / "quota_status.json"
+    if not quota_file.is_file():
+        print("No quota status recorded yet in database/prebuilt_audio/quota_status.json")
+        return 0
+
+    try:
+        data = json.loads(quota_file.read_text(encoding="utf-8"))
+    except Exception as e:
+        print(f"Error reading {quota_file}: {e}")
+        return 1
+
+    print("\n" + "=" * 72)
+    print("  GEMINI TTS QUOTA STATUS & RESET SCHEDULE")
+    print(f"  Status:             {data.get('status', 'unknown').upper()}")
+    print(f"  Level:              {str(data.get('level', '')).upper()}")
+    print(f"  Exhausted at:       {data.get('exhausted_at', 'unknown')}")
+    print(f"  Target Reset Time:  {data.get('reset_at_human', data.get('reset_at', 'unknown'))}")
+
+    reset_at_str = data.get("reset_at")
+    if reset_at_str:
+        try:
+            reset_dt = datetime.fromisoformat(reset_at_str)
+            now = datetime.now()
+            diff = (reset_dt - now).total_seconds()
+            if diff > 0:
+                h = int(diff // 3600)
+                m = int((diff % 3600) // 60)
+                s = int(diff % 60)
+                print(f"  Time until reset:   {h}h {m}m {s}s remaining")
+            else:
+                print("  Time until reset:   Quota should now be reset! Ready for generation.")
+        except Exception:
+            pass
+
+    print(f"  Last model hit:     {data.get('last_exhausted_model', 'unknown')}")
+    print(f"  Clips in last run:  {data.get('clips_generated_this_run', 0)}")
+    print(f"  Pending remaining:  {data.get('total_pending_remaining', 'unknown')}")
+    print("=" * 72 + "\n")
+    return 0
 
 
 def get_vocab_path(level: str) -> Path:
@@ -371,6 +416,9 @@ def git_commit_and_push(batch_count: int, level: str) -> None:
 
 def main() -> int:
     args = parse_args()
+    if args.check_quota:
+        return check_quota_status()
+
     if args.fast:
         args.delay_seconds = 0.5
 
@@ -423,6 +471,8 @@ def main() -> int:
     success_count = 0
     uncommitted_clips = 0
     batch_target_clips = args.batch_size * len(kinds)
+    last_quota_wait_sec = 0.0
+    last_exhausted_model = ""
 
     for i, task in enumerate(pending, 1):
         key = api_keys[key_index % len(api_keys)]
@@ -448,6 +498,8 @@ def main() -> int:
                 break
             except DailyQuotaExhaustedError as dq:
                 print(f"\n  [Cascade] {dq}. Switching to fallback model...", end="", flush=True)
+                last_quota_wait_sec = dq.wait_sec
+                last_exhausted_model = dq.model
                 current_model_idx += 1
             except Exception as exc:
                 print(f" FAILED: {exc}")
@@ -457,8 +509,47 @@ def main() -> int:
                 break
 
         if current_model_idx >= len(models_to_try):
-            print("\nAll available Gemini TTS models have exhausted their daily quotas!")
-            break
+            now = datetime.now()
+            wait_s = max(60.0, last_quota_wait_sec)
+            reset_dt = now + timedelta(seconds=wait_s)
+            h = int(wait_s // 3600)
+            m = int((wait_s % 3600) // 60)
+            s = int(wait_s % 60)
+            wait_human = f"{h}h {m}m {s}s" if h > 0 else f"{m}m {s}s"
+            reset_str = reset_dt.strftime("%Y-%m-%d %H:%M:%S")
+
+            quota_info = {
+                "status": "quota_exhausted",
+                "exhausted_at": now.isoformat(),
+                "reset_at": reset_dt.isoformat(),
+                "reset_at_human": reset_str,
+                "wait_seconds": int(wait_s),
+                "wait_human": wait_human,
+                "last_exhausted_model": last_exhausted_model,
+                "level": args.level,
+                "clips_generated_this_run": success_count,
+                "total_pending_remaining": len(pending) - success_count,
+            }
+            quota_file = REPO_ROOT / "database" / "prebuilt_audio" / "quota_status.json"
+            quota_file.write_text(json.dumps(quota_info, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+            print("\n" + "=" * 74)
+            print("  [DAILY QUOTA EXHAUSTED] All Gemini Flash TTS models have hit daily limits.")
+            print(f"  Target Quota Reset Time: {reset_str} ({wait_human} remaining)")
+            print(f"  Clips generated this run: {success_count} clips")
+            print(f"  Pending clips remaining:  {len(pending) - success_count} clips")
+            print(f"  Quota status recorded in: database/prebuilt_audio/quota_status.json")
+            print("  Stopping gracefully as requested.")
+            print("=" * 74 + "\n", flush=True)
+
+            if not args.skip_manifest:
+                update_manifest(args.level, args.model, args.voice)
+
+            if args.auto_commit and uncommitted_clips > 0:
+                git_commit_and_push(uncommitted_clips, args.level)
+                uncommitted_clips = 0
+
+            return 0
 
         # Batch commit and push when reaching batch size
         if uncommitted_clips >= batch_target_clips:
