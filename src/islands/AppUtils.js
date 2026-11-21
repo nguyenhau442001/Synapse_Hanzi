@@ -2,7 +2,7 @@
 // Small helpers shared by every feature script.
 
 // Written by tools/bump_version.py — used as the cache-buster for data fetches.
-export const APP_VERSION = '3.43.4';
+export const APP_VERSION = '3.44.0';
 
 // Escape text for safe interpolation into HTML strings (shared by every view).
 export function escapeHtml(value) {
