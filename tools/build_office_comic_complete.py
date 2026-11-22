@@ -317,6 +317,150 @@ EPISODES = [
                 ]
             }
         ]
+    },
+    {
+        "id": "office_ep03",
+        "chapter_no": 3,
+        "title": {
+            "zh": "第三集：开个短会",
+            "zh_trad": "第三集：開個短會",
+            "vi": "Tập 3: Họp Nhanh 5 Phút",
+            "pinyin": "dì sān jí ： kāi gè duǎn huì"
+        },
+        "description_vi": "11 giờ 55 phút trưa, đồ ăn vừa bấm đặt trên app thì Sếp Vương bất ngờ vỗ tay hào hứng: 'Mọi người dừng tay chút, mình họp nhanh năm phút thôi nhé!' Và thế là một cuộc họp 'năm phút' kéo dài xuyên trưa bắt đầu...",
+        "difficulty": "HSK 1 - 4",
+        "estimatedMinutes": 3,
+        "panels": [
+            {
+                "page_num": 1,
+                "src_file": RAW_DIR / "dagongren_ep03_p1_1795313382831.jpg",
+                "dialogues": [
+                    {
+                        "id": "p1_d1",
+                        "character": "小阳 (Tiểu Dương)",
+                        "speaker": "小阳",
+                        "zh": "小铃，今天中午吃什么？",
+                        "vi": "Tiểu Linh, trưa nay ăn gì?",
+                        "box": (100, 50, 580, 145),
+                        "tail_base_x": 350,
+                        "tail_tip": (350, 200),
+                        "tail_side": "bottom"
+                    },
+                    {
+                        "id": "p1_d2",
+                        "character": "小铃 (Tiểu Linh)",
+                        "speaker": "小铃",
+                        "zh": "点麻辣烫吧，我已经饿了。",
+                        "vi": "Gọi Ma La Tang đi, tôi đói lắm rồi.",
+                        "box": (780, 50, 1300, 145),
+                        "tail_base_x": 820,
+                        "tail_tip": (780, 230),
+                        "tail_side": "bottom"
+                    }
+                ]
+            },
+            {
+                "page_num": 2,
+                "src_file": RAW_DIR / "dagongren_ep03_p2_1795313404595.jpg",
+                "dialogues": [
+                    {
+                        "id": "p2_d1",
+                        "character": "王经理 (Sếp Vương)",
+                        "speaker": "王经理",
+                        "zh": "大家手头停一下，开个短会，就五分钟！",
+                        "vi": "Mọi người dừng tay chút, họp nhanh một tí, đúng năm phút thôi!",
+                        "box": (60, 45, 780, 140),
+                        "tail_base_x": 200,
+                        "tail_tip": (200, 200),
+                        "tail_side": "bottom"
+                    },
+                    {
+                        "id": "p2_d2",
+                        "character": "小阳 (Tiểu Dương)",
+                        "speaker": "小阳",
+                        "zh": "五……五分钟？！",
+                        "vi": "Năm... năm phút á?!",
+                        "box": (340, 560, 680, 655),
+                        "tail_side": "top",
+                        "tail_base_x": 400,
+                        "tail_tip": (400, 460)
+                    }
+                ]
+            },
+            {
+                "page_num": 3,
+                "src_file": RAW_DIR / "dagongren_ep03_p3_1795313426411.jpg",
+                "dialogues": [
+                    {
+                        "id": "p3_d1",
+                        "character": "王经理 (Sếp Vương)",
+                        "speaker": "王经理",
+                        "zh": "我们要打通底层逻辑，形成业务闭环……",
+                        "vi": "Chúng ta phải đả thông logic tầng dưới, tạo thành vòng lặp nghiệp vụ khép kín...",
+                        "box": (280, 15, 1080, 110),
+                        "tail_base_x": 380,
+                        "tail_tip": (380, 210),
+                        "tail_side": "bottom"
+                    }
+                ]
+            },
+            {
+                "page_num": 4,
+                "src_file": RAW_DIR / "dagongren_ep03_p4_1795313449602.jpg",
+                "dialogues": [
+                    {
+                        "id": "p4_d1",
+                        "character": "小阳 (Tiểu Dương)",
+                        "speaker": "小阳",
+                        "zh": "我快饿晕了……",
+                        "vi": "Tôi sắp ngất vì đói rồi...",
+                        "box": (80, 50, 440, 145),
+                        "tail_base_x": 240,
+                        "tail_tip": (240, 200),
+                        "tail_side": "bottom"
+                    },
+                    {
+                        "id": "p4_d2",
+                        "character": "小铃 (Tiểu Linh)",
+                        "speaker": "小铃",
+                        "zh": "外卖到了四十分钟，已经凉透了。",
+                        "vi": "Đồ ăn tới được 40 phút rồi, nguội ngắt luôn rồi.",
+                        "box": (600, 50, 1220, 145),
+                        "tail_base_x": 720,
+                        "tail_tip": (720, 230),
+                        "tail_side": "bottom"
+                    }
+                ]
+            },
+            {
+                "page_num": 5,
+                "src_file": RAW_DIR / "dagongren_ep03_p5_1795313495595.jpg",
+                "dialogues": [
+                    {
+                        "id": "p5_d1",
+                        "character": "王经理 (Sếp Vương)",
+                        "speaker": "王经理",
+                        "zh": "好了，没有问题的话，下午两点我们继续！",
+                        "vi": "Được rồi, nếu không có câu hỏi gì thì hai giờ chiều chúng ta tiếp tục nhé!",
+                        "box": (600, 40, 1340, 135),
+                        "tail_base_x": 750,
+                        "tail_tip": (750, 230),
+                        "tail_side": "bottom"
+                    },
+                    {
+                        "id": "p5_d2",
+                        "character": "小阳 (Tiểu Dương)",
+                        "speaker": "小阳",
+                        "zh": "两点？……那还有十五分钟！",
+                        "vi": "Hai giờ? ... Thế là chỉ còn mười lăm phút nữa!",
+                        "box": (220, 640, 740, 735),
+                        "tail_base_x": 420,
+                        "tail_tip": (420, 580),
+                        "tail_side": "top"
+                    }
+                ]
+            }
+        ]
     }
 ]
 

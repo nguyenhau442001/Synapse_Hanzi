@@ -36,6 +36,7 @@ BUNDLE_FILES = [
     "assets/css/vocabulary-overview.css",
     "assets/css/celebration.css",
     "assets/css/study-help-modal.css",
+    "assets/css/feature-promo-modal.css",
     "assets/css/feedback.css",
     "assets/css/footer.css",
     "assets/css/design-system.css",

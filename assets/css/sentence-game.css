@@ -18,77 +18,78 @@
 .sentence-game {
   max-width: 820px;
   width: 100%;
-  margin: 18px auto 40px;
+  margin: 12px auto 32px;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 12px;
   box-sizing: border-box;
 }
 
 /* 1. Header & Minimal Controls */
 .sentence-game-header {
-  padding: 12px 18px;
+  padding: 10px 16px;
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg, 16px);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 
 .sentence-game-top-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
 .sentence-game-title-group {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .sentence-game-title {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 750;
   color: var(--text-primary);
   margin: 0;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   letter-spacing: -0.01em;
 }
 
 .sentence-game-counter {
-  font-size: 12.5px;
+  font-size: 12px;
   font-weight: 600;
   color: var(--text-secondary);
   font-variant-numeric: tabular-nums;
   background: var(--bg);
   border: 1px solid var(--border);
-  padding: 3px 10px;
+  padding: 2px 8px;
   border-radius: 20px;
 }
 
 .sentence-game-tools {
   display: flex;
-  gap: 8px;
+  gap: 6px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .sentence-tool-btn {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  height: 32px;
-  padding: 0 12px;
+  gap: 5px;
+  height: 30px;
+  padding: 0 10px;
   border: 1px solid var(--border);
   border-radius: 20px;
   background: var(--bg);
-  font-size: 12.5px;
+  font-size: 12px;
   font-weight: 600;
   color: var(--text-secondary);
   cursor: pointer;
@@ -111,23 +112,16 @@
 .sentence-exam-selector-group {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-}
-
-.sentence-exam-label {
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--text-secondary);
 }
 
 .sentence-exam-select {
-  height: 32px;
-  padding: 0 10px;
+  height: 30px;
+  padding: 0 8px;
   border: 1px solid var(--border);
   border-radius: 8px;
   background: var(--bg);
   color: var(--text-primary);
-  font-size: 12.5px;
+  font-size: 12px;
   font-weight: 600;
   cursor: pointer;
   transition: border-color 0.16s ease, box-shadow 0.16s ease;
@@ -140,37 +134,65 @@
   box-shadow: 0 0 0 2px var(--accent-light, rgba(234, 88, 12, 0.15));
 }
 
-/* Question Navigator (86 - 95) */
+/* Question Navigator (86 - 95 with stepper arrows) */
 .sentence-question-nav-container {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding-top: 8px;
+  justify-content: center;
+  padding-top: 6px;
   border-top: 1px solid var(--border);
-  flex-wrap: wrap;
-}
-
-.sentence-question-nav-label {
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--text-tertiary);
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  white-space: nowrap;
 }
 
 .sentence-question-nav {
   display: flex;
   align-items: center;
   gap: 6px;
+  justify-content: center;
+}
+
+.sentence-q-nav-arrow {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text-secondary);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.sentence-q-nav-arrow:hover:not(:disabled) {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--card-bg);
+}
+
+.sentence-q-nav-arrow:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.sentence-q-list {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .sentence-q-btn {
   position: relative;
-  min-width: 38px;
+  min-width: 36px;
   height: 32px;
-  padding: 0 8px;
+  padding: 0 7px;
   border: 1px solid var(--border);
   border-radius: 8px;
   background: var(--bg);
@@ -211,66 +233,43 @@
   line-height: 1;
 }
 
-.sentence-game-instruction {
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--text-secondary);
-  line-height: 1.45;
-}
-
 /* 2. Challenge Board */
 .sentence-card-board {
-  padding: 24px 28px;
+  padding: 16px 20px;
   background: var(--card-bg);
   border: 1px solid var(--border);
-  border-radius: 18px;
+  border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 12px;
 }
 
-/* Prompt Card — High Hierarchy */
-.sentence-prompt {
-  padding: 16px 20px;
-  border-radius: 14px;
-  background: var(--bg);
-  border: 1px solid var(--border);
+/* Board Header Meta */
+.sentence-board-meta {
   display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.sentence-prompt-header {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 8px;
+  flex-wrap: wrap;
+  padding-bottom: 2px;
 }
 
-.sentence-prompt-title {
+.sentence-board-tag {
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--text-tertiary);
-}
-
-.sentence-card-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  align-items: center;
-}
-
-.sentence-level-tag {
-  font-size: 11px;
-  font-weight: 700;
+  background: var(--bg);
+  border: 1px solid var(--border);
   padding: 2px 8px;
   border-radius: 6px;
-  background: var(--card-bg);
-  border: 1px solid var(--border);
+}
+
+.sentence-board-instruction {
+  font-size: 13px;
+  font-weight: 500;
   color: var(--text-secondary);
 }
 
@@ -278,70 +277,37 @@
 .sentence-slots-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-}
-
-.sentence-slots-label {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.sentence-sub-title {
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--text-secondary);
-}
-
-.sentence-reset-slots-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  background: transparent;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 3px 9px;
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--text-tertiary);
-  cursor: pointer;
-  transition: all 0.15s ease;
-}
-
-.sentence-reset-slots-btn:not(:disabled):hover {
-  color: var(--danger-text);
-  border-color: var(--danger-text);
-  background: var(--danger-bg);
-}
-
-.sentence-reset-slots-btn:disabled {
-  opacity: 0.35;
-  cursor: not-allowed;
-}
-
-.sentence-reset-slots-btn .reset-icon {
-  font-size: 12px;
-  line-height: 1;
+  gap: 6px;
 }
 
 /* State-Aware Answer Area */
 .sentence-game-slots {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  padding: 18px 20px;
-  min-height: 88px;
-  border-radius: 16px;
+  gap: 8px;
+  padding: 10px 14px;
+  min-height: 58px;
+  border-radius: 14px;
   justify-content: center;
   align-items: center;
   transition: border-color 0.18s ease, background-color 0.18s ease;
   box-sizing: border-box;
+  position: relative;
 }
 
 /* Empty State: subtle dashed drop target */
 .sentence-game-slots.is-empty {
   background: var(--bg);
   border: 1.5px dashed var(--border);
+}
+
+.sentence-slots-guide {
+  font-size: 13px;
+  color: var(--text-muted, var(--text-tertiary));
+  font-weight: 500;
+  user-select: none;
+  pointer-events: none;
+  padding: 4px 8px;
 }
 
 /* Dragging Over: subtle orange glow */
@@ -360,23 +326,17 @@
 .sentence-bank-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-}
-
-.sentence-bank-label {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  gap: 6px;
 }
 
 .sentence-game-bank {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
   justify-content: center;
   align-items: center;
-  min-height: 64px;
-  padding: 8px 4px;
+  min-height: 52px;
+  padding: 4px 0;
   box-sizing: border-box;
 }
 
@@ -387,9 +347,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 52px;
-  padding: 8px 16px;
-  border-radius: 12px;
+  min-height: 48px;
+  padding: 6px 14px;
+  border-radius: 11px;
   font-family: var(--font-cjk-clean);
   cursor: pointer;
   user-select: none;
@@ -438,37 +398,49 @@
   background: var(--danger-bg, #fef2f2);
 }
 
+.token-zh {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
 .token-py {
+  font-size: 11.5px;
   margin-top: 2px;
+  color: var(--text-secondary);
 }
 
 .token-shortcut {
   position: absolute;
   top: 2px;
-  left: 5px;
-  font-size: 10px;
+  left: 4px;
+  font-size: 9.5px;
   font-weight: 700;
   color: var(--text-tertiary);
-  line-height: 1;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0 3px;
+  line-height: 1.2;
 }
 
 /* End punctuation mark (fixed at the end of sentence slots) */
 .sentence-end-punct {
-  font-size: 28px;
+  font-size: 24px;
   font-family: var(--font-cjk-clean);
   font-weight: 700;
   color: var(--text-primary);
   align-self: center;
   user-select: none;
-  padding: 0 4px;
+  padding: 0 3px;
 }
 
 /* Dropzone Placeholder */
 .sentence-slot-placeholder {
-  min-width: 58px;
-  min-height: 52px;
+  min-width: 52px;
+  min-height: 48px;
   border: 2px dashed var(--border);
-  border-radius: 12px;
+  border-radius: 11px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -493,12 +465,12 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 12px 20px;
+  padding: 10px 18px;
   color: #059669;
   background: rgba(16, 185, 129, 0.08);
   border: 1px dashed rgba(16, 185, 129, 0.4);
   border-radius: 12px;
-  font-size: 13.5px;
+  font-size: 13px;
   font-weight: 600;
 }
 
@@ -744,6 +716,30 @@
 .sentence-action-btn--primary:active {
   transform: translateY(2px);
   border-bottom-width: 1.5px;
+}
+
+.sentence-action-btn--ghost {
+  background: var(--bg);
+  border-color: var(--border);
+  border-bottom: 3px solid var(--tile-shadow-border);
+  color: var(--text-secondary);
+}
+
+.sentence-action-btn--ghost:hover:not(:disabled) {
+  border-color: var(--danger-text, #ef4444);
+  color: var(--danger-text, #ef4444);
+  background: var(--danger-bg, #fef2f2);
+  transform: translateY(-2px);
+}
+
+.sentence-action-btn--ghost:active:not(:disabled) {
+  transform: translateY(2px);
+  border-bottom-width: 1.5px;
+}
+
+.sentence-action-btn--ghost:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
 }
 
 .sentence-action-btn--secondary {

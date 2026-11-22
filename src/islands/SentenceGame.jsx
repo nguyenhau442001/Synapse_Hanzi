@@ -299,24 +299,40 @@ export function speakCurrentSentence() {
 
 function QuestionNav() {
   const done = solvedSet.value;
+  const list = questions.value;
+  const curr = qIdx.value;
+  const total = list.length;
+  const canPrev = curr > 0;
+  const canNext = curr < total - 1;
+
   return (
     <div class="sentence-question-nav" id="sentenceQuestionNav" role="tablist" aria-label="Danh sách câu hỏi đề thi">
-      {questions.value.map((q, idx) => {
-        const isActive = idx === qIdx.value;
-        const isSolved = done.has(q.id);
-        const qNum = q.question_number || (86 + idx);
-        let cls = 'sentence-q-btn';
-        if (isActive) cls += ' active';
-        if (isSolved) cls += ' is-solved';
-        return (
-          <button key={q.id} type="button" class={cls} onClick={() => goToSentenceGameQuestion(idx)}
-            title={`Câu ${qNum} ${isSolved ? '(Đã hoàn thành)' : ''}`} aria-label={`Câu ${qNum}`}
-            aria-current={isActive ? 'true' : 'false'}>
-            <span>{qNum}</span>
-            {isSolved && <>{' '}<span class="solved-dot" aria-hidden="true">✓</span></>}
-          </button>
-        );
-      })}
+      <button type="button" class="sentence-q-nav-arrow" onClick={() => goToSentenceGameQuestion(curr - 1)}
+        disabled={!canPrev} title="Câu trước (←)" aria-label="Câu trước">
+        ‹
+      </button>
+      <div class="sentence-q-list">
+        {list.map((q, idx) => {
+          const isActive = idx === curr;
+          const isSolved = done.has(q.id);
+          const qNum = q.question_number || (86 + idx);
+          let cls = 'sentence-q-btn';
+          if (isActive) cls += ' active';
+          if (isSolved) cls += ' is-solved';
+          return (
+            <button key={q.id} type="button" class={cls} onClick={() => goToSentenceGameQuestion(idx)}
+              title={`Câu ${qNum} ${isSolved ? '(Đã hoàn thành)' : ''}`} aria-label={`Câu ${qNum}`}
+              aria-current={isActive ? 'true' : 'false'}>
+              <span>{qNum}</span>
+              {isSolved && <span class="solved-dot" aria-hidden="true">✓</span>}
+            </button>
+          );
+        })}
+      </div>
+      <button type="button" class="sentence-q-nav-arrow" onClick={() => goToSentenceGameQuestion(curr + 1)}
+        disabled={!canNext} title="Câu tiếp theo (→)" aria-label="Câu tiếp theo">
+        ›
+      </button>
     </div>
   );
 }
@@ -325,9 +341,16 @@ function Slots() {
   const e = entry.value;
   const placed = slots.value;
   const isSolved = solved.value;
+  const isEmpty = placed.length === 0;
+
   return (
-    <div ref={(el) => { slotsEl = el; }} class={placed.length === 0 ? 'sentence-game-slots is-empty' : 'sentence-game-slots'}
+    <div ref={(el) => { slotsEl = el; }} class={`sentence-game-slots${isEmpty ? ' is-empty' : ''}${isSolved ? ' is-correct' : ''}`}
       id="sentenceGameSlots" role="region" aria-label="Khu vực xếp từ">
+      {isEmpty && (
+        <span class="sentence-slots-guide" aria-hidden="true">
+          Bấm hoặc kéo các cụm từ bên dưới lên đây
+        </span>
+      )}
       {e && placed.map((item, idx) => (
         <button key={item.id} type="button" class="sentence-token sentence-slot-token"
           onClick={() => removeSentenceGameSlot(idx)}
@@ -435,65 +458,46 @@ export function SentenceGame() {
   const fb = feedback.value;
   const pinyinOn = showPinyin.value;
   const focusOn = focusMode.value;
-  const examLabel = e ? e.exam_name || `Đề ${examId.value}` : null;
 
   return (
     <div class="sentence-game">
       <header class="sentence-game-header">
         <div class="sentence-game-top-bar">
           <div class="sentence-game-title-group">
-            <h2 class="sentence-game-title">🧩 Xếp câu HSK4</h2>{' '}
-            <span class="sentence-game-counter" id="sentenceGameCounter">{e ? `${examLabel} · Câu ${e.question_number}` : 'Đề 1 (H41001) · Câu 86'}</span>
-          </div>{' '}
+            <h2 class="sentence-game-title">🧩 Xếp câu HSK4</h2>
+          </div>
           <div class="sentence-game-tools">
             <div class="sentence-exam-selector-group">
-              <label for="sentenceGameExamSelect" class="sentence-exam-label">Đề thi:</label>{' '}
               <select id="sentenceGameExamSelect" class="sentence-exam-select" value={loaded.value ? examId.value : undefined}
                 onChange={(ev) => setSentenceGameExam(ev.currentTarget.value)} aria-label="Chọn đề thi HSK 4">
                 {loaded.value && EXAMS.map((ex) => <option key={ex.id} value={ex.id}>{ex.name}</option>)}
               </select>
-            </div>{' '}
+            </div>
             <button type="button" class={pinyinOn ? 'sentence-tool-btn active' : 'sentence-tool-btn'} id="sentenceGamePinyinBtn" onClick={toggleSentenceGamePinyin} title="Bật hoặc tắt Pinyin" aria-label="Bật hoặc tắt Pinyin">
-              <span id="sentenceGamePinyinIcon">{pinyinOn ? '👁' : '🙈'}</span> <span id="sentenceGamePinyinLabel">{pinyinOn ? 'Pinyin: Bật' : 'Pinyin: Tắt'}</span>
-            </button>{' '}
+              <span id="sentenceGamePinyinIcon">{pinyinOn ? '👁' : '🙈'}</span> <span id="sentenceGamePinyinLabel">Pinyin</span>
+            </button>
             <button type="button" class={focusOn ? 'sentence-tool-btn active' : 'sentence-tool-btn'} id="sentenceGameFocusBtn" onClick={() => toggleSentenceGameFocus()} title="Bật hoặc tắt chế độ tập trung" aria-label="Bật hoặc tắt chế độ tập trung">
-              <span id="sentenceGameFocusIcon">{focusOn ? '⛶' : '🎯'}</span> <span id="sentenceGameFocusLabel">{focusOn ? 'Thoát tập trung' : 'Tập trung'}</span>
+              <span id="sentenceGameFocusIcon">{focusOn ? '⛶' : '🎯'}</span> <span id="sentenceGameFocusLabel">{focusOn ? 'Thoát' : 'Tập trung'}</span>
             </button>
           </div>
         </div>
 
         <nav class="sentence-question-nav-container" aria-label="Điều hướng câu hỏi">
-          <span class="sentence-question-nav-label">Câu hỏi:</span>{' '}
           <QuestionNav />
         </nav>
       </header>
 
       <section class="sentence-card-board" aria-label="Bàn sắp xếp câu">
-        <div class="sentence-prompt">
-          <div class="sentence-prompt-header">
-            <span class="sentence-prompt-title">HSK 4 · 书写 第一部分: 完成句子</span>{' '}
-            <div class="sentence-card-meta">
-              <span class="sentence-level-tag" id="sentenceLevelTag">{`HSK 4 · Câu ${e ? e.question_number : 86}`}</span>
-            </div>
-          </div>
-          <div class="sentence-game-instruction">Sắp xếp các cụm từ bên dưới thành câu hoàn chỉnh theo ngữ pháp tiếng Trung:</div>
+        <div class="sentence-board-meta">
+          <span class="sentence-board-tag">HSK 4 · 书写第一部分</span>
+          <span class="sentence-board-instruction">Sắp xếp các cụm từ để tạo câu hoàn chỉnh:</span>
         </div>
 
         <div class="sentence-slots-wrapper">
-          <div class="sentence-slots-label">
-            <span class="sentence-sub-title">Ghép các thẻ từ thành câu hoàn chỉnh:</span>{' '}
-            <button type="button" class="sentence-reset-slots-btn" id="sentenceGameResetBtn" onClick={resetSentenceGameSlots} title="Đặt lại câu để ghép lại từ đầu"
-              disabled={!e || solved.value || slots.value.length === 0}>
-              <span class="reset-icon">↺</span> <span>Làm lại</span>
-            </button>
-          </div>
           <Slots />
         </div>
 
         <div class="sentence-bank-wrapper" id="sentenceBankWrapper">
-          <div class="sentence-bank-label">
-            <span class="sentence-sub-title" id="sentenceBankTitle">Kho cụm từ (Bấm hoặc dùng phím số 1-9):</span>
-          </div>
           <Bank />
         </div>
 
@@ -502,8 +506,16 @@ export function SentenceGame() {
         <ResultCard />
 
         <div class="sentence-game-actions" id="sentenceGameActions" hidden={Boolean(e && solved.value)}>
-          <button type="button" class="sentence-action-btn sentence-action-btn--secondary" id="sentenceGameHintBtn" onClick={revealSentenceHint} title="Xem gợi ý câu">💡 Gợi ý</button>{' '}
-          <button type="button" class="sentence-action-btn sentence-action-btn--primary" id="sentenceGameCheckBtn" onClick={checkSentenceGameAnswer}>Kiểm tra đáp án</button>
+          <button type="button" class="sentence-action-btn sentence-action-btn--ghost" id="sentenceGameResetBtn" onClick={resetSentenceGameSlots}
+            title="Đặt lại câu để ghép lại từ đầu" disabled={!e || solved.value || slots.value.length === 0}>
+            <span class="reset-icon">↺</span> Làm lại
+          </button>
+          <button type="button" class="sentence-action-btn sentence-action-btn--secondary" id="sentenceGameHintBtn" onClick={revealSentenceHint} title="Xem gợi ý ngữ pháp">
+            💡 Gợi ý
+          </button>
+          <button type="button" class="sentence-action-btn sentence-action-btn--primary" id="sentenceGameCheckBtn" onClick={checkSentenceGameAnswer}>
+            Kiểm tra đáp án
+          </button>
         </div>
       </section>
     </div>
@@ -528,6 +540,16 @@ export function mountSentenceGame() {
     if (e.key === 'Backspace' && !solved.value && slots.value.length > 0) {
       e.preventDefault();
       removeSentenceGameSlot(slots.value.length - 1);
+      return;
+    }
+    if (e.key === 'ArrowLeft' && !e.altKey && !e.ctrlKey && !e.metaKey && qIdx.value > 0) {
+      e.preventDefault();
+      goToSentenceGameQuestion(qIdx.value - 1);
+      return;
+    }
+    if (e.key === 'ArrowRight' && !e.altKey && !e.ctrlKey && !e.metaKey && qIdx.value < questions.value.length - 1) {
+      e.preventDefault();
+      goToSentenceGameQuestion(qIdx.value + 1);
       return;
     }
     // Number keys 1-9 pick bank tokens

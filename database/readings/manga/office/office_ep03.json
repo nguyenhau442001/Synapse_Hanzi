@@ -1,0 +1,2373 @@
+{
+  "id": "office_ep03",
+  "series": "office",
+  "series_title": "打工人日记",
+  "series_title_vi": "Nhật Ký Dân Công Sở",
+  "collection": "office",
+  "volume": 1,
+  "chapter_in_volume": null,
+  "chapter_no": 3,
+  "title": {
+    "zh": "第三集：开个短会",
+    "zh_trad": "第三集：開個短會",
+    "vi": "Tập 3: Họp Nhanh 5 Phút",
+    "pinyin": "dì sān jí ： kāi gè duǎn huì"
+  },
+  "description_vi": "11 giờ 55 phút trưa, đồ ăn vừa bấm đặt trên app thì Sếp Vương bất ngờ vỗ tay hào hứng: 'Mọi người dừng tay chút, mình họp nhanh năm phút thôi nhé!' Và thế là một cuộc họp 'năm phút' kéo dài xuyên trưa bắt đầu...",
+  "cover_image": "assets/images/readings/manga/office/office_ep03/cover.webp",
+  "source": "《打工人日记》原创职场情景喜剧 · Synapse Hanzi Studio",
+  "source_url": "https://github.com/Synapse-Hanzi",
+  "source_credits": "Kịch bản và tạo hình nhân vật độc quyền: Synapse Hanzi Studio. Tranh minh họa kết hợp hệ thống tra từ tương tác, pinyin, Hán-Việt và âm thanh đa giác quan.",
+  "license": "Original / Educational",
+  "page_count": 5,
+  "difficulty": "HSK 1 - 4",
+  "estimatedMinutes": 3,
+  "file": "database/readings/manga/office/office_ep03.json",
+  "proper_names": [
+    "小阳",
+    "小铃",
+    "王经理",
+    "王总",
+    "老周"
+  ],
+  "pages": [
+    {
+      "page_num": 1,
+      "image": "assets/images/readings/manga/office/office_ep03/page_01.webp",
+      "dialogues": [
+        {
+          "id": "p1_d1",
+          "character": "小阳 (Tiểu Dương)",
+          "bbox": {
+            "x": 7.27,
+            "y": 6.51,
+            "width": 34.88,
+            "height": 12.37
+          },
+          "zh": "小铃，今天中午吃什么？",
+          "zh_trad": "小鈴，今天中午喫什麼？",
+          "pinyin": "xiǎo líng ， jīn tiān zhōng wǔ chī shén me ？",
+          "vi": "Tiểu Linh, trưa nay ăn gì?",
+          "tokens": [
+            {
+              "text": "小铃",
+              "text_trad": "小鈴",
+              "pinyin": "Xiǎolíng",
+              "hanviet": "Tiểu Linh",
+              "meaning_vi": "Tiểu Linh (nữ đồng nghiệp)",
+              "hsk": null
+            },
+            {
+              "text": "今天",
+              "text_trad": "今天",
+              "pinyin": "jīntiān",
+              "hanviet": "Kim Thiên",
+              "meaning_vi": "hôm nay",
+              "hsk": 1
+            },
+            {
+              "text": "中午",
+              "text_trad": "中午",
+              "pinyin": "zhōngwǔ",
+              "hanviet": "Trung Ngọ",
+              "meaning_vi": "buổi trưa",
+              "hsk": 1
+            },
+            {
+              "text": "吃",
+              "text_trad": "喫",
+              "pinyin": "chī",
+              "hanviet": "Cật",
+              "meaning_vi": "ăn",
+              "hsk": 1
+            },
+            {
+              "text": "什么",
+              "text_trad": "什麼",
+              "pinyin": "shénme",
+              "hanviet": "Thập Ma",
+              "meaning_vi": "cái gì",
+              "hsk": 1
+            }
+          ]
+        },
+        {
+          "id": "p1_d2",
+          "character": "小铃 (Tiểu Linh)",
+          "bbox": {
+            "x": 56.69,
+            "y": 6.51,
+            "width": 37.79,
+            "height": 12.37
+          },
+          "zh": "点麻辣烫吧，我已经饿了。",
+          "zh_trad": "點麻辣燙吧，我已經餓了。",
+          "pinyin": "diǎn má là tàng ba ， wǒ yǐ jīng è le 。",
+          "vi": "Gọi Ma La Tang đi, tôi đói lắm rồi.",
+          "tokens": [
+            {
+              "text": "点",
+              "text_trad": "點",
+              "pinyin": "diǎn",
+              "hanviet": "Điểm ¹",
+              "meaning_vi": "giờ, điểm",
+              "hsk": 1
+            },
+            {
+              "text": "麻辣烫",
+              "text_trad": "麻辣燙",
+              "pinyin": "má là tàng",
+              "hanviet": "Ma Lạt Năng",
+              "meaning_vi": "món canh cay Tứ Xuyên (Mala Tang)",
+              "hsk": 3
+            },
+            {
+              "text": "吧",
+              "text_trad": "吧",
+              "pinyin": "ba",
+              "hanviet": "Ba",
+              "meaning_vi": "nhé (trợ từ)",
+              "hsk": 1
+            },
+            {
+              "text": "我",
+              "text_trad": "我",
+              "pinyin": "wǒ",
+              "hanviet": "Ngã",
+              "meaning_vi": "tôi",
+              "hsk": 1
+            },
+            {
+              "text": "已经",
+              "text_trad": "已經",
+              "pinyin": "yǐjīng",
+              "hanviet": "Dĩ Kinh",
+              "meaning_vi": "đã",
+              "hsk": 2
+            },
+            {
+              "text": "饿",
+              "text_trad": "餓",
+              "pinyin": "è",
+              "hanviet": "Ngạ",
+              "meaning_vi": "đói",
+              "hsk": 3
+            },
+            {
+              "text": "了",
+              "text_trad": "了",
+              "pinyin": "le",
+              "hanviet": "Liễu",
+              "meaning_vi": "rồi (trợ từ)",
+              "hsk": 1
+            }
+          ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "p1_d1_w1",
+          "text": "小铃",
+          "text_trad": "小鈴",
+          "pinyin": "Xiǎolíng",
+          "hanviet": "Tiểu Linh",
+          "meaning_vi": "Tiểu Linh (nữ đồng nghiệp)",
+          "hsk": null,
+          "bbox": {
+            "x": 8.576,
+            "y": 10.938,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 8.576,
+              "y": 10.938,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "小鈴，今天中午喫什麼？",
+          "sentence_zh_simplified": "小铃，今天中午吃什么？",
+          "sentence_vi": "Tiểu Linh, trưa nay ăn gì?",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d1_w2",
+          "text": "今天",
+          "text_trad": "今天",
+          "pinyin": "jīntiān",
+          "hanviet": "Kim Thiên",
+          "meaning_vi": "hôm nay",
+          "hsk": 1,
+          "bbox": {
+            "x": 12.355,
+            "y": 10.938,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 12.355,
+              "y": 10.938,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "小鈴，今天中午喫什麼？",
+          "sentence_zh_simplified": "小铃，今天中午吃什么？",
+          "sentence_vi": "Tiểu Linh, trưa nay ăn gì?",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d1_w3",
+          "text": "中午",
+          "text_trad": "中午",
+          "pinyin": "zhōngwǔ",
+          "hanviet": "Trung Ngọ",
+          "meaning_vi": "buổi trưa",
+          "hsk": 1,
+          "bbox": {
+            "x": 16.134,
+            "y": 10.938,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 16.134,
+              "y": 10.938,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "小鈴，今天中午喫什麼？",
+          "sentence_zh_simplified": "小铃，今天中午吃什么？",
+          "sentence_vi": "Tiểu Linh, trưa nay ăn gì?",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d1_w4",
+          "text": "吃",
+          "text_trad": "喫",
+          "pinyin": "chī",
+          "hanviet": "Cật",
+          "meaning_vi": "ăn",
+          "hsk": 1,
+          "bbox": {
+            "x": 19.913,
+            "y": 10.938,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 19.913,
+              "y": 10.938,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "小鈴，今天中午喫什麼？",
+          "sentence_zh_simplified": "小铃，今天中午吃什么？",
+          "sentence_vi": "Tiểu Linh, trưa nay ăn gì?",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d1_w5",
+          "text": "什么",
+          "text_trad": "什麼",
+          "pinyin": "shénme",
+          "hanviet": "Thập Ma",
+          "meaning_vi": "cái gì",
+          "hsk": 1,
+          "bbox": {
+            "x": 21.802,
+            "y": 10.938,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 21.802,
+              "y": 10.938,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "小鈴，今天中午喫什麼？",
+          "sentence_zh_simplified": "小铃，今天中午吃什么？",
+          "sentence_vi": "Tiểu Linh, trưa nay ăn gì?",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d2_w1",
+          "text": "点",
+          "text_trad": "點",
+          "pinyin": "diǎn",
+          "hanviet": "Điểm ¹",
+          "meaning_vi": "giờ, điểm",
+          "hsk": 1,
+          "bbox": {
+            "x": 57.994,
+            "y": 10.938,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 57.994,
+              "y": 10.938,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "點麻辣燙吧，我已經餓了。",
+          "sentence_zh_simplified": "点麻辣烫吧，我已经饿了。",
+          "sentence_vi": "Gọi Ma La Tang đi, tôi đói lắm rồi.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p1_d2"
+        },
+        {
+          "id": "p1_d2_w2",
+          "text": "麻辣烫",
+          "text_trad": "麻辣燙",
+          "pinyin": "má là tàng",
+          "hanviet": "Ma Lạt Năng",
+          "meaning_vi": "món canh cay Tứ Xuyên (Mala Tang)",
+          "hsk": 3,
+          "bbox": {
+            "x": 59.884,
+            "y": 10.938,
+            "width": 5.669,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 59.884,
+              "y": 10.938,
+              "width": 5.669,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "點麻辣燙吧，我已經餓了。",
+          "sentence_zh_simplified": "点麻辣烫吧，我已经饿了。",
+          "sentence_vi": "Gọi Ma La Tang đi, tôi đói lắm rồi.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p1_d2"
+        },
+        {
+          "id": "p1_d2_w3",
+          "text": "吧",
+          "text_trad": "吧",
+          "pinyin": "ba",
+          "hanviet": "Ba",
+          "meaning_vi": "nhé (trợ từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 65.552,
+            "y": 10.938,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 65.552,
+              "y": 10.938,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "點麻辣燙吧，我已經餓了。",
+          "sentence_zh_simplified": "点麻辣烫吧，我已经饿了。",
+          "sentence_vi": "Gọi Ma La Tang đi, tôi đói lắm rồi.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p1_d2"
+        },
+        {
+          "id": "p1_d2_w4",
+          "text": "我",
+          "text_trad": "我",
+          "pinyin": "wǒ",
+          "hanviet": "Ngã",
+          "meaning_vi": "tôi",
+          "hsk": 1,
+          "bbox": {
+            "x": 67.442,
+            "y": 10.938,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 67.442,
+              "y": 10.938,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "點麻辣燙吧，我已經餓了。",
+          "sentence_zh_simplified": "点麻辣烫吧，我已经饿了。",
+          "sentence_vi": "Gọi Ma La Tang đi, tôi đói lắm rồi.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p1_d2"
+        },
+        {
+          "id": "p1_d2_w5",
+          "text": "已经",
+          "text_trad": "已經",
+          "pinyin": "yǐjīng",
+          "hanviet": "Dĩ Kinh",
+          "meaning_vi": "đã",
+          "hsk": 2,
+          "bbox": {
+            "x": 69.331,
+            "y": 10.938,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 69.331,
+              "y": 10.938,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "點麻辣燙吧，我已經餓了。",
+          "sentence_zh_simplified": "点麻辣烫吧，我已经饿了。",
+          "sentence_vi": "Gọi Ma La Tang đi, tôi đói lắm rồi.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p1_d2"
+        },
+        {
+          "id": "p1_d2_w6",
+          "text": "饿",
+          "text_trad": "餓",
+          "pinyin": "è",
+          "hanviet": "Ngạ",
+          "meaning_vi": "đói",
+          "hsk": 3,
+          "bbox": {
+            "x": 73.11,
+            "y": 10.938,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 73.11,
+              "y": 10.938,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "點麻辣燙吧，我已經餓了。",
+          "sentence_zh_simplified": "点麻辣烫吧，我已经饿了。",
+          "sentence_vi": "Gọi Ma La Tang đi, tôi đói lắm rồi.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p1_d2"
+        },
+        {
+          "id": "p1_d2_w7",
+          "text": "了",
+          "text_trad": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "meaning_vi": "rồi (trợ từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 75.0,
+            "y": 10.938,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 75.0,
+              "y": 10.938,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "點麻辣燙吧，我已經餓了。",
+          "sentence_zh_simplified": "点麻辣烫吧，我已经饿了。",
+          "sentence_vi": "Gọi Ma La Tang đi, tôi đói lắm rồi.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p1_d2"
+        }
+      ],
+      "ocr": {
+        "image_px": [
+          1376,
+          768
+        ]
+      }
+    },
+    {
+      "page_num": 2,
+      "image": "assets/images/readings/manga/office/office_ep03/page_02.webp",
+      "dialogues": [
+        {
+          "id": "p2_d1",
+          "character": "王经理 (Sếp Vương)",
+          "bbox": {
+            "x": 4.36,
+            "y": 5.86,
+            "width": 52.33,
+            "height": 12.37
+          },
+          "zh": "大家手头停一下，开个短会，就五分钟！",
+          "zh_trad": "大家手頭停一下，開個短會，就五分鐘！",
+          "pinyin": "dà jiā shǒu tóu tíng yī xià ， kāi gè duǎn huì ， jiù wǔ fēn zhōng ！",
+          "vi": "Mọi người dừng tay chút, họp nhanh một tí, đúng năm phút thôi!",
+          "tokens": [
+            {
+              "text": "大家",
+              "text_trad": "大家",
+              "pinyin": "dàjiā",
+              "hanviet": "Đại Gia",
+              "meaning_vi": "mọi người",
+              "hsk": 1
+            },
+            {
+              "text": "手头",
+              "text_trad": "手頭",
+              "pinyin": "shǒutóu",
+              "hanviet": "Thủ Đầu",
+              "meaning_vi": "trong tay; công việc hiện tại đang làm",
+              "hsk": 3
+            },
+            {
+              "text": "停",
+              "text_trad": "停",
+              "pinyin": "tíng",
+              "hanviet": "Đình",
+              "meaning_vi": "ngừng, dừng",
+              "hsk": 4
+            },
+            {
+              "text": "一下",
+              "text_trad": "一下",
+              "pinyin": "yíxià",
+              "hanviet": "Nhất Hạ",
+              "meaning_vi": "một chút, một lát, thử xem",
+              "hsk": 1
+            },
+            {
+              "text": "开",
+              "text_trad": "開",
+              "pinyin": "kāi",
+              "hanviet": "Khai",
+              "meaning_vi": "mở, lái (xe)",
+              "hsk": 1
+            },
+            {
+              "text": "个",
+              "text_trad": "個",
+              "pinyin": "gè",
+              "hanviet": "Cá",
+              "meaning_vi": "cái (lượng từ)",
+              "hsk": 1
+            },
+            {
+              "text": "短会",
+              "text_trad": "短會",
+              "pinyin": "duǎnhuì",
+              "hanviet": "Đoản Hội",
+              "meaning_vi": "cuộc họp ngắn",
+              "hsk": 2
+            },
+            {
+              "text": "就",
+              "text_trad": "就",
+              "pinyin": "jiù",
+              "hanviet": "Tựu",
+              "meaning_vi": "là, ngay (trợ từ nhấn mạnh)",
+              "hsk": 2
+            },
+            {
+              "text": "五分钟",
+              "text_trad": "五分鐘",
+              "pinyin": "wǔ fēnzhōng",
+              "hanviet": "Ngũ Phân Chung",
+              "meaning_vi": "năm phút",
+              "hsk": 1
+            }
+          ]
+        },
+        {
+          "id": "p2_d2",
+          "character": "小阳 (Tiểu Dương)",
+          "bbox": {
+            "x": 24.71,
+            "y": 72.92,
+            "width": 24.71,
+            "height": 12.37
+          },
+          "zh": "五……五分钟？！",
+          "zh_trad": "五……五分鐘？！",
+          "pinyin": "wǔ …… wǔ fēn zhōng ？！",
+          "vi": "Năm... năm phút á?!",
+          "tokens": [
+            {
+              "text": "五",
+              "text_trad": "五",
+              "pinyin": "wǔ",
+              "hanviet": "Ngũ",
+              "meaning_vi": "năm",
+              "hsk": 1
+            },
+            {
+              "text": "五分钟",
+              "text_trad": "五分鐘",
+              "pinyin": "wǔ fēnzhōng",
+              "hanviet": "Ngũ Phân Chung",
+              "meaning_vi": "năm phút",
+              "hsk": 1
+            }
+          ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "p2_d1_w1",
+          "text": "大家",
+          "text_trad": "大家",
+          "pinyin": "dàjiā",
+          "hanviet": "Đại Gia",
+          "meaning_vi": "mọi người",
+          "hsk": 1,
+          "bbox": {
+            "x": 5.669,
+            "y": 10.286,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 5.669,
+              "y": 10.286,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "大家手頭停一下，開個短會，就五分鐘！",
+          "sentence_zh_simplified": "大家手头停一下，开个短会，就五分钟！",
+          "sentence_vi": "Mọi người dừng tay chút, họp nhanh một tí, đúng năm phút thôi!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w2",
+          "text": "手头",
+          "text_trad": "手頭",
+          "pinyin": "shǒutóu",
+          "hanviet": "Thủ Đầu",
+          "meaning_vi": "trong tay; công việc hiện tại đang làm",
+          "hsk": 3,
+          "bbox": {
+            "x": 9.448,
+            "y": 10.286,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 9.448,
+              "y": 10.286,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "大家手頭停一下，開個短會，就五分鐘！",
+          "sentence_zh_simplified": "大家手头停一下，开个短会，就五分钟！",
+          "sentence_vi": "Mọi người dừng tay chút, họp nhanh một tí, đúng năm phút thôi!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w3",
+          "text": "停",
+          "text_trad": "停",
+          "pinyin": "tíng",
+          "hanviet": "Đình",
+          "meaning_vi": "ngừng, dừng",
+          "hsk": 4,
+          "bbox": {
+            "x": 13.227,
+            "y": 10.286,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 13.227,
+              "y": 10.286,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "大家手頭停一下，開個短會，就五分鐘！",
+          "sentence_zh_simplified": "大家手头停一下，开个短会，就五分钟！",
+          "sentence_vi": "Mọi người dừng tay chút, họp nhanh một tí, đúng năm phút thôi!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w4",
+          "text": "一下",
+          "text_trad": "一下",
+          "pinyin": "yíxià",
+          "hanviet": "Nhất Hạ",
+          "meaning_vi": "một chút, một lát, thử xem",
+          "hsk": 1,
+          "bbox": {
+            "x": 15.116,
+            "y": 10.286,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 15.116,
+              "y": 10.286,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "大家手頭停一下，開個短會，就五分鐘！",
+          "sentence_zh_simplified": "大家手头停一下，开个短会，就五分钟！",
+          "sentence_vi": "Mọi người dừng tay chút, họp nhanh một tí, đúng năm phút thôi!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w5",
+          "text": "开",
+          "text_trad": "開",
+          "pinyin": "kāi",
+          "hanviet": "Khai",
+          "meaning_vi": "mở, lái (xe)",
+          "hsk": 1,
+          "bbox": {
+            "x": 18.895,
+            "y": 10.286,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 18.895,
+              "y": 10.286,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "大家手頭停一下，開個短會，就五分鐘！",
+          "sentence_zh_simplified": "大家手头停一下，开个短会，就五分钟！",
+          "sentence_vi": "Mọi người dừng tay chút, họp nhanh một tí, đúng năm phút thôi!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w6",
+          "text": "个",
+          "text_trad": "個",
+          "pinyin": "gè",
+          "hanviet": "Cá",
+          "meaning_vi": "cái (lượng từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 20.785,
+            "y": 10.286,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 20.785,
+              "y": 10.286,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "大家手頭停一下，開個短會，就五分鐘！",
+          "sentence_zh_simplified": "大家手头停一下，开个短会，就五分钟！",
+          "sentence_vi": "Mọi người dừng tay chút, họp nhanh một tí, đúng năm phút thôi!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w7",
+          "text": "短会",
+          "text_trad": "短會",
+          "pinyin": "duǎnhuì",
+          "hanviet": "Đoản Hội",
+          "meaning_vi": "cuộc họp ngắn",
+          "hsk": 2,
+          "bbox": {
+            "x": 22.674,
+            "y": 10.286,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 22.674,
+              "y": 10.286,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "大家手頭停一下，開個短會，就五分鐘！",
+          "sentence_zh_simplified": "大家手头停一下，开个短会，就五分钟！",
+          "sentence_vi": "Mọi người dừng tay chút, họp nhanh một tí, đúng năm phút thôi!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w8",
+          "text": "就",
+          "text_trad": "就",
+          "pinyin": "jiù",
+          "hanviet": "Tựu",
+          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)",
+          "hsk": 2,
+          "bbox": {
+            "x": 26.453,
+            "y": 10.286,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 26.453,
+              "y": 10.286,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "大家手頭停一下，開個短會，就五分鐘！",
+          "sentence_zh_simplified": "大家手头停一下，开个短会，就五分钟！",
+          "sentence_vi": "Mọi người dừng tay chút, họp nhanh một tí, đúng năm phút thôi!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w9",
+          "text": "五分钟",
+          "text_trad": "五分鐘",
+          "pinyin": "wǔ fēnzhōng",
+          "hanviet": "Ngũ Phân Chung",
+          "meaning_vi": "năm phút",
+          "hsk": 1,
+          "bbox": {
+            "x": 28.343,
+            "y": 10.286,
+            "width": 5.669,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 28.343,
+              "y": 10.286,
+              "width": 5.669,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "大家手頭停一下，開個短會，就五分鐘！",
+          "sentence_zh_simplified": "大家手头停一下，开个短会，就五分钟！",
+          "sentence_vi": "Mọi người dừng tay chút, họp nhanh một tí, đúng năm phút thôi!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d2_w1",
+          "text": "五",
+          "text_trad": "五",
+          "pinyin": "wǔ",
+          "hanviet": "Ngũ",
+          "meaning_vi": "năm",
+          "hsk": 1,
+          "bbox": {
+            "x": 26.017,
+            "y": 77.344,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 26.017,
+              "y": 77.344,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "五……五分鐘？！",
+          "sentence_zh_simplified": "五……五分钟？！",
+          "sentence_vi": "Năm... năm phút á?!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p2_d2"
+        },
+        {
+          "id": "p2_d2_w2",
+          "text": "五分钟",
+          "text_trad": "五分鐘",
+          "pinyin": "wǔ fēnzhōng",
+          "hanviet": "Ngũ Phân Chung",
+          "meaning_vi": "năm phút",
+          "hsk": 1,
+          "bbox": {
+            "x": 27.907,
+            "y": 77.344,
+            "width": 5.669,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 27.907,
+              "y": 77.344,
+              "width": 5.669,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "五……五分鐘？！",
+          "sentence_zh_simplified": "五……五分钟？！",
+          "sentence_vi": "Năm... năm phút á?!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p2_d2"
+        }
+      ],
+      "ocr": {
+        "image_px": [
+          1376,
+          768
+        ]
+      }
+    },
+    {
+      "page_num": 3,
+      "image": "assets/images/readings/manga/office/office_ep03/page_03.webp",
+      "dialogues": [
+        {
+          "id": "p3_d1",
+          "character": "王经理 (Sếp Vương)",
+          "bbox": {
+            "x": 20.35,
+            "y": 1.95,
+            "width": 58.14,
+            "height": 12.37
+          },
+          "zh": "我们要打通底层逻辑，形成业务闭环……",
+          "zh_trad": "我們要打通底層邏輯，形成業務閉環……",
+          "pinyin": "wǒ men yào dǎ tōng dǐ céng luó jí ， xíng chéng yè wù bì huán ……",
+          "vi": "Chúng ta phải đả thông logic tầng dưới, tạo thành vòng lặp nghiệp vụ khép kín...",
+          "tokens": [
+            {
+              "text": "我们",
+              "text_trad": "我們",
+              "pinyin": "wǒmen",
+              "hanviet": "Ngã Môn",
+              "meaning_vi": "chúng tôi, chúng ta",
+              "hsk": 1
+            },
+            {
+              "text": "要",
+              "text_trad": "要",
+              "pinyin": "yào",
+              "hanviet": "Yêu",
+              "meaning_vi": "muốn, cần",
+              "hsk": 1
+            },
+            {
+              "text": "打",
+              "text_trad": "打",
+              "pinyin": "dǎ",
+              "hanviet": "Đả ¹",
+              "meaning_vi": "đánh",
+              "hsk": 2
+            },
+            {
+              "text": "通",
+              "text_trad": "通",
+              "pinyin": "tōng",
+              "hanviet": "Thông",
+              "meaning_vi": "thông, thông suốt; (gọi điện) được",
+              "hsk": 4
+            },
+            {
+              "text": "底层",
+              "text_trad": "底層",
+              "pinyin": "dǐcéng",
+              "hanviet": "Để Tầng",
+              "meaning_vi": "tầng đáy, tầng trệt",
+              "hsk": "7-9"
+            },
+            {
+              "text": "逻辑",
+              "text_trad": "邏輯",
+              "pinyin": "luójí",
+              "hanviet": "La Tập",
+              "meaning_vi": "logic",
+              "hsk": 5
+            },
+            {
+              "text": "形成",
+              "text_trad": "形成",
+              "pinyin": "xíngchéng",
+              "hanviet": "Hình Thành",
+              "meaning_vi": "hình thành",
+              "hsk": 5
+            },
+            {
+              "text": "业务",
+              "text_trad": "業務",
+              "pinyin": "yèwù",
+              "hanviet": "Nghiệp Vụ",
+              "meaning_vi": "nghiệp vụ, công việc",
+              "hsk": 5
+            },
+            {
+              "text": "闭环",
+              "text_trad": "閉環",
+              "pinyin": "bìhuán",
+              "hanviet": "Bế Hoàn",
+              "meaning_vi": "vòng lặp khép kín (thuật ngữ công sở)",
+              "hsk": 4
+            }
+          ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "p3_d1_w1",
+          "text": "我们",
+          "text_trad": "我們",
+          "pinyin": "wǒmen",
+          "hanviet": "Ngã Môn",
+          "meaning_vi": "chúng tôi, chúng ta",
+          "hsk": 1,
+          "bbox": {
+            "x": 21.657,
+            "y": 6.38,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 21.657,
+              "y": 6.38,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "我們要打通底層邏輯，形成業務閉環……",
+          "sentence_zh_simplified": "我们要打通底层逻辑，形成业务闭环……",
+          "sentence_vi": "Chúng ta phải đả thông logic tầng dưới, tạo thành vòng lặp nghiệp vụ khép kín...",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w2",
+          "text": "要",
+          "text_trad": "要",
+          "pinyin": "yào",
+          "hanviet": "Yêu",
+          "meaning_vi": "muốn, cần",
+          "hsk": 1,
+          "bbox": {
+            "x": 25.436,
+            "y": 6.38,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 25.436,
+              "y": 6.38,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "我們要打通底層邏輯，形成業務閉環……",
+          "sentence_zh_simplified": "我们要打通底层逻辑，形成业务闭环……",
+          "sentence_vi": "Chúng ta phải đả thông logic tầng dưới, tạo thành vòng lặp nghiệp vụ khép kín...",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w3",
+          "text": "打",
+          "text_trad": "打",
+          "pinyin": "dǎ",
+          "hanviet": "Đả ¹",
+          "meaning_vi": "đánh",
+          "hsk": 2,
+          "bbox": {
+            "x": 27.326,
+            "y": 6.38,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 27.326,
+              "y": 6.38,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "我們要打通底層邏輯，形成業務閉環……",
+          "sentence_zh_simplified": "我们要打通底层逻辑，形成业务闭环……",
+          "sentence_vi": "Chúng ta phải đả thông logic tầng dưới, tạo thành vòng lặp nghiệp vụ khép kín...",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w4",
+          "text": "通",
+          "text_trad": "通",
+          "pinyin": "tōng",
+          "hanviet": "Thông",
+          "meaning_vi": "thông, thông suốt; (gọi điện) được",
+          "hsk": 4,
+          "bbox": {
+            "x": 29.215,
+            "y": 6.38,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 29.215,
+              "y": 6.38,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "我們要打通底層邏輯，形成業務閉環……",
+          "sentence_zh_simplified": "我们要打通底层逻辑，形成业务闭环……",
+          "sentence_vi": "Chúng ta phải đả thông logic tầng dưới, tạo thành vòng lặp nghiệp vụ khép kín...",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w5",
+          "text": "底层",
+          "text_trad": "底層",
+          "pinyin": "dǐcéng",
+          "hanviet": "Để Tầng",
+          "meaning_vi": "tầng đáy, tầng trệt",
+          "hsk": "7-9",
+          "bbox": {
+            "x": 31.105,
+            "y": 6.38,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 31.105,
+              "y": 6.38,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "我們要打通底層邏輯，形成業務閉環……",
+          "sentence_zh_simplified": "我们要打通底层逻辑，形成业务闭环……",
+          "sentence_vi": "Chúng ta phải đả thông logic tầng dưới, tạo thành vòng lặp nghiệp vụ khép kín...",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w6",
+          "text": "逻辑",
+          "text_trad": "邏輯",
+          "pinyin": "luójí",
+          "hanviet": "La Tập",
+          "meaning_vi": "logic",
+          "hsk": 5,
+          "bbox": {
+            "x": 34.884,
+            "y": 6.38,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 34.884,
+              "y": 6.38,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "我們要打通底層邏輯，形成業務閉環……",
+          "sentence_zh_simplified": "我们要打通底层逻辑，形成业务闭环……",
+          "sentence_vi": "Chúng ta phải đả thông logic tầng dưới, tạo thành vòng lặp nghiệp vụ khép kín...",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w7",
+          "text": "形成",
+          "text_trad": "形成",
+          "pinyin": "xíngchéng",
+          "hanviet": "Hình Thành",
+          "meaning_vi": "hình thành",
+          "hsk": 5,
+          "bbox": {
+            "x": 38.663,
+            "y": 6.38,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 38.663,
+              "y": 6.38,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "我們要打通底層邏輯，形成業務閉環……",
+          "sentence_zh_simplified": "我们要打通底层逻辑，形成业务闭环……",
+          "sentence_vi": "Chúng ta phải đả thông logic tầng dưới, tạo thành vòng lặp nghiệp vụ khép kín...",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w8",
+          "text": "业务",
+          "text_trad": "業務",
+          "pinyin": "yèwù",
+          "hanviet": "Nghiệp Vụ",
+          "meaning_vi": "nghiệp vụ, công việc",
+          "hsk": 5,
+          "bbox": {
+            "x": 42.442,
+            "y": 6.38,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 42.442,
+              "y": 6.38,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "我們要打通底層邏輯，形成業務閉環……",
+          "sentence_zh_simplified": "我们要打通底层逻辑，形成业务闭环……",
+          "sentence_vi": "Chúng ta phải đả thông logic tầng dưới, tạo thành vòng lặp nghiệp vụ khép kín...",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w9",
+          "text": "闭环",
+          "text_trad": "閉環",
+          "pinyin": "bìhuán",
+          "hanviet": "Bế Hoàn",
+          "meaning_vi": "vòng lặp khép kín (thuật ngữ công sở)",
+          "hsk": 4,
+          "bbox": {
+            "x": 46.221,
+            "y": 6.38,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 46.221,
+              "y": 6.38,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "我們要打通底層邏輯，形成業務閉環……",
+          "sentence_zh_simplified": "我们要打通底层逻辑，形成业务闭环……",
+          "sentence_vi": "Chúng ta phải đả thông logic tầng dưới, tạo thành vòng lặp nghiệp vụ khép kín...",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p3_d1"
+        }
+      ],
+      "ocr": {
+        "image_px": [
+          1376,
+          768
+        ]
+      }
+    },
+    {
+      "page_num": 4,
+      "image": "assets/images/readings/manga/office/office_ep03/page_04.webp",
+      "dialogues": [
+        {
+          "id": "p4_d1",
+          "character": "小阳 (Tiểu Dương)",
+          "bbox": {
+            "x": 5.81,
+            "y": 6.51,
+            "width": 26.16,
+            "height": 12.37
+          },
+          "zh": "我快饿晕了……",
+          "zh_trad": "我快餓暈了……",
+          "pinyin": "wǒ kuài è yūn le ……",
+          "vi": "Tôi sắp ngất vì đói rồi...",
+          "tokens": [
+            {
+              "text": "我",
+              "text_trad": "我",
+              "pinyin": "wǒ",
+              "hanviet": "Ngã",
+              "meaning_vi": "tôi",
+              "hsk": 1
+            },
+            {
+              "text": "快",
+              "text_trad": "快",
+              "pinyin": "kuài",
+              "hanviet": "Khoái",
+              "meaning_vi": "nhanh",
+              "hsk": 2
+            },
+            {
+              "text": "饿晕",
+              "text_trad": "餓暈",
+              "pinyin": "èyūn",
+              "hanviet": "Ngạ Vựng",
+              "meaning_vi": "đói lả, đói hoa mắt",
+              "hsk": 3
+            },
+            {
+              "text": "了",
+              "text_trad": "了",
+              "pinyin": "le",
+              "hanviet": "Liễu",
+              "meaning_vi": "rồi (trợ từ)",
+              "hsk": 1
+            }
+          ]
+        },
+        {
+          "id": "p4_d2",
+          "character": "小铃 (Tiểu Linh)",
+          "bbox": {
+            "x": 43.6,
+            "y": 6.51,
+            "width": 45.06,
+            "height": 12.37
+          },
+          "zh": "外卖到了四十分钟，已经凉透了。",
+          "zh_trad": "外賣到了四十分鐘，已經涼透了。",
+          "pinyin": "wài mài dào le sì shí fēn zhōng ， yǐ jīng liáng tòu le 。",
+          "vi": "Đồ ăn tới được 40 phút rồi, nguội ngắt luôn rồi.",
+          "tokens": [
+            {
+              "text": "外卖",
+              "text_trad": "外賣",
+              "pinyin": "wàimài",
+              "hanviet": "Ngoại Mại",
+              "meaning_vi": "đồ ăn mang đi; gọi đồ ăn",
+              "hsk": 3
+            },
+            {
+              "text": "到",
+              "text_trad": "到",
+              "pinyin": "dào",
+              "hanviet": "Đáo",
+              "meaning_vi": "đến",
+              "hsk": 1
+            },
+            {
+              "text": "了",
+              "text_trad": "了",
+              "pinyin": "le",
+              "hanviet": "Liễu",
+              "meaning_vi": "rồi (trợ từ)",
+              "hsk": 1
+            },
+            {
+              "text": "四十分钟",
+              "text_trad": "四十分鐘",
+              "pinyin": "sìshí fēnzhōng",
+              "hanviet": "Tứ Thập Phân Chung",
+              "meaning_vi": "bốn mươi phút",
+              "hsk": 1
+            },
+            {
+              "text": "已经",
+              "text_trad": "已經",
+              "pinyin": "yǐjīng",
+              "hanviet": "Dĩ Kinh",
+              "meaning_vi": "đã",
+              "hsk": 2
+            },
+            {
+              "text": "凉透",
+              "text_trad": "涼透",
+              "pinyin": "liángtòu",
+              "hanviet": "Lương Thấu",
+              "meaning_vi": "nguội ngắt, lạnh ngắt",
+              "hsk": 3
+            },
+            {
+              "text": "了",
+              "text_trad": "了",
+              "pinyin": "le",
+              "hanviet": "Liễu",
+              "meaning_vi": "rồi (trợ từ)",
+              "hsk": 1
+            }
+          ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "p4_d1_w1",
+          "text": "我",
+          "text_trad": "我",
+          "pinyin": "wǒ",
+          "hanviet": "Ngã",
+          "meaning_vi": "tôi",
+          "hsk": 1,
+          "bbox": {
+            "x": 7.122,
+            "y": 10.938,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 7.122,
+              "y": 10.938,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "我快餓暈了……",
+          "sentence_zh_simplified": "我快饿晕了……",
+          "sentence_vi": "Tôi sắp ngất vì đói rồi...",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d1_w2",
+          "text": "快",
+          "text_trad": "快",
+          "pinyin": "kuài",
+          "hanviet": "Khoái",
+          "meaning_vi": "nhanh",
+          "hsk": 2,
+          "bbox": {
+            "x": 9.012,
+            "y": 10.938,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 9.012,
+              "y": 10.938,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "我快餓暈了……",
+          "sentence_zh_simplified": "我快饿晕了……",
+          "sentence_vi": "Tôi sắp ngất vì đói rồi...",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d1_w3",
+          "text": "饿晕",
+          "text_trad": "餓暈",
+          "pinyin": "èyūn",
+          "hanviet": "Ngạ Vựng",
+          "meaning_vi": "đói lả, đói hoa mắt",
+          "hsk": 3,
+          "bbox": {
+            "x": 10.901,
+            "y": 10.938,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 10.901,
+              "y": 10.938,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "我快餓暈了……",
+          "sentence_zh_simplified": "我快饿晕了……",
+          "sentence_vi": "Tôi sắp ngất vì đói rồi...",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d1_w4",
+          "text": "了",
+          "text_trad": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "meaning_vi": "rồi (trợ từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 14.68,
+            "y": 10.938,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 14.68,
+              "y": 10.938,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "我快餓暈了……",
+          "sentence_zh_simplified": "我快饿晕了……",
+          "sentence_vi": "Tôi sắp ngất vì đói rồi...",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d2_w1",
+          "text": "外卖",
+          "text_trad": "外賣",
+          "pinyin": "wàimài",
+          "hanviet": "Ngoại Mại",
+          "meaning_vi": "đồ ăn mang đi; gọi đồ ăn",
+          "hsk": 3,
+          "bbox": {
+            "x": 44.913,
+            "y": 10.938,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 44.913,
+              "y": 10.938,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "外賣到了四十分鐘，已經涼透了。",
+          "sentence_zh_simplified": "外卖到了四十分钟，已经凉透了。",
+          "sentence_vi": "Đồ ăn tới được 40 phút rồi, nguội ngắt luôn rồi.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p4_d2"
+        },
+        {
+          "id": "p4_d2_w2",
+          "text": "到",
+          "text_trad": "到",
+          "pinyin": "dào",
+          "hanviet": "Đáo",
+          "meaning_vi": "đến",
+          "hsk": 1,
+          "bbox": {
+            "x": 48.692,
+            "y": 10.938,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 48.692,
+              "y": 10.938,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "外賣到了四十分鐘，已經涼透了。",
+          "sentence_zh_simplified": "外卖到了四十分钟，已经凉透了。",
+          "sentence_vi": "Đồ ăn tới được 40 phút rồi, nguội ngắt luôn rồi.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p4_d2"
+        },
+        {
+          "id": "p4_d2_w3",
+          "text": "了",
+          "text_trad": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "meaning_vi": "rồi (trợ từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 50.581,
+            "y": 10.938,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 50.581,
+              "y": 10.938,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "外賣到了四十分鐘，已經涼透了。",
+          "sentence_zh_simplified": "外卖到了四十分钟，已经凉透了。",
+          "sentence_vi": "Đồ ăn tới được 40 phút rồi, nguội ngắt luôn rồi.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p4_d2"
+        },
+        {
+          "id": "p4_d2_w4",
+          "text": "四十分钟",
+          "text_trad": "四十分鐘",
+          "pinyin": "sìshí fēnzhōng",
+          "hanviet": "Tứ Thập Phân Chung",
+          "meaning_vi": "bốn mươi phút",
+          "hsk": 1,
+          "bbox": {
+            "x": 52.471,
+            "y": 10.938,
+            "width": 7.558,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 52.471,
+              "y": 10.938,
+              "width": 7.558,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "外賣到了四十分鐘，已經涼透了。",
+          "sentence_zh_simplified": "外卖到了四十分钟，已经凉透了。",
+          "sentence_vi": "Đồ ăn tới được 40 phút rồi, nguội ngắt luôn rồi.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p4_d2"
+        },
+        {
+          "id": "p4_d2_w5",
+          "text": "已经",
+          "text_trad": "已經",
+          "pinyin": "yǐjīng",
+          "hanviet": "Dĩ Kinh",
+          "meaning_vi": "đã",
+          "hsk": 2,
+          "bbox": {
+            "x": 60.029,
+            "y": 10.938,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 60.029,
+              "y": 10.938,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "外賣到了四十分鐘，已經涼透了。",
+          "sentence_zh_simplified": "外卖到了四十分钟，已经凉透了。",
+          "sentence_vi": "Đồ ăn tới được 40 phút rồi, nguội ngắt luôn rồi.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p4_d2"
+        },
+        {
+          "id": "p4_d2_w6",
+          "text": "凉透",
+          "text_trad": "涼透",
+          "pinyin": "liángtòu",
+          "hanviet": "Lương Thấu",
+          "meaning_vi": "nguội ngắt, lạnh ngắt",
+          "hsk": 3,
+          "bbox": {
+            "x": 63.808,
+            "y": 10.938,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 63.808,
+              "y": 10.938,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "外賣到了四十分鐘，已經涼透了。",
+          "sentence_zh_simplified": "外卖到了四十分钟，已经凉透了。",
+          "sentence_vi": "Đồ ăn tới được 40 phút rồi, nguội ngắt luôn rồi.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p4_d2"
+        },
+        {
+          "id": "p4_d2_w7",
+          "text": "了",
+          "text_trad": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "meaning_vi": "rồi (trợ từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 67.587,
+            "y": 10.938,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 67.587,
+              "y": 10.938,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "外賣到了四十分鐘，已經涼透了。",
+          "sentence_zh_simplified": "外卖到了四十分钟，已经凉透了。",
+          "sentence_vi": "Đồ ăn tới được 40 phút rồi, nguội ngắt luôn rồi.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p4_d2"
+        }
+      ],
+      "ocr": {
+        "image_px": [
+          1376,
+          768
+        ]
+      }
+    },
+    {
+      "page_num": 5,
+      "image": "assets/images/readings/manga/office/office_ep03/page_05.webp",
+      "dialogues": [
+        {
+          "id": "p5_d1",
+          "character": "王经理 (Sếp Vương)",
+          "bbox": {
+            "x": 42.15,
+            "y": 5.86,
+            "width": 53.78,
+            "height": 12.37
+          },
+          "zh": "好了，没有问题的话，下午两点我们继续！",
+          "zh_trad": "好了，沒有問題的話，下午兩點我們繼續！",
+          "pinyin": "hǎo le ， méi yǒu wèn tí de huà ， xià wǔ liǎng diǎn wǒ men jì xù ！",
+          "vi": "Được rồi, nếu không có câu hỏi gì thì hai giờ chiều chúng ta tiếp tục nhé!",
+          "tokens": [
+            {
+              "text": "好",
+              "text_trad": "好",
+              "pinyin": "hǎo",
+              "hanviet": "Hảo",
+              "meaning_vi": "tốt, được",
+              "hsk": 1
+            },
+            {
+              "text": "了",
+              "text_trad": "了",
+              "pinyin": "le",
+              "hanviet": "Liễu",
+              "meaning_vi": "rồi (trợ từ)",
+              "hsk": 1
+            },
+            {
+              "text": "没有",
+              "text_trad": "沒有",
+              "pinyin": "méiyǒu",
+              "hanviet": "Một Hữu",
+              "meaning_vi": "không có",
+              "hsk": 1
+            },
+            {
+              "text": "问题",
+              "text_trad": "問題",
+              "pinyin": "wèntí",
+              "hanviet": "Vấn Đề",
+              "meaning_vi": "câu hỏi, vấn đề",
+              "hsk": 1
+            },
+            {
+              "text": "的话",
+              "text_trad": "的話",
+              "pinyin": "dehuà",
+              "hanviet": "Đích Thoại",
+              "meaning_vi": "nếu… thì (trợ từ giả định)",
+              "hsk": 3
+            },
+            {
+              "text": "下午",
+              "text_trad": "下午",
+              "pinyin": "xiàwǔ",
+              "hanviet": "Hạ Ngọ",
+              "meaning_vi": "buổi chiều",
+              "hsk": 1
+            },
+            {
+              "text": "两",
+              "text_trad": "兩",
+              "pinyin": "liǎng",
+              "hanviet": "Lưỡng ¹",
+              "meaning_vi": "hai (số lượng)",
+              "hsk": 1
+            },
+            {
+              "text": "点",
+              "text_trad": "點",
+              "pinyin": "diǎn",
+              "hanviet": "Điểm ¹",
+              "meaning_vi": "giờ, điểm",
+              "hsk": 1
+            },
+            {
+              "text": "我们",
+              "text_trad": "我們",
+              "pinyin": "wǒmen",
+              "hanviet": "Ngã Môn",
+              "meaning_vi": "chúng tôi, chúng ta",
+              "hsk": 1
+            },
+            {
+              "text": "继续",
+              "text_trad": "繼續",
+              "pinyin": "jìxù",
+              "hanviet": "Kế Tục",
+              "meaning_vi": "tiếp tục",
+              "hsk": 4
+            }
+          ]
+        },
+        {
+          "id": "p5_d2",
+          "character": "小阳 (Tiểu Dương)",
+          "bbox": {
+            "x": 7.27,
+            "y": 7.81,
+            "width": 33.43,
+            "height": 12.37
+          },
+          "zh": "两点？……那还有十五分钟！",
+          "zh_trad": "兩點？……那還有十五分鐘！",
+          "pinyin": "liǎng diǎn ？…… nà hái yǒu shí wǔ fēn zhōng ！",
+          "vi": "Hai giờ? ... Thế là chỉ còn mười lăm phút nữa!",
+          "tokens": [
+            {
+              "text": "两",
+              "text_trad": "兩",
+              "pinyin": "liǎng",
+              "hanviet": "Lưỡng ¹",
+              "meaning_vi": "hai (số lượng)",
+              "hsk": 1
+            },
+            {
+              "text": "点",
+              "text_trad": "點",
+              "pinyin": "diǎn",
+              "hanviet": "Điểm ¹",
+              "meaning_vi": "giờ, điểm",
+              "hsk": 1
+            },
+            {
+              "text": "那",
+              "text_trad": "那",
+              "pinyin": "nà",
+              "hanviet": "Na",
+              "meaning_vi": "đó, kia",
+              "hsk": 1
+            },
+            {
+              "text": "还",
+              "text_trad": "還",
+              "pinyin": "hái",
+              "hanviet": "Hoàn",
+              "meaning_vi": "vẫn còn",
+              "hsk": 1
+            },
+            {
+              "text": "有",
+              "text_trad": "有",
+              "pinyin": "yǒu",
+              "hanviet": "Hữu",
+              "meaning_vi": "có",
+              "hsk": 1
+            },
+            {
+              "text": "十五分钟",
+              "text_trad": "十五分鐘",
+              "pinyin": "shíwǔ fēnzhōng",
+              "hanviet": "Thập Ngũ Phân Chung",
+              "meaning_vi": "mười lăm phút",
+              "hsk": 1
+            }
+          ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "p5_d1_w1",
+          "text": "好",
+          "text_trad": "好",
+          "pinyin": "hǎo",
+          "hanviet": "Hảo",
+          "meaning_vi": "tốt, được",
+          "hsk": 1,
+          "bbox": {
+            "x": 43.459,
+            "y": 10.286,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 43.459,
+              "y": 10.286,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "好了，沒有問題的話，下午兩點我們繼續！",
+          "sentence_zh_simplified": "好了，没有问题的话，下午两点我们继续！",
+          "sentence_vi": "Được rồi, nếu không có câu hỏi gì thì hai giờ chiều chúng ta tiếp tục nhé!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w2",
+          "text": "了",
+          "text_trad": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "meaning_vi": "rồi (trợ từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 45.349,
+            "y": 10.286,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 45.349,
+              "y": 10.286,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "好了，沒有問題的話，下午兩點我們繼續！",
+          "sentence_zh_simplified": "好了，没有问题的话，下午两点我们继续！",
+          "sentence_vi": "Được rồi, nếu không có câu hỏi gì thì hai giờ chiều chúng ta tiếp tục nhé!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w3",
+          "text": "没有",
+          "text_trad": "沒有",
+          "pinyin": "méiyǒu",
+          "hanviet": "Một Hữu",
+          "meaning_vi": "không có",
+          "hsk": 1,
+          "bbox": {
+            "x": 47.238,
+            "y": 10.286,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 47.238,
+              "y": 10.286,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "好了，沒有問題的話，下午兩點我們繼續！",
+          "sentence_zh_simplified": "好了，没有问题的话，下午两点我们继续！",
+          "sentence_vi": "Được rồi, nếu không có câu hỏi gì thì hai giờ chiều chúng ta tiếp tục nhé!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w4",
+          "text": "问题",
+          "text_trad": "問題",
+          "pinyin": "wèntí",
+          "hanviet": "Vấn Đề",
+          "meaning_vi": "câu hỏi, vấn đề",
+          "hsk": 1,
+          "bbox": {
+            "x": 51.017,
+            "y": 10.286,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 51.017,
+              "y": 10.286,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "好了，沒有問題的話，下午兩點我們繼續！",
+          "sentence_zh_simplified": "好了，没有问题的话，下午两点我们继续！",
+          "sentence_vi": "Được rồi, nếu không có câu hỏi gì thì hai giờ chiều chúng ta tiếp tục nhé!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w5",
+          "text": "的话",
+          "text_trad": "的話",
+          "pinyin": "dehuà",
+          "hanviet": "Đích Thoại",
+          "meaning_vi": "nếu… thì (trợ từ giả định)",
+          "hsk": 3,
+          "bbox": {
+            "x": 54.797,
+            "y": 10.286,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 54.797,
+              "y": 10.286,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "好了，沒有問題的話，下午兩點我們繼續！",
+          "sentence_zh_simplified": "好了，没有问题的话，下午两点我们继续！",
+          "sentence_vi": "Được rồi, nếu không có câu hỏi gì thì hai giờ chiều chúng ta tiếp tục nhé!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w6",
+          "text": "下午",
+          "text_trad": "下午",
+          "pinyin": "xiàwǔ",
+          "hanviet": "Hạ Ngọ",
+          "meaning_vi": "buổi chiều",
+          "hsk": 1,
+          "bbox": {
+            "x": 58.576,
+            "y": 10.286,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 58.576,
+              "y": 10.286,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "好了，沒有問題的話，下午兩點我們繼續！",
+          "sentence_zh_simplified": "好了，没有问题的话，下午两点我们继续！",
+          "sentence_vi": "Được rồi, nếu không có câu hỏi gì thì hai giờ chiều chúng ta tiếp tục nhé!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w7",
+          "text": "两",
+          "text_trad": "兩",
+          "pinyin": "liǎng",
+          "hanviet": "Lưỡng ¹",
+          "meaning_vi": "hai (số lượng)",
+          "hsk": 1,
+          "bbox": {
+            "x": 62.355,
+            "y": 10.286,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 62.355,
+              "y": 10.286,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "好了，沒有問題的話，下午兩點我們繼續！",
+          "sentence_zh_simplified": "好了，没有问题的话，下午两点我们继续！",
+          "sentence_vi": "Được rồi, nếu không có câu hỏi gì thì hai giờ chiều chúng ta tiếp tục nhé!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w8",
+          "text": "点",
+          "text_trad": "點",
+          "pinyin": "diǎn",
+          "hanviet": "Điểm ¹",
+          "meaning_vi": "giờ, điểm",
+          "hsk": 1,
+          "bbox": {
+            "x": 64.244,
+            "y": 10.286,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 64.244,
+              "y": 10.286,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "好了，沒有問題的話，下午兩點我們繼續！",
+          "sentence_zh_simplified": "好了，没有问题的话，下午两点我们继续！",
+          "sentence_vi": "Được rồi, nếu không có câu hỏi gì thì hai giờ chiều chúng ta tiếp tục nhé!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w9",
+          "text": "我们",
+          "text_trad": "我們",
+          "pinyin": "wǒmen",
+          "hanviet": "Ngã Môn",
+          "meaning_vi": "chúng tôi, chúng ta",
+          "hsk": 1,
+          "bbox": {
+            "x": 66.134,
+            "y": 10.286,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 66.134,
+              "y": 10.286,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "好了，沒有問題的話，下午兩點我們繼續！",
+          "sentence_zh_simplified": "好了，没有问题的话，下午两点我们继续！",
+          "sentence_vi": "Được rồi, nếu không có câu hỏi gì thì hai giờ chiều chúng ta tiếp tục nhé!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w10",
+          "text": "继续",
+          "text_trad": "繼續",
+          "pinyin": "jìxù",
+          "hanviet": "Kế Tục",
+          "meaning_vi": "tiếp tục",
+          "hsk": 4,
+          "bbox": {
+            "x": 69.913,
+            "y": 10.286,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 69.913,
+              "y": 10.286,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "好了，沒有問題的話，下午兩點我們繼續！",
+          "sentence_zh_simplified": "好了，没有问题的话，下午两点我们继续！",
+          "sentence_vi": "Được rồi, nếu không có câu hỏi gì thì hai giờ chiều chúng ta tiếp tục nhé!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d2_w1",
+          "text": "两",
+          "text_trad": "兩",
+          "pinyin": "liǎng",
+          "hanviet": "Lưỡng ¹",
+          "meaning_vi": "hai (số lượng)",
+          "hsk": 1,
+          "bbox": {
+            "x": 8.576,
+            "y": 12.24,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 8.576,
+              "y": 12.24,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "兩點？……那還有十五分鐘！",
+          "sentence_zh_simplified": "两点？……那还有十五分钟！",
+          "sentence_vi": "Hai giờ? ... Thế là chỉ còn mười lăm phút nữa!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p5_d2"
+        },
+        {
+          "id": "p5_d2_w2",
+          "text": "点",
+          "text_trad": "點",
+          "pinyin": "diǎn",
+          "hanviet": "Điểm ¹",
+          "meaning_vi": "giờ, điểm",
+          "hsk": 1,
+          "bbox": {
+            "x": 10.465,
+            "y": 12.24,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 10.465,
+              "y": 12.24,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "兩點？……那還有十五分鐘！",
+          "sentence_zh_simplified": "两点？……那还有十五分钟！",
+          "sentence_vi": "Hai giờ? ... Thế là chỉ còn mười lăm phút nữa!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p5_d2"
+        },
+        {
+          "id": "p5_d2_w3",
+          "text": "那",
+          "text_trad": "那",
+          "pinyin": "nà",
+          "hanviet": "Na",
+          "meaning_vi": "đó, kia",
+          "hsk": 1,
+          "bbox": {
+            "x": 12.355,
+            "y": 12.24,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 12.355,
+              "y": 12.24,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "兩點？……那還有十五分鐘！",
+          "sentence_zh_simplified": "两点？……那还有十五分钟！",
+          "sentence_vi": "Hai giờ? ... Thế là chỉ còn mười lăm phút nữa!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p5_d2"
+        },
+        {
+          "id": "p5_d2_w4",
+          "text": "还",
+          "text_trad": "還",
+          "pinyin": "hái",
+          "hanviet": "Hoàn",
+          "meaning_vi": "vẫn còn",
+          "hsk": 1,
+          "bbox": {
+            "x": 14.244,
+            "y": 12.24,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 14.244,
+              "y": 12.24,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "兩點？……那還有十五分鐘！",
+          "sentence_zh_simplified": "两点？……那还有十五分钟！",
+          "sentence_vi": "Hai giờ? ... Thế là chỉ còn mười lăm phút nữa!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p5_d2"
+        },
+        {
+          "id": "p5_d2_w5",
+          "text": "有",
+          "text_trad": "有",
+          "pinyin": "yǒu",
+          "hanviet": "Hữu",
+          "meaning_vi": "có",
+          "hsk": 1,
+          "bbox": {
+            "x": 16.134,
+            "y": 12.24,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 16.134,
+              "y": 12.24,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "兩點？……那還有十五分鐘！",
+          "sentence_zh_simplified": "两点？……那还有十五分钟！",
+          "sentence_vi": "Hai giờ? ... Thế là chỉ còn mười lăm phút nữa!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p5_d2"
+        },
+        {
+          "id": "p5_d2_w6",
+          "text": "十五分钟",
+          "text_trad": "十五分鐘",
+          "pinyin": "shíwǔ fēnzhōng",
+          "hanviet": "Thập Ngũ Phân Chung",
+          "meaning_vi": "mười lăm phút",
+          "hsk": 1,
+          "bbox": {
+            "x": 18.023,
+            "y": 12.24,
+            "width": 7.558,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 18.023,
+              "y": 12.24,
+              "width": 7.558,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "兩點？……那還有十五分鐘！",
+          "sentence_zh_simplified": "两点？……那还有十五分钟！",
+          "sentence_vi": "Hai giờ? ... Thế là chỉ còn mười lăm phút nữa!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p5_d2"
+        }
+      ],
+      "ocr": {
+        "image_px": [
+          1376,
+          768
+        ]
+      }
+    }
+  ]
+}

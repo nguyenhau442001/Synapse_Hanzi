@@ -64,5 +64,38 @@
       "王总",
       "老周"
     ]
+  },
+  {
+    "id": "office_ep03",
+    "series": "office",
+    "series_title": "打工人日记",
+    "series_title_vi": "Nhật Ký Dân Công Sở",
+    "collection": "office",
+    "volume": 1,
+    "chapter_in_volume": null,
+    "chapter_no": 3,
+    "title": {
+      "zh": "第三集：开个短会",
+      "zh_trad": "第三集：開個短會",
+      "vi": "Tập 3: Họp Nhanh 5 Phút",
+      "pinyin": "dì sān jí ： kāi gè duǎn huì"
+    },
+    "description_vi": "11 giờ 55 phút trưa, đồ ăn vừa bấm đặt trên app thì Sếp Vương bất ngờ vỗ tay hào hứng: 'Mọi người dừng tay chút, mình họp nhanh năm phút thôi nhé!' Và thế là một cuộc họp 'năm phút' kéo dài xuyên trưa bắt đầu...",
+    "cover_image": "assets/images/readings/manga/office/office_ep03/cover.webp",
+    "source": "《打工人日记》原创职场情景喜剧 · Synapse Hanzi Studio",
+    "source_url": "https://github.com/Synapse-Hanzi",
+    "source_credits": "Kịch bản và tạo hình nhân vật độc quyền: Synapse Hanzi Studio. Tranh minh họa kết hợp hệ thống tra từ tương tác, pinyin, Hán-Việt và âm thanh đa giác quan.",
+    "license": "Original / Educational",
+    "page_count": 5,
+    "difficulty": "HSK 1 - 4",
+    "estimatedMinutes": 3,
+    "file": "database/readings/manga/office/office_ep03.json",
+    "proper_names": [
+      "小阳",
+      "小铃",
+      "王经理",
+      "王总",
+      "老周"
+    ]
   }
 ]
