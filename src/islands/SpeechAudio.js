@@ -182,23 +182,38 @@ export function resolvePrebuiltAudio(text) {
   return null;
 }
 
+const audioManifestCache = new Map();
+
 export async function loadPrebuiltAudioManifest(level) {
   localAudioManifest = null;
   const levels = typeof LEVELS !== 'undefined' ? LEVELS : window.LEVELS;
   const config = levels ? levels[level] : null;
-  if (!config || !config.audioManifestUrl) return;
+  if (!config || !config.audioManifestUrl) return null;
+
+  if (audioManifestCache.has(level)) {
+    const cached = audioManifestCache.get(level);
+    const currentLvl = typeof currentLevel !== 'undefined' ? currentLevel : window.currentLevel;
+    if (currentLvl === level && cached && cached.items) {
+      localAudioManifest = cached;
+      if (typeof window !== 'undefined') window.prebuiltAudioManifest = cached;
+    }
+    return cached;
+  }
 
   const currentLvl = typeof currentLevel !== 'undefined' ? currentLevel : window.currentLevel;
 
   try {
-    const response = await fetch(config.audioManifestUrl, { cache: 'no-store' });
-    if (!response.ok) return;
+    const response = await fetch(config.audioManifestUrl);
+    if (!response.ok) return null;
     const manifest = await response.json();
-    if (currentLvl !== level || manifest.level !== level || !manifest.items) return;
+    audioManifestCache.set(level, manifest);
+    if (currentLvl !== level || manifest.level !== level || !manifest.items) return manifest;
     localAudioManifest = manifest;
     if (typeof window !== 'undefined') window.prebuiltAudioManifest = manifest;
+    return manifest;
   } catch (error) {
     // Missing manifest is expected when rolling out or using Web Speech directly.
+    return null;
   }
 }
 

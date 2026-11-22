@@ -492,15 +492,33 @@ export function prefetchSuggestedLevel() {
   const summary = learningProgressSummary();
   const target = summary.target;
   const levelsObj = typeof LEVELS !== 'undefined' ? LEVELS : window.LEVELS;
-  const config = target && levelsObj && levelsObj[target.level];
+  let targetLevel = target ? target.level : null;
+  if (!targetLevel && typeof localStorage !== 'undefined') {
+    try { targetLevel = localStorage.getItem(LAST_LEVEL_KEY); } catch (e) {}
+  }
+  if (!targetLevel) targetLevel = 'hsk1';
+
+  const config = levelsObj && levelsObj[targetLevel];
   if (!config || !config.dataUrl) return;
+
   const run = () => {
-    fetch(config.dataUrl).catch(() => {});
-    if (config.audioManifestUrl) fetch(config.audioManifestUrl).catch(() => {});
-    if (typeof loadLevelIllustrationPack === 'function') loadLevelIllustrationPack(target.level).catch(() => {});
+    if (typeof prefetchLevelWords === 'function') {
+      prefetchLevelWords(targetLevel);
+    } else if (typeof window !== 'undefined' && typeof window.prefetchLevelWords === 'function') {
+      window.prefetchLevelWords(targetLevel);
+    }
+    if (typeof loadLevelIllustrationPack === 'function') {
+      loadLevelIllustrationPack(targetLevel).catch(() => {});
+    }
+    if (typeof loadPrebuiltAudioManifest === 'function') {
+      loadPrebuiltAudioManifest(targetLevel).catch(() => {});
+    }
   };
-  if ('requestIdleCallback' in window) requestIdleCallback(run, { timeout: 3000 });
-  else setTimeout(run, 1500);
+  if (typeof window !== 'undefined' && 'requestIdleCallback' in window) {
+    window.requestIdleCallback(run, { timeout: 2000 });
+  } else {
+    setTimeout(run, 300);
+  }
 }
 
 export function renderLearningDashboard() {
@@ -912,23 +930,32 @@ export async function selectLevel(level, targetWordIdOrHanzi = null, autoReveal 
   const screenTodayReviews = document.getElementById('screenTodayReviews');
   if (screenTodayReviews) screenTodayReviews.style.display = 'none';
   document.getElementById('screenCards').style.display = '';
-  document.getElementById('overviewTab').disabled = true;
-  document.getElementById('cardArea').innerHTML = `
-    <div class="skel-bar"></div>
-    <div class="skel-card">
-      <div class="skel-line skel-hanzi"></div>
-      <div class="skel-line skel-pinyin"></div>
-      <div class="skel-line skel-hint"></div>
-    </div>
-    <div class="skel-nav">
-      <div class="skel-line skel-nav-btn"></div>
-      <div class="skel-line skel-nav-mid"></div>
-      <div class="skel-line skel-nav-btn"></div>
-    </div>
-    <div class="skel-actions">
-      <div class="skel-line skel-action-btn"></div>
-      <div class="skel-line skel-action-btn"></div>
-    </div>`;
+
+  const cachedWords = typeof getCachedLevelWords === 'function'
+    ? getCachedLevelWords(level)
+    : (typeof window !== 'undefined' && typeof window.getCachedLevelWords === 'function' ? window.getCachedLevelWords(level) : null);
+
+  const isInstant = Array.isArray(cachedWords) && cachedWords.length > 0;
+
+  if (!isInstant) {
+    document.getElementById('overviewTab').disabled = true;
+    document.getElementById('cardArea').innerHTML = `
+      <div class="skel-bar"></div>
+      <div class="skel-card">
+        <div class="skel-line skel-hanzi"></div>
+        <div class="skel-line skel-pinyin"></div>
+        <div class="skel-line skel-hint"></div>
+      </div>
+      <div class="skel-nav">
+        <div class="skel-line skel-nav-btn"></div>
+        <div class="skel-line skel-nav-mid"></div>
+        <div class="skel-line skel-nav-btn"></div>
+      </div>
+      <div class="skel-actions">
+        <div class="skel-line skel-action-btn"></div>
+        <div class="skel-line skel-action-btn"></div>
+      </div>`;
+  }
 
   if (typeof loadLevelIllustrationPack === 'function') {
     loadLevelIllustrationPack(level).catch(() => {});
@@ -936,27 +963,30 @@ export async function selectLevel(level, targetWordIdOrHanzi = null, autoReveal 
     window.loadLevelIllustrationPack(level).catch(() => {});
   }
 
-  await new Promise(r => requestAnimationFrame(r));
-  await new Promise(r => requestAnimationFrame(r));
-
-  if (typeof loadPrebuiltAudioManifest === 'function') {
-    await loadPrebuiltAudioManifest(level);
-  } else if (typeof window.loadPrebuiltAudioManifest === 'function') {
-    await window.loadPrebuiltAudioManifest(level);
+  // Preload audio manifest non-blockingly so it never delays card rendering
+  const audioManifestPromise = (typeof loadPrebuiltAudioManifest === 'function')
+    ? loadPrebuiltAudioManifest(level)
+    : (typeof window !== 'undefined' && typeof window.loadPrebuiltAudioManifest === 'function' ? window.loadPrebuiltAudioManifest(level) : Promise.resolve());
+  if (audioManifestPromise && typeof audioManifestPromise.catch === 'function') {
+    audioManifestPromise.catch(() => {});
   }
 
-  try {
-    const words = typeof fetchLevelWords === 'function' ? await fetchLevelWords(level) : await window.fetchLevelWords(level);
-    const curLvl = typeof currentLevel !== 'undefined' ? currentLevel : window.currentLevel;
-    if (curLvl !== level) return;
-    window.WORDS = words;
-    try { WORDS = words; } catch (e) {}
-  } catch (e) {
-    const curLvl = typeof currentLevel !== 'undefined' ? currentLevel : window.currentLevel;
-    if (curLvl !== level) return;
-    document.getElementById('cardArea').innerHTML = '<div class="error-text">Không thể tải dữ liệu. Vui lòng thử lại.</div>';
-    return;
+  let words = cachedWords;
+  if (!isInstant) {
+    try {
+      words = typeof fetchLevelWords === 'function' ? await fetchLevelWords(level) : await window.fetchLevelWords(level);
+      const curLvl = typeof currentLevel !== 'undefined' ? currentLevel : window.currentLevel;
+      if (curLvl !== level) return;
+    } catch (e) {
+      const curLvl = typeof currentLevel !== 'undefined' ? currentLevel : window.currentLevel;
+      if (curLvl !== level) return;
+      document.getElementById('cardArea').innerHTML = '<div class="error-text">Không thể tải dữ liệu. Vui lòng thử lại.</div>';
+      return;
+    }
   }
+
+  window.WORDS = words;
+  try { WORDS = words; } catch (e) {}
 
   document.getElementById('overviewTab').disabled = false;
   const wordsList = typeof WORDS !== 'undefined' ? WORDS : window.WORDS;

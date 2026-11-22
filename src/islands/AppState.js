@@ -61,12 +61,49 @@ export const TOPICS = {
 };
 Object.assign(LEVELS, TOPICS);
 
-// Download a level's word list; rejects on network or HTTP errors.
+// In-memory cache for level words to ensure instant 0ms card loading
+const levelWordsCache = new Map();
+
+export function isLevelWordsCached(level) {
+  const cached = levelWordsCache.get(level);
+  return Array.isArray(cached);
+}
+
+export function getCachedLevelWords(level) {
+  const cached = levelWordsCache.get(level);
+  return Array.isArray(cached) ? cached : null;
+}
+
+export function prefetchLevelWords(level) {
+  if (!level || !LEVELS[level] || isLevelWordsCached(level)) return Promise.resolve(getCachedLevelWords(level));
+  return fetchLevelWords(level).catch(() => null);
+}
+
+// Download a level's word list; resolves from memory cache when available.
 export async function fetchLevelWords(level) {
-  const url = LEVELS[level].dataUrl;
-  const response = await fetch(url);
-  if (!response.ok) throw new Error(`fetch failed: ${url} (${response.status})`);
-  return response.json();
+  if (levelWordsCache.has(level)) {
+    return levelWordsCache.get(level);
+  }
+  const config = LEVELS[level];
+  if (!config || !config.dataUrl) throw new Error(`unknown level: ${level}`);
+  const url = config.dataUrl;
+
+  const fetchPromise = fetch(url)
+    .then(response => {
+      if (!response.ok) throw new Error(`fetch failed: ${url} (${response.status})`);
+      return response.json();
+    })
+    .then(data => {
+      levelWordsCache.set(level, data);
+      return data;
+    })
+    .catch(error => {
+      levelWordsCache.delete(level);
+      throw error;
+    });
+
+  levelWordsCache.set(level, fetchPromise);
+  return fetchPromise;
 }
 
 export function hskLevelKeys() {
@@ -301,6 +338,9 @@ export function mountAppState() {
       LEVELS_HSK30,
       TOPICS,
       fetchLevelWords,
+      isLevelWordsCached,
+      getCachedLevelWords,
+      prefetchLevelWords,
       hskLevelKeys,
       hsk30LevelKeys,
       SPEECH_RATE,

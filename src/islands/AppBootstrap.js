@@ -7,6 +7,32 @@ import { initNavSections } from './NavSections';
 /* global LEVELS, selectLevel, renderLevelProgress, showWelcomeToast, renderLearningDashboard, prefetchSuggestedLevel, startStudyHeartbeat */
 
 export function initAppBootstrap() {
+  // Anticipatory hover/touch prefetch for all level cards across screens
+  const handleAnticipatoryPrefetch = (e) => {
+    const el = e.target && e.target.closest ? e.target.closest('[data-level], .level-card, [onclick*="selectLevel"]') : null;
+    if (!el) return;
+    let levelKey = el.dataset ? el.dataset.level : null;
+    if (!levelKey) {
+      const onclickAttr = el.getAttribute('onclick') || '';
+      const match = onclickAttr.match(/selectLevel\(['"]([^'"]+)['"]\)/);
+      if (match) levelKey = match[1];
+    }
+    if (levelKey) {
+      if (typeof prefetchLevelWords === 'function') {
+        prefetchLevelWords(levelKey);
+      } else if (typeof window !== 'undefined' && typeof window.prefetchLevelWords === 'function') {
+        window.prefetchLevelWords(levelKey);
+      }
+      if (typeof loadLevelIllustrationPack === 'function') {
+        loadLevelIllustrationPack(levelKey).catch(() => {});
+      } else if (typeof window !== 'undefined' && typeof window.loadLevelIllustrationPack === 'function') {
+        window.loadLevelIllustrationPack(levelKey).catch(() => {});
+      }
+    }
+  };
+  document.addEventListener('pointerenter', handleAnticipatoryPrefetch, { capture: true, passive: true });
+  document.addEventListener('touchstart', handleAnticipatoryPrefetch, { capture: true, passive: true });
+
   document.querySelectorAll('.level-card[data-level]').forEach(card => {
     const level = card.dataset.level;
     const levels = typeof LEVELS !== 'undefined' ? LEVELS : window.LEVELS;

@@ -380,7 +380,31 @@ export async function renderCardRelated(word) {
     hideRelated();
     return;
   }
-  if (!relatedIndex) await buildRelatedIndex();
+  if (!relatedIndex) {
+    // Schedule indexing during browser idle time so it never freezes initial card render
+    if (!indexPromise) {
+      const schedule = (typeof window !== 'undefined' && 'requestIdleCallback' in window)
+        ? window.requestIdleCallback
+        : (fn) => setTimeout(fn, 200);
+      schedule(() => {
+        buildRelatedIndex().then(() => {
+          const currentWord = typeof activeStudyWord !== 'undefined' ? activeStudyWord : null;
+          if (currentWord && currentWord.hanzi) {
+            renderCardRelated(currentWord);
+          }
+        }).catch(() => {});
+      });
+    } else {
+      indexPromise.then(() => {
+        const currentWord = typeof activeStudyWord !== 'undefined' ? activeStudyWord : null;
+        if (currentWord && currentWord.hanzi) {
+          renderCardRelated(currentWord);
+        }
+      }).catch(() => {});
+    }
+    hideRelated();
+    return;
+  }
 
   const relatedList = queryRelatedWords(word, typeof currentLevel !== 'undefined' ? currentLevel : 'hsk1');
   // No related words: hide the whole block instead of leaving an empty frame
