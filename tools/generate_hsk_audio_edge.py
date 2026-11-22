@@ -126,8 +126,15 @@ def output_path(level: str, word_id: int, kind: str) -> Path:
     return REPO_ROOT / "database" / "prebuilt_audio" / level / folder / f"{word_id:04d}.mp3"
 
 
-async def generate_edge_audio_bytes(text: str, voice: str) -> bytes:
-    comm = edge_tts.Communicate(text, voice)
+async def generate_edge_audio_bytes(text: str, voice: str, kind: str = "word") -> bytes:
+    clean = text.strip()
+    rate = "+0%"
+    # For standalone single-character words, add gentle punctuation and slight pacing
+    # to guarantee the initial consonant burst is fully articulated and unclipped
+    if kind == "word" and len(clean) == 1 and not re.search(r"[，。？！、]", clean):
+        clean = f"{clean}，"
+        rate = "-12%"
+    comm = edge_tts.Communicate(clean, voice, rate=rate)
     audio_data = b""
     async for chunk in comm.stream():
         if chunk["type"] == "audio":
@@ -286,7 +293,7 @@ async def async_main() -> int:
 
         for attempt in range(4):
             try:
-                raw_bytes = await generate_edge_audio_bytes(task["text"], args.voice)
+                raw_bytes = await generate_edge_audio_bytes(task["text"], args.voice, task["kind"])
                 encode_mp3(raw_bytes, task["output"], args.bitrate)
                 file_size_kb = task["output"].stat().st_size / 1024
                 print(f" OK ({file_size_kb:.1f} KB)")

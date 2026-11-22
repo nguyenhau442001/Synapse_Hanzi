@@ -77,6 +77,13 @@ Before running any of these commands, stop and ask me first:
 - **English Only for Code & Comments**: All code, function/variable names, docstrings, inline comments, CLI help, and console logs MUST be written 100% in English. No Vietnamese or bilingual mixing in code files.
 - **Human-In-The-Loop (HITL) Approval**: Always present the diff/code plan first, trigger interactive clickable approval options (pop-up buttons) and wait for user selection before modifying files on disk.
 
+## Prebuilt Audio Standard
+
+- Always generate prebuilt Mandarin audio using **Microsoft Edge Neural TTS** (`zh-CN-XiaoxiaoNeural`).
+- Do not use Web Speech API in client code; prebuilt audio is the sole standard.
+- Audio clips must be normalized using ffmpeg: 24kHz Mono, 64kbps MP3, silence trimming, and EBU R128 loudness normalization (`loudnorm=I=-18:TP=-2:LRA=7`).
+- Keep level manifests and `database/prebuilt_audio/hanzi_audio_map.json` in sync after audio generation.
+
 ## Project Preference
 
 This is a personal project. I prefer a simple single-branch workflow because I do not want to review pull requests for every small change. Read AGENTS.md first and follow it strictly. This project uses only one branch: main.

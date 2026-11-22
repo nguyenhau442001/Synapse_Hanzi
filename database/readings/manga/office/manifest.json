@@ -31,5 +31,38 @@
       "王总",
       "老周"
     ]
+  },
+  {
+    "id": "office_ep02",
+    "series": "office",
+    "series_title": "打工人日记",
+    "series_title_vi": "Nhật Ký Dân Công Sở",
+    "collection": "office",
+    "volume": 1,
+    "chapter_in_volume": null,
+    "chapter_no": 2,
+    "title": {
+      "zh": "第二集：下班前五分钟",
+      "zh_trad": "第二集：下班前五分鐘",
+      "vi": "Tập 2: 5 Phút Trước Giờ Tan Làm",
+      "pinyin": "dì èr jí ： xià bān qián wǔ fēn zhōng"
+    },
+    "description_vi": "Đúng 17:25 chiều, balo đã đeo sẵn trên vai chỉ chờ chuông reo để chuồn. Bất thình lình một bàn tay mập mạp của Sếp Vương vỗ lên vai: 'Tiểu Dương, việc này gấp, nửa tiếng là xong ngay ấy mà...'",
+    "cover_image": "assets/images/readings/manga/office/office_ep02/cover.webp",
+    "source": "《打工人日记》原创职场情景喜剧 · Synapse Hanzi Studio",
+    "source_url": "https://github.com/Synapse-Hanzi",
+    "source_credits": "Kịch bản và tạo hình nhân vật độc quyền: Synapse Hanzi Studio. Tranh minh họa kết hợp hệ thống tra từ tương tác, pinyin, Hán-Việt và âm thanh đa giác quan.",
+    "license": "Original / Educational",
+    "page_count": 5,
+    "difficulty": "HSK 1 - 4",
+    "estimatedMinutes": 3,
+    "file": "database/readings/manga/office/office_ep02.json",
+    "proper_names": [
+      "小阳",
+      "小铃",
+      "王经理",
+      "王总",
+      "老周"
+    ]
   }
 ]
