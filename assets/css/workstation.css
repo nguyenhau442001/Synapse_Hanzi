@@ -1658,6 +1658,10 @@ body.flashcard-study-mode .card-header-bar {
   justify-content: space-between;
   border-bottom: none;
   z-index: 10;
+  pointer-events: none;
+}
+body.flashcard-study-mode .card-header-bar > * {
+  pointer-events: auto;
 }
 :root[data-theme="dark"] body.flashcard-study-mode .card-header-bar {
   border-bottom: none;
@@ -2542,6 +2546,7 @@ body.flashcard-study-mode .rating-row[hidden],
 body.flashcard-study-mode .rating-area[hidden],
 body.flashcard-study-mode #studyNavRow[hidden],
 body.flashcard-study-mode .nav-row[hidden],
+body.flashcard-study-mode .reveal-answer-btn[hidden],
 body.flashcard-study-mode .card-supporting-group[hidden],
 body.flashcard-study-mode .card-radicals-row[hidden],
 body.flashcard-study-mode .card-related-wrap[hidden] {

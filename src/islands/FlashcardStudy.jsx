@@ -33,7 +33,7 @@ window.getCardHintText = getCardHintText;
 function buildCardArea() {
   document.getElementById('cardArea').innerHTML = `
     <div class="card" id="card">
-      <div class="card-header-bar" id="cardHeaderBar" onclick="event.stopPropagation()">
+      <div class="card-header-bar" id="cardHeaderBar">
         <span class="card-header-spacer" aria-hidden="true"></span>
         <button type="button" class="card-star-btn" id="weakWordToggleBtn" style="display:none" hidden aria-hidden="true"></button>
         <div class="card-more-menu-wrap" id="cardMoreMenuWrap">
@@ -202,6 +202,15 @@ function buildCardArea() {
 
     <!-- Rating actions row: four FSRS grades (keys 1-4) with the next interval on each button -->
     <div class="rating-area" id="ratingArea">
+      <button type="button" class="reveal-answer-btn" id="revealAnswerBtn" onclick="flip()" aria-label="Lật thẻ xem đáp án" title="Lật thẻ xem đáp án (Space)">
+        <span class="reveal-answer-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"/>
+          </svg>
+        </span>
+        <span class="reveal-answer-label">Xem đáp án</span>
+        <kbd class="reveal-key-hint">Space</kbd>
+      </button>
       <div class="rating-row" id="ratingRow" hidden>
         ${ratingButtonsHtml('rateCurrentCard', 'preview-')}
       </div>
@@ -732,24 +741,32 @@ window.isCardRevealed = isCardRevealed;
 
 // Rating buttons appear only once the card is flipped/revealed.
 function syncRevealControls() {
-  const revealBtn = document.getElementById('revealBtn');
-  if (revealBtn) revealBtn.hidden = true;
+  const revealAnswerBtn = document.getElementById('revealAnswerBtn');
   const ratingRow = document.getElementById('ratingRow');
   const ratingArea = document.getElementById('ratingArea');
   const studyNavRow = document.getElementById('studyNavRow');
   const hasCard = Array.isArray(filteredOrder) && filteredOrder.length > 0;
   const revealed = hasCard && isCardRevealed();
-  // Review mode: grade after flipping, no free navigation. Browse mode: navigation only.
-  const showRating = revealed && studyMode === 'review';
+  // Review mode: show reveal button before flipping, show 4 rating buttons after flipping.
+  const isReview = studyMode === 'review' && hasCard;
+  const showRating = isReview && revealed;
+  const showRevealBtn = isReview && !revealed;
+
   if (showRating) updateSrsPreviews(WORDS[filteredOrder[idx % filteredOrder.length]]);
   const showNav = hasCard && studyMode === 'browse';
+
+  if (revealAnswerBtn) {
+    revealAnswerBtn.hidden = !showRevealBtn;
+    revealAnswerBtn.style.display = showRevealBtn ? '' : 'none';
+  }
   if (ratingRow) {
     ratingRow.hidden = !showRating;
     ratingRow.style.display = showRating ? '' : 'none';
   }
   if (ratingArea) {
-    ratingArea.hidden = !showRating;
-    ratingArea.style.display = showRating ? '' : 'none';
+    const showArea = showRating || showRevealBtn;
+    ratingArea.hidden = !showArea;
+    ratingArea.style.display = showArea ? '' : 'none';
   }
   if (studyNavRow) {
     studyNavRow.hidden = !showNav;

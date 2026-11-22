@@ -29,7 +29,6 @@ export const FLASHCARD_INTERACTIVE_SELECTOR = [
   '.card-dropdown-item',
   '.card-more-dropdown',
   '.card-more-menu-wrap',
-  '.card-header-bar',
   '.card-interactive',
   '.card-radicals-row',
   '.radical-chip',

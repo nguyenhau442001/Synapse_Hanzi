@@ -82,6 +82,10 @@
   border-bottom: none;
   background: transparent;
   z-index: 10;
+  pointer-events: none;
+}
+.card-header-bar > * {
+  pointer-events: auto;
 }
 :root[data-theme="dark"] .card-header-bar {
   border-bottom: none;
@@ -1067,8 +1071,71 @@ body.hide-illustrations .card .card-visual-col {
 }
 @media (max-width: 360px) { .rating-label { font-size: 14.5px; } }
 .rating-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; width: 100%; margin-top: 6px; }
-.rating-row[hidden], .rating-area[hidden], #studyNavRow[hidden], .nav-row[hidden] {
+.rating-row[hidden], .rating-area[hidden], #studyNavRow[hidden], .nav-row[hidden], .reveal-answer-btn[hidden] {
   display: none !important;
+}
+
+.reveal-answer-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 440px;
+  min-height: 48px;
+  padding: 10px 24px;
+  border-radius: var(--radius-btn, 12px);
+  border: 1px solid var(--accent, #A8322D);
+  background: var(--accent, #A8322D);
+  color: #FFFFFF;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(168, 50, 45, 0.2);
+  transition: all var(--dur-fast, 150ms) var(--ease-out, ease-out);
+  user-select: none;
+}
+.reveal-answer-btn:hover {
+  background: var(--accent-hover, #852722);
+  border-color: var(--accent-hover, #852722);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(168, 50, 45, 0.3);
+}
+.reveal-answer-btn:active {
+  transform: translateY(0);
+}
+.reveal-answer-icon {
+  display: inline-flex;
+  align-items: center;
+}
+.reveal-key-hint {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  color: #FFFFFF;
+  font-size: 12px;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.1;
+}
+:root[data-theme="dark"] .reveal-answer-btn {
+  background: var(--accent, #A8322D);
+  border-color: var(--accent, #A8322D);
+  color: #EDE6D8;
+}
+:root[data-theme="dark"] .reveal-answer-btn:hover {
+  background: var(--accent-hover, #BF3B32);
+  border-color: var(--accent-hover, #BF3B32);
+}
+:root[data-theme="dark"] .reveal-key-hint {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.28);
+  color: #EDE6D8;
 }
 .rating-btn {
   position: relative; display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 8px;

@@ -120,10 +120,14 @@ export function registerServiceWorker() {
   };
 
   if (document.readyState === 'complete') {
-    navigator.serviceWorker.register('sw.js').then(handleRegistration);
+    navigator.serviceWorker.register('sw.js').then(handleRegistration).catch(err => {
+      console.warn('Service worker registration failed:', err);
+    });
   } else {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('sw.js').then(handleRegistration);
+      navigator.serviceWorker.register('sw.js').then(handleRegistration).catch(err => {
+        console.warn('Service worker registration failed:', err);
+      });
     });
   }
 
