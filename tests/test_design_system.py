@@ -87,3 +87,10 @@ def test_curriculum_page_structure():
     assert "contain: inline-size;" in css  # scrollable level selector cannot widen the page
     assert "body.curriculum-view-active:not(.study-mode) .app-header" in DS_CSS
     assert "position: sticky;" in DS_CSS
+
+
+def test_primary_tabs_alignment_no_negative_margin():
+    # Primary tabs group must not have negative margin-left, ensuring clean flush alignment with daily goal card
+    assert "margin-left: -14px;" not in DS_CSS
+    assert "margin-left: calc(-1 * var(--space-3));" not in DS_CSS
+
