@@ -130,10 +130,6 @@ export function evaluateToneScorePenalty(expectedTone, metrics) {
         penalty += 40;
         status = 'needs_work';
         advice = 'Thanh 1 (55): Bạn bị chúc giọng xuống giống dấu huyền tiếng Việt. Hãy giữ cao độ phẳng, ngân đều ở mức cao.';
-      } else if (metrics.avgPitch < 3.4) {
-        penalty += 25;
-        status = 'fair';
-        advice = 'Thanh 1 (55): Cao độ hơi thấp. Hãy phát âm cao giọng và ngân dài hơn.';
       } else if (Math.abs(metrics.delta) > 0.8) {
         penalty += 20;
         status = 'fair';
@@ -284,9 +280,16 @@ export function scorePitchContour(userFrames, targetContour, syllableInfos) {
     const sliceEnd = Math.floor(((s + 1) * userChaoPitches.length) / numSyllables);
     const userSlice = userChaoPitches.slice(sliceStart, Math.max(sliceStart + 3, sliceEnd));
 
-    const distance = calculateDtwDistance(userSlice, targetPointsForSyl);
-    // DTW base score: 0 dist = 100%, 1.5 dist = 40%, >= 2.5 dist = 0%
-    const dtwBaseScore = Math.max(0, Math.min(100, Math.round(100 - (distance / 2.0) * 80)));
+    // Mean-center both sequences for shape-based DTW alignment
+    const targetMean = targetPointsForSyl.reduce((a, b) => a + b, 0) / targetPointsForSyl.length;
+    const userMean = userSlice.reduce((a, b) => a + b, 0) / userSlice.length;
+
+    const targetShape = targetPointsForSyl.map((p) => p - targetMean);
+    const userShape = userSlice.map((p) => p - userMean);
+
+    const distance = calculateDtwDistance(userShape, targetShape);
+    // DTW distance on shape-normalized curves (0 = identical shape, ~1.0 = flat vs steep slope, ~2.0 = opposite direction)
+    const dtwBaseScore = Math.max(0, Math.min(100, Math.round(100 - (distance / 1.5) * 75)));
 
     // Evaluate tone contour direction and slope requirements
     const metrics = evaluateToneMetrics(userSlice);
