@@ -170,36 +170,65 @@ function SpeakingPracticeApp() {
     };
   }, []);
 
-  // Update target pitch contour when current word changes
+  // Target pitch contour and Tone Sandhi analysis
   const targetContour = generateTargetPitchContour(currentWord.hanzi, currentWord.pinyin, 60);
   const syllableInfos = analyzeToneSandhi(currentWord.hanzi, currentWord.pinyin);
 
-  // Redraw canvas whenever currentWord, livePoints, or score changes
+  const lastUserPitchesRef = useRef(null);
+
+  // Dynamic DPI-aware & Responsive pitch canvas renderer
   const drawContourCanvas = (userPitches = null) => {
     const canvas = canvasRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
-    const width = canvas.width;
-    const height = canvas.height;
 
-    ctx.clearRect(0, 0, width, height);
+    if (userPitches) {
+      lastUserPitchesRef.current = userPitches;
+    }
 
-    // Padding with generous left space for Vietnamese pitch level labels
-    const padLeft = 85;
-    const padRight = 24;
-    const padY = 24;
-    const plotW = width - padLeft - padRight;
-    const plotH = height - padY * 2;
+    // Measure actual displayed bounding box
+    const rect = canvas.getBoundingClientRect();
+    const displayWidth = Math.floor(rect.width) || 680;
+    const displayHeight = Math.floor(rect.height) || 240;
+    const dpr = Math.min(typeof window !== 'undefined' ? (window.devicePixelRatio || 1) : 1, 3);
 
-    // Draw Chao 5-scale horizontal reference lines with intuitive Vietnamese labels
+    // Sync bitmap buffer with high-DPI (Retina / OLED) screens
+    const targetWidth = Math.round(displayWidth * dpr);
+    const targetHeight = Math.round(displayHeight * dpr);
+    if (canvas.width !== targetWidth || canvas.height !== targetHeight) {
+      canvas.width = targetWidth;
+      canvas.height = targetHeight;
+    }
+
+    ctx.save();
+    ctx.scale(dpr, dpr);
+    ctx.clearRect(0, 0, displayWidth, displayHeight);
+
+    // Adaptive padding & sizing (desktop vs compact mobile)
+    const isCompact = displayWidth < 480;
+    const padLeft = isCompact ? 46 : 85;
+    const padRight = isCompact ? 16 : 24;
+    const padY = isCompact ? 18 : 24;
+    const plotW = displayWidth - padLeft - padRight;
+    const plotH = displayHeight - padY * 2;
+
+    // Draw Chao 5-scale horizontal reference lines with adaptive labels
     ctx.lineWidth = 1;
-    const chaoLabels = [
-      { level: 5, text: '5 - Đỉnh cao' },
-      { level: 4, text: '4 - Hơi cao' },
-      { level: 3, text: '3 - Chuẩn (Vừa)' },
-      { level: 2, text: '2 - Hơi trầm' },
-      { level: 1, text: '1 - Đáy cổ' }
-    ];
+    const chaoLabels = isCompact
+      ? [
+          { level: 5, text: '5 Đỉnh' },
+          { level: 4, text: '4' },
+          { level: 3, text: '3 Vừa' },
+          { level: 2, text: '2' },
+          { level: 1, text: '1 Đáy' }
+        ]
+      : [
+          { level: 5, text: '5 - Đỉnh cao' },
+          { level: 4, text: '4 - Hơi cao' },
+          { level: 3, text: '3 - Chuẩn (Vừa)' },
+          { level: 2, text: '2 - Hơi trầm' },
+          { level: 1, text: '1 - Đáy cổ' }
+        ];
 
     chaoLabels.forEach(({ level, text }) => {
       const y = padY + plotH - ((level - 1) / 4) * plotH;
@@ -212,9 +241,11 @@ function SpeakingPracticeApp() {
 
       ctx.setLineDash([]);
       ctx.fillStyle = 'rgba(150, 140, 130, 0.85)';
-      ctx.font = '11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+      ctx.font = isCompact
+        ? 'bold 10px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
+        : '11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
       ctx.textAlign = 'right';
-      ctx.fillText(text, padLeft - 8, y + 4);
+      ctx.fillText(text, padLeft - 6, y + 3.5);
     });
 
     // Syllable vertical separators
@@ -232,7 +263,7 @@ function SpeakingPracticeApp() {
 
     // Draw Target Contour (Golden Amber Line)
     if (targetContour.length > 1) {
-      ctx.lineWidth = 4;
+      ctx.lineWidth = isCompact ? 3.5 : 4;
       ctx.strokeStyle = '#d97706'; // Golden amber
       ctx.lineCap = 'round';
       ctx.lineJoin = 'round';
@@ -251,19 +282,21 @@ function SpeakingPracticeApp() {
         const midTime = (sIdx + 0.5) / numSyllables;
         const midX = padLeft + midTime * plotW;
         ctx.fillStyle = '#b45309';
-        ctx.font = 'bold 13px -apple-system, BlinkMacSystemFont, sans-serif';
+        ctx.font = isCompact
+          ? 'bold 11.5px -apple-system, BlinkMacSystemFont, sans-serif'
+          : 'bold 13px -apple-system, BlinkMacSystemFont, sans-serif';
         ctx.textAlign = 'center';
         const toneText = syl.sandhiApplied
-          ? `T${syl.actualTone} (biến điệu)`
+          ? `T${syl.actualTone} (biến)`
           : `Thanh ${syl.actualTone}`;
-        ctx.fillText(`${syl.char} [${toneText}]`, midX, padY - 8);
+        ctx.fillText(`${syl.char} [${toneText}]`, midX, padY - (isCompact ? 5 : 8));
       });
     }
 
     // Draw User Recorded / Live Pitch Contour (Teal/Emerald Line)
-    const pitchesToDraw = userPitches || livePointsRef.current;
+    const pitchesToDraw = userPitches || lastUserPitchesRef.current || livePointsRef.current;
     if (pitchesToDraw && pitchesToDraw.length > 1) {
-      ctx.lineWidth = 4.5;
+      ctx.lineWidth = isCompact ? 4 : 4.5;
       ctx.strokeStyle = '#0d9488'; // Vibrant teal
       ctx.lineCap = 'round';
       ctx.lineJoin = 'round';
@@ -279,10 +312,33 @@ function SpeakingPracticeApp() {
       });
       ctx.stroke();
     }
+
+    ctx.restore();
   };
 
+  // Observe container resize to re-render sharp canvas smoothly across desktop and mobile
   useEffect(() => {
+    lastUserPitchesRef.current = null;
     drawContourCanvas();
+
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    let resizeObserver = null;
+    if (typeof ResizeObserver !== 'undefined') {
+      resizeObserver = new ResizeObserver(() => {
+        drawContourCanvas();
+      });
+      resizeObserver.observe(canvas);
+    } else {
+      const handleResize = () => drawContourCanvas();
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }
+
+    return () => {
+      if (resizeObserver) resizeObserver.disconnect();
+    };
   }, [currentWord]);
 
   // Handle Play Sample Audio
@@ -567,8 +623,6 @@ function SpeakingPracticeApp() {
             <canvas
               ref={canvasRef}
               class="speaking-pitch-canvas"
-              width="680"
-              height="240"
               aria-label="Biểu đồ đường cao độ thanh điệu"
             />
           </div>
