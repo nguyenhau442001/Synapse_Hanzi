@@ -2,7 +2,7 @@
 // Small helpers shared by every feature script.
 
 // Written by tools/bump_version.py — used as the cache-buster for data fetches.
-export const APP_VERSION = '3.54.1';
+export const APP_VERSION = '3.54.2';
 
 // Escape text for safe interpolation into HTML strings (shared by every view).
 export function escapeHtml(value) {
@@ -214,6 +214,16 @@ export function playQuizFailSound() {
   } catch (_) {}
 }
 
+// Format level label for study/flashcard views: HSK 3.0 is implicitly understood,
+// so "HSK 3.0 – 2" is simplified to "HSK 2".
+export function formatStudyLevelLabel(rawLabel) {
+  if (!rawLabel) return '';
+  return String(rawLabel)
+    .replace(/^HSK\s*3\.0\s*[–—-]\s*/i, 'HSK ')
+    .replace(/^HSK\s*3\.0\s*/i, 'HSK ')
+    .trim();
+}
+
 export function mountAppUtils() {
   if (typeof window !== 'undefined') {
     Object.assign(window, {
@@ -232,6 +242,7 @@ export function mountAppUtils() {
       toggleDisclosurePanel,
       playQuizSuccessSound,
       playQuizFailSound,
+      formatStudyLevelLabel,
     });
   }
 }
