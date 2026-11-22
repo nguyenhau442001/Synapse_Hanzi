@@ -89,6 +89,8 @@ export function setVocabSubTab(tab) {
   if (primaryTab === 'vocab') syncNavSections('vocab');
   const screenPicker = document.getElementById('screenPicker');
   const screenTopicPicker = document.getElementById('screenTopicPicker');
+  const auxCol = document.querySelector('.dashboard-aux-column');
+  const bottomWidgets = document.getElementById('dashboardBottomWidgets');
   if (screenPicker) {
     screenPicker.style.display = tab === 'level' ? '' : 'none';
     if (tab === 'level') {
@@ -96,6 +98,12 @@ export function setVocabSubTab(tab) {
       void screenPicker.offsetWidth;
       screenPicker.classList.add('vocab-tab-fade');
     }
+  }
+  if (auxCol) {
+    auxCol.style.display = tab === 'level' ? '' : 'none';
+  }
+  if (bottomWidgets) {
+    bottomWidgets.style.display = tab === 'level' ? '' : 'none';
   }
   if (screenTopicPicker) {
     screenTopicPicker.style.display = tab === 'topic' ? '' : 'none';
@@ -130,6 +138,9 @@ export function setPrimaryTab(tab, options) {
       screenEl.style.display = key === tab ? '' : 'none';
     }
   });
+  if (tab === 'vocab') {
+    setVocabSubTab(vocabSubTab || 'level');
+  }
   syncNavSections(tab);
   const mobVocab = document.getElementById('mobNavVocab');
   const mobReview = document.getElementById('mobNavReview');

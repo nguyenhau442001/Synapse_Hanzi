@@ -18,15 +18,19 @@
 .level-card .lvl-mastery-fill { width: 0%; }
 .level-card .lvl-mastery-text { margin-top: 4px; }
 
-@media (min-width: 1280px) {
-  .level-grid,
-  .topic-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-top: 12px; }
-}
-
-.topic-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 24px; }
+.topic-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 0; }
 .topic-grid .level-card { font: inherit; color: var(--text-primary); width: 100%; }
 .topic-grid .level-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .topic-grid .level-card:disabled { cursor: not-allowed; opacity: 0.5; }
+
+@media (min-width: 1280px) {
+  .level-grid,
+  .topic-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 0; }
+}
+
+@media (max-width: 640px) {
+  .topic-grid { grid-template-columns: 1fr; gap: 10px; }
+}
 
 @media (min-width: 768px) {
   .level-grid#levelGrid30 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
