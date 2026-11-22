@@ -5,6 +5,7 @@
 import { render } from 'preact';
 import { useEffect, useRef } from 'preact/hooks';
 import { signal } from '@preact/signals';
+import { formatStudyLevelLabel } from './AppUtils.js';
 
 /* global currentLevel, currentView, overviewQuery, overviewStatus, WORDS, LEVELS, progress,
    filteredOrder, currentFilter -- `let`/`const` globals of the classic scripts */
@@ -42,8 +43,11 @@ export function renderOverview() {
     });
 
   limit.value = PAGE_SIZE;
+  const levelLabel = typeof formatStudyLevelLabel === 'function'
+    ? formatStudyLevelLabel(LEVELS[currentLevel]?.label)
+    : (window.formatStudyLevelLabel ? window.formatStudyLevelLabel(LEVELS[currentLevel]?.label) : LEVELS[currentLevel]?.label);
   snapshot.value = {
-    title: `Trọn bộ từ vựng ${LEVELS[currentLevel].label}`,
+    title: `Trọn bộ từ vựng ${levelLabel}`,
     description: `Xem tổng thể ${formatWordCount(WORDS.length)} từ trước và trong khi học.`,
     total: `${formatWordCount(WORDS.length)} từ`,
     summary: normalizedQuery || overviewStatus !== 'all'
@@ -69,9 +73,12 @@ export function setViewMode(mode) {
   overviewTab.classList.toggle('active', showOverview);
   flashcardTab.setAttribute('aria-selected', String(mode === 'cards'));
   overviewTab.setAttribute('aria-selected', String(showOverview));
+  const activeLevelLabel = typeof formatStudyLevelLabel === 'function'
+    ? formatStudyLevelLabel(LEVELS[currentLevel]?.label)
+    : (window.formatStudyLevelLabel ? window.formatStudyLevelLabel(LEVELS[currentLevel]?.label) : LEVELS[currentLevel]?.label);
   document.getElementById('appTitle').textContent = showOverview
-    ? LEVELS[currentLevel].label + ' · Tổng quan'
-    : LEVELS[currentLevel].label + ' · 汉字思维';
+    ? activeLevelLabel + ' · Tổng quan'
+    : activeLevelLabel + ' · 汉字思维';
 
   if (showOverview) {
     document.getElementById('overviewSearch').value = overviewQuery;

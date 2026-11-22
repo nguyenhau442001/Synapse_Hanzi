@@ -1,5 +1,6 @@
 // Flashcard markup, filtering, statistics, and rendering.
 import { colorizePinyin, colorizePinyinHtml } from './pinyinTones.js';
+import { formatStudyLevelLabel } from './AppUtils.js';
 
 // Tone colors for pinyin (on by default). The syllable spans are always rendered;
 // html.tone-colors-off turns the colors off so tone marks alone remain.
@@ -409,9 +410,12 @@ function renderFilters() {
   const learned = deck.learned || 0;
   const learnedPct = deck.pct || 0;
 
-  const levelLabel = (typeof LEVELS !== 'undefined' && LEVELS[currentLevel]?.label)
+  const rawLevelLabel = (typeof LEVELS !== 'undefined' && LEVELS[currentLevel]?.label)
     ? LEVELS[currentLevel].label
     : (typeof currentLevel === 'string' ? currentLevel.toUpperCase() : 'HSK');
+  const levelLabel = typeof formatStudyLevelLabel === 'function'
+    ? formatStudyLevelLabel(rawLevelLabel)
+    : (window.formatStudyLevelLabel ? window.formatStudyLevelLabel(rawLevelLabel) : rawLevelLabel);
 
   const knownPctNum = total > 0 ? (known / total) * 100 : 0;
   const unknownPctNum = total > 0 ? (unknown / total) * 100 : 0;
@@ -1136,7 +1140,10 @@ function renderStudyWordList() {
 
   const countBadge = panel.querySelector('#studyWordListCount');
   if (countBadge) {
-    const levelLabel = currentLevel && LEVELS[currentLevel] ? LEVELS[currentLevel].label : '';
+    const rawLabel = currentLevel && LEVELS[currentLevel] ? LEVELS[currentLevel].label : '';
+    const levelLabel = typeof formatStudyLevelLabel === 'function'
+      ? formatStudyLevelLabel(rawLabel)
+      : (window.formatStudyLevelLabel ? window.formatStudyLevelLabel(rawLabel) : rawLabel);
     countBadge.textContent = WORDS.length ? `${levelLabel} · ${WORDS.length} từ` : '';
   }
 
@@ -1270,7 +1277,10 @@ function render(animate) {
   function renderEmptyCardState(container) {
     if (!container) return;
     const deck = typeof computeDeckProgress === 'function' ? computeDeckProgress() : { learned: 0, total: WORDS.length, known: 0, unknown: 0, unseen: 0 };
-    const levelLabel = (LEVELS[currentLevel] && LEVELS[currentLevel].label) || 'cấp độ này';
+    const rawLabel = (LEVELS[currentLevel] && LEVELS[currentLevel].label) || 'cấp độ này';
+    const levelLabel = typeof formatStudyLevelLabel === 'function'
+      ? formatStudyLevelLabel(rawLabel)
+      : (window.formatStudyLevelLabel ? window.formatStudyLevelLabel(rawLabel) : rawLabel);
 
     if (studyMode === 'review') {
       // Unseen cards left but today's new-card limit is used up.

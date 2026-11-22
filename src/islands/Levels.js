@@ -1,5 +1,6 @@
 // Level picker, welcome message, study streaks, history modal, and level data loading.
 // Preact island/module port of former assets/js/levels.js.
+import { formatStudyLevelLabel } from './AppUtils.js';
 
 /* global LEVELS, currentLevel, currentView, overviewQuery, overviewStatus, pickerVersion,
    order, progress, showPinyin, currentFilter, idx, WORDS, filteredOrder, transitionTimer,
@@ -910,7 +911,10 @@ export async function selectLevel(level, targetWordIdOrHanzi = null, autoReveal 
   try { localStorage.setItem(LAST_LEVEL_KEY, level); } catch (e) {}
 
   const levelsObj = typeof LEVELS !== 'undefined' ? LEVELS : window.LEVELS;
-  document.getElementById('appTitle').textContent = levelsObj[level].label + ' · 汉字思维';
+  const levelTitle = typeof formatStudyLevelLabel === 'function'
+    ? formatStudyLevelLabel(levelsObj[level]?.label)
+    : (window.formatStudyLevelLabel ? window.formatStudyLevelLabel(levelsObj[level]?.label) : levelsObj[level]?.label);
+  document.getElementById('appTitle').textContent = levelTitle + ' · 汉字思维';
   document.getElementById('primaryTabs').style.display = 'none';
   document.getElementById('pickerControls').style.display = 'none';
   document.getElementById('learningDashboard').style.display = 'none';

@@ -3,6 +3,7 @@
 import { render } from 'preact';
 import { useEffect } from 'preact/hooks';
 import { signal } from '@preact/signals';
+import { formatStudyLevelLabel } from './AppUtils.js';
 
 /* global filteredOrder, idx, order, progress, srsCards, WORDS, currentLevel, currentView,
    currentFilter, showPinyin, celebrationShown, LEVELS, SRS, RATING_KEYS,
@@ -419,7 +420,10 @@ export function triggerAchievementCelebration(type, force) {
   launchConfettiFireworks();
 
   const deck = typeof computeDeckProgress === 'function' ? computeDeckProgress() : { learned: 0, total: WORDS.length, known: 0, unknown: 0 };
-  const levelLabel = (LEVELS[currentLevel] && LEVELS[currentLevel].label) || 'cấp độ này';
+  const rawLevelLabel = (LEVELS[currentLevel] && LEVELS[currentLevel].label) || 'cấp độ này';
+  const levelLabel = typeof formatStudyLevelLabel === 'function'
+    ? formatStudyLevelLabel(rawLevelLabel)
+    : (window.formatStudyLevelLabel ? window.formatStudyLevelLabel(rawLevelLabel) : rawLevelLabel);
   const isMastered = type === 'mastered' || (deck.known === deck.total && deck.total > 0);
 
   celebrationState.value = {
@@ -491,8 +495,12 @@ export function resetProgress() {
   const cards = Object.values(srsCards);
   const started = cards.filter(card => card.state !== SRS.State.New).length;
   const known = cards.filter(card => card.state === SRS.State.Review).length;
+  const rawLabel = LEVELS[currentLevel]?.label || 'cấp độ này';
+  const levelLabel = typeof formatStudyLevelLabel === 'function'
+    ? formatStudyLevelLabel(rawLabel)
+    : (window.formatStudyLevelLabel ? window.formatStudyLevelLabel(rawLabel) : rawLabel);
   const message = [
-    'Học lại ' + LEVELS[currentLevel].label + ' từ đầu?',
+    'Học lại ' + levelLabel + ' từ đầu?',
     '',
     'Sẽ bị reset:',
     '• Lịch ôn FSRS của cả ' + WORDS.length + ' từ (' + started + ' từ đã học, ' + known + ' từ đã nhớ) — mọi thẻ quay về "chưa học".',
