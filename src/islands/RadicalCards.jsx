@@ -203,17 +203,46 @@ export function toggleRadicalPinyin() {
 
 // ---- Rendering --------------------------------------------------------------------------------
 const FILTERS = [
-  { key: 'all', label: 'Tất cả' },
-  { key: 'unknown', label: 'Chưa nhớ' },
-  { key: 'known', label: 'Đã nhớ' },
-  { key: 'unseen', label: 'Chưa học' }
+  {
+    key: 'all',
+    label: 'Tất cả',
+    icon: (
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+        <path d="M16 3H8a2 2 0 0 0-2 2v2h12V5a2 2 0 0 0-2-2z" />
+      </svg>
+    )
+  },
+  {
+    key: 'known',
+    label: 'Đã nhớ',
+    icon: (
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+        <polyline points="22 4 12 14.01 9 11.01" />
+      </svg>
+    )
+  },
+  {
+    key: 'unknown',
+    label: 'Chưa nhớ',
+    icon: (
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.19" />
+      </svg>
+    )
+  },
+  {
+    key: 'unseen',
+    label: 'Chưa học',
+    icon: (
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="9" stroke-dasharray="3.5 3.5" />
+        <polyline points="12 7 12 12 15 15" />
+      </svg>
+    )
+  }
 ];
-
-function StatBox({ id, value, color, label }) {
-  return (
-    <div class="stat-box"><div class="stat-num" id={id} style={color ? `color:${color}` : undefined}>{value}</div><div class="stat-lbl">{label}</div></div>
-  );
-}
 
 function CardBack() {
   const item = shown && shown.item;
@@ -382,6 +411,24 @@ function OverviewView({ visible }) {
 export function RadicalCardsScreen() {
   const overview = radicalCurrentView === 'overview';
   const s = stats || { total: 0, known: 0, unknown: 0, unseen: 0 };
+  const total = s.total;
+  const known = s.known;
+  const unknown = s.unknown;
+  const unseen = s.unseen;
+  const learned = known + unknown;
+  const learnedPct = total > 0 ? Math.round((learned / total) * 100) : 0;
+  const knownPctNum = total > 0 ? (known / total) * 100 : 0;
+  const unknownPctNum = total > 0 ? (unknown / total) * 100 : 0;
+  const unseenPctNum = total > 0 ? (unseen / total) * 100 : 0;
+  const isAllMastered = total > 0 && known === total;
+  const isAllLearned = total > 0 && learned === total;
+  const pctDisplay = isAllMastered
+    ? '👑 100%'
+    : isAllLearned
+    ? '🏆 100%'
+    : `${learnedPct}%`;
+  const groupLabel = `Bộ thủ ${radicalGroupIndex + 1} nét`;
+
   return (
     <>
       <button class="back-btn" onClick={() => window.SpaRouter.navigateBack()}>← Quay lại Bộ thủ</button>{' '}
@@ -394,18 +441,79 @@ export function RadicalCardsScreen() {
       </div>{' '}
 
       <div id="radicalStudyView" role="tabpanel" aria-labelledby="radicalFlashcardTab" hidden={overview}>
-        <div class="stat-grid">
-          <StatBox id="rs-total" value={s.total} label="tổng số bộ" />{' '}
-          <StatBox id="rs-unknown" value={s.unknown} color="var(--danger-text)" label="chưa nhớ" />{' '}
-          <StatBox id="rs-known" value={s.known} color="var(--success-text)" label="đã nhớ" />{' '}
-          <StatBox id="rs-unseen" value={s.unseen} color="var(--text-secondary)" label="chưa học" />
-        </div>{' '}
+        {cardBuilt && (
+          <section class="learning-progress-navigator" aria-label={`Bộ điều hướng tiến độ học ${groupLabel}`}>
+            <div class="progress-nav-header">
+              <div class="progress-nav-summary-group">
+                <span class="progress-nav-level-tag">{groupLabel}</span>
+                <div class="progress-nav-metric-main">
+                  <span class="progress-nav-metric-label">Đã học</span>
+                  <span class="progress-nav-metric-val"><strong>{learned}</strong> / {total}</span>
+                  <span
+                    class={`progress-nav-metric-pct${isAllLearned ? ' is-completed' : ''}`}
+                    style={isAllLearned ? { cursor: 'pointer' } : undefined}
+                    onClick={isAllLearned && typeof window.showCelebration === 'function' ? () => window.showCelebration(isAllMastered ? 'mastered' : 'learned', true) : undefined}
+                    title={isAllLearned ? 'Nhấn để xem lại hiệu ứng thành tựu 🎉' : undefined}
+                  >
+                    {pctDisplay}
+                  </span>
+                </div>
+              </div>
+            </div>
 
-        <div class="filter-row" id="radicalFilterRow">
-          {cardBuilt && FILTERS.map((f) => (
-            <button key={f.key} type="button" class={'filter-btn' + (radicalCurrentFilter === f.key ? ' active' : '')} onClick={() => setRadicalFilter(f.key)}>{f.label}</button>
-          ))}
-        </div>{' '}
+            <div
+              class="progress-nav-bar"
+              role="img"
+              aria-label={`Tiến độ học: ${known} đã nhớ, ${unknown} chưa nhớ, ${unseen} chưa học trên tổng số ${total} bộ`}
+            >
+              <div class="progress-nav-track">
+                <div
+                  class="progress-nav-seg progress-nav-seg--known"
+                  style={`width: ${knownPctNum}%;`}
+                  title={`Đã nhớ: ${known} bộ (${Math.round(knownPctNum)}%)`}
+                />
+                <div
+                  class="progress-nav-seg progress-nav-seg--unknown"
+                  style={`width: ${unknownPctNum}%;`}
+                  title={`Chưa nhớ: ${unknown} bộ (${Math.round(unknownPctNum)}%)`}
+                />
+                <div
+                  class="progress-nav-seg progress-nav-seg--unseen"
+                  style={`width: ${unseenPctNum}%;`}
+                  title={`Chưa học: ${unseen} bộ`}
+                />
+              </div>
+            </div>
+
+            <div class="progress-nav-cards" role="radiogroup" aria-label="Lọc danh sách bộ thủ">
+              {FILTERS.map((f) => {
+                const count = f.key === 'all' ? total : f.key === 'known' ? known : f.key === 'unknown' ? unknown : unseen;
+                const isSelected = radicalCurrentFilter === f.key;
+                const isEmpty = count === 0;
+                return (
+                  <button
+                    key={f.key}
+                    type="button"
+                    class={`progress-nav-card progress-nav-card--${f.key}${isSelected ? ' is-active' : ''}${isEmpty ? ' is-empty' : ''}`}
+                    onClick={() => setRadicalFilter(f.key)}
+                    role="radio"
+                    aria-checked={isSelected}
+                    aria-label={`${f.label}: ${count} bộ${isSelected ? ', đang chọn' : ''}`}
+                    title={`${f.label}: ${count} bộ${isEmpty ? ' (Chưa có bộ)' : ''}`}
+                  >
+                    <div class="progress-nav-card-head">
+                      <span class="progress-nav-card-icon" aria-hidden="true">{f.icon}</span>
+                      <span class="progress-nav-card-label">{f.label}</span>
+                    </div>
+                    <div class="progress-nav-card-body">
+                      <span class="progress-nav-card-count">{count}</span>
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+          </section>
+        )}
 
         <div class="transfer-panel" id="radicalTransferPanel" hidden>
           <div class="transfer-panel-header">

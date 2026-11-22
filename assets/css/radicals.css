@@ -455,3 +455,68 @@
   font-size: 13px;
 }
 
+/* ==========================================================================
+   Radical Cards Screen: Learning Progress Navigator Integration
+   ========================================================================== */
+
+#screenRadicalCards .learning-progress-navigator {
+  margin: 0 auto 12px;
+}
+
+#screenRadicalCards .progress-nav-metric-val {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+#screenRadicalCards .progress-nav-metric-pct {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+#screenRadicalCards .progress-nav-track {
+  height: 6px;
+  background: rgba(168, 139, 98, 0.22);
+  border-radius: 999px;
+}
+
+:root[data-theme="dark"] #screenRadicalCards .progress-nav-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#screenRadicalCards .progress-nav-seg--known {
+  background: var(--state-known);
+}
+
+#screenRadicalCards .progress-nav-seg--unknown {
+  background: var(--state-due);
+}
+
+#screenRadicalCards .progress-nav-card {
+  min-height: 38px !important;
+  height: 38px;
+  padding: 0 12px !important;
+  border-radius: 10px;
+  border-color: var(--border);
+}
+
+#screenRadicalCards .progress-nav-card--all.is-active {
+  border-color: var(--hs-accent-line, var(--border-strong));
+  background: var(--hs-accent-tint, var(--accent-light));
+}
+
+#screenRadicalCards .progress-nav-card--known.is-active {
+  border-color: var(--state-known-border);
+  background: var(--state-known-bg);
+}
+
+#screenRadicalCards .progress-nav-card--unknown.is-active {
+  border-color: var(--state-due-border);
+  background: var(--state-due-bg);
+}
+
+#screenRadicalCards .progress-nav-card--unseen.is-active {
+  border-color: var(--state-new-border);
+  background: var(--state-new-bg);
+}
+
+
