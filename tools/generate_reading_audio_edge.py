@@ -59,6 +59,7 @@ def parse_args() -> argparse.Namespace:
         default="HSK1,HSK2,HSK3,HSK4,HSK5,HSK6",
         help="Comma-separated levels to process (e.g. HSK1,HSK2,HSK3)",
     )
+    parser.add_argument("--series", help="Filter by series name (e.g. textbook, wanwu)")
     parser.add_argument("--story-id", help="Only process a single story id")
     parser.add_argument("--voice", default=DEFAULT_VOICE, help="Edge TTS voice name (default: zh-CN-XiaoxiaoNeural)")
     parser.add_argument("--bitrate", default=DEFAULT_BITRATE, help="Target MP3 bitrate (default: 64k)")
@@ -162,6 +163,8 @@ async def main_async() -> int:
         if target_levels and item_level not in target_levels:
             continue
         if args.story_id and item.get("id") != args.story_id:
+            continue
+        if args.series and item.get("series") != args.series:
             continue
         stories_to_process.append(item)
 

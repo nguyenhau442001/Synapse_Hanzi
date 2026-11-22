@@ -23,7 +23,57 @@
   border-bottom: 1px solid var(--border-subtle);
 }
 
-.app-brand-badge { gap: var(--space-3); }
+.app-brand-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.global-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 34px;
+  padding: 0 11px;
+  border-radius: var(--radius-btn);
+  border: 1px solid var(--border);
+  background: var(--surface-subtle);
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+  transition: all var(--dur-fast) var(--ease-out);
+}
+.global-back-btn[hidden] {
+  display: none !important;
+}
+.global-back-btn:hover {
+  background: var(--surface-hover);
+  color: var(--brand-primary);
+  border-color: var(--accent);
+}
+.global-back-btn:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+.global-back-icon {
+  flex-shrink: 0;
+  transition: transform var(--dur-fast) var(--ease-out);
+}
+.global-back-btn:hover .global-back-icon {
+  transform: translateX(-2px);
+}
+@media (max-width: 480px) {
+  .global-back-btn {
+    padding: 0 8px;
+  }
+  .global-back-text {
+    display: none;
+  }
+}
 
 .app-brand-logo-img {
   width: 34px;

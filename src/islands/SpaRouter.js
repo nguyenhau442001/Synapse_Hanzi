@@ -98,6 +98,7 @@ export const SpaRouter = (function() {
     } catch (e) {
       console.warn('SpaRouter: pushState failed', e);
     }
+    updateGlobalBackButton();
   }
 
   function replaceView(state, customUrl = null) {
@@ -107,6 +108,21 @@ export const SpaRouter = (function() {
     } catch (e) {
       console.warn('SpaRouter: replaceState failed', e);
     }
+    updateGlobalBackButton();
+  }
+
+  function updateGlobalBackButton() {
+    const btn = document.getElementById('globalBackBtn');
+    if (!btn) return;
+    const state = window.history.state || getCurrentUrlState();
+    const isRoot = (!state || state.view === 'vocab' || (!state.view && !state.tab)) &&
+                   (!state || !state.subTab || state.subTab === 'level') &&
+                   !document.body.classList.contains('study-mode') &&
+                   !document.body.classList.contains('flashcard-study-mode') &&
+                   !document.body.classList.contains('today-reviews-focus-mode');
+
+    const canGoBack = hasNavigatedInApp || !isRoot;
+    btn.hidden = !canGoBack;
   }
 
   function navigateBack() {
@@ -122,26 +138,40 @@ export const SpaRouter = (function() {
     if (currentState.drawerOpen) {
       if (typeof closeAllStudyDrawers === 'function') closeAllStudyDrawers();
       replaceView({ ...currentState, drawerOpen: false });
+      updateGlobalBackButton();
       return;
     }
     if (currentState.view === 'cards') {
       if (typeof goBackToPicker === 'function') goBackToPicker();
       replaceView({ view: 'vocab' });
+      updateGlobalBackButton();
       return;
     }
     if (currentState.view === 'todayReviews') {
       if (typeof closeTodayReviews === 'function') closeTodayReviews();
       replaceView({ view: 'vocab' });
+      updateGlobalBackButton();
       return;
     }
     if (currentState.view === 'radicalCards') {
       if (typeof goBackToRadicalHub === 'function') goBackToRadicalHub();
       replaceView({ view: 'tab', tab: 'radicals' });
+      updateGlobalBackButton();
       return;
     }
     if (currentState.view === 'tab') {
-      if (typeof setPrimaryTab === 'function') setPrimaryTab('vocab');
-      replaceView({ view: 'vocab' });
+      const subtab = currentState.tab;
+      if (['speedQuiz', 'sentenceGame'].includes(subtab)) {
+        if (typeof setPrimaryTab === 'function') setPrimaryTab('writing');
+        replaceView({ view: 'tab', tab: 'writing' });
+      } else if (subtab === 'reading') {
+        if (typeof setPrimaryTab === 'function') setPrimaryTab('gradedReading');
+        replaceView({ view: 'tab', tab: 'gradedReading' });
+      } else {
+        if (typeof setPrimaryTab === 'function') setPrimaryTab('vocab');
+        replaceView({ view: 'vocab' });
+      }
+      updateGlobalBackButton();
       return;
     }
   }
@@ -244,6 +274,7 @@ export const SpaRouter = (function() {
         startRadicalStudy(state.mode || 'basic50', 0);
       }
     }
+    updateGlobalBackButton();
   }
 
   function init() {
@@ -251,9 +282,25 @@ export const SpaRouter = (function() {
     initialized = true;
     window.addEventListener('popstate', onPopState);
 
+    const backBtn = document.getElementById('globalBackBtn');
+    if (backBtn) {
+      backBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        navigateBack();
+      });
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.altKey && e.key === 'ArrowLeft') {
+        e.preventDefault();
+        navigateBack();
+      }
+    });
+
     // Bootstrap current state on initial load
     const initialState = getCurrentUrlState();
     replaceView(initialState);
+    updateGlobalBackButton();
 
     // If initial URL had deep link parameters, activate corresponding view on load
     function activateInitialView() {
@@ -304,6 +351,7 @@ export const SpaRouter = (function() {
     pushView,
     replaceView,
     navigateBack,
+    updateGlobalBackButton,
     isNavigatingFromPopstate: () => isNavigatingFromPopstate
   };
 })();

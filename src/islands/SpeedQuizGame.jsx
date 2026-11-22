@@ -304,8 +304,12 @@ export function exitSpeedQuizGame() {
   clearInterval(timerId);
   solved.value = true;
   closeSpeedQuizExplanationModal();
-  if (typeof window.setPrimaryTab === 'function') window.setPrimaryTab('vocab');
-  if (typeof window.goBackToPicker === 'function') window.goBackToPicker();
+  if (typeof window.SpaRouter !== 'undefined' && typeof window.SpaRouter.navigateBack === 'function') {
+    window.SpaRouter.navigateBack();
+  } else {
+    if (typeof window.setPrimaryTab === 'function') window.setPrimaryTab('writing');
+    if (typeof window.goBackToPicker === 'function') window.goBackToPicker();
+  }
 }
 
 function TimerBar() {

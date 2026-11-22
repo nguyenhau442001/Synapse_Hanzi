@@ -16,6 +16,21 @@ export function calculateMedian(numbers) {
 }
 
 /**
+ * Applies a 1D median filter to suppress transient audio spikes / octave leaps.
+ */
+export function applyMedianFilter(sequence, windowSize = 3) {
+  if (!sequence || sequence.length <= windowSize) return sequence ? sequence.slice() : [];
+  const radius = Math.floor(windowSize / 2);
+  const filtered = new Array(sequence.length);
+  for (let i = 0; i < sequence.length; i++) {
+    const start = Math.max(0, i - radius);
+    const end = Math.min(sequence.length, i + radius + 1);
+    filtered[i] = calculateMedian(sequence.slice(start, end));
+  }
+  return filtered;
+}
+
+/**
  * Calculates Dynamic Time Warping (DTW) distance between two numerical sequences.
  *
  * @param {Array<number>} seqA First sequence
@@ -43,103 +58,184 @@ export function calculateDtwDistance(seqA, seqB) {
 }
 
 /**
+ * Extracts pitch contour slope, register endpoints, and directional trend.
+ */
+export function evaluateToneMetrics(pitchPoints) {
+  if (!pitchPoints || pitchPoints.length < 3) {
+    return {
+      slope: 'flat',
+      delta: 0,
+      avgStart: 3,
+      avgMid: 3,
+      avgEnd: 3,
+      minPitch: 3,
+      maxPitch: 3,
+      avgPitch: 3
+    };
+  }
+  const n = pitchPoints.length;
+  const startSlice = pitchPoints.slice(0, Math.ceil(n / 4));
+  const midSlice = pitchPoints.slice(Math.floor(n / 3), Math.floor((2 * n) / 3));
+  const endSlice = pitchPoints.slice(-Math.ceil(n / 4));
+
+  const avgStart = startSlice.reduce((a, b) => a + b, 0) / startSlice.length;
+  const avgMid = midSlice.length > 0 ? midSlice.reduce((a, b) => a + b, 0) / midSlice.length : avgStart;
+  const avgEnd = endSlice.reduce((a, b) => a + b, 0) / endSlice.length;
+  const avgPitch = pitchPoints.reduce((a, b) => a + b, 0) / n;
+  const minPitch = Math.min(...pitchPoints);
+  const maxPitch = Math.max(...pitchPoints);
+  const delta = avgEnd - avgStart;
+
+  let slope = 'flat';
+  // Dipping (Tone 3): middle drops significantly below start and rises toward end
+  if (avgMid < avgStart - 0.35 && avgMid < avgEnd - 0.25) {
+    slope = 'dipping';
+  } else if (delta > 0.6) {
+    slope = 'rising';
+  } else if (delta < -0.6) {
+    slope = 'falling';
+  }
+
+  return {
+    slope,
+    delta,
+    avgStart,
+    avgMid,
+    avgEnd,
+    minPitch,
+    maxPitch,
+    avgPitch
+  };
+}
+
+/**
  * Evaluates the slope / direction trend of a pitch contour segment.
  * Returns: 'flat', 'rising', 'falling', or 'dipping'.
  */
 export function evaluateSlope(pitchPoints) {
-  if (!pitchPoints || pitchPoints.length < 3) return 'flat';
-  const start = pitchPoints.slice(0, Math.ceil(pitchPoints.length / 4));
-  const middle = pitchPoints.slice(Math.floor(pitchPoints.length / 3), Math.floor((2 * pitchPoints.length) / 3));
-  const end = pitchPoints.slice(-Math.ceil(pitchPoints.length / 4));
+  return evaluateToneMetrics(pitchPoints).slope;
+}
 
-  const avgStart = start.reduce((a, b) => a + b, 0) / start.length;
-  const avgMid = middle.reduce((a, b) => a + b, 0) / middle.length;
-  const avgEnd = end.reduce((a, b) => a + b, 0) / end.length;
+/**
+ * Calculates tone-specific contour penalty and diagnosis based on Chao scale requirements.
+ */
+export function evaluateToneScorePenalty(expectedTone, metrics) {
+  let penalty = 0;
+  let status = 'good';
+  let advice = '';
 
-  const deltaTotal = avgEnd - avgStart;
+  switch (expectedTone) {
+    case 1: // 55 High Level
+      if (metrics.slope === 'falling') {
+        penalty += 35;
+        status = 'needs_work';
+        advice = 'Thanh 1 (55): Bạn bị chúc giọng xuống giống dấu huyền tiếng Việt. Hãy giữ cao độ phẳng, ngân đều ở mức cao.';
+      } else if (metrics.avgPitch < 3.2) {
+        penalty += 20;
+        status = 'fair';
+        advice = 'Thanh 1 (55): Cao độ hơi thấp. Hãy phát âm cao giọng và ngân dài hơn.';
+      } else if (Math.abs(metrics.delta) > 0.9) {
+        penalty += 15;
+        status = 'fair';
+        advice = 'Thanh 1 (55): Cần giữ cao độ ổn định và ngân đều hơn.';
+      } else {
+        status = 'excellent';
+        advice = 'Thanh 1 (55): Ngân cao và bằng phẳng rất chuẩn!';
+      }
+      break;
 
-  // Check for dipping (Tone 3): middle is significantly lower than both start and end
-  if (avgMid < avgStart - 0.4 && avgMid < avgEnd - 0.3) {
-    return 'dipping';
+    case 2: // 35 Rising
+      if (metrics.slope === 'falling') {
+        penalty += 45;
+        status = 'needs_work';
+        advice = 'Thanh 2 (35): Giọng bị rơi xuống thay vì vuốt lên. Hãy bắt đầu từ tầm trung (3) và vút lên mức cao (5).';
+      } else if (metrics.slope === 'flat' || metrics.delta < 0.6) {
+        penalty += 35;
+        status = 'needs_work';
+        advice = 'Thanh 2 (35): Cao độ chưa vuốt lên đủ cao. Hãy dứt khoát đưa giọng từ trung lên cao.';
+      } else if (metrics.avgEnd < 3.7) {
+        penalty += 15;
+        status = 'fair';
+        advice = 'Thanh 2 (35): Hướng đi lên tốt, cố gắng vuốt cao hơn về cuối âm tiết.';
+      } else {
+        status = 'excellent';
+        advice = 'Thanh 2 (35): Đường vuốt lên rất tự nhiên và chuẩn xác!';
+      }
+      break;
+
+    case 3: // 214 or 21 (Half-third)
+      if (metrics.slope === 'rising' && metrics.avgMid >= metrics.avgStart - 0.2) {
+        penalty += 40;
+        status = 'needs_work';
+        advice = 'Thanh 3 (214): Bạn đọc thành dấu sắc hoặc hỏi tiếng Việt quá sớm. Cần dìm giọng xuống đáy (1) trước.';
+      } else if (metrics.minPitch > 3.0) {
+        penalty += 25;
+        status = 'needs_work';
+        advice = 'Thanh 3 (214): Hãy hạ giọng xuống sâu hơn ở đáy âm vực (mức 1-2).';
+      } else if (metrics.slope === 'falling') {
+        // Half-third is acceptable for falling into low register
+        status = 'good';
+        advice = 'Thanh 3: Hạ giọng trầm tốt, giữ nhịp tự nhiên.';
+      } else {
+        status = 'excellent';
+        advice = 'Thanh 3 (214): Độ uốn và dìm giọng xuống đáy âm vực rất tốt!';
+      }
+      break;
+
+    case 4: // 51 High Falling
+      if (metrics.slope === 'rising') {
+        penalty += 50;
+        status = 'needs_work';
+        advice = 'Thanh 4 (51): Lỗi phổ biến của người Việt là đọc thành dấu sắc (đi lên). Thanh 4 phải rơi dứt khoát từ 5 xuống 1!';
+      } else if (metrics.slope === 'flat' || Math.abs(metrics.delta) < 0.7) {
+        penalty += 40;
+        status = 'needs_work';
+        advice = 'Thanh 4 (51): Chưa đủ độ dốc chúc xuống (đang bị đọc thành thanh ngang). Hãy dứt khoát nhấn mạnh từ cao xuống thấp.';
+      } else if (metrics.delta > -1.0) {
+        penalty += 15;
+        status = 'fair';
+        advice = 'Thanh 4 (51): Hướng rơi tốt, nhưng cần hạ dứt khoát hơn từ cao xuống thấp.';
+      } else if (metrics.avgStart < 3.4) {
+        penalty += 10;
+        status = 'fair';
+        advice = 'Thanh 4 (51): Điểm bắt đầu hơi thấp. Hãy mở đầu ở âm vực cao rồi rơi xuống.';
+      } else {
+        status = 'excellent';
+        advice = 'Thanh 4 (51): Rơi từ cao xuống thấp dứt khoát, rất chuẩn âm điệu!';
+      }
+      break;
+
+    default: // 5 Neutral
+      status = 'good';
+      advice = 'Thanh nhẹ: phát âm ngắn, nhẹ và tự nhiên.';
+      break;
   }
 
-  if (deltaTotal > 0.6) return 'rising';
-  if (deltaTotal < -0.6) return 'falling';
-  return 'flat';
+  return { penalty, status, advice };
 }
 
 /**
  * Generates pedagogical diagnostic advice for Vietnamese learners.
  */
-export function getTonePedagogicalAdvice(expectedTone, actualSlope, dtwScore) {
-  if (dtwScore >= 85) {
+export function getTonePedagogicalAdvice(expectedTone, actualSlope, score, metrics = null) {
+  const evaluatedMetrics = metrics || {
+    slope: actualSlope,
+    delta: actualSlope === 'rising' ? 1.0 : actualSlope === 'falling' ? -1.0 : 0,
+    avgStart: 3,
+    avgMid: 3,
+    avgEnd: 3,
+    minPitch: 3,
+    maxPitch: 3,
+    avgPitch: 3
+  };
+  const result = evaluateToneScorePenalty(expectedTone, evaluatedMetrics);
+  if (score >= 85) {
     return {
       status: 'excellent',
       advice: 'Phát âm thanh điệu rất chuẩn xác, đường cao độ mượt mà!'
     };
   }
-
-  switch (expectedTone) {
-    case 1: // 55
-      if (actualSlope === 'falling') {
-        return {
-          status: 'needs_work',
-          advice: 'Thanh 1 (55): Bạn bị chúc giọng xuống giống dấu huyền tiếng Việt. Hãy giữ cao độ phẳng, ngân đều ở mức cao.'
-        };
-      }
-      return {
-        status: 'fair',
-        advice: 'Thanh 1 (55): Cần giữ cao độ ổn định và ngân đều hơn.'
-      };
-
-    case 2: // 35
-      if (actualSlope !== 'rising') {
-        return {
-          status: 'needs_work',
-          advice: 'Thanh 2 (35): Cao độ chưa vuốt lên đủ cao. Hãy bắt đầu từ tầm trung (3) và vút lên mức cao (5).'
-        };
-      }
-      return {
-        status: 'fair',
-        advice: 'Thanh 2 (35): Hướng đi lên tốt, cố gắng vuốt tự nhiên hơn.'
-      };
-
-    case 3: // 214 or half-3rd (21)
-      if (actualSlope === 'rising') {
-        return {
-          status: 'needs_work',
-          advice: 'Thanh 3 (214): Bạn đọc thành dấu sắc hoặc hỏi tiếng Việt quá sớm. Cần dìm giọng xuống đáy (1) trước.'
-        };
-      }
-      return {
-        status: 'fair',
-        advice: 'Thanh 3 (214): Hãy hạ giọng xuống sâu hơn ở giữa âm tiết.'
-      };
-
-    case 4: // 51
-      if (actualSlope === 'rising') {
-        return {
-          status: 'needs_work',
-          advice: 'Thanh 4 (51): Lỗi phổ biến của người Việt là đọc thành dấu sắc (đi lên). Thanh 4 phải rơi dứt khoát từ 5 xuống 1!'
-        };
-      }
-      if (actualSlope === 'flat') {
-        return {
-          status: 'needs_work',
-          advice: 'Thanh 4 (51): Chưa đủ độ dốc chúc xuống. Hãy dứt khoát nhấn mạnh từ cao xuống thấp.'
-        };
-      }
-      return {
-        status: 'fair',
-        advice: 'Thanh 4 (51): Hướng rơi tốt, có thể hạ giọng dứt khoát hơn một chút.'
-      };
-
-    default:
-      return {
-        status: 'good',
-        advice: 'Thanh nhẹ: phát âm ngắn, nhẹ và tự nhiên.'
-      };
-  }
+  return result;
 }
 
 /**
@@ -167,8 +263,9 @@ export function scorePitchContour(userFrames, targetContour, syllableInfos) {
   const frequencies = voicedFrames.map((f) => f.frequency);
   const medianHz = calculateMedian(frequencies);
 
-  // Convert voiced frames to Chao 5-scale
-  const userChaoPitches = voicedFrames.map((f) => frequencyToChaoScale(f.frequency, medianHz));
+  // Convert voiced frames to Chao 5-scale and apply 3-point median filter to remove noise spikes
+  const rawChaoPitches = voicedFrames.map((f) => frequencyToChaoScale(f.frequency, medianHz));
+  const userChaoPitches = applyMedianFilter(rawChaoPitches, 3);
 
   // Partition target contour and user frames by syllable
   const numSyllables = syllableInfos.length;
@@ -187,12 +284,17 @@ export function scorePitchContour(userFrames, targetContour, syllableInfos) {
     const userSlice = userChaoPitches.slice(sliceStart, Math.max(sliceStart + 3, sliceEnd));
 
     const distance = calculateDtwDistance(userSlice, targetPointsForSyl);
-    // DTW distance on a 1-5 scale typically ranges 0.0 (exact) to 3.0 (opposite).
-    // Convert to percentage score: 0 dist = 100%, 1.5 dist = 50%, >= 3.0 dist = 0%
-    const rawScore = Math.max(0, Math.min(100, Math.round(100 - (distance / 2.0) * 80)));
+    // DTW base score: 0 dist = 100%, 1.5 dist = 40%, >= 2.5 dist = 0%
+    const dtwBaseScore = Math.max(0, Math.min(100, Math.round(100 - (distance / 2.0) * 80)));
 
-    const slope = evaluateSlope(userSlice);
-    const advice = getTonePedagogicalAdvice(sylInfo.actualTone, slope, rawScore);
+    // Evaluate tone contour direction and slope requirements
+    const metrics = evaluateToneMetrics(userSlice);
+    const { penalty, status, advice } = evaluateToneScorePenalty(sylInfo.actualTone, metrics);
+
+    // Deduct directional penalty from DTW base score
+    const finalSylScore = Math.max(0, Math.min(100, dtwBaseScore - penalty));
+
+    const resolvedStatus = finalSylScore >= 80 ? 'excellent' : finalSylScore >= 60 ? 'fair' : 'needs_work';
 
     breakdown.push({
       syllableIndex: s,
@@ -201,19 +303,27 @@ export function scorePitchContour(userFrames, targetContour, syllableInfos) {
       tone: sylInfo.actualTone,
       rawTone: sylInfo.rawTone,
       sandhiApplied: sylInfo.sandhiApplied,
-      score: rawScore,
-      slope,
-      status: advice.status,
-      advice: advice.advice
+      score: finalSylScore,
+      dtwScore: dtwBaseScore,
+      slope: metrics.slope,
+      status: resolvedStatus,
+      advice: finalSylScore >= 85 ? 'Phát âm thanh điệu rất chuẩn xác, đường cao độ mượt mà!' : advice
     });
 
-    totalScoreSum += rawScore;
+    totalScoreSum += finalSylScore;
   }
 
   const overallPitchScore = Math.round(totalScoreSum / Math.max(1, numSyllables));
   let stars = 1;
-  if (overallPitchScore >= 85) stars = 3;
-  else if (overallPitchScore >= 65) stars = 2;
+  if (overallPitchScore >= 80) stars = 3;
+  else if (overallPitchScore >= 60) stars = 2;
+
+  let message = 'Chưa đạt. Cần cải thiện độ dốc thanh điệu để tự nhiên hơn.';
+  if (overallPitchScore >= 80) {
+    message = 'Rất tuyệt vời! Phát âm chuẩn âm điệu.';
+  } else if (overallPitchScore >= 60) {
+    message = 'Khá tốt! Chú ý một vài điểm thanh điệu bên dưới.';
+  }
 
   return {
     valid: true,
@@ -222,8 +332,6 @@ export function scorePitchContour(userFrames, targetContour, syllableInfos) {
     medianHz: Math.round(medianHz),
     userChaoPitches,
     toneBreakdown: breakdown,
-    message: overallPitchScore >= 80 ? 'Rất tuyệt vời! Phát âm chuẩn âm điệu.' :
-             overallPitchScore >= 60 ? 'Khá tốt! Chú ý một vài điểm thanh điệu bên dưới.' :
-             'Cần cải thiện độ dốc thanh điệu để tự nhiên hơn.'
+    message
   };
 }
