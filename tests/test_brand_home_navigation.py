@@ -40,3 +40,12 @@ def test_brand_home_button_styles():
     assert ".app-brand-home-btn:active {" in DESIGN_SYSTEM_CSS
     assert ".app-brand-home-btn {" in BASE_CSS
     assert ".app-brand-home-btn" in FLASHCARDS_CSS
+
+
+def test_global_back_button_hidden_on_home_page():
+    assert 'id="globalBackBtn"' in INDEX_HTML
+    assert '<button type="button" id="globalBackBtn" class="global-back-btn" aria-label="Quay lại trang trước" title="Quay lại trang trước (Alt+Left)" hidden>' in INDEX_HTML
+    assert "function isRootView(state)" in SPA_ROUTER_JS
+    assert "btn.hidden = isRoot;" in SPA_ROUTER_JS
+    assert "isRootView," in SPA_ROUTER_JS
+

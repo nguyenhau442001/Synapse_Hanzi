@@ -111,21 +111,34 @@ export const SpaRouter = (function() {
     updateGlobalBackButton();
   }
 
+  function isRootView(state) {
+    const s = state || window.history.state || getCurrentUrlState();
+    const inStudyMode = document.body.classList.contains('study-mode') ||
+                        document.body.classList.contains('flashcard-study-mode') ||
+                        document.body.classList.contains('today-reviews-focus-mode') ||
+                        document.body.classList.contains('review-focus-mode');
+    if (inStudyMode) return false;
+
+    if (s && s.drawerOpen) return false;
+
+    const qDrawer = document.getElementById('quickAccessDrawer');
+    if (qDrawer && qDrawer.getAttribute('aria-hidden') === 'false') return false;
+
+    const isVocab = (!s || s.view === 'vocab' || (!s.view && !s.tab));
+    const isVocabSub = !s || !s.subTab || s.subTab === 'level' || s.subTab === 'topic';
+    return Boolean(isVocab && isVocabSub);
+  }
+
   function updateGlobalBackButton() {
     const btn = document.getElementById('globalBackBtn');
     if (!btn) return;
-    const state = window.history.state || getCurrentUrlState();
-    const isRoot = (!state || state.view === 'vocab' || (!state.view && !state.tab)) &&
-                   (!state || !state.subTab || state.subTab === 'level') &&
-                   !document.body.classList.contains('study-mode') &&
-                   !document.body.classList.contains('flashcard-study-mode') &&
-                   !document.body.classList.contains('today-reviews-focus-mode');
-
-    const canGoBack = hasNavigatedInApp || !isRoot;
-    btn.hidden = !canGoBack;
+    const isRoot = isRootView();
+    // On the home page (root view), the back button is strictly hidden.
+    btn.hidden = isRoot;
   }
 
   function navigateBack() {
+    if (isRootView()) return;
     if (hasNavigatedInApp && window.history.length > 1) {
       window.history.back();
     } else {
@@ -410,6 +423,7 @@ export const SpaRouter = (function() {
     navigateBack,
     navigateToHome,
     updateGlobalBackButton,
+    isRootView,
     isNavigatingFromPopstate: () => isNavigatingFromPopstate
   };
 })();
