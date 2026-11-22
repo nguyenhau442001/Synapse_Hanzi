@@ -6,6 +6,8 @@
 import { render } from 'preact';
 import { signal } from '@preact/signals';
 import { onDomReady } from './domReady';
+import { loadWeakWords, saveWeakWords, formatWeakWordLevel } from './WeakWords.jsx';
+import { speakerIconSvg } from './AppUtils.js';
 
 /* global SPEECH_RATE, currentLevel -- classic-script globals */
 
@@ -23,7 +25,7 @@ let modalEl = null;
 let inputEl = null;
 let searchTimer = null;
 
-const speakerSvg = (size) => ({ __html: window.speakerIconSvg(size) });
+const speakerSvg = (size) => ({ __html: speakerIconSvg(size) });
 
 function speak(text, btn) {
   if (typeof window.speakText === 'function') window.speakText(text, btn, typeof SPEECH_RATE !== 'undefined' ? SPEECH_RATE : 0.85);
@@ -37,11 +39,14 @@ function setHeaderBadgeActive(tab) {
 }
 
 // ---- Drawer ------------------------------------------------------------------------------------
-export function openQuickAccessDrawer(tab) {
+export function openQuickAccessDrawer(tab, opts = {}) {
+  if (!drawerEl) {
+    drawerEl = document.getElementById('quickAccessDrawer');
+  }
   if (!drawerEl) return;
   const targetTab = tab || 'saved';
-  // Clicking the badge of the tab that is already open closes the drawer
-  if (drawerOpen.value && drawerTab.value === targetTab) {
+  // Clicking the badge of the tab that is already open closes the drawer (unless forced open)
+  if (!opts.forceOpen && drawerOpen.value && drawerTab.value === targetTab) {
     closeQuickAccessDrawer();
     return;
   }
@@ -53,6 +58,9 @@ export function openQuickAccessDrawer(tab) {
 }
 
 export function closeQuickAccessDrawer() {
+  if (!drawerEl) {
+    drawerEl = document.getElementById('quickAccessDrawer');
+  }
   if (!drawerEl) return;
   drawerOpen.value = false;
   drawerEl.classList.remove('is-open');
@@ -79,7 +87,9 @@ export function updateSavedBadgeCounts(count) {
 }
 
 export function renderQuickSavedWords() {
-  const list = typeof window.loadWeakWords === 'function' ? window.loadWeakWords() : [];
+  const list = typeof loadWeakWords === 'function'
+    ? loadWeakWords()
+    : (typeof window.loadWeakWords === 'function' ? window.loadWeakWords() : []);
   updateSavedBadgeCounts(list.length);
   savedWords.value = list;
 }
@@ -96,8 +106,10 @@ function openWord(level, idOrHanzi, hanzi) {
 }
 
 function removeSavedWord(hanzi) {
-  if (typeof window.loadWeakWords !== 'function' || typeof window.saveWeakWords !== 'function') return;
-  window.saveWeakWords(window.loadWeakWords().filter((w) => w.hanzi !== hanzi));
+  const fnLoad = typeof loadWeakWords === 'function' ? loadWeakWords : window.loadWeakWords;
+  const fnSave = typeof saveWeakWords === 'function' ? saveWeakWords : window.saveWeakWords;
+  if (!fnLoad || !fnSave) return;
+  fnSave(fnLoad().filter((w) => w.hanzi !== hanzi));
   renderQuickSavedWords();
   if (typeof window.renderWeakWordsList === 'function') window.renderWeakWordsList();
   if (typeof window.updateWeakWordToggleButton === 'function') window.updateWeakWordToggleButton();

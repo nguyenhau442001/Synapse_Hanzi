@@ -3,7 +3,7 @@
 
 export function openMobileNotebookSheet() {
   if (typeof window.openQuickAccessDrawer === 'function') {
-    window.openQuickAccessDrawer('saved');
+    window.openQuickAccessDrawer('saved', { forceOpen: true });
     return;
   }
   const dialog = document.getElementById('mobileDockDialog');
@@ -118,6 +118,24 @@ export function initMobileNavDialogEvents() {
     mobVocab.addEventListener('click', function() {
       if (typeof setPrimaryTab === 'function') setPrimaryTab('vocab');
       else if (window.setPrimaryTab) window.setPrimaryTab('vocab');
+    });
+  }
+
+  const mobCurriculum = document.getElementById('mobNavCurriculum');
+  if (mobCurriculum && !mobCurriculum._hasNavListener) {
+    mobCurriculum._hasNavListener = true;
+    mobCurriculum.addEventListener('click', function() {
+      if (typeof setPrimaryTab === 'function') setPrimaryTab('curriculum');
+      else if (window.setPrimaryTab) window.setPrimaryTab('curriculum');
+    });
+  }
+
+  const mobReading = document.getElementById('mobNavReading');
+  if (mobReading && !mobReading._hasNavListener) {
+    mobReading._hasNavListener = true;
+    mobReading.addEventListener('click', function() {
+      if (typeof setPrimaryTab === 'function') setPrimaryTab('gradedReading');
+      else if (window.setPrimaryTab) window.setPrimaryTab('gradedReading');
     });
   }
 

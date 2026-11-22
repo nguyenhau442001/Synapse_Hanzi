@@ -898,6 +898,17 @@ export function openReviewBottomSheet() {
   const sheet = document.getElementById('reviewBottomSheet');
   if (!sheet) return;
   renderReviewBottomSheetPanes();
+
+  // Auto-switch to weak words tab if user has saved words but 0 urgent/forgotten words
+  const weakCount = typeof loadWeakWords === 'function' ? loadWeakWords().length : 0;
+  const hwForgottenEl = document.getElementById('hwForgotten');
+  const forgotItems = hwForgottenEl ? hwForgottenEl.querySelectorAll('.hw-forgot-row').length : 0;
+  if (forgotItems === 0 && weakCount > 0) {
+    switchReviewSheetTab('weak');
+  } else {
+    switchReviewSheetTab('forgot');
+  }
+
   if (typeof sheet.showModal === 'function') {
     try { sheet.showModal(); } catch (e) {}
   }
