@@ -26,7 +26,7 @@ TARGETS = {
     "assets/flashcards.css": [(r"\?v=[^\"')\s]+", "?v={v}")],
     "index.html": [
         (r"\?v=[^\"')\s]+", "?v={v}"),
-        (r'(<span class="footer-version"[^>]*>)v[^<]*(</span>)', r"\g<1>v{v}\g<2>"),
+        (r'(<span[^>]*class="[^"]*footer-version[^"]*"[^>]*>)v[^<]*(</span>)', r"\g<1>v{v}\g<2>"),
     ],
 }
 

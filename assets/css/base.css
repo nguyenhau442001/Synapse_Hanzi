@@ -417,6 +417,29 @@ body {
   color: var(--text-primary);
   opacity: 0.85;
 }
+.brand-version {
+  display: inline-flex;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 700;
+  font-family: var(--font-sans, system-ui, sans-serif);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+  padding: 1.5px 5px;
+  border-radius: 4px;
+  background: var(--surface-chip, #f1ebdd);
+  color: var(--accent, #a8322d);
+  border: 1px solid var(--border-subtle, #e8e1d7);
+  margin-left: 5px;
+  vertical-align: middle;
+  user-select: none;
+  letter-spacing: 0.02em;
+}
+:root[data-theme="dark"] .brand-version {
+  background: var(--surface-chip, #2a303a);
+  color: var(--accent-text, #e06d63);
+  border-color: var(--border-subtle, #2d333d);
+}
 .brand-tagline {
   color: var(--text-secondary);
 }
