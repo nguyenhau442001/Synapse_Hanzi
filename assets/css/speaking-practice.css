@@ -760,3 +760,459 @@
   white-space: nowrap;
 }
 
+/* ==========================================================================
+   Newbie Tone Handbook (Cẩm Nang Thanh Điệu Newbie)
+   ========================================================================== */
+
+.newbie-guide-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.newbie-hero-card {
+  background: var(--bg-surface, #ffffff);
+  border: 1px solid var(--border-color, #e7e5e4);
+  border-radius: 14px;
+  padding: 1.75rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.newbie-badge {
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  background: rgba(217, 119, 6, 0.12);
+  color: #b45309;
+  border: 1px solid rgba(217, 119, 6, 0.25);
+  border-radius: 9999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.newbie-hero-title {
+  margin: 0 0 0.75rem;
+  font-size: 1.35rem;
+  color: var(--text-main, #1c1917);
+  line-height: 1.4;
+}
+
+.newbie-hero-desc {
+  margin: 0 0 1.5rem;
+  font-size: 0.95rem;
+  color: var(--text-muted, #57534e);
+  line-height: 1.6;
+}
+
+.newbie-throat-levels {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.throat-level-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.65rem 1rem;
+  border-radius: 8px;
+  background: var(--bg-elevated, #fafaf9);
+  border: 1px solid var(--border-color, #f5f5f4);
+}
+
+.throat-level-item.lvl-5 { border-left: 4px solid #ef4444; }
+.throat-level-item.lvl-4 { border-left: 4px solid #f97316; }
+.throat-level-item.lvl-3 { border-left: 4px solid #d97706; }
+.throat-level-item.lvl-2 { border-left: 4px solid #0d9488; }
+.throat-level-item.lvl-1 { border-left: 4px solid #3b82f6; }
+
+.level-badge {
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  background: var(--border-color, #e7e5e4);
+  color: var(--text-main, #292524);
+  white-space: nowrap;
+}
+
+.level-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.level-info strong {
+  font-size: 0.88rem;
+  color: var(--text-main, #1c1917);
+}
+
+.level-info small {
+  font-size: 0.78rem;
+  color: var(--text-muted, #78716c);
+}
+
+.newbie-rule-callout {
+  display: flex;
+  gap: 1rem;
+  padding: 1.25rem;
+  border-radius: 10px;
+  background: rgba(217, 119, 6, 0.07);
+  border: 1px solid rgba(217, 119, 6, 0.2);
+  margin-bottom: 1.75rem;
+}
+
+.callout-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.callout-body strong {
+  display: block;
+  font-size: 0.95rem;
+  color: #b45309;
+  margin-bottom: 0.35rem;
+}
+
+.callout-body p {
+  margin: 0 0 0.5rem;
+  font-size: 0.88rem;
+  color: var(--text-main, #292524);
+  line-height: 1.5;
+}
+
+.callout-body code {
+  background: rgba(217, 119, 6, 0.15);
+  color: #92400e;
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.callout-bullets {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-size: 0.85rem;
+  color: var(--text-main, #292524);
+  line-height: 1.6;
+}
+
+.newbie-chart-wrap {
+  margin-top: 1rem;
+  padding: 1.25rem;
+  background: var(--bg-elevated, #fafaf9);
+  border: 1px solid var(--border-color, #e7e5e4);
+  border-radius: 12px;
+}
+
+.chart-title {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--text-main, #292524);
+}
+
+.newbie-svg-chart {
+  width: 100%;
+  max-width: 680px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Tone Cards Grid */
+.newbie-tones-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  color: var(--text-main, #1c1917);
+  margin: 0 0 0.25rem;
+}
+
+.tones-card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.25rem;
+}
+
+.newbie-tone-card {
+  border: 1px solid;
+  border-radius: 12px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.newbie-tone-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.card-head {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.card-tone-id {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.card-title-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-tone-name {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.card-pitch-label {
+  font-size: 0.8rem;
+  color: var(--text-muted, #78716c);
+}
+
+.pitch-code {
+  font-weight: 700;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.tone-summary {
+  margin: 0;
+  color: var(--text-main, #292524);
+}
+
+.tone-analogy-box,
+.tone-trap-box {
+  padding: 0.65rem 0.85rem;
+  border-radius: 8px;
+  font-size: 0.83rem;
+  line-height: 1.45;
+}
+
+.tone-analogy-box {
+  background: rgba(217, 119, 6, 0.08);
+  color: #92400e;
+  border-left: 3px solid #d97706;
+}
+
+.tone-trap-box {
+  background: rgba(220, 38, 38, 0.08);
+  color: #991b1b;
+  border-left: 3px solid #dc2626;
+}
+
+.exemplars-section {
+  margin-top: 0.5rem;
+}
+
+.exemplars-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted, #57534e);
+  margin-bottom: 0.5rem;
+}
+
+.exemplars-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.exemplar-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 6px;
+  background: var(--bg-surface, #ffffff);
+  border: 1px solid var(--border-color, #e7e5e4);
+  cursor: pointer;
+  font-size: 0.82rem;
+  color: var(--text-main, #292524);
+  transition: all 0.2s ease;
+}
+
+.exemplar-chip:hover {
+  border-color: #d97706;
+  background: rgba(217, 119, 6, 0.08);
+  color: #b45309;
+}
+
+.chip-speaker {
+  font-size: 0.85rem;
+}
+
+.chip-hanzi {
+  font-weight: 700;
+}
+
+.chip-py {
+  color: #d97706;
+  font-weight: 600;
+}
+
+.chip-meaning {
+  font-size: 0.75rem;
+  color: var(--text-muted, #78716c);
+}
+
+.card-footer {
+  margin-top: auto;
+}
+
+.practice-tone-btn {
+  width: 100%;
+  padding: 0.65rem 1rem;
+  border-radius: 8px;
+  border: none;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.1s ease;
+}
+
+.practice-tone-btn:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.practice-tone-btn:active {
+  transform: translateY(0);
+}
+
+/* Traps Comparison Table */
+.newbie-traps-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.traps-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border-color, #e7e5e4);
+  border-radius: 12px;
+  background: var(--bg-surface, #ffffff);
+}
+
+.traps-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  text-align: left;
+}
+
+.traps-table th,
+.traps-table td {
+  padding: 0.85rem 1.15rem;
+  border-bottom: 1px solid var(--border-color, #f5f5f4);
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.traps-table th {
+  background: var(--bg-elevated, #fafaf9);
+  color: var(--text-muted, #57534e);
+  font-weight: 600;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.traps-table tbody tr:hover {
+  background: rgba(217, 119, 6, 0.03);
+}
+
+.traps-table code {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+  font-size: 0.82rem;
+}
+
+/* CTA Launch Banner */
+.newbie-cta-banner {
+  padding: 1.5rem 1.75rem;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 768px) {
+  .newbie-cta-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.cta-content h4 {
+  margin: 0 0 0.4rem;
+  font-size: 1.15rem;
+  color: #f8fafc;
+}
+
+.cta-content p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+.cta-launch-btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  background: #d97706;
+  color: #ffffff;
+  font-size: 0.92rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(217, 119, 6, 0.4);
+}
+
+.cta-launch-btn:hover {
+  background: #b45309;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.5);
+}
+
+

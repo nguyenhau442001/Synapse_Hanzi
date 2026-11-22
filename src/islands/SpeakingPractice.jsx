@@ -23,9 +23,10 @@ import { analyzeToneSandhi, generateTargetPitchContour, CHAO_PITCH_MAP } from '.
 import { LivePitchTracker, frequencyToChaoScale } from './PitchDetector.js';
 import { scorePitchContour } from './ToneScorer.js';
 import { LocalSpeechAI } from './LocalSpeechAI.js';
-import { speakChinese, stopSpeaking } from './SpeechAudio.js';
+import { speakChinese, stopSpeaking, loadGlobalHanziAudioMap } from './SpeechAudio.js';
 import { ensureCaptModelReady, evaluatePronunciationWithOnnx } from './OnnxCaptEngine.js';
 import { isCaptModelCached } from './SpeechModelManager.js';
+import { NewbieToneGuide } from './NewbieToneGuide.jsx';
 
 // Minimal tone pair curated drills for Vietnamese learners
 const MINIMAL_TONE_PAIRS = [
@@ -158,9 +159,10 @@ function SpeakingPracticeApp() {
     return () => { isCancelled = true; };
   }, [selectedLevel]);
 
-  // Clean up on unmount
+  // Clean up on unmount & warm prebuilt audio map
   useEffect(() => {
     speechAiRef.current = new LocalSpeechAI();
+    loadGlobalHanziAudioMap();
     return () => {
       if (trackerRef.current) trackerRef.current.stop();
       if (speechAiRef.current) speechAiRef.current.stopListening();
@@ -182,20 +184,21 @@ function SpeakingPracticeApp() {
 
     ctx.clearRect(0, 0, width, height);
 
-    // Padding
-    const padX = 40;
+    // Padding with generous left space for Vietnamese pitch level labels
+    const padLeft = 85;
+    const padRight = 24;
     const padY = 24;
-    const plotW = width - padX * 2;
+    const plotW = width - padLeft - padRight;
     const plotH = height - padY * 2;
 
-    // Draw Chao 5-scale horizontal reference lines
+    // Draw Chao 5-scale horizontal reference lines with intuitive Vietnamese labels
     ctx.lineWidth = 1;
     const chaoLabels = [
-      { level: 5, text: '5 (Cao / 高)' },
-      { level: 4, text: '4 (Nửa cao / 半高)' },
-      { level: 3, text: '3 (Trung / 中)' },
-      { level: 2, text: '2 (Nửa thấp / 半低)' },
-      { level: 1, text: '1 (Thấp / 低)' }
+      { level: 5, text: '5 - Đỉnh cao' },
+      { level: 4, text: '4 - Hơi cao' },
+      { level: 3, text: '3 - Chuẩn (Vừa)' },
+      { level: 2, text: '2 - Hơi trầm' },
+      { level: 1, text: '1 - Đáy cổ' }
     ];
 
     chaoLabels.forEach(({ level, text }) => {
@@ -203,21 +206,21 @@ function SpeakingPracticeApp() {
       ctx.strokeStyle = level === 3 ? 'rgba(180, 150, 100, 0.28)' : 'rgba(180, 150, 100, 0.12)';
       ctx.setLineDash([4, 4]);
       ctx.beginPath();
-      ctx.moveTo(padX, y);
-      ctx.lineTo(padX + plotW, y);
+      ctx.moveTo(padLeft, y);
+      ctx.lineTo(padLeft + plotW, y);
       ctx.stroke();
 
       ctx.setLineDash([]);
-      ctx.fillStyle = 'rgba(150, 140, 130, 0.7)';
+      ctx.fillStyle = 'rgba(150, 140, 130, 0.85)';
       ctx.font = '11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
       ctx.textAlign = 'right';
-      ctx.fillText(text, padX - 8, y + 4);
+      ctx.fillText(text, padLeft - 8, y + 4);
     });
 
     // Syllable vertical separators
     const numSyllables = syllableInfos.length;
     for (let s = 1; s < numSyllables; s++) {
-      const x = padX + (s / numSyllables) * plotW;
+      const x = padLeft + (s / numSyllables) * plotW;
       ctx.strokeStyle = 'rgba(180, 150, 100, 0.2)';
       ctx.setLineDash([2, 2]);
       ctx.beginPath();
@@ -236,7 +239,7 @@ function SpeakingPracticeApp() {
       ctx.beginPath();
 
       targetContour.forEach((pt, idx) => {
-        const x = padX + pt.timeNorm * plotW;
+        const x = padLeft + pt.timeNorm * plotW;
         const y = padY + plotH - ((pt.pitchNorm - 1.0) / 4.0) * plotH;
         if (idx === 0) ctx.moveTo(x, y);
         else ctx.lineTo(x, y);
@@ -246,7 +249,7 @@ function SpeakingPracticeApp() {
       // Draw syllable tone label along target curve
       syllableInfos.forEach((syl, sIdx) => {
         const midTime = (sIdx + 0.5) / numSyllables;
-        const midX = padX + midTime * plotW;
+        const midX = padLeft + midTime * plotW;
         ctx.fillStyle = '#b45309';
         ctx.font = 'bold 13px -apple-system, BlinkMacSystemFont, sans-serif';
         ctx.textAlign = 'center';
@@ -269,7 +272,7 @@ function SpeakingPracticeApp() {
       const n = pitchesToDraw.length;
       pitchesToDraw.forEach((pVal, idx) => {
         const tNorm = idx / Math.max(1, n - 1);
-        const x = padX + tNorm * plotW;
+        const x = padLeft + tNorm * plotW;
         const y = padY + plotH - ((pVal - 1.0) / 4.0) * plotH;
         if (idx === 0) ctx.moveTo(x, y);
         else ctx.lineTo(x, y);
@@ -437,6 +440,25 @@ function SpeakingPracticeApp() {
     setScoreResult(null);
   };
 
+  // Route from Newbie Tone Guide directly into Tone Trainer with selected word
+  const handlePracticeNewbieWord = (wordItem) => {
+    setCurrentWord({
+      id: `newbie_${wordItem.hanzi}`,
+      hanzi: wordItem.hanzi,
+      pinyin: wordItem.pinyin,
+      hanviet: wordItem.hanviet,
+      meaning: wordItem.meaning,
+      example_zh: wordItem.hanzi,
+      example_py: wordItem.pinyin
+    });
+    setScoreResult(null);
+    setCaptResult(null);
+    setActiveTab('toneTrainer');
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   return (
     <div class="speaking-station-wrap">
       {/* Speaking header & Mode switcher */}
@@ -490,11 +512,20 @@ function SpeakingPracticeApp() {
           >
             ⚡ Cặp Âm Dễ Nhầm (Người Việt)
           </button>
+          <button
+            class={`speaking-mode-btn ${activeTab === 'newbieGuide' ? 'active' : ''}`}
+            onClick={() => setActiveTab('newbieGuide')}
+          >
+            📖 Cẩm Nang Thanh Điệu (Newbie)
+          </button>
         </div>
       </header>
 
-      {/* Main Study Arena */}
-      <div class="speaking-arena">
+      {/* Main Study Arena or Newbie Tone Handbook */}
+      {activeTab === 'newbieGuide' ? (
+        <NewbieToneGuide onPracticeWord={handlePracticeNewbieWord} />
+      ) : (
+        <div class="speaking-arena">
         {/* Left Column: Word Card & Visual Pitch Canvas */}
         <section class="speaking-display-card">
           {/* Target Hanzi Display */}
@@ -762,6 +793,7 @@ function SpeakingPracticeApp() {
           </div>
         </aside>
       </div>
+      )}
 
       {/* Model Download Progress Modal */}
       {showModelModal && (
