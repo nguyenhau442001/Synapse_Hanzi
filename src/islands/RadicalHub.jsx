@@ -30,6 +30,7 @@ export const PRIMARY_TAB_SCREENS = {
   reading: { screenId: 'screenReadingAnalysis' },
   gradedReading: { screenId: 'screenGradedReading' },
   listening: { screenId: 'screenListeningPractice' },
+  speaking: { screenId: 'screenSpeakingPractice' },
   sentenceGame: { screenId: 'screenSentenceGame' },
   guessWord: { screenId: 'screenGuessWord' },
   speedQuiz: { screenId: 'screenSpeedQuiz' },
@@ -146,6 +147,7 @@ export function setPrimaryTab(tab, options) {
   document.body.classList.toggle('reading-view-active', tab === 'reading');
   document.body.classList.toggle('graded-reading-active', tab === 'gradedReading');
   document.body.classList.toggle('listening-view-active', tab === 'listening');
+  document.body.classList.toggle('speaking-view-active', tab === 'speaking');
   document.body.classList.toggle('review-view-active', tab === 'review');
   document.body.classList.toggle('curriculum-view-active', tab === 'curriculum');
   document.body.classList.toggle('writing-view-active', tab === 'writing');
