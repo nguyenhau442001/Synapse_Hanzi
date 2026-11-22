@@ -341,5 +341,50 @@
     "pinyin": "sìshí fēnzhōng",
     "meaning_vi": "bốn mươi phút",
     "hsk": 1
+  },
+  "完蛋": {
+    "pinyin": "wándàn",
+    "meaning_vi": "toang rồi, xong đời rồi, hỏng bét (khẩu ngữ)",
+    "hsk": 4
+  },
+  "崩": {
+    "pinyin": "bēng",
+    "meaning_vi": "sập, sụp đổ, crash (hệ thống)",
+    "hsk": 4
+  },
+  "空格": {
+    "pinyin": "kònggé",
+    "meaning_vi": "dấu cách, khoảng trắng (spacebar)",
+    "hsk": 3
+  },
+  "锅": {
+    "pinyin": "guō",
+    "meaning_vi": "nồi; trách nhiệm, lỗi lầm (tiếng lóng công sở: ai gánh nồi)",
+    "hsk": 3
+  },
+  "架构师": {
+    "pinyin": "jiàgòushī",
+    "meaning_vi": "kiến trúc sư hệ thống phần mềm (architect)",
+    "hsk": 5
+  },
+  "代码": {
+    "pinyin": "dàimǎ",
+    "meaning_vi": "mã code, mã nguồn",
+    "hsk": 4
+  },
+  "合并": {
+    "pinyin": "hébìng",
+    "meaning_vi": "hợp nhất, merge code",
+    "hsk": 4
+  },
+  "追责": {
+    "pinyin": "zhuīzé",
+    "meaning_vi": "truy cứu trách nhiệm, bắt lỗi",
+    "hsk": 5
+  },
+  "复盘": {
+    "pinyin": "fùpán",
+    "meaning_vi": "họp rút kinh nghiệm, đánh giá lại sau sự cố (post-mortem)",
+    "hsk": 5
   }
 }

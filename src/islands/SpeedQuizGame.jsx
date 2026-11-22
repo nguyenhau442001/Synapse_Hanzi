@@ -4,6 +4,7 @@
 // window.startSpeedQuizGame(options) when the tab opens.
 import { render } from 'preact';
 import { signal } from '@preact/signals';
+import { playQuizSuccessSound, playQuizFailSound } from './AppUtils.js';
 
 /* global exampleSpeechSpeed -- top-level `let` of the classic script state.js */
 
@@ -133,7 +134,7 @@ function highlightInPinyin(sentencePy, answerPy) {
 }
 
 export async function startSpeedQuizGame(options = {}) {
-  roundLimit = Number(options.roundLimit) > 0 ? Number(options.roundLimit) : 0;
+  roundLimit = Number(options.roundLimit) > 0 ? Number(options.roundLimit) : 10;
   loading.value = true;
 
   await Promise.all([ensureBankLoaded(), ensureVocabMapLoaded()]);
@@ -197,10 +198,14 @@ export function loadNextSpeedQuizRound() {
   clearInterval(timerId);
   closeSpeedQuizExplanationModal();
 
+  if (finished.value) {
+    startSpeedQuizGame({ roundLimit: 10 });
+    return;
+  }
+
   if (roundLimit && idx >= roundLimit) {
     finished.value = true;
     feedback.value = { kind: 'correct', icon: '🎉', body: <>Tổng điểm đạt được: <strong>{score.value}</strong></>, limit: roundLimit };
-    roundLimit = 0;
     return;
   }
 
@@ -229,6 +234,7 @@ function handleTimeout() {
   if (solved.value) return;
   solved.value = true;
   clearInterval(timerId);
+  playQuizFailSound();
   streak.value = 0;
   lastChoice.value = null;
   feedback.value = { kind: 'timeout', icon: '⏱', body: <>{'Hết giờ! Đáp án đúng: '}<strong>{round.value.answer}</strong></> };
@@ -243,6 +249,7 @@ export function pickSpeedQuizOption(word) {
   const r = round.value;
   lastChoice.value = word;
   if (word === r.answer) {
+    playQuizSuccessSound();
     streak.value++;
     const speedBonus = Math.round((timeLeft.value / TIME_LIMIT) * BASE_SCORE);
     const streakBonus = Math.min(streak.value - 1, 5) * 10;
@@ -254,6 +261,7 @@ export function pickSpeedQuizOption(word) {
     }
     feedback.value = { kind: 'correct', icon: '✓', body: <>Chính xác! <strong>{`+${earned} điểm`}</strong></> };
   } else {
+    playQuizFailSound();
     streak.value = 0;
     feedback.value = { kind: 'incorrect', icon: '✗', body: <>{'Chưa chính xác! Đáp án đúng: '}<strong>{r.answer}</strong></> };
   }
@@ -308,10 +316,22 @@ function TimerBar() {
 }
 
 function SentenceWithBlank({ r }) {
+  const isSolved = solved.value;
   return r.sentence.zh_tokens.map((tok, i) => {
     if (i !== r.blankIdx) return tok;
-    const gapLength = Math.max(2, Array.from(String(r.answer)).length * 2);
-    return <span class="sq-blank-marker" aria-label="Chỗ trống" key="blank">{'＿'.repeat(Math.min(gapLength, 4))}</span>;
+    const charCount = Math.max(1, Array.from(String(r.answer)).length);
+    if (isSolved) {
+      return (
+        <span class="sq-blank-marker sq-blank-filled" aria-label={`Đáp án: ${r.answer}`} key="blank">
+          {r.answer}
+        </span>
+      );
+    }
+    return (
+      <span class="sq-blank-marker" aria-label={`Chỗ trống (${charCount} ký tự)`} key="blank">
+        {'＿'.repeat(charCount)}
+      </span>
+    );
   });
 }
 
@@ -454,21 +474,26 @@ export function SpeedQuizGame() {
   const done = finished.value;
   const showActions = Boolean(r && solved.value && !done && !loading.value);
   const fb = feedback.value;
+  const totalRounds = roundLimit || 10;
+  const currentRoundNum = Math.min(Math.max(idx, 1), totalRounds);
 
   let word = null;
   let meaning = '';
   if (done) {
     word = 'Hoàn thành thử thách!';
-    meaning = `Bạn đã hoàn thành ${fb.limit} câu trắc nghiệm tốc độ.`;
+    meaning = `Bạn đã hoàn thành ${fb?.limit || totalRounds} câu trắc nghiệm tốc độ.`;
   } else if (r && !loading.value) {
     word = <SentenceWithBlank r={r} />;
     meaning = r.sentence.meaning || '';
   }
 
+  const isWrongOrTimeout = Boolean(fb && (fb.kind === 'incorrect' || fb.kind === 'timeout'));
+  const explainBtnClass = isWrongOrTimeout ? 'speed-quiz-explain-btn highlight-glow' : 'speed-quiz-explain-btn';
+
   return (
     <div class="speed-quiz-game">
-      <header class="speed-quiz-header">
-        <div class="speed-quiz-header-main">
+      <section class="speed-quiz-card" aria-label="Bảng câu hỏi điền từ vào câu">
+        <header class="speed-quiz-card-header">
           <div class="speed-quiz-title-group">
             <h2 class="speed-quiz-title">⚡ Điền từ vào câu</h2>{' '}
             <span class="speed-quiz-badge" id="speedQuizRoundBadge">Thử thách tốc độ</span>
@@ -476,13 +501,12 @@ export function SpeedQuizGame() {
           <div class="speed-quiz-header-actions">
             <button type="button" class="speed-quiz-exit-btn" onClick={exitSpeedQuizGame} title="Thoát trò chơi (Esc)" aria-label="Thoát trò chơi">✕ Thoát</button>
           </div>
-        </div>
-      </header>
+        </header>
 
-      <section class="speed-quiz-card" aria-label="Bảng câu hỏi điền từ vào câu">
         <div class="speed-quiz-scoreboard">
           <span class="speed-quiz-score-badge" id="speedQuizScore">{`Điểm: ${score.value}`}</span>{' '}
-          <span id="speedQuizStreak" class="speed-quiz-streak">{streak.value > 1 ? `🔥 x${streak.value}` : ''}</span>{' '}
+          <span class="speed-quiz-round-badge" id="speedQuizRoundCounter">{`Câu ${currentRoundNum} / ${totalRounds}`}</span>{' '}
+          {streak.value > 1 && <span id="speedQuizStreak" class="speed-quiz-streak">{`🔥 x${streak.value}`}</span>}{' '}
           <span class="speed-quiz-best-badge" id="speedQuizBest">{`Kỷ lục: ${best.value}`}</span>
         </div>
 
@@ -496,19 +520,22 @@ export function SpeedQuizGame() {
           <div class="speed-quiz-meaning" id="speedQuizMeaning">{meaning}</div>
         </div>
 
-        <Options r={r} />
+        {!done && <Options r={r} />}
 
-        <div class={fb ? `speed-quiz-feedback ${fb.kind}` : 'speed-quiz-feedback'} id="speedQuizFeedback" role="status" aria-live="polite">
-          {fb && <><span class="sq-fb-icon">{fb.icon}</span> <span class="sq-fb-text">{fb.body}</span></>}
-        </div>
+        {done && fb && (
+          <div class="speed-quiz-feedback correct" id="speedQuizFeedback" role="status" aria-live="polite">
+            <span class="sq-fb-icon">{fb.icon}</span> <span class="sq-fb-text">{fb.body}</span>
+          </div>
+        )}
 
         <div class="speed-quiz-actions">
-          <button type="button" class="speed-quiz-explain-btn" id="speedQuizExplainBtn" onClick={openSpeedQuizExplanationModal} hidden={!showActions}>
+          <button type="button" class={explainBtnClass} id="speedQuizExplainBtn" onClick={openSpeedQuizExplanationModal} hidden={!showActions}>
             <span class="explain-btn-icon" aria-hidden="true">💡</span>{' '}
-            <span>Xem giải thích</span>
+            <span>Xem giải thích</span>{' '}
+            <kbd class="btn-kbd-hint secondary">E</kbd>
           </button>{' '}
-          <button ref={(el) => { nextBtnEl = el; }} type="button" class="game-next-btn speed-quiz-next-btn" id="speedQuizNextBtn" onClick={loadNextSpeedQuizRound} hidden={!showActions}>
-            <span>Câu tiếp theo</span>{' '}
+          <button ref={(el) => { nextBtnEl = el; }} type="button" class="game-next-btn speed-quiz-next-btn" id="speedQuizNextBtn" onClick={loadNextSpeedQuizRound} hidden={!showActions && !done}>
+            <span>{done ? 'Chơi lại' : 'Câu tiếp theo'}</span>{' '}
             <span class="next-btn-arrow">→</span>{' '}
             <kbd class="btn-kbd-hint">Enter ↵</kbd>
           </button>
@@ -516,7 +543,8 @@ export function SpeedQuizGame() {
 
         <div class="speed-quiz-hints-footer">
           <span class="speed-quiz-hint-item"><kbd>1</kbd>–<kbd>4</kbd> Chọn đáp án</span>{' '}
-          <span class="speed-quiz-hint-item"><kbd>Enter</kbd> Câu tiếp</span>{' '}
+          <span class="speed-quiz-hint-item"><kbd>E</kbd> Giải thích</span>{' '}
+          <span class="speed-quiz-hint-item"><kbd>Enter</kbd> {done ? 'Chơi lại' : 'Câu tiếp'}</span>{' '}
           <span class="speed-quiz-hint-item"><kbd>Esc</kbd> Thoát</span>
         </div>
       </section>
@@ -538,6 +566,19 @@ function onKeydown(e, screen) {
       loadNextSpeedQuizRound();
     }
     return;
+  }
+
+  if (finished.value) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      loadNextSpeedQuizRound();
+      return;
+    }
+    if (e.key === 'Escape') {
+      e.preventDefault();
+      exitSpeedQuizGame();
+      return;
+    }
   }
 
   const actionsVisible = Boolean(round.value && solved.value && !finished.value && !loading.value);

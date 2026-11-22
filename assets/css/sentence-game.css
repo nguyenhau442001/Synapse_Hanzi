@@ -1265,14 +1265,24 @@ body.is-game-view .featured-topics {
    ========================================================================== */
 
 .speed-quiz-game {
-  max-width: 940px;
+  max-width: 900px;
   width: 100%;
-  margin: 12px auto 28px;
+  margin: 8px auto 20px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
   box-sizing: border-box;
   padding: 0 16px;
+}
+
+.speed-quiz-header,
+.speed-quiz-card-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
 }
 
 .speed-quiz-header {
@@ -1288,6 +1298,7 @@ body.is-game-view .featured-topics {
   justify-content: space-between;
   align-items: center;
   gap: 12px;
+  width: 100%;
 }
 
 .speed-quiz-title-group {
@@ -1451,6 +1462,20 @@ body.is-game-view .featured-topics {
   padding: 0 4px;
   margin: 0 2px;
   letter-spacing: 2px;
+}
+
+.sq-blank-marker.sq-blank-filled {
+  color: var(--status-success, #527D70);
+  border-bottom-color: var(--status-success, #527D70);
+  background: var(--success-bg, rgba(82, 125, 112, 0.12));
+  border-radius: 4px;
+  padding: 0 6px;
+  animation: sqBlankPop 0.25s ease-out;
+}
+
+@keyframes sqBlankPop {
+  0% { transform: scale(0.92); opacity: 0.6; }
+  100% { transform: scale(1); opacity: 1; }
 }
 
 .speed-quiz-meaning {

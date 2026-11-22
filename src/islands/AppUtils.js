@@ -2,7 +2,7 @@
 // Small helpers shared by every feature script.
 
 // Written by tools/bump_version.py — used as the cache-buster for data fetches.
-export const APP_VERSION = '3.51.4';
+export const APP_VERSION = '3.52.0';
 
 // Escape text for safe interpolation into HTML strings (shared by every view).
 export function escapeHtml(value) {
@@ -136,6 +136,84 @@ export function toggleDisclosurePanel(panelId, buttonId, forceOpen) {
   }
 }
 
+// Web Audio API synthesized sound effects (100% offline, zero latency, no asset dependencies)
+let quizAudioCtx = null;
+function getQuizAudioContext() {
+  try {
+    if (!quizAudioCtx) {
+      const AudioCtx = window.AudioContext || window.webkitAudioContext;
+      if (AudioCtx) quizAudioCtx = new AudioCtx();
+    }
+    if (quizAudioCtx && quizAudioCtx.state === 'suspended') {
+      quizAudioCtx.resume().catch(() => {});
+    }
+  } catch (_) {}
+  return quizAudioCtx;
+}
+
+export function playQuizSuccessSound() {
+  try {
+    const ctx = getQuizAudioContext();
+    if (!ctx) return;
+    const now = ctx.currentTime;
+
+    // Upbeat 2-tone melodic chime: G5 (784Hz) -> C6 (1046.5Hz) with harmonic overtone
+    const osc1 = ctx.createOscillator();
+    const gain1 = ctx.createGain();
+    osc1.type = 'sine';
+    osc1.frequency.setValueAtTime(783.99, now);
+    osc1.frequency.setValueAtTime(1046.50, now + 0.08);
+
+    gain1.gain.setValueAtTime(0, now);
+    gain1.gain.linearRampToValueAtTime(0.18, now + 0.015);
+    gain1.gain.setValueAtTime(0.18, now + 0.08);
+    gain1.gain.exponentialRampToValueAtTime(0.0001, now + 0.4);
+
+    osc1.connect(gain1);
+    gain1.connect(ctx.destination);
+    osc1.start(now);
+    osc1.stop(now + 0.42);
+
+    // Warm triangle shimmer
+    const osc2 = ctx.createOscillator();
+    const gain2 = ctx.createGain();
+    osc2.type = 'triangle';
+    osc2.frequency.setValueAtTime(1567.98, now + 0.08);
+    gain2.gain.setValueAtTime(0, now + 0.08);
+    gain2.gain.linearRampToValueAtTime(0.08, now + 0.095);
+    gain2.gain.exponentialRampToValueAtTime(0.0001, now + 0.48);
+
+    osc2.connect(gain2);
+    gain2.connect(ctx.destination);
+    osc2.start(now + 0.08);
+    osc2.stop(now + 0.5);
+  } catch (_) {}
+}
+
+export function playQuizFailSound() {
+  try {
+    const ctx = getQuizAudioContext();
+    if (!ctx) return;
+    const now = ctx.currentTime;
+
+    // Gentle descending buzzer: ~261Hz down to ~174Hz (soft triangle)
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.type = 'triangle';
+    osc.frequency.setValueAtTime(261.63, now);
+    osc.frequency.exponentialRampToValueAtTime(174.61, now + 0.25);
+
+    gain.gain.setValueAtTime(0, now);
+    gain.gain.linearRampToValueAtTime(0.18, now + 0.02);
+    gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.32);
+
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+    osc.start(now);
+    osc.stop(now + 0.35);
+  } catch (_) {}
+}
+
 export function mountAppUtils() {
   if (typeof window !== 'undefined') {
     Object.assign(window, {
@@ -152,6 +230,8 @@ export function mountAppUtils() {
       shuffleInPlace,
       shuffledCopy,
       toggleDisclosurePanel,
+      playQuizSuccessSound,
+      playQuizFailSound,
     });
   }
 }

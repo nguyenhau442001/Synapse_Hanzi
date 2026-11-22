@@ -461,6 +461,139 @@ EPISODES = [
                 ]
             }
         ]
+    },
+    {
+        "id": "office_ep04",
+        "chapter_no": 4,
+        "title": {
+            "zh": "第四集：谁的锅？",
+            "zh_trad": "第四集：誰的鍋？",
+            "vi": "Tập 4: Chiếc Nồi Thuộc Về Ai?",
+            "pinyin": "dì sì jí ： shuí de guō ？"
+        },
+        "description_vi": "3 giờ rưỡi chiều, hệ thống công ty bỗng sập toàn diện. Sếp Vương tức tốc lao ra gầm thét đòi tìm 'chiếc nồi' thuộc về ai. Nào ngờ Lão Châu chỉ mở git log ra kiểm tra đúng 3 giây...",
+        "difficulty": "HSK 1 - 4",
+        "estimatedMinutes": 3,
+        "panels": [
+            {
+                "page_num": 1,
+                "src_file": RAW_DIR / "dagongren_ep04_p1_1795313995803.jpg",
+                "dialogues": [
+                    {
+                        "id": "p1_d1",
+                        "character": "小阳 (Tiểu Dương)",
+                        "speaker": "小阳",
+                        "zh": "完蛋了！线上系统崩了！",
+                        "vi": "Toang rồi! Hệ thống production sập rồi!",
+                        "box": (200, 40, 720, 135),
+                        "tail_base_x": 380,
+                        "tail_tip": (380, 200),
+                        "tail_side": "bottom"
+                    },
+                    {
+                        "id": "p1_d2",
+                        "character": "小铃 (Tiểu Linh)",
+                        "speaker": "小铃",
+                        "zh": "你刚才碰了什么？",
+                        "vi": "Cậu vừa đụng vào cái gì đấy?",
+                        "box": (780, 40, 1260, 135),
+                        "tail_base_x": 820,
+                        "tail_tip": (760, 180),
+                        "tail_side": "bottom"
+                    }
+                ]
+            },
+            {
+                "page_num": 2,
+                "src_file": RAW_DIR / "dagongren_ep04_p2_1795314031762.jpg",
+                "dialogues": [
+                    {
+                        "id": "p2_d1",
+                        "character": "王经理 (Sếp Vương)",
+                        "speaker": "王经理",
+                        "zh": "谁干的？！到底是谁的锅？！",
+                        "vi": "Ai làm?! Rốt cuộc nồi này của ai?!",
+                        "box": (340, 40, 1020, 135),
+                        "tail_base_x": 470,
+                        "tail_tip": (470, 170),
+                        "tail_side": "bottom"
+                    },
+                    {
+                        "id": "p2_d2",
+                        "character": "小阳 (Tiểu Dương)",
+                        "speaker": "小阳",
+                        "zh": "我……我就删了一行没用的空格……",
+                        "vi": "Em... em chỉ xoá đúng một dòng dấu cách vô dụng thôi mà...",
+                        "box": (760, 560, 1340, 655),
+                        "tail_side": "top",
+                        "tail_base_x": 860,
+                        "tail_tip": (860, 490)
+                    }
+                ]
+            },
+            {
+                "page_num": 3,
+                "src_file": RAW_DIR / "dagongren_ep04_p3_1795314059357.jpg",
+                "dialogues": [
+                    {
+                        "id": "p3_d1",
+                        "character": "王经理 (Sếp Vương)",
+                        "speaker": "王经理",
+                        "zh": "老周！你是主架构师，快找是谁提交的！",
+                        "vi": "Lão Châu! Cậu là kiến trúc sư trưởng, mau tìm xem ai commit code!",
+                        "box": (580, 40, 1320, 135),
+                        "tail_base_x": 720,
+                        "tail_tip": (700, 200),
+                        "tail_side": "bottom"
+                    }
+                ]
+            },
+            {
+                "page_num": 4,
+                "src_file": RAW_DIR / "dagongren_ep04_p4_1795314085548.jpg",
+                "dialogues": [
+                    {
+                        "id": "p4_d1",
+                        "character": "老周 (Lão Châu)",
+                        "speaker": "老周",
+                        "zh": "查了。是王总您昨天半夜两点直接合并的代码。",
+                        "vi": "Tra rồi. Là Sếp Vương đích thân merge code lúc hai giờ sáng đêm qua đấy.",
+                        "box": (100, 40, 940, 135),
+                        "tail_base_x": 480,
+                        "tail_tip": (480, 200),
+                        "tail_side": "bottom"
+                    }
+                ]
+            },
+            {
+                "page_num": 5,
+                "src_file": RAW_DIR / "dagongren_ep04_p5_1795314186496.jpg",
+                "dialogues": [
+                    {
+                        "id": "p5_d1",
+                        "character": "王经理 (Sếp Vương)",
+                        "speaker": "王经理",
+                        "zh": "咳……遇到问题不要急着追责，大家要协同复盘。",
+                        "vi": "Khụ... Gặp vấn đề không nên vội quy trách nhiệm, cả team cùng nhau họp rút kinh nghiệm là được.",
+                        "box": (180, 40, 1080, 135),
+                        "tail_base_x": 500,
+                        "tail_tip": (500, 180),
+                        "tail_side": "bottom"
+                    },
+                    {
+                        "id": "p5_d2",
+                        "character": "老周 (Lão Châu)",
+                        "speaker": "老周",
+                        "zh": "我就知道。",
+                        "vi": "Tôi biết ngay mà.",
+                        "box": (880, 520, 1180, 615),
+                        "tail_side": "top",
+                        "tail_base_x": 900,
+                        "tail_tip": (840, 480)
+                    }
+                ]
+            }
+        ]
     }
 ]
 

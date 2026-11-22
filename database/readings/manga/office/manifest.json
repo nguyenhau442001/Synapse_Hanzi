@@ -97,5 +97,38 @@
       "王总",
       "老周"
     ]
+  },
+  {
+    "id": "office_ep04",
+    "series": "office",
+    "series_title": "打工人日记",
+    "series_title_vi": "Nhật Ký Dân Công Sở",
+    "collection": "office",
+    "volume": 1,
+    "chapter_in_volume": null,
+    "chapter_no": 4,
+    "title": {
+      "zh": "第四集：谁的锅？",
+      "zh_trad": "第四集：誰的鍋？",
+      "vi": "Tập 4: Chiếc Nồi Thuộc Về Ai?",
+      "pinyin": "dì sì jí ： shuí de guō ？"
+    },
+    "description_vi": "3 giờ rưỡi chiều, hệ thống công ty bỗng sập toàn diện. Sếp Vương tức tốc lao ra gầm thét đòi tìm 'chiếc nồi' thuộc về ai. Nào ngờ Lão Châu chỉ mở git log ra kiểm tra đúng 3 giây...",
+    "cover_image": "assets/images/readings/manga/office/office_ep04/cover.webp",
+    "source": "《打工人日记》原创职场情景喜剧 · Synapse Hanzi Studio",
+    "source_url": "https://github.com/Synapse-Hanzi",
+    "source_credits": "Kịch bản và tạo hình nhân vật độc quyền: Synapse Hanzi Studio. Tranh minh họa kết hợp hệ thống tra từ tương tác, pinyin, Hán-Việt và âm thanh đa giác quan.",
+    "license": "Original / Educational",
+    "page_count": 5,
+    "difficulty": "HSK 1 - 4",
+    "estimatedMinutes": 3,
+    "file": "database/readings/manga/office/office_ep04.json",
+    "proper_names": [
+      "小阳",
+      "小铃",
+      "王经理",
+      "王总",
+      "老周"
+    ]
   }
 ]

@@ -1,0 +1,2645 @@
+{
+  "id": "office_ep04",
+  "series": "office",
+  "series_title": "打工人日记",
+  "series_title_vi": "Nhật Ký Dân Công Sở",
+  "collection": "office",
+  "volume": 1,
+  "chapter_in_volume": null,
+  "chapter_no": 4,
+  "title": {
+    "zh": "第四集：谁的锅？",
+    "zh_trad": "第四集：誰的鍋？",
+    "vi": "Tập 4: Chiếc Nồi Thuộc Về Ai?",
+    "pinyin": "dì sì jí ： shuí de guō ？"
+  },
+  "description_vi": "3 giờ rưỡi chiều, hệ thống công ty bỗng sập toàn diện. Sếp Vương tức tốc lao ra gầm thét đòi tìm 'chiếc nồi' thuộc về ai. Nào ngờ Lão Châu chỉ mở git log ra kiểm tra đúng 3 giây...",
+  "cover_image": "assets/images/readings/manga/office/office_ep04/cover.webp",
+  "source": "《打工人日记》原创职场情景喜剧 · Synapse Hanzi Studio",
+  "source_url": "https://github.com/Synapse-Hanzi",
+  "source_credits": "Kịch bản và tạo hình nhân vật độc quyền: Synapse Hanzi Studio. Tranh minh họa kết hợp hệ thống tra từ tương tác, pinyin, Hán-Việt và âm thanh đa giác quan.",
+  "license": "Original / Educational",
+  "page_count": 5,
+  "difficulty": "HSK 1 - 4",
+  "estimatedMinutes": 3,
+  "file": "database/readings/manga/office/office_ep04.json",
+  "proper_names": [
+    "小阳",
+    "小铃",
+    "王经理",
+    "王总",
+    "老周"
+  ],
+  "pages": [
+    {
+      "page_num": 1,
+      "image": "assets/images/readings/manga/office/office_ep04/page_01.webp",
+      "dialogues": [
+        {
+          "id": "p1_d1",
+          "character": "小阳 (Tiểu Dương)",
+          "bbox": {
+            "x": 14.53,
+            "y": 5.21,
+            "width": 37.79,
+            "height": 12.37
+          },
+          "zh": "完蛋了！线上系统崩了！",
+          "zh_trad": "完蛋了！線上系統崩了！",
+          "pinyin": "wán dàn le ！ xiàn shàng xì tǒng bēng le ！",
+          "vi": "Toang rồi! Hệ thống production sập rồi!",
+          "tokens": [
+            {
+              "text": "完蛋",
+              "text_trad": "完蛋",
+              "pinyin": "wándàn",
+              "hanviet": "Hoàn Đản",
+              "meaning_vi": "toang rồi, xong đời rồi, hỏng bét (khẩu ngữ)",
+              "hsk": 4
+            },
+            {
+              "text": "了",
+              "text_trad": "了",
+              "pinyin": "le",
+              "hanviet": "Liễu",
+              "meaning_vi": "rồi (trợ từ)",
+              "hsk": 1
+            },
+            {
+              "text": "线上",
+              "text_trad": "線上",
+              "pinyin": "xiànshàng",
+              "hanviet": "Tuyến Thướng",
+              "meaning_vi": "trực tuyến, online",
+              "hsk": 4
+            },
+            {
+              "text": "系统",
+              "text_trad": "系統",
+              "pinyin": "xìtǒng",
+              "hanviet": "Hệ Thống",
+              "meaning_vi": "hệ thống",
+              "hsk": 5
+            },
+            {
+              "text": "崩",
+              "text_trad": "崩",
+              "pinyin": "bēng",
+              "hanviet": "Băng",
+              "meaning_vi": "sập, sụp đổ, crash (hệ thống)",
+              "hsk": 4
+            },
+            {
+              "text": "了",
+              "text_trad": "了",
+              "pinyin": "le",
+              "hanviet": "Liễu",
+              "meaning_vi": "rồi (trợ từ)",
+              "hsk": 1
+            }
+          ]
+        },
+        {
+          "id": "p1_d2",
+          "character": "小铃 (Tiểu Linh)",
+          "bbox": {
+            "x": 56.69,
+            "y": 5.21,
+            "width": 34.88,
+            "height": 12.37
+          },
+          "zh": "你刚才碰了什么？",
+          "zh_trad": "你剛纔碰了什麼？",
+          "pinyin": "nǐ gāng cái pèng le shén me ？",
+          "vi": "Cậu vừa đụng vào cái gì đấy?",
+          "tokens": [
+            {
+              "text": "你",
+              "text_trad": "你",
+              "pinyin": "nǐ",
+              "hanviet": "Nễ",
+              "meaning_vi": "bạn",
+              "hsk": 1
+            },
+            {
+              "text": "刚才",
+              "text_trad": "剛纔",
+              "pinyin": "gāngcái",
+              "hanviet": "Cương Tài",
+              "meaning_vi": "vừa nãy",
+              "hsk": 3
+            },
+            {
+              "text": "碰",
+              "text_trad": "碰",
+              "pinyin": "pèng",
+              "hanviet": "Bính",
+              "meaning_vi": "va, đụng, gặp",
+              "hsk": 5
+            },
+            {
+              "text": "了",
+              "text_trad": "了",
+              "pinyin": "le",
+              "hanviet": "Liễu",
+              "meaning_vi": "rồi (trợ từ)",
+              "hsk": 1
+            },
+            {
+              "text": "什么",
+              "text_trad": "什麼",
+              "pinyin": "shénme",
+              "hanviet": "Thập Ma",
+              "meaning_vi": "cái gì",
+              "hsk": 1
+            }
+          ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "p1_d1_w1",
+          "text": "完蛋",
+          "text_trad": "完蛋",
+          "pinyin": "wándàn",
+          "hanviet": "Hoàn Đản",
+          "meaning_vi": "toang rồi, xong đời rồi, hỏng bét (khẩu ngữ)",
+          "hsk": 4,
+          "bbox": {
+            "x": 15.843,
+            "y": 9.635,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 15.843,
+              "y": 9.635,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "完蛋了！線上系統崩了！",
+          "sentence_zh_simplified": "完蛋了！线上系统崩了！",
+          "sentence_vi": "Toang rồi! Hệ thống production sập rồi!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d1_w2",
+          "text": "了",
+          "text_trad": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "meaning_vi": "rồi (trợ từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 19.622,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 19.622,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "完蛋了！線上系統崩了！",
+          "sentence_zh_simplified": "完蛋了！线上系统崩了！",
+          "sentence_vi": "Toang rồi! Hệ thống production sập rồi!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d1_w3",
+          "text": "线上",
+          "text_trad": "線上",
+          "pinyin": "xiànshàng",
+          "hanviet": "Tuyến Thướng",
+          "meaning_vi": "trực tuyến, online",
+          "hsk": 4,
+          "bbox": {
+            "x": 21.512,
+            "y": 9.635,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 21.512,
+              "y": 9.635,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "完蛋了！線上系統崩了！",
+          "sentence_zh_simplified": "完蛋了！线上系统崩了！",
+          "sentence_vi": "Toang rồi! Hệ thống production sập rồi!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d1_w4",
+          "text": "系统",
+          "text_trad": "系統",
+          "pinyin": "xìtǒng",
+          "hanviet": "Hệ Thống",
+          "meaning_vi": "hệ thống",
+          "hsk": 5,
+          "bbox": {
+            "x": 25.291,
+            "y": 9.635,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 25.291,
+              "y": 9.635,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "完蛋了！線上系統崩了！",
+          "sentence_zh_simplified": "完蛋了！线上系统崩了！",
+          "sentence_vi": "Toang rồi! Hệ thống production sập rồi!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d1_w5",
+          "text": "崩",
+          "text_trad": "崩",
+          "pinyin": "bēng",
+          "hanviet": "Băng",
+          "meaning_vi": "sập, sụp đổ, crash (hệ thống)",
+          "hsk": 4,
+          "bbox": {
+            "x": 29.07,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 29.07,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "完蛋了！線上系統崩了！",
+          "sentence_zh_simplified": "完蛋了！线上系统崩了！",
+          "sentence_vi": "Toang rồi! Hệ thống production sập rồi!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d1_w6",
+          "text": "了",
+          "text_trad": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "meaning_vi": "rồi (trợ từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 30.959,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 30.959,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "完蛋了！線上系統崩了！",
+          "sentence_zh_simplified": "完蛋了！线上系统崩了！",
+          "sentence_vi": "Toang rồi! Hệ thống production sập rồi!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d2_w1",
+          "text": "你",
+          "text_trad": "你",
+          "pinyin": "nǐ",
+          "hanviet": "Nễ",
+          "meaning_vi": "bạn",
+          "hsk": 1,
+          "bbox": {
+            "x": 57.994,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 57.994,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "你剛纔碰了什麼？",
+          "sentence_zh_simplified": "你刚才碰了什么？",
+          "sentence_vi": "Cậu vừa đụng vào cái gì đấy?",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p1_d2"
+        },
+        {
+          "id": "p1_d2_w2",
+          "text": "刚才",
+          "text_trad": "剛纔",
+          "pinyin": "gāngcái",
+          "hanviet": "Cương Tài",
+          "meaning_vi": "vừa nãy",
+          "hsk": 3,
+          "bbox": {
+            "x": 59.884,
+            "y": 9.635,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 59.884,
+              "y": 9.635,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "你剛纔碰了什麼？",
+          "sentence_zh_simplified": "你刚才碰了什么？",
+          "sentence_vi": "Cậu vừa đụng vào cái gì đấy?",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p1_d2"
+        },
+        {
+          "id": "p1_d2_w3",
+          "text": "碰",
+          "text_trad": "碰",
+          "pinyin": "pèng",
+          "hanviet": "Bính",
+          "meaning_vi": "va, đụng, gặp",
+          "hsk": 5,
+          "bbox": {
+            "x": 63.663,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 63.663,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "你剛纔碰了什麼？",
+          "sentence_zh_simplified": "你刚才碰了什么？",
+          "sentence_vi": "Cậu vừa đụng vào cái gì đấy?",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p1_d2"
+        },
+        {
+          "id": "p1_d2_w4",
+          "text": "了",
+          "text_trad": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "meaning_vi": "rồi (trợ từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 65.552,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 65.552,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "你剛纔碰了什麼？",
+          "sentence_zh_simplified": "你刚才碰了什么？",
+          "sentence_vi": "Cậu vừa đụng vào cái gì đấy?",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p1_d2"
+        },
+        {
+          "id": "p1_d2_w5",
+          "text": "什么",
+          "text_trad": "什麼",
+          "pinyin": "shénme",
+          "hanviet": "Thập Ma",
+          "meaning_vi": "cái gì",
+          "hsk": 1,
+          "bbox": {
+            "x": 67.442,
+            "y": 9.635,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 67.442,
+              "y": 9.635,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "你剛纔碰了什麼？",
+          "sentence_zh_simplified": "你刚才碰了什么？",
+          "sentence_vi": "Cậu vừa đụng vào cái gì đấy?",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p1_d2"
+        }
+      ],
+      "ocr": {
+        "image_px": [
+          1376,
+          768
+        ]
+      }
+    },
+    {
+      "page_num": 2,
+      "image": "assets/images/readings/manga/office/office_ep04/page_02.webp",
+      "dialogues": [
+        {
+          "id": "p2_d1",
+          "character": "王经理 (Sếp Vương)",
+          "bbox": {
+            "x": 24.71,
+            "y": 5.21,
+            "width": 49.42,
+            "height": 12.37
+          },
+          "zh": "谁干的？！到底是谁的锅？！",
+          "zh_trad": "誰幹的？！到底是誰的鍋？！",
+          "pinyin": "shuí gàn de ？！ dào dǐ shì shéi de guō ？！",
+          "vi": "Ai làm?! Rốt cuộc nồi này của ai?!",
+          "tokens": [
+            {
+              "text": "谁",
+              "text_trad": "誰",
+              "pinyin": "shéi/shuí",
+              "hanviet": "Thuỳ",
+              "meaning_vi": "ai",
+              "hsk": 1
+            },
+            {
+              "text": "干",
+              "text_trad": "幹",
+              "pinyin": "gàn",
+              "hanviet": "Can",
+              "meaning_vi": "làm (việc)",
+              "hsk": 3
+            },
+            {
+              "text": "的",
+              "text_trad": "的",
+              "pinyin": "de",
+              "hanviet": "Đích",
+              "meaning_vi": "của (trợ từ)",
+              "hsk": 1
+            },
+            {
+              "text": "到底",
+              "text_trad": "到底",
+              "pinyin": "dàodǐ",
+              "hanviet": "Đáo Để",
+              "meaning_vi": "rốt cuộc",
+              "hsk": 4
+            },
+            {
+              "text": "是",
+              "text_trad": "是",
+              "pinyin": "shì",
+              "hanviet": "Thị",
+              "meaning_vi": "là",
+              "hsk": 1
+            },
+            {
+              "text": "谁",
+              "text_trad": "誰",
+              "pinyin": "shéi/shuí",
+              "hanviet": "Thuỳ",
+              "meaning_vi": "ai",
+              "hsk": 1
+            },
+            {
+              "text": "的",
+              "text_trad": "的",
+              "pinyin": "de",
+              "hanviet": "Đích",
+              "meaning_vi": "của (trợ từ)",
+              "hsk": 1
+            },
+            {
+              "text": "锅",
+              "text_trad": "鍋",
+              "pinyin": "guō",
+              "hanviet": "Oa",
+              "meaning_vi": "nồi; trách nhiệm, lỗi lầm (tiếng lóng công sở: ai gánh nồi)",
+              "hsk": 3
+            }
+          ]
+        },
+        {
+          "id": "p2_d2",
+          "character": "小阳 (Tiểu Dương)",
+          "bbox": {
+            "x": 55.23,
+            "y": 72.92,
+            "width": 42.15,
+            "height": 12.37
+          },
+          "zh": "我……我就删了一行没用的空格……",
+          "zh_trad": "我……我就刪了一行沒用的空格……",
+          "pinyin": "wǒ …… wǒ jiù shān le yī xíng méi yòng de kòng gé ……",
+          "vi": "Em... em chỉ xoá đúng một dòng dấu cách vô dụng thôi mà...",
+          "tokens": [
+            {
+              "text": "我",
+              "text_trad": "我",
+              "pinyin": "wǒ",
+              "hanviet": "Ngã",
+              "meaning_vi": "tôi",
+              "hsk": 1
+            },
+            {
+              "text": "我",
+              "text_trad": "我",
+              "pinyin": "wǒ",
+              "hanviet": "Ngã",
+              "meaning_vi": "tôi",
+              "hsk": 1
+            },
+            {
+              "text": "就",
+              "text_trad": "就",
+              "pinyin": "jiù",
+              "hanviet": "Tựu",
+              "meaning_vi": "là, ngay (trợ từ nhấn mạnh)",
+              "hsk": 2
+            },
+            {
+              "text": "删",
+              "text_trad": "刪",
+              "pinyin": "shān",
+              "hanviet": "San",
+              "meaning_vi": "xóa, loại bỏ",
+              "hsk": 5
+            },
+            {
+              "text": "了",
+              "text_trad": "了",
+              "pinyin": "le",
+              "hanviet": "Liễu",
+              "meaning_vi": "rồi (trợ từ)",
+              "hsk": 1
+            },
+            {
+              "text": "一行",
+              "text_trad": "一行",
+              "pinyin": "yìxíng",
+              "hanviet": "Nhất Hành",
+              "meaning_vi": "đoàn người, đoàn đại biểu",
+              "hsk": "7-9"
+            },
+            {
+              "text": "没",
+              "text_trad": "沒",
+              "pinyin": "méi",
+              "hanviet": "Một",
+              "meaning_vi": "không có; chưa",
+              "hsk": 1
+            },
+            {
+              "text": "用",
+              "text_trad": "用",
+              "pinyin": "yòng",
+              "hanviet": "Dụng",
+              "meaning_vi": "dùng",
+              "hsk": 3
+            },
+            {
+              "text": "的",
+              "text_trad": "的",
+              "pinyin": "de",
+              "hanviet": "Đích",
+              "meaning_vi": "của (trợ từ)",
+              "hsk": 1
+            },
+            {
+              "text": "空格",
+              "text_trad": "空格",
+              "pinyin": "kònggé",
+              "hanviet": "Không Cách",
+              "meaning_vi": "dấu cách, khoảng trắng (spacebar)",
+              "hsk": 3
+            }
+          ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "p2_d1_w1",
+          "text": "谁",
+          "text_trad": "誰",
+          "pinyin": "shéi/shuí",
+          "hanviet": "Thuỳ",
+          "meaning_vi": "ai",
+          "hsk": 1,
+          "bbox": {
+            "x": 26.017,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 26.017,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "誰幹的？！到底是誰的鍋？！",
+          "sentence_zh_simplified": "谁干的？！到底是谁的锅？！",
+          "sentence_vi": "Ai làm?! Rốt cuộc nồi này của ai?!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w2",
+          "text": "干",
+          "text_trad": "幹",
+          "pinyin": "gàn",
+          "hanviet": "Can",
+          "meaning_vi": "làm (việc)",
+          "hsk": 3,
+          "bbox": {
+            "x": 27.907,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 27.907,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "誰幹的？！到底是誰的鍋？！",
+          "sentence_zh_simplified": "谁干的？！到底是谁的锅？！",
+          "sentence_vi": "Ai làm?! Rốt cuộc nồi này của ai?!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w3",
+          "text": "的",
+          "text_trad": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "meaning_vi": "của (trợ từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 29.797,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 29.797,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "誰幹的？！到底是誰的鍋？！",
+          "sentence_zh_simplified": "谁干的？！到底是谁的锅？！",
+          "sentence_vi": "Ai làm?! Rốt cuộc nồi này của ai?!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w4",
+          "text": "到底",
+          "text_trad": "到底",
+          "pinyin": "dàodǐ",
+          "hanviet": "Đáo Để",
+          "meaning_vi": "rốt cuộc",
+          "hsk": 4,
+          "bbox": {
+            "x": 31.686,
+            "y": 9.635,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 31.686,
+              "y": 9.635,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "誰幹的？！到底是誰的鍋？！",
+          "sentence_zh_simplified": "谁干的？！到底是谁的锅？！",
+          "sentence_vi": "Ai làm?! Rốt cuộc nồi này của ai?!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w5",
+          "text": "是",
+          "text_trad": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "meaning_vi": "là",
+          "hsk": 1,
+          "bbox": {
+            "x": 35.465,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 35.465,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "誰幹的？！到底是誰的鍋？！",
+          "sentence_zh_simplified": "谁干的？！到底是谁的锅？！",
+          "sentence_vi": "Ai làm?! Rốt cuộc nồi này của ai?!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w6",
+          "text": "谁",
+          "text_trad": "誰",
+          "pinyin": "shéi/shuí",
+          "hanviet": "Thuỳ",
+          "meaning_vi": "ai",
+          "hsk": 1,
+          "bbox": {
+            "x": 37.355,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 37.355,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "誰幹的？！到底是誰的鍋？！",
+          "sentence_zh_simplified": "谁干的？！到底是谁的锅？！",
+          "sentence_vi": "Ai làm?! Rốt cuộc nồi này của ai?!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w7",
+          "text": "的",
+          "text_trad": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "meaning_vi": "của (trợ từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 39.244,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 39.244,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "誰幹的？！到底是誰的鍋？！",
+          "sentence_zh_simplified": "谁干的？！到底是谁的锅？！",
+          "sentence_vi": "Ai làm?! Rốt cuộc nồi này của ai?!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w8",
+          "text": "锅",
+          "text_trad": "鍋",
+          "pinyin": "guō",
+          "hanviet": "Oa",
+          "meaning_vi": "nồi; trách nhiệm, lỗi lầm (tiếng lóng công sở: ai gánh nồi)",
+          "hsk": 3,
+          "bbox": {
+            "x": 41.134,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 41.134,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "誰幹的？！到底是誰的鍋？！",
+          "sentence_zh_simplified": "谁干的？！到底是谁的锅？！",
+          "sentence_vi": "Ai làm?! Rốt cuộc nồi này của ai?!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d2_w1",
+          "text": "我",
+          "text_trad": "我",
+          "pinyin": "wǒ",
+          "hanviet": "Ngã",
+          "meaning_vi": "tôi",
+          "hsk": 1,
+          "bbox": {
+            "x": 56.541,
+            "y": 77.344,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 56.541,
+              "y": 77.344,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "我……我就刪了一行沒用的空格……",
+          "sentence_zh_simplified": "我……我就删了一行没用的空格……",
+          "sentence_vi": "Em... em chỉ xoá đúng một dòng dấu cách vô dụng thôi mà...",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p2_d2"
+        },
+        {
+          "id": "p2_d2_w2",
+          "text": "我",
+          "text_trad": "我",
+          "pinyin": "wǒ",
+          "hanviet": "Ngã",
+          "meaning_vi": "tôi",
+          "hsk": 1,
+          "bbox": {
+            "x": 58.43,
+            "y": 77.344,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 58.43,
+              "y": 77.344,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "我……我就刪了一行沒用的空格……",
+          "sentence_zh_simplified": "我……我就删了一行没用的空格……",
+          "sentence_vi": "Em... em chỉ xoá đúng một dòng dấu cách vô dụng thôi mà...",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p2_d2"
+        },
+        {
+          "id": "p2_d2_w3",
+          "text": "就",
+          "text_trad": "就",
+          "pinyin": "jiù",
+          "hanviet": "Tựu",
+          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)",
+          "hsk": 2,
+          "bbox": {
+            "x": 60.32,
+            "y": 77.344,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 60.32,
+              "y": 77.344,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "我……我就刪了一行沒用的空格……",
+          "sentence_zh_simplified": "我……我就删了一行没用的空格……",
+          "sentence_vi": "Em... em chỉ xoá đúng một dòng dấu cách vô dụng thôi mà...",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p2_d2"
+        },
+        {
+          "id": "p2_d2_w4",
+          "text": "删",
+          "text_trad": "刪",
+          "pinyin": "shān",
+          "hanviet": "San",
+          "meaning_vi": "xóa, loại bỏ",
+          "hsk": 5,
+          "bbox": {
+            "x": 62.209,
+            "y": 77.344,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 62.209,
+              "y": 77.344,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "我……我就刪了一行沒用的空格……",
+          "sentence_zh_simplified": "我……我就删了一行没用的空格……",
+          "sentence_vi": "Em... em chỉ xoá đúng một dòng dấu cách vô dụng thôi mà...",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p2_d2"
+        },
+        {
+          "id": "p2_d2_w5",
+          "text": "了",
+          "text_trad": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "meaning_vi": "rồi (trợ từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 64.099,
+            "y": 77.344,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 64.099,
+              "y": 77.344,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "我……我就刪了一行沒用的空格……",
+          "sentence_zh_simplified": "我……我就删了一行没用的空格……",
+          "sentence_vi": "Em... em chỉ xoá đúng một dòng dấu cách vô dụng thôi mà...",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p2_d2"
+        },
+        {
+          "id": "p2_d2_w6",
+          "text": "一行",
+          "text_trad": "一行",
+          "pinyin": "yìxíng",
+          "hanviet": "Nhất Hành",
+          "meaning_vi": "đoàn người, đoàn đại biểu",
+          "hsk": "7-9",
+          "bbox": {
+            "x": 65.988,
+            "y": 77.344,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 65.988,
+              "y": 77.344,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "我……我就刪了一行沒用的空格……",
+          "sentence_zh_simplified": "我……我就删了一行没用的空格……",
+          "sentence_vi": "Em... em chỉ xoá đúng một dòng dấu cách vô dụng thôi mà...",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p2_d2"
+        },
+        {
+          "id": "p2_d2_w7",
+          "text": "没",
+          "text_trad": "沒",
+          "pinyin": "méi",
+          "hanviet": "Một",
+          "meaning_vi": "không có; chưa",
+          "hsk": 1,
+          "bbox": {
+            "x": 69.767,
+            "y": 77.344,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 69.767,
+              "y": 77.344,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "我……我就刪了一行沒用的空格……",
+          "sentence_zh_simplified": "我……我就删了一行没用的空格……",
+          "sentence_vi": "Em... em chỉ xoá đúng một dòng dấu cách vô dụng thôi mà...",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p2_d2"
+        },
+        {
+          "id": "p2_d2_w8",
+          "text": "用",
+          "text_trad": "用",
+          "pinyin": "yòng",
+          "hanviet": "Dụng",
+          "meaning_vi": "dùng",
+          "hsk": 3,
+          "bbox": {
+            "x": 71.657,
+            "y": 77.344,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 71.657,
+              "y": 77.344,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "我……我就刪了一行沒用的空格……",
+          "sentence_zh_simplified": "我……我就删了一行没用的空格……",
+          "sentence_vi": "Em... em chỉ xoá đúng một dòng dấu cách vô dụng thôi mà...",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p2_d2"
+        },
+        {
+          "id": "p2_d2_w9",
+          "text": "的",
+          "text_trad": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "meaning_vi": "của (trợ từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 73.547,
+            "y": 77.344,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 73.547,
+              "y": 77.344,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "我……我就刪了一行沒用的空格……",
+          "sentence_zh_simplified": "我……我就删了一行没用的空格……",
+          "sentence_vi": "Em... em chỉ xoá đúng một dòng dấu cách vô dụng thôi mà...",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p2_d2"
+        },
+        {
+          "id": "p2_d2_w10",
+          "text": "空格",
+          "text_trad": "空格",
+          "pinyin": "kònggé",
+          "hanviet": "Không Cách",
+          "meaning_vi": "dấu cách, khoảng trắng (spacebar)",
+          "hsk": 3,
+          "bbox": {
+            "x": 75.436,
+            "y": 77.344,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 75.436,
+              "y": 77.344,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "我……我就刪了一行沒用的空格……",
+          "sentence_zh_simplified": "我……我就删了一行没用的空格……",
+          "sentence_vi": "Em... em chỉ xoá đúng một dòng dấu cách vô dụng thôi mà...",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p2_d2"
+        }
+      ],
+      "ocr": {
+        "image_px": [
+          1376,
+          768
+        ]
+      }
+    },
+    {
+      "page_num": 3,
+      "image": "assets/images/readings/manga/office/office_ep04/page_03.webp",
+      "dialogues": [
+        {
+          "id": "p3_d1",
+          "character": "王经理 (Sếp Vương)",
+          "bbox": {
+            "x": 42.15,
+            "y": 5.21,
+            "width": 53.78,
+            "height": 12.37
+          },
+          "zh": "老周！你是主架构师，快找是谁提交的！",
+          "zh_trad": "老周！你是主架構師，快找是誰提交的！",
+          "pinyin": "lǎo zhōu ！ nǐ shì zhǔ jià gòu shī ， kuài zhǎo shì shuí tí jiāo de ！",
+          "vi": "Lão Châu! Cậu là kiến trúc sư trưởng, mau tìm xem ai commit code!",
+          "tokens": [
+            {
+              "text": "老周",
+              "text_trad": "老周",
+              "pinyin": "Lǎo Zhōu",
+              "hanviet": "Lão Chu",
+              "meaning_vi": "Lão Châu (lập trình viên thâm niên)",
+              "hsk": null
+            },
+            {
+              "text": "你",
+              "text_trad": "你",
+              "pinyin": "nǐ",
+              "hanviet": "Nễ",
+              "meaning_vi": "bạn",
+              "hsk": 1
+            },
+            {
+              "text": "是",
+              "text_trad": "是",
+              "pinyin": "shì",
+              "hanviet": "Thị",
+              "meaning_vi": "là",
+              "hsk": 1
+            },
+            {
+              "text": "主",
+              "text_trad": "主",
+              "pinyin": "zhǔ",
+              "hanviet": "Chủ",
+              "meaning_vi": "",
+              "hsk": null
+            },
+            {
+              "text": "架构师",
+              "text_trad": "架構師",
+              "pinyin": "jiàgòushī",
+              "hanviet": "Giá Cấu Sư",
+              "meaning_vi": "kiến trúc sư hệ thống phần mềm (architect)",
+              "hsk": 5
+            },
+            {
+              "text": "快",
+              "text_trad": "快",
+              "pinyin": "kuài",
+              "hanviet": "Khoái",
+              "meaning_vi": "nhanh",
+              "hsk": 2
+            },
+            {
+              "text": "找",
+              "text_trad": "找",
+              "pinyin": "zhǎo",
+              "hanviet": "Trảo",
+              "meaning_vi": "tìm",
+              "hsk": 1
+            },
+            {
+              "text": "是",
+              "text_trad": "是",
+              "pinyin": "shì",
+              "hanviet": "Thị",
+              "meaning_vi": "là",
+              "hsk": 1
+            },
+            {
+              "text": "谁",
+              "text_trad": "誰",
+              "pinyin": "shéi/shuí",
+              "hanviet": "Thuỳ",
+              "meaning_vi": "ai",
+              "hsk": 1
+            },
+            {
+              "text": "提交",
+              "text_trad": "提交",
+              "pinyin": "tíjiāo",
+              "hanviet": "Đề Giao",
+              "meaning_vi": "gửi",
+              "hsk": 5
+            },
+            {
+              "text": "的",
+              "text_trad": "的",
+              "pinyin": "de",
+              "hanviet": "Đích",
+              "meaning_vi": "của (trợ từ)",
+              "hsk": 1
+            }
+          ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "p3_d1_w1",
+          "text": "老周",
+          "text_trad": "老周",
+          "pinyin": "Lǎo Zhōu",
+          "hanviet": "Lão Chu",
+          "meaning_vi": "Lão Châu (lập trình viên thâm niên)",
+          "hsk": null,
+          "bbox": {
+            "x": 43.459,
+            "y": 9.635,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 43.459,
+              "y": 9.635,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "老周！你是主架構師，快找是誰提交的！",
+          "sentence_zh_simplified": "老周！你是主架构师，快找是谁提交的！",
+          "sentence_vi": "Lão Châu! Cậu là kiến trúc sư trưởng, mau tìm xem ai commit code!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w2",
+          "text": "你",
+          "text_trad": "你",
+          "pinyin": "nǐ",
+          "hanviet": "Nễ",
+          "meaning_vi": "bạn",
+          "hsk": 1,
+          "bbox": {
+            "x": 47.238,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 47.238,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "老周！你是主架構師，快找是誰提交的！",
+          "sentence_zh_simplified": "老周！你是主架构师，快找是谁提交的！",
+          "sentence_vi": "Lão Châu! Cậu là kiến trúc sư trưởng, mau tìm xem ai commit code!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w3",
+          "text": "是",
+          "text_trad": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "meaning_vi": "là",
+          "hsk": 1,
+          "bbox": {
+            "x": 49.128,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 49.128,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "老周！你是主架構師，快找是誰提交的！",
+          "sentence_zh_simplified": "老周！你是主架构师，快找是谁提交的！",
+          "sentence_vi": "Lão Châu! Cậu là kiến trúc sư trưởng, mau tìm xem ai commit code!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w4",
+          "text": "主",
+          "text_trad": "主",
+          "pinyin": "zhǔ",
+          "hanviet": "Chủ",
+          "meaning_vi": "",
+          "hsk": null,
+          "bbox": {
+            "x": 51.017,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 51.017,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "老周！你是主架構師，快找是誰提交的！",
+          "sentence_zh_simplified": "老周！你是主架构师，快找是谁提交的！",
+          "sentence_vi": "Lão Châu! Cậu là kiến trúc sư trưởng, mau tìm xem ai commit code!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w5",
+          "text": "架构师",
+          "text_trad": "架構師",
+          "pinyin": "jiàgòushī",
+          "hanviet": "Giá Cấu Sư",
+          "meaning_vi": "kiến trúc sư hệ thống phần mềm (architect)",
+          "hsk": 5,
+          "bbox": {
+            "x": 52.907,
+            "y": 9.635,
+            "width": 5.669,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 52.907,
+              "y": 9.635,
+              "width": 5.669,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "老周！你是主架構師，快找是誰提交的！",
+          "sentence_zh_simplified": "老周！你是主架构师，快找是谁提交的！",
+          "sentence_vi": "Lão Châu! Cậu là kiến trúc sư trưởng, mau tìm xem ai commit code!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w6",
+          "text": "快",
+          "text_trad": "快",
+          "pinyin": "kuài",
+          "hanviet": "Khoái",
+          "meaning_vi": "nhanh",
+          "hsk": 2,
+          "bbox": {
+            "x": 58.576,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 58.576,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "老周！你是主架構師，快找是誰提交的！",
+          "sentence_zh_simplified": "老周！你是主架构师，快找是谁提交的！",
+          "sentence_vi": "Lão Châu! Cậu là kiến trúc sư trưởng, mau tìm xem ai commit code!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w7",
+          "text": "找",
+          "text_trad": "找",
+          "pinyin": "zhǎo",
+          "hanviet": "Trảo",
+          "meaning_vi": "tìm",
+          "hsk": 1,
+          "bbox": {
+            "x": 60.465,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 60.465,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "老周！你是主架構師，快找是誰提交的！",
+          "sentence_zh_simplified": "老周！你是主架构师，快找是谁提交的！",
+          "sentence_vi": "Lão Châu! Cậu là kiến trúc sư trưởng, mau tìm xem ai commit code!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w8",
+          "text": "是",
+          "text_trad": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "meaning_vi": "là",
+          "hsk": 1,
+          "bbox": {
+            "x": 62.355,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 62.355,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "老周！你是主架構師，快找是誰提交的！",
+          "sentence_zh_simplified": "老周！你是主架构师，快找是谁提交的！",
+          "sentence_vi": "Lão Châu! Cậu là kiến trúc sư trưởng, mau tìm xem ai commit code!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w9",
+          "text": "谁",
+          "text_trad": "誰",
+          "pinyin": "shéi/shuí",
+          "hanviet": "Thuỳ",
+          "meaning_vi": "ai",
+          "hsk": 1,
+          "bbox": {
+            "x": 64.244,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 64.244,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "老周！你是主架構師，快找是誰提交的！",
+          "sentence_zh_simplified": "老周！你是主架构师，快找是谁提交的！",
+          "sentence_vi": "Lão Châu! Cậu là kiến trúc sư trưởng, mau tìm xem ai commit code!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w10",
+          "text": "提交",
+          "text_trad": "提交",
+          "pinyin": "tíjiāo",
+          "hanviet": "Đề Giao",
+          "meaning_vi": "gửi",
+          "hsk": 5,
+          "bbox": {
+            "x": 66.134,
+            "y": 9.635,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 66.134,
+              "y": 9.635,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "老周！你是主架構師，快找是誰提交的！",
+          "sentence_zh_simplified": "老周！你是主架构师，快找是谁提交的！",
+          "sentence_vi": "Lão Châu! Cậu là kiến trúc sư trưởng, mau tìm xem ai commit code!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w11",
+          "text": "的",
+          "text_trad": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "meaning_vi": "của (trợ từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 69.913,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 69.913,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "老周！你是主架構師，快找是誰提交的！",
+          "sentence_zh_simplified": "老周！你是主架构师，快找是谁提交的！",
+          "sentence_vi": "Lão Châu! Cậu là kiến trúc sư trưởng, mau tìm xem ai commit code!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p3_d1"
+        }
+      ],
+      "ocr": {
+        "image_px": [
+          1376,
+          768
+        ]
+      }
+    },
+    {
+      "page_num": 4,
+      "image": "assets/images/readings/manga/office/office_ep04/page_04.webp",
+      "dialogues": [
+        {
+          "id": "p4_d1",
+          "character": "老周 (Lão Châu)",
+          "bbox": {
+            "x": 7.27,
+            "y": 5.21,
+            "width": 61.05,
+            "height": 12.37
+          },
+          "zh": "查了。是王总您昨天半夜两点直接合并的代码。",
+          "zh_trad": "查了。是王總您昨天半夜兩點直接合並的代碼。",
+          "pinyin": "chá le 。 shì wáng zǒng nín zuó tiān bàn yè liǎng diǎn zhí jiē hé bìng de dài mǎ 。",
+          "vi": "Tra rồi. Là Sếp Vương đích thân merge code lúc hai giờ sáng đêm qua đấy.",
+          "tokens": [
+            {
+              "text": "查",
+              "text_trad": "查",
+              "pinyin": "chá",
+              "hanviet": "Tra",
+              "meaning_vi": "tra, kiểm tra",
+              "hsk": 3
+            },
+            {
+              "text": "了",
+              "text_trad": "了",
+              "pinyin": "le",
+              "hanviet": "Liễu",
+              "meaning_vi": "rồi (trợ từ)",
+              "hsk": 1
+            },
+            {
+              "text": "是",
+              "text_trad": "是",
+              "pinyin": "shì",
+              "hanviet": "Thị",
+              "meaning_vi": "là",
+              "hsk": 1
+            },
+            {
+              "text": "王总",
+              "text_trad": "王總",
+              "pinyin": "Wáng zǒng",
+              "hanviet": "Vương Tổng",
+              "meaning_vi": "Sếp Vương (Tổng giám đốc Vương)",
+              "hsk": null
+            },
+            {
+              "text": "您",
+              "text_trad": "您",
+              "pinyin": "nín",
+              "hanviet": "Nâm",
+              "meaning_vi": "ngài, bạn (kính ngữ)",
+              "hsk": 1
+            },
+            {
+              "text": "昨天",
+              "text_trad": "昨天",
+              "pinyin": "zuótiān",
+              "hanviet": "Tạc Thiên",
+              "meaning_vi": "hôm qua",
+              "hsk": 1
+            },
+            {
+              "text": "半夜",
+              "text_trad": "半夜",
+              "pinyin": "bànyè",
+              "hanviet": "Bán Dạ",
+              "meaning_vi": "nửa đêm",
+              "hsk": 5
+            },
+            {
+              "text": "两",
+              "text_trad": "兩",
+              "pinyin": "liǎng",
+              "hanviet": "Lưỡng ¹",
+              "meaning_vi": "hai (số lượng)",
+              "hsk": 1
+            },
+            {
+              "text": "点",
+              "text_trad": "點",
+              "pinyin": "diǎn",
+              "hanviet": "Điểm ¹",
+              "meaning_vi": "giờ, điểm",
+              "hsk": 1
+            },
+            {
+              "text": "直接",
+              "text_trad": "直接",
+              "pinyin": "zhíjiē",
+              "hanviet": "Trực Tiếp",
+              "meaning_vi": "trực tiếp",
+              "hsk": 4
+            },
+            {
+              "text": "合并",
+              "text_trad": "合併",
+              "pinyin": "hébìng",
+              "hanviet": "Cáp Tinh",
+              "meaning_vi": "hợp nhất, merge code",
+              "hsk": 4
+            },
+            {
+              "text": "的",
+              "text_trad": "的",
+              "pinyin": "de",
+              "hanviet": "Đích",
+              "meaning_vi": "của (trợ từ)",
+              "hsk": 1
+            },
+            {
+              "text": "代码",
+              "text_trad": "代碼",
+              "pinyin": "dàimǎ",
+              "hanviet": "Đại Mã",
+              "meaning_vi": "mã code, mã nguồn",
+              "hsk": 4
+            }
+          ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "p4_d1_w1",
+          "text": "查",
+          "text_trad": "查",
+          "pinyin": "chá",
+          "hanviet": "Tra",
+          "meaning_vi": "tra, kiểm tra",
+          "hsk": 3,
+          "bbox": {
+            "x": 8.576,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 8.576,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "查了。是王總您昨天半夜兩點直接合並的代碼。",
+          "sentence_zh_simplified": "查了。是王总您昨天半夜两点直接合并的代码。",
+          "sentence_vi": "Tra rồi. Là Sếp Vương đích thân merge code lúc hai giờ sáng đêm qua đấy.",
+          "character": "老周 (Lão Châu)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d1_w2",
+          "text": "了",
+          "text_trad": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "meaning_vi": "rồi (trợ từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 10.465,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 10.465,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "查了。是王總您昨天半夜兩點直接合並的代碼。",
+          "sentence_zh_simplified": "查了。是王总您昨天半夜两点直接合并的代码。",
+          "sentence_vi": "Tra rồi. Là Sếp Vương đích thân merge code lúc hai giờ sáng đêm qua đấy.",
+          "character": "老周 (Lão Châu)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d1_w3",
+          "text": "是",
+          "text_trad": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "meaning_vi": "là",
+          "hsk": 1,
+          "bbox": {
+            "x": 12.355,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 12.355,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "查了。是王總您昨天半夜兩點直接合並的代碼。",
+          "sentence_zh_simplified": "查了。是王总您昨天半夜两点直接合并的代码。",
+          "sentence_vi": "Tra rồi. Là Sếp Vương đích thân merge code lúc hai giờ sáng đêm qua đấy.",
+          "character": "老周 (Lão Châu)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d1_w4",
+          "text": "王总",
+          "text_trad": "王總",
+          "pinyin": "Wáng zǒng",
+          "hanviet": "Vương Tổng",
+          "meaning_vi": "Sếp Vương (Tổng giám đốc Vương)",
+          "hsk": null,
+          "bbox": {
+            "x": 14.244,
+            "y": 9.635,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 14.244,
+              "y": 9.635,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "查了。是王總您昨天半夜兩點直接合並的代碼。",
+          "sentence_zh_simplified": "查了。是王总您昨天半夜两点直接合并的代码。",
+          "sentence_vi": "Tra rồi. Là Sếp Vương đích thân merge code lúc hai giờ sáng đêm qua đấy.",
+          "character": "老周 (Lão Châu)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d1_w5",
+          "text": "您",
+          "text_trad": "您",
+          "pinyin": "nín",
+          "hanviet": "Nâm",
+          "meaning_vi": "ngài, bạn (kính ngữ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 18.023,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 18.023,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "查了。是王總您昨天半夜兩點直接合並的代碼。",
+          "sentence_zh_simplified": "查了。是王总您昨天半夜两点直接合并的代码。",
+          "sentence_vi": "Tra rồi. Là Sếp Vương đích thân merge code lúc hai giờ sáng đêm qua đấy.",
+          "character": "老周 (Lão Châu)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d1_w6",
+          "text": "昨天",
+          "text_trad": "昨天",
+          "pinyin": "zuótiān",
+          "hanviet": "Tạc Thiên",
+          "meaning_vi": "hôm qua",
+          "hsk": 1,
+          "bbox": {
+            "x": 19.913,
+            "y": 9.635,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 19.913,
+              "y": 9.635,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "查了。是王總您昨天半夜兩點直接合並的代碼。",
+          "sentence_zh_simplified": "查了。是王总您昨天半夜两点直接合并的代码。",
+          "sentence_vi": "Tra rồi. Là Sếp Vương đích thân merge code lúc hai giờ sáng đêm qua đấy.",
+          "character": "老周 (Lão Châu)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d1_w7",
+          "text": "半夜",
+          "text_trad": "半夜",
+          "pinyin": "bànyè",
+          "hanviet": "Bán Dạ",
+          "meaning_vi": "nửa đêm",
+          "hsk": 5,
+          "bbox": {
+            "x": 23.692,
+            "y": 9.635,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 23.692,
+              "y": 9.635,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "查了。是王總您昨天半夜兩點直接合並的代碼。",
+          "sentence_zh_simplified": "查了。是王总您昨天半夜两点直接合并的代码。",
+          "sentence_vi": "Tra rồi. Là Sếp Vương đích thân merge code lúc hai giờ sáng đêm qua đấy.",
+          "character": "老周 (Lão Châu)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d1_w8",
+          "text": "两",
+          "text_trad": "兩",
+          "pinyin": "liǎng",
+          "hanviet": "Lưỡng ¹",
+          "meaning_vi": "hai (số lượng)",
+          "hsk": 1,
+          "bbox": {
+            "x": 27.471,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 27.471,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "查了。是王總您昨天半夜兩點直接合並的代碼。",
+          "sentence_zh_simplified": "查了。是王总您昨天半夜两点直接合并的代码。",
+          "sentence_vi": "Tra rồi. Là Sếp Vương đích thân merge code lúc hai giờ sáng đêm qua đấy.",
+          "character": "老周 (Lão Châu)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d1_w9",
+          "text": "点",
+          "text_trad": "點",
+          "pinyin": "diǎn",
+          "hanviet": "Điểm ¹",
+          "meaning_vi": "giờ, điểm",
+          "hsk": 1,
+          "bbox": {
+            "x": 29.36,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 29.36,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "查了。是王總您昨天半夜兩點直接合並的代碼。",
+          "sentence_zh_simplified": "查了。是王总您昨天半夜两点直接合并的代码。",
+          "sentence_vi": "Tra rồi. Là Sếp Vương đích thân merge code lúc hai giờ sáng đêm qua đấy.",
+          "character": "老周 (Lão Châu)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d1_w10",
+          "text": "直接",
+          "text_trad": "直接",
+          "pinyin": "zhíjiē",
+          "hanviet": "Trực Tiếp",
+          "meaning_vi": "trực tiếp",
+          "hsk": 4,
+          "bbox": {
+            "x": 31.25,
+            "y": 9.635,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 31.25,
+              "y": 9.635,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "查了。是王總您昨天半夜兩點直接合並的代碼。",
+          "sentence_zh_simplified": "查了。是王总您昨天半夜两点直接合并的代码。",
+          "sentence_vi": "Tra rồi. Là Sếp Vương đích thân merge code lúc hai giờ sáng đêm qua đấy.",
+          "character": "老周 (Lão Châu)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d1_w11",
+          "text": "合并",
+          "text_trad": "合併",
+          "pinyin": "hébìng",
+          "hanviet": "Cáp Tinh",
+          "meaning_vi": "hợp nhất, merge code",
+          "hsk": 4,
+          "bbox": {
+            "x": 35.029,
+            "y": 9.635,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 35.029,
+              "y": 9.635,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "查了。是王總您昨天半夜兩點直接合並的代碼。",
+          "sentence_zh_simplified": "查了。是王总您昨天半夜两点直接合并的代码。",
+          "sentence_vi": "Tra rồi. Là Sếp Vương đích thân merge code lúc hai giờ sáng đêm qua đấy.",
+          "character": "老周 (Lão Châu)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d1_w12",
+          "text": "的",
+          "text_trad": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "meaning_vi": "của (trợ từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 38.808,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 38.808,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "查了。是王總您昨天半夜兩點直接合並的代碼。",
+          "sentence_zh_simplified": "查了。是王总您昨天半夜两点直接合并的代码。",
+          "sentence_vi": "Tra rồi. Là Sếp Vương đích thân merge code lúc hai giờ sáng đêm qua đấy.",
+          "character": "老周 (Lão Châu)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d1_w13",
+          "text": "代码",
+          "text_trad": "代碼",
+          "pinyin": "dàimǎ",
+          "hanviet": "Đại Mã",
+          "meaning_vi": "mã code, mã nguồn",
+          "hsk": 4,
+          "bbox": {
+            "x": 40.698,
+            "y": 9.635,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 40.698,
+              "y": 9.635,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "查了。是王總您昨天半夜兩點直接合並的代碼。",
+          "sentence_zh_simplified": "查了。是王总您昨天半夜两点直接合并的代码。",
+          "sentence_vi": "Tra rồi. Là Sếp Vương đích thân merge code lúc hai giờ sáng đêm qua đấy.",
+          "character": "老周 (Lão Châu)",
+          "dialogue_id": "p4_d1"
+        }
+      ],
+      "ocr": {
+        "image_px": [
+          1376,
+          768
+        ]
+      }
+    },
+    {
+      "page_num": 5,
+      "image": "assets/images/readings/manga/office/office_ep04/page_05.webp",
+      "dialogues": [
+        {
+          "id": "p5_d1",
+          "character": "王经理 (Sếp Vương)",
+          "bbox": {
+            "x": 13.08,
+            "y": 5.21,
+            "width": 65.41,
+            "height": 12.37
+          },
+          "zh": "咳……遇到问题不要急着追责，大家要协同复盘。",
+          "zh_trad": "咳……遇到問題不要急着追責，大家要協同復盤。",
+          "pinyin": "ké …… yù dào wèn tí bú yào jí zhe zhuī zé ， dà jiā yào xié tóng fù pán 。",
+          "vi": "Khụ... Gặp vấn đề không nên vội quy trách nhiệm, cả team cùng nhau họp rút kinh nghiệm là được.",
+          "tokens": [
+            {
+              "text": "咳",
+              "text_trad": "咳",
+              "pinyin": "ké",
+              "hanviet": "Hài",
+              "meaning_vi": "ho",
+              "hsk": 4
+            },
+            {
+              "text": "遇到",
+              "text_trad": "遇到",
+              "pinyin": "yùdào",
+              "hanviet": "Ngộ Đáo",
+              "meaning_vi": "gặp phải",
+              "hsk": 3
+            },
+            {
+              "text": "问题",
+              "text_trad": "問題",
+              "pinyin": "wèntí",
+              "hanviet": "Vấn Đề",
+              "meaning_vi": "câu hỏi, vấn đề",
+              "hsk": 1
+            },
+            {
+              "text": "不要",
+              "text_trad": "不要",
+              "pinyin": "búyào",
+              "hanviet": "Bất Yếu",
+              "meaning_vi": "đừng",
+              "hsk": 1
+            },
+            {
+              "text": "急",
+              "text_trad": "急",
+              "pinyin": "jí",
+              "hanviet": "Cấp",
+              "meaning_vi": "vội, gấp; sốt ruột",
+              "hsk": 3
+            },
+            {
+              "text": "着",
+              "text_trad": "着",
+              "pinyin": "zhe",
+              "hanviet": "Trước",
+              "meaning_vi": "đang (trợ từ)",
+              "hsk": 2
+            },
+            {
+              "text": "追责",
+              "text_trad": "追責",
+              "pinyin": "zhuīzé",
+              "hanviet": "Đôi Trách",
+              "meaning_vi": "truy cứu trách nhiệm, bắt lỗi",
+              "hsk": 5
+            },
+            {
+              "text": "大家",
+              "text_trad": "大家",
+              "pinyin": "dàjiā",
+              "hanviet": "Đại Gia",
+              "meaning_vi": "mọi người",
+              "hsk": 1
+            },
+            {
+              "text": "要",
+              "text_trad": "要",
+              "pinyin": "yào",
+              "hanviet": "Yêu",
+              "meaning_vi": "muốn, cần",
+              "hsk": 1
+            },
+            {
+              "text": "协同",
+              "text_trad": "協同",
+              "pinyin": "xiétóng",
+              "hanviet": "Hiệp Đồng",
+              "meaning_vi": "hiệp đồng; phối hợp nhịp nhàng",
+              "hsk": "7-9"
+            },
+            {
+              "text": "复盘",
+              "text_trad": "復盤",
+              "pinyin": "fùpán",
+              "hanviet": "Phục Bàn",
+              "meaning_vi": "họp rút kinh nghiệm, đánh giá lại sau sự cố (post-mortem)",
+              "hsk": 5
+            }
+          ]
+        },
+        {
+          "id": "p5_d2",
+          "character": "老周 (Lão Châu)",
+          "bbox": {
+            "x": 63.95,
+            "y": 67.71,
+            "width": 21.8,
+            "height": 12.37
+          },
+          "zh": "我就知道。",
+          "zh_trad": "我就知道。",
+          "pinyin": "wǒ jiù zhī dào 。",
+          "vi": "Tôi biết ngay mà.",
+          "tokens": [
+            {
+              "text": "我",
+              "text_trad": "我",
+              "pinyin": "wǒ",
+              "hanviet": "Ngã",
+              "meaning_vi": "tôi",
+              "hsk": 1
+            },
+            {
+              "text": "就",
+              "text_trad": "就",
+              "pinyin": "jiù",
+              "hanviet": "Tựu",
+              "meaning_vi": "là, ngay (trợ từ nhấn mạnh)",
+              "hsk": 2
+            },
+            {
+              "text": "知道",
+              "text_trad": "知道",
+              "pinyin": "zhīdào",
+              "hanviet": "Tri Đạo",
+              "meaning_vi": "biết",
+              "hsk": 1
+            }
+          ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "p5_d1_w1",
+          "text": "咳",
+          "text_trad": "咳",
+          "pinyin": "ké",
+          "hanviet": "Hài",
+          "meaning_vi": "ho",
+          "hsk": 4,
+          "bbox": {
+            "x": 14.39,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 14.39,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "咳……遇到問題不要急着追責，大家要協同復盤。",
+          "sentence_zh_simplified": "咳……遇到问题不要急着追责，大家要协同复盘。",
+          "sentence_vi": "Khụ... Gặp vấn đề không nên vội quy trách nhiệm, cả team cùng nhau họp rút kinh nghiệm là được.",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w2",
+          "text": "遇到",
+          "text_trad": "遇到",
+          "pinyin": "yùdào",
+          "hanviet": "Ngộ Đáo",
+          "meaning_vi": "gặp phải",
+          "hsk": 3,
+          "bbox": {
+            "x": 16.279,
+            "y": 9.635,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 16.279,
+              "y": 9.635,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "咳……遇到問題不要急着追責，大家要協同復盤。",
+          "sentence_zh_simplified": "咳……遇到问题不要急着追责，大家要协同复盘。",
+          "sentence_vi": "Khụ... Gặp vấn đề không nên vội quy trách nhiệm, cả team cùng nhau họp rút kinh nghiệm là được.",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w3",
+          "text": "问题",
+          "text_trad": "問題",
+          "pinyin": "wèntí",
+          "hanviet": "Vấn Đề",
+          "meaning_vi": "câu hỏi, vấn đề",
+          "hsk": 1,
+          "bbox": {
+            "x": 20.058,
+            "y": 9.635,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 20.058,
+              "y": 9.635,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "咳……遇到問題不要急着追責，大家要協同復盤。",
+          "sentence_zh_simplified": "咳……遇到问题不要急着追责，大家要协同复盘。",
+          "sentence_vi": "Khụ... Gặp vấn đề không nên vội quy trách nhiệm, cả team cùng nhau họp rút kinh nghiệm là được.",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w4",
+          "text": "不要",
+          "text_trad": "不要",
+          "pinyin": "búyào",
+          "hanviet": "Bất Yếu",
+          "meaning_vi": "đừng",
+          "hsk": 1,
+          "bbox": {
+            "x": 23.837,
+            "y": 9.635,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 23.837,
+              "y": 9.635,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "咳……遇到問題不要急着追責，大家要協同復盤。",
+          "sentence_zh_simplified": "咳……遇到问题不要急着追责，大家要协同复盘。",
+          "sentence_vi": "Khụ... Gặp vấn đề không nên vội quy trách nhiệm, cả team cùng nhau họp rút kinh nghiệm là được.",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w5",
+          "text": "急",
+          "text_trad": "急",
+          "pinyin": "jí",
+          "hanviet": "Cấp",
+          "meaning_vi": "vội, gấp; sốt ruột",
+          "hsk": 3,
+          "bbox": {
+            "x": 27.616,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 27.616,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "咳……遇到問題不要急着追責，大家要協同復盤。",
+          "sentence_zh_simplified": "咳……遇到问题不要急着追责，大家要协同复盘。",
+          "sentence_vi": "Khụ... Gặp vấn đề không nên vội quy trách nhiệm, cả team cùng nhau họp rút kinh nghiệm là được.",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w6",
+          "text": "着",
+          "text_trad": "着",
+          "pinyin": "zhe",
+          "hanviet": "Trước",
+          "meaning_vi": "đang (trợ từ)",
+          "hsk": 2,
+          "bbox": {
+            "x": 29.506,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 29.506,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "咳……遇到問題不要急着追責，大家要協同復盤。",
+          "sentence_zh_simplified": "咳……遇到问题不要急着追责，大家要协同复盘。",
+          "sentence_vi": "Khụ... Gặp vấn đề không nên vội quy trách nhiệm, cả team cùng nhau họp rút kinh nghiệm là được.",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w7",
+          "text": "追责",
+          "text_trad": "追責",
+          "pinyin": "zhuīzé",
+          "hanviet": "Đôi Trách",
+          "meaning_vi": "truy cứu trách nhiệm, bắt lỗi",
+          "hsk": 5,
+          "bbox": {
+            "x": 31.395,
+            "y": 9.635,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 31.395,
+              "y": 9.635,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "咳……遇到問題不要急着追責，大家要協同復盤。",
+          "sentence_zh_simplified": "咳……遇到问题不要急着追责，大家要协同复盘。",
+          "sentence_vi": "Khụ... Gặp vấn đề không nên vội quy trách nhiệm, cả team cùng nhau họp rút kinh nghiệm là được.",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w8",
+          "text": "大家",
+          "text_trad": "大家",
+          "pinyin": "dàjiā",
+          "hanviet": "Đại Gia",
+          "meaning_vi": "mọi người",
+          "hsk": 1,
+          "bbox": {
+            "x": 35.174,
+            "y": 9.635,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 35.174,
+              "y": 9.635,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "咳……遇到問題不要急着追責，大家要協同復盤。",
+          "sentence_zh_simplified": "咳……遇到问题不要急着追责，大家要协同复盘。",
+          "sentence_vi": "Khụ... Gặp vấn đề không nên vội quy trách nhiệm, cả team cùng nhau họp rút kinh nghiệm là được.",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w9",
+          "text": "要",
+          "text_trad": "要",
+          "pinyin": "yào",
+          "hanviet": "Yêu",
+          "meaning_vi": "muốn, cần",
+          "hsk": 1,
+          "bbox": {
+            "x": 38.953,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 38.953,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "咳……遇到問題不要急着追責，大家要協同復盤。",
+          "sentence_zh_simplified": "咳……遇到问题不要急着追责，大家要协同复盘。",
+          "sentence_vi": "Khụ... Gặp vấn đề không nên vội quy trách nhiệm, cả team cùng nhau họp rút kinh nghiệm là được.",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w10",
+          "text": "协同",
+          "text_trad": "協同",
+          "pinyin": "xiétóng",
+          "hanviet": "Hiệp Đồng",
+          "meaning_vi": "hiệp đồng; phối hợp nhịp nhàng",
+          "hsk": "7-9",
+          "bbox": {
+            "x": 40.843,
+            "y": 9.635,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 40.843,
+              "y": 9.635,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "咳……遇到問題不要急着追責，大家要協同復盤。",
+          "sentence_zh_simplified": "咳……遇到问题不要急着追责，大家要协同复盘。",
+          "sentence_vi": "Khụ... Gặp vấn đề không nên vội quy trách nhiệm, cả team cùng nhau họp rút kinh nghiệm là được.",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w11",
+          "text": "复盘",
+          "text_trad": "復盤",
+          "pinyin": "fùpán",
+          "hanviet": "Phục Bàn",
+          "meaning_vi": "họp rút kinh nghiệm, đánh giá lại sau sự cố (post-mortem)",
+          "hsk": 5,
+          "bbox": {
+            "x": 44.622,
+            "y": 9.635,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 44.622,
+              "y": 9.635,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "咳……遇到問題不要急着追責，大家要協同復盤。",
+          "sentence_zh_simplified": "咳……遇到问题不要急着追责，大家要协同复盘。",
+          "sentence_vi": "Khụ... Gặp vấn đề không nên vội quy trách nhiệm, cả team cùng nhau họp rút kinh nghiệm là được.",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d2_w1",
+          "text": "我",
+          "text_trad": "我",
+          "pinyin": "wǒ",
+          "hanviet": "Ngã",
+          "meaning_vi": "tôi",
+          "hsk": 1,
+          "bbox": {
+            "x": 65.262,
+            "y": 72.135,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 65.262,
+              "y": 72.135,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "我就知道。",
+          "sentence_zh_simplified": "我就知道。",
+          "sentence_vi": "Tôi biết ngay mà.",
+          "character": "老周 (Lão Châu)",
+          "dialogue_id": "p5_d2"
+        },
+        {
+          "id": "p5_d2_w2",
+          "text": "就",
+          "text_trad": "就",
+          "pinyin": "jiù",
+          "hanviet": "Tựu",
+          "meaning_vi": "là, ngay (trợ từ nhấn mạnh)",
+          "hsk": 2,
+          "bbox": {
+            "x": 67.151,
+            "y": 72.135,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 67.151,
+              "y": 72.135,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "我就知道。",
+          "sentence_zh_simplified": "我就知道。",
+          "sentence_vi": "Tôi biết ngay mà.",
+          "character": "老周 (Lão Châu)",
+          "dialogue_id": "p5_d2"
+        },
+        {
+          "id": "p5_d2_w3",
+          "text": "知道",
+          "text_trad": "知道",
+          "pinyin": "zhīdào",
+          "hanviet": "Tri Đạo",
+          "meaning_vi": "biết",
+          "hsk": 1,
+          "bbox": {
+            "x": 69.041,
+            "y": 72.135,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 69.041,
+              "y": 72.135,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "我就知道。",
+          "sentence_zh_simplified": "我就知道。",
+          "sentence_vi": "Tôi biết ngay mà.",
+          "character": "老周 (Lão Châu)",
+          "dialogue_id": "p5_d2"
+        }
+      ],
+      "ocr": {
+        "image_px": [
+          1376,
+          768
+        ]
+      }
+    }
+  ]
+}
