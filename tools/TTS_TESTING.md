@@ -52,35 +52,20 @@ database/prebuilt_audio/hsk4/
 
 ---
 
-## CosyVoice3 HSK1 Prebuilt Audio
+## Microsoft Edge Neural TTS Prebuilt Audio (Current Standard)
 
+The project standardizes on **Microsoft Edge Neural TTS** using `zh-CN-XiaoxiaoNeural` (24kHz Mono, 64kbps MP3 with EBU R128 loudness normalization and silence trimming).
 
-Install CosyVoice3 from its official repository in a separate Python 3.10 environment.
-Large source and model directories stay outside this repository:
-
-```bash
-python3.10 -m venv .venv-cosyvoice
-git clone --recursive https://github.com/FunAudioLLM/CosyVoice.git /path/to/CosyVoice
-.venv-cosyvoice/bin/pip install 'setuptools<81' wheel numpy==1.26.4 cython
-.venv-cosyvoice/bin/pip install --no-build-isolation -r /path/to/CosyVoice/requirements.txt
-.venv-cosyvoice/bin/python -c "from huggingface_hub import snapshot_download; snapshot_download('FunAudioLLM/Fun-CosyVoice3-0.5B-2512', local_dir='/path/to/Fun-CosyVoice3-0.5B-2512')"
-```
-
-Generate the production HSK1 set with a fixed zero-shot reference voice:
+To generate or update audio clips:
 
 ```bash
-.venv-cosyvoice/bin/python tools/generate_hsk_audio_cosyvoice.py \
-  --level hsk1 \
-  --cosyvoice-root /path/to/CosyVoice \
-  --model-dir /path/to/Fun-CosyVoice3-0.5B-2512 \
-  --prompt-audio /path/to/reference.wav \
-  --prompt-text 'Exact transcript of the reference audio' \
-  --kind both --overwrite
+python3 tools/generate_hsk_audio_edge.py --level hsk1 --overwrite
+python3 tools/generate_hsk_audio_edge.py --level hsk2 --overwrite
+python3 tools/generate_hsk_audio_edge.py --level hsk3 --overwrite
+python3 tools/generate_hsk_audio_edge.py --level hsk4 --overwrite
 ```
 
-Pronunciation inpainting overrides live in
-`database/prebuilt_audio/hsk1/cosyvoice_overrides.json`. ID 63, for example, uses
-`对不<strong>[q][ǐ]</strong>！没关系。` to force and emphasize `qǐ`.
+Manifests are automatically updated, and the global Hanzi audio map is synchronized via `tools/build_hanzi_audio_map.py`.
 
 ## Legacy Qwen workflow
 
