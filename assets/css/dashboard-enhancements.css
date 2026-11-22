@@ -803,10 +803,13 @@ body.home-screen .dashboard-bottom-widgets .hw-card:hover {
   -moz-appearance: none;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-align-last: center;
   min-height: 44px;
   height: 44px;
   box-sizing: border-box;
-  padding: 0 34px 0 14px;
+  padding: 0 32px;
   border: 1px solid var(--border);
   border-radius: 10px;
   background: var(--card-bg);
@@ -828,6 +831,7 @@ body.home-screen .dashboard-bottom-widgets .hw-card:hover {
   outline-offset: 2px;
 }
 .picker-version-control select option {
+  text-align: center;
   background: var(--card-bg);
   color: var(--text-primary);
 }
@@ -1163,7 +1167,9 @@ body.home-screen .featured-topics {
   body.home-screen .picker-version-control select {
     min-height: 44px;
     height: 44px;
-    padding: 0 34px 0 14px;
+    padding: 0 32px;
+    text-align: center;
+    text-align-last: center;
     font-size: 14px;
     font-weight: 600;
     line-height: 1;
