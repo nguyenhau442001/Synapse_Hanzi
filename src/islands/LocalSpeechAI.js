@@ -129,81 +129,167 @@ export class LocalSpeechAI {
 
   /**
    * Evaluates text similarity between recognized transcript and target Hanzi.
+   * Also accepts optional expectedPinyin to handle browser ASR transliterations.
    *
    * @param {string} recognized What the user said
    * @param {string} target Expected Hanzi (e.g. "你好")
+   * @param {string} [expectedPinyin=''] Expected pinyin (e.g. "nǐ hǎo")
    * @returns {{ matchScore: number, matchedChars: number, totalChars: number, exactMatch: boolean }}
    */
-  static evaluateTextMatch(recognized, target) {
+  static evaluateTextMatch(recognized, target, expectedPinyin = '') {
     const cleanRec = cleanChineseCharacters(recognized);
     const cleanTar = cleanChineseCharacters(target);
 
     if (!cleanTar) return { matchScore: 100, matchedChars: 0, totalChars: 0, exactMatch: true };
-    if (!cleanRec) return { matchScore: 0, matchedChars: 0, totalChars: cleanTar.length, exactMatch: false };
 
-    if (cleanRec === cleanTar) {
+    if (cleanRec && cleanRec === cleanTar) {
       return { matchScore: 100, matchedChars: cleanTar.length, totalChars: cleanTar.length, exactMatch: true };
     }
 
-    // Levenshtein distance on characters
-    const n = cleanRec.length;
-    const m = cleanTar.length;
-    const dp = Array.from({ length: n + 1 }, () => new Int32Array(m + 1));
-    for (let i = 0; i <= n; i++) dp[i][0] = i;
-    for (let j = 0; j <= m; j++) dp[0][j] = j;
+    // If Chinese characters are recognized, compute character Levenshtein distance
+    if (cleanRec) {
+      const n = cleanRec.length;
+      const m = cleanTar.length;
+      const dp = Array.from({ length: n + 1 }, () => new Int32Array(m + 1));
+      for (let i = 0; i <= n; i++) dp[i][0] = i;
+      for (let j = 0; j <= m; j++) dp[0][j] = j;
 
-    for (let i = 1; i <= n; i++) {
-      for (let j = 1; j <= m; j++) {
-        const cost = cleanRec[i - 1] === cleanTar[j - 1] ? 0 : 1;
-        dp[i][j] = Math.min(
-          dp[i - 1][j] + 1,
-          dp[i][j - 1] + 1,
-          dp[i - 1][j - 1] + cost
-        );
+      for (let i = 1; i <= n; i++) {
+        for (let j = 1; j <= m; j++) {
+          const cost = cleanRec[i - 1] === cleanTar[j - 1] ? 0 : 1;
+          dp[i][j] = Math.min(
+            dp[i - 1][j] + 1,
+            dp[i][j - 1] + 1,
+            dp[i - 1][j - 1] + cost
+          );
+        }
+      }
+
+      const editDistance = dp[n][m];
+      const maxLen = Math.max(n, m);
+      const score = Math.max(0, Math.round(((maxLen - editDistance) / maxLen) * 100));
+
+      let matched = 0;
+      for (let c of cleanTar) {
+        if (cleanRec.includes(c)) matched++;
+      }
+
+      return {
+        matchScore: score,
+        matchedChars: matched,
+        totalChars: cleanTar.length,
+        exactMatch: score >= 90
+      };
+    }
+
+    // Fallback: If browser ASR transcribed Latin/pinyin phonetics instead of Hanzi
+    if (expectedPinyin) {
+      const normalizeLatin = (s) =>
+        String(s || '')
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .toLowerCase()
+          .replace(/[^a-z]/g, '');
+
+      const recLatin = normalizeLatin(recognized);
+      const tarLatin = normalizeLatin(expectedPinyin);
+
+      if (recLatin && tarLatin) {
+        if (recLatin === tarLatin) {
+          return { matchScore: 95, matchedChars: cleanTar.length, totalChars: cleanTar.length, exactMatch: true };
+        }
+        // Handle common English homophones for Chinese vowels (e.g. English "i" or "eye" for Chinese "ai")
+        if (tarLatin === 'ai' && (recLatin === 'i' || recLatin === 'eye')) {
+          return { matchScore: 90, matchedChars: cleanTar.length, totalChars: cleanTar.length, exactMatch: true };
+        }
+
+        // Levenshtein on Latin pinyin letters
+        const n = recLatin.length;
+        const m = tarLatin.length;
+        const dp = Array.from({ length: n + 1 }, () => new Int32Array(m + 1));
+        for (let i = 0; i <= n; i++) dp[i][0] = i;
+        for (let j = 0; j <= m; j++) dp[0][j] = j;
+
+        for (let i = 1; i <= n; i++) {
+          for (let j = 1; j <= m; j++) {
+            const cost = recLatin[i - 1] === tarLatin[j - 1] ? 0 : 1;
+            dp[i][j] = Math.min(
+              dp[i - 1][j] + 1,
+              dp[i][j - 1] + 1,
+              dp[i - 1][j - 1] + cost
+            );
+          }
+        }
+        const editDistance = dp[n][m];
+        const maxLen = Math.max(n, m);
+        const pinyinScore = Math.max(0, Math.round(((maxLen - editDistance) / maxLen) * 90));
+
+        if (pinyinScore >= 60) {
+          return {
+            matchScore: pinyinScore,
+            matchedChars: Math.round((pinyinScore / 100) * cleanTar.length),
+            totalChars: cleanTar.length,
+            exactMatch: pinyinScore >= 85
+          };
+        }
       }
     }
 
-    const editDistance = dp[n][m];
-    const maxLen = Math.max(n, m);
-    const score = Math.max(0, Math.round(((maxLen - editDistance) / maxLen) * 100));
-
-    // Count direct character intersection
-    let matched = 0;
-    for (let c of cleanTar) {
-      if (cleanRec.includes(c)) matched++;
-    }
-
-    return {
-      matchScore: score,
-      matchedChars: matched,
-      totalChars: cleanTar.length,
-      exactMatch: score >= 90
-    };
+    return { matchScore: 0, matchedChars: 0, totalChars: cleanTar.length, exactMatch: false };
   }
 
   /**
    * Aggregates Pitch Tone score and Speech Recognition text score into final grade.
+   * Tailored by learning mode (Visual Tone Trainer vs Vocab Practice).
    */
-  static combineScores(pitchScoreObj, recognitionObj) {
-    const pitchWeight = 0.65;
-    const asrWeight = 0.35;
-
+  static combineScores(pitchScoreObj, recognitionObj, mode = 'vocabPractice') {
     let finalScore = 0;
-    if (pitchScoreObj.valid && recognitionObj) {
-      finalScore = Math.round(
-        pitchScoreObj.score * pitchWeight + recognitionObj.matchScore * asrWeight
-      );
-    } else if (pitchScoreObj.valid) {
-      finalScore = pitchScoreObj.score;
-    } else if (recognitionObj) {
-      finalScore = recognitionObj.matchScore;
+    const pitchValid = Boolean(pitchScoreObj && pitchScoreObj.valid);
+    const hasTextMatch = Boolean(recognitionObj && typeof recognitionObj.matchScore === 'number');
+
+    if (mode === 'toneTrainer') {
+      // In Visual Tone Trainer mode, score is 100% focused on Chao tone contour accuracy!
+      if (pitchValid) {
+        finalScore = pitchScoreObj.score;
+        // Optional small bonus (+5) if ASR confirms exact word, without penalizing tone score
+        if (hasTextMatch && recognitionObj.exactMatch && finalScore < 95) {
+          finalScore = Math.min(100, finalScore + 5);
+        }
+      } else if (hasTextMatch) {
+        finalScore = recognitionObj.matchScore;
+      }
+    } else {
+      // In Vocab Practice and Minimal Pairs modes:
+      if (pitchValid && hasTextMatch) {
+        finalScore = Math.round(pitchScoreObj.score * 0.60 + recognitionObj.matchScore * 0.40);
+      } else if (pitchValid) {
+        finalScore = pitchScoreObj.score;
+      } else if (hasTextMatch) {
+        finalScore = recognitionObj.matchScore;
+      }
+    }
+
+    const overallScore = Math.min(100, Math.max(0, finalScore));
+
+    // Consistently derive stars & message from the displayed overallScore
+    let stars = 1;
+    if (overallScore >= 80) stars = 3;
+    else if (overallScore >= 60) stars = 2;
+
+    let message = 'Chưa đạt. Hãy lắng nghe audio mẫu và thử lại nhé!';
+    if (overallScore >= 80) {
+      message = 'Rất tuyệt vời! Phát âm chuẩn âm điệu.';
+    } else if (overallScore >= 60) {
+      message = 'Khá tốt! Chú ý một vài điểm thanh điệu bên dưới.';
     }
 
     return {
-      overallScore: Math.min(100, Math.max(0, finalScore)),
-      pitchScore: pitchScoreObj.score || 0,
-      textScore: recognitionObj ? recognitionObj.matchScore : 0,
-      exactMatch: recognitionObj ? recognitionObj.exactMatch : false
+      overallScore,
+      stars,
+      message,
+      pitchScore: pitchValid ? pitchScoreObj.score : 0,
+      textScore: hasTextMatch ? recognitionObj.matchScore : 0,
+      exactMatch: hasTextMatch ? recognitionObj.exactMatch : false
     };
   }
 }

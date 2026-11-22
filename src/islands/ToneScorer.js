@@ -127,15 +127,15 @@ export function evaluateToneScorePenalty(expectedTone, metrics) {
   switch (expectedTone) {
     case 1: // 55 High Level
       if (metrics.slope === 'falling') {
-        penalty += 35;
+        penalty += 40;
         status = 'needs_work';
         advice = 'Thanh 1 (55): Bạn bị chúc giọng xuống giống dấu huyền tiếng Việt. Hãy giữ cao độ phẳng, ngân đều ở mức cao.';
-      } else if (metrics.avgPitch < 3.2) {
-        penalty += 20;
+      } else if (metrics.avgPitch < 3.4) {
+        penalty += 25;
         status = 'fair';
         advice = 'Thanh 1 (55): Cao độ hơi thấp. Hãy phát âm cao giọng và ngân dài hơn.';
-      } else if (Math.abs(metrics.delta) > 0.9) {
-        penalty += 15;
+      } else if (Math.abs(metrics.delta) > 0.8) {
+        penalty += 20;
         status = 'fair';
         advice = 'Thanh 1 (55): Cần giữ cao độ ổn định và ngân đều hơn.';
       } else {
@@ -146,14 +146,14 @@ export function evaluateToneScorePenalty(expectedTone, metrics) {
 
     case 2: // 35 Rising
       if (metrics.slope === 'falling') {
-        penalty += 45;
+        penalty += 50;
         status = 'needs_work';
         advice = 'Thanh 2 (35): Giọng bị rơi xuống thay vì vuốt lên. Hãy bắt đầu từ tầm trung (3) và vút lên mức cao (5).';
       } else if (metrics.slope === 'flat' || metrics.delta < 0.6) {
-        penalty += 35;
+        penalty += 40;
         status = 'needs_work';
         advice = 'Thanh 2 (35): Cao độ chưa vuốt lên đủ cao. Hãy dứt khoát đưa giọng từ trung lên cao.';
-      } else if (metrics.avgEnd < 3.7) {
+      } else if (metrics.avgEnd < 3.8) {
         penalty += 15;
         status = 'fair';
         advice = 'Thanh 2 (35): Hướng đi lên tốt, cố gắng vuốt cao hơn về cuối âm tiết.';
@@ -165,7 +165,7 @@ export function evaluateToneScorePenalty(expectedTone, metrics) {
 
     case 3: // 214 or 21 (Half-third)
       if (metrics.slope === 'rising' && metrics.avgMid >= metrics.avgStart - 0.2) {
-        penalty += 40;
+        penalty += 45;
         status = 'needs_work';
         advice = 'Thanh 3 (214): Bạn đọc thành dấu sắc hoặc hỏi tiếng Việt quá sớm. Cần dìm giọng xuống đáy (1) trước.';
       } else if (metrics.minPitch > 3.0) {
@@ -188,20 +188,21 @@ export function evaluateToneScorePenalty(expectedTone, metrics) {
         status = 'needs_work';
         advice = 'Thanh 4 (51): Lỗi phổ biến của người Việt là đọc thành dấu sắc (đi lên). Thanh 4 phải rơi dứt khoát từ 5 xuống 1!';
       } else if (metrics.slope === 'flat' || Math.abs(metrics.delta) < 0.7) {
-        penalty += 40;
+        penalty += 45;
         status = 'needs_work';
         advice = 'Thanh 4 (51): Chưa đủ độ dốc chúc xuống (đang bị đọc thành thanh ngang). Hãy dứt khoát nhấn mạnh từ cao xuống thấp.';
       } else if (metrics.delta > -1.0) {
         penalty += 15;
         status = 'fair';
         advice = 'Thanh 4 (51): Hướng rơi tốt, nhưng cần hạ dứt khoát hơn từ cao xuống thấp.';
-      } else if (metrics.avgStart < 3.4) {
-        penalty += 10;
-        status = 'fair';
-        advice = 'Thanh 4 (51): Điểm bắt đầu hơi thấp. Hãy mở đầu ở âm vực cao rồi rơi xuống.';
       } else {
         status = 'excellent';
         advice = 'Thanh 4 (51): Rơi từ cao xuống thấp dứt khoát, rất chuẩn âm điệu!';
+      }
+
+      if (metrics.avgStart < 3.4) {
+        penalty += 10;
+        if (status === 'excellent') status = 'fair';
       }
       break;
 

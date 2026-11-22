@@ -280,12 +280,13 @@ function SpeakingPracticeApp() {
       const capturedFrames = trackerRef.current ? trackerRef.current.getCapturedContour() : [];
       const score = scorePitchContour(capturedFrames, targetContour, syllableInfos);
 
+      const latestTranscript = (speechAiRef.current && speechAiRef.current.currentTranscript) || aiTranscript;
       let textMatch = null;
-      if (aiTranscript) {
-        textMatch = LocalSpeechAI.evaluateTextMatch(aiTranscript, currentWord.hanzi);
+      if (latestTranscript) {
+        textMatch = LocalSpeechAI.evaluateTextMatch(latestTranscript, currentWord.hanzi, currentWord.pinyin);
       }
 
-      const combined = LocalSpeechAI.combineScores(score, textMatch);
+      const combined = LocalSpeechAI.combineScores(score, textMatch, activeTab);
       setScoreResult({ ...score, combined, textMatch });
 
       if (score.valid && score.userChaoPitches) {
@@ -502,14 +503,16 @@ function SpeakingPracticeApp() {
             <div class="speaking-score-card">
               <div class="score-header">
                 <div class="score-stars">
-                  {'⭐'.repeat(scoreResult.stars || 1)}
+                  {'⭐'.repeat(scoreResult.combined ? scoreResult.combined.stars : (scoreResult.stars || 1))}
                 </div>
                 <div class="score-badge">
                   {scoreResult.combined ? scoreResult.combined.overallScore : scoreResult.score} / 100
                 </div>
               </div>
 
-              <div class="score-message">{scoreResult.message}</div>
+              <div class="score-message">
+                {scoreResult.combined ? scoreResult.combined.message : scoreResult.message}
+              </div>
 
               {/* Character by character tone breakdown */}
               {scoreResult.toneBreakdown && scoreResult.toneBreakdown.length > 0 && (

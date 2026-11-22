@@ -151,7 +151,7 @@
   .picker-version-control select {
     min-height: 38px;
     height: 38px;
-    padding: 0 28px;
+    padding: 0 28px 0 10px;
     text-align: center;
     text-align-last: center;
     font-size: 13px;
