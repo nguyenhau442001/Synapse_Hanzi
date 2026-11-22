@@ -94,6 +94,20 @@ export function initAppEventBindings() {
   };
 
   // Header controls & badges
+  const handleHomeNavigation = (e) => {
+    if (e) {
+      if (e.type === 'keydown' && e.key !== 'Enter' && e.key !== ' ') return;
+      e.preventDefault();
+    }
+    if (typeof window !== 'undefined' && typeof window.navigateToHome === 'function') {
+      window.navigateToHome();
+    }
+  };
+  onId('appBrandHomeBtn', 'click', handleHomeNavigation);
+  onId('appBrandTextBlock', 'click', handleHomeNavigation);
+  onId('appBrandTextBlock', 'keydown', handleHomeNavigation);
+  on('.app-brand-logo-img', 'click', handleHomeNavigation);
+
   onId('headerStreakBadge', 'click', () => {
     if (typeof showHistoryModal === 'function') showHistoryModal();
     else if (window.showHistoryModal) window.showHistoryModal();

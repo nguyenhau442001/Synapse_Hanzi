@@ -176,6 +176,63 @@ export const SpaRouter = (function() {
     }
   }
 
+  function navigateToHome() {
+    // 1. Close study drawers and modal overlays
+    if (typeof closeAllStudyDrawers === 'function') closeAllStudyDrawers();
+    else if (typeof window !== 'undefined' && typeof window.closeAllStudyDrawers === 'function') window.closeAllStudyDrawers();
+
+    if (typeof closeMobileStatsSheet === 'function') closeMobileStatsSheet();
+    else if (typeof window !== 'undefined' && typeof window.closeMobileStatsSheet === 'function') window.closeMobileStatsSheet();
+
+    const qSearch = document.getElementById('quickSearchModal');
+    if (qSearch && typeof qSearch.close === 'function' && qSearch.open) qSearch.close();
+
+    const qDrawer = document.getElementById('quickAccessDrawer');
+    if (qDrawer) qDrawer.setAttribute('aria-hidden', 'true');
+
+    const historyModal = document.getElementById('historyModal');
+    if (historyModal && typeof historyModal.close === 'function' && historyModal.open) historyModal.close();
+
+    const studyHelpModal = document.getElementById('studyHelpModal');
+    if (studyHelpModal && typeof studyHelpModal.close === 'function' && studyHelpModal.open) studyHelpModal.close();
+
+    // 2. Stop audio playback if listening practice is active
+    if (typeof ListeningPractice !== 'undefined' && typeof ListeningPractice.stopAudio === 'function') {
+      ListeningPractice.stopAudio();
+    }
+
+    // 3. Reset special full-screen review and radical views
+    if (typeof closeTodayReviews === 'function') closeTodayReviews();
+    else if (typeof window !== 'undefined' && typeof window.closeTodayReviews === 'function') window.closeTodayReviews();
+
+    if (typeof goBackToRadicalHub === 'function') goBackToRadicalHub();
+    else if (typeof window !== 'undefined' && typeof window.goBackToRadicalHub === 'function') window.goBackToRadicalHub();
+
+    // 4. Return to level picker if inside flashcard study mode
+    const inStudyMode = document.body.classList.contains('flashcard-study-mode') ||
+                        document.body.classList.contains('study-mode');
+    if (inStudyMode && typeof goBackToPicker === 'function') {
+      goBackToPicker();
+    } else if (inStudyMode && typeof window !== 'undefined' && typeof window.goBackToPicker === 'function') {
+      window.goBackToPicker();
+    } else {
+      if (typeof setPrimaryTab === 'function') setPrimaryTab('vocab');
+      else if (typeof window !== 'undefined' && typeof window.setPrimaryTab === 'function') window.setPrimaryTab('vocab');
+
+      if (typeof setVocabSubTab === 'function') setVocabSubTab('level');
+      else if (typeof window !== 'undefined' && typeof window.setVocabSubTab === 'function') window.setVocabSubTab('level');
+    }
+
+    // 5. Synchronize URL and browser history state
+    pushView({ view: 'vocab' });
+    updateGlobalBackButton();
+
+    // 6. Smoothly scroll back to top of page
+    if (typeof window !== 'undefined' && typeof window.scrollTo === 'function') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }
+
   function onPopState(event) {
     const state = event.state || getCurrentUrlState();
     isNavigatingFromPopstate = true;
@@ -351,14 +408,22 @@ export const SpaRouter = (function() {
     pushView,
     replaceView,
     navigateBack,
+    navigateToHome,
     updateGlobalBackButton,
     isNavigatingFromPopstate: () => isNavigatingFromPopstate
   };
 })();
 
+export function navigateToHome() {
+  if (typeof window !== 'undefined' && window.SpaRouter && typeof window.SpaRouter.navigateToHome === 'function') {
+    window.SpaRouter.navigateToHome();
+  }
+}
+
 export function mountSpaRouter() {
   if (typeof window !== 'undefined') {
     window.SpaRouter = SpaRouter;
+    window.navigateToHome = () => SpaRouter.navigateToHome();
     SpaRouter.init();
   }
   return SpaRouter;
@@ -366,4 +431,5 @@ export function mountSpaRouter() {
 
 if (typeof window !== 'undefined') {
   window.SpaRouter = SpaRouter;
+  window.navigateToHome = () => SpaRouter.navigateToHome();
 }

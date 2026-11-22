@@ -75,11 +75,53 @@
   }
 }
 
+.app-brand-home-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--radius-btn);
+  line-height: 0;
+  text-decoration: none;
+  transition: transform var(--dur-fast) var(--ease-out), filter var(--dur-fast) var(--ease-out);
+  -webkit-tap-highlight-color: transparent;
+}
+.app-brand-home-btn:hover {
+  transform: scale(1.05);
+}
+.app-brand-home-btn:active {
+  transform: scale(0.95);
+}
+.app-brand-home-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
 .app-brand-logo-img {
   width: 34px;
   height: 34px;
   border-radius: var(--radius-btn);
   box-shadow: none;
+  cursor: pointer;
+  display: block;
+}
+
+.app-brand-text-block {
+  min-width: 0;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: opacity var(--dur-fast) var(--ease-out);
+}
+.app-brand-text-block:hover {
+  opacity: 0.9;
+}
+.app-brand-text-block:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 .app-header-brand { margin-bottom: 0; }
