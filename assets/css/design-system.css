@@ -217,6 +217,21 @@ body.curriculum-view-active:not(.study-mode) .chinese-aesthetic-bg { z-index: 0;
   border: 0;
   padding: 0;
   gap: var(--space-1);
+  margin-left: calc(-1 * var(--space-3));
+}
+body.home-screen .primary-tabs-group {
+  margin-left: -14px;
+}
+@media (max-width: 767px) {
+  .primary-tabs-group,
+  body.home-screen .primary-tabs-group {
+    margin-left: 0;
+  }
+}
+
+.picker-controls > .view-tabs > .view-tab:first-child,
+body.home-screen #pickerControls .view-tab:first-child {
+  padding-left: 0;
 }
 
 .primary-tabs-group .primary-tab {

@@ -1040,7 +1040,7 @@ function ModeSwitcher() {
         class={`manga-mode-btn ${readingMode.value === 'articles' ? 'active' : ''}`}
         onClick={() => { readingMode.value = 'articles'; }}
       >
-        <span>Bài đọc phân cấp</span>
+        <span>Bài đọc</span>
         <span class="manga-mode-count">{manifest.length}</span>
       </button>
       <button
