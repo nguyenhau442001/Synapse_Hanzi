@@ -1,0 +1,154 @@
+{
+  "model_name": "Mandarin-CAPT-Conformer-GOP",
+  "version": "1.0.0",
+  "file_name": "capt_model.onnx",
+  "size_mb": 0.62,
+  "feature": {
+    "sample_rate": 16000,
+    "feature_dim": 80,
+    "window_size_ms": 25,
+    "hop_size_ms": 10,
+    "n_fft": 512,
+    "f_min": 50,
+    "f_max": 7600
+  },
+  "initials": [
+    "none",
+    "b",
+    "p",
+    "m",
+    "f",
+    "d",
+    "t",
+    "n",
+    "l",
+    "g",
+    "k",
+    "h",
+    "j",
+    "q",
+    "x",
+    "zh",
+    "ch",
+    "sh",
+    "r",
+    "z",
+    "c",
+    "s"
+  ],
+  "finals": [
+    "a",
+    "o",
+    "e",
+    "ai",
+    "ei",
+    "ao",
+    "ou",
+    "an",
+    "en",
+    "ang",
+    "eng",
+    "ong",
+    "i",
+    "ia",
+    "iao",
+    "ie",
+    "iu",
+    "ian",
+    "in",
+    "iang",
+    "ing",
+    "iong",
+    "u",
+    "ua",
+    "uo",
+    "uai",
+    "ui",
+    "uan",
+    "un",
+    "uang",
+    "ueng",
+    "v",
+    "ve",
+    "van",
+    "vn",
+    "er"
+  ],
+  "tones": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+  ],
+  "diagnostics": {
+    "initials": {
+      "zh": {
+        "confused_with": "z",
+        "advice": "Âm zh: Cần uốn cong đầu lưỡi chạm ngạc cứng (âm đầu lưỡi sau), tránh để thẳng lưỡi như z."
+      },
+      "ch": {
+        "confused_with": "c",
+        "advice": "Âm ch: Vừa uốn cong lưỡi vừa bật hơi dứt khoát (aspiration), tránh đọc thành c tiếng Việt."
+      },
+      "sh": {
+        "confused_with": "s",
+        "advice": "Âm sh: Uốn cong đầu lưỡi lên ngạc trên, đẩy hơi ma sát tạo âm xì dày."
+      },
+      "r": {
+        "advice": "Âm r: Giữ khẩu hình như sh nhưng rung dây thanh, không đọc thành r rung tiếng Việt."
+      },
+      "z": {
+        "confused_with": "zh",
+        "advice": "Âm z: Đầu lưỡi thẳng chạm mặt sau răng trên, không uốn lưỡi, không bật hơi."
+      },
+      "c": {
+        "confused_with": "z",
+        "advice": "Âm c: Đầu lưỡi thẳng chạm sau răng và bật hơi mạnh dứt khoát."
+      },
+      "s": {
+        "advice": "Âm s: Đầu lưỡi thẳng ép sát răng trên, ma sát nhẹ nhàng."
+      },
+      "j": {
+        "confused_with": "q",
+        "advice": "Âm j: Mặt lưỡi chạm ngạc cứng, không bật hơi (như ch nhẹ)."
+      },
+      "q": {
+        "confused_with": "j",
+        "advice": "Âm q: Mặt lưỡi chạm ngạc cứng và bật hơi thật mạnh."
+      },
+      "x": {
+        "advice": "Âm x: Mặt lưỡi nâng sát ngạc cứng, đẩy hơi ma sát thoát ra."
+      }
+    },
+    "finals": {
+      "an": {
+        "confused_with": "ang",
+        "advice": "Vần an: Âm mũi trước (kết thúc bằng đầu lưỡi chạm lợi trên, môi hơi mở)."
+      },
+      "ang": {
+        "confused_with": "an",
+        "advice": "Vần ang: Âm mũi sau (cuống lưỡi nâng chạm ngạc mềm, miệng mở rộng)."
+      },
+      "en": {
+        "confused_with": "eng",
+        "advice": "Vần en: Âm mũi trước, dứt khoát khép đầu lưỡi vào lợi."
+      },
+      "eng": {
+        "confused_with": "en",
+        "advice": "Vần eng: Âm mũi sau, cuống lưỡi nâng lên."
+      },
+      "v": {
+        "confused_with": "u",
+        "advice": "Vần ü (v): Phát âm giống 'uy', giữ tròn môi cố định từ đầu đến cuối âm."
+      }
+    },
+    "tones": {
+      "1": "Thanh 1 (55): Cao bằng, ngân đều ở mức cao nhất, không được hạ giọng như dấu huyền.",
+      "2": "Thanh 2 (35): Vuốt đều từ mức trung lên mức cao, tự nhiên như dấu sắc nhẹ.",
+      "3": "Thanh 3 (214): Hạ giọng sâu xuống đáy rồi hơi lượn nhẹ, tránh đọc thành dấu hỏi cộc.",
+      "4": "Thanh 4 (51): Rơi dốc dứt khoát từ 5 xuống 1, nhấn mạnh và dứt khoát, tuyệt đối không đọc thành dấu sắc!",
+      "5": "Thanh nhẹ: Đọc ngắn, nhẹ và lướt."
+    }
+  }
+}

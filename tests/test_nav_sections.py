@@ -19,6 +19,7 @@ EXPECTED_SECTIONS = [
     ("vocab", "primaryTabVocab", "Từ vựng"),
     ("curriculum", "primaryTabCurriculum", "Giáo trình"),
     ("listening", "primaryNavListening", "Nghe"),
+    ("speaking", "primaryNavSpeaking", "Nói"),
     ("reading", "primaryNavReading", "Đọc"),
     ("writing", "primaryNavWriting", "Viết"),
     ("review", "primaryTabReview", "Ôn nhanh"),
@@ -27,6 +28,7 @@ EXPECTED_SECTIONS = [
 EXPECTED_SUBTABS = {
     "vocab": [("level", "Theo cấp độ"), ("topic", "Theo chủ đề"), ("radicals", "Bộ thủ"), ("guessWord", "Trò chơi")],
     "listening": [("listening", "Luyện nghe HSK4")],
+    "speaking": [("speaking", "Luyện nói & Thanh điệu")],
     "reading": [("gradedReading", "Bài đọc phân cấp"), ("reading", "Đọc hiểu HSK4")],
     "writing": [("writing", "Tập viết chữ Hán"), ("sentenceGame", "Xếp câu HSK4"), ("speedQuiz", "Điền từ")],
 }

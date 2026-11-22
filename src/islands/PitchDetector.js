@@ -303,4 +303,43 @@ export class LivePitchTracker {
   getRecordedAudioUrl() {
     return this.recordedAudioUrl;
   }
+
+  getRecordedBlob() {
+    return this.recordedBlob;
+  }
+
+  /**
+   * Decodes and resamples the recorded audio to 16kHz mono PCM Float32Array
+   * for Neural Network (ONNX / GOP) speech analysis.
+   */
+  async getPcm16k() {
+    if (!this.recordedBlob) return null;
+    try {
+      const arrayBuffer = await this.recordedBlob.arrayBuffer();
+      const AudioCtx = window.AudioContext || window.webkitAudioContext;
+      const ctx = new AudioCtx();
+      const audioBuffer = await ctx.decodeAudioData(arrayBuffer);
+      try { await ctx.close(); } catch {}
+
+      if (audioBuffer.sampleRate === 16000) {
+        return audioBuffer.getChannelData(0);
+      }
+
+      // Resample accurately using OfflineAudioContext
+      const offlineCtx = new OfflineAudioContext(
+        1,
+        Math.max(1, Math.ceil(audioBuffer.duration * 16000)),
+        16000
+      );
+      const source = offlineCtx.createBufferSource();
+      source.buffer = audioBuffer;
+      source.connect(offlineCtx.destination);
+      source.start(0);
+      const resampled = await offlineCtx.startRendering();
+      return resampled.getChannelData(0);
+    } catch (err) {
+      console.warn('[PitchDetector] getPcm16k decode error:', err);
+      return null;
+    }
+  }
 }

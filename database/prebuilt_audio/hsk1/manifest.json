@@ -1,18 +1,9 @@
 {
   "version": 1,
   "level": "hsk1",
-  "model": "FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
-  "engine": "CosyVoice3",
-  "voice": "zero-shot",
-  "prompt_text": "我爱我的家人。",
+  "engine": "EdgeTTS",
+  "voice": "zh-CN-XiaoxiaoNeural",
   "speed": 1.0,
-  "pronunciation_overrides": {
-    "63": {
-      "example": {
-        "text": "对不<strong>[q][ǐ]</strong>！没关系。"
-      }
-    }
-  },
   "items": {
     "1": {
       "word": "database/prebuilt_audio/hsk1/words/0001.mp3?v=15fd567e747d",
@@ -31,8 +22,8 @@
       "example": "database/prebuilt_audio/hsk1/examples/0004.mp3?v=7798feca1eb5"
     },
     "5": {
-      "word": "database/prebuilt_audio/hsk1/words/0005.mp3?v=6bfa0a02b89b",
-      "example": "database/prebuilt_audio/hsk1/examples/0005.mp3?v=8bdc75cad2b7"
+      "word": "database/prebuilt_audio/hsk1/words/0005.mp3?v=6fdbd031ce3c",
+      "example": "database/prebuilt_audio/hsk1/examples/0005.mp3?v=4c5109360e59"
     },
     "6": {
       "word": "database/prebuilt_audio/hsk1/words/0006.mp3?v=604f96dde8a6",
@@ -127,8 +118,8 @@
       "example": "database/prebuilt_audio/hsk1/examples/0028.mp3?v=80122a759239"
     },
     "29": {
-      "word": "database/prebuilt_audio/hsk1/words/0029.mp3?v=f0ce982c65bf",
-      "example": "database/prebuilt_audio/hsk1/examples/0029.mp3?v=a5b03e40951d"
+      "word": "database/prebuilt_audio/hsk1/words/0029.mp3?v=a642b60ceeab",
+      "example": "database/prebuilt_audio/hsk1/examples/0029.mp3?v=f291b9c6cf61"
     },
     "30": {
       "word": "database/prebuilt_audio/hsk1/words/0030.mp3?v=d92b977d1aac",

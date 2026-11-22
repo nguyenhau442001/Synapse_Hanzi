@@ -24,6 +24,8 @@ import { LivePitchTracker, frequencyToChaoScale } from './PitchDetector.js';
 import { scorePitchContour } from './ToneScorer.js';
 import { LocalSpeechAI } from './LocalSpeechAI.js';
 import { speakChinese, stopSpeaking } from './SpeechAudio.js';
+import { ensureCaptModelReady, evaluatePronunciationWithOnnx } from './OnnxCaptEngine.js';
+import { isCaptModelCached } from './SpeechModelManager.js';
 
 // Minimal tone pair curated drills for Vietnamese learners
 const MINIMAL_TONE_PAIRS = [
@@ -105,6 +107,11 @@ function SpeakingPracticeApp() {
   const [isPlayingUserAudio, setIsPlayingUserAudio] = useState(false);
   const [scoreResult, setScoreResult] = useState(null);
   const [aiTranscript, setAiTranscript] = useState('');
+  const [isDeepAiReady, setIsDeepAiReady] = useState(false);
+  const [isDownloadingModel, setIsDownloadingModel] = useState(false);
+  const [downloadProgress, setDownloadProgress] = useState(0);
+  const [captResult, setCaptResult] = useState(null);
+  const [showModelModal, setShowModelModal] = useState(false);
 
   // Minimal pair challenge index
   const [selectedPairIndex, setSelectedPairIndex] = useState(0);
@@ -114,6 +121,17 @@ function SpeakingPracticeApp() {
   const trackerRef = useRef(null);
   const speechAiRef = useRef(null);
   const livePointsRef = useRef([]);
+
+  // Check if Deep ONNX model is already cached
+  useEffect(() => {
+    isCaptModelCached().then((cached) => {
+      if (cached) {
+        ensureCaptModelReady().then((ready) => {
+          setIsDeepAiReady(ready);
+        });
+      }
+    });
+  }, []);
 
   // Load vocabulary when level changes
   useEffect(() => {
@@ -269,6 +287,26 @@ function SpeakingPracticeApp() {
     speakChinese(currentWord.hanzi);
   };
 
+  // Handle Activate / Download Deep AI Model
+  const handleActivateDeepAi = async () => {
+    setIsDownloadingModel(true);
+    setDownloadProgress(0);
+    setShowModelModal(true);
+    try {
+      const ok = await ensureCaptModelReady((prog) => {
+        setDownloadProgress(prog.percent);
+      });
+      setIsDeepAiReady(ok);
+      if (ok) {
+        setTimeout(() => setShowModelModal(false), 800);
+      }
+    } catch (err) {
+      console.warn('[SpeakingPractice] Deep AI activation error:', err);
+    } finally {
+      setIsDownloadingModel(false);
+    }
+  };
+
   // Toggle Recording & Speech Analysis
   const handleToggleRecord = async () => {
     if (isRecording) {
@@ -286,8 +324,31 @@ function SpeakingPracticeApp() {
         textMatch = LocalSpeechAI.evaluateTextMatch(latestTranscript, currentWord.hanzi, currentWord.pinyin);
       }
 
+      let deepCapt = null;
+      if (isDeepAiReady && trackerRef.current) {
+        try {
+          const pcm = await trackerRef.current.getPcm16k();
+          if (pcm && pcm.length > 2000) {
+            deepCapt = await evaluatePronunciationWithOnnx(pcm, currentWord.pinyin);
+            setCaptResult(deepCapt);
+          }
+        } catch (e) {
+          console.warn('[SpeakingPractice] Deep AI evaluation error:', e);
+        }
+      }
+
       const combined = LocalSpeechAI.combineScores(score, textMatch, activeTab);
-      setScoreResult({ ...score, combined, textMatch });
+      if (deepCapt && deepCapt.success) {
+        combined.overallScore = Math.round(combined.overallScore * 0.4 + deepCapt.overallScore * 0.6);
+        combined.stars = combined.overallScore >= 80 ? 3 : combined.overallScore >= 60 ? 2 : 1;
+        combined.message = combined.overallScore >= 80
+          ? 'Xuất sắc! Phát âm thanh mẫu, vận mẫu & thanh điệu đều rất chuẩn.'
+          : combined.overallScore >= 60
+          ? 'Khá tốt! Chú ý một vài điểm ngữ âm chi tiết bên dưới.'
+          : 'Chưa đạt. Hãy lắng nghe audio mẫu và chú ý khẩu hình nhé!';
+      }
+
+      setScoreResult({ ...score, combined, textMatch, deepCapt });
 
       if (score.valid && score.userChaoPitches) {
         drawContourCanvas(score.userChaoPitches);
@@ -295,6 +356,7 @@ function SpeakingPracticeApp() {
     } else {
       // START recording
       setScoreResult(null);
+      setCaptResult(null);
       setAiTranscript('');
       livePointsRef.current = [];
       drawContourCanvas();
@@ -385,6 +447,28 @@ function SpeakingPracticeApp() {
             <span>Phòng Luyện Nói & Chấm Điểm Thanh Điệu AI</span>
           </div>
           <span class="speaking-subtitle">Phân tích cao độ F0 (YIN) & Biến điệu Sandhi chuẩn hóa 100% Client-side</span>
+        </div>
+
+        {/* Deep AI ONNX Model Activation Bar */}
+        <div class="deep-ai-badge-row">
+          <div class="deep-ai-status-indicator">
+            <span class={`deep-ai-pulse-dot ${isDeepAiReady ? '' : 'inactive'}`}></span>
+            <span>
+              {isDeepAiReady
+                ? 'AI Conformer (ONNX): Đang hoạt động 100% Offline (Chấm Âm đầu · Vần · Thanh điệu)'
+                : 'AI Conformer (ONNX 14MB): Chưa kích hoạt'}
+            </span>
+          </div>
+          {!isDeepAiReady && (
+            <button
+              type="button"
+              class="deep-ai-activate-btn"
+              onClick={handleActivateDeepAi}
+              disabled={isDownloadingModel}
+            >
+              {isDownloadingModel ? 'Đang tải...' : '⚡ Kích hoạt AI Chuyên Sâu'}
+            </button>
+          )}
         </div>
 
         <div class="speaking-mode-tabs" role="tablist">
@@ -531,6 +615,64 @@ function SpeakingPracticeApp() {
                 </div>
               )}
 
+              {/* Neural CAPT 3-Pillar Deep Breakdown (Initial, Final, Tone) */}
+              {captResult && captResult.success && (
+                <div class="capt-deep-analysis">
+                  <div class="capt-deep-title">
+                    <span>🔬 Phân Tích Ngữ Âm Chuyên Sâu (ONNX GOP)</span>
+                    <span class="capt-model-tag">Neural Conformer</span>
+                  </div>
+                  <div class="capt-pillar-row">
+                    {/* Initial */}
+                    <div class={`capt-pillar-card ${captResult.initial.passed ? 'passed' : 'warning'}`}>
+                      <span class="pillar-label">Thanh Mẫu (Âm đầu)</span>
+                      <div class="pillar-score-row">
+                        <span class="pillar-name">{captResult.initial.target !== 'none' ? captResult.initial.target : '—'}</span>
+                        <span class="pillar-points">{captResult.initial.score}đ</span>
+                      </div>
+                      <p class="pillar-advice">{captResult.initial.advice}</p>
+                    </div>
+
+                    {/* Final */}
+                    <div class={`capt-pillar-card ${captResult.final.passed ? 'passed' : 'warning'}`}>
+                      <span class="pillar-label">Vận Mẫu (Vần)</span>
+                      <div class="pillar-score-row">
+                        <span class="pillar-name">{captResult.final.target}</span>
+                        <span class="pillar-points">{captResult.final.score}đ</span>
+                      </div>
+                      <p class="pillar-advice">{captResult.final.advice}</p>
+                    </div>
+
+                    {/* Tone */}
+                    <div class={`capt-pillar-card ${captResult.tone.passed ? 'passed' : 'warning'}`}>
+                      <span class="pillar-label">Thanh Điệu</span>
+                      <div class="pillar-score-row">
+                        <span class="pillar-name">Thanh {captResult.tone.target}</span>
+                        <span class="pillar-points">{captResult.tone.score}đ</span>
+                      </div>
+                      <p class="pillar-advice">{captResult.tone.advice}</p>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Invitation banner to activate Deep AI if not yet ready */}
+              {!isDeepAiReady && (
+                <div class="deep-ai-cta-banner">
+                  <span class="deep-ai-cta-text">
+                    💡 Chấm thêm độ chuẩn của âm đầu (zh/z, ch/c, sh/s) & vần (an/ang, u/ü) bằng Neural Conformer.
+                  </span>
+                  <button
+                    type="button"
+                    class="deep-ai-cta-btn"
+                    onClick={handleActivateDeepAi}
+                    disabled={isDownloadingModel}
+                  >
+                    Bật AI (14MB)
+                  </button>
+                </div>
+              )}
+
               {/* AI Transcript if captured */}
               {aiTranscript && (
                 <div class="ai-transcript-box">
@@ -620,6 +762,22 @@ function SpeakingPracticeApp() {
           </div>
         </aside>
       </div>
+
+      {/* Model Download Progress Modal */}
+      {showModelModal && (
+        <div class="capt-model-modal-overlay">
+          <div class="capt-model-modal">
+            <h3>Tải Mô Hình AI Chấm Ngữ Âm Chuyên Sâu</h3>
+            <p>Mô hình Neural Conformer-CTC (14.2 MB) chạy trực tiếp 100% Offline trên trình duyệt qua WebAssembly SIMD.</p>
+            <div class="capt-progress-bar-wrap">
+              <div class="capt-progress-bar-fill" style={{ width: `${downloadProgress}%` }}></div>
+            </div>
+            <div class="capt-progress-text">
+              {downloadProgress >= 100 ? 'Đang nạp mô hình vào WebAssembly...' : `Đang tải: ${downloadProgress}%`}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

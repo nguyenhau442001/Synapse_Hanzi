@@ -6,6 +6,7 @@ import { Fragment, render } from 'preact';
 import { useEffect, useRef, useState } from 'preact/hooks';
 import { signal, computed } from '@preact/signals';
 import { toggleTheme } from './ThemeManager.js';
+import { playQuizSuccessSound, playQuizFailSound } from './AppUtils.js';
 
 /* global exampleSpeechSpeed, SRS, currentLevel, srsCards, SpaRouter -- classic-script globals */
 
@@ -181,9 +182,10 @@ function speakSentence(text, sentId, audioUrl = null) {
     return;
   }
   playingId.value = sentId;
-  const rate = typeof exampleSpeechSpeed !== 'undefined' ? exampleSpeechSpeed : 0.8;
+  const isWordLike = sentId && (sentId.startsWith('dlg-') || sentId.startsWith('word-') || sentId.startsWith('spotlight-'));
+  const rate = isWordLike ? 1.0 : (typeof exampleSpeechSpeed !== 'undefined' ? exampleSpeechSpeed : 0.8);
   const story = activeStory.value;
-  const targetUrl = audioUrl || (story && sentId && !sentId.startsWith('dlg-') && !sentId.startsWith('word-') ? getSentenceAudioUrl(story.id, sentId) : null);
+  const targetUrl = audioUrl || (story && sentId && !isWordLike ? getSentenceAudioUrl(story.id, sentId) : null);
 
   if (targetUrl) {
     const audio = new Audio(targetUrl);
@@ -642,7 +644,13 @@ function answerQuiz(qId, selectedIdx) {
   if (!story) return;
   const q = story.quiz.find((item) => item.id === qId);
   if (!q) return;
-  const next = { ...quizState.value, [qId]: { selectedIdx, isCorrect: selectedIdx === q.answer } };
+  const isCorrect = selectedIdx === q.answer;
+  if (isCorrect) {
+    playQuizSuccessSound();
+  } else {
+    playQuizFailSound();
+  }
+  const next = { ...quizState.value, [qId]: { selectedIdx, isCorrect } };
   quizState.value = next;
   // Answering every question marks the story as read
   if (story.quiz.every((item) => next[item.id] !== undefined) && !isStoryRead(story.id)) markStoryAsRead(story.id);

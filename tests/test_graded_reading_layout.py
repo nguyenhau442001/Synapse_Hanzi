@@ -101,8 +101,26 @@ def test_reading_is_a_primary_destination():
     assert ".brand-tagline-wrap { display: none; }" in base_css
 
 
+def test_graded_reading_quiz_audio():
+    jsx_path = ROOT / "src" / "islands" / "GradedReading.jsx"
+    jsx_content = jsx_path.read_text(encoding="utf-8")
+
+    # Quiz audio handlers imported and triggered upon answering
+    assert "playQuizSuccessSound" in jsx_content
+    assert "playQuizFailSound" in jsx_content
+    assert "playQuizSuccessSound()" in jsx_content
+    assert "playQuizFailSound()" in jsx_content
+
+    # Bundle contains compiled audio triggers
+    bundle_path = ROOT / "assets" / "js" / "preact" / "islands.js"
+    assert bundle_path.exists()
+    bundle_content = bundle_path.read_text(encoding="utf-8")
+    assert "playQuizSuccessSound" in bundle_content or "getQuizAudioContext" in bundle_content
+
+
 if __name__ == "__main__":
     test_graded_reading_jsx_layout_structure()
     test_graded_reading_css_responsive_grid()
     test_reading_is_a_primary_destination()
+    test_graded_reading_quiz_audio()
     print("All graded reading layout tests passed!")
