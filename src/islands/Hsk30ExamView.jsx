@@ -8,6 +8,8 @@
 import { h, render } from 'preact';
 import { useState, useEffect, useRef } from 'preact/hooks';
 import { onDomReady } from './domReady';
+import { LocalSpeechAI } from './LocalSpeechAI.js';
+import { cleanChineseCharacters } from './ToneSandhi.js';
 
 export const HSK30_EXAM_STORAGE_KEY = 'hsk30_exam_history_v1';
 export const HSKK_EXAM_STORAGE_KEY = 'hskk_exam_history_v1';
@@ -129,6 +131,7 @@ export function Hsk30ExamComponent() {
   const [candidateRecordings, setCandidateRecordings] = useState({});
   const [isRecording, setIsRecording] = useState(false);
   const [recordingSeconds, setRecordingSeconds] = useState(0);
+  const [liveTranscript, setLiveTranscript] = useState('');
   const [showHskkTranscript, setShowHskkTranscript] = useState({});
   const [hskkResult, setHskkResult] = useState(null);
 
@@ -137,6 +140,9 @@ export function Hsk30ExamComponent() {
   const recordingTimerRef = useRef(null);
   const mediaRecorderRef = useRef(null);
   const audioChunksRef = useRef([]);
+  const speechAiRef = useRef(null);
+  const recordingStartTimeRef = useRef(0);
+  const currentRecordingQuestionRef = useRef(null);
 
   // Load catalogs on mount
   useEffect(() => {
@@ -208,14 +214,30 @@ export function Hsk30ExamComponent() {
   const allQuestions = getAllQuestions();
   const activeQuestion = allQuestions[currentQuestionIdx] || null;
 
-  // Auto-play audio on question switch for CBT listening
+  // Auto-play audio on question switch for CBT listening and stop active recordings
   useEffect(() => {
+    if (isRecording) {
+      stopRecordingQuestion();
+    }
+    setLiveTranscript('');
     if (examState === 'exam' && activeQuestion && activeQuestion.audio_clip) {
       playAudio(activeQuestion.audio_clip);
     } else {
       stopAudio();
     }
   }, [currentQuestionIdx, examState]);
+
+  // Clean up timers, audio, and speech recognition on unmount
+  useEffect(() => {
+    return () => {
+      stopAudio();
+      if (speechAiRef.current) {
+        speechAiRef.current.stopListening();
+      }
+      if (recordingTimerRef.current) clearInterval(recordingTimerRef.current);
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
+  }, []);
 
   const playAudio = (url) => {
     stopAudio();
@@ -342,6 +364,24 @@ export function Hsk30ExamComponent() {
     }
   };
 
+  // Stop candidate voice recording
+  const stopRecordingQuestion = () => {
+    if (speechAiRef.current) {
+      speechAiRef.current.stopListening();
+    }
+    if (mediaRecorderRef.current && mediaRecorderRef.current.state === 'recording') {
+      try {
+        mediaRecorderRef.current.stop();
+      } catch (err) {
+        console.warn('[Hsk30ExamView] MediaRecorder stop error:', err);
+      }
+    }
+    if (recordingTimerRef.current) {
+      clearInterval(recordingTimerRef.current);
+      recordingTimerRef.current = null;
+    }
+  };
+
   // Start candidate voice recording for HSKK question
   const startRecordingQuestion = async () => {
     if (!activeQuestion) return;
@@ -353,6 +393,26 @@ export function Hsk30ExamComponent() {
       audioChunksRef.current = [];
       const recorder = new MediaRecorder(stream);
       mediaRecorderRef.current = recorder;
+      currentRecordingQuestionRef.current = activeQuestion;
+      recordingStartTimeRef.current = Date.now();
+
+      // Initialize and start Speech Recognition in Mandarin (zh-CN)
+      if (!speechAiRef.current) {
+        speechAiRef.current = new LocalSpeechAI();
+      }
+      setLiveTranscript('');
+      try {
+        speechAiRef.current.startListening({
+          onResult: ({ transcript }) => {
+            setLiveTranscript(transcript);
+          },
+          onError: (err) => {
+            console.warn('[Hsk30ExamView] Speech recognition error:', err);
+          },
+        });
+      } catch (speechErr) {
+        console.warn('[Hsk30ExamView] Failed to start speech recognition:', speechErr);
+      }
 
       recorder.ondataavailable = (e) => {
         if (e.data.size > 0) audioChunksRef.current.push(e.data);
@@ -363,18 +423,72 @@ export function Hsk30ExamComponent() {
         const blob = new Blob(audioChunksRef.current, { type: 'audio/webm' });
         const blobUrl = URL.createObjectURL(blob);
 
-        const targetSec = activeQuestion.recordSeconds || 10;
-        const actualSec = recordingSeconds;
-        const ratio = Math.min(1.0, actualSec / Math.max(3, targetSec * 0.5));
-        const estimatedScore = Math.min(98, Math.max(75, Math.round(75 + ratio * 20 + Math.random() * 4)));
+        const targetQ = currentRecordingQuestionRef.current || activeQuestion;
+        const actualSec = Math.max(1, Math.round((Date.now() - recordingStartTimeRef.current) / 1000));
+        const rawTranscript = (speechAiRef.current && speechAiRef.current.currentTranscript) || liveTranscript || '';
+        const cleanRec = cleanChineseCharacters(rawTranscript);
+
+        let evaluatedScore = 0;
+        let note = '';
+
+        if (!speechAiRef.current || !speechAiRef.current.isSupported) {
+          evaluatedScore = null;
+          note = 'Trình duyệt chưa hỗ trợ Web Speech API để tự động chấm điểm. Bản ghi âm đã được lưu để tự nghe lại đối chiếu.';
+        } else if (!cleanRec || cleanRec.length === 0) {
+          // Candidate spoke Vietnamese, non-Chinese language, or stayed silent
+          evaluatedScore = 0;
+          note = '⚠️ Không phát hiện khẩu ngữ tiếng Trung trong câu trả lời (0 điểm). Vui lòng phát âm tiếng Trung theo đề thi.';
+        } else {
+          // Chinese speech recognized
+          const targetZh = targetQ.prompt_zh || '';
+          const suggestedZh = targetQ.suggested_zh || '';
+          const cleanPrompt = cleanChineseCharacters(targetZh);
+          const isRepeatPart = (targetQ.sectionKey || '').includes('repeat') || targetQ.part === 1 || (!suggestedZh && cleanPrompt.length > 2);
+
+          if (isRepeatPart && cleanPrompt) {
+            // Part 1: Repeat after audio - evaluate phonetic and character match against target sentence
+            const match = LocalSpeechAI.evaluateTextMatch(rawTranscript, cleanPrompt, targetQ.pinyin || '');
+            evaluatedScore = match.matchScore;
+            if (evaluatedScore >= 80) {
+              note = 'Xuất sắc! Bạn đã nhắc lại câu tiếng Trung rất chuẩn xác và rõ ràng.';
+            } else if (evaluatedScore >= 50) {
+              note = 'Khá tốt! Bạn đã nhắc lại được phần lớn câu, hãy chú ý các âm tiết chưa khớp.';
+            } else {
+              note = 'Nội dung nhắc lại chưa khớp hoặc phát âm lệch nhiều so với câu mẫu.';
+            }
+          } else {
+            // Part 2 & 3: Answer questions or monologue / picture story
+            let keywordMatches = 0;
+            const keywordsToCheck = cleanChineseCharacters(suggestedZh || targetZh);
+            for (const char of cleanRec) {
+              if (keywordsToCheck.includes(char)) keywordMatches++;
+            }
+
+            const charCount = cleanRec.length;
+            const lengthScore = Math.min(60, charCount * 6);
+            const relevanceScore = Math.min(30, keywordMatches * 5);
+            const fluencyScore = Math.min(10, Math.round((actualSec / (targetQ.recordSeconds || 10)) * 10));
+
+            evaluatedScore = Math.min(100, Math.max(30, lengthScore + relevanceScore + fluencyScore));
+            if (evaluatedScore >= 80) {
+              note = 'Câu trả lời tiếng Trung phong phú, lưu loát và đúng trọng tâm câu hỏi.';
+            } else if (evaluatedScore >= 60) {
+              note = 'Đã trả lời bằng tiếng Trung đạt yêu cầu cơ bản.';
+            } else {
+              note = 'Câu trả lời tiếng Trung còn quá ngắn. Hãy cố gắng trả lời thành câu hoàn chỉnh.';
+            }
+          }
+        }
 
         setCandidateRecordings((prev) => ({
           ...prev,
-          [activeQuestion.id]: {
+          [targetQ.id]: {
             blob,
             url: blobUrl,
             duration: actualSec,
-            aiScore: estimatedScore,
+            aiScore: evaluatedScore,
+            transcript: rawTranscript,
+            evaluationNote: note,
             recordedAt: new Date().toLocaleTimeString(),
           },
         }));
@@ -401,14 +515,6 @@ export function Hsk30ExamComponent() {
       alert('Lỗi truy cập micro: ' + e.message);
       setIsRecording(false);
     }
-  };
-
-  // Stop candidate voice recording
-  const stopRecordingQuestion = () => {
-    if (mediaRecorderRef.current && mediaRecorderRef.current.state === 'recording') {
-      mediaRecorderRef.current.stop();
-    }
-    if (recordingTimerRef.current) clearInterval(recordingTimerRef.current);
   };
 
   const handleSelectAnswer = (qId, answer) => {
@@ -539,7 +645,9 @@ export function Hsk30ExamComponent() {
 
     let totalScore = 0;
     recordedIds.forEach((id) => {
-      totalScore += candidateRecordings[id].aiScore || 80;
+      const rec = candidateRecordings[id];
+      const score = (rec && typeof rec.aiScore === 'number') ? rec.aiScore : 0;
+      totalScore += score;
     });
     const avgScore = recordedCount > 0 ? Math.round(totalScore / recordedCount) : 0;
     const finalScore = Math.round(avgScore * (recordedCount / questions.length));
@@ -1026,10 +1134,15 @@ export function Hsk30ExamComponent() {
 
                   {isRecording ? (
                     <div>
-                      <div style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: #ffe4e6; border-radius: 9999px; color: #e11d48; font-weight: 700; margin-bottom: 1rem; animation: pulse 1.5s infinite;">
+                      <div style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: #ffe4e6; border-radius: 9999px; color: #e11d48; font-weight: 700; margin-bottom: 0.75rem; animation: pulse 1.5s infinite;">
                         <span style="font-size: 1.2rem;">🔴</span>
                         <span>Đang ghi âm: {formatTimer(recordingSeconds)} / {formatTimer(activeQuestion.recordSeconds)}</span>
                       </div>
+                      {liveTranscript ? (
+                        <div style="font-size: 0.9rem; color: #475569; margin-bottom: 0.75rem; font-style: italic;">
+                          AI đang nghe (zh-CN): <strong style="color: #0f172a;">"{liveTranscript}"</strong>
+                        </div>
+                      ) : null}
                       <div>
                         <button
                           type="button"
@@ -1042,11 +1155,36 @@ export function Hsk30ExamComponent() {
                     </div>
                   ) : currentRec ? (
                     <div>
-                      <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-bottom: 1rem; color: #166534; font-weight: 700;">
-                        <span>✅ Đã ghi âm thành công ({currentRec.duration}s)!</span>
-                        <span style="background: #dcfce7; padding: 0.2rem 0.6rem; border-radius: 0.5rem; font-size: 0.85rem;">
-                          Điểm lưu loát: {currentRec.aiScore} / 100
-                        </span>
+                      <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-bottom: 0.75rem; flex-wrap: wrap;">
+                        <span style="color: #166534; font-weight: 700;">✅ Đã ghi âm thành công ({currentRec.duration}s)!</span>
+                        {typeof currentRec.aiScore === 'number' ? (
+                          <span style={`padding: 0.25rem 0.75rem; border-radius: 0.5rem; font-size: 0.88rem; font-weight: 700; ${currentRec.aiScore >= 60 ? 'background: #dcfce7; color: #15803d;' : 'background: #fee2e2; color: #b91c1c;'}`}>
+                            Điểm AI đánh giá: {currentRec.aiScore} / 100
+                          </span>
+                        ) : (
+                          <span style="background: #f1f5f9; color: #475569; padding: 0.25rem 0.75rem; border-radius: 0.5rem; font-size: 0.85rem;">
+                            Bản ghi lưu trữ đối chiếu
+                          </span>
+                        )}
+                      </div>
+
+                      {/* AI Speech Recognition Feedback */}
+                      <div style={`margin-bottom: 1rem; padding: 0.75rem 1rem; border-radius: 0.5rem; text-align: left; font-size: 0.9rem; ${typeof currentRec.aiScore === 'number' && currentRec.aiScore > 0 ? 'background: #f0fdf4; border: 1px solid #bbf7d0;' : 'background: #fef2f2; border: 1px solid #fecaca;'}`}>
+                        <div style="font-weight: 600; margin-bottom: 0.25rem; color: #0f172a;">
+                          🗣️ Văn bản AI nhận diện (ASR zh-CN):
+                        </div>
+                        <div style="font-family: inherit; font-size: 1rem; color: #1e293b; margin-bottom: 0.35rem;">
+                          {currentRec.transcript ? (
+                            <strong style="color: #0f172a;">"{currentRec.transcript}"</strong>
+                          ) : (
+                            <em style="color: #94a3b8;">(Không nhận diện được khẩu ngữ tiếng Trung)</em>
+                          )}
+                        </div>
+                        {currentRec.evaluationNote && (
+                          <div style={`font-size: 0.85rem; ${typeof currentRec.aiScore === 'number' && currentRec.aiScore > 0 ? 'color: #15803d;' : 'color: #dc2626; font-weight: 600;'}`}>
+                            {currentRec.evaluationNote}
+                          </div>
+                        )}
                       </div>
 
                       <div style="display: flex; justify-content: center; align-items: center; gap: 1rem; flex-wrap: wrap;">
@@ -1211,8 +1349,8 @@ export function Hsk30ExamComponent() {
                     <span style="font-weight: 700; color: #0f172a;">
                       Câu {q.number}: {q.sectionTitleZh || q.sectionName}
                     </span>
-                    <span style={{ fontWeight: 700, color: rec ? '#059669' : '#dc2626' }}>
-                      {rec ? `Đã ghi (${rec.duration}s) · ${rec.aiScore}đ` : 'Chưa thu âm'}
+                    <span style={{ fontWeight: 700, color: rec ? (typeof rec.aiScore === 'number' && rec.aiScore > 0 ? '#059669' : '#dc2626') : '#dc2626' }}>
+                      {rec ? (typeof rec.aiScore === 'number' ? `Đã ghi (${rec.duration}s) · ${rec.aiScore}đ` : `Đã ghi (${rec.duration}s)`) : 'Chưa thu âm'}
                     </span>
                   </div>
 
@@ -1232,9 +1370,21 @@ export function Hsk30ExamComponent() {
                       </button>
                     )}
                     {rec && (
-                      <div style="display: flex; align-items: center; gap: 0.5rem;">
-                        <span style="font-size: 0.85rem; font-weight: 600; color: #475569;">Bản ghi của bạn:</span>
-                        <audio controls src={rec.url} style="height: 36px;" />
+                      <div style="display: flex; flex-direction: column; gap: 0.35rem; width: 100%; margin-top: 0.5rem; padding: 0.5rem 0.75rem; background: #f8fafc; border-radius: 0.5rem;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+                          <span style="font-size: 0.85rem; font-weight: 600; color: #475569;">Bản ghi của bạn:</span>
+                          <audio controls src={rec.url} style="height: 36px;" />
+                        </div>
+                        {rec.transcript && (
+                          <div style="font-size: 0.85rem; color: #334155;">
+                            🗣️ AI nhận diện: <strong>"{rec.transcript}"</strong>
+                          </div>
+                        )}
+                        {rec.evaluationNote && (
+                          <div style={`font-size: 0.82rem; ${typeof rec.aiScore === 'number' && rec.aiScore > 0 ? 'color: #15803d;' : 'color: #dc2626;'}`}>
+                            {rec.evaluationNote}
+                          </div>
+                        )}
                       </div>
                     )}
                   </div>
