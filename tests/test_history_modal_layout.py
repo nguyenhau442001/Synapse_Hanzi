@@ -42,6 +42,10 @@ def test_history_box_viewport_bounded_styles():
     assert ".history-toolbar" in content
     assert ".history-footer" in content
 
+    # Verify .history-kpi card has overflow protection
+    assert ".history-kpi" in content
+    assert "text-overflow: ellipsis" in content
+
 
 def test_history_responsive_media_queries():
     css_path = ROOT / "assets" / "css" / "streak-history.css"
@@ -62,3 +66,4 @@ def test_levels_js_history_structure():
     assert "renderMonthView" in content
     assert "renderYearView" in content
     assert "historyModalOpen" in content
+    assert "formatStudyDuration(totalMinutesAllTime, true)" in content, "levels.js should use compact duration for KPI card"

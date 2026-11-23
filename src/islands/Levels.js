@@ -91,11 +91,16 @@ export function isStudiedDay(dayEntry) {
     || daySeconds(dayEntry) >= STUDIED_DAY_MIN_SECONDS;
 }
 
-export function formatStudyDuration(totalMinutes) {
+export function formatStudyDuration(totalMinutes, compact = false) {
   const minutes = Math.round(totalMinutes);
-  if (minutes <= 0) return '0 phút';
+  if (minutes <= 0) return compact ? '0p' : '0 phút';
   const hours = Math.floor(minutes / 60);
   const remainder = minutes % 60;
+  if (compact) {
+    if (hours === 0) return `${remainder}p`;
+    if (remainder === 0) return `${hours}h`;
+    return `${hours}h ${remainder}p`;
+  }
   if (hours === 0) return `${remainder} phút`;
   if (remainder === 0) return `${hours} giờ`;
   return `${hours} giờ ${remainder} phút`;
@@ -365,7 +370,7 @@ export function renderHistoryModalBody() {
       <div class="history-kpi"><strong>🔥 ${stats.current}</strong><span>Chuỗi hiện tại</span></div>
       <div class="history-kpi"><strong>🏆 ${stats.longest}</strong><span>Chuỗi dài nhất</span></div>
       <div class="history-kpi"><strong>📅 ${stats.totalDaysStudied}</strong><span>Ngày đã học</span></div>
-      <div class="history-kpi"><strong>⏱ ${formatStudyDuration(totalMinutesAllTime)}</strong><span>Tổng thời gian</span></div>
+      <div class="history-kpi" title="Tổng thời gian: ${formatStudyDuration(totalMinutesAllTime)}"><strong>⏱ ${formatStudyDuration(totalMinutesAllTime, true)}</strong><span>Tổng thời gian</span></div>
     </div>
     <div class="history-toolbar">
       <div class="history-view-switcher" role="tablist">

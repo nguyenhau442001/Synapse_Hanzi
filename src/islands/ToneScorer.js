@@ -300,6 +300,22 @@ export function scorePitchContour(userFrames, targetContour, syllableInfos) {
 
     const resolvedStatus = finalSylScore >= 80 ? 'excellent' : finalSylScore >= 60 ? 'fair' : 'needs_work';
 
+    let errorTag = null;
+    if (resolvedStatus === 'needs_work') {
+      if (sylInfo.actualTone === 4) {
+        errorTag = metrics.slope === 'rising' ? 'Đọc nhầm dấu sắc' : 'Chưa dốc từ 5→1';
+      } else if (sylInfo.actualTone === 1) {
+        errorTag = metrics.slope === 'falling' ? 'Bị chúc xuống (huyền)' : 'Chưa ngân phẳng';
+      } else if (sylInfo.actualTone === 2) {
+        errorTag = metrics.slope === 'falling' ? 'Bị rơi xuống' : 'Chưa vuốt đủ cao';
+      } else if (sylInfo.actualTone === 3) {
+        errorTag = 'Chưa dìm sâu đáy';
+      }
+    }
+
+    const startNorm = s / numSyllables;
+    const endNorm = (s + 1) / numSyllables;
+
     breakdown.push({
       syllableIndex: s,
       char: sylInfo.char,
@@ -311,6 +327,9 @@ export function scorePitchContour(userFrames, targetContour, syllableInfos) {
       dtwScore: dtwBaseScore,
       slope: metrics.slope,
       status: resolvedStatus,
+      errorTag,
+      startNorm,
+      endNorm,
       advice: finalSylScore >= 85 ? 'Phát âm thanh điệu rất chuẩn xác, đường cao độ mượt mà!' : advice
     });
 
@@ -329,11 +348,16 @@ export function scorePitchContour(userFrames, targetContour, syllableInfos) {
     message = 'Khá tốt! Chú ý một vài điểm thanh điệu bên dưới.';
   }
 
+  const firstTime = voicedFrames[0] ? (voicedFrames[0].time || 0) : 0;
+  const lastTime = voicedFrames[voicedFrames.length - 1] ? (voicedFrames[voicedFrames.length - 1].time || 0) : 0;
+  const durationSec = Math.max(0, parseFloat((lastTime - firstTime).toFixed(2)));
+
   return {
     valid: true,
     score: overallPitchScore,
     stars,
     medianHz: Math.round(medianHz),
+    durationSec,
     userChaoPitches,
     toneBreakdown: breakdown,
     message

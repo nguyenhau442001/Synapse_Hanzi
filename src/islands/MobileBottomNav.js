@@ -29,14 +29,15 @@ export function renderMobileStatsHeader(dialogBody) {
   const totalMinutes = Object.values(activity.days || {}).reduce(function(sum, entry) {
     return sum + (typeof daySeconds === 'function' ? daySeconds(entry) : (typeof window.daySeconds === 'function' ? window.daySeconds(entry) : 0)) / 60;
   }, 0);
-  const timeFormatted = typeof formatStudyDuration === 'function' ? formatStudyDuration(totalMinutes) : (typeof window.formatStudyDuration === 'function' ? window.formatStudyDuration(totalMinutes) : Math.round(totalMinutes) + ' phút');
+  const timeFormatted = typeof formatStudyDuration === 'function' ? formatStudyDuration(totalMinutes, true) : (typeof window.formatStudyDuration === 'function' ? window.formatStudyDuration(totalMinutes, true) : Math.round(totalMinutes) + 'p');
+  const fullTime = typeof formatStudyDuration === 'function' ? formatStudyDuration(totalMinutes) : (typeof window.formatStudyDuration === 'function' ? window.formatStudyDuration(totalMinutes) : timeFormatted);
 
   header.innerHTML =
     '<div class="history-kpi-row mobile-kpi-grid">' +
       '<div class="history-kpi"><strong>🔥 ' + stats.current + '</strong><span>Chuỗi hiện tại</span></div>' +
       '<div class="history-kpi"><strong>🏆 ' + stats.longest + '</strong><span>Chuỗi dài nhất</span></div>' +
       '<div class="history-kpi"><strong>📅 ' + stats.totalDaysStudied + '</strong><span>Ngày đã học</span></div>' +
-      '<div class="history-kpi"><strong>⏱ ' + timeFormatted + '</strong><span>Tổng thời gian</span></div>' +
+      '<div class="history-kpi" title="Tổng thời gian: ' + fullTime + '"><strong>⏱ ' + timeFormatted + '</strong><span>Tổng thời gian</span></div>' +
     '</div>' +
     '<button type="button" class="mobile-stats-history-btn" onclick="window.openDetailedHistoryFromStatsSheet()">' +
       '<span>📅 Xem biểu đồ lịch sử học tập (Heatmap)</span>' +

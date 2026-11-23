@@ -20,10 +20,10 @@ import { h, render } from 'preact';
 import { useState, useEffect, useRef } from 'preact/hooks';
 import { colorizePinyin } from './pinyinTones.js';
 import { analyzeToneSandhi, generateTargetPitchContour, CHAO_PITCH_MAP } from './ToneSandhi.js';
-import { LivePitchTracker, frequencyToChaoScale } from './PitchDetector.js';
+import { LivePitchTracker, frequencyToChaoScale, fetchAndExtractAudioWaveform } from './PitchDetector.js';
 import { scorePitchContour } from './ToneScorer.js';
 import { LocalSpeechAI } from './LocalSpeechAI.js';
-import { speakChinese, stopSpeaking, loadGlobalHanziAudioMap } from './SpeechAudio.js';
+import { speakChinese, stopSpeaking, loadGlobalHanziAudioMap, resolvePrebuiltAudio } from './SpeechAudio.js';
 import { ensureCaptModelReady, evaluatePronunciationWithOnnx } from './OnnxCaptEngine.js';
 import { isCaptModelCached } from './SpeechModelManager.js';
 import { NewbieToneGuide } from './NewbieToneGuide.jsx';
@@ -81,6 +81,59 @@ const MINIMAL_TONE_PAIRS = [
     ]
   }
 ];
+
+/**
+ * Draws a filled and stroked symmetric waveform envelope polygon on canvas.
+ */
+function drawWaveformPolygon(ctx, envelope, padLeft, plotW, yCenter, maxAmp, fillStyle, strokeStyle) {
+  if (!envelope || envelope.length === 0) return;
+  const n = envelope.length;
+  ctx.save();
+
+  // Positive half (top)
+  ctx.beginPath();
+  for (let i = 0; i < n; i++) {
+    const x = padLeft + (i / Math.max(1, n - 1)) * plotW;
+    const y = yCenter - (envelope[i].max || envelope[i].amp || 0) * maxAmp;
+    if (i === 0) ctx.moveTo(x, y);
+    else ctx.lineTo(x, y);
+  }
+  // Negative half (bottom, going backwards)
+  for (let i = n - 1; i >= 0; i--) {
+    const x = padLeft + (i / Math.max(1, n - 1)) * plotW;
+    const y = yCenter - (envelope[i].min || -envelope[i].amp || 0) * maxAmp;
+    ctx.lineTo(x, y);
+  }
+  ctx.closePath();
+
+  if (fillStyle) {
+    ctx.fillStyle = fillStyle;
+    ctx.fill();
+  }
+  if (strokeStyle) {
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = strokeStyle;
+    ctx.stroke();
+  }
+  ctx.restore();
+}
+
+/**
+ * Draws a rounded rectangle path on canvas.
+ */
+function roundRect(ctx, x, y, width, height, radius) {
+  ctx.beginPath();
+  ctx.moveTo(x + radius, y);
+  ctx.lineTo(x + width - radius, y);
+  ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
+  ctx.lineTo(x + width, y + height - radius);
+  ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+  ctx.lineTo(x + radius, y + height);
+  ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
+  ctx.lineTo(x, y + radius);
+  ctx.quadraticCurveTo(x, y, x + radius, y);
+  ctx.closePath();
+}
 
 function SpeakingPracticeApp() {
   const [activeTab, setActiveTab] = useState('toneTrainer'); // 'toneTrainer' | 'vocabPractice' | 'minimalPairs'

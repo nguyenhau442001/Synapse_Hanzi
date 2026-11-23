@@ -25,6 +25,97 @@ export function calculateRms(buffer, start = 0, length = buffer.length) {
 }
 
 /**
+ * Extracts a normalized waveform envelope (min, max, rms, amp) across target buckets.
+ *
+ * @param {Float32Array|number[]} pcmData Raw PCM audio samples
+ * @param {number} targetBuckets Number of time buckets (default 120)
+ * @returns {Array<{ min: number, max: number, rms: number, amp: number }>}
+ */
+export function extractWaveformEnvelope(pcmData, targetBuckets = 120) {
+  if (!pcmData || pcmData.length === 0 || targetBuckets <= 0) {
+    return [];
+  }
+
+  const numSamples = pcmData.length;
+  const bucketSize = numSamples / targetBuckets;
+  const envelope = [];
+
+  let globalPeak = 0.001;
+
+  for (let b = 0; b < targetBuckets; b++) {
+    const start = Math.floor(b * bucketSize);
+    const end = Math.min(numSamples, Math.floor((b + 1) * bucketSize));
+
+    let min = 0;
+    let max = 0;
+    let sumSq = 0;
+    const count = end - start;
+
+    if (count > 0) {
+      for (let i = start; i < end; i++) {
+        const val = pcmData[i];
+        if (val < min) min = val;
+        if (val > max) max = val;
+        sumSq += val * val;
+      }
+      const rms = Math.sqrt(sumSq / count);
+      const amp = Math.max(Math.abs(min), Math.abs(max));
+      if (amp > globalPeak) globalPeak = amp;
+      envelope.push({ min, max, rms, amp });
+    } else {
+      envelope.push({ min: 0, max: 0, rms: 0, amp: 0 });
+    }
+  }
+
+  // Normalize by peak amplitude (with headroom) for balanced visualization
+  const normFactor = globalPeak > 0.01 ? 1.0 / globalPeak : 1.0;
+  return envelope.map((item) => ({
+    min: Math.max(-1, Math.min(0, item.min * normFactor)),
+    max: Math.max(0, Math.min(1, item.max * normFactor)),
+    rms: Math.min(1, item.rms * normFactor),
+    amp: Math.min(1, item.amp * normFactor)
+  }));
+}
+
+// In-memory cache for reference audio waveforms
+const referenceWaveformCache = new Map();
+
+/**
+ * Fetches an audio file from URL and decodes its waveform envelope.
+ *
+ * @param {string} audioUrl URL of prebuilt studio audio
+ * @param {number} targetBuckets Number of buckets (default 120)
+ * @returns {Promise<Array<{ min: number, max: number, rms: number, amp: number }>>}
+ */
+export async function fetchAndExtractAudioWaveform(audioUrl, targetBuckets = 120) {
+  if (!audioUrl) return [];
+  const cacheKey = `${audioUrl}_${targetBuckets}`;
+  if (referenceWaveformCache.has(cacheKey)) {
+    return referenceWaveformCache.get(cacheKey);
+  }
+
+  try {
+    const response = await fetch(audioUrl);
+    if (!response.ok) return [];
+    const arrayBuffer = await response.arrayBuffer();
+
+    const AudioCtx = window.AudioContext || window.webkitAudioContext;
+    if (!AudioCtx) return [];
+    const ctx = new AudioCtx();
+    const audioBuffer = await ctx.decodeAudioData(arrayBuffer);
+    try { await ctx.close(); } catch {}
+
+    const channelData = audioBuffer.getChannelData(0);
+    const envelope = extractWaveformEnvelope(channelData, targetBuckets);
+    referenceWaveformCache.set(cacheKey, envelope);
+    return envelope;
+  } catch (err) {
+    console.warn('[PitchDetector] fetchAndExtractAudioWaveform error:', err);
+    return [];
+  }
+}
+
+/**
  * Executes the YIN pitch detection algorithm on an audio buffer slice.
  *
  * @param {Float32Array} buffer Audio samples (typically 1024 or 2048 samples)
@@ -172,6 +263,7 @@ export class LivePitchTracker {
   constructor(options = {}) {
     this.onPitch = options.onPitch || null;
     this.onVolume = options.onVolume || null;
+    this.onWaveform = options.onWaveform || null;
     this.onStatus = options.onStatus || null;
     this.audioContext = null;
     this.mediaStream = null;
@@ -252,6 +344,10 @@ export class LivePitchTracker {
 
       if (this.onVolume) {
         this.onVolume(res.rms);
+      }
+
+      if (this.onWaveform) {
+        this.onWaveform(timeDomainBuffer, res.rms);
       }
 
       const frameData = {
@@ -341,5 +437,17 @@ export class LivePitchTracker {
       console.warn('[PitchDetector] getPcm16k decode error:', err);
       return null;
     }
+  }
+
+  /**
+   * Retrieves the normalized waveform envelope of the user's recorded audio.
+   *
+   * @param {number} targetBuckets Number of time buckets
+   * @returns {Promise<Array<{ min: number, max: number, rms: number, amp: number }>>}
+   */
+  async getRecordedWaveform(targetBuckets = 120) {
+    const pcm = await this.getPcm16k();
+    if (!pcm || pcm.length === 0) return [];
+    return extractWaveformEnvelope(pcm, targetBuckets);
   }
 }
