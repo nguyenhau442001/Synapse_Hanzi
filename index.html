@@ -27,9 +27,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Nunito+Sans:wght@400;500;600&family=Noto+Serif+SC:wght@500;600;700&display=swap">
-<link rel="stylesheet" href="assets/flashcards.css?v=3.58.1">
+<link rel="stylesheet" href="assets/flashcards.css?v=3.59.0">
 <link rel="preload" href="assets/images/logo.svg" as="image" type="image/svg+xml">
-<link rel="modulepreload" href="assets/js/preact/islands.js?v=3.58.1">
+<link rel="modulepreload" href="assets/js/preact/islands.js?v=3.59.0">
 <script>(function(){try{var m=localStorage.getItem('hsk_theme_manual');var e=parseInt(localStorage.getItem('hsk_theme_manual_expiry')||'0',10);if(m&&(m==='dark'||m==='light')&&Date.now()<e){document.documentElement.dataset.theme=m;}else{var p=new URLSearchParams(window.location.search).get('theme');if(p==='dark'||p==='light'){document.documentElement.dataset.theme=p;}else{var h=new Date().getHours();var d=(h>=6&&h<18)?'light':'dark';document.documentElement.dataset.theme=d;}}}catch(e){}if(localStorage.getItem('hsk_show_hanviet')==='false'){document.documentElement.classList.add('hide-hanviet');}})();</script>
 </head>
 <body>
@@ -89,7 +89,7 @@
         </button>
         <div class="app-brand-text-block" id="appBrandTextBlock" role="button" tabindex="0" title="Trở về trang chủ (Home)" aria-label="Trang chủ 汉字思维">
           <h1 id="appTitle">汉字思维</h1>
-          <p id="appSubtitle"><span class="brand-pinyin">Hànzì Sīwéi</span> <span class="brand-sep" aria-hidden="true">·</span> <span class="brand-en">Hanzi Mind</span> <span class="brand-version footer-version" title="Phiên bản ứng dụng">v3.58.1</span> <span class="brand-tagline-wrap"><span class="brand-sep" aria-hidden="true">·</span> <span class="brand-tagline">Think in Characters. Master Chinese.</span></span></p>
+          <p id="appSubtitle"><span class="brand-pinyin">Hànzì Sīwéi</span> <span class="brand-sep" aria-hidden="true">·</span> <span class="brand-en">Hanzi Mind</span> <span class="brand-version footer-version" title="Phiên bản ứng dụng">v3.59.0</span> <span class="brand-tagline-wrap"><span class="brand-sep" aria-hidden="true">·</span> <span class="brand-tagline">Think in Characters. Master Chinese.</span></span></p>
         </div>
       </div>
     </div>
@@ -223,6 +223,11 @@
         data-section="writing">
         <svg class="nav-tab-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
         <span>Viết</span>
+      </button>
+      <button id="primaryNavExam" class="primary-tab" type="button" role="tab" aria-pressed="false"
+        data-section="exam">
+        <svg class="nav-tab-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        <span>Luyện thi</span>
       </button>
       <button id="primaryTabReview" class="primary-tab" type="button" role="tab" aria-pressed="false"
         data-section="review">
@@ -487,7 +492,7 @@
             </a>
           </span>
         </span>
-        <span class="cs-meta"><span class="footer-version" title="Phiên bản ứng dụng">v3.58.1</span><span class="cs-dot" aria-hidden="true">·</span><span>Tiến trình tự lưu trên thiết bị này</span></span>
+        <span class="cs-meta"><span class="footer-version" title="Phiên bản ứng dụng">v3.59.0</span><span class="cs-dot" aria-hidden="true">·</span><span>Tiến trình tự lưu trên thiết bị này</span></span>
       </div>
     </section>
   </div>
@@ -692,15 +697,16 @@
 
   <!-- SCREEN 13: HSK Speaking Practice & AI Tone Visualizer -->
   <div id="screenSpeakingPractice" style="display:none"></div>
+  <div id="screenHskExam" style="display:none"></div><!-- Preact island: src/islands/Hsk30ExamView.jsx -->
 
     </div>
     <aside class="workstation-right" id="workstationRight" aria-label="Phòng thực hành tương tác"><section id="memoryCurvePanel" class="memory-curve-panel" aria-labelledby="memoryCurvePanelTitle"></section><!-- Preact island: src/islands/MemoryCurve.jsx --></aside>
   </div>
 </div>
 
-<script defer src="assets/js/hanviet-dict.js?v=3.58.1"></script>
+<script defer src="assets/js/hanviet-dict.js?v=3.59.0"></script>
 <!-- Preact islands (built from src/islands by `npm run build:islands`) -->
-<script type="module" src="assets/js/preact/islands.js?v=3.58.1"></script>
+<script type="module" src="assets/js/preact/islands.js?v=3.59.0"></script>
 <!-- Mobile Bottom Navigation Bar -->
 <nav class="mobile-bottom-nav" id="mobileBottomNav" aria-label="Điều hướng di động">
   <button type="button" class="mobile-nav-item active" id="mobNavVocab" aria-label="Trang chủ Từ vựng">

@@ -1,0 +1,2949 @@
+{
+  "id": "office_ep06",
+  "series": "office",
+  "series_title": "打工人日记",
+  "series_title_vi": "Nhật Ký Dân Công Sở",
+  "collection": "office",
+  "volume": 1,
+  "chapter_in_volume": null,
+  "chapter_no": 6,
+  "title": {
+    "zh": "第六集：摸鱼大师",
+    "zh_trad": "第六集：摸魚大師",
+    "vi": "Tập 6: Bậc Thầy Trốn Việc",
+    "pinyin": "dì liù jí ： mō yú dà shī"
+  },
+  "description_vi": "Tiểu Dương tự đắc sáng chế tuyệt chiêu 'nhúng video vào file biểu đồ', tưởng mình đã là trần nhà của giới trốn việc công sở. Nào ngờ Tiểu Linh chỉ tay sang góc bàn của Lão Châu: chiếc quạt điện tự động gõ phím, cặp kính đen ngủ gật, và tấm bằng khen Nhân Viên Xuất Sắc sáng loá trên tường...",
+  "cover_image": "assets/images/readings/manga/office/office_ep06/cover.webp",
+  "source": "《打工人日记》原创职场情景喜剧 · Synapse Hanzi Studio",
+  "source_url": "https://github.com/Synapse-Hanzi",
+  "source_credits": "Kịch bản và tạo hình nhân vật độc quyền: Synapse Hanzi Studio. Tranh minh họa kết hợp hệ thống tra từ tương tác, pinyin, Hán-Việt và âm thanh đa giác quan.",
+  "license": "Original / Educational",
+  "page_count": 5,
+  "difficulty": "HSK 1 - 4",
+  "estimatedMinutes": 3,
+  "file": "database/readings/manga/office/office_ep06.json",
+  "proper_names": [
+    "小阳",
+    "小铃",
+    "王经理",
+    "王总",
+    "老周"
+  ],
+  "pages": [
+    {
+      "page_num": 1,
+      "image": "assets/images/readings/manga/office/office_ep06/page_01.webp",
+      "dialogues": [
+        {
+          "id": "p1_d1",
+          "character": "小阳 (Tiểu Dương)",
+          "bbox": {
+            "x": 10.17,
+            "y": 3.26,
+            "width": 45.06,
+            "height": 12.37
+          },
+          "zh": "看！把视频嵌在表格里，这叫战术摸鱼！",
+          "zh_trad": "看！把視頻嵌在表格裏，這叫戰術摸魚！",
+          "pinyin": "kàn ！ bǎ shì pín qiàn zài biǎo gé lǐ ， zhè jiào zhàn shù mō yú ！",
+          "vi": "Nhìn này! Nhúng video vào trong bảng tính, cái này gọi là chiến thuật trốn việc!",
+          "tokens": [
+            {
+              "text": "看",
+              "text_trad": "看",
+              "pinyin": "kàn",
+              "hanviet": "Khán",
+              "meaning_vi": "nhìn, xem",
+              "hsk": 1
+            },
+            {
+              "text": "把",
+              "text_trad": "把",
+              "pinyin": "bǎ",
+              "hanviet": "Bả",
+              "meaning_vi": "cái, chiếc (lượng từ); cầm, nắm",
+              "hsk": 3
+            },
+            {
+              "text": "视频",
+              "text_trad": "視頻",
+              "pinyin": "shìpín",
+              "hanviet": "Thị Tần",
+              "meaning_vi": "video",
+              "hsk": 4
+            },
+            {
+              "text": "嵌",
+              "text_trad": "嵌",
+              "pinyin": "qiàn",
+              "hanviet": "Khảm",
+              "meaning_vi": "nhúng vào, khảm vào, lồng ghép vào",
+              "hsk": 5
+            },
+            {
+              "text": "在",
+              "text_trad": "在",
+              "pinyin": "zài",
+              "hanviet": "Tại",
+              "meaning_vi": "ở, đang",
+              "hsk": 1
+            },
+            {
+              "text": "表格",
+              "text_trad": "表格",
+              "pinyin": "biǎogé",
+              "hanviet": "Biểu Cách",
+              "meaning_vi": "biểu mẫu, bảng",
+              "hsk": 4
+            },
+            {
+              "text": "里",
+              "text_trad": "裏",
+              "pinyin": "lǐ",
+              "hanviet": "Lý",
+              "meaning_vi": "bên trong",
+              "hsk": 1
+            },
+            {
+              "text": "这",
+              "text_trad": "這",
+              "pinyin": "zhè",
+              "hanviet": "Giá",
+              "meaning_vi": "này",
+              "hsk": 1
+            },
+            {
+              "text": "叫",
+              "text_trad": "叫",
+              "pinyin": "jiào",
+              "hanviet": "Khiếu",
+              "meaning_vi": "gọi là, tên là",
+              "hsk": 1
+            },
+            {
+              "text": "战术",
+              "text_trad": "戰術",
+              "pinyin": "zhànshù",
+              "hanviet": "Chiến Thuật",
+              "meaning_vi": "chiến thuật",
+              "hsk": "7-9"
+            },
+            {
+              "text": "摸鱼",
+              "text_trad": "摸魚",
+              "pinyin": "mōyú",
+              "hanviet": "Mò Ngư",
+              "meaning_vi": "trốn việc, làm việc riêng trong giờ làm (lóng công sở)",
+              "hsk": 4
+            }
+          ]
+        },
+        {
+          "id": "p1_d2",
+          "character": "小铃 (Tiểu Linh)",
+          "bbox": {
+            "x": 58.14,
+            "y": 3.26,
+            "width": 33.43,
+            "height": 12.37
+          },
+          "zh": "王总正从你背后走过来。",
+          "zh_trad": "王總正從你背後走過來。",
+          "pinyin": "wáng zǒng zhèng cóng nǐ bèi hòu zǒu guò lái 。",
+          "vi": "Sếp Vương đang đi tới từ sau lưng cậu đấy.",
+          "tokens": [
+            {
+              "text": "王总",
+              "text_trad": "王總",
+              "pinyin": "Wáng zǒng",
+              "hanviet": "Vương Tổng",
+              "meaning_vi": "Sếp Vương (Tổng giám đốc Vương)",
+              "hsk": null
+            },
+            {
+              "text": "正",
+              "text_trad": "正",
+              "pinyin": "zhèng",
+              "hanviet": "Chinh",
+              "meaning_vi": "vừa, đang (trạng từ)",
+              "hsk": 2
+            },
+            {
+              "text": "从",
+              "text_trad": "從",
+              "pinyin": "cóng",
+              "hanviet": "Tòng",
+              "meaning_vi": "từ",
+              "hsk": 2
+            },
+            {
+              "text": "你",
+              "text_trad": "你",
+              "pinyin": "nǐ",
+              "hanviet": "Nễ",
+              "meaning_vi": "bạn",
+              "hsk": 1
+            },
+            {
+              "text": "背后",
+              "text_trad": "背後",
+              "pinyin": "bèihòu",
+              "hanviet": "Bối Hậu",
+              "meaning_vi": "phía sau, sau lưng",
+              "hsk": 5
+            },
+            {
+              "text": "走",
+              "text_trad": "走",
+              "pinyin": "zǒu",
+              "hanviet": "Tẩu",
+              "meaning_vi": "đi bộ, rời đi",
+              "hsk": 2
+            },
+            {
+              "text": "过来",
+              "text_trad": "過來",
+              "pinyin": "guòlái",
+              "hanviet": "Quá Lai",
+              "meaning_vi": "đến",
+              "hsk": 2
+            }
+          ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "p1_d1_w1",
+          "text": "看",
+          "text_trad": "看",
+          "pinyin": "kàn",
+          "hanviet": "Khán",
+          "meaning_vi": "nhìn, xem",
+          "hsk": 1,
+          "bbox": {
+            "x": 11.483,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 11.483,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "看！把視頻嵌在表格裏，這叫戰術摸魚！",
+          "sentence_zh_simplified": "看！把视频嵌在表格里，这叫战术摸鱼！",
+          "sentence_vi": "Nhìn này! Nhúng video vào trong bảng tính, cái này gọi là chiến thuật trốn việc!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d1_w2",
+          "text": "把",
+          "text_trad": "把",
+          "pinyin": "bǎ",
+          "hanviet": "Bả",
+          "meaning_vi": "cái, chiếc (lượng từ); cầm, nắm",
+          "hsk": 3,
+          "bbox": {
+            "x": 13.372,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 13.372,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "看！把視頻嵌在表格裏，這叫戰術摸魚！",
+          "sentence_zh_simplified": "看！把视频嵌在表格里，这叫战术摸鱼！",
+          "sentence_vi": "Nhìn này! Nhúng video vào trong bảng tính, cái này gọi là chiến thuật trốn việc!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d1_w3",
+          "text": "视频",
+          "text_trad": "視頻",
+          "pinyin": "shìpín",
+          "hanviet": "Thị Tần",
+          "meaning_vi": "video",
+          "hsk": 4,
+          "bbox": {
+            "x": 15.262,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 15.262,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "看！把視頻嵌在表格裏，這叫戰術摸魚！",
+          "sentence_zh_simplified": "看！把视频嵌在表格里，这叫战术摸鱼！",
+          "sentence_vi": "Nhìn này! Nhúng video vào trong bảng tính, cái này gọi là chiến thuật trốn việc!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d1_w4",
+          "text": "嵌",
+          "text_trad": "嵌",
+          "pinyin": "qiàn",
+          "hanviet": "Khảm",
+          "meaning_vi": "nhúng vào, khảm vào, lồng ghép vào",
+          "hsk": 5,
+          "bbox": {
+            "x": 19.041,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 19.041,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "看！把視頻嵌在表格裏，這叫戰術摸魚！",
+          "sentence_zh_simplified": "看！把视频嵌在表格里，这叫战术摸鱼！",
+          "sentence_vi": "Nhìn này! Nhúng video vào trong bảng tính, cái này gọi là chiến thuật trốn việc!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d1_w5",
+          "text": "在",
+          "text_trad": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "meaning_vi": "ở, đang",
+          "hsk": 1,
+          "bbox": {
+            "x": 20.93,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 20.93,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "看！把視頻嵌在表格裏，這叫戰術摸魚！",
+          "sentence_zh_simplified": "看！把视频嵌在表格里，这叫战术摸鱼！",
+          "sentence_vi": "Nhìn này! Nhúng video vào trong bảng tính, cái này gọi là chiến thuật trốn việc!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d1_w6",
+          "text": "表格",
+          "text_trad": "表格",
+          "pinyin": "biǎogé",
+          "hanviet": "Biểu Cách",
+          "meaning_vi": "biểu mẫu, bảng",
+          "hsk": 4,
+          "bbox": {
+            "x": 22.82,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 22.82,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "看！把視頻嵌在表格裏，這叫戰術摸魚！",
+          "sentence_zh_simplified": "看！把视频嵌在表格里，这叫战术摸鱼！",
+          "sentence_vi": "Nhìn này! Nhúng video vào trong bảng tính, cái này gọi là chiến thuật trốn việc!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d1_w7",
+          "text": "里",
+          "text_trad": "裏",
+          "pinyin": "lǐ",
+          "hanviet": "Lý",
+          "meaning_vi": "bên trong",
+          "hsk": 1,
+          "bbox": {
+            "x": 26.599,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 26.599,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "看！把視頻嵌在表格裏，這叫戰術摸魚！",
+          "sentence_zh_simplified": "看！把视频嵌在表格里，这叫战术摸鱼！",
+          "sentence_vi": "Nhìn này! Nhúng video vào trong bảng tính, cái này gọi là chiến thuật trốn việc!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d1_w8",
+          "text": "这",
+          "text_trad": "這",
+          "pinyin": "zhè",
+          "hanviet": "Giá",
+          "meaning_vi": "này",
+          "hsk": 1,
+          "bbox": {
+            "x": 28.488,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 28.488,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "看！把視頻嵌在表格裏，這叫戰術摸魚！",
+          "sentence_zh_simplified": "看！把视频嵌在表格里，这叫战术摸鱼！",
+          "sentence_vi": "Nhìn này! Nhúng video vào trong bảng tính, cái này gọi là chiến thuật trốn việc!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d1_w9",
+          "text": "叫",
+          "text_trad": "叫",
+          "pinyin": "jiào",
+          "hanviet": "Khiếu",
+          "meaning_vi": "gọi là, tên là",
+          "hsk": 1,
+          "bbox": {
+            "x": 30.378,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 30.378,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "看！把視頻嵌在表格裏，這叫戰術摸魚！",
+          "sentence_zh_simplified": "看！把视频嵌在表格里，这叫战术摸鱼！",
+          "sentence_vi": "Nhìn này! Nhúng video vào trong bảng tính, cái này gọi là chiến thuật trốn việc!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d1_w10",
+          "text": "战术",
+          "text_trad": "戰術",
+          "pinyin": "zhànshù",
+          "hanviet": "Chiến Thuật",
+          "meaning_vi": "chiến thuật",
+          "hsk": "7-9",
+          "bbox": {
+            "x": 32.267,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 32.267,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "看！把視頻嵌在表格裏，這叫戰術摸魚！",
+          "sentence_zh_simplified": "看！把视频嵌在表格里，这叫战术摸鱼！",
+          "sentence_vi": "Nhìn này! Nhúng video vào trong bảng tính, cái này gọi là chiến thuật trốn việc!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d1_w11",
+          "text": "摸鱼",
+          "text_trad": "摸魚",
+          "pinyin": "mōyú",
+          "hanviet": "Mò Ngư",
+          "meaning_vi": "trốn việc, làm việc riêng trong giờ làm (lóng công sở)",
+          "hsk": 4,
+          "bbox": {
+            "x": 36.047,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 36.047,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "看！把視頻嵌在表格裏，這叫戰術摸魚！",
+          "sentence_zh_simplified": "看！把视频嵌在表格里，这叫战术摸鱼！",
+          "sentence_vi": "Nhìn này! Nhúng video vào trong bảng tính, cái này gọi là chiến thuật trốn việc!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d2_w1",
+          "text": "王总",
+          "text_trad": "王總",
+          "pinyin": "Wáng zǒng",
+          "hanviet": "Vương Tổng",
+          "meaning_vi": "Sếp Vương (Tổng giám đốc Vương)",
+          "hsk": null,
+          "bbox": {
+            "x": 59.448,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 59.448,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "王總正從你背後走過來。",
+          "sentence_zh_simplified": "王总正从你背后走过来。",
+          "sentence_vi": "Sếp Vương đang đi tới từ sau lưng cậu đấy.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p1_d2"
+        },
+        {
+          "id": "p1_d2_w2",
+          "text": "正",
+          "text_trad": "正",
+          "pinyin": "zhèng",
+          "hanviet": "Chinh",
+          "meaning_vi": "vừa, đang (trạng từ)",
+          "hsk": 2,
+          "bbox": {
+            "x": 63.227,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 63.227,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "王總正從你背後走過來。",
+          "sentence_zh_simplified": "王总正从你背后走过来。",
+          "sentence_vi": "Sếp Vương đang đi tới từ sau lưng cậu đấy.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p1_d2"
+        },
+        {
+          "id": "p1_d2_w3",
+          "text": "从",
+          "text_trad": "從",
+          "pinyin": "cóng",
+          "hanviet": "Tòng",
+          "meaning_vi": "từ",
+          "hsk": 2,
+          "bbox": {
+            "x": 65.116,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 65.116,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "王總正從你背後走過來。",
+          "sentence_zh_simplified": "王总正从你背后走过来。",
+          "sentence_vi": "Sếp Vương đang đi tới từ sau lưng cậu đấy.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p1_d2"
+        },
+        {
+          "id": "p1_d2_w4",
+          "text": "你",
+          "text_trad": "你",
+          "pinyin": "nǐ",
+          "hanviet": "Nễ",
+          "meaning_vi": "bạn",
+          "hsk": 1,
+          "bbox": {
+            "x": 67.006,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 67.006,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "王總正從你背後走過來。",
+          "sentence_zh_simplified": "王总正从你背后走过来。",
+          "sentence_vi": "Sếp Vương đang đi tới từ sau lưng cậu đấy.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p1_d2"
+        },
+        {
+          "id": "p1_d2_w5",
+          "text": "背后",
+          "text_trad": "背後",
+          "pinyin": "bèihòu",
+          "hanviet": "Bối Hậu",
+          "meaning_vi": "phía sau, sau lưng",
+          "hsk": 5,
+          "bbox": {
+            "x": 68.895,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 68.895,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "王總正從你背後走過來。",
+          "sentence_zh_simplified": "王总正从你背后走过来。",
+          "sentence_vi": "Sếp Vương đang đi tới từ sau lưng cậu đấy.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p1_d2"
+        },
+        {
+          "id": "p1_d2_w6",
+          "text": "走",
+          "text_trad": "走",
+          "pinyin": "zǒu",
+          "hanviet": "Tẩu",
+          "meaning_vi": "đi bộ, rời đi",
+          "hsk": 2,
+          "bbox": {
+            "x": 72.674,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 72.674,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "王總正從你背後走過來。",
+          "sentence_zh_simplified": "王总正从你背后走过来。",
+          "sentence_vi": "Sếp Vương đang đi tới từ sau lưng cậu đấy.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p1_d2"
+        },
+        {
+          "id": "p1_d2_w7",
+          "text": "过来",
+          "text_trad": "過來",
+          "pinyin": "guòlái",
+          "hanviet": "Quá Lai",
+          "meaning_vi": "đến",
+          "hsk": 2,
+          "bbox": {
+            "x": 74.564,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 74.564,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "王總正從你背後走過來。",
+          "sentence_zh_simplified": "王总正从你背后走过来。",
+          "sentence_vi": "Sếp Vương đang đi tới từ sau lưng cậu đấy.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p1_d2"
+        }
+      ],
+      "ocr": {
+        "image_px": [
+          1376,
+          768
+        ]
+      }
+    },
+    {
+      "page_num": 2,
+      "image": "assets/images/readings/manga/office/office_ep06/page_02.webp",
+      "dialogues": [
+        {
+          "id": "p2_d1",
+          "character": "王经理 (Sếp Vương)",
+          "bbox": {
+            "x": 8.72,
+            "y": 3.26,
+            "width": 50.87,
+            "height": 12.37
+          },
+          "zh": "小阳，看数据这么认真，这个月绩效给你加分！",
+          "zh_trad": "小陽，看數據這麼認真，這個月績效給你加分！",
+          "pinyin": "xiǎo yáng ， kàn shù jù zhè me rèn zhēn ， zhè ge yuè jì xiào gěi nǐ jiā fēn ！",
+          "vi": "Tiểu Dương, soi số liệu chăm chú thế này, KPI tháng này anh cộng điểm cho em nhé!",
+          "tokens": [
+            {
+              "text": "小阳",
+              "text_trad": "小陽",
+              "pinyin": "Xiǎoyáng",
+              "hanviet": "Tiểu Dương",
+              "meaning_vi": "Tiểu Dương (nhân viên văn phòng trẻ)",
+              "hsk": null
+            },
+            {
+              "text": "看",
+              "text_trad": "看",
+              "pinyin": "kàn",
+              "hanviet": "Khán",
+              "meaning_vi": "nhìn, xem",
+              "hsk": 1
+            },
+            {
+              "text": "数据",
+              "text_trad": "數據",
+              "pinyin": "shùjù",
+              "hanviet": "Sổ Cư",
+              "meaning_vi": "số liệu, dữ liệu",
+              "hsk": 5
+            },
+            {
+              "text": "这么",
+              "text_trad": "這麼",
+              "pinyin": "zhème",
+              "hanviet": "Giá Ma",
+              "meaning_vi": "vì vậy (đại từ)",
+              "hsk": 2
+            },
+            {
+              "text": "认真",
+              "text_trad": "認真",
+              "pinyin": "rènzhēn",
+              "hanviet": "Nhận Chân",
+              "meaning_vi": "nghiêm túc, chăm chỉ",
+              "hsk": 3
+            },
+            {
+              "text": "这个",
+              "text_trad": "這個",
+              "pinyin": "zhège",
+              "hanviet": "Giá Cá",
+              "meaning_vi": "cái này (đại từ)",
+              "hsk": 1
+            },
+            {
+              "text": "月",
+              "text_trad": "月",
+              "pinyin": "yuè",
+              "hanviet": "Nguyệt",
+              "meaning_vi": "tháng",
+              "hsk": 1
+            },
+            {
+              "text": "绩效",
+              "text_trad": "績效",
+              "pinyin": "jìxiào",
+              "hanviet": "Tích Hiệu",
+              "meaning_vi": "hiệu suất công việc, thành tích công tác",
+              "hsk": "7-9"
+            },
+            {
+              "text": "给",
+              "text_trad": "給",
+              "pinyin": "gěi",
+              "hanviet": "Cấp",
+              "meaning_vi": "cho, tặng",
+              "hsk": 1
+            },
+            {
+              "text": "你",
+              "text_trad": "你",
+              "pinyin": "nǐ",
+              "hanviet": "Nễ",
+              "meaning_vi": "bạn",
+              "hsk": 1
+            },
+            {
+              "text": "加分",
+              "text_trad": "加分",
+              "pinyin": "jiāfēn",
+              "hanviet": "Gia Phân",
+              "meaning_vi": "cộng điểm, ghi nhận thêm",
+              "hsk": 3
+            }
+          ]
+        },
+        {
+          "id": "p2_d2",
+          "character": "小阳 (Tiểu Dương)",
+          "bbox": {
+            "x": 61.05,
+            "y": 3.26,
+            "width": 36.34,
+            "height": 12.37
+          },
+          "zh": "谢谢王总！为公司全力以赴！",
+          "zh_trad": "謝謝王總！爲公司全力以赴！",
+          "pinyin": "xiè xiè wáng zǒng ！ wèi gōng sī quán lì yǐ fù ！",
+          "vi": "Cảm ơn Sếp Vương! Hết mình vì công ty ạ!",
+          "tokens": [
+            {
+              "text": "谢谢",
+              "text_trad": "謝謝",
+              "pinyin": "xièxie",
+              "hanviet": "Tạ Tạ",
+              "meaning_vi": "cảm ơn",
+              "hsk": 1
+            },
+            {
+              "text": "王总",
+              "text_trad": "王總",
+              "pinyin": "Wáng zǒng",
+              "hanviet": "Vương Tổng",
+              "meaning_vi": "Sếp Vương (Tổng giám đốc Vương)",
+              "hsk": null
+            },
+            {
+              "text": "为",
+              "text_trad": "爲",
+              "pinyin": "wèi",
+              "hanviet": "Vi",
+              "meaning_vi": "vì, cho",
+              "hsk": 3
+            },
+            {
+              "text": "公司",
+              "text_trad": "公司",
+              "pinyin": "gōngsī",
+              "hanviet": "Công Ty",
+              "meaning_vi": "công ty",
+              "hsk": 1
+            },
+            {
+              "text": "全力以赴",
+              "text_trad": "全力以赴",
+              "pinyin": "quánlìyǐfù",
+              "hanviet": "Toàn Lực Dĩ Phó",
+              "meaning_vi": "dốc toàn lực",
+              "hsk": "7-9"
+            }
+          ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "p2_d1_w1",
+          "text": "小阳",
+          "text_trad": "小陽",
+          "pinyin": "Xiǎoyáng",
+          "hanviet": "Tiểu Dương",
+          "meaning_vi": "Tiểu Dương (nhân viên văn phòng trẻ)",
+          "hsk": null,
+          "bbox": {
+            "x": 10.029,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 10.029,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "小陽，看數據這麼認真，這個月績效給你加分！",
+          "sentence_zh_simplified": "小阳，看数据这么认真，这个月绩效给你加分！",
+          "sentence_vi": "Tiểu Dương, soi số liệu chăm chú thế này, KPI tháng này anh cộng điểm cho em nhé!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w2",
+          "text": "看",
+          "text_trad": "看",
+          "pinyin": "kàn",
+          "hanviet": "Khán",
+          "meaning_vi": "nhìn, xem",
+          "hsk": 1,
+          "bbox": {
+            "x": 13.808,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 13.808,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "小陽，看數據這麼認真，這個月績效給你加分！",
+          "sentence_zh_simplified": "小阳，看数据这么认真，这个月绩效给你加分！",
+          "sentence_vi": "Tiểu Dương, soi số liệu chăm chú thế này, KPI tháng này anh cộng điểm cho em nhé!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w3",
+          "text": "数据",
+          "text_trad": "數據",
+          "pinyin": "shùjù",
+          "hanviet": "Sổ Cư",
+          "meaning_vi": "số liệu, dữ liệu",
+          "hsk": 5,
+          "bbox": {
+            "x": 15.698,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 15.698,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "小陽，看數據這麼認真，這個月績效給你加分！",
+          "sentence_zh_simplified": "小阳，看数据这么认真，这个月绩效给你加分！",
+          "sentence_vi": "Tiểu Dương, soi số liệu chăm chú thế này, KPI tháng này anh cộng điểm cho em nhé!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w4",
+          "text": "这么",
+          "text_trad": "這麼",
+          "pinyin": "zhème",
+          "hanviet": "Giá Ma",
+          "meaning_vi": "vì vậy (đại từ)",
+          "hsk": 2,
+          "bbox": {
+            "x": 19.477,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 19.477,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "小陽，看數據這麼認真，這個月績效給你加分！",
+          "sentence_zh_simplified": "小阳，看数据这么认真，这个月绩效给你加分！",
+          "sentence_vi": "Tiểu Dương, soi số liệu chăm chú thế này, KPI tháng này anh cộng điểm cho em nhé!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w5",
+          "text": "认真",
+          "text_trad": "認真",
+          "pinyin": "rènzhēn",
+          "hanviet": "Nhận Chân",
+          "meaning_vi": "nghiêm túc, chăm chỉ",
+          "hsk": 3,
+          "bbox": {
+            "x": 23.256,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 23.256,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "小陽，看數據這麼認真，這個月績效給你加分！",
+          "sentence_zh_simplified": "小阳，看数据这么认真，这个月绩效给你加分！",
+          "sentence_vi": "Tiểu Dương, soi số liệu chăm chú thế này, KPI tháng này anh cộng điểm cho em nhé!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w6",
+          "text": "这个",
+          "text_trad": "這個",
+          "pinyin": "zhège",
+          "hanviet": "Giá Cá",
+          "meaning_vi": "cái này (đại từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 27.035,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 27.035,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "小陽，看數據這麼認真，這個月績效給你加分！",
+          "sentence_zh_simplified": "小阳，看数据这么认真，这个月绩效给你加分！",
+          "sentence_vi": "Tiểu Dương, soi số liệu chăm chú thế này, KPI tháng này anh cộng điểm cho em nhé!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w7",
+          "text": "月",
+          "text_trad": "月",
+          "pinyin": "yuè",
+          "hanviet": "Nguyệt",
+          "meaning_vi": "tháng",
+          "hsk": 1,
+          "bbox": {
+            "x": 30.814,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 30.814,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "小陽，看數據這麼認真，這個月績效給你加分！",
+          "sentence_zh_simplified": "小阳，看数据这么认真，这个月绩效给你加分！",
+          "sentence_vi": "Tiểu Dương, soi số liệu chăm chú thế này, KPI tháng này anh cộng điểm cho em nhé!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w8",
+          "text": "绩效",
+          "text_trad": "績效",
+          "pinyin": "jìxiào",
+          "hanviet": "Tích Hiệu",
+          "meaning_vi": "hiệu suất công việc, thành tích công tác",
+          "hsk": "7-9",
+          "bbox": {
+            "x": 32.703,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 32.703,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "小陽，看數據這麼認真，這個月績效給你加分！",
+          "sentence_zh_simplified": "小阳，看数据这么认真，这个月绩效给你加分！",
+          "sentence_vi": "Tiểu Dương, soi số liệu chăm chú thế này, KPI tháng này anh cộng điểm cho em nhé!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w9",
+          "text": "给",
+          "text_trad": "給",
+          "pinyin": "gěi",
+          "hanviet": "Cấp",
+          "meaning_vi": "cho, tặng",
+          "hsk": 1,
+          "bbox": {
+            "x": 36.483,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 36.483,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "小陽，看數據這麼認真，這個月績效給你加分！",
+          "sentence_zh_simplified": "小阳，看数据这么认真，这个月绩效给你加分！",
+          "sentence_vi": "Tiểu Dương, soi số liệu chăm chú thế này, KPI tháng này anh cộng điểm cho em nhé!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w10",
+          "text": "你",
+          "text_trad": "你",
+          "pinyin": "nǐ",
+          "hanviet": "Nễ",
+          "meaning_vi": "bạn",
+          "hsk": 1,
+          "bbox": {
+            "x": 38.372,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 38.372,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "小陽，看數據這麼認真，這個月績效給你加分！",
+          "sentence_zh_simplified": "小阳，看数据这么认真，这个月绩效给你加分！",
+          "sentence_vi": "Tiểu Dương, soi số liệu chăm chú thế này, KPI tháng này anh cộng điểm cho em nhé!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w11",
+          "text": "加分",
+          "text_trad": "加分",
+          "pinyin": "jiāfēn",
+          "hanviet": "Gia Phân",
+          "meaning_vi": "cộng điểm, ghi nhận thêm",
+          "hsk": 3,
+          "bbox": {
+            "x": 40.262,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 40.262,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "小陽，看數據這麼認真，這個月績效給你加分！",
+          "sentence_zh_simplified": "小阳，看数据这么认真，这个月绩效给你加分！",
+          "sentence_vi": "Tiểu Dương, soi số liệu chăm chú thế này, KPI tháng này anh cộng điểm cho em nhé!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d2_w1",
+          "text": "谢谢",
+          "text_trad": "謝謝",
+          "pinyin": "xièxie",
+          "hanviet": "Tạ Tạ",
+          "meaning_vi": "cảm ơn",
+          "hsk": 1,
+          "bbox": {
+            "x": 62.355,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 62.355,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "謝謝王總！爲公司全力以赴！",
+          "sentence_zh_simplified": "谢谢王总！为公司全力以赴！",
+          "sentence_vi": "Cảm ơn Sếp Vương! Hết mình vì công ty ạ!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p2_d2"
+        },
+        {
+          "id": "p2_d2_w2",
+          "text": "王总",
+          "text_trad": "王總",
+          "pinyin": "Wáng zǒng",
+          "hanviet": "Vương Tổng",
+          "meaning_vi": "Sếp Vương (Tổng giám đốc Vương)",
+          "hsk": null,
+          "bbox": {
+            "x": 66.134,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 66.134,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "謝謝王總！爲公司全力以赴！",
+          "sentence_zh_simplified": "谢谢王总！为公司全力以赴！",
+          "sentence_vi": "Cảm ơn Sếp Vương! Hết mình vì công ty ạ!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p2_d2"
+        },
+        {
+          "id": "p2_d2_w3",
+          "text": "为",
+          "text_trad": "爲",
+          "pinyin": "wèi",
+          "hanviet": "Vi",
+          "meaning_vi": "vì, cho",
+          "hsk": 3,
+          "bbox": {
+            "x": 69.913,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 69.913,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "謝謝王總！爲公司全力以赴！",
+          "sentence_zh_simplified": "谢谢王总！为公司全力以赴！",
+          "sentence_vi": "Cảm ơn Sếp Vương! Hết mình vì công ty ạ!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p2_d2"
+        },
+        {
+          "id": "p2_d2_w4",
+          "text": "公司",
+          "text_trad": "公司",
+          "pinyin": "gōngsī",
+          "hanviet": "Công Ty",
+          "meaning_vi": "công ty",
+          "hsk": 1,
+          "bbox": {
+            "x": 71.802,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 71.802,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "謝謝王總！爲公司全力以赴！",
+          "sentence_zh_simplified": "谢谢王总！为公司全力以赴！",
+          "sentence_vi": "Cảm ơn Sếp Vương! Hết mình vì công ty ạ!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p2_d2"
+        },
+        {
+          "id": "p2_d2_w5",
+          "text": "全力以赴",
+          "text_trad": "全力以赴",
+          "pinyin": "quánlìyǐfù",
+          "hanviet": "Toàn Lực Dĩ Phó",
+          "meaning_vi": "dốc toàn lực",
+          "hsk": "7-9",
+          "bbox": {
+            "x": 75.581,
+            "y": 7.682,
+            "width": 7.558,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 75.581,
+              "y": 7.682,
+              "width": 7.558,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "謝謝王總！爲公司全力以赴！",
+          "sentence_zh_simplified": "谢谢王总！为公司全力以赴！",
+          "sentence_vi": "Cảm ơn Sếp Vương! Hết mình vì công ty ạ!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p2_d2"
+        }
+      ],
+      "ocr": {
+        "image_px": [
+          1376,
+          768
+        ]
+      }
+    },
+    {
+      "page_num": 3,
+      "image": "assets/images/readings/manga/office/office_ep06/page_03.webp",
+      "dialogues": [
+        {
+          "id": "p3_d1",
+          "character": "小阳 (Tiểu Dương)",
+          "bbox": {
+            "x": 10.17,
+            "y": 3.26,
+            "width": 46.51,
+            "height": 12.37
+          },
+          "zh": "怎么样？我说我是摸鱼界的天花板吧？",
+          "zh_trad": "怎麼樣？我說我是摸魚界的天花板吧？",
+          "pinyin": "zěn me yàng ？ wǒ shuō wǒ shì mō yú jiè de tiān huā bǎn ba ？",
+          "vi": "Thế nào? Đã bảo tôi là trần nhà của giới trốn việc mà?",
+          "tokens": [
+            {
+              "text": "怎么样",
+              "text_trad": "怎麼樣",
+              "pinyin": "zěnmeyàng",
+              "hanviet": "Chẩm Ma Dạng",
+              "meaning_vi": "như thế nào",
+              "hsk": 1
+            },
+            {
+              "text": "我",
+              "text_trad": "我",
+              "pinyin": "wǒ",
+              "hanviet": "Ngã",
+              "meaning_vi": "tôi",
+              "hsk": 1
+            },
+            {
+              "text": "说",
+              "text_trad": "說",
+              "pinyin": "shuō",
+              "hanviet": "Thuyết",
+              "meaning_vi": "nói",
+              "hsk": 1
+            },
+            {
+              "text": "我",
+              "text_trad": "我",
+              "pinyin": "wǒ",
+              "hanviet": "Ngã",
+              "meaning_vi": "tôi",
+              "hsk": 1
+            },
+            {
+              "text": "是",
+              "text_trad": "是",
+              "pinyin": "shì",
+              "hanviet": "Thị",
+              "meaning_vi": "là",
+              "hsk": 1
+            },
+            {
+              "text": "摸鱼",
+              "text_trad": "摸魚",
+              "pinyin": "mōyú",
+              "hanviet": "Mò Ngư",
+              "meaning_vi": "trốn việc, làm việc riêng trong giờ làm (lóng công sở)",
+              "hsk": 4
+            },
+            {
+              "text": "界",
+              "text_trad": "界",
+              "pinyin": "jiè",
+              "hanviet": "Giới",
+              "meaning_vi": "giới, ranh giới, phạm vi",
+              "hsk": "7-9"
+            },
+            {
+              "text": "的",
+              "text_trad": "的",
+              "pinyin": "de",
+              "hanviet": "Đích",
+              "meaning_vi": "của (trợ từ)",
+              "hsk": 1
+            },
+            {
+              "text": "天花板",
+              "text_trad": "天花板",
+              "pinyin": "tiānhuābǎn",
+              "hanviet": "Thiên Hoa Bản",
+              "meaning_vi": "trần",
+              "hsk": "7-9"
+            },
+            {
+              "text": "吧",
+              "text_trad": "吧",
+              "pinyin": "ba",
+              "hanviet": "Ba",
+              "meaning_vi": "nhé (trợ từ)",
+              "hsk": 1
+            }
+          ]
+        },
+        {
+          "id": "p3_d2",
+          "character": "小铃 (Tiểu Linh)",
+          "bbox": {
+            "x": 58.14,
+            "y": 3.26,
+            "width": 29.07,
+            "height": 12.37
+          },
+          "zh": "你先看看老周再说。",
+          "zh_trad": "你先看看老周再說。",
+          "pinyin": "nǐ xiān kàn kàn lǎo zhōu zài shuō 。",
+          "vi": "Cậu cứ nhìn Lão Châu đằng kia trước đã.",
+          "tokens": [
+            {
+              "text": "你",
+              "text_trad": "你",
+              "pinyin": "nǐ",
+              "hanviet": "Nễ",
+              "meaning_vi": "bạn",
+              "hsk": 1
+            },
+            {
+              "text": "先",
+              "text_trad": "先",
+              "pinyin": "xiān",
+              "hanviet": "Tiên",
+              "meaning_vi": "trước",
+              "hsk": 3
+            },
+            {
+              "text": "看",
+              "text_trad": "看",
+              "pinyin": "kàn",
+              "hanviet": "Khán",
+              "meaning_vi": "nhìn, xem",
+              "hsk": 1
+            },
+            {
+              "text": "看",
+              "text_trad": "看",
+              "pinyin": "kàn",
+              "hanviet": "Khán",
+              "meaning_vi": "nhìn, xem",
+              "hsk": 1
+            },
+            {
+              "text": "老周",
+              "text_trad": "老周",
+              "pinyin": "Lǎo Zhōu",
+              "hanviet": "Lão Chu",
+              "meaning_vi": "Lão Châu (lập trình viên thâm niên)",
+              "hsk": null
+            },
+            {
+              "text": "再说",
+              "text_trad": "再說",
+              "pinyin": "zàishuō",
+              "hanviet": "Tái Thuyết",
+              "meaning_vi": "để sau hãy tính; hơn nữa",
+              "hsk": 4
+            }
+          ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "p3_d1_w1",
+          "text": "怎么样",
+          "text_trad": "怎麼樣",
+          "pinyin": "zěnmeyàng",
+          "hanviet": "Chẩm Ma Dạng",
+          "meaning_vi": "như thế nào",
+          "hsk": 1,
+          "bbox": {
+            "x": 11.483,
+            "y": 7.682,
+            "width": 5.669,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 11.483,
+              "y": 7.682,
+              "width": 5.669,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "怎麼樣？我說我是摸魚界的天花板吧？",
+          "sentence_zh_simplified": "怎么样？我说我是摸鱼界的天花板吧？",
+          "sentence_vi": "Thế nào? Đã bảo tôi là trần nhà của giới trốn việc mà?",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w2",
+          "text": "我",
+          "text_trad": "我",
+          "pinyin": "wǒ",
+          "hanviet": "Ngã",
+          "meaning_vi": "tôi",
+          "hsk": 1,
+          "bbox": {
+            "x": 17.151,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 17.151,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "怎麼樣？我說我是摸魚界的天花板吧？",
+          "sentence_zh_simplified": "怎么样？我说我是摸鱼界的天花板吧？",
+          "sentence_vi": "Thế nào? Đã bảo tôi là trần nhà của giới trốn việc mà?",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w3",
+          "text": "说",
+          "text_trad": "說",
+          "pinyin": "shuō",
+          "hanviet": "Thuyết",
+          "meaning_vi": "nói",
+          "hsk": 1,
+          "bbox": {
+            "x": 19.041,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 19.041,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "怎麼樣？我說我是摸魚界的天花板吧？",
+          "sentence_zh_simplified": "怎么样？我说我是摸鱼界的天花板吧？",
+          "sentence_vi": "Thế nào? Đã bảo tôi là trần nhà của giới trốn việc mà?",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w4",
+          "text": "我",
+          "text_trad": "我",
+          "pinyin": "wǒ",
+          "hanviet": "Ngã",
+          "meaning_vi": "tôi",
+          "hsk": 1,
+          "bbox": {
+            "x": 20.93,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 20.93,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "怎麼樣？我說我是摸魚界的天花板吧？",
+          "sentence_zh_simplified": "怎么样？我说我是摸鱼界的天花板吧？",
+          "sentence_vi": "Thế nào? Đã bảo tôi là trần nhà của giới trốn việc mà?",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w5",
+          "text": "是",
+          "text_trad": "是",
+          "pinyin": "shì",
+          "hanviet": "Thị",
+          "meaning_vi": "là",
+          "hsk": 1,
+          "bbox": {
+            "x": 22.82,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 22.82,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "怎麼樣？我說我是摸魚界的天花板吧？",
+          "sentence_zh_simplified": "怎么样？我说我是摸鱼界的天花板吧？",
+          "sentence_vi": "Thế nào? Đã bảo tôi là trần nhà của giới trốn việc mà?",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w6",
+          "text": "摸鱼",
+          "text_trad": "摸魚",
+          "pinyin": "mōyú",
+          "hanviet": "Mò Ngư",
+          "meaning_vi": "trốn việc, làm việc riêng trong giờ làm (lóng công sở)",
+          "hsk": 4,
+          "bbox": {
+            "x": 24.709,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 24.709,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "怎麼樣？我說我是摸魚界的天花板吧？",
+          "sentence_zh_simplified": "怎么样？我说我是摸鱼界的天花板吧？",
+          "sentence_vi": "Thế nào? Đã bảo tôi là trần nhà của giới trốn việc mà?",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w7",
+          "text": "界",
+          "text_trad": "界",
+          "pinyin": "jiè",
+          "hanviet": "Giới",
+          "meaning_vi": "giới, ranh giới, phạm vi",
+          "hsk": "7-9",
+          "bbox": {
+            "x": 28.488,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 28.488,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "怎麼樣？我說我是摸魚界的天花板吧？",
+          "sentence_zh_simplified": "怎么样？我说我是摸鱼界的天花板吧？",
+          "sentence_vi": "Thế nào? Đã bảo tôi là trần nhà của giới trốn việc mà?",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w8",
+          "text": "的",
+          "text_trad": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "meaning_vi": "của (trợ từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 30.378,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 30.378,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "怎麼樣？我說我是摸魚界的天花板吧？",
+          "sentence_zh_simplified": "怎么样？我说我是摸鱼界的天花板吧？",
+          "sentence_vi": "Thế nào? Đã bảo tôi là trần nhà của giới trốn việc mà?",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w9",
+          "text": "天花板",
+          "text_trad": "天花板",
+          "pinyin": "tiānhuābǎn",
+          "hanviet": "Thiên Hoa Bản",
+          "meaning_vi": "trần",
+          "hsk": "7-9",
+          "bbox": {
+            "x": 32.267,
+            "y": 7.682,
+            "width": 5.669,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 32.267,
+              "y": 7.682,
+              "width": 5.669,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "怎麼樣？我說我是摸魚界的天花板吧？",
+          "sentence_zh_simplified": "怎么样？我说我是摸鱼界的天花板吧？",
+          "sentence_vi": "Thế nào? Đã bảo tôi là trần nhà của giới trốn việc mà?",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w10",
+          "text": "吧",
+          "text_trad": "吧",
+          "pinyin": "ba",
+          "hanviet": "Ba",
+          "meaning_vi": "nhé (trợ từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 37.936,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 37.936,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "怎麼樣？我說我是摸魚界的天花板吧？",
+          "sentence_zh_simplified": "怎么样？我说我是摸鱼界的天花板吧？",
+          "sentence_vi": "Thế nào? Đã bảo tôi là trần nhà của giới trốn việc mà?",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d2_w1",
+          "text": "你",
+          "text_trad": "你",
+          "pinyin": "nǐ",
+          "hanviet": "Nễ",
+          "meaning_vi": "bạn",
+          "hsk": 1,
+          "bbox": {
+            "x": 59.448,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 59.448,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "你先看看老周再說。",
+          "sentence_zh_simplified": "你先看看老周再说。",
+          "sentence_vi": "Cậu cứ nhìn Lão Châu đằng kia trước đã.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p3_d2"
+        },
+        {
+          "id": "p3_d2_w2",
+          "text": "先",
+          "text_trad": "先",
+          "pinyin": "xiān",
+          "hanviet": "Tiên",
+          "meaning_vi": "trước",
+          "hsk": 3,
+          "bbox": {
+            "x": 61.337,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 61.337,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "你先看看老周再說。",
+          "sentence_zh_simplified": "你先看看老周再说。",
+          "sentence_vi": "Cậu cứ nhìn Lão Châu đằng kia trước đã.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p3_d2"
+        },
+        {
+          "id": "p3_d2_w3",
+          "text": "看",
+          "text_trad": "看",
+          "pinyin": "kàn",
+          "hanviet": "Khán",
+          "meaning_vi": "nhìn, xem",
+          "hsk": 1,
+          "bbox": {
+            "x": 63.227,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 63.227,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "你先看看老周再說。",
+          "sentence_zh_simplified": "你先看看老周再说。",
+          "sentence_vi": "Cậu cứ nhìn Lão Châu đằng kia trước đã.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p3_d2"
+        },
+        {
+          "id": "p3_d2_w4",
+          "text": "看",
+          "text_trad": "看",
+          "pinyin": "kàn",
+          "hanviet": "Khán",
+          "meaning_vi": "nhìn, xem",
+          "hsk": 1,
+          "bbox": {
+            "x": 65.116,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 65.116,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "你先看看老周再說。",
+          "sentence_zh_simplified": "你先看看老周再说。",
+          "sentence_vi": "Cậu cứ nhìn Lão Châu đằng kia trước đã.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p3_d2"
+        },
+        {
+          "id": "p3_d2_w5",
+          "text": "老周",
+          "text_trad": "老周",
+          "pinyin": "Lǎo Zhōu",
+          "hanviet": "Lão Chu",
+          "meaning_vi": "Lão Châu (lập trình viên thâm niên)",
+          "hsk": null,
+          "bbox": {
+            "x": 67.006,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 67.006,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "你先看看老周再說。",
+          "sentence_zh_simplified": "你先看看老周再说。",
+          "sentence_vi": "Cậu cứ nhìn Lão Châu đằng kia trước đã.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p3_d2"
+        },
+        {
+          "id": "p3_d2_w6",
+          "text": "再说",
+          "text_trad": "再說",
+          "pinyin": "zàishuō",
+          "hanviet": "Tái Thuyết",
+          "meaning_vi": "để sau hãy tính; hơn nữa",
+          "hsk": 4,
+          "bbox": {
+            "x": 70.785,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 70.785,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "你先看看老周再說。",
+          "sentence_zh_simplified": "你先看看老周再说。",
+          "sentence_vi": "Cậu cứ nhìn Lão Châu đằng kia trước đã.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p3_d2"
+        }
+      ],
+      "ocr": {
+        "image_px": [
+          1376,
+          768
+        ]
+      }
+    },
+    {
+      "page_num": 4,
+      "image": "assets/images/readings/manga/office/office_ep06/page_04.webp",
+      "dialogues": [
+        {
+          "id": "p4_d1",
+          "character": "小阳 (Tiểu Dương)",
+          "bbox": {
+            "x": 66.86,
+            "y": 3.91,
+            "width": 30.52,
+            "height": 12.37
+          },
+          "zh": "他……戴着墨镜在睡觉？！",
+          "zh_trad": "他……戴着墨鏡在睡覺？！",
+          "pinyin": "tā …… dài zhuó mò jìng zài shuì jiào ？！",
+          "vi": "Ổng... đang đeo kính đen ngủ đấy à?!",
+          "tokens": [
+            {
+              "text": "他",
+              "text_trad": "他",
+              "pinyin": "tā",
+              "hanviet": "Tha",
+              "meaning_vi": "anh ấy, nó",
+              "hsk": 1
+            },
+            {
+              "text": "戴",
+              "text_trad": "戴",
+              "pinyin": "dài",
+              "hanviet": "Đội",
+              "meaning_vi": "đội, đeo",
+              "hsk": 4
+            },
+            {
+              "text": "着",
+              "text_trad": "着",
+              "pinyin": "zhe",
+              "hanviet": "Trước",
+              "meaning_vi": "đang (trợ từ)",
+              "hsk": 2
+            },
+            {
+              "text": "墨镜",
+              "text_trad": "墨鏡",
+              "pinyin": "mòjìng",
+              "hanviet": "Mặc Kính",
+              "meaning_vi": "kính râm, kính đen",
+              "hsk": 3
+            },
+            {
+              "text": "在",
+              "text_trad": "在",
+              "pinyin": "zài",
+              "hanviet": "Tại",
+              "meaning_vi": "ở, đang",
+              "hsk": 1
+            },
+            {
+              "text": "睡觉",
+              "text_trad": "睡覺",
+              "pinyin": "shuìjiào",
+              "hanviet": "Thụy Giác",
+              "meaning_vi": "ngủ",
+              "hsk": 1
+            }
+          ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "p4_d1_w1",
+          "text": "他",
+          "text_trad": "他",
+          "pinyin": "tā",
+          "hanviet": "Tha",
+          "meaning_vi": "anh ấy, nó",
+          "hsk": 1,
+          "bbox": {
+            "x": 68.169,
+            "y": 8.333,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 68.169,
+              "y": 8.333,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "他……戴着墨鏡在睡覺？！",
+          "sentence_zh_simplified": "他……戴着墨镜在睡觉？！",
+          "sentence_vi": "Ổng... đang đeo kính đen ngủ đấy à?!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d1_w2",
+          "text": "戴",
+          "text_trad": "戴",
+          "pinyin": "dài",
+          "hanviet": "Đội",
+          "meaning_vi": "đội, đeo",
+          "hsk": 4,
+          "bbox": {
+            "x": 70.058,
+            "y": 8.333,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 70.058,
+              "y": 8.333,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "他……戴着墨鏡在睡覺？！",
+          "sentence_zh_simplified": "他……戴着墨镜在睡觉？！",
+          "sentence_vi": "Ổng... đang đeo kính đen ngủ đấy à?!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d1_w3",
+          "text": "着",
+          "text_trad": "着",
+          "pinyin": "zhe",
+          "hanviet": "Trước",
+          "meaning_vi": "đang (trợ từ)",
+          "hsk": 2,
+          "bbox": {
+            "x": 71.948,
+            "y": 8.333,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 71.948,
+              "y": 8.333,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "他……戴着墨鏡在睡覺？！",
+          "sentence_zh_simplified": "他……戴着墨镜在睡觉？！",
+          "sentence_vi": "Ổng... đang đeo kính đen ngủ đấy à?!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d1_w4",
+          "text": "墨镜",
+          "text_trad": "墨鏡",
+          "pinyin": "mòjìng",
+          "hanviet": "Mặc Kính",
+          "meaning_vi": "kính râm, kính đen",
+          "hsk": 3,
+          "bbox": {
+            "x": 73.837,
+            "y": 8.333,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 73.837,
+              "y": 8.333,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "他……戴着墨鏡在睡覺？！",
+          "sentence_zh_simplified": "他……戴着墨镜在睡觉？！",
+          "sentence_vi": "Ổng... đang đeo kính đen ngủ đấy à?!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d1_w5",
+          "text": "在",
+          "text_trad": "在",
+          "pinyin": "zài",
+          "hanviet": "Tại",
+          "meaning_vi": "ở, đang",
+          "hsk": 1,
+          "bbox": {
+            "x": 77.616,
+            "y": 8.333,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 77.616,
+              "y": 8.333,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "他……戴着墨鏡在睡覺？！",
+          "sentence_zh_simplified": "他……戴着墨镜在睡觉？！",
+          "sentence_vi": "Ổng... đang đeo kính đen ngủ đấy à?!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d1_w6",
+          "text": "睡觉",
+          "text_trad": "睡覺",
+          "pinyin": "shuìjiào",
+          "hanviet": "Thụy Giác",
+          "meaning_vi": "ngủ",
+          "hsk": 1,
+          "bbox": {
+            "x": 79.506,
+            "y": 8.333,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 79.506,
+              "y": 8.333,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "他……戴着墨鏡在睡覺？！",
+          "sentence_zh_simplified": "他……戴着墨镜在睡觉？！",
+          "sentence_vi": "Ổng... đang đeo kính đen ngủ đấy à?!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p4_d1"
+        }
+      ],
+      "ocr": {
+        "image_px": [
+          1376,
+          768
+        ]
+      }
+    },
+    {
+      "page_num": 5,
+      "image": "assets/images/readings/manga/office/office_ep06/page_05.webp",
+      "dialogues": [
+        {
+          "id": "p5_d1",
+          "character": "小铃 (Tiểu Linh)",
+          "bbox": {
+            "x": 45.06,
+            "y": 2.6,
+            "width": 52.33,
+            "height": 12.37
+          },
+          "zh": "老周工位上的假人替身，上周刚拿了优秀员工奖。",
+          "zh_trad": "老周工位上的假人替身，上週剛拿了優秀員工獎。",
+          "pinyin": "lǎo zhōu gōng wèi shàng de jiǎ rén tì shēn ， shàng zhōu gāng ná le yōu xiù yuán gōng jiǎng 。",
+          "vi": "Hình nộm thế thân trên bàn của Lão Châu tuần trước vừa ẵm giải Nhân Viên Xuất Sắc đấy.",
+          "tokens": [
+            {
+              "text": "老周",
+              "text_trad": "老周",
+              "pinyin": "Lǎo Zhōu",
+              "hanviet": "Lão Chu",
+              "meaning_vi": "Lão Châu (lập trình viên thâm niên)",
+              "hsk": null
+            },
+            {
+              "text": "工位",
+              "text_trad": "工位",
+              "pinyin": "gōngwèi",
+              "hanviet": "Công Vị",
+              "meaning_vi": "chỗ ngồi làm việc, bàn làm việc (văn phòng)",
+              "hsk": 3
+            },
+            {
+              "text": "上",
+              "text_trad": "上",
+              "pinyin": "shàng",
+              "hanviet": "Thướng",
+              "meaning_vi": "trên",
+              "hsk": 1
+            },
+            {
+              "text": "的",
+              "text_trad": "的",
+              "pinyin": "de",
+              "hanviet": "Đích",
+              "meaning_vi": "của (trợ từ)",
+              "hsk": 1
+            },
+            {
+              "text": "假人",
+              "text_trad": "假人",
+              "pinyin": "jiǎrén",
+              "hanviet": "Giả Nhân",
+              "meaning_vi": "hình nộm, ma-nơ-canh",
+              "hsk": 4
+            },
+            {
+              "text": "替身",
+              "text_trad": "替身",
+              "pinyin": "tìshēn",
+              "hanviet": "Thế Thân",
+              "meaning_vi": "thế thân, người đóng thế",
+              "hsk": 4
+            },
+            {
+              "text": "上",
+              "text_trad": "上",
+              "pinyin": "shàng",
+              "hanviet": "Thướng",
+              "meaning_vi": "trên",
+              "hsk": 1
+            },
+            {
+              "text": "周",
+              "text_trad": "周",
+              "pinyin": "zhōu",
+              "hanviet": "Chu",
+              "meaning_vi": "tuần, tuần lễ",
+              "hsk": 2
+            },
+            {
+              "text": "刚",
+              "text_trad": "剛",
+              "pinyin": "gāng",
+              "hanviet": "Cương",
+              "meaning_vi": "vừa mới",
+              "hsk": 3
+            },
+            {
+              "text": "拿",
+              "text_trad": "拿",
+              "pinyin": "ná",
+              "hanviet": "Nã",
+              "meaning_vi": "cầm, lấy",
+              "hsk": 2
+            },
+            {
+              "text": "了",
+              "text_trad": "了",
+              "pinyin": "le",
+              "hanviet": "Liễu",
+              "meaning_vi": "rồi (trợ từ)",
+              "hsk": 1
+            },
+            {
+              "text": "优秀",
+              "text_trad": "優秀",
+              "pinyin": "yōuxiù",
+              "hanviet": "Ưu Tú",
+              "meaning_vi": "ưu tú, xuất sắc",
+              "hsk": 4
+            },
+            {
+              "text": "员工",
+              "text_trad": "員工",
+              "pinyin": "yuángōng",
+              "hanviet": "Viên Công",
+              "meaning_vi": "nhân viên",
+              "hsk": 5
+            },
+            {
+              "text": "奖",
+              "text_trad": "獎",
+              "pinyin": "jiǎng",
+              "hanviet": "Thưởng",
+              "meaning_vi": "giải thưởng; thưởng",
+              "hsk": 4
+            }
+          ]
+        },
+        {
+          "id": "p5_d2",
+          "character": "小阳 (Tiểu Dương)",
+          "bbox": {
+            "x": 32.7,
+            "y": 72.92,
+            "width": 23.98,
+            "height": 12.37
+          },
+          "zh": "师父……请受徒儿一拜！",
+          "zh_trad": "師父……請受徒兒一拜！",
+          "pinyin": "shī fù …… qǐng shòu tú ér yī bài ！",
+          "vi": "Sư phụ... xin nhận một lạy của đồ nhi!",
+          "tokens": [
+            {
+              "text": "师父",
+              "text_trad": "師父",
+              "pinyin": "shīfu",
+              "hanviet": "Sư Phụ",
+              "meaning_vi": "sư phụ, thầy (dạy nghề/võ)",
+              "hsk": 6
+            },
+            {
+              "text": "请",
+              "text_trad": "請",
+              "pinyin": "qǐng",
+              "hanviet": "Thỉnh",
+              "meaning_vi": "xin mời",
+              "hsk": 1
+            },
+            {
+              "text": "受",
+              "text_trad": "受",
+              "pinyin": "shòu",
+              "hanviet": "Thọ",
+              "meaning_vi": "chịu, bị; nhận",
+              "hsk": 3
+            },
+            {
+              "text": "徒儿",
+              "text_trad": "徒兒",
+              "pinyin": "tú'ér",
+              "hanviet": "Đồ Nhi",
+              "meaning_vi": "đồ nhi, học trò",
+              "hsk": 4
+            },
+            {
+              "text": "一拜",
+              "text_trad": "一拜",
+              "pinyin": "yībài",
+              "hanviet": "Nhất Bái",
+              "meaning_vi": "một lạy, bái lạy",
+              "hsk": 4
+            }
+          ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "p5_d1_w1",
+          "text": "老周",
+          "text_trad": "老周",
+          "pinyin": "Lǎo Zhōu",
+          "hanviet": "Lão Chu",
+          "meaning_vi": "Lão Châu (lập trình viên thâm niên)",
+          "hsk": null,
+          "bbox": {
+            "x": 46.366,
+            "y": 7.031,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 46.366,
+              "y": 7.031,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "老周工位上的假人替身，上週剛拿了優秀員工獎。",
+          "sentence_zh_simplified": "老周工位上的假人替身，上周刚拿了优秀员工奖。",
+          "sentence_vi": "Hình nộm thế thân trên bàn của Lão Châu tuần trước vừa ẵm giải Nhân Viên Xuất Sắc đấy.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w2",
+          "text": "工位",
+          "text_trad": "工位",
+          "pinyin": "gōngwèi",
+          "hanviet": "Công Vị",
+          "meaning_vi": "chỗ ngồi làm việc, bàn làm việc (văn phòng)",
+          "hsk": 3,
+          "bbox": {
+            "x": 50.145,
+            "y": 7.031,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 50.145,
+              "y": 7.031,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "老周工位上的假人替身，上週剛拿了優秀員工獎。",
+          "sentence_zh_simplified": "老周工位上的假人替身，上周刚拿了优秀员工奖。",
+          "sentence_vi": "Hình nộm thế thân trên bàn của Lão Châu tuần trước vừa ẵm giải Nhân Viên Xuất Sắc đấy.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w3",
+          "text": "上",
+          "text_trad": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "meaning_vi": "trên",
+          "hsk": 1,
+          "bbox": {
+            "x": 53.924,
+            "y": 7.031,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 53.924,
+              "y": 7.031,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "老周工位上的假人替身，上週剛拿了優秀員工獎。",
+          "sentence_zh_simplified": "老周工位上的假人替身，上周刚拿了优秀员工奖。",
+          "sentence_vi": "Hình nộm thế thân trên bàn của Lão Châu tuần trước vừa ẵm giải Nhân Viên Xuất Sắc đấy.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w4",
+          "text": "的",
+          "text_trad": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "meaning_vi": "của (trợ từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 55.814,
+            "y": 7.031,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 55.814,
+              "y": 7.031,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "老周工位上的假人替身，上週剛拿了優秀員工獎。",
+          "sentence_zh_simplified": "老周工位上的假人替身，上周刚拿了优秀员工奖。",
+          "sentence_vi": "Hình nộm thế thân trên bàn của Lão Châu tuần trước vừa ẵm giải Nhân Viên Xuất Sắc đấy.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w5",
+          "text": "假人",
+          "text_trad": "假人",
+          "pinyin": "jiǎrén",
+          "hanviet": "Giả Nhân",
+          "meaning_vi": "hình nộm, ma-nơ-canh",
+          "hsk": 4,
+          "bbox": {
+            "x": 57.703,
+            "y": 7.031,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 57.703,
+              "y": 7.031,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "老周工位上的假人替身，上週剛拿了優秀員工獎。",
+          "sentence_zh_simplified": "老周工位上的假人替身，上周刚拿了优秀员工奖。",
+          "sentence_vi": "Hình nộm thế thân trên bàn của Lão Châu tuần trước vừa ẵm giải Nhân Viên Xuất Sắc đấy.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w6",
+          "text": "替身",
+          "text_trad": "替身",
+          "pinyin": "tìshēn",
+          "hanviet": "Thế Thân",
+          "meaning_vi": "thế thân, người đóng thế",
+          "hsk": 4,
+          "bbox": {
+            "x": 61.483,
+            "y": 7.031,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 61.483,
+              "y": 7.031,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "老周工位上的假人替身，上週剛拿了優秀員工獎。",
+          "sentence_zh_simplified": "老周工位上的假人替身，上周刚拿了优秀员工奖。",
+          "sentence_vi": "Hình nộm thế thân trên bàn của Lão Châu tuần trước vừa ẵm giải Nhân Viên Xuất Sắc đấy.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w7",
+          "text": "上",
+          "text_trad": "上",
+          "pinyin": "shàng",
+          "hanviet": "Thướng",
+          "meaning_vi": "trên",
+          "hsk": 1,
+          "bbox": {
+            "x": 65.262,
+            "y": 7.031,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 65.262,
+              "y": 7.031,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "老周工位上的假人替身，上週剛拿了優秀員工獎。",
+          "sentence_zh_simplified": "老周工位上的假人替身，上周刚拿了优秀员工奖。",
+          "sentence_vi": "Hình nộm thế thân trên bàn của Lão Châu tuần trước vừa ẵm giải Nhân Viên Xuất Sắc đấy.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w8",
+          "text": "周",
+          "text_trad": "周",
+          "pinyin": "zhōu",
+          "hanviet": "Chu",
+          "meaning_vi": "tuần, tuần lễ",
+          "hsk": 2,
+          "bbox": {
+            "x": 67.151,
+            "y": 7.031,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 67.151,
+              "y": 7.031,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "老周工位上的假人替身，上週剛拿了優秀員工獎。",
+          "sentence_zh_simplified": "老周工位上的假人替身，上周刚拿了优秀员工奖。",
+          "sentence_vi": "Hình nộm thế thân trên bàn của Lão Châu tuần trước vừa ẵm giải Nhân Viên Xuất Sắc đấy.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w9",
+          "text": "刚",
+          "text_trad": "剛",
+          "pinyin": "gāng",
+          "hanviet": "Cương",
+          "meaning_vi": "vừa mới",
+          "hsk": 3,
+          "bbox": {
+            "x": 69.041,
+            "y": 7.031,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 69.041,
+              "y": 7.031,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "老周工位上的假人替身，上週剛拿了優秀員工獎。",
+          "sentence_zh_simplified": "老周工位上的假人替身，上周刚拿了优秀员工奖。",
+          "sentence_vi": "Hình nộm thế thân trên bàn của Lão Châu tuần trước vừa ẵm giải Nhân Viên Xuất Sắc đấy.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w10",
+          "text": "拿",
+          "text_trad": "拿",
+          "pinyin": "ná",
+          "hanviet": "Nã",
+          "meaning_vi": "cầm, lấy",
+          "hsk": 2,
+          "bbox": {
+            "x": 70.93,
+            "y": 7.031,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 70.93,
+              "y": 7.031,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "老周工位上的假人替身，上週剛拿了優秀員工獎。",
+          "sentence_zh_simplified": "老周工位上的假人替身，上周刚拿了优秀员工奖。",
+          "sentence_vi": "Hình nộm thế thân trên bàn của Lão Châu tuần trước vừa ẵm giải Nhân Viên Xuất Sắc đấy.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w11",
+          "text": "了",
+          "text_trad": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "meaning_vi": "rồi (trợ từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 72.82,
+            "y": 7.031,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 72.82,
+              "y": 7.031,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "老周工位上的假人替身，上週剛拿了優秀員工獎。",
+          "sentence_zh_simplified": "老周工位上的假人替身，上周刚拿了优秀员工奖。",
+          "sentence_vi": "Hình nộm thế thân trên bàn của Lão Châu tuần trước vừa ẵm giải Nhân Viên Xuất Sắc đấy.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w12",
+          "text": "优秀",
+          "text_trad": "優秀",
+          "pinyin": "yōuxiù",
+          "hanviet": "Ưu Tú",
+          "meaning_vi": "ưu tú, xuất sắc",
+          "hsk": 4,
+          "bbox": {
+            "x": 74.709,
+            "y": 7.031,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 74.709,
+              "y": 7.031,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "老周工位上的假人替身，上週剛拿了優秀員工獎。",
+          "sentence_zh_simplified": "老周工位上的假人替身，上周刚拿了优秀员工奖。",
+          "sentence_vi": "Hình nộm thế thân trên bàn của Lão Châu tuần trước vừa ẵm giải Nhân Viên Xuất Sắc đấy.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w13",
+          "text": "员工",
+          "text_trad": "員工",
+          "pinyin": "yuángōng",
+          "hanviet": "Viên Công",
+          "meaning_vi": "nhân viên",
+          "hsk": 5,
+          "bbox": {
+            "x": 78.488,
+            "y": 7.031,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 78.488,
+              "y": 7.031,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "老周工位上的假人替身，上週剛拿了優秀員工獎。",
+          "sentence_zh_simplified": "老周工位上的假人替身，上周刚拿了优秀员工奖。",
+          "sentence_vi": "Hình nộm thế thân trên bàn của Lão Châu tuần trước vừa ẵm giải Nhân Viên Xuất Sắc đấy.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w14",
+          "text": "奖",
+          "text_trad": "獎",
+          "pinyin": "jiǎng",
+          "hanviet": "Thưởng",
+          "meaning_vi": "giải thưởng; thưởng",
+          "hsk": 4,
+          "bbox": {
+            "x": 82.267,
+            "y": 7.031,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 82.267,
+              "y": 7.031,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "老周工位上的假人替身，上週剛拿了優秀員工獎。",
+          "sentence_zh_simplified": "老周工位上的假人替身，上周刚拿了优秀员工奖。",
+          "sentence_vi": "Hình nộm thế thân trên bàn của Lão Châu tuần trước vừa ẵm giải Nhân Viên Xuất Sắc đấy.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d2_w1",
+          "text": "师父",
+          "text_trad": "師父",
+          "pinyin": "shīfu",
+          "hanviet": "Sư Phụ",
+          "meaning_vi": "sư phụ, thầy (dạy nghề/võ)",
+          "hsk": 6,
+          "bbox": {
+            "x": 34.012,
+            "y": 77.344,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 34.012,
+              "y": 77.344,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "師父……請受徒兒一拜！",
+          "sentence_zh_simplified": "师父……请受徒儿一拜！",
+          "sentence_vi": "Sư phụ... xin nhận một lạy của đồ nhi!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p5_d2"
+        },
+        {
+          "id": "p5_d2_w2",
+          "text": "请",
+          "text_trad": "請",
+          "pinyin": "qǐng",
+          "hanviet": "Thỉnh",
+          "meaning_vi": "xin mời",
+          "hsk": 1,
+          "bbox": {
+            "x": 37.791,
+            "y": 77.344,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 37.791,
+              "y": 77.344,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "師父……請受徒兒一拜！",
+          "sentence_zh_simplified": "师父……请受徒儿一拜！",
+          "sentence_vi": "Sư phụ... xin nhận một lạy của đồ nhi!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p5_d2"
+        },
+        {
+          "id": "p5_d2_w3",
+          "text": "受",
+          "text_trad": "受",
+          "pinyin": "shòu",
+          "hanviet": "Thọ",
+          "meaning_vi": "chịu, bị; nhận",
+          "hsk": 3,
+          "bbox": {
+            "x": 39.68,
+            "y": 77.344,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 39.68,
+              "y": 77.344,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "師父……請受徒兒一拜！",
+          "sentence_zh_simplified": "师父……请受徒儿一拜！",
+          "sentence_vi": "Sư phụ... xin nhận một lạy của đồ nhi!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p5_d2"
+        },
+        {
+          "id": "p5_d2_w4",
+          "text": "徒儿",
+          "text_trad": "徒兒",
+          "pinyin": "tú'ér",
+          "hanviet": "Đồ Nhi",
+          "meaning_vi": "đồ nhi, học trò",
+          "hsk": 4,
+          "bbox": {
+            "x": 41.57,
+            "y": 77.344,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 41.57,
+              "y": 77.344,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "師父……請受徒兒一拜！",
+          "sentence_zh_simplified": "师父……请受徒儿一拜！",
+          "sentence_vi": "Sư phụ... xin nhận một lạy của đồ nhi!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p5_d2"
+        },
+        {
+          "id": "p5_d2_w5",
+          "text": "一拜",
+          "text_trad": "一拜",
+          "pinyin": "yībài",
+          "hanviet": "Nhất Bái",
+          "meaning_vi": "một lạy, bái lạy",
+          "hsk": 4,
+          "bbox": {
+            "x": 45.349,
+            "y": 77.344,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 45.349,
+              "y": 77.344,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "師父……請受徒兒一拜！",
+          "sentence_zh_simplified": "师父……请受徒儿一拜！",
+          "sentence_vi": "Sư phụ... xin nhận một lạy của đồ nhi!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p5_d2"
+        }
+      ],
+      "ocr": {
+        "image_px": [
+          1376,
+          768
+        ]
+      }
+    }
+  ]
+}

@@ -727,6 +727,150 @@ EPISODES = [
                 ]
             }
         ]
+    },
+    {
+        "id": "office_ep06",
+        "chapter_no": 6,
+        "title": {
+            "zh": "第六集：摸鱼大师",
+            "zh_trad": "第六集：摸魚大師",
+            "vi": "Tập 6: Bậc Thầy Trốn Việc",
+            "pinyin": "dì liù jí ： mō yú dà shī"
+        },
+        "description_vi": "Tiểu Dương tự đắc sáng chế tuyệt chiêu 'nhúng video vào file biểu đồ', tưởng mình đã là trần nhà của giới trốn việc công sở. Nào ngờ Tiểu Linh chỉ tay sang góc bàn của Lão Châu: chiếc quạt điện tự động gõ phím, cặp kính đen ngủ gật, và tấm bằng khen Nhân Viên Xuất Sắc sáng loá trên tường...",
+        "difficulty": "HSK 1 - 4",
+        "estimatedMinutes": 3,
+        "panels": [
+            {
+                "page_num": 1,
+                "src_file": RAW_DIR / "dagongren_ep06_p1_1795430032356.jpg",
+                "dialogues": [
+                    {
+                        "id": "p1_d1",
+                        "character": "小阳 (Tiểu Dương)",
+                        "speaker": "小阳",
+                        "zh": "看！把视频嵌在表格里，这叫战术摸鱼！",
+                        "vi": "Nhìn này! Nhúng video vào trong bảng tính, cái này gọi là chiến thuật trốn việc!",
+                        "box": (140, 25, 760, 120),
+                        "tail_base_x": 350,
+                        "tail_tip": (370, 280),
+                        "tail_side": "bottom"
+                    },
+                    {
+                        "id": "p1_d2",
+                        "character": "小铃 (Tiểu Linh)",
+                        "speaker": "小铃",
+                        "zh": "王总正从你背后走过来。",
+                        "vi": "Sếp Vương đang đi tới từ sau lưng cậu đấy.",
+                        "box": (800, 25, 1260, 120),
+                        "tail_base_x": 820,
+                        "tail_tip": (730, 210),
+                        "tail_side": "bottom"
+                    }
+                ]
+            },
+            {
+                "page_num": 2,
+                "src_file": RAW_DIR / "dagongren_ep06_p2_1795430134476.jpg",
+                "dialogues": [
+                    {
+                        "id": "p2_d1",
+                        "character": "王经理 (Sếp Vương)",
+                        "speaker": "王经理",
+                        "zh": "小阳，看数据这么认真，这个月绩效给你加分！",
+                        "vi": "Tiểu Dương, soi số liệu chăm chú thế này, KPI tháng này anh cộng điểm cho em nhé!",
+                        "box": (120, 25, 820, 120),
+                        "tail_base_x": 420,
+                        "tail_tip": (390, 180),
+                        "tail_side": "bottom"
+                    },
+                    {
+                        "id": "p2_d2",
+                        "character": "小阳 (Tiểu Dương)",
+                        "speaker": "小阳",
+                        "zh": "谢谢王总！为公司全力以赴！",
+                        "vi": "Cảm ơn Sếp Vương! Hết mình vì công ty ạ!",
+                        "box": (840, 25, 1340, 120),
+                        "tail_base_x": 880,
+                        "tail_tip": (720, 280),
+                        "tail_side": "bottom"
+                    }
+                ]
+            },
+            {
+                "page_num": 3,
+                "src_file": RAW_DIR / "dagongren_ep06_p3_1795430193627.jpg",
+                "dialogues": [
+                    {
+                        "id": "p3_d1",
+                        "character": "小阳 (Tiểu Dương)",
+                        "speaker": "小阳",
+                        "zh": "怎么样？我说我是摸鱼界的天花板吧？",
+                        "vi": "Thế nào? Đã bảo tôi là trần nhà của giới trốn việc mà?",
+                        "box": (140, 25, 780, 120),
+                        "tail_base_x": 320,
+                        "tail_tip": (310, 360),
+                        "tail_side": "bottom"
+                    },
+                    {
+                        "id": "p3_d2",
+                        "character": "小铃 (Tiểu Linh)",
+                        "speaker": "小铃",
+                        "zh": "你先看看老周再说。",
+                        "vi": "Cậu cứ nhìn Lão Châu đằng kia trước đã.",
+                        "box": (800, 25, 1200, 120),
+                        "tail_base_x": 800,
+                        "tail_tip": (720, 240),
+                        "tail_side": "bottom"
+                    }
+                ]
+            },
+            {
+                "page_num": 4,
+                "src_file": RAW_DIR / "dagongren_ep06_p4_1795430298700.jpg",
+                "dialogues": [
+                    {
+                        "id": "p4_d1",
+                        "character": "小阳 (Tiểu Dương)",
+                        "speaker": "小阳",
+                        "zh": "他……戴着墨镜在睡觉？！",
+                        "vi": "Ổng... đang đeo kính đen ngủ đấy à?!",
+                        "box": (920, 30, 1340, 125),
+                        "tail_base_x": 940,
+                        "tail_tip": (880, 130),
+                        "tail_side": "bottom"
+                    }
+                ]
+            },
+            {
+                "page_num": 5,
+                "src_file": RAW_DIR / "dagongren_ep06_p5_1795430344297.jpg",
+                "dialogues": [
+                    {
+                        "id": "p5_d1",
+                        "character": "小铃 (Tiểu Linh)",
+                        "speaker": "小铃",
+                        "zh": "老周工位上的假人替身，上周刚拿了优秀员工奖。",
+                        "vi": "Hình nộm thế thân trên bàn của Lão Châu tuần trước vừa ẵm giải Nhân Viên Xuất Sắc đấy.",
+                        "box": (620, 20, 1340, 115),
+                        "tail_base_x": 880,
+                        "tail_tip": (860, 130),
+                        "tail_side": "bottom"
+                    },
+                    {
+                        "id": "p5_d2",
+                        "character": "小阳 (Tiểu Dương)",
+                        "speaker": "小阳",
+                        "zh": "师父……请受徒儿一拜！",
+                        "vi": "Sư phụ... xin nhận một lạy của đồ nhi!",
+                        "box": (450, 560, 780, 655),
+                        "tail_side": "top",
+                        "tail_base_x": 680,
+                        "tail_tip": (740, 520)
+                    }
+                ]
+            }
+        ]
     }
 ]
 

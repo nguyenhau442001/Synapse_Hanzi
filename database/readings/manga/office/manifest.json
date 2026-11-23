@@ -163,5 +163,38 @@
       "王总",
       "老周"
     ]
+  },
+  {
+    "id": "office_ep06",
+    "series": "office",
+    "series_title": "打工人日记",
+    "series_title_vi": "Nhật Ký Dân Công Sở",
+    "collection": "office",
+    "volume": 1,
+    "chapter_in_volume": null,
+    "chapter_no": 6,
+    "title": {
+      "zh": "第六集：摸鱼大师",
+      "zh_trad": "第六集：摸魚大師",
+      "vi": "Tập 6: Bậc Thầy Trốn Việc",
+      "pinyin": "dì liù jí ： mō yú dà shī"
+    },
+    "description_vi": "Tiểu Dương tự đắc sáng chế tuyệt chiêu 'nhúng video vào file biểu đồ', tưởng mình đã là trần nhà của giới trốn việc công sở. Nào ngờ Tiểu Linh chỉ tay sang góc bàn của Lão Châu: chiếc quạt điện tự động gõ phím, cặp kính đen ngủ gật, và tấm bằng khen Nhân Viên Xuất Sắc sáng loá trên tường...",
+    "cover_image": "assets/images/readings/manga/office/office_ep06/cover.webp",
+    "source": "《打工人日记》原创职场情景喜剧 · Synapse Hanzi Studio",
+    "source_url": "https://github.com/Synapse-Hanzi",
+    "source_credits": "Kịch bản và tạo hình nhân vật độc quyền: Synapse Hanzi Studio. Tranh minh họa kết hợp hệ thống tra từ tương tác, pinyin, Hán-Việt và âm thanh đa giác quan.",
+    "license": "Original / Educational",
+    "page_count": 5,
+    "difficulty": "HSK 1 - 4",
+    "estimatedMinutes": 3,
+    "file": "database/readings/manga/office/office_ep06.json",
+    "proper_names": [
+      "小阳",
+      "小铃",
+      "王经理",
+      "王总",
+      "老周"
+    ]
   }
 ]

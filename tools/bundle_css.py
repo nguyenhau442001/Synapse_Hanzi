@@ -31,6 +31,7 @@ BUNDLE_FILES = [
     "assets/css/sentence-game.css",
     "assets/css/listening-practice.css",
     "assets/css/speaking-practice.css",
+    "assets/css/hsk-exam.css",
     "assets/css/radicals.css",
     "assets/css/streak-history.css",
     "assets/css/vocabulary-overview.css",

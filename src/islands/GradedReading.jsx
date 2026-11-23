@@ -1644,7 +1644,7 @@ function StoryReader({ story }) {
 
 // Series shelves, in reading order. Entries without `collection` land on the first shelf.
 const MANGA_COLLECTIONS = [
-  { key: 'office', zh: '打工人日记', vi: 'Hài Công Sở (Diary of Dagongren)', range: 'Tập 1 - 5 · Sitcom Hài HSK 1-4' },
+  { key: 'office', zh: '打工人日记', vi: 'Hài Công Sở (Diary of Dagongren)', range: 'Tập 1 - 6 · Sitcom Hài HSK 1-4' },
   { key: 'classic', zh: '中国古典四大名著', vi: 'Kinh Điển Cổ Phong (Tây Du Ký)', range: 'Hồi 1 · Mỹ Hầu Vương Xuất Thế' },
   { key: 'peppercarrot', zh: '胡椒和胡萝卜', vi: 'Pepper&Carrot', range: 'Tập 1 → 39 · CC BY 4.0' },
 ];
