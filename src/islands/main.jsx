@@ -52,6 +52,7 @@ import { mountMobileBottomNav } from './MobileBottomNav';
 import { mountAppBootstrap } from './AppBootstrap';
 import { registerServiceWorker } from './ServiceWorkerManager';
 import { initPwaInstallPrompt } from './PwaInstallPrompt';
+import { initShareFeature } from './ShareModal';
 
 mountAppUtils();
 mountAppState();
@@ -104,3 +105,4 @@ mountMobileBottomNav();
 mountAppBootstrap();
 registerServiceWorker();
 initPwaInstallPrompt();
+initShareFeature();

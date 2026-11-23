@@ -40,6 +40,7 @@ BUNDLE_FILES = [
     "assets/css/feedback.css",
     "assets/css/footer.css",
     "assets/css/pwa-install.css",
+    "assets/css/share-modal.css",
     "assets/css/design-system.css",
 ]
 

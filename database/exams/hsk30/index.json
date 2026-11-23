@@ -1,0 +1,28 @@
+{
+  "version": "3.0",
+  "levels": {
+    "hsk30_1": {
+      "level": "hsk30_1",
+      "hsk_level": 1,
+      "title": "HSK 1 (3.0)",
+      "badge": "Sơ cấp",
+      "total_questions": 40,
+      "time_minutes": 35,
+      "max_score": 200,
+      "pass_score": 120,
+      "exams": [
+        {
+          "id": "hsk30_l1_specimen01",
+          "code": "H10901",
+          "title": "Đề thi mẫu chuẩn CTI số 01 (样卷一)",
+          "subtitle": "Đề mẫu chuẩn do CTI (汉考国际) ban hành - 40 câu hỏi kèm audio chuẩn",
+          "listening_questions": 20,
+          "reading_questions": 20,
+          "writing_questions": 0,
+          "time_minutes": 35,
+          "file": "database/exams/hsk30/level1/hsk30_l1_specimen01.json"
+        }
+      ]
+    }
+  }
+}
