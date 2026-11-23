@@ -164,6 +164,7 @@ function SpeakingPracticeApp() {
   const [isDeepAiReady, setIsDeepAiReady] = useState(false);
   const [isDownloadingModel, setIsDownloadingModel] = useState(false);
   const [downloadProgress, setDownloadProgress] = useState(0);
+  const [downloadError, setDownloadError] = useState(null);
   const [captResult, setCaptResult] = useState(null);
   const [showModelModal, setShowModelModal] = useState(false);
 
@@ -642,6 +643,7 @@ function SpeakingPracticeApp() {
   const handleActivateDeepAi = async () => {
     setIsDownloadingModel(true);
     setDownloadProgress(0);
+    setDownloadError(null);
     setShowModelModal(true);
     try {
       const ok = await ensureCaptModelReady((prog) => {
@@ -650,9 +652,12 @@ function SpeakingPracticeApp() {
       setIsDeepAiReady(ok);
       if (ok) {
         setTimeout(() => setShowModelModal(false), 800);
+      } else {
+        setDownloadError('Không thể nạp mô hình vào trình duyệt. Vui lòng kiểm tra kết nối mạng và thử lại.');
       }
     } catch (err) {
       console.warn('[SpeakingPractice] Deep AI activation error:', err);
+      setDownloadError(err?.message || 'Lỗi tải mô hình. Vui lòng thử lại.');
     } finally {
       setIsDownloadingModel(false);
     }
@@ -1221,16 +1226,44 @@ function SpeakingPracticeApp() {
 
       {/* Model Download Progress Modal */}
       {showModelModal && (
-        <div class="capt-model-modal-overlay">
-          <div class="capt-model-modal">
-            <h3>Tải Mô Hình AI Chấm Ngữ Âm Chuyên Sâu</h3>
+        <div class="capt-model-modal-overlay" onClick={() => !isDownloadingModel && setShowModelModal(false)}>
+          <div class="capt-model-modal" onClick={(e) => e.stopPropagation()}>
+            <div class="capt-modal-header">
+              <h3>Tải Mô Hình AI Chấm Ngữ Âm Chuyên Sâu</h3>
+              {!isDownloadingModel && (
+                <button
+                  type="button"
+                  class="capt-modal-close-btn"
+                  onClick={() => setShowModelModal(false)}
+                  aria-label="Đóng"
+                >
+                  ✕
+                </button>
+              )}
+            </div>
             <p>Mô hình Neural Conformer-CTC (14.2 MB) chạy trực tiếp 100% Offline trên trình duyệt qua WebAssembly SIMD.</p>
-            <div class="capt-progress-bar-wrap">
-              <div class="capt-progress-bar-fill" style={{ width: `${downloadProgress}%` }}></div>
-            </div>
-            <div class="capt-progress-text">
-              {downloadProgress >= 100 ? 'Đang nạp mô hình vào WebAssembly...' : `Đang tải: ${downloadProgress}%`}
-            </div>
+            {!downloadError ? (
+              <>
+                <div class="capt-progress-bar-wrap">
+                  <div class="capt-progress-bar-fill" style={{ width: `${downloadProgress}%` }}></div>
+                </div>
+                <div class="capt-progress-text">
+                  {downloadProgress >= 100 ? 'Đang nạp mô hình vào WebAssembly...' : `Đang tải: ${downloadProgress}%`}
+                </div>
+              </>
+            ) : (
+              <div class="capt-modal-error">
+                <p class="capt-error-msg">⚠️ {downloadError}</p>
+                <div class="capt-error-actions">
+                  <button type="button" class="capt-retry-btn" onClick={handleActivateDeepAi}>
+                    Thử lại
+                  </button>
+                  <button type="button" class="capt-dismiss-btn" onClick={() => setShowModelModal(false)}>
+                    Đóng
+                  </button>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       )}

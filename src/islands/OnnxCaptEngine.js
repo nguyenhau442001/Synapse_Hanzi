@@ -4,9 +4,16 @@
  * Integrates WebAudio, Log-Mel Feature Extraction, and GOP Pronunciation Scoring.
  */
 
+import { loadCachedCaptModel, downloadAndCacheCaptModel } from './SpeechModelManager.js';
+import { extractLogMelSpectrogram, melFramesToFlatTensor } from './AudioFeatureExtractor.js';
+import { scoreCaptPrediction } from './GopScorer.js';
+
 let inferenceSession = null;
 let isInitializing = false;
 let ortInstance = null;
+
+const ORT_CDN_URL = 'https://cdn.jsdelivr.net/npm/onnxruntime-web@1.31.1/dist/ort.min.js';
+const ORT_WASM_PATH = 'https://cdn.jsdelivr.net/npm/onnxruntime-web@1.31.1/dist/';
 
 /**
  * Dynamically loads the lightweight onnxruntime-web script (~360KB)
@@ -20,14 +27,16 @@ async function getOrt() {
   }
   return new Promise((resolve, reject) => {
     const script = document.createElement('script');
-    script.src = 'https://cdn.jsdelivr.net/npm/onnxruntime-web@1.31.1/dist/ort.min.js';
+    script.src = ORT_CDN_URL;
     script.crossOrigin = 'anonymous';
     script.onload = () => {
       ortInstance = window.ort;
       if (ortInstance && ortInstance.env && ortInstance.env.wasm) {
-        ortInstance.env.wasm.numThreads = 2;
+        // Multi-threading requires SharedArrayBuffer which only exists in cross-origin isolated contexts
+        const hasSharedMemory = typeof window !== 'undefined' && Boolean(window.crossOriginIsolated);
+        ortInstance.env.wasm.numThreads = hasSharedMemory ? 2 : 1;
         ortInstance.env.wasm.simd = true;
-        ortInstance.env.wasm.wasmPaths = 'https://cdn.jsdelivr.net/npm/onnxruntime-web@1.31.1/dist/';
+        ortInstance.env.wasm.wasmPaths = ORT_WASM_PATH;
       }
       resolve(ortInstance);
     };

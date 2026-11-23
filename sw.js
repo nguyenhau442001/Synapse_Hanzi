@@ -1,4 +1,4 @@
-const APP_VERSION = '3.62.0';
+const APP_VERSION = '3.62.1';
 const CACHE_NAME = 'hsk-flashcards-v' + APP_VERSION;
 const APP_SHELL_URL = new URL('./index.html', self.registration.scope).href;
 const INDEX_SHELL_URL = new URL('./index.html', self.registration.scope).href;
@@ -59,10 +59,11 @@ self.addEventListener('fetch', event => {
   if (url.pathname.endsWith('/VERSION')) return;
   if (url.pathname.endsWith('/manifest.json')) return;
 
-  // Bypass Service Worker for Range requests and media streaming (audio/video).
+  // Bypass Service Worker for Range requests, media streaming (audio/video), and large on-device neural models.
   // Cache Storage API cannot cache 206 Partial Content (throws TypeError), and returning
   // full 200 responses to Range requests causes MEDIA_ELEMENT_ERROR format errors in browsers.
-  if (request.headers.has('range') || request.destination === 'audio' || request.destination === 'video' || url.pathname.includes('/assets/audio/')) {
+  // Large neural models (~14MB) are stored in IndexedDB by SpeechModelManager to avoid cache quota exhaustion.
+  if (request.headers.has('range') || request.destination === 'audio' || request.destination === 'video' || url.pathname.includes('/assets/audio/') || url.pathname.includes('/assets/models/')) {
     return;
   }
 
