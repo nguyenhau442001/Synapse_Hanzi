@@ -484,30 +484,85 @@
   border: 2px solid var(--border-color, #cbd5e1);
   border-radius: 0.75rem;
   background: var(--bg-card, #ffffff);
-  font-size: 1.2rem;
+  color: var(--text-primary, #0f172a);
+  font-size: 1.15rem;
   font-weight: 700;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.6rem;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 .cbt-tf-btn:hover {
   border-color: #0284c7;
+  color: #0284c7;
 }
 
 .cbt-tf-btn.selected-true {
-  background: rgba(16, 185, 129, 0.1);
+  background: rgba(16, 185, 129, 0.12);
   border-color: #10b981;
-  color: #059669;
+  color: #059669 !important;
+  box-shadow: 0 0 0 1px #10b981;
 }
 
 .cbt-tf-btn.selected-false {
-  background: rgba(239, 68, 68, 0.1);
+  background: rgba(239, 68, 68, 0.12);
   border-color: #ef4444;
-  color: #dc2626;
+  color: #dc2626 !important;
+  box-shadow: 0 0 0 1px #ef4444;
+}
+
+/* Part Instruction Banner */
+.cbt-part-banner {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 0.65rem;
+  padding: 0.85rem 1.15rem;
+  margin-bottom: 1.25rem;
+}
+
+.cbt-part-banner-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.cbt-part-title-zh {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #166534;
+}
+
+.cbt-part-title-vi {
+  font-size: 0.875rem;
+  color: #15803d;
+  margin-top: 0.15rem;
+}
+
+.cbt-part-example-btn {
+  background: #ffffff;
+  border: 1px solid #86efac;
+  color: #166534;
+  border-radius: 0.35rem;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cbt-part-example-box {
+  background: #ffffff;
+  border: 1px dashed #86efac;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+  color: #1e293b;
+  line-height: 1.5;
 }
 
 /* CBT Bottom Nav */

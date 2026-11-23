@@ -10,6 +10,74 @@ import { onDomReady } from './domReady';
 export const HSK30_EXAM_STORAGE_KEY = 'hsk30_exam_history_v1';
 export const DEFAULT_EXAM_URL = 'database/exams/hsk30/level1/hsk30_l1_specimen01.json';
 
+// Official CTI examination part guidelines and examples
+export const HSK1_PART_INSTRUCTIONS = {
+  'listening_1': {
+    titleZh: '第一部分：听录音，判断对错',
+    titleVi: 'Phần 1: Nghe ghi âm và phán đoán Đúng (✓) / Sai (✗) theo tranh',
+    guideZh: '一共 5 个题，每题听两次。',
+    guideVi: 'Gồm 5 câu (Câu 1 - 5), mỗi câu được xướng số thứ tự và nghe 2 lần.',
+    example: {
+      textZh: '例如：很高兴 (✓) ｜ 看电影 (✗)',
+      textVi: 'Ví dụ mẫu: Đoạn ghi âm nói "很高兴" (rất vui) đối chiếu tranh bắt tay chào hỏi -> Đúng [✓]; nói "看电影" (xem phim) đối chiếu tranh đang đọc sách -> Sai [✗].'
+    }
+  },
+  'listening_2': {
+    titleZh: '第二部分：听句子，选择正确答案',
+    titleVi: 'Phần 2: Nghe câu ngắn và chọn đáp án đúng A/B/C',
+    guideZh: '一共 5 个题，每题听两次。',
+    guideVi: 'Gồm 5 câu (Câu 6 - 10), mỗi câu được nghe 2 lần.',
+    example: {
+      textZh: '例如：他在学校学习汉语。问：他在哪儿学习？',
+      textVi: 'Ví dụ mẫu: Nghe câu trần thuật và chọn địa điểm/đối tượng/hành động tương ứng.'
+    }
+  },
+  'listening_3': {
+    titleZh: '第三部分：听短对话，选择对应情境',
+    titleVi: 'Phần 3: Nghe hội thoại ngắn và chọn bối cảnh phù hợp',
+    guideZh: '一共 5 个题，每题听两次。',
+    guideVi: 'Gồm 5 câu (Câu 11 - 15), mỗi câu được nghe 2 lần.',
+    example: {
+      textZh: '例如：女：你好！ 男：你好，很高兴认识你！',
+      textVi: 'Ví dụ mẫu: Nghe 2 câu đối thoại giữa nam và nữ, chọn ngữ cảnh hoặc thông tin được nhắc tới.'
+    }
+  },
+  'listening_4': {
+    titleZh: '第四部分：听对话和问句，选择正确答案',
+    titleVi: 'Phần 4: Nghe đối thoại và trả lời câu hỏi trắc nghiệm A/B/C',
+    guideZh: '一共 5 个题，每题听两次。',
+    guideVi: 'Gồm 5 câu (Câu 16 - 20), mỗi câu được nghe 2 lần.',
+    example: {
+      textZh: '例如：女：下午你去看电影吗？ 男：我不去，我有工作。问：男的下午做什么？',
+      textVi: 'Ví dụ mẫu: Nghe hội thoại kèm câu hỏi ở cuối, chọn đáp án A, B hoặc C.'
+    }
+  },
+  'reading_1': {
+    titleZh: '第二部分：阅读 · 第一部分：判断对错',
+    titleVi: 'Phần 1 (Đọc hiểu): Đọc câu đối chiếu tranh và phán đoán Đúng / Sai',
+    guideZh: '一共 5 个题。看图和句子，判断句子意思是否与图片一致。',
+    guideVi: 'Gồm 5 câu (Câu 21 - 25). Nhận định Đúng (✓) nếu câu khớp với hình ảnh, Sai (✗) nếu khác.'
+  },
+  'reading_2': {
+    titleZh: '第二部分：阅读 · 第二部分：选词填空',
+    titleVi: 'Phần 2 (Đọc hiểu): Điền từ thích hợp vào chỗ trống trong câu',
+    guideZh: '一共 5 个题。选择最恰当的词语完成句子。',
+    guideVi: 'Gồm 5 câu (Câu 26 - 30). Đọc ngữ cảnh câu và chọn từ vựng A, B, C, D phù hợp nhất.'
+  },
+  'reading_3': {
+    titleZh: '第二部分：阅读 · 第三部分：问答配对',
+    titleVi: 'Phần 3 (Đọc hiểu): Ghép câu hỏi với câu đối đáp phù hợp',
+    guideZh: '一共 5 个题。选择匹配的问答或句子关系。',
+    guideVi: 'Gồm 5 câu (Câu 31 - 35). Chọn câu trả lời logic cho từng câu hỏi.'
+  },
+  'reading_4': {
+    titleZh: '第二部分：阅读 · 第四部分：阅读理解',
+    titleVi: 'Phần 4 (Đọc hiểu): Đọc đoạn văn ngắn và trả lời câu hỏi trắc nghiệm',
+    guideZh: '一共 5 个题。根据短文内容选择正确答案。',
+    guideVi: 'Gồm 5 câu (Câu 36 - 40). Đọc kỹ đoạn văn ngắn (2-3 câu) để tìm dẫn chứng trả lời A/B/C.'
+  }
+};
+
 export function Hsk30ExamComponent() {
   const [examMeta, setExamMeta] = useState(null);
   const [examData, setExamData] = useState(null);
@@ -23,6 +91,9 @@ export function Hsk30ExamComponent() {
   const [reviewFilter, setReviewFilter] = useState('all'); // 'all' | 'incorrect' | 'flagged'
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
   const [audioPlayCount, setAudioPlayCount] = useState(0);
+  const [showPartExample, setShowPartExample] = useState(false);
+  const [isSoundTesting, setIsSoundTesting] = useState(false);
+  const [playbackSpeed, setPlaybackSpeed] = useState(1.0);
 
   const audioRef = useRef(null);
   const timerRef = useRef(null);
@@ -94,6 +165,7 @@ export function Hsk30ExamComponent() {
     if (!url) return;
     try {
       audioRef.current = new Audio(url);
+      audioRef.current.playbackRate = playbackSpeed;
       setIsPlayingAudio(true);
       audioRef.current.onended = () => {
         setIsPlayingAudio(false);
@@ -107,12 +179,28 @@ export function Hsk30ExamComponent() {
     }
   };
 
+  const setAudioSpeed = (speed) => {
+    setPlaybackSpeed(speed);
+    if (audioRef.current) {
+      audioRef.current.playbackRate = speed;
+    }
+  };
+
   const stopAudio = () => {
     if (audioRef.current) {
       audioRef.current.pause();
       audioRef.current = null;
     }
     setIsPlayingAudio(false);
+  };
+
+  const runSoundTest = () => {
+    stopAudio();
+    setIsSoundTesting(true);
+    const testAudio = new Audio('assets/audio/exams/hsk30/level1/h10901_l01.mp3');
+    testAudio.onended = () => setIsSoundTesting(false);
+    testAudio.onerror = () => setIsSoundTesting(false);
+    testAudio.play().catch(() => setIsSoundTesting(false));
   };
 
   const startExam = async (filePath) => {
@@ -126,6 +214,7 @@ export function Hsk30ExamComponent() {
       setCurrentQuestionIdx(0);
       setTimeRemaining((data.time_minutes || 35) * 60);
       setAudioPlayCount(0);
+      setShowPartExample(false);
       setExamState('exam');
     } catch (err) {
       alert('Không thể tải dữ liệu đề thi: ' + err.message);
@@ -231,7 +320,6 @@ export function Hsk30ExamComponent() {
       return;
     }
 
-    // Save incorrect question ids into weak review storage
     try {
       const weakKey = 'hsk30_exam_weak_questions';
       const existing = JSON.parse(localStorage.getItem(weakKey) || '[]');
@@ -242,6 +330,13 @@ export function Hsk30ExamComponent() {
     } catch (e) {
       alert('Đã ghi nhận câu sai để ôn tập.');
     }
+  };
+
+  // Get current part instruction
+  const getCurrentPartInfo = () => {
+    if (!activeQuestion) return null;
+    const key = `${activeQuestion.sectionName}_${activeQuestion.part}`;
+    return HSK1_PART_INSTRUCTIONS[key] || null;
   };
 
   // -------------------------------------------------------------------------
@@ -288,6 +383,45 @@ export function Hsk30ExamComponent() {
             </div>
           </div>
 
+          {/* Instructions and Sound Test Card */}
+          <div style="background: var(--bg-card, #ffffff); border: 1px solid var(--border-color, #e2e8f0); border-radius: 1rem; padding: 1.5rem; display: flex; flex-direction: column; gap: 1rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
+              <div>
+                <h3 style="margin: 0 0 0.25rem 0; font-size: 1.15rem; color: #0f172a;">
+                  📢 考生须知 · Quy chế phòng thi máy tính CBT
+                </h3>
+                <p style="margin: 0; font-size: 0.9rem; color: #64748b;">
+                  Trước khi bắt đầu, hãy kiểm tra âm thanh tai nghe và nắm rõ cấu trúc đề thi chính thức.
+                </p>
+              </div>
+              <button
+                type="button"
+                style="padding: 0.5rem 1rem; border-radius: 0.5rem; border: 1px solid #0284c7; background: rgba(2, 132, 199, 0.08); color: #0284c7; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 0.4rem;"
+                onClick={runSoundTest}
+              >
+                {isSoundTesting ? '🔊 Đang phát âm thanh mẫu...' : '🎧 试音 (Thử âm thanh tai nghe)'}
+              </button>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; font-size: 0.875rem; background: var(--bg-surface, #f8fafc); padding: 1rem; border-radius: 0.75rem; line-height: 1.6;">
+              <div>
+                <strong style="color: #0284c7;">1. Phần Nghe (听力 - 20 câu - 15 phút):</strong>
+                <div>• Gồm 4 phần: Phán đoán tranh, Trắc nghiệm đơn, Đối thoại ngắn, Hiểu hội thoại.</div>
+                <div>• Mỗi câu được phát xướng số câu và đọc đúng 2 lần theo chuẩn kỳ thi CTI.</div>
+              </div>
+              <div>
+                <strong style="color: #0284c7;">2. Phần Đọc (阅读 - 20 câu - 17 phút):</strong>
+                <div>• Gồm 4 phần: Phán đoán tranh, Điền từ vào chỗ trống, Ghép câu hỏi-đáp, Đọc hiểu đoạn văn.</div>
+                <div>• Thí sinh tự do chuyển câu qua Bảng câu hỏi (答题卡).</div>
+              </div>
+              <div>
+                <strong style="color: #0284c7;">3. Điểm số &amp; Tiêu chuẩn đỗ:</strong>
+                <div>• Thang điểm tối đa: <strong>200 điểm</strong> (Nghe 100đ, Đọc 100đ).</div>
+                <div>• Điểm chuẩn đạt (合格): <strong>120 điểm</strong> (đạt từ 60% trở lên).</div>
+              </div>
+            </div>
+          </div>
+
           <div class="exam-card-grid">
             {examList.map((item) => (
               <div class="exam-card" key={item.id}>
@@ -330,6 +464,7 @@ export function Hsk30ExamComponent() {
     const currentAnswer = userAnswers[activeQuestion.id];
     const isFlagged = !!flaggedQuestions[activeQuestion.id];
     const isTimerWarning = timeRemaining < 300; // < 5 mins
+    const partInfo = getCurrentPartInfo();
 
     return (
       <div class="exam-container">
@@ -370,6 +505,36 @@ export function Hsk30ExamComponent() {
           <div class="cbt-body-layout">
             <main class="cbt-main-area">
               <div>
+                {/* Part Instruction Banner */}
+                {partInfo && (
+                  <div class="cbt-part-banner">
+                    <div class="cbt-part-banner-header">
+                      <div>
+                        <div class="cbt-part-title-zh">{partInfo.titleZh}</div>
+                        <div class="cbt-part-title-vi">{partInfo.titleVi}</div>
+                        <div style="font-size: 0.8rem; color: #4b5563; margin-top: 0.2rem;">
+                          {partInfo.guideZh} <em>({partInfo.guideVi})</em>
+                        </div>
+                      </div>
+                      {partInfo.example && (
+                        <button
+                          type="button"
+                          class="cbt-part-example-btn"
+                          onClick={() => setShowPartExample((v) => !v)}
+                        >
+                          {showPartExample ? 'Ẩn ví dụ mẫu' : 'ℹ️ Xem ví dụ mẫu (例如)'}
+                        </button>
+                      )}
+                    </div>
+                    {showPartExample && partInfo.example && (
+                      <div class="cbt-part-example-box">
+                        <strong style="color: #166534;">{partInfo.example.textZh}</strong>
+                        <div style="color: #475569; margin-top: 0.25rem;">{partInfo.example.textVi}</div>
+                      </div>
+                    )}
+                  </div>
+                )}
+
                 {/* Audio player if question has audio */}
                 {activeQuestion.audio_clip && (
                   <div class="cbt-audio-box">
@@ -377,21 +542,34 @@ export function Hsk30ExamComponent() {
                       {isPlayingAudio ? (
                         <>
                           <span class="audio-wave-anim">🔊</span>
-                          <span>Đang phát đoạn ghi âm...</span>
+                          <span>Đang phát ghi âm chuẩn CTI (đọc 2 lần kèm số câu)...</span>
                         </>
                       ) : (
                         <>
                           <span>⏸️</span>
-                          <span>Đoạn ghi âm bài nghe (Lần phát: {audioPlayCount})</span>
+                          <span>Ghi âm bài nghe (Đã phát: {audioPlayCount} lần)</span>
                         </>
                       )}
                     </div>
-                    <button
-                      class="cbt-audio-play-btn"
-                      onClick={() => playAudio(activeQuestion.audio_clip)}
-                    >
-                      ▶ Phát lại audio
-                    </button>
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                      <select
+                        style="padding: 0.35rem 0.6rem; border-radius: 0.35rem; border: 1px solid #cbd5e1; font-size: 0.8rem; background: #fff; color: #334155;"
+                        value={playbackSpeed}
+                        onChange={(e) => setAudioSpeed(parseFloat(e.target.value))}
+                        title="Tốc độ phát âm"
+                      >
+                        <option value={1.0}>Tốc độ 1.0x (Chuẩn CTI)</option>
+                        <option value={0.85}>Tốc độ 0.85x (Chậm hơn)</option>
+                        <option value={0.75}>Tốc độ 0.75x (Rất chậm)</option>
+                      </select>
+                      <button
+                        type="button"
+                        class="cbt-audio-play-btn"
+                        onClick={() => playAudio(activeQuestion.audio_clip)}
+                      >
+                        ▶ Phát lại audio
+                      </button>
+                    </div>
                   </div>
                 )}
 
@@ -434,16 +612,20 @@ export function Hsk30ExamComponent() {
                   {activeQuestion.type === 'true_false' && (
                     <div class="cbt-tf-grid">
                       <button
+                        type="button"
                         class={`cbt-tf-btn ${currentAnswer === true ? 'selected-true' : ''}`}
                         onClick={() => handleSelectAnswer(activeQuestion.id, true)}
                       >
-                        ✓ Đúng (对)
+                        <span style="font-size: 1.4rem; color: #10b981; font-weight: 900;">✓</span>
+                        <span style="color: #0f172a;">Đúng (对 - Duì)</span>
                       </button>
                       <button
+                        type="button"
                         class={`cbt-tf-btn ${currentAnswer === false ? 'selected-false' : ''}`}
                         onClick={() => handleSelectAnswer(activeQuestion.id, false)}
                       >
-                        ✗ Sai (错)
+                        <span style="font-size: 1.4rem; color: #ef4444; font-weight: 900;">✗</span>
+                        <span style="color: #0f172a;">Sai (错 - Cuò)</span>
                       </button>
                     </div>
                   )}

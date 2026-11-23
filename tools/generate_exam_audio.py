@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""Generate audio for HSK 3.0 mock exam listening questions using Edge Neural TTS.
+"""Generate authentic CTI-style audio for HSK 3.0 mock exam listening questions.
 
 Synthesizes studio-grade 24kHz MP3 audio with loudness normalization according to AGENTS.md:
 Voice: zh-CN-XiaoxiaoNeural
 Format: 24kHz Mono, 64kbps MP3
 Filter: silenceremove and EBU R128 loudness normalization
+Speed: -12% rate (gentle, clear pedagogical pacing for HSK 1 learners)
+Repetition: Each question is spoken twice with question number prefix, matching official CTI exam format.
 """
 
 from __future__ import annotations
@@ -21,10 +23,9 @@ import edge_tts
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 VOICE = "zh-CN-XiaoxiaoNeural"
-RATE = "+0%"
+RATE = "-12%"
 VOLUME = "+0%"
 
-# Determine ffmpeg binary path
 FFMPEG_BIN = "/opt/homebrew/bin/ffmpeg" if os.path.exists("/opt/homebrew/bin/ffmpeg") else "ffmpeg"
 
 SILENCE_FILTER = (
@@ -32,6 +33,16 @@ SILENCE_FILTER = (
     "stop_periods=-1:stop_duration=0.08:stop_threshold=-45dB:stop_silence=0.03,"
     "loudnorm=I=-18:TP=-2:LRA=7"
 )
+
+
+def num_to_zh(n: int) -> str:
+    """Convert number 1..20 to Chinese numeral."""
+    zh_digits = ["零", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十"]
+    if n <= 10:
+        return zh_digits[n]
+    if n < 20:
+        return f"十{zh_digits[n - 10]}"
+    return "二十"
 
 
 async def synthesize_sentence(text: str, out_path: Path) -> bool:
@@ -83,19 +94,23 @@ async def main() -> None:
         if q.get("audio_clip") and q.get("audio_text")
     ]
 
-    print(f"Generating audio for {len(listening_questions)} listening questions...")
+    print(f"Generating CTI-standard audio for {len(listening_questions)} listening questions (Rate: {RATE})...")
     for idx, q in enumerate(listening_questions, 1):
         rel_clip = q["audio_clip"]
         audio_dest = REPO_ROOT / rel_clip
-        text = q["audio_text"]
-        print(f"[{idx}/{len(listening_questions)}] {rel_clip} -> {text}")
-        ok = await synthesize_sentence(text, audio_dest)
+        raw_text = q["audio_text"]
+        q_num = q.get("number", idx)
+        zh_prefix = f"第{num_to_zh(q_num)}题。"
+
+        # In authentic CTI examinations: each question starts with question number and is repeated twice
+        exam_speech_script = f"{zh_prefix} {raw_text}。 ...... ...... {raw_text}。"
+        print(f"[{idx}/{len(listening_questions)}] {rel_clip} -> {zh_prefix} {raw_text} (Repeat x2)")
+        ok = await synthesize_sentence(exam_speech_script, audio_dest)
         if not ok:
             print(f"Failed to generate {rel_clip}", file=sys.stderr)
-        # Small delay to prevent rate limiting
         await asyncio.sleep(0.1)
 
-    print("Audio generation completed successfully.")
+    print("CTI-standard audio generation completed successfully.")
 
 
 if __name__ == "__main__":
