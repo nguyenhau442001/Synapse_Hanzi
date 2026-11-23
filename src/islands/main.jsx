@@ -51,6 +51,7 @@ import { mountSpaRouter } from './SpaRouter';
 import { mountMobileBottomNav } from './MobileBottomNav';
 import { mountAppBootstrap } from './AppBootstrap';
 import { registerServiceWorker } from './ServiceWorkerManager';
+import { initPwaInstallPrompt } from './PwaInstallPrompt';
 
 mountAppUtils();
 mountAppState();
@@ -102,3 +103,4 @@ mountSpaRouter();
 mountMobileBottomNav();
 mountAppBootstrap();
 registerServiceWorker();
+initPwaInstallPrompt();

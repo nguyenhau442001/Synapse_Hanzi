@@ -54,7 +54,7 @@ class TestReviewFlow(unittest.TestCase):
         self.assertIn("Thẻ mới:", self.flashcard)
 
     def test_controls_follow_mode(self):
-        self.assertIn("const showRating = revealed && studyMode === 'review';", self.flashcard)
+        self.assertIn("const showRating = isReview && revealed;", self.flashcard)
         self.assertIn("const showNav = hasCard && studyMode === 'browse';", self.flashcard)
         self.assertIn("Duyệt danh sách", self.flashcard)
 

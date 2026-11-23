@@ -594,6 +594,139 @@ EPISODES = [
                 ]
             }
         ]
+    },
+    {
+        "id": "office_ep05",
+        "chapter_no": 5,
+        "title": {
+            "zh": "第五集：年终奖",
+            "zh_trad": "第五集：年終獎",
+            "vi": "Tập 5: Tiền Thưởng Cuối Năm",
+            "pinyin": "dì wǔ jí ： nián zhōng jiǎng"
+        },
+        "description_vi": "Sếp Vương dõng dạc tuyên bố công ty năm nay tăng trưởng gấp đôi, tiền thưởng cuối năm chắc chắn sẽ khiến ai nấy bất ngờ. Chiều thứ Sáu, chiếc hộp thưởng đỏ chót rốt cuộc cũng hạ cánh xuống bàn làm việc...",
+        "difficulty": "HSK 1 - 4",
+        "estimatedMinutes": 3,
+        "panels": [
+            {
+                "page_num": 1,
+                "src_file": RAW_DIR / "dagongren_ep05_p1_1795429064699.jpg",
+                "dialogues": [
+                    {
+                        "id": "p1_d1",
+                        "character": "王经理 (Sếp Vương)",
+                        "speaker": "王经理",
+                        "zh": "今年公司业绩翻倍，年终奖绝对让大家惊喜！",
+                        "vi": "Năm nay thành tích công ty tăng gấp đôi, tiền thưởng cuối năm tuyệt đối khiến mọi người bất ngờ!",
+                        "box": (360, 25, 1060, 120),
+                        "tail_base_x": 800,
+                        "tail_tip": (830, 210),
+                        "tail_side": "bottom"
+                    }
+                ]
+            },
+            {
+                "page_num": 2,
+                "src_file": RAW_DIR / "dagongren_ep05_p2_1795429108066.jpg",
+                "dialogues": [
+                    {
+                        "id": "p2_d1",
+                        "character": "小阳 (Tiểu Dương)",
+                        "speaker": "小阳",
+                        "zh": "翻倍？！难道能发三个月工资？！",
+                        "vi": "Nhân đôi á?! Lẽ nào được phát tới ba tháng lương?!",
+                        "box": (40, 25, 540, 120),
+                        "tail_base_x": 240,
+                        "tail_tip": (280, 150),
+                        "tail_side": "bottom"
+                    },
+                    {
+                        "id": "p2_d2",
+                        "character": "小铃 (Tiểu Linh)",
+                        "speaker": "小铃",
+                        "zh": "醒醒，去年他也这么说。",
+                        "vi": "Tỉnh lại đi, năm ngoái ổng cũng nói thế đấy.",
+                        "box": (800, 30, 1300, 125),
+                        "tail_base_x": 850,
+                        "tail_tip": (760, 200),
+                        "tail_side": "bottom"
+                    }
+                ]
+            },
+            {
+                "page_num": 3,
+                "src_file": RAW_DIR / "dagongren_ep05_p3_1795429139958.jpg",
+                "dialogues": [
+                    {
+                        "id": "p3_d1",
+                        "character": "小阳 (Tiểu Dương)",
+                        "speaker": "小阳",
+                        "zh": "来了来了！邮件到了！",
+                        "vi": "Tới rồi tới rồi! Email thông báo tới rồi!",
+                        "box": (560, 40, 960, 135),
+                        "tail_base_x": 730,
+                        "tail_tip": (730, 240),
+                        "tail_side": "bottom"
+                    }
+                ]
+            },
+            {
+                "page_num": 4,
+                "src_file": RAW_DIR / "dagongren_ep05_p4_1795429182233.jpg",
+                "dialogues": [
+                    {
+                        "id": "p4_d1",
+                        "character": "小铃 (Tiểu Linh)",
+                        "speaker": "小铃",
+                        "zh": "五张课程优惠券，和两斤红富士苹果？",
+                        "vi": "Năm phiếu giảm giá khoá học, và hai cân táo đỏ Phú Sĩ?",
+                        "box": (140, 30, 800, 125),
+                        "tail_base_x": 230,
+                        "tail_tip": (210, 160),
+                        "tail_side": "bottom"
+                    },
+                    {
+                        "id": "p4_d2",
+                        "character": "小阳 (Tiểu Dương)",
+                        "speaker": "小阳",
+                        "zh": "……我的年终奖？",
+                        "vi": "……Tiền thưởng cuối năm của tôi đâu?",
+                        "box": (840, 30, 1240, 125),
+                        "tail_base_x": 900,
+                        "tail_tip": (750, 160),
+                        "tail_side": "bottom"
+                    }
+                ]
+            },
+            {
+                "page_num": 5,
+                "src_file": RAW_DIR / "dagongren_ep05_p5_1795429217660.jpg",
+                "dialogues": [
+                    {
+                        "id": "p5_d1",
+                        "character": "王经理 (Sếp Vương)",
+                        "speaker": "王经理",
+                        "zh": "怎么样，惊喜吧？礼轻情意重，明年继续加油！",
+                        "vi": "Thế nào, bất ngờ chưa? Của ít lòng nhiều, năm sau tiếp tục cố gắng nhé!",
+                        "box": (660, 25, 1340, 120),
+                        "tail_base_x": 720,
+                        "tail_tip": (640, 160),
+                        "tail_side": "bottom"
+                    },
+                    {
+                        "id": "p5_d2",
+                        "character": "小阳 (Tiểu Dương)",
+                        "speaker": "小阳",
+                        "zh": "我真谢谢您……",
+                        "vi": "Em thực sự cảm ơn anh nhiều lắm luôn á...",
+                        "box": (80, 560, 420, 655),
+                        "tail_side": "top",
+                        "tail_base_x": 280,
+                        "tail_tip": (320, 480)
+                    }
+                ]
+            }
+        ]
     }
 ]
 

@@ -130,5 +130,38 @@
       "王总",
       "老周"
     ]
+  },
+  {
+    "id": "office_ep05",
+    "series": "office",
+    "series_title": "打工人日记",
+    "series_title_vi": "Nhật Ký Dân Công Sở",
+    "collection": "office",
+    "volume": 1,
+    "chapter_in_volume": null,
+    "chapter_no": 5,
+    "title": {
+      "zh": "第五集：年终奖",
+      "zh_trad": "第五集：年終獎",
+      "vi": "Tập 5: Tiền Thưởng Cuối Năm",
+      "pinyin": "dì wǔ jí ： nián zhōng jiǎng"
+    },
+    "description_vi": "Sếp Vương dõng dạc tuyên bố công ty năm nay tăng trưởng gấp đôi, tiền thưởng cuối năm chắc chắn sẽ khiến ai nấy bất ngờ. Chiều thứ Sáu, chiếc hộp thưởng đỏ chót rốt cuộc cũng hạ cánh xuống bàn làm việc...",
+    "cover_image": "assets/images/readings/manga/office/office_ep05/cover.webp",
+    "source": "《打工人日记》原创职场情景喜剧 · Synapse Hanzi Studio",
+    "source_url": "https://github.com/Synapse-Hanzi",
+    "source_credits": "Kịch bản và tạo hình nhân vật độc quyền: Synapse Hanzi Studio. Tranh minh họa kết hợp hệ thống tra từ tương tác, pinyin, Hán-Việt và âm thanh đa giác quan.",
+    "license": "Original / Educational",
+    "page_count": 5,
+    "difficulty": "HSK 1 - 4",
+    "estimatedMinutes": 3,
+    "file": "database/readings/manga/office/office_ep05.json",
+    "proper_names": [
+      "小阳",
+      "小铃",
+      "王经理",
+      "王总",
+      "老周"
+    ]
   }
 ]

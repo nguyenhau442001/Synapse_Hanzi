@@ -39,6 +39,7 @@ BUNDLE_FILES = [
     "assets/css/feature-promo-modal.css",
     "assets/css/feedback.css",
     "assets/css/footer.css",
+    "assets/css/pwa-install.css",
     "assets/css/design-system.css",
 ]
 

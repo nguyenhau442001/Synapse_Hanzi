@@ -1,0 +1,2141 @@
+{
+  "id": "office_ep05",
+  "series": "office",
+  "series_title": "打工人日记",
+  "series_title_vi": "Nhật Ký Dân Công Sở",
+  "collection": "office",
+  "volume": 1,
+  "chapter_in_volume": null,
+  "chapter_no": 5,
+  "title": {
+    "zh": "第五集：年终奖",
+    "zh_trad": "第五集：年終獎",
+    "vi": "Tập 5: Tiền Thưởng Cuối Năm",
+    "pinyin": "dì wǔ jí ： nián zhōng jiǎng"
+  },
+  "description_vi": "Sếp Vương dõng dạc tuyên bố công ty năm nay tăng trưởng gấp đôi, tiền thưởng cuối năm chắc chắn sẽ khiến ai nấy bất ngờ. Chiều thứ Sáu, chiếc hộp thưởng đỏ chót rốt cuộc cũng hạ cánh xuống bàn làm việc...",
+  "cover_image": "assets/images/readings/manga/office/office_ep05/cover.webp",
+  "source": "《打工人日记》原创职场情景喜剧 · Synapse Hanzi Studio",
+  "source_url": "https://github.com/Synapse-Hanzi",
+  "source_credits": "Kịch bản và tạo hình nhân vật độc quyền: Synapse Hanzi Studio. Tranh minh họa kết hợp hệ thống tra từ tương tác, pinyin, Hán-Việt và âm thanh đa giác quan.",
+  "license": "Original / Educational",
+  "page_count": 5,
+  "difficulty": "HSK 1 - 4",
+  "estimatedMinutes": 3,
+  "file": "database/readings/manga/office/office_ep05.json",
+  "proper_names": [
+    "小阳",
+    "小铃",
+    "王经理",
+    "王总",
+    "老周"
+  ],
+  "pages": [
+    {
+      "page_num": 1,
+      "image": "assets/images/readings/manga/office/office_ep05/page_01.webp",
+      "dialogues": [
+        {
+          "id": "p1_d1",
+          "character": "王经理 (Sếp Vương)",
+          "bbox": {
+            "x": 26.16,
+            "y": 3.26,
+            "width": 50.87,
+            "height": 12.37
+          },
+          "zh": "今年公司业绩翻倍，年终奖绝对让大家惊喜！",
+          "zh_trad": "今年公司業績翻倍，年終獎絕對讓大家驚喜！",
+          "pinyin": "jīn nián gōng sī yè jì fān bèi ， nián zhōng jiǎng jué duì ràng dà jiā jīng xǐ ！",
+          "vi": "Năm nay thành tích công ty tăng gấp đôi, tiền thưởng cuối năm tuyệt đối khiến mọi người bất ngờ!",
+          "tokens": [
+            {
+              "text": "今年",
+              "text_trad": "今年",
+              "pinyin": "jīnnián",
+              "hanviet": "Kim Niên",
+              "meaning_vi": "năm nay",
+              "hsk": 1
+            },
+            {
+              "text": "公司",
+              "text_trad": "公司",
+              "pinyin": "gōngsī",
+              "hanviet": "Công Ty",
+              "meaning_vi": "công ty",
+              "hsk": 1
+            },
+            {
+              "text": "业绩",
+              "text_trad": "業績",
+              "pinyin": "yèjì",
+              "hanviet": "Nghiệp Tích",
+              "meaning_vi": "kết quả kinh doanh; thành tích công tác",
+              "hsk": "7-9"
+            },
+            {
+              "text": "翻倍",
+              "text_trad": "翻倍",
+              "pinyin": "fānbèi",
+              "hanviet": "Phiên Bội",
+              "meaning_vi": "tăng gấp đôi, nhân đôi",
+              "hsk": 4
+            },
+            {
+              "text": "年终奖",
+              "text_trad": "年終獎",
+              "pinyin": "niánzhōngjiǎng",
+              "hanviet": "Niên Chung Thưởng",
+              "meaning_vi": "tiền thưởng cuối năm, thưởng Tết",
+              "hsk": 4
+            },
+            {
+              "text": "绝对",
+              "text_trad": "絕對",
+              "pinyin": "juéduì",
+              "hanviet": "Tuyệt Đối",
+              "meaning_vi": "tuyệt đối",
+              "hsk": 5
+            },
+            {
+              "text": "让",
+              "text_trad": "讓",
+              "pinyin": "ràng",
+              "hanviet": "Nhượng",
+              "meaning_vi": "để cho, khiến",
+              "hsk": 2
+            },
+            {
+              "text": "大家",
+              "text_trad": "大家",
+              "pinyin": "dàjiā",
+              "hanviet": "Đại Gia",
+              "meaning_vi": "mọi người",
+              "hsk": 1
+            },
+            {
+              "text": "惊喜",
+              "text_trad": "驚喜",
+              "pinyin": "jīngxǐ",
+              "hanviet": "Kinh Hỷ",
+              "meaning_vi": "bất ngờ và vui mừng, niềm vui bất ngờ",
+              "hsk": 5
+            }
+          ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "p1_d1_w1",
+          "text": "今年",
+          "text_trad": "今年",
+          "pinyin": "jīnnián",
+          "hanviet": "Kim Niên",
+          "meaning_vi": "năm nay",
+          "hsk": 1,
+          "bbox": {
+            "x": 27.471,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 27.471,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "今年公司業績翻倍，年終獎絕對讓大家驚喜！",
+          "sentence_zh_simplified": "今年公司业绩翻倍，年终奖绝对让大家惊喜！",
+          "sentence_vi": "Năm nay thành tích công ty tăng gấp đôi, tiền thưởng cuối năm tuyệt đối khiến mọi người bất ngờ!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d1_w2",
+          "text": "公司",
+          "text_trad": "公司",
+          "pinyin": "gōngsī",
+          "hanviet": "Công Ty",
+          "meaning_vi": "công ty",
+          "hsk": 1,
+          "bbox": {
+            "x": 31.25,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 31.25,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "今年公司業績翻倍，年終獎絕對讓大家驚喜！",
+          "sentence_zh_simplified": "今年公司业绩翻倍，年终奖绝对让大家惊喜！",
+          "sentence_vi": "Năm nay thành tích công ty tăng gấp đôi, tiền thưởng cuối năm tuyệt đối khiến mọi người bất ngờ!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d1_w3",
+          "text": "业绩",
+          "text_trad": "業績",
+          "pinyin": "yèjì",
+          "hanviet": "Nghiệp Tích",
+          "meaning_vi": "kết quả kinh doanh; thành tích công tác",
+          "hsk": "7-9",
+          "bbox": {
+            "x": 35.029,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 35.029,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "今年公司業績翻倍，年終獎絕對讓大家驚喜！",
+          "sentence_zh_simplified": "今年公司业绩翻倍，年终奖绝对让大家惊喜！",
+          "sentence_vi": "Năm nay thành tích công ty tăng gấp đôi, tiền thưởng cuối năm tuyệt đối khiến mọi người bất ngờ!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d1_w4",
+          "text": "翻倍",
+          "text_trad": "翻倍",
+          "pinyin": "fānbèi",
+          "hanviet": "Phiên Bội",
+          "meaning_vi": "tăng gấp đôi, nhân đôi",
+          "hsk": 4,
+          "bbox": {
+            "x": 38.808,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 38.808,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "今年公司業績翻倍，年終獎絕對讓大家驚喜！",
+          "sentence_zh_simplified": "今年公司业绩翻倍，年终奖绝对让大家惊喜！",
+          "sentence_vi": "Năm nay thành tích công ty tăng gấp đôi, tiền thưởng cuối năm tuyệt đối khiến mọi người bất ngờ!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d1_w5",
+          "text": "年终奖",
+          "text_trad": "年終獎",
+          "pinyin": "niánzhōngjiǎng",
+          "hanviet": "Niên Chung Thưởng",
+          "meaning_vi": "tiền thưởng cuối năm, thưởng Tết",
+          "hsk": 4,
+          "bbox": {
+            "x": 42.587,
+            "y": 7.682,
+            "width": 5.669,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 42.587,
+              "y": 7.682,
+              "width": 5.669,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "今年公司業績翻倍，年終獎絕對讓大家驚喜！",
+          "sentence_zh_simplified": "今年公司业绩翻倍，年终奖绝对让大家惊喜！",
+          "sentence_vi": "Năm nay thành tích công ty tăng gấp đôi, tiền thưởng cuối năm tuyệt đối khiến mọi người bất ngờ!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d1_w6",
+          "text": "绝对",
+          "text_trad": "絕對",
+          "pinyin": "juéduì",
+          "hanviet": "Tuyệt Đối",
+          "meaning_vi": "tuyệt đối",
+          "hsk": 5,
+          "bbox": {
+            "x": 48.256,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 48.256,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "今年公司業績翻倍，年終獎絕對讓大家驚喜！",
+          "sentence_zh_simplified": "今年公司业绩翻倍，年终奖绝对让大家惊喜！",
+          "sentence_vi": "Năm nay thành tích công ty tăng gấp đôi, tiền thưởng cuối năm tuyệt đối khiến mọi người bất ngờ!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d1_w7",
+          "text": "让",
+          "text_trad": "讓",
+          "pinyin": "ràng",
+          "hanviet": "Nhượng",
+          "meaning_vi": "để cho, khiến",
+          "hsk": 2,
+          "bbox": {
+            "x": 52.035,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 52.035,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "今年公司業績翻倍，年終獎絕對讓大家驚喜！",
+          "sentence_zh_simplified": "今年公司业绩翻倍，年终奖绝对让大家惊喜！",
+          "sentence_vi": "Năm nay thành tích công ty tăng gấp đôi, tiền thưởng cuối năm tuyệt đối khiến mọi người bất ngờ!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d1_w8",
+          "text": "大家",
+          "text_trad": "大家",
+          "pinyin": "dàjiā",
+          "hanviet": "Đại Gia",
+          "meaning_vi": "mọi người",
+          "hsk": 1,
+          "bbox": {
+            "x": 53.924,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 53.924,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "今年公司業績翻倍，年終獎絕對讓大家驚喜！",
+          "sentence_zh_simplified": "今年公司业绩翻倍，年终奖绝对让大家惊喜！",
+          "sentence_vi": "Năm nay thành tích công ty tăng gấp đôi, tiền thưởng cuối năm tuyệt đối khiến mọi người bất ngờ!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p1_d1"
+        },
+        {
+          "id": "p1_d1_w9",
+          "text": "惊喜",
+          "text_trad": "驚喜",
+          "pinyin": "jīngxǐ",
+          "hanviet": "Kinh Hỷ",
+          "meaning_vi": "bất ngờ và vui mừng, niềm vui bất ngờ",
+          "hsk": 5,
+          "bbox": {
+            "x": 57.703,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 57.703,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "今年公司業績翻倍，年終獎絕對讓大家驚喜！",
+          "sentence_zh_simplified": "今年公司业绩翻倍，年终奖绝对让大家惊喜！",
+          "sentence_vi": "Năm nay thành tích công ty tăng gấp đôi, tiền thưởng cuối năm tuyệt đối khiến mọi người bất ngờ!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p1_d1"
+        }
+      ],
+      "ocr": {
+        "image_px": [
+          1376,
+          768
+        ]
+      }
+    },
+    {
+      "page_num": 2,
+      "image": "assets/images/readings/manga/office/office_ep05/page_02.webp",
+      "dialogues": [
+        {
+          "id": "p2_d1",
+          "character": "小阳 (Tiểu Dương)",
+          "bbox": {
+            "x": 2.91,
+            "y": 3.26,
+            "width": 36.34,
+            "height": 12.37
+          },
+          "zh": "翻倍？！难道能发三个月工资？！",
+          "zh_trad": "翻倍？！難道能發三個月工資？！",
+          "pinyin": "fān bèi ？！ nán dào néng fā sān gè yuè gōng zī ？！",
+          "vi": "Nhân đôi á?! Lẽ nào được phát tới ba tháng lương?!",
+          "tokens": [
+            {
+              "text": "翻倍",
+              "text_trad": "翻倍",
+              "pinyin": "fānbèi",
+              "hanviet": "Phiên Bội",
+              "meaning_vi": "tăng gấp đôi, nhân đôi",
+              "hsk": 4
+            },
+            {
+              "text": "难道",
+              "text_trad": "難道",
+              "pinyin": "nándào",
+              "hanviet": "Nan Đạo",
+              "meaning_vi": "chẳng lẽ",
+              "hsk": 4
+            },
+            {
+              "text": "能",
+              "text_trad": "能",
+              "pinyin": "néng",
+              "hanviet": "Năng",
+              "meaning_vi": "có thể",
+              "hsk": 1
+            },
+            {
+              "text": "发",
+              "text_trad": "發",
+              "pinyin": "fā",
+              "hanviet": "Phát",
+              "meaning_vi": "phát ra, gửi",
+              "hsk": 3
+            },
+            {
+              "text": "三",
+              "text_trad": "三",
+              "pinyin": "sān",
+              "hanviet": "Tam",
+              "meaning_vi": "ba",
+              "hsk": 1
+            },
+            {
+              "text": "个",
+              "text_trad": "個",
+              "pinyin": "gè",
+              "hanviet": "Cá",
+              "meaning_vi": "cái (lượng từ)",
+              "hsk": 1
+            },
+            {
+              "text": "月",
+              "text_trad": "月",
+              "pinyin": "yuè",
+              "hanviet": "Nguyệt",
+              "meaning_vi": "tháng",
+              "hsk": 1
+            },
+            {
+              "text": "工资",
+              "text_trad": "工資",
+              "pinyin": "gōngzī",
+              "hanviet": "Công Tư",
+              "meaning_vi": "lương",
+              "hsk": 4
+            }
+          ]
+        },
+        {
+          "id": "p2_d2",
+          "character": "小铃 (Tiểu Linh)",
+          "bbox": {
+            "x": 58.14,
+            "y": 3.91,
+            "width": 36.34,
+            "height": 12.37
+          },
+          "zh": "醒醒，去年他也这么说。",
+          "zh_trad": "醒醒，去年他也這麼說。",
+          "pinyin": "xǐng xǐng ， qù nián tā yě zhè me shuō 。",
+          "vi": "Tỉnh lại đi, năm ngoái ổng cũng nói thế đấy.",
+          "tokens": [
+            {
+              "text": "醒醒",
+              "text_trad": "醒醒",
+              "pinyin": "xǐngxǐng",
+              "hanviet": "Tỉnh Tỉnh",
+              "meaning_vi": "tỉnh lại đi, thức tỉnh đi",
+              "hsk": 3
+            },
+            {
+              "text": "去年",
+              "text_trad": "去年",
+              "pinyin": "qùnián",
+              "hanviet": "Khứ Niên",
+              "meaning_vi": "năm ngoái",
+              "hsk": 1
+            },
+            {
+              "text": "他",
+              "text_trad": "他",
+              "pinyin": "tā",
+              "hanviet": "Tha",
+              "meaning_vi": "anh ấy, nó",
+              "hsk": 1
+            },
+            {
+              "text": "也",
+              "text_trad": "也",
+              "pinyin": "yě",
+              "hanviet": "Dã",
+              "meaning_vi": "cũng",
+              "hsk": 1
+            },
+            {
+              "text": "这么",
+              "text_trad": "這麼",
+              "pinyin": "zhème",
+              "hanviet": "Giá Ma",
+              "meaning_vi": "vì vậy (đại từ)",
+              "hsk": 2
+            },
+            {
+              "text": "说",
+              "text_trad": "說",
+              "pinyin": "shuō",
+              "hanviet": "Thuyết",
+              "meaning_vi": "nói",
+              "hsk": 1
+            }
+          ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "p2_d1_w1",
+          "text": "翻倍",
+          "text_trad": "翻倍",
+          "pinyin": "fānbèi",
+          "hanviet": "Phiên Bội",
+          "meaning_vi": "tăng gấp đôi, nhân đôi",
+          "hsk": 4,
+          "bbox": {
+            "x": 4.215,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 4.215,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "翻倍？！難道能發三個月工資？！",
+          "sentence_zh_simplified": "翻倍？！难道能发三个月工资？！",
+          "sentence_vi": "Nhân đôi á?! Lẽ nào được phát tới ba tháng lương?!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w2",
+          "text": "难道",
+          "text_trad": "難道",
+          "pinyin": "nándào",
+          "hanviet": "Nan Đạo",
+          "meaning_vi": "chẳng lẽ",
+          "hsk": 4,
+          "bbox": {
+            "x": 7.994,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 7.994,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "翻倍？！難道能發三個月工資？！",
+          "sentence_zh_simplified": "翻倍？！难道能发三个月工资？！",
+          "sentence_vi": "Nhân đôi á?! Lẽ nào được phát tới ba tháng lương?!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w3",
+          "text": "能",
+          "text_trad": "能",
+          "pinyin": "néng",
+          "hanviet": "Năng",
+          "meaning_vi": "có thể",
+          "hsk": 1,
+          "bbox": {
+            "x": 11.773,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 11.773,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "翻倍？！難道能發三個月工資？！",
+          "sentence_zh_simplified": "翻倍？！难道能发三个月工资？！",
+          "sentence_vi": "Nhân đôi á?! Lẽ nào được phát tới ba tháng lương?!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w4",
+          "text": "发",
+          "text_trad": "發",
+          "pinyin": "fā",
+          "hanviet": "Phát",
+          "meaning_vi": "phát ra, gửi",
+          "hsk": 3,
+          "bbox": {
+            "x": 13.663,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 13.663,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "翻倍？！難道能發三個月工資？！",
+          "sentence_zh_simplified": "翻倍？！难道能发三个月工资？！",
+          "sentence_vi": "Nhân đôi á?! Lẽ nào được phát tới ba tháng lương?!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w5",
+          "text": "三",
+          "text_trad": "三",
+          "pinyin": "sān",
+          "hanviet": "Tam",
+          "meaning_vi": "ba",
+          "hsk": 1,
+          "bbox": {
+            "x": 15.552,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 15.552,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "翻倍？！難道能發三個月工資？！",
+          "sentence_zh_simplified": "翻倍？！难道能发三个月工资？！",
+          "sentence_vi": "Nhân đôi á?! Lẽ nào được phát tới ba tháng lương?!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w6",
+          "text": "个",
+          "text_trad": "個",
+          "pinyin": "gè",
+          "hanviet": "Cá",
+          "meaning_vi": "cái (lượng từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 17.442,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 17.442,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "翻倍？！難道能發三個月工資？！",
+          "sentence_zh_simplified": "翻倍？！难道能发三个月工资？！",
+          "sentence_vi": "Nhân đôi á?! Lẽ nào được phát tới ba tháng lương?!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w7",
+          "text": "月",
+          "text_trad": "月",
+          "pinyin": "yuè",
+          "hanviet": "Nguyệt",
+          "meaning_vi": "tháng",
+          "hsk": 1,
+          "bbox": {
+            "x": 19.331,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 19.331,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "翻倍？！難道能發三個月工資？！",
+          "sentence_zh_simplified": "翻倍？！难道能发三个月工资？！",
+          "sentence_vi": "Nhân đôi á?! Lẽ nào được phát tới ba tháng lương?!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d1_w8",
+          "text": "工资",
+          "text_trad": "工資",
+          "pinyin": "gōngzī",
+          "hanviet": "Công Tư",
+          "meaning_vi": "lương",
+          "hsk": 4,
+          "bbox": {
+            "x": 21.221,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 21.221,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "翻倍？！難道能發三個月工資？！",
+          "sentence_zh_simplified": "翻倍？！难道能发三个月工资？！",
+          "sentence_vi": "Nhân đôi á?! Lẽ nào được phát tới ba tháng lương?!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p2_d1"
+        },
+        {
+          "id": "p2_d2_w1",
+          "text": "醒醒",
+          "text_trad": "醒醒",
+          "pinyin": "xǐngxǐng",
+          "hanviet": "Tỉnh Tỉnh",
+          "meaning_vi": "tỉnh lại đi, thức tỉnh đi",
+          "hsk": 3,
+          "bbox": {
+            "x": 59.448,
+            "y": 8.333,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 59.448,
+              "y": 8.333,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "醒醒，去年他也這麼說。",
+          "sentence_zh_simplified": "醒醒，去年他也这么说。",
+          "sentence_vi": "Tỉnh lại đi, năm ngoái ổng cũng nói thế đấy.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p2_d2"
+        },
+        {
+          "id": "p2_d2_w2",
+          "text": "去年",
+          "text_trad": "去年",
+          "pinyin": "qùnián",
+          "hanviet": "Khứ Niên",
+          "meaning_vi": "năm ngoái",
+          "hsk": 1,
+          "bbox": {
+            "x": 63.227,
+            "y": 8.333,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 63.227,
+              "y": 8.333,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "醒醒，去年他也這麼說。",
+          "sentence_zh_simplified": "醒醒，去年他也这么说。",
+          "sentence_vi": "Tỉnh lại đi, năm ngoái ổng cũng nói thế đấy.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p2_d2"
+        },
+        {
+          "id": "p2_d2_w3",
+          "text": "他",
+          "text_trad": "他",
+          "pinyin": "tā",
+          "hanviet": "Tha",
+          "meaning_vi": "anh ấy, nó",
+          "hsk": 1,
+          "bbox": {
+            "x": 67.006,
+            "y": 8.333,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 67.006,
+              "y": 8.333,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "醒醒，去年他也這麼說。",
+          "sentence_zh_simplified": "醒醒，去年他也这么说。",
+          "sentence_vi": "Tỉnh lại đi, năm ngoái ổng cũng nói thế đấy.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p2_d2"
+        },
+        {
+          "id": "p2_d2_w4",
+          "text": "也",
+          "text_trad": "也",
+          "pinyin": "yě",
+          "hanviet": "Dã",
+          "meaning_vi": "cũng",
+          "hsk": 1,
+          "bbox": {
+            "x": 68.895,
+            "y": 8.333,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 68.895,
+              "y": 8.333,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "醒醒，去年他也這麼說。",
+          "sentence_zh_simplified": "醒醒，去年他也这么说。",
+          "sentence_vi": "Tỉnh lại đi, năm ngoái ổng cũng nói thế đấy.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p2_d2"
+        },
+        {
+          "id": "p2_d2_w5",
+          "text": "这么",
+          "text_trad": "這麼",
+          "pinyin": "zhème",
+          "hanviet": "Giá Ma",
+          "meaning_vi": "vì vậy (đại từ)",
+          "hsk": 2,
+          "bbox": {
+            "x": 70.785,
+            "y": 8.333,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 70.785,
+              "y": 8.333,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "醒醒，去年他也這麼說。",
+          "sentence_zh_simplified": "醒醒，去年他也这么说。",
+          "sentence_vi": "Tỉnh lại đi, năm ngoái ổng cũng nói thế đấy.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p2_d2"
+        },
+        {
+          "id": "p2_d2_w6",
+          "text": "说",
+          "text_trad": "說",
+          "pinyin": "shuō",
+          "hanviet": "Thuyết",
+          "meaning_vi": "nói",
+          "hsk": 1,
+          "bbox": {
+            "x": 74.564,
+            "y": 8.333,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 74.564,
+              "y": 8.333,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "醒醒，去年他也這麼說。",
+          "sentence_zh_simplified": "醒醒，去年他也这么说。",
+          "sentence_vi": "Tỉnh lại đi, năm ngoái ổng cũng nói thế đấy.",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p2_d2"
+        }
+      ],
+      "ocr": {
+        "image_px": [
+          1376,
+          768
+        ]
+      }
+    },
+    {
+      "page_num": 3,
+      "image": "assets/images/readings/manga/office/office_ep05/page_03.webp",
+      "dialogues": [
+        {
+          "id": "p3_d1",
+          "character": "小阳 (Tiểu Dương)",
+          "bbox": {
+            "x": 40.7,
+            "y": 5.21,
+            "width": 29.07,
+            "height": 12.37
+          },
+          "zh": "来了来了！邮件到了！",
+          "zh_trad": "來了來了！郵件到了！",
+          "pinyin": "lái le lái le ！ yóu jiàn dào le ！",
+          "vi": "Tới rồi tới rồi! Email thông báo tới rồi!",
+          "tokens": [
+            {
+              "text": "来",
+              "text_trad": "來",
+              "pinyin": "lái",
+              "hanviet": "Lai",
+              "meaning_vi": "đến, tới",
+              "hsk": 1
+            },
+            {
+              "text": "了",
+              "text_trad": "了",
+              "pinyin": "le",
+              "hanviet": "Liễu",
+              "meaning_vi": "rồi (trợ từ)",
+              "hsk": 1
+            },
+            {
+              "text": "来",
+              "text_trad": "來",
+              "pinyin": "lái",
+              "hanviet": "Lai",
+              "meaning_vi": "đến, tới",
+              "hsk": 1
+            },
+            {
+              "text": "了",
+              "text_trad": "了",
+              "pinyin": "le",
+              "hanviet": "Liễu",
+              "meaning_vi": "rồi (trợ từ)",
+              "hsk": 1
+            },
+            {
+              "text": "邮件",
+              "text_trad": "郵件",
+              "pinyin": "yóujiàn",
+              "hanviet": "Bưu Kiện",
+              "meaning_vi": "thư; email",
+              "hsk": 3
+            },
+            {
+              "text": "到",
+              "text_trad": "到",
+              "pinyin": "dào",
+              "hanviet": "Đáo",
+              "meaning_vi": "đến",
+              "hsk": 1
+            },
+            {
+              "text": "了",
+              "text_trad": "了",
+              "pinyin": "le",
+              "hanviet": "Liễu",
+              "meaning_vi": "rồi (trợ từ)",
+              "hsk": 1
+            }
+          ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "p3_d1_w1",
+          "text": "来",
+          "text_trad": "來",
+          "pinyin": "lái",
+          "hanviet": "Lai",
+          "meaning_vi": "đến, tới",
+          "hsk": 1,
+          "bbox": {
+            "x": 42.006,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 42.006,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "來了來了！郵件到了！",
+          "sentence_zh_simplified": "来了来了！邮件到了！",
+          "sentence_vi": "Tới rồi tới rồi! Email thông báo tới rồi!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w2",
+          "text": "了",
+          "text_trad": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "meaning_vi": "rồi (trợ từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 43.895,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 43.895,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "來了來了！郵件到了！",
+          "sentence_zh_simplified": "来了来了！邮件到了！",
+          "sentence_vi": "Tới rồi tới rồi! Email thông báo tới rồi!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w3",
+          "text": "来",
+          "text_trad": "來",
+          "pinyin": "lái",
+          "hanviet": "Lai",
+          "meaning_vi": "đến, tới",
+          "hsk": 1,
+          "bbox": {
+            "x": 45.785,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 45.785,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "來了來了！郵件到了！",
+          "sentence_zh_simplified": "来了来了！邮件到了！",
+          "sentence_vi": "Tới rồi tới rồi! Email thông báo tới rồi!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w4",
+          "text": "了",
+          "text_trad": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "meaning_vi": "rồi (trợ từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 47.674,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 47.674,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "來了來了！郵件到了！",
+          "sentence_zh_simplified": "来了来了！邮件到了！",
+          "sentence_vi": "Tới rồi tới rồi! Email thông báo tới rồi!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w5",
+          "text": "邮件",
+          "text_trad": "郵件",
+          "pinyin": "yóujiàn",
+          "hanviet": "Bưu Kiện",
+          "meaning_vi": "thư; email",
+          "hsk": 3,
+          "bbox": {
+            "x": 49.564,
+            "y": 9.635,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 49.564,
+              "y": 9.635,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "來了來了！郵件到了！",
+          "sentence_zh_simplified": "来了来了！邮件到了！",
+          "sentence_vi": "Tới rồi tới rồi! Email thông báo tới rồi!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w6",
+          "text": "到",
+          "text_trad": "到",
+          "pinyin": "dào",
+          "hanviet": "Đáo",
+          "meaning_vi": "đến",
+          "hsk": 1,
+          "bbox": {
+            "x": 53.343,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 53.343,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "來了來了！郵件到了！",
+          "sentence_zh_simplified": "来了来了！邮件到了！",
+          "sentence_vi": "Tới rồi tới rồi! Email thông báo tới rồi!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p3_d1"
+        },
+        {
+          "id": "p3_d1_w7",
+          "text": "了",
+          "text_trad": "了",
+          "pinyin": "le",
+          "hanviet": "Liễu",
+          "meaning_vi": "rồi (trợ từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 55.233,
+            "y": 9.635,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 55.233,
+              "y": 9.635,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "來了來了！郵件到了！",
+          "sentence_zh_simplified": "来了来了！邮件到了！",
+          "sentence_vi": "Tới rồi tới rồi! Email thông báo tới rồi!",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p3_d1"
+        }
+      ],
+      "ocr": {
+        "image_px": [
+          1376,
+          768
+        ]
+      }
+    },
+    {
+      "page_num": 4,
+      "image": "assets/images/readings/manga/office/office_ep05/page_04.webp",
+      "dialogues": [
+        {
+          "id": "p4_d1",
+          "character": "小铃 (Tiểu Linh)",
+          "bbox": {
+            "x": 10.17,
+            "y": 3.91,
+            "width": 47.97,
+            "height": 12.37
+          },
+          "zh": "五张课程优惠券，和两斤红富士苹果？",
+          "zh_trad": "五張課程優惠券，和兩斤紅富士蘋果？",
+          "pinyin": "wǔ zhāng kè chéng yōu huì quàn ， hé liǎng jīn hóng fù shì píng guǒ ？",
+          "vi": "Năm phiếu giảm giá khoá học, và hai cân táo đỏ Phú Sĩ?",
+          "tokens": [
+            {
+              "text": "五",
+              "text_trad": "五",
+              "pinyin": "wǔ",
+              "hanviet": "Ngũ",
+              "meaning_vi": "năm",
+              "hsk": 1
+            },
+            {
+              "text": "张",
+              "text_trad": "張",
+              "pinyin": "zhāng",
+              "hanviet": "Trương",
+              "meaning_vi": "tấm, tờ (lượng từ)",
+              "hsk": 3
+            },
+            {
+              "text": "课程",
+              "text_trad": "課程",
+              "pinyin": "kèchéng",
+              "hanviet": "Khoá Trình",
+              "meaning_vi": "khóa học, chương trình học",
+              "hsk": 4
+            },
+            {
+              "text": "优惠券",
+              "text_trad": "優惠券",
+              "pinyin": "yōuhuìquàn",
+              "hanviet": "Ưu Huệ Khoán",
+              "meaning_vi": "phiếu giảm giá, voucher",
+              "hsk": 4
+            },
+            {
+              "text": "和",
+              "text_trad": "和",
+              "pinyin": "hé",
+              "hanviet": "Hoà ¹",
+              "meaning_vi": "và",
+              "hsk": 1
+            },
+            {
+              "text": "两",
+              "text_trad": "兩",
+              "pinyin": "liǎng",
+              "hanviet": "Lưỡng ¹",
+              "meaning_vi": "hai (số lượng)",
+              "hsk": 1
+            },
+            {
+              "text": "斤",
+              "text_trad": "斤",
+              "pinyin": "jīn",
+              "hanviet": "Cân",
+              "meaning_vi": "cân (đơn vị bằng 0,5 kg)",
+              "hsk": 3
+            },
+            {
+              "text": "红富士",
+              "text_trad": "紅富士",
+              "pinyin": "hóngfùshì",
+              "hanviet": "Hồng Phú Sĩ",
+              "meaning_vi": "táo đỏ Phú Sĩ (Fuji)",
+              "hsk": 3
+            },
+            {
+              "text": "苹果",
+              "text_trad": "蘋果",
+              "pinyin": "píngguǒ",
+              "hanviet": "Bình Quả",
+              "meaning_vi": "quả táo",
+              "hsk": 1
+            }
+          ]
+        },
+        {
+          "id": "p4_d2",
+          "character": "小阳 (Tiểu Dương)",
+          "bbox": {
+            "x": 61.05,
+            "y": 3.91,
+            "width": 29.07,
+            "height": 12.37
+          },
+          "zh": "……我的年终奖？",
+          "zh_trad": "……我的年終獎？",
+          "pinyin": "…… wǒ de nián zhōng jiǎng ？",
+          "vi": "……Tiền thưởng cuối năm của tôi đâu?",
+          "tokens": [
+            {
+              "text": "我",
+              "text_trad": "我",
+              "pinyin": "wǒ",
+              "hanviet": "Ngã",
+              "meaning_vi": "tôi",
+              "hsk": 1
+            },
+            {
+              "text": "的",
+              "text_trad": "的",
+              "pinyin": "de",
+              "hanviet": "Đích",
+              "meaning_vi": "của (trợ từ)",
+              "hsk": 1
+            },
+            {
+              "text": "年终奖",
+              "text_trad": "年終獎",
+              "pinyin": "niánzhōngjiǎng",
+              "hanviet": "Niên Chung Thưởng",
+              "meaning_vi": "tiền thưởng cuối năm, thưởng Tết",
+              "hsk": 4
+            }
+          ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "p4_d1_w1",
+          "text": "五",
+          "text_trad": "五",
+          "pinyin": "wǔ",
+          "hanviet": "Ngũ",
+          "meaning_vi": "năm",
+          "hsk": 1,
+          "bbox": {
+            "x": 11.483,
+            "y": 8.333,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 11.483,
+              "y": 8.333,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "五張課程優惠券，和兩斤紅富士蘋果？",
+          "sentence_zh_simplified": "五张课程优惠券，和两斤红富士苹果？",
+          "sentence_vi": "Năm phiếu giảm giá khoá học, và hai cân táo đỏ Phú Sĩ?",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d1_w2",
+          "text": "张",
+          "text_trad": "張",
+          "pinyin": "zhāng",
+          "hanviet": "Trương",
+          "meaning_vi": "tấm, tờ (lượng từ)",
+          "hsk": 3,
+          "bbox": {
+            "x": 13.372,
+            "y": 8.333,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 13.372,
+              "y": 8.333,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "五張課程優惠券，和兩斤紅富士蘋果？",
+          "sentence_zh_simplified": "五张课程优惠券，和两斤红富士苹果？",
+          "sentence_vi": "Năm phiếu giảm giá khoá học, và hai cân táo đỏ Phú Sĩ?",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d1_w3",
+          "text": "课程",
+          "text_trad": "課程",
+          "pinyin": "kèchéng",
+          "hanviet": "Khoá Trình",
+          "meaning_vi": "khóa học, chương trình học",
+          "hsk": 4,
+          "bbox": {
+            "x": 15.262,
+            "y": 8.333,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 15.262,
+              "y": 8.333,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "五張課程優惠券，和兩斤紅富士蘋果？",
+          "sentence_zh_simplified": "五张课程优惠券，和两斤红富士苹果？",
+          "sentence_vi": "Năm phiếu giảm giá khoá học, và hai cân táo đỏ Phú Sĩ?",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d1_w4",
+          "text": "优惠券",
+          "text_trad": "優惠券",
+          "pinyin": "yōuhuìquàn",
+          "hanviet": "Ưu Huệ Khoán",
+          "meaning_vi": "phiếu giảm giá, voucher",
+          "hsk": 4,
+          "bbox": {
+            "x": 19.041,
+            "y": 8.333,
+            "width": 5.669,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 19.041,
+              "y": 8.333,
+              "width": 5.669,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "五張課程優惠券，和兩斤紅富士蘋果？",
+          "sentence_zh_simplified": "五张课程优惠券，和两斤红富士苹果？",
+          "sentence_vi": "Năm phiếu giảm giá khoá học, và hai cân táo đỏ Phú Sĩ?",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d1_w5",
+          "text": "和",
+          "text_trad": "和",
+          "pinyin": "hé",
+          "hanviet": "Hoà ¹",
+          "meaning_vi": "và",
+          "hsk": 1,
+          "bbox": {
+            "x": 24.709,
+            "y": 8.333,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 24.709,
+              "y": 8.333,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "五張課程優惠券，和兩斤紅富士蘋果？",
+          "sentence_zh_simplified": "五张课程优惠券，和两斤红富士苹果？",
+          "sentence_vi": "Năm phiếu giảm giá khoá học, và hai cân táo đỏ Phú Sĩ?",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d1_w6",
+          "text": "两",
+          "text_trad": "兩",
+          "pinyin": "liǎng",
+          "hanviet": "Lưỡng ¹",
+          "meaning_vi": "hai (số lượng)",
+          "hsk": 1,
+          "bbox": {
+            "x": 26.599,
+            "y": 8.333,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 26.599,
+              "y": 8.333,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "五張課程優惠券，和兩斤紅富士蘋果？",
+          "sentence_zh_simplified": "五张课程优惠券，和两斤红富士苹果？",
+          "sentence_vi": "Năm phiếu giảm giá khoá học, và hai cân táo đỏ Phú Sĩ?",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d1_w7",
+          "text": "斤",
+          "text_trad": "斤",
+          "pinyin": "jīn",
+          "hanviet": "Cân",
+          "meaning_vi": "cân (đơn vị bằng 0,5 kg)",
+          "hsk": 3,
+          "bbox": {
+            "x": 28.488,
+            "y": 8.333,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 28.488,
+              "y": 8.333,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "五張課程優惠券，和兩斤紅富士蘋果？",
+          "sentence_zh_simplified": "五张课程优惠券，和两斤红富士苹果？",
+          "sentence_vi": "Năm phiếu giảm giá khoá học, và hai cân táo đỏ Phú Sĩ?",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d1_w8",
+          "text": "红富士",
+          "text_trad": "紅富士",
+          "pinyin": "hóngfùshì",
+          "hanviet": "Hồng Phú Sĩ",
+          "meaning_vi": "táo đỏ Phú Sĩ (Fuji)",
+          "hsk": 3,
+          "bbox": {
+            "x": 30.378,
+            "y": 8.333,
+            "width": 5.669,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 30.378,
+              "y": 8.333,
+              "width": 5.669,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "五張課程優惠券，和兩斤紅富士蘋果？",
+          "sentence_zh_simplified": "五张课程优惠券，和两斤红富士苹果？",
+          "sentence_vi": "Năm phiếu giảm giá khoá học, và hai cân táo đỏ Phú Sĩ?",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d1_w9",
+          "text": "苹果",
+          "text_trad": "蘋果",
+          "pinyin": "píngguǒ",
+          "hanviet": "Bình Quả",
+          "meaning_vi": "quả táo",
+          "hsk": 1,
+          "bbox": {
+            "x": 36.047,
+            "y": 8.333,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 36.047,
+              "y": 8.333,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "五張課程優惠券，和兩斤紅富士蘋果？",
+          "sentence_zh_simplified": "五张课程优惠券，和两斤红富士苹果？",
+          "sentence_vi": "Năm phiếu giảm giá khoá học, và hai cân táo đỏ Phú Sĩ?",
+          "character": "小铃 (Tiểu Linh)",
+          "dialogue_id": "p4_d1"
+        },
+        {
+          "id": "p4_d2_w1",
+          "text": "我",
+          "text_trad": "我",
+          "pinyin": "wǒ",
+          "hanviet": "Ngã",
+          "meaning_vi": "tôi",
+          "hsk": 1,
+          "bbox": {
+            "x": 62.355,
+            "y": 8.333,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 62.355,
+              "y": 8.333,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "……我的年終獎？",
+          "sentence_zh_simplified": "……我的年终奖？",
+          "sentence_vi": "……Tiền thưởng cuối năm của tôi đâu?",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p4_d2"
+        },
+        {
+          "id": "p4_d2_w2",
+          "text": "的",
+          "text_trad": "的",
+          "pinyin": "de",
+          "hanviet": "Đích",
+          "meaning_vi": "của (trợ từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 64.244,
+            "y": 8.333,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 64.244,
+              "y": 8.333,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "……我的年終獎？",
+          "sentence_zh_simplified": "……我的年终奖？",
+          "sentence_vi": "……Tiền thưởng cuối năm của tôi đâu?",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p4_d2"
+        },
+        {
+          "id": "p4_d2_w3",
+          "text": "年终奖",
+          "text_trad": "年終獎",
+          "pinyin": "niánzhōngjiǎng",
+          "hanviet": "Niên Chung Thưởng",
+          "meaning_vi": "tiền thưởng cuối năm, thưởng Tết",
+          "hsk": 4,
+          "bbox": {
+            "x": 66.134,
+            "y": 8.333,
+            "width": 5.669,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 66.134,
+              "y": 8.333,
+              "width": 5.669,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "……我的年終獎？",
+          "sentence_zh_simplified": "……我的年终奖？",
+          "sentence_vi": "……Tiền thưởng cuối năm của tôi đâu?",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p4_d2"
+        }
+      ],
+      "ocr": {
+        "image_px": [
+          1376,
+          768
+        ]
+      }
+    },
+    {
+      "page_num": 5,
+      "image": "assets/images/readings/manga/office/office_ep05/page_05.webp",
+      "dialogues": [
+        {
+          "id": "p5_d1",
+          "character": "王经理 (Sếp Vương)",
+          "bbox": {
+            "x": 47.97,
+            "y": 3.26,
+            "width": 49.42,
+            "height": 12.37
+          },
+          "zh": "怎么样，惊喜吧？礼轻情意重，明年继续加油！",
+          "zh_trad": "怎麼樣，驚喜吧？禮輕情意重，明年繼續加油！",
+          "pinyin": "zěn me yàng ， jīng xǐ ba ？ lǐ qīng qíng yì zhòng ， míng nián jì xù jiā yóu ！",
+          "vi": "Thế nào, bất ngờ chưa? Của ít lòng nhiều, năm sau tiếp tục cố gắng nhé!",
+          "tokens": [
+            {
+              "text": "怎么样",
+              "text_trad": "怎麼樣",
+              "pinyin": "zěnmeyàng",
+              "hanviet": "Chẩm Ma Dạng",
+              "meaning_vi": "như thế nào",
+              "hsk": 1
+            },
+            {
+              "text": "惊喜",
+              "text_trad": "驚喜",
+              "pinyin": "jīngxǐ",
+              "hanviet": "Kinh Hỷ",
+              "meaning_vi": "bất ngờ và vui mừng, niềm vui bất ngờ",
+              "hsk": 5
+            },
+            {
+              "text": "吧",
+              "text_trad": "吧",
+              "pinyin": "ba",
+              "hanviet": "Ba",
+              "meaning_vi": "nhé (trợ từ)",
+              "hsk": 1
+            },
+            {
+              "text": "礼轻情意重",
+              "text_trad": "禮輕情意重",
+              "pinyin": "lǐ qīng qíngyì zhòng",
+              "hanviet": "Lễ Khinh Tình Ý Trọng",
+              "meaning_vi": "của ít lòng nhiều, quà mọn nhưng tấm lòng lớn",
+              "hsk": 5
+            },
+            {
+              "text": "明年",
+              "text_trad": "明年",
+              "pinyin": "míngnián",
+              "hanviet": "Minh Niên",
+              "meaning_vi": "năm tới",
+              "hsk": 1
+            },
+            {
+              "text": "继续",
+              "text_trad": "繼續",
+              "pinyin": "jìxù",
+              "hanviet": "Kế Tục",
+              "meaning_vi": "tiếp tục",
+              "hsk": 4
+            },
+            {
+              "text": "加油",
+              "text_trad": "加油",
+              "pinyin": "jiāyóu",
+              "hanviet": "Gia Dầu",
+              "meaning_vi": "cố lên; đổ xăng",
+              "hsk": 4
+            }
+          ]
+        },
+        {
+          "id": "p5_d2",
+          "character": "小阳 (Tiểu Dương)",
+          "bbox": {
+            "x": 5.81,
+            "y": 72.92,
+            "width": 24.71,
+            "height": 12.37
+          },
+          "zh": "我真谢谢您……",
+          "zh_trad": "我真謝謝您……",
+          "pinyin": "wǒ zhēn xiè xiè nín ……",
+          "vi": "Em thực sự cảm ơn anh nhiều lắm luôn á...",
+          "tokens": [
+            {
+              "text": "我",
+              "text_trad": "我",
+              "pinyin": "wǒ",
+              "hanviet": "Ngã",
+              "meaning_vi": "tôi",
+              "hsk": 1
+            },
+            {
+              "text": "真",
+              "text_trad": "真",
+              "pinyin": "zhēn",
+              "hanviet": "Chân",
+              "meaning_vi": "thật, thực sự",
+              "hsk": 1
+            },
+            {
+              "text": "谢谢",
+              "text_trad": "謝謝",
+              "pinyin": "xièxie",
+              "hanviet": "Tạ Tạ",
+              "meaning_vi": "cảm ơn",
+              "hsk": 1
+            },
+            {
+              "text": "您",
+              "text_trad": "您",
+              "pinyin": "nín",
+              "hanviet": "Nâm",
+              "meaning_vi": "ngài, bạn (kính ngữ)",
+              "hsk": 1
+            }
+          ]
+        }
+      ],
+      "word_hotspots": [
+        {
+          "id": "p5_d1_w1",
+          "text": "怎么样",
+          "text_trad": "怎麼樣",
+          "pinyin": "zěnmeyàng",
+          "hanviet": "Chẩm Ma Dạng",
+          "meaning_vi": "như thế nào",
+          "hsk": 1,
+          "bbox": {
+            "x": 49.273,
+            "y": 7.682,
+            "width": 5.669,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 49.273,
+              "y": 7.682,
+              "width": 5.669,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "怎麼樣，驚喜吧？禮輕情意重，明年繼續加油！",
+          "sentence_zh_simplified": "怎么样，惊喜吧？礼轻情意重，明年继续加油！",
+          "sentence_vi": "Thế nào, bất ngờ chưa? Của ít lòng nhiều, năm sau tiếp tục cố gắng nhé!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w2",
+          "text": "惊喜",
+          "text_trad": "驚喜",
+          "pinyin": "jīngxǐ",
+          "hanviet": "Kinh Hỷ",
+          "meaning_vi": "bất ngờ và vui mừng, niềm vui bất ngờ",
+          "hsk": 5,
+          "bbox": {
+            "x": 54.942,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 54.942,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "怎麼樣，驚喜吧？禮輕情意重，明年繼續加油！",
+          "sentence_zh_simplified": "怎么样，惊喜吧？礼轻情意重，明年继续加油！",
+          "sentence_vi": "Thế nào, bất ngờ chưa? Của ít lòng nhiều, năm sau tiếp tục cố gắng nhé!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w3",
+          "text": "吧",
+          "text_trad": "吧",
+          "pinyin": "ba",
+          "hanviet": "Ba",
+          "meaning_vi": "nhé (trợ từ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 58.721,
+            "y": 7.682,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 58.721,
+              "y": 7.682,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "怎麼樣，驚喜吧？禮輕情意重，明年繼續加油！",
+          "sentence_zh_simplified": "怎么样，惊喜吧？礼轻情意重，明年继续加油！",
+          "sentence_vi": "Thế nào, bất ngờ chưa? Của ít lòng nhiều, năm sau tiếp tục cố gắng nhé!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w4",
+          "text": "礼轻情意重",
+          "text_trad": "禮輕情意重",
+          "pinyin": "lǐ qīng qíngyì zhòng",
+          "hanviet": "Lễ Khinh Tình Ý Trọng",
+          "meaning_vi": "của ít lòng nhiều, quà mọn nhưng tấm lòng lớn",
+          "hsk": 5,
+          "bbox": {
+            "x": 60.61,
+            "y": 7.682,
+            "width": 9.448,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 60.61,
+              "y": 7.682,
+              "width": 9.448,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "怎麼樣，驚喜吧？禮輕情意重，明年繼續加油！",
+          "sentence_zh_simplified": "怎么样，惊喜吧？礼轻情意重，明年继续加油！",
+          "sentence_vi": "Thế nào, bất ngờ chưa? Của ít lòng nhiều, năm sau tiếp tục cố gắng nhé!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w5",
+          "text": "明年",
+          "text_trad": "明年",
+          "pinyin": "míngnián",
+          "hanviet": "Minh Niên",
+          "meaning_vi": "năm tới",
+          "hsk": 1,
+          "bbox": {
+            "x": 70.058,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 70.058,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "怎麼樣，驚喜吧？禮輕情意重，明年繼續加油！",
+          "sentence_zh_simplified": "怎么样，惊喜吧？礼轻情意重，明年继续加油！",
+          "sentence_vi": "Thế nào, bất ngờ chưa? Của ít lòng nhiều, năm sau tiếp tục cố gắng nhé!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w6",
+          "text": "继续",
+          "text_trad": "繼續",
+          "pinyin": "jìxù",
+          "hanviet": "Kế Tục",
+          "meaning_vi": "tiếp tục",
+          "hsk": 4,
+          "bbox": {
+            "x": 73.837,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 73.837,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "怎麼樣，驚喜吧？禮輕情意重，明年繼續加油！",
+          "sentence_zh_simplified": "怎么样，惊喜吧？礼轻情意重，明年继续加油！",
+          "sentence_vi": "Thế nào, bất ngờ chưa? Của ít lòng nhiều, năm sau tiếp tục cố gắng nhé!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d1_w7",
+          "text": "加油",
+          "text_trad": "加油",
+          "pinyin": "jiāyóu",
+          "hanviet": "Gia Dầu",
+          "meaning_vi": "cố lên; đổ xăng",
+          "hsk": 4,
+          "bbox": {
+            "x": 77.616,
+            "y": 7.682,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 77.616,
+              "y": 7.682,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "怎麼樣，驚喜吧？禮輕情意重，明年繼續加油！",
+          "sentence_zh_simplified": "怎么样，惊喜吧？礼轻情意重，明年继续加油！",
+          "sentence_vi": "Thế nào, bất ngờ chưa? Của ít lòng nhiều, năm sau tiếp tục cố gắng nhé!",
+          "character": "王经理 (Sếp Vương)",
+          "dialogue_id": "p5_d1"
+        },
+        {
+          "id": "p5_d2_w1",
+          "text": "我",
+          "text_trad": "我",
+          "pinyin": "wǒ",
+          "hanviet": "Ngã",
+          "meaning_vi": "tôi",
+          "hsk": 1,
+          "bbox": {
+            "x": 7.122,
+            "y": 77.344,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 7.122,
+              "y": 77.344,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "我真謝謝您……",
+          "sentence_zh_simplified": "我真谢谢您……",
+          "sentence_vi": "Em thực sự cảm ơn anh nhiều lắm luôn á...",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p5_d2"
+        },
+        {
+          "id": "p5_d2_w2",
+          "text": "真",
+          "text_trad": "真",
+          "pinyin": "zhēn",
+          "hanviet": "Chân",
+          "meaning_vi": "thật, thực sự",
+          "hsk": 1,
+          "bbox": {
+            "x": 9.012,
+            "y": 77.344,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 9.012,
+              "y": 77.344,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "我真謝謝您……",
+          "sentence_zh_simplified": "我真谢谢您……",
+          "sentence_vi": "Em thực sự cảm ơn anh nhiều lắm luôn á...",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p5_d2"
+        },
+        {
+          "id": "p5_d2_w3",
+          "text": "谢谢",
+          "text_trad": "謝謝",
+          "pinyin": "xièxie",
+          "hanviet": "Tạ Tạ",
+          "meaning_vi": "cảm ơn",
+          "hsk": 1,
+          "bbox": {
+            "x": 10.901,
+            "y": 77.344,
+            "width": 3.779,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 10.901,
+              "y": 77.344,
+              "width": 3.779,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "我真謝謝您……",
+          "sentence_zh_simplified": "我真谢谢您……",
+          "sentence_vi": "Em thực sự cảm ơn anh nhiều lắm luôn á...",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p5_d2"
+        },
+        {
+          "id": "p5_d2_w4",
+          "text": "您",
+          "text_trad": "您",
+          "pinyin": "nín",
+          "hanviet": "Nâm",
+          "meaning_vi": "ngài, bạn (kính ngữ)",
+          "hsk": 1,
+          "bbox": {
+            "x": 14.68,
+            "y": 77.344,
+            "width": 1.89,
+            "height": 4.167
+          },
+          "rects": [
+            {
+              "x": 14.68,
+              "y": 77.344,
+              "width": 1.89,
+              "height": 4.167
+            }
+          ],
+          "sentence_zh": "我真謝謝您……",
+          "sentence_zh_simplified": "我真谢谢您……",
+          "sentence_vi": "Em thực sự cảm ơn anh nhiều lắm luôn á...",
+          "character": "小阳 (Tiểu Dương)",
+          "dialogue_id": "p5_d2"
+        }
+      ],
+      "ocr": {
+        "image_px": [
+          1376,
+          768
+        ]
+      }
+    }
+  ]
+}

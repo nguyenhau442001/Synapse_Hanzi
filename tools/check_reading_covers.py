@@ -22,7 +22,11 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-from PIL import Image
+try:
+    from PIL import Image
+    HAS_PIL = True
+except ImportError:
+    HAS_PIL = False
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 MANIFEST = REPO_ROOT / "database" / "readings" / "manifest.json"
@@ -55,7 +59,7 @@ def main() -> int:
         if m.get("cover_word"):
             shared_words += 1
             continue
-        if path.suffix.lower() == ".svg":
+        if path.suffix.lower() == ".svg" or not HAS_PIL:
             by_hash[cover].append(m["id"])
         else:
             by_hash[pixel_hash(path)].append(m["id"])
