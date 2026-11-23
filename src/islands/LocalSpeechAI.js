@@ -248,15 +248,19 @@ export class LocalSpeechAI {
     const hasTextMatch = Boolean(recognitionObj && typeof recognitionObj.matchScore === 'number');
 
     if (mode === 'toneTrainer') {
-      // In Visual Tone Trainer mode, score is 100% focused on Chao tone contour accuracy!
+      // In Visual Tone Trainer mode, score is focused on Chao tone contour accuracy,
+      // with smart fallback protection if F0 tracking had low energy but ASR confirmed exact word.
       if (pitchValid) {
         finalScore = pitchScoreObj.score;
-        // Optional small bonus (+5) if ASR confirms exact word, without penalizing tone score
-        if (hasTextMatch && recognitionObj.exactMatch && finalScore < 95) {
-          finalScore = Math.min(100, finalScore + 5);
+        if (hasTextMatch && recognitionObj.exactMatch) {
+          if (finalScore < 70) {
+            finalScore = Math.max(finalScore, Math.round(recognitionObj.matchScore * 0.85));
+          } else if (finalScore < 95) {
+            finalScore = Math.min(100, finalScore + 5);
+          }
         }
       } else if (hasTextMatch) {
-        finalScore = recognitionObj.matchScore;
+        finalScore = Math.round(recognitionObj.matchScore * 0.9);
       }
     } else {
       // In Vocab Practice and Minimal Pairs modes:
@@ -280,7 +284,13 @@ export class LocalSpeechAI {
     if (overallScore >= 80) {
       message = 'Rất tuyệt vời! Phát âm chuẩn âm điệu.';
     } else if (overallScore >= 60) {
-      message = 'Khá tốt! Chú ý một vài điểm thanh điệu bên dưới.';
+      if (!pitchValid && hasTextMatch) {
+        message = 'AI nhận diện bạn đã đọc đúng từ vựng! Hãy nói to hoặc gần micro hơn để vẽ trọn vẹn đường cao độ F0.';
+      } else {
+        message = 'Khá tốt! Chú ý một vài điểm thanh điệu bên dưới.';
+      }
+    } else if (!pitchValid && hasTextMatch && recognitionObj.exactMatch) {
+      message = 'AI nhận diện bạn đã đọc đúng từ vựng! Hãy nói to hoặc gần micro hơn để hệ thống đo cao độ F0.';
     }
 
     return {

@@ -5,10 +5,10 @@
  */
 
 // Voice frequency bounds for human speech (Mandarin tone detection)
-export const MIN_SPEECH_FREQ = 65;   // Hz (deep male voice base)
+export const MIN_SPEECH_FREQ = 75;   // Hz (filters 50/60Hz electrical hum & mic desk rumble)
 export const MAX_SPEECH_FREQ = 480;  // Hz (high female voice peak)
 export const YIN_THRESHOLD = 0.15;   // Threshold for unvoiced / voiced confidence
-export const RMS_NOISE_FLOOR = 0.012; // Minimum RMS amplitude to consider voiced
+export const RMS_NOISE_FLOOR = 0.0035; // Sensitive noise floor supporting typical speaking distances
 
 /**
  * Calculates Root Mean Square (RMS) amplitude of an audio buffer slice.
@@ -292,7 +292,7 @@ export class LivePitchTracker {
         audio: {
           echoCancellation: true,
           noiseSuppression: true,
-          autoGainControl: false
+          autoGainControl: true
         }
       });
 
@@ -355,7 +355,7 @@ export class LivePitchTracker {
         frequency: res.frequency,
         clarity: res.clarity,
         rms: res.rms,
-        isVoiced: res.frequency > 0 && res.clarity > 0.65
+        isVoiced: res.frequency >= MIN_SPEECH_FREQ && res.frequency <= MAX_SPEECH_FREQ && res.clarity > 0.45
       };
 
       this.capturedFrames.push(frameData);

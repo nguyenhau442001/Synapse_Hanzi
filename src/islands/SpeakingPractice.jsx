@@ -236,6 +236,26 @@ function SpeakingPracticeApp() {
     };
   }, []);
 
+  // Auto re-evaluate combined score whenever a late-arriving speech transcript is received
+  useEffect(() => {
+    if (!aiTranscript || !scoreResultRef.current) return;
+    setScoreResult((prev) => {
+      if (!prev) return prev;
+      const textMatch = LocalSpeechAI.evaluateTextMatch(aiTranscript, currentWord.hanzi, currentWord.pinyin);
+      const combined = LocalSpeechAI.combineScores(prev, textMatch, activeTab);
+      if (prev.deepCapt && prev.deepCapt.success) {
+        combined.overallScore = Math.round(combined.overallScore * 0.4 + prev.deepCapt.overallScore * 0.6);
+        combined.stars = combined.overallScore >= 80 ? 3 : combined.overallScore >= 60 ? 2 : 1;
+        combined.message = combined.overallScore >= 80
+          ? 'Xuất sắc! Phát âm thanh mẫu, vận mẫu & thanh điệu đều rất chuẩn.'
+          : combined.overallScore >= 60
+          ? 'Khá tốt! Chú ý một vài điểm ngữ âm chi tiết bên dưới.'
+          : 'Chưa đạt. Hãy lắng nghe audio mẫu và chú ý khẩu hình nhé!';
+      }
+      return { ...prev, combined, textMatch };
+    });
+  }, [aiTranscript]);
+
   // Target pitch contour and Tone Sandhi analysis
   const targetContour = generateTargetPitchContour(currentWord.hanzi, currentWord.pinyin, 60);
   const syllableInfos = analyzeToneSandhi(currentWord.hanzi, currentWord.pinyin);

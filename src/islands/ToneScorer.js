@@ -244,10 +244,10 @@ export function getTonePedagogicalAdvice(expectedTone, actualSlope, score, metri
  * @returns {Object} Score summary with detailed diagnostics
  */
 export function scorePitchContour(userFrames, targetContour, syllableInfos) {
-  // Filter voiced frames
-  const voicedFrames = userFrames.filter((f) => f.isVoiced && f.frequency >= 65 && f.frequency <= 480);
+  // Filter voiced frames within human speech vocal range
+  const voicedFrames = userFrames.filter((f) => f.isVoiced && f.frequency >= 75 && f.frequency <= 480);
 
-  if (voicedFrames.length < 5) {
+  if (voicedFrames.length < 3) {
     return {
       valid: false,
       score: 0,
