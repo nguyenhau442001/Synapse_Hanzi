@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgOg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#240A08"/>
+      <stop offset="50%" stop-color="#3D120F"/>
+      <stop offset="100%" stop-color="#190605"/>
+    </linearGradient>
+
+    <!-- Warm Radial Ambient -->
+    <radialGradient id="ogGlow" cx="30%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#9C241D" stop-opacity="0.45"/>
+      <stop offset="60%" stop-color="#3D120F" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Icon Badge Gradient -->
+    <linearGradient id="iconBg" x1="10%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#D14336"/>
+      <stop offset="50%" stop-color="#B32B22"/>
+      <stop offset="100%" stop-color="#7A1813"/>
+    </linearGradient>
+
+    <!-- Gold Gradient -->
+    <linearGradient id="goldText" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF2B8"/>
+      <stop offset="50%" stop-color="#E5BA63"/>
+      <stop offset="100%" stop-color="#B88228"/>
+    </linearGradient>
+
+    <!-- 3D Shadow for Icon Badge -->
+    <filter id="badgeShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+
+    <filter id="charShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#3A0806" flood-opacity="0.5"/>
+    </filter>
+
+    <filter id="sparkGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="630" fill="url(#bgOg)"/>
+  <rect width="1200" height="630" fill="url(#ogGlow)"/>
+
+  <!-- Subtle Decorative Grid / Astrolabe Geometry -->
+  <g opacity="0.08" stroke="#FFE79A" stroke-width="1.2" fill="none">
+    <circle cx="270" cy="315" r="280" stroke-dasharray="6 10"/>
+    <circle cx="270" cy="315" r="380" stroke-dasharray="4 12"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+  </g>
+
+  <!-- LEFT: 3D App Icon Badge (340x340) -->
+  <g transform="translate(100, 145)" filter="url(#badgeShadow)">
+    <rect width="340" height="340" rx="80" fill="url(#iconBg)"/>
+    <rect x="6" y="6" width="328" height="328" rx="74" fill="none" stroke="url(#goldText)" stroke-width="2" stroke-opacity="0.5"/>
+    <rect x="11" y="11" width="318" height="318" rx="69" fill="none" stroke="url(#goldText)" stroke-width="0.8" stroke-opacity="0.25"/>
+
+    <!-- Subtle Synapse Orbit inside Badge -->
+    <ellipse cx="170" cy="170" rx="140" ry="65" transform="rotate(-25 170 170)" stroke="#FFF" stroke-opacity="0.12" stroke-width="1.2" stroke-dasharray="6 8" fill="none"/>
+
+    <!-- Hanzi 汉 -->
+    <g filter="url(#charShadow)">
+      <text x="168" y="244"
+            font-family="'PingFang SC', 'Hiragino Sans GB', 'STHeiti', sans-serif"
+            font-size="210"
+            font-weight="700"
+            fill="#FFFFFF"
+            text-anchor="middle">汉</text>
+    </g>
+
+    <!-- Golden Spark -->
+    <g transform="translate(260, 84)" filter="url(#sparkGlow)">
+      <circle cx="0" cy="0" r="14" fill="#FFEAA0" opacity="0.3"/>
+      <path d="M 0 -18 Q 0 0 18 0 Q 0 0 0 18 Q 0 0 -18 0 Q 0 0 0 -18 Z" fill="url(#goldText)"/>
+      <circle cx="0" cy="0" r="4" fill="#FFFFFF"/>
+      <line x1="0" y1="-24" x2="0" y2="24" stroke="#FFF2B8" stroke-width="1.5" stroke-linecap="round" opacity="0.85"/>
+      <line x1="-24" y1="0" x2="24" y2="0" stroke="#FFF2B8" stroke-width="1.5" stroke-linecap="round" opacity="0.85"/>
+    </g>
+  </g>
+
+  <!-- RIGHT: Typography & Feature Highlights -->
+  <g transform="translate(500, 175)">
+    <!-- Category Pill Tag -->
+    <g>
+      <rect width="325" height="36" rx="18" fill="#B32B22" fill-opacity="0.4" stroke="url(#goldText)" stroke-width="1" stroke-opacity="0.6"/>
+      <text x="162" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Nunito Sans', sans-serif" font-size="13" font-weight="700" fill="#FFE79A" text-anchor="middle" letter-spacing="2">HSK 1 - 7+ · SPACED REPETITION</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="115" font-family="'PingFang SC', 'Hiragino Sans GB', -apple-system, sans-serif" font-size="54" font-weight="800" fill="#FFFFFF" letter-spacing="1">
+      汉字思维 <tspan fill="url(#goldText)" font-weight="300">·</tspan> Hanzi Mind
+    </text>
+
+    <!-- Subtitle / Tagline -->
+    <text x="0" y="165" font-family="-apple-system, BlinkMacSystemFont, 'Be Vietnam Pro', sans-serif" font-size="24" font-weight="500" fill="#EAD5CB">
+      Học chữ Hán qua tư duy bản chất &amp; phản xạ tự nhiên
+    </text>
+
+    <!-- Divider Line -->
+    <line x1="0" y1="205" x2="620" y2="205" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1"/>
+
+    <!-- 4 Feature Bullets -->
+    <g transform="translate(0, 245)" font-family="-apple-system, BlinkMacSystemFont, 'Be Vietnam Pro', sans-serif" font-size="16" font-weight="600" fill="#F8EAE1">
+      <!-- Bullet 1 -->
+      <g transform="translate(0, 0)">
+        <circle cx="8" cy="-5" r="4" fill="#E5BA63"/>
+        <text x="22" y="0">Bộ thủ &amp; Chiết tự</text>
+      </g>
+      <!-- Bullet 2 -->
+      <g transform="translate(160, 0)">
+        <circle cx="8" cy="-5" r="4" fill="#E5BA63"/>
+        <text x="22" y="0">Âm Hán Việt</text>
+      </g>
+      <!-- Bullet 3 -->
+      <g transform="translate(300, 0)">
+        <circle cx="8" cy="-5" r="4" fill="#E5BA63"/>
+        <text x="22" y="0">Luyện viết &amp; Phát âm</text>
+      </g>
+      <!-- Bullet 4 -->
+      <g transform="translate(490, 0)">
+        <circle cx="8" cy="-5" r="4" fill="#E5BA63"/>
+        <text x="22" y="0">Truyện tranh HSK</text>
+      </g>
+    </g>
+  </g>
+</svg>

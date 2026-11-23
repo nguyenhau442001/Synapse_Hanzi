@@ -1,4 +1,4 @@
-const APP_VERSION = '3.60.1';
+const APP_VERSION = '3.60.3';
 const CACHE_NAME = 'hsk-flashcards-v' + APP_VERSION;
 const APP_SHELL_URL = new URL('./index.html', self.registration.scope).href;
 const INDEX_SHELL_URL = new URL('./index.html', self.registration.scope).href;
@@ -17,6 +17,7 @@ const PRECACHE_ASSET_URLS = [
   './assets/images/logo.svg',
   './assets/images/favicon.png',
   './assets/images/icon-512.png',
+  './assets/images/og-cover.png',
   './config/pwa-manifest.json',
 ].map(path => (path.startsWith('http') ? path : new URL(path, self.registration.scope).href));
 // Vocabulary/audio JSON lives in its own cache so app deploys don't force every level to re-download.
