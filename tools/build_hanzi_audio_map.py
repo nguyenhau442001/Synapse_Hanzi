@@ -9,11 +9,13 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+import re
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 AUDIO_DIR = REPO_ROOT / "database" / "prebuilt_audio"
 VOCABS_DIR = REPO_ROOT / "database" / "vocabs"
 OUTPUT_FILE = AUDIO_DIR / "hanzi_audio_map.json"
+TAG_RE = re.compile(r"</?[a-z0-9]+>", re.IGNORECASE)
 
 
 def clean_hanzi(text: str) -> str:
@@ -23,6 +25,11 @@ def clean_hanzi(text: str) -> str:
         if delimiter in text:
             text = text.split(delimiter)[0].strip()
     return text
+
+
+def strip_html_tags(text: str) -> str:
+    """Strip HTML markup like <u> and </u> from example sentences."""
+    return TAG_RE.sub("", text or "").strip()
 
 
 def build_hanzi_audio_map() -> dict[str, str]:
@@ -62,16 +69,27 @@ def build_hanzi_audio_map() -> dict[str, str]:
             if not vocab_entry:
                 continue
 
+            # 1. Map vocabulary word audio
             word_text = str(vocab_entry.get("hanzi") or "").strip()
             word_audio = audio_info.get("word")
-            if not word_audio:
-                continue
+            if word_audio:
+                clean_text = clean_hanzi(word_text)
+                if clean_text and clean_text not in mapping:
+                    mapping[clean_text] = word_audio
+                if word_text and word_text not in mapping:
+                    mapping[word_text] = word_audio
 
-            clean_text = clean_hanzi(word_text)
-            if clean_text and clean_text not in mapping:
-                mapping[clean_text] = word_audio
-            if word_text and word_text not in mapping:
-                mapping[word_text] = word_audio
+            # 2. Map example sentence audio
+            example_audio = audio_info.get("example")
+            example_zh = vocab_entry.get("example_zh")
+            if example_audio and example_zh:
+                clean_example = strip_html_tags(example_zh)
+                if clean_example:
+                    if clean_example not in mapping:
+                        mapping[clean_example] = example_audio
+                    no_punct = clean_example.rstrip("。！？!?., \t\n\r")
+                    if no_punct and no_punct not in mapping:
+                        mapping[no_punct] = example_audio
 
     return mapping
 

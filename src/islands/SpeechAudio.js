@@ -163,6 +163,12 @@ export function resolvePrebuiltAudio(text) {
   if (gMap) {
     if (gMap[cleanText]) return gMap[cleanText];
     if (gMap[rawText]) return gMap[rawText];
+
+    const noPunct = cleanText.replace(/[。！？!?.,，、；;:：\s]+$/g, '').trim();
+    if (noPunct && gMap[noPunct]) return gMap[noPunct];
+
+    const withPeriod = cleanText + '。';
+    if (gMap[withPeriod]) return gMap[withPeriod];
   }
 
   // 2. Try current active manifest items
@@ -170,10 +176,17 @@ export function resolvePrebuiltAudio(text) {
   if (manifest && manifest.items) {
     const words = typeof WORDS !== 'undefined' ? WORDS : (typeof window !== 'undefined' ? window.WORDS : null);
     if (Array.isArray(words)) {
-      const match = words.find(w => w && (w.hanzi === rawText || w.hanzi === cleanText || w.example_zh === rawText));
+      const match = words.find(w => w && (
+        w.hanzi === rawText ||
+        w.hanzi === cleanText ||
+        w.example_zh === rawText ||
+        (w.example_zh && w.example_zh.replace(/<[^>]*>/g, '').trim() === cleanText)
+      ));
       if (match && manifest.items[String(match.id)]) {
         const item = manifest.items[String(match.id)];
-        if (match.example_zh === rawText && item.example) return item.example;
+        if ((match.example_zh === rawText || (match.example_zh && match.example_zh.replace(/<[^>]*>/g, '').trim() === cleanText)) && item.example) {
+          return item.example;
+        }
         if (item.word) return item.word;
       }
     }
@@ -350,11 +363,32 @@ export function speakWithWebSpeech(text, button, rate, requestId, hint, prevHint
 }
 
 export function showSpeechHint(hint, message, previousMessage) {
-  if (!hint) return;
-  hint.textContent = message;
-  setTimeout(() => {
-    if (hint.textContent === message) hint.textContent = previousMessage;
-  }, 2500);
+  if (hint) {
+    hint.textContent = message;
+    setTimeout(() => {
+      if (hint.textContent === message) hint.textContent = previousMessage;
+    }, 2500);
+    return;
+  }
+
+  // Graceful fallback toast when playing audio from modal/sub-view where #hint is absent
+  if (typeof document !== 'undefined') {
+    let toast = document.getElementById('speechHintToast');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'speechHintToast';
+      toast.className = 'speech-hint-toast';
+      toast.setAttribute('role', 'status');
+      toast.setAttribute('aria-live', 'polite');
+      document.body.appendChild(toast);
+    }
+    toast.textContent = message;
+    toast.classList.add('show');
+    clearTimeout(toast._timer);
+    toast._timer = setTimeout(() => {
+      toast.classList.remove('show');
+    }, 2500);
+  }
 }
 
 export function setSpeechButtonState(button, isPlaying, text) {

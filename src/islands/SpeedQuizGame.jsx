@@ -295,9 +295,27 @@ export function closeSpeedQuizExplanationModal() {
 export function speakSpeedQuizSentence() {
   const r = round.value;
   if (!r || typeof window.speakText !== 'function') return;
-  const text = r.sentence.sentence_zh || r.sentence.zh_tokens.join('');
+  const text = r.sentence.sentence_zh || (r.sentence.zh_tokens ? r.sentence.zh_tokens.join('') : '');
   const rate = typeof exampleSpeechSpeed !== 'undefined' ? exampleSpeechSpeed : 0.8;
-  window.speakText(text, document.querySelector('.sqm-audio-btn'), rate);
+  const btn = document.querySelector('.sqm-audio-btn');
+
+  // Try prebuilt sentence audio first
+  const fullAudio = typeof window.resolvePrebuiltAudio === 'function' ? window.resolvePrebuiltAudio(text) : null;
+  if (fullAudio) {
+    window.speakText(text, btn, rate, fullAudio);
+    return;
+  }
+
+  // Fallback: If sentence audio is unavailable, pronounce the correct answer word
+  if (r.answer) {
+    const wordAudio = typeof window.resolvePrebuiltAudio === 'function' ? window.resolvePrebuiltAudio(r.answer) : null;
+    if (wordAudio) {
+      window.speakText(r.answer, btn, rate, wordAudio);
+      return;
+    }
+  }
+
+  window.speakText(text, btn, rate);
 }
 
 export function exitSpeedQuizGame() {

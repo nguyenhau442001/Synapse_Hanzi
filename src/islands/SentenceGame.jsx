@@ -294,7 +294,10 @@ export function speakCurrentSentence() {
   const e = entry.value;
   if (!e || !e.solution_zh || typeof window.speakText !== 'function') return;
   const rate = typeof exampleSpeechSpeed !== 'undefined' ? exampleSpeechSpeed : 0.85;
-  window.speakText(e.solution_zh, document.getElementById('sentenceResultSpeakBtn'), rate);
+  const text = e.solution_zh;
+  const btn = document.getElementById('sentenceResultSpeakBtn');
+  const audio = typeof window.resolvePrebuiltAudio === 'function' ? window.resolvePrebuiltAudio(text) : null;
+  window.speakText(text, btn, rate, audio);
 }
 
 function QuestionNav() {
