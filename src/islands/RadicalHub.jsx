@@ -34,6 +34,7 @@ export const PRIMARY_TAB_SCREENS = {
   sentenceGame: { screenId: 'screenSentenceGame' },
   guessWord: { screenId: 'screenGuessWord' },
   speedQuiz: { screenId: 'screenSpeedQuiz' },
+  exam: { screenId: 'screenHskExam' },
 };
 
 let vocabSubTab = 'level';

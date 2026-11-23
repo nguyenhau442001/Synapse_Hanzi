@@ -1,0 +1,672 @@
+{
+  "id": "hsk30_l1_specimen01",
+  "code": "H10901",
+  "version": "3.0",
+  "level": "hsk30_1",
+  "hsk_level": 1,
+  "title": "HSK 1 (3.0) - Đề thi mẫu chuẩn CTI H10901",
+  "source": "Chinese Testing International (CTI) Specimen Paper",
+  "time_minutes": 35,
+  "max_score": 200,
+  "pass_score": 120,
+  "sections": {
+    "listening": {
+      "name": "一、听力",
+      "title_vi": "Phần I: Nghe hiểu",
+      "total_questions": 20,
+      "time_minutes": 15,
+      "weight_score": 100,
+      "questions": [
+        {
+          "id": "H10901_L01",
+          "number": 1,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level1/h10901_l01.mp3",
+          "audio_text": "今天天气很好，没下雨。",
+          "statement_zh": "没下雨",
+          "statement_pinyin": "méi xià yǔ",
+          "statement_vi": "Không mưa",
+          "image": "assets/images/illustrations/下雨.svg",
+          "correct_answer": false,
+          "explanation_vi": "Tranh vẽ cảnh trời đang mưa (下雨), nhưng câu nghe lại nói '没下雨' (không mưa), do đó nhận định này là Sai."
+        },
+        {
+          "id": "H10901_L02",
+          "number": 2,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level1/h10901_l02.mp3",
+          "audio_text": "我爸爸是医生，他在医院工作。",
+          "statement_zh": "他是医生",
+          "statement_pinyin": "tā shì yī shēng",
+          "statement_vi": "Ông ấy là bác sĩ",
+          "image": "assets/images/illustrations/医生.svg",
+          "correct_answer": true,
+          "explanation_vi": "Tranh vẽ hình ảnh bác sĩ (医生), trùng khớp hoàn toàn với câu nói '爸爸是医生', nhận định Đúng."
+        },
+        {
+          "id": "H10901_L03",
+          "number": 3,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level1/h10901_l03.mp3",
+          "audio_text": "明天我和朋友坐飞机去北京。",
+          "statement_zh": "坐飞机",
+          "statement_pinyin": "zuò fēi jī",
+          "statement_vi": "Đi máy bay",
+          "image": "assets/images/illustrations/飞机.svg",
+          "correct_answer": true,
+          "explanation_vi": "Tranh vẽ chiếc máy bay (飞机), trùng khớp với nội dung '坐飞机去北京', nhận định Đúng."
+        },
+        {
+          "id": "H10901_L04",
+          "number": 4,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level1/h10901_l04.mp3",
+          "audio_text": "天气太热了，我想喝水。",
+          "statement_zh": "看书",
+          "statement_pinyin": "kàn shū",
+          "statement_vi": "Đọc sách",
+          "image": "assets/images/illustrations/看.svg",
+          "correct_answer": false,
+          "explanation_vi": "Câu nghe nói '我想喝水' (tôi muốn uống nước), nhưng câu hỏi lại nêu '看书' (đọc sách), nhận định Sai."
+        },
+        {
+          "id": "H10901_L05",
+          "number": 5,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level1/h10901_l05.mp3",
+          "audio_text": "苹果很甜，非常好吃。",
+          "statement_zh": "苹果",
+          "statement_pinyin": "píng guǒ",
+          "statement_vi": "Quả táo",
+          "image": "assets/images/illustrations/苹果.svg",
+          "correct_answer": true,
+          "explanation_vi": "Tranh vẽ quả táo (苹果), khớp với câu nghe '苹果很甜', nhận định Đúng."
+        },
+        {
+          "id": "H10901_L06",
+          "number": 6,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level1/h10901_l06.mp3",
+          "audio_text": "今天他在学校学习汉语。",
+          "prompt_zh": "他在哪儿学习？",
+          "prompt_vi": "Anh ấy học ở đâu?",
+          "options": [
+            { "key": "A", "text": "学校 (Trường học)" },
+            { "key": "B", "text": "医院 (Bệnh viện)" },
+            { "key": "C", "text": "饭馆 (Nhà hàng)" }
+          ],
+          "correct_answer": "A",
+          "explanation_vi": "Câu nghe: '他在学校学习汉语' (Anh ấy học tiếng Trung ở trường học). Đáp án đúng là A."
+        },
+        {
+          "id": "H10901_L07",
+          "number": 7,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level1/h10901_l07.mp3",
+          "audio_text": "我们中午去吃米饭和中国菜。",
+          "prompt_zh": "他们中午吃什么？",
+          "prompt_vi": "Buổi trưa họ ăn gì?",
+          "options": [
+            { "key": "A", "text": "苹果 (Táo)" },
+            { "key": "B", "text": "米饭 (Cơm)" },
+            { "key": "C", "text": "茶 (Trà)" }
+          ],
+          "correct_answer": "B",
+          "explanation_vi": "Câu nghe nêu rõ '中午去吃米饭和中国菜'. Đáp án đúng là B."
+        },
+        {
+          "id": "H10901_L08",
+          "number": 8,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level1/h10901_l08.mp3",
+          "audio_text": "那只小猫在椅子下面睡觉呢。",
+          "prompt_zh": "小猫在做什么？",
+          "prompt_vi": "Con mèo nhỏ đang làm gì?",
+          "options": [
+            { "key": "A", "text": "睡觉 (Ngủ)" },
+            { "key": "B", "text": "吃鱼 (Ăn cá)" },
+            { "key": "C", "text": "喝水 (Uống nước)" }
+          ],
+          "correct_answer": "A",
+          "explanation_vi": "Câu nghe: '那只小猫在椅子下面睡觉呢'. Con mèo đang ngủ, chọn A."
+        },
+        {
+          "id": "H10901_L09",
+          "number": 9,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level1/h10901_l09.mp3",
+          "audio_text": "爸爸正在给妈妈打电话。",
+          "prompt_zh": "爸爸在做什么？",
+          "prompt_vi": "Bố đang làm gì?",
+          "options": [
+            { "key": "A", "text": "看电视 (Xem TV)" },
+            { "key": "B", "text": "买衣服 (Mua quần áo)" },
+            { "key": "C", "text": "打电话 (Gọi điện thoại)" }
+          ],
+          "correct_answer": "C",
+          "explanation_vi": "Từ khóa trong audio là '打电话' (gọi điện thoại). Đáp án đúng là C."
+        },
+        {
+          "id": "H10901_L10",
+          "number": 10,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level1/h10901_l10.mp3",
+          "audio_text": "外面下雨了，我们坐出租车回家吧。",
+          "prompt_zh": "他们怎么回家？",
+          "prompt_vi": "Họ về nhà bằng phương tiện gì?",
+          "options": [
+            { "key": "A", "text": "坐出租车 (Đi taxi)" },
+            { "key": "B", "text": "坐飞机 (Đi máy bay)" },
+            { "key": "C", "text": "走路 (Đi bộ)" }
+          ],
+          "correct_answer": "A",
+          "explanation_vi": "Audio nói rõ '坐出租车回家' (đi xe taxi về nhà). Đáp án đúng là A."
+        },
+        {
+          "id": "H10901_L11",
+          "number": 11,
+          "part": 3,
+          "type": "dialogue_match",
+          "audio_clip": "assets/audio/exams/hsk30/level1/h10901_l11.mp3",
+          "audio_text": "男：你好！女：你好，很高兴认识你！",
+          "prompt_zh": "选择对应的场景或情境",
+          "prompt_vi": "Chọn bối cảnh đối thoại phù hợp",
+          "options": [
+            { "key": "A", "text": "初次见面打招呼 (Chào hỏi khi mới gặp mặt)" },
+            { "key": "B", "text": "在商店买东西 (Mua sắm ở cửa hàng)" },
+            { "key": "C", "text": "在看病 (Khám chữa bệnh)" }
+          ],
+          "correct_answer": "A",
+          "explanation_vi": "'你好，很高兴认识你' là lời chào kinh điển khi hai người lần đầu gặp nhau. Đáp án đúng là A."
+        },
+        {
+          "id": "H10901_L12",
+          "number": 12,
+          "part": 3,
+          "type": "dialogue_match",
+          "audio_clip": "assets/audio/exams/hsk30/level1/h10901_l12.mp3",
+          "audio_text": "女：你看见我的小猫了吗？男：在那儿，在椅子上。",
+          "prompt_zh": "小猫在哪儿？",
+          "prompt_vi": "Con mèo ở đâu?",
+          "options": [
+            { "key": "A", "text": "在桌子下 (Dưới bàn)" },
+            { "key": "B", "text": "在椅子上 (Trên ghế)" },
+            { "key": "C", "text": "在门外 (Ngoài cửa)" }
+          ],
+          "correct_answer": "B",
+          "explanation_vi": "Người nam trả lời: '在那儿，在椅子上' (Ở kia, trên chiếc ghế). Đáp án đúng là B."
+        },
+        {
+          "id": "H10901_L13",
+          "number": 13,
+          "part": 3,
+          "type": "dialogue_match",
+          "audio_clip": "assets/audio/exams/hsk30/level1/h10901_l13.mp3",
+          "audio_text": "男：请问，这个杯子多少钱？女：十五块。",
+          "prompt_zh": "杯子多少钱？",
+          "prompt_vi": "Cái cốc bao nhiêu tiền?",
+          "options": [
+            { "key": "A", "text": "5块 (5 tệ)" },
+            { "key": "B", "text": "15块 (15 tệ)" },
+            { "key": "C", "text": "50块 (50 tệ)" }
+          ],
+          "correct_answer": "B",
+          "explanation_vi": "Người nữ đáp: '十五块' (15 tệ). Đáp án đúng là B."
+        },
+        {
+          "id": "H10901_L14",
+          "number": 14,
+          "part": 3,
+          "type": "dialogue_match",
+          "audio_clip": "assets/audio/exams/hsk30/level1/h10901_l14.mp3",
+          "audio_text": "女：星期日你去学校吗？男：我不去，我想在家里休息。",
+          "prompt_zh": "男的星期日做什么？",
+          "prompt_vi": "Chủ nhật người nam làm gì?",
+          "options": [
+            { "key": "A", "text": "去学校 (Đến trường)" },
+            { "key": "B", "text": "在家里休息 (Nghỉ ở nhà)" },
+            { "key": "C", "text": "去买水果 (Đi mua hoa quả)" }
+          ],
+          "correct_answer": "B",
+          "explanation_vi": "Người nam nói rõ: '我想在家里休息' (Tôi muốn ở nhà nghỉ ngơi). Đáp án đúng là B."
+        },
+        {
+          "id": "H10901_L15",
+          "number": 15,
+          "part": 3,
+          "type": "dialogue_match",
+          "audio_clip": "assets/audio/exams/hsk30/level1/h10901_l15.mp3",
+          "audio_text": "男：王老师在吗？女：在，请进，请坐。",
+          "prompt_zh": "王老师在不在？",
+          "prompt_vi": "Thầy Vương có ở đó không?",
+          "options": [
+            { "key": "A", "text": "在 (Có ở đó)" },
+            { "key": "B", "text": "不在 (Không có ở đó)" },
+            { "key": "C", "text": "去医院了 (Đi bệnh viện rồi)" }
+          ],
+          "correct_answer": "A",
+          "explanation_vi": "Người nữ trả lời ngay đầu câu: '在，请进，请坐'. Đáp án đúng là A."
+        },
+        {
+          "id": "H10901_L16",
+          "number": 16,
+          "part": 4,
+          "type": "comprehension",
+          "audio_clip": "assets/audio/exams/hsk30/level1/h10901_l16.mp3",
+          "audio_text": "女：下午你去看电影吗？男：我不去，今天工作很多。问：男的下午做什么？",
+          "prompt_zh": "男的下午做什么？",
+          "prompt_vi": "Buổi chiều người nam làm gì?",
+          "options": [
+            { "key": "A", "text": "看电影 (Xem phim)" },
+            { "key": "B", "text": "工作 (Làm việc)" },
+            { "key": "C", "text": "睡觉 (Đi ngủ)" }
+          ],
+          "correct_answer": "B",
+          "explanation_vi": "Người nam nói '我不去，今天工作很多', do đó buổi chiều anh ấy làm việc (工作). Đáp án B."
+        },
+        {
+          "id": "H10901_L17",
+          "number": 17,
+          "part": 4,
+          "type": "comprehension",
+          "audio_clip": "assets/audio/exams/hsk30/level1/h10901_l17.mp3",
+          "audio_text": "男：这个苹果很大，你吃一个吧。女：谢谢，我已经吃饱了。问：女的吃不吃苹果？",
+          "prompt_zh": "女的吃不吃苹果？",
+          "prompt_vi": "Người nữ có ăn táo không?",
+          "options": [
+            { "key": "A", "text": "不吃 (Không ăn)" },
+            { "key": "B", "text": "想吃 (Muốn ăn)" },
+            { "key": "C", "text": "吃了两个 (Đã ăn 2 quả)" }
+          ],
+          "correct_answer": "A",
+          "explanation_vi": "Người nữ từ chối khéo: '谢谢，我已经吃饱了' (Cảm ơn, tôi đã no rồi), nghĩa là không ăn. Đáp án A."
+        },
+        {
+          "id": "H10901_L18",
+          "number": 18,
+          "part": 4,
+          "type": "comprehension",
+          "audio_clip": "assets/audio/exams/hsk30/level1/h10901_l18.mp3",
+          "audio_text": "女：你认识李小姐吗？男：认识，她是我的中国朋友。问：李小姐是哪国人？",
+          "prompt_zh": "李小姐是哪国人？",
+          "prompt_vi": "Cô Lý là người nước nào?",
+          "options": [
+            { "key": "A", "text": "中国人 (Người Trung Quốc)" },
+            { "key": "B", "text": "美国人 (Người Mỹ)" },
+            { "key": "C", "text": "越南人 (Người Việt Nam)" }
+          ],
+          "correct_answer": "A",
+          "explanation_vi": "Người nam nói: '她是我的中国朋友' (Cô ấy là người bạn Trung Quốc của tôi). Đáp án A."
+        },
+        {
+          "id": "H10901_L19",
+          "number": 19,
+          "part": 4,
+          "type": "comprehension",
+          "audio_clip": "assets/audio/exams/hsk30/level1/h10901_l19.mp3",
+          "audio_text": "男：你在哪儿买的水果？女：在学校前面的商店买的。问：水果是在哪儿买的？",
+          "prompt_zh": "水果是在哪儿买的？",
+          "prompt_vi": "Hoa quả được mua ở đâu?",
+          "options": [
+            { "key": "A", "text": "学校里 (Trong trường học)" },
+            { "key": "B", "text": "商店 (Cửa hàng)" },
+            { "key": "C", "text": "家里 (Ở nhà)" }
+          ],
+          "correct_answer": "B",
+          "explanation_vi": "Người nữ trả lời: '在学校前面的商店买的'. Địa điểm mua là ở cửa hàng (商店). Đáp án B."
+        },
+        {
+          "id": "H10901_L20",
+          "number": 20,
+          "part": 4,
+          "type": "comprehension",
+          "audio_clip": "assets/audio/exams/hsk30/level1/h10901_l20.mp3",
+          "audio_text": "女：现在几点了？男：十点十分。问：现在几点？",
+          "prompt_zh": "现在几点？",
+          "prompt_vi": "Bây giờ là mấy giờ?",
+          "options": [
+            { "key": "A", "text": "9:10" },
+            { "key": "B", "text": "10:10" },
+            { "key": "C", "text": "11:10" }
+          ],
+          "correct_answer": "B",
+          "explanation_vi": "Người nam trả lời: '十点十分' (10 giờ 10 phút). Đáp án đúng là B."
+        }
+      ]
+    },
+    "reading": {
+      "name": "二、阅读",
+      "title_vi": "Phần II: Đọc hiểu",
+      "total_questions": 20,
+      "time_minutes": 17,
+      "weight_score": 100,
+      "questions": [
+        {
+          "id": "H10901_R21",
+          "number": 21,
+          "part": 1,
+          "type": "true_false",
+          "statement_zh": "他是一名医生。",
+          "statement_pinyin": "tā shì yī míng yī shēng 。",
+          "statement_vi": "Anh ấy là một bác sĩ.",
+          "image": "assets/images/illustrations/医生.svg",
+          "correct_answer": true,
+          "explanation_vi": "Hình ảnh minh họa là bác sĩ (医生), câu mô tả hoàn toàn khớp. Đáp án Đúng."
+        },
+        {
+          "id": "H10901_R22",
+          "number": 22,
+          "part": 1,
+          "type": "true_false",
+          "statement_zh": "他在看书。",
+          "statement_pinyin": "tā zài kàn shū 。",
+          "statement_vi": "Anh ấy đang đọc sách.",
+          "image": "assets/images/illustrations/看.svg",
+          "correct_answer": true,
+          "explanation_vi": "Hình ảnh thể hiện hành động đọc sách (看书), nhận định Đúng."
+        },
+        {
+          "id": "H10901_R23",
+          "number": 23,
+          "part": 1,
+          "type": "true_false",
+          "statement_zh": "天上下大雨了。",
+          "statement_pinyin": "tiān shàng xià dà yǔ le 。",
+          "statement_vi": "Trời đang đổ mưa to.",
+          "image": "assets/images/illustrations/下雨.svg",
+          "correct_answer": true,
+          "explanation_vi": "Hình ảnh là cơn mưa (下雨), câu mô tả đúng. Đáp án Đúng."
+        },
+        {
+          "id": "H10901_R24",
+          "number": 24,
+          "part": 1,
+          "type": "true_false",
+          "statement_zh": "这是一只可爱的小狗。",
+          "statement_pinyin": "zhè shì yī zhī kě ài de xiǎo gǒu 。",
+          "statement_vi": "Đây là một chú chó nhỏ đáng yêu.",
+          "image": "assets/images/illustrations/猫.svg",
+          "correct_answer": false,
+          "explanation_vi": "Hình ảnh là con mèo (猫), nhưng câu lại nói là con chó (小狗). Đáp án Sai."
+        },
+        {
+          "id": "H10901_R25",
+          "number": 25,
+          "part": 1,
+          "type": "true_false",
+          "statement_zh": "他们坐飞机去旅行。",
+          "statement_pinyin": "tā men zuò fēi jī qù lǚ xíng 。",
+          "statement_vi": "Họ đi máy bay để đi du lịch.",
+          "image": "assets/images/illustrations/飞机.svg",
+          "correct_answer": true,
+          "explanation_vi": "Hình ảnh là chiếc máy bay (飞机), trùng khớp hoàn toàn. Đáp án Đúng."
+        },
+        {
+          "id": "H10901_R26",
+          "number": 26,
+          "part": 2,
+          "type": "fill_blank",
+          "prompt_zh": "你叫什么（    ）？",
+          "prompt_pinyin": "nǐ jiào shén me （    ）？",
+          "prompt_vi": "Bạn tên là gì?",
+          "options": [
+            { "key": "A", "text": "名字 (tên)" },
+            { "key": "B", "text": "苹果 (táo)" },
+            { "key": "C", "text": "学校 (trường học)" },
+            { "key": "D", "text": "多少 (bao nhiêu)" }
+          ],
+          "correct_answer": "A",
+          "explanation_vi": "Mẫu câu hỏi tên kinh điển: '你叫什么名字？' (Bạn tên là gì?). Đáp án A."
+        },
+        {
+          "id": "H10901_R27",
+          "number": 27,
+          "part": 2,
+          "type": "fill_blank",
+          "prompt_zh": "请问，这个西瓜（    ）钱？",
+          "prompt_pinyin": "qǐng wèn ，zhè ge xī guā （    ）qián ？",
+          "prompt_vi": "Xin hỏi, quả dưa hấu này bao nhiêu tiền?",
+          "options": [
+            { "key": "A", "text": "名字 (tên)" },
+            { "key": "B", "text": "多少 (bao nhiêu)" },
+            { "key": "C", "text": "老师 (thầy cô)" },
+            { "key": "D", "text": "认识 (quen biết)" }
+          ],
+          "correct_answer": "B",
+          "explanation_vi": "Cụm hỏi giá cả: '多少钱' (Bao nhiêu tiền). Đáp án B."
+        },
+        {
+          "id": "H10901_R28",
+          "number": 28,
+          "part": 2,
+          "type": "fill_blank",
+          "prompt_zh": "非常（    ）你的帮助！",
+          "prompt_pinyin": "fēi cháng （    ）nǐ de bāng zhù ！",
+          "prompt_vi": "Vô cùng cảm ơn sự giúp đỡ của bạn!",
+          "options": [
+            { "key": "A", "text": "感谢 / 谢谢 (cảm ơn)" },
+            { "key": "B", "text": "再见 (tạm biệt)" },
+            { "key": "C", "text": "对不起 (xin lỗi)" },
+            { "key": "D", "text": "没关系 (không có gì)" }
+          ],
+          "correct_answer": "A",
+          "explanation_vi": "'非常感谢 / 谢谢你的帮助' nghĩa là rất cảm ơn sự giúp đỡ của bạn. Đáp án A."
+        },
+        {
+          "id": "H10901_R29",
+          "number": 29,
+          "part": 2,
+          "type": "fill_blank",
+          "prompt_zh": "A: 对不起！ B: （    ）。",
+          "prompt_pinyin": "A: duì bu qǐ ！ B: （    ）。",
+          "prompt_vi": "A: Xin lỗi! B: Không có gì.",
+          "options": [
+            { "key": "A", "text": "没关系 (Không sao)" },
+            { "key": "B", "text": "太好了 (Tốt quá)" },
+            { "key": "C", "text": "不用客气 (Đừng khách sáo)" },
+            { "key": "D", "text": "再见 (Tạm biệt)" }
+          ],
+          "correct_answer": "A",
+          "explanation_vi": "Khi đối phương nói '对不起' (xin lỗi), câu đáp lễ tương ứng là '没关系' (không có sao). Đáp án A."
+        },
+        {
+          "id": "H10901_R30",
+          "number": 30,
+          "part": 2,
+          "type": "fill_blank",
+          "prompt_zh": "明天见，（    ）！",
+          "prompt_pinyin": "míng tiān jiàn ，（    ）！",
+          "prompt_vi": "Ngày mai gặp, tạm biệt!",
+          "options": [
+            { "key": "A", "text": "你好 (Xin chào)" },
+            { "key": "B", "text": "再见 (Tạm biệt)" },
+            { "key": "C", "text": "请进 (Mời vào)" },
+            { "key": "D", "text": "请坐 (Mời ngồi)" }
+          ],
+          "correct_answer": "B",
+          "explanation_vi": "Đi kèm với '明天见' khi chia tay là lời chào tạm biệt '再见'. Đáp án B."
+        },
+        {
+          "id": "H10901_R31",
+          "number": 31,
+          "part": 3,
+          "type": "match_pairs",
+          "prompt_zh": "你是哪国人？",
+          "prompt_pinyin": "nǐ shì nǎ guó rén ？",
+          "prompt_vi": "Bạn là người nước nào?",
+          "options": [
+            { "key": "A", "text": "我是中国人。(Tôi là người Trung Quốc.)" },
+            { "key": "B", "text": "我在看书。(Tôi đang đọc sách.)" },
+            { "key": "C", "text": "今天八月三号。(Hôm nay ngày 3 tháng 8.)" }
+          ],
+          "correct_answer": "A",
+          "explanation_vi": "Câu hỏi quốc tịch '你是哪国人' phải trả lời bằng tên quốc gia: '我是中国人'. Đáp án A."
+        },
+        {
+          "id": "H10901_R32",
+          "number": 32,
+          "part": 3,
+          "type": "match_pairs",
+          "prompt_zh": "你的汉语怎么样？",
+          "prompt_pinyin": "nǐ de hàn yǔ zěn me yàng ？",
+          "prompt_vi": "Tiếng Trung của bạn thế nào?",
+          "options": [
+            { "key": "A", "text": "我会说一点儿。(Tôi biết nói một chút.)" },
+            { "key": "B", "text": "他是我爸爸。(Ông ấy là bố tôi.)" },
+            { "key": "C", "text": "十点十分。(10 giờ 10 phút.)" }
+          ],
+          "correct_answer": "A",
+          "explanation_vi": "Hỏi về trình độ ngoại ngữ '汉语怎么样', câu trả lời phù hợp nhất là '我会说一点儿'. Đáp án A."
+        },
+        {
+          "id": "H10901_R33",
+          "number": 33,
+          "part": 3,
+          "type": "match_pairs",
+          "prompt_zh": "今天几号？",
+          "prompt_pinyin": "jīn tiān jǐ hào ？",
+          "prompt_vi": "Hôm nay ngày mấy?",
+          "options": [
+            { "key": "A", "text": "今天八月九号。(Hôm nay ngày 9 tháng 8.)" },
+            { "key": "B", "text": "太贵了。(Đắt quá.)" },
+            { "key": "C", "text": "不客气。(Không có chi.)" }
+          ],
+          "correct_answer": "A",
+          "explanation_vi": "Hỏi ngày tháng '几号', câu trả lời là '八月九号'. Đáp án A."
+        },
+        {
+          "id": "H10901_R34",
+          "number": 34,
+          "part": 3,
+          "type": "match_pairs",
+          "prompt_zh": "他在做什么呢？",
+          "prompt_pinyin": "tā zài zuò shén me ne ？",
+          "prompt_vi": "Anh ấy đang làm gì thế?",
+          "options": [
+            { "key": "A", "text": "他在看电视呢。(Anh ấy đang xem tivi.)" },
+            { "key": "B", "text": "他是医生。(Anh ấy là bác sĩ.)" },
+            { "key": "C", "text": "十五块。(15 tệ.)" }
+          ],
+          "correct_answer": "A",
+          "explanation_vi": "Hỏi về hành động đang tiếp diễn '在做什么呢', câu trả lời là '在看电视呢'. Đáp án A."
+        },
+        {
+          "id": "H10901_R35",
+          "number": 35,
+          "part": 3,
+          "type": "match_pairs",
+          "prompt_zh": "谁在门外？",
+          "prompt_pinyin": "shéi zài mén wài ？",
+          "prompt_vi": "Ai ở ngoài cửa?",
+          "options": [
+            { "key": "A", "text": "是王老师。(Là thầy Vương.)" },
+            { "key": "B", "text": "没关系。(Không sao.)" },
+            { "key": "C", "text": "去学校。(Đi trường học.)" }
+          ],
+          "correct_answer": "A",
+          "explanation_vi": "Hỏi đại từ nhân xưng '谁' (ai), câu trả lời chỉ người '是王老师'. Đáp án A."
+        },
+        {
+          "id": "H10901_R36",
+          "number": 36,
+          "part": 4,
+          "type": "reading_comprehension",
+          "passage_zh": "昨天我和朋友去饭馆吃饭。那里的中国菜很好吃，也不太贵。我们吃了米饭和鱼，大家都很高兴。",
+          "passage_pinyin": "zuó tiān wǒ hé péng you qù fàn guǎn chī fàn 。nà lǐ de zhōng guó cài hěn hǎo chī ，yě bù tài guì 。wǒ men chī le mǐ fàn hé yú ，dà jiā dōu hěn gāo xìng 。",
+          "passage_vi": "Hôm qua tôi và bạn đến quán ăn dùng bữa. Đồ ăn Trung Quốc ở đó rất ngon và cũng không quá đắt. Chúng tôi đã ăn cơm và cá, mọi người đều rất vui vẻ.",
+          "prompt_zh": "他们昨天去哪儿了？",
+          "prompt_vi": "Hôm qua họ đã đi đâu?",
+          "options": [
+            { "key": "A", "text": "饭馆 (Quán ăn)" },
+            { "key": "B", "text": "商店 (Cửa hàng)" },
+            { "key": "C", "text": "学校 (Trường học)" }
+          ],
+          "correct_answer": "A",
+          "explanation_vi": "Dẫn chứng từ câu đầu: '昨天我和朋友去饭馆吃饭'. Địa điểm là quán ăn (饭馆). Đáp án A."
+        },
+        {
+          "id": "H10901_R37",
+          "number": 37,
+          "part": 4,
+          "type": "reading_comprehension",
+          "passage_zh": "昨天我和朋友去饭馆吃饭。那里的中国菜很好吃，也不太贵。我们吃了米饭和鱼，大家都很高兴。",
+          "passage_pinyin": "zuó tiān wǒ hé péng you qù fàn guǎn chī fàn 。nà lǐ de zhōng guó cài hěn hǎo chī ，yě bù tài guì 。wǒ men chī le mǐ fàn hé yú ，dà jiā dōu hěn gāo xìng 。",
+          "passage_vi": "Hôm qua tôi và bạn đến quán ăn dùng bữa. Đồ ăn Trung Quốc ở đó rất ngon và cũng không quá đắt. Chúng tôi đã ăn cơm và cá, mọi người đều rất vui vẻ.",
+          "prompt_zh": "他们吃了什么？",
+          "prompt_vi": "Họ đã ăn món gì?",
+          "options": [
+            { "key": "A", "text": "米饭和鱼 (Cơm và cá)" },
+            { "key": "B", "text": "苹果和茶 (Táo và trà)" },
+            { "key": "C", "text": "面条 (Mì sợi)" }
+          ],
+          "correct_answer": "A",
+          "explanation_vi": "Dẫn chứng từ câu thứ 3: '我们吃了米饭和鱼'. Đáp án A."
+        },
+        {
+          "id": "H10901_R38",
+          "number": 38,
+          "part": 4,
+          "type": "reading_comprehension",
+          "passage_zh": "我叫大卫，是一名学生。我家有四口人：爸爸、妈妈、哥哥和我。我们住在中国北京。我很喜欢北京的天气。",
+          "passage_pinyin": "wǒ jiào dà wèi ，shì yī míng xué sheng 。wǒ jiā yǒu sì kǒu rén ：bà ba 、mā ma 、gē ge hé wǒ 。wǒ men zhù zài zhōng guó běi jīng 。wǒ hěn xǐ huan běi jīng de tiān qì 。",
+          "passage_vi": "Tôi tên là David, là một học sinh. Nhà tôi có 4 người: bố, mẹ, anh trai và tôi. Chúng tôi sống ở Bắc Kinh, Trung Quốc. Tôi rất thích thời tiết của Bắc Kinh.",
+          "prompt_zh": "大卫家有几口人？",
+          "prompt_vi": "Gia đình David có mấy người?",
+          "options": [
+            { "key": "A", "text": "三口 (3 người)" },
+            { "key": "B", "text": "四口 (4 người)" },
+            { "key": "C", "text": "五口 (5 người)" }
+          ],
+          "correct_answer": "B",
+          "explanation_vi": "Dẫn chứng trong bài: '我家有四口人'. Đáp án B."
+        },
+        {
+          "id": "H10901_R39",
+          "number": 39,
+          "part": 4,
+          "type": "reading_comprehension",
+          "passage_zh": "我叫大卫，是一名学生。我家有四口人：爸爸、妈妈、哥哥和我。我们住在中国北京。我很喜欢北京的天气。",
+          "passage_pinyin": "wǒ jiào dà wèi ，shì yī míng xué sheng 。wǒ jiā yǒu sì kǒu rén ：bà ba 、mā ma 、gē ge hé wǒ 。wǒ men zhù zài zhōng guó běi jīng 。wǒ hěn xǐ huan běi jīng de tiān qì 。",
+          "passage_vi": "Tôi tên là David, là một học sinh. Nhà tôi có 4 người: bố, mẹ, anh trai và tôi. Chúng tôi sống ở Bắc Kinh, Trung Quốc. Tôi rất thích thời tiết của Bắc Kinh.",
+          "prompt_zh": "大卫是谁？",
+          "prompt_vi": "David là ai?",
+          "options": [
+            { "key": "A", "text": "老师 (Thầy giáo)" },
+            { "key": "B", "text": "医生 (Bác sĩ)" },
+            { "key": "C", "text": "学生 (Học sinh)" }
+          ],
+          "correct_answer": "C",
+          "explanation_vi": "Dẫn chứng câu mở đầu: '我叫大卫，是一名学生'. David là học sinh (学生). Đáp án C."
+        },
+        {
+          "id": "H10901_R40",
+          "number": 40,
+          "part": 4,
+          "type": "reading_comprehension",
+          "passage_zh": "我叫大卫，是一名学生。我家有四口人：爸爸、妈妈、哥哥和我。我们住在中国北京。我很喜欢北京的天气。",
+          "passage_pinyin": "wǒ jiào dà wèi ，shì yī míng xué sheng 。wǒ jiā yǒu sì kǒu rén ：bà ba 、mā ma 、gē ge hé wǒ 。wǒ men zhù zài zhōng guó běi jīng 。wǒ hěn xǐ huan běi jīng de tiān qì 。",
+          "passage_vi": "Tôi tên là David, là một học sinh. Nhà tôi có 4 người: bố, mẹ, anh trai và tôi. Chúng tôi sống ở Bắc Kinh, Trung Quốc. Tôi rất thích thời tiết của Bắc Kinh.",
+          "prompt_zh": "大卫一家住在哪里？",
+          "prompt_vi": "Gia đình David sống ở đâu?",
+          "options": [
+            { "key": "A", "text": "上海 (Thượng Hải)" },
+            { "key": "B", "text": "北京 (Bắc Kinh)" },
+            { "key": "C", "text": "广州 (Quảng Châu)" }
+          ],
+          "correct_answer": "B",
+          "explanation_vi": "Dẫn chứng bài đọc: '我们住在中国北京'. Họ sống ở Bắc Kinh (北京). Đáp án B."
+        }
+      ]
+    }
+  }
+}

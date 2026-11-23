@@ -12,6 +12,7 @@ export const NAV_SECTIONS = {
   speaking: { navId: 'primaryNavSpeaking', subtabs: ['speaking'], showRow: true },
   reading: { navId: 'primaryNavReading', subtabs: ['gradedReading', 'reading'], showRow: true },
   writing: { navId: 'primaryNavWriting', subtabs: ['writing', 'sentenceGame', 'speedQuiz'], showRow: true },
+  exam: { navId: 'primaryNavExam', subtabs: ['exam'], showRow: false },
   review: { navId: 'primaryTabReview', subtabs: ['review'], showRow: false },
 };
 

@@ -22,6 +22,7 @@ EXPECTED_SECTIONS = [
     ("speaking", "primaryNavSpeaking", "Nói"),
     ("reading", "primaryNavReading", "Đọc"),
     ("writing", "primaryNavWriting", "Viết"),
+    ("exam", "primaryNavExam", "Luyện thi"),
     ("review", "primaryTabReview", "Ôn nhanh"),
 ]
 
