@@ -52,21 +52,45 @@
       "hsk_level": 3,
       "title": "HSK 3 (3.0)",
       "badge": "Sơ cấp 3",
-      "total_questions": 70,
-      "time_minutes": 70,
-      "max_score": 200,
-      "pass_score": 120,
+      "total_questions": 80,
+      "time_minutes": 90,
+      "max_score": 300,
+      "pass_score": 180,
       "exams": [
         {
           "id": "hsk30_l3_specimen01",
           "code": "H30901",
           "title": "Đề thi mẫu chuẩn CTI số 01 (样卷一)",
-          "subtitle": "Đề mẫu chuẩn do CTI (汉考国际) ban hành - 70 câu hỏi kèm audio chuẩn",
+          "subtitle": "Đề mẫu chuẩn CTI (汉考国际) - 80 câu gồm Nghe (40), Đọc (30), Viết (10)",
           "listening_questions": 40,
           "reading_questions": 30,
-          "writing_questions": 0,
-          "time_minutes": 70,
-          "file": "database/exams/hsk30/level3/hsk30_l3_specimen01.json"
+          "writing_questions": 10,
+          "time_minutes": 90,
+          "file": "database/exams/hsk30/level3/hsk30_l3_specimen01.json",
+          "total_questions": 80
+        }
+      ]
+    },
+    "hsk30_4": {
+      "level": "hsk30_4",
+      "hsk_level": 4,
+      "title": "HSK 4 (3.0)",
+      "badge": "Trung cấp 1",
+      "total_questions": 100,
+      "time_minutes": 105,
+      "max_score": 300,
+      "pass_score": 180,
+      "exams": [
+        {
+          "id": "hsk30_l4_specimen01",
+          "code": "H41001",
+          "title": "Đề thi mẫu chuẩn CTI số 01 (样卷一)",
+          "subtitle": "Đề mẫu chuẩn do CTI (汉考国际) ban hành - 100 câu: Nghe (45), Đọc (40), Viết (15)",
+          "listening_questions": 45,
+          "reading_questions": 40,
+          "writing_questions": 15,
+          "time_minutes": 105,
+          "file": "database/exams/hsk30/level4/hsk30_l4_specimen01.json"
         }
       ]
     }

@@ -62,10 +62,23 @@ async def synthesize_repeated_question(q_num: int, text: str, out_path: Path) ->
         tmp2 = Path(f2.name)
 
     try:
-        c1 = edge_tts.Communicate(text=text1, voice=VOICE, rate=RATE, volume=VOLUME)
-        c2 = edge_tts.Communicate(text=text2, voice=VOICE, rate=RATE, volume=VOLUME)
-        await c1.save(str(tmp1))
-        await c2.save(str(tmp2))
+        success = False
+        for attempt in range(4):
+            try:
+                c1 = edge_tts.Communicate(text=text1, voice=VOICE, rate=RATE, volume=VOLUME)
+                c2 = edge_tts.Communicate(text=text2, voice=VOICE, rate=RATE, volume=VOLUME)
+                await c1.save(str(tmp1))
+                await c2.save(str(tmp2))
+                success = True
+                break
+            except Exception as ex:
+                if attempt == 3:
+                    print(f"Edge TTS failed on {out_path.name}: {ex}", file=sys.stderr)
+                    return False
+                await asyncio.sleep(1.5 * (attempt + 1))
+
+        if not success:
+            return False
 
         cmd = [
             FFMPEG_BIN, "-y",
@@ -124,6 +137,7 @@ async def main() -> None:
         REPO_ROOT / "database/exams/hsk30/level1/hsk30_l1_specimen01.json",
         REPO_ROOT / "database/exams/hsk30/level2/hsk30_l2_specimen01.json",
         REPO_ROOT / "database/exams/hsk30/level3/hsk30_l3_specimen01.json",
+        REPO_ROOT / "database/exams/hsk30/level4/hsk30_l4_specimen01.json",
     ]
     for ef in exam_files:
         await process_exam_file(ef)

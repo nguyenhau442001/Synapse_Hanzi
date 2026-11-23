@@ -1,8 +1,9 @@
 // src/islands/Hsk30ExamView.jsx
 // HSK 3.0 CBT Mock Exam & HSKK Spoken Examination Suite
-// Recreates the authentic CTI computer examination environment for both Written CBT (HSK 1-3)
+// Recreates the authentic CTI computer examination environment for both Written CBT (HSK 1-4)
 // and Spoken CBT (HSKK Primary, Intermediate, Advanced) with real-time countdown,
-// question palette navigation, microphone recording, audio review, and diagnostic scoring.
+// question palette navigation, interactive word reordering (连词成句), Hanzi input,
+// microphone recording, audio review, and diagnostic scoring.
 
 import { h, render } from 'preact';
 import { useState, useEffect, useRef } from 'preact/hooks';
@@ -13,58 +14,54 @@ export const HSKK_EXAM_STORAGE_KEY = 'hskk_exam_history_v1';
 export const DEFAULT_EXAM_URL = 'database/exams/hsk30/level1/hsk30_l1_specimen01.json';
 
 // CTI examination part guidelines and examples
-export const HSK1_PART_INSTRUCTIONS = {
+export const HSK_PART_INSTRUCTIONS = {
   'listening_1': {
     titleZh: '第一部分：听录音，判断对错',
-    titleVi: 'Phần 1: Nghe ghi âm và phán đoán Đúng (✓) / Sai (✗) theo tranh',
-    guideZh: '一共 5 个题，每题听两次。',
-    guideVi: 'Gồm 5 câu (Câu 1 - 5), mỗi câu được xướng số thứ tự và nghe 2 lần.',
-    example: {
-      textZh: '例如：很高兴 (✓) ｜ 看电影 (✗)',
-      textVi: 'Ví dụ mẫu: Đoạn ghi âm nói "很高兴" (rất vui) đối chiếu tranh bắt tay chào hỏi -> Đúng [✓]; nói "看电影" đối chiếu tranh đọc sách -> Sai [✗].'
-    }
+    titleVi: 'Phần 1: Nghe ghi âm và phán đoán Đúng (✓) / Sai (✗) theo tranh hoặc ngữ cảnh',
+    guideZh: '一共 10 个题，每题听两次。',
+    guideVi: 'Mỗi câu được xướng số thứ tự và nghe đúng 2 lần theo chuẩn CTI.'
   },
   'listening_2': {
-    titleZh: '第二部分：听句子，选择正确答案',
-    titleVi: 'Phần 2: Nghe câu ngắn và chọn đáp án đúng A/B/C',
-    guideZh: '一共 5 个题，每题听两次。',
-    guideVi: 'Gồm 5 câu (Câu 6 - 10), mỗi câu được nghe 2 lần.'
+    titleZh: '第二部分：听短对话，选择正确答案',
+    titleVi: 'Phần 2: Nghe đối thoại ngắn và chọn đáp án chính xác',
+    guideZh: '听对话和问题，从选项中选出正确答案。',
+    guideVi: 'Lắng nghe hội thoại và câu hỏi để chọn phương án A/B/C/D.'
   },
   'listening_3': {
-    titleZh: '第三部分：听短对话，选择对应情境',
-    titleVi: 'Phần 3: Nghe hội thoại ngắn và chọn bối cảnh phù hợp',
-    guideZh: '一共 5 个题，每题听两次。',
-    guideVi: 'Gồm 5 câu (Câu 11 - 15), mỗi câu được nghe 2 lần.'
-  },
-  'listening_4': {
-    titleZh: '第四部分：听对话和问句，选择正确答案',
-    titleVi: 'Phần 4: Nghe đối thoại và trả lời câu hỏi trắc nghiệm A/B/C',
-    guideZh: '一共 5 个题，每题听两次。',
-    guideVi: 'Gồm 5 câu (Câu 16 - 20), mỗi câu được nghe 2 lần.'
+    titleZh: '第三部分：听长对话或短文，选择正确答案',
+    titleVi: 'Phần 3: Nghe hội thoại dài hoặc đoạn văn và trả lời câu hỏi',
+    guideZh: '听长对话或短文，回答给出的题目。',
+    guideVi: 'Đoạn văn dài với lượng thông tin phong phú, suy luận logic để chọn đáp án đúng.'
   },
   'reading_1': {
-    titleZh: '第二部分：阅读 · 第一部分：判断对错 / 看图选句',
-    titleVi: 'Phần 1 (Đọc hiểu): Đọc câu đối chiếu tranh và phán đoán Đúng / Sai',
-    guideZh: '看图和句子，判断句子意思是否与图片一致。',
-    guideVi: 'Nhận định Đúng (✓) nếu câu khớp với hình ảnh, Sai (✗) nếu khác.'
-  },
-  'reading_2': {
-    titleZh: '第二部分：阅读 · 第二部分：选词填空',
-    titleVi: 'Phần 2 (Đọc hiểu): Điền từ thích hợp vào chỗ trống trong câu',
+    titleZh: '第二部分：阅读 · 第一部分：选词填空 / 看图选句',
+    titleVi: 'Phần 1 (Đọc hiểu): Điền từ vào chỗ trống hoặc ghép câu với hình ảnh',
     guideZh: '选择最恰当的词语完成句子。',
     guideVi: 'Đọc ngữ cảnh câu và chọn từ vựng phù hợp nhất.'
   },
-  'reading_3': {
-    titleZh: '第二部分：阅读 · 第三部分：问答配对 / 句子匹配',
-    titleVi: 'Phần 3 (Đọc hiểu): Ghép câu hỏi với câu đối đáp phù hợp',
-    guideZh: '选择匹配的问答或句子关系。',
-    guideVi: 'Chọn câu trả lời logic cho từng câu hỏi.'
+  'reading_2': {
+    titleZh: '第二部分：阅读 · 第二部分：排列句子顺序',
+    titleVi: 'Phần 2 (Đọc hiểu): Sắp xếp các phân câu A, B, C thành đoạn văn logic',
+    guideZh: '排列给出的句子，使其意思连贯完整。',
+    guideVi: 'Xác định câu mở đầu, quan hệ nhân quả/bổ sung để xếp đúng trật tự.'
   },
-  'reading_4': {
-    titleZh: '第二部分：阅读 · 第四部分：阅读理解',
-    titleVi: 'Phần 4 (Đọc hiểu): Đọc đoạn văn ngắn và trả lời câu hỏi trắc nghiệm',
-    guideZh: '根据短文内容选择正确答案。',
-    guideVi: 'Đọc kỹ đoạn văn ngắn để tìm dẫn chứng trả lời A/B/C.'
+  'reading_3': {
+    titleZh: '第二部分：阅读 · 第三部分：阅读理解',
+    titleVi: 'Phần 3 (Đọc hiểu): Đọc đoạn văn và trả lời câu hỏi trắc nghiệm',
+    guideZh: '根据短文内容选择最佳答案。',
+    guideVi: 'Đọc kỹ đoạn văn để tìm dẫn chứng trả lời A/B/C/D.'
+  },
+  'writing_1': {
+    titleZh: '第三部分：书写 · 第一部分：连词成句',
+    titleVi: 'Phần 1 (Viết): Nhấn chọn các từ cho sẵn để sắp xếp thành câu hoàn chỉnh',
+    guideZh: '点击词块排列词序，组成语法正确的完整句子。',
+    guideVi: 'Chú ý trật tự chủ-vị-tân, câu chữ 把/被, và vị trí của định ngữ/trạng ngữ.'
+  },
+  'writing_2': {
+    titleZh: '第三部分：书写 · 第二部分：汉字书写 / 看图造句',
+    titleVi: 'Phần 2 (Viết): Viết chữ Hán theo Pinyin hoặc nhìn tranh dùng từ đặt câu',
+    guideZh: '看拼音写出对应汉字，或结合图片及给定词语写出一个完整句子。',
+    guideVi: 'Viết câu hoàn chỉnh ngữ pháp và diễn đạt trọn vẹn ngữ nghĩa.'
   }
 };
 
@@ -91,13 +88,23 @@ function playCtiBeep(freq = 880, duration = 0.35) {
   }
 }
 
+/**
+ * Normalize sentence for answer comparison (removes punctuation and spaces)
+ */
+function normalizeSentence(str) {
+  if (!str) return '';
+  return String(str)
+    .trim()
+    .replace(/[。\.，,！!\?？\s]/g, '');
+}
+
 export function Hsk30ExamComponent() {
   // Navigation & Category states
   const [examCategory, setExamCategory] = useState('hsk30'); // 'hsk30' (Written CBT) | 'hskk' (Spoken)
   const [examMeta, setExamMeta] = useState(null);
   const [hskkMeta, setHskkMeta] = useState(null);
-  const [currentLevel, setCurrentLevel] = useState('hsk30_1'); // 'hsk30_1' | 'hsk30_2' | 'hsk30_3'
-  const [currentHskkLevel, setCurrentHskkLevel] = useState('hskk_primary'); // 'hskk_primary' | 'hskk_intermediate' | 'hskk_advanced'
+  const [currentLevel, setCurrentLevel] = useState('hsk30_1'); // 'hsk30_1' | 'hsk30_2' | 'hsk30_3' | 'hsk30_4'
+  const [currentHskkLevel, setCurrentHskkLevel] = useState('hskk_primary');
   const [examState, setExamState] = useState('lobby'); // 'lobby' | 'exam' | 'result' | 'hskk_exam' | 'hskk_result'
   const [examData, setExamData] = useState(null);
 
@@ -107,7 +114,7 @@ export function Hsk30ExamComponent() {
   const [flaggedQuestions, setFlaggedQuestions] = useState({});
   const [timeRemaining, setTimeRemaining] = useState(35 * 60);
   const [examResult, setExamResult] = useState(null);
-  const [reviewFilter, setReviewFilter] = useState('all'); // 'all' | 'incorrect' | 'flagged'
+  const [reviewFilter, setReviewFilter] = useState('all');
 
   // Audio & Mic states
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
@@ -119,7 +126,7 @@ export function Hsk30ExamComponent() {
   const [micTestStatus, setMicTestStatus] = useState('');
 
   // HSKK Spoken Exam state
-  const [candidateRecordings, setCandidateRecordings] = useState({}); // { [qId]: { blob, url, duration, aiScore } }
+  const [candidateRecordings, setCandidateRecordings] = useState({});
   const [isRecording, setIsRecording] = useState(false);
   const [recordingSeconds, setRecordingSeconds] = useState(0);
   const [showHskkTranscript, setShowHskkTranscript] = useState({});
@@ -170,7 +177,15 @@ export function Hsk30ExamComponent() {
   const getAllQuestions = () => {
     if (!examData || !examData.sections) return [];
     const list = [];
-    Object.keys(examData.sections).forEach((secKey) => {
+    const sectionOrder = ['listening', 'reading', 'writing', 'repeat', 'answer_short', 'picture_story', 'summarize', 'reading_aloud', 'answer_open'];
+    
+    // Process sections in standard order
+    const orderedKeys = [
+      ...sectionOrder.filter((k) => !!examData.sections[k]),
+      ...Object.keys(examData.sections).filter((k) => !sectionOrder.includes(k)),
+    ];
+
+    orderedKeys.forEach((secKey) => {
       const section = examData.sections[secKey];
       if (section && Array.isArray(section.questions)) {
         section.questions.forEach((q) => {
@@ -348,7 +363,6 @@ export function Hsk30ExamComponent() {
         const blob = new Blob(audioChunksRef.current, { type: 'audio/webm' });
         const blobUrl = URL.createObjectURL(blob);
 
-        // Estimate score based on question length and duration
         const targetSec = activeQuestion.recordSeconds || 10;
         const actualSec = recordingSeconds;
         const ratio = Math.min(1.0, actualSec / Math.max(3, targetSec * 0.5));
@@ -404,6 +418,26 @@ export function Hsk30ExamComponent() {
     }));
   };
 
+  // Handle word reordering click
+  const handleToggleWordReorder = (qId, word, wordsList) => {
+    const currentAns = userAnswers[qId] || [];
+    const currentWords = Array.isArray(currentAns) ? [...currentAns] : [];
+    
+    // If word is already in the list, remove the last occurrence
+    const idx = currentWords.lastIndexOf(word);
+    if (idx !== -1) {
+      currentWords.splice(idx, 1);
+    } else {
+      currentWords.push(word);
+    }
+
+    handleSelectAnswer(qId, currentWords);
+  };
+
+  const resetWordReorder = (qId) => {
+    handleSelectAnswer(qId, []);
+  };
+
   const toggleFlag = (qId) => {
     setFlaggedQuestions((prev) => ({
       ...prev,
@@ -420,37 +454,61 @@ export function Hsk30ExamComponent() {
     const questions = getAllQuestions();
     let listeningCorrect = 0;
     let readingCorrect = 0;
+    let writingCorrect = 0;
     let listeningTotal = 0;
     let readingTotal = 0;
+    let writingTotal = 0;
 
     questions.forEach((q) => {
-      const isCorrect = userAnswers[q.id] === q.correct_answer;
-      if (q.sectionName.includes('听力') || q.sectionKey === 'listening') {
+      const userAns = userAnswers[q.id];
+      let isCorrect = false;
+
+      if (q.type === 'word_reorder') {
+        const assembled = Array.isArray(userAns) ? userAns.join('') : (userAns || '');
+        isCorrect = normalizeSentence(assembled) === normalizeSentence(q.correct_answer);
+      } else if (q.type === 'hanzi_fill') {
+        isCorrect = String(userAns || '').trim() === String(q.correct_answer || '').trim();
+      } else if (q.type === 'picture_sentence') {
+        isCorrect = typeof userAns === 'string' && userAns.trim().length >= 4;
+      } else {
+        isCorrect = userAns === q.correct_answer || String(userAns) === String(q.correct_answer);
+      }
+
+      if (q.sectionKey === 'listening' || q.sectionName.includes('听力')) {
         listeningTotal += 1;
         if (isCorrect) listeningCorrect += 1;
+      } else if (q.sectionKey === 'writing' || q.sectionName.includes('书写')) {
+        writingTotal += 1;
+        if (isCorrect) writingCorrect += 1;
       } else {
         readingTotal += 1;
         if (isCorrect) readingCorrect += 1;
       }
     });
 
+    const hasWriting = writingTotal > 0;
     const listeningScore = listeningTotal > 0 ? Math.round((listeningCorrect / listeningTotal) * 100) : 0;
     const readingScore = readingTotal > 0 ? Math.round((readingCorrect / readingTotal) * 100) : 0;
-    const totalScore = listeningScore + readingScore;
-    const isPassed = totalScore >= (examData.pass_score || 120);
+    const writingScore = hasWriting ? Math.round((writingCorrect / writingTotal) * 100) : 0;
+    const totalScore = listeningScore + readingScore + writingScore;
+    const maxScore = examData.max_score || (hasWriting ? 300 : 200);
+    const passScore = examData.pass_score || (hasWriting ? 180 : 120);
+    const isPassed = totalScore >= passScore;
 
     const resultObj = {
       examId: examData.id,
       examTitle: examData.title,
       date: new Date().toISOString(),
       totalScore,
-      maxScore: examData.max_score || 200,
-      passScore: examData.pass_score || 120,
+      maxScore,
+      passScore,
       isPassed,
+      hasWriting,
       listeningScore,
       readingScore,
+      writingScore,
       totalQuestions: questions.length,
-      correctCount: listeningCorrect + readingCorrect,
+      correctCount: listeningCorrect + readingCorrect + writingCorrect,
       userAnswers: { ...userAnswers },
     };
 
@@ -479,13 +537,12 @@ export function Hsk30ExamComponent() {
     const recordedCount = recordedIds.length;
     const completionRate = Math.round((recordedCount / questions.length) * 100);
 
-    // Compute average AI pronunciation score
     let totalScore = 0;
     recordedIds.forEach((id) => {
       totalScore += candidateRecordings[id].aiScore || 80;
     });
     const avgScore = recordedCount > 0 ? Math.round(totalScore / recordedCount) : 0;
-    const finalScore = Math.round((avgScore * (recordedCount / questions.length)));
+    const finalScore = Math.round(avgScore * (recordedCount / questions.length));
     const isPassed = finalScore >= (examData.pass_score || 60);
 
     const resultObj = {
@@ -539,7 +596,7 @@ export function Hsk30ExamComponent() {
     const total = allQuestions.length;
     const unAnswered = total - answeredCount;
     const msg = unAnswered > 0
-      ? `Bạn còn ${unAnswered} câu chưa trả lời. Bạn có chắc chắn muốn nộp bài ngay bây giờ?`
+      ? `Bạn còn ${unAnswered} câu chưa hoàn thành. Bạn có chắc chắn muốn nộp bài ngay bây giờ?`
       : 'Bạn đã hoàn thành tất cả câu hỏi. Bạn có muốn nộp bài và xem kết quả ngay không?';
     if (window.confirm(msg)) {
       finishExam();
@@ -555,7 +612,21 @@ export function Hsk30ExamComponent() {
   const getCurrentPartInfo = () => {
     if (!activeQuestion) return null;
     const key = `${activeQuestion.sectionKey}_${activeQuestion.part}`;
-    return HSK1_PART_INSTRUCTIONS[key] || null;
+    return HSK_PART_INSTRUCTIONS[key] || null;
+  };
+
+  // Group questions by section for palette
+  const getPaletteSections = () => {
+    const sections = [];
+    const listening = allQuestions.filter((q) => q.sectionKey === 'listening' || q.sectionName.includes('听力'));
+    const reading = allQuestions.filter((q) => q.sectionKey === 'reading' || q.sectionName.includes('阅读'));
+    const writing = allQuestions.filter((q) => q.sectionKey === 'writing' || q.sectionName.includes('书写'));
+
+    if (listening.length > 0) sections.push({ name: '一、听力 (Nghe)', questions: listening });
+    if (reading.length > 0) sections.push({ name: '二、阅读 (Đọc)', questions: reading });
+    if (writing.length > 0) sections.push({ name: '三、书写 (Viết)', questions: writing });
+
+    return sections.length > 0 ? sections : [{ name: 'Danh sách câu hỏi', questions: allQuestions }];
   };
 
   // -------------------------------------------------------------------------
@@ -572,7 +643,6 @@ export function Hsk30ExamComponent() {
     return (
       <div class="exam-container">
         <div class="exam-lobby">
-          {/* Main Top Header */}
           <div class="exam-hero">
             <div>
               <h1 class="exam-hero-title">
@@ -581,12 +651,11 @@ export function Hsk30ExamComponent() {
               </h1>
               <p class="exam-hero-desc">
                 {isHsk30
-                  ? 'Phòng thi máy tính trực tuyến mô phỏng 1:1 theo chuẩn CTI (汉考国际). Đề thi mẫu chính thức kèm âm thanh chuẩn studio, đồng hồ đếm ngược và phân tích điểm chi tiết.'
+                  ? 'Phòng thi máy tính trực tuyến mô phỏng 1:1 theo chuẩn CTI (汉考国际). Đầy đủ cấp 1 đến cấp 4, kèm âm thanh chuẩn studio, kéo thả sắp xếp câu và phân tích điểm chi tiết.'
                   : 'Phòng thi khẩu ngữ chuẩn hóa CTI: Đầy đủ 3 cấp Sơ cấp, Trung cấp, Cao cấp. Ghi âm trực tiếp, âm hiệu "嘟" chuẩn quốc tế, kiểm tra phát âm và gợi ý câu trả lời đạt điểm cao.'}
               </p>
             </div>
 
-            {/* Category Switcher: CBT Written vs Spoken HSKK */}
             <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 0.5rem;">
               <button
                 type="button"
@@ -630,7 +699,6 @@ export function Hsk30ExamComponent() {
               </button>
             </div>
 
-            {/* Sub-level tabs */}
             {isHsk30 ? (
               <div class="exam-level-tabs">
                 <button
@@ -650,6 +718,12 @@ export function Hsk30ExamComponent() {
                   onClick={() => setCurrentLevel('hsk30_3')}
                 >
                   HSK 3 (3.0)
+                </button>
+                <button
+                  class={`exam-level-tab ${currentLevel === 'hsk30_4' ? 'active' : ''}`}
+                  onClick={() => setCurrentLevel('hsk30_4')}
+                >
+                  HSK 4 (3.0)
                 </button>
               </div>
             ) : (
@@ -714,42 +788,39 @@ export function Hsk30ExamComponent() {
               </div>
             )}
 
-            {/* Structure Breakdown */}
             {isHsk30 ? (
               <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; font-size: 0.875rem; background: var(--bg-surface, #f8fafc); padding: 1rem; border-radius: 0.75rem; line-height: 1.6;">
                 <div>
-                  <strong style="color: #0284c7;">1. Phần Nghe (听力):</strong>
-                  <div>• Phán đoán tranh, Trắc nghiệm đơn, Đối thoại ngắn &amp; Hội thoại hiểu.</div>
-                  <div>• Mỗi câu được phát xướng số câu và đọc đúng 2 lần theo chuẩn kỳ thi CTI.</div>
+                  <strong style="color: #0284c7;">1. Cấu trúc bài thi máy tính:</strong>
+                  <div>• HSK 1: 40 câu (Nghe 20, Đọc 20) - 35 phút (Thang điểm: 200, Đỗ: 120đ).</div>
+                  <div>• HSK 2: 60 câu (Nghe 35, Đọc 25) - 55 phút (Thang điểm: 200, Đỗ: 120đ).</div>
+                  <div>• HSK 3: 80 câu (Nghe 40, Đọc 30, Viết 10) - 90 phút (Thang điểm: 300, Đỗ: 180đ).</div>
+                  <div>• HSK 4: 100 câu (Nghe 45, Đọc 40, Viết 15) - 105 phút (Thang điểm: 300, Đỗ: 180đ).</div>
                 </div>
                 <div>
-                  <strong style="color: #0284c7;">2. Phần Đọc (阅读):</strong>
-                  <div>• Khớp tranh, Điền từ vào chỗ trống, Ghép câu hỏi-đáp, Đọc hiểu đoạn văn.</div>
-                  <div>• Tự do di chuyển câu hỏi trên Bảng câu hỏi (答题卡).</div>
+                  <strong style="color: #0284c7;">2. Kỹ năng Viết (书写) tương tác:</strong>
+                  <div>• 连词成句 (Sắp xếp từ): Nhấn chọn các từ ngữ cho sẵn để xếp thành câu đúng ngữ pháp.</div>
+                  <div>• 选词/写汉字: Điền chữ Hán chuẩn xác theo pinyin gợi ý.</div>
+                  <div>• 看图造句: Nhìn tranh và dùng từ vựng quy định để đặt câu hoàn chỉnh.</div>
                 </div>
                 <div>
-                  <strong style="color: #0284c7;">3. Điểm số &amp; Tiêu chuẩn đỗ:</strong>
-                  <div>• Thang điểm tối đa: <strong>200 điểm</strong>.</div>
-                  <div>• Điểm chuẩn đạt (合格): <strong>120 điểm</strong> (đạt từ 60% trở lên).</div>
+                  <strong style="color: #0284c7;">3. Tiêu chuẩn âm thanh chuẩn CTI:</strong>
+                  <div>• Mỗi câu nghe được phát xướng số thứ tự câu ("第一题。") và đọc đúng 2 lần.</div>
+                  <div>• Khoảng nghỉ giữa 2 lần đọc chuẩn 3.5 giây theo quy chuẩn quốc tế.</div>
                 </div>
               </div>
             ) : (
               <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; font-size: 0.875rem; background: #fff1f2; padding: 1rem; border-radius: 0.75rem; line-height: 1.6; border: 1px solid #fecdd3;">
                 <div>
-                  <strong style="color: #be123c;">1. Cấu trúc bài thi khẩu ngữ:</strong>
-                  <div>• <strong>Sơ cấp:</strong> 27 câu (15 câu nhắc lại, 10 câu hỏi ngắn, 2 câu tự giới thiệu).</div>
-                  <div>• <strong>Trung cấp:</strong> 14 câu (10 câu nhắc lại, 2 bức tranh kể chuyện, 2 câu nghị luận).</div>
-                  <div>• <strong>Cao cấp:</strong> 6 câu (3 đoạn tóm tắt, 1 đoạn đọc to, 2 câu chuyên sâu).</div>
+                  <strong style="color: #be123c;">1. Cấu trúc bài thi khẩu ngữ HSKK:</strong>
+                  <div>• Sơ cấp: 27 câu (15 câu nhắc lại, 10 câu hỏi ngắn, 2 câu tự giới thiệu).</div>
+                  <div>• Trung cấp: 14 câu (10 câu nhắc lại, 2 bức tranh kể chuyện, 2 câu nghị luận).</div>
+                  <div>• Cao cấp: 6 câu (3 đoạn tóm tắt, 1 đoạn đọc to, 2 câu chuyên sâu).</div>
                 </div>
                 <div>
                   <strong style="color: #be123c;">2. Tín hiệu âm thanh chuẩn CTI:</strong>
                   <div>• Sau khi nghe câu hỏi, hãy chú ý lắng nghe tiếng <strong>"Bíp 🔔" (嘟声)</strong>.</div>
-                  <div>• Bắt đầu nói ngay khi nghe tiếng bíp và kết thúc trước khi hết thời gian quy định.</div>
-                </div>
-                <div>
-                  <strong style="color: #be123c;">3. Thang điểm &amp; Tiêu chí đạt:</strong>
-                  <div>• Thang điểm tối đa: <strong>100 điểm</strong>.</div>
-                  <div>• Điểm chuẩn đạt (合格): <strong>60 điểm</strong>.</div>
+                  <div>• Bắt đầu nói ngay khi nghe tiếng bíp và hoàn thành trong thời gian quy định.</div>
                 </div>
               </div>
             )}
@@ -769,8 +840,8 @@ export function Hsk30ExamComponent() {
                       <p class="exam-card-desc">{item.subtitle}</p>
                       <div class="exam-card-meta">
                         <span class="exam-meta-item">⏱️ {item.time_minutes} phút</span>
-                        <span class="exam-meta-item">📝 {item.listening_questions + item.reading_questions} câu hỏi</span>
-                        <span class="exam-meta-item">🎯 Điểm đạt: 120/200</span>
+                        <span class="exam-meta-item">📝 {item.listening_questions + item.reading_questions + (item.writing_questions || 0)} câu hỏi</span>
+                        <span class="exam-meta-item">🎯 Điểm đạt: {hsk30Obj ? hsk30Obj.pass_score : 180}/{hsk30Obj ? hsk30Obj.max_score : 300}</span>
                       </div>
                     </div>
                     <button class="exam-start-btn" onClick={() => startExam(item.file)}>
@@ -829,7 +900,6 @@ export function Hsk30ExamComponent() {
     return (
       <div class="exam-container">
         <div class="cbt-exam-wrapper" style="border-top: 4px solid #e11d48;">
-          {/* Top Bar */}
           <header class="cbt-top-bar" style="background: linear-gradient(90deg, #881337 0%, #4c0519 100%);">
             <div class="cbt-title-group">
               <span class="cbt-logo" style="background: #e11d48;">HSKK</span>
@@ -849,7 +919,6 @@ export function Hsk30ExamComponent() {
             </div>
           </header>
 
-          {/* Section Bar */}
           <div class="cbt-section-bar">
             <div>
               <span class="cbt-section-badge" style="background: #be123c;">
@@ -866,7 +935,6 @@ export function Hsk30ExamComponent() {
 
           <div class="cbt-body-layout">
             <main class="cbt-main-area">
-              {/* Part Guide */}
               <div class="cbt-part-banner" style="background: #fff1f2; border-left: 4px solid #e11d48;">
                 <div style="font-weight: 700; color: #9f1239; font-size: 1rem;">
                   {activeQuestion.sectionTitleZh} ({activeQuestion.sectionTitleVi})
@@ -876,7 +944,6 @@ export function Hsk30ExamComponent() {
                 </div>
               </div>
 
-              {/* Step 1: Prompt Audio */}
               {activeQuestion.audio_clip && (
                 <div class="cbt-audio-box" style="border-left: 4px solid #0284c7;">
                   <div class="cbt-audio-status">
@@ -902,16 +969,13 @@ export function Hsk30ExamComponent() {
                 </div>
               )}
 
-              {/* Question Content */}
               <div class="cbt-q-content" style="padding: 1.5rem; background: #ffffff; border-radius: 0.75rem; border: 1px solid #f1f5f9;">
-                {/* Image prompt if exists */}
                 {activeQuestion.image && (
                   <div class="cbt-illustration-wrap" style="margin-bottom: 1.25rem;">
                     <img src={activeQuestion.image} alt="HSKK prompt" class="cbt-illustration-img" />
                   </div>
                 )}
 
-                {/* Prompt display */}
                 <div style="margin-bottom: 1.5rem;">
                   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
                     <span style="font-size: 0.85rem; font-weight: 700; color: #64748b; text-transform: uppercase;">
@@ -954,7 +1018,7 @@ export function Hsk30ExamComponent() {
                   )}
                 </div>
 
-                {/* Recording Control Studio */}
+                {/* Recording Studio */}
                 <div style="background: #fafafa; border: 2px dashed #e2e8f0; border-radius: 1rem; padding: 1.5rem; text-align: center; margin-bottom: 1.5rem;">
                   <h4 style="margin: 0 0 0.5rem 0; color: #0f172a; font-size: 1.1rem;">
                     🎙️ Phòng ghi âm câu trả lời thí sinh
@@ -1012,7 +1076,6 @@ export function Hsk30ExamComponent() {
                   )}
                 </div>
 
-                {/* Suggested High-Scoring Response (for short/open questions) */}
                 {activeQuestion.suggested_zh && (
                   <div style="border: 1px solid #fde68a; background: #fffbeb; border-radius: 0.75rem; padding: 1rem;">
                     <div style="font-weight: 700; color: #92400e; margin-bottom: 0.25rem;">
@@ -1030,7 +1093,6 @@ export function Hsk30ExamComponent() {
                 )}
               </div>
 
-              {/* Navigation Footer */}
               <footer class="cbt-nav-footer">
                 <button
                   class="cbt-btn-nav"
@@ -1052,7 +1114,6 @@ export function Hsk30ExamComponent() {
               </footer>
             </main>
 
-            {/* Question Palette on Right */}
             <aside class="cbt-palette-panel">
               <h4 class="cbt-palette-title">
                 <span>答题卡 (Danh sách câu hỏi)</span>
@@ -1099,7 +1160,7 @@ export function Hsk30ExamComponent() {
   }
 
   // -------------------------------------------------------------------------
-  // RENDER: HSKK SPOKEN EXAM RESULT & PLAYLIST
+  // RENDER: HSKK SPOKEN EXAM RESULT
   // -------------------------------------------------------------------------
   if (examState === 'hskk_result' && hskkResult) {
     const questions = getAllQuestions();
@@ -1133,14 +1194,13 @@ export function Hsk30ExamComponent() {
           </div>
         </div>
 
-        {/* Spoken Review Playlist */}
         <div style="margin-top: 2rem;">
           <h3 style="margin: 0 0 1rem 0; color: #0f172a;">
             🎧 Nghe lại toàn bộ bài thu âm &amp; So sánh phát âm chuẩn
           </h3>
 
           <div style="display: flex; flex-direction: column; gap: 1rem;">
-            {questions.map((q, idx) => {
+            {questions.map((q) => {
               const rec = candidateRecordings[q.id];
               return (
                 <div
@@ -1194,7 +1254,7 @@ export function Hsk30ExamComponent() {
   }
 
   // -------------------------------------------------------------------------
-  // RENDER: CBT WRITTEN EXAM
+  // RENDER: CBT WRITTEN EXAM RUNNER
   // -------------------------------------------------------------------------
   if (examState === 'exam' && activeQuestion) {
     const isFirst = currentQuestionIdx === 0;
@@ -1203,6 +1263,11 @@ export function Hsk30ExamComponent() {
     const isFlagged = !!flaggedQuestions[activeQuestion.id];
     const isTimerWarning = timeRemaining < 300;
     const partInfo = getCurrentPartInfo();
+    const paletteSections = getPaletteSections();
+
+    // Word Reordering helpers
+    const selectedWords = Array.isArray(currentAnswer) ? currentAnswer : [];
+    const availableWords = activeQuestion.words || [];
 
     return (
       <div class="exam-container">
@@ -1250,22 +1315,7 @@ export function Hsk30ExamComponent() {
                           {partInfo.guideZh} <em>({partInfo.guideVi})</em>
                         </div>
                       </div>
-                      {partInfo.example && (
-                        <button
-                          type="button"
-                          class="cbt-part-example-btn"
-                          onClick={() => setShowPartExample((v) => !v)}
-                        >
-                          {showPartExample ? 'Ẩn ví dụ mẫu' : 'ℹ️ Xem ví dụ mẫu (例如)'}
-                        </button>
-                      )}
                     </div>
-                    {showPartExample && partInfo.example && (
-                      <div class="cbt-part-example-box">
-                        <strong style="color: #166534;">{partInfo.example.textZh}</strong>
-                        <div style="color: #475569; margin-top: 0.25rem;">{partInfo.example.textVi}</div>
-                      </div>
-                    )}
                   </div>
                 )}
 
@@ -1307,23 +1357,11 @@ export function Hsk30ExamComponent() {
                 )}
 
                 <div class="cbt-q-content">
-                  {activeQuestion.passage_zh && (
-                    <div class="cbt-passage-card">
-                      <p style="font-weight: 600; margin-bottom: 0.35rem;">{activeQuestion.passage_zh}</p>
-                      <p style="font-size: 0.9rem; color: #64748b; margin: 0;">{activeQuestion.passage_pinyin}</p>
-                    </div>
-                  )}
-
-                  {activeQuestion.statement_zh && (
-                    <div style="margin-bottom: 1rem;">
-                      <h3 class="cbt-q-text">{activeQuestion.statement_zh}</h3>
-                      <div class="cbt-q-pinyin">{activeQuestion.statement_pinyin}</div>
-                    </div>
-                  )}
-
                   {activeQuestion.prompt_zh && (
-                    <div style="margin-bottom: 1rem;">
-                      <h3 class="cbt-q-text">{activeQuestion.prompt_zh}</h3>
+                    <div style="margin-bottom: 1.25rem;">
+                      <h3 class="cbt-q-text" style="line-height: 1.6; white-space: pre-line;">
+                        {activeQuestion.prompt_zh}
+                      </h3>
                       {activeQuestion.prompt_pinyin && (
                         <div class="cbt-q-pinyin">{activeQuestion.prompt_pinyin}</div>
                       )}
@@ -1331,11 +1369,12 @@ export function Hsk30ExamComponent() {
                   )}
 
                   {activeQuestion.image && (
-                    <div class="cbt-illustration-wrap">
+                    <div class="cbt-illustration-wrap" style="margin-bottom: 1rem;">
                       <img src={activeQuestion.image} alt="Question illustration" class="cbt-illustration-img" />
                     </div>
                   )}
 
+                  {/* 1. True / False Mode */}
                   {activeQuestion.type === 'true_false' && (
                     <div class="cbt-tf-grid">
                       <button
@@ -1357,6 +1396,7 @@ export function Hsk30ExamComponent() {
                     </div>
                   )}
 
+                  {/* 2. Multiple Choice Mode */}
                   {activeQuestion.options && (
                     <div class="cbt-options-list">
                       {activeQuestion.options.map((opt) => (
@@ -1376,6 +1416,130 @@ export function Hsk30ExamComponent() {
                           <span class="cbt-option-text">{opt.text}</span>
                         </div>
                       ))}
+                    </div>
+                  )}
+
+                  {/* 3. Word Reordering Mode (连词成句) */}
+                  {activeQuestion.type === 'word_reorder' && (
+                    <div style="margin-top: 1.25rem;">
+                      <div style="font-size: 0.9rem; font-weight: 700; color: #475569; margin-bottom: 0.5rem;">
+                        Nhấn chọn từ để sắp xếp vào câu (nhấn từ đã chọn để gỡ bỏ):
+                      </div>
+
+                      {/* Assembled sentence drop/display area */}
+                      <div
+                        style="min-height: 60px; padding: 0.85rem 1rem; border: 2px dashed #0284c7; background: #f0f9ff; border-radius: 0.75rem; display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;"
+                      >
+                        {selectedWords.length === 0 ? (
+                          <span style="color: #94a3b8; font-style: italic; font-size: 0.95rem;">
+                            (Chưa có từ nào được chọn. Nhấn vào các thẻ từ bên dưới để ghép câu...)
+                          </span>
+                        ) : (
+                          selectedWords.map((word, wIdx) => (
+                            <span
+                              key={wIdx}
+                              style="display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.4rem 0.8rem; background: #0284c7; color: #ffffff; border-radius: 0.5rem; font-size: 1.05rem; font-weight: 600; cursor: pointer; box-shadow: 0 2px 4px rgba(2, 132, 199, 0.2);"
+                              onClick={() => handleToggleWordReorder(activeQuestion.id, word, availableWords)}
+                              title="Nhấn để gỡ bỏ từ này"
+                            >
+                              <span>{word}</span>
+                              <span style="font-size: 0.75rem; opacity: 0.8;">✕</span>
+                            </span>
+                          ))
+                        )}
+                        {selectedWords.length > 0 && (
+                          <span style="font-size: 1.3rem; font-weight: bold; color: #0284c7;">。</span>
+                        )}
+                      </div>
+
+                      {/* Available Words Pool */}
+                      <div style="display: flex; gap: 0.6rem; flex-wrap: wrap; align-items: center; margin-bottom: 1rem;">
+                        {availableWords.map((w, wIdx) => {
+                          const isUsed = selectedWords.includes(w);
+                          return (
+                            <button
+                              key={wIdx}
+                              type="button"
+                              disabled={isUsed}
+                              style={{
+                                padding: '0.5rem 1rem',
+                                borderRadius: '0.5rem',
+                                border: '1px solid #cbd5e1',
+                                background: isUsed ? '#f1f5f9' : '#ffffff',
+                                color: isUsed ? '#94a3b8' : '#0f172a',
+                                fontWeight: 600,
+                                fontSize: '1rem',
+                                cursor: isUsed ? 'not-allowed' : 'pointer',
+                                transition: 'all 0.15s ease',
+                                boxShadow: isUsed ? 'none' : '0 1px 3px rgba(0,0,0,0.08)',
+                              }}
+                              onClick={() => handleToggleWordReorder(activeQuestion.id, w, availableWords)}
+                            >
+                              {w}
+                            </button>
+                          );
+                        })}
+
+                        {selectedWords.length > 0 && (
+                          <button
+                            type="button"
+                            style="padding: 0.45rem 0.85rem; border-radius: 0.5rem; border: 1px solid #fecdd3; background: #fff1f2; color: #e11d48; font-weight: 600; font-size: 0.85rem; cursor: pointer;"
+                            onClick={() => resetWordReorder(activeQuestion.id)}
+                          >
+                            🔄 Xếp lại từ đầu
+                          </button>
+                        )}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* 4. Hanzi Fill Mode (看拼音写汉字) */}
+                  {activeQuestion.type === 'hanzi_fill' && (
+                    <div style="margin-top: 1.25rem; background: #f8fafc; padding: 1.25rem; border-radius: 0.75rem; border: 1px solid #e2e8f0;">
+                      <div style="font-size: 1.2rem; line-height: 1.8; color: #0f172a; margin-bottom: 1rem;">
+                        {activeQuestion.sentence_zh.split('（    ）')[0]}
+                        <span style="display: inline-block; padding: 0.2rem 0.75rem; margin: 0 0.35rem; background: #e0f2fe; border-bottom: 2px solid #0284c7; font-weight: 700; color: #0369a1;">
+                          {currentAnswer || activeQuestion.pinyin_clue}
+                        </span>
+                        {activeQuestion.sentence_zh.split('（    ）')[1]}
+                      </div>
+
+                      <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
+                        <span style="font-size: 0.95rem; font-weight: 600; color: #475569;">
+                          Nhập 1 chữ Hán có pinyin [{activeQuestion.pinyin_clue}]:
+                        </span>
+                        <input
+                          type="text"
+                          maxLength={2}
+                          value={currentAnswer || ''}
+                          placeholder="Chữ Hán..."
+                          style="font-size: 1.3rem; padding: 0.4rem 0.8rem; width: 120px; text-align: center; border-radius: 0.5rem; border: 2px solid #0284c7; font-weight: 700; color: #0f172a;"
+                          onInput={(e) => handleSelectAnswer(activeQuestion.id, e.target.value.trim())}
+                        />
+                      </div>
+                    </div>
+                  )}
+
+                  {/* 5. Picture Sentence Mode (看图用词造句) */}
+                  {activeQuestion.type === 'picture_sentence' && (
+                    <div style="margin-top: 1.25rem; background: #f8fafc; padding: 1.25rem; border-radius: 0.75rem; border: 1px solid #e2e8f0;">
+                      <div style="margin-bottom: 0.75rem; font-size: 1rem;">
+                        <span style="font-weight: 700; color: #475569;">Từ vựng bắt buộc: </span>
+                        <span style="display: inline-block; padding: 0.25rem 0.75rem; background: #dcfce7; color: #166534; font-weight: 800; border-radius: 0.5rem; font-size: 1.15rem;">
+                          【 {activeQuestion.keyword} 】
+                        </span>
+                      </div>
+
+                      <textarea
+                        rows={3}
+                        placeholder={`Hãy viết một câu tiếng Trung hoàn chỉnh có chứa từ ‘${activeQuestion.keyword}’...`}
+                        value={currentAnswer || ''}
+                        style="width: 100%; padding: 0.75rem; border-radius: 0.5rem; border: 1px solid #cbd5e1; font-size: 1.05rem; font-family: inherit; box-sizing: border-box; line-height: 1.5;"
+                        onInput={(e) => handleSelectAnswer(activeQuestion.id, e.target.value)}
+                      />
+                      <div style="text-align: right; font-size: 0.8rem; color: #64748b; margin-top: 0.35rem;">
+                        Đã nhập: {(currentAnswer || '').length} ký tự
+                      </div>
                     </div>
                   )}
                 </div>
@@ -1402,6 +1566,7 @@ export function Hsk30ExamComponent() {
               </footer>
             </main>
 
+            {/* Dynamic Question Palette (答题卡) */}
             <aside class="cbt-palette-panel">
               <h4 class="cbt-palette-title">
                 <span>答题卡 (Bảng câu hỏi)</span>
@@ -1424,21 +1589,29 @@ export function Hsk30ExamComponent() {
                 </div>
               </div>
 
-              <div class="cbt-palette-grid">
-                {allQuestions.map((q, idx) => {
-                  const isAns = userAnswers[q.id] !== undefined;
-                  const isFlag = !!flaggedQuestions[q.id];
-                  const isCurr = currentQuestionIdx === idx;
-                  return (
-                    <button
-                      key={q.id}
-                      class={`cbt-palette-btn ${isCurr ? 'active' : ''} ${isAns ? 'answered' : ''} ${isFlag ? 'flagged' : ''}`}
-                      onClick={() => setCurrentQuestionIdx(idx)}
-                    >
-                      {idx + 1}
-                    </button>
-                  );
-                })}
+              <div style="display: flex; flex-direction: column; gap: 1rem;">
+                {paletteSections.map((sec, secIdx) => (
+                  <div key={secIdx}>
+                    <div class="cbt-palette-section-label">{sec.name}</div>
+                    <div class="cbt-palette-grid">
+                      {sec.questions.map((q) => {
+                        const globalIdx = allQuestions.findIndex((item) => item.id === q.id);
+                        const isAns = userAnswers[q.id] !== undefined && (Array.isArray(userAnswers[q.id]) ? userAnswers[q.id].length > 0 : String(userAnswers[q.id]).length > 0);
+                        const isFlag = !!flaggedQuestions[q.id];
+                        const isCurr = currentQuestionIdx === globalIdx;
+                        return (
+                          <button
+                            key={q.id}
+                            class={`cbt-palette-btn ${isCurr ? 'active' : ''} ${isAns ? 'answered' : ''} ${isFlag ? 'flagged' : ''}`}
+                            onClick={() => setCurrentQuestionIdx(globalIdx)}
+                          >
+                            {q.number}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                ))}
               </div>
             </aside>
           </div>
@@ -1453,7 +1626,20 @@ export function Hsk30ExamComponent() {
   if (examState === 'result' && examResult) {
     const questions = getAllQuestions();
     const filteredQuestions = questions.filter((q) => {
-      const isCorrect = userAnswers[q.id] === q.correct_answer || String(userAnswers[q.id]) === String(q.correct_answer);
+      const userAns = userAnswers[q.id];
+      let isCorrect = false;
+
+      if (q.type === 'word_reorder') {
+        const assembled = Array.isArray(userAns) ? userAns.join('') : (userAns || '');
+        isCorrect = normalizeSentence(assembled) === normalizeSentence(q.correct_answer);
+      } else if (q.type === 'hanzi_fill') {
+        isCorrect = String(userAns || '').trim() === String(q.correct_answer || '').trim();
+      } else if (q.type === 'picture_sentence') {
+        isCorrect = typeof userAns === 'string' && userAns.trim().length >= 4;
+      } else {
+        isCorrect = userAns === q.correct_answer || String(userAns) === String(q.correct_answer);
+      }
+
       if (reviewFilter === 'incorrect') return !isCorrect;
       if (reviewFilter === 'flagged') return !!flaggedQuestions[q.id];
       return true;
@@ -1468,10 +1654,10 @@ export function Hsk30ExamComponent() {
           <h2 style="margin: 0; color: #0f172a;">{examResult.examTitle}</h2>
           <div class="exam-result-score">
             {examResult.totalScore}
-            <span style="font-size: 1.25rem; font-weight: 500; color: #64748b;"> / 200</span>
+            <span style="font-size: 1.25rem; font-weight: 500; color: #64748b;"> / {examResult.maxScore}</span>
           </div>
           <p style="color: #64748b; margin-bottom: 1rem;">
-            Đạt {examResult.correctCount}/{examResult.totalQuestions} câu chính xác (Điểm đỗ chuẩn: 120 điểm)
+            Đạt {examResult.correctCount}/{examResult.totalQuestions} câu chính xác (Điểm đỗ chuẩn: {examResult.passScore} điểm)
           </p>
 
           <div class="exam-score-breakdown">
@@ -1483,6 +1669,12 @@ export function Hsk30ExamComponent() {
               <span class="exam-breakdown-label">Phần thi Đọc (阅读)</span>
               <span class="exam-breakdown-val">{examResult.readingScore} / 100</span>
             </div>
+            {examResult.hasWriting && (
+              <div class="exam-breakdown-item">
+                <span class="exam-breakdown-label">Phần thi Viết (书写)</span>
+                <span class="exam-breakdown-val">{examResult.writingScore} / 100</span>
+              </div>
+            )}
           </div>
 
           <div class="exam-result-actions">
@@ -1509,7 +1701,7 @@ export function Hsk30ExamComponent() {
                 class={`exam-level-tab ${reviewFilter === 'incorrect' ? 'active' : ''}`}
                 onClick={() => setReviewFilter('incorrect')}
               >
-                Câu làm sai ({questions.filter((q) => String(userAnswers[q.id]) !== String(q.correct_answer)).length})
+                Câu làm sai
               </button>
               <button
                 class={`exam-level-tab ${reviewFilter === 'flagged' ? 'active' : ''}`}
@@ -1522,9 +1714,28 @@ export function Hsk30ExamComponent() {
 
           {filteredQuestions.map((q) => {
             const userAns = userAnswers[q.id];
-            const isCorrect = userAns === q.correct_answer || String(userAns) === String(q.correct_answer);
-            const displayUserAns = userAns === true || userAns === 'true' ? 'Đúng (对)' : userAns === false || userAns === 'false' ? 'Sai (错)' : (userAns || 'Chưa làm');
-            const displayCorrectAns = q.correct_answer === true || q.correct_answer === 'true' ? 'Đúng (对)' : q.correct_answer === false || q.correct_answer === 'false' ? 'Sai (错)' : q.correct_answer;
+            let isCorrect = false;
+            let displayUserAns = '';
+            let displayCorrectAns = '';
+
+            if (q.type === 'word_reorder') {
+              const assembled = Array.isArray(userAns) ? userAns.join('') : (userAns || '');
+              isCorrect = normalizeSentence(assembled) === normalizeSentence(q.correct_answer);
+              displayUserAns = assembled || 'Chưa xếp từ';
+              displayCorrectAns = q.correct_answer;
+            } else if (q.type === 'hanzi_fill') {
+              isCorrect = String(userAns || '').trim() === String(q.correct_answer || '').trim();
+              displayUserAns = userAns || 'Chưa điền';
+              displayCorrectAns = q.correct_answer;
+            } else if (q.type === 'picture_sentence') {
+              isCorrect = typeof userAns === 'string' && userAns.trim().length >= 4;
+              displayUserAns = userAns || 'Chưa đặt câu';
+              displayCorrectAns = q.sample_sentence || q.correct_answer;
+            } else {
+              isCorrect = userAns === q.correct_answer || String(userAns) === String(q.correct_answer);
+              displayUserAns = userAns === true || userAns === 'true' ? 'Đúng (对)' : userAns === false || userAns === 'false' ? 'Sai (错)' : (userAns || 'Chưa làm');
+              displayCorrectAns = q.correct_answer === true || q.correct_answer === 'true' ? 'Đúng (对)' : q.correct_answer === false || q.correct_answer === 'false' ? 'Sai (错)' : q.correct_answer;
+            }
 
             return (
               <div class={`review-card ${isCorrect ? 'correct' : 'incorrect'}`} key={q.id}>
@@ -1556,7 +1767,7 @@ export function Hsk30ExamComponent() {
 
                 {q.prompt_zh && <p style="font-weight: 600; margin: 0.4rem 0;">{q.prompt_zh}</p>}
 
-                <div style="display: flex; gap: 1.5rem; margin: 0.5rem 0; font-size: 0.95rem;">
+                <div style="display: flex; gap: 1.5rem; margin: 0.5rem 0; font-size: 0.95rem; flex-wrap: wrap;">
                   <span>
                     Đáp án của bạn: <strong style={{ color: isCorrect ? '#059669' : '#dc2626' }}>{displayUserAns}</strong>
                   </span>

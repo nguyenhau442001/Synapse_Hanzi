@@ -1,0 +1,2396 @@
+{
+  "id": "hsk30_l4_specimen01",
+  "code": "H41001",
+  "version": "3.0",
+  "level": "hsk30_4",
+  "title": "HSK 4 (3.0) - Đề thi mẫu chuẩn CTI H41001",
+  "source": "Chinese Testing International (CTI) Specimen Paper",
+  "time_minutes": 105,
+  "max_score": 300,
+  "pass_score": 180,
+  "sections": {
+    "listening": {
+      "name": "一、听力 (Nghe hiểu)",
+      "name_zh": "第一部分：听力",
+      "name_vi": "Phần 1: Nghe hiểu",
+      "total_questions": 45,
+      "time_minutes": 30,
+      "questions": [
+        {
+          "id": "H41001_L01",
+          "number": 1,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l01.mp3",
+          "prompt_zh": "喂？我们去树林里走走吧，今天的阳光多好啊，很暖和。好吧？图书馆门口儿见？ ★ 今天天气不错。",
+          "correct_answer": "true",
+          "explanation": "Trời nhiều nắng và ấm áp -> thời tiết tốt."
+        },
+        {
+          "id": "H41001_L02",
+          "number": 2,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l02.mp3",
+          "prompt_zh": "我想买这台洗衣机，虽然价格比其他牌子稍微贵一点儿，但质量非常好，售后服务也完善。 ★ 这台洗衣机很便宜。",
+          "correct_answer": "false",
+          "explanation": "Giá hơi đắt hơn hãng khác chứ không hề rẻ."
+        },
+        {
+          "id": "H41001_L03",
+          "number": 3,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l03.mp3",
+          "prompt_zh": "虽然毕业后我们都在同一个城市工作，但因为平时大家工作都太忙，反而很少有时间聚会。 ★ 他们经常聚会。",
+          "correct_answer": "false",
+          "explanation": "Công việc bận nên rất hiếm khi tụ tập."
+        },
+        {
+          "id": "H41001_L04",
+          "number": 4,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l04.mp3",
+          "prompt_zh": "经理，您交代的那份关于新市场推广的市场调查报告，我已经发到您的邮箱了，请您过目。 ★ 调查报告还没写完。",
+          "correct_answer": "false",
+          "explanation": "Đã viết xong và gửi vào email của giám đốc rồi."
+        },
+        {
+          "id": "H41001_L05",
+          "number": 5,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l05.mp3",
+          "prompt_zh": "很多人以为只要多跑步就能减肥，其实如果不注意控制饮食，摄入的热量超过消耗，依然很难瘦下来。 ★ 减肥也需要注意饮食。",
+          "correct_answer": "true",
+          "explanation": "Giảm cân cần kết hợp kiểm soát ăn uống."
+        },
+        {
+          "id": "H41001_L06",
+          "number": 6,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l06.mp3",
+          "prompt_zh": "李老师讲课非常幽默生动，不仅深入浅出，还经常结合生活中的有趣实例，深受全校学生的喜爱。 ★ 学生们很喜欢李老师。",
+          "correct_answer": "true",
+          "explanation": "Thầy giảng hài hước, sinh động nên học sinh rất yêu quý."
+        },
+        {
+          "id": "H41001_L07",
+          "number": 7,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l07.mp3",
+          "prompt_zh": "为了保证航班飞行安全，请各位旅客在飞机起飞和降落阶段，务必系好安全带，关闭移动电话。 ★ 飞机上可以随时接打电话。",
+          "correct_answer": "false",
+          "explanation": "Khi cất cánh hạ cánh bắt buộc tắt điện thoại."
+        },
+        {
+          "id": "H41001_L08",
+          "number": 8,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l08.mp3",
+          "prompt_zh": "这篇散文的语言非常优美，描绘了江南水乡春天的迷人景色，让人仿佛身临其境。 ★ 这篇文章写的是北方的冬天。",
+          "correct_answer": "false",
+          "explanation": "Miêu tả mùa xuân vùng sông nước Giang Nam chứ không phải mùa đông phương Bắc."
+        },
+        {
+          "id": "H41001_L09",
+          "number": 9,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l09.mp3",
+          "prompt_zh": "虽然这次求职面试没有成功，但他并没有灰心丧气，反而认真总结经验，准备迎接下一次机会。 ★ 他对未来充满了信心。",
+          "correct_answer": "true",
+          "explanation": "Không nản chí, tích cực đúc kết bài học."
+        },
+        {
+          "id": "H41001_L10",
+          "number": 10,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l10.mp3",
+          "prompt_zh": "吸烟不仅严重危害自身的呼吸系统和心血管健康，二手烟还会对身边的家人朋友造成巨大伤害。 ★ 吸烟有害健康。",
+          "correct_answer": "true",
+          "explanation": "Hút thuốc gây hại nghiêm trọng cho sức khỏe."
+        },
+        {
+          "id": "H41001_L11",
+          "number": 11,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l11.mp3",
+          "prompt_zh": "女：请问这份合同什么时候需要寄给客户？ 男：今天下午五点之前必须发出去。 问：合同最迟什么时候寄出？",
+          "options": [
+            {
+              "key": "A",
+              "text": "今天上午"
+            },
+            {
+              "key": "B",
+              "text": "今天下午五点前"
+            },
+            {
+              "key": "C",
+              "text": "明天早上"
+            },
+            {
+              "key": "D",
+              "text": "下周一"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Trước 5 giờ chiều nay."
+        },
+        {
+          "id": "H41001_L12",
+          "number": 12,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l12.mp3",
+          "prompt_zh": "女：你最近脸色怎么这么苍白？ 男：昨晚赶项目熬了个通宵，头有点儿晕。 问：男的怎么了？",
+          "options": [
+            {
+              "key": "A",
+              "text": "感冒发烧"
+            },
+            {
+              "key": "B",
+              "text": "昨晚熬夜了"
+            },
+            {
+              "key": "C",
+              "text": "喝醉酒了"
+            },
+            {
+              "key": "D",
+              "text": "心情不好"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Thức trắng đêm làm dự án."
+        },
+        {
+          "id": "H41001_L13",
+          "number": 13,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l13.mp3",
+          "prompt_zh": "女：这辆车的外形真酷，是你新买的吗？ 男：不是，我向朋友借来应急开两天的。 问：关于这辆车，下列哪项正确？",
+          "options": [
+            {
+              "key": "A",
+              "text": "是男的买的"
+            },
+            {
+              "key": "B",
+              "text": "是借朋友的"
+            },
+            {
+              "key": "C",
+              "text": "是租来的"
+            },
+            {
+              "key": "D",
+              "text": "刚从修理厂取回"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Mượn tạm của bạn 2 ngày."
+        },
+        {
+          "id": "H41001_L14",
+          "number": 14,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l14.mp3",
+          "prompt_zh": "女：王总，这是下季度的新产品宣传预算方案，请您签字。 男：放我桌上吧，我下午仔细审阅后再签。 问：男的打算什么时候看方案？",
+          "options": [
+            {
+              "key": "A",
+              "text": "现在立刻"
+            },
+            {
+              "key": "B",
+              "text": "今天下午"
+            },
+            {
+              "key": "C",
+              "text": "明天中午"
+            },
+            {
+              "key": "D",
+              "text": "下个月"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Chiều nay xem kỹ rồi ký."
+        },
+        {
+          "id": "H41001_L15",
+          "number": 15,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l15.mp3",
+          "prompt_zh": "女：服务员，我们这桌的糖醋鲤鱼怎么还没上？ 男：真抱歉，后厨正在烹饪，马上就给您端上来。 问：根据对话，可以知道什么？",
+          "options": [
+            {
+              "key": "A",
+              "text": "菜已经凉了"
+            },
+            {
+              "key": "B",
+              "text": "菜还没做好"
+            },
+            {
+              "key": "C",
+              "text": "客人要退菜"
+            },
+            {
+              "key": "D",
+              "text": "服务员上错菜了"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Món cá chua ngọt đang nấu, sắp mang lên."
+        },
+        {
+          "id": "H41001_L16",
+          "number": 16,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l16.mp3",
+          "prompt_zh": "女：你觉得这次考试的阅读理解难度怎么样？ 男：篇幅比平时练习的长，但生词并不算多。 问：男的觉得阅读理解怎么样？",
+          "options": [
+            {
+              "key": "A",
+              "text": "非常容易"
+            },
+            {
+              "key": "B",
+              "text": "生词特别多"
+            },
+            {
+              "key": "C",
+              "text": "篇幅较长"
+            },
+            {
+              "key": "D",
+              "text": "题目不够做"
+            }
+          ],
+          "correct_answer": "C",
+          "explanation": "Đoạn văn dài hơn bình thường."
+        },
+        {
+          "id": "H41001_L17",
+          "number": 17,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l17.mp3",
+          "prompt_zh": "女：听说你打算报名去参加马拉松长跑？ 男：是啊，我已经坚持慢跑锻炼半年了，想挑战一下自己。 问：男的为什么要参加马拉松？",
+          "options": [
+            {
+              "key": "A",
+              "text": "为了拿奖金"
+            },
+            {
+              "key": "B",
+              "text": "想挑战自己"
+            },
+            {
+              "key": "C",
+              "text": "朋友逼他去的"
+            },
+            {
+              "key": "D",
+              "text": "为了减肥"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Muốn thử thách bản thân."
+        },
+        {
+          "id": "H41001_L18",
+          "number": 18,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l18.mp3",
+          "prompt_zh": "女：小李，你的普通话口音怎么听起来有点儿像北方人？ 男：我在哈尔滨读了四年大学，不知不觉就被带过来了。 问：男的在哪儿上的大学？",
+          "options": [
+            {
+              "key": "A",
+              "text": "北京"
+            },
+            {
+              "key": "B",
+              "text": "上海"
+            },
+            {
+              "key": "C",
+              "text": "哈尔滨"
+            },
+            {
+              "key": "D",
+              "text": "广州"
+            }
+          ],
+          "correct_answer": "C",
+          "explanation": "Học đại học ở Cáp Nhĩ Tân."
+        },
+        {
+          "id": "H41001_L19",
+          "number": 19,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l19.mp3",
+          "prompt_zh": "女：师傅，去首都国际机场三号航站楼大概要多久？ 男：现在不堵车，走机场高速四十分钟就能到。 问：到机场大概需要多长时间？",
+          "options": [
+            {
+              "key": "A",
+              "text": "二十分钟"
+            },
+            {
+              "key": "B",
+              "text": "半小时"
+            },
+            {
+              "key": "C",
+              "text": "四十分钟"
+            },
+            {
+              "key": "D",
+              "text": "一个小时"
+            }
+          ],
+          "correct_answer": "C",
+          "explanation": "40 phút đường cao tốc."
+        },
+        {
+          "id": "H41001_L20",
+          "number": 20,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l20.mp3",
+          "prompt_zh": "女：你新换的这台笔记本电脑用起来顺手吗？ 男：速度特别快，而且电池续航能达到十个小时。 问：关于这台电脑，男的觉得怎么样？",
+          "options": [
+            {
+              "key": "A",
+              "text": "价格太贵"
+            },
+            {
+              "key": "B",
+              "text": "速度快续航长"
+            },
+            {
+              "key": "C",
+              "text": "外观不好看"
+            },
+            {
+              "key": "D",
+              "text": "重量太沉"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Chạy rất nhanh và pin trâu 10 tiếng."
+        },
+        {
+          "id": "H41001_L21",
+          "number": 21,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l21.mp3",
+          "prompt_zh": "女：真不好意思，路上遇到交通事故，堵了半个多小时。 男：没关系，会议还没正式开始，快请进吧。 问：女的为什么迟到了？",
+          "options": [
+            {
+              "key": "A",
+              "text": "起晚了"
+            },
+            {
+              "key": "B",
+              "text": "路上堵车"
+            },
+            {
+              "key": "C",
+              "text": "走错路了"
+            },
+            {
+              "key": "D",
+              "text": "忘带文件"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Tắc đường do tai nạn giao thông."
+        },
+        {
+          "id": "H41001_L22",
+          "number": 22,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l22.mp3",
+          "prompt_zh": "女：妈妈，周末我想跟同学去爬泰山看日出。 男：去吧，但山上风大气温低，记得带上厚外套。 问：男的提醒女的注意什么？",
+          "options": [
+            {
+              "key": "A",
+              "text": "保管好门票"
+            },
+            {
+              "key": "B",
+              "text": "带厚外套防寒"
+            },
+            {
+              "key": "C",
+              "text": "早点儿睡觉"
+            },
+            {
+              "key": "D",
+              "text": "少喝水"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Mang áo khoác dày vì trên núi lạnh gió to."
+        },
+        {
+          "id": "H41001_L23",
+          "number": 23,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l23.mp3",
+          "prompt_zh": "女：张医生，我最近总是失眠多梦，有什么好办法吗？ 男：平时少喝浓茶咖啡，睡前半小时用热水泡泡脚。 问：医生建议女的睡前做什么？",
+          "options": [
+            {
+              "key": "A",
+              "text": "多喝浓茶"
+            },
+            {
+              "key": "B",
+              "text": "热水泡脚"
+            },
+            {
+              "key": "C",
+              "text": "做剧烈运动"
+            },
+            {
+              "key": "D",
+              "text": "吃安眠药"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Ngâm chân nước ấm trước khi ngủ."
+        },
+        {
+          "id": "H41001_L24",
+          "number": 24,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l24.mp3",
+          "prompt_zh": "女：你刚才去哪儿了？到处都找不到你。 男：我看楼梯间的饮水机没水了，去楼下换了一桶纯净水。 问：男的刚才去干什么了？",
+          "options": [
+            {
+              "key": "A",
+              "text": "去买咖啡"
+            },
+            {
+              "key": "B",
+              "text": "换纯净水"
+            },
+            {
+              "key": "C",
+              "text": "打扫卫生"
+            },
+            {
+              "key": "D",
+              "text": "寄快递"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Đi đổi bình nước tinh khiết."
+        },
+        {
+          "id": "H41001_L25",
+          "number": 25,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l25.mp3",
+          "prompt_zh": "女：听说这本关于中国古典园林的书卖得非常火爆？ 男：可不是嘛，刚上架三天出版社就加印了两次。 问：这本书的情况怎么样？",
+          "options": [
+            {
+              "key": "A",
+              "text": "降价促销"
+            },
+            {
+              "key": "B",
+              "text": "销量非常好"
+            },
+            {
+              "key": "C",
+              "text": "内容很枯燥"
+            },
+            {
+              "key": "D",
+              "text": "没人买"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Bán rất chạy, tái bản 2 lần trong 3 ngày."
+        },
+        {
+          "id": "H41001_L26",
+          "number": 26,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l26.mp3",
+          "prompt_zh": "女：大卫，你中文说得这么地道，是有什么独特的诀窍吗？ 男：其实没有捷径，我每天都坚持看一集中国电视剧，模仿里面人物的语调。 女：这确实是个好方法，不仅能练听力，还能了解文化。 男：对啊，遇到不懂的俗语我就记录在本子上，向中国朋友请教。 问：男的是通过什么方式练习汉语的？",
+          "options": [
+            {
+              "key": "A",
+              "text": "看中文电视剧"
+            },
+            {
+              "key": "B",
+              "text": "天天背字典"
+            },
+            {
+              "key": "C",
+              "text": "找外教补习"
+            },
+            {
+              "key": "D",
+              "text": "只听收音机"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Xem phim truyền hình và nhại theo ngữ điệu."
+        },
+        {
+          "id": "H41001_L27",
+          "number": 27,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l27.mp3",
+          "prompt_zh": "女：请问去长城怎么走最方便？ 男：您可以去德胜门乘坐877路直达公交车，或者坐高铁从清河站出发。 女：坐高铁大概需要多久？ 男：高铁只要二十分钟左右就能到八达岭长城站。 问：坐高铁到长城大概多长时间？",
+          "options": [
+            {
+              "key": "A",
+              "text": "十分钟"
+            },
+            {
+              "key": "B",
+              "text": "二十分钟"
+            },
+            {
+              "key": "C",
+              "text": "四十分钟"
+            },
+            {
+              "key": "D",
+              "text": "一个小时"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Khoảng 20 phút bằng tàu cao tốc."
+        },
+        {
+          "id": "H41001_L28",
+          "number": 28,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l28.mp3",
+          "prompt_zh": "女：欢迎光临，请问您想挑选什么款式的衬衫？ 男：我想找一件商务休闲风格的，平时上班和聚会都能穿。 女：您看这件浅蓝色的怎么样？纯棉材质，透气舒服。 男：挺不错的，我可以试穿一下吗？ 问：男的看中了什么颜色的衬衫？",
+          "options": [
+            {
+              "key": "A",
+              "text": "白色"
+            },
+            {
+              "key": "B",
+              "text": "浅蓝色"
+            },
+            {
+              "key": "C",
+              "text": "深黑色"
+            },
+            {
+              "key": "D",
+              "text": "灰色"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Áo sơ mi màu xanh nhạt."
+        },
+        {
+          "id": "H41001_L29",
+          "number": 29,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l29.mp3",
+          "prompt_zh": "女：小张，今年暑假打算怎么安排？ 男：我打算去云南当两周的乡村支教志愿者。 女：真有意义！支教教什么科目？ 男：教当地小学的英语和基础电脑操作。 问：男的暑假打算去哪儿支教？",
+          "options": [
+            {
+              "key": "A",
+              "text": "西藏"
+            },
+            {
+              "key": "B",
+              "text": "云南"
+            },
+            {
+              "key": "C",
+              "text": "四川"
+            },
+            {
+              "key": "D",
+              "text": "贵州"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Tình nguyện dạy học ở Vân Nam."
+        },
+        {
+          "id": "H41001_L30",
+          "number": 30,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l30.mp3",
+          "prompt_zh": "女：您好，我想把这双鞋退掉，鞋跟有点儿磨脚。 男：请问您有购物发票吗？鞋盒保留完好吗？ 女：都在这里，昨天刚买的，一次都没穿出门。 男：好的，核对无误，马上为您办理全额退款。 问：女的为什么要退鞋？",
+          "options": [
+            {
+              "key": "A",
+              "text": "颜色不好看"
+            },
+            {
+              "key": "B",
+              "text": "鞋跟磨脚"
+            },
+            {
+              "key": "C",
+              "text": "尺码买大了"
+            },
+            {
+              "key": "D",
+              "text": "鞋子破损"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Gót giày bị cọ xát đau chân."
+        },
+        {
+          "id": "H41001_L31",
+          "number": 31,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l31.mp3",
+          "prompt_zh": "女：林教授，您能谈谈现代人该如何缓解职场压力吗？ 男：首先要学会合理分配时间，避免把所有事情堆积到最后一刻；其次要培养健康的业余爱好，让大脑在工作之余得到充分放松。 问：林教授给出了什么建议？",
+          "options": [
+            {
+              "key": "A",
+              "text": "跳槽换工作"
+            },
+            {
+              "key": "B",
+              "text": "合理分配时间培养爱好"
+            },
+            {
+              "key": "C",
+              "text": "天天加班加点"
+            },
+            {
+              "key": "D",
+              "text": "放弃所有社交"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Phân bổ thời gian và có sở thích thư giãn."
+        },
+        {
+          "id": "H41001_L32",
+          "number": 32,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l32.mp3",
+          "prompt_zh": "女：听说你领养了一只流浪猫？ 男：是啊，在小区花坛里捡到的，当时浑身脏兮兮的，非常可怜。 女：去宠物医院检查过了吗？ 男：做过全面驱虫和疫苗了，现在活泼健康得很呢。 问：这只猫是在哪儿捡到的？",
+          "options": [
+            {
+              "key": "A",
+              "text": "宠物店"
+            },
+            {
+              "key": "B",
+              "text": "小区花坛"
+            },
+            {
+              "key": "C",
+              "text": "公园长椅"
+            },
+            {
+              "key": "D",
+              "text": "学校操场"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Nhặt ở bồn hoa khu chung cư."
+        },
+        {
+          "id": "H41001_L33",
+          "number": 33,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l33.mp3",
+          "prompt_zh": "女：王经理，这批货物的质量检测合格了吗？ 男：抽检合格率达到了百分之九十九点五，符合出厂标准。 女：那船运的集装箱安排好了吗？ 男：已经跟货运代理公司确认过了，明天下午装箱发运。 问：关于这批货物，下列哪项正确？",
+          "options": [
+            {
+              "key": "A",
+              "text": "质检没过关"
+            },
+            {
+              "key": "B",
+              "text": "明天下午装箱发运"
+            },
+            {
+              "key": "C",
+              "text": "被客户退货"
+            },
+            {
+              "key": "D",
+              "text": "推迟一个月交付"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Chiều mai bốc hàng lên container vận chuyển."
+        },
+        {
+          "id": "H41001_L34",
+          "number": 34,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l34.mp3",
+          "prompt_zh": "女：你最近怎么爱上喝茶了？以前不是只喝咖啡吗？ 男：最近胃不太好，医生建议少刺激肠胃，多喝温和的红茶。 女：红茶确实暖胃，我这儿有武夷山的大红袍，送你一罐尝尝。 男：那太感谢了，正好品尝一下名茶。 问：男的为什么改喝茶了？",
+          "options": [
+            {
+              "key": "A",
+              "text": "为了减肥"
+            },
+            {
+              "key": "B",
+              "text": "胃不太好需养胃"
+            },
+            {
+              "key": "C",
+              "text": "咖啡太贵"
+            },
+            {
+              "key": "D",
+              "text": "朋友推荐的"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Dạ dày không tốt nên đổi sang uống hồng trà ấm bụng."
+        },
+        {
+          "id": "H41001_L35",
+          "number": 35,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l35.mp3",
+          "prompt_zh": "女：听说你获得了这次青年科技创新大赛的一等奖？ 男：全靠团队伙伴们通力合作，我们连续攻关了三个月。 女：奖金打算怎么花？ 男：一部分请团队成员吃大餐庆祝，剩下的投入下一代原型的研发中。 问：男的把大部分奖金用于什么？",
+          "options": [
+            {
+              "key": "A",
+              "text": "买新汽车"
+            },
+            {
+              "key": "B",
+              "text": "下一代原型研发"
+            },
+            {
+              "key": "C",
+              "text": "出国旅游"
+            },
+            {
+              "key": "D",
+              "text": "存入银行"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Đầu tư vào nghiên cứu nguyên mẫu thế hệ mới."
+        },
+        {
+          "id": "H41001_L36",
+          "number": 36,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l36.mp3",
+          "prompt_zh": "很多人常常感叹‘说者无心，听者有意’。在人际交往中，语言是一把双刃剑，恰当的言辞如春风化雨，能温暖人心；而不经思考的伤人之语，却如一把尖刀，往往在不经意间破坏了珍贵的信任。真正情商高的人，懂得在开口前三思，学会设身处地为对方着想，用真诚与尊重化解分歧。 ★ 为什么说语言是一把双刃剑？",
+          "options": [
+            {
+              "key": "A",
+              "text": "因为语言能卖钱"
+            },
+            {
+              "key": "B",
+              "text": "既能温暖人也可能伤害人"
+            },
+            {
+              "key": "C",
+              "text": "因为学外语很难"
+            },
+            {
+              "key": "D",
+              "text": "说话需要两张嘴"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Ngôn từ có thể sưởi ấm lòng người nhưng cũng có thể gây tổn thương."
+        },
+        {
+          "id": "H41001_L37",
+          "number": 37,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l37.mp3",
+          "prompt_zh": "承接上文：真正情商高的人在交往中会怎么做？",
+          "options": [
+            {
+              "key": "A",
+              "text": "从不与人交流"
+            },
+            {
+              "key": "B",
+              "text": "说话前三思并尊重他人"
+            },
+            {
+              "key": "C",
+              "text": "只顾自己高兴"
+            },
+            {
+              "key": "D",
+              "text": "滔滔不绝炫耀"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Uốn lưỡi bảy lần trước khi nói và biết đặt mình vào vị trí người khác."
+        },
+        {
+          "id": "H41001_L38",
+          "number": 38,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l38.mp3",
+          "prompt_zh": "爱因斯坦曾说：‘我没有什么特别的才能，我只是保持了强烈的好奇心。’好奇心是人类探索未知世界的源动力。小孩子总是对周围的一切充满疑问，而随着年龄的增长，很多人逐渐失去了对新事物的好奇与探索欲。其实，终身学习的核心就在于保持这种探求未知的热情，唯有如此，思想才不会僵化。 ★ 爱因斯坦认为自己成功的关键是什么？",
+          "options": [
+            {
+              "key": "A",
+              "text": "天生绝顶聪明"
+            },
+            {
+              "key": "B",
+              "text": "拥有强烈的好奇心"
+            },
+            {
+              "key": "C",
+              "text": "家庭非常富裕"
+            },
+            {
+              "key": "D",
+              "text": "运气特别好"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Duy trì sự tò mò mãnh liệt đối với thế giới."
+        },
+        {
+          "id": "H41001_L39",
+          "number": 39,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l39.mp3",
+          "prompt_zh": "承接上文：根据这段话，终身学习的核心是什么？",
+          "options": [
+            {
+              "key": "A",
+              "text": "天天做考卷"
+            },
+            {
+              "key": "B",
+              "text": "保持探求未知的热情"
+            },
+            {
+              "key": "C",
+              "text": "买很多昂贵书籍"
+            },
+            {
+              "key": "D",
+              "text": "永远不离开学校"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Giữ vững ngọn lửa nhiệt huyết khám phá những điều chưa biết."
+        },
+        {
+          "id": "H41001_L40",
+          "number": 40,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l40.mp3",
+          "prompt_zh": "著名的‘四象限时间管理法’将事情按照‘紧急’与‘重要’划分为四个象限。很多人整天疲于奔命，是因为把大量精力耗费在‘紧急但不重要’的琐事上。实际上，真正决定一个人长远高度的，往往是那些‘重要但不紧急’的事情，比如锻炼身体、学习深造和长远规划。把时间投资在这些事情上，人生才能走得更稳健。 ★ 很多人整天疲于奔命的原因是：",
+          "options": [
+            {
+              "key": "A",
+              "text": "从不休息"
+            },
+            {
+              "key": "B",
+              "text": "耗费精力在紧急不重要的琐事上"
+            },
+            {
+              "key": "C",
+              "text": "睡眠时间太长"
+            },
+            {
+              "key": "D",
+              "text": "工作薪水太低"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Tiêu tốn thời gian vào những việc khẩn cấp nhưng vụn vặt."
+        },
+        {
+          "id": "H41001_L41",
+          "number": 41,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l41.mp3",
+          "prompt_zh": "承接上文：真正决定一个人长远高度的事情是：",
+          "options": [
+            {
+              "key": "A",
+              "text": "重要但不紧急的事情"
+            },
+            {
+              "key": "B",
+              "text": "最紧急的琐碎事务"
+            },
+            {
+              "key": "C",
+              "text": "别人强迫做的事情"
+            },
+            {
+              "key": "D",
+              "text": "毫无意义的娱乐"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Những việc quan trọng nhưng không mang tính khẩn cấp trước mắt."
+        },
+        {
+          "id": "H41001_L42",
+          "number": 42,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l42.mp3",
+          "prompt_zh": "古希腊哲学家亚里士多德说：‘总以某种方式思考和行动，便会形成某种习惯；而习惯最终塑造了我们的性格与命运。’优秀不是一种孤立的行为，而是一种持之以恒的习惯。每天进步百分之一，一年下来就会产生巨大的复利效应。不要轻视微小的坏习惯，也不要忽视每天微小的坚持。 ★ 这段话告诉我们关于‘优秀’的真理是：",
+          "options": [
+            {
+              "key": "A",
+              "text": "优秀完全靠天分"
+            },
+            {
+              "key": "B",
+              "text": "优秀是一种持之以恒的习惯"
+            },
+            {
+              "key": "C",
+              "text": "只要偶尔做一件好事就是优秀"
+            },
+            {
+              "key": "D",
+              "text": "不需要付出努力"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Sự xuất sắc là một thói quen bền bỉ mỗi ngày."
+        },
+        {
+          "id": "H41001_L43",
+          "number": 43,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l43.mp3",
+          "prompt_zh": "承接上文：每天微小坚持带来的效应被称为：",
+          "options": [
+            {
+              "key": "A",
+              "text": "运气效应"
+            },
+            {
+              "key": "B",
+              "text": "复利效应"
+            },
+            {
+              "key": "C",
+              "text": "偶然效应"
+            },
+            {
+              "key": "D",
+              "text": "短视效应"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Hiệu ứng lãi kép (phục lợi hiệu ứng)."
+        },
+        {
+          "id": "H41001_L44",
+          "number": 44,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l44.mp3",
+          "prompt_zh": "森林被誉为‘地球之肺’，是维护全球生态平衡不可或缺的重要屏障。茂密的森林不仅能吸收大量的二氧化碳并释放人类赖以生存的氧气，还能涵养水源、保持水土并调节区域气候。保护每一片森林，就是保护我们共同的家园。 ★ 森林被称为‘地球之肺’是因为：",
+          "options": [
+            {
+              "key": "A",
+              "text": "森林占地面积最大"
+            },
+            {
+              "key": "B",
+              "text": "吸收二氧化碳并释放氧气"
+            },
+            {
+              "key": "C",
+              "text": "森林里有很多动物"
+            },
+            {
+              "key": "D",
+              "text": "森林颜色是绿色的"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Hấp thụ CO2 và nhả khí oxy cho Trái Đất."
+        },
+        {
+          "id": "H41001_L45",
+          "number": 45,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level4/h41001_l45.mp3",
+          "prompt_zh": "承接上文：保护森林的重要意义在于：",
+          "options": [
+            {
+              "key": "A",
+              "text": "获取更多的木材赚钱"
+            },
+            {
+              "key": "B",
+              "text": "维护全球生态平衡"
+            },
+            {
+              "key": "C",
+              "text": "建设更多的高楼"
+            },
+            {
+              "key": "D",
+              "text": "砍伐树木造纸"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Duy trì và bảo vệ cân bằng sinh thái toàn cầu."
+        }
+      ]
+    },
+    "reading": {
+      "name": "二、阅读 (Đọc hiểu)",
+      "name_zh": "第二部分：阅读",
+      "name_vi": "Phần 2: Đọc hiểu",
+      "total_questions": 40,
+      "time_minutes": 40,
+      "questions": [
+        {
+          "id": "H41001_R46",
+          "number": 46,
+          "part": 1,
+          "type": "multiple_choice",
+          "prompt_zh": "遇到突发情况时，一定要保持（    ），切忌慌乱。",
+          "options": [
+            {
+              "key": "A",
+              "text": "冷静"
+            },
+            {
+              "key": "B",
+              "text": "骄傲"
+            },
+            {
+              "key": "C",
+              "text": "马虎"
+            },
+            {
+              "key": "D",
+              "text": "粗心"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "保持冷静: giữ bình tĩnh."
+        },
+        {
+          "id": "H41001_R47",
+          "number": 47,
+          "part": 1,
+          "type": "multiple_choice",
+          "prompt_zh": "这家百年老字号的糕点店在当地享有很高的（    ）。",
+          "options": [
+            {
+              "key": "A",
+              "text": "声誉"
+            },
+            {
+              "key": "B",
+              "text": "速度"
+            },
+            {
+              "key": "C",
+              "text": "距离"
+            },
+            {
+              "key": "D",
+              "text": "价格"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "享有声誉: có uy tín/tiếng tăm cao."
+        },
+        {
+          "id": "H41001_R48",
+          "number": 48,
+          "part": 1,
+          "type": "multiple_choice",
+          "prompt_zh": "由于连日暴雨导致道路塌方，原定发车的班次被迫（    ）。",
+          "options": [
+            {
+              "key": "A",
+              "text": "推迟"
+            },
+            {
+              "key": "B",
+              "text": "赞赏"
+            },
+            {
+              "key": "C",
+              "text": "提倡"
+            },
+            {
+              "key": "D",
+              "text": "鼓励"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "被迫推迟: buộc phải hoãn lại."
+        },
+        {
+          "id": "H41001_R49",
+          "number": 49,
+          "part": 1,
+          "type": "multiple_choice",
+          "prompt_zh": "在激烈的市场竞争中，企业必须不断（    ）才能立于不败之地。",
+          "options": [
+            {
+              "key": "A",
+              "text": "创新"
+            },
+            {
+              "key": "B",
+              "text": "偷懒"
+            },
+            {
+              "key": "C",
+              "text": "放弃"
+            },
+            {
+              "key": "D",
+              "text": "拒绝"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "不断创新: không ngừng đổi mới sáng tạo."
+        },
+        {
+          "id": "H41001_R50",
+          "number": 50,
+          "part": 1,
+          "type": "multiple_choice",
+          "prompt_zh": "王老师对待教学工作一向认真（    ），从不敷衍了事。",
+          "options": [
+            {
+              "key": "A",
+              "text": "负责"
+            },
+            {
+              "key": "B",
+              "text": "马虎"
+            },
+            {
+              "key": "C",
+              "text": "随便"
+            },
+            {
+              "key": "D",
+              "text": "粗糙"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "认真负责: nghiêm túc và có tinh thần trách nhiệm."
+        },
+        {
+          "id": "H41001_R51",
+          "number": 51,
+          "part": 1,
+          "type": "multiple_choice",
+          "prompt_zh": "吸烟严重危害身体健康，公共场所应当全面（    ）吸烟。",
+          "options": [
+            {
+              "key": "A",
+              "text": "禁止"
+            },
+            {
+              "key": "B",
+              "text": "提倡"
+            },
+            {
+              "key": "C",
+              "text": "表扬"
+            },
+            {
+              "key": "D",
+              "text": "欣赏"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "全面禁止: cấm triệt để."
+        },
+        {
+          "id": "H41001_R52",
+          "number": 52,
+          "part": 1,
+          "type": "multiple_choice",
+          "prompt_zh": "经过长达半年的艰苦谈判，双方终于在关键条款上达成了（    ）。",
+          "options": [
+            {
+              "key": "A",
+              "text": "一致"
+            },
+            {
+              "key": "B",
+              "text": "区别"
+            },
+            {
+              "key": "C",
+              "text": "反感"
+            },
+            {
+              "key": "D",
+              "text": "怀疑"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "达成一致: đạt được sự thống nhất."
+        },
+        {
+          "id": "H41001_R53",
+          "number": 53,
+          "part": 1,
+          "type": "multiple_choice",
+          "prompt_zh": "他平时生活非常（    ），从不铺张浪费，却热心资助贫困学生。",
+          "options": [
+            {
+              "key": "A",
+              "text": "节俭"
+            },
+            {
+              "key": "B",
+              "text": "傲慢"
+            },
+            {
+              "key": "C",
+              "text": "奢侈"
+            },
+            {
+              "key": "D",
+              "text": "懒惰"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "生活节俭: sống giản dị tiết kiệm."
+        },
+        {
+          "id": "H41001_R54",
+          "number": 54,
+          "part": 1,
+          "type": "multiple_choice",
+          "prompt_zh": "阅读古典名著不仅能开阔眼界，还能丰富人的（    ）世界。",
+          "options": [
+            {
+              "key": "A",
+              "text": "精神"
+            },
+            {
+              "key": "B",
+              "text": "外表"
+            },
+            {
+              "key": "C",
+              "text": "身高"
+            },
+            {
+              "key": "D",
+              "text": "体重"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "精神世界: thế giới tinh thần."
+        },
+        {
+          "id": "H41001_R55",
+          "number": 55,
+          "part": 1,
+          "type": "multiple_choice",
+          "prompt_zh": "在人际交往中，学会换位思考能够有效减少许多不必要的（    ）。",
+          "options": [
+            {
+              "key": "A",
+              "text": "误会"
+            },
+            {
+              "key": "B",
+              "text": "成功"
+            },
+            {
+              "key": "C",
+              "text": "财富"
+            },
+            {
+              "key": "D",
+              "text": "友谊"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "减少误会: giảm bớt hiểu lầm."
+        },
+        {
+          "id": "H41001_R56",
+          "number": 56,
+          "part": 2,
+          "type": "multiple_choice",
+          "prompt_zh": "请排列下列句子的正确顺序：\nA. 才能在未来的社会竞争中立于不败之地 \nB. 只有树立终身学习的意识 \nC. 并不断提升自己的综合素质",
+          "options": [
+            {
+              "key": "A",
+              "text": "A - B - C"
+            },
+            {
+              "key": "B",
+              "text": "B - A - C"
+            },
+            {
+              "key": "C",
+              "text": "B - C - A"
+            },
+            {
+              "key": "D",
+              "text": "C - A - B"
+            }
+          ],
+          "correct_answer": "C",
+          "explanation": "Trật tự logic chuẩn: BCA. B (điều kiện duy nhất: 只有...) -> C (bổ sung: 并...) -> A (kết quả: 才能...)."
+        },
+        {
+          "id": "H41001_R57",
+          "number": 57,
+          "part": 2,
+          "type": "multiple_choice",
+          "prompt_zh": "请排列下列句子的正确顺序：\nA. 不仅能缓解城市交通拥堵 \nB. 近年来政府大力推广绿色出行方式 \nC. 还能有效减少汽车尾气对空气的污染",
+          "options": [
+            {
+              "key": "A",
+              "text": "A - B - C"
+            },
+            {
+              "key": "B",
+              "text": "B - A - C"
+            },
+            {
+              "key": "C",
+              "text": "B - C - A"
+            },
+            {
+              "key": "D",
+              "text": "C - A - B"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Trật tự logic chuẩn: BAC. B (chủ ngữ/bối cảnh) -> A (lợi ích 1: 不仅能...) -> C (lợi ích 2: 还能...)."
+        },
+        {
+          "id": "H41001_R58",
+          "number": 58,
+          "part": 2,
+          "type": "multiple_choice",
+          "prompt_zh": "请排列下列句子的正确顺序：\nA. 经过全体科研人员三年的艰苦攻关 \nB. 这项重大关键技术终于取得了突破性进展 \nC. 为我国的高铁建设做出了突出贡献",
+          "options": [
+            {
+              "key": "A",
+              "text": "A - B - C"
+            },
+            {
+              "key": "B",
+              "text": "B - A - C"
+            },
+            {
+              "key": "C",
+              "text": "B - C - A"
+            },
+            {
+              "key": "D",
+              "text": "C - A - B"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Trật tự logic chuẩn: ABC. A (quá trình nỗ lực) -> B (thành quả đột phá) -> C (ý nghĩa cống hiến)."
+        },
+        {
+          "id": "H41001_R59",
+          "number": 59,
+          "part": 2,
+          "type": "multiple_choice",
+          "prompt_zh": "请排列下列句子的正确顺序：\nA. 往往藏在日常平凡的点滴温暖之中 \nB. 其实真正的幸福并不遥远 \nC. 只要我们懂得珍惜眼前人与当下生活",
+          "options": [
+            {
+              "key": "A",
+              "text": "A - B - C"
+            },
+            {
+              "key": "B",
+              "text": "B - A - C"
+            },
+            {
+              "key": "C",
+              "text": "B - C - A"
+            },
+            {
+              "key": "D",
+              "text": "C - A - B"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Trật tự logic chuẩn: BAC. B (mở đầu nhận định) -> A (vị ngữ: 往往藏在...) -> C (điều kiện: 只要...)."
+        },
+        {
+          "id": "H41001_R60",
+          "number": 60,
+          "part": 2,
+          "type": "multiple_choice",
+          "prompt_zh": "请排列下列句子的正确顺序：\nA. 导致睡眠质量严重下降 \nB. 长期在睡前沉迷于刷手机 \nC. 进而危害身体的心血管健康",
+          "options": [
+            {
+              "key": "A",
+              "text": "A - B - C"
+            },
+            {
+              "key": "B",
+              "text": "B - A - C"
+            },
+            {
+              "key": "C",
+              "text": "B - C - A"
+            },
+            {
+              "key": "D",
+              "text": "C - A - B"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Trật tự logic chuẩn: BAC. B (nguyên nhân thói quen xấu) -> A (hậu quả trước mắt) -> C (hậu quả lâu dài: 进而...)."
+        },
+        {
+          "id": "H41001_R61",
+          "number": 61,
+          "part": 2,
+          "type": "multiple_choice",
+          "prompt_zh": "请排列下列句子的正确顺序：\nA. 才能找到真正行之有效的解决办法 \nB. 遇到复杂问题时切莫慌乱 \nC. 唯有沉着冷静地理清脉络",
+          "options": [
+            {
+              "key": "A",
+              "text": "A - B - C"
+            },
+            {
+              "key": "B",
+              "text": "B - A - C"
+            },
+            {
+              "key": "C",
+              "text": "B - C - A"
+            },
+            {
+              "key": "D",
+              "text": "C - A - B"
+            }
+          ],
+          "correct_answer": "C",
+          "explanation": "Trật tự logic chuẩn: BCA. B (lời khuyên: 切莫慌乱) -> C (hành động: 唯有沉着...) -> A (mục đích: 才能找到...)."
+        },
+        {
+          "id": "H41001_R62",
+          "number": 62,
+          "part": 2,
+          "type": "multiple_choice",
+          "prompt_zh": "请排列下列句子的正确顺序：\nA. 这座千年古桥依然巍然屹立 \nB. 见证着漫长历史岁月的沧桑变迁 \nC. 历经无数次风雨侵蚀与洪水冲击",
+          "options": [
+            {
+              "key": "A",
+              "text": "A - B - C"
+            },
+            {
+              "key": "B",
+              "text": "B - A - C"
+            },
+            {
+              "key": "C",
+              "text": "B - C - A"
+            },
+            {
+              "key": "D",
+              "text": "C - A - B"
+            }
+          ],
+          "correct_answer": "D",
+          "explanation": "Trật tự logic chuẩn: CAB. C (trải qua thử thách) -> A (vẫn sừng sững) -> B (chứng nhân lịch sử)."
+        },
+        {
+          "id": "H41001_R63",
+          "number": 63,
+          "part": 2,
+          "type": "multiple_choice",
+          "prompt_zh": "请排列下列句子的正确顺序：\nA. 还能在互动中增进邻里之间的感情 \nB. 社区定期举办便民文体活动 \nC. 不仅丰富了居民的业余精神文化生活",
+          "options": [
+            {
+              "key": "A",
+              "text": "A - B - C"
+            },
+            {
+              "key": "B",
+              "text": "B - A - C"
+            },
+            {
+              "key": "C",
+              "text": "B - C - A"
+            },
+            {
+              "key": "D",
+              "text": "C - A - B"
+            }
+          ],
+          "correct_answer": "C",
+          "explanation": "Trật tự logic chuẩn: BCA. B (chủ ngữ: 社区举办活动) -> C (lợi ích 1: 不仅丰富...) -> A (lợi ích 2: 还能增进...)."
+        },
+        {
+          "id": "H41001_R64",
+          "number": 64,
+          "part": 2,
+          "type": "multiple_choice",
+          "prompt_zh": "请排列下列句子的正确顺序：\nA. 从而让谈判在互利共赢的氛围中顺利推进 \nB. 在商务会谈中学会倾听对方的诉求 \nC. 能够体现对合作伙伴的最大诚意",
+          "options": [
+            {
+              "key": "A",
+              "text": "A - B - C"
+            },
+            {
+              "key": "B",
+              "text": "B - A - C"
+            },
+            {
+              "key": "C",
+              "text": "B - C - A"
+            },
+            {
+              "key": "D",
+              "text": "C - A - B"
+            }
+          ],
+          "correct_answer": "C",
+          "explanation": "Trật tự logic chuẩn: BCA. B (phương thức hành động) -> C (tác dụng trực tiếp) -> A (kết quả chung cuộc: 从而...)."
+        },
+        {
+          "id": "H41001_R65",
+          "number": 65,
+          "part": 2,
+          "type": "multiple_choice",
+          "prompt_zh": "请排列下列句子的正确顺序：\nA. 很多看似无法逾越的困难 \nB. 只要我们保持坚韧不拔的恒心与毅力 \nC. 最终都能够迎刃而解",
+          "options": [
+            {
+              "key": "A",
+              "text": "A - B - C"
+            },
+            {
+              "key": "B",
+              "text": "B - A - C"
+            },
+            {
+              "key": "C",
+              "text": "B - C - A"
+            },
+            {
+              "key": "D",
+              "text": "C - A - B"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Trật tự logic chuẩn: ABC. A (đối tượng: 困难) -> B (điều kiện kiên trì: 只要...) -> C (kết quả: 迎刃而解)."
+        },
+        {
+          "id": "H41001_R66",
+          "number": 66,
+          "part": 3,
+          "type": "multiple_choice",
+          "prompt_zh": "中国茶文化博大精深，‘品茶’二字重点在于‘品’，即用心去感受茶汤的香气与滋味，而非仅仅为了解渴。在快节奏的都市生活中，静心泡一壶茶，能让人褪去浮躁，找回内心的平静。 ★ ‘品茶’的核心在于：",
+          "options": [
+            {
+              "key": "A",
+              "text": "大口喝求解渴"
+            },
+            {
+              "key": "B",
+              "text": "用心感受茶香与内心平静"
+            },
+            {
+              "key": "C",
+              "text": "比较茶叶价格"
+            },
+            {
+              "key": "D",
+              "text": "卖茶赚钱"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Trọng tâm của 'phẩm trà' là cảm nhận hương vị và sự an tĩnh."
+        },
+        {
+          "id": "H41001_R67",
+          "number": 67,
+          "part": 3,
+          "type": "multiple_choice",
+          "prompt_zh": "科学研究证实，充足而高质量的睡眠是增强机体免疫力最有效、成本最低的方式。成年人每天若能保持七至八小时规律作息，不仅能改善大脑记忆力，还能有效降低患心血管疾病的风险。 ★ 这段话强调的重点是：",
+          "options": [
+            {
+              "key": "A",
+              "text": "每天剧烈运动"
+            },
+            {
+              "key": "B",
+              "text": "保证规律充足的睡眠"
+            },
+            {
+              "key": "C",
+              "text": "多吃昂贵补品"
+            },
+            {
+              "key": "D",
+              "text": "少喝温开水"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Tầm quan trọng của giấc ngủ đủ 7-8 tiếng."
+        },
+        {
+          "id": "H41001_R68",
+          "number": 68,
+          "part": 3,
+          "type": "multiple_choice",
+          "prompt_zh": "微笑是全世界通用的无声语言。真诚的微笑不仅能拉近人与人之间的距离，化解尴尬与误会，还能促使机体分泌多巴胺，带给自身愉悦的情绪体验。 ★ 微笑的作用包括：",
+          "options": [
+            {
+              "key": "A",
+              "text": "拉近人际距离并愉悦身心"
+            },
+            {
+              "key": "B",
+              "text": "让人花更多钱"
+            },
+            {
+              "key": "C",
+              "text": "让人感到疲倦"
+            },
+            {
+              "key": "D",
+              "text": "产生更多矛盾"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Kéo gần khoảng cách và mang lại niềm vui."
+        },
+        {
+          "id": "H41001_R69",
+          "number": 69,
+          "part": 3,
+          "type": "multiple_choice",
+          "prompt_zh": "‘熟能生巧’是一句古老的中国谚语，意思是说任何复杂的技能，只要经过成千上万次的反复刻苦演练，就能掌握其内在规律，达到游刃有余的境界。学习语言亦是如此。 ★ ‘熟能生巧’告诉我们的道理是：",
+          "options": [
+            {
+              "key": "A",
+              "text": "天赋决定一切"
+            },
+            {
+              "key": "B",
+              "text": "只要反复勤奋练习就能精通"
+            },
+            {
+              "key": "C",
+              "text": "不要练习复杂技能"
+            },
+            {
+              "key": "D",
+              "text": "只看书不用练"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Khổ luyện ắt thành tài."
+        },
+        {
+          "id": "H41001_R70",
+          "number": 70,
+          "part": 3,
+          "type": "multiple_choice",
+          "prompt_zh": "失败是成功之母。真正的智者从不畏惧失败，而是将每一次挫折视作检验自身缺陷、总结宝贵教训的垫脚石。只有经得起风浪考验的人，才能在未来走得更远。 ★ 智者面对失败的态度是：",
+          "options": [
+            {
+              "key": "A",
+              "text": "怨天尤人"
+            },
+            {
+              "key": "B",
+              "text": "总结教训并继续前行"
+            },
+            {
+              "key": "C",
+              "text": "彻底放弃努力"
+            },
+            {
+              "key": "D",
+              "text": "逃避现实"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Đúc kết bài học và kiên cường tiến bước."
+        },
+        {
+          "id": "H41001_R71",
+          "number": 71,
+          "part": 3,
+          "type": "multiple_choice",
+          "prompt_zh": "在团队协作中，沟通的本质在于达成共识，而非争论谁对谁错。学会倾听不同部门的专业意见，尊重彼此的分工，往往能以最小的内耗创造出最大的集体价值。 ★ 团队沟通的核心目标是：",
+          "options": [
+            {
+              "key": "A",
+              "text": "分出谁对谁错"
+            },
+            {
+              "key": "B",
+              "text": "达成共识与通力合作"
+            },
+            {
+              "key": "C",
+              "text": "推卸工作责任"
+            },
+            {
+              "key": "D",
+              "text": "炫耀个人功劳"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Đạt được sự đồng thuận và giảm thiểu bất đồng."
+        },
+        {
+          "id": "H41001_R72",
+          "number": 72,
+          "part": 3,
+          "type": "multiple_choice",
+          "prompt_zh": "阅读不仅是获取信息的渠道，更是一场跨越千百年的思想对话。一本好书如同一位智慧的长者，总能在我们迷茫困惑之时，指引前行的方向。 ★ 这段话将好书比作什么？",
+          "options": [
+            {
+              "key": "A",
+              "text": "一面镜子"
+            },
+            {
+              "key": "B",
+              "text": "一位智慧的长者"
+            },
+            {
+              "key": "C",
+              "text": "一把锋利的刀"
+            },
+            {
+              "key": "D",
+              "text": "一辆快速的车"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Sách hay ví như một bậc trưởng giả thông thái."
+        },
+        {
+          "id": "H41001_R73",
+          "number": 73,
+          "part": 3,
+          "type": "multiple_choice",
+          "prompt_zh": "现在不少家长为了不让孩子‘输在起跑线上’，给孩子报满了各种辅导班，反而剥夺了孩子探索大自然和培养自主兴趣的童年时光。教育应当尊重儿童身心发展的自然规律。 ★ 作者对给孩子报满辅导班的态度是：",
+          "options": [
+            {
+              "key": "A",
+              "text": "非常支持"
+            },
+            {
+              "key": "B",
+              "text": "不赞同，主张尊重孩子天性"
+            },
+            {
+              "key": "C",
+              "text": "无所谓"
+            },
+            {
+              "key": "D",
+              "text": "建议报更多班"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Không đồng tình, cho rằng cần tôn trọng quy luật phát triển tự nhiên."
+        },
+        {
+          "id": "H41001_R74",
+          "number": 74,
+          "part": 3,
+          "type": "multiple_choice",
+          "prompt_zh": "随着智能手机的全面普及，移动支付让‘出门不带钱包’成为现实。从街头小吃到大型商超，扫码支付极大地提升了社会交易的效率，也带动了数字经济的飞速发展。 ★ 移动支付带来的最大改变是：",
+          "options": [
+            {
+              "key": "A",
+              "text": "纸币更抢手"
+            },
+            {
+              "key": "B",
+              "text": "极大提升了交易效率与便利"
+            },
+            {
+              "key": "C",
+              "text": "商场全部倒闭"
+            },
+            {
+              "key": "D",
+              "text": "人们不再出门消费"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Nâng cao vượt bậc hiệu quả giao dịch và tiện ích xã hội."
+        },
+        {
+          "id": "H41001_R75",
+          "number": 75,
+          "part": 3,
+          "type": "multiple_choice",
+          "prompt_zh": "中国古典园林讲究‘借景’与‘移步换景’，即在有限的空间内，通过巧妙的花木搭配、山石点缀与亭台错落，营造出‘虽由人作，宛自天开’的丰富自然景观。 ★ 中国古典园林的特点是：",
+          "options": [
+            {
+              "key": "A",
+              "text": "完全对称古板"
+            },
+            {
+              "key": "B",
+              "text": "虽由人作，宛自天开"
+            },
+            {
+              "key": "C",
+              "text": "没有花草树木"
+            },
+            {
+              "key": "D",
+              "text": "全部用钢筋水泥建造"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Tuy do người làm nhưng trông như thiên tạo."
+        },
+        {
+          "id": "H41001_R76",
+          "number": 76,
+          "part": 3,
+          "type": "multiple_choice",
+          "prompt_zh": "心理学著名的‘棉花糖实验’表明，那些能够为了更大的长远奖励而克制当下短暂欲望的孩子，在日后的学业、事业与社交表现上都更为出色。‘延迟满足’能力是衡量情商与自律水平的关键指标。 ★ 棉花糖实验主要考察的是孩子的什么能力？",
+          "options": [
+            {
+              "key": "A",
+              "text": "跑步速度"
+            },
+            {
+              "key": "B",
+              "text": "延迟满足与自制力"
+            },
+            {
+              "key": "C",
+              "text": "画画水平"
+            },
+            {
+              "key": "D",
+              "text": "数学计算"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Năng lực trì hoãn sự thỏa mãn và tính kỷ luật."
+        },
+        {
+          "id": "H41001_R77",
+          "number": 77,
+          "part": 3,
+          "type": "multiple_choice",
+          "prompt_zh": "承接上文：能够延迟满足的孩子日后往往：",
+          "options": [
+            {
+              "key": "A",
+              "text": "生活更不幸"
+            },
+            {
+              "key": "B",
+              "text": "在学业事业上表现更出色"
+            },
+            {
+              "key": "C",
+              "text": "更容易放弃目标"
+            },
+            {
+              "key": "D",
+              "text": "朋友变得更少"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Gặt hái nhiều thành công hơn trong học tập và sự nghiệp."
+        },
+        {
+          "id": "H41001_R78",
+          "number": 78,
+          "part": 3,
+          "type": "multiple_choice",
+          "prompt_zh": "真正的友谊经得起时间的沉淀与距离的考验。‘海内存知己，天涯若比邻’，即使天各一方、平时鲜少联络，一旦相逢依然情真意切、无话不谈。虚伪的交际如酒肉过眼云烟，唯有真挚的心灵共鸣才历久弥坚。 ★ ‘海内存知己，天涯若比邻’表达的是：",
+          "options": [
+            {
+              "key": "A",
+              "text": "朋友住得很近"
+            },
+            {
+              "key": "B",
+              "text": "真挚友谊不受时空距离限制"
+            },
+            {
+              "key": "C",
+              "text": "大家都要搬到海边住"
+            },
+            {
+              "key": "D",
+              "text": "不要交远方朋友"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Tình bạn chân thành vượt qua mọi khoảng cách thời gian và không gian."
+        },
+        {
+          "id": "H41001_R79",
+          "number": 79,
+          "part": 3,
+          "type": "multiple_choice",
+          "prompt_zh": "承接上文：真正持久的友谊建立在什么基础上？",
+          "options": [
+            {
+              "key": "A",
+              "text": "金钱利益"
+            },
+            {
+              "key": "B",
+              "text": "真挚的心灵共鸣与信任"
+            },
+            {
+              "key": "C",
+              "text": "经常吃喝玩乐"
+            },
+            {
+              "key": "D",
+              "text": "互相吹捧"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Sự đồng điệu chân thành và niềm tin tưởng sâu sắc."
+        },
+        {
+          "id": "H41001_R80",
+          "number": 80,
+          "part": 3,
+          "type": "multiple_choice",
+          "prompt_zh": "久坐不动正在成为危害现代白领健康的一大隐形杀手。长期伏案工作容易诱发颈椎病、腰椎劳损及代谢紊乱。专家建议每伏案工作一小时，应当起身伸展活动五至十分钟，每天保持至少半小时中等强度的有氧运动。 ★ 长期久坐容易引发：",
+          "options": [
+            {
+              "key": "A",
+              "text": "视力变好"
+            },
+            {
+              "key": "B",
+              "text": "颈椎与腰椎劳损"
+            },
+            {
+              "key": "C",
+              "text": "体重下降"
+            },
+            {
+              "key": "D",
+              "text": "记忆力大幅提升"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Thoái hóa đốt sống cổ và cột sống thắt lưng."
+        },
+        {
+          "id": "H41001_R81",
+          "number": 81,
+          "part": 3,
+          "type": "multiple_choice",
+          "prompt_zh": "承接上文：专家对白领的健康建议是：",
+          "options": [
+            {
+              "key": "A",
+              "text": "每天连续工作十小时不休息"
+            },
+            {
+              "key": "B",
+              "text": "每小时起身活动并保持适量运动"
+            },
+            {
+              "key": "C",
+              "text": "完全不参加体育锻炼"
+            },
+            {
+              "key": "D",
+              "text": "只在周末暴饮暴食"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Mỗi tiếng đứng dậy vận động nhẹ và tập thể thao đều đặn."
+        },
+        {
+          "id": "H41001_R82",
+          "number": 82,
+          "part": 3,
+          "type": "multiple_choice",
+          "prompt_zh": "‘谁知盘中餐，粒粒皆辛苦’。一粒粮食从田间播种、除草、灌溉到收获加工，凝结了农民无数辛勤的汗水。在生活富裕的今天，推行‘光盘行动’、杜绝‘舌尖上的浪费’，不仅是对劳动的尊重，更是践行绿色可持续发展的重要体现。 ★ 推行‘光盘行动’的意义在于：",
+          "options": [
+            {
+              "key": "A",
+              "text": "浪费粮食有面子"
+            },
+            {
+              "key": "B",
+              "text": "珍惜劳动成果杜绝浪费"
+            },
+            {
+              "key": "C",
+              "text": "让餐馆少做菜"
+            },
+            {
+              "key": "D",
+              "text": "大家都不去吃饭"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Trân trọng mồ hôi công sức lao động và chống lãng phí thức ăn."
+        },
+        {
+          "id": "H41001_R83",
+          "number": 83,
+          "part": 3,
+          "type": "multiple_choice",
+          "prompt_zh": "承接上文：诗句‘粒粒皆辛苦’主要强调：",
+          "options": [
+            {
+              "key": "A",
+              "text": "粮食非常好吃"
+            },
+            {
+              "key": "B",
+              "text": "粮食来之不易凝结汗水"
+            },
+            {
+              "key": "C",
+              "text": "农民都很富有"
+            },
+            {
+              "key": "D",
+              "text": "做饭很轻松"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Hạt cơm làm ra vô cùng vất vả khó nhọc."
+        },
+        {
+          "id": "H41001_R84",
+          "number": 84,
+          "part": 3,
+          "type": "multiple_choice",
+          "prompt_zh": "在当今人工智能与大数据飞速发展的时代，知识更迭的周期急剧缩短。一个人的核心竞争力不再取决于大学学了什么，而取决于离开学校后持续自我迭代的‘自学能力’。保持对新事物的好奇与求知欲，是拥抱未来的最佳姿态。 ★ 当今时代，个人的核心竞争力主要取决于：",
+          "options": [
+            {
+              "key": "A",
+              "text": "大学的名气"
+            },
+            {
+              "key": "B",
+              "text": "持续自我迭代的自学能力"
+            },
+            {
+              "key": "C",
+              "text": "家庭背景"
+            },
+            {
+              "key": "D",
+              "text": "记忆大量死知识"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Khả năng tự học và không ngừng thích ứng, nâng cấp bản thân."
+        },
+        {
+          "id": "H41001_R85",
+          "number": 85,
+          "part": 3,
+          "type": "multiple_choice",
+          "prompt_zh": "承接上文：拥抱未来的最佳姿态是：",
+          "options": [
+            {
+              "key": "A",
+              "text": "固步自封不接受新技术"
+            },
+            {
+              "key": "B",
+              "text": "保持对新事物的求知欲与学习热情"
+            },
+            {
+              "key": "C",
+              "text": "彻底放弃思考"
+            },
+            {
+              "key": "D",
+              "text": "排斥所有科技发展"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Giữ vững sự tò mò và lòng khao khát học hỏi điều mới."
+        }
+      ]
+    },
+    "writing": {
+      "name": "三、书写 (Viết)",
+      "name_zh": "第三部分：书写",
+      "name_vi": "Phần 3: Viết",
+      "total_questions": 15,
+      "time_minutes": 25,
+      "questions": [
+        {
+          "id": "H41001_W86",
+          "number": 86,
+          "part": 1,
+          "type": "word_reorder",
+          "words": [
+            "很多困难",
+            "是",
+            "可以克服的"
+          ],
+          "correct_answer": "很多困难是可以克服的。",
+          "explanation": "Câu khẳng định 是……的: 很多困难 (chủ ngữ) + 是 (khung) + 可以克服 (vị ngữ năng nguyện) + 的 (trợ từ kết thúc)."
+        },
+        {
+          "id": "H41001_W87",
+          "number": 87,
+          "part": 1,
+          "type": "word_reorder",
+          "words": [
+            "这家公司的",
+            "非常严格",
+            "招聘要求"
+          ],
+          "correct_answer": "这家公司的招聘要求非常严格。",
+          "explanation": "这家公司的招聘要求 (cụm danh từ chủ ngữ) + 非常严格 (vị ngữ tính từ)."
+        },
+        {
+          "id": "H41001_W88",
+          "number": 88,
+          "part": 1,
+          "type": "word_reorder",
+          "words": [
+            "王老师",
+            "详细介绍了",
+            "中国悠久的历史文化"
+          ],
+          "correct_answer": "王老师详细介绍了中国悠久的历史文化。",
+          "explanation": "王老师 (chủ ngữ) + 详细介绍了 (vị ngữ + bổ ngữ) + 中国悠久的历史文化 (tân ngữ)."
+        },
+        {
+          "id": "H41001_W89",
+          "number": 89,
+          "part": 1,
+          "type": "word_reorder",
+          "words": [
+            "阅读不仅能",
+            "还能",
+            "开阔眼界",
+            "陶冶情操"
+          ],
+          "correct_answer": "阅读不仅能开阔眼界，还能陶冶情操。",
+          "explanation": "Cấu trúc liên từ 不仅……还……"
+        },
+        {
+          "id": "H41001_W90",
+          "number": 90,
+          "part": 1,
+          "type": "word_reorder",
+          "words": [
+            "他",
+            "把会议纪要",
+            "发到了",
+            "各位董事的邮箱里"
+          ],
+          "correct_answer": "他把会议纪要发到了各位董事的邮箱里。",
+          "explanation": "Câu chữ 把: 主语 (他) + 把 (bả) + 会议纪要 (tân ngữ được tác động) + 发到了…… (vị ngữ kết quả)."
+        },
+        {
+          "id": "H41001_W91",
+          "number": 91,
+          "part": 1,
+          "type": "word_reorder",
+          "words": [
+            "这道数学难题",
+            "被李华",
+            "成功解答出来了"
+          ],
+          "correct_answer": "这道数学难题被李华成功解答出来了。",
+          "explanation": "Câu bị động chữ 被: 这道数学难题 + 被李华 + 成功解答出来了."
+        },
+        {
+          "id": "H41001_W92",
+          "number": 92,
+          "part": 1,
+          "type": "word_reorder",
+          "words": [
+            "保护环境",
+            "是我们",
+            "共同的",
+            "责任与义务"
+          ],
+          "correct_answer": "保护环境是我们共同的责任与义务。",
+          "explanation": "保护环境 (chủ ngữ danh hóa) + 是 (hệ từ) + 我们共同的责任与义务 (tân ngữ)."
+        },
+        {
+          "id": "H41001_W93",
+          "number": 93,
+          "part": 1,
+          "type": "word_reorder",
+          "words": [
+            "随着科学技术的",
+            "人们的生活",
+            "飞速发展",
+            "变得越来越便利"
+          ],
+          "correct_answer": "随着科学技术的飞速发展，人们的生活变得越来越便利。",
+          "explanation": "Cụm trạng ngữ 随着…… + 主谓句."
+        },
+        {
+          "id": "H41001_W94",
+          "number": 94,
+          "part": 1,
+          "type": "word_reorder",
+          "words": [
+            "他用生动的实例",
+            "向大家",
+            "阐述了",
+            "这个深刻的道理"
+          ],
+          "correct_answer": "他用生动的实例向大家阐述了这个深刻的道理。",
+          "explanation": "Chủ ngữ + Giới tân ngữ 1 (用...) + Giới tân ngữ 2 (向...) + Vị ngữ (阐述了...) + Tân ngữ."
+        },
+        {
+          "id": "H41001_W95",
+          "number": 95,
+          "part": 1,
+          "type": "word_reorder",
+          "words": [
+            "只有坚持不懈地",
+            "努力",
+            "才能实现",
+            "远大的理想"
+          ],
+          "correct_answer": "只有坚持不懈地努力，才能实现远大的理想。",
+          "explanation": "Cấu trúc điều kiện cần: 只有……才……"
+        },
+        {
+          "id": "H41001_W96",
+          "number": 96,
+          "part": 2,
+          "type": "picture_sentence",
+          "keyword": "打扫",
+          "image": "assets/images/illustrations/面条.svg",
+          "prompt_zh": "请结合图片，使用给出的词语‘打扫’写一个完整的句子。",
+          "sample_sentence": "他正在认真打扫房间。",
+          "correct_answer": "他正在认真打扫房间。",
+          "explanation": "Nhìn tranh và dùng từ '打扫' đặt câu miêu tả dọn dẹp vệ sinh."
+        },
+        {
+          "id": "H41001_W97",
+          "number": 97,
+          "part": 2,
+          "type": "picture_sentence",
+          "keyword": "弹钢琴",
+          "image": "assets/images/illustrations/跳舞.svg",
+          "prompt_zh": "请结合图片，使用给出的词语‘弹钢琴’写一个完整的句子。",
+          "sample_sentence": "妹妹从小就喜欢弹钢琴。",
+          "correct_answer": "妹妹从小就喜欢弹钢琴。",
+          "explanation": "Dùng từ '弹钢琴' đặt câu diễn tả sở thích nghệ thuật."
+        },
+        {
+          "id": "H41001_W98",
+          "number": 98,
+          "part": 2,
+          "type": "picture_sentence",
+          "keyword": "跑步",
+          "image": "assets/images/illustrations/跑步.svg",
+          "prompt_zh": "请结合图片，使用给出的词语‘跑步’写一个完整的句子。",
+          "sample_sentence": "坚持跑步对身体健康很有好处。",
+          "correct_answer": "坚持跑步对身体健康很有好处。",
+          "explanation": "Dùng từ '跑步' đặt câu về rèn luyện sức khỏe."
+        },
+        {
+          "id": "H41001_W99",
+          "number": 99,
+          "part": 2,
+          "type": "picture_sentence",
+          "keyword": "看病",
+          "image": "assets/images/illustrations/医生.svg",
+          "prompt_zh": "请结合图片，使用给出的词语‘看病’写一个完整的句子。",
+          "sample_sentence": "医生正在耐心地给病人看病。",
+          "correct_answer": "医生正在耐心地给病人看病。",
+          "explanation": "Dùng từ '看病' miêu tả hoạt động khám bệnh."
+        },
+        {
+          "id": "H41001_W100",
+          "number": 100,
+          "part": 2,
+          "type": "picture_sentence",
+          "keyword": "送礼物",
+          "image": "assets/images/illustrations/生日.svg",
+          "prompt_zh": "请结合图片，使用给出的词语‘送礼物’写一个完整的句子。",
+          "sample_sentence": "朋友们在生日聚会上送给我很多礼物。",
+          "correct_answer": "朋友们在生日聚会上送给我很多礼物。",
+          "explanation": "Dùng từ '送礼物' miêu tả tặng quà sinh nhật."
+        }
+      ]
+    }
+  }
+}

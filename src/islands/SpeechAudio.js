@@ -72,7 +72,9 @@ export function speakChinese(text, options = {}) {
   try {
     const audio = new Audio(audioUrl);
     activeSpeechAudio = audio;
-    const rate = typeof options.rate === 'number' ? Math.max(0.25, Math.min(2.0, options.rate)) : 0.8;
+    const isWordLike = cleanText.length <= 4 && !/[，。？！、；;!?,.\s]/.test(cleanText);
+    const defaultRate = isWordLike ? 1.0 : 0.85;
+    const rate = typeof options.rate === 'number' ? Math.max(0.25, Math.min(2.0, options.rate)) : defaultRate;
     audio.playbackRate = rate;
     if ('preservesPitch' in audio) audio.preservesPitch = true;
 
@@ -262,12 +264,14 @@ export function speakWord() {
 
   const btn = document.getElementById('soundBtn');
   const cleanHanzi = String(word.hanzi).replace(/[（\(].*?[）\)]/g, '').trim() || word.hanzi;
-  const rate = typeof SPEECH_RATE !== 'undefined' ? SPEECH_RATE : (window.SPEECH_RATE || 0.8);
+  const prebuiltUrl = prebuiltAudioUrl(word, 'word');
+  // Play studio prebuilt audio at 1.0x native speed to avoid phase-vocoder time-stretch distortion
+  const rate = prebuiltUrl ? 1.0 : (typeof SPEECH_RATE !== 'undefined' ? SPEECH_RATE : (window.SPEECH_RATE || 0.8));
   speakText(
     cleanHanzi,
     btn,
     rate,
-    prebuiltAudioUrl(word, 'word')
+    prebuiltUrl
   );
 }
 

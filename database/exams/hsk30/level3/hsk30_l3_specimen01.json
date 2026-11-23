@@ -5,9 +5,9 @@
   "level": "hsk30_3",
   "title": "HSK 3 (3.0) - Đề thi mẫu chuẩn CTI H30901",
   "source": "Chinese Testing International (CTI) Specimen Paper",
-  "time_minutes": 70,
-  "max_score": 200,
-  "pass_score": 120,
+  "time_minutes": 90,
+  "max_score": 300,
+  "pass_score": 180,
   "sections": {
     "listening": {
       "name": "一、听力 (Nghe hiểu)",
@@ -1580,6 +1580,135 @@
           ],
           "correct_answer": "B",
           "explanation": "Hành trình vạn dặm bắt đầu từ một bước chân, cần vững vàng từng bước."
+        }
+      ]
+    },
+    "writing": {
+      "name": "三、书写 (Viết)",
+      "name_zh": "第三部分：书写",
+      "name_vi": "Phần 3: Viết (Sắp xếp câu & Điền chữ Hán)",
+      "total_questions": 10,
+      "time_minutes": 15,
+      "questions": [
+        {
+          "id": "H30901_W71",
+          "number": 71,
+          "part": 1,
+          "type": "word_reorder",
+          "words": [
+            "小狗",
+            "正在",
+            "在椅子下面",
+            "睡觉"
+          ],
+          "correct_answer": "小狗正在椅子下面睡觉。",
+          "explanation": "Chủ ngữ (小狗) + Phó từ chỉ tiếp diễn (正在) + Trạng ngữ chỉ nơi chốn (在椅子下面) + Vị ngữ (睡觉)."
+        },
+        {
+          "id": "H30901_W72",
+          "number": 72,
+          "part": 1,
+          "type": "word_reorder",
+          "words": [
+            "经理",
+            "通知大家",
+            "明天上午",
+            "开会"
+          ],
+          "correct_answer": "经理通知大家明天上午开会。",
+          "explanation": "Câu kiêm ngữ: 经理 (chủ ngữ) + 通知 (động từ 1) + 大家 (tân ngữ kiêm chủ ngữ) + 明天上午开会 (vị ngữ 2)."
+        },
+        {
+          "id": "H30901_W73",
+          "number": 73,
+          "part": 1,
+          "type": "word_reorder",
+          "words": [
+            "这家餐馆的菜",
+            "味道",
+            "非常",
+            "地道"
+          ],
+          "correct_answer": "这家餐馆的菜味道非常地道。",
+          "explanation": "Câu vị ngữ hình dung từ: 这家餐馆的菜 (chủ ngữ lớn) + 味道 (chủ ngữ nhỏ) + 非常地道 (vị ngữ)."
+        },
+        {
+          "id": "H30901_W74",
+          "number": 74,
+          "part": 1,
+          "type": "word_reorder",
+          "words": [
+            "他",
+            "从来没有",
+            "放弃过",
+            "自己的梦想"
+          ],
+          "correct_answer": "他从来没有放弃过自己的梦想。",
+          "explanation": "他 (chủ ngữ) + 从来没有 (phó từ phủ định kinh nghiệm) + 放弃过 (động từ vị ngữ kèm qua) + 自己的梦想 (tân ngữ)."
+        },
+        {
+          "id": "H30901_W75",
+          "number": 75,
+          "part": 1,
+          "type": "word_reorder",
+          "words": [
+            "移动支付",
+            "给人们的生活",
+            "带来了",
+            "极大便利"
+          ],
+          "correct_answer": "移动支付给人们的生活带来了极大便利。",
+          "explanation": "移动支付 (chủ ngữ) + 给人们的生活 (giới từ chỉ đối tượng hưởng lợi) + 带来了 (động từ mang lại) + 极大便利 (tân ngữ)."
+        },
+        {
+          "id": "H30901_W76",
+          "number": 76,
+          "part": 2,
+          "type": "hanzi_fill",
+          "sentence_zh": "出门记得（    ）雨伞，外边快下雨了。",
+          "pinyin_clue": "dài",
+          "correct_answer": "带",
+          "explanation": "‘带’ (dài) mang nghĩa đem theo / mang theo vật dụng."
+        },
+        {
+          "id": "H30901_W77",
+          "number": 77,
+          "part": 2,
+          "type": "hanzi_fill",
+          "sentence_zh": "这本小说的故事情节非常吸引人，我一口气就读（    ）了。",
+          "pinyin_clue": "wán",
+          "correct_answer": "完",
+          "explanation": "‘完’ (wán) làm bổ ngữ kết quả: 读完 (đọc xong)."
+        },
+        {
+          "id": "H30901_W78",
+          "number": 78,
+          "part": 2,
+          "type": "hanzi_fill",
+          "sentence_zh": "他在北京语言大学学（    ）汉语已经一年半了。",
+          "pinyin_clue": "xí",
+          "correct_answer": "习",
+          "explanation": "‘习’ (xí) trong từ ghép 学习 (xuéxí - học tập)."
+        },
+        {
+          "id": "H30901_W79",
+          "number": 79,
+          "part": 2,
+          "type": "hanzi_fill",
+          "sentence_zh": "祝大家身体健康，工作顺（    ）！",
+          "pinyin_clue": "lì",
+          "correct_answer": "利",
+          "explanation": "‘利’ (lì) trong lời chúc 工作顺利 (công việc thuận lợi)."
+        },
+        {
+          "id": "H30901_W80",
+          "number": 80,
+          "part": 2,
+          "type": "hanzi_fill",
+          "sentence_zh": "请大家在登机前再次（    ）查自己的随身行李。",
+          "pinyin_clue": "jiǎn",
+          "correct_answer": "检",
+          "explanation": "‘检’ (jiǎn) trong từ 检查 (kiểm tra)."
         }
       ]
     }
