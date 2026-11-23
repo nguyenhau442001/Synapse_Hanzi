@@ -1,0 +1,1247 @@
+{
+  "id": "hsk30_l2_specimen01",
+  "code": "H20901",
+  "version": "3.0",
+  "level": "hsk30_2",
+  "title": "HSK 2 (3.0) - Đề thi mẫu chuẩn CTI H20901",
+  "source": "Chinese Testing International (CTI) Specimen Paper",
+  "time_minutes": 55,
+  "max_score": 200,
+  "pass_score": 120,
+  "sections": {
+    "listening": {
+      "name": "一、听力 (Nghe hiểu)",
+      "total_questions": 35,
+      "time_minutes": 25,
+      "questions": [
+        {
+          "id": "H20901_L01",
+          "number": 1,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l01.mp3",
+          "prompt_zh": "男的在跑步。",
+          "pinyin": "nán de zài pǎo bù 。",
+          "meaning_vi": "Nam đang chạy bộ.",
+          "image": "assets/images/illustrations/跑步.svg",
+          "correct_answer": "true",
+          "explanation": "Khẳng định: '男的在跑步。' (Nam đang chạy bộ.)."
+        },
+        {
+          "id": "H20901_L02",
+          "number": 2,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l02.mp3",
+          "prompt_zh": "医生在给病人看病。",
+          "pinyin": "yī shēng zài gěi bìng rén kàn bìng 。",
+          "meaning_vi": "Bác sĩ đang khám bệnh cho bệnh nhân.",
+          "image": "assets/images/illustrations/医生.svg",
+          "correct_answer": "true",
+          "explanation": "Khẳng định: '医生在给病人看病。' (Bác sĩ đang khám bệnh cho bệnh nhân.)."
+        },
+        {
+          "id": "H20901_L03",
+          "number": 3,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l03.mp3",
+          "prompt_zh": "现在正在下雪。",
+          "pinyin": "xiàn zài zhèng zài xià xuě 。",
+          "meaning_vi": "Bây giờ tuyết đang rơi.",
+          "image": "assets/images/illustrations/下雨.svg",
+          "correct_answer": "false",
+          "explanation": "Khẳng định: '现在正在下雪。' (Bây giờ tuyết đang rơi.)."
+        },
+        {
+          "id": "H20901_L04",
+          "number": 4,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l04.mp3",
+          "prompt_zh": "他们在教室里跳舞。",
+          "pinyin": "tā men zài jiào shì lǐ tiào wǔ 。",
+          "meaning_vi": "Họ đang khiêu vũ trong lớp học.",
+          "image": "assets/images/illustrations/跳舞.svg",
+          "correct_answer": "true",
+          "explanation": "Khẳng định: '他们在教室里跳舞。' (Họ đang khiêu vũ trong lớp học.)."
+        },
+        {
+          "id": "H20901_L05",
+          "number": 5,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l05.mp3",
+          "prompt_zh": "他买了一辆新自行车。",
+          "pinyin": "tā mǎi le yī liàng xīn zì xíng chē 。",
+          "meaning_vi": "Anh ấy mua một chiếc xe đạp mới.",
+          "image": "assets/images/illustrations/自行车.svg",
+          "correct_answer": "true",
+          "explanation": "Khẳng định: '他买了一辆新自行车。' (Anh ấy mua một chiếc xe đạp mới.)."
+        },
+        {
+          "id": "H20901_L06",
+          "number": 6,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l06.mp3",
+          "prompt_zh": "桌子上有两杯茶。",
+          "pinyin": "zhuō zi shang yǒu liǎng bēi chá 。",
+          "meaning_vi": "Trên bàn có hai cốc trà.",
+          "image": "assets/images/illustrations/咖啡.svg",
+          "correct_answer": "false",
+          "explanation": "Khẳng định: '桌子上有两杯茶。' (Trên bàn có hai cốc trà.)."
+        },
+        {
+          "id": "H20901_L07",
+          "number": 7,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l07.mp3",
+          "prompt_zh": "妹妹喜欢吃西瓜。",
+          "pinyin": "mèi mei xǐ huan chī xī guā 。",
+          "meaning_vi": "Em gái thích ăn dưa hấu.",
+          "image": "assets/images/illustrations/西瓜.svg",
+          "correct_answer": "true",
+          "explanation": "Khẳng định: '妹妹喜欢吃西瓜。' (Em gái thích ăn dưa hấu.)."
+        },
+        {
+          "id": "H20901_L08",
+          "number": 8,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l08.mp3",
+          "prompt_zh": "小猫在椅子下面睡觉。",
+          "pinyin": "xiǎo māo zài yǐ zi xià miàn shuì jiào 。",
+          "meaning_vi": "Mèo con đang ngủ dưới gầm ghế.",
+          "image": "assets/images/illustrations/猫.svg",
+          "correct_answer": "true",
+          "explanation": "Khẳng định: '小猫在椅子下面睡觉。' (Mèo con đang ngủ dưới gầm ghế.)."
+        },
+        {
+          "id": "H20901_L09",
+          "number": 9,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l09.mp3",
+          "prompt_zh": "他在飞机场接朋友。",
+          "pinyin": "tā zài fēi jī chǎng jiē péng you 。",
+          "meaning_vi": "Anh ấy ở sân bay đón bạn.",
+          "image": "assets/images/illustrations/火车站.svg",
+          "correct_answer": "false",
+          "explanation": "Khẳng định: '他在飞机场接朋友。' (Anh ấy ở sân bay đón bạn.)."
+        },
+        {
+          "id": "H20901_L10",
+          "number": 10,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l10.mp3",
+          "prompt_zh": "服务员送来了两碗面条。",
+          "pinyin": "fú wù yuán sòng lái le liǎng wǎn miàn tiáo 。",
+          "meaning_vi": "Phục vụ mang đến hai bát mì.",
+          "image": "assets/images/illustrations/面条.svg",
+          "correct_answer": "true",
+          "explanation": "Khẳng định: '服务员送来了两碗面条。' (Phục vụ mang đến hai bát mì.)."
+        },
+        {
+          "id": "H20901_L11",
+          "number": 11,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l11.mp3",
+          "prompt_zh": "女：你想喝点儿什么？ 男：给我一杯温水吧。",
+          "image": "assets/images/illustrations/水.svg",
+          "options": [
+            {
+              "key": "A",
+              "text": "Hình A"
+            },
+            {
+              "key": "B",
+              "text": "Hình B"
+            },
+            {
+              "key": "C",
+              "text": "Hình C"
+            },
+            {
+              "key": "D",
+              "text": "Hình D"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hội thoại nhắc tới uống nước."
+        },
+        {
+          "id": "H20901_L12",
+          "number": 12,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l12.mp3",
+          "prompt_zh": "女：今天天气真好，去打篮球吧。 男：好主意！",
+          "image": "assets/images/illustrations/打篮球.svg",
+          "options": [
+            {
+              "key": "A",
+              "text": "Hình A"
+            },
+            {
+              "key": "B",
+              "text": "Hình B"
+            },
+            {
+              "key": "C",
+              "text": "Hình C"
+            },
+            {
+              "key": "D",
+              "text": "Hình D"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hội thoại nhắc tới chơi bóng rổ."
+        },
+        {
+          "id": "H20901_L13",
+          "number": 13,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l13.mp3",
+          "prompt_zh": "女：这件红色衣服真漂亮。 男：是啊，我也很喜欢。",
+          "image": "assets/images/illustrations/衣服.svg",
+          "options": [
+            {
+              "key": "A",
+              "text": "Hình A"
+            },
+            {
+              "key": "B",
+              "text": "Hình B"
+            },
+            {
+              "key": "C",
+              "text": "Hình C"
+            },
+            {
+              "key": "D",
+              "text": "Hình D"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hội thoại nhắc tới quần áo."
+        },
+        {
+          "id": "H20901_L14",
+          "number": 14,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l14.mp3",
+          "prompt_zh": "女：明天几点出发？ 男：早上七点半在学校门前集合。",
+          "image": "assets/images/illustrations/学校.svg",
+          "options": [
+            {
+              "key": "A",
+              "text": "Hình A"
+            },
+            {
+              "key": "B",
+              "text": "Hình B"
+            },
+            {
+              "key": "C",
+              "text": "Hình C"
+            },
+            {
+              "key": "D",
+              "text": "Hình D"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hội thoại nhắc tới trường học."
+        },
+        {
+          "id": "H20901_L15",
+          "number": 15,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l15.mp3",
+          "prompt_zh": "女：你看见我的手机了吗？ 男：在书桌上呢。",
+          "image": "assets/images/illustrations/手机.svg",
+          "options": [
+            {
+              "key": "A",
+              "text": "Hình A"
+            },
+            {
+              "key": "B",
+              "text": "Hình B"
+            },
+            {
+              "key": "C",
+              "text": "Hình C"
+            },
+            {
+              "key": "D",
+              "text": "Hình D"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hội thoại nhắc tới điện thoại."
+        },
+        {
+          "id": "H20901_L16",
+          "number": 16,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l16.mp3",
+          "prompt_zh": "女：你感冒好点儿了吗？ 男：吃过药了，感觉好多了。",
+          "image": "assets/images/illustrations/药.svg",
+          "options": [
+            {
+              "key": "A",
+              "text": "Hình A"
+            },
+            {
+              "key": "B",
+              "text": "Hình B"
+            },
+            {
+              "key": "C",
+              "text": "Hình C"
+            },
+            {
+              "key": "D",
+              "text": "Hình D"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hội thoại nhắc tới uống thuốc."
+        },
+        {
+          "id": "H20901_L17",
+          "number": 17,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l17.mp3",
+          "prompt_zh": "女：先生，您要买哪种苹果？ 男：这种红苹果来两斤。",
+          "image": "assets/images/illustrations/苹果.svg",
+          "options": [
+            {
+              "key": "A",
+              "text": "Hình A"
+            },
+            {
+              "key": "B",
+              "text": "Hình B"
+            },
+            {
+              "key": "C",
+              "text": "Hình C"
+            },
+            {
+              "key": "D",
+              "text": "Hình D"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hội thoại nhắc tới táo."
+        },
+        {
+          "id": "H20901_L18",
+          "number": 18,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l18.mp3",
+          "prompt_zh": "女：你每天都怎么去上班？ 男：我通常坐公共汽车。",
+          "image": "assets/images/illustrations/公共汽车.svg",
+          "options": [
+            {
+              "key": "A",
+              "text": "Hình A"
+            },
+            {
+              "key": "B",
+              "text": "Hình B"
+            },
+            {
+              "key": "C",
+              "text": "Hình C"
+            },
+            {
+              "key": "D",
+              "text": "Hình D"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hội thoại nhắc tới xe buýt."
+        },
+        {
+          "id": "H20901_L19",
+          "number": 19,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l19.mp3",
+          "prompt_zh": "女：小狗怎么一直叫？ 男：可能它肚子饿了。",
+          "image": "assets/images/illustrations/狗.svg",
+          "options": [
+            {
+              "key": "A",
+              "text": "Hình A"
+            },
+            {
+              "key": "B",
+              "text": "Hình B"
+            },
+            {
+              "key": "C",
+              "text": "Hình C"
+            },
+            {
+              "key": "D",
+              "text": "Hình D"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hội thoại nhắc tới chó con."
+        },
+        {
+          "id": "H20901_L20",
+          "number": 20,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l20.mp3",
+          "prompt_zh": "女：祝你生日快乐！ 男：谢谢你送我的礼物！",
+          "image": "assets/images/illustrations/生日.svg",
+          "options": [
+            {
+              "key": "A",
+              "text": "Hình A"
+            },
+            {
+              "key": "B",
+              "text": "Hình B"
+            },
+            {
+              "key": "C",
+              "text": "Hình C"
+            },
+            {
+              "key": "D",
+              "text": "Hình D"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hội thoại nhắc tới quà sinh nhật."
+        },
+        {
+          "id": "H20901_L21",
+          "number": 21,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l21.mp3",
+          "prompt_zh": "女：今天星期几？ 男：今天星期五。 问：明天是星期几？",
+          "options": [
+            {
+              "key": "A",
+              "text": "星期四"
+            },
+            {
+              "key": "B",
+              "text": "星期六"
+            },
+            {
+              "key": "C",
+              "text": "星期日"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Thứ Sáu -> ngày mai là Thứ Bảy."
+        },
+        {
+          "id": "H20901_L22",
+          "number": 22,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l22.mp3",
+          "prompt_zh": "女：你在哪儿工作？ 男：我在医院当护士。 问：男的在哪儿工作？",
+          "options": [
+            {
+              "key": "A",
+              "text": "学校"
+            },
+            {
+              "key": "B",
+              "text": "医院"
+            },
+            {
+              "key": "C",
+              "text": "银行"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Làm việc ở bệnh viện."
+        },
+        {
+          "id": "H20901_L23",
+          "number": 23,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l23.mp3",
+          "prompt_zh": "女：这个西瓜多少钱一斤？ 男：三块五一斤。 问：西瓜多少钱一斤？",
+          "options": [
+            {
+              "key": "A",
+              "text": "三块"
+            },
+            {
+              "key": "B",
+              "text": "三块五"
+            },
+            {
+              "key": "C",
+              "text": "四块"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Giá 3.5 tệ một cân."
+        },
+        {
+          "id": "H20901_L24",
+          "number": 24,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l24.mp3",
+          "prompt_zh": "女：你今天怎么没去上班？ 男：我有点儿发烧，在家休息。 问：男的怎么了？",
+          "options": [
+            {
+              "key": "A",
+              "text": "身体不舒服"
+            },
+            {
+              "key": "B",
+              "text": "去旅游了"
+            },
+            {
+              "key": "C",
+              "text": "工作太忙"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Bị sốt mệt nên nghỉ ở nhà."
+        },
+        {
+          "id": "H20901_L25",
+          "number": 25,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l25.mp3",
+          "prompt_zh": "女：您好，请问洗手间在哪儿？ 男：直走右拐就是。 问：女的在找什么？",
+          "options": [
+            {
+              "key": "A",
+              "text": "洗手间"
+            },
+            {
+              "key": "B",
+              "text": "出口"
+            },
+            {
+              "key": "C",
+              "text": "电梯"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hỏi thăm nhà vệ sinh."
+        },
+        {
+          "id": "H20901_L26",
+          "number": 26,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l26.mp3",
+          "prompt_zh": "女：外边冷不冷？ 男：有点儿冷，记得穿厚外套。 问：天气怎么样？",
+          "options": [
+            {
+              "key": "A",
+              "text": "很暖和"
+            },
+            {
+              "key": "B",
+              "text": "很热"
+            },
+            {
+              "key": "C",
+              "text": "有点儿冷"
+            }
+          ],
+          "correct_answer": "C",
+          "explanation": "Thời tiết hơi lạnh."
+        },
+        {
+          "id": "H20901_L27",
+          "number": 27,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l27.mp3",
+          "prompt_zh": "女：明天晚上我们去吃火锅吧？ 男：好啊，我来订位子。 问：他们明晚吃什么？",
+          "options": [
+            {
+              "key": "A",
+              "text": "面条"
+            },
+            {
+              "key": "B",
+              "text": "火锅"
+            },
+            {
+              "key": "C",
+              "text": "米饭"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Ăn lẩu."
+        },
+        {
+          "id": "H20901_L28",
+          "number": 28,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l28.mp3",
+          "prompt_zh": "女：王老师下课了吗？ 男：已经下课了，他回办公室了。 问：王老师在哪儿？",
+          "options": [
+            {
+              "key": "A",
+              "text": "教室"
+            },
+            {
+              "key": "B",
+              "text": "操场"
+            },
+            {
+              "key": "C",
+              "text": "办公室"
+            }
+          ],
+          "correct_answer": "C",
+          "explanation": "Về văn phòng rồi."
+        },
+        {
+          "id": "H20901_L29",
+          "number": 29,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l29.mp3",
+          "prompt_zh": "女：这只小鸟真可爱！ 男：是我上星期从花鸟市场买的。 问：这只鸟是哪天买的？",
+          "options": [
+            {
+              "key": "A",
+              "text": "昨天"
+            },
+            {
+              "key": "B",
+              "text": "上星期"
+            },
+            {
+              "key": "C",
+              "text": "去年"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Mua từ tuần trước."
+        },
+        {
+          "id": "H20901_L30",
+          "number": 30,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l30.mp3",
+          "prompt_zh": "女：火车票买到了吗？ 男：买到了，明天下午两点开车的。 问：火车几点开？",
+          "options": [
+            {
+              "key": "A",
+              "text": "上午两点"
+            },
+            {
+              "key": "B",
+              "text": "下午两点"
+            },
+            {
+              "key": "C",
+              "text": "晚上八点"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "2 giờ chiều mai."
+        },
+        {
+          "id": "H20901_L31",
+          "number": 31,
+          "part": 4,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l31.mp3",
+          "prompt_zh": "女：你看过这部电影吗？ 男：看过两次了，非常有意思。 女：那主角是谁演的？ 男：是成龙演的。 问：这部电影男的看过几次？",
+          "options": [
+            {
+              "key": "A",
+              "text": "一次"
+            },
+            {
+              "key": "B",
+              "text": "两次"
+            },
+            {
+              "key": "C",
+              "text": "三次"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Xem 2 lần rồi."
+        },
+        {
+          "id": "H20901_L32",
+          "number": 32,
+          "part": 4,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l32.mp3",
+          "prompt_zh": "女：服务员，我们可以点菜了吗？ 男：好的，请问您想吃点儿什么？ 女：来一个宫保鸡丁和一个青菜。 男：还要别的吗？ 女：再来两碗米饭。 问：女的点了几个菜？",
+          "options": [
+            {
+              "key": "A",
+              "text": "一个"
+            },
+            {
+              "key": "B",
+              "text": "两个"
+            },
+            {
+              "key": "C",
+              "text": "三个"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "1 món gà Cung Bảo + 1 rau xào = 2 món."
+        },
+        {
+          "id": "H20901_L33",
+          "number": 33,
+          "part": 4,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l33.mp3",
+          "prompt_zh": "女：小张，你的汉语说得真流利。 男：哪里哪里，我学了一年半了。 女：你在哪儿学的？ 男：在北京语言大学。 问：男的学汉语多久了？",
+          "options": [
+            {
+              "key": "A",
+              "text": "半年"
+            },
+            {
+              "key": "B",
+              "text": "一年"
+            },
+            {
+              "key": "C",
+              "text": "一年半"
+            }
+          ],
+          "correct_answer": "C",
+          "explanation": "Học được một năm rưỡi."
+        },
+        {
+          "id": "H20901_L34",
+          "number": 34,
+          "part": 4,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l34.mp3",
+          "prompt_zh": "女：爸爸，周末我们去动物园看熊猫吧？ 男：好啊，带上妈妈一起去。 女：我们坐地铁去吗？ 男：坐地铁快，路上不堵车。 问：他们打算怎么去动物园？",
+          "options": [
+            {
+              "key": "A",
+              "text": "开车"
+            },
+            {
+              "key": "B",
+              "text": "坐地铁"
+            },
+            {
+              "key": "C",
+              "text": "骑自行车"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Đi tàu điện ngầm."
+        },
+        {
+          "id": "H20901_L35",
+          "number": 35,
+          "part": 4,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level2/h20901_l35.mp3",
+          "prompt_zh": "女：你好，这件衬衫有大号的吗？ 男：对不起，大号卖完了，只有中号和小号。 女：那有别的颜色吗？ 男：还有蓝色的。 问：这件衬衫什么号卖完了？",
+          "options": [
+            {
+              "key": "A",
+              "text": "小号"
+            },
+            {
+              "key": "B",
+              "text": "中号"
+            },
+            {
+              "key": "C",
+              "text": "大号"
+            }
+          ],
+          "correct_answer": "C",
+          "explanation": "Size L (đại hào) đã bán hết."
+        }
+      ]
+    },
+    "reading": {
+      "name": "二、阅读 (Đọc hiểu)",
+      "total_questions": 25,
+      "time_minutes": 22,
+      "questions": [
+        {
+          "id": "H20901_R36",
+          "number": 36,
+          "part": 1,
+          "type": "true_false",
+          "prompt_zh": "小狗在院子里高兴地跑来跑去。",
+          "image": "assets/images/illustrations/狗.svg",
+          "correct_answer": "true",
+          "explanation": "Câu miêu tả khớp với ngữ cảnh: 狗在院子里跑."
+        },
+        {
+          "id": "H20901_R37",
+          "number": 37,
+          "part": 1,
+          "type": "true_false",
+          "prompt_zh": "爷爷每天早上都在公园打太极拳。",
+          "image": "assets/images/illustrations/跑步.svg",
+          "correct_answer": "true",
+          "explanation": "Câu miêu tả khớp với ngữ cảnh: Tập thể dục công viên."
+        },
+        {
+          "id": "H20901_R38",
+          "number": 38,
+          "part": 1,
+          "type": "true_false",
+          "prompt_zh": "桌子上有一本红色的汉语词典。",
+          "image": "assets/images/illustrations/书.svg",
+          "correct_answer": "true",
+          "explanation": "Câu miêu tả khớp với ngữ cảnh: Sách từ điển Hán ngữ."
+        },
+        {
+          "id": "H20901_R39",
+          "number": 39,
+          "part": 1,
+          "type": "true_false",
+          "prompt_zh": "下雨了，路上的人都打着雨伞。",
+          "image": "assets/images/illustrations/下雨.svg",
+          "correct_answer": "true",
+          "explanation": "Câu miêu tả khớp với ngữ cảnh: Mọi người che ô đi mưa."
+        },
+        {
+          "id": "H20901_R40",
+          "number": 40,
+          "part": 1,
+          "type": "true_false",
+          "prompt_zh": "妈妈正在厨房里准备晚饭。",
+          "image": "assets/images/illustrations/面条.svg",
+          "correct_answer": "true",
+          "explanation": "Câu miêu tả khớp với ngữ cảnh: Nấu bữa tối."
+        },
+        {
+          "id": "H20901_R41",
+          "number": 41,
+          "part": 2,
+          "type": "multiple_choice",
+          "prompt_zh": "他们正在（ ）一个很有趣的问题。",
+          "options": [
+            {
+              "key": "A",
+              "text": "讨论"
+            },
+            {
+              "key": "B",
+              "text": "跳舞"
+            },
+            {
+              "key": "C",
+              "text": "跑步"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "讨论问题: thảo luận vấn đề."
+        },
+        {
+          "id": "H20901_R42",
+          "number": 42,
+          "part": 2,
+          "type": "multiple_choice",
+          "prompt_zh": "今天的考试（ ）都不难，我都做完了。",
+          "options": [
+            {
+              "key": "A",
+              "text": "一点儿"
+            },
+            {
+              "key": "B",
+              "text": "一件"
+            },
+            {
+              "key": "C",
+              "text": "一块"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "一点儿都不难: không khó chút nào."
+        },
+        {
+          "id": "H20901_R43",
+          "number": 43,
+          "part": 2,
+          "type": "multiple_choice",
+          "prompt_zh": "妈妈在电话里（ ）我多注意身体。",
+          "options": [
+            {
+              "key": "A",
+              "text": "告诉"
+            },
+            {
+              "key": "B",
+              "text": "看见"
+            },
+            {
+              "key": "C",
+              "text": "学习"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "告诉: nhắc nhở / bảo tôi."
+        },
+        {
+          "id": "H20901_R44",
+          "number": 44,
+          "part": 2,
+          "type": "multiple_choice",
+          "prompt_zh": "从这里到火车站（ ）坐地铁二十分钟。",
+          "options": [
+            {
+              "key": "A",
+              "text": "大概"
+            },
+            {
+              "key": "B",
+              "text": "已经"
+            },
+            {
+              "key": "C",
+              "text": "正在"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "大概: khoảng chừng."
+        },
+        {
+          "id": "H20901_R45",
+          "number": 45,
+          "part": 2,
+          "type": "multiple_choice",
+          "prompt_zh": "祝大家身体健康，工作（ ）！",
+          "options": [
+            {
+              "key": "A",
+              "text": "顺利"
+            },
+            {
+              "key": "B",
+              "text": "晴天"
+            },
+            {
+              "key": "C",
+              "text": "漂亮"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "工作顺利: công tác thuận lợi."
+        },
+        {
+          "id": "H20901_R46",
+          "number": 46,
+          "part": 3,
+          "type": "true_false",
+          "prompt_zh": "我现在每天都早睡早起，身体比以前好多了。 ★ 他现在的身体很好。",
+          "correct_answer": "true",
+          "explanation": "Dậy sớm ngủ sớm nên sức khỏe rất tốt."
+        },
+        {
+          "id": "H20901_R47",
+          "number": 47,
+          "part": 3,
+          "type": "true_false",
+          "prompt_zh": "北京现在的天气很冷，树叶都变黄落下了。 ★ 北京现在是夏天。",
+          "correct_answer": "false",
+          "explanation": "Lá vàng rơi, trời lạnh là mùa thu/đông chứ không phải mùa hè."
+        },
+        {
+          "id": "H20901_R48",
+          "number": 48,
+          "part": 3,
+          "type": "true_false",
+          "prompt_zh": "我在这家公司工作了五年，认识了许多热心的同事。 ★ 他才刚到这家公司。",
+          "correct_answer": "false",
+          "explanation": "Đã làm việc 5 năm rồi."
+        },
+        {
+          "id": "H20901_R49",
+          "number": 49,
+          "part": 3,
+          "type": "true_false",
+          "prompt_zh": "妹妹从小就喜欢唱歌跳舞，希望能成为一名艺术家。 ★ 妹妹对艺术感兴趣。",
+          "correct_answer": "true",
+          "explanation": "Thích ca múa và muốn làm nghệ sĩ."
+        },
+        {
+          "id": "H20901_R50",
+          "number": 50,
+          "part": 3,
+          "type": "true_false",
+          "prompt_zh": "虽然下着小雨，但运动场上的比赛依然在进行。 ★ 比赛因下雨取消了。",
+          "correct_answer": "false",
+          "explanation": "Trận đấu vẫn tiếp tục chứ không bị hủy."
+        },
+        {
+          "id": "H20901_R51",
+          "number": 51,
+          "part": 4,
+          "type": "multiple_choice",
+          "prompt_zh": "你认识前边那位穿白衣服的先生吗？",
+          "options": [
+            {
+              "key": "A",
+              "text": "认识，他是我们学校的张校长。"
+            },
+            {
+              "key": "B",
+              "text": "我不喜欢吃面条。"
+            },
+            {
+              "key": "C",
+              "text": "明天下午两点。"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hỏi người -> trả lời người."
+        },
+        {
+          "id": "H20901_R52",
+          "number": 52,
+          "part": 4,
+          "type": "multiple_choice",
+          "prompt_zh": "请问这趟公共汽车去天安门吗？",
+          "options": [
+            {
+              "key": "A",
+              "text": "去，您上车吧。"
+            },
+            {
+              "key": "B",
+              "text": "今天星期三。"
+            },
+            {
+              "key": "C",
+              "text": "好久不见！"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hỏi đường xe buýt."
+        },
+        {
+          "id": "H20901_R53",
+          "number": 53,
+          "part": 4,
+          "type": "multiple_choice",
+          "prompt_zh": "你什么时候买的新手机？",
+          "options": [
+            {
+              "key": "A",
+              "text": "上个星期日买的。"
+            },
+            {
+              "key": "B",
+              "text": "十块钱。"
+            },
+            {
+              "key": "C",
+              "text": "他很高兴。"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hỏi thời gian mua."
+        },
+        {
+          "id": "H20901_R54",
+          "number": 54,
+          "part": 4,
+          "type": "multiple_choice",
+          "prompt_zh": "这份报纸你看完了吗？",
+          "options": [
+            {
+              "key": "A",
+              "text": "看完了，给你看吧。"
+            },
+            {
+              "key": "B",
+              "text": "我有两只小猫。"
+            },
+            {
+              "key": "C",
+              "text": "去商店买东西。"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hỏi đọc xong báo chưa."
+        },
+        {
+          "id": "H20901_R55",
+          "number": 55,
+          "part": 4,
+          "type": "multiple_choice",
+          "prompt_zh": "你最喜欢哪一种中国菜？",
+          "options": [
+            {
+              "key": "A",
+              "text": "我最喜欢吃北京烤鸭。"
+            },
+            {
+              "key": "B",
+              "text": "我喜欢喝茶。"
+            },
+            {
+              "key": "C",
+              "text": "坐飞机去。"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hỏi món ăn Trung Quốc."
+        },
+        {
+          "id": "H20901_R56",
+          "number": 56,
+          "part": 4,
+          "type": "multiple_choice",
+          "prompt_zh": "今天晚上的聚会你来参加吗？",
+          "options": [
+            {
+              "key": "A",
+              "text": "一定来，下班后我就过去。"
+            },
+            {
+              "key": "B",
+              "text": "没有下雨。"
+            },
+            {
+              "key": "C",
+              "text": "衣服很贵。"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Xác nhận tham gia."
+        },
+        {
+          "id": "H20901_R57",
+          "number": 57,
+          "part": 4,
+          "type": "multiple_choice",
+          "prompt_zh": "那本书你看得懂吗？",
+          "options": [
+            {
+              "key": "A",
+              "text": "里面生词不多，大部分能看懂。"
+            },
+            {
+              "key": "B",
+              "text": "我没有时间。"
+            },
+            {
+              "key": "C",
+              "text": "他在睡觉。"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Khả năng đọc hiểu sách."
+        },
+        {
+          "id": "H20901_R58",
+          "number": 58,
+          "part": 4,
+          "type": "multiple_choice",
+          "prompt_zh": "这杯咖啡有点儿苦，需要加糖吗？",
+          "options": [
+            {
+              "key": "A",
+              "text": "好的，请帮我加一点儿糖。"
+            },
+            {
+              "key": "B",
+              "text": "他在操场跑步。"
+            },
+            {
+              "key": "C",
+              "text": "明天不下雪。"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Thêm đường vào cà phê."
+        },
+        {
+          "id": "H20901_R59",
+          "number": 59,
+          "part": 4,
+          "type": "multiple_choice",
+          "prompt_zh": "您住几楼？我帮您提行李吧。",
+          "options": [
+            {
+              "key": "A",
+              "text": "我住三楼，太谢谢你了！"
+            },
+            {
+              "key": "B",
+              "text": "火车站不远。"
+            },
+            {
+              "key": "C",
+              "text": "现在五点整。"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hỏi tầng ở và mang hành lý giúp."
+        },
+        {
+          "id": "H20901_R60",
+          "number": 60,
+          "part": 4,
+          "type": "multiple_choice",
+          "prompt_zh": "这件毛衣颜色真好看，在哪儿买的？",
+          "options": [
+            {
+              "key": "A",
+              "text": "在学校对面的商场买的。"
+            },
+            {
+              "key": "B",
+              "text": "一共八个人。"
+            },
+            {
+              "key": "C",
+              "text": "我叫李明。"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hỏi địa chỉ mua áo."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "id": "hskk_primary_specimen01",
+  "code": "HK0901",
+  "version": "3.0",
+  "level": "hskk_primary",
+  "title": "HSKK Sơ cấp (初级) - Đề thi mẫu chuẩn CTI HK0901",
+  "source": "Chinese Testing International (CTI) Specimen Paper",
+  "time_minutes": 17,
+  "prep_time_minutes": 7,
+  "max_score": 100,
+  "pass_score": 60,
+  "sections": {
+    "repeat": {
+      "part": 1,
+      "name_zh": "第一部分：听后重复",
+      "name_vi": "Phần 1: Nghe và nhắc lại",
+      "guide_zh": "一共 15 个题。每题听一次，听到“嘟”声后，请重复听到的话（每题10秒）。",
+      "guide_vi": "Gồm 15 câu. Mỗi câu nghe 1 lần, sau tiếng bíp hãy nhắc lại chính xác câu vừa nghe (10 giây/câu).",
+      "record_seconds": 10,
+      "questions": [
+        { "id": "HK01_01", "number": 1, "audio_clip": "assets/audio/exams/hskk/primary/hk01_01.mp3", "prompt_zh": "我在商店买东西。", "pinyin": "wǒ zài shāng diàn mǎi dōng xi 。", "meaning_vi": "Tôi đang mua đồ ở cửa hàng." },
+        { "id": "HK01_02", "number": 2, "audio_clip": "assets/audio/exams/hskk/primary/hk01_02.mp3", "prompt_zh": "昨天北京下大雨了。", "pinyin": "zuó tiān běi jīng xià dà yǔ le 。", "meaning_vi": "Hôm qua Bắc Kinh mưa to." },
+        { "id": "HK01_03", "number": 3, "audio_clip": "assets/audio/exams/hskk/primary/hk01_03.mp3", "prompt_zh": "他喜欢在家里看书。", "pinyin": "tā xǐ huan zài jiā lǐ kàn shū 。", "meaning_vi": "Anh ấy thích ở nhà đọc sách." },
+        { "id": "HK01_04", "number": 4, "audio_clip": "assets/audio/exams/hskk/primary/hk01_04.mp3", "prompt_zh": "爸爸正在打电话呢。", "pinyin": "bà ba zhèng zài dǎ diàn huà ne 。", "meaning_vi": "Bố đang gọi điện thoại." },
+        { "id": "HK01_05", "number": 5, "audio_clip": "assets/audio/exams/hskk/primary/hk01_05.mp3", "prompt_zh": "这个苹果真好吃。", "pinyin": "zhè ge píng guǒ zhēn hǎo chī 。", "meaning_vi": "Quả táo này thật ngon." },
+        { "id": "HK01_06", "number": 6, "audio_clip": "assets/audio/exams/hskk/primary/hk01_06.mp3", "prompt_zh": "明天我们坐飞机去上海。", "pinyin": "míng tiān wǒ men zuò fēi jī qù shàng hǎi 。", "meaning_vi": "Ngày mai chúng tôi đi máy bay đến Thượng Hải." },
+        { "id": "HK01_07", "number": 7, "audio_clip": "assets/audio/exams/hskk/primary/hk01_07.mp3", "prompt_zh": "医生对我说多喝水。", "pinyin": "yī shēng duì wǒ shuō duō hē shuǐ 。", "meaning_vi": "Bác sĩ dặn tôi nên uống nhiều nước." },
+        { "id": "HK01_08", "number": 8, "audio_clip": "assets/audio/exams/hskk/primary/hk01_08.mp3", "prompt_zh": "你看见那只小猫了吗？", "pinyin": "nǐ kàn jiàn nà zhī xiǎo māo le ma ？", "meaning_vi": "Bạn có nhìn thấy con mèo nhỏ kia không?" },
+        { "id": "HK01_09", "number": 9, "audio_clip": "assets/audio/exams/hskk/primary/hk01_09.mp3", "prompt_zh": "我们十点十分在校门口见。", "pinyin": "wǒ men shí diǎn shí fēn zài xiào mén kǒu jiàn 。", "meaning_vi": "Chúng ta gặp nhau ở cổng trường lúc 10 giờ 10 phút." },
+        { "id": "HK01_10", "number": 10, "audio_clip": "assets/audio/exams/hskk/primary/hk01_10.mp3", "prompt_zh": "很高兴认识你！", "pinyin": "hěn gāo xìng rèn shi nǐ ！", "meaning_vi": "Rất vui được làm quen với bạn!" },
+        { "id": "HK01_11", "number": 11, "audio_clip": "assets/audio/exams/hskk/primary/hk01_11.mp3", "prompt_zh": "外面天气很暖和。", "pinyin": "wài miàn tiān qì hěn nuǎn huo 。", "meaning_vi": "Thời tiết bên ngoài rất ấm áp." },
+        { "id": "HK01_12", "number": 12, "audio_clip": "assets/audio/exams/hskk/primary/hk01_12.mp3", "prompt_zh": "这件衣服多少钱？", "pinyin": "zhè jiàn yī fu duō shao qián ？", "meaning_vi": "Bộ quần áo này bao nhiêu tiền?" },
+        { "id": "HK01_13", "number": 13, "audio_clip": "assets/audio/exams/hskk/primary/hk01_13.mp3", "prompt_zh": "我会说一点儿汉语。", "pinyin": "wǒ huì shuō yī diǎnr hàn yǔ 。", "meaning_vi": "Tôi biết nói một chút tiếng Trung." },
+        { "id": "HK01_14", "number": 14, "audio_clip": "assets/audio/exams/hskk/primary/hk01_14.mp3", "prompt_zh": "哥哥正在看电视呢。", "pinyin": "gē ge zhèng zài kàn diàn shì ne 。", "meaning_vi": "Anh trai đang xem ti vi." },
+        { "id": "HK01_15", "number": 15, "audio_clip": "assets/audio/exams/hskk/primary/hk01_15.mp3", "prompt_zh": "非常感谢你的帮助！", "pinyin": "fēi cháng gǎn xiè nǐ de bāng zhù ！", "meaning_vi": "Vô cùng cảm ơn sự giúp đỡ của bạn!" }
+      ]
+    },
+    "answer_short": {
+      "part": 2,
+      "name_zh": "第二部分：听后回答",
+      "name_vi": "Phần 2: Nghe và trả lời câu hỏi ngắn",
+      "guide_zh": "一共 10 个题。每题听一次，听到“嘟”声后，请简要回答问题（每题10秒）。",
+      "guide_vi": "Gồm 10 câu. Mỗi câu nghe 1 lần, sau tiếng bíp hãy trả lời câu hỏi bằng tiếng Trung (10 giây/câu).",
+      "record_seconds": 10,
+      "questions": [
+        { "id": "HK01_16", "number": 16, "audio_clip": "assets/audio/exams/hskk/primary/hk01_16.mp3", "prompt_zh": "你叫什么名字？", "pinyin": "nǐ jiào shén me míng zi ？", "suggested_zh": "我叫……", "meaning_vi": "Bạn tên là gì?" },
+        { "id": "HK01_17", "number": 17, "audio_clip": "assets/audio/exams/hskk/primary/hk01_17.mp3", "prompt_zh": "你是哪国人？", "pinyin": "nǐ shì nǎ guó rén ？", "suggested_zh": "我是越南人 / 中国人。", "meaning_vi": "Bạn là người nước nào?" },
+        { "id": "HK01_18", "number": 18, "audio_clip": "assets/audio/exams/hskk/primary/hk01_18.mp3", "prompt_zh": "你喜欢吃什么水果？", "pinyin": "nǐ xǐ huan chī shén me shuǐ guǒ ？", "suggested_zh": "我喜欢吃苹果 / 西瓜。", "meaning_vi": "Bạn thích ăn loại hoa quả nào?" },
+        { "id": "HK01_19", "number": 19, "audio_clip": "assets/audio/exams/hskk/primary/hk01_19.mp3", "prompt_zh": "今天天气怎么样？", "pinyin": "jīn tiān tiān qì zěn me yàng ？", "suggested_zh": "今天天气很好，很暖和。", "meaning_vi": "Thời tiết hôm nay thế nào?" },
+        { "id": "HK01_20", "number": 20, "audio_clip": "assets/audio/exams/hskk/primary/hk01_20.mp3", "prompt_zh": "你家有几口人？", "pinyin": "nǐ jiā yǒu jǐ kǒu rén ？", "suggested_zh": "我家有四口人。", "meaning_vi": "Nhà bạn có mấy người?" },
+        { "id": "HK01_21", "number": 21, "audio_clip": "assets/audio/exams/hskk/primary/hk01_21.mp3", "prompt_zh": "你会说汉语吗？", "pinyin": "nǐ huì shuō hàn yǔ ma ？", "suggested_zh": "我会说一点儿汉语。", "meaning_vi": "Bạn có biết nói tiếng Trung không?" },
+        { "id": "HK01_22", "number": 22, "audio_clip": "assets/audio/exams/hskk/primary/hk01_22.mp3", "prompt_zh": "你现在在哪儿？", "pinyin": "nǐ xiàn zài zài nǎr ？", "suggested_zh": "我现在在家里 / 学校。", "meaning_vi": "Bây giờ bạn đang ở đâu?" },
+        { "id": "HK01_23", "number": 23, "audio_clip": "assets/audio/exams/hskk/primary/hk01_23.mp3", "prompt_zh": "你每天几点起床？", "pinyin": "nǐ měi tiān jǐ diǎn qǐ chuáng ？", "suggested_zh": "我每天七点起床。", "meaning_vi": "Mỗi ngày bạn thức dậy lúc mấy giờ?" },
+        { "id": "HK01_24", "number": 24, "audio_clip": "assets/audio/exams/hskk/primary/hk01_24.mp3", "prompt_zh": "你喜欢看电影吗？", "pinyin": "nǐ xǐ huan kàn diàn yǐng ma ？", "suggested_zh": "我非常喜欢看电影。", "meaning_vi": "Bạn có thích xem phim không?" },
+        { "id": "HK01_25", "number": 25, "audio_clip": "assets/audio/exams/hskk/primary/hk01_25.mp3", "prompt_zh": "你喝茶还是喝咖啡？", "pinyin": "nǐ hē chá hái shì hē kā fēi ？", "suggested_zh": "我喜欢喝茶。", "meaning_vi": "Bạn uống trà hay uống cà phê?" }
+      ]
+    },
+    "answer_open": {
+      "part": 3,
+      "name_zh": "第三部分：回答问题",
+      "name_vi": "Phần 3: Trả lời câu hỏi mở (Tự giới thiệu & Quan điểm)",
+      "guide_zh": "一共 2 个题。有准备时间，听到“嘟”声后，请详细回答每个问题（每题1.5分钟）。",
+      "guide_vi": "Gồm 2 câu hỏi mở. Có thời gian chuẩn bị và 90 giây trả lời cho từng câu.",
+      "record_seconds": 90,
+      "questions": [
+        {
+          "id": "HK01_26",
+          "number": 26,
+          "audio_clip": "assets/audio/exams/hskk/primary/hk01_26.mp3",
+          "prompt_zh": "请介绍一下你自己。（包括姓名、国籍、学习或工作、兴趣爱好等）",
+          "pinyin": "qǐng jiè shào yī xià nǐ zì jǐ 。",
+          "meaning_vi": "Hãy giới thiệu về bản thân bạn (họ tên, quốc tịch, học tập/công việc, sở thích...)",
+          "suggested_zh": "大家好！我叫大卫，我是越南人。我今年二十岁，是一名大学生。我正在学习汉语。我的爱好很多，我喜欢看中国电影、听音乐和跑步。很高兴认识大家！"
+        },
+        {
+          "id": "HK01_27",
+          "number": 27,
+          "audio_clip": "assets/audio/exams/hskk/primary/hk01_27.mp3",
+          "prompt_zh": "你最喜欢哪种天气？为什么？",
+          "pinyin": "nǐ zuì xǐ huan nǎ zhǒng tiān qì ？wèi shén me ？",
+          "meaning_vi": "Bạn thích thời tiết như thế nào nhất? Vì sao?",
+          "suggested_zh": "我最喜欢秋天的天气。因为秋天不太冷也不太热，很暖和，常常有阳光。在这样的天气里，我和朋友们喜欢去公园散步，感觉非常舒服。"
+        }
+      ]
+    }
+  }
+}

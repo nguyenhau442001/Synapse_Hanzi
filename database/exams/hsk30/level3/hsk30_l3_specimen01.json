@@ -1,0 +1,1587 @@
+{
+  "id": "hsk30_l3_specimen01",
+  "code": "H30901",
+  "version": "3.0",
+  "level": "hsk30_3",
+  "title": "HSK 3 (3.0) - Đề thi mẫu chuẩn CTI H30901",
+  "source": "Chinese Testing International (CTI) Specimen Paper",
+  "time_minutes": 70,
+  "max_score": 200,
+  "pass_score": 120,
+  "sections": {
+    "listening": {
+      "name": "一、听力 (Nghe hiểu)",
+      "total_questions": 40,
+      "time_minutes": 35,
+      "questions": [
+        {
+          "id": "H30901_L01",
+          "number": 1,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l01.mp3",
+          "prompt_zh": "小王每天都骑自行车去图书馆学习。 ★ 小王坐地铁去图书馆。",
+          "correct_answer": "false",
+          "explanation": "Đi xe đạp chứ không phải đi tàu điện ngầm."
+        },
+        {
+          "id": "H30901_L02",
+          "number": 2,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l02.mp3",
+          "prompt_zh": "为了准备这次中文演讲比赛，他练习了整整一个月。 ★ 他认真准备了比赛。",
+          "correct_answer": "true",
+          "explanation": "Luyện tập cả tháng."
+        },
+        {
+          "id": "H30901_L03",
+          "number": 3,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l03.mp3",
+          "prompt_zh": "经理通知大家，今天下午三点的会议推迟到明天上午。 ★ 今天下午照常开会。",
+          "correct_answer": "false",
+          "explanation": "Cuộc họp bị dời sang sáng mai."
+        },
+        {
+          "id": "H30901_L04",
+          "number": 4,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l04.mp3",
+          "prompt_zh": "这附近新开了一家中国餐馆，菜的味道非常地道。 ★ 那家餐馆的菜很好吃。",
+          "correct_answer": "true",
+          "explanation": "Hương vị rất chuẩn/ngon."
+        },
+        {
+          "id": "H30901_L05",
+          "number": 5,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l05.mp3",
+          "prompt_zh": "虽然遇到了很多困难，但他从来没有放弃过自己的梦想。 ★ 他放弃了梦想。",
+          "correct_answer": "false",
+          "explanation": "Chưa từng từ bỏ ước mơ."
+        },
+        {
+          "id": "H30901_L06",
+          "number": 6,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l06.mp3",
+          "prompt_zh": "医生建议他少吃甜食，多喝水，按时休息。 ★ 医生让他注意健康饮食。",
+          "correct_answer": "true",
+          "explanation": "Bác sĩ dặn chú ý ăn uống lành mạnh."
+        },
+        {
+          "id": "H30901_L07",
+          "number": 7,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l07.mp3",
+          "prompt_zh": "由于天气原因，原定今天下午起飞的航班全部取消了。 ★ 今天飞机正常起飞。",
+          "correct_answer": "false",
+          "explanation": "Chuyến bay bị hủy vì thời tiết."
+        },
+        {
+          "id": "H30901_L08",
+          "number": 8,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l08.mp3",
+          "prompt_zh": "这本书详细介绍了中国悠久的历史与灿烂的文化。 ★ 这本书与中国历史文化有关。",
+          "correct_answer": "true",
+          "explanation": "Sách nói về lịch sử văn hóa Trung Quốc."
+        },
+        {
+          "id": "H30901_L09",
+          "number": 9,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l09.mp3",
+          "prompt_zh": "今天商场搞促销活动，所有商品一律打八折。 ★ 商场的东西今天更便宜了。",
+          "correct_answer": "true",
+          "explanation": "Giảm giá 20% (bát chiết) nên rẻ hơn."
+        },
+        {
+          "id": "H30901_L10",
+          "number": 10,
+          "part": 1,
+          "type": "true_false",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l10.mp3",
+          "prompt_zh": "他最近每天都工作到深夜，脸色看起来很疲劳。 ★ 他最近休息得很充分。",
+          "correct_answer": "false",
+          "explanation": "Làm việc tới khuya rất mệt mỏi."
+        },
+        {
+          "id": "H30901_L11",
+          "number": 11,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l11.mp3",
+          "prompt_zh": "女：先生，您看这双运动鞋大小合适吗？ 男：感觉有点儿紧，有大一号的吗？",
+          "image": "assets/images/illustrations/跑步.svg",
+          "options": [
+            {
+              "key": "A",
+              "text": "Hình A"
+            },
+            {
+              "key": "B",
+              "text": "Hình B"
+            },
+            {
+              "key": "C",
+              "text": "Hình C"
+            },
+            {
+              "key": "D",
+              "text": "Hình D"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hội thoại nhắc tới thử giày."
+        },
+        {
+          "id": "H30901_L12",
+          "number": 12,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l12.mp3",
+          "prompt_zh": "女：今天天气这么好，我们去公园放风筝吧。 男：好主意，我把风筝拿出来。",
+          "image": "assets/images/illustrations/学校.svg",
+          "options": [
+            {
+              "key": "A",
+              "text": "Hình A"
+            },
+            {
+              "key": "B",
+              "text": "Hình B"
+            },
+            {
+              "key": "C",
+              "text": "Hình C"
+            },
+            {
+              "key": "D",
+              "text": "Hình D"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hội thoại nhắc tới thả diều công viên."
+        },
+        {
+          "id": "H30901_L13",
+          "number": 13,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l13.mp3",
+          "prompt_zh": "女：你看见我的护照了吗？马上要去机场了。 男：在抽屉里，我已经帮你收好了。",
+          "image": "assets/images/illustrations/飞机.svg",
+          "options": [
+            {
+              "key": "A",
+              "text": "Hình A"
+            },
+            {
+              "key": "B",
+              "text": "Hình B"
+            },
+            {
+              "key": "C",
+              "text": "Hình C"
+            },
+            {
+              "key": "D",
+              "text": "Hình D"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hội thoại nhắc tới hộ chiếu du lịch."
+        },
+        {
+          "id": "H30901_L14",
+          "number": 14,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l14.mp3",
+          "prompt_zh": "女：这道数学题太难了，我怎么算都算不出来。 男：别着急，我来给你讲讲思路。",
+          "image": "assets/images/illustrations/书.svg",
+          "options": [
+            {
+              "key": "A",
+              "text": "Hình A"
+            },
+            {
+              "key": "B",
+              "text": "Hình B"
+            },
+            {
+              "key": "C",
+              "text": "Hình C"
+            },
+            {
+              "key": "D",
+              "text": "Hình D"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hội thoại nhắc tới bài tập toán."
+        },
+        {
+          "id": "H30901_L15",
+          "number": 15,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l15.mp3",
+          "prompt_zh": "女：小李，你的照相技术真棒，把风景拍得真美。 男：谢谢夸奖，是这里的景色本来就很迷人。",
+          "image": "assets/images/illustrations/电脑.svg",
+          "options": [
+            {
+              "key": "A",
+              "text": "Hình A"
+            },
+            {
+              "key": "B",
+              "text": "Hình B"
+            },
+            {
+              "key": "C",
+              "text": "Hình C"
+            },
+            {
+              "key": "D",
+              "text": "Hình D"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hội thoại nhắc tới chụp ảnh phong cảnh."
+        },
+        {
+          "id": "H30901_L16",
+          "number": 16,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l16.mp3",
+          "prompt_zh": "女：你感冒咳嗽好点儿了吗？ 男：喝了姜汤，现在感觉好多了。",
+          "image": "assets/images/illustrations/药.svg",
+          "options": [
+            {
+              "key": "A",
+              "text": "Hình A"
+            },
+            {
+              "key": "B",
+              "text": "Hình B"
+            },
+            {
+              "key": "C",
+              "text": "Hình C"
+            },
+            {
+              "key": "D",
+              "text": "Hình D"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hội thoại nhắc tới chăm sóc ốm đau."
+        },
+        {
+          "id": "H30901_L17",
+          "number": 17,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l17.mp3",
+          "prompt_zh": "女：请问去最近的地铁站怎么走？ 男：顺着这条街往前走两百米，过马路就是。",
+          "image": "assets/images/illustrations/公共汽车.svg",
+          "options": [
+            {
+              "key": "A",
+              "text": "Hình A"
+            },
+            {
+              "key": "B",
+              "text": "Hình B"
+            },
+            {
+              "key": "C",
+              "text": "Hình C"
+            },
+            {
+              "key": "D",
+              "text": "Hình D"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hội thoại nhắc tới hỏi đường ga tàu."
+        },
+        {
+          "id": "H30901_L18",
+          "number": 18,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l18.mp3",
+          "prompt_zh": "女：今天菜市场的水果真新鲜，西瓜又甜又大多汁。 男：那我们多买两个吧。",
+          "image": "assets/images/illustrations/西瓜.svg",
+          "options": [
+            {
+              "key": "A",
+              "text": "Hình A"
+            },
+            {
+              "key": "B",
+              "text": "Hình B"
+            },
+            {
+              "key": "C",
+              "text": "Hình C"
+            },
+            {
+              "key": "D",
+              "text": "Hình D"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hội thoại nhắc tới mua hoa quả."
+        },
+        {
+          "id": "H30901_L19",
+          "number": 19,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l19.mp3",
+          "prompt_zh": "女：这盆兰花开得真好看，香味淡淡的。 男：我每天都精心给它浇水呢。",
+          "image": "assets/images/illustrations/雨.svg",
+          "options": [
+            {
+              "key": "A",
+              "text": "Hình A"
+            },
+            {
+              "key": "B",
+              "text": "Hình B"
+            },
+            {
+              "key": "C",
+              "text": "Hình C"
+            },
+            {
+              "key": "D",
+              "text": "Hình D"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hội thoại nhắc tới tưới hoa."
+        },
+        {
+          "id": "H30901_L20",
+          "number": 20,
+          "part": 2,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l20.mp3",
+          "prompt_zh": "女：请问这里可以刷信用卡吗？ 男：当然可以，微信或者支付宝也可以。",
+          "image": "assets/images/illustrations/手机.svg",
+          "options": [
+            {
+              "key": "A",
+              "text": "Hình A"
+            },
+            {
+              "key": "B",
+              "text": "Hình B"
+            },
+            {
+              "key": "C",
+              "text": "Hình C"
+            },
+            {
+              "key": "D",
+              "text": "Hình D"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hội thoại nhắc tới thanh toán hóa đơn."
+        },
+        {
+          "id": "H30901_L21",
+          "number": 21,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l21.mp3",
+          "prompt_zh": "女：你打算哪天回国探亲？ 男：我订了下个月十号的机票。 问：男的什么时候回国？",
+          "options": [
+            {
+              "key": "A",
+              "text": "这个月十号"
+            },
+            {
+              "key": "B",
+              "text": "下个月十号"
+            },
+            {
+              "key": "C",
+              "text": "下个月二十号"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Vé máy bay ngày 10 tháng sau."
+        },
+        {
+          "id": "H30901_L22",
+          "number": 22,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l22.mp3",
+          "prompt_zh": "女：这台电脑反应怎么这么慢？ 男：可能运行的程序太多了，重启一下试试。 问：电脑为什么慢？",
+          "options": [
+            {
+              "key": "A",
+              "text": "坏了"
+            },
+            {
+              "key": "B",
+              "text": "运行程序太多"
+            },
+            {
+              "key": "C",
+              "text": "没插电源"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Chạy quá nhiều ứng dụng."
+        },
+        {
+          "id": "H30901_L23",
+          "number": 23,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l23.mp3",
+          "prompt_zh": "女：服务员，这盘鱼里面放了辣椒吗？ 男：没有放，我们完全按照清淡口味做的。 问：这道菜口味怎么样？",
+          "options": [
+            {
+              "key": "A",
+              "text": "很辣"
+            },
+            {
+              "key": "B",
+              "text": "很咸"
+            },
+            {
+              "key": "C",
+              "text": "清淡"
+            }
+          ],
+          "correct_answer": "C",
+          "explanation": "Khẩu vị thanh đạm."
+        },
+        {
+          "id": "H30901_L24",
+          "number": 24,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l24.mp3",
+          "prompt_zh": "女：周末你通常喜欢做什么？ 男：我喜欢去爬山或者在家里安静地看书。 问：男的周末喜欢做什么？",
+          "options": [
+            {
+              "key": "A",
+              "text": "逛街购物"
+            },
+            {
+              "key": "B",
+              "text": "爬山看书"
+            },
+            {
+              "key": "C",
+              "text": "玩电子游戏"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Leo núi và đọc sách."
+        },
+        {
+          "id": "H30901_L25",
+          "number": 25,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l25.mp3",
+          "prompt_zh": "女：张经理，这份报告需要今天打印出来吗？ 男：不着急，下周一早上给我就行。 问：报告最晚什么时候交？",
+          "options": [
+            {
+              "key": "A",
+              "text": "今天下午"
+            },
+            {
+              "key": "B",
+              "text": "明天中午"
+            },
+            {
+              "key": "C",
+              "text": "下周一早上"
+            }
+          ],
+          "correct_answer": "C",
+          "explanation": "Sáng thứ Hai tuần sau."
+        },
+        {
+          "id": "H30901_L26",
+          "number": 26,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l26.mp3",
+          "prompt_zh": "女：今天外边风好大，出门多穿点儿衣服吧。 男：好，我把围巾和手套也戴上。 问：今天外边天气怎么样？",
+          "options": [
+            {
+              "key": "A",
+              "text": "下大雪"
+            },
+            {
+              "key": "B",
+              "text": "刮大风"
+            },
+            {
+              "key": "C",
+              "text": "阳光明媚"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Gió to."
+        },
+        {
+          "id": "H30901_L27",
+          "number": 27,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l27.mp3",
+          "prompt_zh": "女：这辆二手车车况真不错，开了几年了？ 男：才开了一年，里程还不到一万公里。 问：这辆车开了几年？",
+          "options": [
+            {
+              "key": "A",
+              "text": "一年"
+            },
+            {
+              "key": "B",
+              "text": "两年"
+            },
+            {
+              "key": "C",
+              "text": "三年"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Mới chạy một năm."
+        },
+        {
+          "id": "H30901_L28",
+          "number": 28,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l28.mp3",
+          "prompt_zh": "女：听说你被北京大学录取了，祝贺你！ 男：谢谢，这是我一直以来的梦想。 问：男的心情怎么样？",
+          "options": [
+            {
+              "key": "A",
+              "text": "很伤心"
+            },
+            {
+              "key": "B",
+              "text": "很高兴"
+            },
+            {
+              "key": "C",
+              "text": "很着急"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Trúng tuyển ĐH Bắc Kinh nên rất vui mừng."
+        },
+        {
+          "id": "H30901_L29",
+          "number": 29,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l29.mp3",
+          "prompt_zh": "女：请问这里有中文报纸吗？ 男：在三楼阅览室，您可以凭读者卡借阅。 问：中文报纸在几楼？",
+          "options": [
+            {
+              "key": "A",
+              "text": "一楼"
+            },
+            {
+              "key": "B",
+              "text": "二楼"
+            },
+            {
+              "key": "C",
+              "text": "三楼"
+            }
+          ],
+          "correct_answer": "C",
+          "explanation": "Tầng 3."
+        },
+        {
+          "id": "H30901_L30",
+          "number": 30,
+          "part": 3,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l30.mp3",
+          "prompt_zh": "女：你看上去脸色不太好，怎么了？ 男：昨天晚上失眠了，只睡了三个小时。 问：男的为什么脸色不好？",
+          "options": [
+            {
+              "key": "A",
+              "text": "没睡好"
+            },
+            {
+              "key": "B",
+              "text": "感冒了"
+            },
+            {
+              "key": "C",
+              "text": "肚子疼"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Mất ngủ, chỉ ngủ 3 tiếng."
+        },
+        {
+          "id": "H30901_L31",
+          "number": 31,
+          "part": 4,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l31.mp3",
+          "prompt_zh": "女：先生，欢迎光临，请问您几位？ 男：两位，有靠近窗户的位子吗？ 女：有的，请跟我来这边。 男：请先给我们上一壶茉莉花茶。 问：他们一共有几位？",
+          "options": [
+            {
+              "key": "A",
+              "text": "一位"
+            },
+            {
+              "key": "B",
+              "text": "两位"
+            },
+            {
+              "key": "C",
+              "text": "三位"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Hai người."
+        },
+        {
+          "id": "H30901_L32",
+          "number": 32,
+          "part": 4,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l32.mp3",
+          "prompt_zh": "女：你好，我想租一套两居室的房子。 男：我们这儿正好有一套，离地铁站只有五分钟路程。 女：那每月的房租是多少？ 男：两千八百元，包括水费。 问：这套房租金多少钱？",
+          "options": [
+            {
+              "key": "A",
+              "text": "两千元"
+            },
+            {
+              "key": "B",
+              "text": "两千五百元"
+            },
+            {
+              "key": "C",
+              "text": "两千八百元"
+            }
+          ],
+          "correct_answer": "C",
+          "explanation": "2800 tệ/tháng."
+        },
+        {
+          "id": "H30901_L33",
+          "number": 33,
+          "part": 4,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l33.mp3",
+          "prompt_zh": "女：王师傅，我的车修好了吗？ 男：发动机的小问题已经修好了，刹车也检查了一遍。 女：那我现在可以把车开走了吗？ 男：可以了，随时能开走。 问：车修好了没有？",
+          "options": [
+            {
+              "key": "A",
+              "text": "已经修好了"
+            },
+            {
+              "key": "B",
+              "text": "还没开始修"
+            },
+            {
+              "key": "C",
+              "text": "零件还没到"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Đã sửa xong."
+        },
+        {
+          "id": "H30901_L34",
+          "number": 34,
+          "part": 4,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l34.mp3",
+          "prompt_zh": "女：你最近怎么总去健身房？ 男：体检报告说我缺乏运动，我想减减肥。 女：坚持运动确实很重要，我也打算去办张卡。 男：那太好了，以后我们可以一起去锻炼。 问：男的为什么去健身房？",
+          "options": [
+            {
+              "key": "A",
+              "text": "为了减肥健康"
+            },
+            {
+              "key": "B",
+              "text": "为了找朋友"
+            },
+            {
+              "key": "C",
+              "text": "为了看比赛"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Tập thể dục giảm cân và cải thiện sức khỏe."
+        },
+        {
+          "id": "H30901_L35",
+          "number": 35,
+          "part": 4,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l35.mp3",
+          "prompt_zh": "女：你好，请问去故宫坐几号地铁线？ 男：您可以坐一号线，在天安门东站下车。 女：大概需要多长时间？ 男：大概半个小时就能到。 问：去故宫坐几号线？",
+          "options": [
+            {
+              "key": "A",
+              "text": "一号线"
+            },
+            {
+              "key": "B",
+              "text": "二号线"
+            },
+            {
+              "key": "C",
+              "text": "四号线"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Tuyến số 1."
+        },
+        {
+          "id": "H30901_L36",
+          "number": 36,
+          "part": 4,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l36.mp3",
+          "prompt_zh": "女：这份文件的内容我看过了，写得非常详细。 男：那您觉得还需要修改哪些地方吗？ 女：第三页的数据最好再核对一下，其他的都没问题。 男：好的，我马上重新核实。 问：女的建议修改什么？",
+          "options": [
+            {
+              "key": "A",
+              "text": "第二页的结论"
+            },
+            {
+              "key": "B",
+              "text": "第三页的数据"
+            },
+            {
+              "key": "C",
+              "text": "文件标题"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Kiểm tra lại số liệu trang 3."
+        },
+        {
+          "id": "H30901_L37",
+          "number": 37,
+          "part": 4,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l37.mp3",
+          "prompt_zh": "女：大卫，你的汉语普通话怎么说得这么标准？ 男：我每天早上都跟着广播大声朗读半小时。 女：怪不得发音那么自然，我也得向你学习。 男：坚持最重要，慢慢就会有进步的。 问：男的是怎么提高汉语水平的？",
+          "options": [
+            {
+              "key": "A",
+              "text": "看电视"
+            },
+            {
+              "key": "B",
+              "text": "大声跟读广播"
+            },
+            {
+              "key": "C",
+              "text": "去国外旅游"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Mỗi sáng đọc to theo đài phát thanh."
+        },
+        {
+          "id": "H30901_L38",
+          "number": 38,
+          "part": 4,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l38.mp3",
+          "prompt_zh": "女：您好，我想把这件羊毛衫换一个大号。 男：好的，请出示一下购物小票。 女：小票在这里，吊牌也没有拆。 男：好的，请您稍等，我为您去库房调换。 问：女的为什么要换衣服？",
+          "options": [
+            {
+              "key": "A",
+              "text": "衣服破了"
+            },
+            {
+              "key": "B",
+              "text": "想要大号"
+            },
+            {
+              "key": "C",
+              "text": "颜色不喜欢"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Muốn đổi size lớn hơn."
+        },
+        {
+          "id": "H30901_L39",
+          "number": 39,
+          "part": 4,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l39.mp3",
+          "prompt_zh": "女：李阿姨，听说您儿子考上了清华大学？ 男：是啊，这孩子从小就自律，学习从不让我们操心。 女：真了不起，恭喜你们！ 男：谢谢，他也付出了很多汗水。 问：关于李阿姨的儿子，可以知道什么？",
+          "options": [
+            {
+              "key": "A",
+              "text": "考上了清华"
+            },
+            {
+              "key": "B",
+              "text": "不想上大学"
+            },
+            {
+              "key": "C",
+              "text": "不爱学习"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Thi đỗ Đại học Thanh Hoa."
+        },
+        {
+          "id": "H30901_L40",
+          "number": 40,
+          "part": 4,
+          "type": "multiple_choice",
+          "audio_clip": "assets/audio/exams/hsk30/level3/h30901_l40.mp3",
+          "prompt_zh": "女：下周我们公司要举办年会，你准备好节目了吗？ 男：我和小刘准备合唱一首中文歌。 女：什么歌？歌名能透露一下吗？ 男：是大家都很熟悉的朋友。 问：他们准备表演什么节目？",
+          "options": [
+            {
+              "key": "A",
+              "text": "跳舞"
+            },
+            {
+              "key": "B",
+              "text": "合唱中文歌"
+            },
+            {
+              "key": "C",
+              "text": "讲笑话"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Song ca bài hát tiếng Trung."
+        }
+      ]
+    },
+    "reading": {
+      "name": "二、阅读 (Đọc hiểu)",
+      "total_questions": 30,
+      "time_minutes": 30,
+      "questions": [
+        {
+          "id": "H30901_R41",
+          "number": 41,
+          "part": 1,
+          "type": "multiple_choice",
+          "prompt_zh": "你带雨伞了吗？外边好像快要下雨了。",
+          "options": [
+            {
+              "key": "A",
+              "text": "带了，就在我的背包里。"
+            },
+            {
+              "key": "B",
+              "text": "今天星期天。"
+            },
+            {
+              "key": "C",
+              "text": "他在打篮球。"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hỏi ô mang theo."
+        },
+        {
+          "id": "H30901_R42",
+          "number": 42,
+          "part": 1,
+          "type": "multiple_choice",
+          "prompt_zh": "请问这趟高铁中途会在南京停靠吗？",
+          "options": [
+            {
+              "key": "A",
+              "text": "会停靠十分钟，请注意下车时间。"
+            },
+            {
+              "key": "B",
+              "text": "南京很漂亮。"
+            },
+            {
+              "key": "C",
+              "text": "我不喜欢吃面。"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hỏi điểm dừng tàu cao tốc."
+        },
+        {
+          "id": "H30901_R43",
+          "number": 43,
+          "part": 1,
+          "type": "multiple_choice",
+          "prompt_zh": "你怎么突然决定换工作了？",
+          "options": [
+            {
+              "key": "A",
+              "text": "我想换一个更有挑战性的工作环境。"
+            },
+            {
+              "key": "B",
+              "text": "今天天气不错。"
+            },
+            {
+              "key": "C",
+              "text": "我买了一双新鞋。"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hỏi nguyên do đổi việc."
+        },
+        {
+          "id": "H30901_R44",
+          "number": 44,
+          "part": 1,
+          "type": "multiple_choice",
+          "prompt_zh": "今天的聚餐定在哪个包间？",
+          "options": [
+            {
+              "key": "A",
+              "text": "在二楼的牡丹厅，大家差不多都到了。"
+            },
+            {
+              "key": "B",
+              "text": "我想喝咖啡。"
+            },
+            {
+              "key": "C",
+              "text": "他感冒好了。"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hỏi phòng tiệc."
+        },
+        {
+          "id": "H30901_R45",
+          "number": 45,
+          "part": 1,
+          "type": "multiple_choice",
+          "prompt_zh": "这家超市的蔬菜比菜市场的还新鲜。",
+          "options": [
+            {
+              "key": "A",
+              "text": "是啊，而且每天晚上还有打折优惠呢。"
+            },
+            {
+              "key": "B",
+              "text": "我也去过北京。"
+            },
+            {
+              "key": "C",
+              "text": "现在八点半。"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Khen rau tươi siêu thị."
+        },
+        {
+          "id": "H30901_R46",
+          "number": 46,
+          "part": 1,
+          "type": "multiple_choice",
+          "prompt_zh": "这篇短文里有几个成语我不太懂。",
+          "options": [
+            {
+              "key": "A",
+              "text": "你可以查一查汉语成语词典，解释很清楚。"
+            },
+            {
+              "key": "B",
+              "text": "明天去游泳吧。"
+            },
+            {
+              "key": "C",
+              "text": "今天工作很顺利。"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hỏi về thành ngữ Hán ngữ."
+        },
+        {
+          "id": "H30901_R47",
+          "number": 47,
+          "part": 1,
+          "type": "multiple_choice",
+          "prompt_zh": "小猫今天怎么一口猫粮都不吃？",
+          "options": [
+            {
+              "key": "A",
+              "text": "带它去宠物医院检查一下吧，可能生病了。"
+            },
+            {
+              "key": "B",
+              "text": "小狗在睡觉。"
+            },
+            {
+              "key": "C",
+              "text": "外边太阳很大。"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Mèo con không chịu ăn."
+        },
+        {
+          "id": "H30901_R48",
+          "number": 48,
+          "part": 1,
+          "type": "multiple_choice",
+          "prompt_zh": "你最想去哪个城市旅游？",
+          "options": [
+            {
+              "key": "A",
+              "text": "我一直希望能去西安看兵马俑。"
+            },
+            {
+              "key": "B",
+              "text": "我喜欢喝茶。"
+            },
+            {
+              "key": "C",
+              "text": "昨天写完作业了。"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hỏi thành phố muốn du lịch."
+        },
+        {
+          "id": "H30901_R49",
+          "number": 49,
+          "part": 1,
+          "type": "multiple_choice",
+          "prompt_zh": "这台空气净化器的效果怎么样？",
+          "options": [
+            {
+              "key": "A",
+              "text": "非常棒，房间里的空气感觉清新多了。"
+            },
+            {
+              "key": "B",
+              "text": "我不喜欢看电影。"
+            },
+            {
+              "key": "C",
+              "text": "门前有一棵大树。"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Hỏi máy lọc không khí."
+        },
+        {
+          "id": "H30901_R50",
+          "number": 50,
+          "part": 1,
+          "type": "multiple_choice",
+          "prompt_zh": "明天早上七点出发来得及吗？",
+          "options": [
+            {
+              "key": "A",
+              "text": "来得及，我们准时在校门口集合就行。"
+            },
+            {
+              "key": "B",
+              "text": "今天没有下雨。"
+            },
+            {
+              "key": "C",
+              "text": "他在厨房做饭。"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Xác nhận thời gian khởi hành."
+        },
+        {
+          "id": "H30901_R51",
+          "number": 51,
+          "part": 2,
+          "type": "multiple_choice",
+          "prompt_zh": "遇到困难时，我们必须保持冷静，积极（ ）解决办法。",
+          "options": [
+            {
+              "key": "A",
+              "text": "寻找"
+            },
+            {
+              "key": "B",
+              "text": "跳舞"
+            },
+            {
+              "key": "C",
+              "text": "跑步"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "寻找办法: tìm kiếm biện pháp."
+        },
+        {
+          "id": "H30901_R52",
+          "number": 52,
+          "part": 2,
+          "type": "multiple_choice",
+          "prompt_zh": "这家餐厅的服务态度非常热情，给客人留下了深刻的（ ）。",
+          "options": [
+            {
+              "key": "A",
+              "text": "印象"
+            },
+            {
+              "key": "B",
+              "text": "历史"
+            },
+            {
+              "key": "C",
+              "text": "文化"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "深刻的印象: ấn tượng sâu sắc."
+        },
+        {
+          "id": "H30901_R53",
+          "number": 53,
+          "part": 2,
+          "type": "multiple_choice",
+          "prompt_zh": "无论天气多么寒冷，他每天早晨都（ ）去操场跑步。",
+          "options": [
+            {
+              "key": "A",
+              "text": "坚持"
+            },
+            {
+              "key": "B",
+              "text": "放弃"
+            },
+            {
+              "key": "C",
+              "text": "拒绝"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "坚持跑步: kiên trì chạy bộ."
+        },
+        {
+          "id": "H30901_R54",
+          "number": 54,
+          "part": 2,
+          "type": "multiple_choice",
+          "prompt_zh": "请大家在登机前再次（ ）自己的随身行李和登机牌。",
+          "options": [
+            {
+              "key": "A",
+              "text": "检查"
+            },
+            {
+              "key": "B",
+              "text": "睡觉"
+            },
+            {
+              "key": "C",
+              "text": "洗澡"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "检查行李: kiểm tra hành lý."
+        },
+        {
+          "id": "H30901_R55",
+          "number": 55,
+          "part": 2,
+          "type": "multiple_choice",
+          "prompt_zh": "随着科技的不断发展，移动支付给人们的生活带来了极大（ ）。",
+          "options": [
+            {
+              "key": "A",
+              "text": "便利"
+            },
+            {
+              "key": "B",
+              "text": "麻烦"
+            },
+            {
+              "key": "C",
+              "text": "痛苦"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "带来便利: mang lại thuận tiện."
+        },
+        {
+          "id": "H30901_R56",
+          "number": 56,
+          "part": 2,
+          "type": "multiple_choice",
+          "prompt_zh": "这本小说的故事情节非常吸引人，我一口气就（ ）了。",
+          "options": [
+            {
+              "key": "A",
+              "text": "读完"
+            },
+            {
+              "key": "B",
+              "text": "吃完"
+            },
+            {
+              "key": "C",
+              "text": "扔掉"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "读完小说: đọc xong tiểu thuyết."
+        },
+        {
+          "id": "H30901_R57",
+          "number": 57,
+          "part": 2,
+          "type": "multiple_choice",
+          "prompt_zh": "经过大家共同的努力，这项重要的工程终于按时（ ）了。",
+          "options": [
+            {
+              "key": "A",
+              "text": "完成"
+            },
+            {
+              "key": "B",
+              "text": "失败"
+            },
+            {
+              "key": "C",
+              "text": "取消"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "按时完成: hoàn thành đúng hạn."
+        },
+        {
+          "id": "H30901_R58",
+          "number": 58,
+          "part": 2,
+          "type": "multiple_choice",
+          "prompt_zh": "在公共场所大声喧哗是不（ ）的行为。",
+          "options": [
+            {
+              "key": "A",
+              "text": "礼貌"
+            },
+            {
+              "key": "B",
+              "text": "聪明"
+            },
+            {
+              "key": "C",
+              "text": "高兴"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "不礼貌: không lịch sự."
+        },
+        {
+          "id": "H30901_R59",
+          "number": 59,
+          "part": 2,
+          "type": "multiple_choice",
+          "prompt_zh": "他平时的性格非常开朗，特别善于与他人（ ）。",
+          "options": [
+            {
+              "key": "A",
+              "text": "沟通"
+            },
+            {
+              "key": "B",
+              "text": "争吵"
+            },
+            {
+              "key": "C",
+              "text": "生气"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "善于沟通: giỏi giao tiếp."
+        },
+        {
+          "id": "H30901_R60",
+          "number": 60,
+          "part": 2,
+          "type": "multiple_choice",
+          "prompt_zh": "这件手工制作的艺术品具有极高的收藏（ ）。",
+          "options": [
+            {
+              "key": "A",
+              "text": "价值"
+            },
+            {
+              "key": "B",
+              "text": "价格"
+            },
+            {
+              "key": "C",
+              "text": "重量"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "收藏价值: giá trị sưu tầm."
+        },
+        {
+          "id": "H30901_R61",
+          "number": 61,
+          "part": 3,
+          "type": "multiple_choice",
+          "prompt_zh": "很多人认为，只有拥有很多财富才能获得幸福。其实，真正的幸福往往藏在日常平凡的点滴之中，比如一家人围坐在一起吃一顿温馨的晚餐，或者在阳光明媚的午后读一本好书。懂得感恩与珍惜当下的人，内心最充实。 ★ 根据这段话，真正的幸福是什么？",
+          "options": [
+            {
+              "key": "A",
+              "text": "拥有很多金钱"
+            },
+            {
+              "key": "B",
+              "text": "珍惜平凡的日常生活"
+            },
+            {
+              "key": "C",
+              "text": "去全世界旅游"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Hạnh phúc đích thực nằm ở sự trân trọng những điều giản dị hàng ngày."
+        },
+        {
+          "id": "H30901_R62",
+          "number": 62,
+          "part": 3,
+          "type": "multiple_choice",
+          "prompt_zh": "中国茶文化源远流长，不仅是一种健康的饮品，更代表了一种淡泊宁静的生活态度。中国人常说‘以茶会友’，在品茶的过程中，人们交流思想，增进彼此的情谊。 ★ ‘以茶会友’的意思是：",
+          "options": [
+            {
+              "key": "A",
+              "text": "通过喝茶结交朋友"
+            },
+            {
+              "key": "B",
+              "text": "卖茶叶赚钱"
+            },
+            {
+              "key": "C",
+              "text": "比赛谁喝茶喝得多"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Dùng trà kết bạn."
+        },
+        {
+          "id": "H30901_R63",
+          "number": 63,
+          "part": 3,
+          "type": "multiple_choice",
+          "prompt_zh": "在现代快节奏的生活中，长期熬夜正在成为危害年轻人健康的一大杀手。充足的睡眠不仅能让大脑得到休息，还能增强人体的免疫力。专家建议成年人每天应保证七到八小时的高质量睡眠。 ★ 这段话主要强调了什么的重要性？",
+          "options": [
+            {
+              "key": "A",
+              "text": "多喝温水"
+            },
+            {
+              "key": "B",
+              "text": "保证充足睡眠"
+            },
+            {
+              "key": "C",
+              "text": "每天参加体育锻炼"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Tầm quan trọng của giấc ngủ đủ 7-8 tiếng."
+        },
+        {
+          "id": "H30901_R64",
+          "number": 64,
+          "part": 3,
+          "type": "multiple_choice",
+          "prompt_zh": "现代心理学研究表明，微笑具有神奇的感染力。当你向他人展露真诚的微笑时，不仅能让对方感到温暖，还能促使自己大脑分泌带来快乐的物质，有效减轻心理压力。 ★ 微笑有什么好处？",
+          "options": [
+            {
+              "key": "A",
+              "text": "让人赚更多的钱"
+            },
+            {
+              "key": "B",
+              "text": "减轻压力并带给人温暖"
+            },
+            {
+              "key": "C",
+              "text": "提高跑步速度"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Giảm stress và lan tỏa hơi ấm."
+        },
+        {
+          "id": "H30901_R65",
+          "number": 65,
+          "part": 3,
+          "type": "multiple_choice",
+          "prompt_zh": "中国有句古话叫‘熟能生巧’，意思是说任何技能只要经过反复刻苦的练习，就能掌握其中的规律并达到精通的境界。学习语言也是如此，只有多说多练，才能脱口而出。 ★ ‘熟能生巧’告诉我们什么道理？",
+          "options": [
+            {
+              "key": "A",
+              "text": "天才是天生的"
+            },
+            {
+              "key": "B",
+              "text": "只要勤奋练习就能精通"
+            },
+            {
+              "key": "C",
+              "text": "不要学习外语"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Khổ luyện ắt thành tài."
+        },
+        {
+          "id": "H30901_R66",
+          "number": 66,
+          "part": 3,
+          "type": "multiple_choice",
+          "prompt_zh": "近年来，越来越多的城市开始推广‘绿色出行’，鼓励市民多骑公共自行车或乘坐地铁出行。这不仅能有效缓解市区的交通拥堵，还能减少汽车尾气排放，改善空气质量。 ★ 绿色出行的好处包括：",
+          "options": [
+            {
+              "key": "A",
+              "text": "减少尾气污染与缓解拥堵"
+            },
+            {
+              "key": "B",
+              "text": "让人们花更多钱"
+            },
+            {
+              "key": "C",
+              "text": "取消所有私家车"
+            }
+          ],
+          "correct_answer": "A",
+          "explanation": "Giảm ô nhiễm khí thải và ùn tắc giao thông."
+        },
+        {
+          "id": "H30901_R67",
+          "number": 67,
+          "part": 3,
+          "type": "multiple_choice",
+          "prompt_zh": "失败并不可怕，可怕的是因害怕失败而不敢尝试。正如伟大的发明家爱迪生所说，每一次失败都是走向成功的一级台阶。只有总结教训，勇敢向前，才能最终实现理想。 ★ 这段话鼓励我们面对失败时应该：",
+          "options": [
+            {
+              "key": "A",
+              "text": "放弃努力"
+            },
+            {
+              "key": "B",
+              "text": "勇敢尝试并总结教训"
+            },
+            {
+              "key": "C",
+              "text": "抱怨运气不好"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Dũng cảm thử sức và đúc kết bài học."
+        },
+        {
+          "id": "H30901_R68",
+          "number": 68,
+          "part": 3,
+          "type": "multiple_choice",
+          "prompt_zh": "在与人交往中，学会倾听比滔滔不绝更重要。认真倾听对方的讲述，不仅是对他人的尊重，还能让我们更准确地理解对方的感受与需求，从而建立更加深厚的信任关系。 ★ 这段话认为交往中最重要的是：",
+          "options": [
+            {
+              "key": "A",
+              "text": "大声说话"
+            },
+            {
+              "key": "B",
+              "text": "学会认真倾听他人"
+            },
+            {
+              "key": "C",
+              "text": "只谈论自己的事情"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Học cách lắng nghe người khác."
+        },
+        {
+          "id": "H30901_R69",
+          "number": 69,
+          "part": 3,
+          "type": "multiple_choice",
+          "prompt_zh": "阅读是开阔眼界最便捷的途径。通过书籍，我们可以跨越时间和空间的限制，与古今中外的智者进行思想对话，领略不同国度的风土人情与文化魅力。 ★ 为什么说阅读能开阔眼界？",
+          "options": [
+            {
+              "key": "A",
+              "text": "因为书很便宜"
+            },
+            {
+              "key": "B",
+              "text": "可以与智者对话了解不同文化"
+            },
+            {
+              "key": "C",
+              "text": "因为不用出门花钱"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Có thể đối thoại cùng các bậc trí giả và khám phá muôn vàn nền văn hóa."
+        },
+        {
+          "id": "H30901_R70",
+          "number": 70,
+          "part": 3,
+          "type": "multiple_choice",
+          "prompt_zh": "做事情要有长远的规划，但更要脚踏实地走好当下的每一步。‘千里之行，始于足下’，不积跬步，无以至千里。只有做好眼前的小事，宏伟的抱负才能成为现实。 ★ 这段话强调的重点是：",
+          "options": [
+            {
+              "key": "A",
+              "text": "只空想不做事"
+            },
+            {
+              "key": "B",
+              "text": "脚踏实地做好眼前每一步"
+            },
+            {
+              "key": "C",
+              "text": "立刻完成所有工作"
+            }
+          ],
+          "correct_answer": "B",
+          "explanation": "Hành trình vạn dặm bắt đầu từ một bước chân, cần vững vàng từng bước."
+        }
+      ]
+    }
+  }
+}

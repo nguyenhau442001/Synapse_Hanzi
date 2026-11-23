@@ -1,0 +1,88 @@
+{
+  "id": "hskk_intermediate_specimen01",
+  "code": "HK0902",
+  "version": "3.0",
+  "level": "hskk_intermediate",
+  "title": "HSKK Trung cấp (中级) - Đề thi mẫu chuẩn CTI HK0902",
+  "source": "Chinese Testing International (CTI) Specimen Paper",
+  "time_minutes": 23,
+  "prep_time_minutes": 10,
+  "max_score": 100,
+  "pass_score": 60,
+  "sections": {
+    "repeat": {
+      "part": 1,
+      "name_zh": "第一部分：听后重复",
+      "name_vi": "Phần 1: Nghe và nhắc lại",
+      "guide_zh": "一共 10 个题。每题听一次，听到“嘟”声后，请重复听到的话（每题10秒）。",
+      "guide_vi": "Gồm 10 câu. Mỗi câu nghe 1 lần, sau tiếng bíp hãy nhắc lại chính xác câu vừa nghe (10 giây/câu).",
+      "record_seconds": 10,
+      "questions": [
+        { "id": "HK02_01", "number": 1, "audio_clip": "assets/audio/exams/hskk/intermediate/hk02_01.mp3", "prompt_zh": "虽然工作很辛苦，但他一直坚持着。", "pinyin": "suī rán gōng zuò hěn xīn kǔ ，dàn tā yī zhí jiān chí zhe 。", "meaning_vi": "Tuy rằng công việc rất vất vả, nhưng anh ấy vẫn luôn kiên trì." },
+        { "id": "HK02_02", "number": 2, "audio_clip": "assets/audio/exams/hskk/intermediate/hk02_02.mp3", "prompt_zh": "经常运动对身体健康有很大的好处。", "pinyin": "jīng cháng yùn dòng duì shēn tǐ jiàn kāng yǒu hěn dà de hǎo chu 。", "meaning_vi": "Thường xuyên vận động thể thao mang lại lợi ích rất lớn cho sức khỏe." },
+        { "id": "HK02_03", "number": 3, "audio_clip": "assets/audio/exams/hskk/intermediate/hk02_03.mp3", "prompt_zh": "遇到困难时，我们应该积极寻找解决办法。", "pinyin": "yù dào kùn nan shí ，wǒ men yīng gāi jī jí xún zhǎo jiě jué bàn fǎ 。", "meaning_vi": "Khi gặp khó khăn, chúng ta nên tích cực tìm kiếm giải pháp." },
+        { "id": "HK02_04", "number": 4, "audio_clip": "assets/audio/exams/hskk/intermediate/hk02_04.mp3", "prompt_zh": "这本书详细介绍了中国悠久的历史文化。", "pinyin": "zhè běn shū xiáng xì jiè shào le zhōng guó yōu jiǔ de lì shǐ wén huà 。", "meaning_vi": "Cuốn sách này giới thiệu chi tiết về lịch sử và văn hóa lâu đời của Trung Quốc." },
+        { "id": "HK02_05", "number": 5, "audio_clip": "assets/audio/exams/hskk/intermediate/hk02_05.mp3", "prompt_zh": "不管是学习还是工作，态度都至关重要。", "pinyin": "bù guǎn shì xué xí hái shì gōng zuò ，tài du dōu zhì guān zhòng yào 。", "meaning_vi": "Dù là học tập hay làm việc, thái độ đều vô cùng quan trọng." },
+        { "id": "HK02_06", "number": 6, "audio_clip": "assets/audio/exams/hskk/intermediate/hk02_06.mp3", "prompt_zh": "为了按时完成任务，大家都在加班努力。", "pinyin": "wèi le àn shí wán chéng rèn wu ，dà jiā dōu zài jiā bān nǔ lì 。", "meaning_vi": "Để hoàn thành nhiệm vụ đúng hạn, mọi người đều đang tăng ca nỗ lực." },
+        { "id": "HK02_07", "number": 7, "audio_clip": "assets/audio/exams/hskk/intermediate/hk02_07.mp3", "prompt_zh": "听完李教授的讲座，我深受启发。", "pinyin": "tīng wán lǐ jiào shòu de jiǎng zuò ，wǒ shēn shòu qǐ fā 。", "meaning_vi": "Nghe xong bài diễn thuyết của giáo sư Lý, tôi cảm thấy được mở mang rất nhiều." },
+        { "id": "HK02_08", "number": 8, "audio_clip": "assets/audio/exams/hskk/intermediate/hk02_08.mp3", "prompt_zh": "随着互联网的发展，人们的生活越来越方便。", "pinyin": "suí zhe hù lián wǎng de fā zhǎn ，rén men de shēng huó yuè lái yuè fāng biàn 。", "meaning_vi": "Cùng với sự phát triển của internet, cuộc sống con người ngày càng tiện lợi." },
+        { "id": "HK02_09", "number": 9, "audio_clip": "assets/audio/exams/hskk/intermediate/hk02_09.mp3", "prompt_zh": "在旅行的过程中，不仅能开阔眼界，还能结交朋友。", "pinyin": "zài lǚ xíng de guò chéng zhōng ，bù jǐn néng kāi kuò yǎn jiè ，hái néng jié jiāo péng you 。", "meaning_vi": "Trong chuyến du lịch, không chỉ mở rộng tầm mắt mà còn kết giao thêm bạn bè." },
+        { "id": "HK02_10", "number": 10, "audio_clip": "assets/audio/exams/hskk/intermediate/hk02_10.mp3", "prompt_zh": "只有不断总结经验，才能取得更大的进步。", "pinyin": "zhǐ yǒu bù duàn zǒng jié jīng yàn ，cái néng qǔ dé gèng dà de jìn bù 。", "meaning_vi": "Chỉ có không ngừng đúc kết kinh nghiệm mới có thể đạt được tiến bộ lớn hơn." }
+      ]
+    },
+    "picture_story": {
+      "part": 2,
+      "name_zh": "第二部分：看图说话",
+      "name_vi": "Phần 2: Nhìn tranh nói / kể chuyện",
+      "guide_zh": "一共 2 个题。看图准备后，听到“嘟”声，请结合图片内容进行描述（每题2分钟）。",
+      "guide_vi": "Gồm 2 câu. Nhìn tranh tình huống và trình bày diễn đạt ý tưởng (120 giây/tranh).",
+      "record_seconds": 120,
+      "questions": [
+        {
+          "id": "HK02_11",
+          "number": 11,
+          "audio_clip": "assets/audio/exams/hskk/intermediate/hk02_11.mp3",
+          "image": "assets/images/illustrations/学校.svg",
+          "prompt_zh": "请结合图片描述场景并表达看法（校园学习生活）。",
+          "meaning_vi": "Nhìn tranh và miêu tả khung cảnh trường học, không khí học tập và cảm nhận của bạn.",
+          "suggested_zh": "从这幅图片中，我们可以看到一个美丽的大学校园。几个年轻的学生正坐在草地上热烈地讨论问题，每个人脸上都洋溢着自信的笑容。这让我想起了自己的大学生活。我认为，在大学里不仅要学好专业知识，更要学会与他人交流合作，珍惜宝贵的青春时光。"
+        },
+        {
+          "id": "HK02_12",
+          "number": 12,
+          "audio_clip": "assets/audio/exams/hskk/intermediate/hk02_12.mp3",
+          "image": "assets/images/illustrations/飞机.svg",
+          "prompt_zh": "请结合图片描述场景并表达看法（机场出发与旅行）。",
+          "meaning_vi": "Nhìn tranh miêu tả khung cảnh du lịch/chuyến bay và chia sẻ quan điểm về du lịch.",
+          "suggested_zh": "图片展示了一架正准备起飞的飞机，象征着一次全新的旅程。现代交通的发展使得人们出行更加快捷方便。对我来说，旅行是一种极好的放松方式，它能让我们暂时放下忙碌的工作，去感受不同的风土人情，体验世界的多样性。"
+        }
+      ]
+    },
+    "answer_open": {
+      "part": 3,
+      "name_zh": "第三部分：回答问题",
+      "name_vi": "Phần 3: Trả lời câu hỏi nghị luận mở",
+      "guide_zh": "一共 2 个题。听到“嘟”声后，请详细回答每个问题（每题2分钟）。",
+      "guide_vi": "Gồm 2 câu hỏi mở. Trả lời chi tiết quan điểm cá nhân (120 giây/câu).",
+      "record_seconds": 120,
+      "questions": [
+        {
+          "id": "HK02_13",
+          "number": 13,
+          "audio_clip": "assets/audio/exams/hskk/intermediate/hk02_13.mp3",
+          "prompt_zh": "你认为在学习一门外语时，最重要的是什么？为什么？",
+          "meaning_vi": "Theo bạn, điều quan trọng nhất khi học một ngoại ngữ là gì? Vì sao?",
+          "suggested_zh": "我认为学习一门外语最重要的不是死记硬背单词，而是培养语言环境与坚持开口实践。很多人学语言害怕犯错，这会导致‘哑巴外语’。只有敢于表达，把语言当成交流的工具，并在日常生活中持之以恒，才能真正掌握一门语言。"
+        },
+        {
+          "id": "HK02_14",
+          "number": 14,
+          "audio_clip": "assets/audio/exams/hskk/intermediate/hk02_14.mp3",
+          "prompt_zh": "现在很多人习惯在网上购物，你更喜欢网购还是去商场购物？为什么？",
+          "meaning_vi": "Hiện nay nhiều người có thói quen mua sắm online, bạn thích mua online hay đến trung tâm thương mại hơn? Vì sao?",
+          "suggested_zh": "相比之下，我更喜欢网购。首先，网购不受时间和地点的限制，只要动动手指就能买到全国甚至全世界的商品；其次，网上的价格通常比实体店更实惠，还能方便地对比评价。当然，买衣服等需要试穿的物品时，去商场也是很好的体验。"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "version": "3.0",
+  "category": "hskk",
+  "title": "Kỳ thi Khẩu ngữ HSKK (汉语水平口语考试)",
+  "levels": {
+    "hskk_primary": {
+      "level": "hskk_primary",
+      "name_zh": "HSKK 初级",
+      "name_vi": "HSKK Sơ cấp",
+      "badge": "Sơ cấp",
+      "target_hsk": "HSK 1 - HSK 2 - HSK 3",
+      "vocab_scale": "~200 từ",
+      "total_questions": 27,
+      "time_minutes": 17,
+      "prep_time_minutes": 7,
+      "max_score": 100,
+      "pass_score": 60,
+      "description": "Thích hợp cho thí sinh học tiếng Trung sơ cấp. Gồm 3 phần: Nghe nhắc lại câu, Nghe trả lời câu hỏi ngắn, và Trả lời câu hỏi mở.",
+      "exams": [
+        {
+          "id": "hskk_primary_specimen01",
+          "code": "HK0901",
+          "title": "Đề thi mẫu chuẩn CTI HSKK Sơ cấp HK0901",
+          "subtitle": "Đề thi mẫu khẩu ngữ sơ cấp chính thức của CTI (汉考国际) - 27 câu",
+          "time_minutes": 17,
+          "file": "database/exams/hskk/primary/hskk_primary_specimen01.json"
+        }
+      ]
+    },
+    "hskk_intermediate": {
+      "level": "hskk_intermediate",
+      "name_zh": "HSKK 中级",
+      "name_vi": "HSKK Trung cấp",
+      "badge": "Trung cấp",
+      "target_hsk": "HSK 3 - HSK 4",
+      "vocab_scale": "~900 từ",
+      "total_questions": 14,
+      "time_minutes": 23,
+      "prep_time_minutes": 10,
+      "max_score": 100,
+      "pass_score": 60,
+      "description": "Thích hợp cho thí sinh trung cấp (bắt buộc khi thi HSK 4). Gồm: Nghe nhắc lại câu dài, Nhìn 2 bức tranh kể chuyện/mô tả, và Trả lời 2 câu hỏi nghị luận mở.",
+      "exams": [
+        {
+          "id": "hskk_intermediate_specimen01",
+          "code": "HK0902",
+          "title": "Đề thi mẫu chuẩn CTI HSKK Trung cấp HK0902",
+          "subtitle": "Đề thi mẫu khẩu ngữ trung cấp chính thức của CTI (汉考国际) - 14 câu",
+          "time_minutes": 23,
+          "file": "database/exams/hskk/intermediate/hskk_intermediate_specimen01.json"
+        }
+      ]
+    },
+    "hskk_advanced": {
+      "level": "hskk_advanced",
+      "name_zh": "HSKK 高级",
+      "name_vi": "HSKK Cao cấp",
+      "badge": "Cao cấp",
+      "target_hsk": "HSK 5 - HSK 6",
+      "vocab_scale": "~3000 từ",
+      "total_questions": 6,
+      "time_minutes": 25,
+      "prep_time_minutes": 10,
+      "max_score": 100,
+      "pass_score": 60,
+      "description": "Thích hợp cho thí sinh cao cấp (bắt buộc khi thi HSK 5-6). Gồm: Nghe và tóm tắt lại 3 đoạn văn dài, Đọc to 1 đoạn văn chuẩn ngữ điệu, và Trả lời 2 câu hỏi chuyên sâu.",
+      "exams": [
+        {
+          "id": "hskk_advanced_specimen01",
+          "code": "HK0903",
+          "title": "Đề thi mẫu chuẩn CTI HSKK Cao cấp HK0903",
+          "subtitle": "Đề thi mẫu khẩu ngữ cao cấp chính thức của CTI (汉考国际) - 6 câu",
+          "time_minutes": 25,
+          "file": "database/exams/hskk/advanced/hskk_advanced_specimen01.json"
+        }
+      ]
+    }
+  }
+}

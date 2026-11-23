@@ -1,4 +1,4 @@
-const APP_VERSION = '3.60.3';
+const APP_VERSION = '3.61.0';
 const CACHE_NAME = 'hsk-flashcards-v' + APP_VERSION;
 const APP_SHELL_URL = new URL('./index.html', self.registration.scope).href;
 const INDEX_SHELL_URL = new URL('./index.html', self.registration.scope).href;

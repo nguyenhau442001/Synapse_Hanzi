@@ -1,0 +1,91 @@
+{
+  "id": "hskk_advanced_specimen01",
+  "code": "HK0903",
+  "version": "3.0",
+  "level": "hskk_advanced",
+  "title": "HSKK Cao cấp (高级) - Đề thi mẫu chuẩn CTI HK0903",
+  "source": "Chinese Testing International (CTI) Specimen Paper",
+  "time_minutes": 25,
+  "prep_time_minutes": 10,
+  "max_score": 100,
+  "pass_score": 60,
+  "sections": {
+    "summarize": {
+      "part": 1,
+      "name_zh": "第一部分：听后复述",
+      "name_vi": "Phần 1: Nghe đoạn văn và tóm tắt lại bằng lời của bạn",
+      "guide_zh": "一共 3 个题。每题听一段话（约150-200字），听后请复述主要内容（每题2分钟）。",
+      "guide_vi": "Gồm 3 đoạn văn. Nghe xong tóm tắt lại các ý chính bằng lời văn của chính bạn (120 giây/câu).",
+      "record_seconds": 120,
+      "questions": [
+        {
+          "id": "HK03_01",
+          "number": 1,
+          "audio_clip": "assets/audio/exams/hskk/advanced/hk03_01.mp3",
+          "prompt_zh": "从前，有位老人给两个儿子一人一袋种子，让他们分别去种植。大儿子把种子种在肥沃的土地里，每天精心呵护；小儿子却把种子洒在贫瘠的山坡上，让它们经历风吹雨打。结果到了秋天，大儿子的庄稼虽然长得茂盛，但一遇到大风就全倒了；小儿子的庄稼根系深扎入土壤，不仅挺过了风雨，还结出了饱满的果实。这个故事告诉我们：过度保护往往让人脆弱，只有经历风霜考验，才能真正坚韧不拔。",
+          "meaning_vi": "Ngụ ngôn hai túi hạt giống: Sự bao bọc quá mức làm suy yếu, chỉ có vượt qua thử thách phong ba mới tôi luyện nên sức sống bền bỉ.",
+          "suggested_zh": "这段话讲述了一位父亲给两个儿子种子去耕种的故事。大儿子把种子种在温室肥沃的土地里，结果庄稼脆弱不堪；小儿子让种子在山坡风雨中生长，根深蒂固，最终收获满满。故事启示我们：人生如同庄稼，过度的溺爱与保护只会让人经不起风浪，只有在挫折中历练，才能培养真正坚强独立的品质。"
+        },
+        {
+          "id": "HK03_02",
+          "number": 2,
+          "audio_clip": "assets/audio/exams/hskk/advanced/hk03_02.mp3",
+          "prompt_zh": "心理学家曾做过一个著名的‘棉花糖实验’：给一群孩子每人一块棉花糖，并告诉他们，如果能等待十五分钟再吃，就可以再奖励一块。多年后跟踪调查发现，那些当年能够克制冲动、延迟满足的孩子，在学业、事业和人际关系上都取得了更大的成就。这项研究表明：自控力和延迟满足的能力，是决定一个人能否取得长期成功的关键心理因素。",
+          "meaning_vi": "Thí nghiệm kẹo dẻo của nhà tâm lý học: Năng lực tự chủ và kiên nhẫn trì hoãn sự thỏa mãn là chìa khóa then chốt cho thành công lâu dài.",
+          "suggested_zh": "这个故事介绍了著名的棉花糖实验。实验发现能够抵制当下诱惑、选择等待以获取双倍奖励的孩子，长大后往往在事业和生活上更加出色。这说明自控能力和远见比眼前的短暂快感更为重要。在现代快节奏社会中，懂得克制欲望、脚踏实地，是实现远大理想的必备素质。"
+        },
+        {
+          "id": "HK03_03",
+          "number": 3,
+          "audio_clip": "assets/audio/exams/hskk/advanced/hk03_03.mp3",
+          "prompt_zh": "在现代企业管理中，‘木桶理论’广为人知，即一只木桶能装多少水，取决于最短的那块木板。然而，在当今高度分工与创新的时代，‘长板理论’同样重要——一个人或企业不必样样精通，只要将自己的核心长处发挥到极致，并通过团队合作弥补短板，就能在激烈的市场竞争中独占鳌头。核心竞争力往往源于长处的深度深耕。",
+          "meaning_vi": "Lý thuyết thùng gỗ và lý thuyết ván dài: Phát huy thế mạnh cốt lõi đến đỉnh cao kết hợp tinh thần đồng đội.",
+          "suggested_zh": "这段话探讨了木桶理论与长板理论在现代社会中的应用。传统观点强调弥补短板，但在竞争激烈的今天，发挥核心优势更加关键。个人或团队只要把独特的特长发挥到极致，并通过合作互补不足，就能创造出更大的价值。这启示我们要善于发掘自身的核心潜能。"
+        }
+      ]
+    },
+    "reading_aloud": {
+      "part": 2,
+      "name_zh": "第二部分：朗读短文",
+      "name_vi": "Phần 2: Đọc to đoạn văn chuẩn ngữ điệu",
+      "guide_zh": "一共 1 个题。请准备后朗读给出的短文（约200字），要求吐字清晰、声调准确、语速适中（2分钟）。",
+      "guide_vi": "Gồm 1 đoạn văn. Đọc to chuẩn phát âm, thanh điệu và ngữ điệu tự nhiên (120 giây).",
+      "record_seconds": 120,
+      "questions": [
+        {
+          "id": "HK03_04",
+          "number": 4,
+          "audio_clip": "assets/audio/exams/hskk/advanced/hk03_04.mp3",
+          "prompt_zh": "阅读不仅是获取知识的途径，更是一场跨越时空的心灵对话。当我们翻开一本经典著作，那些千百年前智者的深邃思想，便如春雨般润物无声地滋养着我们的精神世界。在喧嚣纷扰的现代生活中，静下心来读一本好书，能让我们洗尽铅华，重新审视自我与世界的关系。阅读使我们拥有更广阔的视野与更宽容的胸怀，让我们在平凡的日子里，也能拥有诗意与远方。",
+          "meaning_vi": "Đoạn văn đọc to: Giá trị tinh thần và sự tĩnh tại của việc đọc sách giữa nhịp sống hiện đại."
+        }
+      ]
+    },
+    "answer_open": {
+      "part": 3,
+      "name_zh": "第三部分：回答问题",
+      "name_vi": "Phần 3: Trả lời câu hỏi nghị luận chuyên sâu",
+      "guide_zh": "一共 2 个题。听到“嘟”声后，请深入阐述你的观点（每题2.5分钟）。",
+      "guide_vi": "Gồm 2 câu hỏi nghị luận xã hội sâu sắc (150 giây/câu).",
+      "record_seconds": 150,
+      "questions": [
+        {
+          "id": "HK03_05",
+          "number": 5,
+          "audio_clip": "assets/audio/exams/hskk/advanced/hk03_05.mp3",
+          "prompt_zh": "有人认为‘人工智能技术（AI）的发展会取代人类的很多工作，给社会带来危机’；也有人认为‘AI只是工具，它会创造更多新的机遇’。对此，请谈谈你的看法。",
+          "meaning_vi": "Nghị luận: Trí tuệ nhân tạo (AI) đe dọa việc làm hay mở ra cơ hội mới cho nhân loại?",
+          "suggested_zh": "我认为人工智能既是挑战也是巨大的历史机遇。虽然重复性、机械性的岗位可能会被自动化取代，但历史证明每次科技革命都会催生出更多前所未有的新职业。AI解放了人类繁琐的体力与脑力劳动，让我们能够把精力投入到更有创造性、同理心和战略性的领域。关键在于教育体系和个体能否积极拥抱变化，终身学习，与技术协同进化。"
+        },
+        {
+          "id": "HK03_06",
+          "number": 6,
+          "audio_clip": "assets/audio/exams/hskk/advanced/hk03_06.mp3",
+          "prompt_zh": "在当今快节奏的社会中，‘内卷’与‘躺平’成为许多年轻人的热议话题。你如何看待这两种生活态度？你更倾向于怎样的人生选择？",
+          "meaning_vi": "Nghị luận: Hiện tượng 'cuộn mình cạnh tranh khốc liệt' (内卷) và 'buông xuôi nằm yên' (躺平) trong giới trẻ hiện nay.",
+          "suggested_zh": "我认为‘内卷’反映了无序过度竞争带来的焦虑，而‘躺平’则是部分年轻人面对压力时的无声抗议与自我调节。然而，盲目内卷会消耗健康与热情，彻底躺平也会错失人生的精彩。我更倾向于在二者之间寻找一种‘积极的平衡’：明确自己的内心热爱与真正价值，不随波逐流参与无意义的攀比，既保持脚踏实地的奋斗姿态，又懂得留白与享受生活。"
+        }
+      ]
+    }
+  }
+}
