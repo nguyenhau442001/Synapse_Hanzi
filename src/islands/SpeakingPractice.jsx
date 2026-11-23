@@ -171,10 +171,21 @@ function SpeakingPracticeApp() {
   const [selectedPairIndex, setSelectedPairIndex] = useState(0);
   const [selectedPairWordIndex, setSelectedPairWordIndex] = useState(0);
 
+  // Waveform & Visualizer Modes
+  const [visualizerMode, setVisualizerMode] = useState('combined'); // 'combined' | 'dualWaveform'
+  const [referenceWaveform, setReferenceWaveform] = useState(null);
+  const [userRecordedWaveform, setUserRecordedWaveform] = useState(null);
+
   const canvasRef = useRef(null);
   const trackerRef = useRef(null);
   const speechAiRef = useRef(null);
   const livePointsRef = useRef([]);
+  const liveWaveformRef = useRef(null);
+  const refWaveformRef = useRef(null);
+  const userWaveformRef = useRef(null);
+  const scoreResultRef = useRef(null);
+  const playheadPosRef = useRef(null); // null or 0.0 -> 1.0
+  const playheadAnimRef = useRef(null);
 
   // Check if Deep ONNX model is already cached
   useEffect(() => {
@@ -219,6 +230,7 @@ function SpeakingPracticeApp() {
     return () => {
       if (trackerRef.current) trackerRef.current.stop();
       if (speechAiRef.current) speechAiRef.current.stopListening();
+      if (playheadAnimRef.current) cancelAnimationFrame(playheadAnimRef.current);
       stopSpeaking();
     };
   }, []);
@@ -242,7 +254,7 @@ function SpeakingPracticeApp() {
     // Measure actual displayed bounding box
     const rect = canvas.getBoundingClientRect();
     const displayWidth = Math.floor(rect.width) || 680;
-    const displayHeight = Math.floor(rect.height) || 240;
+    const displayHeight = Math.floor(rect.height) || 260;
     const dpr = Math.min(typeof window !== 'undefined' ? (window.devicePixelRatio || 1) : 1, 3);
 
     // Sync bitmap buffer with high-DPI (Retina / OLED) screens
@@ -261,11 +273,22 @@ function SpeakingPracticeApp() {
     const isCompact = displayWidth < 480;
     const padLeft = isCompact ? 46 : 85;
     const padRight = isCompact ? 16 : 24;
-    const padY = isCompact ? 18 : 24;
+    const padY = isCompact ? 24 : 28;
     const plotW = displayWidth - padLeft - padRight;
     const plotH = displayHeight - padY * 2;
+    const numSyllables = syllableInfos.length;
 
-    // Draw Chao 5-scale horizontal reference lines with adaptive labels
+    // 1. Alternating subtle syllable column backgrounds
+    for (let s = 0; s < numSyllables; s++) {
+      const xStart = padLeft + (s / numSyllables) * plotW;
+      const xEnd = padLeft + ((s + 1) / numSyllables) * plotW;
+      if (s % 2 === 1) {
+        ctx.fillStyle = 'rgba(180, 150, 100, 0.04)';
+        ctx.fillRect(xStart, padY, xEnd - xStart, plotH);
+      }
+    }
+
+    // 2. Draw Chao 5-scale horizontal reference lines with adaptive labels
     ctx.lineWidth = 1;
     const chaoLabels = isCompact
       ? [
@@ -301,12 +324,11 @@ function SpeakingPracticeApp() {
       ctx.fillText(text, padLeft - 6, y + 3.5);
     });
 
-    // Syllable vertical separators
-    const numSyllables = syllableInfos.length;
+    // 3. Syllable vertical separators
     for (let s = 1; s < numSyllables; s++) {
       const x = padLeft + (s / numSyllables) * plotW;
-      ctx.strokeStyle = 'rgba(180, 150, 100, 0.2)';
-      ctx.setLineDash([2, 2]);
+      ctx.strokeStyle = 'rgba(180, 150, 100, 0.22)';
+      ctx.setLineDash([3, 3]);
       ctx.beginPath();
       ctx.moveTo(x, padY);
       ctx.lineTo(x, padY + plotH);
@@ -314,7 +336,95 @@ function SpeakingPracticeApp() {
       ctx.setLineDash([]);
     }
 
-    // Draw Target Contour (Golden Amber Line)
+    // 4. REAL-TIME OSCILLOSCOPE WAVEFORM (While recording)
+    if (isRecording && liveWaveformRef.current && liveWaveformRef.current.length > 0) {
+      const waveData = liveWaveformRef.current;
+      const waveLen = waveData.length;
+      const yCenter = padY + plotH / 2;
+      const maxAmp = plotH * 0.42;
+
+      ctx.save();
+      ctx.lineWidth = 2.5;
+      ctx.strokeStyle = '#0d9488';
+      ctx.shadowColor = 'rgba(20, 184, 166, 0.65)';
+      ctx.shadowBlur = 8;
+      ctx.beginPath();
+
+      const step = Math.max(1, Math.floor(waveLen / plotW));
+      for (let px = 0; px < plotW; px++) {
+        const sampleIdx = Math.min(waveLen - 1, px * step);
+        const sampleVal = waveData[sampleIdx] || 0;
+        const x = padLeft + px;
+        const y = yCenter - sampleVal * maxAmp;
+        if (px === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      }
+      ctx.stroke();
+      ctx.restore();
+
+      // Realtime recording badge on canvas
+      ctx.fillStyle = '#0d9488';
+      ctx.font = isCompact ? 'bold 10px sans-serif' : 'bold 11px sans-serif';
+      ctx.textAlign = 'left';
+      ctx.fillText('● THU SÓNG ÂM REAL-TIME', padLeft + 6, padY + 16);
+    }
+
+    // 5. POST-RECORDING & IDLE WAVEFORM ENVELOPES
+    if (!isRecording) {
+      if (visualizerMode === 'dualWaveform') {
+        // Dual Track Mode: Top is Studio Xiaoxiao, Bottom is User
+        const trackH = plotH * 0.46;
+        const track1CenterY = padY + trackH * 0.5;
+        const track2CenterY = padY + plotH - trackH * 0.5;
+
+        // Middle track divider
+        ctx.strokeStyle = 'rgba(180, 150, 100, 0.3)';
+        ctx.setLineDash([2, 2]);
+        ctx.beginPath();
+        ctx.moveTo(padLeft, padY + plotH * 0.5);
+        ctx.lineTo(padLeft + plotW, padY + plotH * 0.5);
+        ctx.stroke();
+        ctx.setLineDash([]);
+
+        // Track Labels
+        ctx.fillStyle = '#b45309';
+        ctx.font = 'bold 9.5px sans-serif';
+        ctx.textAlign = 'left';
+        ctx.fillText('MẪU STUDIO (XIAOXIAO)', padLeft + 4, padY + 12);
+        ctx.fillStyle = '#0d9488';
+        ctx.fillText('GIỌNG THU CỦA BẠN', padLeft + 4, padY + plotH * 0.5 + 13);
+
+        // Draw Studio Waveform Envelope in Track 1
+        const refWave = refWaveformRef.current;
+        if (refWave && refWave.length > 0) {
+          drawWaveformPolygon(ctx, refWave, padLeft, plotW, track1CenterY, trackH * 0.42, 'rgba(217, 119, 6, 0.35)', '#d97706');
+        }
+
+        // Draw User Waveform Envelope in Track 2
+        const userWave = userWaveformRef.current;
+        if (userWave && userWave.length > 0) {
+          drawWaveformPolygon(ctx, userWave, padLeft, plotW, track2CenterY, trackH * 0.42, 'rgba(13, 148, 136, 0.35)', '#0d9488');
+        }
+      } else {
+        // Combined View Mode: Layered subtle waveform backdrop
+        const yCenter = padY + plotH / 2;
+        const waveMaxH = plotH * 0.38;
+
+        // Reference studio waveform (amber)
+        const refWave = refWaveformRef.current;
+        if (refWave && refWave.length > 0) {
+          drawWaveformPolygon(ctx, refWave, padLeft, plotW, yCenter, waveMaxH, 'rgba(217, 119, 6, 0.16)', 'rgba(217, 119, 6, 0.45)');
+        }
+
+        // User recorded waveform (teal)
+        const userWave = userWaveformRef.current;
+        if (userWave && userWave.length > 0) {
+          drawWaveformPolygon(ctx, userWave, padLeft, plotW, yCenter, waveMaxH, 'rgba(13, 148, 136, 0.22)', 'rgba(13, 148, 136, 0.65)');
+        }
+      }
+    }
+
+    // 6. Draw Target Pitch Contour (Golden Amber Line)
     if (targetContour.length > 1) {
       ctx.lineWidth = isCompact ? 3.5 : 4;
       ctx.strokeStyle = '#d97706'; // Golden amber
@@ -330,14 +440,14 @@ function SpeakingPracticeApp() {
       });
       ctx.stroke();
 
-      // Draw syllable tone label along target curve
+      // Syllable header & Tone info
       syllableInfos.forEach((syl, sIdx) => {
         const midTime = (sIdx + 0.5) / numSyllables;
         const midX = padLeft + midTime * plotW;
         ctx.fillStyle = '#b45309';
         ctx.font = isCompact
-          ? 'bold 11.5px -apple-system, BlinkMacSystemFont, sans-serif'
-          : 'bold 13px -apple-system, BlinkMacSystemFont, sans-serif';
+          ? 'bold 11px -apple-system, BlinkMacSystemFont, sans-serif'
+          : 'bold 12.5px -apple-system, BlinkMacSystemFont, sans-serif';
         ctx.textAlign = 'center';
         const toneText = syl.sandhiApplied
           ? `T${syl.actualTone} (biến)`
@@ -346,7 +456,7 @@ function SpeakingPracticeApp() {
       });
     }
 
-    // Draw User Recorded / Live Pitch Contour (Teal/Emerald Line)
+    // 7. Draw User Recorded / Live Pitch Contour (Teal/Emerald Line)
     const pitchesToDraw = userPitches || lastUserPitchesRef.current || livePointsRef.current;
     if (pitchesToDraw && pitchesToDraw.length > 1) {
       ctx.lineWidth = isCompact ? 4 : 4.5;
@@ -366,8 +476,107 @@ function SpeakingPracticeApp() {
       ctx.stroke();
     }
 
+    // 8. ERROR ALERT PINS / BADGES (Directly highlighting where mistakes occurred)
+    const curScore = scoreResultRef.current;
+    if (curScore && curScore.toneBreakdown && curScore.toneBreakdown.length > 0) {
+      curScore.toneBreakdown.forEach((item, sIdx) => {
+        const midX = padLeft + ((sIdx + 0.5) / numSyllables) * plotW;
+        const badgeY = padY + 18;
+
+        if (item.errorTag) {
+          const text = `⚠️ ${item.errorTag}`;
+          ctx.font = 'bold 10px sans-serif';
+          const textW = ctx.measureText(text).width;
+          const padBox = 6;
+          const boxW = textW + padBox * 2;
+          const boxH = 18;
+
+          ctx.fillStyle = '#fef3c7'; // Amber yellow
+          ctx.strokeStyle = '#d97706';
+          ctx.lineWidth = 1;
+          roundRect(ctx, midX - boxW / 2, badgeY, boxW, boxH, 4);
+          ctx.fill();
+          ctx.stroke();
+
+          ctx.fillStyle = '#b45309';
+          ctx.textAlign = 'center';
+          ctx.fillText(text, midX, badgeY + 12.5);
+        } else if (item.status === 'excellent') {
+          const text = `✓ Chuẩn T${item.tone}`;
+          ctx.font = 'bold 9.5px sans-serif';
+          const textW = ctx.measureText(text).width;
+          const padBox = 5;
+          const boxW = textW + padBox * 2;
+          const boxH = 17;
+
+          ctx.fillStyle = '#ecfdf5';
+          ctx.strokeStyle = '#10b981';
+          ctx.lineWidth = 1;
+          roundRect(ctx, midX - boxW / 2, badgeY, boxW, boxH, 4);
+          ctx.fill();
+          ctx.stroke();
+
+          ctx.fillStyle = '#047857';
+          ctx.textAlign = 'center';
+          ctx.fillText(text, midX, badgeY + 12);
+        }
+      });
+    }
+
+    // 9. PLAYHEAD SCRUBBER CURSOR (Real-time tracking of audio playback)
+    if (playheadPosRef.current !== null && playheadPosRef.current >= 0 && playheadPosRef.current <= 1.0) {
+      const cursorX = padLeft + playheadPosRef.current * plotW;
+      ctx.save();
+      ctx.strokeStyle = '#f59e0b';
+      ctx.lineWidth = 2;
+      ctx.shadowColor = 'rgba(245, 158, 11, 0.7)';
+      ctx.shadowBlur = 6;
+
+      ctx.beginPath();
+      ctx.moveTo(cursorX, padY - 6);
+      ctx.lineTo(cursorX, padY + plotH + 4);
+      ctx.stroke();
+
+      // Top triangle pointer
+      ctx.fillStyle = '#f59e0b';
+      ctx.beginPath();
+      ctx.moveTo(cursorX - 5, padY - 8);
+      ctx.lineTo(cursorX + 5, padY - 8);
+      ctx.lineTo(cursorX, padY - 2);
+      ctx.closePath();
+      ctx.fill();
+      ctx.restore();
+    }
+
     ctx.restore();
   };
+
+  // Load studio reference audio waveform when active word changes
+  useEffect(() => {
+    let isCancelled = false;
+    setUserRecordedWaveform(null);
+    userWaveformRef.current = null;
+    scoreResultRef.current = null;
+    const audioUrl = resolvePrebuiltAudio(currentWord.hanzi);
+    if (audioUrl) {
+      fetchAndExtractAudioWaveform(audioUrl, 120).then((envelope) => {
+        if (!isCancelled && envelope && envelope.length > 0) {
+          setReferenceWaveform(envelope);
+          refWaveformRef.current = envelope;
+          drawContourCanvas();
+        }
+      });
+    } else {
+      setReferenceWaveform(null);
+      refWaveformRef.current = null;
+    }
+    return () => { isCancelled = true; };
+  }, [currentWord]);
+
+  // Redraw when visualizer mode changes
+  useEffect(() => {
+    drawContourCanvas();
+  }, [visualizerMode]);
 
   // Observe container resize to re-render sharp canvas smoothly across desktop and mobile
   useEffect(() => {
@@ -394,9 +603,39 @@ function SpeakingPracticeApp() {
     };
   }, [currentWord]);
 
+  // Animate playback scrubber cursor
+  const startPlayheadAnimation = (durationMs) => {
+    if (playheadAnimRef.current) cancelAnimationFrame(playheadAnimRef.current);
+    const startT = performance.now();
+    const tick = () => {
+      const elapsed = performance.now() - startT;
+      const progress = Math.min(1.0, elapsed / durationMs);
+      playheadPosRef.current = progress;
+      drawContourCanvas();
+      if (progress < 1.0) {
+        playheadAnimRef.current = requestAnimationFrame(tick);
+      } else {
+        setTimeout(() => {
+          playheadPosRef.current = null;
+          drawContourCanvas();
+        }, 120);
+      }
+    };
+    playheadAnimRef.current = requestAnimationFrame(tick);
+  };
+
   // Handle Play Sample Audio
   const handlePlaySample = () => {
-    speakChinese(currentWord.hanzi);
+    const ok = speakChinese(currentWord.hanzi, {
+      onStart: () => startPlayheadAnimation(1000),
+      onEnd: () => {
+        playheadPosRef.current = null;
+        drawContourCanvas();
+      }
+    });
+    if (!ok) {
+      startPlayheadAnimation(1000);
+    }
   };
 
   // Handle Activate / Download Deep AI Model
@@ -429,6 +668,7 @@ function SpeakingPracticeApp() {
 
       const capturedFrames = trackerRef.current ? trackerRef.current.getCapturedContour() : [];
       const score = scorePitchContour(capturedFrames, targetContour, syllableInfos);
+      scoreResultRef.current = score;
 
       const latestTranscript = (speechAiRef.current && speechAiRef.current.currentTranscript) || aiTranscript;
       let textMatch = null;
@@ -462,15 +702,29 @@ function SpeakingPracticeApp() {
 
       setScoreResult({ ...score, combined, textMatch, deepCapt });
 
-      if (score.valid && score.userChaoPitches) {
+      if (trackerRef.current) {
+        trackerRef.current.getRecordedWaveform(120).then((waveform) => {
+          setUserRecordedWaveform(waveform);
+          userWaveformRef.current = waveform;
+          if (score.valid && score.userChaoPitches) {
+            drawContourCanvas(score.userChaoPitches);
+          } else {
+            drawContourCanvas();
+          }
+        });
+      } else if (score.valid && score.userChaoPitches) {
         drawContourCanvas(score.userChaoPitches);
       }
     } else {
       // START recording
       setScoreResult(null);
+      scoreResultRef.current = null;
       setCaptResult(null);
       setAiTranscript('');
       livePointsRef.current = [];
+      liveWaveformRef.current = null;
+      userWaveformRef.current = null;
+      setUserRecordedWaveform(null);
       drawContourCanvas();
 
       trackerRef.current = new LivePitchTracker({
@@ -479,11 +733,14 @@ function SpeakingPracticeApp() {
             setLiveHz(Math.round(frame.frequency));
             const chao = frequencyToChaoScale(frame.frequency, 180); // baseline
             livePointsRef.current.push(chao);
-            drawContourCanvas();
           }
         },
         onVolume: (rms) => {
           setLiveVolume(Math.min(1.0, rms * 8));
+        },
+        onWaveform: (timeDomainData, rms) => {
+          liveWaveformRef.current = timeDomainData.slice();
+          drawContourCanvas();
         },
         onStatus: (status, data) => {
           if (status === 'recorded' && data.audioUrl) {
@@ -512,8 +769,16 @@ function SpeakingPracticeApp() {
     if (!userRecordedAudio) return;
     setIsPlayingUserAudio(true);
     userRecordedAudio.currentTime = 0;
+    const dur = userRecordedAudio.duration && !isNaN(userRecordedAudio.duration) && userRecordedAudio.duration > 0
+      ? userRecordedAudio.duration * 1000
+      : 1200;
+    startPlayheadAnimation(dur);
     userRecordedAudio.play().catch(() => {});
-    userRecordedAudio.onended = () => setIsPlayingUserAudio(false);
+    userRecordedAudio.onended = () => {
+      setIsPlayingUserAudio(false);
+      playheadPosRef.current = null;
+      drawContourCanvas();
+    };
   };
 
   // Navigate words in vocab mode
@@ -659,25 +924,77 @@ function SpeakingPracticeApp() {
             )}
           </div>
 
-          {/* Interactive Pitch Canvas */}
+          {/* Interactive Pitch & Audio Waveform Station */}
           <div class="speaking-canvas-container">
-            <div class="canvas-legend">
-              <span class="legend-item target">
-                <span class="legend-color-dot target-dot"></span> Đường mẫu chuẩn (Thang Chao)
-              </span>
-              <span class="legend-item user">
-                <span class="legend-color-dot user-dot"></span> Giọng nói của bạn (F0 Real-time)
-              </span>
-              {isRecording && liveHz > 0 && (
-                <span class="legend-live-freq">Đo được: <strong>{liveHz} Hz</strong></span>
-              )}
+            {/* Visualizer Mode Switcher & Legend Bar */}
+            <div class="canvas-toolbar">
+              <div class="canvas-mode-toggle" role="tablist">
+                <button
+                  type="button"
+                  class={`canvas-mode-btn ${visualizerMode === 'combined' ? 'active' : ''}`}
+                  onClick={() => setVisualizerMode('combined')}
+                  title="Hiển thị kết hợp Cao độ F0 và Lớp nền Sóng âm"
+                >
+                  📊 Kết Hợp (Cao Độ + Sóng Âm)
+                </button>
+                <button
+                  type="button"
+                  class={`canvas-mode-btn ${visualizerMode === 'dualWaveform' ? 'active' : ''}`}
+                  onClick={() => setVisualizerMode('dualWaveform')}
+                  title="So sánh trực quan 2 tầng dạng sóng Studio vs Bạn"
+                >
+                  🌊 Dạng Sóng A/B (Mẫu vs Bạn)
+                </button>
+              </div>
+
+              <div class="canvas-legend">
+                <span class="legend-item target">
+                  <span class="legend-color-dot target-dot"></span> Mẫu Studio (Chao & Wave)
+                </span>
+                <span class="legend-item user">
+                  <span class="legend-color-dot user-dot"></span> Giọng của bạn (F0 & Wave)
+                </span>
+                {isRecording ? (
+                  <span class="legend-live-pulse">
+                    <span class="pulse-ring"></span>
+                    <span>Sóng âm Real-time: <strong>{liveHz > 0 ? `${liveHz} Hz` : 'Đang thu...'}</strong></span>
+                  </span>
+                ) : (
+                  liveHz > 0 && <span class="legend-live-freq">F0: <strong>{liveHz} Hz</strong></span>
+                )}
+              </div>
             </div>
 
             <canvas
               ref={canvasRef}
-              class="speaking-pitch-canvas"
-              aria-label="Biểu đồ đường cao độ thanh điệu"
+              class={`speaking-pitch-canvas ${isRecording ? 'is-recording-wave' : ''}`}
+              aria-label="Biểu đồ sóng âm và đường cao độ thanh điệu"
             />
+
+            {/* Quick Diagnostic Waveform Banner beneath canvas */}
+            {scoreResult && scoreResult.toneBreakdown && scoreResult.toneBreakdown.length > 0 && (
+              <div class="waveform-diagnostic-banner">
+                {scoreResult.toneBreakdown.some((item) => item.errorTag) ? (
+                  <div class="waveform-diagnostic-alert">
+                    <span class="diag-icon">⚠️</span>
+                    <span class="diag-text">
+                      <strong>Cảnh báo ngữ âm: </strong>
+                      {scoreResult.toneBreakdown
+                        .filter((item) => item.errorTag)
+                        .map((item) => `Từ "${item.char}": ${item.errorTag}`)
+                        .join(' · ')}
+                    </span>
+                  </div>
+                ) : (
+                  <div class="waveform-diagnostic-pass">
+                    <span class="diag-icon">✓</span>
+                    <span class="diag-text">
+                      <strong>Rất tốt!</strong> Cao độ thanh điệu và hình dạng phát âm khớp tốt với audio mẫu studio.
+                    </span>
+                  </div>
+                )}
+              </div>
+            )}
           </div>
 
           {/* Controls: Sample audio, Record, A/B Shadowing playback */}
