@@ -127,11 +127,11 @@ export function evaluateToneScorePenalty(expectedTone, metrics) {
   switch (expectedTone) {
     case 1: // 55 High Level
       if (metrics.slope === 'falling') {
-        penalty += 40;
+        penalty = 38;
         status = 'needs_work';
-        advice = 'Thanh 1 (55): Bạn bị chúc giọng xuống giống dấu huyền tiếng Việt. Hãy giữ cao độ phẳng, ngân đều ở mức cao.';
+        advice = 'Thanh 1 (55): Bạn bị chúc giọng xuống giống dấu huyền. Hãy giữ cao độ phẳng, ngân đều ở mức cao.';
       } else if (Math.abs(metrics.delta) > 0.8) {
-        penalty += 20;
+        penalty = 15;
         status = 'fair';
         advice = 'Thanh 1 (55): Cần giữ cao độ ổn định và ngân đều hơn.';
       } else {
@@ -142,15 +142,15 @@ export function evaluateToneScorePenalty(expectedTone, metrics) {
 
     case 2: // 35 Rising
       if (metrics.slope === 'falling') {
-        penalty += 50;
+        penalty = 42;
         status = 'needs_work';
-        advice = 'Thanh 2 (35): Giọng bị rơi xuống thay vì vuốt lên. Hãy bắt đầu từ tầm trung (3) và vút lên mức cao (5).';
-      } else if (metrics.slope === 'flat' || metrics.delta < 0.6) {
-        penalty += 40;
-        status = 'needs_work';
+        advice = 'Thanh 2 (35): Giọng bị rơi xuống thay vì vuốt lên. Hãy vuốt dứt khoát từ tầm trung (3) lên mức cao (5).';
+      } else if (metrics.slope === 'flat' || metrics.delta < 0.45) {
+        penalty = 20;
+        status = 'fair';
         advice = 'Thanh 2 (35): Cao độ chưa vuốt lên đủ cao. Hãy dứt khoát đưa giọng từ trung lên cao.';
       } else if (metrics.avgEnd < 3.8) {
-        penalty += 15;
+        penalty = 10;
         status = 'fair';
         advice = 'Thanh 2 (35): Hướng đi lên tốt, cố gắng vuốt cao hơn về cuối âm tiết.';
       } else {
@@ -161,15 +161,15 @@ export function evaluateToneScorePenalty(expectedTone, metrics) {
 
     case 3: // 214 or 21 (Half-third)
       if (metrics.slope === 'rising' && metrics.avgMid >= metrics.avgStart - 0.2) {
-        penalty += 45;
+        penalty = 28;
         status = 'needs_work';
         advice = 'Thanh 3 (214): Bạn đọc thành dấu sắc hoặc hỏi tiếng Việt quá sớm. Cần dìm giọng xuống đáy (1) trước.';
       } else if (metrics.minPitch > 3.0) {
-        penalty += 25;
-        status = 'needs_work';
+        penalty = 16;
+        status = 'fair';
         advice = 'Thanh 3 (214): Hãy hạ giọng xuống sâu hơn ở đáy âm vực (mức 1-2).';
       } else if (metrics.slope === 'falling') {
-        // Half-third is acceptable for falling into low register
+        // Half-third is standard and natural in running speech
         status = 'good';
         advice = 'Thanh 3: Hạ giọng trầm tốt, giữ nhịp tự nhiên.';
       } else {

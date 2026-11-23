@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "level": "hsk5",
+  "engine": "EdgeTTS",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "speed": 1.0,
+  "items": {
+    "4": {
+      "word": "database/prebuilt_audio/hsk5/words/0004.mp3?v=58834b6e1289"
+    }
+  }
+}

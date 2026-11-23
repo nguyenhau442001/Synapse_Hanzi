@@ -248,24 +248,30 @@ export class LocalSpeechAI {
     const hasTextMatch = Boolean(recognitionObj && typeof recognitionObj.matchScore === 'number');
 
     if (mode === 'toneTrainer') {
-      // In Visual Tone Trainer mode, score is focused on Chao tone contour accuracy,
-      // with smart fallback protection if F0 tracking had low energy but ASR confirmed exact word.
+      // In Visual Tone Trainer mode, score is anchored on Chao tone contour accuracy,
+      // with resilient fallback protection if ASR confirms the user enunciated the exact word.
       if (pitchValid) {
         finalScore = pitchScoreObj.score;
         if (hasTextMatch && recognitionObj.exactMatch) {
-          if (finalScore < 70) {
-            finalScore = Math.max(finalScore, Math.round(recognitionObj.matchScore * 0.85));
-          } else if (finalScore < 95) {
+          if (finalScore >= 80) {
             finalScore = Math.min(100, finalScore + 5);
+          } else if (finalScore >= 60) {
+            finalScore = Math.max(finalScore, 82);
+          } else {
+            // Low pitch score due to microphone clipping or flat line, but word was 100% correct
+            finalScore = Math.max(finalScore, 78);
           }
         }
       } else if (hasTextMatch) {
-        finalScore = Math.round(recognitionObj.matchScore * 0.9);
+        finalScore = recognitionObj.exactMatch
+          ? Math.max(80, Math.round(recognitionObj.matchScore * 0.9))
+          : Math.round(recognitionObj.matchScore * 0.85);
       }
     } else {
-      // In Vocab Practice and Minimal Pairs modes:
+      // In Vocab Practice and Minimal Pairs modes: balanced multi-pillar scoring
       if (pitchValid && hasTextMatch) {
-        finalScore = Math.round(pitchScoreObj.score * 0.60 + recognitionObj.matchScore * 0.40);
+        const weighted = Math.round(pitchScoreObj.score * 0.50 + recognitionObj.matchScore * 0.50);
+        finalScore = recognitionObj.exactMatch ? Math.max(80, weighted) : weighted;
       } else if (pitchValid) {
         finalScore = pitchScoreObj.score;
       } else if (hasTextMatch) {
@@ -281,14 +287,16 @@ export class LocalSpeechAI {
     else if (overallScore >= 60) stars = 2;
 
     let message = 'Chưa đạt. Hãy lắng nghe audio mẫu và thử lại nhé!';
-    if (overallScore >= 80) {
-      message = 'Rất tuyệt vời! Phát âm chuẩn âm điệu.';
-    } else if (overallScore >= 60) {
+    if (overallScore >= 85) {
+      message = 'Rất tuyệt vời! Phát âm chuẩn xác, âm điệu tự nhiên.';
+    } else if (overallScore >= 70) {
       if (!pitchValid && hasTextMatch) {
         message = 'AI nhận diện bạn đã đọc đúng từ vựng! Hãy nói to hoặc gần micro hơn để vẽ trọn vẹn đường cao độ F0.';
       } else {
-        message = 'Khá tốt! Chú ý một vài điểm thanh điệu bên dưới.';
+        message = 'Phát âm khá tốt và rõ từ! Chú ý một vài điểm thanh điệu chi tiết bên dưới.';
       }
+    } else if (overallScore >= 60) {
+      message = 'Đạt yêu cầu cơ bản. Hãy nghe audio mẫu và luyện thêm độ dốc thanh điệu nhé!';
     } else if (!pitchValid && hasTextMatch && recognitionObj.exactMatch) {
       message = 'AI nhận diện bạn đã đọc đúng từ vựng! Hãy nói to hoặc gần micro hơn để hệ thống đo cao độ F0.';
     }

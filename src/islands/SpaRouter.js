@@ -11,6 +11,9 @@ export const SpaRouter = (function() {
     if (params.has('level')) {
       return { view: 'cards', level: params.get('level'), mode: params.get('mode') === 'browse' ? 'browse' : 'review' };
     }
+    if (params.get('subtab') === 'topic' || params.get('tab') === 'topic') {
+      return { view: 'vocab', subTab: 'topic' };
+    }
     if (params.has('tab')) {
       const tab = params.get('tab');
       const story = params.get('story');
@@ -38,6 +41,9 @@ export const SpaRouter = (function() {
     } catch (e) {}
 
     if (!state || state.view === 'vocab') {
+      if (state && state.subTab === 'topic') {
+        return themeParam ? `${base}?subtab=topic${themeParam}` : `${base}?subtab=topic`;
+      }
       return themeParam ? `${base}?${themeParam.slice(1)}` : base;
     }
     if (state.view === 'cards' && state.level) {
@@ -87,6 +93,7 @@ export const SpaRouter = (function() {
       currentState.view === state.view &&
       currentState.level === state.level &&
       currentState.tab === state.tab &&
+      currentState.subTab === state.subTab &&
       (currentState.lesson || null) === (state.lesson || null) &&
       Boolean(currentState.drawerOpen) === Boolean(state.drawerOpen)
     ) {
@@ -125,7 +132,7 @@ export const SpaRouter = (function() {
     if (qDrawer && qDrawer.getAttribute('aria-hidden') === 'false') return false;
 
     const isVocab = (!s || s.view === 'vocab' || (!s.view && !s.tab));
-    const isVocabSub = !s || !s.subTab || s.subTab === 'level' || s.subTab === 'topic';
+    const isVocabSub = !s || !s.subTab || s.subTab === 'level';
     return Boolean(isVocab && isVocabSub);
   }
 
@@ -151,6 +158,13 @@ export const SpaRouter = (function() {
     if (currentState.drawerOpen) {
       if (typeof closeAllStudyDrawers === 'function') closeAllStudyDrawers();
       replaceView({ ...currentState, drawerOpen: false });
+      updateGlobalBackButton();
+      return;
+    }
+    if (currentState.view === 'vocab' && currentState.subTab === 'topic') {
+      if (typeof setVocabSubTab === 'function') setVocabSubTab('level');
+      else if (typeof window !== 'undefined' && typeof window.setVocabSubTab === 'function') window.setVocabSubTab('level');
+      replaceView({ view: 'vocab', subTab: 'level' });
       updateGlobalBackButton();
       return;
     }
@@ -290,6 +304,9 @@ export const SpaRouter = (function() {
       } else if (typeof setPrimaryTab === 'function' && typeof primaryTab !== 'undefined' && primaryTab !== 'vocab') {
         setPrimaryTab('vocab');
       }
+      const targetSubTab = state.subTab === 'topic' ? 'topic' : 'level';
+      if (typeof setVocabSubTab === 'function') setVocabSubTab(targetSubTab);
+      else if (typeof window !== 'undefined' && typeof window.setVocabSubTab === 'function') window.setVocabSubTab(targetSubTab);
     } else if (state.view === 'cards') {
       document.body.classList.remove('study-mode');
       if (state.level) {
@@ -404,6 +421,9 @@ export const SpaRouter = (function() {
             }
           }
         }
+      } else if (initialState.view === 'vocab' && initialState.subTab === 'topic') {
+        if (typeof setVocabSubTab === 'function') setVocabSubTab('topic');
+        else if (typeof window !== 'undefined' && typeof window.setVocabSubTab === 'function') window.setVocabSubTab('topic');
       } else if (initialState.view === 'todayReviews') {
         if (typeof openTodayReviews === 'function') openTodayReviews();
       }

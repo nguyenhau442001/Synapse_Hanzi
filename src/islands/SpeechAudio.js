@@ -328,7 +328,11 @@ export function playPrebuiltAudio(text, button, rate, audioUrl, requestId, hint,
   const audio = new Audio(audioUrl);
   activeSpeechAudio = audio;
   audio.preload = 'auto';
-  audio.playbackRate = Math.min(2, Math.max(0.25, rate));
+  const clean = String(text || '').replace(/<[^>]*>/g, '').trim();
+  const isWordLike = clean.length <= 4 && !/[，。？！、；;!?,.\s]/.test(clean);
+  // Monosyllabic and short vocabulary words play at native 1.0x to preserve full fidelity
+  const targetRate = isWordLike && (rate === 0.8 || rate === 0.85) ? 1.0 : (rate || 1.0);
+  audio.playbackRate = Math.min(2, Math.max(0.25, targetRate));
   if ('preservesPitch' in audio) audio.preservesPitch = true;
 
   let settled = false;

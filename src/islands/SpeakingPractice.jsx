@@ -244,7 +244,7 @@ function SpeakingPracticeApp() {
       const textMatch = LocalSpeechAI.evaluateTextMatch(aiTranscript, currentWord.hanzi, currentWord.pinyin);
       const combined = LocalSpeechAI.combineScores(prev, textMatch, activeTab);
       if (prev.deepCapt && prev.deepCapt.success) {
-        combined.overallScore = Math.round(combined.overallScore * 0.4 + prev.deepCapt.overallScore * 0.6);
+        combined.overallScore = Math.max(combined.overallScore, Math.round(combined.overallScore * 0.6 + prev.deepCapt.overallScore * 0.4));
         combined.stars = combined.overallScore >= 80 ? 3 : combined.overallScore >= 60 ? 2 : 1;
         combined.message = combined.overallScore >= 80
           ? 'Xuất sắc! Phát âm thanh mẫu, vận mẫu & thanh điệu đều rất chuẩn.'
@@ -716,7 +716,7 @@ function SpeakingPracticeApp() {
 
       const combined = LocalSpeechAI.combineScores(score, textMatch, activeTab);
       if (deepCapt && deepCapt.success) {
-        combined.overallScore = Math.round(combined.overallScore * 0.4 + deepCapt.overallScore * 0.6);
+        combined.overallScore = Math.max(combined.overallScore, Math.round(combined.overallScore * 0.6 + deepCapt.overallScore * 0.4));
         combined.stars = combined.overallScore >= 80 ? 3 : combined.overallScore >= 60 ? 2 : 1;
         combined.message = combined.overallScore >= 80
           ? 'Xuất sắc! Phát âm thanh mẫu, vận mẫu & thanh điệu đều rất chuẩn.'

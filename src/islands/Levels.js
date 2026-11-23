@@ -801,7 +801,7 @@ export function goBackToPicker() {
   renderLearningDashboard();
 
   if (typeof SpaRouter !== 'undefined' && !SpaRouter.isNavigatingFromPopstate()) {
-    SpaRouter.pushView({ view: 'vocab' });
+    SpaRouter.pushView(wasTopic ? { view: 'vocab', subTab: 'topic' } : { view: 'vocab' });
   }
 }
 

@@ -164,6 +164,13 @@ export function initAppEventBindings() {
   };
   onId('tabLevelPicker', 'click', () => handleVocabSubTab('level'));
   onId('tabTopicPicker', 'click', () => handleVocabSubTab('topic'));
+  onId('topicBackBtn', 'click', () => {
+    if (window.SpaRouter && typeof window.SpaRouter.navigateBack === 'function' && !window.SpaRouter.isRootView()) {
+      window.SpaRouter.navigateBack();
+    } else {
+      handleVocabSubTab('level');
+    }
+  });
   on('.featured-topic-more, .featured-topic-pill', 'click', () => handleVocabSubTab('topic'));
   onId('dashboardQuickQuizBtn', 'click', () => {
     handlePrimaryTab('speedQuiz', { roundLimit: 5 });

@@ -117,6 +117,9 @@ export function setVocabSubTab(tab) {
   const versionControls = document.getElementById('pickerVersionControls');
   if (versionControls) versionControls.hidden = tab !== 'level';
   if (tab === 'topic' && typeof renderTopicGrid === 'function') renderTopicGrid();
+  if (typeof SpaRouter !== 'undefined' && !SpaRouter.isNavigatingFromPopstate()) {
+    SpaRouter.pushView({ view: 'vocab', subTab: tab });
+  }
 }
 
 export function setPrimaryTab(tab, options) {

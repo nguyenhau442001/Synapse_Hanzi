@@ -154,38 +154,53 @@ export function scoreCaptPrediction(modelOutputs, targetPinyin) {
   const toneLogits = modelOutputs.tone_logits ? Array.from(modelOutputs.tone_logits.data) : [];
   const rawScore = modelOutputs.quality_score ? modelOutputs.quality_score.data[0] : 75;
 
-  // 1. Initial Assessment
+  // 1. Initial Assessment (Goodness of Pronunciation ratio relative to best candidate)
   const initialProbs = softmax(initialLogits);
   const targetInitIdx = Math.max(0, INITIALS_LIST.indexOf(targetInitial));
-  const targetInitProb = initialProbs[targetInitIdx] || 0.1;
+  const targetInitProb = initialProbs[targetInitIdx] || 0.05;
+  let maxInitProb = 0.001;
   let bestInitIdx = 0;
-  for (let i = 1; i < initialProbs.length; i++) {
-    if (initialProbs[i] > initialProbs[bestInitIdx]) bestInitIdx = i;
+  for (let i = 0; i < initialProbs.length; i++) {
+    if (initialProbs[i] > maxInitProb) {
+      maxInitProb = initialProbs[i];
+      bestInitIdx = i;
+    }
   }
   const detectedInitial = INITIALS_LIST[bestInitIdx] || 'none';
-  const initialScore = Math.max(0, Math.min(100, Math.round(targetInitProb * 100)));
+  const initGopRatio = Math.min(1.0, targetInitProb / Math.max(0.01, maxInitProb));
+  const initialScore = Math.max(40, Math.min(100, Math.round(55 + initGopRatio * 45)));
 
-  // 2. Final Assessment
+  // 2. Final Assessment (GOP ratio relative to best candidate)
   const finalProbs = softmax(finalLogits);
   const targetFinalIdx = Math.max(0, FINALS_LIST.indexOf(targetFinal));
-  const targetFinalProb = finalProbs[targetFinalIdx] || 0.1;
+  const targetFinalProb = finalProbs[targetFinalIdx] || 0.05;
+  let maxFinalProb = 0.001;
   let bestFinalIdx = 0;
-  for (let i = 1; i < finalProbs.length; i++) {
-    if (finalProbs[i] > finalProbs[bestFinalIdx]) bestFinalIdx = i;
+  for (let i = 0; i < finalProbs.length; i++) {
+    if (finalProbs[i] > maxFinalProb) {
+      maxFinalProb = finalProbs[i];
+      bestFinalIdx = i;
+    }
   }
   const detectedFinal = FINALS_LIST[bestFinalIdx] || 'a';
-  const finalScore = Math.max(0, Math.min(100, Math.round(targetFinalProb * 100)));
+  const finalGopRatio = Math.min(1.0, targetFinalProb / Math.max(0.01, maxFinalProb));
+  const finalScore = Math.max(40, Math.min(100, Math.round(55 + finalGopRatio * 45)));
 
-  // 3. Tone Assessment
+  // 3. Tone Assessment (GOP ratio relative to best candidate)
   const toneProbs = softmax(toneLogits);
   const targetToneIdx = Math.max(0, Math.min(4, targetTone - 1));
-  const targetToneProb = toneProbs[targetToneIdx] || 0.1;
+  const targetToneProb = toneProbs[targetToneIdx] || 0.05;
+  let maxToneProb = 0.001;
   let bestToneIdx = 0;
-  for (let i = 1; i < toneProbs.length; i++) {
-    if (toneProbs[i] > toneProbs[bestToneIdx]) bestToneIdx = i;
+  for (let i = 0; i < toneProbs.length; i++) {
+    if (toneProbs[i] > maxToneProb) {
+      maxToneProb = toneProbs[i];
+      bestToneIdx = i;
+    }
   }
   const detectedTone = bestToneIdx + 1;
-  const toneScore = Math.max(0, Math.min(100, Math.round(targetToneProb * 100)));
+  const toneGopRatio = Math.min(1.0, targetToneProb / Math.max(0.01, maxToneProb));
+  const toneScore = Math.max(40, Math.min(100, Math.round(55 + toneGopRatio * 45)));
 
   // Compose pedagogical diagnosis for Vietnamese learner
   const adviceList = [];
