@@ -29,8 +29,8 @@ DEFAULT_VOICE = "zh-CN-XiaoxiaoNeural"
 DEFAULT_BITRATE = "64k"
 
 SILENCE_FILTER = (
-    "silenceremove=start_periods=1:start_duration=0.02:start_threshold=-50dB:start_silence=0.08:"
-    "stop_periods=-1:stop_duration=0.10:stop_threshold=-50dB:stop_silence=0.10,"
+    "silenceremove=start_periods=1:start_duration=0.02:start_threshold=-50dB:start_silence=0.08,"
+    "areverse,silenceremove=start_periods=1:start_duration=0.05:start_threshold=-50dB:start_silence=0.08,areverse,"
     "loudnorm=I=-18:TP=-2:LRA=7"
 )
 
