@@ -16,7 +16,7 @@ const PRECACHE_MANIFEST = [
   },
   {
     "url": "assets/js/preact/islands.js",
-    "revision": "22332356713d7404567e0cab1fe184e1"
+    "revision": "6fd03ac7f75958c63515143bd5738177"
   },
   {
     "url": "assets/js/hanviet-dict.js",

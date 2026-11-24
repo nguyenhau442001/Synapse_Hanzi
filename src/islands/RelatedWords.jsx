@@ -4,6 +4,7 @@
 // chips, back button and "Ôn thêm nhóm" toast render the same markup.
 import { render } from 'preact';
 import { onDomReady } from './domReady';
+import { APP_TIMEOUTS } from './AppTimeouts';
 
 /* global currentLevel, progress, activeStudyWord -- classic-script globals */
 
@@ -470,7 +471,7 @@ export function showRelatedClusterHint(word) {
   );
   toastEl.classList.add('show');
   clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => toastEl.classList.remove('show'), 3800);
+  toastTimer = setTimeout(() => toastEl.classList.remove('show'), APP_TIMEOUTS.TOAST_DURATION_MS);
 }
 
 export function mountRelatedWords() {

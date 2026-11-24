@@ -4,6 +4,7 @@
 // editor's time readout are still written directly to their elements, as before.
 // window.ListeningPractice keeps the same API for the tab router and SpaRouter.
 import { render as preactRender } from 'preact';
+import { APP_TIMEOUTS } from './AppTimeouts';
 
 /* global HSK4_MOCK_EXAMS -- utils.js */
 
@@ -1277,7 +1278,7 @@ function showEditorFeedback(msg, isError = false) {
     color: isError ? 'var(--danger-text)' : 'var(--success-text)'
   });
   errBox.textContent = msg;
-  setTimeout(() => { errBox.style.display = 'none'; }, 4000);
+  setTimeout(() => { errBox.style.display = 'none'; }, APP_TIMEOUTS.ERROR_BOX_DISMISS_MS);
 }
 
 // ---------------------------------------------------------------------------
@@ -1423,7 +1424,7 @@ function renderAudioError(msg, showRetry = false) {
     errDiv.appendChild(retryBtn);
   }
   box.appendChild(errDiv);
-  setTimeout(() => { if (errDiv.parentNode) errDiv.remove(); }, 7000);
+  setTimeout(() => { if (errDiv.parentNode) errDiv.remove(); }, APP_TIMEOUTS.NOTICE_PERSIST_LONG_MS);
 }
 
 function formatLearnerTime(ms) {

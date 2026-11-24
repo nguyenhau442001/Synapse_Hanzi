@@ -1,6 +1,7 @@
 // Flashcard markup, filtering, statistics, and rendering.
 import { colorizePinyin, colorizePinyinHtml } from './pinyinTones.js';
 import { formatStudyLevelLabel } from './AppUtils.js';
+import { APP_TIMEOUTS } from './AppTimeouts.js';
 
 // Tone colors for pinyin (on by default). The syllable spans are always rendered;
 // html.tone-colors-off turns the colors off so tone marks alone remain.
@@ -1686,7 +1687,7 @@ function render(animate) {
     renderDirectionPrompt(w);
     if (readStudyDirection() === 'listen' && typeof speakWord === 'function') {
       // Audio-first front: play the word as soon as the card appears (A replays it).
-      setTimeout(() => { if (!isCardRevealed()) speakWord(); }, 220);
+      setTimeout(() => { if (!isCardRevealed()) speakWord(); }, APP_TIMEOUTS.AUTO_SPEAK_DELAY_MS);
     }
     document.getElementById('hint').textContent = getCardHintText(false);
     updateCardMoreMenuState();

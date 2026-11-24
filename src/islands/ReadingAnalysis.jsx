@@ -4,6 +4,7 @@
 // in module variables as before, and renderReadingAnalysisScreen() now re-renders the island.
 import { render } from 'preact';
 import { signal } from '@preact/signals';
+import { APP_TIMEOUTS } from './AppTimeouts';
 
 /* global SpaRouter -- spa-router.js */
 
@@ -317,7 +318,7 @@ function markWrong(message, revealLabel = 'Xem đáp án & giải thích', shake
       const slotsArea = document.getElementById('practiceSlotsArea');
       if (!slotsArea) return;
       slotsArea.classList.add('is-wrong');
-      setTimeout(() => slotsArea.classList.remove('is-wrong'), 450);
+      setTimeout(() => slotsArea.classList.remove('is-wrong'), APP_TIMEOUTS.SHAKE_ERROR_MS);
     });
   }
 }

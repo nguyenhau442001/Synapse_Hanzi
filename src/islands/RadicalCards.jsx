@@ -4,6 +4,7 @@
 // functions below keep their names on window. Rendering is synchronous like the legacy DOM writes,
 // since callers (swipe setup, scrollIntoView) use the elements right away.
 import { render } from 'preact';
+import { APP_TIMEOUTS } from './AppTimeouts';
 
 /* global RADICAL_STROKE_COUNTS, RADICAL_GROUPS, radicalOrder, radicalFilteredOrder, radicalIdx, radicalWords,
    radicalReturnTab, radicalGroupIndex, radicalProgress, showRadicalPinyin, radicalCurrentFilter, radicalCurrentView,
@@ -143,7 +144,7 @@ export function renderRadicalCard(animate) {
   }
   contentAnim = animate === 'next' ? 'exit-left' : animate === 'prev' ? 'exit-right' : 'exit-fade';
   rerender();
-  animTimer = setTimeout(applyContent, 150);
+  animTimer = setTimeout(applyContent, APP_TIMEOUTS.CARD_TRANSITION_MS);
 }
 
 export function radicalFlip() {
