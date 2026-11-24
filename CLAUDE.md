@@ -18,6 +18,11 @@ Read and follow all project rules in AGENTS.md:
 - Audio files must be 24kHz Mono, 64kbps MP3 normalized with ffmpeg EBU R128 (`loudnorm=I=-18:TP=-2:LRA=7`).
 - Keep level manifests and `database/prebuilt_audio/hanzi_audio_map.json` synchronized.
 
+## Anti-Reinvention & Modern Tooling
+
+- Do not hand-roll custom infrastructure (e.g. routers, complex manual state stores, raw SVGs) when established libraries exist.
+- Use standard icon sets (e.g., `lucide-preact`) and modern modular UI rather than growing monolithic CSS.
+
 ## Final summary
 
 - After finishing a task, summarize the result in **at most 3 lines** (overrides the longer summary format in AGENTS.md).

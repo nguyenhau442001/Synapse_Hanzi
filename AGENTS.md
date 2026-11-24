@@ -77,6 +77,12 @@ Before running any of these commands, stop and ask me first:
 - **English Only for Code & Comments**: All code, function/variable names, docstrings, inline comments, CLI help, and console logs MUST be written 100% in English. No Vietnamese or bilingual mixing in code files.
 - **Human-In-The-Loop (HITL) Approval**: Always present the diff/code plan first, trigger interactive clickable approval options (pop-up buttons) and wait for user selection before modifying files on disk.
 
+## Modern Tooling & Anti-Reinvention Rules
+
+- **Avoid Reinventing the Wheel**: Do not hand-roll custom infrastructure from scratch (such as custom DOM routers, complex monolithic manual state engines, or raw inline SVGs) when standard, well-tested libraries exist.
+- **Standardized UI & Icons**: Use standard icon sets (e.g., `lucide-preact`) instead of hand-coding raw SVG paths. For new UI components, favor modular, reusable components over bloating monolithic `assets/flashcards.css`.
+- **Leverage Ecosystem Solutions**: Prefer battle-tested ecosystem solutions (e.g., standard IndexedDB wrappers like Dexie, lightweight state management like Preact Signals/Zustand, Vite PWA tools) instead of writing ad-hoc custom scripts, unless specifically required for domain-specific Mandarin speech/tone processing.
+
 ## Prebuilt Audio Standard
 
 - Always generate prebuilt Mandarin audio using **Microsoft Edge Neural TTS** (`zh-CN-XiaoxiaoNeural`).
