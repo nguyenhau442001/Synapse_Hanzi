@@ -96,8 +96,14 @@ export function renderQuickSavedWords() {
 
 export function updateQuickUrgentWords(items) {
   urgentItems.value = items || [];
+  const count = urgentItems.value.length;
   const headerBadge = document.getElementById('headerUrgentCount');
-  if (headerBadge) headerBadge.textContent = urgentItems.value.length;
+  if (headerBadge) headerBadge.textContent = count;
+  const readerBadge = document.getElementById('readerUrgentCount');
+  if (readerBadge) {
+    readerBadge.textContent = count;
+    readerBadge.style.display = count > 0 ? '' : 'none';
+  }
 }
 
 function openWord(level, idOrHanzi, hanzi) {

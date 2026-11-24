@@ -1349,6 +1349,29 @@ body.graded-reading-active #screenGradedReading {
   color: var(--on-accent, #fff);
 }
 
+.graded-urgent-btn {
+  position: relative;
+  color: var(--status-warning, #d97706);
+}
+
+.graded-urgent-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: var(--brand-primary, #A8322D);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 4px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
 .graded-aa-btn {
   font-family: var(--font-classical);
   font-size: 1rem;
@@ -2068,6 +2091,28 @@ body.graded-translation-hidden .graded-sentence-vi {
   background: var(--graded-hsk-badge-bg);
   border-color: var(--graded-hsk-badge-border);
   color: var(--graded-hsk-badge-text);
+}
+
+.popover-btn-group {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.popover-btn-group .popover-action-btn {
+  flex: 1;
+  padding: 8px 10px;
+  font-size: 0.8rem;
+}
+
+.popover-action-btn.popover-review-now-btn {
+  background: var(--status-warning, #d97706);
+  border-color: var(--status-warning, #d97706);
+  color: #fff;
+}
+
+.popover-action-btn.popover-review-now-btn:hover {
+  filter: brightness(1.15);
 }
 
 /* ==========================================================================

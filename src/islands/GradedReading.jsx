@@ -354,6 +354,9 @@ function addTokenToSrs(token) {
       card.last_rating = 'again';
       record.cards[String(rawId)] = card;
       window.saveSrsRecord(level, record.cards, false);
+      if (typeof window.refreshHomeWidgets === 'function') {
+        try { window.refreshHomeWidgets(); } catch (e) {}
+      }
 
       // Keep the in-memory cards of the level being studied in sync
       if (typeof currentLevel !== 'undefined' && String(currentLevel) === String(level) && typeof srsCards !== 'undefined' && srsCards) {
@@ -734,9 +737,28 @@ function TokenPopover({ token, added }) {
           </div>
         ) : null}
       </div>{' '}
-      <button type="button" class={btnDone ? 'popover-action-btn added' : 'popover-action-btn '} id="popoverAddSrsBtn" onClick={triggerAddSrs} disabled={btnDone}>
-        {added ? '✓ Đã thêm vào lịch ôn' : (isAlreadyInSrs ? '✓ Đã có trong lịch ôn' : '+ Thêm vào lịch ôn')}
-      </button>
+      {btnDone ? (
+        <div class="popover-btn-group">
+          <button type="button" class="popover-action-btn added" id="popoverAddSrsBtn" disabled>
+            {added ? '✓ Đã thêm vào lịch ôn' : '✓ Đã có trong lịch ôn'}
+          </button>
+          <button
+            type="button"
+            class="popover-action-btn popover-review-now-btn"
+            id="popoverReviewNowBtn"
+            onClick={() => {
+              closePopover();
+              if (typeof window.openQuickAccessDrawer === 'function') window.openQuickAccessDrawer('urgent');
+            }}
+          >
+            ⚡ Ôn ngay
+          </button>
+        </div>
+      ) : (
+        <button type="button" class="popover-action-btn" id="popoverAddSrsBtn" onClick={triggerAddSrs}>
+          + Thêm vào lịch ôn
+        </button>
+      )}
     </>
   );
 }
@@ -1528,6 +1550,19 @@ function ReaderNav({ story }) {
           <button type="button" id="toggleTransBtn" class={`graded-toggle-btn ${p.showTranslation ? 'active' : ''}`}
             onClick={toggleTranslation} title="Bật/Tắt bản dịch tiếng Việt" aria-pressed={p.showTranslation ? 'true' : 'false'}>
             Dịch
+          </button>
+          <button
+            type="button"
+            id="readerUrgentReviewBtn"
+            class="graded-icon-btn graded-urgent-btn"
+            onClick={() => { if (typeof window.openQuickAccessDrawer === 'function') window.openQuickAccessDrawer('urgent'); }}
+            title="Từ cần ôn gấp (Mở sổ ôn)"
+            aria-label="Từ cần ôn gấp"
+          >
+            <svg class="ds-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            <span id="readerUrgentCount" class="graded-urgent-badge" style={parseInt((typeof document !== 'undefined' && document.getElementById('headerUrgentCount')?.textContent) || '0', 10) > 0 ? '' : 'display:none;'}>
+              {parseInt((typeof document !== 'undefined' && document.getElementById('headerUrgentCount')?.textContent) || '0', 10)}
+            </span>
           </button>
         </div>
         <button type="button" id="gradedReaderAaBtn" class={`graded-icon-btn graded-aa-btn ${panelOpen ? 'active' : ''}`}
