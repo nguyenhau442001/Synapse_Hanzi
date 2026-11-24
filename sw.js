@@ -16,7 +16,7 @@ const PRECACHE_MANIFEST = [
   },
   {
     "url": "assets/js/preact/islands.js",
-    "revision": "c3e5033398708eac2103dc37f63df6f9"
+    "revision": "d7e8ab6f47dda69ae8c54ce84883dc55"
   },
   {
     "url": "assets/js/hanviet-dict.js",
@@ -109,9 +109,8 @@ self.addEventListener('fetch', event => {
   if (url.origin !== self.location.origin) return;
 
   // Version probe and reading manifest: always hit the network, never use stale cache.
-  if (url.pathname.endsWith('/VERSION') || url.pathname.endsWith('/manifest.json')) {
-    return;
-  }
+  if (url.pathname.endsWith('/VERSION')) return;
+  if (url.pathname.endsWith('/manifest.json')) return;
 
   // Bypass Service Worker for Range requests, media streaming (audio/video), and neural models.
   // Cache Storage API cannot cache 206 Partial Content, and returning 200 causes MEDIA_ELEMENT_ERROR.

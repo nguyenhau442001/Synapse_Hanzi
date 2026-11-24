@@ -27,6 +27,12 @@ import { speakChinese, stopSpeaking, loadGlobalHanziAudioMap, resolvePrebuiltAud
 import { ensureCaptModelReady, evaluatePronunciationWithOnnx } from './OnnxCaptEngine.js';
 import { isCaptModelCached } from './SpeechModelManager.js';
 import { NewbieToneGuide } from './NewbieToneGuide.jsx';
+import {
+  MicIcon,
+  InfoIcon,
+  AudioIcon,
+  PlayCircleIcon,
+} from './Icons.jsx';
 
 // Minimal tone pair curated drills for Vietnamese learners
 const MINIMAL_TONE_PAIRS = [
@@ -864,7 +870,7 @@ function SpeakingPracticeApp() {
       <header class="speaking-header">
         <div class="speaking-title-row">
           <div class="speaking-badge-chip">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
+            <MicIcon size={18} />
             <span>Phòng Luyện Nói & Chấm Điểm Thanh Điệu AI</span>
           </div>
           <span class="speaking-subtitle">Phân tích cao độ F0 (YIN) & Biến điệu Sandhi chuẩn hóa 100% Client-side</span>
@@ -943,7 +949,7 @@ function SpeakingPracticeApp() {
             {/* Tone Sandhi notification if applied */}
             {syllableInfos.some((s) => s.sandhiApplied) && (
               <div class="speaking-sandhi-pill">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12" y2="16.01"/></svg>
+                <InfoIcon size={15} />
                 <span>Có biến điệu (Sandhi): {syllableInfos.filter(s => s.sandhiApplied).map(s => `${s.char} (Thanh ${s.rawTone} → Thanh ${s.actualTone})`).join(', ')}</span>
               </div>
             )}
@@ -1025,15 +1031,17 @@ function SpeakingPracticeApp() {
           {/* Controls: Sample audio, Record, A/B Shadowing playback */}
           <div class="speaking-action-cluster">
             <button
+              type="button"
               class="speaking-btn sample-btn"
               onClick={handlePlaySample}
               title="Nghe phát âm chuẩn studio"
             >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+              <AudioIcon size={20} />
               <span>Nghe Audio Mẫu</span>
             </button>
 
             <button
+              type="button"
               class={`speaking-btn record-btn ${isRecording ? 'recording' : ''}`}
               onClick={handleToggleRecord}
               title={isRecording ? 'Bấm để dừng và chấm điểm' : 'Bấm để bắt đầu ghi âm'}
@@ -1042,19 +1050,20 @@ function SpeakingPracticeApp() {
                 {isRecording ? (
                   <span class="rec-stop-square"></span>
                 ) : (
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
+                  <MicIcon size={20} />
                 )}
               </span>
               <span>{isRecording ? 'Đang Thu Âm (Bấm để Dừng)' : 'Bấm Nói (Ghi Âm & Chấm Điểm)'}</span>
             </button>
 
             <button
+              type="button"
               class="speaking-btn user-btn"
               onClick={handlePlayUserAudio}
               disabled={!recordedAudioUrl}
               title="Nghe lại giọng bạn vừa thu âm"
             >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+              <PlayCircleIcon size={20} />
               <span>{isPlayingUserAudio ? 'Đang Phát...' : 'Nghe Giọng Mình (A/B)'}</span>
             </button>
           </div>

@@ -92,9 +92,8 @@ self.addEventListener('fetch', event => {
   if (url.origin !== self.location.origin) return;
 
   // Version probe and reading manifest: always hit the network, never use stale cache.
-  if (url.pathname.endsWith('/VERSION') || url.pathname.endsWith('/manifest.json')) {
-    return;
-  }
+  if (url.pathname.endsWith('/VERSION')) return;
+  if (url.pathname.endsWith('/manifest.json')) return;
 
   // Bypass Service Worker for Range requests, media streaming (audio/video), and neural models.
   // Cache Storage API cannot cache 206 Partial Content, and returning 200 causes MEDIA_ELEMENT_ERROR.

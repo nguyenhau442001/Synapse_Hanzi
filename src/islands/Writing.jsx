@@ -12,6 +12,12 @@ import { CURRICULUM_LESSONS } from './curriculumIndex';
 import {
   brushPath, matchStroke, layoutWorksheet, charactersOfWords, sampleWidth, toDataPoint, CELL_SIZE, DATA_BASELINE,
 } from './writingInk';
+import {
+  CheckIcon,
+  CloseIcon,
+  ChevronLeftIcon,
+  AudioIcon,
+} from './Icons.jsx';
 
 /* global SpaRouter, setPrimaryTab, Curriculum, speakText, APP_VERSION */
 
@@ -500,7 +506,7 @@ function Cell({ data, kind, step, state, index, active, isPad }) {
       {kind === 'step' && <span class="wr-step-n" aria-hidden="true">{step}</span>}
       {state && state.done && (
         <span class="wr-done" aria-hidden="true">
-          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
+          <CheckIcon size={11} strokeWidth={3} />
         </span>
       )}
     </div>
@@ -575,8 +581,13 @@ function Pad({ ch, data, layout, states }) {
         <div class="wr-pad-head">
           <strong>{`Ô ${i + 1}`}</strong>
           <span>{states[i].done ? 'Đã xong' : `Nét ${Math.min(states[i].ink.length + 1, data.m.length)} / ${data.m.length}`}</span>
-          <button type="button" class="wr-icon-btn" aria-label="Đóng ô phóng to" onClick={() => setWs({ pad: null })}>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg>
+          <button
+            type="button"
+            class="wr-icon-btn"
+            aria-label="Đóng ô phóng to"
+            onClick={() => setWs({ pad: null })}
+          >
+            <CloseIcon size={18} />
           </button>
         </div>
         <Cell data={data} kind={cell.kind} step={cell.step} state={states[i]} index={i} active isPad />
@@ -618,8 +629,12 @@ function WritingScreen() {
     <div class="wr-wrap">
       <header class="wr-head">
         <div class="wr-head-row">
-          <button type="button" class="wr-back" onClick={backToLesson}>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg>
+          <button
+            type="button"
+            class="wr-back"
+            onClick={backToLesson}
+          >
+            <ChevronLeftIcon size={16} />
             {`Bài ${info.n || ''}`}
           </button>
           <h2 class="wr-title" tabindex="-1">Tập viết</h2>
@@ -646,8 +661,13 @@ function WritingScreen() {
               {word && <span class="wr-char-py">{word.hanzi === ch ? word.pinyin : `${word.hanzi} · ${word.pinyin}`}</span>}
               {word && <span class="wr-char-vi">{word.meaning}{word.hanzi === ch && word.hanviet ? ` · ${String(word.hanviet).toUpperCase()}` : ''}</span>}
               <span class="wr-char-meta">{`${data.m.length} nét · ${doneCells}/${totalCells} ô`}</span>
-              <button type="button" class="wr-icon-btn" aria-label={`Nghe phát âm ${ch}`} onClick={(e) => speak(word && word.hanzi === ch ? ch : ch, e)}>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z" /><path d="M15.54 8.46a5 5 0 0 1 0 7.07" /></svg>
+              <button
+                type="button"
+                class="wr-icon-btn"
+                aria-label={`Nghe phát âm ${ch}`}
+                onClick={(e) => speak(word && word.hanzi === ch ? ch : ch, e)}
+              >
+                <AudioIcon size={18} />
               </button>
             </div>
 
