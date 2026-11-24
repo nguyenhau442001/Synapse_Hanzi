@@ -4,6 +4,7 @@
 // Preact port of the former assets/js/due-review.js with the same markup.
 import { render } from 'preact';
 import { signal } from '@preact/signals';
+import { AudioIcon, ArrowLeftIcon, ArrowRightIcon, RotateIcon } from './Icons.jsx';
 
 /* global LEVELS, SRS, RATING_KEYS, SPEECH_RATE, SpaRouter -- classic-script globals */
 
@@ -151,7 +152,7 @@ function Celebration() {
       <div class="today-celebration-actions">
         <button type="button" class="today-btn-primary" onClick={goBack}>
           <span>Trở về trang chủ</span>{' '}
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          <ArrowRightIcon size={18} />
         </button>
       </div>
     </div>
@@ -199,7 +200,7 @@ function ReviewCard() {
 
         <div class="today-card-flip-cue" id="todayFlipCue" hidden={isRevealed}>
           <button type="button" class="today-flip-btn" onClick={stop(revealTodayReview)} aria-label="Lật thẻ xem đáp án">
-            <svg class="flip-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 12 4-4v3h11a2 2 0 0 1 2 2v2" /><path d="m21 12-4 4v-3H6a2 2 0 0 1-2-2v-2" /></svg>{' '}
+            <RotateIcon size={18} className="flip-icon" />{' '}
             <span class="flip-label">Chạm thẻ <span class="today-shortcut-inline">hoặc nhấn <kbd>Space</kbd> </span>để lật</span>
           </button>
         </div>{' '}
@@ -207,8 +208,9 @@ function ReviewCard() {
         <div class="today-card-answer" id="todayReviewAnswer" hidden={!isRevealed}>
           <div class="today-pinyin-wrap">
             <span class="today-card-pinyin">{word.pinyin}</span>{' '}
-            <button type="button" class="today-speak-btn" id="todaySpeakBtn" onClick={stop(speakTodayWord)} aria-label="Nghe phát âm" title="Nghe phát âm (phím P)"
-              dangerouslySetInnerHTML={{ __html: window.speakerIconSvg(20) }} />
+            <button type="button" class="today-speak-btn" id="todaySpeakBtn" onClick={stop(speakTodayWord)} aria-label="Nghe phát âm" title="Nghe phát âm (phím P)">
+              <AudioIcon size={20} />
+            </button>
           </div>{' '}
           <div class="today-card-meaning">{word.meaning}</div>{' '}
           {word.example_zh && (
@@ -267,7 +269,7 @@ export function TodayReviewScreen() {
     <>
       <header class="today-review-topbar">
         <button class="today-review-back-btn" type="button" onClick={goBack} aria-label="Quay lại">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>{' '}
+          <ArrowLeftIcon size={18} />{' '}
           <span>Quay lại</span>
         </button>{' '}
 
