@@ -8,7 +8,7 @@ const DATA_CACHE_NAME = 'hsk-data-v18';
 const PRECACHE_MANIFEST = [
   {
     "url": "index.html",
-    "revision": "27ac4676a6f039a1e077fe2bdac77377"
+    "revision": "7978dd4c955950c9234670b6230f96b9"
   },
   {
     "url": "assets/flashcards.css",
