@@ -55,11 +55,22 @@ import { mountAppBootstrap } from './AppBootstrap';
 import { registerServiceWorker } from './ServiceWorkerManager';
 import { initPwaInstallPrompt } from './PwaInstallPrompt';
 import { initShareFeature } from './ShareModal';
+import { db, migrateFromLocalStorage } from './db';
+
+function mountDexieDatabase() {
+  if (typeof window !== 'undefined' && db) {
+    window.db = db;
+    migrateFromLocalStorage(db).catch(err => {
+      console.warn('Dexie auto-migration notice:', err);
+    });
+  }
+}
 
 mountAppUtils();
 mountAppState();
 mountSrsEngine();
 mountStorageEngine();
+mountDexieDatabase();
 mountAmbientBackground();
 mountStudyHelpModal();
 mountFeaturePromoModal();
