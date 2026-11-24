@@ -575,12 +575,6 @@ export function renderLearningDashboard() {
   if (headerStreak) headerStreak.textContent = `${streak} ngày`;
   const headerStreakBadge = document.getElementById('headerStreakBadge');
   if (headerStreakBadge) headerStreakBadge.classList.toggle('is-zero', !(streak > 0));
-  const bannerStreak = document.getElementById('bannerStreakText');
-  if (bannerStreak) bannerStreak.textContent = `${streak} ngày`;
-  const bannerStreakBadge = document.getElementById('bannerStreakBadge');
-  if (bannerStreakBadge) {
-    bannerStreakBadge.classList.toggle('has-streak', streak > 0);
-  }
   if (knownNode) knownNode.textContent = summary.totalKnown;
   if (studiedNode) studiedNode.textContent = summary.totalStudied;
   const dueTotal = typeof countDueCardsAcrossLevels === 'function' ? countDueCardsAcrossLevels(new Date()) : (window.countDueCardsAcrossLevels ? window.countDueCardsAcrossLevels(new Date()) : 0);

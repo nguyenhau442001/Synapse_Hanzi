@@ -2,7 +2,7 @@
 """
 Unit tests for the refined Daily Goal Card UI:
 1. Card displays ONLY the 4 specified content sections:
-   - Top row: Left: 🎯 MỤC TIÊU HÔM NAY, Right: 🔥 0 ngày (streak)
+   - Top row: 🎯 MỤC TIÊU HÔM NAY
    - Main heading: Mỗi ngày một chút, nhớ lâu hơn ⚙️
    - Progress section: 0 / 50 từ, 0%, full-width progress bar
    - Supporting text: Học thêm hôm nay để hoàn thành mục tiêu.
@@ -41,8 +41,8 @@ class TestDailyGoalWidget(unittest.TestCase):
         """Card must contain only the 4 specified sections."""
         # 1. Top row
         self.assertIn("🎯 MỤC TIÊU HÔM NAY", self.card_html)
-        self.assertIn('id="bannerStreakBadge"', self.card_html)
-        self.assertIn('id="bannerStreakText"', self.card_html)
+        self.assertNotIn('id="bannerStreakBadge"', self.card_html)
+        self.assertNotIn('id="bannerStreakText"', self.card_html)
 
         # 2. Main heading
         self.assertIn('id="learningDashboardTitle"', self.card_html)
@@ -75,7 +75,7 @@ class TestDailyGoalWidget(unittest.TestCase):
         self.assertIn("const validGoal = dailyGoal > 0 ? dailyGoal : 50;", self.levels_js)
         self.assertIn("document.getElementById('dailyGoalPct')", self.levels_js)
         self.assertIn("document.getElementById('dailyGoalTargetText')", self.levels_js)
-        self.assertIn("document.getElementById('bannerStreakText')", self.levels_js)
+        self.assertIn("document.getElementById('headerStreakText')", self.levels_js)
         self.assertIn("Học thêm hôm nay để hoàn thành mục tiêu.", self.levels_js)
         self.assertIn("`${streak} ngày`", self.levels_js)
 
