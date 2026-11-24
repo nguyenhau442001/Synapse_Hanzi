@@ -271,6 +271,21 @@ function SpeakingPracticeApp() {
     };
   }, []);
 
+  // Redraw canvas whenever application theme switches (light <-> dark)
+  useEffect(() => {
+    if (typeof MutationObserver === 'undefined') return;
+    const observer = new MutationObserver((mutations) => {
+      for (const m of mutations) {
+        if (m.type === 'attributes' && m.attributeName === 'data-theme') {
+          drawContourCanvas();
+          break;
+        }
+      }
+    });
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+    return () => observer.disconnect();
+  }, [currentWord, visualizerMode, targetContour]);
+
   // Auto re-evaluate combined score whenever a late-arriving speech transcript is received
   useEffect(() => {
     if (!aiTranscript || !scoreResultRef.current) return;
@@ -321,6 +336,12 @@ function SpeakingPracticeApp() {
       canvas.height = targetHeight;
     }
 
+    // Detect current theme for contrast-accurate canvas rendering
+    const isDark = typeof document !== 'undefined' && (
+      document.documentElement.getAttribute('data-theme') === 'dark' ||
+      (!document.documentElement.getAttribute('data-theme') && typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+    );
+
     ctx.save();
     ctx.scale(dpr, dpr);
     ctx.clearRect(0, 0, displayWidth, displayHeight);
@@ -339,7 +360,7 @@ function SpeakingPracticeApp() {
       const xStart = padLeft + (s / numSyllables) * plotW;
       const xEnd = padLeft + ((s + 1) / numSyllables) * plotW;
       if (s % 2 === 1) {
-        ctx.fillStyle = 'rgba(180, 150, 100, 0.04)';
+        ctx.fillStyle = isDark ? 'rgba(255, 255, 255, 0.03)' : 'rgba(180, 150, 100, 0.04)';
         ctx.fillRect(xStart, padY, xEnd - xStart, plotH);
       }
     }
@@ -364,7 +385,9 @@ function SpeakingPracticeApp() {
 
     chaoLabels.forEach(({ level, text }) => {
       const y = padY + plotH - ((level - 1) / 4) * plotH;
-      ctx.strokeStyle = level === 3 ? 'rgba(180, 150, 100, 0.28)' : 'rgba(180, 150, 100, 0.12)';
+      ctx.strokeStyle = level === 3
+        ? (isDark ? 'rgba(217, 180, 130, 0.38)' : 'rgba(180, 150, 100, 0.28)')
+        : (isDark ? 'rgba(217, 180, 130, 0.16)' : 'rgba(180, 150, 100, 0.12)');
       ctx.setLineDash([4, 4]);
       ctx.beginPath();
       ctx.moveTo(padLeft, y);
@@ -372,7 +395,7 @@ function SpeakingPracticeApp() {
       ctx.stroke();
 
       ctx.setLineDash([]);
-      ctx.fillStyle = 'rgba(150, 140, 130, 0.85)';
+      ctx.fillStyle = isDark ? 'rgba(215, 205, 195, 0.9)' : 'rgba(140, 130, 120, 0.85)';
       ctx.font = isCompact
         ? 'bold 10px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
         : '11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
@@ -383,7 +406,7 @@ function SpeakingPracticeApp() {
     // 3. Syllable vertical separators
     for (let s = 1; s < numSyllables; s++) {
       const x = padLeft + (s / numSyllables) * plotW;
-      ctx.strokeStyle = 'rgba(180, 150, 100, 0.22)';
+      ctx.strokeStyle = isDark ? 'rgba(217, 180, 130, 0.28)' : 'rgba(180, 150, 100, 0.22)';
       ctx.setLineDash([3, 3]);
       ctx.beginPath();
       ctx.moveTo(x, padY);
@@ -443,11 +466,11 @@ function SpeakingPracticeApp() {
         ctx.setLineDash([]);
 
         // Track Labels
-        ctx.fillStyle = '#b45309';
+        ctx.fillStyle = isDark ? '#fbbf24' : '#b45309';
         ctx.font = 'bold 9.5px sans-serif';
         ctx.textAlign = 'left';
         ctx.fillText('MẪU STUDIO (XIAOXIAO)', padLeft + 4, padY + 12);
-        ctx.fillStyle = '#0d9488';
+        ctx.fillStyle = isDark ? '#2dd4bf' : '#0d9488';
         ctx.fillText('GIỌNG THU CỦA BẠN', padLeft + 4, padY + plotH * 0.5 + 13);
 
         // Draw Studio Waveform Envelope in Track 1
@@ -500,7 +523,7 @@ function SpeakingPracticeApp() {
       syllableInfos.forEach((syl, sIdx) => {
         const midTime = (sIdx + 0.5) / numSyllables;
         const midX = padLeft + midTime * plotW;
-        ctx.fillStyle = '#b45309';
+        ctx.fillStyle = isDark ? '#fbbf24' : '#b45309';
         ctx.font = isCompact
           ? 'bold 11px -apple-system, BlinkMacSystemFont, sans-serif'
           : 'bold 12.5px -apple-system, BlinkMacSystemFont, sans-serif';
