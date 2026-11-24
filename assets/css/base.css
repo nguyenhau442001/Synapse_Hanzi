@@ -261,15 +261,15 @@
   transition: opacity 300ms ease, background-image 300ms ease;
   opacity: 0.95;
   overflow: hidden;
-  background-image: url("../images/chinese_landscape_light.svg");
+  background-image: url("images/chinese_landscape_light.svg");
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .chinese-aesthetic-bg {
-    background-image: url("../images/chinese_landscape_dark.svg");
+    background-image: url("images/chinese_landscape_dark.svg");
   }
 }
 :root[data-theme="dark"] .chinese-aesthetic-bg {
-  background-image: url("../images/chinese_landscape_dark.svg");
+  background-image: url("images/chinese_landscape_dark.svg");
 }
 
 /* Layer 3-5: Animated Falling Chinese Plum Blossoms, Mist & Gold Particles Canvas */

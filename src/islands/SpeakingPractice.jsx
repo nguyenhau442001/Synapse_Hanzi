@@ -272,21 +272,6 @@ function SpeakingPracticeApp() {
     };
   }, []);
 
-  // Redraw canvas whenever application theme switches (light <-> dark)
-  useEffect(() => {
-    if (typeof MutationObserver === 'undefined') return;
-    const observer = new MutationObserver((mutations) => {
-      for (const m of mutations) {
-        if (m.type === 'attributes' && m.attributeName === 'data-theme') {
-          drawContourCanvas();
-          break;
-        }
-      }
-    });
-    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
-    return () => observer.disconnect();
-  }, [currentWord, visualizerMode, targetContour]);
-
   // Auto re-evaluate combined score whenever a late-arriving speech transcript is received
   useEffect(() => {
     if (!aiTranscript || !scoreResultRef.current) return;
@@ -657,6 +642,21 @@ function SpeakingPracticeApp() {
   useEffect(() => {
     drawContourCanvas();
   }, [visualizerMode]);
+
+  // Redraw canvas whenever application theme switches (light <-> dark)
+  useEffect(() => {
+    if (typeof MutationObserver === 'undefined') return;
+    const observer = new MutationObserver((mutations) => {
+      for (const m of mutations) {
+        if (m.type === 'attributes' && m.attributeName === 'data-theme') {
+          drawContourCanvas();
+          break;
+        }
+      }
+    });
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+    return () => observer.disconnect();
+  }, [currentWord, visualizerMode, targetContour]);
 
   // Observe container resize to re-render sharp canvas smoothly across desktop and mobile
   useEffect(() => {
