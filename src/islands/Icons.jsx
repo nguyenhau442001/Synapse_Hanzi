@@ -2,6 +2,8 @@ import {
   Volume2,
   X,
   Check,
+  CircleX,
+  CircleCheck,
   ArrowLeft,
   ArrowRight,
   ChevronLeft,
@@ -21,10 +23,32 @@ export function AudioIcon({ size = 18, strokeWidth = 2, className = '', color = 
   return <Volume2 size={size} strokeWidth={strokeWidth} class={className} color={color} {...props} />;
 }
 
+// Modal / Drawer / Dialog close button
 export function CloseIcon({ size = 18, strokeWidth = 2, className = '', color = 'currentColor', ...props }) {
   return <X size={size} strokeWidth={strokeWidth} class={className} color={color} {...props} />;
 }
 
+// Cancel ongoing action
+export function CancelIcon({ size = 18, strokeWidth = 2, className = '', color = 'currentColor', ...props }) {
+  return <X size={size} strokeWidth={strokeWidth} class={className} color={color} {...props} />;
+}
+
+// Clear input search field
+export function ClearIcon({ size = 16, strokeWidth = 2, className = '', color = 'currentColor', ...props }) {
+  return <CircleX size={size} strokeWidth={strokeWidth} class={className} color={color} {...props} />;
+}
+
+// Wrong / Incorrect answer in quiz & exams (red tone by default)
+export function WrongIcon({ size = 18, strokeWidth = 2, className = '', color = '#ef4444', ...props }) {
+  return <CircleX size={size} strokeWidth={strokeWidth} class={className} color={color} {...props} />;
+}
+
+// Correct answer in quiz & exams (green tone by default)
+export function CorrectIcon({ size = 18, strokeWidth = 2, className = '', color = '#22c55e', ...props }) {
+  return <CircleCheck size={size} strokeWidth={strokeWidth} class={className} color={color} {...props} />;
+}
+
+// Standard check mark
 export function CheckIcon({ size = 18, strokeWidth = 2, className = '', color = 'currentColor', ...props }) {
   return <Check size={size} strokeWidth={strokeWidth} class={className} color={color} {...props} />;
 }
