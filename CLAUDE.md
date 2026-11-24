@@ -26,6 +26,8 @@ Read and follow all project rules in AGENTS.md:
 ## Clean Code & Modern Engineering
 
 - Follow modern best practices: write clean, modular code and extract strings/magic numbers into centralized constants (single source of truth).
+- All `title`, `aria-label`, and text strings MUST use named constants/variables, never hardcoded loose strings.
+- Break multiple JSX attributes into separate lines (multiline JSX) for readability.
 - Always evaluate trade-offs (pros, cons, maintainability) and avoid antiquated or obsolete legacy workarounds.
 
 ## Architecture-First Workflow

@@ -5,7 +5,7 @@
 import { render } from 'preact';
 import { useEffect, useRef } from 'preact/hooks';
 import { signal } from '@preact/signals';
-import { ModalCloseButton } from './Icons.jsx';
+import { ModalCloseButton, UI_LABELS } from './Icons.jsx';
 
 const isOpen = signal(false);
 const activeTab = signal('shortcuts');
@@ -188,7 +188,7 @@ export function StudyHelpModal() {
             buttonRef={closeRef}
             className="study-help-close-btn"
             onClick={closeStudyHelpModal}
-            title="Đóng bảng trợ giúp (Esc)"
+            title={UI_LABELS.CLOSE_HELP}
           />
         </div>
 

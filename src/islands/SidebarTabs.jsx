@@ -4,6 +4,7 @@
 import { render } from 'preact';
 import { signal } from '@preact/signals';
 import { onDomReady } from './domReady';
+import { ModalCloseButton, UI_LABELS } from './Icons.jsx';
 
 /* global activeStudyWord -- state.js */
 
@@ -70,7 +71,11 @@ function DrawerHeader() {
         <span class="study-drawer-icon" aria-hidden="true">✍️</span>{' '}
         <strong class="study-drawer-title">Bổ trợ từ vựng</strong>
       </div>{' '}
-      <button type="button" class="study-drawer-close-btn" onClick={() => window.closeAllStudyDrawers()} aria-label="Đóng bảng tiện ích" title="Đóng bảng (Esc)">✕</button>
+      <ModalCloseButton
+        className="study-drawer-close-btn"
+        onClick={() => window.closeAllStudyDrawers()}
+        title={UI_LABELS.CLOSE_UTILITY_DRAWER}
+      />
     </>
   );
 }

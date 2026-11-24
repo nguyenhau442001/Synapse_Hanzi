@@ -5,6 +5,7 @@
 import { render } from 'preact';
 import { signal } from '@preact/signals';
 import { playQuizSuccessSound, playQuizFailSound } from './AppUtils.js';
+import { ModalCloseButton, UI_LABELS } from './Icons.jsx';
 
 /* global exampleSpeechSpeed -- top-level `let` of the classic script state.js */
 
@@ -476,7 +477,11 @@ function ExplainModal() {
             <span class="sqm-badge-icon" aria-hidden="true">💡</span>{' '}
             <h3 id="sqmTitle" class="sqm-title">Giải thích đáp án &amp; Ngữ pháp</h3>
           </div>{' '}
-          <button type="button" class="sqm-close-btn" onClick={closeSpeedQuizExplanationModal} aria-label="Đóng bảng giải thích">✕</button>
+          <ModalCloseButton
+            className="sqm-close-btn"
+            onClick={closeSpeedQuizExplanationModal}
+            title={UI_LABELS.CLOSE_EXPLANATION}
+          />
         </header>
         <div class="sqm-body" id="speedQuizModalBody">{r && <ExplanationBody r={r} />}</div>
         <footer class="sqm-footer">

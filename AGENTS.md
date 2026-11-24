@@ -97,6 +97,8 @@ When designing or implementing new features/components, agents MUST strictly fol
 ## Clean Code & Modern Engineering Principles
 
 - **Best Practice & Clean Code**: Write clean, modular, and self-documenting code. Never scatter hardcoded magic strings or numbers across files; extract and centralize them into semantic constants (single source of truth).
+- **Named Constants for Titles & Labels**: All user-facing strings, `title`, `aria-label`, and button tooltips MUST be declared as named constants/variables (e.g., from `UI_LABELS`), never left as loose hardcoded strings.
+- **Readable Multiline JSX Formatting**: When a JSX/HTML tag has multiple attributes (e.g. `className`, `onClick`, `title`, `aria-label`, `ref`), format each attribute on its own separate line for maximum readability. Never cram multiple attributes into a long horizontal line.
 - **Modern Standards Over Antiquated Patterns**: Always adopt modern, standard, declarative web patterns. Strictly avoid obsolete, fragile, or archaic legacy workarounds (e.g., avoid manual DOM surgery when declarative JSX/Signals can be used; avoid ad-hoc regex/string templates when proper components exist).
 - **Trade-off Mindset**: Every technical decision must weigh long-term maintainability against short-term convenience. Never choose a quick hack over a sound architectural solution.
 

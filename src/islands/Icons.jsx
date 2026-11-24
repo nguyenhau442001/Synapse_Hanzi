@@ -24,6 +24,12 @@ export const UI_LABELS = Object.freeze({
   CLEAR: 'Xóa',
   BACK: 'Quay lại',
   CONFIRM: 'Xác nhận',
+  CLOSE_LOOKUP_DRAWER: 'Đóng bảng tra cứu (Esc)',
+  CLOSE_SEARCH: 'Đóng tìm kiếm (Esc)',
+  CLOSE_UTILITY_DRAWER: 'Đóng bảng tiện ích (Esc)',
+  CLOSE_EXPLANATION: 'Đóng bảng giải thích (Esc)',
+  CLOSE_CHART: 'Đóng biểu đồ (Esc)',
+  CLOSE_HELP: 'Đóng bảng trợ giúp (Esc)',
 });
 
 /**

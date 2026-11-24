@@ -8,6 +8,7 @@ import { signal } from '@preact/signals';
 import { onDomReady } from './domReady';
 import { loadWeakWords, saveWeakWords, formatWeakWordLevel } from './WeakWords.jsx';
 import { speakerIconSvg } from './AppUtils.js';
+import { ModalCloseButton, UI_LABELS } from './Icons.jsx';
 
 /* global SPEECH_RATE, currentLevel -- classic-script globals */
 
@@ -243,7 +244,12 @@ function Drawer() {
             <DrawerTab id="quickTabSaved" tab="saved" icon="🔖" label="Từ khó" countId="quickSavedTabCount" count={savedCount.value} />{' '}
             <DrawerTab id="quickTabUrgent" tab="urgent" icon="⚡" label="Cần ôn gấp" countId="quickUrgentTabCount" count={urgentItems.value ? urgentItems.value.length : 0} />
           </div>{' '}
-          <button type="button" id="quickDrawerCloseBtn" class="quick-drawer-close" onClick={closeQuickAccessDrawer} aria-label="Đóng bảng">✕</button>
+          <ModalCloseButton
+            id="quickDrawerCloseBtn"
+            className="quick-drawer-close"
+            onClick={closeQuickAccessDrawer}
+            title={UI_LABELS.CLOSE_LOOKUP_DRAWER}
+          />
         </div>{' '}
         <div class="quick-drawer-body">
           <SavedPane />{' '}
@@ -373,7 +379,11 @@ function SearchPalette() {
         <input ref={(el) => { inputEl = el; }} type="search" id="quickSearchInput" class="qsm-input" placeholder="Tra từ (Hán tự, pinyin, nghĩa tiếng Việt)..."
           autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck={false} aria-label="Tìm từ vựng"
           onInput={(e) => onQuickSearchInput(e.currentTarget.value)} onKeyDown={onSearchKeydown} />{' '}
-        <button type="button" class="qsm-close-btn" onClick={closeQuickSearchModal} aria-label="Đóng tìm kiếm">✕</button>
+        <ModalCloseButton
+          className="qsm-close-btn"
+          onClick={closeQuickSearchModal}
+          title={UI_LABELS.CLOSE_SEARCH}
+        />
       </div>{' '}
       <div class="qsm-body">
         <ul id="quickSearchResults" class="qsm-results-list" role="listbox" aria-label="Kết quả tìm kiếm">

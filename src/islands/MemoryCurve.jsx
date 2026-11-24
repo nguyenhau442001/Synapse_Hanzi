@@ -3,6 +3,7 @@
 // with the same markup (styled by the existing CSS). window.openMemoryCurve / closeMemoryCurve stay.
 import { render } from 'preact';
 import { signal } from '@preact/signals';
+import { ModalCloseButton, UI_LABELS } from './Icons.jsx';
 
 /* global SRS, currentLevel, WORDS, srsCards, srsRetention, activeStudyWord -- classic-script globals */
 
@@ -249,7 +250,11 @@ function MemoryCurveDialog() {
   return (
     <div id="memoryCurveModal" class="memory-curve-overlay" onClick={(e) => { if (e.target === e.currentTarget) closeMemoryCurve(); }}>
       <section class="memory-curve-dialog" role="dialog" aria-modal="true" aria-labelledby="memoryCurveTitle">
-        <button type="button" class="memory-curve-close" onClick={closeMemoryCurve} aria-label="Đóng">✕</button>
+        <ModalCloseButton
+          className="memory-curve-close"
+          onClick={closeMemoryCurve}
+          title={UI_LABELS.CLOSE_CHART}
+        />
         <h2 id="memoryCurveTitle">{`📈 Khả năng nhớ theo thời gian · ${targetWord.hanzi}`}</h2>
         <p class="memory-curve-subtitle">{`${targetWord.pinyin} · ${targetWord.meaning}`}</p>
         <p class="memory-curve-note">Biểu đồ ước tính khả năng nhớ từ này theo thời gian. Đường liền là lịch sử ôn; đường nét đứt là dự đoán nếu bạn chưa ôn lại.</p>
