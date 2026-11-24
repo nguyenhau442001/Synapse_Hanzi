@@ -5,6 +5,7 @@
 import { render } from 'preact';
 import { useEffect, useRef } from 'preact/hooks';
 import { signal } from '@preact/signals';
+import { ModalCloseButton } from './Icons.jsx';
 
 const isOpen = signal(false);
 const activeTab = signal('shortcuts');
@@ -183,7 +184,12 @@ export function StudyHelpModal() {
             <span class="study-help-badge-icon" aria-hidden="true">?</span>
             <h2 id="studyHelpModalTitle" class="study-help-title">Hướng dẫn &amp; Trợ giúp học tập</h2>
           </div>
-          <button ref={closeRef} type="button" class="study-help-close-btn" onClick={closeStudyHelpModal} aria-label="Đóng bảng trợ giúp (Esc)" title="Đóng (Esc)">✕</button>
+          <ModalCloseButton
+            buttonRef={closeRef}
+            className="study-help-close-btn"
+            onClick={closeStudyHelpModal}
+            title="Đóng bảng trợ giúp (Esc)"
+          />
         </div>
 
         <nav class="study-help-nav" role="tablist" aria-label="Các mục hướng dẫn">

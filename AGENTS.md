@@ -84,7 +84,7 @@ When designing or implementing new features/components, agents MUST strictly fol
 1. **Step 1: Architectural Consulting (No Immediate Coding)**
    - Do NOT rush into writing code immediately.
    - First, analyze the architecture: where data is stored, which component manages state, and data flow from UI to storage/DB.
-   - Present at least 2 architectural options with pros and cons for the user to review and select.
+   - Present at least 2 architectural options with explicit trade-offs (pros, cons, performance, maintainability) for the user to review and select.
 2. **Step 2: Interface & Data Contract First**
    - Define clear data structures (TypeScript interfaces or JSDoc schemas) before implementing logic.
    - Explain the meaning and purpose of each field.
@@ -93,6 +93,12 @@ When designing or implementing new features/components, agents MUST strictly fol
    - Scope each step to only core logic or a single component at a time.
    - Explicitly explain any complex algorithms or non-trivial logic decisions (e.g., audio thresholds, formulas, state machines).
    - Review file diffs incrementally; never modify multiple unrelated files at once.
+
+## Clean Code & Modern Engineering Principles
+
+- **Best Practice & Clean Code**: Write clean, modular, and self-documenting code. Never scatter hardcoded magic strings or numbers across files; extract and centralize them into semantic constants (single source of truth).
+- **Modern Standards Over Antiquated Patterns**: Always adopt modern, standard, declarative web patterns. Strictly avoid obsolete, fragile, or archaic legacy workarounds (e.g., avoid manual DOM surgery when declarative JSX/Signals can be used; avoid ad-hoc regex/string templates when proper components exist).
+- **Trade-off Mindset**: Every technical decision must weigh long-term maintainability against short-term convenience. Never choose a quick hack over a sound architectural solution.
 
 ## Modern Tooling & Anti-Reinvention Rules
 

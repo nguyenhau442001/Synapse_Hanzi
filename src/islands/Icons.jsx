@@ -15,6 +15,18 @@ import {
 } from 'lucide-preact';
 
 /**
+ * Standard UI Text Labels & Semantic Constants (Single Source of Truth)
+ */
+export const UI_LABELS = Object.freeze({
+  CLOSE: 'Đóng',
+  CLOSE_ESC: 'Đóng (Esc)',
+  CANCEL: 'Hủy',
+  CLEAR: 'Xóa',
+  BACK: 'Quay lại',
+  CONFIRM: 'Xác nhận',
+});
+
+/**
  * Standard Icon Registry for Synapse Hanzi
  * Ensures uniform strokeWidth, size, and styling across all islands.
  */
@@ -92,4 +104,33 @@ export function SettingsIcon({ size = 18, strokeWidth = 2, className = '', color
 
 export function InfoIcon({ size = 18, strokeWidth = 2, className = '', color = 'currentColor', ...props }) {
   return <Info size={size} strokeWidth={strokeWidth} class={className} color={color} {...props} />;
+}
+
+/**
+ * Standard Accessible Modal/Drawer Close Button
+ */
+export function ModalCloseButton({
+  onClick,
+  label = UI_LABELS.CLOSE,
+  title = UI_LABELS.CLOSE_ESC,
+  showText = false,
+  iconSize = 18,
+  className = '',
+  buttonRef = null,
+  ...props
+}) {
+  return (
+    <button
+      ref={buttonRef}
+      type="button"
+      class={`modal-close-btn ${className}`.trim()}
+      onClick={onClick}
+      aria-label={label}
+      title={title}
+      {...props}
+    >
+      <CloseIcon size={iconSize} />
+      {showText && <span class="modal-close-text">{label}</span>}
+    </button>
+  );
 }

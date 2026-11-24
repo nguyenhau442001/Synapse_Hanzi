@@ -23,6 +23,11 @@ Read and follow all project rules in AGENTS.md:
 - Do not hand-roll custom infrastructure (e.g. routers, complex manual state stores, raw SVGs) when established libraries exist.
 - Use standard icon sets (e.g., `lucide-preact`) and modern modular UI rather than growing monolithic CSS.
 
+## Clean Code & Modern Engineering
+
+- Follow modern best practices: write clean, modular code and extract strings/magic numbers into centralized constants (single source of truth).
+- Always evaluate trade-offs (pros, cons, maintainability) and avoid antiquated or obsolete legacy workarounds.
+
 ## Architecture-First Workflow
 
 Always follow the 3-step feature development:
