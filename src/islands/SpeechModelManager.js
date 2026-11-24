@@ -1,14 +1,16 @@
 /**
  * SpeechModelManager.js
- * Offline Model Manager for Mandarin CAPT ONNX model (~14MB).
+ * Offline Model Manager for Mandarin CAPT Conformer-CTC ONNX model (~8.2MB INT8).
  * Manages streaming downloads with progress reporting and persistent caching via IndexedDB.
  */
 
-const DB_NAME = 'synapse_capt_speech_v1';
+const DB_NAME = 'synapse_capt_speech_v2';
 const STORE_NAME = 'models';
 const MODEL_KEY = 'capt_model_onnx';
 const MODEL_URL = './assets/models/speech/capt_model.onnx';
 const META_URL = './assets/models/speech/capt_meta.json';
+const MODEL_SIZE_ESTIMATE_BYTES = 8.2 * 1024 * 1024;
+const MIN_CACHED_MODEL_BYTES = 1000000;
 
 /**
  * Opens or initializes IndexedDB database.
@@ -40,7 +42,7 @@ export async function isCaptModelCached() {
       const tx = db.transaction(STORE_NAME, 'readonly');
       const store = tx.objectStore(STORE_NAME);
       const req = store.get(MODEL_KEY);
-      req.onsuccess = () => resolve(Boolean(req.result && req.result.byteLength > 1000000));
+      req.onsuccess = () => resolve(Boolean(req.result && req.result.byteLength > MIN_CACHED_MODEL_BYTES));
       req.onerror = () => resolve(false);
     });
   } catch (err) {
@@ -82,7 +84,7 @@ export async function downloadAndCacheCaptModel(onProgress = null) {
     throw new Error(`Failed to download speech model: HTTP ${response.status}`);
   }
 
-  const contentLength = Number(response.headers.get('content-length')) || (14.2 * 1024 * 1024);
+  const contentLength = Number(response.headers.get('content-length')) || MODEL_SIZE_ESTIMATE_BYTES;
   const reader = response.body.getReader();
   const chunks = [];
   let receivedBytes = 0;

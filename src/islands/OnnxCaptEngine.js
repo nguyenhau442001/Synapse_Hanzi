@@ -91,6 +91,8 @@ export function isCaptModelLoaded() {
   return Boolean(inferenceSession);
 }
 
+const MIN_SPEECH_MEL_FRAMES = 5;
+
 /**
  * Evaluates recorded audio PCM against the target pinyin using the neural Conformer.
  *
@@ -108,7 +110,7 @@ export async function evaluatePronunciationWithOnnx(pcm16k, targetPinyin) {
 
   // 1. Extract 80-channel Log-Mel spectrogram
   const melFrames = extractLogMelSpectrogram(pcm16k);
-  if (melFrames.length < 5) {
+  if (melFrames.length < MIN_SPEECH_MEL_FRAMES) {
     return {
       success: false,
       message: 'Âm thanh quá ngắn hoặc không rõ tiếng. Hãy nói to và gần micro hơn.'

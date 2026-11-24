@@ -1,15 +1,50 @@
+"""
+Mandarin CAPT Conformer-CTC Industrial Model Exporter with INT8 Quantization.
+Exports an optimized neural speech scoring engine for client-side WebAssembly inference.
+"""
+
 import os
 import json
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+import onnx
+from onnxruntime.quantization import quantize_dynamic, QuantType
+
+# Audio feature extraction constants
+SAMPLE_RATE = 16000
+FEATURE_DIM = 80
+WINDOW_SIZE_MS = 25
+HOP_SIZE_MS = 10
+N_FFT = 512
+F_MIN = 50
+F_MAX = 7600
+
+# Architectural dimensions
+EMBED_DIM = 256
+NUM_HEADS = 4
+NUM_CONFORMER_BLOCKS = 8
+KERNEL_SIZE = 15
+
+# Phonetic token dimensions
+NUM_INITIALS = 22  # 21 initials + zero-initial ('none')
+NUM_FINALS = 36    # 36 standard Mandarin finals
+NUM_TONES = 5      # 4 tones + neutral tone (5)
+NUM_CTC_TOKENS = 64 # Blank (0) + 22 initials (1-22) + 36 finals (23-58) + 5 tones (59-63)
+
 
 class ConformerConv(nn.Module):
-    def __init__(self, dim=168, kernel_size=15):
+    """Convolution module with depthwise separable convolution and GLU activation."""
+    def __init__(self, dim=EMBED_DIM, kernel_size=KERNEL_SIZE):
         super().__init__()
         self.norm = nn.LayerNorm(dim)
         self.pointwise1 = nn.Conv1d(dim, dim * 2, kernel_size=1)
-        self.depthwise = nn.Conv1d(dim, dim, kernel_size=kernel_size, padding=kernel_size // 2, groups=dim)
+        self.depthwise = nn.Conv1d(
+            dim, dim,
+            kernel_size=kernel_size,
+            padding=kernel_size // 2,
+            groups=dim
+        )
         self.bn = nn.BatchNorm1d(dim)
         self.pointwise2 = nn.Conv1d(dim, dim, kernel_size=1)
 
@@ -26,8 +61,10 @@ class ConformerConv(nn.Module):
         x = x.transpose(1, 2)
         return res + x
 
+
 class ConformerBlock(nn.Module):
-    def __init__(self, dim=168, num_heads=4, kernel_size=15):
+    """Macaron-style Conformer block with multi-head self-attention and convolution."""
+    def __init__(self, dim=EMBED_DIM, num_heads=NUM_HEADS, kernel_size=KERNEL_SIZE):
         super().__init__()
         self.ff1 = nn.Sequential(
             nn.LayerNorm(dim),
@@ -55,9 +92,15 @@ class ConformerBlock(nn.Module):
         x = x + 0.5 * self.ff2(x)
         return self.final_norm(x)
 
-class MandarinCaptConformer(nn.Module):
-    def __init__(self, input_dim=80, embed_dim=168, num_blocks=8):
+
+class MandarinCaptConformerCtc(nn.Module):
+    """
+    Industrial Conformer-CTC model for Mandarin Chinese CAPT.
+    Outputs frame-level CTC log-posteriors and syllable-level multi-task heads.
+    """
+    def __init__(self, input_dim=FEATURE_DIM, embed_dim=EMBED_DIM, num_blocks=NUM_CONFORMER_BLOCKS):
         super().__init__()
+        # Subsampling front-end (2x downsampling along time axis)
         self.frontend = nn.Sequential(
             nn.Conv1d(input_dim, embed_dim, kernel_size=3, stride=2, padding=1),
             nn.SiLU(),
@@ -67,96 +110,74 @@ class MandarinCaptConformer(nn.Module):
         self.blocks = nn.ModuleList([
             ConformerBlock(dim=embed_dim) for _ in range(num_blocks)
         ])
-        # Multi-task CAPT heads
-        self.head_initial = nn.Linear(embed_dim, 22) # 21 initials + zero-initial
-        self.head_final = nn.Linear(embed_dim, 36)   # 36 standard Mandarin finals
-        self.head_tone = nn.Linear(embed_dim, 5)     # 4 tones + neutral tone
-        self.head_score = nn.Linear(embed_dim, 1)    # Continuous quality score (0 - 100)
+
+        # Frame-level CTC acoustic phoneme head
+        self.head_ctc = nn.Linear(embed_dim, NUM_CTC_TOKENS)
+
+        # Multi-task CAPT syllable heads
+        self.head_initial = nn.Linear(embed_dim, NUM_INITIALS)
+        self.head_final = nn.Linear(embed_dim, NUM_FINALS)
+        self.head_tone = nn.Linear(embed_dim, NUM_TONES)
+        self.head_score = nn.Linear(embed_dim, 1)
 
     def forward(self, mel):
-        # mel: [batch, time, 80]
+        # Input shape: [batch, time, 80]
         x = mel.transpose(1, 2)
         x = self.frontend(x)
         x = x.transpose(1, 2)
+
         for block in self.blocks:
             x = block(x)
-            
+
+        # 1. Frame-level CTC log-probabilities
+        ctc_logits = F.log_softmax(self.head_ctc(x), dim=-1)
+
+        # 2. Syllable-level temporal pooling
         pooled = torch.mean(x, dim=1)
         initial_logits = self.head_initial(pooled)
         final_logits = self.head_final(pooled)
         tone_logits = self.head_tone(pooled)
         quality_score = torch.sigmoid(self.head_score(pooled)) * 100.0
-        
-        return initial_logits, final_logits, tone_logits, quality_score
 
-def export_model():
-    output_dir = os.path.join(os.path.dirname(__file__), '..', 'assets', 'models', 'speech')
-    os.makedirs(output_dir, exist_ok=True)
-    onnx_path = os.path.join(output_dir, 'capt_model.onnx')
-    meta_path = os.path.join(output_dir, 'capt_meta.json')
+        return ctc_logits, initial_logits, final_logits, tone_logits, quality_score
 
-    print('Building Mandarin CAPT Conformer (20MB target)...')
-    torch.manual_seed(42)
-    model = MandarinCaptConformer(input_dim=80, embed_dim=168, num_blocks=8)
-    model.eval()
 
-    total_params = sum(p.numel() for p in model.parameters())
-    print(f'Total parameters: {total_params:,} (~{total_params * 4 / (1024*1024):.2f} MB float32)')
+def build_metadata(size_mb):
+    """Constructs model schema and diagnostic guidance dictionary."""
+    initials = [
+        "none", "b", "p", "m", "f", "d", "t", "n", "l", "g", "k", "h",
+        "j", "q", "x", "zh", "ch", "sh", "r", "z", "c", "s"
+    ]
+    finals = [
+        "a", "o", "e", "ai", "ei", "ao", "ou", "an", "en", "ang", "eng", "ong",
+        "i", "ia", "iao", "ie", "iu", "ian", "in", "iang", "ing", "iong",
+        "u", "ua", "uo", "uai", "ui", "uan", "un", "uang", "ueng",
+        "v", "ve", "van", "vn", "er"
+    ]
+    tones = ["1", "2", "3", "4", "5"]
 
-    dummy_mel = torch.randn(1, 100, 80)
-    print(f'Exporting ONNX to {onnx_path}...')
-    torch.onnx.export(
-        model,
-        dummy_mel,
-        onnx_path,
-        input_names=['mel'],
-        output_names=['initial_logits', 'final_logits', 'tone_logits', 'quality_score'],
-        dynamic_axes={
-            'mel': {0: 'batch', 1: 'time'},
-            'initial_logits': {0: 'batch'},
-            'final_logits': {0: 'batch'},
-            'tone_logits': {0: 'batch'},
-            'quality_score': {0: 'batch'}
-        },
-        opset_version=18
-    )
+    # CTC Token mapping: index 0 is <blank>
+    ctc_tokens = ["<blank>"] + initials + finals + [f"tone_{t}" for t in tones]
 
-    # Consolidate external data into a single standalone .onnx file for clean web caching
-    import onnx
-    m = onnx.load(onnx_path, load_external_data=True)
-    onnx.save_model(m, onnx_path, save_as_external_data=False)
-    data_file = onnx_path + '.data'
-    if os.path.exists(data_file):
-        os.remove(data_file)
-
-    size_mb = os.path.getsize(onnx_path) / (1024 * 1024)
-    print(f'✅ Exported ONNX model size: {size_mb:.2f} MB')
-
-    meta = {
-        "model_name": "Mandarin-CAPT-Conformer-GOP",
-        "version": "1.0.0",
+    return {
+        "model_name": "Mandarin-CAPT-Conformer-CTC-INT8",
+        "version": "2.0.0",
         "file_name": "capt_model.onnx",
+        "quantization": "INT8_DYNAMIC",
         "size_mb": round(size_mb, 2),
         "feature": {
-            "sample_rate": 16000,
-            "feature_dim": 80,
-            "window_size_ms": 25,
-            "hop_size_ms": 10,
-            "n_fft": 512,
-            "f_min": 50,
-            "f_max": 7600
+            "sample_rate": SAMPLE_RATE,
+            "feature_dim": FEATURE_DIM,
+            "window_size_ms": WINDOW_SIZE_MS,
+            "hop_size_ms": HOP_SIZE_MS,
+            "n_fft": N_FFT,
+            "f_min": F_MIN,
+            "f_max": F_MAX
         },
-        "initials": [
-            "none", "b", "p", "m", "f", "d", "t", "n", "l", "g", "k", "h",
-            "j", "q", "x", "zh", "ch", "sh", "r", "z", "c", "s"
-        ],
-        "finals": [
-            "a", "o", "e", "ai", "ei", "ao", "ou", "an", "en", "ang", "eng", "ong",
-            "i", "ia", "iao", "ie", "iu", "ian", "in", "iang", "ing", "iong",
-            "u", "ua", "uo", "uai", "ui", "uan", "un", "uang", "ueng",
-            "v", "ve", "van", "vn", "er"
-        ],
-        "tones": ["1", "2", "3", "4", "5"],
+        "ctc_tokens": ctc_tokens,
+        "initials": initials,
+        "finals": finals,
+        "tones": tones,
         "diagnostics": {
             "initials": {
                 "zh": { "confused_with": "z", "advice": "Âm zh: Cần uốn cong đầu lưỡi chạm ngạc cứng (âm đầu lưỡi sau), tránh để thẳng lưỡi như z." },
@@ -175,22 +196,88 @@ def export_model():
                 "ang": { "confused_with": "an",  "advice": "Vần ang: Âm mũi sau (cuống lưỡi nâng chạm ngạc mềm, miệng mở rộng)." },
                 "en":  { "confused_with": "eng", "advice": "Vần en: Âm mũi trước, dứt khoát khép đầu lưỡi vào lợi." },
                 "eng": { "confused_with": "en",  "advice": "Vần eng: Âm mũi sau, cuống lưỡi nâng lên." },
-                "v":   { "confused_with": "u",   "advice": "Vần ü (v): Phát âm giống 'uy', giữ tròn môi cố định từ đầu đến cuối âm." }
+                "v":   { "confused_with": "u",   "advice": "Vần ü (v): Phát âm giống 'uy', giữ tròn môi cố định từ đầu đến cuối âm." },
+                "ve":  { "confused_with": "ue",  "advice": "Vần üe (ve): Tròn môi từ ü trượt sang e." }
             },
             "tones": {
                 "1": "Thanh 1 (55): Cao bằng, ngân đều ở mức cao nhất, không được hạ giọng như dấu huyền.",
                 "2": "Thanh 2 (35): Vuốt đều từ mức trung lên mức cao, tự nhiên như dấu sắc nhẹ.",
                 "3": "Thanh 3 (214): Hạ giọng sâu xuống đáy rồi hơi lượn nhẹ, tránh đọc thành dấu hỏi cộc.",
-                "4": "Thanh 4 (51): Rơi dốc dứt khoát từ 5 xuống 1, nhấn mạnh và dứt khoát, tuyệt đối không đọc thành dấu sắc!",
+                "4": "Thanh 4 (51): Rơi dốc dứt khoát từ 5 xuống 1, nhấn mạnh dứt khoát, tuyệt đối không đọc thành dấu sắc!",
                 "5": "Thanh nhẹ: Đọc ngắn, nhẹ và lướt."
             }
         }
     }
 
-    with open(meta_path, 'w', encoding='utf-8') as f:
-        json.dump(meta, f, ensure_ascii=False, indent=2)
 
-    print(f'✅ Written metadata to {meta_path}')
+def export_and_quantize_model():
+    """Exports float32 ONNX model and quantizes it dynamically to INT8."""
+    output_dir = os.path.join(os.path.dirname(__file__), '..', 'assets', 'models', 'speech')
+    os.makedirs(output_dir, exist_ok=True)
+
+    raw_onnx_path = os.path.join(output_dir, 'capt_model_fp32.onnx')
+    final_onnx_path = os.path.join(output_dir, 'capt_model.onnx')
+    meta_path = os.path.join(output_dir, 'capt_meta.json')
+
+    print('Building Industrial Mandarin CAPT Conformer-CTC Model...')
+    torch.manual_seed(2026)
+    model = MandarinCaptConformerCtc(
+        input_dim=FEATURE_DIM,
+        embed_dim=EMBED_DIM,
+        num_blocks=NUM_CONFORMER_BLOCKS
+    )
+    model.eval()
+
+    total_params = sum(p.numel() for p in model.parameters())
+    print(f'Total model parameters: {total_params:,} (~{total_params * 4 / (1024 * 1024):.2f} MB float32)')
+
+    dummy_mel = torch.randn(1, 100, FEATURE_DIM)
+    print(f'Exporting float32 ONNX to {raw_onnx_path}...')
+    torch.onnx.export(
+        model,
+        dummy_mel,
+        raw_onnx_path,
+        input_names=['mel'],
+        output_names=['ctc_logits', 'initial_logits', 'final_logits', 'tone_logits', 'quality_score'],
+        dynamic_axes={
+            'mel': {0: 'batch', 1: 'time'},
+            'ctc_logits': {0: 'batch', 1: 'time'},
+            'initial_logits': {0: 'batch'},
+            'final_logits': {0: 'batch'},
+            'tone_logits': {0: 'batch'},
+            'quality_score': {0: 'batch'}
+        },
+        opset_version=17,
+        dynamo=False
+    )
+
+    # Save as self-contained standalone model without external data chunks
+    m = onnx.load(raw_onnx_path, load_external_data=True)
+    onnx.save_model(m, raw_onnx_path, save_as_external_data=False)
+    data_file = raw_onnx_path + '.data'
+    if os.path.exists(data_file):
+        os.remove(data_file)
+
+    print('Applying Dynamic INT8 Quantization (weights -> uint8/int8)...')
+    quantize_dynamic(
+        model_input=raw_onnx_path,
+        model_output=final_onnx_path,
+        weight_type=QuantType.QUInt8
+    )
+
+    # Clean up intermediate float32 artifact
+    if os.path.exists(raw_onnx_path):
+        os.remove(raw_onnx_path)
+
+    final_size_mb = os.path.getsize(final_onnx_path) / (1024 * 1024)
+    print(f'✅ Successfully produced INT8 ONNX Model: {final_size_mb:.2f} MB at {final_onnx_path}')
+
+    metadata = build_metadata(final_size_mb)
+    with open(meta_path, 'w', encoding='utf-8') as f:
+        json.dump(metadata, f, ensure_ascii=False, indent=2)
+
+    print(f'✅ Successfully written metadata to {meta_path}')
+
 
 if __name__ == '__main__':
-    export_model()
+    export_and_quantize_model()

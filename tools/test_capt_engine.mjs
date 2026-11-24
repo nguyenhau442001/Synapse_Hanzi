@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { decomposePinyin, scoreCaptPrediction, parsePinyinTone } from '../src/islands/GopScorer.js';
+import { decomposePinyin, scoreCaptPrediction, parsePinyinTone, decodeCtcLogits, CTC_TOKENS_LIST } from '../src/islands/GopScorer.js';
 import { extractLogMelSpectrogram, melFramesToFlatTensor } from '../src/islands/AudioFeatureExtractor.js';
 
 console.log('Testing GOP & Conformer CAPT Engine...');
@@ -110,6 +110,42 @@ console.log('Testing GOP & Conformer CAPT Engine...');
   assert.ok(!res.initial.passed, 'Initial should not pass when confusing zh with z');
   assert.ok(res.initial.advice.includes('uốn cong đầu lưỡi'), 'Must include Vietnamese learner diagnosis advice');
   console.log(`✅ PASSED: Vietnamese learner error correctly diagnosed: "${res.initial.advice}"`);
+}
+
+// Test 6: CTC Greedy Decoding and Collapse Logic
+{
+  // Construct 10 frames of 64 tokens:
+  // Frames 0-2: blank (0)
+  // Frames 3-4: token 'zh' (index in CTC_TOKENS_LIST)
+  // Frames 5-7: token 'ong'
+  // Frames 8-9: blank (0)
+  const zhIdx = CTC_TOKENS_LIST.indexOf('zh');
+  const ongIdx = CTC_TOKENS_LIST.indexOf('ong');
+  assert.ok(zhIdx > 0, 'zh token must exist in CTC_TOKENS_LIST');
+  assert.ok(ongIdx > 0, 'ong token must exist in CTC_TOKENS_LIST');
+
+  const numFrames = 10;
+  const vocabSize = 64;
+  const data = new Float32Array(numFrames * vocabSize).fill(-10);
+
+  // Set dominant tokens per frame
+  for (let f = 0; f < 3; f++) data[f * vocabSize + 0] = 5.0; // blank
+  for (let f = 3; f < 5; f++) data[f * vocabSize + zhIdx] = 6.0; // zh
+  for (let f = 5; f < 8; f++) data[f * vocabSize + ongIdx] = 6.0; // ong
+  for (let f = 8; f < 10; f++) data[f * vocabSize + 0] = 5.0; // blank
+
+  const ctcTensor = {
+    data,
+    dims: [1, numFrames, vocabSize]
+  };
+
+  const decoded = decodeCtcLogits(ctcTensor);
+  assert.deepEqual(decoded.recognizedTokens, ['zh', 'ong']);
+  assert.equal(decoded.recognizedText, 'zh ong');
+  assert.ok(decoded.averageConfidence > 0.8);
+  assert.ok(decoded.durations.initialDurationMs > 0);
+  assert.ok(decoded.durations.finalDurationMs > 0);
+  console.log(`✅ PASSED: CTC Greedy Decoder collapsed blanks and repeated tokens accurately: "${decoded.recognizedText}"`);
 }
 
 console.log('\nAll CAPT Engine tests passed successfully!');

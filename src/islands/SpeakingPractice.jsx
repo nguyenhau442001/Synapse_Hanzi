@@ -40,10 +40,11 @@ import {
 export const SPEAKING_LABELS = Object.freeze({
   HEADER_TITLE: 'Phòng Luyện Nói & Chấm Điểm Thanh Điệu AI',
   HEADER_SUBTITLE: 'Phân tích cao độ F0 (YIN) & Biến điệu Sandhi chuẩn hóa 100% Client-side',
-  DEEP_AI_ACTIVE: 'AI Conformer (ONNX): Đang hoạt động 100% Offline (Chấm Âm đầu · Vần · Thanh điệu)',
-  DEEP_AI_INACTIVE: 'AI Conformer (ONNX 14MB): Chưa kích hoạt',
+  DEEP_AI_ACTIVE: 'AI Conformer-CTC (INT8): Đang hoạt động 100% Offline (Chấm Âm đầu · Vần · Thanh điệu)',
+  DEEP_AI_INACTIVE: 'AI Conformer-CTC (INT8 8.2MB): Chưa kích hoạt',
   DEEP_AI_DOWNLOADING: 'Đang tải...',
   DEEP_AI_ACTIVATE: '⚡ Kích hoạt AI Chuyên Sâu',
+  DEEP_AI_BUTTON_LABEL: 'Bật AI (8.2MB)',
   TAB_TONE_TRAINER: '📊 Luyện Thanh Điệu Trực Quan',
   TAB_VOCAB_PRACTICE: '🎙️ Luyện Phát Âm Từ Vựng HSK',
   TAB_MINIMAL_PAIRS: '⚡ Cặp Âm Dễ Nhầm (Người Việt)',
@@ -1165,8 +1166,14 @@ function SpeakingPracticeApp() {
                 <div class="capt-deep-analysis">
                   <div class="capt-deep-title">
                     <span>🔬 Phân Tích Ngữ Âm Chuyên Sâu (ONNX GOP)</span>
-                    <span class="capt-model-tag">Neural Conformer</span>
+                    <span class="capt-model-tag">Conformer-CTC INT8</span>
                   </div>
+                  {captResult.recognizedText && (
+                    <div class="capt-recognized-preview">
+                      <span class="capt-recognized-label">Âm vị nhận diện:</span>
+                      <strong class="capt-recognized-text">{captResult.recognizedText}</strong>
+                    </div>
+                  )}
                   <div class="capt-pillar-row">
                     {/* Initial */}
                     <div class={`capt-pillar-card ${captResult.initial.passed ? 'passed' : 'warning'}`}>
@@ -1205,7 +1212,7 @@ function SpeakingPracticeApp() {
               {!isDeepAiReady && (
                 <div class="deep-ai-cta-banner">
                   <span class="deep-ai-cta-text">
-                    💡 Chấm thêm độ chuẩn của âm đầu (zh/z, ch/c, sh/s) & vần (an/ang, u/ü) bằng Neural Conformer.
+                    💡 Chấm thêm độ chuẩn của âm đầu (zh/z, ch/c, sh/s) & vần (an/ang, u/ü) bằng Neural Conformer-CTC.
                   </span>
                   <button
                     type="button"
@@ -1213,7 +1220,7 @@ function SpeakingPracticeApp() {
                     onClick={handleActivateDeepAi}
                     disabled={isDownloadingModel}
                   >
-                    Bật AI (14MB)
+                    {SPEAKING_LABELS.DEEP_AI_BUTTON_LABEL}
                   </button>
                 </div>
               )}
