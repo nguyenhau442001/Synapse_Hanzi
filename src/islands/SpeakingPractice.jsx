@@ -34,6 +34,35 @@ import {
   PlayCircleIcon,
 } from './Icons.jsx';
 
+/**
+ * Standard Speaking Practice UI Labels and Semantic Constants (Single Source of Truth)
+ */
+export const SPEAKING_LABELS = Object.freeze({
+  HEADER_TITLE: 'Phòng Luyện Nói & Chấm Điểm Thanh Điệu AI',
+  HEADER_SUBTITLE: 'Phân tích cao độ F0 (YIN) & Biến điệu Sandhi chuẩn hóa 100% Client-side',
+  DEEP_AI_ACTIVE: 'AI Conformer (ONNX): Đang hoạt động 100% Offline (Chấm Âm đầu · Vần · Thanh điệu)',
+  DEEP_AI_INACTIVE: 'AI Conformer (ONNX 14MB): Chưa kích hoạt',
+  DEEP_AI_DOWNLOADING: 'Đang tải...',
+  DEEP_AI_ACTIVATE: '⚡ Kích hoạt AI Chuyên Sâu',
+  TAB_TONE_TRAINER: '📊 Luyện Thanh Điệu Trực Quan',
+  TAB_VOCAB_PRACTICE: '🎙️ Luyện Phát Âm Từ Vựng HSK',
+  TAB_MINIMAL_PAIRS: '⚡ Cặp Âm Dễ Nhầm (Người Việt)',
+  TAB_NEWBIE_GUIDE: '📖 Cẩm Nang Thanh Điệu (Newbie)',
+  VISUALIZER_COMBINED_TITLE: 'Hiển thị kết hợp Cao độ F0 và Lớp nền Sóng âm',
+  VISUALIZER_COMBINED_LABEL: '📊 Kết Hợp (Cao Độ + Sóng Âm)',
+  VISUALIZER_DUAL_TITLE: 'So sánh trực quan 2 tầng dạng sóng Studio vs Bạn',
+  VISUALIZER_DUAL_LABEL: '🌊 Dạng Sóng A/B (Mẫu vs Bạn)',
+  SAMPLE_AUDIO_TITLE: 'Nghe phát âm chuẩn studio',
+  SAMPLE_AUDIO_LABEL: 'Nghe Audio Mẫu',
+  RECORD_STOP_TITLE: 'Bấm để dừng và chấm điểm',
+  RECORD_START_TITLE: 'Bấm để bắt đầu ghi âm',
+  RECORDING_ACTIVE: 'Đang Thu Âm (Bấm để Dừng)',
+  RECORDING_IDLE: 'Bấm Nói (Ghi Âm & Chấm Điểm)',
+  USER_AUDIO_TITLE: 'Nghe lại giọng bạn vừa thu âm',
+  USER_AUDIO_PLAYING: 'Đang Phát...',
+  USER_AUDIO_IDLE: 'Nghe Giọng Mình (A/B)',
+});
+
 // Minimal tone pair curated drills for Vietnamese learners
 const MINIMAL_TONE_PAIRS = [
   {
@@ -871,9 +900,9 @@ function SpeakingPracticeApp() {
         <div class="speaking-title-row">
           <div class="speaking-badge-chip">
             <MicIcon size={18} />
-            <span>Phòng Luyện Nói & Chấm Điểm Thanh Điệu AI</span>
+            <span>{SPEAKING_LABELS.HEADER_TITLE}</span>
           </div>
-          <span class="speaking-subtitle">Phân tích cao độ F0 (YIN) & Biến điệu Sandhi chuẩn hóa 100% Client-side</span>
+          <span class="speaking-subtitle">{SPEAKING_LABELS.HEADER_SUBTITLE}</span>
         </div>
 
         {/* Deep AI ONNX Model Activation Bar */}
@@ -882,8 +911,8 @@ function SpeakingPracticeApp() {
             <span class={`deep-ai-pulse-dot ${isDeepAiReady ? '' : 'inactive'}`}></span>
             <span>
               {isDeepAiReady
-                ? 'AI Conformer (ONNX): Đang hoạt động 100% Offline (Chấm Âm đầu · Vần · Thanh điệu)'
-                : 'AI Conformer (ONNX 14MB): Chưa kích hoạt'}
+                ? SPEAKING_LABELS.DEEP_AI_ACTIVE
+                : SPEAKING_LABELS.DEEP_AI_INACTIVE}
             </span>
           </div>
           {!isDeepAiReady && (
@@ -893,35 +922,39 @@ function SpeakingPracticeApp() {
               onClick={handleActivateDeepAi}
               disabled={isDownloadingModel}
             >
-              {isDownloadingModel ? 'Đang tải...' : '⚡ Kích hoạt AI Chuyên Sâu'}
+              {isDownloadingModel ? SPEAKING_LABELS.DEEP_AI_DOWNLOADING : SPEAKING_LABELS.DEEP_AI_ACTIVATE}
             </button>
           )}
         </div>
 
         <div class="speaking-mode-tabs" role="tablist">
           <button
+            type="button"
             class={`speaking-mode-btn ${activeTab === 'toneTrainer' ? 'active' : ''}`}
             onClick={() => setActiveTab('toneTrainer')}
           >
-            📊 Luyện Thanh Điệu Trực Quan
+            {SPEAKING_LABELS.TAB_TONE_TRAINER}
           </button>
           <button
+            type="button"
             class={`speaking-mode-btn ${activeTab === 'vocabPractice' ? 'active' : ''}`}
             onClick={() => setActiveTab('vocabPractice')}
           >
-            🎙️ Luyện Phát Âm Từ Vựng HSK
+            {SPEAKING_LABELS.TAB_VOCAB_PRACTICE}
           </button>
           <button
+            type="button"
             class={`speaking-mode-btn ${activeTab === 'minimalPairs' ? 'active' : ''}`}
             onClick={() => setActiveTab('minimalPairs')}
           >
-            ⚡ Cặp Âm Dễ Nhầm (Người Việt)
+            {SPEAKING_LABELS.TAB_MINIMAL_PAIRS}
           </button>
           <button
+            type="button"
             class={`speaking-mode-btn ${activeTab === 'newbieGuide' ? 'active' : ''}`}
             onClick={() => setActiveTab('newbieGuide')}
           >
-            📖 Cẩm Nang Thanh Điệu (Newbie)
+            {SPEAKING_LABELS.TAB_NEWBIE_GUIDE}
           </button>
         </div>
       </header>
@@ -964,17 +997,17 @@ function SpeakingPracticeApp() {
                   type="button"
                   class={`canvas-mode-btn ${visualizerMode === 'combined' ? 'active' : ''}`}
                   onClick={() => setVisualizerMode('combined')}
-                  title="Hiển thị kết hợp Cao độ F0 và Lớp nền Sóng âm"
+                  title={SPEAKING_LABELS.VISUALIZER_COMBINED_TITLE}
                 >
-                  📊 Kết Hợp (Cao Độ + Sóng Âm)
+                  {SPEAKING_LABELS.VISUALIZER_COMBINED_LABEL}
                 </button>
                 <button
                   type="button"
                   class={`canvas-mode-btn ${visualizerMode === 'dualWaveform' ? 'active' : ''}`}
                   onClick={() => setVisualizerMode('dualWaveform')}
-                  title="So sánh trực quan 2 tầng dạng sóng Studio vs Bạn"
+                  title={SPEAKING_LABELS.VISUALIZER_DUAL_TITLE}
                 >
-                  🌊 Dạng Sóng A/B (Mẫu vs Bạn)
+                  {SPEAKING_LABELS.VISUALIZER_DUAL_LABEL}
                 </button>
               </div>
 
@@ -1034,17 +1067,17 @@ function SpeakingPracticeApp() {
               type="button"
               class="speaking-btn sample-btn"
               onClick={handlePlaySample}
-              title="Nghe phát âm chuẩn studio"
+              title={SPEAKING_LABELS.SAMPLE_AUDIO_TITLE}
             >
               <AudioIcon size={20} />
-              <span>Nghe Audio Mẫu</span>
+              <span>{SPEAKING_LABELS.SAMPLE_AUDIO_LABEL}</span>
             </button>
 
             <button
               type="button"
               class={`speaking-btn record-btn ${isRecording ? 'recording' : ''}`}
               onClick={handleToggleRecord}
-              title={isRecording ? 'Bấm để dừng và chấm điểm' : 'Bấm để bắt đầu ghi âm'}
+              title={isRecording ? SPEAKING_LABELS.RECORD_STOP_TITLE : SPEAKING_LABELS.RECORD_START_TITLE}
             >
               <span class="rec-icon-wrap">
                 {isRecording ? (
@@ -1053,7 +1086,7 @@ function SpeakingPracticeApp() {
                   <MicIcon size={20} />
                 )}
               </span>
-              <span>{isRecording ? 'Đang Thu Âm (Bấm để Dừng)' : 'Bấm Nói (Ghi Âm & Chấm Điểm)'}</span>
+              <span>{isRecording ? SPEAKING_LABELS.RECORDING_ACTIVE : SPEAKING_LABELS.RECORDING_IDLE}</span>
             </button>
 
             <button
@@ -1061,10 +1094,10 @@ function SpeakingPracticeApp() {
               class="speaking-btn user-btn"
               onClick={handlePlayUserAudio}
               disabled={!recordedAudioUrl}
-              title="Nghe lại giọng bạn vừa thu âm"
+              title={SPEAKING_LABELS.USER_AUDIO_TITLE}
             >
               <PlayCircleIcon size={20} />
-              <span>{isPlayingUserAudio ? 'Đang Phát...' : 'Nghe Giọng Mình (A/B)'}</span>
+              <span>{isPlayingUserAudio ? SPEAKING_LABELS.USER_AUDIO_PLAYING : SPEAKING_LABELS.USER_AUDIO_IDLE}</span>
             </button>
           </div>
         </section>
