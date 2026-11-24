@@ -76,6 +76,7 @@ Before running any of these commands, stop and ask me first:
 
 - **English Only for Code & Comments**: All code, function/variable names, docstrings, inline comments, CLI help, and console logs MUST be written 100% in English. No Vietnamese or bilingual mixing in code files.
 - **Human-In-The-Loop (HITL) Approval**: Always present the diff/code plan first, trigger interactive clickable approval options (pop-up buttons) and wait for user selection before modifying files on disk.
+- **Concise, High-Signal Communication**: Be extremely concise. Focus strictly on key points, architecture choices, and diffs. Never write lengthy, wordy, or repetitive prose.
 
 ## Architecture-First Workflow (Strict 3-Step Development)
 

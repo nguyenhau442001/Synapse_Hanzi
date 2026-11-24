@@ -7,9 +7,10 @@
 //   npm run build:islands     # rebuild after editing src/islands/**
 import { defineConfig } from 'vite';
 import preact from '@preact/preset-vite';
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  plugins: [preact()],
+  plugins: [tailwindcss(), preact()],
   publicDir: false,
   build: {
     outDir: 'assets/js/preact',

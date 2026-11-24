@@ -43,6 +43,7 @@ BUNDLE_FILES = [
     "assets/css/pwa-install.css",
     "assets/css/share-modal.css",
     "assets/css/design-system.css",
+    "assets/js/preact/hanzi-mind.css",
 ]
 
 OUTPUT_FILE = ROOT / "assets" / "flashcards.css"
