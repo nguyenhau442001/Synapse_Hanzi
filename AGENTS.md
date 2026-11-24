@@ -77,6 +77,23 @@ Before running any of these commands, stop and ask me first:
 - **English Only for Code & Comments**: All code, function/variable names, docstrings, inline comments, CLI help, and console logs MUST be written 100% in English. No Vietnamese or bilingual mixing in code files.
 - **Human-In-The-Loop (HITL) Approval**: Always present the diff/code plan first, trigger interactive clickable approval options (pop-up buttons) and wait for user selection before modifying files on disk.
 
+## Architecture-First Workflow (Strict 3-Step Development)
+
+When designing or implementing new features/components, agents MUST strictly follow this 3-step workflow:
+
+1. **Step 1: Architectural Consulting (No Immediate Coding)**
+   - Do NOT rush into writing code immediately.
+   - First, analyze the architecture: where data is stored, which component manages state, and data flow from UI to storage/DB.
+   - Present at least 2 architectural options with pros and cons for the user to review and select.
+2. **Step 2: Interface & Data Contract First**
+   - Define clear data structures (TypeScript interfaces or JSDoc schemas) before implementing logic.
+   - Explain the meaning and purpose of each field.
+   - Ensure the user understands and signs off on the data contract before writing implementations.
+3. **Step 3: Incremental Implementation & Diff Review**
+   - Scope each step to only core logic or a single component at a time.
+   - Explicitly explain any complex algorithms or non-trivial logic decisions (e.g., audio thresholds, formulas, state machines).
+   - Review file diffs incrementally; never modify multiple unrelated files at once.
+
 ## Modern Tooling & Anti-Reinvention Rules
 
 - **Avoid Reinventing the Wheel**: Do not hand-roll custom infrastructure from scratch (such as custom DOM routers, complex monolithic manual state engines, or raw inline SVGs) when standard, well-tested libraries exist.

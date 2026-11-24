@@ -23,6 +23,13 @@ Read and follow all project rules in AGENTS.md:
 - Do not hand-roll custom infrastructure (e.g. routers, complex manual state stores, raw SVGs) when established libraries exist.
 - Use standard icon sets (e.g., `lucide-preact`) and modern modular UI rather than growing monolithic CSS.
 
+## Architecture-First Workflow
+
+Always follow the 3-step feature development:
+1. **Architectural Consulting**: Analyze data flow and component states; propose at least 2 architectural options with pros/cons before writing code.
+2. **Interface & Contract First**: Define and explain TypeScript/JSDoc data structures before implementing logic.
+3. **Incremental Implementation & Diff**: Scope edits to single components/modules and explain any non-trivial logic clearly.
+
 ## Final summary
 
 - After finishing a task, summarize the result in **at most 3 lines** (overrides the longer summary format in AGENTS.md).
