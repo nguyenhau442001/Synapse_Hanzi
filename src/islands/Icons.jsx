@@ -12,6 +12,8 @@ import {
   Star,
   Settings,
   Info,
+  Mic,
+  CirclePlay,
 } from 'lucide-preact';
 
 /**
@@ -110,6 +112,14 @@ export function SettingsIcon({ size = 18, strokeWidth = 2, className = '', color
 
 export function InfoIcon({ size = 18, strokeWidth = 2, className = '', color = 'currentColor', ...props }) {
   return <Info size={size} strokeWidth={strokeWidth} class={className} color={color} {...props} />;
+}
+
+export function MicIcon({ size = 18, strokeWidth = 2, className = '', color = 'currentColor', ...props }) {
+  return <Mic size={size} strokeWidth={strokeWidth} class={className} color={color} {...props} />;
+}
+
+export function PlayCircleIcon({ size = 18, strokeWidth = 2, className = '', color = 'currentColor', ...props }) {
+  return <CirclePlay size={size} strokeWidth={strokeWidth} class={className} color={color} {...props} />;
 }
 
 /**

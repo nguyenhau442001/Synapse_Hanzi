@@ -1,6 +1,6 @@
 {
   "name": "hanzi-mind",
-  "version": "3.64.1",
+  "version": "3.65.0",
   "description": "汉字思维 (Hànzì Sīwéi) · Hanzi Mind — Trạm học từ vựng chữ Hán đa giác quan, hiện đại, mỹ học truyền thống Đông phương và 100% Offline (PWA)",
   "private": true,
   "scripts": {
@@ -10,7 +10,7 @@
     "build:css": "python3 tools/bundle_css.py",
     "build:pwa": "node tools/build_pwa.mjs",
     "preview": "vite preview",
-    "test": "node tools/test_fast_review_pinyin.js && node --no-warnings tools/test_srs_engine.mjs && node --no-warnings tools/test_pinyin_tones.mjs && node --no-warnings tools/test_tone_sandhi.mjs && node --no-warnings tools/test_tone_scorer.mjs && node --no-warnings tools/test_pitch_calibration.mjs && node --no-warnings tools/test_waveform_extractor.mjs && node --no-warnings tools/test_capt_engine.mjs && node --no-warnings tools/test_newbie_tones.mjs && node --no-warnings tools/test_writing_ink.mjs && node --no-warnings tools/test_vocab_cache.mjs && node --no-warnings tools/test_format_study_level.mjs && node --no-warnings tools/test_pwa_install_prompt.mjs && node --no-warnings tools/test_share_modal.mjs && node --no-warnings tools/test_sentence_audio.mjs && node --no-warnings tools/test_hsk30_exam.mjs && node --no-warnings tools/test_hskk_exam.mjs && node --no-warnings tools/test_db_migration.mjs && python3 tools/check_reading_covers.py",
+    "test": "node tools/test_fast_review_pinyin.js && node --no-warnings tools/test_srs_engine.mjs && node --no-warnings tools/test_pinyin_tones.mjs && node --no-warnings tools/test_tone_sandhi.mjs && node --no-warnings tools/test_tone_scorer.mjs && node --no-warnings tools/test_pitch_calibration.mjs && node --no-warnings tools/test_waveform_extractor.mjs && node --no-warnings tools/test_capt_engine.mjs && node --no-warnings tools/test_newbie_tones.mjs && node --no-warnings tools/test_writing_ink.mjs && node --no-warnings tools/test_vocab_cache.mjs && node --no-warnings tools/test_format_study_level.mjs && node --no-warnings tools/test_pwa_install_prompt.mjs && node --no-warnings tools/test_share_modal.mjs && node --no-warnings tools/test_sentence_audio.mjs && node --no-warnings tools/test_hsk30_exam.mjs && node --no-warnings tools/test_hskk_exam.mjs && node --no-warnings tools/test_db_migration.mjs && node --no-warnings tools/test_hsk_exam_hub.mjs && python3 tools/check_reading_covers.py",
     "version:patch": "python3 tools/bump_version.py patch",
     "version:minor": "python3 tools/bump_version.py minor",
     "version:major": "python3 tools/bump_version.py major"

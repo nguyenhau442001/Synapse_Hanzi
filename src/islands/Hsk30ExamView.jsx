@@ -10,6 +10,9 @@ import { useState, useEffect, useRef } from 'preact/hooks';
 import { onDomReady } from './domReady';
 import { LocalSpeechAI } from './LocalSpeechAI.js';
 import { cleanChineseCharacters } from './ToneSandhi.js';
+import { HskDictationStudio } from './HskDictationStudio.jsx';
+import { HskShadowingStudio } from './HskShadowingStudio.jsx';
+import { HskErrorNotebook, HSK30_ERROR_NOTEBOOK_KEY } from './HskErrorNotebook.jsx';
 
 export const HSK30_EXAM_STORAGE_KEY = 'hsk30_exam_history_v1';
 export const HSKK_EXAM_STORAGE_KEY = 'hskk_exam_history_v1';
@@ -102,6 +105,8 @@ function normalizeSentence(str) {
 
 export function Hsk30ExamComponent() {
   // Navigation & Category states
+  const [hubMode, setHubMode] = useState('cbt'); // 'cbt' | 'dictation' | 'shadowing' | 'error_notebook'
+  const [unresolvedErrorCount, setUnresolvedErrorCount] = useState(0);
   const [examCategory, setExamCategory] = useState('hsk30'); // 'hsk30' (Written CBT) | 'hskk' (Spoken)
   const [examMeta, setExamMeta] = useState(null);
   const [hskkMeta, setHskkMeta] = useState(null);
@@ -156,6 +161,21 @@ export function Hsk30ExamComponent() {
       .then((data) => setHskkMeta(data))
       .catch((e) => console.error('Failed to load HSKK catalog:', e));
   }, []);
+
+  // Sync unresolved errors count from Error Notebook storage
+  useEffect(() => {
+    try {
+      const raw = localStorage.getItem(HSK30_ERROR_NOTEBOOK_KEY);
+      if (raw) {
+        const list = JSON.parse(raw);
+        if (Array.isArray(list)) {
+          setUnresolvedErrorCount(list.filter((i) => !i.resolved).length);
+        }
+      }
+    } catch (e) {
+      // Graceful fallback
+    }
+  }, [hubMode]);
 
   // Timer countdown loop
   useEffect(() => {
@@ -564,6 +584,7 @@ export function Hsk30ExamComponent() {
     let listeningTotal = 0;
     let readingTotal = 0;
     let writingTotal = 0;
+    const wrongQuestions = [];
 
     questions.forEach((q) => {
       const userAns = userAnswers[q.id];
@@ -578,6 +599,14 @@ export function Hsk30ExamComponent() {
         isCorrect = typeof userAns === 'string' && userAns.trim().length >= 4;
       } else {
         isCorrect = userAns === q.correct_answer || String(userAns) === String(q.correct_answer);
+      }
+
+      if (!isCorrect) {
+        wrongQuestions.push({
+          question: q,
+          userAns: userAns,
+          sectionKey: q.sectionKey || (q.sectionName && q.sectionName.includes('听力') ? 'listening' : q.sectionName && q.sectionName.includes('书写') ? 'writing' : 'reading')
+        });
       }
 
       if (q.sectionKey === 'listening' || q.sectionName.includes('听力')) {
@@ -620,6 +649,37 @@ export function Hsk30ExamComponent() {
 
     setExamResult(resultObj);
     setExamState('result');
+
+    // Auto record wrong questions to Error Notebook
+    try {
+      const existingRaw = localStorage.getItem(HSK30_ERROR_NOTEBOOK_KEY);
+      const existingList = existingRaw ? JSON.parse(existingRaw) : [];
+      const existingMap = new Map(existingList.map((item) => [item.id, item]));
+
+      wrongQuestions.forEach((wq) => {
+        const errId = `${examData.id}_q${wq.question.number}`;
+        const prev = existingMap.get(errId);
+        existingMap.set(errId, {
+          id: errId,
+          examId: examData.id,
+          examTitle: examData.title,
+          level: currentLevel,
+          partType: wq.sectionKey,
+          questionNumber: wq.question.number,
+          questionData: wq.question,
+          userWrongAnswer: wq.userAns,
+          attemptCount: prev ? (prev.attemptCount || 1) + 1 : 1,
+          resolved: false,
+          savedAt: Date.now()
+        });
+      });
+
+      const updatedErrors = Array.from(existingMap.values()).slice(0, 100);
+      localStorage.setItem(HSK30_ERROR_NOTEBOOK_KEY, JSON.stringify(updatedErrors));
+      setUnresolvedErrorCount(updatedErrors.filter((i) => !i.resolved).length);
+    } catch (e) {
+      console.error('Failed to update error notebook:', e);
+    }
 
     try {
       const raw = localStorage.getItem(HSK30_EXAM_STORAGE_KEY);
@@ -741,6 +801,21 @@ export function Hsk30ExamComponent() {
   // RENDER: LOBBY
   // -------------------------------------------------------------------------
   if (examState === 'lobby') {
+    if (hubMode === 'dictation') {
+      return <HskDictationStudio onBack={() => setHubMode('cbt')} />;
+    }
+    if (hubMode === 'shadowing') {
+      return <HskShadowingStudio onBack={() => setHubMode('cbt')} />;
+    }
+    if (hubMode === 'error_notebook') {
+      return (
+        <HskErrorNotebook
+          onBack={() => setHubMode('cbt')}
+          onStartExam={() => setHubMode('cbt')}
+        />
+      );
+    }
+
     const isHsk30 = examCategory === 'hsk30';
     const hsk30Obj = examMeta && examMeta.levels && examMeta.levels[currentLevel];
     const hsk30Exams = hsk30Obj ? hsk30Obj.exams : [];
@@ -751,6 +826,98 @@ export function Hsk30ExamComponent() {
     return (
       <div class="exam-container">
         <div class="exam-lobby">
+          {/* Top Exam Hub Mode Selector */}
+          <div style="display: flex; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 0.5rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.85rem;">
+            <button
+              type="button"
+              style={{
+                padding: '0.65rem 1.15rem',
+                borderRadius: '0.65rem',
+                fontWeight: 700,
+                fontSize: '0.92rem',
+                cursor: 'pointer',
+                border: hubMode === 'cbt' ? '2px solid #0284c7' : '1px solid #cbd5e1',
+                background: hubMode === 'cbt' ? '#0284c7' : '#ffffff',
+                color: hubMode === 'cbt' ? '#ffffff' : '#334155',
+                boxShadow: hubMode === 'cbt' ? '0 3px 8px rgba(2,132,199,0.25)' : 'none',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.4rem'
+              }}
+              onClick={() => setHubMode('cbt')}
+            >
+              📝 Thi thử CBT & Khẩu ngữ
+            </button>
+
+            <button
+              type="button"
+              style={{
+                padding: '0.65rem 1.15rem',
+                borderRadius: '0.65rem',
+                fontWeight: 700,
+                fontSize: '0.92rem',
+                cursor: 'pointer',
+                border: hubMode === 'dictation' ? '2px solid #059669' : '1px solid #cbd5e1',
+                background: hubMode === 'dictation' ? '#059669' : '#ffffff',
+                color: hubMode === 'dictation' ? '#ffffff' : '#334155',
+                boxShadow: hubMode === 'dictation' ? '0 3px 8px rgba(5,150,105,0.25)' : 'none',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.4rem'
+              }}
+              onClick={() => setHubMode('dictation')}
+            >
+              ✍️ Nghe chép chính tả (听写)
+            </button>
+
+            <button
+              type="button"
+              style={{
+                padding: '0.65rem 1.15rem',
+                borderRadius: '0.65rem',
+                fontWeight: 700,
+                fontSize: '0.92rem',
+                cursor: 'pointer',
+                border: hubMode === 'shadowing' ? '2px solid #0d9488' : '1px solid #cbd5e1',
+                background: hubMode === 'shadowing' ? '#0d9488' : '#ffffff',
+                color: hubMode === 'shadowing' ? '#ffffff' : '#334155',
+                boxShadow: hubMode === 'shadowing' ? '0 3px 8px rgba(13,148,136,0.25)' : 'none',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.4rem'
+              }}
+              onClick={() => setHubMode('shadowing')}
+            >
+              🎙️ Nghe nhại & Cao độ (跟读)
+            </button>
+
+            <button
+              type="button"
+              style={{
+                padding: '0.65rem 1.15rem',
+                borderRadius: '0.65rem',
+                fontWeight: 700,
+                fontSize: '0.92rem',
+                cursor: 'pointer',
+                border: hubMode === 'error_notebook' ? '2px solid #c2410c' : '1px solid #cbd5e1',
+                background: hubMode === 'error_notebook' ? '#c2410c' : '#ffffff',
+                color: hubMode === 'error_notebook' ? '#ffffff' : '#334155',
+                boxShadow: hubMode === 'error_notebook' ? '0 3px 8px rgba(194,65,12,0.25)' : 'none',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.4rem'
+              }}
+              onClick={() => setHubMode('error_notebook')}
+            >
+              📕 Sổ tay câu sai (错题本)
+              {unresolvedErrorCount > 0 && (
+                <span style="background: #fee2e2; color: #991b1b; padding: 0.15rem 0.5rem; border-radius: 999px; font-size: 0.75rem; font-weight: 800;">
+                  {unresolvedErrorCount}
+                </span>
+              )}
+            </button>
+          </div>
+
           <div class="exam-hero">
             <div>
               <h1 class="exam-hero-title">
@@ -1833,6 +2000,16 @@ export function Hsk30ExamComponent() {
             </button>
             <button class="exam-btn-secondary" onClick={() => startExam(examData.file)}>
               Thi lại đề này
+            </button>
+            <button
+              class="exam-btn-secondary"
+              style="background: #fff7ed; color: #c2410c; border: 1px solid #fed7aa; font-weight: 700;"
+              onClick={() => {
+                setExamState('lobby');
+                setHubMode('error_notebook');
+              }}
+            >
+              📕 Mở Sổ tay câu sai (Ôn lại trọng điểm)
             </button>
           </div>
         </div>

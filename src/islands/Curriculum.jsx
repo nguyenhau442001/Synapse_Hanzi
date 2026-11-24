@@ -5,6 +5,13 @@
 // existing flashcard + spaced repetition pipeline.
 import { render } from 'preact';
 import { CURRICULUM_LESSONS } from './curriculumIndex';
+import {
+  AudioIcon,
+  CheckIcon,
+  ArrowRightIcon,
+  ChevronLeftIcon,
+  RotateIcon,
+} from './Icons.jsx';
 
 /* global LEVELS, selectLevel, speakText, readSavedLevelProgress, SpaRouter, primaryTab, APP_VERSION */
 
@@ -231,24 +238,6 @@ function scrollToSection(id) {
   if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
-function SpeakerIcon() {
-  return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z" /><path d="M15.54 8.46a5 5 0 0 1 0 7.07" /></svg>
-  );
-}
-
-function CheckIcon({ size = 14 }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>
-  );
-}
-
-function ArrowIcon() {
-  return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
-  );
-}
-
 function isDone(store, key) {
   return Boolean(store.lessons[key] && store.lessons[key].done);
 }
@@ -344,9 +333,13 @@ function OverviewView({ index, levelId }) {
                   {currentRec && <span class={'ds-pill' + (currentRec.done ? ' ds-pill--success' : ' ds-pill--accent')}>{`Điểm cao nhất ${currentRec.best}%`}</span>}
                 </div>
               </div>
-              <button type="button" class="ds-btn ds-btn--primary ds-btn--lg cur-feature-cta" onClick={() => openLesson(current.key)}>
+              <button
+                type="button"
+                class="ds-btn ds-btn--primary ds-btn--lg cur-feature-cta"
+                onClick={() => openLesson(current.key)}
+              >
                 {featureCta}
-                <ArrowIcon />
+                <ArrowRightIcon size={16} />
               </button>
             </article>
           )}
@@ -363,8 +356,13 @@ function OverviewView({ index, levelId }) {
               const py = details[l.key] && details[l.key].py;
               return (
                 <li class={'cur-lesson-row is-' + state}>
-                  <button type="button" class="cur-lesson-btn" aria-current={state === 'current' ? 'step' : undefined} onClick={() => openLesson(l.key)}>
-                    <span class="cur-lesson-badge" aria-hidden="true">{state === 'done' ? <CheckIcon /> : l.n}</span>
+                  <button
+                    type="button"
+                    class="cur-lesson-btn"
+                    aria-current={state === 'current' ? 'step' : undefined}
+                    onClick={() => openLesson(l.key)}
+                  >
+                    <span class="cur-lesson-badge" aria-hidden="true">{state === 'done' ? <CheckIcon size={14} /> : l.n}</span>
                     <span class="cur-lesson-text">
                       <span class="cur-lesson-title-row">
                         <span class="cur-lesson-zh" lang="zh-CN">{l.zh}</span>
@@ -506,8 +504,12 @@ function LessonView({ lesson, levelData }) {
   return (
     <div class={'cur-wrap cur-lesson' + (ui.hidePinyin ? ' cur-hide-pinyin' : '')}>
       <div class="cur-crumbs">
-        <button type="button" class="cur-back" onClick={backToLessons}>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg>
+        <button
+          type="button"
+          class="cur-back"
+          onClick={backToLessons}
+        >
+          <ChevronLeftIcon size={16} />
           {`Giáo trình ${levelData.name}`}
         </button>
         <span class="cur-crumb-count">{`Bài ${lesson.n} / ${levelData.lessons.length}`}</span>
@@ -568,7 +570,14 @@ function LessonView({ lesson, levelData }) {
             <ul class="cur-examples">
               {g.examples.map((ex) => (
                 <li class="cur-example">
-                  <button type="button" class="cur-speak" onClick={(e) => speak(ex.zh, e)} aria-label="Nghe câu mẫu"><SpeakerIcon /></button>
+                  <button
+                    type="button"
+                    class="cur-speak"
+                    onClick={(e) => speak(ex.zh, e)}
+                    aria-label="Nghe câu mẫu"
+                  >
+                    <AudioIcon size={16} />
+                  </button>
                   <span class="cur-example-text">
                     <span class="cur-example-zh" lang="zh-CN">{ex.zh}</span>
                     <span class="cur-py">{ex.py}</span>
@@ -621,7 +630,7 @@ function CurriculumScreen() {
     return (
       <div class="cur-wrap"><div class="cur-empty" role="alert">
         <span class="cur-empty-icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7" /><path d="M21 4v5h-5" /></svg>
+          <RotateIcon size={22} />
         </span>
         <h2 class="cur-empty-title">Chưa tải được giáo trình</h2>
         <p class="cur-empty-text">{`${ui.error} Kiểm tra kết nối mạng rồi thử lại.`}</p>
