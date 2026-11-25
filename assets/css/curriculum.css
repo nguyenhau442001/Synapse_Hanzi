@@ -1670,7 +1670,7 @@ body.curriculum-view-active:has(#screenCurriculum .cur-lesson) {
 }
 
 .cur-ws-step {
-  min-height: 40px;
+  min-height: 44px;
   display: inline-flex;
   align-items: center;
   justify-content: flex-start;
