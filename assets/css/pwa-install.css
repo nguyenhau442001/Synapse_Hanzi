@@ -39,7 +39,7 @@
 }
 
 :root[data-theme="dark"] .pwa-install-banner {
-  background: rgba(30, 41, 59, 0.94);
+  background: rgba(41, 40, 38, 0.94);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55);
 }
 

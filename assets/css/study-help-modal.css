@@ -45,8 +45,8 @@
 }
 
 :root[data-theme="dark"] .study-help-box {
-  background: var(--card-bg, #1C2022);
-  border-color: var(--border, #343A3C);
+  background: var(--card-bg, #201F1D);
+  border-color: var(--border, #3A3937);
   box-shadow: 0 28px 70px rgba(0, 0, 0, 0.65);
 }
 

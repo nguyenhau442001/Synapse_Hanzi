@@ -65,7 +65,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --graded-card-bg: var(--card-bg, #181920);
+    --graded-card-bg: var(--card-bg, #1A1917);
     --graded-border: var(--border, #282a35);
     --graded-text-primary: var(--text-primary, #f3f3f6);
     --graded-text-secondary: var(--text-secondary, #a8a7b2);
@@ -101,7 +101,7 @@
     --graded-legend-bg: rgba(0, 0, 0, 0.2);
     --graded-legend-border: rgba(255, 255, 255, 0.05);
 
-    --graded-popover-bg: #181920;
+    --graded-popover-bg: #1A1917;
     --graded-popover-border: rgba(245, 158, 11, 0.4);
     --graded-popover-shadow: 0 16px 36px rgba(0, 0, 0, 0.5), 0 0 1px 1px rgba(245, 158, 11, 0.2);
 
@@ -119,8 +119,8 @@
 }
 
 :root[data-theme="dark"] {
-  --graded-card-bg: var(--card-bg, #181920);
-  --graded-border: var(--border, #282a35);
+  --graded-card-bg: var(--card-bg, #1A1917);
+  --graded-border: var(--border, #2B2A28);
   --graded-text-primary: var(--text-primary, #f3f3f6);
   --graded-text-secondary: var(--text-secondary, #a8a7b2);
   --graded-text-muted: var(--text-tertiary, #878692);
@@ -155,7 +155,7 @@
   --graded-legend-bg: rgba(0, 0, 0, 0.2);
   --graded-legend-border: rgba(255, 255, 255, 0.05);
 
-  --graded-popover-bg: #181920;
+  --graded-popover-bg: #1A1917;
   --graded-popover-border: rgba(245, 158, 11, 0.4);
   --graded-popover-shadow: 0 16px 36px rgba(0, 0, 0, 0.5), 0 0 1px 1px rgba(245, 158, 11, 0.2);
 
@@ -1269,7 +1269,7 @@ body.graded-reading-active #screenGradedReading {
   --rd-srs-line: #C5A46D;
   --rd-plus-line: #E0675C;
   --rd-play-bg: rgba(214, 85, 74, 0.14);
-  --rd-bar-bg: rgba(23, 25, 29, 0.92);
+  --rd-bar-bg: rgba(26, 25, 23, 0.92);
 }
 
 /* Sticky reading toolbar: back, title, audio / pinyin / translation, display settings */
@@ -2508,18 +2508,18 @@ body.graded-translation-hidden .graded-sentence-vi {
 }
 
 :root[data-theme="dark"] {
-  --manga-stage: #1E2126;
+  --manga-stage: #22211F;
   --manga-stage-paper: #2A2620;
-  --manga-stage-dark: #121418;
+  --manga-stage-dark: #151412;
   --manga-soft: rgba(200, 70, 59, 0.16);
   --manga-soft-border: rgba(214, 85, 74, 0.45);
-  --manga-chip: #2A2F38;
+  --manga-chip: #302F2D;
   --manga-label: #9C9588;
-  --manga-band-none: #4A505B;
+  --manga-band-none: #51504E;
   --manga-band-adv: #9C97D8;
   --manga-active-soft: rgba(214, 85, 74, 0.2);
   --manga-marker: #A39C90;
-  --manga-marker-bg: rgba(30, 33, 38, 0.92);
+  --manga-marker-bg: rgba(34, 33, 31, 0.92);
   --manga-tint-basic: rgba(110, 170, 150, 0.24);
   --manga-tint-mid: rgba(214, 180, 120, 0.24);
   --manga-tint-adv: rgba(156, 151, 216, 0.26);
@@ -3163,20 +3163,20 @@ body.manga-reading .mobile-bottom-nav { display: none; }
 /* Dark mode for comic speech balloons */
 :root[data-theme="dark"] .manga-bubble.is-comic-balloon,
 body.dark-mode .manga-bubble.is-comic-balloon {
-  background: rgba(30, 33, 40, 0.95);
+  background: rgba(34, 33, 31, 0.95);
   border-color: rgba(255, 255, 255, 0.7);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
 }
 
 :root[data-theme="dark"] .manga-bubble.is-comic-balloon:hover,
 body.dark-mode .manga-bubble.is-comic-balloon:hover {
-  background: #252A33;
+  background: #2B2A28;
   border-color: var(--brand-primary-hover, #BF3B32);
 }
 
 :root[data-theme="dark"] .manga-bubble.is-comic-balloon.is-active,
 body.dark-mode .manga-bubble.is-comic-balloon.is-active {
-  background: #252A33;
+  background: #2B2A28;
   border-color: var(--brand-primary-hover, #BF3B32);
   box-shadow: 0 0 0 3px rgba(191, 59, 50, 0.35), 0 6px 18px rgba(0, 0, 0, 0.4);
 }

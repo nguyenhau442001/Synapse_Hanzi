@@ -19,17 +19,17 @@
 
 :root[data-theme="dark"] {
   --listening-canvas: #161819;
-  --listening-surface: #1e2224;
-  --listening-surface-warm: #23282a;
-  --listening-player-bg: #222629;
-  --listening-border-subtle: #33383b;
-  --listening-border-strong: #444b4e;
-  --listening-progress-track: #2c3235;
+  --listening-surface: #22211F;
+  --listening-surface-warm: #282725;
+  --listening-player-bg: #262523;
+  --listening-border-subtle: #383735;
+  --listening-border-strong: #4B4A48;
+  --listening-progress-track: #32312F;
 }
 
 :root[data-theme="dark"] .listening-statement-block {
-  background: var(--listening-surface-warm, #23282a);
-  border-color: var(--listening-border-subtle, #33383b);
+  background: var(--listening-surface-warm, #282725);
+  border-color: var(--listening-border-subtle, #383735);
 }
 
 :root[data-theme="dark"] .listening-statement-zh {
@@ -38,7 +38,7 @@
 
 :root[data-theme="dark"] .listening-statement-pinyin {
   color: #94a3b8;
-  border-top-color: var(--listening-border-subtle, #33383b);
+  border-top-color: var(--listening-border-subtle, #383735);
 }
 
 :root[data-theme="dark"] .listening-statement-vi {
@@ -46,8 +46,8 @@
 }
 
 :root[data-theme="dark"] .listening-choice-btn {
-  background: var(--listening-surface, #1e2224);
-  border-color: var(--listening-border-strong, #444b4e);
+  background: var(--listening-surface, #22211F);
+  border-color: var(--listening-border-strong, #4B4A48);
 }
 
 :root[data-theme="dark"] .listening-choice-btn.choice-true .listening-choice-icon-wrap {
@@ -62,13 +62,13 @@
 
 :root[data-theme="dark"] .listening-choice-btn.choice-true:hover:not(:disabled) {
   border-color: #22c55e;
-  background: #172a1e;
+  background: #262523;
   box-shadow: 0 3px 10px rgba(34, 197, 94, 0.2);
 }
 
 :root[data-theme="dark"] .listening-choice-btn.choice-true:hover:not(:disabled) .listening-choice-icon-wrap {
   background: #22c55e;
-  color: #0f172a;
+  color: #181715;
 }
 
 :root[data-theme="dark"] .listening-choice-btn.choice-false:hover:not(:disabled) {
@@ -84,7 +84,7 @@
 
 :root[data-theme="dark"] .listening-choice-btn.is-correct-selected,
 :root[data-theme="dark"] .listening-choice-btn.is-correct-answer {
-  background: #132e1f !important;
+  background: #282725 !important;
   border-color: #22c55e !important;
 }
 

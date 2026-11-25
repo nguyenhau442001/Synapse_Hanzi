@@ -147,12 +147,12 @@ export function HskErrorNotebook({ onBack, onStartExam }) {
     <div class="exam-container">
       <div class="exam-lobby">
         {/* Hero Header */}
-        <div class="exam-hero" style="padding: 1.5rem 2rem; background: linear-gradient(135deg, #7c2d12 0%, #c2410c 100%);">
+        <div class="exam-hero" style="padding: 1.5rem 2rem; background: var(--exam-hero-bg, linear-gradient(135deg, #7c2d12 0%, #c2410c 100%));">
           <div>
             <button
               type="button"
               onClick={onBack}
-              style="background: rgba(255,255,255,0.18); color: #fff; border: 1px solid rgba(255,255,255,0.3); border-radius: 0.5rem; padding: 0.4rem 0.85rem; font-size: 0.85rem; cursor: pointer; margin-bottom: 0.75rem; font-weight: 600;"
+              style="background: rgba(255,255,255,0.18); color: var(--exam-on-accent, #fff); border: 1px solid rgba(255,255,255,0.3); border-radius: 0.5rem; padding: 0.4rem 0.85rem; font-size: 0.85rem; cursor: pointer; margin-bottom: 0.75rem; font-weight: 600;"
             >
               {UI_LABELS.backToHub}
             </button>
@@ -177,7 +177,7 @@ export function HskErrorNotebook({ onBack, onStartExam }) {
               <button
                 type="button"
                 onClick={clearResolved}
-                style="background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.4); border-radius: 0.5rem; color: #fff; padding: 0.5rem 0.85rem; font-size: 0.85rem; cursor: pointer; font-weight: 600;"
+                style="background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.4); border-radius: 0.5rem; color: var(--exam-on-accent, #fff); padding: 0.5rem 0.85rem; font-size: 0.85rem; cursor: pointer; font-weight: 600;"
               >
                 {UI_LABELS.clearResolvedBtn}
               </button>
@@ -186,10 +186,10 @@ export function HskErrorNotebook({ onBack, onStartExam }) {
         </div>
 
         {/* Filters Toolbar */}
-        <div style="display: flex; justify-content: space-between; align-items: center; background: #fff; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 0.75rem 1rem; flex-wrap: wrap; gap: 0.75rem;">
+        <div style="display: flex; justify-content: space-between; align-items: center; background: var(--exam-surface, #fff); border: 1px solid var(--exam-border, #e2e8f0); border-radius: 0.75rem; padding: 0.75rem 1rem; flex-wrap: wrap; gap: 0.75rem;">
           {/* Level Filter */}
           <div style="display: flex; gap: 0.4rem; align-items: center; flex-wrap: wrap;">
-            <span style="font-size: 0.85rem; font-weight: 700; color: #64748b; margin-right: 0.25rem;">Cấp độ:</span>
+            <span style="font-size: 0.85rem; font-weight: 700; color: var(--exam-text-muted, #64748b); margin-right: 0.25rem;">Cấp độ:</span>
             {['all', 'hsk30_1', 'hsk30_2', 'hsk30_3', 'hsk30_4'].map((lvl) => {
               const label = lvl === 'all' ? 'Tất cả' : lvl.replace('hsk30_', 'HSK ');
               return (
@@ -203,9 +203,9 @@ export function HskErrorNotebook({ onBack, onStartExam }) {
                     fontSize: '0.85rem',
                     fontWeight: levelFilter === lvl ? 700 : 500,
                     border: '1px solid',
-                    borderColor: levelFilter === lvl ? '#c2410c' : '#cbd5e1',
-                    background: levelFilter === lvl ? '#fff7ed' : '#ffffff',
-                    color: levelFilter === lvl ? '#c2410c' : '#475569',
+                    borderColor: levelFilter === lvl ? 'var(--exam-warning, #c2410c)' : 'var(--exam-border-strong, #cbd5e1)',
+                    background: levelFilter === lvl ? 'var(--exam-warning-tint, #fff7ed)' : 'var(--exam-surface, #ffffff)',
+                    color: levelFilter === lvl ? 'var(--exam-warning-text, #c2410c)' : 'var(--exam-text-secondary, #475569)',
                     cursor: 'pointer'
                   }}
                 >
@@ -226,9 +226,9 @@ export function HskErrorNotebook({ onBack, onStartExam }) {
                 fontSize: '0.85rem',
                 fontWeight: statusFilter === 'unresolved' ? 700 : 500,
                 border: '1px solid',
-                borderColor: statusFilter === 'unresolved' ? '#c2410c' : '#cbd5e1',
-                background: statusFilter === 'unresolved' ? '#fff7ed' : '#ffffff',
-                color: statusFilter === 'unresolved' ? '#c2410c' : '#475569',
+                borderColor: statusFilter === 'unresolved' ? 'var(--exam-warning, #c2410c)' : 'var(--exam-border-strong, #cbd5e1)',
+                background: statusFilter === 'unresolved' ? 'var(--exam-warning-tint, #fff7ed)' : 'var(--exam-surface, #ffffff)',
+                color: statusFilter === 'unresolved' ? 'var(--exam-warning-text, #c2410c)' : 'var(--exam-text-secondary, #475569)',
                 cursor: 'pointer'
               }}
             >
@@ -243,9 +243,9 @@ export function HskErrorNotebook({ onBack, onStartExam }) {
                 fontSize: '0.85rem',
                 fontWeight: statusFilter === 'resolved' ? 700 : 500,
                 border: '1px solid',
-                borderColor: statusFilter === 'resolved' ? '#059669' : '#cbd5e1',
-                background: statusFilter === 'resolved' ? '#ecfdf5' : '#ffffff',
-                color: statusFilter === 'resolved' ? '#059669' : '#475569',
+                borderColor: statusFilter === 'resolved' ? 'var(--exam-success, #059669)' : 'var(--exam-border-strong, #cbd5e1)',
+                background: statusFilter === 'resolved' ? 'var(--exam-success-tint, #ecfdf5)' : 'var(--exam-surface, #ffffff)',
+                color: statusFilter === 'resolved' ? 'var(--exam-success-text, #059669)' : 'var(--exam-text-secondary, #475569)',
                 cursor: 'pointer'
               }}
             >
@@ -256,19 +256,19 @@ export function HskErrorNotebook({ onBack, onStartExam }) {
 
         {/* Error Items List */}
         {filteredItems.length === 0 ? (
-          <div class="cbt-card" style="padding: 3.5rem 1.5rem; text-align: center; border-radius: 1rem; background: #fff; border: 1px solid #e2e8f0;">
+          <div class="cbt-card" style="padding: 3.5rem 1.5rem; text-align: center; border-radius: 1rem; background: var(--exam-surface, #fff); border: 1px solid var(--exam-border, #e2e8f0);">
             <div style="font-size: 3rem; margin-bottom: 0.75rem;">🎉</div>
-            <h3 style="font-size: 1.25rem; font-weight: 700; color: #1e293b; margin: 0 0 0.4rem 0;">
+            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--exam-text-strong, #1e293b); margin: 0 0 0.4rem 0;">
               {UI_LABELS.emptyTitle}
             </h3>
-            <p style="font-size: 0.95rem; color: #64748b; max-width: 500px; margin: 0 auto 1.5rem auto;">
+            <p style="font-size: 0.95rem; color: var(--exam-text-muted, #64748b); max-width: 500px; margin: 0 auto 1.5rem auto;">
               {UI_LABELS.emptyDesc}
             </p>
             {onStartExam && (
               <button
                 type="button"
                 onClick={onStartExam}
-                style="background: #c2410c; color: #fff; border: none; border-radius: 0.6rem; padding: 0.65rem 1.35rem; font-size: 0.95rem; font-weight: 700; cursor: pointer; box-shadow: 0 4px 12px rgba(194,65,12,0.25);"
+                style="background: var(--exam-warning, #c2410c); color: var(--exam-on-accent, #fff); border: none; border-radius: 0.6rem; padding: 0.65rem 1.35rem; font-size: 0.95rem; font-weight: 700; cursor: pointer; box-shadow: 0 4px 12px var(--exam-warning-glow, rgba(194,65,12,0.25));"
               >
                 📝 Vào thi thử CBT ngay
               </button>
@@ -285,20 +285,20 @@ export function HskErrorNotebook({ onBack, onStartExam }) {
                   key={item.id}
                   class="review-card"
                   style={{
-                    borderColor: item.resolved ? '#34d399' : '#f87171',
+                    borderColor: item.resolved ? 'var(--exam-success, #34d399)' : 'var(--exam-danger, #f87171)',
                     borderLeftWidth: '6px',
-                    borderLeftColor: item.resolved ? '#10b981' : '#ef4444',
-                    background: '#ffffff',
+                    borderLeftColor: item.resolved ? 'var(--exam-success, #10b981)' : 'var(--exam-danger, #ef4444)',
+                    background: 'var(--exam-surface, #ffffff)',
                     boxShadow: '0 2px 8px rgba(0,0,0,0.03)'
                   }}
                 >
                   {/* Item Header */}
                   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem; flex-wrap: wrap; gap: 0.5rem;">
                     <div>
-                      <span style="font-weight: 700; font-size: 1.05rem; color: #0f172a;">
+                      <span style="font-weight: 700; font-size: 1.05rem; color: var(--exam-text-strong, #0f172a);">
                         {item.examTitle || 'Đề thi CBT'} · Câu {item.questionNumber}
                       </span>
-                      <span style="margin-left: 0.5rem; background: #fee2e2; color: #991b1b; padding: 0.15rem 0.5rem; border-radius: 0.3rem; font-size: 0.78rem; font-weight: 600;">
+                      <span style="margin-left: 0.5rem; background: var(--exam-danger-tint, #fee2e2); color: var(--exam-danger-text, #991b1b); padding: 0.15rem 0.5rem; border-radius: 0.3rem; font-size: 0.78rem; font-weight: 600;">
                         {item.partType === 'listening' ? 'Phần Nghe' : item.partType === 'writing' ? 'Phần Viết' : 'Phần Đọc'}
                       </span>
                     </div>
@@ -308,10 +308,10 @@ export function HskErrorNotebook({ onBack, onStartExam }) {
                         type="button"
                         onClick={() => toggleResolved(item.id)}
                         style={{
-                          background: item.resolved ? '#ecfdf5' : '#f8fafc',
-                          color: item.resolved ? '#059669' : '#475569',
+                          background: item.resolved ? 'var(--exam-success-tint, #ecfdf5)' : 'var(--exam-surface-sunken, #f8fafc)',
+                          color: item.resolved ? 'var(--exam-success-text, #059669)' : 'var(--exam-text-secondary, #475569)',
                           border: '1px solid',
-                          borderColor: item.resolved ? '#a7f3d0' : '#cbd5e1',
+                          borderColor: item.resolved ? 'var(--exam-success-tint-border, #a7f3d0)' : 'var(--exam-border-strong, #cbd5e1)',
                           borderRadius: '0.4rem',
                           padding: '0.3rem 0.65rem',
                           fontSize: '0.8rem',
@@ -325,7 +325,7 @@ export function HskErrorNotebook({ onBack, onStartExam }) {
                       <button
                         type="button"
                         onClick={() => deleteItem(item.id)}
-                        style="background: #fff; color: #94a3b8; border: 1px solid #e2e8f0; border-radius: 0.4rem; padding: 0.3rem 0.55rem; font-size: 0.8rem; cursor: pointer;"
+                        style="background: var(--exam-surface, #fff); color: var(--exam-text-faint, #94a3b8); border: 1px solid var(--exam-border, #e2e8f0); border-radius: 0.4rem; padding: 0.3rem 0.55rem; font-size: 0.8rem; cursor: pointer;"
                         title={UI_LABELS.deleteItem}
                       >
                         🗑️
@@ -345,7 +345,7 @@ export function HskErrorNotebook({ onBack, onStartExam }) {
                         {UI_LABELS.audioPlay}
                       </button>
                       {q.audio_text && (
-                        <p style="font-size: 0.9rem; color: #0369a1; margin: 0.35rem 0 0 0;">
+                        <p style="font-size: 0.9rem; color: var(--exam-primary-text, #0369a1); margin: 0.35rem 0 0 0;">
                           <strong>Audio script:</strong> {q.audio_text}
                         </p>
                       )}
@@ -360,14 +360,14 @@ export function HskErrorNotebook({ onBack, onStartExam }) {
                   )}
                   {q.image && (
                     <div style="margin: 0.5rem 0;">
-                      <img src={q.image} alt="Question context" style="max-height: 140px; border-radius: 0.5rem; border: 1px solid #cbd5e1;" />
+                      <img src={q.image} alt="Question context" style="max-height: 140px; border-radius: 0.5rem; border: 1px solid var(--exam-border-strong, #cbd5e1);" />
                     </div>
                   )}
 
                   {/* Re-drill Section */}
                   {isRetrying ? (
-                    <div style="background: #fff7ed; border: 1px solid #fed7aa; border-radius: 0.5rem; padding: 1rem; margin: 0.75rem 0;">
-                      <h4 style="margin: 0 0 0.5rem 0; font-size: 0.95rem; color: #9a3412;">
+                    <div style="background: var(--exam-warning-tint, #fff7ed); border: 1px solid var(--exam-warning-tint-border, #fed7aa); border-radius: 0.5rem; padding: 1rem; margin: 0.75rem 0;">
+                      <h4 style="margin: 0 0 0.5rem 0; font-size: 0.95rem; color: var(--exam-warning-text, #9a3412);">
                         🔄 Thử làm lại câu hỏi này:
                       </h4>
 
@@ -382,8 +382,8 @@ export function HskErrorNotebook({ onBack, onStartExam }) {
                               borderRadius: '0.5rem',
                               fontWeight: 700,
                               cursor: 'pointer',
-                              border: retryAnswer === true ? '2px solid #059669' : '1px solid #cbd5e1',
-                              background: retryAnswer === true ? '#ecfdf5' : '#fff'
+                              border: retryAnswer === true ? '2px solid var(--exam-success, #059669)' : '1px solid var(--exam-border-strong, #cbd5e1)',
+                              background: retryAnswer === true ? 'var(--exam-success-tint, #ecfdf5)' : 'var(--exam-surface, #fff)'
                             }}
                           >
                             ✓ Đúng (对)
@@ -396,8 +396,8 @@ export function HskErrorNotebook({ onBack, onStartExam }) {
                               borderRadius: '0.5rem',
                               fontWeight: 700,
                               cursor: 'pointer',
-                              border: retryAnswer === false ? '2px solid #dc2626' : '1px solid #cbd5e1',
-                              background: retryAnswer === false ? '#fef2f2' : '#fff'
+                              border: retryAnswer === false ? '2px solid var(--exam-danger, #dc2626)' : '1px solid var(--exam-border-strong, #cbd5e1)',
+                              background: retryAnswer === false ? 'var(--exam-danger-tint, #fef2f2)' : 'var(--exam-surface, #fff)'
                             }}
                           >
                             ✗ Sai (错)
@@ -417,8 +417,8 @@ export function HskErrorNotebook({ onBack, onStartExam }) {
                                 textAlign: 'left',
                                 padding: '0.5rem 0.85rem',
                                 borderRadius: '0.4rem',
-                                border: retryAnswer === opt.key ? '2px solid #0284c7' : '1px solid #cbd5e1',
-                                background: retryAnswer === opt.key ? '#eff6ff' : '#fff',
+                                border: retryAnswer === opt.key ? '2px solid var(--exam-primary, #0284c7)' : '1px solid var(--exam-border-strong, #cbd5e1)',
+                                background: retryAnswer === opt.key ? 'var(--exam-primary-tint, #eff6ff)' : 'var(--exam-surface, #fff)',
                                 fontWeight: retryAnswer === opt.key ? 700 : 500,
                                 cursor: 'pointer'
                               }}
@@ -437,7 +437,7 @@ export function HskErrorNotebook({ onBack, onStartExam }) {
                             value={retryAnswer || ''}
                             onInput={(e) => setRetryAnswer(e.target.value)}
                             placeholder="Nhập chữ Hán tương ứng..."
-                            style="font-size: 1.2rem; font-family: var(--font-zh, 'Noto Serif SC', SimSun, serif); padding: 0.4rem 0.75rem; border: 1px solid #cbd5e1; border-radius: 0.4rem; width: 100%; max-width: 250px;"
+                            style="font-size: 1.2rem; font-family: var(--font-zh, 'Noto Serif SC', SimSun, serif); padding: 0.4rem 0.75rem; border: 1px solid var(--exam-border-strong, #cbd5e1); border-radius: 0.4rem; width: 100%; max-width: 250px;"
                           />
                         </div>
                       )}
@@ -449,8 +449,8 @@ export function HskErrorNotebook({ onBack, onStartExam }) {
                           onClick={() => submitRetry(item)}
                           disabled={retryAnswer === null}
                           style={{
-                            background: '#059669',
-                            color: '#fff',
+                            background: 'var(--exam-success, #059669)',
+                            color: 'var(--exam-on-accent, #fff)',
                             border: 'none',
                             borderRadius: '0.4rem',
                             padding: '0.45rem 1rem',
@@ -464,7 +464,7 @@ export function HskErrorNotebook({ onBack, onStartExam }) {
                         <button
                           type="button"
                           onClick={() => setActiveRetryId(null)}
-                          style="background: transparent; border: 1px solid #cbd5e1; border-radius: 0.4rem; padding: 0.45rem 0.85rem; color: #64748b; cursor: pointer;"
+                          style="background: transparent; border: 1px solid var(--exam-border-strong, #cbd5e1); border-radius: 0.4rem; padding: 0.45rem 0.85rem; color: var(--exam-text-muted, #64748b); cursor: pointer;"
                         >
                           Đóng lại
                         </button>
@@ -476,7 +476,7 @@ export function HskErrorNotebook({ onBack, onStartExam }) {
                           marginTop: '0.75rem',
                           fontWeight: 700,
                           fontSize: '0.95rem',
-                          color: retryResult.isCorrect ? '#059669' : '#dc2626'
+                          color: retryResult.isCorrect ? 'var(--exam-success-text, #059669)' : 'var(--exam-danger-text, #dc2626)'
                         }}>
                           {retryResult.isCorrect
                             ? UI_LABELS.congratsCorrect
@@ -489,10 +489,10 @@ export function HskErrorNotebook({ onBack, onStartExam }) {
                       {/* Previous Wrong Answer vs Correct Answer */}
                       <div style="display: flex; gap: 1.5rem; margin: 0.5rem 0; font-size: 0.92rem; flex-wrap: wrap;">
                         <span>
-                          Đáp án sai trước đó: <strong style="color: #dc2626;">{String(item.userWrongAnswer ?? 'Chưa làm')}</strong>
+                          Đáp án sai trước đó: <strong style="color: var(--exam-danger-text, #dc2626);">{String(item.userWrongAnswer ?? 'Chưa làm')}</strong>
                         </span>
                         <span>
-                          Đáp án chính xác: <strong style="color: #059669;">{String(q.correct_answer)}</strong>
+                          Đáp án chính xác: <strong style="color: var(--exam-success-text, #059669);">{String(q.correct_answer)}</strong>
                         </span>
                       </div>
 
@@ -500,7 +500,7 @@ export function HskErrorNotebook({ onBack, onStartExam }) {
                         <button
                           type="button"
                           onClick={() => startRetry(item)}
-                          style="background: #fff7ed; color: #c2410c; border: 1px solid #fed7aa; border-radius: 0.45rem; padding: 0.45rem 0.95rem; font-size: 0.85rem; font-weight: 700; cursor: pointer;"
+                          style="background: var(--exam-warning-tint, #fff7ed); color: var(--exam-warning-text, #c2410c); border: 1px solid var(--exam-warning-tint-border, #fed7aa); border-radius: 0.45rem; padding: 0.45rem 0.95rem; font-size: 0.85rem; font-weight: 700; cursor: pointer;"
                         >
                           {UI_LABELS.retryBtn}
                         </button>

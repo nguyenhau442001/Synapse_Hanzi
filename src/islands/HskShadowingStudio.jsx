@@ -263,12 +263,12 @@ export function HskShadowingStudio({ onBack }) {
     <div class="exam-container">
       <div class="exam-lobby">
         {/* Hero Header */}
-        <div class="exam-hero" style="padding: 1.5rem 2rem; background: linear-gradient(135deg, #0f766e 0%, #0d9488 100%);">
+        <div class="exam-hero" style="padding: 1.5rem 2rem; background: var(--exam-hero-bg, linear-gradient(135deg, #0f766e 0%, #0d9488 100%));">
           <div>
             <button
               type="button"
               onClick={onBack}
-              style="background: rgba(255,255,255,0.18); color: #fff; border: 1px solid rgba(255,255,255,0.3); border-radius: 0.5rem; padding: 0.4rem 0.85rem; font-size: 0.85rem; cursor: pointer; margin-bottom: 0.75rem; font-weight: 600;"
+              style="background: rgba(255,255,255,0.18); color: var(--exam-on-accent, #fff); border: 1px solid rgba(255,255,255,0.3); border-radius: 0.5rem; padding: 0.4rem 0.85rem; font-size: 0.85rem; cursor: pointer; margin-bottom: 0.75rem; font-weight: 600;"
             >
               {UI_LABELS.backToHub}
             </button>
@@ -300,9 +300,9 @@ export function HskShadowingStudio({ onBack }) {
                     fontWeight: 700,
                     fontSize: '0.85rem',
                     cursor: 'pointer',
-                    border: selectedLevel === lvlKey ? '2px solid #fff' : '1px solid rgba(255,255,255,0.4)',
-                    background: selectedLevel === lvlKey ? '#fff' : 'rgba(255,255,255,0.15)',
-                    color: selectedLevel === lvlKey ? '#0f766e' : '#fff',
+                    border: selectedLevel === lvlKey ? '2px solid var(--exam-surface, #fff)' : '1px solid rgba(255,255,255,0.4)',
+                    background: selectedLevel === lvlKey ? 'var(--exam-surface, #fff)' : 'rgba(255,255,255,0.15)',
+                    color: selectedLevel === lvlKey ? 'var(--exam-success-text, #0f766e)' : 'var(--exam-on-accent, #fff)',
                     transition: 'all 0.15s ease'
                   }}
                 >
@@ -320,18 +320,18 @@ export function HskShadowingStudio({ onBack }) {
             <p>{UI_LABELS.noItemsNotice}</p>
           </div>
         ) : !currentItem ? (
-          <div class="cbt-card" style="padding: 2.5rem; text-align: center; color: #64748b;">
+          <div class="cbt-card" style="padding: 2.5rem; text-align: center; color: var(--exam-text-muted, #64748b);">
             Không tìm thấy câu thoại phù hợp.
           </div>
         ) : (
-          <div class="cbt-card" style="padding: 1.75rem; border-radius: 1rem; border: 1px solid #e2e8f0; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.04);">
+          <div class="cbt-card" style="padding: 1.75rem; border-radius: 1rem; border: 1px solid var(--exam-border, #e2e8f0); background: var(--exam-surface, #fff); box-shadow: 0 4px 15px rgba(0,0,0,0.04);">
             {/* Top Toolbar */}
-            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #f1f5f9; padding-bottom: 1rem; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 0.75rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--exam-surface-muted, #f1f5f9); padding-bottom: 1rem; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 0.75rem;">
               <div style="display: flex; align-items: center; gap: 0.75rem;">
-                <span style="font-weight: 700; font-size: 1.1rem; color: #0f172a;">
+                <span style="font-weight: 700; font-size: 1.1rem; color: var(--exam-text-strong, #0f172a);">
                   Câu {currentIndex + 1} / {shadowingItems.length}
                 </span>
-                <span style="background: #ccfbf1; color: #0f766e; padding: 0.2rem 0.6rem; border-radius: 999px; font-size: 0.8rem; font-weight: 600;">
+                <span style="background: var(--exam-success-tint, #ccfbf1); color: var(--exam-success-text, #0f766e); padding: 0.2rem 0.6rem; border-radius: 999px; font-size: 0.8rem; font-weight: 600;">
                   {SHADOWING_LEVEL_FILES[selectedLevel].name}
                 </span>
               </div>
@@ -351,8 +351,8 @@ export function HskShadowingStudio({ onBack }) {
                   type="button"
                   onClick={() => (isRecording ? stopRecording() : startRecording())}
                   style={{
-                    background: isRecording ? '#dc2626' : '#0d9488',
-                    color: '#fff',
+                    background: isRecording ? 'var(--exam-danger, #dc2626)' : 'var(--exam-success, #0d9488)',
+                    color: 'var(--exam-on-accent, #fff)',
                     border: 'none',
                     borderRadius: '0.5rem',
                     padding: '0.5rem 1.1rem',
@@ -362,7 +362,7 @@ export function HskShadowingStudio({ onBack }) {
                     display: 'flex',
                     alignItems: 'center',
                     gap: '0.4rem',
-                    boxShadow: isRecording ? '0 0 12px rgba(220,38,38,0.5)' : 'none'
+                    boxShadow: isRecording ? '0 0 12px var(--exam-danger-glow, rgba(220,38,38,0.5))' : 'none'
                   }}
                 >
                   {isRecording ? UI_LABELS.stopRecording : UI_LABELS.startRecording}
@@ -372,7 +372,7 @@ export function HskShadowingStudio({ onBack }) {
                   <button
                     type="button"
                     onClick={playUserAudio}
-                    style="background: #f1f5f9; color: #334155; border: 1px solid #cbd5e1; border-radius: 0.5rem; padding: 0.5rem 0.9rem; font-size: 0.9rem; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 0.35rem;"
+                    style="background: var(--exam-surface-muted, #f1f5f9); color: var(--exam-text-secondary, #334155); border: 1px solid var(--exam-border-strong, #cbd5e1); border-radius: 0.5rem; padding: 0.5rem 0.9rem; font-size: 0.9rem; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 0.35rem;"
                   >
                     {UI_LABELS.playUserAudio}
                   </button>
@@ -381,17 +381,17 @@ export function HskShadowingStudio({ onBack }) {
             </div>
 
             {/* Sentence Prompt Box */}
-            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 1.5rem; text-align: center;">
-              <h2 style="font-family: var(--font-zh, 'Noto Serif SC', SimSun, serif); font-size: 2rem; font-weight: 700; color: #0f172a; margin: 0 0 0.5rem 0; line-height: 1.4;">
+            <div style="background: var(--exam-surface-sunken, #f8fafc); border: 1px solid var(--exam-border, #e2e8f0); border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 1.5rem; text-align: center;">
+              <h2 style="font-family: var(--font-zh, 'Noto Serif SC', SimSun, serif); font-size: 2rem; font-weight: 700; color: var(--exam-text-strong, #0f172a); margin: 0 0 0.5rem 0; line-height: 1.4;">
                 {currentItem.textZh}
               </h2>
               {currentItem.pinyin && (
-                <p style="font-size: 1.15rem; color: #0d9488; font-weight: 600; margin: 0 0 0.5rem 0;">
+                <p style="font-size: 1.15rem; color: var(--exam-success-text, #0d9488); font-weight: 600; margin: 0 0 0.5rem 0;">
                   {currentItem.pinyin}
                 </p>
               )}
               {currentItem.meaningVi && (
-                <p style="font-size: 0.95rem; color: #64748b; margin: 0;">
+                <p style="font-size: 0.95rem; color: var(--exam-text-muted, #64748b); margin: 0;">
                   {currentItem.meaningVi}
                 </p>
               )}
@@ -399,40 +399,40 @@ export function HskShadowingStudio({ onBack }) {
 
             {/* Live Volume Feedback during recording */}
             {isRecording && (
-              <div style="background: #fef2f2; border: 1px solid #fecaca; border-radius: 0.5rem; padding: 0.75rem 1rem; margin-bottom: 1.25rem; display: flex; align-items: center; gap: 1rem;">
-                <span style="color: #b91c1c; font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; gap: 0.4rem;">
-                  <span style="width: 10px; height: 10px; border-radius: 50%; background: #dc2626; display: inline-block; animation: pulse 1s infinite;" />
+              <div style="background: var(--exam-danger-tint, #fef2f2); border: 1px solid var(--exam-danger-tint-border, #fecaca); border-radius: 0.5rem; padding: 0.75rem 1rem; margin-bottom: 1.25rem; display: flex; align-items: center; gap: 1rem;">
+                <span style="color: var(--exam-danger-text, #b91c1c); font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; gap: 0.4rem;">
+                  <span style="width: 10px; height: 10px; border-radius: 50%; background: var(--exam-danger, #dc2626); display: inline-block; animation: pulse 1s infinite;" />
                   Đang thu âm theo giọng nói của bạn...
                 </span>
-                <div style="flex: 1; height: 8px; background: #fee2e2; border-radius: 999px; overflow: hidden;">
-                  <div style={{ height: '100%', width: `${Math.round(liveVolume * 100)}%`, background: '#dc2626', transition: 'width 0.1s linear' }} />
+                <div style="flex: 1; height: 8px; background: var(--exam-danger-tint, #fee2e2); border-radius: 999px; overflow: hidden;">
+                  <div style={{ height: '100%', width: `${Math.round(liveVolume * 100)}%`, background: 'var(--exam-danger, #dc2626)', transition: 'width 0.1s linear' }} />
                 </div>
               </div>
             )}
 
             {/* Pitch Contour Visual Comparison */}
             {analysisResult && (
-              <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.25rem; margin-bottom: 1.5rem;">
+              <div style="background: var(--exam-surface-sunken, #f8fafc); border: 1px solid var(--exam-border, #e2e8f0); border-radius: 0.75rem; padding: 1.25rem; margin-bottom: 1.5rem;">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap; gap: 0.5rem;">
-                  <span style="font-weight: 700; font-size: 1rem; color: #1e293b;">
+                  <span style="font-weight: 700; font-size: 1rem; color: var(--exam-text-strong, #1e293b);">
                     {UI_LABELS.compareTitle}
                   </span>
                   <div style="display: flex; align-items: center; gap: 1rem; font-size: 0.85rem; font-weight: 600;">
-                    <span style="color: #0284c7;">{UI_LABELS.modelCurve}</span>
-                    <span style="color: #10b981;">{UI_LABELS.userCurve}</span>
+                    <span style="color: var(--exam-primary-text, #0284c7);">{UI_LABELS.modelCurve}</span>
+                    <span style="color: var(--exam-success-text, #10b981);">{UI_LABELS.userCurve}</span>
                   </div>
                 </div>
 
                 {/* SVG Pitch Canvas */}
-                <div style="background: #ffffff; border: 1px solid #cbd5e1; border-radius: 0.5rem; padding: 0.5rem; margin-bottom: 0.75rem;">
+                <div style="background: var(--exam-surface, #ffffff); border: 1px solid var(--exam-border-strong, #cbd5e1); border-radius: 0.5rem; padding: 0.5rem; margin-bottom: 0.75rem;">
                   <svg viewBox="0 0 600 120" style="width: 100%; height: 120px; display: block;">
                     {/* Horizontal 5 Chao Scale Lines (1 to 5) */}
                     {[1, 2, 3, 4, 5].map((level) => {
                       const y = 110 - (level - 1) * 22;
                       return (
                         <g key={level}>
-                          <line x1="30" y1={y} x2="590" y2={y} stroke="#f1f5f9" stroke-width="1" />
-                          <text x="10" y={y + 3} font-size="10" fill="#94a3b8" font-family="sans-serif">
+                          <line x1="30" y1={y} x2="590" y2={y} stroke="var(--exam-surface-muted, #f1f5f9)" stroke-width="1" />
+                          <text x="10" y={y + 3} font-size="10" fill="var(--exam-text-faint, #94a3b8)" font-family="sans-serif">
                             {level}
                           </text>
                         </g>
@@ -443,7 +443,7 @@ export function HskShadowingStudio({ onBack }) {
                     {analysisResult.modelPoints && analysisResult.modelPoints.length > 1 && (
                       <polyline
                         fill="none"
-                        stroke="#0284c7"
+                        stroke="var(--exam-primary, #0284c7)"
                         stroke-width="3"
                         stroke-linecap="round"
                         stroke-linejoin="round"
@@ -459,7 +459,7 @@ export function HskShadowingStudio({ onBack }) {
                     {analysisResult.userPoints && analysisResult.userPoints.length > 1 && (
                       <polyline
                         fill="none"
-                        stroke="#10b981"
+                        stroke="var(--exam-success, #10b981)"
                         stroke-width="3.5"
                         stroke-dasharray="6,3"
                         stroke-linecap="round"
@@ -479,11 +479,11 @@ export function HskShadowingStudio({ onBack }) {
                   <span style={{
                     fontSize: '1.15rem',
                     fontWeight: 800,
-                    color: analysisResult.score >= 80 ? '#059669' : '#d97706'
+                    color: analysisResult.score >= 80 ? 'var(--exam-success-text, #059669)' : 'var(--exam-warning-text, #d97706)'
                   }}>
                     {UI_LABELS.toneScoreLabel} {analysisResult.score}/100
                   </span>
-                  <span style="font-size: 0.9rem; color: #475569; font-weight: 500;">
+                  <span style="font-size: 0.9rem; color: var(--exam-text-secondary, #475569); font-weight: 500;">
                     💡 {analysisResult.feedback}
                   </span>
                 </div>
@@ -491,18 +491,18 @@ export function HskShadowingStudio({ onBack }) {
             )}
 
             {/* Bottom Nav */}
-            <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 1rem; border-top: 1px solid #f1f5f9;">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 1rem; border-top: 1px solid var(--exam-surface-muted, #f1f5f9);">
               <button
                 type="button"
                 onClick={goToPrevItem}
                 disabled={currentIndex === 0}
                 style={{
-                  background: '#f8fafc',
-                  border: '1px solid #cbd5e1',
+                  background: 'var(--exam-surface-sunken, #f8fafc)',
+                  border: '1px solid var(--exam-border-strong, #cbd5e1)',
                   borderRadius: '0.5rem',
                   padding: '0.55rem 1.1rem',
                   fontWeight: 600,
-                  color: '#475569',
+                  color: 'var(--exam-text-secondary, #475569)',
                   cursor: currentIndex === 0 ? 'not-allowed' : 'pointer',
                   opacity: currentIndex === 0 ? 0.5 : 1
                 }}
@@ -515,12 +515,12 @@ export function HskShadowingStudio({ onBack }) {
                 onClick={goToNextItem}
                 disabled={currentIndex === shadowingItems.length - 1}
                 style={{
-                  background: '#0d9488',
+                  background: 'var(--exam-success, #0d9488)',
                   border: 'none',
                   borderRadius: '0.5rem',
                   padding: '0.55rem 1.25rem',
                   fontWeight: 700,
-                  color: '#fff',
+                  color: 'var(--exam-on-accent, #fff)',
                   cursor: currentIndex === shadowingItems.length - 1 ? 'not-allowed' : 'pointer',
                   opacity: currentIndex === shadowingItems.length - 1 ? 0.5 : 1
                 }}

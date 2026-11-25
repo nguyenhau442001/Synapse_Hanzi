@@ -23,7 +23,7 @@
 :root[data-theme="dark"] {
   --wr-rule: rgba(224, 109, 99, 0.45);
   --wr-guide: #E06D63;
-  --wr-faint: #3A3F48;
+  --wr-faint: #403F3D;
   --wr-ink: #F1EBDD;
   --wr-active-bg: rgba(224, 109, 99, 0.08);
 }

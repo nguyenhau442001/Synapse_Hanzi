@@ -2,9 +2,9 @@
   <defs>
     <!-- Xuan paper base gradient -->
     <linearGradient id="xuan_paper_dark" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#16181C"/>
-      <stop offset="50%" stop-color="#1A1D23"/>
-      <stop offset="100%" stop-color="#1F2329"/>
+      <stop offset="0%" stop-color="#151515"/>
+      <stop offset="50%" stop-color="#191817"/>
+      <stop offset="100%" stop-color="#1E1C1A"/>
     </linearGradient>
 
     <!-- Microscopic paper fiber grain -->
@@ -23,26 +23,26 @@
 
     <!-- Ink-wash gradients: dark at the ridge, fading into mist at the base -->
     <linearGradient id="ink_wash_1" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#8C95A3" stop-opacity="1"/>
-      <stop offset="45%" stop-color="#8C95A3" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#8C95A3" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#958D80" stop-opacity="1"/>
+      <stop offset="45%" stop-color="#958D80" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#958D80" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="ink_wash_2" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#8C95A3" stop-opacity="1"/>
-      <stop offset="55%" stop-color="#8C95A3" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#8C95A3" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#958D80" stop-opacity="1"/>
+      <stop offset="55%" stop-color="#958D80" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#958D80" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="ink_wash_3" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#8C95A3" stop-opacity="1"/>
-      <stop offset="65%" stop-color="#8C95A3" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#8C95A3" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#958D80" stop-opacity="1"/>
+      <stop offset="65%" stop-color="#958D80" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#958D80" stop-opacity="0"/>
     </linearGradient>
 
     <!-- Lower mist wash -->
     <linearGradient id="dark_mist_wash" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#16181C" stop-opacity="0"/>
-      <stop offset="70%" stop-color="#242A33" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#282F3A" stop-opacity="0.2"/>
+      <stop offset="0%" stop-color="#151515" stop-opacity="0"/>
+      <stop offset="70%" stop-color="#24211F" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#2A2623" stop-opacity="0.2"/>
     </linearGradient>
 
     <radialGradient id="orb_glow" cx="50%" cy="50%" r="50%">
@@ -53,7 +53,7 @@
 
   <!-- Layer 1: Xuan paper base -->
   <rect width="100%" height="100%" fill="url(#xuan_paper_dark)"/>
-  <rect width="100%" height="100%" fill="#1F2329" opacity="0.3" filter="url(#dark_fiber_grain)"/>
+  <rect width="100%" height="100%" fill="#1E1C1A" opacity="0.3" filter="url(#dark_fiber_grain)"/>
 
 
   <!-- Layer 3: Distant ink-wash mountain ridges (水墨远山), taller at the edges -->

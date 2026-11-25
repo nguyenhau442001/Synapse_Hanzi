@@ -37,7 +37,7 @@ body.reading-zen-active {
 :root[data-theme="dark"] body.reading-zen-active,
 body.dark-mode.reading-view-active,
 body.dark-mode.reading-zen-active {
-  background: #0b0d13 !important;
+  background: var(--bg-canvas) !important;
 }
 
 body.reading-view-active .app {
@@ -180,7 +180,7 @@ body.reading-zen-active #screenReadingAnalysis {
 
 :root[data-theme="dark"] .reading-unified-nav,
 body.dark-mode .reading-unified-nav {
-  background: #171821;
+  background: #191816;
   border-color: rgba(255, 255, 255, 0.06);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
@@ -311,7 +311,7 @@ body.dark-mode .reading-select-pill {
 
 :root[data-theme="dark"] .reading-pill-select option,
 body.dark-mode .reading-pill-select option {
-  background: #1d1e28;
+  background: #201F1D;
   color: #f3f4f6;
 }
 
@@ -362,7 +362,7 @@ body.dark-mode .reading-segmented-control {
 
 :root[data-theme="dark"] .reading-segment-btn.active,
 body.dark-mode .reading-segment-btn.active {
-  background: #252735;
+  background: #292826;
   color: #ffffff;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
 }
@@ -610,7 +610,7 @@ body.dark-mode .reading-translation-meaning {
 
 :root[data-theme="dark"] .reading-practice-card,
 body.dark-mode .reading-practice-card {
-  background: #171821;
+  background: #191816;
   border-color: rgba(255, 255, 255, 0.05);
 }
 
@@ -655,7 +655,7 @@ body.dark-mode .practice-slots-area {
 
 :root[data-theme="dark"] .builder-tile,
 body.dark-mode .builder-tile {
-  background: #1f202b;
+  background: #22211F;
   border-color: rgba(255, 255, 255, 0.08);
 }
 
@@ -703,7 +703,7 @@ body.dark-mode .builder-tile {
 
 :root[data-theme="dark"] .cloze-option-btn,
 body.dark-mode .cloze-option-btn {
-  background: #1f202b;
+  background: #22211F;
   border-color: rgba(255, 255, 255, 0.08);
 }
 
@@ -823,7 +823,7 @@ body.dark-mode .cloze-option-btn {
 
 :root[data-theme="dark"] .reading-nav-btn.prev-btn,
 body.dark-mode .reading-nav-btn.prev-btn {
-  background: #181c26;
+  background: #1D1C1A;
   border: 1px solid rgba(255, 255, 255, 0.14);
   color: #e2e8f0;
   font-weight: 650;
@@ -832,14 +832,14 @@ body.dark-mode .reading-nav-btn.prev-btn {
 
 :root[data-theme="dark"] .reading-nav-btn.prev-btn:hover:not(:disabled),
 body.dark-mode .reading-nav-btn.prev-btn:hover:not(:disabled) {
-  background: #202635;
+  background: #272624;
   border-color: rgba(255, 255, 255, 0.28);
   color: #ffffff;
 }
 
 :root[data-theme="dark"] .reading-nav-btn.next-btn,
 body.dark-mode .reading-nav-btn.next-btn {
-  background: #1c3835;
+  background: #333230;
   border: 1px solid rgba(45, 212, 191, 0.4);
   color: #a7f3d0;
   font-weight: 700;
@@ -848,14 +848,14 @@ body.dark-mode .reading-nav-btn.next-btn {
 
 :root[data-theme="dark"] .reading-nav-btn.next-btn:hover:not(:disabled),
 body.dark-mode .reading-nav-btn.next-btn:hover:not(:disabled) {
-  background: #234844;
+  background: #41403E;
   border-color: rgba(45, 212, 191, 0.65);
   color: #ffffff;
 }
 
 :root[data-theme="dark"] .reading-jump-select,
 body.dark-mode .reading-jump-select {
-  background-color: #161922;
+  background-color: #1A1917;
   border-color: rgba(255, 255, 255, 0.14);
   color: #f1f5f9;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23cbd5e1' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
@@ -985,14 +985,14 @@ body.dark-mode .sidebar-header-title {
 
 :root[data-theme="dark"] .sidebar-vocab-pill,
 body.dark-mode .sidebar-vocab-pill {
-  background: #171a29;
+  background: #1B1A18;
   border-color: rgba(255, 255, 255, 0.08);
   box-shadow: none;
 }
 
 :root[data-theme="dark"] .sidebar-vocab-pill:hover,
 body.dark-mode .sidebar-vocab-pill:hover {
-  background: #21273a;
+  background: #282725;
   border-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -1249,7 +1249,7 @@ body.dark-mode .sw-hv {
 
 :root[data-theme="dark"] .sw-meaning-block,
 body.dark-mode .sw-meaning-block {
-  background: #191d2c;
+  background: #1E1D1B;
   border-color: rgba(255, 255, 255, 0.05);
 }
 
@@ -1439,7 +1439,7 @@ body.dark-mode .grammar-formula-card {
 
 :root[data-theme="dark"] .gfc-chip.gfc-subject,
 body.dark-mode .gfc-chip.gfc-subject {
-  background: #1e2235;
+  background: #242321;
   border-color: rgba(255, 255, 255, 0.14);
   color: #f8fafc;
 }
@@ -1478,7 +1478,7 @@ body.dark-mode .gfc-chip.gfc-verb {
 
 :root[data-theme="dark"] .gfc-chip.gfc-default,
 body.dark-mode .gfc-chip.gfc-default {
-  background: #1e2235;
+  background: #242321;
   border-color: rgba(255, 255, 255, 0.1);
   color: #cbd5e1;
 }
@@ -2288,7 +2288,7 @@ body.dark-mode .sentence-zh-flow .token-py {
 
 :root[data-theme="dark"] .sheet-collapsible-section,
 body.dark-mode .sheet-collapsible-section {
-  background: #181c2d;
+  background: #1D1C1A;
   border-color: rgba(255, 255, 255, 0.06);
   box-shadow: none;
 }

@@ -234,7 +234,7 @@ export function HskDictationStudio({ onBack }) {
             <button
               type="button"
               onClick={onBack}
-              style="background: rgba(255,255,255,0.18); color: #fff; border: 1px solid rgba(255,255,255,0.3); border-radius: 0.5rem; padding: 0.4rem 0.85rem; font-size: 0.85rem; cursor: pointer; margin-bottom: 0.75rem; font-weight: 600;"
+              style="background: rgba(255,255,255,0.18); color: var(--exam-on-accent, #fff); border: 1px solid rgba(255,255,255,0.3); border-radius: 0.5rem; padding: 0.4rem 0.85rem; font-size: 0.85rem; cursor: pointer; margin-bottom: 0.75rem; font-weight: 600;"
             >
               {UI_LABELS.backToHub}
             </button>
@@ -266,9 +266,9 @@ export function HskDictationStudio({ onBack }) {
                     fontWeight: 700,
                     fontSize: '0.85rem',
                     cursor: 'pointer',
-                    border: selectedLevel === lvlKey ? '2px solid #fff' : '1px solid rgba(255,255,255,0.4)',
-                    background: selectedLevel === lvlKey ? '#fff' : 'rgba(255,255,255,0.15)',
-                    color: selectedLevel === lvlKey ? '#0284c7' : '#fff',
+                    border: selectedLevel === lvlKey ? '2px solid var(--exam-surface, #fff)' : '1px solid rgba(255,255,255,0.4)',
+                    background: selectedLevel === lvlKey ? 'var(--exam-surface, #fff)' : 'rgba(255,255,255,0.15)',
+                    color: selectedLevel === lvlKey ? 'var(--exam-primary-text, #0284c7)' : 'var(--exam-on-accent, #fff)',
                     transition: 'all 0.15s ease'
                   }}
                 >
@@ -286,18 +286,18 @@ export function HskDictationStudio({ onBack }) {
             <p>{UI_LABELS.noItemsNotice}</p>
           </div>
         ) : !currentItem ? (
-          <div class="cbt-card" style="padding: 2.5rem; text-align: center; color: #64748b;">
+          <div class="cbt-card" style="padding: 2.5rem; text-align: center; color: var(--exam-text-muted, #64748b);">
             Không tìm thấy câu hỏi nghe phù hợp cho cấp độ này.
           </div>
         ) : (
-          <div class="cbt-card" style="padding: 1.75rem; border-radius: 1rem; border: 1px solid #e2e8f0; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.04);">
+          <div class="cbt-card" style="padding: 1.75rem; border-radius: 1rem; border: 1px solid var(--exam-border, #e2e8f0); background: var(--exam-surface, #fff); box-shadow: 0 4px 15px rgba(0,0,0,0.04);">
             {/* Top Toolbar */}
-            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #f1f5f9; padding-bottom: 1rem; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 0.75rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--exam-surface-muted, #f1f5f9); padding-bottom: 1rem; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 0.75rem;">
               <div style="display: flex; align-items: center; gap: 0.75rem;">
-                <span style="font-weight: 700; font-size: 1.1rem; color: #0f172a;">
+                <span style="font-weight: 700; font-size: 1.1rem; color: var(--exam-text-strong, #0f172a);">
                   Câu {currentIndex + 1} / {dictationItems.length}
                 </span>
-                <span style="background: #e0f2fe; color: #0369a1; padding: 0.2rem 0.6rem; border-radius: 999px; font-size: 0.8rem; font-weight: 600;">
+                <span style="background: var(--exam-primary-tint, #e0f2fe); color: var(--exam-primary-text, #0369a1); padding: 0.2rem 0.6rem; border-radius: 999px; font-size: 0.8rem; font-weight: 600;">
                   {DICTATION_LEVEL_FILES[selectedLevel].levelName}
                 </span>
               </div>
@@ -313,15 +313,15 @@ export function HskDictationStudio({ onBack }) {
                   {isPlaying ? UI_LABELS.pauseAudio : UI_LABELS.playAudio}
                 </button>
 
-                <div style="display: flex; align-items: center; gap: 0.25rem; background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 0.5rem; padding: 0.2rem 0.4rem; font-size: 0.85rem;">
-                  <span style="color: #64748b; font-weight: 600;">{UI_LABELS.speedLabel}</span>
+                <div style="display: flex; align-items: center; gap: 0.25rem; background: var(--exam-surface-sunken, #f8fafc); border: 1px solid var(--exam-border-strong, #cbd5e1); border-radius: 0.5rem; padding: 0.2rem 0.4rem; font-size: 0.85rem;">
+                  <span style="color: var(--exam-text-muted, #64748b); font-weight: 600;">{UI_LABELS.speedLabel}</span>
                   <button
                     type="button"
                     onClick={() => handleSpeedChange(0.75)}
                     style={{
                       border: 'none',
-                      background: playSpeed === 0.75 ? '#0284c7' : 'transparent',
-                      color: playSpeed === 0.75 ? '#fff' : '#475569',
+                      background: playSpeed === 0.75 ? 'var(--exam-primary, #0284c7)' : 'transparent',
+                      color: playSpeed === 0.75 ? 'var(--exam-on-accent, #fff)' : 'var(--exam-text-secondary, #475569)',
                       borderRadius: '0.25rem',
                       padding: '0.2rem 0.45rem',
                       cursor: 'pointer',
@@ -335,8 +335,8 @@ export function HskDictationStudio({ onBack }) {
                     onClick={() => handleSpeedChange(1.0)}
                     style={{
                       border: 'none',
-                      background: playSpeed === 1.0 ? '#0284c7' : 'transparent',
-                      color: playSpeed === 1.0 ? '#fff' : '#475569',
+                      background: playSpeed === 1.0 ? 'var(--exam-primary, #0284c7)' : 'transparent',
+                      color: playSpeed === 1.0 ? 'var(--exam-on-accent, #fff)' : 'var(--exam-text-secondary, #475569)',
                       borderRadius: '0.25rem',
                       padding: '0.2rem 0.45rem',
                       cursor: 'pointer',
@@ -353,7 +353,7 @@ export function HskDictationStudio({ onBack }) {
             <div style="margin-bottom: 1.5rem;">
               <label
                 for="dictationInput"
-                style="display: block; font-weight: 600; font-size: 0.95rem; color: #334155; margin-bottom: 0.5rem;"
+                style="display: block; font-weight: 600; font-size: 0.95rem; color: var(--exam-text-secondary, #334155); margin-bottom: 0.5rem;"
               >
                 Nhập văn bản chữ Hán nghe được:
               </label>
@@ -363,9 +363,9 @@ export function HskDictationStudio({ onBack }) {
                 onInput={(e) => setUserInput(e.target.value)}
                 placeholder={UI_LABELS.inputPlaceholder}
                 rows={3}
-                style="width: 100%; box-sizing: border-box; font-size: 1.25rem; font-family: var(--font-zh, 'Noto Serif SC', SimSun, serif); padding: 0.85rem; border: 2px solid #cbd5e1; border-radius: 0.75rem; outline: none; transition: border-color 0.2s;"
-                onFocus={(e) => (e.target.style.borderColor = '#0284c7')}
-                onBlur={(e) => (e.target.style.borderColor = '#cbd5e1')}
+                style="width: 100%; box-sizing: border-box; font-size: 1.25rem; font-family: var(--font-zh, 'Noto Serif SC', SimSun, serif); padding: 0.85rem; border: 2px solid var(--exam-border-strong, #cbd5e1); border-radius: 0.75rem; outline: none; transition: border-color 0.2s;"
+                onFocus={(e) => (e.target.style.borderColor = 'var(--exam-primary, #0284c7)')}
+                onBlur={(e) => (e.target.style.borderColor = 'var(--exam-border-strong, #cbd5e1)')}
               />
 
               <div style="display: flex; gap: 0.75rem; margin-top: 0.75rem; flex-wrap: wrap;">
@@ -374,8 +374,8 @@ export function HskDictationStudio({ onBack }) {
                   onClick={handleCheck}
                   disabled={!userInput.trim()}
                   style={{
-                    background: '#059669',
-                    color: '#fff',
+                    background: 'var(--exam-success, #059669)',
+                    color: 'var(--exam-on-accent, #fff)',
                     border: 'none',
                     borderRadius: '0.5rem',
                     padding: '0.6rem 1.4rem',
@@ -383,7 +383,7 @@ export function HskDictationStudio({ onBack }) {
                     fontSize: '0.95rem',
                     cursor: userInput.trim() ? 'pointer' : 'not-allowed',
                     opacity: userInput.trim() ? 1 : 0.6,
-                    boxShadow: '0 2px 6px rgba(5,150,105,0.25)'
+                    boxShadow: '0 2px 6px var(--exam-success-glow, rgba(5,150,105,0.25))'
                   }}
                 >
                   {UI_LABELS.checkBtn}
@@ -392,7 +392,7 @@ export function HskDictationStudio({ onBack }) {
                 <button
                   type="button"
                   onClick={() => setShowPinyin((prev) => !prev)}
-                  style="background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; border-radius: 0.5rem; padding: 0.6rem 1rem; font-size: 0.9rem; font-weight: 600; cursor: pointer;"
+                  style="background: var(--exam-surface-muted, #f1f5f9); color: var(--exam-text-secondary, #475569); border: 1px solid var(--exam-border-strong, #cbd5e1); border-radius: 0.5rem; padding: 0.6rem 1rem; font-size: 0.9rem; font-weight: 600; cursor: pointer;"
                 >
                   {showPinyin ? UI_LABELS.hidePinyinHint : UI_LABELS.showPinyinHint}
                 </button>
@@ -400,7 +400,7 @@ export function HskDictationStudio({ onBack }) {
                 <button
                   type="button"
                   onClick={() => setShowTarget((prev) => !prev)}
-                  style="background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; border-radius: 0.5rem; padding: 0.6rem 1rem; font-size: 0.9rem; font-weight: 600; cursor: pointer;"
+                  style="background: var(--exam-surface-muted, #f1f5f9); color: var(--exam-text-secondary, #475569); border: 1px solid var(--exam-border-strong, #cbd5e1); border-radius: 0.5rem; padding: 0.6rem 1rem; font-size: 0.9rem; font-weight: 600; cursor: pointer;"
                 >
                   {showTarget ? UI_LABELS.hideAnswer : UI_LABELS.showAnswer}
                 </button>
@@ -409,23 +409,23 @@ export function HskDictationStudio({ onBack }) {
 
             {/* Hint Displays */}
             {showPinyin && currentItem.pinyin && (
-              <div style="background: #fef3c7; border: 1px solid #fde68a; border-radius: 0.5rem; padding: 0.75rem 1rem; margin-bottom: 1rem; font-size: 1.05rem; color: #92400e;">
+              <div style="background: var(--exam-warning-tint, #fef3c7); border: 1px solid var(--exam-warning-tint-border, #fde68a); border-radius: 0.5rem; padding: 0.75rem 1rem; margin-bottom: 1rem; font-size: 1.05rem; color: var(--exam-warning-text, #92400e);">
                 <strong>Pinyin gợi ý:</strong> {currentItem.pinyin}
               </div>
             )}
 
             {showTarget && (
-              <div style="background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 0.5rem; padding: 0.75rem 1rem; margin-bottom: 1rem; font-size: 1.1rem; color: #1e40af;">
+              <div style="background: var(--exam-primary-tint, #eff6ff); border: 1px solid var(--exam-primary-tint-border, #bfdbfe); border-radius: 0.5rem; padding: 0.75rem 1rem; margin-bottom: 1rem; font-size: 1.1rem; color: var(--exam-primary-text, #1e40af);">
                 <p style="margin: 0 0 0.35rem 0; font-family: var(--font-zh, 'Noto Serif SC', SimSun, serif); font-size: 1.3rem; font-weight: 600;">
                   {currentItem.targetZh}
                 </p>
                 {currentItem.pinyin && (
-                  <p style="margin: 0 0 0.35rem 0; font-size: 0.95rem; color: #3b82f6;">
+                  <p style="margin: 0 0 0.35rem 0; font-size: 0.95rem; color: var(--exam-primary-text, #3b82f6);">
                     {currentItem.pinyin}
                   </p>
                 )}
                 {currentItem.meaningVi && (
-                  <p style="margin: 0; font-size: 0.9rem; color: #475569;">
+                  <p style="margin: 0; font-size: 0.9rem; color: var(--exam-text-secondary, #475569);">
                     <strong>Dịch nghĩa:</strong> {currentItem.meaningVi}
                   </p>
                 )}
@@ -434,15 +434,15 @@ export function HskDictationStudio({ onBack }) {
 
             {/* Diff Comparison Result */}
             {diffResult && (
-              <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.25rem; margin-bottom: 1.5rem;">
+              <div style="background: var(--exam-surface-sunken, #f8fafc); border: 1px solid var(--exam-border, #e2e8f0); border-radius: 0.75rem; padding: 1.25rem; margin-bottom: 1.5rem;">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.85rem; flex-wrap: wrap; gap: 0.5rem;">
-                  <span style="font-weight: 700; font-size: 1rem; color: #1e293b;">
+                  <span style="font-weight: 700; font-size: 1rem; color: var(--exam-text-strong, #1e293b);">
                     Kết quả so khớp từng ký tự:
                   </span>
                   <span style={{
                     fontSize: '1.1rem',
                     fontWeight: 800,
-                    color: diffResult.accuracy >= 90 ? '#059669' : diffResult.accuracy >= 60 ? '#d97706' : '#dc2626'
+                    color: diffResult.accuracy >= 90 ? 'var(--exam-success-text, #059669)' : diffResult.accuracy >= 60 ? 'var(--exam-warning-text, #d97706)' : 'var(--exam-danger-text, #dc2626)'
                   }}>
                     {UI_LABELS.accuracyLabel} {diffResult.accuracy}% ({diffResult.matchedCount}/{diffResult.totalCount} chữ)
                   </span>
@@ -451,17 +451,17 @@ export function HskDictationStudio({ onBack }) {
                 {/* Character tokens */}
                 <div style="display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 1rem;">
                   {diffResult.diffItems.map((item, idx) => {
-                    let bg = '#fee2e2';
-                    let border = '#f87171';
-                    let color = '#991b1b';
+                    let bg = 'var(--exam-danger-tint, #fee2e2)';
+                    let border = 'var(--exam-danger, #f87171)';
+                    let color = 'var(--exam-danger, #991b1b)';
                     if (item.status === 'correct') {
-                      bg = '#d1fae5';
-                      border = '#34d399';
-                      color = '#065f46';
+                      bg = 'var(--exam-success-tint, #d1fae5)';
+                      border = 'var(--exam-success, #34d399)';
+                      color = 'var(--exam-success, #065f46)';
                     } else if (item.status === 'missing') {
-                      bg = '#f1f5f9';
-                      border = '#cbd5e1';
-                      color = '#64748b';
+                      bg = 'var(--exam-surface-muted, #f1f5f9)';
+                      border = 'var(--exam-border-strong, #cbd5e1)';
+                      color = 'var(--exam-text-muted, #64748b)';
                     }
                     return (
                       <div
@@ -482,7 +482,7 @@ export function HskDictationStudio({ onBack }) {
                         <span style={{ fontSize: '1.3rem', fontWeight: 700, color }}>
                           {item.char}
                         </span>
-                        <span style={{ fontSize: '0.75rem', color: '#64748b', marginTop: '0.2rem' }}>
+                        <span style={{ fontSize: '0.75rem', color: 'var(--exam-text-muted, #64748b)', marginTop: '0.2rem' }}>
                           {item.status === 'correct' ? '✓ Đúng' : item.status === 'missing' ? 'Chưa gõ' : `Bạn: ${item.userChar}`}
                         </span>
                       </div>
@@ -495,7 +495,7 @@ export function HskDictationStudio({ onBack }) {
                   margin: 0,
                   fontSize: '0.95rem',
                   fontWeight: 600,
-                  color: diffResult.accuracy === 100 ? '#059669' : diffResult.accuracy >= 60 ? '#b45309' : '#b91c1c'
+                  color: diffResult.accuracy === 100 ? 'var(--exam-success-text, #059669)' : diffResult.accuracy >= 60 ? 'var(--exam-warning-text, #b45309)' : 'var(--exam-danger-text, #b91c1c)'
                 }}>
                   {diffResult.accuracy === 100
                     ? UI_LABELS.perfectScore
@@ -507,18 +507,18 @@ export function HskDictationStudio({ onBack }) {
             )}
 
             {/* Bottom Navigation */}
-            <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 1rem; border-top: 1px solid #f1f5f9;">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 1rem; border-top: 1px solid var(--exam-surface-muted, #f1f5f9);">
               <button
                 type="button"
                 onClick={goToPrevItem}
                 disabled={currentIndex === 0}
                 style={{
-                  background: '#f8fafc',
-                  border: '1px solid #cbd5e1',
+                  background: 'var(--exam-surface-sunken, #f8fafc)',
+                  border: '1px solid var(--exam-border-strong, #cbd5e1)',
                   borderRadius: '0.5rem',
                   padding: '0.55rem 1.1rem',
                   fontWeight: 600,
-                  color: '#475569',
+                  color: 'var(--exam-text-secondary, #475569)',
                   cursor: currentIndex === 0 ? 'not-allowed' : 'pointer',
                   opacity: currentIndex === 0 ? 0.5 : 1
                 }}
@@ -531,12 +531,12 @@ export function HskDictationStudio({ onBack }) {
                 onClick={goToNextItem}
                 disabled={currentIndex === dictationItems.length - 1}
                 style={{
-                  background: '#0284c7',
+                  background: 'var(--exam-primary, #0284c7)',
                   border: 'none',
                   borderRadius: '0.5rem',
                   padding: '0.55rem 1.25rem',
                   fontWeight: 700,
-                  color: '#fff',
+                  color: 'var(--exam-on-accent, #fff)',
                   cursor: currentIndex === dictationItems.length - 1 ? 'not-allowed' : 'pointer',
                   opacity: currentIndex === dictationItems.length - 1 ? 0.5 : 1
                 }}

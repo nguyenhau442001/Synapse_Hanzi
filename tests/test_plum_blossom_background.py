@@ -36,10 +36,10 @@ def test_base_css_tokens_and_layering():
     assert "#A8322D" in css_content  # Vermilion
     assert "#C5A46D" in css_content  # Antique gold
 
-    # Dark mode classical palette
-    assert "#17191D" in css_content or "#16181C" in css_content
-    assert "#B89B68" in css_content
-    assert "#EDE6D8" in css_content
+    # Dark mode palette: warm charcoal canvas, muted gold, warm off-white text
+    assert "#171717" in css_content
+    assert "#C6A66B" in css_content
+    assert "#F0EDE6" in css_content
 
     # Layering & non-blocking interaction
     assert ".chinese-aesthetic-bg" in css_content

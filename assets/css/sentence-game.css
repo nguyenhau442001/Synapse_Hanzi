@@ -7,7 +7,7 @@
   --font-cjk-clean: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
 }
 :root[data-theme="dark"] {
-  --tile-shadow-border: #3f3f46;
+  --tile-shadow-border: #41403E;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
@@ -1997,7 +1997,7 @@ body.is-game-view .featured-topics {
 }
 
 :root[data-theme="dark"] .speech-hint-toast {
-  background: #22252b;
+  background: #262523;
   border-color: rgba(255, 255, 255, 0.15);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
   color: #ede6d8;

@@ -914,7 +914,7 @@ export function Hsk30ExamComponent() {
                 border: hubMode === 'cbt' ? '2px solid var(--exam-primary, #0284c7)' : '1px solid var(--exam-border-strong, #cbd5e1)',
                 background: hubMode === 'cbt' ? 'var(--exam-primary, #0284c7)' : 'var(--exam-surface, #ffffff)',
                 color: hubMode === 'cbt' ? 'var(--exam-on-accent, #ffffff)' : 'var(--exam-text-secondary, #334155)',
-                boxShadow: hubMode === 'cbt' ? '0 3px 8px rgba(2,132,199,0.25)' : 'none',
+                boxShadow: hubMode === 'cbt' ? '0 3px 8px var(--exam-primary-glow, rgba(2,132,199,0.25))' : 'none',
                 display: 'flex',
                 alignItems: 'center',
                 gap: '0.4rem'
@@ -935,7 +935,7 @@ export function Hsk30ExamComponent() {
                 border: hubMode === 'dictation' ? '2px solid var(--exam-success, #059669)' : '1px solid var(--exam-border-strong, #cbd5e1)',
                 background: hubMode === 'dictation' ? 'var(--exam-success, #059669)' : 'var(--exam-surface, #ffffff)',
                 color: hubMode === 'dictation' ? 'var(--exam-on-accent, #ffffff)' : 'var(--exam-text-secondary, #334155)',
-                boxShadow: hubMode === 'dictation' ? '0 3px 8px rgba(5,150,105,0.25)' : 'none',
+                boxShadow: hubMode === 'dictation' ? '0 3px 8px var(--exam-success-glow, rgba(5,150,105,0.25))' : 'none',
                 display: 'flex',
                 alignItems: 'center',
                 gap: '0.4rem'
@@ -956,7 +956,7 @@ export function Hsk30ExamComponent() {
                 border: hubMode === 'shadowing' ? '2px solid var(--exam-success, #0d9488)' : '1px solid var(--exam-border-strong, #cbd5e1)',
                 background: hubMode === 'shadowing' ? 'var(--exam-success, #0d9488)' : 'var(--exam-surface, #ffffff)',
                 color: hubMode === 'shadowing' ? 'var(--exam-on-accent, #ffffff)' : 'var(--exam-text-secondary, #334155)',
-                boxShadow: hubMode === 'shadowing' ? '0 3px 8px rgba(13,148,136,0.25)' : 'none',
+                boxShadow: hubMode === 'shadowing' ? '0 3px 8px var(--exam-success-glow, rgba(13,148,136,0.25))' : 'none',
                 display: 'flex',
                 alignItems: 'center',
                 gap: '0.4rem'
@@ -977,7 +977,7 @@ export function Hsk30ExamComponent() {
                 border: hubMode === 'error_notebook' ? '2px solid var(--exam-warning, #c2410c)' : '1px solid var(--exam-border-strong, #cbd5e1)',
                 background: hubMode === 'error_notebook' ? 'var(--exam-warning, #c2410c)' : 'var(--exam-surface, #ffffff)',
                 color: hubMode === 'error_notebook' ? 'var(--exam-on-accent, #ffffff)' : 'var(--exam-text-secondary, #334155)',
-                boxShadow: hubMode === 'error_notebook' ? '0 3px 8px rgba(194,65,12,0.25)' : 'none',
+                boxShadow: hubMode === 'error_notebook' ? '0 3px 8px var(--exam-warning-glow, rgba(194,65,12,0.25))' : 'none',
                 display: 'flex',
                 alignItems: 'center',
                 gap: '0.4rem'
@@ -1066,7 +1066,7 @@ export function Hsk30ExamComponent() {
                   border: isHsk30 ? '2px solid var(--exam-primary, #0284c7)' : '1px solid var(--exam-border-strong, #cbd5e1)',
                   background: isHsk30 ? 'var(--exam-primary, #0284c7)' : 'var(--exam-surface, #ffffff)',
                   color: isHsk30 ? 'var(--exam-on-accent, #ffffff)' : 'var(--exam-text-secondary, #475569)',
-                  boxShadow: isHsk30 ? '0 4px 12px rgba(2, 132, 199, 0.25)' : 'none',
+                  boxShadow: isHsk30 ? '0 4px 12px var(--exam-primary-glow, rgba(2, 132, 199, 0.25))' : 'none',
                   display: 'flex',
                   alignItems: 'center',
                   gap: '0.5rem',
@@ -1086,7 +1086,7 @@ export function Hsk30ExamComponent() {
                   border: !isHsk30 ? '2px solid var(--exam-rose, #e11d48)' : '1px solid var(--exam-border-strong, #cbd5e1)',
                   background: !isHsk30 ? 'var(--exam-rose, #e11d48)' : 'var(--exam-surface, #ffffff)',
                   color: !isHsk30 ? 'var(--exam-on-accent, #ffffff)' : 'var(--exam-text-secondary, #475569)',
-                  boxShadow: !isHsk30 ? '0 4px 12px rgba(225, 29, 72, 0.25)' : 'none',
+                  boxShadow: !isHsk30 ? '0 4px 12px var(--exam-rose-glow, rgba(225, 29, 72, 0.25))' : 'none',
                   display: 'flex',
                   alignItems: 'center',
                   gap: '0.5rem',
@@ -1165,14 +1165,14 @@ export function Hsk30ExamComponent() {
               <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
                 <button
                   type="button"
-                  style="padding: 0.5rem 1rem; border-radius: 0.5rem; border: 1px solid var(--exam-primary, #0284c7); background: rgba(2, 132, 199, 0.08); color: var(--exam-primary-text, #0284c7); font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 0.4rem;"
+                  style="padding: 0.5rem 1rem; border-radius: 0.5rem; border: 1px solid var(--exam-primary, #0284c7); background: var(--exam-primary-tint, rgba(2, 132, 199, 0.08)); color: var(--exam-primary-text, #0284c7); font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 0.4rem;"
                   onClick={runSoundTest}
                 >
                   {isSoundTesting ? '🔊 Đang phát âm thanh...' : '🎧 试音 (Thử tai nghe)'}
                 </button>
                 <button
                   type="button"
-                  style="padding: 0.5rem 1rem; border-radius: 0.5rem; border: 1px solid var(--exam-rose, #e11d48); background: rgba(225, 29, 72, 0.08); color: var(--exam-rose-text, #e11d48); font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 0.4rem;"
+                  style="padding: 0.5rem 1rem; border-radius: 0.5rem; border: 1px solid var(--exam-rose, #e11d48); background: var(--exam-rose-tint, rgba(225, 29, 72, 0.08)); color: var(--exam-rose-text, #e11d48); font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 0.4rem;"
                   onClick={runMicTest}
                 >
                   {isMicTesting ? '🔴 Đang thử ghi âm...' : '🎙️ 试麦 (Thử Micro)'}
@@ -1187,7 +1187,7 @@ export function Hsk30ExamComponent() {
             )}
 
             {isHsk30 ? (
-              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; font-size: 0.875rem; background: var(--bg-surface, #f8fafc); padding: 1rem; border-radius: 0.75rem; line-height: 1.6;">
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; font-size: 0.875rem; background: var(--exam-surface-sunken, var(--bg-surface, #f8fafc)); box-shadow: inset 0 0 0 1px var(--exam-border, transparent); padding: 1rem; border-radius: 0.75rem; line-height: 1.6;">
                 <div>
                   <strong style="color: var(--exam-primary-text, #0284c7);">1. Cấu trúc bài thi máy tính:</strong>
                   <div>• HSK 1: 40 câu (Nghe 20, Đọc 20) - 35 phút (Thang điểm: 200, Đỗ: 120đ).</div>
@@ -1254,7 +1254,7 @@ export function Hsk30ExamComponent() {
                   <div class="exam-card" key={item.id} style="border-top: 4px solid var(--exam-rose, #e11d48);">
                     <div>
                       <div class="exam-card-header">
-                        <span class="exam-card-code" style="background: rgba(225, 29, 72, 0.1); color: var(--exam-rose-text, #e11d48);">
+                        <span class="exam-card-code" style="background: var(--exam-rose-tint, rgba(225, 29, 72, 0.1)); color: var(--exam-rose-text, #e11d48);">
                           {item.code}
                         </span>
                         <span style="font-size: 0.85rem; font-weight: 600; color: var(--exam-rose-text, #e11d48);">Khẩu ngữ CTI</span>
@@ -1298,7 +1298,7 @@ export function Hsk30ExamComponent() {
     return (
       <div class="exam-container">
         <div class="cbt-exam-wrapper" style="border-top: 4px solid var(--exam-rose, #e11d48);">
-          <header class="cbt-top-bar" style="background: linear-gradient(90deg, var(--exam-rose, #881337) 0%, var(--exam-rose, #4c0519) 100%);">
+          <header class="cbt-top-bar" style="background: var(--exam-topbar-bg, linear-gradient(90deg, #881337 0%, #4c0519 100%));">
             <div class="cbt-title-group">
               <span class="cbt-logo" style="background: var(--exam-rose, #e11d48);">HSKK</span>
               <span class="cbt-exam-name">{examData.title}</span>
@@ -1436,7 +1436,7 @@ export function Hsk30ExamComponent() {
                       <div>
                         <button
                           type="button"
-                          style="padding: 0.75rem 1.75rem; border-radius: 0.75rem; background: var(--exam-rose, #e11d48); color: var(--exam-on-accent, #ffffff); border: none; font-weight: 700; font-size: 1rem; cursor: pointer; display: inline-flex; align-items: center; gap: 0.5rem; box-shadow: 0 4px 12px rgba(225, 29, 72, 0.3);"
+                          style="padding: 0.75rem 1.75rem; border-radius: 0.75rem; background: var(--exam-rose, #e11d48); color: var(--exam-on-accent, #ffffff); border: none; font-weight: 700; font-size: 1rem; cursor: pointer; display: inline-flex; align-items: center; gap: 0.5rem; box-shadow: 0 4px 12px var(--exam-rose-glow, rgba(225, 29, 72, 0.3));"
                           onClick={stopRecordingQuestion}
                         >
                           ⏹️ Hoàn thành / Dừng ghi âm
@@ -1495,7 +1495,7 @@ export function Hsk30ExamComponent() {
                       </p>
                       <button
                         type="button"
-                        style="padding: 0.85rem 2rem; border-radius: 0.75rem; background: linear-gradient(135deg, var(--exam-rose, #e11d48) 0%, var(--exam-rose, #be123c) 100%); color: var(--exam-on-accent, #ffffff); border: none; font-weight: 700; font-size: 1.05rem; cursor: pointer; display: inline-flex; align-items: center; gap: 0.5rem; box-shadow: 0 4px 14px rgba(225, 29, 72, 0.35);"
+                        style="padding: 0.85rem 2rem; border-radius: 0.75rem; background: linear-gradient(135deg, var(--exam-rose, #e11d48) 0%, var(--exam-rose, #be123c) 100%); color: var(--exam-on-accent, #ffffff); border: none; font-weight: 700; font-size: 1.05rem; cursor: pointer; display: inline-flex; align-items: center; gap: 0.5rem; box-shadow: 0 4px 14px var(--exam-rose-glow, rgba(225, 29, 72, 0.35));"
                         onClick={startRecordingQuestion}
                       >
                         🎙️ Bắt đầu ghi âm câu trả lời
@@ -1862,7 +1862,7 @@ export function Hsk30ExamComponent() {
                           selectedWords.map((word, wIdx) => (
                             <span
                               key={wIdx}
-                              style="display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.4rem 0.8rem; background: var(--exam-primary, #0284c7); color: var(--exam-on-accent, #ffffff); border-radius: 0.5rem; font-size: 1.05rem; font-weight: 600; cursor: pointer; box-shadow: 0 2px 4px rgba(2, 132, 199, 0.2);"
+                              style="display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.4rem 0.8rem; background: var(--exam-primary, #0284c7); color: var(--exam-on-accent, #ffffff); border-radius: 0.5rem; font-size: 1.05rem; font-weight: 600; cursor: pointer; box-shadow: 0 2px 4px var(--exam-primary-glow, rgba(2, 132, 199, 0.2));"
                               onClick={() => handleToggleWordReorder(activeQuestion.id, word, availableWords)}
                               title="Nhấn để gỡ bỏ từ này"
                             >

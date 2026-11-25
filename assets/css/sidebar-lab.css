@@ -163,7 +163,7 @@
   user-select: none;
 }
 :root[data-theme="dark"] .stroke-canvas-grid {
-  background-color: var(--card-bg, #1C2022);
+  background-color: var(--card-bg, #201F1D);
   border-color: color-mix(in srgb, var(--brand-primary) 45%, var(--border));
   box-shadow: 0 12px 30px -8px rgba(0, 0, 0, 0.55);
 }

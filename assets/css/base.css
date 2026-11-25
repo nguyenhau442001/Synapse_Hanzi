@@ -109,43 +109,44 @@
   --content-max: 1200px;
 }
 
-/* Dark palette — Deep nocturnal ink wash (松烟黛墨) with subtle gold ornaments & cinnabar accents */
+/* Dark palette — Warm Charcoal + Chinese Vermilion + Muted Gold (炭灰 · 朱砂 · 泥金).
+   Surface ladder: canvas #171717 < subtle #1D1D1D < card #242424 < elevated #2D2D2D. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg-canvas: #17191D;
-    --bg-surface: #22252B;
-    --bg-elevated: #2A2F38;
+    --bg-canvas: #171717;
+    --bg-surface: #242424;
+    --bg-elevated: #2D2D2D;
 
-    --text-primary: #EDE6D8;
-    --text-secondary: #B0A99C;
-    --text-tertiary: #8A8376;
-    --text-muted: #8A8376;
+    --text-primary: #F0EDE6;
+    --text-secondary: #AAA49A;
+    --text-tertiary: #958F86;
+    --text-muted: #8C877F;
 
-    --border-subtle: #2D333D;
-    --border-strong: rgba(184, 155, 104, 0.45);
+    --border-subtle: #2E2C29;
+    --border-strong: rgba(198, 166, 107, 0.4);
 
-    --brand-primary: #A8322A;
-    --brand-primary-hover: #BF3B32;
+    --brand-primary: #B8513E;
+    --brand-primary-hover: #C75A45;
 
-    --status-success: #629988;
-    --status-warning: #D4B37F;
+    --status-success: #6FA493;
+    --status-warning: #C6A66B;
 
-    --bg: #17191D;
-    --card-bg: #22252B;
-    --border: #333945;
+    --bg: #171717;
+    --card-bg: #242424;
+    --border: #363330;
     --card-shadow: none;
-    --surface-subtle: #22252B;
-    --surface-chip: #2A303A;
-    --progress-track: #282E38;
+    --surface-subtle: #1D1D1D;
+    --surface-chip: #2D2D2D;
+    --progress-track: #2D2D2D;
 
-    --accent: #A8322D;
-    --accent-hover: #BF3B32;
-    --accent-gold: #B89B68;
+    --accent: #B8513E;
+    --accent-hover: #C75A45;
+    --accent-gold: #C6A66B;
     --accent-gradient: linear-gradient(var(--accent), var(--accent));
     --accent-gradient-hover: linear-gradient(var(--accent-hover), var(--accent-hover));
-    --accent-light: rgba(168, 50, 42, 0.15);
-    --on-accent: #EDE6D8;
-    --accent-text: #E06D63;
+    --accent-light: rgba(199, 90, 69, 0.14);
+    --on-accent: #FFF8F0;
+    --accent-text: #E07A63;
     --state-known: #CFC57E;
     --state-known-bg: rgba(207, 197, 126, 0.14);
     --state-known-border: rgba(207, 197, 126, 0.4);
@@ -161,60 +162,60 @@
     --tone-4: #D9A88C;
     --tone-5: #A8A194;
 
-    --success-bg: rgba(98, 153, 136, 0.16);
-    --success-text: #7FB8A7;
-    --danger-bg: rgba(168, 50, 42, 0.16);
-    --danger-text: #F0786E;
-    --info-bg: rgba(82, 125, 112, 0.16);
-    --info-text: #76B4A3;
-    --warning-bg: rgba(184, 155, 104, 0.16);
-    --warning-text: #D4B37F;
-    --example-bg: #1B1E24;
-    --example-border: #2D333D;
+    --success-bg: rgba(111, 164, 147, 0.14);
+    --success-text: #8CC2B0;
+    --danger-bg: rgba(199, 90, 69, 0.14);
+    --danger-text: #EE8A7C;
+    --info-bg: rgba(198, 166, 107, 0.12);
+    --info-text: #D8BC84;
+    --warning-bg: rgba(198, 166, 107, 0.14);
+    --warning-text: #D8BC84;
+    --example-bg: #1D1D1D;
+    --example-border: #363330;
     --radius-lg: 12px;
     --radius-md: 8px;
-    --surface-hover: rgba(237, 230, 216, 0.05);
-    --surface-active: rgba(224, 109, 99, 0.12);
-    --focus-ring: 0 0 0 3px rgba(224, 109, 99, 0.35);
+    --surface-hover: rgba(240, 237, 230, 0.05);
+    --surface-active: rgba(199, 90, 69, 0.14);
+    --focus-ring: 0 0 0 3px rgba(224, 122, 99, 0.35);
   }
 }
 
 /* Manual theme overrides */
 :root[data-theme="dark"] {
-  --bg-canvas: #17191D;
-  --bg-surface: #22252B;
-  --bg-elevated: #2A2F38;
+  --bg-canvas: #171717;
+  --bg-surface: #242424;
+  --bg-elevated: #2D2D2D;
 
-  --text-primary: #EDE6D8;
-  --text-secondary: #B0A99C;
-  --text-tertiary: #8A8376;
-  --text-muted: #8A8376;
+  --text-primary: #F0EDE6;
+  --text-secondary: #AAA49A;
+  --text-tertiary: #958F86;
+  --text-muted: #8C877F;
 
-  --border-subtle: #2D333D;
-  --border-strong: rgba(184, 155, 104, 0.45);
+  --border-subtle: #2E2C29;
+  --border-strong: rgba(198, 166, 107, 0.4);
 
-  --brand-primary: #A8322A;
-  --brand-primary-hover: #BF3B32;
+  --brand-primary: #B8513E;
+  --brand-primary-hover: #C75A45;
 
-  --status-success: #629988;
-  --status-warning: #D4B37F;
+  --status-success: #6FA493;
+  --status-warning: #C6A66B;
 
-  --bg: #17191D;
-  --card-bg: #22252B;
-  --border: #333945;
+  --bg: #171717;
+  --card-bg: #242424;
+  --border: #363330;
   --card-shadow: none;
-  --surface-subtle: #22252B;
-  --surface-chip: #2A303A;
-  --progress-track: #282E38;
+  --surface-subtle: #1D1D1D;
+  --surface-chip: #2D2D2D;
+  --progress-track: #2D2D2D;
 
-  --accent: #A8322D;
-  --accent-hover: #BF3B32;
-  --accent-gold: #B89B68;
+  --accent: #B8513E;
+  --accent-hover: #C75A45;
+  --accent-gold: #C6A66B;
   --accent-gradient: linear-gradient(var(--accent), var(--accent));
   --accent-gradient-hover: linear-gradient(var(--accent-hover), var(--accent-hover));
-  --accent-light: rgba(168, 50, 42, 0.15);
-  --on-accent: #EDE6D8;
-  --accent-text: #E06D63;
+  --accent-light: rgba(199, 90, 69, 0.14);
+  --on-accent: #FFF8F0;
+  --accent-text: #E07A63;
   --state-known: #CFC57E;
   --state-known-bg: rgba(207, 197, 126, 0.14);
   --state-known-border: rgba(207, 197, 126, 0.4);
@@ -230,21 +231,21 @@
   --tone-4: #D9A88C;
   --tone-5: #A8A194;
 
-  --success-bg: rgba(98, 153, 136, 0.16);
-  --success-text: #7FB8A7;
-  --danger-bg: rgba(168, 50, 42, 0.16);
-  --danger-text: #F0786E;
-  --info-bg: rgba(82, 125, 112, 0.16);
-  --info-text: #76B4A3;
-  --warning-bg: rgba(184, 155, 104, 0.16);
-  --warning-text: #D4B37F;
-  --example-bg: #1B1E24;
-  --example-border: #2D333D;
+  --success-bg: rgba(111, 164, 147, 0.14);
+  --success-text: #8CC2B0;
+  --danger-bg: rgba(199, 90, 69, 0.14);
+  --danger-text: #EE8A7C;
+  --info-bg: rgba(198, 166, 107, 0.12);
+  --info-text: #D8BC84;
+  --warning-bg: rgba(198, 166, 107, 0.14);
+  --warning-text: #D8BC84;
+  --example-bg: #1D1D1D;
+  --example-border: #363330;
   --radius-lg: 12px;
   --radius-md: 8px;
-  --surface-hover: rgba(237, 230, 216, 0.05);
-  --surface-active: rgba(224, 109, 99, 0.12);
-  --focus-ring: 0 0 0 3px rgba(224, 109, 99, 0.35);
+  --surface-hover: rgba(240, 237, 230, 0.05);
+  --surface-active: rgba(199, 90, 69, 0.14);
+  --focus-ring: 0 0 0 3px rgba(224, 122, 99, 0.35);
 }
 /* Chinese Classical Landscape Canvas (梅花与水墨意境背景) */
 .chinese-aesthetic-bg {
@@ -468,9 +469,9 @@ body {
   letter-spacing: 0.02em;
 }
 :root[data-theme="dark"] .brand-version {
-  background: var(--surface-chip, #2a303a);
+  background: var(--surface-chip, #302F2D);
   color: var(--accent-text, #e06d63);
-  border-color: var(--border-subtle, #2d333d);
+  border-color: var(--border-subtle, #333230);
 }
 .brand-tagline {
   color: var(--text-secondary);

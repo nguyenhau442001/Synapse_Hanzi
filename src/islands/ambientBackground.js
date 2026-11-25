@@ -46,8 +46,8 @@ const THEMES = {
       { fill: '#C86A56', glow: 'rgba(200, 106, 86, 0.2)' }, // Muted cinnabar dust
     ],
     mist: [
-      { color: 'rgba(28, 33, 42, 0.15)', yRatio: 0.75, speed: 0.08, height: 180 },
-      { color: 'rgba(22, 26, 33, 0.20)', yRatio: 0.88, speed: 0.12, height: 210 },
+      { color: 'rgba(33, 30, 27, 0.15)', yRatio: 0.75, speed: 0.08, height: 180 },
+      { color: 'rgba(26, 24, 22, 0.20)', yRatio: 0.88, speed: 0.12, height: 210 },
     ],
     inkBloom: '184, 155, 104',
     inkBloomPeak: 0.03,

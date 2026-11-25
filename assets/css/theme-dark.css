@@ -1,0 +1,113 @@
+/* Dark Mode design system — Warm Charcoal · Chinese Vermilion · Muted Gold (炭灰 · 朱砂 · 泥金)
+   Light Mode is untouched: every rule here is scoped to :root[data-theme="dark"].
+   Core palette tokens live in base.css; this file maps component-level tokens onto them
+   and replaces light-only surfaces that bypassed the theme variables. */
+
+/* --------------------------------------------------------------------------
+   Exam hub tokens. Exam islands and exam CSS use var(--exam-<role>, <light hex>),
+   so Light Mode renders the original hex and Dark Mode resolves these values.
+   -------------------------------------------------------------------------- */
+:root[data-theme="dark"] {
+  --exam-surface: var(--bg-surface);
+  --exam-surface-sunken: var(--surface-subtle);
+  --exam-surface-muted: var(--bg-elevated);
+  --exam-border: var(--border-subtle);
+  --exam-border-strong: var(--border);
+  --exam-text-faint: var(--text-muted);
+  --exam-text-muted: var(--text-tertiary);
+  --exam-text-secondary: var(--text-secondary);
+  --exam-text-strong: var(--text-primary);
+  --exam-on-accent: var(--on-accent);
+
+  /* Primary (CBT) and HSKK both resolve to vermilion: red marks active state and CTA. */
+  --exam-primary: var(--accent);
+  --exam-primary-text: var(--accent-text);
+  --exam-primary-tint: var(--accent-light);
+  --exam-primary-tint-border: rgba(199, 90, 69, 0.35);
+  --exam-rose: var(--accent);
+  --exam-rose-text: var(--accent-text);
+  --exam-rose-tint: var(--accent-light);
+  --exam-rose-tint-border: rgba(199, 90, 69, 0.35);
+
+  --exam-danger: #A9473A;
+  --exam-danger-text: var(--danger-text);
+  --exam-danger-tint: var(--danger-bg);
+  --exam-danger-tint-border: rgba(238, 138, 124, 0.32);
+
+  --exam-success: #3F7666;
+  --exam-success-text: var(--success-text);
+  --exam-success-tint: var(--success-bg);
+  --exam-success-tint-border: rgba(140, 194, 176, 0.32);
+
+  /* Gold is reserved for secondary info, time and status. */
+  --exam-warning: #7E6230;
+  --exam-warning-text: var(--warning-text);
+  --exam-warning-tint: var(--warning-bg);
+  --exam-warning-tint-border: rgba(198, 166, 107, 0.35);
+
+  /* Colored glows read as neon on charcoal; use neutral, restrained depth instead. */
+  --exam-primary-glow: rgba(0, 0, 0, 0.35);
+  --exam-rose-glow: rgba(0, 0, 0, 0.35);
+  --exam-success-glow: rgba(0, 0, 0, 0.35);
+  --exam-warning-glow: rgba(0, 0, 0, 0.35);
+  --exam-danger-glow: rgba(0, 0, 0, 0.35);
+
+  /* Hero: deep charcoal with a restrained burgundy glow instead of saturated blue. */
+  --exam-hero-bg:
+    radial-gradient(120% 140% at 0% 0%, rgba(199, 90, 69, 0.22) 0%, rgba(199, 90, 69, 0) 55%),
+    linear-gradient(135deg, #2A1D1A 0%, #221E1C 55%, #1D1D1D 100%);
+  --exam-hero-text: var(--text-primary);
+  --exam-topbar-bg: linear-gradient(90deg, #2D2D2D 0%, #262321 100%);
+  --exam-topbar-text: var(--text-primary);
+  --exam-hero-shadow: inset 0 0 0 1px rgba(199, 90, 69, 0.28), 0 12px 32px -16px rgba(0, 0, 0, 0.6);
+}
+
+/* --------------------------------------------------------------------------
+   Legacy alias tokens. Several modules read these with a light fallback
+   (e.g. var(--bg-card, #ffffff)) but they were never defined, so Dark Mode
+   rendered pure-white cards. Defined for Dark Mode only.
+   -------------------------------------------------------------------------- */
+:root[data-theme="dark"] {
+  --bg-card: var(--bg-surface);
+  --surface-card: var(--bg-surface);
+  --bg-secondary: var(--surface-subtle);
+  --bg-hover: var(--bg-elevated);
+  --text-main: var(--text-primary);
+  --border-color: var(--border);
+  --border-default: var(--border);
+  --border-card: var(--border-subtle);
+  --accent-rgb: 199, 90, 69;
+  --primary: var(--accent);
+}
+
+/* --------------------------------------------------------------------------
+   Feature promo modal: amber CTA/badge → vermilion CTA + gold badge.
+   -------------------------------------------------------------------------- */
+:root[data-theme="dark"] .promo-badge {
+  background: var(--warning-bg);
+  color: var(--warning-text);
+  border-color: rgba(198, 166, 107, 0.3);
+}
+:root[data-theme="dark"] .promo-tag-new {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+:root[data-theme="dark"] .promo-cta-primary {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+:root[data-theme="dark"] .promo-cta-primary:hover {
+  background: var(--accent-hover);
+}
+:root[data-theme="dark"] .promo-cta-secondary:hover {
+  background: var(--surface-chip);
+  border-color: var(--border-strong);
+}
+
+/* --------------------------------------------------------------------------
+   Reading analysis: base rules ship a navy card (#141724) for every theme.
+   -------------------------------------------------------------------------- */
+:root[data-theme="dark"] .reading-exercise-card,
+:root[data-theme="dark"] .reading-global-footer {
+  background: var(--bg-surface);
+}
