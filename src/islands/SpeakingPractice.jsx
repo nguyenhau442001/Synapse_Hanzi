@@ -38,30 +38,36 @@ import {
  * Standard Speaking Practice UI Labels and Semantic Constants (Single Source of Truth)
  */
 export const SPEAKING_LABELS = Object.freeze({
-  HEADER_TITLE: 'Phòng Luyện Nói & Chấm Điểm Thanh Điệu AI',
-  HEADER_SUBTITLE: 'Phân tích cao độ F0 (YIN) & Biến điệu Sandhi chuẩn hóa 100% Client-side',
-  DEEP_AI_ACTIVE: 'AI Conformer-CTC (INT8): Đang hoạt động 100% Offline (Chấm Âm đầu · Vần · Thanh điệu)',
-  DEEP_AI_INACTIVE: 'AI Conformer-CTC (INT8 8.2MB): Chưa kích hoạt',
-  DEEP_AI_DOWNLOADING: 'Đang tải...',
-  DEEP_AI_ACTIVATE: '⚡ Kích hoạt AI Chuyên Sâu',
-  DEEP_AI_BUTTON_LABEL: 'Bật AI (8.2MB)',
-  TAB_TONE_TRAINER: '📊 Luyện Thanh Điệu Trực Quan',
-  TAB_VOCAB_PRACTICE: '🎙️ Luyện Phát Âm Từ Vựng HSK',
-  TAB_MINIMAL_PAIRS: '⚡ Cặp Âm Dễ Nhầm (Người Việt)',
-  TAB_NEWBIE_GUIDE: '📖 Cẩm Nang Thanh Điệu (Newbie)',
-  VISUALIZER_COMBINED_TITLE: 'Hiển thị kết hợp Cao độ F0 và Lớp nền Sóng âm',
-  VISUALIZER_COMBINED_LABEL: '📊 Kết Hợp (Cao Độ + Sóng Âm)',
-  VISUALIZER_DUAL_TITLE: 'So sánh trực quan 2 tầng dạng sóng Studio vs Bạn',
-  VISUALIZER_DUAL_LABEL: '🌊 Dạng Sóng A/B (Mẫu vs Bạn)',
-  SAMPLE_AUDIO_TITLE: 'Nghe phát âm chuẩn studio',
-  SAMPLE_AUDIO_LABEL: 'Nghe Audio Mẫu',
-  RECORD_STOP_TITLE: 'Bấm để dừng và chấm điểm',
-  RECORD_START_TITLE: 'Bấm để bắt đầu ghi âm',
-  RECORDING_ACTIVE: 'Đang Thu Âm (Bấm để Dừng)',
-  RECORDING_IDLE: 'Bấm Nói (Ghi Âm & Chấm Điểm)',
-  USER_AUDIO_TITLE: 'Nghe lại giọng bạn vừa thu âm',
-  USER_AUDIO_PLAYING: 'Đang Phát...',
-  USER_AUDIO_IDLE: 'Nghe Giọng Mình (A/B)',
+  HEADER_TITLE: 'Phòng Luyện Phát Âm & Giai Điệu Thanh Điệu',
+  HEADER_SUBTITLE: 'Luyện chuẩn cao độ 4 thanh điệu tiếng Trung qua đường lượn thanh điệu trực quan',
+  DEEP_AI_ACTIVE: 'Phân tích âm đầu & vần: Đang hoạt động',
+  DEEP_AI_INACTIVE: 'Kích hoạt nhận diện chi tiết âm đầu & vần',
+  DEEP_AI_DOWNLOADING: 'Đang chuẩn bị...',
+  DEEP_AI_ACTIVATE: '⚡ Bật Nhận Diện Chi Tiết',
+  DEEP_AI_BUTTON_LABEL: 'Bật nhận diện chi tiết',
+  TAB_TONE_TRAINER: 'Giai Điệu Thanh Điệu',
+  TAB_VOCAB_PRACTICE: 'Luyện Phát Âm Từ Vựng',
+  TAB_MINIMAL_PAIRS: 'Cặp Âm Dễ Nhầm',
+  TAB_NEWBIE_GUIDE: 'Cẩm Nang 4 Thanh Điệu',
+  VISUALIZER_TITLE: 'Đường lượn thanh điệu',
+  LEGEND_TARGET: 'Giai điệu mẫu',
+  LEGEND_USER: 'Giọng của bạn',
+  RECORDING_PULSE: 'Đang lắng nghe...',
+  SAMPLE_AUDIO_TITLE: 'Nghe phát âm chuẩn',
+  SAMPLE_AUDIO_LABEL: 'Nghe mẫu',
+  RECORD_STOP_TITLE: 'Nhấn để hoàn tất và xem đường lượn',
+  RECORD_START_TITLE: 'Nhấn để bắt đầu luyện nói',
+  RECORDING_ACTIVE: 'Đang lắng nghe...',
+  RECORDING_IDLE: 'Nhấn để nói',
+  USER_AUDIO_TITLE: 'Nghe lại giọng bạn vừa đọc',
+  USER_AUDIO_PLAYING: 'Đang phát lại...',
+  USER_AUDIO_IDLE: 'Nghe lại giọng bạn',
+  COACHING_TIP_HEADING: 'Gợi ý luyện thanh:',
+  COACHING_PASS_HEADING: 'Ngữ điệu rất chuẩn!',
+  COACHING_PASS_TEXT: 'Cao độ thanh điệu lượn mượt mà và hài hòa với mẫu chuẩn.',
+  CAPT_ANALYSIS_TITLE: 'Độ Chuẩn Âm Đầu, Vần & Thanh Điệu',
+  CAPT_PILLAR_TAG: 'Thanh Mẫu · Vận Mẫu · Điệu',
+  RECOGNIZED_LABEL: 'Từ máy nhận diện được:',
 });
 
 // Minimal tone pair curated drills for Vietnamese learners
@@ -351,22 +357,22 @@ function SpeakingPracticeApp() {
       }
     }
 
-    // 2. Draw Chao 5-scale horizontal reference lines with adaptive labels
+    // 2. Draw Chao 5-scale horizontal reference lines with subtle oriental labels
     ctx.lineWidth = 1;
     const chaoLabels = isCompact
       ? [
-          { level: 5, text: '5 Đỉnh' },
+          { level: 5, text: '5' },
           { level: 4, text: '4' },
-          { level: 3, text: '3 Vừa' },
+          { level: 3, text: '3' },
           { level: 2, text: '2' },
-          { level: 1, text: '1 Đáy' }
+          { level: 1, text: '1' }
         ]
       : [
-          { level: 5, text: '5 - Đỉnh cao' },
-          { level: 4, text: '4 - Hơi cao' },
-          { level: 3, text: '3 - Chuẩn (Vừa)' },
-          { level: 2, text: '2 - Hơi trầm' },
-          { level: 1, text: '1 - Đáy cổ' }
+          { level: 5, text: '5 · Cao' },
+          { level: 4, text: '4 · Hơi cao' },
+          { level: 3, text: '3 · Vừa' },
+          { level: 2, text: '2 · Hơi trầm' },
+          { level: 1, text: '1 · Trầm' }
         ];
 
     chaoLabels.forEach(({ level, text }) => {
@@ -381,9 +387,9 @@ function SpeakingPracticeApp() {
       ctx.stroke();
 
       ctx.setLineDash([]);
-      ctx.fillStyle = isDark ? 'rgba(215, 205, 195, 0.9)' : 'rgba(140, 130, 120, 0.85)';
+      ctx.fillStyle = isDark ? 'rgba(215, 205, 195, 0.85)' : 'rgba(140, 130, 120, 0.85)';
       ctx.font = isCompact
-        ? 'bold 10px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
+        ? '10px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
         : '11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
       ctx.textAlign = 'right';
       ctx.fillText(text, padLeft - 6, y + 3.5);
@@ -401,7 +407,7 @@ function SpeakingPracticeApp() {
       ctx.setLineDash([]);
     }
 
-    // 4. REAL-TIME OSCILLOSCOPE WAVEFORM (While recording)
+    // 4. REAL-TIME WAVEFORM (Subtle organic wave ribbon while recording)
     if (isRecording && liveWaveformRef.current && liveWaveformRef.current.length > 0) {
       const waveData = liveWaveformRef.current;
       const waveLen = waveData.length;
@@ -409,10 +415,10 @@ function SpeakingPracticeApp() {
       const maxAmp = plotH * 0.42;
 
       ctx.save();
-      ctx.lineWidth = 2.5;
-      ctx.strokeStyle = '#0d9488';
-      ctx.shadowColor = 'rgba(20, 184, 166, 0.65)';
-      ctx.shadowBlur = 8;
+      ctx.lineWidth = 2.2;
+      ctx.strokeStyle = isDark ? '#629988' : '#527d70'; // Oriental Jade
+      ctx.shadowColor = isDark ? 'rgba(98, 153, 136, 0.45)' : 'rgba(82, 125, 112, 0.35)';
+      ctx.shadowBlur = 6;
       ctx.beginPath();
 
       const step = Math.max(1, Math.floor(waveLen / plotW));
@@ -426,12 +432,6 @@ function SpeakingPracticeApp() {
       }
       ctx.stroke();
       ctx.restore();
-
-      // Realtime recording badge on canvas
-      ctx.fillStyle = '#0d9488';
-      ctx.font = isCompact ? 'bold 10px sans-serif' : 'bold 11px sans-serif';
-      ctx.textAlign = 'left';
-      ctx.fillText('● THU SÓNG ÂM REAL-TIME', padLeft + 6, padY + 16);
     }
 
     // 5. POST-RECORDING & IDLE WAVEFORM ENVELOPES
@@ -451,48 +451,40 @@ function SpeakingPracticeApp() {
         ctx.stroke();
         ctx.setLineDash([]);
 
-        // Track Labels
-        ctx.fillStyle = isDark ? '#fbbf24' : '#b45309';
-        ctx.font = 'bold 9.5px sans-serif';
-        ctx.textAlign = 'left';
-        ctx.fillText('MẪU STUDIO (XIAOXIAO)', padLeft + 4, padY + 12);
-        ctx.fillStyle = isDark ? '#2dd4bf' : '#0d9488';
-        ctx.fillText('GIỌNG THU CỦA BẠN', padLeft + 4, padY + plotH * 0.5 + 13);
-
         // Draw Studio Waveform Envelope in Track 1
         const refWave = refWaveformRef.current;
         if (refWave && refWave.length > 0) {
-          drawWaveformPolygon(ctx, refWave, padLeft, plotW, track1CenterY, trackH * 0.42, 'rgba(217, 119, 6, 0.35)', '#d97706');
+          drawWaveformPolygon(ctx, refWave, padLeft, plotW, track1CenterY, trackH * 0.42, isDark ? 'rgba(212, 179, 127, 0.25)' : 'rgba(184, 155, 104, 0.25)', isDark ? '#d4b37f' : '#b89b68');
         }
 
         // Draw User Waveform Envelope in Track 2
         const userWave = userWaveformRef.current;
         if (userWave && userWave.length > 0) {
-          drawWaveformPolygon(ctx, userWave, padLeft, plotW, track2CenterY, trackH * 0.42, 'rgba(13, 148, 136, 0.35)', '#0d9488');
+          drawWaveformPolygon(ctx, userWave, padLeft, plotW, track2CenterY, trackH * 0.42, isDark ? 'rgba(98, 153, 136, 0.25)' : 'rgba(82, 125, 112, 0.25)', isDark ? '#629988' : '#527d70');
         }
       } else {
         // Combined View Mode: Layered subtle waveform backdrop
         const yCenter = padY + plotH / 2;
         const waveMaxH = plotH * 0.38;
 
-        // Reference studio waveform (amber)
+        // Reference studio waveform (antique gold)
         const refWave = refWaveformRef.current;
         if (refWave && refWave.length > 0) {
-          drawWaveformPolygon(ctx, refWave, padLeft, plotW, yCenter, waveMaxH, 'rgba(217, 119, 6, 0.16)', 'rgba(217, 119, 6, 0.45)');
+          drawWaveformPolygon(ctx, refWave, padLeft, plotW, yCenter, waveMaxH, isDark ? 'rgba(212, 179, 127, 0.12)' : 'rgba(184, 155, 104, 0.12)', isDark ? 'rgba(212, 179, 127, 0.35)' : 'rgba(184, 155, 104, 0.35)');
         }
 
-        // User recorded waveform (teal)
+        // User recorded waveform (jade)
         const userWave = userWaveformRef.current;
         if (userWave && userWave.length > 0) {
-          drawWaveformPolygon(ctx, userWave, padLeft, plotW, yCenter, waveMaxH, 'rgba(13, 148, 136, 0.22)', 'rgba(13, 148, 136, 0.65)');
+          drawWaveformPolygon(ctx, userWave, padLeft, plotW, yCenter, waveMaxH, isDark ? 'rgba(98, 153, 136, 0.16)' : 'rgba(82, 125, 112, 0.16)', isDark ? 'rgba(98, 153, 136, 0.45)' : 'rgba(82, 125, 112, 0.45)');
         }
       }
     }
 
-    // 6. Draw Target Pitch Contour (Golden Amber Line)
+    // 6. Draw Target Pitch Contour (Refined Antique Gold Line)
     if (targetContour.length > 1) {
-      ctx.lineWidth = isCompact ? 3.5 : 4;
-      ctx.strokeStyle = '#d97706'; // Golden amber
+      ctx.lineWidth = isCompact ? 3.5 : 4.5;
+      ctx.strokeStyle = isDark ? '#d4b37f' : '#b89b68'; // Oriental Antique Gold
       ctx.lineCap = 'round';
       ctx.lineJoin = 'round';
       ctx.beginPath();
@@ -509,23 +501,23 @@ function SpeakingPracticeApp() {
       syllableInfos.forEach((syl, sIdx) => {
         const midTime = (sIdx + 0.5) / numSyllables;
         const midX = padLeft + midTime * plotW;
-        ctx.fillStyle = isDark ? '#fbbf24' : '#b45309';
+        ctx.fillStyle = isDark ? '#d4b37f' : '#8c6400';
         ctx.font = isCompact
-          ? 'bold 11px -apple-system, BlinkMacSystemFont, sans-serif'
-          : 'bold 12.5px -apple-system, BlinkMacSystemFont, sans-serif';
+          ? 'bold 11px -apple-system, BlinkMacSystemFont, "Noto Serif SC", serif'
+          : 'bold 12.5px -apple-system, BlinkMacSystemFont, "Noto Serif SC", serif';
         ctx.textAlign = 'center';
         const toneText = syl.sandhiApplied
-          ? `T${syl.actualTone} (biến)`
+          ? `Thanh ${syl.actualTone} (biến điệu)`
           : `Thanh ${syl.actualTone}`;
-        ctx.fillText(`${syl.char} [${toneText}]`, midX, padY - (isCompact ? 5 : 8));
+        ctx.fillText(`${syl.char} · ${toneText}`, midX, padY - (isCompact ? 5 : 8));
       });
     }
 
-    // 7. Draw User Recorded / Live Pitch Contour (Teal/Emerald Line)
+    // 7. Draw User Recorded / Live Pitch Contour (Oriental Jade Green Ribbon)
     const pitchesToDraw = userPitches || lastUserPitchesRef.current || livePointsRef.current;
     if (pitchesToDraw && pitchesToDraw.length > 1) {
-      ctx.lineWidth = isCompact ? 4 : 4.5;
-      ctx.strokeStyle = '#0d9488'; // Vibrant teal
+      ctx.lineWidth = isCompact ? 4 : 5;
+      ctx.strokeStyle = isDark ? '#629988' : '#527d70'; // Oriental Jade Green
       ctx.lineCap = 'round';
       ctx.lineJoin = 'round';
       ctx.beginPath();
@@ -539,53 +531,6 @@ function SpeakingPracticeApp() {
         else ctx.lineTo(x, y);
       });
       ctx.stroke();
-    }
-
-    // 8. ERROR ALERT PINS / BADGES (Directly highlighting where mistakes occurred)
-    const curScore = scoreResultRef.current;
-    if (curScore && curScore.toneBreakdown && curScore.toneBreakdown.length > 0) {
-      curScore.toneBreakdown.forEach((item, sIdx) => {
-        const midX = padLeft + ((sIdx + 0.5) / numSyllables) * plotW;
-        const badgeY = padY + 18;
-
-        if (item.errorTag) {
-          const text = `⚠️ ${item.errorTag}`;
-          ctx.font = 'bold 10px sans-serif';
-          const textW = ctx.measureText(text).width;
-          const padBox = 6;
-          const boxW = textW + padBox * 2;
-          const boxH = 18;
-
-          ctx.fillStyle = '#fef3c7'; // Amber yellow
-          ctx.strokeStyle = '#d97706';
-          ctx.lineWidth = 1;
-          roundRect(ctx, midX - boxW / 2, badgeY, boxW, boxH, 4);
-          ctx.fill();
-          ctx.stroke();
-
-          ctx.fillStyle = '#b45309';
-          ctx.textAlign = 'center';
-          ctx.fillText(text, midX, badgeY + 12.5);
-        } else if (item.status === 'excellent') {
-          const text = `✓ Chuẩn T${item.tone}`;
-          ctx.font = 'bold 9.5px sans-serif';
-          const textW = ctx.measureText(text).width;
-          const padBox = 5;
-          const boxW = textW + padBox * 2;
-          const boxH = 17;
-
-          ctx.fillStyle = '#ecfdf5';
-          ctx.strokeStyle = '#10b981';
-          ctx.lineWidth = 1;
-          roundRect(ctx, midX - boxW / 2, badgeY, boxW, boxH, 4);
-          ctx.fill();
-          ctx.stroke();
-
-          ctx.fillStyle = '#047857';
-          ctx.textAlign = 'center';
-          ctx.fillText(text, midX, badgeY + 12);
-        }
-      });
     }
 
     // 9. PLAYHEAD SCRUBBER CURSOR (Real-time tracking of audio playback)
@@ -1014,41 +959,27 @@ function SpeakingPracticeApp() {
 
           {/* Interactive Pitch & Audio Waveform Station */}
           <div class="speaking-canvas-container">
-            {/* Visualizer Mode Switcher & Legend Bar */}
-            <div class="canvas-toolbar">
-              <div class="canvas-mode-toggle" role="tablist">
-                <button
-                  type="button"
-                  class={`canvas-mode-btn ${visualizerMode === 'combined' ? 'active' : ''}`}
-                  onClick={() => setVisualizerMode('combined')}
-                  title={SPEAKING_LABELS.VISUALIZER_COMBINED_TITLE}
-                >
-                  {SPEAKING_LABELS.VISUALIZER_COMBINED_LABEL}
-                </button>
-                <button
-                  type="button"
-                  class={`canvas-mode-btn ${visualizerMode === 'dualWaveform' ? 'active' : ''}`}
-                  onClick={() => setVisualizerMode('dualWaveform')}
-                  title={SPEAKING_LABELS.VISUALIZER_DUAL_TITLE}
-                >
-                  {SPEAKING_LABELS.VISUALIZER_DUAL_LABEL}
-                </button>
+            {/* Zen Melody Toolbar & Legend Bar */}
+            <div class="canvas-toolbar zen-melody-toolbar">
+              <div class="zen-toolbar-title">
+                <span class="zen-ribbon-icon">〰️</span>
+                <span class="zen-ribbon-text">{SPEAKING_LABELS.VISUALIZER_TITLE}</span>
               </div>
 
-              <div class="canvas-legend">
+              <div class="canvas-legend zen-legend">
                 <span class="legend-item target">
-                  <span class="legend-color-dot target-dot"></span> Mẫu Studio (Chao & Wave)
+                  <span class="legend-color-dot target-dot"></span>
+                  <span>{SPEAKING_LABELS.LEGEND_TARGET}</span>
                 </span>
                 <span class="legend-item user">
-                  <span class="legend-color-dot user-dot"></span> Giọng của bạn (F0 & Wave)
+                  <span class="legend-color-dot user-dot"></span>
+                  <span>{SPEAKING_LABELS.LEGEND_USER}</span>
                 </span>
-                {isRecording ? (
+                {isRecording && (
                   <span class="legend-live-pulse">
                     <span class="pulse-ring"></span>
-                    <span>Sóng âm Real-time: <strong>{liveHz > 0 ? `${liveHz} Hz` : 'Đang thu...'}</strong></span>
+                    <span>{SPEAKING_LABELS.RECORDING_PULSE}</span>
                   </span>
-                ) : (
-                  liveHz > 0 && <span class="legend-live-freq">F0: <strong>{liveHz} Hz</strong></span>
                 )}
               </div>
             </div>
@@ -1059,26 +990,29 @@ function SpeakingPracticeApp() {
               aria-label="Biểu đồ sóng âm và đường cao độ thanh điệu"
             />
 
-            {/* Quick Diagnostic Waveform Banner beneath canvas */}
+            {/* Zen Tone Coaching Guidance Card beneath canvas */}
             {scoreResult && scoreResult.toneBreakdown && scoreResult.toneBreakdown.length > 0 && (
-              <div class="waveform-diagnostic-banner">
+              <div class="zen-coaching-banner">
                 {scoreResult.toneBreakdown.some((item) => item.errorTag) ? (
-                  <div class="waveform-diagnostic-alert">
-                    <span class="diag-icon">⚠️</span>
-                    <span class="diag-text">
-                      <strong>Cảnh báo ngữ âm: </strong>
-                      {scoreResult.toneBreakdown
-                        .filter((item) => item.errorTag)
-                        .map((item) => `Từ "${item.char}": ${item.errorTag}`)
-                        .join(' · ')}
-                    </span>
+                  <div class="zen-coaching-tip">
+                    <span class="zen-coaching-icon">💡</span>
+                    <div class="zen-coaching-content">
+                      <strong class="zen-coaching-heading">{SPEAKING_LABELS.COACHING_TIP_HEADING}</strong>
+                      <span class="zen-coaching-text">
+                        {scoreResult.toneBreakdown
+                          .filter((item) => item.errorTag)
+                          .map((item) => item.advice || `Từ "${item.char}": ${item.errorTag}`)
+                          .join(' · ')}
+                      </span>
+                    </div>
                   </div>
                 ) : (
-                  <div class="waveform-diagnostic-pass">
-                    <span class="diag-icon">✓</span>
-                    <span class="diag-text">
-                      <strong>Rất tốt!</strong> Cao độ thanh điệu và hình dạng phát âm khớp tốt với audio mẫu studio.
-                    </span>
+                  <div class="zen-coaching-pass">
+                    <span class="zen-coaching-icon">✨</span>
+                    <div class="zen-coaching-content">
+                      <strong class="zen-coaching-heading">{SPEAKING_LABELS.COACHING_PASS_HEADING}</strong>
+                      <span class="zen-coaching-text">{SPEAKING_LABELS.COACHING_PASS_TEXT}</span>
+                    </div>
                   </div>
                 )}
               </div>
@@ -1147,7 +1081,7 @@ function SpeakingPracticeApp() {
               {/* Character by character tone breakdown */}
               {scoreResult.toneBreakdown && scoreResult.toneBreakdown.length > 0 && (
                 <div class="tone-breakdown-list">
-                  <h4 class="breakdown-title">Chi tiết thanh điệu từng từ:</h4>
+                  <h4 class="breakdown-title">Đánh giá từng âm tiết:</h4>
                   {scoreResult.toneBreakdown.map((item) => (
                     <div class={`breakdown-item status-${item.status}`}>
                       <div class="breakdown-head">
@@ -1165,12 +1099,12 @@ function SpeakingPracticeApp() {
               {captResult && captResult.success && (
                 <div class="capt-deep-analysis">
                   <div class="capt-deep-title">
-                    <span>🔬 Phân Tích Ngữ Âm Chuyên Sâu (ONNX GOP)</span>
-                    <span class="capt-model-tag">Conformer-CTC INT8</span>
+                    <span>{SPEAKING_LABELS.CAPT_ANALYSIS_TITLE}</span>
+                    <span class="capt-model-tag">{SPEAKING_LABELS.CAPT_PILLAR_TAG}</span>
                   </div>
                   {captResult.recognizedText && (
                     <div class="capt-recognized-preview">
-                      <span class="capt-recognized-label">Âm vị nhận diện:</span>
+                      <span class="capt-recognized-label">{SPEAKING_LABELS.RECOGNIZED_LABEL}</span>
                       <strong class="capt-recognized-text">{captResult.recognizedText}</strong>
                     </div>
                   )}
@@ -1212,7 +1146,7 @@ function SpeakingPracticeApp() {
               {!isDeepAiReady && (
                 <div class="deep-ai-cta-banner">
                   <span class="deep-ai-cta-text">
-                    💡 Chấm thêm độ chuẩn của âm đầu (zh/z, ch/c, sh/s) & vần (an/ang, u/ü) bằng Neural Conformer-CTC.
+                    💡 Nhận diện và phân tích chi tiết độ chuẩn của âm đầu (zh/z, ch/c...) và vần (an/ang...).
                   </span>
                   <button
                     type="button"
@@ -1228,7 +1162,7 @@ function SpeakingPracticeApp() {
               {/* AI Transcript if captured */}
               {aiTranscript && (
                 <div class="ai-transcript-box">
-                  <span class="ai-trans-label">AI nhận diện văn bản:</span>
+                  <span class="ai-trans-label">Từ nhận diện:</span>
                   <strong class="ai-trans-val">{aiTranscript}</strong>
                 </div>
               )}
