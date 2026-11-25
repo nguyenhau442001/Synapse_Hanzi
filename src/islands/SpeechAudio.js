@@ -308,8 +308,9 @@ export function speakExample() {
 }
 
 export function speakText(text, button, rate = (typeof SPEECH_RATE !== 'undefined' ? SPEECH_RATE : DEFAULT_SPEECH_RATE), audioUrl = null, pinyin = null) {
-  if (!button || !text) return;
-  if (activeSpeechButton === button) {
+  if (!text) return;
+  const btn = button && button.classList ? button : null;
+  if (btn && activeSpeechButton === btn) {
     stopSpeech();
     return;
   }
@@ -319,18 +320,18 @@ export function speakText(text, button, rate = (typeof SPEECH_RATE !== 'undefine
   const hint = document.getElementById('hint');
   const prevHint = hint ? hint.textContent : '';
 
-  activeSpeechButton = button;
+  activeSpeechButton = btn;
 
   const finalAudioUrl = audioUrl || resolvePrebuiltAudio(text, pinyin);
 
   // Prebuilt studio-grade audio
   if (finalAudioUrl) {
-    playPrebuiltAudio(text, button, rate, finalAudioUrl, requestId, hint, prevHint);
+    playPrebuiltAudio(text, btn, rate, finalAudioUrl, requestId, hint, prevHint);
     return;
   }
 
   // No prebuilt audio available
-  setSpeechButtonState(button, false);
+  setSpeechButtonState(btn, false);
   showSpeechHint(hint, 'Chưa có bản thu âm cho mục này', prevHint);
 }
 
@@ -471,7 +472,7 @@ export function showSpeechHint(hint, message, previousMessage) {
 }
 
 export function setSpeechButtonState(button, isPlaying, text) {
-  if (!button) return;
+  if (!button || !button.classList) return;
   const isExample = button.classList.contains('example-sound-btn');
 
   button.classList.toggle('is-playing', isPlaying);

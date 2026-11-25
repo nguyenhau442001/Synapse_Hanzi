@@ -49,9 +49,14 @@ import {
 
 const DEFAULT_DIRECTION = 'zh2vi';
 
-function playPrebuiltAudio(hanzi, level) {
-  if (typeof window !== 'undefined' && typeof window.speakText === 'function') {
-    window.speakText(hanzi, level);
+function playPrebuiltAudio(hanzi, pinyin = null, buttonEl = null) {
+  if (typeof window === 'undefined') return;
+  if (buttonEl && typeof window.speakText === 'function') {
+    window.speakText(hanzi, buttonEl, undefined, null, pinyin);
+    return;
+  }
+  if (typeof window.speakChinese === 'function') {
+    window.speakChinese(hanzi, { pinyin });
   }
 }
 
@@ -176,7 +181,7 @@ export function ExamSprintHub({ onBack }) {
           setIsFlipped(true);
           const card = queue[currentIndex];
           if (card && sprintConfig.value.autoAudio) {
-            playPrebuiltAudio(card.hanzi, card.level);
+            playPrebuiltAudio(card.hanzi, card.pinyin);
           }
           clearInterval(intervalId);
         }
@@ -225,7 +230,7 @@ export function ExamSprintHub({ onBack }) {
     setIsFlipped(true);
     const item = queue[currentIndex];
     if (item && sprintConfig.value.autoAudio) {
-      playPrebuiltAudio(item.hanzi, item.level);
+      playPrebuiltAudio(item.hanzi, item.pinyin);
     }
   }
 
@@ -386,7 +391,7 @@ export function ExamSprintHub({ onBack }) {
                   <button
                     type="button"
                     class="exam-pill-btn"
-                    onClick={() => playPrebuiltAudio(item.hanzi, item.level)}
+                    onClick={(e) => playPrebuiltAudio(item.hanzi, item.pinyin, e.currentTarget)}
                   >
                     <Volume2 size={16} />
                     Nghe lại
