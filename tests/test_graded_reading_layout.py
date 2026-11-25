@@ -96,7 +96,7 @@ def test_reading_is_a_primary_destination():
 
     # Count badges carry text labels; the long tagline no longer squeezes the header
     assert 'class="header-badge-label">Sổ từ<' in index_html
-    assert 'class="header-badge-label">Cần ôn<' in index_html
+    assert 'class="header-badge-label">Ôn gấp<' in index_html
     base_css = (ROOT / "assets" / "css" / "base.css").read_text(encoding="utf-8")
     assert ".brand-tagline-wrap { display: none; }" in base_css
 

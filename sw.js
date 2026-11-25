@@ -8,15 +8,15 @@ const DATA_CACHE_NAME = 'hsk-data-v18';
 const PRECACHE_MANIFEST = [
   {
     "url": "index.html",
-    "revision": "e0cc065927554db7446e8a25eaba5fc1"
+    "revision": "b11f6943ebf406a148a7b318140eccda"
   },
   {
     "url": "assets/flashcards.css",
-    "revision": "7a9982541081b55f413c9a20d0c608a1"
+    "revision": "617585c3f8396a553d257d1bfb7aaf55"
   },
   {
     "url": "assets/js/preact/islands.js",
-    "revision": "36966fcfa54b39c285383c44cd12d905"
+    "revision": "fe2fd04e7ee67f7629a6c5233f7fe5aa"
   },
   {
     "url": "assets/js/hanviet-dict.js",

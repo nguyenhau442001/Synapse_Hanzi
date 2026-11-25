@@ -586,9 +586,9 @@ export function renderLearningDashboard() {
   const titleNode = document.getElementById('learningDashboardTitle');
   if (titleNode) {
     if (dueTotal > 0 && remainingNew > 0) {
-      titleNode.textContent = `Hôm nay: ôn ${dueTotal} từ, học ${remainingNew} từ mới`;
+      titleNode.textContent = `Hôm nay: học ${remainingNew} từ mới · ${dueTotal} thẻ đến hạn`;
     } else if (dueTotal > 0) {
-      titleNode.textContent = `Hôm nay: ôn ${dueTotal} từ đến hạn`;
+      titleNode.textContent = `Hôm nay: ${dueTotal} thẻ đến hạn`;
     } else if (remainingNew > 0) {
       titleNode.textContent = `Hôm nay: học ${remainingNew} từ mới`;
     } else {

@@ -134,7 +134,7 @@
 
       <button type="button" id="headerUrgentReviewBtn" class="header-action-badge header-badge-urgent" title="Từ cần ôn gấp" aria-label="Từ cần ôn gấp">
         <span class="header-badge-icon" aria-hidden="true"><svg class="ds-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg></span>
-        <span class="header-badge-label">Cần ôn</span>
+        <span class="header-badge-label">Ôn gấp</span>
         <span class="header-badge-count" id="headerUrgentCount">0</span>
       </button>
 
@@ -188,17 +188,6 @@
           <svg class="ds-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
           <span>KẾ HOẠCH HÔM NAY</span>
         </div>
-        <div class="goal-settings-wrap" title="Sửa mục tiêu học mỗi ngày">
-          <button class="goal-settings-btn" type="button" aria-label="Sửa mục tiêu học mỗi ngày">
-            <svg class="ds-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>
-          </button>
-          <select id="dailyGoalSelect" class="goal-settings-select" aria-label="Mục tiêu số từ học mỗi ngày">
-            <option value="10">10 từ / ngày</option>
-            <option value="20">20 từ / ngày</option>
-            <option value="30">30 từ / ngày</option>
-            <option value="50" selected>50 từ / ngày</option>
-          </select>
-        </div>
       </div>
 
       <div class="learning-title-row">
@@ -214,6 +203,17 @@
           <div class="daily-goal-count" aria-label="Tiến độ mục tiêu hôm nay">
             <strong id="dailyStudyCount" class="goal-count-big">0</strong>
             <span class="daily-goal-target-sub">/ <span id="dailyGoalTargetText">50</span> từ</span>
+          </div>
+          <div class="goal-settings-wrap" title="Sửa mục tiêu học mỗi ngày">
+            <button class="goal-settings-btn" type="button" aria-label="Sửa mục tiêu học mỗi ngày">
+              <svg class="ds-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>
+            </button>
+            <select id="dailyGoalSelect" class="goal-settings-select" aria-label="Mục tiêu số từ học mỗi ngày">
+              <option value="10">10 từ / ngày</option>
+              <option value="20">20 từ / ngày</option>
+              <option value="30">30 từ / ngày</option>
+              <option value="50" selected>50 từ / ngày</option>
+            </select>
           </div>
         </div>
       </div>
