@@ -1,0 +1,169 @@
+{
+  "version": 1,
+  "level": "topic_work_study",
+  "engine": "EdgeTTS",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "speed": 1.0,
+  "items": {
+    "1": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0001.mp3?v=98c397b78126",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0001.mp3?v=1b5f26a4df03"
+    },
+    "2": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0002.mp3?v=c400ab8028ae",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0002.mp3?v=f51099779248"
+    },
+    "3": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0003.mp3?v=438f06d9dda4",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0003.mp3?v=3fdb980417d9"
+    },
+    "4": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0004.mp3?v=aa8fdd958904",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0004.mp3?v=2f8a6fde0541"
+    },
+    "5": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0005.mp3?v=1853407e1eee",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0005.mp3?v=ead0ec1b4a46"
+    },
+    "6": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0006.mp3?v=2f4244434756",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0006.mp3?v=a9dce1441189"
+    },
+    "7": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0007.mp3?v=983812409960",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0007.mp3?v=e36c37b1e443"
+    },
+    "8": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0008.mp3?v=aea8879bc145",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0008.mp3?v=2c5b4159381b"
+    },
+    "9": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0009.mp3?v=34353109ac72",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0009.mp3?v=488b55ca9493"
+    },
+    "10": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0010.mp3?v=8922c56c5735",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0010.mp3?v=6afa68b7cb06"
+    },
+    "11": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0011.mp3?v=e6ce72e134e3",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0011.mp3?v=21186275c3f9"
+    },
+    "12": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0012.mp3?v=a8af4fe175f5",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0012.mp3?v=6d2aa53900b6"
+    },
+    "13": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0013.mp3?v=9ce03c5edf0a",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0013.mp3?v=9b9e3efea1a3"
+    },
+    "14": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0014.mp3?v=eed5b8a7550a",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0014.mp3?v=bdde1d9fdf01"
+    },
+    "15": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0015.mp3?v=43695883d93a",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0015.mp3?v=2e4538512f6b"
+    },
+    "16": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0016.mp3?v=06236d5ab94c",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0016.mp3?v=184bd2c22426"
+    },
+    "17": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0017.mp3?v=49b2c7f97a8c",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0017.mp3?v=d6e2bcdbcb39"
+    },
+    "18": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0018.mp3?v=962f2c3b4d77",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0018.mp3?v=ec2823406de0"
+    },
+    "19": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0019.mp3?v=5181718707ad",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0019.mp3?v=f4713130cfc3"
+    },
+    "20": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0020.mp3?v=413b82cd115e",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0020.mp3?v=311ea4a0a625"
+    },
+    "21": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0021.mp3?v=9de4dc2741f5",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0021.mp3?v=03580290647e"
+    },
+    "22": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0022.mp3?v=b8038af64ae1",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0022.mp3?v=07d7a024fdd5"
+    },
+    "23": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0023.mp3?v=478e8a8d7b66",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0023.mp3?v=b1a15d1fd510"
+    },
+    "24": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0024.mp3?v=a2784f486793",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0024.mp3?v=191af2c4eda1"
+    },
+    "25": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0025.mp3?v=71bf629023dc",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0025.mp3?v=f34b723bf696"
+    },
+    "26": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0026.mp3?v=9b43420cbbd3",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0026.mp3?v=c2d0a4e106c1"
+    },
+    "27": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0027.mp3?v=1efb385c7e11",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0027.mp3?v=56cd8b5da539"
+    },
+    "28": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0028.mp3?v=1aac6706c3b4",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0028.mp3?v=ea9e42c92967"
+    },
+    "29": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0029.mp3?v=e596111d1b9c",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0029.mp3?v=b039d11b58e7"
+    },
+    "30": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0030.mp3?v=583076f53010",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0030.mp3?v=16689168cbb5"
+    },
+    "31": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0031.mp3?v=0b04c88b9939",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0031.mp3?v=5096d640cb13"
+    },
+    "32": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0032.mp3?v=3ada05f39446",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0032.mp3?v=b44b9656c952"
+    },
+    "33": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0033.mp3?v=087cb788905b",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0033.mp3?v=57ccc0fbd4d2"
+    },
+    "34": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0034.mp3?v=b806330ab78b",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0034.mp3?v=558d664f486d"
+    },
+    "35": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0035.mp3?v=071eec01e592",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0035.mp3?v=982fd0507352"
+    },
+    "36": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0036.mp3?v=548c85259097",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0036.mp3?v=fd2070bda5e3"
+    },
+    "37": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0037.mp3?v=0b66e0b5a0a9",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0037.mp3?v=763db32b0ccf"
+    },
+    "38": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0038.mp3?v=54908701fb69",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0038.mp3?v=e744b8df8908"
+    },
+    "39": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0039.mp3?v=7e41614932c6",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0039.mp3?v=675a06ba2714"
+    },
+    "40": {
+      "word": "database/prebuilt_audio/topic_work_study/words/0040.mp3?v=4c450cc1cf73",
+      "example": "database/prebuilt_audio/topic_work_study/examples/0040.mp3?v=f9e6d8b72e4b"
+    }
+  }
+}

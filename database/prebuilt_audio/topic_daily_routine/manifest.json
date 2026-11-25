@@ -1,0 +1,169 @@
+{
+  "version": 1,
+  "level": "topic_daily_routine",
+  "engine": "EdgeTTS",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "speed": 1.0,
+  "items": {
+    "1": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0001.mp3?v=f4e8ab76178c",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0001.mp3?v=950937363e09"
+    },
+    "2": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0002.mp3?v=61caa828463b",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0002.mp3?v=eea3fa85e243"
+    },
+    "3": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0003.mp3?v=39d12dc3041a",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0003.mp3?v=58744822cba5"
+    },
+    "4": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0004.mp3?v=35ada9ba667c",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0004.mp3?v=fd88a9ed534d"
+    },
+    "5": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0005.mp3?v=6dbc7a4877a9",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0005.mp3?v=30e27dcf27b5"
+    },
+    "6": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0006.mp3?v=1ad9bafd9930",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0006.mp3?v=0b7ab5df5c96"
+    },
+    "7": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0007.mp3?v=531fc5933e80",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0007.mp3?v=f47aec533460"
+    },
+    "8": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0008.mp3?v=a3e30e65bbc2",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0008.mp3?v=1569b4a8d51b"
+    },
+    "9": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0009.mp3?v=61a68d33c0f3",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0009.mp3?v=9b2116b21583"
+    },
+    "10": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0010.mp3?v=d468919587e2",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0010.mp3?v=02d1fd36cf4e"
+    },
+    "11": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0011.mp3?v=e9c24491c2db",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0011.mp3?v=d3ba4b11a0e5"
+    },
+    "12": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0012.mp3?v=7bd6b01b31af",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0012.mp3?v=4f41a6a01cdb"
+    },
+    "13": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0013.mp3?v=8fab334fc120",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0013.mp3?v=12f0821f4334"
+    },
+    "14": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0014.mp3?v=3d21d3d4d372",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0014.mp3?v=7d2496a783eb"
+    },
+    "15": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0015.mp3?v=45b287c254ff",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0015.mp3?v=c85206e2ed13"
+    },
+    "16": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0016.mp3?v=263017e319a8",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0016.mp3?v=e222527d52db"
+    },
+    "17": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0017.mp3?v=b58521f5b7f2",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0017.mp3?v=192a99955558"
+    },
+    "18": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0018.mp3?v=a3deb82ea39f",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0018.mp3?v=fead36c1d434"
+    },
+    "19": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0019.mp3?v=e91e7a1c3116",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0019.mp3?v=2625ceef30a5"
+    },
+    "20": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0020.mp3?v=a4857b19703e",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0020.mp3?v=725772578e4a"
+    },
+    "21": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0021.mp3?v=21cee3a39f99",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0021.mp3?v=180772cd9673"
+    },
+    "22": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0022.mp3?v=b437d1ea2517",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0022.mp3?v=b9b57bf875b0"
+    },
+    "23": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0023.mp3?v=04e29e18d478",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0023.mp3?v=37e61927444d"
+    },
+    "24": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0024.mp3?v=62784f9569ad",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0024.mp3?v=900e65237173"
+    },
+    "25": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0025.mp3?v=f2080824eca0",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0025.mp3?v=28c5670097e9"
+    },
+    "26": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0026.mp3?v=e48f1548ccbe",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0026.mp3?v=7f3eb8f55f87"
+    },
+    "27": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0027.mp3?v=f855c361ab77",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0027.mp3?v=953429c13891"
+    },
+    "28": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0028.mp3?v=2a646d9a75b2",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0028.mp3?v=5257f08639f7"
+    },
+    "29": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0029.mp3?v=40606e64446e",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0029.mp3?v=952bc15eec89"
+    },
+    "30": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0030.mp3?v=0c5240ddea1f",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0030.mp3?v=e25ca176d261"
+    },
+    "31": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0031.mp3?v=7c39ca97dda4",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0031.mp3?v=06e1c6cc0126"
+    },
+    "32": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0032.mp3?v=eb285b2c3e62",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0032.mp3?v=09b71dc06d06"
+    },
+    "33": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0033.mp3?v=e21a7270f67d",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0033.mp3?v=ace90434af4a"
+    },
+    "34": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0034.mp3?v=240bab2c0dcc",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0034.mp3?v=66b09696cc47"
+    },
+    "35": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0035.mp3?v=4d8978378227",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0035.mp3?v=efcaeaef5859"
+    },
+    "36": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0036.mp3?v=413d78f0e105",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0036.mp3?v=7fc8b48d69d7"
+    },
+    "37": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0037.mp3?v=0557c12b2602",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0037.mp3?v=d31f128452ae"
+    },
+    "38": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0038.mp3?v=6086b7449c84",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0038.mp3?v=b5849dc061cc"
+    },
+    "39": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0039.mp3?v=91bab36569b6",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0039.mp3?v=52ccc28fb534"
+    },
+    "40": {
+      "word": "database/prebuilt_audio/topic_daily_routine/words/0040.mp3?v=05d02bc172cf",
+      "example": "database/prebuilt_audio/topic_daily_routine/examples/0040.mp3?v=189d330f75a0"
+    }
+  }
+}

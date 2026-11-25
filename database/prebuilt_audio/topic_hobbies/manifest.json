@@ -1,0 +1,169 @@
+{
+  "version": 1,
+  "level": "topic_hobbies",
+  "engine": "EdgeTTS",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "speed": 1.0,
+  "items": {
+    "1": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0001.mp3?v=a15578840b64",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0001.mp3?v=a42de4b24a2c"
+    },
+    "2": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0002.mp3?v=82d49d45bc47",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0002.mp3?v=08d48eb5c11c"
+    },
+    "3": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0003.mp3?v=4f4cc70133c7",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0003.mp3?v=bfd1d823adcc"
+    },
+    "4": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0004.mp3?v=8b6eaeb4d529",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0004.mp3?v=4e25e4990234"
+    },
+    "5": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0005.mp3?v=4c7ae4c3fe73",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0005.mp3?v=84e95fc8b14f"
+    },
+    "6": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0006.mp3?v=84da58136d19",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0006.mp3?v=ebb35b647cd6"
+    },
+    "7": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0007.mp3?v=986a476cad92",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0007.mp3?v=99ed211d73d8"
+    },
+    "8": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0008.mp3?v=ad58267a5009",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0008.mp3?v=27bbd8636bd5"
+    },
+    "9": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0009.mp3?v=92999df60098",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0009.mp3?v=0ba39e5f4d2e"
+    },
+    "10": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0010.mp3?v=2b56fe532eda",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0010.mp3?v=11f26c060d38"
+    },
+    "11": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0011.mp3?v=c451543e11d5",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0011.mp3?v=5a62c844ee48"
+    },
+    "12": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0012.mp3?v=7e23b4333e98",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0012.mp3?v=eb98988442d8"
+    },
+    "13": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0013.mp3?v=16e2cb913658",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0013.mp3?v=1cb0843e6921"
+    },
+    "14": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0014.mp3?v=50c8b23b7b46",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0014.mp3?v=0efd12ec6c2f"
+    },
+    "15": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0015.mp3?v=56c116411e08",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0015.mp3?v=3e86d432f63b"
+    },
+    "16": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0016.mp3?v=c2eb0686f45b",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0016.mp3?v=20d98938a98a"
+    },
+    "17": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0017.mp3?v=8fba7d6b2ee6",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0017.mp3?v=b0cc6cc8f224"
+    },
+    "18": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0018.mp3?v=5484ddbaf778",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0018.mp3?v=6feadc22ab9d"
+    },
+    "19": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0019.mp3?v=e330515980cc",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0019.mp3?v=366e76816f8a"
+    },
+    "20": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0020.mp3?v=e99a982a2ef1",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0020.mp3?v=45b24528f47b"
+    },
+    "21": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0021.mp3?v=9332b8e9cbae",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0021.mp3?v=0ea98f1c8e72"
+    },
+    "22": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0022.mp3?v=5679bacb298e",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0022.mp3?v=2c21a692f777"
+    },
+    "23": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0023.mp3?v=3a44c6e7c9df",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0023.mp3?v=16155cb3ee88"
+    },
+    "24": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0024.mp3?v=360e31a94153",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0024.mp3?v=acfe37106ce7"
+    },
+    "25": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0025.mp3?v=b02731be2afc",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0025.mp3?v=8b1d47c58a47"
+    },
+    "26": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0026.mp3?v=476db3344ca6",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0026.mp3?v=f0cedb68f6a8"
+    },
+    "27": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0027.mp3?v=f77f67d5ea5a",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0027.mp3?v=c580eeb98439"
+    },
+    "28": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0028.mp3?v=b87c482f3d2c",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0028.mp3?v=5703b889cff0"
+    },
+    "29": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0029.mp3?v=0b045215f766",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0029.mp3?v=a59e5f73dd07"
+    },
+    "30": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0030.mp3?v=852673e96f31",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0030.mp3?v=fda60775b20f"
+    },
+    "31": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0031.mp3?v=47092388c3f7",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0031.mp3?v=2c922f58202f"
+    },
+    "32": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0032.mp3?v=2fb79b49aea8",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0032.mp3?v=316ed7832331"
+    },
+    "33": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0033.mp3?v=7c4da4808b01",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0033.mp3?v=88084e87c5f0"
+    },
+    "34": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0034.mp3?v=a4a21e55ff45",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0034.mp3?v=c7c117fee11a"
+    },
+    "35": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0035.mp3?v=7aa7e88976cd",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0035.mp3?v=69473d9f07e2"
+    },
+    "36": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0036.mp3?v=bc176c3759f9",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0036.mp3?v=614d13d9f70f"
+    },
+    "37": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0037.mp3?v=c5634b3f939c",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0037.mp3?v=728b99aeb399"
+    },
+    "38": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0038.mp3?v=db67aa51b955",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0038.mp3?v=4e447672b5bf"
+    },
+    "39": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0039.mp3?v=f1e669c952e5",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0039.mp3?v=f0c76e0fb0ee"
+    },
+    "40": {
+      "word": "database/prebuilt_audio/topic_hobbies/words/0040.mp3?v=41b310142f0f",
+      "example": "database/prebuilt_audio/topic_hobbies/examples/0040.mp3?v=59314a5dc3b1"
+    }
+  }
+}

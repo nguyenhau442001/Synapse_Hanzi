@@ -1,0 +1,169 @@
+{
+  "version": 1,
+  "level": "topic_travel",
+  "engine": "EdgeTTS",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "speed": 1.0,
+  "items": {
+    "1": {
+      "word": "database/prebuilt_audio/topic_travel/words/0001.mp3?v=2046b55c0637",
+      "example": "database/prebuilt_audio/topic_travel/examples/0001.mp3?v=f04c2e2bfd4a"
+    },
+    "2": {
+      "word": "database/prebuilt_audio/topic_travel/words/0002.mp3?v=a266602f4fd8",
+      "example": "database/prebuilt_audio/topic_travel/examples/0002.mp3?v=85e40f72a59c"
+    },
+    "3": {
+      "word": "database/prebuilt_audio/topic_travel/words/0003.mp3?v=aa0d006e15b7",
+      "example": "database/prebuilt_audio/topic_travel/examples/0003.mp3?v=321b1acca10d"
+    },
+    "4": {
+      "word": "database/prebuilt_audio/topic_travel/words/0004.mp3?v=43bc238e584d",
+      "example": "database/prebuilt_audio/topic_travel/examples/0004.mp3?v=34b2847a5591"
+    },
+    "5": {
+      "word": "database/prebuilt_audio/topic_travel/words/0005.mp3?v=9ecf9b9f25a7",
+      "example": "database/prebuilt_audio/topic_travel/examples/0005.mp3?v=47097c92e117"
+    },
+    "6": {
+      "word": "database/prebuilt_audio/topic_travel/words/0006.mp3?v=67b5e6e11af3",
+      "example": "database/prebuilt_audio/topic_travel/examples/0006.mp3?v=9b3c52a1707b"
+    },
+    "7": {
+      "word": "database/prebuilt_audio/topic_travel/words/0007.mp3?v=fda826dfba46",
+      "example": "database/prebuilt_audio/topic_travel/examples/0007.mp3?v=58b20ecfd00e"
+    },
+    "8": {
+      "word": "database/prebuilt_audio/topic_travel/words/0008.mp3?v=0de1a2c39de6",
+      "example": "database/prebuilt_audio/topic_travel/examples/0008.mp3?v=c9aa8f5cf752"
+    },
+    "9": {
+      "word": "database/prebuilt_audio/topic_travel/words/0009.mp3?v=4349edc889d8",
+      "example": "database/prebuilt_audio/topic_travel/examples/0009.mp3?v=9c4340cb3662"
+    },
+    "10": {
+      "word": "database/prebuilt_audio/topic_travel/words/0010.mp3?v=1bb97ef4bbdf",
+      "example": "database/prebuilt_audio/topic_travel/examples/0010.mp3?v=fc50016f5f21"
+    },
+    "11": {
+      "word": "database/prebuilt_audio/topic_travel/words/0011.mp3?v=52cc2d6765bb",
+      "example": "database/prebuilt_audio/topic_travel/examples/0011.mp3?v=d7dce1b194b9"
+    },
+    "12": {
+      "word": "database/prebuilt_audio/topic_travel/words/0012.mp3?v=1bd6159c9748",
+      "example": "database/prebuilt_audio/topic_travel/examples/0012.mp3?v=c20f04fdfc92"
+    },
+    "13": {
+      "word": "database/prebuilt_audio/topic_travel/words/0013.mp3?v=59540b0abb09",
+      "example": "database/prebuilt_audio/topic_travel/examples/0013.mp3?v=fc34d1c6ec39"
+    },
+    "14": {
+      "word": "database/prebuilt_audio/topic_travel/words/0014.mp3?v=18c3de9faeaa",
+      "example": "database/prebuilt_audio/topic_travel/examples/0014.mp3?v=c3e6c57fe1fb"
+    },
+    "15": {
+      "word": "database/prebuilt_audio/topic_travel/words/0015.mp3?v=8a472ada6a83",
+      "example": "database/prebuilt_audio/topic_travel/examples/0015.mp3?v=19263d79d1ff"
+    },
+    "16": {
+      "word": "database/prebuilt_audio/topic_travel/words/0016.mp3?v=2ddd8252749f",
+      "example": "database/prebuilt_audio/topic_travel/examples/0016.mp3?v=c11f43c8f4de"
+    },
+    "17": {
+      "word": "database/prebuilt_audio/topic_travel/words/0017.mp3?v=c46cdca5e064",
+      "example": "database/prebuilt_audio/topic_travel/examples/0017.mp3?v=2ce64e8f94ec"
+    },
+    "18": {
+      "word": "database/prebuilt_audio/topic_travel/words/0018.mp3?v=55c0660ec4e8",
+      "example": "database/prebuilt_audio/topic_travel/examples/0018.mp3?v=775a2de87014"
+    },
+    "19": {
+      "word": "database/prebuilt_audio/topic_travel/words/0019.mp3?v=fbd6fd0f594f",
+      "example": "database/prebuilt_audio/topic_travel/examples/0019.mp3?v=aa9126348d67"
+    },
+    "20": {
+      "word": "database/prebuilt_audio/topic_travel/words/0020.mp3?v=02e94ba0b699",
+      "example": "database/prebuilt_audio/topic_travel/examples/0020.mp3?v=214c52fc262b"
+    },
+    "21": {
+      "word": "database/prebuilt_audio/topic_travel/words/0021.mp3?v=d7e767e139ab",
+      "example": "database/prebuilt_audio/topic_travel/examples/0021.mp3?v=52b112ea89ef"
+    },
+    "22": {
+      "word": "database/prebuilt_audio/topic_travel/words/0022.mp3?v=8a1dc1b7f2c8",
+      "example": "database/prebuilt_audio/topic_travel/examples/0022.mp3?v=ca778e4756a8"
+    },
+    "23": {
+      "word": "database/prebuilt_audio/topic_travel/words/0023.mp3?v=0f5368b96099",
+      "example": "database/prebuilt_audio/topic_travel/examples/0023.mp3?v=a58d0d3d0abe"
+    },
+    "24": {
+      "word": "database/prebuilt_audio/topic_travel/words/0024.mp3?v=b24b1e7a2599",
+      "example": "database/prebuilt_audio/topic_travel/examples/0024.mp3?v=f546420c4df8"
+    },
+    "25": {
+      "word": "database/prebuilt_audio/topic_travel/words/0025.mp3?v=60138d1c1869",
+      "example": "database/prebuilt_audio/topic_travel/examples/0025.mp3?v=a2282673d6bf"
+    },
+    "26": {
+      "word": "database/prebuilt_audio/topic_travel/words/0026.mp3?v=0f207fcfdc99",
+      "example": "database/prebuilt_audio/topic_travel/examples/0026.mp3?v=996499bf788d"
+    },
+    "27": {
+      "word": "database/prebuilt_audio/topic_travel/words/0027.mp3?v=86b4e3c25b0a",
+      "example": "database/prebuilt_audio/topic_travel/examples/0027.mp3?v=998ac78b71fe"
+    },
+    "28": {
+      "word": "database/prebuilt_audio/topic_travel/words/0028.mp3?v=84d5fd831b1d",
+      "example": "database/prebuilt_audio/topic_travel/examples/0028.mp3?v=7331e0640c81"
+    },
+    "29": {
+      "word": "database/prebuilt_audio/topic_travel/words/0029.mp3?v=5938d48ef785",
+      "example": "database/prebuilt_audio/topic_travel/examples/0029.mp3?v=04dbe584462c"
+    },
+    "30": {
+      "word": "database/prebuilt_audio/topic_travel/words/0030.mp3?v=321b8adc1b04",
+      "example": "database/prebuilt_audio/topic_travel/examples/0030.mp3?v=41a0a86cc922"
+    },
+    "31": {
+      "word": "database/prebuilt_audio/topic_travel/words/0031.mp3?v=6433d090d84a",
+      "example": "database/prebuilt_audio/topic_travel/examples/0031.mp3?v=391d1e501352"
+    },
+    "32": {
+      "word": "database/prebuilt_audio/topic_travel/words/0032.mp3?v=9c500813237b",
+      "example": "database/prebuilt_audio/topic_travel/examples/0032.mp3?v=f00ea6a58a6a"
+    },
+    "33": {
+      "word": "database/prebuilt_audio/topic_travel/words/0033.mp3?v=86d2e96c9401",
+      "example": "database/prebuilt_audio/topic_travel/examples/0033.mp3?v=1bc7689e824b"
+    },
+    "34": {
+      "word": "database/prebuilt_audio/topic_travel/words/0034.mp3?v=c563fc9e21c6",
+      "example": "database/prebuilt_audio/topic_travel/examples/0034.mp3?v=3092e99ea3ca"
+    },
+    "35": {
+      "word": "database/prebuilt_audio/topic_travel/words/0035.mp3?v=21e4e790d878",
+      "example": "database/prebuilt_audio/topic_travel/examples/0035.mp3?v=bd6d55e8314d"
+    },
+    "36": {
+      "word": "database/prebuilt_audio/topic_travel/words/0036.mp3?v=5682ca03e087",
+      "example": "database/prebuilt_audio/topic_travel/examples/0036.mp3?v=a0f893fad260"
+    },
+    "37": {
+      "word": "database/prebuilt_audio/topic_travel/words/0037.mp3?v=a6d5b590106f",
+      "example": "database/prebuilt_audio/topic_travel/examples/0037.mp3?v=6fabc41b6f5a"
+    },
+    "38": {
+      "word": "database/prebuilt_audio/topic_travel/words/0038.mp3?v=eb0c346463a2",
+      "example": "database/prebuilt_audio/topic_travel/examples/0038.mp3?v=b763e6d2c875"
+    },
+    "39": {
+      "word": "database/prebuilt_audio/topic_travel/words/0039.mp3?v=6817fd6e6379",
+      "example": "database/prebuilt_audio/topic_travel/examples/0039.mp3?v=110a4a11f820"
+    },
+    "40": {
+      "word": "database/prebuilt_audio/topic_travel/words/0040.mp3?v=c705246d5f39",
+      "example": "database/prebuilt_audio/topic_travel/examples/0040.mp3?v=7ee72a065743"
+    }
+  }
+}

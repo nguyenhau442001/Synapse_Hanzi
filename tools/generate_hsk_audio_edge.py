@@ -78,6 +78,9 @@ def get_vocab_path(level: str) -> Path:
     if level.startswith("hsk30_"):
         num = level.replace("hsk30_", "")
         return REPO_ROOT / "database" / "vocabs" / "hsk3_0" / f"level{num}_vocabularies.json"
+    if level.startswith("topic_"):
+        slug = level.removeprefix("topic_")
+        return REPO_ROOT / "database" / "vocabs" / "topics" / f"{slug}.json"
     return REPO_ROOT / "database" / "vocabs" / f"{level}_vocabularies.json"
 
 

@@ -1,0 +1,169 @@
+{
+  "version": 1,
+  "level": "topic_festivals",
+  "engine": "EdgeTTS",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "speed": 1.0,
+  "items": {
+    "1": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0001.mp3?v=ac7d43457caf",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0001.mp3?v=c316a5548c7d"
+    },
+    "2": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0002.mp3?v=2d42397426e6",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0002.mp3?v=52a91d3d6600"
+    },
+    "3": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0003.mp3?v=53923069d87a",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0003.mp3?v=24e82639193e"
+    },
+    "4": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0004.mp3?v=f2674f0f085d",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0004.mp3?v=a397cf7c7396"
+    },
+    "5": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0005.mp3?v=2f4828a2622f",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0005.mp3?v=c2106ef01d4c"
+    },
+    "6": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0006.mp3?v=018c76147926",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0006.mp3?v=043d73e2fc39"
+    },
+    "7": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0007.mp3?v=3b7f97523275",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0007.mp3?v=d4b8d03371c0"
+    },
+    "8": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0008.mp3?v=0173d3ae2dd6",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0008.mp3?v=21043c8e9721"
+    },
+    "9": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0009.mp3?v=8bff48465161",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0009.mp3?v=a6fd594d5023"
+    },
+    "10": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0010.mp3?v=6e2d3948db25",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0010.mp3?v=381423fdeab0"
+    },
+    "11": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0011.mp3?v=269f4679bf85",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0011.mp3?v=dcc402ec55ab"
+    },
+    "12": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0012.mp3?v=ed2dc4218a88",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0012.mp3?v=aed977f02a67"
+    },
+    "13": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0013.mp3?v=69098b157d0c",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0013.mp3?v=7716f6c3e50b"
+    },
+    "14": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0014.mp3?v=ee580d6daea1",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0014.mp3?v=efabb91a501d"
+    },
+    "15": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0015.mp3?v=597e1623233a",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0015.mp3?v=adacfedbe08f"
+    },
+    "16": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0016.mp3?v=6f5a8ea4b52b",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0016.mp3?v=14530281b46b"
+    },
+    "17": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0017.mp3?v=cb70f6ff05a6",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0017.mp3?v=8b3141ec77ef"
+    },
+    "18": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0018.mp3?v=6a8745c7bbea",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0018.mp3?v=c04128673e64"
+    },
+    "19": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0019.mp3?v=014fe33f510a",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0019.mp3?v=2f4aacfcc313"
+    },
+    "20": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0020.mp3?v=b63231d0ff02",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0020.mp3?v=275efc6e299e"
+    },
+    "21": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0021.mp3?v=acb0677cfe34",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0021.mp3?v=282261f5bc71"
+    },
+    "22": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0022.mp3?v=e9a65cd21434",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0022.mp3?v=e2653445ca14"
+    },
+    "23": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0023.mp3?v=7f9bb34cfbab",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0023.mp3?v=bc72921a7d52"
+    },
+    "24": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0024.mp3?v=4be52dc28b24",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0024.mp3?v=444e2cd09c3c"
+    },
+    "25": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0025.mp3?v=a9d91c80b00e",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0025.mp3?v=0946005e72fb"
+    },
+    "26": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0026.mp3?v=bd93bd1e5a78",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0026.mp3?v=4c500cd5afb6"
+    },
+    "27": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0027.mp3?v=6edcd5fba399",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0027.mp3?v=9e33370f46d0"
+    },
+    "28": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0028.mp3?v=e5990d0e5983",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0028.mp3?v=0679a3efe1b4"
+    },
+    "29": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0029.mp3?v=dcb395feed97",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0029.mp3?v=dcc7c52c3c1b"
+    },
+    "30": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0030.mp3?v=6f4b7f89a172",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0030.mp3?v=b8daf5a75644"
+    },
+    "31": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0031.mp3?v=a8f8afa13c84",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0031.mp3?v=a2aac481802e"
+    },
+    "32": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0032.mp3?v=c274db14be63",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0032.mp3?v=f12cfbc0f012"
+    },
+    "33": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0033.mp3?v=2452f4e53cb6",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0033.mp3?v=2df9f8adc488"
+    },
+    "34": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0034.mp3?v=c41b2e6e3658",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0034.mp3?v=41fb57641f3e"
+    },
+    "35": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0035.mp3?v=148844919d83",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0035.mp3?v=a2ed0136a31b"
+    },
+    "36": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0036.mp3?v=781d9a8b2a56",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0036.mp3?v=373d009927de"
+    },
+    "37": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0037.mp3?v=f7dbd0afd343",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0037.mp3?v=7f2d96a1dca2"
+    },
+    "38": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0038.mp3?v=4936f662d3f1",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0038.mp3?v=0a4994d306df"
+    },
+    "39": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0039.mp3?v=c5ebe78b5583",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0039.mp3?v=8b0ab4e9f0d8"
+    },
+    "40": {
+      "word": "database/prebuilt_audio/topic_festivals/words/0040.mp3?v=fd16e2afe74a",
+      "example": "database/prebuilt_audio/topic_festivals/examples/0040.mp3?v=f356439a5157"
+    }
+  }
+}

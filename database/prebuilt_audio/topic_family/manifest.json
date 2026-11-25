@@ -1,0 +1,169 @@
+{
+  "version": 1,
+  "level": "topic_family",
+  "engine": "EdgeTTS",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "speed": 1.0,
+  "items": {
+    "1": {
+      "word": "database/prebuilt_audio/topic_family/words/0001.mp3?v=f5045599d8cd",
+      "example": "database/prebuilt_audio/topic_family/examples/0001.mp3?v=7d7680722ac1"
+    },
+    "2": {
+      "word": "database/prebuilt_audio/topic_family/words/0002.mp3?v=e89fb9e2b762",
+      "example": "database/prebuilt_audio/topic_family/examples/0002.mp3?v=c1dfcfbfa83b"
+    },
+    "3": {
+      "word": "database/prebuilt_audio/topic_family/words/0003.mp3?v=94567a17fe9e",
+      "example": "database/prebuilt_audio/topic_family/examples/0003.mp3?v=9712a0826b46"
+    },
+    "4": {
+      "word": "database/prebuilt_audio/topic_family/words/0004.mp3?v=77089fd05e59",
+      "example": "database/prebuilt_audio/topic_family/examples/0004.mp3?v=7700030994f4"
+    },
+    "5": {
+      "word": "database/prebuilt_audio/topic_family/words/0005.mp3?v=35fb3e183cdf",
+      "example": "database/prebuilt_audio/topic_family/examples/0005.mp3?v=071245637af9"
+    },
+    "6": {
+      "word": "database/prebuilt_audio/topic_family/words/0006.mp3?v=0188e6685f65",
+      "example": "database/prebuilt_audio/topic_family/examples/0006.mp3?v=0a6b264d9176"
+    },
+    "7": {
+      "word": "database/prebuilt_audio/topic_family/words/0007.mp3?v=7695b3876042",
+      "example": "database/prebuilt_audio/topic_family/examples/0007.mp3?v=8add550a9d7f"
+    },
+    "8": {
+      "word": "database/prebuilt_audio/topic_family/words/0008.mp3?v=c488f5fd7386",
+      "example": "database/prebuilt_audio/topic_family/examples/0008.mp3?v=0dbdf43113e9"
+    },
+    "9": {
+      "word": "database/prebuilt_audio/topic_family/words/0009.mp3?v=fec7d891b673",
+      "example": "database/prebuilt_audio/topic_family/examples/0009.mp3?v=c57c498b8fa1"
+    },
+    "10": {
+      "word": "database/prebuilt_audio/topic_family/words/0010.mp3?v=d7f1cbffde08",
+      "example": "database/prebuilt_audio/topic_family/examples/0010.mp3?v=1a57ad19851e"
+    },
+    "11": {
+      "word": "database/prebuilt_audio/topic_family/words/0011.mp3?v=7f10cd84414f",
+      "example": "database/prebuilt_audio/topic_family/examples/0011.mp3?v=028730e7f376"
+    },
+    "12": {
+      "word": "database/prebuilt_audio/topic_family/words/0012.mp3?v=5a5f290cdbca",
+      "example": "database/prebuilt_audio/topic_family/examples/0012.mp3?v=dc4a81e20d18"
+    },
+    "13": {
+      "word": "database/prebuilt_audio/topic_family/words/0013.mp3?v=f773c5c4882f",
+      "example": "database/prebuilt_audio/topic_family/examples/0013.mp3?v=2da34e71ea6b"
+    },
+    "14": {
+      "word": "database/prebuilt_audio/topic_family/words/0014.mp3?v=0d714e1bac0c",
+      "example": "database/prebuilt_audio/topic_family/examples/0014.mp3?v=4942e86a1cf9"
+    },
+    "15": {
+      "word": "database/prebuilt_audio/topic_family/words/0015.mp3?v=3629b197429e",
+      "example": "database/prebuilt_audio/topic_family/examples/0015.mp3?v=d24d208b7d54"
+    },
+    "16": {
+      "word": "database/prebuilt_audio/topic_family/words/0016.mp3?v=c3bd8b2ea071",
+      "example": "database/prebuilt_audio/topic_family/examples/0016.mp3?v=3fdd2db3cef6"
+    },
+    "17": {
+      "word": "database/prebuilt_audio/topic_family/words/0017.mp3?v=a173f103c5eb",
+      "example": "database/prebuilt_audio/topic_family/examples/0017.mp3?v=c56823cd7022"
+    },
+    "18": {
+      "word": "database/prebuilt_audio/topic_family/words/0018.mp3?v=56d30de2d74c",
+      "example": "database/prebuilt_audio/topic_family/examples/0018.mp3?v=7ff1b1b7b27a"
+    },
+    "19": {
+      "word": "database/prebuilt_audio/topic_family/words/0019.mp3?v=bfb2aa02b66c",
+      "example": "database/prebuilt_audio/topic_family/examples/0019.mp3?v=606d01f6f611"
+    },
+    "20": {
+      "word": "database/prebuilt_audio/topic_family/words/0020.mp3?v=528870265fbd",
+      "example": "database/prebuilt_audio/topic_family/examples/0020.mp3?v=582b2f0d4f2f"
+    },
+    "21": {
+      "word": "database/prebuilt_audio/topic_family/words/0021.mp3?v=fbb6dcad2a6a",
+      "example": "database/prebuilt_audio/topic_family/examples/0021.mp3?v=aa0343901314"
+    },
+    "22": {
+      "word": "database/prebuilt_audio/topic_family/words/0022.mp3?v=c87eaed8d91e",
+      "example": "database/prebuilt_audio/topic_family/examples/0022.mp3?v=ec350908a78e"
+    },
+    "23": {
+      "word": "database/prebuilt_audio/topic_family/words/0023.mp3?v=8fbe2aaabd25",
+      "example": "database/prebuilt_audio/topic_family/examples/0023.mp3?v=b69dbf35e8e7"
+    },
+    "24": {
+      "word": "database/prebuilt_audio/topic_family/words/0024.mp3?v=734235b32b83",
+      "example": "database/prebuilt_audio/topic_family/examples/0024.mp3?v=5c33ed82802c"
+    },
+    "25": {
+      "word": "database/prebuilt_audio/topic_family/words/0025.mp3?v=59405a6cc748",
+      "example": "database/prebuilt_audio/topic_family/examples/0025.mp3?v=bd979d6095a2"
+    },
+    "26": {
+      "word": "database/prebuilt_audio/topic_family/words/0026.mp3?v=7dbeee721f45",
+      "example": "database/prebuilt_audio/topic_family/examples/0026.mp3?v=642d660485cf"
+    },
+    "27": {
+      "word": "database/prebuilt_audio/topic_family/words/0027.mp3?v=367b8d0c978f",
+      "example": "database/prebuilt_audio/topic_family/examples/0027.mp3?v=aaa8f4566dd9"
+    },
+    "28": {
+      "word": "database/prebuilt_audio/topic_family/words/0028.mp3?v=4072e583c7b7",
+      "example": "database/prebuilt_audio/topic_family/examples/0028.mp3?v=a7e8ddc75993"
+    },
+    "29": {
+      "word": "database/prebuilt_audio/topic_family/words/0029.mp3?v=314cde280780",
+      "example": "database/prebuilt_audio/topic_family/examples/0029.mp3?v=7cec0463d71e"
+    },
+    "30": {
+      "word": "database/prebuilt_audio/topic_family/words/0030.mp3?v=42c22bb58f00",
+      "example": "database/prebuilt_audio/topic_family/examples/0030.mp3?v=d7e6dcc03df0"
+    },
+    "31": {
+      "word": "database/prebuilt_audio/topic_family/words/0031.mp3?v=e430ddb65dea",
+      "example": "database/prebuilt_audio/topic_family/examples/0031.mp3?v=2ca3bc473d3b"
+    },
+    "32": {
+      "word": "database/prebuilt_audio/topic_family/words/0032.mp3?v=0b8795be6f7f",
+      "example": "database/prebuilt_audio/topic_family/examples/0032.mp3?v=de21dc16aa25"
+    },
+    "33": {
+      "word": "database/prebuilt_audio/topic_family/words/0033.mp3?v=242a4150848a",
+      "example": "database/prebuilt_audio/topic_family/examples/0033.mp3?v=c275a8c66d50"
+    },
+    "34": {
+      "word": "database/prebuilt_audio/topic_family/words/0034.mp3?v=1dfd3867be11",
+      "example": "database/prebuilt_audio/topic_family/examples/0034.mp3?v=d805690b6155"
+    },
+    "35": {
+      "word": "database/prebuilt_audio/topic_family/words/0035.mp3?v=2507a3e20ba6",
+      "example": "database/prebuilt_audio/topic_family/examples/0035.mp3?v=7ba3735ba111"
+    },
+    "36": {
+      "word": "database/prebuilt_audio/topic_family/words/0036.mp3?v=7c7dbb56712d",
+      "example": "database/prebuilt_audio/topic_family/examples/0036.mp3?v=43291384e12d"
+    },
+    "37": {
+      "word": "database/prebuilt_audio/topic_family/words/0037.mp3?v=872214629554",
+      "example": "database/prebuilt_audio/topic_family/examples/0037.mp3?v=27d40506eed6"
+    },
+    "38": {
+      "word": "database/prebuilt_audio/topic_family/words/0038.mp3?v=460ab4703ddd",
+      "example": "database/prebuilt_audio/topic_family/examples/0038.mp3?v=5d8f57728cde"
+    },
+    "39": {
+      "word": "database/prebuilt_audio/topic_family/words/0039.mp3?v=0b7367f5113e",
+      "example": "database/prebuilt_audio/topic_family/examples/0039.mp3?v=e17c0a6491d1"
+    },
+    "40": {
+      "word": "database/prebuilt_audio/topic_family/words/0040.mp3?v=5d8527f9fb13",
+      "example": "database/prebuilt_audio/topic_family/examples/0040.mp3?v=7c42675ce1ae"
+    }
+  }
+}

@@ -50,6 +50,9 @@ def build_hanzi_audio_map() -> dict[str, str]:
         if level_name.startswith("hsk30_"):
             num = level_name.replace("hsk30_", "")
             vfile = VOCABS_DIR / "hsk3_0" / f"level{num}_vocabularies.json"
+        elif level_name.startswith("topic_"):
+            slug = level_name.removeprefix("topic_")
+            vfile = VOCABS_DIR / "topics" / f"{slug}.json"
         else:
             vfile = VOCABS_DIR / f"{level_name}_vocabularies.json"
 

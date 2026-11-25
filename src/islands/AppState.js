@@ -58,6 +58,13 @@ Object.assign(LEVELS, LEVELS_HSK30);
 // LEVELS[currentLevel] lookup (speech, overview, progress, backup) works unmodified.
 export const TOPICS = {
   topic_it: { label: 'Công nghệ thông tin', icon: '💻', dataUrl: 'database/vocabs/topics/it.json', available: true, total: 60, isTopic: true },
+  topic_family: { label: 'Bản thân & Gia đình', icon: '👨‍👩‍👧‍👦', dataUrl: 'database/vocabs/topics/family.json', audioManifestUrl: 'database/prebuilt_audio/topic_family/manifest.json', available: true, total: 40, isTopic: true },
+  topic_daily_routine: { label: 'Thói quen hàng ngày', icon: '⏰', dataUrl: 'database/vocabs/topics/daily_routine.json', audioManifestUrl: 'database/prebuilt_audio/topic_daily_routine/manifest.json', available: true, total: 40, isTopic: true },
+  topic_work_study: { label: 'Công việc & Học tập', icon: '💼', dataUrl: 'database/vocabs/topics/work_study.json', audioManifestUrl: 'database/prebuilt_audio/topic_work_study/manifest.json', available: true, total: 40, isTopic: true },
+  topic_hobbies: { label: 'Sở thích', icon: '🎨', dataUrl: 'database/vocabs/topics/hobbies.json', audioManifestUrl: 'database/prebuilt_audio/topic_hobbies/manifest.json', available: true, total: 40, isTopic: true },
+  topic_festivals: { label: 'Lễ hội', icon: '🏮', dataUrl: 'database/vocabs/topics/festivals.json', audioManifestUrl: 'database/prebuilt_audio/topic_festivals/manifest.json', available: true, total: 40, isTopic: true },
+  topic_travel: { label: 'Du lịch', icon: '✈️', dataUrl: 'database/vocabs/topics/travel.json', audioManifestUrl: 'database/prebuilt_audio/topic_travel/manifest.json', available: true, total: 40, isTopic: true },
+  topic_health: { label: 'Sức khỏe', icon: '🏥', dataUrl: 'database/vocabs/topics/health.json', audioManifestUrl: 'database/prebuilt_audio/topic_health/manifest.json', available: true, total: 40, isTopic: true },
 };
 Object.assign(LEVELS, TOPICS);
 

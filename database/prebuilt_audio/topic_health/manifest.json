@@ -1,0 +1,169 @@
+{
+  "version": 1,
+  "level": "topic_health",
+  "engine": "EdgeTTS",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "speed": 1.0,
+  "items": {
+    "1": {
+      "word": "database/prebuilt_audio/topic_health/words/0001.mp3?v=be3857c0e79f",
+      "example": "database/prebuilt_audio/topic_health/examples/0001.mp3?v=f8f81c3aaadd"
+    },
+    "2": {
+      "word": "database/prebuilt_audio/topic_health/words/0002.mp3?v=f56bdd8c862d",
+      "example": "database/prebuilt_audio/topic_health/examples/0002.mp3?v=9b9dab29440a"
+    },
+    "3": {
+      "word": "database/prebuilt_audio/topic_health/words/0003.mp3?v=4902599df3ba",
+      "example": "database/prebuilt_audio/topic_health/examples/0003.mp3?v=df91de76ac53"
+    },
+    "4": {
+      "word": "database/prebuilt_audio/topic_health/words/0004.mp3?v=ad3a275762f6",
+      "example": "database/prebuilt_audio/topic_health/examples/0004.mp3?v=030602c186b1"
+    },
+    "5": {
+      "word": "database/prebuilt_audio/topic_health/words/0005.mp3?v=392f7667a2a9",
+      "example": "database/prebuilt_audio/topic_health/examples/0005.mp3?v=6bd6f3d32377"
+    },
+    "6": {
+      "word": "database/prebuilt_audio/topic_health/words/0006.mp3?v=27a1e0da5ca1",
+      "example": "database/prebuilt_audio/topic_health/examples/0006.mp3?v=2231dcff30b4"
+    },
+    "7": {
+      "word": "database/prebuilt_audio/topic_health/words/0007.mp3?v=367966d5aefe",
+      "example": "database/prebuilt_audio/topic_health/examples/0007.mp3?v=7fa0f640225b"
+    },
+    "8": {
+      "word": "database/prebuilt_audio/topic_health/words/0008.mp3?v=3ca64a829dad",
+      "example": "database/prebuilt_audio/topic_health/examples/0008.mp3?v=ae16ff1f27ac"
+    },
+    "9": {
+      "word": "database/prebuilt_audio/topic_health/words/0009.mp3?v=4a38b7ecd2d5",
+      "example": "database/prebuilt_audio/topic_health/examples/0009.mp3?v=0634016d6eaf"
+    },
+    "10": {
+      "word": "database/prebuilt_audio/topic_health/words/0010.mp3?v=1c6bc25da204",
+      "example": "database/prebuilt_audio/topic_health/examples/0010.mp3?v=43002eaa2348"
+    },
+    "11": {
+      "word": "database/prebuilt_audio/topic_health/words/0011.mp3?v=04c885ca783c",
+      "example": "database/prebuilt_audio/topic_health/examples/0011.mp3?v=385c24967272"
+    },
+    "12": {
+      "word": "database/prebuilt_audio/topic_health/words/0012.mp3?v=9633f4498265",
+      "example": "database/prebuilt_audio/topic_health/examples/0012.mp3?v=135ca9360e6e"
+    },
+    "13": {
+      "word": "database/prebuilt_audio/topic_health/words/0013.mp3?v=db39d5460e3a",
+      "example": "database/prebuilt_audio/topic_health/examples/0013.mp3?v=09a1eccf7db2"
+    },
+    "14": {
+      "word": "database/prebuilt_audio/topic_health/words/0014.mp3?v=b802d36d1066",
+      "example": "database/prebuilt_audio/topic_health/examples/0014.mp3?v=dd8ee688f45e"
+    },
+    "15": {
+      "word": "database/prebuilt_audio/topic_health/words/0015.mp3?v=00f961c3da54",
+      "example": "database/prebuilt_audio/topic_health/examples/0015.mp3?v=c3d020b6adf1"
+    },
+    "16": {
+      "word": "database/prebuilt_audio/topic_health/words/0016.mp3?v=26da6e4c3fc3",
+      "example": "database/prebuilt_audio/topic_health/examples/0016.mp3?v=c841cabb50c1"
+    },
+    "17": {
+      "word": "database/prebuilt_audio/topic_health/words/0017.mp3?v=eceae8927bf1",
+      "example": "database/prebuilt_audio/topic_health/examples/0017.mp3?v=e2dba11e5498"
+    },
+    "18": {
+      "word": "database/prebuilt_audio/topic_health/words/0018.mp3?v=be945b1cf07a",
+      "example": "database/prebuilt_audio/topic_health/examples/0018.mp3?v=b2d2a9605674"
+    },
+    "19": {
+      "word": "database/prebuilt_audio/topic_health/words/0019.mp3?v=2bbef33de4dd",
+      "example": "database/prebuilt_audio/topic_health/examples/0019.mp3?v=4a14cc418388"
+    },
+    "20": {
+      "word": "database/prebuilt_audio/topic_health/words/0020.mp3?v=43a0e87fcdb5",
+      "example": "database/prebuilt_audio/topic_health/examples/0020.mp3?v=c5b04e555cd9"
+    },
+    "21": {
+      "word": "database/prebuilt_audio/topic_health/words/0021.mp3?v=8edef3c9a578",
+      "example": "database/prebuilt_audio/topic_health/examples/0021.mp3?v=6399a9f0af54"
+    },
+    "22": {
+      "word": "database/prebuilt_audio/topic_health/words/0022.mp3?v=86816ec20a62",
+      "example": "database/prebuilt_audio/topic_health/examples/0022.mp3?v=4f96ee8a442d"
+    },
+    "23": {
+      "word": "database/prebuilt_audio/topic_health/words/0023.mp3?v=e1013d3611e7",
+      "example": "database/prebuilt_audio/topic_health/examples/0023.mp3?v=52007b24e52d"
+    },
+    "24": {
+      "word": "database/prebuilt_audio/topic_health/words/0024.mp3?v=978ce2706bfc",
+      "example": "database/prebuilt_audio/topic_health/examples/0024.mp3?v=9f430a89c8ac"
+    },
+    "25": {
+      "word": "database/prebuilt_audio/topic_health/words/0025.mp3?v=31055e856aed",
+      "example": "database/prebuilt_audio/topic_health/examples/0025.mp3?v=dd430e28598f"
+    },
+    "26": {
+      "word": "database/prebuilt_audio/topic_health/words/0026.mp3?v=9189d3660be2",
+      "example": "database/prebuilt_audio/topic_health/examples/0026.mp3?v=9a774954390b"
+    },
+    "27": {
+      "word": "database/prebuilt_audio/topic_health/words/0027.mp3?v=f9cbb7cb44c3",
+      "example": "database/prebuilt_audio/topic_health/examples/0027.mp3?v=5e30f3c9a833"
+    },
+    "28": {
+      "word": "database/prebuilt_audio/topic_health/words/0028.mp3?v=ba786098a02b",
+      "example": "database/prebuilt_audio/topic_health/examples/0028.mp3?v=bd95a4ee56fd"
+    },
+    "29": {
+      "word": "database/prebuilt_audio/topic_health/words/0029.mp3?v=3dffe4275630",
+      "example": "database/prebuilt_audio/topic_health/examples/0029.mp3?v=d2da89bd7124"
+    },
+    "30": {
+      "word": "database/prebuilt_audio/topic_health/words/0030.mp3?v=444ee3f6b2b8",
+      "example": "database/prebuilt_audio/topic_health/examples/0030.mp3?v=d09ae6642782"
+    },
+    "31": {
+      "word": "database/prebuilt_audio/topic_health/words/0031.mp3?v=3241e33848de",
+      "example": "database/prebuilt_audio/topic_health/examples/0031.mp3?v=52eb11c1039a"
+    },
+    "32": {
+      "word": "database/prebuilt_audio/topic_health/words/0032.mp3?v=990bae2aa864",
+      "example": "database/prebuilt_audio/topic_health/examples/0032.mp3?v=38bb4a56af48"
+    },
+    "33": {
+      "word": "database/prebuilt_audio/topic_health/words/0033.mp3?v=e144d798e273",
+      "example": "database/prebuilt_audio/topic_health/examples/0033.mp3?v=f4f09edce928"
+    },
+    "34": {
+      "word": "database/prebuilt_audio/topic_health/words/0034.mp3?v=a6ef2e7781fc",
+      "example": "database/prebuilt_audio/topic_health/examples/0034.mp3?v=9c27b02d8fc4"
+    },
+    "35": {
+      "word": "database/prebuilt_audio/topic_health/words/0035.mp3?v=fc4a448850cf",
+      "example": "database/prebuilt_audio/topic_health/examples/0035.mp3?v=ebb42acb0101"
+    },
+    "36": {
+      "word": "database/prebuilt_audio/topic_health/words/0036.mp3?v=f0432e1dbd96",
+      "example": "database/prebuilt_audio/topic_health/examples/0036.mp3?v=9170de3c4733"
+    },
+    "37": {
+      "word": "database/prebuilt_audio/topic_health/words/0037.mp3?v=4cb6752eea5b",
+      "example": "database/prebuilt_audio/topic_health/examples/0037.mp3?v=8cbabc8c3fd6"
+    },
+    "38": {
+      "word": "database/prebuilt_audio/topic_health/words/0038.mp3?v=bd0e1c1034fa",
+      "example": "database/prebuilt_audio/topic_health/examples/0038.mp3?v=bf15cba93997"
+    },
+    "39": {
+      "word": "database/prebuilt_audio/topic_health/words/0039.mp3?v=1a98fe1d376b",
+      "example": "database/prebuilt_audio/topic_health/examples/0039.mp3?v=5ecd09631555"
+    },
+    "40": {
+      "word": "database/prebuilt_audio/topic_health/words/0040.mp3?v=fb850e7db671",
+      "example": "database/prebuilt_audio/topic_health/examples/0040.mp3?v=a02e7bf004dd"
+    }
+  }
+}
