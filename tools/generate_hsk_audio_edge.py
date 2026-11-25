@@ -29,8 +29,8 @@ DEFAULT_VOICE = "zh-CN-XiaoxiaoNeural"
 DEFAULT_BITRATE = "64k"
 
 SILENCE_FILTER = (
-    "silenceremove=start_periods=1:start_duration=0.02:start_threshold=-50dB:start_silence=0.08,"
-    "areverse,silenceremove=start_periods=1:start_duration=0.05:start_threshold=-50dB:start_silence=0.08,areverse,"
+    "silenceremove=start_periods=1:start_duration=0.01:start_threshold=-55dB:start_silence=0.10,"
+    "areverse,silenceremove=start_periods=1:start_duration=0.05:start_threshold=-55dB:start_silence=0.10,areverse,"
     "loudnorm=I=-18:TP=-2:LRA=7"
 )
 
@@ -132,9 +132,9 @@ def output_path(level: str, word_id: int, kind: str) -> Path:
 async def generate_edge_audio_bytes(text: str, voice: str, kind: str = "word") -> bytes:
     clean = text.strip()
     rate = "+0%"
-    # For standalone single-character words, use full stop and moderate pacing
-    # to guarantee clean terminal pitch contour and full initial/final articulation
-    if kind == "word" and len(clean) == 1 and not re.search(r"[，。？！、]", clean):
+    # For standalone words, append a full stop and use slightly slower pacing
+    # to guarantee clean initial fricatives, terminal pitch contour, and full articulation.
+    if kind == "word" and not re.search(r"[，。？！、]", clean):
         clean = f"{clean}。"
         rate = "-6%"
     comm = edge_tts.Communicate(clean, voice, rate=rate)
