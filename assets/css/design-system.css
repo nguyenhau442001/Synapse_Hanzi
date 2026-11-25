@@ -992,12 +992,35 @@ body.dark-mode .reading-global-footer .reading-nav-btn.next-btn:hover:not(:disab
 
 .app-header .header-quick-search-btn.header-quick-search-compact {
   width: auto;
-  min-width: 0;
-  max-width: none;
+  min-width: 200px;
+  max-width: 260px;
   height: 34px;
-  padding: 0 10px;
+  padding: 0 8px 0 12px;
   gap: 8px;
   border-radius: var(--radius-pill);
+  justify-content: flex-start;
+}
+
+.app-header .header-quick-search-btn.header-quick-search-compact .hqs-placeholder {
+  font-size: 12.5px;
+  color: var(--text-tertiary);
+}
+
+.app-header .header-quick-search-btn.header-quick-search-compact .hqs-kbd {
+  margin-left: auto;
+}
+
+@media (max-width: 767px) {
+  .app-header .header-quick-search-btn.header-quick-search-compact {
+    width: 34px;
+    min-width: 34px;
+    padding: 0;
+    justify-content: center;
+  }
+  .app-header .header-quick-search-btn.header-quick-search-compact .hqs-placeholder,
+  .app-header .header-quick-search-btn.header-quick-search-compact .hqs-kbd {
+    display: none;
+  }
 }
 
 .app-header .header-streak-badge {
