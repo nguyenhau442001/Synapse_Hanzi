@@ -8,7 +8,6 @@ body.reading-view-active #continueLearningCard,
 body.reading-view-active .dashboard-aux-column,
 body.reading-view-active .quick-quiz-card,
 body.reading-view-active .featured-topics,
-body.reading-view-active #primaryTabs,
 body.reading-zen-active .workstation-left,
 body.reading-zen-active .workstation-right,
 body.reading-zen-active #learningDashboard,
@@ -61,7 +60,19 @@ body.reading-zen-active .app {
   align-items: center !important;
 }
 
-body.reading-view-active .app-header,
+body.reading-view-active .app-header {
+  width: 100% !important;
+  max-width: 1240px !important;
+  margin: 0 auto 12px !important;
+  position: relative !important;
+}
+
+body.reading-view-active #primaryTabs {
+  width: 100% !important;
+  max-width: 1240px !important;
+  margin: 0 auto 14px !important;
+}
+
 body.reading-zen-active .app-header {
   display: none !important;
 }

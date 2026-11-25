@@ -111,8 +111,7 @@ body.listening-view-active #learningDashboard,
 body.listening-view-active #continueLearningCard,
 body.listening-view-active .dashboard-aux-column,
 body.listening-view-active .quick-quiz-card,
-body.listening-view-active .featured-topics,
-body.listening-view-active #primaryTabs {
+body.listening-view-active .featured-topics {
   display: none !important;
 }
 
@@ -132,7 +131,7 @@ body.listening-view-active {
 
 body.listening-view-active .app {
   width: 100% !important;
-  max-width: 960px !important;
+  max-width: 1240px !important;
   margin: 0 auto !important;
   padding: 0 !important;
   display: flex !important;
@@ -141,7 +140,16 @@ body.listening-view-active .app {
 }
 
 body.listening-view-active .app-header {
-  display: none !important;
+  width: 100% !important;
+  max-width: 1240px !important;
+  margin: 0 auto 12px !important;
+  position: relative !important;
+}
+
+body.listening-view-active #primaryTabs {
+  width: 100% !important;
+  max-width: 1240px !important;
+  margin: 0 auto 14px !important;
 }
 
 body.listening-view-active .workstation {
@@ -150,7 +158,7 @@ body.listening-view-active .workstation {
   align-items: center !important;
   justify-content: flex-start !important;
   width: 100% !important;
-  max-width: 960px !important;
+  max-width: 1240px !important;
   margin: 0 auto !important;
   padding: 0 !important;
   grid-template-columns: none !important;
@@ -162,7 +170,7 @@ body.listening-view-active .workstation-middle {
   flex-direction: column !important;
   align-items: center !important;
   width: 100% !important;
-  max-width: 960px !important;
+  max-width: 1240px !important;
   margin: 0 auto !important;
   padding: 0 !important;
 }
