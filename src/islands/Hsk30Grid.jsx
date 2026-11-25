@@ -24,9 +24,21 @@ export function setPickerVersion() {
   renderHsk30Grid();
 }
 
+/**
+ * Computes mastery counts for an HSK 3.0 level.
+ * @param {string} level
+ * @returns {{ known: number, studied: number }}
+ */
+export function hsk30LevelStats(level) {
+  const data = typeof readSavedLevelProgress === 'function' ? (readSavedLevelProgress(level) || {}) : {};
+  const statuses = Object.values(data);
+  const known = statuses.filter(status => status === 'known').length;
+  const studied = statuses.filter(status => status === 'known' || status === 'unknown').length;
+  return { known, studied };
+}
+
 export function hsk30KnownCount(level) {
-  const data = typeof readSavedLevelProgress === 'function' ? readSavedLevelProgress(level) : {};
-  return Object.values(data).filter(status => status === 'known').length;
+  return hsk30LevelStats(level).known;
 }
 
 export function renderHsk30Grid() {
@@ -36,13 +48,13 @@ export function renderHsk30Grid() {
   grid.innerHTML = hsk30LevelKeys().map(key => {
     const cfg = LEVELS_HSK30[key];
     if (!cfg) return '';
-    const known = hsk30KnownCount(key);
+    const { known, studied } = hsk30LevelStats(key);
     const rawPct = cfg.total > 0 ? (known / cfg.total * 100) : 0;
     const pctStr = typeof formatProgressPercent === 'function'
       ? formatProgressPercent(known, cfg.total)
       : (cfg.total > 0 ? `${parseFloat(rawPct.toFixed(3))}%` : '0%');
     const complete = known >= cfg.total;
-    const isLearning = known > 0 && !complete;
+    const isLearning = studied > 0 && !complete;
     const shortLabel = 'HSK' + key.replace('hsk30_', '');
     const metaText = `${cfg.band} · ${cfg.total.toLocaleString('vi-VN')} từ`;
     const tooltip = `${cfg.label} · ${cfg.band} · ${known}/${cfg.total} từ (${pctStr})`;

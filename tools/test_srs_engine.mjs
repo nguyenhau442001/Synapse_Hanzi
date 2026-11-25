@@ -91,16 +91,20 @@ test('successful reviews grow the interval; a lapse sends the card to relearning
   assert.ok(new Date(card.due).getTime() - now.getTime() < 60 * MIN, 'relearning step is minutes');
 });
 
-test('statusFromCard derives Chưa học / Cần ôn / Đã nhớ from state and due', () => {
+test('statusFromCard derives Chưa học / Cần ôn / Đã nhớ from FSRS state and last_rating', () => {
   const fresh = SRS.createNewCard(T0);
-  assert.equal(storage.statusFromCard(fresh, T0), null);
-  const learning = SRS.review(fresh, 'good', T0, 0.9).card;
-  assert.equal(storage.statusFromCard(learning, T0), 'unknown');
+  assert.equal(storage.statusFromCard(fresh), null);
+  const learningGood = SRS.review(fresh, 'good', T0, 0.9).card;
+  assert.equal(storage.statusFromCard(learningGood), 'known');
+  const learningAgain = SRS.review(fresh, 'again', T0, 0.9).card;
+  assert.equal(storage.statusFromCard(learningAgain), 'unknown');
   const graduated = SRS.review(fresh, 'easy', T0, 0.9).card;
-  assert.equal(storage.statusFromCard(graduated, T0), 'known');
-  assert.equal(storage.statusFromCard(graduated, at(400 * DAY)), 'unknown', 'overdue review card is due');
+  assert.equal(storage.statusFromCard(graduated), 'known');
+  // Overdue review cards stay 'known' for mastery progress (due queue uses SRS.isDue).
+  assert.equal(SRS.isDue(graduated, at(400 * DAY)), true);
+  assert.equal(storage.statusFromCard(graduated), 'known');
   // A stale stored status must not win over the real schedule.
-  assert.equal(storage.statusFromCard({ ...graduated, status: 'unknown' }, T0), 'known');
+  assert.equal(storage.statusFromCard({ ...graduated, status: 'unknown' }), 'known');
 });
 
 test('legacy v2 progress migrates: known -> reviewed with a short interval, unknown -> due now', () => {
@@ -184,6 +188,27 @@ test('reviewSrsCard with a direction writes only that deck and its log', () => {
   assert.equal(storage.readSrsRecord('hsk5').cards[9].state, SRS.State.New, 'default deck untouched');
   assert.equal(storage.readSrsReviewLog('hsk5', 'vi2zh').length, 1);
   assert.equal(storage.readSrsReviewLog('hsk5').length, 0);
+});
+
+globalThis.window = globalThis;
+const levelsMod = await import('../src/islands/Levels.js');
+
+test('readSavedLevelProgress merges mastery across all study directions', () => {
+  storage.saveSrsRecord('hsk30_1', {
+    1: SRS.review(SRS.createNewCard(T0), 'again', T0, 0.9).card,
+  }, false, 'zh2vi');
+  storage.saveSrsRecord('hsk30_1', {
+    1: SRS.review(SRS.createNewCard(T0), 'good', T0, 0.9).card,
+    2: SRS.review(SRS.createNewCard(T0), 'again', T0, 0.9).card,
+  }, false, 'listen');
+  storage.saveSrsRecord('hsk30_1', {
+    3: SRS.review(SRS.createNewCard(T0), 'easy', T0, 0.9).card,
+  }, false, 'vi2zh');
+
+  const merged = levelsMod.readSavedLevelProgress('hsk30_1');
+  assert.equal(merged[1], 'known', 'known in listen overrides unknown in zh2vi');
+  assert.equal(merged[2], 'unknown');
+  assert.equal(merged[3], 'known');
 });
 
 console.log(`\n${passed} SRS engine tests passed`);

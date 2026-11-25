@@ -122,21 +122,25 @@ export function saveRetention(value) {
   return norm;
 }
 
-// Learning state shown in the UI, derived from the FSRS card (never stored):
-//   null      -> Chưa học (new card)
-//   'known'   -> Đã nhớ  (graduated to Review and not yet due)
-//   'unknown' -> Cần ôn  (learning/relearning, or a review card that is due)
-export function statusFromCard(card, now) {
+/**
+ * Derived UI mastery status for an FSRS card (never persisted).
+ * - null: New / unseen card (Chưa học)
+ * - 'known': Review card (even when due) or Learning card graded 'good'/'easy' (Đã nhớ)
+ * - 'unknown': Relearning card or Learning card graded 'again' (Cần ôn)
+ * @param {Object|null|undefined} card
+ * @returns {'known'|'unknown'|null}
+ */
+export function statusFromCard(card) {
   if (!card || card.state === undefined || card.state === SRS.State.New) return null;
-  if (card.state === SRS.State.Review && !SRS.isDue(card, now || new Date())) return 'known';
+  if (card.state === SRS.State.Review) return 'known';
+  if (card.state === SRS.State.Learning && card.last_rating !== 'again') return 'known';
   return 'unknown';
 }
 
-export function progressFromCards(cards, now) {
+export function progressFromCards(cards) {
   const statuses = {};
-  const time = now || new Date();
   Object.keys(cards || {}).forEach(id => {
-    const status = statusFromCard(cards[id], time);
+    const status = statusFromCard(cards[id]);
     if (status) statuses[id] = status;
   });
   return statuses;

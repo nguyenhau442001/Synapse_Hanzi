@@ -1,6 +1,12 @@
 // Level picker, welcome message, study streaks, history modal, and level data loading.
 // Preact island/module port of former assets/js/levels.js.
 import { formatStudyLevelLabel } from './AppUtils.js';
+import {
+  STUDY_DIRECTIONS,
+  readSrsRecord,
+  progressFromCards,
+  readSavedLevelProgressLegacy,
+} from './StorageEngine.js';
 
 /* global LEVELS, currentLevel, currentView, overviewQuery, overviewStatus, pickerVersion,
    order, progress, showPinyin, currentFilter, idx, WORDS, filteredOrder, transitionTimer,
@@ -59,12 +65,35 @@ export const DASHBOARD_TITLE_LABELS = {
 };
 export const LAST_LEVEL_KEY = 'hsk_last_level_v1';
 
-export function readSavedLevelProgress(level) {
-  const srs = typeof readSrsRecord === 'function' ? readSrsRecord(level) : (window.readSrsRecord && window.readSrsRecord(level));
-  if (srs) {
-    return typeof progressFromCards === 'function' ? progressFromCards(srs.cards) : (window.progressFromCards && window.progressFromCards(srs.cards));
+/**
+ * Reads saved mastery map ({ [wordId]: 'known' | 'unknown' }) for a level.
+ * When `direction` is omitted, merges all STUDY_DIRECTIONS with priority 'known' > 'unknown'.
+ * @param {string} level
+ * @param {string} [direction]
+ * @returns {Record<string, 'known'|'unknown'>}
+ */
+export function readSavedLevelProgress(level, direction) {
+  if (direction) {
+    const srs = readSrsRecord(level, direction);
+    if (srs) return progressFromCards(srs.cards);
+    return readSavedLevelProgressLegacy(level);
   }
-  return typeof readSavedLevelProgressLegacy === 'function' ? readSavedLevelProgressLegacy(level) : (window.readSavedLevelProgressLegacy && window.readSavedLevelProgressLegacy(level));
+
+  let hasAnySrs = false;
+  const merged = {};
+  STUDY_DIRECTIONS.forEach(dir => {
+    const srs = readSrsRecord(level, dir);
+    if (!srs) return;
+    hasAnySrs = true;
+    const prog = progressFromCards(srs.cards);
+    Object.keys(prog).forEach(id => {
+      if (prog[id] === 'known' || !merged[id]) {
+        merged[id] = prog[id];
+      }
+    });
+  });
+  if (hasAnySrs) return merged;
+  return readSavedLevelProgressLegacy(level);
 }
 
 export function readStudyActivity() {
