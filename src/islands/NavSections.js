@@ -8,10 +8,11 @@
 export const NAV_SECTIONS = {
   vocab: { navId: 'primaryTabVocab', subtabs: ['level', 'topic', 'radicals', 'guessWord'], showRow: true },
   curriculum: { navId: 'primaryTabCurriculum', subtabs: ['curriculum'], showRow: false },
-  listening: { navId: 'primaryNavListening', subtabs: ['listening'], showRow: true },
-  speaking: { navId: 'primaryNavSpeaking', subtabs: ['speaking'], showRow: true },
-  reading: { navId: 'primaryNavReading', subtabs: ['gradedReading', 'reading'], showRow: true },
-  writing: { navId: 'primaryNavWriting', subtabs: ['writing', 'sentenceGame', 'speedQuiz'], showRow: true },
+  skills: {
+    navId: 'primaryNavSkills',
+    subtabs: ['listening', 'speaking', 'gradedReading', 'reading', 'writing', 'sentenceGame', 'speedQuiz'],
+    showRow: true,
+  },
   exam: { navId: 'primaryNavExam', subtabs: ['exam'], showRow: false },
   review: { navId: 'primaryTabReview', subtabs: ['review'], showRow: false },
 };

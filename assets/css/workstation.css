@@ -75,16 +75,16 @@ body.graded-story-active #primaryTabs {
     display: flex !important;
     flex-direction: column !important;
     align-items: stretch !important;
-    max-width: 1200px !important;
-    width: 92% !important;
+    max-width: 1240px !important;
+    width: 100% !important;
     margin: 0 auto !important;
     grid-template-columns: none !important;
     grid-template-areas: none !important;
   }
   body:not(.flashcard-study-mode):not(.reading-view-active) .app {
-    max-width: 1200px !important;
+    max-width: 1240px !important;
     margin: 0 auto !important;
-    width: 92% !important;
+    width: 100% !important;
   }
   .workstation-left   { grid-area: left; position: sticky; top: 24px; }
   .workstation-middle { grid-area: middle; min-width: 0; }
@@ -266,9 +266,9 @@ body.graded-story-active #primaryTabs {
   }
   body.home-screen .app {
     height: auto;
-    max-width: 1200px;
+    max-width: 1240px;
     margin: 0 auto;
-    width: 92%;
+    width: 100%;
     padding: 0 16px;
     box-sizing: border-box;
   }
@@ -278,7 +278,7 @@ body.graded-story-active #primaryTabs {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    max-width: 1200px;
+    max-width: 1240px;
     width: 100%;
     margin: 0 auto;
     gap: 20px;
@@ -297,19 +297,10 @@ body.graded-story-active #primaryTabs {
     min-height: auto;
     height: auto;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1240px;
     margin: 0 auto;
     overflow: visible;
   }
-}
-
-/* Wide screens: scale the home dashboard up proportionally instead of
-   leaving large empty margins on both sides. Layout stays identical. */
-@media (min-width: 1600px) {
-  body.home-screen .app { zoom: 1.15; }
-}
-@media (min-width: 1840px) {
-  body.home-screen .app { zoom: 1.25; }
 }
 
 /* ==========================================================================

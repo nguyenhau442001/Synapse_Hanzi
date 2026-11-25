@@ -953,3 +953,237 @@ body.dark-mode .reading-global-footer .reading-nav-btn.next-btn:hover:not(:disab
 
 /* Lesson section links: the last section can scroll to the top under the sticky header */
 #curSection-practice { min-height: calc(100vh - 120px); }
+
+/* ── Unified 1240px Shell, Single-Row Header Nav & Actionable Today Card ── */
+.app-header {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.app-header-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.header-primary-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  min-width: 0;
+}
+
+.header-primary-nav .primary-tab {
+  height: 34px;
+  padding: 0 11px;
+  white-space: nowrap;
+  flex: 0 0 auto;
+}
+
+.app-header .header-quick-search-btn.header-quick-search-compact {
+  width: auto;
+  min-width: 0;
+  max-width: none;
+  height: 34px;
+  padding: 0 10px;
+  gap: 8px;
+  border-radius: var(--radius-pill);
+}
+
+.app-header .header-streak-badge {
+  cursor: pointer;
+  font-variant-numeric: tabular-nums;
+}
+
+.app-header .header-streak-badge.is-zero .header-streak-icon {
+  color: var(--text-tertiary);
+}
+
+.app-header .header-streak-badge.is-zero .header-streak-count {
+  color: var(--text-tertiary);
+}
+
+.app-header .header-avatar-initial {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-pill);
+  background: var(--surface-active);
+  color: var(--accent-text);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+@media (max-width: 1023px) {
+  .app-header-left {
+    display: contents;
+  }
+  .app-header-brand {
+    order: 1;
+  }
+  .app-header-actions {
+    order: 2;
+    margin-left: auto;
+  }
+  .header-primary-nav {
+    order: 3;
+    flex: 1 0 100%;
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-top: 6px;
+    border-top: 1px solid var(--border-subtle);
+  }
+  .header-primary-nav::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .app-header .header-badge-label {
+    display: none;
+  }
+  .app-header .header-action-badge {
+    padding: 0 8px;
+  }
+}
+
+/* Today Goal Card: actionable 2-column layout + bounded progress track */
+.learning-dashboard.dashboard-hero-banner,
+body.home-screen .learning-dashboard.dashboard-hero-banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 16px 20px;
+}
+
+.learning-dashboard .hero-banner-main {
+  flex: 1 1 auto;
+  min-width: 0;
+  gap: 8px;
+}
+
+.learning-dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.learning-dashboard-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.learning-dashboard .goal-settings-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text-tertiary);
+  cursor: pointer;
+}
+
+.learning-dashboard .goal-settings-btn:hover {
+  background: var(--surface-hover);
+  color: var(--text-primary);
+}
+
+.learning-dashboard .daily-goal-track-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 420px;
+}
+
+.learning-dashboard .daily-goal-track,
+body.home-screen .daily-goal-track {
+  flex: 1 1 220px;
+  max-width: 340px;
+  height: 6px;
+}
+
+.learning-dashboard .daily-goal-count {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 3px;
+  white-space: nowrap;
+}
+
+.learning-dashboard .daily-goal-count strong.goal-count-big {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.hero-banner-cta {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.today-primary-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 22px;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-btn);
+  background: var(--accent);
+  color: #ffffff;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: filter var(--dur-fast) var(--ease-out), transform var(--dur-fast) var(--ease-out);
+}
+
+.today-primary-cta-btn:hover {
+  filter: brightness(1.06);
+}
+
+.today-primary-cta-btn:active {
+  transform: translateY(1px);
+}
+
+.today-primary-cta-btn:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+@media (max-width: 640px) {
+  .learning-dashboard.dashboard-hero-banner,
+  body.home-screen .learning-dashboard.dashboard-hero-banner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    padding: 16px;
+  }
+  .hero-banner-cta {
+    width: 100%;
+  }
+  .today-primary-cta-btn {
+    width: 100%;
+  }
+}

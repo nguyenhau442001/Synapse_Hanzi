@@ -80,31 +80,58 @@
 
     <div class="workstation-middle" id="workstationMiddle">
   <header class="app-header" id="appHeader">
-    <div class="app-header-brand">
-      <div class="app-brand-badge">
-        <button type="button" id="globalBackBtn" class="global-back-btn" aria-label="Quay lại trang trước" title="Quay lại trang trước (Alt+Left)" hidden>
-          <svg class="global-back-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-          <span class="global-back-text">Trở về</span>
-        </button>
-        <button type="button" id="appBrandHomeBtn" class="app-brand-home-btn" aria-label="Trở về trang chủ 汉字思维" title="Trở về trang chủ (Home)">
-          <img src="assets/images/logo.svg" alt="汉字思维 Logo" class="app-brand-logo-img" width="36" height="36" />
-        </button>
-        <div class="app-brand-text-block" id="appBrandTextBlock" role="button" tabindex="0" title="Trở về trang chủ (Home)" aria-label="Trang chủ 汉字思维">
-          <h1 id="appTitle">汉字思维</h1>
-          <p id="appSubtitle"><span class="brand-en">Hanzi Mind</span></p>
+    <div class="app-header-left">
+      <div class="app-header-brand">
+        <div class="app-brand-badge">
+          <button type="button" id="globalBackBtn" class="global-back-btn" aria-label="Quay lại trang trước" title="Quay lại trang trước (Alt+Left)" hidden>
+            <svg class="global-back-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <span class="global-back-text">Trở về</span>
+          </button>
+          <button type="button" id="appBrandHomeBtn" class="app-brand-home-btn" aria-label="Trở về trang chủ 汉字思维" title="Trở về trang chủ (Home)">
+            <img src="assets/images/logo.svg" alt="汉字思维 Logo" class="app-brand-logo-img" width="36" height="36" />
+          </button>
+          <div class="app-brand-text-block" id="appBrandTextBlock" role="button" tabindex="0" title="Trở về trang chủ (Home)" aria-label="Trang chủ 汉字思维">
+            <h1 id="appTitle">汉字思维</h1>
+            <p id="appSubtitle"><span class="brand-en">Hanzi Mind</span></p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="header-search-wrap">
-      <button type="button" id="headerQuickSearchBtn" class="header-quick-search-btn" aria-label="Tìm kiếm từ vựng (Ctrl+K)" title="Tìm kiếm từ vựng (Ctrl+K)">
-        <svg class="hqs-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-        <span class="hqs-placeholder">Tra cứu từ vựng...</span>
-        <kbd class="hqs-kbd" aria-hidden="true"><span class="hqs-kbd-mod">⌘</span>K</kbd>
-      </button>
+      <nav class="header-primary-nav primary-tabs-group" id="headerPrimaryNav" role="tablist" aria-label="Chế độ học chính">
+        <button id="primaryTabVocab" class="primary-tab active" type="button" role="tab" aria-pressed="true"
+          data-section="vocab">
+          <span>Từ vựng</span>
+        </button>
+        <button id="primaryTabCurriculum" class="primary-tab" type="button" role="tab" aria-pressed="false"
+          data-section="curriculum">
+          <span>Giáo trình</span>
+        </button>
+        <button id="primaryNavSkills" class="primary-tab" type="button" role="tab" aria-pressed="false"
+          data-section="skills">
+          <span>Kỹ năng</span>
+        </button>
+        <button id="primaryNavExam" class="primary-tab" type="button" role="tab" aria-pressed="false"
+          data-section="exam">
+          <span>Luyện thi</span>
+        </button>
+        <button id="primaryTabReview" class="primary-tab" type="button" role="tab" aria-pressed="false"
+          data-section="review">
+          <span>Ôn nhanh</span>
+        </button>
+      </nav>
     </div>
 
     <div class="app-header-actions">
+      <button type="button" id="headerQuickSearchBtn" class="header-quick-search-btn header-quick-search-compact" aria-label="Tìm kiếm từ vựng (Ctrl+K)" title="Tìm kiếm từ vựng (⌘K)">
+        <svg class="hqs-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <kbd class="hqs-kbd" aria-hidden="true"><span class="hqs-kbd-mod">⌘</span>K</kbd>
+      </button>
+
+      <button type="button" id="headerStreakBadge" class="header-streak-badge is-zero" title="Chuỗi ngày học liên tiếp" aria-label="Chuỗi ngày học liên tiếp">
+        <span class="header-streak-icon" aria-hidden="true"><svg class="ds-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></span>
+        <span class="header-streak-count" id="headerStreakText">0</span>
+      </button>
+
       <button type="button" id="headerUrgentReviewBtn" class="header-action-badge header-badge-urgent" title="Từ cần ôn gấp" aria-label="Từ cần ôn gấp">
         <span class="header-badge-icon" aria-hidden="true"><svg class="ds-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg></span>
         <span class="header-badge-label">Cần ôn</span>
@@ -113,18 +140,13 @@
 
       <div class="header-account-wrap">
         <button type="button" id="headerProfileBtn" class="header-profile-btn" title="Menu tài khoản &amp; tiện ích" aria-label="Menu tài khoản và tiện ích" aria-haspopup="menu" aria-expanded="false" aria-controls="headerAccountMenu">
-          <span class="header-avatar-icon" aria-hidden="true"><svg class="ds-icon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span>
+          <span id="headerAvatarInitial" class="header-avatar-initial" aria-hidden="true">H</span>
         </button>
 
         <div id="headerAccountMenu" class="header-account-menu" role="menu" aria-label="Tiện ích tài khoản" hidden>
           <button type="button" id="headerMenuProfileItem" class="header-menu-item" role="menuitem">
             <svg class="ds-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
             <span class="header-menu-label">Hồ sơ &amp; Thống kê</span>
-          </button>
-          <button type="button" id="headerStreakBadge" class="header-menu-item header-streak-badge" role="menuitem" aria-label="Xem lịch sử học tập">
-            <span class="header-streak-icon" aria-hidden="true"><svg class="ds-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></span>
-            <span class="header-menu-label">Chuỗi ngày học</span>
-            <span class="header-menu-pill" id="headerStreakText">0 ngày</span>
           </button>
           <button type="button" id="headerSavedWordsBtn" class="header-menu-item header-badge-saved" role="menuitem" aria-label="Từ khó đã đánh dấu">
             <span class="header-badge-icon" aria-hidden="true"><svg class="ds-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></span>
@@ -162,13 +184,14 @@
   <section class="learning-dashboard dashboard-hero-banner" id="learningDashboard" aria-labelledby="learningDashboardTitle">
     <div class="hero-banner-main">
       <div class="learning-dashboard-header">
-        <div class="learning-dashboard-eyebrow">🎯 MỤC TIÊU HÔM NAY</div>
-      </div>
-
-      <div class="learning-title-row">
-        <h2 id="learningDashboardTitle">Mỗi ngày một chút, nhớ lâu hơn</h2>
+        <div class="learning-dashboard-eyebrow">
+          <svg class="ds-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+          <span>KẾ HOẠCH HÔM NAY</span>
+        </div>
         <div class="goal-settings-wrap" title="Sửa mục tiêu học mỗi ngày">
-          <button class="goal-settings-btn" type="button" aria-label="Sửa mục tiêu học mỗi ngày">⚙️</button>
+          <button class="goal-settings-btn" type="button" aria-label="Sửa mục tiêu học mỗi ngày">
+            <svg class="ds-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>
+          </button>
           <select id="dailyGoalSelect" class="goal-settings-select" aria-label="Mục tiêu số từ học mỗi ngày">
             <option value="10">10 từ / ngày</option>
             <option value="20">20 từ / ngày</option>
@@ -178,68 +201,35 @@
         </div>
       </div>
 
+      <div class="learning-title-row">
+        <h2 id="learningDashboardTitle">Hôm nay: học 50 từ mới</h2>
+      </div>
+
       <div class="daily-goal-progress-section">
-        <div class="daily-goal-metric-row">
+        <div class="daily-goal-track-row">
+          <div class="daily-goal-track" role="progressbar" aria-label="Mục tiêu học hôm nay"
+            aria-valuemin="0" aria-valuemax="50" aria-valuenow="0">
+            <div class="daily-goal-fill" id="dailyGoalFill"></div>
+          </div>
           <div class="daily-goal-count" aria-label="Tiến độ mục tiêu hôm nay">
             <strong id="dailyStudyCount" class="goal-count-big">0</strong>
             <span class="daily-goal-target-sub">/ <span id="dailyGoalTargetText">50</span> từ</span>
           </div>
-          <span class="daily-goal-pct" id="dailyGoalPct">0%</span>
-        </div>
-
-        <div class="daily-goal-track" role="progressbar" aria-label="Mục tiêu học hôm nay"
-          aria-valuemin="0" aria-valuemax="50" aria-valuenow="0">
-          <div class="daily-goal-fill" id="dailyGoalFill"></div>
         </div>
       </div>
 
-      <div class="daily-goal-message" id="dailyGoalMessage">Học thêm hôm nay để hoàn thành mục tiêu.</div>
+      <div class="daily-goal-message" id="dailyGoalMessage">Ôn từ đến hạn trước, học từ mới sau.</div>
+    </div>
+
+    <div class="hero-banner-cta">
+      <button type="button" id="todayPrimaryActionBtn" class="today-primary-cta-btn">
+        <span id="todayPrimaryActionLabel">Bắt đầu</span>
+        <svg class="ds-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </button>
     </div>
   </section>
 
-  <nav class="primary-tabs" id="primaryTabs" aria-label="Chế độ học">
-    <div class="primary-tabs-group" role="tablist" aria-label="Chế độ học chính">
-      <button id="primaryTabVocab" class="primary-tab active" type="button" role="tab" aria-pressed="true"
-        data-section="vocab">
-        <svg class="nav-tab-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
-        <span>Từ vựng</span>
-      </button>
-      <button id="primaryTabCurriculum" class="primary-tab" type="button" role="tab" aria-pressed="false"
-        data-section="curriculum">
-        <svg class="nav-tab-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-        <span>Giáo trình</span>
-      </button>
-      <button id="primaryNavListening" class="primary-tab" type="button" role="tab" aria-pressed="false"
-        data-section="listening">
-        <svg class="nav-tab-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
-        <span>Nghe</span>
-      </button>
-      <button id="primaryNavSpeaking" class="primary-tab" type="button" role="tab" aria-pressed="false"
-        data-section="speaking">
-        <svg class="nav-tab-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
-        <span>Nói</span>
-      </button>
-      <button id="primaryNavReading" class="primary-tab" type="button" role="tab" aria-pressed="false"
-        data-section="reading">
-        <svg class="nav-tab-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4h7a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H2z"/><path d="M22 4h-7a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h8z"/></svg>
-        <span>Đọc</span>
-      </button>
-      <button id="primaryNavWriting" class="primary-tab" type="button" role="tab" aria-pressed="false"
-        data-section="writing">
-        <svg class="nav-tab-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
-        <span>Viết</span>
-      </button>
-      <button id="primaryNavExam" class="primary-tab" type="button" role="tab" aria-pressed="false"
-        data-section="exam">
-        <svg class="nav-tab-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-        <span>Luyện thi</span>
-      </button>
-      <button id="primaryTabReview" class="primary-tab" type="button" role="tab" aria-pressed="false"
-        data-section="review">
-        <svg class="nav-tab-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-        <span>Ôn nhanh</span>
-      </button>
-    </div>
+  <nav class="primary-tabs" id="primaryTabs" aria-label="Bộ lọc chế độ học">
     <div class="primary-toolbar-cluster" id="primaryToolbarCluster">
       <label class="picker-version-control" id="pickerVersionControls" for="pickerVersionSelect">
         <span class="picker-version-label">Chuẩn HSK</span>
@@ -263,24 +253,21 @@
           aria-controls="screenRadicalHub" data-section="vocab" data-subtab="radicals">Bộ thủ</button>
         <button id="primaryTabGuessWord" class="view-tab" type="button" role="tab" aria-selected="false"
           aria-controls="screenGuessWord" data-section="vocab" data-subtab="guessWord">Trò chơi</button>
-        <!-- Nghe -->
+        <!-- Kỹ năng: Nghe / Nói / Đọc / Viết -->
         <button id="primaryTabListening" class="view-tab" type="button" role="tab" aria-selected="false"
-          aria-controls="screenListeningPractice" data-section="listening" data-subtab="listening" hidden>Luyện nghe HSK4</button>
-        <!-- Nói -->
+          aria-controls="screenListeningPractice" data-section="skills" data-subtab="listening" hidden>Nghe</button>
         <button id="primaryTabSpeaking" class="view-tab" type="button" role="tab" aria-selected="false"
-          aria-controls="screenSpeakingPractice" data-section="speaking" data-subtab="speaking" hidden>Luyện nói &amp; Thanh điệu</button>
-        <!-- Đọc -->
+          aria-controls="screenSpeakingPractice" data-section="skills" data-subtab="speaking" hidden>Nói</button>
         <button id="primaryTabGradedReading" class="view-tab" type="button" role="tab" aria-selected="false"
-          aria-controls="screenGradedReading" data-section="reading" data-subtab="gradedReading" hidden>Bài đọc phân cấp</button>
+          aria-controls="screenGradedReading" data-section="skills" data-subtab="gradedReading" hidden>Đọc phân cấp</button>
         <button id="primaryTabReading" class="view-tab" type="button" role="tab" aria-selected="false"
-          aria-controls="screenReadingAnalysis" data-section="reading" data-subtab="reading" hidden>Đọc hiểu HSK4</button>
-        <!-- Viết -->
+          aria-controls="screenReadingAnalysis" data-section="skills" data-subtab="reading" hidden>Đọc hiểu</button>
         <button id="primaryTabWriting" class="view-tab" type="button" role="tab" aria-selected="false"
-          aria-controls="screenWriting" data-section="writing" data-subtab="writing" hidden>Tập viết chữ Hán</button>
+          aria-controls="screenWriting" data-section="skills" data-subtab="writing" hidden>Viết chữ</button>
         <button id="primaryTabSentenceGame" class="view-tab" type="button" role="tab" aria-selected="false"
-          aria-controls="screenSentenceGame" data-section="writing" data-subtab="sentenceGame" hidden>Xếp câu HSK4</button>
+          aria-controls="screenSentenceGame" data-section="skills" data-subtab="sentenceGame" hidden>Xếp câu</button>
         <button id="primaryTabSpeedQuiz" class="view-tab" type="button" role="tab" aria-selected="false"
-          aria-controls="screenSpeedQuiz" data-section="writing" data-subtab="speedQuiz" hidden>Điền từ</button>
+          aria-controls="screenSpeedQuiz" data-section="skills" data-subtab="speedQuiz" hidden>Điền từ</button>
       </div>
     </div>
   </nav>

@@ -548,7 +548,6 @@ export function renderLearningDashboard() {
   const summary = learningProgressSummary();
   const rawPercent = (todayCount / validGoal) * 100;
   const goalPercent = Math.max(0, Math.min(100, isNaN(rawPercent) ? 0 : rawPercent));
-  const roundedPct = Math.round(goalPercent);
 
   dailyCount.textContent = todayCount;
   if (dailyGoalSelect) dailyGoalSelect.value = String(validGoal);
@@ -557,32 +556,66 @@ export function renderLearningDashboard() {
     dailyFill.parentElement.setAttribute('aria-valuemax', String(validGoal));
     dailyFill.parentElement.setAttribute('aria-valuenow', String(Math.min(todayCount, validGoal)));
   }
-  dailyMessage.textContent = todayCount >= validGoal
-    ? 'Đã hoàn thành mục tiêu hôm nay — tuyệt lắm!'
-    : 'Học thêm hôm nay để hoàn thành mục tiêu.';
 
-  const goalPctNode = document.getElementById('dailyGoalPct');
-  if (goalPctNode) {
-    goalPctNode.textContent = `${roundedPct}%`;
-    goalPctNode.classList.toggle('is-completed', roundedPct >= 100);
-  }
   const targetTextNode = document.getElementById('dailyGoalTargetText');
   if (targetTextNode) {
     targetTextNode.textContent = String(validGoal);
   }
 
   const headerStreak = document.getElementById('headerStreakText');
-  if (headerStreak) headerStreak.textContent = `${streak} ngày`;
+  if (headerStreak) headerStreak.textContent = String(streak);
   const headerStreakBadge = document.getElementById('headerStreakBadge');
-  if (headerStreakBadge) headerStreakBadge.classList.toggle('is-zero', !(streak > 0));
+  if (headerStreakBadge) {
+    headerStreakBadge.classList.toggle('is-zero', !(streak > 0));
+    const streakLabel = `Chuỗi ${streak} ngày học liên tiếp`;
+    headerStreakBadge.title = streakLabel;
+    headerStreakBadge.setAttribute('aria-label', streakLabel);
+  }
   if (knownNode) knownNode.textContent = summary.totalKnown;
   if (studiedNode) studiedNode.textContent = summary.totalStudied;
   const dueTotal = typeof countDueCardsAcrossLevels === 'function' ? countDueCardsAcrossLevels(new Date()) : (window.countDueCardsAcrossLevels ? window.countDueCardsAcrossLevels(new Date()) : 0);
   if (dueCount) dueCount.textContent = String(dueTotal);
   if (todayReviewButton) todayReviewButton.hidden = dueTotal === 0;
 
+  const remainingNew = Math.max(0, validGoal - todayCount);
   const target = summary.target;
   const levelsObj = typeof LEVELS !== 'undefined' ? LEVELS : window.LEVELS;
+  const targetLevel = (target && target.level) ? target.level : 'hsk1';
+  const targetLabel = (levelsObj && levelsObj[targetLevel]) ? levelsObj[targetLevel].label : 'HSK 1';
+
+  const titleNode = document.getElementById('learningDashboardTitle');
+  if (titleNode) {
+    if (dueTotal > 0 && remainingNew > 0) {
+      titleNode.textContent = `Hôm nay: ôn ${dueTotal} từ, học ${remainingNew} từ mới`;
+    } else if (dueTotal > 0) {
+      titleNode.textContent = `Hôm nay: ôn ${dueTotal} từ đến hạn`;
+    } else if (remainingNew > 0) {
+      titleNode.textContent = `Hôm nay: học ${remainingNew} từ mới`;
+    } else {
+      titleNode.textContent = 'Đã hoàn thành mục tiêu hôm nay';
+    }
+  }
+
+  if (dueTotal > 0 && remainingNew > 0) {
+    dailyMessage.textContent = 'Ưu tiên ôn thẻ đến hạn trước, học từ mới sau.';
+  } else if (dueTotal > 0) {
+    dailyMessage.textContent = `Đã đủ ${validGoal} từ mới hôm nay — ôn tiếp ${dueTotal} từ đến hạn.`;
+  } else if (remainingNew > 0) {
+    dailyMessage.textContent = `Không có thẻ đến hạn — tiếp tục ${targetLabel} để đạt mục tiêu.`;
+  } else {
+    dailyMessage.textContent = 'Tuyệt vời! Bạn đã hoàn thành toàn bộ kế hoạch hôm nay.';
+  }
+
+  const todayActionBtn = document.getElementById('todayPrimaryActionBtn');
+  const todayActionLabel = document.getElementById('todayPrimaryActionLabel');
+  if (todayActionBtn) {
+    todayActionBtn.dataset.action = dueTotal > 0 ? 'review' : 'new';
+    todayActionBtn.dataset.level = targetLevel;
+    if (todayActionLabel) {
+      todayActionLabel.textContent = dueTotal > 0 ? 'Bắt đầu ôn & học' : (remainingNew > 0 ? `Học ${targetLabel}` : 'Học thêm');
+    }
+  }
+
   if (target && quickButton && levelsObj && levelsObj[target.level]) {
     const complete = target.known >= levelsObj[target.level].total;
     quickButton.dataset.level = target.level;

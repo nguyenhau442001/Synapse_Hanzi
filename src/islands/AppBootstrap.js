@@ -161,7 +161,31 @@ export function initAppEventBindings() {
     else if (window.toggleTheme) window.toggleTheme();
   });
 
-  // Daily goal controls
+  // Avatar monogram initial
+  const avatarInitialNode = document.getElementById('headerAvatarInitial');
+  if (avatarInitialNode) {
+    try {
+      const savedName = (localStorage.getItem('hsk_profile_name') || '').trim();
+      const firstChar = savedName ? Array.from(savedName)[0].toUpperCase() : 'H';
+      avatarInitialNode.textContent = firstChar;
+    } catch {
+      avatarInitialNode.textContent = 'H';
+    }
+  }
+
+  // Daily goal & Today CTA controls
+  onId('todayPrimaryActionBtn', 'click', () => {
+    const btn = document.getElementById('todayPrimaryActionBtn');
+    const action = btn?.dataset?.action || 'new';
+    const level = btn?.dataset?.level || 'hsk1';
+    if (action === 'review') {
+      if (typeof openTodayReviews === 'function') openTodayReviews();
+      else if (window.openTodayReviews) window.openTodayReviews();
+      return;
+    }
+    if (typeof selectLevel === 'function') selectLevel(level);
+    else if (window.selectLevel) window.selectLevel(level);
+  });
   on('.goal-settings-btn', 'click', () => {
     if (typeof focusDailyGoalSelector === 'function') focusDailyGoalSelector();
     else if (window.focusDailyGoalSelector) window.focusDailyGoalSelector();
