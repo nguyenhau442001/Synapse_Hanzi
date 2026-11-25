@@ -4,7 +4,10 @@
  * Port of legacy assets/js/speechService.js and assets/js/speech.js.
  */
 
-/* global LEVELS, currentLevel, WORDS, filteredOrder, idx, SPEECH_RATE, exampleSpeechSpeed */
+/* global LEVELS, currentLevel, WORDS, filteredOrder, idx, SPEECH_RATE, exampleSpeechSpeed, APP_VERSION */
+
+const DEFAULT_SPEECH_RATE = 0.8;
+const HANZI_AUDIO_MAP_URL = 'database/prebuilt_audio/hanzi_audio_map.json';
 
 let cachedVoices = [];
 let isVoicesLoaded = false;
@@ -141,7 +144,9 @@ export async function loadGlobalHanziAudioMap() {
   if (isLoadingGlobalMap) return null;
   isLoadingGlobalMap = true;
   try {
-    const res = await fetch('database/prebuilt_audio/hanzi_audio_map.json');
+    const version = typeof APP_VERSION !== 'undefined' ? APP_VERSION : (typeof window !== 'undefined' ? window.APP_VERSION : '');
+    const url = version ? `${HANZI_AUDIO_MAP_URL}?v=${encodeURIComponent(version)}` : HANZI_AUDIO_MAP_URL;
+    const res = await fetch(url);
     if (res.ok) {
       const data = await res.json();
       globalHanziAudioMap = data;
@@ -324,6 +329,67 @@ export function speakText(text, button, rate = (typeof SPEECH_RATE !== 'undefine
   showSpeechHint(hint, 'Chưa có bản thu âm cho mục này', prevHint);
 }
 
+/**
+ * Play a list of sentences sequentially using prebuilt audio.
+ * Clicking the active button again stops playback.
+ */
+export function speakSequence(texts, button, rate = (typeof SPEECH_RATE !== 'undefined' ? SPEECH_RATE : DEFAULT_SPEECH_RATE)) {
+  if (!button || !Array.isArray(texts) || texts.length === 0) return;
+  if (activeSpeechButton === button) {
+    stopSpeech();
+    return;
+  }
+
+  const urls = texts.map((t) => resolvePrebuiltAudio(t)).filter(Boolean);
+  const hint = document.getElementById('hint');
+  const prevHint = hint ? hint.textContent : '';
+  if (urls.length === 0) {
+    setSpeechButtonState(button, false);
+    showSpeechHint(hint, 'Chưa có bản thu âm cho mục này', prevHint);
+    return;
+  }
+
+  stopSpeech();
+  const requestId = speechRequestId;
+  activeSpeechButton = button;
+  setSpeechButtonState(button, true, texts[0]);
+
+  const playAt = (index) => {
+    if (requestId !== speechRequestId) return;
+    if (index >= urls.length) {
+      activeSpeechAudio = null;
+      setSpeechButtonState(button, false);
+      return;
+    }
+
+    const audio = new Audio(urls[index]);
+    activeSpeechAudio = audio;
+    audio.preload = 'auto';
+    audio.playbackRate = Math.min(2, Math.max(0.25, rate || 1.0));
+    if ('preservesPitch' in audio) audio.preservesPitch = true;
+
+    const advanceOrAbort = () => {
+      if (requestId !== speechRequestId) return;
+      playAt(index + 1);
+    };
+
+    audio.onended = advanceOrAbort;
+    audio.onerror = () => {
+      if (requestId !== speechRequestId) return;
+      if (activeSpeechAudio === audio) activeSpeechAudio = null;
+      setSpeechButtonState(button, false);
+      showSpeechHint(hint, 'Không thể tải âm thanh, vui lòng thử lại', prevHint);
+    };
+
+    const playPromise = audio.play();
+    if (playPromise && typeof playPromise.catch === 'function') {
+      playPromise.catch(audio.onerror);
+    }
+  };
+
+  playAt(0);
+}
+
 export function playPrebuiltAudio(text, button, rate, audioUrl, requestId, hint, prevHint) {
   const audio = new Audio(audioUrl);
   activeSpeechAudio = audio;
@@ -495,6 +561,7 @@ export function mountSpeechAudio() {
   window.speakWord = speakWord;
   window.speakExample = speakExample;
   window.speakText = speakText;
+  window.speakSequence = speakSequence;
   window.playPrebuiltAudio = playPrebuiltAudio;
   window.speakWithWebSpeech = speakWithWebSpeech;
   window.showSpeechHint = showSpeechHint;

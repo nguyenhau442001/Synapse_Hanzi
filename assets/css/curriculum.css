@@ -1009,6 +1009,20 @@
   color: var(--text-tertiary);
 }
 
+.cur-word-audio {
+  margin-left: auto;
+  flex-shrink: 0;
+  color: var(--text-tertiary);
+  opacity: 0.65;
+  transition: color var(--dur-fast) var(--ease-out), opacity var(--dur-fast) var(--ease-out);
+}
+
+.cur-word:hover .cur-word-audio,
+.cur-word.is-playing .cur-word-audio {
+  color: var(--accent-text);
+  opacity: 1;
+}
+
 /* Grammar */
 .cur-grammar {
   padding: 22px;

@@ -1,0 +1,5400 @@
+{
+  "version": 1,
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "items": {
+    "cur30_1_01_g01": {
+      "text": "你们好！",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_01_g01.mp3?v=f117bce9ec98",
+      "lesson": "cur30_1_01",
+      "kind": "grammar"
+    },
+    "cur30_1_01_g02": {
+      "text": "他们是老师。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_01_g02.mp3?v=d049fd30d0c6",
+      "lesson": "cur30_1_01",
+      "kind": "grammar"
+    },
+    "cur30_1_01_g03": {
+      "text": "你好吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_01_g03.mp3?v=5fd5655d40e1",
+      "lesson": "cur30_1_01",
+      "kind": "grammar"
+    },
+    "cur30_1_01_d01": {
+      "text": "你好！",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_01_d01.mp3?v=dcc71d9e87c3",
+      "lesson": "cur30_1_01",
+      "kind": "dialogue"
+    },
+    "cur30_1_01_d02": {
+      "text": "你好！你好吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_01_d02.mp3?v=8d6afab58dab",
+      "lesson": "cur30_1_01",
+      "kind": "dialogue"
+    },
+    "cur30_1_01_d03": {
+      "text": "我很好，谢谢。你呢？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_01_d03.mp3?v=3976d0037a44",
+      "lesson": "cur30_1_01",
+      "kind": "dialogue"
+    },
+    "cur30_1_01_d04": {
+      "text": "我也很好。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_01_d04.mp3?v=33a7a6b4b881",
+      "lesson": "cur30_1_01",
+      "kind": "dialogue"
+    },
+    "cur30_1_01_d05": {
+      "text": "老师好！",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_01_d05.mp3?v=bef43e4e2aaa",
+      "lesson": "cur30_1_01",
+      "kind": "dialogue"
+    },
+    "cur30_1_01_d06": {
+      "text": "你们好！明天见。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_01_d06.mp3?v=43663a61d951",
+      "lesson": "cur30_1_01",
+      "kind": "dialogue"
+    },
+    "cur30_1_01_d07": {
+      "text": "老师再见！",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_01_d07.mp3?v=13554d034a1b",
+      "lesson": "cur30_1_01",
+      "kind": "dialogue"
+    },
+    "cur30_1_02_g02": {
+      "text": "他不是中国人。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_02_g02.mp3?v=e42040ecd164",
+      "lesson": "cur30_1_02",
+      "kind": "grammar"
+    },
+    "cur30_1_02_g04": {
+      "text": "你是哪国人？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_02_g04.mp3?v=db4f2f2555a3",
+      "lesson": "cur30_1_02",
+      "kind": "grammar"
+    },
+    "cur30_1_02_d01": {
+      "text": "你好！你叫什么名字？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_02_d01.mp3?v=64369bc55a7b",
+      "lesson": "cur30_1_02",
+      "kind": "dialogue"
+    },
+    "cur30_1_02_d02": {
+      "text": "我叫大卫。你呢？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_02_d02.mp3?v=771290c14c58",
+      "lesson": "cur30_1_02",
+      "kind": "dialogue"
+    },
+    "cur30_1_02_d03": {
+      "text": "我叫阿兰。我是越南人。你是哪国人？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_02_d03.mp3?v=485687315d6d",
+      "lesson": "cur30_1_02",
+      "kind": "dialogue"
+    },
+    "cur30_1_02_d04": {
+      "text": "我是美国人。他是谁？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_02_d04.mp3?v=0417405dc457",
+      "lesson": "cur30_1_02",
+      "kind": "dialogue"
+    },
+    "cur30_1_02_d05": {
+      "text": "他叫王明，他是中国人。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_02_d05.mp3?v=7a0c5ae67a44",
+      "lesson": "cur30_1_02",
+      "kind": "dialogue"
+    },
+    "cur30_1_02_d06": {
+      "text": "认识你很高兴！",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_02_d06.mp3?v=76cec8f413fe",
+      "lesson": "cur30_1_02",
+      "kind": "dialogue"
+    },
+    "cur30_1_03_g02": {
+      "text": "那是谁？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_03_g02.mp3?v=7e91ef792ee5",
+      "lesson": "cur30_1_03",
+      "kind": "grammar"
+    },
+    "cur30_1_03_g03": {
+      "text": "这是老师的杯子。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_03_g03.mp3?v=6779bb518001",
+      "lesson": "cur30_1_03",
+      "kind": "grammar"
+    },
+    "cur30_1_03_g04": {
+      "text": "她是我的同学。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_03_g04.mp3?v=d71b18bb4797",
+      "lesson": "cur30_1_03",
+      "kind": "grammar"
+    },
+    "cur30_1_03_d01": {
+      "text": "阿兰，这是我的朋友，他叫大卫。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_03_d01.mp3?v=412347b36251",
+      "lesson": "cur30_1_03",
+      "kind": "dialogue"
+    },
+    "cur30_1_03_d02": {
+      "text": "你好，大卫！你也是学生吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_03_d02.mp3?v=d5660fba3018",
+      "lesson": "cur30_1_03",
+      "kind": "dialogue"
+    },
+    "cur30_1_03_d03": {
+      "text": "是，我们都是北京大学的学生。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_03_d03.mp3?v=47a819adf74b",
+      "lesson": "cur30_1_03",
+      "kind": "dialogue"
+    },
+    "cur30_1_03_d04": {
+      "text": "那个人是谁？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_03_d04.mp3?v=138aba84f083",
+      "lesson": "cur30_1_03",
+      "kind": "dialogue"
+    },
+    "cur30_1_03_d05": {
+      "text": "那是我们的汉语老师，李老师。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_03_d05.mp3?v=3f267e21cb49",
+      "lesson": "cur30_1_03",
+      "kind": "dialogue"
+    },
+    "cur30_1_03_d06": {
+      "text": "李老师好！",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_03_d06.mp3?v=bfb2ededd5d1",
+      "lesson": "cur30_1_03",
+      "kind": "dialogue"
+    },
+    "cur30_1_04_g01": {
+      "text": "我今年二十岁。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_04_g01.mp3?v=4de55c2d53fa",
+      "lesson": "cur30_1_04",
+      "kind": "grammar"
+    },
+    "cur30_1_04_g02": {
+      "text": "这个苹果三块。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_04_g02.mp3?v=d40add03e142",
+      "lesson": "cur30_1_04",
+      "kind": "grammar"
+    },
+    "cur30_1_04_g03": {
+      "text": "你的电话是多少？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_04_g03.mp3?v=f19d083a76d3",
+      "lesson": "cur30_1_04",
+      "kind": "grammar"
+    },
+    "cur30_1_04_g04": {
+      "text": "你女儿几岁了？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_04_g04.mp3?v=dd8d143662f8",
+      "lesson": "cur30_1_04",
+      "kind": "grammar"
+    },
+    "cur30_1_04_d01": {
+      "text": "阿兰，你今年多大？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_04_d01.mp3?v=d8c362ebe871",
+      "lesson": "cur30_1_04",
+      "kind": "dialogue"
+    },
+    "cur30_1_04_d02": {
+      "text": "我今年十九岁。你呢？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_04_d02.mp3?v=8f2d43e5f3bf",
+      "lesson": "cur30_1_04",
+      "kind": "dialogue"
+    },
+    "cur30_1_04_d03": {
+      "text": "我二十一岁。李老师多大？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_04_d03.mp3?v=211510f2089a",
+      "lesson": "cur30_1_04",
+      "kind": "dialogue"
+    },
+    "cur30_1_04_d04": {
+      "text": "我不知道。老师有一个女儿，她五岁。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_04_d04.mp3?v=be6111f2a289",
+      "lesson": "cur30_1_04",
+      "kind": "dialogue"
+    },
+    "cur30_1_04_d05": {
+      "text": "一三九，八六五四，二七零一。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_04_d05.mp3?v=032494b34c29",
+      "lesson": "cur30_1_04",
+      "kind": "dialogue"
+    },
+    "cur30_1_05_g01": {
+      "text": "我家有四口人。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_05_g01.mp3?v=abbf9912feb4",
+      "lesson": "cur30_1_05",
+      "kind": "grammar"
+    },
+    "cur30_1_05_g02": {
+      "text": "我没有哥哥。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_05_g02.mp3?v=7d63bb59b4fa",
+      "lesson": "cur30_1_05",
+      "kind": "grammar"
+    },
+    "cur30_1_05_g03": {
+      "text": "我有两个姐姐。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_05_g03.mp3?v=75f1027bb2d4",
+      "lesson": "cur30_1_05",
+      "kind": "grammar"
+    },
+    "cur30_1_05_g04": {
+      "text": "桌子上有三本书。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_05_g04.mp3?v=5f6889181228",
+      "lesson": "cur30_1_05",
+      "kind": "grammar"
+    },
+    "cur30_1_05_d01": {
+      "text": "你家有几口人？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_05_d01.mp3?v=94d258abcd27",
+      "lesson": "cur30_1_05",
+      "kind": "dialogue"
+    },
+    "cur30_1_05_d02": {
+      "text": "我家有四口人：爸爸、妈妈、哥哥和我。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_05_d02.mp3?v=051b34895f3a",
+      "lesson": "cur30_1_05",
+      "kind": "dialogue"
+    },
+    "cur30_1_05_d03": {
+      "text": "你哥哥做什么工作？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_05_d03.mp3?v=60fe9020de7f",
+      "lesson": "cur30_1_05",
+      "kind": "dialogue"
+    },
+    "cur30_1_05_d04": {
+      "text": "他是医生。你有哥哥吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_05_d04.mp3?v=2e807158eda8",
+      "lesson": "cur30_1_05",
+      "kind": "dialogue"
+    },
+    "cur30_1_05_d05": {
+      "text": "我没有哥哥，我有一个妹妹。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_05_d05.mp3?v=5ed72a49a85d",
+      "lesson": "cur30_1_05",
+      "kind": "dialogue"
+    },
+    "cur30_1_05_d06": {
+      "text": "你妹妹也是学生吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_05_d06.mp3?v=e69151d4c711",
+      "lesson": "cur30_1_05",
+      "kind": "dialogue"
+    },
+    "cur30_1_05_d07": {
+      "text": "对，她在中学学习。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_05_d07.mp3?v=25bef7d3413a",
+      "lesson": "cur30_1_05",
+      "kind": "dialogue"
+    },
+    "cur30_1_06_g01": {
+      "text": "今天九月一号，星期一。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_06_g01.mp3?v=95ba97d2e99c",
+      "lesson": "cur30_1_06",
+      "kind": "grammar"
+    },
+    "cur30_1_06_g02": {
+      "text": "我的生日是十月八号。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_06_g02.mp3?v=c6e43ba5ec0c",
+      "lesson": "cur30_1_06",
+      "kind": "grammar"
+    },
+    "cur30_1_06_g03": {
+      "text": "我明天去学校。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_06_g03.mp3?v=6e47dd872740",
+      "lesson": "cur30_1_06",
+      "kind": "grammar"
+    },
+    "cur30_1_06_g04": {
+      "text": "星期六我们去看电影。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_06_g04.mp3?v=12b7a732c850",
+      "lesson": "cur30_1_06",
+      "kind": "grammar"
+    },
+    "cur30_1_06_d01": {
+      "text": "今天几月几号？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_06_d01.mp3?v=497b0bb77a89",
+      "lesson": "cur30_1_06",
+      "kind": "dialogue"
+    },
+    "cur30_1_06_d02": {
+      "text": "今天十月七号。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_06_d02.mp3?v=ebb8e2aeb57f",
+      "lesson": "cur30_1_06",
+      "kind": "dialogue"
+    },
+    "cur30_1_06_d03": {
+      "text": "星期几？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_06_d03.mp3?v=e5943e938017",
+      "lesson": "cur30_1_06",
+      "kind": "dialogue"
+    },
+    "cur30_1_06_d04": {
+      "text": "星期五。明天是我的生日！",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_06_d04.mp3?v=43e1555871ea",
+      "lesson": "cur30_1_06",
+      "kind": "dialogue"
+    },
+    "cur30_1_06_d05": {
+      "text": "真的吗？明天你想做什么？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_06_d05.mp3?v=e7c5a97b3870",
+      "lesson": "cur30_1_06",
+      "kind": "dialogue"
+    },
+    "cur30_1_06_d06": {
+      "text": "明天下午我和朋友去看电影。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_06_d06.mp3?v=10b36ec1c91a",
+      "lesson": "cur30_1_06",
+      "kind": "dialogue"
+    },
+    "cur30_1_06_d07": {
+      "text": "生日快乐！",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_06_d07.mp3?v=bcd83461389a",
+      "lesson": "cur30_1_06",
+      "kind": "dialogue"
+    },
+    "cur30_1_07_g01": {
+      "text": "现在八点半。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_07_g01.mp3?v=a64a15035169",
+      "lesson": "cur30_1_07",
+      "kind": "grammar"
+    },
+    "cur30_1_07_g02": {
+      "text": "我每天七点起床。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_07_g02.mp3?v=aa4d66ae5d48",
+      "lesson": "cur30_1_07",
+      "kind": "grammar"
+    },
+    "cur30_1_07_g04": {
+      "text": "他来中国学习汉语。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_07_g04.mp3?v=c0502e740146",
+      "lesson": "cur30_1_07",
+      "kind": "grammar"
+    },
+    "cur30_1_07_d01": {
+      "text": "大卫，现在几点？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_07_d01.mp3?v=d0203e1eb747",
+      "lesson": "cur30_1_07",
+      "kind": "dialogue"
+    },
+    "cur30_1_07_d02": {
+      "text": "差五分九点。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_07_d02.mp3?v=66ba9f1bc87e",
+      "lesson": "cur30_1_07",
+      "kind": "dialogue"
+    },
+    "cur30_1_07_d03": {
+      "text": "我们九点上课，快走吧！",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_07_d03.mp3?v=918a930e5932",
+      "lesson": "cur30_1_07",
+      "kind": "dialogue"
+    },
+    "cur30_1_07_d04": {
+      "text": "下午你去哪儿？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_07_d04.mp3?v=5d146898a28c",
+      "lesson": "cur30_1_07",
+      "kind": "dialogue"
+    },
+    "cur30_1_07_d05": {
+      "text": "我去医院看朋友。你呢？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_07_d05.mp3?v=4aa4c950fb86",
+      "lesson": "cur30_1_07",
+      "kind": "dialogue"
+    },
+    "cur30_1_07_d06": {
+      "text": "我回家睡觉，昨天我十二点才睡。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_07_d06.mp3?v=34ed01ea934e",
+      "lesson": "cur30_1_07",
+      "kind": "dialogue"
+    },
+    "cur30_1_08_g02": {
+      "text": "你要吃什么？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_08_g02.mp3?v=1f64df34ce0e",
+      "lesson": "cur30_1_08",
+      "kind": "grammar"
+    },
+    "cur30_1_08_g03": {
+      "text": "你喝茶还是喝水？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_08_g03.mp3?v=1dda80182c9e",
+      "lesson": "cur30_1_08",
+      "kind": "grammar"
+    },
+    "cur30_1_08_g04": {
+      "text": "你吃米饭还是吃面条？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_08_g04.mp3?v=774f43c062cd",
+      "lesson": "cur30_1_08",
+      "kind": "grammar"
+    },
+    "cur30_1_08_d01": {
+      "text": "你好！你们想吃什么？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_08_d01.mp3?v=943d4e9b4dcc",
+      "lesson": "cur30_1_08",
+      "kind": "dialogue"
+    },
+    "cur30_1_08_d02": {
+      "text": "我要一个米饭和一个鸡蛋汤。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_08_d02.mp3?v=68a251eb1e16",
+      "lesson": "cur30_1_08",
+      "kind": "dialogue"
+    },
+    "cur30_1_08_d03": {
+      "text": "你们喝茶还是喝水？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_08_d03.mp3?v=75f1fa531c9e",
+      "lesson": "cur30_1_08",
+      "kind": "dialogue"
+    },
+    "cur30_1_08_d04": {
+      "text": "我想喝茶，她喝水。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_08_d04.mp3?v=694276bee60f",
+      "lesson": "cur30_1_08",
+      "kind": "dialogue"
+    },
+    "cur30_1_08_d05": {
+      "text": "这个菜多少钱？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_08_d05.mp3?v=37a6d894ad97",
+      "lesson": "cur30_1_08",
+      "kind": "dialogue"
+    },
+    "cur30_1_08_d06": {
+      "text": "二十八块。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_08_d06.mp3?v=012847f55109",
+      "lesson": "cur30_1_08",
+      "kind": "dialogue"
+    },
+    "cur30_1_08_d07": {
+      "text": "好，谢谢！",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_08_d07.mp3?v=aae2ea41d80a",
+      "lesson": "cur30_1_08",
+      "kind": "dialogue"
+    },
+    "cur30_1_09_g01": {
+      "text": "我在学校吃饭。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_09_g01.mp3?v=8688a21f6066",
+      "lesson": "cur30_1_09",
+      "kind": "grammar"
+    },
+    "cur30_1_09_g02": {
+      "text": "你住在哪儿？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_09_g02.mp3?v=7e37b57a11f0",
+      "lesson": "cur30_1_09",
+      "kind": "grammar"
+    },
+    "cur30_1_09_g03": {
+      "text": "猫在椅子下面。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_09_g03.mp3?v=09ad4fa0b884",
+      "lesson": "cur30_1_09",
+      "kind": "grammar"
+    },
+    "cur30_1_09_g04": {
+      "text": "我的手机在包里。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_09_g04.mp3?v=70ec3e6eb189",
+      "lesson": "cur30_1_09",
+      "kind": "grammar"
+    },
+    "cur30_1_09_d01": {
+      "text": "王明，你住在哪儿？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_09_d01.mp3?v=1d72efe874f1",
+      "lesson": "cur30_1_09",
+      "kind": "dialogue"
+    },
+    "cur30_1_09_d02": {
+      "text": "我住在学校后面，离这儿很近。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_09_d02.mp3?v=dbcdf6790134",
+      "lesson": "cur30_1_09",
+      "kind": "dialogue"
+    },
+    "cur30_1_09_d03": {
+      "text": "你家附近有商店吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_09_d03.mp3?v=7ababe16e1ea",
+      "lesson": "cur30_1_09",
+      "kind": "dialogue"
+    },
+    "cur30_1_09_d04": {
+      "text": "有，商店在我家前面。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_09_d04.mp3?v=7da5d64ca837",
+      "lesson": "cur30_1_09",
+      "kind": "dialogue"
+    },
+    "cur30_1_09_d05": {
+      "text": "我的书呢？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_09_d05.mp3?v=d5cdfbb72c61",
+      "lesson": "cur30_1_09",
+      "kind": "dialogue"
+    },
+    "cur30_1_09_d06": {
+      "text": "在桌子上，电脑旁边。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_09_d06.mp3?v=0d5a8e8ae206",
+      "lesson": "cur30_1_09",
+      "kind": "dialogue"
+    },
+    "cur30_1_10_g02": {
+      "text": "我可以坐这儿吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_10_g02.mp3?v=8c6f1aea3a37",
+      "lesson": "cur30_1_10",
+      "kind": "grammar"
+    },
+    "cur30_1_10_g03": {
+      "text": "我不喝咖啡。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_10_g03.mp3?v=f8b5d500eb73",
+      "lesson": "cur30_1_10",
+      "kind": "grammar"
+    },
+    "cur30_1_10_g04": {
+      "text": "他昨天没来。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_10_g04.mp3?v=28e5d7d828aa",
+      "lesson": "cur30_1_10",
+      "kind": "grammar"
+    },
+    "cur30_1_10_d01": {
+      "text": "阿兰，你会说汉语吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_10_d01.mp3?v=0f8711e7497b",
+      "lesson": "cur30_1_10",
+      "kind": "dialogue"
+    },
+    "cur30_1_10_d02": {
+      "text": "我会说一点儿，可是不会写汉字。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_10_d02.mp3?v=723af5a108ad",
+      "lesson": "cur30_1_10",
+      "kind": "dialogue"
+    },
+    "cur30_1_10_d03": {
+      "text": "汉字很难，我也写得不好。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_10_d03.mp3?v=4f93a3821bcf",
+      "lesson": "cur30_1_10",
+      "kind": "dialogue"
+    },
+    "cur30_1_10_d04": {
+      "text": "我可以用你的电脑吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_10_d04.mp3?v=763aab5058a0",
+      "lesson": "cur30_1_10",
+      "kind": "dialogue"
+    },
+    "cur30_1_10_d05": {
+      "text": "可以。你想做什么？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_10_d05.mp3?v=a9afe4cab80b",
+      "lesson": "cur30_1_10",
+      "kind": "dialogue"
+    },
+    "cur30_1_10_d06": {
+      "text": "我想听中文歌。昨天我没听。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_10_d06.mp3?v=8031e9c51bec",
+      "lesson": "cur30_1_10",
+      "kind": "dialogue"
+    },
+    "cur30_1_11_g02": {
+      "text": "这个菜太好吃了！",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_11_g02.mp3?v=e27aadb054f7",
+      "lesson": "cur30_1_11",
+      "kind": "grammar"
+    },
+    "cur30_1_11_g03": {
+      "text": "明天天气怎么样？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_11_g03.mp3?v=027e5ab108f5",
+      "lesson": "cur30_1_11",
+      "kind": "grammar"
+    },
+    "cur30_1_11_g04": {
+      "text": "我们去喝茶，怎么样？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_11_g04.mp3?v=6010240ad2c3",
+      "lesson": "cur30_1_11",
+      "kind": "grammar"
+    },
+    "cur30_1_11_d02": {
+      "text": "今天很冷，外面下雨了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_11_d02.mp3?v=20bad85dfa92",
+      "lesson": "cur30_1_11",
+      "kind": "dialogue"
+    },
+    "cur30_1_11_d03": {
+      "text": "明天呢？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_11_d03.mp3?v=08bec27a59f7",
+      "lesson": "cur30_1_11",
+      "kind": "dialogue"
+    },
+    "cur30_1_11_d04": {
+      "text": "明天是晴天，不太冷。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_11_d04.mp3?v=1ad71a1d473c",
+      "lesson": "cur30_1_11",
+      "kind": "dialogue"
+    },
+    "cur30_1_11_d05": {
+      "text": "太好了！明天我们去公园，怎么样？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_11_d05.mp3?v=d02f735fa8b1",
+      "lesson": "cur30_1_11",
+      "kind": "dialogue"
+    },
+    "cur30_1_11_d06": {
+      "text": "好啊！",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_11_d06.mp3?v=f8cebd022580",
+      "lesson": "cur30_1_11",
+      "kind": "dialogue"
+    },
+    "cur30_1_12_g02": {
+      "text": "他去商店了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_12_g02.mp3?v=47ed59a24767",
+      "lesson": "cur30_1_12",
+      "kind": "grammar"
+    },
+    "cur30_1_12_g03": {
+      "text": "妈妈在做饭呢。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_12_g03.mp3?v=e5cb7c20b813",
+      "lesson": "cur30_1_12",
+      "kind": "grammar"
+    },
+    "cur30_1_12_g04": {
+      "text": "你在看什么？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_12_g04.mp3?v=edfb36b8c560",
+      "lesson": "cur30_1_12",
+      "kind": "grammar"
+    },
+    "cur30_1_12_d01": {
+      "text": "你在做什么呢？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_12_d01.mp3?v=5644e8ea760c",
+      "lesson": "cur30_1_12",
+      "kind": "dialogue"
+    },
+    "cur30_1_12_d02": {
+      "text": "我在看我昨天买的衣服。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_12_d02.mp3?v=3bf042b0a9f4",
+      "lesson": "cur30_1_12",
+      "kind": "dialogue"
+    },
+    "cur30_1_12_d03": {
+      "text": "你买了几件？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_12_d03.mp3?v=dc253f3aa8d3",
+      "lesson": "cur30_1_12",
+      "kind": "dialogue"
+    },
+    "cur30_1_12_d04": {
+      "text": "我买了三件，都很便宜。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_12_d04.mp3?v=985767fdef41",
+      "lesson": "cur30_1_12",
+      "kind": "dialogue"
+    },
+    "cur30_1_12_d05": {
+      "text": "你在哪儿买的？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_12_d05.mp3?v=82bb863c89c0",
+      "lesson": "cur30_1_12",
+      "kind": "dialogue"
+    },
+    "cur30_1_12_d06": {
+      "text": "在学校前面的商店。你去了吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_12_d06.mp3?v=b092714c5546",
+      "lesson": "cur30_1_12",
+      "kind": "dialogue"
+    },
+    "cur30_1_12_d07": {
+      "text": "我没去，明天我也想去看看。",
+      "url": "database/prebuilt_audio/curriculum/cur30_1_12_d07.mp3?v=5b42164dbf1c",
+      "lesson": "cur30_1_12",
+      "kind": "dialogue"
+    },
+    "cur30_2_01_g01": {
+      "text": "我去过长城。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_01_g01.mp3?v=15ba776ecc4e",
+      "lesson": "cur30_2_01",
+      "kind": "grammar"
+    },
+    "cur30_2_01_g02": {
+      "text": "他没吃过越南菜。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_01_g02.mp3?v=b29ee7bc93e8",
+      "lesson": "cur30_2_01",
+      "kind": "grammar"
+    },
+    "cur30_2_01_g03": {
+      "text": "我去过两次北京。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_01_g03.mp3?v=1e640106b8e8",
+      "lesson": "cur30_2_01",
+      "kind": "grammar"
+    },
+    "cur30_2_01_d01": {
+      "text": "王明，你去过长城吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_01_d01.mp3?v=09846e8d9cf9",
+      "lesson": "cur30_2_01",
+      "kind": "dialogue"
+    },
+    "cur30_2_01_d02": {
+      "text": "去过，我去过三次。你呢？",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_01_d02.mp3?v=85ef7fd6d0a2",
+      "lesson": "cur30_2_01",
+      "kind": "dialogue"
+    },
+    "cur30_2_01_d03": {
+      "text": "我还没去过。从这儿到长城远吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_01_d03.mp3?v=3864591f849e",
+      "lesson": "cur30_2_01",
+      "kind": "dialogue"
+    },
+    "cur30_2_01_d04": {
+      "text": "不太远，坐车两个小时就到了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_01_d04.mp3?v=3f1f01c47339",
+      "lesson": "cur30_2_01",
+      "kind": "dialogue"
+    },
+    "cur30_2_01_d05": {
+      "text": "这个星期六你有时间吗？我们一起去吧。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_01_d05.mp3?v=6e36bc876ef4",
+      "lesson": "cur30_2_01",
+      "kind": "dialogue"
+    },
+    "cur30_2_01_d06": {
+      "text": "好啊，我再去一次！",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_01_d06.mp3?v=89a2cb7c48f0",
+      "lesson": "cur30_2_01",
+      "kind": "dialogue"
+    },
+    "cur30_2_02_g01": {
+      "text": "她比我高一点儿。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_02_g01.mp3?v=8bcb087dc3af",
+      "lesson": "cur30_2_02",
+      "kind": "grammar"
+    },
+    "cur30_2_02_g02": {
+      "text": "今天比昨天冷多了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_02_g02.mp3?v=12b4b1ca862d",
+      "lesson": "cur30_2_02",
+      "kind": "grammar"
+    },
+    "cur30_2_02_g03": {
+      "text": "我没有她那么高。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_02_g03.mp3?v=03137e58f5ab",
+      "lesson": "cur30_2_02",
+      "kind": "grammar"
+    },
+    "cur30_2_02_g04": {
+      "text": "这个房间没有那个大。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_02_g04.mp3?v=16edaf186d0c",
+      "lesson": "cur30_2_02",
+      "kind": "grammar"
+    },
+    "cur30_2_02_g05": {
+      "text": "她是我们班最高的学生。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_02_g05.mp3?v=bcce8ea6c29b",
+      "lesson": "cur30_2_02",
+      "kind": "grammar"
+    },
+    "cur30_2_02_g06": {
+      "text": "坐飞机更快。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_02_g06.mp3?v=bdbbd932446d",
+      "lesson": "cur30_2_02",
+      "kind": "grammar"
+    },
+    "cur30_2_02_d01": {
+      "text": "这是你妹妹吗？她真高！",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_02_d01.mp3?v=eb802be614ff",
+      "lesson": "cur30_2_02",
+      "kind": "dialogue"
+    },
+    "cur30_2_02_d02": {
+      "text": "对，她比我小两岁，可是比我高一点儿。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_02_d02.mp3?v=1dd5d05ba70e",
+      "lesson": "cur30_2_02",
+      "kind": "dialogue"
+    },
+    "cur30_2_02_d03": {
+      "text": "你们家谁最高？",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_02_d03.mp3?v=f799d0194dec",
+      "lesson": "cur30_2_02",
+      "kind": "dialogue"
+    },
+    "cur30_2_02_d04": {
+      "text": "我爸爸最高。我没有妹妹那么高。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_02_d04.mp3?v=ce1b04b9ce09",
+      "lesson": "cur30_2_02",
+      "kind": "dialogue"
+    },
+    "cur30_2_02_d05": {
+      "text": "她喜欢运动吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_02_d05.mp3?v=2f26fc463979",
+      "lesson": "cur30_2_02",
+      "kind": "dialogue"
+    },
+    "cur30_2_02_d06": {
+      "text": "很喜欢，她每天去打篮球。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_02_d06.mp3?v=175da27af1f6",
+      "lesson": "cur30_2_02",
+      "kind": "dialogue"
+    },
+    "cur30_2_03_g01": {
+      "text": "你汉语说得很好。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_03_g01.mp3?v=4ab72f85a7c7",
+      "lesson": "cur30_2_03",
+      "kind": "grammar"
+    },
+    "cur30_2_03_g02": {
+      "text": "他跑得不快。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_03_g02.mp3?v=f701cb4a75ba",
+      "lesson": "cur30_2_03",
+      "kind": "grammar"
+    },
+    "cur30_2_03_g03": {
+      "text": "你看看这本书。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_03_g03.mp3?v=ac5eb17acdae",
+      "lesson": "cur30_2_03",
+      "kind": "grammar"
+    },
+    "cur30_2_03_g04": {
+      "text": "我们休息休息吧。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_03_g04.mp3?v=99eb307bc17b",
+      "lesson": "cur30_2_03",
+      "kind": "grammar"
+    },
+    "cur30_2_03_d01": {
+      "text": "阿兰，你汉语说得很好！",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_03_d01.mp3?v=dd0b4c964e61",
+      "lesson": "cur30_2_03",
+      "kind": "dialogue"
+    },
+    "cur30_2_03_d02": {
+      "text": "谢谢老师！可是我写得不太好。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_03_d02.mp3?v=78bbaf5acbee",
+      "lesson": "cur30_2_03",
+      "kind": "dialogue"
+    },
+    "cur30_2_03_d03": {
+      "text": "你每天写多长时间汉字？",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_03_d03.mp3?v=4eaccd17d184",
+      "lesson": "cur30_2_03",
+      "kind": "dialogue"
+    },
+    "cur30_2_03_d04": {
+      "text": "半个小时。老师，您看看我的作业，好吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_03_d04.mp3?v=92326e63d9f3",
+      "lesson": "cur30_2_03",
+      "kind": "dialogue"
+    },
+    "cur30_2_03_d05": {
+      "text": "写得不错，比上个星期好多了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_03_d05.mp3?v=0a459a99c8a0",
+      "lesson": "cur30_2_03",
+      "kind": "dialogue"
+    },
+    "cur30_2_03_d06": {
+      "text": "太好了，我会继续努力的。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_03_d06.mp3?v=08bfac82cb14",
+      "lesson": "cur30_2_03",
+      "kind": "dialogue"
+    },
+    "cur30_2_04_g01": {
+      "text": "我是坐地铁来的。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_04_g01.mp3?v=bb4a22d88fed",
+      "lesson": "cur30_2_04",
+      "kind": "grammar"
+    },
+    "cur30_2_04_g02": {
+      "text": "你是什么时候到北京的？",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_04_g02.mp3?v=dc26880009b2",
+      "lesson": "cur30_2_04",
+      "kind": "grammar"
+    },
+    "cur30_2_04_g03": {
+      "text": "我家离公司很远。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_04_g03.mp3?v=2f544cd15edb",
+      "lesson": "cur30_2_04",
+      "kind": "grammar"
+    },
+    "cur30_2_04_g04": {
+      "text": "离考试还有三天。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_04_g04.mp3?v=15ed07b35f79",
+      "lesson": "cur30_2_04",
+      "kind": "grammar"
+    },
+    "cur30_2_04_d01": {
+      "text": "大卫，你今天是怎么来的？",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_04_d01.mp3?v=a5ee71636d78",
+      "lesson": "cur30_2_04",
+      "kind": "dialogue"
+    },
+    "cur30_2_04_d02": {
+      "text": "你家离学校远吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_04_d02.mp3?v=f34df30b5d2f",
+      "lesson": "cur30_2_04",
+      "kind": "dialogue"
+    },
+    "cur30_2_04_d03": {
+      "text": "有点儿远，坐地铁要四十分钟。你呢？",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_04_d03.mp3?v=0bdc71ddba18",
+      "lesson": "cur30_2_04",
+      "kind": "dialogue"
+    },
+    "cur30_2_04_d04": {
+      "text": "我家很近，我是走路来的。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_04_d04.mp3?v=7893375cffe2",
+      "lesson": "cur30_2_04",
+      "kind": "dialogue"
+    },
+    "cur30_2_04_d05": {
+      "text": "真好，早上你可以多睡一会儿。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_04_d05.mp3?v=586ac9c971d4",
+      "lesson": "cur30_2_04",
+      "kind": "dialogue"
+    },
+    "cur30_2_05_g01": {
+      "text": "门开着呢。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_05_g01.mp3?v=930f92a3f363",
+      "lesson": "cur30_2_05",
+      "kind": "grammar"
+    },
+    "cur30_2_05_g02": {
+      "text": "桌子上放着一本书。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_05_g02.mp3?v=5da460381f58",
+      "lesson": "cur30_2_05",
+      "kind": "grammar"
+    },
+    "cur30_2_05_g03": {
+      "text": "他一边吃饭，一边看电视。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_05_g03.mp3?v=5a59185cdc75",
+      "lesson": "cur30_2_05",
+      "kind": "grammar"
+    },
+    "cur30_2_05_g04": {
+      "text": "我们一边走一边聊吧。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_05_g04.mp3?v=c5a8b9f5b49f",
+      "lesson": "cur30_2_05",
+      "kind": "grammar"
+    },
+    "cur30_2_05_d01": {
+      "text": "小林，你在家吗？门开着呢。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_05_d01.mp3?v=011aa6859a57",
+      "lesson": "cur30_2_05",
+      "kind": "dialogue"
+    },
+    "cur30_2_05_d02": {
+      "text": "在！进来吧，我正在做饭呢。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_05_d02.mp3?v=b318fa4302be",
+      "lesson": "cur30_2_05",
+      "kind": "dialogue"
+    },
+    "cur30_2_05_d03": {
+      "text": "你一边做饭一边听音乐啊。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_05_d03.mp3?v=93b889954a73",
+      "lesson": "cur30_2_05",
+      "kind": "dialogue"
+    },
+    "cur30_2_05_d04": {
+      "text": "对，这样做饭很快乐。你坐吧，桌子上放着水果。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_05_d04.mp3?v=242e5f3b9996",
+      "lesson": "cur30_2_05",
+      "kind": "dialogue"
+    },
+    "cur30_2_05_d05": {
+      "text": "谢谢。你的猫在椅子上睡着呢。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_05_d05.mp3?v=a3eeb2ab9a7e",
+      "lesson": "cur30_2_05",
+      "kind": "dialogue"
+    },
+    "cur30_2_05_d06": {
+      "text": "它每天都睡十几个小时。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_05_d06.mp3?v=84fcab82f1a3",
+      "lesson": "cur30_2_05",
+      "kind": "dialogue"
+    },
+    "cur30_2_06_g01": {
+      "text": "老师说的话我听懂了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_06_g01.mp3?v=bfba4708e60a",
+      "lesson": "cur30_2_06",
+      "kind": "grammar"
+    },
+    "cur30_2_06_g03": {
+      "text": "他七点就来了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_06_g03.mp3?v=f1bd099809f7",
+      "lesson": "cur30_2_06",
+      "kind": "grammar"
+    },
+    "cur30_2_06_g04": {
+      "text": "我十一点才睡觉。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_06_g04.mp3?v=b23944025383",
+      "lesson": "cur30_2_06",
+      "kind": "grammar"
+    },
+    "cur30_2_06_d01": {
+      "text": "大家听懂了吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_06_d01.mp3?v=119fefded328",
+      "lesson": "cur30_2_06",
+      "kind": "dialogue"
+    },
+    "cur30_2_06_d02": {
+      "text": "老师，我没听懂最后一句话。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_06_d02.mp3?v=3b5692c975f6",
+      "lesson": "cur30_2_06",
+      "kind": "dialogue"
+    },
+    "cur30_2_06_d03": {
+      "text": "好，我再说一遍。现在呢？",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_06_d03.mp3?v=a12a36032c54",
+      "lesson": "cur30_2_06",
+      "kind": "dialogue"
+    },
+    "cur30_2_06_d04": {
+      "text": "现在听懂了，谢谢老师！",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_06_d04.mp3?v=ad918e25d5eb",
+      "lesson": "cur30_2_06",
+      "kind": "dialogue"
+    },
+    "cur30_2_06_d05": {
+      "text": "作业都写完了吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_06_d05.mp3?v=08abc3fc732c",
+      "lesson": "cur30_2_06",
+      "kind": "dialogue"
+    },
+    "cur30_2_06_d06": {
+      "text": "我写完了。大卫昨天十二点才睡觉，还没写完。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_06_d06.mp3?v=a0eddda23fd8",
+      "lesson": "cur30_2_06",
+      "kind": "dialogue"
+    },
+    "cur30_2_07_g01": {
+      "text": "因为下雨，所以我没去公园。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_07_g01.mp3?v=6538d1a1ef2b",
+      "lesson": "cur30_2_07",
+      "kind": "grammar"
+    },
+    "cur30_2_07_g02": {
+      "text": "他没来上课，因为他生病了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_07_g02.mp3?v=ef5e77b5e07e",
+      "lesson": "cur30_2_07",
+      "kind": "grammar"
+    },
+    "cur30_2_07_g03": {
+      "text": "火车要开了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_07_g03.mp3?v=438112ac9cfd",
+      "lesson": "cur30_2_07",
+      "kind": "grammar"
+    },
+    "cur30_2_07_g04": {
+      "text": "下个月我就要回国了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_07_g04.mp3?v=7215371d87d9",
+      "lesson": "cur30_2_07",
+      "kind": "grammar"
+    },
+    "cur30_2_07_d01": {
+      "text": "王明，你昨天为什么没去爬山？",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_07_d01.mp3?v=229b9e375b36",
+      "lesson": "cur30_2_07",
+      "kind": "dialogue"
+    },
+    "cur30_2_07_d02": {
+      "text": "因为下雨，所以我在家看书了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_07_d02.mp3?v=e6f3571a53e6",
+      "lesson": "cur30_2_07",
+      "kind": "dialogue"
+    },
+    "cur30_2_07_d03": {
+      "text": "我们这个星期天再去，怎么样？",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_07_d03.mp3?v=6214f66e98c8",
+      "lesson": "cur30_2_07",
+      "kind": "dialogue"
+    },
+    "cur30_2_07_d04": {
+      "text": "这个星期天不行，我妈妈要来北京了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_07_d04.mp3?v=63332b9e2a1b",
+      "lesson": "cur30_2_07",
+      "kind": "dialogue"
+    },
+    "cur30_2_07_d05": {
+      "text": "那下个星期吧。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_07_d05.mp3?v=9e4cb1b4753e",
+      "lesson": "cur30_2_07",
+      "kind": "dialogue"
+    },
+    "cur30_2_07_d06": {
+      "text": "好，下个星期天就要考试了，考完以后我们去。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_07_d06.mp3?v=fa876eaa596d",
+      "lesson": "cur30_2_07",
+      "kind": "dialogue"
+    },
+    "cur30_2_08_g01": {
+      "text": "天气越来越热了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_08_g01.mp3?v=af7d1c3e41c9",
+      "lesson": "cur30_2_08",
+      "kind": "grammar"
+    },
+    "cur30_2_08_g02": {
+      "text": "我越来越喜欢学汉语了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_08_g02.mp3?v=6bce9e26a05c",
+      "lesson": "cur30_2_08",
+      "kind": "grammar"
+    },
+    "cur30_2_08_g03": {
+      "text": "夏天到了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_08_g03.mp3?v=0aad6fabd76e",
+      "lesson": "cur30_2_08",
+      "kind": "grammar"
+    },
+    "cur30_2_08_g04": {
+      "text": "我现在不喝咖啡了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_08_g04.mp3?v=ed5cc56359fe",
+      "lesson": "cur30_2_08",
+      "kind": "grammar"
+    },
+    "cur30_2_08_d01": {
+      "text": "五月了，天气越来越热了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_08_d01.mp3?v=7a8c55b024a7",
+      "lesson": "cur30_2_08",
+      "kind": "dialogue"
+    },
+    "cur30_2_08_d02": {
+      "text": "是啊，北京的夏天热吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_08_d02.mp3?v=b1f0b5eda0fd",
+      "lesson": "cur30_2_08",
+      "kind": "dialogue"
+    },
+    "cur30_2_08_d03": {
+      "text": "很热，可是没有河内那么热。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_08_d03.mp3?v=3c79a4d73714",
+      "lesson": "cur30_2_08",
+      "kind": "dialogue"
+    },
+    "cur30_2_08_d04": {
+      "text": "你最喜欢哪个季节？",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_08_d04.mp3?v=5399cc945135",
+      "lesson": "cur30_2_08",
+      "kind": "dialogue"
+    },
+    "cur30_2_08_d05": {
+      "text": "我最喜欢秋天，不冷也不热。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_08_d05.mp3?v=fab8d16d91fd",
+      "lesson": "cur30_2_08",
+      "kind": "dialogue"
+    },
+    "cur30_2_08_d06": {
+      "text": "我也是。现在我越来越喜欢北京了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_08_d06.mp3?v=cf34a7c83444",
+      "lesson": "cur30_2_08",
+      "kind": "dialogue"
+    },
+    "cur30_2_09_g01": {
+      "text": "我学了两年汉语。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_09_g01.mp3?v=b717b4663152",
+      "lesson": "cur30_2_09",
+      "kind": "grammar"
+    },
+    "cur30_2_09_g02": {
+      "text": "我等了你半个小时了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_09_g02.mp3?v=433bd7997f67",
+      "lesson": "cur30_2_09",
+      "kind": "grammar"
+    },
+    "cur30_2_09_g03": {
+      "text": "我们先吃饭，然后去看电影。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_09_g03.mp3?v=227c260408a6",
+      "lesson": "cur30_2_09",
+      "kind": "grammar"
+    },
+    "cur30_2_09_g04": {
+      "text": "你先休息一下，再工作。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_09_g04.mp3?v=438e28e0c256",
+      "lesson": "cur30_2_09",
+      "kind": "grammar"
+    },
+    "cur30_2_09_d01": {
+      "text": "你汉语说得真不错，学了多长时间了？",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_09_d01.mp3?v=96300202e5c4",
+      "lesson": "cur30_2_09",
+      "kind": "dialogue"
+    },
+    "cur30_2_09_d02": {
+      "text": "我学了两年了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_09_d02.mp3?v=303d59a18dc1",
+      "lesson": "cur30_2_09",
+      "kind": "dialogue"
+    },
+    "cur30_2_09_d03": {
+      "text": "你是在越南学的还是在中国学的？",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_09_d03.mp3?v=f633bee50eed",
+      "lesson": "cur30_2_09",
+      "kind": "dialogue"
+    },
+    "cur30_2_09_d04": {
+      "text": "先在越南学了一年，然后来北京学了一年。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_09_d04.mp3?v=fa988e7a5a3e",
+      "lesson": "cur30_2_09",
+      "kind": "dialogue"
+    },
+    "cur30_2_09_d05": {
+      "text": "毕业以后你想做什么工作？",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_09_d05.mp3?v=cafc5b7e3dc9",
+      "lesson": "cur30_2_09",
+      "kind": "dialogue"
+    },
+    "cur30_2_09_d06": {
+      "text": "我想当翻译。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_09_d06.mp3?v=77e17bb22428",
+      "lesson": "cur30_2_09",
+      "kind": "dialogue"
+    },
+    "cur30_2_10_g01": {
+      "text": "我给你介绍一下。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_10_g01.mp3?v=c44fd7d130b4",
+      "lesson": "cur30_2_10",
+      "kind": "grammar"
+    },
+    "cur30_2_10_g02": {
+      "text": "运动对身体很好。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_10_g02.mp3?v=1ce04d61c96c",
+      "lesson": "cur30_2_10",
+      "kind": "grammar"
+    },
+    "cur30_2_10_g03": {
+      "text": "你喝咖啡还是喝茶？",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_10_g03.mp3?v=8c6cdbaaff34",
+      "lesson": "cur30_2_10",
+      "kind": "grammar"
+    },
+    "cur30_2_10_g04": {
+      "text": "星期六或者星期天都可以。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_10_g04.mp3?v=2223374872c2",
+      "lesson": "cur30_2_10",
+      "kind": "grammar"
+    },
+    "cur30_2_10_d01": {
+      "text": "张经理，我给您介绍一下，这是我的同学大卫。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_10_d01.mp3?v=61757bccb604",
+      "lesson": "cur30_2_10",
+      "kind": "dialogue"
+    },
+    "cur30_2_10_d02": {
+      "text": "你好！欢迎你来我们公司。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_10_d02.mp3?v=817b93348684",
+      "lesson": "cur30_2_10",
+      "kind": "dialogue"
+    },
+    "cur30_2_10_d03": {
+      "text": "您好！我对这个工作很感兴趣。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_10_d03.mp3?v=7042db7c41c3",
+      "lesson": "cur30_2_10",
+      "kind": "dialogue"
+    },
+    "cur30_2_10_d04": {
+      "text": "你什么时候可以开始上班？",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_10_d04.mp3?v=d15372ddbcdd",
+      "lesson": "cur30_2_10",
+      "kind": "dialogue"
+    },
+    "cur30_2_10_d05": {
+      "text": "下个星期一或者星期二都可以。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_10_d05.mp3?v=169bc924e657",
+      "lesson": "cur30_2_10",
+      "kind": "dialogue"
+    },
+    "cur30_2_10_d06": {
+      "text": "好，星期一见。有问题可以给我打电话。",
+      "url": "database/prebuilt_audio/curriculum/cur30_2_10_d06.mp3?v=c497aeac03eb",
+      "lesson": "cur30_2_10",
+      "kind": "dialogue"
+    },
+    "cur30_3_01_g02": {
+      "text": "我把手机放在桌子上了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_01_g02.mp3?v=9aa7db9c08d2",
+      "lesson": "cur30_3_01",
+      "kind": "grammar"
+    },
+    "cur30_3_01_g03": {
+      "text": "他把书放回去了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_01_g03.mp3?v=0a30982ff67f",
+      "lesson": "cur30_3_01",
+      "kind": "grammar"
+    },
+    "cur30_3_01_g04": {
+      "text": "你快把衣服穿上。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_01_g04.mp3?v=767b63c66e3b",
+      "lesson": "cur30_3_01",
+      "kind": "grammar"
+    },
+    "cur30_3_01_d01": {
+      "text": "小林，外面刮风了，请把窗户关上。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_01_d01.mp3?v=52fb0fabba81",
+      "lesson": "cur30_3_01",
+      "kind": "dialogue"
+    },
+    "cur30_3_01_d02": {
+      "text": "好的。妈妈，我的钥匙呢？",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_01_d02.mp3?v=e02255269bd5",
+      "lesson": "cur30_3_01",
+      "kind": "dialogue"
+    },
+    "cur30_3_01_d03": {
+      "text": "我把它放在冰箱上面了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_01_d03.mp3?v=666c5e07ed46",
+      "lesson": "cur30_3_01",
+      "kind": "dialogue"
+    },
+    "cur30_3_01_d04": {
+      "text": "找到了。我出去一下，把这些垃圾拿下去。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_01_d04.mp3?v=3d117a95d3a2",
+      "lesson": "cur30_3_01",
+      "kind": "dialogue"
+    },
+    "cur30_3_01_d05": {
+      "text": "回来的时候把牛奶买回来，好吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_01_d05.mp3?v=a0a1959c7f95",
+      "lesson": "cur30_3_01",
+      "kind": "dialogue"
+    },
+    "cur30_3_01_d06": {
+      "text": "没问题！",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_01_d06.mp3?v=9a417a6d429c",
+      "lesson": "cur30_3_01",
+      "kind": "dialogue"
+    },
+    "cur30_3_02_g01": {
+      "text": "我的自行车被朋友借走了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_02_g01.mp3?v=09fbf5018107",
+      "lesson": "cur30_3_02",
+      "kind": "grammar"
+    },
+    "cur30_3_02_g02": {
+      "text": "蛋糕被弟弟吃完了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_02_g02.mp3?v=6dd9a5ea7f5d",
+      "lesson": "cur30_3_02",
+      "kind": "grammar"
+    },
+    "cur30_3_02_g03": {
+      "text": "我写错了一个字。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_02_g03.mp3?v=544749e5093e",
+      "lesson": "cur30_3_02",
+      "kind": "grammar"
+    },
+    "cur30_3_02_g04": {
+      "text": "电脑被我用坏了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_02_g04.mp3?v=56d1671f6501",
+      "lesson": "cur30_3_02",
+      "kind": "grammar"
+    },
+    "cur30_3_02_d01": {
+      "text": "你怎么走路来上课了？",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_02_d01.mp3?v=80161761223e",
+      "lesson": "cur30_3_02",
+      "kind": "dialogue"
+    },
+    "cur30_3_02_d02": {
+      "text": "我的自行车被我哥哥骑走了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_02_d02.mp3?v=3a5ed1f196be",
+      "lesson": "cur30_3_02",
+      "kind": "dialogue"
+    },
+    "cur30_3_02_d03": {
+      "text": "那你的电动车呢？",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_02_d03.mp3?v=176e79546537",
+      "lesson": "cur30_3_02",
+      "kind": "dialogue"
+    },
+    "cur30_3_02_d04": {
+      "text": "上个星期被我弄坏了，还没修好。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_02_d04.mp3?v=dead5b51e3c7",
+      "lesson": "cur30_3_02",
+      "kind": "dialogue"
+    },
+    "cur30_3_02_d05": {
+      "text": "真不巧。下课以后我送你回家吧。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_02_d05.mp3?v=d81dbfaa5205",
+      "lesson": "cur30_3_02",
+      "kind": "dialogue"
+    },
+    "cur30_3_02_d06": {
+      "text": "太感谢了！",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_02_d06.mp3?v=33d8854c6d47",
+      "lesson": "cur30_3_02",
+      "kind": "dialogue"
+    },
+    "cur30_3_03_g01": {
+      "text": "黑板上的字你看得清楚吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_03_g01.mp3?v=fb12c1ca2888",
+      "lesson": "cur30_3_03",
+      "kind": "grammar"
+    },
+    "cur30_3_03_g02": {
+      "text": "他说得太快，我听不懂。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_03_g02.mp3?v=df1c0cd86642",
+      "lesson": "cur30_3_03",
+      "kind": "grammar"
+    },
+    "cur30_3_03_g03": {
+      "text": "他从教室里走出来了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_03_g03.mp3?v=2a7cb78d0693",
+      "lesson": "cur30_3_03",
+      "kind": "grammar"
+    },
+    "cur30_3_03_g04": {
+      "text": "请把书拿过来。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_03_g04.mp3?v=4fbfe11bd7d2",
+      "lesson": "cur30_3_03",
+      "kind": "grammar"
+    },
+    "cur30_3_03_d01": {
+      "text": "后面的同学，黑板上的字你们看得清楚吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_03_d01.mp3?v=738bc2c248a6",
+      "lesson": "cur30_3_03",
+      "kind": "dialogue"
+    },
+    "cur30_3_03_d02": {
+      "text": "老师，我看不清楚。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_03_d02.mp3?v=f676232660e7",
+      "lesson": "cur30_3_03",
+      "kind": "dialogue"
+    },
+    "cur30_3_03_d03": {
+      "text": "那你坐到前面来吧。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_03_d03.mp3?v=5e7b27183fd3",
+      "lesson": "cur30_3_03",
+      "kind": "dialogue"
+    },
+    "cur30_3_03_d04": {
+      "text": "好。老师，这个问题太难了，我做不出来。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_03_d04.mp3?v=addfa300b99e",
+      "lesson": "cur30_3_03",
+      "kind": "dialogue"
+    },
+    "cur30_3_03_d05": {
+      "text": "别着急，先想想我们上节课学过的词。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_03_d05.mp3?v=fd6c68f5f068",
+      "lesson": "cur30_3_03",
+      "kind": "dialogue"
+    },
+    "cur30_3_03_d06": {
+      "text": "我想起来了！谢谢老师。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_03_d06.mp3?v=965c884e39f9",
+      "lesson": "cur30_3_03",
+      "kind": "dialogue"
+    },
+    "cur30_3_04_g01": {
+      "text": "虽然很累，但是我很开心。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_04_g01.mp3?v=a334a0235a3b",
+      "lesson": "cur30_3_04",
+      "kind": "grammar"
+    },
+    "cur30_3_04_g02": {
+      "text": "他虽然很忙，可是每天都运动。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_04_g02.mp3?v=5ece06abab66",
+      "lesson": "cur30_3_04",
+      "kind": "grammar"
+    },
+    "cur30_3_04_g03": {
+      "text": "这家饭店的菜又便宜又好吃。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_04_g03.mp3?v=7fb929952789",
+      "lesson": "cur30_3_04",
+      "kind": "grammar"
+    },
+    "cur30_3_04_g04": {
+      "text": "今天又冷又刮风。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_04_g04.mp3?v=2ed7a0e98845",
+      "lesson": "cur30_3_04",
+      "kind": "grammar"
+    },
+    "cur30_3_04_d01": {
+      "text": "周末你去哪儿了？",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_04_d01.mp3?v=bcbf8430d964",
+      "lesson": "cur30_3_04",
+      "kind": "dialogue"
+    },
+    "cur30_3_04_d02": {
+      "text": "我和朋友去爬山了。山很高，路又长又难走。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_04_d02.mp3?v=dfda299c20ac",
+      "lesson": "cur30_3_04",
+      "kind": "dialogue"
+    },
+    "cur30_3_04_d03": {
+      "text": "累不累？",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_04_d03.mp3?v=1e35579d7974",
+      "lesson": "cur30_3_04",
+      "kind": "dialogue"
+    },
+    "cur30_3_04_d04": {
+      "text": "虽然很累，但是很开心。山上的风景特别漂亮。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_04_d04.mp3?v=58f38fe5fb00",
+      "lesson": "cur30_3_04",
+      "kind": "dialogue"
+    },
+    "cur30_3_04_d05": {
+      "text": "下次也叫上我吧！",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_04_d05.mp3?v=e78e6aa1e937",
+      "lesson": "cur30_3_04",
+      "kind": "dialogue"
+    },
+    "cur30_3_04_d06": {
+      "text": "好啊，我们又可以一起照相了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_04_d06.mp3?v=2ffcbd7e401a",
+      "lesson": "cur30_3_04",
+      "kind": "dialogue"
+    },
+    "cur30_3_05_g01": {
+      "text": "只要努力，你就一定能学好汉语。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_05_g01.mp3?v=8f357e591a44",
+      "lesson": "cur30_3_05",
+      "kind": "grammar"
+    },
+    "cur30_3_05_g02": {
+      "text": "只要有时间，我就去看你。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_05_g02.mp3?v=93c682a54be3",
+      "lesson": "cur30_3_05",
+      "kind": "grammar"
+    },
+    "cur30_3_05_g03": {
+      "text": "如果明天下雨，我们就不去了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_05_g03.mp3?v=c25b3da3dd05",
+      "lesson": "cur30_3_05",
+      "kind": "grammar"
+    },
+    "cur30_3_05_g04": {
+      "text": "如果你有问题，就问老师。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_05_g04.mp3?v=9bc191c9156f",
+      "lesson": "cur30_3_05",
+      "kind": "grammar"
+    },
+    "cur30_3_05_d01": {
+      "text": "老师，我的汉语水平提高得太慢了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_05_d01.mp3?v=4a0d4f4489d2",
+      "lesson": "cur30_3_05",
+      "kind": "dialogue"
+    },
+    "cur30_3_05_d02": {
+      "text": "别担心。只要每天练习，就一定能学好。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_05_d02.mp3?v=7963dce339d7",
+      "lesson": "cur30_3_05",
+      "kind": "dialogue"
+    },
+    "cur30_3_05_d03": {
+      "text": "如果我听不懂中国人说话，怎么办？",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_05_d03.mp3?v=36fdcdc0e493",
+      "lesson": "cur30_3_05",
+      "kind": "dialogue"
+    },
+    "cur30_3_05_d04": {
+      "text": "你可以请他们说得慢一点儿。多听多说就会越来越好。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_05_d04.mp3?v=24208d893757",
+      "lesson": "cur30_3_05",
+      "kind": "dialogue"
+    },
+    "cur30_3_05_d05": {
+      "text": "我明白了，我会努力的。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_05_d05.mp3?v=e0a6993baf46",
+      "lesson": "cur30_3_05",
+      "kind": "dialogue"
+    },
+    "cur30_3_06_g01": {
+      "text": "这个故事连小孩子都知道。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_06_g01.mp3?v=944502c374a1",
+      "lesson": "cur30_3_06",
+      "kind": "grammar"
+    },
+    "cur30_3_06_g02": {
+      "text": "他忙得连饭都没吃。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_06_g02.mp3?v=dee7619accd6",
+      "lesson": "cur30_3_06",
+      "kind": "grammar"
+    },
+    "cur30_3_06_g03": {
+      "text": "我一点儿也不累。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_06_g03.mp3?v=4c9cb9193031",
+      "lesson": "cur30_3_06",
+      "kind": "grammar"
+    },
+    "cur30_3_06_g04": {
+      "text": "教室里一个人都没有。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_06_g04.mp3?v=dfff65b43763",
+      "lesson": "cur30_3_06",
+      "kind": "grammar"
+    },
+    "cur30_3_06_d01": {
+      "text": "春节的时候中国人做什么？",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_06_d01.mp3?v=ebfb406a733e",
+      "lesson": "cur30_3_06",
+      "kind": "dialogue"
+    },
+    "cur30_3_06_d02": {
+      "text": "全家人一起吃饭，还要包饺子。这个连小孩子都知道。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_06_d02.mp3?v=c269a4da9476",
+      "lesson": "cur30_3_06",
+      "kind": "dialogue"
+    },
+    "cur30_3_06_d03": {
+      "text": "我一次也没包过饺子。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_06_d03.mp3?v=0cefb2b850cf",
+      "lesson": "cur30_3_06",
+      "kind": "dialogue"
+    },
+    "cur30_3_06_d04": {
+      "text": "一点儿也不难，今年你来我家，我教你。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_06_d04.mp3?v=88170fca1a0c",
+      "lesson": "cur30_3_06",
+      "kind": "dialogue"
+    },
+    "cur30_3_06_d05": {
+      "text": "真的吗？太好了！",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_06_d05.mp3?v=0116ed42526a",
+      "lesson": "cur30_3_06",
+      "kind": "dialogue"
+    },
+    "cur30_3_07_g01": {
+      "text": "除了游泳以外，我还喜欢跑步。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_07_g01.mp3?v=9b298e70325e",
+      "lesson": "cur30_3_07",
+      "kind": "grammar"
+    },
+    "cur30_3_07_g02": {
+      "text": "除了大卫，大家都来了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_07_g02.mp3?v=ca440958dd6c",
+      "lesson": "cur30_3_07",
+      "kind": "grammar"
+    },
+    "cur30_3_07_g03": {
+      "text": "我的爱好跟你一样。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_07_g03.mp3?v=f5c2fca1afad",
+      "lesson": "cur30_3_07",
+      "kind": "grammar"
+    },
+    "cur30_3_07_g04": {
+      "text": "他跟他爸爸一样高。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_07_g04.mp3?v=d7f72839818f",
+      "lesson": "cur30_3_07",
+      "kind": "grammar"
+    },
+    "cur30_3_07_d01": {
+      "text": "你有什么爱好？",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_07_d01.mp3?v=18f186bf115b",
+      "lesson": "cur30_3_07",
+      "kind": "dialogue"
+    },
+    "cur30_3_07_d02": {
+      "text": "我喜欢游泳。除了游泳以外，我还喜欢跑步。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_07_d02.mp3?v=22bd9519a639",
+      "lesson": "cur30_3_07",
+      "kind": "dialogue"
+    },
+    "cur30_3_07_d03": {
+      "text": "我的爱好跟你一样！我每天早上都去跑步。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_07_d03.mp3?v=2cd9313b1233",
+      "lesson": "cur30_3_07",
+      "kind": "dialogue"
+    },
+    "cur30_3_07_d04": {
+      "text": "除了星期天，我每天也跑半个小时。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_07_d04.mp3?v=afdf83457e06",
+      "lesson": "cur30_3_07",
+      "kind": "dialogue"
+    },
+    "cur30_3_07_d05": {
+      "text": "那明天早上我们一起跑吧。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_07_d05.mp3?v=8af552459e72",
+      "lesson": "cur30_3_07",
+      "kind": "dialogue"
+    },
+    "cur30_3_08_g01": {
+      "text": "他一回家就睡觉了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_08_g01.mp3?v=55ca2d7b3b68",
+      "lesson": "cur30_3_08",
+      "kind": "grammar"
+    },
+    "cur30_3_08_g02": {
+      "text": "我一喝咖啡就睡不着。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_08_g02.mp3?v=76ceb96d0951",
+      "lesson": "cur30_3_08",
+      "kind": "grammar"
+    },
+    "cur30_3_08_g03": {
+      "text": "你应该多喝水。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_08_g03.mp3?v=4115c2fb9ee0",
+      "lesson": "cur30_3_08",
+      "kind": "grammar"
+    },
+    "cur30_3_08_g04": {
+      "text": "我得去医院看看。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_08_g04.mp3?v=0277b272375c",
+      "lesson": "cur30_3_08",
+      "kind": "grammar"
+    },
+    "cur30_3_08_d01": {
+      "text": "小林今天怎么了？他一回家就睡觉了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_08_d01.mp3?v=4fa1f8def717",
+      "lesson": "cur30_3_08",
+      "kind": "dialogue"
+    },
+    "cur30_3_08_d02": {
+      "text": "他感冒了，还有点儿发烧。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_08_d02.mp3?v=c5a0bc78e37b",
+      "lesson": "cur30_3_08",
+      "kind": "dialogue"
+    },
+    "cur30_3_08_d03": {
+      "text": "他应该去医院看看。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_08_d03.mp3?v=33ddb0e79b74",
+      "lesson": "cur30_3_08",
+      "kind": "dialogue"
+    },
+    "cur30_3_08_d04": {
+      "text": "我也这么说。可是他一听医院就头疼。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_08_d04.mp3?v=092e2ed17ca4",
+      "lesson": "cur30_3_08",
+      "kind": "dialogue"
+    },
+    "cur30_3_08_d05": {
+      "text": "那我们得给他买点儿药。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_08_d05.mp3?v=02c66ede8801",
+      "lesson": "cur30_3_08",
+      "kind": "dialogue"
+    },
+    "cur30_3_09_g01": {
+      "text": "为了健康，我每天锻炼身体。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_09_g01.mp3?v=f9fd29ee5b60",
+      "lesson": "cur30_3_09",
+      "kind": "grammar"
+    },
+    "cur30_3_09_g02": {
+      "text": "为了学好汉语，他来到了中国。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_09_g02.mp3?v=ec6ab419a73a",
+      "lesson": "cur30_3_09",
+      "kind": "grammar"
+    },
+    "cur30_3_09_g03": {
+      "text": "他越跑越快。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_09_g03.mp3?v=62a83a4b1b8d",
+      "lesson": "cur30_3_09",
+      "kind": "grammar"
+    },
+    "cur30_3_09_g04": {
+      "text": "这本书我越看越喜欢。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_09_g04.mp3?v=7a71b90403e9",
+      "lesson": "cur30_3_09",
+      "kind": "grammar"
+    },
+    "cur30_3_09_d01": {
+      "text": "你每天几点起床？",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_09_d01.mp3?v=87760fb261de",
+      "lesson": "cur30_3_09",
+      "kind": "dialogue"
+    },
+    "cur30_3_09_d02": {
+      "text": "六点。为了健康，我每天早上都去公园锻炼。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_09_d02.mp3?v=dda1672ab512",
+      "lesson": "cur30_3_09",
+      "kind": "dialogue"
+    },
+    "cur30_3_09_d03": {
+      "text": "起得那么早，不累吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_09_d03.mp3?v=cebc14940af4",
+      "lesson": "cur30_3_09",
+      "kind": "dialogue"
+    },
+    "cur30_3_09_d04": {
+      "text": "刚开始很累，可是越锻炼越有精神。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_09_d04.mp3?v=337095515723",
+      "lesson": "cur30_3_09",
+      "kind": "dialogue"
+    },
+    "cur30_3_09_d05": {
+      "text": "我也应该锻炼了，我最近越来越胖了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_09_d05.mp3?v=41453134856b",
+      "lesson": "cur30_3_09",
+      "kind": "dialogue"
+    },
+    "cur30_3_10_g01": {
+      "text": "墙上挂着一张地图。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_10_g01.mp3?v=5d689f0929aa",
+      "lesson": "cur30_3_10",
+      "kind": "grammar"
+    },
+    "cur30_3_10_g02": {
+      "text": "前面走过来一个人。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_10_g02.mp3?v=eb355358b752",
+      "lesson": "cur30_3_10",
+      "kind": "grammar"
+    },
+    "cur30_3_10_g03": {
+      "text": "这是一本关于中国历史的书。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_10_g03.mp3?v=f07ed9ffd30d",
+      "lesson": "cur30_3_10",
+      "kind": "grammar"
+    },
+    "cur30_3_10_g04": {
+      "text": "关于这个问题，我们明天再讨论。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_10_g04.mp3?v=1002fc547fe9",
+      "lesson": "cur30_3_10",
+      "kind": "grammar"
+    },
+    "cur30_3_10_d01": {
+      "text": "你的房间真干净！墙上挂着的是什么？",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_10_d01.mp3?v=0ec2e8f52844",
+      "lesson": "cur30_3_10",
+      "kind": "dialogue"
+    },
+    "cur30_3_10_d02": {
+      "text": "是一张中国地图。我想去很多地方旅游。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_10_d02.mp3?v=b92cf2785432",
+      "lesson": "cur30_3_10",
+      "kind": "dialogue"
+    },
+    "cur30_3_10_d03": {
+      "text": "书架上放着这么多书，都是关于什么的？",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_10_d03.mp3?v=0472f45ef0ee",
+      "lesson": "cur30_3_10",
+      "kind": "dialogue"
+    },
+    "cur30_3_10_d04": {
+      "text": "大部分是关于历史和文化的。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_10_d04.mp3?v=4aee929d2980",
+      "lesson": "cur30_3_10",
+      "kind": "dialogue"
+    },
+    "cur30_3_10_d05": {
+      "text": "我可以借一本看看吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_10_d05.mp3?v=cff3603f0134",
+      "lesson": "cur30_3_10",
+      "kind": "dialogue"
+    },
+    "cur30_3_10_d06": {
+      "text": "当然可以。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_10_d06.mp3?v=5bf836ff290b",
+      "lesson": "cur30_3_10",
+      "kind": "dialogue"
+    },
+    "cur30_3_11_g01": {
+      "text": "他不但会唱歌，而且唱得很好。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_11_g01.mp3?v=d99aa4402c5f",
+      "lesson": "cur30_3_11",
+      "kind": "grammar"
+    },
+    "cur30_3_11_g02": {
+      "text": "这里不但有山，而且有河。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_11_g02.mp3?v=8f3b7b671a2a",
+      "lesson": "cur30_3_11",
+      "kind": "grammar"
+    },
+    "cur30_3_11_g03": {
+      "text": "你不是去过北京吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_11_g03.mp3?v=4dc2c50520b5",
+      "lesson": "cur30_3_11",
+      "kind": "grammar"
+    },
+    "cur30_3_11_g04": {
+      "text": "他不是你的朋友吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_11_g04.mp3?v=f4e0670d8c07",
+      "lesson": "cur30_3_11",
+      "kind": "grammar"
+    },
+    "cur30_3_11_d01": {
+      "text": "昨天的晚会你去了吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_11_d01.mp3?v=cfe2bb59da79",
+      "lesson": "cur30_3_11",
+      "kind": "dialogue"
+    },
+    "cur30_3_11_d02": {
+      "text": "去了。大卫唱了一首中文歌，他不但会唱，而且唱得很好！",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_11_d02.mp3?v=3aa544f62f02",
+      "lesson": "cur30_3_11",
+      "kind": "dialogue"
+    },
+    "cur30_3_11_d03": {
+      "text": "你不是也会唱中文歌吗？你怎么没唱？",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_11_d03.mp3?v=b20214f3c690",
+      "lesson": "cur30_3_11",
+      "kind": "dialogue"
+    },
+    "cur30_3_11_d04": {
+      "text": "我太紧张了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_11_d04.mp3?v=0d0a9e6f3b71",
+      "lesson": "cur30_3_11",
+      "kind": "dialogue"
+    },
+    "cur30_3_11_d05": {
+      "text": "下次你一定要试试。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_11_d05.mp3?v=bb66d9fc1b26",
+      "lesson": "cur30_3_11",
+      "kind": "dialogue"
+    },
+    "cur30_3_12_g01": {
+      "text": "这件事不是他做的，而是我做的。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_12_g01.mp3?v=823061bb9b7b",
+      "lesson": "cur30_3_12",
+      "kind": "grammar"
+    },
+    "cur30_3_12_g02": {
+      "text": "我不是不想去，而是没有时间。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_12_g02.mp3?v=43165af263c9",
+      "lesson": "cur30_3_12",
+      "kind": "grammar"
+    },
+    "cur30_3_12_g03": {
+      "text": "我以为你不来了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_12_g03.mp3?v=8afc26784893",
+      "lesson": "cur30_3_12",
+      "kind": "grammar"
+    },
+    "cur30_3_12_g04": {
+      "text": "我们都以为他是老师。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_12_g04.mp3?v=c1d8044f8a69",
+      "lesson": "cur30_3_12",
+      "kind": "grammar"
+    },
+    "cur30_3_12_d01": {
+      "text": "大卫，黑板是你写的吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_12_d01.mp3?v=3928640b997d",
+      "lesson": "cur30_3_12",
+      "kind": "dialogue"
+    },
+    "cur30_3_12_d02": {
+      "text": "老师，不是我写的，而是王明写的。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_12_d02.mp3?v=6d2165cee0ed",
+      "lesson": "cur30_3_12",
+      "kind": "dialogue"
+    },
+    "cur30_3_12_d03": {
+      "text": "我以为是你写的呢，字写得很漂亮。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_12_d03.mp3?v=0eb589e503ab",
+      "lesson": "cur30_3_12",
+      "kind": "dialogue"
+    },
+    "cur30_3_12_d04": {
+      "text": "谢谢老师。我不是写得好，而是写得慢。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_12_d04.mp3?v=e1cbb3f10536",
+      "lesson": "cur30_3_12",
+      "kind": "dialogue"
+    },
+    "cur30_3_12_d05": {
+      "text": "慢一点儿没关系，写对最重要。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_12_d05.mp3?v=8f5fce4876d2",
+      "lesson": "cur30_3_12",
+      "kind": "dialogue"
+    },
+    "cur30_3_13_g01": {
+      "text": "看起来要下雨了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_13_g01.mp3?v=d30ae0cfe26a",
+      "lesson": "cur30_3_13",
+      "kind": "grammar"
+    },
+    "cur30_3_13_g02": {
+      "text": "这个主意听起来不错。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_13_g02.mp3?v=5f949fea59f6",
+      "lesson": "cur30_3_13",
+      "kind": "grammar"
+    },
+    "cur30_3_13_g03": {
+      "text": "明天会下雪吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_13_g03.mp3?v=1ad37f00f5c5",
+      "lesson": "cur30_3_13",
+      "kind": "grammar"
+    },
+    "cur30_3_13_g04": {
+      "text": "别担心，他会来的。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_13_g04.mp3?v=e8b59831a6a6",
+      "lesson": "cur30_3_13",
+      "kind": "grammar"
+    },
+    "cur30_3_13_d01": {
+      "text": "天阴了，看起来要下雨了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_13_d01.mp3?v=c8e8947de6b5",
+      "lesson": "cur30_3_13",
+      "kind": "dialogue"
+    },
+    "cur30_3_13_d02": {
+      "text": "你带伞了吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_13_d02.mp3?v=cb333c347164",
+      "lesson": "cur30_3_13",
+      "kind": "dialogue"
+    },
+    "cur30_3_13_d03": {
+      "text": "没带。早上天气那么好，我以为不会下雨。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_13_d03.mp3?v=44c6cd9c2e72",
+      "lesson": "cur30_3_13",
+      "kind": "dialogue"
+    },
+    "cur30_3_13_d04": {
+      "text": "你看，已经下起来了！我们先在这儿等一会儿吧。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_13_d04.mp3?v=c318d67bd0e6",
+      "lesson": "cur30_3_13",
+      "kind": "dialogue"
+    },
+    "cur30_3_13_d05": {
+      "text": "好，雨不会下很长时间的。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_13_d05.mp3?v=c420b190afac",
+      "lesson": "cur30_3_13",
+      "kind": "dialogue"
+    },
+    "cur30_3_14_g01": {
+      "text": "我是不是应该换个工作？",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_14_g01.mp3?v=2743d2cb004a",
+      "lesson": "cur30_3_14",
+      "kind": "grammar"
+    },
+    "cur30_3_14_g02": {
+      "text": "你是不是感冒了？",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_14_g02.mp3?v=513868905933",
+      "lesson": "cur30_3_14",
+      "kind": "grammar"
+    },
+    "cur30_3_14_g03": {
+      "text": "你明天再来吧。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_14_g03.mp3?v=756d8ab7da6b",
+      "lesson": "cur30_3_14",
+      "kind": "grammar"
+    },
+    "cur30_3_14_g04": {
+      "text": "他昨天又迟到了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_14_g04.mp3?v=2db1cd60872c",
+      "lesson": "cur30_3_14",
+      "kind": "grammar"
+    },
+    "cur30_3_14_d01": {
+      "text": "张经理，我最近工作压力很大。我是不是应该换个工作？",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_14_d01.mp3?v=1fd95c07c3ff",
+      "lesson": "cur30_3_14",
+      "kind": "dialogue"
+    },
+    "cur30_3_14_d02": {
+      "text": "别着急，你再想一想。你对现在的工作哪儿不满意？",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_14_d02.mp3?v=c8454e2fc92c",
+      "lesson": "cur30_3_14",
+      "kind": "dialogue"
+    },
+    "cur30_3_14_d03": {
+      "text": "每天都加班，这个星期我又加了三次班。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_14_d03.mp3?v=fc745f5838aa",
+      "lesson": "cur30_3_14",
+      "kind": "dialogue"
+    },
+    "cur30_3_14_d04": {
+      "text": "我们下个月会再找一个新同事，你就不会那么忙了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_14_d04.mp3?v=65ca8af8628a",
+      "lesson": "cur30_3_14",
+      "kind": "dialogue"
+    },
+    "cur30_3_14_d05": {
+      "text": "那太好了，我再试试吧。",
+      "url": "database/prebuilt_audio/curriculum/cur30_3_14_d05.mp3?v=ac3cc5a8c5a0",
+      "lesson": "cur30_3_14",
+      "kind": "dialogue"
+    },
+    "cur30_4_01_g01": {
+      "text": "无论多忙，他都坚持运动。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_01_g01.mp3?v=e0464e688115",
+      "lesson": "cur30_4_01",
+      "kind": "grammar"
+    },
+    "cur30_4_01_g02": {
+      "text": "不管刮风还是下雨，她都按时上班。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_01_g02.mp3?v=e47cfeb06140",
+      "lesson": "cur30_4_01",
+      "kind": "grammar"
+    },
+    "cur30_4_01_g03": {
+      "text": "雨一直下到晚上。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_01_g03.mp3?v=ffb9d04caf61",
+      "lesson": "cur30_4_01",
+      "kind": "grammar"
+    },
+    "cur30_4_01_g04": {
+      "text": "他总是第一个到办公室。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_01_g04.mp3?v=7368169c2243",
+      "lesson": "cur30_4_01",
+      "kind": "grammar"
+    },
+    "cur30_4_01_d01": {
+      "text": "张经理每天工作那么多，怎么还有时间跑步？",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_01_d01.mp3?v=0b0cb2e6852a",
+      "lesson": "cur30_4_01",
+      "kind": "dialogue"
+    },
+    "cur30_4_01_d02": {
+      "text": "他说无论多忙，都要坚持锻炼一个小时。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_01_d02.mp3?v=f4fb66f231cb",
+      "lesson": "cur30_4_01",
+      "kind": "dialogue"
+    },
+    "cur30_4_01_d03": {
+      "text": "真不容易。我总是说要运动，可是一直没开始。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_01_d03.mp3?v=1dbf6e3b51ab",
+      "lesson": "cur30_4_01",
+      "kind": "dialogue"
+    },
+    "cur30_4_01_d04": {
+      "text": "不管做什么，开始最难。明天我们一起去吧。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_01_d04.mp3?v=9fcf5280bac0",
+      "lesson": "cur30_4_01",
+      "kind": "dialogue"
+    },
+    "cur30_4_02_g01": {
+      "text": "即使失败了，也不要放弃。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_02_g01.mp3?v=a65f02874de8",
+      "lesson": "cur30_4_02",
+      "kind": "grammar"
+    },
+    "cur30_4_02_g02": {
+      "text": "即使你不说，我也知道。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_02_g02.mp3?v=cff94861e549",
+      "lesson": "cur30_4_02",
+      "kind": "grammar"
+    },
+    "cur30_4_02_g03": {
+      "text": "因为生病，他不得不推迟考试。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_02_g03.mp3?v=823e0d6d7cd7",
+      "lesson": "cur30_4_02",
+      "kind": "grammar"
+    },
+    "cur30_4_02_g04": {
+      "text": "时间太晚了，我们不得不打车回家。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_02_g04.mp3?v=c457577f07cd",
+      "lesson": "cur30_4_02",
+      "kind": "grammar"
+    },
+    "cur30_4_02_d01": {
+      "text": "这次考试我可能考不好，复习的时间太少了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_02_d01.mp3?v=22a7f7be4ef3",
+      "lesson": "cur30_4_02",
+      "kind": "dialogue"
+    },
+    "cur30_4_02_d02": {
+      "text": "即使成绩不理想，也不要放弃，下次还有机会。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_02_d02.mp3?v=633b348f24ee",
+      "lesson": "cur30_4_02",
+      "kind": "dialogue"
+    },
+    "cur30_4_02_d03": {
+      "text": "这个月我一直在打工，不得不减少学习时间。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_02_d03.mp3?v=936558e132d1",
+      "lesson": "cur30_4_02",
+      "kind": "dialogue"
+    },
+    "cur30_4_02_d04": {
+      "text": "那你要好好安排时间，学习和工作都很重要。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_02_d04.mp3?v=4cee13a56426",
+      "lesson": "cur30_4_02",
+      "kind": "dialogue"
+    },
+    "cur30_4_03_g01": {
+      "text": "既然来了，就多住几天吧。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_03_g01.mp3?v=184ef0003a05",
+      "lesson": "cur30_4_03",
+      "kind": "grammar"
+    },
+    "cur30_4_03_g02": {
+      "text": "既然你不舒服，就早点儿休息。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_03_g02.mp3?v=fe35624ceec2",
+      "lesson": "cur30_4_03",
+      "kind": "grammar"
+    },
+    "cur30_4_03_g03": {
+      "text": "请你说下去。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_03_g03.mp3?v=989cdbe5ef18",
+      "lesson": "cur30_4_03",
+      "kind": "grammar"
+    },
+    "cur30_4_03_g04": {
+      "text": "他决定在北京留下来。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_03_g04.mp3?v=1b355dd546e1",
+      "lesson": "cur30_4_03",
+      "kind": "grammar"
+    },
+    "cur30_4_03_d01": {
+      "text": "阿姨，您明天就要回去了吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_03_d01.mp3?v=3d7b35621055",
+      "lesson": "cur30_4_03",
+      "kind": "dialogue"
+    },
+    "cur30_4_03_d02": {
+      "text": "是啊，在这儿已经住了一个星期了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_03_d02.mp3?v=2e84722100af",
+      "lesson": "cur30_4_03",
+      "kind": "dialogue"
+    },
+    "cur30_4_03_d03": {
+      "text": "既然来了，就多住几天吧，北京还有很多好玩儿的地方。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_03_d03.mp3?v=5e0b40198912",
+      "lesson": "cur30_4_03",
+      "kind": "dialogue"
+    },
+    "cur30_4_03_d04": {
+      "text": "家里还有事，不能再住下去了。下次再来看你们。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_03_d04.mp3?v=84c355158aa7",
+      "lesson": "cur30_4_03",
+      "kind": "dialogue"
+    },
+    "cur30_4_04_g01": {
+      "text": "只有多练习，才能说得流利。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_04_g01.mp3?v=838f0d0d8f49",
+      "lesson": "cur30_4_04",
+      "kind": "grammar"
+    },
+    "cur30_4_04_g02": {
+      "text": "只有你同意，我们才能开始。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_04_g02.mp3?v=5c7b316173a4",
+      "lesson": "cur30_4_04",
+      "kind": "grammar"
+    },
+    "cur30_4_04_g03": {
+      "text": "请按照要求填写表格。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_04_g03.mp3?v=277c4b5f2563",
+      "lesson": "cur30_4_04",
+      "kind": "grammar"
+    },
+    "cur30_4_04_g04": {
+      "text": "根据调查，年轻人越来越喜欢网上购物。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_04_g04.mp3?v=28ecc7b3b530",
+      "lesson": "cur30_4_04",
+      "kind": "grammar"
+    },
+    "cur30_4_04_d01": {
+      "text": "老师，我的阅读成绩不错，可是口语一直不太好。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_04_d01.mp3?v=f7ef0d2b87c0",
+      "lesson": "cur30_4_04",
+      "kind": "dialogue"
+    },
+    "cur30_4_04_d02": {
+      "text": "只有多跟中国人交流，才能说得流利。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_04_d02.mp3?v=43ba4d4c5e74",
+      "lesson": "cur30_4_04",
+      "kind": "dialogue"
+    },
+    "cur30_4_04_d03": {
+      "text": "可是我怕说错。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_04_d03.mp3?v=33e0dbf3bd33",
+      "lesson": "cur30_4_04",
+      "kind": "dialogue"
+    },
+    "cur30_4_04_d04": {
+      "text": "说错没关系。你可以按照课文的句子先练习，再慢慢自己说。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_04_d04.mp3?v=148cc4058983",
+      "lesson": "cur30_4_04",
+      "kind": "dialogue"
+    },
+    "cur30_4_05_g02": {
+      "text": "难道这是真的吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_05_g02.mp3?v=2eb7b0dfd112",
+      "lesson": "cur30_4_05",
+      "kind": "grammar"
+    },
+    "cur30_4_05_g03": {
+      "text": "他竟然一个人完成了这么多工作。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_05_g03.mp3?v=d1a939d4c0f4",
+      "lesson": "cur30_4_05",
+      "kind": "grammar"
+    },
+    "cur30_4_05_g04": {
+      "text": "这么简单的问题，你居然不会？",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_05_g04.mp3?v=c8b8b0c65286",
+      "lesson": "cur30_4_05",
+      "kind": "grammar"
+    },
+    "cur30_4_05_d01": {
+      "text": "听说小林得了比赛第一名！",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_05_d01.mp3?v=67886ffef0b9",
+      "lesson": "cur30_4_05",
+      "kind": "dialogue"
+    },
+    "cur30_4_05_d02": {
+      "text": "真的吗？他才学了一年，竟然得了第一名！",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_05_d02.mp3?v=fa90d39ae9ca",
+      "lesson": "cur30_4_05",
+      "kind": "dialogue"
+    },
+    "cur30_4_05_d03": {
+      "text": "难道你没看学校的新闻吗？大家都知道了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_05_d03.mp3?v=f6e20ba802f2",
+      "lesson": "cur30_4_05",
+      "kind": "dialogue"
+    },
+    "cur30_4_05_d04": {
+      "text": "这几天太忙了，我还没上网呢。我们应该祝贺他。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_05_d04.mp3?v=28851e471bb2",
+      "lesson": "cur30_4_05",
+      "kind": "dialogue"
+    },
+    "cur30_4_06_g01": {
+      "text": "通过这次旅行，我了解了很多中国文化。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_06_g01.mp3?v=b328ba237ee7",
+      "lesson": "cur30_4_06",
+      "kind": "grammar"
+    },
+    "cur30_4_06_g02": {
+      "text": "我们是通过朋友认识的。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_06_g02.mp3?v=2a7d3300efbd",
+      "lesson": "cur30_4_06",
+      "kind": "grammar"
+    },
+    "cur30_4_06_g03": {
+      "text": "由于天气不好，因此航班推迟了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_06_g03.mp3?v=8e86186b6bd5",
+      "lesson": "cur30_4_06",
+      "kind": "grammar"
+    },
+    "cur30_4_06_g04": {
+      "text": "由于大家的努力，活动非常成功。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_06_g04.mp3?v=78ec87e21274",
+      "lesson": "cur30_4_06",
+      "kind": "grammar"
+    },
+    "cur30_4_06_d01": {
+      "text": "你这次去云南玩儿得怎么样？",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_06_d01.mp3?v=5688be24b800",
+      "lesson": "cur30_4_06",
+      "kind": "dialogue"
+    },
+    "cur30_4_06_d02": {
+      "text": "非常好！通过这次旅行，我了解了很多少数民族的文化。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_06_d02.mp3?v=f818b9017bba",
+      "lesson": "cur30_4_06",
+      "kind": "dialogue"
+    },
+    "cur30_4_06_d03": {
+      "text": "听说那边常常下雨，你们的计划没受影响吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_06_d03.mp3?v=bc0b1bdacb7f",
+      "lesson": "cur30_4_06",
+      "kind": "dialogue"
+    },
+    "cur30_4_06_d04": {
+      "text": "有一天由于下大雨，因此我们不得不改变了路线。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_06_d04.mp3?v=a97d85b4a504",
+      "lesson": "cur30_4_06",
+      "kind": "dialogue"
+    },
+    "cur30_4_07_g01": {
+      "text": "我宁可走路，也不坐这么挤的车。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_07_g01.mp3?v=bd4d525f11b4",
+      "lesson": "cur30_4_07",
+      "kind": "grammar"
+    },
+    "cur30_4_07_g02": {
+      "text": "他宁可少赚钱，也不愿意加班。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_07_g02.mp3?v=417ca7b7247c",
+      "lesson": "cur30_4_07",
+      "kind": "grammar"
+    },
+    "cur30_4_07_g03": {
+      "text": "快点儿走吧，否则要迟到了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_07_g03.mp3?v=d5201675bc63",
+      "lesson": "cur30_4_07",
+      "kind": "grammar"
+    },
+    "cur30_4_07_g04": {
+      "text": "你要提前订票，否则买不到。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_07_g04.mp3?v=f60c9d4764d6",
+      "lesson": "cur30_4_07",
+      "kind": "grammar"
+    },
+    "cur30_4_07_d01": {
+      "text": "公共汽车来了，人太多了！",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_07_d01.mp3?v=7a375e9bde0d",
+      "lesson": "cur30_4_07",
+      "kind": "dialogue"
+    },
+    "cur30_4_07_d02": {
+      "text": "可是走路要四十分钟，我们得快点儿，否则会迟到的。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_07_d02.mp3?v=40873897bfda",
+      "lesson": "cur30_4_07",
+      "kind": "dialogue"
+    },
+    "cur30_4_07_d03": {
+      "text": "那我们骑共享单车吧，又快又方便。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_07_d03.mp3?v=28297bc70a94",
+      "lesson": "cur30_4_07",
+      "kind": "dialogue"
+    },
+    "cur30_4_08_g01": {
+      "text": "这个问题究竟怎么解决？",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_08_g01.mp3?v=fadcb55c52d4",
+      "lesson": "cur30_4_08",
+      "kind": "grammar"
+    },
+    "cur30_4_08_g02": {
+      "text": "你到底去不去？",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_08_g02.mp3?v=e45a12b36612",
+      "lesson": "cur30_4_08",
+      "kind": "grammar"
+    },
+    "cur30_4_08_g03": {
+      "text": "他同意了这个计划，并且马上开始准备。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_08_g03.mp3?v=3bcf4602df94",
+      "lesson": "cur30_4_08",
+      "kind": "grammar"
+    },
+    "cur30_4_08_g04": {
+      "text": "会议讨论了时间、地点以及费用。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_08_g04.mp3?v=65ea5c5e0065",
+      "lesson": "cur30_4_08",
+      "kind": "grammar"
+    },
+    "cur30_4_08_d01": {
+      "text": "客户对我们的产品不满意，这个问题究竟怎么解决？",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_08_d01.mp3?v=b4bba6b757db",
+      "lesson": "cur30_4_08",
+      "kind": "dialogue"
+    },
+    "cur30_4_08_d02": {
+      "text": "我们先了解他们的具体要求，并且尽快改进。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_08_d02.mp3?v=fe1d2b8cbf5f",
+      "lesson": "cur30_4_08",
+      "kind": "dialogue"
+    },
+    "cur30_4_08_d03": {
+      "text": "好。你负责联系客户，以及整理大家的意见。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_08_d03.mp3?v=d8a75cca398f",
+      "lesson": "cur30_4_08",
+      "kind": "dialogue"
+    },
+    "cur30_4_08_d04": {
+      "text": "没问题，我下周一以前交报告。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_08_d04.mp3?v=a7d02446b8f1",
+      "lesson": "cur30_4_08",
+      "kind": "dialogue"
+    },
+    "cur30_4_09_g01": {
+      "text": "一旦养成习惯，就很难改变。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_09_g01.mp3?v=4bb20908e645",
+      "lesson": "cur30_4_09",
+      "kind": "grammar"
+    },
+    "cur30_4_09_g02": {
+      "text": "一旦出了问题，马上告诉我。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_09_g02.mp3?v=b765f1f2932c",
+      "lesson": "cur30_4_09",
+      "kind": "grammar"
+    },
+    "cur30_4_09_g03": {
+      "text": "别怪他，他毕竟还是个孩子。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_09_g03.mp3?v=66341b9399b4",
+      "lesson": "cur30_4_09",
+      "kind": "grammar"
+    },
+    "cur30_4_09_g04": {
+      "text": "毕竟是第一次，紧张是正常的。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_09_g04.mp3?v=ef2ed37b8ddf",
+      "lesson": "cur30_4_09",
+      "kind": "grammar"
+    },
+    "cur30_4_09_d01": {
+      "text": "我每天晚上都玩手机玩到很晚。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_09_d01.mp3?v=9fdc9e261fae",
+      "lesson": "cur30_4_09",
+      "kind": "dialogue"
+    },
+    "cur30_4_09_d02": {
+      "text": "这个习惯不好，一旦养成了，就很难改变。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_09_d02.mp3?v=25dbb2175219",
+      "lesson": "cur30_4_09",
+      "kind": "dialogue"
+    },
+    "cur30_4_09_d03": {
+      "text": "我也知道，可是总是忍不住。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_09_d03.mp3?v=bfa4f0099eb9",
+      "lesson": "cur30_4_09",
+      "kind": "dialogue"
+    },
+    "cur30_4_09_d04": {
+      "text": "慢慢来吧，毕竟改变习惯需要时间。睡觉前可以把手机放远一点儿。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_09_d04.mp3?v=b37fa8d22290",
+      "lesson": "cur30_4_09",
+      "kind": "dialogue"
+    },
+    "cur30_4_10_g01": {
+      "text": "这件事非你去不可。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_10_g01.mp3?v=f25c8e7dd235",
+      "lesson": "cur30_4_10",
+      "kind": "grammar"
+    },
+    "cur30_4_10_g02": {
+      "text": "今天我非把作业写完不可。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_10_g02.mp3?v=27da615fc6e5",
+      "lesson": "cur30_4_10",
+      "kind": "grammar"
+    },
+    "cur30_4_10_g03": {
+      "text": "这个活动由你负责。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_10_g03.mp3?v=851643f28273",
+      "lesson": "cur30_4_10",
+      "kind": "grammar"
+    },
+    "cur30_4_10_g04": {
+      "text": "会议由张经理主持。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_10_g04.mp3?v=efc71c29037c",
+      "lesson": "cur30_4_10",
+      "kind": "grammar"
+    },
+    "cur30_4_10_d01": {
+      "text": "下个月的国际会议，由你负责翻译。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_10_d01.mp3?v=95f87b441ef3",
+      "lesson": "cur30_4_10",
+      "kind": "dialogue"
+    },
+    "cur30_4_10_d02": {
+      "text": "我经验还不够，别人可以吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_10_d02.mp3?v=45d69dc3599b",
+      "lesson": "cur30_4_10",
+      "kind": "dialogue"
+    },
+    "cur30_4_10_d03": {
+      "text": "客户都说越南语和汉语，这件事非你去不可。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_10_d03.mp3?v=f233070b46cd",
+      "lesson": "cur30_4_10",
+      "kind": "dialogue"
+    },
+    "cur30_4_10_d04": {
+      "text": "好，那我从今天开始好好准备。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_10_d04.mp3?v=e72cbc31d32d",
+      "lesson": "cur30_4_10",
+      "kind": "dialogue"
+    },
+    "cur30_4_11_g01": {
+      "text": "再难也要试一试。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_11_g01.mp3?v=00a7d9b442cd",
+      "lesson": "cur30_4_11",
+      "kind": "grammar"
+    },
+    "cur30_4_11_g02": {
+      "text": "你再忙也要吃早饭。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_11_g02.mp3?v=3d683ab32864",
+      "lesson": "cur30_4_11",
+      "kind": "grammar"
+    },
+    "cur30_4_11_g03": {
+      "text": "他忙得甚至忘了吃饭。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_11_g03.mp3?v=fa870a0e8c50",
+      "lesson": "cur30_4_11",
+      "kind": "grammar"
+    },
+    "cur30_4_11_g04": {
+      "text": "这首歌大人、孩子甚至老人都会唱。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_11_g04.mp3?v=1cc325417689",
+      "lesson": "cur30_4_11",
+      "kind": "grammar"
+    },
+    "cur30_4_11_d01": {
+      "text": "学校组织了马拉松比赛，你报名了吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_11_d01.mp3?v=363f7ec9b826",
+      "lesson": "cur30_4_11",
+      "kind": "dialogue"
+    },
+    "cur30_4_11_d02": {
+      "text": "报了。我以前甚至没跑过五公里。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_11_d02.mp3?v=87958306c54b",
+      "lesson": "cur30_4_11",
+      "kind": "dialogue"
+    },
+    "cur30_4_11_d03": {
+      "text": "那你还报名？",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_11_d03.mp3?v=683b45e5f0fb",
+      "lesson": "cur30_4_11",
+      "kind": "dialogue"
+    },
+    "cur30_4_11_d04": {
+      "text": "再难也要试一试，我想挑战一下自己。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_11_d04.mp3?v=2e6af1ce6a97",
+      "lesson": "cur30_4_11",
+      "kind": "dialogue"
+    },
+    "cur30_4_12_g01": {
+      "text": "老员工都觉得难，何况他还是个新人。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_12_g01.mp3?v=06c7a3102293",
+      "lesson": "cur30_4_12",
+      "kind": "grammar"
+    },
+    "cur30_4_12_g02": {
+      "text": "大人都搬不动，更何况孩子呢？",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_12_g02.mp3?v=6aa0b067ddcd",
+      "lesson": "cur30_4_12",
+      "kind": "grammar"
+    },
+    "cur30_4_12_g03": {
+      "text": "他不仅工作认真，还很愿意帮助别人。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_12_g03.mp3?v=0a0288b838d1",
+      "lesson": "cur30_4_12",
+      "kind": "grammar"
+    },
+    "cur30_4_12_g04": {
+      "text": "这里不仅环境好，交通也很方便。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_12_g04.mp3?v=b625392048a6",
+      "lesson": "cur30_4_12",
+      "kind": "grammar"
+    },
+    "cur30_4_12_d01": {
+      "text": "新同事这次的报告写得不太好。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_12_d01.mp3?v=93fb05e3aa3e",
+      "lesson": "cur30_4_12",
+      "kind": "dialogue"
+    },
+    "cur30_4_12_d02": {
+      "text": "这个报告连我都觉得复杂，何况他还是个新人。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_12_d02.mp3?v=375a5fa75ef9",
+      "lesson": "cur30_4_12",
+      "kind": "dialogue"
+    },
+    "cur30_4_12_d03": {
+      "text": "也是。他不仅很努力，还常常问问题。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_12_d03.mp3?v=5346ce25ad0f",
+      "lesson": "cur30_4_12",
+      "kind": "dialogue"
+    },
+    "cur30_4_12_d04": {
+      "text": "你多帮帮他，他会进步得很快。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_12_d04.mp3?v=07d64fafd69d",
+      "lesson": "cur30_4_12",
+      "kind": "dialogue"
+    },
+    "cur30_4_13_g01": {
+      "text": "那家饭店人太多，于是我们决定换一家。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_13_g01.mp3?v=1759b3405219",
+      "lesson": "cur30_4_13",
+      "kind": "grammar"
+    },
+    "cur30_4_13_g02": {
+      "text": "天黑了，于是大家都回家了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_13_g02.mp3?v=8bf8dbd70238",
+      "lesson": "cur30_4_13",
+      "kind": "grammar"
+    },
+    "cur30_4_13_g03": {
+      "text": "我听出来了，这是小林的声音。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_13_g03.mp3?v=6672769c9a0b",
+      "lesson": "cur30_4_13",
+      "kind": "grammar"
+    },
+    "cur30_4_13_g04": {
+      "text": "我想起来了，我们见过面。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_13_g04.mp3?v=3ffaea1afa62",
+      "lesson": "cur30_4_13",
+      "kind": "grammar"
+    },
+    "cur30_4_13_d01": {
+      "text": "昨天你们去吃烤鸭了吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_13_d01.mp3?v=1e2384bc555a",
+      "lesson": "cur30_4_13",
+      "kind": "dialogue"
+    },
+    "cur30_4_13_d02": {
+      "text": "去了，可是那家店要排一个小时的队，于是我们换了一家饭店。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_13_d02.mp3?v=e4f20fc33209",
+      "lesson": "cur30_4_13",
+      "kind": "dialogue"
+    },
+    "cur30_4_13_d03": {
+      "text": "新的那家怎么样？",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_13_d03.mp3?v=ae145199c8b8",
+      "lesson": "cur30_4_13",
+      "kind": "dialogue"
+    },
+    "cur30_4_13_d04": {
+      "text": "味道很好。服务员一听就听出来我是外国人，还送了我们一个菜。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_13_d04.mp3?v=dbec258cc92d",
+      "lesson": "cur30_4_13",
+      "kind": "dialogue"
+    },
+    "cur30_4_14_g01": {
+      "text": "你千万别忘了带护照。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_14_g01.mp3?v=18b5e784d771",
+      "lesson": "cur30_4_14",
+      "kind": "grammar"
+    },
+    "cur30_4_14_g02": {
+      "text": "路上千万要注意安全。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_14_g02.mp3?v=5beace4fac7c",
+      "lesson": "cur30_4_14",
+      "kind": "grammar"
+    },
+    "cur30_4_14_g04": {
+      "text": "来不及吃早饭了，我先走了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_14_g04.mp3?v=d56ad3fa905c",
+      "lesson": "cur30_4_14",
+      "kind": "grammar"
+    },
+    "cur30_4_14_d01": {
+      "text": "明天的飞机几点起飞？",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_14_d01.mp3?v=cd8d981d00f5",
+      "lesson": "cur30_4_14",
+      "kind": "dialogue"
+    },
+    "cur30_4_14_d02": {
+      "text": "早上八点。我六点出门应该来得及。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_14_d02.mp3?v=1fa5b890928d",
+      "lesson": "cur30_4_14",
+      "kind": "dialogue"
+    },
+    "cur30_4_14_d03": {
+      "text": "你千万别忘了带护照，到了就给我打电话。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_14_d03.mp3?v=5313f1c8efe1",
+      "lesson": "cur30_4_14",
+      "kind": "dialogue"
+    },
+    "cur30_4_14_d04": {
+      "text": "放心吧，行李我已经整理好了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_14_d04.mp3?v=47ef8f3a352a",
+      "lesson": "cur30_4_14",
+      "kind": "dialogue"
+    },
+    "cur30_4_15_g01": {
+      "text": "随着经济的发展，人们的生活越来越方便。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_15_g01.mp3?v=18eb3dc2be8e",
+      "lesson": "cur30_4_15",
+      "kind": "grammar"
+    },
+    "cur30_4_15_g02": {
+      "text": "随着年龄的增长，他的想法也变了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_15_g02.mp3?v=88374af11cd8",
+      "lesson": "cur30_4_15",
+      "kind": "grammar"
+    },
+    "cur30_4_15_g03": {
+      "text": "对于这个问题，大家的看法不同。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_15_g03.mp3?v=9e4be5e21553",
+      "lesson": "cur30_4_15",
+      "kind": "grammar"
+    },
+    "cur30_4_15_g04": {
+      "text": "对于老人来说，网上购物还不太方便。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_15_g04.mp3?v=16c99276b871",
+      "lesson": "cur30_4_15",
+      "kind": "grammar"
+    },
+    "cur30_4_15_d01": {
+      "text": "随着科技的发展，我们的生活发生了很大的变化。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_15_d01.mp3?v=567f241938b3",
+      "lesson": "cur30_4_15",
+      "kind": "dialogue"
+    },
+    "cur30_4_15_d02": {
+      "text": "是的，现在用手机就可以付钱、打车、点外卖。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_15_d02.mp3?v=79146810de2e",
+      "lesson": "cur30_4_15",
+      "kind": "dialogue"
+    },
+    "cur30_4_15_d03": {
+      "text": "不过对于很多老人来说，这些新技术并不容易。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_15_d03.mp3?v=6b848b8d7c1c",
+      "lesson": "cur30_4_15",
+      "kind": "dialogue"
+    },
+    "cur30_4_15_d04": {
+      "text": "所以年轻人应该多帮助他们。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_15_d04.mp3?v=adf49caf4cc8",
+      "lesson": "cur30_4_15",
+      "kind": "dialogue"
+    },
+    "cur30_4_16_g01": {
+      "text": "这家公司是去年成立的。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_16_g01.mp3?v=6f5ad4ec6d80",
+      "lesson": "cur30_4_16",
+      "kind": "grammar"
+    },
+    "cur30_4_16_g02": {
+      "text": "这个决定是大家一起做的。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_16_g02.mp3?v=2d4a91edc942",
+      "lesson": "cur30_4_16",
+      "kind": "grammar"
+    },
+    "cur30_4_16_g03": {
+      "text": "报告已经写好了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_16_g03.mp3?v=c59504c8dbd9",
+      "lesson": "cur30_4_16",
+      "kind": "grammar"
+    },
+    "cur30_4_16_g04": {
+      "text": "房间打扫得很干净。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_16_g04.mp3?v=a8380767fc47",
+      "lesson": "cur30_4_16",
+      "kind": "grammar"
+    },
+    "cur30_4_16_d01": {
+      "text": "请您介绍一下贵公司。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_16_d01.mp3?v=c4609fc797e2",
+      "lesson": "cur30_4_16",
+      "kind": "dialogue"
+    },
+    "cur30_4_16_d02": {
+      "text": "我们公司是去年三月成立的，主要做网上教育。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_16_d02.mp3?v=1874f43dc1cd",
+      "lesson": "cur30_4_16",
+      "kind": "dialogue"
+    },
+    "cur30_4_16_d03": {
+      "text": "现在有多少学生？",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_16_d03.mp3?v=aef2a0ea59fa",
+      "lesson": "cur30_4_16",
+      "kind": "dialogue"
+    },
+    "cur30_4_16_d04": {
+      "text": "已经有五万多名了。新的课程也准备好了，下个月就上线。",
+      "url": "database/prebuilt_audio/curriculum/cur30_4_16_d04.mp3?v=8b8a34467183",
+      "lesson": "cur30_4_16",
+      "kind": "dialogue"
+    },
+    "cur30_5_01_g01": {
+      "text": "与其抱怨，不如马上行动。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_01_g01.mp3?v=2e59f0984d56",
+      "lesson": "cur30_5_01",
+      "kind": "grammar"
+    },
+    "cur30_5_01_g02": {
+      "text": "与其在家睡觉，不如出去走走。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_01_g02.mp3?v=499880149a6e",
+      "lesson": "cur30_5_01",
+      "kind": "grammar"
+    },
+    "cur30_5_01_g03": {
+      "text": "贵的东西未必都好。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_01_g03.mp3?v=90b5cccffb36",
+      "lesson": "cur30_5_01",
+      "kind": "grammar"
+    },
+    "cur30_5_01_g04": {
+      "text": "他不见得会同意。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_01_g04.mp3?v=ca09cb5907ca",
+      "lesson": "cur30_5_01",
+      "kind": "grammar"
+    },
+    "cur30_5_01_d01": {
+      "text": "这份工作压力太大，工资也不高，真让人烦。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_01_d01.mp3?v=a064db58d0d0",
+      "lesson": "cur30_5_01",
+      "kind": "dialogue"
+    },
+    "cur30_5_01_d02": {
+      "text": "与其每天抱怨，不如想想怎么提高自己。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_01_d02.mp3?v=4f43f52d2b2e",
+      "lesson": "cur30_5_01",
+      "kind": "dialogue"
+    },
+    "cur30_5_01_d03": {
+      "text": "可是换工作也未必能找到更好的。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_01_d03.mp3?v=8cc799453601",
+      "lesson": "cur30_5_01",
+      "kind": "dialogue"
+    },
+    "cur30_5_01_d04": {
+      "text": "所以先学点儿新技能，机会来了才抓得住。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_01_d04.mp3?v=6a96f51e25a2",
+      "lesson": "cur30_5_01",
+      "kind": "dialogue"
+    },
+    "cur30_5_02_g01": {
+      "text": "哪怕只有一点儿希望，我们也要坚持。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_02_g01.mp3?v=184ae43b7c1c",
+      "lesson": "cur30_5_02",
+      "kind": "grammar"
+    },
+    "cur30_5_02_g02": {
+      "text": "哪怕再累，他也每天读书。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_02_g02.mp3?v=e508ea1d74b9",
+      "lesson": "cur30_5_02",
+      "kind": "grammar"
+    },
+    "cur30_5_02_g03": {
+      "text": "第一次做，难免会出错。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_02_g03.mp3?v=d47fadb93755",
+      "lesson": "cur30_5_02",
+      "kind": "grammar"
+    },
+    "cur30_5_02_g04": {
+      "text": "离开家乡，心里不免有点儿难过。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_02_g04.mp3?v=f8a04032e7e3",
+      "lesson": "cur30_5_02",
+      "kind": "grammar"
+    },
+    "cur30_5_02_d01": {
+      "text": "我们的实验又失败了，已经是第五次了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_02_d01.mp3?v=9879d4ad1952",
+      "lesson": "cur30_5_02",
+      "kind": "dialogue"
+    },
+    "cur30_5_02_d02": {
+      "text": "做研究难免会遇到失败，这很正常。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_02_d02.mp3?v=2485902973d1",
+      "lesson": "cur30_5_02",
+      "kind": "dialogue"
+    },
+    "cur30_5_02_d03": {
+      "text": "我有点儿想放弃了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_02_d03.mp3?v=0fe3a674f8cb",
+      "lesson": "cur30_5_02",
+      "kind": "dialogue"
+    },
+    "cur30_5_02_d04": {
+      "text": "哪怕只有一点儿希望，也要坚持下去。我们一起找找原因。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_02_d04.mp3?v=34e74ed6c94e",
+      "lesson": "cur30_5_02",
+      "kind": "dialogue"
+    },
+    "cur30_5_03_g01": {
+      "text": "他之所以成功，是因为他从不放弃。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_03_g01.mp3?v=ebb359e023c3",
+      "lesson": "cur30_5_03",
+      "kind": "grammar"
+    },
+    "cur30_5_03_g02": {
+      "text": "我之所以学汉语，是因为喜欢中国文化。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_03_g02.mp3?v=d5ac1c31d17d",
+      "lesson": "cur30_5_03",
+      "kind": "grammar"
+    },
+    "cur30_5_03_g03": {
+      "text": "他凭自己的努力考上了大学。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_03_g03.mp3?v=c09b2a3b470f",
+      "lesson": "cur30_5_03",
+      "kind": "grammar"
+    },
+    "cur30_5_03_g04": {
+      "text": "请凭票入场。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_03_g04.mp3?v=85b0cae41ded",
+      "lesson": "cur30_5_03",
+      "kind": "grammar"
+    },
+    "cur30_5_03_d01": {
+      "text": "很多人说您的成功是运气好，您怎么看？",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_03_d01.mp3?v=adcaa50939d2",
+      "lesson": "cur30_5_03",
+      "kind": "dialogue"
+    },
+    "cur30_5_03_d02": {
+      "text": "运气当然重要。但我之所以能走到今天，是因为从来没放弃过。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_03_d02.mp3?v=aec2f545fd36",
+      "lesson": "cur30_5_03",
+      "kind": "dialogue"
+    },
+    "cur30_5_03_d03": {
+      "text": "您对年轻人有什么建议？",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_03_d03.mp3?v=a7cf91c6371a",
+      "lesson": "cur30_5_03",
+      "kind": "dialogue"
+    },
+    "cur30_5_03_d04": {
+      "text": "要凭自己的能力吃饭，不要总想着走捷径。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_03_d04.mp3?v=79ac09b68fb9",
+      "lesson": "cur30_5_03",
+      "kind": "dialogue"
+    },
+    "cur30_5_04_g01": {
+      "text": "她一方面要工作，另一方面还要照顾孩子。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_04_g01.mp3?v=f4217e208882",
+      "lesson": "cur30_5_04",
+      "kind": "grammar"
+    },
+    "cur30_5_04_g02": {
+      "text": "这个政策一方面保护了环境，另一方面也增加了就业。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_04_g02.mp3?v=4366558a07b0",
+      "lesson": "cur30_5_04",
+      "kind": "grammar"
+    },
+    "cur30_5_04_g03": {
+      "text": "他周末不是加班，就是在家睡觉。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_04_g03.mp3?v=55a80975c233",
+      "lesson": "cur30_5_04",
+      "kind": "grammar"
+    },
+    "cur30_5_04_g04": {
+      "text": "最近不是刮风就是下雨。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_04_g04.mp3?v=340bb882fcb2",
+      "lesson": "cur30_5_04",
+      "kind": "grammar"
+    },
+    "cur30_5_04_d01": {
+      "text": "你姐姐最近怎么样？",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_04_d01.mp3?v=27e8d2b69f72",
+      "lesson": "cur30_5_04",
+      "kind": "dialogue"
+    },
+    "cur30_5_04_d02": {
+      "text": "很辛苦。她一方面要上班，另一方面还要照顾两个孩子。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_04_d02.mp3?v=b9f168326b12",
+      "lesson": "cur30_5_04",
+      "kind": "dialogue"
+    },
+    "cur30_5_04_d03": {
+      "text": "她有自己的时间吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_04_d03.mp3?v=c50d72a73b56",
+      "lesson": "cur30_5_04",
+      "kind": "dialogue"
+    },
+    "cur30_5_04_d04": {
+      "text": "几乎没有，周末不是带孩子上课，就是做家务。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_04_d04.mp3?v=ba256dfca930",
+      "lesson": "cur30_5_04",
+      "kind": "dialogue"
+    },
+    "cur30_5_05_g01": {
+      "text": "我们提前出发，以免迟到。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_05_g01.mp3?v=30a9b365dd38",
+      "lesson": "cur30_5_05",
+      "kind": "grammar"
+    },
+    "cur30_5_05_g02": {
+      "text": "请留下电话，以便我们联系你。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_05_g02.mp3?v=85d516400c09",
+      "lesson": "cur30_5_05",
+      "kind": "grammar"
+    },
+    "cur30_5_05_g03": {
+      "text": "这么近，何必打车呢？",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_05_g03.mp3?v=c04c90922992",
+      "lesson": "cur30_5_05",
+      "kind": "grammar"
+    },
+    "cur30_5_05_g04": {
+      "text": "小事一件，何必生气？",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_05_g04.mp3?v=be3e5ac69e96",
+      "lesson": "cur30_5_05",
+      "kind": "grammar"
+    },
+    "cur30_5_05_d01": {
+      "text": "明天的面试是九点，我七点就出发。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_05_d01.mp3?v=8f6fdc674241",
+      "lesson": "cur30_5_05",
+      "kind": "dialogue"
+    },
+    "cur30_5_05_d02": {
+      "text": "坐地铁才半个小时，何必那么早？",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_05_d02.mp3?v=ecba6079a512",
+      "lesson": "cur30_5_05",
+      "kind": "dialogue"
+    },
+    "cur30_5_05_d03": {
+      "text": "早上地铁人多，我想提前到，以免出什么问题。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_05_d03.mp3?v=187946e41cd2",
+      "lesson": "cur30_5_05",
+      "kind": "dialogue"
+    },
+    "cur30_5_05_d04": {
+      "text": "也对。把简历多打印几份，以便面试官看。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_05_d04.mp3?v=934267d9286e",
+      "lesson": "cur30_5_05",
+      "kind": "dialogue"
+    },
+    "cur30_5_06_g01": {
+      "text": "他通过不断学习，从而提高了自己的能力。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_06_g01.mp3?v=40a74d72a85b",
+      "lesson": "cur30_5_06",
+      "kind": "grammar"
+    },
+    "cur30_5_06_g02": {
+      "text": "先了解客户，进而提供更好的服务。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_06_g02.mp3?v=c6ef21f5f340",
+      "lesson": "cur30_5_06",
+      "kind": "grammar"
+    },
+    "cur30_5_06_g03": {
+      "text": "我们以学生为中心。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_06_g03.mp3?v=68190ab3bda1",
+      "lesson": "cur30_5_06",
+      "kind": "grammar"
+    },
+    "cur30_5_06_g04": {
+      "text": "这家公司以质量为生命。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_06_g04.mp3?v=afc16cb8e6ce",
+      "lesson": "cur30_5_06",
+      "kind": "grammar"
+    },
+    "cur30_5_06_d01": {
+      "text": "这门课以实践为主，每周都有小组项目。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_06_d01.mp3?v=a92ef0519438",
+      "lesson": "cur30_5_06",
+      "kind": "dialogue"
+    },
+    "cur30_5_06_d02": {
+      "text": "老师，我们为什么要做这么多项目？",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_06_d02.mp3?v=d373b6a24cb3",
+      "lesson": "cur30_5_06",
+      "kind": "dialogue"
+    },
+    "cur30_5_06_d03": {
+      "text": "通过合作完成项目，从而学会解决实际问题。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_06_d03.mp3?v=92b6ca533522",
+      "lesson": "cur30_5_06",
+      "kind": "dialogue"
+    },
+    "cur30_5_06_d04": {
+      "text": "明白了，进而也能提高沟通能力。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_06_d04.mp3?v=50ba9262a8cd",
+      "lesson": "cur30_5_06",
+      "kind": "dialogue"
+    },
+    "cur30_5_07_g01": {
+      "text": "就这个问题而言，我有不同的看法。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_07_g01.mp3?v=10920aeacbb0",
+      "lesson": "cur30_5_07",
+      "kind": "grammar"
+    },
+    "cur30_5_07_g02": {
+      "text": "就价格来说，这款手机很合适。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_07_g02.mp3?v=714116c39f99",
+      "lesson": "cur30_5_07",
+      "kind": "grammar"
+    },
+    "cur30_5_07_g03": {
+      "text": "他连续三年第一名，可见他有多努力。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_07_g03.mp3?v=5b26dac13e82",
+      "lesson": "cur30_5_07",
+      "kind": "grammar"
+    },
+    "cur30_5_07_g04": {
+      "text": "总之，我们要按时完成任务。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_07_g04.mp3?v=a8bba248f2d8",
+      "lesson": "cur30_5_07",
+      "kind": "grammar"
+    },
+    "cur30_5_07_d01": {
+      "text": "大家对新的上班时间有什么意见？",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_07_d01.mp3?v=90e8745860aa",
+      "lesson": "cur30_5_07",
+      "kind": "dialogue"
+    },
+    "cur30_5_07_d02": {
+      "text": "就效率而言，我觉得弹性上班更好。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_07_d02.mp3?v=756de3f2f855",
+      "lesson": "cur30_5_07",
+      "kind": "dialogue"
+    },
+    "cur30_5_07_d03": {
+      "text": "我同意。上个月试了两周，大家完成的任务更多了，可见这个办法有效。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_07_d03.mp3?v=dc951ceb9ea6",
+      "lesson": "cur30_5_07",
+      "kind": "dialogue"
+    },
+    "cur30_5_07_d04": {
+      "text": "好，总之以结果为标准，下个月正式开始。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_07_d04.mp3?v=219d3223f9c5",
+      "lesson": "cur30_5_07",
+      "kind": "dialogue"
+    },
+    "cur30_5_08_g01": {
+      "text": "要么现在说，要么永远别说。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_08_g01.mp3?v=aaa2eaee32f6",
+      "lesson": "cur30_5_08",
+      "kind": "grammar"
+    },
+    "cur30_5_08_g02": {
+      "text": "周末我们要么去爬山，要么去看电影。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_08_g02.mp3?v=fb9728fc7548",
+      "lesson": "cur30_5_08",
+      "kind": "grammar"
+    },
+    "cur30_5_08_g03": {
+      "text": "他不至于连这个都不懂吧。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_08_g03.mp3?v=3144f501148c",
+      "lesson": "cur30_5_08",
+      "kind": "grammar"
+    },
+    "cur30_5_08_g04": {
+      "text": "只是小感冒，不至于去医院。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_08_g04.mp3?v=fac27090809e",
+      "lesson": "cur30_5_08",
+      "kind": "grammar"
+    },
+    "cur30_5_08_d01": {
+      "text": "我不知道该不该告诉她我的想法。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_08_d01.mp3?v=fac267cf539e",
+      "lesson": "cur30_5_08",
+      "kind": "dialogue"
+    },
+    "cur30_5_08_d02": {
+      "text": "要么现在说，要么就别再想了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_08_d02.mp3?v=9d7b4c848a7e",
+      "lesson": "cur30_5_08",
+      "kind": "dialogue"
+    },
+    "cur30_5_08_d03": {
+      "text": "如果她拒绝我，那多尴尬啊。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_08_d03.mp3?v=f8d4ae81dad4",
+      "lesson": "cur30_5_08",
+      "kind": "dialogue"
+    },
+    "cur30_5_08_d04": {
+      "text": "不至于吧，你们是好朋友，她会理解的。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_08_d04.mp3?v=fb3297012193",
+      "lesson": "cur30_5_08",
+      "kind": "dialogue"
+    },
+    "cur30_5_09_g01": {
+      "text": "我一直把他当作最好的朋友。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_09_g01.mp3?v=06810319790b",
+      "lesson": "cur30_5_09",
+      "kind": "grammar"
+    },
+    "cur30_5_09_g02": {
+      "text": "别把我的话当成玩笑。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_09_g02.mp3?v=9e9ffb1859d2",
+      "lesson": "cur30_5_09",
+      "kind": "grammar"
+    },
+    "cur30_5_09_g03": {
+      "text": "这样做毫无意义。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_09_g03.mp3?v=a32b20d24c6e",
+      "lesson": "cur30_5_09",
+      "kind": "grammar"
+    },
+    "cur30_5_09_d01": {
+      "text": "你和小林认识多少年了？",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_09_d01.mp3?v=db1f40b754f9",
+      "lesson": "cur30_5_09",
+      "kind": "dialogue"
+    },
+    "cur30_5_09_d02": {
+      "text": "十几年了。我一直把他当作亲兄弟。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_09_d02.mp3?v=ad33c0161ae7",
+      "lesson": "cur30_5_09",
+      "kind": "dialogue"
+    },
+    "cur30_5_09_d03": {
+      "text": "难怪他有困难的时候，你毫不犹豫地帮忙。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_09_d03.mp3?v=b5215c8f097e",
+      "lesson": "cur30_5_09",
+      "kind": "dialogue"
+    },
+    "cur30_5_09_d04": {
+      "text": "朋友之间本来就应该互相帮助。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_09_d04.mp3?v=b8c651b63823",
+      "lesson": "cur30_5_09",
+      "kind": "dialogue"
+    },
+    "cur30_5_10_g01": {
+      "text": "这就是我所知道的情况。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_10_g01.mp3?v=e40fdfaf89d8",
+      "lesson": "cur30_5_10",
+      "kind": "grammar"
+    },
+    "cur30_5_10_g02": {
+      "text": "我们所做的一切都是为了孩子。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_10_g02.mp3?v=e665bb8067c7",
+      "lesson": "cur30_5_10",
+      "kind": "grammar"
+    },
+    "cur30_5_10_g03": {
+      "text": "这个问题需要加以研究。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_10_g03.mp3?v=b35eb1cf9c5f",
+      "lesson": "cur30_5_10",
+      "kind": "grammar"
+    },
+    "cur30_5_10_g04": {
+      "text": "公司对市场进行了调查。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_10_g04.mp3?v=97a8c15b7d08",
+      "lesson": "cur30_5_10",
+      "kind": "grammar"
+    },
+    "cur30_5_10_d01": {
+      "text": "这次事故的原因调查清楚了吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_10_d01.mp3?v=e2592135f654",
+      "lesson": "cur30_5_10",
+      "kind": "dialogue"
+    },
+    "cur30_5_10_d02": {
+      "text": "这是我们目前所了解的情况：主要是系统更新出了问题。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_10_d02.mp3?v=46cd2dc439d3",
+      "lesson": "cur30_5_10",
+      "kind": "dialogue"
+    },
+    "cur30_5_10_d03": {
+      "text": "以后的每次更新都要先加以测试。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_10_d03.mp3?v=88f653bdf1db",
+      "lesson": "cur30_5_10",
+      "kind": "dialogue"
+    },
+    "cur30_5_10_d04": {
+      "text": "明白，我们下周会对整个系统进行检查。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_10_d04.mp3?v=4cb45e708744",
+      "lesson": "cur30_5_10",
+      "kind": "dialogue"
+    },
+    "cur30_5_11_g01": {
+      "text": "鉴于天气原因，比赛推迟到下周。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_11_g01.mp3?v=916bc2dbfd74",
+      "lesson": "cur30_5_11",
+      "kind": "grammar"
+    },
+    "cur30_5_11_g02": {
+      "text": "鉴于他的表现，公司决定给他升职。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_11_g02.mp3?v=3e9ae4560fec",
+      "lesson": "cur30_5_11",
+      "kind": "grammar"
+    },
+    "cur30_5_11_g03": {
+      "text": "这本书的作者及其家人住在上海。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_11_g03.mp3?v=b5f0c3f0851d",
+      "lesson": "cur30_5_11",
+      "kind": "grammar"
+    },
+    "cur30_5_11_g04": {
+      "text": "我们要了解其原因。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_11_g04.mp3?v=7fce72ecb947",
+      "lesson": "cur30_5_11",
+      "kind": "grammar"
+    },
+    "cur30_5_11_d01": {
+      "text": "你看到学校的通知了吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_11_d01.mp3?v=69e2b8d224f0",
+      "lesson": "cur30_5_11",
+      "kind": "dialogue"
+    },
+    "cur30_5_11_d02": {
+      "text": "看到了：鉴于天气原因，运动会推迟一周举行。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_11_d02.mp3?v=5408a71a84c9",
+      "lesson": "cur30_5_11",
+      "kind": "dialogue"
+    },
+    "cur30_5_11_d03": {
+      "text": "那其他活动呢？",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_11_d03.mp3?v=fc388c860932",
+      "lesson": "cur30_5_11",
+      "kind": "dialogue"
+    },
+    "cur30_5_11_d04": {
+      "text": "通知说其安排不变，照常进行。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_11_d04.mp3?v=cafbba603df7",
+      "lesson": "cur30_5_11",
+      "kind": "dialogue"
+    },
+    "cur30_5_12_g01": {
+      "text": "说不定他已经到了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_12_g01.mp3?v=15b9fe811cd0",
+      "lesson": "cur30_5_12",
+      "kind": "grammar"
+    },
+    "cur30_5_12_g02": {
+      "text": "明天也许会下雨。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_12_g02.mp3?v=f7a9237169d2",
+      "lesson": "cur30_5_12",
+      "kind": "grammar"
+    },
+    "cur30_5_12_g03": {
+      "text": "你明明知道，为什么不告诉我？",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_12_g03.mp3?v=49dcc53a02ca",
+      "lesson": "cur30_5_12",
+      "kind": "grammar"
+    },
+    "cur30_5_12_g04": {
+      "text": "他明明在家，却不开门。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_12_g04.mp3?v=9084b84059f5",
+      "lesson": "cur30_5_12",
+      "kind": "grammar"
+    },
+    "cur30_5_12_d01": {
+      "text": "王明怎么还没来？我明明说了七点在门口见。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_12_d01.mp3?v=c198cd90706f",
+      "lesson": "cur30_5_12",
+      "kind": "dialogue"
+    },
+    "cur30_5_12_d02": {
+      "text": "说不定他已经到了，在里面等我们呢。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_12_d02.mp3?v=1759f1c2494b",
+      "lesson": "cur30_5_12",
+      "kind": "dialogue"
+    },
+    "cur30_5_12_d03": {
+      "text": "我打个电话问问。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_12_d03.mp3?v=8efd6f2a0a06",
+      "lesson": "cur30_5_12",
+      "kind": "dialogue"
+    },
+    "cur30_5_12_d04": {
+      "text": "看，他在那儿！他也在找我们。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_12_d04.mp3?v=ba5e522d7acc",
+      "lesson": "cur30_5_12",
+      "kind": "dialogue"
+    },
+    "cur30_5_13_g01": {
+      "text": "他不但没生气，反而笑了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_13_g01.mp3?v=082d62206419",
+      "lesson": "cur30_5_13",
+      "kind": "grammar"
+    },
+    "cur30_5_13_g02": {
+      "text": "吃了药，病不但没好，反而更重了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_13_g02.mp3?v=be58ba1107b3",
+      "lesson": "cur30_5_13",
+      "kind": "grammar"
+    },
+    "cur30_5_13_g03": {
+      "text": "尽管很累，她还是坚持做完了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_13_g03.mp3?v=3aca24523dd8",
+      "lesson": "cur30_5_13",
+      "kind": "grammar"
+    },
+    "cur30_5_13_g04": {
+      "text": "尽管下着雨，比赛却照常进行。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_13_g04.mp3?v=52c028b6ff30",
+      "lesson": "cur30_5_13",
+      "kind": "grammar"
+    },
+    "cur30_5_13_d01": {
+      "text": "我不小心把咖啡洒在李老师的书上了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_13_d01.mp3?v=290e58822249",
+      "lesson": "cur30_5_13",
+      "kind": "dialogue"
+    },
+    "cur30_5_13_d02": {
+      "text": "老师生气了吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_13_d02.mp3?v=add3fc3a87dc",
+      "lesson": "cur30_5_13",
+      "kind": "dialogue"
+    },
+    "cur30_5_13_d03": {
+      "text": "他不但没生气，反而问我有没有烫着。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_13_d03.mp3?v=2c4656715cf7",
+      "lesson": "cur30_5_13",
+      "kind": "dialogue"
+    },
+    "cur30_5_13_d04": {
+      "text": "尽管李老师看起来很严肃，其实他特别温和。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_13_d04.mp3?v=48c8ece5db78",
+      "lesson": "cur30_5_13",
+      "kind": "dialogue"
+    },
+    "cur30_5_14_g01": {
+      "text": "他把房间收拾得干干净净。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_14_g01.mp3?v=0e612ec67847",
+      "lesson": "cur30_5_14",
+      "kind": "grammar"
+    },
+    "cur30_5_14_g02": {
+      "text": "孩子们高高兴兴地去上学了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_14_g02.mp3?v=ca3bcfc4fb59",
+      "lesson": "cur30_5_14",
+      "kind": "grammar"
+    },
+    "cur30_5_14_g03": {
+      "text": "她认真地听老师讲课。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_14_g03.mp3?v=bb8873b6b073",
+      "lesson": "cur30_5_14",
+      "kind": "grammar"
+    },
+    "cur30_5_14_g04": {
+      "text": "大家热烈地鼓掌。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_14_g04.mp3?v=2ffe5d0dc623",
+      "lesson": "cur30_5_14",
+      "kind": "grammar"
+    },
+    "cur30_5_14_d01": {
+      "text": "今天怎么这么干净？",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_14_d01.mp3?v=ef1fd1542c1c",
+      "lesson": "cur30_5_14",
+      "kind": "dialogue"
+    },
+    "cur30_5_14_d02": {
+      "text": "我上午把房间收拾得干干净净，下午朋友要来。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_14_d02.mp3?v=5f6d7cf7734b",
+      "lesson": "cur30_5_14",
+      "kind": "dialogue"
+    },
+    "cur30_5_14_d03": {
+      "text": "平时你可不是这样的。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_14_d03.mp3?v=174e92cdd747",
+      "lesson": "cur30_5_14",
+      "kind": "dialogue"
+    },
+    "cur30_5_14_d04": {
+      "text": "以后我一定会认认真真地打扫，您就放心吧。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_14_d04.mp3?v=3f088c90a02b",
+      "lesson": "cur30_5_14",
+      "kind": "dialogue"
+    },
+    "cur30_5_15_g01": {
+      "text": "看来他今天心情不错。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_15_g01.mp3?v=53ba45d5d3e7",
+      "lesson": "cur30_5_15",
+      "kind": "grammar"
+    },
+    "cur30_5_15_g02": {
+      "text": "据说这家店已经开了一百年了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_15_g02.mp3?v=91ca1086dd41",
+      "lesson": "cur30_5_15",
+      "kind": "grammar"
+    },
+    "cur30_5_15_g03": {
+      "text": "听到这个消息，她忍不住哭了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_15_g03.mp3?v=7b64240d1655",
+      "lesson": "cur30_5_15",
+      "kind": "grammar"
+    },
+    "cur30_5_15_g04": {
+      "text": "看到这么好吃的蛋糕，我忍不住买了一个。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_15_g04.mp3?v=08f467e4cba9",
+      "lesson": "cur30_5_15",
+      "kind": "grammar"
+    },
+    "cur30_5_15_d01": {
+      "text": "看样子，张经理今天心情不错，一直在笑。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_15_d01.mp3?v=c67ad7e600ff",
+      "lesson": "cur30_5_15",
+      "kind": "dialogue"
+    },
+    "cur30_5_15_d02": {
+      "text": "据说我们的项目得了公司的大奖。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_15_d02.mp3?v=d5ab3bb18c00",
+      "lesson": "cur30_5_15",
+      "kind": "dialogue"
+    },
+    "cur30_5_15_d03": {
+      "text": "真的？我忍不住想马上告诉大家！",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_15_d03.mp3?v=8943bd4b7cc3",
+      "lesson": "cur30_5_15",
+      "kind": "dialogue"
+    },
+    "cur30_5_15_d04": {
+      "text": "先等正式通知吧。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_15_d04.mp3?v=a0159d7d92af",
+      "lesson": "cur30_5_15",
+      "kind": "dialogue"
+    },
+    "cur30_5_16_g01": {
+      "text": "这部电影值得一看。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_16_g01.mp3?v=fa15b920fcc3",
+      "lesson": "cur30_5_16",
+      "kind": "grammar"
+    },
+    "cur30_5_16_g02": {
+      "text": "这个问题值得我们认真思考。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_16_g02.mp3?v=22a18cb868a7",
+      "lesson": "cur30_5_16",
+      "kind": "grammar"
+    },
+    "cur30_5_16_g03": {
+      "text": "这部电影不光故事好，音乐也很美。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_16_g03.mp3?v=c8bfd50760f2",
+      "lesson": "cur30_5_16",
+      "kind": "grammar"
+    },
+    "cur30_5_16_g04": {
+      "text": "不只是我，大家都喜欢她。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_16_g04.mp3?v=fe04b2e262d1",
+      "lesson": "cur30_5_16",
+      "kind": "grammar"
+    },
+    "cur30_5_16_d01": {
+      "text": "你看过那部关于长城的纪录片吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_16_d01.mp3?v=88c633cfc6a0",
+      "lesson": "cur30_5_16",
+      "kind": "dialogue"
+    },
+    "cur30_5_16_d02": {
+      "text": "看了，非常值得一看！",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_16_d02.mp3?v=24609b7e4f7e",
+      "lesson": "cur30_5_16",
+      "kind": "dialogue"
+    },
+    "cur30_5_16_d03": {
+      "text": "它好在哪儿？",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_16_d03.mp3?v=cb6f0e5970cd",
+      "lesson": "cur30_5_16",
+      "kind": "dialogue"
+    },
+    "cur30_5_16_d04": {
+      "text": "不光画面漂亮，还讲了很多历史故事，让人印象深刻。",
+      "url": "database/prebuilt_audio/curriculum/cur30_5_16_d04.mp3?v=ee675527bfad",
+      "lesson": "cur30_5_16",
+      "kind": "dialogue"
+    },
+    "cur30_6_01_g01": {
+      "text": "他工作太投入，以至于忘了吃饭。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_01_g01.mp3?v=c35954e75eb7",
+      "lesson": "cur30_6_01",
+      "kind": "grammar"
+    },
+    "cur30_6_01_g02": {
+      "text": "他平时不注意休息，以致病倒了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_01_g02.mp3?v=0efbc0ff3f1b",
+      "lesson": "cur30_6_01",
+      "kind": "grammar"
+    },
+    "cur30_6_01_g03": {
+      "text": "这项技术影响了整个行业，乃至整个社会。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_01_g03.mp3?v=e0cb4af36d1c",
+      "lesson": "cur30_6_01",
+      "kind": "grammar"
+    },
+    "cur30_6_01_g04": {
+      "text": "他的作品在国内乃至世界都很有名。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_01_g04.mp3?v=66c460224a98",
+      "lesson": "cur30_6_01",
+      "kind": "grammar"
+    },
+    "cur30_6_01_d01": {
+      "text": "听说小林最近住院了？",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_01_d01.mp3?v=83e0a7f9a916",
+      "lesson": "cur30_6_01",
+      "kind": "dialogue"
+    },
+    "cur30_6_01_d02": {
+      "text": "是啊，项目太紧，他连续加班一个月，以致身体出了问题。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_01_d02.mp3?v=ba9d1d307321",
+      "lesson": "cur30_6_01",
+      "kind": "dialogue"
+    },
+    "cur30_6_01_d03": {
+      "text": "工作固然重要，可健康才是一切的基础。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_01_d03.mp3?v=ae03bcffe4a1",
+      "lesson": "cur30_6_01",
+      "kind": "dialogue"
+    },
+    "cur30_6_01_d04": {
+      "text": "对，这关系到个人，乃至整个家庭。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_01_d04.mp3?v=9de24702f040",
+      "lesson": "cur30_6_01",
+      "kind": "dialogue"
+    },
+    "cur30_6_02_g01": {
+      "text": "倘若有机会，我一定去西藏看看。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_02_g01.mp3?v=149b8a0b5cce",
+      "lesson": "cur30_6_02",
+      "kind": "grammar"
+    },
+    "cur30_6_02_g02": {
+      "text": "若有问题，请及时联系我们。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_02_g02.mp3?v=2c28af2dd62d",
+      "lesson": "cur30_6_02",
+      "kind": "grammar"
+    },
+    "cur30_6_02_g03": {
+      "text": "我们本想去爬山，不料下起了大雨。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_02_g03.mp3?v=d08a7d6f3b2b",
+      "lesson": "cur30_6_02",
+      "kind": "grammar"
+    },
+    "cur30_6_02_g04": {
+      "text": "他以为考试很容易，不料题目这么难。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_02_g04.mp3?v=72986a5cb830",
+      "lesson": "cur30_6_02",
+      "kind": "grammar"
+    },
+    "cur30_6_02_d01": {
+      "text": "你最想去的地方是哪儿？",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_02_d01.mp3?v=05e7144edf5f",
+      "lesson": "cur30_6_02",
+      "kind": "dialogue"
+    },
+    "cur30_6_02_d02": {
+      "text": "西藏。倘若有机会，我想在那儿住一个月。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_02_d02.mp3?v=b3c69aa36976",
+      "lesson": "cur30_6_02",
+      "kind": "dialogue"
+    },
+    "cur30_6_02_d03": {
+      "text": "我去年去过，本来很期待，不料一到就有高原反应。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_02_d03.mp3?v=33661e4e17c7",
+      "lesson": "cur30_6_02",
+      "kind": "dialogue"
+    },
+    "cur30_6_02_d04": {
+      "text": "若是我去，一定提前做好准备。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_02_d04.mp3?v=9d760b77181f",
+      "lesson": "cur30_6_02",
+      "kind": "dialogue"
+    },
+    "cur30_6_03_g01": {
+      "text": "这件事太复杂，况且时间也来不及了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_03_g01.mp3?v=e20ae15d6a80",
+      "lesson": "cur30_6_03",
+      "kind": "grammar"
+    },
+    "cur30_6_03_g02": {
+      "text": "外面太冷，再说你还感冒着呢。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_03_g02.mp3?v=7e55d6739ba4",
+      "lesson": "cur30_6_03",
+      "kind": "grammar"
+    },
+    "cur30_6_03_g03": {
+      "text": "你这样说未免太过分了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_03_g03.mp3?v=e95d59b98ed0",
+      "lesson": "cur30_6_03",
+      "kind": "grammar"
+    },
+    "cur30_6_03_g04": {
+      "text": "一个人做这么多工作，未免太辛苦了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_03_g04.mp3?v=360ef02d5252",
+      "lesson": "cur30_6_03",
+      "kind": "grammar"
+    },
+    "cur30_6_03_d01": {
+      "text": "这个周末你能加班完成新方案吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_03_d01.mp3?v=72ed2c09afd9",
+      "lesson": "cur30_6_03",
+      "kind": "dialogue"
+    },
+    "cur30_6_03_d02": {
+      "text": "一个周末做完整个方案，未免太赶了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_03_d02.mp3?v=53633c266055",
+      "lesson": "cur30_6_03",
+      "kind": "dialogue"
+    },
+    "cur30_6_03_d03": {
+      "text": "客户催得很急。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_03_d03.mp3?v=a08ce2cbc2e0",
+      "lesson": "cur30_6_03",
+      "kind": "dialogue"
+    },
+    "cur30_6_03_d04": {
+      "text": "我理解。况且数据还没收齐，不如我们跟客户再商量一下时间？",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_03_d04.mp3?v=192afa456b27",
+      "lesson": "cur30_6_03",
+      "kind": "dialogue"
+    },
+    "cur30_6_04_g01": {
+      "text": "听到这个消息，她不禁流下了眼泪。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_04_g01.mp3?v=a630dda307c9",
+      "lesson": "cur30_6_04",
+      "kind": "grammar"
+    },
+    "cur30_6_04_g02": {
+      "text": "看到家乡的照片，他不由得想起了童年。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_04_g02.mp3?v=fed183a2437f",
+      "lesson": "cur30_6_04",
+      "kind": "grammar"
+    },
+    "cur30_6_04_g03": {
+      "text": "山里的天气时而晴，时而雨。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_04_g03.mp3?v=c27138559b41",
+      "lesson": "cur30_6_04",
+      "kind": "grammar"
+    },
+    "cur30_6_04_g04": {
+      "text": "他时而看书，时而望着窗外。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_04_g04.mp3?v=4713f0da94a9",
+      "lesson": "cur30_6_04",
+      "kind": "grammar"
+    },
+    "cur30_6_04_d01": {
+      "text": "昨天的毕业典礼怎么样？",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_04_d01.mp3?v=6baa84f965e0",
+      "lesson": "cur30_6_04",
+      "kind": "dialogue"
+    },
+    "cur30_6_04_d02": {
+      "text": "很感人。校长讲话的时候，很多同学不禁哭了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_04_d02.mp3?v=ec9fcc4f7843",
+      "lesson": "cur30_6_04",
+      "kind": "dialogue"
+    },
+    "cur30_6_04_d03": {
+      "text": "你呢？",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_04_d03.mp3?v=027f14b8d282",
+      "lesson": "cur30_6_04",
+      "kind": "dialogue"
+    },
+    "cur30_6_04_d04": {
+      "text": "我心情很复杂，时而高兴，时而舍不得离开。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_04_d04.mp3?v=6759aab4233d",
+      "lesson": "cur30_6_04",
+      "kind": "dialogue"
+    },
+    "cur30_6_05_g01": {
+      "text": "请务必按时提交材料。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_05_g01.mp3?v=2c6d4078479b",
+      "lesson": "cur30_6_05",
+      "kind": "grammar"
+    },
+    "cur30_6_05_g02": {
+      "text": "出发前务必检查证件。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_05_g02.mp3?v=0c1a90690c4d",
+      "lesson": "cur30_6_05",
+      "kind": "grammar"
+    },
+    "cur30_6_05_g03": {
+      "text": "材料不全，势必影响审批。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_05_g03.mp3?v=6ffa27dec28e",
+      "lesson": "cur30_6_05",
+      "kind": "grammar"
+    },
+    "cur30_6_05_g04": {
+      "text": "人口增加势必带来新的问题。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_05_g04.mp3?v=f4a1e4712ef7",
+      "lesson": "cur30_6_05",
+      "kind": "grammar"
+    },
+    "cur30_6_05_d01": {
+      "text": "申请奖学金的同学请务必在月底前提交材料。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_05_d01.mp3?v=97dfcc92ce76",
+      "lesson": "cur30_6_05",
+      "kind": "dialogue"
+    },
+    "cur30_6_05_d02": {
+      "text": "推荐信晚几天交可以吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_05_d02.mp3?v=5572d0de4155",
+      "lesson": "cur30_6_05",
+      "kind": "dialogue"
+    },
+    "cur30_6_05_d03": {
+      "text": "恐怕不行，材料不全势必会影响评审结果。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_05_d03.mp3?v=6d34f5444932",
+      "lesson": "cur30_6_05",
+      "kind": "dialogue"
+    },
+    "cur30_6_05_d04": {
+      "text": "明白了，我今天就去找老师。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_05_d04.mp3?v=d342cf9146d8",
+      "lesson": "cur30_6_05",
+      "kind": "dialogue"
+    },
+    "cur30_6_06_g01": {
+      "text": "城市发展很快，与此同时，交通问题也越来越多。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_06_g01.mp3?v=18690f7d3b79",
+      "lesson": "cur30_6_06",
+      "kind": "grammar"
+    },
+    "cur30_6_06_g02": {
+      "text": "此外，我们还需要考虑成本。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_06_g02.mp3?v=610f9b8d317f",
+      "lesson": "cur30_6_06",
+      "kind": "grammar"
+    },
+    "cur30_6_06_g03": {
+      "text": "他没有回复，换句话说，他不同意。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_06_g03.mp3?v=f7a86ba9e67a",
+      "lesson": "cur30_6_06",
+      "kind": "grammar"
+    },
+    "cur30_6_06_g04": {
+      "text": "机会只给有准备的人，也就是说，要早做准备。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_06_g04.mp3?v=efceaede3719",
+      "lesson": "cur30_6_06",
+      "kind": "grammar"
+    },
+    "cur30_6_06_d01": {
+      "text": "近二十年来，城市人口增长了一倍。与此同时，住房和交通压力也明显加大。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_06_d01.mp3?v=23fac92fa242",
+      "lesson": "cur30_6_06",
+      "kind": "dialogue"
+    },
+    "cur30_6_06_d02": {
+      "text": "换句话说，城市的发展速度超过了管理能力？",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_06_d02.mp3?v=81a369c02987",
+      "lesson": "cur30_6_06",
+      "kind": "dialogue"
+    },
+    "cur30_6_06_d03": {
+      "text": "可以这么说。此外，环境问题也不能忽视。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_06_d03.mp3?v=5d7ee0a40c66",
+      "lesson": "cur30_6_06",
+      "kind": "dialogue"
+    },
+    "cur30_6_06_d04": {
+      "text": "总而言之，城市规划需要更长远的眼光。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_06_d04.mp3?v=8fb85d94ba93",
+      "lesson": "cur30_6_06",
+      "kind": "dialogue"
+    },
+    "cur30_6_07_g01": {
+      "text": "莫非你早就知道了？",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_07_g01.mp3?v=b3d7c4980cec",
+      "lesson": "cur30_6_07",
+      "kind": "grammar"
+    },
+    "cur30_6_07_g02": {
+      "text": "他今天没来，莫非生病了？",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_07_g02.mp3?v=7744f9f062ef",
+      "lesson": "cur30_6_07",
+      "kind": "grammar"
+    },
+    "cur30_6_07_g03": {
+      "text": "这样做岂不是浪费时间？",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_07_g03.mp3?v=0b8e098d1385",
+      "lesson": "cur30_6_07",
+      "kind": "grammar"
+    },
+    "cur30_6_07_g04": {
+      "text": "你不去，岂不是让大家失望？",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_07_g04.mp3?v=a1dd62696f59",
+      "lesson": "cur30_6_07",
+      "kind": "grammar"
+    },
+    "cur30_6_07_d01": {
+      "text": "生日快乐！这个蛋糕是大家一起给你准备的。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_07_d01.mp3?v=38237401688d",
+      "lesson": "cur30_6_07",
+      "kind": "dialogue"
+    },
+    "cur30_6_07_d02": {
+      "text": "我一点儿也没想到……莫非这几天你们都在偷偷准备？",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_07_d02.mp3?v=8e30da9051ad",
+      "lesson": "cur30_6_07",
+      "kind": "dialogue"
+    },
+    "cur30_6_07_d03": {
+      "text": "当然！告诉你的话，岂不是就没有惊喜了？",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_07_d03.mp3?v=6d8194412dea",
+      "lesson": "cur30_6_07",
+      "kind": "dialogue"
+    },
+    "cur30_6_07_d04": {
+      "text": "谢谢你们，我太感动了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_07_d04.mp3?v=7834cdbf72dd",
+      "lesson": "cur30_6_07",
+      "kind": "dialogue"
+    },
+    "cur30_6_08_g01": {
+      "text": "他为了实现梦想，不惜一切代价。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_08_g01.mp3?v=b6d86287f628",
+      "lesson": "cur30_6_08",
+      "kind": "grammar"
+    },
+    "cur30_6_08_g02": {
+      "text": "公司不惜重金引进人才。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_08_g02.mp3?v=bab8cca803a1",
+      "lesson": "cur30_6_08",
+      "kind": "grammar"
+    },
+    "cur30_6_08_g03": {
+      "text": "我宁愿自己辛苦一点儿，也不想麻烦别人。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_08_g03.mp3?v=68bc7e591559",
+      "lesson": "cur30_6_08",
+      "kind": "grammar"
+    },
+    "cur30_6_08_g04": {
+      "text": "她宁愿少睡觉，也要把书看完。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_08_g04.mp3?v=786dc2d29ae1",
+      "lesson": "cur30_6_08",
+      "kind": "grammar"
+    },
+    "cur30_6_08_d01": {
+      "text": "听说您辞去了大公司的工作，回乡办农场？",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_08_d01.mp3?v=a0f021cb4bc9",
+      "lesson": "cur30_6_08",
+      "kind": "dialogue"
+    },
+    "cur30_6_08_d02": {
+      "text": "是的。我宁愿收入少一些，也想做自己真正喜欢的事。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_08_d02.mp3?v=9d523922ccf6",
+      "lesson": "cur30_6_08",
+      "kind": "dialogue"
+    },
+    "cur30_6_08_d03": {
+      "text": "家人支持您吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_08_d03.mp3?v=46eaec07e813",
+      "lesson": "cur30_6_08",
+      "kind": "dialogue"
+    },
+    "cur30_6_08_d04": {
+      "text": "一开始反对，后来看到我不惜一切地投入，也就理解了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_08_d04.mp3?v=7cb82f2ed8c5",
+      "lesson": "cur30_6_08",
+      "kind": "dialogue"
+    },
+    "cur30_6_09_g01": {
+      "text": "他一向很守时。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_09_g01.mp3?v=0b75a8766a53",
+      "lesson": "cur30_6_09",
+      "kind": "grammar"
+    },
+    "cur30_6_09_g02": {
+      "text": "中国历来重视教育。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_09_g02.mp3?v=1472688472a0",
+      "lesson": "cur30_6_09",
+      "kind": "grammar"
+    },
+    "cur30_6_09_g03": {
+      "text": "事实恰恰相反。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_09_g03.mp3?v=3dd92bdbbbec",
+      "lesson": "cur30_6_09",
+      "kind": "grammar"
+    },
+    "cur30_6_09_g04": {
+      "text": "我到的时候，他恰好出门了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_09_g04.mp3?v=a1e1eb88ae8b",
+      "lesson": "cur30_6_09",
+      "kind": "grammar"
+    },
+    "cur30_6_09_d01": {
+      "text": "王明今天迟到了半个小时，真少见。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_09_d01.mp3?v=daa1219e0277",
+      "lesson": "cur30_6_09",
+      "kind": "dialogue"
+    },
+    "cur30_6_09_d02": {
+      "text": "是啊，他一向很守时。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_09_d02.mp3?v=377e5c02ff78",
+      "lesson": "cur30_6_09",
+      "kind": "dialogue"
+    },
+    "cur30_6_09_d03": {
+      "text": "我还以为他睡过头了，事实恰恰相反——他早上帮一位老人去了医院。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_09_d03.mp3?v=e2aed8357165",
+      "lesson": "cur30_6_09",
+      "kind": "dialogue"
+    },
+    "cur30_6_09_d04": {
+      "text": "这才是我们认识的王明。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_09_d04.mp3?v=e6457c83807a",
+      "lesson": "cur30_6_09",
+      "kind": "dialogue"
+    },
+    "cur30_6_10_g01": {
+      "text": "你不妨试试这个办法。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_10_g01.mp3?v=b5cdb4154a2a",
+      "lesson": "cur30_6_10",
+      "kind": "grammar"
+    },
+    "cur30_6_10_g02": {
+      "text": "既然有空，何不出去走走？",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_10_g02.mp3?v=982eb695f80d",
+      "lesson": "cur30_6_10",
+      "kind": "grammar"
+    },
+    "cur30_6_10_g03": {
+      "text": "这些证据足以说明问题。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_10_g03.mp3?v=d0a0e4e45a13",
+      "lesson": "cur30_6_10",
+      "kind": "grammar"
+    },
+    "cur30_6_10_g04": {
+      "text": "他的经验足以胜任这份工作。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_10_g04.mp3?v=59dbdd48f050",
+      "lesson": "cur30_6_10",
+      "kind": "grammar"
+    },
+    "cur30_6_10_d01": {
+      "text": "我背单词总是背了就忘。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_10_d01.mp3?v=daf09c15baca",
+      "lesson": "cur30_6_10",
+      "kind": "dialogue"
+    },
+    "cur30_6_10_d02": {
+      "text": "你不妨试试间隔复习，每隔几天复习一次。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_10_d02.mp3?v=0d88980d6196",
+      "lesson": "cur30_6_10",
+      "kind": "dialogue"
+    },
+    "cur30_6_10_d03": {
+      "text": "这个方法有用吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_10_d03.mp3?v=18f0966dc562",
+      "lesson": "cur30_6_10",
+      "kind": "dialogue"
+    },
+    "cur30_6_10_d04": {
+      "text": "很多研究的结果足以证明它的效果。何不从今天开始？",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_10_d04.mp3?v=f716bc1aef44",
+      "lesson": "cur30_6_10",
+      "kind": "dialogue"
+    },
+    "cur30_6_11_g01": {
+      "text": "幸亏你提醒了我，不然我就忘了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_11_g01.mp3?v=184b7f61eaa7",
+      "lesson": "cur30_6_11",
+      "kind": "grammar"
+    },
+    "cur30_6_11_g02": {
+      "text": "路上堵车，好在我们出发得早。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_11_g02.mp3?v=e84f02c361b2",
+      "lesson": "cur30_6_11",
+      "kind": "grammar"
+    },
+    "cur30_6_11_g03": {
+      "text": "带上伞吧，万一下雨呢。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_11_g03.mp3?v=8f50205d0ed0",
+      "lesson": "cur30_6_11",
+      "kind": "grammar"
+    },
+    "cur30_6_11_g04": {
+      "text": "万一有什么事，马上给我打电话。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_11_g04.mp3?v=2a4c1179d187",
+      "lesson": "cur30_6_11",
+      "kind": "grammar"
+    },
+    "cur30_6_11_d01": {
+      "text": "幸亏你提醒我带护照，不然今天就上不了飞机了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_11_d01.mp3?v=29701af3098e",
+      "lesson": "cur30_6_11",
+      "kind": "dialogue"
+    },
+    "cur30_6_11_d02": {
+      "text": "出国旅行最重要的就是证件。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_11_d02.mp3?v=c80ec7db4ea4",
+      "lesson": "cur30_6_11",
+      "kind": "dialogue"
+    },
+    "cur30_6_11_d03": {
+      "text": "我把护照拍了照片存在手机里，万一丢了也有备份。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_11_d03.mp3?v=b108b17922bf",
+      "lesson": "cur30_6_11",
+      "kind": "dialogue"
+    },
+    "cur30_6_11_d04": {
+      "text": "这个习惯很好。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_11_d04.mp3?v=8540220d945d",
+      "lesson": "cur30_6_11",
+      "kind": "dialogue"
+    },
+    "cur30_6_12_g01": {
+      "text": "他不愧是有经验的医生。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_12_g01.mp3?v=e55a00a239f6",
+      "lesson": "cur30_6_12",
+      "kind": "grammar"
+    },
+    "cur30_6_12_g02": {
+      "text": "这家店不愧是百年老店，味道真好。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_12_g02.mp3?v=cf18e27d45d8",
+      "lesson": "cur30_6_12",
+      "kind": "grammar"
+    },
+    "cur30_6_12_g03": {
+      "text": "他似乎有点儿不高兴。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_12_g03.mp3?v=c86f4e67e040",
+      "lesson": "cur30_6_12",
+      "kind": "grammar"
+    },
+    "cur30_6_12_g04": {
+      "text": "站在山顶，仿佛到了另一个世界。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_12_g04.mp3?v=b0745ff12b53",
+      "lesson": "cur30_6_12",
+      "kind": "grammar"
+    },
+    "cur30_6_12_d01": {
+      "text": "我爸爸的手术很成功，陈医生只用了两个小时。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_12_d01.mp3?v=c751f027d3ab",
+      "lesson": "cur30_6_12",
+      "kind": "dialogue"
+    },
+    "cur30_6_12_d02": {
+      "text": "不愧是这方面最有经验的医生。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_12_d02.mp3?v=23a2795a3d16",
+      "lesson": "cur30_6_12",
+      "kind": "dialogue"
+    },
+    "cur30_6_12_d03": {
+      "text": "手术前我爸似乎很紧张，医生跟他聊了很久。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_12_d03.mp3?v=84828ace4d0a",
+      "lesson": "cur30_6_12",
+      "kind": "dialogue"
+    },
+    "cur30_6_12_d04": {
+      "text": "好医生不仅医术高，还懂得关心病人。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_12_d04.mp3?v=3f242d2df374",
+      "lesson": "cur30_6_12",
+      "kind": "dialogue"
+    },
+    "cur30_6_13_g01": {
+      "text": "你早点儿说，免得大家担心。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_13_g01.mp3?v=c2dd80f86188",
+      "lesson": "cur30_6_13",
+      "kind": "grammar"
+    },
+    "cur30_6_13_g02": {
+      "text": "多穿点儿衣服，省得感冒。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_13_g02.mp3?v=35d71faae541",
+      "lesson": "cur30_6_13",
+      "kind": "grammar"
+    },
+    "cur30_6_13_g03": {
+      "text": "我何尝不想去，只是太忙了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_13_g03.mp3?v=bb883aa50426",
+      "lesson": "cur30_6_13",
+      "kind": "grammar"
+    },
+    "cur30_6_13_g04": {
+      "text": "他何尝没努力过？",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_13_g04.mp3?v=94036196c124",
+      "lesson": "cur30_6_13",
+      "kind": "grammar"
+    },
+    "cur30_6_13_d01": {
+      "text": "你周末不来聚会，最好提前在群里说一声，免得大家等你。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_13_d01.mp3?v=9a0204281d85",
+      "lesson": "cur30_6_13",
+      "kind": "dialogue"
+    },
+    "cur30_6_13_d02": {
+      "text": "我何尝不想去，可是那天要搬家。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_13_d02.mp3?v=519f1ebc021f",
+      "lesson": "cur30_6_13",
+      "kind": "dialogue"
+    },
+    "cur30_6_13_d03": {
+      "text": "要不要我们来帮忙？",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_13_d03.mp3?v=88f47222bf27",
+      "lesson": "cur30_6_13",
+      "kind": "dialogue"
+    },
+    "cur30_6_13_d04": {
+      "text": "那太好了，省得我请搬家公司了！",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_13_d04.mp3?v=d0041b2868ff",
+      "lesson": "cur30_6_13",
+      "kind": "dialogue"
+    },
+    "cur30_6_14_g01": {
+      "text": "坚持读书的人更容易成功，由此可见，习惯非常重要。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_14_g01.mp3?v=f66b95d02e45",
+      "lesson": "cur30_6_14",
+      "kind": "grammar"
+    },
+    "cur30_6_14_g02": {
+      "text": "由此可见，这个方法是有效的。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_14_g02.mp3?v=d74b25b06967",
+      "lesson": "cur30_6_14",
+      "kind": "grammar"
+    },
+    "cur30_6_14_g03": {
+      "text": "天赋固然重要，但努力更重要。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_14_g03.mp3?v=8e2fd595f051",
+      "lesson": "cur30_6_14",
+      "kind": "grammar"
+    },
+    "cur30_6_14_g04": {
+      "text": "这个方案固然好，可是成本太高。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_14_g04.mp3?v=b984c21ff16e",
+      "lesson": "cur30_6_14",
+      "kind": "grammar"
+    },
+    "cur30_6_14_d01": {
+      "text": "研究发现，每天阅读半小时的学生，写作成绩普遍更好。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_14_d01.mp3?v=3ad06f041b79",
+      "lesson": "cur30_6_14",
+      "kind": "dialogue"
+    },
+    "cur30_6_14_d02": {
+      "text": "由此可见，好习惯的作用很大。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_14_d02.mp3?v=d3b6d43952ed",
+      "lesson": "cur30_6_14",
+      "kind": "dialogue"
+    },
+    "cur30_6_14_d03": {
+      "text": "没错。天赋固然重要，但长期的积累往往更关键。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_14_d03.mp3?v=34c18dccccbb",
+      "lesson": "cur30_6_14",
+      "kind": "dialogue"
+    },
+    "cur30_6_14_d04": {
+      "text": "我也要养成每天读书的习惯。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_14_d04.mp3?v=6c2e33b9901c",
+      "lesson": "cur30_6_14",
+      "kind": "dialogue"
+    },
+    "cur30_6_15_g01": {
+      "text": "这座古城犹如一幅美丽的画。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_15_g01.mp3?v=22d142530bc8",
+      "lesson": "cur30_6_15",
+      "kind": "grammar"
+    },
+    "cur30_6_15_g02": {
+      "text": "时间如同流水，一去不复返。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_15_g02.mp3?v=a6c487f37eb8",
+      "lesson": "cur30_6_15",
+      "kind": "grammar"
+    },
+    "cur30_6_15_g03": {
+      "text": "这里的风景美极了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_15_g03.mp3?v=50a80a0baca3",
+      "lesson": "cur30_6_15",
+      "kind": "grammar"
+    },
+    "cur30_6_15_g04": {
+      "text": "今天热得要命。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_15_g04.mp3?v=777fb4c06824",
+      "lesson": "cur30_6_15",
+      "kind": "grammar"
+    },
+    "cur30_6_15_d01": {
+      "text": "丽江古城真美，石板路、小河、老房子，犹如一幅水墨画。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_15_d01.mp3?v=01f97a45360d",
+      "lesson": "cur30_6_15",
+      "kind": "dialogue"
+    },
+    "cur30_6_15_d02": {
+      "text": "晚上的灯光更是漂亮极了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_15_d02.mp3?v=f7712031cea4",
+      "lesson": "cur30_6_15",
+      "kind": "dialogue"
+    },
+    "cur30_6_15_d03": {
+      "text": "就是游客多得要命。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_15_d03.mp3?v=c7a185faa7b8",
+      "lesson": "cur30_6_15",
+      "kind": "dialogue"
+    },
+    "cur30_6_15_d04": {
+      "text": "明天早点儿起，清晨的古城安静得很。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_15_d04.mp3?v=cf5216d0fcdf",
+      "lesson": "cur30_6_15",
+      "kind": "dialogue"
+    },
+    "cur30_6_16_g01": {
+      "text": "资料太少，我们无从得知真相。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_16_g01.mp3?v=d703d94480e0",
+      "lesson": "cur30_6_16",
+      "kind": "grammar"
+    },
+    "cur30_6_16_g02": {
+      "text": "他的心情我无法形容。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_16_g02.mp3?v=9821eeabb7be",
+      "lesson": "cur30_6_16",
+      "kind": "grammar"
+    },
+    "cur30_6_16_g03": {
+      "text": "谎言终究会被发现。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_16_g03.mp3?v=84cc021a8b59",
+      "lesson": "cur30_6_16",
+      "kind": "grammar"
+    },
+    "cur30_6_16_g04": {
+      "text": "经过多年研究，他们最终找到了答案。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_16_g04.mp3?v=83b6ee32c54e",
+      "lesson": "cur30_6_16",
+      "kind": "grammar"
+    },
+    "cur30_6_16_d01": {
+      "text": "这座古墓到底是谁的？",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_16_d01.mp3?v=a2bbcdd231ed",
+      "lesson": "cur30_6_16",
+      "kind": "dialogue"
+    },
+    "cur30_6_16_d02": {
+      "text": "目前没有文字记录，我们无从确定。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_16_d02.mp3?v=8ba7b453b3bd",
+      "lesson": "cur30_6_16",
+      "kind": "dialogue"
+    },
+    "cur30_6_16_d03": {
+      "text": "以后能知道吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_16_d03.mp3?v=f111d795150b",
+      "lesson": "cur30_6_16",
+      "kind": "dialogue"
+    },
+    "cur30_6_16_d04": {
+      "text": "随着技术进步，真相终究会被发现的。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_16_d04.mp3?v=a5c24a92f663",
+      "lesson": "cur30_6_16",
+      "kind": "dialogue"
+    },
+    "cur30_6_17_g01": {
+      "text": "你说他会赢，何以见得？",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_17_g01.mp3?v=840b6b7eec94",
+      "lesson": "cur30_6_17",
+      "kind": "grammar"
+    },
+    "cur30_6_17_g02": {
+      "text": "不努力，何以成功？",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_17_g02.mp3?v=a620490d3023",
+      "lesson": "cur30_6_17",
+      "kind": "grammar"
+    },
+    "cur30_6_17_g03": {
+      "text": "我绝不放弃。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_17_g03.mp3?v=66ba6a5b503f",
+      "lesson": "cur30_6_17",
+      "kind": "grammar"
+    },
+    "cur30_6_17_g04": {
+      "text": "这种错误决不能再犯。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_17_g04.mp3?v=2ff26bb8b61d",
+      "lesson": "cur30_6_17",
+      "kind": "grammar"
+    },
+    "cur30_6_17_d01": {
+      "text": "我觉得这次辩论我们一定能赢。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_17_d01.mp3?v=c83da9ea2aba",
+      "lesson": "cur30_6_17",
+      "kind": "dialogue"
+    },
+    "cur30_6_17_d02": {
+      "text": "何以见得？对方准备得也很充分。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_17_d02.mp3?v=b4107d16a5fe",
+      "lesson": "cur30_6_17",
+      "kind": "dialogue"
+    },
+    "cur30_6_17_d03": {
+      "text": "我们的数据更新、更全面。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_17_d03.mp3?v=d8fac0a51abe",
+      "lesson": "cur30_6_17",
+      "kind": "dialogue"
+    },
+    "cur30_6_17_d04": {
+      "text": "好，那我们绝不能轻视对手，再练习一遍吧。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_17_d04.mp3?v=66b84b449cbe",
+      "lesson": "cur30_6_17",
+      "kind": "dialogue"
+    },
+    "cur30_6_18_g01": {
+      "text": "他的成功与其说是运气，不如说是实力。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_18_g01.mp3?v=4d05b6a1e83a",
+      "lesson": "cur30_6_18",
+      "kind": "grammar"
+    },
+    "cur30_6_18_g02": {
+      "text": "这与其说是一本小说，不如说是一部历史。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_18_g02.mp3?v=6561b8225040",
+      "lesson": "cur30_6_18",
+      "kind": "grammar"
+    },
+    "cur30_6_18_g03": {
+      "text": "长期努力必然会有回报。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_18_g03.mp3?v=bdab2ca130b1",
+      "lesson": "cur30_6_18",
+      "kind": "grammar"
+    },
+    "cur30_6_18_g04": {
+      "text": "这是发展的必然结果。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_18_g04.mp3?v=4fa2469d895b",
+      "lesson": "cur30_6_18",
+      "kind": "grammar"
+    },
+    "cur30_6_18_d01": {
+      "text": "有人说你们这次夺冠靠的是运气。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_18_d01.mp3?v=bdb74687d873",
+      "lesson": "cur30_6_18",
+      "kind": "dialogue"
+    },
+    "cur30_6_18_d02": {
+      "text": "与其说是运气，不如说是我们一年的训练。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_18_d02.mp3?v=e902b85436e3",
+      "lesson": "cur30_6_18",
+      "kind": "dialogue"
+    },
+    "cur30_6_18_d03": {
+      "text": "接下来有什么目标？",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_18_d03.mp3?v=d240430881cb",
+      "lesson": "cur30_6_18",
+      "kind": "dialogue"
+    },
+    "cur30_6_18_d04": {
+      "text": "继续努力。只要坚持，必然会有更好的成绩。",
+      "url": "database/prebuilt_audio/curriculum/cur30_6_18_d04.mp3?v=30cba10a910a",
+      "lesson": "cur30_6_18",
+      "kind": "dialogue"
+    },
+    "cur30_7_01_g01": {
+      "text": "他的贡献早已为众人所知。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_01_g01.mp3?v=123a590b0552",
+      "lesson": "cur30_7_01",
+      "kind": "grammar"
+    },
+    "cur30_7_01_g02": {
+      "text": "我们不应为表面现象所迷惑。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_01_g02.mp3?v=e0f1dd28314a",
+      "lesson": "cur30_7_01",
+      "kind": "grammar"
+    },
+    "cur30_7_01_g03": {
+      "text": "他因病而辞职。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_01_g03.mp3?v=b8d6156b8f0e",
+      "lesson": "cur30_7_01",
+      "kind": "grammar"
+    },
+    "cur30_7_01_g04": {
+      "text": "这里冬天寒冷而干燥。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_01_g04.mp3?v=a7f61f65587b",
+      "lesson": "cur30_7_01",
+      "kind": "grammar"
+    },
+    "cur30_7_01_d01": {
+      "text": "张衡发明地动仪的故事为众人所知，您认为他最大的贡献是什么？",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_01_d01.mp3?v=54a7e877f243",
+      "lesson": "cur30_7_01",
+      "kind": "dialogue"
+    },
+    "cur30_7_01_d02": {
+      "text": "在于他用实验而非想象来解释自然。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_01_d02.mp3?v=675368f91603",
+      "lesson": "cur30_7_01",
+      "kind": "dialogue"
+    },
+    "cur30_7_01_d03": {
+      "text": "这种精神在当时并不多见。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_01_d03.mp3?v=131f57746a24",
+      "lesson": "cur30_7_01",
+      "kind": "dialogue"
+    },
+    "cur30_7_01_d04": {
+      "text": "正因如此，他才为后人所敬仰。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_01_d04.mp3?v=cb5221026c06",
+      "lesson": "cur30_7_01",
+      "kind": "dialogue"
+    },
+    "cur30_7_02_g01": {
+      "text": "问题不在于资金，而在于管理。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_02_g01.mp3?v=0a008e012510",
+      "lesson": "cur30_7_02",
+      "kind": "grammar"
+    },
+    "cur30_7_02_g02": {
+      "text": "学习的关键不在于时间长短，而在于方法。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_02_g02.mp3?v=96072daf544d",
+      "lesson": "cur30_7_02",
+      "kind": "grammar"
+    },
+    "cur30_7_02_g03": {
+      "text": "他这么做，无非是想引起注意。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_02_g03.mp3?v=d84b5163077f",
+      "lesson": "cur30_7_02",
+      "kind": "grammar"
+    },
+    "cur30_7_02_g04": {
+      "text": "成功的原因不外乎勤奋和机遇。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_02_g04.mp3?v=0702c209f84e",
+      "lesson": "cur30_7_02",
+      "kind": "grammar"
+    },
+    "cur30_7_02_d01": {
+      "text": "公司这次投入了大量资金，项目还是失败了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_02_d01.mp3?v=3bc3cd53f274",
+      "lesson": "cur30_7_02",
+      "kind": "dialogue"
+    },
+    "cur30_7_02_d02": {
+      "text": "问题不在于钱，而在于团队之间缺乏沟通。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_02_d02.mp3?v=c8490da11507",
+      "lesson": "cur30_7_02",
+      "kind": "dialogue"
+    },
+    "cur30_7_02_d03": {
+      "text": "那下一步怎么改进？",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_02_d03.mp3?v=37794b1b5fc8",
+      "lesson": "cur30_7_02",
+      "kind": "dialogue"
+    },
+    "cur30_7_02_d04": {
+      "text": "无非是明确责任、加强协调这两点。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_02_d04.mp3?v=8410641c76c7",
+      "lesson": "cur30_7_02",
+      "kind": "dialogue"
+    },
+    "cur30_7_03_g01": {
+      "text": "专家尚且没有把握，何况我们这些外行。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_03_g01.mp3?v=6c8275561501",
+      "lesson": "cur30_7_03",
+      "kind": "grammar"
+    },
+    "cur30_7_03_g02": {
+      "text": "大人尚且觉得难，何况孩子呢？",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_03_g02.mp3?v=ba4b91894fef",
+      "lesson": "cur30_7_03",
+      "kind": "grammar"
+    },
+    "cur30_7_03_g03": {
+      "text": "药物非但没有效果，反而产生了副作用。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_03_g03.mp3?v=340b78a3f5a8",
+      "lesson": "cur30_7_03",
+      "kind": "grammar"
+    },
+    "cur30_7_03_g04": {
+      "text": "他非但不认错，反而怪别人。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_03_g04.mp3?v=66e013cbfedf",
+      "lesson": "cur30_7_03",
+      "kind": "grammar"
+    },
+    "cur30_7_03_d01": {
+      "text": "这个领域的研究进展好像很慢。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_03_d01.mp3?v=715e9fd7b7e3",
+      "lesson": "cur30_7_03",
+      "kind": "dialogue"
+    },
+    "cur30_7_03_d02": {
+      "text": "顶尖实验室尚且需要十年，何况我们刚刚起步。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_03_d02.mp3?v=381e60c21c1d",
+      "lesson": "cur30_7_03",
+      "kind": "dialogue"
+    },
+    "cur30_7_03_d03": {
+      "text": "急于求成会不会有问题？",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_03_d03.mp3?v=43eeed5f7f0d",
+      "lesson": "cur30_7_03",
+      "kind": "dialogue"
+    },
+    "cur30_7_03_d04": {
+      "text": "当然。急于求成非但不能加快进度，反而容易出错。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_03_d04.mp3?v=b8fd4a9a3ed8",
+      "lesson": "cur30_7_03",
+      "kind": "dialogue"
+    },
+    "cur30_7_04_g01": {
+      "text": "诚然，网络带来了便利，但也带来了新的问题。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_04_g01.mp3?v=eb78d1566729",
+      "lesson": "cur30_7_04",
+      "kind": "grammar"
+    },
+    "cur30_7_04_g02": {
+      "text": "诚然，这种看法有一定道理，然而并不全面。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_04_g02.mp3?v=7a3f17f3c913",
+      "lesson": "cur30_7_04",
+      "kind": "grammar"
+    },
+    "cur30_7_04_g03": {
+      "text": "计划很完美，然而执行起来困难重重。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_04_g03.mp3?v=51cab4e6e268",
+      "lesson": "cur30_7_04",
+      "kind": "grammar"
+    },
+    "cur30_7_04_g04": {
+      "text": "他失败了很多次，然而从未放弃。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_04_g04.mp3?v=fae346157631",
+      "lesson": "cur30_7_04",
+      "kind": "grammar"
+    },
+    "cur30_7_04_d01": {
+      "text": "有人认为短视频让年轻人失去了深度思考的能力。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_04_d01.mp3?v=dc9d80b2e5d5",
+      "lesson": "cur30_7_04",
+      "kind": "dialogue"
+    },
+    "cur30_7_04_d02": {
+      "text": "诚然，这种担心有一定道理。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_04_d02.mp3?v=7e4d074a9bc8",
+      "lesson": "cur30_7_04",
+      "kind": "dialogue"
+    },
+    "cur30_7_04_d03": {
+      "text": "然而，工具本身无所谓好坏，关键在于如何使用。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_04_d03.mp3?v=beec2ce9460f",
+      "lesson": "cur30_7_04",
+      "kind": "dialogue"
+    },
+    "cur30_7_04_d04": {
+      "text": "也就是说，责任在于使用者自身。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_04_d04.mp3?v=657525387a1e",
+      "lesson": "cur30_7_04",
+      "kind": "dialogue"
+    },
+    "cur30_7_05_g01": {
+      "text": "很多人拼命赚钱，殊不知健康比财富更重要。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_05_g01.mp3?v=53e596a875fc",
+      "lesson": "cur30_7_05",
+      "kind": "grammar"
+    },
+    "cur30_7_05_g02": {
+      "text": "他以为自己很聪明，殊不知早被人看穿了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_05_g02.mp3?v=005d6140468c",
+      "lesson": "cur30_7_05",
+      "kind": "grammar"
+    },
+    "cur30_7_05_g03": {
+      "text": "他动辄发脾气。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_05_g03.mp3?v=78c32278b16e",
+      "lesson": "cur30_7_05",
+      "kind": "grammar"
+    },
+    "cur30_7_05_g04": {
+      "text": "一些商品动辄上万元。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_05_g04.mp3?v=72ede512df90",
+      "lesson": "cur30_7_05",
+      "kind": "grammar"
+    },
+    "cur30_7_05_d01": {
+      "text": "现在很多年轻人动辄熬夜到两三点。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_05_d01.mp3?v=678a0625b2dc",
+      "lesson": "cur30_7_05",
+      "kind": "dialogue"
+    },
+    "cur30_7_05_d02": {
+      "text": "他们觉得年轻身体好，殊不知长期熬夜危害很大。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_05_d02.mp3?v=25cd0f5c3a0b",
+      "lesson": "cur30_7_05",
+      "kind": "dialogue"
+    },
+    "cur30_7_05_d03": {
+      "text": "等发现问题就晚了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_05_d03.mp3?v=fea1ce90a0bc",
+      "lesson": "cur30_7_05",
+      "kind": "dialogue"
+    },
+    "cur30_7_05_d04": {
+      "text": "所以要防患于未然。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_05_d04.mp3?v=b4d024004c7b",
+      "lesson": "cur30_7_05",
+      "kind": "dialogue"
+    },
+    "cur30_7_06_g01": {
+      "text": "惟有坚持，才能看到希望。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_06_g01.mp3?v=779b1c7606cf",
+      "lesson": "cur30_7_06",
+      "kind": "grammar"
+    },
+    "cur30_7_06_g02": {
+      "text": "唯有不断创新，企业才能生存。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_06_g02.mp3?v=5482ae555387",
+      "lesson": "cur30_7_06",
+      "kind": "grammar"
+    },
+    "cur30_7_06_g03": {
+      "text": "这个产品一经推出，便受到欢迎。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_06_g03.mp3?v=d51a4bac9593",
+      "lesson": "cur30_7_06",
+      "kind": "grammar"
+    },
+    "cur30_7_06_g04": {
+      "text": "合同一经签订，便具有法律效力。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_06_g04.mp3?v=19cbab77d2f7",
+      "lesson": "cur30_7_06",
+      "kind": "grammar"
+    },
+    "cur30_7_06_d01": {
+      "text": "您的小说一经出版便成为畅销书，有什么秘诀吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_06_d01.mp3?v=921ec647922e",
+      "lesson": "cur30_7_06",
+      "kind": "dialogue"
+    },
+    "cur30_7_06_d02": {
+      "text": "没有秘诀。这部作品我写了整整八年。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_06_d02.mp3?v=548c70ec1a21",
+      "lesson": "cur30_7_06",
+      "kind": "dialogue"
+    },
+    "cur30_7_06_d03": {
+      "text": "中间想过放弃吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_06_d03.mp3?v=8320bf5a3f45",
+      "lesson": "cur30_7_06",
+      "kind": "dialogue"
+    },
+    "cur30_7_06_d04": {
+      "text": "想过很多次。可我相信，惟有坚持，才能看到希望。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_06_d04.mp3?v=c02847de640c",
+      "lesson": "cur30_7_06",
+      "kind": "dialogue"
+    },
+    "cur30_7_07_g01": {
+      "text": "且不说价格，单是质量就有问题。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_07_g01.mp3?v=eef8148073a5",
+      "lesson": "cur30_7_07",
+      "kind": "grammar"
+    },
+    "cur30_7_07_g02": {
+      "text": "且不说出国，就是去外地他也没去过。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_07_g02.mp3?v=412b82b335b2",
+      "lesson": "cur30_7_07",
+      "kind": "grammar"
+    },
+    "cur30_7_07_g03": {
+      "text": "参加比赛的人中不乏高手。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_07_g03.mp3?v=f042a6220eb7",
+      "lesson": "cur30_7_07",
+      "kind": "grammar"
+    },
+    "cur30_7_07_g04": {
+      "text": "历史上不乏这样的例子。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_07_g04.mp3?v=9459fa2e8e69",
+      "lesson": "cur30_7_07",
+      "kind": "grammar"
+    },
+    "cur30_7_07_d01": {
+      "text": "这款网红产品你怎么看？",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_07_d01.mp3?v=291d44af5b70",
+      "lesson": "cur30_7_07",
+      "kind": "dialogue"
+    },
+    "cur30_7_07_d02": {
+      "text": "且不说价格偏高，单是售后服务就让人不放心。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_07_d02.mp3?v=3688d88bbab9",
+      "lesson": "cur30_7_07",
+      "kind": "dialogue"
+    },
+    "cur30_7_07_d03": {
+      "text": "可评论里不乏好评。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_07_d03.mp3?v=02cd8e2924d5",
+      "lesson": "cur30_7_07",
+      "kind": "dialogue"
+    },
+    "cur30_7_07_d04": {
+      "text": "其中有多少是真实的，就很难说了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_07_d04.mp3?v=17ef7e97e472",
+      "lesson": "cur30_7_07",
+      "kind": "dialogue"
+    },
+    "cur30_7_08_g01": {
+      "text": "截至目前，已有三千人报名。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_08_g01.mp3?v=d69650dd85db",
+      "lesson": "cur30_7_08",
+      "kind": "grammar"
+    },
+    "cur30_7_08_g02": {
+      "text": "报名将于本月底截止。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_08_g02.mp3?v=9041d478e78a",
+      "lesson": "cur30_7_08",
+      "kind": "grammar"
+    },
+    "cur30_7_08_g03": {
+      "text": "参赛者均需提前报到。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_08_g03.mp3?v=78d28b9289c9",
+      "lesson": "cur30_7_08",
+      "kind": "grammar"
+    },
+    "cur30_7_08_g04": {
+      "text": "此事人人皆知。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_08_g04.mp3?v=9fd6e5e7519e",
+      "lesson": "cur30_7_08",
+      "kind": "grammar"
+    },
+    "cur30_7_08_d01": {
+      "text": "国际马拉松赛报名情况如何？",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_08_d01.mp3?v=b37e31c8553a",
+      "lesson": "cur30_7_08",
+      "kind": "dialogue"
+    },
+    "cur30_7_08_d02": {
+      "text": "截至昨天下午五点，已有三万两千人报名。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_08_d02.mp3?v=6a168436aa8a",
+      "lesson": "cur30_7_08",
+      "kind": "dialogue"
+    },
+    "cur30_7_08_d03": {
+      "text": "对参赛者有什么要求？",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_08_d03.mp3?v=03848e032029",
+      "lesson": "cur30_7_08",
+      "kind": "dialogue"
+    },
+    "cur30_7_08_d04": {
+      "text": "参赛者均需提供健康证明，外籍选手亦须持有效证件。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_08_d04.mp3?v=e3b8ba6da28b",
+      "lesson": "cur30_7_08",
+      "kind": "dialogue"
+    },
+    "cur30_7_09_g01": {
+      "text": "归根结底，这是教育的问题。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_09_g01.mp3?v=6c4269e8e543",
+      "lesson": "cur30_7_09",
+      "kind": "grammar"
+    },
+    "cur30_7_09_g02": {
+      "text": "说到底，还是要靠自己。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_09_g02.mp3?v=405b08685e47",
+      "lesson": "cur30_7_09",
+      "kind": "grammar"
+    },
+    "cur30_7_09_g03": {
+      "text": "改革应着眼于长远发展。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_09_g03.mp3?v=bb4a1bf71103",
+      "lesson": "cur30_7_09",
+      "kind": "grammar"
+    },
+    "cur30_7_09_g04": {
+      "text": "我们着眼于解决实际问题。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_09_g04.mp3?v=d5199f24a2fa",
+      "lesson": "cur30_7_09",
+      "kind": "grammar"
+    },
+    "cur30_7_09_d01": {
+      "text": "社会上的诚信问题越来越受关注。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_09_d01.mp3?v=4fc41328f704",
+      "lesson": "cur30_7_09",
+      "kind": "dialogue"
+    },
+    "cur30_7_09_d02": {
+      "text": "法律固然重要，归根结底还是教育的问题。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_09_d02.mp3?v=efdf5130aa2b",
+      "lesson": "cur30_7_09",
+      "kind": "dialogue"
+    },
+    "cur30_7_09_d03": {
+      "text": "那教育应该怎么做？",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_09_d03.mp3?v=0fa34e383185",
+      "lesson": "cur30_7_09",
+      "kind": "dialogue"
+    },
+    "cur30_7_09_d04": {
+      "text": "要着眼于品格培养，而不只是考试成绩。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_09_d04.mp3?v=8de3b54249b6",
+      "lesson": "cur30_7_09",
+      "kind": "dialogue"
+    },
+    "cur30_7_10_g01": {
+      "text": "政府对此予以高度重视。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_10_g01.mp3?v=7bed86d88325",
+      "lesson": "cur30_7_10",
+      "kind": "grammar"
+    },
+    "cur30_7_10_g02": {
+      "text": "学校给予他奖励。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_10_g02.mp3?v=fc5720339abb",
+      "lesson": "cur30_7_10",
+      "kind": "grammar"
+    },
+    "cur30_7_10_g03": {
+      "text": "暴雨致使多条道路中断。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_10_g03.mp3?v=5018ffbe553c",
+      "lesson": "cur30_7_10",
+      "kind": "grammar"
+    },
+    "cur30_7_10_g04": {
+      "text": "管理不善，致使公司亏损。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_10_g04.mp3?v=241ba71826d2",
+      "lesson": "cur30_7_10",
+      "kind": "grammar"
+    },
+    "cur30_7_10_d01": {
+      "text": "上周的暴雨致使城市部分地区停电，市政府如何应对？",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_10_d01.mp3?v=0a7036b981f9",
+      "lesson": "cur30_7_10",
+      "kind": "dialogue"
+    },
+    "cur30_7_10_d02": {
+      "text": "市政府对此予以高度重视，第一时间组织了抢修。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_10_d02.mp3?v=c18fe3efced6",
+      "lesson": "cur30_7_10",
+      "kind": "dialogue"
+    },
+    "cur30_7_10_d03": {
+      "text": "受影响的居民能得到补偿吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_10_d03.mp3?v=f4beb167770b",
+      "lesson": "cur30_7_10",
+      "kind": "dialogue"
+    },
+    "cur30_7_10_d04": {
+      "text": "对受损家庭将给予一定的补助。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_10_d04.mp3?v=3eda3f02ea5e",
+      "lesson": "cur30_7_10",
+      "kind": "dialogue"
+    },
+    "cur30_7_11_g01": {
+      "text": "空气质量有所改善。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_11_g01.mp3?v=aee962efb62f",
+      "lesson": "cur30_7_11",
+      "kind": "grammar"
+    },
+    "cur30_7_11_g02": {
+      "text": "今年的收入有所增加。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_11_g02.mp3?v=b1ab15059e58",
+      "lesson": "cur30_7_11",
+      "kind": "grammar"
+    },
+    "cur30_7_11_g03": {
+      "text": "我们将继续努力，以期取得更好的成绩。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_11_g03.mp3?v=9cbd7a9d63f1",
+      "lesson": "cur30_7_11",
+      "kind": "grammar"
+    },
+    "cur30_7_11_g04": {
+      "text": "政府加大投入，以期改善环境。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_11_g04.mp3?v=618a75ec6222",
+      "lesson": "cur30_7_11",
+      "kind": "grammar"
+    },
+    "cur30_7_11_d01": {
+      "text": "近年来城市的空气质量怎么样？",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_11_d01.mp3?v=3e8f75fe7a82",
+      "lesson": "cur30_7_11",
+      "kind": "dialogue"
+    },
+    "cur30_7_11_d02": {
+      "text": "整体有所改善，但冬季的问题依然突出。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_11_d02.mp3?v=8aa7669738be",
+      "lesson": "cur30_7_11",
+      "kind": "dialogue"
+    },
+    "cur30_7_11_d03": {
+      "text": "下一步有什么措施？",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_11_d03.mp3?v=e92b7460c967",
+      "lesson": "cur30_7_11",
+      "kind": "dialogue"
+    },
+    "cur30_7_11_d04": {
+      "text": "推广清洁能源，以期从根本上解决问题。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_11_d04.mp3?v=3eb157c3a3a4",
+      "lesson": "cur30_7_11",
+      "kind": "dialogue"
+    },
+    "cur30_7_12_g01": {
+      "text": "但凡有一点儿办法，我也不会麻烦你。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_12_g01.mp3?v=a2f39f06ea67",
+      "lesson": "cur30_7_12",
+      "kind": "grammar"
+    },
+    "cur30_7_12_g02": {
+      "text": "但凡去过的人，都说那里很美。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_12_g02.mp3?v=ccb2fa7a0825",
+      "lesson": "cur30_7_12",
+      "kind": "grammar"
+    },
+    "cur30_7_12_g03": {
+      "text": "过期申请一律不予受理。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_12_g03.mp3?v=488a9469df98",
+      "lesson": "cur30_7_12",
+      "kind": "grammar"
+    },
+    "cur30_7_12_g04": {
+      "text": "对这些说法，他一概不信。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_12_g04.mp3?v=68fa261ab72e",
+      "lesson": "cur30_7_12",
+      "kind": "grammar"
+    },
+    "cur30_7_12_d01": {
+      "text": "王明，能不能借我一点儿钱？但凡有别的办法，我也不会开口。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_12_d01.mp3?v=392148da84f7",
+      "lesson": "cur30_7_12",
+      "kind": "dialogue"
+    },
+    "cur30_7_12_d02": {
+      "text": "出什么事了？",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_12_d02.mp3?v=b7ef13e12fbf",
+      "lesson": "cur30_7_12",
+      "kind": "dialogue"
+    },
+    "cur30_7_12_d03": {
+      "text": "房东突然要求提前交半年房租，而且一律不接受分期。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_12_d03.mp3?v=ee25814fc28b",
+      "lesson": "cur30_7_12",
+      "kind": "dialogue"
+    },
+    "cur30_7_12_d04": {
+      "text": "别着急，朋友之间就是要互相帮忙。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_12_d04.mp3?v=4234b994f6b1",
+      "lesson": "cur30_7_12",
+      "kind": "dialogue"
+    },
+    "cur30_7_13_g01": {
+      "text": "这个办法可谓一举两得。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_13_g01.mp3?v=464999572554",
+      "lesson": "cur30_7_13",
+      "kind": "grammar"
+    },
+    "cur30_7_13_g02": {
+      "text": "他的一生可谓传奇。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_13_g02.mp3?v=eb71b41f6db5",
+      "lesson": "cur30_7_13",
+      "kind": "grammar"
+    },
+    "cur30_7_13_g03": {
+      "text": "换个角度看，这未尝不是一件好事。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_13_g03.mp3?v=6f2f1dde6006",
+      "lesson": "cur30_7_13",
+      "kind": "grammar"
+    },
+    "cur30_7_13_g04": {
+      "text": "这个建议未尝不可。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_13_g04.mp3?v=ef2496e05497",
+      "lesson": "cur30_7_13",
+      "kind": "grammar"
+    },
+    "cur30_7_13_d01": {
+      "text": "我骑车上班，既锻炼身体又省了交通费。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_13_d01.mp3?v=dcfb7b86acb6",
+      "lesson": "cur30_7_13",
+      "kind": "dialogue"
+    },
+    "cur30_7_13_d02": {
+      "text": "这可谓一举两得。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_13_d02.mp3?v=91477743379a",
+      "lesson": "cur30_7_13",
+      "kind": "dialogue"
+    },
+    "cur30_7_13_d03": {
+      "text": "就是下雨天有点儿麻烦。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_13_d03.mp3?v=b9316dabf5ea",
+      "lesson": "cur30_7_13",
+      "kind": "dialogue"
+    },
+    "cur30_7_13_d04": {
+      "text": "下雨天坐地铁，顺便看看书，也未尝不是一种享受。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_13_d04.mp3?v=7543d29a8f67",
+      "lesson": "cur30_7_13",
+      "kind": "dialogue"
+    },
+    "cur30_7_14_g01": {
+      "text": "从长远来看，这项改革利大于弊。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_14_g01.mp3?v=78297328501e",
+      "lesson": "cur30_7_14",
+      "kind": "grammar"
+    },
+    "cur30_7_14_g02": {
+      "text": "从数据来看，市场正在恢复。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_14_g02.mp3?v=ca88dc3ffd88",
+      "lesson": "cur30_7_14",
+      "kind": "grammar"
+    },
+    "cur30_7_14_g03": {
+      "text": "今年的增长率高于去年。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_14_g03.mp3?v=cb38be806cd1",
+      "lesson": "cur30_7_14",
+      "kind": "grammar"
+    },
+    "cur30_7_14_g04": {
+      "text": "支出不能大于收入。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_14_g04.mp3?v=588235ab8df3",
+      "lesson": "cur30_7_14",
+      "kind": "grammar"
+    },
+    "cur30_7_14_d01": {
+      "text": "很多人反对提高环保标准，说会增加企业成本。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_14_d01.mp3?v=8c4be9f3ba9d",
+      "lesson": "cur30_7_14",
+      "kind": "dialogue"
+    },
+    "cur30_7_14_d02": {
+      "text": "短期看确实如此，但从长远来看，利大于弊。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_14_d02.mp3?v=f0c6c55f1ea5",
+      "lesson": "cur30_7_14",
+      "kind": "dialogue"
+    },
+    "cur30_7_14_d03": {
+      "text": "有数据支持吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_14_d03.mp3?v=bbba3c179246",
+      "lesson": "cur30_7_14",
+      "kind": "dialogue"
+    },
+    "cur30_7_14_d04": {
+      "text": "研究显示，绿色企业的平均寿命明显高于传统企业。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_14_d04.mp3?v=8b650def3533",
+      "lesson": "cur30_7_14",
+      "kind": "dialogue"
+    },
+    "cur30_7_15_g01": {
+      "text": "即便如此，我们也不能放松警惕。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_15_g01.mp3?v=8f8e58188370",
+      "lesson": "cur30_7_15",
+      "kind": "grammar"
+    },
+    "cur30_7_15_g02": {
+      "text": "即便困难再大，也要按时完成。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_15_g02.mp3?v=31001f209331",
+      "lesson": "cur30_7_15",
+      "kind": "grammar"
+    },
+    "cur30_7_15_g03": {
+      "text": "这个问题不容忽视。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_15_g03.mp3?v=4ae0e5819b48",
+      "lesson": "cur30_7_15",
+      "kind": "grammar"
+    },
+    "cur30_7_15_g04": {
+      "text": "事实不容置疑。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_15_g04.mp3?v=55be1937c27b",
+      "lesson": "cur30_7_15",
+      "kind": "grammar"
+    },
+    "cur30_7_15_d01": {
+      "text": "流感病例已连续两周下降。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_15_d01.mp3?v=261f27a2c301",
+      "lesson": "cur30_7_15",
+      "kind": "dialogue"
+    },
+    "cur30_7_15_d02": {
+      "text": "是的，但即便如此，我们也不能放松。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_15_d02.mp3?v=ef1c2f1fb2a9",
+      "lesson": "cur30_7_15",
+      "kind": "dialogue"
+    },
+    "cur30_7_15_d03": {
+      "text": "您对市民有什么建议？",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_15_d03.mp3?v=124f5c3618c1",
+      "lesson": "cur30_7_15",
+      "kind": "dialogue"
+    },
+    "cur30_7_15_d04": {
+      "text": "老人和儿童的防护不容忽视，建议及时接种疫苗。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_15_d04.mp3?v=14075c32417a",
+      "lesson": "cur30_7_15",
+      "kind": "dialogue"
+    },
+    "cur30_7_16_g01": {
+      "text": "这个发现就连专家也感到意外。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_16_g01.mp3?v=0b4a9df586de",
+      "lesson": "cur30_7_16",
+      "kind": "grammar"
+    },
+    "cur30_7_16_g02": {
+      "text": "就连小孩子都明白这个道理。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_16_g02.mp3?v=34381a97d570",
+      "lesson": "cur30_7_16",
+      "kind": "grammar"
+    },
+    "cur30_7_16_g03": {
+      "text": "宇宙何其广阔！",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_16_g03.mp3?v=4857b9942e5d",
+      "lesson": "cur30_7_16",
+      "kind": "grammar"
+    },
+    "cur30_7_16_g04": {
+      "text": "这样的机会何其难得。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_16_g04.mp3?v=13c20f052a15",
+      "lesson": "cur30_7_16",
+      "kind": "grammar"
+    },
+    "cur30_7_16_d01": {
+      "text": "听说考古队在沙漠里发现了一座古城？",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_16_d01.mp3?v=471d537e9acc",
+      "lesson": "cur30_7_16",
+      "kind": "dialogue"
+    },
+    "cur30_7_16_d02": {
+      "text": "是的，保存得非常完整，就连我们也感到意外。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_16_d02.mp3?v=d68f023eb666",
+      "lesson": "cur30_7_16",
+      "kind": "dialogue"
+    },
+    "cur30_7_16_d03": {
+      "text": "这对研究有什么意义？",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_16_d03.mp3?v=9021f7568d17",
+      "lesson": "cur30_7_16",
+      "kind": "dialogue"
+    },
+    "cur30_7_16_d04": {
+      "text": "它能告诉我们古代丝绸之路的贸易何其繁荣。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_16_d04.mp3?v=64d69ad2d961",
+      "lesson": "cur30_7_16",
+      "kind": "dialogue"
+    },
+    "cur30_7_17_g01": {
+      "text": "资源有限，因而必须合理分配。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_17_g01.mp3?v=5b41efd101bc",
+      "lesson": "cur30_7_17",
+      "kind": "grammar"
+    },
+    "cur30_7_17_g02": {
+      "text": "条件不足，故而暂缓实施。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_17_g02.mp3?v=438442c2ebb7",
+      "lesson": "cur30_7_17",
+      "kind": "grammar"
+    },
+    "cur30_7_17_g03": {
+      "text": "南方多雨，北方则比较干燥。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_17_g03.mp3?v=38d114bcd822",
+      "lesson": "cur30_7_17",
+      "kind": "grammar"
+    },
+    "cur30_7_17_g04": {
+      "text": "欲速则不达。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_17_g04.mp3?v=ee287f604614",
+      "lesson": "cur30_7_17",
+      "kind": "grammar"
+    },
+    "cur30_7_17_d01": {
+      "text": "城市人口仍在增长，而土地资源有限，因而必须提高土地利用效率。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_17_d01.mp3?v=13d4f40f1526",
+      "lesson": "cur30_7_17",
+      "kind": "dialogue"
+    },
+    "cur30_7_17_d02": {
+      "text": "老师，大城市和小城市的情况一样吗？",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_17_d02.mp3?v=f7287550f6e3",
+      "lesson": "cur30_7_17",
+      "kind": "dialogue"
+    },
+    "cur30_7_17_d03": {
+      "text": "大城市面临拥挤，小城市则面临人口外流。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_17_d03.mp3?v=9b45121ef135",
+      "lesson": "cur30_7_17",
+      "kind": "dialogue"
+    },
+    "cur30_7_17_d04": {
+      "text": "故而政策也应因地制宜。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_17_d04.mp3?v=7cc9d93d1caa",
+      "lesson": "cur30_7_17",
+      "kind": "dialogue"
+    },
+    "cur30_7_18_g01": {
+      "text": "有鉴于此，特制定本办法。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_18_g01.mp3?v=38edd9a1bb1b",
+      "lesson": "cur30_7_18",
+      "kind": "grammar"
+    },
+    "cur30_7_18_g02": {
+      "text": "为此，公司成立了专门小组。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_18_g02.mp3?v=50fece737a2f",
+      "lesson": "cur30_7_18",
+      "kind": "grammar"
+    },
+    "cur30_7_18_g03": {
+      "text": "失败乃成功之母。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_18_g03.mp3?v=b177ff672ffe",
+      "lesson": "cur30_7_18",
+      "kind": "grammar"
+    },
+    "cur30_7_18_g04": {
+      "text": "此事系误会。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_18_g04.mp3?v=a712d63e0b06",
+      "lesson": "cur30_7_18",
+      "kind": "grammar"
+    },
+    "cur30_7_18_d01": {
+      "text": "近年来，部分小区存在垃圾分类执行不到位的情况。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_18_d01.mp3?v=259891a2fb44",
+      "lesson": "cur30_7_18",
+      "kind": "dialogue"
+    },
+    "cur30_7_18_d02": {
+      "text": "有鉴于此，特制定本办法，自下月起施行。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_18_d02.mp3?v=00d59af046aa",
+      "lesson": "cur30_7_18",
+      "kind": "dialogue"
+    },
+    "cur30_7_18_d03": {
+      "text": "对违反规定的行为如何处理？",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_18_d03.mp3?v=684e6c32ae9d",
+      "lesson": "cur30_7_18",
+      "kind": "dialogue"
+    },
+    "cur30_7_18_d04": {
+      "text": "首次以提醒为主，屡次违反者将依法处理。保护环境乃每位市民的责任。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_18_d04.mp3?v=a5289f72ed4c",
+      "lesson": "cur30_7_18",
+      "kind": "dialogue"
+    },
+    "cur30_7_19_g01": {
+      "text": "这与其说是巧合，毋宁说是必然。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_19_g01.mp3?v=d2ff29cd9214",
+      "lesson": "cur30_7_19",
+      "kind": "grammar"
+    },
+    "cur30_7_19_g02": {
+      "text": "与其坐而论道，毋宁起而行之。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_19_g02.mp3?v=b6bc9fcc23e1",
+      "lesson": "cur30_7_19",
+      "kind": "grammar"
+    },
+    "cur30_7_19_g03": {
+      "text": "这是成功之道。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_19_g03.mp3?v=cb4fb1789c67",
+      "lesson": "cur30_7_19",
+      "kind": "grammar"
+    },
+    "cur30_7_19_g04": {
+      "text": "长城是世界奇迹之一。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_19_g04.mp3?v=7ff5654c12f4",
+      "lesson": "cur30_7_19",
+      "kind": "grammar"
+    },
+    "cur30_7_19_d01": {
+      "text": "他们两人在异国重逢，真是太巧了。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_19_d01.mp3?v=2bbf6f921b41",
+      "lesson": "cur30_7_19",
+      "kind": "dialogue"
+    },
+    "cur30_7_19_d02": {
+      "text": "与其说是巧合，毋宁说是必然。他们都在追求同一个梦想。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_19_d02.mp3?v=ffa3ae846969",
+      "lesson": "cur30_7_19",
+      "kind": "dialogue"
+    },
+    "cur30_7_19_d03": {
+      "text": "所以走到了同一个地方。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_19_d03.mp3?v=0953e87b618b",
+      "lesson": "cur30_7_19",
+      "kind": "dialogue"
+    },
+    "cur30_7_19_d04": {
+      "text": "志同道合，这正是友谊之本。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_19_d04.mp3?v=b894beb5e3f8",
+      "lesson": "cur30_7_19",
+      "kind": "dialogue"
+    },
+    "cur30_7_20_g01": {
+      "text": "工作务求实效。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_20_g01.mp3?v=092d6dc7f2f3",
+      "lesson": "cur30_7_20",
+      "kind": "grammar"
+    },
+    "cur30_7_20_g02": {
+      "text": "翻译力求准确。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_20_g02.mp3?v=e8d1c351cad6",
+      "lesson": "cur30_7_20",
+      "kind": "grammar"
+    },
+    "cur30_7_20_g03": {
+      "text": "学习切忌急于求成。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_20_g03.mp3?v=df8c13adc2a8",
+      "lesson": "cur30_7_20",
+      "kind": "grammar"
+    },
+    "cur30_7_20_g04": {
+      "text": "请切勿将贵重物品留在车内。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_20_g04.mp3?v=c5bdf00e1ec2",
+      "lesson": "cur30_7_20",
+      "kind": "grammar"
+    },
+    "cur30_7_20_d01": {
+      "text": "新项目启动在即，我讲两点要求。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_20_d01.mp3?v=f864695ff62e",
+      "lesson": "cur30_7_20",
+      "kind": "dialogue"
+    },
+    "cur30_7_20_d02": {
+      "text": "第一，务求实效，每项任务都要有明确结果。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_20_d02.mp3?v=dcdba6f454df",
+      "lesson": "cur30_7_20",
+      "kind": "dialogue"
+    },
+    "cur30_7_20_d03": {
+      "text": "第二，切忌空谈，有问题当场提出，当场解决。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_20_d03.mp3?v=3c1e7c7eee3d",
+      "lesson": "cur30_7_20",
+      "kind": "dialogue"
+    },
+    "cur30_7_20_d04": {
+      "text": "明白，我们力求在月底前完成第一阶段。",
+      "url": "database/prebuilt_audio/curriculum/cur30_7_20_d04.mp3?v=60402220fbdf",
+      "lesson": "cur30_7_20",
+      "kind": "dialogue"
+    }
+  }
+}

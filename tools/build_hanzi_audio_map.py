@@ -32,6 +32,18 @@ def strip_html_tags(text: str) -> str:
     return TAG_RE.sub("", text or "").strip()
 
 
+def _add_sentence_mapping(mapping: dict[str, str], text: str, audio_url: str) -> None:
+    """Register a sentence and its unpunctuated variant if not already mapped."""
+    clean_text = strip_html_tags(text)
+    if not clean_text:
+        return
+    if clean_text not in mapping:
+        mapping[clean_text] = audio_url
+    no_punct = clean_text.rstrip("。！？!?., \t\n\r")
+    if no_punct and no_punct not in mapping:
+        mapping[no_punct] = audio_url
+
+
 def build_hanzi_audio_map() -> dict[str, str]:
     mapping: dict[str, str] = {}
 
@@ -45,6 +57,12 @@ def build_hanzi_audio_map() -> dict[str, str]:
 
         items = manifest.get("items", {})
         if not items:
+            continue
+
+        if level_name == "curriculum":
+            for entry in items.values():
+                if isinstance(entry, dict) and entry.get("text") and entry.get("url"):
+                    _add_sentence_mapping(mapping, str(entry["text"]), str(entry["url"]))
             continue
 
         if level_name.startswith("hsk30_"):
@@ -86,13 +104,7 @@ def build_hanzi_audio_map() -> dict[str, str]:
             example_audio = audio_info.get("example")
             example_zh = vocab_entry.get("example_zh")
             if example_audio and example_zh:
-                clean_example = strip_html_tags(example_zh)
-                if clean_example:
-                    if clean_example not in mapping:
-                        mapping[clean_example] = example_audio
-                    no_punct = clean_example.rstrip("。！？!?., \t\n\r")
-                    if no_punct and no_punct not in mapping:
-                        mapping[no_punct] = example_audio
+                _add_sentence_mapping(mapping, example_zh, example_audio)
 
     return mapping
 
