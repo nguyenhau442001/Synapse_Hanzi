@@ -19,8 +19,22 @@
   line-height: var(--lh-body);
 }
 
+/* Lesson workspace: the app shell widens while a lesson is open so the
+   header and the two-column workspace share one container edge. */
+body.curriculum-view-active:has(#screenCurriculum .cur-lesson) {
+  --app-shell-max-width: 1450px;
+}
+
+.cur-lesson {
+  --cur-ws-gap: var(--space-5);
+  --cur-section-gap: var(--space-5);
+  --cur-sticky-top: 88px;
+  --cur-aside-min: 272px;
+}
+
 .cur-lesson.cur-wrap {
-  max-width: 960px;
+  max-width: none;
+  gap: var(--space-3);
 }
 
 .cur-sr-only {
@@ -866,16 +880,36 @@
 }
 
 .cur-lesson-head {
-  padding: 28px;
-  gap: 14px;
+  padding: var(--space-5);
+  gap: var(--space-4);
+}
+
+.cur-lesson-head-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-3) var(--space-5);
+}
+
+.cur-lesson-head-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  min-width: 0;
+}
+
+.cur-lesson-head .cur-tags {
+  justify-content: flex-end;
+  max-width: 520px;
 }
 
 .cur-lesson-title {
   margin: 0;
   font-family: var(--font-zh);
   font-weight: 600;
-  font-size: clamp(30px, 4vw, 36px);
-  line-height: 1.15;
+  font-size: clamp(28px, 3vw, 34px);
+  line-height: 1.2;
   outline: none;
 }
 
@@ -894,7 +928,7 @@
   font-size: 13px;
   background: var(--surface-chip);
   border-radius: var(--radius-pill);
-  padding: 6px 12px;
+  padding: 4px 12px;
 }
 
 .cur-sections {
@@ -902,7 +936,7 @@
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 8px;
   border-top: 1px solid var(--border-subtle);
-  padding-top: 16px;
+  padding-top: var(--space-4);
 }
 
 .cur-section-link {
@@ -915,6 +949,27 @@
   color: var(--text-primary);
   font: 500 14px var(--font-sans);
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  text-align: left;
+}
+
+.cur-section-link-meta {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-tertiary);
+  white-space: nowrap;
+}
+
+@container cur-main (max-width: 760px) {
+  .cur-section-link-meta { display: none; }
+
+  .cur-lesson-head .cur-tags {
+    justify-content: flex-start;
+    max-width: none;
+  }
 }
 
 .cur-section-link.is-first {
@@ -937,7 +992,7 @@
 .cur-section {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: var(--space-3);
   scroll-margin-top: 96px;
 }
 
@@ -949,19 +1004,35 @@
   justify-content: space-between;
 }
 
-/* Vocabulary */
+/* Vocabulary: column count follows the main column width (container query),
+   so it adapts to the sidebar as well as the viewport. */
 .cur-word-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
+}
+
+@container cur-main (min-width: 600px) {
+  .cur-word-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@container cur-main (min-width: 820px) {
+  .cur-word-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+/* A 5th column is used only when each card keeps ≥ 240px (full meanings on
+   ≤ 2 lines); at the 1450px shell the main column stays at 4. */
+@container cur-main (min-width: 1240px) {
+  .cur-word-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
 }
 
 .cur-word {
   transition: background-color var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+  position: relative;
   display: flex;
-  gap: 14px;
+  gap: var(--space-3);
   align-items: center;
-  padding: 14px 16px;
+  padding: var(--space-3) var(--space-6) var(--space-3) var(--space-4);
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: var(--radius-card);
@@ -976,11 +1047,15 @@
   border-color: var(--text-tertiary);
 }
 
+/* Fixed two-glyph column: 3–4 character words wrap to two lines, so every
+   card in the grid keeps the same text alignment. */
 .cur-word-hanzi {
+  flex: 0 0 2em;
   font-family: var(--font-zh);
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  min-width: 52px;
+  line-height: 1.15;
+  text-align: center;
 }
 
 .cur-word-info {
@@ -999,7 +1074,7 @@
 .cur-word-meaning {
   font-size: 13px;
   color: var(--text-secondary);
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 
 .cur-word-hv {
@@ -1010,8 +1085,9 @@
 }
 
 .cur-word-audio {
-  margin-left: auto;
-  flex-shrink: 0;
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
   color: var(--text-tertiary);
   opacity: 0.65;
   transition: color var(--dur-fast) var(--ease-out), opacity var(--dur-fast) var(--ease-out);
@@ -1372,6 +1448,299 @@
   color: var(--text-secondary);
 }
 
+/* ── Lesson workspace: main column + sticky contextual sidebar ── */
+.cur-ws {
+  display: grid;
+  grid-template-columns: minmax(0, 72fr) minmax(var(--cur-aside-min), 28fr);
+  gap: var(--cur-ws-gap);
+  align-items: start;
+}
+
+.cur-ws-main {
+  container: cur-main / inline-size;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--cur-section-gap);
+}
+
+.cur-ws-aside {
+  position: sticky;
+  top: var(--cur-sticky-top);
+  max-height: calc(100vh - var(--cur-sticky-top) - var(--space-4));
+  overflow-y: auto;
+  scrollbar-width: thin;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  min-width: 0;
+}
+
+.cur-ws-panel {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.cur-ws-panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.cur-ws-title {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--text-secondary);
+}
+
+.cur-ws-status {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 2px 10px;
+  border-radius: var(--radius-pill);
+  background: var(--surface-chip);
+  font-size: 12px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.cur-ws-status.is-done {
+  color: var(--status-success);
+}
+
+.cur-ws-meter {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cur-ws-meter-head {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-2);
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.cur-ws-meter-head strong {
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.cur-ws-hint {
+  font-size: 12px;
+  color: var(--text-tertiary);
+}
+
+.cur-ws-stats {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-2);
+}
+
+.cur-ws-stats > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: var(--space-2);
+  border-radius: var(--radius-btn);
+  background: var(--surface-subtle);
+}
+
+.cur-ws-stats dt {
+  white-space: nowrap;
+  font-size: 12px;
+  color: var(--text-tertiary);
+}
+
+.cur-ws-stats dd {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.cur-ws-stats .is-known dd {
+  color: var(--status-success);
+}
+
+.cur-ws-stats .is-learning dd {
+  color: var(--accent-text);
+}
+
+.cur-ws-outline-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cur-ws-outline-link {
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 6px var(--space-2);
+  border: 0;
+  border-radius: var(--radius-btn);
+  background: transparent;
+  color: var(--text-secondary);
+  font: 500 14px var(--font-sans);
+  text-align: left;
+  cursor: pointer;
+  transition: background-color var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+
+.cur-ws-outline-link:hover {
+  background: var(--surface-hover);
+  color: var(--text-primary);
+}
+
+.cur-ws-outline-link.is-active {
+  background: var(--accent-light);
+  color: var(--accent-text);
+}
+
+.cur-ws-outline-link:focus-visible,
+.cur-ws-step:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+.cur-ws-outline-num {
+  flex: 0 0 24px;
+  height: 24px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  font-size: 12px;
+}
+
+.cur-ws-outline-link.is-active .cur-ws-outline-num {
+  border-color: currentColor;
+}
+
+.cur-ws-outline-label {
+  flex: 1 1 auto;
+}
+
+.cur-ws-outline-meta {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-tertiary);
+  font-variant-numeric: tabular-nums;
+}
+
+.cur-ws-action {
+  width: 100%;
+  justify-content: flex-start;
+  gap: var(--space-2);
+}
+
+.cur-ws-lesson-nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: 0 var(--space-1);
+}
+
+.cur-ws-level-done {
+  font-size: 12px;
+  color: var(--text-tertiary);
+}
+
+.cur-ws-lesson-nav-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-2);
+}
+
+.cur-ws-step {
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--space-1);
+  padding: 0 var(--space-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-btn);
+  background: transparent;
+  color: var(--text-primary);
+  font: 500 13px var(--font-sans);
+  cursor: pointer;
+}
+
+.cur-ws-step.is-next {
+  justify-content: flex-end;
+}
+
+.cur-ws-step:hover:not(:disabled) {
+  border-color: var(--text-tertiary);
+}
+
+.cur-ws-step:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+/* Desktop: study shortcuts live in the sidebar, not beside the vocab heading */
+@media (min-width: 1024px) {
+  .cur-vocab-actions {
+    display: none;
+  }
+}
+
+/* Laptop: narrower sidebar, tighter gaps. The shell's < 1280px 760px cap
+   (workstation.css) is lifted for the lesson so the workspace keeps two columns. */
+@media (max-width: 1279px) {
+  body.curriculum-view-active:has(#screenCurriculum .cur-lesson) .app {
+    max-width: var(--app-shell-max-width);
+  }
+
+  .cur-lesson {
+    --cur-ws-gap: var(--space-4);
+    --cur-section-gap: 20px;
+    --cur-aside-min: 280px;
+  }
+
+  .cur-ws {
+    grid-template-columns: minmax(0, 1fr) var(--cur-aside-min);
+  }
+}
+
+/* Tablet & phone: one column; the sidebar becomes a compact progress strip
+   below the lesson (hero nav + section buttons cover outline and actions). */
+@media (max-width: 1023px) {
+  .cur-ws {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .cur-ws-aside {
+    position: static;
+    max-height: none;
+    overflow: visible;
+  }
+
+  .cur-ws-outline,
+  .cur-ws-actions {
+    display: none;
+  }
+}
+
 /* Tablet: sidebar moves below the lesson list as two side-by-side panels */
 @media (max-width: 1023px) {
   .cur-columns {
@@ -1469,10 +1838,6 @@
     min-width: 0;
   }
 
-  .cur-word-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .cur-sections {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1487,24 +1852,21 @@
 }
 
 @media (max-width: 420px) {
-  .cur-word-grid,
   .cur-quiz-options {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  /* One divided list instead of a stack of word cards */
-  .cur-word-grid {
-    gap: 0;
-    background: var(--card-bg);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-card);
-    overflow: hidden;
+  /* Two-column word tiles: hanzi stacked above pinyin and meaning */
+  .cur-word {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-1);
+    padding: var(--space-3) var(--space-6) var(--space-3) var(--space-3);
   }
 
-  .cur-word {
-    border: 0;
-    border-radius: 0;
-    padding: var(--space-3) var(--space-4);
+  .cur-word-hanzi {
+    flex: none;
+    text-align: left;
   }
 
 

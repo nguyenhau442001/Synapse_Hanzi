@@ -12,12 +12,14 @@ import {
   ChevronLeftIcon,
   RotateIcon,
 } from './Icons.jsx';
+import { CurriculumLessonAside } from './CurriculumLessonAside.jsx';
+import { WORD_PREVIEW_COUNT, WORD_STATUS, CUR_LABELS, PASS_PERCENT } from './CurriculumConstants.js';
 
 /* global LEVELS, selectLevel, speakText, speakSequence, readSavedLevelProgress, SpaRouter, primaryTab, APP_VERSION */
 
 const DATA_ROOT = 'database/curriculum/hsk30/';
 const STORE_KEY = 'hsk_curriculum_v1';
-const PASS_RATIO = 0.8;
+const PASS_RATIO = PASS_PERCENT / 100;
 const QUIZ_SIZE = 10;
 const LISTENING_QUIZ_LIMIT = 3;
 const GRAMMAR_QUIZ_LIMIT = 4;
@@ -78,10 +80,21 @@ export function lessonNumeral(n) {
 function knownCount(key) {
   if (typeof readSavedLevelProgress !== 'function') return 0;
   try {
-    return Object.values(readSavedLevelProgress(key) || {}).filter((s) => s === 'known').length;
+    return Object.values(readSavedLevelProgress(key) || {}).filter((s) => s === WORD_STATUS.KNOWN).length;
   } catch (e) {
     return 0;
   }
+}
+
+/** @returns {import('./CurriculumConstants.js').LessonWordStats} */
+function lessonWordStats(key, total) {
+  let statuses = [];
+  if (typeof readSavedLevelProgress === 'function') {
+    try { statuses = Object.values(readSavedLevelProgress(key) || {}); } catch (e) { statuses = []; }
+  }
+  const known = statuses.filter((s) => s === WORD_STATUS.KNOWN).length;
+  const learning = statuses.filter((s) => s === WORD_STATUS.UNKNOWN).length;
+  return { total, known, learning, fresh: Math.max(0, total - known - learning) };
 }
 
 async function fetchJson(url) {
@@ -289,6 +302,10 @@ function speakAll(texts, event) {
 function scrollToSection(id) {
   const el = document.getElementById('curSection-' + id);
   if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function openWriting(key) {
+  if (window.openWritingPractice) window.openWritingPractice(key);
 }
 
 function isDone(store, key) {
@@ -578,10 +595,22 @@ function NextLessonButton({ lesson, levelData }) {
 
 function LessonView({ lesson, levelData }) {
   const words = lesson.words || [];
-  const shownWords = ui.showAllWords ? words : words.slice(0, 12);
+  const shownWords = ui.showAllWords ? words : words.slice(0, WORD_PREVIEW_COUNT);
   const speakers = [];
   lesson.dialogue.forEach((line) => { if (speakers.indexOf(line.who) < 0) speakers.push(line.who); });
-  const known = knownCount(lesson.key);
+  const store = readStore();
+  const record = store.lessons[lesson.key];
+  const wordStats = lessonWordStats(lesson.key, words.length);
+  const known = wordStats.known;
+  const levelDone = levelData.lessons.filter((l) => isDone(store, l.key)).length;
+  const sectionMeta = {
+    vocab: `${words.length} ${CUR_LABELS.WORDS_UNIT}`,
+    dialogue: `${lesson.dialogue.length} ${CUR_LABELS.LINES_UNIT}`,
+    grammar: `${lesson.grammar.length} ${CUR_LABELS.POINTS_UNIT}`,
+    practice: record ? `${record.best}%` : CUR_LABELS.QUIZ_NOT_TAKEN,
+  };
+  const outline = SECTIONS.map(([id, label]) => ({ id, label, meta: sectionMeta[id] }));
+  const listenAll = (e) => speakAll(lesson.dialogue.map((l) => l.zh), e);
   return (
     <div class={'cur-wrap cur-lesson' + (ui.hidePinyin ? ' cur-hide-pinyin' : '')}>
       <div class="cur-crumbs">
@@ -596,127 +625,168 @@ function LessonView({ lesson, levelData }) {
         <span class="cur-crumb-count">{`Bài ${lesson.n} / ${levelData.lessons.length}`}</span>
       </div>
 
-      <header class="cur-card cur-lesson-head">
-        <div class="cur-eyebrow is-accent">{`第${lessonNumeral(lesson.n)}课 · ${levelData.name}`}</div>
-        <h2 class="cur-lesson-title" lang="zh-CN" tabindex="-1">{lesson.zh}</h2>
-        <div class="cur-lesson-sub"><span class="cur-py">{lesson.py}</span>{` · ${lesson.vi}`}</div>
-        <div class="cur-tags">
-          {lesson.topic && <span class="cur-tag">{lesson.topic}</span>}
-          {lesson.grammar.map((g) => <span class="cur-tag">{g.title}</span>)}
-        </div>
-        <nav class="cur-sections" aria-label="Các phần của bài">
-          {SECTIONS.map(([id, label], i) => (
-            <button type="button" class={'cur-section-link' + (i === 0 ? ' is-first' : '')} onClick={() => scrollToSection(id)}>{`${i + 1} · ${label}`}</button>
-          ))}
-        </nav>
-      </header>
-
-      <section class="cur-section" id="curSection-vocab" aria-labelledby="curHeadVocab">
-        <div class="cur-section-head">
-          <h3 class="cur-h2" id="curHeadVocab">生词 · Từ mới <span class="cur-count">{`${words.length} từ${known ? ` · đã nhớ ${known}` : ''}`}</span></h3>
-          <div class="cur-actions">
-            <button type="button" class="ds-btn ds-btn--secondary" onClick={() => window.openWritingPractice && window.openWritingPractice(lesson.key)}>Tập viết bài này</button>
-            <button type="button" class="ds-btn ds-btn--secondary cur-btn-accent" onClick={() => startLessonFlashcards(lesson.key)}>Học flashcard bài này</button>
-          </div>
-        </div>
-        <div class="cur-word-grid">
-          {shownWords.map((w) => (
-            <button
-              type="button"
-              class="cur-word"
-              onClick={(e) => speak(w.hanzi, e, w.pinyin)}
-              aria-label={`Nghe ${w.hanzi}`}
-            >
-              <span class="cur-word-hanzi" lang="zh-CN">{w.hanzi}</span>
-              <span class="cur-word-info">
-                <span class="cur-word-py">{w.pinyin}</span>
-                <span class="cur-word-meaning">{w.meaning}</span>
-                {w.hanviet && <span class="cur-word-hv">{w.hanviet}</span>}
-              </span>
-              <AudioIcon
-                size={14}
-                class="cur-word-audio"
-              />
-            </button>
-          ))}
-        </div>
-        {words.length > 12 && (
-          <button type="button" class="cur-link-btn" onClick={() => setUi({ showAllWords: !ui.showAllWords })}>
-            {ui.showAllWords ? 'Thu gọn' : `Xem tất cả ${words.length} từ`}
-          </button>
-        )}
-      </section>
-
-      <section class="cur-section" id="curSection-dialogue" aria-labelledby="curHeadDialogue">
-        <div class="cur-section-head">
-          <h3 class="cur-h2" id="curHeadDialogue">课文 · Bài đọc{lesson.dialogueTitle ? <span class="cur-count">{lesson.dialogueTitle}</span> : null}</h3>
-          <div class="cur-actions">
-            <button
-              type="button"
-              class="ds-btn ds-btn--secondary"
-              onClick={(e) => speakAll(lesson.dialogue.map((l) => l.zh), e)}
-            >
-              Nghe cả bài
-            </button>
-            <button type="button" class="ds-btn ds-btn--secondary" aria-pressed={String(ui.hidePinyin)} onClick={() => setUi({ hidePinyin: !ui.hidePinyin })}>{ui.hidePinyin ? 'Hiện pinyin' : 'Ẩn pinyin'}</button>
-          </div>
-        </div>
-        <div class="cur-card cur-dialogue">
-          {lesson.dialogue.map((line) => {
-            const side = speakers.indexOf(line.who) % 2 === 0 ? 'a' : 'b';
-            const glyph = line.who.length > 2 ? line.who.slice(0, 1) : line.who.slice(-1);
-            return (
-              <div class={'cur-line is-' + side}>
-                <span class="cur-avatar" title={line.who} aria-hidden="true" lang="zh-CN">{glyph}</span>
-                <div class="cur-line-body">
-                  <div class="cur-line-who" lang="zh-CN">{line.who}</div>
-                  <button type="button" class="cur-line-zh" lang="zh-CN" onClick={(e) => speak(line.zh, e)}>{line.zh}</button>
-                  <div class="cur-py">{line.py}</div>
-                  <div class="cur-line-vi">{line.vi}</div>
-                </div>
+      <div class="cur-ws">
+        <div class="cur-ws-main">
+          <header class="cur-card cur-lesson-head">
+            <div class="cur-lesson-head-top">
+              <div class="cur-lesson-head-text">
+                <div class="cur-eyebrow is-accent">{`第${lessonNumeral(lesson.n)}课 · ${levelData.name}`}</div>
+                <h2 class="cur-lesson-title" lang="zh-CN" tabindex="-1">{lesson.zh}</h2>
+                <div class="cur-lesson-sub"><span class="cur-py">{lesson.py}</span>{` · ${lesson.vi}`}</div>
               </div>
-            );
-          })}
-        </div>
-      </section>
-
-      <section class="cur-section" id="curSection-grammar" aria-labelledby="curHeadGrammar">
-        <h3 class="cur-h2" id="curHeadGrammar">语法 · Ngữ pháp</h3>
-        {lesson.grammar.map((g) => (
-          <article class="cur-card cur-grammar">
-            <div class="cur-grammar-head">
-              <h4 class="cur-grammar-title">{g.title}</h4>
-              {g.tag && <span class="cur-grammar-tag" lang="zh-CN">{`HSK 3.0 · ${g.tag}`}</span>}
+              <div class="cur-tags">
+                {lesson.topic && <span class="cur-tag">{lesson.topic}</span>}
+                {lesson.grammar.map((g) => <span class="cur-tag">{g.title}</span>)}
+              </div>
             </div>
-            <div class="cur-formula" lang="zh-CN">{g.formula}</div>
-            {g.note && <p class="cur-note">{g.note}</p>}
-            <ul class="cur-examples">
-              {g.examples.map((ex) => (
-                <li class="cur-example">
-                  <button
-                    type="button"
-                    class="cur-speak"
-                    onClick={(e) => speak(ex.zh, e)}
-                    aria-label="Nghe câu mẫu"
-                  >
-                    <AudioIcon size={16} />
-                  </button>
-                  <span class="cur-example-text">
-                    <span class="cur-example-zh" lang="zh-CN">{ex.zh}</span>
-                    <span class="cur-py">{ex.py}</span>
-                    <span class="cur-example-vi">{ex.vi}</span>
-                  </span>
-                </li>
+            <nav class="cur-sections" aria-label="Các phần của bài">
+              {outline.map((s, i) => (
+                <button
+                  type="button"
+                  class={'cur-section-link' + (i === 0 ? ' is-first' : '')}
+                  onClick={() => scrollToSection(s.id)}
+                >
+                  <span class="cur-section-link-label">{`${i + 1} · ${s.label}`}</span>
+                  <span class="cur-section-link-meta">{s.meta}</span>
+                </button>
               ))}
-            </ul>
-          </article>
-        ))}
-      </section>
+            </nav>
+          </header>
 
-      <section class="cur-section" id="curSection-practice" aria-labelledby="curHeadPractice">
-        <h3 class="cur-h2" id="curHeadPractice">练习 · Luyện tập</h3>
-        <QuizView lesson={lesson} levelData={levelData} />
-      </section>
+          <section class="cur-section" id="curSection-vocab" aria-labelledby="curHeadVocab">
+            <div class="cur-section-head">
+              <h3 class="cur-h2" id="curHeadVocab">生词 · Từ mới <span class="cur-count">{`${words.length} từ${known ? ` · đã nhớ ${known}` : ''}`}</span></h3>
+              <div class="cur-actions cur-vocab-actions">
+                <button
+                  type="button"
+                  class="ds-btn ds-btn--secondary"
+                  onClick={() => openWriting(lesson.key)}
+                >
+                  {CUR_LABELS.ACTION_WRITING}
+                </button>
+                <button
+                  type="button"
+                  class="ds-btn ds-btn--secondary cur-btn-accent"
+                  onClick={() => startLessonFlashcards(lesson.key)}
+                >
+                  {CUR_LABELS.ACTION_FLASHCARD}
+                </button>
+              </div>
+            </div>
+            <div class="cur-word-grid">
+              {shownWords.map((w) => (
+                <button
+                  type="button"
+                  class="cur-word"
+                  onClick={(e) => speak(w.hanzi, e, w.pinyin)}
+                  aria-label={`Nghe ${w.hanzi}`}
+                >
+                  <span class="cur-word-hanzi" lang="zh-CN">{w.hanzi}</span>
+                  <span class="cur-word-info">
+                    <span class="cur-word-py">{w.pinyin}</span>
+                    <span class="cur-word-meaning">{w.meaning}</span>
+                    {w.hanviet && <span class="cur-word-hv">{w.hanviet}</span>}
+                  </span>
+                  <AudioIcon
+                    size={14}
+                    class="cur-word-audio"
+                  />
+                </button>
+              ))}
+            </div>
+            {words.length > WORD_PREVIEW_COUNT && (
+              <button type="button" class="cur-link-btn" onClick={() => setUi({ showAllWords: !ui.showAllWords })}>
+                {ui.showAllWords ? 'Thu gọn' : `Xem tất cả ${words.length} từ`}
+              </button>
+            )}
+          </section>
+
+          <section class="cur-section" id="curSection-dialogue" aria-labelledby="curHeadDialogue">
+            <div class="cur-section-head">
+              <h3 class="cur-h2" id="curHeadDialogue">课文 · Bài đọc{lesson.dialogueTitle ? <span class="cur-count">{lesson.dialogueTitle}</span> : null}</h3>
+              <div class="cur-actions">
+                <button
+                  type="button"
+                  class="ds-btn ds-btn--secondary"
+                  onClick={listenAll}
+                >
+                  Nghe cả bài
+                </button>
+                <button type="button" class="ds-btn ds-btn--secondary" aria-pressed={String(ui.hidePinyin)} onClick={() => setUi({ hidePinyin: !ui.hidePinyin })}>{ui.hidePinyin ? 'Hiện pinyin' : 'Ẩn pinyin'}</button>
+              </div>
+            </div>
+            <div class="cur-card cur-dialogue">
+              {lesson.dialogue.map((line) => {
+                const side = speakers.indexOf(line.who) % 2 === 0 ? 'a' : 'b';
+                const glyph = line.who.length > 2 ? line.who.slice(0, 1) : line.who.slice(-1);
+                return (
+                  <div class={'cur-line is-' + side}>
+                    <span class="cur-avatar" title={line.who} aria-hidden="true" lang="zh-CN">{glyph}</span>
+                    <div class="cur-line-body">
+                      <div class="cur-line-who" lang="zh-CN">{line.who}</div>
+                      <button type="button" class="cur-line-zh" lang="zh-CN" onClick={(e) => speak(line.zh, e)}>{line.zh}</button>
+                      <div class="cur-py">{line.py}</div>
+                      <div class="cur-line-vi">{line.vi}</div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </section>
+
+          <section class="cur-section" id="curSection-grammar" aria-labelledby="curHeadGrammar">
+            <h3 class="cur-h2" id="curHeadGrammar">语法 · Ngữ pháp</h3>
+            {lesson.grammar.map((g) => (
+              <article class="cur-card cur-grammar">
+                <div class="cur-grammar-head">
+                  <h4 class="cur-grammar-title">{g.title}</h4>
+                  {g.tag && <span class="cur-grammar-tag" lang="zh-CN">{`HSK 3.0 · ${g.tag}`}</span>}
+                </div>
+                <div class="cur-formula" lang="zh-CN">{g.formula}</div>
+                {g.note && <p class="cur-note">{g.note}</p>}
+                <ul class="cur-examples">
+                  {g.examples.map((ex) => (
+                    <li class="cur-example">
+                      <button
+                        type="button"
+                        class="cur-speak"
+                        onClick={(e) => speak(ex.zh, e)}
+                        aria-label="Nghe câu mẫu"
+                      >
+                        <AudioIcon size={16} />
+                      </button>
+                      <span class="cur-example-text">
+                        <span class="cur-example-zh" lang="zh-CN">{ex.zh}</span>
+                        <span class="cur-py">{ex.py}</span>
+                        <span class="cur-example-vi">{ex.vi}</span>
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </section>
+
+          <section class="cur-section" id="curSection-practice" aria-labelledby="curHeadPractice">
+            <h3 class="cur-h2" id="curHeadPractice">练习 · Luyện tập</h3>
+            <QuizView lesson={lesson} levelData={levelData} />
+          </section>
+        </div>
+
+        <CurriculumLessonAside
+          lesson={lesson}
+          levelData={levelData}
+          record={record}
+          wordStats={wordStats}
+          levelDone={levelDone}
+          outline={outline}
+          onJump={scrollToSection}
+          onOpenLesson={openLesson}
+          onFlashcards={() => startLessonFlashcards(lesson.key)}
+          onWriting={() => openWriting(lesson.key)}
+          onListen={listenAll}
+        />
+      </div>
     </div>
   );
 }
