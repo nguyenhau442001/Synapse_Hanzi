@@ -17,6 +17,12 @@ export class HanziMindDB extends Dexie {
       preferences: 'key',
     });
 
+    this.version(2).stores({
+      cards: 'id, [level+direction], due, state, level, wordId, *tags, examMistakeAt',
+      reviewLogs: '++id, [level+direction], wordId, timestamp',
+      preferences: 'key',
+    });
+
     this.cards = this.table('cards');
     this.reviewLogs = this.table('reviewLogs');
     this.preferences = this.table('preferences');
@@ -45,10 +51,73 @@ export class HanziMindDB extends Dexie {
   }
 
   /**
+   * Finds all cards that are due for review across all levels,
+   * prioritizing cards tagged with `exam_mistake` at the front of the queue.
+   */
+  async getPrioritizedDueCards(now = new Date(), mistakeTag = 'exam_mistake') {
+    const dueCards = await this.getDueCards(now);
+    const tagged = [];
+    const standard = [];
+    for (const card of dueCards) {
+      if (Array.isArray(card.tags) && card.tags.includes(mistakeTag)) {
+        tagged.push(card);
+      } else {
+        standard.push(card);
+      }
+    }
+    tagged.sort((a, b) => String(b.examMistakeAt || '').localeCompare(String(a.examMistakeAt || '')));
+    return [...tagged, ...standard];
+  }
+
+  /**
+   * Marks missed vocabulary cards with the exam_mistake tag and schedules them
+   * for priority review on the next morning if not already due sooner.
+   */
+  async markExamMistakes(wordIds, level, direction = 'zh2vi', nextMorningIso, mistakeTag = 'exam_mistake') {
+    if (!Array.isArray(wordIds) || wordIds.length === 0) return 0;
+    const nowIso = new Date().toISOString();
+    let updatedCount = 0;
+
+    for (const wordId of wordIds) {
+      if (!wordId) continue;
+      const id = HanziMindDB.getCardKey(level, direction, wordId);
+      const existing = await this.cards.get(id);
+      const existingTags = Array.isArray(existing?.tags) ? existing.tags : [];
+      const nextTags = existingTags.includes(mistakeTag)
+        ? existingTags
+        : [...existingTags, mistakeTag];
+
+      const effectiveDue =
+        existing?.due && existing.due < nextMorningIso ? existing.due : nextMorningIso;
+
+      await this.cards.put({
+        id,
+        level: existing?.level || level,
+        direction: existing?.direction || direction,
+        wordId,
+        due: effectiveDue,
+        stability: existing?.stability || 0,
+        difficulty: existing?.difficulty || 0,
+        elapsed_days: existing?.elapsed_days || 0,
+        scheduled_days: existing?.scheduled_days || 0,
+        reps: existing?.reps || 0,
+        lapses: (existing?.lapses || 0) + 1,
+        state: existing?.state ?? 0,
+        last_review: existing?.last_review || null,
+        tags: nextTags,
+        examMistakeAt: nowIso,
+      });
+      updatedCount += 1;
+    }
+    return updatedCount;
+  }
+
+  /**
    * Saves or updates a single FSRS card
    */
   async saveCard(level, direction, wordId, cardData) {
     const id = HanziMindDB.getCardKey(level, direction, wordId);
+    const existing = await this.cards.get(id);
     return this.cards.put({
       id,
       level,
@@ -63,6 +132,8 @@ export class HanziMindDB extends Dexie {
       lapses: cardData.lapses || 0,
       state: cardData.state ?? 0,
       last_review: cardData.last_review ? new Date(cardData.last_review).toISOString() : null,
+      tags: Array.isArray(cardData.tags) ? cardData.tags : (existing?.tags || []),
+      examMistakeAt: cardData.examMistakeAt || existing?.examMistakeAt || null,
     });
   }
 

@@ -1,0 +1,55 @@
+{
+  "exam_id": "HSK3_LV4_MOCK_01",
+  "title": "HSK 3.0 Level 4 — Spec Mock 01",
+  "duration_minutes": 105,
+  "sections": {
+    "listening": [
+      {
+        "id": "L1",
+        "part": 1,
+        "audio_url": "assets/audio/exams/hsk30/level4/h41001_l01.mp3",
+        "transcript": "他虽然刚来公司不久，但工作能力很强。",
+        "question": "关于他，可以知道什么？",
+        "options": [
+          "A. 刚换工作",
+          "B. 能力很强",
+          "C. 不喜欢公司",
+          "D. 经验不足"
+        ],
+        "answer": 1,
+        "target_words": ["虽然", "能力"],
+        "explanation": "Từ khóa '但工作能力很强' (nhưng năng lực làm việc rất mạnh)."
+      }
+    ],
+    "reading": [
+      {
+        "id": "R1",
+        "part": 2,
+        "type": "sentence_ordering",
+        "chunks": [
+          "对身体健康",
+          "每天坚持运动",
+          "有很大的好处"
+        ],
+        "answer_order": [1, 0, 2],
+        "full_sentence": "每天坚持运动对身体健康有很大的好处。",
+        "target_words": ["坚持", "健康"]
+      }
+    ],
+    "writing": [
+      {
+        "id": "W1",
+        "part": 1,
+        "keywords": [
+          "不仅",
+          "而且",
+          "环境",
+          "保护",
+          "责任"
+        ],
+        "min_chars": 80,
+        "prompt": "Hãy dùng các từ gợi ý trên để viết một đoạn văn ngắn (khoảng 80-100 chữ) về chủ đề bảo vệ môi trường."
+      }
+    ]
+  }
+}

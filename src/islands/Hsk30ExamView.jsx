@@ -13,6 +13,10 @@ import { cleanChineseCharacters } from './ToneSandhi.js';
 import { HskDictationStudio } from './HskDictationStudio.jsx';
 import { HskShadowingStudio } from './HskShadowingStudio.jsx';
 import { HskErrorNotebook, HSK30_ERROR_NOTEBOOK_KEY } from './HskErrorNotebook.jsx';
+import { SpeedPinyinDrill } from './SpeedPinyinDrill.jsx';
+import { ReadingSentenceBuilder } from './ReadingSentenceBuilder.jsx';
+import { CbtSimulatorShell } from './CbtSimulatorShell.jsx';
+import { EXAM_UI_LABELS } from './ExamConstants.js';
 
 export const HSK30_EXAM_STORAGE_KEY = 'hsk30_exam_history_v1';
 export const HSKK_EXAM_STORAGE_KEY = 'hskk_exam_history_v1';
@@ -105,7 +109,8 @@ function normalizeSentence(str) {
 
 export function Hsk30ExamComponent() {
   // Navigation & Category states
-  const [hubMode, setHubMode] = useState('cbt'); // 'cbt' | 'dictation' | 'shadowing' | 'error_notebook'
+  const [hubMode, setHubMode] = useState('cbt'); // 'cbt' | 'dictation' | 'shadowing' | 'error_notebook' | 'speed_drill' | 'reading_builder' | 'mock_simulator'
+  const [specMockData, setSpecMockData] = useState(null);
   const [unresolvedErrorCount, setUnresolvedErrorCount] = useState(0);
   const [examCategory, setExamCategory] = useState('hsk30'); // 'hsk30' (Written CBT) | 'hskk' (Spoken)
   const [examMeta, setExamMeta] = useState(null);
@@ -815,6 +820,20 @@ export function Hsk30ExamComponent() {
         />
       );
     }
+    if (hubMode === 'speed_drill') {
+      return <SpeedPinyinDrill onBack={() => setHubMode('cbt')} />;
+    }
+    if (hubMode === 'reading_builder') {
+      return <ReadingSentenceBuilder onBack={() => setHubMode('cbt')} />;
+    }
+    if (hubMode === 'mock_simulator') {
+      return (
+        <CbtSimulatorShell
+          rawExam={specMockData}
+          onBack={() => setHubMode('cbt')}
+        />
+      );
+    }
 
     const isHsk30 = examCategory === 'hsk30';
     const hsk30Obj = examMeta && examMeta.levels && examMeta.levels[currentLevel];
@@ -915,6 +934,38 @@ export function Hsk30ExamComponent() {
                   {unresolvedErrorCount}
                 </span>
               )}
+            </button>
+
+            <button
+              type="button"
+              class="exam-pill-btn"
+              onClick={() => setHubMode('speed_drill')}
+            >
+              {EXAM_UI_LABELS.hubTabs.speedDrill}
+            </button>
+
+            <button
+              type="button"
+              class="exam-pill-btn"
+              onClick={() => setHubMode('reading_builder')}
+            >
+              {EXAM_UI_LABELS.hubTabs.readingBuilder}
+            </button>
+
+            <button
+              type="button"
+              class="exam-pill-btn"
+              onClick={() => {
+                fetch('database/exams/hsk30/level4/hsk3_lv4_mock_01.json')
+                  .then((r) => r.json())
+                  .then((d) => {
+                    setSpecMockData(d);
+                    setHubMode('mock_simulator');
+                  })
+                  .catch((err) => console.error('Failed to load mock simulator paper:', err));
+              }}
+            >
+              {EXAM_UI_LABELS.hubTabs.mockSimulator}
             </button>
           </div>
 
