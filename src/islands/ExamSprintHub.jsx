@@ -27,6 +27,7 @@ import {
   SPRINT_SLOT_EMPTY_REASONS,
   SPRINT_LEVEL_OPTIONS,
   SPRINT_AUTO_FLIP_LIMIT_MS,
+  SPRINT_KEYS,
   TIMER_TICK_MS,
   MIN_DAILY_NEW_QUOTA,
   MAX_DAILY_NEW_QUOTA,
@@ -192,6 +193,29 @@ export function ExamSprintHub({ onBack }) {
     return () => clearInterval(intervalId);
   }, [viewMode, currentIndex, isFlipped, queue]);
 
+  // Space/Enter flips, 1 = Quên, 2 = Đã nhớ. Skipped while typing (pinyin check input).
+  useEffect(() => {
+    if (viewMode !== 'sprint') return undefined;
+    const onKeyDown = (event) => {
+      if (event.defaultPrevented || event.metaKey || event.ctrlKey || event.altKey) return;
+      const tag = event.target && event.target.tagName;
+      if (tag === 'INPUT' || tag === 'TEXTAREA' || (event.target && event.target.isContentEditable)) return;
+      if (!queue[currentIndex]) return;
+      if (!isFlipped && SPRINT_KEYS.FLIP.includes(event.key)) {
+        event.preventDefault();
+        handleFlipSprintCard();
+      } else if (isFlipped && event.key === SPRINT_KEYS.AGAIN) {
+        event.preventDefault();
+        handleRateSprintCard('again');
+      } else if (isFlipped && event.key === SPRINT_KEYS.GOOD) {
+        event.preventDefault();
+        handleRateSprintCard('good');
+      }
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  });
+
   async function handleToggleLevel(levelId) {
     const nextLevels = toggleSprintLevel(sprintConfig.value.targetLevels, levelId);
     await updateSprintConfig({ targetLevels: nextLevels }, db);
@@ -330,14 +354,16 @@ export function ExamSprintHub({ onBack }) {
   if (viewMode === 'sprint') {
     const item = queue[currentIndex];
     const pct = Math.min(100, Math.round((elapsedMs / SPRINT_AUTO_FLIP_LIMIT_MS) * 100));
+    const sessionPct = queue.length > 0 ? Math.round(((currentIndex + 1) / queue.length) * 100) : 0;
     const hanViet = item ? extractHanViet(item.hanzi) : '';
     const wordFamily = item ? findWordFamily(item.hanzi, vocabPool) : [];
+    const rootChar = item ? Array.from(String(item.hanzi).trim())[0] : '';
 
     return (
-      <div class="exam-sprint-panel">
+      <div class="exam-sprint-panel exam-sprint-panel--study">
         <button
           type="button"
-          class="exam-pill-btn"
+          class="exam-pill-btn exam-sprint-back-btn"
           onClick={() => setViewMode('dashboard')}
         >
           <ArrowLeft size={16} />
@@ -350,10 +376,11 @@ export function ExamSprintHub({ onBack }) {
             <h3>{queue.length > 0 ? SPRINT_UI_LABELS.slotDone : SPRINT_SLOT_EMPTY_REASONS[activeSlot]}</h3>
           </div>
         ) : (
-          <div class="exam-sprint-card">
+          <div class="exam-sprint-card exam-sprint-card--study">
             <div class="exam-sprint-meta">
-              <span>
-                {SPRINT_UI_LABELS.autoFlipBadge} · {currentIndex + 1}/{queue.length}
+              <span class="exam-sprint-meta-rule">{SPRINT_UI_LABELS.autoFlipBadge}</span>
+              <span class="exam-sprint-counter">
+                <strong>{currentIndex + 1}</strong>/{queue.length}
               </span>
               <span class="exam-sprint-audio-badge">
                 <Volume2 size={14} />
@@ -361,115 +388,179 @@ export function ExamSprintHub({ onBack }) {
               </span>
             </div>
 
-            {!isFlipped && (
-              <div class="exam-sprint-progress-track">
-                <div
-                  class="exam-sprint-progress-fill"
-                  style={{ width: `${pct}%` }}
-                />
-              </div>
-            )}
+            <div
+              class="exam-sprint-session-track"
+              role="progressbar"
+              aria-label={SPRINT_UI_LABELS.sessionProgressLabel}
+              aria-valuemin={0}
+              aria-valuemax={queue.length}
+              aria-valuenow={currentIndex + 1}
+            >
+              <div
+                class="exam-sprint-session-fill"
+                style={{ width: `${sessionPct}%` }}
+              />
+            </div>
 
             {item.isMistakePriority && (
-              <div class="exam-sprint-mistake-tag">Ưu tiên số 1 · Sai trong đề hôm qua</div>
+              <div class="exam-sprint-mistake-tag">{SPRINT_UI_LABELS.mistakePriorityTag}</div>
             )}
 
-            <div class="exam-sprint-hanzi">{item.hanzi}</div>
-
-            {!isFlipped ? (
-              <button
-                type="button"
-                class="exam-sprint-btn-keep"
-                onClick={handleFlipSprintCard}
+            <div class="exam-sprint-face">
+              <div
+                class="exam-sprint-hanzi"
+                lang="zh-CN"
               >
-                Lật thẻ ngay & Nghe phát âm
-              </button>
-            ) : (
-              <div class="exam-sprint-back">
-                <div class="exam-sprint-pinyin-row">
-                  <span class="exam-sprint-pinyin">{item.pinyin}</span>
+                {item.hanzi}
+              </div>
+
+              {isFlipped && (
+                <div class="exam-sprint-answer">
+                  <div class="exam-sprint-pinyin-row">
+                    <span class="exam-sprint-pinyin">{item.pinyin}</span>
+                    <button
+                      type="button"
+                      class="exam-pill-btn"
+                      onClick={(e) => playPrebuiltAudio(item.hanzi, item.pinyin, e.currentTarget)}
+                      title={SPRINT_UI_LABELS.replayAudio}
+                    >
+                      <Volume2 size={16} />
+                      {SPRINT_UI_LABELS.replayAudio}
+                    </button>
+                  </div>
+                  <div class="exam-sprint-meaning">{item.meaning}</div>
+                  {hanViet && (
+                    <div class="exam-sprint-hanviet">
+                      <Sparkles size={15} />
+                      <strong>{SPRINT_UI_LABELS.hanVietPrefix}</strong> {hanViet}
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+
+            {isFlipped && wordFamily.length > 0 && (
+              <section class="exam-sprint-family">
+                <span class="exam-sprint-family-title">
+                  {SPRINT_UI_LABELS.wordFamilyPrefix}
+                  {' '}
+                  <span lang="zh-CN">{rootChar}</span>
+                </span>
+                <div
+                  class="exam-sprint-family-chips"
+                  role="list"
+                >
+                  {wordFamily.map((wf) => (
+                    <div
+                      key={wf.hanzi}
+                      class="exam-sprint-family-chip"
+                      role="listitem"
+                    >
+                      <span class="exam-sprint-family-head">
+                        <span
+                          class="exam-sprint-family-hanzi"
+                          lang="zh-CN"
+                        >
+                          {Array.from(wf.hanzi).map((ch, i) => (
+                            <span
+                              key={i}
+                              class={ch === rootChar ? 'is-root' : undefined}
+                            >
+                              {ch}
+                            </span>
+                          ))}
+                        </span>
+                        <span class="exam-sprint-family-pinyin">{wf.pinyin}</span>
+                      </span>
+                      <span class="exam-sprint-family-meaning">{wf.meaning}</span>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {isFlipped && activeSlot === 'night' && item.requiresPinyinCheck && (
+              <form
+                class="exam-sprint-pinyin-check"
+                onSubmit={handleCheckPinyin}
+              >
+                <label>{SPRINT_UI_LABELS.pinyinPrompt}</label>
+                <div class="exam-sprint-pinyin-input-row">
+                  <input
+                    type="text"
+                    value={pinyinInput}
+                    onInput={(e) => setPinyinInput(e.target.value)}
+                    placeholder={SPRINT_UI_LABELS.pinyinPlaceholder}
+                  />
                   <button
-                    type="button"
+                    type="submit"
                     class="exam-pill-btn"
-                    onClick={(e) => playPrebuiltAudio(item.hanzi, item.pinyin, e.currentTarget)}
                   >
-                    <Volume2 size={16} />
-                    Nghe lại
+                    {SPRINT_UI_LABELS.pinyinCheck}
                   </button>
                 </div>
-
-                <div class="exam-sprint-meaning">{item.meaning}</div>
-
-                {hanViet && (
-                  <div class="exam-sprint-hanviet">
-                    <Sparkles size={15} />
-                    <strong>{SPRINT_UI_LABELS.hanVietPrefix}</strong> {hanViet}
-                  </div>
+                {pinyinStatus === 'correct' && (
+                  <span class="exam-sprint-ok">{SPRINT_UI_LABELS.pinyinCorrect}</span>
                 )}
-
-                {wordFamily.length > 0 && (
-                  <div class="exam-sprint-family">
-                    <strong>{SPRINT_UI_LABELS.wordFamilyPrefix}</strong>
-                    <div class="exam-sprint-family-chips">
-                      {wordFamily.map((wf) => (
-                        <span
-                          key={wf.hanzi}
-                          class="exam-sprint-family-chip"
-                        >
-                          {wf.hanzi} ({wf.pinyin}) — {wf.meaning}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
+                {pinyinStatus === 'wrong' && (
+                  <span class="exam-sprint-err">{SPRINT_UI_LABELS.pinyinWrongPrefix} {item.pinyin}</span>
                 )}
+              </form>
+            )}
 
-                {activeSlot === 'night' && item.requiresPinyinCheck && (
-                  <form
-                    class="exam-sprint-pinyin-check"
-                    onSubmit={handleCheckPinyin}
+            <div class="exam-sprint-footer">
+              {!isFlipped ? (
+                <>
+                  <div
+                    class="exam-sprint-progress-track"
+                    role="progressbar"
+                    aria-label={SPRINT_UI_LABELS.autoFlipTimerLabel}
+                    aria-valuemin={0}
+                    aria-valuemax={100}
+                    aria-valuenow={pct}
                   >
-                    <label>{SPRINT_UI_LABELS.pinyinPrompt}</label>
-                    <div class="exam-sprint-pinyin-input-row">
-                      <input
-                        type="text"
-                        value={pinyinInput}
-                        onInput={(e) => setPinyinInput(e.target.value)}
-                        placeholder="Ví dụ: zeren"
-                      />
-                      <button
-                        type="submit"
-                        class="exam-pill-btn"
-                      >
-                        Kiểm tra
-                      </button>
-                    </div>
-                    {pinyinStatus === 'correct' && (
-                      <span class="exam-sprint-ok">Chính xác! Phản xạ gõ chuẩn.</span>
-                    )}
-                    {pinyinStatus === 'wrong' && (
-                      <span class="exam-sprint-err">Chưa khớp — đáp án: {item.pinyin}</span>
-                    )}
-                  </form>
-                )}
-
+                    <div
+                      class="exam-sprint-progress-fill"
+                      style={{ width: `${pct}%` }}
+                    />
+                  </div>
+                  <button
+                    type="button"
+                    class="exam-sprint-rate-btn exam-sprint-rate-btn--flip"
+                    onClick={handleFlipSprintCard}
+                    aria-keyshortcuts="Space Enter"
+                  >
+                    <span class="exam-sprint-rate-label">{SPRINT_UI_LABELS.flipNow}</span>
+                    <kbd class="exam-sprint-kbd">Space</kbd>
+                  </button>
+                </>
+              ) : (
                 <div class="exam-sprint-actions">
                   <button
                     type="button"
-                    class="exam-sprint-btn-suspend"
+                    class="exam-sprint-rate-btn exam-sprint-rate-btn--again"
                     onClick={() => handleRateSprintCard('again')}
+                    aria-keyshortcuts={SPRINT_KEYS.AGAIN}
+                    title={`${SPRINT_UI_LABELS.rateAgain} · ${SPRINT_UI_LABELS.rateAgainHint}`}
                   >
-                    Quên (Ôn lại sớm)
+                    <span class="exam-sprint-rate-label">{SPRINT_UI_LABELS.rateAgain}</span>
+                    <span class="exam-sprint-rate-hint">{SPRINT_UI_LABELS.rateAgainHint}</span>
+                    <kbd class="exam-sprint-kbd">{SPRINT_KEYS.AGAIN}</kbd>
                   </button>
                   <button
                     type="button"
-                    class="exam-sprint-btn-keep"
+                    class="exam-sprint-rate-btn exam-sprint-rate-btn--good"
                     onClick={() => handleRateSprintCard('good')}
+                    aria-keyshortcuts={SPRINT_KEYS.GOOD}
+                    title={`${SPRINT_UI_LABELS.rateGood} · ${SPRINT_UI_LABELS.rateGoodHint}`}
                   >
-                    Đã nhớ (Đọc nhẩm xong)
+                    <span class="exam-sprint-rate-label">{SPRINT_UI_LABELS.rateGood}</span>
+                    <span class="exam-sprint-rate-hint">{SPRINT_UI_LABELS.rateGoodHint}</span>
+                    <kbd class="exam-sprint-kbd">{SPRINT_KEYS.GOOD}</kbd>
                   </button>
                 </div>
-              </div>
-            )}
+              )}
+            </div>
           </div>
         )}
       </div>
