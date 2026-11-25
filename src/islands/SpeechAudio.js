@@ -62,7 +62,7 @@ export function speakChinese(text, options = {}) {
   stopSpeaking();
   const playbackId = activePlaybackId;
 
-  const audioUrl = resolvePrebuiltAudio(cleanText);
+  const audioUrl = options.audioUrl || resolvePrebuiltAudio(cleanText, options.pinyin || null);
   if (!audioUrl) {
     if (typeof options.onError === 'function') {
       try {
@@ -160,14 +160,19 @@ export async function loadGlobalHanziAudioMap() {
   return globalHanziAudioMap;
 }
 
-export function resolvePrebuiltAudio(text) {
+export function resolvePrebuiltAudio(text, pinyin = null) {
   if (!text) return null;
   const rawText = String(text).replace(/<[^>]*>/g, '').trim();
   const cleanText = rawText.replace(/[（\(].*?[）\)]/g, '').trim() || rawText;
+  const normPinyin = pinyin ? String(pinyin).trim().toLowerCase() : '';
 
   // 1. Try global Hanzi audio index
   const gMap = globalHanziAudioMap || (typeof window !== 'undefined' && window.globalHanziAudioMap);
   if (gMap) {
+    if (normPinyin) {
+      const polyKey = `${cleanText}|${normPinyin}`;
+      if (gMap[polyKey]) return gMap[polyKey];
+    }
     if (gMap[cleanText]) return gMap[cleanText];
     if (gMap[rawText]) return gMap[rawText];
 
@@ -302,7 +307,7 @@ export function speakExample() {
   );
 }
 
-export function speakText(text, button, rate = (typeof SPEECH_RATE !== 'undefined' ? SPEECH_RATE : 0.8), audioUrl = null) {
+export function speakText(text, button, rate = (typeof SPEECH_RATE !== 'undefined' ? SPEECH_RATE : DEFAULT_SPEECH_RATE), audioUrl = null, pinyin = null) {
   if (!button || !text) return;
   if (activeSpeechButton === button) {
     stopSpeech();
@@ -316,7 +321,7 @@ export function speakText(text, button, rate = (typeof SPEECH_RATE !== 'undefine
 
   activeSpeechButton = button;
 
-  const finalAudioUrl = audioUrl || resolvePrebuiltAudio(text);
+  const finalAudioUrl = audioUrl || resolvePrebuiltAudio(text, pinyin);
 
   // Prebuilt studio-grade audio
   if (finalAudioUrl) {

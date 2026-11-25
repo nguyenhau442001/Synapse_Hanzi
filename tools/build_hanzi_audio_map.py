@@ -92,6 +92,7 @@ def build_hanzi_audio_map() -> dict[str, str]:
 
             # 1. Map vocabulary word audio
             word_text = str(vocab_entry.get("hanzi") or "").strip()
+            word_pinyin = str(vocab_entry.get("pinyin") or "").strip().lower()
             word_audio = audio_info.get("word")
             if word_audio:
                 clean_text = clean_hanzi(word_text)
@@ -99,6 +100,10 @@ def build_hanzi_audio_map() -> dict[str, str]:
                     mapping[clean_text] = word_audio
                 if word_text and word_text not in mapping:
                     mapping[word_text] = word_audio
+                if clean_text and word_pinyin:
+                    poly_key = f"{clean_text}|{word_pinyin}"
+                    if poly_key not in mapping:
+                        mapping[poly_key] = word_audio
 
             # 2. Map example sentence audio
             example_audio = audio_info.get("example")

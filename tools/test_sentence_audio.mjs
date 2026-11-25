@@ -24,4 +24,9 @@ assert.ok(targetNoPunct in audioMap, `Expected unpunctuated "${targetNoPunct}" i
 // Test: Target answer word
 assert.ok('无数' in audioMap, 'Expected "无数" in hanzi_audio_map.json');
 
+// Test: Polyphone keys (hanzi|pinyin) resolve to distinct audio files
+assert.ok('好|hǎo' in audioMap, 'Expected "好|hǎo" in hanzi_audio_map.json');
+assert.ok('好|hào' in audioMap, 'Expected "好|hào" in hanzi_audio_map.json');
+assert.notEqual(audioMap['好|hǎo'], audioMap['好|hào'], 'Polyphone 好|hǎo and 好|hào must map to different audio files');
+
 console.log('✅ All sentence audio resolution tests passed successfully!');

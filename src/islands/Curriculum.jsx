@@ -274,10 +274,10 @@ function startLessonFlashcards(key) {
   else if (window.selectLevel) window.selectLevel(key);
 }
 
-function speak(text, event) {
+function speak(text, event, pinyin = null) {
   const button = event && event.currentTarget;
-  if (typeof speakText === 'function') speakText(text, button);
-  else if (window.speakText) window.speakText(text, button);
+  if (typeof speakText === 'function') speakText(text, button, undefined, null, pinyin);
+  else if (window.speakText) window.speakText(text, button, undefined, null, pinyin);
 }
 
 function speakAll(texts, event) {
@@ -624,7 +624,7 @@ function LessonView({ lesson, levelData }) {
             <button
               type="button"
               class="cur-word"
-              onClick={(e) => speak(w.hanzi, e)}
+              onClick={(e) => speak(w.hanzi, e, w.pinyin)}
               aria-label={`Nghe ${w.hanzi}`}
             >
               <span class="cur-word-hanzi" lang="zh-CN">{w.hanzi}</span>
