@@ -5726,21 +5726,31 @@ body.flashcard-study-mode #studyNavRow {
   }
 }
 
-/* --- Wide Screen (≥ 1200px): 2-Column Card + Open Details Rail ------------- */
+/* --- Wide Screen (≥ 1200px): 2-Column Card + Open Details Rail -------------
+   The stage (.workstation > #studyView > #cardArea) widens only while the rail is shown, so the
+   grid never overflows its overflow-hidden parent. Rating/nav rows reserve the
+   rail column + gap on the right so they line up with the card edges. */
+body.flashcard-study-mode {
+  --study-stage-wide-width: 1180px;
+  --study-rail-width: 400px;
+  --study-grid-gap: 24px;
+}
 @media (min-width: 1200px) {
   body.flashcard-study-mode .study-view-topbar {
-    max-width: 1320px;
+    max-width: var(--study-stage-wide-width);
     gap: 16px;
+  }
+  body.flashcard-study-mode .workstation:has(.study-card-grid.has-detail-rail),
+  body.flashcard-study-mode .workstation-middle:has(.study-card-grid.has-detail-rail),
+  body.flashcard-study-mode #studyView:has(.study-card-grid.has-detail-rail),
+  body.flashcard-study-mode #cardArea:has(> .study-card-grid.has-detail-rail) {
+    max-width: var(--study-stage-wide-width) !important;
   }
   body.flashcard-study-mode .study-card-grid.has-detail-rail {
     display: grid;
-    /* minmax(0, …) lets both columns shrink into #cardArea (capped near 870px);
-       fixed 540px/380px minimums overflowed it and got clipped on both sides. */
-    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
-    gap: 24px;
-    justify-content: center;
+    grid-template-columns: minmax(0, 1fr) var(--study-rail-width);
+    gap: var(--study-grid-gap);
     align-items: start;
-    max-width: 1320px;
     margin: 0 auto;
   }
   body.flashcard-study-mode .study-card-grid.has-detail-rail > .card {
@@ -5750,11 +5760,12 @@ body.flashcard-study-mode #studyNavRow {
   }
   body.flashcard-study-mode .study-card-grid.has-detail-rail ~ .rating-area,
   body.flashcard-study-mode .study-card-grid.has-detail-rail ~ .study-nav-controls {
-    max-width: 1320px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: calc((100% - 24px) * 0.4255 + 24px);
+    padding-right: calc(var(--study-rail-width) + var(--study-grid-gap));
     box-sizing: border-box;
+  }
+  /* The rail's "Cấu tạo chữ" panel already shows the decomposition. */
+  body.flashcard-study-mode .study-card-grid.has-detail-rail:has(#cardDecompAccordion:not([hidden])) .card-decomp-inline {
+    display: none !important;
   }
   body.flashcard-study-mode .study-detail-rail:not([hidden]) {
     display: flex;
