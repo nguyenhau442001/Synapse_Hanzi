@@ -490,6 +490,66 @@ body.home-screen .dashboard-bottom-widgets .hw-card:hover {
   border-color: rgba(255, 255, 255, 0.08);
 }
 
+/* Full-width compact banner for Exam Countdown above the 2-column widgets row */
+.dashboard-bottom-widgets .hw-sprint-countdown,
+body.home-screen .dashboard-bottom-widgets .hw-sprint-countdown {
+  grid-column: 1 / -1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  padding: 12px 20px;
+}
+.dashboard-bottom-widgets .hw-sprint-countdown .hw-head {
+  display: contents;
+}
+.dashboard-bottom-widgets .hw-sprint-countdown .hw-title {
+  order: 1;
+  flex: 0 0 auto;
+}
+.dashboard-bottom-widgets .hw-sprint-countdown .hw-sprint-cd-body {
+  order: 2;
+  flex: 1 1 auto;
+  justify-content: flex-start;
+  gap: 16px;
+  margin-top: 0;
+  color: var(--text-secondary);
+}
+.dashboard-bottom-widgets .hw-sprint-countdown .hw-sprint-cd-body strong {
+  color: var(--accent-text);
+  font-weight: 700;
+}
+.dashboard-bottom-widgets .hw-sprint-countdown .hw-link {
+  order: 3;
+  flex: 0 0 auto;
+  padding: 7px 14px;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--border));
+  background: var(--accent-light);
+  color: var(--accent-text);
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease;
+}
+.dashboard-bottom-widgets .hw-sprint-countdown .hw-link:hover {
+  background: var(--brand-primary);
+  border-color: var(--brand-primary);
+  color: var(--on-accent, #ffffff);
+}
+@media (max-width: 640px) {
+  .dashboard-bottom-widgets .hw-sprint-countdown .hw-link {
+    order: 2;
+    margin-left: auto;
+  }
+  .dashboard-bottom-widgets .hw-sprint-countdown .hw-sprint-cd-body {
+    order: 3;
+    flex-basis: 100%;
+    justify-content: space-between;
+  }
+}
+
 /* Streamlined Compact Forecast Widget */
 .dashboard-bottom-widgets .hw-forecast {
   justify-content: space-between;
