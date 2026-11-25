@@ -32,7 +32,7 @@ let indexData = null;
 let indexPromise = null;
 const levelCache = {};
 const deckCache = {};
-let ui = { level: null, lessonKey: null, quiz: null, hidePinyin: false, showAllWords: false, error: null };
+let ui = { level: null, lessonKey: null, quiz: null, hidePinyin: false, showAllWords: false, showGuide: false, error: null };
 
 function versionSuffix() {
   try { return typeof APP_VERSION !== 'undefined' ? '?v=' + APP_VERSION : ''; } catch (e) { return ''; }
@@ -269,13 +269,60 @@ function LevelPicker({ levels, active, store }) {
   );
 }
 
-function Meter({ label, value, total }) {
-  const pct = total ? Math.min(100, Math.round((value / total) * 100)) : 0;
+function LevelProgressBar({
+  levelName,
+  pct,
+  doneLessons,
+  totalLessons,
+  knownWords,
+  totalWords,
+  grammarDone,
+  grammarTotal,
+  currentLesson,
+  featureState,
+  onStartLesson,
+}) {
+  const ctaLabel = featureState === 'complete'
+    ? 'Ôn lại bài'
+    : featureState === 'continue'
+      ? `Học tiếp · Bài ${currentLesson ? currentLesson.n : ''}`
+      : `Bắt đầu · Bài ${currentLesson ? currentLesson.n : ''}`;
   return (
-    <li class="cur-meter">
-      <div class="cur-meter-row"><span>{label}</span><strong>{`${value} / ${total}`}</strong></div>
-      <div class="cur-progress is-thin" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow={pct} aria-label={label}><div class="cur-progress-fill" style={`width:${pct}%`}></div></div>
-    </li>
+    <section class="cur-progress-bar" aria-label={`Tiến độ ${levelName}`}>
+      <div class="cur-pb-info">
+        <div class="cur-pb-top">
+          <span class="cur-pb-title">{`Tiến độ ${levelName}`}</span>
+          <span class="cur-pb-pct">{`${pct}%`}</span>
+        </div>
+        <div
+          class="cur-progress"
+          role="progressbar"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          aria-valuenow={pct}
+          aria-label={`Tiến độ ${levelName}`}
+        >
+          <div class="cur-progress-fill" style={`width:${pct}%`}></div>
+        </div>
+        <div class="cur-pb-stats">
+          <span><strong>{doneLessons}</strong>{`/${totalLessons} bài`}</span>
+          <span class="cur-pb-dot" aria-hidden="true">·</span>
+          <span><strong>{knownWords}</strong>{`/${totalWords} từ đã nhớ`}</span>
+          <span class="cur-pb-dot" aria-hidden="true">·</span>
+          <span><strong>{grammarDone}</strong>{`/${grammarTotal} ngữ pháp`}</span>
+        </div>
+      </div>
+      {currentLesson && (
+        <button
+          type="button"
+          class="ds-btn ds-btn--primary cur-pb-cta"
+          onClick={() => onStartLesson(currentLesson.key)}
+        >
+          {ctaLabel}
+          <ArrowRightIcon size={16} />
+        </button>
+      )}
+    </section>
   );
 }
 
@@ -294,119 +341,84 @@ function OverviewView({ index, levelId }) {
   const pct = level.lessons.length ? Math.round((doneCount / level.lessons.length) * 100) : 0;
   const levelComplete = level.lessons.length > 0 && doneCount === level.lessons.length;
   const featureState = levelComplete ? 'complete' : (doneCount || (current && store.lessons[current.key])) ? 'continue' : 'start';
-  const currentRec = current && store.lessons[current.key];
-  const currentDetail = current && details[current.key];
-  const currentKnown = current ? knownCount(current.key) : 0;
-  const featureEyebrow = featureState === 'complete' ? `Đã hoàn thành ${level.name}` : `${featureState === 'continue' ? 'Tiếp tục' : 'Bắt đầu'} · Bài ${current ? current.n : ''}`;
-  const featureCta = featureState === 'complete' ? 'Ôn lại bài' : featureState === 'continue' ? 'Học tiếp' : 'Bắt đầu học';
   return (
     <div class="cur-wrap">
-      <header class="cur-hero">
-        <div class="cur-hero-text">
-          <div class="cur-eyebrow">Chuẩn trình độ tiếng Trung quốc tế · {index.standard}</div>
-          <h2 class="cur-title" tabindex="-1">Giáo trình HSK 3.0 <span class="cur-title-accent" lang="zh-CN">课程</span></h2>
-          <p class="cur-lede">Học theo bài: từ vựng, điểm ngữ pháp, hội thoại và bài luyện trong cùng một lộ trình. Từ vựng mỗi bài được học bằng flashcard và tự động lên lịch ôn.</p>
-        </div>
-        <dl class="cur-metrics" aria-label={`Tiến độ ${level.name}`}>
-          <div class="cur-metric"><dt>{`Bài ${level.name}`}</dt><dd>{doneCount}<span>{`/${level.lessons.length}`}</span></dd></div>
-          <div class="cur-metric"><dt>Từ đã nhớ</dt><dd>{knownWords}<span>{`/${level.words}`}</span></dd></div>
-          <div class="cur-metric"><dt>Ngữ pháp</dt><dd>{grammarDone}<span>{`/${grammarInLessons}`}</span></dd></div>
-        </dl>
+      <header class="cur-hero-compact">
+        <div class="cur-eyebrow">Lộ trình HSK 3.0 · 9 cấp (11.000 từ)</div>
+        <h2 class="cur-title" tabindex="-1">Giáo trình HSK 3.0</h2>
       </header>
 
       <LevelPicker levels={index.levels} active={level.level} store={store} />
 
-      <div class="cur-columns">
-        <div class="cur-main">
-          {current && (
-            <article class={'cur-feature is-' + featureState} aria-label="Bài học tiếp theo">
-              <div class="cur-feature-glyph" aria-hidden="true" lang="zh-CN">{current.zh.replace(/[^㐀-鿿]/g, '').slice(0, 1)}</div>
-              <div class="cur-feature-body">
-                <div class="cur-feature-eyebrow">{featureEyebrow}</div>
-                <h3 class="cur-feature-title" lang="zh-CN">{current.zh}</h3>
-                {currentDetail && currentDetail.py && <div class="cur-feature-py">{currentDetail.py}</div>}
-                <p class="cur-feature-desc">{current.vi}</p>
-                <div class="cur-feature-stats">
-                  <span class="ds-pill">{`${current.words} từ`}</span>
-                  <span class="ds-pill">{`${current.grammar} điểm ngữ pháp`}</span>
-                  {currentKnown > 0 && <span class="ds-pill ds-pill--success">{`Đã nhớ ${currentKnown}/${current.words}`}</span>}
-                  {currentRec && <span class={'ds-pill' + (currentRec.done ? ' ds-pill--success' : ' ds-pill--accent')}>{`Điểm cao nhất ${currentRec.best}%`}</span>}
-                </div>
-              </div>
-              <button
-                type="button"
-                class="ds-btn ds-btn--primary ds-btn--lg cur-feature-cta"
-                onClick={() => openLesson(current.key)}
-              >
-                {featureCta}
-                <ArrowRightIcon size={16} />
-              </button>
-            </article>
-          )}
+      <LevelProgressBar
+        levelName={level.name}
+        pct={pct}
+        doneLessons={doneCount}
+        totalLessons={level.lessons.length}
+        knownWords={knownWords}
+        totalWords={level.words}
+        grammarDone={grammarDone}
+        grammarTotal={grammarInLessons}
+        currentLesson={current}
+        featureState={featureState}
+        onStartLesson={openLesson}
+      />
 
-          <div class="cur-list-head">
+      <div class="cur-main">
+        <div class="cur-list-head">
+          <div class="cur-list-title-wrap">
             <h3 class="cur-h2">{`${level.name} · ${level.lessons.length} bài`}</h3>
-            <span class="cur-list-meta">{`${level.words} từ · ${level.grammarTotal || grammarInLessons} điểm ngữ pháp theo chuẩn`}</span>
+            <button
+              type="button"
+              class="cur-guide-toggle"
+              aria-expanded={String(ui.showGuide)}
+              aria-controls="curLessonGuide"
+              onClick={() => setUi({ showGuide: !ui.showGuide })}
+              title="Cấu trúc mỗi bài học"
+            >
+              ?
+            </button>
           </div>
-          <ol class="cur-lesson-list">
-            {level.lessons.map((l) => {
-              const rec = store.lessons[l.key];
-              const state = rec && rec.done ? 'done' : (current && current.key === l.key ? 'current' : 'todo');
-              const label = state === 'done' ? 'Đã xong' : state === 'current' ? 'Đang học' : (rec ? `${rec.best}%` : 'Chưa học');
-              const py = details[l.key] && details[l.key].py;
-              return (
-                <li class={'cur-lesson-row is-' + state}>
-                  <button
-                    type="button"
-                    class="cur-lesson-btn"
-                    aria-current={state === 'current' ? 'step' : undefined}
-                    onClick={() => openLesson(l.key)}
-                  >
-                    <span class="cur-lesson-badge" aria-hidden="true">{state === 'done' ? <CheckIcon size={14} /> : l.n}</span>
-                    <span class="cur-lesson-text">
-                      <span class="cur-lesson-zh" lang="zh-CN">{l.zh}</span>
-                      <span class="cur-lesson-sub">
-                        {py && <span class="cur-lesson-py">{py}</span>}
-                        {py && l.vi && <span class="cur-lesson-dot" aria-hidden="true">·</span>}
-                        {l.vi && <span class="cur-lesson-vi">{l.vi}</span>}
-                      </span>
-                    </span>
-                    <span class="cur-lesson-meta">{`${l.words} từ · ${l.grammar} ngữ pháp`}</span>
-                    <span class={'cur-lesson-state is-' + state}>{label}</span>
-                  </button>
-                </li>
-              );
-            })}
-          </ol>
+          <span class="cur-list-meta">{`${level.words} từ · ${grammarInLessons} điểm ngữ pháp trọng tâm`}</span>
         </div>
 
-        <aside class="cur-aside" aria-label="Tổng quan học tập">
-          <section class="cur-overview">
-            <div class="cur-overview-head">
-              <h3 class="cur-h3">{`Tổng quan ${level.name}`}</h3>
-              <span class="cur-overview-pct">{`${pct}%`}</span>
-            </div>
-            <div class="cur-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow={pct} aria-label="Tiến độ cấp độ"><div class="cur-progress-fill" style={`width:${pct}%`}></div></div>
-            <ul class="cur-meters">
-              <Meter label="Từ vựng đã nhớ" value={knownWords} total={level.words} />
-              <Meter label="Ngữ pháp đã học" value={grammarDone} total={grammarInLessons} />
-              <Meter label="Bài luyện đạt ≥ 80%" value={doneCount} total={level.lessons.length} />
-            </ul>
-          </section>
-          <section class="cur-structure">
-            <h3 class="cur-h3">Mỗi bài gồm</h3>
-            <ol class="cur-steps">
-              {[
-                ['Từ vựng', 'Từ mới của bài, phát âm, Hán Việt; học bằng flashcard.'],
-                ['Ngữ pháp', 'Điểm ngữ pháp theo chuẩn, có công thức và câu mẫu.'],
-                ['Hội thoại', 'Đoạn hội thoại ngắn dùng lại từ và mẫu câu của bài.'],
-                ['Luyện tập', 'Trắc nghiệm nhanh; đạt 80% để hoàn thành bài.'],
-              ].map(([t, d], i) => (
-                <li class="cur-step"><span class="cur-step-n">{i + 1}</span><div><div class="cur-step-t">{t}</div><div class="cur-step-d">{d}</div></div></li>
-              ))}
-            </ol>
-          </section>
-        </aside>
+        {ui.showGuide && (
+          <div id="curLessonGuide" class="cur-guide-box">
+            <strong>Mỗi bài gồm 4 phần:</strong>
+            <span>1. Từ vựng (flashcard SRS) · 2. Ngữ pháp (công thức &amp; ví dụ) · 3. Hội thoại · 4. Luyện tập (đạt ≥ 80% để hoàn thành).</span>
+          </div>
+        )}
+
+        <ol class="cur-lesson-list">
+          {level.lessons.map((l) => {
+            const rec = store.lessons[l.key];
+            const state = rec && rec.done ? 'done' : (current && current.key === l.key ? 'current' : 'todo');
+            const label = state === 'done' ? 'Đã xong' : state === 'current' ? 'Đang học' : (rec ? `${rec.best}%` : 'Chưa học');
+            const py = details[l.key] && details[l.key].py;
+            return (
+              <li class={'cur-lesson-row is-' + state}>
+                <button
+                  type="button"
+                  class="cur-lesson-btn"
+                  aria-current={state === 'current' ? 'step' : undefined}
+                  onClick={() => openLesson(l.key)}
+                >
+                  <span class="cur-lesson-badge" aria-hidden="true">{state === 'done' ? <CheckIcon size={14} /> : l.n}</span>
+                  <span class="cur-lesson-text">
+                    <span class="cur-lesson-zh" lang="zh-CN">{l.zh}</span>
+                    <span class="cur-lesson-sub">
+                      {py && <span class="cur-lesson-py">{py}</span>}
+                      {py && l.vi && <span class="cur-lesson-dot" aria-hidden="true">·</span>}
+                      {l.vi && <span class="cur-lesson-vi">{l.vi}</span>}
+                    </span>
+                  </span>
+                  <span class="cur-lesson-meta">{`${l.words} từ · ${l.grammar} ngữ pháp`}</span>
+                  <span class={'cur-lesson-state is-' + state}>{label}</span>
+                </button>
+              </li>
+            );
+          })}
+        </ol>
       </div>
     </div>
   );

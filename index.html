@@ -91,7 +91,7 @@
         </button>
         <div class="app-brand-text-block" id="appBrandTextBlock" role="button" tabindex="0" title="Trở về trang chủ (Home)" aria-label="Trang chủ 汉字思维">
           <h1 id="appTitle">汉字思维</h1>
-          <p id="appSubtitle"><span class="brand-pinyin">Hànzì Sīwéi</span> <span class="brand-sep" aria-hidden="true">·</span> <span class="brand-en">Hanzi Mind</span> <span class="brand-version footer-version" title="Phiên bản ứng dụng">v3.66.3</span> <span class="brand-tagline-wrap"><span class="brand-sep" aria-hidden="true">·</span> <span class="brand-tagline">Think in Characters. Master Chinese.</span></span></p>
+          <p id="appSubtitle"><span class="brand-en">Hanzi Mind</span></p>
         </div>
       </div>
     </div>
@@ -105,48 +105,55 @@
     </div>
 
     <div class="app-header-actions">
-      <!-- Cluster 1: Streak / Gamification -->
-      <div class="header-cluster header-streak-cluster">
-        <button type="button" id="headerStreakBadge" class="header-streak-badge" aria-label="Xem lịch sử học tập" title="Chuỗi ngày học liên tục (Lịch sử học tập)">
-          <span class="header-streak-icon" aria-hidden="true"><svg class="ds-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></span>
-          <span class="header-streak-text" id="headerStreakText">0 ngày</span>
-        </button>
-      </div>
+      <button type="button" id="headerUrgentReviewBtn" class="header-action-badge header-badge-urgent" title="Từ cần ôn gấp" aria-label="Từ cần ôn gấp">
+        <span class="header-badge-icon" aria-hidden="true"><svg class="ds-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg></span>
+        <span class="header-badge-label">Cần ôn</span>
+        <span class="header-badge-count" id="headerUrgentCount">0</span>
+      </button>
 
-      <span class="header-divider" aria-hidden="true"></span>
-
-      <!-- Cluster 2: Quick Review Triggers -->
-      <div class="header-cluster header-review-cluster" role="group" aria-label="Truy cập nhanh từ vựng">
-        <button type="button" id="headerSavedWordsBtn" class="header-action-badge header-badge-saved" title="Từ khó đã đánh dấu (Sổ từ)" aria-label="Từ khó đã đánh dấu">
-          <span class="header-badge-icon" aria-hidden="true"><svg class="ds-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></span>
-          <span class="header-badge-label">Sổ từ</span>
-          <span class="header-badge-count" id="headerSavedCount">0</span>
-        </button>
-        <button type="button" id="headerUrgentReviewBtn" class="header-action-badge header-badge-urgent" title="Từ cần ôn gấp" aria-label="Từ cần ôn gấp">
-          <span class="header-badge-icon" aria-hidden="true"><svg class="ds-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></span>
-          <span class="header-badge-label">Cần ôn</span>
-          <span class="header-badge-count" id="headerUrgentCount">0</span>
-        </button>
-      </div>
-
-      <span class="header-divider" aria-hidden="true"></span>
-
-      <!-- Cluster 3: System Utilities (Ghost Minimal Icons) -->
-      <div class="header-cluster header-utility-cluster" role="group" aria-label="Công cụ hệ thống">
-        <button type="button" id="headerInstallBtn" class="header-install-btn" title="Cài đặt ứng dụng về máy" aria-label="Cài đặt ứng dụng về máy">
-          <svg class="ds-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          <span>Cài app</span>
-        </button>
-        <button type="button" id="headerShareBtn" class="header-share-btn" title="Chia sẻ với bạn bè" aria-label="Chia sẻ với bạn bè">
-          <svg class="ds-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
-        </button>
-        <button type="button" id="headerHelpBtn" class="header-help-btn" title="Hướng dẫn &amp; Trợ giúp học tập (?)" aria-label="Hướng dẫn học tập và phím tắt">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
-        </button>
-        <button id="themeToggle" class="theme-toggle-btn" title="Đổi giao diện Sáng / Tối" aria-label="Đổi giao diện Sáng / Tối"><svg class="ds-icon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/></svg></button>
-        <button type="button" id="headerProfileBtn" class="header-profile-btn" title="Hồ sơ &amp; Thống kê học tập" aria-label="Hồ sơ học viên">
+      <div class="header-account-wrap">
+        <button type="button" id="headerProfileBtn" class="header-profile-btn" title="Menu tài khoản &amp; tiện ích" aria-label="Menu tài khoản và tiện ích" aria-haspopup="menu" aria-expanded="false" aria-controls="headerAccountMenu">
           <span class="header-avatar-icon" aria-hidden="true"><svg class="ds-icon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span>
         </button>
+
+        <div id="headerAccountMenu" class="header-account-menu" role="menu" aria-label="Tiện ích tài khoản" hidden>
+          <button type="button" id="headerMenuProfileItem" class="header-menu-item" role="menuitem">
+            <svg class="ds-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+            <span class="header-menu-label">Hồ sơ &amp; Thống kê</span>
+          </button>
+          <button type="button" id="headerStreakBadge" class="header-menu-item header-streak-badge" role="menuitem" aria-label="Xem lịch sử học tập">
+            <span class="header-streak-icon" aria-hidden="true"><svg class="ds-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></span>
+            <span class="header-menu-label">Chuỗi ngày học</span>
+            <span class="header-menu-pill" id="headerStreakText">0 ngày</span>
+          </button>
+          <button type="button" id="headerSavedWordsBtn" class="header-menu-item header-badge-saved" role="menuitem" aria-label="Từ khó đã đánh dấu">
+            <span class="header-badge-icon" aria-hidden="true"><svg class="ds-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></span>
+            <span class="header-menu-label">Sổ từ</span>
+            <span class="header-menu-pill" id="headerSavedCount">0</span>
+          </button>
+
+          <div class="header-menu-divider" role="separator"></div>
+
+          <button type="button" id="themeToggle" class="header-menu-item theme-toggle-btn" role="menuitem" aria-label="Đổi giao diện Sáng / Tối">
+            <svg class="ds-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/></svg>
+            <span class="header-menu-label">Giao diện Sáng / Tối</span>
+          </button>
+          <button type="button" id="headerHelpBtn" class="header-menu-item header-help-btn" role="menuitem" aria-label="Hướng dẫn học tập và phím tắt">
+            <svg class="ds-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+            <span class="header-menu-label">Hướng dẫn &amp; Phím tắt</span>
+          </button>
+          <button type="button" id="headerShareBtn" class="header-menu-item header-share-btn" role="menuitem" aria-label="Chia sẻ với bạn bè">
+            <svg class="ds-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            <span class="header-menu-label">Chia sẻ ứng dụng</span>
+          </button>
+          <button type="button" id="headerInstallBtn" class="header-menu-item header-install-btn" role="menuitem" aria-label="Cài đặt ứng dụng về máy">
+            <svg class="ds-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span class="header-menu-label">Cài đặt ứng dụng</span>
+          </button>
+
+          <div class="header-menu-divider" role="separator"></div>
+          <div class="header-menu-version">Phiên bản <span class="brand-version footer-version">v3.66.3</span></div>
+        </div>
       </div>
     </div>
   </header>

@@ -108,11 +108,39 @@ export function initAppEventBindings() {
   onId('appBrandTextBlock', 'keydown', handleHomeNavigation);
   on('.app-brand-logo-img', 'click', handleHomeNavigation);
 
-  onId('headerStreakBadge', 'click', () => {
+  const accountMenu = document.getElementById('headerAccountMenu');
+  const profileBtn = document.getElementById('headerProfileBtn');
+  const setAccountMenuOpen = (open) => {
+    if (!accountMenu || !profileBtn) return;
+    accountMenu.hidden = !open;
+    profileBtn.setAttribute('aria-expanded', String(open));
+  };
+  if (profileBtn && accountMenu) {
+    profileBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      setAccountMenuOpen(accountMenu.hidden);
+    });
+    accountMenu.addEventListener('click', (e) => {
+      if (e.target.closest('button')) setAccountMenuOpen(false);
+    });
+    document.addEventListener('click', (e) => {
+      if (!accountMenu.hidden && !accountMenu.contains(e.target) && !profileBtn.contains(e.target)) {
+        setAccountMenuOpen(false);
+      }
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !accountMenu.hidden) {
+        setAccountMenuOpen(false);
+        profileBtn.focus();
+      }
+    });
+  }
+
+  onId('headerMenuProfileItem', 'click', () => {
     if (typeof showHistoryModal === 'function') showHistoryModal();
     else if (window.showHistoryModal) window.showHistoryModal();
   });
-  onId('headerProfileBtn', 'click', () => {
+  onId('headerStreakBadge', 'click', () => {
     if (typeof showHistoryModal === 'function') showHistoryModal();
     else if (window.showHistoryModal) window.showHistoryModal();
   });

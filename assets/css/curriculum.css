@@ -32,16 +32,87 @@
   white-space: nowrap;
 }
 
+.cur-hero-compact {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: var(--space-1) 0 0;
+}
+
 .cur-eyebrow {
   font-size: var(--fs-caption);
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--text-tertiary);
+  color: var(--text-secondary);
 }
 
 .cur-eyebrow.is-accent {
   color: var(--accent-text);
+}
+
+/* Unified compact progress & CTA bar */
+.cur-progress-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-5);
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+}
+
+.cur-pb-info {
+  flex: 1 1 360px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cur-pb-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.cur-pb-title {
+  font-size: var(--fs-body);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.cur-pb-pct {
+  font-size: 16px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-primary);
+}
+
+.cur-pb-stats {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-variant-numeric: tabular-nums;
+}
+
+.cur-pb-stats strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.cur-pb-dot {
+  opacity: 0.5;
+}
+
+.cur-pb-cta {
+  flex: none;
 }
 
 /* Hero */
@@ -414,14 +485,57 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-2);
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
-  padding-top: var(--space-4);
+  padding-top: var(--space-1);
+}
+
+.cur-list-title-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.cur-guide-toggle {
+  width: 22px;
+  height: 22px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border);
+  background: var(--surface-subtle);
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cur-guide-toggle:hover {
+  background: var(--surface-hover);
+  color: var(--text-primary);
+}
+
+.cur-guide-box {
+  padding: 10px 14px;
+  border-radius: var(--radius-btn);
+  background: var(--surface-subtle);
+  border: 1px solid var(--border);
+  font-size: 13px;
+  color: var(--text-secondary);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.cur-guide-box strong {
+  color: var(--text-primary);
 }
 
 .cur-list-meta {
-  font-size: var(--fs-caption);
-  color: var(--text-tertiary);
+  font-size: 13px;
+  color: var(--text-secondary);
 }
 
 .cur-lesson-list {
@@ -490,9 +604,9 @@
 }
 
 .cur-lesson-row.is-current .cur-lesson-badge {
-  background: var(--accent);
-  color: #FFFFFF;
-  border-color: var(--accent);
+  background: var(--surface-chip);
+  color: var(--text-primary);
+  border-color: var(--border-strong);
 }
 
 .cur-lesson-text {
@@ -512,29 +626,39 @@
 
 .cur-lesson-sub {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: baseline;
   gap: 6px;
   font-size: 13px;
   line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .cur-lesson-py {
-  color: var(--text-tertiary);
+  color: var(--text-secondary);
+  flex: 0 1 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .cur-lesson-dot {
-  color: var(--text-tertiary);
-  opacity: 0.6;
+  color: var(--text-secondary);
+  opacity: 0.7;
+  flex: none;
 }
 
 .cur-lesson-vi {
   color: var(--text-secondary);
+  flex: 0 1 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .cur-lesson-meta {
-  font-size: var(--fs-caption);
-  color: var(--text-tertiary);
+  font-size: 13px;
+  color: var(--text-secondary);
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
 }
@@ -548,7 +672,7 @@
   padding: 4px 10px;
   border-radius: var(--radius-pill);
   background: transparent;
-  color: var(--text-tertiary);
+  color: var(--text-secondary);
 }
 
 .cur-lesson-state.is-done {
@@ -557,8 +681,8 @@
 }
 
 .cur-lesson-state.is-current {
-  background: var(--danger-bg);
-  color: var(--accent-text);
+  background: var(--surface-chip);
+  color: var(--text-primary);
   font-weight: 600;
 }
 
