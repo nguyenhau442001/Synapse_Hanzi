@@ -20,6 +20,8 @@ import { AiTutorPromptGuide } from './AiTutorPromptGuide.jsx';
 import { ExamSprintHub } from './ExamSprintHub.jsx';
 import { EXAM_UI_LABELS } from './ExamConstants.js';
 import { SPRINT_UI_LABELS } from './SprintConstants.js';
+import { AudioSegmentPlayer, useAudioSegmentController } from './AudioSegmentPlayer.jsx';
+import { ListeningReviewPanel } from './ListeningReviewPanel.jsx';
 
 export const HSK30_EXAM_STORAGE_KEY = 'hsk30_exam_history_v1';
 export const HSKK_EXAM_STORAGE_KEY = 'hskk_exam_history_v1';
@@ -110,6 +112,24 @@ function normalizeSentence(str) {
     .replace(/[。\.，,！!\?？\s]/g, '');
 }
 
+/**
+ * Extract only the candidate-facing prompt for listening questions during an exam,
+ * ensuring spoken dialogue transcripts are never leaked on screen.
+ */
+function getListeningDisplayPrompt(question) {
+  if (!question) return '';
+  if (question.sectionKey !== 'listening') {
+    return question.prompt_zh || '';
+  }
+  if (question.statement_zh) {
+    return question.statement_zh;
+  }
+  if (question.prompt_zh && question.prompt_zh.includes('★')) {
+    return question.prompt_zh.split('★').pop().trim();
+  }
+  return '';
+}
+
 export function Hsk30ExamComponent() {
   // Navigation & Category states
   const [hubMode, setHubMode] = useState('cbt'); // 'cbt' | 'dictation' | 'shadowing' | 'error_notebook' | 'speed_drill' | 'reading_builder' | 'mock_simulator'
@@ -135,6 +155,8 @@ export function Hsk30ExamComponent() {
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
   const [audioPlayCount, setAudioPlayCount] = useState(0);
   const [playbackSpeed, setPlaybackSpeed] = useState(1.0);
+  const [reviewShowPinyin, setReviewShowPinyin] = useState(true);
+  const [reviewShowTranslation, setReviewShowTranslation] = useState(true);
   const [showPartExample, setShowPartExample] = useState(false);
   const [isSoundTesting, setIsSoundTesting] = useState(false);
   const [isMicTesting, setIsMicTesting] = useState(false);
@@ -241,6 +263,21 @@ export function Hsk30ExamComponent() {
 
   const allQuestions = getAllQuestions();
   const activeQuestion = allQuestions[currentQuestionIdx] || null;
+  const activeAudioSrc = activeQuestion
+    ? (activeQuestion.audio_src || activeQuestion.audio_clip || null)
+    : null;
+  const activeFullSegment = activeQuestion && activeQuestion.segments && activeQuestion.segments.full_question
+    ? activeQuestion.segments.full_question
+    : null;
+
+  const examAudioCtrl = useAudioSegmentController({
+    audioSrc: activeAudioSrc,
+    speed: playbackSpeed,
+  });
+  const reviewAudioCtrl = useAudioSegmentController({
+    audioSrc: null,
+    speed: playbackSpeed,
+  });
 
   // Auto-play audio on question switch for CBT listening and stop active recordings
   useEffect(() => {
@@ -248,10 +285,20 @@ export function Hsk30ExamComponent() {
       stopRecordingQuestion();
     }
     setLiveTranscript('');
-    if (examState === 'exam' && activeQuestion && activeQuestion.audio_clip) {
-      playAudio(activeQuestion.audio_clip);
+    if (examState === 'exam' && activeQuestion && activeAudioSrc) {
+      if (activeQuestion.sectionKey === 'listening') {
+        examAudioCtrl.playSegment(
+          'full_question',
+          activeFullSegment ? activeFullSegment.start_ms : null,
+          activeFullSegment ? activeFullSegment.end_ms : null,
+          activeAudioSrc,
+        );
+      } else {
+        playAudio(activeAudioSrc);
+      }
     } else {
       stopAudio();
+      examAudioCtrl.stop();
     }
   }, [currentQuestionIdx, examState]);
 
@@ -855,7 +902,7 @@ export function Hsk30ExamComponent() {
       <div class="exam-container">
         <div class="exam-lobby">
           {/* Top Exam Hub Mode Selector */}
-          <div style="display: flex; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 0.5rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.85rem;">
+          <div style="display: flex; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 0.5rem; border-bottom: 2px solid var(--exam-border, #e2e8f0); padding-bottom: 0.85rem;">
             <button
               type="button"
               style={{
@@ -864,9 +911,9 @@ export function Hsk30ExamComponent() {
                 fontWeight: 700,
                 fontSize: '0.92rem',
                 cursor: 'pointer',
-                border: hubMode === 'cbt' ? '2px solid #0284c7' : '1px solid #cbd5e1',
-                background: hubMode === 'cbt' ? '#0284c7' : '#ffffff',
-                color: hubMode === 'cbt' ? '#ffffff' : '#334155',
+                border: hubMode === 'cbt' ? '2px solid var(--exam-primary, #0284c7)' : '1px solid var(--exam-border-strong, #cbd5e1)',
+                background: hubMode === 'cbt' ? 'var(--exam-primary, #0284c7)' : 'var(--exam-surface, #ffffff)',
+                color: hubMode === 'cbt' ? 'var(--exam-on-accent, #ffffff)' : 'var(--exam-text-secondary, #334155)',
                 boxShadow: hubMode === 'cbt' ? '0 3px 8px rgba(2,132,199,0.25)' : 'none',
                 display: 'flex',
                 alignItems: 'center',
@@ -885,9 +932,9 @@ export function Hsk30ExamComponent() {
                 fontWeight: 700,
                 fontSize: '0.92rem',
                 cursor: 'pointer',
-                border: hubMode === 'dictation' ? '2px solid #059669' : '1px solid #cbd5e1',
-                background: hubMode === 'dictation' ? '#059669' : '#ffffff',
-                color: hubMode === 'dictation' ? '#ffffff' : '#334155',
+                border: hubMode === 'dictation' ? '2px solid var(--exam-success, #059669)' : '1px solid var(--exam-border-strong, #cbd5e1)',
+                background: hubMode === 'dictation' ? 'var(--exam-success, #059669)' : 'var(--exam-surface, #ffffff)',
+                color: hubMode === 'dictation' ? 'var(--exam-on-accent, #ffffff)' : 'var(--exam-text-secondary, #334155)',
                 boxShadow: hubMode === 'dictation' ? '0 3px 8px rgba(5,150,105,0.25)' : 'none',
                 display: 'flex',
                 alignItems: 'center',
@@ -906,9 +953,9 @@ export function Hsk30ExamComponent() {
                 fontWeight: 700,
                 fontSize: '0.92rem',
                 cursor: 'pointer',
-                border: hubMode === 'shadowing' ? '2px solid #0d9488' : '1px solid #cbd5e1',
-                background: hubMode === 'shadowing' ? '#0d9488' : '#ffffff',
-                color: hubMode === 'shadowing' ? '#ffffff' : '#334155',
+                border: hubMode === 'shadowing' ? '2px solid var(--exam-success, #0d9488)' : '1px solid var(--exam-border-strong, #cbd5e1)',
+                background: hubMode === 'shadowing' ? 'var(--exam-success, #0d9488)' : 'var(--exam-surface, #ffffff)',
+                color: hubMode === 'shadowing' ? 'var(--exam-on-accent, #ffffff)' : 'var(--exam-text-secondary, #334155)',
                 boxShadow: hubMode === 'shadowing' ? '0 3px 8px rgba(13,148,136,0.25)' : 'none',
                 display: 'flex',
                 alignItems: 'center',
@@ -927,9 +974,9 @@ export function Hsk30ExamComponent() {
                 fontWeight: 700,
                 fontSize: '0.92rem',
                 cursor: 'pointer',
-                border: hubMode === 'error_notebook' ? '2px solid #c2410c' : '1px solid #cbd5e1',
-                background: hubMode === 'error_notebook' ? '#c2410c' : '#ffffff',
-                color: hubMode === 'error_notebook' ? '#ffffff' : '#334155',
+                border: hubMode === 'error_notebook' ? '2px solid var(--exam-warning, #c2410c)' : '1px solid var(--exam-border-strong, #cbd5e1)',
+                background: hubMode === 'error_notebook' ? 'var(--exam-warning, #c2410c)' : 'var(--exam-surface, #ffffff)',
+                color: hubMode === 'error_notebook' ? 'var(--exam-on-accent, #ffffff)' : 'var(--exam-text-secondary, #334155)',
                 boxShadow: hubMode === 'error_notebook' ? '0 3px 8px rgba(194,65,12,0.25)' : 'none',
                 display: 'flex',
                 alignItems: 'center',
@@ -939,7 +986,7 @@ export function Hsk30ExamComponent() {
             >
               📕 Sổ tay câu sai (错题本)
               {unresolvedErrorCount > 0 && (
-                <span style="background: #fee2e2; color: #991b1b; padding: 0.15rem 0.5rem; border-radius: 999px; font-size: 0.75rem; font-weight: 800;">
+                <span style="background: var(--exam-danger-tint, #fee2e2); color: var(--exam-danger-text, #991b1b); padding: 0.15rem 0.5rem; border-radius: 999px; font-size: 0.75rem; font-weight: 800;">
                   {unresolvedErrorCount}
                 </span>
               )}
@@ -1016,9 +1063,9 @@ export function Hsk30ExamComponent() {
                   fontWeight: 700,
                   fontSize: '0.95rem',
                   cursor: 'pointer',
-                  border: isHsk30 ? '2px solid #0284c7' : '1px solid #cbd5e1',
-                  background: isHsk30 ? '#0284c7' : '#ffffff',
-                  color: isHsk30 ? '#ffffff' : '#475569',
+                  border: isHsk30 ? '2px solid var(--exam-primary, #0284c7)' : '1px solid var(--exam-border-strong, #cbd5e1)',
+                  background: isHsk30 ? 'var(--exam-primary, #0284c7)' : 'var(--exam-surface, #ffffff)',
+                  color: isHsk30 ? 'var(--exam-on-accent, #ffffff)' : 'var(--exam-text-secondary, #475569)',
                   boxShadow: isHsk30 ? '0 4px 12px rgba(2, 132, 199, 0.25)' : 'none',
                   display: 'flex',
                   alignItems: 'center',
@@ -1036,9 +1083,9 @@ export function Hsk30ExamComponent() {
                   fontWeight: 700,
                   fontSize: '0.95rem',
                   cursor: 'pointer',
-                  border: !isHsk30 ? '2px solid #e11d48' : '1px solid #cbd5e1',
-                  background: !isHsk30 ? '#e11d48' : '#ffffff',
-                  color: !isHsk30 ? '#ffffff' : '#475569',
+                  border: !isHsk30 ? '2px solid var(--exam-rose, #e11d48)' : '1px solid var(--exam-border-strong, #cbd5e1)',
+                  background: !isHsk30 ? 'var(--exam-rose, #e11d48)' : 'var(--exam-surface, #ffffff)',
+                  color: !isHsk30 ? 'var(--exam-on-accent, #ffffff)' : 'var(--exam-text-secondary, #475569)',
                   boxShadow: !isHsk30 ? '0 4px 12px rgba(225, 29, 72, 0.25)' : 'none',
                   display: 'flex',
                   alignItems: 'center',
@@ -1105,10 +1152,10 @@ export function Hsk30ExamComponent() {
           <div style="background: var(--bg-card, #ffffff); border: 1px solid var(--border-color, #e2e8f0); border-radius: 1rem; padding: 1.5rem; display: flex; flex-direction: column; gap: 1rem;">
             <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
               <div>
-                <h3 style="margin: 0 0 0.25rem 0; font-size: 1.15rem; color: #0f172a;">
+                <h3 style="margin: 0 0 0.25rem 0; font-size: 1.15rem; color: var(--exam-text-strong, #0f172a);">
                   {isHsk30 ? '📢 考生须知 · Quy chế phòng thi máy tính CBT' : '📢 考生须知 · Hướng dẫn phòng thi khẩu ngữ HSKK'}
                 </h3>
-                <p style="margin: 0; font-size: 0.9rem; color: #64748b;">
+                <p style="margin: 0; font-size: 0.9rem; color: var(--exam-text-muted, #64748b);">
                   {isHsk30
                     ? 'Trước khi bắt đầu, hãy kiểm tra âm thanh tai nghe và nắm rõ cấu trúc đề thi chính thức.'
                     : 'Kiểm tra micro trước khi làm bài thi nói để đảm bảo giọng của bạn được thu rõ ràng.'}
@@ -1118,14 +1165,14 @@ export function Hsk30ExamComponent() {
               <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
                 <button
                   type="button"
-                  style="padding: 0.5rem 1rem; border-radius: 0.5rem; border: 1px solid #0284c7; background: rgba(2, 132, 199, 0.08); color: #0284c7; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 0.4rem;"
+                  style="padding: 0.5rem 1rem; border-radius: 0.5rem; border: 1px solid var(--exam-primary, #0284c7); background: rgba(2, 132, 199, 0.08); color: var(--exam-primary-text, #0284c7); font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 0.4rem;"
                   onClick={runSoundTest}
                 >
                   {isSoundTesting ? '🔊 Đang phát âm thanh...' : '🎧 试音 (Thử tai nghe)'}
                 </button>
                 <button
                   type="button"
-                  style="padding: 0.5rem 1rem; border-radius: 0.5rem; border: 1px solid #e11d48; background: rgba(225, 29, 72, 0.08); color: #e11d48; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 0.4rem;"
+                  style="padding: 0.5rem 1rem; border-radius: 0.5rem; border: 1px solid var(--exam-rose, #e11d48); background: rgba(225, 29, 72, 0.08); color: var(--exam-rose-text, #e11d48); font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 0.4rem;"
                   onClick={runMicTest}
                 >
                   {isMicTesting ? '🔴 Đang thử ghi âm...' : '🎙️ 试麦 (Thử Micro)'}
@@ -1134,7 +1181,7 @@ export function Hsk30ExamComponent() {
             </div>
 
             {micTestStatus && (
-              <div style="padding: 0.75rem 1rem; border-radius: 0.5rem; background: #f0fdf4; border: 1px solid #86efac; color: #166534; font-size: 0.9rem; font-weight: 600;">
+              <div style="padding: 0.75rem 1rem; border-radius: 0.5rem; background: var(--exam-success-tint, #f0fdf4); border: 1px solid var(--exam-success-tint-border, #86efac); color: var(--exam-success-text, #166534); font-size: 0.9rem; font-weight: 600;">
                 {micTestStatus}
               </div>
             )}
@@ -1142,34 +1189,34 @@ export function Hsk30ExamComponent() {
             {isHsk30 ? (
               <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; font-size: 0.875rem; background: var(--bg-surface, #f8fafc); padding: 1rem; border-radius: 0.75rem; line-height: 1.6;">
                 <div>
-                  <strong style="color: #0284c7;">1. Cấu trúc bài thi máy tính:</strong>
+                  <strong style="color: var(--exam-primary-text, #0284c7);">1. Cấu trúc bài thi máy tính:</strong>
                   <div>• HSK 1: 40 câu (Nghe 20, Đọc 20) - 35 phút (Thang điểm: 200, Đỗ: 120đ).</div>
                   <div>• HSK 2: 60 câu (Nghe 35, Đọc 25) - 55 phút (Thang điểm: 200, Đỗ: 120đ).</div>
                   <div>• HSK 3: 80 câu (Nghe 40, Đọc 30, Viết 10) - 90 phút (Thang điểm: 300, Đỗ: 180đ).</div>
                   <div>• HSK 4: 100 câu (Nghe 45, Đọc 40, Viết 15) - 105 phút (Thang điểm: 300, Đỗ: 180đ).</div>
                 </div>
                 <div>
-                  <strong style="color: #0284c7;">2. Kỹ năng Viết (书写) tương tác:</strong>
+                  <strong style="color: var(--exam-primary-text, #0284c7);">2. Kỹ năng Viết (书写) tương tác:</strong>
                   <div>• 连词成句 (Sắp xếp từ): Nhấn chọn các từ ngữ cho sẵn để xếp thành câu đúng ngữ pháp.</div>
                   <div>• 选词/写汉字: Điền chữ Hán chuẩn xác theo pinyin gợi ý.</div>
                   <div>• 看图造句: Nhìn tranh và dùng từ vựng quy định để đặt câu hoàn chỉnh.</div>
                 </div>
                 <div>
-                  <strong style="color: #0284c7;">3. Tiêu chuẩn âm thanh chuẩn CTI:</strong>
+                  <strong style="color: var(--exam-primary-text, #0284c7);">3. Tiêu chuẩn âm thanh chuẩn CTI:</strong>
                   <div>• Mỗi câu nghe được phát xướng số thứ tự câu ("第一题。") và đọc đúng 2 lần.</div>
                   <div>• Khoảng nghỉ giữa 2 lần đọc chuẩn 3.5 giây theo quy chuẩn quốc tế.</div>
                 </div>
               </div>
             ) : (
-              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; font-size: 0.875rem; background: #fff1f2; padding: 1rem; border-radius: 0.75rem; line-height: 1.6; border: 1px solid #fecdd3;">
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; font-size: 0.875rem; background: var(--exam-rose-tint, #fff1f2); padding: 1rem; border-radius: 0.75rem; line-height: 1.6; border: 1px solid var(--exam-rose-tint-border, #fecdd3);">
                 <div>
-                  <strong style="color: #be123c;">1. Cấu trúc bài thi khẩu ngữ HSKK:</strong>
+                  <strong style="color: var(--exam-rose-text, #be123c);">1. Cấu trúc bài thi khẩu ngữ HSKK:</strong>
                   <div>• Sơ cấp: 27 câu (15 câu nhắc lại, 10 câu hỏi ngắn, 2 câu tự giới thiệu).</div>
                   <div>• Trung cấp: 14 câu (10 câu nhắc lại, 2 bức tranh kể chuyện, 2 câu nghị luận).</div>
                   <div>• Cao cấp: 6 câu (3 đoạn tóm tắt, 1 đoạn đọc to, 2 câu chuyên sâu).</div>
                 </div>
                 <div>
-                  <strong style="color: #be123c;">2. Tín hiệu âm thanh chuẩn CTI:</strong>
+                  <strong style="color: var(--exam-rose-text, #be123c);">2. Tín hiệu âm thanh chuẩn CTI:</strong>
                   <div>• Sau khi nghe câu hỏi, hãy chú ý lắng nghe tiếng <strong>"Bíp 🔔" (嘟声)</strong>.</div>
                   <div>• Bắt đầu nói ngay khi nghe tiếng bíp và hoàn thành trong thời gian quy định.</div>
                 </div>
@@ -1185,7 +1232,7 @@ export function Hsk30ExamComponent() {
                     <div>
                       <div class="exam-card-header">
                         <span class="exam-card-code">{item.code}</span>
-                        <span style="font-size: 0.85rem; font-weight: 600; color: #10b981;">Chính thức CTI</span>
+                        <span style="font-size: 0.85rem; font-weight: 600; color: var(--exam-success-text, #10b981);">Chính thức CTI</span>
                       </div>
                       <h3 class="exam-card-title">{item.title}</h3>
                       <p class="exam-card-desc">{item.subtitle}</p>
@@ -1204,13 +1251,13 @@ export function Hsk30ExamComponent() {
                   </div>
                 ))
               : hskkExams.map((item) => (
-                  <div class="exam-card" key={item.id} style="border-top: 4px solid #e11d48;">
+                  <div class="exam-card" key={item.id} style="border-top: 4px solid var(--exam-rose, #e11d48);">
                     <div>
                       <div class="exam-card-header">
-                        <span class="exam-card-code" style="background: rgba(225, 29, 72, 0.1); color: #e11d48;">
+                        <span class="exam-card-code" style="background: rgba(225, 29, 72, 0.1); color: var(--exam-rose-text, #e11d48);">
                           {item.code}
                         </span>
-                        <span style="font-size: 0.85rem; font-weight: 600; color: #e11d48;">Khẩu ngữ CTI</span>
+                        <span style="font-size: 0.85rem; font-weight: 600; color: var(--exam-rose-text, #e11d48);">Khẩu ngữ CTI</span>
                       </div>
                       <h3 class="exam-card-title">{item.title}</h3>
                       <p class="exam-card-desc">{item.subtitle}</p>
@@ -1222,7 +1269,7 @@ export function Hsk30ExamComponent() {
                     </div>
                     <button
                       class="exam-start-btn"
-                      style="background: linear-gradient(135deg, #e11d48 0%, #be123c 100%);"
+                      style="background: linear-gradient(135deg, var(--exam-rose, #e11d48) 0%, var(--exam-rose, #be123c) 100%);"
                       onClick={() => startHskkExam(item.file)}
                     >
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1250,10 +1297,10 @@ export function Hsk30ExamComponent() {
 
     return (
       <div class="exam-container">
-        <div class="cbt-exam-wrapper" style="border-top: 4px solid #e11d48;">
-          <header class="cbt-top-bar" style="background: linear-gradient(90deg, #881337 0%, #4c0519 100%);">
+        <div class="cbt-exam-wrapper" style="border-top: 4px solid var(--exam-rose, #e11d48);">
+          <header class="cbt-top-bar" style="background: linear-gradient(90deg, var(--exam-rose, #881337) 0%, var(--exam-rose, #4c0519) 100%);">
             <div class="cbt-title-group">
-              <span class="cbt-logo" style="background: #e11d48;">HSKK</span>
+              <span class="cbt-logo" style="background: var(--exam-rose, #e11d48);">HSKK</span>
               <span class="cbt-exam-name">{examData.title}</span>
             </div>
             <div class="cbt-controls-group">
@@ -1262,7 +1309,7 @@ export function Hsk30ExamComponent() {
               </div>
               <button
                 class="cbt-btn-submit"
-                style="background: #e11d48; border-color: #be123c;"
+                style="background: var(--exam-rose, #e11d48); border-color: var(--exam-rose, #be123c);"
                 onClick={confirmSubmitHskk}
               >
                 交卷 (Nộp bài thi nói)
@@ -1272,36 +1319,36 @@ export function Hsk30ExamComponent() {
 
           <div class="cbt-section-bar">
             <div>
-              <span class="cbt-section-badge" style="background: #be123c;">
+              <span class="cbt-section-badge" style="background: var(--exam-rose, #be123c);">
                 {activeQuestion.sectionTitleZh || activeQuestion.sectionName}
               </span>
-              <span style="margin-left: 0.75rem; color: #475569; font-weight: 600;">
+              <span style="margin-left: 0.75rem; color: var(--exam-text-secondary, #475569); font-weight: 600;">
                 Câu hỏi {currentQuestionIdx + 1} / {allQuestions.length}
               </span>
             </div>
-            <div style="font-size: 0.85rem; color: #be123c; font-weight: 600;">
+            <div style="font-size: 0.85rem; color: var(--exam-rose-text, #be123c); font-weight: 600;">
               🎙️ Thời gian trả lời quy định: {activeQuestion.recordSeconds} giây
             </div>
           </div>
 
           <div class="cbt-body-layout">
             <main class="cbt-main-area">
-              <div class="cbt-part-banner" style="background: #fff1f2; border-left: 4px solid #e11d48;">
-                <div style="font-weight: 700; color: #9f1239; font-size: 1rem;">
+              <div class="cbt-part-banner" style="background: var(--exam-rose-tint, #fff1f2); border-left: 4px solid var(--exam-rose, #e11d48);">
+                <div style="font-weight: 700; color: var(--exam-rose-text, #9f1239); font-size: 1rem;">
                   {activeQuestion.sectionTitleZh} ({activeQuestion.sectionTitleVi})
                 </div>
-                <div style="font-size: 0.85rem; color: #4b5563; margin-top: 0.25rem;">
+                <div style="font-size: 0.85rem; color: var(--exam-text-secondary, #4b5563); margin-top: 0.25rem;">
                   {activeQuestion.guideZh} — <em>{activeQuestion.guideVi}</em>
                 </div>
               </div>
 
               {activeQuestion.audio_clip && (
-                <div class="cbt-audio-box" style="border-left: 4px solid #0284c7;">
+                <div class="cbt-audio-box" style="border-left: 4px solid var(--exam-primary, #0284c7);">
                   <div class="cbt-audio-status">
                     {isPlayingAudio ? (
                       <>
                         <span class="audio-wave-anim">🔊</span>
-                        <span style="color: #0369a1; font-weight: 600;">Đang phát câu hỏi mẫu chuẩn CTI...</span>
+                        <span style="color: var(--exam-primary-text, #0369a1); font-weight: 600;">Đang phát câu hỏi mẫu chuẩn CTI...</span>
                       </>
                     ) : (
                       <>
@@ -1320,7 +1367,7 @@ export function Hsk30ExamComponent() {
                 </div>
               )}
 
-              <div class="cbt-q-content" style="padding: 1.5rem; background: #ffffff; border-radius: 0.75rem; border: 1px solid #f1f5f9;">
+              <div class="cbt-q-content" style="padding: 1.5rem; background: var(--exam-surface, #ffffff); border-radius: 0.75rem; border: 1px solid var(--exam-surface-muted, #f1f5f9);">
                 {activeQuestion.image && (
                   <div class="cbt-illustration-wrap" style="margin-bottom: 1.25rem;">
                     <img src={activeQuestion.image} alt="HSKK prompt" class="cbt-illustration-img" />
@@ -1329,12 +1376,12 @@ export function Hsk30ExamComponent() {
 
                 <div style="margin-bottom: 1.5rem;">
                   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                    <span style="font-size: 0.85rem; font-weight: 700; color: #64748b; text-transform: uppercase;">
+                    <span style="font-size: 0.85rem; font-weight: 700; color: var(--exam-text-muted, #64748b); text-transform: uppercase;">
                       Nội dung câu hỏi:
                     </span>
                     <button
                       type="button"
-                      style="background: none; border: none; color: #0284c7; font-size: 0.85rem; cursor: pointer; text-decoration: underline;"
+                      style="background: none; border: none; color: var(--exam-primary-text, #0284c7); font-size: 0.85rem; cursor: pointer; text-decoration: underline;"
                       onClick={() =>
                         setShowHskkTranscript((prev) => ({
                           ...prev,
@@ -1347,49 +1394,49 @@ export function Hsk30ExamComponent() {
                   </div>
 
                   {isVisibleTranscript ? (
-                    <div style="background: #f8fafc; padding: 1rem; border-radius: 0.5rem; border: 1px dashed #cbd5e1;">
-                      <h3 style="margin: 0 0 0.25rem 0; font-size: 1.25rem; color: #0f172a; line-height: 1.5;">
+                    <div style="background: var(--exam-surface-sunken, #f8fafc); padding: 1rem; border-radius: 0.5rem; border: 1px dashed var(--exam-border-strong, #cbd5e1);">
+                      <h3 style="margin: 0 0 0.25rem 0; font-size: 1.25rem; color: var(--exam-text-strong, #0f172a); line-height: 1.5;">
                         {activeQuestion.prompt_zh}
                       </h3>
                       {activeQuestion.pinyin && (
-                        <div style="font-size: 0.95rem; color: #0284c7; margin-bottom: 0.35rem;">
+                        <div style="font-size: 0.95rem; color: var(--exam-primary-text, #0284c7); margin-bottom: 0.35rem;">
                           {activeQuestion.pinyin}
                         </div>
                       )}
                       {activeQuestion.meaning_vi && (
-                        <div style="font-size: 0.9rem; color: #475569;">
+                        <div style="font-size: 0.9rem; color: var(--exam-text-secondary, #475569);">
                           Ý nghĩa: {activeQuestion.meaning_vi}
                         </div>
                       )}
                     </div>
                   ) : (
-                    <div style="padding: 0.75rem 1rem; background: #f1f5f9; border-radius: 0.5rem; color: #64748b; font-size: 0.9rem; font-style: italic;">
+                    <div style="padding: 0.75rem 1rem; background: var(--exam-surface-muted, #f1f5f9); border-radius: 0.5rem; color: var(--exam-text-muted, #64748b); font-size: 0.9rem; font-style: italic;">
                       (Theo quy chế thi HSKK, nội dung chữ được ẩn trong phần nhắc lại. Bạn có thể bấm "Xem văn bản câu hỏi" ở trên để đối chiếu lúc luyện tập).
                     </div>
                   )}
                 </div>
 
                 {/* Recording Studio */}
-                <div style="background: #fafafa; border: 2px dashed #e2e8f0; border-radius: 1rem; padding: 1.5rem; text-align: center; margin-bottom: 1.5rem;">
-                  <h4 style="margin: 0 0 0.5rem 0; color: #0f172a; font-size: 1.1rem;">
+                <div style="background: var(--exam-surface-sunken, #fafafa); border: 2px dashed var(--exam-border, #e2e8f0); border-radius: 1rem; padding: 1.5rem; text-align: center; margin-bottom: 1.5rem;">
+                  <h4 style="margin: 0 0 0.5rem 0; color: var(--exam-text-strong, #0f172a); font-size: 1.1rem;">
                     🎙️ Phòng ghi âm câu trả lời thí sinh
                   </h4>
 
                   {isRecording ? (
                     <div>
-                      <div style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: #ffe4e6; border-radius: 9999px; color: #e11d48; font-weight: 700; margin-bottom: 0.75rem; animation: pulse 1.5s infinite;">
+                      <div style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: var(--exam-rose-tint, #ffe4e6); border-radius: 9999px; color: var(--exam-rose-text, #e11d48); font-weight: 700; margin-bottom: 0.75rem; animation: pulse 1.5s infinite;">
                         <span style="font-size: 1.2rem;">🔴</span>
                         <span>Đang ghi âm: {formatTimer(recordingSeconds)} / {formatTimer(activeQuestion.recordSeconds)}</span>
                       </div>
                       {liveTranscript ? (
-                        <div style="font-size: 0.9rem; color: #475569; margin-bottom: 0.75rem; font-style: italic;">
-                          AI đang nghe (zh-CN): <strong style="color: #0f172a;">"{liveTranscript}"</strong>
+                        <div style="font-size: 0.9rem; color: var(--exam-text-secondary, #475569); margin-bottom: 0.75rem; font-style: italic;">
+                          AI đang nghe (zh-CN): <strong style="color: var(--exam-text-strong, #0f172a);">"{liveTranscript}"</strong>
                         </div>
                       ) : null}
                       <div>
                         <button
                           type="button"
-                          style="padding: 0.75rem 1.75rem; border-radius: 0.75rem; background: #e11d48; color: #ffffff; border: none; font-weight: 700; font-size: 1rem; cursor: pointer; display: inline-flex; align-items: center; gap: 0.5rem; box-shadow: 0 4px 12px rgba(225, 29, 72, 0.3);"
+                          style="padding: 0.75rem 1.75rem; border-radius: 0.75rem; background: var(--exam-rose, #e11d48); color: var(--exam-on-accent, #ffffff); border: none; font-weight: 700; font-size: 1rem; cursor: pointer; display: inline-flex; align-items: center; gap: 0.5rem; box-shadow: 0 4px 12px rgba(225, 29, 72, 0.3);"
                           onClick={stopRecordingQuestion}
                         >
                           ⏹️ Hoàn thành / Dừng ghi âm
@@ -1399,32 +1446,32 @@ export function Hsk30ExamComponent() {
                   ) : currentRec ? (
                     <div>
                       <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-bottom: 0.75rem; flex-wrap: wrap;">
-                        <span style="color: #166534; font-weight: 700;">✅ Đã ghi âm thành công ({currentRec.duration}s)!</span>
+                        <span style="color: var(--exam-success-text, #166534); font-weight: 700;">✅ Đã ghi âm thành công ({currentRec.duration}s)!</span>
                         {typeof currentRec.aiScore === 'number' ? (
-                          <span style={`padding: 0.25rem 0.75rem; border-radius: 0.5rem; font-size: 0.88rem; font-weight: 700; ${currentRec.aiScore >= 60 ? 'background: #dcfce7; color: #15803d;' : 'background: #fee2e2; color: #b91c1c;'}`}>
+                          <span style={`padding: 0.25rem 0.75rem; border-radius: 0.5rem; font-size: 0.88rem; font-weight: 700; ${currentRec.aiScore >= 60 ? 'background: var(--exam-success-tint, #dcfce7); color: var(--exam-success-text, #15803d);' : 'background: var(--exam-danger-tint, #fee2e2); color: var(--exam-danger-text, #b91c1c);'}`}>
                             Điểm AI đánh giá: {currentRec.aiScore} / 100
                           </span>
                         ) : (
-                          <span style="background: #f1f5f9; color: #475569; padding: 0.25rem 0.75rem; border-radius: 0.5rem; font-size: 0.85rem;">
+                          <span style="background: var(--exam-surface-muted, #f1f5f9); color: var(--exam-text-secondary, #475569); padding: 0.25rem 0.75rem; border-radius: 0.5rem; font-size: 0.85rem;">
                             Bản ghi lưu trữ đối chiếu
                           </span>
                         )}
                       </div>
 
                       {/* AI Speech Recognition Feedback */}
-                      <div style={`margin-bottom: 1rem; padding: 0.75rem 1rem; border-radius: 0.5rem; text-align: left; font-size: 0.9rem; ${typeof currentRec.aiScore === 'number' && currentRec.aiScore > 0 ? 'background: #f0fdf4; border: 1px solid #bbf7d0;' : 'background: #fef2f2; border: 1px solid #fecaca;'}`}>
-                        <div style="font-weight: 600; margin-bottom: 0.25rem; color: #0f172a;">
+                      <div style={`margin-bottom: 1rem; padding: 0.75rem 1rem; border-radius: 0.5rem; text-align: left; font-size: 0.9rem; ${typeof currentRec.aiScore === 'number' && currentRec.aiScore > 0 ? 'background: var(--exam-success-tint, #f0fdf4); border: 1px solid var(--exam-success-tint-border, #bbf7d0);' : 'background: var(--exam-danger-tint, #fef2f2); border: 1px solid var(--exam-danger-tint-border, #fecaca);'}`}>
+                        <div style="font-weight: 600; margin-bottom: 0.25rem; color: var(--exam-text-strong, #0f172a);">
                           🗣️ Văn bản AI nhận diện (ASR zh-CN):
                         </div>
-                        <div style="font-family: inherit; font-size: 1rem; color: #1e293b; margin-bottom: 0.35rem;">
+                        <div style="font-family: inherit; font-size: 1rem; color: var(--exam-text-strong, #1e293b); margin-bottom: 0.35rem;">
                           {currentRec.transcript ? (
-                            <strong style="color: #0f172a;">"{currentRec.transcript}"</strong>
+                            <strong style="color: var(--exam-text-strong, #0f172a);">"{currentRec.transcript}"</strong>
                           ) : (
-                            <em style="color: #94a3b8;">(Không nhận diện được khẩu ngữ tiếng Trung)</em>
+                            <em style="color: var(--exam-text-faint, #94a3b8);">(Không nhận diện được khẩu ngữ tiếng Trung)</em>
                           )}
                         </div>
                         {currentRec.evaluationNote && (
-                          <div style={`font-size: 0.85rem; ${typeof currentRec.aiScore === 'number' && currentRec.aiScore > 0 ? 'color: #15803d;' : 'color: #dc2626; font-weight: 600;'}`}>
+                          <div style={`font-size: 0.85rem; ${typeof currentRec.aiScore === 'number' && currentRec.aiScore > 0 ? 'color: var(--exam-success-text, #15803d);' : 'color: var(--exam-danger-text, #dc2626); font-weight: 600;'}`}>
                             {currentRec.evaluationNote}
                           </div>
                         )}
@@ -1434,7 +1481,7 @@ export function Hsk30ExamComponent() {
                         <audio controls src={currentRec.url} style="max-width: 320px;" />
                         <button
                           type="button"
-                          style="padding: 0.6rem 1.2rem; border-radius: 0.5rem; border: 1px solid #cbd5e1; background: #ffffff; color: #334155; font-weight: 600; cursor: pointer;"
+                          style="padding: 0.6rem 1.2rem; border-radius: 0.5rem; border: 1px solid var(--exam-border-strong, #cbd5e1); background: var(--exam-surface, #ffffff); color: var(--exam-text-secondary, #334155); font-weight: 600; cursor: pointer;"
                           onClick={startRecordingQuestion}
                         >
                           🔄 Ghi âm lại
@@ -1443,12 +1490,12 @@ export function Hsk30ExamComponent() {
                     </div>
                   ) : (
                     <div>
-                      <p style="margin: 0 0 1rem 0; color: #64748b; font-size: 0.9rem;">
+                      <p style="margin: 0 0 1rem 0; color: var(--exam-text-muted, #64748b); font-size: 0.9rem;">
                         Nhấn nút dưới đây để bắt đầu thu âm. Tiếng bíp "嘟" sẽ xướng lên báo hiệu bắt đầu nói.
                       </p>
                       <button
                         type="button"
-                        style="padding: 0.85rem 2rem; border-radius: 0.75rem; background: linear-gradient(135deg, #e11d48 0%, #be123c 100%); color: #ffffff; border: none; font-weight: 700; font-size: 1.05rem; cursor: pointer; display: inline-flex; align-items: center; gap: 0.5rem; box-shadow: 0 4px 14px rgba(225, 29, 72, 0.35);"
+                        style="padding: 0.85rem 2rem; border-radius: 0.75rem; background: linear-gradient(135deg, var(--exam-rose, #e11d48) 0%, var(--exam-rose, #be123c) 100%); color: var(--exam-on-accent, #ffffff); border: none; font-weight: 700; font-size: 1.05rem; cursor: pointer; display: inline-flex; align-items: center; gap: 0.5rem; box-shadow: 0 4px 14px rgba(225, 29, 72, 0.35);"
                         onClick={startRecordingQuestion}
                       >
                         🎙️ Bắt đầu ghi âm câu trả lời
@@ -1458,15 +1505,15 @@ export function Hsk30ExamComponent() {
                 </div>
 
                 {activeQuestion.suggested_zh && (
-                  <div style="border: 1px solid #fde68a; background: #fffbeb; border-radius: 0.75rem; padding: 1rem;">
-                    <div style="font-weight: 700; color: #92400e; margin-bottom: 0.25rem;">
+                  <div style="border: 1px solid var(--exam-warning-tint-border, #fde68a); background: var(--exam-warning-tint, #fffbeb); border-radius: 0.75rem; padding: 1rem;">
+                    <div style="font-weight: 700; color: var(--exam-warning-text, #92400e); margin-bottom: 0.25rem;">
                       💡 Gợi ý câu trả lời mẫu (参考答案):
                     </div>
-                    <div style="font-size: 1rem; color: #0f172a; line-height: 1.6; margin-bottom: 0.35rem;">
+                    <div style="font-size: 1rem; color: var(--exam-text-strong, #0f172a); line-height: 1.6; margin-bottom: 0.35rem;">
                       {activeQuestion.suggested_zh}
                     </div>
                     {activeQuestion.meaning_vi && (
-                      <div style="font-size: 0.85rem; color: #78350f;">
+                      <div style="font-size: 0.85rem; color: var(--exam-warning-text, #78350f);">
                         Dịch nghĩa: {activeQuestion.meaning_vi}
                       </div>
                     )}
@@ -1482,7 +1529,7 @@ export function Hsk30ExamComponent() {
                 >
                   ⬅️ 上一题 (Câu trước)
                 </button>
-                <span style="font-size: 0.9rem; color: #64748b; font-weight: 600;">
+                <span style="font-size: 0.9rem; color: var(--exam-text-muted, #64748b); font-weight: 600;">
                   {Object.keys(candidateRecordings).length} / {allQuestions.length} câu đã ghi âm
                 </span>
                 <button
@@ -1498,18 +1545,18 @@ export function Hsk30ExamComponent() {
             <aside class="cbt-palette-panel">
               <h4 class="cbt-palette-title">
                 <span>答题卡 (Danh sách câu hỏi)</span>
-                <span style="font-size: 0.8rem; font-weight: normal; color: #64748b;">
+                <span style="font-size: 0.8rem; font-weight: normal; color: var(--exam-text-muted, #64748b);">
                   {Object.keys(candidateRecordings).length}/{allQuestions.length}
                 </span>
               </h4>
 
               <div class="cbt-palette-legend">
                 <div class="cbt-legend-item">
-                  <span class="cbt-legend-dot" style="background: #10b981;"></span>
+                  <span class="cbt-legend-dot" style="background: var(--exam-success, #10b981);"></span>
                   <span>Đã ghi âm</span>
                 </div>
                 <div class="cbt-legend-item">
-                  <span class="cbt-legend-dot" style="background: #cbd5e1;"></span>
+                  <span class="cbt-legend-dot" style="background: var(--exam-border-strong, #cbd5e1);"></span>
                   <span>Chưa ghi</span>
                 </div>
               </div>
@@ -1523,8 +1570,8 @@ export function Hsk30ExamComponent() {
                       key={q.id}
                       class={`cbt-palette-btn ${isCurr ? 'active' : ''} ${isRec ? 'answered' : ''}`}
                       style={{
-                        background: isCurr ? '#be123c' : isRec ? '#10b981' : '#f1f5f9',
-                        color: isCurr || isRec ? '#ffffff' : '#334155',
+                        background: isCurr ? 'var(--exam-rose, #be123c)' : isRec ? 'var(--exam-success, #10b981)' : 'var(--exam-surface-muted, #f1f5f9)',
+                        color: isCurr || isRec ? 'var(--exam-on-accent, #ffffff)' : 'var(--exam-text-secondary, #334155)',
                       }}
                       onClick={() => setCurrentQuestionIdx(idx)}
                     >
@@ -1548,16 +1595,16 @@ export function Hsk30ExamComponent() {
 
     return (
       <div class="exam-container">
-        <div class="exam-result-card" style="border-top: 4px solid #e11d48;">
+        <div class="exam-result-card" style="border-top: 4px solid var(--exam-rose, #e11d48);">
           <div class={`exam-result-stamp ${hskkResult.isPassed ? 'pass' : 'fail'}`}>
             {hskkResult.isPassed ? '合格 (ĐẠT TIÊU CHUẨN)' : '未通过 (CHƯA ĐẠT)'}
           </div>
-          <h2 style="margin: 0; color: #0f172a;">{hskkResult.examTitle}</h2>
-          <div class="exam-result-score" style="color: #e11d48;">
+          <h2 style="margin: 0; color: var(--exam-text-strong, #0f172a);">{hskkResult.examTitle}</h2>
+          <div class="exam-result-score" style="color: var(--exam-rose-text, #e11d48);">
             {hskkResult.finalScore}
-            <span style="font-size: 1.25rem; font-weight: 500; color: #64748b;"> / 100</span>
+            <span style="font-size: 1.25rem; font-weight: 500; color: var(--exam-text-muted, #64748b);"> / 100</span>
           </div>
-          <p style="color: #64748b; margin-bottom: 1rem;">
+          <p style="color: var(--exam-text-muted, #64748b); margin-bottom: 1rem;">
             Đã hoàn thành thu âm {hskkResult.recordedCount}/{hskkResult.totalQuestions} câu hỏi (Tỉ lệ {hskkResult.completionRate}%)
           </p>
 
@@ -1567,7 +1614,7 @@ export function Hsk30ExamComponent() {
             </button>
             <button
               class="exam-btn-primary"
-              style="background: #e11d48;"
+              style="background: var(--exam-rose, #e11d48);"
               onClick={() => startHskkExam(examData.file)}
             >
               Thi lại đề này
@@ -1576,7 +1623,7 @@ export function Hsk30ExamComponent() {
         </div>
 
         <div style="margin-top: 2rem;">
-          <h3 style="margin: 0 0 1rem 0; color: #0f172a;">
+          <h3 style="margin: 0 0 1rem 0; color: var(--exam-text-strong, #0f172a);">
             🎧 Nghe lại toàn bộ bài thu âm &amp; So sánh phát âm chuẩn
           </h3>
 
@@ -1586,21 +1633,21 @@ export function Hsk30ExamComponent() {
               return (
                 <div
                   key={q.id}
-                  style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.25rem;"
+                  style="background: var(--exam-surface, #ffffff); border: 1px solid var(--exam-border, #e2e8f0); border-radius: 0.75rem; padding: 1.25rem;"
                 >
                   <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
-                    <span style="font-weight: 700; color: #0f172a;">
+                    <span style="font-weight: 700; color: var(--exam-text-strong, #0f172a);">
                       Câu {q.number}: {q.sectionTitleZh || q.sectionName}
                     </span>
-                    <span style={{ fontWeight: 700, color: rec ? (typeof rec.aiScore === 'number' && rec.aiScore > 0 ? '#059669' : '#dc2626') : '#dc2626' }}>
+                    <span style={{ fontWeight: 700, color: rec ? (typeof rec.aiScore === 'number' && rec.aiScore > 0 ? 'var(--exam-success-text, #059669)' : 'var(--exam-danger-text, #dc2626)') : 'var(--exam-danger-text, #dc2626)' }}>
                       {rec ? (typeof rec.aiScore === 'number' ? `Đã ghi (${rec.duration}s) · ${rec.aiScore}đ` : `Đã ghi (${rec.duration}s)`) : 'Chưa thu âm'}
                     </span>
                   </div>
 
-                  <p style="font-size: 1.05rem; font-weight: 600; color: #0f172a; margin: 0.4rem 0;">
+                  <p style="font-size: 1.05rem; font-weight: 600; color: var(--exam-text-strong, #0f172a); margin: 0.4rem 0;">
                     {q.prompt_zh}
                   </p>
-                  {q.pinyin && <p style="font-size: 0.9rem; color: #0284c7; margin: 0 0 0.5rem 0;">{q.pinyin}</p>}
+                  {q.pinyin && <p style="font-size: 0.9rem; color: var(--exam-primary-text, #0284c7); margin: 0 0 0.5rem 0;">{q.pinyin}</p>}
 
                   <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; margin-top: 0.75rem;">
                     {q.audio_clip && (
@@ -1613,18 +1660,18 @@ export function Hsk30ExamComponent() {
                       </button>
                     )}
                     {rec && (
-                      <div style="display: flex; flex-direction: column; gap: 0.35rem; width: 100%; margin-top: 0.5rem; padding: 0.5rem 0.75rem; background: #f8fafc; border-radius: 0.5rem;">
+                      <div style="display: flex; flex-direction: column; gap: 0.35rem; width: 100%; margin-top: 0.5rem; padding: 0.5rem 0.75rem; background: var(--exam-surface-sunken, #f8fafc); border-radius: 0.5rem;">
                         <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
-                          <span style="font-size: 0.85rem; font-weight: 600; color: #475569;">Bản ghi của bạn:</span>
+                          <span style="font-size: 0.85rem; font-weight: 600; color: var(--exam-text-secondary, #475569);">Bản ghi của bạn:</span>
                           <audio controls src={rec.url} style="height: 36px;" />
                         </div>
                         {rec.transcript && (
-                          <div style="font-size: 0.85rem; color: #334155;">
+                          <div style="font-size: 0.85rem; color: var(--exam-text-secondary, #334155);">
                             🗣️ AI nhận diện: <strong>"{rec.transcript}"</strong>
                           </div>
                         )}
                         {rec.evaluationNote && (
-                          <div style={`font-size: 0.82rem; ${typeof rec.aiScore === 'number' && rec.aiScore > 0 ? 'color: #15803d;' : 'color: #dc2626;'}`}>
+                          <div style={`font-size: 0.82rem; ${typeof rec.aiScore === 'number' && rec.aiScore > 0 ? 'color: var(--exam-success-text, #15803d);' : 'color: var(--exam-danger-text, #dc2626);'}`}>
                             {rec.evaluationNote}
                           </div>
                         )}
@@ -1633,7 +1680,7 @@ export function Hsk30ExamComponent() {
                   </div>
 
                   {q.suggested_zh && (
-                    <div style="margin-top: 0.75rem; padding: 0.75rem; background: #fffbeb; border-radius: 0.5rem; font-size: 0.9rem; color: #78350f;">
+                    <div style="margin-top: 0.75rem; padding: 0.75rem; background: var(--exam-warning-tint, #fffbeb); border-radius: 0.5rem; font-size: 0.9rem; color: var(--exam-warning-text, #78350f);">
                       <strong>Gợi ý đạt điểm cao:</strong> {q.suggested_zh}
                     </div>
                   )}
@@ -1683,7 +1730,7 @@ export function Hsk30ExamComponent() {
           <div class="cbt-section-bar">
             <div>
               <span class="cbt-section-badge">{activeQuestion.sectionName}</span>
-              <span style="margin-left: 0.75rem; color: #475569;">
+              <span style="margin-left: 0.75rem; color: var(--exam-text-secondary, #475569);">
                 Câu hỏi {currentQuestionIdx + 1} / {allQuestions.length}
               </span>
             </div>
@@ -1704,7 +1751,7 @@ export function Hsk30ExamComponent() {
                       <div>
                         <div class="cbt-part-title-zh">{partInfo.titleZh}</div>
                         <div class="cbt-part-title-vi">{partInfo.titleVi}</div>
-                        <div style="font-size: 0.8rem; color: #4b5563; margin-top: 0.2rem;">
+                        <div style="font-size: 0.8rem; color: var(--exam-text-secondary, #4b5563); margin-top: 0.2rem;">
                           {partInfo.guideZh} <em>({partInfo.guideVi})</em>
                         </div>
                       </div>
@@ -1712,54 +1759,38 @@ export function Hsk30ExamComponent() {
                   </div>
                 )}
 
-                {activeQuestion.audio_clip && (
-                  <div class="cbt-audio-box">
-                    <div class="cbt-audio-status">
-                      {isPlayingAudio ? (
-                        <>
-                          <span class="audio-wave-anim">🔊</span>
-                          <span>Đang phát ghi âm chuẩn CTI (đọc 2 lần kèm số câu)...</span>
-                        </>
-                      ) : (
-                        <>
-                          <span>⏸️</span>
-                          <span>Ghi âm bài nghe (Đã phát: {audioPlayCount} lần)</span>
-                        </>
-                      )}
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 0.5rem;">
-                      <select
-                        style="padding: 0.35rem 0.6rem; border-radius: 0.35rem; border: 1px solid #cbd5e1; font-size: 0.8rem; background: #fff; color: #334155;"
-                        value={playbackSpeed}
-                        onChange={(e) => setAudioSpeed(parseFloat(e.target.value))}
-                        title="Tốc độ phát âm"
-                      >
-                        <option value={1.0}>Tốc độ 1.0x (Chuẩn CTI)</option>
-                        <option value={0.85}>Tốc độ 0.85x (Chậm hơn)</option>
-                        <option value={0.75}>Tốc độ 0.75x (Rất chậm)</option>
-                      </select>
-                      <button
-                        type="button"
-                        class="cbt-audio-play-btn"
-                        onClick={() => playAudio(activeQuestion.audio_clip)}
-                      >
-                        ▶ Phát lại audio
-                      </button>
-                    </div>
+                {activeAudioSrc && (
+                  <div style="margin-bottom: 1rem;">
+                    <AudioSegmentPlayer
+                      controller={examAudioCtrl}
+                      segmentId="full_question"
+                      startMs={activeFullSegment ? activeFullSegment.start_ms : null}
+                      endMs={activeFullSegment ? activeFullSegment.end_ms : null}
+                      allowSeek={true}
+                      allowLoop={false}
+                      speed={playbackSpeed}
+                      onSpeedChange={setPlaybackSpeed}
+                      showPlayCount={true}
+                      playLabel={`Nghe câu ${activeQuestion.number}`}
+                    />
                   </div>
                 )}
 
                 <div class="cbt-q-content">
-                  {activeQuestion.prompt_zh && (
-                    <div style="margin-bottom: 1.25rem;">
-                      <h3 class="cbt-q-text" style="line-height: 1.6; white-space: pre-line;">
-                        {activeQuestion.prompt_zh}
-                      </h3>
-                      {activeQuestion.prompt_pinyin && (
-                        <div class="cbt-q-pinyin">{activeQuestion.prompt_pinyin}</div>
-                      )}
-                    </div>
-                  )}
+                  {(() => {
+                    const displayPrompt = getListeningDisplayPrompt(activeQuestion);
+                    if (!displayPrompt) return null;
+                    return (
+                      <div style="margin-bottom: 1.25rem;">
+                        <h3 class="cbt-q-text" style="line-height: 1.6; white-space: pre-line;">
+                          {displayPrompt}
+                        </h3>
+                        {activeQuestion.sectionKey !== 'listening' && activeQuestion.prompt_pinyin && (
+                          <div class="cbt-q-pinyin">{activeQuestion.prompt_pinyin}</div>
+                        )}
+                      </div>
+                    );
+                  })()}
 
                   {activeQuestion.image && (
                     <div class="cbt-illustration-wrap" style="margin-bottom: 1rem;">
@@ -1775,16 +1806,16 @@ export function Hsk30ExamComponent() {
                         class={`cbt-tf-btn ${currentAnswer === true || currentAnswer === 'true' ? 'selected-true' : ''}`}
                         onClick={() => handleSelectAnswer(activeQuestion.id, true)}
                       >
-                        <span style="font-size: 1.4rem; color: #10b981; font-weight: 900;">✓</span>
-                        <span style="color: #0f172a;">Đúng (对 - Duì)</span>
+                        <span style="font-size: 1.4rem; color: var(--exam-success-text, #10b981); font-weight: 900;">✓</span>
+                        <span style="color: var(--exam-text-strong, #0f172a);">Đúng (对 - Duì)</span>
                       </button>
                       <button
                         type="button"
                         class={`cbt-tf-btn ${currentAnswer === false || currentAnswer === 'false' ? 'selected-false' : ''}`}
                         onClick={() => handleSelectAnswer(activeQuestion.id, false)}
                       >
-                        <span style="font-size: 1.4rem; color: #ef4444; font-weight: 900;">✗</span>
-                        <span style="color: #0f172a;">Sai (错 - Cuò)</span>
+                        <span style="font-size: 1.4rem; color: var(--exam-danger-text, #ef4444); font-weight: 900;">✗</span>
+                        <span style="color: var(--exam-text-strong, #0f172a);">Sai (错 - Cuò)</span>
                       </button>
                     </div>
                   )}
@@ -1815,23 +1846,23 @@ export function Hsk30ExamComponent() {
                   {/* 3. Word Reordering Mode (连词成句) */}
                   {activeQuestion.type === 'word_reorder' && (
                     <div style="margin-top: 1.25rem;">
-                      <div style="font-size: 0.9rem; font-weight: 700; color: #475569; margin-bottom: 0.5rem;">
+                      <div style="font-size: 0.9rem; font-weight: 700; color: var(--exam-text-secondary, #475569); margin-bottom: 0.5rem;">
                         Nhấn chọn từ để sắp xếp vào câu (nhấn từ đã chọn để gỡ bỏ):
                       </div>
 
                       {/* Assembled sentence drop/display area */}
                       <div
-                        style="min-height: 60px; padding: 0.85rem 1rem; border: 2px dashed #0284c7; background: #f0f9ff; border-radius: 0.75rem; display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;"
+                        style="min-height: 60px; padding: 0.85rem 1rem; border: 2px dashed var(--exam-primary, #0284c7); background: var(--exam-primary-tint, #f0f9ff); border-radius: 0.75rem; display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;"
                       >
                         {selectedWords.length === 0 ? (
-                          <span style="color: #94a3b8; font-style: italic; font-size: 0.95rem;">
+                          <span style="color: var(--exam-text-faint, #94a3b8); font-style: italic; font-size: 0.95rem;">
                             (Chưa có từ nào được chọn. Nhấn vào các thẻ từ bên dưới để ghép câu...)
                           </span>
                         ) : (
                           selectedWords.map((word, wIdx) => (
                             <span
                               key={wIdx}
-                              style="display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.4rem 0.8rem; background: #0284c7; color: #ffffff; border-radius: 0.5rem; font-size: 1.05rem; font-weight: 600; cursor: pointer; box-shadow: 0 2px 4px rgba(2, 132, 199, 0.2);"
+                              style="display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.4rem 0.8rem; background: var(--exam-primary, #0284c7); color: var(--exam-on-accent, #ffffff); border-radius: 0.5rem; font-size: 1.05rem; font-weight: 600; cursor: pointer; box-shadow: 0 2px 4px rgba(2, 132, 199, 0.2);"
                               onClick={() => handleToggleWordReorder(activeQuestion.id, word, availableWords)}
                               title="Nhấn để gỡ bỏ từ này"
                             >
@@ -1841,7 +1872,7 @@ export function Hsk30ExamComponent() {
                           ))
                         )}
                         {selectedWords.length > 0 && (
-                          <span style="font-size: 1.3rem; font-weight: bold; color: #0284c7;">。</span>
+                          <span style="font-size: 1.3rem; font-weight: bold; color: var(--exam-primary-text, #0284c7);">。</span>
                         )}
                       </div>
 
@@ -1857,9 +1888,9 @@ export function Hsk30ExamComponent() {
                               style={{
                                 padding: '0.5rem 1rem',
                                 borderRadius: '0.5rem',
-                                border: '1px solid #cbd5e1',
-                                background: isUsed ? '#f1f5f9' : '#ffffff',
-                                color: isUsed ? '#94a3b8' : '#0f172a',
+                                border: '1px solid var(--exam-border-strong, #cbd5e1)',
+                                background: isUsed ? 'var(--exam-surface-muted, #f1f5f9)' : 'var(--exam-surface, #ffffff)',
+                                color: isUsed ? 'var(--exam-text-faint, #94a3b8)' : 'var(--exam-text-strong, #0f172a)',
                                 fontWeight: 600,
                                 fontSize: '1rem',
                                 cursor: isUsed ? 'not-allowed' : 'pointer',
@@ -1876,7 +1907,7 @@ export function Hsk30ExamComponent() {
                         {selectedWords.length > 0 && (
                           <button
                             type="button"
-                            style="padding: 0.45rem 0.85rem; border-radius: 0.5rem; border: 1px solid #fecdd3; background: #fff1f2; color: #e11d48; font-weight: 600; font-size: 0.85rem; cursor: pointer;"
+                            style="padding: 0.45rem 0.85rem; border-radius: 0.5rem; border: 1px solid var(--exam-rose-tint-border, #fecdd3); background: var(--exam-rose-tint, #fff1f2); color: var(--exam-rose-text, #e11d48); font-weight: 600; font-size: 0.85rem; cursor: pointer;"
                             onClick={() => resetWordReorder(activeQuestion.id)}
                           >
                             🔄 Xếp lại từ đầu
@@ -1888,17 +1919,17 @@ export function Hsk30ExamComponent() {
 
                   {/* 4. Hanzi Fill Mode (看拼音写汉字) */}
                   {activeQuestion.type === 'hanzi_fill' && (
-                    <div style="margin-top: 1.25rem; background: #f8fafc; padding: 1.25rem; border-radius: 0.75rem; border: 1px solid #e2e8f0;">
-                      <div style="font-size: 1.2rem; line-height: 1.8; color: #0f172a; margin-bottom: 1rem;">
+                    <div style="margin-top: 1.25rem; background: var(--exam-surface-sunken, #f8fafc); padding: 1.25rem; border-radius: 0.75rem; border: 1px solid var(--exam-border, #e2e8f0);">
+                      <div style="font-size: 1.2rem; line-height: 1.8; color: var(--exam-text-strong, #0f172a); margin-bottom: 1rem;">
                         {activeQuestion.sentence_zh.split('（    ）')[0]}
-                        <span style="display: inline-block; padding: 0.2rem 0.75rem; margin: 0 0.35rem; background: #e0f2fe; border-bottom: 2px solid #0284c7; font-weight: 700; color: #0369a1;">
+                        <span style="display: inline-block; padding: 0.2rem 0.75rem; margin: 0 0.35rem; background: var(--exam-primary-tint, #e0f2fe); border-bottom: 2px solid var(--exam-primary, #0284c7); font-weight: 700; color: var(--exam-primary-text, #0369a1);">
                           {currentAnswer || activeQuestion.pinyin_clue}
                         </span>
                         {activeQuestion.sentence_zh.split('（    ）')[1]}
                       </div>
 
                       <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
-                        <span style="font-size: 0.95rem; font-weight: 600; color: #475569;">
+                        <span style="font-size: 0.95rem; font-weight: 600; color: var(--exam-text-secondary, #475569);">
                           Nhập 1 chữ Hán có pinyin [{activeQuestion.pinyin_clue}]:
                         </span>
                         <input
@@ -1906,7 +1937,7 @@ export function Hsk30ExamComponent() {
                           maxLength={2}
                           value={currentAnswer || ''}
                           placeholder="Chữ Hán..."
-                          style="font-size: 1.3rem; padding: 0.4rem 0.8rem; width: 120px; text-align: center; border-radius: 0.5rem; border: 2px solid #0284c7; font-weight: 700; color: #0f172a;"
+                          style="font-size: 1.3rem; padding: 0.4rem 0.8rem; width: 120px; text-align: center; border-radius: 0.5rem; border: 2px solid var(--exam-primary, #0284c7); font-weight: 700; color: var(--exam-text-strong, #0f172a);"
                           onInput={(e) => handleSelectAnswer(activeQuestion.id, e.target.value.trim())}
                         />
                       </div>
@@ -1915,10 +1946,10 @@ export function Hsk30ExamComponent() {
 
                   {/* 5. Picture Sentence Mode (看图用词造句) */}
                   {activeQuestion.type === 'picture_sentence' && (
-                    <div style="margin-top: 1.25rem; background: #f8fafc; padding: 1.25rem; border-radius: 0.75rem; border: 1px solid #e2e8f0;">
+                    <div style="margin-top: 1.25rem; background: var(--exam-surface-sunken, #f8fafc); padding: 1.25rem; border-radius: 0.75rem; border: 1px solid var(--exam-border, #e2e8f0);">
                       <div style="margin-bottom: 0.75rem; font-size: 1rem;">
-                        <span style="font-weight: 700; color: #475569;">Từ vựng bắt buộc: </span>
-                        <span style="display: inline-block; padding: 0.25rem 0.75rem; background: #dcfce7; color: #166534; font-weight: 800; border-radius: 0.5rem; font-size: 1.15rem;">
+                        <span style="font-weight: 700; color: var(--exam-text-secondary, #475569);">Từ vựng bắt buộc: </span>
+                        <span style="display: inline-block; padding: 0.25rem 0.75rem; background: var(--exam-success-tint, #dcfce7); color: var(--exam-success-text, #166534); font-weight: 800; border-radius: 0.5rem; font-size: 1.15rem;">
                           【 {activeQuestion.keyword} 】
                         </span>
                       </div>
@@ -1927,10 +1958,10 @@ export function Hsk30ExamComponent() {
                         rows={3}
                         placeholder={`Hãy viết một câu tiếng Trung hoàn chỉnh có chứa từ ‘${activeQuestion.keyword}’...`}
                         value={currentAnswer || ''}
-                        style="width: 100%; padding: 0.75rem; border-radius: 0.5rem; border: 1px solid #cbd5e1; font-size: 1.05rem; font-family: inherit; box-sizing: border-box; line-height: 1.5;"
+                        style="width: 100%; padding: 0.75rem; border-radius: 0.5rem; border: 1px solid var(--exam-border-strong, #cbd5e1); font-size: 1.05rem; font-family: inherit; box-sizing: border-box; line-height: 1.5;"
                         onInput={(e) => handleSelectAnswer(activeQuestion.id, e.target.value)}
                       />
-                      <div style="text-align: right; font-size: 0.8rem; color: #64748b; margin-top: 0.35rem;">
+                      <div style="text-align: right; font-size: 0.8rem; color: var(--exam-text-muted, #64748b); margin-top: 0.35rem;">
                         Đã nhập: {(currentAnswer || '').length} ký tự
                       </div>
                     </div>
@@ -1946,7 +1977,7 @@ export function Hsk30ExamComponent() {
                 >
                   ⬅️ 上一题 (Câu trước)
                 </button>
-                <span style="font-size: 0.9rem; color: #64748b;">
+                <span style="font-size: 0.9rem; color: var(--exam-text-muted, #64748b);">
                   {Object.keys(userAnswers).length} / {allQuestions.length} đã trả lời
                 </span>
                 <button
@@ -1963,18 +1994,18 @@ export function Hsk30ExamComponent() {
             <aside class="cbt-palette-panel">
               <h4 class="cbt-palette-title">
                 <span>答题卡 (Bảng câu hỏi)</span>
-                <span style="font-size: 0.8rem; font-weight: normal; color: #64748b;">
+                <span style="font-size: 0.8rem; font-weight: normal; color: var(--exam-text-muted, #64748b);">
                   {Object.keys(userAnswers).length}/{allQuestions.length}
                 </span>
               </h4>
 
               <div class="cbt-palette-legend">
                 <div class="cbt-legend-item">
-                  <span class="cbt-legend-dot" style="background: #0284c7;"></span>
+                  <span class="cbt-legend-dot" style="background: var(--exam-primary, #0284c7);"></span>
                   <span>Đã làm</span>
                 </div>
                 <div class="cbt-legend-item">
-                  <span class="cbt-legend-dot" style="background: #cbd5e1;"></span>
+                  <span class="cbt-legend-dot" style="background: var(--exam-border-strong, #cbd5e1);"></span>
                   <span>Chưa làm</span>
                 </div>
                 <div class="cbt-legend-item">
@@ -2044,12 +2075,12 @@ export function Hsk30ExamComponent() {
           <div class={`exam-result-stamp ${examResult.isPassed ? 'pass' : 'fail'}`}>
             {examResult.isPassed ? '合格 (ĐẠT TIÊU CHUẨN)' : '未通过 (CHƯA ĐẠT)'}
           </div>
-          <h2 style="margin: 0; color: #0f172a;">{examResult.examTitle}</h2>
+          <h2 style="margin: 0; color: var(--exam-text-strong, #0f172a);">{examResult.examTitle}</h2>
           <div class="exam-result-score">
             {examResult.totalScore}
-            <span style="font-size: 1.25rem; font-weight: 500; color: #64748b;"> / {examResult.maxScore}</span>
+            <span style="font-size: 1.25rem; font-weight: 500; color: var(--exam-text-muted, #64748b);"> / {examResult.maxScore}</span>
           </div>
-          <p style="color: #64748b; margin-bottom: 1rem;">
+          <p style="color: var(--exam-text-muted, #64748b); margin-bottom: 1rem;">
             Đạt {examResult.correctCount}/{examResult.totalQuestions} câu chính xác (Điểm đỗ chuẩn: {examResult.passScore} điểm)
           </p>
 
@@ -2079,7 +2110,7 @@ export function Hsk30ExamComponent() {
             </button>
             <button
               class="exam-btn-secondary"
-              style="background: #fff7ed; color: #c2410c; border: 1px solid #fed7aa; font-weight: 700;"
+              style="background: var(--exam-warning-tint, #fff7ed); color: var(--exam-warning-text, #c2410c); border: 1px solid var(--exam-warning-tint-border, #fed7aa); font-weight: 700;"
               onClick={() => {
                 setExamState('lobby');
                 setHubMode('error_notebook');
@@ -2092,7 +2123,7 @@ export function Hsk30ExamComponent() {
 
         <div>
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-            <h3 style="margin: 0; color: #0f172a;">Chữa đề &amp; Giải thích chi tiết</h3>
+            <h3 style="margin: 0; color: var(--exam-text-strong, #0f172a);">Chữa đề &amp; Giải thích chi tiết</h3>
             <div class="review-filter-tabs">
               <button
                 class={`exam-level-tab ${reviewFilter === 'all' ? 'active' : ''}`}
@@ -2143,45 +2174,96 @@ export function Hsk30ExamComponent() {
             return (
               <div class={`review-card ${isCorrect ? 'correct' : 'incorrect'}`} key={q.id}>
                 <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
-                  <span style="font-weight: 700; color: #0f172a;">
+                  <span style="font-weight: 700; color: var(--exam-text-strong, #0f172a);">
                     Câu {q.number}: {q.sectionName}
                   </span>
-                  <span style={{ fontWeight: 700, color: isCorrect ? '#059669' : '#dc2626' }}>
+                  <span style={{ fontWeight: 700, color: isCorrect ? 'var(--exam-success-text, #059669)' : 'var(--exam-danger-text, #dc2626)' }}>
                     {isCorrect ? '✓ Đúng' : '✗ Sai'}
                   </span>
                 </div>
 
-                {q.audio_clip && (
+                {(q.audio_src || q.audio_clip) && (
                   <div style="margin: 0.5rem 0;">
-                    <button
-                      class="cbt-audio-play-btn"
-                      style="display: inline-flex;"
-                      onClick={() => playAudio(q.audio_clip)}
-                    >
-                      🔊 Nghe lại câu {q.number}
-                    </button>
+                    {(() => {
+                      const qAudioSrc = q.audio_src || q.audio_clip;
+                      const qFullSeg = q.segments && q.segments.full_question ? q.segments.full_question : null;
+                      const qFullId = `${q.id}_full`;
+                      const isPlayingFull = reviewAudioCtrl.isPlaying && reviewAudioCtrl.activeSegmentId === qFullId;
+                      return (
+                        <button
+                          type="button"
+                          class="cbt-audio-play-btn"
+                          style="display: inline-flex;"
+                          onClick={() => {
+                            if (isPlayingFull) {
+                              reviewAudioCtrl.stop();
+                            } else {
+                              reviewAudioCtrl.playSegment(
+                                qFullId,
+                                qFullSeg ? qFullSeg.start_ms : null,
+                                qFullSeg ? qFullSeg.end_ms : null,
+                                qAudioSrc,
+                              );
+                            }
+                          }}
+                        >
+                          {isPlayingFull ? `⏸ Tạm dừng câu ${q.number}` : `🔊 Nghe lại câu ${q.number}`}
+                        </button>
+                      );
+                    })()}
                     {q.audio_text && (
-                      <p style="font-size: 0.95rem; color: #0284c7; margin: 0.4rem 0 0 0;">
+                      <p style="font-size: 0.95rem; color: var(--exam-primary-text, #0284c7); margin: 0.4rem 0 0 0;">
                         <strong>Audio Script:</strong> {q.audio_text}
                       </p>
                     )}
                   </div>
                 )}
 
-                {q.prompt_zh && <p style="font-weight: 600; margin: 0.4rem 0;">{q.prompt_zh}</p>}
+                {q.statement_zh && (
+                  <p style="font-weight: 600; margin: 0.4rem 0;">{q.statement_zh}</p>
+                )}
+                {!q.statement_zh && q.prompt_zh && (
+                  <p style="font-weight: 600; margin: 0.4rem 0;">{q.prompt_zh}</p>
+                )}
 
                 <div style="display: flex; gap: 1.5rem; margin: 0.5rem 0; font-size: 0.95rem; flex-wrap: wrap;">
                   <span>
-                    Đáp án của bạn: <strong style={{ color: isCorrect ? '#059669' : '#dc2626' }}>{displayUserAns}</strong>
+                    Đáp án của bạn: <strong style={{ color: isCorrect ? 'var(--exam-success-text, #059669)' : 'var(--exam-danger-text, #dc2626)' }}>{displayUserAns}</strong>
                   </span>
                   <span>
-                    Đáp án chuẩn: <strong style="color: #059669;">{displayCorrectAns}</strong>
+                    Đáp án chuẩn: <strong style="color: var(--exam-success-text, #059669);">{displayCorrectAns}</strong>
                   </span>
                 </div>
 
-                <div class="review-explanation">
-                  <strong>💡 Lời giải chi tiết:</strong> {q.explanation || q.explanation_vi || 'Đáp án theo tiêu chuẩn CTI.'}
-                </div>
+                {q.transcript && typeof q.transcript === 'object' && Array.isArray(q.transcript.sentences) ? (
+                  <div style="margin-top: 0.75rem;">
+                    <ListeningReviewPanel
+                      transcript={q.transcript}
+                      evidence={q.evidence || null}
+                      explanation={q.explanation || q.explanation_vi || ''}
+                      keyExpressions={q.key_expressions || []}
+                      vocabularyMatches={q.vocabulary_matches || []}
+                      showPinyin={reviewShowPinyin}
+                      showTranslation={reviewShowTranslation}
+                      onTogglePinyin={() => setReviewShowPinyin((v) => !v)}
+                      onToggleTranslation={() => setReviewShowTranslation((v) => !v)}
+                      activeSegmentId={reviewAudioCtrl.isPlaying ? reviewAudioCtrl.activeSegmentId : null}
+                      passageSegment={q.segments ? q.segments.passage : null}
+                      onPlaySentence={(sent, startMs, endMs) => {
+                        const qAudioSrc = q.audio_src || q.audio_clip;
+                        if (reviewAudioCtrl.isPlaying && reviewAudioCtrl.activeSegmentId === sent.id) {
+                          reviewAudioCtrl.stop();
+                        } else {
+                          reviewAudioCtrl.playSegment(sent.id, startMs, endMs, qAudioSrc);
+                        }
+                      }}
+                    />
+                  </div>
+                ) : (
+                  <div class="review-explanation">
+                    <strong>💡 Lời giải chi tiết:</strong> {q.explanation || q.explanation_vi || 'Đáp án theo tiêu chuẩn CTI.'}
+                  </div>
+                )}
               </div>
             );
           })}

@@ -5,6 +5,7 @@
 // window.ListeningPractice keeps the same API for the tab router and SpaRouter.
 import { render as preactRender } from 'preact';
 import { APP_TIMEOUTS } from './AppTimeouts';
+import { EvidenceHighlight, getPrioritizedVocabularies } from './ListeningReviewPanel.jsx';
 
 /* global HSK4_MOCK_EXAMS -- utils.js */
 
@@ -711,32 +712,7 @@ function submitAnswer(choice) {
   render();
 }
 
-// Wrap every occurrence of the evidence phrase in the sentence with a highlight mark.
-function EvidenceHighlight({ sentZh, evidenceZh }) {
-  if (!sentZh) return null;
-  const cleanEv = evidenceZh ? String(evidenceZh).replace(/^[“”"'\s]+|[“”"'\s]+$/g, '').trim() : '';
-  if (!cleanEv || !sentZh.includes(cleanEv)) return sentZh;
-  return sentZh.split(cleanEv).flatMap((part, i) => (i === 0 ? [part]
-    : [<mark key={i} class="listening-evidence-highlight listening-evidence-inline-mark">{cleanEv}</mark>, part]));
-}
-
-const ULTRA_BASIC = new Set(['没有', '我们', '我', '你', '他', '她', '这', '那', '的', '了']);
-const LEVEL_ORDER = { HSK4: 4, HSK3: 3, HSK2: 2, HSK1: 1 };
-
-function getPrioritizedVocabularies(vocabs) {
-  if (!Array.isArray(vocabs)) return [];
-  const nonBasic = vocabs.filter((v) => !ULTRA_BASIC.has(v.word));
-  const filtered = nonBasic.length >= 4 ? nonBasic : vocabs;
-  return [...filtered].sort((a, b) => {
-    const aBasic = ULTRA_BASIC.has(a.word) ? 1 : 0;
-    const bBasic = ULTRA_BASIC.has(b.word) ? 1 : 0;
-    if (aBasic !== bBasic) return aBasic - bBasic;
-    const aLvl = LEVEL_ORDER[a.level] || 0;
-    const bLvl = LEVEL_ORDER[b.level] || 0;
-    if (aLvl !== bLvl) return bLvl - aLvl;
-    return (b.word || '').length - (a.word || '').length;
-  });
-}
+// Shared EvidenceHighlight & getPrioritizedVocabularies imported from ./ListeningReviewPanel.jsx
 
 function CompactFeedback() {
   const q = currentQuestion;
@@ -1461,22 +1437,22 @@ function TopNav() {
           <span>Trở về</span>
         </button>{' '}
         <div class="listening-exam-picker-wrap">
-          <select class="listening-exam-select" value={currentExamId} onChange={(e) => switchExam(e.currentTarget.value)} aria-label="Chọn đề thi">
-            {HSK4_MOCK_EXAMS.map((e) => <option key={e.id} value={e.id}>{`HSK 4 · ${e.name}`}</option>)}
+          <select class="listening-exam-select" value={currentExamId} onChange={(e) => switchExam(e.currentTarget.value)} aria-label="Chọn bài luyện nghe bổ sung">
+            {HSK4_MOCK_EXAMS.map((e, idx) => <option key={e.id} value={e.id}>{`Luyện nghe bổ sung · Bài ${idx + 1}`}</option>)}
           </select>
         </div>
       </div>{' '}
 
       <div class="listening-nav-right">
         <div class="listening-rules-wrap">
-          <button type="button" class="listening-rules-btn" id="listeningRulesBtn" onClick={toggleRulesDialog} title="Xem quy chế thi & hướng dẫn" aria-label="Quy chế bài thi">
+          <button type="button" class="listening-rules-btn" id="listeningRulesBtn" onClick={toggleRulesDialog} title="Xem hướng dẫn luyện nghe bổ sung" aria-label="Hướng dẫn luyện nghe">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10" /><line x1="12" y1="16" x2="12" y2="12" /><line x1="12" y1="8" x2="12.01" y2="8" /></svg>{' '}
-            <span>Quy chế</span>
+            <span>Hướng dẫn</span>
           </button>{' '}
           <div class="listening-rules-popover" id="listeningRulesPopover" hidden={!rulesOpen}>
             <div class="listening-rules-popover-content">
-              <p class="rules-popover-item"><strong>Quy chế thi thực tế:</strong> Mỗi câu nghe đúng 1 lần duy nhất.</p>{' '}
-              <p class="rules-popover-item"><strong>Chế độ luyện tập:</strong> Nghe lại tùy ý, chỉnh tốc độ phát và xem lời thoại chi tiết sau khi trả lời.</p>
+              <p class="rules-popover-item"><strong>Luyện nghe bổ sung:</strong> Nghe lại tùy ý, tua đoạn, chỉnh tốc độ phát và lặp lại từng câu.</p>{' '}
+              <p class="rules-popover-item"><strong>Phân tích chuyên sâu:</strong> Xem lời thoại, câu dẫn chứng, cụm ngữ pháp và từ vựng sau khi trả lời.</p>
             </div>
           </div>
         </div>{' '}

@@ -21,7 +21,13 @@ import {
  * @property {number} part
  * @property {ExamQuestionType} type
  * @property {string|null} audioUrl
- * @property {string|null} transcript
+ * @property {string|null} audioSrc
+ * @property {Object|null} segments
+ * @property {string|null} statementZh
+ * @property {Object|string|null} transcript
+ * @property {Object|null} evidence
+ * @property {Array} keyExpressions
+ * @property {Array} vocabularyMatches
  * @property {string|null} passage
  * @property {string} prompt
  * @property {string[]} options
@@ -82,7 +88,13 @@ export function normalizeQuestion(raw, sectionId, index) {
     part: Number.isFinite(Number(q.part)) ? Number(q.part) : 1,
     type: inferredType,
     audioUrl: q.audio_url || q.audio_clip || null,
+    audioSrc: q.audio_src || q.audio_url || q.audio_clip || null,
+    segments: q.segments || null,
+    statementZh: q.statement_zh || (q.statement && q.statement.zh) || null,
     transcript: q.transcript || q.prompt_zh || null,
+    evidence: q.evidence || null,
+    keyExpressions: Array.isArray(q.key_expressions) ? q.key_expressions : [],
+    vocabularyMatches: Array.isArray(q.vocabulary_matches) ? q.vocabulary_matches : [],
     passage: q.passage || q.passage_zh || null,
     prompt: String(q.question || q.prompt || q.sentence_zh || q.prompt_zh || ''),
     options,
