@@ -12,11 +12,11 @@ const PRECACHE_MANIFEST = [
   },
   {
     "url": "assets/flashcards.css",
-    "revision": "71ca5786343ca9fffcc3ac9c67774353"
+    "revision": "6d952f080737783c07b1d2a2db40d173"
   },
   {
     "url": "assets/js/preact/islands.js",
-    "revision": "f77a0689324244f0767cca86a13c57ad"
+    "revision": "b8323aa35f757fca2d2880d042672314"
   },
   {
     "url": "assets/js/hanviet-dict.js",

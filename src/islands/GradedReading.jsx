@@ -357,6 +357,8 @@ const storyLevelNum = (story) => (story ? parseInt(story.level.replace(/\D/g, ''
 // Put a token's word straight into today's FSRS queue.
 function addTokenToSrs(token) {
   if (!token) return false;
+  const currentStatus = getTokenSrsStatus(token);
+  if (currentStatus === 'learning' || currentStatus === 'mastered') return false;
   if (!token.word_id) {
     const lvl = token.hsk || storyLevelNum(activeStory.value);
     token.word_id = `hsk${lvl}_${token.text.charCodeAt(0) + 10000}`;
@@ -389,6 +391,7 @@ function addTokenToSrs(token) {
       document.querySelectorAll(`[data-word-id="${token.word_id}"]`).forEach((el) => {
         el.classList.remove('token-new');
         el.classList.add('token-learning');
+        el.title = 'Bấm để xem nghĩa';
       });
       return true;
     }
@@ -761,22 +764,17 @@ function TokenPopover({ token, added }) {
         ) : null}
       </div>{' '}
       {btnDone ? (
-        <div class="popover-btn-group">
-          <button type="button" class="popover-action-btn added" id="popoverAddSrsBtn" disabled>
-            {added ? '✓ Đã thêm vào lịch ôn' : '✓ Đã có trong lịch ôn'}
-          </button>
-          <button
-            type="button"
-            class="popover-action-btn popover-review-now-btn"
-            id="popoverReviewNowBtn"
-            onClick={() => {
-              closePopover();
-              if (typeof window.openQuickAccessDrawer === 'function') window.openQuickAccessDrawer('urgent');
-            }}
-          >
-            ⚡ Ôn ngay
-          </button>
-        </div>
+        <button
+          type="button"
+          class="popover-action-btn popover-review-now-btn"
+          id="popoverReviewNowBtn"
+          onClick={() => {
+            closePopover();
+            if (typeof window.openQuickAccessDrawer === 'function') window.openQuickAccessDrawer('urgent');
+          }}
+        >
+          ⚡ Ôn ngay
+        </button>
       ) : (
         <button type="button" class="popover-action-btn" id="popoverAddSrsBtn" onClick={triggerAddSrs}>
           + Thêm vào lịch ôn
@@ -1269,11 +1267,13 @@ function Token({ token, sidx, tidx, lvlNum }) {
   const status = getTokenSrsStatus(token);
   const tokenLvl = token.hsk || 1;
   const isOverLevel = Boolean(token.word_id && tokenLvl > lvlNum);
+  const isInSrs = status === 'learning' || status === 'mastered';
   return [
     '\n      ',
     <span class={`graded-token token-${status !== 'none' ? status : 'new'} ${isOverLevel ? 'token-overlevel' : ''}`}
       data-sidx={sidx} data-tidx={tidx} data-word-id={token.word_id || ''}
-      onClick={(e) => handleTokenClick(e, sidx, tidx)} title="Bấm để xem nghĩa & thêm vào lịch ôn">
+      onClick={(e) => handleTokenClick(e, sidx, tidx)}
+      title={isInSrs ? 'Bấm để xem nghĩa' : 'Bấm để xem nghĩa & thêm vào lịch ôn'}>
       {'\n        '}
       <ruby>
         {'\n          '}<rt class="token-pinyin">{token.pinyin || ''}</rt>{'\n          '}<rb>{token.text}</rb>{'\n        '}

@@ -2087,6 +2087,13 @@ body.graded-translation-hidden .graded-sentence-vi {
   transform: translateY(-1px);
 }
 
+.popover-action-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: none;
+  transform: none;
+}
+
 .popover-action-btn.added {
   background: var(--graded-hsk-badge-bg);
   border-color: var(--graded-hsk-badge-border);
