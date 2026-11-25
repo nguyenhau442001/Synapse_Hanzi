@@ -85,7 +85,7 @@ function formatTodayExample(text) {
 
 export function rateTodayReview(rating) {
   const item = queue.value[index.value];
-  if (!item || !revealed.value) return;
+  if (!item || phase.value !== 'card') return;
   const record = window.readSrsRecord(item.level);
   const result = window.reviewSrsCard(item.level, item.word.id, rating, record ? record.cards : {});
   window.recordDailyStudy(item.word.id, item.level);
@@ -360,7 +360,7 @@ function onKeydown(event, screen) {
     return;
   }
   const rating = RATING_KEYS[event.key];
-  if (rating && revealed.value) {
+  if (rating && phase.value === 'card') {
     event.preventDefault();
     rateTodayReview(rating);
     return;
