@@ -7,7 +7,7 @@
 // 4. Reverse SRS 12-question mini-quiz that tags mistakes for next morning's priority queue
 
 import { h } from 'preact';
-import { useState, useEffect, useRef } from 'preact/hooks';
+import { useState, useEffect, useRef, useMemo } from 'preact/hooks';
 import {
   Flame,
   Calendar,
@@ -26,6 +26,7 @@ import { recordExamMistakesToSrs } from './ExamSrsBridge.js';
 import {
   SPRINT_SLOTS,
   SPRINT_UI_LABELS,
+  SPRINT_SLOT_EMPTY_REASONS,
   ROUGH_SWEEP_LIMIT_MS,
   SPRINT_AUTO_FLIP_LIMIT_MS,
   TIMER_TICK_MS,
@@ -316,6 +317,15 @@ export function ExamSprintHub({ onBack }) {
   const countdown = examCountdown.value;
   const stats = sprintStats.value;
   const daily = sprintDailyLog.value;
+  const isLoading = sprintLoading.value;
+
+  const slotCounts = useMemo(() => {
+    const counts = {};
+    for (const slot of SPRINT_SLOTS) {
+      counts[slot.id] = buildSlotQueue(slot.id, vocabPool, cardMap, daily, sprintConfig.value).length;
+    }
+    return counts;
+  }, [vocabPool, cardMap, daily, sprintConfig.value]);
 
   if (viewMode === 'sweep') {
     const item = queue[currentIndex];
@@ -393,7 +403,7 @@ export function ExamSprintHub({ onBack }) {
         {!item ? (
           <div class="exam-sprint-empty">
             <CheckCircle2 size={40} />
-            <h3>Hoàn thành hiệp này!</h3>
+            <h3>{queue.length > 0 ? SPRINT_UI_LABELS.slotDone : SPRINT_SLOT_EMPTY_REASONS[activeSlot]}</h3>
           </div>
         ) : (
           <div class="exam-sprint-card">
@@ -712,13 +722,20 @@ export function ExamSprintHub({ onBack }) {
               </div>
               <h4>{slot.title}</h4>
               <p>{slot.description}</p>
-              <button
-                type="button"
-                class="exam-pill-btn"
-                onClick={() => startSprintSlot(slot.id)}
-              >
-                Bắt đầu hiệp này
-              </button>
+              {!isLoading && slotCounts[slot.id] === 0 ? (
+                <p class="exam-sprint-slot-empty">{SPRINT_SLOT_EMPTY_REASONS[slot.id]}</p>
+              ) : (
+                <button
+                  type="button"
+                  class="exam-pill-btn"
+                  disabled={isLoading}
+                  onClick={() => startSprintSlot(slot.id)}
+                >
+                  {isLoading
+                    ? SPRINT_UI_LABELS.slotLoading
+                    : `${SPRINT_UI_LABELS.slotStart} (${slotCounts[slot.id]} ${SPRINT_UI_LABELS.slotCardsSuffix})`}
+                </button>
+              )}
             </div>
           );
         })}

@@ -80,8 +80,20 @@ export const SPRINT_UI_LABELS = {
   hanVietPrefix: 'Hán Việt:',
   wordFamilyPrefix: 'Chùm gốc chữ:',
   pinyinPrompt: 'Gõ Pinyin không dấu (kiểm tra cặp dễ nhầm):',
-  backToHub: '← Quay lại Lộ trình thi',
+  backToHub: 'Quay lại Lộ trình thi',
   countdownEmpty: 'Chưa đặt ngày thi',
   countdownToday: 'Hôm nay thi! Giữ vững tâm lý!',
   countdownPassed: 'Đã qua ngày thi mục tiêu',
+  slotDone: 'Hoàn thành hiệp này!',
+  slotStart: 'Bắt đầu hiệp này',
+  slotCardsSuffix: 'thẻ',
+  slotLoading: 'Đang tải...',
+};
+
+// Why a slot has nothing to study right now (shown when its queue is empty).
+export const SPRINT_SLOT_EMPTY_REASONS = {
+  morning: 'Không có thẻ HSK 3.0 (1–4) nào đến hạn hoặc bị gắn lỗi sai. Quay lại sau nhé!',
+  noon: 'Đã đủ chỉ tiêu Đợt 1 hôm nay (hoặc đã học hết từ mới).',
+  evening: 'Chưa có từ Đợt 1 để ôn và đã hết từ mới cho Đợt 2.',
+  night: 'Hôm nay chưa nạp từ mới nào — hãy làm Hiệp 2 / Hiệp 3 trước.',
 };
