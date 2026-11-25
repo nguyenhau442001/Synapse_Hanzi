@@ -853,18 +853,13 @@ body.dark-mode .reading-global-footer .reading-nav-btn.next-btn:hover:not(:disab
 }
 #overviewView .overview-search:focus-within { border-color: var(--accent); box-shadow: var(--focus-ring); }
 
-/* ── Curriculum: overview and dialogue sit on the canvas, ruled by hairlines ──
-   The featured lesson stays the single framed block (it must lead the page). */
-.cur-overview {
-  background: transparent;
-  border: 0;
-  border-top: 2px solid var(--text-primary);
-  border-radius: 0;
-  padding: var(--space-4) 0 0;
-}
+/* ── Curriculum: sidebar cards match the editorial surface system ── */
+.cur-overview,
 .cur-structure {
-  padding: var(--space-4) 0 0;
-  border-top: 1px solid var(--border);
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: var(--space-5);
 }
 .cur-dialogue.cur-card {
   background: transparent;

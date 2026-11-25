@@ -305,7 +305,7 @@ function OverviewView({ index, levelId }) {
         <div class="cur-hero-text">
           <div class="cur-eyebrow">Chuẩn trình độ tiếng Trung quốc tế · {index.standard}</div>
           <h2 class="cur-title" tabindex="-1">Giáo trình HSK 3.0 <span class="cur-title-accent" lang="zh-CN">课程</span></h2>
-          <p class="cur-lede">Học theo bài: từ vựng, điểm ngữ pháp, hội thoại và bài luyện trong cùng một lộ trình. Từ của mỗi bài học được bằng flashcard và vào lịch ôn.</p>
+          <p class="cur-lede">Học theo bài: từ vựng, điểm ngữ pháp, hội thoại và bài luyện trong cùng một lộ trình. Từ vựng mỗi bài được học bằng flashcard và tự động lên lịch ôn.</p>
         </div>
         <dl class="cur-metrics" aria-label={`Tiến độ ${level.name}`}>
           <div class="cur-metric"><dt>{`Bài ${level.name}`}</dt><dd>{doneCount}<span>{`/${level.lessons.length}`}</span></dd></div>
@@ -364,13 +364,14 @@ function OverviewView({ index, levelId }) {
                   >
                     <span class="cur-lesson-badge" aria-hidden="true">{state === 'done' ? <CheckIcon size={14} /> : l.n}</span>
                     <span class="cur-lesson-text">
-                      <span class="cur-lesson-title-row">
-                        <span class="cur-lesson-zh" lang="zh-CN">{l.zh}</span>
+                      <span class="cur-lesson-zh" lang="zh-CN">{l.zh}</span>
+                      <span class="cur-lesson-sub">
                         {py && <span class="cur-lesson-py">{py}</span>}
+                        {py && l.vi && <span class="cur-lesson-dot" aria-hidden="true">·</span>}
+                        {l.vi && <span class="cur-lesson-vi">{l.vi}</span>}
                       </span>
-                      <span class="cur-lesson-vi">{l.vi}</span>
                     </span>
-                    <span class="cur-lesson-meta">{`${l.words} từ · ${l.grammar} NP`}</span>
+                    <span class="cur-lesson-meta">{`${l.words} từ · ${l.grammar} ngữ pháp`}</span>
                     <span class={'cur-lesson-state is-' + state}>{label}</span>
                   </button>
                 </li>

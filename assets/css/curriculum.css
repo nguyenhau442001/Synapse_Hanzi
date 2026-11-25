@@ -131,12 +131,13 @@
   color: var(--text-tertiary);
 }
 
-/* Level selector: compact segmented control */
+/* Level selector: refined editorial pill bar */
 .cur-levels {
   display: flex;
-  gap: var(--space-1);
-  padding: var(--space-1);
-  background: var(--surface-chip);
+  gap: 6px;
+  padding: 6px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
   border-radius: var(--radius-card);
   overflow-x: auto;
   scrollbar-width: none;
@@ -154,22 +155,23 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1px;
-  min-width: 104px;
-  padding: var(--space-2) var(--space-3);
+  gap: 2px;
+  min-width: 108px;
+  padding: 10px 14px;
   border-radius: var(--radius-btn);
-  border: 0;
+  border: 1px solid transparent;
   background: transparent;
   color: var(--text-primary);
   font: inherit;
   text-align: left;
   cursor: pointer;
   scroll-snap-align: start;
-  transition: background-color var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+  transition: background-color var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
 }
 
 .cur-level-chip:hover:not(.active) {
-  background: var(--card-bg);
+  background: var(--surface-subtle);
+  border-color: var(--border-subtle);
 }
 
 .cur-level-chip:focus-visible {
@@ -179,7 +181,9 @@
 
 .cur-level-chip.active {
   background: var(--accent);
+  border-color: var(--accent);
   color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(168, 50, 45, 0.2);
 }
 
 .cur-level-name {
@@ -286,22 +290,15 @@
   align-items: center;
   padding: var(--space-5);
   background: var(--card-bg);
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-strong);
   border-radius: var(--radius-card);
+  box-shadow: 0 2px 12px rgba(41, 39, 34, 0.04);
   position: relative;
   overflow: hidden;
 }
 
-.cur-feature::before {
-  content: "";
-  position: absolute;
-  inset: 0 auto 0 0;
-  width: 3px;
-  background: var(--accent);
-}
-
-.cur-feature.is-complete::before {
-  background: var(--status-success);
+.cur-feature.is-complete {
+  border-color: var(--status-success);
 }
 
 .cur-feature-glyph {
@@ -470,14 +467,6 @@
   background: var(--surface-active);
 }
 
-.cur-lesson-row.is-current .cur-lesson-btn::before {
-  content: "";
-  position: absolute;
-  inset: 0 auto 0 0;
-  width: 3px;
-  background: var(--accent);
-}
-
 .cur-lesson-badge {
   width: 32px;
   height: 32px;
@@ -511,14 +500,7 @@
   min-width: 0;
   display: flex;
   flex-direction: column;
-  gap: 2px;
-}
-
-.cur-lesson-title-row {
-  display: flex;
-  align-items: baseline;
-  gap: var(--space-2);
-  min-width: 0;
+  gap: 3px;
 }
 
 .cur-lesson-zh {
@@ -526,20 +508,27 @@
   font-size: var(--fs-lesson);
   font-weight: 500;
   line-height: 1.35;
-  white-space: nowrap;
+}
+
+.cur-lesson-sub {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px;
+  font-size: 13px;
+  line-height: 1.4;
 }
 
 .cur-lesson-py {
-  font-size: var(--fs-caption);
   color: var(--text-tertiary);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  min-width: 0;
+}
+
+.cur-lesson-dot {
+  color: var(--text-tertiary);
+  opacity: 0.6;
 }
 
 .cur-lesson-vi {
-  font-size: 13px;
   color: var(--text-secondary);
 }
 
@@ -654,7 +643,10 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-3);
-  padding: 0 var(--space-1);
+  padding: var(--space-5);
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
 }
 
 .cur-steps {
