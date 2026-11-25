@@ -9,8 +9,8 @@ import {
   SPRINT_PREF_CONFIG_KEY,
   SPRINT_PREF_DAILY_KEY,
   DEFAULT_SPRINT_LEVELS,
+  SPRINT_LEVEL_OPTIONS,
   DEFAULT_DAILY_NEW_QUOTA,
-  ROUGH_SWEEP_LIMIT_MS,
   SPRINT_AUTO_FLIP_LIMIT_MS,
   BATCH_SPLIT_RATIO,
   MS_PER_DAY,
@@ -43,7 +43,6 @@ export function createDefaultSprintConfig() {
     examDate: '',
     targetLevels: [...DEFAULT_SPRINT_LEVELS],
     dailyNewQuota: DEFAULT_DAILY_NEW_QUOTA,
-    roughSweepLimitMs: ROUGH_SWEEP_LIMIT_MS,
     sprintFlipLimitMs: SPRINT_AUTO_FLIP_LIMIT_MS,
     autoAudio: true,
   };
@@ -177,18 +176,21 @@ export function isConfusablePinyin(pinyin) {
 }
 
 /**
- * Builds the 2-second Rough Sweep queue (unseen & non-suspended cards).
- * @param {Array<Object>} vocabPool
- * @param {Map<string, Object>} cardMap
- * @returns {Array<Object>}
+ * Toggles one HSK level in the sprint target list, keeping at least one level
+ * selected and preserving the canonical SPRINT_LEVEL_OPTIONS order.
+ * @param {string[]} currentLevels
+ * @param {string} levelId
+ * @returns {string[]}
  */
-export function buildRoughSweepQueue(vocabPool, cardMap) {
-  return vocabPool.filter((item) => {
-    const key = HanziMindDB.getCardKey(item.level, DEFAULT_DIRECTION, item.id);
-    const card = cardMap.get(key);
-    if (!card) return true;
-    return !card.suspended && (card.reps || 0) === 0;
-  });
+export function toggleSprintLevel(currentLevels, levelId) {
+  const selected = new Set(Array.isArray(currentLevels) ? currentLevels : []);
+  if (selected.has(levelId)) {
+    if (selected.size <= 1) return [...selected];
+    selected.delete(levelId);
+  } else {
+    selected.add(levelId);
+  }
+  return SPRINT_LEVEL_OPTIONS.map((opt) => opt.id).filter((id) => selected.has(id));
 }
 
 /**

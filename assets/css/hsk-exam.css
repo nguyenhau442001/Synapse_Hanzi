@@ -958,6 +958,26 @@
   color: var(--text-primary, #1e293b);
 }
 
+.exam-sprint-field input[type="date"],
+.exam-sprint-field input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+
+:root[data-theme="dark"] .exam-sprint-field input[type="date"] {
+  color-scheme: dark;
+}
+
+.exam-sprint-level-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.exam-sprint-level-filter small {
+  font-weight: 400;
+  color: var(--text-secondary, #475569);
+}
+
 .exam-sprint-stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));

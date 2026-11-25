@@ -5,13 +5,18 @@
 export const SPRINT_PREF_CONFIG_KEY = 'sprint_config_v1';
 export const SPRINT_PREF_DAILY_KEY = 'sprint_daily_log_v1';
 
-export const DEFAULT_SPRINT_LEVELS = ['hsk30_1', 'hsk30_2', 'hsk30_3', 'hsk30_4'];
+export const SPRINT_LEVEL_OPTIONS = [
+  { id: 'hsk30_1', label: 'HSK 1' },
+  { id: 'hsk30_2', label: 'HSK 2' },
+  { id: 'hsk30_3', label: 'HSK 3' },
+  { id: 'hsk30_4', label: 'HSK 4' },
+];
+export const DEFAULT_SPRINT_LEVELS = SPRINT_LEVEL_OPTIONS.map((opt) => opt.id);
 export const DEFAULT_DAILY_NEW_QUOTA = 70;
 export const MIN_DAILY_NEW_QUOTA = 30;
 export const MAX_DAILY_NEW_QUOTA = 120;
 export const BATCH_SPLIT_RATIO = 0.5;
 
-export const ROUGH_SWEEP_LIMIT_MS = 2000;
 export const SPRINT_AUTO_FLIP_LIMIT_MS = 3000;
 export const COUNTDOWN_TICK_MS = 60000;
 export const TIMER_TICK_MS = 100;
@@ -68,13 +73,15 @@ export const SPRINT_SLOTS = [
 export const SPRINT_UI_LABELS = {
   hubTabLabel: '🔥 Sinh tử chiến (Khô máu)',
   title: 'Chiến dịch Sinh tử chiến — Luyện thi HSK 3.0',
-  subtitle: 'Lọc sạch từ đã biết (2s) · Nạp 60–80 từ/ngày (3s/thẻ, Auto-Audio) · Reverse SRS chống quên trong đề.',
+  subtitle: 'Chọn cấp HSK cần cày · Nạp 60–80 từ/ngày (3s/thẻ, Auto-Audio) · Reverse SRS chống quên trong đề.',
   setExamDateLabel: 'Ngày thi mục tiêu',
+  examDatePickerTitle: 'Bấm để chọn ngày thi trên lịch',
   dailyQuotaLabel: 'Chỉ tiêu từ mới / ngày',
-  roughSweepBtn: '⚡ Quét thô 2s (Lọc từ đã biết)',
+  levelFilterLabel: 'Cấp HSK cần cày',
+  levelFilterHint: 'Bỏ chọn các cấp đã thuộc để chỉ nạp từ khó hơn.',
+  poolStatLabel: 'Tổng từ các cấp đã chọn',
+  suspendedStatLabel: 'Đã ẩn',
   reverseSrsBtn: '🎯 Reverse SRS (12 câu chống quên trong đề)',
-  suspendAction: 'Bỏ qua / Ẩn (Đã biết <2s)',
-  keepAction: 'Giữ lại để cày',
   autoFlipBadge: 'Giới hạn 3s/thẻ · Tự lật',
   autoAudioBadge: 'Auto-Audio BẮT BUỘC',
   hanVietPrefix: 'Hán Việt:',

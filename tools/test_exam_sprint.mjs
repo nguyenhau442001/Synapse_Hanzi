@@ -7,7 +7,7 @@ import {
   extractHanViet,
   findWordFamily,
   isConfusablePinyin,
-  buildRoughSweepQueue,
+  toggleSprintLevel,
   buildSlotQueue,
   buildReverseSrsQuiz,
   loadSprintPreferences,
@@ -72,9 +72,10 @@ async function runTests() {
   const cards = await testDb.cards.toArray();
   const cardMap = new Map(cards.map((c) => [c.id, c]));
 
-  // 4. Test Rough Sweep & Slot Queue builders
-  const sweepQueue = buildRoughSweepQueue(pool, cardMap);
-  assert.equal(sweepQueue.length, 3); // Excludes suspended (1) and reviewed (4)
+  // 4. Test HSK level toggle & Slot Queue builders
+  assert.deepEqual(toggleSprintLevel(['hsk30_1', 'hsk30_2'], 'hsk30_1'), ['hsk30_2']);
+  assert.deepEqual(toggleSprintLevel(['hsk30_4'], 'hsk30_2'), ['hsk30_2', 'hsk30_4']);
+  assert.deepEqual(toggleSprintLevel(['hsk30_3'], 'hsk30_3'), ['hsk30_3']); // keeps at least one level
 
   const morningQueue = buildSlotQueue('morning', pool, cardMap, {}, { dailyNewQuota: 4 }, new Date());
   assert.equal(morningQueue.length, 1);

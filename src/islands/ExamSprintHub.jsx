@@ -1,7 +1,7 @@
 // src/islands/ExamSprintHub.jsx
 // Exam Sprint ("Sinh tử chiến / Khô máu") Hub:
 // 1. Exam Date Countdown & Daily Quota Calculator
-// 2. 2-second Rough Sweep (Suspend instant-known words)
+// 2. HSK level filter (choose which HSK 3.0 levels feed the sprint pool)
 // 3. 4 Daily Rounds (Morning Due+Mistakes, Noon Batch 1, Evening Batch 2, Night Skim + Pinyin)
 //    with 3s auto-flip, mandatory prebuilt Auto-Audio, Hán Việt & Word Family clustering
 // 4. Reverse SRS 12-question mini-quiz that tags mistakes for next morning's priority queue
@@ -11,14 +11,12 @@ import { useState, useEffect, useRef, useMemo } from 'preact/hooks';
 import {
   Flame,
   Calendar,
-  Zap,
   Volume2,
   Clock,
   CheckCircle2,
   XCircle,
   ArrowLeft,
   Target,
-  SkipForward,
   Sparkles,
 } from 'lucide-preact';
 import { db, HanziMindDB } from './db.js';
@@ -27,7 +25,7 @@ import {
   SPRINT_SLOTS,
   SPRINT_UI_LABELS,
   SPRINT_SLOT_EMPTY_REASONS,
-  ROUGH_SWEEP_LIMIT_MS,
+  SPRINT_LEVEL_OPTIONS,
   SPRINT_AUTO_FLIP_LIMIT_MS,
   TIMER_TICK_MS,
   MIN_DAILY_NEW_QUOTA,
@@ -44,7 +42,7 @@ import {
   updateSprintDailyLog,
   extractHanViet,
   findWordFamily,
-  buildRoughSweepQueue,
+  toggleSprintLevel,
   buildSlotQueue,
   buildReverseSrsQuiz,
 } from './SprintState.js';
@@ -54,6 +52,20 @@ const DEFAULT_DIRECTION = 'zh2vi';
 function playPrebuiltAudio(hanzi, level) {
   if (typeof window !== 'undefined' && typeof window.speakText === 'function') {
     window.speakText(hanzi, level);
+  }
+}
+
+/**
+ * Opens the native calendar popup on click instead of only via the small icon.
+ * @param {MouseEvent} event
+ */
+function openDatePicker(event) {
+  const input = event.currentTarget;
+  if (typeof input?.showPicker !== 'function') return;
+  try {
+    input.showPicker();
+  } catch (_) {
+    // showPicker throws NotAllowedError without user activation or in cross-origin iframes.
   }
 }
 
@@ -67,7 +79,7 @@ function normalizeTonelessPinyin(text) {
 }
 
 export function ExamSprintHub({ onBack }) {
-  const [viewMode, setViewMode] = useState('dashboard'); // 'dashboard' | 'sweep' | 'sprint' | 'reverse_srs'
+  const [viewMode, setViewMode] = useState('dashboard'); // 'dashboard' | 'sprint' | 'reverse_srs'
   const [activeSlot, setActiveSlot] = useState(null);
   const [vocabPool, setVocabPool] = useState([]);
   const [cardMap, setCardMap] = useState(new Map());
@@ -149,18 +161,18 @@ export function ExamSprintHub({ onBack }) {
     refreshSprintData();
   }, []);
 
-  // 2s Rough Sweep & 3s Auto-Flip timer
+  // 3s Auto-Flip timer
   useEffect(() => {
-    if (viewMode !== 'sweep' && viewMode !== 'sprint') return undefined;
+    if (viewMode !== 'sprint') return undefined;
     if (isFlipped || currentIndex >= queue.length) return undefined;
 
-    const limitMs = viewMode === 'sweep' ? ROUGH_SWEEP_LIMIT_MS : SPRINT_AUTO_FLIP_LIMIT_MS;
+    const limitMs = SPRINT_AUTO_FLIP_LIMIT_MS;
     setElapsedMs(0);
 
     const intervalId = setInterval(() => {
       setElapsedMs((prev) => {
         const next = prev + TIMER_TICK_MS;
-        if (next >= limitMs && viewMode === 'sprint') {
+        if (next >= limitMs) {
           setIsFlipped(true);
           const card = queue[currentIndex];
           if (card && sprintConfig.value.autoAudio) {
@@ -175,12 +187,10 @@ export function ExamSprintHub({ onBack }) {
     return () => clearInterval(intervalId);
   }, [viewMode, currentIndex, isFlipped, queue]);
 
-  function startRoughSweep() {
-    const sweepItems = buildRoughSweepQueue(vocabPool, cardMap);
-    setQueue(sweepItems);
-    setCurrentIndex(0);
-    setIsFlipped(false);
-    setViewMode('sweep');
+  async function handleToggleLevel(levelId) {
+    const nextLevels = toggleSprintLevel(sprintConfig.value.targetLevels, levelId);
+    await updateSprintConfig({ targetLevels: nextLevels }, db);
+    await refreshSprintData();
   }
 
   function startSprintSlot(slotId) {
@@ -208,21 +218,6 @@ export function ExamSprintHub({ onBack }) {
     setSelectedChoice(null);
     setQuizResult(null);
     setViewMode('reverse_srs');
-  }
-
-  async function handleSweepDecision(shouldSuspend) {
-    const item = queue[currentIndex];
-    if (!item) return;
-    if (shouldSuspend && db) {
-      await db.setCardSuspended(item.level, DEFAULT_DIRECTION, item.id, true);
-    }
-    if (currentIndex + 1 < queue.length) {
-      setCurrentIndex(currentIndex + 1);
-      setIsFlipped(false);
-    } else {
-      await refreshSprintData();
-      setViewMode('dashboard');
-    }
   }
 
   function handleFlipSprintCard() {
@@ -326,62 +321,6 @@ export function ExamSprintHub({ onBack }) {
     }
     return counts;
   }, [vocabPool, cardMap, daily, sprintConfig.value]);
-
-  if (viewMode === 'sweep') {
-    const item = queue[currentIndex];
-    const pct = Math.min(100, Math.round((elapsedMs / ROUGH_SWEEP_LIMIT_MS) * 100));
-    return (
-      <div class="exam-sprint-panel">
-        <button
-          type="button"
-          class="exam-pill-btn"
-          onClick={() => setViewMode('dashboard')}
-        >
-          <ArrowLeft size={16} />
-          {SPRINT_UI_LABELS.backToHub}
-        </button>
-
-        {!item ? (
-          <div class="exam-sprint-empty">
-            <CheckCircle2 size={40} />
-            <h3>Đã quét thô xong toàn bộ bộ từ!</h3>
-          </div>
-        ) : (
-          <div class="exam-sprint-card">
-            <div class="exam-sprint-meta">
-              <span>Quét thô 2s · Thẻ {currentIndex + 1} / {queue.length}</span>
-              <span>{elapsedMs >= ROUGH_SWEEP_LIMIT_MS ? 'Hết 2s -> Giữ lại cày!' : 'Nhìn mặt chữ <2s'}</span>
-            </div>
-            <div class="exam-sprint-progress-track">
-              <div
-                class="exam-sprint-progress-fill"
-                style={{ width: `${pct}%` }}
-              />
-            </div>
-            <div class="exam-sprint-hanzi">{item.hanzi}</div>
-            <div class="exam-sprint-actions">
-              <button
-                type="button"
-                class="exam-sprint-btn-suspend"
-                onClick={() => handleSweepDecision(true)}
-              >
-                <SkipForward size={18} />
-                {SPRINT_UI_LABELS.suspendAction}
-              </button>
-              <button
-                type="button"
-                class="exam-sprint-btn-keep"
-                onClick={() => handleSweepDecision(false)}
-              >
-                <Flame size={18} />
-                {SPRINT_UI_LABELS.keepAction}
-              </button>
-            </div>
-          </div>
-        )}
-      </div>
-    );
-  }
 
   if (viewMode === 'sprint') {
     const item = queue[currentIndex];
@@ -645,6 +584,8 @@ export function ExamSprintHub({ onBack }) {
           <input
             type="date"
             value={sprintConfig.value.examDate}
+            title={SPRINT_UI_LABELS.examDatePickerTitle}
+            onClick={openDatePicker}
             onChange={(e) => updateSprintConfig({ examDate: e.target.value }, db)}
           />
         </label>
@@ -664,13 +605,39 @@ export function ExamSprintHub({ onBack }) {
         </label>
       </div>
 
+      <div class="exam-sprint-field exam-sprint-level-filter">
+        <span>{SPRINT_UI_LABELS.levelFilterLabel}</span>
+        <div
+          class="exam-sprint-level-chips"
+          role="group"
+          aria-label={SPRINT_UI_LABELS.levelFilterLabel}
+        >
+          {SPRINT_LEVEL_OPTIONS.map((opt) => {
+            const isActive = sprintConfig.value.targetLevels.includes(opt.id);
+            return (
+              <button
+                key={opt.id}
+                type="button"
+                class={`exam-pill-btn ${isActive ? 'active' : ''}`}
+                aria-pressed={isActive}
+                disabled={sprintLoading.value}
+                onClick={() => handleToggleLevel(opt.id)}
+              >
+                {opt.label}
+              </button>
+            );
+          })}
+        </div>
+        <small>{SPRINT_UI_LABELS.levelFilterHint}</small>
+      </div>
+
       <div class="exam-sprint-stats-grid">
         <div class="exam-sprint-stat">
-          <span>Tổng bộ HSK 3.0 (1–4)</span>
+          <span>{SPRINT_UI_LABELS.poolStatLabel}</span>
           <strong>{sprintLoading.value ? '...' : stats.totalPool}</strong>
         </div>
         <div class="exam-sprint-stat">
-          <span>Đã ẩn (Quét &lt;2s)</span>
+          <span>{SPRINT_UI_LABELS.suspendedStatLabel}</span>
           <strong>{stats.suspendedCount}</strong>
         </div>
         <div class="exam-sprint-stat">
@@ -684,15 +651,6 @@ export function ExamSprintHub({ onBack }) {
       </div>
 
       <div class="exam-sprint-quick-actions">
-        <button
-          type="button"
-          class="exam-sprint-btn-suspend"
-          onClick={startRoughSweep}
-        >
-          <Zap size={18} />
-          {SPRINT_UI_LABELS.roughSweepBtn}
-        </button>
-
         <button
           type="button"
           class="exam-sprint-btn-keep"
