@@ -1,0 +1,169 @@
+{
+  "version": 1,
+  "level": "topic_food_shopping",
+  "engine": "EdgeTTS",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "speed": 1.0,
+  "items": {
+    "1": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0001.mp3?v=083aba3178d5",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0001.mp3?v=c9f851e77ac4"
+    },
+    "2": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0002.mp3?v=bfc94bd391b9",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0002.mp3?v=ff580b7b6ab4"
+    },
+    "3": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0003.mp3?v=d5b0b46d0da9",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0003.mp3?v=34d59da0de5f"
+    },
+    "4": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0004.mp3?v=58b862f9de28",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0004.mp3?v=60b3d1446e6d"
+    },
+    "5": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0005.mp3?v=4030e9e96a45",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0005.mp3?v=8c173a8ab0e8"
+    },
+    "6": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0006.mp3?v=29f37a3422d3",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0006.mp3?v=94e34e4f2852"
+    },
+    "7": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0007.mp3?v=5ccc79ff7b9e",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0007.mp3?v=4cfe7c71a23d"
+    },
+    "8": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0008.mp3?v=e8d29b84db07",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0008.mp3?v=dfd02284418f"
+    },
+    "9": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0009.mp3?v=7719671fd50f",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0009.mp3?v=394ecdca3fc6"
+    },
+    "10": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0010.mp3?v=73cba4da7237",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0010.mp3?v=1eea3c632249"
+    },
+    "11": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0011.mp3?v=3ebf08564c04",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0011.mp3?v=2f73a643fe97"
+    },
+    "12": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0012.mp3?v=7ffdcc00ef2d",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0012.mp3?v=45eab7a6352d"
+    },
+    "13": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0013.mp3?v=ea827c30abce",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0013.mp3?v=d33dd7367743"
+    },
+    "14": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0014.mp3?v=2e9f91e50315",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0014.mp3?v=3137b1a07fd9"
+    },
+    "15": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0015.mp3?v=a9a0294d6d0c",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0015.mp3?v=90d8ac23f7dd"
+    },
+    "16": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0016.mp3?v=f77bdda32c74",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0016.mp3?v=594832c2dd5b"
+    },
+    "17": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0017.mp3?v=5f95c007fd28",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0017.mp3?v=2f3044f43726"
+    },
+    "18": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0018.mp3?v=2ed1e62b7c80",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0018.mp3?v=0ade959dbeed"
+    },
+    "19": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0019.mp3?v=f6e39277e2ad",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0019.mp3?v=9d623c2e59bb"
+    },
+    "20": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0020.mp3?v=c21f636e17f8",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0020.mp3?v=bd041eaaf41d"
+    },
+    "21": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0021.mp3?v=d1bb221749fe",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0021.mp3?v=9d5a7e82321b"
+    },
+    "22": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0022.mp3?v=117246525f95",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0022.mp3?v=f5c359612dd3"
+    },
+    "23": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0023.mp3?v=845879685590",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0023.mp3?v=9757403e2c10"
+    },
+    "24": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0024.mp3?v=74cfecb3dfb5",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0024.mp3?v=f3a031f59fce"
+    },
+    "25": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0025.mp3?v=8730a2f76adc",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0025.mp3?v=10ccbf3c1bc1"
+    },
+    "26": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0026.mp3?v=e87c4359d985",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0026.mp3?v=89c8fb6cf1a5"
+    },
+    "27": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0027.mp3?v=fcca722849e1",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0027.mp3?v=3ccb1962c9e2"
+    },
+    "28": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0028.mp3?v=c9baa3415203",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0028.mp3?v=9edb1d35ffe4"
+    },
+    "29": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0029.mp3?v=50372ceab4c0",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0029.mp3?v=4656dd700868"
+    },
+    "30": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0030.mp3?v=d63dda4df012",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0030.mp3?v=6b9104bdddee"
+    },
+    "31": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0031.mp3?v=0c62c199d699",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0031.mp3?v=c5f8cfa4ca4d"
+    },
+    "32": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0032.mp3?v=f24bae24b78e",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0032.mp3?v=293b36a358d7"
+    },
+    "33": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0033.mp3?v=98684c472d8f",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0033.mp3?v=cc21d238bd70"
+    },
+    "34": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0034.mp3?v=4dfcf44e0630",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0034.mp3?v=b1e5f1f905e2"
+    },
+    "35": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0035.mp3?v=6c80e4301072",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0035.mp3?v=f9c6478ce351"
+    },
+    "36": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0036.mp3?v=f39440d7dbb3",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0036.mp3?v=1742d74d09a2"
+    },
+    "37": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0037.mp3?v=c499a3aa86f5",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0037.mp3?v=3a9bea2589a9"
+    },
+    "38": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0038.mp3?v=6a37628c7a73",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0038.mp3?v=34e737efc85b"
+    },
+    "39": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0039.mp3?v=294ce8f0318f",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0039.mp3?v=42061275bb21"
+    },
+    "40": {
+      "word": "database/prebuilt_audio/topic_food_shopping/words/0040.mp3?v=22a77767671d",
+      "example": "database/prebuilt_audio/topic_food_shopping/examples/0040.mp3?v=b81b8ea686ad"
+    }
+  }
+}

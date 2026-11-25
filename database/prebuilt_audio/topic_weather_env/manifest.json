@@ -1,0 +1,169 @@
+{
+  "version": 1,
+  "level": "topic_weather_env",
+  "engine": "EdgeTTS",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "speed": 1.0,
+  "items": {
+    "1": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0001.mp3?v=8b3cef480fb6",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0001.mp3?v=92a4850619eb"
+    },
+    "2": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0002.mp3?v=4ecb85028332",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0002.mp3?v=8fe8341ba6c3"
+    },
+    "3": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0003.mp3?v=52507b0a82a2",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0003.mp3?v=9502dad65ea7"
+    },
+    "4": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0004.mp3?v=8a22868916b8",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0004.mp3?v=e9caf1e2dd80"
+    },
+    "5": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0005.mp3?v=a2346cc56fbb",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0005.mp3?v=764440330139"
+    },
+    "6": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0006.mp3?v=8eab57c621c5",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0006.mp3?v=e62c68d74118"
+    },
+    "7": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0007.mp3?v=f721c43419a7",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0007.mp3?v=2f0691f2fa2b"
+    },
+    "8": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0008.mp3?v=0c841e2dd0a2",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0008.mp3?v=0e66bddd8506"
+    },
+    "9": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0009.mp3?v=35a45e9be6a3",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0009.mp3?v=84c0693b88a5"
+    },
+    "10": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0010.mp3?v=486a7f15ddaa",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0010.mp3?v=dc6c3c1a0a67"
+    },
+    "11": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0011.mp3?v=b1deb5e07a99",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0011.mp3?v=06358fbcf0cb"
+    },
+    "12": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0012.mp3?v=770a4a9e7a14",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0012.mp3?v=1c9344ae29d7"
+    },
+    "13": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0013.mp3?v=176ee484fbf5",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0013.mp3?v=6b55a5f4e374"
+    },
+    "14": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0014.mp3?v=7dcbc6e408ac",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0014.mp3?v=dae168d73729"
+    },
+    "15": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0015.mp3?v=ea154f682da9",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0015.mp3?v=62fe78c9be60"
+    },
+    "16": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0016.mp3?v=b6b83e0300c9",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0016.mp3?v=fad14ac1ed95"
+    },
+    "17": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0017.mp3?v=9c60c6c58780",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0017.mp3?v=67f75ee67f30"
+    },
+    "18": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0018.mp3?v=b0db2bcde54f",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0018.mp3?v=d2cdfceb5c36"
+    },
+    "19": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0019.mp3?v=afad7d9b8dce",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0019.mp3?v=4f841f976ee5"
+    },
+    "20": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0020.mp3?v=8b67277712b9",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0020.mp3?v=eaa81f10f372"
+    },
+    "21": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0021.mp3?v=4fcd5442b9d6",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0021.mp3?v=ac6d2ec04aba"
+    },
+    "22": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0022.mp3?v=bf7e743a5a76",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0022.mp3?v=a4daf1c252c7"
+    },
+    "23": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0023.mp3?v=46f65ac762db",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0023.mp3?v=dbc4655e2096"
+    },
+    "24": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0024.mp3?v=ac6044a9ed7e",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0024.mp3?v=5b75839b2d91"
+    },
+    "25": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0025.mp3?v=0fd742c3e0ff",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0025.mp3?v=372283c6727c"
+    },
+    "26": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0026.mp3?v=a3041904aab2",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0026.mp3?v=7840ad3f0217"
+    },
+    "27": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0027.mp3?v=026d32b0a22d",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0027.mp3?v=5bb896c1e877"
+    },
+    "28": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0028.mp3?v=04c662d504c3",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0028.mp3?v=255427bfaa4f"
+    },
+    "29": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0029.mp3?v=3dfed921c056",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0029.mp3?v=80d7e1435c1a"
+    },
+    "30": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0030.mp3?v=69f69477f76d",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0030.mp3?v=c7401d2cea3e"
+    },
+    "31": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0031.mp3?v=fbc52c260611",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0031.mp3?v=b90f0a256f77"
+    },
+    "32": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0032.mp3?v=b3fa64a0cab4",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0032.mp3?v=e7486ad9d348"
+    },
+    "33": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0033.mp3?v=df2ab1332347",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0033.mp3?v=9b653f13634b"
+    },
+    "34": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0034.mp3?v=9643222dc6e1",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0034.mp3?v=118001b40947"
+    },
+    "35": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0035.mp3?v=db64ac50d3aa",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0035.mp3?v=ef20cf947ce5"
+    },
+    "36": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0036.mp3?v=005c3cb018e5",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0036.mp3?v=81e88b029211"
+    },
+    "37": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0037.mp3?v=a68b7277daba",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0037.mp3?v=c619c00afa4b"
+    },
+    "38": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0038.mp3?v=5dc5bd3de148",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0038.mp3?v=6c6874fb135c"
+    },
+    "39": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0039.mp3?v=a4a726016c69",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0039.mp3?v=c94fa3bd35f4"
+    },
+    "40": {
+      "word": "database/prebuilt_audio/topic_weather_env/words/0040.mp3?v=ede7e34dd776",
+      "example": "database/prebuilt_audio/topic_weather_env/examples/0040.mp3?v=aa4ff3915ce0"
+    }
+  }
+}

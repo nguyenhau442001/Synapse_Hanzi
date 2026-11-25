@@ -65,6 +65,9 @@ export const TOPICS = {
   topic_festivals: { label: 'Lễ hội', icon: '🏮', dataUrl: 'database/vocabs/topics/festivals.json', audioManifestUrl: 'database/prebuilt_audio/topic_festivals/manifest.json', available: true, total: 40, isTopic: true },
   topic_travel: { label: 'Du lịch', icon: '✈️', dataUrl: 'database/vocabs/topics/travel.json', audioManifestUrl: 'database/prebuilt_audio/topic_travel/manifest.json', available: true, total: 40, isTopic: true },
   topic_health: { label: 'Sức khỏe', icon: '🏥', dataUrl: 'database/vocabs/topics/health.json', audioManifestUrl: 'database/prebuilt_audio/topic_health/manifest.json', available: true, total: 40, isTopic: true },
+  topic_hskk_templates: { label: 'Câu mẫu HSKK', icon: '💬', dataUrl: 'database/vocabs/topics/hskk_templates.json', audioManifestUrl: 'database/prebuilt_audio/topic_hskk_templates/manifest.json', available: true, total: 40, isTopic: true },
+  topic_food_shopping: { label: 'Ẩm thực & Mua sắm', icon: '🍜', dataUrl: 'database/vocabs/topics/food_shopping.json', audioManifestUrl: 'database/prebuilt_audio/topic_food_shopping/manifest.json', available: true, total: 40, isTopic: true },
+  topic_weather_env: { label: 'Thời tiết & Môi trường', icon: '🌤️', dataUrl: 'database/vocabs/topics/weather_env.json', audioManifestUrl: 'database/prebuilt_audio/topic_weather_env/manifest.json', available: true, total: 40, isTopic: true },
 };
 Object.assign(LEVELS, TOPICS);
 
