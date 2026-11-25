@@ -4922,13 +4922,13 @@ body.flashcard-study-mode .example-box .ex-label {
 }
 body.flashcard-study-mode .example-sound-btn {
   font-size: 12px;
-  border-radius: 50%;
+  border-radius: 8px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: all 0.15s ease;
-  border-color: rgba(168, 50, 42, 0.25);
+  border-color: var(--hs-beige, rgba(0, 0, 0, 0.12));
 }
 :root[data-theme="dark"] body.flashcard-study-mode .example-sound-btn {
   border-color: rgba(217, 120, 106, 0.35);
@@ -5465,14 +5465,15 @@ body.flashcard-study-mode .rating-row:not([hidden]),
 }
 body.flashcard-study-mode .rating-btn,
 .today-reviews-screen .rating-btn {
+  position: relative;
   display: grid !important;
   grid-template-columns: 1fr;
   justify-items: center;
   align-content: center;
   row-gap: 2px !important;
-  min-height: 48px !important;
+  min-height: 52px !important;
   height: auto !important;
-  padding: 8px 6px !important;
+  padding: 9px 10px !important;
   border-radius: 12px !important;
   background: var(--rating-bg);
   border: 1px solid var(--rating-border);
@@ -5495,9 +5496,28 @@ body.flashcard-study-mode .rating-btn .rating-label,
 }
 body.flashcard-study-mode .rating-btn .rating-kbd-badge,
 .today-reviews-screen .rating-btn .rating-kbd-badge {
-  margin: 2px 0 0 !important;
-  padding: 0 5px !important;
-  font-size: 10.5px !important;
+  position: absolute;
+  top: 5px;
+  right: 6px;
+  margin: 0 !important;
+  min-width: 17px;
+  height: 17px;
+  padding: 0 4px !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 10px !important;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.68);
+  border: 1px solid color-mix(in srgb, currentColor 30%, transparent);
+  color: var(--rating-color);
+  opacity: 0.85;
+}
+:root[data-theme="dark"] body.flashcard-study-mode .rating-btn .rating-kbd-badge,
+:root[data-theme="dark"] .today-reviews-screen .rating-btn .rating-kbd-badge {
+  background: rgba(0, 0, 0, 0.28);
 }
 /* Touch screens have no number keys to hint at. */
 @media (hover: none) and (pointer: coarse) {
@@ -5706,28 +5726,37 @@ body.flashcard-study-mode #studyNavRow {
   }
 }
 
-/* --- Wide Screen (≥ 1600px): 2-Column Card + Open Details Rail ------------- */
-@media (min-width: 1600px) {
+/* --- Wide Screen (≥ 1200px): 2-Column Card + Open Details Rail ------------- */
+@media (min-width: 1200px) {
   body.flashcard-study-mode .study-view-topbar {
-    max-width: 1280px;
+    max-width: 1320px;
+    gap: 16px;
   }
   body.flashcard-study-mode .study-card-grid.has-detail-rail {
     display: grid;
-    grid-template-columns: minmax(520px, 640px) minmax(340px, 420px);
-    gap: 20px;
+    grid-template-columns: minmax(540px, 1.35fr) minmax(380px, 1fr);
+    gap: 24px;
     justify-content: center;
     align-items: start;
-    max-width: 1120px;
+    max-width: 1320px;
     margin: 0 auto;
   }
   body.flashcard-study-mode .study-card-grid.has-detail-rail > .card {
     max-width: none;
     height: 100%;
   }
+  body.flashcard-study-mode .study-card-grid.has-detail-rail ~ .rating-area,
+  body.flashcard-study-mode .study-card-grid.has-detail-rail ~ .study-nav-controls {
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: calc((100% - 24px) * 0.4255 + 24px);
+    box-sizing: border-box;
+  }
   body.flashcard-study-mode .study-detail-rail:not([hidden]) {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 14px;
     max-height: 100%;
     overflow-y: auto;
     padding: 4px 2px;
@@ -5735,7 +5764,8 @@ body.flashcard-study-mode #studyNavRow {
   body.flashcard-study-mode .study-detail-rail .card-expandable-group {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 14px;
+    max-width: none;
     margin: 0;
   }
 }

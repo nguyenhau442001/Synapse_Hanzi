@@ -333,32 +333,43 @@ body.hide-illustrations .card .card-visual-col {
 }
 .card-radicals-row {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 8px;
   margin: 0;
+  width: 100%;
 }
 .card-decomp-formula-wrap,
 .card-decomp-multi-wrap {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 6px;
+  width: 100%;
 }
 .card-decomp-char-block {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 2px;
+  width: 100%;
 }
 .card-decomp-chars-row {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 5px;
+  width: 100%;
+  text-align: left;
+}
+.card-decomp-target-char {
+  min-width: 24px;
+  text-align: left;
+  flex-shrink: 0;
 }
 .card-decomp-char-btn {
   background: transparent;
@@ -515,9 +526,13 @@ body.hide-illustrations .card .card-visual-col {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: 8px;
   margin-bottom: 4px;
+}
+.related-group-tag {
+  font-size: 10.5px;
+  padding: 2px 7px;
 }
 .card-related-back-btn {
   display: inline-flex;
@@ -540,23 +555,23 @@ body.hide-illustrations .card .card-visual-col {
 }
 .card-related-chips {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 8px;
   box-sizing: border-box;
 }
 
 /* Chip Chữ liên quan - Rõ nét, độ tương phản cao, typography nổi bật */
 .related-chip {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  padding: 6px 12px;
+  width: 100%;
+  padding: 8px 11px;
   border-radius: 10px;
-  border: 1.5px solid var(--border-subtle, rgba(0, 0, 0, 0.12));
+  border: 1px solid var(--border-subtle, rgba(0, 0, 0, 0.12));
   background: var(--surface-card, #ffffff);
   color: var(--text-primary);
   cursor: pointer;
@@ -564,8 +579,11 @@ body.hide-illustrations .card .card-visual-col {
   text-decoration: none;
   font-family: inherit;
   box-sizing: border-box;
-  text-align: center;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  text-align: left;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+.related-chip--wide {
+  grid-column: span 2;
 }
 .related-chip:hover {
   transform: translateY(-1.5px);

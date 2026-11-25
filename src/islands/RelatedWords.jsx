@@ -329,18 +329,29 @@ const statusInfo = {
 };
 
 function RelatedChips({ relatedList, lastItem }) {
+  const hasMixedTypes = new Set(relatedList.map((item) => item.type)).size > 1;
+  const singleTypeItem = !hasMixedTypes && relatedList.length > 0 ? relatedList[0] : null;
+  const showHeader = Boolean(lastItem) || Boolean(singleTypeItem);
+
   return (
     <>
-      {lastItem && (
+      {showHeader && (
         <div class="card-related-header">
-          <button type="button" class="card-related-back-btn" onClick={(e) => { e.stopPropagation(); goBackRelatedCard(); }}
-            title={`Quay lại thẻ trước: ${lastItem.hanzi}`}>
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <line x1="19" y1="12" x2="5" y2="12"></line>
-              <polyline points="12 19 5 12 12 5"></polyline>
-            </svg>{' '}
-            <span>{`Quay lại: ${lastItem.hanzi}`}</span>
-          </button>
+          {singleTypeItem ? (
+            <span class={`related-chip-tag related-chip-tag--${singleTypeItem.type} related-group-tag`}>
+              {singleTypeItem.typeLabel}
+            </span>
+          ) : <span />}
+          {lastItem && (
+            <button type="button" class="card-related-back-btn" onClick={(e) => { e.stopPropagation(); goBackRelatedCard(); }}
+              title={`Quay lại thẻ trước: ${lastItem.hanzi}`}>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>{' '}
+              <span>{`Quay lại: ${lastItem.hanzi}`}</span>
+            </button>
+          )}
         </div>
       )}
       <div class="card-related-chips" role="list" aria-label="Danh sách chữ liên quan">
@@ -348,16 +359,19 @@ function RelatedChips({ relatedList, lastItem }) {
           const w = item.word;
           const shortMean = formatShortMeaning(w.meaning);
           const [statusClass, statusTitle] = statusInfo[getWordLearnStatus(w.levelKey, w.id)];
+          const isWide = (w.hanzi && w.hanzi.length >= 4) || (w.pinyin && w.pinyin.length >= 12);
           return [
             ' ',
-            <button key={`${w.levelKey}_${w.id}`} type="button" class={`related-chip ${statusClass}`}
+            <button key={`${w.levelKey}_${w.id}`} type="button" class={`related-chip ${statusClass}${isWide ? ' related-chip--wide' : ''}`}
               onClick={(e) => { e.stopPropagation(); navigateToRelatedWord(w.levelKey, w.id, w.hanzi); }}
               title={`Nhấn để học thẻ '${w.hanzi}' (${w.pinyin} - ${shortMean}) · Trạng thái: ${statusTitle}`}
               role="listitem">
               <div class="related-chip-main">
                 <span class="related-chip-hanzi" lang="zh-CN">{w.hanzi}</span>{' '}
                 <span class="related-chip-pinyin">{w.pinyin || ''}</span>{' '}
-                <span class={`related-chip-tag related-chip-tag--${item.type}`}>{item.typeLabel}</span>
+                {hasMixedTypes && (
+                  <span class={`related-chip-tag related-chip-tag--${item.type}`}>{item.typeLabel}</span>
+                )}
               </div>{' '}
               {shortMean ? <span class="related-chip-mean">{shortMean}</span> : null}
             </button>
