@@ -186,6 +186,10 @@ export function initAppEventBindings() {
     if (typeof selectLevel === 'function') selectLevel(level);
     else if (window.selectLevel) window.selectLevel(level);
   });
+  onId('learningDashboardDueLink', 'click', () => {
+    if (typeof openTodayReviews === 'function') openTodayReviews();
+    else if (window.openTodayReviews) window.openTodayReviews();
+  });
   on('.goal-settings-btn', 'click', () => {
     if (typeof focusDailyGoalSelector === 'function') focusDailyGoalSelector();
     else if (window.focusDailyGoalSelector) window.focusDailyGoalSelector();

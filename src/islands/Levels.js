@@ -47,6 +47,16 @@ export const DEFAULT_DAILY_STUDY_GOAL = 20;
 export const DAILY_STUDY_GOAL_OPTIONS = [10, 20, 30, 50];
 export const DAILY_STUDY_GOAL_KEY = 'hsk_daily_study_goal_v1';
 export const STUDY_ACTIVITY_KEY = 'hsk_study_activity_v1';
+
+// Dashboard title: the due-card count is a button that opens "Ôn hôm nay".
+export const DASHBOARD_TITLE_LABELS = {
+  prefix: 'Hôm nay: ',
+  newWords: (count) => `học ${count} từ mới`,
+  separator: ' · ',
+  dueCards: (count) => `${count} thẻ đến hạn`,
+  dueLinkHint: (count) => `Ôn ngay ${count} thẻ đến hạn`,
+  allDone: 'Đã hoàn thành mục tiêu hôm nay',
+};
 export const LAST_LEVEL_KEY = 'hsk_last_level_v1';
 
 export function readSavedLevelProgress(level) {
@@ -583,17 +593,25 @@ export function renderLearningDashboard() {
   const targetLevel = (target && target.level) ? target.level : 'hsk1';
   const targetLabel = (levelsObj && levelsObj[targetLevel]) ? levelsObj[targetLevel].label : 'HSK 1';
 
-  const titleNode = document.getElementById('learningDashboardTitle');
-  if (titleNode) {
+  const titleTextNode = document.getElementById('learningDashboardTitleText');
+  const dueLinkNode = document.getElementById('learningDashboardDueLink');
+  if (titleTextNode) {
+    const L = DASHBOARD_TITLE_LABELS;
     if (dueTotal > 0 && remainingNew > 0) {
-      titleNode.textContent = `Hôm nay: học ${remainingNew} từ mới · ${dueTotal} thẻ đến hạn`;
+      titleTextNode.textContent = L.prefix + L.newWords(remainingNew) + L.separator;
     } else if (dueTotal > 0) {
-      titleNode.textContent = `Hôm nay: ${dueTotal} thẻ đến hạn`;
+      titleTextNode.textContent = L.prefix;
     } else if (remainingNew > 0) {
-      titleNode.textContent = `Hôm nay: học ${remainingNew} từ mới`;
+      titleTextNode.textContent = L.prefix + L.newWords(remainingNew);
     } else {
-      titleNode.textContent = 'Đã hoàn thành mục tiêu hôm nay';
+      titleTextNode.textContent = L.allDone;
     }
+  }
+  if (dueLinkNode) {
+    dueLinkNode.hidden = dueTotal === 0;
+    dueLinkNode.textContent = DASHBOARD_TITLE_LABELS.dueCards(dueTotal);
+    dueLinkNode.title = DASHBOARD_TITLE_LABELS.dueLinkHint(dueTotal);
+    dueLinkNode.setAttribute('aria-label', DASHBOARD_TITLE_LABELS.dueLinkHint(dueTotal));
   }
 
   if (dueTotal > 0 && remainingNew > 0) {
