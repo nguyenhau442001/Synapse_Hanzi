@@ -63,6 +63,10 @@ def test_hsk4_sentence_entries_content_validity():
             sol_c = sorted(clean_regex.sub('', sol))
             assert sol_c == tokens_chars, f"{item['id']} acceptable solution {sol} has mismatched characters"
 
+    by_id = {item["id"]: item for item in data}
+    for strict_id in ("H41001_86", "H41003_93", "H41004_89"):
+        assert by_id[strict_id]["acceptable_solutions"] == [by_id[strict_id]["solution_zh"]]
+
 def test_index_html_sentence_game_ui_integration():
     with open(INDEX_PATH, "r", encoding="utf-8") as f:
         content = f.read()
