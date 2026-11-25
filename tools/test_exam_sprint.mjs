@@ -14,6 +14,7 @@ import {
   updateSprintConfig,
   sprintConfig,
   createDefaultSprintConfig,
+  migrateSprintConfig,
 } from '../src/islands/SprintState.js';
 
 async function runTests() {
@@ -107,6 +108,14 @@ async function runTests() {
   const mixedNoon = buildSlotQueue('noon', mixedPool, new Map(), { noonNewCardKeys: [] }, { dailyNewQuota: 4 }, new Date());
   assert.deepEqual(mixedNoon.map((w) => w.hanzi), ['保证', '表示']);
   assert.deepEqual(createDefaultSprintConfig().targetLevels, ['hsk30_4']);
+  const allLevels = ['hsk30_1', 'hsk30_2', 'hsk30_3', 'hsk30_4'];
+  assert.deepEqual(migrateSprintConfig({ targetLevels: allLevels }).targetLevels, ['hsk30_4']);
+  assert.deepEqual(migrateSprintConfig({ targetLevels: ['hsk30_3', 'hsk30_4'] }).targetLevels, ['hsk30_3', 'hsk30_4']);
+  assert.deepEqual(migrateSprintConfig({ schemaVersion: 2, targetLevels: allLevels }).targetLevels, allLevels);
+  const dueAt = new Date(0).toISOString();
+  const dueMap = new Map(mixedPool.map((w) => [HanziMindDB.getCardKey(w.level, 'zh2vi', w.id), { due: dueAt, reps: 1 }]));
+  const mixedMorning = buildSlotQueue('morning', mixedPool, dueMap, {}, { dailyNewQuota: 4 }, new Date());
+  assert.equal(mixedMorning[0].level, 'hsk30_4');
 
   // 5. Test Reverse SRS Quiz builder & preferences persistence
   const quiz = buildReverseSrsQuiz(pool, cardMap, 3);

@@ -13,6 +13,8 @@ export const SPRINT_LEVEL_OPTIONS = [
 ];
 // Default to the exam's target level only (the highest option); lower levels are opt-in.
 export const DEFAULT_SPRINT_LEVELS = [SPRINT_LEVEL_OPTIONS[SPRINT_LEVEL_OPTIONS.length - 1].id];
+// Bump when a saved SprintConfig needs a one-time migration on load.
+export const SPRINT_CONFIG_SCHEMA_VERSION = 2;
 export const DEFAULT_DAILY_NEW_QUOTA = 70;
 export const MIN_DAILY_NEW_QUOTA = 30;
 export const MAX_DAILY_NEW_QUOTA = 120;

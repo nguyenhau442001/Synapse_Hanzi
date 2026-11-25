@@ -18,6 +18,7 @@ import {
   WORD_FAMILY_PREVIEW_LIMIT,
   CONFUSABLE_PINYIN_PATTERNS,
   REVERSE_SRS_QUIZ_COUNT,
+  SPRINT_CONFIG_SCHEMA_VERSION,
 } from './SprintConstants.js';
 
 const DEFAULT_DIRECTION = 'zh2vi';
@@ -40,6 +41,7 @@ export function getLocalDateKey(date = new Date()) {
  */
 export function createDefaultSprintConfig() {
   return {
+    schemaVersion: SPRINT_CONFIG_SCHEMA_VERSION,
     examDate: '',
     targetLevels: [...DEFAULT_SPRINT_LEVELS],
     dailyNewQuota: DEFAULT_DAILY_NEW_QUOTA,
@@ -238,7 +240,8 @@ export function buildSlotQueue(slotId, vocabPool, cardMap, dailyLog, config, now
         else dueStandard.push(enriched);
       }
     }
-    return [...dueMistakes, ...dueStandard];
+    const byHardestLevel = (a, b) => (LEVEL_RANK.get(b.level) ?? -1) - (LEVEL_RANK.get(a.level) ?? -1);
+    return [...dueMistakes.sort(byHardestLevel), ...dueStandard.sort(byHardestLevel)];
   }
 
   const quota = Number(config?.dailyNewQuota) || DEFAULT_DAILY_NEW_QUOTA;
@@ -332,6 +335,26 @@ export function buildReverseSrsQuiz(vocabPool, cardMap, count = REVERSE_SRS_QUIZ
 }
 
 /**
+ * Upgrades a saved SprintConfig. Configs saved before schema v2 stored the old
+ * "all levels" default, which flooded HSK 4 sprints with HSK 1 words; reset
+ * that untouched default to the new target-level-only default once.
+ * @param {Object} saved
+ * @returns {Object}
+ */
+export function migrateSprintConfig(saved) {
+  const merged = { ...createDefaultSprintConfig(), ...saved };
+  if ((saved?.schemaVersion || 0) < SPRINT_CONFIG_SCHEMA_VERSION) {
+    const allLevelIds = SPRINT_LEVEL_OPTIONS.map((opt) => opt.id);
+    const savedLevels = Array.isArray(saved?.targetLevels) ? saved.targetLevels : [];
+    const isOldDefault = savedLevels.length === allLevelIds.length
+      && allLevelIds.every((id) => savedLevels.includes(id));
+    if (isOldDefault) merged.targetLevels = [...DEFAULT_SPRINT_LEVELS];
+    merged.schemaVersion = SPRINT_CONFIG_SCHEMA_VERSION;
+  }
+  return merged;
+}
+
+/**
  * Loads SprintConfig and today's SprintDailyProgress from IndexedDB preferences.
  * @param {Object} [database]
  */
@@ -342,7 +365,7 @@ export async function loadSprintPreferences(database = db) {
     database.preferences.get(SPRINT_PREF_DAILY_KEY),
   ]);
   if (cfgRow?.value) {
-    sprintConfig.value = { ...createDefaultSprintConfig(), ...cfgRow.value };
+    sprintConfig.value = migrateSprintConfig(cfgRow.value);
   }
   const todayKey = getLocalDateKey();
   if (logRow?.value && logRow.value.date === todayKey) {
