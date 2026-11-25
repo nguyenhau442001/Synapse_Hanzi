@@ -16,6 +16,7 @@ import { HskErrorNotebook, HSK30_ERROR_NOTEBOOK_KEY } from './HskErrorNotebook.j
 import { SpeedPinyinDrill } from './SpeedPinyinDrill.jsx';
 import { ReadingSentenceBuilder } from './ReadingSentenceBuilder.jsx';
 import { CbtSimulatorShell } from './CbtSimulatorShell.jsx';
+import { AiTutorPromptGuide } from './AiTutorPromptGuide.jsx';
 import { EXAM_UI_LABELS } from './ExamConstants.js';
 
 export const HSK30_EXAM_STORAGE_KEY = 'hsk30_exam_history_v1';
@@ -826,6 +827,9 @@ export function Hsk30ExamComponent() {
     if (hubMode === 'reading_builder') {
       return <ReadingSentenceBuilder onBack={() => setHubMode('cbt')} />;
     }
+    if (hubMode === 'ai_live_tutor') {
+      return <AiTutorPromptGuide onBack={() => setHubMode('cbt')} />;
+    }
     if (hubMode === 'mock_simulator') {
       return (
         <CbtSimulatorShell
@@ -966,6 +970,14 @@ export function Hsk30ExamComponent() {
               }}
             >
               {EXAM_UI_LABELS.hubTabs.mockSimulator}
+            </button>
+
+            <button
+              type="button"
+              class="exam-pill-btn"
+              onClick={() => setHubMode('ai_live_tutor')}
+            >
+              {EXAM_UI_LABELS.hubTabs.aiLiveTutor}
             </button>
           </div>
 

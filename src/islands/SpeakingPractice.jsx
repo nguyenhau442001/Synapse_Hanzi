@@ -27,6 +27,7 @@ import { speakChinese, stopSpeaking, loadGlobalHanziAudioMap, resolvePrebuiltAud
 import { ensureCaptModelReady, evaluatePronunciationWithOnnx } from './OnnxCaptEngine.js';
 import { isCaptModelCached } from './SpeechModelManager.js';
 import { NewbieToneGuide } from './NewbieToneGuide.jsx';
+import { AiTutorPromptGuide } from './AiTutorPromptGuide.jsx';
 import {
   MicIcon,
   InfoIcon,
@@ -49,6 +50,7 @@ export const SPEAKING_LABELS = Object.freeze({
   TAB_VOCAB_PRACTICE: 'Luyện Phát Âm Từ Vựng',
   TAB_MINIMAL_PAIRS: 'Cặp Âm Dễ Nhầm',
   TAB_NEWBIE_GUIDE: 'Cẩm Nang 4 Thanh Điệu',
+  TAB_AI_LIVE_TUTOR: 'Mẹo Luyện Nói AI Live',
   VISUALIZER_TITLE: 'Đường lượn thanh điệu',
   LEGEND_TARGET: 'Giai điệu mẫu',
   LEGEND_USER: 'Giọng của bạn',
@@ -925,12 +927,21 @@ function SpeakingPracticeApp() {
           >
             {SPEAKING_LABELS.TAB_NEWBIE_GUIDE}
           </button>
+          <button
+            type="button"
+            class={`speaking-mode-btn ${activeTab === 'aiLiveTutor' ? 'active' : ''}`}
+            onClick={() => setActiveTab('aiLiveTutor')}
+          >
+            {SPEAKING_LABELS.TAB_AI_LIVE_TUTOR}
+          </button>
         </div>
       </header>
 
-      {/* Main Study Arena or Newbie Tone Handbook */}
+      {/* Main Study Arena, Newbie Tone Handbook, or AI Live Tutor Guide */}
       {activeTab === 'newbieGuide' ? (
         <NewbieToneGuide onPracticeWord={handlePracticeNewbieWord} />
+      ) : activeTab === 'aiLiveTutor' ? (
+        <AiTutorPromptGuide />
       ) : (
         <div class="speaking-arena">
         {/* Left Column: Word Card & Visual Pitch Canvas */}

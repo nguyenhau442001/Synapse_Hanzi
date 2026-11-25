@@ -38,6 +38,7 @@ export const EXAM_UI_LABELS = {
     speedDrill: '⚡ GĐ 1: Phản xạ & Đồng âm',
     readingBuilder: '📖 GĐ 2: Đọc hiểu & Nối câu',
     mockSimulator: '🖥️ GĐ 3: Thi thử 105 phút',
+    aiLiveTutor: '🎙️ Mẹo AI Live (HSK 4 / HSKK)',
   },
   cbt: {
     strictLockBadge: '🔒 Đã khóa từ điển & gợi ý',

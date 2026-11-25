@@ -1729,3 +1729,248 @@
   background: var(--bg-elevated);
   border-color: var(--border-subtle);
 }
+
+/* ==========================================================================
+   AI Live Tutor Prompt Guide (Google AI Studio / Gemini 3.8 Live)
+   ========================================================================== */
+.ai-tutor-guide {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0.5rem 0 2rem;
+}
+
+.ai-tutor-back-row {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ai-tutor-hero {
+  background: var(--bg-surface, #ffffff);
+  border: 1px solid var(--border-subtle, #e5e7eb);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.ai-tutor-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  align-self: flex-start;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: rgba(194, 101, 74, 0.12);
+  color: var(--accent, #c2654a);
+}
+
+.ai-tutor-title {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary, #1f2937);
+}
+
+.ai-tutor-subtitle {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text-secondary, #4b5563);
+}
+
+.ai-tutor-meta-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.ai-tutor-meta-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background: var(--bg-elevated, #f3f4f6);
+  color: var(--text-secondary, #4b5563);
+  border: 1px solid var(--border-subtle, #e5e7eb);
+}
+
+.ai-tutor-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.ai-tutor-copy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.65rem 1.15rem;
+  border-radius: 0.75rem;
+  border: none;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--accent, #c2654a);
+  color: #ffffff;
+  transition: transform 0.15s ease, opacity 0.15s ease, background 0.15s ease;
+}
+
+.ai-tutor-copy-btn:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.ai-tutor-copy-btn.is-copied {
+  background: #16a34a;
+}
+
+.ai-tutor-copy-btn-sm {
+  padding: 0.4rem 0.85rem;
+  font-size: 0.82rem;
+}
+
+.ai-tutor-studio-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.65rem 1.1rem;
+  border-radius: 0.75rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none;
+  background: var(--bg-elevated, #f3f4f6);
+  color: var(--text-primary, #1f2937);
+  border: 1px solid var(--border-subtle, #d1d5db);
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.ai-tutor-studio-link:hover {
+  border-color: var(--accent, #c2654a);
+  transform: translateY(-1px);
+}
+
+.ai-tutor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.ai-tutor-card {
+  background: var(--bg-surface, #ffffff);
+  border: 1px solid var(--border-subtle, #e5e7eb);
+  border-radius: 1rem;
+  padding: 1.25rem;
+}
+
+.ai-tutor-card-title {
+  margin: 0 0 0.85rem;
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--text-primary, #1f2937);
+}
+
+.ai-tutor-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.ai-tutor-step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.ai-tutor-step-num {
+  flex-shrink: 0;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.82rem;
+  font-weight: 700;
+  background: rgba(194, 101, 74, 0.15);
+  color: var(--accent, #c2654a);
+}
+
+.ai-tutor-step-item strong,
+.ai-tutor-mode-item strong {
+  display: block;
+  font-size: 0.92rem;
+  color: var(--text-primary, #1f2937);
+  margin-bottom: 0.15rem;
+}
+
+.ai-tutor-step-item p,
+.ai-tutor-mode-item p {
+  margin: 0;
+  font-size: 0.86rem;
+  line-height: 1.45;
+  color: var(--text-secondary, #4b5563);
+}
+
+.ai-tutor-modes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.ai-tutor-rules-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-secondary, #4b5563);
+}
+
+.ai-tutor-prompt-box {
+  background: var(--bg-surface, #ffffff);
+  border: 1px solid var(--border-subtle, #e5e7eb);
+  border-radius: 1rem;
+  padding: 1.25rem;
+}
+
+.ai-tutor-prompt-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+
+.ai-tutor-prompt-header .ai-tutor-card-title {
+  margin: 0;
+}
+
+.ai-tutor-prompt-pre {
+  margin: 0;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background: var(--bg-elevated, #f8fafc);
+  border: 1px solid var(--border-subtle, #e5e7eb);
+  font-family: inherit;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--text-primary, #1f2937);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
