@@ -5423,8 +5423,8 @@ body.flashcard-study-mode .card-illustration-svg svg[data-style="editorial"] { f
 
 /* --- Four FSRS grade buttons (Quên / Khó / Được / Dễ) ---------------------
    Last in the study-screen cascade on purpose: replaces the older two-button
-   sizing rules at every breakpoint. Colors: "again" leads to Cần ôn (due),
-   "good"/"easy" lead to Đã nhớ (known), "hard" stays neutral. */
+   sizing rules at every breakpoint. Uniform tinted pigment across all four
+   grades: "again" (amber), "hard" (warm bronze), "good" (olive), "easy" (jade). */
 .rating-btn--hard,
 .rating-btn--easy {
   background-color: var(--rating-bg);
@@ -5432,14 +5432,32 @@ body.flashcard-study-mode .card-illustration-svg svg[data-style="editorial"] { f
   border: 1.5px solid var(--rating-border);
 }
 .rating-btn--hard {
-  --rating-color: var(--text-primary);
-  --rating-bg: transparent;
-  --rating-border: var(--border, rgba(41, 43, 48, 0.16));
+  --rating-color: var(--warning-text);
+  --rating-bg: color-mix(in srgb, var(--warning-text) 8%, transparent);
+  --rating-border: color-mix(in srgb, var(--warning-text) 32%, transparent);
 }
 .rating-btn--easy {
-  --rating-color: var(--state-known);
-  --rating-bg: var(--state-known-bg);
-  --rating-border: var(--state-known-border);
+  --rating-color: var(--success-text);
+  --rating-bg: color-mix(in srgb, var(--success-text) 8%, transparent);
+  --rating-border: color-mix(in srgb, var(--success-text) 32%, transparent);
+}
+:root[data-theme="dark"] .rating-btn--hard {
+  --rating-bg: color-mix(in srgb, var(--warning-text) 14%, transparent);
+  --rating-border: color-mix(in srgb, var(--warning-text) 40%, transparent);
+}
+:root[data-theme="dark"] .rating-btn--easy {
+  --rating-bg: color-mix(in srgb, var(--success-text) 14%, transparent);
+  --rating-border: color-mix(in srgb, var(--success-text) 40%, transparent);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .rating-btn--hard {
+    --rating-bg: color-mix(in srgb, var(--warning-text) 14%, transparent);
+    --rating-border: color-mix(in srgb, var(--warning-text) 40%, transparent);
+  }
+  :root:not([data-theme="light"]) .rating-btn--easy {
+    --rating-bg: color-mix(in srgb, var(--success-text) 14%, transparent);
+    --rating-border: color-mix(in srgb, var(--success-text) 40%, transparent);
+  }
 }
 .rating-btn--hard .rating-label,
 .rating-btn--easy .rating-label { color: var(--rating-color); }
