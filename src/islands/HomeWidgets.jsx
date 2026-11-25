@@ -8,6 +8,8 @@ import { signal } from '@preact/signals';
 import { onDomReady } from './domReady';
 import { examCountdown, sprintConfig, loadSprintPreferences } from './SprintState.js';
 import { db } from './db.js';
+import { AudioIcon, UI_LABELS } from './Icons.jsx';
+import { DEFAULT_EXAMPLE_SPEECH_SPEED } from './AppState.js';
 
 /* global LEVELS, LEVELS_HSK30, SRS, SPEECH_RATE, homeWidgetsDirty -- classic-script globals */
 
@@ -22,6 +24,7 @@ const HOME_WEEKDAY_LONG = ['Chủ nhật', 'Thứ 2', 'Thứ 3', 'Thứ 4', 'Th�
 const HOME_HEATMAP_WEEKS = 12;
 const HOME_FORECAST_BAR_HEIGHT = 42;
 const HOME_FORGOTTEN_LIMIT = 25;
+const EXAMPLE_AUDIO_ICON_SIZE = 16;
 
 let renderSeq = 0;
 const homeVocabCache = {};
@@ -132,6 +135,10 @@ function RichText({ html }) {
   });
 }
 
+function stripExampleTags(html) {
+  return String(html || '').replace(/<[^>]*>/g, '').trim();
+}
+
 const SpeakerIcon = () => (
   <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
     <path d="M11 5 6 9H3v6h3l5 4V5z" /><path d="M15.5 8.5a5 5 0 0 1 0 7" /><path d="M18.5 5.5a9 9 0 0 1 0 13" />
@@ -170,7 +177,28 @@ function WordOfDay() {
       </div>
       {word.example_zh && (
         <div class="hw-example">
-          <p class="hw-example-zh hw-cjk" lang="zh-CN"><RichText html={word.example_zh} /></p>
+          <div class="hw-example-zh-row">
+            <p
+              class="hw-example-zh hw-cjk"
+              lang="zh-CN"
+            >
+              <RichText html={word.example_zh} />
+            </p>
+            <button
+              type="button"
+              class="hw-example-sound-btn speech-btn"
+              aria-label={UI_LABELS.PLAY_EXAMPLE}
+              title={UI_LABELS.PLAY_EXAMPLE}
+              onClick={(e) => {
+                const rate = typeof window.exampleSpeechSpeed === 'number'
+                  ? window.exampleSpeechSpeed
+                  : DEFAULT_EXAMPLE_SPEECH_SPEED;
+                window.speakText(stripExampleTags(word.example_zh), e.currentTarget, rate);
+              }}
+            >
+              <AudioIcon size={EXAMPLE_AUDIO_ICON_SIZE} />
+            </button>
+          </div>
           {word.example_vi && <p class="hw-example-vi"><RichText html={word.example_vi} /></p>}
         </div>
       )}

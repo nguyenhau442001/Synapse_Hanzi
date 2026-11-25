@@ -34,6 +34,7 @@ export const UI_LABELS = Object.freeze({
   CLOSE_EXPLANATION: 'Đóng bảng giải thích (Esc)',
   CLOSE_CHART: 'Đóng biểu đồ (Esc)',
   CLOSE_HELP: 'Đóng bảng trợ giúp (Esc)',
+  PLAY_EXAMPLE: 'Nghe câu ví dụ',
 });
 
 /**

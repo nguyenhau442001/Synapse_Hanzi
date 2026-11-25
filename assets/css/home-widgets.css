@@ -116,6 +116,33 @@ body:not(.home-screen) .home-widgets { display: none; }
   background: var(--surface-subtle); border-radius: 12px;
 }
 .hw-example p { margin: 0; }
+.hw-example-zh-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.hw-example-sound-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+}
+.hw-example-sound-btn:hover,
+.hw-example-sound-btn.speaking {
+  color: var(--accent-text);
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 10%, var(--surface));
+}
 .hw-example-zh { font-size: 15px; line-height: 1.5; }
 .hw-example-vi { margin-top: 4px !important; color: var(--text-secondary); font-size: 12.5px; line-height: 1.45; }
 .hw-example u { text-decoration-color: var(--accent); text-underline-offset: 3px; }
