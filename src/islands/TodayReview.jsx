@@ -3,8 +3,10 @@
 // needs them while the classic scripts are still loading.)
 // Preact port of the former assets/js/due-review.js with the same markup.
 import { render } from 'preact';
+import { useEffect } from 'preact/hooks';
 import { signal } from '@preact/signals';
 import { AudioIcon, ArrowLeftIcon, ArrowRightIcon, RotateIcon } from './Icons.jsx';
+import { initCardSwipe } from './CardInteractions.jsx';
 
 /* global LEVELS, SRS, RATING_KEYS, SPEECH_RATE, SpaRouter -- classic-script globals */
 
@@ -188,8 +190,34 @@ function ReviewCard() {
   const lapses = (item.card && item.card.lapses) ? item.card.lapses : 0;
   const { word } = item;
 
+  useEffect(() => {
+    initCardSwipe({
+      cardId: 'todayActiveCard',
+      knownBadgeId: 'todaySwipeBadgeKnown',
+      unknownBadgeId: 'todaySwipeBadgeUnknown',
+      hasCards: () => phase.value === 'card' && index.value < queue.value.length,
+      flip: revealTodayReview,
+      markKnown: () => {
+        if (!revealed.value) revealTodayReview();
+        rateTodayReview('good');
+      },
+      markUnknown: () => {
+        if (!revealed.value) revealTodayReview();
+        rateTodayReview('again');
+      },
+    });
+  }, []);
+
   return (
-    <article class={isRevealed ? 'today-review-card is-revealed' : 'today-review-card'} id="todayActiveCard" onClick={handleTodayCardClick} role="region" aria-label="Thẻ từ vựng">
+    <article
+      class={isRevealed ? 'today-review-card is-revealed' : 'today-review-card'}
+      id="todayActiveCard"
+      onClick={handleTodayCardClick}
+      role="region"
+      aria-label="Thẻ từ vựng"
+    >
+      <div class="swipe-badge swipe-badge--known" id="todaySwipeBadgeKnown">✓ Được</div>{' '}
+      <div class="swipe-badge swipe-badge--unknown" id="todaySwipeBadgeUnknown">✗ Quên</div>{' '}
       <div class="today-card-header">
         <span class={`today-level-badge lvl-${levelKey}`}>{levelData.label}</span>{' '}
         {lapses > 0 && <span class="today-lapse-pill" title={`Từ này đã quên hoặc nhầm ${lapses} lần`}>{`⚠️ Hay nhầm ${lapses}×`}</span>}

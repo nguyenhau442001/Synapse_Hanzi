@@ -307,16 +307,15 @@ export function initSwipe() {
     hasCards: () => (typeof filteredOrder !== 'undefined' ? filteredOrder.length > 0 : false),
     interactiveSelector: FLASHCARD_INTERACTIVE_SELECTOR,
     flip,
-    // Review mode grades only after the answer is revealed; browse mode swipes navigate.
-    canSwipe: () => window.studyMode === 'browse'
-      || (typeof window.isCardRevealed === 'function' && window.isCardRevealed()),
     markKnown: () => {
       if (window.studyMode === 'browse') { window.prevCard(); return; }
+      if (typeof window.isCardRevealed === 'function' && !window.isCardRevealed()) flip();
       if (typeof markKnown === 'function') markKnown();
       else if (typeof window.markKnown === 'function') window.markKnown();
     },
     markUnknown: () => {
       if (window.studyMode === 'browse') { window.nextCard(); return; }
+      if (typeof window.isCardRevealed === 'function' && !window.isCardRevealed()) flip();
       if (typeof markUnknown === 'function') markUnknown();
       else if (typeof window.markUnknown === 'function') window.markUnknown();
     },

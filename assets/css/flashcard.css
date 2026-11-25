@@ -1362,6 +1362,7 @@ body.hide-illustrations .card .card-visual-col {
 }
 
 .today-review-card {
+  position: relative;
   width: 100%;
   min-height: 420px;
   background: var(--card-bg);
