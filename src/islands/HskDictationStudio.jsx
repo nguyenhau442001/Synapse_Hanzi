@@ -6,6 +6,7 @@
 import { h } from 'preact';
 import { useState, useEffect, useRef } from 'preact/hooks';
 import { cleanChineseCharacters } from './ToneSandhi.js';
+import { extractListeningItemsFromExam } from './ExamSchemaAdapter.js';
 
 const DICTATION_LEVEL_FILES = {
   hsk1: {
@@ -128,33 +129,7 @@ export function HskDictationStudio({ onBack }) {
     fetch(levelConfig.dataUrl)
       .then((res) => res.json())
       .then((data) => {
-        const extracted = [];
-        if (data && Array.isArray(data.sections)) {
-          data.sections.forEach((sec) => {
-            if (sec.id === 'listening' || (sec.name && sec.name.includes('听力'))) {
-              if (Array.isArray(sec.parts)) {
-                sec.parts.forEach((p) => {
-                  if (Array.isArray(p.questions)) {
-                    p.questions.forEach((q) => {
-                      const text = q.audio_text || q.prompt_zh || (q.content && q.content.text);
-                      if (q.audio_clip && text && text.trim().length > 0) {
-                        extracted.push({
-                          id: `${data.id}_Q${q.number}`,
-                          level: selectedLevel,
-                          questionNumber: q.number,
-                          audioClip: q.audio_clip,
-                          targetZh: text.trim(),
-                          pinyin: q.pinyin || q.audio_pinyin || '',
-                          meaningVi: q.meaning_vi || q.explanation_vi || q.explanation || ''
-                        });
-                      }
-                    });
-                  }
-                });
-              }
-            }
-          });
-        }
+        const extracted = extractListeningItemsFromExam(data, selectedLevel, { listeningOnly: true });
         setDictationItems(extracted);
         setCurrentIndex(0);
         setIsLoading(false);

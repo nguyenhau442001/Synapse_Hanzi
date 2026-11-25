@@ -9,6 +9,7 @@ import {
   normalizeExamPayload,
   gradeQuestion,
   buildWritingExport,
+  extractListeningItemsFromExam,
 } from '../src/islands/ExamSchemaAdapter.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -92,5 +93,50 @@ assert.ok(normalizedLegacy.sections.listening.questions.length > 0);
 assert.ok(normalizedLegacy.sections.reading.questions.length > 0);
 assert.strictEqual(normalizedLegacy.sections.listening.questions[0].type, 'true_false');
 assert.strictEqual(normalizedLegacy.sections.listening.questions[0].audioUrl, 'assets/audio/exams/hsk30/level4/h41001_l01.mp3');
+
+// 3. Test extractListeningItemsFromExam across HSK 1-4 and HSKK Primary
+const levelExpectations = [
+  { key: 'hsk1', file: 'database/exams/hsk30/level1/hsk30_l1_specimen01.json', minCount: 20 },
+  { key: 'hsk2', file: 'database/exams/hsk30/level2/hsk30_l2_specimen01.json', minCount: 35 },
+  { key: 'hsk3', file: 'database/exams/hsk30/level3/hsk30_l3_specimen01.json', minCount: 40 },
+  { key: 'hsk4', file: 'database/exams/hsk30/level4/hsk30_l4_specimen01.json', minCount: 45 },
+];
+
+for (const { key, file, minCount } of levelExpectations) {
+  const raw = JSON.parse(fs.readFileSync(path.join(rootDir, file), 'utf-8'));
+  const items = extractListeningItemsFromExam(raw, key, { listeningOnly: true });
+  assert.ok(items.length >= minCount, `${key} expected >= ${minCount} items, got ${items.length}`);
+  for (const item of items) {
+    assert.ok(item.audioClip, `${key} item ${item.id} missing audioClip`);
+    assert.ok(item.targetZh && !item.targetZh.includes('★'), `${key} item ${item.id} invalid targetZh: ${item.targetZh}`);
+  }
+}
+
+// HSK 4 Part 1 uses transcript.full_zh and transcript.full_vi
+const hsk4Items = extractListeningItemsFromExam(legacyRaw, 'hsk4', { listeningOnly: true });
+assert.ok(hsk4Items[0].targetZh.includes('树林里走走'), 'HSK 4 Q1 should extract transcript.full_zh');
+assert.ok(hsk4Items[0].meaningVi.includes('rừng cây'), 'HSK 4 Q1 should extract transcript.full_vi');
+
+// HSKK Primary has repeat/answer_short/answer_open sections instead of listening
+const hskkRaw = JSON.parse(fs.readFileSync(path.join(rootDir, 'database/exams/hskk/primary/hskk_primary_specimen01.json'), 'utf-8'));
+const hskkItems = extractListeningItemsFromExam(hskkRaw, 'hskk_primary', { listeningOnly: false });
+assert.strictEqual(hskkItems.length, 27);
+
+// Legacy array + parts format compatibility
+const legacyArraySample = {
+  id: 'legacy_arr',
+  sections: [
+    {
+      id: 'listening',
+      parts: [
+        { questions: [{ number: 1, audio_clip: 'a.mp3', content: { text: '你好' }, explanation_vi: 'Xin chào' }] },
+      ],
+    },
+  ],
+};
+const legacyArrayItems = extractListeningItemsFromExam(legacyArraySample, 'hsk1');
+assert.strictEqual(legacyArrayItems.length, 1);
+assert.strictEqual(legacyArrayItems[0].targetZh, '你好');
+assert.strictEqual(legacyArrayItems[0].meaningVi, 'Xin chào');
 
 console.log('✅ PASSED: ExamSchemaAdapter normalized both new spec and legacy CTI papers.');

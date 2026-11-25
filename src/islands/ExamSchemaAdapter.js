@@ -266,3 +266,97 @@ export function buildWritingExport(exam, answers) {
 
   return { jsonPayload, markdown: mdLines.join('\n') };
 }
+
+/**
+ * Extract the spoken Chinese text for listening/dictation/shadowing from a raw question.
+ * Priority: audio_text -> transcript.full_zh (or string transcript) -> prompt_zh (before ' ★ ') -> content.text.
+ * @param {Object} q
+ * @returns {string}
+ */
+function extractSpokenText(q) {
+  if (!q) return '';
+  if (typeof q.audio_text === 'string' && q.audio_text.trim()) {
+    return q.audio_text.trim();
+  }
+  if (q.transcript) {
+    if (typeof q.transcript === 'string' && q.transcript.trim()) {
+      return q.transcript.trim();
+    }
+    if (typeof q.transcript.full_zh === 'string' && q.transcript.full_zh.trim()) {
+      return q.transcript.full_zh.trim();
+    }
+  }
+  if (typeof q.prompt_zh === 'string' && q.prompt_zh.trim()) {
+    const rawPrompt = q.prompt_zh.trim();
+    const sepIdx = rawPrompt.indexOf('★');
+    return (sepIdx !== -1 ? rawPrompt.slice(0, sepIdx) : rawPrompt).trim();
+  }
+  if (q.content && typeof q.content.text === 'string' && q.content.text.trim()) {
+    return q.content.text.trim();
+  }
+  return '';
+}
+
+/**
+ * Collect raw question objects from a section supporting both direct `questions` and legacy `parts[].questions`.
+ * @param {Object|Array} sec
+ * @returns {Array<Object>}
+ */
+function collectSectionQuestions(sec) {
+  if (!sec) return [];
+  if (Array.isArray(sec)) return sec;
+  if (Array.isArray(sec.questions)) return sec.questions;
+  if (Array.isArray(sec.parts)) {
+    return sec.parts.flatMap((part) => (Array.isArray(part?.questions) ? part.questions : []));
+  }
+  return [];
+}
+
+/**
+ * Extract listening practice items from an exam JSON payload for Dictation and Shadowing studios.
+ * Supports both object-keyed `sections` (HSK 3.0 & HSKK) and legacy array `sections` with `parts`.
+ * @param {Object} data
+ * @param {string} levelKey
+ * @param {{ listeningOnly?: boolean }} [options]
+ * @returns {Array<{ id: string, level: string, questionNumber: number, audioClip: string, targetZh: string, pinyin: string, meaningVi: string }>}
+ */
+export function extractListeningItemsFromExam(data, levelKey, { listeningOnly = true } = {}) {
+  if (!data || !data.sections) return [];
+
+  let targetSections = [];
+  if (Array.isArray(data.sections)) {
+    targetSections = listeningOnly
+      ? data.sections.filter((sec) => sec?.id === 'listening' || (sec?.name && sec.name.includes('听力')))
+      : data.sections;
+  } else if (typeof data.sections === 'object') {
+    if (listeningOnly && data.sections.listening) {
+      targetSections = [data.sections.listening];
+    } else if (!listeningOnly || !data.sections.listening) {
+      targetSections = Object.values(data.sections);
+    }
+  }
+
+  const items = [];
+  const examId = data.id || data.exam_id || levelKey;
+
+  for (const sec of targetSections) {
+    const questions = collectSectionQuestions(sec);
+    for (const q of questions) {
+      const targetZh = extractSpokenText(q);
+      const audioClip = q?.audio_clip || q?.audio_url || '';
+      if (!audioClip || !targetZh) continue;
+
+      items.push({
+        id: `${examId}_Q${q.number}`,
+        level: levelKey,
+        questionNumber: q.number,
+        audioClip,
+        targetZh,
+        pinyin: q.pinyin || q.audio_pinyin || '',
+        meaningVi: q.meaning_vi || q.transcript?.full_vi || q.explanation_vi || q.explanation || '',
+      });
+    }
+  }
+
+  return items;
+}

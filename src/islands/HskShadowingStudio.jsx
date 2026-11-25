@@ -8,6 +8,7 @@ import { useState, useEffect, useRef } from 'preact/hooks';
 import { LivePitchTracker, frequencyToChaoScale } from './PitchDetector.js';
 import { calculateDtwDistance, applyMedianFilter } from './ToneScorer.js';
 import { LocalSpeechAI } from './LocalSpeechAI.js';
+import { extractListeningItemsFromExam } from './ExamSchemaAdapter.js';
 
 const SHADOWING_LEVEL_FILES = {
   hsk1: {
@@ -84,30 +85,9 @@ export function HskShadowingStudio({ onBack }) {
     fetch(cfg.dataUrl)
       .then((res) => res.json())
       .then((data) => {
-        const items = [];
-        if (data && Array.isArray(data.sections)) {
-          data.sections.forEach((sec) => {
-            if (Array.isArray(sec.parts)) {
-              sec.parts.forEach((p) => {
-                if (Array.isArray(p.questions)) {
-                  p.questions.forEach((q) => {
-                    const text = q.audio_text || q.prompt_zh || (q.content && q.content.text);
-                    if (q.audio_clip && text && text.trim().length > 0) {
-                      items.push({
-                        id: `${data.id}_Q${q.number}`,
-                        number: q.number,
-                        textZh: text.trim(),
-                        pinyin: q.pinyin || q.audio_pinyin || '',
-                        meaningVi: q.meaning_vi || q.explanation_vi || q.explanation || '',
-                        audioClip: q.audio_clip
-                      });
-                    }
-                  });
-                }
-              });
-            }
-          });
-        }
+        const items = extractListeningItemsFromExam(data, selectedLevel, {
+          listeningOnly: selectedLevel !== 'hskk_primary',
+        });
         setShadowingItems(items);
         setCurrentIndex(0);
         setIsLoading(false);
@@ -383,7 +363,7 @@ export function HskShadowingStudio({ onBack }) {
             {/* Sentence Prompt Box */}
             <div style="background: var(--exam-surface-sunken, #f8fafc); border: 1px solid var(--exam-border, #e2e8f0); border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 1.5rem; text-align: center;">
               <h2 style="font-family: var(--font-zh, 'Noto Serif SC', SimSun, serif); font-size: 2rem; font-weight: 700; color: var(--exam-text-strong, #0f172a); margin: 0 0 0.5rem 0; line-height: 1.4;">
-                {currentItem.textZh}
+                {currentItem.targetZh}
               </h2>
               {currentItem.pinyin && (
                 <p style="font-size: 1.15rem; color: var(--exam-success-text, #0d9488); font-weight: 600; margin: 0 0 0.5rem 0;">
