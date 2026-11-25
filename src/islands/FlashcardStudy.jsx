@@ -162,7 +162,7 @@ function buildCardArea() {
         <kbd class="reveal-key-hint">Space</kbd>
       </button>
       <div class="rating-row" id="ratingRow" hidden>
-        ${ratingButtonsHtml('rateCurrentCard', 'preview-')}
+        ${ratingButtonsHtml('rateCurrentCard')}
       </div>
     </div>
 
@@ -648,7 +648,7 @@ const RATING_KEYS = {
 };
 
 // Shared by the level deck and "Ôn hôm nay".
-function ratingButtonsHtml(handlerName, previewIdPrefix, previews) {
+function ratingButtonsHtml(handlerName, previews) {
   return RATING_BUTTONS.map(button => {
     const preview = previews ? previews[button.rating] : null;
     const intervalText = formatSrsInterval(preview, button.interval);
@@ -658,8 +658,6 @@ function ratingButtonsHtml(handlerName, previewIdPrefix, previews) {
       onclick="${handlerName}('${button.rating}')" aria-keyshortcuts="${button.key}"
       title="${titleText}">
       <span class="rating-label">${button.label}</span>
-      <span class="rating-interval" id="${previewIdPrefix}${button.rating}">${intervalText}</span>
-      <kbd class="rating-kbd-badge">${button.key}</kbd>
     </button>`;
   }).join('');
 }

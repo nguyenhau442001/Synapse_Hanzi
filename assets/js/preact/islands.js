@@ -438,7 +438,7 @@ Khi bắt đầu, hãy chào bằng tiếng Việt thân thiện và hỏi bạn
         <kbd class="reveal-key-hint">Space</kbd>
       </button>
       <div class="rating-row" id="ratingRow" hidden>
-        ${qk(`rateCurrentCard`,`preview-`)}
+        ${qk(`rateCurrentCard`)}
       </div>
     </div>
 
@@ -541,13 +541,11 @@ Khi bắt đầu, hãy chào bằng tiếng Việt thân thiện và hỏi bạn
     <div class="study-review-counters" aria-live="polite">
       <span class="study-review-counter study-review-counter--due">Hôm nay cần ôn: <strong>${e}</strong></span>
       <span class="study-review-counter study-review-counter--new" title="Tối đa ${n} thẻ mới mỗi ngày (đổi ở Mục tiêu hằng ngày trên trang chủ)">Thẻ mới: <strong>${t}</strong></span>
-    </div>`}function Uk(e){let t=filteredOrder&&filteredOrder[idx]!==void 0&&WORDS[filteredOrder[idx]]?WORDS[filteredOrder[idx]].id:null;if(studyMode=`browse`,window.studyMode=`browse`,typeof syncStudyModeUrl==`function`&&syncStudyModeUrl(),currentFilter=e,filteredOrder=e===`all`?order.slice():e===`unseen`?order.filter(e=>!progress[WORDS[e].id]):order.filter(t=>progress[WORDS[t].id]===e),t&&filteredOrder.length>0){let e=filteredOrder.findIndex(e=>WORDS[e]&&WORDS[e].id===t);idx=e===-1?0:e}else idx=0;Rk(),mA(),gA(`fade`)}function Wk(){let e=0,t=0;Object.values(progress).forEach(n=>{n===`known`?e++:n===`unknown`&&t++});let n=document.getElementById(`s-total`);n&&(n.textContent=WORDS.length);let r=document.getElementById(`s-known`);r&&(r.textContent=e);let i=document.getElementById(`s-unknown`);i&&(i.textContent=t);let a=document.getElementById(`s-unseen`);a&&(a.textContent=Math.max(0,WORDS.length-e-t)),Rk(),tA()}var Gk=[{rating:`again`,label:`Quên`,key:`1`,interval:``},{rating:`hard`,label:`Khó`,key:`2`,interval:``},{rating:`good`,label:`Được`,key:`3`,interval:``},{rating:`easy`,label:`Dễ`,key:`4`,interval:``}],Kk={1:`again`,2:`hard`,3:`good`,4:`easy`};function qk(e,t,n){return Gk.map(r=>{let i=Jk(n?n[r.rating]:null,r.interval),a=`${r.label}${i?` (ôn lại sau ${i})`:``} • Phím [${r.key}]`;return`
-    <button type="button" class="rating-btn rating-btn--${r.rating}"
-      onclick="${e}('${r.rating}')" aria-keyshortcuts="${r.key}"
-      title="${a}">
-      <span class="rating-label">${r.label}</span>
-      <span class="rating-interval" id="${t}${r.rating}">${i}</span>
-      <kbd class="rating-kbd-badge">${r.key}</kbd>
+    </div>`}function Uk(e){let t=filteredOrder&&filteredOrder[idx]!==void 0&&WORDS[filteredOrder[idx]]?WORDS[filteredOrder[idx]].id:null;if(studyMode=`browse`,window.studyMode=`browse`,typeof syncStudyModeUrl==`function`&&syncStudyModeUrl(),currentFilter=e,filteredOrder=e===`all`?order.slice():e===`unseen`?order.filter(e=>!progress[WORDS[e].id]):order.filter(t=>progress[WORDS[t].id]===e),t&&filteredOrder.length>0){let e=filteredOrder.findIndex(e=>WORDS[e]&&WORDS[e].id===t);idx=e===-1?0:e}else idx=0;Rk(),mA(),gA(`fade`)}function Wk(){let e=0,t=0;Object.values(progress).forEach(n=>{n===`known`?e++:n===`unknown`&&t++});let n=document.getElementById(`s-total`);n&&(n.textContent=WORDS.length);let r=document.getElementById(`s-known`);r&&(r.textContent=e);let i=document.getElementById(`s-unknown`);i&&(i.textContent=t);let a=document.getElementById(`s-unseen`);a&&(a.textContent=Math.max(0,WORDS.length-e-t)),Rk(),tA()}var Gk=[{rating:`again`,label:`Quên`,key:`1`,interval:``},{rating:`hard`,label:`Khó`,key:`2`,interval:``},{rating:`good`,label:`Được`,key:`3`,interval:``},{rating:`easy`,label:`Dễ`,key:`4`,interval:``}],Kk={1:`again`,2:`hard`,3:`good`,4:`easy`};function qk(e,t){return Gk.map(n=>{let r=Jk(t?t[n.rating]:null,n.interval),i=`${n.label}${r?` (ôn lại sau ${r})`:``} • Phím [${n.key}]`;return`
+    <button type="button" class="rating-btn rating-btn--${n.rating}"
+      onclick="${e}('${n.rating}')" aria-keyshortcuts="${n.key}"
+      title="${i}">
+      <span class="rating-label">${n.label}</span>
     </button>`}).join(``)}function Jk(e,t){return e&&e.intervalText?e.intervalText:e&&Number.isFinite(e.intervalMs)?SRS.formatInterval(e.intervalMs):t||``}function Yk(e){let t=e&&srsCards[e.id],n=t?SRS.preview(t,/* @__PURE__ */ new Date,srsRetention):{};Gk.forEach(({rating:e,interval:t,label:r,key:i})=>{let a=Jk(n[e],t),o=document.getElementById(`preview-`+e);o&&(o.textContent=a);let s=document.querySelector(`#ratingRow .rating-btn--${e}`);s&&(s.title=`${r}${a?` (ôn lại sau ${a})`:``} • Phím [${i}]`)})}function Xk(e){let t=document.getElementById(`cardPatterns`);if(!t)return;let n=Array.isArray(e)?e.filter(e=>e&&e.form):[];t.hidden=n.length===0,t.innerHTML=n.length===0?``:`
     <span class="card-patterns-label">Mẫu câu</span>
     <ul class="card-patterns-list">
