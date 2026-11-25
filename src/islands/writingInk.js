@@ -10,6 +10,70 @@ export const CELL_SIZE = 1024;
 export const DATA_BASELINE = 900;
 
 const INK_BASE_WIDTH = 64;
+const SPEED_CLAMP_MAX = 3;
+const SPEED_FALLOFF_BASE = 1.15;
+const SPEED_FALLOFF_SLOPE = 0.22;
+const SPEED_MIN_FACTOR = 0.55;
+const SPEED_MAX_FACTOR = 1.15;
+const PRESS_DISTANCE_PX = 60;
+const TAIL_MAX_RATIO = 0.3;
+const TAIL_LENGTH_PX = 140;
+
+export const DEFAULT_PEN_TYPE = 'brush';
+export const DEFAULT_STROKE_WIDTH = 'medium';
+
+export const PEN_PROFILES = Object.freeze({
+  brush: Object.freeze({
+    id: 'brush',
+    label: 'Bút lông',
+    minWidthFactor: 0.35,
+    maxWidthFactor: 1.25,
+    pressStart: 0.6,
+    tailMin: 0.18,
+    widthScale: 1.0,
+    speedSensitivity: 1.0,
+  }),
+  fountain: Object.freeze({
+    id: 'fountain',
+    label: 'Bút máy',
+    minWidthFactor: 0.65,
+    maxWidthFactor: 1.1,
+    pressStart: 0.85,
+    tailMin: 0.55,
+    widthScale: 0.78,
+    speedSensitivity: 0.6,
+  }),
+  ballpoint: Object.freeze({
+    id: 'ballpoint',
+    label: 'Bút bi',
+    minWidthFactor: 0.95,
+    maxWidthFactor: 1.0,
+    pressStart: 1.0,
+    tailMin: 1.0,
+    widthScale: 0.62,
+    speedSensitivity: 0.15,
+  }),
+});
+
+export const STROKE_WIDTH_PRESETS = Object.freeze({
+  thin: Object.freeze({ id: 'thin', label: 'Mảnh', baseWidth: 44 }),
+  medium: Object.freeze({ id: 'medium', label: 'Vừa', baseWidth: INK_BASE_WIDTH }),
+  thick: Object.freeze({ id: 'thick', label: 'Đậm', baseWidth: 84 }),
+});
+
+function resolvePenProfile(penType) {
+  return PEN_PROFILES[penType] || PEN_PROFILES[DEFAULT_PEN_TYPE];
+}
+
+function resolveBaseWidth(baseWidthOrOptions) {
+  if (typeof baseWidthOrOptions === 'number') return baseWidthOrOptions;
+  if (baseWidthOrOptions && typeof baseWidthOrOptions === 'object') {
+    const preset = STROKE_WIDTH_PRESETS[baseWidthOrOptions.strokeWidth];
+    if (typeof baseWidthOrOptions.baseWidth === 'number') return baseWidthOrOptions.baseWidth;
+    if (preset) return preset.baseWidth;
+  }
+  return INK_BASE_WIDTH;
+}
 
 export function toDataPoint(svgPoint) {
   return [svgPoint[0], DATA_BASELINE - svgPoint[1]];
@@ -128,13 +192,22 @@ export function matchStroke(userPoints, median, leniency = 1, others = []) {
 }
 
 /**
- * Pressure / speed for one input sample → relative brush width (≈0.35–1.25).
+ * Pressure / speed for one input sample → relative brush width scaled by pen profile.
  * Pens report real pressure; mice and fingers usually do not, so speed thins the line.
  */
-export function sampleWidth(pointerType, pressure, speed) {
-  if (pointerType === 'pen' && pressure > 0) return 0.35 + 0.9 * Math.min(1, pressure);
-  const fromSpeed = 1.15 - Math.min(speed, 3) * 0.22;
-  return Math.max(0.55, Math.min(1.15, fromSpeed));
+export function sampleWidth(pointerType, pressure, speed, penType = DEFAULT_PEN_TYPE) {
+  const profile = resolvePenProfile(penType);
+  if (pointerType === 'pen' && pressure > 0) {
+    const span = profile.maxWidthFactor - profile.minWidthFactor;
+    return profile.minWidthFactor + span * Math.min(1, pressure);
+  }
+  const rawSpeed = SPEED_FALLOFF_BASE - Math.min(speed, SPEED_CLAMP_MAX) * SPEED_FALLOFF_SLOPE;
+  const clamped = Math.max(SPEED_MIN_FACTOR, Math.min(SPEED_MAX_FACTOR, rawSpeed));
+  const normalized = (clamped - SPEED_MIN_FACTOR) / (SPEED_MAX_FACTOR - SPEED_MIN_FACTOR);
+  const low = Math.max(profile.minWidthFactor, SPEED_MIN_FACTOR);
+  const high = Math.min(profile.maxWidthFactor, SPEED_MAX_FACTOR);
+  const blended = 1 - profile.speedSensitivity + profile.speedSensitivity * normalized;
+  return low + (high - low) * Math.max(0, Math.min(1, blended));
 }
 
 // Re-space samples evenly (positions and widths interpolated) so smoothing works the
@@ -191,10 +264,14 @@ function capPoints(c, n, dir, r, fromSign) {
  * Tapered brush outline for a stroke.
  * samples: [[x, y, w], …] in SVG cell coordinates, w = relative width from sampleWidth().
  * finished: when true the tail flicks off (lifted pen); while drawing it stays blunt.
+ * baseWidthOrOptions: numeric baseWidth or { penType, strokeWidth, baseWidth }.
  * Returns an SVG path string (filled polygon with rounded ends).
  */
-export function brushPath(samples, finished = true, baseWidth = INK_BASE_WIDTH) {
+export function brushPath(samples, finished = true, baseWidthOrOptions = INK_BASE_WIDTH) {
   if (!samples.length) return '';
+  const options = typeof baseWidthOrOptions === 'object' && baseWidthOrOptions ? baseWidthOrOptions : {};
+  const profile = resolvePenProfile(options.penType);
+  const effectiveWidth = resolveBaseWidth(baseWidthOrOptions) * profile.widthScale;
   const fmt = (p) => `${p[0].toFixed(1)} ${p[1].toFixed(1)}`;
   // Ease the width so speed jitter between events does not show as lumps.
   let w = samples[0][2];
@@ -202,7 +279,7 @@ export function brushPath(samples, finished = true, baseWidth = INK_BASE_WIDTH) 
   const pts = eased.length > 1 ? smoothSamples(respace(eased, 10), 4) : eased;
   if (pts.length < 2 || pathLength(pts) < 4) {
     const [x, y] = pts[0];
-    const r = (baseWidth * pts[0][2] * 0.8) / 2;
+    const r = (effectiveWidth * pts[0][2] * 0.8) / 2;
     return `M${(x - r).toFixed(1)} ${y.toFixed(1)}a${r.toFixed(1)} ${r.toFixed(1)} 0 1 0 ${(2 * r).toFixed(1)} 0a${r.toFixed(1)} ${r.toFixed(1)} 0 1 0 ${(-2 * r).toFixed(1)} 0Z`;
   }
   const total = pathLength(pts);
@@ -221,10 +298,12 @@ export function brushPath(samples, finished = true, baseWidth = INK_BASE_WIDTH) 
     const tan = [tx / len, ty / len];
     const n = [-tan[1], tan[0]];
     const t = travelled / total;
-    const press = 0.6 + 0.4 * Math.min(1, travelled / 60); // the brush lands, then spreads
-    const tailLen = Math.min(0.3, 140 / total);
-    const tail = finished && t > 1 - tailLen ? Math.max(0.18, (1 - t) / tailLen) : 1;
-    const half = (baseWidth * pts[i][2] * press * tail) / 2;
+    const press = profile.pressStart + (1 - profile.pressStart) * Math.min(1, travelled / PRESS_DISTANCE_PX);
+    const tailLen = Math.min(TAIL_MAX_RATIO, TAIL_LENGTH_PX / total);
+    const tail = finished && profile.tailMin < 1 && t > 1 - tailLen
+      ? Math.max(profile.tailMin, (1 - t) / tailLen)
+      : 1;
+    const half = (effectiveWidth * pts[i][2] * press * tail) / 2;
     left.push([pts[i][0] + n[0] * half, pts[i][1] + n[1] * half]);
     right.push([pts[i][0] - n[0] * half, pts[i][1] - n[1] * half]);
     normals.push(n);

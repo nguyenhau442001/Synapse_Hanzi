@@ -5,7 +5,15 @@ import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import {
-  matchStroke, resample, brushPath, layoutWorksheet, charactersOfWords, sampleWidth, toDataPoint,
+  matchStroke,
+  resample,
+  brushPath,
+  layoutWorksheet,
+  charactersOfWords,
+  sampleWidth,
+  toDataPoint,
+  PEN_PROFILES,
+  STROKE_WIDTH_PRESETS,
 } from '../src/islands/writingInk.js';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -91,6 +99,22 @@ test('pen pressure drives width; mouse/finger fall back to speed', () => {
   assert.ok(sampleWidth('pen', 1, 0) > sampleWidth('pen', 0.2, 0));
   assert.ok(sampleWidth('mouse', 0, 0) > sampleWidth('mouse', 0, 3));
   assert.ok(sampleWidth('touch', 1, 0.1) <= 1.15);
+});
+
+test('pen profiles and stroke width presets shape ink paths', () => {
+  assert.deepEqual(Object.keys(PEN_PROFILES), ['brush', 'fountain', 'ballpoint']);
+  assert.deepEqual(Object.keys(STROKE_WIDTH_PRESETS), ['thin', 'medium', 'thick']);
+  const brushSpan = sampleWidth('pen', 1, 0, 'brush') - sampleWidth('pen', 0.1, 0, 'brush');
+  const ballpointSpan = sampleWidth('pen', 1, 0, 'ballpoint') - sampleWidth('pen', 0.1, 0, 'ballpoint');
+  assert.ok(brushSpan > ballpointSpan);
+
+  const samples = resample([[100, 500], [500, 480], [900, 520]], 20).map(([x, y]) => [x, y, 1]);
+  const thinPath = brushPath(samples, true, { penType: 'brush', strokeWidth: 'thin' });
+  const thickPath = brushPath(samples, true, { penType: 'brush', strokeWidth: 'thick' });
+  const ballpointPath = brushPath(samples, true, { penType: 'ballpoint', strokeWidth: 'medium' });
+  assert.notEqual(thinPath, thickPath);
+  assert.match(ballpointPath, /^M[\d.]+ [\d.]+L/);
+  assert.ok(ballpointPath.endsWith('Z'));
 });
 
 test('svg ↔ data coordinates flip around the 900 baseline', () => {

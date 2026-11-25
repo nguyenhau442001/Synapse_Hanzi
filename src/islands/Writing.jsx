@@ -10,7 +10,18 @@
 import { render } from 'preact';
 import { CURRICULUM_LESSONS } from './curriculumIndex';
 import {
-  brushPath, matchStroke, layoutWorksheet, charactersOfWords, sampleWidth, toDataPoint, CELL_SIZE, DATA_BASELINE,
+  brushPath,
+  matchStroke,
+  layoutWorksheet,
+  charactersOfWords,
+  sampleWidth,
+  toDataPoint,
+  CELL_SIZE,
+  DATA_BASELINE,
+  PEN_PROFILES,
+  STROKE_WIDTH_PRESETS,
+  DEFAULT_PEN_TYPE,
+  DEFAULT_STROKE_WIDTH,
 } from './writingInk';
 import {
   CheckIcon,
@@ -39,6 +50,8 @@ const DEFAULT_SETTINGS = {
   grade: true,
   penOnly: null,
   focusMode: false,
+  penType: DEFAULT_PEN_TYPE,
+  strokeWidth: DEFAULT_STROKE_WIDTH,
 };
 const HINT_AFTER = { faint: 2, empty: 3 };
 const GRID_MODES = Object.freeze([
@@ -59,6 +72,8 @@ const GRID_MODES = Object.freeze([
   },
 ]);
 const WRITING_UI_LABELS = Object.freeze({
+  PEN_TYPE_LABEL: 'Loại bút',
+  STROKE_WIDTH_LABEL: 'Độ dày nét',
   FOCUS_ENTER: 'Thu gọn',
   FOCUS_EXIT: 'Hiện thanh trên',
   FOCUS_ENTER_TITLE: 'Ẩn thanh điều hướng trên để mở rộng vùng tập viết',
@@ -331,9 +346,16 @@ function addSample(e, el) {
     if (Math.hypot(p[0] - drawing.last[0], p[1] - drawing.last[1]) < 2) return; // skip sub-pixel noise
   }
   drawing.raw.push(p);
-  drawing.samples.push([p[0], p[1], sampleWidth(drawing.pointerType, e.pressure, speed)]);
+  drawing.samples.push([p[0], p[1], sampleWidth(drawing.pointerType, e.pressure, speed, settings.penType)]);
   drawing.last = p;
   drawing.lastT = now;
+}
+
+function inkBrushOptions() {
+  return {
+    penType: settings.penType,
+    strokeWidth: settings.strokeWidth,
+  };
 }
 
 function scheduleLiveInk() {
@@ -341,7 +363,7 @@ function scheduleLiveInk() {
   drawing.frame = requestAnimationFrame(() => {
     if (!drawing) return;
     drawing.frame = 0;
-    if (drawing.pathEl) drawing.pathEl.setAttribute('d', brushPath(drawing.samples, false));
+    if (drawing.pathEl) drawing.pathEl.setAttribute('d', brushPath(drawing.samples, false, inkBrushOptions()));
   });
 }
 
@@ -412,7 +434,7 @@ function finishStroke(e, cancelled) {
   const cell = states[stroke.cellIndex];
   const strokeIdx = cell.ink.length;
   if (strokeIdx >= data.m.length) return;
-  const path = brushPath(stroke.samples, true);
+  const path = brushPath(stroke.samples, true, inkBrushOptions());
 
   if (!settings.grade) {
     cell.ink.push(path);
@@ -606,9 +628,32 @@ function SettingsPanel() {
       <input type="checkbox" checked={value} onChange={(e) => { onChange(e.currentTarget.checked); rerender(); }} />
     </label>
   );
+  const segmented = (label, key, options) => (
+    <div class="wr-setting-row wr-setting-row--stack">
+      <span>{label}</span>
+      <div
+        class="wr-seg-group"
+        role="group"
+        aria-label={label}
+      >
+        {options.map((opt) => (
+          <button
+            type="button"
+            class={'wr-seg-btn' + (settings[key] === opt.id ? ' is-active' : '')}
+            aria-pressed={String(settings[key] === opt.id)}
+            onClick={() => { saveSettings({ [key]: opt.id }); rerender(); }}
+          >
+            {opt.label}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
   return (
     <aside class={'wr-settings' + (ws.showSettings ? ' is-open' : '')} aria-label="Tùy chỉnh trang tập viết">
       <h3 class="wr-h3">Trang tập viết</h3>
+      {segmented(WRITING_UI_LABELS.PEN_TYPE_LABEL, 'penType', Object.values(PEN_PROFILES))}
+      {segmented(WRITING_UI_LABELS.STROKE_WIDTH_LABEL, 'strokeWidth', Object.values(STROKE_WIDTH_PRESETS))}
       {stepper('Số hàng mỗi chữ', 'rows', 2, 8)}
       {stepper('Ô chữ mờ mỗi hàng', 'faded', 0, 8)}
       {toggle('Hàng đầu theo thứ tự nét', 'strokeRow', settings.strokeRow, (v) => saveSettings({ strokeRow: v }))}
