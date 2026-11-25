@@ -193,6 +193,20 @@ export function toggleSprintLevel(currentLevels, levelId) {
   return SPRINT_LEVEL_OPTIONS.map((opt) => opt.id).filter((id) => selected.has(id));
 }
 
+const LEVEL_RANK = new Map(SPRINT_LEVEL_OPTIONS.map((opt, index) => [opt.id, index]));
+
+/**
+ * Lists [cardKey, item] entries with the hardest (highest) HSK level first,
+ * keeping the original word order within each level (stable sort).
+ * @param {Map<string, Object>} vocabByKey
+ * @returns {Array<[string, Object]>}
+ */
+export function entriesHardestLevelFirst(vocabByKey) {
+  return Array.from(vocabByKey.entries()).sort(
+    ([, a], [, b]) => (LEVEL_RANK.get(b.level) ?? -1) - (LEVEL_RANK.get(a.level) ?? -1)
+  );
+}
+
 /**
  * Builds the card queue for one of the 4 daily sprint rounds.
  * @param {'morning'|'noon'|'evening'|'night'} slotId
@@ -235,7 +249,7 @@ export function buildSlotQueue(slotId, vocabPool, cardMap, dailyLog, config, now
     const remainingNoon = Math.max(0, noonTarget - (dailyLog?.noonNewCardKeys?.length || 0));
     if (remainingNoon === 0) return [];
     const newWords = [];
-    for (const [key, item] of vocabByKey.entries()) {
+    for (const [key, item] of entriesHardestLevelFirst(vocabByKey)) {
       const card = cardMap.get(key);
       if (card && (card.suspended || (card.reps || 0) > 0)) continue;
       newWords.push({ ...item, card: card || null, isMistakePriority: false });
@@ -248,7 +262,7 @@ export function buildSlotQueue(slotId, vocabPool, cardMap, dailyLog, config, now
     const noonSet = new Set(dailyLog?.noonNewCardKeys || []);
     const remainingEvening = Math.max(0, eveningTarget - (dailyLog?.eveningNewCardKeys?.length || 0));
     const batch2 = [];
-    for (const [key, item] of vocabByKey.entries()) {
+    for (const [key, item] of entriesHardestLevelFirst(vocabByKey)) {
       if (noonSet.has(key)) continue;
       const card = cardMap.get(key);
       if (card && (card.suspended || (card.reps || 0) > 0)) continue;

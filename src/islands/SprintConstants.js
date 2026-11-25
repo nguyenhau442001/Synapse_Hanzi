@@ -11,7 +11,8 @@ export const SPRINT_LEVEL_OPTIONS = [
   { id: 'hsk30_3', label: 'HSK 3' },
   { id: 'hsk30_4', label: 'HSK 4' },
 ];
-export const DEFAULT_SPRINT_LEVELS = SPRINT_LEVEL_OPTIONS.map((opt) => opt.id);
+// Default to the exam's target level only (the highest option); lower levels are opt-in.
+export const DEFAULT_SPRINT_LEVELS = [SPRINT_LEVEL_OPTIONS[SPRINT_LEVEL_OPTIONS.length - 1].id];
 export const DEFAULT_DAILY_NEW_QUOTA = 70;
 export const MIN_DAILY_NEW_QUOTA = 30;
 export const MAX_DAILY_NEW_QUOTA = 120;
@@ -88,6 +89,19 @@ export const SPRINT_UI_LABELS = {
   wordFamilyPrefix: 'Chùm gốc chữ:',
   pinyinPrompt: 'Gõ Pinyin không dấu (kiểm tra cặp dễ nhầm):',
   backToHub: 'Quay lại Lộ trình thi',
+  flipNow: 'Lật thẻ & nghe phát âm',
+  replayAudio: 'Nghe lại',
+  rateAgain: 'Quên',
+  rateAgainHint: 'Ôn lại sớm',
+  rateGood: 'Đã nhớ',
+  rateGoodHint: 'Đọc nhẩm xong',
+  sessionProgressLabel: 'Tiến độ hiệp',
+  autoFlipTimerLabel: 'Thời gian còn lại trước khi tự lật',
+  mistakePriorityTag: 'Ưu tiên số 1 · Sai trong đề hôm qua',
+  pinyinPlaceholder: 'Ví dụ: zeren',
+  pinyinCheck: 'Kiểm tra',
+  pinyinCorrect: 'Chính xác! Phản xạ gõ chuẩn.',
+  pinyinWrongPrefix: 'Chưa khớp — đáp án:',
   countdownEmpty: 'Chưa đặt ngày thi',
   countdownToday: 'Hôm nay thi! Giữ vững tâm lý!',
   countdownPassed: 'Đã qua ngày thi mục tiêu',
@@ -104,3 +118,10 @@ export const SPRINT_SLOT_EMPTY_REASONS = {
   evening: 'Chưa có từ Đợt 1 để ôn và đã hết từ mới cho Đợt 2.',
   night: 'Hôm nay chưa nạp từ mới nào — hãy làm Hiệp 2 / Hiệp 3 trước.',
 };
+
+// Keyboard shortcuts on the sprint card (ignored while typing in the pinyin check input).
+export const SPRINT_KEYS = Object.freeze({
+  FLIP: [' ', 'Enter'],
+  AGAIN: '1',
+  GOOD: '2',
+});

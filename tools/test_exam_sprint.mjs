@@ -13,6 +13,7 @@ import {
   loadSprintPreferences,
   updateSprintConfig,
   sprintConfig,
+  createDefaultSprintConfig,
 } from '../src/islands/SprintState.js';
 
 async function runTests() {
@@ -95,6 +96,17 @@ async function runTests() {
   assert.equal(nightQueue.length, 2);
   // Confusable pinyin (zérèn) should be prioritized first
   assert.equal(nightQueue[0].hanzi, '责任');
+
+  // 4b. New-word rounds must serve the hardest selected level first (HSK 4 before HSK 1)
+  const mixedPool = [
+    { id: 1, hanzi: '读', pinyin: 'dú', meaning: 'đọc', level: 'hsk30_1' },
+    { id: 2, hanzi: '吃', pinyin: 'chī', meaning: 'ăn', level: 'hsk30_1' },
+    { id: 3, hanzi: '保证', pinyin: 'bǎozhèng', meaning: 'bảo đảm', level: 'hsk30_4' },
+    { id: 4, hanzi: '表示', pinyin: 'biǎoshì', meaning: 'biểu thị', level: 'hsk30_4' },
+  ];
+  const mixedNoon = buildSlotQueue('noon', mixedPool, new Map(), { noonNewCardKeys: [] }, { dailyNewQuota: 4 }, new Date());
+  assert.deepEqual(mixedNoon.map((w) => w.hanzi), ['保证', '表示']);
+  assert.deepEqual(createDefaultSprintConfig().targetLevels, ['hsk30_4']);
 
   // 5. Test Reverse SRS Quiz builder & preferences persistence
   const quiz = buildReverseSrsQuiz(pool, cardMap, 3);
