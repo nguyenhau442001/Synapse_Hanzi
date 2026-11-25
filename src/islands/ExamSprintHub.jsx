@@ -9,12 +9,9 @@
 import { h } from 'preact';
 import { useState, useEffect, useRef, useMemo } from 'preact/hooks';
 import {
-  Flame,
   Calendar,
   Volume2,
-  Clock,
   CheckCircle2,
-  XCircle,
   ArrowLeft,
   Target,
   Sparkles,
@@ -25,6 +22,7 @@ import {
   SPRINT_SLOTS,
   SPRINT_UI_LABELS,
   SPRINT_SLOT_EMPTY_REASONS,
+  SPRINT_DASHBOARD_LABELS,
   SPRINT_LEVEL_OPTIONS,
   SPRINT_AUTO_FLIP_LIMIT_MS,
   SPRINT_KEYS,
@@ -47,6 +45,7 @@ import {
   buildSlotQueue,
   buildReverseSrsQuiz,
 } from './SprintState.js';
+import { SprintHero, SprintTodayPanel, isSlotDone } from './SprintDashboardPanels.jsx';
 
 const DEFAULT_DIRECTION = 'zh2vi';
 
@@ -633,8 +632,10 @@ export function ExamSprintHub({ onBack }) {
     );
   }
 
+  const L = SPRINT_DASHBOARD_LABELS;
+
   return (
-    <div class="exam-sprint-panel">
+    <div class="exam-sprint-panel exam-sprint-panel--dashboard">
       <div class="exam-sprint-header-row">
         <button
           type="button"
@@ -642,37 +643,19 @@ export function ExamSprintHub({ onBack }) {
           onClick={onBack}
         >
           <ArrowLeft size={16} />
-          Quay lại Hub Luyện thi
+          {L.backToExamHub}
         </button>
       </div>
 
-      <div class="exam-sprint-hero">
-        <div class="exam-sprint-hero-left">
-          <h2>
-            <Flame size={22} />
-            {SPRINT_UI_LABELS.title}
-          </h2>
-          <p>{SPRINT_UI_LABELS.subtitle}</p>
-        </div>
-
-        <div class="exam-sprint-countdown-box">
-          <div class="exam-sprint-countdown-value">
-            <Clock size={18} />
-            {countdown.status === 'unset' && SPRINT_UI_LABELS.countdownEmpty}
-            {countdown.status === 'today' && SPRINT_UI_LABELS.countdownToday}
-            {countdown.status === 'passed' && SPRINT_UI_LABELS.countdownPassed}
-            {countdown.status === 'upcoming' && `Còn ${countdown.daysLeft} ngày (${countdown.hoursLeft} giờ)`}
-          </div>
-          {countdown.status === 'upcoming' && (
-            <div class="exam-sprint-countdown-sub">
-              Đề xuất tốc độ: <strong>{countdown.recommendedQuota} từ/ngày</strong>
-            </div>
-          )}
-        </div>
-      </div>
+      <SprintHero
+        countdown={countdown}
+        stats={stats}
+        config={sprintConfig.value}
+        isLoading={isLoading}
+      />
 
       <div class="exam-sprint-config-row">
-        <label class="exam-sprint-field">
+        <label class="exam-sprint-field exam-sprint-field--date">
           <span>
             <Calendar size={15} />
             {SPRINT_UI_LABELS.setExamDateLabel}
@@ -686,7 +669,7 @@ export function ExamSprintHub({ onBack }) {
           />
         </label>
 
-        <label class="exam-sprint-field">
+        <label class="exam-sprint-field exam-sprint-field--quota">
           <span>
             <Target size={15} />
             {SPRINT_UI_LABELS.dailyQuotaLabel}
@@ -699,101 +682,100 @@ export function ExamSprintHub({ onBack }) {
             onChange={(e) => updateSprintConfig({ dailyNewQuota: Number(e.target.value) }, db)}
           />
         </label>
-      </div>
 
-      <div class="exam-sprint-field exam-sprint-level-filter">
-        <span>{SPRINT_UI_LABELS.levelFilterLabel}</span>
-        <div
-          class="exam-sprint-level-chips"
-          role="group"
-          aria-label={SPRINT_UI_LABELS.levelFilterLabel}
-        >
-          {SPRINT_LEVEL_OPTIONS.map((opt) => {
-            const isActive = sprintConfig.value.targetLevels.includes(opt.id);
-            return (
-              <button
-                key={opt.id}
-                type="button"
-                class={`exam-pill-btn ${isActive ? 'active' : ''}`}
-                aria-pressed={isActive}
-                disabled={sprintLoading.value}
-                onClick={() => handleToggleLevel(opt.id)}
-              >
-                {opt.label}
-              </button>
-            );
-          })}
+        <div class="exam-sprint-field exam-sprint-level-filter">
+          <span>{SPRINT_UI_LABELS.levelFilterLabel}</span>
+          <div
+            class="exam-sprint-level-chips"
+            role="group"
+            aria-label={SPRINT_UI_LABELS.levelFilterLabel}
+          >
+            {SPRINT_LEVEL_OPTIONS.map((opt) => {
+              const isActive = sprintConfig.value.targetLevels.includes(opt.id);
+              return (
+                <button
+                  key={opt.id}
+                  type="button"
+                  class={`exam-pill-btn ${isActive ? 'active' : ''}`}
+                  aria-pressed={isActive}
+                  disabled={sprintLoading.value}
+                  onClick={() => handleToggleLevel(opt.id)}
+                >
+                  {opt.label}
+                </button>
+              );
+            })}
+          </div>
+          <small>{SPRINT_UI_LABELS.levelFilterHint}</small>
         </div>
-        <small>{SPRINT_UI_LABELS.levelFilterHint}</small>
       </div>
 
       <div class="exam-sprint-stats-grid">
         <div class="exam-sprint-stat">
           <span>{SPRINT_UI_LABELS.poolStatLabel}</span>
-          <strong>{sprintLoading.value ? '...' : stats.totalPool}</strong>
+          <strong>{isLoading ? '…' : stats.totalPool}</strong>
         </div>
         <div class="exam-sprint-stat">
           <span>{SPRINT_UI_LABELS.suspendedStatLabel}</span>
           <strong>{stats.suspendedCount}</strong>
         </div>
         <div class="exam-sprint-stat">
-          <span>Cần cày còn lại</span>
+          <span>{L.remainingStatLabel}</span>
           <strong>{stats.activeRemaining}</strong>
         </div>
         <div class="exam-sprint-stat">
-          <span>Đến hạn ({stats.mistakeDueCount} lỗi sai)</span>
+          <span>
+            {L.dueStatLabel} · {stats.mistakeDueCount} {L.mistakesSuffix}
+          </span>
           <strong>{stats.dueCount}</strong>
         </div>
       </div>
 
-      <div class="exam-sprint-quick-actions">
-        <button
-          type="button"
-          class="exam-sprint-btn-keep"
-          onClick={startReverseSrs}
-        >
-          <XCircle size={18} />
-          {SPRINT_UI_LABELS.reverseSrsBtn}
-        </button>
-      </div>
+      <section class="exam-sprint-sessions">
+        <h3 class="exam-sprint-section-title">{L.sessionsHeading}</h3>
+        <div class="exam-sprint-slots-grid">
+          {SPRINT_SLOTS.map((slot) => {
+            const isDone = isSlotDone(slot.id, daily);
 
-      <div class="exam-sprint-slots-grid">
-        {SPRINT_SLOTS.map((slot) => {
-          const isDone =
-            (slot.id === 'morning' && daily.morningReviewDone > 0) ||
-            (slot.id === 'noon' && (daily.noonNewCardKeys?.length || 0) > 0) ||
-            (slot.id === 'evening' && (daily.eveningNewCardKeys?.length || 0) > 0) ||
-            (slot.id === 'night' && daily.nightSkimDone);
-
-          return (
-            <div
-              key={slot.id}
-              class={`exam-sprint-slot-card ${isDone ? 'is-done' : ''}`}
-            >
-              <div class="exam-sprint-slot-header">
-                <span class="exam-sprint-slot-time">{slot.timeLabel} · {slot.durationMinutes} phút</span>
-                {isDone && <CheckCircle2 size={16} />}
+            return (
+              <div
+                key={slot.id}
+                class={`exam-sprint-slot-card ${isDone ? 'is-done' : ''}`}
+              >
+                <div class="exam-sprint-slot-header">
+                  <span class="exam-sprint-slot-time">{slot.timeLabel}</span>
+                  <span class="exam-sprint-slot-duration">
+                    {slot.durationMinutes} {L.minutesSuffix}
+                    {isDone && <CheckCircle2 size={16} />}
+                  </span>
+                </div>
+                <h4>{slot.title}</h4>
+                <p>{slot.description}</p>
+                {!isLoading && slotCounts[slot.id] === 0 ? (
+                  <p class="exam-sprint-slot-empty">{SPRINT_SLOT_EMPTY_REASONS[slot.id]}</p>
+                ) : (
+                  <button
+                    type="button"
+                    class="exam-pill-btn exam-sprint-slot-cta"
+                    disabled={isLoading}
+                    onClick={() => startSprintSlot(slot.id)}
+                  >
+                    {isLoading
+                      ? SPRINT_UI_LABELS.slotLoading
+                      : `${SPRINT_UI_LABELS.slotStart} (${slotCounts[slot.id]} ${SPRINT_UI_LABELS.slotCardsSuffix})`}
+                  </button>
+                )}
               </div>
-              <h4>{slot.title}</h4>
-              <p>{slot.description}</p>
-              {!isLoading && slotCounts[slot.id] === 0 ? (
-                <p class="exam-sprint-slot-empty">{SPRINT_SLOT_EMPTY_REASONS[slot.id]}</p>
-              ) : (
-                <button
-                  type="button"
-                  class="exam-pill-btn"
-                  disabled={isLoading}
-                  onClick={() => startSprintSlot(slot.id)}
-                >
-                  {isLoading
-                    ? SPRINT_UI_LABELS.slotLoading
-                    : `${SPRINT_UI_LABELS.slotStart} (${slotCounts[slot.id]} ${SPRINT_UI_LABELS.slotCardsSuffix})`}
-                </button>
-              )}
-            </div>
-          );
-        })}
-      </div>
+            );
+          })}
+        </div>
+      </section>
+
+      <SprintTodayPanel
+        daily={daily}
+        config={sprintConfig.value}
+        onStartReverseSrs={startReverseSrs}
+      />
     </div>
   );
 }

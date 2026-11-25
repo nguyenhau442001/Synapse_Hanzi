@@ -131,7 +131,7 @@ body.listening-view-active {
 
 body.listening-view-active .app {
   width: 100% !important;
-  max-width: 1240px !important;
+  max-width: var(--app-shell-max-width) !important;
   margin: 0 auto !important;
   padding: 0 !important;
   display: flex !important;
@@ -141,14 +141,14 @@ body.listening-view-active .app {
 
 body.listening-view-active .app-header {
   width: 100% !important;
-  max-width: 1240px !important;
+  max-width: var(--app-shell-max-width) !important;
   margin: 0 auto 12px !important;
   position: relative !important;
 }
 
 body.listening-view-active #primaryTabs {
   width: 100% !important;
-  max-width: 1240px !important;
+  max-width: var(--app-shell-max-width) !important;
   margin: 0 auto 14px !important;
 }
 
@@ -158,7 +158,7 @@ body.listening-view-active .workstation {
   align-items: center !important;
   justify-content: flex-start !important;
   width: 100% !important;
-  max-width: 1240px !important;
+  max-width: var(--app-shell-max-width) !important;
   margin: 0 auto !important;
   padding: 0 !important;
   grid-template-columns: none !important;
@@ -170,7 +170,7 @@ body.listening-view-active .workstation-middle {
   flex-direction: column !important;
   align-items: center !important;
   width: 100% !important;
-  max-width: 1240px !important;
+  max-width: var(--app-shell-max-width) !important;
   margin: 0 auto !important;
   padding: 0 !important;
 }

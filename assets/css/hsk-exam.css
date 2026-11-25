@@ -882,73 +882,213 @@
   gap: 1.15rem;
 }
 
-.exam-sprint-hero {
+/* --------------------------------------------------------------------------
+   Sprint dashboard: 12-column grid that fills the app shell
+   (header and content share --app-shell-max-width).
+   -------------------------------------------------------------------------- */
+.exam-sprint-panel--dashboard {
+  --sprint-grid-gap: 1rem;
+  --sprint-card-radius: var(--radius-lg, 12px);
+  --sprint-card-pad: 1rem 1.15rem;
+  max-width: none;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--sprint-grid-gap);
+  align-items: start;
+}
+
+.exam-sprint-panel--dashboard > * {
+  grid-column: 1 / -1;
+  min-width: 0;
+}
+
+.exam-sprint-panel--dashboard > .exam-sprint-sessions {
+  grid-column: 1 / span 8;
+}
+
+.exam-sprint-panel--dashboard > .exam-sprint-today-wrap {
+  grid-column: 9 / span 4;
+}
+
+.exam-sprint-header-row {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
-  gap: 1rem;
-  padding: 1.25rem;
-  border-radius: 0.9rem;
+}
+
+/* Shared card surface for dashboard panels */
+.exam-sprint-hero,
+.exam-sprint-field,
+.exam-sprint-stat,
+.exam-sprint-slot-card,
+.exam-sprint-today {
   background: var(--bg-surface, #fff);
-  border: 1px solid var(--border-subtle, #e2e8f0);
+  border: 1px solid var(--border-subtle, #e8e1d7);
+  border-radius: var(--sprint-card-radius, 12px);
+}
+
+.exam-sprint-section-title {
+  margin: 0 0 0.65rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-tertiary, #858078);
+}
+
+/* Hero: identity (5 cols) + metrics strip (7 cols) */
+.exam-sprint-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  align-items: stretch;
+  gap: 1.25rem;
+  padding: 1.1rem 1.25rem;
+}
+
+.exam-sprint-hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.4rem;
 }
 
 .exam-sprint-hero h2 {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  margin: 0 0 0.35rem;
+  margin: 0;
   color: var(--brand-primary, #a8322d);
-  font-size: 1.25rem;
+  font-size: 1.2rem;
+  line-height: 1.3;
 }
 
 .exam-sprint-hero p {
   margin: 0;
-  color: var(--text-secondary, #475569);
-  font-size: 0.9rem;
+  color: var(--text-secondary, #5a564f);
+  font-size: 0.86rem;
+  line-height: 1.5;
 }
 
-.exam-sprint-countdown-box {
-  padding: 0.85rem 1.15rem;
-  border-radius: 0.75rem;
-  background: var(--warning-bg, #faf5eb);
-  border: 1px solid var(--border-strong, #c5a46d);
-  text-align: right;
+.exam-sprint-hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.2rem;
 }
 
-.exam-sprint-countdown-value {
+.exam-sprint-tag {
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: var(--surface-chip, #f1ebdd);
+  color: var(--text-secondary, #5a564f);
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+
+.exam-sprint-hero-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border: 1px solid var(--border-subtle, #e8e1d7);
+  border-radius: calc(var(--sprint-card-radius, 12px) - 2px);
+  background: var(--surface-subtle, #faf6ee);
+  overflow: hidden;
+}
+
+.exam-sprint-metric {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.85rem 1rem;
+  min-width: 0;
+}
+
+.exam-sprint-metric + .exam-sprint-metric {
+  border-left: 1px solid var(--border-subtle, #e8e1d7);
+}
+
+.exam-sprint-metric-label {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 0.4rem;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-tertiary, #858078);
+}
+
+.exam-sprint-metric-value {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  color: var(--text-primary, #292722);
+}
+
+.exam-sprint-metric-value strong {
+  font-size: 1.6rem;
   font-weight: 800;
-  font-size: 1.05rem;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+
+.exam-sprint-metric--accent .exam-sprint-metric-value strong {
   color: var(--brand-primary, #a8322d);
 }
 
-.exam-sprint-countdown-sub {
-  margin-top: 0.25rem;
-  font-size: 0.82rem;
-  color: var(--text-secondary, #475569);
+.exam-sprint-metric-unit {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary, #5a564f);
 }
 
+.exam-sprint-metric-sub {
+  width: 100%;
+  font-size: 0.74rem;
+  color: var(--text-tertiary, #858078);
+}
+
+.exam-sprint-metric-text {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text-secondary, #5a564f);
+}
+
+.exam-sprint-meter {
+  height: 6px;
+  border-radius: 999px;
+  background: var(--progress-track, #e4dace);
+  overflow: hidden;
+}
+
+.exam-sprint-meter-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: var(--brand-primary, #a8322d);
+  transition: width 0.3s ease;
+}
+
+/* Config: date (3) · quota (3) · HSK levels (6) */
 .exam-sprint-config-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 0.85rem;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--sprint-grid-gap, 1rem);
 }
 
 .exam-sprint-field {
+  grid-column: span 3;
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
-  padding: 0.85rem;
-  border-radius: 0.75rem;
-  background: var(--bg-surface, #fff);
-  border: 1px solid var(--border-subtle, #e2e8f0);
-  font-size: 0.88rem;
+  gap: 0.45rem;
+  padding: 0.8rem 1rem;
+  font-size: 0.85rem;
   font-weight: 600;
+  min-width: 0;
+}
+
+.exam-sprint-field.exam-sprint-level-filter {
+  grid-column: span 6;
 }
 
 .exam-sprint-field span {
@@ -958,11 +1098,13 @@
 }
 
 .exam-sprint-field input {
-  padding: 0.5rem 0.65rem;
+  padding: 0.45rem 0.65rem;
   border-radius: 0.5rem;
   border: 1px solid var(--border-subtle, #cbd5e1);
   background: var(--bg-canvas, #f8fafc);
   color: var(--text-primary, #1e293b);
+  font: inherit;
+  font-weight: 500;
 }
 
 .exam-sprint-field input[type="date"],
@@ -977,38 +1119,41 @@
 .exam-sprint-level-chips {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.45rem;
 }
 
 .exam-sprint-level-filter small {
   font-weight: 400;
-  color: var(--text-secondary, #475569);
+  font-size: 0.76rem;
+  color: var(--text-tertiary, #858078);
 }
 
+/* KPI row: four equal columns */
 .exam-sprint-stats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 0.75rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--sprint-grid-gap, 1rem);
 }
 
 .exam-sprint-stat {
-  padding: 0.85rem;
-  border-radius: 0.75rem;
-  background: var(--bg-surface, #fff);
-  border: 1px solid var(--border-subtle, #e2e8f0);
+  padding: 0.75rem 1rem;
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.15rem;
 }
 
 .exam-sprint-stat span {
-  font-size: 0.8rem;
-  color: var(--text-secondary, #64748b);
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--text-tertiary, #858078);
 }
 
 .exam-sprint-stat strong {
-  font-size: 1.35rem;
-  color: var(--text-primary, #0f172a);
+  font-size: 1.55rem;
+  font-weight: 800;
+  line-height: 1.15;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-primary, #292722);
 }
 
 .exam-sprint-quick-actions {
@@ -1040,20 +1185,20 @@
   color: #fff;
 }
 
+/* Daily sessions: 2×2 grid inside the 8-column area */
 .exam-sprint-slots-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 0.85rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--sprint-grid-gap, 1rem);
 }
 
 .exam-sprint-slot-card {
-  padding: 1rem;
-  border-radius: 0.85rem;
-  background: var(--bg-surface, #fff);
-  border: 1px solid var(--border-subtle, #e2e8f0);
+  padding: var(--sprint-card-pad, 1rem 1.15rem);
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.45rem;
+  min-height: 100%;
+  box-sizing: border-box;
 }
 
 .exam-sprint-slot-card.is-done {
@@ -1064,21 +1209,168 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 700;
   color: var(--brand-primary, #a8322d);
+}
+
+.exam-sprint-slot-duration {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--text-tertiary, #858078);
+  font-weight: 600;
+}
+
+.exam-sprint-slot-card.is-done .exam-sprint-slot-duration svg {
+  color: var(--status-success, #527d70);
 }
 
 .exam-sprint-slot-card h4 {
   margin: 0;
   font-size: 0.98rem;
+  line-height: 1.35;
 }
 
 .exam-sprint-slot-card p {
   margin: 0;
   font-size: 0.83rem;
-  color: var(--text-secondary, #475569);
+  line-height: 1.5;
+  color: var(--text-secondary, #5a564f);
   flex: 1;
+}
+
+.exam-sprint-slot-card p.exam-sprint-slot-empty {
+  flex: 0;
+  padding: 0.55rem 0.7rem;
+  border-radius: 0.5rem;
+  background: var(--surface-subtle, #faf6ee);
+  font-size: 0.8rem;
+  color: var(--text-tertiary, #858078);
+}
+
+.exam-sprint-slot-cta {
+  justify-content: center;
+  width: 100%;
+}
+
+/* Today panel (4-column aside) */
+.exam-sprint-today {
+  padding: 1rem 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.exam-sprint-today-quota {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.exam-sprint-today-quota-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary, #5a564f);
+}
+
+.exam-sprint-today-quota-head strong {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text-primary, #292722);
+  font-variant-numeric: tabular-nums;
+}
+
+.exam-sprint-today-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.exam-sprint-today-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.55rem 0;
+  font-size: 0.84rem;
+  border-top: 1px solid var(--border-subtle, #e8e1d7);
+}
+
+.exam-sprint-today-label {
+  color: var(--text-secondary, #5a564f);
+}
+
+.exam-sprint-today-value strong {
+  font-variant-numeric: tabular-nums;
+}
+
+.exam-sprint-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-tertiary, #858078);
+}
+
+.exam-sprint-status.is-done {
+  color: var(--status-success, #527d70);
+}
+
+.exam-sprint-today-cta {
+  width: 100%;
+  font-size: 0.88rem;
+}
+
+/* Responsive: the dashboard adapts to its own width (container queries), since the
+   app shell width differs per breakpoint (e.g. the 760px laptop shell). */
+.exam-sprint-panel--dashboard {
+  container: sprint-dashboard / inline-size;
+}
+
+/* Narrow desktop/laptop shell: stack the hero, keep the 8/4 split */
+@container sprint-dashboard (max-width: 1100px) {
+  .exam-sprint-hero {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Tablet-width container: sessions and today panel stack, config in 2 columns */
+@container sprint-dashboard (max-width: 900px) {
+  .exam-sprint-panel--dashboard > .exam-sprint-sessions,
+  .exam-sprint-panel--dashboard > .exam-sprint-today-wrap {
+    grid-column: 1 / -1;
+  }
+  .exam-sprint-field {
+    grid-column: span 6;
+  }
+  .exam-sprint-field.exam-sprint-level-filter {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Small container: 2 KPI columns, single-column sessions and metrics */
+@container sprint-dashboard (max-width: 640px) {
+  .exam-sprint-field {
+    grid-column: 1 / -1;
+  }
+  .exam-sprint-stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .exam-sprint-slots-grid,
+  .exam-sprint-hero-metrics {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .exam-sprint-metric + .exam-sprint-metric {
+    border-left: none;
+    border-top: 1px solid var(--border-subtle, #e8e1d7);
+  }
 }
 
 .exam-sprint-card {

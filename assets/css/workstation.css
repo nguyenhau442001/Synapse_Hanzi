@@ -74,14 +74,14 @@ body.graded-story-active #primaryTabs {
     display: flex !important;
     flex-direction: column !important;
     align-items: stretch !important;
-    max-width: 1240px !important;
+    max-width: var(--app-shell-max-width) !important;
     width: 100% !important;
     margin: 0 auto !important;
     grid-template-columns: none !important;
     grid-template-areas: none !important;
   }
   body:not(.flashcard-study-mode):not(.reading-view-active) .app {
-    max-width: 1240px !important;
+    max-width: var(--app-shell-max-width) !important;
     margin: 0 auto !important;
     width: 100% !important;
   }
@@ -110,7 +110,7 @@ body.graded-story-active #primaryTabs {
   body.review-view-active .workstation {
     grid-template-columns: 360px minmax(0, 1fr) !important;
     grid-template-areas: "left middle" !important;
-    max-width: 1240px !important;
+    max-width: var(--app-shell-max-width) !important;
     gap: 32px;
   }
   .workstation-right {
@@ -265,7 +265,7 @@ body.graded-story-active #primaryTabs {
   }
   body.home-screen .app {
     height: auto;
-    max-width: 1240px;
+    max-width: var(--app-shell-max-width);
     margin: 0 auto;
     width: 100%;
     padding: 0 16px;
@@ -277,7 +277,7 @@ body.graded-story-active #primaryTabs {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    max-width: 1240px;
+    max-width: var(--app-shell-max-width);
     width: 100%;
     margin: 0 auto;
     gap: 20px;
@@ -296,7 +296,7 @@ body.graded-story-active #primaryTabs {
     min-height: auto;
     height: auto;
     width: 100%;
-    max-width: 1240px;
+    max-width: var(--app-shell-max-width);
     margin: 0 auto;
     overflow: visible;
   }

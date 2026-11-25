@@ -62,14 +62,14 @@ body.reading-zen-active .app {
 
 body.reading-view-active .app-header {
   width: 100% !important;
-  max-width: 1240px !important;
+  max-width: var(--app-shell-max-width) !important;
   margin: 0 auto 12px !important;
   position: relative !important;
 }
 
 body.reading-view-active #primaryTabs {
   width: 100% !important;
-  max-width: 1240px !important;
+  max-width: var(--app-shell-max-width) !important;
   margin: 0 auto 14px !important;
 }
 

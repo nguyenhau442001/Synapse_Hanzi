@@ -127,3 +127,33 @@ export const SPRINT_KEYS = Object.freeze({
   AGAIN: '1',
   GOOD: '2',
 });
+
+// Dashboard (hub) view: labels for the 12-column layout panels.
+export const SPRINT_DASHBOARD_LABELS = Object.freeze({
+  backToExamHub: 'Quay lại Hub Luyện thi',
+  levelsSummaryPrefix: 'Đang cày',
+  wordsSuffix: 'từ',
+  wordsPerDaySuffix: 'từ/ngày',
+  countdownLabel: 'Đếm ngược ngày thi',
+  countdownDaysSuffix: 'ngày',
+  countdownHoursSuffix: 'giờ',
+  recommendedPaceLabel: 'Đề xuất tốc độ',
+  recommendedPaceUnset: 'Đặt ngày thi để tính',
+  campaignProgressLabel: 'Tiến độ chiến dịch',
+  campaignProgressHint: 'đã thuộc hoặc đã ẩn',
+  remainingStatLabel: 'Cần cày còn lại',
+  dueStatLabel: 'Đến hạn ôn',
+  mistakesSuffix: 'lỗi sai',
+  sessionsHeading: 'Lịch học hôm nay',
+  minutesSuffix: 'phút',
+  todayHeading: 'Tiến độ hôm nay',
+  todayNewWords: 'Từ mới đã nạp',
+  todayMorningReviews: 'Thẻ đã ôn sáng nay',
+  todayNightSkim: 'Lướt tổng kết tối',
+  todayReverseSrs: 'Reverse SRS',
+  statusDone: 'Đã xong',
+  statusPending: 'Chưa làm',
+});
+
+// Shared scale for percentage meters on the sprint dashboard.
+export const PERCENT_SCALE = 100;

@@ -959,9 +959,9 @@ body.dark-mode .reading-global-footer .reading-nav-btn.next-btn:hover:not(:disab
 /* Lesson section links: the last section can scroll to the top under the sticky header */
 #curSection-practice { min-height: calc(100vh - 120px); }
 
-/* ── Unified 1240px Shell, Single-Row Header Nav & Actionable Today Card ── */
+/* ── Unified App Shell, Single-Row Header Nav & Actionable Today Card ── */
 .app-header {
-  max-width: 1240px;
+  max-width: var(--app-shell-max-width);
   margin-left: auto;
   margin-right: auto;
   flex-wrap: wrap;

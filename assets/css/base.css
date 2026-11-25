@@ -1,5 +1,7 @@
 /* Chinese Classical Aesthetics (东方美学) Design Tokens, Reset, and Shared Shell */
 :root {
+  /* Desktop app shell: header + main content share this single max width. */
+  --app-shell-max-width: 1320px;
   /* Authentic Chinese Classical Palette Tokens */      /* 朱砂红 / 丹红 - Chinese Vermilion */   /* 故宫红 / 宫墙红 - Imperial Red */
   --c-antique-gold: #C5A46D;   /* 古铜金 / 泥金 - Antique Gold */      /* 水墨黑 / 烟墨 - Ink Black */   /* 焦墨 / 炭黑 */     /* 宣纸原色 / 象牙宣 - Warm Xuan Paper */      /* 熟宣素白 / 精装书页 */
   --c-jade-green: #527D70;     /* 翡翠绿 / 苍松绿 - Classical Jade Green */
