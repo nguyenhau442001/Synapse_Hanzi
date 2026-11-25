@@ -29,6 +29,7 @@ import {
   TIMER_TICK_MS,
   MIN_DAILY_NEW_QUOTA,
   MAX_DAILY_NEW_QUOTA,
+  FAMILY_SPEAKER_ICON_SIZE,
 } from './SprintConstants.js';
 import {
   sprintConfig,
@@ -449,31 +450,46 @@ export function ExamSprintHub({ onBack }) {
                   class="exam-sprint-family-chips"
                   role="list"
                 >
-                  {wordFamily.map((wf) => (
-                    <div
-                      key={wf.hanzi}
-                      class="exam-sprint-family-chip"
-                      role="listitem"
-                    >
-                      <span class="exam-sprint-family-head">
-                        <span
-                          class="exam-sprint-family-hanzi"
-                          lang="zh-CN"
+                  {wordFamily.map((wf) => {
+                    const chipLabel = `${SPRINT_UI_LABELS.playWordFamilyAudioPrefix} ${wf.hanzi}`;
+                    return (
+                      <div
+                        key={wf.hanzi}
+                        role="listitem"
+                      >
+                        <button
+                          type="button"
+                          class="exam-sprint-family-chip"
+                          onClick={(e) => playPrebuiltAudio(wf.hanzi, wf.pinyin, e.currentTarget)}
+                          title={chipLabel}
+                          aria-label={chipLabel}
                         >
-                          {Array.from(wf.hanzi).map((ch, i) => (
+                          <span class="exam-sprint-family-head">
                             <span
-                              key={i}
-                              class={ch === rootChar ? 'is-root' : undefined}
+                              class="exam-sprint-family-hanzi"
+                              lang="zh-CN"
                             >
-                              {ch}
+                              {Array.from(wf.hanzi).map((ch, i) => (
+                                <span
+                                  key={i}
+                                  class={ch === rootChar ? 'is-root' : undefined}
+                                >
+                                  {ch}
+                                </span>
+                              ))}
                             </span>
-                          ))}
-                        </span>
-                        <span class="exam-sprint-family-pinyin">{wf.pinyin}</span>
-                      </span>
-                      <span class="exam-sprint-family-meaning">{wf.meaning}</span>
-                    </div>
-                  ))}
+                            <span class="exam-sprint-family-pinyin">{wf.pinyin}</span>
+                            <Volume2
+                              size={FAMILY_SPEAKER_ICON_SIZE}
+                              class="exam-sprint-family-speaker"
+                              aria-hidden="true"
+                            />
+                          </span>
+                          <span class="exam-sprint-family-meaning">{wf.meaning}</span>
+                        </button>
+                      </div>
+                    );
+                  })}
                 </div>
               </section>
             )}

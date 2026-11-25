@@ -23,6 +23,7 @@ export const BATCH_SPLIT_RATIO = 0.5;
 export const SPRINT_AUTO_FLIP_LIMIT_MS = 3000;
 export const COUNTDOWN_TICK_MS = 60000;
 export const TIMER_TICK_MS = 100;
+export const FAMILY_SPEAKER_ICON_SIZE = 13;
 
 export const DEFAULT_EXAM_DAYS_AHEAD = 21;
 export const MS_PER_DAY = 86400000;
@@ -89,6 +90,7 @@ export const SPRINT_UI_LABELS = {
   autoAudioBadge: 'Auto-Audio BẮT BUỘC',
   hanVietPrefix: 'Hán Việt:',
   wordFamilyPrefix: 'Chùm gốc chữ:',
+  playWordFamilyAudioPrefix: 'Nghe phát âm',
   pinyinPrompt: 'Gõ Pinyin không dấu (kiểm tra cặp dễ nhầm):',
   backToHub: 'Quay lại Lộ trình thi',
   flipNow: 'Lật thẻ & nghe phát âm',
