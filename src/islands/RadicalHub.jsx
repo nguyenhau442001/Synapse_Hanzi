@@ -114,8 +114,6 @@ export function setVocabSubTab(tab) {
       screenTopicPicker.classList.add('vocab-tab-fade');
     }
   }
-  const versionControls = document.getElementById('pickerVersionControls');
-  if (versionControls) versionControls.hidden = tab !== 'level';
   if (tab === 'topic' && typeof renderTopicGrid === 'function') renderTopicGrid();
   if (typeof SpaRouter !== 'undefined' && !SpaRouter.isNavigatingFromPopstate()) {
     SpaRouter.pushView({ view: 'vocab', subTab: tab });
@@ -177,10 +175,6 @@ export function setPrimaryTab(tab, options) {
   }
   if (tab !== 'gradedReading') {
     document.body.classList.remove('graded-pinyin-hidden', 'graded-pinyin-new', 'graded-translation-hidden', 'graded-srs-plain', 'graded-paper-sepia', 'graded-story-active');
-  }
-  const versionControls = document.getElementById('pickerVersionControls');
-  if (versionControls) {
-    versionControls.hidden = (tab !== 'vocab') || (vocabSubTab !== 'level');
   }
   const dashboard = document.getElementById('learningDashboard');
   if (dashboard) dashboard.style.display = tab === 'vocab' ? '' : 'none';

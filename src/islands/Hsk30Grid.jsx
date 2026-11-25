@@ -9,33 +9,19 @@ export const DEFAULT_PICKER_VERSION = '3.0';
 export let pickerVersion = DEFAULT_PICKER_VERSION;
 
 export function getInitialPickerVersion() {
-  try {
-    const params = new URLSearchParams(window.location.search);
-    const paramVer = params.get('version');
-    if (paramVer === '2.0' || paramVer === '3.0') return paramVer;
-  } catch (e) {}
-  try {
-    const saved = localStorage.getItem(PICKER_VERSION_STORAGE_KEY);
-    if (saved === '2.0' || saved === '3.0') return saved;
-  } catch (e) {}
   return DEFAULT_PICKER_VERSION;
 }
 
-export function setPickerVersion(version) {
-  pickerVersion = version;
+export function setPickerVersion() {
+  pickerVersion = DEFAULT_PICKER_VERSION;
   if (typeof window !== 'undefined') {
-    window.pickerVersion = version;
+    window.pickerVersion = DEFAULT_PICKER_VERSION;
   }
-  try {
-    localStorage.setItem(PICKER_VERSION_STORAGE_KEY, version);
-  } catch (e) {}
-  const selector = document.getElementById('pickerVersionSelect');
-  if (selector) selector.value = version;
   const g20 = document.getElementById('levelGrid20');
   const g30 = document.getElementById('levelGrid30');
-  if (g20) g20.style.display = version === '2.0' ? '' : 'none';
-  if (g30) g30.style.display = version === '3.0' ? '' : 'none';
-  if (version === '3.0') renderHsk30Grid();
+  if (g20) g20.style.display = 'none';
+  if (g30) g30.style.display = '';
+  renderHsk30Grid();
 }
 
 export function hsk30KnownCount(level) {

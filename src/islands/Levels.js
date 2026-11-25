@@ -820,11 +820,8 @@ export function goBackToPicker() {
   if (overlay) overlay.remove();
 
   renderLevelProgress();
-  const pVersion = typeof pickerVersion !== 'undefined' ? pickerVersion : window.pickerVersion;
-  if (pVersion === '3.0') {
-    if (typeof renderHsk30Grid === 'function') renderHsk30Grid();
-    else if (typeof window.renderHsk30Grid === 'function') window.renderHsk30Grid();
-  }
+  if (typeof renderHsk30Grid === 'function') renderHsk30Grid();
+  else if (typeof window.renderHsk30Grid === 'function') window.renderHsk30Grid();
   renderLearningDashboard();
 
   if (typeof SpaRouter !== 'undefined' && !SpaRouter.isNavigatingFromPopstate()) {

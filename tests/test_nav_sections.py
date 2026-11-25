@@ -60,11 +60,11 @@ def test_tools_dropdown_is_removed():
         assert "primary-menu-trigger" not in text, css.name
 
 
-def test_toolbar_keeps_only_hsk_standard_picker():
-    cluster = soup().find(id="primaryToolbarCluster")
-    assert cluster.find(id="pickerVersionSelect") is not None
-    assert cluster.find("details") is None
-    assert len(cluster.find_all("button")) == 0
+def test_hsk_standard_picker_is_removed():
+    doc = soup()
+    assert doc.find(id="primaryToolbarCluster") is None
+    assert doc.find(id="pickerVersionControls") is None
+    assert doc.find(id="pickerVersionSelect") is None
 
 
 def test_sub_tabs_are_grouped_by_section():

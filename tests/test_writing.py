@@ -51,7 +51,7 @@ def test_writing_screen_is_wired_into_the_app():
     assert 'id="screenWriting"' in html
     assert 'id="primaryTabWriting"' in html and 'data-subtab="writing"' in html
     # Primary navigation: Viết sits right after Đọc
-    tabs = html[html.index('class="primary-tabs-group"'):html.index('id="primaryToolbarCluster"')]
+    tabs = html[html.index('class="primary-tabs-group"'):html.index('id="pickerControls"')]
     assert tabs.index('id="primaryNavReading"') < tabs.index('id="primaryNavWriting"') < tabs.index('id="primaryTabReview"')
     assert "navId: 'primaryNavWriting'" in read("src/islands/NavSections.js")
     hub = read("src/islands/RadicalHub.jsx")

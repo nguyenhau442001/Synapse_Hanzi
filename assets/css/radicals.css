@@ -30,15 +30,6 @@
 }
 .primary-tab:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
-/* 2. Toolbar cluster: HSK standard picker */
-.primary-toolbar-cluster {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  margin-left: auto;
-  flex-shrink: 0;
-}
-
 .nav-tab-icon {
   display: block;
   width: 16px;
@@ -118,58 +109,6 @@
   .primary-tabs-group { order: 1; }
   .primary-tabs-group .primary-tab { min-height: 40px; padding: 8px 12px; }
   .primary-tabs > .picker-controls { order: 2; }
-
-  /* HSK standard picker on its own row on mobile */
-  .primary-toolbar-cluster {
-    order: 3;
-    width: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-  }
-  .picker-version-control {
-    width: auto;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-  }
-  .picker-version-label {
-    display: inline-flex;
-    align-items: center;
-    color: var(--text-secondary);
-    font-size: 13px;
-    font-weight: 550;
-    white-space: nowrap;
-  }
-  .picker-version-select-wrap {
-    display: inline-flex;
-    align-items: center;
-  }
-  .picker-version-control select {
-    min-height: 38px;
-    height: 38px;
-    padding: 0 28px 0 10px;
-    text-align: center;
-    text-align-last: center;
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 36px;
-    border-radius: 10px;
-    border: 1px solid var(--border);
-    background: var(--card-bg);
-    color: var(--text-primary);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .picker-version-control select,
-  .picker-version-chevron {
-    transition: none !important;
-    animation: none !important;
-  }
 }
 
   /* Safe scrolling clearance for content above bottom nav */

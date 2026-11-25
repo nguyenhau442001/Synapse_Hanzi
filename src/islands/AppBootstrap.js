@@ -203,12 +203,6 @@ export function initAppEventBindings() {
   // Top sections and their sub-tabs (#skillSubTabs) are bound in NavSections.js.
   initNavSections();
 
-  // HSK version select
-  onId('pickerVersionSelect', 'change', e => {
-    if (typeof setPickerVersion === 'function') setPickerVersion(e.target.value);
-    else if (window.setPickerVersion) window.setPickerVersion(e.target.value);
-  });
-
   // Vocab sub-tabs
   const handleVocabSubTab = tab => {
     if (typeof setVocabSubTab === 'function') setVocabSubTab(tab);
