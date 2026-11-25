@@ -598,13 +598,13 @@ body.home-screen .dashboard-bottom-widgets .hw-card:hover {
   gap: 8px;
 }
 .dashboard-bottom-widgets .hw-actions .hw-primary-btn {
-  min-height: 38px;
   font-size: 13px;
 }
+/* Square speaker matching the primary button's enforced 46px height. */
 .dashboard-bottom-widgets .hw-actions .hw-icon-btn {
-  width: 38px;
-  height: 38px;
-  flex: 0 0 38px;
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
 }
 
 @media (max-width: 900px) {

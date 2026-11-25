@@ -119,9 +119,10 @@ body:not(.home-screen) .home-widgets { display: none; }
 .hw-example-zh-row {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 8px;
 }
+.hw-example-zh-row .hw-example-zh { flex: 1 1 auto; min-width: 0; }
 .hw-example-sound-btn {
   display: inline-flex;
   align-items: center;
@@ -146,7 +147,8 @@ body:not(.home-screen) .home-widgets { display: none; }
 .hw-example-zh { font-size: 15px; line-height: 1.5; }
 .hw-example-vi { margin-top: 4px !important; color: var(--text-secondary); font-size: 12.5px; line-height: 1.45; }
 .hw-example u { text-decoration-color: var(--accent); text-underline-offset: 3px; }
-.hw-actions { display: flex; gap: 10px; margin-top: 16px; }
+.hw-actions { display: flex; align-items: center; gap: 10px; margin-top: 16px; }
+.hw-card .hw-actions .hw-primary-btn { margin: 0 !important; }
 
 /* Lịch ôn 7 ngày tới */
 .hw-bars {
