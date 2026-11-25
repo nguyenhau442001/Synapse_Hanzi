@@ -115,6 +115,7 @@ When designing or implementing new features/components, agents MUST strictly fol
 - Always generate prebuilt Mandarin audio using **Microsoft Edge Neural TTS** (`zh-CN-XiaoxiaoNeural`).
 - Do not use Web Speech API in client code; prebuilt audio is the sole standard.
 - Audio clips must be normalized using ffmpeg: 24kHz Mono, 64kbps MP3, silence trimming, and EBU R128 loudness normalization (`loudnorm=I=-18:TP=-2:LRA=7`).
+- **Prioritize Complete Phrasing & Natural Pauses**: Always ensure proper Chinese punctuation and clause breaks (e.g. `，`, `：`, `他说，…`) in source text and TTS inputs so every syllable is articulated clearly without coarticulation slurring; never trim silence so aggressively that natural pauses or terminal finals are clipped.
 - Keep level manifests and `database/prebuilt_audio/hanzi_audio_map.json` in sync after audio generation.
 
 ## Project Preference
