@@ -87,17 +87,40 @@ const hubLimit = signal(PAGE_SIZE);
 const quizState = signal({});          // qId -> { selectedIdx, isCorrect }
 const playingId = signal(null);        // sentence id, 'full-story' or null
 
-const PREFS_KEY = 'synapse_graded_prefs_v1';
+const PREFS_KEY = 'synapse_graded_prefs_v2';
+const LEGACY_PREFS_KEY = 'synapse_graded_prefs_v1';
+const DEFAULT_READER_PREFS = {
+  showPinyin: false,
+  pinyinMode: 'off',
+  showTranslation: false,
+  showSrsHighlights: true,
+  fontSize: null,
+  paper: 'cream',
+};
+
 const prefs = signal((() => {
   // pinyinMode: 'all' | 'new' (only new and over-level words) | 'off'; fontSize: px or null (CSS default)
-  const base = { showPinyin: true, pinyinMode: 'all', showTranslation: true, showSrsHighlights: true, fontSize: null, paper: 'cream' };
+  const base = { ...DEFAULT_READER_PREFS };
   try {
     const saved = localStorage.getItem(PREFS_KEY);
     if (saved) {
       const parsed = JSON.parse(saved) || {};
       const merged = Object.assign(base, parsed);
-      if (!parsed.pinyinMode) merged.pinyinMode = parsed.showPinyin === false ? 'off' : 'all';
+      if (!parsed.pinyinMode) merged.pinyinMode = parsed.showPinyin === true ? 'all' : 'off';
       return merged;
+    }
+    // Migrate non-toggle display prefs from v1 while enforcing the new hidden defaults for pinyin & translation.
+    const legacySaved = localStorage.getItem(LEGACY_PREFS_KEY);
+    if (legacySaved) {
+      const legacy = JSON.parse(legacySaved) || {};
+      const migrated = {
+        ...base,
+        showSrsHighlights: legacy.showSrsHighlights !== undefined ? legacy.showSrsHighlights : base.showSrsHighlights,
+        fontSize: legacy.fontSize !== undefined ? legacy.fontSize : base.fontSize,
+        paper: legacy.paper || base.paper,
+      };
+      try { localStorage.setItem(PREFS_KEY, JSON.stringify(migrated)); } catch (e) { /* quota */ }
+      return migrated;
     }
   } catch (e) { /* corrupt prefs */ }
   return base;
@@ -1391,7 +1414,7 @@ const imageExpanded = signal(false);
 const readerPanelOpen = signal(false);
 const srsTick = signal(0); // bumped after bulk SRS adds so word counts re-render
 
-const PINYIN_MODES = [['all', 'Pinyin', 'Hiện pinyin cho mọi từ'], ['new', 'Từ mới', 'Chỉ hiện pinyin cho từ mới và từ vượt cấp'], ['off', 'Tắt', 'Ẩn pinyin']];
+const PINYIN_MODES = [['all', 'Pinyin', 'Hiện pinyin cho mọi từ'], ['new', 'Từ mới', 'Chỉ hiện pinyin cho từ mới và từ vượt cấp'], ['off', 'Ẩn', 'Ẩn toàn bộ pinyin']];
 const LEGEND_ITEMS = [['new', '新', 'Từ mới'], ['learning', '学', 'Đang học'], ['overlevel', '难', 'Vượt cấp'], ['mastered', '会', 'Đã thuộc']];
 
 // Unique vocabulary words of a story, split by SRS status and level.
