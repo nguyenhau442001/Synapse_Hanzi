@@ -291,6 +291,12 @@ export const SpaRouter = (function() {
     // Hide every full-screen view except the target one; the branches below
     // only need to open their own view.
     if (state.view !== 'todayReviews') {
+      // Leaving an active review session: restore the home chrome it hid (vocab hub, dashboard, tabs),
+      // otherwise popping back to home renders a blank page.
+      const reviewScreen = document.getElementById('screenTodayReviews');
+      const inReview = document.body.classList.contains('today-reviews-focus-mode')
+        || (reviewScreen && reviewScreen.style.display !== 'none');
+      if (inReview && typeof window.closeTodayReviews === 'function') window.closeTodayReviews();
       document.body.classList.remove('today-reviews-focus-mode');
       hideScreen('screenTodayReviews');
     }

@@ -273,6 +273,14 @@ function ReviewForecast() {
 
 // ---- Từ hay quên (feeds the quick-access drawer) -------------------------------------------------
 
+// A card is urgent while it is still weak: just failed, relearning, or a lapsed card that is due again.
+// Lapsed cards rated Hard/Good/Easy into the future drop out (lapses never decrease, so it alone can't gate).
+function isUrgentCard(card, now) {
+  if (!card) return false;
+  if (card.last_rating === 'again' || card.state === SRS.State.Relearning || card.status === 'unknown') return true;
+  return card.lapses > 0 && SRS.isDue(card, now);
+}
+
 function topForgottenCards(snapshot, limit = HOME_FORGOTTEN_LIMIT) {
   const items = [];
   homeLevelKeys().forEach((level) => {
@@ -280,7 +288,7 @@ function topForgottenCards(snapshot, limit = HOME_FORGOTTEN_LIMIT) {
     const cards = snapshot.cardsByLevel[level];
     if (cards) {
       Object.entries(cards).forEach(([id, card]) => {
-        if (card && (card.lapses > 0 || card.last_rating === 'again' || card.state === SRS.State.Relearning || card.status === 'unknown')) {
+        if (isUrgentCard(card, snapshot.now)) {
           items.push({ level, id, card });
         }
       });
