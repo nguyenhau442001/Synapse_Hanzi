@@ -1,18 +1,13 @@
-// "Chữ liên quan" on the flashcard: an inverted index over all HSK words and the hanzi
-// decompositions finds words sharing a character, a phonetic component or a radical.
-// Preact port of the former assets/js/related-words.js; the index/query logic is unchanged and the
-// chips, back button and "Ôn thêm nhóm" toast render the same markup.
+// "Chữ liên quan" on the flashcard: loads all HSK words + hanzi decompositions, then shows the
+// related words grouped by relation (other reading / same character / same phonetic component /
+// same radical). Index and query live in RelatedWordsQuery.js.
 import { render } from 'preact';
+import { ArrowLeft } from 'lucide-preact';
 import { onDomReady } from './domReady';
 import { APP_TIMEOUTS } from './AppTimeouts';
+import { createRelatedIndex, queryRelated, RELATION_ORDER } from './RelatedWordsQuery';
 
 /* global currentLevel, progress, activeStudyWord -- classic-script globals */
-
-// Danh sách các bộ thủ cực kỳ phổ biến - xuất hiện ở quá nhiều chữ
-// Chỉ dùng khi nhóm 1 (cùng chữ) và nhóm 2 (cùng âm) không đủ kết quả
-const COMMON_RADICALS = new Set([
-  '口', '氵', '亻', '扌', '艹', '木', '日', '月', '心', '忄', '土', '女', '纟', '讠', '饣', '辶'
-]);
 
 // Bảng ánh xạ xếp hạng level để so sánh cấp độ học
 const LEVEL_RANK = {
@@ -40,11 +35,6 @@ function getLevelRank(lvlKey) {
   return m ? parseInt(m[0], 10) : 99;
 }
 
-// Loại bỏ thanh điệu pinyin để đối chiếu âm biểu thanh (phonetic base)
-function stripTone(str) {
-  return window.stripPinyinTones(str).trim();
-}
-
 // Singleton Inverted Index
 let relatedIndex = null;
 let indexPromise = null;
@@ -52,12 +42,7 @@ let indexPromise = null;
 // Lịch sử duyệt qua chip "Chữ liên quan" để quay lại thẻ trước
 const relatedNavHistory = [];
 
-/**
- * Khởi tạo Inverted Index 1 lần duy nhất từ toàn bộ từ vựng và chiết tự chữ Hán.
- * Maps được tạo gồm:
- * - charToWords: Hanzi char -> Danh sách từ vựng chứa chữ đó
- * - compToWords: Component char -> Danh sách { word, char, comp, isPhonetic }
- */
+/** Builds the related-words index once from all vocab levels and the hanzi decompositions. */
 export async function buildRelatedIndex() {
   if (relatedIndex) return relatedIndex;
   if (indexPromise) return indexPromise;
@@ -93,73 +78,12 @@ export async function buildRelatedIndex() {
       const [decompData, ...vocabLists] = await Promise.all([decompPromise, ...vocabPromises]);
       const allWords = vocabLists.flat();
 
-      const charToWords = new Map();
-      const compToWords = new Map();
-      const wordLookup = new Map(); // `${levelKey}_${id}` -> word
-
-      // 1. Dựng map chữ -> từ (whole-char)
-      allWords.forEach(w => {
-        wordLookup.set(`${w.levelKey}_${w.id}`, w);
-        const raw = String(w.hanzi || '').replace(/[（\(].*?[）\)]/g, '').trim();
-        const chars = Array.from(raw).filter(ch => /\p{Script=Han}/u.test(ch));
-        const uniqueChars = Array.from(new Set(chars));
-
-        uniqueChars.forEach(ch => {
-          if (!charToWords.has(ch)) charToWords.set(ch, []);
-          charToWords.get(ch).push(w);
-
-          // 2. Dựng map thành tố cấu tạo chữ (phonetic & radical)
-          const d = decompData ? decompData[ch] : null;
-          if (d && Array.isArray(d.components)) {
-            const chTone = stripTone(d.pinyin || w.pinyin);
-
-            d.components.forEach(comp => {
-              if (!comp || !comp.char) return;
-              const compChar = comp.char;
-              const compTone = stripTone(comp.pinyin || (decompData[compChar] && decompData[compChar].pinyin));
-
-              // Quy tắc xác định thành tố gợi âm (phonetic):
-              // - Thành tố có pinyin không dấu trùng âm với chữ (ví dụ 妈 mā và 马 mǎ -> 'ma')
-              // - Hoặc âm thành tố và chữ có cùng vần kết thúc
-              const isPhonetic = Boolean(
-                compTone && chTone && (
-                  compTone === chTone ||
-                  (chTone.length >= 3 && compTone.length >= 3 && (chTone.endsWith(compTone) || compTone.endsWith(chTone)))
-                )
-              );
-
-              if (!compToWords.has(compChar)) compToWords.set(compChar, []);
-              compToWords.get(compChar).push({
-                word: w,
-                char: ch,
-                charPy: chTone,
-                compChar,
-                compName: comp.name || '',
-                isPhonetic
-              });
-            });
-          }
-        });
-      });
-
-      relatedIndex = {
-        allWords,
-        charToWords,
-        compToWords,
-        decompData: decompData || {},
-        wordLookup
-      };
+      relatedIndex = createRelatedIndex(decompData || {}, allWords);
 
       return relatedIndex;
     } catch (err) {
       console.warn('Lỗi khởi tạo relatedIndex:', err);
-      relatedIndex = {
-        allWords: [],
-        charToWords: new Map(),
-        compToWords: new Map(),
-        decompData: {},
-        wordLookup: new Map()
-      };
+      relatedIndex = createRelatedIndex({}, []);
       return relatedIndex;
     } finally {
       indexPromise = null;
@@ -169,127 +93,10 @@ export async function buildRelatedIndex() {
   return indexPromise;
 }
 
-/**
- * Truy vấn danh sách từ liên quan cho một từ mục tiêu.
- * Tuân thủ thứ tự ưu tiên:
- * 1. whole-char
- * 2. phonetic
- * 3. radical (hiếm trước, phổ biến sau)
- * Trả về mảng 3-5 phần tử đã sắp xếp.
- */
+/** Related words for the target card, grouped by relation (see RelatedWordsQuery.js). */
 export function queryRelatedWords(targetWord, targetLevelKey) {
-  if (!relatedIndex || !targetWord || !targetWord.hanzi) return [];
-
-  const currentRank = getLevelRank(targetLevelKey || (typeof currentLevel !== 'undefined' ? currentLevel : 'hsk1'));
-  const rawTarget = String(targetWord.hanzi || '').replace(/[（\(].*?[）\)]/g, '').trim();
-  const targetChars = Array.from(rawTarget).filter(ch => /\p{Script=Han}/u.test(ch));
-  if (targetChars.length === 0) return [];
-
-  const seenWordKeys = new Set([`${targetLevelKey}_${targetWord.id}`, targetWord.hanzi]);
-
-  const wholeCharMatches = [];
-  const phoneticMatches = [];
-  const rareRadicalMatches = [];
-  const commonRadicalMatches = [];
-
-  // Nhóm 1: whole-char (Cùng chữ trong từ ghép)
-  targetChars.forEach(ch => {
-    const list = relatedIndex.charToWords.get(ch) || [];
-    list.forEach(w => {
-      if (w.levelRank > currentRank) return; // Không spoil cấp cao hơn
-      const key = `${w.levelKey}_${w.id}`;
-      if (seenWordKeys.has(key) || seenWordKeys.has(w.hanzi)) return;
-      seenWordKeys.add(key);
-      seenWordKeys.add(w.hanzi);
-
-      wholeCharMatches.push({
-        word: w,
-        type: 'whole-char',
-        typeLabel: 'Cùng chữ',
-        shared: ch,
-        score: 100
-      });
-    });
-  });
-
-  // Nhóm 2 & 3: phonetic & radical từ các thành tố của chữ mục tiêu
-  targetChars.forEach(ch => {
-    const d = relatedIndex.decompData[ch];
-    if (!d || !Array.isArray(d.components)) return;
-    const chTone = stripTone(d.pinyin || targetWord.pinyin);
-
-    d.components.forEach(comp => {
-      if (!comp || !comp.char) return;
-      const compChar = comp.char;
-      const compTone = stripTone(comp.pinyin || (relatedIndex.decompData[compChar] && relatedIndex.decompData[compChar].pinyin));
-
-      // Kiểm tra xem thành tố này có phải âm biểu thanh của từ gốc không
-      const targetIsPhonetic = Boolean(
-        compTone && chTone && (
-          compTone === chTone ||
-          (chTone.length >= 3 && compTone.length >= 3 && (chTone.endsWith(compTone) || compTone.endsWith(chTone)))
-        )
-      );
-
-      const list = relatedIndex.compToWords.get(compChar) || [];
-      list.forEach(item => {
-        const w = item.word;
-        if (w.levelRank > currentRank) return; // Không spoil cấp cao
-        const key = `${w.levelKey}_${w.id}`;
-        if (seenWordKeys.has(key) || seenWordKeys.has(w.hanzi)) return;
-
-        // Cùng âm (phonetic) nếu:
-        // 1. Cả 2 chữ đều dùng chung thành tố mang tính gợi âm
-        // 2. Hoặc cả 2 chữ có cùng âm đọc cơ sở (stripTone) và dùng chung thành tố này
-        const itemChTone = stripTone(item.charPy || w.pinyin);
-        const isPhonetic = Boolean(
-          (targetIsPhonetic && item.isPhonetic) ||
-          (chTone && itemChTone && chTone === itemChTone && (targetIsPhonetic || item.isPhonetic))
-        );
-        seenWordKeys.add(key);
-        seenWordKeys.add(w.hanzi);
-
-        if (isPhonetic) {
-          phoneticMatches.push({
-            word: w,
-            type: 'phonetic',
-            typeLabel: 'Cùng âm',
-            shared: compChar,
-            score: 80
-          });
-        } else if (COMMON_RADICALS.has(compChar)) {
-          commonRadicalMatches.push({
-            word: w,
-            type: 'radical',
-            typeLabel: 'Cùng bộ',
-            shared: compChar,
-            score: 20
-          });
-        } else {
-          rareRadicalMatches.push({
-            word: w,
-            type: 'radical',
-            typeLabel: 'Cùng bộ',
-            shared: compChar,
-            score: 50
-          });
-        }
-      });
-    });
-  });
-
-  // Tổng hợp và cắt lọc theo đúng quy tắc:
-  // - Ưu tiên nhóm 1 (cùng chữ) và nhóm 2 (cùng âm)
-  // - Nhóm 3 (cùng bộ hiếm)
-  // - Nhóm bộ phổ biến (khẩu, thuỷ, nhân, ...) chỉ lấy khi chưa đủ 3-5 chips
-  let combined = [...wholeCharMatches, ...phoneticMatches, ...rareRadicalMatches];
-  if (combined.length < 5) {
-    const needed = 5 - combined.length;
-    combined = combined.concat(commonRadicalMatches.slice(0, needed));
-  }
-
-  // Giới hạn tối đa 5 chips
-  return combined.slice(0, 5);
+  const levelKey = targetLevelKey || (typeof currentLevel !== 'undefined' ? currentLevel : 'hsk1');
+  return queryRelated(relatedIndex, targetWord, levelKey, getLevelRank(levelKey));
 }
 
 /**
@@ -319,7 +126,7 @@ function formatShortMeaning(meaning) {
   if (!meaning) return '';
   const clean = String(meaning).replace(/[（\(].*?[）\)]/g, '').trim();
   const firstPart = clean.split(/[,;\/，；]/)[0].trim();
-  return firstPart.length > 14 ? firstPart.slice(0, 13) + '…' : firstPart;
+  return firstPart.length > RELATED_MEANING_MAX_CHARS ? firstPart.slice(0, RELATED_MEANING_MAX_CHARS - 1) + '…' : firstPart;
 }
 
 const statusInfo = {
@@ -328,56 +135,106 @@ const statusInfo = {
   unseen: ['related-chip--unseen', 'Chưa học']
 };
 
-function RelatedChips({ relatedList, lastItem }) {
-  const hasMixedTypes = new Set(relatedList.map((item) => item.type)).size > 1;
-  const singleTypeItem = !hasMixedTypes && relatedList.length > 0 ? relatedList[0] : null;
-  const showHeader = Boolean(lastItem) || Boolean(singleTypeItem);
+const RELATED_LABELS = Object.freeze({
+  LIST: 'Danh sách chữ liên quan',
+  BACK_PREFIX: 'Quay lại',
+  BACK_TITLE_PREFIX: 'Quay lại thẻ trước',
+  STATUS_PREFIX: 'Trạng thái',
+});
+const RELATED_MEANING_MAX_CHARS = 14;
+const BACK_ICON_SIZE = 12;
 
+// "Cùng bộ 扌 Thủ" / "Cùng thanh phù 矣 Hĩ" / "Đa âm": says *why* the group is related.
+function groupHeading(item) {
+  if (item.type === 'polyphone') return item.typeLabel;
+  return [item.typeLabel, item.shared, item.sharedName].filter(Boolean).join(' ');
+}
+
+function groupMatches(relatedList) {
+  const groups = new Map();
+  RELATION_ORDER.forEach((type) => {
+    relatedList.filter((item) => item.type === type).forEach((item) => {
+      const key = `${type}:${item.shared}`;
+      if (!groups.has(key)) groups.set(key, { key, type, heading: groupHeading(item), items: [] });
+      groups.get(key).items.push(item);
+    });
+  });
+  return Array.from(groups.values());
+}
+
+function RelatedChip({ item }) {
+  const w = item.word;
+  const shortMean = formatShortMeaning(w.meaning);
+  const [statusClass, statusTitle] = statusInfo[getWordLearnStatus(w.levelKey, w.id)];
+  const isWide = (w.hanzi && w.hanzi.length >= 4) || (w.pinyin && w.pinyin.length >= 12);
+  return (
+    <button
+      type="button"
+      class={`related-chip ${statusClass}${isWide ? ' related-chip--wide' : ''}`}
+      onClick={(e) => { e.stopPropagation(); navigateToRelatedWord(w.levelKey, w.id, w.hanzi); }}
+      title={`${w.hanzi} (${w.pinyin} - ${shortMean}) · ${RELATED_LABELS.STATUS_PREFIX}: ${statusTitle}`}
+      role="listitem"
+    >
+      <div class="related-chip-main">
+        <span
+          class="related-chip-status"
+          aria-label={statusTitle}
+        />
+        <span
+          class="related-chip-hanzi"
+          lang="zh-CN"
+        >
+          {w.hanzi}
+        </span>
+        <span class="related-chip-pinyin">{w.pinyin || ''}</span>
+      </div>
+      {shortMean ? <span class="related-chip-mean">{shortMean}</span> : null}
+    </button>
+  );
+}
+
+function RelatedChips({ relatedList, lastItem }) {
+  const groups = groupMatches(relatedList);
   return (
     <>
-      {showHeader && (
+      {lastItem && (
         <div class="card-related-header">
-          {singleTypeItem ? (
-            <span class={`related-chip-tag related-chip-tag--${singleTypeItem.type} related-group-tag`}>
-              {singleTypeItem.typeLabel}
-            </span>
-          ) : <span />}
-          {lastItem && (
-            <button type="button" class="card-related-back-btn" onClick={(e) => { e.stopPropagation(); goBackRelatedCard(); }}
-              title={`Quay lại thẻ trước: ${lastItem.hanzi}`}>
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <line x1="19" y1="12" x2="5" y2="12"></line>
-                <polyline points="12 19 5 12 12 5"></polyline>
-              </svg>{' '}
-              <span>{`Quay lại: ${lastItem.hanzi}`}</span>
-            </button>
-          )}
+          <button
+            type="button"
+            class="card-related-back-btn"
+            onClick={(e) => { e.stopPropagation(); goBackRelatedCard(); }}
+            title={`${RELATED_LABELS.BACK_TITLE_PREFIX}: ${lastItem.hanzi}`}
+          >
+            <ArrowLeft
+              size={BACK_ICON_SIZE}
+              aria-hidden="true"
+            />
+            <span>{`${RELATED_LABELS.BACK_PREFIX}: ${lastItem.hanzi}`}</span>
+          </button>
         </div>
       )}
-      <div class="card-related-chips" role="list" aria-label="Danh sách chữ liên quan">
-        {relatedList.map((item) => {
-          const w = item.word;
-          const shortMean = formatShortMeaning(w.meaning);
-          const [statusClass, statusTitle] = statusInfo[getWordLearnStatus(w.levelKey, w.id)];
-          const isWide = (w.hanzi && w.hanzi.length >= 4) || (w.pinyin && w.pinyin.length >= 12);
-          return [
-            ' ',
-            <button key={`${w.levelKey}_${w.id}`} type="button" class={`related-chip ${statusClass}${isWide ? ' related-chip--wide' : ''}`}
-              onClick={(e) => { e.stopPropagation(); navigateToRelatedWord(w.levelKey, w.id, w.hanzi); }}
-              title={`Nhấn để học thẻ '${w.hanzi}' (${w.pinyin} - ${shortMean}) · Trạng thái: ${statusTitle}`}
-              role="listitem">
-              <div class="related-chip-main">
-                <span class="related-chip-hanzi" lang="zh-CN">{w.hanzi}</span>{' '}
-                <span class="related-chip-pinyin">{w.pinyin || ''}</span>{' '}
-                {hasMixedTypes && (
-                  <span class={`related-chip-tag related-chip-tag--${item.type}`}>{item.typeLabel}</span>
-                )}
-              </div>{' '}
-              {shortMean ? <span class="related-chip-mean">{shortMean}</span> : null}
-            </button>
-          ];
-        })}
-      </div>
+      {groups.map((group) => (
+        <section
+          key={group.key}
+          class="related-group"
+        >
+          <span class={`related-chip-tag related-chip-tag--${group.type} related-group-tag`}>
+            {group.heading}
+          </span>
+          <div
+            class="card-related-chips"
+            role="list"
+            aria-label={`${RELATED_LABELS.LIST}: ${group.heading}`}
+          >
+            {group.items.map((item) => (
+              <RelatedChip
+                key={`${item.word.levelKey}_${item.word.id}`}
+                item={item}
+              />
+            ))}
+          </div>
+        </section>
+      ))}
     </>
   );
 }

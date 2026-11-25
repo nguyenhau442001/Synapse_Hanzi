@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "level": "hsk30_8",
+  "engine": "EdgeTTS",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "speed": 1.0,
+  "items": {
+    "1": {
+      "example": "database/prebuilt_audio/hsk30_8/examples/0001.mp3?v=494016aab2ee"
+    }
+  }
+}

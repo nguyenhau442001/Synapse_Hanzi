@@ -530,6 +530,16 @@ body.hide-illustrations .card .card-visual-col {
   gap: 8px;
   margin-bottom: 4px;
 }
+.related-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+.related-group + .related-group {
+  margin-top: 8px;
+}
 .related-group-tag {
   font-size: 10.5px;
   padding: 2px 7px;
@@ -620,11 +630,27 @@ body.hide-illustrations .card .card-visual-col {
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
+.related-chip-tag--polyphone {
+  background: rgba(220, 38, 38, 0.12);
+  color: #b91c1c;
+}
+:root[data-theme="dark"] .related-chip-tag--polyphone {
+  background: rgba(248, 113, 113, 0.22);
+  color: #fca5a5;
+}
 .related-chip-tag--whole-char {
   background: rgba(37, 99, 235, 0.14);
   color: #1d4ed8;
 }
-:root[data-theme="dark"] .related-chip-tag--whole-char {
+:root[data-theme="dark"] .related-chip-tag--polyphone {
+  background: rgba(220, 38, 38, 0.12);
+  color: #b91c1c;
+}
+:root[data-theme="dark"] .related-chip-tag--polyphone {
+  background: rgba(248, 113, 113, 0.22);
+  color: #fca5a5;
+}
+.related-chip-tag--whole-char {
   background: rgba(96, 165, 250, 0.22);
   color: #93c5fd;
 }
@@ -657,27 +683,19 @@ body.hide-illustrations .card .card-visual-col {
   opacity: 0.95;
 }
 
-/* Trạng thái màu sắc của Chip: Xanh = Đã nhớ, Cam = Chưa nhớ, Xám = Chưa học */
-.related-chip--known {
-  background: var(--state-known-bg);
-  border-color: var(--state-known-border);
-  color: var(--state-known);
+/* Learn status as a small dot, so every chip keeps the same neutral surface
+   (a filled chip read as "selected"). Green = known, orange = due, grey = unseen. */
+.related-chip-status {
+  width: 7px;
+  height: 7px;
+  flex: 0 0 7px;
+  border-radius: 50%;
+  background: var(--border-default, #cbd5e1);
 }
-.related-chip--known .related-chip-pinyin { color: var(--state-known); }
-
-.related-chip--unknown {
-  background: var(--state-due-bg);
-  border-color: var(--state-due-border);
-  color: var(--state-due);
-}
-.related-chip--unknown .related-chip-pinyin { color: var(--state-due); }
-
-.related-chip--unseen {
-  background: var(--surface-card, #ffffff);
-  border-color: var(--border-default, #cbd5e1);
-  color: var(--text-primary, #334155);
-}
-:root[data-theme="dark"] .related-chip--unseen {
+.related-chip--known .related-chip-status { background: var(--state-known); }
+.related-chip--unknown .related-chip-status { background: var(--state-due); }
+.related-chip--unseen .related-chip-status { background: var(--border-default, #cbd5e1); }
+:root[data-theme="dark"] .related-chip {
   background: rgba(255, 255, 255, 0.05);
   border-color: rgba(255, 255, 255, 0.14);
   color: #cbd5e1;

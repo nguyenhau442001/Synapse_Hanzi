@@ -222,6 +222,66 @@ def get_makemeahanzi_entries():
                     pass
     return entries
 
+COMPONENT_ROLE_RADICAL = 'radical'
+COMPONENT_ROLE_PHONETIC = 'phonetic'
+COMPONENT_ROLE_SEMANTIC = 'semantic'
+COMPONENT_ROLE_OTHER = 'component'
+HANZI_WRITER_DATA_DIR = ROOT / 'node_modules/hanzi-writer-data'
+
+
+def _radical_key(ch):
+    """Normalizes radical variants (扌 ~ 手, 讠 ~ 言) so they compare equal."""
+    return RADICAL_ALIASES.get(ch, ch)
+
+
+def _load_rad_strokes(ch):
+    path = HANZI_WRITER_DATA_DIR / f'{ch}.json'
+    if not path.exists():
+        return None
+    try:
+        return sorted(json.loads(path.read_text(encoding='utf-8')).get('radStrokes') or []) or None
+    except Exception:
+        return None
+
+
+def annotate_component_roles(database, raw_dict):
+    """Tags each component with its role in the character: the character's own (dictionary)
+    radical, its phonetic component, a semantic component, or a plain graphic component.
+    `is_radical` only says a component is a Kangxi radical; `role` says what it does here."""
+    for ch, entry in database.items():
+        meta = raw_dict.get(ch, {})
+        etymology = meta.get('etymology') or {}
+        radical = meta.get('radical', '')
+        phonetic = etymology.get('phonetic', '')
+        semantic = etymology.get('semantic', '')
+        rad_strokes = _load_rad_strokes(ch)
+        components = entry.get('components') or []
+        has_radical = any(c.get('char') and _radical_key(c['char']) == _radical_key(radical) for c in components)
+        for comp in components:
+            comp_char = comp.get('char', '')
+            if radical and _radical_key(comp_char) == _radical_key(radical):
+                role = COMPONENT_ROLE_RADICAL
+            elif not has_radical and rad_strokes and sorted(comp.get('stroke_indices') or []) == rad_strokes:
+                role = COMPONENT_ROLE_RADICAL
+            elif phonetic and comp_char == phonetic:
+                role = COMPONENT_ROLE_PHONETIC
+            elif semantic and comp_char == semantic:
+                role = COMPONENT_ROLE_SEMANTIC
+            else:
+                role = COMPONENT_ROLE_OTHER
+            comp['role'] = role
+    return database
+
+
+def annotate_existing_database():
+    """Adds component roles to the committed JSON without rebuilding (keeps manual edits)."""
+    database = json.loads(OUTPUT_FILE.read_text(encoding='utf-8'))
+    annotate_component_roles(database, get_makemeahanzi_entries())
+    with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
+        json.dump(database, f, ensure_ascii=False, indent=2)
+    print(f'Annotated component roles for {len(database)} characters.')
+
+
 def build_decomposition_database():
     print('Starting character decomposition build...')
     kangxi = load_kangxi_radicals()
@@ -361,6 +421,8 @@ def build_decomposition_database():
             'formula': formula
         }
 
+    annotate_component_roles(database, raw_dict)
+
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         json.dump(database, f, ensure_ascii=False, indent=2)
@@ -368,4 +430,8 @@ def build_decomposition_database():
     print(f'Successfully rebuilt decomposition database for {len(database)} characters!')
 
 if __name__ == '__main__':
-    build_decomposition_database()
+    import sys
+    if '--annotate-roles' in sys.argv:
+        annotate_existing_database()
+    else:
+        build_decomposition_database()

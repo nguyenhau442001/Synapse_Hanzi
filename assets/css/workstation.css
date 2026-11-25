@@ -5758,8 +5758,12 @@ body.flashcard-study-mode {
     max-width: none;
     height: 100%;
   }
+  /* The row spans the whole stage and the padding reserves the rail column, so the buttons
+     center under the card. Without max-width: none the 550px cap minus the rail padding
+     squeezed four buttons into ~126px. */
   body.flashcard-study-mode .study-card-grid.has-detail-rail ~ .rating-area,
   body.flashcard-study-mode .study-card-grid.has-detail-rail ~ .study-nav-controls {
+    max-width: none;
     padding-right: calc(var(--study-rail-width) + var(--study-grid-gap));
     box-sizing: border-box;
   }

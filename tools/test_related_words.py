@@ -51,155 +51,55 @@ class TestRelatedWordsFeature(unittest.TestCase):
         self.assertIn(".card:not(.is-flipped) .card-related-wrap", fc_css)
         self.assertIn(".card-related-wrap", ws_css)
 
-    def test_node_query_sample_words(self):
-        """Execute node test verifying related-words logic for 医院, 妈/妈妈, and 学校."""
+    def run_query(self, cases):
+        """Runs the real RelatedWordsQuery.js over HSK 1-6 + HSK 3.0 decks; cases = {name: [levelKey, hanzi, pinyin]}."""
         node_script = """
         const fs = require('fs');
-        const decomps = JSON.parse(fs.readFileSync('database/radicals/hanzi_decompositions.json', 'utf8'));
-        const hsk1 = JSON.parse(fs.readFileSync('database/vocabs/hsk1_vocabularies.json', 'utf8')).map(w => ({ ...w, levelKey: 'hsk1', levelRank: 1 }));
-        
-        const COMMON_RADICALS = new Set(['口', '氵', '亻', '扌', '艹', '木', '日', '月', '心', '忄', '土', '女', '纟', '讠', '饣', '辶']);
-        const TONE_CHAR_MAP = {
-          'ā':'a','á':'a','ǎ':'a','à':'a','ē':'e','é':'e','ě':'e','è':'e','ī':'i','í':'i','ǐ':'i','ì':'i',
-          'ō':'o','ó':'o','ǒ':'o','ò':'o','ū':'u','ú':'u','ǔ':'u','ù':'u','ǖ':'v','ǘ':'v','ǚ':'v','ǜ':'v','ü':'v'
-        };
-        function stripTone(s) {
-          return String(s || '').toLowerCase().replace(/[āáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜü]/g, c => TONE_CHAR_MAP[c] || c).trim();
-        }
-
-        const charToWords = new Map();
-        const compToWords = new Map();
-
-        hsk1.forEach(w => {
-          const raw = String(w.hanzi || '').replace(/[（\\(].*?[）\\)]/g, '').trim();
-          const chars = Array.from(raw).filter(ch => /\\p{Script=Han}/u.test(ch));
-          const uniqueChars = Array.from(new Set(chars));
-          uniqueChars.forEach(ch => {
-            if (!charToWords.has(ch)) charToWords.set(ch, []);
-            charToWords.get(ch).push(w);
-
-            const d = decomps[ch];
-            if (d && Array.isArray(d.components)) {
-              const chTone = stripTone(d.pinyin || w.pinyin);
-              d.components.forEach(comp => {
-                if (!comp || !comp.char) return;
-                const compChar = comp.char;
-                const compTone = stripTone(comp.pinyin || (decomps[compChar] && decomps[compChar].pinyin));
-                const isPhonetic = Boolean(
-                  compTone && chTone && (
-                    compTone === chTone ||
-                    (chTone.length >= 3 && compTone.length >= 3 && (chTone.endsWith(compTone) || compTone.endsWith(chTone)))
-                  )
-                );
-                if (!compToWords.has(compChar)) compToWords.set(compChar, []);
-                compToWords.get(compChar).push({ word: w, char: ch, charPy: chTone, compChar, isPhonetic });
-              });
-            }
-          });
-        });
-
-        function query(targetWord) {
-          const currentRank = 1;
-          const rawTarget = String(targetWord.hanzi || '').replace(/[（\\(].*?[）\\)]/g, '').trim();
-          const targetChars = Array.from(rawTarget).filter(ch => /\\p{Script=Han}/u.test(ch));
-          const seenWordKeys = new Set([`${targetWord.levelKey}_${targetWord.id}`, targetWord.hanzi]);
-          const wholeCharMatches = [];
-          const phoneticMatches = [];
-          const rareRadicalMatches = [];
-          const commonRadicalMatches = [];
-
-          targetChars.forEach(ch => {
-            const list = charToWords.get(ch) || [];
-            list.forEach(w => {
-              if (w.levelRank > currentRank) return;
-              const key = `${w.levelKey}_${w.id}`;
-              if (seenWordKeys.has(key) || seenWordKeys.has(w.hanzi)) return;
-              seenWordKeys.add(key);
-              seenWordKeys.add(w.hanzi);
-              wholeCharMatches.push({ word: w, type: 'whole-char' });
-            });
-          });
-
-          targetChars.forEach(ch => {
-            const d = decomps[ch];
-            if (!d || !Array.isArray(d.components)) return;
-            const chTone = stripTone(d.pinyin || targetWord.pinyin);
-
-            d.components.forEach(comp => {
-              if (!comp || !comp.char) return;
-              const compChar = comp.char;
-              const compTone = stripTone(comp.pinyin || (decomps[compChar] && decomps[compChar].pinyin));
-              const targetIsPhonetic = Boolean(
-                compTone && chTone && (
-                  compTone === chTone ||
-                  (chTone.length >= 3 && compTone.length >= 3 && (chTone.endsWith(compTone) || compTone.endsWith(chTone)))
-                )
-              );
-
-              const list = compToWords.get(compChar) || [];
-              list.forEach(item => {
-                const w = item.word;
-                if (w.levelRank > currentRank) return;
-                const key = `${w.levelKey}_${w.id}`;
-                if (seenWordKeys.has(key) || seenWordKeys.has(w.hanzi)) return;
-                const itemChTone = stripTone(item.charPy || w.pinyin);
-                const isPhonetic = Boolean(
-                  (targetIsPhonetic && item.isPhonetic) ||
-                  (chTone && itemChTone && chTone === itemChTone && (targetIsPhonetic || item.isPhonetic))
-                );
-                seenWordKeys.add(key);
-                seenWordKeys.add(w.hanzi);
-
-                if (isPhonetic) {
-                  phoneticMatches.push({ word: w, type: 'phonetic' });
-                } else if (COMMON_RADICALS.has(compChar)) {
-                  commonRadicalMatches.push({ word: w, type: 'radical' });
-                } else {
-                  rareRadicalMatches.push({ word: w, type: 'radical' });
-                }
-              });
-            });
-          });
-
-          let combined = [...wholeCharMatches, ...phoneticMatches, ...rareRadicalMatches];
-          if (combined.length < 5) {
-            const needed = 5 - combined.length;
-            combined = combined.concat(commonRadicalMatches.slice(0, needed));
+        (async () => {
+          const q = await import('./src/islands/RelatedWordsQuery.js');
+          const decomps = JSON.parse(fs.readFileSync('database/radicals/hanzi_decompositions.json', 'utf8'));
+          const files = {};
+          for (let n = 1; n <= 6; n++) files['hsk' + n] = [`database/vocabs/hsk${n}_vocabularies.json`, n];
+          for (let n = 1; n <= 9; n++) files['hsk30_' + n] = [`database/vocabs/hsk3_0/level${n}_vocabularies.json`, n];
+          const words = Object.entries(files).flatMap(([levelKey, [path, levelRank]]) =>
+            JSON.parse(fs.readFileSync(path, 'utf8')).map(w => ({ ...w, levelKey, levelRank })));
+          const index = q.createRelatedIndex(decomps, words);
+          const cases = JSON.parse(process.argv[1]);
+          const out = {};
+          for (const [name, [levelKey, hanzi, pinyin]] of Object.entries(cases)) {
+            const target = words.find(w => w.levelKey === levelKey && w.hanzi === hanzi && (!pinyin || w.pinyin === pinyin));
+            out[name] = q.queryRelated(index, target, levelKey, target.levelRank)
+              .map(x => ({ hanzi: x.word.hanzi, pinyin: x.word.pinyin, type: x.type, shared: x.shared }));
           }
-          return combined.slice(0, 5);
-        }
-
-        const yiYuan = hsk1.find(w => w.hanzi === '医院');
-        const maMa = hsk1.find(w => w.hanzi === '妈妈' || w.hanzi === '妈');
-        const xueXiao = hsk1.find(w => w.hanzi === '学校');
-
-        const r1 = query(yiYuan);
-        const r2 = query(maMa);
-        const r3 = query(xueXiao);
-
-        console.log(JSON.stringify({
-          yiYuan: r1.map(x => ({ hanzi: x.word.hanzi, type: x.type })),
-          maMa: r2.map(x => ({ hanzi: x.word.hanzi, type: x.type })),
-          xueXiao: r3.map(x => ({ hanzi: x.word.hanzi, type: x.type }))
-        }));
+          console.log(JSON.stringify(out));
+        })();
         """
-        proc = subprocess.run(["node", "-e", node_script], capture_output=True, text=True, check=True)
-        res = json.loads(proc.stdout)
-        
-        # Verify 医院
-        yi_words = [x["hanzi"] for x in res["yiYuan"]]
-        self.assertIn("医生", yi_words, "医院 must link to 医生 via whole-char")
+        proc = subprocess.run(["node", "--input-type=commonjs", "-e", node_script, json.dumps(cases)],
+                              capture_output=True, text=True, check=True, cwd=ROOT)
+        return json.loads(proc.stdout)
+
+    def test_node_query_sample_words(self):
+        res = self.run_query({
+            "yiYuan": ["hsk1", "医院", None],
+            "maMa": ["hsk1", "妈妈", None],
+            "xueXiao": ["hsk1", "学校", None],
+            "ai": ["hsk30_8", "挨", "āi"],
+        })
         self.assertEqual(res["yiYuan"][0]["type"], "whole-char")
+        self.assertIn("医生", [x["hanzi"] for x in res["yiYuan"]])
 
-        # Verify 妈妈
-        ma_words = [x["hanzi"] for x in res["maMa"]]
-        self.assertIn("吗", ma_words, "妈妈 must link to 吗 via phonetic")
-        self.assertEqual(res["maMa"][0]["type"], "phonetic")
+        ma_phonetic = [x["hanzi"] for x in res["maMa"] if x["type"] == "phonetic"]
+        self.assertIn("吗", ma_phonetic, "妈 and 吗 share the phonetic 马")
 
-        # Verify 学校
-        xue_words = [x["hanzi"] for x in res["xueXiao"]]
-        self.assertTrue(any(w in xue_words for w in ["学生", "学习", "同学"]), "学校 must link to 学生/学习/同学")
-        self.assertEqual(res["xueXiao"][0]["type"], "whole-char")
+        self.assertTrue(any(x["hanzi"] in ("学生", "学习", "同学") for x in res["xueXiao"]))
+
+        ai = res["ai"]
+        by_type = lambda t: [x for x in ai if x["type"] == t]
+        self.assertTrue(any(x["pinyin"] == "ái" for x in by_type("polyphone")), "挨 āi must list 挨 ái as another reading")
+        self.assertIn("唉", [x["hanzi"] for x in by_type("phonetic")], "唉 shares the phonetic 矣, not the radical")
+        radical = by_type("radical")
+        self.assertTrue(radical and all(x["shared"] == "扌" for x in radical))
+        self.assertFalse(any(x["hanzi"] in ("我", "我们", "唉") for x in radical), "我 (radical 戈) and 唉 (radical 口) are not 扌 words")
 
     def test_example_box_cut_off_fixed(self):
         ws_css = WORKSTATION_CSS.read_text(encoding="utf-8")
