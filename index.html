@@ -501,7 +501,7 @@
       <div class="study-view-topbar-left">
         <button class="back-btn study-back-btn" title="Quay về trang chủ (Esc)" aria-label="Quay về trang chủ">
           <span class="back-arrow" aria-hidden="true">←</span>
-          <span class="study-back-text" id="studyBackBtnText">Quay về trang chủ</span>
+          <span class="study-back-text" id="studyBackBtnText">Quay về</span>
         </button>
         <!-- Accessible hidden tab references for backward compatibility with router/overview scripts -->
         <div class="view-tabs" role="tablist" aria-label="Chế độ xem" style="display:none" hidden>
@@ -514,17 +514,17 @@
             <span>Tổng quan</span>
           </button>
         </div>
+
+        <div class="study-topbar-progress" id="studyTopbarProgress" title="Tiến độ học">
+          <span class="study-topbar-level-badge" id="studyTopbarLevelBadge"></span>
+          <div class="progress-bar-track">
+            <div class="progress-bar-fill" id="progressBar"></div>
+          </div>
+          <span class="study-progress-numbers" id="progress">0/0</span>
+        </div>
       </div>
 
-      <div class="study-topbar-progress" id="studyTopbarProgress" title="Tiến độ học">
-        <div class="study-topbar-progress-info">
-          <span class="study-progress-numbers" id="progress"><span class="study-progress-label">Đã học</span> 0 / 0</span>
-          <span class="study-progress-pct" id="progressPct">0%</span>
-        </div>
-        <div class="progress-bar-track">
-          <div class="progress-bar-fill" id="progressBar"></div>
-        </div>
-      </div>
+      <div class="study-topbar-controls" id="studyTopbarControls"></div>
 
       <div class="study-view-topbar-actions">
         <button type="button" class="study-drawer-btn study-theme-toggle-btn" title="Đổi giao diện Sáng / Tối" aria-label="Đổi giao diện Sáng / Tối">
@@ -539,6 +539,31 @@
             </svg>
           </button>
           <div class="study-header-dropdown" id="studyHeaderDropdown" role="menu" hidden>
+            <button type="button" class="study-dropdown-item" id="menuTogglePinyin" onclick="if(window.togglePinyin)togglePinyin(); closeStudyHeaderMenu();" role="menuitem">
+              <span class="dropdown-item-icon" id="menuPinyinIcon">👁️</span>
+              <span class="dropdown-item-label" id="menuPinyinText">Ẩn / Hiện pinyin</span>
+            </button>
+            <button type="button" class="study-dropdown-item" id="menuToggleWeak" onclick="if(window.toggleWeakWord)toggleWeakWord(window.activeStudyWord && window.activeStudyWord.hanzi, window.currentLevel); closeStudyHeaderMenu();" role="menuitem">
+              <span class="dropdown-item-icon" id="menuWeakIcon">⭐</span>
+              <span class="dropdown-item-label" id="menuWeakText">Đánh dấu từ khó</span>
+            </button>
+            <button type="button" class="study-dropdown-item" id="menuToggleToneColors" onclick="if(window.toggleToneColors)toggleToneColors(); closeStudyHeaderMenu();" role="menuitem">
+              <span class="dropdown-item-icon" aria-hidden="true">🎨</span>
+              <span class="dropdown-item-label" id="menuToneColorsText">Tô màu thanh điệu</span>
+            </button>
+            <button type="button" class="study-dropdown-item" id="menuToggleHanviet" onclick="if(window.toggleHanViet)toggleHanViet(); closeStudyHeaderMenu();" role="menuitem">
+              <span class="dropdown-item-icon">漢</span>
+              <span class="dropdown-item-label" id="menuHanvietText">Âm Hán - Việt</span>
+            </button>
+            <button type="button" class="study-dropdown-item" id="menuToggleIllustration" onclick="if(window.toggleIllustration)toggleIllustration(); closeStudyHeaderMenu();" role="menuitem">
+              <span class="dropdown-item-icon" id="menuIllustrationIcon">🖼️</span>
+              <span class="dropdown-item-label" id="menuIllustrationText">Hình minh họa</span>
+            </button>
+            <button type="button" class="study-dropdown-item" id="menuShuffle" onclick="if(window.shuffleDeck)shuffleDeck(); closeStudyHeaderMenu();" role="menuitem">
+              <span class="dropdown-item-icon">🔀</span>
+              <span class="dropdown-item-label">Xáo trộn thứ tự từ</span>
+            </button>
+            <div class="study-dropdown-divider" role="separator"></div>
             <button type="button" class="study-dropdown-item" id="headerMenuOverview" role="menuitem">
               <span class="dropdown-item-icon">📋</span>
               <span class="dropdown-item-label">Tổng quan danh sách từ</span>

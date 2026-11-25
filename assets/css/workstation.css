@@ -5560,6 +5560,238 @@ body.flashcard-study-mode .rating-btn .rating-kbd-badge { opacity: 1; }
    the deep offset shadow read as a misaligned second card under the bottom edge. */
 body.flashcard-study-mode .chinese-aesthetic-bg { display: none !important; }
 body.flashcard-study-mode #cardArea > .card,
-:root[data-theme="dark"] body.flashcard-study-mode #cardArea > .card {
+body.flashcard-study-mode #studyCardGrid > .card,
+:root[data-theme="dark"] body.flashcard-study-mode #cardArea > .card,
+:root[data-theme="dark"] body.flashcard-study-mode #studyCardGrid > .card {
   box-shadow: 0 1px 2px rgba(60, 46, 32, 0.05);
+}
+
+/* --- Unified Single-Row Study Topbar & Stage Layout ------------------------ */
+body.flashcard-study-mode .study-view-topbar {
+  max-width: 1160px;
+  min-height: 44px;
+  padding: 6px 8px 8px;
+  margin: 0 auto 4px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+body.flashcard-study-mode .study-view-topbar-left {
+  gap: 10px;
+  min-width: 0;
+}
+body.flashcard-study-mode .study-topbar-progress {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  width: auto;
+  min-width: 0;
+  max-width: none;
+  flex: 0 1 auto;
+  margin: 0;
+  padding-left: 10px;
+  border-left: 1px solid var(--border-subtle);
+}
+body.flashcard-study-mode .study-topbar-level-badge {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-primary);
+  background: var(--surface-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  padding: 2px 7px;
+  white-space: nowrap;
+}
+body.flashcard-study-mode .study-topbar-progress .progress-bar-track {
+  width: 68px;
+  height: 5px;
+  flex-shrink: 0;
+}
+body.flashcard-study-mode .study-topbar-progress .study-progress-numbers {
+  font-size: 12.5px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+body.flashcard-study-mode .study-topbar-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+body.flashcard-study-mode .study-topbar-controls .study-mode-bar {
+  margin: 0;
+  padding: 0;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+body.flashcard-study-mode .study-header-more-btn.has-weak-word::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--warning-text, #d97706);
+}
+.study-dropdown-divider {
+  height: 1px;
+  margin: 4px 8px;
+  background: var(--border-subtle);
+}
+body.flashcard-study-mode #filterRow[hidden] {
+  display: none !important;
+}
+body.flashcard-study-mode #studyView {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+body.flashcard-study-mode #cardArea {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+  justify-content: space-between;
+  gap: 12px;
+}
+body.flashcard-study-mode .study-card-grid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+}
+body.flashcard-study-mode .study-card-grid > .card {
+  width: 100%;
+  max-width: 640px;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body.flashcard-study-mode .study-card-grid > .card .hanzi {
+  font-size: clamp(3.6rem, 7vw, 5.2rem);
+}
+body.flashcard-study-mode .rating-area,
+body.flashcard-study-mode #studyNavRow {
+  flex: 0 0 auto;
+  margin-top: auto !important;
+  padding-bottom: max(6px, env(safe-area-inset-bottom));
+}
+
+@media (max-width: 960px) {
+  body.flashcard-study-mode .study-view-topbar {
+    gap: 8px;
+  }
+  body.flashcard-study-mode .study-back-text {
+    display: none;
+  }
+  body.flashcard-study-mode .study-topbar-controls {
+    order: 3;
+    flex-basis: 100%;
+    justify-content: space-between;
+    padding-top: 6px;
+    border-top: 1px solid var(--border-subtle);
+  }
+  body.flashcard-study-mode .study-topbar-controls .study-mode-bar {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+/* --- Wide Screen (≥ 1600px): 2-Column Card + Open Details Rail ------------- */
+@media (min-width: 1600px) {
+  body.flashcard-study-mode .study-view-topbar {
+    max-width: 1280px;
+  }
+  body.flashcard-study-mode .study-card-grid.has-detail-rail {
+    display: grid;
+    grid-template-columns: minmax(520px, 640px) minmax(340px, 420px);
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+  body.flashcard-study-mode .study-card-grid.has-detail-rail > .card {
+    max-width: none;
+    height: 100%;
+  }
+  body.flashcard-study-mode .study-detail-rail:not([hidden]) {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 100%;
+    overflow-y: auto;
+    padding: 4px 2px;
+  }
+  body.flashcard-study-mode .study-detail-rail .card-expandable-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0;
+  }
+}
+
+/* --- Unified Red-to-Green Rating Color Scale ------------------------------- */
+body.flashcard-study-mode .rating-btn--again,
+.today-reviews-screen .rating-btn--again {
+  --rating-color: #c93b3b;
+  --rating-bg: color-mix(in srgb, #c93b3b 10%, transparent);
+  --rating-border: color-mix(in srgb, #c93b3b 35%, transparent);
+}
+body.flashcard-study-mode .rating-btn--hard,
+.today-reviews-screen .rating-btn--hard {
+  --rating-color: #c26d18;
+  --rating-bg: color-mix(in srgb, #c26d18 11%, transparent);
+  --rating-border: color-mix(in srgb, #c26d18 36%, transparent);
+}
+body.flashcard-study-mode .rating-btn--good,
+.today-reviews-screen .rating-btn--good {
+  --rating-color: #2f7d4c;
+  --rating-bg: color-mix(in srgb, #2f7d4c 10%, transparent);
+  --rating-border: color-mix(in srgb, #2f7d4c 35%, transparent);
+}
+body.flashcard-study-mode .rating-btn--easy,
+.today-reviews-screen .rating-btn--easy {
+  --rating-color: #0f766e;
+  --rating-bg: color-mix(in srgb, #0f766e 10%, transparent);
+  --rating-border: color-mix(in srgb, #0f766e 35%, transparent);
+}
+:root[data-theme="dark"] body.flashcard-study-mode .rating-btn--again,
+:root[data-theme="dark"] .today-reviews-screen .rating-btn--again {
+  --rating-color: #f87171;
+  --rating-bg: color-mix(in srgb, #f87171 15%, transparent);
+  --rating-border: color-mix(in srgb, #f87171 42%, transparent);
+}
+:root[data-theme="dark"] body.flashcard-study-mode .rating-btn--hard,
+:root[data-theme="dark"] .today-reviews-screen .rating-btn--hard {
+  --rating-color: #f59e0b;
+  --rating-bg: color-mix(in srgb, #f59e0b 15%, transparent);
+  --rating-border: color-mix(in srgb, #f59e0b 42%, transparent);
+}
+:root[data-theme="dark"] body.flashcard-study-mode .rating-btn--good,
+:root[data-theme="dark"] .today-reviews-screen .rating-btn--good {
+  --rating-color: #4ade80;
+  --rating-bg: color-mix(in srgb, #4ade80 15%, transparent);
+  --rating-border: color-mix(in srgb, #4ade80 42%, transparent);
+}
+:root[data-theme="dark"] body.flashcard-study-mode .rating-btn--easy,
+:root[data-theme="dark"] .today-reviews-screen .rating-btn--easy {
+  --rating-color: #2dd4bf;
+  --rating-bg: color-mix(in srgb, #2dd4bf 15%, transparent);
+  --rating-border: color-mix(in srgb, #2dd4bf 42%, transparent);
+}
+body.flashcard-study-mode .rating-btn:hover,
+.today-reviews-screen .rating-btn:hover {
+  border-color: var(--rating-color);
+  background: color-mix(in srgb, var(--rating-color) 18%, transparent);
 }

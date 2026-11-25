@@ -92,7 +92,7 @@ export function updateWeakWordToggleButton() {
     }
     btn.classList.toggle('active', starred);
   }
-  const moreBtn = document.getElementById('cardMoreBtn');
+  const moreBtn = document.getElementById('studyHeaderMoreBtn');
   if (moreBtn) {
     moreBtn.classList.toggle('has-weak-word', starred);
     moreBtn.title = starred ? 'Từ khó đã đánh dấu · Tùy chọn khác' : 'Tùy chọn khác';

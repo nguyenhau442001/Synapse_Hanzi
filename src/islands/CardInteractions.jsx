@@ -380,6 +380,9 @@ export function flip() {
   if (typeof syncRevealControls === 'function') {
     syncRevealControls();
   }
+  if (typeof window.syncDetailRailPlacement === 'function') {
+    window.syncDetailRailPlacement();
+  }
 }
 
 export function mountCardInteractions() {

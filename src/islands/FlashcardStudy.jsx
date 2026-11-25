@@ -33,62 +33,9 @@ window.getCardHintText = getCardHintText;
 
 function buildCardArea() {
   document.getElementById('cardArea').innerHTML = `
+    <div class="study-card-grid" id="studyCardGrid">
     <div class="card" id="card">
-      <div class="card-header-bar" id="cardHeaderBar">
-        <span class="card-header-spacer" aria-hidden="true"></span>
-        <button type="button" class="card-star-btn" id="weakWordToggleBtn" style="display:none" hidden aria-hidden="true"></button>
-        <div class="card-more-menu-wrap" id="cardMoreMenuWrap">
-          <button type="button" class="card-more-btn" id="cardMoreBtn" onclick="toggleCardMoreMenu(event)" aria-label="Tùy chọn thẻ" aria-haspopup="menu" aria-expanded="false" title="Tùy chọn khác">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <circle cx="5" cy="12" r="2.2"/>
-              <circle cx="12" cy="12" r="2.2"/>
-              <circle cx="19" cy="12" r="2.2"/>
-            </svg>
-          </button>
-          <div class="card-more-dropdown" id="cardMoreDropdown" role="menu" hidden>
-            <button type="button" class="card-dropdown-item" id="menuToggleWriting" onclick="toggleStudyWritingPanel(true); closeCardMoreMenu();" role="menuitem">
-              <span class="dropdown-item-icon">✍️</span>
-              <span class="dropdown-item-label">Luyện viết chữ Hán</span>
-            </button>
-            <button type="button" class="card-dropdown-item" id="menuTogglePinyin" onclick="togglePinyin(); closeCardMoreMenu();" role="menuitem">
-              <span class="dropdown-item-icon" id="menuPinyinIcon">👁️</span>
-              <span class="dropdown-item-label" id="menuPinyinText">Ẩn / Hiện pinyin</span>
-            </button>
-            <button type="button" class="card-dropdown-item" id="menuToggleWeak" onclick="toggleWeakWord(activeStudyWord && activeStudyWord.hanzi, currentLevel); closeCardMoreMenu();" role="menuitem">
-              <span class="dropdown-item-icon" id="menuWeakIcon">⭐</span>
-              <span class="dropdown-item-label" id="menuWeakText">Đánh dấu từ khó</span>
-            </button>
-            <button type="button" class="card-dropdown-item" id="menuShuffle" onclick="shuffleDeck(); closeCardMoreMenu();" role="menuitem">
-              <span class="dropdown-item-icon">🔀</span>
-              <span class="dropdown-item-label">Xáo trộn thứ tự từ</span>
-            </button>
-            <button type="button" class="card-dropdown-item" id="menuToggleToneColors" onclick="toggleToneColors(); closeCardMoreMenu();" role="menuitem">
-              <span class="dropdown-item-icon" aria-hidden="true">🎨</span>
-              <span class="dropdown-item-label" id="menuToneColorsText">Tô màu thanh điệu</span>
-            </button>
-            <button type="button" class="card-dropdown-item" id="menuToggleHanviet" onclick="toggleHanViet(); closeCardMoreMenu();" role="menuitem">
-              <span class="dropdown-item-icon">漢</span>
-              <span class="dropdown-item-label" id="menuHanvietText">Âm Hán - Việt</span>
-            </button>
-            <button type="button" class="card-dropdown-item" id="menuToggleIllustration" onclick="toggleIllustration(); closeCardMoreMenu();" role="menuitem">
-              <span class="dropdown-item-icon" id="menuIllustrationIcon">🖼️</span>
-              <span class="dropdown-item-label" id="menuIllustrationText">Hình minh họa</span>
-            </button>
-            <button type="button" class="card-dropdown-item" id="menuStudyHelp" onclick="openStudyHelpModal(); closeCardMoreMenu();" role="menuitem">
-              <span class="dropdown-item-icon">❓</span>
-              <span class="dropdown-item-label">Hướng dẫn &amp; phím tắt</span>
-            </button>
-            <button type="button" class="card-dropdown-item" id="menuTransfer" onclick="toggleTransferPanel(true); closeCardMoreMenu();" role="menuitem">
-              <span class="dropdown-item-icon">💾</span>
-              <span class="dropdown-item-label">Sao lưu tiến trình</span>
-            </button>
-            <button type="button" class="card-dropdown-item card-dropdown-item--danger" id="menuResetProgress" onclick="resetProgress(); closeCardMoreMenu();" role="menuitem">
-              <span class="dropdown-item-icon">↻</span>
-              <span class="dropdown-item-label">Học lại từ đầu</span>
-            </button>
-          </div>
-        </div>
-      </div>
+      <button type="button" class="card-star-btn" id="weakWordToggleBtn" style="display:none" hidden aria-hidden="true"></button>
       <div class="swipe-badge swipe-badge--known" id="swipeBadgeKnown">✓ Được</div>
       <div class="swipe-badge swipe-badge--unknown" id="swipeBadgeUnknown">✗ Quên</div>
       <div id="cardContent" class="card-content">
@@ -200,6 +147,8 @@ function buildCardArea() {
         <div class="card-empty-state card-interactive" id="cardEmptyState" hidden></div>
       </div>
     </div>
+    <aside class="study-detail-rail" id="studyDetailRail" aria-label="Thông tin chi tiết chữ Hán" hidden></aside>
+    </div>
 
     <!-- Rating actions row: four FSRS grades (keys 1-4) with the next interval on each button -->
     <div class="rating-area" id="ratingArea">
@@ -260,8 +209,12 @@ function buildCardArea() {
 // The study-screen dropdown menus. Only one is open at a time, and a
 // pointerdown outside a menu's wrap closes it.
 const STUDY_MENUS = {
-  studyHeader: { menu: 'studyHeaderDropdown', trigger: 'studyHeaderMoreBtn', wrap: '#studyHeaderMenuWrap' },
-  cardMore: { menu: 'cardMoreDropdown', trigger: 'cardMoreBtn', wrap: '#cardMoreMenuWrap', beforeOpen: () => updateCardMoreMenuState() },
+  studyHeader: {
+    menu: 'studyHeaderDropdown',
+    trigger: 'studyHeaderMoreBtn',
+    wrap: '#studyHeaderMenuWrap',
+    beforeOpen: () => updateCardMoreMenuState(),
+  },
 };
 
 function closeStudyMenu(name) {
@@ -294,10 +247,11 @@ function toggleStudyMenu(name, event) {
 
 function toggleStudyHeaderMenu(event) { toggleStudyMenu('studyHeader', event); }
 function closeStudyHeaderMenu() { closeStudyMenu('studyHeader'); }
-function toggleCardMoreMenu(event) { toggleStudyMenu('cardMore', event); }
-function closeCardMoreMenu() { closeStudyMenu('cardMore'); }
+function toggleCardMoreMenu(event) { toggleStudyMenu('studyHeader', event); }
+function closeCardMoreMenu() { closeStudyMenu('studyHeader'); }
 window.toggleStudyHeaderMenu = toggleStudyHeaderMenu;
 window.closeStudyHeaderMenu = closeStudyHeaderMenu;
+window.toggleToneColors = toggleToneColors;
 
 function updateCardMoreMenuState() {
   const pinyinLabel = document.getElementById('menuPinyinText');
@@ -322,10 +276,63 @@ function updateCardMoreMenuState() {
   if (weakLabel) weakLabel.textContent = isWeak ? 'Bỏ đánh dấu từ khó' : 'Đánh dấu từ khó';
   if (weakIcon) weakIcon.textContent = isWeak ? '⭐' : '☆';
 
-  const moreBtn = document.getElementById('cardMoreBtn');
+  const moreBtn = document.getElementById('studyHeaderMoreBtn');
   if (moreBtn) {
     moreBtn.classList.toggle('has-weak-word', isWeak);
     moreBtn.title = isWeak ? 'Từ khó đã đánh dấu · Tùy chọn khác' : 'Tùy chọn khác';
+  }
+}
+
+const STUDY_WIDE_MEDIA_QUERY = '(min-width: 1600px)';
+
+function syncDetailRailPlacement() {
+  const rail = document.getElementById('studyDetailRail');
+  const cardContent = document.getElementById('cardContent');
+  const expandableGroup = document.getElementById('cardExpandableGroup');
+  const card = document.getElementById('card');
+  const cardGrid = document.getElementById('studyCardGrid');
+  if (!rail || !cardContent || !expandableGroup) return;
+
+  const isWide = typeof window !== 'undefined'
+    && typeof window.matchMedia === 'function'
+    && window.matchMedia(STUDY_WIDE_MEDIA_QUERY).matches;
+  const isFlipped = Boolean(card && card.classList.contains('is-flipped'));
+  const decompAcc = document.getElementById('cardDecompAccordion');
+  const relatedAcc = document.getElementById('cardRelatedAccordion');
+
+  if (isWide) {
+    if (expandableGroup.parentElement !== rail) {
+      rail.appendChild(expandableGroup);
+    }
+    const showRail = isFlipped;
+    rail.hidden = !showRail;
+    if (cardGrid) cardGrid.classList.toggle('has-detail-rail', showRail);
+    if (showRail) {
+      if (decompAcc && !decompAcc.hidden) decompAcc.open = true;
+      if (relatedAcc && !relatedAcc.hidden) relatedAcc.open = true;
+    }
+  } else {
+    if (expandableGroup.parentElement !== cardContent) {
+      const flipPrompt = document.getElementById('cardFlipPrompt');
+      if (flipPrompt && flipPrompt.parentElement === cardContent) {
+        cardContent.insertBefore(expandableGroup, flipPrompt);
+      } else {
+        cardContent.appendChild(expandableGroup);
+      }
+    }
+    rail.hidden = true;
+    if (cardGrid) cardGrid.classList.remove('has-detail-rail');
+  }
+}
+window.syncDetailRailPlacement = syncDetailRailPlacement;
+
+if (typeof window !== 'undefined' && typeof window.matchMedia === 'function') {
+  const wideMq = window.matchMedia(STUDY_WIDE_MEDIA_QUERY);
+  const onWideChange = () => syncDetailRailPlacement();
+  if (typeof wideMq.addEventListener === 'function') {
+    wideMq.addEventListener('change', onWideChange);
+  } else if (typeof wideMq.addListener === 'function') {
+    wideMq.addListener(onWideChange);
   }
 }
 
@@ -407,7 +414,8 @@ window.closeStudyFilterSheet = closeStudyFilterSheet;
 
 function renderFilters() {
   const row = document.getElementById('filterRow');
-  if (!row) return;
+  const topbarControls = document.getElementById('studyTopbarControls');
+  const levelBadgeEl = document.getElementById('studyTopbarLevelBadge');
 
   const deck = typeof computeDeckProgress === 'function'
     ? computeDeckProgress()
@@ -417,8 +425,6 @@ function renderFilters() {
   const known = deck.known || 0;
   const unknown = deck.unknown || 0;
   const unseen = deck.unseen || 0;
-  const learned = deck.learned || 0;
-  const learnedPct = deck.pct || 0;
 
   const rawLevelLabel = (typeof LEVELS !== 'undefined' && LEVELS[currentLevel]?.label)
     ? LEVELS[currentLevel].label
@@ -427,16 +433,28 @@ function renderFilters() {
     ? formatStudyLevelLabel(rawLevelLabel)
     : (window.formatStudyLevelLabel ? window.formatStudyLevelLabel(rawLevelLabel) : rawLevelLabel);
 
-  const knownPctNum = total > 0 ? (known / total) * 100 : 0;
-  const unknownPctNum = total > 0 ? (unknown / total) * 100 : 0;
-  const isAllMastered = total > 0 && known === total;
-  const isAllLearned = total > 0 && learned === total;
+  if (levelBadgeEl) {
+    levelBadgeEl.textContent = levelLabel;
+  }
 
-  const pctDisplay = isAllMastered
-    ? '👑 100%'
-    : isAllLearned
-    ? '🏆 100%'
-    : `${learnedPct}%`;
+  if (topbarControls) {
+    topbarControls.innerHTML = `
+      <div class="study-mode-bar">
+        <div class="study-mode-switch" role="tablist" aria-label="Chế độ học">
+          <button type="button" role="tab" class="study-mode-tab${studyMode === 'review' ? ' is-active' : ''}"
+            aria-selected="${studyMode === 'review'}" onclick="setStudyMode('review')">
+            Ôn tập
+          </button>
+          <button type="button" role="tab" class="study-mode-tab${studyMode === 'browse' ? ' is-active' : ''}"
+            aria-selected="${studyMode === 'browse'}" onclick="setStudyMode('browse')">
+            Danh sách
+          </button>
+        </div>
+        ${studyMode === 'review' ? reviewCountersHtml() : ''}
+        ${studyDirectionSelectHtml()}
+      </div>
+    `;
+  }
 
   const filters = [
     {
@@ -465,51 +483,11 @@ function renderFilters() {
     },
   ];
 
-  row.innerHTML = `
-    <section class="learning-progress-navigator" aria-label="Bộ điều hướng tiến độ học ${levelLabel}">
-      <div class="progress-nav-header">
-        <div class="progress-nav-summary-group">
-          <span class="progress-nav-level-tag">${levelLabel}</span>
-          <div class="progress-nav-metric-main">
-            <span class="progress-nav-metric-label">Đã học</span>
-            <span class="progress-nav-metric-val"><strong>${learned}</strong> / ${total}</span>
-            <span class="progress-nav-metric-pct${isAllLearned ? ' is-completed' : ''}"
-              ${isAllLearned ? `onclick="if (typeof showCelebration === 'function') showCelebration('${isAllMastered ? 'mastered' : 'learned'}', true);" title="Nhấn để xem lại hiệu ứng thành tựu 🎉"` : ''}>${pctDisplay}</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="progress-nav-bar" role="img"
-           aria-label="Tiến độ học: ${known} đã nhớ, ${unknown} cần ôn, ${unseen} chưa học trên tổng số ${total} từ">
-        <div class="progress-nav-track">
-          <div class="progress-nav-seg progress-nav-seg--known"
-               style="width: ${knownPctNum}%;"
-               title="Đã nhớ: ${known} từ (${Math.round(knownPctNum)}%)"></div>
-          <div class="progress-nav-seg progress-nav-seg--unknown"
-               style="width: ${unknownPctNum}%;"
-               title="Cần ôn: ${unknown} từ (${Math.round(unknownPctNum)}%)"></div>
-          <div class="progress-nav-seg progress-nav-seg--unseen"
-               style="width: ${total > 0 ? (unseen / total) * 100 : 0}%;"
-               title="Chưa học: ${unseen} từ"></div>
-        </div>
-      </div>
-
-      <div class="study-mode-bar">
-      <div class="study-mode-switch" role="tablist" aria-label="Chế độ học">
-        <button type="button" role="tab" class="study-mode-tab${studyMode === 'review' ? ' is-active' : ''}"
-          aria-selected="${studyMode === 'review'}" onclick="setStudyMode('review')">
-          Ôn tập
-        </button>
-        <button type="button" role="tab" class="study-mode-tab${studyMode === 'browse' ? ' is-active' : ''}"
-          aria-selected="${studyMode === 'browse'}" onclick="setStudyMode('browse')">
-          Duyệt danh sách
-        </button>
-      </div>
-      ${studyMode === 'review' ? reviewCountersHtml() : ''}
-      ${studyDirectionSelectHtml()}
-      </div>
-
-      <div class="progress-nav-cards" role="radiogroup" aria-label="Lọc danh sách thẻ từ vựng"${studyMode === 'review' ? ' hidden' : ''}>
+  if (row) {
+    const isBrowse = studyMode === 'browse';
+    row.hidden = !isBrowse;
+    row.innerHTML = isBrowse ? `
+      <div class="progress-nav-cards" role="radiogroup" aria-label="Lọc danh sách thẻ từ vựng">
         ${filters.map(f => {
           const isSelected = currentFilter === f.key;
           const isEmpty = f.count === 0;
@@ -532,8 +510,8 @@ function renderFilters() {
           `;
         }).join('')}
       </div>
-    </section>
-  `;
+    ` : '';
+  }
 
   const sheetBody = document.getElementById('studyFilterSheetBody');
   if (sheetBody) {
@@ -680,6 +658,8 @@ function ratingButtonsHtml(handlerName, previewIdPrefix, previews) {
       onclick="${handlerName}('${button.rating}')" aria-keyshortcuts="${button.key}"
       title="${titleText}">
       <span class="rating-label">${button.label}</span>
+      <span class="rating-interval" id="${previewIdPrefix}${button.rating}">${intervalText}</span>
+      <kbd class="rating-kbd-badge">${button.key}</kbd>
     </button>`;
   }).join('');
 }
@@ -798,35 +778,28 @@ function updateProgress(current, total) {
   const el = document.getElementById('progress');
   if (el) {
     el.innerHTML = deck.total === 0
-      ? '0 / 0'
-      : `<span class="study-progress-label">Đã học</span> <span class="study-progress-count">${deck.learned} / ${deck.total}</span>`;
+      ? '0/0'
+      : `<span class="study-progress-count">${deck.learned}/${deck.total}</span>`;
   }
   const bar = document.getElementById('progressBar');
   if (bar) bar.style.width = deck.pct + '%';
-  const pctEl = document.getElementById('progressPct');
-  if (pctEl) {
+  const topbar = document.getElementById('studyTopbarProgress');
+  if (topbar) {
+    topbar.title = `Tiến độ học: ${deck.learned}/${deck.total} • Đã nhớ: ${deck.known}, Cần ôn: ${deck.unknown}`;
     if (deck.pct === 100 && deck.total > 0) {
-      pctEl.textContent = '🏆 100%';
-      pctEl.classList.add('is-completed');
-      pctEl.title = 'Chúc mừng bạn đã hoàn thành 100% từ vựng! Nhấn để xem hiệu ứng thành tựu 🎉';
-      pctEl.style.cursor = 'pointer';
-      pctEl.onclick = e => {
+      topbar.classList.add('is-completed');
+      topbar.style.cursor = 'pointer';
+      topbar.onclick = e => {
         e.stopPropagation();
         if (typeof showCelebration === 'function') {
           showCelebration(deck.known === deck.total ? 'mastered' : 'learned', true);
         }
       };
     } else {
-      pctEl.textContent = deck.pct + '%';
-      pctEl.classList.remove('is-completed');
-      pctEl.title = '';
-      pctEl.style.cursor = '';
-      pctEl.onclick = null;
+      topbar.classList.remove('is-completed');
+      topbar.style.cursor = '';
+      topbar.onclick = null;
     }
-  }
-  const topbar = document.getElementById('studyTopbarProgress');
-  if (topbar) {
-    topbar.title = `Tiến độ học: ${deck.learned}/${deck.total} (${deck.pct}%) • Đã nhớ: ${deck.known}, Cần ôn: ${deck.unknown}`;
   }
 
   // Also synchronize learning progress navigator in study view
@@ -1455,6 +1428,7 @@ function render(animate) {
     if (decompAcc) { decompAcc.open = false; }
     const relatedAcc = document.getElementById('cardRelatedAccordion');
     if (relatedAcc) { relatedAcc.open = false; }
+    syncDetailRailPlacement();
     const wordMainBlock = document.getElementById('wordMainBlock');
     const cardEmptyState = document.getElementById('cardEmptyState');
     const exBox = document.getElementById('exampleBox');

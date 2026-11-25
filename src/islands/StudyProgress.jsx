@@ -651,10 +651,10 @@ export function CelebrationModal() {
 
 function handleStudyKeydown(event) {
   if (event.key === 'Escape') {
-    const cardMoreDropdown = document.getElementById('cardMoreDropdown');
-    if (cardMoreDropdown && !cardMoreDropdown.hidden) {
+    const studyHeaderDropdown = document.getElementById('studyHeaderDropdown');
+    if (studyHeaderDropdown && !studyHeaderDropdown.hidden) {
       event.preventDefault();
-      if (typeof closeCardMoreMenu === 'function') closeCardMoreMenu();
+      if (typeof closeStudyHeaderMenu === 'function') closeStudyHeaderMenu();
       return;
     }
     const transferPanel = document.getElementById('transferPanel');
