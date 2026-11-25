@@ -17,6 +17,8 @@ import {
   CloseIcon,
   ChevronLeftIcon,
   AudioIcon,
+  Maximize2Icon,
+  Minimize2Icon,
 } from './Icons.jsx';
 
 /* global SpaRouter, setPrimaryTab, Curriculum, speakText, APP_VERSION */
@@ -25,9 +27,43 @@ const STROKE_ROOT = 'database/strokes/';
 const CURRICULUM_ROOT = 'database/curriculum/hsk30/';
 const SETTINGS_KEY = 'hsk_writing_settings_v1';
 const PROGRESS_KEY = 'hsk_writing_v1';
+const WRITING_FOCUS_BODY_CLASS = 'writing-focus-mode';
 const COMPACT_WIDTH = 560;
-const DEFAULT_SETTINGS = { grid: 'mi', rows: 4, faded: 4, strokeRow: true, grade: true, penOnly: null };
+const GRID_MODE_ICON_SIZE = 15;
+const FOCUS_ICON_SIZE = 15;
+const DEFAULT_SETTINGS = {
+  grid: 'mi',
+  rows: 4,
+  faded: 4,
+  strokeRow: true,
+  grade: true,
+  penOnly: null,
+  focusMode: false,
+};
 const HINT_AFTER = { faint: 2, empty: 3 };
+const GRID_MODES = Object.freeze([
+  {
+    id: 'tian',
+    label: 'Ô chữ điền',
+    title: 'Lưới chữ Điền (田): chia 4 phần theo trục chữ thập',
+  },
+  {
+    id: 'mi',
+    label: 'Ô chữ mễ',
+    title: 'Lưới chữ Mễ (米): thêm đường chéo định tâm nét',
+  },
+  {
+    id: 'none',
+    label: 'Ô trơn',
+    title: 'Ô trống không đường kẻ dẫn hướng',
+  },
+]);
+const WRITING_UI_LABELS = Object.freeze({
+  FOCUS_ENTER: 'Thu gọn',
+  FOCUS_EXIT: 'Hiện thanh trên',
+  FOCUS_ENTER_TITLE: 'Ẩn thanh điều hướng trên để mở rộng vùng tập viết',
+  FOCUS_EXIT_TITLE: 'Hiện lại thanh điều hướng trên',
+});
 const LESSON_INDEX = {};
 CURRICULUM_LESSONS.forEach(([key, level, levelName, n, zh]) => { LESSON_INDEX[key] = { key, level, levelName, n, zh }; });
 
@@ -197,11 +233,24 @@ function pushRoute() {
   SpaRouter.pushView(ws.source ? { view: 'tab', tab: 'writing', lesson: ws.source } : { view: 'tab', tab: 'writing' });
 }
 
+function syncFocusBodyClass(active = Boolean(settings.focusMode)) {
+  if (typeof document === 'undefined') return;
+  document.body.classList.toggle(WRITING_FOCUS_BODY_CLASS, active);
+}
+
+function toggleFocusMode() {
+  const next = !settings.focusMode;
+  saveSettings({ focusMode: next });
+  syncFocusBodyClass(next);
+  rerender();
+}
+
 export async function openWriting(source, push = true) {
   const key = LESSON_INDEX[source] ? source : (readProgress().last || 'cur30_1_01');
   const level = levelOfLesson(key);
   const token = ++openToken;
   writeProgress({ last: key });
+  syncFocusBodyClass();
   ws = { ...ws, source: key, loading: true, error: null, index: 0, active: null, pad: null, status: '', cells: {} };
   rerender();
   if (push) pushRoute();
@@ -230,6 +279,7 @@ export function initWriting() {
   screenEl = document.getElementById('screenWriting');
   if (!screenEl) return;
   bindKeys();
+  syncFocusBodyClass();
   if (!ws.source && !openToken) {
     openWriting(null, false);
   } else {
@@ -603,6 +653,41 @@ function Pad({ ch, data, layout, states }) {
   );
 }
 
+function GridModeIcon({ mode }) {
+  return (
+    <svg
+      class="wr-grid-icon"
+      width={GRID_MODE_ICON_SIZE}
+      height={GRID_MODE_ICON_SIZE}
+      viewBox="0 0 16 16"
+      fill="none"
+      aria-hidden="true"
+    >
+      <rect
+        x="1.5"
+        y="1.5"
+        width="13"
+        height="13"
+        rx="1.5"
+        stroke="currentColor"
+        stroke-width="1.3"
+      />
+      {(mode === 'tian' || mode === 'mi') && (
+        <>
+          <line x1="8" y1="1.5" x2="8" y2="14.5" stroke="currentColor" stroke-width="1" stroke-dasharray="2 1.5" />
+          <line x1="1.5" y1="8" x2="14.5" y2="8" stroke="currentColor" stroke-width="1" stroke-dasharray="2 1.5" />
+        </>
+      )}
+      {mode === 'mi' && (
+        <>
+          <line x1="2" y1="2" x2="14" y2="14" stroke="currentColor" stroke-width="1" stroke-dasharray="2 1.5" />
+          <line x1="14" y1="2" x2="2" y2="14" stroke="currentColor" stroke-width="1" stroke-dasharray="2 1.5" />
+        </>
+      )}
+    </svg>
+  );
+}
+
 function WritingScreen() {
   if (ws.error) {
     return (
@@ -629,16 +714,31 @@ function WritingScreen() {
     <div class="wr-wrap">
       <header class="wr-head">
         <div class="wr-head-row">
-          <button
-            type="button"
-            class="wr-back"
-            onClick={backToLesson}
-          >
-            <ChevronLeftIcon size={16} />
-            {`Bài ${info.n || ''}`}
-          </button>
-          <h2 class="wr-title" tabindex="-1">Tập viết</h2>
-          <SourcePicker />
+          <div class="wr-head-left">
+            <button
+              type="button"
+              class="wr-back"
+              onClick={backToLesson}
+            >
+              <ChevronLeftIcon size={16} />
+              {`Bài ${info.n || ''}`}
+            </button>
+            <span class="wr-head-sep" aria-hidden="true">·</span>
+            <h2 class="wr-title" tabindex="-1">Tập viết</h2>
+          </div>
+          <div class="wr-head-right">
+            <SourcePicker />
+            <button
+              type="button"
+              class={'wr-focus-btn' + (settings.focusMode ? ' is-active' : '')}
+              aria-pressed={String(Boolean(settings.focusMode))}
+              title={settings.focusMode ? WRITING_UI_LABELS.FOCUS_EXIT_TITLE : WRITING_UI_LABELS.FOCUS_ENTER_TITLE}
+              onClick={toggleFocusMode}
+            >
+              {settings.focusMode ? <Minimize2Icon size={FOCUS_ICON_SIZE} /> : <Maximize2Icon size={FOCUS_ICON_SIZE} />}
+              <span>{settings.focusMode ? WRITING_UI_LABELS.FOCUS_EXIT : WRITING_UI_LABELS.FOCUS_ENTER}</span>
+            </button>
+          </div>
         </div>
         <nav class="wr-chars" aria-label="Chữ trong bài">
           {ws.chars.map((c, i) => (
@@ -673,10 +773,19 @@ function WritingScreen() {
 
             <div class="wr-toolbar">
               <div class="wr-seg" role="radiogroup" aria-label="Kiểu ô">
-                {[['tian', '田字格'], ['mi', '米字格'], ['none', 'Ô trơn']].map(([id, label]) => (
-                  <button type="button" role="radio" aria-checked={String(settings.grid === id)}
+                {GRID_MODES.map(({ id, label, title }) => (
+                  <button
+                    key={id}
+                    type="button"
+                    role="radio"
+                    aria-checked={String(settings.grid === id)}
+                    title={title}
                     class={'wr-seg-btn' + (settings.grid === id ? ' is-on' : '')}
-                    onClick={() => { saveSettings({ grid: id }); rerender(); }}>{label}</button>
+                    onClick={() => { saveSettings({ grid: id }); rerender(); }}
+                  >
+                    <GridModeIcon mode={id} />
+                    <span>{label}</span>
+                  </button>
                 ))}
               </div>
               {ws.penSeen && (

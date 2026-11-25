@@ -58,25 +58,57 @@
   font-family: var(--font-zh);
 }
 
+/* Focus mode: collapse top app header & primary navigation so the worksheet fits cleanly */
+body.writing-focus-mode .app-header,
+body.writing-focus-mode .primary-tabs,
+body.writing-focus-mode .picker-controls {
+  display: none !important;
+}
+
+body.writing-focus-mode #screenWriting {
+  padding-top: var(--space-2);
+}
+
 /* Header */
 .wr-head {
   display: flex;
   flex-direction: column;
-  gap: var(--space-3);
+  gap: var(--space-2);
 }
 
 .wr-head-row {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: var(--space-3);
+  justify-content: space-between;
+  gap: var(--space-2) var(--space-3);
+}
+
+.wr-head-left {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-width: 0;
+}
+
+.wr-head-sep {
+  color: var(--text-tertiary);
+  user-select: none;
+}
+
+.wr-head-right {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-left: auto;
+  min-width: 0;
 }
 
 .wr-back {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  min-height: 44px;
+  gap: 4px;
+  min-height: 36px;
   padding: 0;
   border: 0;
   background: none;
@@ -87,26 +119,57 @@
 
 .wr-title {
   margin: 0;
-  font-size: var(--fs-section);
+  font-size: var(--fs-lesson);
   font-weight: 600;
   letter-spacing: -0.01em;
   outline: none;
 }
 
 .wr-source {
-  margin-left: auto;
   min-width: 0;
 }
 
 .wr-source select {
-  max-width: 320px;
-  height: 40px;
+  max-width: 300px;
+  height: 36px;
   padding: 0 var(--space-3);
   border: 1px solid var(--border);
   border-radius: var(--radius-input);
   background: var(--card-bg);
   color: var(--text-primary);
   font: 500 var(--fs-body) var(--font-sans);
+}
+
+.wr-focus-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 36px;
+  padding: 0 var(--space-3);
+  border-radius: var(--radius-input);
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text-secondary);
+  font: 500 13px var(--font-sans);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+
+.wr-focus-btn:hover {
+  border-color: var(--text-tertiary);
+  color: var(--text-primary);
+}
+
+.wr-focus-btn.is-active {
+  background: var(--accent-light);
+  border-color: var(--accent);
+  color: var(--accent-text);
+}
+
+.wr-focus-btn:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
 }
 
 .wr-source select:focus-visible {
@@ -255,6 +318,9 @@
 }
 
 .wr-seg-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   height: 36px;
   padding: 0 var(--space-3);
   border: 0;
@@ -263,6 +329,15 @@
   color: var(--text-secondary);
   font: 500 var(--fs-body) var(--font-sans);
   cursor: pointer;
+}
+
+.wr-grid-icon {
+  flex: none;
+  opacity: 0.78;
+}
+
+.wr-seg-btn.is-on .wr-grid-icon {
+  opacity: 1;
 }
 
 .wr-seg-btn.is-on {
@@ -464,7 +539,7 @@
   flex-direction: column;
   gap: var(--space-4);
   padding-top: var(--space-4);
-  border-top: 2px solid var(--text-primary);
+  border-top: 1px solid var(--border);
 }
 
 .wr-settings.is-open {
@@ -502,9 +577,43 @@
 }
 
 .wr-setting-row input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  flex: none;
   width: 20px;
   height: 20px;
-  accent-color: var(--accent);
+  margin: 0;
+  border-radius: 5px;
+  border: 1.5px solid var(--border-strong);
+  background: var(--card-bg);
+  cursor: pointer;
+  display: inline-grid;
+  place-content: center;
+  transition: background-color var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out);
+}
+
+.wr-setting-row input[type="checkbox"]::after {
+  content: "";
+  width: 10px;
+  height: 6px;
+  border-left: 2px solid #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
+  transform: rotate(-45deg) translate(1px, -1px) scale(0);
+  transition: transform var(--dur-fast) var(--ease-out);
+}
+
+.wr-setting-row input[type="checkbox"]:checked {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.wr-setting-row input[type="checkbox"]:checked::after {
+  transform: rotate(-45deg) translate(1px, -1px) scale(1);
+}
+
+.wr-setting-row input[type="checkbox"]:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
 }
 
 .wr-stepper {
@@ -632,9 +741,13 @@
 }
 
 @media (max-width: 760px) {
-  .wr-source {
+  .wr-head-right {
     margin-left: 0;
     flex: 1 1 100%;
+  }
+
+  .wr-source {
+    flex: 1 1 auto;
   }
 
   .wr-source select {

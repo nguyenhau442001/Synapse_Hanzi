@@ -14,6 +14,8 @@ import {
   Info,
   Mic,
   CirclePlay,
+  Maximize2,
+  Minimize2,
 } from 'lucide-preact';
 
 /**
@@ -120,6 +122,14 @@ export function MicIcon({ size = 18, strokeWidth = 2, className = '', color = 'c
 
 export function PlayCircleIcon({ size = 18, strokeWidth = 2, className = '', color = 'currentColor', ...props }) {
   return <CirclePlay size={size} strokeWidth={strokeWidth} class={className} color={color} {...props} />;
+}
+
+export function Maximize2Icon({ size = 16, strokeWidth = 2, className = '', color = 'currentColor', ...props }) {
+  return <Maximize2 size={size} strokeWidth={strokeWidth} class={className} color={color} {...props} />;
+}
+
+export function Minimize2Icon({ size = 16, strokeWidth = 2, className = '', color = 'currentColor', ...props }) {
+  return <Minimize2 size={size} strokeWidth={strokeWidth} class={className} color={color} {...props} />;
 }
 
 /**

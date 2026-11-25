@@ -172,6 +172,9 @@ export function setPrimaryTab(tab, options) {
   if (tab !== 'reading') {
     document.body.classList.remove('reading-zen-active');
   }
+  if (tab !== 'writing') {
+    document.body.classList.remove('writing-focus-mode');
+  }
   if (tab !== 'gradedReading') {
     document.body.classList.remove('graded-pinyin-hidden', 'graded-pinyin-new', 'graded-translation-hidden', 'graded-srs-plain', 'graded-paper-sepia', 'graded-story-active');
   }
