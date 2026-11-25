@@ -19,6 +19,10 @@ const DATA_ROOT = 'database/curriculum/hsk30/';
 const STORE_KEY = 'hsk_curriculum_v1';
 const PASS_RATIO = 0.8;
 const QUIZ_SIZE = 10;
+const LISTENING_QUIZ_LIMIT = 3;
+const GRAMMAR_QUIZ_LIMIT = 4;
+const OPTION_DISTRACTORS = 3;
+const MIN_GRAMMAR_DISTRACTORS = 2;
 const SECTIONS = [
   ['vocab', 'Từ mới'],
   ['dialogue', 'Bài đọc'],
@@ -144,24 +148,54 @@ export function buildQuiz(lesson, levelData) {
   const words = (lesson.words || []).filter((w) => w.hanzi && w.meaning);
   const meanings = words.map((w) => w.meaning);
   const hanzis = words.map((w) => w.hanzi);
-  const vocabTarget = Math.min(words.length, QUIZ_SIZE - Math.min(4, (lesson.grammar || []).length * 2));
-  shuffle(words).slice(0, vocabTarget).forEach((w, i) => {
-    if (i % 2 === 0) {
-      const opts = shuffle([w.meaning, ...pickDistractors(meanings, w.meaning, 3)]);
-      questions.push({ kind: 'Chọn nghĩa đúng', prompt: w.hanzi, promptIsZh: true, options: opts, answer: w.meaning, optionsZh: false, explain: `${w.hanzi} · ${w.pinyin} — ${w.meaning}` });
-    } else {
-      const opts = shuffle([w.hanzi, ...pickDistractors(hanzis, w.hanzi, 3)]);
-      questions.push({ kind: 'Chọn từ đúng nghĩa', prompt: w.meaning, promptIsZh: false, options: opts, answer: w.hanzi, optionsZh: true, explain: `${w.hanzi} · ${w.pinyin} — ${w.meaning}` });
-    }
+
+  const listeningQs = [];
+  const dialogueLines = (lesson.dialogue || []).filter((l) => l.zh && l.vi);
+  const dialogueViPool = [];
+  (levelData.lessons || []).forEach((l) => {
+    (l.dialogue || []).forEach((line) => { if (line.vi) dialogueViPool.push(line.vi); });
   });
+  shuffle(dialogueLines).slice(0, LISTENING_QUIZ_LIMIT - 1).forEach((line) => {
+    const distractors = pickDistractors(dialogueViPool, line.vi, OPTION_DISTRACTORS);
+    if (distractors.length < MIN_GRAMMAR_DISTRACTORS) return;
+    listeningQs.push({
+      kind: 'Nghe câu và chọn nghĩa',
+      prompt: '',
+      promptIsZh: false,
+      audioText: line.zh,
+      options: shuffle([line.vi, ...distractors]),
+      answer: line.vi,
+      optionsZh: false,
+      explain: `${line.zh} · ${line.py} — ${line.vi}`,
+    });
+  });
+  shuffle(words).slice(0, LISTENING_QUIZ_LIMIT - listeningQs.length).forEach((w) => {
+    const distractors = pickDistractors(hanzis, w.hanzi, OPTION_DISTRACTORS);
+    if (distractors.length < MIN_GRAMMAR_DISTRACTORS) return;
+    listeningQs.push({
+      kind: 'Nghe từ và chọn chữ Hán',
+      prompt: '',
+      promptIsZh: false,
+      audioText: w.hanzi,
+      options: shuffle([w.hanzi, ...distractors]),
+      answer: w.hanzi,
+      optionsZh: true,
+      explain: `${w.hanzi} · ${w.pinyin} — ${w.meaning}`,
+    });
+  });
+
   const keyPool = [];
   (levelData.lessons || []).forEach((l) => (l.grammar || []).forEach((g) => { if (g.key) keyPool.push(g.key); }));
   const grammarQs = [];
   (lesson.grammar || []).forEach((g) => {
     (g.examples || []).forEach((ex) => {
       if (!g.key || ex.zh.indexOf(g.key) < 0) return;
-      const distractors = pickDistractors(keyPool.filter((k) => ex.zh.indexOf(k) < 0 || k === g.key), g.key, 3);
-      if (distractors.length < 2) return;
+      const distractors = pickDistractors(
+        keyPool.filter((k) => ex.zh.indexOf(k) < 0 || k === g.key),
+        g.key,
+        OPTION_DISTRACTORS,
+      );
+      if (distractors.length < MIN_GRAMMAR_DISTRACTORS) return;
       grammarQs.push({
         kind: 'Điền vào chỗ trống',
         prompt: ex.zh.replace(g.key, ' ＿＿ '),
@@ -174,7 +208,20 @@ export function buildQuiz(lesson, levelData) {
       });
     });
   });
-  questions.push(...shuffle(grammarQs).slice(0, QUIZ_SIZE - questions.length));
+
+  const pickedListening = shuffle(listeningQs).slice(0, LISTENING_QUIZ_LIMIT);
+  const pickedGrammar = shuffle(grammarQs).slice(0, GRAMMAR_QUIZ_LIMIT);
+  const vocabTarget = Math.min(words.length, QUIZ_SIZE - pickedListening.length - pickedGrammar.length);
+  shuffle(words).slice(0, vocabTarget).forEach((w, i) => {
+    if (i % 2 === 0) {
+      const opts = shuffle([w.meaning, ...pickDistractors(meanings, w.meaning, OPTION_DISTRACTORS)]);
+      questions.push({ kind: 'Chọn nghĩa đúng', prompt: w.hanzi, promptIsZh: true, options: opts, answer: w.meaning, optionsZh: false, explain: `${w.hanzi} · ${w.pinyin} — ${w.meaning}` });
+    } else {
+      const opts = shuffle([w.hanzi, ...pickDistractors(hanzis, w.hanzi, OPTION_DISTRACTORS)]);
+      questions.push({ kind: 'Chọn từ đúng nghĩa', prompt: w.meaning, promptIsZh: false, options: opts, answer: w.hanzi, optionsZh: true, explain: `${w.hanzi} · ${w.pinyin} — ${w.meaning}` });
+    }
+  });
+  questions.push(...pickedListening, ...pickedGrammar);
   return { questions: shuffle(questions), index: 0, picked: null, score: 0, finished: false };
 }
 
@@ -449,7 +496,7 @@ function QuizView({ lesson, levelData }) {
     const rec = readStore().lessons[lesson.key];
     return (
       <div class="cur-card cur-quiz-start">
-        <p class="cur-quiz-intro">{`Khoảng ${QUIZ_SIZE} câu trắc nghiệm về từ vựng và ngữ pháp của bài. Đúng từ 80% trở lên là hoàn thành bài.`}</p>
+        <p class="cur-quiz-intro">{`Khoảng ${QUIZ_SIZE} câu trắc nghiệm (từ mới, nghe hiểu và ngữ pháp) của bài. Đúng từ 80% trở lên là hoàn thành bài.`}</p>
         {rec && <p class="cur-quiz-best">{`Điểm cao nhất: ${rec.best}%${rec.done ? ' · Đã hoàn thành' : ''}`}</p>}
         <button type="button" class="ds-btn ds-btn--primary" onClick={() => setUi({ quiz: buildQuiz(lesson, levelData) })}>Bắt đầu luyện tập</button>
       </div>
@@ -488,7 +535,22 @@ function QuizView({ lesson, levelData }) {
     <div class="cur-card cur-quiz">
       <div class="cur-progress"><div class="cur-progress-fill" style={`width:${Math.round((quiz.index / total) * 100)}%`}></div></div>
       <div class="cur-quiz-kind">{`Câu ${quiz.index + 1} / ${total} · ${q.kind}`}</div>
-      <div class={'cur-quiz-prompt' + (q.promptIsZh ? ' is-zh' : '')} lang={q.promptIsZh ? 'zh-CN' : 'vi'}>{q.prompt}</div>
+      {q.audioText && (
+        <div class="cur-quiz-audio-wrap">
+          <button
+            type="button"
+            class="cur-quiz-audio"
+            onClick={(e) => speak(q.audioText, e)}
+            aria-label="Nghe câu hỏi"
+          >
+            <AudioIcon size={20} />
+            <span>Nghe và chọn đáp án đúng</span>
+          </button>
+        </div>
+      )}
+      {q.prompt && (
+        <div class={'cur-quiz-prompt' + (q.promptIsZh ? ' is-zh' : '')} lang={q.promptIsZh ? 'zh-CN' : 'vi'}>{q.prompt}</div>
+      )}
       {q.sub && <div class="cur-quiz-sub">{q.sub}</div>}
       <div class={'cur-quiz-options' + (q.optionsZh ? ' is-zh' : '')}>
         {q.options.map((opt) => {
