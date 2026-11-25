@@ -6,6 +6,8 @@
 import { render } from 'preact';
 import { signal } from '@preact/signals';
 import { onDomReady } from './domReady';
+import { examCountdown, sprintConfig, loadSprintPreferences } from './SprintState.js';
+import { db } from './db.js';
 
 /* global LEVELS, LEVELS_HSK30, SRS, SPEECH_RATE, homeWidgetsDirty -- classic-script globals */
 
@@ -307,9 +309,43 @@ export function refreshHomeWidgets() {
   updateForgotten(snapshot, seq);
 }
 
+function ExamCountdownCard() {
+  const cfg = sprintConfig.value;
+  const cd = examCountdown.value;
+  if (!cfg.examDate) return null;
+
+  let statusText = 'Chưa đặt ngày thi';
+  if (cd.status === 'today') statusText = 'Hôm nay thi! Giữ vững tâm lý!';
+  else if (cd.status === 'passed') statusText = 'Đã qua ngày thi mục tiêu';
+  else if (cd.status === 'upcoming') statusText = `Còn ${cd.daysLeft} ngày (${cd.hoursLeft} giờ)`;
+
+  return (
+    <section
+      class="hw-card hw-sprint-countdown"
+      id="hwExamCountdown"
+    >
+      <div class="hw-head">
+        <span class="hw-title">🔥 Đếm ngược ngày thi ({cfg.examDate})</span>
+        <button
+          type="button"
+          class="hw-link"
+          onClick={() => typeof window.openSection === 'function' && window.openSection('exam')}
+        >
+          Vào Sinh tử chiến →
+        </button>
+      </div>
+      <div class="hw-sprint-cd-body">
+        <strong>{statusText}</strong>
+        <span>Chỉ tiêu: {cfg.dailyNewQuota} từ mới/ngày</span>
+      </div>
+    </section>
+  );
+}
+
 function HomeWidgetsCards() {
   return (
     <>
+      <ExamCountdownCard />
       <section class="hw-card hw-wotd" id="hwWordOfDay"><WordOfDay key={cardEpoch.value} /></section>
       <section class="hw-card hw-forecast" id="hwForecast"><ReviewForecast key={cardEpoch.value} /></section>
     </>
@@ -337,6 +373,7 @@ function placeHomeWidgets(container, isDesktop) {
 export function mountHomeWidgets() {
   Object.assign(window, { refreshHomeWidgets, homeShortLevelLabel, openForgottenReview });
   onDomReady(() => {
+    loadSprintPreferences(db).catch(() => {});
     const container = document.createElement('div');
     container.className = 'home-widgets';
     container.id = 'homeWidgets';

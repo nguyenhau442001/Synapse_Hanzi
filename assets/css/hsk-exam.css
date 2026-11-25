@@ -864,3 +864,375 @@
 }
 
 
+
+/* Exam Sprint ("Sinh tử chiến / Khô máu") */
+.exam-sprint-panel {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.exam-sprint-hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem;
+  border-radius: 0.9rem;
+  background: var(--bg-surface, #fff);
+  border: 1px solid var(--border-subtle, #e2e8f0);
+}
+
+.exam-sprint-hero h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 0.35rem;
+  color: var(--brand-primary, #a8322d);
+  font-size: 1.25rem;
+}
+
+.exam-sprint-hero p {
+  margin: 0;
+  color: var(--text-secondary, #475569);
+  font-size: 0.9rem;
+}
+
+.exam-sprint-countdown-box {
+  padding: 0.85rem 1.15rem;
+  border-radius: 0.75rem;
+  background: var(--warning-bg, #faf5eb);
+  border: 1px solid var(--border-strong, #c5a46d);
+  text-align: right;
+}
+
+.exam-sprint-countdown-value {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.4rem;
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: var(--brand-primary, #a8322d);
+}
+
+.exam-sprint-countdown-sub {
+  margin-top: 0.25rem;
+  font-size: 0.82rem;
+  color: var(--text-secondary, #475569);
+}
+
+.exam-sprint-config-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.85rem;
+}
+
+.exam-sprint-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 0.85rem;
+  border-radius: 0.75rem;
+  background: var(--bg-surface, #fff);
+  border: 1px solid var(--border-subtle, #e2e8f0);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.exam-sprint-field span {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.exam-sprint-field input {
+  padding: 0.5rem 0.65rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-subtle, #cbd5e1);
+  background: var(--bg-canvas, #f8fafc);
+  color: var(--text-primary, #1e293b);
+}
+
+.exam-sprint-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.75rem;
+}
+
+.exam-sprint-stat {
+  padding: 0.85rem;
+  border-radius: 0.75rem;
+  background: var(--bg-surface, #fff);
+  border: 1px solid var(--border-subtle, #e2e8f0);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.exam-sprint-stat span {
+  font-size: 0.8rem;
+  color: var(--text-secondary, #64748b);
+}
+
+.exam-sprint-stat strong {
+  font-size: 1.35rem;
+  color: var(--text-primary, #0f172a);
+}
+
+.exam-sprint-quick-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.exam-sprint-btn-suspend,
+.exam-sprint-btn-keep {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.75rem 1.15rem;
+  border-radius: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+}
+
+.exam-sprint-btn-suspend {
+  background: var(--status-success, #527d70);
+  color: #fff;
+}
+
+.exam-sprint-btn-keep {
+  background: var(--brand-primary, #a8322d);
+  color: #fff;
+}
+
+.exam-sprint-slots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.85rem;
+}
+
+.exam-sprint-slot-card {
+  padding: 1rem;
+  border-radius: 0.85rem;
+  background: var(--bg-surface, #fff);
+  border: 1px solid var(--border-subtle, #e2e8f0);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.exam-sprint-slot-card.is-done {
+  border-color: var(--status-success, #527d70);
+}
+
+.exam-sprint-slot-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--brand-primary, #a8322d);
+}
+
+.exam-sprint-slot-card h4 {
+  margin: 0;
+  font-size: 0.98rem;
+}
+
+.exam-sprint-slot-card p {
+  margin: 0;
+  font-size: 0.83rem;
+  color: var(--text-secondary, #475569);
+  flex: 1;
+}
+
+.exam-sprint-card {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: var(--bg-surface, #fff);
+  border: 1px solid var(--border-subtle, #e2e8f0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.exam-sprint-meta {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--text-secondary, #64748b);
+}
+
+.exam-sprint-audio-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background: var(--info-bg, #eef3f5);
+  color: var(--info-text, #3d6b78);
+  font-weight: 700;
+}
+
+.exam-sprint-progress-track {
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--progress-track, #e2e8f0);
+  overflow: hidden;
+}
+
+.exam-sprint-progress-fill {
+  height: 100%;
+  background: var(--brand-primary, #a8322d);
+  transition: width 0.1s linear;
+}
+
+.exam-sprint-hanzi {
+  font-family: var(--font-zh, "Noto Serif SC", serif);
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.exam-sprint-pinyin-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.exam-sprint-pinyin {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--brand-primary, #a8322d);
+}
+
+.exam-sprint-meaning {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.exam-sprint-hanviet {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 0.6rem;
+  background: var(--warning-bg, #faf5eb);
+  color: var(--warning-text, #7d633e);
+  font-size: 0.92rem;
+}
+
+.exam-sprint-family {
+  width: 100%;
+  text-align: left;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  background: var(--surface-subtle, #faf6ee);
+}
+
+.exam-sprint-family-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.45rem;
+}
+
+.exam-sprint-family-chip {
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: var(--bg-surface, #fff);
+  border: 1px solid var(--border-subtle, #e2e8f0);
+  font-size: 0.82rem;
+}
+
+.exam-sprint-pinyin-check {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  text-align: left;
+}
+
+.exam-sprint-pinyin-input-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.exam-sprint-pinyin-input-row input {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-subtle, #cbd5e1);
+}
+
+.exam-sprint-ok { color: var(--status-success, #375f53); font-weight: 700; font-size: 0.85rem; }
+.exam-sprint-err { color: var(--brand-primary, #a8322d); font-weight: 700; font-size: 0.85rem; }
+
+.exam-sprint-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.exam-sprint-choices {
+  width: 100%;
+  max-width: 520px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.6rem;
+}
+
+.exam-sprint-choice-btn {
+  padding: 0.75rem 1rem;
+  border-radius: 0.65rem;
+  border: 1px solid var(--border-subtle, #cbd5e1);
+  background: var(--bg-surface, #fff);
+  cursor: pointer;
+  font-weight: 600;
+  text-align: left;
+}
+
+.exam-sprint-choice-btn.is-correct {
+  background: var(--success-bg, #e9f2ea);
+  border-color: var(--status-success, #527d70);
+}
+
+.exam-sprint-choice-btn.is-wrong {
+  background: var(--danger-bg, #f8ede7);
+  border-color: var(--brand-primary, #a8322d);
+}
+
+.exam-sprint-mistake-tag {
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  background: var(--danger-bg, #f8ede7);
+  color: var(--danger-text, #a8322d);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.hw-sprint-cd-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+}

@@ -17,7 +17,9 @@ import { SpeedPinyinDrill } from './SpeedPinyinDrill.jsx';
 import { ReadingSentenceBuilder } from './ReadingSentenceBuilder.jsx';
 import { CbtSimulatorShell } from './CbtSimulatorShell.jsx';
 import { AiTutorPromptGuide } from './AiTutorPromptGuide.jsx';
+import { ExamSprintHub } from './ExamSprintHub.jsx';
 import { EXAM_UI_LABELS } from './ExamConstants.js';
+import { SPRINT_UI_LABELS } from './SprintConstants.js';
 
 export const HSK30_EXAM_STORAGE_KEY = 'hsk30_exam_history_v1';
 export const HSKK_EXAM_STORAGE_KEY = 'hskk_exam_history_v1';
@@ -830,6 +832,9 @@ export function Hsk30ExamComponent() {
     if (hubMode === 'ai_live_tutor') {
       return <AiTutorPromptGuide onBack={() => setHubMode('cbt')} />;
     }
+    if (hubMode === 'sprint_hub') {
+      return <ExamSprintHub onBack={() => setHubMode('cbt')} />;
+    }
     if (hubMode === 'mock_simulator') {
       return (
         <CbtSimulatorShell
@@ -978,6 +983,14 @@ export function Hsk30ExamComponent() {
               onClick={() => setHubMode('ai_live_tutor')}
             >
               {EXAM_UI_LABELS.hubTabs.aiLiveTutor}
+            </button>
+
+            <button
+              type="button"
+              class="exam-pill-btn"
+              onClick={() => setHubMode('sprint_hub')}
+            >
+              {SPRINT_UI_LABELS.hubTabLabel}
             </button>
           </div>
 

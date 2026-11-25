@@ -23,6 +23,17 @@ export class HanziMindDB extends Dexie {
       preferences: 'key',
     });
 
+    this.version(3).stores({
+      cards: 'id, [level+direction], due, state, level, wordId, *tags, examMistakeAt, suspended',
+      reviewLogs: '++id, [level+direction], wordId, timestamp',
+      preferences: 'key',
+    }).upgrade((tx) =>
+      tx.table('cards').toCollection().modify((card) => {
+        if (card.suspended === undefined) card.suspended = false;
+        if (card.sprintBatchDate === undefined) card.sprintBatchDate = null;
+      })
+    );
+
     this.cards = this.table('cards');
     this.reviewLogs = this.table('reviewLogs');
     this.preferences = this.table('preferences');
@@ -43,11 +54,12 @@ export class HanziMindDB extends Dexie {
   }
 
   /**
-   * Finds all cards that are due for review across all levels
+   * Finds all active (non-suspended) cards that are due for review across all levels
    */
   async getDueCards(now = new Date()) {
     const isoNow = now instanceof Date ? now.toISOString() : new Date(now).toISOString();
-    return this.cards.where('due').belowOrEqual(isoNow).toArray();
+    const due = await this.cards.where('due').belowOrEqual(isoNow).toArray();
+    return due.filter((card) => !card.suspended);
   }
 
   /**
@@ -134,6 +146,35 @@ export class HanziMindDB extends Dexie {
       last_review: cardData.last_review ? new Date(cardData.last_review).toISOString() : null,
       tags: Array.isArray(cardData.tags) ? cardData.tags : (existing?.tags || []),
       examMistakeAt: cardData.examMistakeAt || existing?.examMistakeAt || null,
+      suspended: cardData.suspended !== undefined ? Boolean(cardData.suspended) : Boolean(existing?.suspended),
+      sprintBatchDate: cardData.sprintBatchDate !== undefined ? cardData.sprintBatchDate : (existing?.sprintBatchDate || null),
+    });
+  }
+
+  /**
+   * Marks or unmarks a card as suspended (skipped during 2s rough sweep).
+   */
+  async setCardSuspended(level, direction, wordId, suspended = true) {
+    const id = HanziMindDB.getCardKey(level, direction, wordId);
+    const existing = await this.cards.get(id);
+    return this.cards.put({
+      id,
+      level: existing?.level || level,
+      direction: existing?.direction || direction,
+      wordId,
+      due: existing?.due || new Date().toISOString(),
+      stability: existing?.stability || 0,
+      difficulty: existing?.difficulty || 0,
+      elapsed_days: existing?.elapsed_days || 0,
+      scheduled_days: existing?.scheduled_days || 0,
+      reps: existing?.reps || 0,
+      lapses: existing?.lapses || 0,
+      state: existing?.state ?? 0,
+      last_review: existing?.last_review || null,
+      tags: existing?.tags || [],
+      examMistakeAt: existing?.examMistakeAt || null,
+      suspended: Boolean(suspended),
+      sprintBatchDate: existing?.sprintBatchDate || null,
     });
   }
 
