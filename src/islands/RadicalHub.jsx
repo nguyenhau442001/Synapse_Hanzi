@@ -4,6 +4,7 @@
 // Preact port of the former assets/js/radicals.js with identical markup and behavior.
 import { render } from 'preact';
 import { syncNavSections } from './NavSections';
+import { ensureIslandMounted } from './IslandLoader';
 
 /* global RADICAL_STROKE_COUNTS, RADICAL_GROUPS, radicalTab, radicalDataLoaded, radicalStrokeUrl, primaryTab,
    radicalProgress, radicalProgressKey, radicalReturnTab, radicalGroupIndex, radicalWords, radicalOrder,
@@ -181,6 +182,7 @@ export function setPrimaryTab(tab, options) {
   const continueCard = document.getElementById('continueLearningCard');
   if (continueCard) continueCard.style.display = tab === 'vocab' ? '' : 'none';
   if (tab !== 'vocab' && typeof setActiveStudyWord === 'function') setActiveStudyWord(null);
+  ensureIslandMounted(tab);
   if (tab === 'radicals') ensureRadicalDataLoaded();
   if (tab === 'reading') {
     if (typeof startReadingAnalysis === 'function') startReadingAnalysis();

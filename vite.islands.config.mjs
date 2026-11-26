@@ -18,11 +18,15 @@ export default defineConfig({
     copyPublicDir: false,
     minify: true,
     target: 'es2020',
-    rolldownOptions: { output: { minify: true } },
-    lib: {
-      entry: 'src/islands/main.jsx',
-      formats: ['es'],
-      fileName: () => 'islands.js'
+    rolldownOptions: {
+      input: 'src/islands/main.jsx',
+      output: {
+        format: 'es',
+        entryFileNames: 'islands.js',
+        chunkFileNames: 'chunks/[name]-[hash].js',
+        assetFileNames: 'hanzi-mind.[ext]',
+        minify: true
+      }
     }
   }
 });

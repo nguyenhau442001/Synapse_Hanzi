@@ -8,15 +8,27 @@ const DATA_CACHE_NAME = 'hsk-data-v18';
 const PRECACHE_MANIFEST = [
   {
     "url": "index.html",
-    "revision": "4b1daa36407f48bfe144a59ad09af90b"
+    "revision": "4eb668858403617116e98c910c45f58a"
   },
   {
     "url": "assets/flashcards.css",
-    "revision": "3cbd6d7b38fda38a74763ff3e737aba3"
+    "revision": "29ed458577acf68abaceaab7ffad1a45"
   },
   {
     "url": "assets/js/preact/islands.js",
-    "revision": "685b1f7f3939c4f16f0a1882a5a1e223"
+    "revision": "df338e71ba76ab7e194f94059efa7902"
+  },
+  {
+    "url": "assets/js/preact/chunks/SpeakingPractice-CvNrTDb5.js",
+    "revision": "dbf42c1d15b000c5eec1a81f69f3f68b"
+  },
+  {
+    "url": "assets/js/preact/chunks/Hsk30ExamView-BAf_ojro.js",
+    "revision": "9943b1dc32b4f4678832f3b982d8c21f"
+  },
+  {
+    "url": "assets/js/preact/chunks/AiTutorPromptGuide-CMg0vy3C.js",
+    "revision": "ec642b22aca16620b61b90c2655833ef"
   },
   {
     "url": "assets/js/hanviet-dict.js",

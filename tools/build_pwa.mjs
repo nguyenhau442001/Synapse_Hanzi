@@ -19,6 +19,7 @@ export async function buildPwaServiceWorker() {
       'index.html',
       'assets/flashcards.css',
       'assets/js/preact/islands.js',
+      'assets/js/preact/chunks/*.js',
       'assets/js/hanviet-dict.js',
       'assets/js/fast-review-worker.js',
       'assets/images/*.{svg,png}',
