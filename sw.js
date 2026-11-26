@@ -16,7 +16,11 @@ const PRECACHE_MANIFEST = [
   },
   {
     "url": "assets/js/preact/islands.js",
-    "revision": "6ed1ccc8523013bc5a25595947db183a"
+    "revision": "b5bdfcd2bc55096073b08092e470e521"
+  },
+  {
+    "url": "assets/js/preact/chunks/volume-2-Bhebbcvc.js",
+    "revision": "afe26dc0f2bf54772c655b3a6fc8a32b"
   },
   {
     "url": "assets/js/preact/chunks/jsxRuntime-C1x9nXW7.js",
@@ -27,36 +31,40 @@ const PRECACHE_MANIFEST = [
     "revision": "261a4592da8ae5d6263170d45961a6e4"
   },
   {
-    "url": "assets/js/preact/chunks/Writing-BDcmSOwW.js",
-    "revision": "eba9861049eec2b7d68643efcdcb8ea5"
+    "url": "assets/js/preact/chunks/app-CrJIjNht.js",
+    "revision": "8cf29cd3010c76b3ebb80bce9a04ce18"
   },
   {
-    "url": "assets/js/preact/chunks/SpeakingPractice-Bk9VDorz.js",
-    "revision": "1349db250dc90fcb21c48611673e1a33"
+    "url": "assets/js/preact/chunks/Writing-B4bSQ3fg.js",
+    "revision": "0bf0074f97d0a1634ed716925f196b92"
   },
   {
-    "url": "assets/js/preact/chunks/ReadingAnalysis-Ue3qphjN.js",
-    "revision": "e7ae6e62c15f92cf6fb5cd2e2e075d5f"
+    "url": "assets/js/preact/chunks/SpeakingPractice-BVIS6kMy.js",
+    "revision": "b34545203f91473610b2c8ef7220375c"
+  },
+  {
+    "url": "assets/js/preact/chunks/ReadingAnalysis-OItReFl0.js",
+    "revision": "d9314a7f7e7f979a32eba70c391fbb9f"
   },
   {
     "url": "assets/js/preact/chunks/ListeningReviewPanel-vZ0PS0-Q.js",
     "revision": "037350b6b104943f01bd7c3a49ff0414"
   },
   {
-    "url": "assets/js/preact/chunks/ListeningPractice-BzPp75kp.js",
-    "revision": "4be1e08e7f72fd07002aed745a1a8a93"
+    "url": "assets/js/preact/chunks/ListeningPractice-Zg7BSniT.js",
+    "revision": "0c963a38030e2ebcf83e91ac2369a8dc"
   },
   {
-    "url": "assets/js/preact/chunks/Hsk30ExamView-DWUKhzgd.js",
-    "revision": "14010d8a6b0ceb44d5571f40327c6069"
+    "url": "assets/js/preact/chunks/Hsk30ExamView-CN0KdQDk.js",
+    "revision": "c5ac82b3da3a565d67d71155555ed440"
   },
   {
-    "url": "assets/js/preact/chunks/GradedReading-m01Qaek_.js",
-    "revision": "ebb5516c69976f0b49c4128cace0b248"
+    "url": "assets/js/preact/chunks/GradedReading-BWL2GU-U.js",
+    "revision": "536158c47c32a10007cf2e58365119a7"
   },
   {
-    "url": "assets/js/preact/chunks/AiTutorPromptGuide-CWO56ePg.js",
-    "revision": "792917106dd3fb7ee022c52726b6d647"
+    "url": "assets/js/preact/chunks/AiTutorPromptGuide-CVU73Yob.js",
+    "revision": "40b18b3b370b0c1a7b882c571c8eae60"
   },
   {
     "url": "assets/js/hanviet-dict.js",

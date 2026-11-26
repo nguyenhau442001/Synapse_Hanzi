@@ -123,7 +123,7 @@ def test_integration_files():
     assert "assets/flashcards.css" in index_html, "flashcards CSS bundle link missing from index.html"
     assert "--listening-canvas" in (ROOT / "assets/flashcards.css").read_text(encoding="utf-8")
     assert "assets/js/preact/islands.js" in index_html, "Preact islands bundle (ListeningPractice.jsx) missing from index.html"
-    assert "mountListeningPractice()" in (ROOT / "src/islands/main.jsx").read_text(encoding="utf-8")
+    assert "mountListeningPractice()" in (ROOT / "src/islands/IslandLoader.js").read_text(encoding="utf-8")
 
     # radicals.js
     assert "listening: { screenId: 'screenListeningPractice' }" in radicals_js

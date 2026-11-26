@@ -46,3 +46,12 @@ def test_service_worker_precaches_only_existing_files():
     sw = (ROOT / "sw.js").read_text(encoding="utf-8")
     missing = [p for p in re.findall(r"'\./(assets/[^'?]+)", sw) if not (ROOT / p).exists()]
     assert not missing, f"sw.js precaches missing files: {missing}"
+
+
+def test_lazy_chunks_never_import_the_stamped_entry():
+    # index.html loads islands.js?v=<version>; a chunk importing "../islands.js" (no query) would make
+    # the browser evaluate the whole app a second time ("Cycle detected" from doubled Signals hooks).
+    chunks = list((BUNDLE.parent / "chunks").glob("*.js"))
+    offenders = [c.name for c in chunks if "islands.js" in c.read_text(encoding="utf-8")]
+    assert not offenders, f"chunks import the stamped entry: {offenders}"
+    assert BUNDLE.read_text(encoding="utf-8").startswith('import"./chunks/app-')

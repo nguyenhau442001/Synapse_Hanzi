@@ -110,9 +110,10 @@ def test_graded_reading_quiz_audio():
     assert "playQuizFailSound()" in jsx_content
 
     # Bundle contains compiled audio triggers
-    bundle_path = ROOT / "assets" / "js" / "preact" / "islands.js"
-    assert bundle_path.exists()
-    bundle_content = bundle_path.read_text(encoding="utf-8")
+    # islands.js is only a loader; the compiled code lives in hashed chunks (app + lazy islands)
+    chunk_paths = list((ROOT / "assets" / "js" / "preact" / "chunks").glob("*.js"))
+    assert chunk_paths
+    bundle_content = "".join(p.read_text(encoding="utf-8") for p in chunk_paths)
     assert "playQuizSuccessSound" in bundle_content or "getQuizAudioContext" in bundle_content
 
 
