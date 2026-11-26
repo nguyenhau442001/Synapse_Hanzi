@@ -75,7 +75,7 @@ class TestDailyGoalWidget(unittest.TestCase):
         self.assertIn("const validGoal = dailyGoal > 0 ? dailyGoal : 50;", self.levels_js)
         self.assertIn("document.getElementById('dailyGoalPct')", self.levels_js)
         self.assertIn("document.getElementById('dailyGoalTargetText')", self.levels_js)
-        self.assertIn("document.getElementById('headerStreakText')", self.levels_js)
+        self.assertIn("setHeaderStats({ streakDays: Number(streak) || 0 });", self.levels_js)
         self.assertIn("Học thêm hôm nay để hoàn thành mục tiêu.", self.levels_js)
         self.assertIn("`${streak} ngày`", self.levels_js)
 

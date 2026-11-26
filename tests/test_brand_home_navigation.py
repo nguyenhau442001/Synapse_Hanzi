@@ -31,11 +31,10 @@ def test_spa_router_exports_navigate_to_home():
     assert "window.navigateToHome = () => SpaRouter.navigateToHome();" in SPA_ROUTER_JS
 
 
-def test_app_bootstrap_wires_home_navigation():
-    assert "onId('appBrandHomeBtn', 'click', handleHomeNavigation);" in APP_BOOTSTRAP_JS
-    assert "onId('appBrandTextBlock', 'click', handleHomeNavigation);" in APP_BOOTSTRAP_JS
-    assert "on('.app-brand-logo-img', 'click', handleHomeNavigation);" in APP_BOOTSTRAP_JS
-    assert "window.navigateToHome()" in APP_BOOTSTRAP_JS
+def test_app_header_wires_home_navigation():
+    assert "const goHome = () => callGlobal('navigateToHome');" in APP_HEADER_JSX
+    assert APP_HEADER_JSX.count("onClick={goHome}") == 2
+    assert "e.key !== 'Enter' && e.key !== ' '" in APP_HEADER_JSX
 
 
 def test_brand_home_button_styles():
@@ -52,6 +51,7 @@ def test_global_back_button_hidden_on_home_page():
     assert "BACK_TITLE: 'Quay lại trang trước (Alt+Left)'" in HEADER_CONSTANTS_JS
     assert "id={IDS.BACK_BTN}" in APP_HEADER_JSX
     assert "function isRootView(state)" in SPA_ROUTER_JS
-    assert "btn.hidden = isRoot;" in SPA_ROUTER_JS
+    assert "setHeaderUi({ showBackButton: !isRootView() });" in SPA_ROUTER_JS
+    assert "hidden={!headerUi.value.showBackButton}" in APP_HEADER_JSX
     assert "isRootView," in SPA_ROUTER_JS
 

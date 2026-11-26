@@ -7,6 +7,7 @@ import {
   progressFromCards,
   readSavedLevelProgressLegacy,
 } from './StorageEngine.js';
+import { setHeaderStats } from './HeaderStore.js';
 
 /* global LEVELS, currentLevel, currentView, overviewQuery, overviewStatus, pickerVersion,
    order, progress, showPinyin, currentFilter, idx, WORDS, filteredOrder, transitionTimer,
@@ -601,15 +602,7 @@ export function renderLearningDashboard() {
     targetTextNode.textContent = String(validGoal);
   }
 
-  const headerStreak = document.getElementById('headerStreakText');
-  if (headerStreak) headerStreak.textContent = String(streak);
-  const headerStreakBadge = document.getElementById('headerStreakBadge');
-  if (headerStreakBadge) {
-    headerStreakBadge.classList.toggle('is-zero', !(streak > 0));
-    const streakLabel = `Chuỗi ${streak} ngày học liên tiếp`;
-    headerStreakBadge.title = streakLabel;
-    headerStreakBadge.setAttribute('aria-label', streakLabel);
-  }
+  setHeaderStats({ streakDays: Number(streak) || 0 });
   if (knownNode) knownNode.textContent = summary.totalKnown;
   if (studiedNode) studiedNode.textContent = summary.totalStudied;
   const dueTotal = typeof countDueCardsAcrossLevels === 'function' ? countDueCardsAcrossLevels(new Date()) : (window.countDueCardsAcrossLevels ? window.countDueCardsAcrossLevels(new Date()) : 0);

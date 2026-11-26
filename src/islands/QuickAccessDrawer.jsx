@@ -9,6 +9,7 @@ import { onDomReady } from './domReady';
 import { loadWeakWords, saveWeakWords, formatWeakWordLevel } from './WeakWords.jsx';
 import { speakerIconSvg } from './AppUtils.js';
 import { ModalCloseButton, UI_LABELS } from './Icons.jsx';
+import { setHeaderStats, setHeaderUi } from './HeaderStore.js';
 
 /* global SPEECH_RATE, currentLevel -- classic-script globals */
 
@@ -33,10 +34,7 @@ function speak(text, btn) {
 }
 
 function setHeaderBadgeActive(tab) {
-  const savedBtn = document.getElementById('headerSavedWordsBtn');
-  const urgentBtn = document.getElementById('headerUrgentReviewBtn');
-  if (savedBtn) savedBtn.classList.toggle('is-active', tab === 'saved');
-  if (urgentBtn) urgentBtn.classList.toggle('is-active', tab === 'urgent');
+  setHeaderUi({ activeDrawerTab: tab });
 }
 
 // ---- Drawer ------------------------------------------------------------------------------------
@@ -78,8 +76,7 @@ export function switchQuickDrawerTab(tab) {
 
 export function updateSavedBadgeCounts(count) {
   savedCount.value = count;
-  const badge = document.getElementById('headerSavedCount');
-  if (badge) badge.textContent = count;
+  setHeaderStats({ savedCount: count });
   const mobBadge = document.getElementById('mobNotebookBadge');
   if (mobBadge) {
     mobBadge.textContent = count;
@@ -97,14 +94,7 @@ export function renderQuickSavedWords() {
 
 export function updateQuickUrgentWords(items) {
   urgentItems.value = items || [];
-  const count = urgentItems.value.length;
-  const headerBadge = document.getElementById('headerUrgentCount');
-  if (headerBadge) headerBadge.textContent = count;
-  const readerBadge = document.getElementById('readerUrgentCount');
-  if (readerBadge) {
-    readerBadge.textContent = count;
-    readerBadge.style.display = count > 0 ? '' : 'none';
-  }
+  setHeaderStats({ urgentCount: urgentItems.value.length });
 }
 
 function openWord(level, idOrHanzi, hanzi) {
@@ -460,11 +450,6 @@ export function mountQuickAccessDrawer() {
   document.addEventListener('keydown', onGlobalKeydown);
 
   onDomReady(() => {
-    const isMac = typeof navigator !== 'undefined' && /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform);
-    const modKeyEl = document.querySelector('.hqs-kbd-mod');
-    if (modKeyEl) modKeyEl.textContent = isMac ? '⌘' : 'Ctrl+';
-    const quickSearchBtn = document.getElementById('headerQuickSearchBtn');
-    if (quickSearchBtn) quickSearchBtn.addEventListener('click', () => openQuickSearchModal());
     const headerSearchBtn = document.getElementById('headerSearchBtn');
     if (headerSearchBtn) headerSearchBtn.addEventListener('click', (e) => { e.preventDefault(); openQuickSearchModal(); });
     if (typeof window.loadWeakWords === 'function') updateSavedBadgeCounts(window.loadWeakWords().length);

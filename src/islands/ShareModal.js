@@ -133,11 +133,6 @@ export function shareApp() {
 export function initShareFeature() {
   if (typeof document === 'undefined') return;
 
-  const headerBtn = document.getElementById('headerShareBtn');
-  if (headerBtn) {
-    headerBtn.onclick = () => shareApp();
-  }
-
   const dropdownItem = document.getElementById('headerMenuShare');
   if (dropdownItem) {
     dropdownItem.onclick = () => shareApp();

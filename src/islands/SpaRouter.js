@@ -1,5 +1,6 @@
 // src/islands/SpaRouter.js
 // Single Page Application (SPA) History API Router & Navigation Coordinator
+import { setHeaderUi } from './HeaderStore.js';
 
 export const SpaRouter = (function() {
   let isNavigatingFromPopstate = false;
@@ -137,11 +138,8 @@ export const SpaRouter = (function() {
   }
 
   function updateGlobalBackButton() {
-    const btn = document.getElementById('globalBackBtn');
-    if (!btn) return;
-    const isRoot = isRootView();
     // On the home page (root view), the back button is strictly hidden.
-    btn.hidden = isRoot;
+    setHeaderUi({ showBackButton: !isRootView() });
   }
 
   function navigateBack() {
@@ -374,14 +372,6 @@ export const SpaRouter = (function() {
     if (initialized) return;
     initialized = true;
     window.addEventListener('popstate', onPopState);
-
-    const backBtn = document.getElementById('globalBackBtn');
-    if (backBtn) {
-      backBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        navigateBack();
-      });
-    }
 
     window.addEventListener('keydown', (e) => {
       if (e.altKey && e.key === 'ArrowLeft') {

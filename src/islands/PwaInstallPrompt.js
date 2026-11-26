@@ -1,6 +1,7 @@
 // src/islands/PwaInstallPrompt.js
 // PWA installation prompt coordinator for Android/Chromium (beforeinstallprompt)
 // and iOS Safari (interactive 3-step home screen installation guide).
+import { setHeaderUi } from './HeaderStore.js';
 
 const DISMISS_KEY = 'hsk_pwa_install_dismissed_until';
 const DISMISS_DURATION_MS = 7 * 24 * 60 * 60 * 1000; // 7 days
@@ -225,15 +226,8 @@ export function initPwaInstallPrompt() {
 
   // If already installed in standalone mode, hide install buttons
   if (isAppStandalone()) {
-    const headerBtn = document.getElementById('headerInstallBtn');
-    if (headerBtn) headerBtn.style.display = 'none';
+    setHeaderUi({ canInstall: false });
     return;
-  }
-
-  // Hook up header install button if exists
-  const headerBtn = document.getElementById('headerInstallBtn');
-  if (headerBtn) {
-    headerBtn.onclick = () => triggerInstallFlow();
   }
 
   // Handle Android / Chromium beforeinstallprompt event
@@ -247,8 +241,7 @@ export function initPwaInstallPrompt() {
   window.addEventListener('appinstalled', () => {
     deferredPrompt = null;
     dismissInstallPrompt();
-    const headerBtnInstalled = document.getElementById('headerInstallBtn');
-    if (headerBtnInstalled) headerBtnInstalled.style.display = 'none';
+    setHeaderUi({ canInstall: false });
   });
 
   // Handle iOS Safari

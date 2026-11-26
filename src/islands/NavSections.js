@@ -3,6 +3,7 @@
 // Internal tab keys used by setPrimaryTab() stay unchanged; this module only maps
 // them to sections and keeps both rows in sync.
 /* global setPrimaryTab, setVocabSubTab, primaryTab, vocabSubTab */
+import { setHeaderUi } from './HeaderStore.js';
 
 // Sub-tab keys 'level' and 'topic' are vocab-hub views; every other key is a primary tab key.
 export const NAV_SECTIONS = {
@@ -67,13 +68,7 @@ export function syncNavSections(tab) {
   const subtab = subtabForTab(tab);
   if (section) lastSubtab[section] = subtab;
 
-  Object.entries(NAV_SECTIONS).forEach(([key, { navId }]) => {
-    const navEl = document.getElementById(navId);
-    if (!navEl) return;
-    const isActive = key === section;
-    navEl.classList.toggle('active', isActive);
-    navEl.setAttribute('aria-pressed', String(isActive));
-  });
+  setHeaderUi({ activeSection: section });
 
   const row = document.getElementById('pickerControls');
   if (row) row.hidden = !(section && NAV_SECTIONS[section].showRow);
@@ -99,10 +94,6 @@ function revealInRow(el) {
 }
 
 export function initNavSections() {
-  Object.entries(NAV_SECTIONS).forEach(([section, { navId }]) => {
-    const navEl = document.getElementById(navId);
-    if (navEl) navEl.addEventListener('click', () => openSection(section));
-  });
   document.querySelectorAll('#skillSubTabs [data-subtab]').forEach((btn) => {
     btn.addEventListener('click', () => openSubtab(btn.dataset.subtab));
   });

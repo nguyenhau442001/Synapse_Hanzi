@@ -1,13 +1,15 @@
 // App header island: brand, primary nav, quick search, streak/urgent badges, account menu, theme toggle.
-// Renders the exact legacy markup into <header id="appHeader"> so existing CSS and id-based callers keep working.
+// Renders the legacy markup/classes into <header id="appHeader"> so existing CSS keeps applying.
+// State comes from HeaderStore signals; actions call the owning modules' window.* APIs.
 import { render } from 'preact';
-import { ArrowLeft, Search, Flame, Clock, User, Bookmark, CircleHelp, Share2, Download, Moon } from 'lucide-preact';
+import { useState, useEffect, useRef } from 'preact/hooks';
+import { ArrowLeft, Search, Flame, Clock, User, Bookmark, CircleHelp, Share2, Download, Moon, Sun } from 'lucide-preact';
 import { APP_VERSION } from './AppUtils';
+import { headerStats, headerUi } from './HeaderStore.js';
 import {
   HEADER_LABELS as L,
   HEADER_IDS as IDS,
   HEADER_NAV_ITEMS,
-  HEADER_DEFAULT_SECTION,
   HEADER_LOGO_SRC,
   HEADER_LOGO_SIZE_PX,
   HEADER_ICON_SIZE_PX,
@@ -15,8 +17,22 @@ import {
   HEADER_BACK_ICON_SIZE_PX,
   HEADER_BACK_ICON_STROKE,
   HEADER_THEME_ICON_SIZE_PX,
-  DEFAULT_AVATAR_INITIAL,
-} from './HeaderConstants';
+  MAC_PLATFORM_PATTERN,
+} from './HeaderConstants.js';
+
+/** Calls a window-exposed module API (legacy cross-module contract) if it exists. */
+function callGlobal(name, ...args) {
+  if (typeof window !== 'undefined' && typeof window[name] === 'function') window[name](...args);
+}
+
+const goHome = () => callGlobal('navigateToHome');
+const goBack = () => window.SpaRouter?.navigateBack?.();
+const openHistory = () => callGlobal('showHistoryModal');
+const openDrawer = (tab) => callGlobal('openQuickAccessDrawer', tab);
+
+function isMacPlatform() {
+  return typeof navigator !== 'undefined' && MAC_PLATFORM_PATTERN.test(navigator.platform);
+}
 
 function HeaderIcon({ icon: Icon, size = HEADER_ICON_SIZE_PX, strokeWidth = HEADER_ICON_STROKE, className = 'ds-icon' }) {
   return (
@@ -39,7 +55,8 @@ function HeaderBrand() {
           class="global-back-btn"
           aria-label={L.BACK_ARIA}
           title={L.BACK_TITLE}
-          hidden
+          hidden={!headerUi.value.showBackButton}
+          onClick={(e) => { e.preventDefault(); goBack(); }}
         >
           <HeaderIcon
             icon={ArrowLeft}
@@ -55,6 +72,7 @@ function HeaderBrand() {
           class="app-brand-home-btn"
           aria-label={L.HOME_BTN_ARIA}
           title={L.HOME_BTN_TITLE}
+          onClick={goHome}
         >
           <img
             src={HEADER_LOGO_SRC}
@@ -71,6 +89,12 @@ function HeaderBrand() {
           tabIndex={0}
           title={L.HOME_BTN_TITLE}
           aria-label={L.HOME_TEXT_ARIA}
+          onClick={goHome}
+          onKeyDown={(e) => {
+            if (e.key !== 'Enter' && e.key !== ' ') return;
+            e.preventDefault();
+            goHome();
+          }}
         >
           <h1 id={IDS.TITLE}>{L.BRAND_TITLE}</h1>
           <p id={IDS.SUBTITLE}><span class="brand-en">{L.BRAND_SUBTITLE}</span></p>
@@ -89,7 +113,7 @@ function HeaderNav() {
       aria-label={L.NAV_ARIA}
     >
       {HEADER_NAV_ITEMS.map(({ section, domId, label }) => {
-        const isActive = section === HEADER_DEFAULT_SECTION;
+        const isActive = section === headerUi.value.activeSection;
         return (
           <button
             key={section}
@@ -99,6 +123,7 @@ function HeaderNav() {
             role="tab"
             aria-pressed={String(isActive)}
             data-section={section}
+            onClick={() => callGlobal('openSection', section)}
           >
             <span>{label}</span>
           </button>
@@ -109,24 +134,58 @@ function HeaderNav() {
 }
 
 function HeaderAccountMenu() {
+  const [open, setOpen] = useState(false);
+  const wrapRef = useRef(null);
+  const profileBtnRef = useRef(null);
+  const { avatarInitial, canInstall, activeDrawerTab } = headerUi.value;
+
+  useEffect(() => {
+    if (!open) return undefined;
+    const onDocClick = (e) => {
+      if (wrapRef.current && !wrapRef.current.contains(e.target)) setOpen(false);
+    };
+    const onKeyDown = (e) => {
+      if (e.key !== 'Escape') return;
+      setOpen(false);
+      profileBtnRef.current?.focus();
+    };
+    document.addEventListener('click', onDocClick);
+    document.addEventListener('keydown', onKeyDown);
+    return () => {
+      document.removeEventListener('click', onDocClick);
+      document.removeEventListener('keydown', onKeyDown);
+    };
+  }, [open]);
+
+  // Every menu item closes the menu after running its action.
+  const runAndClose = (action) => () => {
+    setOpen(false);
+    action();
+  };
+
   return (
-    <div class="header-account-wrap">
+    <div
+      class="header-account-wrap"
+      ref={wrapRef}
+    >
       <button
         type="button"
+        ref={profileBtnRef}
         id={IDS.PROFILE_BTN}
         class="header-profile-btn"
         title={L.ACCOUNT_BTN_TITLE}
         aria-label={L.ACCOUNT_BTN_ARIA}
         aria-haspopup="menu"
-        aria-expanded="false"
+        aria-expanded={String(open)}
         aria-controls={IDS.ACCOUNT_MENU}
+        onClick={() => setOpen(!open)}
       >
         <span
           id={IDS.AVATAR}
           class="header-avatar-initial"
           aria-hidden="true"
         >
-          {DEFAULT_AVATAR_INITIAL}
+          {avatarInitial}
         </span>
       </button>
 
@@ -135,13 +194,14 @@ function HeaderAccountMenu() {
         class="header-account-menu"
         role="menu"
         aria-label={L.ACCOUNT_MENU_ARIA}
-        hidden
+        hidden={!open}
       >
         <button
           type="button"
           id={IDS.MENU_PROFILE}
           class="header-menu-item"
           role="menuitem"
+          onClick={runAndClose(openHistory)}
         >
           <HeaderIcon icon={User} />
           <span class="header-menu-label">{L.MENU_PROFILE}</span>
@@ -149,13 +209,14 @@ function HeaderAccountMenu() {
         <button
           type="button"
           id={IDS.MENU_SAVED}
-          class="header-menu-item header-badge-saved"
+          class={activeDrawerTab === 'saved' ? 'header-menu-item header-badge-saved is-active' : 'header-menu-item header-badge-saved'}
           role="menuitem"
           aria-label={L.MENU_SAVED_ARIA}
+          onClick={runAndClose(() => openDrawer('saved'))}
         >
           <span class="header-badge-icon" aria-hidden="true"><HeaderIcon icon={Bookmark} /></span>
           <span class="header-menu-label">{L.MENU_SAVED}</span>
-          <span class="header-menu-pill" id={IDS.SAVED_COUNT}>0</span>
+          <span class="header-menu-pill" id={IDS.SAVED_COUNT}>{headerStats.value.savedCount}</span>
         </button>
 
         <div class="header-menu-divider" role="separator"></div>
@@ -166,6 +227,7 @@ function HeaderAccountMenu() {
           class="header-menu-item header-help-btn"
           role="menuitem"
           aria-label={L.MENU_HELP_ARIA}
+          onClick={runAndClose(() => callGlobal('openStudyHelpModal'))}
         >
           <HeaderIcon icon={CircleHelp} />
           <span class="header-menu-label">{L.MENU_HELP}</span>
@@ -176,6 +238,7 @@ function HeaderAccountMenu() {
           class="header-menu-item header-share-btn"
           role="menuitem"
           aria-label={L.MENU_SHARE_ARIA}
+          onClick={runAndClose(() => callGlobal('shareApp'))}
         >
           <HeaderIcon icon={Share2} />
           <span class="header-menu-label">{L.MENU_SHARE}</span>
@@ -186,6 +249,8 @@ function HeaderAccountMenu() {
           class="header-menu-item header-install-btn"
           role="menuitem"
           aria-label={L.MENU_INSTALL_ARIA}
+          style={canInstall ? undefined : { display: 'none' }}
+          onClick={runAndClose(() => callGlobal('triggerInstallFlow'))}
         >
           <HeaderIcon icon={Download} />
           <span class="header-menu-label">{L.MENU_INSTALL}</span>
@@ -202,6 +267,10 @@ function HeaderAccountMenu() {
 }
 
 function HeaderActions() {
+  const { streakDays, urgentCount } = headerStats.value;
+  const { theme, activeDrawerTab } = headerUi.value;
+  const isDark = theme === 'dark';
+  const streakLabel = L.streakLabel(streakDays);
   return (
     <div class="app-header-actions">
       <button
@@ -210,11 +279,12 @@ function HeaderActions() {
         class="header-quick-search-btn header-quick-search-compact"
         aria-label={L.SEARCH_ARIA}
         title={L.SEARCH_TITLE}
+        onClick={() => callGlobal('openQuickSearchModal')}
       >
         <HeaderIcon icon={Search} className="hqs-icon" />
         <span class="hqs-placeholder">{L.SEARCH_PLACEHOLDER}</span>
         <kbd class="hqs-kbd" aria-hidden="true">
-          <span class="hqs-kbd-mod">{L.SEARCH_MOD_MAC}</span>
+          <span class="hqs-kbd-mod">{isMacPlatform() ? L.SEARCH_MOD_MAC : L.SEARCH_MOD_OTHER}</span>
           {L.SEARCH_KBD_KEY}
         </kbd>
       </button>
@@ -222,24 +292,26 @@ function HeaderActions() {
       <button
         type="button"
         id={IDS.STREAK_BTN}
-        class="header-streak-badge is-zero"
-        title={L.STREAK_DEFAULT}
-        aria-label={L.STREAK_DEFAULT}
+        class={streakDays > 0 ? 'header-streak-badge' : 'header-streak-badge is-zero'}
+        title={streakLabel}
+        aria-label={streakLabel}
+        onClick={openHistory}
       >
         <span class="header-streak-icon" aria-hidden="true"><HeaderIcon icon={Flame} /></span>
-        <span class="header-streak-count" id={IDS.STREAK_TEXT}>0</span>
+        <span class="header-streak-count" id={IDS.STREAK_TEXT}>{streakDays}</span>
       </button>
 
       <button
         type="button"
         id={IDS.URGENT_BTN}
-        class="header-action-badge header-badge-urgent"
+        class={activeDrawerTab === 'urgent' ? 'header-action-badge header-badge-urgent is-active' : 'header-action-badge header-badge-urgent'}
         title={L.URGENT_TITLE}
         aria-label={L.URGENT_TITLE}
+        onClick={() => openDrawer('urgent')}
       >
         <span class="header-badge-icon" aria-hidden="true"><HeaderIcon icon={Clock} /></span>
         <span class="header-badge-label">{L.URGENT_LABEL}</span>
-        <span class="header-badge-count" id={IDS.URGENT_COUNT}>0</span>
+        <span class="header-badge-count" id={IDS.URGENT_COUNT}>{urgentCount}</span>
       </button>
 
       <HeaderAccountMenu />
@@ -248,10 +320,14 @@ function HeaderActions() {
         type="button"
         id={IDS.THEME_TOGGLE}
         class="theme-toggle-btn"
-        aria-label={L.THEME_ARIA_DEFAULT}
-        title={L.THEME_TITLE_LIGHT}
+        aria-label={isDark ? L.THEME_ARIA_DARK : L.THEME_ARIA_LIGHT}
+        title={isDark ? L.THEME_TITLE_DARK : L.THEME_TITLE_LIGHT}
+        onClick={() => callGlobal('toggleTheme')}
       >
-        <HeaderIcon icon={Moon} size={HEADER_THEME_ICON_SIZE_PX} />
+        <HeaderIcon
+          icon={isDark ? Sun : Moon}
+          size={HEADER_THEME_ICON_SIZE_PX}
+        />
       </button>
     </div>
   );

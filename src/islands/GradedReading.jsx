@@ -7,6 +7,7 @@ import { useEffect, useRef, useState } from 'preact/hooks';
 import { signal, computed } from '@preact/signals';
 import { toggleTheme } from './ThemeManager.js';
 import { playQuizSuccessSound, playQuizFailSound } from './AppUtils.js';
+import { headerStats } from './HeaderStore.js';
 
 /* global exampleSpeechSpeed, SRS, currentLevel, srsCards, SpaRouter -- classic-script globals */
 
@@ -1583,8 +1584,12 @@ function ReaderNav({ story }) {
             aria-label="Từ cần ôn gấp"
           >
             <svg class="ds-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-            <span id="readerUrgentCount" class="graded-urgent-badge" style={parseInt((typeof document !== 'undefined' && document.getElementById('headerUrgentCount')?.textContent) || '0', 10) > 0 ? '' : 'display:none;'}>
-              {parseInt((typeof document !== 'undefined' && document.getElementById('headerUrgentCount')?.textContent) || '0', 10)}
+            <span
+              id="readerUrgentCount"
+              class="graded-urgent-badge"
+              style={headerStats.value.urgentCount > 0 ? '' : 'display:none;'}
+            >
+              {headerStats.value.urgentCount}
             </span>
           </button>
         </div>
