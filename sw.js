@@ -12,11 +12,11 @@ const PRECACHE_MANIFEST = [
   },
   {
     "url": "assets/flashcards.css",
-    "revision": "fc93aa7bc1ecf60f121060b56015d8c8"
+    "revision": "db4d41251818f1e3eaf40c6d02d44377"
   },
   {
     "url": "assets/js/preact/islands.js",
-    "revision": "c3eb7cdfb651c30eda7df00f6b44117d"
+    "revision": "6ed1ccc8523013bc5a25595947db183a"
   },
   {
     "url": "assets/js/preact/chunks/jsxRuntime-C1x9nXW7.js",

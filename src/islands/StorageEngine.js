@@ -344,16 +344,176 @@ export function isReviewableLevel(config, level) {
   return Boolean(config.isLesson) && Boolean(readSrsRecord(level));
 }
 
-export function countDueCardsAcrossLevels(now) {
-  const currentTime = (now || new Date()).getTime();
+export const REVIEW_PREFS_KEY = 'hsk_review_prefs_v1';
+export const DEFAULT_DAILY_REVIEW_CAP = 50;
+export const DAILY_REVIEW_CAP_OPTIONS = [25, 50, 100, 150, 0];
+export const REVIEW_SESSION_BATCH_SIZE = 25;
+export const BACKLOG_OVERDUE_THRESHOLD_DAYS = 7;
+export const MS_PER_DAY = 24 * 60 * 60 * 1000;
+export const DEFAULT_REVIEW_PRIORITY_MODE = 'smart';
+export const REVIEW_PRIORITY_MODES = ['smart', 'newest_due', 'oldest_due'];
+
+const PRIORITY_TIER_LEARNING = 0;
+const PRIORITY_TIER_TODAY = 1;
+const PRIORITY_TIER_BACKLOG = 2;
+const FALLBACK_STABILITY = 9999;
+
+/**
+ * Reads persisted daily review pacing and backlog preferences.
+ * @returns {{ dailyReviewCap: number, sessionBatchSize: number, backlogThresholdDays: number, priorityMode: string }}
+ */
+export function readReviewPrefs() {
+  const defaults = {
+    dailyReviewCap: DEFAULT_DAILY_REVIEW_CAP,
+    sessionBatchSize: REVIEW_SESSION_BATCH_SIZE,
+    backlogThresholdDays: BACKLOG_OVERDUE_THRESHOLD_DAYS,
+    priorityMode: DEFAULT_REVIEW_PRIORITY_MODE,
+  };
+  try {
+    const raw = JSON.parse(localStorage.getItem(REVIEW_PREFS_KEY));
+    if (!raw || typeof raw !== 'object') return defaults;
+    const cap = Number(raw.dailyReviewCap);
+    const batch = Number(raw.sessionBatchSize);
+    const threshold = Number(raw.backlogThresholdDays);
+    return {
+      dailyReviewCap: Number.isFinite(cap) && cap >= 0 ? cap : defaults.dailyReviewCap,
+      sessionBatchSize: Number.isFinite(batch) && batch > 0 ? batch : defaults.sessionBatchSize,
+      backlogThresholdDays: Number.isFinite(threshold) && threshold > 0 ? threshold : defaults.backlogThresholdDays,
+      priorityMode: REVIEW_PRIORITY_MODES.includes(raw.priorityMode) ? raw.priorityMode : defaults.priorityMode,
+    };
+  } catch (e) {
+    return defaults;
+  }
+}
+
+/**
+ * Persists partial updates to daily review pacing preferences.
+ * @param {Partial<{ dailyReviewCap: number, sessionBatchSize: number, backlogThresholdDays: number, priorityMode: string }>} partial
+ */
+export function saveReviewPrefs(partial) {
+  const next = { ...readReviewPrefs(), ...(partial || {}) };
+  try { localStorage.setItem(REVIEW_PREFS_KEY, JSON.stringify(next)); } catch (e) {}
+  return next;
+}
+
+/**
+ * Counts distinct non-new cards reviewed today across all reviewable levels.
+ * @param {Date} [now]
+ * @param {string} [direction]
+ * @returns {number}
+ */
+export function countReviewedTodayAcrossLevels(now, direction) {
+  const getLocalDateKey = typeof localDateKey === 'function' ? localDateKey : (typeof window !== 'undefined' ? window.localDateKey : null);
+  const today = getLocalDateKey ? getLocalDateKey(now || new Date()) : '';
+  const reviewed = new Set();
   const levelsObj = typeof LEVELS !== 'undefined' ? LEVELS : (typeof window !== 'undefined' ? window.LEVELS : {});
-  return Object.keys(levelsObj).filter(level => isReviewableLevel(levelsObj[level], level)).reduce((count, level) => {
+  Object.keys(levelsObj).filter(level => isReviewableLevel(levelsObj[level], level)).forEach(level => {
+    readSrsReviewLog(level, direction).forEach(entry => {
+      if (!entry || entry.stateBefore === SRS.State.New || !entry.timestamp) return;
+      const timestamp = new Date(entry.timestamp);
+      if (!Number.isFinite(timestamp.getTime()) || (getLocalDateKey && getLocalDateKey(timestamp) !== today)) return;
+      reviewed.add(level + ':' + entry.wordId);
+    });
+  });
+  return reviewed.size;
+}
+
+/**
+ * Summarizes due cards across levels, separating recent due cards from long-overdue backlog.
+ * @param {Date} [now]
+ * @param {ReturnType<typeof readReviewPrefs>} [prefsOverride]
+ */
+export function summarizeDueCardsAcrossLevels(now, prefsOverride) {
+  const currentTime = (now || new Date()).getTime();
+  const prefs = prefsOverride || readReviewPrefs();
+  const backlogMs = prefs.backlogThresholdDays * MS_PER_DAY;
+  const levelsObj = typeof LEVELS !== 'undefined' ? LEVELS : (typeof window !== 'undefined' ? window.LEVELS : {});
+  const byLevel = {};
+  let totalDue = 0;
+  let todayDue = 0;
+  let backlogDue = 0;
+
+  Object.keys(levelsObj).filter(level => isReviewableLevel(levelsObj[level], level)).forEach(level => {
     const record = readSrsRecord(level);
+    let levelTotal = 0;
+    let levelToday = 0;
+    let levelBacklog = 0;
     if (record) {
-      return count + Object.values(record.cards).filter(card => SRS.isDue(card, currentTime)).length;
+      Object.values(record.cards).forEach(card => {
+        if (!SRS.isDue(card, currentTime)) return;
+        levelTotal += 1;
+        const overdueMs = Math.max(0, currentTime - new Date(card.due).getTime());
+        if (overdueMs > backlogMs) levelBacklog += 1;
+        else levelToday += 1;
+      });
+    } else {
+      const legacyCount = Object.values(readSavedLevelProgressLegacy(level)).filter(status => status === 'unknown').length;
+      levelTotal = legacyCount;
+      levelToday = legacyCount;
     }
-    return count + Object.values(readSavedLevelProgressLegacy(level)).filter(status => status === 'unknown').length;
-  }, 0);
+    if (levelTotal > 0) {
+      byLevel[level] = { total: levelTotal, today: levelToday, backlog: levelBacklog };
+    }
+    totalDue += levelTotal;
+    todayDue += levelToday;
+    backlogDue += levelBacklog;
+  });
+
+  const reviewedToday = countReviewedTodayAcrossLevels(now);
+  const dailyCap = prefs.dailyReviewCap;
+  const remainingTodayCap = dailyCap > 0 ? Math.max(0, dailyCap - reviewedToday) : totalDue;
+  const recommendedToday = dailyCap > 0 ? Math.min(totalDue, remainingTodayCap) : totalDue;
+
+  return {
+    totalDue,
+    todayDue,
+    backlogDue,
+    dailyCap,
+    reviewedToday,
+    remainingTodayCap,
+    recommendedToday,
+    byLevel,
+  };
+}
+
+/**
+ * Computes a deterministic sort comparison for prioritizing due cards in micro-sessions.
+ * Lower values are reviewed earlier.
+ * @param {{ due: number, card?: { state?: number, lapses?: number, stability?: number } }} a
+ * @param {{ due: number, card?: { state?: number, lapses?: number, stability?: number } }} b
+ * @param {number} currentTime
+ * @param {string} [priorityMode]
+ * @param {number} [backlogThresholdDays]
+ */
+export function compareDueCards(a, b, currentTime, priorityMode = DEFAULT_REVIEW_PRIORITY_MODE, backlogThresholdDays = BACKLOG_OVERDUE_THRESHOLD_DAYS) {
+  if (priorityMode === 'oldest_due') return a.due - b.due;
+  if (priorityMode === 'newest_due') return b.due - a.due;
+
+  const backlogMs = backlogThresholdDays * MS_PER_DAY;
+  const tierFor = (item) => {
+    const state = item.card ? item.card.state : SRS.State.New;
+    if (state === SRS.State.Learning || state === SRS.State.Relearning) return PRIORITY_TIER_LEARNING;
+    const overdueMs = Math.max(0, currentTime - item.due);
+    return overdueMs > backlogMs ? PRIORITY_TIER_BACKLOG : PRIORITY_TIER_TODAY;
+  };
+
+  const tierA = tierFor(a);
+  const tierB = tierFor(b);
+  if (tierA !== tierB) return tierA - tierB;
+
+  const lapsesA = (a.card && Number.isFinite(a.card.lapses)) ? a.card.lapses : 0;
+  const lapsesB = (b.card && Number.isFinite(b.card.lapses)) ? b.card.lapses : 0;
+  if (lapsesA !== lapsesB) return lapsesB - lapsesA;
+
+  const stabA = (a.card && Number.isFinite(a.card.stability)) ? a.card.stability : FALLBACK_STABILITY;
+  const stabB = (b.card && Number.isFinite(b.card.stability)) ? b.card.stability : FALLBACK_STABILITY;
+  if (stabA !== stabB) return stabA - stabB;
+
+  return b.due - a.due;
+}
+
+export function countDueCardsAcrossLevels(now) {
+  return summarizeDueCardsAcrossLevels(now).totalDue;
 }
 
 export function mountStorageEngine() {
@@ -361,6 +521,13 @@ export function mountStorageEngine() {
     Object.assign(window, {
       SRS_SCHEMA_VERSION,
       SRS_RETENTION_KEY,
+      REVIEW_PREFS_KEY,
+      DEFAULT_DAILY_REVIEW_CAP,
+      DAILY_REVIEW_CAP_OPTIONS,
+      REVIEW_SESSION_BATCH_SIZE,
+      BACKLOG_OVERDUE_THRESHOLD_DAYS,
+      DEFAULT_REVIEW_PRIORITY_MODE,
+      REVIEW_PRIORITY_MODES,
       STUDY_DIRECTIONS,
       DEFAULT_STUDY_DIRECTION,
       normalizeStudyDirection,
@@ -375,6 +542,8 @@ export function mountStorageEngine() {
       appendImportedReviewLog,
       retentionFromPrefs,
       saveRetention,
+      readReviewPrefs,
+      saveReviewPrefs,
       statusFromCard,
       progressFromCards,
       migrateLegacyProgress,
@@ -385,6 +554,9 @@ export function mountStorageEngine() {
       savePrefs,
       reviewSrsCard,
       countNewReviewsToday,
+      countReviewedTodayAcrossLevels,
+      summarizeDueCardsAcrossLevels,
+      compareDueCards,
       countDueCardsAcrossLevels,
       isReviewableLevel,
     });

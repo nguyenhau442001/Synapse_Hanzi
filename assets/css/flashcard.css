@@ -1886,6 +1886,78 @@ body.hide-illustrations .card .card-visual-col {
   transform: translateY(-1px);
 }
 
+.today-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 140ms ease;
+}
+
+.today-btn-secondary:hover {
+  background: var(--surface-hover);
+  border-color: var(--border-strong);
+}
+
+.today-celebration-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.today-review-scope-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 16px 4px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.today-scope-pill {
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-surface);
+  color: var(--text-secondary);
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 120ms ease;
+}
+
+.today-scope-pill:hover {
+  border-color: var(--border-strong);
+  color: var(--text-primary);
+}
+
+.today-scope-pill.is-active {
+  background: var(--accent-light);
+  border-color: var(--accent);
+  color: var(--accent-text);
+}
+
+.today-scope-select {
+  padding: 5px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-surface);
+  color: var(--text-secondary);
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 /* Loading & Error */
 .today-review-loading,
 .today-review-error {

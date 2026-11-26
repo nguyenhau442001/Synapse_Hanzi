@@ -7,6 +7,13 @@ import { useEffect } from 'preact/hooks';
 import { signal } from '@preact/signals';
 import { AudioIcon, ArrowLeftIcon, ArrowRightIcon, RotateIcon } from './Icons.jsx';
 import { initCardSwipe } from './CardInteractions.jsx';
+import {
+  MS_PER_DAY,
+  REVIEW_SESSION_BATCH_SIZE,
+  readReviewPrefs,
+  summarizeDueCardsAcrossLevels,
+  compareDueCards,
+} from './StorageEngine.js';
 
 /* global LEVELS, SRS, RATING_KEYS, SPEECH_RATE, SpaRouter -- classic-script globals */
 
@@ -15,6 +22,19 @@ const phase = signal('idle');           // 'idle' | 'loading' | 'error' | 'card'
 const queue = signal([]);               // [{ level, word, card, due }]
 const index = signal(0);
 const revealed = signal(false);
+const reviewScope = signal('smart');    // 'smart' | 'today_only' | 'backlog' | 'level'
+const reviewLevelFilter = signal(null);
+const isTodayReviewSession = signal(false);
+const dueSummary = signal({
+  totalDue: 0,
+  todayDue: 0,
+  backlogDue: 0,
+  dailyCap: 50,
+  reviewedToday: 0,
+  remainingTodayCap: 50,
+  recommendedToday: 0,
+  byLevel: {},
+});
 // Header progress keeps its last values while the next session loads, as before.
 const progress = signal({ counter: '1 / 25', text: 'Đang tải...', pct: 0 });
 let doneMessage = 'Không còn thẻ đến hạn hôm nay.';
@@ -23,9 +43,23 @@ const availableLevels = () => Object.keys(LEVELS).filter((level) => (
   typeof window.isReviewableLevel === 'function' ? window.isReviewableLevel(LEVELS[level], level) : LEVELS[level].available
 ));
 
-async function loadTodayReviewQueue() {
+async function loadTodayReviewQueue(options = {}) {
   const now = new Date();
-  const levels = availableLevels();
+  const currentTime = now.getTime();
+  const prefs = readReviewPrefs();
+  const summary = summarizeDueCardsAcrossLevels(now, prefs);
+  dueSummary.value = summary;
+
+  const scope = options.scope || reviewScope.value || 'smart';
+  const levelFilter = options.levelFilter !== undefined ? options.levelFilter : reviewLevelFilter.value;
+  const limit = Number.isFinite(Number(options.limit)) && Number(options.limit) > 0
+    ? Number(options.limit)
+    : (prefs.sessionBatchSize || REVIEW_SESSION_BATCH_SIZE);
+  const backlogMs = prefs.backlogThresholdDays * MS_PER_DAY;
+
+  const levels = (scope === 'level' && levelFilter)
+    ? availableLevels().filter((lvl) => lvl === levelFilter)
+    : availableLevels();
   const datasets = await Promise.all(levels.map(window.fetchLevelWords));
   const items = [];
   levels.forEach((level, levelIndex) => {
@@ -33,11 +67,17 @@ async function loadTodayReviewQueue() {
     const cards = window.loadSrsForLevel(level, words, window.readSavedLevelProgressLegacy(level));
     words.forEach((word) => {
       const card = cards[word.id];
-      if (SRS.isDue(card, now)) items.push({ level, word, card, due: new Date(card.due).getTime() });
+      if (!SRS.isDue(card, now)) return;
+      const dueMs = new Date(card.due).getTime();
+      const overdueMs = Math.max(0, currentTime - dueMs);
+      if (scope === 'today_only' && overdueMs > backlogMs) return;
+      if (scope === 'backlog' && overdueMs <= backlogMs) return;
+      items.push({ level, word, card, due: dueMs });
     });
   });
-  items.sort((a, b) => a.due - b.due);
-  return items;
+
+  items.sort((a, b) => compareDueCards(a, b, currentTime, prefs.priorityMode, prefs.backlogThresholdDays));
+  return items.slice(0, limit);
 }
 
 // Moves to the card at `index` (or the celebration once the queue is exhausted).
@@ -45,6 +85,9 @@ function showCurrentCard() {
   revealed.value = false;
   const total = queue.value.length;
   if (index.value >= total) {
+    if (isTodayReviewSession.value) {
+      dueSummary.value = summarizeDueCardsAcrossLevels(new Date(), readReviewPrefs());
+    }
     progress.value = { counter: `${total} / ${total}`, text: `Đã hoàn thành ${total} / ${total} thẻ`, pct: 100 };
     phase.value = 'done';
     window.renderLearningDashboard();
@@ -102,11 +145,12 @@ const HOME_CHROME_IDS = ['primaryTabs', 'pickerControls', 'learningDashboard'];
 const setDisplay = (id, value) => { const el = document.getElementById(id); if (el) el.style.display = value; };
 
 // Shared by "Ôn hôm nay" and the home widgets' quick review; loadQueue resolves to [{ level, word, card, due }].
-export async function openReviewQueue(screenTitle, loadQueue, message) {
+export async function openReviewQueue(screenTitle, loadQueue, message, isToday = false) {
   window.setActiveStudyWord(null);
   document.body.classList.add('today-reviews-focus-mode');
   title.value = screenTitle;
   doneMessage = message;
+  isTodayReviewSession.value = Boolean(isToday);
   SCREEN_IDS_HIDDEN_DURING_REVIEW.forEach((id) => setDisplay(id, 'none'));
   setDisplay('screenTodayReviews', '');
   HOME_CHROME_IDS.forEach((id) => setDisplay(id, 'none'));
@@ -123,8 +167,37 @@ export async function openReviewQueue(screenTitle, loadQueue, message) {
   }
 }
 
-export function openTodayReviews() {
-  return openReviewQueue('📅 Ôn hôm nay', loadTodayReviewQueue, 'Không còn thẻ đến hạn hôm nay.');
+export function openTodayReviews(options = {}) {
+  if (options.scope) reviewScope.value = options.scope;
+  if (options.levelFilter !== undefined) reviewLevelFilter.value = options.levelFilter;
+  return openReviewQueue(
+    '📅 Ôn hôm nay',
+    () => loadTodayReviewQueue(options),
+    'Hoàn thành phiên ôn tập!',
+    true,
+  );
+}
+
+async function reloadCurrentReviewSession(options = {}) {
+  phase.value = 'loading';
+  try {
+    queue.value = await loadTodayReviewQueue(options);
+    index.value = 0;
+    showCurrentCard();
+  } catch (error) {
+    console.error('Today review queue reload failed:', error);
+    phase.value = 'error';
+  }
+}
+
+function switchReviewScope(nextScope, nextLevel = null) {
+  reviewScope.value = nextScope;
+  reviewLevelFilter.value = nextLevel;
+  reloadCurrentReviewSession({ scope: nextScope, levelFilter: nextLevel });
+}
+
+function continueNextBatch() {
+  reloadCurrentReviewSession({ scope: reviewScope.value, levelFilter: reviewLevelFilter.value });
 }
 
 export function closeTodayReviews() {
@@ -142,19 +215,37 @@ const stop = (fn) => (e) => { fn(); e.stopPropagation(); };
 
 function Celebration() {
   const total = queue.value.length;
+  const summary = dueSummary.value;
+  const batchSize = readReviewPrefs().sessionBatchSize || REVIEW_SESSION_BATCH_SIZE;
+  const canContinue = isTodayReviewSession.value && summary.totalDue > 0;
+  const nextCount = Math.min(batchSize, summary.totalDue);
   return (
     <div class="today-review-celebration-card">
       <div class="today-celebration-icon" aria-hidden="true">🎉</div>{' '}
-      <h3 class="today-celebration-title">Hoàn thành buổi ôn tập!</h3>{' '}
-      <p class="today-celebration-desc">{doneMessage}</p>{' '}
+      <h3 class="today-celebration-title">Hoàn thành phiên ôn tập!</h3>{' '}
+      <p class="today-celebration-desc">
+        {canContinue
+          ? `Bạn vẫn còn ${summary.totalDue} thẻ đến hạn (trong đó ${summary.todayDue} thẻ gần hạn). Ôn thêm hoặc nghỉ ngơi nhé!`
+          : doneMessage}
+      </p>{' '}
       <div class="today-celebration-stat">
         <span class="stat-number">{total}</span>{' '}
         <span class="stat-label">thẻ đã được củng cố</span>
       </div>{' '}
       <div class="today-celebration-actions">
-        <button type="button" class="today-btn-primary" onClick={goBack}>
+        {canContinue && (
+          <button type="button" class="today-btn-primary" onClick={continueNextBatch}>
+            <span>{`Ôn tiếp ${nextCount} thẻ nữa`}</span>{' '}
+            <ArrowRightIcon size={18} />
+          </button>
+        )}
+        <button
+          type="button"
+          class={canContinue ? 'today-btn-secondary' : 'today-btn-primary'}
+          onClick={goBack}
+        >
           <span>Trở về trang chủ</span>{' '}
-          <ArrowRightIcon size={18} />
+          {!canContinue && <ArrowRightIcon size={18} />}
         </button>
       </div>
     </div>
@@ -291,6 +382,67 @@ function CardArea() {
   }
 }
 
+function ReviewScopeBar() {
+  if (!isTodayReviewSession.value) return null;
+  const summary = dueSummary.value;
+  if (!summary || summary.totalDue <= 0) return null;
+  const activeScope = reviewScope.value;
+  const activeLevel = reviewLevelFilter.value || '';
+  const levelKeys = Object.keys(summary.byLevel || {});
+
+  return (
+    <div class="today-review-scope-bar" role="region" aria-label="Bộ lọc phạm vi ôn tập">
+      <button
+        type="button"
+        class={`today-scope-pill${activeScope === 'smart' ? ' is-active' : ''}`}
+        onClick={() => switchReviewScope('smart', null)}
+      >
+        {`Ưu tiên (${summary.totalDue})`}
+      </button>
+      {summary.todayDue > 0 && (
+        <button
+          type="button"
+          class={`today-scope-pill${activeScope === 'today_only' ? ' is-active' : ''}`}
+          onClick={() => switchReviewScope('today_only', null)}
+        >
+          {`Gần hạn (${summary.todayDue})`}
+        </button>
+      )}
+      {summary.backlogDue > 0 && (
+        <button
+          type="button"
+          class={`today-scope-pill${activeScope === 'backlog' ? ' is-active' : ''}`}
+          onClick={() => switchReviewScope('backlog', null)}
+        >
+          {`Tồn đọng (${summary.backlogDue})`}
+        </button>
+      )}
+      {levelKeys.length > 1 && (
+        <select
+          class="today-scope-select"
+          aria-label="Lọc ôn theo cấp độ"
+          value={activeScope === 'level' ? activeLevel : ''}
+          onChange={(e) => {
+            const val = e.target.value;
+            if (!val) switchReviewScope('smart', null);
+            else switchReviewScope('level', val);
+          }}
+        >
+          <option value="">Tất cả cấp độ</option>
+          {levelKeys.map((lvl) => {
+            const label = (LEVELS[lvl] && LEVELS[lvl].label) ? LEVELS[lvl].label : lvl.toUpperCase();
+            return (
+              <option key={lvl} value={lvl}>
+                {`${label} (${summary.byLevel[lvl].total})`}
+              </option>
+            );
+          })}
+        </select>
+      )}
+    </div>
+  );
+}
+
 export function TodayReviewScreen() {
   const p = progress.value;
   return (
@@ -313,6 +465,8 @@ export function TodayReviewScreen() {
           <span id="todayReviewCounterPill" class="today-review-counter-pill">{p.counter}</span>
         </div>
       </header>{' '}
+
+      <ReviewScopeBar />
 
       <div class="today-review-progress-section" aria-label="Tiến độ ôn tập">
         <div class="today-review-progress-track">

@@ -6,6 +6,7 @@ import {
   readSrsRecord,
   progressFromCards,
   readSavedLevelProgressLegacy,
+  summarizeDueCardsAcrossLevels,
 } from './StorageEngine.js';
 import { setHeaderStats } from './HeaderStore.js';
 
@@ -60,8 +61,16 @@ export const DASHBOARD_TITLE_LABELS = {
   prefix: 'Hôm nay: ',
   newWords: (count) => `học ${count} từ mới`,
   separator: ' · ',
-  dueCards: (count) => `${count} thẻ đến hạn`,
-  dueLinkHint: (count) => `Ôn ngay ${count} thẻ đến hạn`,
+  dueCards: (recommended, totalDue) => {
+    if (recommended <= 0 && totalDue > 0) return `đã đủ mục tiêu ôn (${totalDue} tồn)`;
+    if (totalDue > recommended) return `ôn ${recommended} thẻ (tồn ${totalDue})`;
+    return `${recommended} thẻ đến hạn`;
+  },
+  dueLinkHint: (recommended, totalDue) => (
+    recommended > 0
+      ? `Ôn phiên ${recommended} thẻ ưu tiên (tổng ${totalDue} thẻ đến hạn)`
+      : `Đã đạt mục tiêu ôn hôm nay — bấm để ôn thêm từ ${totalDue} thẻ tồn đọng`
+  ),
   allDone: 'Đã hoàn thành mục tiêu hôm nay',
 };
 export const LAST_LEVEL_KEY = 'hsk_last_level_v1';
@@ -605,8 +614,10 @@ export function renderLearningDashboard() {
   setHeaderStats({ streakDays: Number(streak) || 0 });
   if (knownNode) knownNode.textContent = summary.totalKnown;
   if (studiedNode) studiedNode.textContent = summary.totalStudied;
-  const dueTotal = typeof countDueCardsAcrossLevels === 'function' ? countDueCardsAcrossLevels(new Date()) : (window.countDueCardsAcrossLevels ? window.countDueCardsAcrossLevels(new Date()) : 0);
-  if (dueCount) dueCount.textContent = String(dueTotal);
+  const dueSummary = summarizeDueCardsAcrossLevels(new Date());
+  const dueTotal = dueSummary.totalDue;
+  const dueRecommended = dueSummary.recommendedToday;
+  if (dueCount) dueCount.textContent = String(dueRecommended > 0 ? dueRecommended : dueTotal);
   if (todayReviewButton) todayReviewButton.hidden = dueTotal === 0;
 
   const remainingNew = Math.max(0, validGoal - todayCount);
@@ -631,15 +642,23 @@ export function renderLearningDashboard() {
   }
   if (dueLinkNode) {
     dueLinkNode.hidden = dueTotal === 0;
-    dueLinkNode.textContent = DASHBOARD_TITLE_LABELS.dueCards(dueTotal);
-    dueLinkNode.title = DASHBOARD_TITLE_LABELS.dueLinkHint(dueTotal);
-    dueLinkNode.setAttribute('aria-label', DASHBOARD_TITLE_LABELS.dueLinkHint(dueTotal));
+    dueLinkNode.textContent = DASHBOARD_TITLE_LABELS.dueCards(dueRecommended, dueTotal);
+    dueLinkNode.title = DASHBOARD_TITLE_LABELS.dueLinkHint(dueRecommended, dueTotal);
+    dueLinkNode.setAttribute('aria-label', DASHBOARD_TITLE_LABELS.dueLinkHint(dueRecommended, dueTotal));
   }
 
-  if (dueTotal > 0 && remainingNew > 0) {
-    dailyMessage.textContent = 'Ưu tiên ôn thẻ đến hạn trước, học từ mới sau.';
+  if (dueTotal > 0 && dueRecommended === 0) {
+    dailyMessage.textContent = remainingNew > 0
+      ? `Đã đạt mục tiêu ôn hôm nay (${dueSummary.reviewedToday}/${dueSummary.dailyCap}) — học tiếp ${remainingNew} từ mới hoặc ôn thêm tồn đọng.`
+      : `Đã đạt mục tiêu ôn hôm nay! Còn ${dueTotal} thẻ tồn đọng nếu muốn ôn thêm.`;
+  } else if (dueTotal > 0 && remainingNew > 0) {
+    dailyMessage.textContent = dueTotal > dueRecommended
+      ? `Mục tiêu hôm nay: ôn ${dueRecommended} thẻ ưu tiên (còn ${dueTotal - dueRecommended} thẻ tồn đọng xử lý dần).`
+      : 'Ưu tiên ôn thẻ đến hạn trước, học từ mới sau.';
   } else if (dueTotal > 0) {
-    dailyMessage.textContent = `Đã đủ ${validGoal} từ mới hôm nay — ôn tiếp ${dueTotal} từ đến hạn.`;
+    dailyMessage.textContent = dueTotal > dueRecommended
+      ? `Đã đủ ${validGoal} từ mới hôm nay — ôn ${dueRecommended} thẻ ưu tiên (tổng tồn ${dueTotal}).`
+      : `Đã đủ ${validGoal} từ mới hôm nay — ôn tiếp ${dueTotal} từ đến hạn.`;
   } else if (remainingNew > 0) {
     dailyMessage.textContent = `Không có thẻ đến hạn — tiếp tục ${targetLabel} để đạt mục tiêu.`;
   } else {
@@ -649,10 +668,19 @@ export function renderLearningDashboard() {
   const todayActionBtn = document.getElementById('todayPrimaryActionBtn');
   const todayActionLabel = document.getElementById('todayPrimaryActionLabel');
   if (todayActionBtn) {
-    todayActionBtn.dataset.action = dueTotal > 0 ? 'review' : 'new';
+    const shouldPrioritizeReview = dueRecommended > 0 || (dueTotal > 0 && remainingNew === 0);
+    todayActionBtn.dataset.action = shouldPrioritizeReview ? 'review' : 'new';
     todayActionBtn.dataset.level = targetLevel;
     if (todayActionLabel) {
-      todayActionLabel.textContent = dueTotal > 0 ? 'Bắt đầu ôn & học' : (remainingNew > 0 ? `Học ${targetLabel}` : 'Học thêm');
+      if (dueRecommended > 0) {
+        todayActionLabel.textContent = remainingNew > 0 ? 'Bắt đầu ôn & học' : `Ôn ${Math.min(dueRecommended, 25)} thẻ`;
+      } else if (remainingNew > 0) {
+        todayActionLabel.textContent = `Học ${targetLabel}`;
+      } else if (dueTotal > 0) {
+        todayActionLabel.textContent = 'Ôn thêm tồn đọng';
+      } else {
+        todayActionLabel.textContent = 'Học thêm';
+      }
     }
   }
 
