@@ -69,11 +69,13 @@ def test_shared_primitives_have_all_states():
 
 
 def test_brand_identity_in_shell():
-    assert 'id="appTitle">汉字思维</h1>' in INDEX
-    assert 'src="assets/images/logo.svg"' in INDEX
+    header_js = (ROOT / "src/islands/HeaderConstants.js").read_text(encoding="utf-8")
+    header_jsx = (ROOT / "src/islands/AppHeader.jsx").read_text(encoding="utf-8")
+    assert "BRAND_TITLE: '汉字思维'" in header_js and "TITLE: 'appTitle'" in header_js
+    assert "HEADER_LOGO_SRC = 'assets/images/logo.svg'" in header_js
     assert "Hànzì Sīwéi" in INDEX and "Hanzi Mind" in INDEX
     assert ".app-header-brand h1 {\n  font-family: var(--font-zh);" in DS_CSS
-    assert "🔥" not in INDEX.split('id="headerStreakBadge"')[1].split("</button>")[0]
+    assert "🔥" not in header_jsx and "🔥" not in header_js
 
 
 def test_curriculum_page_structure():

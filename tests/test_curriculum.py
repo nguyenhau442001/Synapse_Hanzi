@@ -51,7 +51,8 @@ def test_lessons_have_grammar_dialogue_and_quizzable_examples():
 
 def test_curriculum_tab_is_wired_into_the_app():
     html = (ROOT / "index.html").read_text(encoding="utf-8")
-    assert 'id="primaryTabCurriculum"' in html
+    header = (ROOT / "src" / "islands" / "HeaderConstants.js").read_text(encoding="utf-8")
+    assert "domId: 'primaryTabCurriculum'" in header
     assert 'id="screenCurriculum"' in html
     assert 'id="mobNavCurriculum"' in html
     hub = (ROOT / "src" / "islands" / "RadicalHub.jsx").read_text(encoding="utf-8")

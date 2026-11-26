@@ -3,6 +3,7 @@
 // rendering identical markup so the existing CSS applies unchanged.
 import './tailwind.css';
 import { mountAppUtils } from './AppUtils';
+import { mountAppHeader } from './AppHeader';
 import { mountAppState } from './AppState';
 import { mountSrsEngine } from './SrsEngine';
 import { mountStorageEngine } from './StorageEngine';
@@ -67,6 +68,7 @@ function mountDexieDatabase() {
 }
 
 mountAppUtils();
+mountAppHeader(); // first DOM island: later modules look up header elements by id
 mountAppState();
 mountSrsEngine();
 mountStorageEngine();

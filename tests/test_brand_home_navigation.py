@@ -6,6 +6,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 INDEX_HTML = (ROOT / "index.html").read_text(encoding="utf-8")
+APP_HEADER_JSX = (ROOT / "src/islands/AppHeader.jsx").read_text(encoding="utf-8")
+HEADER_CONSTANTS_JS = (ROOT / "src/islands/HeaderConstants.js").read_text(encoding="utf-8")
 APP_BOOTSTRAP_JS = (ROOT / "src/islands/AppBootstrap.js").read_text(encoding="utf-8")
 SPA_ROUTER_JS = (ROOT / "src/islands/SpaRouter.js").read_text(encoding="utf-8")
 DESIGN_SYSTEM_CSS = (ROOT / "assets/css/design-system.css").read_text(encoding="utf-8")
@@ -14,10 +16,12 @@ FLASHCARDS_CSS = (ROOT / "assets/flashcards.css").read_text(encoding="utf-8")
 
 
 def test_brand_logo_home_button_in_index():
-    assert 'id="appBrandHomeBtn"' in INDEX_HTML
-    assert 'class="app-brand-home-btn"' in INDEX_HTML
-    assert 'src="assets/images/logo.svg"' in INDEX_HTML
-    assert 'id="appBrandTextBlock"' in INDEX_HTML
+    assert 'id="appHeader"' in INDEX_HTML
+    assert "id={IDS.HOME_BTN}" in APP_HEADER_JSX
+    assert 'class="app-brand-home-btn"' in APP_HEADER_JSX
+    assert "HOME_BTN: 'appBrandHomeBtn'" in HEADER_CONSTANTS_JS
+    assert "HEADER_LOGO_SRC = 'assets/images/logo.svg'" in HEADER_CONSTANTS_JS
+    assert "BRAND_TEXT: 'appBrandTextBlock'" in HEADER_CONSTANTS_JS
 
 
 def test_spa_router_exports_navigate_to_home():
@@ -43,8 +47,10 @@ def test_brand_home_button_styles():
 
 
 def test_global_back_button_hidden_on_home_page():
-    assert 'id="globalBackBtn"' in INDEX_HTML
-    assert '<button type="button" id="globalBackBtn" class="global-back-btn" aria-label="Quay lại trang trước" title="Quay lại trang trước (Alt+Left)" hidden>' in INDEX_HTML
+    assert "BACK_BTN: 'globalBackBtn'" in HEADER_CONSTANTS_JS
+    assert "BACK_ARIA: 'Quay lại trang trước'" in HEADER_CONSTANTS_JS
+    assert "BACK_TITLE: 'Quay lại trang trước (Alt+Left)'" in HEADER_CONSTANTS_JS
+    assert "id={IDS.BACK_BTN}" in APP_HEADER_JSX
     assert "function isRootView(state)" in SPA_ROUTER_JS
     assert "btn.hidden = isRoot;" in SPA_ROUTER_JS
     assert "isRootView," in SPA_ROUTER_JS
