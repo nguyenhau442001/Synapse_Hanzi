@@ -167,29 +167,3 @@
   color: #0088cc;
 }
 
-/* Header Share Button */
-.header-share-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
-  background: transparent;
-  color: var(--text-secondary, #94a3b8);
-  border: 1px solid transparent;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  padding: 0;
-}
-
-.header-share-btn:hover {
-  background: var(--bg-hover, rgba(255, 255, 255, 0.08));
-  color: var(--accent, #c05638);
-  border-color: var(--border, rgba(255, 255, 255, 0.12));
-}
-
-:root[data-theme="light"] .header-share-btn:hover {
-  background: #f1f5f9;
-  border-color: rgba(0, 0, 0, 0.1);
-}

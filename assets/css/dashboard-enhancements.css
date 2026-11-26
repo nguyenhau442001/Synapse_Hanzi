@@ -1117,12 +1117,7 @@ body.home-screen .featured-topics {
     gap: 12px;
     justify-content: space-between;
   }
-  body.home-screen .primary-tabs-group .primary-tab {
-    min-height: 36px;
-    padding: 6px 14px;
-    font-size: 13px;
-    border-radius: 8px;
-  }
+
   body.home-screen #screenVocabHub {
     display: flex;
     flex-direction: column;

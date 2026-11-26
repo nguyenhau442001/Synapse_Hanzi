@@ -5,6 +5,7 @@
 import { render } from 'preact';
 import { syncNavSections } from './NavSections';
 import { ensureIslandMounted } from './IslandLoader';
+import { setStudyState } from './StudyStore';
 
 /* global RADICAL_STROKE_COUNTS, RADICAL_GROUPS, radicalTab, radicalDataLoaded, radicalStrokeUrl, primaryTab,
    radicalProgress, radicalProgressKey, radicalReturnTab, radicalGroupIndex, radicalWords, radicalOrder,
@@ -124,6 +125,7 @@ export function setVocabSubTab(tab) {
 export function setPrimaryTab(tab, options) {
   const previousTab = primaryTab;
   primaryTab = tab;
+  setStudyState({ primaryTab: tab, ...(tab !== 'vocab' ? { currentLevel: null } : {}) });
   // Ensure non-tab study screens are hidden when switching primary tabs
   const screenCards = document.getElementById('screenCards');
   if (screenCards) screenCards.style.display = 'none';

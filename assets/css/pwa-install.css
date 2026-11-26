@@ -139,31 +139,6 @@
   color: var(--text-primary, #fff);
 }
 
-/* Header Install Button */
-.header-install-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: rgba(192, 86, 56, 0.12);
-  color: var(--accent, #c05638);
-  border: 1px solid rgba(192, 86, 56, 0.3);
-  padding: 5px 11px;
-  border-radius: 20px;
-  font-size: 12px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  white-space: nowrap;
-}
-
-.header-install-btn:hover {
-  background: var(--accent, #c05638);
-  color: #fff;
-  border-color: var(--accent, #c05638);
-  box-shadow: 0 4px 14px rgba(192, 86, 56, 0.3);
-  transform: translateY(-1px);
-}
-
 /* iOS Guided Modal */
 .pwa-ios-modal-overlay {
   position: fixed;
@@ -341,12 +316,3 @@
   }
 }
 
-@media (max-width: 640px) {
-  .header-install-btn span {
-    display: none;
-  }
-  .header-install-btn {
-    padding: 6px;
-    border-radius: 50%;
-  }
-}

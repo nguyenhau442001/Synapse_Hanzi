@@ -14,6 +14,7 @@
   "include": [
     "src/islands/legacy-globals.d.ts",
     "src/islands/HeaderStore.js",
+    "src/islands/StudyStore.js",
     "src/islands/ExamState.js",
     "src/islands/SrsEngine.js",
     "src/islands/db.js",

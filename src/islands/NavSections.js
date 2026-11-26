@@ -4,6 +4,7 @@
 // them to sections and keeps both rows in sync.
 /* global setPrimaryTab, setVocabSubTab, primaryTab, vocabSubTab */
 import { setHeaderUi } from './HeaderStore.js';
+import { studyState } from './StudyStore.js';
 
 // Sub-tab keys 'level' and 'topic' are vocab-hub views; every other key is a primary tab key.
 export const NAV_SECTIONS = {
@@ -22,12 +23,12 @@ const VOCAB_VIEWS = ['level', 'topic'];
 const lastSubtab = {};
 
 function currentVocabView() {
-  const view = typeof vocabSubTab !== 'undefined' ? vocabSubTab : window.vocabSubTab;
+  const view = typeof vocabSubTab !== 'undefined' ? vocabSubTab : (window.vocabSubTab || studyState.value.vocabSubTab);
   return view === 'topic' ? 'topic' : 'level';
 }
 
 function currentPrimaryTab() {
-  return typeof primaryTab !== 'undefined' ? primaryTab : window.primaryTab;
+  return typeof primaryTab !== 'undefined' ? primaryTab : (window.primaryTab || studyState.value.primaryTab);
 }
 
 export function subtabForTab(tab) {

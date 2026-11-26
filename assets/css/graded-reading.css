@@ -302,11 +302,7 @@ body.graded-reading-active #screenReadingAnalysis {
 }
 
 /* When reading an individual story, hide primary navigation tabs and search for full zen immersion */
-body.graded-story-active #primaryTabs,
-body.graded-story-active .header-search-wrap,
-body.graded-story-active .header-review-cluster,
-body.graded-story-active .header-streak-cluster,
-body.graded-story-active .header-divider {
+body.graded-story-active #primaryTabs {
   display: none !important;
 }
 
@@ -1233,7 +1229,6 @@ body.graded-reading-active #screenGradedReading {
   border-color: rgba(220, 38, 38, 0.35);
   color: #f87171;
 }
-
 
 /* ==========================================================================
    2. Interactive Reader View
