@@ -246,7 +246,7 @@ export function loadState() {
   const currentRetention = typeof srsRetention !== 'undefined' ? srsRetention : (typeof window !== 'undefined' ? window.srsRetention : 0.9);
   const retentionSlider = document.getElementById('desiredRetentionSlider');
   const retentionLabel = document.getElementById('desiredRetentionValue');
-  if (retentionSlider) retentionSlider.value = String(currentRetention);
+  if (retentionSlider instanceof HTMLInputElement) retentionSlider.value = String(currentRetention);
   if (retentionLabel) retentionLabel.textContent = Math.round(currentRetention * 100) + '%';
 
   const currentOrder = typeof order !== 'undefined' ? order : (typeof window !== 'undefined' ? window.order : []);

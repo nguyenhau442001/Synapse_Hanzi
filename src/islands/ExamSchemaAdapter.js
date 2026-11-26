@@ -189,7 +189,9 @@ export function normalizeExamPayload(rawExam) {
         ? Number(raw.time_minutes)
         : DEFAULT_EXAM_DURATION_MINUTES,
     sections,
-    sectionOrder: SECTION_SEQUENCE.filter((id) => sections[id].questions.length > 0),
+    sectionOrder: /** @type {ExamSectionId[]} */ (
+      SECTION_SEQUENCE.filter((id) => sections[id].questions.length > 0)
+    ),
   };
 }
 

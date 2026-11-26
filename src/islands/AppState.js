@@ -231,13 +231,14 @@ export function setExampleSpeechSpeed(value) {
     speedSummary.setAttribute('aria-label', `Tốc độ đọc câu ví dụ: ${formatExampleSpeechSpeed(nextSpeed)}`);
   }
   document.querySelectorAll('.example-speed-option').forEach(option => {
+    if (!(option instanceof HTMLElement)) return;
     const isSelected = Number(option.dataset.speed) === nextSpeed;
     option.classList.toggle('selected', isSelected);
     option.setAttribute('aria-pressed', String(isSelected));
   });
 
   const speedPicker = document.getElementById('exampleSpeedPicker');
-  if (speedPicker) speedPicker.open = false;
+  if (speedPicker instanceof HTMLDetailsElement) speedPicker.open = false;
 }
 
 export function warmUpSpeech() {}
