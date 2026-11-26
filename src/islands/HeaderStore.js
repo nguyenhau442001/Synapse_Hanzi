@@ -2,7 +2,7 @@
 // Producers (Levels, QuickAccessDrawer, SpaRouter, NavSections, ThemeManager, PwaInstallPrompt)
 // call the setters below instead of writing to header DOM nodes; AppHeader.jsx re-renders from these signals.
 import { signal } from '@preact/signals';
-import { HEADER_DEFAULT_SECTION, PROFILE_NAME_STORAGE_KEY, DEFAULT_AVATAR_INITIAL } from './HeaderConstants.js';
+import { HEADER_DEFAULT_SECTION, PROFILE_NAME_STORAGE_KEY, DEFAULT_PROFILE_NAME } from './HeaderConstants.js';
 
 /**
  * @typedef {Object} HeaderStats
@@ -18,16 +18,20 @@ import { HEADER_DEFAULT_SECTION, PROFILE_NAME_STORAGE_KEY, DEFAULT_AVATAR_INITIA
  * @property {boolean} canInstall       Show the "Cài đặt ứng dụng" menu item (PwaInstallPrompt)
  * @property {import('./HeaderConstants').ThemeName} theme  Current theme (ThemeManager)
  * @property {import('./HeaderConstants').DrawerBadgeTab} activeDrawerTab  Open quick-access drawer tab (QuickAccessDrawer)
- * @property {string} avatarInitial    Monogram shown on the account button
+ * @property {string} profileName      Display name in the account menu; its first letter is the avatar monogram
  */
 
-function readAvatarInitial() {
+function readProfileName() {
   try {
-    const savedName = (localStorage.getItem(PROFILE_NAME_STORAGE_KEY) || '').trim();
-    return savedName ? Array.from(savedName)[0].toUpperCase() : DEFAULT_AVATAR_INITIAL;
+    return (localStorage.getItem(PROFILE_NAME_STORAGE_KEY) || '').trim() || DEFAULT_PROFILE_NAME;
   } catch {
-    return DEFAULT_AVATAR_INITIAL;
+    return DEFAULT_PROFILE_NAME;
   }
+}
+
+/** @param {string} name */
+export function avatarInitialOf(name) {
+  return Array.from(name)[0].toUpperCase();
 }
 
 function readInitialTheme() {
@@ -44,7 +48,7 @@ export const headerUi = signal({
   canInstall: true,
   theme: readInitialTheme(),
   activeDrawerTab: null,
-  avatarInitial: readAvatarInitial(),
+  profileName: readProfileName(),
 });
 
 /** @param {Partial<HeaderStats>} patch */

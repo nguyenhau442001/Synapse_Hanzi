@@ -1,11 +1,23 @@
-// App header island: brand, primary nav, quick search, streak/urgent badges, account menu, theme toggle.
-// Renders the legacy markup/classes into <header id="appHeader"> so existing CSS keeps applying.
+// App header island: brand, primary nav, centered quick search, "today" chip (streak + urgent review)
+// and the account menu (which also holds the light/dark switch). Styles: assets/css/app-header.css.
 // State comes from HeaderStore signals; actions call the owning modules' window.* APIs.
 import { render } from 'preact';
 import { useState, useEffect, useRef } from 'preact/hooks';
-import { ArrowLeft, Search, Flame, Clock, User, Bookmark, CircleHelp, Share2, Download, Moon, Sun } from 'lucide-preact';
+import {
+  ArrowLeft,
+  Search,
+  Flame,
+  Clock,
+  ChevronDown,
+  User,
+  Bookmark,
+  SunMoon,
+  CircleHelp,
+  Share2,
+  Download,
+} from 'lucide-preact';
 import { APP_VERSION } from './AppUtils';
-import { headerStats, headerUi } from './HeaderStore.js';
+import { headerStats, headerUi, avatarInitialOf } from './HeaderStore.js';
 import {
   HEADER_LABELS as L,
   HEADER_IDS as IDS,
@@ -14,9 +26,9 @@ import {
   HEADER_LOGO_SIZE_PX,
   HEADER_ICON_SIZE_PX,
   HEADER_ICON_STROKE,
+  HEADER_CHEVRON_SIZE_PX,
   HEADER_BACK_ICON_SIZE_PX,
   HEADER_BACK_ICON_STROKE,
-  HEADER_THEME_ICON_SIZE_PX,
   MAC_PLATFORM_PATTERN,
 } from './HeaderConstants.js';
 
@@ -30,11 +42,20 @@ const goBack = () => window.SpaRouter?.navigateBack?.();
 const openHistory = () => callGlobal('showHistoryModal');
 const openDrawer = (tab) => callGlobal('openQuickAccessDrawer', tab);
 
+/** Switches to `theme` through ThemeManager (which persists the manual override). */
+function selectTheme(theme) {
+  if (headerUi.value.theme !== theme) callGlobal('toggleTheme');
+}
+
 function isMacPlatform() {
   return typeof navigator !== 'undefined' && MAC_PLATFORM_PATTERN.test(navigator.platform);
 }
 
-function HeaderIcon({ icon: Icon, size = HEADER_ICON_SIZE_PX, strokeWidth = HEADER_ICON_STROKE, className = 'ds-icon' }) {
+function cx(...classes) {
+  return classes.filter(Boolean).join(' ');
+}
+
+function HeaderIcon({ icon: Icon, size = HEADER_ICON_SIZE_PX, strokeWidth = HEADER_ICON_STROKE, className = 'ah-icon' }) {
   return (
     <Icon
       class={className}
@@ -47,58 +68,66 @@ function HeaderIcon({ icon: Icon, size = HEADER_ICON_SIZE_PX, strokeWidth = HEAD
 
 function HeaderBrand() {
   return (
-    <div class="app-header-brand">
-      <div class="app-brand-badge">
-        <button
-          type="button"
-          id={IDS.BACK_BTN}
-          class="global-back-btn"
-          aria-label={L.BACK_ARIA}
-          title={L.BACK_TITLE}
-          hidden={!headerUi.value.showBackButton}
-          onClick={(e) => { e.preventDefault(); goBack(); }}
+    <div class="ah-brand">
+      <button
+        type="button"
+        id={IDS.BACK_BTN}
+        class="global-back-btn"
+        aria-label={L.BACK_ARIA}
+        title={L.BACK_TITLE}
+        hidden={!headerUi.value.showBackButton}
+        onClick={(e) => { e.preventDefault(); goBack(); }}
+      >
+        <HeaderIcon
+          icon={ArrowLeft}
+          className="global-back-icon"
+          size={HEADER_BACK_ICON_SIZE_PX}
+          strokeWidth={HEADER_BACK_ICON_STROKE}
+        />
+        <span class="global-back-text">{L.BACK_TEXT}</span>
+      </button>
+      <button
+        type="button"
+        id={IDS.HOME_BTN}
+        class="ah-logo-btn"
+        aria-label={L.HOME_BTN_ARIA}
+        title={L.HOME_BTN_TITLE}
+        onClick={goHome}
+      >
+        <img
+          src={HEADER_LOGO_SRC}
+          alt={L.BRAND_LOGO_ALT}
+          class="ah-logo"
+          width={HEADER_LOGO_SIZE_PX}
+          height={HEADER_LOGO_SIZE_PX}
+        />
+      </button>
+      <div
+        class="ah-brand-text"
+        id={IDS.BRAND_TEXT}
+        role="button"
+        tabIndex={0}
+        title={L.HOME_BTN_TITLE}
+        aria-label={L.HOME_TEXT_ARIA}
+        onClick={goHome}
+        onKeyDown={(e) => {
+          if (e.key !== 'Enter' && e.key !== ' ') return;
+          e.preventDefault();
+          goHome();
+        }}
+      >
+        <h1
+          id={IDS.TITLE}
+          class="ah-title"
         >
-          <HeaderIcon
-            icon={ArrowLeft}
-            className="global-back-icon"
-            size={HEADER_BACK_ICON_SIZE_PX}
-            strokeWidth={HEADER_BACK_ICON_STROKE}
-          />
-          <span class="global-back-text">{L.BACK_TEXT}</span>
-        </button>
-        <button
-          type="button"
-          id={IDS.HOME_BTN}
-          class="app-brand-home-btn"
-          aria-label={L.HOME_BTN_ARIA}
-          title={L.HOME_BTN_TITLE}
-          onClick={goHome}
+          {L.BRAND_TITLE}
+        </h1>
+        <p
+          id={IDS.SUBTITLE}
+          class="ah-subtitle"
         >
-          <img
-            src={HEADER_LOGO_SRC}
-            alt={L.BRAND_LOGO_ALT}
-            class="app-brand-logo-img"
-            width={HEADER_LOGO_SIZE_PX}
-            height={HEADER_LOGO_SIZE_PX}
-          />
-        </button>
-        <div
-          class="app-brand-text-block"
-          id={IDS.BRAND_TEXT}
-          role="button"
-          tabIndex={0}
-          title={L.HOME_BTN_TITLE}
-          aria-label={L.HOME_TEXT_ARIA}
-          onClick={goHome}
-          onKeyDown={(e) => {
-            if (e.key !== 'Enter' && e.key !== ' ') return;
-            e.preventDefault();
-            goHome();
-          }}
-        >
-          <h1 id={IDS.TITLE}>{L.BRAND_TITLE}</h1>
-          <p id={IDS.SUBTITLE}><span class="brand-en">{L.BRAND_SUBTITLE}</span></p>
-        </div>
+          {L.BRAND_SUBTITLE}
+        </p>
       </div>
     </div>
   );
@@ -107,7 +136,7 @@ function HeaderBrand() {
 function HeaderNav() {
   return (
     <nav
-      class="header-primary-nav primary-tabs-group"
+      class="ah-nav"
       id={IDS.NAV}
       role="tablist"
       aria-label={L.NAV_ARIA}
@@ -118,14 +147,14 @@ function HeaderNav() {
           <button
             key={section}
             id={domId}
-            class={isActive ? 'primary-tab active' : 'primary-tab'}
+            class={cx('ah-nav-tab', isActive && 'active')}
             type="button"
             role="tab"
             aria-pressed={String(isActive)}
             data-section={section}
             onClick={() => callGlobal('openSection', section)}
           >
-            <span>{label}</span>
+            {label}
           </button>
         );
       })}
@@ -133,11 +162,119 @@ function HeaderNav() {
   );
 }
 
-function HeaderAccountMenu() {
+function HeaderSearch() {
+  return (
+    <div class="ah-search-slot">
+      <button
+        type="button"
+        id={IDS.SEARCH_BTN}
+        class="ah-search"
+        aria-label={L.SEARCH_ARIA}
+        title={L.SEARCH_TITLE}
+        onClick={() => callGlobal('openQuickSearchModal')}
+      >
+        <HeaderIcon icon={Search} />
+        <span class="ah-search-placeholder">{L.SEARCH_PLACEHOLDER}</span>
+        <kbd
+          class="ah-kbd"
+          aria-hidden="true"
+        >
+          {`${isMacPlatform() ? L.SEARCH_MOD_MAC : L.SEARCH_MOD_OTHER}${L.SEARCH_KBD_KEY}`}
+        </kbd>
+      </button>
+    </div>
+  );
+}
+
+function TodayChip() {
+  const { streakDays, urgentCount } = headerStats.value;
+  const { activeDrawerTab } = headerUi.value;
+  const streakLabel = L.streakLabel(streakDays);
+  const urgentLabel = L.urgentLabel(urgentCount);
+  return (
+    <div
+      class="ah-today"
+      role="group"
+      aria-label={L.TODAY_GROUP_ARIA}
+    >
+      <button
+        type="button"
+        id={IDS.STREAK_BTN}
+        class={cx('ah-today-btn', 'ah-streak', streakDays > 0 ? null : 'is-zero')}
+        title={streakLabel}
+        aria-label={streakLabel}
+        onClick={openHistory}
+      >
+        <HeaderIcon
+          icon={Flame}
+          className="ah-icon ah-streak-icon"
+        />
+        <span id={IDS.STREAK_TEXT}>{streakDays}</span>
+      </button>
+      <span
+        class="ah-today-divider"
+        aria-hidden="true"
+      />
+      <button
+        type="button"
+        id={IDS.URGENT_BTN}
+        class={cx('ah-today-btn', 'ah-urgent', activeDrawerTab === 'urgent' && 'is-active')}
+        title={urgentLabel}
+        aria-label={urgentLabel}
+        onClick={() => openDrawer('urgent')}
+      >
+        <HeaderIcon icon={Clock} />
+        <span class="ah-urgent-label">{L.URGENT_LABEL}</span>
+        <span
+          id={IDS.URGENT_COUNT}
+          class={cx('ah-count', urgentCount > 0 ? null : 'is-zero')}
+        >
+          {urgentCount}
+        </span>
+      </button>
+    </div>
+  );
+}
+
+function ThemeSwitch() {
+  const isDark = headerUi.value.theme === 'dark';
+  return (
+    <div class="ah-menu-row">
+      <HeaderIcon icon={SunMoon} />
+      <span class="ah-menu-label">{L.THEME_ROW}</span>
+      <div
+        class="ah-segment"
+        role="group"
+        aria-label={L.THEME_ROW}
+      >
+        <button
+          type="button"
+          class={cx('ah-segment-btn', !isDark && 'is-on')}
+          aria-pressed={String(!isDark)}
+          onClick={() => selectTheme('light')}
+        >
+          {L.THEME_LIGHT}
+        </button>
+        <button
+          type="button"
+          class={cx('ah-segment-btn', isDark && 'is-on')}
+          aria-pressed={String(isDark)}
+          onClick={() => selectTheme('dark')}
+        >
+          {L.THEME_DARK}
+        </button>
+      </div>
+    </div>
+  );
+}
+
+function AccountMenu() {
   const [open, setOpen] = useState(false);
   const wrapRef = useRef(null);
   const profileBtnRef = useRef(null);
-  const { avatarInitial, canInstall, activeDrawerTab } = headerUi.value;
+  const { profileName, canInstall, activeDrawerTab } = headerUi.value;
+  const { streakDays, urgentCount, savedCount } = headerStats.value;
+  const initial = avatarInitialOf(profileName);
 
   useEffect(() => {
     if (!open) return undefined;
@@ -157,7 +294,7 @@ function HeaderAccountMenu() {
     };
   }, [open]);
 
-  // Every menu item closes the menu after running its action.
+  // Every action item closes the menu after running its action.
   const runAndClose = (action) => () => {
     setOpen(false);
     action();
@@ -165,14 +302,14 @@ function HeaderAccountMenu() {
 
   return (
     <div
-      class="header-account-wrap"
+      class="ah-account"
       ref={wrapRef}
     >
       <button
         type="button"
         ref={profileBtnRef}
         id={IDS.PROFILE_BTN}
-        class="header-profile-btn"
+        class={cx('ah-account-btn', open && 'is-open')}
         title={L.ACCOUNT_BTN_TITLE}
         aria-label={L.ACCOUNT_BTN_ARIA}
         aria-haspopup="menu"
@@ -182,153 +319,111 @@ function HeaderAccountMenu() {
       >
         <span
           id={IDS.AVATAR}
-          class="header-avatar-initial"
+          class="ah-avatar"
           aria-hidden="true"
         >
-          {avatarInitial}
+          {initial}
         </span>
+        <HeaderIcon
+          icon={ChevronDown}
+          size={HEADER_CHEVRON_SIZE_PX}
+        />
       </button>
 
       <div
         id={IDS.ACCOUNT_MENU}
-        class="header-account-menu"
+        class="ah-menu"
         role="menu"
         aria-label={L.ACCOUNT_MENU_ARIA}
         hidden={!open}
       >
+        <div class="ah-menu-profile">
+          <span
+            class="ah-avatar ah-avatar-lg"
+            aria-hidden="true"
+          >
+            {initial}
+          </span>
+          <span class="ah-menu-profile-text">
+            <span class="ah-menu-profile-name">{profileName}</span>
+            <span class="ah-menu-profile-meta">{L.profileSummary(streakDays, urgentCount)}</span>
+          </span>
+        </div>
+        <div
+          class="ah-menu-divider"
+          role="separator"
+        />
         <button
           type="button"
           id={IDS.MENU_PROFILE}
-          class="header-menu-item"
+          class="ah-menu-item"
           role="menuitem"
           onClick={runAndClose(openHistory)}
         >
           <HeaderIcon icon={User} />
-          <span class="header-menu-label">{L.MENU_PROFILE}</span>
+          <span class="ah-menu-label">{L.MENU_PROFILE}</span>
         </button>
         <button
           type="button"
           id={IDS.MENU_SAVED}
-          class={activeDrawerTab === 'saved' ? 'header-menu-item header-badge-saved is-active' : 'header-menu-item header-badge-saved'}
+          class={cx('ah-menu-item', activeDrawerTab === 'saved' && 'is-active')}
           role="menuitem"
           aria-label={L.MENU_SAVED_ARIA}
           onClick={runAndClose(() => openDrawer('saved'))}
         >
-          <span class="header-badge-icon" aria-hidden="true"><HeaderIcon icon={Bookmark} /></span>
-          <span class="header-menu-label">{L.MENU_SAVED}</span>
-          <span class="header-menu-pill" id={IDS.SAVED_COUNT}>{headerStats.value.savedCount}</span>
+          <HeaderIcon icon={Bookmark} />
+          <span class="ah-menu-label">{L.MENU_SAVED}</span>
+          <span
+            class="ah-menu-pill"
+            id={IDS.SAVED_COUNT}
+          >
+            {savedCount}
+          </span>
         </button>
-
-        <div class="header-menu-divider" role="separator"></div>
-
+        <ThemeSwitch />
+        <div
+          class="ah-menu-divider"
+          role="separator"
+        />
         <button
           type="button"
           id={IDS.MENU_HELP}
-          class="header-menu-item header-help-btn"
+          class="ah-menu-item"
           role="menuitem"
           aria-label={L.MENU_HELP_ARIA}
           onClick={runAndClose(() => callGlobal('openStudyHelpModal'))}
         >
           <HeaderIcon icon={CircleHelp} />
-          <span class="header-menu-label">{L.MENU_HELP}</span>
+          <span class="ah-menu-label">{L.MENU_HELP}</span>
         </button>
         <button
           type="button"
           id={IDS.MENU_SHARE}
-          class="header-menu-item header-share-btn"
+          class="ah-menu-item"
           role="menuitem"
           aria-label={L.MENU_SHARE_ARIA}
           onClick={runAndClose(() => callGlobal('shareApp'))}
         >
           <HeaderIcon icon={Share2} />
-          <span class="header-menu-label">{L.MENU_SHARE}</span>
+          <span class="ah-menu-label">{L.MENU_SHARE}</span>
         </button>
         <button
           type="button"
           id={IDS.MENU_INSTALL}
-          class="header-menu-item header-install-btn"
+          class="ah-menu-item"
           role="menuitem"
           aria-label={L.MENU_INSTALL_ARIA}
-          style={canInstall ? undefined : { display: 'none' }}
+          hidden={!canInstall}
           onClick={runAndClose(() => callGlobal('triggerInstallFlow'))}
         >
           <HeaderIcon icon={Download} />
-          <span class="header-menu-label">{L.MENU_INSTALL}</span>
+          <span class="ah-menu-label">{L.MENU_INSTALL}</span>
         </button>
-
-        <div class="header-menu-divider" role="separator"></div>
-        <div class="header-menu-version">
+        <p class="ah-menu-version">
           {`${L.MENU_VERSION} `}
-          <span class="brand-version footer-version">{`v${APP_VERSION}`}</span>
-        </div>
+          <span class="footer-version">{`v${APP_VERSION}`}</span>
+        </p>
       </div>
-    </div>
-  );
-}
-
-function HeaderActions() {
-  const { streakDays, urgentCount } = headerStats.value;
-  const { theme, activeDrawerTab } = headerUi.value;
-  const isDark = theme === 'dark';
-  const streakLabel = L.streakLabel(streakDays);
-  return (
-    <div class="app-header-actions">
-      <button
-        type="button"
-        id={IDS.SEARCH_BTN}
-        class="header-quick-search-btn header-quick-search-compact"
-        aria-label={L.SEARCH_ARIA}
-        title={L.SEARCH_TITLE}
-        onClick={() => callGlobal('openQuickSearchModal')}
-      >
-        <HeaderIcon icon={Search} className="hqs-icon" />
-        <span class="hqs-placeholder">{L.SEARCH_PLACEHOLDER}</span>
-        <kbd class="hqs-kbd" aria-hidden="true">
-          <span class="hqs-kbd-mod">{isMacPlatform() ? L.SEARCH_MOD_MAC : L.SEARCH_MOD_OTHER}</span>
-          {L.SEARCH_KBD_KEY}
-        </kbd>
-      </button>
-
-      <button
-        type="button"
-        id={IDS.STREAK_BTN}
-        class={streakDays > 0 ? 'header-streak-badge' : 'header-streak-badge is-zero'}
-        title={streakLabel}
-        aria-label={streakLabel}
-        onClick={openHistory}
-      >
-        <span class="header-streak-icon" aria-hidden="true"><HeaderIcon icon={Flame} /></span>
-        <span class="header-streak-count" id={IDS.STREAK_TEXT}>{streakDays}</span>
-      </button>
-
-      <button
-        type="button"
-        id={IDS.URGENT_BTN}
-        class={activeDrawerTab === 'urgent' ? 'header-action-badge header-badge-urgent is-active' : 'header-action-badge header-badge-urgent'}
-        title={L.URGENT_TITLE}
-        aria-label={L.URGENT_TITLE}
-        onClick={() => openDrawer('urgent')}
-      >
-        <span class="header-badge-icon" aria-hidden="true"><HeaderIcon icon={Clock} /></span>
-        <span class="header-badge-label">{L.URGENT_LABEL}</span>
-        <span class="header-badge-count" id={IDS.URGENT_COUNT}>{urgentCount}</span>
-      </button>
-
-      <HeaderAccountMenu />
-
-      <button
-        type="button"
-        id={IDS.THEME_TOGGLE}
-        class="theme-toggle-btn"
-        aria-label={isDark ? L.THEME_ARIA_DARK : L.THEME_ARIA_LIGHT}
-        title={isDark ? L.THEME_TITLE_DARK : L.THEME_TITLE_LIGHT}
-        onClick={() => callGlobal('toggleTheme')}
-      >
-        <HeaderIcon
-          icon={isDark ? Sun : Moon}
-          size={HEADER_THEME_ICON_SIZE_PX}
-        />
-      </button>
     </div>
   );
 }
@@ -336,16 +431,18 @@ function HeaderActions() {
 export function AppHeader() {
   return (
     <>
-      <div class="app-header-left">
-        <HeaderBrand />
-        <HeaderNav />
+      <HeaderBrand />
+      <HeaderNav />
+      <HeaderSearch />
+      <div class="ah-actions">
+        <TodayChip />
+        <AccountMenu />
       </div>
-      <HeaderActions />
     </>
   );
 }
 
-/** Renders synchronously so every id-based caller mounted afterwards finds its element. */
+/** Renders synchronously so every module mounted afterwards can rely on the header being in place. */
 export function mountAppHeader() {
   const root = document.getElementById(IDS.ROOT);
   if (root) render(<AppHeader />, root);

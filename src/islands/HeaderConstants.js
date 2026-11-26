@@ -18,14 +18,17 @@ export const HEADER_LABELS = Object.freeze({
   NAV_ARIA: 'Chế độ học chính',
   SEARCH_ARIA: 'Tìm kiếm từ vựng (Ctrl+K)',
   SEARCH_TITLE: 'Tìm kiếm từ vựng (⌘K)',
-  SEARCH_PLACEHOLDER: 'Tìm từ, pinyin...',
+  SEARCH_PLACEHOLDER: 'Tìm từ, pinyin, nghĩa…',
   SEARCH_KBD_KEY: 'K',
   SEARCH_MOD_MAC: '⌘',
   SEARCH_MOD_OTHER: 'Ctrl+',
   STREAK_DEFAULT: 'Chuỗi ngày học liên tiếp',
   streakLabel: (days) => `Chuỗi ${days} ngày học liên tiếp`,
-  URGENT_LABEL: 'Ôn gấp',
+  TODAY_GROUP_ARIA: 'Hôm nay',
+  URGENT_LABEL: 'Cần ôn',
   URGENT_TITLE: 'Từ cần ôn gấp',
+  urgentLabel: (count) => `${count} từ cần ôn gấp`,
+  profileSummary: (days, count) => `Chuỗi ${days} ngày · ${count} từ cần ôn`,
   ACCOUNT_BTN_TITLE: 'Menu tài khoản & tiện ích',
   ACCOUNT_BTN_ARIA: 'Menu tài khoản và tiện ích',
   ACCOUNT_MENU_ARIA: 'Tiện ích tài khoản',
@@ -39,11 +42,9 @@ export const HEADER_LABELS = Object.freeze({
   MENU_INSTALL: 'Cài đặt ứng dụng',
   MENU_INSTALL_ARIA: 'Cài đặt ứng dụng về máy',
   MENU_VERSION: 'Phiên bản',
-  THEME_ARIA_DEFAULT: 'Đổi giao diện Sáng / Tối',
-  THEME_TITLE_LIGHT: 'Chế độ sáng (Bấm để chuyển tối)',
-  THEME_TITLE_DARK: 'Chế độ tối (Bấm để chuyển sáng)',
-  THEME_ARIA_LIGHT: 'Chuyển sang giao diện tối',
-  THEME_ARIA_DARK: 'Chuyển sang giao diện sáng',
+  THEME_ROW: 'Giao diện',
+  THEME_LIGHT: 'Sáng',
+  THEME_DARK: 'Tối',
 });
 
 /** DOM ids kept stable for CSS, tests, deep links and legacy callers. */
@@ -69,7 +70,6 @@ export const HEADER_IDS = Object.freeze({
   MENU_HELP: 'headerHelpBtn',
   MENU_SHARE: 'headerShareBtn',
   MENU_INSTALL: 'headerInstallBtn',
-  THEME_TOGGLE: 'themeToggle',
 });
 
 /** Primary nav sections, in display order. `domId` must match NavSections.js. */
@@ -83,13 +83,13 @@ export const HEADER_NAV_ITEMS = Object.freeze([
 
 export const HEADER_DEFAULT_SECTION = 'vocab';
 export const HEADER_LOGO_SRC = 'assets/images/logo.svg';
-export const HEADER_LOGO_SIZE_PX = 36;
-export const HEADER_ICON_SIZE_PX = 15;
+export const HEADER_LOGO_SIZE_PX = 32;
+export const HEADER_ICON_SIZE_PX = 16;
+export const HEADER_CHEVRON_SIZE_PX = 14;
 export const HEADER_BACK_ICON_SIZE_PX = 16;
 export const HEADER_BACK_ICON_STROKE = 2.2;
-export const HEADER_THEME_ICON_SIZE_PX = 17;
 export const HEADER_ICON_STROKE = 2;
 
 export const PROFILE_NAME_STORAGE_KEY = 'hsk_profile_name';
-export const DEFAULT_AVATAR_INITIAL = 'H';
+export const DEFAULT_PROFILE_NAME = 'Tongxue';
 export const MAC_PLATFORM_PATTERN = /(Mac|iPhone|iPod|iPad)/i;

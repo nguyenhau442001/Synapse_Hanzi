@@ -18,7 +18,7 @@ FLASHCARDS_CSS = (ROOT / "assets/flashcards.css").read_text(encoding="utf-8")
 def test_brand_logo_home_button_in_index():
     assert 'id="appHeader"' in INDEX_HTML
     assert "id={IDS.HOME_BTN}" in APP_HEADER_JSX
-    assert 'class="app-brand-home-btn"' in APP_HEADER_JSX
+    assert 'class="ah-logo-btn"' in APP_HEADER_JSX
     assert "HOME_BTN: 'appBrandHomeBtn'" in HEADER_CONSTANTS_JS
     assert "HEADER_LOGO_SRC = 'assets/images/logo.svg'" in HEADER_CONSTANTS_JS
     assert "BRAND_TEXT: 'appBrandTextBlock'" in HEADER_CONSTANTS_JS

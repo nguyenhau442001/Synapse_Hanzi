@@ -1,0 +1,431 @@
+/* ── App header (src/islands/AppHeader.jsx) ─────────────────────────────────
+   One row: brand · primary nav · centered search · today chip · account menu.
+   Bundled after design-system.css so these rules replace the legacy header layout.
+   Breakpoints follow the header's own width (container queries), because sidebars narrow it
+   independently of the viewport: ≤1239px compact, ≤859px nav on its own row, ≤479px phone. */
+
+.app-header {
+  container: app-header / inline-size;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: clamp(var(--space-2), 2vw, var(--space-4));
+  row-gap: var(--space-2);
+  min-height: 64px;
+  margin: 0 auto var(--space-4);
+  padding: 0;
+  border-bottom: 0;
+  text-align: left;
+}
+
+/* Shared control shape: every header control is 40px tall. */
+.ah-icon { flex-shrink: 0; }
+
+.ah-brand,
+.ah-actions,
+.ah-today,
+.ah-today-btn,
+.ah-account-btn,
+.ah-search {
+  display: flex;
+  align-items: center;
+}
+
+/* Brand */
+.ah-brand {
+  gap: 10px;
+  flex-shrink: 0;
+}
+.ah-logo-btn {
+  display: inline-flex;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  border-radius: var(--radius-btn);
+  line-height: 0;
+  cursor: pointer;
+  transition: transform var(--dur-fast) var(--ease-out);
+}
+.ah-logo-btn:hover { transform: scale(1.05); }
+.ah-logo-btn:active { transform: scale(0.95); }
+.ah-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-btn);
+  display: block;
+}
+.ah-brand-text {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  border-radius: var(--radius-btn);
+  cursor: pointer;
+}
+.app-header .ah-brand h1.ah-title {
+  margin: 0;
+  font-family: var(--font-zh);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+.app-header .ah-brand p.ah-subtitle {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+/* Primary nav */
+.ah-nav {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex-shrink: 0;
+  min-width: 0;
+}
+.ah-nav-tab {
+  height: 36px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: var(--radius-input);
+  background: transparent;
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+.ah-nav-tab:hover:not(.active) {
+  background: var(--surface-hover);
+  color: var(--text-primary);
+}
+.ah-nav-tab.active {
+  background: var(--surface-active);
+  color: var(--accent-text);
+  font-weight: 600;
+}
+
+/* Search: centered in the free space between nav and actions */
+.ah-search-slot {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+}
+.ah-search {
+  width: 100%;
+  max-width: 420px;
+  height: 40px;
+  box-sizing: border-box;
+  gap: 10px;
+  padding: 0 8px 0 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  background: var(--card-bg);
+  color: var(--text-tertiary);
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+.ah-search:hover {
+  border-color: var(--border-strong);
+  color: var(--text-secondary);
+}
+.ah-search-placeholder {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ah-kbd {
+  padding: 3px 7px;
+  border-radius: 6px;
+  background: var(--surface-chip);
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* Actions */
+.ah-actions {
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+/* Today chip: streak │ urgent review */
+.ah-today {
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  background: var(--card-bg);
+  overflow: hidden;
+}
+.ah-today-btn {
+  height: 100%;
+  gap: 6px;
+  border: 0;
+  background: transparent;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+  transition: background var(--dur-fast) var(--ease-out);
+}
+.ah-today-btn:hover,
+.ah-today-btn.is-active { background: var(--surface-hover); }
+.ah-streak {
+  padding: 0 12px 0 14px;
+  font-weight: 600;
+}
+.ah-streak-icon { color: var(--accent-text); }
+.ah-streak.is-zero,
+.ah-streak.is-zero .ah-streak-icon { color: var(--text-tertiary); }
+.ah-today-divider {
+  width: 1px;
+  height: 20px;
+  background: var(--border);
+}
+.ah-urgent {
+  gap: 8px;
+  padding: 0 6px 0 12px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+.ah-count {
+  min-width: 28px;
+  height: 28px;
+  box-sizing: border-box;
+  padding: 0 8px;
+  border-radius: var(--radius-pill);
+  background: var(--accent);
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.ah-count.is-zero {
+  background: var(--surface-chip);
+  color: var(--text-tertiary);
+}
+
+/* Account menu */
+.ah-account { position: relative; }
+.ah-account-btn {
+  height: 40px;
+  box-sizing: border-box;
+  gap: 4px;
+  padding: 0 8px 0 2px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  background: var(--card-bg);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: border-color var(--dur-fast) var(--ease-out);
+}
+.ah-account-btn:hover,
+.ah-account-btn.is-open { border-color: var(--accent-text); }
+.ah-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-pill);
+  background: var(--surface-active);
+  color: var(--accent-text);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.ah-avatar-lg {
+  width: 36px;
+  height: 36px;
+}
+.ah-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 60;
+  width: 280px;
+  box-sizing: border-box;
+  padding: var(--space-2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--card-bg);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+}
+.ah-menu[hidden],
+.ah-menu-item[hidden] { display: none; }
+.ah-menu-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 10px 12px;
+}
+.ah-menu-profile-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.ah-menu-profile-name {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.ah-menu-profile-meta {
+  font-size: 12px;
+  color: var(--text-tertiary);
+}
+.ah-menu-divider {
+  height: 1px;
+  margin: 4px;
+  background: var(--border);
+}
+.ah-menu-item,
+.ah-menu-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 40px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  border-radius: var(--radius-btn);
+  color: var(--text-primary);
+}
+.ah-menu-item {
+  border: 0;
+  background: transparent;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.ah-menu-item:hover,
+.ah-menu-item.is-active { background: var(--surface-hover); }
+.ah-menu-item .ah-icon,
+.ah-menu-row .ah-icon { color: var(--text-secondary); }
+.ah-menu-label { flex: 1; }
+.ah-menu-pill {
+  padding: 2px 8px;
+  border-radius: var(--radius-pill);
+  background: var(--surface-chip);
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 600;
+}
+.ah-segment {
+  display: flex;
+  padding: 3px;
+  border-radius: var(--radius-pill);
+  background: var(--surface-chip);
+}
+.ah-segment-btn {
+  height: 26px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--text-secondary);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.ah-segment-btn.is-on {
+  background: var(--card-bg);
+  color: var(--text-primary);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.app-header .ah-menu p.ah-menu-version {
+  margin: 6px 10px 4px;
+  font-size: 12px;
+  letter-spacing: 0;
+  color: var(--text-tertiary);
+}
+/* ServiceWorkerManager rewrites every .footer-version; inside the menu it reads as plain text. */
+.app-header .ah-menu-version .footer-version,
+:root[data-theme="dark"] .app-header .ah-menu-version .footer-version {
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: inherit;
+}
+
+/* Focus states */
+.ah-logo-btn:focus-visible,
+.ah-brand-text:focus-visible,
+.ah-nav-tab:focus-visible,
+.ah-search:focus-visible,
+.ah-today-btn:focus-visible,
+.ah-account-btn:focus-visible,
+.ah-menu-item:focus-visible,
+.ah-segment-btn:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+/* ≤1239px: compact — subtitle, search text and "Cần ôn" label give way to the nav */
+@container app-header (max-width: 1239px) {
+  .app-header .ah-brand p.ah-subtitle,
+  .ah-search-placeholder,
+  .ah-kbd,
+  .ah-urgent-label { display: none; }
+  .ah-nav-tab { padding: 0 10px; }
+  .ah-search-slot { justify-content: flex-end; }
+  .ah-search {
+    width: 40px;
+    padding: 0;
+    justify-content: center;
+    color: var(--text-secondary);
+  }
+}
+
+/* ≤859px: the nav moves to its own scrollable row under brand and actions */
+@container app-header (max-width: 859px) {
+  .ah-nav {
+    order: 3;
+    flex: 1 0 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-top: 6px;
+    border-top: 1px solid var(--border-subtle);
+  }
+  .ah-nav::-webkit-scrollbar { display: none; }
+  .ah-nav-tab { flex: 0 0 auto; }
+}
+
+/* ≤479px: phone — tighter actions so brand, search, chip and avatar share one row */
+@container app-header (max-width: 479px) {
+  .ah-brand { gap: var(--space-2); }
+  .app-header .ah-brand h1.ah-title { font-size: 18px; }
+  .ah-actions { gap: 6px; }
+  .ah-streak { padding: 0 8px 0 10px; }
+  .ah-urgent { padding: 0 4px 0 8px; }
+  .ah-account-btn {
+    padding: 0 2px;
+    border-color: transparent;
+    background: transparent;
+  }
+  .ah-account-btn .ah-icon { display: none; }
+}

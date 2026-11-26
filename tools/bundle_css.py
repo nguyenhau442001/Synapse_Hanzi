@@ -44,6 +44,7 @@ BUNDLE_FILES = [
     "assets/css/pwa-install.css",
     "assets/css/share-modal.css",
     "assets/css/design-system.css",
+    "assets/css/app-header.css",
     "assets/js/preact/hanzi-mind.css",
     "assets/css/theme-dark.css",
 ]
