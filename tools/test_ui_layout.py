@@ -326,16 +326,18 @@ class TestTouchTargetAccessibility(unittest.TestCase):
         self.workstation_css = WORKSTATION_CSS.read_text(encoding="utf-8")
 
     def test_mobile_header_utility_buttons_touch_target(self):
-        """Header utility buttons (theme toggle, search) on tablet/mobile must be at least 40px x 40px."""
-        blocks = extract_media_blocks(self.base_css, r"max-width:\s*1279px")
-        self.assertTrue(len(blocks) >= 1)
-        combined = " ".join(b[1] for b in blocks)
-        w_match = re.search(r"\.theme-toggle-btn[^{]*\{[^}]*width:\s*(\d+)px", combined)
-        h_match = re.search(r"\.theme-toggle-btn[^{]*\{[^}]*height:\s*(\d+)px", combined)
-        self.assertIsNotNone(w_match, "Theme toggle width must be defined on mobile")
-        self.assertIsNotNone(h_match, "Theme toggle height must be defined on mobile")
+        """Compact header controls (icon search, account button) must be at least 40px x 40px."""
+        header_css = (CSS_DIR / "app-header.css").read_text(encoding="utf-8")
+        compact = header_css.split("@container app-header (max-width: 1239px)")[1]
+        w_match = re.search(r"\.ah-search\s*\{[^}]*width:\s*(\d+)px", compact)
+        h_match = re.search(r"\.ah-search\s*\{[^}]*height:\s*(\d+)px", header_css)
+        account_h = re.search(r"\.ah-account-btn\s*\{[^}]*height:\s*(\d+)px", header_css)
+        self.assertIsNotNone(w_match, "Compact search width must be defined")
+        self.assertIsNotNone(h_match, "Search height must be defined")
+        self.assertIsNotNone(account_h, "Account button height must be defined")
         self.assertGreaterEqual(int(w_match.group(1)), 40)
         self.assertGreaterEqual(int(h_match.group(1)), 40)
+        self.assertGreaterEqual(int(account_h.group(1)), 40)
 
 class TestZIndexStackingHierarchy(unittest.TestCase):
     """Test z-index hierarchy prevents modals from being covered by toolbars or sticky headers."""

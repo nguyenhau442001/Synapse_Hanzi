@@ -38,11 +38,11 @@ def test_app_header_wires_home_navigation():
 
 
 def test_brand_home_button_styles():
-    assert ".app-brand-home-btn {" in DESIGN_SYSTEM_CSS
-    assert ".app-brand-home-btn:hover {" in DESIGN_SYSTEM_CSS
-    assert ".app-brand-home-btn:active {" in DESIGN_SYSTEM_CSS
-    assert ".app-brand-home-btn {" in BASE_CSS
-    assert ".app-brand-home-btn" in FLASHCARDS_CSS
+    app_header_css = (ROOT / "assets/css/app-header.css").read_text(encoding="utf-8")
+    for selector in (".ah-logo-btn {", ".ah-logo-btn:hover {", ".ah-logo-btn:active {", ".ah-brand-text:focus-visible"):
+        assert selector in app_header_css, selector
+    assert ".ah-logo-btn" in FLASHCARDS_CSS
+    assert ".app-brand-home-btn" not in DESIGN_SYSTEM_CSS and ".app-brand-home-btn" not in BASE_CSS
 
 
 def test_global_back_button_hidden_on_home_page():

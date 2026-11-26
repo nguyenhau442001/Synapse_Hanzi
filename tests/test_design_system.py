@@ -74,7 +74,8 @@ def test_brand_identity_in_shell():
     assert "BRAND_TITLE: '汉字思维'" in header_js and "TITLE: 'appTitle'" in header_js
     assert "HEADER_LOGO_SRC = 'assets/images/logo.svg'" in header_js
     assert "Hànzì Sīwéi" in INDEX and "Hanzi Mind" in INDEX
-    assert ".app-header-brand h1 {\n  font-family: var(--font-zh);" in DS_CSS
+    app_header_css = (ROOT / "assets/css/app-header.css").read_text(encoding="utf-8")
+    assert ".app-header .ah-brand h1.ah-title {\n  margin: 0;\n  font-family: var(--font-zh);" in app_header_css
     assert "🔥" not in header_jsx and "🔥" not in header_js
 
 

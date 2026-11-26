@@ -94,11 +94,9 @@ def test_reading_is_a_primary_destination():
     assert "initNavSections()" in bootstrap_js and "primaryNavReading" in nav_js
     assert "mobNavReading" in tabs_js
 
-    # Count badges carry text labels; the long tagline no longer squeezes the header
-    assert 'class="header-badge-label">Sổ từ<' in index_html
-    assert 'class="header-badge-label">Ôn gấp<' in index_html
-    base_css = (ROOT / "assets" / "css" / "base.css").read_text(encoding="utf-8")
-    assert ".brand-tagline-wrap { display: none; }" in base_css
+    # The header's urgent-review chip carries a text label
+    header_js = (ROOT / "src" / "islands" / "HeaderConstants.js").read_text(encoding="utf-8")
+    assert "URGENT_LABEL: 'Cần ôn'" in header_js
 
 
 def test_graded_reading_quiz_audio():
