@@ -12,23 +12,51 @@ const PRECACHE_MANIFEST = [
   },
   {
     "url": "assets/flashcards.css",
-    "revision": "29ed458577acf68abaceaab7ffad1a45"
+    "revision": "13248b77a7278ffc973484bd6dfb4557"
   },
   {
     "url": "assets/js/preact/islands.js",
-    "revision": "df338e71ba76ab7e194f94059efa7902"
+    "revision": "bb095307681c33d3c621b0ef6315cb32"
   },
   {
-    "url": "assets/js/preact/chunks/SpeakingPractice-CvNrTDb5.js",
-    "revision": "dbf42c1d15b000c5eec1a81f69f3f68b"
+    "url": "assets/js/preact/chunks/jsxRuntime-C1x9nXW7.js",
+    "revision": "7422ea5512e7aa41835dbc7d9d6b02a3"
   },
   {
-    "url": "assets/js/preact/chunks/Hsk30ExamView-BAf_ojro.js",
-    "revision": "9943b1dc32b4f4678832f3b982d8c21f"
+    "url": "assets/js/preact/chunks/check-B1Ns4lcZ.js",
+    "revision": "261a4592da8ae5d6263170d45961a6e4"
   },
   {
-    "url": "assets/js/preact/chunks/AiTutorPromptGuide-CMg0vy3C.js",
-    "revision": "ec642b22aca16620b61b90c2655833ef"
+    "url": "assets/js/preact/chunks/Writing-BDcmSOwW.js",
+    "revision": "eba9861049eec2b7d68643efcdcb8ea5"
+  },
+  {
+    "url": "assets/js/preact/chunks/SpeakingPractice-Bk9VDorz.js",
+    "revision": "1349db250dc90fcb21c48611673e1a33"
+  },
+  {
+    "url": "assets/js/preact/chunks/ReadingAnalysis-Ue3qphjN.js",
+    "revision": "e7ae6e62c15f92cf6fb5cd2e2e075d5f"
+  },
+  {
+    "url": "assets/js/preact/chunks/ListeningReviewPanel-vZ0PS0-Q.js",
+    "revision": "037350b6b104943f01bd7c3a49ff0414"
+  },
+  {
+    "url": "assets/js/preact/chunks/ListeningPractice-BzPp75kp.js",
+    "revision": "4be1e08e7f72fd07002aed745a1a8a93"
+  },
+  {
+    "url": "assets/js/preact/chunks/Hsk30ExamView-DWUKhzgd.js",
+    "revision": "14010d8a6b0ceb44d5571f40327c6069"
+  },
+  {
+    "url": "assets/js/preact/chunks/GradedReading-m01Qaek_.js",
+    "revision": "ebb5516c69976f0b49c4128cace0b248"
+  },
+  {
+    "url": "assets/js/preact/chunks/AiTutorPromptGuide-CWO56ePg.js",
+    "revision": "792917106dd3fb7ee022c52726b6d647"
   },
   {
     "url": "assets/js/hanviet-dict.js",

@@ -3,6 +3,7 @@
 import { onDomReady } from './domReady';
 import { loadRadicalProgress, loadRadicalPrefs } from './radicalsState';
 import { initNavSections } from './NavSections';
+import { ensureIslandMounted } from './IslandLoader';
 
 /* global LEVELS, selectLevel, renderLevelProgress, showWelcomeToast, renderLearningDashboard, prefetchSuggestedLevel, startStudyHeartbeat */
 
@@ -70,10 +71,11 @@ export function initAppBootstrap() {
   initAppEventBindings();
 
   const prefetchReading = function() {
-    if (typeof ensureReadingAnalysisLoaded === 'function') ensureReadingAnalysisLoaded();
-    else if (typeof window !== 'undefined' && typeof window.ensureReadingAnalysisLoaded === 'function') {
-      window.ensureReadingAnalysisLoaded();
-    }
+    ensureIslandMounted('reading').then(() => {
+      if (typeof window !== 'undefined' && typeof window.ensureReadingAnalysisLoaded === 'function') {
+        window.ensureReadingAnalysisLoaded();
+      }
+    });
   };
   if (typeof window !== 'undefined') {
     if ('requestIdleCallback' in window) {

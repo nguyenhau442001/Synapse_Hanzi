@@ -10,6 +10,22 @@ const LAZY_ISLANDS = {
     load: () => import('./Hsk30ExamView.jsx'),
     mount: (mod) => mod.mountHsk30ExamView(),
   },
+  gradedReading: {
+    load: () => import('./GradedReading.jsx'),
+    mount: (mod) => mod.mountGradedReading(),
+  },
+  reading: {
+    load: () => import('./ReadingAnalysis.jsx'),
+    mount: (mod) => mod.mountReadingAnalysis(),
+  },
+  listening: {
+    load: () => import('./ListeningPractice.jsx'),
+    mount: (mod) => mod.mountListeningPractice(),
+  },
+  writing: {
+    load: () => import('./Writing.jsx'),
+    mount: (mod) => mod.mountWriting(),
+  },
 };
 
 /** @type {Map<string, Promise<void>>} */

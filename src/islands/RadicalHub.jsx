@@ -182,34 +182,40 @@ export function setPrimaryTab(tab, options) {
   const continueCard = document.getElementById('continueLearningCard');
   if (continueCard) continueCard.style.display = tab === 'vocab' ? '' : 'none';
   if (tab !== 'vocab' && typeof setActiveStudyWord === 'function') setActiveStudyWord(null);
-  ensureIslandMounted(tab);
+  const islandReady = ensureIslandMounted(tab);
   if (tab === 'radicals') ensureRadicalDataLoaded();
   if (tab === 'reading') {
     if (typeof startReadingAnalysis === 'function') startReadingAnalysis();
+    else islandReady.then(() => {
+      if (primaryTab === 'reading' && typeof window.startReadingAnalysis === 'function') {
+        window.startReadingAnalysis();
+      }
+    });
   }
   if (tab === 'gradedReading') {
     if (typeof GradedReading !== 'undefined') GradedReading.init();
+    else islandReady.then(() => {
+      if (primaryTab === 'gradedReading' && window.GradedReading) window.GradedReading.init();
+    });
   }
   if (tab === 'curriculum') {
     if (typeof Curriculum !== 'undefined') Curriculum.init();
   }
   if (tab === 'writing') {
     if (typeof Writing !== 'undefined') Writing.init();
+    else islandReady.then(() => {
+      if (primaryTab === 'writing' && window.Writing) window.Writing.init();
+    });
   }
   if (tab === 'listening') {
     if (typeof ListeningPractice !== 'undefined') {
       ListeningPractice.init();
     } else {
-      const screenEl = document.getElementById('screenListeningPractice');
-      if (screenEl) {
-        screenEl.innerHTML = `
-          <div class="listening-container" style="text-align:center; padding: 48px 20px;">
-            <div style="font-size:16px; font-weight:700; color:var(--text-primary); margin-bottom:12px;">Đang khởi tạo Luyện nghe HSK...</div>
-            <p style="font-size:14px; color:var(--text-secondary); margin-bottom:16px;">Vui lòng thử lại sau vài giây hoặc tải lại trang.</p>
-            <button class="listening-back-btn" onclick="setPrimaryTab('vocab')" style="align-self:center; margin: 0 auto;">Quay lại Trang chính</button>
-          </div>
-        `;
-      }
+      islandReady.then(() => {
+        if (primaryTab === 'listening' && window.ListeningPractice) {
+          window.ListeningPractice.init();
+        }
+      });
     }
   }
   if (tab === 'review') {

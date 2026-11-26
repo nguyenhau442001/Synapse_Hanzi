@@ -1,6 +1,7 @@
 // src/islands/SpaRouter.js
 // Single Page Application (SPA) History API Router & Navigation Coordinator
 import { setHeaderUi } from './HeaderStore.js';
+import { ensureIslandMounted } from './IslandLoader.js';
 
 export const SpaRouter = (function() {
   let isNavigatingFromPopstate = false;
@@ -333,17 +334,23 @@ export const SpaRouter = (function() {
           if (typeof goBackToPicker === 'function') goBackToPicker();
         }
         setPrimaryTab(state.tab);
-        if (state.tab === 'gradedReading' && state.story && typeof GradedReading !== 'undefined') {
-          GradedReading.openStory(state.story, false);
+        if (state.tab === 'gradedReading' && state.story) {
+          ensureIslandMounted('gradedReading').then(() => {
+            if (window.GradedReading) window.GradedReading.openStory(state.story, false);
+          });
         }
         if (state.tab === 'curriculum' && state.lesson && typeof Curriculum !== 'undefined') {
           Curriculum.openLesson(state.lesson, false);
         }
-        if (state.tab === 'writing' && state.lesson && typeof Writing !== 'undefined') {
-          Writing.open(state.lesson, false);
+        if (state.tab === 'writing' && state.lesson) {
+          ensureIslandMounted('writing').then(() => {
+            if (window.Writing) window.Writing.open(state.lesson, false);
+          });
         }
-        if (state.tab === 'listening' && state.mode && typeof ListeningPractice !== 'undefined') {
-          ListeningPractice.setMode(state.mode);
+        if (state.tab === 'listening' && state.mode) {
+          ensureIslandMounted('listening').then(() => {
+            if (window.ListeningPractice) window.ListeningPractice.setMode(state.mode);
+          });
         }
         if (state.tab === 'sentenceGame') {
           if (typeof setSentenceGameExam === 'function' && state.exam) {
@@ -392,18 +399,24 @@ export const SpaRouter = (function() {
       } else if (initialState.view === 'tab' && initialState.tab && initialState.tab !== 'vocab') {
         if (typeof setPrimaryTab === 'function') {
           setPrimaryTab(initialState.tab);
-          if (initialState.tab === 'gradedReading' && initialState.story && typeof GradedReading !== 'undefined') {
-            GradedReading.openStory(initialState.story, false);
+          if (initialState.tab === 'gradedReading' && initialState.story) {
+            ensureIslandMounted('gradedReading').then(() => {
+              if (window.GradedReading) window.GradedReading.openStory(initialState.story, false);
+            });
           }
-          if (initialState.tab === 'writing' && initialState.lesson && typeof Writing !== 'undefined') {
-            Writing.open(initialState.lesson, true);
+          if (initialState.tab === 'writing' && initialState.lesson) {
+            ensureIslandMounted('writing').then(() => {
+              if (window.Writing) window.Writing.open(initialState.lesson, true);
+            });
           }
           if (initialState.tab === 'curriculum' && initialState.lesson && typeof Curriculum !== 'undefined') {
             // setPrimaryTab pushed the plain tab URL; push the lesson so the link survives and Back returns to the list.
             Curriculum.openLesson(initialState.lesson, true);
           }
-          if (initialState.tab === 'listening' && initialState.mode && typeof ListeningPractice !== 'undefined') {
-            ListeningPractice.setMode(initialState.mode);
+          if (initialState.tab === 'listening' && initialState.mode) {
+            ensureIslandMounted('listening').then(() => {
+              if (window.ListeningPractice) window.ListeningPractice.setMode(initialState.mode);
+            });
           }
           if (initialState.tab === 'sentenceGame') {
             if (typeof setSentenceGameExam === 'function' && initialState.exam) {
