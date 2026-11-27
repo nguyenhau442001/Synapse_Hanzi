@@ -553,18 +553,17 @@ export function renderStrokeGrids(autoAnimate = true) {
     fallback.textContent = 'Đang tải thư viện viết chữ...';
     if (!window._hanziWriterLoading) {
       window._hanziWriterLoading = true;
-      const script = document.createElement('script');
-      script.src = 'https://cdn.jsdelivr.net/npm/hanzi-writer@3/dist/hanzi-writer.min.js';
-      script.async = true;
-      script.onload = () => {
-        window._hanziWriterLoading = false;
-        renderStrokeGrids(autoAnimate);
-      };
-      script.onerror = () => {
-        window._hanziWriterLoading = false;
-        fallback.textContent = 'Không thể tải thư viện viết chữ (HanziWriter). Vui lòng kiểm tra kết nối mạng.';
-      };
-      document.head.appendChild(script);
+      // Bundled from npm (pinned in package-lock) instead of a floating CDN script.
+      import('hanzi-writer')
+        .then((mod) => {
+          window.HanziWriter = mod.default;
+          window._hanziWriterLoading = false;
+          renderStrokeGrids(autoAnimate);
+        })
+        .catch(() => {
+          window._hanziWriterLoading = false;
+          fallback.textContent = 'Không thể tải thư viện viết chữ (HanziWriter). Vui lòng kiểm tra kết nối mạng.';
+        });
     } else {
       let retries = 0;
       const checkHW = setInterval(() => {

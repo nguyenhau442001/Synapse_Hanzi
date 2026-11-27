@@ -97,6 +97,27 @@ export function initAppEventBindings() {
 
   // Header controls & badges are owned by the AppHeader island (src/islands/AppHeader.jsx).
 
+  // Study header dropdown actions (formerly inline onclick attributes, which the CSP blocks).
+  const callGlobal = (name, ...args) => {
+    if (typeof window[name] === 'function') window[name](...args);
+  };
+  const studyMenuActions = {
+    menuTogglePinyin: () => callGlobal('togglePinyin'),
+    menuToggleWeak: () => callGlobal('toggleWeakWord', window.activeStudyWord && window.activeStudyWord.hanzi, window.currentLevel),
+    menuToggleToneColors: () => callGlobal('toggleToneColors'),
+    menuToggleHanviet: () => callGlobal('toggleHanViet'),
+    menuToggleIllustration: () => callGlobal('toggleIllustration'),
+    menuShuffle: () => callGlobal('shuffleDeck'),
+  };
+  Object.entries(studyMenuActions).forEach(([id, action]) => {
+    onId(id, 'click', () => {
+      action();
+      callGlobal('closeStudyHeaderMenu');
+    });
+  });
+  onId('headerMenuInstallPwa', 'click', () => callGlobal('triggerInstallFlow'));
+  // headerMenuShare is bound by ShareModal.initShareFeature.
+
   // Daily goal & Today CTA controls
   onId('todayPrimaryActionBtn', 'click', () => {
     const btn = document.getElementById('todayPrimaryActionBtn');

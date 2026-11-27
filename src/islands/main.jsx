@@ -2,6 +2,7 @@
 // Each island owns one piece of the page that used to be built by a legacy script,
 // rendering identical markup so the existing CSS applies unchanged.
 import './tailwind.css';
+import { mountActionBinder } from './ActionBinder';
 import { mountAppUtils } from './AppUtils';
 import { mountAppHeader } from './AppHeader';
 import { mountAppState } from './AppState';
@@ -63,6 +64,7 @@ function mountDexieDatabase() {
   }
 }
 
+mountActionBinder(); // first: binds data-ui-* actions (CSP-safe handlers) in all later markup
 mountAppUtils();
 mountAppHeader(); // first DOM island: later modules look up header elements by id
 mountAuth(); // sign-in dialogs; restores a Google session only when this device has one

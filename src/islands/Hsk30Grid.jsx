@@ -68,7 +68,7 @@ export function renderHsk30Grid() {
     return `
       <button class="level-card hsk30-level-card ${cfg.available ? '' : 'disabled'}${complete ? ' is-complete-level' : ''}${isLearning ? ' is-learning-level' : ''}"
         type="button" data-level="${key}" title="${tooltip}" aria-label="${cfg.label}"
-        ${cfg.available ? `onclick="selectLevel('${key}')"` : 'disabled'}>
+        ${cfg.available ? `data-ui-click="selectLevel" data-ui-arg="${key}"` : 'disabled'}>
         <div class="level-card-top">
           <div class="level-card-heading">
             <strong class="lvl-num">${shortLabel}</strong>

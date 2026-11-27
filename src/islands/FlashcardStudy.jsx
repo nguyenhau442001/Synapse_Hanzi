@@ -44,7 +44,7 @@ function buildCardArea() {
           <div class="card-direction-prompt" id="cardDirectionPrompt" hidden></div>
 
           <!-- Chữ Hán to bản ở trung tâm: vững chãi, thoáng đãng, tinh tế (Focal Point chính) -->
-          <div class="hanzi-stage" id="hanziStage" onclick="event.stopPropagation(); toggleStudyWritingPanel(true);" title="Nhấn để luyện viết chữ Hán (W)">
+          <div class="hanzi-stage" id="hanziStage" data-ui-click="openStudyWriting" data-ui-stop title="Nhấn để luyện viết chữ Hán (W)">
             <div class="hanzi" id="hanzi"></div>
           </div>
 
@@ -52,7 +52,7 @@ function buildCardArea() {
           <div class="pinyin-row" id="pinyinRow">
             <span class="pinyin" id="pinyin"></span>
             <button class="sound-btn speech-btn" id="soundBtn" type="button"
-              onclick="event.stopPropagation(); speakWord()"
+              data-ui-click="speakWord" data-ui-stop
               aria-label="Nghe phát âm" aria-live="polite" title="Nghe phát âm (A)">
               ${speakerIconSvg(16, 'sound-btn-icon')}
             </button>
@@ -89,12 +89,12 @@ function buildCardArea() {
             <span class="ex-label">Ví dụ</span>
             <div class="example-audio-controls card-interactive">
               <button class="example-sound-btn speech-btn" id="exampleSoundBtn" type="button"
-                onclick="event.stopPropagation(); speakExample()"
+                data-ui-click="speakExample" data-ui-stop
                 aria-label="Nghe câu ví dụ" aria-live="polite" title="Nghe câu ví dụ">
                 ${speakerIconSvg(16, 'sound-btn-icon')}
               </button>
               <details class="example-speed-picker" id="exampleSpeedPicker"
-                onclick="event.stopPropagation()">
+                data-ui-stop>
                 <summary aria-label="Tốc độ đọc câu ví dụ: ${formatExampleSpeechSpeed(exampleSpeechSpeed)}">
                   <span class="example-speed-label">Tốc độ</span>
                   <span class="example-current-speed" id="exampleCurrentSpeed">${formatExampleSpeechSpeed(exampleSpeechSpeed)}</span>
@@ -104,7 +104,7 @@ function buildCardArea() {
                     <button class="example-speed-option${speed === exampleSpeechSpeed ? ' selected' : ''}"
                        type="button" data-speed="${speed}"
                       aria-pressed="${speed === exampleSpeechSpeed}"
-                      onclick="event.preventDefault(); setExampleSpeechSpeed(this.dataset.speed)">
+                      data-ui-click="setExampleSpeechSpeed" data-ui-prevent>
                       ${formatExampleSpeechSpeed(speed)}
                     </button>
                   `).join('')}
@@ -124,7 +124,7 @@ function buildCardArea() {
             title: 'Cấu tạo chữ',
             iconPaths: '<rect x="3" y="3" width="7.5" height="18" rx="1.5"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.5"/>',
             bodyId: 'cardDecompositionWrap',
-            content: '<div class="card-radicals-row card-interactive" id="cardRadicalsRow" onclick="event.stopPropagation()"></div>',
+            content: '<div class="card-radicals-row card-interactive" id="cardRadicalsRow" data-ui-stop></div>',
           })}
 
           ${cardAccordionHtml({
@@ -132,11 +132,11 @@ function buildCardArea() {
             title: 'Chữ liên quan',
             iconPaths: '<path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/>',
             badgeId: 'cardRelatedCountBadge',
-            content: '<div class="card-related-wrap" id="cardRelatedWrap" onclick="event.stopPropagation()"></div>',
+            content: '<div class="card-related-wrap" id="cardRelatedWrap" data-ui-stop></div>',
           })}
         </div>
 
-        <div class="card-flip-prompt" id="cardFlipPrompt" onclick="flip()" role="button" tabindex="0" aria-label="Lật thẻ">
+        <div class="card-flip-prompt" id="cardFlipPrompt" data-ui-click="flip" role="button" tabindex="0" aria-label="Lật thẻ">
           <span class="card-flip-prompt-icon" aria-hidden="true">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"/>
@@ -152,7 +152,7 @@ function buildCardArea() {
 
     <!-- Rating actions row: four FSRS grades (keys 1-4) with the next interval on each button -->
     <div class="rating-area" id="ratingArea">
-      <button type="button" class="reveal-answer-btn" id="revealAnswerBtn" onclick="flip()" aria-label="Lật thẻ xem đáp án" title="Lật thẻ xem đáp án (Space)">
+      <button type="button" class="reveal-answer-btn" id="revealAnswerBtn" data-ui-click="flip" aria-label="Lật thẻ xem đáp án" title="Lật thẻ xem đáp án (Space)">
         <span class="reveal-answer-icon" aria-hidden="true">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"/>
@@ -168,7 +168,7 @@ function buildCardArea() {
 
     <!-- Tactile study navigation controls: Previous, Counter, Next -->
     <nav class="study-nav-controls" id="studyNavRow" aria-label="Điều hướng thẻ từ vựng">
-      <button type="button" class="study-nav-btn study-nav-btn--prev nav-btn nav-btn--prev" id="prevCardBtn" onclick="prevCard()" title="Từ trước (phím ←)" aria-label="Từ trước">
+      <button type="button" class="study-nav-btn study-nav-btn--prev nav-btn nav-btn--prev" id="prevCardBtn" data-ui-click="prevCard" title="Từ trước (phím ←)" aria-label="Từ trước">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M19 12H5m7 7l-7-7 7-7"/>
         </svg>
@@ -179,7 +179,7 @@ function buildCardArea() {
         <span class="study-nav-sep" aria-hidden="true">/</span>
         <span class="study-nav-total" id="studyNavTotal">1</span>
       </div>
-      <button type="button" class="study-nav-btn study-nav-btn--next nav-btn nav-btn--next" id="nextCardBtn" onclick="nextCard()" title="Từ tiếp theo (phím →)" aria-label="Từ tiếp theo">
+      <button type="button" class="study-nav-btn study-nav-btn--next nav-btn nav-btn--next" id="nextCardBtn" data-ui-click="nextCard" title="Từ tiếp theo (phím →)" aria-label="Từ tiếp theo">
         <span>Tiếp</span>
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M5 12h14m-7-7l7 7-7 7"/>
@@ -188,11 +188,11 @@ function buildCardArea() {
     </nav>
 
     <div class="action-row secondary-actions" style="display:none" hidden>
-      <button class="show-unknown-btn" id="unknownWordsToggle" onclick="toggleUnknownWords()"
+      <button class="show-unknown-btn" id="unknownWordsToggle" data-ui-click="toggleUnknownWords"
         aria-controls="unknownWordsList" aria-expanded="false">
         Hiển thị từ cần ôn
       </button>
-      <button class="reset-progress-btn" type="button" onclick="resetProgress()">↻ Học lại từ đầu</button>
+      <button class="reset-progress-btn" type="button" data-ui-click="resetProgress">↻ Học lại từ đầu</button>
     </div>
     <div id="dailyNewLimitMessage" class="daily-new-limit-message" role="status"></div>
     <div class="unknown-words-list" id="unknownWordsList"></div>
@@ -442,11 +442,11 @@ function renderFilters() {
       <div class="study-mode-bar">
         <div class="study-mode-switch" role="tablist" aria-label="Chế độ học">
           <button type="button" role="tab" class="study-mode-tab${studyMode === 'review' ? ' is-active' : ''}"
-            aria-selected="${studyMode === 'review'}" onclick="setStudyMode('review')">
+            aria-selected="${studyMode === 'review'}" data-ui-click="setStudyMode" data-ui-arg="review">
             Ôn tập
           </button>
           <button type="button" role="tab" class="study-mode-tab${studyMode === 'browse' ? ' is-active' : ''}"
-            aria-selected="${studyMode === 'browse'}" onclick="setStudyMode('browse')">
+            aria-selected="${studyMode === 'browse'}" data-ui-click="setStudyMode" data-ui-arg="browse">
             Danh sách
           </button>
         </div>
@@ -494,7 +494,7 @@ function renderFilters() {
           return `
             <button type="button"
               class="progress-nav-card progress-nav-card--${f.key}${isSelected ? ' is-active' : ''}${isEmpty ? ' is-empty' : ''}"
-              onclick="setFilter('${f.key}')"
+              data-ui-click="setFilter" data-ui-arg="${f.key}"
               role="radio"
               aria-checked="${isSelected}"
               aria-label="${f.label}: ${f.count} từ${isSelected ? ', đang chọn' : ''}"
@@ -519,7 +519,7 @@ function renderFilters() {
       <div class="study-filter-sheet-options" role="radiogroup" aria-label="Chọn bộ lọc học">
         ${filters.map(f => `
           <button type="button" class="study-filter-sheet-option${currentFilter === f.key ? ' is-active' : ''}"
-            onclick="setFilter('${f.key}'); closeStudyFilterSheet();"
+            data-ui-click="setFilterAndCloseSheet" data-ui-arg="${f.key}"
             role="radio" aria-checked="${currentFilter === f.key}">
             <div class="filter-sheet-option-left">
               <span class="filter-sheet-option-label">${f.label}</span>
@@ -545,7 +545,7 @@ function studyDirectionSelectHtml() {
   return `
     <label class="study-direction-picker" title="Mỗi chiều học có lịch ôn riêng">
       <span class="study-direction-label">Chiều học</span>
-      <select class="study-direction-select" onchange="setStudyDirection(this.value)" aria-label="Chiều học">
+      <select class="study-direction-select" data-ui-change="setStudyDirection" aria-label="Chiều học">
         ${Object.entries(STUDY_DIRECTION_LABELS).map(([value, label]) =>
           `<option value="${value}"${value === current ? ' selected' : ''}>${label}</option>`).join('')}
       </select>
@@ -565,7 +565,7 @@ function renderDirectionPrompt(word) {
   prompt.hidden = false;
   if (direction === 'listen') {
     prompt.innerHTML = `
-      <button type="button" class="direction-listen-btn speech-btn" onclick="event.stopPropagation(); speakWord()"
+      <button type="button" class="direction-listen-btn speech-btn" data-ui-click="speakWord" data-ui-stop
         aria-label="Nghe lại (A)" title="Nghe lại (A)">
         ${speakerIconSvg(28, 'sound-btn-icon')}
       </button>
@@ -655,7 +655,7 @@ function ratingButtonsHtml(handlerName, previews) {
     const titleText = `${button.label}${intervalText ? ` (ôn lại sau ${intervalText})` : ''} • Phím [${button.key}]`;
     return `
     <button type="button" class="rating-btn rating-btn--${button.rating}"
-      onclick="${handlerName}('${button.rating}')" aria-keyshortcuts="${button.key}"
+      data-ui-click="${handlerName}" data-ui-arg="${button.rating}" aria-keyshortcuts="${button.key}"
       title="${titleText}">
       <span class="rating-label">${button.label}</span>
     </button>`;
@@ -973,8 +973,8 @@ window.addEventListener('wheel', (e) => {
 // Starts hidden; renderCardRadicals / renderCardRelated show it when it has content.
 function cardAccordionHtml({ id, title, iconPaths, badgeId, bodyId, content }) {
   return `
-          <details class="card-accordion" id="${id}" onclick="event.stopPropagation()" style="display: none;">
-            <summary class="card-accordion-summary" onclick="event.stopPropagation()">
+          <details class="card-accordion" id="${id}" data-ui-stop style="display: none;">
+            <summary class="card-accordion-summary" data-ui-stop>
               <span class="accordion-left">
                 <span class="accordion-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">${iconPaths}</svg></span>
                 <span class="accordion-title">${title}</span>${badgeId ? `
@@ -1077,7 +1077,7 @@ function ensureStudyWordList() {
       <div class="study-word-list-header-row">
         <strong id="studyWordListTitle">Danh sách từ</strong>
         <span id="studyWordListCount" class="study-word-count-badge"></span>
-        <button type="button" class="study-drawer-close-btn" onclick="closeAllStudyDrawers()" aria-label="Đóng danh sách">✕</button>
+        <button type="button" class="study-drawer-close-btn" data-ui-click="closeAllStudyDrawers" aria-label="Đóng danh sách">✕</button>
       </div>
       <div id="studyWordListActiveWord" class="study-word-active-banner"></div>
       <label class="study-word-list-search">
@@ -1284,10 +1284,10 @@ function render(animate) {
           </p>
           <div class="generic-empty-actions">
             ${limitReached ? `
-            <button type="button" class="empty-btn empty-btn--primary" onclick="studyMoreNewCards()">
+            <button type="button" class="empty-btn empty-btn--primary" data-ui-click="studyMoreNewCards">
               Học thêm 10 thẻ mới
             </button>` : ''}
-            <button type="button" class="empty-btn empty-btn--secondary" onclick="setFilter('all')">
+            <button type="button" class="empty-btn empty-btn--secondary" data-ui-click="setFilter" data-ui-arg="all">
               Duyệt danh sách từ
             </button>
           </div>
@@ -1325,11 +1325,11 @@ function render(animate) {
           </div>
           <div class="achievement-hero-actions">
             ${deck.unknown > 0 ? `
-            <button type="button" class="empty-btn empty-btn--primary" onclick="setStudyMode('review')">
+            <button type="button" class="empty-btn empty-btn--primary" data-ui-click="setStudyMode" data-ui-arg="review">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
               Ôn tập ngay ${deck.unknown} từ cần ôn
             </button>` : ''}
-            <button type="button" class="empty-btn empty-btn--secondary" onclick="setFilter('all'); if (typeof shuffleDeck==='function') shuffleDeck();">
+            <button type="button" class="empty-btn empty-btn--secondary" data-ui-click="showAllShuffled">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 18h1.4c1.3 0 2.5-.6 3.3-1.7l6.1-8.6c.8-1.1 2-1.7 3.3-1.7H22"/><path d="m18 2 4 4-4 4"/></svg>
               Xáo trộn & ôn tất cả từ
             </button>
@@ -1353,7 +1353,7 @@ function render(animate) {
               Bạn đã nhớ hoàn toàn <strong>${deck.total} / ${deck.total}</strong> từ vựng. Không còn bất kỳ từ nào cần ôn!
             </p>
             <div class="achievement-hero-actions">
-              <button type="button" class="empty-btn empty-btn--primary" onclick="setFilter('all'); if (typeof shuffleDeck==='function') shuffleDeck();">
+              <button type="button" class="empty-btn empty-btn--primary" data-ui-click="showAllShuffled">
                 Ôn tập củng cố tất cả từ
               </button>
             </div>
@@ -1369,10 +1369,10 @@ function render(animate) {
           </p>
           <div class="generic-empty-actions">
             ${deck.unseen > 0 ? `
-            <button type="button" class="empty-btn empty-btn--primary" onclick="setStudyMode('review')">
+            <button type="button" class="empty-btn empty-btn--primary" data-ui-click="setStudyMode" data-ui-arg="review">
               Học tiếp ${deck.unseen} từ mới
             </button>` : ''}
-            <button type="button" class="empty-btn empty-btn--secondary" onclick="setFilter('all')">
+            <button type="button" class="empty-btn empty-btn--secondary" data-ui-click="setFilter" data-ui-arg="all">
               Xem tất cả từ
             </button>
           </div>
@@ -1385,7 +1385,7 @@ function render(animate) {
         <div class="generic-empty-card">
           <h3 class="generic-empty-title">Chưa có từ nào đã nhớ</h3>
           <p class="generic-empty-desc">Hãy bắt đầu ôn luyện các từ vựng để đánh dấu những từ bạn đã nhớ tốt.</p>
-          <button type="button" class="empty-btn empty-btn--primary" onclick="setFilter('all')">
+          <button type="button" class="empty-btn empty-btn--primary" data-ui-click="setFilter" data-ui-arg="all">
             Bắt đầu học ngay
           </button>
         </div>`;
@@ -1396,7 +1396,7 @@ function render(animate) {
       <div class="generic-empty-card">
         <h3 class="generic-empty-title">Không có từ trong bộ lọc này</h3>
         <p class="generic-empty-desc">Chưa có thẻ từ vựng nào thỏa mãn điều kiện lọc đã chọn.</p>
-        <button type="button" class="empty-btn empty-btn--secondary" onclick="setFilter('all')">
+        <button type="button" class="empty-btn empty-btn--secondary" data-ui-click="setFilter" data-ui-arg="all">
           Quay về tất cả từ
         </button>
       </div>`;

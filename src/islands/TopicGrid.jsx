@@ -24,7 +24,7 @@ export function renderTopicGrid() {
       ? formatProgressPercent(known, topic.total)
       : `${Math.round(rawPct)}%`;
     return `
-      <button class="level-card" type="button" ${topic.available ? `onclick="selectLevel('${key}')"` : 'disabled'}>
+      <button class="level-card" type="button" ${topic.available ? `data-ui-click="selectLevel" data-ui-arg="${key}"` : 'disabled'}>
         <div class="lvl-num">${topic.icon || '🏷️'}</div>
         <div class="lvl-label">${topic.label}</div>
         <div class="lvl-count">${topic.total} từ</div>

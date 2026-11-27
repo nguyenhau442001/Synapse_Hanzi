@@ -375,8 +375,7 @@ export function renderYearView(activity) {
     const grid = buildMonthGrid(activity.days, year, month);
     return `
       <div class="history-mini-month" role="button" tabindex="0"
-        onclick="jumpToMonth(${year}, ${month})"
-        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();jumpToMonth(${year}, ${month});}">
+        data-ui-click="jumpToMonth" data-ui-keydown="jumpToMonthOnKey" data-ui-arg="${year}" data-ui-arg2="${month}">
         <div class="history-mini-month-label">${MINI_MONTH_LABELS[month]}</div>
         <div class="history-mini-grid">
           ${grid.map(cell => `<div class="history-mini-cell ${cell.inMonth ? 'bucket-' + cell.bucket : 'empty'} ${cell.isToday ? 'today' : ''}"></div>`).join('')}
@@ -404,14 +403,14 @@ export function renderHistoryModalBody() {
 
   const navHtml = isMonth ? `
     <div class="history-month-nav">
-      <button class="history-month-btn" type="button" onclick="changeHistoryCursor(-1)" aria-label="Tháng trước">‹</button>
+      <button class="history-month-btn" type="button" data-ui-click="changeHistoryCursor" data-ui-arg="-1" aria-label="Tháng trước">‹</button>
       <div class="history-month-title">Tháng ${historyModalCursor.month + 1} · ${historyModalCursor.year}</div>
-      <button class="history-month-btn" type="button" onclick="changeHistoryCursor(1)" ${isCurrentMonth ? 'disabled' : ''} aria-label="Tháng sau">›</button>
+      <button class="history-month-btn" type="button" data-ui-click="changeHistoryCursor" data-ui-arg="1" ${isCurrentMonth ? 'disabled' : ''} aria-label="Tháng sau">›</button>
     </div>` : `
     <div class="history-month-nav">
-      <button class="history-month-btn" type="button" onclick="changeHistoryCursor(-1)" aria-label="Năm trước">‹</button>
+      <button class="history-month-btn" type="button" data-ui-click="changeHistoryCursor" data-ui-arg="-1" aria-label="Năm trước">‹</button>
       <div class="history-month-title">${historyModalCursor.year}</div>
-      <button class="history-month-btn" type="button" onclick="changeHistoryCursor(1)" ${isCurrentYear ? 'disabled' : ''} aria-label="Năm sau">›</button>
+      <button class="history-month-btn" type="button" data-ui-click="changeHistoryCursor" data-ui-arg="1" ${isCurrentYear ? 'disabled' : ''} aria-label="Năm sau">›</button>
     </div>`;
 
   body.innerHTML = `
@@ -423,8 +422,8 @@ export function renderHistoryModalBody() {
     </div>
     <div class="history-toolbar">
       <div class="history-view-switcher" role="tablist">
-        <button type="button" role="tab" class="history-view-btn ${isMonth ? 'active' : ''}" aria-selected="${isMonth}" onclick="setHistoryView('month')">Tháng</button>
-        <button type="button" role="tab" class="history-view-btn ${!isMonth ? 'active' : ''}" aria-selected="${!isMonth}" onclick="setHistoryView('year')">Năm</button>
+        <button type="button" role="tab" class="history-view-btn ${isMonth ? 'active' : ''}" aria-selected="${isMonth}" data-ui-click="setHistoryView" data-ui-arg="month">Tháng</button>
+        <button type="button" role="tab" class="history-view-btn ${!isMonth ? 'active' : ''}" aria-selected="${!isMonth}" data-ui-click="setHistoryView" data-ui-arg="year">Năm</button>
       </div>
       ${navHtml}
     </div>
@@ -454,7 +453,7 @@ export function showHistoryModal() {
   overlay.className = 'history-overlay';
   overlay.innerHTML = `
     <div class="history-box" role="dialog" aria-modal="true" aria-label="Lịch sử học tập">
-      <button class="history-close" onclick="closeHistoryModal()" aria-label="Đóng">✕</button>
+      <button class="history-close" data-ui-click="closeHistoryModal" aria-label="Đóng">✕</button>
       <div class="history-title">Lịch sử học tập</div>
       <div id="historyModalBody"></div>
     </div>`;

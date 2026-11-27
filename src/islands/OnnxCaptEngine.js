@@ -14,6 +14,8 @@ let ortInstance = null;
 
 const ORT_CDN_URL = 'https://cdn.jsdelivr.net/npm/onnxruntime-web@1.31.1/dist/ort.min.js';
 const ORT_WASM_PATH = 'https://cdn.jsdelivr.net/npm/onnxruntime-web@1.31.1/dist/';
+/** Subresource Integrity of ort.min.js 1.31.1 (identical to node_modules/onnxruntime-web/dist). */
+const ORT_CDN_INTEGRITY = 'sha384-Gcu8U60SCeoyIiwfPwFy+eRexUuRRE9UYEXcm6vLDFVkGxcB1kk/gTv9FKTgoA6h';
 
 /**
  * Dynamically loads the lightweight onnxruntime-web script (~360KB)
@@ -28,6 +30,7 @@ async function getOrt() {
   return new Promise((resolve, reject) => {
     const script = document.createElement('script');
     script.src = ORT_CDN_URL;
+    script.integrity = ORT_CDN_INTEGRITY;
     script.crossOrigin = 'anonymous';
     script.onload = () => {
       ortInstance = window.ort;

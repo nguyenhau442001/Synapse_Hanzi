@@ -437,7 +437,7 @@ export function renderReviewQuestion() {
 
   const header = `
     <div class="review-topbar">
-      <button type="button" class="review-exit-btn" onclick="exitReviewSession()" title="Thoát ôn nhanh (Esc)" aria-label="Thoát ôn nhanh">
+      <button type="button" class="review-exit-btn" data-ui-click="exitReviewSession" title="Thoát ôn nhanh (Esc)" aria-label="Thoát ôn nhanh">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <line x1="18" y1="6" x2="6" y2="18"></line>
           <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -479,8 +479,8 @@ export function renderReviewQuestion() {
             autocomplete="off" autocapitalize="off" spellcheck="false"
             placeholder="Gõ pinyin (không dấu)..."
             aria-label="Nhập pinyin của chữ Hán"
-            onkeydown="if(event.key==='Enter') submitReviewTypeAnswer()">
-          <button type="button" class="review-submit-btn" onclick="submitReviewTypeAnswer()">
+            data-ui-keydown="submitReviewTypeAnswerOnEnter">
+          <button type="button" class="review-submit-btn" data-ui-click="submitReviewTypeAnswer">
             <span>Trả lời</span>
             <span class="review-submit-kbd" aria-hidden="true">↵</span>
           </button>
@@ -495,7 +495,7 @@ export function renderReviewQuestion() {
     bodyHtml = `
       <div class="review-choices" role="group" aria-label="Bốn đáp án lựa chọn">
         ${choiceIdxs.map((i, idx) => `
-          <button type="button" class="review-choice-btn" data-word-idx="${i}" data-choice-idx="${idx}" onclick="submitReviewChoice(${i})">
+          <button type="button" class="review-choice-btn" data-word-idx="${i}" data-choice-idx="${idx}" data-ui-click="submitReviewChoice" data-ui-arg="${i}">
             <span class="review-choice-badge" aria-hidden="true">${KEY_HINTS[idx]}</span>
             <span class="review-choice-pinyin">${escapeReviewHtml(reviewWordPool[i].pinyin)}</span>
             <span class="review-choice-shortcut-hint" aria-hidden="true">${idx + 1}</span>
@@ -691,7 +691,7 @@ export function renderReviewResult() {
   const accuracy = total > 0 ? Math.round((reviewScore / total) * 100) : 0;
 
   const mistakesBtnHtml = mistakeCount > 0
-    ? `<button type="button" class="review-mistakes-btn" onclick="openReviewMistakesModal()">📋 Xem lại câu sai (${mistakeCount})</button>`
+    ? `<button type="button" class="review-mistakes-btn" data-ui-click="openReviewMistakesModal">📋 Xem lại câu sai (${mistakeCount})</button>`
     : `<button type="button" class="review-mistakes-btn review-mistakes-btn--disabled" disabled title="Không có câu sai trong phiên này">📋 Xem lại câu sai (0)</button>`;
 
   result.innerHTML = `
@@ -719,8 +719,8 @@ export function renderReviewResult() {
       </div>
       <div class="review-result-actions">
         ${mistakesBtnHtml}
-        <button type="button" class="review-again-btn" onclick="startReviewSession()">⚡ Chơi lại</button>
-        <button type="button" class="review-back-btn" onclick="showReviewSetup()">⚙️ Đổi phạm vi</button>
+        <button type="button" class="review-again-btn" data-ui-click="startReviewSession">⚡ Chơi lại</button>
+        <button type="button" class="review-back-btn" data-ui-click="showReviewSetup">⚙️ Đổi phạm vi</button>
       </div>
     </div>`;
 }
@@ -863,7 +863,7 @@ export function openReviewMistakesModal() {
           <h3 class="review-mistakes-title">📋 Xem lại câu sai (${reviewMistakes.length})</h3>
           <p class="review-mistakes-subtitle">Các từ vựng bạn trả lời chưa đúng trong phiên ôn vừa qua</p>
         </div>
-        <button type="button" class="review-mistakes-close" onclick="closeReviewMistakesModal()" aria-label="Đóng">✕</button>
+        <button type="button" class="review-mistakes-close" data-ui-click="closeReviewMistakesModal" aria-label="Đóng">✕</button>
       </header>
 
       <div class="review-mistakes-body">
@@ -873,8 +873,8 @@ export function openReviewMistakesModal() {
       </div>
 
       <footer class="review-mistakes-footer">
-        <button type="button" class="review-mistakes-retry-btn" onclick="practiceReviewMistakes()">⚡ Luyện lại các câu sai này</button>
-        <button type="button" class="review-mistakes-done-btn" onclick="closeReviewMistakesModal()">Đóng</button>
+        <button type="button" class="review-mistakes-retry-btn" data-ui-click="practiceReviewMistakes">⚡ Luyện lại các câu sai này</button>
+        <button type="button" class="review-mistakes-done-btn" data-ui-click="closeReviewMistakesModal">Đóng</button>
       </footer>
     </div>`;
 
@@ -960,7 +960,7 @@ export function renderReviewBottomSheetPanes() {
         const levelPill = w.level ? (typeof formatWeakWordLevel === 'function' ? formatWeakWordLevel(w.level) : w.level.toUpperCase()) : '';
         return `
           <div class="review-sheet-row" data-hanzi="${hanziSafe}">
-            <button type="button" class="review-sheet-row-main" onclick="openWordInLevel('${levelSafe}', '${escapeReviewHtml(w.id || w.hanzi)}', true); closeReviewBottomSheet();">
+            <button type="button" class="review-sheet-row-main" data-ui-click="openWordFromReviewSheet" data-ui-arg="${levelSafe}" data-ui-arg2="${escapeReviewHtml(w.id || w.hanzi)}">
               <span class="review-sheet-hanzi" lang="zh-CN">${hanziSafe}</span>
               <span class="review-sheet-text">
                 <span class="review-sheet-meta">
@@ -970,7 +970,7 @@ export function renderReviewBottomSheetPanes() {
                 <span class="review-sheet-meaning" title="${meaningSafe}">${meaningSafe}</span>
               </span>
             </button>
-            <button type="button" class="review-sheet-remove-btn" onclick="removeWeakWordFromSheet('${hanziSafe}')" aria-label="Bỏ đánh dấu ${hanziSafe}" title="Bỏ đánh dấu">✕</button>
+            <button type="button" class="review-sheet-remove-btn" data-ui-click="removeWeakWordFromSheet" data-ui-arg="${hanziSafe}" aria-label="Bỏ đánh dấu ${hanziSafe}" title="Bỏ đánh dấu">✕</button>
           </div>
         `;
       }).join('');

@@ -39,7 +39,7 @@ export function renderMobileStatsHeader(dialogBody) {
       '<div class="history-kpi"><strong>📅 ' + stats.totalDaysStudied + '</strong><span>Ngày đã học</span></div>' +
       '<div class="history-kpi" title="Tổng thời gian: ' + fullTime + '"><strong>⏱ ' + timeFormatted + '</strong><span>Tổng thời gian</span></div>' +
     '</div>' +
-    '<button type="button" class="mobile-stats-history-btn" onclick="window.openDetailedHistoryFromStatsSheet()">' +
+    '<button type="button" class="mobile-stats-history-btn" data-ui-click="openDetailedHistoryFromStatsSheet">' +
       '<span>📅 Xem biểu đồ lịch sử học tập (Heatmap)</span>' +
       '<span aria-hidden="true">→</span>' +
     '</button>';
