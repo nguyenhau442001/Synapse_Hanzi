@@ -3,8 +3,10 @@
 
 import { render } from 'preact';
 import { useEffect, useRef, useState } from 'preact/hooks';
-import { X, Check, Lock } from 'lucide-preact';
+import { X, Check, Lock, CloudCheck, RefreshCw } from 'lucide-preact';
 import { authController, authDialog, authState } from './AuthStore.js';
+import { syncNotice, dismissSyncNotice } from './SyncController.js';
+import { SYNC_LABELS, SYNC_TOAST_MS } from './SyncConstants.js';
 import {
   AUTH_LABELS as L,
   AUTH_IDS as IDS,
@@ -217,10 +219,76 @@ function LogoutDialog() {
   );
 }
 
-export function AuthDialogs() {
+/** Bottom toast for sync notices; the "merged" notice hides itself, "remote" waits for the user. */
+function SyncToast() {
+  const kind = syncNotice.value;
+
+  useEffect(() => {
+    if (kind !== 'merged') return undefined;
+    const timer = setTimeout(dismissSyncNotice, SYNC_TOAST_MS);
+    return () => clearTimeout(timer);
+  }, [kind]);
+
+  if (!kind) return null;
+  const isRemote = kind === 'remote';
+  return (
+    <div
+      class="sync-toast"
+      role="status"
+      aria-live="polite"
+    >
+      {isRemote ? (
+        <RefreshCw
+          size={AUTH_ICON_SIZE_PX}
+          class="sync-toast-icon"
+          aria-hidden="true"
+        />
+      ) : (
+        <CloudCheck
+          size={AUTH_ICON_SIZE_PX}
+          class="sync-toast-icon"
+          aria-hidden="true"
+        />
+      )}
+      <span class="sync-toast-text">{isRemote ? SYNC_LABELS.NOTICE_REMOTE : SYNC_LABELS.NOTICE_MERGED}</span>
+      {isRemote && (
+        <button
+          type="button"
+          class="sync-toast-action"
+          onClick={() => window.location.reload()}
+        >
+          {SYNC_LABELS.NOTICE_RELOAD}
+        </button>
+      )}
+      <button
+        type="button"
+        class="sync-toast-close"
+        aria-label={SYNC_LABELS.NOTICE_CLOSE_ARIA}
+        title={SYNC_LABELS.NOTICE_CLOSE_ARIA}
+        onClick={dismissSyncNotice}
+      >
+        <X
+          size={AUTH_CLOSE_ICON_SIZE_PX}
+          aria-hidden="true"
+        />
+      </button>
+    </div>
+  );
+}
+
+function ActiveDialog() {
   if (authDialog.value === 'login') return <LoginDialog />;
   if (authDialog.value === 'logout') return <LogoutDialog />;
   return null;
+}
+
+export function AuthDialogs() {
+  return (
+    <>
+      <ActiveDialog />
+      <SyncToast />
+    </>
+  );
 }
 
 /** Mount the dialogs and restore an existing session (guests skip the SDK entirely). */

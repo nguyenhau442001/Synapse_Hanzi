@@ -72,6 +72,7 @@ export function isValidEntry(key, raw) {
     return isPlainObject(parsed) && parsed.schemaVersion === SRS_SCHEMA_VERSION && isPlainObject(parsed.cards);
   }
   if (resolved.rule.merge === 'append_log') return Array.isArray(parsed);
+  if (resolved.rule.merge === 'day_map') return isPlainObject(parsed) && isPlainObject(parsed.days);
   return parsed !== null && typeof parsed === 'object';
 }
 
@@ -185,6 +186,42 @@ function mergeLogs(localRaw, incomingRaw) {
 }
 
 /**
+ * Merge two days of study activity: words are unioned, time takes the larger value (each device
+ * measures its own session, so the max never double counts), `active` is true if either says so.
+ */
+function mergeDay(local, incoming) {
+  const normalize = (day) => (Array.isArray(day) ? { words: day, seconds: 0 } : (isPlainObject(day) ? day : {}));
+  const a = normalize(local);
+  const b = normalize(incoming);
+  const words = [...new Set([...(Array.isArray(a.words) ? a.words : []), ...(Array.isArray(b.words) ? b.words : [])])];
+  const seconds = Math.max(Number(a.seconds) || 0, Number(b.seconds) || 0);
+  const merged = { ...b, ...a, words, seconds };
+  if (a.active === true || b.active === true) merged.active = true;
+  return merged;
+}
+
+/**
+ * Merge two study-activity records day by day.
+ * @param {string|null} localRaw
+ * @param {string} incomingRaw
+ */
+function mergeActivity(localRaw, incomingRaw) {
+  const incoming = JSON.parse(incomingRaw);
+  let local = null;
+  try { local = localRaw ? JSON.parse(localRaw) : null; } catch { local = null; }
+  const localDays = isPlainObject(local) && isPlainObject(local.days) ? local.days : {};
+  /** @type {Object<string, object>} */
+  const days = {};
+  for (const date of new Set([...Object.keys(localDays), ...Object.keys(incoming.days)])) {
+    if (!isSafeKey(date)) continue;
+    days[date] = date in localDays && date in incoming.days
+      ? mergeDay(localDays[date], incoming.days[date])
+      : (date in localDays ? localDays[date] : mergeDay(null, incoming.days[date]));
+  }
+  return JSON.stringify({ ...(isPlainObject(local) ? local : {}), days });
+}
+
+/**
  * Merge one validated incoming entry with the local raw value.
  * @param {string} key
  * @param {string|null} localRaw
@@ -197,6 +234,7 @@ export function mergeEntry(key, localRaw, incomingRaw, normalizeCard = defaultNo
   if (!resolved) throw new Error('Key is not syncable: ' + key);
   if (resolved.rule.merge === 'srs_cards') return mergeSrsRecords(localRaw, incomingRaw, normalizeCard);
   if (resolved.rule.merge === 'append_log') return mergeLogs(localRaw, incomingRaw);
+  if (resolved.rule.merge === 'day_map') return mergeActivity(localRaw, incomingRaw);
   return incomingRaw;
 }
 

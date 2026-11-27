@@ -129,4 +129,16 @@ assert.throws(() => applyBackup(quota, parseBackup(JSON.stringify(backup)).backu
 assert.equal(quota.getItem('hsk_hsk1_srs_v3'), localDeck);
 assert.equal(quota.getItem('hsk_hsk1_review_log_v1'), null);
 
+// Merge activity: days unioned; same day -> words unioned, max seconds, active kept.
+{
+  const local = JSON.stringify({ days: { '2026-11-26': { words: [1, 2], seconds: 300 }, '2026-11-27': { words: [5], seconds: 60 } } });
+  const incoming = JSON.stringify({ days: { '2026-11-27': { words: [5, 6], seconds: 120, active: true }, '2026-11-28': [7], constructor: { words: [] } } });
+  const merged = JSON.parse(mergeEntry('hsk_study_activity_v1', local, incoming)).days;
+  assert.deepEqual(Object.keys(merged).sort(), ['2026-11-26', '2026-11-27', '2026-11-28']);
+  assert.deepEqual(merged['2026-11-26'], { words: [1, 2], seconds: 300 });
+  assert.deepEqual(merged['2026-11-27'], { words: [5, 6], seconds: 120, active: true });
+  assert.deepEqual(merged['2026-11-28'], { words: [7], seconds: 0 });
+  assert.equal(parseBackup(JSON.stringify({ type: BACKUP_TYPE, schemaVersion: 1, entries: { hsk_study_activity_v1: '{"days":[]}' } })).skipped, 1);
+}
+
 console.log('sync snapshot tests passed');

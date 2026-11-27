@@ -59,3 +59,38 @@ export const SYNC_SNAPSHOTS_COLLECTION = 'snapshots';
 
 /** sessionStorage guard so a sync that changed local data reloads the page at most once. */
 export const SYNC_RELOAD_GUARD_KEY = 'hsk_sync_reloaded_v1';
+
+/** Background sync cadence while the app is visible and signed in. */
+export const SYNC_INTERVAL_MS = 5 * 60 * 1000;
+
+/** On returning to the app, sync if the last sync is older than this. */
+export const SYNC_STALE_AFTER_MS = 60 * 1000;
+
+/** "Vừa xong" below this age; relative minutes/hours/days above it. */
+export const SYNC_JUST_NOW_MS = 60 * 1000;
+export const MS_PER_MINUTE = 60 * 1000;
+export const MINUTES_PER_HOUR = 60;
+export const HOURS_PER_DAY = 24;
+
+/** How long the sync toast stays on screen. */
+export const SYNC_TOAST_MS = 6000;
+
+/** sessionStorage: notice to show after the post-sync reload. */
+export const SYNC_PENDING_NOTICE_KEY = 'hsk_sync_notice_v1';
+
+export const SYNC_LOCALE = 'vi';
+
+export const SYNC_LABELS = Object.freeze({
+  SYNCED: 'Đã đồng bộ',
+  SYNCED_JUST_NOW: 'Đã đồng bộ · vừa xong',
+  syncedAgo: (relative) => `Đã đồng bộ · ${relative}`,
+  SYNCING: 'Đang đồng bộ…',
+  OFFLINE: 'Ngoại tuyến · sẽ đồng bộ khi có mạng',
+  ERROR: 'Chưa đồng bộ được · dữ liệu vẫn an toàn trên máy',
+  RETRY: 'Thử lại',
+  SYNC_NOW: 'Đồng bộ ngay',
+  NOTICE_MERGED: 'Đã gộp tiến trình trên máy này vào tài khoản của bạn.',
+  NOTICE_REMOTE: 'Có tiến trình mới từ thiết bị khác.',
+  NOTICE_RELOAD: 'Tải lại',
+  NOTICE_CLOSE_ARIA: 'Đóng thông báo',
+});

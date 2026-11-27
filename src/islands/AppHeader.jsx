@@ -16,12 +16,30 @@ import {
   Share2,
   Download,
   CloudCheck,
+  CloudOff,
+  CircleAlert,
+  LoaderCircle,
+  RefreshCw,
   LogOut,
 } from 'lucide-preact';
 import { APP_VERSION } from './AppUtils';
 import { headerStats, headerUi, avatarInitialOf } from './HeaderStore.js';
 import { authController, authState } from './AuthStore.js';
 import { AUTH_LABELS as AL } from './AuthConstants.js';
+import { runSync } from './SyncController.js';
+import { describeSync } from './SyncStatus.js';
+import { SYNC_LABELS as SL } from './SyncConstants.js';
+
+/** Icon per sync tone, matching the approved mockup. */
+const SYNC_TONE_ICONS = Object.freeze({
+  synced: CloudCheck,
+  syncing: LoaderCircle,
+  offline: CloudOff,
+  error: CircleAlert,
+});
+
+/** Avatar status dot: shown for these tones only (none while syncing or for guests). */
+const SYNC_DOT_TONES = Object.freeze(['synced', 'offline', 'error']);
 import {
   HEADER_LABELS as L,
   HEADER_IDS as IDS,
@@ -273,8 +291,9 @@ function ThemeSwitch() {
 }
 
 /** Google photo when signed in, else the initial letter; `large` is the menu header size. */
-function Avatar({ id, user, initial, large }) {
+function Avatar({ id, user, initial, large, dotTone }) {
   const className = cx('ah-avatar', large && 'ah-avatar-lg', user?.avatarUrl && 'has-photo');
+  const showDot = SYNC_DOT_TONES.includes(dotTone);
   return (
     <span
       id={id}
@@ -289,7 +308,33 @@ function Avatar({ id, user, initial, large }) {
           referrerpolicy="no-referrer"
         />
       ) : initial}
+      {showDot && <span class={cx('ah-sync-dot', `is-${dotTone}`)} />}
     </span>
+  );
+}
+
+/** Sync status line in the account menu (signed-in users only). */
+function SyncStatusRow({ view }) {
+  return (
+    <div
+      class={cx('ah-sync-status', `is-${view.tone}`)}
+      role="status"
+    >
+      <HeaderIcon
+        icon={SYNC_TONE_ICONS[view.tone]}
+        className={cx('ah-icon', view.tone === 'syncing' && 'ah-spin')}
+      />
+      <span class="ah-sync-status-text">{view.text}</span>
+      {view.canRetry && (
+        <button
+          type="button"
+          class="ah-sync-retry"
+          onClick={() => runSync()}
+        >
+          {SL.RETRY}
+        </button>
+      )}
+    </div>
   );
 }
 
@@ -332,6 +377,7 @@ function AccountMenu() {
   const showGuestCard = authController.isConfigured && !signedIn;
   const displayName = signedIn ? (user.displayName || AL.SIGNED_IN_FALLBACK_NAME) : profileName;
   const initial = avatarInitialOf(displayName);
+  const syncView = describeSync(authState.value);
 
   useEffect(() => {
     if (!open) return undefined;
@@ -378,6 +424,7 @@ function AccountMenu() {
           id={IDS.AVATAR}
           user={signedIn ? user : null}
           initial={initial}
+          dotTone={syncView?.tone}
         />
         <HeaderIcon
           icon={ChevronDown}
@@ -406,6 +453,20 @@ function AccountMenu() {
           </span>
         </div>
         {showGuestCard && <GuestSyncCard onSignIn={runAndClose(authController.openLogin)} />}
+        {syncView && <SyncStatusRow view={syncView} />}
+        {signedIn && (
+          <button
+            type="button"
+            id={IDS.MENU_SYNC_NOW}
+            class="ah-menu-item"
+            role="menuitem"
+            disabled={syncView?.tone === 'syncing'}
+            onClick={() => runSync()}
+          >
+            <HeaderIcon icon={RefreshCw} />
+            <span class="ah-menu-label">{SL.SYNC_NOW}</span>
+          </button>
+        )}
         <div
           class="ah-menu-divider"
           role="separator"

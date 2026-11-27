@@ -1,16 +1,36 @@
-// Runs SyncEngine for the signed-in user and reports progress into AuthStore.syncStatus.
-// Phase 3: one sync whenever a session starts (sign-in or restored session).
-// Automatic triggers and the status UI come in phase 4 (docs/auth-sync-plan.md §7).
+// Runs SyncEngine for the signed-in user, reports progress into AuthStore.syncStatus and
+// raises toast notices. Triggers: session start, every SYNC_INTERVAL_MS while visible, leaving
+// the tab (flush), returning to a stale tab, and reconnecting.
 
-import { effect } from '@preact/signals';
+import { effect, signal } from '@preact/signals';
 import { authController, authState } from './AuthStore.js';
 import { FIREBASE_CONFIG } from './FirebaseConfig.js';
 import { SRS } from './SrsEngine.js';
 import { createSyncEngine } from './SyncEngine.js';
-import { SYNC_RELOAD_GUARD_KEY } from './SyncConstants.js';
+import {
+  SYNC_RELOAD_GUARD_KEY,
+  SYNC_PENDING_NOTICE_KEY,
+  SYNC_INTERVAL_MS,
+  SYNC_STALE_AFTER_MS,
+} from './SyncConstants.js';
+
+/**
+ * @typedef {'merged'|'remote'} SyncNoticeKind
+ *   merged : first sync after an interactive sign-in finished.
+ *   remote : another device's progress arrived mid-session; a reload shows it.
+ */
+
+/** @type {import('@preact/signals').Signal<SyncNoticeKind|null>} */
+export const syncNotice = signal(null);
+
+export const dismissSyncNotice = () => { syncNotice.value = null; };
 
 /** @type {Promise<import('./SyncEngine.js').SyncResult|null>|null} */
 let running = null;
+/** Successful syncs since this page loaded; only the first may reload automatically. */
+let syncsThisPage = 0;
+
+const isOffline = () => typeof navigator !== 'undefined' && navigator.onLine === false;
 
 /** Persist the in-memory active deck so the sync sees the latest reviews. */
 function flushActiveDeck() {
@@ -18,17 +38,39 @@ function flushActiveDeck() {
   if (typeof window.saveProgress === 'function') window.saveProgress();
 }
 
-/**
- * Islands read storage when they mount, so new data from another device needs a reload.
- * The session guard prevents a reload loop if a value keeps changing.
- */
-function reloadOnce() {
+function sessionGet(key) {
+  try { return sessionStorage.getItem(key); } catch { return null; }
+}
+
+function sessionSet(key, value) {
   try {
-    if (sessionStorage.getItem(SYNC_RELOAD_GUARD_KEY)) return;
-    sessionStorage.setItem(SYNC_RELOAD_GUARD_KEY, '1');
+    if (value === null) sessionStorage.removeItem(key);
+    else sessionStorage.setItem(key, value);
+    return true;
   } catch {
+    return false;
+  }
+}
+
+/**
+ * Islands read storage when they mount, so new data needs a reload. Right after startup or
+ * sign-in the reload is automatic (at most once per tab session, so it can never loop);
+ * mid-session the user is asked instead, so an open study session is never interrupted.
+ * @param {import('./SyncEngine.js').SyncResult} result
+ * @param {boolean} firstOfPage
+ * @param {boolean} freshSignIn
+ */
+function announce(result, firstOfPage, freshSignIn) {
+  if (result.applied === 0) {
+    if (freshSignIn) syncNotice.value = 'merged';
     return;
   }
+  const mayAutoReload = firstOfPage && !sessionGet(SYNC_RELOAD_GUARD_KEY) && sessionSet(SYNC_RELOAD_GUARD_KEY, '1');
+  if (!mayAutoReload) {
+    syncNotice.value = 'remote';
+    return;
+  }
+  if (freshSignIn) sessionSet(SYNC_PENDING_NOTICE_KEY, 'merged');
   window.location.reload();
 }
 
@@ -40,11 +82,12 @@ export function runSync() {
   if (running) return running;
   const { status, user } = authState.value;
   if (status !== 'signed_in' || !user) return Promise.resolve(null);
-  if (typeof navigator !== 'undefined' && navigator.onLine === false) {
+  if (isOffline()) {
     authController.setSyncStatus({ syncStatus: 'offline' });
     return Promise.resolve(null);
   }
 
+  const freshSignIn = authController.consumeFreshSignIn();
   authController.setSyncStatus({ syncStatus: 'syncing' });
   running = (async () => {
     try {
@@ -59,13 +102,14 @@ export function runSync() {
       const result = await engine.sync();
       // The user may have signed out while the request was in flight.
       if (authState.value.user?.id !== user.id) return result;
+      if (result.skipped.length) console.warn('[Sync] namespaces too large to upload:', result.skipped);
       authController.setSyncStatus({ syncStatus: 'synced', lastSyncedAt: new Date().toISOString() });
-      if (result.applied > 0) reloadOnce();
+      syncsThisPage += 1;
+      announce(result, syncsThisPage === 1, freshSignIn);
       return result;
     } catch (error) {
       console.warn('[Sync] failed:', error && error.code ? error.code : error);
-      const offline = typeof navigator !== 'undefined' && navigator.onLine === false;
-      authController.setSyncStatus({ syncStatus: offline ? 'offline' : 'error' });
+      authController.setSyncStatus({ syncStatus: isOffline() ? 'offline' : 'error' });
       return null;
     } finally {
       running = null;
@@ -74,18 +118,57 @@ export function runSync() {
   return running;
 }
 
-/** Start syncing whenever a different account becomes signed in. */
+function isStale() {
+  const last = Date.parse(authState.value.lastSyncedAt || '');
+  return !Number.isFinite(last) || Date.now() - last > SYNC_STALE_AFTER_MS;
+}
+
+/** Install background triggers; returns a cleanup function. */
+function startTriggers() {
+  const onVisibility = () => {
+    // Leaving the tab flushes changes; coming back pulls if the data may be outdated.
+    if (document.visibilityState === 'hidden' || isStale()) runSync();
+  };
+  const onOnline = () => runSync();
+  const onOffline = () => authController.setSyncStatus({ syncStatus: 'offline' });
+  const timer = setInterval(() => {
+    if (document.visibilityState === 'visible') runSync();
+  }, SYNC_INTERVAL_MS);
+
+  document.addEventListener('visibilitychange', onVisibility);
+  window.addEventListener('online', onOnline);
+  window.addEventListener('offline', onOffline);
+  return () => {
+    clearInterval(timer);
+    document.removeEventListener('visibilitychange', onVisibility);
+    window.removeEventListener('online', onOnline);
+    window.removeEventListener('offline', onOffline);
+  };
+}
+
+/** Start syncing whenever an account becomes signed in; stop on sign-out. */
 export function mountSync() {
   if (!authController.isConfigured) return;
-  let syncedUid = null;
+
+  const pending = sessionGet(SYNC_PENDING_NOTICE_KEY);
+  if (pending === 'merged') syncNotice.value = 'merged';
+  sessionSet(SYNC_PENDING_NOTICE_KEY, null);
+
+  let activeUid = null;
+  let stopTriggers = null;
   effect(() => {
     const { status, user } = authState.value;
-    if (status === 'signed_in' && user && user.id !== syncedUid) {
-      syncedUid = user.id;
+    if (status === 'signed_in' && user && user.id !== activeUid) {
+      activeUid = user.id;
+      if (stopTriggers) stopTriggers();
+      stopTriggers = startTriggers();
       // Run outside the effect: runSync writes the same signal this effect reads.
       queueMicrotask(runSync);
-    } else if (status === 'guest') {
-      syncedUid = null;
+    } else if (status === 'guest' && activeUid) {
+      activeUid = null;
+      if (stopTriggers) stopTriggers();
+      stopTriggers = null;
+      syncNotice.value = null;
     }
   });
 }

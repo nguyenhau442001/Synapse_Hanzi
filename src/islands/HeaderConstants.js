@@ -71,6 +71,7 @@ export const HEADER_IDS = Object.freeze({
   MENU_SHARE: 'headerShareBtn',
   MENU_INSTALL: 'headerInstallBtn',
   MENU_SIGN_OUT: 'headerSignOutBtn',
+  MENU_SYNC_NOW: 'headerSyncNowBtn',
 });
 
 /** Primary nav sections, in display order. `domId` must match NavSections.js. */

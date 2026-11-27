@@ -100,6 +100,8 @@ export function createAuthController(options) {
   let provider = null;
   /** @type {Promise<AuthProvider>|null} */
   let providerPromise = null;
+  /** True between an interactive sign-in and the first sync that follows it. */
+  let freshSignIn = false;
 
   const patch = (next) => { state.value = { ...state.value, ...next }; };
 
@@ -165,7 +167,9 @@ export function createAuthController(options) {
       // Browsers only allow a popup during a user gesture, so call signIn synchronously when the
       // SDK is already loaded; awaiting a download first may get the popup blocked.
       const active = provider || await ensureProvider();
-      applyUser(await active.signIn());
+      const signedInUser = await active.signIn();
+      freshSignIn = true;
+      applyUser(signedInUser);
       dialog.value = null;
       return true;
     } catch (error) {
@@ -200,6 +204,12 @@ export function createAuthController(options) {
     init,
     openLogin,
     openLogout: () => { dialog.value = 'logout'; },
+    /** True once after an interactive sign-in (not a restored session). */
+    consumeFreshSignIn: () => {
+      const value = freshSignIn;
+      freshSignIn = false;
+      return value;
+    },
     /** Sync progress reported by SyncController. @param {Pick<AuthState, 'syncStatus'> & Partial<Pick<AuthState, 'lastSyncedAt'>>} next */
     setSyncStatus: (next) => patch({
       syncStatus: next.syncStatus,

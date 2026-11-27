@@ -129,7 +129,8 @@ Lần đăng nhập đầu trên máy đã có dữ liệu: cloud trống → up
 - Push: chỉ namespace có key đổi hash; bản đẩy bỏ thẻ chưa học, log giữ 3.000 mục mới nhất; namespace vượt 900 KB → bỏ qua và báo `skipped`.
 - State chỉ lưu sau khi push thành công → lỗi mạng thì lần sau thử lại.
 - Có dữ liệu mới áp vào máy → tải lại trang 1 lần/phiên để các island đọc lại.
-- Hạn chế đã biết: `hsk_study_activity_v1` (streak) là `lww` → hai máy học cùng ngày thì một máy thắng; pha 4 cân nhắc gộp theo ngày.
+- Streak `hsk_study_activity_v1` gộp theo ngày (`day_map`, pha 4): hợp danh sách từ, lấy số giây lớn hơn.
+- Tải lại: tự động chỉ ở lần sync đầu của trang (tối đa 1 lần/phiên tab); giữa phiên học thì hiện toast "Có tiến trình mới… Tải lại" để không cắt ngang.
 
 ## 5. Luồng & trigger
 
@@ -163,7 +164,7 @@ Tất cả hằng số (`SYNC_DEBOUNCE_MS`, retry backoff, schema version) đặ
 | 1 ✅ | `SyncRegistry` + `SyncSnapshot` + test merge; nâng cấp export/import thành **backup toàn app** (giá trị ngay, không cần server) | minor (v3.72.0) |
 | 2 ✅ | `AuthStore` + `AuthModal` + nút header (đăng nhập/đăng xuất, chưa sync) | minor (v3.73.0) |
 | 3 ✅ | `FirestoreCloudAdapter` (Firestore Lite) + `SyncEngine` pull/merge/push + `SyncController` (sync khi bắt đầu phiên) + test 2 thiết bị | — |
-| 4 | Trigger tự động, trạng thái sync trên UI, offline, SW exclude | minor |
+| 4 ✅ | Trigger tự động (5 phút khi đang mở, rời tab, có mạng lại), trạng thái sync trong menu + chấm avatar, toast, gộp streak theo ngày (`day_map`) | minor (v3.74.0) |
 | 5 | Xoá tài khoản & dữ liệu cloud, ghi chú quyền riêng tư trong README, cập nhật HANDOFF | patch |
 
 Rủi ro chính: (1) review log phình to → chia namespace theo level, cắt log cũ khi vượt ngưỡng hằng số; (2) đổi schema key → `schemaVersion` + migration khi apply; (3) chạm quota ngày của Spark → sync báo "tạm dừng", tự thử lại hôm sau, dữ liệu local không ảnh hưởng.
