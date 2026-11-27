@@ -1,0 +1,252 @@
+/* Google sign-in: account-menu guest card + sign-in / sign-out dialogs (src/islands/AuthModal.jsx).
+   Uses design tokens only, so the dark theme follows automatically. */
+
+/* Account menu: avatar photo and guest card */
+.ah-avatar.has-photo { overflow: hidden; background: var(--surface-chip); }
+.ah-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.ah-sync-card {
+  margin: 0 4px 6px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ah-sync-card-head {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.ah-sync-card-icon { color: var(--accent-text); margin-top: 1px; }
+.ah-sync-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.ah-sync-card-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.ah-sync-card-body {
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--text-secondary);
+}
+.ah-sync-card-btn,
+.auth-primary-btn {
+  min-height: 40px;
+  padding: 0 16px;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-btn);
+  background: var(--accent);
+  color: #FFFFFF;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color var(--dur-fast) var(--ease-out);
+}
+.ah-sync-card-btn:hover:not(:disabled),
+.auth-primary-btn:hover:not(:disabled) { background: var(--accent-hover); border-color: var(--accent-hover); }
+.ah-sync-card-btn:disabled,
+.auth-primary-btn:disabled { opacity: 0.7; cursor: progress; }
+
+/* Dialog shell */
+.auth-dialog {
+  width: min(440px, calc(100vw - 32px));
+  max-width: none;
+  padding: 0;
+  border: 0;
+  border-radius: 16px;
+  background: transparent;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+}
+.auth-dialog::backdrop { background: rgba(41, 39, 34, 0.45); }
+.auth-card {
+  position: relative;
+  box-sizing: border-box;
+  padding: 32px 32px 24px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--card-bg);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.22);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.auth-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: var(--radius-btn);
+  background: transparent;
+  color: var(--text-secondary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.auth-close:hover { background: var(--surface-hover); }
+.auth-head {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.auth-hanzi {
+  font-family: var(--font-zh);
+  font-size: 28px;
+  line-height: 1;
+  color: var(--accent-text);
+}
+.auth-title {
+  margin: 0;
+  padding-right: 32px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.auth-title-sm { font-size: 18px; }
+.auth-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--text-secondary);
+}
+.auth-benefits {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+}
+.auth-benefits li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.auth-benefit-icon { flex-shrink: 0; margin-top: 1px; color: var(--success-text); }
+.auth-error {
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: var(--radius-md);
+  background: var(--accent-light);
+  color: var(--accent-text);
+  font-size: 13px;
+  line-height: 1.45;
+}
+.auth-google-btn {
+  min-height: 48px;
+  border: 1px solid var(--border-strong);
+  border-radius: 10px;
+  background: var(--card-bg);
+  color: var(--text-primary);
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.auth-google-btn:hover:not(:disabled) { background: var(--surface-subtle); }
+.auth-google-btn:disabled { opacity: 0.7; cursor: progress; }
+.auth-text-btn {
+  align-self: center;
+  min-height: 40px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: var(--radius-btn);
+  background: transparent;
+  color: var(--text-secondary);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.auth-text-btn:hover { background: var(--surface-hover); }
+.auth-privacy {
+  margin: 0;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+.auth-privacy svg { flex-shrink: 0; width: 14px; height: 14px; margin-top: 2px; }
+
+/* Sign-out choices */
+.auth-choices {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.auth-choice {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.auth-choice:has(input:checked) { border-color: var(--accent); background: var(--surface-subtle); }
+.auth-choice input { margin-top: 3px; accent-color: var(--accent); }
+.auth-choice-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.auth-choice-title { font-weight: 600; }
+.auth-choice-hint { font-size: 12px; color: var(--text-secondary); }
+.auth-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+.auth-secondary-btn {
+  min-height: 40px;
+  padding: 0 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-btn);
+  background: var(--card-bg);
+  color: var(--text-primary);
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+.auth-secondary-btn:hover { background: var(--surface-hover); }
+.auth-actions .auth-primary-btn { font-size: 14px; }
+
+/* Phones: the dialog becomes a bottom sheet */
+@media (max-width: 600px) {
+  .auth-dialog {
+    width: 100vw;
+    margin: auto 0 0;
+    border-radius: 20px 20px 0 0;
+  }
+  .auth-card {
+    padding: 28px 20px calc(24px + env(safe-area-inset-bottom));
+    border-radius: 20px 20px 0 0;
+    border-bottom: 0;
+    gap: 16px;
+  }
+  .auth-title { font-size: 20px; }
+  .auth-google-btn { min-height: 52px; font-size: 16px; }
+}

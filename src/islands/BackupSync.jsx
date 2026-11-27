@@ -17,7 +17,7 @@ import {
 /** Length of the YYYY-MM-DD prefix of an ISO timestamp. */
 const ISO_DATE_LENGTH = 10;
 
-/* global currentLevel, srsCards, readSrsReviewLog, showPinyin, showIllustration, order,
+/* global currentLevel, srsCards, showPinyin, order,
    srsRetention, progress, WORDS, SRS, migrateLegacyProgress, progressFromCards,
    appendImportedReviewLog, saveRetention, saveProgress, savePrefs, renderLearningDashboard,
    setFilter, updateSrsPreviews, toggleTransferPanel, toggleRadicalTransferPanel,
@@ -68,7 +68,7 @@ function restoreFullBackup(text) {
   if (!confirm(BACKUP_LABELS.confirmRestore)) return;
   try {
     applyBackup(localStorage, result.backup, { normalizeCard: card => SRS.serializeCard(card) });
-  } catch (error) {
+  } catch {
     alert(BACKUP_LABELS.invalidFile);
     return;
   }

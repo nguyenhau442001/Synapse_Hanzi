@@ -70,6 +70,7 @@ export const HEADER_IDS = Object.freeze({
   MENU_HELP: 'headerHelpBtn',
   MENU_SHARE: 'headerShareBtn',
   MENU_INSTALL: 'headerInstallBtn',
+  MENU_SIGN_OUT: 'headerSignOutBtn',
 });
 
 /** Primary nav sections, in display order. `domId` must match NavSections.js. */

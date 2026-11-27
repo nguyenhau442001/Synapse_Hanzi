@@ -45,6 +45,7 @@ BUNDLE_FILES = [
     "assets/css/share-modal.css",
     "assets/css/design-system.css",
     "assets/css/app-header.css",
+    "assets/css/auth.css",
     "assets/js/preact/hanzi-mind.css",
     "assets/css/theme-dark.css",
 ]

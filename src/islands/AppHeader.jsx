@@ -15,9 +15,13 @@ import {
   CircleHelp,
   Share2,
   Download,
+  CloudCheck,
+  LogOut,
 } from 'lucide-preact';
 import { APP_VERSION } from './AppUtils';
 import { headerStats, headerUi, avatarInitialOf } from './HeaderStore.js';
+import { authController, authState } from './AuthStore.js';
+import { AUTH_LABELS as AL } from './AuthConstants.js';
 import {
   HEADER_LABELS as L,
   HEADER_IDS as IDS,
@@ -268,13 +272,66 @@ function ThemeSwitch() {
   );
 }
 
+/** Google photo when signed in, else the initial letter; `large` is the menu header size. */
+function Avatar({ id, user, initial, large }) {
+  const className = cx('ah-avatar', large && 'ah-avatar-lg', user?.avatarUrl && 'has-photo');
+  return (
+    <span
+      id={id}
+      class={className}
+      aria-hidden="true"
+    >
+      {user?.avatarUrl ? (
+        <img
+          class="ah-avatar-img"
+          src={user.avatarUrl}
+          alt=""
+          referrerpolicy="no-referrer"
+        />
+      ) : initial}
+    </span>
+  );
+}
+
+/** Guest call-to-action card shown at the top of the account menu. */
+function GuestSyncCard({ onSignIn }) {
+  const busy = authState.value.status === 'signing_in';
+  return (
+    <div class="ah-sync-card">
+      <div class="ah-sync-card-head">
+        <HeaderIcon
+          icon={CloudCheck}
+          className="ah-icon ah-sync-card-icon"
+        />
+        <span class="ah-sync-card-text">
+          <span class="ah-sync-card-title">{AL.GUEST_CARD_TITLE}</span>
+          <span class="ah-sync-card-body">{AL.GUEST_CARD_BODY}</span>
+        </span>
+      </div>
+      <button
+        type="button"
+        class="ah-sync-card-btn"
+        role="menuitem"
+        disabled={busy}
+        onClick={onSignIn}
+      >
+        {busy ? AL.SIGNING_IN : AL.GUEST_CARD_BUTTON}
+      </button>
+    </div>
+  );
+}
+
 function AccountMenu() {
   const [open, setOpen] = useState(false);
   const wrapRef = useRef(null);
   const profileBtnRef = useRef(null);
   const { profileName, canInstall, activeDrawerTab } = headerUi.value;
   const { streakDays, urgentCount, savedCount } = headerStats.value;
-  const initial = avatarInitialOf(profileName);
+  const { status, user } = authState.value;
+  const signedIn = status === 'signed_in' && Boolean(user);
+  const showGuestCard = authController.isConfigured && !signedIn;
+  const displayName = signedIn ? (user.displayName || AL.SIGNED_IN_FALLBACK_NAME) : profileName;
+  const initial = avatarInitialOf(displayName);
 
   useEffect(() => {
     if (!open) return undefined;
@@ -317,13 +374,11 @@ function AccountMenu() {
         aria-controls={IDS.ACCOUNT_MENU}
         onClick={() => setOpen(!open)}
       >
-        <span
+        <Avatar
           id={IDS.AVATAR}
-          class="ah-avatar"
-          aria-hidden="true"
-        >
-          {initial}
-        </span>
+          user={signedIn ? user : null}
+          initial={initial}
+        />
         <HeaderIcon
           icon={ChevronDown}
           size={HEADER_CHEVRON_SIZE_PX}
@@ -338,17 +393,19 @@ function AccountMenu() {
         hidden={!open}
       >
         <div class="ah-menu-profile">
-          <span
-            class="ah-avatar ah-avatar-lg"
-            aria-hidden="true"
-          >
-            {initial}
-          </span>
+          <Avatar
+            user={signedIn ? user : null}
+            initial={initial}
+            large
+          />
           <span class="ah-menu-profile-text">
-            <span class="ah-menu-profile-name">{profileName}</span>
-            <span class="ah-menu-profile-meta">{L.profileSummary(streakDays, urgentCount)}</span>
+            <span class="ah-menu-profile-name">{displayName}</span>
+            <span class="ah-menu-profile-meta">
+              {signedIn && user.email ? user.email : L.profileSummary(streakDays, urgentCount)}
+            </span>
           </span>
         </div>
+        {showGuestCard && <GuestSyncCard onSignIn={runAndClose(authController.openLogin)} />}
         <div
           class="ah-menu-divider"
           role="separator"
@@ -419,6 +476,18 @@ function AccountMenu() {
           <HeaderIcon icon={Download} />
           <span class="ah-menu-label">{L.MENU_INSTALL}</span>
         </button>
+        {signedIn && (
+          <button
+            type="button"
+            id={IDS.MENU_SIGN_OUT}
+            class="ah-menu-item"
+            role="menuitem"
+            onClick={runAndClose(authController.openLogout)}
+          >
+            <HeaderIcon icon={LogOut} />
+            <span class="ah-menu-label">{AL.MENU_SIGN_OUT}</span>
+          </button>
+        )}
         <p class="ah-menu-version">
           {`${L.MENU_VERSION} `}
           <span class="footer-version">{`v${APP_VERSION}`}</span>
