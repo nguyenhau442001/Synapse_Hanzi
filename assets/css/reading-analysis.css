@@ -64,7 +64,6 @@ body.reading-view-active .app-header {
   width: 100% !important;
   max-width: var(--app-shell-max-width) !important;
   margin: 0 auto 12px !important;
-  position: relative !important;
 }
 
 body.reading-view-active #primaryTabs {
@@ -657,6 +656,7 @@ body.dark-mode .practice-slots-area {
 body.dark-mode .builder-tile {
   background: #22211F;
   border-color: rgba(255, 255, 255, 0.08);
+  color: var(--text-primary);
 }
 
 .builder-tile:hover {
@@ -1910,6 +1910,7 @@ body.dark-mode .sge-content {
 /* Interactive Word Tiles */
 .builder-tile {
   background: var(--card-bg);
+  color: var(--text-primary);
   border: 1px solid var(--border);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
   font-size: 1.1rem;

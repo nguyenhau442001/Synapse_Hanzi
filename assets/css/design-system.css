@@ -73,7 +73,8 @@
 
 /* Sticky header on screens without their own sticky toolbars. The box-shadow +
    clip-path pair paints the canvas colour edge to edge without adding page width. */
-body.curriculum-view-active:not(.study-mode) .app-header {
+body.curriculum-view-active:not(.study-mode) .app-header,
+body.reading-view-active .app-header {
   position: sticky;
   top: 0;
   z-index: 50;
@@ -82,6 +83,9 @@ body.curriculum-view-active:not(.study-mode) .app-header {
   clip-path: inset(0 -100vmax);
 }
 body.curriculum-view-active:not(.study-mode) .chinese-aesthetic-bg { z-index: 0; }
+/* Native controls follow the app's chosen theme, not the OS one (meta color-scheme is "light dark"). */
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; }
 /* Phones: the header wraps to two rows. Let the brand row scroll away and keep
    only the compact stats row pinned (negative sticky offset = brand row height). */
 @media (max-width: 767px) {
