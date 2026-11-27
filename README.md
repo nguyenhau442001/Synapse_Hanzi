@@ -243,12 +243,15 @@ Script tải ảnh bản tiếng Trung và file SVG nguồn (cn + vi) từ peppe
 
 ---
 
-## 🔒 Lưu trữ & Chuyển thiết bị
+## 🔒 Lưu trữ, Đồng bộ & Quyền riêng tư
 
-- Toàn bộ tiến trình học được lưu trong `localStorage` của trình duyệt, không gửi lên máy chủ.
+- **Chế độ khách (mặc định):** toàn bộ tiến trình nằm trong `localStorage`/IndexedDB của trình duyệt, không gửi lên máy chủ.
+- **Đăng nhập Google (tuỳ chọn):** tiến trình học (thẻ FSRS, lịch sử ôn, bài thi, giáo trình, luyện viết, chuỗi ngày học) tự đồng bộ giữa các thiết bị qua Firebase Firestore (khu vực Singapore). Chỉ nhận tên, email, ảnh đại diện; luật Firestore chỉ cho chính chủ đọc/ghi. Thiết kế chi tiết: [`docs/auth-sync-plan.md`](docs/auth-sync-plan.md).
+- **Xoá dữ liệu:** menu ảnh đại diện → *Xoá tài khoản* xoá vĩnh viễn dữ liệu đám mây và tài khoản; *Đăng xuất* cho chọn giữ hoặc xoá dữ liệu trên máy.
 - Mục **Sao lưu và chuyển thiết bị**:
-  - **💾 Tải bản sao tiến trình:** tải file `.json` nhỏ gọn.
-  - **📂 Khôi phục từ bản sao:** chọn file `.json` để tiếp tục học trên máy khác.
+  - **💾 Tải bản sao tiến trình:** tải một file `.json` chứa tiến trình của mọi cấp độ.
+  - **📂 Khôi phục từ bản sao:** gộp file `.json` vào máy hiện tại (giữ bản ôn mới hơn).
+- Chính sách đầy đủ: [Chính sách quyền riêng tư](https://nguyenhau442001.github.io/Synapse_Hanzi/privacy.html).
 
 ---
 

@@ -1,6 +1,6 @@
 # Kế hoạch: Đăng nhập & đồng bộ tiến trình (Auth + Cloud Sync)
 
-> Trạng thái: **Đang chạy thật từ v3.75.0 (project `hanzi-mind-dd34c`); còn pha 5** (2026-11-27). Ràng buộc: miễn phí, không mua domain, chỉ đăng nhập Google.
+> Trạng thái: **Hoàn tất 5 pha — chạy thật từ v3.75.0, pha 5 ở v3.76.0** (project `hanzi-mind-dd34c`). Còn mở: xác minh branding OAuth. (2026-11-27). Ràng buộc: miễn phí, không mua domain, chỉ đăng nhập Google.
 
 ## 1. Hiện trạng (data flow)
 
@@ -165,7 +165,7 @@ Tất cả hằng số (`SYNC_DEBOUNCE_MS`, retry backoff, schema version) đặ
 | 2 ✅ | `AuthStore` + `AuthModal` + nút header (đăng nhập/đăng xuất, chưa sync) | minor (v3.73.0) |
 | 3 ✅ | `FirestoreCloudAdapter` (Firestore Lite) + `SyncEngine` pull/merge/push + `SyncController` (sync khi bắt đầu phiên) + test 2 thiết bị | — |
 | 4 ✅ | Trigger tự động (5 phút khi đang mở, rời tab, có mạng lại), trạng thái sync trong menu + chấm avatar, toast, gộp streak theo ngày (`day_map`) | minor (v3.74.0) |
-| 5 | Xoá tài khoản & dữ liệu cloud, ghi chú quyền riêng tư trong README, cập nhật HANDOFF | patch |
+| 5 ✅ | Xoá tài khoản (xác thực lại → khoá sync → xoá snapshots → xoá user), `privacy.html`, README, HANDOFF | minor (v3.76.0) |
 
 Rủi ro chính: (1) review log phình to → chia namespace theo level, cắt log cũ khi vượt ngưỡng hằng số; (2) đổi schema key → `schemaVersion` + migration khi apply; (3) chạm quota ngày của Spark → sync báo "tạm dừng", tự thử lại hôm sau, dữ liệu local không ảnh hưởng.
 

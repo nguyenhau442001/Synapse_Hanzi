@@ -6,6 +6,17 @@
 
 ---
 
+## 00. Cập nhật 2026-11-28 — Đăng nhập Google & đồng bộ đám mây (v3.72.0 → v3.76.0)
+
+- Tài liệu thiết kế và trạng thái: [`docs/auth-sync-plan.md`](docs/auth-sync-plan.md) (kiến trúc, hợp đồng dữ liệu, quy tắc merge, luật Firestore, checklist Firebase, mô hình đe doạ).
+- Firebase project `hanzi-mind-dd34c` (gói Spark miễn phí). Config công khai ở `src/islands/FirebaseConfig.js`; để trống một trường là tắt hẳn đăng nhập.
+- Module: `SyncRegistry` (allowlist key được sync) → `SyncSnapshot` (validate/merge/backup) → `SyncEngine` (pull/merge/push, hash từng key) → `FirestoreCloudAdapter` (Firestore Lite) ← `SyncController` (trigger, toast, xoá dữ liệu cloud); `AuthStore`/`AuthModal`/`FirebaseAuthProvider` cho đăng nhập.
+- Thêm key mới cần đồng bộ: khai báo trong `SyncRegistry.js` (chọn chiến lược merge) và thêm test; key không có trong registry không bao giờ rời thiết bị.
+- Test: `tools/test_sync_snapshot.mjs`, `test_sync_engine.mjs`, `test_sync_status.mjs`, `test_auth_store.mjs`.
+- Việc còn mở: xác minh branding OAuth trên Google Auth Platform (privacy link: `privacy.html`) để màn đăng nhập hiện tên "Hanzi Mind".
+
+---
+
 ## 0. TL;DR — việc cần làm tiếp theo
 
 1. **Đã hoàn thành và release v3.17.0**:
