@@ -1,6 +1,6 @@
 # Kế hoạch: Đăng nhập & đồng bộ tiến trình (Auth + Cloud Sync)
 
-> Trạng thái: **Đã chốt — pha 1 xong (v3.72.0), chờ pha 0 (tạo Firebase) + duyệt mockup UI** (2026-11-27). Ràng buộc: miễn phí, không mua domain, chỉ đăng nhập Google.
+> Trạng thái: **Đang chạy thật từ v3.75.0 (project `hanzi-mind-dd34c`); còn pha 5** (2026-11-27). Ràng buộc: miễn phí, không mua domain, chỉ đăng nhập Google.
 
 ## 1. Hiện trạng (data flow)
 
@@ -160,7 +160,7 @@ Tất cả hằng số (`SYNC_DEBOUNCE_MS`, retry backoff, schema version) đặ
 
 | Pha | Nội dung | Release |
 |---|---|---|
-| 0 | Người dùng làm theo checklist §11 (Firebase Spark, Google sign-in, Firestore, rules, khoá API key) | — |
+| 0 ✅ | Người dùng làm theo checklist §11 (Firebase Spark, Google sign-in, Firestore, rules, khoá API key) | — |
 | 1 ✅ | `SyncRegistry` + `SyncSnapshot` + test merge; nâng cấp export/import thành **backup toàn app** (giá trị ngay, không cần server) | minor (v3.72.0) |
 | 2 ✅ | `AuthStore` + `AuthModal` + nút header (đăng nhập/đăng xuất, chưa sync) | minor (v3.73.0) |
 | 3 ✅ | `FirestoreCloudAdapter` (Firestore Lite) + `SyncEngine` pull/merge/push + `SyncController` (sync khi bắt đầu phiên) + test 2 thiết bị | — |
