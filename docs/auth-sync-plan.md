@@ -1,6 +1,6 @@
 # Kế hoạch: Đăng nhập & đồng bộ tiến trình (Auth + Cloud Sync)
 
-> Trạng thái: **Đã chốt — pha 1 xong (v3.72.0)** (2026-11-27, app v3.71.3). Ràng buộc: miễn phí, không mua domain.
+> Trạng thái: **Đã chốt — pha 1 xong (v3.72.0), chờ pha 0 (tạo Firebase) + duyệt mockup UI** (2026-11-27). Ràng buộc: miễn phí, không mua domain, chỉ đăng nhập Google.
 
 ## 1. Hiện trạng (data flow)
 
@@ -30,7 +30,7 @@ Ràng buộc: site tĩnh trên GitHub Pages, PWA offline-first, không có backe
 
 **Đề xuất (cập nhật): B — Firebase Spark**, đồng bộ theo **snapshot từng namespace**. Lý do so với Supabase Free:
 - Spark **không pause project** khi ít hoạt động (Supabase Free pause sau ~1 tuần ít truy cập DB → app báo lỗi sync cho tới khi vào dashboard bật lại).
-- Không cần thẻ/billing account. Auth (Google, email link) miễn phí, Firebase tự gửi email đăng nhập — không cần SMTP riêng.
+- Không cần thẻ/billing account. Đăng nhập Google miễn phí. (Email link bị loại: Spark chỉ gửi **5 email/ngày** — xem §10.)
 - Quota Firestore Spark: ~20.000 lượt ghi / 50.000 lượt đọc mỗi ngày, 1 GiB lưu trữ → với ~10–20 lượt ghi/user/ngày đủ cho vài trăm–nghìn user hoạt động mỗi ngày. Vượt quota chỉ làm sync tạm dừng tới ngày sau; dữ liệu local không ảnh hưởng.
 - Không dùng: Phone/SMS auth và Cloud Storage (cần gói Blaze trả phí).
 - Lock-in thấp vì payload là snapshot JSON thuần, `SyncEngine` gọi qua 1 adapter (`CloudAdapter`) → đổi sang Supabase/Drive sau này chỉ thay adapter.
@@ -83,21 +83,29 @@ A (Supabase) là dự phòng nếu cần SQL. D (Google Drive) vẫn miễn phí
  */
 ```
 
-Firestore: `users/{uid}/snapshots/{namespace}` → 1 document = 1 `SyncSnapshot` (giới hạn 1 MiB/document → review log chia theo level, cắt log cũ khi vượt ngưỡng hằng số).
+Firestore: `users/{uid}/snapshots/{namespace}` → 1 document = 1 `SyncSnapshot`. Trường `data` lưu dưới dạng **chuỗi JSON** để rules kiểm tra được kích thước (giới hạn 1 MiB/document → review log chia theo level, cắt log cũ khi vượt ngưỡng hằng số).
 
 ```js
 // firestore.rules — each user can only read/write their own documents.
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    match /users/{uid}/{document=**} {
-      allow read, write: if request.auth != null && request.auth.uid == uid;
+    // Owner-only access; strict shape and size checks on every write; everything else denied.
+    match /users/{uid}/snapshots/{namespace} {
+      allow read, delete: if request.auth != null && request.auth.uid == uid;
+      allow create, update: if request.auth != null && request.auth.uid == uid
+        && namespace.matches('^[a-z_]+(:[a-z0-9_-]+){0,2}$')
+        && request.resource.data.keys().hasOnly(['schemaVersion', 'deviceId', 'updatedAt', 'data'])
+        && request.resource.data.schemaVersion is int
+        && request.resource.data.deviceId is string && request.resource.data.deviceId.size() <= 64
+        && request.resource.data.updatedAt is timestamp
+        && request.resource.data.data is string && request.resource.data.data.size() <= 900000;
     }
   }
 }
 ```
 
-Firebase web config (apiKey…) là public theo thiết kế; bảo mật nằm ở rules trên. Bật App Check (reCAPTCHA, miễn phí) để giảm spam quota.
+Firebase web config (apiKey…) là public theo thiết kế; bảo mật nằm ở rules trên + khoá API key theo domain (§11). App Check (reCAPTCHA v3) là tuỳ chọn, bật sau khi có người dùng thật.
 
 **Không sync** (thuộc về thiết bị): `hsk_theme*`, `hsk_sidebar_tab`, `hsk_pwa_install_dismissed_until`, `hsk_welcome_dismissed`, `hsk_dexie_migration_v1`, model giọng nói/audio cache.
 
@@ -115,7 +123,7 @@ Lần đăng nhập đầu trên máy đã có dữ liệu: cloud trống → up
 
 ## 5. Luồng & trigger
 
-1. App khởi động → đọc session Supabase (localStorage của SDK) → nếu online: **pull → merge → push**.
+1. App khởi động → nếu cờ thiết bị `hsk_auth_session_v1` bật thì lazy-load Firebase SDK, khôi phục phiên → nếu online: **pull → merge → push**. Khách không tải SDK.
 2. Sau mỗi phiên ôn tập kết thúc / mỗi `SYNC_DEBOUNCE_MS` khi có thay đổi → push namespace dirty.
 3. `visibilitychange: hidden` và sự kiện `online` → flush.
 4. Offline → `syncStatus = 'offline'`, giữ cờ dirty, đồng bộ khi có mạng.
@@ -132,7 +140,7 @@ Tất cả hằng số (`SYNC_DEBOUNCE_MS`, retry backoff, schema version) đặ
 | `src/islands/AuthStore.js` | Signals `AuthState` + Firebase Auth (modular SDK, lazy-load, không làm nặng first paint) |
 | `src/islands/CloudAdapter.js` | Interface `pull(namespaces)` / `push(snapshots)` — bản Firestore; thay được bằng provider khác |
 | `src/islands/SyncEngine.js` | pull/merge/push, debounce, retry, offline |
-| `src/islands/AuthModal.jsx` | Đăng nhập Google / email magic link, icon `lucide-preact` |
+| `src/islands/AuthModal.jsx` | Đăng nhập Google (popup), icon `lucide-preact` — UI theo mockup đã duyệt |
 | `AppHeader.jsx` (sửa) | Nút avatar + chấm trạng thái sync |
 | `BackupSync.jsx` (sửa) | Thêm "Sao lưu toàn bộ" (dùng `SyncSnapshot`) — có ích cả khi không đăng nhập |
 | `sw.js` | Không cache request tới `*.googleapis.com` / `*.firebaseapp.com` |
@@ -141,7 +149,7 @@ Tất cả hằng số (`SYNC_DEBOUNCE_MS`, retry backoff, schema version) đặ
 
 | Pha | Nội dung | Release |
 |---|---|---|
-| 0 | Tạo project Firebase (gói Spark, không thẻ); bật Auth Google + Email link; thêm authorized domain `nguyenhau442001.github.io` + `localhost`; tạo Firestore + deploy rules | — |
+| 0 | Người dùng làm theo checklist §11 (Firebase Spark, Google sign-in, Firestore, rules, khoá API key) | — |
 | 1 ✅ | `SyncRegistry` + `SyncSnapshot` + test merge; nâng cấp export/import thành **backup toàn app** (giá trị ngay, không cần server) | minor (v3.72.0) |
 | 2 | `AuthStore` + `AuthModal` + nút header (đăng nhập/đăng xuất, chưa sync) | minor |
 | 3 | `CloudAdapter` (Firestore) + `SyncEngine` pull/merge/push + test (adapter giả trong node) | — |
@@ -159,18 +167,52 @@ Rủi ro chính: (1) review log phình to → chia namespace theo level, cắt l
 | Thẻ FSRS độc hại / hỏng | Chuẩn hoá qua `SRS.serializeCard`; thẻ lỗi bị loại; merge không để thẻ chưa học ghi đè thẻ đã học | 1 ✅ |
 | Ghi dở dang khi đầy bộ nhớ | Tính toàn bộ trước, ghi sau, lỗi thì rollback mọi key | 1 ✅ |
 | Đọc/ghi dữ liệu người khác trên cloud | Firestore rules `request.auth.uid == uid`; test rules bằng Firebase emulator trước khi deploy | 3 |
-| Lạm dụng quota/API key public | App Check (reCAPTCHA Enterprise free tier), giới hạn API key theo HTTP referrer `nguyenhau442001.github.io/*` + `localhost` | 0 |
-| Dò email đã đăng ký | Bật *Email enumeration protection* trong Firebase Auth | 0 |
+| Lạm dụng quota/API key public | Giới hạn API key theo HTTP referrer `nguyenhau442001.github.io/*` + `localhost`; App Check tuỳ chọn | 0 |
+| Ghi rác/quá cỡ vào Firestore | Rules kiểm tra tên namespace, đúng 4 trường, kiểu dữ liệu, `data` ≤ 900 KB | 0/3 |
 | Chiếm phiên đăng nhập qua redirect giả | Chỉ để authorized domains là github.io + localhost; xoá domain mặc định không dùng | 0 |
 | XSS đánh cắp phiên | Không render dữ liệu người dùng bằng `innerHTML`; thêm Content-Security-Policy (`<meta>`) giới hạn script/connect tới self + Google/Firebase | 2 |
 | Thu thập dữ liệu quá mức | Chỉ lưu tiến trình học + uid/email do Firebase quản lý; tên hiển thị (`personal`) chỉ sync khi đã đăng nhập; không analytics theo user | 2–3 |
 | Quyền được xoá dữ liệu | Nút "Xoá tài khoản & dữ liệu cloud" (xoá `users/{uid}` rồi `deleteUser`) | 5 |
 
-Không có mật khẩu do app tự lưu: Google OAuth + email link (passwordless) → không có kho mật khẩu để bị lộ.
+Không có mật khẩu: chỉ Google OAuth → không có kho mật khẩu để bị lộ, không phải gửi email. App chỉ yêu cầu scope cơ bản (`openid email profile`) → không cần Google xét duyệt OAuth.
 
 ## 9. Quyết định đã chốt (2026-11-27)
 
 1. **Nhà cung cấp:** Firebase Spark (miễn phí, không mua domain, không pause).
-2. **Cách đăng nhập:** Google + email link (passwordless).
+2. **Cách đăng nhập:** chỉ Google (popup). Email link loại vì Spark chỉ gửi 5 email/ngày; email/mật khẩu không chọn.
 3. **Phạm vi sync:** chỉ tiến trình học (theo `SyncRegistry`); cài đặt giao diện ở lại từng thiết bị.
 4. **Chế độ khách offline:** giữ nguyên.
+5. **Mã hoá:** dùng mã hoá của Google (TLS khi truyền, AES-256 khi lưu) + rules chủ sở hữu; **không** mã hoá đầu-cuối (tránh rủi ro mất mã khôi phục).
+6. **UI:** mockup trên Design canvas, duyệt trước khi code.
+
+## 10. Chi phí, quy mô & định dạng dữ liệu
+
+Giới hạn Spark (trang Firebase Auth limits / Firestore pricing, 2026-11):
+
+| Hạng mục | Spark (miễn phí) | Blaze (trả theo mức dùng) |
+|---|---|---|
+| Người dùng Google hoạt động/ngày (không gắn thẻ) | 3.000 | Theo bảng giá Identity Platform |
+| Tổng tài khoản | Không giới hạn | Không giới hạn |
+| Firestore ghi / đọc mỗi ngày | 20.000 / 50.000 | ~$0,09 / 100k ghi, ~$0,03 / 100k đọc |
+| Lưu trữ Firestore | 1 GiB | Theo GB |
+| Email link sign-in | 5 email/ngày → **không dùng** | 25.000/ngày |
+
+Ước tính: mỗi người dùng ~3 lượt ghi/ngày (gộp theo phiên) → nghẽn đầu tiên là 3.000 người dùng/ngày. Vượt mức → gắn thẻ lên Blaze; 10.000 người dùng/ngày ước khoảng vài USD/tháng cho Firestore. Lối thoát không tốn tiền ở mọi quy mô: thay `CloudAdapter` bằng Google Drive `appDataFolder` (dữ liệu trong Drive của từng người dùng).
+
+Định dạng & mã hoá:
+- Trên máy: localStorage, chuỗi JSON, không mã hoá (trình duyệt cô lập theo origin). File sao lưu: `.json`.
+- Trên cloud: document Firestore `{ schemaVersion, deviceId, updatedAt, data: "<JSON>" }`; TLS khi truyền, AES-256 do Google quản lý khi lưu; chỉ chủ tài khoản truy cập qua rules. Chủ project vẫn xem được trong Firebase Console (không phải E2E).
+
+## 11. Pha 0 — Checklist tạo Firebase (người dùng làm, ~15 phút, không cần thẻ)
+
+1. Vào https://console.firebase.google.com → **Create a project** → tên `hanzi-mind` → **tắt Google Analytics** (không cần, ít thu thập dữ liệu hơn).
+2. **Project settings → General → Your apps → Web (`</>`)**: đặt nickname `hanzi-mind-web`, **không** tick Firebase Hosting → Register → copy khối `firebaseConfig`.
+3. **Build → Authentication → Get started → Sign-in method → Google → Enable**: chọn support email → Save. Không bật provider nào khác.
+4. **Authentication → Settings → Authorized domains**: thêm `nguyenhau442001.github.io`; giữ `localhost` và `<project>.firebaseapp.com` (cần cho popup Google).
+5. **Build → Firestore Database → Create database**: Standard edition, location `asia-southeast1` (Singapore, gần Việt Nam), chọn **production mode** (mặc định từ chối mọi truy cập).
+6. **Firestore → Rules**: dán rules ở §3 → **Publish**.
+7. **Google Cloud Console → APIs & Services → Credentials** (cùng project) → mở key *Browser key (auto created by Firebase)* → *Application restrictions: Websites* → thêm `https://nguyenhau442001.github.io/*`, `http://localhost:*/*`, `http://127.0.0.1:*/*` → Save.
+8. **Google Cloud Console → Google Auth Platform → Branding**: tên app `Hanzi Mind`, logo, link trang chủ `https://nguyenhau442001.github.io/Synapse_Hanzi/`, support email. Audience: *External*, **Publish app** (scope cơ bản nên không cần xét duyệt).
+9. **Không** gắn billing (giữ Spark).
+10. Gửi lại khối `firebaseConfig` (apiKey, authDomain, projectId, appId) — thông tin public, sẽ nằm trong `src/islands/FirebaseConfig.js`.
+
