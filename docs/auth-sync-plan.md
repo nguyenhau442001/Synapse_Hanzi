@@ -1,6 +1,6 @@
 # Kế hoạch: Đăng nhập & đồng bộ tiến trình (Auth + Cloud Sync)
 
-> Trạng thái: **Đề xuất — chờ chốt quyết định** (2026-11-27, app v3.71.3). Ràng buộc: miễn phí, không mua domain.
+> Trạng thái: **Đã chốt — pha 1 xong (v3.72.0)** (2026-11-27, app v3.71.3). Ràng buộc: miễn phí, không mua domain.
 
 ## 1. Hiện trạng (data flow)
 
@@ -133,7 +133,7 @@ Tất cả hằng số (`SYNC_DEBOUNCE_MS`, retry backoff, schema version) đặ
 | Pha | Nội dung | Release |
 |---|---|---|
 | 0 | Tạo project Firebase (gói Spark, không thẻ); bật Auth Google + Email link; thêm authorized domain `nguyenhau442001.github.io` + `localhost`; tạo Firestore + deploy rules | — |
-| 1 | `SyncRegistry` + `SyncSnapshot` + test merge; nâng cấp export/import thành **backup toàn app** (giá trị ngay, không cần server) | minor |
+| 1 ✅ | `SyncRegistry` + `SyncSnapshot` + test merge; nâng cấp export/import thành **backup toàn app** (giá trị ngay, không cần server) | minor (v3.72.0) |
 | 2 | `AuthStore` + `AuthModal` + nút header (đăng nhập/đăng xuất, chưa sync) | minor |
 | 3 | `CloudAdapter` (Firestore) + `SyncEngine` pull/merge/push + test (adapter giả trong node) | — |
 | 4 | Trigger tự động, trạng thái sync trên UI, offline, SW exclude | minor |
@@ -141,9 +141,27 @@ Tất cả hằng số (`SYNC_DEBOUNCE_MS`, retry backoff, schema version) đặ
 
 Rủi ro chính: (1) review log phình to → chia namespace theo level, cắt log cũ khi vượt ngưỡng hằng số; (2) đổi schema key → `schemaVersion` + migration khi apply; (3) chạm quota ngày của Spark → sync báo "tạm dừng", tự thử lại hôm sau, dữ liệu local không ảnh hưởng.
 
-## 8. Quyết định cần chốt
+## 8. Bảo mật & quyền riêng tư (chống bị hack)
 
-1. **Nhà cung cấp:** ~~chờ chốt~~ → Firebase Spark (miễn phí, không domain, không pause) — chờ xác nhận.
-2. **Cách đăng nhập:** Google + email magic link (đề xuất) / chỉ Google.
-3. **Phạm vi sync:** chỉ tiến trình học (đề xuất) / cả cài đặt hiển thị (pinyin, Hán Việt, tone colors).
-4. **Giữ chế độ khách offline:** có (đề xuất).
+| Mối đe doạ | Biện pháp | Pha |
+|---|---|---|
+| File sao lưu/cloud bị sửa để ghi key tuỳ ý (XSS lưu trữ, ghi đè token) | Allowlist `SyncRegistry`: chỉ ghi key tiến trình; key lạ, `__proto__`/`constructor`, giá trị sai kiểu đều bị bỏ | 1 ✅ |
+| File khổng lồ làm treo app | Giới hạn kích thước file, số entry, độ dài mỗi giá trị (`SyncConstants.js`) | 1 ✅ |
+| Thẻ FSRS độc hại / hỏng | Chuẩn hoá qua `SRS.serializeCard`; thẻ lỗi bị loại; merge không để thẻ chưa học ghi đè thẻ đã học | 1 ✅ |
+| Ghi dở dang khi đầy bộ nhớ | Tính toàn bộ trước, ghi sau, lỗi thì rollback mọi key | 1 ✅ |
+| Đọc/ghi dữ liệu người khác trên cloud | Firestore rules `request.auth.uid == uid`; test rules bằng Firebase emulator trước khi deploy | 3 |
+| Lạm dụng quota/API key public | App Check (reCAPTCHA Enterprise free tier), giới hạn API key theo HTTP referrer `nguyenhau442001.github.io/*` + `localhost` | 0 |
+| Dò email đã đăng ký | Bật *Email enumeration protection* trong Firebase Auth | 0 |
+| Chiếm phiên đăng nhập qua redirect giả | Chỉ để authorized domains là github.io + localhost; xoá domain mặc định không dùng | 0 |
+| XSS đánh cắp phiên | Không render dữ liệu người dùng bằng `innerHTML`; thêm Content-Security-Policy (`<meta>`) giới hạn script/connect tới self + Google/Firebase | 2 |
+| Thu thập dữ liệu quá mức | Chỉ lưu tiến trình học + uid/email do Firebase quản lý; tên hiển thị (`personal`) chỉ sync khi đã đăng nhập; không analytics theo user | 2–3 |
+| Quyền được xoá dữ liệu | Nút "Xoá tài khoản & dữ liệu cloud" (xoá `users/{uid}` rồi `deleteUser`) | 5 |
+
+Không có mật khẩu do app tự lưu: Google OAuth + email link (passwordless) → không có kho mật khẩu để bị lộ.
+
+## 9. Quyết định đã chốt (2026-11-27)
+
+1. **Nhà cung cấp:** Firebase Spark (miễn phí, không mua domain, không pause).
+2. **Cách đăng nhập:** Google + email link (passwordless).
+3. **Phạm vi sync:** chỉ tiến trình học (theo `SyncRegistry`); cài đặt giao diện ở lại từng thiết bị.
+4. **Chế độ khách offline:** giữ nguyên.

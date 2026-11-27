@@ -1,6 +1,22 @@
 // Export and import progress snapshots between devices.
 // Preact island port replacing legacy assets/js/backup.js.
 
+import { APP_VERSION } from './AppUtils.js';
+import { buildBackup, parseBackup, applyBackup } from './SyncSnapshot.js';
+import {
+  BACKUP_TYPE,
+  BACKUP_MAX_FILE_BYTES,
+  BACKUP_FILE_PREFIX,
+  BACKUP_FILE_EXTENSION,
+  BACKUP_MIME_TYPE,
+  BACKUP_JSON_INDENT,
+  BACKUP_PANEL_CLOSE_DELAY_MS,
+  BACKUP_LABELS,
+} from './SyncConstants.js';
+
+/** Length of the YYYY-MM-DD prefix of an ISO timestamp. */
+const ISO_DATE_LENGTH = 10;
+
 /* global currentLevel, srsCards, readSrsReviewLog, showPinyin, showIllustration, order,
    srsRetention, progress, WORDS, SRS, migrateLegacyProgress, progressFromCards,
    appendImportedReviewLog, saveRetention, saveProgress, savePrefs, renderLearningDashboard,
@@ -8,43 +24,75 @@
    radicalProgress, showRadicalPinyin, saveRadicalProgress, saveRadicalPrefs,
    setRadicalFilter, radicalCurrentFilter, radicalCurrentView, renderRadicalOverview, readStudyDirection */
 
-export function exportProgress() {
-  const data = JSON.stringify({
-    schemaVersion: 3,
-    level: currentLevel,
-    // The cards and log of the study direction currently in use (Hán -> nghĩa by default).
-    direction: typeof readStudyDirection === 'function' ? readStudyDirection() : 'zh2vi',
-    cards: srsCards,
-    reviewLog: typeof readSrsReviewLog === 'function' ? readSrsReviewLog(currentLevel, typeof readStudyDirection === 'function' ? readStudyDirection() : undefined) : [],
-    prefs: {
-      showPinyin: typeof showPinyin !== 'undefined' ? showPinyin : true,
-      showIllustrationV2: typeof showIllustration !== 'undefined' ? showIllustration : false,
-      order: typeof order !== 'undefined' ? order : [],
-      desiredRetention: typeof srsRetention !== 'undefined' ? srsRetention : 0.9,
-    },
-    progress: typeof progress !== 'undefined' ? progress : {},
-  }, null, 2);
-  const blob = new Blob([data], { type: 'application/json' });
+/**
+ * Trigger a browser download of a JSON payload.
+ * @param {string} json
+ * @param {string} filename
+ */
+function downloadJson(json, filename) {
+  const blob = new Blob([json], { type: BACKUP_MIME_TYPE });
   const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = 'hsk_progress_' + currentLevel + '.json';
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = filename;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
   URL.revokeObjectURL(url);
+}
+
+/** Download a full-app backup of every allowlisted progress key (all levels and directions). */
+export function exportProgress() {
+  // Flush the in-memory active deck so the backup includes the latest reviews.
+  const hasActiveDeck = typeof currentLevel !== 'undefined' && Boolean(currentLevel);
+  if (hasActiveDeck && typeof saveProgress === 'function') saveProgress();
+  if (hasActiveDeck && typeof savePrefs === 'function') savePrefs();
+  const backup = buildBackup(localStorage, { appVersion: APP_VERSION });
+  const date = backup.exportedAt.slice(0, ISO_DATE_LENGTH);
+  downloadJson(JSON.stringify(backup, null, BACKUP_JSON_INDENT), BACKUP_FILE_PREFIX + date + BACKUP_FILE_EXTENSION);
   setTimeout(() => {
     if (typeof toggleTransferPanel === 'function') toggleTransferPanel(false);
-  }, 400);
+  }, BACKUP_PANEL_CLOSE_DELAY_MS);
+}
+
+/**
+ * Validate, merge and apply a full-app backup, then reload so every island re-reads storage.
+ * @param {string} text
+ */
+function restoreFullBackup(text) {
+  const result = parseBackup(text);
+  if (!result.ok) {
+    alert(result.reason === 'too_large' ? BACKUP_LABELS.fileTooLarge : BACKUP_LABELS.invalidFile);
+    return;
+  }
+  if (!confirm(BACKUP_LABELS.confirmRestore)) return;
+  try {
+    applyBackup(localStorage, result.backup, { normalizeCard: card => SRS.serializeCard(card) });
+  } catch (error) {
+    alert(BACKUP_LABELS.invalidFile);
+    return;
+  }
+  alert(BACKUP_LABELS.restoreDone);
+  window.location.reload();
 }
 
 export function importProgress(event) {
   const file = event.target.files[0];
   if (!file) return;
+  if (file.size > BACKUP_MAX_FILE_BYTES) {
+    alert(BACKUP_LABELS.fileTooLarge);
+    event.target.value = '';
+    return;
+  }
   const reader = new FileReader();
   reader.onload = function(e) {
     try {
       const data = JSON.parse(e.target.result);
+      if (data && data.type === BACKUP_TYPE) {
+        restoreFullBackup(String(e.target.result));
+        return;
+      }
+      // Legacy single-level backup (schemaVersion 3, written before v3.72).
       if (data.level && data.level !== currentLevel) {
         if (!confirm('Bản sao này thuộc cấp độ ' + data.level.toUpperCase() + ', không phải ' + currentLevel.toUpperCase() + '. Vẫn khôi phục?')) return;
       }
@@ -134,18 +182,10 @@ export function exportRadicalProgress() {
     progress: typeof radicalProgress !== 'undefined' ? radicalProgress : {},
     showPinyin: typeof showRadicalPinyin !== 'undefined' ? showRadicalPinyin : true,
   }, null, 2);
-  const blob = new Blob([data], { type: 'application/json' });
-  const url = URL.createObjectURL(blob);
-  const link = document.createElement('a');
-  link.href = url;
-  link.download = 'hsk_radicals_progress.json';
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-  URL.revokeObjectURL(url);
+  downloadJson(data, 'hsk_radicals_progress.json');
   setTimeout(() => {
     if (typeof toggleRadicalTransferPanel === 'function') toggleRadicalTransferPanel(false);
-  }, 400);
+  }, BACKUP_PANEL_CLOSE_DELAY_MS);
 }
 
 export function importRadicalProgress(event) {
