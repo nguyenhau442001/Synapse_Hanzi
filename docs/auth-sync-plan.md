@@ -151,7 +151,7 @@ Tất cả hằng số (`SYNC_DEBOUNCE_MS`, retry backoff, schema version) đặ
 |---|---|---|
 | 0 | Người dùng làm theo checklist §11 (Firebase Spark, Google sign-in, Firestore, rules, khoá API key) | — |
 | 1 ✅ | `SyncRegistry` + `SyncSnapshot` + test merge; nâng cấp export/import thành **backup toàn app** (giá trị ngay, không cần server) | minor (v3.72.0) |
-| 2 | `AuthStore` + `AuthModal` + nút header (đăng nhập/đăng xuất, chưa sync) | minor |
+| 2 ✅ | `AuthStore` + `AuthModal` + nút header (đăng nhập/đăng xuất, chưa sync) | minor (v3.73.0) |
 | 3 | `CloudAdapter` (Firestore) + `SyncEngine` pull/merge/push + test (adapter giả trong node) | — |
 | 4 | Trigger tự động, trạng thái sync trên UI, offline, SW exclude | minor |
 | 5 | Xoá tài khoản & dữ liệu cloud, ghi chú quyền riêng tư trong README, cập nhật HANDOFF | patch |
