@@ -64,10 +64,19 @@ A (Supabase) là dự phòng nếu cần SQL. D (Google Drive) vẫn miễn phí
  */
 
 /**
+ * Signed-in user profile (from Firebase Auth, never stored by the app itself).
+ * @typedef {Object} AuthUser
+ * @property {string} id                Firebase uid.
+ * @property {string|null} email
+ * @property {string|null} displayName
+ * @property {string|null} avatarUrl
+ */
+
+/**
  * Reactive auth/sync state (Preact Signals store, like HeaderStore.js).
  * @typedef {Object} AuthState
  * @property {'guest'|'signing_in'|'signed_in'} status
- * @property {{ id: string, email: string|null, displayName: string|null, avatarUrl: string|null }|null} user
+ * @property {AuthUser|null} user
  * @property {'idle'|'syncing'|'synced'|'offline'|'error'} syncStatus
  * @property {string|null} lastSyncedAt  ISO time of last successful sync.
  * @property {string|null} errorMessage  User-facing message constant, never raw error text.
