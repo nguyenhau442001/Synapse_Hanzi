@@ -16,7 +16,7 @@ const PRECACHE_MANIFEST = [
   },
   {
     "url": "assets/js/preact/islands.js",
-    "revision": "40e8f5eddb011176de4bdd3370829f66"
+    "revision": "c262d7793dcd84ed12e826314b6dcac1"
   },
   {
     "url": "assets/js/preact/chunks/volume-2-DLqdM3rb.js",
@@ -39,52 +39,52 @@ const PRECACHE_MANIFEST = [
     "revision": "4c3a11991e503adb4826bcd96a63d1af"
   },
   {
-    "url": "assets/js/preact/chunks/app-Bc70EWb1.js",
-    "revision": "6dfbdaf9ef3e6f94a8843299c330c04d"
+    "url": "assets/js/preact/chunks/app-DlKST3-z.js",
+    "revision": "609a7b74f17176f7f5040c7ee02322b0"
   },
   {
-    "url": "assets/js/preact/chunks/Writing-CiXhDmdS.js",
-    "revision": "ec8ed165b8d031b74f222db78403ce63"
+    "url": "assets/js/preact/chunks/Writing-B36hWoil.js",
+    "revision": "4c100ee88c6f876b91ca887854e6e205"
   },
   {
-    "url": "assets/js/preact/chunks/SpeakingPractice-Bq94-LKs.js",
-    "revision": "7c3c5ed1fef2bfd9d2eaf6f3a9effa34"
+    "url": "assets/js/preact/chunks/SpeakingPractice-D0Cupott.js",
+    "revision": "b2aee8ba0854c49b7d89d9825270d9a0"
   },
   {
-    "url": "assets/js/preact/chunks/ReadingAnalysis-Byl3cwGF.js",
-    "revision": "b28bead01013b86bfa20ee34c6fa4e64"
+    "url": "assets/js/preact/chunks/ReadingAnalysis-CYyoAvtW.js",
+    "revision": "6b11d378839f762b4291d507b429ee05"
   },
   {
-    "url": "assets/js/preact/chunks/ListeningReviewPanel-XDuptkwI.js",
-    "revision": "0afdcb9e33f4b1a193947ce460a52288"
+    "url": "assets/js/preact/chunks/ListeningReviewPanel-C35oHOSQ.js",
+    "revision": "f9ec522727856f997b5bd3ad73a0e69e"
   },
   {
-    "url": "assets/js/preact/chunks/ListeningPractice-CK9enWHb.js",
-    "revision": "c1fcae4c15e276fca8845b0acc7555d5"
+    "url": "assets/js/preact/chunks/ListeningPractice-ctOfjYPB.js",
+    "revision": "cf0d22184c07c96c759f24f4661c4d66"
   },
   {
-    "url": "assets/js/preact/chunks/Hsk30ExamView-CnZqHmwV.js",
-    "revision": "a52bfc66534c9c1419fe111502a5ded0"
+    "url": "assets/js/preact/chunks/Hsk30ExamView-F1uqtZQq.js",
+    "revision": "b4c15ad5af7836279543663b23f1d0d2"
   },
   {
-    "url": "assets/js/preact/chunks/GradedReading-DyZCKzJ6.js",
-    "revision": "af6fec96d3b36a9d8d7ae41ac6453c4d"
+    "url": "assets/js/preact/chunks/GradedReading-BxLf5fHS.js",
+    "revision": "d9447fce2da263bffa28ab2c7db02e1b"
   },
   {
-    "url": "assets/js/preact/chunks/FirestoreCloudAdapter-D4Q5moya.js",
-    "revision": "e8b142632b5baf4a2c97951b424ee0f4"
+    "url": "assets/js/preact/chunks/FirestoreCloudAdapter-CNDCU9Pk.js",
+    "revision": "28d498688b6863eeeb57d6fcdc432fbd"
   },
   {
-    "url": "assets/js/preact/chunks/FirebaseAuthProvider-vdHoR8Rd.js",
-    "revision": "9377240b03ebb5ce5d5681271ff29617"
+    "url": "assets/js/preact/chunks/FirebaseAuthProvider-CyvVpW2G.js",
+    "revision": "07603d68a3cee4bd5df44ae83e107b2f"
   },
   {
     "url": "assets/js/preact/chunks/FirebaseApp-t7cUFNzc.js",
     "revision": "bd7b2ff7e959ac71400c9bf2907cf63e"
   },
   {
-    "url": "assets/js/preact/chunks/AiTutorPromptGuide-jseUG1aC.js",
-    "revision": "d9121a901e39eaf412f1d8c10e064d4e"
+    "url": "assets/js/preact/chunks/AiTutorPromptGuide-C6FKGtDS.js",
+    "revision": "ddfc202bbe0e64a9d496f6e6ac2fbbc7"
   },
   {
     "url": "assets/js/hanviet-dict.js",

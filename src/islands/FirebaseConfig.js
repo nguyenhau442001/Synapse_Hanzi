@@ -11,9 +11,18 @@
  * @property {string} appId
  */
 
-/** @type {Readonly<FirebaseWebConfig>} */
+/** Build-time variables (Vite). Undefined under plain Node, e.g. in unit tests. */
+const BUILD_ENV = (typeof import.meta !== 'undefined' && import.meta.env) || {};
+
+/**
+ * The API key is injected at build time from VITE_FIREBASE_API_KEY: `.env` locally (git-ignored,
+ * see `.env.example`) and the repository secret of the same name in the deploy workflow.
+ * It still ships to every browser by design; protection comes from Firestore rules and the
+ * key's HTTP-referrer restriction, not from secrecy.
+ * @type {Readonly<FirebaseWebConfig>}
+ */
 export const FIREBASE_CONFIG = Object.freeze({
-  apiKey: 'AIzaSyDQf3MHfy8xYB9S3WOtX5Ug1bFBdSKtUkc',
+  apiKey: BUILD_ENV.VITE_FIREBASE_API_KEY || '',
   authDomain: 'hanzi-mind-dd34c.firebaseapp.com',
   projectId: 'hanzi-mind-dd34c',
   appId: '1:586898345523:web:56bef101cb9fa7f3261d46',

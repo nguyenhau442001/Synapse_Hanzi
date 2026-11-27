@@ -452,3 +452,11 @@ tools/.manga_ocr_debug/
 # Pepper&Carrot import cache (tools/import_peppercarrot.py)
 tools/.peppercarrot_cache/
 .venv-manga/
+
+# Local environment (Firebase API key etc.); see .env.example
+.env
+.env.*
+!.env.example
+
+# Islands bundle is built by .github/workflows/deploy.yml (contains the injected API key)
+assets/js/preact/

@@ -1,8 +1,8 @@
 // Build config for the Preact "islands" that run inside the live index.html.
 //
-// index.html is served as static files (no build step on deploy), so the bundle is
-// written to assets/js/preact/islands.js and committed. Each island renders the
-// same markup and CSS classes as the legacy code it replaces, so the UI is unchanged.
+// The bundle is written to assets/js/preact/ (git-ignored) and built on deploy by
+// .github/workflows/deploy.yml, which injects VITE_FIREBASE_API_KEY from repository secrets.
+// Each island renders the same markup and CSS classes as the legacy code it replaces.
 //
 //   npm run build:islands     # rebuild after editing src/islands/**
 //

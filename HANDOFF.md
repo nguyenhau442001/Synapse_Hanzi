@@ -13,6 +13,7 @@
 - Module: `SyncRegistry` (allowlist key được sync) → `SyncSnapshot` (validate/merge/backup) → `SyncEngine` (pull/merge/push, hash từng key) → `FirestoreCloudAdapter` (Firestore Lite) ← `SyncController` (trigger, toast, xoá dữ liệu cloud); `AuthStore`/`AuthModal`/`FirebaseAuthProvider` cho đăng nhập.
 - Thêm key mới cần đồng bộ: khai báo trong `SyncRegistry.js` (chọn chiến lược merge) và thêm test; key không có trong registry không bao giờ rời thiết bị.
 - Test: `tools/test_sync_snapshot.mjs`, `test_sync_engine.mjs`, `test_sync_status.mjs`, `test_auth_store.mjs`.
+- **Deploy (từ v3.77):** GitHub Actions (`.github/workflows/deploy.yml`) build site, chạy test và đẩy lên Pages. `assets/js/preact/` không còn được commit (đã git-ignore). API key Firebase lấy từ `VITE_FIREBASE_API_KEY`: file `.env` trên máy (không commit, mẫu ở `.env.example`) và secret cùng tên trên GitHub. Build local không có `.env` thì đăng nhập tự ẩn.
 - Việc còn mở: xác minh branding OAuth trên Google Auth Platform (privacy link: `privacy.html`) để màn đăng nhập hiện tên "Hanzi Mind".
 
 ---
