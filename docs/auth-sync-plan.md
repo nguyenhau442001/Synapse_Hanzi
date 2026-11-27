@@ -222,7 +222,7 @@ Giới hạn Spark (trang Firebase Auth limits / Firestore pricing, 2026-11):
 4. **Authentication → Settings → Authorized domains**: thêm `nguyenhau442001.github.io`; giữ `localhost` và `<project>.firebaseapp.com` (cần cho popup Google).
 5. **Build → Firestore Database → Create database**: Standard edition, location `asia-southeast1` (Singapore, gần Việt Nam), chọn **production mode** (mặc định từ chối mọi truy cập).
 6. **Firestore → Rules**: dán rules ở §3 → **Publish**.
-7. **Google Cloud Console → APIs & Services → Credentials** (cùng project) → mở key *Browser key (auto created by Firebase)* → *Application restrictions: Websites* → thêm `https://nguyenhau442001.github.io/*`, `http://localhost:*/*`, `http://127.0.0.1:*/*` → Save.
+7. **Google Cloud Console → APIs & Services → Credentials** (cùng project) → mở key *Browser key (auto created by Firebase)* → *Application restrictions: Websites* → thêm `https://nguyenhau442001.github.io/*`, `https://<project-id>.firebaseapp.com/*` (bắt buộc — trang popup Google chạy ở domain này), `http://localhost:*/*`, `http://127.0.0.1:*/*` → Save.
 8. **Google Cloud Console → Google Auth Platform → Branding**: tên app `Hanzi Mind`, logo, link trang chủ `https://nguyenhau442001.github.io/Synapse_Hanzi/`, support email. Audience: *External*, **Publish app** (scope cơ bản nên không cần xét duyệt).
 9. **Không** gắn billing (giữ Spark).
 10. Gửi lại khối `firebaseConfig` (apiKey, authDomain, projectId, appId) — thông tin public, sẽ nằm trong `src/islands/FirebaseConfig.js`.
