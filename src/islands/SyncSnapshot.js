@@ -32,7 +32,7 @@ import { SRS_SCHEMA_VERSION } from './StorageEngine.js';
 /** @typedef {(card: unknown) => object|null} CardNormalizer */
 
 const isPlainObject = value => value !== null && typeof value === 'object' && !Array.isArray(value);
-const isSafeKey = key => !UNSAFE_OBJECT_KEYS.includes(key);
+export const isSafeKey = key => !UNSAFE_OBJECT_KEYS.includes(key);
 const defaultNormalizeCard = card => (isPlainObject(card) ? card : null);
 
 /**
@@ -58,11 +58,11 @@ export function buildBackup(storage, options = {}) {
 }
 
 /**
- * True when a raw value has the shape its rule expects.
+ * True when a raw value has the shape its rule expects (also used for cloud snapshots).
  * @param {string} key
- * @param {string} raw
+ * @param {unknown} raw
  */
-function isValidEntry(key, raw) {
+export function isValidEntry(key, raw) {
   const resolved = resolveSyncKey(key);
   if (!resolved || typeof raw !== 'string' || raw.length > BACKUP_MAX_VALUE_CHARS) return false;
   if (resolved.rule.format === 'text') return true;

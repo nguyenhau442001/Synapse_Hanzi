@@ -32,3 +32,30 @@ export const BACKUP_LABELS = Object.freeze({
   invalidFile: 'Bản sao tiến trình không hợp lệ.',
   fileTooLarge: 'Tệp sao lưu quá lớn.',
 });
+
+// ---- Cloud sync (SyncEngine / FirestoreCloudAdapter) ----
+
+/** Device-only sync bookkeeping (per signed-in uid). Not in SyncRegistry, never synced. */
+export const SYNC_STATE_KEY = 'hsk_sync_state_v1';
+
+/** Bump on breaking cloud document changes; newer documents are ignored by older apps. */
+export const SYNC_SCHEMA_VERSION = 1;
+
+/** Max characters of a document's `data` string; Firestore rules enforce the same bound. */
+export const SYNC_MAX_DOC_CHARS = 900000;
+
+/** Newest review-log entries kept in a pushed copy (the full log stays on each device). */
+export const SYNC_MAX_LOG_ENTRIES = 3000;
+
+/** Hex characters kept from each SHA-256 digest in the sync state. */
+export const SYNC_HASH_HEX_LENGTH = 32;
+
+/** Random bytes in a device id (rules cap deviceId at 64 characters). */
+export const SYNC_DEVICE_ID_BYTES = 12;
+
+/** Firestore path: users/{uid}/snapshots/{namespace}. */
+export const SYNC_USERS_COLLECTION = 'users';
+export const SYNC_SNAPSHOTS_COLLECTION = 'snapshots';
+
+/** sessionStorage guard so a sync that changed local data reloads the page at most once. */
+export const SYNC_RELOAD_GUARD_KEY = 'hsk_sync_reloaded_v1';

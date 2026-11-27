@@ -42,6 +42,7 @@ import { mountTopicGrid } from './TopicGrid';
 import { mountCurriculum } from './Curriculum';
 import { mountBackupSync } from './BackupSync';
 import { mountAuth } from './AuthModal';
+import { mountSync } from './SyncController';
 import { mountThemeManager } from './ThemeManager';
 import { mountSpeechAudio } from './SpeechAudio';
 import { mountLevels } from './Levels';
@@ -65,6 +66,7 @@ function mountDexieDatabase() {
 mountAppUtils();
 mountAppHeader(); // first DOM island: later modules look up header elements by id
 mountAuth(); // sign-in dialogs; restores a Google session only when this device has one
+mountSync(); // syncs progress whenever a signed-in session starts
 mountAppState();
 mountSrsEngine();
 mountStorageEngine();

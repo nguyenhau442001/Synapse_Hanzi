@@ -98,7 +98,7 @@ service cloud.firestore {
         && request.resource.data.keys().hasOnly(['schemaVersion', 'deviceId', 'updatedAt', 'data'])
         && request.resource.data.schemaVersion is int
         && request.resource.data.deviceId is string && request.resource.data.deviceId.size() <= 64
-        && request.resource.data.updatedAt is timestamp
+        && request.resource.data.updatedAt == request.time
         && request.resource.data.data is string && request.resource.data.data.size() <= 900000;
     }
   }
@@ -120,6 +120,16 @@ Firebase web config (apiKey…) là public theo thiết kế; bảo mật nằm 
 `updatedAt` mỗi namespace lấy từ `hsk_sync_meta_v1` — một wrapper ghi trung tâm đánh dấu namespace "dirty" khi key thuộc registry thay đổi (không sửa từng island; hook vào `Storage.prototype.setItem` là hack → thay vào đó gom ghi qua `StorageEngine`/helper `persist(key, value)` dần dần, kèm quét diff hash lúc sync để bắt key chưa chuyển).
 
 Lần đăng nhập đầu trên máy đã có dữ liệu: cloud trống → upload; cả hai có dữ liệu → **merge tự động** theo bảng trên (không bắt user chọn "giữ máy/giữ cloud", tránh mất tiến trình).
+
+## 4b. Thuật toán SyncEngine (pha 3)
+
+- State thiết bị `hsk_sync_state_v1` (theo uid): `deviceId`, `lastPulledAt`, `hashes` (SHA-256 từng key lúc sync gần nhất), `pushed` (hash bản đã đẩy).
+- Pull: chỉ document có `updatedAt > lastPulledAt` (giờ server, rules bắt `updatedAt == request.time` → lệch đồng hồ máy không làm sót).
+- Chọn dữ liệu nhận: bỏ key ngoài namespace/không hợp lệ/schema mới hơn; bỏ nếu hash trùng lần sync trước hoặc trùng bản mình đã đẩy; nếu cả hai phía cùng sửa: thẻ FSRS & log → gộp, `lww` → giữ bản máy này rồi đẩy lên.
+- Push: chỉ namespace có key đổi hash; bản đẩy bỏ thẻ chưa học, log giữ 3.000 mục mới nhất; namespace vượt 900 KB → bỏ qua và báo `skipped`.
+- State chỉ lưu sau khi push thành công → lỗi mạng thì lần sau thử lại.
+- Có dữ liệu mới áp vào máy → tải lại trang 1 lần/phiên để các island đọc lại.
+- Hạn chế đã biết: `hsk_study_activity_v1` (streak) là `lww` → hai máy học cùng ngày thì một máy thắng; pha 4 cân nhắc gộp theo ngày.
 
 ## 5. Luồng & trigger
 
@@ -152,7 +162,7 @@ Tất cả hằng số (`SYNC_DEBOUNCE_MS`, retry backoff, schema version) đặ
 | 0 | Người dùng làm theo checklist §11 (Firebase Spark, Google sign-in, Firestore, rules, khoá API key) | — |
 | 1 ✅ | `SyncRegistry` + `SyncSnapshot` + test merge; nâng cấp export/import thành **backup toàn app** (giá trị ngay, không cần server) | minor (v3.72.0) |
 | 2 ✅ | `AuthStore` + `AuthModal` + nút header (đăng nhập/đăng xuất, chưa sync) | minor (v3.73.0) |
-| 3 | `CloudAdapter` (Firestore) + `SyncEngine` pull/merge/push + test (adapter giả trong node) | — |
+| 3 ✅ | `FirestoreCloudAdapter` (Firestore Lite) + `SyncEngine` pull/merge/push + `SyncController` (sync khi bắt đầu phiên) + test 2 thiết bị | — |
 | 4 | Trigger tự động, trạng thái sync trên UI, offline, SW exclude | minor |
 | 5 | Xoá tài khoản & dữ liệu cloud, ghi chú quyền riêng tư trong README, cập nhật HANDOFF | patch |
 

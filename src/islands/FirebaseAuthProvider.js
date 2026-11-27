@@ -1,15 +1,15 @@
 // Firebase-backed AuthProvider. Imported lazily by AuthStore, so guests never download the SDK.
 
-import { initializeApp } from 'firebase/app';
 import { getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithPopup, signOut } from 'firebase/auth';
 import { AUTH_LANGUAGE, GOOGLE_PROMPT } from './AuthConstants.js';
+import { getFirebaseApp } from './FirebaseApp.js';
 
 /**
  * @param {import('./FirebaseConfig.js').FirebaseWebConfig} config
  * @returns {import('./AuthStore.js').AuthProvider}
  */
 export function createFirebaseAuthProvider(config) {
-  const app = initializeApp(config);
+  const app = getFirebaseApp(config);
   // getAuth persists the session in IndexedDB and wires the popup resolver.
   const auth = getAuth(app);
   auth.languageCode = AUTH_LANGUAGE;

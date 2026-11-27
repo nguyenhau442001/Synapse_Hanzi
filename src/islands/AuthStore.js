@@ -117,7 +117,9 @@ export function createAuthController(options) {
   function applyUser(providerUser) {
     const user = toAuthUser(providerUser);
     setSessionFlag(Boolean(user));
-    patch(user ? { status: 'signed_in', user, errorMessage: null } : { status: 'guest', user: null });
+    patch(user
+      ? { status: 'signed_in', user, errorMessage: null }
+      : { status: 'guest', user: null, syncStatus: 'idle', lastSyncedAt: null });
   }
 
   /** Load the SDK once; concurrent callers share the same promise, failures allow a retry. */
@@ -198,6 +200,11 @@ export function createAuthController(options) {
     init,
     openLogin,
     openLogout: () => { dialog.value = 'logout'; },
+    /** Sync progress reported by SyncController. @param {Pick<AuthState, 'syncStatus'> & Partial<Pick<AuthState, 'lastSyncedAt'>>} next */
+    setSyncStatus: (next) => patch({
+      syncStatus: next.syncStatus,
+      ...(next.lastSyncedAt !== undefined ? { lastSyncedAt: next.lastSyncedAt } : {}),
+    }),
     closeDialog: () => { dialog.value = null; },
     signIn,
     signOut,
