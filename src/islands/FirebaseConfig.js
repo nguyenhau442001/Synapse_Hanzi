@@ -1,7 +1,7 @@
 // Firebase web app configuration (Project settings → Your apps → Web).
 // These values are public by design; access is protected by Firestore security rules and by
 // restricting the browser API key to the app's domains (docs/auth-sync-plan.md §11).
-// While any field is empty, sign-in stays hidden and the app runs in guest mode only.
+// Clearing any field hides sign-in and returns the app to guest-only mode.
 
 /**
  * @typedef {Object} FirebaseWebConfig
@@ -13,10 +13,10 @@
 
 /** @type {Readonly<FirebaseWebConfig>} */
 export const FIREBASE_CONFIG = Object.freeze({
-  apiKey: '',
-  authDomain: '',
-  projectId: '',
-  appId: '',
+  apiKey: 'AIzaSyDQf3MHfy8xYB9S3WOtX5Ug1bFBdSKtUkc',
+  authDomain: 'hanzi-mind-dd34c.firebaseapp.com',
+  projectId: 'hanzi-mind-dd34c',
+  appId: '1:586898345523:web:56bef101cb9fa7f3261d46',
 });
 
 /**
