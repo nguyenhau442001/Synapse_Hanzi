@@ -2,6 +2,9 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
+<!-- CSP: allowlist of script/network origins; keep in sync with tools/test_csp.mjs and docs/auth-sync-plan.md §8. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' https://static.cloudflareinsights.com https://apis.google.com https://cdn.jsdelivr.net/npm/onnxruntime-web@1.31.1/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: blob: https://*.googleusercontent.com; media-src 'self' data: blob:; connect-src 'self' https://cloudflareinsights.com https://cdn.jsdelivr.net/npm/onnxruntime-web@1.31.1/ https://cdn.jsdelivr.net/npm/hanzi-writer-data@2.0.1/ https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://firestore.googleapis.com https://www.googleapis.com https://apis.google.com https://hanzi-mind-dd34c.firebaseapp.com; worker-src 'self' blob:; frame-src https://hanzi-mind-dd34c.firebaseapp.com https://apis.google.com; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>汉字思维 – Hanzi Mind | Learn Chinese Characters</title>
 <meta name="description" content="Learn Chinese characters through smart flashcards, HSK vocabulary, Pinyin, pronunciation, radicals, and spaced repetition.">
@@ -29,21 +32,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Nunito+Sans:wght@400;500;600&family=Noto+Serif+SC:wght@500;600;700&display=swap">
-<link rel="stylesheet" href="assets/flashcards.css?v=3.76.0">
+<link rel="stylesheet" href="assets/flashcards.css?v=3.77.0">
 <link rel="preload" href="assets/images/logo.svg" as="image" type="image/svg+xml">
-<link rel="modulepreload" href="assets/js/preact/islands.js?v=3.76.0">
-<script>(function(){try{var m=localStorage.getItem('hsk_theme_manual');var e=parseInt(localStorage.getItem('hsk_theme_manual_expiry')||'0',10);if(m&&(m==='dark'||m==='light')&&Date.now()<e){document.documentElement.dataset.theme=m;}else{var p=new URLSearchParams(window.location.search).get('theme');if(p==='dark'||p==='light'){document.documentElement.dataset.theme=p;}else{var h=new Date().getHours();var d=(h>=6&&h<18)?'light':'dark';document.documentElement.dataset.theme=d;}}}catch(e){}if(localStorage.getItem('hsk_show_hanviet')==='false'){document.documentElement.classList.add('hide-hanviet');}})();</script>
+<link rel="modulepreload" href="assets/js/preact/islands.js?v=3.77.0">
+<script src="assets/js/boot-theme.js?v=3.77.0"></script>
 </head>
 <body>
-<script>(function(){
-  var mq = window.matchMedia('(min-width: 1280px)');
-  function applyLayoutMode(e){
-    document.body.classList.toggle('is-desktop-dock', e.matches);
-    document.body.classList.toggle('is-mobile-drawer', !e.matches);
-  }
-  applyLayoutMode(mq);
-  mq.addEventListener('change', applyLayoutMode);
-})();</script>
+<script src="assets/js/boot-layout.js?v=3.77.0"></script>
 <div class="chinese-aesthetic-bg" aria-hidden="true">
   <canvas id="plumBlossomCanvas" class="plum-blossom-canvas" aria-hidden="true"></canvas>
 </div>
@@ -387,7 +382,7 @@
             </a>
           </span>
         </span>
-        <span class="cs-meta"><span class="footer-version" title="Phiên bản ứng dụng">v3.76.0</span><span class="cs-dot" aria-hidden="true">·</span><span>Tiến trình tự lưu trên thiết bị này</span></span>
+        <span class="cs-meta"><span class="footer-version" title="Phiên bản ứng dụng">v3.77.0</span><span class="cs-dot" aria-hidden="true">·</span><span>Tiến trình tự lưu trên thiết bị này</span></span>
       </div>
     </section>
   </div>
@@ -436,27 +431,27 @@
             </svg>
           </button>
           <div class="study-header-dropdown" id="studyHeaderDropdown" role="menu" hidden>
-            <button type="button" class="study-dropdown-item" id="menuTogglePinyin" onclick="if(window.togglePinyin)togglePinyin(); closeStudyHeaderMenu();" role="menuitem">
+            <button type="button" class="study-dropdown-item" id="menuTogglePinyin" role="menuitem">
               <span class="dropdown-item-icon" id="menuPinyinIcon">👁️</span>
               <span class="dropdown-item-label" id="menuPinyinText">Ẩn / Hiện pinyin</span>
             </button>
-            <button type="button" class="study-dropdown-item" id="menuToggleWeak" onclick="if(window.toggleWeakWord)toggleWeakWord(window.activeStudyWord && window.activeStudyWord.hanzi, window.currentLevel); closeStudyHeaderMenu();" role="menuitem">
+            <button type="button" class="study-dropdown-item" id="menuToggleWeak" role="menuitem">
               <span class="dropdown-item-icon" id="menuWeakIcon">⭐</span>
               <span class="dropdown-item-label" id="menuWeakText">Đánh dấu từ khó</span>
             </button>
-            <button type="button" class="study-dropdown-item" id="menuToggleToneColors" onclick="if(window.toggleToneColors)toggleToneColors(); closeStudyHeaderMenu();" role="menuitem">
+            <button type="button" class="study-dropdown-item" id="menuToggleToneColors" role="menuitem">
               <span class="dropdown-item-icon" aria-hidden="true">🎨</span>
               <span class="dropdown-item-label" id="menuToneColorsText">Tô màu thanh điệu</span>
             </button>
-            <button type="button" class="study-dropdown-item" id="menuToggleHanviet" onclick="if(window.toggleHanViet)toggleHanViet(); closeStudyHeaderMenu();" role="menuitem">
+            <button type="button" class="study-dropdown-item" id="menuToggleHanviet" role="menuitem">
               <span class="dropdown-item-icon">漢</span>
               <span class="dropdown-item-label" id="menuHanvietText">Âm Hán - Việt</span>
             </button>
-            <button type="button" class="study-dropdown-item" id="menuToggleIllustration" onclick="if(window.toggleIllustration)toggleIllustration(); closeStudyHeaderMenu();" role="menuitem">
+            <button type="button" class="study-dropdown-item" id="menuToggleIllustration" role="menuitem">
               <span class="dropdown-item-icon" id="menuIllustrationIcon">🖼️</span>
               <span class="dropdown-item-label" id="menuIllustrationText">Hình minh họa</span>
             </button>
-            <button type="button" class="study-dropdown-item" id="menuShuffle" onclick="if(window.shuffleDeck)shuffleDeck(); closeStudyHeaderMenu();" role="menuitem">
+            <button type="button" class="study-dropdown-item" id="menuShuffle" role="menuitem">
               <span class="dropdown-item-icon">🔀</span>
               <span class="dropdown-item-label">Xáo trộn thứ tự từ</span>
             </button>
@@ -473,11 +468,11 @@
               <span class="dropdown-item-icon">❓</span>
               <span class="dropdown-item-label">Hướng dẫn &amp; phím tắt</span>
             </button>
-            <button type="button" class="study-dropdown-item" id="headerMenuInstallPwa" role="menuitem" onclick="if(window.triggerInstallFlow)window.triggerInstallFlow()">
+            <button type="button" class="study-dropdown-item" id="headerMenuInstallPwa" role="menuitem">
               <span class="dropdown-item-icon">📥</span>
               <span class="dropdown-item-label">Cài đặt ứng dụng (PWA)</span>
             </button>
-            <button type="button" class="study-dropdown-item" id="headerMenuShare" role="menuitem" onclick="if(window.shareApp)window.shareApp()">
+            <button type="button" class="study-dropdown-item" id="headerMenuShare" role="menuitem">
               <span class="dropdown-item-icon">💖</span>
               <span class="dropdown-item-label">Chia sẻ với bạn bè</span>
             </button>
@@ -584,9 +579,9 @@
   </div>
 </div>
 
-<script defer src="assets/js/hanviet-dict.js?v=3.76.0"></script>
+<script defer src="assets/js/hanviet-dict.js?v=3.77.0"></script>
 <!-- Preact islands (built from src/islands by `npm run build:islands`) -->
-<script type="module" src="assets/js/preact/islands.js?v=3.76.0"></script>
+<script type="module" src="assets/js/preact/islands.js?v=3.77.0"></script>
 <!-- Mobile Bottom Navigation Bar -->
 <nav class="mobile-bottom-nav" id="mobileBottomNav" aria-label="Điều hướng di động">
   <button type="button" class="mobile-nav-item active" id="mobNavVocab" aria-label="Trang chủ Từ vựng">
