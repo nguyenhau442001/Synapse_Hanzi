@@ -3,6 +3,7 @@
 // live feedback, results screen, mistake review modal with audio, and mobile auxiliary bottom sheet.
 // Preact port of the former assets/js/fast-review.js with identical markup and behavior.
 import { render } from 'preact';
+import { playQuizSuccessSound, playQuizFailSound } from './AppUtils.js';
 
 /* global LEVELS, APP_VERSION, SRS, fetchLevelWords, loadSrsForLevel, readSavedLevelProgress,
    readSavedLevelProgressLegacy, progressFromCards, countNewReviewsToday, readDailyStudyGoal,
@@ -581,10 +582,12 @@ export function gradeReviewAnswer(isCorrect, details) {
   recordDailyStudy(word.id, word._level);
 
   if (isCorrect) {
+    playQuizSuccessSound();
     reviewScore += 1;
     reviewStreak += 1;
     if (reviewStreak > reviewBestStreak) reviewBestStreak = reviewStreak;
   } else {
+    playQuizFailSound();
     reviewLives -= 1;
     reviewStreak = 0;
 

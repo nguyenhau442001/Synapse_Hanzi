@@ -59,17 +59,17 @@ body.review-focus-mode #screenReviewPicker {
 }
 
 body.review-focus-mode #reviewPickerBody,
-body.review-focus-mode #reviewSession,
-body.review-focus-mode #reviewResult {
+body.review-focus-mode #reviewSession:not([hidden]),
+body.review-focus-mode #reviewResult:not([hidden]) {
   width: 100% !important;
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
 }
 .review-result-icon {
-  font-size: 48px;
+  font-size: 36px;
   line-height: 1;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
 }
 .review-again-btn {
   background: var(--accent-gradient, var(--accent));
@@ -125,7 +125,7 @@ body.review-focus-mode #reviewResult {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 8px 4px 14px;
+  padding: 4px 4px 8px;
   gap: 12px;
 }
 
@@ -263,7 +263,7 @@ body.dark-mode .review-streak-pill {
   align-items: center;
   gap: 12px;
   width: 100%;
-  margin-bottom: 24px;
+  margin-bottom: 8px;
 }
 .review-timer-track {
   flex: 1;
@@ -306,9 +306,9 @@ body.dark-mode .review-streak-pill {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 12px 0 32px;
-  padding: 12px 8px;
-  min-height: 130px;
+  margin: 0 0 12px;
+  padding: 4px 8px;
+  min-height: 96px;
   width: 100%;
 }
 .review-hanzi-wrap {
@@ -546,8 +546,8 @@ body.dark-mode .review-streak-pill {
    ========================================================================== */
 
 .review-feedback {
-  min-height: 48px;
-  margin-top: 20px;
+  min-height: 46px;
+  margin-top: 12px;
   width: 100%;
   max-width: 640px;
   margin-left: auto;
@@ -614,9 +614,9 @@ body.dark-mode .review-streak-pill {
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 36px 24px;
+  padding: 20px 20px;
   text-align: center;
-  margin: 16px auto;
+  margin: 8px auto;
   max-width: 620px;
   width: 100%;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
@@ -630,14 +630,14 @@ body.dark-mode .review-streak-pill {
 .review-result-sub {
   font-size: 14px;
   color: var(--text-secondary);
-  margin: 0 0 24px;
+  margin: 0 0 12px;
 }
 .review-result-stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 12px;
-  margin: 20px 0 28px;
-  padding: 16px;
+  margin: 12px 0 16px;
+  padding: 12px;
   background: var(--surface-subtle);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
@@ -669,7 +669,7 @@ body.dark-mode .review-streak-pill {
   gap: 12px;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 12px;
+  margin-top: 0;
 }
 
 /* ==========================================================================
