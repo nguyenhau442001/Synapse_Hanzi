@@ -354,3 +354,18 @@
   /* Stay above the mobile bottom navigation. */
   .sync-toast { bottom: calc(88px + env(safe-area-inset-bottom)); }
 }
+
+/* Account deletion (phase 5) */
+.ah-menu-item-danger,
+.ah-menu-item-danger .ah-icon { color: var(--accent-text); }
+.auth-ack {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 14px;
+  line-height: 1.45;
+  cursor: pointer;
+}
+.auth-ack input { margin-top: 3px; accent-color: var(--accent); }
+.auth-danger-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.auth-privacy a { color: var(--accent-text); font-weight: 600; }

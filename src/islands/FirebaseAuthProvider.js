@@ -1,6 +1,14 @@
 // Firebase-backed AuthProvider. Imported lazily by AuthStore, so guests never download the SDK.
 
-import { getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithPopup, signOut } from 'firebase/auth';
+import {
+  getAuth,
+  GoogleAuthProvider,
+  onAuthStateChanged,
+  signInWithPopup,
+  signOut,
+  reauthenticateWithPopup,
+  deleteUser,
+} from 'firebase/auth';
 import { AUTH_LANGUAGE, GOOGLE_PROMPT } from './AuthConstants.js';
 import { getFirebaseApp } from './FirebaseApp.js';
 
@@ -20,5 +28,13 @@ export function createFirebaseAuthProvider(config) {
     onChange: (callback) => onAuthStateChanged(auth, callback),
     signIn: () => signInWithPopup(auth, google).then((result) => result.user),
     signOut: () => signOut(auth),
+    async deleteAccount(beforeDelete) {
+      const user = auth.currentUser;
+      if (!user) throw Object.assign(new Error('No signed-in user'), { code: 'auth/no-current-user' });
+      // Firebase requires a recent sign-in to delete an account; this also confirms identity.
+      await reauthenticateWithPopup(user, google);
+      await beforeDelete(user.uid);
+      await deleteUser(user);
+    },
   };
 }

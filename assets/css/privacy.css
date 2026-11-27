@@ -1,0 +1,57 @@
+/* Standalone privacy policy page (privacy.html), using the app's cream/red palette. */
+:root {
+  color-scheme: light dark;
+  --privacy-bg: #F5F0E7;
+  --privacy-card: #FFFFFF;
+  --privacy-text: #292722;
+  --privacy-muted: #5A564F;
+  --privacy-border: #E8E1D7;
+  --privacy-accent: #A8322D;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --privacy-bg: #1C1A17;
+    --privacy-card: #24211D;
+    --privacy-text: #EDE7DC;
+    --privacy-muted: #B5AC9E;
+    --privacy-border: #3A352E;
+    --privacy-accent: #E07A63;
+  }
+}
+body {
+  margin: 0;
+  background: var(--privacy-bg);
+  color: var(--privacy-text);
+  font-family: "Be Vietnam Pro", Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.65;
+}
+.privacy {
+  max-width: 760px;
+  margin: 32px auto;
+  padding: 32px clamp(20px, 5vw, 48px);
+  background: var(--privacy-card);
+  border: 1px solid var(--privacy-border);
+  border-radius: 16px;
+}
+.privacy h1 {
+  margin: 16px 0 4px;
+  font-size: clamp(26px, 4vw, 34px);
+  line-height: 1.25;
+}
+.privacy h2 {
+  margin: 28px 0 8px;
+  font-size: 19px;
+}
+.privacy-meta { margin: 0; color: var(--privacy-muted); font-size: 14px; }
+.privacy a { color: var(--privacy-accent); }
+.privacy-back { font-weight: 600; text-decoration: none; }
+.privacy ul { padding-left: 20px; }
+.privacy li + li { margin-top: 6px; }
+.privacy-en {
+  margin-top: 32px;
+  padding-top: 8px;
+  border-top: 1px solid var(--privacy-border);
+}
+@media (max-width: 600px) {
+  .privacy { margin: 0; border: 0; border-radius: 0; }
+}

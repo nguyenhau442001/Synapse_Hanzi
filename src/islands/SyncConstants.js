@@ -53,6 +53,9 @@ export const SYNC_HASH_HEX_LENGTH = 32;
 /** Random bytes in a device id (rules cap deviceId at 64 characters). */
 export const SYNC_DEVICE_ID_BYTES = 12;
 
+/** Firestore allows at most this many writes or deletes per batch. */
+export const FIRESTORE_BATCH_LIMIT = 500;
+
 /** Firestore path: users/{uid}/snapshots/{namespace}. */
 export const SYNC_USERS_COLLECTION = 'users';
 export const SYNC_SNAPSHOTS_COLLECTION = 'snapshots';

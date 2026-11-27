@@ -29,6 +29,8 @@ export const dismissSyncNotice = () => { syncNotice.value = null; };
 let running = null;
 /** Successful syncs since this page loaded; only the first may reload automatically. */
 let syncsThisPage = 0;
+/** Set while the account is being deleted, so no sync can re-upload data mid-deletion. */
+let paused = false;
 
 const isOffline = () => typeof navigator !== 'undefined' && navigator.onLine === false;
 
@@ -80,6 +82,7 @@ function announce(result, firstOfPage, freshSignIn) {
  */
 export function runSync() {
   if (running) return running;
+  if (paused) return Promise.resolve(null);
   const { status, user } = authState.value;
   if (status !== 'signed_in' || !user) return Promise.resolve(null);
   if (isOffline()) {
@@ -116,6 +119,23 @@ export function runSync() {
     }
   })();
   return running;
+}
+
+/**
+ * Account deletion step: wait for any in-flight sync, block new ones, then remove every cloud
+ * snapshot. Sync stays paused until the session ends (or resumeSync after a failed deletion).
+ * @param {string} uid
+ */
+export async function deleteCloudProgress(uid) {
+  paused = true;
+  if (running) await running;
+  const { createFirestoreCloudAdapter } = await import('./FirestoreCloudAdapter.js');
+  await createFirestoreCloudAdapter(FIREBASE_CONFIG, uid).deleteAll();
+}
+
+/** Re-enable syncing after an account deletion was cancelled or failed. */
+export function resumeSync() {
+  paused = false;
 }
 
 function isStale() {
@@ -166,6 +186,7 @@ export function mountSync() {
       queueMicrotask(runSync);
     } else if (status === 'guest' && activeUid) {
       activeUid = null;
+      paused = false;
       if (stopTriggers) stopTriggers();
       stopTriggers = null;
       syncNotice.value = null;

@@ -21,6 +21,7 @@ import {
   LoaderCircle,
   RefreshCw,
   LogOut,
+  Trash2,
 } from 'lucide-preact';
 import { APP_VERSION } from './AppUtils';
 import { headerStats, headerUi, avatarInitialOf } from './HeaderStore.js';
@@ -547,6 +548,18 @@ function AccountMenu() {
           >
             <HeaderIcon icon={LogOut} />
             <span class="ah-menu-label">{AL.MENU_SIGN_OUT}</span>
+          </button>
+        )}
+        {signedIn && (
+          <button
+            type="button"
+            id={IDS.MENU_DELETE_ACCOUNT}
+            class="ah-menu-item ah-menu-item-danger"
+            role="menuitem"
+            onClick={runAndClose(authController.openDeleteAccount)}
+          >
+            <HeaderIcon icon={Trash2} />
+            <span class="ah-menu-label">{AL.MENU_DELETE_ACCOUNT}</span>
           </button>
         )}
         <p class="ah-menu-version">

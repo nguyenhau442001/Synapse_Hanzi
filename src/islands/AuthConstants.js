@@ -21,10 +21,15 @@ export const AUTH_CLOSE_ICON_SIZE_PX = 18;
 export const GOOGLE_LOGO_SRC = 'assets/images/google-g.svg';
 export const GOOGLE_LOGO_SIZE_PX = 20;
 
+/** Public privacy policy page (also the OAuth consent screen's privacy link). */
+export const PRIVACY_POLICY_URL = 'privacy.html';
+
 export const AUTH_IDS = Object.freeze({
   ROOT: 'authDialogRoot',
   LOGIN_TITLE: 'authLoginTitle',
   LOGOUT_TITLE: 'authLogoutTitle',
+  DELETE_TITLE: 'authDeleteTitle',
+  DELETE_ACK: 'authDeleteAck',
   LOGOUT_KEEP: 'authLogoutKeep',
   LOGOUT_CLEAR: 'authLogoutClear',
 });
@@ -45,6 +50,7 @@ export const AUTH_LABELS = Object.freeze({
   GOOGLE_BUTTON_BUSY: 'Đang mở cửa sổ Google…',
   LATER_BUTTON: 'Để sau, tiếp tục học không cần tài khoản',
   PRIVACY_NOTE: 'Chỉ dùng tên, email và ảnh đại diện Google. Không đọc Gmail, Drive hay danh bạ.',
+  PRIVACY_LINK: 'Chính sách quyền riêng tư',
   CLOSE_ARIA: 'Đóng',
   MENU_SIGN_OUT: 'Đăng xuất',
   SIGNED_IN_FALLBACK_NAME: 'Tài khoản Google',
@@ -58,6 +64,16 @@ export const AUTH_LABELS = Object.freeze({
   LOGOUT_CLEAR_HINT: 'Dùng khi đây là máy dùng chung.',
   LOGOUT_CANCEL: 'Huỷ',
   LOGOUT_CONFIRM: 'Đăng xuất',
+  MENU_DELETE_ACCOUNT: 'Xoá tài khoản',
+  DELETE_TITLE: 'Xoá tài khoản và dữ liệu đám mây?',
+  DELETE_BODY: 'Toàn bộ tiến trình đã lưu trên đám mây sẽ bị xoá vĩnh viễn và không thể khôi phục. Tiến trình trên máy này vẫn được giữ lại để bạn học tiếp như khách.',
+  DELETE_REAUTH_NOTE: 'Để xác nhận, Google sẽ yêu cầu bạn chọn lại tài khoản.',
+  DELETE_ACK: 'Tôi hiểu dữ liệu đám mây không thể khôi phục.',
+  DELETE_CANCEL: 'Huỷ',
+  DELETE_CONFIRM: 'Xoá vĩnh viễn',
+  DELETE_BUSY: 'Đang xoá…',
+  ERROR_DELETE_FAILED: 'Chưa xoá được tài khoản. Hãy thử lại sau ít phút.',
+  ERROR_USER_MISMATCH: 'Hãy chọn đúng tài khoản Google đang đăng nhập.',
   ERROR_POPUP_BLOCKED: 'Trình duyệt đã chặn cửa sổ đăng nhập. Hãy bấm lại nút Google.',
   ERROR_NETWORK: 'Không có mạng. Hãy kết nối Internet rồi thử lại.',
   ERROR_DOMAIN: 'Trang này chưa được phép đăng nhập. Hãy mở ứng dụng từ địa chỉ chính thức.',
@@ -76,4 +92,5 @@ export const AUTH_ERROR_MESSAGES = Object.freeze({
   'auth/popup-blocked': AUTH_LABELS.ERROR_POPUP_BLOCKED,
   'auth/network-request-failed': AUTH_LABELS.ERROR_NETWORK,
   'auth/unauthorized-domain': AUTH_LABELS.ERROR_DOMAIN,
+  'auth/user-mismatch': AUTH_LABELS.ERROR_USER_MISMATCH,
 });

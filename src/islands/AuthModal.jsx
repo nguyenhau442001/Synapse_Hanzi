@@ -14,6 +14,7 @@ import {
   AUTH_CLOSE_ICON_SIZE_PX,
   GOOGLE_LOGO_SRC,
   GOOGLE_LOGO_SIZE_PX,
+  PRIVACY_POLICY_URL,
 } from './AuthConstants.js';
 
 function AuthDialogShell({ labelledBy, children }) {
@@ -132,7 +133,16 @@ function LoginDialog() {
           size={AUTH_ICON_SIZE_PX}
           aria-hidden="true"
         />
-        <span>{L.PRIVACY_NOTE}</span>
+        <span>
+          {`${L.PRIVACY_NOTE} `}
+          <a
+            href={PRIVACY_POLICY_URL}
+            target="_blank"
+            rel="noopener"
+          >
+            {L.PRIVACY_LINK}
+          </a>
+        </span>
       </p>
     </AuthDialogShell>
   );
@@ -219,6 +229,61 @@ function LogoutDialog() {
   );
 }
 
+function DeleteAccountDialog() {
+  const [acknowledged, setAcknowledged] = useState(false);
+  const [busy, setBusy] = useState(false);
+
+  // Runs straight from the click so the re-authentication popup is not blocked.
+  const confirm = async () => {
+    setBusy(true);
+    await authController.deleteAccount();
+    setBusy(false);
+  };
+
+  return (
+    <AuthDialogShell labelledBy={IDS.DELETE_TITLE}>
+      <h2
+        id={IDS.DELETE_TITLE}
+        class="auth-title auth-title-sm"
+      >
+        {L.DELETE_TITLE}
+      </h2>
+      <p class="auth-text">{L.DELETE_BODY}</p>
+      <p class="auth-text">{L.DELETE_REAUTH_NOTE}</p>
+      <label
+        class="auth-ack"
+        for={IDS.DELETE_ACK}
+      >
+        <input
+          type="checkbox"
+          id={IDS.DELETE_ACK}
+          checked={acknowledged}
+          onChange={(event) => setAcknowledged(event.currentTarget.checked)}
+        />
+        <span>{L.DELETE_ACK}</span>
+      </label>
+      <AuthError />
+      <div class="auth-actions">
+        <button
+          type="button"
+          class="auth-secondary-btn"
+          onClick={authController.closeDialog}
+        >
+          {L.DELETE_CANCEL}
+        </button>
+        <button
+          type="button"
+          class="auth-primary-btn auth-danger-btn"
+          disabled={!acknowledged || busy}
+          onClick={confirm}
+        >
+          {busy ? L.DELETE_BUSY : L.DELETE_CONFIRM}
+        </button>
+      </div>
+    </AuthDialogShell>
+  );
+}
+
 /** Bottom toast for sync notices; the "merged" notice hides itself, "remote" waits for the user. */
 function SyncToast() {
   const kind = syncNotice.value;
@@ -279,6 +344,7 @@ function SyncToast() {
 function ActiveDialog() {
   if (authDialog.value === 'login') return <LoginDialog />;
   if (authDialog.value === 'logout') return <LogoutDialog />;
+  if (authDialog.value === 'delete') return <DeleteAccountDialog />;
   return null;
 }
 

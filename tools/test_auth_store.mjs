@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { createAuthController, toAuthUser, authErrorMessage, INITIAL_AUTH_STATE } from '../src/islands/AuthStore.js';
 import { AUTH_SESSION_FLAG_KEY, AUTH_LABELS } from '../src/islands/AuthConstants.js';
+import { SYNC_STATE_KEY } from '../src/islands/SyncConstants.js';
 import { isFirebaseConfigured } from '../src/islands/FirebaseConfig.js';
 
 class MemoryStorage {
@@ -21,13 +22,19 @@ const googleUser = {
 };
 
 /** Fake provider: records calls and lets the test drive onChange. */
-function fakeProvider({ restored = null, signInResult = googleUser, signInError = null } = {}) {
-  const calls = { loads: 0, signIn: 0, signOut: 0 };
+function fakeProvider({ restored = null, signInResult = googleUser, signInError = null, deleteError = null } = {}) {
+  const calls = { loads: 0, signIn: 0, signOut: 0, deleted: 0 };
   let listener = null;
   const provider = {
     onChange(cb) { listener = cb; Promise.resolve().then(() => cb(restored)); return () => {}; },
     async signIn() { calls.signIn += 1; if (signInError) throw signInError; return signInResult; },
     async signOut() { calls.signOut += 1; if (listener) listener(null); },
+    async deleteAccount(beforeDelete) {
+      if (deleteError) throw deleteError;
+      await beforeDelete('uid-1');
+      calls.deleted += 1;
+      if (listener) listener(null);
+    },
   };
   return { calls, load: async () => { calls.loads += 1; return provider; } };
 }
@@ -168,6 +175,64 @@ assert.equal(authErrorMessage(new Error('raw internal text')), AUTH_LABELS.ERROR
   assert.equal(cleared, 1);
   assert.equal(reloaded, 1);
   assert.equal(auth2.dialog.value, null);
+}
+
+// Account deletion: cloud data removed before the account, local progress kept, sync state reset.
+{
+  const fake = fakeProvider({ restored: googleUser });
+  const storage = new MemoryStorage({ hsk_hsk1_srs_v3: '{}', [SYNC_STATE_KEY]: '{"uid":"uid-1"}', [AUTH_SESSION_FLAG_KEY]: '1' });
+  const cloudDeletes = [];
+  let failures = 0;
+  const auth = createAuthController({
+    loadProvider: fake.load,
+    storage,
+    isConfigured: true,
+    deleteCloudData: async (uid) => { cloudDeletes.push(uid); },
+    onDeleteFailed: async () => { failures += 1; },
+  });
+  await auth.init();
+  await flush();
+  auth.openDeleteAccount();
+  assert.equal(auth.dialog.value, 'delete');
+  assert.equal(await auth.deleteAccount(), true);
+  assert.deepEqual(cloudDeletes, ['uid-1']);
+  assert.equal(fake.calls.deleted, 1);
+  assert.equal(auth.state.value.status, 'guest');
+  assert.equal(auth.dialog.value, null);
+  assert.equal(storage.getItem('hsk_hsk1_srs_v3'), '{}');
+  assert.equal(storage.getItem(SYNC_STATE_KEY), null);
+  assert.equal(storage.getItem(AUTH_SESSION_FLAG_KEY), null);
+  assert.equal(failures, 0);
+}
+
+// Cancelled re-authentication: nothing deleted, still signed in, no error shown, sync resumed.
+// Other failures show the deletion-specific message.
+{
+  for (const [error, expected] of [
+    [{ code: 'auth/popup-closed-by-user' }, null],
+    [{ code: 'auth/user-mismatch' }, AUTH_LABELS.ERROR_USER_MISMATCH],
+    [new Error('permission-denied'), AUTH_LABELS.ERROR_DELETE_FAILED],
+  ]) {
+    const fake = fakeProvider({ restored: googleUser, deleteError: error });
+    let failures = 0;
+    let cloudDeleted = false;
+    const auth = createAuthController({
+      loadProvider: fake.load,
+      storage: new MemoryStorage({ [AUTH_SESSION_FLAG_KEY]: '1' }),
+      isConfigured: true,
+      deleteCloudData: async () => { cloudDeleted = true; },
+      onDeleteFailed: async () => { failures += 1; },
+    });
+    await auth.init();
+    await flush();
+    auth.openDeleteAccount();
+    assert.equal(await auth.deleteAccount(), false);
+    assert.equal(cloudDeleted, false);
+    assert.equal(failures, 1);
+    assert.equal(auth.state.value.status, 'signed_in');
+    assert.equal(auth.dialog.value, 'delete');
+    assert.equal(auth.state.value.errorMessage, expected);
+  }
 }
 
 console.log('auth store tests passed');

@@ -14,7 +14,7 @@ import {
   Timestamp,
 } from 'firebase/firestore/lite';
 import { getFirebaseApp } from './FirebaseApp.js';
-import { SYNC_USERS_COLLECTION, SYNC_SNAPSHOTS_COLLECTION } from './SyncConstants.js';
+import { SYNC_USERS_COLLECTION, SYNC_SNAPSHOTS_COLLECTION, FIRESTORE_BATCH_LIMIT } from './SyncConstants.js';
 
 /**
  * Convert a Firestore document to a CloudSnapshot; malformed documents become null.
@@ -63,6 +63,16 @@ export function createFirestoreCloudAdapter(config, uid) {
         });
       }
       await batch.commit();
+    },
+
+    /** Permanently delete every snapshot of this user (account deletion). */
+    async deleteAll() {
+      const result = await getDocs(snapshots);
+      for (let start = 0; start < result.docs.length; start += FIRESTORE_BATCH_LIMIT) {
+        const batch = writeBatch(firestore);
+        for (const item of result.docs.slice(start, start + FIRESTORE_BATCH_LIMIT)) batch.delete(item.ref);
+        await batch.commit();
+      }
     },
   };
 }

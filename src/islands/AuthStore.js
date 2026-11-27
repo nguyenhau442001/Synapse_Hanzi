@@ -5,6 +5,7 @@
 import { signal } from '@preact/signals';
 import { FIREBASE_CONFIG, isFirebaseConfigured } from './FirebaseConfig.js';
 import { listSyncKeys } from './SyncRegistry.js';
+import { SYNC_STATE_KEY } from './SyncConstants.js';
 import {
   AUTH_SESSION_FLAG_KEY,
   AUTH_SESSION_FLAG_ON,
@@ -20,6 +21,8 @@ import {
  *   restored session (or null), then on every sign-in/out. Returns an unsubscribe function.
  * @property {() => Promise<object>} signIn   Opens the Google popup; resolves with the user.
  * @property {() => Promise<void>} signOut
+ * @property {(beforeDelete: (uid: string) => Promise<void>) => Promise<void>} deleteAccount
+ *   Re-authenticates (popup), runs `beforeDelete` (cloud data removal), then deletes the user.
  */
 
 /**
@@ -40,7 +43,7 @@ import {
  * @property {string|null} errorMessage  A label from AUTH_LABELS, never raw error text.
  */
 
-/** @typedef {'login'|'logout'|null} AuthDialog */
+/** @typedef {'login'|'logout'|'delete'|null} AuthDialog */
 
 /** @type {Readonly<AuthState>} */
 export const INITIAL_AUTH_STATE = Object.freeze({
@@ -84,6 +87,8 @@ export function authErrorMessage(error) {
  * @property {Pick<Storage, 'getItem'|'setItem'|'removeItem'|'length'|'key'>} storage
  * @property {boolean} isConfigured
  * @property {() => Promise<void>} [clearDeviceData]  Extra stores to wipe on "clear this device".
+ * @property {(uid: string) => Promise<void>} [deleteCloudData]  Removes the user's cloud progress.
+ * @property {() => Promise<void>} [onDeleteFailed]  Undo side effects of a failed deletion.
  * @property {() => void} [reload]
  */
 
@@ -92,6 +97,8 @@ export function createAuthController(options) {
   const { loadProvider, storage, isConfigured } = options;
   const clearDeviceData = options.clearDeviceData || (async () => {});
   const reload = options.reload || (() => {});
+  const deleteCloudData = options.deleteCloudData || (async () => {});
+  const onDeleteFailed = options.onDeleteFailed || (async () => {});
 
   const state = signal(INITIAL_AUTH_STATE);
   /** @type {import('@preact/signals').Signal<AuthDialog>} */
@@ -197,9 +204,35 @@ export function createAuthController(options) {
     return true;
   }
 
+  /**
+   * Delete the cloud progress and the account; local progress stays for guest use.
+   * The provider opens the re-authentication popup first, so this must run from a click.
+   */
+  async function deleteAccount() {
+    try {
+      // The SDK is always loaded while signed in, so the popup opens inside the click gesture.
+      const active = provider || await ensureProvider();
+      await active.deleteAccount(deleteCloudData);
+    } catch (error) {
+      await onDeleteFailed();
+      const message = authErrorMessage(error);
+      patch({ errorMessage: message === AUTH_LABELS.ERROR_GENERIC ? AUTH_LABELS.ERROR_DELETE_FAILED : message });
+      return false;
+    }
+    try { storage.removeItem(SYNC_STATE_KEY); } catch { /* nothing left to reset */ }
+    applyUser(null);
+    dialog.value = null;
+    return true;
+  }
+
   return {
     state,
     dialog,
+    deleteAccount,
+    openDeleteAccount: () => {
+      patch({ errorMessage: null });
+      dialog.value = 'delete';
+    },
     isConfigured,
     init,
     openLogin,
@@ -237,6 +270,9 @@ export const authController = createAuthController({
   loadProvider: () => import('./FirebaseAuthProvider.js').then((mod) => mod.createFirebaseAuthProvider(FIREBASE_CONFIG)),
   storage: typeof localStorage !== 'undefined' ? localStorage : memoryStorage(),
   isConfigured: isFirebaseConfigured(),
+  // SyncController owns cloud access (imported lazily to avoid a circular import).
+  deleteCloudData: async (uid) => (await import('./SyncController.js')).deleteCloudProgress(uid),
+  onDeleteFailed: async () => (await import('./SyncController.js')).resumeSync(),
   clearDeviceData: async () => {
     const { db } = await import('./db.js');
     if (db) await Promise.all([db.cards.clear(), db.reviewLogs.clear()]);
