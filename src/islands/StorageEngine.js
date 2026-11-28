@@ -3,6 +3,7 @@
 
 import { SRS } from './SrsEngine.js';
 import { SYNC_LOCAL_CHANGE_EVENT } from './SyncConstants.js';
+import { compactSrsCards, compactStoredSrsDecks } from './SrsCompaction.js';
 import { reportLearningActivity, LEAGUE_ACTIVITY } from './LeagueActivity.js';
 
 export const SRS_SCHEMA_VERSION = 3;
@@ -68,7 +69,8 @@ export function saveSrsRecord(level, cards, migratedFromV2, direction) {
     localStorage.setItem(srsCardsKey(level, direction), JSON.stringify({
       schemaVersion: SRS_SCHEMA_VERSION,
       migratedFromV2: Boolean(migratedFromV2),
-      cards,
+      // Never-studied cards are recreated in memory on load; storing them overflows the quota.
+      cards: compactSrsCards(cards),
     }));
   } catch {
     return;
@@ -529,7 +531,16 @@ export function countDueCardsAcrossLevels(now) {
   return summarizeDueCardsAcrossLevels(now).totalDue;
 }
 
+let decksCompacted = false;
+
 export function mountStorageEngine() {
+  if (!decksCompacted && typeof localStorage !== 'undefined') {
+    decksCompacted = true;
+    try {
+      const { decks, freedChars } = compactStoredSrsDecks(localStorage);
+      if (decks) console.info('[Storage] compacted SRS decks:', decks, 'freed chars:', freedChars);
+    } catch { /* storage unavailable */ }
+  }
   if (typeof window !== 'undefined') {
     Object.assign(window, {
       SRS_SCHEMA_VERSION,

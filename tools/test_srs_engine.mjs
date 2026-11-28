@@ -185,7 +185,8 @@ test('reviewSrsCard with a direction writes only that deck and its log', () => {
   const cards = storage.readSrsRecord('hsk5', 'vi2zh').cards;
   storage.reviewSrsCard('hsk5', 9, 'easy', cards, 'vi2zh');
   assert.equal(storage.readSrsRecord('hsk5', 'vi2zh').cards[9].state, SRS.State.Review);
-  assert.equal(storage.readSrsRecord('hsk5').cards[9].state, SRS.State.New, 'default deck untouched');
+  // Never-studied cards are not persisted (SrsCompaction.js), so an untouched deck has no card 9.
+  assert.equal(storage.readSrsRecord('hsk5').cards[9], undefined, 'default deck untouched');
   assert.equal(storage.readSrsReviewLog('hsk5', 'vi2zh').length, 1);
   assert.equal(storage.readSrsReviewLog('hsk5').length, 0);
 });

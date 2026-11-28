@@ -11,6 +11,7 @@ import {
 } from './SyncConstants.js';
 import { resolveSyncKey, listSyncKeys } from './SyncRegistry.js';
 import { SRS_SCHEMA_VERSION } from './StorageEngine.js';
+import { isStudiedCard } from './SrsCompaction.js';
 
 /**
  * @typedef {Object} BackupFile
@@ -151,7 +152,8 @@ function mergeSrsRecords(localRaw, incomingRaw, normalizeCard) {
     if (!isSafeKey(id)) continue;
     const incomingCard = id in incoming.cards ? normalizeCard(incoming.cards[id]) : null;
     const chosen = pickCard(localCards[id] || null, incomingCard);
-    if (chosen) cards[id] = chosen;
+    // Placeholders for never-studied words are not stored (see SrsCompaction.js).
+    if (isStudiedCard(chosen)) cards[id] = chosen;
   }
   return JSON.stringify({
     schemaVersion: SRS_SCHEMA_VERSION,

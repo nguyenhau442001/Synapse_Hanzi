@@ -4,6 +4,7 @@
 
 import { resolveSyncKey, listSyncKeys } from './SyncRegistry.js';
 import { applyBackup, isSafeKey, isValidEntry } from './SyncSnapshot.js';
+import { compactSrsCards } from './SrsCompaction.js';
 import {
   SYNC_STATE_KEY,
   SYNC_SCHEMA_VERSION,
@@ -122,11 +123,7 @@ export function cloudCopy(key, raw) {
   const { rule } = resolveSyncKey(key);
   if (rule.merge === 'srs_cards') {
     const record = JSON.parse(raw);
-    const cards = {};
-    for (const [id, card] of Object.entries(record.cards || {})) {
-      if (card && ((Number(card.reps) || 0) > 0 || card.last_review)) cards[id] = card;
-    }
-    return JSON.stringify({ ...record, cards });
+    return JSON.stringify({ ...record, cards: compactSrsCards(record.cards) });
   }
   if (rule.merge === 'append_log') {
     const log = JSON.parse(raw);
