@@ -63,6 +63,11 @@ for (const file of readdirSync(join(ROOT, 'src/islands'))) {
   }
 }
 
+// The pronunciation model is fetched from Hugging Face (redirects to the *.hf.co CDN).
+const captBank = JSON.parse(read('database/speech/capt_token_bank.json'));
+assert.ok(allowed(directives['connect-src'], captBank.model.url), `Speech model URL not in connect-src: ${captBank.model.url}`);
+assert.ok(directives['connect-src'].includes('https://*.hf.co'), 'connect-src must allow the Hugging Face CDN redirect');
+
 // Clickjacking guard runs before the app (GitHub Pages cannot send frame-ancestors headers).
 assert.match(read('assets/js/boot-theme.js'), /window\.top\s*===\s*window\.self/);
 const indexHtml = read('index.html');

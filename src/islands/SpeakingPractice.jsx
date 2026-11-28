@@ -18,7 +18,7 @@
 
 import { h, render } from 'preact';
 import { useState, useEffect, useRef } from 'preact/hooks';
-import { colorizePinyin } from './pinyinTones.js';
+import { colorizePinyin, splitPinyinSyllables } from './pinyinTones.js';
 import { analyzeToneSandhi, generateTargetPitchContour, CHAO_PITCH_MAP } from './ToneSandhi.js';
 import { LivePitchTracker, frequencyToChaoScale, fetchAndExtractAudioWaveform } from './PitchDetector.js';
 import { scorePitchContour } from './ToneScorer.js';
@@ -36,10 +36,29 @@ import {
 } from './Icons.jsx';
 
 /**
- * The bundled Deep CAPT ONNX model was exported with untrained (random) weights, so its
- * initial/final/tone breakdown is noise. Hidden until a real pretrained model ships.
+ * Deep CAPT: pretrained sherpa-onnx zipformer CTC (zh) + forced-alignment GOP for
+ * initials/finals; tone stays with the pitch scorer. Validated by tools/calibrate_capt_gop.mjs.
  */
-export const DEEP_CAPT_ENABLED = false;
+export const DEEP_CAPT_ENABLED = true;
+/** Share of the final grade taken by the Deep CAPT score (the rest is pitch + ASR). */
+export const DEEP_CAPT_WEIGHT = 0.5;
+const STAR_THREE_SCORE = 80;
+const STAR_TWO_SCORE = 60;
+
+/** Blends the Deep CAPT score into the combined grade (can lower it as well as raise it). */
+function applyDeepCaptScore(combined, deepCapt) {
+  if (!deepCapt || !deepCapt.success) return combined;
+  const overallScore = Math.round(
+    combined.overallScore * (1 - DEEP_CAPT_WEIGHT) + deepCapt.overallScore * DEEP_CAPT_WEIGHT
+  );
+  const stars = overallScore >= STAR_THREE_SCORE ? 3 : overallScore >= STAR_TWO_SCORE ? 2 : 1;
+  const message = overallScore >= STAR_THREE_SCORE
+    ? SPEAKING_LABELS.DEEP_MSG_EXCELLENT
+    : overallScore >= STAR_TWO_SCORE
+    ? SPEAKING_LABELS.DEEP_MSG_GOOD
+    : SPEAKING_LABELS.DEEP_MSG_RETRY;
+  return { ...combined, overallScore, stars, message };
+}
 
 /**
  * Standard Speaking Practice UI Labels and Semantic Constants (Single Source of Truth)
@@ -75,6 +94,11 @@ export const SPEAKING_LABELS = Object.freeze({
   COACHING_PASS_TEXT: 'Cao độ thanh điệu lượn mượt mà và hài hòa với mẫu chuẩn.',
   CAPT_ANALYSIS_TITLE: 'Độ Chuẩn Âm Đầu, Vần & Thanh Điệu',
   CAPT_PILLAR_TAG: 'Thanh Mẫu · Vận Mẫu · Điệu',
+  DEEP_MSG_EXCELLENT: 'Xuất sắc! Phát âm thanh mẫu, vận mẫu & thanh điệu đều rất chuẩn.',
+  DEEP_MSG_GOOD: 'Khá tốt! Chú ý một vài điểm ngữ âm chi tiết bên dưới.',
+  DEEP_MSG_RETRY: 'Chưa đạt. Hãy lắng nghe audio mẫu và chú ý khẩu hình nhé!',
+  MODEL_MODAL_DESC: 'Mô hình nhận dạng tiếng Trung Zipformer-CTC (~63 MB, tải một lần) chạy 100% offline trên trình duyệt qua WebAssembly.',
+  DETECTED_ARROW: ' → ',
   RECOGNIZED_LABEL: 'Từ máy nhận diện được:',
 });
 
@@ -294,16 +318,7 @@ function SpeakingPracticeApp() {
       if (!prev) return prev;
       const textMatch = LocalSpeechAI.evaluateTextMatch(aiTranscript, currentWord.hanzi, currentWord.pinyin);
       const combined = LocalSpeechAI.combineScores(prev, textMatch, activeTab);
-      if (prev.deepCapt && prev.deepCapt.success) {
-        combined.overallScore = Math.max(combined.overallScore, Math.round(combined.overallScore * 0.6 + prev.deepCapt.overallScore * 0.4));
-        combined.stars = combined.overallScore >= 80 ? 3 : combined.overallScore >= 60 ? 2 : 1;
-        combined.message = combined.overallScore >= 80
-          ? 'Xuất sắc! Phát âm thanh mẫu, vận mẫu & thanh điệu đều rất chuẩn.'
-          : combined.overallScore >= 60
-          ? 'Khá tốt! Chú ý một vài điểm ngữ âm chi tiết bên dưới.'
-          : 'Chưa đạt. Hãy lắng nghe audio mẫu và chú ý khẩu hình nhé!';
-      }
-      return { ...prev, combined, textMatch };
+      return { ...prev, combined: applyDeepCaptScore(combined, prev.deepCapt), textMatch };
     });
   }, [aiTranscript]);
 
@@ -729,7 +744,12 @@ function SpeakingPracticeApp() {
         try {
           const pcm = await trackerRef.current.getPcm16k();
           if (pcm && pcm.length > 2000) {
-            deepCapt = await evaluatePronunciationWithOnnx(pcm, currentWord.pinyin);
+            deepCapt = await evaluatePronunciationWithOnnx(
+              pcm,
+              currentWord.hanzi,
+              splitPinyinSyllables(currentWord.pinyin),
+              score.toneBreakdown || []
+            );
             setCaptResult(deepCapt);
           }
         } catch (e) {
@@ -737,16 +757,7 @@ function SpeakingPracticeApp() {
         }
       }
 
-      const combined = LocalSpeechAI.combineScores(score, textMatch, activeTab);
-      if (deepCapt && deepCapt.success) {
-        combined.overallScore = Math.max(combined.overallScore, Math.round(combined.overallScore * 0.6 + deepCapt.overallScore * 0.4));
-        combined.stars = combined.overallScore >= 80 ? 3 : combined.overallScore >= 60 ? 2 : 1;
-        combined.message = combined.overallScore >= 80
-          ? 'Xuất sắc! Phát âm thanh mẫu, vận mẫu & thanh điệu đều rất chuẩn.'
-          : combined.overallScore >= 60
-          ? 'Khá tốt! Chú ý một vài điểm ngữ âm chi tiết bên dưới.'
-          : 'Chưa đạt. Hãy lắng nghe audio mẫu và chú ý khẩu hình nhé!';
-      }
+      const combined = applyDeepCaptScore(LocalSpeechAI.combineScores(score, textMatch, activeTab), deepCapt);
 
       setScoreResult({ ...score, combined, textMatch, deepCapt });
 
@@ -1145,7 +1156,12 @@ function SpeakingPracticeApp() {
                     <div class={`capt-pillar-card ${captResult.initial.passed ? 'passed' : 'warning'}`}>
                       <span class="pillar-label">Thanh Mẫu (Âm đầu)</span>
                       <div class="pillar-score-row">
-                        <span class="pillar-name">{captResult.initial.target !== 'none' ? captResult.initial.target : '—'}</span>
+                        <span class="pillar-name">
+                          {captResult.initial.target !== 'none' ? captResult.initial.target : '—'}
+                          {captResult.initial.detected && captResult.initial.detected !== captResult.initial.target
+                            ? SPEAKING_LABELS.DETECTED_ARROW + captResult.initial.detected
+                            : ''}
+                        </span>
                         <span class="pillar-points">{captResult.initial.score}đ</span>
                       </div>
                       <p class="pillar-advice">{captResult.initial.advice}</p>
@@ -1155,21 +1171,28 @@ function SpeakingPracticeApp() {
                     <div class={`capt-pillar-card ${captResult.final.passed ? 'passed' : 'warning'}`}>
                       <span class="pillar-label">Vận Mẫu (Vần)</span>
                       <div class="pillar-score-row">
-                        <span class="pillar-name">{captResult.final.target}</span>
+                        <span class="pillar-name">
+                          {captResult.final.target}
+                          {captResult.final.detected && captResult.final.detected !== captResult.final.target
+                            ? SPEAKING_LABELS.DETECTED_ARROW + captResult.final.detected
+                            : ''}
+                        </span>
                         <span class="pillar-points">{captResult.final.score}đ</span>
                       </div>
                       <p class="pillar-advice">{captResult.final.advice}</p>
                     </div>
 
-                    {/* Tone */}
-                    <div class={`capt-pillar-card ${captResult.tone.passed ? 'passed' : 'warning'}`}>
-                      <span class="pillar-label">Thanh Điệu</span>
-                      <div class="pillar-score-row">
-                        <span class="pillar-name">Thanh {captResult.tone.target}</span>
-                        <span class="pillar-points">{captResult.tone.score}đ</span>
+                    {/* Tone (from pitch contour; absent when pitch was not captured) */}
+                    {captResult.tone && (
+                      <div class={`capt-pillar-card ${captResult.tone.passed ? 'passed' : 'warning'}`}>
+                        <span class="pillar-label">Thanh Điệu</span>
+                        <div class="pillar-score-row">
+                          <span class="pillar-name">Thanh {captResult.tone.target}</span>
+                          <span class="pillar-points">{captResult.tone.score}đ</span>
+                        </div>
+                        <p class="pillar-advice">{captResult.tone.advice}</p>
                       </div>
-                      <p class="pillar-advice">{captResult.tone.advice}</p>
-                    </div>
+                    )}
                   </div>
                 </div>
               )}
@@ -1299,7 +1322,7 @@ function SpeakingPracticeApp() {
                 </button>
               )}
             </div>
-            <p>Mô hình Neural Conformer-CTC (14.2 MB) chạy trực tiếp 100% Offline trên trình duyệt qua WebAssembly SIMD.</p>
+            <p>{SPEAKING_LABELS.MODEL_MODAL_DESC}</p>
             {!downloadError ? (
               <>
                 <div class="capt-progress-bar-wrap">

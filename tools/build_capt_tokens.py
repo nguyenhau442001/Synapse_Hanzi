@@ -109,6 +109,7 @@ def main():
             'vocabSize': VOCAB_SIZE,
         },
         'byteTableRanges': BYTE_TABLE_RANGES,
+        'pieces': [sp.id_to_piece(i) for i in range(VOCAB_SIZE)],
         'chars': chars,
         'syllables': syllables,
     }

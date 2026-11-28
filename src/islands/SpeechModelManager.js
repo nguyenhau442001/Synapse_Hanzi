@@ -1,16 +1,51 @@
 /**
  * SpeechModelManager.js
- * Offline Model Manager for Mandarin CAPT Conformer-CTC ONNX model (~8.2MB INT8).
- * Manages streaming downloads with progress reporting and persistent caching via IndexedDB.
+ * Offline model manager for the pronunciation scorer (sherpa-onnx zipformer CTC zh, ~63 MB INT8).
+ * Streams the model from Hugging Face with progress, verifies its SHA-256 and caches it in IndexedDB.
  */
 
-const DB_NAME = 'synapse_capt_speech_v2';
+const DB_NAME = 'synapse_capt_speech_v3';
+/** Database of the retired untrained Conformer model; deleted to free its 8 MB. */
+const LEGACY_DB_NAME = 'synapse_capt_speech_v2';
 const STORE_NAME = 'models';
-const MODEL_KEY = 'capt_model_onnx';
-const MODEL_URL = './assets/models/speech/capt_model.onnx';
+const MODEL_KEY = 'zipformer_ctc_small_zh_int8';
+export const TOKEN_BANK_URL = './database/speech/capt_token_bank.json';
 const META_URL = './assets/models/speech/capt_meta.json';
-const MODEL_SIZE_ESTIMATE_BYTES = 8.2 * 1024 * 1024;
 const MIN_CACHED_MODEL_BYTES = 1000000;
+const HEX_RADIX = 16;
+const HEX_BYTE_WIDTH = 2;
+const PERCENT = 100;
+
+let tokenBankPromise = null;
+
+/** Loads database/speech/capt_token_bank.json (model URL, hash, token ids). */
+export function loadCaptTokenBank() {
+  if (!tokenBankPromise) {
+    tokenBankPromise = fetch(new URL(TOKEN_BANK_URL, document.baseURI).href)
+      .then((res) => {
+        if (!res.ok) throw new Error(`Token bank HTTP ${res.status}`);
+        return res.json();
+      })
+      .catch((err) => {
+        tokenBankPromise = null;
+        throw err;
+      });
+  }
+  return tokenBankPromise;
+}
+
+function deleteLegacyModelDb() {
+  try {
+    if (typeof indexedDB !== 'undefined') indexedDB.deleteDatabase(LEGACY_DB_NAME);
+  } catch {
+    // Best effort cleanup only
+  }
+}
+
+async function sha256Hex(buffer) {
+  const digest = await crypto.subtle.digest('SHA-256', buffer);
+  return [...new Uint8Array(digest)].map((b) => b.toString(HEX_RADIX).padStart(HEX_BYTE_WIDTH, '0')).join('');
+}
 
 /**
  * Opens or initializes IndexedDB database.
@@ -78,13 +113,14 @@ export async function loadCachedCaptModel() {
  * @returns {Promise<ArrayBuffer>} The downloaded model buffer
  */
 export async function downloadAndCacheCaptModel(onProgress = null) {
-  const url = new URL(MODEL_URL, document.baseURI).href;
-  const response = await fetch(url);
+  deleteLegacyModelDb();
+  const { model } = await loadCaptTokenBank();
+  const response = await fetch(model.url);
   if (!response.ok) {
     throw new Error(`Failed to download speech model: HTTP ${response.status}`);
   }
 
-  const contentLength = Number(response.headers.get('content-length')) || MODEL_SIZE_ESTIMATE_BYTES;
+  const contentLength = Number(response.headers.get('content-length')) || model.sizeBytes;
   const reader = response.body.getReader();
   const chunks = [];
   let receivedBytes = 0;
@@ -95,7 +131,7 @@ export async function downloadAndCacheCaptModel(onProgress = null) {
     chunks.push(value);
     receivedBytes += value.length;
     if (onProgress) {
-      const percent = Math.min(100, Math.round((receivedBytes / contentLength) * 100));
+      const percent = Math.min(PERCENT, Math.round((receivedBytes / contentLength) * PERCENT));
       onProgress({ percent, loaded: receivedBytes, total: contentLength });
     }
   }
@@ -108,6 +144,9 @@ export async function downloadAndCacheCaptModel(onProgress = null) {
     position += chunk.length;
   }
   const modelBuffer = allBytes.buffer;
+  if ((await sha256Hex(modelBuffer)) !== model.sha256) {
+    throw new Error('Speech model integrity check failed (SHA-256 mismatch)');
+  }
 
   // Persist into IndexedDB
   try {

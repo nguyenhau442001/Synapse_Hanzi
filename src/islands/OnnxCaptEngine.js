@@ -1,12 +1,15 @@
 /**
  * OnnxCaptEngine.js
- * In-browser inference controller for the 14MB Conformer CAPT Neural Network.
- * Integrates WebAudio, Log-Mel Feature Extraction, and GOP Pronunciation Scoring.
+ * In-browser inference controller for the zipformer CTC pronunciation model.
+ * Kaldi fbank -> ONNX Runtime Web -> forced-alignment GOP per syllable.
  */
 
-import { loadCachedCaptModel, downloadAndCacheCaptModel } from './SpeechModelManager.js';
-import { extractLogMelSpectrogram, melFramesToFlatTensor } from './AudioFeatureExtractor.js';
-import { scoreCaptPrediction } from './GopScorer.js';
+import { loadCachedCaptModel, downloadAndCacheCaptModel, loadCaptTokenBank } from './SpeechModelManager.js';
+import { prepareModelInput, buildCaptResult, MODEL_IO, MIN_AUDIO_FRAMES } from './ZipformerCaptEngine.js';
+import { numFbankFrames } from './KaldiFbank.js';
+
+/** ORT severity 3 = errors only (hides benign graph-optimizer warnings of the export). */
+const ORT_LOG_LEVEL_ERROR = 3;
 
 let inferenceSession = null;
 let isInitializing = false;
@@ -74,10 +77,11 @@ export async function ensureCaptModelReady(onDownloadProgress = null) {
     }
 
     inferenceSession = await ort.InferenceSession.create(modelBuffer, {
-      executionProviders: ['wasm']
+      executionProviders: ['wasm'],
+      logSeverityLevel: ORT_LOG_LEVEL_ERROR
     });
 
-    console.log('✅ [OnnxCaptEngine] Mandarin CAPT Conformer loaded successfully into WebAssembly.');
+    console.log('✅ [OnnxCaptEngine] Zipformer CTC pronunciation model loaded into WebAssembly.');
     isInitializing = false;
     return true;
   } catch (err) {
@@ -94,44 +98,35 @@ export function isCaptModelLoaded() {
   return Boolean(inferenceSession);
 }
 
-const MIN_SPEECH_MEL_FRAMES = 5;
-
 /**
- * Evaluates recorded audio PCM against the target pinyin using the neural Conformer.
+ * Scores recorded audio against the target word with the zipformer CTC model.
  *
- * @param {Float32Array} pcm16k 16kHz mono audio samples
- * @param {string} targetPinyin Expected pinyin (e.g. 'ài' or 'nǐ')
- * @returns {Promise<Object>} Diagnostic result with Initial, Final, Tone, and overall score
+ * @param {Float32Array} pcm16k 16 kHz mono samples in [-1, 1]
+ * @param {string} hanzi Target word, e.g. '中国'
+ * @param {string[]} syllables Target pinyin syllables, e.g. ['zhōng', 'guó']
+ * @param {Array} [toneBreakdown] ToneScorer per-syllable entries (tone comes from pitch)
+ * @returns {Promise<Object>} CaptEvaluationResult with per-syllable assessments
  */
-export async function evaluatePronunciationWithOnnx(pcm16k, targetPinyin) {
+export async function evaluatePronunciationWithOnnx(pcm16k, hanzi, syllables, toneBreakdown = []) {
   if (!inferenceSession) {
     throw new Error('CAPT model is not loaded yet');
   }
-
-  const ort = await getOrt();
-  if (!ort) throw new Error('ONNX runtime unavailable');
-
-  // 1. Extract 80-channel Log-Mel spectrogram
-  const melFrames = extractLogMelSpectrogram(pcm16k);
-  if (melFrames.length < MIN_SPEECH_MEL_FRAMES) {
+  if (numFbankFrames(pcm16k.length) < MIN_AUDIO_FRAMES) {
     return {
       success: false,
       message: 'Âm thanh quá ngắn hoặc không rõ tiếng. Hãy nói to và gần micro hơn.'
     };
   }
 
-  // 2. Prepare ONNX Input Tensor: shape [1, numFrames, 80]
-  const { data, shape } = melFramesToFlatTensor(melFrames);
-  const inputTensor = new ort.Tensor('float32', data, shape);
+  const ort = await getOrt();
+  if (!ort) throw new Error('ONNX runtime unavailable');
+  const bank = await loadCaptTokenBank();
 
-  // 3. Execute Neural Inference
-  const feeds = { mel: inputTensor };
-  const outputs = await inferenceSession.run(feeds);
-
-  // 4. Score outputs with GOP and Vietnamese learner diagnostics
-  const result = scoreCaptPrediction(outputs, targetPinyin);
-  return {
-    success: true,
-    ...result
-  };
+  const { x, xLens } = prepareModelInput(pcm16k);
+  const outputs = await inferenceSession.run({
+    [MODEL_IO.INPUT]: new ort.Tensor('float32', x.data, x.dims),
+    [MODEL_IO.INPUT_LENS]: new ort.Tensor('int64', xLens, [1])
+  });
+  const logProbs = outputs[MODEL_IO.OUTPUT];
+  return buildCaptResult(logProbs.data, logProbs.dims, hanzi, syllables, bank, toneBreakdown);
 }
