@@ -59,7 +59,7 @@ def build_hanzi_audio_map() -> dict[str, str]:
         if not items:
             continue
 
-        if level_name == "curriculum":
+        if level_name in ("curriculum", "listening_phrases"):
             for entry in items.values():
                 if isinstance(entry, dict) and entry.get("text") and entry.get("url"):
                     _add_sentence_mapping(mapping, str(entry["text"]), str(entry["url"]))
