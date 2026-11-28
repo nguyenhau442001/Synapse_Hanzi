@@ -1144,11 +1144,16 @@ function updateStudyDrawerButtons() {
 function ensureStudyWordList() {
   if (!document.body.classList.contains('is-desktop-dock') && !document.body.classList.contains('flashcard-study-mode')) return null;
   let panel = document.getElementById('studyWordListPanel');
-  if (panel) return panel;
   const isStudy = document.body.classList.contains('flashcard-study-mode');
   const mount = isStudy
     ? (document.getElementById('workstationRight') || document.getElementById('workstationLeft'))
     : document.getElementById('workstationLeft');
+  if (panel) {
+    // The panel may have been created before study mode started (in the left
+    // column, which study mode hides); move it into the study drawer.
+    if (mount && panel.parentElement !== mount) mount.appendChild(panel);
+    return panel;
+  }
   if (!mount) return null;
   panel = document.createElement('section');
   panel.id = 'studyWordListPanel';
@@ -1199,6 +1204,10 @@ function jumpToWordByIndex(wordIndex) {
   render('fade');
   return true;
 }
+
+// Space kept above the active word when the list scrolls to it, so the
+// previous word stays partly visible as context.
+const WORD_LIST_ACTIVE_TOP_GAP_PX = 8;
 
 function renderStudyWordList() {
   const panel = ensureStudyWordList();
@@ -1285,7 +1294,11 @@ function renderStudyWordList() {
 
   if (currentIndex >= 0) {
     const activeButton = items.querySelector('.active');
-    if (activeButton && !query) activeButton.scrollIntoView({ block: 'nearest' });
+    // Pin the current word near the top so the upcoming words stay visible below it.
+    if (activeButton && !query) {
+      const offset = activeButton.getBoundingClientRect().top - items.getBoundingClientRect().top;
+      items.scrollTop += offset - WORD_LIST_ACTIVE_TOP_GAP_PX;
+    }
   }
 }
 

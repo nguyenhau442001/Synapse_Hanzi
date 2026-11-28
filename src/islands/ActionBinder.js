@@ -47,6 +47,7 @@ export const UI_ACTIONS = Object.freeze({
   setStudyDirection: (el) => callGlobal('setStudyDirection', el.value),
   rateCurrentCard: (el) => callGlobal('rateCurrentCard', argOf(el)),
   closeAllStudyDrawers: () => callGlobal('closeAllStudyDrawers'),
+  toggleStudySidebar: () => callGlobal('toggleStudySidebar'),
   studyMoreNewCards: () => callGlobal('studyMoreNewCards'),
 
   // Fast review
