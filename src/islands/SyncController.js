@@ -128,7 +128,7 @@ export function runSync({ push = true } = {}) {
       announce(result, syncsThisPage === 1, freshSignIn);
       return result;
     } catch (error) {
-      console.warn('[Sync] failed:', error && error.code ? error.code : error);
+      console.warn('[Sync] failed:', error && error.code ? `${error.code}: ${error.message}` : error);
       authController.setSyncStatus({ syncStatus: isOffline() ? 'offline' : 'error' });
       return null;
     } finally {

@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { createSyncEngine, cloudCopy, groupByNamespace, hashText } from '../src/islands/SyncEngine.js';
+import { createSyncEngine, cloudCopy, groupByNamespace, hashText, utf8ByteLength, planPushBatches } from '../src/islands/SyncEngine.js';
 import { SYNC_STATE_KEY, SYNC_SCHEMA_VERSION, SYNC_MAX_LOG_ENTRIES } from '../src/islands/SyncConstants.js';
 import { toCloudSnapshot } from '../src/islands/FirestoreCloudAdapter.js';
 
@@ -230,6 +230,42 @@ const deviceB = new MemoryStorage({ hsk_theme: 'light' });
   assert.equal(full.pushed, 1);
   await engineFor(writer, pollCloud.adapter).sync({ push: false });
   assert.equal(writer.getItem(CURRICULUM), '{"lessons":{"l2":true}}');
+}
+
+// Firestore limits are in UTF-8 bytes: hanzi are 3 bytes each.
+assert.equal(utf8ByteLength('学'), 3);
+assert.equal(utf8ByteLength('ab'), 2);
+
+{
+  const sized = (sizes) => sizes.map((bytes, i) => ({ item: i, bytes }));
+  assert.deepEqual(planPushBatches(sized([4, 4, 4]), { maxBytes: 10, maxWrites: 500 }), [[0, 1], [2]], 'byte budget splits');
+  assert.deepEqual(planPushBatches(sized([1, 1, 1]), { maxBytes: 10, maxWrites: 2 }), [[0, 1], [2]], 'write limit splits');
+  assert.deepEqual(planPushBatches(sized([20, 1]), { maxBytes: 10, maxWrites: 500 }), [[0], [1]], 'oversized item stands alone');
+  assert.deepEqual(planPushBatches([]), []);
+}
+
+{
+  // A namespace under the character cap but over the byte cap is skipped, not sent to Firestore.
+  const cloud = memoryCloud();
+  const hanziHeavy = JSON.stringify({ lessons: { ['学'.repeat(400000)]: true } });
+  const storage = new MemoryStorage({ [CURRICULUM]: hanziHeavy });
+  const result = await engineFor(storage, cloud.adapter).sync();
+  assert.deepEqual(result.skipped, ['courses']);
+  assert.equal(result.pushed, 0);
+}
+
+{
+  // Large first sync is split into several commits instead of one oversized batch.
+  const cloud = memoryCloud();
+  let calls = 0;
+  const adapter = { ...cloud.adapter, async push(items) { calls += 1; return cloud.adapter.push(items); } };
+  const big = JSON.stringify({ pad: 'x'.repeat(800000) });
+  const storage = new MemoryStorage({});
+  for (let i = 1; i <= 7; i++) storage.setItem(`hsk_hsk${i}_progress_v2`, big);
+  const result = await engineFor(storage, adapter).sync();
+  assert.equal(result.pushed, 7);
+  assert.ok(calls >= 2, 'pushes are split into multiple batches');
+  assert.equal(cloud.docs.size, 7);
 }
 
 assert.equal((await hashText('abc')).length, 32);

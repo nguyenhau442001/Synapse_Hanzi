@@ -7,11 +7,44 @@ import { applyBackup, isSafeKey, isValidEntry } from './SyncSnapshot.js';
 import {
   SYNC_STATE_KEY,
   SYNC_SCHEMA_VERSION,
-  SYNC_MAX_DOC_CHARS,
+  SYNC_MAX_DOC_BYTES,
+  SYNC_MAX_BATCH_BYTES,
   SYNC_MAX_LOG_ENTRIES,
   SYNC_HASH_HEX_LENGTH,
   SYNC_DEVICE_ID_BYTES,
+  FIRESTORE_BATCH_LIMIT,
 } from './SyncConstants.js';
+
+const utf8 = new TextEncoder();
+
+/** @param {string} text @returns {number} UTF-8 size, which is what Firestore limits count. */
+export const utf8ByteLength = (text) => utf8.encode(text).length;
+
+/**
+ * Split pushes into batches that each stay under the commit byte budget and the write limit.
+ * A single item larger than the budget still gets its own batch (items are already capped at
+ * SYNC_MAX_DOC_BYTES, far below the budget).
+ * @template T
+ * @param {Array<{ item: T, bytes: number }>} sized
+ * @param {{ maxBytes?: number, maxWrites?: number }} [limits]
+ * @returns {T[][]}
+ */
+export function planPushBatches(sized, { maxBytes = SYNC_MAX_BATCH_BYTES, maxWrites = FIRESTORE_BATCH_LIMIT } = {}) {
+  const batches = [];
+  let current = [];
+  let currentBytes = 0;
+  for (const { item, bytes } of sized) {
+    if (current.length && (currentBytes + bytes > maxBytes || current.length >= maxWrites)) {
+      batches.push(current);
+      current = [];
+      currentBytes = 0;
+    }
+    current.push(item);
+    currentBytes += bytes;
+  }
+  if (current.length) batches.push(current);
+  return batches;
+}
 
 /**
  * One namespace as stored in the cloud (users/{uid}/snapshots/{namespace}).
@@ -27,7 +60,8 @@ import {
  * @typedef {Object} CloudAdapter
  * @property {(sinceIso: string|null) => Promise<CloudSnapshot[]>} pullSince
  *   Snapshots written after `sinceIso` (all when null).
- * @property {(snapshots: CloudSnapshot[]) => Promise<void>} push  Writes all, stamping server time.
+ * @property {(snapshots: CloudSnapshot[]) => Promise<void>} push  Writes one batch atomically,
+ *   stamping server time. The engine keeps each call under SYNC_MAX_BATCH_BYTES.
  */
 
 /**
@@ -195,16 +229,19 @@ export function createSyncEngine({ storage, adapter, uid, normalizeCard, newDevi
       if (!changed) continue;
       const copies = {};
       for (const [key, raw] of Object.entries(entries)) copies[key] = cloudCopy(key, raw);
-      if (JSON.stringify(copies).length > SYNC_MAX_DOC_CHARS) {
+      const bytes = utf8ByteLength(JSON.stringify(copies));
+      if (bytes > SYNC_MAX_DOC_BYTES) {
         skipped.push(namespace);
         for (const key of Object.keys(entries)) nextHashes[key] = state.hashes[key];
         continue;
       }
       for (const [key, copy] of Object.entries(copies)) nextPushed[key] = await hashText(copy);
-      toPush.push({ namespace, schemaVersion: SYNC_SCHEMA_VERSION, deviceId: state.deviceId, updatedAt: null, entries: copies });
+      toPush.push({ bytes, item: { namespace, schemaVersion: SYNC_SCHEMA_VERSION, deviceId: state.deviceId, updatedAt: null, entries: copies } });
     }
 
-    if (toPush.length) await adapter.push(toPush);
+    // Batches commit in order; if one fails the state is not saved, so the next sync re-pushes
+    // everything (rewriting an identical snapshot is harmless).
+    for (const batch of planPushBatches(toPush)) await adapter.push(batch);
 
     // Saved only after a successful push, so a failed sync is simply retried next time.
     const saved = { uid, deviceId: state.deviceId, lastPulledAt: newest, hashes: nextHashes, pushed: nextPushed };

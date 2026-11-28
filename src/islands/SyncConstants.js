@@ -41,8 +41,15 @@ export const SYNC_STATE_KEY = 'hsk_sync_state_v1';
 /** Bump on breaking cloud document changes; newer documents are ignored by older apps. */
 export const SYNC_SCHEMA_VERSION = 1;
 
-/** Max characters of a document's `data` string; Firestore rules enforce the same bound. */
-export const SYNC_MAX_DOC_CHARS = 900000;
+/**
+ * Max UTF-8 bytes of a document's `data` string. Firestore caps a document at 1 MiB in bytes, and
+ * hanzi keys take 3 bytes each, so a character count is not enough. Bytes >= characters, so this
+ * also satisfies the rules' `data.size() <= 900000` character bound.
+ */
+export const SYNC_MAX_DOC_BYTES = 900000;
+
+/** UTF-8 byte budget of one batched push, safely below Firestore's 10 MiB commit request limit. */
+export const SYNC_MAX_BATCH_BYTES = 4 * 1024 * 1024;
 
 /** Newest review-log entries kept in a pushed copy (the full log stays on each device). */
 export const SYNC_MAX_LOG_ENTRIES = 3000;
