@@ -3,7 +3,39 @@
  * Pitch contour alignment (Dynamic Time Warping) and Vietnamese-learner diagnostic scoring.
  */
 
-import { frequencyToChaoScale } from './PitchDetector.js';
+import { frequencyToChaoScale, MIN_SPEECH_FREQ, MAX_SPEECH_FREQ } from './PitchDetector.js';
+
+// Minimum amount of voiced audio (seconds) that counts as an actual spoken syllable.
+// Shorter bursts are clicks, breaths or background hum and must not be scored.
+export const MIN_VOICED_DURATION_SEC = 0.2;
+// Minimum number of voiced frames, regardless of frame timing.
+export const MIN_VOICED_FRAMES = 6;
+// Loudest voiced frame must reach this RMS (~-38 dBFS); steady room noise stays below it.
+export const MIN_SPEECH_PEAK_RMS = 0.012;
+// Frame interval assumed when frames carry no timestamps (~60 fps analyser loop).
+export const DEFAULT_FRAME_INTERVAL_SEC = 1 / 60;
+export const NO_SPEECH_MESSAGE = 'Chưa nghe thấy giọng nói rõ ràng. Hãy nhấn nói, đọc to và rõ gần micro rồi nhấn dừng.';
+
+/**
+ * Estimates the average interval between captured frames from their timestamps.
+ */
+function estimateFrameInterval(frames) {
+  if (frames.length < 2) return DEFAULT_FRAME_INTERVAL_SEC;
+  const span = (frames[frames.length - 1].time || 0) - (frames[0].time || 0);
+  return span > 0 ? span / (frames.length - 1) : DEFAULT_FRAME_INTERVAL_SEC;
+}
+
+/**
+ * Returns true when the voiced frames represent real speech rather than noise:
+ * long enough in total and loud enough at the peak.
+ */
+export function hasEnoughSpeech(userFrames, voicedFrames) {
+  if (voicedFrames.length < MIN_VOICED_FRAMES) return false;
+  const voicedDurationSec = voicedFrames.length * estimateFrameInterval(userFrames);
+  if (voicedDurationSec < MIN_VOICED_DURATION_SEC) return false;
+  const peakRms = Math.max(...voicedFrames.map((f) => (typeof f.rms === 'number' ? f.rms : 0)));
+  return peakRms >= MIN_SPEECH_PEAK_RMS;
+}
 
 /**
  * Calculates Median of an array of numbers.
@@ -245,13 +277,15 @@ export function getTonePedagogicalAdvice(expectedTone, actualSlope, score, metri
  */
 export function scorePitchContour(userFrames, targetContour, syllableInfos) {
   // Filter voiced frames within human speech vocal range
-  const voicedFrames = userFrames.filter((f) => f.isVoiced && f.frequency >= 75 && f.frequency <= 480);
+  const frames = userFrames || [];
+  const voicedFrames = frames.filter((f) => f.isVoiced && f.frequency >= MIN_SPEECH_FREQ && f.frequency <= MAX_SPEECH_FREQ);
 
-  if (voicedFrames.length < 3) {
+  if (!hasEnoughSpeech(frames, voicedFrames)) {
     return {
       valid: false,
+      noSpeech: true,
       score: 0,
-      message: 'Chưa thu được đủ âm thanh giọng nói rõ ràng. Hãy thử nói to và rõ hơn gần micro.',
+      message: NO_SPEECH_MESSAGE,
       toneBreakdown: []
     };
   }

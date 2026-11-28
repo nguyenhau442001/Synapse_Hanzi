@@ -707,6 +707,16 @@ function SpeakingPracticeApp() {
         textMatch = LocalSpeechAI.evaluateTextMatch(latestTranscript, currentWord.hanzi, currentWord.pinyin);
       }
 
+      // Nothing was spoken (only silence / room noise) and ASR heard nothing either:
+      // report "no speech" instead of grading noise as a flat tone.
+      if (!score.valid && !textMatch) {
+        setScoreResult({ ...score, combined: null, textMatch: null, deepCapt: null });
+        lastUserPitchesRef.current = null;
+        livePointsRef.current = [];
+        drawContourCanvas();
+        return;
+      }
+
       let deepCapt = null;
       if (isDeepAiReady && trackerRef.current) {
         try {
@@ -1076,6 +1086,7 @@ function SpeakingPracticeApp() {
           {/* Mode 1 & 2: Evaluation Card */}
           {scoreResult && (
             <div class="speaking-score-card">
+              {!scoreResult.noSpeech && (
               <div class="score-header">
                 <div class="score-stars">
                   {'⭐'.repeat(scoreResult.combined ? scoreResult.combined.stars : (scoreResult.stars || 1))}
@@ -1084,6 +1095,7 @@ function SpeakingPracticeApp() {
                   {scoreResult.combined ? scoreResult.combined.overallScore : scoreResult.score} / 100
                 </div>
               </div>
+              )}
 
               <div class="score-message">
                 {scoreResult.combined ? scoreResult.combined.message : scoreResult.message}

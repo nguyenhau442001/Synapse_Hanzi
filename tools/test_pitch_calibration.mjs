@@ -57,20 +57,22 @@ console.log('Testing Pitch Calibration & Fallback Scoring...');
   console.log('✅ PASSED: High-confidence ASR prevents false low score on quiet microphones');
 }
 
-// Test 5: ToneScorer accepts short single-syllable speech (>= 3 frames)
+// Test 5: ToneScorer accepts a short but real single syllable (~250 ms of voiced audio)
 {
   const syllableInfos = analyzeToneSandhi('爱', 'ài');
   const targetContour = generateTargetPitchContour('爱', 'ài', 60);
 
-  // Short 3-frame falling tone
-  const shortFrames = [
-    { time: 0.05, frequency: 220, clarity: 0.9, isVoiced: true },
-    { time: 0.10, frequency: 180, clarity: 0.9, isVoiced: true },
-    { time: 0.15, frequency: 140, clarity: 0.9, isVoiced: true }
-  ];
+  // Short 15-frame (~250 ms at 60 fps) falling tone
+  const shortFrames = Array.from({ length: 15 }, (_, i) => ({
+    time: 0.05 + i / 60,
+    frequency: 220 - (i / 14) * 80,
+    clarity: 0.9,
+    rms: 0.04,
+    isVoiced: true
+  }));
 
   const score = scorePitchContour(shortFrames, targetContour, syllableInfos);
-  assert.strictEqual(score.valid, true, 'ToneScorer should accept concise 3-frame single syllable');
+  assert.strictEqual(score.valid, true, 'ToneScorer should accept a short real single syllable');
   assert(score.score > 70, `Expected score > 70 for falling tone on Tone 4, got ${score.score}`);
   console.log('✅ PASSED: ToneScorer validates concise single-syllable vocalizations');
 }

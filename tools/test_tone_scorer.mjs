@@ -158,3 +158,30 @@ console.log('Testing ToneScorer & SpeechAI calibration engine...');
 }
 
 console.log('\nAll ToneScorer tests passed successfully!');
+
+// Regression: short noise bursts / quiet room hum must not be graded as a spoken tone
+{
+  const syllables = analyzeToneSandhi('爱', 'ài');
+  const target = generateTargetPitchContour('爱', 'ài', 30);
+
+  // Three voiced frames (~50 ms) from a click or breath
+  const burst = Array.from({ length: 3 }, (_, i) => ({
+    time: i * 0.016, frequency: 160, clarity: 0.9, rms: 0.05, isVoiced: true
+  }));
+  const burstRes = scorePitchContour(burst, target, syllables);
+  assert.equal(burstRes.valid, false, 'A 50 ms burst must not be scored');
+  assert.equal(burstRes.noSpeech, true);
+  assert.equal(burstRes.toneBreakdown.length, 0);
+
+  // One second of steady, quiet hum below speech loudness
+  const hum = Array.from({ length: 60 }, (_, i) => ({
+    time: i * 0.016, frequency: 120, clarity: 0.8, rms: 0.006, isVoiced: true
+  }));
+  const humRes = scorePitchContour(hum, target, syllables);
+  assert.equal(humRes.valid, false, 'Quiet room hum must not be scored');
+  assert.equal(humRes.noSpeech, true);
+
+  // Silence (no voiced frames) and empty input
+  assert.equal(scorePitchContour([], target, syllables).valid, false);
+  console.log('✅ PASSED: Noise bursts, quiet hum and silence are reported as no speech');
+}
