@@ -1299,7 +1299,7 @@ body.listening-view-active #screenListeningPractice {
 
 .listening-key-top {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 8px;
   flex-wrap: wrap;
 }

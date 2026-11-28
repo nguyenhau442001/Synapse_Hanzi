@@ -46,13 +46,50 @@ export function getPrioritizedVocabularies(vocabs) {
 }
 
 /**
- * Play the prebuilt word audio via the shared speech engine (toggles on re-click).
+ * Play prebuilt audio for a word or phrase via the shared speech engine (toggles on re-click).
  * @param {MouseEvent} event
- * @param {{word: string, pinyin?: string}} vocab
+ * @param {string} text
+ * @param {string|null} pinyin  Disambiguates polyphonic single words; null for phrases.
  */
-function playVocabWord(event, vocab) {
+function playPrebuiltText(event, text, pinyin) {
   if (typeof window === 'undefined' || typeof window.speakText !== 'function') return;
-  window.speakText(vocab.word, event.currentTarget, undefined, null, vocab.pinyin || null);
+  window.speakText(text, event.currentTarget, undefined, null, pinyin);
+}
+
+/**
+ * Round speaker button that plays the prebuilt audio of `text`.
+ * @param {{text: string, pinyin?: string|null}} props
+ */
+function ListeningSpeakButton({ text, pinyin = null }) {
+  return (
+    <button
+      type="button"
+      class="listening-vocab-play-btn"
+      onClick={(e) => playPrebuiltText(e, text, pinyin)}
+      title={LISTENING_REVIEW_LABELS.PLAY_WORD}
+      aria-label={`${LISTENING_REVIEW_LABELS.PLAY_WORD} ${text}`}
+    >
+      <Volume2 size={VOCAB_PLAY_ICON_SIZE} />
+    </button>
+  );
+}
+
+/**
+ * One key-expression card with a pronunciation button.
+ * @param {{item: {phrase: string, pinyin?: string, meaning_vi?: string, note?: string}}} props
+ */
+export function ListeningKeyCard({ item }) {
+  return (
+    <div class="listening-key-card">
+      <div class="listening-key-top">
+        <ListeningSpeakButton text={item.phrase} />
+        <span class="listening-key-phrase" lang="zh-CN">{item.phrase}</span>
+        {item.pinyin && <span class="listening-key-pinyin">{item.pinyin}</span>}
+      </div>
+      <div class="listening-key-meaning">{item.meaning_vi}</div>
+      {item.note && <div class="listening-key-note">{item.note}</div>}
+    </div>
+  );
 }
 
 /**
@@ -63,15 +100,10 @@ export function ListeningVocabCard({ vocab }) {
   return (
     <div class="listening-vocab-card">
       <div class="listening-vocab-top">
-        <button
-          type="button"
-          class="listening-vocab-play-btn"
-          onClick={(e) => playVocabWord(e, vocab)}
-          title={LISTENING_REVIEW_LABELS.PLAY_WORD}
-          aria-label={`${LISTENING_REVIEW_LABELS.PLAY_WORD} ${vocab.word}`}
-        >
-          <Volume2 size={VOCAB_PLAY_ICON_SIZE} />
-        </button>
+        <ListeningSpeakButton
+          text={vocab.word}
+          pinyin={vocab.pinyin || null}
+        />
         <span class="listening-vocab-word" lang="zh-CN">{vocab.word}</span>
         {vocab.level && <span class="listening-vocab-badge">{vocab.level}</span>}
       </div>
@@ -251,14 +283,7 @@ export function ListeningReviewPanel({
               <div class="listening-section-title">{LISTENING_REVIEW_LABELS.KEY_EXPRESSIONS_TITLE}</div>
               <div class="listening-key-grid">
                 {keyExpressions.map((item, i) => (
-                  <div key={i} class="listening-key-card">
-                    <div class="listening-key-top">
-                      <span class="listening-key-phrase" lang="zh-CN">{item.phrase}</span>
-                      {item.pinyin && <span class="listening-key-pinyin">{item.pinyin}</span>}
-                    </div>
-                    <div class="listening-key-meaning">{item.meaning_vi}</div>
-                    {item.note && <div class="listening-key-note">{item.note}</div>}
-                  </div>
+                  <ListeningKeyCard key={i} item={item} />
                 ))}
               </div>
             </div>

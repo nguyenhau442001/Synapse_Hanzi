@@ -5,7 +5,7 @@
 // window.ListeningPractice keeps the same API for the tab router and SpaRouter.
 import { render as preactRender } from 'preact';
 import { APP_TIMEOUTS } from './AppTimeouts';
-import { EvidenceHighlight, getPrioritizedVocabularies, ListeningVocabCard } from './ListeningReviewPanel.jsx';
+import { EvidenceHighlight, getPrioritizedVocabularies, ListeningVocabCard, ListeningKeyCard } from './ListeningReviewPanel.jsx';
 import { BarChart3, Lock } from 'lucide-preact';
 import { SYNC_LOCAL_CHANGE_EVENT } from './SyncConstants.js';
 import {
@@ -1064,14 +1064,7 @@ function TranscriptAndVocab() {
           <div class="listening-section-title">Cụm cần hiểu & Điểm ngữ pháp</div>{' '}
           <div class="listening-key-grid">
             {q.key_expressions.map((item, i) => [' ', (
-              <div key={i} class="listening-key-card">
-                <div class="listening-key-top">
-                  <span class="listening-key-phrase" lang="zh-CN">{item.phrase}</span>{' '}
-                  {item.pinyin ? <span class="listening-key-pinyin">{item.pinyin}</span> : null}
-                </div>{' '}
-                <div class="listening-key-meaning">{item.meaning_vi}</div>{' '}
-                {item.note ? <div class="listening-key-note">{item.note}</div> : null}
-              </div>
+              <ListeningKeyCard key={i} item={item} />
             )])}
           </div>
         </div>
