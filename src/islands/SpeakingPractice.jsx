@@ -36,6 +36,12 @@ import {
 } from './Icons.jsx';
 
 /**
+ * The bundled Deep CAPT ONNX model was exported with untrained (random) weights, so its
+ * initial/final/tone breakdown is noise. Hidden until a real pretrained model ships.
+ */
+export const DEEP_CAPT_ENABLED = false;
+
+/**
  * Standard Speaking Practice UI Labels and Semantic Constants (Single Source of Truth)
  */
 export const SPEAKING_LABELS = Object.freeze({
@@ -234,6 +240,7 @@ function SpeakingPracticeApp() {
 
   // Check if Deep ONNX model is already cached
   useEffect(() => {
+    if (!DEEP_CAPT_ENABLED) return;
     isCaptModelCached().then((cached) => {
       if (cached) {
         ensureCaptModelReady().then((ready) => {
@@ -887,26 +894,28 @@ function SpeakingPracticeApp() {
         </div>
 
         {/* Deep AI ONNX Model Activation Bar */}
-        <div class="deep-ai-badge-row">
-          <div class="deep-ai-status-indicator">
-            <span class={`deep-ai-pulse-dot ${isDeepAiReady ? '' : 'inactive'}`}></span>
-            <span>
-              {isDeepAiReady
-                ? SPEAKING_LABELS.DEEP_AI_ACTIVE
-                : SPEAKING_LABELS.DEEP_AI_INACTIVE}
-            </span>
+        {DEEP_CAPT_ENABLED && (
+          <div class="deep-ai-badge-row">
+            <div class="deep-ai-status-indicator">
+              <span class={`deep-ai-pulse-dot ${isDeepAiReady ? '' : 'inactive'}`}></span>
+              <span>
+                {isDeepAiReady
+                  ? SPEAKING_LABELS.DEEP_AI_ACTIVE
+                  : SPEAKING_LABELS.DEEP_AI_INACTIVE}
+              </span>
+            </div>
+            {!isDeepAiReady && (
+              <button
+                type="button"
+                class="deep-ai-activate-btn"
+                onClick={handleActivateDeepAi}
+                disabled={isDownloadingModel}
+              >
+                {isDownloadingModel ? SPEAKING_LABELS.DEEP_AI_DOWNLOADING : SPEAKING_LABELS.DEEP_AI_ACTIVATE}
+              </button>
+            )}
           </div>
-          {!isDeepAiReady && (
-            <button
-              type="button"
-              class="deep-ai-activate-btn"
-              onClick={handleActivateDeepAi}
-              disabled={isDownloadingModel}
-            >
-              {isDownloadingModel ? SPEAKING_LABELS.DEEP_AI_DOWNLOADING : SPEAKING_LABELS.DEEP_AI_ACTIVATE}
-            </button>
-          )}
-        </div>
+        )}
 
         <div class="speaking-mode-tabs" role="tablist">
           <button
@@ -1166,7 +1175,7 @@ function SpeakingPracticeApp() {
               )}
 
               {/* Invitation banner to activate Deep AI if not yet ready */}
-              {!isDeepAiReady && (
+              {DEEP_CAPT_ENABLED && !isDeepAiReady && (
                 <div class="deep-ai-cta-banner">
                   <span class="deep-ai-cta-text">
                     💡 Nhận diện và phân tích chi tiết độ chuẩn của âm đầu (zh/z, ch/c...) và vần (an/ang...).

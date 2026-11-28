@@ -9,6 +9,21 @@
 import { splitPinyinSyllables } from './pinyinTones.js';
 import { cleanChineseCharacters } from './ToneSandhi.js';
 
+/**
+ * Score combination constants.
+ * Browser ASR auto-corrects tones through its language model, so a recognized word
+ * proves the syllables were intelligible but NOT that the tone was right.
+ * It may therefore only nudge a passing pitch score, never lift a failing one.
+ */
+export const ASR_MATCH_BONUS = 5;
+/** Minimum pitch score that is allowed to receive the ASR match bonus. */
+export const ASR_BONUS_MIN_PITCH_SCORE = 60;
+/** Cap when only ASR is available: word heard, tone unverified. */
+export const ASR_ONLY_SCORE_CAP = 70;
+export const PITCH_WEIGHT_VOCAB = 0.5;
+export const TEXT_WEIGHT_VOCAB = 0.5;
+export const SCORE_CEILING = 100;
+
 export class LocalSpeechAI {
   constructor() {
     this.recognition = null;
@@ -247,39 +262,33 @@ export class LocalSpeechAI {
     const pitchValid = Boolean(pitchScoreObj && pitchScoreObj.valid);
     const hasTextMatch = Boolean(recognitionObj && typeof recognitionObj.matchScore === 'number');
 
+    const asrOnlyScore = hasTextMatch ? Math.min(ASR_ONLY_SCORE_CAP, recognitionObj.matchScore) : 0;
+
     if (mode === 'toneTrainer') {
-      // In Visual Tone Trainer mode, score is anchored on Chao tone contour accuracy,
-      // with resilient fallback protection if ASR confirms the user enunciated the exact word.
+      // Tone Trainer: the Chao contour score is the grade; an exact ASR match only adds
+      // a small bonus on top of an already passing tone.
       if (pitchValid) {
         finalScore = pitchScoreObj.score;
-        if (hasTextMatch && recognitionObj.exactMatch) {
-          if (finalScore >= 80) {
-            finalScore = Math.min(100, finalScore + 5);
-          } else if (finalScore >= 60) {
-            finalScore = Math.max(finalScore, 82);
-          } else {
-            // Low pitch score due to microphone clipping or flat line, but word was 100% correct
-            finalScore = Math.max(finalScore, 78);
-          }
+        if (hasTextMatch && recognitionObj.exactMatch && finalScore >= ASR_BONUS_MIN_PITCH_SCORE) {
+          finalScore += ASR_MATCH_BONUS;
         }
       } else if (hasTextMatch) {
-        finalScore = recognitionObj.exactMatch
-          ? Math.max(80, Math.round(recognitionObj.matchScore * 0.9))
-          : Math.round(recognitionObj.matchScore * 0.85);
+        finalScore = asrOnlyScore;
       }
     } else {
-      // In Vocab Practice and Minimal Pairs modes: balanced multi-pillar scoring
+      // Vocab Practice / Minimal Pairs: balanced tone + intelligibility, no floors.
       if (pitchValid && hasTextMatch) {
-        const weighted = Math.round(pitchScoreObj.score * 0.50 + recognitionObj.matchScore * 0.50);
-        finalScore = recognitionObj.exactMatch ? Math.max(80, weighted) : weighted;
+        finalScore = Math.round(
+          pitchScoreObj.score * PITCH_WEIGHT_VOCAB + recognitionObj.matchScore * TEXT_WEIGHT_VOCAB
+        );
       } else if (pitchValid) {
         finalScore = pitchScoreObj.score;
       } else if (hasTextMatch) {
-        finalScore = recognitionObj.matchScore;
+        finalScore = asrOnlyScore;
       }
     }
 
-    const overallScore = Math.min(100, Math.max(0, finalScore));
+    const overallScore = Math.min(SCORE_CEILING, Math.max(0, finalScore));
 
     // Consistently derive stars & message from the displayed overallScore
     let stars = 1;

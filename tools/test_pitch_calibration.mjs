@@ -6,7 +6,7 @@
 
 import assert from 'node:assert';
 import { MIN_SPEECH_FREQ, RMS_NOISE_FLOOR, detectPitchYin } from '../src/islands/PitchDetector.js';
-import { LocalSpeechAI } from '../src/islands/LocalSpeechAI.js';
+import { LocalSpeechAI, ASR_ONLY_SCORE_CAP, ASR_MATCH_BONUS } from '../src/islands/LocalSpeechAI.js';
 import { scorePitchContour } from '../src/islands/ToneScorer.js';
 import { analyzeToneSandhi, generateTargetPitchContour } from '../src/islands/ToneSandhi.js';
 
@@ -46,15 +46,26 @@ console.log('Testing Pitch Calibration & Fallback Scoring...');
   // Case A: Pitch tracking was invalid (e.g. mic too quiet)
   const invalidPitch = { valid: false, score: 0, message: 'Chưa thu được đủ âm thanh' };
   const combinedA = LocalSpeechAI.combineScores(invalidPitch, textMatch, 'toneTrainer');
-  assert(combinedA.overallScore >= 75, `Expected score >= 75 for correct word, got ${combinedA.overallScore}`);
-  assert(combinedA.stars >= 2, 'Should grant at least 2 stars for recognized word');
-  console.log('✅ PASSED: Fallback awards fair score when pitch tracking has insufficient frames');
+  assert.strictEqual(combinedA.overallScore, ASR_ONLY_SCORE_CAP, `ASR-only score must be capped at ${ASR_ONLY_SCORE_CAP}, got ${combinedA.overallScore}`);
+  assert.strictEqual(combinedA.stars, 2, 'Recognized word without verified tone earns 2 stars');
+  console.log('✅ PASSED: ASR-only fallback is capped because the tone is unverified');
 
-  // Case B: Pitch tracking had low score due to flat line, but ASR confirmed exact word
+  // Case B: Wrong/flat tone but ASR (which auto-corrects tones) still matched the word
   const lowPitch = { valid: true, score: 10, userChaoPitches: [3, 3, 3] };
   const combinedB = LocalSpeechAI.combineScores(lowPitch, textMatch, 'toneTrainer');
-  assert(combinedB.overallScore >= 70, `Expected score >= 70 when ASR confirmed exact word, got ${combinedB.overallScore}`);
-  console.log('✅ PASSED: High-confidence ASR prevents false low score on quiet microphones');
+  assert.strictEqual(combinedB.overallScore, 10, `ASR match must not lift a failing tone, got ${combinedB.overallScore}`);
+  console.log('✅ PASSED: ASR word match never masks a wrong tone');
+
+  // Case C: Passing tone + exact word earns only a small bonus
+  const goodPitch = { valid: true, score: 80, userChaoPitches: [5, 3, 1] };
+  const combinedC = LocalSpeechAI.combineScores(goodPitch, textMatch, 'toneTrainer');
+  assert.strictEqual(combinedC.overallScore, 80 + ASR_MATCH_BONUS);
+  console.log('✅ PASSED: Exact ASR match adds a small bonus to a passing tone');
+
+  // Case D: Vocab mode has no 80-point floor for exact matches
+  const combinedD = LocalSpeechAI.combineScores(lowPitch, textMatch, 'vocabPractice');
+  assert(combinedD.overallScore < 60, `Wrong tone must fail in vocab mode, got ${combinedD.overallScore}`);
+  console.log('✅ PASSED: Vocab mode no longer floors exact matches at 80');
 }
 
 // Test 5: ToneScorer accepts a short but real single syllable (~250 ms of voiced audio)
