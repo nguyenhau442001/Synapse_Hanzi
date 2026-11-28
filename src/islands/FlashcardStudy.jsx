@@ -1,5 +1,6 @@
 // Flashcard markup, filtering, statistics, and rendering.
 import { colorizePinyin, colorizePinyinHtml } from './pinyinTones.js';
+import { buildSyllableColumns } from './HanVietSyllables.js';
 import { formatStudyLevelLabel } from './AppUtils.js';
 import { APP_TIMEOUTS } from './AppTimeouts.js';
 
@@ -30,6 +31,28 @@ function getCardHintText(isFlipped) {
   return isFlipped ? 'Space để lật lại' : 'Space để lật';
 }
 window.getCardHintText = getCardHintText;
+
+const SYLLABLE_ROW_LABEL = 'Âm từng chữ: chữ Hán, pinyin, Hán Việt';
+
+// Fills the per-character row; returns true when it is shown (the lumped badge is then redundant).
+function renderSyllableRow(word, hanviet) {
+  const row = document.getElementById('cardSyllableRow');
+  if (!row) return false;
+  const columns = word ? buildSyllableColumns(word.hanzi, word.pinyin, hanviet) : null;
+  if (!columns) {
+    row.hidden = true;
+    row.innerHTML = '';
+    return false;
+  }
+  row.innerHTML = columns.map(({ char, pinyin, hanviet: reading }) => `
+    <span class="card-syllable-col">
+      <span class="card-syllable-char" lang="zh-CN">${window.escapeHtml(char)}</span>
+      <span class="card-syllable-pinyin">${colorizePinyin(pinyin)}</span>
+      <span class="card-syllable-hv">${window.escapeHtml(reading.toLocaleUpperCase('vi'))}</span>
+    </span>`).join('');
+  row.hidden = false;
+  return true;
+}
 
 function buildCardArea() {
   document.getElementById('cardArea').innerHTML = `
@@ -80,6 +103,12 @@ function buildCardArea() {
             <span class="hanviet-badge" id="hanvietBadge" title="Âm Hán - Việt"></span>
           </div>
 
+          <!-- Per-character breakdown for compounds: Hanzi / pinyin / Hán Việt columns (back only) -->
+          <div class="card-syllable-row" id="cardSyllableRow" aria-label="${SYLLABLE_ROW_LABEL}" hidden></div>
+
+          <!-- One-line character decomposition, e.g. 太 = 大 + 丶 (details stay in the accordion) -->
+          <div class="card-decomp-inline" id="cardDecompInline" aria-label="Cấu tạo chữ" hidden></div>
+
           <!-- Minh họa bổ trợ tinh gọn (Chỉ hiển thị khi có ảnh minh họa thực sự ý nghĩa) -->
           <div class="card-visual-col" id="cardVisualCol" style="display: none;">
             <div class="card-illustration-frame" id="cardIllustrationFrame" title="Minh họa gợi hình">
@@ -91,9 +120,6 @@ function buildCardArea() {
           <!-- Vùng chứa ẩn tương thích ngược -->
           <div class="card-supporting-group" id="cardSupportingGroup" style="display: none;"></div>
         </div>
-
-        <!-- One-line character decomposition, e.g. 太 = 大 + 丶 (details stay in the accordion) -->
-        <div class="card-decomp-inline" id="cardDecompInline" aria-label="Cấu tạo chữ" hidden></div>
 
         <!-- Grammar patterns for function words (back of the card only) -->
         <div class="card-patterns" id="cardPatterns" hidden></div>
@@ -1482,6 +1508,7 @@ function render(animate) {
       document.getElementById('pinyin').textContent = '';
       const emptyHv = document.getElementById('hanvietBadge');
       if (emptyHv) { emptyHv.textContent = ''; emptyHv.style.display = 'none'; }
+      renderSyllableRow(null, '');
       const emptyPos = document.getElementById('posBadge');
       if (emptyPos) { emptyPos.textContent = ''; emptyPos.hidden = true; emptyPos.style.display = 'none'; }
       const emptyLevel = document.getElementById('levelBadge');
@@ -1555,7 +1582,12 @@ function render(animate) {
         cleanMeaning.startsWith(cleanHv + ',') ||
         cleanMeaning.startsWith(cleanHv + ' ')
       );
-      if (hv && !isDuplicateOfMeaning) {
+      const hasSyllableRow = renderSyllableRow(w, hv);
+      if (hasSyllableRow) {
+        hvBadge.textContent = '';
+        hvBadge.hidden = true;
+        hvBadge.style.display = 'none';
+      } else if (hv && !isDuplicateOfMeaning) {
         // Labelled explicitly so it never reads as an unnamed tag after the part of speech.
         hvBadge.innerHTML = `<span class="hanviet-label">Hán Việt:</span> <b class="hanviet-value">${window.escapeHtml(hv.toLocaleUpperCase('vi'))}</b>`;
         hvBadge.title = `Âm Hán - Việt: ${hv}`;

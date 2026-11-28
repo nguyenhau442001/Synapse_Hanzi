@@ -1163,6 +1163,51 @@ body.flashcard-study-mode .pinyin .tone-5 { color: var(--tone-5); }
 html.tone-colors-off .tone,
 html.tone-colors-off body.flashcard-study-mode .pinyin .tone { color: inherit; }
 
+/* Per-character row (back of the card): 大/dà/ĐẠI · 自/zì/TỰ · 然/rán/NHIÊN */
+.card-syllable-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 22px;
+  margin: 0 auto 10px;
+}
+.card-syllable-row[hidden],
+.card:not(.is-flipped) .card-syllable-row,
+body.hide-hanviet .card-syllable-row,
+html.hide-hanviet .card-syllable-row { display: none !important; }
+.card-syllable-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  min-width: 44px;
+}
+.card-syllable-char {
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.card-syllable-pinyin {
+  font-size: 14px;
+  line-height: 1.3;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+.card-syllable-hv {
+  font-size: 12px;
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+}
+.card.is-flipped .card-syllable-row {
+  animation: cardRevealFade 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+@media (prefers-reduced-motion: reduce) {
+  .card.is-flipped .card-syllable-row { animation: none; }
+}
+
 /* Inline decomposition line (back of the card) */
 .card-decomp-inline {
   display: flex;
@@ -4800,13 +4845,15 @@ body.flashcard-study-mode .card.is-flipped .card-visual-col[hidden] {
 @media (min-width: 768px) {
   body.flashcard-study-mode .card.is-flipped .word-hero-container.has-illustration {
     display: grid;
-    grid-template-rows: 1fr auto auto auto auto 1fr;
+    grid-template-rows: 1fr auto auto auto auto auto auto 1fr;
     grid-template-areas:
       ".       visual"
       "hanzi   visual"
       "pinyin  visual"
       "meaning visual"
       "meta    visual"
+      "syll    visual"
+      "decomp  visual"
       ".       visual";
     align-items: center;
     justify-items: center;
@@ -4817,6 +4864,8 @@ body.flashcard-study-mode .card.is-flipped .card-visual-col[hidden] {
   body.flashcard-study-mode .card.is-flipped .word-hero-container.has-illustration > .pinyin-row { grid-area: pinyin; }
   body.flashcard-study-mode .card.is-flipped .word-hero-container.has-illustration > .meaning { grid-area: meaning; }
   body.flashcard-study-mode .card.is-flipped .word-hero-container.has-illustration > .meta-badges-row { grid-area: meta; }
+  body.flashcard-study-mode .card.is-flipped .word-hero-container.has-illustration > .card-syllable-row { grid-area: syll; }
+  body.flashcard-study-mode .card.is-flipped .word-hero-container.has-illustration > .card-decomp-inline { grid-area: decomp; }
   body.flashcard-study-mode .card.is-flipped .word-hero-container.has-illustration > .card-supporting-group { display: none !important; }
 
   body.flashcard-study-mode .card.is-flipped .word-hero-container.has-illustration > .card-visual-col {
