@@ -44,12 +44,14 @@ jobs:
       - name: Test
         run: npm test
 
+      # `books` is a symlink into the excluded exam_materials/, so it is excluded without a
+      # trailing slash (a dangling link makes upload-pages-artifact's tar fail).
       - name: Assemble the published site (source, tooling and raw materials excluded)
         run: |
           rsync -a ./ _site/ \
             --exclude '.git/' --exclude '.github/' --exclude 'node_modules/' --exclude '_site/' \
             --exclude 'src/' --exclude 'tools/' --exclude 'tests/' --exclude 'docs/' \
-            --exclude 'exam_materials/' --exclude 'books/' --exclude 'dist/' --exclude 'config/*.local*' \
+            --exclude 'exam_materials/' --exclude 'books' --exclude 'dist/' --exclude 'config/*.local*' \
             --exclude '.env*' --exclude '*.md' --exclude 'package*.json' --exclude '*.config.mjs' \
             --exclude 'eslint.config.mjs' --exclude 'jsconfig.json'
           du -sh _site
