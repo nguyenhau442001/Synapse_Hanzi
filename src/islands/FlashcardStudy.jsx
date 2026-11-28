@@ -552,8 +552,8 @@ function studyDirectionSelectHtml() {
     </label>`;
 }
 
-// Directions whose front shows (or is) the Chinese word, so it is spoken on card load.
-const AUTO_SPEAK_DIRECTIONS = new Set(['zh2vi', 'listen']);
+// Directions whose front is audio-only, so the word is spoken on card load.
+const AUTO_SPEAK_DIRECTIONS = new Set(['listen']);
 
 // Front of the card for the non-default directions. Hán -> nghĩa keeps the Hanzi front.
 function renderDirectionPrompt(word) {
