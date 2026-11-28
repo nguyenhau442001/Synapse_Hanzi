@@ -125,7 +125,7 @@ export function cloudCopy(key, raw) {
     const record = JSON.parse(raw);
     return JSON.stringify({ ...record, cards: compactSrsCards(record.cards) });
   }
-  if (rule.merge === 'append_log') {
+  if (rule.merge === 'append_log' || rule.merge === 'id_log') {
     const log = JSON.parse(raw);
     return Array.isArray(log) && log.length > SYNC_MAX_LOG_ENTRIES ? JSON.stringify(log.slice(-SYNC_MAX_LOG_ENTRIES)) : raw;
   }

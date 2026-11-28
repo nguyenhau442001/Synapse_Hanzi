@@ -15,6 +15,9 @@ export const BACKUP_MAX_VALUE_CHARS = 8 * 1024 * 1024;
 /** Upper bound on the number of entries a backup may contain. */
 export const BACKUP_MAX_ENTRIES = 2000;
 
+/** Safety cap on entries kept after merging an id_log value (newest kept). */
+export const ID_LOG_MAX_ENTRIES = 5000;
+
 /** Keys that must never be copied from untrusted objects (prototype pollution guard). */
 export const UNSAFE_OBJECT_KEYS = Object.freeze(['__proto__', 'constructor', 'prototype']);
 

@@ -7,6 +7,7 @@ import {
   BACKUP_MAX_FILE_BYTES,
   BACKUP_MAX_VALUE_CHARS,
   BACKUP_MAX_ENTRIES,
+  ID_LOG_MAX_ENTRIES,
   UNSAFE_OBJECT_KEYS,
 } from './SyncConstants.js';
 import { resolveSyncKey, listSyncKeys } from './SyncRegistry.js';
@@ -72,7 +73,7 @@ export function isValidEntry(key, raw) {
   if (resolved.rule.merge === 'srs_cards') {
     return isPlainObject(parsed) && parsed.schemaVersion === SRS_SCHEMA_VERSION && isPlainObject(parsed.cards);
   }
-  if (resolved.rule.merge === 'append_log') return Array.isArray(parsed);
+  if (resolved.rule.merge === 'append_log' || resolved.rule.merge === 'id_log') return Array.isArray(parsed);
   if (resolved.rule.merge === 'day_map') return isPlainObject(parsed) && isPlainObject(parsed.days);
   return parsed !== null && typeof parsed === 'object';
 }
@@ -188,6 +189,28 @@ function mergeLogs(localRaw, incomingRaw) {
 }
 
 /**
+ * Union two id-keyed logs. On an id clash the entry with the newer updatedAt wins, so a later
+ * edit (e.g. a mistake reason tagged on another device) is never lost. Ordered by timestamp
+ * and capped to the newest ID_LOG_MAX_ENTRIES.
+ * @param {string|null} localRaw
+ * @param {string} incomingRaw
+ */
+function mergeIdLogs(localRaw, incomingRaw) {
+  let local = [];
+  try { local = localRaw ? JSON.parse(localRaw) : []; } catch { local = []; }
+  if (!Array.isArray(local)) local = [];
+  /** @type {Map<string, any>} */
+  const byId = new Map();
+  for (const entry of [...local, ...JSON.parse(incomingRaw)]) {
+    if (!isPlainObject(entry) || typeof entry.id !== 'string' || !entry.id) continue;
+    const existing = byId.get(entry.id);
+    if (!existing || String(entry.updatedAt || '') > String(existing.updatedAt || '')) byId.set(entry.id, entry);
+  }
+  const merged = [...byId.values()].sort((a, b) => String(a.timestamp).localeCompare(String(b.timestamp)));
+  return JSON.stringify(merged.slice(-ID_LOG_MAX_ENTRIES));
+}
+
+/**
  * Merge two days of study activity: words are unioned, time takes the larger value (each device
  * measures its own session, so the max never double counts), `active` is true if either says so.
  */
@@ -236,6 +259,7 @@ export function mergeEntry(key, localRaw, incomingRaw, normalizeCard = defaultNo
   if (!resolved) throw new Error('Key is not syncable: ' + key);
   if (resolved.rule.merge === 'srs_cards') return mergeSrsRecords(localRaw, incomingRaw, normalizeCard);
   if (resolved.rule.merge === 'append_log') return mergeLogs(localRaw, incomingRaw);
+  if (resolved.rule.merge === 'id_log') return mergeIdLogs(localRaw, incomingRaw);
   if (resolved.rule.merge === 'day_map') return mergeActivity(localRaw, incomingRaw);
   return incomingRaw;
 }

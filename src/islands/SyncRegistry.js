@@ -3,9 +3,10 @@
 // key (theme, UI layout, install prompts, auth tokens, caches) stays on the device.
 
 /**
- * @typedef {'srs_cards'|'append_log'|'day_map'|'lww'} MergeStrategy
+ * @typedef {'srs_cards'|'append_log'|'id_log'|'day_map'|'lww'} MergeStrategy
  *   srs_cards  : per-word FSRS card merge, the more recently reviewed card wins.
  *   append_log : array union with de-duplication (review history).
+ *   id_log     : array union keyed by entry.id; on a clash the entry with the newer updatedAt wins.
  *   day_map    : per-day study activity union (streaks survive studying on two devices).
  *   lww        : the incoming value replaces the local value (last write wins).
  */
@@ -41,6 +42,8 @@ export const SYNC_RULES = Object.freeze([
   { group: 'exams', merge: 'lww', format: 'json', keys: ['hsk30_exam_history_v1', 'hskk_exam_history_v1', 'hsk30_error_notebook_v1', 'hsk_weak_words_v1'] },
   { group: 'courses', merge: 'lww', format: 'json', keys: ['hsk_curriculum_v1', 'hsk_writing_v1', 'hsk4_sentence_solved'] },
   { group: 'courses', merge: 'lww', format: 'text', keys: ['hsk_speed_quiz_best'] },
+  // Per-question listening drill log (ListeningConstants.LISTENING_ATTEMPTS_KEY).
+  { group: 'listening', merge: 'id_log', format: 'json', keys: ['hsk_listening_attempts_v1'] },
   { group: 'profile', merge: 'lww', format: 'text', personal: true, keys: ['hsk_profile_name'] },
   // Leaderboard opt-in, public nickname/seal and joined weeks (LeagueConstants.LEAGUE_PROFILE_KEY).
   { group: 'league', merge: 'lww', format: 'json', keys: ['hsk_league_profile_v1'] },
