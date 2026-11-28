@@ -242,7 +242,7 @@ body.home-screen #screenPicker .level-status-badge {
    Specificity (1 id + 3 classes) outranks every remaining .level-card rule.
    Line-heights are tuned so card heights match the previous typography. */
 :root {
-  --card-font: "Nunito Sans", "Be Vietnam Pro", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  --card-font: "Pinyin Caron", "Nunito Sans", "Be Vietnam Pro", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
   --card-title-size: 19px;
   --card-title-weight: 600;
   --card-number-size: 20px;

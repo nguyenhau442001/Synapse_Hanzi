@@ -48,7 +48,7 @@ def test_flat_surfaces_no_gradients_or_card_shadows():
 def test_brand_fonts_loaded_with_fallbacks():
     assert "fonts.googleapis.com/css2?family=Be+Vietnam+Pro" in INDEX
     assert "Noto+Serif+SC" in INDEX
-    assert '--font-sans: "Be Vietnam Pro",' in BASE_CSS
+    assert '--font-sans: "Pinyin Caron", "Be Vietnam Pro",' in BASE_CSS
     assert '--font-zh: "Noto Serif SC", "Songti SC"' in BASE_CSS
 
 

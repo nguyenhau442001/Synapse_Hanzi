@@ -74,6 +74,52 @@ def get_pinyin_str(text):
         res.append(p[0])
     return " ".join(res).strip()
 
+def is_cjk(ch):
+    return '一' <= ch <= '鿿'
+
+def sentence_syllables(line, zh_text):
+    """Split an authored sentence-level pinyin line into one syllable per CJK char.
+
+    Returns None when the syllable count does not match the CJK char count, so callers can
+    fall back to per-token generation instead of misaligning.
+    """
+    if not line:
+        return None
+    syllables = [part for part in line.split() if any(c.isalpha() for c in part)]
+    cjk_count = sum(1 for ch in zh_text if is_cjk(ch))
+    return syllables if len(syllables) == cjk_count else None
+
+def align_token_pinyin_to_sentence(entry):
+    """Fill token pinyin from the authored sentence pinyin by char position.
+
+    The sentence pinyin is hand-written from the source exam and carries neutral tones
+    ('péng you', 'míng zi') that per-char pypinyin lookups lose. Han-Viet is not aligned:
+    the sentence-level Han-Viet lines are less reliable than the curated dictionary.
+    Tokens must cover the sentence in order; any gap disables alignment for that entry.
+    """
+    zh_text = entry["zh"]
+    py_syllables = sentence_syllables(entry.get("pinyin"), zh_text)
+    if not py_syllables:
+        return
+    cursor = 0
+    cjk_index = 0
+    spans = []
+    for token in entry.get("tokens", []):
+        t_text = token["text"]
+        start = zh_text.find(t_text, cursor)
+        if start < 0:
+            return
+        cjk_index += sum(1 for ch in zh_text[cursor:start] if is_cjk(ch))
+        width = sum(1 for ch in t_text if is_cjk(ch))
+        spans.append((token, cjk_index, width))
+        cjk_index += width
+        cursor = start + len(t_text)
+    for token, start, width in spans:
+        if width == 0:
+            continue
+        if not token.get("pinyin"):
+            token["pinyin"] = " ".join(py_syllables[start:start + width])
+
 def enrich_entry(entry):
     # Full pinyin and hanviet
     zh_text = entry["zh"]
@@ -81,7 +127,9 @@ def enrich_entry(entry):
         entry["pinyin"] = get_pinyin_str(zh_text)
     if "hanviet" not in entry or not entry["hanviet"]:
         entry["hanviet"] = get_hanviet(zh_text)
-        
+
+    align_token_pinyin_to_sentence(entry)
+
     # Enrich tokens
     for token in entry.get("tokens", []):
         t_text = token["text"]

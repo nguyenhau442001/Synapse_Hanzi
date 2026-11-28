@@ -22,7 +22,7 @@ body {
   margin: 0;
   background: var(--privacy-bg);
   color: var(--privacy-text);
-  font-family: "Be Vietnam Pro", Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-family: "Pinyin Caron", "Be Vietnam Pro", Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   line-height: 1.65;
 }
 .privacy {

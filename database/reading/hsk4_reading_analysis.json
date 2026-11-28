@@ -20,7 +20,7 @@
         "text": "困难",
         "type": "core",
         "role": "Trung tâm ngữ của chủ ngữ (khó khăn, trở ngại)",
-        "pinyin": "kùn nán",
+        "pinyin": "kùn nan",
         "hanviet": "Khốn Nan",
         "meaning": "khó khăn"
       },
@@ -130,7 +130,7 @@
         "text": "得",
         "type": "grammar",
         "role": "Trợ từ kết cấu bổ ngữ mức độ/trạng thái",
-        "pinyin": "dé",
+        "pinyin": "de",
         "hanviet": "Đắc",
         "meaning": "được (trợ từ)"
       },
@@ -313,7 +313,7 @@
         "type": "normal",
         "role": "Chủ ngữ tên riêng (Mary)",
         "pinyin": "mǎ lì",
-        "hanviet": "Mã Ly"
+        "hanviet": "Mã Lệ"
       },
       {
         "text": "送",
@@ -327,7 +327,7 @@
         "text": "男朋友",
         "type": "core",
         "role": "Tân ngữ gián tiếp chỉ người (bạn trai)",
-        "pinyin": "nán péng yǒu",
+        "pinyin": "nán péng you",
         "hanviet": "Nam Bằng Hữu"
       },
       {
@@ -639,7 +639,7 @@
         "text": "一本",
         "type": "core",
         "role": "Số lượng từ (cuốn/quyển)",
-        "pinyin": "yī běn",
+        "pinyin": "yì běn",
         "hanviet": "Nhất Bản"
       },
       {
@@ -898,7 +898,7 @@
         "text": "黑板上",
         "type": "core",
         "role": "Chủ ngữ nơi chốn tồn hiện (trên bảng đen)",
-        "pinyin": "hēi bǎn shàng",
+        "pinyin": "hēi bǎn shang",
         "hanviet": "Hắc Bản Thướng"
       },
       {
@@ -928,7 +928,7 @@
         "text": "名字",
         "type": "normal",
         "role": "Tân ngữ tồn tại (họ tên)",
-        "pinyin": "míng zì",
+        "pinyin": "míng zi",
         "hanviet": "Danh Tự",
         "meaning": "tên"
       }
@@ -989,7 +989,7 @@
         "text": "我喜欢在安静的地方学习",
         "type": "core",
         "role": "Sở thích và thói quen mở đầu (C)",
-        "pinyin": "wǒ xǐ huān zài ān jìng de dì fāng xué xí",
+        "pinyin": "wǒ xǐ huan zài ān jìng de dì fang xué xí",
         "hanviet": "Ngã Hỷ Hoan Tại An Tĩnh Đích Địa Phương Học Tập"
       },
       {
@@ -1004,7 +1004,7 @@
         "text": "宿舍里音乐声总是不断",
         "type": "core",
         "role": "Thực tế mâu thuẫn ồn ào (B)",
-        "pinyin": "sù shè lǐ yīn yuè shēng zǒng shì bù duàn",
+        "pinyin": "sù shè lǐ yīn yuè shēng zǒng shì bú duàn",
         "hanviet": "Túc Xá Lý Âm Lạc Thanh Tổng Thị Bất Đoạn"
       },
       {
@@ -1083,7 +1083,7 @@
         "text": "我之所以喜欢王宣",
         "type": "core",
         "role": "Mở đầu với 之所以 (sở dĩ) (B)",
-        "pinyin": "wǒ zhī suǒ yǐ xǐ huān wáng xuān",
+        "pinyin": "wǒ zhī suǒ yǐ xǐ huan wáng xuān",
         "hanviet": "Ngã Chi Sở Dĩ Hỷ Hoan Vương Tuyên"
       },
       {
@@ -1097,7 +1097,7 @@
         "text": "她长得漂亮",
         "type": "normal",
         "role": "Yếu tố ngoại hình",
-        "pinyin": "tā zhǎng dé piào liàng",
+        "pinyin": "tā zhǎng de piào liang",
         "hanviet": "Tha Trường Đắc Phiêu Lượng"
       },
       {
@@ -1211,7 +1211,7 @@
         "text": "见过他",
         "type": "core",
         "role": "Gặp gỡ anh ấy",
-        "pinyin": "jiàn guò tā",
+        "pinyin": "jiàn guo tā",
         "hanviet": "Kiến Quá Tha"
       }
     ],
@@ -3217,7 +3217,7 @@
         "type": "core",
         "role": "V2",
         "meaning": "đừng tiếp xúc",
-        "pinyin": "bú yào jiē chù",
+        "pinyin": "bù yào jiē chù",
         "hanviet": "Bất Yêu Tiếp Xúc"
       }
     ],
@@ -4368,7 +4368,7 @@
         "text": "一遍",
         "type": "core",
         "role": "Bổ ngữ động lượng",
-        "pinyin": "yī biàn",
+        "pinyin": "yí biàn",
         "hanviet": "Nhất Biến"
       }
     ],
@@ -4542,7 +4542,7 @@
         "text": "谁",
         "type": "normal",
         "role": "Đại từ nghi vấn (ai)",
-        "pinyin": "shuí",
+        "pinyin": "shéi",
         "hanviet": "Thuỳ",
         "meaning": "ai"
       },
@@ -4739,7 +4739,7 @@
         "text": "哥哥",
         "type": "normal",
         "role": "Chủ ngữ A",
-        "pinyin": "gē gē",
+        "pinyin": "gē ge",
         "hanviet": "Ca Ca",
         "meaning": "anh trai"
       },
@@ -5300,7 +5300,7 @@
         "text": "行李",
         "type": "core",
         "role": "Danh từ (hành lý)",
-        "pinyin": "xíng lǐ",
+        "pinyin": "xíng li",
         "hanviet": "Hành Lí/hành Lý"
       },
       {
@@ -5711,7 +5711,7 @@
         "text": "师傅",
         "type": "core",
         "role": "Từ xưng hô tôn kính (thợ/bác tài)",
-        "pinyin": "shī fù",
+        "pinyin": "shī fu",
         "hanviet": "Sư Phó/sư Phụ",
         "meaning": "thầy, sư phụ (người thợ)"
       },
@@ -6049,7 +6049,7 @@
         "text": "刚刚",
         "type": "core",
         "role": "Phó từ thời gian (vừa mới)",
-        "pinyin": "gāng gāng",
+        "pinyin": "gāng gang",
         "hanviet": "Cương Cương"
       },
       {
@@ -6377,7 +6377,7 @@
         "text": "一带",
         "type": "core",
         "role": "Danh từ vùng ven / khu vực",
-        "pinyin": "yī dài",
+        "pinyin": "yí dài",
         "hanviet": "Nhất Đới"
       },
       {
@@ -6611,7 +6611,7 @@
         "text": "叔叔",
         "type": "normal",
         "role": "Đối tượng thụ hưởng (chú)",
-        "pinyin": "shū shū",
+        "pinyin": "shū shu",
         "hanviet": "Thúc Thúc",
         "meaning": "chú (em trai của bố)"
       }
@@ -7141,7 +7141,7 @@
         "text": "没有朋友",
         "type": "core",
         "role": "Giả thiết tiêu cực",
-        "pinyin": "méi yǒu péng yǒu",
+        "pinyin": "méi yǒu péng you",
         "hanviet": "Một Hữu Bằng Hữu"
       },
       {
@@ -7256,7 +7256,7 @@
         "text": "世界上",
         "type": "normal",
         "role": "Phạm vi không gian toàn cầu",
-        "pinyin": "shì jiè shàng",
+        "pinyin": "shì jiè shang",
         "hanviet": "Thế Giới Thướng"
       },
       {
@@ -7376,7 +7376,7 @@
         "text": "的时候",
         "type": "normal",
         "role": "Thời điểm diễn ra sự việc",
-        "pinyin": "de shí hòu",
+        "pinyin": "de shí hou",
         "hanviet": "Đích Thời Hậu"
       },
       {
@@ -7398,7 +7398,7 @@
         "text": "对方的眼睛",
         "type": "normal",
         "role": "Ánh mắt đối phương",
-        "pinyin": "duì fāng de yǎn jīng",
+        "pinyin": "duì fāng de yǎn jing",
         "hanviet": "Đối Phương Đích Nhãn Tình"
       },
       {
@@ -7488,7 +7488,7 @@
         "text": "司机朋友",
         "type": "core",
         "role": "Kiêm ngữ (vừa là tân ngữ của 提醒 vừa là chủ ngữ của 要注意)",
-        "pinyin": "sī jī péng yǒu",
+        "pinyin": "sī jī péng you",
         "hanviet": "Ti Cơ Bằng Hữu"
       },
       {
@@ -7582,7 +7582,7 @@
         "text": "姐姐",
         "type": "normal",
         "role": "Chủ ngữ",
-        "pinyin": "jiě jiě",
+        "pinyin": "jiě jie",
         "hanviet": "Tỷ Tỷ",
         "meaning": "chị gái"
       },
@@ -7907,7 +7907,7 @@
         "text": "告诉",
         "type": "normal",
         "role": "Động từ (bảo, cho biết)",
-        "pinyin": "gào sù",
+        "pinyin": "gào su",
         "hanviet": "Cáo Tố",
         "meaning": "nói cho biết"
       },
@@ -8344,7 +8344,7 @@
         "text": "困难",
         "type": "core",
         "role": "Danh từ tân ngữ (khó khăn, trở ngại)",
-        "pinyin": "kùn nán",
+        "pinyin": "kùn nan",
         "hanviet": "Khốn Nan",
         "meaning": "khó khăn"
       }
@@ -8508,7 +8508,7 @@
         "text": "我经常跟中国人做生意",
         "type": "core",
         "role": "Hoàn cảnh tiền đề (C)",
-        "pinyin": "wǒ jīng cháng gēn zhōng guó rén zuò shēng yì",
+        "pinyin": "wǒ jīng cháng gēn zhōng guó rén zuò shēng yi",
         "hanviet": "Ngã Kinh Thường Cân Trung Quốc Nhân Tố Sinh Ý"
       },
       {
@@ -8623,7 +8623,7 @@
         "text": "为那个目标而奋斗",
         "type": "core",
         "role": "Điều kiện cần thứ hai (C)",
-        "pinyin": "wèi nà ge mù biāo ér fèn dòu",
+        "pinyin": "wèi nà gè mù biāo ér fèn dòu",
         "hanviet": "Vi Na Cá Mục Tiêu Nhi Phấn Đẩu"
       },
       {
@@ -8710,7 +8710,7 @@
         "text": "多听、多练",
         "type": "normal",
         "role": "Hành vi tích lũy",
-        "pinyin": "duō tīng 、 duō liàn",
+        "pinyin": "duō tīng duō liàn",
         "hanviet": "Đa Thính 、 Đa Luyện"
       },
       {
@@ -8814,7 +8814,7 @@
         "text": "不错",
         "type": "normal",
         "role": "Khá tốt",
-        "pinyin": "bù cuò",
+        "pinyin": "bú cuò",
         "hanviet": "Bất Thác"
       },
       {
@@ -8852,7 +8852,7 @@
         "text": "休息日",
         "type": "core",
         "role": "Ngày nghỉ định kỳ",
-        "pinyin": "xiū xī rì",
+        "pinyin": "xiū xi rì",
         "hanviet": "Hưu Tức Nhật"
       }
     ],
@@ -9321,7 +9321,7 @@
         "text": "不",
         "type": "grammar",
         "role": "Phó từ phủ định",
-        "pinyin": "bù",
+        "pinyin": "bú",
         "hanviet": "Bất",
         "meaning": "không"
       },
@@ -9455,7 +9455,7 @@
         "text": "黑板上",
         "type": "core",
         "role": "Tân ngữ nơi chốn (trên bảng đen)",
-        "pinyin": "hēi bǎn shàng",
+        "pinyin": "hēi bǎn shang",
         "hanviet": "Hắc Bản Thướng"
       }
     ],
@@ -9539,7 +9539,7 @@
         "text": "态度",
         "type": "core",
         "role": "Chủ ngữ danh từ (thái độ)",
-        "pinyin": "tài dù",
+        "pinyin": "tài du",
         "hanviet": "Thái Độ",
         "meaning": "thái độ"
       },
@@ -9856,7 +9856,7 @@
         "text": "过",
         "type": "grammar",
         "role": "Trợ từ động thái chỉ kinh nghiệm trong quá khứ",
-        "pinyin": "guò",
+        "pinyin": "guo",
         "hanviet": "Quá",
         "meaning": "đã từng (trợ từ)"
       },
@@ -9953,7 +9953,7 @@
         "text": "我现在觉得很精神",
         "type": "normal",
         "role": "Hệ quả tích cực thể chất và tinh thần (A)",
-        "pinyin": "wǒ xiàn zài jué de hěn jīng shén",
+        "pinyin": "wǒ xiàn zài jué de hěn jīng shen",
         "hanviet": "Ngã Hiện Tại Giác Đắc Ngận Tinh Thần"
       }
     ],
@@ -11326,7 +11326,7 @@
         "text": "过",
         "type": "grammar",
         "role": "Trợ từ động thái chỉ kinh nghiệm",
-        "pinyin": "guò",
+        "pinyin": "guo",
         "hanviet": "Quá",
         "meaning": "đã từng (trợ từ)"
       },
@@ -11576,7 +11576,7 @@
         "text": "下楼的时候",
         "type": "normal",
         "role": "Thời điểm",
-        "pinyin": "xià lóu de shí hòu",
+        "pinyin": "xià lóu de shí hou",
         "hanviet": "Hạ Lâu Đích Thời Hậu"
       },
       {
@@ -11614,7 +11614,7 @@
         "text": "下去",
         "type": "grammar",
         "role": "Bổ ngữ xu hướng kép (xuống dưới)",
-        "pinyin": "xià qù",
+        "pinyin": "xià qu",
         "hanviet": "Hạ Khứ"
       }
     ],
@@ -12159,7 +12159,7 @@
         "text": "一年四季",
         "type": "core",
         "role": "Thành ngữ thời gian (bốn mùa quanh năm)",
-        "pinyin": "yī nián sì jì",
+        "pinyin": "yì nián sì jì",
         "hanviet": "Nhất Niên Tứ Quý"
       },
       {
@@ -12250,7 +12250,7 @@
         "text": "一",
         "type": "grammar",
         "role": "Cặp liên từ điều kiện liên tiếp (hễ/vừa)",
-        "pinyin": "yī",
+        "pinyin": "yí",
         "hanviet": "Nhất",
         "meaning": "một"
       },
@@ -12739,14 +12739,14 @@
         "text": "她从小就想成为一名歌手",
         "type": "core",
         "role": "Ước mơ thời thơ ấu (A)",
-        "pinyin": "tā cóng xiǎo jiù xiǎng chéng wéi yī míng gē shǒu",
+        "pinyin": "tā cóng xiǎo jiù xiǎng chéng wéi yì míng gē shǒu",
         "hanviet": "Tha Tòng Tiểu Tựu Tưởng Thành Vi Nhất Danh Ca Thủ"
       },
       {
         "text": "经过不断的努力",
         "type": "core",
         "role": "Quá trình kiên trì phấn đấu (C)",
-        "pinyin": "jīng guò bù duàn de nǔ lì",
+        "pinyin": "jīng guò bú duàn de nǔ lì",
         "hanviet": "Kinh Quá Bất Đoạn Đích Nỗ Lực"
       },
       {
@@ -12840,7 +12840,7 @@
         "text": "尊敬老师，爱护同学",
         "type": "core",
         "role": "Phẩm chất đạo đức thứ hai (C)",
-        "pinyin": "zūn jìng lǎo shī ， ài hù tóng xué",
+        "pinyin": "zūn jìng lǎo shī ài hù tóng xué",
         "hanviet": "Tôn Kính Lão Sư ， Ái Hộ Đồng Học"
       },
       {
@@ -12854,7 +12854,7 @@
         "text": "连续三年被评为优秀学生",
         "type": "core",
         "role": "Danh hiệu vinh danh đạt được (A)",
-        "pinyin": "lián xù sān nián bèi píng wéi yōu xiù xué shēng",
+        "pinyin": "lián xù sān nián bèi píng wéi yōu xiù xué sheng",
         "hanviet": "Liên Tục Tam Niên Bị Bình Vi Ưu Tú Học Sinh"
       }
     ],
@@ -13109,7 +13109,7 @@
         "text": "得",
         "type": "grammar",
         "role": "Trợ từ kết cấu bổ ngữ trạng thái",
-        "pinyin": "dé",
+        "pinyin": "de",
         "hanviet": "Đắc",
         "meaning": "được (trợ từ)"
       },
@@ -13186,7 +13186,7 @@
         "text": "路上的",
         "type": "normal",
         "role": "Định ngữ nơi chốn",
-        "pinyin": "lù shàng de",
+        "pinyin": "lù shang de",
         "hanviet": "Lộ Thướng Đích"
       },
       {
@@ -13767,7 +13767,7 @@
         "text": "一",
         "type": "grammar",
         "role": "Liên từ chỉ sự việc liền kề (vừa mới)",
-        "pinyin": "yī",
+        "pinyin": "yí",
         "hanviet": "Nhất",
         "meaning": "một"
       },
@@ -13874,7 +13874,7 @@
         "text": "电脑桌上",
         "type": "core",
         "role": "Nơi chốn phương vị (trên bàn vi tính)",
-        "pinyin": "diàn nǎo zhuō shàng",
+        "pinyin": "diàn nǎo zhuō shang",
         "hanviet": "Điện Não Trác Thướng"
       },
       {
@@ -13966,7 +13966,7 @@
         "text": "能不能",
         "type": "grammar",
         "role": "Hình thức câu hỏi chính phản (có thể hay không)",
-        "pinyin": "néng bù néng",
+        "pinyin": "néng bu néng",
         "hanviet": "Năng Bất Năng"
       },
       {
@@ -13988,7 +13988,7 @@
         "text": "一下",
         "type": "grammar",
         "role": "Động lượng từ giảm nhẹ sắc thái (một chút)",
-        "pinyin": "yī xià",
+        "pinyin": "yí xià",
         "hanviet": "Nhất Hạ",
         "meaning": "một chút, thử xem"
       }
@@ -14136,14 +14136,14 @@
         "text": "不管是誰",
         "type": "core",
         "role": "Phạm vi điều kiện vô điều kiện với 不管 (B)",
-        "pinyin": "bù guǎn shì shuí",
+        "pinyin": "bù guǎn shì shéi",
         "hanviet": "Bất Quản Thị Thuỳ"
       },
       {
         "text": "你都不要告诉他",
         "type": "core",
         "role": "Yêu cầu hành động kiên quyết với 都 (A)",
-        "pinyin": "nǐ dōu bú yào gào sù tā",
+        "pinyin": "nǐ dōu bú yào gào su tā",
         "hanviet": "Nễ Đô Bất Yêu Cáo Tố Tha"
       },
       {
@@ -14222,7 +14222,7 @@
         "text": "怪不得",
         "type": "grammar",
         "role": "Liên từ khẩu ngữ biểu thị vỡ lẽ ra nguyên nhân (hèn chi/thảo nào)",
-        "pinyin": "guài bù dé",
+        "pinyin": "guài bu de",
         "hanviet": "Quái Bất Đắc"
       },
       {
@@ -14329,7 +14329,7 @@
         "text": "多少人",
         "type": "core",
         "role": "Bao nhiêu khách",
-        "pinyin": "duō shǎo rén",
+        "pinyin": "duō shao rén",
         "hanviet": "Đa Thiểu Nhân"
       },
       {
