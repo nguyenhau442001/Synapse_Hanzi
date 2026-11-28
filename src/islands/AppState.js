@@ -150,9 +150,9 @@ export let showHanViet = (function() {
 export let showIllustration = (function() {
   try {
     const saved = localStorage.getItem('hsk_show_illustrations_v2');
-    return saved !== null ? saved === 'true' : false;
+    return saved !== null ? saved === 'true' : true;
   } catch (e) {
-    return false;
+    return true;
   }
 })();
 if (typeof document !== 'undefined') {

@@ -39,7 +39,7 @@ export const studyState = signal({
   currentFilter: 'all',
   showPinyin: true,
   showHanViet: readBooleanPref('hsk_show_hanviet', true),
-  showIllustration: readBooleanPref('hsk_show_illustrations_v2', false),
+  showIllustration: readBooleanPref('hsk_show_illustrations_v2', true),
   srsRetention: 0.9,
   activeStudyWord: null,
 });
