@@ -271,7 +271,10 @@ export const authController = createAuthController({
   storage: typeof localStorage !== 'undefined' ? localStorage : memoryStorage(),
   isConfigured: isFirebaseConfigured(),
   // SyncController owns cloud access (imported lazily to avoid a circular import).
-  deleteCloudData: async (uid) => (await import('./SyncController.js')).deleteCloudProgress(uid),
+  deleteCloudData: async (uid) => {
+    await (await import('./LeagueService.js')).deleteLeagueData(uid);
+    await (await import('./SyncController.js')).deleteCloudProgress(uid);
+  },
   onDeleteFailed: async () => (await import('./SyncController.js')).resumeSync(),
   clearDeviceData: async () => {
     const { db } = await import('./db.js');

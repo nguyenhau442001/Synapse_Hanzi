@@ -42,6 +42,8 @@ export const SYNC_RULES = Object.freeze([
   { group: 'courses', merge: 'lww', format: 'json', keys: ['hsk_curriculum_v1', 'hsk_writing_v1', 'hsk4_sentence_solved'] },
   { group: 'courses', merge: 'lww', format: 'text', keys: ['hsk_speed_quiz_best'] },
   { group: 'profile', merge: 'lww', format: 'text', personal: true, keys: ['hsk_profile_name'] },
+  // Leaderboard opt-in, public nickname/seal and joined weeks (LeagueConstants.LEAGUE_PROFILE_KEY).
+  { group: 'league', merge: 'lww', format: 'json', keys: ['hsk_league_profile_v1'] },
 ]);
 
 /**

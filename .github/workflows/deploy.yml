@@ -53,7 +53,7 @@ jobs:
             --exclude 'src/' --exclude 'tools/' --exclude 'tests/' --exclude 'docs/' \
             --exclude 'exam_materials/' --exclude 'books' --exclude 'dist/' --exclude 'config/*.local*' \
             --exclude '.env*' --exclude '*.md' --exclude 'package*.json' --exclude '*.config.mjs' \
-            --exclude 'eslint.config.mjs' --exclude 'jsconfig.json'
+            --exclude 'eslint.config.mjs' --exclude 'jsconfig.json' --exclude 'firestore.rules'
           du -sh _site
 
       - uses: actions/upload-pages-artifact@v3
