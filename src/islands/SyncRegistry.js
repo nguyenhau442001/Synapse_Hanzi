@@ -44,6 +44,8 @@ export const SYNC_RULES = Object.freeze([
   { group: 'courses', merge: 'lww', format: 'text', keys: ['hsk_speed_quiz_best'] },
   // Per-question listening drill log (ListeningConstants.LISTENING_ATTEMPTS_KEY).
   { group: 'listening', merge: 'id_log', format: 'json', keys: ['hsk_listening_attempts_v1'] },
+  // Personal "Mẹo nhớ" notes, one per word, newer edit wins (MnemonicStore.MNEMONICS_KEY).
+  { group: 'mnemonics', merge: 'id_log', format: 'json', keys: ['hsk_mnemonics_v1'] },
   { group: 'profile', merge: 'lww', format: 'text', personal: true, keys: ['hsk_profile_name'] },
   // Leaderboard opt-in, public nickname/seal and joined weeks (LeagueConstants.LEAGUE_PROFILE_KEY).
   { group: 'league', merge: 'lww', format: 'json', keys: ['hsk_league_profile_v1'] },

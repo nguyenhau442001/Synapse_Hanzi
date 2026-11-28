@@ -1217,6 +1217,112 @@ html.hide-hanviet .card-syllable-row { display: none !important; }
   .card.is-flipped .card-syllable-row { animation: none; }
 }
 
+/* "Mẹo nhớ" box (back of the card, forgotten words only) */
+.card-mnemonic[hidden],
+.card:not(.is-flipped) .card-mnemonic,
+.today-review-card:not(.is-revealed) .today-mnemonic { display: none !important; }
+.card-mnemonic,
+.today-mnemonic {
+  width: 100%;
+  margin: 0 0 10px;
+}
+.mnemonic-box {
+  padding: 10px 14px 12px;
+  border-radius: 12px;
+  background: var(--surface-subtle);
+  border: 1px dashed var(--border-strong);
+  text-align: left;
+  cursor: default;
+}
+.mnemonic-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+.mnemonic-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-text);
+}
+.mnemonic-edit-btn,
+.mnemonic-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 32px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+  color: var(--text-secondary);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.mnemonic-edit-btn:hover,
+.mnemonic-btn:hover { color: var(--text-primary); border-color: var(--border-strong); }
+.mnemonic-btn--primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--on-accent);
+}
+.mnemonic-btn--primary:hover { background: var(--accent-hover); color: var(--on-accent); }
+.mnemonic-text {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-primary);
+}
+.mnemonic-hint {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 0;
+}
+.mnemonic-hint-formula {
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+.mnemonic-hint-note {
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: var(--text-tertiary);
+}
+.mnemonic-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.mnemonic-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  font: inherit;
+  font-size: 16px; /* >= 16px keeps iOS Safari from zooming on focus */
+  line-height: 1.45;
+  resize: vertical;
+}
+.mnemonic-input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.mnemonic-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
 /* Inline decomposition line (back of the card) */
 .card-decomp-inline {
   display: flex;

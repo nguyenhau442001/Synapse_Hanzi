@@ -2,6 +2,8 @@
 import { colorizePinyin, colorizePinyinHtml } from './pinyinTones.js';
 import { buildSyllableColumns, attachGlosses } from './HanVietSyllables.js';
 import { loadCharGlosses, getLoadedCharGlosses } from './CharGlosses.js';
+import { getMnemonic, buildMnemonicHint } from './MnemonicStore.js';
+import { renderMnemonicBox } from './MnemonicBox.jsx';
 import { formatStudyLevelLabel } from './AppUtils.js';
 import { APP_TIMEOUTS } from './AppTimeouts.js';
 
@@ -44,10 +46,12 @@ function renderSyllableRow(word, hanviet) {
     row.hidden = true;
     row.innerHTML = '';
     delete row.dataset.wordId;
+    renderCardMnemonic(word, null);
     return false;
   }
   const paint = (glossMap) => {
     const columns = attachGlosses(baseColumns, glossMap);
+    renderCardMnemonic(word, columns);
     row.innerHTML = columns.map(({ char, pinyin, hanviet: reading, gloss }) => `
       <span class="card-syllable-col">
         <span class="card-syllable-char" lang="zh-CN">${window.escapeHtml(char)}</span>
@@ -66,6 +70,19 @@ function renderSyllableRow(word, hanviet) {
   }
   row.hidden = false;
   return true;
+}
+
+// "Mẹo nhớ" box: shown for words forgotten at least once (FSRS lapses) or that already have a note.
+function renderCardMnemonic(word, columns) {
+  const container = document.getElementById('cardMnemonic');
+  if (!container) return;
+  const card = word && typeof srsCards !== 'undefined' ? srsCards[word.id] : null;
+  const isForgotten = Boolean(card && card.lapses > 0);
+  if (!word || (!isForgotten && !getMnemonic(localStorage, word.hanzi))) {
+    renderMnemonicBox(container, null, '');
+    return;
+  }
+  renderMnemonicBox(container, word.hanzi, buildMnemonicHint(columns, word.meaning));
 }
 
 function buildCardArea() {
@@ -139,6 +156,9 @@ function buildCardArea() {
         <div class="card-patterns" id="cardPatterns" hidden></div>
 
         <!-- Khối ví dụ thực tế (Chỉ hiển thị sau khi lật đáp án) -->
+        <!-- Personal memory hook for forgotten words (back only, Preact: MnemonicBox.jsx) -->
+        <div class="card-mnemonic" id="cardMnemonic" hidden></div>
+
         <div class="example-box" id="exampleBox">
           <div class="ex-header-row">
             <span class="ex-label">Ví dụ</span>

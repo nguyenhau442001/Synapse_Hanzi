@@ -3,10 +3,14 @@
 // needs them while the classic scripts are still loading.)
 // Preact port of the former assets/js/due-review.js with the same markup.
 import { render } from 'preact';
-import { useEffect } from 'preact/hooks';
+import { useEffect, useState } from 'preact/hooks';
 import { signal } from '@preact/signals';
 import { AudioIcon, ArrowLeftIcon, ArrowRightIcon, RotateIcon } from './Icons.jsx';
 import { initCardSwipe } from './CardInteractions.jsx';
+import { MnemonicBox } from './MnemonicBox.jsx';
+import { getMnemonic, buildMnemonicHint } from './MnemonicStore.js';
+import { buildSyllableColumns, attachGlosses } from './HanVietSyllables.js';
+import { loadCharGlosses, getLoadedCharGlosses } from './CharGlosses.js';
 import {
   MS_PER_DAY,
   REVIEW_SESSION_BATCH_SIZE,
@@ -273,6 +277,24 @@ function RatingButtons({ card }) {
   });
 }
 
+// "Mẹo nhớ" for the revealed card: auto hint from per-character glosses (loaded lazily).
+function TodayMnemonic({ word }) {
+  const [glossMap, setGlossMap] = useState(getLoadedCharGlosses);
+  useEffect(() => {
+    if (!glossMap) loadCharGlosses().then(setGlossMap);
+  }, []);
+  const hanviet = word.hanviet || (typeof window.getWordHanViet === 'function' ? window.getWordHanViet(word) : '');
+  const columns = attachGlosses(buildSyllableColumns(word.hanzi, word.pinyin, hanviet), glossMap);
+  return (
+    <div class="today-mnemonic">
+      <MnemonicBox
+        hanzi={word.hanzi}
+        hint={buildMnemonicHint(columns, word.meaning)}
+      />
+    </div>
+  );
+}
+
 function ReviewCard() {
   const item = queue.value[index.value];
   const isRevealed = revealed.value;
@@ -332,6 +354,7 @@ function ReviewCard() {
             </button>
           </div>{' '}
           <div class="today-card-meaning">{word.meaning}</div>{' '}
+          {isRevealed && (lapses > 0 || getMnemonic(localStorage, word.hanzi)) && <TodayMnemonic word={word} />}
           {word.example_zh && (
             <div class="today-card-example">
               <p class="today-example-zh hw-cjk" dangerouslySetInnerHTML={{ __html: formatTodayExample(word.example_zh) }} />{' '}
