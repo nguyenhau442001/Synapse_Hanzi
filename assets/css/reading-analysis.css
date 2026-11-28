@@ -1078,6 +1078,43 @@ body.dark-mode .pill-mean {
   border-bottom: 1px solid var(--border, #f1f5f9);
 }
 
+.sw-header-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.sw-srs-btn {
+  min-height: 32px;
+  padding: 4px 12px;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-pill, 999px);
+  background: var(--accent-light);
+  color: var(--accent-text);
+  font: 600 0.8rem / 1.2 var(--font-sans);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.sw-srs-btn:hover:not(:disabled) {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.sw-srs-btn:disabled {
+  cursor: default;
+  opacity: 0.75;
+}
+
+.sw-srs-btn.is-scheduled {
+  border-color: var(--state-known-border);
+  background: var(--state-known-bg);
+  color: var(--state-known);
+  opacity: 1;
+}
+
 :root[data-theme="dark"] .sw-header-bar,
 body.dark-mode .sw-header-bar {
   border-bottom-color: rgba(255, 255, 255, 0.05);

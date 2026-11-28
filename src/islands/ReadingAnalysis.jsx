@@ -3,8 +3,10 @@
 // components and vocabulary. Preact port of the former assets/js/reading-analysis.js: the state stays
 // in module variables as before, and renderReadingAnalysisScreen() now re-renders the island.
 import { render } from 'preact';
+import { useEffect, useState } from 'preact/hooks';
 import { signal } from '@preact/signals';
 import { APP_TIMEOUTS } from './AppTimeouts';
+import { enrollForReview, enrollStatus, findVocabRef } from './SrsEnroll.js';
 
 /* global SpaRouter -- spa-router.js */
 
@@ -725,6 +727,49 @@ function VocabGrid({ entry }) {
   );
 }
 
+const SRS_ENROLL_LABELS = Object.freeze({
+  ADD: '+ Thêm vào lịch ôn',
+  ADD_TITLE: 'Đưa từ này vào hàng ôn hôm nay (Ôn nhanh)',
+  CHECKING: 'Đang kiểm tra…',
+  SCHEDULED: '✓ Đã có trong lịch ôn',
+  SCHEDULED_TITLE: 'Từ này đã nằm trong lịch ôn ngắt quãng',
+});
+
+// Add-to-review button for the selected word. Hidden when the word is not in any HSK deck
+// (phrases, proper names), since there is no card to schedule.
+function SrsEnrollButton({ hanzi }) {
+  const [ref, setRef] = useState(undefined); // undefined: resolving, null: not in any deck
+  const [status, setStatus] = useState('untracked');
+  useEffect(() => {
+    let alive = true;
+    setRef(undefined);
+    findVocabRef(hanzi).then((found) => {
+      if (!alive) return;
+      setRef(found);
+      setStatus(enrollStatus(found));
+    }).catch(() => alive && setRef(null));
+    return () => { alive = false; };
+  }, [hanzi]);
+
+  if (ref === null) return null;
+  const resolving = ref === undefined;
+  const scheduled = status === 'scheduled';
+  const add = () => {
+    if (enrollForReview(ref)) setStatus('scheduled');
+  };
+  return (
+    <button
+      type="button"
+      class={`sw-srs-btn ${scheduled ? 'is-scheduled' : ''}`}
+      disabled={resolving || scheduled}
+      title={scheduled ? SRS_ENROLL_LABELS.SCHEDULED_TITLE : SRS_ENROLL_LABELS.ADD_TITLE}
+      onClick={add}
+    >
+      {resolving ? SRS_ENROLL_LABELS.CHECKING : (scheduled ? SRS_ENROLL_LABELS.SCHEDULED : SRS_ENROLL_LABELS.ADD)}
+    </button>
+  );
+}
+
 const WORD_BADGES = {
   grammar: ['⚡ Ngữ pháp', 'sw-badge-grammar'],
   core: ['Cốt lõi HSK 4', 'sw-badge-core'],
@@ -751,7 +796,10 @@ function WordDetail({ entry }) {
           <span class="sw-header-icon">🔍</span>{' '}
           <span class="sw-header-label">Từ vựng đang chọn</span>
         </div>{' '}
-        <span class={`sw-badge ${badgeClass}`}>{badgeLabel}</span>
+        <div class="sw-header-actions">
+          <SrsEnrollButton hanzi={tok.text} />{' '}
+          <span class={`sw-badge ${badgeClass}`}>{badgeLabel}</span>
+        </div>
       </div>{' '}
       <div class="sw-main-hero">
         <div class="sw-hero-left">

@@ -92,9 +92,10 @@ export function renderQuickSavedWords() {
   savedWords.value = list;
 }
 
+// The header badge counts due cards (set by renderLearningDashboard); this list is the
+// separate "often forgotten" subset shown in the drawer.
 export function updateQuickUrgentWords(items) {
   urgentItems.value = items || [];
-  setHeaderStats({ urgentCount: urgentItems.value.length });
 }
 
 function openWord(level, idOrHanzi, hanzi) {

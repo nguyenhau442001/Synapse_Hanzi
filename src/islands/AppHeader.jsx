@@ -67,6 +67,7 @@ const goHome = () => callGlobal('navigateToHome');
 const goBack = () => window.SpaRouter?.navigateBack?.();
 const openHistory = () => callGlobal('showHistoryModal');
 const openDrawer = (tab) => callGlobal('openQuickAccessDrawer', tab);
+const openTodayReviews = () => callGlobal('openTodayReviews');
 
 /** Switches to `theme` through ThemeManager (which persists the manual override). */
 function selectTheme(theme) {
@@ -214,7 +215,6 @@ function HeaderSearch() {
 
 function TodayChip() {
   const { streakDays, urgentCount } = headerStats.value;
-  const { activeDrawerTab } = headerUi.value;
   const streakLabel = L.streakLabel(streakDays);
   const urgentLabel = L.urgentLabel(urgentCount);
   return (
@@ -244,10 +244,10 @@ function TodayChip() {
       <button
         type="button"
         id={IDS.URGENT_BTN}
-        class={cx('ah-today-btn', 'ah-urgent', activeDrawerTab === 'urgent' && 'is-active')}
+        class={cx('ah-today-btn', 'ah-urgent')}
         title={urgentLabel}
         aria-label={urgentLabel}
-        onClick={() => openDrawer('urgent')}
+        onClick={openTodayReviews}
       >
         <HeaderIcon icon={Clock} />
         <span class="ah-urgent-label">{L.URGENT_LABEL}</span>

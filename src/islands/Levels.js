@@ -592,6 +592,12 @@ export function renderLearningDashboard() {
   const quickButton = document.getElementById('quickStudyButton');
   const dueCount = document.getElementById('todayDueCount');
   const todayReviewButton = document.getElementById('todayReviewButton');
+  // The header badge shows the same number as the dashboard's "Ôn hôm nay" button, on every tab.
+  const dueSummary = summarizeDueCardsAcrossLevels(new Date());
+  const dueTotal = dueSummary.totalDue;
+  const dueRecommended = dueSummary.recommendedToday;
+  const dueHeadline = dueRecommended > 0 ? dueRecommended : dueTotal;
+  setHeaderStats({ urgentCount: dueHeadline });
   if (!dailyCount || !dailyFill || !dailyMessage) return;
 
   const activity = readStudyActivity();
@@ -620,10 +626,7 @@ export function renderLearningDashboard() {
   setHeaderStats({ streakDays: Number(streak) || 0 });
   if (knownNode) knownNode.textContent = summary.totalKnown;
   if (studiedNode) studiedNode.textContent = summary.totalStudied;
-  const dueSummary = summarizeDueCardsAcrossLevels(new Date());
-  const dueTotal = dueSummary.totalDue;
-  const dueRecommended = dueSummary.recommendedToday;
-  if (dueCount) dueCount.textContent = String(dueRecommended > 0 ? dueRecommended : dueTotal);
+  if (dueCount) dueCount.textContent = String(dueHeadline);
   if (todayReviewButton) todayReviewButton.hidden = dueTotal === 0;
 
   const remainingNew = Math.max(0, validGoal - todayCount);

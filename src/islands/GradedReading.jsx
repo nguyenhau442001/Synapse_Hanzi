@@ -8,8 +8,15 @@ import { signal, computed } from '@preact/signals';
 import { toggleTheme } from './ThemeManager.js';
 import { playQuizSuccessSound, playQuizFailSound } from './AppUtils.js';
 import { headerStats } from './HeaderStore.js';
+import { SRS } from './SrsEngine.js';
+import { enrollForReview, resolveVocabRef, vocabRefFromWordId } from './SrsEnroll.js';
 
-/* global exampleSpeechSpeed, SRS, currentLevel, srsCards, SpaRouter -- classic-script globals */
+const SRS_STATE_LEARNING = SRS.State.Learning;
+const SRS_STATE_REVIEW = SRS.State.Review;
+const SRS_STATE_RELEARNING = SRS.State.Relearning;
+const MASTERED_MIN_REPS = 2;
+
+/* global exampleSpeechSpeed, SpaRouter -- classic-script globals */
 
 const PAGE_SIZE = 30;
 const LEVELS = ['HSK1', 'HSK2', 'HSK3', 'HSK4', 'HSK5', 'HSK6', 'HSK7', 'HSK8', 'HSK9'];
@@ -335,17 +342,14 @@ function toggleCurrentStoryRead() {
 // ---- SRS ---------------------------------------------------------------------------------------
 // 'mastered' | 'learning' | 'new' | 'none' (token without a vocabulary id)
 function getTokenSrsStatus(token) {
-  if (!token || !token.word_id) return 'none';
-  const match = token.word_id.match(/^hsk(\d+)_(\d+)$/i);
-  if (!match) return 'none';
+  const ref = token ? vocabRefFromWordId(token.word_id, token.text) : null;
+  if (!ref) return 'none';
   try {
-    if (typeof window.readSrsRecord === 'function') {
-      const record = window.readSrsRecord(match[1]);
-      const card = record && record.cards && record.cards[String(match[2])];
-      if (card) {
-        if (card.state === 2 || card.status === 'known' || (card.reps && card.reps >= 2)) return 'mastered';
-        if (card.state === 1 || card.state === 3 || (card.reps && card.reps > 0)) return 'learning';
-      }
+    const record = typeof window.readSrsRecord === 'function' ? window.readSrsRecord(ref.level) : null;
+    const card = record && record.cards && record.cards[ref.id];
+    if (card) {
+      if (card.state === SRS_STATE_REVIEW || card.status === 'known' || (card.reps && card.reps >= MASTERED_MIN_REPS)) return 'mastered';
+      if (card.state === SRS_STATE_LEARNING || card.state === SRS_STATE_RELEARNING || (card.reps && card.reps > 0)) return 'learning';
     }
   } catch (e) {
     console.warn('SRS lookup error:', e);
@@ -355,47 +359,22 @@ function getTokenSrsStatus(token) {
 
 const storyLevelNum = (story) => (story ? parseInt(story.level.replace(/\D/g, '') || '1', 10) : 1);
 
-// Put a token's word straight into today's FSRS queue.
-function addTokenToSrs(token) {
+// Put a token's word into today's FSRS queue, in the real deck that owns it.
+// Tokens without a valid word id (manga dialogue, stale ids) are resolved by hanzi.
+async function addTokenToSrs(token) {
   if (!token) return false;
-  const currentStatus = getTokenSrsStatus(token);
-  if (currentStatus === 'learning' || currentStatus === 'mastered') return false;
-  if (!token.word_id) {
-    const lvl = token.hsk || storyLevelNum(activeStory.value);
-    token.word_id = `hsk${lvl}_${token.text.charCodeAt(0) + 10000}`;
-  }
-  const match = token.word_id.match(/^hsk(\d+)_([a-z0-9]+)$/i) || token.word_id.match(/^char_([a-z0-9]+)$/i);
-  if (!match) return false;
-  const level = match[1].length <= 2 ? match[1] : String(token.hsk || 1);
-  const rawId = match[2] || match[1];
   try {
-    if (typeof window.readSrsRecord === 'function' && typeof window.saveSrsRecord === 'function') {
-      const record = window.readSrsRecord(level) || { schemaVersion: 3, cards: {} };
-      if (!record.cards) record.cards = {};
-      let card = record.cards[String(rawId)];
-      if (!card) card = (typeof SRS !== 'undefined' && SRS.createNewCard) ? SRS.createNewCard() : { state: 0, reps: 0 };
-      card.state = 1; // Learning
-      card.status = 'unknown';
-      card.due = new Date().toISOString();
-      card.last_rating = 'again';
-      record.cards[String(rawId)] = card;
-      window.saveSrsRecord(level, record.cards, false);
-      if (typeof window.refreshHomeWidgets === 'function') {
-        try { window.refreshHomeWidgets(); } catch (e) {}
-      }
-
-      // Keep the in-memory cards of the level being studied in sync
-      if (typeof currentLevel !== 'undefined' && String(currentLevel) === String(level) && typeof srsCards !== 'undefined' && srsCards) {
-        srsCards[String(rawId)] = card;
-      }
+    const ref = await resolveVocabRef(token.word_id, token.text);
+    if (!ref || !enrollForReview(ref)) return false;
+    if (token.word_id) {
       // Live-update every occurrence of the word in the passage
       document.querySelectorAll(`[data-word-id="${token.word_id}"]`).forEach((el) => {
         el.classList.remove('token-new');
         el.classList.add('token-learning');
         el.title = 'Bấm để xem nghĩa';
       });
-      return true;
     }
+    return true;
   } catch (e) {
     console.error('Failed to add token to SRS:', e);
   }
@@ -704,10 +683,10 @@ function closePopover() {
   document.removeEventListener('click', onDocClick);
 }
 
-function triggerAddSrs() {
+async function triggerAddSrs() {
   const p = popover.value;
   if (!p || p.added) return;
-  if (addTokenToSrs(p.token)) {
+  if (await addTokenToSrs(p.token)) {
     popover.value = { ...p, added: true };
     renderPopover();
   }
@@ -791,9 +770,6 @@ function renderPopover() {
 
 function showTokenPopover(token, targetEl) {
   closePopover();
-  if (!token.word_id) {
-    token.word_id = `hsk${token.hsk || storyLevelNum(activeStory.value)}_${token.text.charCodeAt(0) + 10000}`;
-  }
   popoverEl = document.createElement('div');
   popoverEl.id = 'gradedTokenPopover';
   popoverEl.className = 'graded-token-popover';
@@ -1437,10 +1413,12 @@ function storyWordStats(story) {
   return { fresh, freshKey, overLevel };
 }
 
-function addStoryKeyWordsToSrs(story) {
+async function addStoryKeyWordsToSrs(story) {
   const { freshKey } = storyWordStats(story);
   let added = 0;
-  freshKey.forEach((tok) => { if (addTokenToSrs(tok)) added++; });
+  for (const tok of freshKey) {
+    if (await addTokenToSrs(tok)) added++;
+  }
   srsTick.value++;
   return added;
 }
@@ -1640,7 +1618,7 @@ function CompletionCard({ story }) {
       <div class="completion-actions">
         {freshKey.length > 0 || addedCount !== null ? (
           <button type="button" class="graded-completion-btn secondary" disabled={addedCount !== null}
-            onClick={() => setAddedCount(addStoryKeyWordsToSrs(story))}>
+            onClick={() => addStoryKeyWordsToSrs(story).then(setAddedCount)}>
             {addedCount !== null ? `✓ Đã thêm ${addedCount} từ vào lịch ôn` : `Thêm ${freshKey.length} từ trọng tâm vào lịch ôn`}
           </button>
         ) : null}
@@ -1897,10 +1875,8 @@ function selectMangaDialogue(d) {
   mangaShowVi.value = false;
 }
 
-function addMangaTokenToSrs(token) {
-  const n = parseInt(String(token.hsk || ''), 10);
-  const copy = { ...token, hsk: n ? Math.min(n, 6) : 1 };
-  if (addTokenToSrs(copy)) {
+async function addMangaTokenToSrs(token) {
+  if (await addTokenToSrs(token)) {
     mangaAddedWords.value = { ...mangaAddedWords.value, [token.text]: true };
   }
 }

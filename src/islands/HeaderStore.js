@@ -7,7 +7,7 @@ import { HEADER_DEFAULT_SECTION, PROFILE_NAME_STORAGE_KEY, DEFAULT_PROFILE_NAME 
 /**
  * @typedef {Object} HeaderStats
  * @property {number} streakDays   Consecutive study days (written by Levels.js)
- * @property {number} urgentCount  Words that need urgent review (written by QuickAccessDrawer)
+ * @property {number} urgentCount  Due review cards, same number as the dashboard's today-review button (written by renderLearningDashboard)
  * @property {number} savedCount   Words in the saved notebook (written by QuickAccessDrawer)
  */
 
