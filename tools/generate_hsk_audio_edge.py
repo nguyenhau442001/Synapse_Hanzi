@@ -28,11 +28,13 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_VOICE = "zh-CN-XiaoxiaoNeural"
 DEFAULT_BITRATE = "64k"
 
+# Conservative trim (-65dB, 0.15s padding): stricter thresholds clip soft onsets and nasal codas.
 SILENCE_FILTER = (
-    "silenceremove=start_periods=1:start_duration=0.01:start_threshold=-55dB:start_silence=0.10,"
-    "areverse,silenceremove=start_periods=1:start_duration=0.05:start_threshold=-55dB:start_silence=0.10,areverse,"
+    "silenceremove=start_periods=1:start_duration=0.01:start_threshold=-65dB:start_silence=0.15,"
+    "areverse,silenceremove=start_periods=1:start_duration=0.05:start_threshold=-65dB:start_silence=0.15,areverse,"
     "loudnorm=I=-18:TP=-2:LRA=7"
 )
+DEFAULT_WORD_RATE = "-6%"
 
 
 class _TextExtractor(HTMLParser):
@@ -68,6 +70,7 @@ def parse_args() -> argparse.Namespace:
         default=True,
         help="Automatically commit and push to main after each batch (default: True)",
     )
+    parser.add_argument("--word-rate", default=DEFAULT_WORD_RATE, help="Edge TTS rate for standalone words (use -15%% for nasal codas)")
     parser.add_argument("--overwrite", action="store_true", help="Regenerate and overwrite existing audio files")
     parser.add_argument("--skip-manifest", action="store_true", help="Do not update manifest.json")
     parser.add_argument("--dry-run", action="store_true", help="Show planned audio clips without calling the API")
@@ -129,14 +132,14 @@ def output_path(level: str, word_id: int, kind: str) -> Path:
     return REPO_ROOT / "database" / "prebuilt_audio" / level / folder / f"{word_id:04d}.mp3"
 
 
-async def generate_edge_audio_bytes(text: str, voice: str, kind: str = "word") -> bytes:
+async def generate_edge_audio_bytes(text: str, voice: str, kind: str = "word", word_rate: str = DEFAULT_WORD_RATE) -> bytes:
     clean = text.strip()
     rate = "+0%"
     # For standalone words, append a full stop and use slightly slower pacing
     # to guarantee clean initial fricatives, terminal pitch contour, and full articulation.
     if kind == "word" and not re.search(r"[，。？！、]", clean):
         clean = f"{clean}。"
-        rate = "-6%"
+        rate = word_rate
     comm = edge_tts.Communicate(clean, voice, rate=rate)
     audio_data = b""
     async for chunk in comm.stream():
@@ -296,7 +299,7 @@ async def async_main() -> int:
 
         for attempt in range(4):
             try:
-                raw_bytes = await generate_edge_audio_bytes(task["text"], args.voice, task["kind"])
+                raw_bytes = await generate_edge_audio_bytes(task["text"], args.voice, task["kind"], args.word_rate)
                 encode_mp3(raw_bytes, task["output"], args.bitrate)
                 file_size_kb = task["output"].stat().st_size / 1024
                 print(f" OK ({file_size_kb:.1f} KB)")
