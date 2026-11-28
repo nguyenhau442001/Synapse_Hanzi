@@ -577,6 +577,18 @@ body.listening-view-active #screenListeningPractice {
   opacity: 0.9;
 }
 
+.listening-statement-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  max-width: 100%;
+}
+
+.listening-statement-play-btn {
+  margin-top: 0;
+}
+
 .listening-statement-zh {
   font-size: 26px;
   font-weight: 600;

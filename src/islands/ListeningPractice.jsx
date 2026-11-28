@@ -818,6 +818,43 @@ function togglePlaySentence(sentenceId) {
   updatePlaybackUI();
 }
 
+const STATEMENT_SEGMENT_KEY = 'statement';
+
+function hasStatementSegment(q) {
+  const seg = q && q.segments && q.segments[STATEMENT_SEGMENT_KEY];
+  return Boolean(seg && seg.start_ms != null && seg.end_ms != null);
+}
+
+/** Replay the statement as read in the exam recording (locked while an exam-mode answer is pending). */
+function togglePlayStatement() {
+  if (isListenLocked()) return;
+  if (learnerState.activePlayingSegment === STATEMENT_SEGMENT_KEY) {
+    stopAudio();
+  } else {
+    if (!hasStatementSegment(currentQuestion)) return;
+    const seg = currentQuestion.segments[STATEMENT_SEGMENT_KEY];
+    playLearnerSegment(STATEMENT_SEGMENT_KEY, seg.start_ms, seg.end_ms);
+  }
+  updatePlaybackUI();
+}
+
+function StatementPlayButton() {
+  if (isListenLocked() || !hasStatementSegment(currentQuestion)) return null;
+  const isPlaying = learnerState.activePlayingSegment === STATEMENT_SEGMENT_KEY;
+  const label = isPlaying ? LISTENING_DRILL_LABELS.pauseStatement : LISTENING_DRILL_LABELS.playStatement;
+  return (
+    <button
+      type="button"
+      class={`listening-row-play-btn listening-statement-play-btn ${isPlaying ? 'is-playing' : ''}`}
+      onClick={togglePlayStatement}
+      title={label}
+      aria-label={label}
+    >
+      {rowPlayInner(isPlaying)}
+    </button>
+  );
+}
+
 function submitAnswer(choice) {
   if (learnerState.answered) return;
   learnerState.answered = true;
@@ -1108,7 +1145,10 @@ function LearnerView() {
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10" /><path d="M12 16v-4" /><path d="M12 8h.01" /></svg>{' '}
           <span>Mệnh đề nhận định</span>
         </div>{' '}
-        <div class="listening-statement-zh" lang="zh-CN">{q.statement.zh}</div>{' '}
+        <div class="listening-statement-line">
+          <StatementPlayButton />{' '}
+          <div class="listening-statement-zh" lang="zh-CN">{q.statement.zh}</div>
+        </div>{' '}
         {learnerState.answered && learnerState.showPinyin && q.statement.pinyin && <div class="listening-statement-pinyin">{formatNaturalPinyin(q.statement.pinyin)}</div>}{' '}
         {learnerState.answered && learnerState.showTranslation && q.statement.vi && <div class="listening-statement-vi">{q.statement.vi}</div>}
       </div>{' '}

@@ -57,4 +57,6 @@ export const LISTENING_DRILL_LABELS = Object.freeze({
   statsOpen: 'Thống kê lỗi sai',
   statsClose: 'Đóng thống kê',
   speedLabel: 'Tốc độ',
+  playStatement: 'Nghe câu nhận định',
+  pauseStatement: 'Tạm dừng câu nhận định',
 });
