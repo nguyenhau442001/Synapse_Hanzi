@@ -1224,10 +1224,10 @@ html.hide-hanviet .card-syllable-row { display: none !important; }
 .card-mnemonic,
 .today-mnemonic {
   width: 100%;
-  margin: 0 0 10px;
+  margin: 0 0 8px;
 }
 .mnemonic-box {
-  padding: 10px 14px 12px;
+  padding: 6px 8px 8px 12px;
   border-radius: 12px;
   background: var(--surface-subtle);
   border: 1px dashed var(--border-strong);
@@ -1239,7 +1239,7 @@ html.hide-hanviet .card-syllable-row { display: none !important; }
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 .mnemonic-title {
   display: inline-flex;

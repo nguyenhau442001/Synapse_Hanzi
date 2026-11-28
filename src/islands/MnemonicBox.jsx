@@ -80,7 +80,7 @@ export function MnemonicBox({ hanzi, hint }) {
             type="button"
             class="mnemonic-edit-btn"
             onClick={startEdit}
-            title={MNEMONIC_LABELS.edit}
+            title={!text && hint ? MNEMONIC_LABELS.hintNote : MNEMONIC_LABELS.edit}
             aria-label={MNEMONIC_LABELS.edit}
           >
             <Pencil
@@ -125,8 +125,17 @@ export function MnemonicBox({ hanzi, hint }) {
         <p class="mnemonic-text">{text}</p>
       ) : (
         <p class="mnemonic-hint">
-          {hint ? <span class="mnemonic-hint-formula" lang="vi">{hint}</span> : null}
-          <span class="mnemonic-hint-note">{hint ? MNEMONIC_LABELS.hintNote : MNEMONIC_LABELS.emptyHint}</span>
+          {hint ? (
+            <span
+              class="mnemonic-hint-formula"
+              lang="vi"
+              title={MNEMONIC_LABELS.hintNote}
+            >
+              {hint}
+            </span>
+          ) : (
+            <span class="mnemonic-hint-note">{MNEMONIC_LABELS.emptyHint}</span>
+          )}
         </p>
       )}
     </div>
