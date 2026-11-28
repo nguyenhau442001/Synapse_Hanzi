@@ -54,18 +54,14 @@ const ROOT_SHELL_URL = new URL('./', self.registration.scope).href;
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE_NAME);
+    // The cache name is versioned, so entries are stored under their plain URL. 'reload' skips
+    // the browser HTTP cache, which may still hold the previous release right after a deploy.
     const urlsToCache = [
       APP_SHELL_URL,
       ROOT_SHELL_URL,
-      ...PRECACHE_MANIFEST.map(entry => {
-        const u = new URL('./' + entry.url, self.registration.scope);
-        if (entry.revision) {
-          u.searchParams.set('__wb_rev', entry.revision);
-        }
-        return u.href;
-      })
+      ...PRECACHE_MANIFEST.map(entry => new URL('./' + entry.url, self.registration.scope).href)
     ];
-    await Promise.allSettled(urlsToCache.map(url => cache.add(url)));
+    await Promise.allSettled(urlsToCache.map(url => cache.add(new Request(url, { cache: 'reload' }))));
     await self.skipWaiting();
   })());
 });
@@ -144,10 +140,29 @@ self.addEventListener('fetch', event => {
     return;
   }
 
-  // Static Assets: Cache first with network fallback
+  // Page shell: network first, so the page always references chunks that exist on the server.
+  // A stale cached shell would lazy-load deleted chunk hashes (404) and break sign-in restore.
+  if (request.mode === 'navigate') {
+    event.respondWith((async () => {
+      const cache = await caches.open(CACHE_NAME);
+      try {
+        const response = await fetch(request, { cache: 'no-cache' });
+        if (response.status === 200) await cache.put(APP_SHELL_URL, response.clone());
+        return response;
+      } catch (err) {
+        const cached = (await cache.match(APP_SHELL_URL)) || (await cache.match(ROOT_SHELL_URL));
+        if (cached) return cached;
+        throw err;
+      }
+    })());
+    return;
+  }
+
+  // Static Assets: Cache first with network fallback. ignoreSearch maps '?v=' cache busters
+  // onto the plain precache key; the cache itself is per release.
   event.respondWith((async () => {
     const cache = await caches.open(CACHE_NAME);
-    const cached = await cache.match(request);
+    const cached = await cache.match(request, { ignoreSearch: true });
     if (cached) return cached;
     const response = await fetch(request);
     if (response.status === 200) await cache.put(request, response.clone());

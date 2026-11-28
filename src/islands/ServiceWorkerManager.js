@@ -3,6 +3,31 @@
 
 const VERSION_RE = /^\d+\.\d+\.\d+$/;
 
+/** Vite fires this event when a lazy chunk fails to load (e.g. its hash was removed by a deploy). */
+const CHUNK_LOAD_ERROR_EVENT = 'vite:preloadError';
+/** Per-tab guard so a chunk that is genuinely missing can never cause a reload loop. */
+const CHUNK_RELOAD_GUARD_KEY = 'hsk_chunk_reload_v1';
+const CHUNK_RELOAD_GUARD_ON = '1';
+
+/**
+ * A page opened before a deploy references chunk hashes that no longer exist on the server.
+ * Reload once to pick up the current release instead of silently losing features such as the
+ * restored Google session.
+ */
+export function installChunkLoadRecovery() {
+  if (typeof window === 'undefined') return;
+  window.addEventListener(CHUNK_LOAD_ERROR_EVENT, event => {
+    try {
+      if (sessionStorage.getItem(CHUNK_RELOAD_GUARD_KEY)) return;
+      sessionStorage.setItem(CHUNK_RELOAD_GUARD_KEY, CHUNK_RELOAD_GUARD_ON);
+    } catch {
+      return;
+    }
+    event.preventDefault();
+    window.location.reload();
+  });
+}
+
 export function getNewVersion(worker) {
   const fromFile = fetch('VERSION?_=' + Date.now(), { cache: 'no-store' })
     .then(r => (r.ok ? r.text() : ''))
@@ -98,6 +123,7 @@ export function showUpdateNotification(worker) {
 }
 
 export function registerServiceWorker() {
+  installChunkLoadRecovery();
   if (typeof window === 'undefined' || !('serviceWorker' in navigator)) return;
 
   syncAppVersionFromFile();

@@ -8,7 +8,7 @@ const DATA_CACHE_NAME = 'hsk-data-v18';
 const PRECACHE_MANIFEST = [
   {
     "url": "index.html",
-    "revision": "e911bfc5ac4254094ca8016e4eef8320"
+    "revision": "017e1790459f540202a896a28cf8522a"
   },
   {
     "url": "assets/flashcards.css",
@@ -16,7 +16,7 @@ const PRECACHE_MANIFEST = [
   },
   {
     "url": "assets/js/preact/islands.js",
-    "revision": "a9dc20a396c6765a0f5843443018ba42"
+    "revision": "8362fd6c310e147a855429bb78c4cb22"
   },
   {
     "url": "assets/js/preact/chunks/volume-2-DLqdM3rb.js",
@@ -43,32 +43,32 @@ const PRECACHE_MANIFEST = [
     "revision": "4c3a11991e503adb4826bcd96a63d1af"
   },
   {
-    "url": "assets/js/preact/chunks/app-BJgVsHrB.js",
-    "revision": "1b4717290b8d4c0a492d48a3faf3f962"
+    "url": "assets/js/preact/chunks/app-I0dMlJmC.js",
+    "revision": "6a44d5f3158ec92dfcacd106450c1f67"
   },
   {
-    "url": "assets/js/preact/chunks/Writing-BtLtd6J2.js",
-    "revision": "10cf3870f997196b62ad7238106e2363"
+    "url": "assets/js/preact/chunks/Writing-D9DrlSCr.js",
+    "revision": "0e6ddf2347dc6c744c00aae6aab0e059"
   },
   {
     "url": "assets/js/preact/chunks/SyncConstants-QYgBFhfl.js",
     "revision": "2f83ccbde60784f49219df0bf9a56519"
   },
   {
-    "url": "assets/js/preact/chunks/SpeakingPractice-BwrbdOxz.js",
-    "revision": "b5b15ecbc00664bce9cf0787c412c0a0"
+    "url": "assets/js/preact/chunks/SpeakingPractice-_ujUbhZW.js",
+    "revision": "6ccdeaf7e0b9570df75569cbf2dd2b3a"
   },
   {
-    "url": "assets/js/preact/chunks/ReadingAnalysis-CaSlS8Vz.js",
-    "revision": "c76e26be21bc5c20963bae8ce4d3deb7"
+    "url": "assets/js/preact/chunks/ReadingAnalysis-CI-V5UJI.js",
+    "revision": "c52cb0104fa41336de0c5afd365294bb"
   },
   {
-    "url": "assets/js/preact/chunks/ListeningReviewPanel-DP6iD5dp.js",
-    "revision": "6f11f7f417b6a718ccdf8d4d6da95b2b"
+    "url": "assets/js/preact/chunks/ListeningReviewPanel-Bg5RyCks.js",
+    "revision": "b6e4ec5d6d9f305966ebe80972199d27"
   },
   {
-    "url": "assets/js/preact/chunks/ListeningPractice-C3ZO0rIQ.js",
-    "revision": "58a8ac07a7a7b9a7ed408bb6bbd10760"
+    "url": "assets/js/preact/chunks/ListeningPractice-ClBxbkTf.js",
+    "revision": "8f4d4693bf4e4260c9439b52b0854708"
   },
   {
     "url": "assets/js/preact/chunks/LeagueCore-BGN5piz7.js",
@@ -83,12 +83,12 @@ const PRECACHE_MANIFEST = [
     "revision": "8eb540db47aa7bc936aec53d0a0e3583"
   },
   {
-    "url": "assets/js/preact/chunks/Hsk30ExamView-C8klh91S.js",
-    "revision": "59d59e92eff119edc60ab8be0db3058c"
+    "url": "assets/js/preact/chunks/Hsk30ExamView-BawY0Esb.js",
+    "revision": "d7d83da181825919b598e4d8e1156f6a"
   },
   {
-    "url": "assets/js/preact/chunks/GradedReading-D1lZ3tSD.js",
-    "revision": "d50e91b6573e4d3bc942dba076913bb1"
+    "url": "assets/js/preact/chunks/GradedReading-BTVfMms4.js",
+    "revision": "ce7eb01969a97502de57b03a8814efa3"
   },
   {
     "url": "assets/js/preact/chunks/FirestoreCloudAdapter-0X3l-u-Q.js",
@@ -103,16 +103,16 @@ const PRECACHE_MANIFEST = [
     "revision": "bd7b2ff7e959ac71400c9bf2907cf63e"
   },
   {
-    "url": "assets/js/preact/chunks/AuthStore-OfXJ4xmt.js",
-    "revision": "acaf64ea8cee3196509a0f5249766c0d"
+    "url": "assets/js/preact/chunks/AuthStore-DSZuGb4W.js",
+    "revision": "4e0059555071a33ebf851009aa85d35a"
   },
   {
     "url": "assets/js/preact/chunks/AuthConstants-CeW7RFqJ.js",
     "revision": "7a03261b5072b532d25030dea1556bdc"
   },
   {
-    "url": "assets/js/preact/chunks/AiTutorPromptGuide-CXy4Bgqk.js",
-    "revision": "d99dd06fc59df78bc6ecc489dc466eca"
+    "url": "assets/js/preact/chunks/AiTutorPromptGuide-cJ_8edSu.js",
+    "revision": "d58aa665f0dfcc398a1f0be7b1232f18"
   },
   {
     "url": "assets/js/hanviet-dict.js",
@@ -170,18 +170,14 @@ const ROOT_SHELL_URL = new URL('./', self.registration.scope).href;
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE_NAME);
+    // The cache name is versioned, so entries are stored under their plain URL. 'reload' skips
+    // the browser HTTP cache, which may still hold the previous release right after a deploy.
     const urlsToCache = [
       APP_SHELL_URL,
       ROOT_SHELL_URL,
-      ...PRECACHE_MANIFEST.map(entry => {
-        const u = new URL('./' + entry.url, self.registration.scope);
-        if (entry.revision) {
-          u.searchParams.set('__wb_rev', entry.revision);
-        }
-        return u.href;
-      })
+      ...PRECACHE_MANIFEST.map(entry => new URL('./' + entry.url, self.registration.scope).href)
     ];
-    await Promise.allSettled(urlsToCache.map(url => cache.add(url)));
+    await Promise.allSettled(urlsToCache.map(url => cache.add(new Request(url, { cache: 'reload' }))));
     await self.skipWaiting();
   })());
 });
@@ -260,10 +256,29 @@ self.addEventListener('fetch', event => {
     return;
   }
 
-  // Static Assets: Cache first with network fallback
+  // Page shell: network first, so the page always references chunks that exist on the server.
+  // A stale cached shell would lazy-load deleted chunk hashes (404) and break sign-in restore.
+  if (request.mode === 'navigate') {
+    event.respondWith((async () => {
+      const cache = await caches.open(CACHE_NAME);
+      try {
+        const response = await fetch(request, { cache: 'no-cache' });
+        if (response.status === 200) await cache.put(APP_SHELL_URL, response.clone());
+        return response;
+      } catch (err) {
+        const cached = (await cache.match(APP_SHELL_URL)) || (await cache.match(ROOT_SHELL_URL));
+        if (cached) return cached;
+        throw err;
+      }
+    })());
+    return;
+  }
+
+  // Static Assets: Cache first with network fallback. ignoreSearch maps '?v=' cache busters
+  // onto the plain precache key; the cache itself is per release.
   event.respondWith((async () => {
     const cache = await caches.open(CACHE_NAME);
-    const cached = await cache.match(request);
+    const cached = await cache.match(request, { ignoreSearch: true });
     if (cached) return cached;
     const response = await fetch(request);
     if (response.status === 200) await cache.put(request, response.clone());
