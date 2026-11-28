@@ -113,6 +113,20 @@
           "meaning_vi": "sắp xếp, bố trí",
           "vocab_id": 2,
           "level": "HSK4"
+        },
+        {
+          "word": "打印",
+          "pinyin": "dǎyìn",
+          "meaning_vi": "in (ấn)",
+          "vocab_id": 68,
+          "level": "HSK4"
+        },
+        {
+          "word": "复印",
+          "pinyin": "fùyìn",
+          "meaning_vi": "sao chụp, photocopy",
+          "vocab_id": 125,
+          "level": "HSK4"
         }
       ]
     },
@@ -909,6 +923,27 @@
           "pinyin": "mílù",
           "meaning_vi": "lạc đường",
           "vocab_id": 304,
+          "level": "HSK4"
+        },
+        {
+          "word": "大方",
+          "pinyin": "dàfang",
+          "meaning_vi": "rộng lượng, hào phóng",
+          "vocab_id": 729,
+          "level": "HSK5"
+        },
+        {
+          "word": "生活",
+          "pinyin": "shēnghuó",
+          "meaning_vi": "sinh hoạt, cuộc sống",
+          "vocab_id": 375,
+          "level": "HSK4"
+        },
+        {
+          "word": "只要",
+          "pinyin": "zhǐyào",
+          "meaning_vi": "chỉ cần",
+          "vocab_id": 572,
           "level": "HSK4"
         }
       ]

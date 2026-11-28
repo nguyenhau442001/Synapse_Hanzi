@@ -106,6 +106,13 @@
           "meaning_vi": "và, hơn nữa",
           "vocab_id": 26,
           "level": "HSK4"
+        },
+        {
+          "word": "日子",
+          "pinyin": "rìzi",
+          "meaning_vi": "ngày tháng, cuộc sống",
+          "vocab_id": 1036,
+          "level": "HSK5"
         }
       ]
     },
@@ -299,6 +306,20 @@
           "pinyin": "zhèngshì",
           "meaning_vi": "chính thức",
           "vocab_id": 561,
+          "level": "HSK4"
+        },
+        {
+          "word": "整齐",
+          "pinyin": "zhěngqí",
+          "meaning_vi": "ngăn ngắn, gọn gàng",
+          "vocab_id": 596,
+          "level": "HSK5"
+        },
+        {
+          "word": "尊重",
+          "pinyin": "zūnzhòng",
+          "meaning_vi": "tôn trọng",
+          "vocab_id": 594,
           "level": "HSK4"
         }
       ]
@@ -540,6 +561,34 @@
           "meaning_vi": "cần thiết, cần",
           "vocab_id": 250,
           "level": "HSK3"
+        },
+        {
+          "word": "任务",
+          "pinyin": "rènwu",
+          "meaning_vi": "nhiệm vụ",
+          "vocab_id": 359,
+          "level": "HSK4"
+        },
+        {
+          "word": "耐心",
+          "pinyin": "nàixīn",
+          "meaning_vi": "kiên nhẫn",
+          "vocab_id": 311,
+          "level": "HSK4"
+        },
+        {
+          "word": "熟悉",
+          "pinyin": "shúxī",
+          "meaning_vi": "quen thuộc, thông thuộc",
+          "vocab_id": 401,
+          "level": "HSK4"
+        },
+        {
+          "word": "应该",
+          "pinyin": "yīnggāi",
+          "meaning_vi": "nên, cần phải",
+          "vocab_id": 265,
+          "level": "HSK3"
         }
       ]
     },
@@ -650,6 +699,27 @@
           "pinyin": "chéngzuò",
           "meaning_vi": "đi (xe, tàu...)",
           "vocab_id": 48,
+          "level": "HSK4"
+        },
+        {
+          "word": "航班",
+          "pinyin": "hángbān",
+          "meaning_vi": "chuyến bay",
+          "vocab_id": 168,
+          "level": "HSK4"
+        },
+        {
+          "word": "大约",
+          "pinyin": "dàyuē",
+          "meaning_vi": "khoảng, ước chừng",
+          "vocab_id": 73,
+          "level": "HSK4"
+        },
+        {
+          "word": "只好",
+          "pinyin": "zhǐhǎo",
+          "meaning_vi": "chỉ có thể, đành phải",
+          "vocab_id": 571,
           "level": "HSK4"
         }
       ]
@@ -771,6 +841,20 @@
           "meaning_vi": "phiền phức",
           "vocab_id": 297,
           "level": "HSK4"
+        },
+        {
+          "word": "幽默",
+          "pinyin": "yōumò",
+          "meaning_vi": "hài hước",
+          "vocab_id": 525,
+          "level": "HSK4"
+        },
+        {
+          "word": "生活",
+          "pinyin": "shēnghuó",
+          "meaning_vi": "sinh hoạt, cuộc sống",
+          "vocab_id": 375,
+          "level": "HSK4"
         }
       ]
     },
@@ -891,6 +975,41 @@
           "meaning_vi": "nếu",
           "vocab_id": 196,
           "level": "HSK3"
+        },
+        {
+          "word": "最好",
+          "pinyin": "zuìhǎo",
+          "meaning_vi": "tốt nhất",
+          "vocab_id": 593,
+          "level": "HSK4"
+        },
+        {
+          "word": "直接",
+          "pinyin": "zhíjiē",
+          "meaning_vi": "trực tiếp",
+          "vocab_id": 567,
+          "level": "HSK4"
+        },
+        {
+          "word": "拒绝",
+          "pinyin": "jùjué",
+          "meaning_vi": "từ chối",
+          "vocab_id": 243,
+          "level": "HSK4"
+        },
+        {
+          "word": "邀请",
+          "pinyin": "yāoqǐng",
+          "meaning_vi": "mời, lời mời",
+          "vocab_id": 505,
+          "level": "HSK4"
+        },
+        {
+          "word": "接受",
+          "pinyin": "jiēshòu",
+          "meaning_vi": "tiếp nhận, chấp nhận",
+          "vocab_id": 219,
+          "level": "HSK4"
         }
       ]
     },
@@ -1001,6 +1120,48 @@
           "pinyin": "jiānglái",
           "meaning_vi": "tương lai",
           "vocab_id": 207,
+          "level": "HSK4"
+        },
+        {
+          "word": "生长",
+          "pinyin": "shēngzhǎng",
+          "meaning_vi": "sinh trưởng",
+          "vocab_id": 415,
+          "level": "HSK5"
+        },
+        {
+          "word": "实在",
+          "pinyin": "shízài",
+          "meaning_vi": "thực sự, thật là",
+          "vocab_id": 385,
+          "level": "HSK4"
+        },
+        {
+          "word": "提供",
+          "pinyin": "tígōng",
+          "meaning_vi": "cung cấp",
+          "vocab_id": 431,
+          "level": "HSK4"
+        },
+        {
+          "word": "阳光",
+          "pinyin": "yángguāng",
+          "meaning_vi": "ánh nắng",
+          "vocab_id": 502,
+          "level": "HSK4"
+        },
+        {
+          "word": "植物",
+          "pinyin": "zhíwù",
+          "meaning_vi": "thực vật",
+          "vocab_id": 568,
+          "level": "HSK4"
+        },
+        {
+          "word": "温度",
+          "pinyin": "wēndù",
+          "meaning_vi": "nhiệt độ",
+          "vocab_id": 453,
           "level": "HSK4"
         }
       ]
@@ -1121,6 +1282,48 @@
           "pinyin": "rúguǒ",
           "meaning_vi": "nếu",
           "vocab_id": 196,
+          "level": "HSK3"
+        },
+        {
+          "word": "提醒",
+          "pinyin": "tíxǐng",
+          "meaning_vi": "nhắc nhở",
+          "vocab_id": 433,
+          "level": "HSK4"
+        },
+        {
+          "word": "空气",
+          "pinyin": "kōngqì",
+          "meaning_vi": "không khí",
+          "vocab_id": 260,
+          "level": "HSK4"
+        },
+        {
+          "word": "质量",
+          "pinyin": "zhìliàng",
+          "meaning_vi": "chất lượng",
+          "vocab_id": 573,
+          "level": "HSK4"
+        },
+        {
+          "word": "窗户",
+          "pinyin": "chuānghu",
+          "meaning_vi": "cửa sổ",
+          "vocab_id": 58,
+          "level": "HSK4"
+        },
+        {
+          "word": "及时",
+          "pinyin": "jíshí",
+          "meaning_vi": "kịp thời",
+          "vocab_id": 190,
+          "level": "HSK4"
+        },
+        {
+          "word": "注意",
+          "pinyin": "zhùyì",
+          "meaning_vi": "chú ý",
+          "vocab_id": 293,
           "level": "HSK3"
         }
       ]

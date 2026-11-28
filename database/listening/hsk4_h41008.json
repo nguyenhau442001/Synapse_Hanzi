@@ -113,6 +113,13 @@
           "meaning_vi": "nhiệm vụ",
           "vocab_id": 359,
           "level": "HSK4"
+        },
+        {
+          "word": "森林",
+          "pinyin": "sēnlín",
+          "meaning_vi": "rừng",
+          "vocab_id": 365,
+          "level": "HSK4"
         }
       ]
     },
@@ -223,6 +230,41 @@
           "pinyin": "dǎzhé",
           "meaning_vi": "giảm giá",
           "vocab_id": 69,
+          "level": "HSK4"
+        },
+        {
+          "word": "适合",
+          "pinyin": "shìhé",
+          "meaning_vi": "phù hợp",
+          "vocab_id": 389,
+          "level": "HSK4"
+        },
+        {
+          "word": "肯定",
+          "pinyin": "kěndìng",
+          "meaning_vi": "khẳng định, chắc chắn",
+          "vocab_id": 258,
+          "level": "HSK4"
+        },
+        {
+          "word": "凉快",
+          "pinyin": "liángkuai",
+          "meaning_vi": "mát mẻ",
+          "vocab_id": 288,
+          "level": "HSK4"
+        },
+        {
+          "word": "正好",
+          "pinyin": "zhènghǎo",
+          "meaning_vi": "vừa đúng, vừa khéo",
+          "vocab_id": 559,
+          "level": "HSK4"
+        },
+        {
+          "word": "咱们",
+          "pinyin": "zánmen",
+          "meaning_vi": "chúng ta (gồm cả người nghe)",
+          "vocab_id": 548,
           "level": "HSK4"
         }
       ]
@@ -335,6 +377,13 @@
           "meaning_vi": "hiệu quả",
           "vocab_id": 476,
           "level": "HSK4"
+        },
+        {
+          "word": "辛苦",
+          "pinyin": "xīnkǔ",
+          "meaning_vi": "vất vả, gian khổ",
+          "vocab_id": 477,
+          "level": "HSK4"
         }
       ]
     },
@@ -445,6 +494,13 @@
           "pinyin": "wúlùn",
           "meaning_vi": "bất luận, dù",
           "vocab_id": 458,
+          "level": "HSK4"
+        },
+        {
+          "word": "只要",
+          "pinyin": "zhǐyào",
+          "meaning_vi": "chỉ cần",
+          "vocab_id": 572,
           "level": "HSK4"
         }
       ]
@@ -557,6 +613,20 @@
           "meaning_vi": "phù hợp, thích hợp",
           "vocab_id": 173,
           "level": "HSK4"
+        },
+        {
+          "word": "至少",
+          "pinyin": "zhìshǎo",
+          "meaning_vi": "ít nhất",
+          "vocab_id": 574,
+          "level": "HSK4"
+        },
+        {
+          "word": "暂时",
+          "pinyin": "zànshí",
+          "meaning_vi": "tạm thời",
+          "vocab_id": 549,
+          "level": "HSK4"
         }
       ]
     },
@@ -668,6 +738,13 @@
           "meaning_vi": "nhiệt độ",
           "vocab_id": 453,
           "level": "HSK4"
+        },
+        {
+          "word": "个人",
+          "pinyin": "gèrén",
+          "meaning_vi": "cá nhân",
+          "vocab_id": 154,
+          "level": "HSK5"
         }
       ]
     },
@@ -778,6 +855,20 @@
           "pinyin": "cáiliào",
           "meaning_vi": "tài liệu, nguyên liệu",
           "vocab_id": 35,
+          "level": "HSK4"
+        },
+        {
+          "word": "传真",
+          "pinyin": "chuánzhēn",
+          "meaning_vi": "fax",
+          "vocab_id": 57,
+          "level": "HSK4"
+        },
+        {
+          "word": "修理",
+          "pinyin": "xiūlǐ",
+          "meaning_vi": "sửa chữa",
+          "vocab_id": 488,
           "level": "HSK4"
         }
       ]
@@ -890,6 +981,20 @@
           "meaning_vi": "giải thích",
           "vocab_id": 224,
           "level": "HSK4"
+        },
+        {
+          "word": "引起",
+          "pinyin": "yǐnqǐ",
+          "meaning_vi": "gây ra, dẫn đến",
+          "vocab_id": 517,
+          "level": "HSK4"
+        },
+        {
+          "word": "误会",
+          "pinyin": "wùhuì",
+          "meaning_vi": "hiểu lầm",
+          "vocab_id": 459,
+          "level": "HSK4"
         }
       ]
     },
@@ -1000,6 +1105,41 @@
           "pinyin": "qīngchu",
           "meaning_vi": "rõ ràng",
           "vocab_id": 187,
+          "level": "HSK3"
+        },
+        {
+          "word": "研究",
+          "pinyin": "yánjiū",
+          "meaning_vi": "nghiên cứu",
+          "vocab_id": 498,
+          "level": "HSK4"
+        },
+        {
+          "word": "心情",
+          "pinyin": "xīnqíng",
+          "meaning_vi": "tâm trạng",
+          "vocab_id": 478,
+          "level": "HSK4"
+        },
+        {
+          "word": "愉快",
+          "pinyin": "yúkuài",
+          "meaning_vi": "vui vẻ, vui sướng",
+          "vocab_id": 533,
+          "level": "HSK4"
+        },
+        {
+          "word": "也许",
+          "pinyin": "yěxǔ",
+          "meaning_vi": "có lẽ",
+          "vocab_id": 508,
+          "level": "HSK4"
+        },
+        {
+          "word": "如果",
+          "pinyin": "rúguǒ",
+          "meaning_vi": "nếu",
+          "vocab_id": 196,
           "level": "HSK3"
         }
       ]

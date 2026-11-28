@@ -502,6 +502,13 @@
           "meaning_vi": "nổi tiếng",
           "vocab_id": 581,
           "level": "HSK4"
+        },
+        {
+          "word": "曾经",
+          "pinyin": "céngjīng",
+          "meaning_vi": "đã từng",
+          "vocab_id": 682,
+          "level": "HSK5"
         }
       ],
       "key_expressions": [
@@ -635,6 +642,34 @@
           "pinyin": "biǎoyáng",
           "meaning_vi": "khen ngợi",
           "vocab_id": 24,
+          "level": "HSK4"
+        },
+        {
+          "word": "鼓掌",
+          "pinyin": "gǔzhǎng",
+          "meaning_vi": "vỗ tay",
+          "vocab_id": 167,
+          "level": "HSK5"
+        },
+        {
+          "word": "提前",
+          "pinyin": "tíqián",
+          "meaning_vi": "sớm hơn dự định, trước hạn",
+          "vocab_id": 432,
+          "level": "HSK4"
+        },
+        {
+          "word": "任务",
+          "pinyin": "rènwu",
+          "meaning_vi": "nhiệm vụ",
+          "vocab_id": 359,
+          "level": "HSK4"
+        },
+        {
+          "word": "祝贺",
+          "pinyin": "zhùhè",
+          "meaning_vi": "chúc mừng",
+          "vocab_id": 580,
           "level": "HSK4"
         }
       ],
@@ -779,6 +814,13 @@
           "meaning_vi": "cất cánh",
           "vocab_id": 186,
           "level": "HSK3"
+        },
+        {
+          "word": "出差",
+          "pinyin": "chūchāi",
+          "meaning_vi": "đi công tác",
+          "vocab_id": 52,
+          "level": "HSK4"
         }
       ],
       "key_expressions": [
@@ -912,6 +954,34 @@
           "pinyin": "liáotiān",
           "meaning_vi": "nói chuyện, chat",
           "vocab_id": 151,
+          "level": "HSK3"
+        },
+        {
+          "word": "性格",
+          "pinyin": "xìnggé",
+          "meaning_vi": "tính cách",
+          "vocab_id": 486,
+          "level": "HSK4"
+        },
+        {
+          "word": "正好",
+          "pinyin": "zhènghǎo",
+          "meaning_vi": "vừa đúng, vừa khéo",
+          "vocab_id": 559,
+          "level": "HSK4"
+        },
+        {
+          "word": "相反",
+          "pinyin": "xiāngfǎn",
+          "meaning_vi": "trái lại, ngược lại",
+          "vocab_id": 466,
+          "level": "HSK4"
+        },
+        {
+          "word": "一样",
+          "pinyin": "yíyàng",
+          "meaning_vi": "giống nhau",
+          "vocab_id": 257,
           "level": "HSK3"
         }
       ],
@@ -1047,6 +1117,13 @@
           "meaning_vi": "mời, lời mời",
           "vocab_id": 505,
           "level": "HSK4"
+        },
+        {
+          "word": "著名",
+          "pinyin": "zhùmíng",
+          "meaning_vi": "nổi tiếng",
+          "vocab_id": 581,
+          "level": "HSK4"
         }
       ],
       "key_expressions": [
@@ -1153,6 +1230,13 @@
           "meaning_vi": "kết quả",
           "vocab_id": 221,
           "level": "HSK4"
+        },
+        {
+          "word": "市场",
+          "pinyin": "shìchǎng",
+          "meaning_vi": "thị trường, chợ",
+          "vocab_id": 428,
+          "level": "HSK5"
         }
       ],
       "key_expressions": [
@@ -1286,6 +1370,20 @@
           "pinyin": "dǎzhēn",
           "meaning_vi": "tiêm thuốc",
           "vocab_id": 70,
+          "level": "HSK4"
+        },
+        {
+          "word": "大夫",
+          "pinyin": "dàifu",
+          "meaning_vi": "bác sĩ",
+          "vocab_id": 75,
+          "level": "HSK4"
+        },
+        {
+          "word": "尽管",
+          "pinyin": "jǐnguǎn",
+          "meaning_vi": "mặc dù",
+          "vocab_id": 225,
           "level": "HSK4"
         }
       ],

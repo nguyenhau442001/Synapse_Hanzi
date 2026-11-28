@@ -122,6 +122,27 @@
           "meaning_vi": "từ trước đến nay, luôn luôn",
           "vocab_id": 60,
           "level": "HSK4"
+        },
+        {
+          "word": "个人",
+          "pinyin": "gèrén",
+          "meaning_vi": "cá nhân",
+          "vocab_id": 154,
+          "level": "HSK5"
+        },
+        {
+          "word": "准时",
+          "pinyin": "zhǔnshí",
+          "meaning_vi": "đúng giờ",
+          "vocab_id": 587,
+          "level": "HSK4"
+        },
+        {
+          "word": "大概",
+          "pinyin": "dàgài",
+          "meaning_vi": "đại khái, có lẽ",
+          "vocab_id": 71,
+          "level": "HSK4"
         }
       ]
     },
@@ -242,6 +263,41 @@
           "meaning_vi": "giờ (đơn vị thời gian)",
           "vocab_id": 116,
           "level": "HSK2"
+        },
+        {
+          "word": "提醒",
+          "pinyin": "tíxǐng",
+          "meaning_vi": "nhắc nhở",
+          "vocab_id": 433,
+          "level": "HSK4"
+        },
+        {
+          "word": "甚至",
+          "pinyin": "shènzhì",
+          "meaning_vi": "thậm chí",
+          "vocab_id": 374,
+          "level": "HSK4"
+        },
+        {
+          "word": "引起",
+          "pinyin": "yǐnqǐ",
+          "meaning_vi": "gây ra, dẫn đến",
+          "vocab_id": 517,
+          "level": "HSK4"
+        },
+        {
+          "word": "周末",
+          "pinyin": "zhōumò",
+          "meaning_vi": "cuối tuần",
+          "vocab_id": 291,
+          "level": "HSK3"
+        },
+        {
+          "word": "一般",
+          "pinyin": "yìbān",
+          "meaning_vi": "bình thường, nói chung",
+          "vocab_id": 259,
+          "level": "HSK3"
         }
       ]
     },
@@ -353,6 +409,41 @@
           "meaning_vi": "đề nghị, gợi ý",
           "vocab_id": 206,
           "level": "HSK4"
+        },
+        {
+          "word": "通过",
+          "pinyin": "tōngguò",
+          "meaning_vi": "thông qua",
+          "vocab_id": 438,
+          "level": "HSK4"
+        },
+        {
+          "word": "交流",
+          "pinyin": "jiāoliú",
+          "meaning_vi": "giao lưu, trao đổi",
+          "vocab_id": 212,
+          "level": "HSK4"
+        },
+        {
+          "word": "意见",
+          "pinyin": "yìjiàn",
+          "meaning_vi": "ý kiến",
+          "vocab_id": 514,
+          "level": "HSK4"
+        },
+        {
+          "word": "无论",
+          "pinyin": "wúlùn",
+          "meaning_vi": "bất luận, dù",
+          "vocab_id": 458,
+          "level": "HSK4"
+        },
+        {
+          "word": "考虑",
+          "pinyin": "kǎolǜ",
+          "meaning_vi": "xem xét, suy nghĩ",
+          "vocab_id": 249,
+          "level": "HSK4"
         }
       ]
     },
@@ -457,6 +548,13 @@
           "meaning_vi": "lối vào",
           "vocab_id": 363,
           "level": "HSK4"
+        },
+        {
+          "word": "出口",
+          "pinyin": "chūkǒu",
+          "meaning_vi": "lối ra, xuất khẩu",
+          "vocab_id": 69,
+          "level": "HSK5"
         }
       ]
     },
@@ -567,6 +665,13 @@
           "pinyin": "jìngzhēng",
           "meaning_vi": "cạnh tranh",
           "vocab_id": 237,
+          "level": "HSK4"
+        },
+        {
+          "word": "目的",
+          "pinyin": "mùdì",
+          "meaning_vi": "mục đích",
+          "vocab_id": 310,
           "level": "HSK4"
         }
       ]
@@ -706,6 +811,48 @@
           "meaning_vi": "về, liên quan đến",
           "vocab_id": 87,
           "level": "HSK3"
+        },
+        {
+          "word": "知识",
+          "pinyin": "zhīshi",
+          "meaning_vi": "kiến thức",
+          "vocab_id": 565,
+          "level": "HSK4"
+        },
+        {
+          "word": "距离",
+          "pinyin": "jùlí",
+          "meaning_vi": "khoảng cách",
+          "vocab_id": 244,
+          "level": "HSK4"
+        },
+        {
+          "word": "地球",
+          "pinyin": "dìqiú",
+          "meaning_vi": "địa cầu, Trái Đất",
+          "vocab_id": 91,
+          "level": "HSK4"
+        },
+        {
+          "word": "温度",
+          "pinyin": "wēndù",
+          "meaning_vi": "nhiệt độ",
+          "vocab_id": 453,
+          "level": "HSK4"
+        },
+        {
+          "word": "究竟",
+          "pinyin": "jiūjìng",
+          "meaning_vi": "rốt cuộc, cuối cùng",
+          "vocab_id": 239,
+          "level": "HSK4"
+        },
+        {
+          "word": "答案",
+          "pinyin": "dá'àn",
+          "meaning_vi": "câu trả lời, đáp án",
+          "vocab_id": 64,
+          "level": "HSK4"
         }
       ]
     },
@@ -817,6 +964,34 @@
           "meaning_vi": "tham gia",
           "vocab_id": 26,
           "level": "HSK3"
+        },
+        {
+          "word": "律师",
+          "pinyin": "lǜshī",
+          "meaning_vi": "luật sư",
+          "vocab_id": 296,
+          "level": "HSK4"
+        },
+        {
+          "word": "举办",
+          "pinyin": "jǔbàn",
+          "meaning_vi": "tổ chức",
+          "vocab_id": 241,
+          "level": "HSK4"
+        },
+        {
+          "word": "邀请",
+          "pinyin": "yāoqǐng",
+          "meaning_vi": "mời, lời mời",
+          "vocab_id": 505,
+          "level": "HSK4"
+        },
+        {
+          "word": "经理",
+          "pinyin": "jīnglǐ",
+          "meaning_vi": "giám đốc, quản lý",
+          "vocab_id": 131,
+          "level": "HSK3"
         }
       ]
     },
@@ -927,6 +1102,13 @@
           "pinyin": "shìhé",
           "meaning_vi": "phù hợp",
           "vocab_id": 389,
+          "level": "HSK4"
+        },
+        {
+          "word": "样子",
+          "pinyin": "yàngzi",
+          "meaning_vi": "dáng vẻ, hình dạng",
+          "vocab_id": 504,
           "level": "HSK4"
         }
       ]
@@ -1144,6 +1326,27 @@
           "pinyin": "jiěshì",
           "meaning_vi": "giải thích",
           "vocab_id": 224,
+          "level": "HSK4"
+        },
+        {
+          "word": "个人",
+          "pinyin": "gèrén",
+          "meaning_vi": "cá nhân",
+          "vocab_id": 154,
+          "level": "HSK5"
+        },
+        {
+          "word": "误会",
+          "pinyin": "wùhuì",
+          "meaning_vi": "hiểu lầm",
+          "vocab_id": 459,
+          "level": "HSK4"
+        },
+        {
+          "word": "恐怕",
+          "pinyin": "kǒngpà",
+          "meaning_vi": "sợ rằng, e là",
+          "vocab_id": 261,
           "level": "HSK4"
         }
       ]
