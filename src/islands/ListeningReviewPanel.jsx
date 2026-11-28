@@ -4,7 +4,7 @@
 // key expressions, and prioritized vocabulary matches.
 
 import { h } from 'preact';
-import { Play, Pause, MessageSquare, Check, CircleCheck, CircleX } from 'lucide-preact';
+import { Play, Pause, MessageSquare, Check, CircleCheck, CircleX, Volume2 } from 'lucide-preact';
 
 export const LISTENING_REVIEW_LABELS = {
   TRANSCRIPT_TITLE: 'Lời thoại',
@@ -17,10 +17,12 @@ export const LISTENING_REVIEW_LABELS = {
   NO_TIMESTAMP: 'Chưa có mốc thời gian',
   KEY_EXPRESSIONS_TITLE: 'Cụm cần hiểu & Điểm ngữ pháp',
   VOCAB_TITLE: 'Từ vựng trong bài',
+  PLAY_WORD: 'Nghe phát âm',
 };
 
 const ULTRA_BASIC_WORDS = new Set(['没有', '我们', '我', '你', '他', '她', '这', '那', '的', '了']);
-const HSK_LEVEL_ORDER = { HSK4: 4, HSK3: 3, HSK2: 2, HSK1: 1 };
+const HSK_LEVEL_ORDER = { HSK6: 6, HSK5: 5, HSK4: 4, HSK3: 3, HSK2: 2, HSK1: 1 };
+const VOCAB_PLAY_ICON_SIZE = 15;
 const MIN_NON_BASIC_VOCAB = 4;
 
 /**
@@ -41,6 +43,44 @@ export function getPrioritizedVocabularies(vocabs) {
     if (aLvl !== bLvl) return bLvl - aLvl;
     return (b.word || '').length - (a.word || '').length;
   });
+}
+
+/**
+ * Play the prebuilt word audio via the shared speech engine (toggles on re-click).
+ * @param {MouseEvent} event
+ * @param {{word: string, pinyin?: string}} vocab
+ */
+function playVocabWord(event, vocab) {
+  if (typeof window === 'undefined' || typeof window.speakText !== 'function') return;
+  window.speakText(vocab.word, event.currentTarget, undefined, null, vocab.pinyin || null);
+}
+
+/**
+ * One vocabulary card with a pronunciation button.
+ * @param {{vocab: {word: string, pinyin?: string, meaning_vi?: string, level?: string}}} props
+ */
+export function ListeningVocabCard({ vocab }) {
+  return (
+    <div class="listening-vocab-card">
+      <div class="listening-vocab-top">
+        <button
+          type="button"
+          class="listening-vocab-play-btn"
+          onClick={(e) => playVocabWord(e, vocab)}
+          title={LISTENING_REVIEW_LABELS.PLAY_WORD}
+          aria-label={`${LISTENING_REVIEW_LABELS.PLAY_WORD} ${vocab.word}`}
+        >
+          <Volume2 size={VOCAB_PLAY_ICON_SIZE} />
+        </button>
+        <span class="listening-vocab-word" lang="zh-CN">{vocab.word}</span>
+        {vocab.level && <span class="listening-vocab-badge">{vocab.level}</span>}
+      </div>
+      <div class="listening-vocab-meta">
+        <span class="listening-vocab-pinyin">{vocab.pinyin}</span>
+        <span class="listening-vocab-vi">{vocab.meaning_vi}</span>
+      </div>
+    </div>
+  );
 }
 
 /**
@@ -228,17 +268,8 @@ export function ListeningReviewPanel({
             <div class="listening-vocab-section">
               <div class="listening-section-title">{LISTENING_REVIEW_LABELS.VOCAB_TITLE}</div>
               <div class="listening-vocab-grid">
-                {sortedVocabs.map((v, i) => (
-                  <div key={i} class="listening-vocab-card">
-                    <div class="listening-vocab-top">
-                      <span class="listening-vocab-word" lang="zh-CN">{v.word}</span>
-                      {v.level && <span class="listening-vocab-badge">{v.level}</span>}
-                    </div>
-                    <div class="listening-vocab-meta">
-                      <span class="listening-vocab-pinyin">{v.pinyin}</span>
-                      <span class="listening-vocab-vi">{v.meaning_vi}</span>
-                    </div>
-                  </div>
+                {sortedVocabs.map((v) => (
+                  <ListeningVocabCard key={v.word} vocab={v} />
                 ))}
               </div>
             </div>

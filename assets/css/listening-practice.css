@@ -1429,7 +1429,32 @@ body.listening-view-active #screenListeningPractice {
   gap: 8px;
 }
 
+.listening-vocab-play-btn {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  border-radius: 50%;
+  background: var(--listening-surface, #ffffff);
+  border: 1px solid var(--listening-border-strong, #ded4c7);
+  color: var(--brand-primary, #c05624);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.15s ease;
+}
+
+.listening-vocab-play-btn:hover,
+.listening-vocab-play-btn.is-playing {
+  background: var(--brand-primary, #c05624);
+  color: #ffffff;
+  border-color: var(--brand-primary, #c05624);
+}
+
 .listening-vocab-word {
+  flex: 1;
+  min-width: 0;
   font-size: 21px;
   font-weight: 600;
   color: var(--text-primary, #0f172a);
