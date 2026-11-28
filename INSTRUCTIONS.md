@@ -122,6 +122,15 @@ When designing or implementing new features/components, agents MUST strictly fol
 - **Prioritize Complete Phrasing & Natural Pauses**: Always ensure proper Chinese punctuation and clause breaks (e.g. `，`, `：`, `他说，…`) in source text and TTS inputs so every syllable is articulated clearly without coarticulation slurring; never trim silence so aggressively that natural pauses or terminal finals are clipped.
 - Keep level manifests and `database/prebuilt_audio/hanzi_audio_map.json` in sync after audio generation.
 
+## UI Cross-Device Verification
+
+Whenever making UI, CSS, or layout changes, always cross-check responsiveness, alignment, spacing, and visual polish across all 4 target devices/displays (no overflow, clipping, overlapping elements, broken safe-area insets, or awkward stretching):
+
+- **iPhone 14 Pro Max**: `430 × 932 px` (portrait) / `932 × 430 px` (landscape), 3x DPR, iOS safe-area insets (`env(safe-area-inset-*)`) & touch targets.
+- **iPad (10th Gen)**: `820 × 1180 px` (portrait) / `1180 × 820 px` (landscape), 2x DPR (2360 × 1640), tablet breakpoint & touch ergonomics.
+- **MacBook Pro 14" (Built-in Liquid Retina XDR)**: `3024 × 1964` native (~`1512 × 982 px` CSS viewport at 2x Retina).
+- **LG UltraFine 32" 4K Display**: `3840 × 2160` native (`1920 × 1080 px` HiDPI scaled / up to `3840 × 2160 px` full-width check; ensure proper `max-width` containers and balanced whitespace).
+
 ## Project Preference
 
 This is a personal project. I prefer a simple single-branch workflow because I do not want to review pull requests for every small change. Read `INSTRUCTIONS.md` first and follow it strictly. This project uses only one branch: `main`.
