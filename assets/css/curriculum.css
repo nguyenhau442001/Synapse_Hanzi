@@ -238,8 +238,21 @@ body.curriculum-view-active:has(#screenCurriculum .cur-lesson) {
     mask-image: linear-gradient(to right, #000 calc(100% - 22px), transparent);
   }
   .cur-level-chip {
-    min-width: 88px;
+    min-width: 92px;
     padding: 8px 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .cur-levels {
+    padding-inline-end: 6px;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  .cur-level-chip {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 8px 6px;
   }
 }
 
