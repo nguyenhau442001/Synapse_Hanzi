@@ -428,4 +428,13 @@
     background: transparent;
   }
   .ah-account-btn .ah-icon { display: none; }
+  .ah-nav {
+    justify-content: space-between;
+    gap: 2px;
+  }
+  .ah-nav-tab {
+    height: 38px;
+    padding: 0 7px;
+    font-size: 13px;
+  }
 }

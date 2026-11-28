@@ -5400,6 +5400,8 @@ body.flashcard-study-mode .study-nav-position {
   body.flashcard-study-mode .nav-btn,
   body.flashcard-study-mode .study-nav-position { min-width: 0; flex: 1 1 0; }
   #screenVocabHub .creator-signature .cs-links { width: auto; }
+  #screenVocabHub .creator-signature .cs-link { min-height: 36px; padding: 0 12px; }
+  body.home-screen .goal-settings-btn { width: 36px; height: 36px; flex: 0 0 36px; }
 }
 
 /* Redrawn editorial illustrations (data-style="editorial") carry their own warm

@@ -902,7 +902,10 @@ export function Hsk30ExamComponent() {
       <div class="exam-container">
         <div class="exam-lobby">
           {/* Top Exam Hub Mode Selector */}
-          <div style="display: flex; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 0.5rem; border-bottom: 2px solid var(--exam-border, #e2e8f0); padding-bottom: 0.85rem;">
+          <div
+            class="exam-hub-mode-bar"
+            style="display: flex; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 0.5rem; border-bottom: 2px solid var(--exam-border, #e2e8f0); padding-bottom: 0.85rem;"
+          >
             <button
               type="button"
               style={{

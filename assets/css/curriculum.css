@@ -231,6 +231,18 @@ body.curriculum-view-active:has(#screenCurriculum .cur-lesson) {
   contain: inline-size;
 }
 
+@media (max-width: 767px) {
+  .cur-levels {
+    padding-inline-end: 20px;
+    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 22px), transparent);
+    mask-image: linear-gradient(to right, #000 calc(100% - 22px), transparent);
+  }
+  .cur-level-chip {
+    min-width: 92px;
+    padding: 8px 10px;
+  }
+}
+
 .cur-levels::-webkit-scrollbar {
   display: none;
 }
