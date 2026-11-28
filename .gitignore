@@ -460,3 +460,6 @@ tools/.peppercarrot_cache/
 
 # Islands bundle is built by .github/workflows/deploy.yml (contains the injected API key)
 assets/js/preact/
+
+# Speech scorer model download cache (tools/build_capt_tokens.py)
+tools/.capt_model_cache/
