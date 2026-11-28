@@ -1,108 +1,60 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" data-style="editorial">
-  <!-- Editorial Warm Cream Background -->
   <rect width="240" height="240" fill="#F4EDE2" />
+  <ellipse cx="120" cy="208" rx="88" ry="9" fill="#E3D5C1" />
 
-  <!-- Soft Ground Shadow -->
-  <ellipse cx="114" cy="204" rx="76" ry="11" fill="#E3D5C1" />
+  <!-- Rule / Guide Checklist Card -->
+  <g transform="translate(120 86) rotate(-3)">
+    <rect
+      x="-52"
+      y="-44"
+      width="104"
+      height="86"
+      rx="9"
+      fill="#FFFFFF"
+      stroke="#3A332D"
+      stroke-width="3.5"
+      stroke-linejoin="round"
+    />
+    <circle cx="-30" cy="-22" r="5.5" fill="#E39A62" stroke="#3A332D" stroke-width="2.5" />
+    <line x1="-16" y1="-22" x2="32" y2="-22" stroke="#D5C7B4" stroke-width="4" stroke-linecap="round" />
 
-  <!-- Control Panel Console (3D Perspective Base) -->
-  <path
-    d="M 44 156 L 44 174 Q 44 186 58 189 L 146 199 Q 160 201 168 192 L 182 175 Q 186 170 184 158 L 44 156 Z"
-    fill="#7B7268"
-    stroke="#3A332D"
-    stroke-width="2.5"
-    stroke-linejoin="round"
-  />
-  <path
-    d="M 44 156 Q 44 144 58 140 L 146 130 Q 160 129 170 138 L 182 150 Q 186 156 178 164 L 166 176 Q 158 182 144 180 L 56 170 Q 44 168 44 156 Z"
-    fill="#B5ABA0"
-    stroke="#3A332D"
-    stroke-width="2.5"
-    stroke-linejoin="round"
-  />
+    <circle cx="-30" cy="0" r="5.5" fill="#E39A62" stroke="#3A332D" stroke-width="2.5" />
+    <line x1="-16" y1="0" x2="32" y2="0" stroke="#D5C7B4" stroke-width="4" stroke-linecap="round" />
 
-  <!-- Recessed Button Housing -->
-  <ellipse cx="112" cy="155" rx="34" ry="17" fill="#686058" stroke="#3A332D" stroke-width="2.5" />
-  <ellipse cx="112" cy="156" rx="28" ry="13.5" fill="#4E4842" />
-
-  <!-- 3D Terracotta Push Button -->
-  <path
-    d="M 88 144 L 88 153 A 24 11 0 0 0 136 153 L 136 144 Z"
-    fill="#9B3F23"
-    stroke="#3A332D"
-    stroke-width="2.5"
-    stroke-linejoin="round"
-  />
-  <ellipse cx="112" cy="144" rx="24" ry="11" fill="#C85A38" stroke="#3A332D" stroke-width="2.5" />
-  <ellipse cx="105" cy="141" rx="11" ry="4.2" fill="#E68A6E" opacity="0.65" />
-
-  <!-- Subtle Press Action Ticks -->
-  <g stroke="#B4532F" stroke-width="2.4" stroke-linecap="round">
-    <path d="M 74 139 L 65 134" />
-    <path d="M 82 128 L 76 120" />
-    <path d="M 148 136 L 157 131" />
+    <circle cx="-30" cy="22" r="5.5" fill="#E39A62" stroke="#3A332D" stroke-width="2.5" />
+    <line x1="-16" y1="22" x2="22" y2="22" stroke="#D5C7B4" stroke-width="4" stroke-linecap="round" />
   </g>
 
-  <!-- Curled Fingers Under Hand -->
+  <!-- Downward Arrow -->
   <path
-    d="M 134 94 C 138 112 150 116 158 108 C 164 102 162 90 154 86 Z"
-    fill="#E3B396"
-    stroke="#3A332D"
-    stroke-width="2.5"
-    stroke-linejoin="round"
-  />
-  <path
-    d="M 148 100 C 152 115 164 118 171 110 C 176 104 173 94 166 90 Z"
-    fill="#DDA88B"
-    stroke="#3A332D"
-    stroke-width="2.5"
-    stroke-linejoin="round"
-  />
-
-  <!-- Thumb -->
-  <path
-    d="M 142 68 C 128 66 116 74 118 85 C 120 93 132 95 144 89"
-    fill="#F0C7AE"
-    stroke="#3A332D"
-    stroke-width="2.5"
+    d="M 120 132 L 120 147 M 113 141 L 120 148 L 127 141"
+    fill="none"
+    stroke="#B4532F"
+    stroke-width="3.5"
     stroke-linecap="round"
     stroke-linejoin="round"
   />
 
-  <!-- Hand & Extended Index Finger Pressing Button -->
-  <path
-    d="M 178 62 C 164 60 150 64 138 74 C 128 83 118 98 110 118 L 104 136 C 102 142 108 147 115 144 C 119 142 122 137 125 130 L 135 104 C 142 106 154 108 164 105 C 176 102 186 96 192 92 Z"
-    fill="#F0C7AE"
+  <!-- "ACCORDING TO" Editorial Pill Badge -->
+  <rect
+    x="34"
+    y="154"
+    width="172"
+    height="38"
+    rx="10"
+    fill="#6F8F7D"
     stroke="#3A332D"
-    stroke-width="2.5"
-    stroke-linecap="round"
+    stroke-width="3.5"
     stroke-linejoin="round"
   />
-
-  <!-- Index Fingernail & Knuckle Creases -->
-  <path
-    d="M 106 135 C 107 131 112 130 115 133 L 113 140 C 110 141 106 139 106 135 Z"
-    fill="#FCE5D8"
-    stroke="#3A332D"
-    stroke-width="1.6"
-    stroke-linejoin="round"
-  />
-  <path d="M 116 112 Q 121 114 125 112" fill="none" stroke="#3A332D" stroke-width="1.8" stroke-linecap="round" />
-  <path d="M 142 79 Q 148 84 154 84" fill="none" stroke="#3A332D" stroke-width="1.8" stroke-linecap="round" />
-
-  <!-- Shirt Cuff & Sleeve -->
-  <path
-    d="M 188 54 L 176 61 L 194 98 L 206 91 Z"
-    fill="#EAE2D6"
-    stroke="#3A332D"
-    stroke-width="2.5"
-    stroke-linejoin="round"
-  />
-  <path
-    d="M 242 26 L 184 58 L 200 94 L 242 74 Z"
-    fill="#4A6B82"
-    stroke="#3A332D"
-    stroke-width="2.5"
-    stroke-linejoin="round"
-  />
+  <text
+    x="120"
+    y="179"
+    fill="#FBF6EE"
+    font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+    font-size="16"
+    font-weight="800"
+    letter-spacing="0.8"
+    text-anchor="middle"
+  >ACCORDING TO</text>
 </svg>
