@@ -257,6 +257,9 @@ body.graded-story-active #primaryTabs {
   .stroke-canvas-panel { padding-bottom: 18px; }
 
   /* Desktop home dashboard: natural, spacious, comfortable flow */
+  @media (min-width: 2400px) {
+    :root { --app-shell-max-width: 1480px; }
+  }
   body.home-screen {
     min-height: 100vh;
     overflow-y: auto;
@@ -268,7 +271,7 @@ body.graded-story-active #primaryTabs {
     max-width: var(--app-shell-max-width);
     margin: 0 auto;
     width: 100%;
-    padding: 0 16px;
+    padding: 0;
     box-sizing: border-box;
   }
   body.home-screen .workstation {
