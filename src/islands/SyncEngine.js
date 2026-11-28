@@ -156,8 +156,12 @@ export function createSyncEngine({ storage, adapter, uid, normalizeCard, newDevi
     return { incoming, newest };
   }
 
-  /** @returns {Promise<SyncResult>} */
-  async function sync() {
+  /**
+   * @param {{ push?: boolean }} [options]  push:false pulls and merges only (background polls),
+   *   leaving local changes for the next full sync.
+   * @returns {Promise<SyncResult>}
+   */
+  async function sync({ push = true } = {}) {
     const state = readState();
     const snapshots = await adapter.pullSince(state.lastPulledAt);
     const { incoming, newest } = await selectIncoming(snapshots, state);
@@ -171,6 +175,11 @@ export function createSyncEngine({ storage, adapter, uid, normalizeCard, newDevi
       if (now !== before[key]) applied += 1;
       // A value now identical to the cloud copy is in sync and must not be pushed back.
       if (now === incoming[key]) state.hashes[key] = await hashText(now);
+    }
+
+    if (!push) {
+      storage.setItem(SYNC_STATE_KEY, JSON.stringify({ ...state, lastPulledAt: newest }));
+      return { pulled: snapshots.length, applied, pushed: 0, skipped: [] };
     }
 
     const toPush = [];

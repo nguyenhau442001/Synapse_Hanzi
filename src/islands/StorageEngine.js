@@ -2,6 +2,7 @@
 // Local persistence for the currently selected HSK level and cross-level SRS progress.
 
 import { SRS } from './SrsEngine.js';
+import { SYNC_LOCAL_CHANGE_EVENT } from './SyncConstants.js';
 
 export const SRS_SCHEMA_VERSION = 3;
 export const SRS_RETENTION_KEY = 'hsk_srs_prefs_v1';
@@ -68,7 +69,17 @@ export function saveSrsRecord(level, cards, migratedFromV2, direction) {
       migratedFromV2: Boolean(migratedFromV2),
       cards,
     }));
-  } catch (e) {}
+  } catch {
+    return;
+  }
+  notifyProgressChanged();
+}
+
+/** Tell the sync controller that allowlisted progress changed (schedules a debounced push). */
+function notifyProgressChanged() {
+  if (typeof window !== 'undefined' && typeof window.dispatchEvent === 'function') {
+    window.dispatchEvent(new Event(SYNC_LOCAL_CHANGE_EVENT));
+  }
 }
 
 export function appendReviewLog(level, entry, direction) {

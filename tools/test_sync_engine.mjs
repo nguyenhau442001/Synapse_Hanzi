@@ -212,5 +212,25 @@ const deviceB = new MemoryStorage({ hsk_theme: 'light' });
   assert.equal(target.getItem(SYNC_STATE_KEY), null);
 }
 
+// Pull-only polls receive other devices' changes but never write; the next full sync pushes.
+{
+  const pollCloud = memoryCloud();
+  const writer = new MemoryStorage({ [CURRICULUM]: '{"lessons":{"l1":true}}' });
+  const reader = new MemoryStorage({});
+  await engineFor(writer, pollCloud.adapter).sync();
+  reader.setItem(CURRICULUM, '{"lessons":{"l2":true}}');
+  const writes = pollCloud.stats.writes;
+  const polled = await engineFor(reader, pollCloud.adapter).sync({ push: false });
+  assert.equal(polled.pushed, 0);
+  assert.equal(pollCloud.stats.writes, writes);
+  assert.equal(reader.getItem(CURRICULUM), '{"lessons":{"l2":true}}', 'lww keeps the local edit');
+  const again = await engineFor(reader, pollCloud.adapter).sync({ push: false });
+  assert.equal(again.pulled, 0, 'a poll only reads snapshots newer than the last one');
+  const full = await engineFor(reader, pollCloud.adapter).sync();
+  assert.equal(full.pushed, 1);
+  await engineFor(writer, pollCloud.adapter).sync({ push: false });
+  assert.equal(writer.getItem(CURRICULUM), '{"lessons":{"l2":true}}');
+}
+
 assert.equal((await hashText('abc')).length, 32);
 console.log('sync engine tests passed');

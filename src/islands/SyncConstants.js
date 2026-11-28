@@ -63,8 +63,17 @@ export const SYNC_SNAPSHOTS_COLLECTION = 'snapshots';
 /** sessionStorage guard so a sync that changed local data reloads the page at most once. */
 export const SYNC_RELOAD_GUARD_KEY = 'hsk_sync_reloaded_v1';
 
-/** Background sync cadence while the app is visible and signed in. */
-export const SYNC_INTERVAL_MS = 5 * 60 * 1000;
+/** Pull-only poll cadence while the app is visible and signed in. */
+export const SYNC_POLL_INTERVAL_MS = 60 * 1000;
+
+/** Push this long after the last local progress change (trailing debounce). */
+export const SYNC_PUSH_DEBOUNCE_MS = 30 * 1000;
+
+/** While changes keep coming (non-stop study), push at least this often. */
+export const SYNC_PUSH_MAX_WAIT_MS = 2 * 60 * 1000;
+
+/** window event fired when allowlisted progress is written locally. */
+export const SYNC_LOCAL_CHANGE_EVENT = 'hanzi:progress-changed';
 
 /** On returning to the app, sync if the last sync is older than this. */
 export const SYNC_STALE_AFTER_MS = 60 * 1000;
