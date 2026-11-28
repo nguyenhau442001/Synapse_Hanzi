@@ -6,6 +6,26 @@
 import { render as preactRender } from 'preact';
 import { APP_TIMEOUTS } from './AppTimeouts';
 import { EvidenceHighlight, getPrioritizedVocabularies } from './ListeningReviewPanel.jsx';
+import { BarChart3, Lock } from 'lucide-preact';
+import { SYNC_LOCAL_CHANGE_EVENT } from './SyncConstants.js';
+import {
+  LISTENING_EXAM_MODE_KEY,
+  LISTENING_EXAM_PLAYS,
+  LISTENING_REPLAY_SPEEDS,
+  LISTENING_SPEED_NORMAL,
+  LISTENING_STATS_WINDOW,
+  LISTENING_DRILL_LABELS,
+  MISTAKE_REASONS,
+  MISTAKE_REASON_LABELS,
+  PERCENT_SCALE,
+} from './ListeningConstants.js';
+import {
+  loadAttempts,
+  recordAttempt,
+  summarizeAttempts,
+  splitAtTurnMarker,
+  tagAttemptReason,
+} from './ListeningAttempts.js';
 
 /* global HSK4_MOCK_EXAMS -- utils.js */
 
@@ -20,7 +40,10 @@ let currentExamId = 'H41001';
 let currentQuestionIndex = 0;
 let currentQuestion = null;
 let currentMode = 'learner'; // 'learner' | 'editor'
-let userSessionAnswers = {}; // { [questionId]: { answered, selectedChoice, isCorrect } }
+let userSessionAnswers = {}; // { [questionId]: { answered, selectedChoice, isCorrect, attemptId, reason } }
+const playsUsedByQuestion = {}; // { [questionId]: full-question plays started before answering }
+let examMode = readExamMode();
+let statsOpen = false;
 let settingsMenuOpen = false;
 let rulesOpen = false;
 
@@ -32,8 +55,49 @@ const learnerState = {
   showTranslation: true,
   speed: 1.0,
   loop: false,
-  activePlayingSegment: null // null | 'full_question' | sentenceId
+  activePlayingSegment: null, // null | 'full_question' | sentenceId
+  attemptId: null, // id of the ListeningAttempt recorded for this answer
+  reason: null // MistakeReason tagged for a wrong answer
 };
+
+function readExamMode() {
+  try {
+    return localStorage.getItem(LISTENING_EXAM_MODE_KEY) !== 'off';
+  } catch {
+    return true;
+  }
+}
+
+function toggleExamMode() {
+  examMode = !examMode;
+  try { localStorage.setItem(LISTENING_EXAM_MODE_KEY, examMode ? 'on' : 'off'); } catch { /* storage unavailable */ }
+  settingsMenuOpen = false;
+  if (isListenLocked()) setSpeed(LISTENING_SPEED_NORMAL);
+  render();
+}
+
+function toggleStats() {
+  statsOpen = !statsOpen;
+  settingsMenuOpen = false;
+  render();
+}
+
+/** Exam mode before answering: one play, no seek / loop / speed / per-sentence replay. */
+function isListenLocked() {
+  return examMode && !learnerState.answered;
+}
+
+function getPlaysUsed() {
+  return currentQuestion ? (playsUsedByQuestion[currentQuestion.id] || 0) : 0;
+}
+
+function hasPlaysLeft() {
+  return !isListenLocked() || getPlaysUsed() < LISTENING_EXAM_PLAYS;
+}
+
+function notifyProgressChanged() {
+  window.dispatchEvent(new Event(SYNC_LOCAL_CHANGE_EVENT));
+}
 
 const editorState = {
   selectedSegmentKey: 'passage', // 'passage' | 'statement' | 'full_question' | sentenceId
@@ -267,12 +331,13 @@ function playSegment(startMs, endMs, options = {}) {
 }
 
 function setSpeed(rate) {
-  learnerState.speed = rate;
-  if (audio) audio.playbackRate = rate;
+  learnerState.speed = isListenLocked() ? LISTENING_SPEED_NORMAL : rate;
+  if (audio) audio.playbackRate = learnerState.speed;
   updatePlaybackUI();
 }
 
 function toggleLoop() {
+  if (isListenLocked()) return;
   learnerState.loop = !learnerState.loop;
   if (activeSegment) activeSegment.loop = learnerState.loop;
   updatePlaybackUI();
@@ -326,6 +391,9 @@ function restoreQuestionSessionState() {
   learnerState.selectedChoice = saved ? saved.selectedChoice : null;
   learnerState.isCorrect = saved ? saved.isCorrect : null;
   learnerState.activePlayingSegment = null;
+  learnerState.attemptId = saved ? saved.attemptId || null : null;
+  learnerState.reason = saved ? saved.reason || null : null;
+  if (isListenLocked()) setSpeed(LISTENING_SPEED_NORMAL);
 }
 
 function restoreLocalDraft() {
@@ -617,6 +685,11 @@ function UnalignedNotice() {
 // updated per frame by updatePlaybackProgressUI(); recreated on each full render (starts at 0 again).
 function LearnerAudioPlayer() {
   const isPlayingFull = learnerState.activePlayingSegment === 'full_question';
+  const locked = isListenLocked();
+  const playsLeft = hasPlaysLeft();
+  const seekable = !locked;
+  let playLabel = isPlayingFull ? 'Tạm dừng' : 'Nghe đoạn này';
+  if (locked) playLabel = playsLeft ? LISTENING_DRILL_LABELS.playOnce : LISTENING_DRILL_LABELS.playUsed;
   const seg = currentQuestion.segments ? currentQuestion.segments.full_question : null;
   const totalMs = seg ? Math.max(0, seg.end_ms - seg.start_ms) : 0;
   const onTrackClick = (e) => {
@@ -633,22 +706,59 @@ function LearnerAudioPlayer() {
   return (
     <div class="listening-player-surface">
       <div class="listening-player-controls-grid">
-        <button type="button" class={`listening-play-primary-btn ${isPlayingFull ? 'is-playing' : ''}`}
-          onClick={togglePlayFullQuestion} aria-label={isPlayingFull ? 'Tạm dừng' : 'Nghe đoạn này'}>
-          {primaryPlayInner(isPlayingFull)}
+        <button
+          type="button"
+          class={`listening-play-primary-btn ${isPlayingFull ? 'is-playing' : ''} ${locked && !playsLeft && !isPlayingFull ? 'is-locked' : ''}`}
+          onClick={togglePlayFullQuestion}
+          disabled={locked && !playsLeft && !isPlayingFull}
+          title={playLabel}
+          aria-label={playLabel}
+        >
+          {locked && !playsLeft && !isPlayingFull ? <Lock size={18} aria-hidden="true" /> : primaryPlayInner(isPlayingFull)}
         </button>{' '}
         <div class="listening-player-right-col">
           <div class="listening-progress-wrap">
             <div class="listening-progress-track" id="learnerProgressTrack" tabindex="0" role="slider"
               aria-label="Thanh tua âm thanh" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"
-              title="Bấm để tua hoặc dùng phím mũi tên ← →" onClick={seg ? onTrackClick : undefined} onKeyDown={seg ? onTrackKey : undefined}>
+              title={seekable ? 'Bấm để tua hoặc dùng phím mũi tên ← →' : LISTENING_DRILL_LABELS.examModeOn}
+              aria-disabled={String(!seekable)}
+              onClick={seg && seekable ? onTrackClick : undefined} onKeyDown={seg && seekable ? onTrackKey : undefined}>
               <div class="listening-progress-fill" id="learnerProgressFill"></div>{' '}
               <span class="listening-progress-thumb" id="learnerProgressThumb"></span>
             </div>{' '}
             <div class="listening-time-readout" id="learnerTimeBadge">{`0:00 / ${formatLearnerTime(totalMs)}`}</div>
           </div>
+          {locked ? (
+            <div class="listening-exam-lock-note">
+              <Lock size={12} aria-hidden="true" />{' '}
+              <span>{playsLeft ? LISTENING_DRILL_LABELS.examModeOn : LISTENING_DRILL_LABELS.playUsed}</span>
+            </div>
+          ) : <SpeedPresets />}
         </div>
       </div>
+    </div>
+  );
+}
+
+function SpeedPresets() {
+  return (
+    <div
+      class="listening-speed-presets"
+      role="group"
+      aria-label={LISTENING_DRILL_LABELS.speedLabel}
+    >
+      <span class="listening-speed-label">{LISTENING_DRILL_LABELS.speedLabel}</span>
+      {LISTENING_REPLAY_SPEEDS.map((rate) => (
+        <button
+          key={rate}
+          type="button"
+          class={`listening-speed-pill ${learnerState.speed === rate ? 'is-active' : ''}`}
+          onClick={() => setSpeed(rate)}
+          aria-pressed={String(learnerState.speed === rate)}
+        >
+          {`${rate.toFixed(2).replace(/0$/, '')}×`}
+        </button>
+      ))}
     </div>
   );
 }
@@ -657,7 +767,7 @@ function LearnerAudioPlayer() {
 function playLearnerSegment(segmentId, startMs, endMs) {
   learnerState.activePlayingSegment = segmentId;
   playSegment(startMs, endMs, {
-    loop: learnerState.loop,
+    loop: learnerState.loop && !isListenLocked(),
     onEnd: () => {
       learnerState.activePlayingSegment = null;
       updatePlaybackUI();
@@ -667,16 +777,21 @@ function playLearnerSegment(segmentId, startMs, endMs) {
 
 function togglePlayFullQuestion() {
   if (learnerState.activePlayingSegment === 'full_question') {
+    // The exam plays straight through: no pausing (a resume would be a second listen).
+    if (isListenLocked()) return;
     stopAudio();
   } else {
     const seg = currentQuestion.segments.full_question;
     if (!seg || seg.start_ms == null) return;
+    if (!hasPlaysLeft()) return;
+    if (isListenLocked()) playsUsedByQuestion[currentQuestion.id] = getPlaysUsed() + 1;
     playLearnerSegment('full_question', seg.start_ms, seg.end_ms);
   }
   updatePlaybackUI();
 }
 
 function togglePlaySentence(sentenceId) {
+  if (isListenLocked()) return;
   if (learnerState.activePlayingSegment === sentenceId) {
     stopAudio();
   } else {
@@ -708,8 +823,140 @@ function submitAnswer(choice) {
   learnerState.answered = true;
   learnerState.selectedChoice = choice;
   learnerState.isCorrect = choice === currentQuestion.answer;
-  userSessionAnswers[currentQuestion.id] = { answered: true, selectedChoice: choice, isCorrect: learnerState.isCorrect };
+  learnerState.reason = null;
+  learnerState.attemptId = null;
+  try {
+    const attempt = recordAttempt(localStorage, {
+      questionId: currentQuestion.id,
+      examId: currentQuestion.exam_id || currentExamId,
+      correct: learnerState.isCorrect,
+      choice,
+      examMode,
+    });
+    learnerState.attemptId = attempt.id;
+    notifyProgressChanged();
+  } catch (e) {
+    console.warn('Could not record listening attempt', e);
+  }
+  userSessionAnswers[currentQuestion.id] = {
+    answered: true,
+    selectedChoice: choice,
+    isCorrect: learnerState.isCorrect,
+    attemptId: learnerState.attemptId,
+    reason: null,
+  };
   render();
+}
+
+function chooseMistakeReason(reason) {
+  if (!learnerState.attemptId) return;
+  try {
+    if (!tagAttemptReason(localStorage, learnerState.attemptId, reason)) return;
+  } catch (e) {
+    console.warn('Could not tag listening attempt', e);
+    return;
+  }
+  learnerState.reason = reason;
+  const saved = userSessionAnswers[currentQuestion.id];
+  if (saved) saved.reason = reason;
+  notifyProgressChanged();
+  render();
+}
+
+function MistakeReasonPicker() {
+  if (learnerState.isCorrect || !learnerState.attemptId) return null;
+  return (
+    <div
+      class="listening-reason-picker"
+      role="group"
+      aria-label={LISTENING_DRILL_LABELS.reasonPrompt}
+    >
+      <span class="listening-reason-prompt">
+        {learnerState.reason ? LISTENING_DRILL_LABELS.reasonSaved : LISTENING_DRILL_LABELS.reasonPrompt}
+      </span>
+      <div class="listening-reason-chips">
+        {MISTAKE_REASONS.map((reason) => (
+          <button
+            key={reason}
+            type="button"
+            class={`listening-reason-chip ${learnerState.reason === reason ? 'is-active' : ''}`}
+            onClick={() => chooseMistakeReason(reason)}
+            aria-pressed={String(learnerState.reason === reason)}
+          >
+            {MISTAKE_REASON_LABELS[reason]}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// Sentence text with the clause after a turn marker (但是 / 不过 / 其实 / 结果 ...) emphasised.
+function TurnHighlight({ sentZh, evidenceZh }) {
+  const split = splitAtTurnMarker(sentZh);
+  if (!split.marker) return <EvidenceHighlight sentZh={sentZh} evidenceZh={evidenceZh} />;
+  return (
+    <>
+      <EvidenceHighlight sentZh={split.before} evidenceZh={evidenceZh} />
+      <strong class="listening-turn-marker">{split.marker}</strong>
+      <span
+        class="listening-turn-clause"
+        title={LISTENING_DRILL_LABELS.turnMarkerHint}
+      >
+        <EvidenceHighlight sentZh={split.after} evidenceZh={evidenceZh} />
+      </span>
+    </>
+  );
+}
+
+function ListeningStatsPanel() {
+  const stats = summarizeAttempts(loadAttempts(localStorage));
+  const accuracy = stats.total ? Math.round((stats.correct / stats.total) * PERCENT_SCALE) : 0;
+  const maxReason = Math.max(1, ...MISTAKE_REASONS.map((r) => stats.reasons[r]));
+  return (
+    <div
+      class="listening-stats-panel"
+      aria-label={LISTENING_DRILL_LABELS.statsTitle}
+    >
+      <div class="listening-stats-head">
+        <span class="listening-stats-title">
+          <BarChart3 size={15} aria-hidden="true" />{' '}
+          {LISTENING_DRILL_LABELS.statsTitle}
+        </span>
+        <button
+          type="button"
+          class="listening-stats-close"
+          onClick={toggleStats}
+          title={LISTENING_DRILL_LABELS.statsClose}
+          aria-label={LISTENING_DRILL_LABELS.statsClose}
+        >
+          ×
+        </button>
+      </div>
+      {stats.total === 0 ? (
+        <p class="listening-stats-empty">{LISTENING_DRILL_LABELS.statsEmpty}</p>
+      ) : (
+        <>
+          <div class="listening-stats-accuracy">
+            <span>{`${LISTENING_DRILL_LABELS.statsAccuracy} (${stats.total}/${LISTENING_STATS_WINDOW} câu gần nhất)`}</span>
+            <strong>{`${accuracy}%`}</strong>
+          </div>
+          <ul class="listening-stats-reasons">
+            {MISTAKE_REASONS.map((reason) => (
+              <li key={reason}>
+                <span class="listening-stats-reason-label">{MISTAKE_REASON_LABELS[reason]}</span>
+                <span class="listening-stats-bar" aria-hidden="true">
+                  <span style={{ width: `${(stats.reasons[reason] / maxReason) * PERCENT_SCALE}%` }} />
+                </span>
+                <span class="listening-stats-count">{stats.reasons[reason]}</span>
+              </li>
+            ))}
+          </ul>
+          {stats.untagged > 0 && <p class="listening-stats-empty">{`${stats.untagged} câu sai chưa ghi lý do`}</p>}
+        </>
+      )}
+    </div>
+  );
 }
 
 // Shared EvidenceHighlight & getPrioritizedVocabularies imported from ./ListeningReviewPanel.jsx
@@ -742,6 +989,7 @@ function CompactFeedback() {
           <span>{statusText}</span>
         </span>
       </div>{' '}
+      <MistakeReasonPicker />{' '}
       <div class="listening-feedback-body">
         {evidenceZhText && (
           <div class="listening-feedback-evidence">
@@ -752,7 +1000,7 @@ function CompactFeedback() {
                   {evidencePlayInner(isEvidencePlaying)}
                 </button>
               )}{' '}
-              <div class="listening-evidence-zh" lang="zh-CN"><EvidenceHighlight sentZh={evidenceZhText} evidenceZh={q.evidence ? q.evidence.zh : ''} /></div>
+              <div class="listening-evidence-zh" lang="zh-CN"><TurnHighlight sentZh={evidenceZhText} evidenceZh={q.evidence ? q.evidence.zh : ''} /></div>
             </div>{' '}
             {evidenceVi && <div class="listening-evidence-vi">{evidenceVi}</div>}
           </div>
@@ -802,7 +1050,7 @@ function TranscriptAndVocab() {
                 {rowPlayInner(isPlayingThis)}
               </button>{' '}
               <div class="listening-row-content">
-                <div class="listening-row-zh" lang="zh-CN"><EvidenceHighlight sentZh={s.zh} evidenceZh={q.evidence ? q.evidence.zh : ''} /></div>{' '}
+                <div class="listening-row-zh" lang="zh-CN"><TurnHighlight sentZh={s.zh} evidenceZh={q.evidence ? q.evidence.zh : ''} /></div>{' '}
                 {learnerState.showPinyin && s.pinyin && <div class="listening-row-pinyin">{formatNaturalPinyin(s.pinyin)}</div>}{' '}
                 {learnerState.showTranslation && s.vi && <div class="listening-row-vi">{s.vi}</div>}
               </div>
@@ -870,6 +1118,7 @@ function LearnerView() {
   return (
     <section class="listening-unified-card" aria-label="Bài tập luyện nghe">
       <MetaBar />{' '}
+      {statsOpen && <ListeningStatsPanel />}{' '}
       <div class="listening-statement-block">
         <div class="listening-statement-badge">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10" /><path d="M12 16v-4" /><path d="M12 8h.01" /></svg>{' '}
@@ -1451,7 +1700,8 @@ function TopNav() {
           </button>{' '}
           <div class="listening-rules-popover" id="listeningRulesPopover" hidden={!rulesOpen}>
             <div class="listening-rules-popover-content">
-              <p class="rules-popover-item"><strong>Luyện nghe bổ sung:</strong> Nghe lại tùy ý, tua đoạn, chỉnh tốc độ phát và lặp lại từng câu.</p>{' '}
+              <p class="rules-popover-item"><strong>Chế độ thi:</strong> Audio chỉ phát 1 lần như đề thi máy HSK 3.0. Sau khi trả lời mới mở nghe lại, tua, tốc độ 0.85× và nghe từng câu.</p>{' '}
+              <p class="rules-popover-item"><strong>Ghi lý do sai:</strong> Chạm 1 lý do sau mỗi câu sai để xem điểm yếu trong mục Thống kê.</p>{' '}
               <p class="rules-popover-item"><strong>Phân tích chuyên sâu:</strong> Xem lời thoại, câu dẫn chứng, cụm ngữ pháp và từ vựng sau khi trả lời.</p>
             </div>
           </div>
@@ -1471,6 +1721,23 @@ function TopNav() {
               <button type="button" class="listening-dropdown-item" onClick={() => setMode('editor')}>
                 <PenIcon size={14} />{' '}
                 <span>Căn chỉnh audio</span>
+              </button>
+              <button
+                type="button"
+                class="listening-dropdown-item"
+                onClick={toggleExamMode}
+                aria-pressed={String(examMode)}
+              >
+                <Lock size={14} aria-hidden="true" />{' '}
+                <span>{`${LISTENING_DRILL_LABELS.examModeToggle}: ${examMode ? 'Bật' : 'Tắt'}`}</span>
+              </button>
+              <button
+                type="button"
+                class="listening-dropdown-item"
+                onClick={toggleStats}
+              >
+                <BarChart3 size={14} aria-hidden="true" />{' '}
+                <span>{statsOpen ? LISTENING_DRILL_LABELS.statsClose : LISTENING_DRILL_LABELS.statsOpen}</span>
               </button>
             </div>
           </div>

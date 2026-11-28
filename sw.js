@@ -8,15 +8,15 @@ const DATA_CACHE_NAME = 'hsk-data-v18';
 const PRECACHE_MANIFEST = [
   {
     "url": "index.html",
-    "revision": "203c50245a1872929ceb5845d6b50046"
+    "revision": "a8e79ecf71fb474b6b9f61d32a8ee844"
   },
   {
     "url": "assets/flashcards.css",
-    "revision": "1aad10e06e0806b04ea0323d1479fb5c"
+    "revision": "95e6c68b568c187dc5b7ef3e9e5b547c"
   },
   {
     "url": "assets/js/preact/islands.js",
-    "revision": "683f4864e3474e5953db973515013f13"
+    "revision": "243c1091ee14f51395b68d87a6ddb432"
   },
   {
     "url": "assets/js/preact/chunks/volume-2-DLqdM3rb.js",
@@ -43,32 +43,32 @@ const PRECACHE_MANIFEST = [
     "revision": "4c3a11991e503adb4826bcd96a63d1af"
   },
   {
-    "url": "assets/js/preact/chunks/app-B9zlmFDC.js",
-    "revision": "cead6d572c87e558632d6cb37c78fd87"
+    "url": "assets/js/preact/chunks/app-Bb00XmoT.js",
+    "revision": "7efb85e513e827019bb92c57ea69398d"
   },
   {
-    "url": "assets/js/preact/chunks/Writing-D9-NK8gS.js",
-    "revision": "4f9778e04b80b28aba3bb67a098d3ed2"
+    "url": "assets/js/preact/chunks/Writing-CKGbFnd5.js",
+    "revision": "9cce823ff6529bcb6c2904f039a130f5"
   },
   {
-    "url": "assets/js/preact/chunks/SyncConstants-CjIj8xnb.js",
-    "revision": "8326a2cfe84e572ffc64e65968f09e72"
+    "url": "assets/js/preact/chunks/SyncConstants-CRqYEcb2.js",
+    "revision": "5b1a9683a07336671176ad74423ad1e8"
   },
   {
-    "url": "assets/js/preact/chunks/SpeakingPractice-ZQkkd60o.js",
-    "revision": "b5add52c77837d7807cea4b10c75e467"
+    "url": "assets/js/preact/chunks/SpeakingPractice-DpwSwOfZ.js",
+    "revision": "973496db85f7e3db93953c2a74a68f64"
   },
   {
-    "url": "assets/js/preact/chunks/ReadingAnalysis-D95cKJVn.js",
-    "revision": "a60018379c5b72fe2aa5093eaef0d5f1"
+    "url": "assets/js/preact/chunks/ReadingAnalysis-DOsqzraO.js",
+    "revision": "1c6a528ea632607a9e0ea19b74e70043"
   },
   {
-    "url": "assets/js/preact/chunks/ListeningReviewPanel-FW7yB5Xc.js",
-    "revision": "51d1f09fc5507b1ef822ea3631fede2d"
+    "url": "assets/js/preact/chunks/ListeningReviewPanel-NyjMMgxH.js",
+    "revision": "6890eab62bd19b65c4ba144afeff2369"
   },
   {
-    "url": "assets/js/preact/chunks/ListeningPractice-swEnf68-.js",
-    "revision": "209847185ef51a99146e202eee2d7cc8"
+    "url": "assets/js/preact/chunks/ListeningPractice-CznM8JyD.js",
+    "revision": "71c2f8348134b38b161735f8a941854a"
   },
   {
     "url": "assets/js/preact/chunks/LeagueCore-BGN5piz7.js",
@@ -83,16 +83,16 @@ const PRECACHE_MANIFEST = [
     "revision": "8eb540db47aa7bc936aec53d0a0e3583"
   },
   {
-    "url": "assets/js/preact/chunks/Hsk30ExamView-B--7IE7V.js",
-    "revision": "15465c54f05494725c31eb10f596301f"
+    "url": "assets/js/preact/chunks/Hsk30ExamView-CqpQZ7lD.js",
+    "revision": "e0f842ae60e8503cf2ade08454ccd358"
   },
   {
-    "url": "assets/js/preact/chunks/GradedReading-DkUiSf70.js",
-    "revision": "4947be503de8867ce2af24ab30f85979"
+    "url": "assets/js/preact/chunks/GradedReading-DgToGGlm.js",
+    "revision": "4cee596209c9c2789974d8636b585ed1"
   },
   {
-    "url": "assets/js/preact/chunks/FirestoreCloudAdapter-CGn7lR-E.js",
-    "revision": "87e779aff2eea3e423edaf9991318157"
+    "url": "assets/js/preact/chunks/FirestoreCloudAdapter-BT5TCKuf.js",
+    "revision": "57ffc874ca089c0bff3565ed1d280a97"
   },
   {
     "url": "assets/js/preact/chunks/FirebaseAuthProvider-BkoipHMe.js",
@@ -103,16 +103,16 @@ const PRECACHE_MANIFEST = [
     "revision": "bd7b2ff7e959ac71400c9bf2907cf63e"
   },
   {
-    "url": "assets/js/preact/chunks/AuthStore-Drxq_wDe.js",
-    "revision": "7118a0dc57d645fd85d08a21d89ab1b5"
+    "url": "assets/js/preact/chunks/AuthStore-j0EDxCj_.js",
+    "revision": "47ff1a970c0b50cab2c45144e0a913e6"
   },
   {
     "url": "assets/js/preact/chunks/AuthConstants-CTvJpRhF.js",
     "revision": "eef2bcec08b4a32bf35239c270f85f4d"
   },
   {
-    "url": "assets/js/preact/chunks/AiTutorPromptGuide-C2T3dJlO.js",
-    "revision": "b236cfd648e04b0efda7c5139434f667"
+    "url": "assets/js/preact/chunks/AiTutorPromptGuide-mIHhtPln.js",
+    "revision": "f88b623b4a33b0058b0001aa76cadf3c"
   },
   {
     "url": "assets/js/hanviet-dict.js",
