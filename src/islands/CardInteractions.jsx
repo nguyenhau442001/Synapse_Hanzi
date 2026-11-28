@@ -355,6 +355,8 @@ export function flip() {
   if (ex) ex.classList.toggle('show', willShow);
   if (card) card.classList.toggle('is-flipped', willShow);
   if (willShow && typeof window.recordStudyTouch === 'function') window.recordStudyTouch();
+  // Speak the word whenever the answer side is revealed.
+  if (willShow && typeof window.speakWord === 'function') window.speakWord();
   const soundBtn = document.getElementById('soundBtn');
   if (soundBtn) soundBtn.classList.toggle('show', willShow);
   if (willShow && !showPinyin) {
