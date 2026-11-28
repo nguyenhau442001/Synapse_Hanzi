@@ -1,6 +1,7 @@
 // Flashcard markup, filtering, statistics, and rendering.
 import { colorizePinyin, colorizePinyinHtml } from './pinyinTones.js';
-import { buildSyllableColumns } from './HanVietSyllables.js';
+import { buildSyllableColumns, attachGlosses } from './HanVietSyllables.js';
+import { loadCharGlosses, getLoadedCharGlosses } from './CharGlosses.js';
 import { formatStudyLevelLabel } from './AppUtils.js';
 import { APP_TIMEOUTS } from './AppTimeouts.js';
 
@@ -38,18 +39,31 @@ const SYLLABLE_ROW_LABEL = 'Âm từng chữ: chữ Hán, pinyin, Hán Việt';
 function renderSyllableRow(word, hanviet) {
   const row = document.getElementById('cardSyllableRow');
   if (!row) return false;
-  const columns = word ? buildSyllableColumns(word.hanzi, word.pinyin, hanviet) : null;
-  if (!columns) {
+  const baseColumns = word ? buildSyllableColumns(word.hanzi, word.pinyin, hanviet) : null;
+  if (!baseColumns) {
     row.hidden = true;
     row.innerHTML = '';
+    delete row.dataset.wordId;
     return false;
   }
-  row.innerHTML = columns.map(({ char, pinyin, hanviet: reading }) => `
-    <span class="card-syllable-col">
-      <span class="card-syllable-char" lang="zh-CN">${window.escapeHtml(char)}</span>
-      <span class="card-syllable-pinyin">${colorizePinyin(pinyin)}</span>
-      <span class="card-syllable-hv">${window.escapeHtml(reading.toLocaleUpperCase('vi'))}</span>
-    </span>`).join('');
+  const paint = (glossMap) => {
+    const columns = attachGlosses(baseColumns, glossMap);
+    row.innerHTML = columns.map(({ char, pinyin, hanviet: reading, gloss }) => `
+      <span class="card-syllable-col">
+        <span class="card-syllable-char" lang="zh-CN">${window.escapeHtml(char)}</span>
+        <span class="card-syllable-pinyin">${colorizePinyin(pinyin)}</span>
+        <span class="card-syllable-hv">${window.escapeHtml(reading.toLocaleUpperCase('vi'))}</span>
+        ${gloss ? `<span class="card-syllable-gloss">${window.escapeHtml(gloss)}</span>` : ''}
+      </span>`).join('');
+  };
+  row.dataset.wordId = String(word.id);
+  paint(getLoadedCharGlosses());
+  if (!getLoadedCharGlosses()) {
+    // First card: repaint with glosses once loaded, unless the card has moved on meanwhile.
+    loadCharGlosses().then((map) => {
+      if (row.dataset.wordId === String(word.id)) paint(map);
+    });
+  }
   row.hidden = false;
   return true;
 }

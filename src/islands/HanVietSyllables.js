@@ -17,7 +17,20 @@ const stripClarifier = (text) => String(text || '').replace(CLARIFIER_RE, ' ').t
  * @property {string} char     Single Hanzi character.
  * @property {string} pinyin   Tone-marked pinyin syllable for that character.
  * @property {string} hanviet  Hán Việt reading for that character (as stored, not uppercased).
+ * @property {string} [gloss]  Short Vietnamese core sense of the character (from char_glosses.json).
  */
+
+/**
+ * Adds each character's core-sense gloss. Characters without a gloss (bound morphemes such as
+ * 蝴 in 蝴蝶) get none rather than an invented meaning.
+ * @param {SyllableColumn[]} columns
+ * @param {Record<string, string>} glossMap
+ * @returns {SyllableColumn[]}
+ */
+export function attachGlosses(columns, glossMap) {
+  if (!columns || !glossMap) return columns;
+  return columns.map((col) => (glossMap[col.char] ? { ...col, gloss: glossMap[col.char] } : col));
+}
 
 /**
  * @param {string} hanzi

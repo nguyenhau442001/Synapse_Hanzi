@@ -1201,6 +1201,15 @@ html.hide-hanviet .card-syllable-row { display: none !important; }
   letter-spacing: 0.06em;
   color: var(--text-secondary);
 }
+.card-syllable-gloss {
+  max-width: 7.5em;
+  margin-top: 2px;
+  font-size: 13px;
+  line-height: 1.3;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  text-wrap: balance;
+}
 .card.is-flipped .card-syllable-row {
   animation: cardRevealFade 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
