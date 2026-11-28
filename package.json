@@ -1,6 +1,6 @@
 {
   "name": "hanzi-mind",
-  "version": "3.84.2",
+  "version": "3.84.3",
   "description": "汉字思维 (Hànzì Sīwéi) · Hanzi Mind — Trạm học từ vựng chữ Hán đa giác quan, hiện đại, mỹ học truyền thống Đông phương và 100% Offline (PWA)",
   "private": true,
   "scripts": {
@@ -41,5 +41,9 @@
     "typescript": "^7.0.2",
     "vite": "^8.3.5",
     "vite-plugin-pwa": "^2.0.0"
+  },
+  "overrides": {
+    "@grpc/grpc-js": "^1.14.7",
+    "glob": "^14.0.6"
   }
 }
