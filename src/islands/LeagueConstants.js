@@ -83,6 +83,24 @@ export const LEAGUE_TOAST_MS = 5000;
 
 /** Top-3 medal order. */
 export const LEAGUE_PODIUM_SIZE = 3;
+/** Podium display order: 2nd, 1st, 3rd (indexes into the sorted board). */
+export const LEAGUE_PODIUM_ORDER = Object.freeze([1, 0, 2]);
+export const LEAGUE_MEDALS = Object.freeze(['gold', 'silver', 'bronze']);
+export const LEAGUE_JOIN_STEPS = 3;
+export const LEAGUE_NUMBER_LOCALE = 'vi-VN';
+export const LEAGUE_ICON_SIZE_PX = 20;
+export const LEAGUE_SMALL_ICON_SIZE_PX = 16;
+
+export const LEAGUE_IDS = Object.freeze({
+  ROOT: 'leagueRoot',
+  DIALOG_TITLE: 'leagueDialogTitle',
+  JOIN_TITLE: 'leagueJoinTitle',
+  NICKNAME_INPUT: 'leagueNicknameInput',
+  NICKNAME_HINT: 'leagueNicknameHint',
+  LEAVE_TITLE: 'leagueLeaveTitle',
+  RULES_PANEL: 'leagueRulesPanel',
+  MENU_ITEM: 'headerLeagueItem',
+});
 
 export const LEAGUE_LABELS = Object.freeze({
   TITLE: 'Bảng xếp hạng tuần',
@@ -102,6 +120,7 @@ export const LEAGUE_LABELS = Object.freeze({
   YOUR_RANK: 'Hạng của bạn',
   rankLine: (rank, xp) => `Hạng #${rank} · ${xp} XP`,
   ONLY_NEED: 'Chỉ cần thêm',
+  remainingXp: (xp) => `Còn ${xp} XP`,
   xpAmount: (xp) => `${xp} XP`,
   toOvertake: (name, rank) => `để vượt ${name} lên #${rank}`,
   overtakeShort: (name) => `để vượt ${name}`,
@@ -178,4 +197,6 @@ export const LEAGUE_LABELS = Object.freeze({
   DAILY_GOAL_TOAST: 'Đạt mục tiêu ngày.',
   streakToast: (days) => `Chuỗi ${days} ngày.`,
   VIEW: 'Xem',
+  EMPTY_VALUE: '–',
+  rankPill: (rank) => `#${rank}`,
 });

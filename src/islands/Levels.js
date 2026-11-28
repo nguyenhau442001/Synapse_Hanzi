@@ -1,6 +1,7 @@
 // Level picker, welcome message, study streaks, history modal, and level data loading.
 // Preact island/module port of former assets/js/levels.js.
 import { formatStudyLevelLabel } from './AppUtils.js';
+import { reportLearningActivity, LEAGUE_ACTIVITY } from './LeagueActivity.js';
 import {
   STUDY_DIRECTIONS,
   readSrsRecord,
@@ -476,6 +477,12 @@ export function recordDailyStudy(wordId, level = (typeof currentLevel !== 'undef
 
   try { localStorage.setItem(STUDY_ACTIVITY_KEY, JSON.stringify(activity)); } catch (e) {}
   renderLearningDashboard();
+  reportLearningActivity(LEAGUE_ACTIVITY.DAY, {
+    date: today,
+    wordsToday: dayWordCount(activity.days[today]),
+    goal: readDailyStudyGoal(),
+    streak: Number(studyStreak(activity.days)) || 0,
+  });
 }
 
 export const STUDY_HEARTBEAT_SECONDS = 15;

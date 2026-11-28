@@ -22,6 +22,7 @@ import {
   RefreshCw,
   LogOut,
   Trash2,
+  Trophy,
 } from 'lucide-preact';
 import { APP_VERSION } from './AppUtils';
 import { headerStats, headerUi, avatarInitialOf } from './HeaderStore.js';
@@ -30,6 +31,8 @@ import { AUTH_LABELS as AL } from './AuthConstants.js';
 import { runSync } from './SyncController.js';
 import { describeSync } from './SyncStatus.js';
 import { SYNC_LABELS as SL } from './SyncConstants.js';
+import { LEAGUE_IDS, LEAGUE_LABELS as LL } from './LeagueConstants.js';
+import { leagueBoard, leagueProfile, openLeague } from './LeagueService.js';
 
 /** Icon per sync tone, matching the approved mockup. */
 const SYNC_TONE_ICONS = Object.freeze({
@@ -292,6 +295,28 @@ function ThemeSwitch() {
 }
 
 /** Google photo when signed in, else the initial letter; `large` is the menu header size. */
+/** Avatar-menu entry for the weekly leaderboard: rank pill when joined, "Mới" when not yet. */
+function LeagueMenuItem({ signedIn, onOpen }) {
+  const optedIn = signedIn && leagueProfile.value.optedIn;
+  const me = leagueBoard.value.me;
+  let pill = null;
+  if (optedIn && me && me.xp > 0) pill = LL.rankPill(me.rank);
+  else if (signedIn && !optedIn) pill = LL.MENU_NEW_BADGE;
+  return (
+    <button
+      type="button"
+      id={LEAGUE_IDS.MENU_ITEM}
+      class="ah-menu-item"
+      role="menuitem"
+      onClick={onOpen}
+    >
+      <HeaderIcon icon={Trophy} />
+      <span class="ah-menu-label">{signedIn && !optedIn ? LL.MENU_JOIN : LL.MENU_BOARD}</span>
+      {pill && <span class="ah-menu-pill">{pill}</span>}
+    </button>
+  );
+}
+
 function Avatar({ id, user, initial, large, dotTone }) {
   const className = cx('ah-avatar', large && 'ah-avatar-lg', user?.avatarUrl && 'has-photo');
   const showDot = SYNC_DOT_TONES.includes(dotTone);
@@ -468,6 +493,10 @@ function AccountMenu() {
             <span class="ah-menu-label">{SL.SYNC_NOW}</span>
           </button>
         )}
+        <LeagueMenuItem
+          signedIn={signedIn}
+          onOpen={runAndClose(openLeague)}
+        />
         <div
           class="ah-menu-divider"
           role="separator"

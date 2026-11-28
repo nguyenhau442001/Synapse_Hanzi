@@ -13,6 +13,7 @@ import {
   RotateIcon,
 } from './Icons.jsx';
 import { CurriculumLessonAside } from './CurriculumLessonAside.jsx';
+import { reportLearningActivity, LEAGUE_ACTIVITY } from './LeagueActivity.js';
 import { WORD_PREVIEW_COUNT, WORD_STATUS, CUR_LABELS, PASS_PERCENT } from './CurriculumConstants.js';
 
 /* global LEVELS, selectLevel, speakText, speakSequence, readSavedLevelProgress, SpaRouter, primaryTab, APP_VERSION */
@@ -68,6 +69,7 @@ function recordQuizResult(key, score, total) {
     [key]: { best: Math.max(prev.best || 0, pct), done: Boolean(prev.done) || pct >= PASS_RATIO * 100, at: Date.now() },
   };
   writeStore({ lessons });
+  if (!prev.done && lessons[key].done) reportLearningActivity(LEAGUE_ACTIVITY.LESSON, { key });
 }
 
 export function lessonNumeral(n) {

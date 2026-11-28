@@ -42,7 +42,7 @@ import {
  * @property {number} fetchedAt
  */
 
-/** @typedef {'board'|'join'|'leave'|'left'|null} LeagueView */
+/** @typedef {'board'|'join'|'edit'|'leave'|'left'|null} LeagueView */
 
 /** @type {import('@preact/signals').Signal<import('./LeagueCore.js').LeagueProfile>} */
 export const leagueProfile = signal(emptyProfile());
@@ -316,4 +316,20 @@ export function mountLeague() {
   authState.subscribe((state) => {
     if (state.status === 'signed_in' && leagueProfile.value.optedIn && readLedger().pendingXp > 0) scheduleUpload(0);
   });
+}
+
+/** Open the leaderboard (board view; the board itself offers joining). */
+export function openLeague() {
+  leagueView.value = 'board';
+  loadBoard();
+}
+
+export function closeLeague() {
+  leagueView.value = null;
+}
+
+/** Switch between this week (0) and last week (-1). */
+export function setLeagueWeekOffset(offset) {
+  leagueWeekOffset.value = offset;
+  loadBoard();
 }

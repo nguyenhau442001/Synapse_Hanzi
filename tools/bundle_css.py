@@ -46,6 +46,7 @@ BUNDLE_FILES = [
     "assets/css/design-system.css",
     "assets/css/app-header.css",
     "assets/css/auth.css",
+    "assets/css/league.css",
     "assets/js/preact/hanzi-mind.css",
     "assets/css/theme-dark.css",
 ]

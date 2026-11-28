@@ -8,15 +8,15 @@ const DATA_CACHE_NAME = 'hsk-data-v18';
 const PRECACHE_MANIFEST = [
   {
     "url": "index.html",
-    "revision": "2735129cb632a96591e4624fd2d708e5"
+    "revision": "e911bfc5ac4254094ca8016e4eef8320"
   },
   {
     "url": "assets/flashcards.css",
-    "revision": "dd7402105cba852e981f988dede21c6a"
+    "revision": "1aad10e06e0806b04ea0323d1479fb5c"
   },
   {
     "url": "assets/js/preact/islands.js",
-    "revision": "c262d7793dcd84ed12e826314b6dcac1"
+    "revision": "a9dc20a396c6765a0f5843443018ba42"
   },
   {
     "url": "assets/js/preact/chunks/volume-2-DLqdM3rb.js",
@@ -31,6 +31,10 @@ const PRECACHE_MANIFEST = [
     "revision": "de67d8dfb6da3ea51bd5bf4d357f908c"
   },
   {
+    "url": "assets/js/preact/chunks/index.esm-DMW9zr8h.js",
+    "revision": "6dbb8cc6a47b6e39914f80bb01dbc77f"
+  },
+  {
     "url": "assets/js/preact/chunks/hooks-C8A8kaxD.js",
     "revision": "3d4afeb0803a9e8f1c4e5b31856f2f14"
   },
@@ -39,52 +43,76 @@ const PRECACHE_MANIFEST = [
     "revision": "4c3a11991e503adb4826bcd96a63d1af"
   },
   {
-    "url": "assets/js/preact/chunks/app-DlKST3-z.js",
-    "revision": "609a7b74f17176f7f5040c7ee02322b0"
+    "url": "assets/js/preact/chunks/app-BJgVsHrB.js",
+    "revision": "1b4717290b8d4c0a492d48a3faf3f962"
   },
   {
-    "url": "assets/js/preact/chunks/Writing-B36hWoil.js",
-    "revision": "4c100ee88c6f876b91ca887854e6e205"
+    "url": "assets/js/preact/chunks/Writing-BtLtd6J2.js",
+    "revision": "10cf3870f997196b62ad7238106e2363"
   },
   {
-    "url": "assets/js/preact/chunks/SpeakingPractice-D0Cupott.js",
-    "revision": "b2aee8ba0854c49b7d89d9825270d9a0"
+    "url": "assets/js/preact/chunks/SyncConstants-QYgBFhfl.js",
+    "revision": "2f83ccbde60784f49219df0bf9a56519"
   },
   {
-    "url": "assets/js/preact/chunks/ReadingAnalysis-CYyoAvtW.js",
-    "revision": "6b11d378839f762b4291d507b429ee05"
+    "url": "assets/js/preact/chunks/SpeakingPractice-BwrbdOxz.js",
+    "revision": "b5b15ecbc00664bce9cf0787c412c0a0"
   },
   {
-    "url": "assets/js/preact/chunks/ListeningReviewPanel-C35oHOSQ.js",
-    "revision": "f9ec522727856f997b5bd3ad73a0e69e"
+    "url": "assets/js/preact/chunks/ReadingAnalysis-CaSlS8Vz.js",
+    "revision": "c76e26be21bc5c20963bae8ce4d3deb7"
   },
   {
-    "url": "assets/js/preact/chunks/ListeningPractice-ctOfjYPB.js",
-    "revision": "cf0d22184c07c96c759f24f4661c4d66"
+    "url": "assets/js/preact/chunks/ListeningReviewPanel-DP6iD5dp.js",
+    "revision": "6f11f7f417b6a718ccdf8d4d6da95b2b"
   },
   {
-    "url": "assets/js/preact/chunks/Hsk30ExamView-F1uqtZQq.js",
-    "revision": "b4c15ad5af7836279543663b23f1d0d2"
+    "url": "assets/js/preact/chunks/ListeningPractice-C3ZO0rIQ.js",
+    "revision": "58a8ac07a7a7b9a7ed408bb6bbd10760"
   },
   {
-    "url": "assets/js/preact/chunks/GradedReading-BxLf5fHS.js",
-    "revision": "d9447fce2da263bffa28ab2c7db02e1b"
+    "url": "assets/js/preact/chunks/LeagueCore-BGN5piz7.js",
+    "revision": "b304c2fa3bb61f334d43410660fd91db"
   },
   {
-    "url": "assets/js/preact/chunks/FirestoreCloudAdapter-CNDCU9Pk.js",
-    "revision": "28d498688b6863eeeb57d6fcdc432fbd"
+    "url": "assets/js/preact/chunks/LeagueConstants-DcZABn20.js",
+    "revision": "329ec2c2e2a8b935c8b096bc3865667c"
   },
   {
-    "url": "assets/js/preact/chunks/FirebaseAuthProvider-CyvVpW2G.js",
-    "revision": "07603d68a3cee4bd5df44ae83e107b2f"
+    "url": "assets/js/preact/chunks/LeagueCloud-C1lfuZ2L.js",
+    "revision": "8eb540db47aa7bc936aec53d0a0e3583"
+  },
+  {
+    "url": "assets/js/preact/chunks/Hsk30ExamView-C8klh91S.js",
+    "revision": "59d59e92eff119edc60ab8be0db3058c"
+  },
+  {
+    "url": "assets/js/preact/chunks/GradedReading-D1lZ3tSD.js",
+    "revision": "d50e91b6573e4d3bc942dba076913bb1"
+  },
+  {
+    "url": "assets/js/preact/chunks/FirestoreCloudAdapter-0X3l-u-Q.js",
+    "revision": "4cf56811036a5337fbae446c7d238130"
+  },
+  {
+    "url": "assets/js/preact/chunks/FirebaseAuthProvider-Basj-K5t.js",
+    "revision": "8f1fa4ec0f83286992bb0644bab1b98f"
   },
   {
     "url": "assets/js/preact/chunks/FirebaseApp-t7cUFNzc.js",
     "revision": "bd7b2ff7e959ac71400c9bf2907cf63e"
   },
   {
-    "url": "assets/js/preact/chunks/AiTutorPromptGuide-C6FKGtDS.js",
-    "revision": "ddfc202bbe0e64a9d496f6e6ac2fbbc7"
+    "url": "assets/js/preact/chunks/AuthStore-OfXJ4xmt.js",
+    "revision": "acaf64ea8cee3196509a0f5249766c0d"
+  },
+  {
+    "url": "assets/js/preact/chunks/AuthConstants-CeW7RFqJ.js",
+    "revision": "7a03261b5072b532d25030dea1556bdc"
+  },
+  {
+    "url": "assets/js/preact/chunks/AiTutorPromptGuide-CXy4Bgqk.js",
+    "revision": "d99dd06fc59df78bc6ecc489dc466eca"
   },
   {
     "url": "assets/js/hanviet-dict.js",

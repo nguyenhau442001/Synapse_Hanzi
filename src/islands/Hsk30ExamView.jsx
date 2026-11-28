@@ -19,6 +19,7 @@ import { CbtSimulatorShell } from './CbtSimulatorShell.jsx';
 import { AiTutorPromptGuide } from './AiTutorPromptGuide.jsx';
 import { ExamSprintHub } from './ExamSprintHub.jsx';
 import { EXAM_UI_LABELS } from './ExamConstants.js';
+import { reportLearningActivity, LEAGUE_ACTIVITY } from './LeagueActivity.js';
 import { SPRINT_UI_LABELS } from './SprintConstants.js';
 import { AudioSegmentPlayer, useAudioSegmentController } from './AudioSegmentPlayer.jsx';
 import { ListeningReviewPanel } from './ListeningReviewPanel.jsx';
@@ -744,6 +745,7 @@ export function Hsk30ExamComponent() {
     } catch (e) {
       console.error('Failed to save exam record:', e);
     }
+    reportLearningActivity(LEAGUE_ACTIVITY.EXAM, { id: resultObj.examId + '@' + resultObj.date });
   };
 
   // Finish HSKK Spoken Exam
@@ -800,6 +802,7 @@ export function Hsk30ExamComponent() {
     } catch (e) {
       console.error('Failed to save HSKK history:', e);
     }
+    reportLearningActivity(LEAGUE_ACTIVITY.EXAM, { id: resultObj.examId + '@' + resultObj.date });
   };
 
   const confirmSubmitHskk = () => {

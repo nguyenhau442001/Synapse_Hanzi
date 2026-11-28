@@ -6,6 +6,7 @@ import { render } from 'preact';
 import { signal } from '@preact/signals';
 import { playQuizSuccessSound, playQuizFailSound } from './AppUtils.js';
 import { ModalCloseButton, UI_LABELS } from './Icons.jsx';
+import { reportLearningActivity, LEAGUE_ACTIVITY } from './LeagueActivity.js';
 
 /* global exampleSpeechSpeed -- top-level `let` of the classic script state.js */
 
@@ -251,6 +252,7 @@ export function pickSpeedQuizOption(word) {
   lastChoice.value = word;
   if (word === r.answer) {
     playQuizSuccessSound();
+    reportLearningActivity(LEAGUE_ACTIVITY.QUIZ);
     streak.value++;
     const speedBonus = Math.round((timeLeft.value / TIME_LIMIT) * BASE_SCORE);
     const streakBonus = Math.min(streak.value - 1, 5) * 10;

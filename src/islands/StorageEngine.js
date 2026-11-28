@@ -3,6 +3,7 @@
 
 import { SRS } from './SrsEngine.js';
 import { SYNC_LOCAL_CHANGE_EVENT } from './SyncConstants.js';
+import { reportLearningActivity, LEAGUE_ACTIVITY } from './LeagueActivity.js';
 
 export const SRS_SCHEMA_VERSION = 3;
 export const SRS_RETENTION_KEY = 'hsk_srs_prefs_v1';
@@ -328,6 +329,7 @@ export function reviewSrsCard(level, wordId, rating, cardMap, direction) {
     retrievabilityBefore: SRS.retrievability(card, now, currentRetention),
     fsrsLog: result.log,
   }, direction);
+  reportLearningActivity(LEAGUE_ACTIVITY.CARD);
   return result;
 }
 
