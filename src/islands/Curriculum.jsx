@@ -314,19 +314,35 @@ function isDone(store, key) {
   return Boolean(store.lessons[key] && store.lessons[key].done);
 }
 
+/**
+ * Maps each level id to the cumulative vocabulary needed to reach it.
+ * Level `words` holds only the new entries the syllabus adds at that level.
+ */
+function cumulativeWordsByLevel(levels) {
+  const totals = {};
+  let running = 0;
+  for (const lv of levels) {
+    running += lv.words;
+    totals[lv.level] = running;
+  }
+  return totals;
+}
+
 function LevelPicker({ levels, active, store }) {
+  const cumulative = cumulativeWordsByLevel(levels);
   return (
     <div class="cur-levels" role="tablist" aria-label="Chọn cấp độ giáo trình">
       {levels.map((lv) => {
         const done = lv.lessons.filter((l) => isDone(store, l.key)).length;
         const complete = lv.lessons.length > 0 && done === lv.lessons.length;
-        const meta = complete ? 'Đã hoàn thành' : done ? `${done}/${lv.lessons.length} bài` : `${lv.lessons.length} bài · ${lv.words} từ`;
+        const meta = complete ? 'Đã hoàn thành' : done ? `${done}/${lv.lessons.length} bài` : CUR_LABELS.LEVEL_CHIP_META(lv.lessons.length, cumulative[lv.level]);
         return (
           <button
             type="button"
             role="tab"
             aria-selected={String(lv.level === active)}
             class={'cur-level-chip' + (lv.level === active ? ' active' : '') + (complete ? ' is-complete' : '')}
+            title={CUR_LABELS.LEVEL_CHIP_TITLE(lv.words, cumulative[lv.level])}
             onClick={() => selectCurriculumLevel(lv.level)}
           >
             <span class="cur-level-name">
@@ -451,7 +467,7 @@ function OverviewView({ index, levelId }) {
               ?
             </button>
           </div>
-          <span class="cur-list-meta">{`${level.words} từ · ${grammarInLessons} điểm ngữ pháp trọng tâm`}</span>
+          <span class="cur-list-meta">{CUR_LABELS.LEVEL_LIST_META(level.words, cumulativeWordsByLevel(index.levels)[level.level], grammarInLessons)}</span>
         </div>
 
         {ui.showGuide && (

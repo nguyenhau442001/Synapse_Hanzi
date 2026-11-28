@@ -60,6 +60,10 @@ export const CUR_LABELS = Object.freeze({
   NEXT_LESSON: 'Bài sau',
   LESSON_NAV: 'Chuyển bài',
   LEVEL_DONE: (done, total) => `${done}/${total} bài đã xong`,
+  LEVEL_CHIP_META: (lessons, cumulativeWords) => `${lessons} bài · ${cumulativeWords} từ`,
+  LEVEL_CHIP_TITLE: (newWords, cumulativeWords) => `+${newWords} từ mới · tổng ${cumulativeWords} từ tích lũy đến cấp này`,
+  LEVEL_LIST_META: (newWords, cumulativeWords, grammar) =>
+    `+${newWords} từ mới (tổng ${cumulativeWords} từ) · ${grammar} điểm ngữ pháp trọng tâm`,
   WORDS_UNIT: 'từ',
   LINES_UNIT: 'câu',
   POINTS_UNIT: 'điểm',
