@@ -7,6 +7,16 @@
 export const AUTH_SESSION_FLAG_KEY = 'hsk_auth_session_v1';
 export const AUTH_SESSION_FLAG_ON = '1';
 
+/**
+ * Where the Firebase Auth SDK persists the signed-in user (browserLocalPersistence over
+ * IndexedDB). Probed without the SDK when the flag is missing, e.g. because localStorage is full
+ * and the flag write failed, so a real session is still restored.
+ */
+export const FIREBASE_AUTH_DB_NAME = 'firebaseLocalStorageDb';
+export const FIREBASE_AUTH_STORE_NAME = 'firebaseLocalStorage';
+/** @param {string} apiKey @returns {string} Firebase's persisted-user key for the default app. */
+export const firebaseAuthUserKey = (apiKey) => `firebase:authUser:${apiKey}:[DEFAULT]`;
+
 /** UI language for the Google consent popup. */
 export const AUTH_LANGUAGE = 'vi';
 

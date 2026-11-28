@@ -9,6 +9,9 @@ import { SYNC_STATE_KEY } from './SyncConstants.js';
 import {
   AUTH_SESSION_FLAG_KEY,
   AUTH_SESSION_FLAG_ON,
+  FIREBASE_AUTH_DB_NAME,
+  FIREBASE_AUTH_STORE_NAME,
+  firebaseAuthUserKey,
   AUTH_ERROR_MESSAGES,
   AUTH_LABELS,
   AVATAR_URL_PATTERN,
@@ -90,6 +93,8 @@ export function authErrorMessage(error) {
  * @property {(uid: string) => Promise<void>} [deleteCloudData]  Removes the user's cloud progress.
  * @property {() => Promise<void>} [onDeleteFailed]  Undo side effects of a failed deletion.
  * @property {() => void} [reload]
+ * @property {() => Promise<boolean>} [hasStoredSession]  Checks the provider's own persisted
+ *   session without loading the SDK; used when the localStorage flag is missing.
  */
 
 /** @param {AuthControllerOptions} options */
@@ -99,6 +104,7 @@ export function createAuthController(options) {
   const reload = options.reload || (() => {});
   const deleteCloudData = options.deleteCloudData || (async () => {});
   const onDeleteFailed = options.onDeleteFailed || (async () => {});
+  const hasStoredSession = options.hasStoredSession || (async () => false);
 
   const state = signal(INITIAL_AUTH_STATE);
   /** @type {import('@preact/signals').Signal<AuthDialog>} */
@@ -116,7 +122,10 @@ export function createAuthController(options) {
     try {
       if (on) storage.setItem(AUTH_SESSION_FLAG_KEY, AUTH_SESSION_FLAG_ON);
       else storage.removeItem(AUTH_SESSION_FLAG_KEY);
-    } catch { /* storage unavailable: the session still works for this page load */ }
+    } catch (error) {
+      // Typically QuotaExceededError; init() falls back to hasStoredSession on the next load.
+      console.warn('[Auth] session flag not saved:', error && error.name ? error.name : error);
+    }
   };
 
   const hasSessionFlag = () => {
@@ -150,7 +159,12 @@ export function createAuthController(options) {
 
   /** Restore an existing session on startup. Guests return immediately without network. */
   async function init() {
-    if (!isConfigured || !hasSessionFlag()) return;
+    if (!isConfigured) return;
+    if (!hasSessionFlag()) {
+      let stored = false;
+      try { stored = await hasStoredSession(); } catch { stored = false; }
+      if (!stored) return;
+    }
     patch({ status: 'signing_in' });
     try {
       await ensureProvider();
@@ -254,6 +268,37 @@ export function createAuthController(options) {
   };
 }
 
+/**
+ * True when Firebase has persisted a user for this API key. Reads IndexedDB directly, so guests
+ * never download the SDK; any failure counts as "no session".
+ * @param {string} apiKey
+ * @returns {Promise<boolean>}
+ */
+function hasFirebaseStoredSession(apiKey) {
+  if (typeof indexedDB === 'undefined' || !apiKey) return Promise.resolve(false);
+  return new Promise((resolve) => {
+    let request;
+    try { request = indexedDB.open(FIREBASE_AUTH_DB_NAME); } catch { resolve(false); return; }
+    // Opening a missing database creates it empty; abort that so nothing is left behind.
+    request.onupgradeneeded = () => { request.transaction.abort(); };
+    request.onerror = () => resolve(false);
+    request.onsuccess = () => {
+      const db = request.result;
+      try {
+        if (!db.objectStoreNames.contains(FIREBASE_AUTH_STORE_NAME)) { db.close(); resolve(false); return; }
+        const count = db.transaction(FIREBASE_AUTH_STORE_NAME, 'readonly')
+          .objectStore(FIREBASE_AUTH_STORE_NAME)
+          .count(firebaseAuthUserKey(apiKey));
+        count.onsuccess = () => { db.close(); resolve(count.result > 0); };
+        count.onerror = () => { db.close(); resolve(false); };
+      } catch {
+        db.close();
+        resolve(false);
+      }
+    };
+  });
+}
+
 /** In-memory Storage stand-in for environments without localStorage. */
 function memoryStorage() {
   const map = new Map();
@@ -270,6 +315,7 @@ export const authController = createAuthController({
   loadProvider: () => import('./FirebaseAuthProvider.js').then((mod) => mod.createFirebaseAuthProvider(FIREBASE_CONFIG)),
   storage: typeof localStorage !== 'undefined' ? localStorage : memoryStorage(),
   isConfigured: isFirebaseConfigured(),
+  hasStoredSession: () => hasFirebaseStoredSession(FIREBASE_CONFIG.apiKey),
   // SyncController owns cloud access (imported lazily to avoid a circular import).
   deleteCloudData: async (uid) => {
     await (await import('./LeagueService.js')).deleteLeagueData(uid);

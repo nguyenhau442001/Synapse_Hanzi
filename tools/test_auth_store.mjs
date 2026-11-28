@@ -141,6 +141,31 @@ assert.equal(authErrorMessage(new Error('raw internal text')), AUTH_LABELS.ERROR
   assert.equal(storage2.getItem(AUTH_SESSION_FLAG_KEY), null);
 }
 
+// Missing flag (e.g. localStorage full) but the provider still holds a session: restore it.
+{
+  const fake = fakeProvider({ restored: googleUser });
+  const auth = createAuthController({ loadProvider: fake.load, storage: new MemoryStorage(), isConfigured: true, hasStoredSession: async () => true });
+  await auth.init();
+  await flush();
+  assert.equal(auth.state.value.status, 'signed_in');
+
+  const guest = fakeProvider();
+  const auth2 = createAuthController({ loadProvider: guest.load, storage: new MemoryStorage(), isConfigured: true, hasStoredSession: async () => false });
+  await auth2.init();
+  assert.equal(guest.calls.loads, 0, 'guests without a stored session never load the SDK');
+}
+
+// A failing flag write (QuotaExceededError) does not break sign-in.
+{
+  const fake = fakeProvider();
+  const full = new MemoryStorage();
+  full.setItem = () => { throw Object.assign(new Error('full'), { name: 'QuotaExceededError' }); };
+  const auth = createAuthController({ loadProvider: fake.load, storage: full, isConfigured: true });
+  const warn = console.warn; console.warn = () => {};
+  try { assert.equal(await auth.signIn(), true); } finally { console.warn = warn; }
+  assert.equal(auth.state.value.status, 'signed_in');
+}
+
 // Sign out, keep data: progress stays. Sign out, clear: only progress keys go, then reload.
 {
   const progress = { hsk_hsk1_srs_v3: '{}', hsk_study_activity_v1: '{}', hsk_theme: 'dark' };
