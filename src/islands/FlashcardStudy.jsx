@@ -56,6 +56,21 @@ function buildCardArea() {
               aria-label="Nghe phát âm" aria-live="polite" title="Nghe phát âm (A)">
               ${speakerIconSvg(16, 'sound-btn-icon')}
             </button>
+            <details class="word-speed-picker" id="wordSpeedPicker" data-ui-stop>
+              <summary aria-label="Tốc độ đọc từ: ${formatWordSpeechSpeed(wordSpeechSpeed)}" title="Chọn tốc độ đọc từ">
+                <span class="word-current-speed" id="wordCurrentSpeed">${formatWordSpeechSpeed(wordSpeechSpeed)}</span>
+              </summary>
+              <div class="word-speed-options" role="group" aria-label="Chọn tốc độ đọc từ">
+                ${WORD_SPEECH_SPEEDS.map(speed => `
+                  <button class="word-speed-option${speed === wordSpeechSpeed ? ' selected' : ''}"
+                    type="button" data-speed="${speed}"
+                    aria-pressed="${speed === wordSpeechSpeed}"
+                    data-ui-click="setWordSpeechSpeed" data-ui-prevent>
+                    ${formatWordSpeechSpeed(speed)}
+                  </button>
+                `).join('')}
+              </div>
+            </details>
           </div>
 
           <!-- Nghĩa tiếng Việt & Ngữ cảnh từ loại (Chỉ hiển thị sau khi lật đáp án) -->
@@ -280,6 +295,10 @@ function updateCardMoreMenuState() {
   if (moreBtn) {
     moreBtn.classList.toggle('has-weak-word', isWeak);
     moreBtn.title = isWeak ? 'Từ khó đã đánh dấu · Tùy chọn khác' : 'Tùy chọn khác';
+  }
+
+  if (typeof syncWordSpeechSpeedUi === 'function') {
+    syncWordSpeechSpeedUi();
   }
 }
 

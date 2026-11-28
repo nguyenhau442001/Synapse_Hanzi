@@ -30,6 +30,7 @@ export const UI_ACTIONS = Object.freeze({
   speakWord: () => callGlobal('speakWord'),
   speakExample: () => callGlobal('speakExample'),
   setExampleSpeechSpeed: (el) => callGlobal('setExampleSpeechSpeed', el.dataset.speed),
+  setWordSpeechSpeed: (el) => callGlobal('setWordSpeechSpeed', el.dataset.speed),
   openStudyWriting: () => callGlobal('toggleStudyWritingPanel', true),
   toggleUnknownWords: () => callGlobal('toggleUnknownWords'),
   resetProgress: () => callGlobal('resetProgress'),

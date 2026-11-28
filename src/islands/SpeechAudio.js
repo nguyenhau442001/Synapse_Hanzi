@@ -4,7 +4,7 @@
  * Port of legacy assets/js/speechService.js and assets/js/speech.js.
  */
 
-/* global LEVELS, currentLevel, WORDS, filteredOrder, idx, SPEECH_RATE, exampleSpeechSpeed, APP_VERSION */
+/* global LEVELS, currentLevel, WORDS, filteredOrder, idx, SPEECH_RATE, exampleSpeechSpeed, wordSpeechSpeed, APP_VERSION */
 
 const DEFAULT_SPEECH_RATE = 0.8;
 const HANZI_AUDIO_MAP_URL = 'database/prebuilt_audio/hanzi_audio_map.json';
@@ -275,8 +275,10 @@ export function speakWord() {
   const btn = document.getElementById('soundBtn');
   const cleanHanzi = String(word.hanzi).replace(/[（\(].*?[）\)]/g, '').trim() || word.hanzi;
   const prebuiltUrl = prebuiltAudioUrl(word, 'word');
-  // Play studio prebuilt audio at 1.0x native speed to avoid phase-vocoder time-stretch distortion
-  const rate = prebuiltUrl ? 1.0 : (typeof SPEECH_RATE !== 'undefined' ? SPEECH_RATE : (window.SPEECH_RATE || 0.8));
+  const selectedWordSpeed = typeof wordSpeechSpeed !== 'undefined'
+    ? wordSpeechSpeed
+    : (typeof window !== 'undefined' && typeof window.wordSpeechSpeed === 'number' ? window.wordSpeechSpeed : 1.0);
+  const rate = prebuiltUrl ? selectedWordSpeed : (typeof SPEECH_RATE !== 'undefined' ? SPEECH_RATE : (window.SPEECH_RATE || 0.8));
   speakText(
     cleanHanzi,
     btn,
@@ -400,10 +402,7 @@ export function playPrebuiltAudio(text, button, rate, audioUrl, requestId, hint,
   const audio = new Audio(audioUrl);
   activeSpeechAudio = audio;
   audio.preload = 'auto';
-  const clean = String(text || '').replace(/<[^>]*>/g, '').trim();
-  const isWordLike = clean.length <= 4 && !/[，。？！、；;!?,.\s]/.test(clean);
-  // Monosyllabic and short vocabulary words play at native 1.0x to preserve full fidelity
-  const targetRate = isWordLike && (rate === 0.8 || rate === 0.85) ? 1.0 : (rate || 1.0);
+  const targetRate = rate || 1.0;
   audio.playbackRate = Math.min(2, Math.max(0.25, targetRate));
   if ('preservesPitch' in audio) audio.preservesPitch = true;
 

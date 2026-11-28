@@ -455,6 +455,20 @@
               <span class="dropdown-item-icon">🔀</span>
               <span class="dropdown-item-label">Xáo trộn thứ tự từ</span>
             </button>
+            <div class="study-dropdown-speed" role="group" aria-label="Tốc độ đọc từ">
+              <div class="study-dropdown-speed-header">
+                <span class="dropdown-item-icon" aria-hidden="true">🔊</span>
+                <span class="dropdown-item-label">Tốc độ đọc từ</span>
+                <span class="study-dropdown-speed-value" id="wordSpeedMenuValue">1.0x</span>
+              </div>
+              <div class="study-dropdown-speed-pills">
+                <button type="button" class="word-speed-option" data-speed="0.5" data-ui-click="setWordSpeechSpeed" data-ui-prevent>0.5x</button>
+                <button type="button" class="word-speed-option" data-speed="0.75" data-ui-click="setWordSpeechSpeed" data-ui-prevent>0.75x</button>
+                <button type="button" class="word-speed-option" data-speed="0.85" data-ui-click="setWordSpeechSpeed" data-ui-prevent>0.85x</button>
+                <button type="button" class="word-speed-option selected" data-speed="1" data-ui-click="setWordSpeechSpeed" data-ui-prevent>1.0x</button>
+                <button type="button" class="word-speed-option" data-speed="1.25" data-ui-click="setWordSpeechSpeed" data-ui-prevent>1.25x</button>
+              </div>
+            </div>
             <div class="study-dropdown-divider" role="separator"></div>
             <button type="button" class="study-dropdown-item" id="headerMenuOverview" role="menuitem">
               <span class="dropdown-item-icon">📋</span>

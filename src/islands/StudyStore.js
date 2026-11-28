@@ -3,6 +3,10 @@
 // mutating or polling raw window.* globals.
 import { signal, computed } from '@preact/signals';
 
+export const WORD_SPEECH_SPEEDS = [0.5, 0.75, 0.85, 1, 1.25];
+export const DEFAULT_WORD_SPEECH_SPEED = 1;
+export const WORD_SPEECH_SPEED_STORAGE_KEY = 'hsk_word_speech_speed_v1';
+
 /**
  * @typedef {'review'|'browse'} StudyMode
  * @typedef {'all'|'due'|'new'|'learning'|'mastered'|'weak'} CardFilter
@@ -17,6 +21,7 @@ import { signal, computed } from '@preact/signals';
  * @property {boolean} showHanViet
  * @property {boolean} showIllustration
  * @property {number} srsRetention
+ * @property {number} wordSpeechSpeed
  * @property {Object|null} activeStudyWord
  */
 
@@ -27,6 +32,16 @@ function readBooleanPref(key, fallback) {
     return saved !== null ? saved === 'true' : fallback;
   } catch {
     return fallback;
+  }
+}
+
+export function readWordSpeechSpeedPref() {
+  try {
+    if (typeof localStorage === 'undefined') return DEFAULT_WORD_SPEECH_SPEED;
+    const saved = Number(localStorage.getItem(WORD_SPEECH_SPEED_STORAGE_KEY));
+    return WORD_SPEECH_SPEEDS.includes(saved) ? saved : DEFAULT_WORD_SPEECH_SPEED;
+  } catch {
+    return DEFAULT_WORD_SPEECH_SPEED;
   }
 }
 
@@ -41,6 +56,7 @@ export const studyState = signal({
   showHanViet: readBooleanPref('hsk_show_hanviet', true),
   showIllustration: readBooleanPref('hsk_show_illustrations_v2', true),
   srsRetention: 0.9,
+  wordSpeechSpeed: readWordSpeechSpeedPref(),
   activeStudyWord: null,
 });
 

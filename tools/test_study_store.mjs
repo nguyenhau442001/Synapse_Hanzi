@@ -5,6 +5,9 @@ import {
   activeStudyLevel,
   setStudyState,
   getStudyState,
+  WORD_SPEECH_SPEEDS,
+  DEFAULT_WORD_SPEECH_SPEED,
+  readWordSpeechSpeedPref,
 } from '../src/islands/StudyStore.js';
 
 // Initial defaults
@@ -13,6 +16,9 @@ assert.equal(getStudyState().vocabSubTab, 'level');
 assert.equal(getStudyState().studyMode, 'review');
 assert.equal(getStudyState().currentFilter, 'all');
 assert.equal(getStudyState().currentLevel, null);
+assert.equal(getStudyState().wordSpeechSpeed, DEFAULT_WORD_SPEECH_SPEED);
+assert.ok(WORD_SPEECH_SPEEDS.includes(0.5) && WORD_SPEECH_SPEEDS.includes(0.75) && WORD_SPEECH_SPEEDS.includes(1));
+assert.equal(readWordSpeechSpeedPref(), DEFAULT_WORD_SPEECH_SPEED);
 assert.equal(activeStudyTab.value, 'vocab');
 assert.equal(activeStudyLevel.value, null);
 

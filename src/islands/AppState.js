@@ -1,6 +1,12 @@
 // src/islands/AppState.js
 // Shared application configuration and in-memory state.
-import { setStudyState } from './StudyStore.js';
+import {
+  setStudyState,
+  WORD_SPEECH_SPEEDS,
+  DEFAULT_WORD_SPEECH_SPEED,
+  WORD_SPEECH_SPEED_STORAGE_KEY,
+  readWordSpeechSpeedPref,
+} from './StudyStore.js';
 
 export const LEVELS = {
   hsk1: {
@@ -189,6 +195,7 @@ export let activeSpeechButton = null;
 export let activeSpeechAudio = null;
 export let prebuiltAudioManifest = null;
 export let exampleSpeechSpeed = DEFAULT_EXAMPLE_SPEECH_SPEED;
+export let wordSpeechSpeed = readWordSpeechSpeedPref();
 export let currentView = 'cards';
 export let overviewQuery = '';
 export let overviewStatus = 'all';
@@ -238,6 +245,48 @@ export function setExampleSpeechSpeed(value) {
   });
 
   const speedPicker = document.getElementById('exampleSpeedPicker');
+  if (speedPicker instanceof HTMLDetailsElement) speedPicker.open = false;
+}
+
+export function formatWordSpeechSpeed(speed) {
+  const numericSpeed = Number(speed);
+  return `${Number.isInteger(numericSpeed) ? numericSpeed.toFixed(1) : numericSpeed}x`;
+}
+
+export function syncWordSpeechSpeedUi(speed = wordSpeechSpeed) {
+  const formatted = formatWordSpeechSpeed(speed);
+  const currentSpeed = document.getElementById('wordCurrentSpeed');
+  if (currentSpeed) currentSpeed.textContent = formatted;
+  const menuValue = document.getElementById('wordSpeedMenuValue');
+  if (menuValue) menuValue.textContent = formatted;
+  const speedSummary = document.querySelector('#wordSpeedPicker summary');
+  if (speedSummary) {
+    speedSummary.setAttribute('aria-label', `Tốc độ đọc từ: ${formatted}`);
+  }
+  document.querySelectorAll('.word-speed-option').forEach(option => {
+    if (!(option instanceof HTMLElement)) return;
+    const isSelected = Number(option.dataset.speed) === speed;
+    option.classList.toggle('selected', isSelected);
+    option.setAttribute('aria-pressed', String(isSelected));
+  });
+}
+
+export function setWordSpeechSpeed(value) {
+  const nextSpeed = Number(value);
+  if (!WORD_SPEECH_SPEEDS.includes(nextSpeed)) return;
+
+  wordSpeechSpeed = nextSpeed;
+  setStudyState({ wordSpeechSpeed: nextSpeed });
+  try {
+    localStorage.setItem(WORD_SPEECH_SPEED_STORAGE_KEY, String(nextSpeed));
+  } catch (e) {}
+
+  if (typeof stopSpeech === 'function') stopSpeech();
+  else if (typeof window !== 'undefined' && typeof window.stopSpeech === 'function') window.stopSpeech();
+
+  syncWordSpeechSpeedUi(nextSpeed);
+
+  const speedPicker = document.getElementById('wordSpeedPicker');
   if (speedPicker instanceof HTMLDetailsElement) speedPicker.open = false;
 }
 
@@ -357,6 +406,8 @@ export function mountAppState() {
       SPEECH_RATE,
       EXAMPLE_SPEECH_SPEEDS,
       DEFAULT_EXAMPLE_SPEECH_SPEED,
+      WORD_SPEECH_SPEEDS,
+      DEFAULT_WORD_SPEECH_SPEED,
       currentLevel,
       WORDS,
       order,
@@ -380,6 +431,7 @@ export function mountAppState() {
       activeSpeechAudio,
       prebuiltAudioManifest,
       exampleSpeechSpeed,
+      wordSpeechSpeed,
       currentView,
       overviewQuery,
       overviewStatus,
@@ -402,6 +454,9 @@ export function mountAppState() {
       reviewWorker,
       formatExampleSpeechSpeed,
       setExampleSpeechSpeed,
+      formatWordSpeechSpeed,
+      setWordSpeechSpeed,
+      syncWordSpeechSpeedUi,
       warmUpSpeech,
       storageKey,
       activeStudyWord,

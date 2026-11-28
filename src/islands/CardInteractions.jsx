@@ -24,6 +24,7 @@ export const FLASHCARD_INTERACTIVE_SELECTOR = [
   '.sound-btn',
   '.example-sound-btn',
   '.example-speed-picker',
+  '.word-speed-picker',
   '.example-audio-controls',
   '.card-more-btn',
   '.card-dropdown-item',
