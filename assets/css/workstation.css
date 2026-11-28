@@ -4584,11 +4584,11 @@ body.flashcard-study-mode .grammar-breakdown-panel[hidden] { display: none !impo
   to { transform: translateY(0); }
 }
 
-/* Mobile Bottom Navigation Bar */
+/* Mobile Bottom Navigation Bar (phones only; iPad >= 768px uses full top header nav) */
 .mobile-bottom-nav {
   display: none;
 }
-@media (max-width: 1023px) {
+@media (max-width: 767px) {
   body:not(.flashcard-study-mode) {
     padding-bottom: calc(72px + env(safe-area-inset-bottom)) !important;
   }
@@ -5400,6 +5400,9 @@ body.flashcard-study-mode .study-nav-position {
   body.flashcard-study-mode .nav-btn,
   body.flashcard-study-mode .study-nav-position { min-width: 0; flex: 1 1 0; }
   #screenVocabHub .creator-signature .cs-links { width: auto; }
+}
+
+@media (max-width: 1023px) {
   #screenVocabHub .creator-signature .cs-link { min-height: 36px; padding: 0 12px; }
   body.home-screen .goal-settings-btn { width: 36px; height: 36px; flex: 0 0 36px; }
 }
