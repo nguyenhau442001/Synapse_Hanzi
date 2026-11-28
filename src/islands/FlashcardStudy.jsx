@@ -552,6 +552,9 @@ function studyDirectionSelectHtml() {
     </label>`;
 }
 
+// Directions whose front shows (or is) the Chinese word, so it is spoken on card load.
+const AUTO_SPEAK_DIRECTIONS = new Set(['zh2vi', 'listen']);
+
 // Front of the card for the non-default directions. Hán -> nghĩa keeps the Hanzi front.
 function renderDirectionPrompt(word) {
   const prompt = document.getElementById('cardDirectionPrompt');
@@ -1657,8 +1660,8 @@ function render(animate) {
     }
 
     renderDirectionPrompt(w);
-    if (readStudyDirection() === 'listen' && typeof speakWord === 'function') {
-      // Audio-first front: play the word as soon as the card appears (A replays it).
+    if (AUTO_SPEAK_DIRECTIONS.has(readStudyDirection()) && typeof speakWord === 'function') {
+      // Play the word as soon as the card appears (A replays it).
       setTimeout(() => { if (!isCardRevealed()) speakWord(); }, APP_TIMEOUTS.AUTO_SPEAK_DELAY_MS);
     }
     document.getElementById('hint').textContent = getCardHintText(false);
