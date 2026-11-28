@@ -61,6 +61,12 @@ class TestReviewFlow(unittest.TestCase):
     def test_browse_mode_is_kept_in_url(self):
         self.assertIn("'&mode=browse'", self.router)
 
+    def test_shuffle_deck_shuffles_review_queue_and_resets_idx(self):
+        body = self.progress.split("export function shuffleDeck", 1)[1].split("\n}\n", 1)[0]
+        self.assertIn("shuffleInPlace(filteredOrder)", body)
+        self.assertIn("idx = 0", body)
+        self.assertNotIn("refreshStudyDeck()", body)
+
 
 if __name__ == "__main__":
     unittest.main()

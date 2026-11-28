@@ -485,10 +485,33 @@ function refreshStudyDeck() {
   }
 }
 
+// Swap index 0 with another random item so shuffling visibly changes the active card.
+function ensureFirstCardChanged(list, prevWordIdx) {
+  if (!Array.isArray(list) || list.length <= 1 || prevWordIdx === null) return;
+  if (list[0] !== prevWordIdx) return;
+  const swapIdx = 1 + Math.floor(Math.random() * (list.length - 1));
+  [list[0], list[swapIdx]] = [list[swapIdx], list[0]];
+}
+
 export function shuffleDeck() {
+  const prevFirst = Array.isArray(filteredOrder) && filteredOrder.length > 1
+    ? filteredOrder[idx % filteredOrder.length]
+    : null;
   shuffleInPlace(order);
   savePrefs();
-  refreshStudyDeck();
+  if (studyMode === 'review') {
+    shuffleInPlace(filteredOrder);
+    ensureFirstCardChanged(filteredOrder, prevFirst);
+    window.filteredOrder = filteredOrder;
+    idx = 0;
+  } else {
+    applyStudyModeOrder();
+    ensureFirstCardChanged(filteredOrder, prevFirst);
+    window.filteredOrder = filteredOrder;
+    if (typeof window.renderStudyWordList === 'function') window.renderStudyWordList();
+  }
+  if (typeof renderFilters === 'function') renderFilters();
+  window.render('fade');
 }
 
 export function resetProgress() {
